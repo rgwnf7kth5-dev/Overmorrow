@@ -147,6 +147,8 @@ Když je kritérium nejednoznačné, použije se výklad, který by neutrální 
 
 Neplatná tvrzení se uvádějí, ale nehodnotí.
 
+V archivovaném vydání je každá vyhodnocená zpráva i razítko obarvené na škále od červené po zelenou podle **shody**: jakou pravděpodobnost jsme dali tomu, co se skutečně stalo. Predikce 90 %, která vyšla, má shodu 90 % (zelená); predikce 55 %, která vyšla, 55 % (oranžová); predikce 90 %, která nevyšla, 10 % (červená).
+
 ## 8. Učení z chyb
 
 - Každý týden se rozeberou omyly s nejvyšším Brierovým skóre. Každý dostane odstavec rozboru: špatná základní četnost, přehlédnutý fakt, špatně postavené tvrzení, nebo smůla.

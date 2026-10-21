@@ -146,6 +146,8 @@ If the criterion is ambiguous, the resolver applies the reading a neutral observ
 
 Void claims are listed but not scored.
 
+On the archived edition, each scored story and stamp is coloured on a scale from red to green by its **closeness**: the probability we gave to what actually happened. A 90% forecast that came true is 0.90 (green); a 55% forecast that came true is 0.55 (amber); a 90% forecast that failed is 0.10 (red).
+
 ## 8. Learning loop
 
 - Every week the misses with the largest Brier scores are reviewed. Each gets a one-paragraph post-mortem: wrong base rate, missed fact, bad claim design, or bad luck.

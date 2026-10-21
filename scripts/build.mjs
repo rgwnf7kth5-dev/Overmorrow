@@ -28,6 +28,7 @@ const T = {
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
     stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected' },
+    match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
     deadline: 'Deadline',
@@ -71,6 +72,7 @@ const T = {
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
     stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno' },
+    match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
     deadline: 'Termín',
@@ -183,14 +185,29 @@ function masthead(L, ed, latestDate) {
 }
 
 // ---------- edition ----------
-function stampFor(result, L) {
+// How close a forecast came: the probability we gave to what actually happened (1 = spot on, 0 = missed completely).
+const closeness = (claim, r) => (!r || !claim ? null : r.outcome === 'yes' ? claim.probability : r.outcome === 'no' ? 1 - claim.probability : null);
+// Red (0) through amber to green (1).
+const hue = (x) => Math.round(4 + 136 * x);
+
+function stampFor(result, L, claim) {
   if (!result) return `<span class="stamp pending">${L.stamp.pending}</span>`;
-  return `<span class="stamp ${result.outcome}">${L.stamp[result.outcome]}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
+  const c = closeness(claim, result);
+  const style = c === null ? '' : ` style="--h:${hue(c)}"`;
+  return `<span class="stamp ${result.outcome}${c === null ? '' : ' scored'}"${style}>${L.stamp[result.outcome]}${c === null ? '' : ` · ${L.match} ${pctNum(c, L)}`}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
+}
+
+/** Class and colour for a whole story once results are in: the mean closeness of its resolved claims. */
+function storyTone(story, results) {
+  const xs = story.claims.map((c) => closeness(c, results.get(c.id))).filter((x) => x !== null);
+  if (!xs.length) return { cls: '', style: '' };
+  const m = xs.reduce((a, b) => a + b, 0) / xs.length;
+  return { cls: ' scored', style: ` style="--h:${hue(m)}"` };
 }
 
 function likelihood(claim, results, show, L) {
   const r = results.get(claim.id);
-  return `<div class="lk"><span class="bar" aria-hidden="true"><i style="width:${Math.round(claim.probability * 100)}%"></i></span><span>${esc(claim.label)}: <b>${pctNum(claim.probability, L)}</b></span>${show ? stampFor(r, L) : ''}</div>${
+  return `<div class="lk"><span class="bar" aria-hidden="true"><i style="width:${Math.round(claim.probability * 100)}%"></i></span><span>${esc(claim.label)}: <b>${pctNum(claim.probability, L)}</b></span>${show ? stampFor(r, L, claim) : ''}</div>${
     r && r.note ? `<p class="resnote">${esc(r.note)}${r.evidence ? ` <a href="${esc(r.evidence)}">${L.evidence}</a>` : ''}</p>` : ''}`;
 }
 
@@ -202,7 +219,7 @@ function storyHtml(story, results, show, L) {
   const table = story.table ? `<figure class="alt"><table><caption>${esc(story.table.caption)}</caption>${story.table.rows.map((row) => {
     const c = story.claims.find((x) => x.id === row.claim);
     const r = results.get(row.claim);
-    return `<tr><td>${esc(row.label)}${row.note ? ` <small>· ${esc(row.note)}</small>` : ''}</td><td class="n">${c ? pctNum(c.probability, L) : ''}${show && r ? ` ${stampFor(r, L)}` : ''}</td></tr>`;
+    return `<tr><td>${esc(row.label)}${row.note ? ` <small>· ${esc(row.note)}</small>` : ''}</td><td class="n">${c ? pctNum(c.probability, L) : ''}${show && r ? ` ${stampFor(r, L, c)}` : ''}</td></tr>`;
   }).join('')}</table></figure>` : '';
   const paras = story.body.map((p) => `<p>${esc(p)}</p>`);
   if (table) paras.splice(Math.min(2, paras.length), 0, table);
@@ -225,8 +242,9 @@ function editionMain(original, L) {
   const total = claimsOf(original).length;
   const voids = [...results.values()].filter((r) => r.outcome === 'void').length;
 
-  const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span></div>` : '';
-  const rail = ed.front.rail.map((id) => `<article class="story">${storyHtml(byId.get(id), results, show, L)}</article>`).join('');
+  const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
+  const tone = (st) => storyTone(st, results);
+  const rail = ed.front.rail.map((id) => { const st = byId.get(id), t = tone(st); return `<article class="story${t.cls}"${t.style}>${storyHtml(st, results, show, L)}</article>`; }).join('');
   const w = ed.weather;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
 
@@ -237,7 +255,8 @@ function editionMain(original, L) {
     for (const id of sec.stories) {
       const s = byId.get(id);
       const cls = spanClass[s.size] || 's6';
-      sections += `<article class="story ${cls}${used % 12 ? ' vr' : ''}">${storyHtml(s, results, show, L)}</article>`;
+      const t = tone(s);
+      sections += `<article class="story ${cls}${used % 12 ? ' vr' : ''}${t.cls}"${t.style}>${storyHtml(s, results, show, L)}</article>`;
       used += { s6: 6, s4: 4, s3: 3 }[cls];
     }
   }
@@ -246,7 +265,7 @@ function editionMain(original, L) {
   return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
 ${scorebar}
 <main class="grid">
-  <article class="story lead s8">${storyHtml(byId.get(ed.front.lead), results, show, L)}</article>
+  ${(() => { const st = byId.get(ed.front.lead), t = tone(st); return `<article class="story lead s8${t.cls}"${t.style}>${storyHtml(st, results, show, L)}</article>`; })()}
   <aside class="rail s4 vr">${rail}${weather}</aside>
   ${sections}
   ${diary}
