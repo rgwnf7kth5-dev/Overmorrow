@@ -40,6 +40,18 @@ for (const ed of editions) {
     if (!Array.isArray(s.body) || !s.body.length) err(sw, 'body must be a non-empty list of paragraphs');
     if (!Array.isArray(s.claims) || !s.claims.length) err(sw, 'at least one claim required');
     if (!Array.isArray(s.sources) || !s.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(sw, 'at least one source with a URL required');
+    const cs = s.cs;
+    if (!cs) err(sw, 'Czech text (cs) missing');
+    else {
+      for (const f of ['kicker', 'headline', 'basis']) if (!nonEmpty(cs[f])) err(sw, `cs.${f} missing`);
+      if (!Array.isArray(cs.body) || !cs.body.length) err(sw, 'cs.body missing');
+      if (s.standfirst && !nonEmpty(cs.standfirst)) err(sw, 'cs.standfirst missing');
+      if (s.table && (!cs.table || (cs.table.rows || []).length !== s.table.rows.length)) err(sw, 'cs.table must have the same rows');
+      for (const c of s.claims || []) {
+        const t = cs.claims?.[c.id];
+        if (!t || !nonEmpty(t.label) || !nonEmpty(t.text) || !nonEmpty(t.criterion)) err(sw, `cs.claims.${c.id} needs label, text and criterion`);
+      }
+    }
     for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
   }
 
@@ -59,6 +71,9 @@ for (const ed of editions) {
     if (c.exclusive_set) sets.set(c.exclusive_set, (sets.get(c.exclusive_set) || 0) + c.probability);
   }
   for (const [set, sum] of sets) if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
+
+  if (!ed.cs) err(w, 'edition-level Czech text (cs) missing');
+  else if ((ed.cs.sections || []).length !== (ed.sections || []).length) err(w, 'cs.sections must match sections');
 
   const referenced = [ed.front?.lead, ...(ed.front?.rail || []), ...(ed.sections || []).flatMap((s) => s.stories)];
   for (const id of referenced) if (!ids.has(id)) err(w, `layout refers to unknown story ${id}`);

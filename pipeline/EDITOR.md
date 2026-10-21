@@ -34,10 +34,10 @@ Target: **at least 40 candidates.** If fewer, widen the sweep (national parliame
 
 Score each candidate 1–5 on Impact, Reach and Uncertainty value (definitions in the methodology, section 2.4) and rank by the product. Then fill the edition:
 
-- **Lead**: the highest-scoring event with `official` or `reported` status. Prefer the Czech Republic or the EU when scores are close.
+- **Lead**: the most newsworthy event with `official` or `reported` status, wherever it happens. Prefer a Czech story when scores are close.
 - **Rail**: two Czech stories.
-- **Europe**: three or four stories.
-- **World**: four to six stories.
+- **World**: the largest section, five to six stories from outside the EU institutions: other continents, wars and diplomacy, elections, major national politics in Europe and elsewhere.
+- **Europe**: two to three stories. At most three stories in the whole edition may be about EU institutions (Parliament, Council, Commission, EU courts and agencies); national politics of European countries does not count toward that cap.
 - **Economy, Science and Health, Culture**: add a section when at least one candidate scores 27 or more (3 × 3 × 3).
 - Total: between `stories_min` and `stories_max` from `config.json`.
 - Excluded topics: sport, financial market prices.
@@ -101,6 +101,15 @@ Write the stories into `data/editions/<D+2>.json`, following the format of the e
 - `diary`: the fixed dates for the coming two weeks, especially Czech, EU and election dates.
 - `weather`: Czech regions plus Strasbourg or Brussels when Parliament sits. Shown, not scored.
 - `number`: previous edition number plus one. `pilot`: omit.
+
+## 7b. Czech version
+
+English is the default; the Czech edition at `/cs/` is built from Czech text stored in the same file. Follow the format of `data/editions/2026-10-23.json`:
+
+- each story gets a `cs` object with `kicker`, `headline`, `standfirst` (lead only), `body`, `basis`, `table` (if the story has one: `caption` and `rows` in the same order) and `claims` keyed by claim id, each with `label`, `text` and `criterion`;
+- the edition gets a top-level `cs` object with `weather`, `sections` (same order, `name` and `dek`) and `diary`.
+
+Translate faithfully into natural Czech newspaper prose (ČTK style): Czech names of institutions, Czech date and number formats (22. října, 2,5 procenta, 386 miliard korun). Do not add, drop or soften anything; probabilities, deadlines and sources are shared and never translated into different numbers.
 
 ## 8. Validate and build
 

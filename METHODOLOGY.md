@@ -30,9 +30,9 @@ Nothing learned after `frozen_at` may be used in the edition. If a decisive fact
 
 Every edition starts with a sweep of official calendars for day D+1. The registry of sources lives in [`pipeline/sources.json`](pipeline/sources.json) and is checked in full every time. It covers:
 
-- **European Union:** Parliament plenary and committee agendas, Legislative Observatory (OEIL), the Council's forward look and the rotating Presidency's calendar, the Commission's College agenda and list of planned items, the Court of Justice judicial calendar, ECB monetary policy calendar, Eurostat release calendar.
 - **Czech Republic:** Chamber of Deputies schedule and order of business, Senate schedule, government expected events (vlada.cz), Constitutional Court announcements, Czech National Bank calendar, Czech Statistical Office release calendar, presidential office programme.
-- **Other governments and institutions:** election calendars (IFES ElectionGuide), UN Security Council programme of work, NATO, G7 and G20, national parliaments of large member states, major central banks, national statistics offices.
+- **World:** election calendars (IFES ElectionGuide), UN Security Council programme of work and UN agencies, NATO, G7 and G20, African Union, ASEAN, summits and state visits, parliaments and governments of the United States, the United Kingdom, Germany, France, Poland and other large countries, major central banks, national statistics offices.
+- **European Union:** Parliament plenary agenda, the Council's forward look and the rotating Presidency's calendar, the Commission's College agenda, the Court of Justice judicial calendar, ECB monetary policy calendar, Eurostat release calendar.
 - **Courts:** scheduled verdicts and rulings of international and high national courts.
 - **Science, health and culture:** launch schedules (ESA, NASA, others), WHO, major prizes and announcements, large festivals and premieres.
 - **Weather:** ČHMÚ and ECMWF-based national services (shown for information; normally not scored).
@@ -57,10 +57,10 @@ The candidate pool for one edition should contain at least 40 events before sele
 Each candidate gets three scores from 1 to 5:
 
 - **Impact**: how many people and how much policy, money or security it affects.
-- **Reach**: relevance to our readers, weighted Czech Republic and EU first, then the world.
+- **Reach**: how many readers it matters to. The paper is a general newspaper with a Czech home base and a world view, not an EU bulletin: Czech events and major world events weigh most; EU institutions score high only when a decision has real consequences beyond Brussels (money, law that changes daily life, foreign policy).
 - **Uncertainty value**: how much a forecast tells the reader. An outcome that is close to certain, or a pure coin toss with no information, scores low; a contested outcome on which evidence exists scores high.
 
-The editorial score is Impact × Reach × Uncertainty value. Candidates are ranked and then fitted to section quotas, so that each edition covers Czech politics, EU institutions, world affairs, the economy and at least one item from science, health or culture when one qualifies. Sport and financial market prices are excluded by policy.
+The editorial score is Impact × Reach × Uncertainty value. Candidates are ranked and then fitted to section quotas, so that each edition covers the Czech Republic, world affairs, Europe, the economy and at least one item from science, health or culture when one qualifies. The World section is the largest; EU institutional stories are capped at three per edition, including the front page. Sport and financial market prices are excluded by policy.
 
 ## 3. Writing a forecastable claim
 
@@ -123,6 +123,7 @@ The final probability, the claim text, the criterion and the rationale are writt
 - Each report ends with a **basis** line naming what it rests on and the main risk to the forecast.
 - We do not forecast deaths, accidents, disasters, crimes, or the health of named people, and we do not write about private individuals.
 - Every page carries a clear statement that its content is forecast.
+- The paper appears in English (default) and Czech. The Czech text is a faithful translation written in the same run; the forecasts, probabilities and deadlines are identical. A translation may be corrected later; a forecast never.
 
 ## 6. Checking the claims
 

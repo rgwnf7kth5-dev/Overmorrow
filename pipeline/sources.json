@@ -1,45 +1,221 @@
 {
   "_note": "Registry checked in full for every edition. Add sources found missing in post-mortems.",
   "calendars": [
-    {"section": "Europe", "name": "European Parliament plenary agenda", "url": "https://www.europarl.europa.eu/plenary/en/agenda.html"},
-    {"section": "Europe", "name": "European Parliament press: week ahead / plenary newsletter", "url": "https://www.europarl.europa.eu/news/en/agenda"},
-    {"section": "Europe", "name": "EP committee meetings calendar", "url": "https://emeeting.europarl.europa.eu/emeeting/committee/en/agenda"},
-    {"section": "Europe", "name": "EPRS plenary session briefings", "url": "https://eprs.europarl.europa.eu/home/topics/plenary-session"},
-    {"section": "Europe", "name": "Legislative Observatory (OEIL)", "url": "https://oeil.secure.europarl.europa.eu/oeil/en/"},
-    {"section": "Europe", "name": "Council of the EU forward look and meeting calendar", "url": "https://www.consilium.europa.eu/en/meetings/calendar/"},
-    {"section": "Europe", "name": "Rotating Presidency calendar (Ireland, H2 2026)", "url": "https://irish-presidency.consilium.europa.eu/en/events/"},
-    {"section": "Europe", "name": "European Commission weekly agenda and College meetings", "url": "https://commission.europa.eu/about/organisation/college-commissioners/weekly-meeting_en"},
-    {"section": "Europe", "name": "Court of Justice of the EU judicial calendar", "url": "https://curia.europa.eu/jcms/jcms/Jo2_7052/"},
-    {"section": "Economy", "name": "ECB monetary policy meetings", "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"},
-    {"section": "Economy", "name": "Eurostat release calendar", "url": "https://ec.europa.eu/eurostat/news/release-calendar"},
-    {"section": "Czech Republic", "name": "Poslanecká sněmovna: harmonogram a pořad schůzí", "url": "https://www.psp.cz/sqw/hp.sqw?k=200"},
-    {"section": "Czech Republic", "name": "Poslanecká sněmovna: aktuální schůze", "url": "https://www.psp.cz/sqw/hp.sqw?k=1005"},
-    {"section": "Czech Republic", "name": "Senát: kalendář", "url": "https://www.senat.cz/"},
-    {"section": "Czech Republic", "name": "Vláda ČR: očekávané události", "url": "https://vlada.gov.cz/cz/media-centrum/ocekavane-udalosti/"},
-    {"section": "Czech Republic", "name": "Ústavní soud: vyhlašování nálezů", "url": "https://www.usoud.cz/"},
-    {"section": "Czech Republic", "name": "ČNB: kalendář měnové politiky", "url": "https://www.cnb.cz/cs/menova-politika/"},
-    {"section": "Czech Republic", "name": "ČSÚ: katalog a termíny zveřejnění", "url": "https://csu.gov.cz/"},
-    {"section": "Czech Republic", "name": "Pražský hrad: program prezidenta", "url": "https://www.hrad.cz/"},
-    {"section": "World", "name": "IFES ElectionGuide calendar", "url": "https://www.electionguide.org/elections/upcoming/"},
-    {"section": "World", "name": "UN Security Council programme of work", "url": "https://main.un.org/securitycouncil/en/content/programme-work"},
-    {"section": "World", "name": "NATO events", "url": "https://www.nato.int/cps/en/natohq/events.htm"},
-    {"section": "World", "name": "US Federal Reserve calendar", "url": "https://www.federalreserve.gov/newsevents/calendar.htm"},
-    {"section": "World", "name": "UK ONS release calendar", "url": "https://www.ons.gov.uk/releasecalendar"},
-    {"section": "Science and Health", "name": "WHO news and events", "url": "https://www.who.int/news-room/events"},
-    {"section": "Science and Health", "name": "Launch schedules", "url": "https://www.rocketlaunch.live/"},
-    {"section": "Weather", "name": "ČHMÚ předpověď", "url": "https://www.chmi.cz/"}
+    {
+      "section": "Europe",
+      "name": "European Parliament plenary agenda",
+      "url": "https://www.europarl.europa.eu/plenary/en/agenda.html"
+    },
+    {
+      "section": "Europe",
+      "name": "European Parliament press: week ahead / plenary newsletter",
+      "url": "https://www.europarl.europa.eu/news/en/agenda"
+    },
+    {
+      "section": "Europe",
+      "name": "EP committee meetings calendar",
+      "url": "https://emeeting.europarl.europa.eu/emeeting/committee/en/agenda"
+    },
+    {
+      "section": "Europe",
+      "name": "EPRS plenary session briefings",
+      "url": "https://eprs.europarl.europa.eu/home/topics/plenary-session"
+    },
+    {
+      "section": "Europe",
+      "name": "Legislative Observatory (OEIL)",
+      "url": "https://oeil.secure.europarl.europa.eu/oeil/en/"
+    },
+    {
+      "section": "Europe",
+      "name": "Council of the EU forward look and meeting calendar",
+      "url": "https://www.consilium.europa.eu/en/meetings/calendar/"
+    },
+    {
+      "section": "Europe",
+      "name": "Rotating Presidency calendar (Ireland, H2 2026)",
+      "url": "https://irish-presidency.consilium.europa.eu/en/events/"
+    },
+    {
+      "section": "Europe",
+      "name": "European Commission weekly agenda and College meetings",
+      "url": "https://commission.europa.eu/about/organisation/college-commissioners/weekly-meeting_en"
+    },
+    {
+      "section": "Europe",
+      "name": "Court of Justice of the EU judicial calendar",
+      "url": "https://curia.europa.eu/jcms/jcms/Jo2_7052/"
+    },
+    {
+      "section": "Economy",
+      "name": "ECB monetary policy meetings",
+      "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "section": "Economy",
+      "name": "Eurostat release calendar",
+      "url": "https://ec.europa.eu/eurostat/news/release-calendar"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Poslanecká sněmovna: harmonogram a pořad schůzí",
+      "url": "https://www.psp.cz/sqw/hp.sqw?k=200"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Poslanecká sněmovna: aktuální schůze",
+      "url": "https://www.psp.cz/sqw/hp.sqw?k=1005"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Senát: kalendář",
+      "url": "https://www.senat.cz/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Vláda ČR: očekávané události",
+      "url": "https://vlada.gov.cz/cz/media-centrum/ocekavane-udalosti/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Ústavní soud: vyhlašování nálezů",
+      "url": "https://www.usoud.cz/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "ČNB: kalendář měnové politiky",
+      "url": "https://www.cnb.cz/cs/menova-politika/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "ČSÚ: katalog a termíny zveřejnění",
+      "url": "https://csu.gov.cz/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Pražský hrad: program prezidenta",
+      "url": "https://www.hrad.cz/"
+    },
+    {
+      "section": "World",
+      "name": "IFES ElectionGuide calendar",
+      "url": "https://www.electionguide.org/elections/upcoming/"
+    },
+    {
+      "section": "World",
+      "name": "UN Security Council programme of work",
+      "url": "https://main.un.org/securitycouncil/en/content/programme-work"
+    },
+    {
+      "section": "World",
+      "name": "NATO events",
+      "url": "https://www.nato.int/cps/en/natohq/events.htm"
+    },
+    {
+      "section": "World",
+      "name": "US Federal Reserve calendar",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "section": "World",
+      "name": "UK ONS release calendar",
+      "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "section": "Science and Health",
+      "name": "WHO news and events",
+      "url": "https://www.who.int/news-room/events"
+    },
+    {
+      "section": "Science and Health",
+      "name": "Launch schedules",
+      "url": "https://www.rocketlaunch.live/"
+    },
+    {
+      "section": "Weather",
+      "name": "ČHMÚ předpověď",
+      "url": "https://www.chmi.cz/"
+    },
+    {
+      "section": "World",
+      "name": "African Union calendar",
+      "url": "https://au.int/en/calendar"
+    },
+    {
+      "section": "World",
+      "name": "ASEAN events",
+      "url": "https://asean.org/events/"
+    },
+    {
+      "section": "World",
+      "name": "UK Parliament business",
+      "url": "https://whatson.parliament.uk/"
+    },
+    {
+      "section": "World",
+      "name": "US Congress schedule",
+      "url": "https://www.congress.gov/"
+    },
+    {
+      "section": "World",
+      "name": "Bundestag Tagesordnung",
+      "url": "https://www.bundestag.de/tagesordnungen"
+    },
+    {
+      "section": "World",
+      "name": "Assemblée nationale agenda",
+      "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas"
+    },
+    {
+      "section": "World",
+      "name": "Wikipedia current events and year pages",
+      "url": "https://en.wikipedia.org/wiki/Portal:Current_events"
+    }
   ],
   "running_story_outlets": [
-    "Reuters", "AP", "AFP", "Bloomberg", "Financial Times", "Politico Europe", "Euronews", "Agence Europe",
-    "ČTK (ceskenoviny.cz)", "ČT24", "iRozhlas", "Seznam Zprávy", "Hospodářské noviny",
-    "Al Jazeera", "BBC", "Axios", "Meduza", "Kyiv Independent"
+    "Reuters",
+    "AP",
+    "AFP",
+    "Bloomberg",
+    "Financial Times",
+    "Politico Europe",
+    "Euronews",
+    "Agence Europe",
+    "ČTK (ceskenoviny.cz)",
+    "ČT24",
+    "iRozhlas",
+    "Seznam Zprávy",
+    "Hospodářské noviny",
+    "Al Jazeera",
+    "BBC",
+    "Axios",
+    "Meduza",
+    "Kyiv Independent"
   ],
   "aggregates": [
-    {"name": "Polymarket", "url": "https://polymarket.com/"},
-    {"name": "Kalshi", "url": "https://kalshi.com/"},
-    {"name": "Metaculus", "url": "https://www.metaculus.com/"},
-    {"name": "Manifold", "url": "https://manifold.markets/"},
-    {"name": "Europe Elects / PolitPro poll averages", "url": "https://politpro.eu/"},
-    {"name": "Wikipedia opinion polling tables", "url": "https://en.wikipedia.org/"}
+    {
+      "name": "Polymarket",
+      "url": "https://polymarket.com/"
+    },
+    {
+      "name": "Kalshi",
+      "url": "https://kalshi.com/"
+    },
+    {
+      "name": "Metaculus",
+      "url": "https://www.metaculus.com/"
+    },
+    {
+      "name": "Manifold",
+      "url": "https://manifold.markets/"
+    },
+    {
+      "name": "Europe Elects / PolitPro poll averages",
+      "url": "https://politpro.eu/"
+    },
+    {
+      "name": "Wikipedia opinion polling tables",
+      "url": "https://en.wikipedia.org/"
+    }
   ]
 }
