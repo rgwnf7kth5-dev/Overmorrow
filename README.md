@@ -6,6 +6,7 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 
 - **How it works:** [METHODOLOGY.md](METHODOLOGY.md)
 - **Producing an edition:** [pipeline/EDITOR.md](pipeline/EDITOR.md)
+- **Afternoon update:** [pipeline/UPDATE.md](pipeline/UPDATE.md)
 - **Scoring an edition:** [pipeline/RESOLVER.md](pipeline/RESOLVER.md)
 
 ## Repository layout
@@ -13,6 +14,7 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | Path | What it holds |
 |---|---|
 | `data/editions/YYYY-MM-DD.json` | One file per edition, named by its date. Never edited after publication. |
+| `data/updates/YYYY-MM-DD.json` | The afternoon update of that edition: revised probabilities and added stories. |
 | `data/resolutions/YYYY-MM-DD.json` | Results for that edition's claims, added as they fall due. Append-only. |
 | `data/postmortems.md` | Reviews of confident misses. |
 | `METHODOLOGY.cs.md` | Czech version of the methodology, shown at /cs/method/. |

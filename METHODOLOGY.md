@@ -8,7 +8,7 @@ This document is the full protocol. The step-by-step operating manuals for the p
 
 ## 1. Timing
 
-One run every morning does both jobs: it first scores whatever has fallen due, then writes and publishes the new edition.
+One run every morning does both jobs: it first scores whatever has fallen due, then writes and publishes the new edition. A second, shorter run after midday updates that edition with what has become known since the morning (section 4.8).
 
 | Step | When (Europe/Paris) |
 |---|---|
@@ -16,6 +16,7 @@ One run every morning does both jobs: it first scores whatever has fallen due, t
 | Claims due are resolved and stamped onto archived editions | First part of the run |
 | Information cut-off and freeze | Early morning of day D, recorded as `frozen_at` |
 | Edition dated D+2 published | By 06:00 on day D |
+| Afternoon update of the same edition | Run starts 12:20, published by 13:30 on day D |
 | Previous edition moves to the archive | At the same moment, when the new edition replaces it |
 | Events forecast | Day D+1 |
 | That edition's claims resolved | In the 06:00 run of day D+2, once the day's results are known |
@@ -114,6 +115,10 @@ A separate reviewer reads the finished forecasts with one question: what is most
 ### 4.7 Freeze
 
 The final probability, the claim text, the criterion and the rationale are written into the edition file, which is committed with its timestamp. From then on nothing in it changes.
+
+### 4.8 Afternoon update
+
+After midday the same edition is updated, following [`pipeline/UPDATE.md`](pipeline/UPDATE.md). A morning claim is revised only when a new fact published after the morning freeze moves the full ensemble by at least 5 percentage points; the revision states the new fact and its source. Up to three stories may be added for events newly announced for the next day. The morning file is never changed: revisions and additions are stored separately with their own freeze time, readers see "morning 55% → afternoon 70%", and both versions are scored. The accuracy page compares morning and afternoon figures on the same claims, which shows whether the updates help.
 
 ## 5. Writing the reports
 

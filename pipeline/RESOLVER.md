@@ -5,7 +5,7 @@ This is the procedure for the first part of the morning run (starting 04:20, fin
 ## 1. Find what is due
 
 1. Create the branch `daily/<today>` from `main`.
-2. For every file in `data/editions/`, list the claims whose `resolves_by` is in the past and that have no result yet in `data/resolutions/<edition id>.json`.
+2. For every file in `data/editions/` and its afternoon update in `data/updates/` (added stories carry their own claims), list the claims whose `resolves_by` is in the past and that have no result yet in `data/resolutions/<edition id>.json`.
 
 ## 2. Resolve each claim
 

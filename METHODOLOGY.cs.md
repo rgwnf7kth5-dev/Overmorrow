@@ -8,7 +8,7 @@ Tento dokument popisuje celý postup. Podrobné pracovní návody pro lidi a age
 
 ## 1. Časový rozvrh
 
-Jeden běh každé ráno udělá obě práce: nejdřív vyhodnotí, co je splatné, pak napíše a vydá nové vydání.
+Jeden běh každé ráno udělá obě práce: nejdřív vyhodnotí, co je splatné, pak napíše a vydá nové vydání. Druhý, kratší běh po poledni vydání aktualizuje o to, co se od rána dozvíme (oddíl 4.8).
 
 | Krok | Kdy (středoevropský čas) |
 |---|---|
@@ -16,6 +16,7 @@ Jeden běh každé ráno udělá obě práce: nejdřív vyhodnotí, co je splatn
 | Vyhodnocení splatných tvrzení a razítka v archivu | První část běhu |
 | Uzávěrka informací | Brzy ráno dne D, zapsaná jako `frozen_at` |
 | Vydání s datem D+2 vychází | Do 6:00 dne D |
+| Odpolední aktualizace téhož vydání | Běh začíná ve 12:20, vychází do 13:30 dne D |
 | Předchozí vydání přechází do archivu | Ve stejnou chvíli, kdy ho nové nahradí |
 | Predikované události | Den D+1 |
 | Vyhodnocení tvrzení tohoto vydání | V běhu v 6:00 dne D+2, kdy jsou výsledky dne známé |
@@ -114,6 +115,10 @@ Samostatný oponent čte hotové predikce s jedinou otázkou: co nás zítra nej
 ### 4.7 Uzávěrka
 
 Výsledná pravděpodobnost, text tvrzení, kritérium a zdůvodnění se zapíšou do souboru vydání, který se uloží s časovým razítkem. Od té chvíle se na něm nic nemění.
+
+### 4.8 Odpolední aktualizace
+
+Po poledni se totéž vydání aktualizuje podle [`pipeline/UPDATE.md`](pipeline/UPDATE.md). Ranní tvrzení se změní jen tehdy, když nový fakt zveřejněný po ranní uzávěrce posune celý tým o 5 procentních bodů nebo víc; změna uvádí nový fakt a jeho zdroj. Přibýt mohou až tři zprávy o událostech nově ohlášených na další den. Ranní soubor se nikdy nemění: změny a doplňky se ukládají zvlášť s vlastním časem uzávěrky, čtenář vidí „ráno 55 % → odpoledne 70 %“ a hodnotí se obě verze. Stránka přesnosti porovnává ranní a odpolední čísla na stejných tvrzeních, takže je vidět, zda aktualizace pomáhají.
 
 ## 5. Psaní zpráv
 

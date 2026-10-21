@@ -28,6 +28,7 @@ const T = {
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
     stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected' },
+    upd: { at: (t) => ` · updated ${t}`, banner: (t, r, a) => `<b>Afternoon update, ${t}.</b> ${r} forecast${r === 1 ? '' : 's'} revised, ${a} stor${a === 1 ? 'y' : 'ies'} added. Morning figures stay on record and are scored separately.`, morning: 'morning', afternoon: 'afternoon', why: 'Why it changed', added: 'Added in the afternoon update' },
     print: 'Print edition', printBtn: 'Print or save as PDF', printNote: 'One A4 page. Use your browser’s print dialog; choose “Save as PDF” to keep a copy.', printFoot: 'All reports are forecasts written before the events. Results and sources:',
     match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
     evidence: 'Evidence',
@@ -50,6 +51,7 @@ const T = {
       calH: 'Calibration', cal: 'Each dot is a group of claims with similar probabilities. On the dashed line, our 70% calls come true 70% of the time. Dots below the line mean we were overconfident; above it, too cautious.',
       calCols: ['Forecast band', 'Claims', 'Average forecast', 'Came true'], axisX: 'Forecast probability', axisY: 'How often it came true',
       secH: 'By section', secCols: ['Section', 'Claims', 'Went our way', 'Brier'],
+      trackH: 'Morning edition and afternoon update', trackNote: 'Both versions are frozen and scored on their own. If the afternoon revisions work, their Brier score is lower than the morning one on the same claims.', trackCols: ['Forecasts', 'Claims', 'Brier'], tracks: ['Morning edition, all claims', 'Final forecasts, after updates', 'Revised claims: morning figure', 'Revised claims: afternoon figure'],
       missH: 'Largest misses', missCols: ['Edition', 'Claim', 'Forecast', 'Outcome'], front: 'Front page',
     },
     notFound: ['Page not found', 'Try <a href="{p}/">today’s edition</a> or the <a href="{p}/archive/">archive</a>.'],
@@ -73,6 +75,7 @@ const T = {
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
     stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno' },
+    upd: { at: (t) => ` · aktualizováno ${t}`, banner: (t, r, a) => `<b>Odpolední aktualizace, ${t}.</b> Změněné predikce: ${r}, přidané zprávy: ${a}. Ranní čísla zůstávají v záznamu a hodnotí se zvlášť.`, morning: 'ráno', afternoon: 'odpoledne', why: 'Proč se to změnilo', added: 'Přidáno v odpolední aktualizaci' },
     print: 'Tisková verze', printBtn: 'Vytisknout nebo uložit jako PDF', printNote: 'Jedna strana A4. Použijte tisk v prohlížeči; volbou „Uložit jako PDF“ si uložíte kopii.', printFoot: 'Všechny zprávy jsou predikce napsané před událostmi. Výsledky a zdroje:',
     match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
     evidence: 'Doklad',
@@ -95,6 +98,7 @@ const T = {
       calH: 'Kalibrace', cal: 'Každý bod je skupina tvrzení s podobnou pravděpodobností. Na přerušované čáře se naše tipy na 70 % splní v 70 % případů. Body pod čarou znamenají přílišnou sebejistotu, nad ní přílišnou opatrnost.',
       calCols: ['Pásmo predikce', 'Tvrzení', 'Průměrná predikce', 'Splnilo se'], axisX: 'Predikovaná pravděpodobnost', axisY: 'Jak často se splnilo',
       secH: 'Podle rubrik', secCols: ['Rubrika', 'Tvrzení', 'Vyšlo', 'Brier'],
+      trackH: 'Ranní vydání a odpolední aktualizace', trackNote: 'Obě verze jsou zamčené a hodnotí se samostatně. Pokud odpolední změny pomáhají, mají na stejných tvrzeních nižší Brierovo skóre než ranní.', trackCols: ['Predikce', 'Tvrzení', 'Brier'], tracks: ['Ranní vydání, všechna tvrzení', 'Konečné predikce po aktualizacích', 'Změněná tvrzení: ranní číslo', 'Změněná tvrzení: odpolední číslo'],
       missH: 'Největší omyly', missCols: ['Vydání', 'Tvrzení', 'Predikce', 'Výsledek'], front: 'Titulní strana',
     },
     notFound: ['Stránka nenalezena', 'Zkuste <a href="{p}/">dnešní vydání</a> nebo <a href="{p}/archive/">archiv</a>.'],
@@ -114,6 +118,7 @@ const fmtStamp = (s, L) => {
   const zone = { '+01:00': 'CET', '+02:00': 'CEST', Z: 'UTC' }[m[3]] || m[3];
   return `${fmtDate(m[1], L, DAY)}, ${m[2]} ${zone}`;
 };
+const hhmm = (st) => (st.match(/T(\d{2}:\d{2})/) || [])[1] || '';
 const write = (rel, html) => {
   const file = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -135,7 +140,11 @@ function localise(ed, lang) {
     const out = { ...s };
     for (const k of ['kicker', 'headline', 'standfirst', 'body', 'basis']) if (x[k]) out[k] = x[k];
     if (x.table && s.table) out.table = { caption: x.table.caption || s.table.caption, rows: s.table.rows.map((r, i) => ({ ...r, ...(x.table.rows?.[i] || {}) })) };
-    out.claims = s.claims.map((cl) => ({ ...cl, ...(x.claims?.[cl.id] || {}) }));
+    out.claims = s.claims.map((cl) => {
+      const o = { ...cl, ...(x.claims?.[cl.id] || {}) };
+      if (cl.update?.reason_cs) o.update = { ...cl.update, reason: cl.update.reason_cs };
+      return o;
+    });
     return out;
   });
   return c;
@@ -174,7 +183,7 @@ ${main}
 }
 
 function masthead(L, ed, latestDate, printHref) {
-  const top = ed ? L.forecastEdition(fmtStamp(ed.frozen_at, L)) : L.forecastPaper;
+  const top = ed ? L.forecastEdition(fmtStamp(ed.frozen_at, L)) + (ed.update ? L.upd.at(hhmm(ed.update.frozen_at)) : '') : L.forecastPaper;
   const line = ed
     ? `<span>${fmtDate(ed.edition_date, L)}</span><span>No. ${ed.number}${ed.pilot ? ` · ${L.pilot}` : ''}${printHref ? ` · <a href="${printHref}">${L.print}</a>` : ''}</span><span>${L.reporting(fmtDate(ed.events_date, L, DAY))}</span>`
     : `<span>${L.writtenAhead}</span><span>${L.latest}: <a href="${link(L, '/')}">${fmtDate(latestDate, L, DAY)}</a></span>`;
@@ -209,7 +218,12 @@ function storyTone(story, results) {
 
 function likelihood(claim, results, show, L) {
   const r = results.get(claim.id);
-  return `<div class="lk"><span class="bar" aria-hidden="true"><i style="width:${Math.round(claim.probability * 100)}%"></i></span><span>${esc(claim.label)}: <b>${pctNum(claim.probability, L)}</b></span>${show ? stampFor(r, L, claim) : ''}</div>${
+  const revised = claim.update && claim.morning !== null && claim.morning !== undefined && claim.morning !== claim.probability;
+  const figure = revised
+    ? `<s title="${L.upd.morning}">${pctNum(claim.morning, L)}</s> → <b>${pctNum(claim.probability, L)}</b> <small>${L.upd.afternoon} ${hhmm(claim.update.frozen_at)}</small>`
+    : `<b>${pctNum(claim.probability, L)}</b>`;
+  const why = revised && claim.update.reason ? `<p class="why"><b>${L.upd.why}:</b> ${esc(claim.update.reason)}${(claim.update.sources || []).filter((x) => x.url).map((x) => ` <a href="${esc(x.url)}">${esc(x.title)}</a>`).join(';')}</p>` : '';
+  return `<div class="lk${revised ? ' rev' : ''}"><span class="bar" aria-hidden="true"><i style="width:${Math.round(claim.probability * 100)}%"></i></span><span>${esc(claim.label)}: ${figure}</span>${show ? stampFor(r, L, claim) : ''}</div>${why}${
     r && r.note ? `<p class="resnote">${esc(r.note)}${r.evidence ? ` <a href="${esc(r.evidence)}">${L.evidence}</a>` : ''}</p>` : ''}`;
 }
 
@@ -230,7 +244,7 @@ function storyHtml(story, results, show, L) {
     .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
   const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}`;
   const content = isLead ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
-  return `<div class="kicker">${esc(story.kicker)}</div><${H}>${esc(story.headline)}</${H}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}${content}`;
+  return `<div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${H}>${esc(story.headline)}</${H}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}${content}`;
 }
 
 const spanClass = { half: 's6', third: 's4', quarter: 's3' };
@@ -264,7 +278,9 @@ function editionMain(original, L) {
   }
   const diary = ed.diary?.length ? `<div class="section"><h2>${L.comingUp}</h2><span>${L.comingDek}</span></div><div class="s12"><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
 
+  const updBanner = ed.update ? `<p class="updbanner">${L.upd.banner(hhmm(ed.update.frozen_at), ed.update.revisions, ed.update.added)}</p>` : '';
   return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
+${updBanner}
 ${scorebar}
 <main class="grid">
   ${(() => { const st = byId.get(ed.front.lead), t = tone(st); return `<article class="story lead s8${t.cls}"${t.style}>${storyHtml(st, results, show, L)}</article>`; })()}
@@ -284,7 +300,8 @@ function printPage(original, L) {
   const claimLine = (c) => {
     const r = results.get(c.id), k = closeness(c, r);
     const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.match} ${pctNum(k, L)}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
-    return `<p class="lk"><span class="bar"><i style="width:${Math.round(c.probability * 100)}%"></i></span>${esc(c.label)}: <b>${pctNum(c.probability, L)}</b>${res}</p>`;
+    const rev = c.update && c.morning !== null && c.morning !== undefined && c.morning !== c.probability;
+    return `<p class="lk"><span class="bar"><i style="width:${Math.round(c.probability * 100)}%"></i></span>${esc(c.label)}: ${rev ? `<s>${pctNum(c.morning, L)}</s> → ` : ''}<b>${pctNum(c.probability, L)}</b>${res}</p>`;
   };
   const story = (s, lead) => {
     const tableClaims = new Set((s.table?.rows || []).map((r) => r.claim));
@@ -417,6 +434,16 @@ function calibrationSvg(bins, L) {
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L.acc.calH}" font-family="IBM Plex Sans Condensed, Arial, sans-serif">${g}</svg>`;
 }
 
+function trackBlock(editions, L) {
+  if (!editions.some((e) => e.update)) return '';
+  const A = L.acc;
+  const morning = scoredClaims(editions, 'morning'), latest = scoredClaims(editions, 'latest');
+  const isRev = (r) => r.update && r.morning !== null && r.morning !== undefined;
+  const revM = morning.filter(isRev), revA = latest.filter(isRev);
+  const row = (label, rows) => { const x = summarise(rows); return `<tr><td>${label}</td><td class="n">${x ? x.n : 0}</td><td class="n">${x ? num3(x.brier, L) : '–'}</td></tr>`; };
+  return `<h2>${A.trackH}</h2><p>${A.trackNote}</p><div class="tbl"><table><thead><tr><th>${A.trackCols[0]}</th><th class="n">${A.trackCols[1]}</th><th class="n">${A.trackCols[2]}</th></tr></thead><tbody>${row(A.tracks[0], morning)}${row(A.tracks[1], latest)}${row(A.tracks[2], revM)}${row(A.tracks[3], revA)}</tbody></table></div>`;
+}
+
 function accuracyPage(editions, L) {
   const A = L.acc;
   const rows = scoredClaims(editions);
@@ -453,6 +480,7 @@ function accuracyPage(editions, L) {
 <div class="tbl"><table><thead><tr><th>${A.calCols[0]}</th><th class="n">${A.calCols[1]}</th><th class="n">${A.calCols[2]}</th><th class="n">${A.calCols[3]}</th></tr></thead><tbody>${bins.filter((b) => b.n).map((b) => `<tr><td>${b.label}</td><td class="n">${b.n}</td><td class="n">${pctNum(b.meanP, L)}</td><td class="n">${pctNum(b.freq, L)}</td></tr>`).join('')}</tbody></table></div>
 <h2>${A.secH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
+${trackBlock(editions, L)}
 <h2>${A.missH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.missCols[0]}</th><th>${A.missCols[1]}</th><th class="n">${A.missCols[2]}</th><th>${A.missCols[3]}</th></tr></thead><tbody>${worst}</tbody></table></div>
 </div>`;

@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadConfig, claimsOf } from './lib.mjs';
+import { loadEditions, loadResolution, loadConfig, claimsOf, loadUpdate, mergeUpdate } from './lib.mjs';
 
 const cfg = loadConfig();
 const errors = [];
@@ -13,7 +13,50 @@ const isStamp = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(
 const addDays = (d, n) => { const t = new Date(`${d}T12:00:00Z`); t.setUTCDate(t.getUTCDate() + n); return t.toISOString().slice(0, 10); };
 const nonEmpty = (s) => typeof s === 'string' && s.trim().length > 0;
 
-const editions = loadEditions();
+function checkStory(s, sw, ed) {
+  for (const f of ["kicker", "headline", "basis"]) if (!nonEmpty(s[f])) err(sw, `missing ${f}`);
+  if (!['lead', 'rail', 'half', 'third', 'quarter'].includes(s.size)) err(sw, 'size must be lead, rail, half, third or quarter');
+  if (!Array.isArray(s.body) || !s.body.length) err(sw, 'body must be a non-empty list of paragraphs');
+  if (!Array.isArray(s.claims) || !s.claims.length) err(sw, 'at least one claim required');
+  if (!Array.isArray(s.sources) || !s.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(sw, 'at least one source with a URL required');
+  const cs = s.cs;
+  if (!cs) err(sw, 'Czech text (cs) missing');
+  else {
+    for (const f of ['kicker', 'headline', 'basis']) if (!nonEmpty(cs[f])) err(sw, `cs.${f} missing`);
+    if (!Array.isArray(cs.body) || !cs.body.length) err(sw, 'cs.body missing');
+    if (s.standfirst && !nonEmpty(cs.standfirst)) err(sw, 'cs.standfirst missing');
+    if (s.table && (!cs.table || (cs.table.rows || []).length !== s.table.rows.length)) err(sw, 'cs.table must have the same rows');
+    for (const c of s.claims || []) {
+      const t = cs.claims?.[c.id];
+      if (!t || !nonEmpty(t.label) || !nonEmpty(t.text) || !nonEmpty(t.criterion)) err(sw, `cs.claims.${c.id} needs label, text and criterion`);
+    }
+  }
+  // House rule: foreign surnames from the English text must not be feminised in Czech (Metsola, not Metsolaová).
+  if (cs) {
+    const en = JSON.stringify([s.kicker, s.headline, s.standfirst, s.body, s.basis, s.claims, s.table]);
+    const czText = JSON.stringify(cs);
+    const names = new Set((en.match(/\b[A-Z][a-z]{2,}\b/g) || []).filter((n) => !/(ová|ova)$/.test(n)));
+    for (const n of names) {
+      const stems = [n, n.replace(/[aeiouy]$/, '')];
+      const fem = new RegExp(`(?:^|[^\\p{L}])(${stems.join('|')})(ová|ové|ovou|ovy|ových|ovým|ovými)(?![\\p{L}])`, 'u');
+      const m = czText.match(fem);
+      if (m) err(sw, `feminised foreign surname in Czech text: "${m[1]}${m[2]}" (write "${n}")`);
+    }
+  }
+  for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
+}
+
+function checkClaim(c, cw, frozen) {
+    for (const f of ['label', 'text', 'criterion', 'resolution_source']) if (!nonEmpty(c[f])) err(cw, `missing ${f}`);
+  if (typeof c.probability !== 'number' || c.probability < cfg.probability_min || c.probability > cfg.probability_max)
+    err(cw, `probability must be a number between ${cfg.probability_min} and ${cfg.probability_max}`);
+  if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
+  else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');
+  if (!['official', 'reported', 'speculative'].includes(c.schedule)) err(cw, 'schedule must be official, reported or speculative');
+  if (c.schedule === 'speculative' && c.story.size === 'lead') err(cw, 'speculative events cannot lead the paper');
+}
+
+const editions = loadEditions({ merged: false });
 if (!editions.length) err('data/editions', 'no editions found');
 
 let prevNumber = 0;
@@ -35,36 +78,7 @@ for (const ed of editions) {
     const sw = `${w} story ${s.id}`;
     if (!nonEmpty(s.id) || ids.has(s.id)) err(sw, 'missing or duplicate id');
     ids.add(s.id);
-    for (const f of ['kicker', 'headline', 'basis']) if (!nonEmpty(s[f])) err(sw, `missing ${f}`);
-    if (!['lead', 'rail', 'half', 'third', 'quarter'].includes(s.size)) err(sw, 'size must be lead, rail, half, third or quarter');
-    if (!Array.isArray(s.body) || !s.body.length) err(sw, 'body must be a non-empty list of paragraphs');
-    if (!Array.isArray(s.claims) || !s.claims.length) err(sw, 'at least one claim required');
-    if (!Array.isArray(s.sources) || !s.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(sw, 'at least one source with a URL required');
-    const cs = s.cs;
-    if (!cs) err(sw, 'Czech text (cs) missing');
-    else {
-      for (const f of ['kicker', 'headline', 'basis']) if (!nonEmpty(cs[f])) err(sw, `cs.${f} missing`);
-      if (!Array.isArray(cs.body) || !cs.body.length) err(sw, 'cs.body missing');
-      if (s.standfirst && !nonEmpty(cs.standfirst)) err(sw, 'cs.standfirst missing');
-      if (s.table && (!cs.table || (cs.table.rows || []).length !== s.table.rows.length)) err(sw, 'cs.table must have the same rows');
-      for (const c of s.claims || []) {
-        const t = cs.claims?.[c.id];
-        if (!t || !nonEmpty(t.label) || !nonEmpty(t.text) || !nonEmpty(t.criterion)) err(sw, `cs.claims.${c.id} needs label, text and criterion`);
-      }
-    }
-    // House rule: foreign surnames from the English text must not be feminised in Czech (Metsola, not Metsolaová).
-    if (cs) {
-      const en = JSON.stringify([s.kicker, s.headline, s.standfirst, s.body, s.basis, s.claims, s.table]);
-      const czText = JSON.stringify(cs);
-      const names = new Set((en.match(/\b[A-Z][a-z]{2,}\b/g) || []).filter((n) => !/(ová|ova)$/.test(n)));
-      for (const n of names) {
-        const stems = [n, n.replace(/[aeiouy]$/, '')];
-        const fem = new RegExp(`(?:^|[^\\p{L}])(${stems.join('|')})(ová|ové|ovou|ovy|ových|ovým|ovými)(?![\\p{L}])`, 'u');
-        const m = czText.match(fem);
-        if (m) err(sw, `feminised foreign surname in Czech text: "${m[1]}${m[2]}" (write "${n}")`);
-      }
-    }
-    for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
+    checkStory(s, sw, ed);
   }
 
   const claimIds = new Set();
@@ -73,13 +87,7 @@ for (const ed of editions) {
     const cw = `${w} claim ${c.id}`;
     if (!nonEmpty(c.id) || claimIds.has(c.id)) err(cw, 'missing or duplicate id');
     claimIds.add(c.id);
-    for (const f of ['label', 'text', 'criterion', 'resolution_source']) if (!nonEmpty(c[f])) err(cw, `missing ${f}`);
-    if (typeof c.probability !== 'number' || c.probability < cfg.probability_min || c.probability > cfg.probability_max)
-      err(cw, `probability must be a number between ${cfg.probability_min} and ${cfg.probability_max}`);
-    if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
-    else if (isStamp(ed.frozen_at) && Date.parse(c.resolves_by) <= Date.parse(ed.frozen_at)) err(cw, 'resolves_by must be after frozen_at');
-    if (!['official', 'reported', 'speculative'].includes(c.schedule)) err(cw, 'schedule must be official, reported or speculative');
-    if (c.schedule === 'speculative' && c.story.size === 'lead') err(cw, 'speculative events cannot lead the paper');
+    checkClaim(c, cw, ed.frozen_at);
     if (c.exclusive_set) sets.set(c.exclusive_set, (sets.get(c.exclusive_set) || 0) + c.probability);
   }
   for (const [set, sum] of sets) if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
@@ -95,6 +103,42 @@ for (const ed of editions) {
     if (n < cfg.stories_min || n > cfg.stories_max) warn(w, `${n} stories; target is ${cfg.stories_min}-${cfg.stories_max}`);
   }
 
+  // Afternoon update: revisions of morning claims and stories added after the morning freeze.
+  const up = loadUpdate(ed.id);
+  if (up) {
+    const uw = `updates/${up.file}`;
+    if (up.edition !== ed.id) err(uw, 'edition must equal the file name');
+    if (!isStamp(up.frozen_at)) err(uw, 'frozen_at must be an ISO timestamp with offset');
+    else {
+      if (isStamp(ed.frozen_at) && Date.parse(up.frozen_at) <= Date.parse(ed.frozen_at)) err(uw, 'frozen_at must be after the morning freeze');
+      const offset = up.frozen_at.match(/([+-]\d{2}:\d{2}|Z)$/)[1];
+      if (Date.parse(up.frozen_at) >= Date.parse(`${ed.events_date}T00:00:00${offset}`)) err(uw, 'frozen_at must be before the events day begins');
+    }
+    if ((up.added || []).length && (!nonEmpty(up.summary) || !nonEmpty(up.summary_cs))) err(uw, 'summary and summary_cs required when stories are added');
+    for (const r of up.revisions || []) {
+      const rw = `${uw} revision ${r.claim}`;
+      if (!claimIds.has(r.claim)) err(rw, 'unknown claim');
+      if (typeof r.probability !== 'number' || r.probability < cfg.probability_min || r.probability > cfg.probability_max) err(rw, 'probability out of range');
+      if (!nonEmpty(r.reason) || !nonEmpty(r.reason_cs)) err(rw, 'reason and reason_cs required: name the new fact');
+      if (!Array.isArray(r.sources) || !r.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(rw, 'at least one source with a URL for the new fact');
+    }
+    for (const st of up.added || []) {
+      const sw = `${uw} story ${st.id}`;
+      if (ids.has(st.id)) err(sw, 'duplicate story id');
+      ids.add(st.id);
+      checkStory({ size: 'quarter', ...st }, sw, ed);
+      for (const c of st.claims || []) {
+        if (claimIds.has(c.id)) err(`${sw} claim ${c.id}`, 'duplicate claim id');
+        claimIds.add(c.id);
+        checkClaim({ ...c, story: st }, `${sw} claim ${c.id}`, up.frozen_at);
+      }
+    }
+    const merged = mergeUpdate(ed);
+    const setsAfter = new Map();
+    for (const c of claimsOf(merged)) if (c.exclusive_set) setsAfter.set(c.exclusive_set, (setsAfter.get(c.exclusive_set) || 0) + c.probability);
+    for (const [set, sum] of setsAfter) if (Math.abs(sum - 1) > 0.011) err(`${uw} set ${set}`, `after revision the exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
+  }
+
   const res = loadResolution(ed.id);
   if (res) {
     const rw = `resolutions/${res.file}`;
@@ -107,7 +151,7 @@ for (const ed of editions) {
       if (!nonEmpty(r.note)) err(rw, `claim ${r.claim}: note required`);
       if (r.outcome !== 'void' && !/^https?:\/\//.test(r.evidence || '')) err(rw, `claim ${r.claim}: evidence URL required`);
       if (!isStamp(r.resolved_at)) err(rw, `claim ${r.claim}: resolved_at must be an ISO timestamp`);
-      const claim = claimsOf(ed).find((c) => c.id === r.claim);
+      const claim = claimsOf(mergeUpdate(ed)).find((c) => c.id === r.claim);
       if (claim && isStamp(r.resolved_at) && Date.parse(r.resolved_at) < Date.parse(claim.resolves_by)) err(rw, `claim ${r.claim}: resolved before its deadline`);
     }
   }
