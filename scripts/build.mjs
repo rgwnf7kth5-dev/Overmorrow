@@ -137,18 +137,6 @@ function localise(ed, lang) {
   return c;
 }
 
-// ---------- logo ----------
-// A sun rising over the horizon (the morning paper) above two forward chevrons (two days ahead), in a ring.
-const LOGO = `<svg class="logo" viewBox="0 0 64 64" role="img" aria-label="The Overmorrow logo"><title>The Overmorrow</title>
-<circle cx="32" cy="32" r="29.5" fill="none" stroke="currentColor" stroke-width="3"/>
-<path d="M21 36a11 11 0 0 1 22 0z" fill="currentColor"/>
-<g stroke="currentColor" stroke-width="3" stroke-linecap="round">
-<line x1="32" y1="21" x2="32" y2="13"/><line x1="21.4" y1="25.4" x2="16.1" y2="20.1"/><line x1="42.6" y1="25.4" x2="47.9" y2="20.1"/><line x1="17" y1="32" x2="11" y2="30.4"/><line x1="47" y1="32" x2="53" y2="30.4"/>
-<line x1="7" y1="36" x2="57" y2="36"/></g>
-<g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="25,42 31,47.5 25,53"/><polyline points="33,42 39,47.5 33,53"/></g>
-</svg>`;
-const FAVICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#fbfaf8"/>${LOGO.replace(/<svg[^>]*>|<\/svg>|<title>.*?<\/title>/g, '').replaceAll('currentColor', '#161616')}</svg>`;
-
 // ---------- page frame ----------
 function layout(L, { title, nav, header, main, description, path: pagePath }) {
   const keys = ['today', 'archive', 'accuracy', 'method'];
@@ -188,7 +176,7 @@ function masthead(L, ed, latestDate) {
     : `<span>${L.writtenAhead}</span><span>${L.latest}: <a href="${link(L, '/')}">${fmtDate(latestDate, L, DAY)}</a></span>`;
   return `<header>
   <div class="topline"><span>${esc(top)}</span><span>${L.places}</span></div>
-  <div class="mast"><a href="${link(L, '/')}">${LOGO}<span>The Overmorrow</span></a></div>
+  <div class="mast"><a href="${link(L, '/')}"><img class="logo" src="/logo.svg" width="400" height="400" alt=""><span>The Overmorrow</span></a></div>
   <p class="motto">${esc(L.motto)}</p>
   <div class="dateline">${line}</div>
 </header>`;
@@ -369,7 +357,7 @@ function md(src) {
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'site', 'style.css'), path.join(DIST, 'style.css'));
-fs.writeFileSync(path.join(DIST, 'favicon.svg'), FAVICON);
+for (const f of ['logo.svg', 'favicon.svg']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
 
 const editions = loadEditions();
 const latest = editions[editions.length - 1];
