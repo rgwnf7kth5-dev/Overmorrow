@@ -1,12 +1,14 @@
 # Editor's Manual: Producing One Edition
 
-This is the operating procedure for the evening run. It implements [`METHODOLOGY.md`](../METHODOLOGY.md); where the two seem to differ, the methodology wins. Follow every step, in order. Do not skip steps to save time.
+This is the operating procedure for the edition part of the morning run. It implements [`METHODOLOGY.md`](../METHODOLOGY.md); where the two seem to differ, the methodology wins. Follow every step, in order. Do not skip steps to save time.
 
-Notation: the run happens on day **D**. The edition is dated **D+2** and forecasts the events of **D+1**. All times are Europe/Paris.
+Notation: the run starts at 04:20 on day **D**, right after the resolver part ([`RESOLVER.md`](RESOLVER.md)). The edition is dated **D+2**, forecasts the events of **D+1** and must be published by **06:00** on day D. All times are Europe/Paris.
+
+Time budget: resolver part by about 04:40, candidate pool by 05:00, ensemble and red team by 05:35, writing and publishing by 05:55. If the run falls behind, cut the number of stories toward `stories_min`, never the ensemble or the red team.
 
 ## 0. Setup
 
-1. Clone the repository and create a branch `edition/<D+2>` (for example `edition/2026-10-25`).
+1. Work on the branch the resolver part created, `daily/<D>` (for example `daily/2026-10-22`).
 2. Read `pipeline/config.json`, `pipeline/sources.json`, `pipeline/reference-classes.json`, and the two most recent edition files in `data/editions/` (for format and running stories).
 3. Read the latest resolution files in `data/resolutions/` and the accuracy figures they imply. Note any recurring error (for example, consistent overconfidence on schedule-dependent claims) and correct for it in this edition.
 4. Record the start time. The information cut-off (`frozen_at`) is the moment you finish step 6.
@@ -111,10 +113,10 @@ Both must pass with no errors. Fix the data, never the validator, unless the val
 
 ## 9. Publish
 
-Commit with the message `Edition No. <n>, dated <D+2>` and push the branch.
+Commit with the message `Edition No. <n>, dated <D+2>` and push the branch `daily/<D>`, which also carries the morning's results.
 
-- **If D is on or before `approval_required_through`:** open a pull request to `main` titled `Edition No. <n> — <D+2> (for approval)`. In the description list every claim with its probability, the three agent numbers, and anything that needed a judgement call. Do not merge. Send the publisher a short message with the pull request link; Netlify will add a deploy preview link to the pull request.
-- **Otherwise:** merge the branch into `main` yourself and push.
+- **If D is on or before `approval_required_through`:** open one pull request to `main` titled `<D>: edition No. <n> and results (for approval)`. In the description list the results first (claim, probability, outcome, evidence link), then every new claim with its probability, the three agent numbers, and anything that needed a judgement call. Do not merge. Send the publisher a short message with the pull request link; Netlify will add a deploy preview link to the pull request.
+- **Otherwise:** merge the branch into `main` yourself and push, no later than 06:00.
 
 ## 10. Report
 

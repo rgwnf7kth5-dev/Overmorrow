@@ -1,6 +1,6 @@
 # How The Overmorrow Works
 
-The Overmorrow is a newspaper written two days ahead. The edition dated day D+2 is written on the evening of day D and reports what we expect to happen on day D+1. Every report rests on an event that is scheduled or firmly expected, and every report carries at least one forecast: a binary claim with a stated probability, a deadline and a rule for checking it.
+The Overmorrow is a newspaper written two days ahead. The edition dated day D+2 is published at 06:00 on day D and reports what we expect to happen on day D+1. Every report rests on an event that is scheduled or firmly expected, and every report carries at least one forecast: a binary claim with a stated probability, a deadline and a rule for checking it.
 
 After the events, each claim is checked against a primary source and scored. Editions are never edited after publication. The full record, including every miss, is public in the archive and on the accuracy page, and the git history of this repository shows exactly when each forecast was made.
 
@@ -8,12 +8,19 @@ This document is the full protocol. The step-by-step operating manuals for the p
 
 ## 1. Timing
 
-| Step | When (Central European Time) |
+One run every morning does both jobs: it first scores whatever has fallen due, then writes and publishes the new edition.
+
+| Step | When (Europe/Paris) |
 |---|---|
-| Information cut-off and freeze | Evening of day D, recorded as `frozen_at` |
-| Edition published | Evening of day D, dated D+2 |
+| Morning run starts | 04:20 on day D |
+| Claims due are resolved and stamped onto archived editions | First part of the run |
+| Information cut-off and freeze | Early morning of day D, recorded as `frozen_at` |
+| Edition dated D+2 published | By 06:00 on day D |
+| Previous edition moves to the archive | At the same moment, when the new edition replaces it |
 | Events forecast | Day D+1 |
-| Claims resolved | From the morning of D+2, as each claim's deadline passes |
+| That edition's claims resolved | In the 06:00 run of day D+2, once the day's results are known |
+
+So an edition is on the front page for one day, goes to the archive the next morning, and receives its results the morning after that, on the date it bears.
 
 Nothing learned after `frozen_at` may be used in the edition. If a decisive fact emerges between freezing and publication, the edition is re-frozen and the new time recorded.
 
@@ -146,6 +153,6 @@ Void claims are listed but not scored.
 
 ## 9. Publication and approval
 
-Editions are prepared as pull requests. During the launch period every edition and every resolution is approved by the publisher before it goes live; Netlify builds a preview of each pull request for review. The approval period is set in [`pipeline/config.json`](pipeline/config.json). After it ends, editions are merged automatically at the freeze time.
+During the launch period each morning's run is prepared as a pull request and goes live when the publisher approves it; Netlify builds a preview of each pull request for review. The approval period is set in [`pipeline/config.json`](pipeline/config.json). After it ends, the run publishes by itself by 06:00.
 
 Edition No. 1 was produced before this protocol was complete and is marked as a pilot. It is scored like every other edition.

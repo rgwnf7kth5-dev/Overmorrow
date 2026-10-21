@@ -1,7 +1,7 @@
 {
   "timezone": "Europe/Paris",
-  "approval_required_through": "2026-10-25",
-  "approval_note": "Runs on or before this date open a pull request and wait for the publisher to merge. Later runs merge to main themselves.",
+  "approval_required_through": "2026-10-26",
+  "approval_note": "Morning runs on or before this date open a pull request that goes live when the publisher merges it. Later runs publish to main by 06:00 themselves.",
   "probability_min": 0.03,
   "probability_max": 0.97,
   "candidate_pool_min": 40,

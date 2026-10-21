@@ -1,10 +1,10 @@
 # Resolver's Manual: Scoring Editions
 
-This is the procedure for the morning run. It implements section 6 of [`METHODOLOGY.md`](../METHODOLOGY.md). The resolver must not change anything in `data/editions/`.
+This is the procedure for the first part of the morning run (starting 04:20, finished by about 04:40). It implements section 6 of [`METHODOLOGY.md`](../METHODOLOGY.md). The resolver must not change anything in `data/editions/`. The edition part ([`EDITOR.md`](EDITOR.md)) follows on the same branch.
 
 ## 1. Find what is due
 
-1. Clone the repository and create a branch `resolve/<today>`.
+1. Create the branch `daily/<today>` from `main`.
 2. For every file in `data/editions/`, list the claims whose `resolves_by` is in the past and that have no result yet in `data/resolutions/<edition id>.json`.
 
 ## 2. Resolve each claim
@@ -33,4 +33,4 @@ node scripts/validate.mjs
 node scripts/build.mjs
 ```
 
-Commit with `Resolve <edition ids>` and push. During the approval period (see `pipeline/config.json`) open a pull request titled `Results for <edition ids> (for approval)`, listing each claim, its probability, the outcome and the evidence link, and do not merge. Afterwards, merge to `main` yourself.
+Commit with `Resolve <edition ids>` on the branch and continue with [`EDITOR.md`](EDITOR.md). The results are published together with the new edition (EDITOR.md, step 9). If nothing was due, make no commit and go straight on.

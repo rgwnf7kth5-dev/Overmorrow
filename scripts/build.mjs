@@ -172,7 +172,7 @@ function calibrationSvg(bins) {
 function accuracyPage(editions) {
   const rows = scoredClaims(editions);
   const sum = summarise(rows);
-  const head = `<div class="prose"><h1>Accuracy</h1><p class="lede">How well our probabilities match what actually happened. Each claim is checked against the primary source named in advance.</p>`;
+  const head = `<div class="prose"><h1>Accuracy</h1><p class="lede">How well our probabilities match what actually happened. Each claim is checked against the primary source named in advance, in the 06:00 run on the date the edition bears.</p>`;
   if (!sum) return `${head}<div class="empty">No forecasts have been resolved yet. The first results appear on the morning of ${fmtDate(editions[0].edition_date, { weekday: 'long', day: 'numeric', month: 'long' })}, when the claims of edition No. 1 fall due.</div><h2>How we score</h2><p>Each claim gets a Brier score: the squared difference between our probability and the outcome (1 if it came true, 0 if not). Lower is better. A forecaster who always says 50% scores 0.250. We also keep a log score, which punishes confident misses more heavily, and a calibration chart, which compares our stated probabilities with how often those claims came true.</p></div>`;
 
   const bins = Array.from({ length: 10 }, (_, i) => ({ lo: i / 10, hi: (i + 1) / 10, label: `${i * 10}–${(i + 1) * 10}%`, items: [] }));
