@@ -28,6 +28,7 @@ const T = {
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
     stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected' },
+    print: 'Print edition', printBtn: 'Print or save as PDF', printNote: 'One A4 page. Use your browser’s print dialog; choose “Save as PDF” to keep a copy.', printFoot: 'All reports are forecasts written before the events. Results and sources:',
     match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
@@ -72,6 +73,7 @@ const T = {
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
     stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno' },
+    print: 'Tisková verze', printBtn: 'Vytisknout nebo uložit jako PDF', printNote: 'Jedna strana A4. Použijte tisk v prohlížeči; volbou „Uložit jako PDF“ si uložíte kopii.', printFoot: 'Všechny zprávy jsou predikce napsané před událostmi. Výsledky a zdroje:',
     match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
@@ -171,10 +173,10 @@ ${main}
 `;
 }
 
-function masthead(L, ed, latestDate) {
+function masthead(L, ed, latestDate, printHref) {
   const top = ed ? L.forecastEdition(fmtStamp(ed.frozen_at, L)) : L.forecastPaper;
   const line = ed
-    ? `<span>${fmtDate(ed.edition_date, L)}</span><span>No. ${ed.number}${ed.pilot ? ` · ${L.pilot}` : ''}</span><span>${L.reporting(fmtDate(ed.events_date, L, DAY))}</span>`
+    ? `<span>${fmtDate(ed.edition_date, L)}</span><span>No. ${ed.number}${ed.pilot ? ` · ${L.pilot}` : ''}${printHref ? ` · <a href="${printHref}">${L.print}</a>` : ''}</span><span>${L.reporting(fmtDate(ed.events_date, L, DAY))}</span>`
     : `<span>${L.writtenAhead}</span><span>${L.latest}: <a href="${link(L, '/')}">${fmtDate(latestDate, L, DAY)}</a></span>`;
   return `<header>
   <div class="topline"><span>${esc(top)}</span><span>${L.places}</span></div>
@@ -270,6 +272,122 @@ ${scorebar}
   ${sections}
   ${diary}
 </main>`;
+}
+
+
+// ---------- one-page print edition ----------
+function printPage(original, L) {
+  const ed = localise(original, L === T.cs ? 'cs' : 'en');
+  const results = resultsFor(ed.id);
+  const byId = new Map(ed.stories.map((s) => [s.id, s]));
+  const scored = results.size > 0;
+  const claimLine = (c) => {
+    const r = results.get(c.id), k = closeness(c, r);
+    const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.match} ${pctNum(k, L)}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
+    return `<p class="lk"><span class="bar"><i style="width:${Math.round(c.probability * 100)}%"></i></span>${esc(c.label)}: <b>${pctNum(c.probability, L)}</b>${res}</p>`;
+  };
+  const story = (s, lead) => {
+    const tableClaims = new Set((s.table?.rows || []).map((r) => r.claim));
+    const lines = s.claims.filter((c, i) => i === 0 || !tableClaims.has(c.id)).map(claimLine).join('');
+    const table = s.table ? `<table>${s.table.rows.map((row) => { const c = s.claims.find((x) => x.id === row.claim); return `<tr><td>${esc(row.label)}</td><td>${c ? pctNum(c.probability, L) : ''}</td></tr>`; }).join('')}</table>` : '';
+    const paras = s.body.map((t, i) => `<p class="${i === 0 ? 'first' : lead ? 'extra lead-extra' : 'extra'}">${esc(t)}</p>`).join('');
+    const t = storyTone(s, results);
+    return `<article class="${lead ? 'lead' : 'st'}${t.cls}"${t.style}><div class="kick">${esc(s.kicker)}</div><h${lead ? 2 : 3}>${esc(s.headline)}</h${lead ? 2 : 3}>${lead && s.standfirst ? `<p class="stand">${esc(s.standfirst)}</p>` : ''}${lines}${lead ? `<div class="leadcols">${paras}${table}</div>` : paras + table}<p class="basis">${L.basis}: ${esc(s.basis.replace(/^(Basis|Podklad):\s*/i, ''))}</p></article>`;
+  };
+  const order = [...ed.front.rail, ...ed.sections.flatMap((x) => x.stories)];
+  const secOf = new Map(); ed.sections.forEach((x) => x.stories.forEach((id, i) => { if (i === 0) secOf.set(id, x.name); }));
+  const flow = order.map((id) => `${secOf.has(id) ? `<h4 class="sec">${esc(secOf.get(id))}</h4>` : ''}${story(byId.get(id), false)}`).join('');
+  const w = ed.weather;
+  const extras = `${w ? `<div class="box"><h4>${esc(w.title)}</h4>${w.rows.map(([a, b]) => `<div class="row"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>` : ''}${ed.diary?.length ? `<div class="box"><h4>${L.comingUp}</h4>${ed.diary.map((d) => `<p><b>${esc(d.date)}</b> ${esc(d.text)}</p>`).join('')}</div>` : ''}`;
+  const site = `${L.prefix}/edition/${ed.id}/`;
+  return `<!doctype html>
+<html lang="${L === T.cs ? 'cs' : 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Overmorrow — ${fmtDate(ed.edition_date, L, { day: 'numeric', month: 'long', year: 'numeric' })} · ${L.print}</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap">
+<style>
+@page{size:A4;margin:10mm}
+:root{--ink:#111;--ink2:#444;--hair:#bbb;--acc:#1f3a5f;--serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif}
+*{box-sizing:border-box}
+html{background:#e8e6e1}
+body{margin:0;color:var(--ink);font-family:var(--serif)}
+.tools{max-width:210mm;margin:16px auto 10px;padding:0 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-family:var(--sans);font-size:14px}
+.tools button{font:inherit;font-weight:600;background:#111;color:#fff;border:0;padding:8px 14px;cursor:pointer}
+.tools a{color:var(--ink2)}
+.paper{background:#fff;width:210mm;max-width:100%;margin:0 auto 24px;padding:10mm;box-shadow:0 2px 12px rgba(0,0,0,.15);overflow-x:auto}
+.sheet{width:190mm;height:277mm;overflow:hidden;font-size:9.5pt;line-height:1.28}
+.mh{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:4mm;border-bottom:.4mm solid var(--ink);padding-bottom:1.5mm}
+.mh img{width:19mm;height:19mm;display:block}
+.mh .t{font-weight:700;font-size:2.9em;line-height:1;letter-spacing:-.01em;text-align:center}
+.mh .m{font-style:italic;font-size:.95em;color:var(--ink2);text-align:center;margin-top:.8mm}
+.mh .r{font-family:var(--sans);font-size:.72em;text-align:right;color:var(--ink2);line-height:1.35}
+.dl{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.72em;letter-spacing:.05em;text-transform:uppercase;border-bottom:.8mm double var(--ink);padding:1mm 0;margin-bottom:1.6mm}
+.note{font-family:var(--sans);font-size:.7em;color:var(--ink2);margin:0 0 2mm}
+.body{column-count:4;column-gap:4mm;column-rule:.2mm solid var(--hair);column-fill:auto;height:var(--bodyh,200mm)}
+.lead{column-span:all;border-bottom:.3mm solid var(--ink);padding-bottom:2mm;margin-bottom:2mm}
+.lead h2{font-size:1.85em;line-height:1.08;margin:.5mm 0 1mm}
+.stand{font-size:1.08em;color:var(--ink2);margin:0 0 1mm}
+.leadcols{column-count:3;column-gap:4mm;column-rule:.2mm solid var(--hair)}
+.st{break-inside:avoid-column;padding-bottom:1.6mm;margin-bottom:1.6mm;border-bottom:.2mm solid var(--hair)}
+h3{font-size:1.18em;line-height:1.12;margin:.3mm 0 .8mm}
+h4.sec{font-family:var(--sans);font-size:.75em;letter-spacing:.12em;text-transform:uppercase;border-top:.5mm solid var(--ink);padding-top:.6mm;margin:0 0 1mm;break-after:avoid}
+.kick{font-family:var(--sans);font-size:.68em;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--acc)}
+p{margin:0 0 .9mm;hyphens:auto;-webkit-hyphens:auto}
+.lk{font-family:var(--sans);font-size:.74em;color:var(--ink2);text-align:left;display:flex;flex-wrap:wrap;align-items:center;gap:1mm 1.5mm}
+.lk b{color:var(--ink)}
+.bar{display:inline-block;width:9mm;height:.9mm;background:#ddd;position:relative}.bar i{position:absolute;inset:0 auto 0 0;background:var(--acc)}
+.res{font-weight:600;text-transform:uppercase;font-size:.92em;padding:0 1mm;color:hsl(var(--h,0) 60% 28%);background:hsl(var(--h,0) 70% 90%)}
+.res.pend{color:var(--ink2);background:#eee}
+.scored{background:hsl(var(--h) 65% 95%);box-shadow:inset .8mm 0 0 hsl(var(--h) 55% 42%);padding-left:1.8mm}
+table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:.8em;margin:.5mm 0 1mm;break-inside:avoid}
+td{border-bottom:.2mm solid var(--hair);padding:.3mm 0}td+td{text-align:right}
+.basis{font-family:var(--sans);font-size:.66em;color:var(--ink2);text-align:left;margin-top:.6mm}
+.box{break-inside:avoid-column;background:#f1efea;padding:1.5mm 2mm;margin-bottom:1.6mm;font-size:.85em}
+.box h4{font-family:var(--sans);font-size:.85em;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .8mm}
+.box .row{display:flex;justify-content:space-between;font-family:var(--sans)}
+.box p{text-align:left;margin:0 0 .6mm}
+.foot{font-family:var(--sans);font-size:.62em;color:var(--ink2);border-top:.4mm solid var(--ink);padding-top:.8mm;margin-top:1mm;display:flex;justify-content:space-between;gap:4mm}
+.hide{display:none!important}
+@media print{html{background:#fff}.tools{display:none}.paper{box-shadow:none;margin:0;padding:0;width:auto}.sheet{height:277mm}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head>
+<body>
+<div class="tools"><button type="button" onclick="window.print()">${L.printBtn}</button><span>${L.printNote}</span><a href="${site}">← ${esc(L.nav[0])}</a></div>
+<div class="paper"><div class="sheet" id="sheet">
+  <div class="mh"><img src="/logo.svg" alt=""><div><div class="t">The Overmorrow</div><div class="m">${esc(L.motto)}</div></div><div class="r">${L.places}<br>No. ${ed.number}${ed.pilot ? ` · ${L.pilot}` : ''}</div></div>
+  <div class="dl"><span>${fmtDate(ed.edition_date, L)}</span><span>${L.reporting(fmtDate(ed.events_date, L, DAY))}</span></div>
+  <p class="note">${L.notice(fmtDate(ed.events_date, L, DAY), scored)}</p>
+  <div class="body" id="body">${story(byId.get(ed.front.lead), true)}${flow}${extras}</div>
+  <div class="foot" id="foot"><span>${L.printFoot} <span id="addr">${site}</span></span><span>${L.forecastEdition(fmtStamp(ed.frozen_at, L))}</span></div>
+</div></div>
+<script>
+// Fit the whole edition on one A4 page: drop secondary paragraphs first, then reduce the type size.
+(function () {
+  const sheet = document.getElementById('sheet'), body = document.getElementById('body'), foot = document.getElementById('foot');
+  const mm = (n) => n * 96 / 25.4;
+  function setBodyHeight() { const top = body.getBoundingClientRect().top - sheet.getBoundingClientRect().top; body.style.setProperty('--bodyh', (mm(277) - top - foot.offsetHeight - mm(1.5)) + 'px'); }
+  function overflows() { setBodyHeight(); return body.scrollWidth > body.clientWidth + 2; }
+  function fit() {
+    let size = 9.5;
+    sheet.style.fontSize = size + 'pt';
+    const extras = [...document.querySelectorAll('.extra:not(.lead-extra)')].reverse(), leadExtras = [...document.querySelectorAll('.lead-extra')].reverse();
+    while (overflows() && size > 8) { size -= 0.25; sheet.style.fontSize = size + 'pt'; }
+    for (const el of extras) { if (!overflows()) break; el.classList.add('hide'); }
+    for (const el of leadExtras) { if (!overflows()) break; el.classList.add('hide'); }
+    while (overflows() && size > 6) { size -= 0.25; sheet.style.fontSize = size + 'pt'; }
+    // Give back whatever still fits: lead paragraphs first, then the others in reading order.
+    for (const el of [...leadExtras.reverse(), ...extras.reverse()]) {
+      if (!el.classList.contains('hide')) continue;
+      el.classList.remove('hide');
+      if (overflows()) el.classList.add('hide');
+    }
+  }
+  document.getElementById('addr').textContent = location.host + location.pathname.replace('print/', '');
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(fit);
+  window.addEventListener('beforeprint', fit);
+})();
+</script>
+</body></html>
+`;
 }
 
 // ---------- archive ----------
@@ -385,11 +503,15 @@ for (const lang of LANGS) {
   const L = T[lang];
   const pre = lang === 'en' ? '' : 'cs/';
   for (const ed of editions) {
-    const header = masthead(L, ed);
+    const header = masthead(L, ed, null, link(L, `/edition/${ed.id}/print/`));
+    write(`${pre}edition/${ed.id}/print/index.html`, printPage(ed, L));
     const main = editionMain(ed, L);
     const p = `/edition/${ed.id}/`;
     write(`${pre}edition/${ed.id}/index.html`, layout(L, { title: `The Overmorrow — ${fmtDate(ed.edition_date, L, { day: 'numeric', month: 'long', year: 'numeric' })}`, nav: ed === latest ? 'today' : 'archive', header, main, path: p }));
-    if (ed === latest) write(`${pre}index.html`, layout(L, { title: 'The Overmorrow', nav: 'today', header, main, path: '/' }));
+    if (ed === latest) {
+      write(`${pre}index.html`, layout(L, { title: 'The Overmorrow', nav: 'today', header, main, path: '/' }));
+      write(`${pre}print/index.html`, printPage(ed, L));
+    }
   }
   const plain = masthead(L, null, latest.edition_date);
   write(`${pre}archive/index.html`, layout(L, { title: `${L.archive.h} — The Overmorrow`, nav: 'archive', header: plain, main: archivePage(editions, L), path: '/archive/' }));

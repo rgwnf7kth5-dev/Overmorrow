@@ -2,7 +2,7 @@
 
 *Tomorrow happens. Overmorrow reports it. You read it today.*
 
-A newspaper written two days ahead, in English (default) and Czech (/cs/). Each edition reports the scheduled and expected events of the next day as if they had happened, and attaches a probability to every forecast. After the events, each forecast is checked and scored, and the result is stamped onto the archived edition.
+A newspaper written two days ahead, in English (default) and Czech (/cs/), with a one-page A4 print edition of every issue (/print/, /edition/DATE/print/). Each edition reports the scheduled and expected events of the next day as if they had happened, and attaches a probability to every forecast. After the events, each forecast is checked and scored, and the result is stamped onto the archived edition.
 
 - **How it works:** [METHODOLOGY.md](METHODOLOGY.md)
 - **Producing an edition:** [pipeline/EDITOR.md](pipeline/EDITOR.md)
