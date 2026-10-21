@@ -1,6 +1,6 @@
 # The Overmorrow
 
-*Read today what the papers will print the day after tomorrow.*
+*Tomorrow happens. Overmorrow reports it. You read it today.*
 
 A newspaper written two days ahead. Each edition reports the scheduled and expected events of the next day as if they had happened, and attaches a probability to every forecast. After the events, each forecast is checked and scored, and the result is stamped onto the archived edition.
 

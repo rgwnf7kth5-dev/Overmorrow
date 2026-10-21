@@ -5,7 +5,7 @@ import { ROOT, loadEditions, resultsFor, claimsOf, scoredClaims, summarise, brie
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
-const MOTTO = 'Read today what the papers will print the day after tomorrow.';
+const MOTTO = 'Tomorrow happens. Overmorrow reports it. You read it today.';
 
 // ---------- helpers ----------
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
