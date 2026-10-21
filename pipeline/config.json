@@ -1,0 +1,14 @@
+{
+  "timezone": "Europe/Paris",
+  "approval_required_through": "2026-10-25",
+  "approval_note": "Runs on or before this date open a pull request and wait for the publisher to merge. Later runs merge to main themselves.",
+  "probability_min": 0.03,
+  "probability_max": 0.97,
+  "candidate_pool_min": 40,
+  "stories_min": 10,
+  "stories_max": 14,
+  "ensemble_disagreement_limit": 0.25,
+  "market_departure_flag": 0.15,
+  "calibration_min_resolved": 50,
+  "excluded_topics": ["sport", "financial market prices"]
+}

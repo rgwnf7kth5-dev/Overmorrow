@@ -1,0 +1,254 @@
+{
+  "id": "2026-10-23",
+  "number": 1,
+  "pilot": true,
+  "edition_date": "2026-10-23",
+  "events_date": "2026-10-22",
+  "frozen_at": "2026-10-21T06:00:00+02:00",
+  "front": {
+    "lead": "sakharov",
+    "rail": ["cz-budget", "cz-benefits"]
+  },
+  "weather": {
+    "title": "Weather, Thursday",
+    "rows": [["Bohemia", "9–12°"], ["Moravia and Silesia", "11–14°"], ["Strasbourg", "11°"]],
+    "note": "Behind Wednesday’s cold front: rain early, easing through the day. Temperatures fell sharply in the east, where Wednesday reached 20 °C."
+  },
+  "sections": [
+    {"name": "Europe", "dek": "Strasbourg votes, Dublin talks, Paris", "stories": ["ep-votes", "dublin-trade", "france"]},
+    {"name": "World", "dek": "Ukraine, Iran, three elections in five days", "stories": ["witkoff-putin", "iran-proposal", "brazil-poll", "serbia", "israel-polls", "ebola"]}
+  ],
+  "stories": [
+    {
+      "id": "sakharov",
+      "size": "lead",
+      "kicker": "European Parliament · Strasbourg",
+      "headline": "Sakharov Prize Goes to Jailed Tanzanian Opposition Leader Tundu Lissu",
+      "standfirst": "Group leaders passed over the International Criminal Court and two Iranian sisters sentenced in Isfahan. Metsola announced the choice in the chamber before Thursday’s votes.",
+      "body": [
+        "The European Parliament awarded its 2026 Sakharov Prize for Freedom of Thought to Tundu Lissu, chairman of Tanzania’s Chadema party, who has been in detention since April 2025 and faces a treason charge that carries the death penalty. President Roberta Metsola announced the decision in the Strasbourg hemicycle immediately after the Conference of Presidents met on Thursday morning.",
+        "The Conference of Presidents, made up of Metsola and the leaders of the political groups, chose from a shortlist that the Foreign Affairs and Development committees settled on Monday. The other finalists were the International Criminal Court and its staff, nominated by the Socialists and Democrats, and Taraneh and Romina Rahimi, sisters arrested after the January protests in Isfahan, nominated by Patriots for Europe.",
+        "Lissu had the support of the European People’s Party and the European Conservatives and Reformists, the two groups whose combined weight decides most Conference votes. A prize for the ICC would have been read in Washington as a direct answer to the US sanctions on the court, which MEPs debated on Tuesday. Several centre-right members were reluctant to send that signal two weeks before the American midterms.",
+        "The Rahimi nomination drew sympathy across the chamber. Taraneh Rahimi has been sentenced to death and her sister to 25 years. Parliament named both in its 8 October resolution on Iran, and the prize could still go their way if Renew Europe joined the right-wing groups behind them.",
+        "The laureate receives €50,000. The award ceremony is set for 16 December in Strasbourg. Tanzanian authorities are not expected to let Lissu travel."
+      ],
+      "table": {
+        "caption": "The shortlist and our odds",
+        "rows": [
+          {"label": "Tundu Lissu", "note": "EPP, ECR", "claim": "sakharov-lissu"},
+          {"label": "Taraneh and Romina Rahimi", "note": "Patriots", "claim": "sakharov-rahimi"},
+          {"label": "International Criminal Court", "note": "S&D", "claim": "sakharov-icc"}
+        ]
+      },
+      "claims": [
+        {"id": "sakharov-lissu", "label": "Lissu is the laureate", "text": "The 2026 Sakharov Prize is awarded to Tundu Lissu (alone or jointly).", "probability": 0.55, "exclusive_set": "sakharov-2026", "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "European Parliament press release announcing the 2026 laureate names Tundu Lissu.", "resolution_source": "https://www.europarl.europa.eu/news/en/press-room", "schedule": "official"},
+        {"id": "sakharov-rahimi", "label": "Rahimi sisters are the laureates", "text": "The 2026 Sakharov Prize is awarded to Taraneh and Romina Rahimi (alone or jointly).", "probability": 0.30, "exclusive_set": "sakharov-2026", "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "European Parliament press release announcing the 2026 laureate names the Rahimi sisters.", "resolution_source": "https://www.europarl.europa.eu/news/en/press-room", "schedule": "official"},
+        {"id": "sakharov-icc", "label": "ICC is the laureate", "text": "The 2026 Sakharov Prize is awarded to the International Criminal Court (alone or jointly).", "probability": 0.15, "exclusive_set": "sakharov-2026", "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "European Parliament press release announcing the 2026 laureate names the ICC.", "resolution_source": "https://www.europarl.europa.eu/news/en/press-room", "schedule": "official"}
+      ],
+      "basis": "Shortlist voted 19 October; nominating groups as reported by Agence Europe and Euronews; Metsola’s announcement scheduled for 22 October. Main uncertainty: how Renew votes in the Conference of Presidents.",
+      "sources": [
+        {"title": "Agence Europe: US sanctions against ICC, Sakharov finalists", "url": "https://agenceurope.eu/en/bulletin/article/13964/15/us-sanctions-against-icc-prompt-growing-calls-in-european-parliament-for-european-commission-to-act"},
+        {"title": "EU Reporter: MEPs face packed programme in Strasbourg", "url": "https://www.eureporter.co/politics/european-parliament-2/2026/10/20/meps-face-packed-programme-in-strasbourg-plenary/"}
+      ],
+      "rationale": "Pilot edition. Weighted Conference of Presidents vote; EPP and ECR behind Lissu. Joint awards are possible, so the set is defined per finalist ‘alone or jointly’; with a joint award two claims could both resolve yes."
+    },
+    {
+      "id": "cz-budget",
+      "size": "rail",
+      "kicker": "Prague · Chamber of Deputies",
+      "headline": "Budget Clears First Reading With a CZK 386 Billion Deficit",
+      "body": [
+        "After a debate that began on Wednesday and ran into the night, deputies approved the main parameters of the 2027 state budget: revenue of CZK 2.199 trillion, spending of CZK 2.585 trillion and a deficit of CZK 386 billion, the second highest since 1993. The coalition of ANO, SPD and the Motorists, with 108 of 200 seats, voted down the opposition proposal to send the bill back with the deficit capped at 290 billion.",
+        "Those totals can no longer change. Committees now discuss moving money between chapters, ahead of a second reading planned to end on 25 November."
+      ],
+      "claims": [
+        {"id": "cz-budget-first-reading", "label": "Approved by Thursday night", "text": "The Chamber of Deputies approves the basic parameters of the 2027 state budget in first reading.", "probability": 0.85, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "A successful first-reading vote on the 2027 state budget bill is recorded on psp.cz on 21 or 22 October 2026.", "resolution_source": "https://www.psp.cz/sqw/hlasovani.sqw", "schedule": "official"}
+      ],
+      "basis": "Budget committee recommendation of 12 October; first reading scheduled for 21 October.",
+      "sources": [
+        {"title": "ČTK: Opozice chce vrátit rozpočet vládě", "url": "https://www.ceskenoviny.cz/zpravy/opozice-chce-vratit-rozpocet-vlade-a-snizit-schodek-na-nejvyse-290-miliard/2889999"},
+        {"title": "Ekonomický deník: harmonogram rozpočtu", "url": "https://ekonomickydenik.cz/poslanci-hadali-datum-deficit-rozpocet/"}
+      ],
+      "rationale": "Majority government; main risk is opposition obstruction pushing the vote past Thursday."
+    },
+    {
+      "id": "cz-benefits",
+      "size": "rail",
+      "kicker": "Prague",
+      "headline": "Unemployment Benefit Cut Still Short of Votes",
+      "body": [
+        "Labour Minister Aleš Juchelka’s plan to lower benefits in the first two months from 80 to 65 percent of net wage stayed stuck. SPD again refused to support it, leaving ANO and the Motorists with 93 votes. The budget already counts on almost CZK 4 billion in savings from the change."
+      ],
+      "claims": [
+        {"id": "cz-benefits-stalled", "label": "Does not pass first reading this week", "text": "The bill lowering unemployment benefits does not pass its first reading by Friday 23 October.", "probability": 0.75, "resolves_by": "2026-10-23T23:59:00+02:00", "criterion": "No successful first-reading vote on the unemployment benefit bill is recorded on psp.cz by 23 October 2026.", "resolution_source": "https://www.psp.cz/sqw/hlasovani.sqw", "schedule": "reported"}
+      ],
+      "basis": "ČT24 report on SPD opposition; ANO and Motorists hold 93 of 200 seats.",
+      "sources": [
+        {"title": "ČT24: Plán na snížení podpor v nezaměstnanosti rozklížil vládu", "url": "https://ct24.ceskatelevize.cz/clanek/domaci/plan-na-snizeni-podpor-v-nezamestnanosti-rozklizil-vladu-378383"}
+      ]
+    },
+    {
+      "id": "ep-votes",
+      "size": "half",
+      "kicker": "European Parliament · Votes",
+      "headline": "Parliament Endorses Chemicals Omnibus and Condemns Russian Drone Strikes",
+      "body": [
+        "MEPs gave final approval to the Omnibus VI package agreed with the Council in June. It amends the CLP labelling rules, the Cosmetics Regulation and the Fertilising Products Regulation. Label text on chemicals sold to the public must keep an x-height of at least 1.2 mm, and suppliers get 15 months to update labels after a stricter classification. Cosmetics containing newly classified carcinogenic, mutagenic or reprotoxic substances must leave the market faster than the Commission proposed. Most CLP changes apply from 1 January 2028.",
+        "Parliament also adopted resolutions on Russian drone incursions into EU territory and strikes on Black Sea shipping, and on Houthi attacks in the Red Sea and the Gulf, after Tuesday’s debates with High Representative Kaja Kallas. It set its position on the priorities and budget of the 2028–2034 Erasmus+ programme, one of the first MFF sectoral files to reach plenary."
+      ],
+      "claims": [
+        {"id": "ep-omnibus-and-drones", "label": "Both texts adopted", "text": "On 22 October Parliament adopts both the Omnibus VI provisional agreement and the resolution on Russian drone incursions and Black Sea strikes.", "probability": 0.90, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "Both texts appear as adopted in the European Parliament’s texts adopted for 22 October 2026.", "resolution_source": "https://www.europarl.europa.eu/plenary/en/texts-adopted.html", "schedule": "official"}
+      ],
+      "basis": "Plenary agenda for 22 October; provisional Omnibus VI agreement of 16 June. Most likely surprise: postponement of one resolution.",
+      "sources": [
+        {"title": "Pub Affairs Bruxelles: The Week Ahead 19–25 October", "url": "https://www.pubaffairsbruxelles.eu/eu-institution-news/the-week-ahead-19-25-october-2026/"},
+        {"title": "EP press: Chemicals deal on simplification", "url": "https://www.europarl.europa.eu/news/en/press-room/20260616IPR45506/chemicals-deal-on-simplification-of-cosmetics-fertiliser-and-labelling-rules"}
+      ]
+    },
+    {
+      "id": "dublin-trade",
+      "size": "quarter",
+      "kicker": "Dublin · EU trade ministers",
+      "headline": "Ministers Look for New Markets as US Tariffs Bite",
+      "body": [
+        "Trade ministers met at Dublin Castle for a two-day informal meeting hosted by Ireland’s Helen McEntee. The talks covered open free trade negotiations and diversifying trade away from the United States. Informal councils take no decisions, so the results were political signals. The EU–Canada summit on 29–30 October was the obvious next step."
+      ],
+      "claims": [
+        {"id": "dublin-no-decisions", "label": "No formal decisions taken", "text": "The informal meeting of trade ministers in Dublin ends without formal Council decisions.", "probability": 0.85, "resolves_by": "2026-10-23T23:59:00+02:00", "criterion": "No Council decision or formally adopted conclusions are attributed to the Dublin meeting on consilium.europa.eu or the Irish Presidency site.", "resolution_source": "https://irish-presidency.consilium.europa.eu/en/events/informal-meeting-of-trade-ministers-fac-trade/", "schedule": "official"}
+      ],
+      "basis": "Irish Presidency programme, 22–23 October.",
+      "sources": [
+        {"title": "Irish Presidency: Informal meeting of Trade Ministers", "url": "https://irish-presidency.consilium.europa.eu/en/events/informal-meeting-of-trade-ministers-fac-trade/"}
+      ],
+      "rationale": "Pilot. Under the current protocol this claim would be rejected as uninformative (informal councils never adopt decisions)."
+    },
+    {
+      "id": "france",
+      "size": "quarter",
+      "kicker": "France",
+      "headline": "Curfews Hold as Paris Prepares for Saturday",
+      "body": [
+        "A day after meeting Prime Minister Sébastien Lecornu, the main union confederations kept their distance from the calls for new demonstrations on Saturday. They are pressing instead for talks on wages and school conditions. Targeted night curfews stayed in force in central Paris and Lyon, and the government confirmed that the army would support the police at the weekend."
+      ],
+      "claims": [
+        {"id": "france-unions-out", "label": "Main unions stay out of Saturday protests", "text": "None of the CGT, CFDT or FO formally calls on members to join the 24 October protests.", "probability": 0.70, "resolves_by": "2026-10-23T23:59:00+02:00", "criterion": "No official call to join the 24 October demonstrations is published by the CGT, CFDT or FO national leadership by the deadline.", "resolution_source": "Union national websites; Le Monde, AFP", "schedule": "reported"}
+      ],
+      "basis": "Lecornu’s statements of 20 October; unions’ meeting set for 21 October.",
+      "sources": [
+        {"title": "Al Jazeera: France to impose new curfews where required", "url": "https://www.aljazeera.com/news/2026/10/20/france-to-impose-new-curfews-where-required-after-calm-night"},
+        {"title": "CNBC: France to deploy military for weekend", "url": "https://www.cnbc.com/2026/10/20/france-protests-curfews-macron-gulf-trip.html"}
+      ]
+    },
+    {
+      "id": "witkoff-putin",
+      "size": "half",
+      "kicker": "Russia · Ukraine",
+      "headline": "Witkoff Leaves Russia Without a Ceasefire; Prisoner Release Still Possible",
+      "body": [
+        "A day after US envoys Steve Witkoff and Jared Kushner met Vladimir Putin in St Petersburg, the Kremlin described the talks as useful and announced no ceasefire. Witkoff had brought proposals drawn up with Ukraine and European governments at Tuesday’s meeting in Oslo. Moscow repeated its demand that Ukraine withdraw from all of the Donetsk region before any truce, a condition Kyiv rejects.",
+        "Washington’s most concrete hope for the trip was the release of Stephen Hubbard, a 72-year-old American serving almost seven years for fighting with Ukrainian territorial defence. Russia’s foreign ministry has confirmed the case was discussed. We put the chance of his release being announced by Thursday at 35 percent. Witkoff then briefed President Zelenskyy and the European governments that took part in Oslo."
+      ],
+      "claims": [
+        {"id": "ru-ua-no-ceasefire", "label": "No ceasefire announced by Thursday", "text": "No Russia–Ukraine ceasefire is announced by the Russian, Ukrainian or US government.", "probability": 0.90, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "No official announcement of a general or partial ceasefire by any of the three governments by the deadline.", "resolution_source": "kremlin.ru, president.gov.ua, whitehouse.gov; Reuters", "schedule": "reported"},
+        {"id": "hubbard-release", "label": "Hubbard release announced", "text": "Russia releases Stephen Hubbard, or his release is officially announced.", "probability": 0.35, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "Official US or Russian statement that Hubbard has been or will be released, made by the deadline.", "resolution_source": "state.gov, Russian MFA; Reuters, AP", "schedule": "reported"}
+      ],
+      "basis": "Kremlin statements of 20 October (Moscow Times); NYT and Meduza reporting on the St Petersburg meeting. The meeting itself was not confirmed by the Kremlin in advance.",
+      "sources": [
+        {"title": "Moscow Times: Kremlin hopes Witkoff will brief Putin", "url": "https://www.themoscowtimes.com/2026/10/20/kremlin-hopes-witkoff-will-brief-putin-on-talks-with-ukraine-and-europe-a94029"},
+        {"title": "Meduza: envoys plan to meet Putin in St Petersburg", "url": "https://meduza.io/amp/en/news/2026/10/20/nyt-trump-s-envoys-plan-to-meet-putin-in-st-petersburg-on-wednesday-and-seek-the-release-of-an-american-held-in-russia"}
+      ]
+    },
+    {
+      "id": "iran-proposal",
+      "size": "half",
+      "kicker": "Iran · Gulf",
+      "headline": "Mediators Wait on Tehran’s Answer to Inspection Deal",
+      "body": [
+        "Qatar and Pakistan were still waiting for a formal Iranian reply to their compromise. Under it, Iran would allow an unannounced IAEA inspection of its nuclear sites and receive in return the interest on $6 billion of frozen funds held in Qatar. Both governments reportedly reacted positively, but neither side has moved on its core demands. Iranian officials still insist there will be no talks while US pressure continues.",
+        "Shipping in the Strait of Hormuz remained the main risk. The UK maritime agency has called October the worst month for attacks since March."
+      ],
+      "claims": [
+        {"id": "iran-no-deal", "label": "No agreement announced by Thursday", "text": "No US–Iran agreement based on the Qatar–Pakistan proposal is officially announced.", "probability": 0.70, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "No official announcement by the US, Iranian, Qatari or Pakistani government that both sides have accepted the proposal.", "resolution_source": "Government statements; Reuters, AP", "schedule": "reported"}
+      ],
+      "basis": "Al-Araby Al-Jadeed report of 20 October; CBS live reporting.",
+      "sources": [
+        {"title": "The New Arab: Mediators submit new peace proposal", "url": "https://www.newarab.com/news/exclusive-mediators-submit-new-peace-proposal-iran-us"},
+        {"title": "CBS News: Iran war live updates", "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-talks-russia-strait-of-hormuz/"}
+      ]
+    },
+    {
+      "id": "brazil-poll",
+      "size": "quarter",
+      "kicker": "Brazil · Runoff Sunday",
+      "headline": "Datafolha Shows a Tie Between Flávio Bolsonaro and Lula",
+      "body": [
+        "Datafolha’s runoff poll, published on Thursday, put the two candidates within the margin of error. The polling average gives Flávio Bolsonaro about 51 percent to Lula’s 49. The last TV Globo debate is on Friday, and the vote is on Sunday."
+      ],
+      "claims": [
+        {"id": "brazil-datafolha-close", "label": "Gap within two points", "text": "The Datafolha runoff poll published on 22 October shows a gap of 2 points or less in valid votes.", "probability": 0.65, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "Datafolha’s valid-vote figures for the poll released on 22 October differ by 2 points or less. If no Datafolha poll is released that day, the claim resolves no.", "resolution_source": "https://datafolha.folha.uol.com.br/", "schedule": "reported"}
+      ],
+      "basis": "Rio Times poll tracker of 20 October; Datafolha release expected 22 October.",
+      "sources": [
+        {"title": "Rio Times: Brazil runoff polls", "url": "https://www.riotimesonline.com/brazil-runoff-october-25-2026-flavio-bolsonaro-lula/"}
+      ]
+    },
+    {
+      "id": "serbia",
+      "size": "quarter",
+      "kicker": "Serbia · Vote Sunday",
+      "headline": "Last Day of Campaigning Before Election Silence",
+      "body": [
+        "The ruling SNS and the student list held their final rallies before the campaign silence that begins 48 hours before the vote. The poll average has SNS at 45 percent and the students at 42.5. One October poll put the students ahead."
+      ],
+      "claims": [
+        {"id": "serbia-sns-ahead", "label": "SNS ahead in final polls", "text": "The final pre-election poll average shows SNS ahead of the student list.", "probability": 0.60, "resolves_by": "2026-10-23T23:59:00+02:00", "criterion": "PolitPro’s Serbia election trend as of 23 October 2026 shows SNS ahead of Studentska lista.", "resolution_source": "https://politpro.eu/en/serbia/election/parliament/2026", "schedule": "official"}
+      ],
+      "basis": "PolitPro election trend of 21 October.",
+      "sources": [
+        {"title": "PolitPro: Serbia polls", "url": "https://politpro.eu/en/serbia/election/parliament/2026"}
+      ]
+    },
+    {
+      "id": "israel-polls",
+      "size": "quarter",
+      "kicker": "Israel · Vote 27 October",
+      "headline": "Neither Bloc Reaches 61 Seats in Late Polls",
+      "body": [
+        "The final week of polling shows a deadlock. Gadi Eisenkot’s Yashar narrowly leads Likud, both blocs stand near 51 to 55 seats, and Arab parties hold the balance with 10 to 14."
+      ],
+      "claims": [
+        {"id": "israel-no-majority", "label": "Both blocs below majority", "text": "No poll published on 22 October gives either bloc 61 or more seats.", "probability": 0.80, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "Wikipedia’s opinion polling table for the 2026 Israeli election lists no poll dated 22 October with either bloc at 61+.", "resolution_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Israeli_legislative_election", "schedule": "reported"}
+      ],
+      "basis": "Seven-poll average reported by The New Arab; Channel 12 poll of 19 October.",
+      "sources": [
+        {"title": "The New Arab: Israel election polls forecast stalemate", "url": "https://www.newarab.com/news/israel-election-polls-forecast-stalemate-far-right-gains"}
+      ]
+    },
+    {
+      "id": "ebola",
+      "size": "quarter",
+      "kicker": "Health · East Africa",
+      "headline": "Ebola Spreads Further as Congo Searches for Missing Aid Money",
+      "body": [
+        "The outbreak has reached eight Congolese provinces, and Kenya has confirmed eight cases. Kinshasa is investigating more than $700 million missing from aid accounts."
+      ],
+      "claims": [
+        {"id": "ebola-kenya-new", "label": "New cases reported in Kenya", "text": "Kenya reports at least one new confirmed Ebola case on 21 or 22 October.", "probability": 0.80, "resolves_by": "2026-10-22T23:59:00+02:00", "criterion": "Kenyan Ministry of Health or WHO reports a confirmed case count above eight by the deadline.", "resolution_source": "WHO Disease Outbreak News; Kenyan Ministry of Health", "schedule": "reported"}
+      ],
+      "basis": "WORLD and O’Donnell security briefing of 19–20 October.",
+      "sources": [
+        {"title": "Weekly Preflight: 5 things to watch", "url": "https://www.wesodonnell.com/p/weekly-preflight-5-things-to-watch-015"}
+      ]
+    }
+  ],
+  "diary": [
+    {"date": "Sat 24 Oct", "text": "Protests across France; large security operation announced."},
+    {"date": "Sun 25 Oct", "text": "Presidential runoff in Brazil; parliamentary election in Serbia."},
+    {"date": "Mon–Tue 26–27 Oct", "text": "AGRIFISH Council: ministers seek a partial position on the post-2027 CAP."},
+    {"date": "Tue 27 Oct", "text": "Knesset election in Israel."},
+    {"date": "Wed–Thu 28–29 Oct", "text": "European Parliament mini-plenary in Brussels; 28 October is a state holiday in the Czech Republic."},
+    {"date": "Thu 29 Oct", "text": "ECB monetary policy decision; Energy Council in Luxembourg on network charges."},
+    {"date": "Thu–Fri 29–30 Oct", "text": "EU–Canada summit."},
+    {"date": "Tue 3 Nov", "text": "US midterm elections."}
+  ]
+}

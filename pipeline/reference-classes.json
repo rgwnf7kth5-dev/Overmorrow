@@ -1,0 +1,45 @@
+{
+  "_note": "Base rates used in the outside view. Each entry: what the class is, the rate, how many cases, where it comes from. Update counts with every resolved claim (field 'own_record').",
+  "classes": [
+    {
+      "id": "ep-final-vote-trilogue-deal",
+      "description": "European Parliament plenary adopts a provisional trilogue agreement put to a final vote",
+      "base_rate": 0.97,
+      "n": "large; failures are rare and usually signalled days ahead",
+      "source": "Legislative Observatory records, 9th and 10th terms (estimate pending a full count)",
+      "own_record": {"yes": 0, "no": 0}
+    },
+    {
+      "id": "ep-resolution-after-debate",
+      "description": "A non-legislative resolution scheduled for a vote after a plenary debate is adopted that week",
+      "base_rate": 0.93,
+      "n": "large",
+      "source": "Plenary minutes (estimate pending a full count); main risk is postponement",
+      "own_record": {"yes": 0, "no": 0}
+    },
+    {
+      "id": "cz-budget-first-reading-majority",
+      "description": "Czech Chamber approves the state budget in first reading when the government holds a majority",
+      "base_rate": 0.95,
+      "n": "every budget since 1993 with a majority government",
+      "source": "psp.cz voting records; risk is timing (obstruction pushing the vote past the deadline)",
+      "own_record": {"yes": 0, "no": 0}
+    },
+    {
+      "id": "envoy-visit-ceasefire",
+      "description": "A ceasefire in the Russia-Ukraine war is announced within 48 hours of a US envoy meeting with Putin",
+      "base_rate": 0.03,
+      "n": "about 10 meetings 2025-2026, none followed by a ceasefire within 48 h",
+      "source": "News record 2025-2026",
+      "own_record": {"yes": 0, "no": 0}
+    },
+    {
+      "id": "sakharov-conference-presidents",
+      "description": "Sakharov laureate is the finalist backed by the EPP",
+      "base_rate": 0.7,
+      "n": "roughly 10 years of decisions; EPP-backed finalist usually wins, sometimes jointly with an ECR or Renew candidate",
+      "source": "EP press releases 2015-2025 (estimate pending a full count)",
+      "own_record": {"yes": 0, "no": 0}
+    }
+  ]
+}
