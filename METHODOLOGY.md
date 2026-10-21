@@ -123,7 +123,7 @@ The final probability, the claim text, the criterion and the rationale are writt
 - Each report ends with a **basis** line naming what it rests on and the main risk to the forecast.
 - We do not forecast deaths, accidents, disasters, crimes, or the health of named people, and we do not write about private individuals.
 - Every page carries a clear statement that its content is forecast.
-- The paper appears in English (default) and Czech. The Czech text is a faithful translation written in the same run; the forecasts, probabilities and deadlines are identical. A translation may be corrected later; a forecast never.
+- The paper appears in English (default) and Czech. The Czech text is a faithful translation written in the same run; the forecasts, probabilities and deadlines are identical. A translation may be corrected later; a forecast never. In Czech, foreign women's surnames are left in their original form, never feminised (Roberta Metsola, not Metsolaová).
 
 ## 6. Checking the claims
 

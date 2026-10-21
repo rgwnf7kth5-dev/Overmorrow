@@ -52,6 +52,18 @@ for (const ed of editions) {
         if (!t || !nonEmpty(t.label) || !nonEmpty(t.text) || !nonEmpty(t.criterion)) err(sw, `cs.claims.${c.id} needs label, text and criterion`);
       }
     }
+    // House rule: foreign surnames from the English text must not be feminised in Czech (Metsola, not Metsolaová).
+    if (cs) {
+      const en = JSON.stringify([s.kicker, s.headline, s.standfirst, s.body, s.basis, s.claims, s.table]);
+      const czText = JSON.stringify(cs);
+      const names = new Set((en.match(/\b[A-Z][a-z]{2,}\b/g) || []).filter((n) => !/(ová|ova)$/.test(n)));
+      for (const n of names) {
+        const stems = [n, n.replace(/[aeiouy]$/, '')];
+        const fem = new RegExp(`(?:^|[^\\p{L}])(${stems.join('|')})(ová|ové|ovou|ovy|ových|ovým|ovými)(?![\\p{L}])`, 'u');
+        const m = czText.match(fem);
+        if (m) err(sw, `feminised foreign surname in Czech text: "${m[1]}${m[2]}" (write "${n}")`);
+      }
+    }
     for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
   }
 

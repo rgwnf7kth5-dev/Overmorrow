@@ -111,6 +111,8 @@ English is the default; the Czech edition at `/cs/` is built from Czech text sto
 
 Translate faithfully into natural Czech newspaper prose (ČTK style): Czech names of institutions, Czech date and number formats (22. října, 2,5 procenta, 386 miliard korun). Do not add, drop or soften anything; probabilities, deadlines and sources are shared and never translated into different numbers.
 
+**House rule: foreign women's surnames are never feminised.** Write them exactly as in the original: Roberta Metsola, Kaja Kallas, Ursula von der Leyen, Taraneh Rahimi, sestry Rahimi, Helen McEntee — never Metsolaová, Kallasová, Rahimiová. The surname stays undeclined; the sentence carries case through the first name, title or function (předsedkyně Metsola, s vysokou představitelkou Kajou Kallas, sester Rahimi). Czech and Slovak women keep their own forms (Schillerová). The validator rejects feminised forms of names that appear in the English text.
+
 ## 8. Validate and build
 
 ```

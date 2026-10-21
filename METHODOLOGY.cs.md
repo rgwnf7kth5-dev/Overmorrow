@@ -123,6 +123,7 @@ Výsledná pravděpodobnost, text tvrzení, kritérium a zdůvodnění se zapí�
 - Každá zpráva končí řádkem **Podklad**, který říká, z čeho vychází a co je hlavní riziko predikce.
 - Nepředpovídáme úmrtí, nehody, katastrofy, trestné činy ani zdravotní stav konkrétních lidí a nepíšeme o soukromých osobách.
 - Každá stránka jasně uvádí, že jde o predikce.
+- Cizí ženská příjmení v češtině nepřechylujeme: Roberta Metsola, Kaja Kallas, sestry Rahimi. Pád nese křestní jméno nebo funkce (předsedkyně Metsola, s Kajou Kallas).
 - Noviny vycházejí anglicky (výchozí verze) a česky. Český text je věrný překlad pořízený ve stejném běhu; predikce, pravděpodobnosti i termíny jsou totožné. Překlad lze později opravit, predikci nikdy.
 
 ## 6. Ověřování
