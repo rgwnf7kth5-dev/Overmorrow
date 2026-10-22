@@ -1,0 +1,87 @@
+{
+  "edition": "2026-10-24",
+  "frozen_at": "2026-10-22T12:34:00+02:00",
+  "summary": "Czech budget vote expected overnight, Paris set to fence off protests, and a new Istanbul meeting of European and Middle Eastern ministers.",
+  "summary_cs": "Hlasování o rozpočtu se čeká v noci, Paříž zřejmě omezí demonstrace a v Istanbulu se poprvé sejdou ministři z Evropy a Blízkého východu.",
+  "revisions": [
+    {
+      "claim": "cz-budget-first-reading",
+      "probability": 0.87,
+      "reason": "On Thursday morning the coalition voted to let the Chamber sit into the night so that it can finish the first reading on 22 October, leaving Friday as a fallback.",
+      "reason_cs": "Koalice ve čtvrtek dopoledne prosadila, že Sněmovna může jednat i v noci, aby první čtení dokončila 22. října; pátek zůstává jako rezerva.",
+      "sources": [
+        { "title": "ČTK: Sněmovna bude opět moci jednat o návrhu rozpočtu v případě potřeby i v noci", "url": "https://www.ceskenoviny.cz/zpravy/snemovna-bude-opet-moci-jednat-o-navrhu-rozpoctu-v-pripade-potreby-i-v-noci/2890454" },
+        { "title": "Deník N: minuta, 22 October 11:19", "url": "https://denikn.cz/minuta/2228194" }
+      ]
+    },
+    {
+      "claim": "cz-budget-105",
+      "probability": 0.27,
+      "reason": "The coalition now plans to vote late on Thursday night, when attendance falls; the same coalition passed the 2026 budget at first reading around midnight in February with 90 votes, though this time the opposition is contesting the vote.",
+      "reason_cs": "Koalice nyní počítá s hlasováním pozdě ve čtvrtek v noci, kdy účast klesá; stejná koalice v únoru schválila rozpočet na rok 2026 v prvním čtení kolem půlnoci 90 hlasy, tentokrát však opozice hlasování napadá.",
+      "sources": [
+        { "title": "ČTK: Sněmovna bude opět moci jednat o návrhu rozpočtu v případě potřeby i v noci", "url": "https://www.ceskenoviny.cz/zpravy/snemovna-bude-opet-moci-jednat-o-navrhu-rozpoctu-v-pripade-potreby-i-v-noci/2890454" },
+        { "title": "ČTK: Sněmovna schválila základní údaje rozpočtu se schodkem 310 miliard (February 2026)", "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-zakladni-udaje-rozpoctu-se-schodkem-310-miliard/2784412" }
+      ]
+    },
+    {
+      "claim": "fr-paris-ban",
+      "probability": 0.87,
+      "reason": "On Thursday the Rhône prefect banned all protests in Lyon on Saturday, and the Paris prefecture, negotiating a Bastille–Nation route with organisers, has not yet published its Saturday order.",
+      "reason_cs": "Prefekt departementu Rhône ve čtvrtek zakázal na sobotu všechny demonstrace v Lyonu a pařížská policejní prefektura, která s organizátory vyjednává trasu Bastila–Nation, zatím sobotní nařízení nezveřejnila.",
+      "sources": [
+        { "title": "LyonMag: Lyon, toutes les manifestations interdites samedi 24 octobre", "url": "https://www.lyonmag.com/article/154526/lyon-toutes-les-manifestations-interdites-samedi-24-octobre-apres-les-violences-du-week-end-dernier" },
+        { "title": "Sortiraparis: Manifestation du 24 octobre à Paris (updated 22 October 12:23)", "url": "https://www.sortiraparis.com/actualites/a-paris/articles/355171-manifestation-du-24-octobre-a-paris-parcours-magasins-fermes-et-armee-mobilisee" },
+        { "title": "BFMTV via Yahoo: Manifestations du 24 octobre, ce que l'on sait", "url": "https://fr.news.yahoo.com/manifestations-24-octobre-lon-sait-070033163.html" }
+      ]
+    }
+  ],
+  "added": [
+    {
+      "id": "istanbul-r4e3",
+      "size": "quarter",
+      "kicker": "Turkey · Diplomacy",
+      "headline": "European and Middle Eastern Ministers Meet in Istanbul Without a Joint Statement",
+      "body": [
+        "Foreign ministers of Turkey, Egypt, Pakistan and Saudi Arabia met their British, French and German counterparts in Istanbul on Friday, the first meeting of the format, hosted by Turkey’s foreign minister, Hakan Fidan. The talks ended without a statement in the name of all seven countries.",
+        "The agenda, announced by a Turkish diplomatic source on Thursday, covered Israel and the Palestinians, shipping through the Strait of Hormuz and Bab el-Mandeb, Houthi attacks on Saudi Arabia, a diplomatic way out of the US–Iran war and the war in Ukraine. The four regional states have issued joint statements after their own meetings, but the Turkish source spoke only of exploring opportunities for cooperation."
+      ],
+      "claims": [
+        {
+          "id": "istanbul-joint-statement",
+          "label": "All seven issue a joint statement",
+          "text": "By 23:59 on 23 October, the foreign ministers meeting in Istanbul in the R4+E3 format (Turkey, Egypt, Pakistan, Saudi Arabia, United Kingdom, France, Germany) issue a joint statement or communiqué in the name of all seven countries.",
+          "probability": 0.33,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "A joint statement or communiqué issued in the name of all seven countries appears on the website of the Turkish foreign ministry or of any of the other six foreign ministries, or is reported as such by Reuters or AFP, by the deadline. A chair’s statement by Turkey alone, a statement by fewer than seven countries, or a postponed meeting resolves no.",
+          "resolution_source": "https://www.mfa.gov.tr/",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Turkish diplomatic source via Reuters and AFP; earlier joint statements of the four regional states. Main risk: a short text on Gaza or shipping that all seven can sign.",
+      "sources": [
+        { "title": "AFP via Turkish Minute: Top European, Mideast diplomats to meet in Istanbul Friday", "url": "https://www.turkishminute.com/2026/10/22/top-european-mideast-diplomats-to-meet-in-istanbul-friday/" },
+        { "title": "Al-Monitor (Reuters): Turkey to host regional and European foreign ministers", "url": "https://www.al-monitor.com/originals/2026/10/turkey-host-regional-and-european-foreign-ministers-talks-regional-conflicts" },
+        { "title": "Daily Sabah: FM Fidan to chair first-ever R4+E3 talks in Istanbul", "url": "https://www.dailysabah.com/politics/diplomacy/fm-fidan-to-chair-first-ever-r4-e3-talks-in-istanbul" },
+        { "title": "Turkish MFA: Joint statement of the R4, 21 June 2026", "url": "https://www.mfa.gov.tr/joint-statement-of-the-r4-following-the-fourth-consultative-meeting-of-the-foreign-ministers-21-june-2026.en.mfa" }
+      ],
+      "rationale": "Class: first meetings of ad hoc groups mixing Western and Middle Eastern states that issue a text signed by all members (about 35–45%, n about 10–15); R4 alone issue statements regularly. A 0.30, B 0.42, C 0.28 → 0.33. No market. Red team: no new fact; all seven ministers confirmed to attend (Daily Sabah, Kuwait Times/AFP), no communiqué announced.",
+      "cs": {
+        "kicker": "Turecko · Diplomacie",
+        "headline": "Ministři z Evropy a Blízkého východu jednali v Istanbulu bez společného prohlášení",
+        "body": [
+          "Ministři zahraničí Turecka, Egypta, Pákistánu a Saúdské Arábie se v pátek v Istanbulu sešli se svými britským, francouzským a německým protějškem. Šlo o první schůzku v tomto formátu, hostil ji turecký ministr zahraničí Hakan Fidan. Jednání skončilo bez prohlášení jménem všech sedmi zemí.",
+          "Program, který ve čtvrtek oznámil turecký diplomatický zdroj, zahrnoval Izrael a Palestince, lodní dopravu Hormuzským průlivem a průlivem Bab al-Mandab, útoky húthíů na Saúdskou Arábii, diplomatické ukončení války mezi USA a Íránem a válku na Ukrajině. Čtyři regionální státy po vlastních schůzkách společná prohlášení vydávají, turecký zdroj však mluvil jen o hledání příležitostí ke spolupráci."
+        ],
+        "claims": {
+          "istanbul-joint-statement": {
+            "label": "Všech sedm vydá společné prohlášení",
+            "text": "Do 23:59 23. října vydají ministři zahraničí jednající v Istanbulu ve formátu R4+E3 (Turecko, Egypt, Pákistán, Saúdská Arábie, Spojené království, Francie, Německo) společné prohlášení nebo komuniké jménem všech sedmi zemí.",
+            "criterion": "Společné prohlášení nebo komuniké jménem všech sedmi zemí se do termínu objeví na webu tureckého ministerstva zahraničí nebo některého z dalších šesti ministerstev zahraničí, případně o něm jako o takovém informuje Reuters nebo AFP. Prohlášení předsednické země Turecka samotné, prohlášení méně než sedmi zemí nebo odložení schůzky znamená nesplnění."
+          }
+        },
+        "basis": "Turecký diplomatický zdroj podle agentur Reuters a AFP; dřívější společná prohlášení čtyř regionálních států. Hlavní riziko: krátký text o Gaze nebo lodní dopravě, který podepíše všech sedm."
+      }
+    }
+  ]
+}
