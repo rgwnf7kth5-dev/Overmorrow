@@ -1,0 +1,858 @@
+{
+  "id": "2026-10-24",
+  "number": 2,
+  "edition_date": "2026-10-24",
+  "events_date": "2026-10-23",
+  "frozen_at": "2026-10-22T04:47:00+02:00",
+  "front": {
+    "lead": "cz-budget",
+    "rail": [
+      "cz-banks",
+      "cz-honours"
+    ]
+  },
+  "weather": {
+    "title": "Weather, Friday",
+    "rows": [
+      [
+        "Bohemia",
+        "—"
+      ],
+      [
+        "Moravia and Silesia",
+        "—"
+      ]
+    ],
+    "note": "No ČHMÚ forecast for Friday could be retrieved before the freeze; see chmi.cz."
+  },
+  "sections": [
+    {
+      "name": "World",
+      "dek": "Brazil’s last debate, Israel’s last poll, Ukraine, Iran, Venezuela, Moscow’s rate",
+      "stories": [
+        "brazil-debate",
+        "israel-poll",
+        "ukraine-talks",
+        "iran-talks",
+        "russia-rate",
+        "venezuela"
+      ]
+    },
+    {
+      "name": "Europe",
+      "dek": "France before the second day of protests",
+      "stories": [
+        "france-protests",
+        "france-budget"
+      ]
+    },
+    {
+      "name": "Economy",
+      "dek": "British shops and euro-area firms",
+      "stories": [
+        "uk-retail",
+        "eurozone-pmi"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "cz-budget",
+      "size": "lead",
+      "kicker": "Chamber of Deputies · Prague",
+      "headline": "Chamber Approves 2027 Budget in First Reading Despite Opposition Delays",
+      "standfirst": "The coalition pushed the bill, with its CZK 386 billion deficit, through the first reading after two days of debate. Whether all of its 108 deputies turned up and voted yes was the closer question.",
+      "body": [
+        "The Chamber of Deputies approved the government’s draft state budget for 2027 in first reading, fixing its basic parameters: revenue of CZK 2.199 trillion, spending of CZK 2.585 trillion and a deficit of CZK 386 billion, CZK 76 billion more than the deficit approved for this year.",
+        "The debate opened on Wednesday and ran for about 13 hours before it was interrupted after 23:15, with about two dozen deputies still signed up to speak. Opposition clubs had asked for breaks totalling almost ten hours; Finance Minister Alena Schillerová called it obstruction. The debate resumed on Thursday from about 11:00, fitted around interpellations.",
+        "ODS, STAN, TOP 09, KDU-ČSL and the Pirates moved to return the bill to the government with instructions to cap the deficit at CZK 290 billion; TOP 09 also proposed CZK 310 billion. The coalition of ANO, SPD and the Motorists holds 108 of the 200 seats, enough to reject the motions and approve the bill.",
+        "The closer question was the size of the majority. With 108 seats, the coalition could lose no more than three of its deputies to absence or dissent and still reach 105 votes, and a late-night vote tends to thin attendance. Some SPD and Motorist deputies had earlier said the deficit troubled them.",
+        "The budget committee recommended approval by 9 votes to 7 on 12 October. The committee chair’s September timetable puts the second reading at 25 November and the third at 2 December."
+      ],
+      "claims": [
+        {
+          "id": "cz-budget-first-reading",
+          "label": "Budget passes first reading by Friday",
+          "text": "The Chamber of Deputies approves the 2027 state budget bill in first reading by 23:59 on 23 October.",
+          "probability": 0.74,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The psp.cz record of the Chamber’s session shows a passed vote approving the 2027 state budget bill in first reading, held no later than 23:59 on 23 October 2026.",
+          "resolution_source": "https://www.psp.cz/sqw/hlasovani.sqw",
+          "schedule": "reported"
+        },
+        {
+          "id": "cz-budget-105",
+          "label": "At least 105 deputies vote yes",
+          "text": "At least 105 deputies vote in favour in the first-reading vote approving the 2027 budget, held by 23:59 on 23 October.",
+          "probability": 0.51,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The psp.cz record of the first-reading approval vote shows 105 or more ‘ano’ votes; if no such vote is held by the deadline, the claim resolves no.",
+          "resolution_source": "https://www.psp.cz/sqw/hlasovani.sqw",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "ČT24 and ČTK reports of the Wednesday debate and the coalition’s aim to finish on Thursday; seat arithmetic. Main risk: renewed opposition breaks push the vote into next week, since no Friday sitting was announced.",
+      "sources": [
+        {
+          "title": "ČT24: Deputies to continue the budget debate",
+          "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-pokracovat-v-debate-o-statnim-rozpoctu-na-pristi-rok-378892"
+        },
+        {
+          "title": "ČTK: Chamber interrupts budget debate after opposition breaks",
+          "url": "https://www.ceskenoviny.cz/zpravy/snemovna-prerusila-debatu-o-rozpoctu-opozice-si-vyzadala-prestavky/2890454"
+        },
+        {
+          "title": "ČTK: Opposition wants to return the budget with a 290 billion cap",
+          "url": "https://www.ceskenoviny.cz/zpravy/opozice-chce-vratit-rozpocet-vlade-a-snizit-schodek-na-nejvyse-290-miliard/2889999"
+        }
+      ],
+      "rationale": "Class: Czech first-reading budget votes under a majority government (pass rate about 0.95, n about 20); risk is timing. A 0.72, B 0.70, C 0.80 → 0.74. Size of majority: A 0.43, B 0.50, C 0.60 → 0.51 (needs at most three absences or defections, and a vote by Friday). Red team: no new fact; no fixed vote time or Friday sitting announced.",
+      "cs": {
+        "kicker": "Poslanecká sněmovna · Praha",
+        "headline": "Sněmovna i přes průtahy opozice schválila rozpočet na rok 2027 v prvním čtení",
+        "standfirst": "Koalice protlačila návrh se schodkem 386 miliard korun prvním čtením po dvou dnech rozpravy. Těsnější otázkou bylo, zda se dostavilo a pro hlasovalo všech jejích 108 poslanců.",
+        "body": [
+          "Poslanecká sněmovna schválila v prvním čtení vládní návrh státního rozpočtu na rok 2027 a zafixovala jeho základní parametry: příjmy 2,199 bilionu korun, výdaje 2,585 bilionu korun a schodek 386 miliard korun, o 76 miliard více, než činí schválený schodek pro letošek.",
+          "Rozprava začala ve středu a trvala zhruba 13 hodin, než byla po 23:15 přerušena; přihlášeno bylo ještě asi dvacet poslanců. Opoziční kluby si vyžádaly přestávky v souhrnné délce téměř deseti hodin, ministryně financí Alena Schillerová to označila za obstrukci. Rozprava pokračovala ve čtvrtek zhruba od 11:00 v mezerách mezi interpelacemi.",
+          "ODS, STAN, TOP 09, KDU-ČSL a Piráti navrhli vrátit návrh vládě s pokynem omezit schodek na 290 miliard korun; TOP 09 navrhla také 310 miliard. Koalice ANO, SPD a Motoristů má 108 z 200 křesel, tedy dost na zamítnutí těchto návrhů i na schválení rozpočtu.",
+          "Těsnější otázkou byla velikost většiny. Se 108 mandáty si koalice mohla dovolit ztratit nejvýše tři poslance kvůli nepřítomnosti nebo nesouhlasu, aby dosáhla 105 hlasů, a pozdní noční hlasování účast obvykle snižuje. Někteří poslanci SPD a Motoristů dříve uvedli, že jim výše schodku vadí.",
+          "Rozpočtový výbor doporučil návrh schválit 12. října poměrem hlasů 9:7. Zářijový harmonogram předsedy výboru počítá s druhým čtením 25. listopadu a třetím 2. prosince."
+        ],
+        "claims": {
+          "cz-budget-first-reading": {
+            "label": "Rozpočet projde prvním čtením do pátku",
+            "text": "Poslanecká sněmovna schválí návrh státního rozpočtu na rok 2027 v prvním čtení do 23:59 dne 23. října.",
+            "criterion": "Záznam schůze Sněmovny na psp.cz ukazuje úspěšné hlasování o schválení návrhu státního rozpočtu na rok 2027 v prvním čtení, které proběhlo nejpozději 23. října 2026 ve 23:59."
+          },
+          "cz-budget-105": {
+            "label": "Pro hlasuje nejméně 105 poslanců",
+            "text": "V hlasování o schválení rozpočtu na rok 2027 v prvním čtení, které proběhne do 23:59 dne 23. října, hlasuje pro nejméně 105 poslanců.",
+            "criterion": "Záznam hlasování o schválení v prvním čtení na psp.cz ukazuje 105 nebo více hlasů „ano“; pokud takové hlasování do termínu neproběhne, výrok se vyhodnotí jako nesplněný."
+          }
+        },
+        "basis": "Zprávy ČT24 a ČTK o středeční rozpravě a záměru koalice skončit ve čtvrtek; početní poměry ve Sněmovně. Hlavní riziko: další přestávky opozice odsunou hlasování na příští týden, protože páteční jednání ohlášeno nebylo."
+      }
+    },
+    {
+      "id": "cz-banks",
+      "size": "rail",
+      "kicker": "Government · Banks",
+      "headline": "No Bank Tax Announced as Babiš Promises Talks on Mortgages",
+      "body": [
+        "Neither Prime Minister Andrej Babiš nor Finance Minister Alena Schillerová announced a new tax or levy on banks by Friday night.",
+        "In Wednesday’s budget debate Schillerová would not rule out further taxes on particular sectors and said such steps would not be announced in advance. Babiš said the government would negotiate with the banks about mortgage rates. A separate windfall tax on refineries is already before the Chamber."
+      ],
+      "claims": [
+        {
+          "id": "cz-bank-levy",
+          "label": "Government announces a bank levy",
+          "text": "By 23:59 on 23 October, Andrej Babiš or Alena Schillerová publicly states that the government will introduce a new tax or levy on banks.",
+          "probability": 0.09,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "A statement by the Prime Minister or the Finance Minister, published on vlada.gov.cz or mfcr.cz or reported by ČTK, that the government will introduce (not merely is considering or does not rule out) a new tax or levy on banks, made by the deadline.",
+          "resolution_source": "https://www.ceskenoviny.cz/",
+          "schedule": "speculative"
+        }
+      ],
+      "basis": "Echo24 and ČTK reports of the 21 October debate. Main risk: a loose remark that banks ‘will contribute’ is reported as a plan.",
+      "sources": [
+        {
+          "title": "Echo24: Babiš wants to deal with mortgage prices with the banks",
+          "url": "https://m.echo24.cz/a/HypY7/zpravy-ekonomika-banky-jsou-nenasytne-tvrdi-babis-chce-s-nimi-resit-ceny-hypotek-vlada"
+        }
+      ],
+      "rationale": "Class: firm commitment to a new tax within 48 hours after a minister declined to rule it out (about 5–10%). A 0.10, B 0.07, C 0.10 → 0.09. Red team: no new fact.",
+      "cs": {
+        "kicker": "Vláda · Banky",
+        "headline": "Bankovní daň nepřišla, Babiš slibuje jednání o hypotékách",
+        "body": [
+          "Premiér Andrej Babiš ani ministryně financí Alena Schillerová do pátečního večera neoznámili novou daň ani odvod pro banky.",
+          "Ve středeční rozpočtové rozpravě Schillerová nevyloučila další daně pro jednotlivá odvětví a uvedla, že takové kroky nebude dopředu ohlašovat. Babiš řekl, že vláda bude s bankami jednat o sazbách hypoték. Samostatná daň z mimořádných zisků rafinerií už leží ve Sněmovně."
+        ],
+        "claims": {
+          "cz-bank-levy": {
+            "label": "Vláda oznámí odvod pro banky",
+            "text": "Do 23:59 dne 23. října Andrej Babiš nebo Alena Schillerová veřejně prohlásí, že vláda zavede novou daň nebo odvod pro banky.",
+            "criterion": "Prohlášení premiéra nebo ministryně financí zveřejněné na vlada.gov.cz či mfcr.cz nebo citované ČTK, učiněné do termínu, že vláda zavede (nikoli jen zvažuje či nevylučuje) novou daň nebo odvod pro banky."
+          }
+        },
+        "basis": "Zprávy Echo24 a ČTK o rozpravě 21. října. Hlavní riziko: volná poznámka, že banky „přispějí“, bude podána jako plán."
+      }
+    },
+    {
+      "id": "cz-honours",
+      "size": "rail",
+      "kicker": "Prague Castle · 28 October",
+      "headline": "Castle Keeps Names of 28 October Honours Secret",
+      "body": [
+        "Prague Castle did not publish the list of people President Petr Pavel will decorate on 28 October. The ceremony is set for 20:00 that day in the Vladislav Hall, after the appointment of generals in the morning.",
+        "Under Pavel the Castle has not released the names in advance; in past years they became known through leaks or at the ceremony itself. Reflex reported that government deputies had nominated former president Miloš Zeman."
+      ],
+      "claims": [
+        {
+          "id": "cz-honours-list",
+          "label": "Castle publishes the honours list",
+          "text": "By 23:59 on 23 October, Prague Castle publishes on hrad.cz the names of the people who will receive state honours on 28 October 2026.",
+          "probability": 0.08,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "hrad.cz carries, by the deadline, a list naming the recipients of state honours to be awarded on 28 October 2026. Media leaks do not count.",
+          "resolution_source": "https://www.hrad.cz/cs/pro-media/tiskove-zpravy",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Castle programme for 28 October; ČTK and Deník on the practice of not publishing names in advance. Main risk: a change in practice this year.",
+      "sources": [
+        {
+          "title": "Prague Castle: accreditation for the state honours ceremony",
+          "url": "https://www.hrad.cz/cs/pro-media/tiskove-zpravy/aktualni-tiskove-zpravy/akreditace-na-slavnostni-udileni-statnich-vyznamenani-ve-vladislavskem-sale-prazskeho-hradu-19597"
+        },
+        {
+          "title": "Reflex: government deputies nominated Miloš Zeman",
+          "url": "https://www.reflex.cz/clanek/komentare/136270/brnkani-na-nervy-prezidenta-pavla-pokracuje-vladni-poslanci-mu-navrhli-na-udeleni-metalu-milose-zemana.html"
+        }
+      ],
+      "rationale": "Class: advance publication of the honours list on hrad.cz (rare). A 0.25, B 0.04, C 0.04 → 0.08 (spread 0.21; A had not seen the ČTK note that the Castle does not publish names in advance). Red team: no new fact.",
+      "cs": {
+        "kicker": "Pražský hrad · 28. října",
+        "headline": "Hrad jména vyznamenaných k 28. říjnu tají",
+        "body": [
+          "Pražský hrad nezveřejnil seznam osobností, které prezident Petr Pavel 28. října vyznamená. Slavnostní ceremoniál je naplánován na 20:00 toho dne ve Vladislavském sále, po dopoledním jmenování generálů.",
+          "Za Pavlova úřadování Hrad jména předem nezveřejňuje; v minulých letech je veřejnost znala z úniků nebo až z ceremoniálu. Reflex uvedl, že vládní poslanci navrhli na vyznamenání bývalého prezidenta Miloše Zemana."
+        ],
+        "claims": {
+          "cz-honours-list": {
+            "label": "Hrad zveřejní seznam vyznamenaných",
+            "text": "Do 23:59 dne 23. října Pražský hrad zveřejní na hrad.cz jména osob, které 28. října 2026 obdrží státní vyznamenání.",
+            "criterion": "Na hrad.cz je do termínu zveřejněn seznam jmen nositelů státních vyznamenání udělovaných 28. října 2026. Úniky do médií se nepočítají."
+          }
+        },
+        "basis": "Program Hradu na 28. října; ČTK a Deník o praxi nezveřejňovat jména předem. Hlavní riziko: letošní změna praxe."
+      }
+    },
+    {
+      "id": "brazil-debate",
+      "size": "half",
+      "kicker": "Brazil · Rio de Janeiro",
+      "headline": "Lula and Flávio Bolsonaro Meet in Last Debate Before Sunday’s Runoff",
+      "body": [
+        "President Luiz Inácio Lula da Silva and Senator Flávio Bolsonaro faced each other in TV Globo’s final debate of the campaign on Friday night, starting at about 21:20 Brasília time at the Estúdios Globo in Rio de Janeiro. The runoff is on Sunday.",
+        "Both campaigns signed the debate rules on 20 October, according to O Tempo. Flávio Bolsonaro had said on 13 October that he was still weighing whether to attend; Lula skipped Globo’s first-round debate on 1 October.",
+        "Polls have the race within the margin of error: Datafolha gave Bolsonaro 47% and Lula 45%. In the first round on 4 October Bolsonaro received 56.1 million votes and Lula 53.9 million. On 7 October Polymarket put Bolsonaro’s chance of winning at about 84%."
+      ],
+      "claims": [
+        {
+          "id": "br-debate-both",
+          "label": "Both candidates take part",
+          "text": "Both Lula and Flávio Bolsonaro take part in TV Globo’s presidential runoff debate on 23 October.",
+          "probability": 0.88,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "Globo’s coverage on g1.globo.com shows that both candidates took part in the debate broadcast on 23 October 2026 (Brasília time).",
+          "resolution_source": "https://g1.globo.com/politica/eleicoes/2026/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Globo’s schedule and O Tempo’s report that both campaigns confirmed. Main risk: a last-minute withdrawal by the front-runner.",
+      "sources": [
+        {
+          "title": "O Tempo: Lula and Flávio Bolsonaro confirm Globo debate",
+          "url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/10/21/lula-e-flavio-bolsonaro-confirmam-debate-na-globo-nesta-sexta-23-10-veja-horario-e-regras"
+        },
+        {
+          "title": "Al Jazeera: Latest poll shows Bolsonaro keeping an edge",
+          "url": "https://www.aljazeera.com/news/2026/10/16/latest-poll-shows-bolsonaro-maintaining-edge-over-lula-in-brazil-run-off"
+        }
+      ],
+      "rationale": "Class: both runoff finalists attend the final Globo debate (about 0.85, n=6). A 0.85, B 0.92, C 0.85 → 0.88. No market on attendance. Red team: no new fact; noted Flávio’s earlier hesitation.",
+      "cs": {
+        "kicker": "Brazílie · Rio de Janeiro",
+        "headline": "Lula a Flávio Bolsonaro se střetli v poslední debatě před nedělním druhým kolem",
+        "body": [
+          "Prezident Luiz Inácio Lula da Silva a senátor Flávio Bolsonaro se v pátek večer utkali v závěrečné debatě kampaně na stanici TV Globo, která začala zhruba ve 21:20 brasilijského času ve studiích Globo v Riu de Janeiru. Druhé kolo se koná v neděli.",
+          "Oba volební týmy podle listu O Tempo podepsaly pravidla debaty 20. října. Flávio Bolsonaro 13. října uvedl, že účast ještě zvažuje; Lula vynechal debatu Globo před prvním kolem 1. října.",
+          "Průzkumy ukazují souboj v rámci statistické chyby: Datafolha dala Bolsonarovi 47 procent a Lulovi 45 procent. V prvním kole 4. října získal Bolsonaro 56,1 milionu hlasů a Lula 53,9 milionu. Polymarket 7. října odhadoval Bolsonarovu šanci na vítězství zhruba na 84 procent."
+        ],
+        "claims": {
+          "br-debate-both": {
+            "label": "Debaty se zúčastní oba kandidáti",
+            "text": "Lula i Flávio Bolsonaro se 23. října zúčastní debaty TV Globo před druhým kolem prezidentských voleb.",
+            "criterion": "Zpravodajství Globo na g1.globo.com ukazuje, že se debaty vysílané 23. října 2026 (brasilijského času) zúčastnili oba kandidáti."
+          }
+        },
+        "basis": "Program Globo a zpráva O Tempo, že oba týmy účast potvrdily. Hlavní riziko: odstoupení favorita na poslední chvíli."
+      }
+    },
+    {
+      "id": "israel-poll",
+      "size": "half",
+      "kicker": "Israel · Knesset election",
+      "headline": "Final Maariv Poll Has Eisenkot’s Yashar Ahead of Likud",
+      "body": [
+        "Maariv’s last poll before Tuesday’s Knesset election, published on Friday, showed Gadi Eisenkot’s Yashar list ahead of Benjamin Netanyahu’s Likud. Israeli law bars the publication of polls from the end of the Friday before election day.",
+        "Yashar has led Likud in every Maariv poll since July. The paper’s poll published on 16 October gave Yashar 21 seats and Likud 18. A Walla poll by Panel4All on 19 October had Yashar on 23 and Likud on 19, with the Netanyahu bloc at 48 seats against 54 for the opposition parties, far from the 61 needed for a majority.",
+        "The margin in Maariv has not always been wide: its 9 October poll had the two lists at 21 and 20."
+      ],
+      "claims": [
+        {
+          "id": "il-maariv-likud",
+          "label": "Likud not first in Maariv’s final poll",
+          "text": "In Maariv’s poll published on 23 October, a list other than Likud is projected to win more seats than Likud.",
+          "probability": 0.77,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "Maariv (maariv.co.il) publishes a Knesset seat poll on 23 October 2026 in which at least one list has strictly more seats than Likud. A tie, or no Maariv seat poll published that day, resolves no.",
+          "resolution_source": "https://www.maariv.co.il/elections",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Maariv and Walla polls of 16 and 19 October as reported by the Jerusalem Post; the legal poll blackout. Main risk: a late Likud rally to a tie, or Maariv publishing its last poll on Thursday.",
+      "sources": [
+        {
+          "title": "Jerusalem Post: Maariv poll, Likud down to 18",
+          "url": "https://www.jpost.com/israel-election-2026/article-911902"
+        },
+        {
+          "title": "Jerusalem Post: Walla poll, neither bloc near 61",
+          "url": "https://www.jpost.com/israel-election-2026/article-912291"
+        }
+      ],
+      "rationale": "First round A 0.50, B 0.80, C 0.68 (spread 0.30) → rerun with shared facts: A 0.74, B 0.82, C 0.74 → 0.77. Class: Maariv polls since July, Yashar ahead in all (n about 12–15), times about 0.88 that a Friday seat poll appears. Red team: no new fact.",
+      "cs": {
+        "kicker": "Izrael · Volby do Knesetu",
+        "headline": "Poslední průzkum Maarivu: Eisenkotův Jašar před Likudem",
+        "body": [
+          "Poslední průzkum deníku Maariv před úterními volbami do Knesetu, zveřejněný v pátek, ukázal kandidátku Gadiho Eisenkota Jašar před Likudem Benjamina Netanjahua. Izraelský zákon zakazuje zveřejňovat průzkumy od konce pátku před volebním dnem.",
+          "Jašar vede před Likudem ve všech průzkumech Maarivu od července. Průzkum listu zveřejněný 16. října dal Jašaru 21 křesel a Likudu 18. Průzkum agentury Panel4All pro Walla z 19. října přisoudil Jašaru 23 a Likudu 19 mandátů, Netanjahuovu bloku 48 křesel proti 54 pro opoziční strany, daleko od 61 potřebných pro většinu.",
+          "Odstup v Maarivu nebyl vždy velký: jeho průzkum z 9. října dal oběma kandidátkám 21 a 20 křesel."
+        ],
+        "claims": {
+          "il-maariv-likud": {
+            "label": "Likud v posledním průzkumu Maarivu není první",
+            "text": "V průzkumu Maarivu zveřejněném 23. října získá jiná kandidátka více křesel než Likud.",
+            "criterion": "Maariv (maariv.co.il) zveřejní 23. října 2026 průzkum rozdělení mandátů v Knesetu, v němž má alespoň jedna kandidátka striktně více křesel než Likud. Remíza nebo nezveřejnění průzkumu Maarivu toho dne znamená nesplnění."
+          }
+        },
+        "basis": "Průzkumy Maarivu a Walla z 16. a 19. října podle Jerusalem Post; zákonný zákaz zveřejňování průzkumů. Hlavní riziko: pozdní vzestup Likudu na remízu, nebo zveřejnění posledního průzkumu Maarivu už ve čtvrtek."
+      }
+    },
+    {
+      "id": "ukraine-talks",
+      "size": "third",
+      "kicker": "Russia · Ukraine · United States",
+      "headline": "No Date Yet for New Three-Way Talks After Witkoff’s Visit",
+      "body": [
+        "Neither Moscow, Washington nor Kyiv named a date for a new round of trilateral talks on ending the war by Friday night.",
+        "US envoy Steve Witkoff met Vladimir Putin in St Petersburg on 21 October. Kremlin aide Yuri Ushakov said Russia was ‘in principle ready’ to resume trilateral talks, possibly in November and possibly in Abu Dhabi; spokesman Dmitry Peskov said Putin would review the documents the Americans brought. Russia released the US citizen Stephen Hubbard during the visit."
+      ],
+      "claims": [
+        {
+          "id": "ru-ua-trilateral-date",
+          "label": "Date for trilateral talks announced",
+          "text": "By 23:59 on 23 October, the Kremlin, the White House or the Ukrainian presidency publicly announces a specific date for a new round of trilateral US–Russia–Ukraine talks.",
+          "probability": 0.1,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "An official statement or on-record remark by the Kremlin, the White House or the Office of the President of Ukraine, made by the deadline, naming a calendar date for the next trilateral talks.",
+          "resolution_source": "http://en.kremlin.ru/events/president/news",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "TASS and CNN on the 21 October meeting. Main risk: a date announced quickly, as after a Witkoff visit in January.",
+      "sources": [
+        {
+          "title": "TASS: Kremlin on resuming talks",
+          "url": "https://tass.com/politics/2205685"
+        },
+        {
+          "title": "Kyiv Post: after Witkoff–Putin meeting",
+          "url": "https://www.kyivpost.com/post/87775"
+        }
+      ],
+      "rationale": "Class: specific date announced within 48 hours of a Witkoff–Putin meeting (about 1–2 of 10 meetings). A 0.08, B 0.12, C 0.10 → 0.10. Red team: no new fact.",
+      "cs": {
+        "kicker": "Rusko · Ukrajina · Spojené státy",
+        "headline": "Termín nových třístranných jednání ani po Witkoffově návštěvě není",
+        "body": [
+          "Moskva, Washington ani Kyjev do pátečního večera neoznámily datum nového kola třístranných jednání o ukončení války.",
+          "Americký vyslanec Steve Witkoff se 21. října setkal ve Petrohradu s Vladimirem Putinem. Kremelský poradce Jurij Ušakov uvedl, že Rusko je „v zásadě připraveno“ obnovit třístranná jednání, možná v listopadu a možná v Abú Zabí; mluvčí Dmitrij Peskov řekl, že Putin dokumenty, které Američané přivezli, posoudí. Rusko během návštěvy propustilo amerického občana Stephena Hubbarda."
+        ],
+        "claims": {
+          "ru-ua-trilateral-date": {
+            "label": "Oznámeno datum třístranných jednání",
+            "text": "Do 23:59 dne 23. října Kreml, Bílý dům nebo ukrajinská prezidentská kancelář veřejně oznámí konkrétní datum nového kola třístranných jednání USA, Ruska a Ukrajiny.",
+            "criterion": "Oficiální prohlášení nebo veřejný výrok Kremlu, Bílého domu nebo Kanceláře prezidenta Ukrajiny, učiněný do termínu, který uvádí kalendářní datum dalších třístranných jednání."
+          }
+        },
+        "basis": "TASS a CNN o schůzce 21. října. Hlavní riziko: rychlé oznámení data jako po Witkoffově lednové návštěvě."
+      }
+    },
+    {
+      "id": "russia-rate",
+      "size": "third",
+      "kicker": "Bank of Russia · Moscow",
+      "headline": "Bank of Russia Holds Key Rate at 14%",
+      "body": [
+        "The Bank of Russia left its key rate at 14% at Friday’s meeting, its seventh of eight this year, as it did in September.",
+        "Analysts at Sber, Finam, BCS and Expert RA had all expected a hold, citing rising inflation and inflation expectations; several left the door open to a cut in December. The bank’s next meeting is on 18 December."
+      ],
+      "claims": [
+        {
+          "id": "cbr-hold",
+          "label": "Key rate stays at 14%",
+          "text": "The Bank of Russia keeps its key rate at 14.00% at its 23 October meeting.",
+          "probability": 0.86,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The Bank of Russia press release on the 23 October 2026 decision states a key rate of 14.00% per annum.",
+          "resolution_source": "https://www.cbr.ru/eng/press/keypr/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Bank of Russia calendar; analyst surveys reported by Sberbusiness, Bankinform and Sravni. Main risk: a surprise 25-point cut.",
+      "sources": [
+        {
+          "title": "Bank of Russia: monetary policy calendar",
+          "url": "https://www.cbr.ru/Eng/DKP/cal_mp/"
+        },
+        {
+          "title": "Sberbusiness: what will happen to the key rate in October",
+          "url": "https://sberbusiness.live/news/chto-budet-s-klyuchevoi-stavkoi-v-oktyabre-2026-mnenie-ekspertov"
+        }
+      ],
+      "rationale": "Class: Bank of Russia decision matches analyst consensus (about 80–85%, n about 30). A 0.83, B 0.88, C 0.88 → 0.86. Red team: no new fact.",
+      "cs": {
+        "kicker": "Ruská centrální banka · Moskva",
+        "headline": "Ruská centrální banka ponechala klíčovou sazbu na 14 procentech",
+        "body": [
+          "Ruská centrální banka na pátečním zasedání, sedmém z letošních osmi, ponechala klíčovou sazbu na 14 procentech, stejně jako v září.",
+          "Analytici Sberu, Finamu, BCS a Expert RA shodně čekali setrvání s odkazem na rostoucí inflaci a inflační očekávání; několik z nich připustilo snížení v prosinci. Příští zasedání banky je 18. prosince."
+        ],
+        "claims": {
+          "cbr-hold": {
+            "label": "Klíčová sazba zůstane na 14 procentech",
+            "text": "Ruská centrální banka na zasedání 23. října ponechá klíčovou sazbu na 14,00 procenta.",
+            "criterion": "Tisková zpráva Ruské centrální banky o rozhodnutí z 23. října 2026 uvádí klíčovou sazbu 14,00 procenta ročně."
+          }
+        },
+        "basis": "Kalendář Ruské centrální banky; průzkumy analytiků podle Sberbusiness, Bankinform a Sravni. Hlavní riziko: překvapivé snížení o 25 bodů."
+      }
+    },
+    {
+      "id": "iran-talks",
+      "size": "third",
+      "kicker": "Iran · United States",
+      "headline": "No Date Set for New US–Iran Talks",
+      "body": [
+        "Neither Washington nor Tehran named a date for a new round of negotiations by Friday night, with the US blockade of Iranian ports still in place and the Strait of Hormuz closed.",
+        "On 20 October Iran told Pakistan’s army chief, Field Marshal Asim Munir, that there would be no talks until seven conditions were met. A day later Foreign Minister Abbas Araghchi said contacts with the United States continued through Pakistan and Qatar. Secretary of State Marco Rubio has welcomed the mediation."
+      ],
+      "claims": [
+        {
+          "id": "ir-us-round",
+          "label": "Date for US–Iran talks announced",
+          "text": "By 23:59 on 23 October, the US or Iranian government publicly announces a date for a new round of US–Iran negotiations, direct or mediated.",
+          "probability": 0.08,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "An official US or Iranian statement made by the deadline naming a calendar date for a new round of negotiations. Statements that contacts continue do not count.",
+          "resolution_source": "https://www.state.gov/press-releases/",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Times Live, Express Tribune and Samaa reports of 20–21 October. Main risk: an off-the-cuff date from President Trump.",
+      "sources": [
+        {
+          "title": "Express Tribune: US–Iran talks continue through Pakistan, Qatar",
+          "url": "https://tribune.com.pk/story/2636079/us-iran-talks-continue-through-pakistan-qatar-iranian-fm"
+        },
+        {
+          "title": "Times Live: Iran tells Pakistan no talks until demands met",
+          "url": "https://www.timeslive.co.za/news/world/2026-10-20-iran-tells-pakistan-no-talks-with-the-us-until-demands-met/"
+        }
+      ],
+      "rationale": "Rewritten after the first round: the earlier claim (‘talks resumed’) was ambiguous because Araghchi says contacts never stopped. New claim: A 0.06, B 0.10, C 0.08 → 0.08. Red team: no new fact.",
+      "cs": {
+        "kicker": "Írán · Spojené státy",
+        "headline": "Termín nových americko-íránských jednání stanoven nebyl",
+        "body": [
+          "Washington ani Teherán do pátečního večera neoznámily datum nového kola vyjednávání; americká blokáda íránských přístavů trvá a Hormuzský průliv je uzavřen.",
+          "Írán 20. října sdělil náčelníkovi pákistánské armády polnímu maršálovi Asimu Munírovi, že k jednání nedojde, dokud nebude splněno sedm podmínek. O den později ministr zahraničí Abbás Arakčí uvedl, že kontakty se Spojenými státy pokračují přes Pákistán a Katar. Ministr zahraničí USA Marco Rubio zprostředkování uvítal."
+        ],
+        "claims": {
+          "ir-us-round": {
+            "label": "Oznámeno datum jednání USA a Íránu",
+            "text": "Do 23:59 dne 23. října americká nebo íránská vláda veřejně oznámí datum nového kola americko-íránských jednání, přímých či zprostředkovaných.",
+            "criterion": "Oficiální americké nebo íránské prohlášení učiněné do termínu, které uvádí kalendářní datum nového kola jednání. Prohlášení, že kontakty pokračují, se nepočítají."
+          }
+        },
+        "basis": "Zprávy Times Live, Express Tribune a Samaa z 20. a 21. října. Hlavní riziko: datum, které nečekaně zmíní prezident Trump."
+      }
+    },
+    {
+      "id": "venezuela",
+      "size": "quarter",
+      "kicker": "Venezuela · Caracas",
+      "headline": "Still No Election Date After Opposition Protest",
+      "body": [
+        "Acting President Delcy Rodríguez and the electoral council did not set a date for a presidential election by Friday night, a day after the opposition led by María Corina Machado held nationwide protests demanding one.",
+        "A third round of talks between the government and the opposition has been under way in Caracas since 14 October. Rodríguez promised elections on 24 September but set no date. Polymarket gave about 9.5% for an election being scheduled by 31 December."
+      ],
+      "claims": [
+        {
+          "id": "ve-election-date",
+          "label": "Election date announced",
+          "text": "By 23:59 on 23 October, Venezuela’s National Electoral Council or acting president Delcy Rodríguez announces a date for a presidential election.",
+          "probability": 0.04,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "An announcement by the CNE or by Delcy Rodríguez, made by the deadline, naming a calendar date for a presidential election.",
+          "resolution_source": "https://www.cne.gob.ve/",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Rio Times and Euronews reports; Polymarket. Main risk: a deal emerging from the Caracas talks.",
+      "sources": [
+        {
+          "title": "Rio Times: Venezuela election date protest",
+          "url": "https://www.riotimesonline.com/venezuela-election-date-protest-22-october-2026/"
+        },
+        {
+          "title": "Euronews: Rodríguez announces elections without a date",
+          "url": "https://es.euronews.com/2026/09/24/delcy-rodriguez-anuncia-elecciones-en-venezuela-pero-no-pone-fecha-el-pueblo-decidira-el-m"
+        }
+      ],
+      "rationale": "Class: date set in a given two-day window of a stalled transition (well under 1% implied by Polymarket’s 9.5% to 31 December). A 0.04, B 0.03, C 0.04 → 0.04. Red team: no new fact.",
+      "cs": {
+        "kicker": "Venezuela · Caracas",
+        "headline": "Ani po protestech opozice termín voleb není",
+        "body": [
+          "Úřadující prezidentka Delcy Rodríguez ani volební rada do pátečního večera nestanovily datum prezidentských voleb, den poté, co opozice vedená Maríou Corinou Machado uspořádala celostátní protesty s tímto požadavkem.",
+          "V Caracasu od 14. října probíhá třetí kolo rozhovorů vlády s opozicí. Rodríguez volby slíbila 24. září, datum však neurčila. Polymarket dával asi 9,5 procenta na to, že termín voleb bude stanoven do 31. prosince."
+        ],
+        "claims": {
+          "ve-election-date": {
+            "label": "Oznámeno datum voleb",
+            "text": "Do 23:59 dne 23. října venezuelská Národní volební rada nebo úřadující prezidentka Delcy Rodríguez oznámí datum prezidentských voleb.",
+            "criterion": "Oznámení CNE nebo Delcy Rodríguez učiněné do termínu, které uvádí kalendářní datum prezidentských voleb."
+          }
+        },
+        "basis": "Zprávy Rio Times a Euronews; Polymarket. Hlavní riziko: dohoda vzešlá z rozhovorů v Caracasu."
+      }
+    },
+    {
+      "id": "france-protests",
+      "size": "half",
+      "kicker": "France · Paris",
+      "headline": "Paris Bans Marches in Parts of the City Ahead of ‘Act II’",
+      "body": [
+        "The Paris police prefecture issued an order banning demonstrations in parts of the capital for Saturday, when the gilets jaunes have called a second national day of action against the cost of living. The government did not declare a state of emergency.",
+        "The 17 October protests drew about 550,000 people, 110,000 of them in Paris, according to Le Petit Journal’s tally; 2,397 people were arrested and the town hall in Limoges was set on fire. Prime Minister Sébastien Lecornu ordered local curfews from 19 October in Lille, Douai, Denain and Wattignies.",
+        "The prefecture had banned demonstrations in several zones, including around the Élysée and the Champs-Élysées, for Thursday. Organisers have declared a march from Bastille to Opéra for Saturday. President Emmanuel Macron said on 21 October that the situation did not require a state of emergency."
+      ],
+      "claims": [
+        {
+          "id": "fr-paris-ban",
+          "label": "Prefecture bans protests in parts of Paris",
+          "text": "By 23:59 on 23 October, the Paris police prefecture issues an order banning demonstrations in at least part of Paris on 24 October.",
+          "probability": 0.67,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "An arrêté of the Préfecture de police banning demonstrations in all or part of Paris on 24 October 2026, published on prefecturedepolice.interieur.gouv.fr or reported by two national outlets by the deadline. Face-covering bans or security perimeters alone do not count.",
+          "resolution_source": "https://www.prefecturedepolice.interieur.gouv.fr/actualites-et-presse",
+          "schedule": "reported"
+        },
+        {
+          "id": "fr-etat-urgence",
+          "label": "State of emergency declared",
+          "text": "By 23:59 on 23 October, a decree declaring a state of emergency in all or part of France is published in the Journal officiel.",
+          "probability": 0.07,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "A decree declaring the état d’urgence under the law of 3 April 1955 appears in the Journal officiel on Légifrance by the deadline.",
+          "resolution_source": "https://www.legifrance.gouv.fr/jorf/jo",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Le Petit Journal, Europe 1 and Sortir à Paris reports; Macron’s 21 October remarks. Main risk for the ban: the order is published only on Saturday morning, or the prefecture relies on perimeters rather than a ban.",
+      "sources": [
+        {
+          "title": "Le Petit Journal: political crisis and violence in France",
+          "url": "https://lepetitjournal.com/expat-politique/actualites/crise-politique-et-violences-en-france-les-derniers-developpements-456570"
+        },
+        {
+          "title": "Sortir à Paris: 24 October rally, route and restrictions",
+          "url": "https://www.sortiraparis.com/en/news/in-paris/articles/355171-october-24-rally-in-paris-army-route-and-restrictions"
+        },
+        {
+          "title": "France Mag: Macron rules out a state of emergency",
+          "url": "https://www.francemag.fr/article/3820/emmanuel-macron-ecarte-l-etat-d-urgence-et-convoque-le-renseignement"
+        }
+      ],
+      "rationale": "Paris ban: first round A 0.72, B 0.80, C 0.45 (spread 0.35) → rerun with shared facts: A 0.70, B 0.70, C 0.62 → 0.67. Class: prefecture bans on gilets jaunes Saturdays 2018–19 (about 60–75%, n about 30). State of emergency: class 2005 and 2024 vs none in 2018–19 and 2023; A 0.10, B 0.05, C 0.07 → 0.07. Red team: no new fact; Public Sénat reports the movement losing steam.",
+      "cs": {
+        "kicker": "Francie · Paříž",
+        "headline": "Paříž před „druhým dějstvím“ zakázala pochody v části města",
+        "body": [
+          "Pařížská policejní prefektura vydala nařízení zakazující demonstrace v části hlavního města na sobotu, kdy žluté vesty svolaly druhý celostátní den protestů proti drahotě. Vláda výjimečný stav nevyhlásila.",
+          "Protestů 17. října se podle sčítání Le Petit Journal zúčastnilo asi 550 000 lidí, z toho 110 000 v Paříži; zatčeno bylo 2397 lidí a v Limoges hořela radnice. Premiér Sébastien Lecornu od 19. října nařídil místní zákazy vycházení v Lille, Douai, Denainu a Wattignies.",
+          "Prefektura na čtvrtek zakázala demonstrace v několika zónách včetně okolí Elysejského paláce a Champs-Élysées. Organizátoři na sobotu ohlásili pochod z Bastily k Opeře. Prezident Emmanuel Macron 21. října řekl, že situace výjimečný stav nevyžaduje."
+        ],
+        "claims": {
+          "fr-paris-ban": {
+            "label": "Prefektura zakáže protesty v části Paříže",
+            "text": "Do 23:59 dne 23. října pařížská policejní prefektura vydá nařízení zakazující demonstrace alespoň v části Paříže 24. října.",
+            "criterion": "Nařízení (arrêté) Préfecture de police zakazující demonstrace v celé Paříži nebo její části 24. října 2026, zveřejněné na prefecturedepolice.interieur.gouv.fr nebo citované dvěma celostátními médii do termínu. Samotné zákazy zakrývání obličeje nebo bezpečnostní perimetry se nepočítají."
+          },
+          "fr-etat-urgence": {
+            "label": "Vyhlášen výjimečný stav",
+            "text": "Do 23:59 dne 23. října vyjde v Journal officiel dekret o vyhlášení výjimečného stavu v celé Francii nebo její části.",
+            "criterion": "Dekret vyhlašující état d’urgence podle zákona z 3. dubna 1955 se do termínu objeví v Journal officiel na Légifrance."
+          }
+        },
+        "basis": "Zprávy Le Petit Journal, Europe 1 a Sortir à Paris; Macronův výrok z 21. října. Hlavní riziko u zákazu: nařízení vyjde až v sobotu ráno, nebo prefektura zvolí místo zákazu perimetry."
+      }
+    },
+    {
+      "id": "france-budget",
+      "size": "half",
+      "kicker": "France · National Assembly",
+      "headline": "Lecornu Holds Back From 49.3 as Budget Debate Drags On",
+      "body": [
+        "The government did not invoke Article 49.3 of the Constitution on either of its budget bills by Friday night, leaving the National Assembly to continue debating the 2027 social security budget.",
+        "The Assembly began debating the social security budget on 20 October after rejecting a motion from La France insoumise to throw it out; its first-reading deadline is 27 October, after which the text can go to the Senate. The solemn vote on the revenue part of the state budget, set for 20 October, was postponed with more than 2,800 of 3,396 amendments still to be dealt with.",
+        "Lecornu used 49.3 on the 2026 budget in January and has not ruled it out this time. La France insoumise has said it will table a censure motion if he does."
+      ],
+      "claims": [
+        {
+          "id": "fr-49-3",
+          "label": "Government uses Article 49.3",
+          "text": "By 23:59 on 23 October, the French government invokes Article 49.3 on the 2027 state budget or the 2027 social security budget in the National Assembly.",
+          "probability": 0.08,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The National Assembly’s record (assemblee-nationale.fr) shows the Prime Minister engaging the government’s responsibility under Article 49.3 on the PLF or PLFSS for 2027 by the deadline.",
+          "resolution_source": "https://www.assemblee-nationale.fr/dyn/17/dossiers",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "LCP and Public Sénat on the budget timetable. Main risk: the government cuts the PLFSS debate short before the 27 October deadline.",
+      "sources": [
+        {
+          "title": "LCP: Budget 2027 dossier",
+          "url": "https://lcp.fr/dossiers/budget-2027-440523"
+        },
+        {
+          "title": "LCP: Revenue-part marathon far from over",
+          "url": "https://lcp.fr/actualites/budget-2027-le-marathon-de-la-partie-recettes-loin-d-etre-termine-le-vote-prevu-demain-a"
+        }
+      ],
+      "rationale": "Class: timing of 49.3 on budget texts 2022–26 (usually at the end of a reading, so about 5–10% for any two-day window). A 0.08, B 0.06, C 0.12 → 0.08. Red team: no new fact.",
+      "cs": {
+        "kicker": "Francie · Národní shromáždění",
+        "headline": "Lecornu se článku 49.3 zatím vyhnul, rozpočtová rozprava se vleče",
+        "body": [
+          "Vláda do pátečního večera nepoužila článek 49.3 ústavy na žádný ze svých rozpočtových zákonů a Národní shromáždění dál projednává rozpočet sociálního zabezpečení na rok 2027.",
+          "Shromáždění začalo rozpočet sociálního zabezpečení projednávat 20. října poté, co zamítlo návrh Nepoddajné Francie na jeho odmítnutí; lhůta pro první čtení vyprší 27. října, poté může text jít do Senátu. Slavnostní hlasování o příjmové části státního rozpočtu, plánované na 20. října, bylo odloženo, když zbývalo projednat přes 2800 z 3396 pozměňovacích návrhů.",
+          "Lecornu použil článek 49.3 na rozpočet pro rok 2026 v lednu a tentokrát ho nevyloučil. Nepoddajná Francie oznámila, že pokud tak učiní, podá návrh na vyslovení nedůvěry."
+        ],
+        "claims": {
+          "fr-49-3": {
+            "label": "Vláda použije článek 49.3",
+            "text": "Do 23:59 dne 23. října francouzská vláda v Národním shromáždění použije článek 49.3 na státní rozpočet nebo rozpočet sociálního zabezpečení na rok 2027.",
+            "criterion": "Záznam Národního shromáždění (assemblee-nationale.fr) ukazuje, že premiér do termínu spojil odpovědnost vlády podle článku 49.3 s PLF nebo PLFSS na rok 2027."
+          }
+        },
+        "basis": "LCP a Public Sénat o rozpočtovém harmonogramu. Hlavní riziko: vláda zkrátí rozpravu o PLFSS před lhůtou 27. října."
+      }
+    },
+    {
+      "id": "uk-retail",
+      "size": "half",
+      "kicker": "United Kingdom · Statistics",
+      "headline": "British Retail Sales Slip in September",
+      "body": [
+        "Retail sales volumes in Great Britain fell in September from August in the Office for National Statistics’ first estimate, published at 07:00 on Friday.",
+        "Sales rose 0.5% in August, against expectations of a fall. Forecasters surveyed by Trading Economics expected a 0.2% fall in September. Industry surveys were mixed: the British Retail Consortium reported stronger like-for-like sales, BDO weaker ones."
+      ],
+      "claims": [
+        {
+          "id": "uk-retail-up",
+          "label": "Sales volumes rose in September",
+          "text": "The ONS first estimate shows Great Britain retail sales volumes, seasonally adjusted, rose month on month in September 2026.",
+          "probability": 0.43,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The ONS ‘Retail sales, Great Britain: September 2026’ bulletin published on 23 October gives a month-on-month change in seasonally adjusted sales volumes above 0.0%. Zero or below, or no bulletin by the deadline, resolves no.",
+          "resolution_source": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/latest",
+          "schedule": "official"
+        }
+      ],
+      "basis": "ONS release calendar; Trading Economics consensus. Main risk: consensus has been wrong in both directions this year.",
+      "sources": [
+        {
+          "title": "GOV.UK: Retail sales, September 2026 release announcement",
+          "url": "https://www.gov.uk/government/statistics/announcements/retail-sales-great-britain-september-2026-time-series"
+        },
+        {
+          "title": "Trading Economics: UK retail sales",
+          "url": "https://tradingeconomics.com/united-kingdom/retail-sales"
+        }
+      ],
+      "rationale": "Class: ONS first-estimate monthly volume rises since 2015 (about 48%, n about 130). A 0.48, B 0.35, C 0.47 → 0.43. Red team: no new fact.",
+      "cs": {
+        "kicker": "Spojené království · Statistika",
+        "headline": "Britské maloobchodní tržby v září klesly",
+        "body": [
+          "Objem maloobchodních tržeb ve Velké Británii podle prvního odhadu Úřadu pro národní statistiku, zveřejněného v pátek v 7:00, v září oproti srpnu klesl.",
+          "V srpnu tržby vzrostly o 0,5 procenta, ačkoli se čekal pokles. Ekonomové oslovení Trading Economics čekali v září pokles o 0,2 procenta. Oborové průzkumy se rozcházely: British Retail Consortium hlásilo silnější srovnatelné tržby, BDO slabší."
+        ],
+        "claims": {
+          "uk-retail-up": {
+            "label": "Objem tržeb v září vzrostl",
+            "text": "První odhad ONS ukáže, že sezonně očištěný objem maloobchodních tržeb ve Velké Británii v září 2026 meziměsíčně vzrostl.",
+            "criterion": "Bulletin ONS „Retail sales, Great Britain: September 2026“ zveřejněný 23. října uvádí meziměsíční změnu sezonně očištěného objemu tržeb nad 0,0 procenta. Nula či méně, nebo nezveřejnění bulletinu do termínu, znamená nesplnění."
+          }
+        },
+        "basis": "Kalendář ONS; konsenzus Trading Economics. Hlavní riziko: konsenzus se letos mýlil oběma směry."
+      }
+    },
+    {
+      "id": "eurozone-pmi",
+      "size": "half",
+      "kicker": "Euro area · Business surveys",
+      "headline": "Eurozone Business Activity Eases From September’s High",
+      "body": [
+        "The HCOB flash composite purchasing managers’ index for the euro area fell below 53 in October, according to S&P Global’s first estimate published on Friday morning.",
+        "In September the index rose to 53.1, against expectations of 51.5, with manufacturing at 52.7 and services at 53.0. S&P Global warned of rising input costs driven by energy prices in the Middle East. Economists expected a reading of about 52.5. The European Central Bank meets on 29 October."
+      ],
+      "claims": [
+        {
+          "id": "ez-pmi-53",
+          "label": "Composite PMI at 53.0 or higher",
+          "text": "The HCOB flash euro area composite PMI for October 2026 is 53.0 or higher.",
+          "probability": 0.39,
+          "resolves_by": "2026-10-23T23:59:00+02:00",
+          "criterion": "The S&P Global / HCOB flash euro area PMI release of 23 October 2026 gives a composite output index of 53.0 or higher.",
+          "resolution_source": "https://www.pmi.spglobal.com/Public/Release/PressReleases",
+          "schedule": "official"
+        }
+      ],
+      "basis": "September flash release as reported by FXStreet; consensus from Pound Sterling Live. Main risk: September’s strength carries over.",
+      "sources": [
+        {
+          "title": "FXStreet: Eurozone flash PMIs, September",
+          "url": "https://www.fxstreet.com/news/eurozone-flash-manufacturing-pmi-remains-steady-at-527-in-september-202609230804"
+        },
+        {
+          "title": "Pound Sterling Live: week-ahead forecast",
+          "url": "https://www.poundsterlinglive.com/eurusd/23766-euro-to-dollar-week-ahead-forecast-holding-1-1150"
+        }
+      ],
+      "rationale": "Class: flash composite at or above the previous month minus 0.1 (about 48%, n about 100). A 0.42, B 0.32, C 0.42 → 0.39. Red team: no new fact.",
+      "cs": {
+        "kicker": "Eurozóna · Průzkumy mezi firmami",
+        "headline": "Aktivita firem v eurozóně polevila ze zářijového maxima",
+        "body": [
+          "Předběžný kompozitní index nákupních manažerů HCOB pro eurozónu v říjnu klesl pod 53 bodů, ukázal první odhad S&P Global zveřejněný v pátek dopoledne.",
+          "V září index vzrostl na 53,1 bodu při očekávání 51,5, průmysl dosáhl 52,7 a služby 53,0 bodu. S&P Global varovala před rostoucími vstupními náklady kvůli cenám energií na Blízkém východě. Ekonomové čekali hodnotu kolem 52,5 bodu. Evropská centrální banka zasedá 29. října."
+        ],
+        "claims": {
+          "ez-pmi-53": {
+            "label": "Kompozitní PMI 53,0 nebo více",
+            "text": "Předběžný kompozitní index PMI HCOB pro eurozónu za říjen 2026 dosáhne 53,0 bodu nebo více.",
+            "criterion": "Předběžná zpráva S&P Global / HCOB o PMI eurozóny z 23. října 2026 uvádí kompozitní index výstupu 53,0 nebo vyšší."
+          }
+        },
+        "basis": "Zářijová předběžná data podle FXStreet; konsenzus podle Pound Sterling Live. Hlavní riziko: zářijová síla přetrvá."
+      }
+    }
+  ],
+  "diary": [
+    {
+      "date": "Sat 24 Oct",
+      "text": "Gilets jaunes ‘Act II’ across France; Bastille–Opéra march in Paris. Clocks go back overnight to Sunday."
+    },
+    {
+      "date": "Sun 25 Oct",
+      "text": "Presidential runoff in Brazil; parliamentary election in Serbia; presidential election in Bulgaria."
+    },
+    {
+      "date": "Mon 26 Oct",
+      "text": "Czech Statistical Office business and consumer confidence for October."
+    },
+    {
+      "date": "Tue 27 Oct",
+      "text": "Knesset election in Israel; first-reading deadline for France’s social security budget."
+    },
+    {
+      "date": "Wed 28 Oct",
+      "text": "Czech state holiday: President Pavel appoints generals and presents state honours at Prague Castle."
+    },
+    {
+      "date": "Thu 29 Oct",
+      "text": "ECB monetary policy decision."
+    },
+    {
+      "date": "Tue 3 Nov",
+      "text": "US midterm elections."
+    },
+    {
+      "date": "Thu 5 Nov",
+      "text": "Czech National Bank monetary policy meeting and new forecast."
+    }
+  ],
+  "cs": {
+    "weather": {
+      "title": "Počasí v pátek",
+      "rows": [
+        [
+          "Čechy",
+          "—"
+        ],
+        [
+          "Morava a Slezsko",
+          "—"
+        ]
+      ],
+      "note": "Předpověď ČHMÚ na pátek se do uzávěrky nepodařilo získat; viz chmi.cz."
+    },
+    "sections": [
+      {
+        "name": "Svět",
+        "dek": "Poslední debata v Brazílii, poslední průzkum v Izraeli, Ukrajina, Írán, Venezuela, sazba v Moskvě"
+      },
+      {
+        "name": "Evropa",
+        "dek": "Francie před druhým dnem protestů"
+      },
+      {
+        "name": "Ekonomika",
+        "dek": "Britské obchody a firmy v eurozóně"
+      }
+    ],
+    "diary": [
+      {
+        "date": "So 24. 10.",
+        "text": "„Druhé dějství“ žlutých vest po celé Francii; pochod z Bastily k Opeře v Paříži. V noci na neděli se posouvá čas zpět."
+      },
+      {
+        "date": "Ne 25. 10.",
+        "text": "Druhé kolo prezidentských voleb v Brazílii; parlamentní volby v Srbsku; prezidentské volby v Bulharsku."
+      },
+      {
+        "date": "Po 26. 10.",
+        "text": "Konjunkturální průzkum ČSÚ za říjen."
+      },
+      {
+        "date": "Út 27. 10.",
+        "text": "Volby do Knesetu v Izraeli; lhůta pro první čtení francouzského rozpočtu sociálního zabezpečení."
+      },
+      {
+        "date": "St 28. 10.",
+        "text": "Státní svátek: prezident Pavel jmenuje generály a na Pražském hradě předává státní vyznamenání."
+      },
+      {
+        "date": "Čt 29. 10.",
+        "text": "Měnověpolitické rozhodnutí ECB."
+      },
+      {
+        "date": "Út 3. 11.",
+        "text": "Volby do amerického Kongresu."
+      },
+      {
+        "date": "Čt 5. 11.",
+        "text": "Měnové zasedání ČNB s novou prognózou."
+      }
+    ]
+  }
+}
