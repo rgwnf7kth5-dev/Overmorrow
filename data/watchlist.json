@@ -12,7 +12,7 @@
    "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
    "opened": "2026-10-23",
    "resolves_by": "2026-12-31T23:59:00+01:00",
-   "background": "Finance minister Alena Schillerová's draft 2027 budget foresees a deficit of 389 billion crowns, which the ministry puts at 2.8% of GDP using the defence-spending exemption; National Budget Council chair Mojmír Hampl said in committee the underlying figure is 3.5% of GDP (Ekonomický deník, 2 Sep 2026). Budget committee chair Vladimír Pikora proposed a timetable with first reading on 21 October, end of second reading on 25 November and third reading on 2 December. The plenary first-reading debate ran from 21 October amid opposition delays; the opposition wants the bill returned with a deficit cap of 290 billion (ČTK). The ANO–SPD–Motoristé coalition has a majority in the Chamber.",
+   "background": "Finance minister Alena Schillerová's draft 2027 budget foresees a deficit of 389 billion crowns, which the ministry puts at 2.8% of GDP using the defence-spending exemption; National Budget Council chair Mojmír Hampl said in committee the underlying figure is 3.5% of GDP (Ekonomický deník, 2 Sep 2026). Budget committee chair Vladimír Pikora proposed a timetable with first reading on 21 October, end of second reading on 25 November and third reading on 2 December. The plenary first-reading debate ran from 21 October amid opposition delays; the opposition wants the bill returned with a deficit cap of 290 billion (ČTK). The ANO–SPD–Motoristé coalition has a majority in the Chamber. After the first reading on 22 October the deficit stands at 386 billion crowns (ČTK, 22 Oct).",
    "sources": [
     {
      "title": "Ekonomický deník: MPs argue over dates; 2027 deficit 389 bn",
@@ -25,6 +25,10 @@
     {
      "title": "ČT24: Deputies to continue the budget debate",
      "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-pokracovat-v-debate-o-statnim-rozpoctu-na-pristi-rok-378892"
+    },
+    {
+     "title": "ČTK: Chamber approves basic budget figures with a deficit of 386 bn",
+     "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-zakladni-udaje-rozpoctu-se-schodkem-386-mld-kc/2890454"
     }
    ],
    "base_rate": {
@@ -855,6 +859,47 @@
      },
      "note": "Flávio Bolsonaro led the first round with 47.0% to Lula's 45.2%, most of the remaining votes went to right-leaning candidates, and final polls are tied or slightly favour him (Datafolha 50–50, Quaest 45–44, AtlasIntel 51.1–48.9), while betting markets are far more bearish on Lula. Lula's late momentum, with Datafolha moving from 52–48 for Flávio in early October to a tie, is what could still carry him to victory.",
      "note_cs": "Flávio Bolsonaro vyhrál první kolo se ziskem 47,0 % proti 45,2 % pro Lulu, většina zbývajících hlasů připadla pravicovým kandidátům a závěrečné průzkumy ukazují vyrovnaný stav nebo jeho mírné vedení (Datafolha 50:50, Quaest 45:44, AtlasIntel 51,1:48,9), zatímco sázkové trhy jsou vůči Lulovi mnohem skeptičtější. K vítězství by Lulu ještě mohl dovést jeho závěrečný nástup, kdy se průzkum Datafolha posunul z poměru 52:48 pro Flávia na počátku října k vyrovnanému stavu."
+    },
+    {
+     "at": "2026-10-23T21:15:00+02:00",
+     "p": 0.27,
+     "combined": 0.267,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.28
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable",
+       "p": 0.25
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.24
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.27
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/brazil-presidential-election",
+      "p": 0.235,
+      "read_at": "2026-10-23T17:20:00Z"
+     },
+     "note": "Evening re-forecast with the edition dossier: across the three final-week polls Flávio Bolsonaro leads by about 1.3 points of valid votes (Datafolha 50–50, Quaest and PoderData 51–49), a later AtlasIntel poll still has him ahead, and the forecasters now use the wider pooled poll error rather than Datafolha’s own record. The liquid market (0.235) has not moved. Final Datafolha and Quaest polls are due on 24 October.",
+     "note_cs": "Večerní přepočet s podklady k vydání: ve třech průzkumech z posledního týdne vede Flávio Bolsonaro o zhruba 1,3 bodu platných hlasů (Datafolha 50:50, Quaest a PoderData 51:49), pozdější průzkum AtlasIntel ho rovněž vidí v čele a prognostici nyní počítají s širší souhrnnou chybou průzkumů místo vlastní bilance agentury Datafolha. Likvidní trh (0,235) se nepohnul. Poslední průzkumy Datafolha a Quaest vyjdou 24. října."
     }
    ],
    "result": null
@@ -2146,6 +2191,137 @@
     }
    ],
    "result": null
+  },
+  {
+   "id": "cz-licence-fee-abolition-passed",
+   "scope": "cz",
+   "topic": "Public-service media funding",
+   "question": "Will the Chamber of Deputies pass the government bill abolishing the ČT and ČRo licence fees in third reading by 31 January 2027?",
+   "question_cs": "Schválí Poslanecká sněmovna ve třetím čtení vládní návrh zákona o zrušení koncesionářských poplatků za Českou televizi a Český rozhlas do 31. ledna 2027?",
+   "criterion": "Yes if the Chamber of Deputies' record of votes (psp.cz) shows that the government bill replacing the ČT and ČRo licence fees with state-budget funding (approved by the cabinet on 15 June 2026) was passed in third reading, with or without amendments, on or before 31 Jan 2027 23:59 CET. Approval by the Senate, a Chamber override of a Senate rejection, or the president's signature are not required. A partial bill that only exempts some groups from fees while keeping the fees does not count. No if the bill is rejected, withdrawn or not voted on in third reading by then.",
+   "criterion_cs": "Ano, pokud záznam hlasování Poslanecké sněmovny (psp.cz) ukáže, že vládní návrh zákona, který nahrazuje koncesionářské poplatky za ČT a ČRo financováním ze státního rozpočtu (vláda jej schválila 15. června 2026), byl schválen ve třetím čtení, s pozměňovacími návrhy či bez nich, nejpozději 31. 1. 2027 ve 23:59 SEČ. Schválení Senátem, přehlasování Senátu ani podpis prezidenta se nevyžadují. Novela, která poplatky zachová a jen od nich osvobodí některé skupiny, se nepočítá. Ne, pokud bude návrh zamítnut, stažen nebo do termínu nebude ve třetím čtení odhlasován.",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "On 15 June 2026 the Babiš cabinet approved a bill to abolish licence fees and fund Česká televize (CZK 5.74 bn) and Český rozhlas (CZK 2.065 bn) from the state budget, about CZK 1.35 bn less than now, from January 2027 (Novinky, 15 Jun). In August the bill was still awaiting first reading; Finance Minister Schillerová and Culture Minister Klempíř would not guarantee the 1 January start, the Senate and President Pavel have criticised the bill and the opposition has promised obstruction (Echo24, 25 Aug). On 23 October the coalition pushed the bill onto the Chamber's agenda and debate began, with the opposition promising obstruction; ČT and ČRo employees announced a one-day strike for 3 November (Echo24 headlines, 23 Oct). The ANO–SPD–Motoristé coalition has a majority, but the 2027 budget's second and third readings (third reading planned for 2 December) compete for floor time.",
+   "sources": [
+    {
+     "title": "Novinky 15 Jun 2026: Vláda schválila zrušení koncesionářských poplatků",
+     "url": "https://www.novinky.cz/clanek/domaci-vlada-schvalila-zruseni-koncesionarskych-poplatku-40583287"
+    },
+    {
+     "title": "Echo24 25 Aug 2026: Poplatky za ČT a ČRo měly skončit od ledna. Vláda připouští průtahy (sidebar 23 Oct: Sněmovna projednává zrušení poplatků; opozice slibuje obstrukce)",
+     "url": "https://www.echo24.cz/a/HnyWz/koncesionarske-poplatky-leden-2027-zruseni-ceska-televize-rozhlas"
+    },
+    {
+     "title": "CNN Prima News: Koncesionářské poplatky úplně zrušíme, řekl Klempíř",
+     "url": "https://cnn.iprima.cz/koncesionarske-poplatky-zrusime-potvrdil-klempir-odmitl-slouceni-ceske-televize-s-rozhlasem-509126"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-10-23T21:15:00+02:00",
+     "p": 0.43,
+     "combined": 0.428,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.4
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.42
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable",
+       "p": 0.42
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.4
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.5
+      }
+     ],
+     "market": null,
+     "note": "The coalition has a majority and pushed the bill onto the agenda on 23 October, but first reading has only just begun under announced obstruction, the committee stage takes weeks and the 2027 budget occupies the floor until its third reading on 2 December, so a third-reading vote by 31 January needs fixed-time voting or similar procedural force.",
+     "note_cs": "Koalice má většinu a 23. října prosadila návrh na program, první čtení však teprve začalo za ohlášené obstrukce, výborové projednání trvá týdny a do třetího čtení rozpočtu 2. prosince zabírá jednací čas rozpočet 2027, takže hlasování ve třetím čtení do 31. ledna vyžaduje pevné hlasování nebo podobný procedurální nástroj."
+    }
+   ]
+  },
+  {
+   "id": "cz-vystrcil-senate-president",
+   "scope": "cz",
+   "topic": "Senate leadership",
+   "question": "Will Miloš Vystrčil be re-elected President of the Senate by 31 December 2026?",
+   "question_cs": "Bude Miloš Vystrčil do 31. prosince 2026 znovu zvolen předsedou Senátu?",
+   "criterion": "Yes if, on or before 31 Dec 2026 23:59 CET, the Senate elects Miloš Vystrčil as its president for the term beginning after the October 2026 Senate elections, as recorded on senat.cz or reported by ČTK. No if another senator is elected, or if no president is elected by then.",
+   "criterion_cs": "Ano, pokud Senát nejpozději 31. 12. 2026 ve 23:59 SEČ zvolí Miloše Vystrčila svým předsedou pro období po senátních volbách v říjnu 2026, podle senat.cz nebo ČTK. Ne, pokud bude zvolen jiný senátor nebo pokud do termínu předseda zvolen nebude.",
+   "resolution_source": "https://www.senat.cz/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Miloš Vystrčil (ODS) has led the Senate since 2020. After the October 2026 elections the joint ODS–TOP 09 club remains the largest, although STAN won the most seats (10 plus independent Marek Ošťádal); ANO won no seats. STAN leader Vít Rakušan said STAN has no problem with Vystrčil keeping the post, ODS leader Martin Kupka said Vystrčil will remain, and STAN wants to keep Jiří Drahoš as first deputy (Seznam Zprávy, 17 Oct). New senators take the oath on 19 November and the leadership vote is due in November; the ODS–TOP 09 club is expected to nominate Vystrčil again (ČT24, 20 Oct). He would be a prominent critic of the Babiš government from the second-highest constitutional post.",
+   "sources": [
+    {
+     "title": "Seznam Zprávy 17 Oct 2026: Neúprosná „obhajovací matematika“ STAN. O vedení Senátu ODS nepřipraví",
+     "url": "https://www.seznamzpravy.cz/clanek/318094"
+    },
+    {
+     "title": "ČT24 20 Oct 2026: Senát čekají personální šachy a úvahy o novém výboru",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senat-cekaji-personalni-sachy-a-uvahy-o-novem-vyboru-378831"
+    }
+   ],
+   "base_rate": {
+    "class": "Sitting Senate presidents seeking re-election after a biennial election with their club still largest (Vystrčil 2020, 2022, 2024)",
+    "rate": 1.0,
+    "n": 3,
+    "source": "https://www.e15.cz/vysledky-voleb-a-referend/volby-do-senatu/vystrcil-zrejme-zustane-v-cele-senatu-ma-podporu-stan-i-koalice-top-09-s-ods-1374134"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T21:15:00+02:00",
+     "p": 0.91,
+     "combined": 0.912,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.88
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.92
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable",
+       "p": 0.9
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.93
+      }
+     ],
+     "market": null,
+     "note": "Vystrčil was re-elected after each of the last three Senate elections, his ODS–TOP 09 club remains the largest, and both STAN’s leader Vít Rakušan and ODS leader Martin Kupka have backed him; the vote is due in November after the new senators take the oath on 19 November. The residual risk is a surprise rival in the secret ballot.",
+     "note_cs": "Vystrčil byl znovu zvolen po každých z posledních tří senátních voleb, jeho klub ODS a TOP 09 zůstává nejsilnější a podpořili ho předseda STAN Vít Rakušan i předseda ODS Martin Kupka; volba se čeká v listopadu po složení slibu nových senátorů 19. listopadu. Zbývajícím rizikem je překvapivý protikandidát v tajné volbě."
+    }
+   ]
   }
  ]
 }

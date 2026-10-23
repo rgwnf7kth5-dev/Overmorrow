@@ -1,0 +1,2513 @@
+{
+ "edition": "2026-10-26",
+ "events_date": "2026-10-25",
+ "prepared_at": "2026-10-23T21:10:00+02:00",
+ "candidates": 64,
+ "note": "Evening desk round one. Combination: plain geometric mean of odds (pipeline/calibration.json method geo-odds, 0 resolved). No disagreement rerun was needed (largest spread 0.19). Final Datafolha and Quaest Brazil polls (24 Oct) and the BC/Slovak results are not yet in; the morning run must re-check them. Czech Sunday is thin: most Czech claims are of the \"by Monday noon\" kind.",
+ "stories": [
+  {
+   "id": "brazil-runoff",
+   "scope": "world",
+   "scores": {
+    "impact": 5,
+    "reach": 5,
+    "uncertainty": 4
+   },
+   "event": "Brazilians vote on Sunday 25 Oct in the presidential runoff between Lula and Flávio Bolsonaro; TSE results from 21:00 CET.",
+   "sources": [
+    {
+     "title": "TVT News: Datafolha 50–50, Quaest and PoderData 51–49 Flávio",
+     "url": "https://tvtnews.com.br/datafolha-pesquisa-presidente-2-turno-pos-debate/"
+    },
+    {
+     "title": "CNN Brasil: Datafolha empate em 50% dos votos válidos",
+     "url": "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/"
+    },
+    {
+     "title": "TSE: 2022 runoff final figures",
+     "url": "https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/100-das-secoes-totalizadas-confira-como-ficou-o-quadro-eleitoral-apos-o-2o-turno"
+    }
+   ],
+   "claims": [
+    {
+     "id": "br-lula-wins",
+     "label": "Lula wins Brazil's runoff",
+     "text": "Lula receives more valid votes than Flávio Bolsonaro in the 25 Oct 2026 Brazilian presidential runoff, per TSE.",
+     "criterion": "YES if the TSE results (resultados.tse.jus.br / tse.jus.br) published by 26 Oct 2026 12:00 CET show Lula with more valid votes than Flávio Bolsonaro in the presidential runoff (100% totalised, or the latest TSE figure at the deadline if the result is mathematically decided). NO if Flávio Bolsonaro has more, or if the runoff is postponed or TSE publishes no result by the deadline.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE, resultados.tse.jus.br, from 21:00 CET on 25 Oct (17:00 BRT); full totalisation expected in the early hours of 26 Oct CET (2022: 04:18 CET)",
+     "cs": {
+      "label": "Lula vyhraje druhé kolo v Brazílii",
+      "text": "Lula získá ve druhém kole brazilských prezidentských voleb 25. října 2026 více platných hlasů než Flávio Bolsonaro, podle výsledků TSE.",
+      "criterion": "ANO, pokud výsledky TSE (resultados.tse.jus.br / tse.jus.br) zveřejněné do 26. října 2026 12:00 SEČ ukážou, že Lula získal ve druhém kole prezidentských voleb více platných hlasů než Flávio Bolsonaro (při 100 % sečtených okrsků, nebo podle posledního údaje TSE v termínu, je-li výsledek matematicky rozhodnut). NE, pokud více hlasů získá Flávio Bolsonaro, nebo pokud se hlasování odloží či TSE do termínu výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-lula-wins.md",
+     "probability": 0.27,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.28
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.3
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.25
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.24
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.27
+       }
+      ],
+      "combined": 0.267,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "poll-lead model, Brazil runoff (lead Lula−Flávio −1.33 pp, sd 1.345 = rms Datafolha runoff lead error)",
+       "rate": 0.161,
+       "n": 3,
+       "source": "pipeline/reference-data/poll-error.json; models.mjs lead -1.33 1.345 (lead 0 → 0.50)"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/brazil-presidential-election",
+       "p": 0.235,
+       "read_at": "2026-10-23T17:01:49Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/br-lula-wins.md",
+      "spread": 0.06,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Poll-lead model with lead -1.3 and the pooled rms error of 2.734 (the Datafolha-only n=3 sd of 1.345 is too narrow) gives 0.31. Adjusted -0.15 log-odds because Brazilian polls have tended to underrate the right (2022: Datafolha lead error +2.2 toward Lula) and Flávio led the first round, then x0.99 for slip.",
+       "evidence": "Freshest polls have Flávio narrowly ahead (Quaest/PoderData 51-49, three-poll lead -1.3), with Datafolha trending to Lula (48->49->50); a later AtlasIntel reportedly still shows Flávio ahead but narrowing. Market 0.235; momentum and 2022 Lula-overstatement roughly offset, leaving Lula a clear underdog.",
+       "adversarial": "Routes to NO dominate: every poll but Datafolha/Vox has Flávio ahead (latest AtlasIntel 51.1–48.9, Quaest and PoderData 51–49, RTBD/Alfa 52–48; lead ≈ −1.8), 2022 polls overstated Lula's lead by 2.2 pp, the first round gave Flávio +1.9 with right-leaning remainder, and the $50m Polymarket sits at 0.235. Lula's Datafolha momentum (48→49→50) and Northeast machine are the only live YES route; lead −1.8 with sd ~2.5 gives ~0.24, slip 0.01.",
+       "anchor": "Anchor Polymarket 0.235 (re-read 17:20Z, unchanged, ~$29m volume). Poll model (lead -1.3, sd 1.345) gives 0.16 but sd is too narrow on n=3; with pooled sd 2.7 it is ~0.31; Datafolha trend toward Lula offsets the 2022 pro-Lula poll bias, so stay near market.",
+       "outsider": "Final polls are a coin flip (Datafolha 50-50, Quaest/PoderData 49-51) with a Lula trend, but Flavio led round one by 1.9 pp with the eliminated vote mostly right-leaning, 2022 polls overstated Lula, and the market gives Lula only about 23%."
+      }
+     }
+    },
+    {
+     "id": "br-margin-under-4",
+     "label": "Runoff decided by under 4 points",
+     "text": "The winner of the 25 Oct 2026 Brazilian presidential runoff leads the runner-up by less than 4.0 percentage points of valid votes, per TSE.",
+     "criterion": "YES if, in the TSE presidential runoff results (resultados.tse.jus.br / tse.jus.br) at 100% totalised, or the latest TSE figure at 26 Oct 2026 12:00 CET, the winner's share of valid votes minus the runner-up's share is less than 4.00 percentage points. NO if the gap is 4.00 points or more, or if the runoff is postponed or TSE publishes no result by the deadline.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE, resultados.tse.jus.br, from 21:00 CET on 25 Oct (17:00 BRT); full totalisation expected in the early hours of 26 Oct CET (2022: 04:18 CET)",
+     "cs": {
+      "label": "Rozdíl ve druhém kole pod čtyři body",
+      "text": "Vítěz druhého kola brazilských prezidentských voleb 25. října 2026 porazí druhého kandidáta o méně než 4,0 procentního bodu platných hlasů, podle TSE.",
+      "criterion": "ANO, pokud ve výsledcích druhého kola prezidentských voleb podle TSE (resultados.tse.jus.br / tse.jus.br) při 100 % sečtených okrsků, nebo podle posledního údaje TSE k 26. říjnu 2026 12:00 SEČ, činí rozdíl podílu platných hlasů vítěze a druhého kandidáta méně než 4,00 procentního bodu. NE, pokud je rozdíl 4,00 bodu či větší, nebo pokud se hlasování odloží či TSE do termínu výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-margin-under-4.md",
+     "probability": 0.72,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.76
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.72
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.7
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.7
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.7
+       }
+      ],
+      "combined": 0.717,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "poll-lead model: P(|lead|<4) with lead ~ N(−1.33, 1.345)",
+       "rate": 0.976,
+       "n": 3,
+       "source": "pipeline/reference-data/poll-error.json (brazil_datafolha_runoffs); runoff margins 2014 3.28, 2018 10.26, 2022 1.80"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
+       "p": 0.63,
+       "read_at": "2026-10-23T17:01:49Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/br-margin-under-4.md",
+      "spread": 0.06,
+      "rerun": false,
+      "notes": {
+       "base-rate": "The lead ~N(-1.3, 2.73) puts 0.81 of its mass inside |4|. Widened toward a 3.0 sd for the right-leaning miss risk (0.74). Two of three recent runoffs ended under 4 pp (2014: 3.28, 2022: 1.80). Less 1% slip.",
+       "evidence": "All late national polls put the gap at 0-2 pp and the first round gap was 1.87; only older Atlas/RTBD/Alfa showed 4+. Market <4% buckets sum 0.63; I lean above it given poll consensus and narrowing Atlas trend.",
+       "adversarial": "Lead −1.8 ± 2.5–3 puts ~0.74–0.80 of mass inside ±4, but the adversarial routes are real: polls clustered at 51–49 may be herding (AtlasIntel had +5.6 three weeks ago, RTBD/Alfa +4), a 2022-style Lula overstatement of ~2 pp pushes a Flávio margin to 4+, and the market prices the 4–8 Flávio bucket at 0.305. Shaded toward the market from the model.",
+       "anchor": "Anchor Polymarket sum of <4% buckets 0.63; polls (lead -1.3, even with sd 2.7) give ~0.82. Market prices a large Flavio 4-6% bucket (0.27), i.e. a 2022-style poll miss; moved partway toward polls.",
+       "outsider": "Polls point to a 0-3 pp race and recent runoffs were 1.8 and 3.3 pp; the main route to NO is a systematic poll miss toward Flavio of 4+ pp, which the market prices around 30-35%."
+      }
+     }
+    },
+    {
+     "id": "br-lula-share",
+     "label": "Lula's share of valid votes",
+     "text": "Lula's share of valid votes in the 25 Oct 2026 Brazilian presidential runoff, per TSE, is …",
+     "criterion": "Lula's percentage of valid votes (votos válidos) in the TSE presidential runoff results at 100% totalised, or the latest TSE figure at 26 Oct 2026 12:00 CET.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE, resultados.tse.jus.br, from 21:00 CET on 25 Oct (17:00 BRT); full totalisation expected in the early hours of 26 Oct CET (2022: 04:18 CET)",
+     "cs": {
+      "label": "Lulův podíl platných hlasů",
+      "text": "Lula získá ve druhém kole brazilských prezidentských voleb 25. října 2026 podle TSE … % platných hlasů.",
+      "criterion": "Lulův podíl platných hlasů (votos válidos) ve výsledcích druhého kola prezidentských voleb podle TSE při 100 % sečtených okrsků, nebo podle posledního údaje TSE k 26. říjnu 2026 12:00 SEČ."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-lula-share.md",
+     "kind": "interval",
+     "quantity": "Lula's share of valid votes, presidential runoff (TSE)",
+     "unit": "%",
+     "quantiles": {
+      "q10": 47.24,
+      "q50": 48.98,
+      "q90": 50.64
+     },
+     "scale": 1.3,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "q10": 47.5,
+        "q50": 49.2,
+        "q90": 50.9
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "q10": 47.4,
+        "q50": 49,
+        "q90": 50.5
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "q10": 47.2,
+        "q50": 48.9,
+        "q90": 50.4
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "q10": 47.2,
+        "q50": 48.9,
+        "q90": 50.6
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "q10": 46.9,
+        "q50": 48.9,
+        "q90": 50.8
+       }
+      ],
+      "consensus": {
+       "value": 49.3,
+       "source": "Mean of Datafolha 20–22 Oct (50), Quaest 17–20 Oct (49), PoderData/Aya 19–21 Oct (49); with AtlasIntel 3–8 Oct (47.2) 48.8. Final Datafolha/Quaest due Sat 24 Oct, not yet out."
+      },
+      "scale_source": "Half the pooled rms lead error of final polls (2.73 pp, 6 elections; pipeline/reference-data/poll-error.json) ≈ 1.3 pp per candidate share; the Datafolha-only figure (1.345/2 ≈ 0.7, n=3) is the narrow end. rms Datafolha final-poll runoff lead error 1.345 pp (2014, 2018, 2022; pipeline/reference-data/poll-error.json), halved for per-candidate share; n=3, narrow end (pooled party-error sd 2.61). Normal start q10 48.4 / q50 49.3 / q90 50.2.",
+      "dossier": "data/dossiers/2026-10-26/br-lula-share.md",
+      "notes": {
+       "base-rate": "Centre is the three-poll average of 49.3, shaded slightly for the historical right-leaning miss. The 80% band is ±1.7 pp of share, about 1.28 x (2.73/2).",
+       "evidence": "Late polls centre 49.3 with Datafolha at 50; market and older Atlas imply lower (~47-48) and 2022 polls overstated Lula by ~1 pp, so I shade the median to 49.0 and widen beyond the n=3 Datafolha error.",
+       "adversarial": "Centre on the seven-poll mean of Lula's valid share (~49.0) nudged down for the 2022 overstatement of Lula (+1.1 pp) and the first-round shortfall; width from a per-candidate sd ≈ 1.2 pp rather than the n=3 Datafolha 0.7, since AtlasIntel-style misses and herding are live.",
+       "anchor": "Polymarket specific-margin buckets imply Lula share q10 47.1 / q50 48.5 / q90 50.6; poll consensus 49.3 (sd 0.7 too narrow). Blend centred 48.9 with market-width tails; implies P(Lula>50) ~0.2, consistent with the win price.",
+       "outsider": "Poll average is 49.3% but polls overstated Lula in 2022 and the market's implied median is about 48.5, so I center near 48.9 with a spread of about 1.5 pp."
+      }
+     }
+    },
+    {
+     "id": "br-turnout-2022",
+     "label": "Runoff turnout beats 2022's 79.41%",
+     "text": "Turnout in the 25 Oct 2026 Brazilian presidential runoff is higher than the 79.41% of the 2022 runoff, per TSE.",
+     "criterion": "YES if the TSE runoff turnout (comparecimento, % of the electorate) at 100% totalised, or the latest TSE figure at 26 Oct 2026 12:00 CET, is greater than 79.41%. NO if it is 79.41% or lower, or if the runoff is postponed or TSE publishes no figure by the deadline.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE, resultados.tse.jus.br, from 21:00 CET on 25 Oct (17:00 BRT); full totalisation expected in the early hours of 26 Oct CET (2022: 04:18 CET)",
+     "cs": {
+      "label": "Účast ve druhém kole nad rokem 2022",
+      "text": "Volební účast ve druhém kole brazilských prezidentských voleb 25. října 2026 bude podle TSE vyšší než 79,41 % z druhého kola v roce 2022.",
+      "criterion": "ANO, pokud účast ve druhém kole (comparecimento, % voličů) podle TSE při 100 % sečtených okrsků, nebo podle posledního údaje TSE k 26. říjnu 2026 12:00 SEČ, přesáhne 79,41 %. NE, pokud bude 79,41 % či nižší, nebo pokud se hlasování odloží či TSE do termínu údaj nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-turnout-2022.md",
+     "probability": 0.22,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.15
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.3
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.15
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.26
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.25
+       }
+      ],
+      "combined": 0.215,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/brazil-presidential-election-second-round-turnout",
+       "p": 0.29,
+       "read_at": "2026-10-23T17:02:06Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/br-turnout-2022.md",
+      "spread": 0.15,
+      "rerun": false,
+      "notes": {
+       "base-rate": "In past runoffs turnout usually fell from the first round (2006, 2010, 2014 and 2018 all fell; only 2022 rose, by 0.36 pp). YES needs a rise of more than 0.49 pp from 78.92%. A polarised, tight race nudges this up from about 0.10.",
+       "evidence": "Needs a +0.49 pp rise from the record-low 78.92% first round; 2022's rise was only 0.36 pp. A tight polarised race helps, but market-derived ~0.29 and the arithmetic point to NO as more likely.",
+       "adversarial": "Needs a rise of >0.49 pp over the record-abstention first round (78.92%); runoff turnout fell versus the first round in 2010, 2014 and 2018 and rose only 0.36 in 2022, so 2022's own figure is near the ceiling. Only the presidential race plus six governor runoffs are on the ballot and the electorate includes more inactive registrants; a knife-edge race is the sole YES route.",
+       "anchor": "Anchor Polymarket-derived 0.288 (79.41 sits inside the 78-80% bucket, linear split). Needs +0.49 pp over the first round; 2022 rose only 0.36 pp and 2014/2018 runoffs fell, so slightly below the derived figure.",
+       "outsider": "Round-one turnout was 78.92%, so YES needs a rise of at least 0.5 pp; 2022 rose only 0.36 pp and earlier runoffs usually fell, though a polarised close race helps."
+      }
+     }
+    }
+   ],
+   "score": 100,
+   "rank": 1
+  },
+  {
+   "id": "serbia-election",
+   "scope": "europe",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 5
+   },
+   "event": "Serbia holds a snap parliamentary election on 25 October 2026 in which Vučić's SNS-led list faces a united Student List.",
+   "sources": [
+    {
+     "title": "Rio Times – final polls split before Sunday vote",
+     "url": "https://www.riotimesonline.com/serbia-final-polls-split-before-sunday-vote/"
+    },
+    {
+     "title": "ANSA – latest polls indicate an uncertain outcome",
+     "url": "https://ansa.it/nuova_europa/en/news/sections/news/2026/10/22/latest-polls-in-serbia-indicate-an-uncertain-outcome-for-students-and-vucic_707d7628-9b19-431c-bb4e-08b44d7d252b.html"
+    },
+    {
+     "title": "Vreme – electoral lists",
+     "url": "https://vreme.com/en/izbori-2026/izbori-2026-izborne-liste-rik/"
+    },
+    {
+     "title": "Rio Times – Serbia election poll tracker",
+     "url": "https://www.riotimesonline.com/serbia-election-poll-tracker/"
+    },
+    {
+     "title": "N1 – Vučić expects turnout of more than 4 million",
+     "url": "https://n1info.rs/english/news/vucic-expects-turnout-of-more-than-4-million-accuses-opponents-of-planning-election-fraud"
+    },
+    {
+     "title": "Novosti – RIK: 6,450,523 voters",
+     "url": "https://www.novosti.rs/drustvo/vesti/1658233/rik-ukupan-broja-biraca-srbiji-parlamentarne-izbore-6-450-523"
+    }
+   ],
+   "claims": [
+    {
+     "id": "rs-sns-45",
+     "label": "Vučić's list gets 45% or more",
+     "text": "In Serbia's 25 October parliamentary election, the \"Aleksandar Vučić – United Serbia\" list gets at least 45% in the Republic Electoral Commission's results.",
+     "criterion": "YES if the vote share that the Republic Electoral Commission (RIK) prints for the list \"Aleksandar Vučić – United Serbia\" is 45.00% or more in its most recent preliminary or final results published on rik.parlament.gov.rs or announced at a RIK session by 12:00 CET on 27 October 2026 (RIK's own percentage, which in past releases is of all voters who voted, invalid ballots included). No RIK results by then, or postponement of the election, resolves NO.",
+     "resolution_source": "https://www.rik.parlament.gov.rs/",
+     "resolves_by": "2026-10-27T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "RIK session / rik.parlament.gov.rs: in 2022 and 2023 preliminary results came the evening after the vote (~20:00–21:00 CET, i.e. 26 Oct); in 2016 on election night ~00:40",
+     "cs": {
+      "label": "Vučićova kandidátka získá nejméně 45 procent",
+      "text": "V nedělních parlamentních volbách v Srbsku získá kandidátka Aleksandar Vučić – Sjednocené Srbsko podle republikové volební komise nejméně 45 procent hlasů.",
+      "criterion": "ANO, pokud podíl, který republiková volební komise (RIK) uvede pro kandidátku Aleksandar Vučić – Sjednocené Srbsko v posledních předběžných nebo konečných výsledcích zveřejněných na rik.parlament.gov.rs nebo oznámených na zasedání RIK do 12:00 SEČ 27. října 2026, činí 45,00 procenta nebo víc (rozhoduje procento uvedené RIK, které se v minulosti počítalo ze všech voličů, kteří hlasovali, včetně neplatných hlasovacích lístků). Pokud RIK do té doby výsledky nezveřejní nebo budou volby odloženy, platí NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/rs-sns-45.md",
+     "probability": 0.42,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.43
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.43
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.38
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.46
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.42
+       }
+      ],
+      "combined": 0.424,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "SNS-led list ≥45% in parliamentary elections with sourced figures (2016, 2022, 2023)",
+       "rate": 0.67,
+       "n": 3,
+       "source": "Insajder 2016 RIK 48.25%; biznis.rs 2022 Ipsos 43.6%; N1 2023 RIK 46.71%"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/serbia-election-united-serbia-vote-share",
+       "p": 0.52,
+       "read_at": "2026-10-23T17:02:56Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/rs-sns-45.md",
+      "spread": 0.08,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Class rate 2/3 (2016, 2023 yes; 2022 no) is a poor fit with a united opposition; RIK's all-ballots basis needs ~46.3 on valid votes vs non-commissioned averages 44-45 (-0.5 logit), partly offset by SNS beating independent polls in 2023 (+0.3); slip/late-RIK risk ~2%.",
+       "evidence": "Market puts 45%+ at about 0.52, probably on valid votes. RIK's all-ballots basis needs about 46.3% of valid votes, which is above the non-commissioned poll average (44.3) and only reached by government-friendly pollsters. Independent polls understated SNS in 2023, which keeps this close; three searches found no newer polls.",
+       "adversarial": "RIK's all-ballots basis means the list needs ~46.3% of valid votes; only government-commissioned polls (Ipsos 47.4, Faktor 48.6) put it there, and at Vučić's own 4.1m turnout 45% would be a record ~1.85m votes for the list while a united opposition list caps the pool. Polymarket's 0.52 for ≥45 is on the wider valid-vote basis and worth ~0.42 in RIK terms; take ~0.04 for late or disputed RIK publication (2022/2023 came only Monday evening).",
+       "anchor": "Anchor: Polymarket normalised P(>=45%) 0.518. Moved down about 0.06 because RIK prints the share over all ballots, which runs about 1.3 pts below valid-vote shares (bucket density is about 0.08/pt, half-weighted since the market's basis is unverified), plus a small risk that RIK publishes late.",
+       "outsider": "Unaffiliated polling average ~44.3 and RIK's all-ballots basis shaves ~1 pt; SNS historically beats polls and the market (basis unchecked) sits near 0.5, so slightly below even."
+      }
+     }
+    },
+    {
+     "id": "rs-students-40",
+     "label": "Student List gets 40% or more",
+     "text": "In Serbia's 25 October parliamentary election, the Student List gets at least 40% in the Republic Electoral Commission's results.",
+     "criterion": "YES if the vote share that the Republic Electoral Commission (RIK) prints for the Student List (\"Student List – Students Are Winning\", list no. 3) is 40.00% or more in its most recent preliminary or final results published on rik.parlament.gov.rs or announced at a RIK session by 12:00 CET on 27 October 2026 (RIK's own percentage, which in past releases is of all voters who voted, invalid ballots included). No RIK results by then, or postponement of the election, resolves NO.",
+     "resolution_source": "https://www.rik.parlament.gov.rs/",
+     "resolves_by": "2026-10-27T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "RIK session / rik.parlament.gov.rs: in 2022 and 2023 preliminary results came the evening after the vote (~20:00–21:00 CET, i.e. 26 Oct); in 2016 on election night ~00:40",
+     "cs": {
+      "label": "Studentská kandidátka získá nejméně 40 procent",
+      "text": "V nedělních parlamentních volbách v Srbsku získá Studentská kandidátka podle republikové volební komise nejméně 40 procent hlasů.",
+      "criterion": "ANO, pokud podíl, který republiková volební komise (RIK) uvede pro Studentskou kandidátku (kandidátka č. 3, Studentská kandidátka – Studenti vítězí) v posledních předběžných nebo konečných výsledcích zveřejněných na rik.parlament.gov.rs nebo oznámených na zasedání RIK do 12:00 SEČ 27. října 2026, činí 40,00 procenta nebo víc (rozhoduje procento uvedené RIK, které se v minulosti počítalo ze všech voličů, kteří hlasovali, včetně neplatných hlasovacích lístků). Pokud RIK do té doby výsledky nezveřejní nebo budou volby odloženy, platí NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/rs-students-40.md",
+     "probability": 0.56,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.55
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.53
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.52
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.62
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.6
+       }
+      ],
+      "combined": 0.564,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/serbia-election-student-list-vote-share",
+       "p": 0.66,
+       "read_at": "2026-10-23T17:02:45Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/rs-students-40.md",
+      "spread": 0.1,
+      "rerun": false,
+      "notes": {
+       "base-rate": "No historical class (no opposition list ever near 40); start from poll average 42.5 valid, minus ~1 pt for RIK's all-ballots basis gives ~41.5 against a 40 bar with sd ~3-4 (~0.65), shaded down for Serbian opposition tending to underperform independent polls and late-RIK risk.",
+       "evidence": "Poll average and market median are about 42.5. RIK's basis takes about 1 point off, so the list needs about 41% of valid votes; the market's 0.66 drops to roughly 0.55 on that basis. Past understatement of SNS by independent polls trims it a little more.",
+       "adversarial": "Independent polls (NSPM 44.5, CRTA 44.9, Birodi 48.5) clear 40 but Serbian opposition lists have historically landed below independent polls, and the two government-linked polls sit at 40.0 and 37.1 before the ~1-point RIK denominator haircut and higher invalid ballots with 16 lists. Market ≥40 (0.66, valid-vote basis) shrinks to ~0.58 for ≥41 valid; minus publication/annulment risk.",
+       "anchor": "Anchor: Polymarket normalised P(>=40%) 0.659 (median about 42.7). Cut about 0.04 for RIK's all-ballots denominator (about 1 pt lower, half-weighted) and possibly higher invalid voting with 16 lists, plus a small publication-timing risk.",
+       "outsider": "Non-commissioned average 42.5 less ~1 pt for RIK basis gives ~41.5 with a wide sd (~4); market 0.66 but the list-versus-polls history is untested and pollsters diverge."
+      }
+     }
+    },
+    {
+     "id": "rs-turnout",
+     "label": "Turnout in Serbia's election",
+     "text": "Turnout in Serbia's 25 October parliamentary election, according to the Republic Electoral Commission, is … %.",
+     "criterion": "Turnout as a percentage of registered voters (voters who voted ÷ registered voters) stated by the Republic Electoral Commission (RIK) in its most recent preliminary or final results published on rik.parlament.gov.rs or announced at a RIK session by 12:00 CET on 27 October 2026; daytime interim turnout bulletins do not count.",
+     "resolution_source": "https://www.rik.parlament.gov.rs/",
+     "resolves_by": "2026-10-27T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "RIK session / rik.parlament.gov.rs, with preliminary results (night of 25/26 Oct or evening of 26 Oct CET)",
+     "cs": {
+      "label": "Volební účast v Srbsku",
+      "text": "Volební účast v nedělních parlamentních volbách v Srbsku podle republikové volební komise činí … procent.",
+      "criterion": "Účast jako podíl zapsaných voličů (počet voličů, kteří hlasovali, děleno počtem zapsaných voličů), jak ji republiková volební komise (RIK) uvede v posledních předběžných nebo konečných výsledcích zveřejněných na rik.parlament.gov.rs nebo oznámených na zasedání RIK do 12:00 SEČ 27. října 2026; průběžné údaje o účasti během volebního dne se nepočítají."
+     },
+     "dossier": "data/dossiers/2026-10-26/rs-turnout.md",
+     "kind": "interval",
+     "quantity": "Turnout, % of registered voters, RIK",
+     "unit": "%",
+     "quantiles": {
+      "q10": 58.3,
+      "q50": 63,
+      "q90": 67.76
+     },
+     "scale": 4.0,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "q10": 57,
+        "q50": 61.5,
+        "q90": 66.5
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "q10": 58.5,
+        "q50": 63.5,
+        "q90": 68.5
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "q10": 57,
+        "q50": 62,
+        "q90": 66.5
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "q10": 59.5,
+        "q50": 64,
+        "q90": 68.8
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "q10": 59.5,
+        "q50": 64,
+        "q90": 68.5
+       }
+      ],
+      "consensus": {
+       "value": 65.0,
+       "source": "Polymarket turnout buckets read 2026-10-23T17:02Z, normalised median ≈64.75, Normal fit mean ≈65.1 (https://polymarket.com/event/serbia-parliamentary-election-turnout); Vučić's 4.1m voters ÷ 6,450,523 registered ≈63.6%; 2023: 58.77%"
+      },
+      "scale_source": "No record of Serbian turnout-expectation errors found; sd ≈4.1 pp derived from a Normal fit to the Polymarket bucket distribution (CDF 0.22 at 62%, 0.88 at 70%)",
+      "dossier": "data/dossiers/2026-10-26/rs-turnout.md",
+      "notes": {
+       "base-rate": "Reference class: 58.77 (2023), about 58.5 (2022), 56 (2016), 53 (2014) and 48.9 (2020). Anything above 60 would be a two-decade high. Shifted up for a highly mobilised contest (Vučić expects about 63.6, polls say turnout is rising, the market median is about 65), but held below the market because the voter roll may be inflated.",
+       "evidence": "Reporting (ANSA: all polls show rising turnout, above 60%; Vučić expects ~4.1m = 63.6%) and market median ~65 point up from 58.8 in 2023; I shade below the market for an inflated roll and the low recent baseline.",
+       "adversarial": "Last two parliamentary elections 58.5–58.8%, and no Serbian parliamentary vote since 2008 (61.3%) exceeded 62; the Polymarket median of ~65 looks like opposition optimism, and a padded roll (Rašuo) depresses measured turnout. Mobilisation and Vučić's own 4.1m (63.6%) justify a centre above the comparables but below the market.",
+       "anchor": "Anchor Polymarket-implied median ~64.8, Normal fit mean 65.1 sd 4.1. Shaded down ~1 pp for the 58.8% 2023 base, a possibly inflated roll and opposition-optimism in the market; Vucic's 4.1m implies 63.6.",
+       "outsider": "The market median is about 65% and Vucic implies about 63.6%, but the last two parliamentary votes were about 58.5-58.8% and a disputed inflated voter roll pulls measured turnout down, so I center slightly below the market with a wide spread."
+      }
+     }
+    }
+   ],
+   "score": 60,
+   "rank": 2
+  },
+  {
+   "id": "slovakia-bratislava",
+   "scope": "europe",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 4
+   },
+   "event": "Slovakia holds joint municipal and regional elections on 24 October, with incumbent Bratislava mayor Matúš Vallo facing Transport Minister Jozef Ráž (Smer-linked) in a single-round race.",
+   "sources": [
+    {
+     "title": "Zoznam.sk: last poll before the election, Vallo leads Ráž by a few points",
+     "url": "https://bratislava.zoznam.sk/posledny-prieskum-pred-volbami-v-bratislave-vallo-vedie-pred-razom-uz-iba-o-par-percent/"
+    },
+    {
+     "title": "Noviny.sk: Šubová ready to withdraw in Vallo's favour, with a condition",
+     "url": "https://www.noviny.sk/slovensko/1275833-subova-je-ochotna-vzdat-sa-kandidatury-na-primatorku-v-prospech-valla-ma-podmienku"
+    },
+    {
+     "title": "Polymarket: Bratislava mayoral election winner",
+     "url": "https://polymarket.com/event/bratislava-mayoral-election-winner-2026"
+    },
+    {
+     "title": "Denník N: AKO poll, Vallo vs Ráž",
+     "url": "https://dennikn.sk/minuta/5637032"
+    },
+    {
+     "title": "JOJ 24: Vallo or Ráž? Tight race",
+     "url": "https://joj24.noviny.sk/prieskumy/1274954-vallo-alebo-raz-prieskum-joj-24-ukazal-tesny-suboj-o-bratislavu"
+    }
+   ],
+   "claims": [
+    {
+     "id": "sk-vallo",
+     "label": "Vallo re-elected Bratislava mayor",
+     "text": "Matúš Vallo is re-elected mayor of Bratislava in the 24 October municipal election, according to the Slovak Statistical Office results published by 18:00 CET on 25 October.",
+     "criterion": "YES if the Statistical Office of the Slovak Republic results (volby.statistics.sk), as published by 25 Oct 2026 18:00 CET, show Matúš Vallo with the most valid votes of all candidates for mayor of Bratislava. NO if another candidate has more votes, or if the election in Bratislava is postponed or no Bratislava mayoral result is published by the deadline.",
+     "resolution_source": "https://volby.statistics.sk/",
+     "resolves_by": "2026-10-25T18:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "ŠÚ SR, volby.statistics.sk, results overnight 24–25 Oct after polls close at 20:00 CEST on 24 Oct (clocks go back to CET at 03:00 on 25 Oct)",
+     "cs": {
+      "label": "Vallo obhájí post primátora Bratislavy",
+      "text": "Matúš Vallo obhájí v komunálních volbách 24. října post primátora Bratislavy podle výsledků Statistického úřadu SR zveřejněných do 25. října 18:00 SEČ.",
+      "criterion": "ANO, pokud výsledky Statistického úřadu SR (volby.statistics.sk) zveřejněné do 25. 10. 2026 18:00 SEČ ukážou, že Matúš Vallo získal ze všech kandidátů na primátora Bratislavy nejvíce platných hlasů. NE, pokud víc hlasů dostal jiný kandidát nebo pokud jsou volby v Bratislavě odloženy či výsledek do termínu nezveřejněn."
+     },
+     "dossier": "data/dossiers/2026-10-26/sk-vallo.md",
+     "probability": 0.86,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.86
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.85
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.82
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.88
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.87
+       }
+      ],
+      "combined": 0.857,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "final-poll leader wins (national elections, poll-error.json)",
+       "rate": 0.833,
+       "n": 6,
+       "source": "pipeline/reference-data/poll-error.json"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/bratislava-mayoral-election-winner-2026",
+       "p": 0.9075,
+       "read_at": "2026-10-23T17:03:02Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/sk-vallo.md",
+      "spread": 0.06,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Final-poll-leader class 5/6 and a 7-pt lead with realistic local sd ~6 give ~0.88; incumbent with 60% in 2022; market 0.91; slight discount for the single 19-day-old n=500 poll.",
+       "evidence": "An incumbent who won 60% in 2022, in a strongly anti-Smer capital; the only poll (AKO, early Oct) has him 7 points ahead and Polymarket has 0.91. The poll is a single n=500 one, 19 days old, and Šubová is splitting the vote, so I shade below the market. No newer poll found.",
+       "adversarial": "A single n=500 AKO poll 19 days old with a 7-point lead and 18% undecided is the whole evidence base; Ráž has a ministry and the governing coalition's machine in a 37%-turnout race, and an overlapping-interval poll can miss by more than 7. Bratislava's anti-Smer profile, Vallo's 60% in 2022 (polls then under-stated him), a possible Šubová withdrawal in his favour and a generous publication deadline keep this a clear but not safe favourite; Polymarket's 0.91 on thin volume looks a touch rich.",
+       "anchor": "Anchor: Polymarket 0.908. The lead model with a single n=500 poll lead of 7 and a realistic sd of 6.5 gives 0.86. Blended toward the market.",
+       "outsider": "Market 0.91 and a 7-pt poll lead, but single old n=500 poll with 18% undecided and a minister-backed rival; discount for local-poll noise."
+      }
+     }
+    },
+    {
+     "id": "sk-vallo-10",
+     "label": "Vallo beats Ráž by over 10 points",
+     "text": "Matúš Vallo beats Jozef Ráž by more than 10 percentage points in the Bratislava mayoral election, according to the Slovak Statistical Office results published by 18:00 CET on 25 October.",
+     "criterion": "YES if the ŠÚ SR results (volby.statistics.sk), as published by 25 Oct 2026 18:00 CET, show Matúš Vallo's share of valid votes for mayor of Bratislava exceeding Jozef Ráž's share by more than 10.0 percentage points. NO if the gap is 10.0 points or less, if anyone beats Vallo, or if the election is postponed or no Bratislava result is published by the deadline.",
+     "resolution_source": "https://volby.statistics.sk/",
+     "resolves_by": "2026-10-25T18:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "ŠÚ SR, volby.statistics.sk, results overnight 24–25 Oct after polls close at 20:00 CEST on 24 Oct",
+     "cs": {
+      "label": "Vallo porazí Ráže o víc než 10 bodů",
+      "text": "Matúš Vallo porazí ve volbě primátora Bratislavy Jozefa Ráže o více než 10 procentních bodů podle výsledků Statistického úřadu SR zveřejněných do 25. října 18:00 SEČ.",
+      "criterion": "ANO, pokud výsledky Statistického úřadu SR (volby.statistics.sk) zveřejněné do 25. 10. 2026 18:00 SEČ ukážou, že podíl platných hlasů Matúše Valla ve volbě primátora Bratislavy převyšuje podíl Jozefa Ráže o více než 10,0 procentního bodu. NE, pokud je rozdíl 10,0 bodu nebo menší, pokud Valla někdo porazí, nebo pokud jsou volby odloženy či výsledek do termínu nezveřejněn."
+     },
+     "dossier": "data/dossiers/2026-10-26/sk-vallo-10.md",
+     "probability": 0.35,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.35
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.4
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.3
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.37
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.33
+       }
+      ],
+      "combined": 0.349,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "poll-lead model, lead 7.0 vs threshold 10, pooled rms lead error 2.734 (models.mjs lead -3 2.734 = 0.136; understates spread for one local n=500 poll)",
+       "rate": 0.136,
+       "n": 6,
+       "source": "pipeline/reference-data/poll-error.json"
+      },
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/sk-vallo-10.md",
+      "spread": 0.1,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Lead 7 vs threshold 10 with local error sd ~6 gives ~0.31; market-implied winner odds (0.91) suggest a mean lead nearer 8, nudging up to ~0.35.",
+       "evidence": "The market's 0.91 win price with a lead error sd of about 7 implies a mean lead of about 8 points, so a gap of more than 10 is less likely than not. Bratislava's anti-Smer lean and the incumbent's 2022 margin give real upside above the 7-point poll lead.",
+       "adversarial": "The only poll gives a 7-point gap among decided voters, three short of the bar, and the national lead-error model gives 0.14; a realistic local-poll error sd of ~5 plus Vallo's history of outrunning polls (2022) and undecideds breaking to a well-known incumbent raise it, but a gap of exactly 10.00 or any Ráž late surge resolves NO.",
+       "anchor": "No margin market. The lead model (7 - 10 = -3, sd 6.5) gives 0.32. The winner market at 0.91 implies a mean lead of about 8-9 pts at that sd, which gives about 0.42. Blended at 0.37; the minor candidates trim both top shares only slightly.",
+       "outsider": "Poll lead 7 among decided and extra minor candidates shrink the top-two gap slightly; market-implied win prob suggests mean lead ~8 with sd ~6, so >10 is about a third."
+      }
+     }
+    }
+   ],
+   "score": 48,
+   "rank": 3
+  },
+  {
+   "id": "iran-talks",
+   "scope": "world",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "event": "Iran has yet to answer on record the Qatari–Pakistani proposal for resuming talks with the United States that Pakistan's army chief carried to Tehran on 20 October.",
+   "sources": [
+    {
+     "title": "The New Arab: Mediators submit new peace proposal to Iran, US",
+     "url": "https://www.newarab.com/news/exclusive-mediators-submit-new-peace-proposal-iran-us"
+    },
+    {
+     "title": "Reuters via Investing.com: Iran prolongs talks before the midterms",
+     "url": "https://www.investing.com/news/commodities-news/iran-prolongs-talks-in-stalemate-to-influence-us-midterms-officials-say-4959490"
+    },
+    {
+     "title": "Iran International: Qatari delegation arrives in Tehran",
+     "url": "https://www.iranintl.com/en/202610202272"
+    }
+   ],
+   "claims": [
+    {
+     "id": "ir-response",
+     "label": "Iran says its answer was delivered",
+     "text": "By 23:59 CET on 25 October, the Iranian government states on record that it has delivered its response to the Qatar–Pakistan mediation proposal.",
+     "criterion": "YES if by 25 Oct 2026 23:59 CET the Iranian foreign ministry or its spokesman, the foreign minister, the President (or his office/spokesperson) or the Supreme National Security Council states on record that Iran's response to the Qatar–Pakistan proposal delivered by Pakistan's army chief on 20 Oct has been delivered to the mediators. Anonymous reports, statements that Iran is reviewing or will respond, and statements by mediators or the US alone do not count.",
+     "resolution_source": "https://en.mfa.ir/",
+     "resolves_by": "2026-10-25T23:59:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "No scheduled slot; Iranian MFA website/state media (IRNA) whenever a statement is made; the spokesman's weekly briefing is Monday 26 Oct, after the deadline",
+     "cs": {
+      "label": "Írán oznámí, že předal odpověď",
+      "text": "Íránská vláda do 25. října 23:59 SEČ oficiálně uvede, že předala odpověď na katarsko-pákistánský zprostředkovatelský návrh.",
+      "criterion": "ANO, pokud do 25. 10. 2026 23:59 SEČ íránské ministerstvo zahraničí nebo jeho mluvčí, ministr zahraničí, prezident (či jeho úřad nebo mluvčí) nebo Nejvyšší rada národní bezpečnosti oficiálně uvede, že íránská odpověď na katarsko-pákistánský návrh, který 20. října přivezl náčelník pákistánské armády, byla předána prostředníkům. Anonymní zprávy, prohlášení, že Írán návrh posuzuje nebo odpoví, a samotná prohlášení prostředníků či USA se nepočítají."
+     },
+     "dossier": "data/dossiers/2026-10-26/ir-response.md",
+     "probability": 0.1,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.09
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.11
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.12
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.08
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.1
+       }
+      ],
+      "combined": 0.099,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "Iranian on-record confirmation of a delivered reply in a given two-day window (edition 2026-10-25 internal estimate)",
+       "rate": 0.1,
+       "n": 0,
+       "source": "data/editions/2026-10-25.json (iran-talks rationale)"
+      },
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/ir-response.md",
+      "spread": 0.04,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Internal base ~0.1 per two-day window; Iran reported to be deliberately slowing talks and next weekly briefing falls after deadline: -0.1 log-odds.",
+       "evidence": "No new Iranian statement found (search 23 Oct); Reuters-sourced officials say Tehran is slowing talks until after the 3 Nov midterms, and the Monday briefing falls after the deadline. Iran has confirmed conveying positions via Qatar on record before (Xinhua, 4 Oct), so a passing remark remains possible.",
+       "adversarial": "Tehran is openly slowing the track, the next Baghaei briefing is Monday 26 Oct (after deadline), and the criterion needs an on-record 'delivered' statement rather than the usual 'messages continue to be exchanged'; the only YES route is a passing Araghchi/Baghaei remark to state media over the weekend, worth ~0.1 for a two-day window.",
+       "anchor": "Anchor is the prior edition's ~0.09 for a two-day window; no market. Reuters reports Tehran deliberately slowing talks until after US midterms and no on-record reply by 23 Oct, so slightly below.",
+       "outsider": "Iran is reported to be deliberately stalling until the US midterms and says no talks until conditions are met; an on-record statement that a reply was delivered within three days is unlikely, though a passing spokesman remark could count."
+      }
+     }
+    }
+   ],
+   "score": 48,
+   "rank": 4
+  },
+  {
+   "id": "bulgaria-election",
+   "scope": "europe",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 5
+   },
+   "event": "Bulgaria holds the first round of its presidential election on 25 Oct 2026, with incumbent Iliana Iotova favoured to face Andrey Gyurov in a 1 Nov runoff.",
+   "sources": [
+    {
+     "title": "BTA – Gallup International Balkan poll, 14–22 Oct",
+     "url": "https://www.bta.bg/en/news/bulgaria/1231172-iotova-and-valchev-lead-in-presidential-election-with-43-2-support-gallup-poll"
+    },
+    {
+     "title": "Sofia Globe – Alpha Research poll",
+     "url": "https://sofiaglobe.com/2026/10/05/bulgarias-2026-presidential-elections-yotova-44-5-gyurov-26-1-alpha-research-poll/"
+    },
+    {
+     "title": "BTA – Trend poll",
+     "url": "https://www.bta.bg/en/news/bulgaria/1218353-trend-poll-iotova-valchev-presidential-ticket-leads-with-47-8-gurov-kandev-at"
+    },
+    {
+     "title": "Wikipedia – 2026 Bulgarian presidential election",
+     "url": "https://en.wikipedia.org/wiki/2026_Bulgarian_presidential_election"
+    },
+    {
+     "title": "Wikipedia – 2021 Bulgarian general election",
+     "url": "https://en.wikipedia.org/wiki/2021_Bulgarian_general_election"
+    }
+   ],
+   "claims": [
+    {
+     "id": "bg-iotova-45",
+     "label": "Iotova above 45% in round one",
+     "text": "Iliana Iotova receives more than 45.0% of valid votes in the first round of Bulgaria's presidential election on 25 Oct 2026, per CIK preliminary results.",
+     "criterion": "YES if the latest CIK (results.cik.bg / cik.bg) preliminary or final first-round result published by 26 Oct 2026 12:00 CET shows the Iotova–Valchev ticket at more than 45.00% of valid votes, valid votes being as CIK counts them (all candidate pairs plus the \"I do not support anyone\" option, as in 2016 and 2021). If CIK shows a percentage, that figure decides; otherwise Iotova's votes divided by that valid-vote total. NO if 45.00% or less, if the vote is postponed, or if CIK has published no result by the deadline.",
+     "resolution_source": "https://results.cik.bg/",
+     "resolves_by": "2026-10-26T12:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "CIK preliminary results on results.cik.bg from about 19:00 CET on 25 Oct (polls close 20:00 EET), updated overnight by share of processed protocols; near-complete count customarily by the morning of 26 Oct CET",
+     "cs": {
+      "label": "Iotova nad 45 % v prvním kole",
+      "text": "Iliana Iotova získá v prvním kole bulharské prezidentské volby 25. října 2026 podle předběžných výsledků Ústřední volební komise (CIK) více než 45,0 % platných hlasů.",
+      "criterion": "ANO, pokud poslední předběžný nebo konečný výsledek prvního kola zveřejněný CIK (results.cik.bg / cik.bg) do 26. října 2026 12:00 SEČ ukáže dvojici Iotova–Valčev nad 45,00 % platných hlasů, přičemž platné hlasy se počítají jako u CIK (všechny kandidátské dvojice plus možnost „Nepodporuji nikoho“, jako v letech 2016 a 2021). Rozhoduje procento uvedené CIK, jinak podíl hlasů Iliany Iotova na tomto součtu platných hlasů. NE při 45,00 % nebo méně, při odkladu voleb nebo pokud CIK do termínu žádný výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/bg-iotova-45.md",
+     "probability": 0.46,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.5
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.47
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.4
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.47
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.45
+       }
+      ],
+      "combined": 0.458,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/bg-iotova-45.md",
+      "spread": 0.1,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Poll mean 45.2 sits on the line; 2021 polls understated the leader by 2.2 pp (+), but CIK counts NOTA (2-6% historically) inside valid votes and the freshest Gallup has 43.2 (-); net roughly a coin flip.",
+       "evidence": "The freshest poll (Gallup, 14-22 Oct) has 43.2 with 2.2 undecided. Counting NOTA in CIK's valid base (2-5% before) lowers her share, while 2021 polls understated the leader by 2.2 pp and a low turnout helps her party machine. Net centre is about 44.5-45, a coin flip leaning NO.",
+       "adversarial": "The freshest poll (Gallup 14–22 Oct) has her at 43.2 with Gyurov and Kostadinov both rising since Trend's 47.8 three weeks earlier, and CIK's base includes NOTA (2.3–5.6% in 2016/2021) plus a 27-ticket field that shaves the leader. The main YES route is the 2021 pattern of polls under-stating the Radev–Iotova ticket by ~2 pp and late protocols from Sofia/abroad holding her partial figure up at noon; it is close to a coin flip tilted NO.",
+       "anchor": "Model: centre about 44.8% on CIK's valid basis, sd 3 (lead 0.2/3 gives 0.53 before a small shade). The poll mean of 45.2 is pulled down by the NOTA option in CIK's base and by Gallup (the freshest poll) at 43.2, and pushed up by the 2021 understatement of the leader (+2.2). Net slightly below a coin flip.",
+       "outsider": "Poll mean 45.2 but freshest Gallup 43.2 (~44.4 ex-undecided) and NOTA in the CIK base shaves shares; offset by 2021 under-statement of the leader by ~2 pts. Near coin flip, slightly below."
+      }
+     }
+    },
+    {
+     "id": "bg-turnout-40",
+     "label": "Bulgarian turnout at least 40%",
+     "text": "Turnout in the first round of Bulgaria's presidential election on 25 Oct 2026 is at least 40.0%, per the CIK.",
+     "criterion": "YES if the voter turnout figure in the latest CIK (results.cik.bg / cik.bg) preliminary or final first-round result published by 26 Oct 2026 12:00 CET is 40.0% or higher (as CIK publishes it, to two decimals: 39.99 is NO). Election-day hourly turnout bulletins do not count; the figure from the processed protocols does. If CIK gives no percentage, voters who voted divided by voters on the lists, both as CIK publishes them. NO if below 40.0%, if the vote is postponed, or if CIK has published no turnout by the deadline.",
+     "resolution_source": "https://results.cik.bg/",
+     "resolves_by": "2026-10-26T12:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "CIK preliminary results on results.cik.bg from about 19:00 CET on 25 Oct (polls close 20:00 EET), updated overnight by share of processed protocols; near-complete count customarily by the morning of 26 Oct CET",
+     "cs": {
+      "label": "Účast v Bulharsku nejméně 40 %",
+      "text": "Volební účast v prvním kole bulharské prezidentské volby 25. října 2026 dosáhne podle Ústřední volební komise (CIK) nejméně 40,0 %.",
+      "criterion": "ANO, pokud údaj o volební účasti v posledním předběžném nebo konečném výsledku prvního kola zveřejněném CIK (results.cik.bg / cik.bg) do 26. října 2026 12:00 SEČ činí 40,0 % nebo více (jak jej CIK uvádí, na dvě desetinná místa: 39,99 je NE). Průběžné údaje o účasti během volebního dne se nepočítají, rozhoduje údaj ze zpracovaných protokolů. Pokud CIK procento neuvede, počet voličů, kteří hlasovali, dělený počtem voličů v seznamech, obojí podle CIK. NE při účasti pod 40,0 %, při odkladu voleb nebo pokud CIK do termínu účast nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/bg-turnout-40.md",
+     "probability": 0.32,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.3
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.3
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.35
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.32
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.35
+       }
+      ],
+      "combined": 0.324,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/bg-turnout-40.md",
+      "spread": 0.05,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Reference: 2021 first round 40.27% was boosted by a concurrent parliamentary vote; presidential-only rounds run lower (2021 runoff 34.6%), and pollster expectations (37-39%) sit below 40 on a CIK register inflated by abroad/outdated entries.",
+       "evidence": "Pollsters expect 37-39% (Gallup about 2.6m, about 39%). 2021 reached only 40.27% with a concurrent parliamentary vote, and this is a presidential-only vote in a campaign described as dull. CIK's denominator includes the abroad and outdated lists, which pushes the figure down.",
+       "adversarial": "Every Bulgarian presidential first round so far was held alongside another vote (2021 with parliament: 40.27%); a stand-alone round with a dull campaign and a foregone first-place result has no precedent above 40, and pollsters expect 37–39% (Gallup ~2.6m ≈ 39% of a bloated 6.6m register). A partial-count turnout figure at the deadline and any register clean-up are the YES routes; 39.99 resolves NO.",
+       "anchor": "Model: centre about 38.5%, sd 3, threshold 40 (lead -1.5/3 gives 0.31). Gallup about 39% and Alpha 37-40%. Unlike 2021 (40.27%, held with a parliamentary election), there is no concurrent vote, and CIK's lists include voters abroad, which inflates the denominator.",
+       "outsider": "Pollster expectations 37-40% (Gallup ~39%), polls tend to overstate turnout, no concurrent vote and a dull, one-sided race; 2021 reached 40.27 only with a parliamentary ballot."
+      }
+     }
+    },
+    {
+     "id": "bg-kostadinov-10",
+     "label": "Kostadinov at least 10% in round one",
+     "text": "Kostadin Kostadinov receives at least 10.0% of valid votes in the first round of Bulgaria's presidential election on 25 Oct 2026, per CIK preliminary results.",
+     "criterion": "YES if the latest CIK (results.cik.bg / cik.bg) preliminary or final first-round result published by 26 Oct 2026 12:00 CET shows the Kostadinov–Volgin ticket at 10.00% of valid votes or more, valid votes being as CIK counts them (all candidate pairs plus the \"I do not support anyone\" option). If CIK shows a percentage, that figure decides; otherwise his votes divided by that valid-vote total. NO if below 10.00%, if the vote is postponed, or if CIK has published no result by the deadline.",
+     "resolution_source": "https://results.cik.bg/",
+     "resolves_by": "2026-10-26T12:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "CIK preliminary results on results.cik.bg from about 19:00 CET on 25 Oct (polls close 20:00 EET), updated overnight by share of processed protocols; near-complete count customarily by the morning of 26 Oct CET",
+     "cs": {
+      "label": "Kostadinov nejméně 10 % v prvním kole",
+      "text": "Kostadin Kostadinov získá v prvním kole bulharské prezidentské volby 25. října 2026 podle předběžných výsledků Ústřední volební komise (CIK) nejméně 10,0 % platných hlasů.",
+      "criterion": "ANO, pokud poslední předběžný nebo konečný výsledek prvního kola zveřejněný CIK (results.cik.bg / cik.bg) do 26. října 2026 12:00 SEČ ukáže dvojici Kostadinov–Volgin na 10,00 % platných hlasů nebo výše, přičemž platné hlasy se počítají jako u CIK (všechny kandidátské dvojice plus možnost „Nepodporuji nikoho“). Rozhoduje procento uvedené CIK, jinak podíl jeho hlasů na tomto součtu platných hlasů. NE při méně než 10,00 %, při odkladu voleb nebo pokud CIK do termínu žádný výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/bg-kostadinov-10.md",
+     "probability": 0.53,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.55
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.57
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.5
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.58
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.47
+       }
+      ],
+      "combined": 0.534,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/bg-kostadinov-10.md",
+      "spread": 0.11,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Polls 9.7-12.4 (mean 10.9, freshest 12.4) vs party base 4.2% in April and 3.9% in 2021; NOTA in CIK base trims ~0.3 pt, pooled sd 2.6 gives ~0.6, shaded down for the gap to his party's vote.",
+       "evidence": "Polls are 9.7-12.4 (mean 10.9) and rising in the freshest Gallup poll; Polymarket has him third at 0.925. The NOTA base trims about 0.2-0.3 pp, and the gap to his party's 4.2% in April is the main downside risk.",
+       "adversarial": "Polls average 10.9 (Gallup 12.4 freshest) but his party took only 4.2% six months ago, protest-candidate shares in low-turnout rounds often fall short of likely-voter polls, and NOTA in the CIK base trims every share; the cushion above 10.00 is under one poll sd. Small nationalist candidates have been under-stated by Bulgarian polls before, which keeps this near even.",
+       "anchor": "Model: centre about 10.6% (poll mean 10.9, scaled for NOTA in the CIK base; Gallup, the freshest poll, at 12.4), sd 2.5, gives about 0.59. Shaded slightly because his party took only 4.2% in April 2026.",
+       "outsider": "Polls 9.7-12.4 (mean 10.9) but his party got 4.2% in April and NOTA/27-ticket field dilutes; roughly centred on the line."
+      }
+     }
+    }
+   ],
+   "score": 45,
+   "rank": 5
+  },
+  {
+   "id": "cz-polls",
+   "scope": "cz",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event": "Two months after its last model (30 Aug, ANO 30.5 %), and after municipal and Senate elections, ČT may publish the first post-election Kantar voting model.",
+   "sources": [
+    {
+     "title": "ČT24: téma Kantar CZ",
+     "url": "https://ct24.ceskatelevize.cz/tema/kantar-cz-6351"
+    },
+    {
+     "title": "STEM: Volební tendence, začátek října 2026",
+     "url": "https://www.stem.cz/volebni-tendence-ceske-verejnosti-zacatek-rijna-2026/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-kantar-model-published",
+     "label": "ČT publishes Kantar voting model Sunday",
+     "text": "By 23:59 on 25 October 2026, Czech Television publishes a new Kantar CZ voting model for a Chamber of Deputies election.",
+     "criterion": "YES if, between 23 Oct 2026 and 23:59 CET on 25 Oct 2026, ČT (ČT24 website or broadcast) publishes a Kantar CZ party voting model (party shares for a hypothetical Chamber election) whose fieldwork is later than the model published on 30 Aug 2026. Polls on other questions do not count. No such publication by the deadline resolves NO.",
+     "resolution_source": "https://ct24.ceskatelevize.cz/tema/kantar-cz-6351",
+     "resolves_by": "2026-10-25T23:59:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "ČT24 website and Události (19:00) / Otázky slot; Kantar models in 2026 have come out on Sundays (Feb, Apr, May, Jun, Aug)",
+     "cs": {
+      "label": "ČT zveřejní v neděli model Kantaru",
+      "text": "Česká televize do 23:59 25. října 2026 zveřejní nový volební model agentury Kantar CZ pro volby do Poslanecké sněmovny.",
+      "criterion": "ANO, pokud ČT (web ČT24 nebo vysílání) mezi 23. a 25. říjnem 2026 do 23:59 SEČ zveřejní volební model Kantar CZ (stranické podíly pro hypotetické sněmovní volby) s terénním šetřením po modelu z 30. srpna 2026. Průzkumy k jiným otázkám se nepočítají. Bez zveřejnění do termínu NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-kantar-model-published.md",
+     "probability": 0.2,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.17
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.2
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.28
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.2
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.17
+       }
+      ],
+      "combined": 0.201,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "Sunday on which ČT published a Kantar voting model, 2026 (Kantar models 8 Feb, 11 Apr, 10 May, 14 Jun, 30 Aug among about 42 weekends to 18 Oct)",
+       "rate": 0.12,
+       "n": 42,
+       "source": "https://ct24.ceskatelevize.cz/tema/kantar-cz-6351"
+      },
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-kantar-model-published.md",
+      "spread": 0.11,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Base 5 models over ~42 weekends (0.12/weekend); 8-week gap and post-election timing raise hazard modestly (+0.4 log-odds), but no announcement and Saturday/Sunday slot only.",
+       "evidence": "The base rate is ~0.12 per weekend. The 8-week gap and the post-election period raise the hazard, and the window covers Fri to Sun. There is no announcement, and ČT gave no model in Sept or Oct.",
+       "adversarial": "Base rate ~0.12 per weekend, but the model is 8 weeks overdue and STEM/NMS already have October numbers, so the hazard this Sunday is elevated; routes to NO are a release on 1 Nov instead, a Kantar poll on another topic (28 Oct, Babiš), or ČT holding the model for an Události special later in the week.",
+       "anchor": "Base rate ~0.12 per weekend from 5 ČT Kantar models in 2026; raised because the gap is now 8 weeks and the post-municipal-election period makes an October model due, and Friday/Saturday also count.",
+       "outsider": "Base rate about 0.12 per weekend, raised a bit because the gap since the last model is 8 weeks and the election period has ended, but nothing is announced and the window has only one Saturday and Sunday."
+      }
+     }
+    }
+   ],
+   "score": 36,
+   "rank": 6
+  },
+  {
+   "id": "cz-babis-algeria",
+   "scope": "cz",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event": "Babiš and Industry Minister Havlíček fly to Algeria on Monday morning for a two-day visit focused on gas, trade and defence industry, meeting President Tebboune and PM Ghrieb.",
+   "sources": [
+    {
+     "title": "Respekt/ČTK 22 Oct: Babiš s Havlíčkem míří na sever Afriky",
+     "url": "https://www.respekt.cz/informacni-servis/babis-s-havlickem-miri-na-sever-afriky-v-alzirsku-budou-dva-dny-2026-10-22-15-53"
+    },
+    {
+     "title": "Neovlivní 23 Oct: Premiér jede do Alžírska pro plyn",
+     "url": "https://neovlivni.cz/premier-jede-do-alzirska-pro-plyn-potrebuje-ho-i-agrofert/"
+    },
+    {
+     "title": "Seznam Zprávy: ČEZ prodloužil smlouvu na dodávky plynu s Alžírskem",
+     "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-cez-prodlouzil-smlouvu-na-dodavky-plynu-s-alzirskem-289326?noredirect=1"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-babis-algeria-arrival-noon",
+     "label": "Babiš in Algiers by Monday noon",
+     "text": "By 12:00 on 26 October 2026, Prime Minister Andrej Babiš has arrived in Algeria for his official visit, as reported by the Government Office or ČTK.",
+     "criterion": "YES if a Government Office (vlada.gov.cz, its or Babiš's social accounts) or ČTK report time-stamped no later than 12:00 CET on 26 Oct 2026 states that Babiš has landed or is in Algeria for the 26–27 Oct visit. A report issued later that dates his arrival before 12:00 also counts if it gives the arrival time. Cancellation, postponement or arrival after 12:00 resolves NO.",
+     "resolution_source": "https://vlada.gov.cz/cz/media-centrum/aktualne/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "summit-or-visit",
+     "publishes": "Government Office press releases / Babiš social media and ČTK wire on Monday morning 26 Oct",
+     "cs": {
+      "label": "Babiš bude v Alžírsku do pondělního poledne",
+      "text": "Premiér Andrej Babiš do 12:00 26. října 2026 přiletí na oficiální návštěvu Alžírska, podle Úřadu vlády nebo ČTK.",
+      "criterion": "ANO, pokud zpráva Úřadu vlády (vlada.gov.cz, jeho nebo Babišovy sociální sítě) nebo ČTK s časem nejpozději 12:00 SEČ 26. října 2026 uvede, že Babiš přistál nebo je v Alžírsku kvůli návštěvě 26.–27. října. Počítá se i pozdější zpráva, která uvede čas příletu před 12:00. Zrušení, odklad nebo přílet po 12:00 znamená NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-babis-algeria-arrival-noon.md",
+     "probability": 0.48,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.47
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.45
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.45
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.52
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.5
+       }
+      ],
+      "combined": 0.478,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-babis-algeria-arrival-noon.md",
+      "spread": 0.07,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Slip 0.08; Monday-morning departure, ~2h45 flight and a full day-1 programme (Tebboune, PM, business forum) make pre-noon landing slightly more likely than not (~0.6), discounted for the time-stamped-report requirement.",
+       "evidence": "ČTK says the delegation departs Monday morning, and the flight takes ~3h with no time difference. With Tebboune meetings and the forum on day 1, a late-morning landing is likely but borderline. A timestamped report is required and there is 0.08 slip risk.",
+       "adversarial": "Cancellation ~0.08 on top of a tight timing bet: a 'Monday morning' departure from Prague with ~3 h flight lands around noon Algiers time (same clock) only if wheels-up is before ~09:00, and the resolver also needs a timestamped ČTK/government report or a later report stating arrival time; a 09:30 departure, fog, or a domestic coalition row each resolve NO.",
+       "anchor": "Slip rate 0.08; Monday-morning departure and a ~2h45 flight with Tebboune meetings on day 1 make landing before noon likely (~0.7), but the criterion also needs a time-stamped or time-giving report, which is not certain.",
+       "outsider": "The delegation departs Monday morning (he misses the cabinet meeting) and the flight is about 3.5 h in the same time zone, so landing before noon is plausible but not certain, and a timestamped report is also needed; cancellation risk is about 0.08."
+      }
+     }
+    },
+    {
+     "id": "cz-algeria-gas-deal-announced",
+     "label": "Czech–Algerian gas deal announced by Monday noon",
+     "text": "By 12:00 on 26 October 2026, the Czech government, Babiš or ČEZ publicly announces that a gas agreement with Algeria (contract, memorandum or declaration on gas supplies) has been or will be signed during the visit.",
+     "criterion": "YES if, between 23 Oct 2026 and 12:00 CET on 26 Oct 2026, the Government Office, a minister, Babiš or ČEZ publicly states that a document on gas supplies or gas cooperation between Czech and Algerian parties (government or companies, e.g. ČEZ–Sonatrach) has been signed or will be signed during the 26–27 Oct visit, as reported on vlada.gov.cz, cez.cz or by ČTK. General statements that gas will be discussed do not count. Otherwise NO.",
+     "resolution_source": "https://vlada.gov.cz/cz/media-centrum/aktualne/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "reported",
+     "slip_class": "summit-or-visit",
+     "publishes": "Government Office press releases, Babiš's weekend social-media videos, ČTK; Monday morning before talks",
+     "cs": {
+      "label": "Česko a Alžírsko ohlásí plynovou dohodu",
+      "text": "Vláda, Babiš nebo ČEZ do 12:00 26. října 2026 veřejně oznámí, že při návštěvě Alžírska byla nebo bude podepsána dohoda o plynu (smlouva, memorandum či deklarace o dodávkách plynu).",
+      "criterion": "ANO, pokud mezi 23. říjnem a 12:00 SEČ 26. října 2026 Úřad vlády, ministr, Babiš nebo ČEZ veřejně uvede, že dokument o dodávkách plynu nebo plynárenské spolupráci mezi českou a alžírskou stranou (vládami či firmami, např. ČEZ–Sonatrach) byl nebo bude podepsán během návštěvy 26.–27. října, podle vlada.gov.cz, cez.cz nebo ČTK. Obecná prohlášení, že se bude jednat o plynu, se nepočítají. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-algeria-gas-deal-announced.md",
+     "probability": 0.14,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.13
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.12
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.12
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.13
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.22
+       }
+      ],
+      "combined": 0.141,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-algeria-gas-deal-announced.md",
+      "spread": 0.1,
+      "rerun": false,
+      "notes": {
+       "base-rate": "No signing mentioned in official pre-visit communications; such documents are usually announced on signing day (Monday afternoon); small chance Babiš/ministers pre-announce a gas memorandum over the weekend; visit slip 0.08.",
+       "evidence": "Official previews list energy as a topic but announce no signing (no news found in search). Signings are usually announced Monday afternoon, after the deadline. The Azerbaijan precedent shows Babiš framing gas as 'talks on possibilities'.",
+       "adversarial": "Neither the ČTK preview nor the government statement mentions any document to be signed, ČEZ already extended its Algerian contract, and documents are normally signed and announced after the afternoon talks on Monday (after the noon deadline); YES needs a pre-announcement in the weekend press release or a Babiš post specifically naming a gas document, as he sometimes does, which is why it is not lower.",
+       "anchor": "No market; previews list energy only as a topic with no document to be signed, and signings are usually announced Monday afternoon after the talks, after the deadline.",
+       "outsider": "Neither official source mentions any signing; documents are usually announced on the day of talks, after noon, though a pre-trip government release or Babiš post naming a gas memorandum is possible."
+      }
+     }
+    }
+   ],
+   "score": 36,
+   "rank": 7
+  },
+  {
+   "id": "cz-prague-coalition",
+   "scope": "cz",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "event": "STAN and Spolu, with 34 of 65 seats, have offered Praha sobě two council seats and the transport portfolio; the three negotiating teams meet on Monday 26 Oct.",
+   "sources": [
+    {
+     "title": "ČT24 22 Oct: Pokud nebude trojkoalice do listopadu, bude Prahu řídit STAN a SPOLU",
+     "url": "https://ct24.ceskatelevize.cz/clanek/regiony/hlavni-mesto-praha/v-hlavnim-meste-asi-vznikne-koalice-stan-spolu-a-prahy-sobe-naznacil-hlavacek-378900"
+    },
+    {
+     "title": "Forum24/ČTK 22 Oct: Pražský STAN se dohodl se Spolu",
+     "url": "https://www.forum24.cz/prazsky-stan-se-dohodl-se-spolu-dale-jedna-s-prahou-sobe"
+    },
+    {
+     "title": "HN 21 Oct: Piráti nabídku odmítli a přišli s protinávrhem",
+     "url": "https://archiv.hn.cz/c1-67947960-starostove-finisuji-rozhodovani-o-prazske-koalici-pirati-jejich-nabidku-odmitli-a-prisli-s-protinavrhem-praha-sobe-chce-obejit-ods"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-prague-prahasobe-joins",
+     "label": "Praha sobě agrees to join Prague coalition",
+     "text": "By 12:00 on 26 October 2026, Praha sobě publicly announces that it agrees to join a Prague City Hall coalition with STAN and Spolu.",
+     "criterion": "YES if, between 23 Oct 2026 and 12:00 CET on 26 Oct 2026, Praha sobě (its chair Adam Scheinherr, its official channels, or a joint statement of STAN, Spolu and Praha sobě) publicly states that Praha sobě has agreed to enter a coalition with STAN and Spolu in Prague, as reported by ČTK or major Czech media. Statements that talks continue, or agreement on a programme chapter only, do not count. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "reported",
+     "slip_class": "negotiation-round",
+     "publishes": "Praha sobě Facebook/web, ČTK; joint negotiating meeting is on Monday 26 Oct (time not published)",
+     "cs": {
+      "label": "Praha sobě kývne na koalici se STAN a Spolu",
+      "text": "Praha sobě do 12:00 26. října 2026 veřejně oznámí, že souhlasí se vstupem do pražské koalice se STAN a Spolu.",
+      "criterion": "ANO, pokud mezi 23. říjnem a 12:00 SEČ 26. října 2026 Praha sobě (předseda Adam Scheinherr, oficiální kanály nebo společné prohlášení STAN, Spolu a Prahy sobě) veřejně uvede, že Praha sobě souhlasila se vstupem do koalice se STAN a Spolu v Praze, podle ČTK nebo hlavních českých médií. Prohlášení, že jednání pokračují, nebo dohoda jen na části programu se nepočítají. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-prague-prahasobe-joins.md",
+     "probability": 0.12,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.12
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.12
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.12
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.12
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.13
+       }
+      ],
+      "combined": 0.122,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-prague-prahasobe-joins.md",
+      "spread": 0.01,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Decisive joint meeting is Monday 26 Oct with unknown time and announcement expected after it; negotiation-round slip 0.30 and Praha sobě still non-committal; YES needs a morning deal or weekend pre-announcement.",
+       "evidence": "Praha sobě said on 22 Oct that it wants to keep negotiating, and the decisive three-party meeting is Monday 26 Oct at an unknown time. Any agreement would likely come after that meeting, probably after noon, and may be phrased as 'in principle' or portfolio-only.",
+       "adversarial": "The decisive STAN–Spolu–Praha sobě meeting is Monday 26 Oct with no published start time and the portfolio split is to be announced afterwards, likely after noon; Praha sobě still wants guarantees on transport and housing and may need internal approval, negotiation-round slip is 0.30, and 'agreement in principle' wording is a criterion trap. Only a weekend Scheinherr post or an early Monday deal resolves YES.",
+       "anchor": "Negotiation-round slip 0.30; the decisive joint meeting is on Monday at an unpublished time, with the result expected only afterwards, and Praha sobě on 22 Oct only wanted to keep negotiating, so an agreement announced before noon is unlikely.",
+       "outsider": "The joint meeting is Monday with no time published and the outcome is announced afterwards; Praha sobě has just said it wants to keep negotiating, so a formal yes before noon is unlikely."
+      }
+     }
+    },
+    {
+     "id": "cz-prague-pirates-join",
+     "label": "Prague Pirates accept coalition seat",
+     "text": "By 12:00 on 26 October 2026, the Prague Pirates publicly announce that they will join a Prague City Hall coalition led by STAN.",
+     "criterion": "YES if, between 23 Oct 2026 and 12:00 CET on 26 Oct 2026, the Prague Pirates (their lead candidate, negotiating team or official channels) publicly state that they accept a place in a STAN-led coalition on Prague City Hall (with Spolu and/or Praha sobě), as reported by ČTK or major Czech media. A counter-proposal or willingness to keep talking does not count. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "reported",
+     "slip_class": "negotiation-round",
+     "publishes": "Pirate Party Prague channels, ČTK",
+     "cs": {
+      "label": "Pražští Piráti přijmou místo v koalici",
+      "text": "Pražští Piráti do 12:00 26. října 2026 veřejně oznámí, že vstoupí do pražské koalice vedené STAN.",
+      "criterion": "ANO, pokud mezi 23. říjnem a 12:00 SEČ 26. října 2026 pražští Piráti (lídr, vyjednávací tým nebo oficiální kanály) veřejně uvedou, že přijímají místo v koalici vedené STAN na pražském magistrátu (se Spolu a/nebo Prahou sobě), podle ČTK nebo hlavních českých médií. Protinávrh nebo ochota dál jednat se nepočítá. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-prague-pirates-join.md",
+     "probability": 0.04,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.04
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.04
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.04
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.04
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.05
+       }
+      ],
+      "combined": 0.042,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-prague-pirates-join.md",
+      "spread": 0.01,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Pirates rejected STAN's offer, STAN chose a variant without them and the Monday meeting excludes them; only a quick weekend reversal would count.",
+       "evidence": "The Pirates rejected STAN's offer and want 2 seats against STAN's 1. STAN has chosen STAN–Spolu–Praha sobě as its main variant and the Monday meeting excludes the Pirates, so an acceptance by Monday noon is unlikely.",
+       "adversarial": "Pirates rejected STAN's offer, STAN's club chose the STAN–Spolu–Praha sobě variant, and the Pirates are not in Monday's meeting; a sudden weekend acceptance of one council seat is the only YES route.",
+       "anchor": "The Pirates rejected STAN's offer and are not part of the main three-party variant or the Monday meeting; acceptance would need a new weekend offer.",
+       "outsider": "The Pirates rejected STAN's offer, STAN's main variant now excludes them, and no decision date exists; a quick acceptance before Monday noon would need a surprise new offer."
+      }
+     }
+    }
+   ],
+   "score": 36,
+   "rank": 8
+  },
+  {
+   "id": "cz-babis-serbia",
+   "scope": "cz",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event": "Serbia votes on Sunday in a close race between Vučić's list and the student list; Babiš, who courted Vučić in Belgrade in July, must decide whether to congratulate him before flying to Algeria on Monday.",
+   "sources": [
+    {
+     "title": "N1 22 Jul 2026: Babiš o Kosovu a odnosima Srbije sa Hrvatskom",
+     "url": "https://www.n1info.rs/vesti/babis-kosovo-hrvatska-lideri-eu"
+    },
+    {
+     "title": "Epoch Times CZ 13 Apr 2026: Babiš pogratuloval Magyarovi",
+     "url": "https://www.epochtimes.cz/ceska-republika/babis-pogratulovat-magyarovi-k-vitezstvi-tesi-se-na-spolupraci-a266102.html"
+    },
+    {
+     "title": "Rio Times 23 Oct: Serbia final polls split",
+     "url": "https://www.riotimesonline.com/serbia-final-polls-split-before-sunday-vote/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-babis-congratulates-vucic",
+     "label": "Babiš congratulates Vučić on Serbian vote",
+     "text": "By 12:00 on 26 October 2026, Andrej Babiš publicly congratulates Aleksandar Vučić or his list on the result of Serbia's 25 October parliamentary election.",
+     "criterion": "YES if, between 20:00 CET on 25 Oct 2026 and 12:00 CET on 26 Oct 2026, Babiš congratulates Vučić, the 'Aleksandar Vučić – United Serbia' list or SNS on the election result, in a post on his own social media (X, Facebook, Instagram) or in a statement reported by ČTK or the Government Office. Remarks without congratulations, or congratulations to another list, do not count. Otherwise NO.",
+     "resolution_source": "https://x.com/AndrejBabis",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "Babiš's X/Facebook accounts and ČTK; election-night projections from ~20:00 CET 25 Oct; in April 2026 he congratulated Hungary's winner on X the next morning",
+     "cs": {
+      "label": "Babiš pogratuluje Vučićovi k volbám",
+      "text": "Andrej Babiš do 12:00 26. října 2026 veřejně pogratuluje Aleksandaru Vučićovi nebo jeho kandidátce k výsledku srbských parlamentních voleb z 25. října.",
+      "criterion": "ANO, pokud Babiš mezi 20:00 SEČ 25. října a 12:00 SEČ 26. října 2026 pogratuluje Vučićovi, kandidátce „Aleksandar Vučić – Sjednocené Srbsko“ nebo SNS k výsledku voleb, a to na svých sociálních sítích (X, Facebook, Instagram) nebo v prohlášení, o němž informuje ČTK či Úřad vlády. Vyjádření bez gratulace nebo gratulace jiné kandidátce se nepočítá. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-babis-congratulates-vucic.md",
+     "probability": 0.34,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.38
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.4
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.3
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.38
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.27
+       }
+      ],
+      "combined": 0.344,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-babis-congratulates-vucic.md",
+      "spread": 0.13,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Win probability ~0.70 (market), times P(Babiš congratulates by noon | Vučić claims the win) ~0.55. The Magyar precedent (X post next morning) and his personal ties to Vučić push up. Disputed counts, EU caution and his Monday-morning Algeria trip push down.",
+       "evidence": "Two conditions must both hold: Vučić claims or wins the result by Monday morning (market about 0.71, polls split) and Babiš posts before noon (likely, given his friendship with Vučić and the Magyar precedent of congratulating the next morning, but he flies to Algeria Monday morning and EU caution or a contested count could delay him). That gives roughly 0.68 × 0.6.",
+       "adversarial": "Three conditions must all hold in a 16-hour window: Vučić's list must be the clear winner (market 0.71, polls split, RIK figures possibly only Monday evening), Vučić must claim the win overnight, and Babiš must post before noon while boarding for Algeria rather than congratulating later by phone or leaving it to Macinka; the Magyar precedent shows he does congratulate quickly, but a contested or narrow Serbian result or a Students'-list win kills it.",
+       "anchor": "Anchor: Polymarket gives Vučić 0.71 to win most seats. Multiplied by about 0.55 that Babiš posts congratulations by Monday noon given a win claimed on election night (the Magyar precedent says yes; the Algeria trip and EU caution over election conduct say no).",
+       "outsider": "Needs Vučić win plus a clear claim by Monday morning (about 0.65), then Babiš posting congratulations before noon despite the Algeria trip (about 0.4); the Magyar precedent and Belgrade ties help."
+      }
+     }
+    }
+   ],
+   "score": 36,
+   "rank": 9
+  },
+  {
+   "id": "cz-28-october",
+   "scope": "cz",
+   "scores": {
+    "impact": 2,
+    "reach": 4,
+    "uncertainty": 4
+   },
+   "event": "President Pavel decorates citizens on Independence Day, 28 October; the Castle keeps names secret but disclosed the headcount four days ahead in 2025.",
+   "sources": [
+    {
+     "title": "Respekt/ČTK 24 Oct 2025: Státní vyznamenání letos obdrží 48 lidí",
+     "url": "https://www.respekt.cz/informacni-servis/statni-vyznamenani-letos-od-prezidenta-obdrzi-48-lidi-o-osm-mene-nez-loni-2025-10-24-14-18"
+    },
+    {
+     "title": "Echo24 24 Oct 2025",
+     "url": "https://www.echo24.cz/a/HFCrS/zpravy-domov-statni-vyznamenani-bude-48-ocenenych-oznamil-hrad"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-honours-number-announced",
+     "label": "Castle discloses number of honourees early",
+     "text": "By 12:00 on 26 October 2026, the Office of the President publicly states how many people will receive state honours on 28 October 2026.",
+     "criterion": "YES if, at any time between 1 Oct 2026 and 12:00 CET on 26 Oct 2026, the Office of the President (head Milan Vašina, spokespeople, hrad.cz or its social accounts) publicly gives the number of people to be decorated on 28 Oct 2026, as reported on hrad.cz or by ČTK. A range or 'more than X' does not count; an exact number is required. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "reported",
+     "slip_class": "none",
+     "publishes": "ČTK wire / hrad.cz, any time before 12:00 on 26 Oct; in 2025 the number came on Friday 24 Oct at ~14:18 (Vašina on Radiožurnál)",
+     "cs": {
+      "label": "Hrad předem oznámí počet vyznamenaných",
+      "text": "Kancelář prezidenta republiky do 12:00 26. října 2026 veřejně uvede, kolik lidí 28. října 2026 obdrží státní vyznamenání.",
+      "criterion": "ANO, pokud Kancelář prezidenta republiky (vedoucí Milan Vašina, mluvčí, hrad.cz nebo její sociální sítě) mezi 1. říjnem 2026 a 12:00 SEČ 26. října 2026 veřejně uvede přesný počet lidí, kteří budou 28. října 2026 vyznamenáni, podle hrad.cz nebo ČTK. Rozpětí nebo „přes X“ nestačí. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-honours-number-announced.md",
+     "probability": 0.39,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.38
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.33
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.33
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.5
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.4
+       }
+      ],
+      "combined": 0.386,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-honours-number-announced.md",
+      "spread": 0.17,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Only precedent with exact number (2025) came Friday 4 days ahead; nothing found by Fri evening 23 Oct, weekend disclosures rare, so YES mostly needs a Monday-morning disclosure or an un-indexed Friday one; 2023 gave only a range.",
+       "evidence": "In 2025 the exact number was given on the Friday 4 days ahead. No 2026 disclosure was found by the evening of 23 Oct (my search also returned only 2025 items). The equivalent timing points to Mon/Tue, and an afternoon Monday release would miss the noon deadline. Weekend interview disclosure is possible.",
+       "adversarial": "Only one clean precedent (2025: exact number on the Friday four days ahead) and nothing found by Friday evening 23 Oct; weekend disclosures from the Castle are rare, so YES depends on a Monday-morning briefing or a Saturday ČTK item, with real risk the Castle says 'around fifty' (range = NO) or waits until Tuesday as in 2023.",
+       "anchor": "No market; anchor is the 2025 pattern (exact number given 4 days ahead, by Vašina via ČTK), but nothing found by Friday evening and the 2023 precedent was only a range; the window still covers the weekend and Monday morning.",
+       "outsider": "In 2025 the exact count was disclosed 4 days ahead (the equivalent of Saturday 24 Oct); nothing yet found for 2026 and disclosure could come Monday afternoon or Tuesday, or only as a range."
+      }
+     }
+    }
+   ],
+   "score": 32,
+   "rank": 10
+  },
+  {
+   "id": "cz-budget-2027",
+   "scope": "cz",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "event": "Two SPD-club MPs abstained as the coalition passed the 2027 budget's first reading (deficit CZK 386bn) with 93 votes on 22 Oct.",
+   "sources": [
+    {
+     "title": "ČTK 22 Oct: Sněmovna schválila základní údaje rozpočtu se schodkem 386 mld. Kč",
+     "url": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-zakladni-udaje-rozpoctu-se-schodkem-386-mld-kc/2890454"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-spd-budget-abstainers-sanction",
+     "label": "SPD punishes budget abstainers",
+     "text": "By 12:00 on 26 October 2026, SPD or its Chamber club announces a sanction against Zuzana Majerová or Miroslav Ševčík for abstaining in the 22 October budget vote.",
+     "criterion": "YES if, between 23 Oct 2026 and 12:00 CET on 26 Oct 2026, SPD's leadership (e.g. Tomio Okamura) or the SPD Chamber club (chair Radim Fiala) publicly announces a sanction against Majerová or Ševčík in connection with their abstention on 22 Oct — exclusion from the club, removal from a Chamber or party post, removal from a candidate list, or a formal reprimand — as reported by ČTK or major Czech media. Criticism without a stated sanction does not count. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "spd.cz, Okamura's social media, ČTK; any time",
+     "cs": {
+      "label": "SPD potrestá poslance, kteří se zdrželi",
+      "text": "SPD nebo její poslanecký klub do 12:00 26. října 2026 oznámí postih Zuzany Majerové nebo Miroslava Ševčíka za to, že se 22. října zdrželi hlasování o rozpočtu.",
+      "criterion": "ANO, pokud mezi 23. říjnem a 12:00 SEČ 26. října 2026 vedení SPD (např. Tomio Okamura) nebo poslanecký klub SPD (předseda Radim Fiala) veřejně oznámí postih Majerové nebo Ševčíka kvůli zdržení se 22. října — vyloučení z klubu, odvolání ze sněmovní či stranické funkce, vyřazení z kandidátky nebo formální důtku — podle ČTK nebo hlavních českých médií. Kritika bez oznámeného postihu se nepočítá. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-spd-budget-abstainers-sanction.md",
+     "probability": 0.06,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.06
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.06
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.05
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.06
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.07
+       }
+      ],
+      "combined": 0.06,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-spd-budget-abstainers-sanction.md",
+      "spread": 0.02,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Reference class: a formal party sanction announced within a weekend window, with no meeting scheduled and the abstentions not changing the outcome, is rare (prior ~5%). Okamura sometimes reacts sharply (+0.2 log-odds), but club decisions usually wait for the next sitting week.",
+       "evidence": "ČTK reports no SPD reaction; the coalition won comfortably (93 votes) so the abstentions did no harm, Majerová is a Trikolora ally, and a web check found no sanction news. Any step would more likely come at a club meeting in the next sitting week, after the deadline.",
+       "adversarial": "A formal sanction within three days over a weekend, for an abstention (not a no-vote) on a vote the coalition won by 93, with no club meeting scheduled and Majerová outside SPD's party discipline, needs an unusual Okamura flare-up; the realistic route is harsh words (which do not count) or a club decision in the next sitting week (after the deadline).",
+       "anchor": "No market exists. As an anchor I used the low base rate for a formal sanction within a weekend, with no SPD meeting scheduled. The abstentions did not decide the vote (93 votes against 76 needed), and a club meeting next sitting week would fall after the deadline.",
+       "outsider": "No reaction reported, no meeting scheduled, short weekend window; Majerová is a Trikolora member so a club sanction is less straightforward. Only a sharp Okamura move would make this YES."
+      }
+     }
+    }
+   ],
+   "score": 18,
+   "rank": 11
+  },
+  {
+   "id": "brazil-governors",
+   "scope": "world",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event": "Brazil holds governor runoffs in five states and the Federal District alongside the Lula–Flávio Bolsonaro presidential runoff on Sunday 25 October.",
+   "sources": [
+    {
+     "title": "Correio: segundo turno para governador em cinco estados e no DF",
+     "url": "https://www.correio24horas.com.br/eleicoes/segundo-turno-para-governador-sera-realizado-em-cinco-estados-e-no-df-neste-domingo-1026"
+    },
+    {
+     "title": "Real Time Big Data RN: Allyson 45%, Cadu 42%",
+     "url": "https://www.dgabc.com.br/Noticia/4353722/no-rn-allyson-tem-45-e-cadu-de-lula-42-no-2-turno-mostra-pesquisa-real-time-big-data"
+    },
+    {
+     "title": "ITEM RN 2º turno: Allyson 53,7% válidos",
+     "url": "https://static.poder360.com.br/uploads/2026/10/ITEM-2oturno-RN-outubro.pdf"
+    },
+    {
+     "title": "Real Time Big Data TO: Vicentinho 52%, Dorinha 48%",
+     "url": "https://sbtnews.sbt.com.br/noticia/politica/real-time-to-vicentinho-tem-com-52-contra-48-de-dorinha"
+    },
+    {
+     "title": "Quaest TO: Vicentinho 49%, Dorinha 42%",
+     "url": "https://www.dgabc.com.br/Noticia/4352782/quaest-to-no-2-turno-vicentinho-junior-tem-49-e-professora-dorinha-42-"
+    },
+    {
+     "title": "Directa TO: Dorinha 52,8% válidos",
+     "url": "https://static.poder360.com.br/uploads/2026/10/governador-TO-outubro-pesquisa-instituto-directa-pesquisas.pdf"
+    }
+   ],
+   "claims": [
+    {
+     "id": "br-rn-allyson",
+     "label": "Allyson Bezerra wins Rio Grande do Norte",
+     "text": "Allyson Bezerra (União Brasil) is elected governor of Rio Grande do Norte, beating Cadu \"de Lula\" Xavier (PT) in Sunday's runoff.",
+     "criterion": "YES if TSE results for the Rio Grande do Norte governor second round, as published by 26 Oct 2026 12:00 CET, show Allyson Bezerra with more valid votes than Cadu de Lula; NO if Cadu has more, the runoff is postponed, or TSE has not published a result showing the winner by then.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE live results from 21:00 CET Sun 25 Oct (17:00 BRT, after polls close); count normally complete by about 01:00–04:00 CET Mon 26 Oct, at resultados.tse.jus.br",
+     "cs": {
+      "label": "Allyson Bezerra vyhraje v Rio Grande do Norte",
+      "text": "Guvernérem brazilského státu Rio Grande do Norte bude zvolen Allyson Bezerra (União Brasil), který ve druhém kole porazí Cadua „de Lulu“ Xaviera (PT).",
+      "criterion": "ANO, pokud výsledky TSE pro druhé kolo guvernérských voleb v Rio Grande do Norte zveřejněné do 26. října 2026 12:00 SEČ ukážou, že Allyson Bezerra získal více platných hlasů než Cadu de Lula; NE, pokud více hlasů získá Cadu, volba se odloží nebo TSE do té doby výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-rn-allyson.md",
+     "probability": 0.68,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.7
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.68
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.65
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.7
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.67
+       }
+      ],
+      "combined": 0.68,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "Poll-lead model, state governor runoff: lead +4.7 pp valid votes (mean of Quaest 9–12 Oct, ITEM 13–15 Oct, Real Time Big Data 15–19 Oct), error sd 6 pp",
+       "rate": 0.783,
+       "n": 3,
+       "source": "models.mjs lead 4.7 6; sd from pipeline/reference-data/poll-error.json (national runoff rms 1.3–2.7) widened for state polls, which missed the first-round lead by +4.2 (Quaest RN) and +3.4 (Quaest TO) this cycle"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/rio-grande-do-norte-governor-election-winner",
+       "p": 0.7,
+       "read_at": "2026-10-23T17:02:44Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/br-rn-allyson.md",
+      "spread": 0.05,
+      "rerun": false,
+      "notes": {
+       "base-rate": "State-poll lead model (lead +4.7, sd 6) gives 0.78. Adjusted about -0.4 log-odds because Quaest overstated Allyson by 4.2 pp in round one and Lula's coattails are strong in RN (Lula 0.99 to carry the state).",
+       "evidence": "Every runoff poll has Allyson ahead (+3.4 to +7.4 valid, mean ~+4.9) and Cadu has higher rejection; but Quaest overstated Allyson by ~4 pp in round one and Lula's heavy RN coattails favour Cadu. Market 0.70.",
+       "adversarial": "All three runoff polls have Allyson ahead (+3 to +7 valid) and rejection favours him, but Quaest overstated his first-round lead by 4.2 pp, the first round was a 0.78-pp tie, and Cadu runs as Lula's candidate in a state Lula carries at ~0.99 — PT runoff mobilisation is a plausible route to NO. Priced below the sd-6 model (0.78) and a touch under the Polymarket 0.70.",
+       "anchor": "Anchor Polymarket 0.70; state poll-lead model (lead +4.7, sd 6) gives 0.78, but Quaest overstated Allyson by ~4 pp in round one and Lula's coattails in RN favour Cadu, so hold at market.",
+       "outsider": "All three runoff polls have Allyson ahead (about +3 to +7 on valid votes) and the market is about 70%, but Cadu runs as Lula's candidate in a state Lula carries heavily and Quaest overstated Allyson by about 4 pp in round one."
+      }
+     }
+    },
+    {
+     "id": "br-to-vicentinho-4",
+     "label": "Vicentinho wins Tocantins by 4+ points",
+     "text": "Vicentinho Júnior (PSDB) wins the Tocantins governor runoff by at least 4.0 percentage points of valid votes over Professora Dorinha (União Brasil).",
+     "criterion": "YES if TSE results for the Tocantins governor second round, as published by 26 Oct 2026 12:00 CET, show Vicentinho Júnior's share of valid votes minus Professora Dorinha's share at 4.0 percentage points or more (TSE shares, two decimals); NO if the margin is below 4.0, Dorinha wins, the runoff is postponed, or TSE has not published a result by then.",
+     "resolution_source": "https://resultados.tse.jus.br",
+     "resolves_by": "2026-10-26T12:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "TSE live results from 21:00 CET Sun 25 Oct (17:00 BRT); count normally complete overnight, at resultados.tse.jus.br",
+     "cs": {
+      "label": "Vicentinho vyhraje v Tocantinsu o 4+ body",
+      "text": "Vicentinho Júnior (PSDB) vyhraje druhé kolo guvernérských voleb v brazilském státě Tocantins s náskokem nejméně 4,0 procentního bodu platných hlasů před Professorou Dorinhou (União Brasil).",
+      "criterion": "ANO, pokud výsledky TSE pro druhé kolo guvernérských voleb v Tocantinsu zveřejněné do 26. října 2026 12:00 SEČ ukážou, že podíl platných hlasů Vicentinha Júniora převyšuje podíl Professory Dorinhy o 4,0 procentního bodu nebo více; NE, pokud je rozdíl menší, vyhraje Dorinha, volba se odloží nebo TSE do té doby výsledek nezveřejní."
+     },
+     "dossier": "data/dossiers/2026-10-26/br-to-vicentinho-4.md",
+     "probability": 0.52,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.52
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.52
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.47
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.58
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.5
+       }
+      ],
+      "combined": 0.518,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "Poll-lead model on margin above threshold: valid-vote lead +5.9 pp (mean of Quaest 10–13 Oct +7.7 and Real Time Big Data 15–19 Oct +4; Directa 6–9 Oct had Dorinha +5.6 and is excluded as older), excess +1.9 over 4.0, error sd 6 pp",
+       "rate": 0.624,
+       "n": 2,
+       "source": "models.mjs lead 1.9 6; sd from pipeline/reference-data/poll-error.json widened for state polls (Quaest TO first-round lead error +3.4)"
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/tocantins-governor-election-second-round-margin-of-victory",
+       "p": 0.595,
+       "read_at": "2026-10-23T17:02:26Z"
+      },
+      "dossier": "data/dossiers/2026-10-26/br-to-vicentinho-4.md",
+      "spread": 0.11,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Excess-over-threshold model gives 0.62 using the two latest polls and 0.37 if Directa is included. Weighted toward the newer polls; Vicentinho's late momentum and Quaest's first-round overstatement of Dorinha help him. The 4-pp bar sits near the centre.",
+       "evidence": "Latest two polls average +5.9 (RTBD exactly +4), Directa had Dorinha +5.6, and Dorinha won round one; threshold sits near the centre. Market 0.595 is thin; Vicentinho's late momentum keeps it near a coin flip slightly favouring YES.",
+       "adversarial": "Threshold sits exactly on RTBD's +4; Dorinha won the first round by 1.6, Directa has her ahead by 5.6, and a Vicentinho win by under 4 (market 0.25) is as likely as any single bucket. Roughly P(win) ~0.8 × P(≥4 | win) ~0.6; the thin 0.595 market is an overconfident ceiling, and 3.99 resolves NO.",
+       "anchor": "Anchor thin Polymarket margin market 0.595 (winner market Vicentinho 0.865); model on the two latest polls 0.62, with Directa (Dorinha +5.6) 0.37. Slight shade down for the threshold sitting inside the poll range.",
+       "outsider": "Vicentinho is a clear favourite to win (86%), but the two recent polls (+7.7 and +4) bracket the 4-pp line, Directa had Dorinha ahead, and state polls miss by 3-4 pp, so the margin question is close to even."
+      }
+     }
+    }
+   ],
+   "score": 16,
+   "rank": 12
+  },
+  {
+   "id": "cz-city-coalitions",
+   "scope": "cz",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event": "After ANO's memorandum collapsed when a STAN councillor disowned it, five groupings with 22 of 39 seats aim to sign a deal that would put ODS's Ondřej Tichý in the mayor's office and send ANO into opposition after 12 years.",
+   "sources": [
+    {
+     "title": "iRozhlas 21 Oct: Pardubice po volbách, ANO nejspíš míří do opozice",
+     "url": "https://www.irozhlas.cz/zpravy-domov/v-pardubicich-pokracuji-jednani-o-nove-koalici-ano-pravdepodobne-po-12-letech_2610210905_mkm"
+    },
+    {
+     "title": "ČTK 14 Oct: Pětikoalice v Pardubicích ladí program",
+     "url": "https://www.ceskenoviny.cz/zpravy/petikoalice-v-pardubicich-ladi-program-subjekty-deklaruji-ochotu-ke-kompromisu-/2886580"
+    },
+    {
+     "title": "iEuro 21 Oct: Lídr STAN dohodu podepsal, jeho zastupitelka ji zablokovala",
+     "url": "https://ieuro.cz/lidr-stan-dohodu-podepsal-jeho-zastupitelka-ji-zablokovala-pardubice-muze-vest-pet-stran-s-rozdilnymi-programy/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-pardubice-coalition-signed",
+     "label": "Pardubice five-party coalition signed by Monday noon",
+     "text": "By 12:00 on 26 October 2026, ODS, STAN, Progresivní Pardubice, Naše Pardubice and Noví lidovci have signed a coalition agreement to run Pardubice.",
+     "criterion": "YES if ČTK, iRozhlas, Deník or another major Czech outlet reports, in a report time-stamped no later than 12:00 CET on 26 Oct 2026, that representatives of these five groupings (or of a coalition containing at least ODS and STAN that excludes ANO) have signed a coalition agreement for the Pardubice city council for 2026–2030. A memorandum, agreement in principle or announcement of a future signing date does not count. A signing at any time after the 9–10 Oct 2026 election counts. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "reported",
+     "slip_class": "negotiation-round",
+     "publishes": "ČTK wire, iRozhlas, Pardubický deník; at signing (no date or time published; parties aimed for 'start of the week of 26 Oct' at the latest)",
+     "cs": {
+      "label": "Pardubická pětikoalice podepíše smlouvu",
+      "text": "ODS, STAN, Progresivní Pardubice, Naše Pardubice a Noví lidovci do 12:00 26. října 2026 podepíší koaliční smlouvu o vedení Pardubic.",
+      "criterion": "ANO, pokud ČTK, iRozhlas, Deník nebo jiné hlavní české médium ve zprávě s časem nejpozději 12:00 SEČ 26. října 2026 uvede, že zástupci těchto pěti uskupení (nebo koalice, v níž jsou alespoň ODS a STAN a není v ní ANO) podepsali koaliční smlouvu pro pardubické zastupitelstvo na období 2026–2030. Memorandum, dohoda v principu nebo oznámení termínu podpisu se nepočítá. Počítá se podpis kdykoli po volbách 9.–10. října 2026. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-pardubice-coalition-signed.md",
+     "probability": 0.28,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.3
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.33
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.17
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.33
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.3
+       }
+      ],
+      "combined": 0.281,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-pardubice-coalition-signed.md",
+      "spread": 0.16,
+      "rerun": false,
+      "notes": {
+       "base-rate": "The target is 'by the start of next week', but the deadline of Monday noon cuts off most of that window. The target has already slipped twice (negotiation-round slip rate 0.30, applied twice) and signings are often held Monday afternoon or later. A small chance it was already signed on 22-23 Oct but not checked holds it at ~0.3.",
+       "evidence": "The latest report (iRozhlas, 21 Oct) has signing 'this week or by the start of next week' at the latest, but the target has already slipped twice, five groupings are involved, and two web searches found no report of a signing on 22–23 Oct. A Monday-morning signing is possible, but Monday afternoon or later fits the pattern better.",
+       "adversarial": "No signing was reported through Friday 23 Oct (my search and the dossier agree), so the 'this week' half of the target has already slipped; what remains is a Friday-night/weekend signing (rare for a five-party press-conference event) or a Monday signing early enough to be reported before 12:00, whereas comparable city signings were midday-to-afternoon and the target has moved twice with a 0.30 slip class.",
+       "anchor": "Anchor: 0.30 slip rate for the negotiation-round class on a target of 'start of next week'. That target probably includes Monday afternoon or Tuesday, which falls after the noon cutoff, and it has already moved twice. Kept somewhat above a pure Monday-noon cutoff because a signing on 22–23 Oct was not checked.",
+       "outsider": "Target dates already slipped twice and 'start of next week' most plausibly means Monday afternoon or later; some chance of an unseen signing on 22-24 Oct or over the weekend."
+      }
+     }
+    }
+   ],
+   "score": 16,
+   "rank": 13
+  },
+  {
+   "id": "bc-election-aftermath",
+   "scope": "world",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event": "British Columbia votes on 24 October in a snap election called by NDP Premier David Eby, with the Conservatives under interim leader Lorne Doerkson leading the polls.",
+   "sources": [
+    {
+     "title": "Ipsos: BC Conservatives from fractured to front runners",
+     "url": "https://www.ipsos.com/en-ca/bc-conservatives-fractured-front-runners"
+    },
+    {
+     "title": "Daily Hive: NDP and Conservatives in statistical tie",
+     "url": "https://dailyhive.com/vancouver/bc-ndp-conservatives-poll-oct-19"
+    },
+    {
+     "title": "Wikipedia: 2026 British Columbia general election",
+     "url": "https://en.wikipedia.org/wiki/2026_British_Columbia_general_election"
+    },
+    {
+     "title": "Polymarket: BC election winner",
+     "url": "https://polymarket.com/event/british-columbia-general-election-winner"
+    },
+    {
+     "title": "CTV: Who are the party leaders as BC goes to the polls",
+     "url": "https://www.ctvnews.ca/vancouver/article/who-are-the-party-leaders-as-british-columbia-goes-to-the-polls/"
+    },
+    {
+     "title": "Polymarket: Next Premier of BC",
+     "url": "https://polymarket.com/event/next-premier-of-british-columbia"
+    }
+   ],
+   "claims": [
+    {
+     "id": "bc-con-majority",
+     "label": "BC Conservatives win a majority",
+     "text": "The BC Conservatives win at least 47 of the 93 seats in Elections BC's preliminary results of the 24 October British Columbia election, as shown at 12:00 CET on 25 October.",
+     "criterion": "YES if Elections BC's preliminary (election-night) results, as displayed at 12:00 CET on 25 Oct 2026, show Conservative Party of BC candidates elected or leading in at least 47 of the 93 electoral districts. NO if fewer than 47, or if the election is postponed or Elections BC shows no preliminary results by the deadline. Later final-count changes do not matter.",
+     "resolution_source": "https://elections.bc.ca/",
+     "resolves_by": "2026-10-25T12:00:00+01:00",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "Elections BC preliminary results on elections.bc.ca from poll close, 20:00 PDT 24 Oct = 04:00 CET 25 Oct",
+     "cs": {
+      "label": "Konzervativci v Britské Kolumbii získají většinu",
+      "text": "Konzervativci v kanadské Britské Kolumbii získají podle předběžných výsledků volebního úřadu Elections BC z voleb 24. října, zobrazených 25. října ve 12:00 SEČ, nejméně 47 z 93 křesel.",
+      "criterion": "ANO, pokud předběžné výsledky Elections BC zobrazené 25. 10. 2026 ve 12:00 SEČ ukážou kandidáty Konzervativní strany Britské Kolumbie jako zvolené nebo vedoucí v nejméně 47 z 93 volebních obvodů. NE, pokud jich bude méně, nebo pokud jsou volby odloženy či Elections BC do termínu předběžné výsledky nezveřejní. Pozdější změny při konečném sčítání se nepočítají."
+     },
+     "dossier": "data/dossiers/2026-10-26/bc-con-majority.md",
+     "probability": 0.67,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.73
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.74
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.55
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.71
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.58
+       }
+      ],
+      "combined": 0.666,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": {
+       "class": "poll-lead model for vote lead only (Con +4, rms 2.734 → 0.928 for most votes; majority needs more — 2024: 1.6-pt lead gave 47 seats)",
+       "rate": 0.928,
+       "n": 6,
+       "source": "pipeline/reference-data/poll-error.json"
+      },
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/bc-con-majority.md",
+      "spread": 0.19,
+      "rerun": false,
+      "notes": {
+       "base-rate": "Con most-seats ~0.92 (market) times P(majority | plurality) ~0.8: a ~4-pt lead is a ~5.6-pt swing from 2024 (Con 44 seats on -1.6), enough for ~50+ seats on uniform swing, but Interior vote inefficiency and a narrow Angus Reid +3 leave a real plurality-minority path.",
+       "evidence": "Two October polls give the Conservatives a lead of about 4 points, a swing of about 5.6 points on the margin from 2024, when a 1.6-point NDP lead gave 47-44. Uniform swing would flip several close Metro Vancouver and Surrey ridings, and the market has the Conservatives winning most seats at 0.925. The main NO path is a 44-46-seat plurality from inefficient Interior votes or a polling miss toward the NDP.",
+       "adversarial": "The Writ's 22 Oct projection (fetched) has the Conservatives at 53 seats on a 3.7-point lead but winning most seats in only 77% of simulations, so a majority is lower still; Angus Reid's latest is a 'statistical tie', BC polls over-stated the Conservatives in 2024, OneBC splits the right in Interior seats and the NDP vote is more efficient, so a plurality-minority (as in 2024's reverse) is a live NO path. Polymarket's 0.925 is for most seats, not 47, and looks over-priced; preliminary 'leading' counts at 04:00 PDT should be near-complete, so publication risk is small.",
+       "anchor": "Model: the October poll average gives Con +4. In 2024 a 1.6-pt NDP lead gave the NDP exactly 47 seats, and the Conservative vote is less efficient, so a majority needs about a +2 lead (lead 2/3.5 gives 0.72). The most-seats market at 0.925 implies a lead of about +5, which supports this. The main NO path is a plurality of 44-46 seats.",
+       "outsider": "Con ~92% for most seats with a ~4-pt vote lead, but 47 needs a majority and 2024 showed a small vote lead is a thin seat margin; roughly 0.63 conditional on most seats."
+      }
+     }
+    },
+    {
+     "id": "bc-eby-resigns",
+     "label": "Eby announces he will quit as leader",
+     "text": "By 23:59 CET on 25 October, David Eby announces he will step down as leader of the BC NDP.",
+     "criterion": "YES if between poll close (04:00 CET 25 Oct) and 23:59 CET 25 Oct 2026 David Eby publicly states on record (speech, press conference, written statement or post by him or the BC NDP) that he is resigning or will step down as BC NDP leader, including with a future date or once a successor is chosen. Conceding defeat or handing over the premiership without saying he leaves the party leadership does not count. NO otherwise, including if the NDP wins or the election is postponed.",
+     "resolution_source": "https://www.bcndp.ca/",
+     "resolves_by": "2026-10-25T23:59:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "Eby's election-night speech (about 06:00–09:00 CET 25 Oct) or later statement; reported by CBC, CTV, Global News, Canadian Press",
+     "cs": {
+      "label": "Eby oznámí odchod z čela NDP",
+      "text": "David Eby do 25. října 23:59 SEČ oznámí, že odstoupí z čela britskokolumbijské Nové demokratické strany (NDP).",
+      "criterion": "ANO, pokud David Eby mezi uzavřením volebních místností (25. 10. 04:00 SEČ) a 25. 10. 2026 23:59 SEČ veřejně prohlásí (projevem, na tiskové konferenci, písemně nebo příspěvkem svým či strany), že rezignuje nebo odstoupí z čela BC NDP, i s budoucím datem nebo po zvolení nástupce. Uznání porážky nebo předání funkce premiéra bez zmínky o odchodu z čela strany se nepočítá. NE v ostatních případech, včetně vítězství NDP nebo odložení voleb."
+     },
+     "dossier": "data/dossiers/2026-10-26/bc-eby-resigns.md",
+     "probability": 0.36,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.33
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.33
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.35
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.38
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.4
+       }
+      ],
+      "combined": 0.358,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/bc-eby-resigns.md",
+      "spread": 0.07,
+      "rerun": false,
+      "notes": {
+       "base-rate": "P(NDP loses) ~0.9 (market 0.925); recent defeated premiers split between election-night resignations (Stefanson 2023, Higgs 2024) and 'reflect then quit' (Clark 2017, Gallant 2018, Notley stayed), so ~0.4 conditional; young leader, close race/minority scenario favours delay: 0.9*0.37.",
+       "evidence": "NDP loss ~0.9 per Polymarket; conditional on loss, an explicit leadership-exit statement within ~12h is maybe 35-40% (Higgs, Stefanson, MacLauchlan did so on the night; Clark, Gallant, Notley did not), and close polls make a narrow result where he stays or 'reflects' plausible.",
+       "adversarial": "Final polls (Angus Reid 'narrows', Liaison 43/37) leave NDP ~15% to keep power; among defeated Canadian premiers roughly half announce leaving the leadership on election night and half 'reflect' for days; a close count with late-counted ridings or a Conservative minority gives Eby reasons not to concede or to stay on pending the house, and 'I will not lead us into the next election' wording is a NO trap. Snap-election blame pushes up, but 0.85 x ~0.4 lands near 0.35.",
+       "anchor": "Anchor Polymarket NDP-loss ~0.92 (Doerkson 0.925) times ~0.42 that a defeated Canadian premier says on election night/next day he will quit as leader (Higgs, Stefanson, MacLauchlan yes; Clark, Notley, Gallant, Rankin stayed); a close race or minority makes staying on more likely.",
+       "outsider": "About 0.9 chance NDP loses (market 0.925 Conservatives); a self-called snap election lost is a strong trigger for an election-night resignation (Wynne, Couillard style), but many defeated leaders say they will reflect, so roughly 0.45 conditional."
+      }
+     }
+    }
+   ],
+   "score": 16,
+   "rank": 14
+  },
+  {
+   "id": "cz-senate-leadership",
+   "scope": "cz",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 2
+   },
+   "event": "After the October Senate elections, the largest club (ODS–TOP 09) is expected to back Miloš Vystrčil for a fourth term as Senate president; new senators take the oath on 19 Nov.",
+   "sources": [
+    {
+     "title": "ČT24 20 Oct: Senát čekají personální šachy",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senat-cekaji-personalni-sachy-a-uvahy-o-novem-vyboru-378831"
+    },
+    {
+     "title": "Blesk: Vystrčil usiluje o čtvrtý mandát",
+     "url": "https://www.blesk.cz/clanek/zpravy-politika/850671/stab-ods-v-praze-bude-vystrcil-poctvrte-predsedou-senatu.html"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cz-vystrcil-nominated",
+     "label": "Vystrčil formally nominated for Senate president",
+     "text": "By 12:00 on 26 October 2026, ODS or the ODS–TOP 09 Senate club formally nominates Miloš Vystrčil as its candidate for President of the Senate.",
+     "criterion": "YES if, between 23 Oct 2026 and 12:00 CET on 26 Oct 2026, the ODS leadership or the ODS–TOP 09 senators' club publicly announces a formal decision (vote or resolution) to nominate Miloš Vystrčil for President of the Senate in the new term, as reported on ods.cz, senat.cz or by ČTK. Statements that he will 'probably' or 'likely' be nominated, or his own declaration of interest, do not count. Otherwise NO.",
+     "resolution_source": "https://www.ceskenoviny.cz/",
+     "resolves_by": "2026-10-26T12:00:00+01:00",
+     "schedule": "speculative",
+     "slip_class": "cz-senate-item",
+     "publishes": "ODS press release / ČTK; ODS–TOP 09 club meeting date not published",
+     "cs": {
+      "label": "ODS formálně nominuje Vystrčila",
+      "text": "ODS nebo senátorský klub ODS a TOP 09 do 12:00 26. října 2026 formálně nominuje Miloše Vystrčila na předsedu Senátu.",
+      "criterion": "ANO, pokud mezi 23. říjnem a 12:00 SEČ 26. října 2026 vedení ODS nebo senátorský klub ODS a TOP 09 veřejně oznámí formální rozhodnutí (hlasování či usnesení) nominovat Miloše Vystrčila na předsedu Senátu v novém období, podle ods.cz, senat.cz nebo ČTK. Prohlášení, že bude „pravděpodobně“ nominován, nebo jeho vlastní zájem se nepočítají. Jinak NE."
+     },
+     "dossier": "data/dossiers/2026-10-26/cz-vystrcil-nominated.md",
+     "probability": 0.07,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "p": 0.08
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "p": 0.1
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable",
+        "p": 0.08
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "p": 0.08
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet",
+        "p": 0.04
+       }
+      ],
+      "combined": 0.073,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-26/cz-vystrcil-nominated.md",
+      "spread": 0.06,
+      "rerun": false,
+      "notes": {
+       "base-rate": "No club or grémium meeting is known for 23-26 Oct, and formal Senate nominations usually come closer to the November constituent session, after the new senators take the oath on 19 Nov. The prior for a formal resolution in a 3-day window is ~5%; a Monday-morning ODS grémium resolution adds a little.",
+       "evidence": "ČT24 (20 Oct) says ODS–TOP 09 will 'likely' nominate him but has not done so formally; the vote is only after the 19 Nov oath, and no club or grémium meeting is reported before Monday noon. A Monday-morning ODS grémium resolution is the only realistic route.",
+       "adversarial": "Nothing is scheduled: the club is only re-constituted after the 19 Nov oath, ČT24 on 20 Oct said 'not yet a formal nomination', and Kupka's 'he will remain' type statements fail the vote/resolution test; the only YES route is a Monday-morning ODS grémium resolution reported before noon, or media loosely calling an intention a 'nomination'.",
+       "anchor": "No market exists. The anchor is ČT24: nomination 'likely' but not formal, new senators sworn in 19 Nov, leadership vote later in November. A formal resolution in a 3-day window over a weekend is unlikely; only a Monday-morning ODS executive meeting could produce one.",
+       "outsider": "Formal club vote is expected in November after the 19 Nov oath; ODS only said he will 'likely' be nominated and no meeting is known for 23-26 Oct."
+      }
+     }
+    }
+   ],
+   "score": 12,
+   "rank": 15
+  }
+ ],
+ "dropped": [
+  {
+   "event": "End of daylight saving time in Czechia",
+   "why": "practically certain"
+  },
+  {
+   "event": "Ji.hlava documentary festival, first weekend (30th edition, 23 Oct–1 Nov)",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Veselský pond harvest ends Sunday noon",
+   "why": "lower editorial score"
+  },
+  {
+   "event": "Clock change debate: Czech position vs EU",
+   "why": "lower editorial score"
+  },
+  {
+   "event": "Brazil runoff - timing of decision",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Brazil runoff - Flávio raw vote gain",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Brazil - Amazonas presidential vote",
+   "why": "lopsided race or low reach; one closer governor race kept"
+  },
+  {
+   "event": "Espírito Santo governor runoff",
+   "why": "lopsided race or low reach; one closer governor race kept"
+  },
+  {
+   "event": "Federal District governor runoff",
+   "why": "lopsided race or low reach; one closer governor race kept"
+  },
+  {
+   "event": "Acre governor runoff",
+   "why": "lopsided race or low reach; one closer governor race kept"
+  },
+  {
+   "event": "Amazonas governor runoff",
+   "why": "lopsided race or low reach; one closer governor race kept"
+  },
+  {
+   "event": "US-Iran ceasefire holds through the weekend",
+   "why": "near-certain no for a one-day window; on the forecast board instead"
+  },
+  {
+   "event": "Russia-Ukraine talks date",
+   "why": "near-certain no for a one-day window; on the forecast board instead"
+  },
+  {
+   "event": "Venezuela election date",
+   "why": "near-certain no for a one-day window; on the forecast board instead"
+  },
+  {
+   "event": "Israel final weekend before 27 Oct vote",
+   "why": "vote is on 27 Oct; belongs in the 28 Oct edition"
+  },
+  {
+   "event": "Brazil - concession",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Serbia – margin",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Serbia – SPS/Dačić threshold and third place",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Serbia – European Serbia (Tepić–Ponoš) threshold",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Serbia – next PM",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Bulgaria – runoff needed",
+   "why": "practically certain (market above 95%)"
+  },
+  {
+   "event": "Bulgaria – Iotova first",
+   "why": "practically certain (market above 95%)"
+  },
+  {
+   "event": "Bulgaria – margin",
+   "why": "correlated with a kept claim or checkability risk"
+  },
+  {
+   "event": "Bulgaria – second place",
+   "why": "practically certain (market above 95%)"
+  },
+  {
+   "event": "France – gilets jaunes Act II (24 Oct)",
+   "why": "no step falls on 25 Oct"
+  },
+  {
+   "event": "Rome Film Fest closes; Progressive Cinema awards",
+   "why": "decided on 24 Oct, before the events day"
+  },
+  {
+   "event": "Bulgarian presidential first round",
+   "why": "lower editorial score"
+  },
+  {
+   "event": "Brazil gubernatorial runoffs alongside the presidential runoff",
+   "why": "lower editorial score"
+  },
+  {
+   "event": "EU-GCC summit (24 Oct) outcome",
+   "why": "decided on 24 Oct, before the events day"
+  },
+  {
+   "event": "UNCTAD World Investment Forum opens in Doha (25-27 Oct)",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "CBD COP17 Yerevan, final week begins",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Israel: last Sunday before the 27 Oct Knesset vote",
+   "why": "vote is on 27 Oct; belongs in the 28 Oct edition"
+  },
+  {
+   "event": "Prix Femina third selection (23 Oct) leads into the Goncourt final four (27 Oct)",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Tokyo International Film Festival opens 26 Oct",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Minor Asian festivals closing 25 Oct (Sapporo ISFF, Women Make Waves, Freedom FF, Jakarta Film Week, Boston AAFF)",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Space: October TBD launches that might slip to 25 Oct (CRS-35, Vulcan VC6L Amazon Leo, Ariane 64 LE-04, Starship Flight 15, SSLV commercial debut)",
+   "why": "outcome lands after 25 Oct or low reach"
+  },
+  {
+   "event": "Otázky Václava Moravce / Sunday political TV guests",
+   "why": "Moravec left ČT in March 2026; ČT's Sunday noon slot is a special of Události, komentáře (eurozpravy 11 Mar 2026). No guest list for 25 Oct found; guest appearances not a good uncertain claim."
+  },
+  {
+   "event": "Kantar model shows ANO at or above 30 %",
+   "why": "Alternative to cz-kantar-model-published; strongly correlated (resolves NO if no model). Use only if editor wants a number claim: STEM 1–6 Oct had ANO 31.3, Kantar 30 Aug 30.5."
+  },
+  {
+   "event": "Clocks go back to CET at 03:00 on 25 Oct",
+   "why": "Certain; no uncertainty."
+  },
+  {
+   "event": "Motorway/rail openings 24–25 Oct",
+   "why": "ŘSD opened D48 Palačov–Dub and Palačovská spojka on 21 Oct (ceskedalnice.cz); nothing found for 24–25 Oct."
+  },
+  {
+   "event": "Union/farmers' protests",
+   "why": "No protest scheduled for 24–25 Oct found (school-union strike items found were from 2023)."
+  },
+  {
+   "event": "Brno coalition",
+   "why": "Already signed on 23 Oct by five groupings, mayor-designate Jakub Hruška (KDU-ČSL), ANO in opposition (iRozhlas 23 Oct 13:05)."
+  },
+  {
+   "event": "Party congresses / members' votes on 24–25 Oct",
+   "why": "None found; 2026 congresses were in Jan–Apr (CNN Prima 4 Jan 2026)."
+  },
+  {
+   "event": "State honours: names published before 26 Oct",
+   "why": "Castle does not publish names in advance (Echo24/ČTK 2025) — near-certain NO; replaced by headcount claim."
+  },
+  {
+   "event": "Monday 26 Oct cabinet meeting without Babiš",
+   "why": "Meeting itself near-certain; agenda not fetchable (vlada.gov.cz blocked); outcomes after 12:00."
+  },
+  {
+   "event": "Ji.hlava festival awards",
+   "why": "Awards at close ~31 Oct–1 Nov, outside window."
+  },
+  {
+   "event": "Prague portfolio split announced by 12:00 Monday",
+   "why": "Overlaps cz-prague-prahasobe-joins; Monday meeting time unknown; kept one Prague claim per party."
+  },
+  {
+   "event": "Czech weekend box office",
+   "why": "UFD figures come out Monday afternoon or later — after deadline; no release list checked."
+  },
+  {
+   "event": "Veselský pond harvest tonnage, Kutná Hora chocolate festival, Plzeň road-movie festival",
+   "why": "Local fillers; no checkable uncertain outcome."
+  }
+ ]
+}
