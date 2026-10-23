@@ -174,3 +174,143 @@ export function watchScore(q) {
   for (let t = start; t <= end; t += 3600e3) { sum += brier(watchProbAt(q, t), q.result.outcome); n++; }
   return { brier: sum / n, final: watchProbAt(q, end) };
 }
+
+// ---------- added 23 Oct 2026: skill, calibration, intervals, schedule slips, publisher track ----------
+
+export const PUBLISHER_DIR = path.join(ROOT, 'data', 'publisher');
+export const CALIBRATION_FILE = path.join(ROOT, 'pipeline', 'calibration.json');
+export const SLIP_FILE = path.join(ROOT, 'pipeline', 'reference-data', 'schedule-slip.json');
+
+const logit = (p) => Math.log(p / (1 - p));
+const sigmoid = (x) => 1 / (1 + Math.exp(-x));
+export { logit, sigmoid };
+
+/** True for a numeric-range claim (kind "interval"); every other claim is binary. */
+export const isInterval = (c) => c?.kind === 'interval';
+
+/**
+ * Combination rule with fitted parameters (METHODOLOGY 4.6). Without parameters it is the plain geometric
+ * mean of odds. With them: weighted mean of log-odds (weights by role, default 1), then the Platt map
+ * logit(p) = a + b·x fitted on our own record (b > 1 extremizes, a corrects a lean towards yes or no).
+ */
+export function combine(agents, params) {
+  if (!params || params.method === 'geo-odds') return geoMeanOdds(agents.map((a) => a.p));
+  const w = params.weights || {};
+  let sw = 0, sx = 0;
+  for (const a of agents) { const wi = w[a.role] ?? 1; sw += wi; sx += wi * logit(a.p); }
+  const x = sx / sw;
+  const pl = params.platt || { a: 0, b: 1 };
+  return sigmoid(pl.a + pl.b * x);
+}
+
+/** Brier skill score against a reference: 1 = perfect, 0 = no better than the reference, below 0 = worse. */
+export const skill = (ours, ref) => (ref > 0 ? 1 - ours / ref : null);
+
+/**
+ * Murphy decomposition of the Brier score over ten probability bands:
+ * Brier ≈ reliability − resolution + uncertainty. Low reliability = well calibrated; high resolution = the
+ * forecasts separate what happens from what does not (the part a coin toss or a base rate cannot do).
+ */
+export function murphy(rows) {
+  if (!rows.length) return null;
+  const N = rows.length;
+  const obar = rows.filter((r) => r.outcome === 'yes').length / N;
+  const bins = new Map();
+  for (const r of rows) { const k = Math.min(9, Math.floor(r.probability * 10)); if (!bins.has(k)) bins.set(k, []); bins.get(k).push(r); }
+  let rel = 0, res = 0;
+  for (const list of bins.values()) {
+    const n = list.length;
+    const pk = list.reduce((s, r) => s + r.probability, 0) / n;
+    const ok = list.filter((r) => r.outcome === 'yes').length / n;
+    rel += n * (pk - ok) ** 2; res += n * (ok - obar) ** 2;
+  }
+  return { reliability: rel / N, resolution: res / N, uncertainty: obar * (1 - obar), base: obar };
+}
+
+/**
+ * Interval claims: quantiles q10, q50, q90 of a number published by a named source. Scored by the interval
+ * score of the 80% range (width plus 10× the distance by which the value fell outside), divided by the claim's
+ * `scale` (the usual size of a surprise for that indicator) so that different units can be averaged.
+ */
+export function intervalScore(c, y) {
+  const { q10: l, q90: u } = c.quantiles;
+  const a = 0.2;
+  const is = (u - l) + (2 / a) * Math.max(0, l - y) + (2 / a) * Math.max(0, y - u);
+  return is / (c.scale || 1);
+}
+export const intervalHit = (c, y) => y >= c.quantiles.q10 && y <= c.quantiles.q90;
+/** Absolute error of the median in scale units; also used for the consensus benchmark. */
+export const scaledError = (c, y, centre = c.quantiles.q50) => Math.abs(y - centre) / (c.scale || 1);
+/** 0..1 closeness for colouring: 1 at the median, 0.5 at the edge of the 80% range, falling to 0 a range-width outside. */
+export function intervalCloseness(c, y) {
+  const { q10: l, q50: m, q90: u } = c.quantiles;
+  if (y >= l && y <= u) { const half = y >= m ? u - m : m - l; return half > 0 ? 0.5 + 0.5 * (1 - Math.abs(y - m) / half) : 1; }
+  const width = Math.max(u - l, 1e-9);
+  const out = y < l ? l - y : y - u;
+  return Math.max(0, 0.5 - 0.5 * (out / width));
+}
+
+/** Resolved interval claims across editions: rows with value. */
+export function measuredClaims(editions) {
+  const rows = [];
+  for (const ed of editions) {
+    const results = resultsFor(ed.id);
+    for (const c of claimsOf(ed)) {
+      if (!isInterval(c)) continue;
+      const r = results.get(c.id);
+      if (!r || r.outcome !== 'measured' || typeof r.value !== 'number') continue;
+      rows.push({ ...c, value: r.value, result: r });
+    }
+  }
+  return rows;
+}
+
+/** Every result, binary or measured, with its claim (for quality metrics: void, ambiguous, late, held). */
+export function allResults(editions) {
+  const rows = [];
+  for (const ed of editions) {
+    const results = resultsFor(ed.id);
+    for (const c of claimsOf(ed)) { const r = results.get(c.id); if (r) rows.push({ claim: c, result: r }); }
+  }
+  return rows;
+}
+
+/** Schedule-slip classes: prior from reference data, updated with our own record (results with `held`). */
+export function loadSlip() {
+  return fs.existsSync(SLIP_FILE) ? readJson(SLIP_FILE) : { classes: [] };
+}
+export function slipTable(editions) {
+  const ref = loadSlip();
+  const own = new Map();
+  for (const { claim, result } of allResults(editions)) {
+    if (typeof result.held !== 'boolean' || !claim.slip_class || claim.slip_class === 'none') continue;
+    const o = own.get(claim.slip_class) || { held: 0, slipped: 0 };
+    result.held ? o.held++ : o.slipped++;
+    own.set(claim.slip_class, o);
+  }
+  return (ref.classes || []).map((k) => {
+    const o = own.get(k.id) || { held: 0, slipped: 0 };
+    const n = o.held + o.slipped;
+    const post = (k.prior_rate * k.prior_n + o.slipped) / (k.prior_n + n);
+    return { ...k, own: o, own_n: n, rate: post };
+  });
+}
+
+/** Fitted calibration parameters (scripts/calibrate.mjs), or null. */
+export function loadCalibration() {
+  return fs.existsSync(CALIBRATION_FILE) ? readJson(CALIBRATION_FILE) : null;
+}
+
+/** The publisher's own forecasts on the paper's claims (a separate, separately scored track). */
+export function loadPublisher() {
+  if (!fs.existsSync(PUBLISHER_DIR)) return [];
+  return fs.readdirSync(PUBLISHER_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort()
+    .map((f) => ({ file: f, ...readJson(path.join(PUBLISHER_DIR, f)) }));
+}
+
+/** Decimal bookmaker odds → probabilities with the margin (overround) removed proportionally. */
+export function oddsToProbs(odds) {
+  const inv = odds.map((o) => 1 / o);
+  const s = inv.reduce((a, b) => a + b, 0);
+  return { probs: inv.map((x) => x / s), overround: s - 1 };
+}

@@ -50,7 +50,8 @@ Každý kandidát se zapíše s údaji:
 - datum a čas, místo, instituce;
 - rubrika (Česko, Evropa, Svět, Ekonomika, Věda a zdraví, Kultura);
 - odkaz na zdroj;
-- **stav termínu**: `official` (v kalendáři instituce), `reported` (ohlášeno aspoň ve dvou důvěryhodných médiích) nebo `speculative`. Spekulace nikdy nejdou na titulní stranu.
+- **stav termínu**: `official` (v kalendáři instituce), `reported` (ohlášeno aspoň ve dvou důvěryhodných médiích) nebo `speculative`. Spekulace nikdy nejdou na titulní stranu;
+- **třída skluzu**: druh naplánované události z [`pipeline/reference-data/schedule-slip.json`](pipeline/reference-data/schedule-slip.json) (bod Sněmovny s pevným zařazením, schválení v Radě, rozsudek, start rakety…), nebo `none`. Každá třída nese míru, s jakou se takové události v plánovaný den nekonají (oddíl 4.1).
 
 Před výběrem musí být na jedno vydání aspoň 40 kandidátů.
 
@@ -73,10 +74,15 @@ Každá zpráva nese jedno nebo více tvrzení. Tvrzení musí být:
 3. **Ověřitelné**: jmenuje primární zdroj, který rozhodne (`resolution_source`), a přesný test (`criterion`).
 4. **Nepodmíněné**: když se událost odloží, tvrzení se obvykle nesplní. Riziko odkladu je proto součástí pravděpodobnosti. Neplatné je tvrzení jen tehdy, když zdroj přestane existovat nebo kritérium nejde použít.
 5. **Informativní**: míří na nejistou část události. „Sacharovova cena bude oznámena“ nic neříká; „Sacharovovu cenu dostane Tundu Lissu“ ano.
+6. **Včas ověřitelné**: tvrzení v poli `publishes` uvádí, kdy a kde rozhodující zdroj výsledek zveřejní („tisková zpráva ČSÚ v 9:00 dne 30. října“). Když to nikdo neumí říct, tvrzení se přepíše. Text tvrzení a kritérium musí říkat totéž; tvrzení, jehož text a kritérium se rozcházejí, se před uzávěrkou přepíše.
 
 Pravděpodobnosti se drží mezi 3 a 97 %. Co je jistější, není predikce a uvádí se jako naplánovaný fakt.
 
 Vzájemně se vylučující tvrzení (například kdo ze tří finalistů vyhraje) se zveřejňují společně a jejich součet musí být 100 %.
+
+### 3.1 Číselné predikce
+
+Když je výsledkem číslo zveřejněné oficiálním zdrojem (rychlý odhad inflace, HDP, nezaměstnanost, počet hlasů, účast), binární práh zahazuje informaci. Taková zpráva může místo něj nést **intervalové tvrzení** (`kind: "interval"`): střední hodnotu a 80% rozpětí, zadané jako 10., 50. a 90. percentil, s jednotkou a obvyklou velikostí překvapení u daného ukazatele (`scale`, se zdrojem). Každý prognostik dá tři percentily; zprůměrují se. Konsenzus analytiků, kde existuje, se zapíše jako měřítko. Nejvýš tři intervalová tvrzení na vydání; hodnotí se zvlášť (oddíl 7) a odpoledne se nemění.
 
 ## 4. Odhad pravděpodobnosti
 
@@ -86,13 +92,15 @@ Každé tvrzení projde stejným postupem. Všechny kroky se zapisují do soubor
 
 Najít referenční třídu: soubor srovnatelných minulých případů. Například „dohody z trialogu předložené ke konečnému hlasování v 10. volebním období“, „první čtení rozpočtu při koaliční většině ve Sněmovně“, „průzkumy před druhým kolem s rozdílem do dvou bodů čtyři dny před volbami“. Zapsat základní četnost a velikost třídy. Základní četnosti se kde to jde berou z dat: [`pipeline/reference-data/`](pipeline/reference-data/README.md) obsahuje četnosti spočtené z otevřených dat o hlasování ve Sněmovně, z porovnání posledních průzkumů s výsledky voleb a z rozhodnutí centrálních bank, i se skripty, které je přepočítají. Knihovna referenčních tříd v [`pipeline/reference-classes.json`](pipeline/reference-classes.json) s každým vydáním roste.
 
+**Bude se to ten den vůbec konat?** U novin na dva dny dopředu je nejčastější cestou k omylu ne špatný výsledek, ale událost, která se ten den nekoná. Třída skluzu každého tvrzení dává výchozí míru: u Sněmovny z dat (například jen zhruba dvě třetiny bodů s pevným zařazením se na své schůzi projednají), u ostatních institucí odhad. Každá míra se zpřesňuje vlastním záznamem (`node scripts/refdata/slip.mjs`), takže během několika týdnů odhady nahradí naše pozorování. Prognostik od základní četnosti a oponent začínají riziko odkladu od této míry.
+
 ### 4.2 Pohled zevnitř
 
 Vypsat konkrétní faktory, které tento případ od základní četnosti posouvají: aritmetika hlasů a postoje frakcí či stran, veřejná prohlášení, procedurální pravidla, dosavadní chování aktérů, riziko odkladu. Každý faktor se zapíše se směrem a přibližnou velikostí v logaritmu šancí, aby šlo výsledné číslo zrekonstruovat.
 
 ### 4.3 Vnější signály
 
-Kde existují, použít nezávislé agregáty: predikční trhy (Polymarket, Kalshi; vážené podle likvidity), komunitní predikce Metaculus, průměry průzkumů místo jednotlivých průzkumů, konsenzus analytiků u statistických dat. Cena v okamžiku predikce se ukládá k tvrzení a slouží jako měřítko při hodnocení. Predikce, která se od likvidního trhu liší o víc než 15 procentních bodů, musí mít písemné zdůvodnění.
+Kde existují, použít nezávislé agregáty: predikční trhy (Polymarket, Kalshi, Betfair; vážené podle likvidity), kurzy sázkových kanceláří (Tipsport a Fortuna vypisují českou i zahraniční politiku), predikční platformy (Metaculus, Good Judgment Open, Manifold), průměry průzkumů místo jednotlivých průzkumů, konsenzus analytiků u statistických dat. Kurzy sázkových kanceláří se převádějí na pravděpodobnost bez marže kanceláře (`node scripts/refdata/models.mjs odds …`) a ukládají se i samotné kurzy, aby šel převod zkontrolovat. Každý signál se zapisuje s druhem (burza, sázková kancelář, platforma) a každý druh se jako měřítko vyhodnocuje zvlášť. Cena v okamžiku predikce se ukládá k tvrzení a slouží jako měřítko při hodnocení. Predikce, která se od likvidního trhu liší o víc než 15 procentních bodů, musí mít písemné zdůvodnění.
 
 ### 4.4 Nezávislý tým
 
@@ -104,9 +112,11 @@ Každé tvrzení začíná podkladem (dossierem): potvrzený termín, datovaná 
 - **Kotva**: začne kvantitativní kotvou, likvidním trhem nebo statistickým modelem (chyba průzkumů, aritmetika hlasů, konsenzus a obvyklá velikost překvapení), a odchýlí se od ní jen ze zapsaných důvodů;
 - **Nezávislý**: jiný model, který má jen podklad, jako kontrola slepých míst, která ostatní sdílejí.
 
+Prognostici neběží všichni na stejném modelu ([`config.ensemble_models`](pipeline/config.json)): prognostici postavení na jednom modelu dělají stejné chyby, a jejich průměr pak vypadá jistěji, než by měl.
+
 Pět pravděpodobností se spojí geometrickým průměrem šancí. Když se liší o víc než 25 procentních bodů, všech pět dostane souhrn faktů (bez čísel) a odhadne znovu; když se liší i pak, uvedeme, že podklady jsou smíšené, nebo se tvrzení přepíše. Číslo každého prognostika se ukládá k tvrzení a hodnotí se zvlášť, aby šlo po vyhodnocení dostatku tvrzení prognostiky vážit podle jejich výsledků.
 
-Tvrzení vybíráme podle jejich informační hodnoty: nejvýš čtvrtina tvrzení vydání smí ležet pod 10 % nebo nad 90 %.
+Tvrzení vybíráme podle jejich informační hodnoty: nejvýš čtvrtina tvrzení vydání smí ležet pod 10 % nebo nad 90 % a každé vydání nese aspoň tři skutečně otevřená tvrzení mezi 30 a 70 %. Noviny plné bezpečných tipů na 90 % by vypadaly přesně a nedokazovaly by nic.
 
 ### 4.5 Red team
 
@@ -115,7 +125,10 @@ Samostatný oponent čte hotové predikce s jedinou otázkou: co nás zítra nej
 ### 4.6 Konzistence a kalibrace
 
 - Vzájemně se vylučující tvrzení musí dát dohromady 100 %; související tvrzení si nesmí odporovat.
-- Po 50 vyhodnocených tvrzeních se podle vlastní historie (jak často se naše tipy na 70 % skutečně splnily) nastaví kalibrační korekce a aplikuje se na surové číslo týmu. Korekce i data se zveřejňují na stránce přesnosti a aktualizují se jednou měsíčně.
+- Pravidlo spojování se zlepšuje podle vlastního záznamu skriptem [`scripts/calibrate.mjs`](scripts/calibrate.mjs), který každé ráno spouští hodnotitel a který zapisuje [`pipeline/calibration.json`](pipeline/calibration.json):
+  - **Korekce vlastního zkreslení** (od 50 vyhodnocených tvrzení): logit(p) = a + b·x, kde x je průměrný logaritmus šancí prognostiků. Sklon b nad 1 znamená, že surový tým byl příliš opatrný, a jeho čísla se posunou dál od 50 % (prognostici se společnými informacemi mají sklon reagovat společně slabě); nenulové a opravuje náklon k ano nebo ne. Odhad je tažen k „žádné korekci“, takže malé vzorky mění málo, a jeho účinek mimo vzorek se zveřejňuje.
+  - **Váhy prognostiků** (od 120 vyhodnocených tvrzení): prognostici s lepším Brierovým skóre dostanou v průměru větší váhu, tlumenou směrem k rovným vahám.
+- Dokud je korekce aktivní, každé nové tvrzení zapisuje použité parametry (`forecast.combination`), validátor z nich zveřejněné číslo přepočítá a stránka přesnosti ukazuje aktuální stav.
 
 ### 4.7 Uzávěrka
 
@@ -144,7 +157,7 @@ Vyhodnocuje oponent, který vydání nepsal, podle [`pipeline/RESOLVER.md`](pipe
 
 1. Počkat, až uplyne termín tvrzení.
 2. Použít zveřejněné kritérium na jmenovaný primární zdroj. Sekundární zpravodajství jen tehdy, když primární zdroj mlčí, a to ze dvou nezávislých médií.
-3. Zapsat `yes` (splněno), `no` (nesplněno) nebo `void` (neplatné) s odkazem na doklad a jednou větou.
+3. Zapsat `yes` (splněno), `no` (nesplněno) nebo `void` (neplatné) – u intervalového tvrzení `measured` se zveřejněnou hodnotou `value`, nebo `void` – s odkazem na doklad a jednou větou. Zapsat také, zda se naplánovaná událost ten den konala (`held`), a označit `ambiguous`, když bylo nutné kritérium vykládat.
 4. Výsledek zapsat do samostatného souboru výsledků. Soubor vydání se nikdy nemění.
 
 Když je kritérium nejednoznačné, použije se výklad, který by neutrální pozorovatel vyčetl ze samotného textu tvrzení, a nejednoznačnost se poznamená. Nejednoznačná tvrzení se počítají a při opakování se pravidla psaní zpřísní.
@@ -155,7 +168,10 @@ Když je kritérium nejednoznačné, použije se výklad, který by neutrální 
 - **Logaritmické skóre** se vede souběžně, protože víc trestá sebejisté omyly.
 - **Kalibrace**: tvrzení se seskupí podle pásma pravděpodobnosti (například 60–70 %) a porovná se, jak často se splnila.
 - **Rozpad** podle rubrik a podle stavu termínu.
-- **Srovnání** se základní linií 50 %, se základní četností referenční třídy a s cenou na predikčním trhu v okamžiku uzávěrky, pokud existovala; naše informativní tvrzení (15–85 %) se hodnotí i samostatně.
+- **Srovnání a dovednost** se základní linií 50 %, se základní četností referenční třídy a s cenou na trhu, u sázkové kanceláře nebo na platformě v okamžiku uzávěrky, pokud existovala; naše informativní tvrzení (15–85 %) se hodnotí i samostatně. Každé srovnání se uvádí i jako dovednost, 1 − náš Brier ÷ Brier měřítka: nula znamená, že k měřítku nic nepřidáváme.
+- **Kalibrace a rozlišení**: Brierovo skóre se rozkládá na chybu kalibrace (vycházejí naše tipy na 70 % v 70 % případů?), rozlišení (oddělují naše čísla to, co se stane, od toho, co ne?) a obtížnost otázek. Vysoká úspěšnost bez rozlišení by znamenala, že jsme si vybírali jen snadné otázky.
+- **Číselné predikce**: podíl výsledků uvnitř našeho 80% rozpětí (má být kolem 80 %), intervalové skóre (šířka rozpětí plus penalizace za minutí, v jednotkách obvyklého překvapení) a chyba naší střední hodnoty proti konsenzu analytiků.
+- **Skluzy termínů** podle druhu události a **ověřitelnost**: podíl neplatných, nejednoznačných a pozdě vyhodnocených tvrzení.
 - **Prognostici**: Brierovo skóre každé z pěti rolí v týmu.
 - **Oblast**: tvrzení o Česku, Evropě a světě zvlášť.
 
@@ -168,6 +184,8 @@ V archivovaném vydání je každá vyhodnocená zpráva i razítko obarvené na
 - Každý týden se rozeberou omyly s nejvyšším Brierovým skóre. Každý dostane odstavec rozboru: špatná základní četnost, přehlédnutý fakt, špatně postavené tvrzení, nebo smůla.
 - Referenční třídy se aktualizují s každým vyhodnoceným tvrzením.
 - Mezery v seznamu zdrojů, které rozbor odhalí, se doplní do `pipeline/sources.json`.
+- Každé ráno se z vlastního záznamu znovu spočítají míry skluzů a kalibrační parametry (`scripts/refdata/slip.mjs`, `scripts/calibrate.mjs`).
+- Nejednoznačná nebo neplatná tvrzení vedou ke zpřísnění pravidel psaní; opakovaná příčina se zapíše do EDITOR.md.
 
 ## 9. Vydávání a schvalování
 
@@ -178,3 +196,7 @@ Vydání č. 1 vzniklo před dokončením tohoto postupu a je označené jako pi
 ## 10. Sledované otázky
 
 Vedle denního vydání vedeme tabuli 25 až 40 stálých otázek o nejbližších měsících: volby a sestavování vlád, rozpočty, rozhodnutí centrálních bank, války a jednání, nejméně třetina z nich o Česku. Každá má přesné kritérium, termín a primární zdroj jako každé tvrzení. Večerní redakce je denně kontroluje a celým týmem znovu odhaduje, kdykoli se stane něco podstatného, a nejméně jednou týdně; nové číslo se zapíše, jen pokud se pohne aspoň o 5 bodů. Dřívější čísla se nikdy nemění, takže historie ukazuje, jak se predikce vyvíjela. Vyhodnocené otázky hodnotíme časově váženým Brierovým skóre: počítá se každá hodina, po kterou byla otázka otevřená, takže správný odhad včas má větší cenu než správný odhad na poslední chvíli. Když denní zpráva posune sledovanou otázku, zpráva to uvede.
+
+## 11. Vlastní odhady vydavatele
+
+Vydavatel může k některým tvrzením připsat vlastní pravděpodobnost ještě před začátkem událostí. Tato čísla se v novinách nikdy nepoužijí. Ukládají se do `data/publisher/` s časem, kdy vznikla, a s údajem, zda vydavatel už viděl číslo novin, a na stránce přesnosti se hodnotí zvlášť proti novinám i proti průměru obou. Pokud lidský úsudek přidává informaci, průměr porazí noviny; pokud ne, ukáže to záznam také.

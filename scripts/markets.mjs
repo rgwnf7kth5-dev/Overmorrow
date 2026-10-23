@@ -1,4 +1,4 @@
-// Prediction-market lookup for forecasters: Polymarket and Kalshi (public, no key), and Metaculus when
+// Prediction-market lookup for forecasters: Polymarket, Kalshi and Manifold (public, no key), and Metaculus when
 // METACULUS_TOKEN is set (community forecasts; the API may withhold the community figure on some questions).
 // Usage:
 //   node scripts/markets.mjs search "brazil election"      list matching markets with prices, volume and liquidity
@@ -30,7 +30,7 @@ const parse = (s) => { try { return typeof s === 'string' ? JSON.parse(s) : s ||
 function pmMarket(m, ev) {
   const outcomes = parse(m.outcomes), prices = parse(m.outcomePrices).map(Number);
   return {
-    source: 'polymarket', id: `polymarket:${m.slug}`, event: ev?.title, question: m.question,
+    source: 'polymarket', kind: 'exchange', id: `polymarket:${m.slug}`, event: ev?.title, question: m.question,
     url: `https://polymarket.com/event/${ev?.slug || m.slug}`,
     outcomes: outcomes.map((o, i) => ({ outcome: o, price: prices[i] ?? null })),
     volume: num(m.volume), liquidity: num(m.liquidity), closes: m.endDate, active: m.active && !m.closed,
@@ -64,7 +64,7 @@ async function kalshiEvents() {
 function ksMarket(m, ev) {
   const yes = num(m.last_price) ?? num(m.yes_bid);
   return {
-    source: 'kalshi', id: `kalshi:${m.ticker}`, event: ev?.title, question: m.title || ev?.title, subtitle: m.yes_sub_title || m.subtitle,
+    source: 'kalshi', kind: 'exchange', id: `kalshi:${m.ticker}`, event: ev?.title, question: m.title || ev?.title, subtitle: m.yes_sub_title || m.subtitle,
     url: `https://kalshi.com/markets/${(ev?.series_ticker || m.event_ticker || '').toLowerCase()}`,
     outcomes: [{ outcome: 'Yes', price: yes === null ? null : yes / 100 }],
     bid: num(m.yes_bid) / 100, ask: num(m.yes_ask) / 100, volume: num(m.volume), liquidity: num(m.liquidity), closes: m.close_time, active: m.status === 'active',
@@ -92,8 +92,17 @@ async function metaculusSearch(q) {
   return (d.results || []).filter((p) => p.question).map((p) => {
     const latest = p.question.aggregations?.recency_weighted?.latest;
     const cp = latest?.centers?.[0] ?? latest?.means?.[0] ?? null;
-    return { source: 'metaculus', id: `metaculus:${p.id}`, question: p.title, url: `https://www.metaculus.com/questions/${p.id}/`, type: p.question.type, outcomes: p.question.type === 'binary' ? [{ outcome: 'Yes', price: cp }] : [], forecasters: p.nr_forecasters ?? null, closes: p.question.scheduled_close_time, note: cp === null ? 'community forecast not available through the API' : undefined };
+    return { source: 'metaculus', kind: 'platform', id: `metaculus:${p.id}`, question: p.title, url: `https://www.metaculus.com/questions/${p.id}/`, type: p.question.type, outcomes: p.question.type === 'binary' ? [{ outcome: 'Yes', price: cp }] : [], forecasters: p.nr_forecasters ?? null, closes: p.question.scheduled_close_time, note: cp === null ? 'community forecast not available through the API' : undefined };
   });
+}
+
+// Manifold: play-money but often the only market on Czech and European questions; kind "platform", weight it low.
+async function manifoldSearch(q) {
+  const d = await getJson(`https://api.manifold.markets/v0/search-markets?term=${encodeURIComponent(q)}&filter=open&limit=10`);
+  return (d || []).filter((m) => m.outcomeType === 'BINARY').map((m) => ({
+    source: 'manifold', kind: 'platform', id: `manifold:${m.id}`, question: m.question, url: m.url,
+    outcomes: [{ outcome: 'Yes', price: num(m.probability) }], volume: num(m.volume), liquidity: num(m.totalLiquidity), traders: m.uniqueBettorCount ?? null, closes: m.closeTime ? new Date(m.closeTime).toISOString() : null, active: !m.isResolved,
+  }));
 }
 
 async function price(id) {
@@ -103,18 +112,22 @@ async function price(id) {
     if (!m) throw new Error(`no market ${key}`);
     return { ...pmMarket(m, (m.events || [])[0]), read_at: new Date().toISOString() };
   }
+  if (src === 'manifold') {
+    const m = await getJson(`https://api.manifold.markets/v0/market/${encodeURIComponent(key)}`);
+    return { source: 'manifold', kind: 'platform', id, question: m.question, url: m.url, outcomes: [{ outcome: 'Yes', price: num(m.probability) }], volume: num(m.volume), traders: m.uniqueBettorCount ?? null, read_at: new Date().toISOString() };
+  }
   if (src === 'kalshi') {
     const { market } = await getJson(`${KS}/markets/${encodeURIComponent(key)}`);
     return { ...ksMarket(market), read_at: new Date().toISOString() };
   }
-  throw new Error('id must start with polymarket: or kalshi:');
+  throw new Error('id must start with polymarket:, kalshi: or manifold:');
 }
 
 const [cmd, ...rest] = process.argv.slice(2);
 try {
   if (cmd === 'search') {
     const q = rest.join(' ');
-    const settled = await Promise.allSettled([polymarketSearch(q), kalshiSearch(q), metaculusSearch(q)]);
+    const settled = await Promise.allSettled([polymarketSearch(q), kalshiSearch(q), metaculusSearch(q), manifoldSearch(q)]);
     const markets = settled.flatMap((s) => (s.status === 'fulfilled' ? s.value : []));
     const errors = settled.filter((s) => s.status === 'rejected').map((s) => String(s.reason.message || s.reason));
     markets.sort((a, b) => (b.volume || 0) - (a.volume || 0));
@@ -123,7 +136,7 @@ try {
   } else if (cmd === 'price') {
     console.log(JSON.stringify(await price(rest[0]), null, 1));
   } else {
-    console.error('usage: node scripts/markets.mjs search <words> | price <polymarket:slug|kalshi:ticker>');
+    console.error('usage: node scripts/markets.mjs search <words> | price <polymarket:slug|kalshi:ticker|manifold:id>\nBookmaker odds (Tipsport, Fortuna, Betfair): read the page with WebFetch, then node scripts/refdata/models.mjs odds <o1> <o2> …');
     process.exit(2);
   }
 } catch (e) {

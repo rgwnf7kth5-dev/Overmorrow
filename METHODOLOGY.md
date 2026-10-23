@@ -50,7 +50,8 @@ Every candidate is recorded with:
 - date and time, place, institution;
 - section (Czech Republic, Europe, World, Economy, Science and Health, Culture);
 - source URL;
-- **schedule status**: `official` (in an institution's own calendar), `reported` (announced in at least two credible outlets), or `speculative`. Speculative items never lead the paper and may appear only in briefs.
+- **schedule status**: `official` (in an institution's own calendar), `reported` (announced in at least two credible outlets), or `speculative`. Speculative items never lead the paper and may appear only in briefs;
+- **slip class**: the kind of scheduled event, from [`pipeline/reference-data/schedule-slip.json`](pipeline/reference-data/schedule-slip.json) (a Chamber item with a fixed slot, a Council adoption, a court judgment, a space launch…), or `none`. Each class carries the rate at which such events do not take place on the scheduled day (section 4.1).
 
 The candidate pool for one edition should contain at least 40 events before selection.
 
@@ -73,10 +74,15 @@ Every report carries one or more claims. A claim must be:
 3. **Checkable**: it names the primary source that will decide it (`resolution_source`) and the exact test (`criterion`).
 4. **Unconditional**: if the event is postponed, the claim usually resolves "No". The risk of postponement is therefore part of the probability. A claim is void only if its resolution source no longer exists or the criterion turns out to be impossible to apply.
 5. **Informative**: it targets the uncertain part of the event. "The Sakharov Prize is announced" is uninformative; "the Sakharov Prize goes to Tundu Lissu" is informative.
+6. **Resolvable on time**: the claim states in `publishes` when and where the deciding source will publish the result ("ČSÚ press release at 09:00 on 30 October"). If nobody can say that, the claim is rewritten. The claim text and the criterion must say the same thing; a claim whose text and criterion diverge is rewritten before freezing.
 
 Probabilities are held between 3% and 97%. Anything more certain is not a forecast and is reported as a scheduled fact instead.
 
 Where several claims are mutually exclusive (for example, which of three finalists wins), they are published together as a set and must sum to 100%.
+
+### 3.1 Number forecasts
+
+Where the outcome is a number published by an official source (an inflation flash estimate, GDP, unemployment, a vote count, turnout), a yes/no threshold throws information away. Such a report may instead carry an **interval claim** (`kind: "interval"`): a central figure and an 80% range, given as the 10th, 50th and 90th percentiles, with the unit and the usual size of a surprise for that indicator (`scale`, with its source). Each forecaster gives the three percentiles; they are averaged. The analysts' consensus, where one exists, is recorded as a benchmark. At most three interval claims per edition; they are scored separately (section 7) and are not revised in the afternoon.
 
 ## 4. Estimating the probability
 
@@ -86,13 +92,15 @@ Each claim goes through the same protocol. All steps are recorded in the edition
 
 Find the reference class: the set of comparable past cases. Examples: "trilogue agreements put to a final plenary vote in the 10th term", "budget first readings with a coalition majority in the Czech Chamber", "runoff polls within two points four days before a vote". Record the base rate and the size of the class. Base rates come from data wherever possible: [`pipeline/reference-data/`](pipeline/reference-data/README.md) holds rates computed from the Czech Chamber's open voting records, the record of final polls against election results, and central-bank decisions, with the scripts that rebuild them. The library of reference classes in [`pipeline/reference-classes.json`](pipeline/reference-classes.json) grows with every edition.
 
+**Will it happen that day at all?** For a newspaper two days ahead the most common way to be wrong is not a wrong outcome but an event that does not take place on the day. Every claim's slip class gives a starting rate: data-based for the Czech Chamber (for example, only about two thirds of agenda items with a fixed slot are dealt with at their meeting), estimates for other institutions. Each rate is updated with our own record (`node scripts/refdata/slip.mjs`), so that within weeks our observations replace the estimates. The base-rate and adversarial forecasters start the postponement risk from this rate.
+
 ### 4.2 Inside view
 
 List the specific factors that move this case away from the base rate: vote arithmetic and group or party positions, public statements, procedural rules, the record of the actors, schedule risk. Each factor is written down with its direction and a rough size in log-odds, so that the final number can be reconstructed.
 
 ### 4.3 External signals
 
-Where they exist, use independent aggregates: prediction markets (Polymarket, Kalshi; weighted by liquidity), Metaculus community forecasts, polling averages rather than single polls, analyst consensus for data releases. The price read at the time of forecasting is stored with the claim and used as a benchmark in scoring. A forecast that departs from a liquid market by more than 15 percentage points needs a written reason.
+Where they exist, use independent aggregates: prediction markets (Polymarket, Kalshi, Betfair; weighted by liquidity), bookmakers' odds (Tipsport and Fortuna list Czech and international politics), forecasting platforms (Metaculus, Good Judgment Open, Manifold), polling averages rather than single polls, analyst consensus for data releases. Bookmakers' odds are converted to probabilities with the bookmaker's margin removed (`node scripts/refdata/models.mjs odds …`), and the odds themselves are stored so the conversion can be checked. Each signal is recorded with its kind (exchange, bookmaker or platform), and each kind is benchmarked separately. The price read at the time of forecasting is stored with the claim and used as a benchmark in scoring. A forecast that departs from a liquid market by more than 15 percentage points needs a written reason.
 
 ### 4.4 Independent ensemble
 
@@ -104,9 +112,11 @@ Each claim starts from a research dossier: the confirmed schedule, dated facts w
 - **Anchor**: starts from a quantitative anchor, a liquid market or a statistical model (poll error, vote arithmetic, consensus and the usual size of surprises), and moves away from it only for stated reasons;
 - **Outsider**: a different model with the dossier only, as a check on blind spots the others share.
 
+The forecasters do not all run on the same model ([`config.ensemble_models`](pipeline/config.json)): forecasters built on one model tend to make the same mistakes, which makes their average look more certain than it should be.
+
 The five probabilities are combined by the geometric mean of odds. If they differ by more than 25 percentage points, all five receive the union of the facts (without the numbers) and forecast again once; if they still differ, the evidence is reported as mixed, or the claim is rewritten. Every forecaster's number is stored with the claim and scored separately, so that once enough claims are resolved the forecasters can be weighted by their record.
 
-Claims are chosen for their information value: at most a quarter of an edition's claims may lie below 10% or above 90%.
+Claims are chosen for their information value: at most a quarter of an edition's claims may lie below 10% or above 90%, and every edition carries at least three genuinely open claims between 30% and 70%. A paper full of safe 90% calls would look accurate and prove nothing.
 
 ### 4.5 Red team
 
@@ -115,7 +125,10 @@ A separate reviewer reads the finished forecasts with one question: what is most
 ### 4.6 Consistency and calibration
 
 - Mutually exclusive sets must sum to 100%; linked claims must not contradict each other.
-- Once 50 claims have been resolved, a calibration correction is fitted to our own record (how often our 70% calls actually came true) and applied to the raw ensemble number. The correction and its data are published on the accuracy page and updated monthly.
+- The combination rule is improved from our own record by [`scripts/calibrate.mjs`](scripts/calibrate.mjs), which the resolver runs every morning and which writes [`pipeline/calibration.json`](pipeline/calibration.json):
+  - **Correction of our own bias** (from 50 resolved claims): logit(p) = a + b·x, where x is the forecasters' mean log-odds. A slope b above 1 means the raw ensemble has been too timid and its figures are pushed away from 50% (forecasters who share information tend to under-react together); a non-zero a corrects a lean towards yes or no. The fit is pulled towards "no correction", so small samples change little, and its out-of-sample effect is reported.
+  - **Forecaster weights** (from 120 resolved claims): forecasters with a better Brier score get more weight in the mean, shrunk towards equal weights.
+- While a correction is active, every new claim records the parameters used (`forecast.combination`), the validator recomputes the published figure from them, and the accuracy page shows the current status.
 
 ### 4.7 Freeze
 
@@ -143,7 +156,7 @@ Resolution is done by a reviewer who did not write the edition, following [`pipe
 
 1. Wait until the claim's deadline has passed.
 2. Apply the published criterion to the named primary source. Secondary reporting is used only if the primary source is silent, and then from two independent outlets.
-3. Record `yes`, `no` or `void`, with an evidence link and a one-line note.
+3. Record `yes`, `no` or `void` (for an interval claim: `measured` with the published `value`, or `void`), with an evidence link and a one-line note. Record also whether the scheduled event took place that day (`held`), and mark `ambiguous` if the criterion had to be interpreted.
 4. Write the result to a separate resolution file. The edition file itself is never touched.
 
 If the criterion is ambiguous, the resolver applies the reading a neutral observer would take from the claim text alone and notes the ambiguity. Ambiguous claims are counted, and the writing rules are tightened when they recur.
@@ -154,7 +167,10 @@ If the criterion is ambiguous, the resolver applies the reading a neutral observ
 - **Log score** is kept alongside, because it punishes confident misses more heavily.
 - **Calibration**: claims grouped by probability band (for example 60–70%) and compared with how often they came true.
 - **Breakdowns** by section and by schedule status.
-- **Benchmarks**: the 50% baseline, the base rate of the reference class, and the prediction-market price at freeze time where one existed; our informative claims (15–85%) are also scored on their own.
+- **Benchmarks and skill**: the 50% baseline, the base rate of the reference class, and the market, bookmaker or platform price at freeze time where one existed; our informative claims (15–85%) are also scored on their own. Each comparison is also given as a skill score, 1 − our Brier ÷ the benchmark's Brier: zero means we add nothing over the benchmark.
+- **Calibration and discrimination**: the Brier score is split into calibration error (are our 70% calls right 70% of the time?), discrimination (do our figures separate what happens from what does not?) and the difficulty of the questions. High accuracy with no discrimination would mean we only picked easy questions.
+- **Number forecasts**: the share of results inside our 80% ranges (it should be about 80%), the interval score (width of the range plus a penalty for misses, in units of the usual surprise), and the error of our central figure against the analysts' consensus.
+- **Schedule slips** by kind of event, and **checkability**: shares of void, ambiguous and late-resolved claims.
 - **Forecasters**: the Brier score of each of the five ensemble roles.
 - **Scope**: Czech, European and world claims separately.
 
@@ -167,6 +183,8 @@ On the archived edition, each scored story and stamp is coloured on a scale from
 - Every week the misses with the largest Brier scores are reviewed. Each gets a one-paragraph post-mortem: wrong base rate, missed fact, bad claim design, or bad luck.
 - Reference classes are updated with every resolved claim.
 - Source registry gaps found in post-mortems are fixed in `pipeline/sources.json`.
+- Every morning the schedule-slip rates and the calibration parameters are refitted from the record (`scripts/refdata/slip.mjs`, `scripts/calibrate.mjs`).
+- Ambiguous or void claims lead to a tighter writing rule; a recurring cause is added to EDITOR.md.
 
 ## 9. Publication and approval
 
@@ -177,3 +195,7 @@ Edition No. 1 was produced before this protocol was complete and is marked as a 
 ## 10. The forecast board
 
 Besides the daily edition, the paper keeps a board of 25 to 40 standing questions about the months ahead: elections and government formation, budgets, central-bank decisions, wars and negotiations, at least a third of them Czech. Each has an exact criterion, a deadline and a primary source, like any claim. The evening desk checks them every day and re-forecasts them with the full ensemble whenever something material happens, and at least weekly; a new figure is recorded only if it moves by 5 points or more. Earlier figures are never changed, so the history shows how each forecast developed. Resolved questions are scored by the time-averaged Brier score: every hour the question was open counts, so being right early is worth more than being right at the end. When a daily story moves a board question, the story says so.
+
+## 11. The publisher's own forecasts
+
+The publisher may add his own probability to some claims before the events begin. These figures are never used in the paper. They are stored in `data/publisher/` with the time they were given and whether he had seen the paper's figure, and scored separately on the accuracy page against the paper and against the average of both. If human judgement adds information, the average will beat the paper; if not, the record will show that too.

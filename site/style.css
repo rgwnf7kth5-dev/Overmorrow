@@ -58,6 +58,10 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lk .bar{flex:0 0 72px;height:4px;background:var(--hair);position:relative}
 .lk .bar i{position:absolute;inset:0 auto 0 0;background:var(--accent)}
 .lk b{color:var(--ink);font-weight:600}
+.lk .bar.range i{inset:0 auto 0 auto;opacity:.45}
+.lk .bar u{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--accent)}
+.lk .bar em{position:absolute;top:-4px;bottom:-4px;width:2px;margin-left:-1px;background:var(--ink)}
+.lk small{font-size:11.5px;color:var(--ink-3)}
 .stamp{font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border:1.5px solid currentColor;white-space:nowrap}
 .stamp.yes{color:var(--yes)}.stamp.no{color:var(--no)}
 .stamp.scored{color:hsl(var(--h) 62% 28%);background:hsl(var(--h) 70% 92%);border-color:hsl(var(--h) 55% 40%)}

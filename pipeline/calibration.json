@@ -1,0 +1,55 @@
+{
+  "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
+  "fitted_at": "2026-10-23T12:37:54Z",
+  "version": "2026-10-23",
+  "resolved": 0,
+  "thresholds": {
+    "weighting": 120,
+    "calibration": 50
+  },
+  "active": {
+    "weights": false,
+    "platt": false
+  },
+  "params": {
+    "method": "geo-odds",
+    "weights": {
+      "base-rate": 1,
+      "evidence": 1,
+      "adversarial": 1,
+      "anchor": 1,
+      "outsider": 1
+    },
+    "platt": {
+      "a": 0,
+      "b": 1
+    }
+  },
+  "forecasters": {
+    "base-rate": {
+      "n": 0,
+      "brier": null
+    },
+    "evidence": {
+      "n": 0,
+      "brier": null
+    },
+    "adversarial": {
+      "n": 0,
+      "brier": null
+    },
+    "anchor": {
+      "n": 0,
+      "brier": null
+    },
+    "outsider": {
+      "n": 0,
+      "brier": null
+    }
+  },
+  "diagnostics": {
+    "raw_ensemble": null,
+    "published": null,
+    "platt_leave_one_out": null
+  }
+}

@@ -21,7 +21,7 @@ Write the findings to `work/<D+2>/afternoon.md`, each with time of publication a
 
 For each morning claim with a material new fact:
 
-1. Run the full ensemble again (EDITOR.md, step 5): three independent agents and the red team, each given the new fact with its link.
+1. Run the full ensemble again (EDITOR.md, steps 4 and 5): the five independent forecasters on their models from `config.ensemble_models`, combined as in step 4 (including `pipeline/calibration.json` when active), and the red team, each given the new fact with its link. Interval claims are not revised.
 2. Revise the claim only if the new combined probability differs from the morning figure by at least 5 percentage points. Small drift is noise; the morning figure stands.
 3. Record the revision with `claim`, `probability`, `reason` (one sentence in English naming the new fact), `reason_cs` (the same in Czech, house rules apply), and `sources` (at least one URL).
 4. Exclusive sets must still sum to 100% after revision: revise every member of the set together.
@@ -30,14 +30,14 @@ Do not revise a claim because of opinion or commentary alone. Do not touch headl
 
 ## 3. Adding stories
 
-Add at most three stories, only for events newly announced for D+1 that clearly merit a place. Each follows the full morning protocol: claim design, ensemble, red team, English text and Czech version (EDITOR.md, steps 4–7b). Put them in `added`, with `size` `quarter` or `half`. If you add stories, write a one-line `summary` and `summary_cs` of the update.
+Add at most three stories, only for events newly announced for D+1 that clearly merit a place. Each follows the full morning protocol: claim design (with `slip_class` and `publishes`), ensemble, red team, English text and Czech version (EDITOR.md, steps 3–6c). Put them in `added`, with `size` `quarter` or `half`. If you add stories, write a one-line `summary` and `summary_cs` of the update.
 
 ## 4. Freeze, validate, publish
 
 1. Set `frozen_at` when the red team is done.
 2. If nothing was revised or added, make no commit and report "Beze změn".
 3. Run `node scripts/validate.mjs` and `node scripts/build.mjs`; both must pass.
-4. Publish according to `pipeline/config.json`: during the approval period open a pull request titled `<D>: afternoon update (for approval)` listing each revision (morning → afternoon, reason, source) and each added claim with its three agent numbers; afterwards merge to `main` by 13:30.
+4. Publish according to `pipeline/config.json`: during the approval period open a pull request titled `<D>: afternoon update (for approval)` listing each revision (morning → afternoon, reason, source) and each added claim with its three agent numbers; afterwards merge to `main` by 13:30. Each revision records the five new agent numbers in its `reason` or in the pull request.
 
 ## File format
 

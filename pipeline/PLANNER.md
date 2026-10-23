@@ -39,7 +39,7 @@ From the agenda items dated E+2, the running stories (two outlets each, last 48 
 }
 ```
 
-Propose `stories_max` stories, so the morning can drop some, with at least `cz_stories_min` + 2 Czech ones. Claims follow EDITOR.md step 3 (informative, thresholds near expectations, postponement covered).
+Propose `stories_max` stories, so the morning can drop some, with at least `cz_stories_min` + 2 Czech ones. Claims follow EDITOR.md step 3 (informative, thresholds near expectations, postponement covered, `slip_class`, `publishes`, text and criterion identical). Plan at least `contested_min` + 2 claims that you expect to land between 30% and 70%, and consider an interval claim for each official number released on E+2.
 
 ## 4. Dossiers
 
@@ -49,7 +49,9 @@ For every proposed claim one research agent writes `data/dossiers/<E+3>/<claim-i
 - **schedule**: confirmation of the event with the primary source;
 - **facts**: dated, each with its URL — statements, vote arithmetic, polls with fieldwork dates, consensus forecasts, the last comparable outcomes;
 - **base rate**: the class, rate and n, from `pipeline/reference-data/` where it applies;
-- **markets**: `node scripts/markets.mjs search …` results that match, with price and read time; Metaculus where available;
+- **schedule slip**: the claim's slip class and its current rate (`node scripts/refdata/slip.mjs <class>`), plus any sign that this particular event may move (contested agenda, obstruction, drafts still open);
+- **markets**: `node scripts/markets.mjs search …` results that match (Polymarket, Kalshi, Manifold, Metaculus), with price and read time; for Czech and other political questions also the Tipsport and Fortuna pages from `pipeline/sources.json` (decimal odds of every outcome, read time);
+- **for a number forecast**: the analysts' consensus and its range, and the usual surprise size for this release with its source;
 - **risks**: what would make the obvious outcome fail;
 - **sources**: every page opened.
 
@@ -57,7 +59,7 @@ Dossiers hold facts, never probabilities.
 
 ## 5. Round-one ensemble
 
-Run the five forecasters of EDITOR.md step 4 for every proposed claim (an agent may take up to eight claims of one role). The outsider gets only the dossier. Record the result in the planning file under each claim's `forecast`, with the disagreement rerun where needed.
+Run the five forecasters of EDITOR.md step 4 for every proposed claim (an agent may take up to eight claims of one role), each role on its model from `config.ensemble_models`. The outsider gets only the dossier. Apply `pipeline/calibration.json` when it is active. Record the result in the planning file under each claim's `forecast`, with the disagreement rerun where needed.
 
 ## 6. Forecast board
 

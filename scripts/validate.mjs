@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds } from './lib.mjs';
+import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs } from './lib.mjs';
 
 const cfg = loadConfig();
 const errors = [];
@@ -15,6 +15,12 @@ const nonEmpty = (s) => typeof s === 'string' && s.trim().length > 0;
 
 // Quality rules added on 23 October 2026 after an audit of edition No. 3; they apply from edition No. 4.
 const QUALITY_FROM = 4;
+// Rules added in the afternoon of 23 October 2026 (schedule-slip classes, publication check, contested claims,
+// intervals, calibrated combination); they apply from config.new_rules_from.
+const NEW_FROM = cfg.new_rules_from ?? 4;
+const SLIP_IDS = new Set((loadSlip().classes || []).map((k) => k.id));
+const CAL = loadCalibration();
+const MARKET_KINDS = ['exchange', 'bookmaker', 'platform'];
 const WEAK_DOMAINS = ['archyde.com', 'bloomingbit.io', 'cryptobriefing.com', 'octagonai.co', 'newsquawk.com'];
 const domainOf = (u) => { try { return new URL(u).hostname.replace(/^(www|m|en|cs|amp)\./, ''); } catch { return ''; } };
 const words = (xs) => xs.join(' ').split(/\s+/).filter(Boolean).length;
@@ -74,18 +80,64 @@ function checkForecast(c, cw) {
   if (f.agents.length && f.agents.every((a) => typeof a.p === 'number' && a.p > 0 && a.p < 1)) {
     const g = geoMeanOdds(f.agents.map((a) => a.p));
     if (Math.abs((f.combined ?? -1) - g) > 0.006) err(cw, `forecast.combined must be the geometric mean of odds (${g.toFixed(3)})`);
-    const expect = Math.round(Math.min(cfg.probability_max, Math.max(cfg.probability_min, g)) * 100) / 100;
+    const comb = f.combination;
+    if (comb && !['geo-odds', 'calibrated'].includes(comb.method)) err(cw, 'forecast.combination.method must be geo-odds or calibrated');
+    const calOn = CAL && CAL.params?.method === 'calibrated' && c.edition && isStamp(c.edition.frozen_at) && Date.parse(c.edition.frozen_at) > Date.parse(CAL.fitted_at);
+    if (calOn && comb?.method !== 'calibrated') err(cw, `calibration ${CAL.version} is active: copy pipeline/calibration.json params into forecast.combination`);
+    const final = comb?.method === 'calibrated' ? combine(f.agents, comb) : g;
+    if (comb?.method === 'calibrated' && typeof f.calibrated === 'number' && Math.abs(f.calibrated - final) > 0.006) err(cw, `forecast.calibrated must be ${final.toFixed(3)} (combination applied to the agents)`);
+    const expect = Math.round(Math.min(cfg.probability_max, Math.max(cfg.probability_min, final)) * 100) / 100;
     if (Math.abs(c.probability - expect) > 0.005 && !nonEmpty(f.adjustment)) err(cw, `probability ${c.probability} differs from the ensemble (${expect}); explain in forecast.adjustment`);
   }
   if (f.market) {
     if (typeof f.market.p !== 'number' || !/^https?:\/\//.test(f.market.url || '') || !isStamp(f.market.read_at)) err(cw, 'forecast.market needs p, url and read_at');
+    if (f.market.kind !== undefined && !MARKET_KINDS.includes(f.market.kind)) err(cw, `forecast.market.kind must be one of ${MARKET_KINDS.join(', ')}`);
+    if (f.market.kind === 'bookmaker') {
+      const o = f.market.odds;
+      if (!Array.isArray(o) || o.length < 2 || o.some((x) => !(x > 1)) || !Number.isInteger(f.market.outcome) || !(f.market.outcome >= 0 && f.market.outcome < o.length)) err(cw, 'bookmaker market needs odds (decimal odds of every outcome) and outcome (index of the outcome the claim is about)');
+      else { const q = oddsToProbs(o).probs[f.market.outcome]; if (Math.abs(q - f.market.p) > 0.011) err(cw, `bookmaker p must be the margin-free probability ${q.toFixed(3)} (node scripts/refdata/models.mjs odds …)`); }
+    }
     else if (Math.abs(c.probability - f.market.p) > cfg.market_departure_flag && !nonEmpty(f.market_note)) err(cw, `departs from the market (${f.market.p}) by more than ${cfg.market_departure_flag}; explain in forecast.market_note`);
   }
   if (f.base_rate && (typeof f.base_rate.rate !== 'number' || !nonEmpty(f.base_rate.class))) err(cw, 'forecast.base_rate needs class and rate');
   if (!nonEmpty(f.dossier)) err(cw, 'forecast.dossier: path of the research dossier (data/dossiers/...)');
+  if (c.edition && c.edition.number >= NEW_FROM && new Set((f.agents || []).map((a) => a.model)).size < 2) warn(cw, 'all forecasters ran on the same model; use config.ensemble_models');
+}
+
+// Interval claims (kind "interval"): quantiles of a published number; forecasters give quantiles, combined by averaging.
+function checkInterval(c, cw) {
+  for (const f of ['label', 'text', 'criterion', 'resolution_source', 'quantity']) if (!nonEmpty(c[f])) err(cw, `missing ${f}`);
+  if (typeof c.unit !== 'string') err(cw, 'unit must be a string (may be empty)');
+  if (c.probability !== undefined) err(cw, 'an interval claim has quantiles, not a probability');
+  const q = c.quantiles;
+  if (!q || ![q.q10, q.q50, q.q90].every((x) => typeof x === 'number') || !(q.q10 < q.q50 && q.q50 < q.q90)) err(cw, 'quantiles must have numbers q10 < q50 < q90');
+  if (!(c.scale > 0)) err(cw, 'scale must be the usual surprise size for this indicator (> 0), with its source in forecast.scale_source');
+  if (c.exclusive_set) err(cw, 'interval claims cannot be in an exclusive set');
+  const f = c.forecast;
+  if (!f || !Array.isArray(f.agents) || f.agents.length < 3) return err(cw, 'forecast.agents: at least three forecasters with q10, q50, q90');
+  for (const a of f.agents) if (![a.q10, a.q50, a.q90].every((x) => typeof x === 'number') || !(a.q10 < a.q50 && a.q50 < a.q90) || !nonEmpty(a.model)) err(cw, `forecast agent ${a.role}: needs model and q10 < q50 < q90`);
+  if (q && f.agents.every((a) => typeof a.q50 === 'number')) for (const k of ['q10', 'q50', 'q90']) {
+    const m = f.agents.reduce((s, a) => s + a[k], 0) / f.agents.length;
+    if (Math.abs(m - q[k]) > Math.max(1e-6, (c.scale || 1) * 0.05) && !nonEmpty(f.adjustment)) err(cw, `quantiles.${k} should be the forecasters' mean ${m.toFixed(3)}; explain in forecast.adjustment`);
+  }
+  if (f.consensus && (typeof f.consensus.value !== 'number' || !nonEmpty(f.consensus.source))) err(cw, 'forecast.consensus needs value and source');
+  if (!nonEmpty(f.scale_source)) err(cw, 'forecast.scale_source: where the surprise size comes from');
+  if (!nonEmpty(f.dossier)) err(cw, 'forecast.dossier: path of the research dossier (data/dossiers/...)');
 }
 
 function checkClaim(c, cw, frozen) {
+  const ed = c.edition;
+  if (ed && ed.number >= NEW_FROM) {
+    if (!nonEmpty(c.slip_class) || (c.slip_class !== 'none' && !SLIP_IDS.has(c.slip_class))) err(cw, `slip_class must be a class from pipeline/reference-data/schedule-slip.json or "none"`);
+    if (!nonEmpty(c.publishes)) err(cw, 'publishes: when and where the resolution source will publish the result (resolvability check)');
+  }
+  if (isInterval(c)) {
+    if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
+    else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');
+    if (!['official', 'reported', 'speculative'].includes(c.schedule)) err(cw, 'schedule must be official, reported or speculative');
+    if (ed && !ed.pilot && ed.number >= QUALITY_FROM && !c.added) checkInterval(c, cw);
+    return;
+  }
     for (const f of ['label', 'text', 'criterion', 'resolution_source']) if (!nonEmpty(c[f])) err(cw, `missing ${f}`);
   if (typeof c.probability !== 'number' || c.probability < cfg.probability_min || c.probability > cfg.probability_max)
     err(cw, `probability must be a number between ${cfg.probability_min} and ${cfg.probability_max}`);
@@ -128,14 +180,21 @@ for (const ed of editions) {
     if (!nonEmpty(c.id) || claimIds.has(c.id)) err(cw, 'missing or duplicate id');
     claimIds.add(c.id);
     checkClaim(c, cw, ed.frozen_at);
-    if (c.exclusive_set) sets.set(c.exclusive_set, (sets.get(c.exclusive_set) || 0) + c.probability);
+    if (c.exclusive_set && !isInterval(c)) sets.set(c.exclusive_set, (sets.get(c.exclusive_set) || 0) + c.probability);
   }
   for (const [set, sum] of sets) if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
 
   if (ed.number >= QUALITY_FROM) {
-    const all = claimsOf(ed);
+    const all = claimsOf(ed).filter((c) => !isInterval(c));
     const extreme = all.filter((c) => c.probability < cfg.extreme_below || c.probability > cfg.extreme_above).length;
     if (all.length && extreme / all.length > cfg.extreme_share_max) err(w, `${extreme} of ${all.length} claims are below ${cfg.extreme_below} or above ${cfg.extreme_above}; at most ${Math.round(cfg.extreme_share_max * 100)}% may be: target the uncertain part`);
+    if (ed.number >= NEW_FROM) {
+      const [lo, hi] = cfg.contested_band;
+      const contested = all.filter((c) => c.probability >= lo && c.probability <= hi).length;
+      if (contested < cfg.contested_min) err(w, `${contested} contested claims (${Math.round(lo * 100)}–${Math.round(hi * 100)}%); each edition needs at least ${cfg.contested_min}: genuinely open questions are where skill shows`);
+      const iv = claimsOf(ed).filter(isInterval).length;
+      if (iv > cfg.interval_claims_max) err(w, `${iv} interval claims; at most ${cfg.interval_claims_max}`);
+    }
     for (const st of ed.stories || []) if (!['cz', 'europe', 'world'].includes(st.scope)) err(`${w} story ${st.id}`, 'scope must be cz, europe or world');
     const cz = (ed.stories || []).filter((st) => st.scope === 'cz');
     if (cz.length < cfg.cz_stories_min) err(w, `${cz.length} Czech stories; the Czech edition needs at least ${cfg.cz_stories_min}`);
@@ -193,6 +252,7 @@ for (const ed of editions) {
     for (const r of up.revisions || []) {
       const rw = `${uw} revision ${r.claim}`;
       if (!claimIds.has(r.claim)) err(rw, 'unknown claim');
+      if (claimsOf(ed).some((c) => c.id === r.claim && isInterval(c))) err(rw, 'interval claims are not revised in the afternoon');
       if (typeof r.probability !== 'number' || r.probability < cfg.probability_min || r.probability > cfg.probability_max) err(rw, 'probability out of range');
       if (!nonEmpty(r.reason) || !nonEmpty(r.reason_cs)) err(rw, 'reason and reason_cs required: name the new fact');
       if (!Array.isArray(r.sources) || !r.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(rw, 'at least one source with a URL for the new fact');
@@ -222,11 +282,16 @@ for (const ed of editions) {
       const isCorr = (res.corrections || []).includes(r);
       if (!claimIds.has(r.claim)) err(rw, `unknown claim ${r.claim}`);
       if (!isCorr) { if (seen.has(r.claim)) err(rw, `claim ${r.claim} resolved twice; use corrections`); seen.add(r.claim); }
-      if (!['yes', 'no', 'void'].includes(r.outcome)) err(rw, `claim ${r.claim}: outcome must be yes, no or void`);
+      const claim = claimsOf(mergeUpdate(ed)).find((c) => c.id === r.claim);
+      const iv = isInterval(claim);
+      if (!(iv ? ['measured', 'void'] : ['yes', 'no', 'void']).includes(r.outcome)) err(rw, `claim ${r.claim}: outcome must be ${iv ? 'measured or void' : 'yes, no or void'}`);
+      if (r.outcome === 'measured' && typeof r.value !== 'number') err(rw, `claim ${r.claim}: value (number) required for a measured outcome`);
       if (!nonEmpty(r.note)) err(rw, `claim ${r.claim}: note required`);
       if (r.outcome !== 'void' && !/^https?:\/\//.test(r.evidence || '')) err(rw, `claim ${r.claim}: evidence URL required`);
       if (!isStamp(r.resolved_at)) err(rw, `claim ${r.claim}: resolved_at must be an ISO timestamp`);
-      const claim = claimsOf(mergeUpdate(ed)).find((c) => c.id === r.claim);
+      if (r.held !== undefined && typeof r.held !== 'boolean') err(rw, `claim ${r.claim}: held must be true or false`);
+      if (r.ambiguous !== undefined && typeof r.ambiguous !== 'boolean') err(rw, `claim ${r.claim}: ambiguous must be true or false`);
+      if (!isCorr && claim && ed.number >= NEW_FROM && claim.slip_class && claim.slip_class !== 'none' && r.outcome !== 'void' && typeof r.held !== 'boolean') err(rw, `claim ${r.claim}: held (did the scheduled event take place that day?) required for slip_class ${claim.slip_class}`);
       if (claim && isStamp(r.resolved_at) && Date.parse(r.resolved_at) < Date.parse(claim.resolves_by)) err(rw, `claim ${r.claim}: resolved before its deadline`);
     }
   }
@@ -241,6 +306,29 @@ for (const ed of editions) {
     let d; try { d = JSON.parse(fsx.readFileSync(pathx.join(dir, f), 'utf8')); } catch (e) { err(`planning/${f}`, `invalid JSON: ${e.message}`); continue; }
     if (f === 'agenda.json') { for (const it of d.items || []) if (!isDate(it.date) || !nonEmpty(it.title) || !/^https?:\/\//.test(it.source || '') || !['cz', 'europe', 'world'].includes(it.scope)) err(`planning/${f}`, `agenda item needs date, title, scope and source URL: ${it.title || '?'}`); continue; }
     if (d.edition !== f.replace('.json', '')) err(`planning/${f}`, 'edition must equal the file name');
+  }
+}
+
+// Publisher's own forecasts (separate track)
+{
+  const byId = new Map(editions.map((e) => [e.id, mergeUpdate(e)]));
+  for (const pf of loadPublisher()) {
+    const pw = `publisher/${pf.file}`;
+    const ed = byId.get(pf.file.replace('.json', ''));
+    if (!ed) { err(pw, 'no edition with this date'); continue; }
+    const offset = (ed.frozen_at || '+00:00').match(/([+-]\d{2}:\d{2}|Z)$/)?.[1] || 'Z';
+    const start = Date.parse(`${ed.events_date}T00:00:00${offset}`);
+    const seenP = new Set();
+    for (const e of pf.entries || []) {
+      const c = claimsOf(ed).find((x) => x.id === e.claim);
+      if (!c) { err(pw, `unknown claim ${e.claim}`); continue; }
+      if (isInterval(c)) err(pw, `claim ${e.claim}: the publisher track covers binary claims only`);
+      if (seenP.has(e.claim)) err(pw, `claim ${e.claim} entered twice`);
+      seenP.add(e.claim);
+      if (typeof e.p !== 'number' || e.p < 0.01 || e.p > 0.99) err(pw, `claim ${e.claim}: p between 0.01 and 0.99`);
+      if (!isStamp(e.at) || Date.parse(e.at) >= start) err(pw, `claim ${e.claim}: at must be an ISO time before the events day begins`);
+      if (typeof e.saw_paper !== 'boolean') err(pw, `claim ${e.claim}: saw_paper (true/false) required`);
+    }
   }
 }
 

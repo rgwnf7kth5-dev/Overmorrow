@@ -14,8 +14,10 @@ Time budget: resolver part by about 05:15; overnight check and re-forecasts by 0
 
 1. Work on the branch the resolver part created, `daily/<D>`.
 2. Read `pipeline/config.json`, `data/planning/<D+2>.json`, the dossiers in `data/dossiers/<D+2>/`, the agenda `data/planning/agenda.json`, and the latest edition in `data/editions/` (for format).
-3. Read the latest resolution files and the accuracy page figures (`node scripts/build.mjs` and open `dist/accuracy/index.html`): per-forecaster Brier scores, benchmarks, calibration. Note any recurring error and correct for it.
-4. If `METACULUS_TOKEN` is provided in the run instructions, export it so `scripts/markets.mjs` can read Metaculus.
+3. Read the latest resolution files and the accuracy page figures (`node scripts/build.mjs` and open `dist/accuracy/index.html`): per-forecaster Brier scores, benchmarks and skill, calibration and discrimination, schedule slips, checkability. Note any recurring error and correct for it.
+4. Read `pipeline/calibration.json`. If `params.method` is `calibrated`, every claim frozen in this run uses those parameters (step 4).
+5. Print the current schedule-slip rates: `node scripts/refdata/slip.mjs`.
+6. If `METACULUS_TOKEN` is provided in the run instructions, export it so `scripts/markets.mjs` can read Metaculus.
 
 ## 1. Overnight check
 
@@ -33,12 +35,24 @@ The planning file ranks candidates by Impact × Reach × Uncertainty value (METH
 
 ## 3. Claims
 
-Claims come from the planning file; adjust them only to the overnight facts. Each claim needs `text`, `label`, `resolves_by`, `criterion`, `resolution_source`, `schedule`, and `exclusive_set` where claims exclude each other. Checks:
+Claims come from the planning file; adjust them only to the overnight facts. Each claim needs `text`, `label`, `resolves_by`, `criterion`, `resolution_source`, `schedule`, `slip_class` (a class id from `pipeline/reference-data/schedule-slip.json`, or `none` when no scheduled event is involved), `publishes` (when and where the deciding source publishes: "ČSÚ press release, 09:00 on 30 Oct"), and `exclusive_set` where claims exclude each other. Checks:
 
 1. Could two honest people disagree about whether it came true? (Must be no.)
 2. Is the deciding source named and likely to publish by the deadline?
 3. Does it target the uncertain part? At most `extreme_share_max` of the claims may lie below `extreme_below` or above `extreme_above`. Prefer thresholds near the expected value (a release against consensus, a turnout against the last election, a vote count against the majority).
 4. Is postponement covered (it should make the claim resolve no)?
+5. Do the claim text and the criterion say exactly the same thing? (Edition No. 3 had a claim whose text spoke of new cases while its criterion counted the total; such a claim resolves on a technicality.)
+6. Contested claims: at least `contested_min` binary claims must lie inside `contested_band` (30–70%) after forecasting. If the edition falls short, swap a near-certain claim for a sharper threshold on the same event, or add a claim on the most open question of the day.
+7. **Number forecasts:** where the outcome is a number from an official release (inflation flash, GDP, unemployment, a vote count, turnout) prefer an interval claim (METHODOLOGY 3.1), at most `interval_claims_max` per edition:
+   ```json
+   { "id": "cz-cpi-oct", "kind": "interval", "label": "Inflation in October", "text": "ČSÚ's flash estimate puts consumer prices in October 2026 at … year on year",
+     "quantity": "CPI, year on year, flash estimate", "unit": "%", "quantiles": {"q10": 2.2, "q50": 2.4, "q90": 2.6}, "scale": 0.15,
+     "resolves_by": "…", "criterion": "The year-on-year figure in ČSÚ's flash estimate release.", "resolution_source": "https://csu.gov.cz/…", "publishes": "ČSÚ, 09:00 on …",
+     "schedule": "official", "slip_class": "stats-release",
+     "forecast": { "agents": [{"role": "base-rate", "model": "…", "q10": 2.2, "q50": 2.4, "q90": 2.6}, …], "consensus": {"value": 2.5, "source": "Reuters poll …"},
+                   "scale_source": "sd of (actual − consensus) for this release, 2023–2026, from …", "dossier": "…" } }
+   ```
+   `quantiles` = the mean of the forecasters' quantiles; `scale` = the usual surprise size (sd of actual − consensus), with its source. `node scripts/refdata/models.mjs quantiles <consensus> <sd>` gives the Normal starting point. The `cs.claims` entry has `label`, `text`, `criterion` as for any claim. Interval claims carry no probability and do not count toward the extreme-share or contested rules.
 
 ## 4. Forecasting (five independent forecasters)
 
@@ -49,13 +63,15 @@ The evening desk ran round one. In the morning:
 
 The five roles (`config.ensemble_roles`), each an independent agent that never sees another's number:
 
-- **base-rate**: the reference class from `pipeline/reference-data/` (Chamber votes, poll errors, central-bank decisions) or `reference-classes.json`, with n; adjustments in log-odds.
+- **base-rate**: the reference class from `pipeline/reference-data/` (Chamber votes, poll errors, central-bank decisions) or `reference-classes.json`, with n; the postponement risk from the claim's slip class (`node scripts/refdata/slip.mjs <class>`); adjustments in log-odds.
 - **evidence**: the newest reporting, statements, vote arithmetic, polls.
-- **adversarial**: the most plausible routes to the other outcome (postponement, procedure, late shifts, the source not publishing) and their likelihood.
-- **anchor**: a quantitative anchor — a liquid market (`node scripts/markets.mjs search …`), a Metaculus community forecast, or a model from `scripts/refdata/models.mjs` (poll lead and error, binomial vote counts, release surprises) — adjusted only with stated reasons.
+- **adversarial**: the most plausible routes to the other outcome (postponement, starting from the slip-class rate; procedure; late shifts; the source not publishing) and their likelihood.
+- **anchor**: a quantitative anchor — a liquid market (`node scripts/markets.mjs search …`: Polymarket, Kalshi, Manifold, Metaculus), bookmakers' odds (Tipsport, Fortuna, Betfair; read the page with WebFetch and convert with `node scripts/refdata/models.mjs odds <odds of every outcome>`), or a model from `scripts/refdata/models.mjs` (poll lead and error, binomial vote counts, release surprises) — adjusted only with stated reasons. Prefer a liquid exchange over a bookmaker, a bookmaker over Manifold.
 - **outsider**: a different model (`model: "sonnet"` in the Agent call) with no web access, given only the dossier. It is the check on the others' shared blind spots.
 
-Combine by the geometric mean of odds of all five, clamp to [`probability_min`, `probability_max`], round to the whole percent. If max − min exceeds `ensemble_disagreement_limit`, give all five the union of facts (numbers removed) and rerun once; if they still disagree, keep the combined number and say in the basis line that the evidence is mixed.
+Run each role on the model given in `config.ensemble_models` (Agent tool `model`); if a model is unavailable, use another one and record the model actually used — the validator warns when all five ran on the same model.
+
+Combine by the geometric mean of odds of all five (`combined`). If `pipeline/calibration.json` has `params.method: "calibrated"`, apply those parameters (`combine(agents, params)` in `scripts/lib.mjs`: weighted mean of log-odds, then the Platt map), store the result in `calibrated` and the parameters in `combination`; otherwise the published figure is the plain geometric mean. Clamp to [`probability_min`, `probability_max`], round to the whole percent. If max − min exceeds `ensemble_disagreement_limit`, give all five the union of facts (numbers removed) and rerun once; if they still disagree, keep the combined number and say in the basis line that the evidence is mixed.
 
 Record every claim's forecast in the claim itself:
 
@@ -63,15 +79,17 @@ Record every claim's forecast in the claim itself:
 "forecast": {
   "agents": [{"role": "base-rate", "model": "claude-opus-5-5", "p": 0.62}, …five entries…],
   "combined": 0.618,
+  "combination": {"method": "geo-odds"},
+  "calibrated": null,
   "base_rate": {"class": "cz-budget-first-reading-majority", "rate": 0.95, "n": 337, "source": "pipeline/reference-data/cz-chamber.json"},
-  "market": {"source": "polymarket", "url": "https://polymarket.com/event/…", "p": 0.58, "read_at": "2026-10-24T03:40:00Z"},
+  "market": {"source": "polymarket", "kind": "exchange", "url": "https://polymarket.com/event/…", "p": 0.58, "read_at": "2026-10-24T03:40:00Z"},
   "market_note": "why we depart from the market, when by more than market_departure_flag",
   "adjustment": "only if the published probability is not the rounded ensemble; say why",
   "dossier": "data/dossiers/2026-10-26/claim-id.md"
 }
 ```
 
-`base_rate` and `market` are null when none exists. The validator checks the arithmetic and the market rule. Once `calibration_min_resolved` claims are resolved, apply the published calibration correction and note it in `adjustment`.
+`base_rate` and `market` are null when none exists. `market.kind` is `exchange` (Polymarket, Kalshi, Betfair), `bookmaker` or `platform` (Metaculus, Manifold, Good Judgment Open). A bookmaker entry also carries `odds` (decimal odds of every outcome of that market) and `outcome` (the index of the outcome the claim is about); `p` is the margin-free probability. When the calibration is active, `combination` is a copy of `pipeline/calibration.json` `params` plus its `version`. The validator checks all of this arithmetic and the market rule.
 
 Also write a short `rationale` per story: the class and base rate, the five numbers, the combined number, any market, the main risk.
 
@@ -124,3 +142,7 @@ Corrections after publication go to `data/corrections/<D+2>.json` (`story`, `dat
 ## 9. Report
 
 Summary: candidates, stories (Czech / Europe / world), claims with probabilities, disagreements and reruns, overnight changes since the evening ensemble, fact-check corrections, unreachable sources.
+
+## Rules added on 23 October 2026 (afternoon)
+
+Apply from edition No. 4 (`config.new_rules_from`): `slip_class` and `publishes` on every claim; at least `contested_min` claims in `contested_band`; at most `interval_claims_max` interval claims; models per `config.ensemble_models`; calibrated combination when `pipeline/calibration.json` says so. The validator enforces them.

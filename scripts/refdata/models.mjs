@@ -62,13 +62,35 @@ export function pReleaseAbove(consensus, threshold, surpriseSd) {
   return 1 - normCdf((threshold - consensus) / surpriseSd);
 }
 
+/**
+ * Bookmaker decimal odds for all outcomes of one market → probabilities with the margin removed
+ * (proportional method). Returns { probs, overround }. Use only complete markets (every outcome listed).
+ */
+export function fromOdds(odds) {
+  if (odds.length < 2 || odds.some((o) => !(o > 1))) throw new Error('give decimal odds > 1 for every outcome');
+  const inv = odds.map((o) => 1 / o);
+  const s = inv.reduce((x, y) => x + y, 0);
+  return { probs: inv.map((x) => x / s), overround: s - 1 };
+}
+
+/**
+ * Quantiles of a data release from consensus and the usual surprise size (Normal): q10, q50, q90.
+ * For interval claims (kind "interval"); widen when the consensus range is wide or the source is noisy.
+ */
+export function releaseQuantiles(consensus, surpriseSd) {
+  const z = 1.2815515655446004;
+  return { q10: consensus - z * surpriseSd, q50: consensus, q90: consensus + z * surpriseSd };
+}
+
 // ------------------------------------------------------------------ CLI
 const isMain = import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith('models.mjs');
 if (isMain) {
   const [cmd, ...a] = process.argv.slice(2);
   const n = a.map(Number);
   const fmt = (p) => `${(p * 100).toFixed(1)}%`;
-  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd>';
+  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd> | odds <o1> <o2> [...] | quantiles <consensus> <surpriseSd>';
+  if (cmd === 'odds' && a.length >= 2) { const r = fromOdds(n); console.log(JSON.stringify({ probs: r.probs.map((x) => +x.toFixed(4)), overround: +r.overround.toFixed(4) })); process.exit(0); }
+  if (cmd === 'quantiles' && a.length === 2) { const q = releaseQuantiles(n[0], n[1]); console.log(JSON.stringify(Object.fromEntries(Object.entries(q).map(([k, v]) => [k, +v.toFixed(4)])))); process.exit(0); }
   let p;
   if (cmd === 'lead' && a.length === 2) p = pWinFromPolls(n[0], n[1]);
   else if (cmd === 'leadabove' && a.length === 3) p = pLeadAbove(n[0], n[1], n[2]);

@@ -7,6 +7,7 @@ Base rates computed from real data, for step 4.1 of [METHODOLOGY.md](../../METHO
 | `cz-chamber.json` | `node scripts/refdata/psp.mjs [--refresh]` | psp.cz open data (votes, deputies/clubs, bills, agendas) |
 | `poll-error.json` | `node scripts/refdata/poll-error.mjs [--refresh]` | Poll figures transcribed in the script with URLs; Czech results downloaded from volby.cz XML |
 | `central-banks.json` | `node scripts/refdata/central-banks.mjs [--refresh]` | cnb.cz repo history file, ecb.europa.eu key rates, federalreserve.gov open market table |
+| `schedule-slip.json` | `node scripts/refdata/slip.mjs [class]` | Postponement rates by kind of event: psp.cz agenda data for the Chamber, estimates elsewhere, updated with our own `held` results |
 | — | `scripts/refdata/models.mjs` | probability helpers (module + CLI) |
 
 Every number has a `definition` in the JSON. Re-run the scripts before relying on recent counts.
@@ -23,6 +24,8 @@ import { pLeadAbove, pWinFromPolls, pAtLeastK, pReleaseAbove } from '../../scrip
 | `pLeadAbove(leadMean, leadSd, threshold)` | P(true lead > threshold) | `node scripts/refdata/models.mjs leadabove 2.0 3.5 1` |
 | `pAtLeastK(n, pEach, k)` | Binomial P(X ≥ k) | `node scripts/refdata/models.mjs atleast 108 0.98 105` |
 | `pReleaseAbove(consensus, threshold, surpriseSd)` | P(release > threshold), release ~ Normal(consensus, surpriseSd) | `node scripts/refdata/models.mjs release 2.4 2.5 0.15` |
+| `fromOdds(odds)` | Bookmaker decimal odds of every outcome → probabilities without the margin | `node scripts/refdata/models.mjs odds 1.45 2.75` |
+| `releaseQuantiles(consensus, surpriseSd)` | q10/q50/q90 of a release for an interval claim | `node scripts/refdata/models.mjs quantiles 2.4 0.15` |
 
 ### Which sd to use for poll leads (from `poll-error.json`)
 
@@ -66,3 +69,7 @@ If you need the binomial anyway: `pAtLeastK(108, pEach, 105)` with `pEach` = the
 `pReleaseAbove` needs a surprise sd for the specific indicator (for example, the historical sd of actual − consensus for Czech CPI); this repository does not yet contain such a series, so take it from the source used for the consensus and record it in the rationale.
 
 `central-banks.json` lists every rate change since 2022 for ČNB, ECB and Fed from the official tables (holds are not in those tables). The comparison with the prior Reuters-poll consensus has **not** been filled in: no row was verified, so `share_matching` is `null`. Add rows to the `CONSENSUS` map in `scripts/refdata/central-banks.mjs` only with a cited source.
+
+### Schedule slips (`schedule-slip.json`)
+
+The chance that the event behind a claim does not take place on the expected day. Chamber classes come from psp.cz agenda data (`cz-chamber.json`, `agenda_items`): fixed-slot items are dealt with at their meeting 67% of the time, government bill readings 19–70% depending on stage and term, all items 23%. Those figures are per meeting, so the risk for one specific day is at least as high. Other classes are estimates with a small weight (`prior_n`), so our own `held` results replace them within weeks. Run `node scripts/refdata/slip.mjs` for the current rates; add a class (with its source) when no existing one fits.

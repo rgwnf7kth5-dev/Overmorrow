@@ -24,5 +24,23 @@
   ],
   "extreme_share_max": 0.25,
   "extreme_below": 0.1,
-  "extreme_above": 0.9
+  "extreme_above": 0.9,
+  "weighting_min_resolved": 120,
+  "weighting_shrink": 150,
+  "calibration_prior_strength": 4,
+  "extremize_max": 2.5,
+  "ensemble_models": {
+    "base-rate": "opus",
+    "evidence": "opus",
+    "adversarial": "fable",
+    "anchor": "opus",
+    "outsider": "sonnet"
+  },
+  "contested_min": 3,
+  "contested_band": [
+    0.3,
+    0.7
+  ],
+  "interval_claims_max": 3,
+  "new_rules_from": 4
 }

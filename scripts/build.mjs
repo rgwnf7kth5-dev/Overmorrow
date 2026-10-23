@@ -1,7 +1,7 @@
 // Builds the static site into dist/: English at /, Czech at /cs/. Run: node scripts/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -27,7 +27,8 @@ const T = {
     noScored: 'No scored claims yet',
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
-    stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected' },
+    stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected', measured: 'Measured' },
+    iv: { range: '80% range', actual: 'actual', inside: 'inside our range', outside: 'outside our range' },
     upd: { at: (t) => ` · updated ${t}`, banner: (t, r, a) => `<b>Afternoon update, ${t}.</b> ${r} forecast${r === 1 ? '' : 's'} revised, ${a} stor${a === 1 ? 'y' : 'ies'} added. Morning figures stay on record and are scored separately.`, morning: 'morning', afternoon: 'afternoon', why: 'Why it changed', added: 'Added in the afternoon update' },
     print: 'Print edition', printBtn: 'Print or save as PDF', printNote: 'One A4 page. Use your browser’s print dialog; choose “Save as PDF” to keep a copy.', printFoot: 'All reports are forecasts written before the events. Results and sources:',
     match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
@@ -54,6 +55,17 @@ const T = {
       trackH: 'Morning edition and afternoon update', trackNote: 'Both versions are frozen and scored on their own. If the afternoon revisions work, their Brier score is lower than the morning one on the same claims.', trackCols: ['Forecasts', 'Claims', 'Brier'], tracks: ['Morning edition, all claims', 'Final forecasts, after updates', 'Revised claims: morning figure', 'Revised claims: afternoon figure'],
       missH: 'Largest misses', missCols: ['Edition', 'Claim', 'Forecast', 'Outcome'], front: 'Front page',
       benchH: 'Against benchmarks', benchNote: 'Each row compares our Brier score with a benchmark on the same claims. Lower is better. A benchmark only counts where it existed when we froze the forecast.', benchCols: ['Benchmark', 'Claims', 'Ours', 'Benchmark'], bench: { coin: 'Coin toss (50%)', base: 'Base rate of the reference class', market: 'Prediction market at freeze', informative: 'Our informative claims only (15–85%)' },
+      skillCol: 'Skill',
+      skillNote: 'Skill = 1 − our Brier ÷ the benchmark’s Brier: 0 means no better than the benchmark, positive means better, negative worse.',
+      bench2: { bookmaker: 'Bookmakers at freeze (margin removed)', platform: 'Forecasting platforms at freeze', exchange: 'Exchanges at freeze' },
+      murphyH: 'Calibration and discrimination', murphyNote: 'The Brier score splits into three parts. Calibration error: how far our stated probabilities are from the observed frequencies (lower is better). Discrimination: how well our forecasts separate what happens from what does not (higher is better; a coin toss or a fixed base rate scores zero). Uncertainty: how hard the questions were, which we do not control.',
+      murphyCols: ['Part', 'Value'], murphyRows: ['Calibration error', 'Discrimination', 'Uncertainty of the questions', 'Brier ≈ calibration − discrimination + uncertainty'],
+      ivH: 'Number forecasts', ivNote: 'Some reports forecast a number (inflation, GDP, a vote count) as a central figure with an 80% range. An honest 80% range contains the result about eight times in ten. The score adds the width of the range to a penalty for results outside it, in units of the indicator’s usual surprise, so lower is better.',
+      ivCols: ['Measure', 'Value'], ivRows: ['Number forecasts resolved', 'Results inside our 80% range (target 80%)', 'Interval score (lower is better)', 'Error of our central figure, in usual surprises', 'Error of the analysts’ consensus, same claims'],
+      slipH: 'Did the scheduled events happen?', slipNote: 'Much of the risk in a forecast two days ahead is that the event does not take place that day. For each kind of event we start from a prior rate of postponement and update it with our own record; the forecasters use the current rate.', slipCols: ['Kind of event', 'Our record (slipped / checked)', 'Prior', 'Rate now'], slipEmpty: 'No scheduled events checked yet.',
+      qualH: 'How checkable our claims were', qualCols: ['Measure', 'Share'], qualRows: ['Claims resolved (including void)', 'Void: the criterion could not be applied', 'Ambiguous: the resolver had to interpret the criterion', 'Resolved more than 48 hours after the deadline', 'Scheduled event did not take place that day'],
+      calStH: 'Calibration correction', calSt: (n, w, pl, wOn, pOn, a, b) => `${n} claims with a full forecaster record are resolved. Forecaster weights: ${wOn ? 'in use' : `off until ${w} claims are resolved`}. Correction of our own bias: ${pOn ? `in use (intercept ${a}, slope ${b}; a slope above 1 means our raw ensemble was too timid)` : `off until ${pl} claims are resolved`}.`,
+      pubH: 'The publisher’s own forecasts', pubNote: 'The publisher may add his own probability to some claims before the events begin. They are not used in the paper; they are scored separately to see whether human judgement adds anything.', pubCols: ['Forecasts', 'Claims', 'Brier'], pubRows: ['The paper', 'The publisher', 'Average of both (log-odds)', 'Publisher, made without seeing the paper'],
       agentH: 'Forecasters in the ensemble', agentNote: 'Brier score of each independent forecaster on the claims it forecast. The published number combines them.', agentCols: ['Forecaster', 'Claims', 'Brier'],
       roles: { 'base-rate': 'Base rate first', evidence: 'Evidence first', adversarial: 'Adversarial', anchor: 'Model or market anchor', outsider: 'Outsider (other model, dossier only)' },
       scopeH: 'Czech Republic, Europe and the world', scopeCols: ['Scope', 'Claims', 'Went our way', 'Brier'],
@@ -88,7 +100,8 @@ const T = {
     noScored: 'Zatím žádné hodnocené predikce',
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
-    stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno' },
+    stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno', measured: 'Změřeno' },
+    iv: { range: '80% rozpětí', actual: 'skutečnost', inside: 'v našem rozpětí', outside: 'mimo naše rozpětí' },
     upd: { at: (t) => ` · aktualizováno ${t}`, banner: (t, r, a) => `<b>Odpolední aktualizace, ${t}.</b> Změněné predikce: ${r}, přidané zprávy: ${a}. Ranní čísla zůstávají v záznamu a hodnotí se zvlášť.`, morning: 'ráno', afternoon: 'odpoledne', why: 'Proč se to změnilo', added: 'Přidáno v odpolední aktualizaci' },
     print: 'Tisková verze', printBtn: 'Vytisknout nebo uložit jako PDF', printNote: 'Jedna strana A4. Použijte tisk v prohlížeči; volbou „Uložit jako PDF“ si uložíte kopii.', printFoot: 'Všechny zprávy jsou predikce napsané před událostmi. Výsledky a zdroje:',
     match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
@@ -115,6 +128,17 @@ const T = {
       trackH: 'Ranní vydání a odpolední aktualizace', trackNote: 'Obě verze jsou zamčené a hodnotí se samostatně. Pokud odpolední změny pomáhají, mají na stejných tvrzeních nižší Brierovo skóre než ranní.', trackCols: ['Predikce', 'Tvrzení', 'Brier'], tracks: ['Ranní vydání, všechna tvrzení', 'Konečné predikce po aktualizacích', 'Změněná tvrzení: ranní číslo', 'Změněná tvrzení: odpolední číslo'],
       missH: 'Největší omyly', missCols: ['Vydání', 'Tvrzení', 'Predikce', 'Výsledek'], front: 'Titulní strana',
       benchH: 'Proti měřítkům', benchNote: 'Každý řádek porovnává naše Brierovo skóre s měřítkem na stejných tvrzeních. Nižší je lepší. Měřítko se počítá jen tam, kde existovalo v okamžiku uzávěrky.', benchCols: ['Měřítko', 'Tvrzení', 'My', 'Měřítko'], bench: { coin: 'Hod mincí (50 %)', base: 'Základní míra referenční třídy', market: 'Predikční trh při uzávěrce', informative: 'Jen naše informativní tvrzení (15–85 %)' },
+      skillCol: 'Dovednost',
+      skillNote: 'Dovednost = 1 − naše Brierovo skóre ÷ skóre měřítka: 0 znamená ne lépe než měřítko, kladné číslo lépe, záporné hůř.',
+      bench2: { bookmaker: 'Sázkové kanceláře při uzávěrce (bez marže)', platform: 'Predikční platformy při uzávěrce', exchange: 'Burzy predikcí při uzávěrce' },
+      murphyH: 'Kalibrace a rozlišení', murphyNote: 'Brierovo skóre se dělí na tři části. Chyba kalibrace: jak daleko jsou naše pravděpodobnosti od skutečných četností (nižší je lepší). Rozlišení: jak dobře naše predikce oddělují to, co se stane, od toho, co ne (vyšší je lepší; hod mincí ani pevná základní míra nerozlišují nic). Nejistota: jak těžké otázky byly, což neovlivníme.',
+      murphyCols: ['Část', 'Hodnota'], murphyRows: ['Chyba kalibrace', 'Rozlišení', 'Nejistota otázek', 'Brier ≈ kalibrace − rozlišení + nejistota'],
+      ivH: 'Číselné predikce', ivNote: 'Některé zprávy předpovídají číslo (inflaci, HDP, počet hlasů) jako střední hodnotu s 80% rozpětím. Poctivé 80% rozpětí obsahuje výsledek zhruba osmkrát z deseti. Skóre sčítá šířku rozpětí a penalizaci za výsledky mimo ně, v jednotkách obvyklého překvapení daného ukazatele, takže nižší je lepší.',
+      ivCols: ['Ukazatel', 'Hodnota'], ivRows: ['Vyhodnocené číselné predikce', 'Výsledky v našem 80% rozpětí (cíl 80 %)', 'Intervalové skóre (nižší je lepší)', 'Chyba naší střední hodnoty, v obvyklých překvapeních', 'Chyba konsenzu analytiků na stejných tvrzeních'],
+      slipH: 'Konaly se naplánované události?', slipNote: 'Velká část rizika predikce na dva dny dopředu je, že se událost ten den vůbec nekoná. Pro každý druh události vycházíme z výchozí míry odkladů a upřesňujeme ji vlastním záznamem; prognostici používají aktuální míru.', slipCols: ['Druh události', 'Náš záznam (odloženo / ověřeno)', 'Výchozí', 'Míra teď'], slipEmpty: 'Zatím nebyla ověřena žádná naplánovaná událost.',
+      qualH: 'Jak dobře šla tvrzení ověřit', qualCols: ['Ukazatel', 'Podíl'], qualRows: ['Vyhodnocená tvrzení (včetně neplatných)', 'Neplatná: kritérium nešlo použít', 'Nejednoznačná: kritérium bylo nutné vykládat', 'Vyhodnoceno déle než 48 hodin po termínu', 'Naplánovaná událost se ten den nekonala'],
+      calStH: 'Kalibrační korekce', calSt: (n, w, pl, wOn, pOn, a, b) => `Vyhodnocených tvrzení s úplným záznamem prognostiků: ${n}. Váhy prognostiků: ${wOn ? 'používají se' : `vypnuto, dokud nebude vyhodnoceno ${w} tvrzení`}. Korekce vlastního zkreslení: ${pOn ? `používá se (posun ${a}, sklon ${b}; sklon nad 1 znamená, že surový ensemble byl příliš opatrný)` : `vypnuto, dokud nebude vyhodnoceno ${pl} tvrzení`}.`,
+      pubH: 'Vlastní odhady vydavatele', pubNote: 'Vydavatel může k některým tvrzením připsat vlastní pravděpodobnost ještě před začátkem událostí. V novinách se nepoužívají; hodnotí se zvlášť, aby bylo vidět, jestli lidský úsudek něco přidává.', pubCols: ['Predikce', 'Tvrzení', 'Brier'], pubRows: ['Noviny', 'Vydavatel', 'Průměr obou (logaritmus šancí)', 'Vydavatel bez znalosti novin'],
       agentH: 'Prognostici v ensemblu', agentNote: 'Brierovo skóre každého nezávislého prognostika na tvrzeních, která odhadoval. Zveřejněné číslo je kombinuje.', agentCols: ['Prognostik', 'Tvrzení', 'Brier'],
       roles: { 'base-rate': 'Od základní míry', evidence: 'Od nejnovějších zpráv', adversarial: 'Ďáblův advokát', anchor: 'Model nebo trh', outsider: 'Nezávislý (jiný model, jen podklad)' },
       scopeH: 'Česko, Evropa a svět', scopeCols: ['Oblast', 'Tvrzení', 'Vyšlo', 'Brier'],
@@ -136,6 +160,24 @@ const T = {
 // ---------- helpers ----------
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pctNum = (p, L) => (L.locale === 'cs-CZ' ? `${Math.round(p * 100)} %` : `${Math.round(p * 100)}%`);
+const decimalsOf = (c) => Math.min(2, Math.max(...[c.quantiles.q10, c.quantiles.q50, c.quantiles.q90].map((x) => (String(x).split('.')[1] || '').length)));
+/** A value of an interval claim with its unit, in the page's number format ("2.4%", "2,4 %", "CZK 386 bn"). */
+function ivNum(x, c, L) {
+  const d = Math.max(decimalsOf(c), Math.min(3, (String(x).split('.')[1] || '').length));
+  const t = x.toLocaleString(L.locale, { minimumFractionDigits: d, maximumFractionDigits: d });
+  const u = c.unit || '';
+  if (!u) return t;
+  if (u === '%' || u === 'pp' || u === 'p. b.') return L.locale === 'cs-CZ' || u !== '%' ? `${t} ${u}` : `${t}%`;
+  return `${t} ${u}`;
+}
+const ivRange = (c, L) => `${L.iv.range} ${ivNum(c.quantiles.q10, c, L)}–${ivNum(c.quantiles.q90, c, L)}`;
+/** Position of the range on a small bar: the 80% range in the middle half, the median as a tick. */
+function ivBar(c, extraValue) {
+  const { q10: l, q50: m, q90: u } = c.quantiles;
+  const lo = l - (u - l) / 2, hi = u + (u - l) / 2;
+  const pos = (x) => Math.max(0, Math.min(100, ((x - lo) / (hi - lo)) * 100)).toFixed(1);
+  return `<span class="bar range" aria-hidden="true"><i style="left:${pos(l)}%;width:${(pos(u) - pos(l)).toFixed(1)}%"></i><u style="left:${pos(m)}%"></u>${typeof extraValue === 'number' ? `<em style="left:${pos(extraValue)}%"></em>` : ''}</span>`;
+}
 const num3 = (x, L) => (L.locale === 'cs-CZ' ? x.toFixed(3).replace('.', ',') : x.toFixed(3));
 const LONG = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
 const DAY = { weekday: 'long', day: 'numeric', month: 'long' };
@@ -234,7 +276,7 @@ function masthead(L, ed, latestDate, printHref) {
 
 // ---------- edition ----------
 // How close a forecast came: the probability we gave to what actually happened (1 = spot on, 0 = missed completely).
-const closeness = (claim, r) => (!r || !claim ? null : r.outcome === 'yes' ? claim.probability : r.outcome === 'no' ? 1 - claim.probability : null);
+const closeness = (claim, r) => (!r || !claim ? null : r.outcome === 'measured' && isInterval(claim) ? intervalCloseness(claim, r.value) : r.outcome === 'yes' ? claim.probability : r.outcome === 'no' ? 1 - claim.probability : null);
 // Red (0) through amber to green (1).
 const hue = (x) => Math.round(4 + 136 * x);
 
@@ -242,6 +284,7 @@ function stampFor(result, L, claim) {
   if (!result) return `<span class="stamp pending">${L.stamp.pending}</span>`;
   const c = closeness(claim, result);
   const style = c === null ? '' : ` style="--h:${hue(c)}"`;
+  if (result.outcome === 'measured' && isInterval(claim)) return `<span class="stamp measured scored"${style}>${L.iv.actual} ${ivNum(result.value, claim, L)} · ${intervalHit(claim, result.value) ? L.iv.inside : L.iv.outside}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
   return `<span class="stamp ${result.outcome}${c === null ? '' : ' scored'}"${style}>${L.stamp[result.outcome]}${c === null ? '' : ` · ${L.match} ${pctNum(c, L)}`}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
 }
 
@@ -255,6 +298,11 @@ function storyTone(story, results) {
 
 function likelihood(claim, results, show, L) {
   const r = results.get(claim.id);
+  if (isInterval(claim)) {
+    const val = show && r?.outcome === 'measured' ? r.value : undefined;
+    return `<div class="lk iv">${ivBar(claim, val)}<span>${esc(claim.label)}: <b>${ivNum(claim.quantiles.q50, claim, L)}</b> <small>(${ivRange(claim, L)})</small></span>${show ? stampFor(r, L, claim) : ''}</div>${
+      r && r.note ? `<p class="resnote">${esc(r.note)}${r.evidence ? ` <a href="${esc(r.evidence)}">${L.evidence}</a>` : ''}</p>` : ''}`;
+  }
   const revised = claim.update && claim.morning !== null && claim.morning !== undefined && claim.morning !== claim.probability;
   const figure = revised
     ? `<s title="${L.upd.morning}">${pctNum(claim.morning, L)}</s> → <b>${pctNum(claim.probability, L)}</b> <small>${L.upd.afternoon} ${hhmm(claim.update.frozen_at)}</small>`
@@ -366,6 +414,10 @@ function printPage(original, L) {
   const scored = results.size > 0;
   const claimLine = (c) => {
     const r = results.get(c.id), k = closeness(c, r);
+    if (isInterval(c)) {
+      const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${r.outcome === 'measured' ? `${L.iv.actual} ${ivNum(r.value, c, L)}` : L.stamp[r.outcome]}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
+      return `<p class="lk">${esc(c.label)}: <b>${ivNum(c.quantiles.q50, c, L)}</b> (${ivRange(c, L)})${res}</p>`;
+    }
     const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.match} ${pctNum(k, L)}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
     const rev = c.update && c.morning !== null && c.morning !== undefined && c.morning !== c.probability;
     return `<p class="lk"><span class="bar"><i style="width:${Math.round(c.probability * 100)}%"></i></span>${esc(c.label)}: ${rev ? `<s>${pctNum(c.morning, L)}</s> → ` : ''}<b>${pctNum(c.probability, L)}</b>${res}</p>`;
@@ -574,11 +626,15 @@ function trackBlock(editions, L) {
 function benchBlocks(rows, L) {
   const A = L.acc;
   const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
-  const line = (label, list, other) => (list.length ? `<tr><td>${label}</td><td class="n">${list.length}</td><td class="n">${num3(mean(list.map((r) => brier(r.probability, r.outcome))), L)}</td><td class="n">${num3(mean(list.map((r) => brier(other(r), r.outcome))), L)}</td></tr>` : '');
+  const sk = (x, L) => (x === null ? '–' : `${x >= 0 ? '+' : '−'}${num3(Math.abs(x), L)}`);
+  const line = (label, list, other) => { if (!list.length) return ''; const o = mean(list.map((r) => brier(r.probability, r.outcome))), b = mean(list.map((r) => brier(other(r), r.outcome))); return `<tr><td>${label}</td><td class="n">${list.length}</td><td class="n">${num3(o, L)}</td><td class="n">${num3(b, L)}</td><td class="n">${sk(skill(o, b), L)}</td></tr>`; };
   const withBase = rows.filter((r) => typeof r.forecast?.base_rate?.rate === 'number');
   const withMarket = rows.filter((r) => typeof r.forecast?.market?.p === 'number');
   const informative = rows.filter((r) => r.probability >= 0.15 && r.probability <= 0.85);
-  let out = `<h2>${A.benchH}</h2><p>${A.benchNote}</p><div class="tbl"><table><thead><tr>${A.benchCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${line(A.bench.coin, rows, () => 0.5)}${line(A.bench.base, withBase, (r) => r.forecast.base_rate.rate)}${line(A.bench.market, withMarket, (r) => r.forecast.market.p)}${line(A.bench.informative, informative, () => 0.5)}</tbody></table></div>`;
+  const byKind = (k) => withMarket.filter((r) => (r.forecast.market.kind || 'exchange') === k);
+  const kinds = ['exchange', 'bookmaker', 'platform'].filter((k) => byKind(k).length);
+  const kindRows = kinds.length > 1 ? kinds.map((k) => line(A.bench2[k], byKind(k), (r) => r.forecast.market.p)).join('') : '';
+  let out = `<h2>${A.benchH}</h2><p>${A.benchNote} ${A.skillNote}</p><div class="tbl"><table><thead><tr>${[...A.benchCols, A.skillCol].map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${line(A.bench.coin, rows, () => 0.5)}${line(A.bench.base, withBase, (r) => r.forecast.base_rate.rate)}${line(A.bench.market, withMarket, (r) => r.forecast.market.p)}${kindRows}${line(A.bench.informative, informative, () => 0.5)}</tbody></table></div>`;
   const byRole = new Map();
   for (const r of rows) for (const a of r.forecast?.agents || []) { if (!byRole.has(a.role)) byRole.set(a.role, []); byRole.get(a.role).push(brier(a.p, r.outcome)); }
   if (byRole.size) out += `<h2>${A.agentH}</h2><p>${A.agentNote}</p><div class="tbl"><table><thead><tr>${A.agentCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${[...byRole].map(([role, xs]) => `<tr><td>${esc(A.roles[role] || role)}</td><td class="n">${xs.length}</td><td class="n">${num3(mean(xs), L)}</td></tr>`).join('')}</tbody></table></div>`;
@@ -589,6 +645,63 @@ function benchBlocks(rows, L) {
   }
   const done = (loadWatchlist().questions || []).map(watchScore).filter(Boolean);
   if (done.length) out += `<h2>${A.watchH}</h2><p>${A.watchNote(done.length, num3(mean(done.map((x) => x.brier)), L))} <a href="${link(L, '/watch/')}">${L.watch.all}</a></p>`;
+  return out;
+}
+
+const tbl2 = (cols, rows) => `<div class="tbl"><table><thead><tr>${cols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((x, i) => `<td${i ? ' class="n"' : ''}>${x}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+
+/** Blocks added on 23 Oct 2026: decomposition, number forecasts, schedule slips, checkability, calibration status, publisher. */
+function moreBlocks(editions, rows, L) {
+  const A = L.acc;
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const share = (k, n) => (n ? `${pctNum(k / n, L)} (${k})` : '–');
+  let out = '';
+  const m = murphy(rows);
+  if (m) out += `<h2>${A.murphyH}</h2><p>${A.murphyNote}</p>${tbl2(A.murphyCols, [[A.murphyRows[0], num3(m.reliability, L)], [A.murphyRows[1], num3(m.resolution, L)], [A.murphyRows[2], num3(m.uncertainty, L)], [A.murphyRows[3], num3(m.reliability - m.resolution + m.uncertainty, L)]])}`;
+
+  const iv = measuredClaims(editions);
+  if (iv.length) {
+    const withCons = iv.filter((r) => typeof r.forecast?.consensus?.value === 'number');
+    const rowsIv = [[A.ivRows[0], String(iv.length)], [A.ivRows[1], share(iv.filter((r) => intervalHit(r, r.value)).length, iv.length)], [A.ivRows[2], num3(mean(iv.map((r) => intervalScore(r, r.value))), L)], [A.ivRows[3], num3(mean(iv.map((r) => scaledError(r, r.value))), L)]];
+    if (withCons.length) rowsIv.push([`${A.ivRows[4]} (${withCons.length})`, num3(mean(withCons.map((r) => scaledError(r, r.value, r.forecast.consensus.value))), L)]);
+    out += `<h2>${A.ivH}</h2><p>${A.ivNote}</p>${tbl2(A.ivCols, rowsIv)}`;
+  }
+
+  const slips = slipTable(editions).filter((k) => k.own_n > 0);
+  out += `<h2>${A.slipH}</h2><p>${A.slipNote}</p>${slips.length ? tbl2(A.slipCols, slips.map((k) => [esc(k.description), `${k.own.slipped} / ${k.own_n}`, pctNum(k.prior_rate, L), pctNum(k.rate, L)])) : `<p><i>${A.slipEmpty}</i></p>`}`;
+
+  const all = allResults(editions);
+  if (all.length) {
+    const n = all.length;
+    const late = all.filter(({ claim, result }) => Date.parse(result.resolved_at) - Date.parse(claim.resolves_by) > 48 * 3600e3).length;
+    const checked = all.filter(({ result }) => typeof result.held === 'boolean');
+    out += `<h2>${A.qualH}</h2>${tbl2(A.qualCols, [[A.qualRows[0], String(n)], [A.qualRows[1], share(all.filter(({ result }) => result.outcome === 'void').length, n)], [A.qualRows[2], share(all.filter(({ result }) => result.ambiguous).length, n)], [A.qualRows[3], share(late, n)], [A.qualRows[4], share(checked.filter(({ result }) => result.held === false).length, checked.length)]])}`;
+  }
+
+  const cal = loadCalibration(), cfg = loadConfig();
+  if (cal) out += `<h2>${A.calStH}</h2><p>${A.calSt(cal.resolved, cfg.weighting_min_resolved, cfg.calibration_min_resolved, cal.active.weights, cal.active.platt, num3(cal.params.platt.a, L), num3(cal.params.platt.b, L))}</p>`;
+
+  const pubRows = [];
+  const byEd = new Map(editions.map((e) => [e.id, e]));
+  for (const pf of loadPublisher()) {
+    const ed = byEd.get(pf.file.replace('.json', ''));
+    if (!ed) continue;
+    const res = resultsFor(ed.id);
+    for (const e of pf.entries || []) {
+      const c = claimsOf(ed).find((x) => x.id === e.claim), r = res.get(e.claim);
+      if (!c || isInterval(c) || !r || !['yes', 'no'].includes(r.outcome)) continue;
+      const lo = (q) => Math.log(q / (1 - q));
+      const avg = 1 / (1 + Math.exp(-(lo(c.morning ?? c.probability) + lo(e.p)) / 2));
+      pubRows.push({ paper: c.morning ?? c.probability, pub: e.p, avg, saw: e.saw_paper, outcome: r.outcome });
+    }
+  }
+  if (pubRows.length) {
+    const b = (list, k) => num3(mean(list.map((x) => brier(x[k], x.outcome))), L);
+    const blind = pubRows.filter((x) => !x.saw);
+    const rowsP = [[A.pubRows[0], String(pubRows.length), b(pubRows, 'paper')], [A.pubRows[1], String(pubRows.length), b(pubRows, 'pub')], [A.pubRows[2], String(pubRows.length), b(pubRows, 'avg')]];
+    if (blind.length) rowsP.push([A.pubRows[3], String(blind.length), b(blind, 'pub')]);
+    out += `<h2>${A.pubH}</h2><p>${A.pubNote}</p>${tbl2(A.pubCols, rowsP)}`;
+  }
   return out;
 }
 
@@ -629,6 +742,7 @@ function accuracyPage(editions, L) {
 <h2>${A.secH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
 ${benchBlocks(rows, L)}
+${moreBlocks(editions, rows, L)}
 ${trackBlock(editions, L)}
 <h2>${A.missH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.missCols[0]}</th><th>${A.missCols[1]}</th><th class="n">${A.missCols[2]}</th><th>${A.missCols[3]}</th></tr></thead><tbody>${worst}</tbody></table></div>
