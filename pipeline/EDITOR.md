@@ -2,9 +2,9 @@
 
 This is the operating procedure for the edition part of the morning run. It implements [`METHODOLOGY.md`](../METHODOLOGY.md); where the two seem to differ, the methodology wins. Follow every step, in order. Do not skip steps to save time.
 
-Notation: the run starts at 04:20 on day **D**, right after the resolver part ([`RESOLVER.md`](RESOLVER.md)). The edition is dated **D+2**, forecasts the events of **D+1** and must be published by **06:00** on day D. All times are Europe/Paris.
+Notation: the run starts at about 05:00 on day **D**, right after the resolver part ([`RESOLVER.md`](RESOLVER.md)). The edition is dated **D+2**, forecasts the events of **D+1** and must be published by **06:00** on day D. All times are Europe/Paris.
 
-Time budget: resolver part by about 04:40, candidate pool by 05:00, ensemble and red team by 05:35, writing and publishing by 05:55. If the run falls behind, cut the number of stories toward `stories_min`, never the ensemble or the red team.
+Time budget: resolver part by about 05:15, candidate pool by 05:30, ensemble and red team by 05:45, writing and publishing by 05:58. Run sweeps, ensemble agents and the red team as parallel subagents to fit the hour. If the run falls behind, cut the number of stories toward `stories_min`, never the ensemble or the red team.
 
 ## 0. Setup
 

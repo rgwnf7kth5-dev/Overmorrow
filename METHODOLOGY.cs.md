@@ -12,7 +12,7 @@ Jeden běh každé ráno udělá obě práce: nejdřív vyhodnotí, co je splatn
 
 | Krok | Kdy (středoevropský čas) |
 |---|---|
-| Začátek ranního běhu | 4:20 dne D |
+| Začátek ranního běhu | Kolem 5:00 dne D |
 | Vyhodnocení splatných tvrzení a razítka v archivu | První část běhu |
 | Uzávěrka informací | Brzy ráno dne D, zapsaná jako `frozen_at` |
 | Vydání s datem D+2 vychází | Do 6:00 dne D |

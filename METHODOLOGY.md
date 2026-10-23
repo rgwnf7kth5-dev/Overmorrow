@@ -12,7 +12,7 @@ One run every morning does both jobs: it first scores whatever has fallen due, t
 
 | Step | When (Europe/Paris) |
 |---|---|
-| Morning run starts | 04:20 on day D |
+| Morning run starts | About 05:00 on day D |
 | Claims due are resolved and stamped onto archived editions | First part of the run |
 | Information cut-off and freeze | Early morning of day D, recorded as `frozen_at` |
 | Edition dated D+2 published | By 06:00 on day D |
