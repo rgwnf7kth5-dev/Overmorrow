@@ -7,7 +7,10 @@
       "base_rate": 0.97,
       "n": "large; failures are rare and usually signalled days ahead",
       "source": "Legislative Observatory records, 9th and 10th terms (estimate pending a full count)",
-      "own_record": {"yes": 0, "no": 0}
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
     },
     {
       "id": "ep-resolution-after-debate",
@@ -15,7 +18,10 @@
       "base_rate": 0.93,
       "n": "large",
       "source": "Plenary minutes (estimate pending a full count); main risk is postponement",
-      "own_record": {"yes": 0, "no": 0}
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
     },
     {
       "id": "cz-budget-first-reading-majority",
@@ -23,7 +29,10 @@
       "base_rate": 0.95,
       "n": "every budget since 1993 with a majority government",
       "source": "psp.cz voting records; risk is timing (obstruction pushing the vote past the deadline)",
-      "own_record": {"yes": 0, "no": 0}
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
     },
     {
       "id": "envoy-visit-ceasefire",
@@ -31,7 +40,10 @@
       "base_rate": 0.03,
       "n": "about 10 meetings 2025-2026, none followed by a ceasefire within 48 h",
       "source": "News record 2025-2026",
-      "own_record": {"yes": 0, "no": 0}
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
     },
     {
       "id": "sakharov-conference-presidents",
@@ -39,7 +51,87 @@
       "base_rate": 0.7,
       "n": "roughly 10 years of decisions; EPP-backed finalist usually wins, sometimes jointly with an ECR or Renew candidate",
       "source": "EP press releases 2015-2025 (estimate pending a full count)",
-      "own_record": {"yes": 0, "no": 0}
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "envoy-visit-prisoner-release",
+      "description": "A US detainee in Russia is released during or within 48 hours of a US envoy visit to Moscow",
+      "base_rate": 0.35,
+      "n": "small; Witkoff visits 2025-2026",
+      "source": "News record 2025-2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "mediated-deal-announced-short-window",
+      "description": "An officially announced US–Iran agreement within 48 hours of a mediators’ proposal being delivered",
+      "base_rate": 0.3,
+      "n": "small",
+      "source": "News record 2025-2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "poll-gap-within-2",
+      "description": "A named pollster’s next runoff poll shows the two candidates within 2 points when the previous poll was within 2 points",
+      "base_rate": 0.65,
+      "n": "estimate",
+      "source": "Brazil 2022 and 2026 Datafolha series",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "outbreak-case-count-rises",
+      "description": "A country with an active Ebola outbreak reports a confirmed count above a stated threshold within 48 hours",
+      "base_rate": 0.7,
+      "n": "estimate",
+      "source": "WHO situation reports",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "protest-second-day-smaller",
+      "description": "A second nationwide protest day without union backing draws fewer people than the first, by the Interior Ministry count",
+      "base_rate": 0.8,
+      "n": "about 10 French protest series since 2018",
+      "source": "Ministry counts reported by AFP/Le Monde (2018 gilets jaunes: 282,000 then 166,000)",
+      "own_record": {
+        "yes": 0,
+        "no": 0
+      }
+    },
+    {
+      "id": "bg-presidential-runoff",
+      "description": "A Bulgarian presidential election goes to a second round",
+      "base_rate": 0.97,
+      "n": "7 of 7 since 1992",
+      "source": "CIK results",
+      "own_record": {
+        "yes": 0,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-honours-names-early",
+      "description": "Prague Castle publishes the names of 28 October honours recipients four or more days before the ceremony",
+      "base_rate": 0.03,
+      "n": "0 of about 5 under Pavel",
+      "source": "ČT24, Echo24 2023-2025",
+      "own_record": {
+        "yes": 0,
+        "no": 0
+      }
     }
   ]
 }
