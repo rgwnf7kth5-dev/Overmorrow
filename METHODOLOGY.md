@@ -129,6 +129,8 @@ After midday the same edition is updated, following [`pipeline/UPDATE.md`](pipel
 - We do not forecast deaths, accidents, disasters, crimes, or the health of named people, and we do not write about private individuals.
 - Every page carries a clear statement that its content is forecast.
 - The paper appears in English (default) and Czech. The Czech text is a faithful translation written in the same run; the forecasts, probabilities and deadlines are identical. A translation may be corrected later; a forecast never. In Czech, foreign women's surnames are left in their original form, never feminised (Roberta Metsola, not Metsolaová).
+- Facts around the forecast are checked against the cited sources before publication by a reviewer who did not write the story. Each story rests on at least two independent sources, at least one primary or from a major outlet; aggregators and content farms are not used.
+- If a fact in a published report turns out to be wrong, a correction is published under the story (from `data/corrections/`). The edition file and its forecasts are not changed.
 
 ## 6. Checking the claims
 

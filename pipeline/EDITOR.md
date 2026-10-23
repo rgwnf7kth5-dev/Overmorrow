@@ -17,6 +17,8 @@ Time budget: resolver part by about 05:15, candidate pool by 05:30, ensemble and
 
 Check **every** entry in `pipeline/sources.json` → `calendars` for day D+1. Use web search and fetch; when an official page cannot be reached, search for a recent secondary report of its agenda. For each event found, add a row to a working file `work/<D+2>/candidates.md` with: time, place, institution, one-line description, section, source URL, schedule status (`official` / `reported` / `speculative`).
 
+**When an official calendar cannot be fetched** (hrad.cz, vlada.gov.cz and some others often refuse automated requests), do not stop there: search for its agenda in ČTK's daily list of expected events (ceskenoviny.cz, “Předpokládané události”), ČT24, iROZHLAS and Seznam Zprávy, and in the institution's own social media posts. A weekend is not an excuse for an empty Czech page: party congresses and councils, ministers' and the President's trips, regional events, demonstrations, Czech culture (festivals, premieres, awards) and Czech companies all count.
+
 Also look for:
 
 - elections, referendums and campaign milestones within the next 7 days (final polls, debates, campaign silence);
@@ -35,7 +37,7 @@ Target: **at least 40 candidates.** If fewer, widen the sweep (national parliame
 Score each candidate 1–5 on Impact, Reach and Uncertainty value (definitions in the methodology, section 2.4) and rank by the product. Then fill the edition:
 
 - **Lead**: the most newsworthy event with `official` or `reported` status, wherever it happens. Prefer a Czech story when scores are close.
-- **Rail**: two Czech stories.
+- **Rail**: two Czech stories. A story from a neighbouring country does not replace a Czech one; if the sweep found no second Czech event, widen the Czech sweep before giving up, and say so in the pull request or report.
 - **World**: the largest section, five to six stories from outside the EU institutions: other continents, wars and diplomacy, elections, major national politics in Europe and elsewhere.
 - **Europe**: two to three stories. At most three stories in the whole edition may be about EU institutions (Parliament, Council, Commission, EU courts and agencies); national politics of European countries does not count toward that cap.
 - **Economy, Science and Health, Culture**: add a section when at least one candidate scores 27 or more (3 × 3 × 3).
@@ -86,7 +88,7 @@ Store in each story's `rationale` a short summary: base rate and class, the thre
 
 Launch one more agent with the complete draft and one instruction: find the single most likely reason each forecast is wrong tomorrow, using only information published before now. If it finds a new decisive fact, rerun step 5 for that claim.
 
-Then set `frozen_at` to the current time. From here on, do not use any new information.
+Then set `frozen_at` to the current time. From here on, do not use any new information for the forecasts. (The fact-check in step 7c may still correct the text; if it shows that a story rests on a wrong premise, rerun step 5 for that claim and set `frozen_at` again.)
 
 ## 7. Writing
 
@@ -95,11 +97,14 @@ Write the stories into `data/editions/<D+2>.json`, following the format of the e
 - Past tense, as if D+1 has happened. British spelling. Plain, adjective-light newspaper prose.
 - Headline states the forecast outcome. Standfirst only for the lead.
 - Every number in the text comes from a cited source or is the forecast itself. No invented quotations, ever.
+- **Read the sources yourself.** Write from the source pages, not from an agent's summary of them. Every factual sentence must be traceable to a page listed in `sources`; a fact you cannot place in a listed source is either sourced or cut. Check the newest reporting (last 12 hours) for the lead and each rail story: positions change (a union that joins a protest, a route that is banned, a venue that moves).
+- **Sources:** at least two different sites per story, at least one of them a primary source (the institution, court, statistics office, election commission, company) or a major outlet (Reuters, AP, AFP, BBC, ČTK, ČT24, iROZHLAS, national public broadcasters, the large national dailies). Name the outlet that actually published the text (Belga is not AFP). Never use content farms or aggregators (Archyde, Bloomingbit, Cryptobriefing, Octagon and similar); Wikipedia may be cited for background but does not count as one of the two sources.
+- **Times and dates:** give times in Central European time and check them against daylight-saving changes (the last Sunday of October and of March). Give the date an announcement was made in the time zone where it was made.
+- **Length** (body only): lead 5–8 paragraphs and 400–650 words, with a standfirst, the background a reader needs and the main numbers; `half` 3–5 paragraphs, 150–300 words; `third`, `quarter` and rail stories 2–4 paragraphs, 100–200 words. No rail story may be longer than the lead. The validator enforces the minimums from edition No. 4.
 - Each story ends with a `basis` line: what it rests on, and the main risk to the forecast.
-- At least one source with a URL per story.
 - Never forecast deaths, accidents, disasters, crimes, or the health of named people. No private individuals.
 - `diary`: the fixed dates for the coming two weeks, especially Czech, EU and election dates.
-- `weather`: Czech regions plus Strasbourg or Brussels when Parliament sits. Shown, not scored.
+- `weather`: Czech regions plus Strasbourg or Brussels when Parliament sits. Shown, not scored. Never leave a row empty: if chmi.cz cannot be fetched, use ČHMÚ's forecast as reported by ČT24 or iROZHLAS, or yr.no, and name the source in the note.
 - `number`: previous edition number plus one. `pilot`: omit.
 
 ## 7b. Czech version
@@ -113,6 +118,10 @@ Translate faithfully into natural Czech newspaper prose (ČTK style): Czech name
 
 **House rule: foreign women's surnames are never feminised.** Write them exactly as in the original: Roberta Metsola, Kaja Kallas, Ursula von der Leyen, Taraneh Rahimi, sestry Rahimi, Helen McEntee — never Metsolaová, Kallasová, Rahimiová. The surname stays undeclined; the sentence carries case through the first name, title or function (předsedkyně Metsola, s vysokou představitelkou Kajou Kallas, sester Rahimi). Czech and Slovak women keep their own forms (Schillerová). The validator rejects feminised forms of names that appear in the English text.
 
+## 7c. Fact-check (mandatory)
+
+Launch one agent that did not write the stories, with the edition file and one instruction: open every URL in `sources` and every `resolution_source`, and mark each factual statement and number in the English and Czech text as supported, unsupported or wrong, with the URL; check times, time zones, dates, attributions and that the Czech says the same as the English. Fix every wrong statement; source or cut every unsupported one. If a correction changes the premise of a forecast (as when a union the story said stayed out had in fact joined), go back to step 5 for that claim. Record in the pull request or report how many statements were checked and fixed.
+
 ## 8. Validate and build
 
 ```
@@ -122,12 +131,18 @@ node scripts/build.mjs
 
 Both must pass with no errors. Fix the data, never the validator, unless the validator itself is wrong; in that case explain the change in the pull request.
 
+The page lays itself out: when the rail runs longer than the lead, the build moves the best-fitting section story up under the lead, and the last story of any incomplete row is widened. Still look at the built front page (`dist/index.html`) before publishing; large empty areas mean the lead is too short.
+
 ## 9. Publish
 
 Commit with the message `Edition No. <n>, dated <D+2>` and push the branch `daily/<D>`, which also carries the morning's results.
 
 - **If D is on or before `approval_required_through`:** open one pull request to `main` titled `<D>: edition No. <n> and results (for approval)`. In the description list the results first (claim, probability, outcome, evidence link), then every new claim with its probability, the three agent numbers, and anything that needed a judgement call. Do not merge. Send the publisher a short message with the pull request link; Netlify will add a deploy preview link to the pull request.
 - **Otherwise:** merge the branch into `main` yourself and push, no later than 06:00.
+
+## 9b. Corrections after publication
+
+The edition file is never changed after publication. If a fact in the text turns out wrong, add an entry to `data/corrections/<D+2>.json` (`story`, `date`, `text`, `text_cs`, `url`); it is shown under the story. Probabilities are never corrected.
 
 ## 10. Report
 

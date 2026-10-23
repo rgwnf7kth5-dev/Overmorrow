@@ -1,7 +1,7 @@
 // Builds the static site into dist/: English at /, Czech at /cs/. Run: node scripts/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadEditions, resultsFor, claimsOf, scoredClaims, summarise, brier } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -34,7 +34,7 @@ const T = {
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
     deadline: 'Deadline',
-    basis: 'Basis', sources: 'Sources',
+    basis: 'Basis', sources: 'Sources', correction: 'Correction',
     comingUp: 'Coming Up', comingDek: 'Fixed dates for the next fortnight',
     footer: [
       ['About The Overmorrow', 'A newspaper written two days ahead. Every report describes a scheduled or expected event and states the outcome we consider most likely, with a probability. Nothing is edited after publication.'],
@@ -81,7 +81,7 @@ const T = {
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
     deadline: 'Termín',
-    basis: 'Podklad', sources: 'Zdroje',
+    basis: 'Podklad', sources: 'Zdroje', correction: 'Oprava',
     comingUp: 'Co nás čeká', comingDek: 'Pevné termíny na příští dva týdny',
     footer: [
       ['O novinách The Overmorrow', 'Noviny psané dva dny dopředu. Každá zpráva popisuje naplánovanou nebo očekávanou událost a uvádí výsledek, který považujeme za nejpravděpodobnější, s pravděpodobností. Po vydání se nic neupravuje.'],
@@ -111,6 +111,7 @@ const pctNum = (p, L) => (L.locale === 'cs-CZ' ? `${Math.round(p * 100)} %` : `$
 const num3 = (x, L) => (L.locale === 'cs-CZ' ? x.toFixed(3).replace('.', ',') : x.toFixed(3));
 const LONG = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
 const DAY = { weekday: 'long', day: 'numeric', month: 'long' };
+const fmtDay = (d, L) => new Intl.DateTimeFormat(L.locale, { day: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(`${d}T12:00:00Z`));
 const fmtDate = (d, L, opts = LONG) => new Intl.DateTimeFormat(L.locale, { ...opts, timeZone: 'UTC' }).format(new Date(`${d}T12:00:00Z`));
 const fmtStamp = (s, L) => {
   const m = s.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2}).*([+-]\d{2}:\d{2}|Z)$/);
@@ -227,7 +228,7 @@ function likelihood(claim, results, show, L) {
     r && r.note ? `<p class="resnote">${esc(r.note)}${r.evidence ? ` <a href="${esc(r.evidence)}">${L.evidence}</a>` : ''}</p>` : ''}`;
 }
 
-function storyHtml(story, results, show, L) {
+function storyHtml(story, results, show, L, opts = {}) {
   const isLead = story.size === 'lead';
   const H = isLead || story.size === 'half' ? 'h3' : 'h4';
   const tableClaims = new Set((story.table?.rows || []).map((r) => r.claim));
@@ -242,8 +243,9 @@ function storyHtml(story, results, show, L) {
   const sources = (story.sources || []).filter((s) => s.url).map((s) => `<a href="${esc(s.url)}">${esc(s.title)}</a>`).join('; ');
   const checks = `<details class="check"><summary>${L.howChecked(story.claims.length > 1)}</summary>${story.claims
     .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
-  const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}`;
-  const content = isLead ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
+  const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
+  const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${fixes}${checks}`;
+  const content = isLead || opts.wide ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
   return `<div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${H}>${esc(story.headline)}</${H}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}${content}`;
 }
 
@@ -260,20 +262,48 @@ function editionMain(original, L) {
 
   const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
   const tone = (st) => storyTone(st, results);
-  const rail = ed.front.rail.map((id) => { const st = byId.get(id), t = tone(st); return `<article class="story${t.cls}"${t.style}>${storyHtml(st, results, show, L)}</article>`; }).join('');
+  const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
+  const art = (st, cls, wide) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id) })}</article>`; };
   const w = ed.weather;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
 
+  // Front page balance: the lead column (8/12) and the rail (4/12) should end level. Estimate heights from text
+  // length per column width; while the rail is clearly taller, move the first story of the sections up under the lead.
+  const textLen = (st) => 260 + [st.headline, st.standfirst || '', ...st.body, st.basis, ...(st.sources || []).map((x) => x.title)].join(' ').length;
+  const railH = ed.front.rail.reduce((a, id) => a + textLen(byId.get(id)), 0) / 4 + (w ? 500 / 4 : 0);
+  let leadH = (textLen(byId.get(ed.front.lead)) + 200) / 8;
+  const secs = (ed.sections || []).map((sec) => ({ ...sec, stories: [...sec.stories] }));
+  const frontExtra = [];
+  while (railH > leadH * 1.12 && frontExtra.length < 2) {
+    // Best fit: the section story whose height comes closest to closing the gap (each section keeps at least one story).
+    let best = null;
+    for (const sec of secs) if (sec.stories.length > 1) for (const id of sec.stories) {
+      const miss = Math.abs(railH - leadH - (textLen(byId.get(id)) * 1.6) / 8);
+      if (!best || miss < best.miss) best = { sec, id, miss };
+    }
+    if (!best || best.miss >= railH - leadH) break;
+    best.sec.stories.splice(best.sec.stories.indexOf(best.id), 1);
+    const st = byId.get(best.id);
+    frontExtra.push(st);
+    leadH += (textLen(st) * 1.6) / 8; // a second story costs more height than its text alone (large headline, narrower columns)
+  }
+  const rail = ed.front.rail.map((id) => art(byId.get(id), '')).join('');
+
+  // Sections: pack stories into rows of 12 columns and widen the last story of any row that would leave a gap.
+  const widths = { half: 6, third: 4, quarter: 3 };
   let sections = '';
-  for (const sec of ed.sections || []) {
+  for (const sec of secs) {
     sections += `<div class="section"><h2>${esc(sec.name)}</h2>${sec.dek ? `<span>${esc(sec.dek)}</span>` : ''}</div>`;
-    let used = 0;
+    const rows = [];
     for (const id of sec.stories) {
-      const s = byId.get(id);
-      const cls = spanClass[s.size] || 's6';
-      const t = tone(s);
-      sections += `<article class="story ${cls}${used % 12 ? ' vr' : ''}${t.cls}"${t.style}>${storyHtml(s, results, show, L)}</article>`;
-      used += { s6: 6, s4: 4, s3: 3 }[cls];
+      const span = widths[byId.get(id).size] || 6;
+      const row = rows[rows.length - 1];
+      if (row && row.used + span <= 12) { row.items.push({ id, span }); row.used += span; } else rows.push({ used: span, items: [{ id, span }] });
+    }
+    for (const row of rows) {
+      const last = row.items[row.items.length - 1];
+      last.span += 12 - row.used;
+      row.items.forEach((it, k) => { sections += art(byId.get(it.id), `s${it.span}${k ? ' vr' : ''}`, it.span >= 8); });
     }
   }
   const diary = ed.diary?.length ? `<div class="section"><h2>${L.comingUp}</h2><span>${L.comingDek}</span></div><div class="s12"><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
@@ -283,7 +313,7 @@ function editionMain(original, L) {
 ${updBanner}
 ${scorebar}
 <main class="grid">
-  ${(() => { const st = byId.get(ed.front.lead), t = tone(st); return `<article class="story lead s8${t.cls}"${t.style}>${storyHtml(st, results, show, L)}</article>`; })()}
+  <div class="frontcol s8">${art(byId.get(ed.front.lead), 'lead')}${frontExtra.map((st) => art(st, 'second', true)).join('')}</div>
   <aside class="rail s4 vr">${rail}${weather}</aside>
   ${sections}
   ${diary}

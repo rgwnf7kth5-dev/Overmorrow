@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadConfig, claimsOf, loadUpdate, mergeUpdate } from './lib.mjs';
+import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate } from './lib.mjs';
 
 const cfg = loadConfig();
 const errors = [];
@@ -13,7 +13,25 @@ const isStamp = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(
 const addDays = (d, n) => { const t = new Date(`${d}T12:00:00Z`); t.setUTCDate(t.getUTCDate() + n); return t.toISOString().slice(0, 10); };
 const nonEmpty = (s) => typeof s === 'string' && s.trim().length > 0;
 
+// Quality rules added on 23 October 2026 after an audit of edition No. 3; they apply from edition No. 4.
+const QUALITY_FROM = 4;
+const WEAK_DOMAINS = ['archyde.com', 'bloomingbit.io', 'cryptobriefing.com', 'octagonai.co', 'newsquawk.com'];
+const domainOf = (u) => { try { return new URL(u).hostname.replace(/^(www|m|en|cs|amp)\./, ''); } catch { return ''; } };
+const words = (xs) => xs.join(' ').split(/\s+/).filter(Boolean).length;
+
+function checkQuality(s, sw) {
+  const urls = (s.sources || []).map((x) => x.url).filter((u) => /^https?:\/\//.test(u || ''));
+  const weak = urls.filter((u) => WEAK_DOMAINS.some((d) => domainOf(u).endsWith(d)));
+  if (weak.length) err(sw, `aggregator or content-farm source not allowed: ${weak.join(', ')}`);
+  const solid = new Set(urls.filter((u) => !domainOf(u).endsWith('wikipedia.org') && !weak.includes(u)).map(domainOf));
+  if (solid.size < 2) err(sw, 'needs sources from at least two different sites (Wikipedia and aggregators do not count)');
+  const w = words(s.body || []);
+  if (s.size === 'lead' && (w < 380 || (s.body || []).length < 5)) err(sw, `lead must have at least 5 paragraphs and 380 words (has ${(s.body || []).length} and ${w})`);
+  if (s.size !== 'lead' && w < 90) err(sw, `story body too thin (${w} words; at least 90)`);
+}
+
 function checkStory(s, sw, ed) {
+  if (!ed.pilot && ed.number >= QUALITY_FROM) checkQuality(s, sw);
   for (const f of ["kicker", "headline", "basis"]) if (!nonEmpty(s[f])) err(sw, `missing ${f}`);
   if (!['lead', 'rail', 'half', 'third', 'quarter'].includes(s.size)) err(sw, 'size must be lead, rail, half, third or quarter');
   if (!Array.isArray(s.body) || !s.body.length) err(sw, 'body must be a non-empty list of paragraphs');
@@ -91,6 +109,24 @@ for (const ed of editions) {
     if (c.exclusive_set) sets.set(c.exclusive_set, (sets.get(c.exclusive_set) || 0) + c.probability);
   }
   for (const [set, sum] of sets) if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
+
+  if (ed.number >= QUALITY_FROM) {
+    const railWords = (ed.front?.rail || []).map((id) => words((ed.stories || []).find((x) => x.id === id)?.body || []));
+    const leadWords = words((ed.stories || []).find((x) => x.id === ed.front?.lead)?.body || []);
+    if (railWords.some((n) => n > leadWords)) err(w, 'a rail story is longer than the lead');
+    for (const row of ed.weather?.rows || []) if (!nonEmpty(row[1]) || /^[-—–\s]*$/.test(row[1])) err(w, `weather row "${row[0]}" is empty; use a fallback forecast source`);
+  }
+  const fix = loadCorrections(ed.id);
+  if (fix) {
+    const fw = `corrections/${fix.file}`;
+    if (fix.edition !== ed.id) err(fw, 'edition must equal the file name');
+    for (const c of fix.corrections || []) {
+      if (!ids.has(c.story)) err(fw, `unknown story ${c.story}`);
+      if (!isDate(c.date)) err(fw, `story ${c.story}: date must be YYYY-MM-DD`);
+      if (!nonEmpty(c.text) || !nonEmpty(c.text_cs)) err(fw, `story ${c.story}: text and text_cs required`);
+      if (c.url && !/^https?:\/\//.test(c.url)) err(fw, `story ${c.story}: url must be http(s)`);
+    }
+  }
 
   if (!ed.cs) err(w, 'edition-level Czech text (cs) missing');
   else if ((ed.cs.sections || []).length !== (ed.sections || []).length) err(w, 'cs.sections must match sections');

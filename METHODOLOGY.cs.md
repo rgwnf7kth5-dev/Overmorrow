@@ -130,6 +130,8 @@ Po poledni se totéž vydání aktualizuje podle [`pipeline/UPDATE.md`](pipeline
 - Každá stránka jasně uvádí, že jde o predikce.
 - Cizí ženská příjmení v češtině nepřechylujeme: Roberta Metsola, Kaja Kallas, sestry Rahimi. Pád nese křestní jméno nebo funkce (předsedkyně Metsola, s Kajou Kallas).
 - Noviny vycházejí anglicky (výchozí verze) a česky. Český text je věrný překlad pořízený ve stejném běhu; predikce, pravděpodobnosti i termíny jsou totožné. Překlad lze později opravit, predikci nikdy.
+- Fakta kolem predikce před vydáním ověřuje proti uvedeným zdrojům někdo, kdo zprávu nepsal. Každá zpráva stojí nejméně na dvou nezávislých zdrojích, z nichž aspoň jeden je primární nebo z velkého média; agregátory a obsahové farmy se nepoužívají.
+- Pokud se fakt ve zveřejněné zprávě ukáže jako chybný, pod zprávou vyjde oprava (z `data/corrections/`). Soubor vydání ani jeho predikce se nemění.
 
 ## 6. Ověřování
 

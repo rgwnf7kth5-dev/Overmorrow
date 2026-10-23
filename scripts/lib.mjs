@@ -6,6 +6,7 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export const EDITIONS_DIR = path.join(ROOT, 'data', 'editions');
 export const RESOLUTIONS_DIR = path.join(ROOT, 'data', 'resolutions');
 export const UPDATES_DIR = path.join(ROOT, 'data', 'updates');
+export const CORRECTIONS_DIR = path.join(ROOT, 'data', 'corrections');
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 
@@ -59,6 +60,23 @@ export function mergeUpdate(base) {
     if (ed.cs) ed.cs.sections = [{ name: 'Odpolední aktualizace', dek: up.summary_cs || '' }, ...(ed.cs.sections || [])];
   }
   return ed;
+}
+
+/** Corrections to the text of a published edition (facts around the forecasts), or null. The edition file is never changed. */
+export function loadCorrections(id) {
+  const file = path.join(CORRECTIONS_DIR, `${id}.json`);
+  return fs.existsSync(file) ? { file: `${id}.json`, ...readJson(file) } : null;
+}
+
+/** Map story id -> list of corrections in the given language. */
+export function correctionsFor(id, lang = 'en') {
+  const map = new Map();
+  for (const c of loadCorrections(id)?.corrections || []) {
+    const list = map.get(c.story) || [];
+    list.push({ date: c.date, text: lang === 'cs' && c.text_cs ? c.text_cs : c.text, url: c.url });
+    map.set(c.story, list);
+  }
+  return map;
 }
 
 /** Resolution file for an edition, or null. */

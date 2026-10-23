@@ -170,6 +170,31 @@
       "section": "World",
       "name": "Wikipedia current events and year pages",
       "url": "https://en.wikipedia.org/wiki/Portal:Current_events"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "ČTK: Předpokládané události (daily list of expected events)",
+      "url": "https://www.ceskenoviny.cz/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "ČT24: domácí zpravodajství a pozvánky na víkend",
+      "url": "https://ct24.ceskatelevize.cz/"
+    },
+    {
+      "section": "Czech Republic",
+      "name": "iROZHLAS",
+      "url": "https://www.irozhlas.cz/"
+    },
+    {
+      "section": "Culture",
+      "name": "Czech festivals and premieres (Ji.hlava, Febiofest, Národní divadlo, Czech Philharmonic)",
+      "url": "https://www.ji-hlava.cz/"
+    },
+    {
+      "section": "Weather",
+      "name": "Fallback forecast: yr.no (Prague, Brno, Ostrava)",
+      "url": "https://www.yr.no/"
     }
   ],
   "running_story_outlets": [
@@ -217,5 +242,6 @@
       "name": "Wikipedia opinion polling tables",
       "url": "https://en.wikipedia.org/"
     }
-  ]
+  ],
+  "_avoid": "Do not cite content farms or aggregators (Archyde, Bloomingbit, Cryptobriefing, Octagon and similar). Wikipedia is background only. The validator rejects listed domains from edition No. 4."
 }
