@@ -1,0 +1,754 @@
+{
+  "id": "2026-10-25",
+  "number": 3,
+  "edition_date": "2026-10-25",
+  "events_date": "2026-10-24",
+  "frozen_at": "2026-10-23T04:48:00+02:00",
+  "front": {
+    "lead": "france-act2",
+    "rail": [
+      "cz-honours",
+      "sk-elections"
+    ]
+  },
+  "weather": {
+    "title": "Weather, Saturday",
+    "rows": [
+      [
+        "Bohemia",
+        "—"
+      ],
+      [
+        "Moravia and Silesia",
+        "—"
+      ]
+    ],
+    "note": "No ČHMÚ forecast for Saturday was retrieved before the freeze; see chmi.cz. Clocks go back one hour overnight to Sunday."
+  },
+  "sections": [
+    {
+      "name": "World",
+      "dek": "Brazil’s last poll, British Columbia votes, Trump in Georgia, Ukraine, Iran",
+      "stories": [
+        "brazil-poll",
+        "bc-election",
+        "us-trump",
+        "ukraine-talks",
+        "iran-talks"
+      ]
+    },
+    {
+      "name": "Europe",
+      "dek": "Serbia and Bulgaria on the eve of Sunday’s votes",
+      "stories": [
+        "serbia-vote",
+        "bulgaria-vote"
+      ]
+    },
+    {
+      "name": "Culture",
+      "dek": "Rome’s film prizes",
+      "stories": [
+        "rome-film"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "france-act2",
+      "size": "lead",
+      "kicker": "France · Gilets jaunes",
+      "headline": "Act II Draws a Smaller Crowd Than the First Saturday",
+      "standfirst": "A week after a day of clashes and 1,200 arrests, the gilets jaunes marched again across France. Without the unions behind them, the Interior Ministry counted fewer people than on 17 October.",
+      "body": [
+        "The second nationwide day of gilets jaunes protests in a week brought marchers out in Paris, Lyon and dozens of other towns on Saturday, but on a smaller scale than the first. The comparison that counted was the Interior Ministry’s own nationwide figure, which for 17 October had been about 550,000; organisers had claimed about 800,000.",
+        "The Coordination des Gilets jaunes called the ‘Acte II’ on 19 October and mapped several dozen actions. The CGT, CFDT and FO did not formally call on their members to join; the unions are concentrating on an interprofessional strike on 5 November, and the movement has already announced an ‘Act III’ for 31 October.",
+        "The 17 October protests ended with clashes and about 1,200 arrests. President Emmanuel Macron refused the resignation offered by Interior Minister Laurent Nuñez. In Paris the route was disputed until the last days: the prefecture had barred the Bastille the previous Saturday.",
+        "In 2018, the first gilets jaunes movement fell from 282,000 people on its first Saturday to 166,000 on its second, by the ministry’s count. Second days without union backing usually shrink; the risk to that pattern was anger over the policing of 17 October."
+      ],
+      "claims": [
+        {
+          "id": "fr-act2-turnout",
+          "label": "Ministry counts fewer than on 17 October",
+          "text": "The Interior Ministry’s nationwide turnout figure for the 24 October protests is lower than its nationwide figure for 17 October.",
+          "probability": 0.82,
+          "resolves_by": "2026-10-25T12:00:00+01:00",
+          "criterion": "The French Interior Ministry’s nationwide count for 24 October 2026, as published by the ministry or reported by AFP or Le Monde by 12:00 CET on 25 October, is lower than its nationwide count for 17 October 2026 (about 550,000). Organisers’ figures do not count; no ministry figure by the deadline resolves no.",
+          "resolution_source": "https://www.interieur.gouv.fr/actualites",
+          "schedule": "official"
+        }
+      ],
+      "basis": "The ministry’s 17 October count as reported by Paris Match/AFP; the coordination’s call for 24 October; the 2018 precedent. Main risk: a backlash over the policing of 17 October fills the streets, or the ministry gives no nationwide figure by Sunday noon.",
+      "sources": [
+        {
+          "title": "Paris Match/AFP: 1,200 arrests after 17 October",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/18/bilan-de-1200-interpellations-apres-la-journee-de-manifestation-chaotique-du-17-octobre-6LNL4S2QX5HTHFQD5OVZZP2PZI/"
+        },
+        {
+          "title": "Sud Radio: gilets jaunes call a new day on 24 October",
+          "url": "https://www.sudradio.fr/sud-radio/les-gilets-jaunes-appellent-a-une-nouvelle-journee-de-mobilisation-des-ce-samedi-24-octobre"
+        },
+        {
+          "title": "Sortir à Paris: where the 24 October march goes",
+          "url": "https://www.sortiraparis.com/en/news/in-paris/articles/355171-october-24-protest-in-paris-where-will-it-take-place-and-what-route-will-it-follow"
+        }
+      ],
+      "rationale": "Class: second protest day without union backing smaller than the first (about 0.8; 2018: 282,000 → 166,000). A 0.78, B 0.84, C 0.82 → 0.82. Main risk: no ministry figure by Sunday noon (about 5–10%) or a backlash surge. Red team: no new fact.",
+      "cs": {
+        "kicker": "Francie · Žluté vesty",
+        "headline": "Druhé dějství přilákalo méně lidí než první sobota",
+        "standfirst": "Týden po dni střetů a 1200 zadržených vyšly žluté vesty znovu do ulic po celé Francii. Bez podpory odborů napočítalo ministerstvo vnitra méně lidí než 17. října.",
+        "body": [
+          "Druhý celostátní den protestů žlutých vest během týdne přivedl v sobotu demonstranty do ulic Paříže, Lyonu a desítek dalších měst, ale v menším rozsahu než ten první. Rozhodující bylo srovnání s vlastním celostátním údajem ministerstva vnitra, který za 17. října činil zhruba 550 000 lidí; organizátoři hovořili asi o 800 000.",
+          "Koordinace žlutých vest vyhlásila „druhé dějství“ 19. října a zmapovala několik desítek akcí. Odbory CGT, CFDT a FO své členy k účasti formálně nevyzvaly; soustřeďují se na mezioborovou stávku 5. listopadu a hnutí už ohlásilo „třetí dějství“ na 31. října.",
+          "Protesty 17. října skončily střety a zhruba 1200 zadrženými. Prezident Emmanuel Macron odmítl demisi, kterou nabídl ministr vnitra Laurent Nuñez. V Paříži byla trasa sporná až do posledních dnů: prefektura předchozí sobotu zakázala průchod přes Bastilu.",
+          "V roce 2018 kleslo první hnutí žlutých vest podle ministerstva z 282 000 lidí v první sobotu na 166 000 ve druhé. Druhé dny bez podpory odborů obvykle slábnou; riziko pro tento vzorec představoval hněv nad zásahy policie 17. října."
+        ],
+        "claims": {
+          "fr-act2-turnout": {
+            "label": "Ministerstvo napočítá méně než 17. října",
+            "text": "Celostátní údaj ministerstva vnitra o účasti na protestech 24. října je nižší než jeho celostátní údaj za 17. října.",
+            "criterion": "Celostátní počet francouzského ministerstva vnitra za 24. října 2026, zveřejněný ministerstvem nebo citovaný AFP či deníkem Le Monde do 12:00 SEČ 25. října, je nižší než jeho celostátní počet za 17. října 2026 (zhruba 550 000). Údaje organizátorů se nepočítají; pokud ministerstvo do termínu žádný údaj nezveřejní, výrok se vyhodnotí jako nesplněný."
+          }
+        },
+        "basis": "Počet ministerstva za 17. října podle Paris Match/AFP; výzva koordinace k 24. říjnu; precedent z roku 2018. Hlavní riziko: odpor k zásahům policie 17. října zaplní ulice, nebo ministerstvo do nedělního poledne celostátní údaj nezveřejní."
+      }
+    },
+    {
+      "id": "cz-honours",
+      "size": "rail",
+      "kicker": "Prague Castle",
+      "headline": "Names of 28 October Honours Stay Under Wraps",
+      "body": [
+        "Prague Castle did not publish the names of the people President Petr Pavel will decorate on Wednesday, the state holiday. Under Pavel the Castle has kept the list back until the ceremony itself.",
+        "In 2025 it announced only the number in advance, 48 recipients, down from 56 in 2024, and said that it does not publish names beforehand. In 2023 it took the same line. Leaks to the press do not count as publication."
+      ],
+      "claims": [
+        {
+          "id": "cz-honours-24",
+          "label": "Castle publishes honours list by Saturday",
+          "text": "By 23:59 on 24 October, Prague Castle publishes on hrad.cz the names of the people who will receive state honours on 28 October 2026.",
+          "probability": 0.04,
+          "resolves_by": "2026-10-24T23:59:00+02:00",
+          "criterion": "hrad.cz carries, by the deadline, a list naming the recipients of state honours to be awarded on 28 October 2026. Media leaks do not count.",
+          "resolution_source": "https://www.hrad.cz/cs/pro-media/tiskove-zpravy",
+          "schedule": "official"
+        }
+      ],
+      "basis": "The Castle’s practice in 2023–2025 as reported by ČT24 and Echo24. Main risk: a change of practice after leaks.",
+      "sources": [
+        {
+          "title": "Echo24: 48 recipients in 2025, names not published in advance",
+          "url": "https://www.echo24.cz/a/HFCrS/zpravy-domov-statni-vyznamenani-bude-48-ocenenych-oznamil-hrad"
+        },
+        {
+          "title": "ČT24: Castle keeps names back until the ceremony (2023)",
+          "url": "https://ct24.ceskatelevize.cz/clanek/domaci/prezident-28-rijna-vyznamena-pres-sedesat-osobnosti-pripravy-na-hrade-vrcholi-601"
+        }
+      ],
+      "rationale": "Class: names published four or more days before the ceremony (0 of about 5 under Pavel). A 0.04, B 0.04, C 0.04 → 0.04. Red team: no new fact.",
+      "cs": {
+        "kicker": "Pražský hrad",
+        "headline": "Jména vyznamenaných k 28. říjnu zůstávají tajná",
+        "body": [
+          "Pražský hrad nezveřejnil jména lidí, které prezident Petr Pavel ve středu, ve státní svátek, vyznamená. Za Pavla si Hrad seznam ponechává až do samotného ceremoniálu.",
+          "V roce 2025 předem oznámil jen počet, 48 oceněných oproti 56 v roce 2024, a uvedl, že jména předem nezveřejňuje. Stejně postupoval v roce 2023. Úniky do médií se za zveřejnění nepovažují."
+        ],
+        "claims": {
+          "cz-honours-24": {
+            "label": "Hrad zveřejní seznam do soboty",
+            "text": "Do 23:59 dne 24. října Pražský hrad zveřejní na hrad.cz jména lidí, kteří 28. října 2026 obdrží státní vyznamenání.",
+            "criterion": "Na hrad.cz je do termínu zveřejněn seznam jmen nositelů státních vyznamenání, která budou udělena 28. října 2026. Úniky do médií se nepočítají."
+          }
+        },
+        "basis": "Praxe Hradu v letech 2023–2025 podle ČT24 a Echo24. Hlavní riziko: změna postupu po únicích."
+      }
+    },
+    {
+      "id": "sk-elections",
+      "size": "rail",
+      "kicker": "Slovakia · Local and regional elections",
+      "headline": "Slovaks Vote for Mayors and Regions in Numbers Close to 2022",
+      "body": [
+        "Slovakia held its combined municipal and regional elections on Saturday, electing mayors, councils, regional governors and regional assemblies in a single vote, as in 2022.",
+        "The test of mobilisation was the regional turnout. In 2022, the first time the two votes were combined, it rose to 43.74 per cent from 29.95 per cent in 2017; municipal turnout was 46.19 per cent. National politics under Robert Fico’s government is sharply divided, which could lift turnout, but the boost from holding the votes together is already in the 2022 figure. The forecast is close to an even call."
+      ],
+      "claims": [
+        {
+          "id": "sk-regional-turnout",
+          "label": "Regional turnout beats 2022’s 43.74%",
+          "text": "Turnout in Slovakia’s 2026 regional elections, held on 24 October, exceeds the 43.74 per cent recorded in the 2022 regional elections.",
+          "probability": 0.52,
+          "resolves_by": "2026-10-25T23:59:00+01:00",
+          "criterion": "The Statistical Office of the Slovak Republic (volby.statistics.sk) publishes, by 23:59 CET on 25 October 2026, a turnout for the 2026 regional (self-governing region) elections above 43.74 per cent. If the elections are not held on 24 October, the claim resolves no.",
+          "resolution_source": "https://volby.statistics.sk/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "TASR on the 2022 result; Slovak Radio on the 24 October date. Main risk: turnout settles within a point of 2022 either way; the evidence is mixed.",
+      "sources": [
+        {
+          "title": "TASR: electoral commission confirms 2022 turnout",
+          "url": "https://www.teraz.sk/slovensko/statna-volebna-komisia-potvrdila-vys/671026-clanok.html"
+        },
+        {
+          "title": "Slovak Radio: joint elections set for 24 October",
+          "url": "https://enrsi.stvr.sk/articles/news/450429/joint-local-and-regional-elections-set-for-24-october"
+        }
+      ],
+      "rationale": "Class: one comparable combined election (2022), so base about 0.5. A 0.52, B 0.55, C 0.48 → 0.52. Placed on the front rail as a neighbouring-country story: no Czech event with a forecastable outcome was found for Saturday. Red team: date confirmed, no new fact.",
+      "cs": {
+        "kicker": "Slovensko · Komunální a krajské volby",
+        "headline": "Slováci volili starosty a kraje, účast se blížila roku 2022",
+        "body": [
+          "Slovensko v sobotu uspořádalo spojené komunální a krajské volby; v jediném hlasování volilo starosty, obecní zastupitelstva, předsedy krajů a krajská zastupitelstva, stejně jako v roce 2022.",
+          "Měřítkem mobilizace byla účast v krajských volbách. V roce 2022, kdy se obě volby poprvé spojily, stoupla na 43,74 procenta z 29,95 procenta v roce 2017; v komunálních volbách činila 46,19 procenta. Celostátní politika za vlády Roberta Fica je ostře rozdělená, což mohlo účast zvýšit, ale efekt spojení obou voleb už je v čísle z roku 2022 obsažen. Předpověď je blízko vyrovnané sázce."
+        ],
+        "claims": {
+          "sk-regional-turnout": {
+            "label": "Krajská účast překoná 43,74 % z roku 2022",
+            "text": "Účast ve slovenských krajských volbách 2026, konaných 24. října, překročí 43,74 procenta zaznamenaných v krajských volbách 2022.",
+            "criterion": "Statistický úřad Slovenské republiky (volby.statistics.sk) zveřejní do 23:59 SEČ 25. října 2026 účast ve volbách do orgánů samosprávných krajů 2026 vyšší než 43,74 procenta. Pokud se volby 24. října nekonají, výrok se vyhodnotí jako nesplněný."
+          }
+        },
+        "basis": "TASR o výsledku z roku 2022; Slovenský rozhlas o termínu 24. října. Hlavní riziko: účast skončí do jednoho bodu od roku 2022 na kteroukoli stranu; podklady jsou smíšené."
+      }
+    },
+    {
+      "id": "brazil-poll",
+      "size": "half",
+      "kicker": "Brazil · Runoff eve",
+      "headline": "Final Datafolha Poll Fails to Put Flávio Bolsonaro Ahead",
+      "body": [
+        "Datafolha published its last survey before Sunday’s presidential runoff on Saturday evening, Brasília time, from 4,050 interviews conducted on Friday and Saturday. It did not show Flávio Bolsonaro ahead of President Luiz Inácio Lula da Silva in valid votes.",
+        "The firm’s series had been moving towards Lula: 52–48 for Bolsonaro on 6–7 October, 51–49 a week later and 50–50 in the poll released on Thursday. PoderData also had the two level at 50 per cent. Because Datafolha rounds to whole numbers, a tie was itself a likely result, and a tie counts against the claim.",
+        "Saturday was the last day of street campaigning. Quaest was also due to publish a final poll, with fieldwork on the same two days."
+      ],
+      "claims": [
+        {
+          "id": "br-datafolha-flavio",
+          "label": "Final Datafolha has Flávio strictly ahead",
+          "text": "Datafolha’s final runoff poll, with fieldwork on 23–24 October, shows Flávio Bolsonaro strictly ahead of Lula in valid votes.",
+          "probability": 0.28,
+          "resolves_by": "2026-10-25T06:00:00+01:00",
+          "criterion": "The Datafolha poll with fieldwork on 23–24 October 2026, published by 06:00 CET on 25 October, gives Flávio Bolsonaro a higher share of valid votes than Lula. A tie, or no such poll by the deadline, resolves no.",
+          "resolution_source": "https://datafolha.folha.uol.com.br/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Datafolha’s October series as reported by CNN Brasil and Tribuna de Jundiaí; registered fieldwork dates via BP Money. Main risk: a late swing to Bolsonaro of one point or more.",
+      "sources": [
+        {
+          "title": "CNN Brasil: Flávio and Lula tied at 50% of valid votes",
+          "url": "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/"
+        },
+        {
+          "title": "BP Money: dates of the final Quaest and Datafolha polls",
+          "url": "https://bpmoney.com.br/politica/pesquisas-quaest-datafolha-datas-segundo-turno/"
+        },
+        {
+          "title": "Tribuna de Jundiaí: Datafolha valid votes, early October",
+          "url": "https://tribunadejundiai.com.br/politica/eleicoes-2026/datafolha-segundo-turno-votos-validos-flavio-bolsonaro-lula/"
+        }
+      ],
+      "rationale": "Outcome split about Flávio ahead 0.33, tie 0.27, Lula ahead 0.40, less publication risk. A 0.30, B 0.27, C 0.28 → 0.28. Red team: final poll dates confirmed, no new fact.",
+      "cs": {
+        "kicker": "Brazílie · Před druhým kolem",
+        "headline": "Poslední průzkum Datafolha Flávia Bolsonara do čela nedostal",
+        "body": [
+          "Agentura Datafolha zveřejnila v sobotu večer brasilijského času poslední průzkum před nedělním druhým kolem prezidentských voleb, založený na 4050 rozhovorech z pátku a soboty. Flávia Bolsonara v platných hlasech před prezidenta Luize Inácia Lulu da Silvu nestavěl.",
+          "Řada agentury se posouvala k Lulovi: 52 ku 48 pro Bolsonara 6.–7. října, o týden později 51 ku 49 a ve čtvrtečním průzkumu 50 ku 50. Také PoderData měla oba kandidáty shodně na 50 procentech. Protože Datafolha zaokrouhluje na celá čísla, byla pravděpodobným výsledkem i remíza, a ta se proti výroku počítá.",
+          "Sobota byla posledním dnem kampaně v ulicích. Závěrečný průzkum se stejnými dny sběru měla zveřejnit také agentura Quaest."
+        ],
+        "claims": {
+          "br-datafolha-flavio": {
+            "label": "Datafolha má Flávia jasně v čele",
+            "text": "Poslední průzkum Datafolha před druhým kolem se sběrem dat 23.–24. října ukáže Flávia Bolsonara v platných hlasech těsně, ale jednoznačně před Lulou.",
+            "criterion": "Průzkum Datafolha se sběrem dat 23.–24. října 2026, zveřejněný do 06:00 SEČ 25. října, dává Flávio Bolsonarovi vyšší podíl platných hlasů než Lulovi. Remíza nebo absence takového průzkumu do termínu znamená nesplnění."
+          }
+        },
+        "basis": "Říjnová řada Datafolha podle CNN Brasil a Tribuna de Jundiaí; registrované dny sběru podle BP Money. Hlavní riziko: pozdní posun k Bolsonarovi o bod či víc."
+      }
+    },
+    {
+      "id": "bc-election",
+      "size": "half",
+      "kicker": "Canada · British Columbia",
+      "headline": "Conservatives Lead the Count in British Columbia",
+      "body": [
+        "British Columbians voted on Saturday in the early provincial election called by the New Democratic premier, David Eby. Polls closed at 20:00 Pacific time, 05:00 on Sunday in Central Europe, and the preliminary count favoured the BC Conservatives under their interim leader, Lorne Doerkson.",
+        "Every poll in the final week had the Conservatives ahead: Leger, 20–22 October, 44 per cent to the NDP’s 39 and the Greens’ 13; Angus Reid, 15–19 October, 46 to 43, closer than at the start of the month. The 338Canada model gave the Conservatives a 74 per cent chance of winning the most seats.",
+        "The New Democrats’ hope lay in the efficiency of their vote in Metro Vancouver and on Vancouver Island. In 2024 they won 47 of 93 seats to the Conservatives’ 44 on a near-even popular vote."
+      ],
+      "claims": [
+        {
+          "id": "ca-bc-conservatives",
+          "label": "Conservatives win the most seats",
+          "text": "The BC Conservatives win more seats than any other party in British Columbia’s 24 October provincial election.",
+          "probability": 0.69,
+          "resolves_by": "2026-10-25T23:59:00+01:00",
+          "criterion": "Elections BC preliminary results (elections.bc.ca) as of 23:59 CET on 25 October 2026 show the BC Conservatives elected or leading in more of the 93 electoral districts than any other party. A tie resolves no.",
+          "resolution_source": "https://elections.bc.ca/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Leger, Angus Reid and Innovative Research polls; the 338Canada projection. Main risk: the NDP’s seat efficiency turns a small popular-vote deficit into a plurality, as nearly happened in 2024.",
+      "sources": [
+        {
+          "title": "Leger: BC election poll, 22 October",
+          "url": "https://leger360.com/bc-election-2026-october22-poll/"
+        },
+        {
+          "title": "Global News: no sign of a late NDP surge",
+          "url": "https://globalnews.ca/news/12110154/no-sign-late-bc-ndp-surge-conservatives-lead-five-points-poll/"
+        },
+        {
+          "title": "338Canada: British Columbia",
+          "url": "https://www.338canada.com/bc"
+        }
+      ],
+      "rationale": "Class: party leading final-week polls wins most seats in Canadian provincial elections (about 0.8, n about 40). A 0.68, B 0.72, C 0.68 → 0.69; slightly below 338Canada’s 74% because of the tightening trend and seat efficiency. Red team: no new fact.",
+      "cs": {
+        "kicker": "Kanada · Britská Kolumbie",
+        "headline": "Sčítání v Britské Kolumbii vedou konzervativci",
+        "body": [
+          "Obyvatelé Britské Kolumbie v sobotu volili v předčasných provinčních volbách, které vypsal novodemokratický premiér David Eby. Volební místnosti se zavřely ve 20:00 pacifického času, v neděli v 5:00 středoevropského, a předběžné sčítání svědčilo konzervativcům vedeným dočasným předsedou Lornem Doerksonem.",
+          "Všechny průzkumy v posledním týdnu měly konzervativce v čele: Leger z 20.–22. října 44 procent proti 39 pro NDP a 13 pro zelené; Angus Reid z 15.–19. října 46 ku 43, těsněji než na začátku měsíce. Model 338Canada dával konzervativcům 74procentní šanci na nejvíce křesel.",
+          "Naděje novodemokratů spočívala v efektivitě jejich hlasů v metropolitní oblasti Vancouveru a na ostrově Vancouver. V roce 2024 získali 47 z 93 křesel proti 44 pro konzervativce při téměř vyrovnaném počtu hlasů."
+        ],
+        "claims": {
+          "ca-bc-conservatives": {
+            "label": "Konzervativci získají nejvíce křesel",
+            "text": "Konzervativci Britské Kolumbie získají v provinčních volbách 24. října více křesel než kterákoli jiná strana.",
+            "criterion": "Předběžné výsledky Elections BC (elections.bc.ca) k 23:59 SEČ 25. října 2026 ukazují konzervativce zvolené nebo vedoucí ve více z 93 volebních obvodů než kteroukoli jinou stranu. Remíza znamená nesplnění."
+          }
+        },
+        "basis": "Průzkumy Leger, Angus Reid a Innovative Research; projekce 338Canada. Hlavní riziko: efektivita hlasů NDP promění malou ztrátu v hlasech v zisk nejvíce křesel, jako tomu skoro bylo v roce 2024."
+      }
+    },
+    {
+      "id": "us-trump",
+      "size": "third",
+      "kicker": "United States · Midterms",
+      "headline": "Trump Rallies in Georgia After Venue Moves to Perry",
+      "body": [
+        "President Donald Trump addressed a midterm rally at the Guardian Centers training site in Perry, Georgia, on Saturday evening, ten days before the 3 November elections. The event, announced for Macon, was moved about 25 miles south on 21 October; no reason was given.",
+        "It was the sixth stop in a week of rallies that ran from Kansas through the Carolinas, Iowa and Florida, with Michigan to follow on Sunday. Rick Jackson, the Republican nominee for governor of Georgia, said he would skip it."
+      ],
+      "claims": [
+        {
+          "id": "us-trump-perry",
+          "label": "Trump speaks at the Perry rally",
+          "text": "Donald Trump speaks in person at the campaign rally in Perry, Georgia, on 24 October.",
+          "probability": 0.91,
+          "resolves_by": "2026-10-25T12:00:00+01:00",
+          "criterion": "AP, Reuters or White House pool reports show that Trump addressed the rally in Perry, Georgia, on 24 October 2026 (local time).",
+          "resolution_source": "https://apnews.com/hub/donald-trump",
+          "schedule": "official"
+        }
+      ],
+      "basis": "WCTV, 13WMAZ and WGXA on the move to Perry; Georgia Recorder on Jackson. Main risk: a late cancellation for weather, security or an official crisis.",
+      "sources": [
+        {
+          "title": "WCTV: Trump moves Georgia rally from Macon to Perry",
+          "url": "https://www.wctv.tv/2026/10/21/trump-moves-georgia-midterm-rally-macon-perry/"
+        },
+        {
+          "title": "13WMAZ: rally moved to Perry",
+          "url": "https://www.13wmaz.com/article/news/local/trump-moves-midterm-rally-macon-to-perry-saturday/93-b409d400-6f53-4d9b-86a0-7355788f7ffc"
+        },
+        {
+          "title": "Georgia Recorder: Jackson to skip the rally",
+          "url": "https://georgiarecorder.com/2026/10/19/jackson-will-skip-this-weekends-trump-rally-in-macon/"
+        }
+      ],
+      "rationale": "The first draft named Macon; the ensemble found the venue had moved (first round A 0.88, B 0.06, C 0.10 on the Macon wording), so the claim was rewritten and rerun. Class: announced Trump rallies held as scheduled (about 0.93). A 0.91, B 0.90, C 0.92 → 0.91. Red team: no new fact.",
+      "cs": {
+        "kicker": "Spojené státy · Volby do Kongresu",
+        "headline": "Trump vystoupil v Georgii poté, co se mítink přesunul do Perry",
+        "body": [
+          "Prezident Donald Trump v sobotu večer promluvil na předvolebním mítinku ve výcvikovém areálu Guardian Centers v Perry ve státě Georgia, deset dní před volbami 3. listopadu. Akce ohlášená do Maconu byla 21. října bez udání důvodu přesunuta zhruba 40 kilometrů na jih.",
+          "Šlo o šestou zastávku týdne mítinků, který vedl z Kansasu přes obě Karolíny, Iowu a Floridu; v neděli měl následovat Michigan. Republikánský kandidát na guvernéra Georgie Rick Jackson uvedl, že se akce nezúčastní."
+        ],
+        "claims": {
+          "us-trump-perry": {
+            "label": "Trump vystoupí na mítinku v Perry",
+            "text": "Donald Trump 24. října osobně vystoupí na předvolebním mítinku v Perry ve státě Georgia.",
+            "criterion": "Zprávy AP, Reuters nebo novinářského poolu Bílého domu ukazují, že Trump 24. října 2026 (místního času) promluvil na mítinku v Perry ve státě Georgia."
+          }
+        },
+        "basis": "WCTV, 13WMAZ a WGXA o přesunu do Perry; Georgia Recorder o Jacksonovi. Hlavní riziko: pozdní zrušení kvůli počasí, bezpečnosti nebo vládní krizi."
+      }
+    },
+    {
+      "id": "ukraine-talks",
+      "size": "third",
+      "kicker": "Russia · Ukraine · United States",
+      "headline": "Still No Date for Three-Way Talks",
+      "body": [
+        "Three days after Steve Witkoff’s meeting with Vladimir Putin in St Petersburg, neither Moscow, Washington nor Kyiv had named a date for the next round of trilateral talks.",
+        "Kremlin aide Yuri Ushakov said Putin had agreed in principle to resume them, in mid-November, after the US midterms; spokesman Dmitry Peskov mentioned Abu Dhabi as a possible venue. Volodymyr Zelensky said talks should come no later than early November. Russia released the US citizen Stephen Hubbard during Witkoff’s visit."
+      ],
+      "claims": [
+        {
+          "id": "ru-ua-date-24",
+          "label": "Date for trilateral talks named",
+          "text": "By 23:59 on 24 October, the Kremlin, the White House or the Ukrainian presidency publicly names a calendar date for a new round of trilateral US–Russia–Ukraine talks.",
+          "probability": 0.06,
+          "resolves_by": "2026-10-24T23:59:00+02:00",
+          "criterion": "An official statement or on-record remark by the Kremlin, the White House or the Office of the President of Ukraine, made by the deadline, naming a calendar date for the next trilateral talks. ‘Mid-November’ or ‘after the elections’ does not count.",
+          "resolution_source": "http://en.kremlin.ru/events/president/news",
+          "schedule": "reported"
+        }
+      ],
+      "basis": "Meduza and Axios on the Witkoff–Putin meeting and the November timetable. Main risk: an off-hand remark by Trump or Ushakov naming a day.",
+      "sources": [
+        {
+          "title": "Meduza: talks could resume in November",
+          "url": "https://meduza.io/en/feature/2026/10/22/u-s-russia-and-ukraine-discuss-resuming-trilateral-peace-talks-in-november-as-missile-and-drone-strikes-continue"
+        },
+        {
+          "title": "Axios: Witkoff meets Putin",
+          "url": "https://www.axios.com/2026/10/21/russia-ukraine-putin-witkoff-peace"
+        }
+      ],
+      "rationale": "Class: date named within about three days of a Witkoff–Putin meeting (1–2 of 10). A 0.08, B 0.05, C 0.05 → 0.06. Red team: no new fact.",
+      "cs": {
+        "kicker": "Rusko · Ukrajina · Spojené státy",
+        "headline": "Termín třístranných jednání stále chybí",
+        "body": [
+          "Tři dny po setkání Steva Witkoffa s Vladimirem Putinem v Petrohradu nejmenovala Moskva, Washington ani Kyjev datum dalšího kola třístranných jednání.",
+          "Kremelský poradce Jurij Ušakov uvedl, že Putin v zásadě souhlasil s jejich obnovením v polovině listopadu, po amerických volbách; mluvčí Dmitrij Peskov zmínil jako možné místo Abú Zabí. Volodymyr Zelenskyj řekl, že by jednání měla proběhnout nejpozději začátkem listopadu. Rusko během návštěvy Steva Witkoffa propustilo amerického občana Stephena Hubbarda."
+        ],
+        "claims": {
+          "ru-ua-date-24": {
+            "label": "Oznámeno datum třístranných jednání",
+            "text": "Do 23:59 dne 24. října Kreml, Bílý dům nebo ukrajinská prezidentská kancelář veřejně uvede kalendářní datum nového kola třístranných jednání USA, Ruska a Ukrajiny.",
+            "criterion": "Oficiální prohlášení nebo veřejný výrok Kremlu, Bílého domu nebo Kanceláře prezidenta Ukrajiny, učiněný do termínu, který uvádí kalendářní datum dalších třístranných jednání. Formulace „v polovině listopadu“ nebo „po volbách“ se nepočítá."
+          }
+        },
+        "basis": "Meduza a Axios o setkání Witkoffa s Putinem a listopadovém harmonogramu. Hlavní riziko: nahodilý výrok Trumpa nebo Ušakova, který den pojmenuje."
+      }
+    },
+    {
+      "id": "iran-talks",
+      "size": "third",
+      "kicker": "Iran · United States",
+      "headline": "Tehran Keeps Mediators Waiting",
+      "body": [
+        "Iran did not say on record by Saturday night that it had delivered its answer to the Qatari–Pakistani proposal for resuming talks with the United States, which Pakistan’s army chief carried to Tehran on 20 October.",
+        "Anonymous reports in the Arab press spoke of preliminary approval on both sides for a plan reported to release about $6 billion in exchange for nuclear inspections; no government confirmed it. Reuters, citing Iranian officials, reported that Tehran was in no hurry before the US midterms. The foreign ministry’s weekly briefing falls on Monday."
+      ],
+      "claims": [
+        {
+          "id": "ir-response",
+          "label": "Iran says its answer was delivered",
+          "text": "By 23:59 on 24 October, the Iranian government states on record that it has delivered its response to the Qatar–Pakistan proposal.",
+          "probability": 0.09,
+          "resolves_by": "2026-10-24T23:59:00+02:00",
+          "criterion": "The Iranian foreign ministry, its spokesman, the President or the Supreme National Security Council states on record, by the deadline, that Iran’s response to the Qatar–Pakistan proposal has been delivered to the mediators. Anonymous reports do not count.",
+          "resolution_source": "https://en.mfa.ir/",
+          "schedule": "speculative"
+        }
+      ],
+      "basis": "Reuters via Investing.com on Iran’s timing; Archyde on the delivery of the proposal; Arab News on Iran’s earlier ‘once the review is over’ line. Main risk: a spokesman’s remark that the reply was ‘conveyed’.",
+      "sources": [
+        {
+          "title": "Reuters (via Investing.com): Iran prolongs talks before the midterms",
+          "url": "https://www.investing.com/news/commodities-news/iran-prolongs-talks-in-stalemate-to-influence-us-midterms-officials-say-4959490"
+        },
+        {
+          "title": "Archyde: Pakistan and Qatar propose $6bn deal",
+          "url": "https://www.archyde.com/pakistan-and-qatar-propose-6-billion-deal-to-iran-and-united-states/"
+        },
+        {
+          "title": "Arab News: Iran will reply once review is over",
+          "url": "https://www.arabnews.pk/middle-east/iran-says-it-will-reply-to-us-response-on-hormuz-proposal-once-review-over-3003909"
+        }
+      ],
+      "rationale": "Class: Iranian on-record confirmation of a delivered reply in any given two-day window (about 0.1). A 0.10, B 0.07, C 0.10 → 0.09. Red team: no new fact.",
+      "cs": {
+        "kicker": "Írán · Spojené státy",
+        "headline": "Teherán nechává prostředníky čekat",
+        "body": [
+          "Írán do sobotního večera oficiálně neuvedl, že předal odpověď na katarsko-pákistánský návrh na obnovení jednání se Spojenými státy, který 20. října přivezl do Teheránu náčelník pákistánské armády.",
+          "Anonymní zprávy v arabském tisku hovořily o předběžném souhlasu obou stran s plánem, který měl podle nich uvolnit zhruba šest miliard dolarů výměnou za jaderné inspekce; žádná vláda to nepotvrdila. Agentura Reuters s odvoláním na íránské představitele uvedla, že Teherán před americkými volbami nespěchá. Pravidelný týdenní brífink ministerstva zahraničí připadá na pondělí."
+        ],
+        "claims": {
+          "ir-response": {
+            "label": "Írán oznámí předání odpovědi",
+            "text": "Do 23:59 dne 24. října íránská vláda oficiálně uvede, že předala odpověď na katarsko-pákistánský návrh.",
+            "criterion": "Íránské ministerstvo zahraničí, jeho mluvčí, prezident nebo Nejvyšší rada národní bezpečnosti do termínu oficiálně uvedou, že íránská odpověď na katarsko-pákistánský návrh byla předána prostředníkům. Anonymní zprávy se nepočítají."
+          }
+        },
+        "basis": "Reuters (přes Investing.com) o íránském načasování; Archyde o předání návrhu; Arab News o dřívějším íránském „až po posouzení“. Hlavní riziko: výrok mluvčího, že odpověď byla „sdělena“."
+      }
+    },
+    {
+      "id": "serbia-vote",
+      "size": "half",
+      "kicker": "Serbia · Election silence",
+      "headline": "Serbia Falls Silent Before a Vote That Vučić’s List Is Favoured to Top",
+      "body": [
+        "Campaigning stopped in Serbia on Saturday ahead of Sunday’s snap parliamentary election, the first in which the protest movement has gathered behind a single Student List. Aleksandar Vučić resigned as president on 27 September to lead the list of his Serbian Progressive Party for prime minister.",
+        "The polls disagree more than usual. Faktor Plus, close to the government, had Vučić’s list at 48.6 per cent to the students’ 37.1; NSPM had the students ahead, 44.4 to 41.7, CRTA 44.9 to 35.7 and Birodi 48.5 to 38.6. The PolitPro average gave Vučić a lead of about 2.6 points. The students held their final rally in Belgrade on Thursday.",
+        "The SNS has topped every parliamentary vote since 2012. The forecast below is for Sunday’s result, which the Republic Electoral Commission usually publishes within a day."
+      ],
+      "claims": [
+        {
+          "id": "rs-sns-first",
+          "label": "Vučić’s SNS list comes first",
+          "text": "In Serbia’s 25 October parliamentary election, the SNS-led list wins more votes than any other list.",
+          "probability": 0.67,
+          "resolves_by": "2026-10-26T23:59:00+01:00",
+          "criterion": "Preliminary or final results published by the Republic Electoral Commission (rik.parlament.gov.rs) by 23:59 CET on 26 October 2026 show the list led by the Serbian Progressive Party with more votes than any other list.",
+          "resolution_source": "https://www.rik.parlament.gov.rs/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Polls compiled by ANSA; Al Jazeera on the final student rally; EPC on Vučić’s resignation. Main risk: high turnout carries the Student List past the SNS; the evidence is mixed because the pollsters split along political lines.",
+      "sources": [
+        {
+          "title": "ANSA: latest polls indicate an uncertain outcome",
+          "url": "https://ansa.it/nuova_europa/en/news/sections/news/2026/10/22/latest-polls-in-serbia-indicate-an-uncertain-outcome-for-students-and-vucic_707d7628-9b19-431c-bb4e-08b44d7d252b.html"
+        },
+        {
+          "title": "Al Jazeera: final student-led rally",
+          "url": "https://www.aljazeera.com/news/2026/10/22/thousands-gather-at-final-student-led-rally-ahead-of-serbia-election"
+        },
+        {
+          "title": "EPC: students challenge Vučić",
+          "url": "https://epc.eu/events/elections-in-serbia-students-challenge-vucic-in-the-polls-after-two-years-of-protests/"
+        }
+      ],
+      "rationale": "Class: SNS first in every parliamentary election since 2012 (5 of 5), sharply discounted for a united opposition list. A 0.78, B 0.60, C 0.62 → 0.67; spread 0.18, within the limit. Manifold had an outright SNS majority at 23% (a different question). Red team: no fresh October independent polls found; no new fact.",
+      "cs": {
+        "kicker": "Srbsko · Volební moratorium",
+        "headline": "Srbsko ztichlo před volbami, v nichž je favoritem Vučićova kandidátka",
+        "body": [
+          "V Srbsku v sobotu skončila kampaň před nedělními předčasnými parlamentními volbami, prvními, v nichž se protestní hnutí sjednotilo za jedinou Studentskou kandidátkou. Aleksandar Vučić 27. září odstoupil z funkce prezidenta, aby vedl kandidátku své Srbské pokrokové strany jako kandidát na premiéra.",
+          "Průzkumy se rozcházejí víc než obvykle. Faktor Plus, blízký vládě, měl Vučićovu kandidátku na 48,6 procenta proti 37,1 procenta studentů; NSPM měl v čele studenty v poměru 44,4 ku 41,7, CRTA 44,9 ku 35,7 a Birodi 48,5 ku 38,6. Průměr PolitPro dával Vučićovi náskok asi 2,6 bodu. Studenti uspořádali závěrečné shromáždění v Bělehradě ve čtvrtek.",
+          "SNS vyhrála všechny parlamentní volby od roku 2012. Níže uvedená předpověď se týká nedělního výsledku, který Republiková volební komise obvykle zveřejňuje do jednoho dne."
+        ],
+        "claims": {
+          "rs-sns-first": {
+            "label": "Vučićova kandidátka SNS skončí první",
+            "text": "V srbských parlamentních volbách 25. října získá kandidátka vedená SNS více hlasů než kterákoli jiná kandidátka.",
+            "criterion": "Předběžné nebo konečné výsledky zveřejněné Republikovou volební komisí (rik.parlament.gov.rs) do 23:59 SEČ 26. října 2026 ukazují kandidátku vedenou Srbskou pokrokovou stranou s více hlasy než kterákoli jiná kandidátka."
+          }
+        },
+        "basis": "Průzkumy podle agentury ANSA; Al-Džazíra o závěrečném shromáždění studentů; EPC o Vučićově rezignaci. Hlavní riziko: vysoká účast vynese Studentskou kandidátku před SNS; podklady jsou smíšené, protože agentury se dělí podle politických linií."
+      }
+    },
+    {
+      "id": "bulgaria-vote",
+      "size": "half",
+      "kicker": "Bulgaria · Presidential election",
+      "headline": "Bulgaria Heads for a Runoff Even With Iotova Far Ahead",
+      "body": [
+        "Bulgaria observed its day of election silence on Saturday before Sunday’s first round of the presidential election, with 27 tickets on the ballot. Iliana Iotova, backed by Progressive Bulgaria and the BSP, was the clear favourite; Andrey Gyurov, backed by PP–DB, ran second in the polls.",
+        "To win outright a candidate needs more than half the valid votes and a turnout of at least 50 per cent. No candidate has managed it since direct elections began in 1992. Turnout in the first round was 56.28 per cent in 2016, when voting was compulsory and a referendum was held alongside, and 40.47 per cent in 2021. A runoff would be held on 1 November."
+      ],
+      "claims": [
+        {
+          "id": "bg-runoff",
+          "label": "No outright winner in round one",
+          "text": "No candidate is elected in the first round of Bulgaria’s 25 October presidential election.",
+          "probability": 0.91,
+          "resolves_by": "2026-10-27T23:59:00+01:00",
+          "criterion": "Results published by the Central Election Commission (cik.bg) by 23:59 CET on 27 October 2026 show that no candidate was elected in the first round, so that a second round is required.",
+          "resolution_source": "https://www.cik.bg/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "The election rules and past turnout as summarised on Wikipedia; Eurointegration on October polling. Main risk: high turnout combined with Iotova above 50 per cent of valid votes.",
+      "sources": [
+        {
+          "title": "Wikipedia: 2026 Bulgarian presidential election",
+          "url": "https://en.wikipedia.org/wiki/2026_Bulgarian_presidential_election"
+        },
+        {
+          "title": "Eurointegration: Bulgaria before the vote",
+          "url": "https://www.eurointegration.com.ua/eng/news/2026/10/14/7247686/"
+        }
+      ],
+      "rationale": "Class: Bulgarian presidential elections going to a runoff (7 of 7). A 0.88, B 0.93, C 0.92 → 0.91. Red team: October polls reportedly have Iotova at 44–47%, not decisive given the turnout rule.",
+      "cs": {
+        "kicker": "Bulharsko · Prezidentské volby",
+        "headline": "Bulharsko míří do druhého kola, i když Iotova vede s velkým náskokem",
+        "body": [
+          "Bulharsko v sobotu drželo den volebního klidu před nedělním prvním kolem prezidentských voleb, v nichž kandiduje 27 dvojic. Jasnou favoritkou byla Iliana Iotova podporovaná Progresivním Bulharskem a BSP; druhý byl v průzkumech Andrej Gjurov, kterého podporuje PP–DB.",
+          "K vítězství v prvním kole potřebuje kandidát více než polovinu platných hlasů a účast nejméně 50 procent. Od zavedení přímé volby v roce 1992 se to nepodařilo nikomu. Účast v prvním kole činila 56,28 procenta v roce 2016, kdy byla volba povinná a souběžně se konalo referendum, a 40,47 procenta v roce 2021. Případné druhé kolo by se konalo 1. listopadu."
+        ],
+        "claims": {
+          "bg-runoff": {
+            "label": "V prvním kole nikdo nevyhraje",
+            "text": "V prvním kole bulharských prezidentských voleb 25. října není zvolen žádný kandidát.",
+            "criterion": "Výsledky zveřejněné Ústřední volební komisí (cik.bg) do 23:59 SEČ 27. října 2026 ukazují, že v prvním kole nebyl zvolen žádný kandidát a je nutné druhé kolo."
+          }
+        },
+        "basis": "Volební pravidla a dřívější účast podle Wikipedie; Eurointegration o říjnových průzkumech. Hlavní riziko: vysoká účast spolu s více než 50 procenty platných hlasů pro kandidátku Iotova."
+      }
+    },
+    {
+      "id": "rome-film",
+      "size": "half",
+      "kicker": "Culture · Rome Film Festival",
+      "headline": "Rome’s Best Film Prize Goes to a Film Directed by a Man",
+      "body": [
+        "The jury of the Rome Film Festival’s Progressive Cinema competition, chaired by the Polish director Jan Komasa, announced its awards ahead of Sunday’s closing day. Six of the 18 films in competition were directed by women: Dua (Blerta Basholli), Eurotrash (Frauke Finsterwalder), Giorni felici (Susanna Nicchiarelli), I See Buildings Fall Like Lightning (Clio Barnard), Mustang (Kasia Smutniak) and Skateboarding Is Not for Girls (Dina Duma).",
+        "Last year’s Best Film, A Left-Handed Girl, was directed by Shih-Ching Tsou. The jury of five includes two women, Alice Braga and Saja Kilani. The forecast leans slightly towards a film by one of the twelve men in competition, in line with their share of the field."
+      ],
+      "claims": [
+        {
+          "id": "it-rome-woman",
+          "label": "Best Film goes to a woman director",
+          "text": "The Best Film award of the 2026 Rome Film Festival’s Progressive Cinema competition goes to a film directed or co-directed by a woman.",
+          "probability": 0.37,
+          "resolves_by": "2026-10-25T23:59:00+01:00",
+          "criterion": "The festival’s announcement of the 2026 Progressive Cinema awards on romacinemafest.it (or romacinemafest.org), made by 23:59 CET on 25 October, names as Best Film a film directed or co-directed by a woman. A shared award counts if any winning film qualifies.",
+          "resolution_source": "https://www.romacinemafest.it/en/",
+          "schedule": "official"
+        }
+      ],
+      "basis": "Festival line-up and juries as reported by Cinefilos and the festival site. Main risk: none beyond the jury’s choice; the awards date (Saturday or Sunday) is inside the deadline.",
+      "sources": [
+        {
+          "title": "Cinefilos: Rome 2026 programme",
+          "url": "https://cinefilos.it/festival/festa-di-roma/festa-del-cinema-di-roma-2026-tutto-il-programma-della-xxi-edizione-723416"
+        },
+        {
+          "title": "Rome Film Festival: juries 2026",
+          "url": "https://www.romacinemafest.it/en/juries-fest-2026/"
+        },
+        {
+          "title": "Euronews: 2025 winners",
+          "url": "https://it.euronews.com/culture/2025/10/25/festa-del-cinema-di-roma-miglior-film-a-left-handed-girl-ecco-tutti-i-premi"
+        }
+      ],
+      "rationale": "Class: share of competition films directed by women (6 of 18, 0.33), small upward adjustment for recent winners. A 0.35, B 0.40, C 0.35 → 0.37. Red team: no new fact.",
+      "cs": {
+        "kicker": "Kultura · Filmový festival v Římě",
+        "headline": "Cenu za nejlepší film v Římě získal snímek režiséra",
+        "body": [
+          "Porota soutěže Progressive Cinema římského filmového festivalu, které předsedal polský režisér Jan Komasa, vyhlásila ceny před nedělním závěrečným dnem. Šest z 18 soutěžních filmů natočily ženy: Dua (Blerta Basholli), Eurotrash (Frauke Finsterwalder), Giorni felici (Susanna Nicchiarelli), I See Buildings Fall Like Lightning (Clio Barnard), Mustang (Kasia Smutniak) a Skateboarding Is Not for Girls (Dina Duma).",
+          "Loňským nejlepším filmem byla Dívka, která píše levou rukou režisérky Shih-Ching Tsou. V pětičlenné porotě zasedají dvě ženy, Alice Braga a Saja Kilani. Předpověď se mírně přiklání k filmu některého z dvanácti soutěžících režisérů, v souladu s jejich podílem v soutěži."
+        ],
+        "claims": {
+          "it-rome-woman": {
+            "label": "Nejlepší film od režisérky",
+            "text": "Cenu za nejlepší film v soutěži Progressive Cinema římského festivalu 2026 získá film, který režírovala nebo spolurežírovala žena.",
+            "criterion": "Oznámení cen soutěže Progressive Cinema 2026 na romacinemafest.it (nebo romacinemafest.org), učiněné do 23:59 SEČ 25. října, označí za nejlepší film snímek, který režírovala nebo spolurežírovala žena. Dělená cena se počítá, pokud podmínku splňuje kterýkoli z oceněných filmů."
+          }
+        },
+        "basis": "Program festivalu a poroty podle Cinefilos a webu festivalu. Hlavní riziko: žádné kromě volby poroty; den vyhlášení (sobota nebo neděle) spadá do termínu."
+      }
+    }
+  ],
+  "diary": [
+    {
+      "date": "Sun 25 Oct",
+      "text": "Presidential runoff in Brazil; parliamentary election in Serbia; presidential election in Bulgaria. Clocks go back overnight."
+    },
+    {
+      "date": "Mon 26 Oct",
+      "text": "Czech Statistical Office business and consumer confidence for October. Communist Party of China plenum opens (to 29 Oct)."
+    },
+    {
+      "date": "Tue 27 Oct",
+      "text": "Knesset election in Israel; first-reading deadline for France’s social security budget."
+    },
+    {
+      "date": "Wed 28 Oct",
+      "text": "Czech state holiday: President Pavel appoints generals and presents state honours at Prague Castle."
+    },
+    {
+      "date": "Thu 29 Oct",
+      "text": "ECB monetary policy decision."
+    },
+    {
+      "date": "Sat 31 Oct",
+      "text": "Gilets jaunes ‘Act III’ in France."
+    },
+    {
+      "date": "Sun 1 Nov",
+      "text": "Second round of Bulgaria’s presidential election, if needed. OPEC+ meeting."
+    },
+    {
+      "date": "Tue 3 Nov",
+      "text": "US midterm elections."
+    },
+    {
+      "date": "Thu 5 Nov",
+      "text": "Czech National Bank monetary policy meeting and new forecast; interprofessional strike in France."
+    }
+  ],
+  "cs": {
+    "weather": {
+      "title": "Počasí v sobotu",
+      "rows": [
+        [
+          "Čechy",
+          "—"
+        ],
+        [
+          "Morava a Slezsko",
+          "—"
+        ]
+      ],
+      "note": "Předpověď ČHMÚ na sobotu se do uzávěrky nepodařilo získat; viz chmi.cz. V noci na neděli se posouvá čas o hodinu zpět."
+    },
+    "sections": [
+      {
+        "name": "Svět",
+        "dek": "Poslední průzkum v Brazílii, volby v Britské Kolumbii, Trump v Georgii, Ukrajina, Írán"
+      },
+      {
+        "name": "Evropa",
+        "dek": "Srbsko a Bulharsko před nedělními volbami"
+      },
+      {
+        "name": "Kultura",
+        "dek": "Filmové ceny v Římě"
+      }
+    ],
+    "diary": [
+      {
+        "date": "Ne 25. 10.",
+        "text": "Druhé kolo prezidentských voleb v Brazílii; parlamentní volby v Srbsku; prezidentské volby v Bulharsku. V noci se posouvá čas zpět."
+      },
+      {
+        "date": "Po 26. 10.",
+        "text": "Konjunkturální průzkum ČSÚ za říjen. Začíná plénum ÚV Komunistické strany Číny (do 29. 10.)."
+      },
+      {
+        "date": "Út 27. 10.",
+        "text": "Volby do Knesetu v Izraeli; lhůta pro první čtení francouzského rozpočtu sociálního zabezpečení."
+      },
+      {
+        "date": "St 28. 10.",
+        "text": "Státní svátek: prezident Pavel jmenuje generály a na Pražském hradě předává státní vyznamenání."
+      },
+      {
+        "date": "Čt 29. 10.",
+        "text": "Měnověpolitické rozhodnutí ECB."
+      },
+      {
+        "date": "So 31. 10.",
+        "text": "„Třetí dějství“ žlutých vest ve Francii."
+      },
+      {
+        "date": "Ne 1. 11.",
+        "text": "Případné druhé kolo prezidentských voleb v Bulharsku. Zasedání OPEC+."
+      },
+      {
+        "date": "Út 3. 11.",
+        "text": "Volby do amerického Kongresu."
+      },
+      {
+        "date": "Čt 5. 11.",
+        "text": "Měnové zasedání ČNB s novou prognózou; mezioborová stávka ve Francii."
+      }
+    ]
+  }
+}
