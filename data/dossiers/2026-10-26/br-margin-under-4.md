@@ -55,3 +55,11 @@
 - Sweep notes (scratchpad sweep/world.json) citing otempo.com.br, jornalopcao.com.br, opovo.com.br, en.wikipedia.org/wiki/2026_Brazilian_general_election
 - Polymarket/Manifold/Metaculus via node scripts/markets.mjs (2026-10-23T17:01–17:02Z)
 - pipeline/reference-data/poll-error.json; node scripts/refdata/slip.mjs election-held; node scripts/refdata/models.mjs
+
+## Addendum (evening desk, 2026-10-23T21:55+02:00): anchoring check
+- Round one gave five closely grouped numbers. All five forecasters had seen the Polymarket price in this dossier, so the spread may understate real uncertainty. A second round was therefore run in which only the anchor forecaster saw market prices.
+- Poll-lead model with the pooled final-poll error (sd 2.7 pp, pipeline/reference-data/poll-error.json): P(Lula leads) = 0.315 at a lead of −1.3, 0.356 at −1.0, 0.427 at −0.5, 0.50 at 0 (`node scripts/refdata/models.mjs lead <lead> 2.7`).
+- A briefing PDF sent to the publisher on 23 Oct listed "Kalshi: Flávio 51.5 %, Lula 48.5 % (market-implied chance)" and a model "DataTimes.cz (M&Š)" at 50.5–49.5. Neither could be verified: `node scripts/markets.mjs` returns no Kalshi market on the runoff (read 2026-10-23T17:41Z); Polymarket's winner market read at the same time: Lula 0.245, Flávio 0.76.
+- Later AtlasIntel runoff poll: reported in headlines as narrowing but still Flávio ahead ("Atlas/Intel: Flávio mantém vantagem sobre Lula, mas a diferença cai", https://www.brasilparalelo.com.br/noticias/atlasintel-flavio-mantem-vantagem-sobre-lula-mas-a-diferenca-cai); figure 51.1–48.9 of valid votes as cited in the forecast board background. Morning run: confirm figures and fieldwork dates.
+- Final Datafolha (n=4,050) and Quaest (n=3,702) polls publish on 24 Oct; the morning run must re-forecast with them.
+- Kalshi check after fixing scripts/markets.mjs (it read the old cent fields and saw no prices): winner market KXBRPRES-26-LULA last 0.24, bid 0.24 / ask 0.25 (read 2026-10-23T20:05Z); margin ladder KXBRPRES2MOV: Flávio 0–3% 0.37, 3–6% 0.39, 6–9% 0.11, ≥9% 0.01; Lula 0–3% 0.17. The PDF figure "Lula 48.5 %" matches the median of Kalshi’s vote-share ladder (KXVOTEBR2, about 48.3), not a chance of winning.

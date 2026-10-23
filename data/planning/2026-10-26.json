@@ -3,7 +3,7 @@
  "events_date": "2026-10-25",
  "prepared_at": "2026-10-23T21:10:00+02:00",
  "candidates": 64,
- "note": "Evening desk round one. Combination: plain geometric mean of odds (pipeline/calibration.json method geo-odds, 0 resolved). No disagreement rerun was needed (largest spread 0.19). Final Datafolha and Quaest Brazil polls (24 Oct) and the BC/Slovak results are not yet in; the morning run must re-check them. Czech Sunday is thin: most Czech claims are of the \"by Monday noon\" kind.",
+ "note": "Evening desk round one. Combination: plain geometric mean of odds (pipeline/calibration.json method geo-odds, 0 resolved). No disagreement rerun was needed (largest spread 0.19). Final Datafolha and Quaest Brazil polls (24 Oct) and the BC/Slovak results are not yet in; the morning run must re-check them. Czech Sunday is thin: most Czech claims are of the \"by Monday noon\" kind. Brazil winner, margin and share were rerun at about 22:05 with four market-blind forecasters (anchor alone saw markets), after the publisher questioned the Brazil figure; the round-one figures are kept under forecast.round_one.",
  "stories": [
   {
    "id": "brazil-runoff",
@@ -45,36 +45,41 @@
       "criterion": "ANO, pokud výsledky TSE (resultados.tse.jus.br / tse.jus.br) zveřejněné do 26. října 2026 12:00 SEČ ukážou, že Lula získal ve druhém kole prezidentských voleb více platných hlasů než Flávio Bolsonaro (při 100 % sečtených okrsků, nebo podle posledního údaje TSE v termínu, je-li výsledek matematicky rozhodnut). NE, pokud více hlasů získá Flávio Bolsonaro, nebo pokud se hlasování odloží či TSE do termínu výsledek nezveřejní."
      },
      "dossier": "data/dossiers/2026-10-26/br-lula-wins.md",
-     "probability": 0.27,
+     "probability": 0.31,
      "forecast": {
       "agents": [
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "p": 0.28
+        "p": 0.31,
+        "market_blind": true
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "p": 0.3
+        "p": 0.36,
+        "market_blind": true
        },
        {
         "role": "adversarial",
         "model": "claude-fable",
-        "p": 0.25
+        "p": 0.27,
+        "market_blind": true
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "p": 0.24
+        "p": 0.27,
+        "market_blind": false
        },
        {
         "role": "outsider",
         "model": "claude-sonnet",
-        "p": 0.27
+        "p": 0.37,
+        "market_blind": true
        }
       ],
-      "combined": 0.267,
+      "combined": 0.314,
       "combination": {
        "method": "geo-odds"
       },
@@ -89,18 +94,57 @@
        "source": "polymarket",
        "kind": "exchange",
        "url": "https://polymarket.com/event/brazil-presidential-election",
-       "p": 0.235,
-       "read_at": "2026-10-23T17:01:49Z"
+       "p": 0.245,
+       "read_at": "2026-10-23T17:41:10Z"
       },
       "dossier": "data/dossiers/2026-10-26/br-lula-wins.md",
-      "spread": 0.06,
-      "rerun": false,
+      "spread": 0.1,
+      "rerun": "Round two on 23 Oct evening: four forecasters market-blind (dossier with the market section removed), anchor with markets, after a check of anchoring on the Polymarket price.",
       "notes": {
-       "base-rate": "Poll-lead model with lead -1.3 and the pooled rms error of 2.734 (the Datafolha-only n=3 sd of 1.345 is too narrow) gives 0.31. Adjusted -0.15 log-odds because Brazilian polls have tended to underrate the right (2022: Datafolha lead error +2.2 toward Lula) and Flávio led the first round, then x0.99 for slip.",
-       "evidence": "Freshest polls have Flávio narrowly ahead (Quaest/PoderData 51-49, three-poll lead -1.3), with Datafolha trending to Lula (48->49->50); a later AtlasIntel reportedly still shows Flávio ahead but narrowing. Market 0.235; momentum and 2022 Lula-overstatement roughly offset, leaving Lula a clear underdog.",
-       "adversarial": "Routes to NO dominate: every poll but Datafolha/Vox has Flávio ahead (latest AtlasIntel 51.1–48.9, Quaest and PoderData 51–49, RTBD/Alfa 52–48; lead ≈ −1.8), 2022 polls overstated Lula's lead by 2.2 pp, the first round gave Flávio +1.9 with right-leaning remainder, and the $50m Polymarket sits at 0.235. Lula's Datafolha momentum (48→49→50) and Northeast machine are the only live YES route; lead −1.8 with sd ~2.5 gives ~0.24, slip 0.01.",
-       "anchor": "Anchor Polymarket 0.235 (re-read 17:20Z, unchanged, ~$29m volume). Poll model (lead -1.3, sd 1.345) gives 0.16 but sd is too narrow on n=3; with pooled sd 2.7 it is ~0.31; Datafolha trend toward Lula offsets the 2022 pro-Lula poll bias, so stay near market.",
-       "outsider": "Final polls are a coin flip (Datafolha 50-50, Quaest/PoderData 49-51) with a Lula trend, but Flavio led round one by 1.9 pp with the eliminated vote mostly right-leaning, 2022 polls overstated Lula, and the market gives Lula only about 23%."
+       "base-rate": "Poll-lead model with lead -1.3 pp (three-poll avg 17-22 Oct) but realistic error sd ~2.7-3 pp (n=3 Datafolha rms 1.345 too narrow; all-elections rms 2.734 gives 0.31). Datafolha trend toward Lula (+0.1 logit) offset by Brazilian polls' history of understating the right incl. 2022 (-0.1 logit); ~1% slip risk.",
+       "evidence": "Latest polls (17-22 Oct) average Lula -1.3 pp on valid votes (Datafolha 50-50, Quaest and PoderData 49-51, RTBD/Alfa 48-52, Atlas 47-53 on 3-8 Oct). Datafolha has moved toward Lula (48, 49, 50), but Brazilian polls understated the Bolsonaro side in 2018 and 2022. With a realistic lead sd of about 3 pp centred near -1.3, P is about 0.33-0.38. Two searches found no polls newer than 22 Oct.",
+       "adversarial": "Three-poll average has Lula 1.3 pp behind and the only trend toward him is one Datafolha series (48→49→50); the main route to NO beyond the lead itself is the recurrent Brazilian miss against Bolsonaro-side candidates (2022 runoff Datafolha overstated Lula by 2.2 pp on the lead; AtlasIntel, the 2022 best performer, had Flávio +5.6; Real Time Big Data 52–48 Flávio on 20 Oct), plus Flávio's first-round lead and 12-vs-5 governor machine. Route to YES is Datafolha's 50–50 being right with a debate/turnout tailwind; with the pooled all-elections lead error (sd 2.7) the model gives ~0.32, with a 1-pp anti-Lula shift ~0.2, so I land near 0.27; postponement/no-result risk ~1%.",
+       "anchor": "Anchor: Polymarket Lula 0.245 (read 17:46Z); Kalshi has no winner market in the cache, but its margin ladder implies Lula win ~0.20-0.22 and Lula share>=50% at ~0.21 mid. Nudged up toward the poll model (0.315 at lead -1.3, sd 2.7) for the Datafolha trend to 50-50; ~1% slip risk.",
+       "outsider": "Polls centre on Lula about 49.3 of valid votes with a rising Datafolha trend, but Flavio led round one and most polls still show him ahead. Real runoff error is wider than the n=3 rms of 1.3, so I used share sd about 1.6. Postponement risk is negligible."
+      },
+      "round_one": {
+       "agents": [
+        {
+         "role": "base-rate",
+         "model": "claude-opus-5-5",
+         "p": 0.28
+        },
+        {
+         "role": "evidence",
+         "model": "claude-opus-5-5",
+         "p": 0.3
+        },
+        {
+         "role": "adversarial",
+         "model": "claude-fable",
+         "p": 0.25
+        },
+        {
+         "role": "anchor",
+         "model": "claude-opus-5-5",
+         "p": 0.24
+        },
+        {
+         "role": "outsider",
+         "model": "claude-sonnet",
+         "p": 0.27
+        }
+       ],
+       "combined": 0.267,
+       "probability": 0.27
+      },
+      "market_alt": {
+       "source": "kalshi",
+       "kind": "exchange",
+       "url": "https://kalshi.com/markets/kxbrpres",
+       "p": 0.24,
+       "read_at": "2026-10-23T20:05:00Z",
+       "note": "KXBRPRES-26-LULA last 0.24, bid 0.24 / ask 0.25, volume about 4.8m"
       }
      }
     },
@@ -120,36 +164,41 @@
       "criterion": "ANO, pokud ve výsledcích druhého kola prezidentských voleb podle TSE (resultados.tse.jus.br / tse.jus.br) při 100 % sečtených okrsků, nebo podle posledního údaje TSE k 26. říjnu 2026 12:00 SEČ, činí rozdíl podílu platných hlasů vítěze a druhého kandidáta méně než 4,00 procentního bodu. NE, pokud je rozdíl 4,00 bodu či větší, nebo pokud se hlasování odloží či TSE do termínu výsledek nezveřejní."
      },
      "dossier": "data/dossiers/2026-10-26/br-margin-under-4.md",
-     "probability": 0.72,
+     "probability": 0.74,
      "forecast": {
       "agents": [
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "p": 0.76
+        "p": 0.78,
+        "market_blind": true
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "p": 0.72
+        "p": 0.75,
+        "market_blind": true
        },
        {
         "role": "adversarial",
         "model": "claude-fable",
-        "p": 0.7
+        "p": 0.74,
+        "market_blind": true
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "p": 0.7
+        "p": 0.65,
+        "market_blind": false
        },
        {
         "role": "outsider",
         "model": "claude-sonnet",
-        "p": 0.7
+        "p": 0.79,
+        "market_blind": true
        }
       ],
-      "combined": 0.717,
+      "combined": 0.745,
       "combination": {
        "method": "geo-odds"
       },
@@ -168,14 +217,45 @@
        "read_at": "2026-10-23T17:01:49Z"
       },
       "dossier": "data/dossiers/2026-10-26/br-margin-under-4.md",
-      "spread": 0.06,
-      "rerun": false,
+      "spread": 0.14,
+      "rerun": "Round two on 23 Oct evening: four forecasters market-blind (dossier with the market section removed), anchor with markets, after a check of anchoring on the Polymarket price.",
       "notes": {
-       "base-rate": "The lead ~N(-1.3, 2.73) puts 0.81 of its mass inside |4|. Widened toward a 3.0 sd for the right-leaning miss risk (0.74). Two of three recent runoffs ended under 4 pp (2014: 3.28, 2022: 1.80). Less 1% slip.",
-       "evidence": "All late national polls put the gap at 0-2 pp and the first round gap was 1.87; only older Atlas/RTBD/Alfa showed 4+. Market <4% buckets sum 0.63; I lean above it given poll consensus and narrowing Atlas trend.",
-       "adversarial": "Lead −1.8 ± 2.5–3 puts ~0.74–0.80 of mass inside ±4, but the adversarial routes are real: polls clustered at 51–49 may be herding (AtlasIntel had +5.6 three weeks ago, RTBD/Alfa +4), a 2022-style Lula overstatement of ~2 pp pushes a Flávio margin to 4+, and the market prices the 4–8 Flávio bucket at 0.305. Shaded toward the market from the model.",
-       "anchor": "Anchor Polymarket sum of <4% buckets 0.63; polls (lead -1.3, even with sd 2.7) give ~0.82. Market prices a large Flavio 4-6% bucket (0.27), i.e. a 2022-style poll miss; moved partway toward polls.",
-       "outsider": "Polls point to a 0-3 pp race and recent runoffs were 1.8 and 3.3 pp; the main route to NO is a systematic poll miss toward Flavio of 4+ pp, which the market prices around 30-35%."
+       "base-rate": "Lead ~N(-1.3, 2.8) gives P(|lead|<4) ~0.80; first-round gap 1.87 and 2014/2022 runoffs both under 4 support a close race, but Atlas/RTBD/Alfa at 4-5.6 for Flavio and possible systematic right-ward miss fatten the >=4 tail; minus ~1% slip.",
+       "evidence": "Lead modelled as N(about -1.4, 3): about 21% chance Flávio wins by 4 or more (several houses already show +4, Atlas +5.6) and about 3% chance Lula wins by 4 or more; less 1% slip risk. The first-round gap was 1.87 and the 2022 runoff margin 1.80.",
+       "adversarial": "Centre of the lead is 1.3–2 pp for Flávio, so under-4 is the modal outcome, but the narrow n=3 Datafolha error scale (0.976) overstates it: with the pooled rms lead error 2.7 the mass under 4 is ~0.8, and a systematic miss toward Flávio of the AtlasIntel/RTBD size (4–5.6 pp) is the obvious trap, as is end-of-campaign herding of pollsters to 50–50; 2018 (10 pp) shows big runoff margins happen. Count/postponement risk negligible (2022 totalised 04:18 CET).",
+       "anchor": "Anchor: Polymarket <4% buckets sum 0.62-0.63; Kalshi implies ~0.58 (Flavio >=4% mid 0.39, Lula >=3% ~0.045). Poll model N(-1.3, 2.7) gives 0.82, so shaded up modestly from the markets; minus ~1% slip.",
+       "outsider": "Expected lead is about -1.2 with sd about 3.1 once the narrow Datafolha error scale is widened. That puts roughly 0.77-0.81 of the mass inside 4 points. A one-sided miss like Atlas's early-October 5.6 points is the main route to NO."
+      },
+      "round_one": {
+       "agents": [
+        {
+         "role": "base-rate",
+         "model": "claude-opus-5-5",
+         "p": 0.76
+        },
+        {
+         "role": "evidence",
+         "model": "claude-opus-5-5",
+         "p": 0.72
+        },
+        {
+         "role": "adversarial",
+         "model": "claude-fable",
+         "p": 0.7
+        },
+        {
+         "role": "anchor",
+         "model": "claude-opus-5-5",
+         "p": 0.7
+        },
+        {
+         "role": "outsider",
+         "model": "claude-sonnet",
+         "p": 0.7
+        }
+       ],
+       "combined": 0.717,
+       "probability": 0.72
       }
      }
     },
@@ -199,9 +279,9 @@
      "quantity": "Lula's share of valid votes, presidential runoff (TSE)",
      "unit": "%",
      "quantiles": {
-      "q10": 47.24,
-      "q50": 48.98,
-      "q90": 50.64
+      "q10": 47.22,
+      "q50": 49.12,
+      "q90": 50.92
      },
      "scale": 1.3,
      "forecast": {
@@ -210,36 +290,41 @@
         "role": "base-rate",
         "model": "claude-opus-5-5",
         "q10": 47.5,
-        "q50": 49.2,
-        "q90": 50.9
+        "q50": 49.3,
+        "q90": 51.1,
+        "market_blind": true
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
         "q10": 47.4,
-        "q50": 49,
-        "q90": 50.5
+        "q50": 49.3,
+        "q90": 51.1,
+        "market_blind": true
        },
        {
         "role": "adversarial",
         "model": "claude-fable",
-        "q10": 47.2,
+        "q10": 46.7,
         "q50": 48.9,
-        "q90": 50.4
+        "q90": 50.7,
+        "market_blind": true
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "q10": 47.2,
-        "q50": 48.9,
-        "q90": 50.6
+        "q10": 47,
+        "q50": 48.7,
+        "q90": 50.4,
+        "market_blind": false
        },
        {
         "role": "outsider",
         "model": "claude-sonnet",
-        "q10": 46.9,
-        "q50": 48.9,
-        "q90": 50.8
+        "q10": 47.5,
+        "q50": 49.4,
+        "q90": 51.3,
+        "market_blind": true
        }
       ],
       "consensus": {
@@ -249,12 +334,52 @@
       "scale_source": "Half the pooled rms lead error of final polls (2.73 pp, 6 elections; pipeline/reference-data/poll-error.json) ≈ 1.3 pp per candidate share; the Datafolha-only figure (1.345/2 ≈ 0.7, n=3) is the narrow end. rms Datafolha final-poll runoff lead error 1.345 pp (2014, 2018, 2022; pipeline/reference-data/poll-error.json), halved for per-candidate share; n=3, narrow end (pooled party-error sd 2.61). Normal start q10 48.4 / q50 49.3 / q90 50.2.",
       "dossier": "data/dossiers/2026-10-26/br-lula-share.md",
       "notes": {
-       "base-rate": "Centre is the three-poll average of 49.3, shaded slightly for the historical right-leaning miss. The 80% band is ±1.7 pp of share, about 1.28 x (2.73/2).",
-       "evidence": "Late polls centre 49.3 with Datafolha at 50; market and older Atlas imply lower (~47-48) and 2022 polls overstated Lula by ~1 pp, so I shade the median to 49.0 and widen beyond the n=3 Datafolha error.",
-       "adversarial": "Centre on the seven-poll mean of Lula's valid share (~49.0) nudged down for the 2022 overstatement of Lula (+1.1 pp) and the first-round shortfall; width from a per-candidate sd ≈ 1.2 pp rather than the n=3 Datafolha 0.7, since AtlasIntel-style misses and herding are live.",
-       "anchor": "Polymarket specific-margin buckets imply Lula share q10 47.1 / q50 48.5 / q90 50.6; poll consensus 49.3 (sd 0.7 too narrow). Blend centred 48.9 with market-width tails; implies P(Lula>50) ~0.2, consistent with the win price.",
-       "outsider": "Poll average is 49.3% but polls overstated Lula in 2022 and the market's implied median is about 48.5, so I center near 48.9 with a spread of about 1.5 pp."
-      }
+       "base-rate": "Centre on three-poll consensus 49.3; share sd ~1.4 pp (half of a ~2.8 pp lead error) instead of the n=3 0.7 pp, to cover 2022-style overstatement of Lula and the Atlas 47.2 outlier. Consistent with P(Lula>50) ~0.31.",
+       "evidence": "Centred on the three-poll average of 49.3. The Datafolha drift toward Lula roughly offsets the historical pro-Lula poll bias. Spread is widened to a share sd of about 1.5 pp, wider than the n=3 Datafolha record, because pollsters differ (47.2 to 50.6) and tail risk is real.",
+       "adversarial": "Consensus 49.3 of three mid-week polls, shaded down ~0.4 for the historical overstatement of Lula/under-polling of Bolsonaro-side candidates (2022 Lula poll 52 vs 50.90; AtlasIntel 47.2) and widened well beyond the n=3 scale of 0.7 to ~1.5 pp with a fatter lower tail; final Datafolha/Quaest of 24 Oct and the Globo debate are unpriced and can move the centre either way.",
+       "anchor": "Kalshi Lula vote-share ladder (mids: >=47 0.825, >=48 0.58, >=49 0.355, >=50 0.215, >=51 0.06) implies median ~48.3 and 80% range ~46.6-50.7; polls centre 49.3. Blend median 48.7, range slightly tighter than the market.",
+       "outsider": "The poll consensus is 49.3, nudged up slightly for the Datafolha trend and for the 2022 pattern of overstating Lula, which roughly offset. The interval is widened beyond the 0.7 scale because n=3 understates the error, including the Atlas tail."
+      },
+      "round_one": {
+       "agents": [
+        {
+         "role": "base-rate",
+         "model": "claude-opus-5-5",
+         "q10": 47.5,
+         "q50": 49.2,
+         "q90": 50.9
+        },
+        {
+         "role": "evidence",
+         "model": "claude-opus-5-5",
+         "q10": 47.4,
+         "q50": 49,
+         "q90": 50.5
+        },
+        {
+         "role": "adversarial",
+         "model": "claude-fable",
+         "q10": 47.2,
+         "q50": 48.9,
+         "q90": 50.4
+        },
+        {
+         "role": "anchor",
+         "model": "claude-opus-5-5",
+         "q10": 47.2,
+         "q50": 48.9,
+         "q90": 50.6
+        },
+        {
+         "role": "outsider",
+         "model": "claude-sonnet",
+         "q10": 46.9,
+         "q50": 48.9,
+         "q90": 50.8
+        }
+       ]
+      },
+      "rerun": "Round two on 23 Oct evening: four forecasters market-blind (dossier with the market section removed), anchor with markets, after a check of anchoring on the Polymarket price."
      }
     },
     {
@@ -536,7 +661,7 @@
       "q50": 63,
       "q90": 67.76
      },
-     "scale": 4.0,
+     "scale": 4,
      "forecast": {
       "agents": [
        {
@@ -576,7 +701,7 @@
        }
       ],
       "consensus": {
-       "value": 65.0,
+       "value": 65,
        "source": "Polymarket turnout buckets read 2026-10-23T17:02Z, normalised median ≈64.75, Normal fit mean ≈65.1 (https://polymarket.com/event/serbia-parliamentary-election-turnout); Vučić's 4.1m voters ÷ 6,450,523 registered ≈63.6%; 2023: 58.77%"
       },
       "scale_source": "No record of Serbian turnout-expectation errors found; sd ≈4.1 pp derived from a Normal fit to the Polymarket bucket distribution (CDF 0.22 at 62%, 0.88 at 70%)",

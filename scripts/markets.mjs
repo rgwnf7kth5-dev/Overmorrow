@@ -50,7 +50,7 @@ async function kalshiEvents() {
   if (fs.existsSync(file) && Date.now() - fs.statSync(file).mtimeMs < 6 * 3600e3) return JSON.parse(fs.readFileSync(file, 'utf8'));
   const all = [];
   let cursor = '';
-  for (let page = 0; page < 40; page++) {
+  for (let page = 0; page < 120; page++) {
     const d = await getJson(`${KS}/events?status=open&limit=200&with_nested_markets=true${cursor ? `&cursor=${cursor}` : ''}`);
     all.push(...(d.events || []));
     if (!d.cursor) break;
@@ -62,12 +62,14 @@ async function kalshiEvents() {
 }
 
 function ksMarket(m, ev) {
-  const yes = num(m.last_price) ?? num(m.yes_bid);
+  // Kalshi's API moved from integer cents (last_price, yes_bid…) to dollar strings (last_price_dollars, yes_bid_dollars…); read either.
+  const px = (k) => { const d = num(m[`${k}_dollars`]); if (d !== null && d !== undefined && !Number.isNaN(d)) return d; const c = num(m[k]); return c === null || c === undefined || Number.isNaN(c) ? null : c / 100; };
+  const yes = px('last_price') ?? px('yes_bid');
   return {
     source: 'kalshi', kind: 'exchange', id: `kalshi:${m.ticker}`, event: ev?.title, question: m.title || ev?.title, subtitle: m.yes_sub_title || m.subtitle,
     url: `https://kalshi.com/markets/${(ev?.series_ticker || m.event_ticker || '').toLowerCase()}`,
-    outcomes: [{ outcome: 'Yes', price: yes === null ? null : yes / 100 }],
-    bid: num(m.yes_bid) / 100, ask: num(m.yes_ask) / 100, volume: num(m.volume), liquidity: num(m.liquidity), closes: m.close_time, active: m.status === 'active',
+    outcomes: [{ outcome: 'Yes', price: yes }],
+    bid: px('yes_bid'), ask: px('yes_ask'), volume: num(m.volume_fp) ?? num(m.volume), liquidity: num(m.liquidity_dollars) ?? num(m.liquidity), closes: m.close_time, active: m.status === 'active',
   };
 }
 
