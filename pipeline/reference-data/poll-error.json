@@ -1,0 +1,430 @@
+{
+  "_about": "Final-poll error vs official result, built by scripts/refdata/poll-error.mjs. Errors are poll minus result in percentage points. Lead = share of the actual winner minus share of the actual runner-up.",
+  "definitions": {
+    "mean_absolute_error": "Mean over the listed parties/candidates of |poll − result|.",
+    "lead_error": "Poll lead minus actual lead for the top two finishers. Positive = polls overstated the winner’s margin.",
+    "sd_lead_error": "Sample standard deviation (n − 1) of lead errors across elections; rms_lead_error = sqrt(mean of squared lead errors), which also counts systematic bias. Use rms as errorSd in models.mjs."
+  },
+  "generated": "2026-10-23",
+  "elections": [
+    {
+      "id": "cz-2017",
+      "election": "Czech Chamber of Deputies 2017",
+      "date": "2017-10-20",
+      "poll_basis": "Poll average published by kdovyhrajevolby.cz on 16 Oct 2017",
+      "poll_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2017_Czech_parliamentary_election (Aggregate polls table)",
+      "result_source": "https://www.volby.cz/pls/ps2017nss/vysledky (Czech Statistical Office, official XML)",
+      "polls": [
+        {
+          "pollster": "kdovyhrajevolby.cz average",
+          "fieldwork_end": "2017-10-16",
+          "values": {
+            "ČSSD": 12.34,
+            "ANO": 25.32,
+            "KSČM": 11.41,
+            "TOP 09": 6.18,
+            "ODS": 9.2,
+            "KDU-ČSL": 5.75,
+            "STAN": 3.96,
+            "Piráti": 7.64,
+            "SPD": 9.02
+          }
+        }
+      ],
+      "poll_average": {
+        "ANO": 25.32,
+        "ODS": 9.2,
+        "Piráti": 7.64,
+        "SPD": 9.02,
+        "KSČM": 11.41,
+        "ČSSD": 12.34,
+        "KDU-ČSL": 5.75,
+        "TOP 09": 6.18,
+        "STAN": 3.96
+      },
+      "result": {
+        "ANO": 29.64,
+        "ODS": 11.32,
+        "Piráti": 10.79,
+        "SPD": 10.64,
+        "KSČM": 7.76,
+        "ČSSD": 7.27,
+        "KDU-ČSL": 5.8,
+        "TOP 09": 5.31,
+        "STAN": 5.18
+      },
+      "error_poll_minus_result": {
+        "ANO": -4.32,
+        "ODS": -2.12,
+        "Piráti": -3.15,
+        "SPD": -1.62,
+        "KSČM": 3.65,
+        "ČSSD": 5.07,
+        "KDU-ČSL": -0.05,
+        "TOP 09": 0.87,
+        "STAN": -1.22
+      },
+      "mean_absolute_error": 2.452,
+      "lead": {
+        "between": "ANO − ODS",
+        "poll": 16.12,
+        "result": 18.32,
+        "error": -2.2
+      },
+      "winner_called_correctly": true
+    },
+    {
+      "id": "cz-2021",
+      "election": "Czech Chamber of Deputies 2021",
+      "date": "2021-10-08",
+      "poll_basis": "Mean of each pollster’s last poll with fieldwork ending 24 Sep 2021 or later (STEM, Sanep, Median; Kantar 13–22 Sep and an undated Phoenix poll excluded by the rule)",
+      "poll_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_Czech_parliamentary_election",
+      "result_source": "https://www.volby.cz/pls/ps2021/vysledky (Czech Statistical Office, official XML)",
+      "polls": [
+        {
+          "pollster": "STEM",
+          "fieldwork": "24–30 Sep 2021",
+          "fieldwork_end": "2021-09-30",
+          "values": {
+            "ANO": 27.3,
+            "SPOLU": 21.4,
+            "Piráti+STAN": 17.4,
+            "SPD": 12.3,
+            "KSČM": 6.5,
+            "ČSSD": 4.4,
+            "Přísaha": 5.7
+          }
+        },
+        {
+          "pollster": "Sanep",
+          "fieldwork": "23–30 Sep 2021",
+          "fieldwork_end": "2021-09-30",
+          "values": {
+            "ANO": 26.1,
+            "SPOLU": 20.7,
+            "Piráti+STAN": 18.3,
+            "SPD": 10.2,
+            "KSČM": 5,
+            "ČSSD": 6.1,
+            "Přísaha": 4
+          }
+        },
+        {
+          "pollster": "Median",
+          "fieldwork": "23–29 Sep 2021",
+          "fieldwork_end": "2021-09-29",
+          "values": {
+            "ANO": 25.2,
+            "SPOLU": 20.9,
+            "Piráti+STAN": 19.4,
+            "SPD": 10.1,
+            "KSČM": 4.4,
+            "ČSSD": 5.6,
+            "Přísaha": 3.9
+          }
+        }
+      ],
+      "poll_average": {
+        "ANO": 26.2,
+        "SPOLU": 21,
+        "Piráti+STAN": 18.37,
+        "SPD": 10.87,
+        "Přísaha": 4.53,
+        "ČSSD": 5.37,
+        "KSČM": 5.3
+      },
+      "result": {
+        "ANO": 27.12,
+        "SPOLU": 27.79,
+        "Piráti+STAN": 15.62,
+        "SPD": 9.56,
+        "Přísaha": 4.68,
+        "ČSSD": 4.65,
+        "KSČM": 3.6
+      },
+      "error_poll_minus_result": {
+        "ANO": -0.92,
+        "SPOLU": -6.79,
+        "Piráti+STAN": 2.75,
+        "SPD": 1.31,
+        "Přísaha": -0.15,
+        "ČSSD": 0.72,
+        "KSČM": 1.7
+      },
+      "mean_absolute_error": 2.049,
+      "lead": {
+        "between": "SPOLU − ANO",
+        "poll": -5.2,
+        "result": 0.67,
+        "error": -5.87
+      },
+      "winner_called_correctly": false
+    },
+    {
+      "id": "cz-2025",
+      "election": "Czech Chamber of Deputies 2025",
+      "date": "2025-10-03",
+      "poll_basis": "Mean of each pollster’s last poll with fieldwork ending 19 Sep 2025 or later (NMS, Ipsos, STEM, Median, STEM/MARK, Lord Ashcroft, Kantar CZ)",
+      "poll_source": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2025_Czech_parliamentary_election",
+      "result_source": "https://www.volby.cz/appdata/ps2025/odata/vysledky.xml (Czech Statistical Office, official XML)",
+      "polls": [
+        {
+          "pollster": "NMS",
+          "fieldwork": "24–28 Sep 2025",
+          "fieldwork_end": "2025-09-28",
+          "values": {
+            "SPOLU": 17.8,
+            "ANO": 29.5,
+            "STAN": 11.8,
+            "Piráti": 9.6,
+            "SPD": 13.1,
+            "Motoristé": 7.7,
+            "Stačilo!": 7.3
+          }
+        },
+        {
+          "pollster": "Ipsos",
+          "fieldwork": "22–28 Sep 2025",
+          "fieldwork_end": "2025-09-28",
+          "values": {
+            "SPOLU": 21.1,
+            "ANO": 32.6,
+            "STAN": 11.2,
+            "Piráti": 8.7,
+            "SPD": 10.1,
+            "Motoristé": 5.4,
+            "Stačilo!": 7.7
+          }
+        },
+        {
+          "pollster": "STEM",
+          "fieldwork": "20–26 Sep 2025",
+          "fieldwork_end": "2025-09-26",
+          "values": {
+            "SPOLU": 20.5,
+            "ANO": 29.3,
+            "STAN": 11.7,
+            "Piráti": 10.1,
+            "SPD": 13.4,
+            "Motoristé": 5.9,
+            "Stačilo!": 5.5
+          }
+        },
+        {
+          "pollster": "Median",
+          "fieldwork": "1–25 Sep 2025",
+          "fieldwork_end": "2025-09-25",
+          "values": {
+            "SPOLU": 21,
+            "ANO": 30.5,
+            "STAN": 10,
+            "Piráti": 10,
+            "SPD": 13,
+            "Motoristé": 4.5,
+            "Stačilo!": 7
+          }
+        },
+        {
+          "pollster": "STEM/MARK",
+          "fieldwork": "16–22 Sep 2025",
+          "fieldwork_end": "2025-09-22",
+          "values": {
+            "SPOLU": 18,
+            "ANO": 27.5,
+            "STAN": 11.6,
+            "Piráti": 11.7,
+            "SPD": 12.3,
+            "Motoristé": 7.6,
+            "Stačilo!": 7.9
+          }
+        },
+        {
+          "pollster": "Lord Ashcroft Polls",
+          "fieldwork": "8–22 Sep 2025",
+          "fieldwork_end": "2025-09-22",
+          "values": {
+            "SPOLU": 18.5,
+            "ANO": 34.6,
+            "STAN": 8.6,
+            "Piráti": 9.9,
+            "SPD": 11.1,
+            "Motoristé": 3.7,
+            "Stačilo!": 7.4
+          }
+        },
+        {
+          "pollster": "Kantar CZ",
+          "fieldwork": "1–19 Sep 2025",
+          "fieldwork_end": "2025-09-19",
+          "values": {
+            "SPOLU": 19.5,
+            "ANO": 33,
+            "STAN": 13,
+            "Piráti": 9.5,
+            "SPD": 9.5,
+            "Motoristé": 6,
+            "Stačilo!": 6
+          }
+        }
+      ],
+      "poll_average": {
+        "ANO": 31,
+        "SPOLU": 19.49,
+        "STAN": 11.13,
+        "Piráti": 9.93,
+        "SPD": 11.79,
+        "Motoristé": 5.83,
+        "Stačilo!": 6.97
+      },
+      "result": {
+        "ANO": 34.51,
+        "SPOLU": 23.36,
+        "STAN": 11.23,
+        "Piráti": 8.97,
+        "SPD": 7.78,
+        "Motoristé": 6.77,
+        "Stačilo!": 4.3
+      },
+      "error_poll_minus_result": {
+        "ANO": -3.51,
+        "SPOLU": -3.87,
+        "STAN": -0.1,
+        "Piráti": 0.96,
+        "SPD": 4.01,
+        "Motoristé": -0.94,
+        "Stačilo!": 2.67
+      },
+      "mean_absolute_error": 2.294,
+      "lead": {
+        "between": "ANO − SPOLU",
+        "poll": 11.51,
+        "result": 11.15,
+        "error": 0.36
+      },
+      "winner_called_correctly": true
+    },
+    {
+      "id": "br-2014-runoff",
+      "election": "Brazil presidential runoff 2014",
+      "date": "2014-10-26",
+      "poll_basis": "Datafolha final poll, 24–25 Oct 2014, n=19,318, valid votes",
+      "poll_source": "https://www.jb.com.br/eleicoes-2014/noticias/2014/10/25/amp/dilma-na-frente-de-aecio-aponta-ultimas-pesquisas-do-ibope-e-datafolha.html",
+      "result_source": "https://www12.senado.leg.br/radio/1/noticia/2014/10/27/presidente-dilma-rousseff-e-reeleita-com-51-64-dos-votos (Dilma 51.64% of valid votes; Aécio = 100 − 51.64)",
+      "poll_average": {
+        "Dilma": 52,
+        "Aécio": 48
+      },
+      "result": {
+        "Dilma": 51.64,
+        "Aécio": 48.36
+      },
+      "error_poll_minus_result": {
+        "Dilma": 0.36,
+        "Aécio": -0.36
+      },
+      "mean_absolute_error": 0.36,
+      "lead": {
+        "between": "Dilma − Aécio",
+        "poll": 4,
+        "result": 3.28,
+        "error": 0.72
+      },
+      "winner_called_correctly": true
+    },
+    {
+      "id": "br-2018-runoff",
+      "election": "Brazil presidential runoff 2018",
+      "date": "2018-10-28",
+      "poll_basis": "Datafolha final poll, 26–27 Oct 2018, n=18,731, valid votes",
+      "poll_source": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/10/27/datafolha-para-presidente-votos-validos-bolsonaro-55-haddad-45.ghtml (as cited in https://en.wikipedia.org/wiki/Opinion_polling_for_the_2018_Brazilian_presidential_election)",
+      "result_source": "TSE result as listed in the same Wikipedia table (Bolsonaro 55.13%, Haddad 44.87% of valid votes)",
+      "poll_average": {
+        "Bolsonaro": 55,
+        "Haddad": 45
+      },
+      "result": {
+        "Bolsonaro": 55.13,
+        "Haddad": 44.87
+      },
+      "error_poll_minus_result": {
+        "Bolsonaro": -0.13,
+        "Haddad": 0.13
+      },
+      "mean_absolute_error": 0.13,
+      "lead": {
+        "between": "Bolsonaro − Haddad",
+        "poll": 10,
+        "result": 10.26,
+        "error": -0.26
+      },
+      "winner_called_correctly": true
+    },
+    {
+      "id": "br-2022-runoff",
+      "election": "Brazil presidential runoff 2022",
+      "date": "2022-10-30",
+      "poll_basis": "Datafolha final poll, 28–29 Oct 2022, n=8,308, valid votes",
+      "poll_source": "https://g1.globo.com/politica/eleicoes/2022/pesquisa-eleitoral/noticia/2022/10/29/datafolha-lula-tem-52percent-dos-votos-validos-no-2o-turno-e-bolsonaro-48percent.ghtml (as cited in https://en.wikipedia.org/wiki/Opinion_polling_for_the_2022_Brazilian_presidential_election)",
+      "result_source": "TSE result as listed in the same Wikipedia table (Lula 50.9%, Bolsonaro 49.1% of valid votes)",
+      "poll_average": {
+        "Lula": 52,
+        "Bolsonaro": 48
+      },
+      "result": {
+        "Lula": 50.9,
+        "Bolsonaro": 49.1
+      },
+      "error_poll_minus_result": {
+        "Lula": 1.1,
+        "Bolsonaro": -1.1
+      },
+      "mean_absolute_error": 1.1,
+      "lead": {
+        "between": "Lula − Bolsonaro",
+        "poll": 4,
+        "result": 1.8,
+        "error": 2.2
+      },
+      "winner_called_correctly": true
+    }
+  ],
+  "pooled": {
+    "all": {
+      "n_elections": 6,
+      "mean_of_mae": 1.398,
+      "mean_lead_error": -0.842,
+      "sd_lead_error": 2.85,
+      "rms_lead_error": 2.734,
+      "mean_abs_lead_error": 1.935,
+      "sd_party_error": 2.61,
+      "n_party_errors": 29
+    },
+    "czech_parliamentary": {
+      "n_elections": 3,
+      "mean_of_mae": 2.265,
+      "lead_errors": [
+        -2.2,
+        -5.87,
+        0.36
+      ],
+      "rms_lead_error": 3.625,
+      "sd_party_error": 2.922,
+      "rms_party_error": 2.866,
+      "n_party_errors": 23,
+      "note": "Small-party errors are large relative to their size (2017 ČSSD +5.1, KSČM +3.7; 2025 SPD +4.0). In 2021 the final polls had ANO 5.2 points ahead and SPOLU won by 0.7 (wrong winner). Czech polls end about a week before the vote because of the 3-day publication ban, which inflates the error relative to final-week polls elsewhere."
+    },
+    "brazil_datafolha_runoffs": {
+      "n_elections": 3,
+      "lead_errors": [
+        0.72,
+        -0.26,
+        2.2
+      ],
+      "rms_lead_error": 1.345,
+      "mean_abs_candidate_error": 0.53
+    }
+  },
+  "not_included": [
+    "Serbia 2020/2022/2023, Bulgaria presidential 2016/2021, Israel 2019–2022 (seats by bloc) and US House generic ballot 2018/2022/2024: not compiled in this pass (time limit); no numbers were entered rather than unverified ones."
+  ]
+}

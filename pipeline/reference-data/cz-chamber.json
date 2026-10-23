@@ -1,0 +1,1256 @@
+{
+  "_about": "Czech Chamber of Deputies base rates computed from psp.cz open data by scripts/refdata/psp.mjs. Re-run the script to refresh. All counts are reproducible from the cached UNL files.",
+  "source": {
+    "description_url": "https://www.psp.cz/sqw/hp.sqw?k=1300",
+    "files": [
+      "https://www.psp.cz/eknih/cdrom/opendata/poslanci.zip",
+      "https://www.psp.cz/eknih/cdrom/opendata/hl-2021ps.zip",
+      "https://www.psp.cz/eknih/cdrom/opendata/hl-2025ps.zip",
+      "https://www.psp.cz/eknih/cdrom/opendata/tisky.zip",
+      "https://www.psp.cz/eknih/cdrom/opendata/schuze.zip"
+    ],
+    "downloaded": "2026-10-23",
+    "generated": "2026-10-23T05:43:01.152Z"
+  },
+  "coalition_definitions": "Coalition membership is club membership (zarazeni.unl, cl_funkce = 0) in the listed clubs at the time of each vote. Periods start at the appointment of the government; the Pirates’ exit is dated by the end of Ivan Bartoš’s ministerial functions in zarazeni.unl (2024-09-30 20:00).",
+  "terms": [
+    {
+      "id": "2021-2025",
+      "label": "9th term (PSP9, 2021-2025)",
+      "chamber_organ_id": 173,
+      "votes_in_file": 9016,
+      "final_votes_on_bills": {
+        "definition": "Unit = a bill (sněmovní tisk of kind 1 government bill, 2 other bill, 3 state budget) on which at least one valid vote (not declared void in zmatecne.unl, not a manual R vote) was held under an agenda item of type 5 (third reading) during the term. \"Passed\" = the bill history (hist.unl) records a transition out of a third-reading state with action 22 \"souhlas\" (approved) dated within the term. Bills with third-reading votes but no such transition either failed the final vote or had their third reading interrupted and not completed; they are listed in not_passed_examples so each can be checked. Bills approved already in first reading under §90(2) are counted separately (approved_in_first_reading_s90) because failures of such votes are not recorded in hist.unl.",
+        "bills_with_third_reading_votes": 258,
+        "passed": 256,
+        "share_passed": 0.9922,
+        "by_kind": {
+          "government_bills": {
+            "n": 232,
+            "share_passed": 0.9957
+          },
+          "other_bills": {
+            "n": 22,
+            "share_passed": 0.9545
+          },
+          "state_budget": {
+            "n": 4,
+            "share_passed": 1
+          }
+        },
+        "approved_in_first_reading_s90": 80,
+        "passage_vote_margin_over_quorum": {
+          "definition": "For passage votes linked in hist.unl: votes in favour minus the quorum (kvorum = votes needed). Conditional on passing.",
+          "n": 280,
+          "mean": 55.754,
+          "sd": 27.005,
+          "min": 0,
+          "q05": 4.95,
+          "q10": 6,
+          "q25": 49.75,
+          "median": 65,
+          "q75": 76,
+          "q90": 81.1,
+          "max": 93
+        },
+        "not_passed_examples": [
+          {
+            "print": 731,
+            "kind": "government bill",
+            "title": "Novela z. o podnikání na kapitálovém trhu",
+            "last_third_reading_vote": {
+              "date": "2025-01-22",
+              "result": "adopted",
+              "yes": 153,
+              "no": 7,
+              "present": 169,
+              "label": "Novela z. o podnikání na kapitálovém trhu - EU"
+            }
+          },
+          {
+            "print": 845,
+            "kind": "other bill",
+            "title": "Novela z. o obcích",
+            "last_third_reading_vote": {
+              "date": "2025-06-27",
+              "result": "adopted",
+              "yes": 105,
+              "no": 5,
+              "present": 118,
+              "label": "Novela z. o obcích**"
+            }
+          }
+        ]
+      },
+      "first_reading": {
+        "definition": "Unit = a bill whose first reading reached a decisive outcome within the term (last such transition in hist.unl from a first-reading state). In the Czech first reading there is no vote to \"approve\": the bill is referred to committee unless a motion to reject (zamítnout) or return (vrátit) is carried, or, under §90(2), approved outright. share_approved = (referred_to_committee + approved_in_first_reading_s90) / all decisive outcomes excluding withdrawals.",
+        "government_bills": {
+          "counts": {
+            "withdrawn": 13,
+            "referred_to_committee": 239,
+            "approved_in_first_reading_s90": 51
+          },
+          "decisive": 290,
+          "approved": 290,
+          "share_approved": 1
+        },
+        "other_bills": {
+          "counts": {
+            "approved_in_first_reading_s90": 29,
+            "returned_to_sponsor": 3,
+            "rejected": 2,
+            "referred_to_committee": 25,
+            "withdrawn": 5
+          },
+          "decisive": 59,
+          "approved": 54,
+          "share_approved": 0.9153
+        },
+        "state_budget": {
+          "counts": {
+            "referred_to_committee": 4,
+            "withdrawn": 1
+          },
+          "decisive": 4,
+          "approved": 4,
+          "share_approved": 1
+        }
+      },
+      "coalition_discipline": [
+        {
+          "id": "fiala-5",
+          "label": "Fiala government, five clubs (ODS, STAN, KDU-ČSL, TOP 09, Piráti)",
+          "from": "2021-12-17 11:00",
+          "to": "2024-09-30 20:00",
+          "clubs": [
+            "Piráti",
+            "STAN",
+            "ODS",
+            "KDU-ČSL",
+            "TOP 09"
+          ],
+          "votes_considered": 6194,
+          "contested_votes": {
+            "definition": "Electronic votes (druh_hlasovani N, not void) in the period in which a majority of the coalition clubs’ members voted ano (A) and fewer than half of the logged-in non-coalition deputies voted ano. S = coalition club members holding a mandate at the time of the vote; yes = coalition members voting A. Absent (@), excused (M), logged-in-but-not-voting (F), no (B/N) and abstain (C) all count as not yes.",
+            "n": 572,
+            "coalition_seats_S": {
+              "108": 572
+            },
+            "yes_votes": {
+              "n": 572,
+              "mean": 83.402,
+              "sd": 10.006,
+              "min": 55,
+              "q05": 65,
+              "q10": 69,
+              "q25": 77,
+              "median": 84.5,
+              "q75": 90.25,
+              "q90": 95,
+              "max": 107
+            },
+            "shortfall_S_minus_yes": {
+              "n": 572,
+              "mean": 24.598,
+              "sd": 10.006,
+              "min": 1,
+              "q05": 10,
+              "q10": 13,
+              "q25": 17.75,
+              "median": 23.5,
+              "q75": 31,
+              "q90": 39,
+              "max": 53
+            },
+            "attendance_share_logged_in": {
+              "n": 572,
+              "mean": 0.793,
+              "sd": 0.084,
+              "min": 0.5185,
+              "q05": 0.639,
+              "q10": 0.685,
+              "q25": 0.741,
+              "median": 0.796,
+              "q75": 0.852,
+              "q90": 0.889,
+              "max": 0.9907
+            },
+            "yes_share": {
+              "n": 572,
+              "mean": 0.772,
+              "sd": 0.093,
+              "min": 0.5093,
+              "q05": 0.602,
+              "q10": 0.639,
+              "q25": 0.713,
+              "median": 0.782,
+              "q75": 0.836,
+              "q90": 0.88,
+              "max": 0.9907
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0.0017,
+              "S-2": 0.0035,
+              "S-3": 0.0035,
+              "S-4": 0.0105,
+              "S-5": 0.0175
+            },
+            "share_adopted": 0.9371
+          },
+          "contested_absolute_majority_votes": {
+            "definition": "Contested votes (as above) with a quorum (kvorum) of 101, i.e. votes needing an absolute majority of all deputies (e.g. overriding a Senate or presidential veto, confidence).",
+            "n": 6,
+            "coalition_seats_S": {
+              "108": 6
+            },
+            "yes_votes": {
+              "n": 6,
+              "mean": 103.333,
+              "sd": 0.816,
+              "min": 102,
+              "q05": 102.25,
+              "q10": 102.5,
+              "q25": 103,
+              "median": 103.5,
+              "q75": 104,
+              "q90": 104,
+              "max": 104
+            },
+            "shortfall_S_minus_yes": {
+              "n": 6,
+              "mean": 4.667,
+              "sd": 0.816,
+              "min": 4,
+              "q05": 4,
+              "q10": 4,
+              "q25": 4,
+              "median": 4.5,
+              "q75": 5,
+              "q90": 5.5,
+              "max": 6
+            },
+            "attendance_share_logged_in": {
+              "n": 6,
+              "mean": 0.961,
+              "sd": 0.009,
+              "min": 0.9537,
+              "q05": 0.954,
+              "q10": 0.954,
+              "q25": 0.954,
+              "median": 0.958,
+              "q75": 0.97,
+              "q90": 0.972,
+              "max": 0.9722
+            },
+            "yes_share": {
+              "n": 6,
+              "mean": 0.957,
+              "sd": 0.008,
+              "min": 0.9444,
+              "q05": 0.947,
+              "q10": 0.949,
+              "q25": 0.954,
+              "median": 0.958,
+              "q75": 0.963,
+              "q90": 0.963,
+              "max": 0.963
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0,
+              "S-2": 0,
+              "S-3": 0,
+              "S-4": 0.5,
+              "S-5": 0.8333
+            },
+            "share_adopted": 1
+          },
+          "contested_full_house_votes": {
+            "definition": "Contested votes (as above) with at least 180 of 200 deputies logged in: a proxy for high-salience votes for which both sides mobilise (budget, confidence, flagship bills). Use this class for questions like \"at least 105 of 108 coalition deputies vote yes\" on a flagship vote.",
+            "n": 37,
+            "coalition_seats_S": {
+              "108": 37
+            },
+            "yes_votes": {
+              "n": 37,
+              "mean": 97,
+              "sd": 8.4,
+              "min": 57,
+              "q05": 88.6,
+              "q10": 91.6,
+              "q25": 93,
+              "median": 99,
+              "q75": 102,
+              "q90": 104,
+              "max": 107
+            },
+            "shortfall_S_minus_yes": {
+              "n": 37,
+              "mean": 11,
+              "sd": 8.4,
+              "min": 1,
+              "q05": 3.6,
+              "q10": 4,
+              "q25": 6,
+              "median": 9,
+              "q75": 15,
+              "q90": 16.4,
+              "max": 51
+            },
+            "attendance_share_logged_in": {
+              "n": 37,
+              "mean": 0.924,
+              "sd": 0.037,
+              "min": 0.8704,
+              "q05": 0.87,
+              "q10": 0.87,
+              "q25": 0.898,
+              "median": 0.926,
+              "q75": 0.954,
+              "q90": 0.972,
+              "max": 0.9907
+            },
+            "yes_share": {
+              "n": 37,
+              "mean": 0.898,
+              "sd": 0.078,
+              "min": 0.5278,
+              "q05": 0.82,
+              "q10": 0.848,
+              "q25": 0.861,
+              "median": 0.917,
+              "q75": 0.944,
+              "q90": 0.963,
+              "max": 0.9907
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0.027,
+              "S-2": 0.0541,
+              "S-3": 0.0541,
+              "S-4": 0.1351,
+              "S-5": 0.2162
+            },
+            "share_adopted": 0.9459
+          },
+          "contested_final_passage_votes": {
+            "definition": "Contested votes (as above) that are the third-reading passage vote of a bill according to hist.unl. Conditional on passage, so slightly optimistic about coalition turnout.",
+            "n": 35,
+            "coalition_seats_S": {
+              "108": 35
+            },
+            "yes_votes": {
+              "n": 35,
+              "mean": 87.571,
+              "sd": 7.875,
+              "min": 69,
+              "q05": 74.9,
+              "q10": 77.8,
+              "q25": 84,
+              "median": 88,
+              "q75": 92,
+              "q90": 96,
+              "max": 107
+            },
+            "shortfall_S_minus_yes": {
+              "n": 35,
+              "mean": 20.429,
+              "sd": 7.875,
+              "min": 1,
+              "q05": 10.4,
+              "q10": 12,
+              "q25": 16,
+              "median": 20,
+              "q75": 24,
+              "q90": 30.2,
+              "max": 39
+            },
+            "attendance_share_logged_in": {
+              "n": 35,
+              "mean": 0.817,
+              "sd": 0.075,
+              "min": 0.6389,
+              "q05": 0.694,
+              "q10": 0.72,
+              "q25": 0.787,
+              "median": 0.815,
+              "q75": 0.861,
+              "q90": 0.894,
+              "max": 0.9907
+            },
+            "yes_share": {
+              "n": 35,
+              "mean": 0.811,
+              "sd": 0.073,
+              "min": 0.6389,
+              "q05": 0.694,
+              "q10": 0.72,
+              "q25": 0.778,
+              "median": 0.815,
+              "q75": 0.852,
+              "q90": 0.889,
+              "max": 0.9907
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0.0286,
+              "S-2": 0.0286,
+              "S-3": 0.0286,
+              "S-4": 0.0286,
+              "S-5": 0.0286
+            },
+            "share_adopted": 1
+          }
+        },
+        {
+          "id": "fiala-4",
+          "label": "Fiala government after the Pirates left (ODS, STAN, KDU-ČSL, TOP 09)",
+          "from": "2024-10-01 00:00",
+          "to": "2025-10-08 23:59",
+          "clubs": [
+            "STAN",
+            "ODS",
+            "KDU-ČSL",
+            "TOP 09"
+          ],
+          "votes_considered": 2563,
+          "contested_votes": {
+            "definition": "Electronic votes (druh_hlasovani N, not void) in the period in which a majority of the coalition clubs’ members voted ano (A) and fewer than half of the logged-in non-coalition deputies voted ano. S = coalition club members holding a mandate at the time of the vote; yes = coalition members voting A. Absent (@), excused (M), logged-in-but-not-voting (F), no (B/N) and abstain (C) all count as not yes.",
+            "n": 394,
+            "coalition_seats_S": {
+              "104": 394
+            },
+            "yes_votes": {
+              "n": 394,
+              "mean": 84.01,
+              "sd": 10.741,
+              "min": 54,
+              "q05": 65,
+              "q10": 68,
+              "q25": 77.25,
+              "median": 86,
+              "q75": 92,
+              "q90": 97,
+              "max": 104
+            },
+            "shortfall_S_minus_yes": {
+              "n": 394,
+              "mean": 19.99,
+              "sd": 10.741,
+              "min": 0,
+              "q05": 5,
+              "q10": 7,
+              "q25": 12,
+              "median": 18,
+              "q75": 26.75,
+              "q90": 36,
+              "max": 50
+            },
+            "attendance_share_logged_in": {
+              "n": 394,
+              "mean": 0.831,
+              "sd": 0.089,
+              "min": 0.6154,
+              "q05": 0.664,
+              "q10": 0.695,
+              "q25": 0.769,
+              "median": 0.846,
+              "q75": 0.894,
+              "q90": 0.933,
+              "max": 1
+            },
+            "yes_share": {
+              "n": 394,
+              "mean": 0.808,
+              "sd": 0.103,
+              "min": 0.5192,
+              "q05": 0.625,
+              "q10": 0.654,
+              "q25": 0.743,
+              "median": 0.827,
+              "q75": 0.885,
+              "q90": 0.933,
+              "max": 1
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0.0025,
+              "S-1": 0.0051,
+              "S-2": 0.0152,
+              "S-3": 0.0254,
+              "S-4": 0.0457,
+              "S-5": 0.0533
+            },
+            "share_adopted": 0.8909
+          },
+          "contested_absolute_majority_votes": {
+            "definition": "Contested votes (as above) with a quorum (kvorum) of 101, i.e. votes needing an absolute majority of all deputies (e.g. overriding a Senate or presidential veto, confidence).",
+            "n": 4,
+            "coalition_seats_S": {
+              "104": 4
+            },
+            "yes_votes": {
+              "n": 4,
+              "mean": 102,
+              "sd": 1.826,
+              "min": 100,
+              "q05": 100.15,
+              "q10": 100.3,
+              "q25": 100.75,
+              "median": 102,
+              "q75": 103.25,
+              "q90": 103.7,
+              "max": 104
+            },
+            "shortfall_S_minus_yes": {
+              "n": 4,
+              "mean": 2,
+              "sd": 1.826,
+              "min": 0,
+              "q05": 0.15,
+              "q10": 0.3,
+              "q25": 0.75,
+              "median": 2,
+              "q75": 3.25,
+              "q90": 3.7,
+              "max": 4
+            },
+            "attendance_share_logged_in": {
+              "n": 4,
+              "mean": 0.988,
+              "sd": 0.014,
+              "min": 0.9712,
+              "q05": 0.973,
+              "q10": 0.974,
+              "q25": 0.978,
+              "median": 0.99,
+              "q75": 1,
+              "q90": 1,
+              "max": 1
+            },
+            "yes_share": {
+              "n": 4,
+              "mean": 0.981,
+              "sd": 0.018,
+              "min": 0.9615,
+              "q05": 0.963,
+              "q10": 0.964,
+              "q25": 0.969,
+              "median": 0.981,
+              "q75": 0.993,
+              "q90": 0.997,
+              "max": 1
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0.25,
+              "S-1": 0.5,
+              "S-2": 0.5,
+              "S-3": 0.75,
+              "S-4": 1,
+              "S-5": 1
+            },
+            "share_adopted": 1
+          },
+          "contested_full_house_votes": {
+            "definition": "Contested votes (as above) with at least 180 of 200 deputies logged in: a proxy for high-salience votes for which both sides mobilise (budget, confidence, flagship bills). Use this class for questions like \"at least 105 of 108 coalition deputies vote yes\" on a flagship vote.",
+            "n": 77,
+            "coalition_seats_S": {
+              "104": 77
+            },
+            "yes_votes": {
+              "n": 77,
+              "mean": 95.442,
+              "sd": 6.019,
+              "min": 68,
+              "q05": 86.6,
+              "q10": 89,
+              "q25": 94,
+              "median": 97,
+              "q75": 99,
+              "q90": 101,
+              "max": 104
+            },
+            "shortfall_S_minus_yes": {
+              "n": 77,
+              "mean": 8.558,
+              "sd": 6.019,
+              "min": 0,
+              "q05": 2,
+              "q10": 3,
+              "q25": 5,
+              "median": 7,
+              "q75": 10,
+              "q90": 15,
+              "max": 36
+            },
+            "attendance_share_logged_in": {
+              "n": 77,
+              "mean": 0.938,
+              "sd": 0.029,
+              "min": 0.8846,
+              "q05": 0.892,
+              "q10": 0.904,
+              "q25": 0.914,
+              "median": 0.933,
+              "q75": 0.962,
+              "q90": 0.981,
+              "max": 1
+            },
+            "yes_share": {
+              "n": 77,
+              "mean": 0.918,
+              "sd": 0.058,
+              "min": 0.6538,
+              "q05": 0.833,
+              "q10": 0.856,
+              "q25": 0.904,
+              "median": 0.933,
+              "q75": 0.952,
+              "q90": 0.971,
+              "max": 1
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0.013,
+              "S-1": 0.026,
+              "S-2": 0.0779,
+              "S-3": 0.1299,
+              "S-4": 0.2338,
+              "S-5": 0.2727
+            },
+            "share_adopted": 0.9481
+          },
+          "contested_final_passage_votes": {
+            "definition": "Contested votes (as above) that are the third-reading passage vote of a bill according to hist.unl. Conditional on passage, so slightly optimistic about coalition turnout.",
+            "n": 25,
+            "coalition_seats_S": {
+              "104": 25
+            },
+            "yes_votes": {
+              "n": 25,
+              "mean": 87.08,
+              "sd": 10.263,
+              "min": 67,
+              "q05": 67,
+              "q10": 68.6,
+              "q25": 83,
+              "median": 89,
+              "q75": 94,
+              "q90": 97,
+              "max": 102
+            },
+            "shortfall_S_minus_yes": {
+              "n": 25,
+              "mean": 16.92,
+              "sd": 10.263,
+              "min": 2,
+              "q05": 6.2,
+              "q10": 7,
+              "q25": 10,
+              "median": 15,
+              "q75": 21,
+              "q90": 35.4,
+              "max": 37
+            },
+            "attendance_share_logged_in": {
+              "n": 25,
+              "mean": 0.841,
+              "sd": 0.098,
+              "min": 0.6442,
+              "q05": 0.648,
+              "q10": 0.671,
+              "q25": 0.808,
+              "median": 0.865,
+              "q75": 0.914,
+              "q90": 0.938,
+              "max": 0.9808
+            },
+            "yes_share": {
+              "n": 25,
+              "mean": 0.837,
+              "sd": 0.099,
+              "min": 0.6442,
+              "q05": 0.644,
+              "q10": 0.66,
+              "q25": 0.798,
+              "median": 0.856,
+              "q75": 0.904,
+              "q90": 0.933,
+              "max": 0.9808
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0,
+              "S-2": 0.04,
+              "S-3": 0.04,
+              "S-4": 0.04,
+              "S-5": 0.04
+            },
+            "share_adopted": 1
+          }
+        }
+      ],
+      "agenda_items": {
+        "definition": "Unit = an item on the approved agenda (bod_schuze.unl, pozvanka null) of a meeting (schůze) that has ended. Status from bod_schuze.id_bod_stav: dealt_with = 0 \"projednán\"; not_dealt_with = 1 \"neprojednán\", 2 \"přerušen\" (interrupted), 5 \"odročen\" (postponed), 7 \"vyřazen\" (dropped, typically carried to a later meeting). Excluded: 3 \"neprojednatelný\" (moot because of the legislative process), 6 \"již projednán\", 4 in progress. A \"fixed slot\" item has a note fixing its date/order (poznamka or pozn2 non-empty). Items are counted per meeting, so a bill carried over several meetings counts once per meeting; the Chamber runs several meetings in parallel and long agendas are rarely completed, so share_dealt_with is the probability that an item listed on a meeting’s agenda is completed at that meeting, not the probability that a vote announced for a given day happens that day.",
+        "other_items": {
+          "scheduled": 1489,
+          "dealt_with": 464,
+          "not_dealt_with": 1025,
+          "share_dealt_with": 0.3116
+        },
+        "all_items": {
+          "scheduled": 5882,
+          "dealt_with": 1383,
+          "not_dealt_with": 4499,
+          "share_dealt_with": 0.2351
+        },
+        "all_items_with_fixed_slot": {
+          "scheduled": 565,
+          "dealt_with": 381,
+          "not_dealt_with": 184,
+          "share_dealt_with": 0.6743
+        },
+        "all_bill_items": {
+          "scheduled": 4393,
+          "dealt_with": 919,
+          "not_dealt_with": 3474,
+          "share_dealt_with": 0.2092
+        },
+        "other_bills_first_reading": {
+          "scheduled": 2493,
+          "dealt_with": 59,
+          "not_dealt_with": 2434,
+          "share_dealt_with": 0.0237
+        },
+        "government_bills_first_reading": {
+          "scheduled": 773,
+          "dealt_with": 297,
+          "not_dealt_with": 476,
+          "share_dealt_with": 0.3842
+        },
+        "bill_items_with_fixed_slot": {
+          "scheduled": 355,
+          "dealt_with": 262,
+          "not_dealt_with": 93,
+          "share_dealt_with": 0.738
+        },
+        "government_bills_second_reading": {
+          "scheduled": 368,
+          "dealt_with": 259,
+          "not_dealt_with": 109,
+          "share_dealt_with": 0.7038
+        },
+        "government_bills_third_reading": {
+          "scheduled": 610,
+          "dealt_with": 220,
+          "not_dealt_with": 390,
+          "share_dealt_with": 0.3607
+        },
+        "government_bills_other_stage": {
+          "scheduled": 27,
+          "dealt_with": 23,
+          "not_dealt_with": 4,
+          "share_dealt_with": 0.8519
+        },
+        "state_budget_second_reading": {
+          "scheduled": 4,
+          "dealt_with": 4,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "state_budget_first_reading": {
+          "scheduled": 4,
+          "dealt_with": 4,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "state_budget_third_reading": {
+          "scheduled": 4,
+          "dealt_with": 4,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "other_bills_second_reading": {
+          "scheduled": 43,
+          "dealt_with": 24,
+          "not_dealt_with": 19,
+          "share_dealt_with": 0.5581
+        },
+        "other_bills_third_reading": {
+          "scheduled": 60,
+          "dealt_with": 18,
+          "not_dealt_with": 42,
+          "share_dealt_with": 0.3
+        },
+        "other_bills_other_stage": {
+          "scheduled": 7,
+          "dealt_with": 7,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        }
+      }
+    },
+    {
+      "id": "2025-",
+      "label": "10th term (PSP10, 2025-)",
+      "chamber_organ_id": 174,
+      "votes_in_file": 2503,
+      "final_votes_on_bills": {
+        "definition": "Unit = a bill (sněmovní tisk of kind 1 government bill, 2 other bill, 3 state budget) on which at least one valid vote (not declared void in zmatecne.unl, not a manual R vote) was held under an agenda item of type 5 (third reading) during the term. \"Passed\" = the bill history (hist.unl) records a transition out of a third-reading state with action 22 \"souhlas\" (approved) dated within the term. Bills with third-reading votes but no such transition either failed the final vote or had their third reading interrupted and not completed; they are listed in not_passed_examples so each can be checked. Bills approved already in first reading under §90(2) are counted separately (approved_in_first_reading_s90) because failures of such votes are not recorded in hist.unl.",
+        "bills_with_third_reading_votes": 30,
+        "passed": 29,
+        "share_passed": 0.9667,
+        "by_kind": {
+          "government_bills": {
+            "n": 19,
+            "share_passed": 0.9474
+          },
+          "other_bills": {
+            "n": 10,
+            "share_passed": 1
+          },
+          "state_budget": {
+            "n": 1,
+            "share_passed": 1
+          }
+        },
+        "approved_in_first_reading_s90": 9,
+        "passage_vote_margin_over_quorum": {
+          "definition": "For passage votes linked in hist.unl: votes in favour minus the quorum (kvorum = votes needed). Conditional on passing.",
+          "n": 23,
+          "mean": 34.87,
+          "sd": 25.521,
+          "min": 2,
+          "q05": 5,
+          "q10": 5.6,
+          "q25": 11,
+          "median": 31,
+          "q75": 57.5,
+          "q90": 64.4,
+          "max": 76
+        },
+        "not_passed_examples": [
+          {
+            "print": 48,
+            "kind": "government bill",
+            "title": "Novela z. o rostlinolékařské péči",
+            "last_third_reading_vote": {
+              "date": "2026-06-05",
+              "result": "adopted",
+              "yes": 87,
+              "no": 46,
+              "present": 139,
+              "label": "Novela z. o rostlinolékařské péči - EU**"
+            }
+          }
+        ]
+      },
+      "first_reading": {
+        "definition": "Unit = a bill whose first reading reached a decisive outcome within the term (last such transition in hist.unl from a first-reading state). In the Czech first reading there is no vote to \"approve\": the bill is referred to committee unless a motion to reject (zamítnout) or return (vrátit) is carried, or, under §90(2), approved outright. share_approved = (referred_to_committee + approved_in_first_reading_s90) / all decisive outcomes excluding withdrawals.",
+        "government_bills": {
+          "counts": {
+            "approved_in_first_reading_s90": 3,
+            "withdrawn": 2,
+            "referred_to_committee": 44
+          },
+          "decisive": 47,
+          "approved": 47,
+          "share_approved": 1
+        },
+        "other_bills": {
+          "counts": {
+            "referred_to_committee": 18,
+            "approved_in_first_reading_s90": 6
+          },
+          "decisive": 24,
+          "approved": 24,
+          "share_approved": 1
+        },
+        "state_budget": {
+          "counts": {
+            "returned_to_sponsor": 1,
+            "referred_to_committee": 1
+          },
+          "decisive": 2,
+          "approved": 1,
+          "share_approved": 0.5
+        }
+      },
+      "coalition_discipline": [
+        {
+          "id": "babis-3",
+          "label": "Babiš government (ANO, SPD, Motoristé sobě)",
+          "from": "2025-12-15 00:00",
+          "to": null,
+          "clubs": [
+            "SPD",
+            "Motoristé",
+            "ANO"
+          ],
+          "votes_considered": 2362,
+          "contested_votes": {
+            "definition": "Electronic votes (druh_hlasovani N, not void) in the period in which a majority of the coalition clubs’ members voted ano (A) and fewer than half of the logged-in non-coalition deputies voted ano. S = coalition club members holding a mandate at the time of the vote; yes = coalition members voting A. Absent (@), excused (M), logged-in-but-not-voting (F), no (B/N) and abstain (C) all count as not yes.",
+            "n": 397,
+            "coalition_seats_S": {
+              "107": 6,
+              "108": 391
+            },
+            "yes_votes": {
+              "n": 397,
+              "mean": 88.02,
+              "sd": 10.504,
+              "min": 55,
+              "q05": 68.8,
+              "q10": 72,
+              "q25": 82,
+              "median": 89,
+              "q75": 96,
+              "q90": 100,
+              "max": 108
+            },
+            "shortfall_S_minus_yes": {
+              "n": 397,
+              "mean": 19.965,
+              "sd": 10.512,
+              "min": 0,
+              "q05": 4,
+              "q10": 8,
+              "q25": 12,
+              "median": 19,
+              "q75": 26,
+              "q90": 36,
+              "max": 53
+            },
+            "attendance_share_logged_in": {
+              "n": 397,
+              "mean": 0.837,
+              "sd": 0.084,
+              "min": 0.5648,
+              "q05": 0.676,
+              "q10": 0.722,
+              "q25": 0.796,
+              "median": 0.843,
+              "q75": 0.898,
+              "q90": 0.935,
+              "max": 1
+            },
+            "yes_share": {
+              "n": 397,
+              "mean": 0.815,
+              "sd": 0.097,
+              "min": 0.5093,
+              "q05": 0.637,
+              "q10": 0.667,
+              "q25": 0.759,
+              "median": 0.824,
+              "q75": 0.889,
+              "q90": 0.926,
+              "max": 1
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0.005,
+              "S-1": 0.0252,
+              "S-2": 0.0327,
+              "S-3": 0.0327,
+              "S-4": 0.0579,
+              "S-5": 0.063
+            },
+            "share_adopted": 0.9798
+          },
+          "contested_absolute_majority_votes": {
+            "definition": "Contested votes (as above) with a quorum (kvorum) of 101, i.e. votes needing an absolute majority of all deputies (e.g. overriding a Senate or presidential veto, confidence).",
+            "n": 12,
+            "coalition_seats_S": {
+              "108": 12
+            },
+            "yes_votes": {
+              "n": 12,
+              "mean": 103,
+              "sd": 1.279,
+              "min": 101,
+              "q05": 101,
+              "q10": 101.1,
+              "q25": 102,
+              "median": 104,
+              "q75": 104,
+              "q90": 104,
+              "max": 104
+            },
+            "shortfall_S_minus_yes": {
+              "n": 12,
+              "mean": 5,
+              "sd": 1.279,
+              "min": 4,
+              "q05": 4,
+              "q10": 4,
+              "q25": 4,
+              "median": 4,
+              "q75": 6,
+              "q90": 6.9,
+              "max": 7
+            },
+            "attendance_share_logged_in": {
+              "n": 12,
+              "mean": 0.955,
+              "sd": 0.011,
+              "min": 0.9352,
+              "q05": 0.935,
+              "q10": 0.936,
+              "q25": 0.951,
+              "median": 0.963,
+              "q75": 0.963,
+              "q90": 0.963,
+              "max": 0.963
+            },
+            "yes_share": {
+              "n": 12,
+              "mean": 0.954,
+              "sd": 0.012,
+              "min": 0.9352,
+              "q05": 0.935,
+              "q10": 0.936,
+              "q25": 0.944,
+              "median": 0.963,
+              "q75": 0.963,
+              "q90": 0.963,
+              "max": 0.963
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0,
+              "S-2": 0,
+              "S-3": 0,
+              "S-4": 0.5833,
+              "S-5": 0.5833
+            },
+            "share_adopted": 1
+          },
+          "contested_full_house_votes": {
+            "definition": "Contested votes (as above) with at least 180 of 200 deputies logged in: a proxy for high-salience votes for which both sides mobilise (budget, confidence, flagship bills). Use this class for questions like \"at least 105 of 108 coalition deputies vote yes\" on a flagship vote.",
+            "n": 25,
+            "coalition_seats_S": {
+              "107": 1,
+              "108": 24
+            },
+            "yes_votes": {
+              "n": 25,
+              "mean": 101.76,
+              "sd": 8.695,
+              "min": 69,
+              "q05": 90,
+              "q10": 91.2,
+              "q25": 99,
+              "median": 106,
+              "q75": 107,
+              "q90": 107,
+              "max": 108
+            },
+            "shortfall_S_minus_yes": {
+              "n": 25,
+              "mean": 6.2,
+              "sd": 8.703,
+              "min": 0,
+              "q05": 0.2,
+              "q10": 1,
+              "q25": 1,
+              "median": 2,
+              "q75": 9,
+              "q90": 16.8,
+              "max": 39
+            },
+            "attendance_share_logged_in": {
+              "n": 25,
+              "mean": 0.976,
+              "sd": 0.025,
+              "min": 0.9352,
+              "q05": 0.937,
+              "q10": 0.944,
+              "q25": 0.944,
+              "median": 0.991,
+              "q75": 1,
+              "q90": 1,
+              "max": 1
+            },
+            "yes_share": {
+              "n": 25,
+              "mean": 0.943,
+              "sd": 0.081,
+              "min": 0.6389,
+              "q05": 0.833,
+              "q10": 0.844,
+              "q25": 0.917,
+              "median": 0.982,
+              "q75": 0.991,
+              "q90": 0.991,
+              "max": 1
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0.08,
+              "S-1": 0.4,
+              "S-2": 0.52,
+              "S-3": 0.52,
+              "S-4": 0.64,
+              "S-5": 0.68
+            },
+            "share_adopted": 0.92
+          },
+          "contested_final_passage_votes": {
+            "definition": "Contested votes (as above) that are the third-reading passage vote of a bill according to hist.unl. Conditional on passage, so slightly optimistic about coalition turnout.",
+            "n": 12,
+            "coalition_seats_S": {
+              "107": 1,
+              "108": 11
+            },
+            "yes_votes": {
+              "n": 12,
+              "mean": 90.083,
+              "sd": 6.921,
+              "min": 79,
+              "q05": 81.75,
+              "q10": 84,
+              "q25": 84,
+              "median": 90,
+              "q75": 94,
+              "q90": 97.9,
+              "max": 103
+            },
+            "shortfall_S_minus_yes": {
+              "n": 12,
+              "mean": 17.833,
+              "sd": 7.095,
+              "min": 4,
+              "q05": 7.3,
+              "q10": 10.1,
+              "q25": 14,
+              "median": 18,
+              "q75": 24,
+              "q90": 24,
+              "max": 29
+            },
+            "attendance_share_logged_in": {
+              "n": 12,
+              "mean": 0.839,
+              "sd": 0.063,
+              "min": 0.7407,
+              "q05": 0.761,
+              "q10": 0.779,
+              "q25": 0.787,
+              "median": 0.833,
+              "q75": 0.87,
+              "q90": 0.906,
+              "max": 0.9626
+            },
+            "yes_share": {
+              "n": 12,
+              "mean": 0.835,
+              "sd": 0.066,
+              "min": 0.7315,
+              "q05": 0.757,
+              "q10": 0.778,
+              "q25": 0.778,
+              "median": 0.833,
+              "q75": 0.87,
+              "q90": 0.906,
+              "max": 0.9626
+            },
+            "p_yes_at_least_S_minus_k": {
+              "S-0": 0,
+              "S-1": 0,
+              "S-2": 0,
+              "S-3": 0,
+              "S-4": 0.0833,
+              "S-5": 0.0833
+            },
+            "share_adopted": 1
+          }
+        }
+      ],
+      "agenda_items": {
+        "definition": "Unit = an item on the approved agenda (bod_schuze.unl, pozvanka null) of a meeting (schůze) that has ended. Status from bod_schuze.id_bod_stav: dealt_with = 0 \"projednán\"; not_dealt_with = 1 \"neprojednán\", 2 \"přerušen\" (interrupted), 5 \"odročen\" (postponed), 7 \"vyřazen\" (dropped, typically carried to a later meeting). Excluded: 3 \"neprojednatelný\" (moot because of the legislative process), 6 \"již projednán\", 4 in progress. A \"fixed slot\" item has a note fixing its date/order (poznamka or pozn2 non-empty). Items are counted per meeting, so a bill carried over several meetings counts once per meeting; the Chamber runs several meetings in parallel and long agendas are rarely completed, so share_dealt_with is the probability that an item listed on a meeting’s agenda is completed at that meeting, not the probability that a vote announced for a given day happens that day.",
+        "other_items": {
+          "scheduled": 516,
+          "dealt_with": 136,
+          "not_dealt_with": 380,
+          "share_dealt_with": 0.2636
+        },
+        "all_items": {
+          "scheduled": 1150,
+          "dealt_with": 266,
+          "not_dealt_with": 884,
+          "share_dealt_with": 0.2313
+        },
+        "all_bill_items": {
+          "scheduled": 634,
+          "dealt_with": 130,
+          "not_dealt_with": 504,
+          "share_dealt_with": 0.205
+        },
+        "government_bills_first_reading": {
+          "scheduled": 156,
+          "dealt_with": 33,
+          "not_dealt_with": 123,
+          "share_dealt_with": 0.2115
+        },
+        "other_bills_first_reading": {
+          "scheduled": 284,
+          "dealt_with": 22,
+          "not_dealt_with": 262,
+          "share_dealt_with": 0.0775
+        },
+        "state_budget_first_reading": {
+          "scheduled": 1,
+          "dealt_with": 1,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "state_budget_second_reading": {
+          "scheduled": 1,
+          "dealt_with": 1,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "other_bills_second_reading": {
+          "scheduled": 23,
+          "dealt_with": 13,
+          "not_dealt_with": 10,
+          "share_dealt_with": 0.5652
+        },
+        "other_bills_third_reading": {
+          "scheduled": 36,
+          "dealt_with": 9,
+          "not_dealt_with": 27,
+          "share_dealt_with": 0.25
+        },
+        "state_budget_third_reading": {
+          "scheduled": 1,
+          "dealt_with": 1,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "other_bills_other_stage": {
+          "scheduled": 8,
+          "dealt_with": 8,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        },
+        "government_bills_second_reading": {
+          "scheduled": 49,
+          "dealt_with": 23,
+          "not_dealt_with": 26,
+          "share_dealt_with": 0.4694
+        },
+        "government_bills_third_reading": {
+          "scheduled": 69,
+          "dealt_with": 13,
+          "not_dealt_with": 56,
+          "share_dealt_with": 0.1884
+        },
+        "government_bills_other_stage": {
+          "scheduled": 6,
+          "dealt_with": 6,
+          "not_dealt_with": 0,
+          "share_dealt_with": 1
+        }
+      }
+    }
+  ]
+}
