@@ -1,0 +1,2151 @@
+{
+ "_note": "Forecast board. history is append-only: add a new entry when the evidence moves the ensemble by 5 points or more, or at least weekly; never edit an earlier entry. result is added once, when the question resolves.",
+ "questions": [
+  {
+   "id": "cz-budget-2027-third-reading",
+   "scope": "cz",
+   "topic": "2027 state budget",
+   "question": "Will the Chamber of Deputies approve the 2027 state budget bill in its third reading by 31 December 2026?",
+   "question_cs": "Schválí Poslanecká sněmovna návrh státního rozpočtu na rok 2027 ve třetím čtení do 31. prosince 2026?",
+   "criterion": "Yes if the Chamber of Deputies' record of votes (psp.cz) shows the 2027 state budget bill approved in third reading on or before 31 Dec 2026 23:59 CET. Approval by the Senate or signature by the president is not required. Otherwise no (including if the bill is returned to the government and a new bill is not passed by the deadline).",
+   "criterion_cs": "Ano, pokud záznam hlasování Poslanecké sněmovny (psp.cz) ukáže, že návrh státního rozpočtu na rok 2027 byl schválen ve třetím čtení nejpozději 31. 12. 2026 ve 23:59 SEČ. Schválení Senátem ani podpis prezidenta se nevyžadují. Jinak ne (i v případě vrácení návrhu vládě, pokud nový návrh do termínu schválen nebude).",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Finance minister Alena Schillerová's draft 2027 budget foresees a deficit of 389 billion crowns, which the ministry puts at 2.8% of GDP using the defence-spending exemption; National Budget Council chair Mojmír Hampl said in committee the underlying figure is 3.5% of GDP (Ekonomický deník, 2 Sep 2026). Budget committee chair Vladimír Pikora proposed a timetable with first reading on 21 October, end of second reading on 25 November and third reading on 2 December. The plenary first-reading debate ran from 21 October amid opposition delays; the opposition wants the bill returned with a deficit cap of 290 billion (ČTK). The ANO–SPD–Motoristé coalition has a majority in the Chamber.",
+   "sources": [
+    {
+     "title": "Ekonomický deník: MPs argue over dates; 2027 deficit 389 bn",
+     "url": "https://ekonomickydenik.cz/poslanci-hadali-datum-deficit-rozpocet/"
+    },
+    {
+     "title": "ČTK: Opposition wants budget returned with a deficit cap of 290 bn",
+     "url": "https://www.ceskenoviny.cz/zpravy/opozice-chce-vratit-rozpocet-vlade-a-snizit-schodek-na-nejvyse-290-miliard/2889999"
+    },
+    {
+     "title": "ČT24: Deputies to continue the budget debate",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-pokracovat-v-debate-o-statnim-rozpoctu-na-pristi-rok-378892"
+    }
+   ],
+   "base_rate": {
+    "class": "State budget third readings scheduled in PSP terms 2021-25 and 2025- that were dealt with",
+    "rate": 1,
+    "n": 5,
+    "source": "pipeline/reference-data/cz-chamber.json"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.91,
+     "combined": 0.907,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.92
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.9
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.88
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.91
+      }
+     ],
+     "market": null,
+     "note": "The Chamber approved the 2027 budget's basic parameters in first reading on 22 October with 93 coalition votes after a 19.5-hour debate, every budget that cleared first reading in the past two terms went on to pass, and the third reading is scheduled for 2 December, four weeks before the deadline. The main risk is opposition obstruction or a revolt by SPD, two of whose MPs abstained, pushing the final vote past year-end.",
+     "note_cs": "Sněmovna schválila 22. října po devatenáctipůlhodinové rozpravě v prvním čtení základní parametry rozpočtu na rok 2027 hlasy 93 koaličních poslanců, každý rozpočet, který v posledních dvou volebních obdobích prošel prvním čtením, byl nakonec schválen a třetí čtení je naplánováno na 2. prosince, tedy čtyři týdny před termínem. Hlavním rizikem je obstrukce opozice nebo vzpoura SPD, jejíž dva poslanci se zdrželi hlasování, která by závěrečné hlasování odsunula za konec roku."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-cnb-hike-5-nov",
+   "scope": "cz",
+   "topic": "ČNB rates (November)",
+   "question": "Will the Czech National Bank raise its two-week repo rate at its monetary policy meeting on 5 November 2026?",
+   "question_cs": "Zvýší Česká národní banka na měnovém zasedání 5. listopadu 2026 dvoutýdenní repo sazbu?",
+   "criterion": "Yes if the ČNB Bank Board decision published on cnb.cz on 5 Nov 2026 raises the two-week repo rate above 3.75%. No if it is held or cut, or if no decision is published by 5 Nov 2026 23:59 CET.",
+   "criterion_cs": "Ano, pokud rozhodnutí bankovní rady ČNB zveřejněné na cnb.cz 5. 11. 2026 zvýší dvoutýdenní repo sazbu nad 3,75 %. Ne, pokud ji ponechá nebo sníží, nebo pokud do 5. 11. 2026 ve 23:59 SEČ rozhodnutí zveřejněno nebude.",
+   "resolution_source": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-05T23:59:00+01:00",
+   "background": "The ČNB raised the two-week repo rate to 3.75% on 18 June 2026 and held it in August and September. After the September meeting most analysts quoted by BusinessInfo.cz expected a modest hike in November or December, citing core inflation, energy prices and a more expansionary 2027 budget. Inflation rose to 2.5% year on year in September from 1.9% in August (ČSÚ, 13 Oct). The 5 November meeting comes with a new macroeconomic forecast.",
+   "sources": [
+    {
+     "title": "BusinessInfo.cz: ČNB held rates in September, inflation risks point to a hike at year-end (21 Sep 2026)",
+     "url": "https://www.businessinfo.cz/clanky/cnb-urokove-sazby-v-zari-nezvedla-inflacni-rizika-ji-tlaci-ke-zvyseni-na-konci-roku/"
+    },
+    {
+     "title": "ČSÚ: Consumer price indices – September 2026",
+     "url": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026"
+    },
+    {
+     "title": "ČNB: Bank Board decisions and meeting calendar",
+     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/"
+    }
+   ],
+   "base_rate": {
+    "class": "ČNB monetary meetings since Jan 2022 with a rate hike",
+    "rate": 0.13,
+    "n": 38,
+    "source": "pipeline/reference-data/central-banks.json (5 hikes among 15 changes; about 8 meetings a year; holds not listed)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.62,
+     "combined": 0.621,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.58
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.57
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.68
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.65
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.62
+      }
+     ],
+     "market": null,
+     "note": "September inflation of 2.5% and core inflation of 3.1% both beat the ČNB's forecasts, and most analysts, including ING, Komerční banka and Erste, expect a 25-basis-point hike on 5 November, when a new forecast is also due. Against that, the September hold was unanimous, board member Frait says a hike is \"not a done deal\" and that waiting carries little risk, and the October fuel price cap will depress the next inflation figure.",
+     "note_cs": "Zářijová inflace 2,5 % i jádrová inflace 3,1 % překonaly prognózu ČNB a většina analytiků včetně ING, Komerční banky a Erste očekává 5. listopadu, kdy bude k dispozici i nová prognóza, zvýšení o 25 bazických bodů. Proti hovoří to, že v září rada o ponechání sazeb rozhodla jednomyslně, člen bankovní rady Frait uvedl, že zvýšení „není hotová věc“ a že vyčkávání nese malé riziko, a říjnové zastropování cen pohonných hmot stlačí příští údaj o inflaci."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-cnb-rate-4pct-dec",
+   "scope": "cz",
+   "topic": "ČNB rates (year-end)",
+   "question": "Will the ČNB's two-week repo rate stand at 4.00% or higher after its 17 December 2026 meeting?",
+   "question_cs": "Bude dvoutýdenní repo sazba ČNB po zasedání 17. prosince 2026 činit 4,00 % nebo více?",
+   "criterion": "Yes if, following the Bank Board decision of 17 Dec 2026 as published on cnb.cz, the two-week repo rate in effect is 4.00% or higher. Otherwise no.",
+   "criterion_cs": "Ano, pokud po rozhodnutí bankovní rady ze 17. 12. 2026 zveřejněném na cnb.cz bude platná dvoutýdenní repo sazba 4,00 % nebo vyšší. Jinak ne.",
+   "resolution_source": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-17T23:59:00+01:00",
+   "background": "The two-week repo rate has been 3.75% since 19 June 2026. The ČNB's remaining 2026 meetings are on 5 November and 17 December (cnb.cz). Reaching 4.00% requires at least one 25-basis-point hike at either meeting; Raiffeisen's Martin Kron expected one more tightening in November or December, while OVB's Michael Opočenský saw less reason to hike (BusinessInfo.cz, 21 Sep 2026). September inflation was 2.5%.",
+   "sources": [
+    {
+     "title": "BusinessInfo.cz: ČNB held rates in September, inflation risks point to a hike at year-end (21 Sep 2026)",
+     "url": "https://www.businessinfo.cz/clanky/cnb-urokove-sazby-v-zari-nezvedla-inflacni-rizika-ji-tlaci-ke-zvyseni-na-konci-roku/"
+    },
+    {
+     "title": "ČNB: Bank Board decisions and meeting calendar",
+     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/"
+    },
+    {
+     "title": "ČSÚ: Consumer price indices – September 2026",
+     "url": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026"
+    }
+   ],
+   "base_rate": {
+    "class": "ČNB meetings since Jan 2022 with a rate hike (per meeting; two meetings remain)",
+    "rate": 0.13,
+    "n": 38,
+    "source": "pipeline/reference-data/central-banks.json"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.75,
+     "combined": 0.75,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.75
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.75
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.77
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.76
+      }
+     ],
+     "market": null,
+     "note": "The rate needs only one 25-basis-point hike at either the 5 November or the 17 December meeting, most analysts expect one in November, and Erste, Raiffeisen and the September minutes all name 4.0% as the likely peak. It would fall short only if the board holds at both meetings, for instance if energy prices ease and the dovish members Kubelková and Procházka prevail.",
+     "note_cs": "K dosažení 4 % stačí jediné zvýšení o 25 bazických bodů na zasedání 5. listopadu nebo 17. prosince, většina analytiků je čeká už v listopadu a Erste, Raiffeisenbank i zápis ze zářijového zasedání označují 4,0 % za pravděpodobný vrchol. Nestalo by se tak jen v případě, že rada ponechá sazby beze změny na obou zasedáních, například pokud zlevní energie a prosadí se holubičí členové rady Kubelková a Procházka."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-cpi-oct-above-sept",
+   "scope": "cz",
+   "topic": "Czech inflation (October)",
+   "question": "Will Czech consumer price inflation for October 2026 come in above September's 2.5%?",
+   "question_cs": "Bude meziroční inflace spotřebitelských cen v Česku za říjen 2026 vyšší než zářijových 2,5 %?",
+   "criterion": "Yes if the ČSÚ release of consumer price indices for October 2026 (scheduled for 10 Nov 2026) reports year-on-year CPI growth above 2.5%. The flash estimate of 4 Nov does not count. If the release is delayed beyond 13 Nov 2026 23:59 CET, the flash estimate is used.",
+   "criterion_cs": "Ano, pokud zpráva ČSÚ o indexech spotřebitelských cen za říjen 2026 (plánovaná na 10. 11. 2026) uvede meziroční růst cen vyšší než 2,5 %. Předběžný odhad ze 4. 11. se nepočítá; bude-li zpráva odložena po 13. 11. 2026 23:59 SEČ, použije se předběžný odhad.",
+   "resolution_source": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-13T23:59:00+01:00",
+   "background": "ČSÚ reported on 13 October 2026 that consumer prices rose 2.5% year on year in September, 0.6 points faster than August's 1.9%. The ČSÚ flash estimate for October is due on 4 November and the full release on 10 November. Analysts cite energy prices and core inflation as upside risks (BusinessInfo.cz, 21 Sep 2026). The ČNB target is 2%.",
+   "sources": [
+    {
+     "title": "ČSÚ: Consumer price indices – September 2026",
+     "url": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026"
+    },
+    {
+     "title": "BusinessInfo.cz: ČNB held rates in September, inflation risks point to a hike at year-end (21 Sep 2026)",
+     "url": "https://www.businessinfo.cz/clanky/cnb-urokove-sazby-v-zari-nezvedla-inflacni-rizika-ji-tlaci-ke-zvyseni-na-konci-roku/"
+    }
+   ],
+   "base_rate": {
+    "class": "Czech October CPI m/m >= 0.6% since 2018 (recollection, not verified from data)",
+    "rate": 0.13,
+    "n": 8,
+    "source": "dossier recollection; ČSÚ"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.28,
+     "combined": 0.28,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.25
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.27
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.2
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.35
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.35
+      }
+     ],
+     "market": null,
+     "note": "Prices rose 0.5% month on month in October 2025, a tough base, so October 2026 would need a monthly rise of roughly 0.6% to beat September's 2.5%, and the fuel price cap and diesel excise cut in force through October hit the very item that drove September's jump. A weaker koruna, regulated energy prices, a rebound in food prices or core inflation near 3.1% could still push the figure above 2.5%.",
+     "note_cs": "V říjnu 2025 ceny meziměsíčně stouply o 0,5 %, což je vysoká srovnávací základna, takže letos by musely meziměsíčně vzrůst zhruba o 0,6 %, aby inflace překonala zářijových 2,5 %, a zastropování cen pohonných hmot spolu se snížením spotřební daně z nafty platné po celý říjen dopadá právě na položku, která táhla zářijový skok. Údaj nad 2,5 % by přesto mohla přinést slabší koruna, regulované ceny energií, obrat cen potravin nebo jádrová inflace kolem 3,1 %."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-cpi-nov-3pct",
+   "scope": "cz",
+   "topic": "Czech inflation (November)",
+   "question": "Will Czech year-on-year inflation for November 2026 reach 3.0% or more?",
+   "question_cs": "Dosáhne meziroční inflace v Česku za listopad 2026 3,0 % nebo více?",
+   "criterion": "Yes if the ČSÚ release of consumer price indices for November 2026 (December 2026) reports year-on-year CPI growth of 3.0% or more. If the full release has not appeared by 15 Dec 2026 23:59 CET, the ČSÚ flash estimate is used; if neither, no.",
+   "criterion_cs": "Ano, pokud zpráva ČSÚ o indexech spotřebitelských cen za listopad 2026 (prosinec 2026) uvede meziroční růst cen 3,0 % nebo více. Nebude-li plná zpráva zveřejněna do 15. 12. 2026 23:59 SEČ, použije se předběžný odhad ČSÚ; nebude-li ani ten, ne.",
+   "resolution_source": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-15T23:59:00+01:00",
+   "background": "Czech inflation accelerated from 1.9% in August to 2.5% in September 2026 (ČSÚ, 13 Oct). The ČNB raised rates in June and analysts expect another hike around year-end because of inflation risks (BusinessInfo.cz, 21 Sep 2026). Euro-area inflation stood at 3.8% in September (Global Banking & Finance, 8 Oct 2026). The October figure is due on 10 November.",
+   "sources": [
+    {
+     "title": "ČSÚ: Consumer price indices – September 2026",
+     "url": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026"
+    },
+    {
+     "title": "BusinessInfo.cz: ČNB held rates in September, inflation risks point to a hike at year-end (21 Sep 2026)",
+     "url": "https://www.businessinfo.cz/clanky/cnb-urokove-sazby-v-zari-nezvedla-inflacni-rizika-ji-tlaci-ke-zvyseni-na-konci-roku/"
+    },
+    {
+     "title": "Global Banking & Finance Review: ECB to hike in December as inflation almost doubles target",
+     "url": "https://www.globalbankingandfinance.com/ecb-hike-rates-december-inflation-almost-doubles-2-target/"
+    }
+   ],
+   "base_rate": {
+    "class": "Two-month rise in Czech y/y CPI of at least 0.5 pp (Sep to Nov)",
+    "rate": 0.15,
+    "n": null,
+    "source": "Judgement from ČSÚ CPI history; no counted series in reference data"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.26,
+     "combined": 0.263,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.2
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.32
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.36
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.17
+      }
+     ],
+     "market": null,
+     "note": "The ČNB expects inflation to stay between 2% and 3% for the rest of 2026 and to exceed 3% only in early 2027, a path Erste, Patria and Creditas share, and October is expected to come in at around 2.2–2.5% because of a tough base and the fuel price cap. A favourable base from November 2025, when prices fell 0.3% month on month, and a rebound in fuel prices after the October cap expires could still lift November to 3%.",
+     "note_cs": "ČNB čeká, že inflace zůstane do konce roku 2026 mezi 2 a 3 % a nad 3 % se dostane až počátkem roku 2027, a stejný vývoj předpokládají i Erste, Patria a Creditas; říjnová inflace by kvůli vysoké základně a zastropování cen pohonných hmot měla činit zhruba 2,2 až 2,5 %. Listopadovou inflaci by na 3 % přesto mohla vytlačit příznivá základna z listopadu 2025, kdy ceny meziměsíčně klesly o 0,3 %, a odraz cen pohonných hmot po skončení říjnového stropu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-unemployment-benefit-cut-passed",
+   "scope": "cz",
+   "topic": "Unemployment benefit bill",
+   "question": "Will the Chamber of Deputies pass the government bill cutting unemployment benefits in its third reading by 31 December 2026?",
+   "question_cs": "Schválí Poslanecká sněmovna do 31. prosince 2026 ve třetím čtení vládní návrh zákona snižující podporu v nezaměstnanosti?",
+   "criterion": "Yes if psp.cz shows the government amendment to the Labour Code and related laws that lowers unemployment benefits (approved in first reading on 20 Oct 2026) passed in third reading by 31 Dec 2026 23:59 CET, whether or not amended. No if it is rejected, withdrawn, or not voted on by then.",
+   "criterion_cs": "Ano, pokud psp.cz ukáže, že vládní novela zákoníku práce a souvisejících zákonů snižující podporu v nezaměstnanosti (schválená v prvním čtení 20. 10. 2026) byla schválena ve třetím čtení do 31. 12. 2026 ve 23:59 SEČ, ať s pozměňovacími návrhy, či bez nich. Ne, pokud bude zamítnuta, stažena nebo do té doby nebude hlasována.",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The cabinet approved the bill in early September 2026 (Advokátní deník, 2 Sep). It would cut the benefit in the first two months from 80% to 65% of earnings, saving about CZK 5 billion a year, and also transposes the EU pay transparency directive. The Chamber passed it in first reading on 20 October and sent it to the social affairs committee (Echo24). Coalition partner SPD opposes the cuts and may amend the bill; the cuts are meant to take effect from January.",
+   "sources": [
+    {
+     "title": "Echo24: Chamber backs cutting unemployment benefits (20 Oct 2026)",
+     "url": "https://www.echo24.cz/a/HwU5c/zpravy-domov-snemovna-podporila-snizeni-podpor-v-nezamestnanosti"
+    },
+    {
+     "title": "Advokátní deník: Government approves bill cutting unemployment benefits",
+     "url": "https://advokatnidenik.cz/2026/09/02/vlada-schvalila-navrh-se-snizenim-podpory-v-nezamestnanosti/"
+    }
+   ],
+   "base_rate": {
+    "class": "Government bills approved in first reading that later passed (any time, 9th and 10th terms)",
+    "rate": 1,
+    "n": 337,
+    "source": "pipeline/reference-data/cz-chamber.json (README summary); does not measure passage within about 10 weeks"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.37,
+     "combined": 0.366,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.35
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.35
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.25
+      }
+     ],
+     "market": null,
+     "note": "ANO and Motoristé hold only 93 of 200 seats without SPD, whose leader Okamura says it will not vote for the cuts, and the committee stage can run to about 19 December while the budget dominates the Chamber's November–December agenda. A compromise on a smaller cut, which Labour Minister Juchelka is seeking, combined with a faster timetable driven by the January start date and the CZK 5 billion of savings counted in the budget, could still get it through.",
+     "note_cs": "ANO a Motoristé mají bez SPD jen 93 z 200 mandátů a předseda SPD Okamura prohlásil, že hnutí pro škrty hlasovat nebude; projednávání ve výboru navíc může trvat zhruba do 19. prosince a listopadovému a prosincovému programu Sněmovny dominuje rozpočet. Novelu by přesto mohl prosadit kompromis o menším snížení, o který usiluje ministr práce Juchelka, spolu s rychlejším projednáním, k němuž tlačí lednová účinnost a úspora pět miliard korun započtená v rozpočtu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-bank-levy-bill",
+   "scope": "cz",
+   "topic": "Bank levy",
+   "question": "Will the Czech government approve a bill introducing a special levy, tax or mandatory payment on banks by 31 January 2027?",
+   "question_cs": "Schválí česká vláda do 31. ledna 2027 návrh zákona, který zavede zvláštní odvod, daň nebo povinnou platbu pro banky?",
+   "criterion": "Yes if a government resolution published on vlada.cz (or the bill's entry in the government's eKLEP/ODOK register) shows the cabinet approved, by 31 Jan 2027 23:59 CET, a draft law imposing a sector-specific tax, levy, or mandatory transfer of profits or dividends on banks. Voluntary agreements with banks, or an increase in the general corporate tax rate, do not count.",
+   "criterion_cs": "Ano, pokud usnesení vlády zveřejněné na vlada.cz (nebo záznam v systému ODOK/eKLEP) ukáže, že vláda do 31. 1. 2027 ve 23:59 SEČ schválila návrh zákona zavádějící sektorovou daň, odvod nebo povinný převod zisků či dividend bank. Dobrovolné dohody s bankami ani zvýšení obecné sazby daně z příjmů právnických osob se nepočítají.",
+   "resolution_source": "https://vlada.cz/",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "Andrej Babiš has repeatedly called the banks greedy but has distanced himself from a classic bank tax, floating instead a fund financed from part of bank dividends (Echo24). On 22–23 October 2026 Babiš said he wanted to deal with mortgage prices together with the banks (Echo24), and neither he nor Schillerová announced a levy by 23 October. The 2027 budget relies on CZK 389 billion of borrowing, keeping pressure on revenue.",
+   "sources": [
+    {
+     "title": "Echo24: Banks are greedy, says Babiš, who wants to address mortgage prices",
+     "url": "https://m.echo24.cz/a/HypY7/zpravy-ekonomika-banky-jsou-nenasytne-tvrdi-babis-chce-s-nimi-resit-ceny-hypotek-vlada"
+    },
+    {
+     "title": "E15: Banks should hand over up to a fifth of dividends, Babiš plans",
+     "url": "https://www.e15.cz/byznys/finance-a-bankovnictvi/banky-by-mely-odevzdavat-az-petinu-z-dividend-planuje-babis-1358599"
+    },
+    {
+     "title": "Ekonomický deník: MPs argue over dates; 2027 deficit 389 bn",
+     "url": "https://ekonomickydenik.cz/poslanci-hadali-datum-deficit-rozpocet/"
+    }
+   ],
+   "base_rate": {
+    "class": "Babiš-government years in which the cabinet approved a bank-specific levy bill",
+    "rate": 0,
+    "n": 5,
+    "source": "Babiš cabinets 2017–2021 and 2025–2026 record (no bank levy bill); E15 2019, Echo24 Oct 2026"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.07,
+     "combined": 0.069,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.1
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.06
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.07
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.06
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.06
+      }
+     ],
+     "market": null,
+     "note": "No bank-levy bill exists: Schillerová said on 4 October that a bank tax was not on the table, Babiš talks only of negotiating mortgage prices with the banks, and his 2019 idea of a fund financed from bank dividends never became a cabinet bill. A quick dividend-transfer bill to raise budget revenue could still emerge, as the fast-moving refinery windfall tax showed, though a voluntary deal with the banks would not count.",
+     "note_cs": "Návrh zákona o zvláštním odvodu bank neexistuje: Schillerová 4. října uvedla, že bankovní daň není na stole, Babiš mluví jen o jednání s bankami o cenách hypoték a jeho nápad z roku 2019 na fond financovaný z bankovních dividend se do vládního návrhu zákona nikdy nedostal. Vláda by přesto mohla rychle předložit zákon o převodu dividend jako zdroj příjmů rozpočtu, jak ukázala pohotově připravená daň z mimořádných zisků rafinerií, dobrovolná dohoda s bankami se však nepočítá."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-prague-mayor-stan",
+   "scope": "cz",
+   "topic": "Prague city leadership",
+   "question": "Will Prague's city assembly elect a STAN politician as mayor by 30 November 2026?",
+   "question_cs": "Zvolí pražské zastupitelstvo do 30. listopadu 2026 primátorem politika hnutí STAN?",
+   "criterion": "Yes if the Prague city assembly elects as mayor (primátor) a member or nominee of STAN (e.g. Petr Hlaváček) by 30 Nov 2026 23:59 CET, as recorded on praha.eu or reported by ČTK. No if someone from another party is elected or no mayor is elected by then.",
+   "criterion_cs": "Ano, pokud Zastupitelstvo hlavního města Prahy do 30. 11. 2026 ve 23:59 SEČ zvolí primátorem člena nebo nominanta STAN (např. Petra Hlaváčka), podle praha.eu nebo ČTK. Ne, pokud bude zvolen někdo z jiné strany nebo pokud primátor do té doby zvolen nebude.",
+   "resolution_source": "https://www.praha.eu/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "In the October 2026 municipal election STAN and ODS-led Spolu each won 17 of the 65 seats in Prague, Praha sobě 13, ANO 11 and the Pirates 7 (Seznam Zprávy, 11 Oct). STAN's Petr Hlaváček is the most likely mayor and Spolu's Tomáš Portlík said the winner is entitled to the post. Seznam Zprávy reported on 13 October that Praha sobě had floated offering Portlík the mayoralty, which Praha sobě denied and Portlík rejected. In 2022 coalition talks dragged on until early 2023.",
+   "sources": [
+    {
+     "title": "Seznam Zprávy: Who will run Prague – four scenarios (11 Oct 2026)",
+     "url": "https://www.seznamzpravy.cz/clanek/volby-komunalni-kdo-povede-prahu-ctyri-mozne-scenare-317474"
+    },
+    {
+     "title": "Seznam Zprávy: Praha sobě's backroom game (13 Oct 2026)",
+     "url": "https://www.seznamzpravy.cz/clanek/317743"
+    },
+    {
+     "title": "CNN Prima News: Longest Prague coalition talks end (2023)",
+     "url": "https://cnn.iprima.cz/nejdelsi-vyjednavani-o-vedeni-prahy-je-u-konce-spolu-pirati-a-stan-podepsali-koalicni-smlouvu-200752"
+    }
+   ],
+   "base_rate": {
+    "class": "Prague mayor elected within ~7 weeks of the municipal election, 2006-2022",
+    "rate": 0.8,
+    "n": 5,
+    "source": "Election and mayor-election dates 2006-2022 (from my own knowledge; 2022 delay confirmed by E15 and EuroZprávy)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.78,
+     "combined": 0.784,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.75
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.74
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.8
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.82
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.8
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/next-mayor-of-prague-2026",
+      "p": 0.935,
+      "read_at": "2026-10-23T05:57:25:00Z"
+     },
+     "note": "STAN and Spolu hold 34 of the 65 seats, Spolu's Tomáš Portlík has conceded the mayoralty to STAN and Petr Hlaváček is named as mayor, with a two-party fallback if three-way talks with Praha sobě drag on. The main risk is timing: an election challenge, the one-seat majority or an adjourned constituent session, as in 2022 when the mayor was elected only in February 2023, could push the vote past 30 November.",
+     "note_cs": "STAN a Spolu mají 34 z 65 mandátů, Tomáš Portlík ze Spolu přenechal post primátora STAN a budoucím primátorem má být Petr Hlaváček, přičemž pokud by se jednání o trojkoalici s uskupením Praha sobě protahovala, mohou obě strany vládnout samy. Hlavním rizikem je načasování: volební stížnost, většina jediného hlasu nebo přerušené ustavující zasedání jako v roce 2022, kdy byl primátor zvolen až v únoru 2023, mohou volbu posunout za 30. listopad.",
+     "market_note": "The market asks who will be the next mayor with no deadline; our question also needs the election to happen by 30 November, and coalition talks in Prague have run long before.",
+     "market_note_cs": "Trh se ptá, kdo bude příštím primátorem, bez termínu; naše otázka navíc vyžaduje volbu do 30. listopadu a koaliční jednání v Praze se v minulosti protahovala."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "cz-cnb-forecast-2027-inflation",
+   "scope": "cz",
+   "topic": "ČNB forecast",
+   "question": "Will the ČNB's November 2026 forecast put average Czech inflation in 2027 above 2.5%?",
+   "question_cs": "Bude podle listopadové prognózy ČNB průměrná inflace v Česku v roce 2027 vyšší než 2,5 %?",
+   "criterion": "Yes if the ČNB autumn 2026 forecast published with the 5 Nov 2026 decision (cnb.cz, Monetary Policy Report / forecast table) shows average annual CPI inflation for 2027 above 2.5%. No if 2.5% or lower, or if no forecast is published by 12 Nov 2026 23:59 CET.",
+   "criterion_cs": "Ano, pokud podzimní prognóza ČNB zveřejněná spolu s rozhodnutím 5. 11. 2026 (cnb.cz, Zpráva o měnové politice/tabulka prognózy) uvede průměrnou roční inflaci za rok 2027 vyšší než 2,5 %. Ne, pokud 2,5 % nebo méně, nebo pokud prognóza do 12. 11. 2026 ve 23:59 SEČ zveřejněna nebude.",
+   "resolution_source": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-12T23:59:00+01:00",
+   "background": "The ČNB publishes a new macroeconomic forecast four times a year; the autumn one accompanies the 5 November 2026 meeting. Inflation rose to 2.5% in September 2026 (ČSÚ). Analysts cite high energy prices and a more expansionary 2027 budget with a CZK 389 billion deficit as inflation risks (BusinessInfo.cz, 21 Sep 2026). A higher 2027 projection would strengthen the case for further hikes.",
+   "sources": [
+    {
+     "title": "BusinessInfo.cz: ČNB held rates in September, inflation risks point to a hike at year-end (21 Sep 2026)",
+     "url": "https://www.businessinfo.cz/clanky/cnb-urokove-sazby-v-zari-nezvedla-inflacni-rizika-ji-tlaci-ke-zvyseni-na-konci-roku/"
+    },
+    {
+     "title": "ČSÚ: Consumer price indices – September 2026",
+     "url": "https://csu.gov.cz/rychle-informace/indexy-spotrebitelskych-cen-inflace-zari-2026"
+    },
+    {
+     "title": "Ekonomický deník: MPs argue over dates; 2027 deficit 389 bn",
+     "url": "https://ekonomickydenik.cz/poslanci-hadali-datum-deficit-rozpocet/"
+    }
+   ],
+   "base_rate": {
+    "class": "Upward revision of the ČNB's next-year inflation forecast between consecutive forecast rounds (approximate)",
+    "rate": 0.45,
+    "n": null,
+    "source": "Judgemental estimate from the ČNB forecast archive pattern; no verified count in the pipeline reference data"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.61,
+     "combined": 0.61,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.57
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.6
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.6
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.66
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.62
+      }
+     ],
+     "market": null,
+     "note": "The ČNB's summer forecast put 2027 inflation at exactly 2.5%, and since then September inflation has beaten its forecast, core inflation has stayed around 3%, the bank has said it expects inflation above 3% in early 2027 and the 2027 budget has turned out more expansionary than assumed, all pointing to an upward revision. An unchanged 2.5% would resolve the question negatively, and a higher assumed interest-rate path, fuel price regulation or a stronger koruna could keep the figure there.",
+     "note_cs": "Letní prognóza ČNB počítala pro rok 2027 s inflací přesně 2,5 % a od té doby zářijová inflace předčila odhad banky, jádrová inflace se drží kolem 3 %, ČNB čeká počátkem roku 2027 inflaci nad 3 % a rozpočet na rok 2027 je expanzivnější, než prognóza předpokládala, což vše ukazuje na revizi směrem nahoru. Nezměněných 2,5 % by otázku rozhodlo záporně a na této úrovni by údaj mohla udržet vyšší předpokládaná trajektorie úrokových sazeb, regulace cen pohonných hmot nebo silnější koruna."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-house-democrats",
+   "scope": "world",
+   "topic": "US midterms: House",
+   "question": "Will the Democrats win a majority in the US House of Representatives in the 3 November 2026 midterm elections?",
+   "question_cs": "Získají demokraté ve volbách v polovině funkčního období 3. listopadu 2026 většinu ve Sněmovně reprezentantů USA?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, AP race calls (or certified state results) show Democrats winning at least 218 of the 435 House seats. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ podle vyhlášení agentury AP (nebo certifikovaných výsledků států) demokraté získají nejméně 218 ze 435 křesel ve Sněmovně reprezentantů. Jinak ne.",
+   "resolution_source": "https://apnews.com/hub/election-2026",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "All 435 House seats are up on 3 November 2026. Kalshi prices at the end of September 2026 implied roughly a 90% chance of Democratic House control (sum of the 'Democratic sweep' and 'D House, R Senate' contracts). Trump was campaigning in a final week of rallies in late October. A Democratic House would end unified Republican control in Washington.",
+   "sources": [
+    {
+     "title": "Kalshi News: Democrats' Senate control odds jump to 63% (30 Sep 2026)",
+     "url": "https://news.kalshi.com/p/democrats-midterm-senate-odds-jump-to-63-up-14-points-since-mid-september"
+    },
+    {
+     "title": "Khaleej Times: US midterm elections 2026 explainer",
+     "url": "https://www.khaleejtimes.com/world/americas/us-midterm-elections-2026-voting-explainer"
+    }
+   ],
+   "base_rate": {
+    "class": "President's party loses at least 3 House seats in a midterm, 1946-2022",
+    "rate": 0.9,
+    "n": 20,
+    "source": "Historical midterm seat changes (exceptions 1998, 2002)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.91,
+     "combined": 0.908,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.91
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.91
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.89
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.91
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026",
+      "p": 0.925,
+      "read_at": "2026-10-23T05:54:27:00Z"
+     },
+     "note": "Democrats need a net gain of only a few seats on the 220–215 result of 2024, the president's party has lost House seats in 18 of 20 midterms since 1946, and betting markets strongly favour Democratic control. A correlated polling miss in Republicans' favour or mid-decade redistricting such as Texas's could still keep them below 218 seats.",
+     "note_cs": "Demokratům stačí oproti výsledku z roku 2024 (220:215) čistý zisk jen několika křesel, strana úřadujícího prezidenta ztratila ve Sněmovně reprezentantů křesla v 18 z 20 voleb v polovině funkčního období od roku 1946 a sázkové trhy demokratickou kontrolu jasně favorizují. Pod hranicí 218 křesel by je přesto mohla udržet plošná chyba průzkumů ve prospěch republikánů nebo překreslení volebních obvodů v polovině dekády, například v Texasu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-senate-democrats",
+   "scope": "world",
+   "topic": "US midterms: Senate",
+   "question": "Will the Democrats win control of the US Senate in the 2026 midterm elections?",
+   "question_cs": "Získají demokraté ve volbách 2026 kontrolu nad Senátem USA?",
+   "criterion": "Yes if, based on AP race calls and certified results available by 31 Jan 2027 23:59 CET, Democrats and independents caucusing with them hold at least 51 seats in the Senate convening in January 2027 (50 is not enough, as the Vice President is a Republican). Otherwise no.",
+   "criterion_cs": "Ano, pokud podle vyhlášení AP a certifikovaných výsledků dostupných do 31. 1. 2027 ve 23:59 SEČ budou demokraté a s nimi spolupracující nezávislí mít v Senátu, který se sejde v lednu 2027, nejméně 51 křesel (50 nestačí, viceprezident je republikán). Jinak ne.",
+   "resolution_source": "https://apnews.com/hub/election-2026",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "Republicans hold the Senate 53–47 (Washington Post via Kalshi News). Kalshi's Senate market moved from 49% for Democrats on 14 September to 63% on 30 September 2026. Key races include Michigan (El-Sayed v Rogers), Ohio (Sherrod Brown v Jon Husted) and New Hampshire (Pappas v Sununu), with possible Democratic pickups in North Carolina, Maine, Alaska, Iowa and Texas. Runoffs (e.g. Georgia) could push the final call into December.",
+   "sources": [
+    {
+     "title": "Kalshi News: Democrats' Senate control odds jump to 63% (30 Sep 2026)",
+     "url": "https://news.kalshi.com/p/democrats-midterm-senate-odds-jump-to-63-up-14-points-since-mid-september"
+    },
+    {
+     "title": "Mediaite: Cook shifts four Senate races toward Democrats",
+     "url": "https://mediaite.com/politics/cook-political-shifts-four-senate-races-toward-democrats-key-race-now-a-toss-up"
+    }
+   ],
+   "base_rate": {
+    "class": "President's party loses at least 4 Senate seats in a midterm, 1946-2022",
+    "rate": 0.45,
+    "n": 20,
+    "source": "Historical midterm Senate seat changes"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.64,
+     "combined": 0.636,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.63
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.66
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.62
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.67
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.6
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026",
+      "p": 0.685,
+      "read_at": "2026-10-23T05:57:24:00Z"
+     },
+     "note": "Democrats need a net gain of four seats to reach the required 51, early-September polling averages showed them ahead in North Carolina, Maine, Ohio, Texas and Alaska and narrowly holding Michigan and New Hampshire, and markets have moved their way since mid-September. Because the path depends on winning several close races at once, a single polling error of two or three points towards Republicans could flip several and leave them short, and a 50–50 Senate would not be enough.",
+     "note_cs": "Demokraté potřebují čistý zisk čtyř křesel, aby dosáhli potřebných 51, průměry průzkumů z počátku září je ukazovaly ve vedení v Severní Karolíně, Maine, Ohiu, Texasu a na Aljašce a při těsném udržení Michiganu a New Hampshiru a trhy se od poloviny září posouvají v jejich prospěch. Protože cesta k většině vyžaduje vyhrát najednou několik těsných soubojů, jediná chyba průzkumů o dva až tři body ve prospěch republikánů by jich mohla zvrátit víc a demokratům by pak většina unikla, přičemž poměr 50:50 nestačí."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "br-lula-wins-runoff",
+   "scope": "world",
+   "topic": "Brazil runoff",
+   "question": "Will Luiz Inácio Lula da Silva win Brazil's presidential runoff on 25 October 2026?",
+   "question_cs": "Vyhraje Luiz Inácio Lula da Silva druhé kolo brazilských prezidentských voleb 25. října 2026?",
+   "criterion": "Yes if the Superior Electoral Court (TSE, resultados.tse.jus.br) count, or its official proclamation, shows Lula with more valid votes than Flávio Bolsonaro by 27 Oct 2026 23:59 CET. Otherwise no.",
+   "criterion_cs": "Ano, pokud sčítání Nejvyššího volebního soudu (TSE, resultados.tse.jus.br) nebo jeho oficiální vyhlášení do 27. 10. 2026 ve 23:59 SEČ ukáže, že Lula získal více platných hlasů než Flávio Bolsonaro. Jinak ne.",
+   "resolution_source": "https://resultados.tse.jus.br/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-10-27T23:59:00+01:00",
+   "background": "Senator Flávio Bolsonaro led the first round on 4 October with 47.0% of valid votes to Lula's 45.2% (TSE), and runoff polls have been close. Quaest (17–20 Oct) had Flávio 45%, Lula 44% (Reuters, 21 Oct); Datafolha (20–22 Oct) had them at 50–50 in valid votes (CNN Brasil). The two are due to meet in a final TV Globo debate on the evening of 23 October. Brazil counts electronically and results are usually clear on election night.",
+   "sources": [
+    {
+     "title": "Reuters (via Internazionale): Bolsonaro's lead over Lula narrows, Quaest poll (21 Oct 2026)",
+     "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/21/bolsonaro-s-lead-over-lula-narrows-ahead-brazil-runoff-quaest-poll-shows"
+    },
+    {
+     "title": "CNN Brasil: Datafolha – Flávio and Lula tied at 50% of valid votes",
+     "url": "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/"
+    },
+    {
+     "title": "Al Jazeera: Latest poll shows Bolsonaro keeping an edge (16 Oct 2026)",
+     "url": "https://www.aljazeera.com/news/2026/10/16/latest-poll-shows-bolsonaro-maintaining-edge-over-lula-in-brazil-run-off"
+    }
+   ],
+   "base_rate": {
+    "class": "Brazil runoffs, Datafolha final-poll lead error (2014, 2018, 2022)",
+    "rate": 1.3,
+    "n": 3,
+    "source": "pipeline/reference-data/poll-error.json (RMS lead error, pp)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.32,
+     "combined": 0.325,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.35
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.38
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.28
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.28
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.34
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/brazil-presidential-election",
+      "p": 0.225,
+      "read_at": "2026-10-23T05:57:24:00Z"
+     },
+     "note": "Flávio Bolsonaro led the first round with 47.0% to Lula's 45.2%, most of the remaining votes went to right-leaning candidates, and final polls are tied or slightly favour him (Datafolha 50–50, Quaest 45–44, AtlasIntel 51.1–48.9), while betting markets are far more bearish on Lula. Lula's late momentum, with Datafolha moving from 52–48 for Flávio in early October to a tie, is what could still carry him to victory.",
+     "note_cs": "Flávio Bolsonaro vyhrál první kolo se ziskem 47,0 % proti 45,2 % pro Lulu, většina zbývajících hlasů připadla pravicovým kandidátům a závěrečné průzkumy ukazují vyrovnaný stav nebo jeho mírné vedení (Datafolha 50:50, Quaest 45:44, AtlasIntel 51,1:48,9), zatímco sázkové trhy jsou vůči Lulovi mnohem skeptičtější. K vítězství by Lulu ještě mohl dovést jeho závěrečný nástup, kdy se průzkum Datafolha posunul z poměru 52:48 pro Flávia na počátku října k vyrovnanému stavu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "il-netanyahu-tasked",
+   "scope": "world",
+   "topic": "Israel: coalition mandate",
+   "question": "Will President Herzog task Benjamin Netanyahu with forming Israel's next government by 30 November 2026?",
+   "question_cs": "Pověří prezident Herzog do 30. listopadu 2026 Benjamina Netanjahua sestavením příští izraelské vlády?",
+   "criterion": "Yes if the Israeli President's Office (president.gov.il) announces, by 30 Nov 2026 23:59 CET, that Netanyahu has been given the mandate to form a government after the 27 Oct 2026 Knesset election. No if another person receives the first mandate or no mandate is given by then.",
+   "criterion_cs": "Ano, pokud Kancelář izraelského prezidenta (president.gov.il) do 30. 11. 2026 ve 23:59 SEČ oznámí, že Netanjahu dostal po volbách do Knesetu 27. 10. 2026 pověření sestavit vládu. Ne, pokud první pověření dostane někdo jiný nebo pokud do té doby pověření uděleno nebude.",
+   "resolution_source": "https://www.gov.il/en/departments/president_of_the_state_of_israel",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "Israel holds a Knesset election on 27 October 2026. Former prime ministers Naftali Bennett and Yair Lapid joined forces in April to challenge Netanyahu (Al Jazeera, 26 Apr 2026). A poll reported by the Jerusalem Post on 21 August gave Netanyahu's bloc 49 seats and the opposition 60, with Gadi Eisenkot's Yashar the largest party at 26 and Likud 20; later polls showed the race tightening. The president consults all Knesset factions and normally tasks the member with the most recommendations within about a week of the official results.",
+   "sources": [
+    {
+     "title": "Jerusalem Post: poll – opposition 60, coalition 49 (21 Aug 2026)",
+     "url": "https://jpost.com/israel-election-2026/article-906183"
+    },
+    {
+     "title": "Al Jazeera: Bennett and Lapid unite to challenge Netanyahu",
+     "url": "https://www.aljazeera.com/news/2026/4/26/former-israeli-pms-bennett-lapid-unite-to-challenge-netanyahu-in-elections"
+    }
+   ],
+   "base_rate": {
+    "class": "Netanyahu receives the first mandate after a Knesset election in which he leads Likud, 2006-2022",
+    "rate": 0.78,
+    "n": 9,
+    "source": "Historical record of presidential mandates (from my own knowledge)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.39,
+     "combined": 0.391,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.33
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.47
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.35
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.36
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.45
+      }
+     ],
+     "market": null,
+     "note": "In the Jerusalem Post average of four mainstream polls Netanyahu's bloc has about 50 seats against about 53 for the Zionist opposition, with Eisenkot's Yashar ahead of Likud, so Eisenkot is likely to collect more recommendations if the opposition, and possibly Arab parties, line up behind him. Netanyahu could still get the mandate, as he did after 7 of the 9 elections he has contested as Likud leader since 2006, if polls underestimate the right or the opposition splits its recommendations between Eisenkot and Bennett.",
+     "note_cs": "V průměru čtyř hlavních průzkumů listu The Jerusalem Post má Netanjahuův blok asi 50 křesel proti zhruba 53 pro sionistickou opozici a Eisenkotova strana Jašar předstihuje Likud, takže více doporučení pravděpodobně získá Eisenkot, pokud se za něj postaví opozice a případně i arabské strany. Netanjahu by přesto mohl pověření dostat, jako se mu to od roku 2006 podařilo po sedmi z devíti voleb, v nichž vedl Likud, pokud průzkumy podcenily pravici nebo pokud opozice rozdělí svá doporučení mezi Eisenkota a Bennetta."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "il-government-sworn-in",
+   "scope": "world",
+   "topic": "Israel: new government",
+   "question": "Will a new Israeli government win a Knesset confidence vote and be sworn in by 31 January 2027?",
+   "question_cs": "Získá nová izraelská vláda do 31. ledna 2027 důvěru Knesetu a složí přísahu?",
+   "criterion": "Yes if the Knesset (main.knesset.gov.il) approves a new government formed after the 27 Oct 2026 election in a confidence vote by 31 Jan 2027 23:59 CET. Otherwise no.",
+   "criterion_cs": "Ano, pokud Kneset (main.knesset.gov.il) do 31. 1. 2027 ve 23:59 SEČ vysloví důvěru nové vládě sestavené po volbách 27. 10. 2026. Jinak ne.",
+   "resolution_source": "https://main.knesset.gov.il/en",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "The Knesset election is on 27 October 2026. Under Israeli law the tasked member has 28 days, extendable by 14, to form a government, after which the mandate can pass to another member or to the Knesset. After the November 2022 election Netanyahu's government was sworn in on 29 December 2022. Polls through the summer showed neither Netanyahu's bloc nor the opposition reliably above 61 seats without Arab parties (Jerusalem Post, 21 Aug 2026).",
+   "sources": [
+    {
+     "title": "Jerusalem Post: poll – opposition 60, coalition 49 (21 Aug 2026)",
+     "url": "https://jpost.com/israel-election-2026/article-906183"
+    },
+    {
+     "title": "Al Jazeera: Bennett and Lapid unite to challenge Netanyahu",
+     "url": "https://www.aljazeera.com/news/2026/4/26/former-israeli-pms-bennett-lapid-unite-to-challenge-netanyahu-in-elections"
+    }
+   ],
+   "base_rate": {
+    "class": "Israeli elections 2015–2022: government sworn in within 96 days of election",
+    "rate": 0.67,
+    "n": 6,
+    "source": "Wikipedia election/government dates (2015, 2019a, 2019b, 2020, 2021, 2022)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.46,
+     "combined": 0.464,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.6
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.42
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.4
+      }
+     ],
+     "market": null,
+     "note": "Polls give neither bloc 61 seats without the Arab parties, a deadlock resembling the two 2019 elections that never produced a government, and the first mandate with its extension runs to about late December, leaving little time for a second attempt before 31 January. A government could still be sworn in on time if the right outperforms the mainstream polls or the opposition builds a coalition relying on Ra'am, as in 2021.",
+     "note_cs": "Podle průzkumů nezíská bez arabských stran 61 křesel žádný blok, což připomíná patovou situaci po obou volbách v roce 2019, z nichž vláda nikdy nevzešla, a první pověření i s prodloužením vyprší zhruba koncem prosince, takže na druhý pokus do 31. ledna zbývá málo času. Vláda by přesto mohla včas složit přísahu, pokud pravice dopadne lépe, než naznačují hlavní průzkumy, nebo pokud opozice sestaví koalici opřenou o stranu Ra'am jako v roce 2021."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "ru-ua-trilateral-talks-held",
+   "scope": "world",
+   "topic": "Russia–Ukraine talks",
+   "question": "Will US, Russian and Ukrainian official delegations meet for a new round of trilateral peace talks by 15 December 2026?",
+   "question_cs": "Sejdou se oficiální delegace USA, Ruska a Ukrajiny k novému kolu třístranných mírových jednání do 15. prosince 2026?",
+   "criterion": "Yes if, by 15 Dec 2026 23:59 CET, the Kremlin (kremlin.ru), the Ukrainian presidency (president.gov.ua) or the White House/State Department confirms that a meeting with official delegations of all three countries has taken place (any level, any venue). Bilateral meetings do not count.",
+   "criterion_cs": "Ano, pokud do 15. 12. 2026 ve 23:59 SEČ Kreml (kremlin.ru), ukrajinská prezidentská kancelář (president.gov.ua) nebo Bílý dům/ministerstvo zahraničí USA potvrdí, že se uskutečnilo setkání oficiálních delegací všech tří zemí (na jakékoli úrovni a kdekoli). Dvoustranná setkání se nepočítají.",
+   "resolution_source": "http://en.kremlin.ru/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-15T23:59:00+01:00",
+   "background": "US envoy Steve Witkoff met Vladimir Putin in St Petersburg on 21 October 2026; Kremlin adviser Yuri Ushakov said Russia agreed in principle to resume three-way talks after 10 November (AP). Norwegian PM Jonas Gahr Støre said talks were likely in mid-November. Earlier trilateral rounds in Abu Dhabi (January and February) and Geneva (February) produced little beyond prisoner exchanges. As of 23 October no date had been named.",
+   "sources": [
+    {
+     "title": "AP (via AJC): Witkoff meets Putin in St Petersburg (21 Oct 2026)",
+     "url": "https://www.ajc.com/news/2026/10/trump-envoy-witkoff-meets-putin-in-st-petersburg-for-ukraine-war-talks/"
+    },
+    {
+     "title": "Meduza: US, Russia and Ukraine discuss resuming trilateral talks in November",
+     "url": "https://meduza.io/en/feature/2026/10/22/u-s-russia-and-ukraine-discuss-resuming-trilateral-peace-talks-in-november-as-missile-and-drone-strikes-continue"
+    },
+    {
+     "title": "Axios: Witkoff meets Putin",
+     "url": "https://www.axios.com/2026/10/21/russia-ukraine-putin-witkoff-peace"
+    }
+   ],
+   "base_rate": {
+    "class": "Announced trilateral US-Russia-Ukraine rounds in 2026 that took place within ~5 weeks of the announced timing",
+    "rate": 0.75,
+    "n": 4,
+    "source": "2026 record of Abu Dhabi and Geneva rounds plus later postponement (approximate, from my own knowledge)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.66,
+     "combined": 0.657,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.7
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.66
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.6
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.62
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.7
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/russia-x-ukraine-peace-talks-byptptpt-20260609012540716",
+      "p": 0.73,
+      "read_at": "2026-10-23T05:55:21:00Z"
+     },
+     "note": "After Steve Witkoff met Vladimir Putin on 21 October, Kremlin adviser Yuri Ushakov said Russia agreed in principle to resume three-way talks after 10 November, with Abu Dhabi under consideration, which leaves about five weeks of slack before 15 December, and the same format already met three times earlier in 2026. The main risk is that Moscow stalls or cancels, as Zelensky warned it has done before, or that the contacts are downgraded to bilateral meetings, which do not count.",
+     "note_cs": "Poté, co se Steve Witkoff 21. října setkal s Vladimirem Putinem, prohlásil poradce Kremlu Jurij Ušakov, že Rusko v zásadě souhlasí s obnovením třístranných jednání po 10. listopadu, přičemž se zvažuje Abú Zabí; do 15. prosince tak zbývá zhruba pět týdnů rezervy a stejný formát se letos sešel už třikrát. Hlavním rizikem je, že Moskva jednání zdrží nebo zruší, jak se podle Zelenského už dříve stalo, případně že kontakty budou omezeny na dvoustranná setkání, která se nepočítají."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "ru-ua-ceasefire",
+   "scope": "world",
+   "topic": "Russia–Ukraine ceasefire",
+   "question": "Will Russia and Ukraine both announce a general ceasefire that takes effect by 31 January 2027?",
+   "question_cs": "Oznámí Rusko i Ukrajina všeobecné příměří, které vstoupí v platnost do 31. ledna 2027?",
+   "criterion": "Yes if, by 31 Jan 2027 23:59 CET, both the Kremlin and the Ukrainian presidency officially announce a general ceasefire (covering land, air and sea along the whole front, not limited to energy infrastructure, holidays or a period shorter than 30 days) that has entered into force. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. 1. 2027 ve 23:59 SEČ Kreml i ukrajinská prezidentská kancelář oficiálně oznámí všeobecné příměří (na zemi, ve vzduchu i na moři po celé frontě, nikoli jen pro energetickou infrastrukturu, svátky nebo na méně než 30 dní), které vstoupilo v platnost. Jinak ne.",
+   "resolution_source": "http://en.kremlin.ru/",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "No ceasefire is in effect; Russian strikes continued around Witkoff's 21 October 2026 visit to St Petersburg, killing five people (AP). Ushakov said new trilateral talks after 10 November would focus on a post-war security system and called Witkoff's proposals of little real use. Zelensky said he wanted to prepare a leaders' meeting. Earlier 2026 rounds in Abu Dhabi and Geneva produced only prisoner exchanges.",
+   "sources": [
+    {
+     "title": "AP (via AJC): Witkoff meets Putin in St Petersburg (21 Oct 2026)",
+     "url": "https://www.ajc.com/news/2026/10/trump-envoy-witkoff-meets-putin-in-st-petersburg-for-ukraine-war-talks/"
+    },
+    {
+     "title": "Meduza: trilateral talks could resume in November",
+     "url": "https://meduza.io/en/feature/2026/10/22/u-s-russia-and-ukraine-discuss-resuming-trilateral-peace-talks-in-november-as-missile-and-drone-strikes-continue"
+    }
+   ],
+   "base_rate": {
+    "class": "Russia-Ukraine negotiation rounds 2022-2026 that produced a general ceasefire",
+    "rate": 0,
+    "n": 12,
+    "source": "public record of Istanbul 2022/2025, Riyadh/Jeddah 2025, Abu Dhabi and Geneva 2026 rounds (approximate count)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.07,
+     "combined": 0.07,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.08
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.1
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.06
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.11
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.03
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-by",
+      "p": 0.135,
+      "read_at": "2026-10-23T05:57:37:00Z"
+     },
+     "note": "No general ceasefire has been agreed in four and a half years of negotiations, strikes continued around Witkoff's 21 October visit to St Petersburg, and Ushakov frames the next talks around a post-war security system rather than an interim truce. Only a breakthrough at the talks expected after 10 November, producing a ceasefire of at least 30 days along the whole front that both sides announce and that is in force by 31 January, would change this.",
+     "note_cs": "Za čtyři a půl roku vyjednávání nebylo dohodnuto žádné všeobecné příměří, útoky pokračovaly i během Witkoffovy návštěvy Petrohradu 21. října a Ušakov spojuje příští jednání s poválečným bezpečnostním uspořádáním, nikoli s dočasným klidem zbraní. Změnit to by mohl jen průlom na jednáních očekávaných po 10. listopadu, z něhož by vzešlo příměří nejméně na 30 dní po celé frontě, oznámené oběma stranami a platné do 31. ledna."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-fed-hike-28-oct",
+   "scope": "world",
+   "topic": "Fed (October)",
+   "question": "Will the Federal Reserve raise the federal funds target range at its meeting ending 28 October 2026?",
+   "question_cs": "Zvýší americký Fed na zasedání končícím 28. října 2026 cílové pásmo sazby federálních fondů?",
+   "criterion": "Yes if the FOMC statement published on federalreserve.gov on 28 Oct 2026 raises the target range for the federal funds rate. Otherwise no.",
+   "criterion_cs": "Ano, pokud prohlášení FOMC zveřejněné na federalreserve.gov 28. 10. 2026 zvýší cílové pásmo sazby federálních fondů. Jinak ne.",
+   "resolution_source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-10-29T06:00:00+01:00",
+   "background": "Kevin Warsh chairs the Fed; he has named October and December as decision points and warned investors against seeking rate clues (investingLive). The September projections' median pointed to a possible hike in December. On 16 October CME FedWatch showed about a 15% probability of an October hike, with markets mostly expecting a hold (Tiger Brokers/itiger, 17 Oct 2026). The war with Iran since February 2026 has pushed up energy prices.",
+   "sources": [
+    {
+     "title": "Tiger Brokers news: Markets expect a hold in October, Warsh could surprise (17 Oct 2026)",
+     "url": "https://www.itiger.com/news/1189778569"
+    },
+    {
+     "title": "investingLive: Warsh names October and December as decision points",
+     "url": "https://investinglive.com/central-banks/warsh-won-t-prejudge-rest-of-2026-names-october-and-december-as-decision-points/"
+    }
+   ],
+   "base_rate": {
+    "class": "FOMC decisions with a move priced at 20% or less one week before (approx. 1994-2026)",
+    "rate": 0.01,
+    "n": 200,
+    "source": "approximate: well-known record of no major FOMC surprises vs fed funds futures since 1994; rate changes from pipeline/reference-data/central-banks.json"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.06,
+     "combined": 0.058,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.05
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.06
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.07
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.06
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.05
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+      "p": 0.06,
+      "read_at": "2026-10-23T05:54:28:00Z"
+     },
+     "note": "Markets have moved firmly towards a hold since a hot September CPI briefly lifted hike bets, Warsh said on 16 October that the data had not changed his view, and the September projections point to December as the natural next step. Only a hawkish surprise from Warsh, who has kept October formally open and gave no signal before the blackout period, would change the outcome, and the Fed rarely surprises markets this way.",
+     "note_cs": "Trhy se od chvíle, kdy vysoká zářijová inflace krátce zvýšila sázky na zvýšení sazeb, výrazně přiklonily k jejich ponechání, Warsh 16. října uvedl, že data jeho názor nezměnila, a zářijové projekce ukazují jako přirozený další krok prosinec. Výsledek by změnilo jen jestřábí překvapení ze strany Warshe, který říjnové zasedání formálně nechal otevřené a před obdobím mlčení nic nenaznačil, a Fed trhy takto překvapuje jen zřídka."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-fed-hike-december",
+   "scope": "world",
+   "topic": "Fed (December)",
+   "question": "Will the Federal Reserve raise the federal funds target range at its December 2026 meeting?",
+   "question_cs": "Zvýší Fed na prosincovém zasedání 2026 cílové pásmo sazby federálních fondů?",
+   "criterion": "Yes if the FOMC statement at the scheduled December 2026 meeting (federalreserve.gov) raises the target range for the federal funds rate. A hike only in October does not count. Resolves by 31 Dec 2026 23:59 CET.",
+   "criterion_cs": "Ano, pokud prohlášení FOMC na plánovaném prosincovém zasedání 2026 (federalreserve.gov) zvýší cílové pásmo sazby federálních fondů. Zvýšení pouze v říjnu se nepočítá. Rozhoduje stav k 31. 12. 2026 ve 23:59 SEČ.",
+   "resolution_source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The median of the Fed's September 2026 projections pointed to a possible hike in December (Tiger Brokers, 17 Oct 2026). Chair Kevin Warsh has called October and December the key decision points while refusing to pre-commit (investingLive). The ECB, facing 3.8% euro-area inflation, is also widely expected to hike in December. Energy prices have been driven up by the Iran war and disruption around the Strait of Hormuz.",
+   "sources": [
+    {
+     "title": "Tiger Brokers news: Warsh could deliver a surprise (17 Oct 2026)",
+     "url": "https://www.itiger.com/news/1189778569"
+    },
+    {
+     "title": "investingLive: Warsh names October and December as decision points",
+     "url": "https://investinglive.com/central-banks/warsh-won-t-prejudge-rest-of-2026-names-october-and-december-as-decision-points/"
+    }
+   ],
+   "base_rate": {
+    "class": "FOMC moves priced 65-80% about two months ahead (calibration of futures-implied probabilities)",
+    "rate": 0.72,
+    "n": null,
+    "source": "assumed calibration of market-implied probabilities; no counted dataset in repo"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.69,
+     "combined": 0.693,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.7
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.64
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.68
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+      "p": 0.744,
+      "read_at": "2026-10-23T05:54:37:00Z"
+     },
+     "note": "The Fed raised rates unanimously to 3.75–4.00% in September, the median September projection points to another hike in December, Warsh says inflation will not return to target on its own, and markets see a December move as likely. Easing energy prices after any de-escalation with Iran, weak payrolls, political pressure on Warsh or a surprise October hike that pre-empts December could still lead to a hold.",
+     "note_cs": "Fed v září jednomyslně zvýšil sazby na 3,75 až 4,00 %, medián zářijových projekcí ukazuje na další zvýšení v prosinci, Warsh tvrdí, že se inflace sama k cíli nevrátí, a trhy prosincový krok považují za pravděpodobný. K ponechání sazeb by přesto mohlo vést zlevnění energií po případné deeskalaci s Íránem, slabá data o zaměstnanosti, politický tlak na Warshe nebo nečekané zvýšení v říjnu, které by prosincový krok předběhlo."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-iran-talks-resume",
+   "scope": "world",
+   "topic": "Iran–US talks",
+   "question": "Will US and Iranian officials hold a publicly confirmed round of negotiations (direct or indirect, in the same venue) by 31 December 2026?",
+   "question_cs": "Uskuteční představitelé USA a Íránu do 31. prosince 2026 veřejně potvrzené kolo jednání (přímých či nepřímých, na stejném místě)?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, both the Iranian foreign ministry (mfa.ir or its spokesman) and the US government (White House or State Department) confirm that delegations of the two countries met, directly or through mediators in the same venue, to negotiate. Exchanges of written messages through intermediaries do not count.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ íránské ministerstvo zahraničí (mfa.ir nebo jeho mluvčí) i vláda USA (Bílý dům nebo ministerstvo zahraničí) potvrdí, že se delegace obou zemí setkaly k jednání přímo nebo přes prostředníky na stejném místě. Výměna písemných zpráv přes prostředníky se nepočítá.",
+   "resolution_source": "https://www.state.gov/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The war began with US and Israeli strikes on Iran on 28 February 2026; a June interim ceasefire collapsed (bdnews24/AFP, 12 Oct 2026). Qatar and Pakistan are passing messages; Iran says the US response did not meet its seven conditions for reopening the Strait of Hormuz and returning to talks, while Washington wants the nuclear file addressed first. Iran told Pakistan on 20 October there would be no talks until its demands were met (TimesLIVE), and Reuters reported Iran was prolonging the stalemate to influence the US midterms.",
+   "sources": [
+    {
+     "title": "bdnews24: US–Iran talks stalled over Hormuz conditions",
+     "url": "https://bdnews24.com/world/middle-east/8l8evr9ecd"
+    },
+    {
+     "title": "TimesLIVE: Iran tells Pakistan no talks with US until demands met (20 Oct 2026)",
+     "url": "https://www.timeslive.co.za/news/world/2026-10-20-iran-tells-pakistan-no-talks-with-the-us-until-demands-met/"
+    },
+    {
+     "title": "Reuters (via Investing.com): Iran prolongs talks stalemate before midterms",
+     "url": "https://www.investing.com/news/commodities-news/iran-prolongs-talks-in-stalemate-to-influence-us-midterms-officials-say-4959490"
+    }
+   ],
+   "base_rate": {
+    "class": "Stalled US-Iran tracks resuming a same-venue round within ~10 weeks (2019-2026)",
+    "rate": 0.25,
+    "n": 6,
+    "source": "approximate count of public pauses in US-Iran talks 2019-2026"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.31,
+     "combined": 0.312,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.33
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.33
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt",
+      "p": 0.345,
+      "read_at": "2026-10-23T05:57:38:00Z"
+     },
+     "note": "Iran told Pakistan on 20 October there would be no talks until its seven conditions are met, Washington insists on the nuclear file and enrichment cuts first, and the question requires both governments to confirm a same-venue negotiating round, not just messages passed through Qatar or Pakistan. Reuters reports Tehran is dragging out the stalemate until the 3 November US midterms, so mediators who have convened rounds quickly before could open a window in November and December.",
+     "note_cs": "Írán 20. října Pákistánu vzkázal, že jednat nebude, dokud nebude splněno jeho sedm podmínek, Washington naopak trvá na tom, že se nejprve musí řešit jaderný program a omezení obohacování uranu, a otázka vyžaduje, aby obě vlády potvrdily kolo jednání na stejném místě, nikoli jen předávání zpráv přes Katar či Pákistán. Podle agentury Reuters Teherán patovou situaci záměrně protahuje až do amerických voleb 3. listopadu, takže zprostředkovatelé, kteří už dříve dokázali kola jednání rychle svolat, by mohli v listopadu a prosinci otevřít prostor k rozhovorům."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "ve-election-date-set",
+   "scope": "world",
+   "topic": "Venezuela election date",
+   "question": "Will Venezuela's electoral authority officially set a date for a presidential election by 31 January 2027?",
+   "question_cs": "Stanoví venezuelský volební orgán do 31. ledna 2027 oficiálně datum prezidentských voleb?",
+   "criterion": "Yes if, by 31 Jan 2027 23:59 CET, Venezuela's National Electoral Council (CNE, cne.gob.ve) or the government in a formal decree publishes a specific calendar date for a presidential election. Statements that elections will take place without a date do not count.",
+   "criterion_cs": "Ano, pokud do 31. 1. 2027 ve 23:59 SEČ venezuelská Národní volební rada (CNE, cne.gob.ve) nebo vláda formálním dekretem zveřejní konkrétní datum prezidentských voleb. Prohlášení, že se volby uskuteční, bez data se nepočítají.",
+   "resolution_source": "http://www.cne.gob.ve/",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "Acting President Delcy Rodríguez told the UN General Assembly in September 2026 that Venezuela will hold elections but gave no date (MercoPress, 24 Sep; Euronews). Reuters reported the vote could slip to late 2027 because of institutional reforms and a new CNE (NTN24). Trump said Venezuela was 'not ready yet' for elections. Opposition protests over the missing date took place on 22 October (Rio Times).",
+   "sources": [
+    {
+     "title": "Euronews (ES): Delcy Rodríguez announces elections but sets no date",
+     "url": "https://es.euronews.com/2026/09/24/delcy-rodriguez-anuncia-elecciones-en-venezuela-pero-no-pone-fecha-el-pueblo-decidira-el-m"
+    },
+    {
+     "title": "NTN24: Elections could be delayed to late 2027, Reuters says",
+     "url": "https://www.ntn24.com/noticias-actualidad/elecciones-presidenciales-en-venezuela-podrian-retrasarse-hasta-finales-de-2027-por-reformas-institucionales-y-logisticas-segun-la-agencia-reuters-653611"
+    },
+    {
+     "title": "Rio Times: Venezuela election-date protest (22 Oct 2026)",
+     "url": "https://www.riotimesonline.com/venezuela-election-date-protest-22-october-2026/"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.11,
+     "combined": 0.106,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.12
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.1
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.1
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.11
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.1
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/venezuela-presidential-election-scheduled-by",
+      "p": 0.085,
+      "read_at": "2026-10-23T05:57:38:00Z"
+     },
+     "note": "Acting President Delcy Rodríguez promised elections at the UN in September without giving a date, Reuters reports the vote could slip to late 2027 pending institutional reforms and a new electoral council (CNE), and Trump has said Venezuela is \"not ready yet\". Government–opposition talks that opened in Caracas on 14 October, where the opposition said it would \"look for a date\", and protests over the missing date are the main routes to an earlier announcement.",
+     "note_cs": "Úřadující prezidentka Delcy Rodríguez v září v OSN slíbila volby, ale datum neuvedla, podle agentury Reuters se hlasování kvůli institucionálním reformám a ustavení nové volební rady CNE může posunout až na konec roku 2027 a Trump prohlásil, že Venezuela na volby „ještě není připravena“. Hlavní cestou k dřívějšímu oznámení jsou rozhovory vlády s opozicí zahájené 14. října v Caracasu, kde opozice uvedla, že „bude hledat datum“, a protesty kvůli chybějícímu termínu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "us-cn-trump-xi-apec",
+   "scope": "world",
+   "topic": "US–China summit",
+   "question": "Will Donald Trump and Xi Jinping meet in person by 30 November 2026?",
+   "question_cs": "Setkají se Donald Trump a Si Ťin-pching osobně do 30. listopadu 2026?",
+   "criterion": "Yes if, by 30 Nov 2026 23:59 CET, the White House or China's foreign ministry/Xinhua confirms an in-person meeting between Trump and Xi (bilateral or in a wider format, e.g. on the sidelines of APEC in Shenzhen). Phone or video calls do not count.",
+   "criterion_cs": "Ano, pokud do 30. 11. 2026 ve 23:59 SEČ Bílý dům nebo čínské ministerstvo zahraničí/agentura Xinhua potvrdí osobní setkání Trumpa a Si Ťin-pchinga (dvoustranné i v širším formátu, např. na okraj summitu APEC v Šen-čenu). Telefonáty a videohovory se nepočítají.",
+   "resolution_source": "https://www.whitehouse.gov/briefing-room/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "China hosts the APEC leaders' summit in Shenzhen on 18–19 November 2026, and Trump was expected to attend (Financial News Korea, 10 Sep 2026). Trump and Xi met on the sidelines of APEC in Gyeongju in 2025. The Kremlin has floated a US–Russia–China trilateral summit in Shenzhen, and Putin and Witkoff discussed such a meeting on 21 October (AP). The Chinese Communist Party's Central Committee plenum is set for 26–29 October (Reuters).",
+   "sources": [
+    {
+     "title": "Financial News (Korea): APEC Shenzhen and a possible trilateral summit (10 Sep 2026)",
+     "url": "https://en.fnnews.com/news/202609100646439749"
+    },
+    {
+     "title": "AP (via AJC): Putin and Witkoff discussed leaders' meeting in China",
+     "url": "https://www.ajc.com/news/2026/10/trump-envoy-witkoff-meets-putin-in-st-petersburg-for-ukraine-war-talks/"
+    },
+    {
+     "title": "Reuters (via Internazionale): CCP plenum set for 26–29 October",
+     "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/09/21/china-s-xi-chairs-politburo-central-committee-plenum-set-for-october-26-29"
+    }
+   ],
+   "base_rate": {
+    "class": "Publicly pre-agreed Trump-Xi in-person meetings that took place",
+    "rate": 0.85,
+    "n": 6,
+    "source": "2017-2026 meeting record (general knowledge)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.86,
+     "combined": 0.857,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.84
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.86
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.85
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.85
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.88
+      }
+     ],
+     "market": null,
+     "note": "Trump accepted Xi's invitation to the APEC summit in Shenzhen on 18–19 November, writing on 25 September that \"we will meet again in China in November\". The main risk is a last-minute cancellation over post-midterm politics, an escalation of the Iran war or a trade or Taiwan flare-up; Trump skipped APEC in 2018.",
+     "note_cs": "Trump přijal pozvání Si Ťin-pchinga na summit APEC v Šen-čenu 18. a 19. listopadu a 25. září napsal, že „se znovu setkáme v Číně v listopadu“. Hlavním rizikem je zrušení cesty na poslední chvíli kvůli domácí politice po volbách v polovině funkčního období, eskalaci války s Íránem nebo vyostření sporů o obchod či Tchaj-wan; Trump už v roce 2018 summit APEC vynechal."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "ca-bc-conservative-premier",
+   "scope": "world",
+   "topic": "British Columbia government",
+   "question": "Will a BC Conservative be sworn in as Premier of British Columbia by 30 November 2026?",
+   "question_cs": "Složí do 30. listopadu 2026 přísahu jako premiér Britské Kolumbie politik Konzervativní strany BC?",
+   "criterion": "Yes if, by 30 Nov 2026 23:59 CET, a member of the Conservative Party of British Columbia is sworn in as premier, as announced by the BC government (news.gov.bc.ca) or the Lieutenant Governor. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 30. 11. 2026 ve 23:59 SEČ složí přísahu jako premiér člen Konzervativní strany Britské Kolumbie, podle oznámení vlády BC (news.gov.bc.ca) nebo guvernéra. Jinak ne.",
+   "resolution_source": "https://elections.bc.ca/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "NDP Premier David Eby called an early provincial election for 24 October 2026. The BC Conservatives, led by interim leader Lorne Doerkson, led final polls by about five points (Global News; Leger, 22 Oct), though Angus Reid called it a statistical tie. In 2024 the NDP won 47 of 93 seats and the Conservatives 44. Mail-in and absentee ballots can delay final counts in close ridings by up to two weeks.",
+   "sources": [
+    {
+     "title": "Global News: No sign of late NDP surge, Conservatives lead by five",
+     "url": "https://globalnews.ca/news/12110154/no-sign-late-bc-ndp-surge-conservatives-lead-five-points-poll/"
+    },
+    {
+     "title": "Leger: BC election poll (22 Oct 2026)",
+     "url": "https://leger360.com/bc-election-2026-october22-poll/"
+    },
+    {
+     "title": "338Canada: British Columbia",
+     "url": "https://www.338canada.com/bc"
+    }
+   ],
+   "base_rate": {
+    "class": "Canadian provincial changes of government: days from election to premier swearing-in (majority cases)",
+    "rate": 0.9,
+    "n": 6,
+    "source": "general knowledge of AB 2015/2019, ON 2018, BC 2001, SK 2007, NB 2018 transitions; pipeline/reference-data/poll-error.json for lead sd"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.72,
+     "combined": 0.719,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.69
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.78
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.68
+      }
+     ],
+     "market": null,
+     "note": "The BC Conservatives led the final Leger poll by about five points, although Angus Reid calls the race a statistical tie, and 338Canada projects them winning a majority of around 54 seats; a clear result would let a new premier be sworn in by mid-November, as past Canadian changes of government took about three weeks. A narrow or minority result, with mail-in ballots and recounts dragging out the count or Eby staying on to test the House with Green support, could push a swearing-in past 30 November.",
+     "note_cs": "Konzervativci v závěrečném průzkumu agentury Leger vedli zhruba o pět bodů, ačkoli agentura Angus Reid mluví o statisticky vyrovnaném souboji, a projekce 338Canada jim přisuzuje většinu kolem 54 křesel; při jasném výsledku by nový premiér mohl složit přísahu do poloviny listopadu, neboť dřívější výměny vlád v Kanadě trvaly asi tři týdny. Těsný nebo menšinový výsledek, při němž by se sčítání korespondenčních hlasů a přepočty protáhly nebo by Eby zůstal v úřadu a s podporou zelených se pokusil obstát v parlamentu, by však mohl přísahu posunout za 30. listopad."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "eu-ecb-hike-december",
+   "scope": "europe",
+   "topic": "ECB (December)",
+   "question": "Will the European Central Bank raise its deposit facility rate at its meeting on 17 December 2026?",
+   "question_cs": "Zvýší Evropská centrální banka na zasedání 17. prosince 2026 sazbu z vkladové facility?",
+   "criterion": "Yes if the ECB monetary policy decision published on ecb.europa.eu on 17 Dec 2026 raises the deposit facility rate above its level after the 29 Oct 2026 meeting. Otherwise no. (If the ECB hikes on 29 October and holds in December, no.)",
+   "criterion_cs": "Ano, pokud měnověpolitické rozhodnutí ECB zveřejněné na ecb.europa.eu 17. 12. 2026 zvýší sazbu z vkladové facility nad úroveň platnou po zasedání 29. 10. 2026. Jinak ne. (Zvýší-li ECB 29. října a v prosinci sazby ponechá, ne.)",
+   "resolution_source": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-17T23:59:00+01:00",
+   "background": "The ECB deposit rate is 2.50% and euro-area inflation was 3.8% in September 2026. In a Reuters poll reported on 8 October, 70 of 73 economists expected a hold on 29 October and 64 of 73 expected a 25-basis-point hike in December, reversing the previous month's survey. The ECB meets on 28–29 October and 16–17 December 2026 (ECB calendar).",
+   "sources": [
+    {
+     "title": "Global Banking & Finance Review: ECB to hike in December as inflation almost doubles target",
+     "url": "https://www.globalbankingandfinance.com/ecb-hike-rates-december-inflation-almost-doubles-2-target/"
+    },
+    {
+     "title": "ECB: Governing Council meeting calendar",
+     "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    }
+   ],
+   "base_rate": {
+    "class": "ECB decisions matching a strong (>85%) Reuters poll consensus formed ~2 months ahead",
+    "rate": 0.85,
+    "n": null,
+    "source": "approximate; consensus comparison not yet filled in pipeline/reference-data/central-banks.json"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.78,
+     "combined": 0.778,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.78
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.78
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.72
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.83
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.77
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/ecb-interest-rates-december-2026",
+      "p": 0.824,
+      "read_at": "2026-10-23T05:55:42:00Z"
+     },
+     "note": "With euro-area inflation at 3.8%, 64 of 73 economists in the Reuters poll expect a 25-basis-point hike on 17 December, when new projections are due, and Danske sees it as the final hike to a 2.75% peak. The main risks are the recently less hawkish tone of Governing Council members, weakening growth, or a surprise October hike followed by a December hold, which would resolve the question negatively.",
+     "note_cs": "Při inflaci v eurozóně 3,8 % očekává 64 ze 73 ekonomů v anketě agentury Reuters zvýšení o 25 bazických bodů 17. prosince, kdy budou zveřejněny i nové projekce, a Danske Bank to považuje za poslední zvýšení na vrchol 2,75 %. Hlavními riziky jsou méně jestřábí tón členů Rady guvernérů v poslední době, slábnoucí růst nebo nečekané zvýšení v říjnu, po němž by sazby v prosinci zůstaly beze změny, což by otázku rozhodlo záporně."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "rs-sns-majority",
+   "scope": "europe",
+   "topic": "Serbia election",
+   "question": "Will the SNS-led list win an outright majority (at least 126 of 250 seats) in Serbia's 25 October 2026 parliamentary election?",
+   "question_cs": "Získá kandidátka vedená SNS v srbských parlamentních volbách 25. října 2026 absolutní většinu (nejméně 126 z 250 mandátů)?",
+   "criterion": "Yes if the Republic Electoral Commission (RIK, rik.parlament.gov.rs) final or latest published results by 15 Nov 2026 23:59 CET allocate at least 126 of 250 seats to the list led by the Serbian Progressive Party (SNS). Seats of allied separate lists (e.g. SPS) do not count unless they ran on the SNS-led list.",
+   "criterion_cs": "Ano, pokud konečné nebo poslední zveřejněné výsledky Republikové volební komise (RIK, rik.parlament.gov.rs) do 15. 11. 2026 ve 23:59 SEČ přidělí kandidátce vedené Srbskou pokrokovou stranou (SNS) nejméně 126 z 250 mandátů. Mandáty samostatných spojeneckých kandidátek (např. SPS) se nepočítají, pokud nekandidovaly na kandidátce SNS.",
+   "resolution_source": "https://www.rik.parlament.gov.rs/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-15T23:59:00+01:00",
+   "background": "Aleksandar Vučić resigned as president on 27 September 2026 and called a snap parliamentary election for 25 October, running to become prime minister after nearly two years of student-led protests (Al Jazeera). The main challenger is the Student List. Polls diverge sharply: Faktor Plus (June) had SNS at 47.1% against 30.7% for the students, while NSPM (April) put the combined opposition ahead; ANSA described the outcome as uncertain on 22 October. Serbia's 250-seat parliament is elected by nationwide proportional representation with a 3% threshold.",
+   "sources": [
+    {
+     "title": "Al Jazeera: Serbia's snap election – can Vučić outmanoeuvre the student revolt? (28 Sep 2026)",
+     "url": "https://aljazeera.com/features/2026/9/28/serbias-snap-election-can-vucic-outmanoeuvre-the-student-revolt"
+    },
+    {
+     "title": "ANSA: Latest polls in Serbia indicate an uncertain outcome (22 Oct 2026)",
+     "url": "https://ansa.it/nuova_europa/en/news/sections/news/2026/10/22/latest-polls-in-serbia-indicate-an-uncertain-outcome-for-students-and-vucic_707d7628-9b19-431c-bb4e-08b44d7d252b.html"
+    },
+    {
+     "title": "Al Jazeera: Final student-led rally before the election (22 Oct 2026)",
+     "url": "https://www.aljazeera.com/news/2026/10/22/thousands-gather-at-final-student-led-rally-ahead-of-serbia-election"
+    }
+   ],
+   "base_rate": {
+    "class": "SNS-led list seat totals in Serbian parliamentary elections 2014-2023",
+    "rate": 0.6,
+    "n": 5,
+    "source": "Majorities in 2014 (158), 2016 (131), 2020 (188), 2023 (129); not in 2022 (120). General knowledge; not adjusted for the much stronger 2026 challenger"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.3,
+     "combined": 0.301,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.3
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.36
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.27
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.28
+      }
+     ],
+     "market": null,
+     "note": "With SPS running separately, the SNS-led list needs roughly 47% of the vote to win 126 seats on its own, a level only the government-friendly Faktor Plus (48.6%) shows, while NSPM, CRTA and Birodi put it at 35.7–41.7% and behind the Student List. A low wasted vote, a fragmented opposition and SNS's incumbency and state-resource advantages, which have helped it beat independent polls before, are its route to a majority.",
+     "note_cs": "Protože SPS kandiduje samostatně, potřebuje kandidátka vedená SNS k zisku 126 mandátů sama zhruba 47 % hlasů, což ukazuje jen vládě nakloněná agentura Faktor Plus (48,6 %), zatímco NSPM, CRTA a Birodi jí přisuzují 35,7 až 41,7 % a řadí ji za Studentskou kandidátku. Cestou k většině je nízký počet propadlých hlasů, roztříštěná opozice a výhody SNS plynoucí z postavení u moci a ze státních zdrojů, které jí už dříve pomohly překonat nezávislé průzkumy."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "rs-vucic-prime-minister",
+   "scope": "europe",
+   "topic": "Serbia government formation",
+   "question": "Will Aleksandar Vučić be elected Prime Minister of Serbia by 31 January 2027?",
+   "question_cs": "Bude Aleksandar Vučić do 31. ledna 2027 zvolen předsedou srbské vlády?",
+   "criterion": "Yes if, by 31 Jan 2027 23:59 CET, the National Assembly of Serbia (parlament.gov.rs) elects a government headed by Aleksandar Vučić. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. 1. 2027 ve 23:59 SEČ Národní shromáždění Srbska (parlament.gov.rs) zvolí vládu v čele s Aleksandarem Vučićem. Jinak ne.",
+   "resolution_source": "http://www.parlament.gov.rs/",
+   "opened": "2026-10-23",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "Vučić resigned the presidency on 27 September 2026 to seek the post of prime minister, which he held in 2014–2017, and called a snap election for 25 October (Al Jazeera). The presidency is meanwhile held by an acting president, and a presidential election will also be needed. Serbia's constitution gives parliament up to 90 days after its constitution to elect a government. The Student List rejects cooperation with SNS.",
+   "sources": [
+    {
+     "title": "Al Jazeera: Serbia's snap election – can Vučić outmanoeuvre the student revolt? (28 Sep 2026)",
+     "url": "https://aljazeera.com/features/2026/9/28/serbias-snap-election-can-vucic-outmanoeuvre-the-student-revolt"
+    },
+    {
+     "title": "ANSA: Latest polls in Serbia indicate an uncertain outcome (22 Oct 2026)",
+     "url": "https://ansa.it/nuova_europa/en/news/sections/news/2026/10/22/latest-polls-in-serbia-indicate-an-uncertain-outcome-for-students-and-vucic_707d7628-9b19-431c-bb4e-08b44d7d252b.html"
+    }
+   ],
+   "base_rate": {
+    "class": "Serbian election-to-government-vote within 98 days, 2014-2023",
+    "rate": 0.2,
+    "n": 5,
+    "source": "dossier-R (2014, 2016, 2020, 2022, 2023 formations)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.38,
+     "combined": 0.381,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.4
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.42
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.38
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.47
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.25
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+      "p": 0.72,
+      "read_at": "2026-10-23T06:04:10:00Z"
+     },
+     "note": "Vučić needs a parliamentary majority behind a government he leads, whether SNS alone or with partners, which split polls leave in doubt, and he must be elected by 31 January, about 98 days after the vote, whereas only one of five Serbian governments since 2014 was formed that fast. His strong incentive to move quickly, having resigned the presidency and holding no office, and the 2014 precedent of a 42-day formation under him could get it done, while protests, recounts and a parallel presidential election could delay it.",
+     "note_cs": "Vučić potřebuje parlamentní většinu pro vládu, kterou povede, ať už SNS sama, nebo s partnery, což rozporuplné průzkumy zpochybňují, a musí být zvolen do 31. ledna, tedy zhruba 98 dní po volbách, přičemž tak rychle vznikla od roku 2014 jen jedna z pěti srbských vlád. Pomoci mu může silná motivace postupovat rychle, protože po rezignaci na prezidentský úřad nezastává žádnou funkci, a precedens z roku 2014, kdy jeho vláda vznikla za 42 dní, zdržet ho naopak mohou protesty, přepočítávání hlasů a souběžné prezidentské volby.",
+     "market_note": "The market asks who will be the next prime minister with no deadline; our question needs Vučić elected by 31 January, and forming a government can take up to 90 days after the parliament is constituted.",
+     "market_note_cs": "Trh se ptá, kdo bude příštím premiérem, bez termínu; naše otázka vyžaduje Vučićovo zvolení do 31. ledna a sestavení vlády může trvat až 90 dní od ustavení parlamentu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "bg-iotova-elected",
+   "scope": "europe",
+   "topic": "Bulgaria presidency",
+   "question": "Will Iliana Iotova be elected President of Bulgaria in the October–November 2026 election?",
+   "question_cs": "Bude Iliana Iotova zvolena prezidentkou Bulharska ve volbách v říjnu a listopadu 2026?",
+   "criterion": "Yes if the Central Election Commission (cik.bg) results of the first round (25 Oct) or the runoff (1 Nov 2026), published by 3 Nov 2026 23:59 CET, declare Iotova elected. Otherwise no.",
+   "criterion_cs": "Ano, pokud výsledky Ústřední volební komise (cik.bg) prvního kola (25. 10.) nebo druhého kola (1. 11. 2026), zveřejněné do 3. 11. 2026 ve 23:59 SEČ, vyhlásí Ilianu Iotova za zvolenou. Jinak ne.",
+   "resolution_source": "https://www.cik.bg/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-11-03T23:59:00+01:00",
+   "background": "Iliana Iotova became president when Rumen Radev stepped down to enter party politics and is seeking a mandate of her own (Novinite). A poll reported by Novinite on 22 October gave her 43.4% against 28.9% for Andrey Gyurov (PP–DB). A first-round win needs more than 50% of valid votes with turnout above 50%; otherwise the top two meet on 1 November. No first-round leader has lost a runoff since direct presidential elections began in 1992.",
+   "sources": [
+    {
+     "title": "Novinite: President Iotova seeks a mandate of her own",
+     "url": "https://www.novinite.com/view_news.php?id=239913"
+    },
+    {
+     "title": "BNR: Presidential elections will be held on 25 October",
+     "url": "https://bnrnews.bg/en/post/508938/the-presidential-elections-will-be-held-on-october-25"
+    },
+    {
+     "title": "European Pravda: Bulgaria before the vote (14 Oct 2026)",
+     "url": "https://www.eurointegration.com.ua/eng/news/2026/10/14/7247686/"
+    }
+   ],
+   "base_rate": {
+    "class": "Bulgarian presidential runoffs won by first-round leader",
+    "rate": 1,
+    "n": 7,
+    "source": "Question background (since 1992)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.85,
+     "combined": 0.85,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.86
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.8
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.85
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.85
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.88
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/bulgaria-presidential-election",
+      "p": 0.875,
+      "read_at": "2026-10-23T05:54:48:00Z"
+     },
+     "note": "Iliana Iotova, backed by Rumen Radev's dominant Progressive Bulgaria, polled 43.4% against 28.9% for Andrey Gyurov, and no first-round leader has lost a Bulgarian presidential runoff since 1992. The main risks are anti-Radev voters consolidating behind Gyurov in the likely 1 November runoff and the Central Election Commission declaring the result after the 3 November deadline.",
+     "note_cs": "Iliana Iotova, kterou podporuje dominantní strana Progresivní Bulharsko Rumena Radeva, měla v průzkumu 43,4 % proti 28,9 % pro Andreje Gjurova a od roku 1992 žádný vítěz prvního kola bulharských prezidentských voleb neprohrál ve druhém kole. Hlavními riziky jsou sjednocení odpůrců Radeva za Gjurovem v pravděpodobném druhém kole 1. listopadu a vyhlášení výsledku Ústřední volební komisí až po termínu 3. listopadu."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "fr-49-3-budget-2027",
+   "scope": "europe",
+   "topic": "France budget (49.3)",
+   "question": "Will the French government invoke Article 49.3 of the constitution on the 2027 state budget bill by 31 December 2026?",
+   "question_cs": "Použije francouzská vláda do 31. prosince 2026 u návrhu státního rozpočtu na rok 2027 článek 49.3 ústavy?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, the Prime Minister engages the government's responsibility under Article 49(3) on the projet de loi de finances pour 2027 (any part or reading), as recorded by the Assemblée nationale (assemblee-nationale.fr). Use of 49.3 only on the social security budget (PLFSS) does not count.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ premiér podle čl. 49 odst. 3 spojí odpovědnost vlády s návrhem zákona o státním rozpočtu na rok 2027 (jakoukoli částí či čtením), podle záznamu Národního shromáždění (assemblee-nationale.fr). Použití 49.3 jen u rozpočtu sociálního zabezpečení (PLFSS) se nepočítá.",
+   "resolution_source": "https://www.assemblee-nationale.fr/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Prime Minister Sébastien Lecornu's minority government opened floor debate on the 2027 budget on 13 October 2026 after the finance committee rejected the revenue part on 9 October (LCP). Ministers have not ruled out 49.3 or ordinances; LFI says it will table a censure motion if 49.3 is used, and the Socialists, now backing Raphaël Glucksmann of Place Publique as presidential candidate, threaten censure unless the text changes. Lecornu had renounced 49.3 in autumn 2025 but used it in January 2026 to pass the 2026 budget. France is also facing weekly gilets jaunes protests since 17 October.",
+   "sources": [
+    {
+     "title": "LCP: 2027 budget – the government on a knife-edge (12 Oct 2026)",
+     "url": "https://lcp.fr/actualites/budget-2027-le-gouvernement-sur-un-fil-a-la-veille-de-l-ouverture-des-debats-a-l"
+    },
+    {
+     "title": "La Libre: Lecornu to use 49.3 to pass the 2026 budget (19 Jan 2026)",
+     "url": "https://www.lalibre.be/international/europe/2026/01/19/france-lecornu-annonce-recourir-au-493-pour-faire-passer-le-budget-VDOYEGCZ5RC5PEYVKHZGL5BKUU/"
+    },
+    {
+     "title": "LCP: Budget 2027 dossier",
+     "url": "https://lcp.fr/dossiers/budget-2027-440523"
+    }
+   ],
+   "base_rate": {
+    "class": "Years 2022–2025 in which 49.3 was used on the PLF before 31 Dec",
+    "rate": 0.5,
+    "n": 4,
+    "source": "2022, 2023 yes (Borne); 2024 no (Barnier used it only on PLFSS before being censured); 2025 no (January 2026)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.49,
+     "combined": 0.49,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.5
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.5
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.55
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.45
+      }
+     ],
+     "market": null,
+     "note": "Ministers call adoption by vote \"très difficile\" and have not ruled out Article 49.3, the Assembly's 40-day first-reading limit (around 10 November) and the 70-day point after which ordinances become possible (around 10 December) both fall within the window, and Lecornu used 49.3 for the 2026 budget. But in the last cycle he waited, bridged the year-end with a special law and invoked 49.3 only in January 2026, and a repeat of that sequence or the use of ordinances would resolve the question negatively.",
+     "note_cs": "Ministři označují schválení rozpočtu hlasováním za „velmi obtížné“ a použití článku 49.3 nevyloučili, do sledovaného období spadá 40denní lhůta pro první čtení v Národním shromáždění (kolem 10. listopadu) i 70denní lhůta, po níž lze rozpočet zavést nařízeními (kolem 10. prosince), a Lecornu článek 49.3 použil u rozpočtu na rok 2026. V minulém cyklu však vyčkával, konec roku překlenul zvláštním zákonem a k článku 49.3 sáhl až v lednu 2026; opakování tohoto postupu nebo použití nařízení by otázku rozhodlo záporně."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "fr-government-censured",
+   "scope": "europe",
+   "topic": "France government survival",
+   "question": "Will the French National Assembly adopt a motion of censure against Sébastien Lecornu's government by 31 December 2026?",
+   "question_cs": "Přijme francouzské Národní shromáždění do 31. prosince 2026 návrh na vyslovení nedůvěry vládě Sébastiena Lecornua?",
+   "criterion": "Yes if the Assemblée nationale adopts a motion de censure (by an absolute majority of the members of the Assembly, as required by Article 49 of the Constitution) against the Lecornu government by 31 Dec 2026 23:59 CET, as recorded on assemblee-nationale.fr. No if no motion is adopted, or if the government leaves office in another way.",
+   "criterion_cs": "Ano, pokud Národní shromáždění do 31. 12. 2026 ve 23:59 SEČ přijme návrh na vyslovení nedůvěry (absolutní většinou členů Národního shromáždění, jak vyžaduje článek 49 ústavy) vládě Lecornua, podle záznamu na assemblee-nationale.fr. Ne, pokud žádný návrh přijat nebude nebo pokud vláda skončí jiným způsobem.",
+   "resolution_source": "https://www.assemblee-nationale.fr/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Lecornu's government has no majority and needs either the Socialists or the RN to abstain to survive budget votes (LCP, 12 Oct 2026). The RN says it will not censure automatically but calls pension de-indexation a red line; the Socialists say there will be censure unless the text changes; LFI will table a motion if 49.3 is used. Several censure motions were rejected during the 2026 budget process in January–February 2026. The government is also contending with violent gilets jaunes protests that began on 17 October.",
+   "sources": [
+    {
+     "title": "LCP: 2027 budget – the government on a knife-edge (12 Oct 2026)",
+     "url": "https://lcp.fr/actualites/budget-2027-le-gouvernement-sur-un-fil-a-la-veille-de-l-ouverture-des-debats-a-l"
+    },
+    {
+     "title": "Blick: Assembly rejects a third censure motion (2026)",
+     "url": "https://www.blick.ch/fr/monde/france/france-lassemblee-repousse-une-troisieme-motion-de-censure-id21656507.html"
+    },
+    {
+     "title": "Le Petit Journal: Political crisis and violence in France – latest",
+     "url": "https://lepetitjournal.com/expat-politique/actualites/crise-politique-et-violences-en-france-les-derniers-developpements-456570"
+    }
+   ],
+   "base_rate": {
+    "class": "Fifth Republic censure motions adopted",
+    "rate": 0.01,
+    "n": 160,
+    "source": "Assemblée nationale records (2 adopted: 1962, 2024)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.15,
+     "combined": 0.155,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.15
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.17
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.17
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.2
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.1
+      }
+     ],
+     "market": null,
+     "note": "A censure motion has passed only twice in the Fifth Republic, in 1962 and against Barnier in 2024, every motion against Lecornu has failed (with 271 and 256 votes against the 289 needed), and success would require the Socialists and the RN to vote together, which both have pre-election reasons to avoid. A 49.3 on a budget that keeps pension de-indexation, the RN's red line, without the changes the Socialists demand is the most likely trigger that could change this.",
+     "note_cs": "Návrh na vyslovení nedůvěry prošel za páté republiky jen dvakrát, v roce 1962 a v roce 2024 proti Barnierovi, všechny návrhy proti Lecornuovi neuspěly (získaly 271 a 256 hlasů při potřebných 289) a úspěch by vyžadoval společné hlasování socialistů a Národního sdružení, kterému se obě strany mají před prezidentskými volbami důvod vyhnout. Nejpravděpodobnějším spouštěčem změny by bylo použití článku 49.3 u rozpočtu, který zachová zmrazení valorizace důchodů, tedy červenou linii Národního sdružení, a nebude obsahovat změny požadované socialisty."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "eu-22nd-sanctions-package",
+   "scope": "europe",
+   "topic": "EU sanctions on Russia",
+   "question": "Will the EU Council adopt a 22nd package of sanctions against Russia by 31 December 2026?",
+   "question_cs": "Přijme Rada EU do 31. prosince 2026 22. balík sankcí proti Rusku?",
+   "criterion": "Yes if a Council of the EU press release (consilium.europa.eu) or the Official Journal records the formal adoption of the 22nd package of restrictive measures against Russia by 31 Dec 2026 23:59 CET. Agreement by ambassadors (Coreper) alone does not count.",
+   "criterion_cs": "Ano, pokud tisková zpráva Rady EU (consilium.europa.eu) nebo Úřední věstník do 31. 12. 2026 ve 23:59 SEČ zaznamená formální přijetí 22. balíku restriktivních opatření proti Rusku. Pouhá shoda velvyslanců (Coreper) se nepočítá.",
+   "resolution_source": "https://www.consilium.europa.eu/en/press/press-releases/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The EU adopted its 21st sanctions package against Russia in July 2026 (Mayer Brown, 24 Jul). Bloomberg reported the EU aimed to adopt a 22nd package in October (via TASS); a separate listing of about 1,600 entities on 12 October was not the 22nd package. On 19 October Commission spokespeople said only that work was ongoing and gave no date (Charter97). A Zelensky adviser said adoption could come in November (UA.News). Sanctions require unanimity among the 27 member states.",
+   "sources": [
+    {
+     "title": "Mayer Brown: EU adopts 21st package against Russia (24 Jul 2026)",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/07/european-union-adopts-21st-package-against-russia-and-parallel-sanctions-on-belarus"
+    },
+    {
+     "title": "Charter97: Commission working on next sanctions package (19 Oct 2026)",
+     "url": "https://charter97.org/en/news/2026/10/19/702433/"
+    },
+    {
+     "title": "UA.News: EU may adopt 22nd package in November",
+     "url": "https://ua.news/en/ukraine/es-mozhe-ukhvaliti-22-i-paket-sanktsii-proti-rosiyi-u-listopadi-vlasiuk"
+    }
+   ],
+   "base_rate": {
+    "class": "Gaps between consecutive EU Russia sanctions packages <= 5.2 months, 2022-2026",
+    "rate": 0.9,
+    "n": 20,
+    "source": "dossier-R"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.47,
+     "combined": 0.472,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.48
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.43
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.45
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.55
+      }
+     ],
+     "market": null,
+     "note": "Three months after the 21st package the Commission had still not presented the 22nd by 19 October and gave no date, so a proposal in November would leave only weeks for unanimous agreement, while recent packages have taken from five weeks to more than two and a half months, with Hungary, Slovakia and Greece holding up earlier ones. A pre-Christmas push like the December adoptions of 2023 and 2024 could still deliver it by year-end, though oil measures during an energy-price crisis invite fresh vetoes.",
+     "note_cs": "Komise ani tři měsíce po přijetí 21. balíku do 19. října 22. balík nepředložila a neuvedla žádné datum, takže při návrhu v listopadu by na jednomyslnou shodu zbývalo jen několik týdnů, zatímco nedávné balíky trvaly od pěti týdnů po více než dva a půl měsíce a Maďarsko, Slovensko a Řecko ty předchozí zdržovaly. Přijetí do konce roku by přesto mohl přinést předvánoční tlak, jako tomu bylo při prosincovém schválení balíků v letech 2023 a 2024, opatření týkající se ropy v době energetické krize však mohou vyvolat nová veta."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "eu-mff-deal-2026",
+   "scope": "europe",
+   "topic": "EU budget 2028–34",
+   "question": "Will EU leaders reach political agreement on the 2028–2034 Multiannual Financial Framework by 31 December 2026?",
+   "question_cs": "Dosáhnou lídři EU do 31. prosince 2026 politické dohody o víceletém finančním rámci na roky 2028–2034?",
+   "criterion": "Yes if European Council conclusions or a statement by its President published on consilium.europa.eu by 31 Dec 2026 23:59 CET record agreement among all 27 heads of state or government on the overall size and structure of the 2028–2034 MFF. Partial agreements or progress reports do not count.",
+   "criterion_cs": "Ano, pokud závěry Evropské rady nebo prohlášení jejího předsedy zveřejněné na consilium.europa.eu do 31. 12. 2026 ve 23:59 SEČ zaznamenají dohodu všech 27 hlav států či vlád o celkovém objemu a struktuře víceletého finančního rámce 2028–2034. Dílčí dohody ani zprávy o pokroku se nepočítají.",
+   "resolution_source": "https://www.consilium.europa.eu/en/european-council/conclusions/",
+   "opened": "2026-10-23",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The October 2026 EU summit ended inconclusively on the 2028–2034 budget; the Irish presidency's proposal to cut the total by €141 billion was largely rejected (Euronews, 15 Oct). Council President António Costa is taking over the negotiations and stepping up meetings with all delegations (Eunews, 21 Oct), with a special summit planned for 26 November. Summit conclusions softened the year-end target, saying only that a deal before the end of 2026 would allow legislation to be adopted in 2027. The previous MFF was agreed on 21 July 2020, about five and a half months before it started.",
+   "sources": [
+    {
+     "title": "Euronews: Inconclusive sparring at EU summit puts budget timeline into question (15 Oct 2026)",
+     "url": "https://euronews.com/2026/10/15/inconclusive-sparring-at-eu-summit-puts-budget-timeline-into-question"
+    },
+    {
+     "title": "Eunews: Costa steps up work on the multiannual budget (21 Oct 2026)",
+     "url": "https://www.eunews.it/en/2026/10/21/costa-is-stepping-up-work-on-the-multi-year-budget-meetings-are-planned-with-all-the-delegations/"
+    }
+   ],
+   "base_rate": {
+    "class": "MFF political agreements reached within 18 months of Commission proposal",
+    "rate": 0,
+    "n": 3,
+    "source": "2007–13, 2014–20, 2021–27 MFF timelines (general knowledge)"
+   },
+   "history": [
+    {
+     "at": "2026-10-23T10:30:00+02:00",
+     "p": 0.13,
+     "combined": 0.127,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.1
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.15
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-opus-5-5",
+       "p": 0.12
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.18
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet",
+       "p": 0.1
+      }
+     ],
+     "market": null,
+     "note": "The October summit ended inconclusively, the Irish presidency's €141 billion cut was largely rejected and leaders softened the year-end target, while previous MFF deals took 20–26 months from the Commission's proposal against about 17 months for a December 2026 deal. Only a breakthrough on António Costa's new negotiating box at the 26 November special summit or the December European Council could produce an agreement this year.",
+     "note_cs": "Říjnový summit skončil bez výsledku, návrh irského předsednictví na snížení o 141 miliard eur byl z velké části odmítnut a lídři zmírnili cíl dohodnout se do konce roku, přičemž předchozí dohody o víceletém finančním rámci trvaly od návrhu Komise 20 až 26 měsíců, kdežto dohoda v prosinci 2026 by přišla zhruba po 17 měsících. Dohodu by letos mohl přinést jen průlom nad novým vyjednávacím návrhem Antónia Costy na mimořádném summitu 26. listopadu nebo na prosincové Evropské radě."
+    }
+   ],
+   "result": null
+  }
+ ]
+}

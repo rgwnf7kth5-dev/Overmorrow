@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate } from './lib.mjs';
+import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds } from './lib.mjs';
 
 const cfg = loadConfig();
 const errors = [];
@@ -64,6 +64,27 @@ function checkStory(s, sw, ed) {
   for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
 }
 
+// Structured ensemble record (edition No. 4 on): five independent forecasters, combined by the geometric mean of odds.
+function checkForecast(c, cw) {
+  const f = c.forecast;
+  if (!f || !Array.isArray(f.agents)) return err(cw, 'forecast.agents missing: record every forecaster (role, model, p)');
+  const roles = new Set(f.agents.map((a) => a.role));
+  for (const r of cfg.ensemble_roles) if (!roles.has(r)) err(cw, `forecast.agents lacks the ${r} forecaster`);
+  for (const a of f.agents) if (typeof a.p !== 'number' || a.p <= 0 || a.p >= 1 || !nonEmpty(a.model)) err(cw, `forecast agent ${a.role}: needs model and 0 < p < 1`);
+  if (f.agents.length && f.agents.every((a) => typeof a.p === 'number' && a.p > 0 && a.p < 1)) {
+    const g = geoMeanOdds(f.agents.map((a) => a.p));
+    if (Math.abs((f.combined ?? -1) - g) > 0.006) err(cw, `forecast.combined must be the geometric mean of odds (${g.toFixed(3)})`);
+    const expect = Math.round(Math.min(cfg.probability_max, Math.max(cfg.probability_min, g)) * 100) / 100;
+    if (Math.abs(c.probability - expect) > 0.005 && !nonEmpty(f.adjustment)) err(cw, `probability ${c.probability} differs from the ensemble (${expect}); explain in forecast.adjustment`);
+  }
+  if (f.market) {
+    if (typeof f.market.p !== 'number' || !/^https?:\/\//.test(f.market.url || '') || !isStamp(f.market.read_at)) err(cw, 'forecast.market needs p, url and read_at');
+    else if (Math.abs(c.probability - f.market.p) > cfg.market_departure_flag && !nonEmpty(f.market_note)) err(cw, `departs from the market (${f.market.p}) by more than ${cfg.market_departure_flag}; explain in forecast.market_note`);
+  }
+  if (f.base_rate && (typeof f.base_rate.rate !== 'number' || !nonEmpty(f.base_rate.class))) err(cw, 'forecast.base_rate needs class and rate');
+  if (!nonEmpty(f.dossier)) err(cw, 'forecast.dossier: path of the research dossier (data/dossiers/...)');
+}
+
 function checkClaim(c, cw, frozen) {
     for (const f of ['label', 'text', 'criterion', 'resolution_source']) if (!nonEmpty(c[f])) err(cw, `missing ${f}`);
   if (typeof c.probability !== 'number' || c.probability < cfg.probability_min || c.probability > cfg.probability_max)
@@ -72,6 +93,7 @@ function checkClaim(c, cw, frozen) {
   else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');
   if (!['official', 'reported', 'speculative'].includes(c.schedule)) err(cw, 'schedule must be official, reported or speculative');
   if (c.schedule === 'speculative' && c.story.size === 'lead') err(cw, 'speculative events cannot lead the paper');
+  if (c.edition && !c.edition.pilot && c.edition.number >= QUALITY_FROM && !c.added) checkForecast(c, cw);
 }
 
 const editions = loadEditions({ merged: false });
@@ -111,6 +133,23 @@ for (const ed of editions) {
   for (const [set, sum] of sets) if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
 
   if (ed.number >= QUALITY_FROM) {
+    const all = claimsOf(ed);
+    const extreme = all.filter((c) => c.probability < cfg.extreme_below || c.probability > cfg.extreme_above).length;
+    if (all.length && extreme / all.length > cfg.extreme_share_max) err(w, `${extreme} of ${all.length} claims are below ${cfg.extreme_below} or above ${cfg.extreme_above}; at most ${Math.round(cfg.extreme_share_max * 100)}% may be: target the uncertain part`);
+    for (const st of ed.stories || []) if (!['cz', 'europe', 'world'].includes(st.scope)) err(`${w} story ${st.id}`, 'scope must be cz, europe or world');
+    const cz = (ed.stories || []).filter((st) => st.scope === 'cz');
+    if (cz.length < cfg.cz_stories_min) err(w, `${cz.length} Czech stories; the Czech edition needs at least ${cfg.cz_stories_min}`);
+    if (!(ed.meta?.candidates >= cfg.candidate_pool_min)) err(w, `meta.candidates must record a pool of at least ${cfg.candidate_pool_min}`);
+    const lay = ed.cs?.layout;
+    if (!lay) err(w, 'cs.layout missing: the Czech edition has its own front page and sections (Domov first)');
+    else {
+      const placed = [lay.front?.lead, ...(lay.front?.rail || []), ...(lay.sections || []).flatMap((x) => x.stories || [])];
+      for (const id of ids) if (placed.filter((x) => x === id).length !== 1) err(w, `cs.layout must place story ${id} exactly once`);
+      for (const id of placed) if (!ids.has(id)) err(w, `cs.layout refers to unknown story ${id}`);
+      for (const id of lay.front?.rail || []) if ((ed.stories || []).find((x) => x.id === id)?.scope !== 'cz') err(w, `cs.layout rail story ${id} must be Czech (scope cz)`);
+      const first = (lay.sections || [])[0];
+      if (!first || !(first.stories || []).every((id) => (ed.stories || []).find((x) => x.id === id)?.scope === 'cz')) err(w, 'the first Czech section must be Domov, with Czech stories only');
+    }
     const railWords = (ed.front?.rail || []).map((id) => words((ed.stories || []).find((x) => x.id === id)?.body || []));
     const leadWords = words((ed.stories || []).find((x) => x.id === ed.front?.lead)?.body || []);
     if (railWords.some((n) => n > leadWords)) err(w, 'a rail story is longer than the lead');
@@ -134,7 +173,7 @@ for (const ed of editions) {
   const referenced = [ed.front?.lead, ...(ed.front?.rail || []), ...(ed.sections || []).flatMap((s) => s.stories)];
   for (const id of referenced) if (!ids.has(id)) err(w, `layout refers to unknown story ${id}`);
   for (const id of ids) if (!referenced.includes(id)) err(w, `story ${id} is not placed in front or sections`);
-  if (!ed.pilot) {
+  if (!ed.pilot && ed.number >= QUALITY_FROM) {
     const n = ids.size;
     if (n < cfg.stories_min || n > cfg.stories_max) warn(w, `${n} stories; target is ${cfg.stories_min}-${cfg.stories_max}`);
   }
@@ -189,6 +228,50 @@ for (const ed of editions) {
       if (!isStamp(r.resolved_at)) err(rw, `claim ${r.claim}: resolved_at must be an ISO timestamp`);
       const claim = claimsOf(mergeUpdate(ed)).find((c) => c.id === r.claim);
       if (claim && isStamp(r.resolved_at) && Date.parse(r.resolved_at) < Date.parse(claim.resolves_by)) err(rw, `claim ${r.claim}: resolved before its deadline`);
+    }
+  }
+}
+
+// Planning files (evening desk)
+{
+  const fsx = await import('node:fs');
+  const pathx = await import('node:path');
+  const dir = pathx.join(process.cwd(), 'data', 'planning');
+  if (fsx.existsSync(dir)) for (const f of fsx.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+    let d; try { d = JSON.parse(fsx.readFileSync(pathx.join(dir, f), 'utf8')); } catch (e) { err(`planning/${f}`, `invalid JSON: ${e.message}`); continue; }
+    if (f === 'agenda.json') { for (const it of d.items || []) if (!isDate(it.date) || !nonEmpty(it.title) || !/^https?:\/\//.test(it.source || '') || !['cz', 'europe', 'world'].includes(it.scope)) err(`planning/${f}`, `agenda item needs date, title, scope and source URL: ${it.title || '?'}`); continue; }
+    if (d.edition !== f.replace('.json', '')) err(`planning/${f}`, 'edition must equal the file name');
+  }
+}
+
+// Forecast board
+{
+  const wl = loadWatchlist();
+  const seen = new Set();
+  for (const q of wl.questions || []) {
+    const qw = `watchlist ${q.id}`;
+    if (!nonEmpty(q.id) || seen.has(q.id)) err(qw, 'missing or duplicate id');
+    seen.add(q.id);
+    if (!['cz', 'europe', 'world'].includes(q.scope)) err(qw, 'scope must be cz, europe or world');
+    for (const f of ['question', 'question_cs', 'criterion', 'criterion_cs', 'resolution_source']) if (!nonEmpty(q[f])) err(qw, `missing ${f}`);
+    if (!isStamp(q.resolves_by)) err(qw, 'resolves_by must be an ISO timestamp with offset');
+    if (!Array.isArray(q.sources) || new Set(q.sources.map((x) => { try { return new URL(x.url).hostname; } catch { return ''; } }).filter(Boolean)).size < 2) err(qw, 'needs sources from at least two different sites');
+    let prev = 0;
+    for (const h of q.history || []) {
+      if (!isStamp(h.at) || Date.parse(h.at) < prev) err(qw, 'history entries need ISO times in order');
+      prev = Date.parse(h.at);
+      if (typeof h.p !== 'number' || h.p < cfg.probability_min || h.p > cfg.probability_max) err(qw, `history p at ${h.at} out of range`);
+      if (!Array.isArray(h.agents) || h.agents.length < 3) err(qw, `history entry ${h.at}: record the forecasters (at least 3; 5 for a full re-forecast)`);
+      if (!nonEmpty(h.note) || !nonEmpty(h.note_cs)) err(qw, `history entry ${h.at}: note and note_cs required (what changed)`);
+      if (q.resolves_by && Date.parse(h.at) > Date.parse(q.resolves_by)) err(qw, 'history entry after the deadline');
+      if (h.market && typeof h.market.p === 'number' && Math.abs(h.market.p - h.p) > cfg.market_departure_flag && !nonEmpty(h.market_note)) err(qw, `history entry ${h.at}: departs from the market by more than ${cfg.market_departure_flag}; explain in market_note`);
+      if (Array.isArray(h.agents) && h.agents.length && typeof h.combined === 'number') { const g = geoMeanOdds(h.agents.map((a) => a.p)); if (Math.abs(g - h.combined) > 0.006) err(qw, `history entry ${h.at}: combined must be the geometric mean of odds (${g.toFixed(3)})`); }
+    }
+    if (!(q.history || []).length) err(qw, 'needs at least one forecast in history');
+    if (q.result) {
+      if (!['yes', 'no', 'void'].includes(q.result.outcome)) err(qw, 'result.outcome must be yes, no or void');
+      if (!nonEmpty(q.result.note) || (q.result.outcome !== 'void' && !/^https?:\/\//.test(q.result.evidence || ''))) err(qw, 'result needs note and evidence URL');
+      if (!isStamp(q.result.resolved_at)) err(qw, 'result.resolved_at must be an ISO timestamp');
     }
   }
 }

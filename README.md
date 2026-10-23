@@ -5,6 +5,7 @@
 A newspaper written two days ahead, in English (default) and Czech (/cs/), with a one-page A4 print edition of every issue (/print/, /edition/DATE/print/). Each edition reports the scheduled and expected events of the next day as if they had happened, and attaches a probability to every forecast. After the events, each forecast is checked and scored, and the result is stamped onto the archived edition.
 
 - **How it works:** [METHODOLOGY.md](METHODOLOGY.md)
+- **Evening desk (agenda, dossiers, forecast board):** [pipeline/PLANNER.md](pipeline/PLANNER.md)
 - **Producing an edition:** [pipeline/EDITOR.md](pipeline/EDITOR.md)
 - **Afternoon update:** [pipeline/UPDATE.md](pipeline/UPDATE.md)
 - **Scoring an edition:** [pipeline/RESOLVER.md](pipeline/RESOLVER.md)
@@ -16,9 +17,15 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `data/editions/YYYY-MM-DD.json` | One file per edition, named by its date. Never edited after publication. |
 | `data/updates/YYYY-MM-DD.json` | The afternoon update of that edition: revised probabilities and added stories. |
 | `data/resolutions/YYYY-MM-DD.json` | Results for that edition's claims, added as they fall due. Append-only. |
+| `data/corrections/YYYY-MM-DD.json` | Corrections to facts in a published edition's text, shown under the story. |
+| `data/watchlist.json` | The forecast board: standing questions, their full forecast history and results. |
+| `data/planning/` | The evening desk's 14-day agenda and the shortlist for the next edition. |
+| `data/dossiers/YYYY-MM-DD/` | Research dossiers behind each claim of that edition. |
 | `data/postmortems.md` | Reviews of confident misses. |
 | `METHODOLOGY.cs.md` | Czech version of the methodology, shown at /cs/method/. |
-| `pipeline/` | Source registry, reference classes, settings and manuals. |
+| `pipeline/` | Source registry, reference classes, settings and manuals (EDITOR, PLANNER, RESOLVER, UPDATE). |
+| `pipeline/reference-data/` | Base rates computed from data, rebuilt by `scripts/refdata/`. |
+| `scripts/markets.mjs` | Prediction-market lookup (Polymarket, Kalshi, Metaculus with a token). |
 | `scripts/validate.mjs` | Checks all data against the rules. The Netlify build fails on any error. |
 | `scripts/build.mjs` | Generates the site into `dist/`. No dependencies beyond Node 20. |
 | `site/style.css` | The stylesheet. |

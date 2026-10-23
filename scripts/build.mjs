@@ -1,7 +1,7 @@
 // Builds the static site into dist/: English at /, Czech at /cs/. Run: node scripts/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -13,7 +13,7 @@ const T = {
     locale: 'en-GB', prefix: '',
     motto: 'Tomorrow happens. Overmorrow reports it. You read it today.',
     places: 'Prague · Brussels · World',
-    nav: ['Today', 'Archive', 'Accuracy', 'Method'],
+    nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method'],
     other: 'Čeština', otherLang: 'cs',
     forecastEdition: (t) => `Forecast edition · written ${t}`,
     forecastPaper: 'Forecast newspaper',
@@ -53,6 +53,20 @@ const T = {
       secH: 'By section', secCols: ['Section', 'Claims', 'Went our way', 'Brier'],
       trackH: 'Morning edition and afternoon update', trackNote: 'Both versions are frozen and scored on their own. If the afternoon revisions work, their Brier score is lower than the morning one on the same claims.', trackCols: ['Forecasts', 'Claims', 'Brier'], tracks: ['Morning edition, all claims', 'Final forecasts, after updates', 'Revised claims: morning figure', 'Revised claims: afternoon figure'],
       missH: 'Largest misses', missCols: ['Edition', 'Claim', 'Forecast', 'Outcome'], front: 'Front page',
+      benchH: 'Against benchmarks', benchNote: 'Each row compares our Brier score with a benchmark on the same claims. Lower is better. A benchmark only counts where it existed when we froze the forecast.', benchCols: ['Benchmark', 'Claims', 'Ours', 'Benchmark'], bench: { coin: 'Coin toss (50%)', base: 'Base rate of the reference class', market: 'Prediction market at freeze', informative: 'Our informative claims only (15–85%)' },
+      agentH: 'Forecasters in the ensemble', agentNote: 'Brier score of each independent forecaster on the claims it forecast. The published number combines them.', agentCols: ['Forecaster', 'Claims', 'Brier'],
+      roles: { 'base-rate': 'Base rate first', evidence: 'Evidence first', adversarial: 'Adversarial', anchor: 'Model or market anchor', outsider: 'Outsider (other model, dossier only)' },
+      scopeH: 'Czech Republic, Europe and the world', scopeCols: ['Scope', 'Claims', 'Went our way', 'Brier'],
+      watchH: 'Forecast board', watchNote: (n, b) => `${n} resolved question${n === 1 ? '' : 's'}, mean time-averaged Brier ${b}.`,
+    },
+    watch: {
+      h: 'Forecast board', lede: 'Standing questions about the months ahead, each with a deadline and a rule for checking it. We re-forecast them whenever the evidence moves and keep every earlier figure on record.',
+      strip: 'On the forecast board', stripDek: 'Our standing questions, latest figures', all: 'All questions',
+      cols: ['Question', 'Now', 'Change', 'Market', 'Deadline'], since: (d) => `since ${d}`, none: '–',
+      scopes: { cz: 'Czech Republic', europe: 'Europe', world: 'World' },
+      how: 'How it is checked', history: 'History', resolvedH: 'Resolved', resolvedCols: ['Question', 'Final', 'Outcome', 'Time-averaged Brier'],
+      note: 'The time-averaged Brier score counts every hour the question was open, so a forecast that was right early scores better than one that came round at the end. Market: the price of the matching Polymarket or Kalshi contract when we last checked, where one exists.',
+      updated: (t) => `Updated ${t}`,
     },
     notFound: ['Page not found', 'Try <a href="{p}/">today’s edition</a> or the <a href="{p}/archive/">archive</a>.'],
   },
@@ -60,7 +74,7 @@ const T = {
     locale: 'cs-CZ', prefix: '/cs',
     motto: 'Zítra se to stane. Pozítří se o tom píše. Vy to čtete dnes.',
     places: 'Praha · Brusel · Svět',
-    nav: ['Dnes', 'Archiv', 'Přesnost', 'Metoda'],
+    nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda'],
     other: 'English', otherLang: 'en',
     forecastEdition: (t) => `Vydání predikcí · napsáno ${t}`,
     forecastPaper: 'Noviny z pozítří',
@@ -100,6 +114,20 @@ const T = {
       secH: 'Podle rubrik', secCols: ['Rubrika', 'Tvrzení', 'Vyšlo', 'Brier'],
       trackH: 'Ranní vydání a odpolední aktualizace', trackNote: 'Obě verze jsou zamčené a hodnotí se samostatně. Pokud odpolední změny pomáhají, mají na stejných tvrzeních nižší Brierovo skóre než ranní.', trackCols: ['Predikce', 'Tvrzení', 'Brier'], tracks: ['Ranní vydání, všechna tvrzení', 'Konečné predikce po aktualizacích', 'Změněná tvrzení: ranní číslo', 'Změněná tvrzení: odpolední číslo'],
       missH: 'Největší omyly', missCols: ['Vydání', 'Tvrzení', 'Predikce', 'Výsledek'], front: 'Titulní strana',
+      benchH: 'Proti měřítkům', benchNote: 'Každý řádek porovnává naše Brierovo skóre s měřítkem na stejných tvrzeních. Nižší je lepší. Měřítko se počítá jen tam, kde existovalo v okamžiku uzávěrky.', benchCols: ['Měřítko', 'Tvrzení', 'My', 'Měřítko'], bench: { coin: 'Hod mincí (50 %)', base: 'Základní míra referenční třídy', market: 'Predikční trh při uzávěrce', informative: 'Jen naše informativní tvrzení (15–85 %)' },
+      agentH: 'Prognostici v ensemblu', agentNote: 'Brierovo skóre každého nezávislého prognostika na tvrzeních, která odhadoval. Zveřejněné číslo je kombinuje.', agentCols: ['Prognostik', 'Tvrzení', 'Brier'],
+      roles: { 'base-rate': 'Od základní míry', evidence: 'Od nejnovějších zpráv', adversarial: 'Ďáblův advokát', anchor: 'Model nebo trh', outsider: 'Nezávislý (jiný model, jen podklad)' },
+      scopeH: 'Česko, Evropa a svět', scopeCols: ['Oblast', 'Tvrzení', 'Vyšlo', 'Brier'],
+      watchH: 'Sledované otázky', watchNote: (n, b) => `Vyhodnocené otázky: ${n}, průměrné časově vážené Brierovo skóre ${b}.`,
+    },
+    watch: {
+      h: 'Sledované otázky', lede: 'Stálé otázky o nejbližších měsících, každá s termínem a pravidlem, podle kterého se ověří. Předpověď měníme, kdykoli se pohnou podklady, a všechna dřívější čísla zůstávají v záznamu.',
+      strip: 'Sledované otázky', stripDek: 'Naše stálé otázky, poslední čísla', all: 'Všechny otázky',
+      cols: ['Otázka', 'Teď', 'Změna', 'Trh', 'Termín'], since: (d) => `od ${d}`, none: '–',
+      scopes: { cz: 'Česko', europe: 'Evropa', world: 'Svět' },
+      how: 'Jak se to ověří', history: 'Vývoj', resolvedH: 'Vyhodnocené', resolvedCols: ['Otázka', 'Poslední', 'Výsledek', 'Časově vážený Brier'],
+      note: 'Časově vážené Brierovo skóre započítává každou hodinu, po kterou byla otázka otevřená, takže předpověď, která byla správně brzy, dopadne lépe než ta, která se k výsledku dopracovala až na konci. Trh: cena odpovídajícího kontraktu na Polymarketu nebo Kalshi při poslední kontrole, pokud existuje.',
+      updated: (t) => `Aktualizováno ${t}`,
     },
     notFound: ['Stránka nenalezena', 'Zkuste <a href="{p}/">dnešní vydání</a> nebo <a href="{p}/archive/">archiv</a>.'],
   },
@@ -134,11 +162,19 @@ function localise(ed, lang) {
   const c = structuredClone(ed);
   const top = ed.cs || {};
   if (top.weather && c.weather) Object.assign(c.weather, top.weather);
-  if (top.sections) c.sections = c.sections.map((s, i) => ({ ...s, ...(top.sections[i] || {}) }));
+  if (top.layout) { c.front = top.layout.front; c.sections = top.layout.sections; }
+  else if (top.sections) c.sections = c.sections.map((s, i) => ({ ...s, ...(top.sections[i] || {}) }));
   if (top.diary) c.diary = top.diary;
+  // With its own layout, the Czech edition may lead with a story that is small in the English one, and vice versa.
+  const role = new Map();
+  if (top.layout) {
+    role.set(top.layout.front.lead, 'lead');
+    for (const id of top.layout.front.rail || []) role.set(id, 'rail');
+  }
   c.stories = c.stories.map((s) => {
     const x = s.cs || {};
     const out = { ...s };
+    if (top.layout) out.size = role.get(s.id) || (s.size === 'lead' || s.size === 'rail' ? 'half' : s.size);
     for (const k of ['kicker', 'headline', 'standfirst', 'body', 'basis']) if (x[k]) out[k] = x[k];
     if (x.table && s.table) out.table = { caption: x.table.caption || s.table.caption, rows: s.table.rows.map((r, i) => ({ ...r, ...(x.table.rows?.[i] || {}) })) };
     out.claims = s.claims.map((cl) => {
@@ -153,8 +189,8 @@ function localise(ed, lang) {
 
 // ---------- page frame ----------
 function layout(L, { title, nav, header, main, description, path: pagePath }) {
-  const keys = ['today', 'archive', 'accuracy', 'method'];
-  const hrefs = ['/', '/archive/', '/accuracy/', '/method/'];
+  const keys = ['today', 'watch', 'archive', 'accuracy', 'method'];
+  const hrefs = ['/', '/watch/', '/archive/', '/accuracy/', '/method/'];
   const other = T[L.otherLang];
   return `<!doctype html>
 <html lang="${L === T.cs ? 'cs' : 'en'}">
@@ -251,7 +287,7 @@ function storyHtml(story, results, show, L, opts = {}) {
 
 const spanClass = { half: 's6', third: 's4', quarter: 's3' };
 
-function editionMain(original, L) {
+function editionMain(original, L, isLatest = false) {
   const ed = localise(original, L === T.cs ? 'cs' : 'en');
   const results = resultsFor(ed.id);
   const byId = new Map(ed.stories.map((s) => [s.id, s]));
@@ -316,6 +352,7 @@ ${scorebar}
   <div class="frontcol s8">${art(byId.get(ed.front.lead), 'lead')}${frontExtra.map((st) => art(st, 'second', true)).join('')}</div>
   <aside class="rail s4 vr">${rail}${weather}</aside>
   ${sections}
+  ${isLatest ? watchStrip(L) : ''}
   ${diary}
 </main>`;
 }
@@ -437,6 +474,65 @@ td{border-bottom:.2mm solid var(--hair);padding:.3mm 0}td+td{text-align:right}
 `;
 }
 
+// ---------- forecast board ----------
+const SCOPES = { en: ['world', 'europe', 'cz'], cs: ['cz', 'europe', 'world'] };
+const qText = (q, lang, k) => (lang === 'cs' && q[`${k}_cs`]) || q[k];
+const lastH = (q) => (q.history || [])[q.history.length - 1];
+/** Change against the figure in force seven days before the latest entry (or the first figure, if younger). */
+function watchChange(q) {
+  const h = q.history || [];
+  if (h.length < 2) return null;
+  const last = h[h.length - 1];
+  const ref = watchProbAt(q, Date.parse(last.at) - 7 * 864e5) ?? h[0].p;
+  return last.p - ref;
+}
+const signed = (d, L) => (d === null ? '' : d === 0 ? '±0' : `${d > 0 ? '+' : '−'}${Math.round(Math.abs(d) * 100)}`);
+function sparkline(q) {
+  const h = q.history || [];
+  if (h.length < 2) return '';
+  const t0 = Date.parse(h[0].at), t1 = Math.max(Date.parse(h[h.length - 1].at), t0 + 1);
+  const W = 90, H = 22, x = (t) => ((t - t0) / (t1 - t0)) * W, y = (p) => H - p * H;
+  let d = '';
+  h.forEach((e, i) => { const X = x(Date.parse(e.at)).toFixed(1), Y = y(e.p).toFixed(1); d += i ? ` H${X} V${Y}` : `M${X} ${Y}`; });
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><line x1="0" y1="${H / 2}" x2="${W}" y2="${H / 2}" stroke="#d6d3cd"/><path d="${d}" fill="none" stroke="#1f3a5f" stroke-width="1.6"/></svg>`;
+}
+function watchRow(q, L, lang, full) {
+  const W = L.watch, last = lastH(q);
+  const m = last?.market;
+  const ch = watchChange(q);
+  const details = full ? `<details class="check"><summary>${W.how}</summary><p><b>${esc(qText(q, lang, 'question'))}</b> ${esc(qText(q, lang, 'criterion'))} ${L.deadline}: ${esc(fmtStamp(q.resolves_by, L))}.</p>${last?.note ? `<p>${esc(qText(last, lang, 'note'))}</p>` : ''}${last?.market_note ? `<p>${esc(qText(last, lang, 'market_note'))}</p>` : ''}<p class="basis">${W.history}: ${(q.history || []).map((h) => `${fmtDate(h.at.slice(0, 10), L, { day: 'numeric', month: 'numeric' })} ${pctNum(h.p, L)}`).join(' · ')}${(q.sources || []).length ? `. ${L.sources}: ${q.sources.map((x) => `<a href="${esc(x.url)}">${esc(x.title)}</a>`).join('; ')}` : ''}.</p></details>` : '';
+  return `<tr><td><span class="wq">${esc(qText(q, lang, 'question'))}</span>${details}</td><td class="n"><b>${last ? pctNum(last.p, L) : '–'}</b>${sparkline(q)}</td><td class="n ch${ch > 0 ? ' up' : ch < 0 ? ' down' : ''}">${signed(ch, L)}</td><td class="n">${m && m.p !== null && m.p !== undefined ? `<a href="${esc(m.url)}">${pctNum(m.p, L)}</a>` : W.none}</td><td class="n">${fmtDate(q.resolves_by.slice(0, 10), L, { day: 'numeric', month: 'short' })}</td></tr>`;
+}
+function watchTable(list, L, lang, full) {
+  const W = L.watch;
+  return `<div class="tbl"><table class="watch"><thead><tr><th>${W.cols[0]}</th><th class="n">${W.cols[1]}</th><th class="n">${W.cols[2]}</th><th class="n">${W.cols[3]}</th><th class="n">${W.cols[4]}</th></tr></thead><tbody>${list.map((q) => watchRow(q, L, lang, full)).join('')}</tbody></table></div>`;
+}
+function watchPage(L) {
+  const lang = L === T.cs ? 'cs' : 'en', W = L.watch;
+  const qs = loadWatchlist().questions || [];
+  const open = qs.filter((q) => !q.result), done = qs.filter((q) => q.result);
+  const latest = qs.flatMap((q) => q.history || []).map((h) => h.at).sort().pop();
+  let out = `<div class="prose wide"><h1>${W.h}</h1><p class="lede">${W.lede}</p>${latest ? `<p class="note">${W.updated(fmtStamp(latest, L))}</p>` : ''}`;
+  for (const sc of SCOPES[lang]) {
+    const list = open.filter((q) => q.scope === sc).sort((a, b) => a.resolves_by.localeCompare(b.resolves_by));
+    if (list.length) out += `<h2>${W.scopes[sc]}</h2>${watchTable(list, L, lang, true)}`;
+  }
+  if (done.length) {
+    out += `<h2>${W.resolvedH}</h2><div class="tbl"><table><thead><tr>${W.resolvedCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${done.map((q) => { const sc = watchScore(q); return `<tr><td>${esc(qText(q, lang, 'question'))}${q.result.evidence ? ` <a href="${esc(q.result.evidence)}">${L.evidence}</a>` : ''}</td><td class="n">${sc ? pctNum(sc.final, L) : '–'}</td><td class="n">${L.stamp[q.result.outcome]}</td><td class="n">${sc ? num3(sc.brier, L) : '–'}</td></tr>`; }).join('')}</tbody></table></div>`;
+  }
+  return `${out}<p class="note">${W.note}</p></div>`;
+}
+/** Front-page strip: six open questions, home scope first, biggest recent movers and nearest deadlines. */
+function watchStrip(L) {
+  const lang = L === T.cs ? 'cs' : 'en', W = L.watch;
+  const open = (loadWatchlist().questions || []).filter((q) => !q.result && (q.history || []).length);
+  if (!open.length) return '';
+  const rank = (q) => Math.abs(watchChange(q) || 0) * 3 + 1 / (1 + (Date.parse(q.resolves_by) - Date.now()) / 864e5 / 30);
+  const pick = [];
+  for (const sc of SCOPES[lang]) pick.push(...open.filter((q) => q.scope === sc).sort((a, b) => rank(b) - rank(a)).slice(0, 2));
+  return `<div class="section"><h2>${W.strip}</h2><span>${W.stripDek} · <a href="${link(L, '/watch/')}">${W.all}</a></span></div><div class="s12">${watchTable(pick, L, lang, false)}</div>`;
+}
+
 // ---------- archive ----------
 function archivePage(editions, L) {
   const A = L.archive;
@@ -472,6 +568,28 @@ function trackBlock(editions, L) {
   const revM = morning.filter(isRev), revA = latest.filter(isRev);
   const row = (label, rows) => { const x = summarise(rows); return `<tr><td>${label}</td><td class="n">${x ? x.n : 0}</td><td class="n">${x ? num3(x.brier, L) : '–'}</td></tr>`; };
   return `<h2>${A.trackH}</h2><p>${A.trackNote}</p><div class="tbl"><table><thead><tr><th>${A.trackCols[0]}</th><th class="n">${A.trackCols[1]}</th><th class="n">${A.trackCols[2]}</th></tr></thead><tbody>${row(A.tracks[0], morning)}${row(A.tracks[1], latest)}${row(A.tracks[2], revM)}${row(A.tracks[3], revA)}</tbody></table></div>`;
+}
+
+/** Benchmarks, forecasters, scope and the forecast board, from the structured forecast records (edition No. 4 on). */
+function benchBlocks(rows, L) {
+  const A = L.acc;
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const line = (label, list, other) => (list.length ? `<tr><td>${label}</td><td class="n">${list.length}</td><td class="n">${num3(mean(list.map((r) => brier(r.probability, r.outcome))), L)}</td><td class="n">${num3(mean(list.map((r) => brier(other(r), r.outcome))), L)}</td></tr>` : '');
+  const withBase = rows.filter((r) => typeof r.forecast?.base_rate?.rate === 'number');
+  const withMarket = rows.filter((r) => typeof r.forecast?.market?.p === 'number');
+  const informative = rows.filter((r) => r.probability >= 0.15 && r.probability <= 0.85);
+  let out = `<h2>${A.benchH}</h2><p>${A.benchNote}</p><div class="tbl"><table><thead><tr>${A.benchCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${line(A.bench.coin, rows, () => 0.5)}${line(A.bench.base, withBase, (r) => r.forecast.base_rate.rate)}${line(A.bench.market, withMarket, (r) => r.forecast.market.p)}${line(A.bench.informative, informative, () => 0.5)}</tbody></table></div>`;
+  const byRole = new Map();
+  for (const r of rows) for (const a of r.forecast?.agents || []) { if (!byRole.has(a.role)) byRole.set(a.role, []); byRole.get(a.role).push(brier(a.p, r.outcome)); }
+  if (byRole.size) out += `<h2>${A.agentH}</h2><p>${A.agentNote}</p><div class="tbl"><table><thead><tr>${A.agentCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${[...byRole].map(([role, xs]) => `<tr><td>${esc(A.roles[role] || role)}</td><td class="n">${xs.length}</td><td class="n">${num3(mean(xs), L)}</td></tr>`).join('')}</tbody></table></div>`;
+  const scoped = rows.filter((r) => r.story.scope);
+  if (scoped.length) {
+    const names = L.watch.scopes;
+    out += `<h2>${A.scopeH}</h2><div class="tbl"><table><thead><tr>${A.scopeCols.map((c, i) => `<th${i ? ' class="n"' : ''}>${c}</th>`).join('')}</tr></thead><tbody>${['cz', 'europe', 'world'].map((sc) => { const x = summarise(scoped.filter((r) => r.story.scope === sc)); return x ? `<tr><td>${names[sc]}</td><td class="n">${x.n}</td><td class="n">${x.hits}</td><td class="n">${num3(x.brier, L)}</td></tr>` : ''; }).join('')}</tbody></table></div>`;
+  }
+  const done = (loadWatchlist().questions || []).map(watchScore).filter(Boolean);
+  if (done.length) out += `<h2>${A.watchH}</h2><p>${A.watchNote(done.length, num3(mean(done.map((x) => x.brier)), L))} <a href="${link(L, '/watch/')}">${L.watch.all}</a></p>`;
+  return out;
 }
 
 function accuracyPage(editions, L) {
@@ -510,6 +628,7 @@ function accuracyPage(editions, L) {
 <div class="tbl"><table><thead><tr><th>${A.calCols[0]}</th><th class="n">${A.calCols[1]}</th><th class="n">${A.calCols[2]}</th><th class="n">${A.calCols[3]}</th></tr></thead><tbody>${bins.filter((b) => b.n).map((b) => `<tr><td>${b.label}</td><td class="n">${b.n}</td><td class="n">${pctNum(b.meanP, L)}</td><td class="n">${pctNum(b.freq, L)}</td></tr>`).join('')}</tbody></table></div>
 <h2>${A.secH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
+${benchBlocks(rows, L)}
 ${trackBlock(editions, L)}
 <h2>${A.missH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.missCols[0]}</th><th>${A.missCols[1]}</th><th class="n">${A.missCols[2]}</th><th>${A.missCols[3]}</th></tr></thead><tbody>${worst}</tbody></table></div>
@@ -563,7 +682,7 @@ for (const lang of LANGS) {
   for (const ed of editions) {
     const header = masthead(L, ed, null, link(L, `/edition/${ed.id}/print/`));
     write(`${pre}edition/${ed.id}/print/index.html`, printPage(ed, L));
-    const main = editionMain(ed, L);
+    const main = editionMain(ed, L, ed === latest);
     const p = `/edition/${ed.id}/`;
     write(`${pre}edition/${ed.id}/index.html`, layout(L, { title: `The Overmorrow — ${fmtDate(ed.edition_date, L, { day: 'numeric', month: 'long', year: 'numeric' })}`, nav: ed === latest ? 'today' : 'archive', header, main, path: p }));
     if (ed === latest) {
@@ -572,11 +691,12 @@ for (const lang of LANGS) {
     }
   }
   const plain = masthead(L, null, latest.edition_date);
+  write(`${pre}watch/index.html`, layout(L, { title: `${L.watch.h} — The Overmorrow`, nav: 'watch', header: plain, main: watchPage(L), path: '/watch/' }));
   write(`${pre}archive/index.html`, layout(L, { title: `${L.archive.h} — The Overmorrow`, nav: 'archive', header: plain, main: archivePage(editions, L), path: '/archive/' }));
   write(`${pre}accuracy/index.html`, layout(L, { title: `${L.acc.h} — The Overmorrow`, nav: 'accuracy', header: plain, main: accuracyPage(editions, L), path: '/accuracy/' }));
   const mdFile = path.join(ROOT, lang === 'en' ? 'METHODOLOGY.md' : 'METHODOLOGY.cs.md');
   const method = fs.readFileSync(fs.existsSync(mdFile) ? mdFile : path.join(ROOT, 'METHODOLOGY.md'), 'utf8');
-  write(`${pre}method/index.html`, layout(L, { title: `${L.nav[3]} — The Overmorrow`, nav: 'method', header: plain, main: `<div class="prose">${md(method)}</div>`, path: '/method/' }));
+  write(`${pre}method/index.html`, layout(L, { title: `${L.nav[4]} — The Overmorrow`, nav: 'method', header: plain, main: `<div class="prose">${md(method)}</div>`, path: '/method/' }));
   write(`${pre}404.html`, layout(L, { title: `${L.notFound[0]} — The Overmorrow`, nav: '', header: plain, main: `<div class="prose"><h1>${L.notFound[0]}</h1><p>${fill(L.notFound[1], L)}</p></div>`, path: '/' }));
 }
 

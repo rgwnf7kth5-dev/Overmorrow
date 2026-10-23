@@ -8,10 +8,11 @@ This document is the full protocol. The step-by-step operating manuals for the p
 
 ## 1. Timing
 
-One run every morning does both jobs: it first scores whatever has fallen due, then writes and publishes the new edition. A second, shorter run after midday updates that edition with what has become known since the morning (section 4.8).
+An evening desk the day before does the slow work: it keeps a 14-day agenda, selects the candidates, writes a research dossier for every proposed claim, runs the first round of forecasts and updates the forecast board (section 10). The morning run then scores whatever has fallen due, checks what changed overnight, re-forecasts what moved, and writes and publishes the new edition. A shorter run after midday updates that edition with what has become known since the morning (section 4.8).
 
 | Step | When (Europe/Paris) |
 |---|---|
+| Evening desk: agenda, dossiers, first forecasts, forecast board | About 18:40 on day D−1 |
 | Morning run starts | About 05:00 on day D |
 | Claims due are resolved and stamped onto archived editions | First part of the run |
 | Information cut-off and freeze | Early morning of day D, recorded as `frozen_at` |
@@ -83,7 +84,7 @@ Each claim goes through the same protocol. All steps are recorded in the edition
 
 ### 4.1 Outside view first
 
-Find the reference class: the set of comparable past cases. Examples: "trilogue agreements put to a final plenary vote in the 10th term", "budget first readings with a coalition majority in the Czech Chamber", "runoff polls within two points four days before a vote". Record the base rate and the size of the class. The library of reference classes in [`pipeline/reference-classes.json`](pipeline/reference-classes.json) grows with every edition.
+Find the reference class: the set of comparable past cases. Examples: "trilogue agreements put to a final plenary vote in the 10th term", "budget first readings with a coalition majority in the Czech Chamber", "runoff polls within two points four days before a vote". Record the base rate and the size of the class. Base rates come from data wherever possible: [`pipeline/reference-data/`](pipeline/reference-data/README.md) holds rates computed from the Czech Chamber's open voting records, the record of final polls against election results, and central-bank decisions, with the scripts that rebuild them. The library of reference classes in [`pipeline/reference-classes.json`](pipeline/reference-classes.json) grows with every edition.
 
 ### 4.2 Inside view
 
@@ -91,17 +92,21 @@ List the specific factors that move this case away from the base rate: vote arit
 
 ### 4.3 External signals
 
-Where they exist, use independent aggregates: prediction markets (weighted by liquidity), polling averages rather than single polls, bookmaker odds, analyst consensus for data releases. A forecast that departs from a liquid market by more than 15 percentage points needs a written reason.
+Where they exist, use independent aggregates: prediction markets (Polymarket, Kalshi; weighted by liquidity), Metaculus community forecasts, polling averages rather than single polls, analyst consensus for data releases. The price read at the time of forecasting is stored with the claim and used as a benchmark in scoring. A forecast that departs from a liquid market by more than 15 percentage points needs a written reason.
 
 ### 4.4 Independent ensemble
 
-Three forecasters work on each claim without seeing each other's numbers:
+Each claim starts from a research dossier: the confirmed schedule, dated facts with their sources, the base rate, matching markets and the risks, but no probability. Five forecasters then work on it without seeing each other's numbers:
 
-- **A, base-rate first**: starts from the reference class and adjusts conservatively;
-- **B, evidence first**: starts from the latest reporting and signals;
-- **C, adversarial**: looks specifically for reasons the obvious outcome fails (postponement, procedural traps, late shifts).
+- **Base rate first**: starts from the reference class and adjusts conservatively;
+- **Evidence first**: starts from the latest reporting and signals;
+- **Adversarial**: looks specifically for reasons the obvious outcome fails (postponement, procedural traps, late shifts);
+- **Anchor**: starts from a quantitative anchor, a liquid market or a statistical model (poll error, vote arithmetic, consensus and the usual size of surprises), and moves away from it only for stated reasons;
+- **Outsider**: a different model with the dossier only, as a check on blind spots the others share.
 
-The three probabilities are combined by the geometric mean of odds. If they differ by more than 25 percentage points, the claim goes back for review: either the forecasters saw different facts (which are then shared and the round repeated), or the claim is badly framed and is rewritten.
+The five probabilities are combined by the geometric mean of odds. If they differ by more than 25 percentage points, all five receive the union of the facts (without the numbers) and forecast again once; if they still differ, the evidence is reported as mixed, or the claim is rewritten. Every forecaster's number is stored with the claim and scored separately, so that once enough claims are resolved the forecasters can be weighted by their record.
+
+Claims are chosen for their information value: at most a quarter of an edition's claims may lie below 10% or above 90%.
 
 ### 4.5 Red team
 
@@ -149,7 +154,9 @@ If the criterion is ambiguous, the resolver applies the reading a neutral observ
 - **Log score** is kept alongside, because it punishes confident misses more heavily.
 - **Calibration**: claims grouped by probability band (for example 60–70%) and compared with how often they came true.
 - **Breakdowns** by section and by schedule status.
-- **Benchmarks**: the 50% baseline, and the prediction-market price at freeze time where one existed.
+- **Benchmarks**: the 50% baseline, the base rate of the reference class, and the prediction-market price at freeze time where one existed; our informative claims (15–85%) are also scored on their own.
+- **Forecasters**: the Brier score of each of the five ensemble roles.
+- **Scope**: Czech, European and world claims separately.
 
 Void claims are listed but not scored.
 
@@ -166,3 +173,7 @@ On the archived edition, each scored story and stamp is coloured on a scale from
 During the launch period each morning's run is prepared as a pull request and goes live when the publisher approves it; Netlify builds a preview of each pull request for review. The approval period is set in [`pipeline/config.json`](pipeline/config.json). After it ends, the run publishes by itself by 06:00.
 
 Edition No. 1 was produced before this protocol was complete and is marked as a pilot. It is scored like every other edition.
+
+## 10. The forecast board
+
+Besides the daily edition, the paper keeps a board of 25 to 40 standing questions about the months ahead: elections and government formation, budgets, central-bank decisions, wars and negotiations, at least a third of them Czech. Each has an exact criterion, a deadline and a primary source, like any claim. The evening desk checks them every day and re-forecasts them with the full ensemble whenever something material happens, and at least weekly; a new figure is recorded only if it moves by 5 points or more. Earlier figures are never changed, so the history shows how each forecast developed. Resolved questions are scored by the time-averaged Brier score: every hour the question was open counts, so being right early is worth more than being right at the end. When a daily story moves a board question, the story says so.

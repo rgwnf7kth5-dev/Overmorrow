@@ -148,3 +148,13 @@ footer h4{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacin
 .lk.rev small{font-size:11.5px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
 .why{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);margin:-4px 0 10px}
 .addtag{background:var(--accent);color:var(--paper);padding:1px 6px;letter-spacing:.06em}
+
+/* Forecast board */
+.prose.wide{max-width:1100px}
+table.watch td{vertical-align:top}
+table.watch .wq{display:block}
+table.watch td.n b{display:block;font-size:17px}
+.spark{display:block;margin:4px 0 0 auto}
+td.ch{font-family:var(--sans);font-variant-numeric:tabular-nums}
+td.ch.up{color:var(--yes)}td.ch.down{color:var(--no)}
+table.watch details.check{margin-top:4px}

@@ -7,6 +7,7 @@ export const EDITIONS_DIR = path.join(ROOT, 'data', 'editions');
 export const RESOLUTIONS_DIR = path.join(ROOT, 'data', 'resolutions');
 export const UPDATES_DIR = path.join(ROOT, 'data', 'updates');
 export const CORRECTIONS_DIR = path.join(ROOT, 'data', 'corrections');
+export const WATCHLIST_FILE = path.join(ROOT, 'data', 'watchlist.json');
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 
@@ -140,4 +141,36 @@ export function summarise(rows) {
   const l = rows.reduce((s, r) => s + logLoss(r.probability, r.outcome), 0) / n;
   const hits = rows.filter((r) => (r.probability > 0.5) === (r.outcome === 'yes')).length;
   return { n, brier: b, log: l, hits };
+}
+
+/** Geometric mean of odds, the ensemble combination rule (METHODOLOGY 4.4). */
+export function geoMeanOdds(ps) {
+  const lo = ps.reduce((a, p) => a + Math.log(p / (1 - p)), 0) / ps.length;
+  return 1 / (1 + Math.exp(-lo));
+}
+
+/** The forecast board: standing questions with longer horizons, re-forecast as evidence changes. */
+export function loadWatchlist() {
+  return fs.existsSync(WATCHLIST_FILE) ? readJson(WATCHLIST_FILE) : { questions: [] };
+}
+
+/** Probability in force for a watch question at a given time (the last history entry at or before it). */
+export function watchProbAt(q, t) {
+  let p = null;
+  for (const h of q.history || []) if (Date.parse(h.at) <= t) p = h.p;
+  return p;
+}
+
+/**
+ * Time-averaged Brier score of a resolved watch question: the mean, over every hour from the first forecast to the
+ * resolution, of the Brier score of the probability then in force. Rewards being right early, as Metaculus does.
+ */
+export function watchScore(q) {
+  if (!q.result || !['yes', 'no'].includes(q.result.outcome) || !(q.history || []).length) return null;
+  const start = Date.parse(q.history[0].at);
+  const end = Math.min(Date.parse(q.result.resolved_at || q.resolves_by), Date.parse(q.resolves_by));
+  if (!(end > start)) return { brier: brier(q.history[0].p, q.result.outcome), final: q.history[q.history.length - 1].p };
+  let sum = 0, n = 0;
+  for (let t = start; t <= end; t += 3600e3) { sum += brier(watchProbAt(q, t), q.result.outcome); n++; }
+  return { brier: sum / n, final: watchProbAt(q, end) };
 }

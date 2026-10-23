@@ -8,10 +8,11 @@ Tento dokument popisuje celý postup. Podrobné pracovní návody pro lidi a age
 
 ## 1. Časový rozvrh
 
-Jeden běh každé ráno udělá obě práce: nejdřív vyhodnotí, co je splatné, pak napíše a vydá nové vydání. Druhý, kratší běh po poledni vydání aktualizuje o to, co se od rána dozvíme (oddíl 4.8).
+Večerní redakce den předem odvede pomalou práci: vede výhled na 14 dní, vybírá kandidáty, ke každému navrženému tvrzení sepíše podklad (dossier), provede první kolo predikcí a aktualizuje sledované otázky (oddíl 10). Ranní běh pak vyhodnotí, co je splatné, zkontroluje, co se změnilo přes noc, znovu odhadne, co se pohnulo, a napíše a vydá nové vydání. Kratší běh po poledni vydání aktualizuje o to, co se od rána dozvíme (oddíl 4.8).
 
 | Krok | Kdy (středoevropský čas) |
 |---|---|
+| Večerní redakce: výhled, podklady, první predikce, sledované otázky | Kolem 18:40 dne D−1 |
 | Začátek ranního běhu | Kolem 5:00 dne D |
 | Vyhodnocení splatných tvrzení a razítka v archivu | První část běhu |
 | Uzávěrka informací | Brzy ráno dne D, zapsaná jako `frozen_at` |
@@ -83,7 +84,7 @@ Každé tvrzení projde stejným postupem. Všechny kroky se zapisují do soubor
 
 ### 4.1 Nejdřív pohled zvenku
 
-Najít referenční třídu: soubor srovnatelných minulých případů. Například „dohody z trialogu předložené ke konečnému hlasování v 10. volebním období“, „první čtení rozpočtu při koaliční většině ve Sněmovně“, „průzkumy před druhým kolem s rozdílem do dvou bodů čtyři dny před volbami“. Zapsat základní četnost a velikost třídy. Knihovna referenčních tříd v [`pipeline/reference-classes.json`](pipeline/reference-classes.json) s každým vydáním roste.
+Najít referenční třídu: soubor srovnatelných minulých případů. Například „dohody z trialogu předložené ke konečnému hlasování v 10. volebním období“, „první čtení rozpočtu při koaliční většině ve Sněmovně“, „průzkumy před druhým kolem s rozdílem do dvou bodů čtyři dny před volbami“. Zapsat základní četnost a velikost třídy. Základní četnosti se kde to jde berou z dat: [`pipeline/reference-data/`](pipeline/reference-data/README.md) obsahuje četnosti spočtené z otevřených dat o hlasování ve Sněmovně, z porovnání posledních průzkumů s výsledky voleb a z rozhodnutí centrálních bank, i se skripty, které je přepočítají. Knihovna referenčních tříd v [`pipeline/reference-classes.json`](pipeline/reference-classes.json) s každým vydáním roste.
 
 ### 4.2 Pohled zevnitř
 
@@ -91,17 +92,21 @@ Vypsat konkrétní faktory, které tento případ od základní četnosti posouv
 
 ### 4.3 Vnější signály
 
-Kde existují, použít nezávislé agregáty: predikční trhy (vážené podle likvidity), průměry průzkumů místo jednotlivých průzkumů, kurzy sázkových kanceláří, konsenzus analytiků u statistických dat. Predikce, která se od likvidního trhu liší o víc než 15 procentních bodů, musí mít písemné zdůvodnění.
+Kde existují, použít nezávislé agregáty: predikční trhy (Polymarket, Kalshi; vážené podle likvidity), komunitní predikce Metaculus, průměry průzkumů místo jednotlivých průzkumů, konsenzus analytiků u statistických dat. Cena v okamžiku predikce se ukládá k tvrzení a slouží jako měřítko při hodnocení. Predikce, která se od likvidního trhu liší o víc než 15 procentních bodů, musí mít písemné zdůvodnění.
 
 ### 4.4 Nezávislý tým
 
-Na každém tvrzení pracují tři prognostici, kteří nevidí čísla ostatních:
+Každé tvrzení začíná podkladem (dossierem): potvrzený termín, datovaná fakta se zdroji, základní četnost, odpovídající trhy a rizika, ale žádná pravděpodobnost. Pak na něm pracuje pět prognostiků, kteří nevidí čísla ostatních:
 
-- **A, od základní četnosti**: začne referenční třídou a upravuje opatrně;
-- **B, od důkazů**: začne nejnovějším zpravodajstvím a signály;
-- **C, oponent**: cíleně hledá důvody, proč samozřejmý výsledek nenastane (odklad, procedurální pasti, pozdní obraty).
+- **Od základní četnosti**: začne referenční třídou a upravuje opatrně;
+- **Od důkazů**: začne nejnovějším zpravodajstvím a signály;
+- **Oponent**: cíleně hledá důvody, proč samozřejmý výsledek nenastane (odklad, procedurální pasti, pozdní obraty);
+- **Kotva**: začne kvantitativní kotvou, likvidním trhem nebo statistickým modelem (chyba průzkumů, aritmetika hlasů, konsenzus a obvyklá velikost překvapení), a odchýlí se od ní jen ze zapsaných důvodů;
+- **Nezávislý**: jiný model, který má jen podklad, jako kontrola slepých míst, která ostatní sdílejí.
 
-Tři pravděpodobnosti se spojí geometrickým průměrem šancí. Když se liší o víc než 25 procentních bodů, tvrzení se vrátí: buď prognostici viděli různá fakta (ta se sdílí a kolo se opakuje), nebo je tvrzení špatně formulované a přepíše se.
+Pět pravděpodobností se spojí geometrickým průměrem šancí. Když se liší o víc než 25 procentních bodů, všech pět dostane souhrn faktů (bez čísel) a odhadne znovu; když se liší i pak, uvedeme, že podklady jsou smíšené, nebo se tvrzení přepíše. Číslo každého prognostika se ukládá k tvrzení a hodnotí se zvlášť, aby šlo po vyhodnocení dostatku tvrzení prognostiky vážit podle jejich výsledků.
+
+Tvrzení vybíráme podle jejich informační hodnoty: nejvýš čtvrtina tvrzení vydání smí ležet pod 10 % nebo nad 90 %.
 
 ### 4.5 Red team
 
@@ -150,7 +155,9 @@ Když je kritérium nejednoznačné, použije se výklad, který by neutrální 
 - **Logaritmické skóre** se vede souběžně, protože víc trestá sebejisté omyly.
 - **Kalibrace**: tvrzení se seskupí podle pásma pravděpodobnosti (například 60–70 %) a porovná se, jak často se splnila.
 - **Rozpad** podle rubrik a podle stavu termínu.
-- **Srovnání** se základní linií 50 % a s cenou na predikčním trhu v okamžiku uzávěrky, pokud existovala.
+- **Srovnání** se základní linií 50 %, se základní četností referenční třídy a s cenou na predikčním trhu v okamžiku uzávěrky, pokud existovala; naše informativní tvrzení (15–85 %) se hodnotí i samostatně.
+- **Prognostici**: Brierovo skóre každé z pěti rolí v týmu.
+- **Oblast**: tvrzení o Česku, Evropě a světě zvlášť.
 
 Neplatná tvrzení se uvádějí, ale nehodnotí.
 
@@ -167,3 +174,7 @@ V archivovaném vydání je každá vyhodnocená zpráva i razítko obarvené na
 V úvodním období se každý ranní běh připraví jako pull request a na web jde, až ho vydavatel schválí; Netlify ke každému pull requestu sestaví náhled. Délka tohoto období je v [`pipeline/config.json`](pipeline/config.json). Potom běh vydává sám do 6:00.
 
 Vydání č. 1 vzniklo před dokončením tohoto postupu a je označené jako pilotní. Hodnotí se stejně jako všechna ostatní.
+
+## 10. Sledované otázky
+
+Vedle denního vydání vedeme tabuli 25 až 40 stálých otázek o nejbližších měsících: volby a sestavování vlád, rozpočty, rozhodnutí centrálních bank, války a jednání, nejméně třetina z nich o Česku. Každá má přesné kritérium, termín a primární zdroj jako každé tvrzení. Večerní redakce je denně kontroluje a celým týmem znovu odhaduje, kdykoli se stane něco podstatného, a nejméně jednou týdně; nové číslo se zapíše, jen pokud se pohne aspoň o 5 bodů. Dřívější čísla se nikdy nemění, takže historie ukazuje, jak se predikce vyvíjela. Vyhodnocené otázky hodnotíme časově váženým Brierovým skóre: počítá se každá hodina, po kterou byla otázka otevřená, takže správný odhad včas má větší cenu než správný odhad na poslední chvíli. Když denní zpráva posune sledovanou otázku, zpráva to uvede.
