@@ -1,16 +1,108 @@
 {
-  "edition": "2026-10-23",
-  "results": [
-    {"claim": "sakharov-lissu", "outcome": "no", "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html", "note": "President Metsola announced on 22 October that the 2026 Sakharov Prize goes to the International Criminal Court and its officials; Tundu Lissu is not named (confirmed by Reuters).", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "sakharov-rahimi", "outcome": "no", "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html", "note": "The sole 2026 laureate is the ICC and its officials; the Rahimi sisters are not named.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "sakharov-icc", "outcome": "yes", "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html", "note": "Parliament's President announced the ICC and its officials as the 2026 laureate in Strasbourg on 22 October.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "cz-budget-first-reading", "outcome": "yes", "evidence": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-zakladni-udaje-rozpoctu-se-schodkem-386-mld-kc/2890454", "note": "The Chamber approved the basic parameters of the 2027 budget (deficit CZK 386 billion) on the evening of 22 October with 93 votes in favour; psp.cz could not be checked directly, so this rests on ČTK and iROZHLAS.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "ep-omnibus-and-drones", "outcome": "yes", "evidence": "https://agenceurope.eu/en/bulletin/article/13966/8/european-parliament-approves-agreement-with-eu-council-on-simplifying-eu-rules-governing-use-of-chemical-products", "note": "The texts-adopted page was unreachable; Agence Europe reports the chemicals omnibus approved on 22 October (477–59–41) and Renew Europe and the Sofia Globe report the resolution on Russian strikes in the Black Sea, including drones, adopted the same day.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "ru-ua-no-ceasefire", "outcome": "yes", "evidence": "https://meduza.io/en/feature/2026/10/22/why-kyiv-is-skeptical-of-trump-s-renewed-peace-negotiations-with-russia-and-ukraine", "note": "No government announced a general or partial ceasefire by 22 October; the Kremlin spoke only of resuming three-way talks in November.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "hubbard-release", "outcome": "yes", "evidence": "https://www.npr.org/2026/10/21/nx-s1-6009380/russia-releases-imprisoned-us-citizen", "note": "Russia freed Stephen Hubbard on 21 October during Witkoff's visit, as confirmed by US officials and reported by NPR, CBS and CNN.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "iran-no-deal", "outcome": "yes", "evidence": "https://en.mehrnews.com/news/248760/Iran-US-give-approval-to-new-proposal-report", "note": "Only anonymous-source reports spoke of 'preliminary approval'; no government announced that both sides had accepted the proposal by the deadline.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "brazil-datafolha-close", "outcome": "yes", "evidence": "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/", "note": "The Datafolha poll released on 22 October (fieldwork 20–22 October) put Flávio Bolsonaro and Lula at 50% each of valid votes, a gap of zero.", "resolved_at": "2026-10-23T04:50:00+02:00"},
-    {"claim": "ebola-kenya-new", "outcome": "yes", "evidence": "https://www.kenyans.co.ke/news/128729-ministry-health-confirms-9th-ebola-case-kenya", "note": "Applying the criterion literally: the Ministry of Health confirmed a ninth case (announced 20 October), so the count stood above eight by the deadline, although no new case was reported on 21 or 22 October; the claim text and criterion diverged.", "resolved_at": "2026-10-23T04:50:00+02:00"}
-  ],
-  "corrections": []
+ "edition": "2026-10-23",
+ "results": [
+  {
+   "claim": "sakharov-lissu",
+   "outcome": "no",
+   "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html",
+   "note": "President Metsola announced on 22 October that the 2026 Sakharov Prize goes to the International Criminal Court and its officials; Tundu Lissu is not named (confirmed by Reuters).",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "sakharov-rahimi",
+   "outcome": "no",
+   "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html",
+   "note": "The sole 2026 laureate is the ICC and its officials; the Rahimi sisters are not named.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "sakharov-icc",
+   "outcome": "yes",
+   "evidence": "https://the-president.europarl.europa.eu/home/ep-newsroom/pagecontent/actualites/the-2026-sakharov-prize-has-been-awarded-to-the-intlcrimcourt-and-its-officials.html",
+   "note": "Parliament's President announced the ICC and its officials as the 2026 laureate in Strasbourg on 22 October.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "cz-budget-first-reading",
+   "outcome": "yes",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-zakladni-udaje-rozpoctu-se-schodkem-386-mld-kc/2890454",
+   "note": "The Chamber approved the basic parameters of the 2027 budget (deficit CZK 386 billion) on the evening of 22 October with 93 votes in favour; psp.cz could not be checked directly, so this rests on ČTK and iROZHLAS.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "ep-omnibus-and-drones",
+   "outcome": "yes",
+   "evidence": "https://agenceurope.eu/en/bulletin/article/13966/8/european-parliament-approves-agreement-with-eu-council-on-simplifying-eu-rules-governing-use-of-chemical-products",
+   "note": "The texts-adopted page was unreachable; Agence Europe reports the chemicals omnibus approved on 22 October (477–59–41) and Renew Europe and the Sofia Globe report the resolution on Russian strikes in the Black Sea, including drones, adopted the same day.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "ru-ua-no-ceasefire",
+   "outcome": "yes",
+   "evidence": "https://meduza.io/en/feature/2026/10/22/why-kyiv-is-skeptical-of-trump-s-renewed-peace-negotiations-with-russia-and-ukraine",
+   "note": "No government announced a general or partial ceasefire by 22 October; the Kremlin spoke only of resuming three-way talks in November.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "hubbard-release",
+   "outcome": "yes",
+   "evidence": "https://www.npr.org/2026/10/21/nx-s1-6009380/russia-releases-imprisoned-us-citizen",
+   "note": "Russia freed Stephen Hubbard on 21 October during Witkoff's visit, as confirmed by US officials and reported by NPR, CBS and CNN.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "iran-no-deal",
+   "outcome": "yes",
+   "evidence": "https://en.mehrnews.com/news/248760/Iran-US-give-approval-to-new-proposal-report",
+   "note": "Only anonymous-source reports spoke of 'preliminary approval'; no government announced that both sides had accepted the proposal by the deadline.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "brazil-datafolha-close",
+   "outcome": "yes",
+   "evidence": "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/",
+   "note": "The Datafolha poll released on 22 October (fieldwork 20–22 October) put Flávio Bolsonaro and Lula at 50% each of valid votes, a gap of zero.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "ebola-kenya-new",
+   "outcome": "yes",
+   "evidence": "https://www.kenyans.co.ke/news/128729-ministry-health-confirms-9th-ebola-case-kenya",
+   "note": "Applying the criterion literally: the Ministry of Health confirmed a ninth case (announced 20 October), so the count stood above eight by the deadline, although no new case was reported on 21 or 22 October; the claim text and criterion diverged.",
+   "resolved_at": "2026-10-23T04:50:00+02:00"
+  },
+  {
+   "claim": "cz-benefits-stalled",
+   "outcome": "no",
+   "evidence": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+   "note": "The benefit cut has no standalone bill: the government attached it to the pay-transparency Labour Code amendment (tisk 300, which amends the Employment Act 435/2004, with a Richterová amendment to keep the current benefit rates), and that bill passed first reading on 20 Oct 2026 (34th session, vote 214 rejection motion failed 43-78, votes 215-216 referral and deadline passed), so a successful first-reading vote is recorded on psp.cz.",
+   "resolved_at": "2026-10-24T05:15:00+02:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "dublin-no-decisions",
+   "outcome": "yes",
+   "evidence": "https://irish-presidency.consilium.europa.eu/en/events/informal-meeting-of-trade-ministers-fac-trade/",
+   "note": "The Presidency page lists the 22-23 Oct Dublin meeting as an informal ministerial meeting (working sessions only), with no Council decision or adopted conclusions attributed to it.",
+   "resolved_at": "2026-10-24T05:15:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "france-unions-out",
+   "outcome": "yes",
+   "evidence": "https://www.cgt.fr/actualites",
+   "note": "The CGT, FO and CFDT national sites call for the 5 November strike day; none calls members to join the Saturday 24 Oct (Gilets Jaunes 'act II') protests, and FO's 23 Oct statement only condemns prefectural bans and defends the right to protest, which we read as not being a call to join.",
+   "resolved_at": "2026-10-24T05:15:00+02:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "serbia-sns-ahead",
+   "outcome": "yes",
+   "evidence": "https://politpro.eu/en/serbia/election/parliament/2026",
+   "note": "PolitPro's Serbia trend (page dated 24 Oct 2026) shows SNS on 46.8% against Studentska lista on 40.6%, a 6.2-point SNS lead; the criterion asks for the PolitPro figure as of 23 October and the page read was dated 24 October, so a one-day snapshot difference was assumed immaterial for a 6-point lead.",
+   "resolved_at": "2026-10-24T05:15:00+02:00",
+   "ambiguous": true
+  }
+ ],
+ "corrections": []
 }

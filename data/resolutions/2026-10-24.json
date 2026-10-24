@@ -1,0 +1,101 @@
+{
+ "edition": "2026-10-24",
+ "results": [
+  {
+   "claim": "cz-budget-first-reading",
+   "outcome": "yes",
+   "evidence": "https://www.psp.cz/sqw/hlasy.sqw?g=88826&l=cz",
+   "note": "psp.cz records the first reading of the 2027 budget (tisk 324) on 22 Oct 2026, with the approval vote 34/237 passed at 22:28 (92 for, 60 against); this is before the 23 Oct 23:59 deadline, so the criterion is met as written even though the vote came a day earlier than expected.",
+   "resolved_at": "2026-10-24T05:15:00+02:00"
+  },
+  {
+   "claim": "cz-budget-105",
+   "outcome": "no",
+   "evidence": "https://www.psp.cz/sqw/hlasy.sqw?g=88826&l=cz",
+   "note": "The first-reading approval vote 34/237 on 22 Oct 2026 had 92 'ano' votes, short of the 105 required.",
+   "resolved_at": "2026-10-24T05:15:00+02:00"
+  },
+  {
+   "claim": "cz-bank-levy",
+   "outcome": "no",
+   "evidence": "https://www.echo24.cz/a/HypY7/zpravy-ekonomika-banky-jsou-nenasytne-tvrdi-babis-chce-s-nimi-resit-ceny-hypotek-vlada",
+   "note": "We could not search ČTK/ceskenoviny directly; Echo24 reports only that Babiš will negotiate mortgage prices with the banks, and ČT24's bank-tax topic page has no 2026 item, so no statement that the government will introduce a bank tax or levy was found by the deadline.",
+   "resolved_at": "2026-10-24T05:15:00+02:00"
+  },
+  {
+   "claim": "br-debate-both",
+   "outcome": "yes",
+   "evidence": "https://www.gazetadopovo.com.br/eleicoes/2026/debate-globo-flavio-bolsonaro-lula-segundo-turno-como-foi/",
+   "note": "g1 could not be fetched; Gazeta do Povo (published 23/10/2026 22:33) reports both Lula and Flávio Bolsonaro took part in the TV Globo runoff debate on Friday 23 October; only one independent outlet was checked.",
+   "resolved_at": "2026-10-24T05:18:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "il-maariv-likud",
+   "outcome": "yes",
+   "evidence": "https://www.jpost.com/israel-election-2026/article-912649",
+   "note": "maariv.co.il could not be fetched; the Jerusalem Post (23 Oct 2026, 13:27) reports Maariv's Lazar Research poll published Friday 23 October giving Eisenkot's Yashar 21 seats and Likud 19.",
+   "resolved_at": "2026-10-24T05:18:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "cbr-hold",
+   "outcome": "yes",
+   "evidence": "https://tass.com/economy/2206817",
+   "note": "cbr.ru could not be fetched; TASS quotes the press release ('On 23 October 2026, the Bank of Russia Board of Directors decided to keep the key rate at 14.00% per annum'), and the Moscow Times and Reuters (via Investing.com) also report a hold at 14%.",
+   "resolved_at": "2026-10-24T05:18:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "uk-retail-up",
+   "outcome": "no",
+   "evidence": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/september2026",
+   "note": "The ONS bulletin published 23 October 2026 says retail sales volumes are estimated to have fallen by 0.4% in September 2026.",
+   "resolved_at": "2026-10-24T05:18:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "ez-pmi-53",
+   "outcome": "no",
+   "evidence": "https://www.pmi.spglobal.com/Public/Home/PressRelease/460d8e59c101498493559df807c62014",
+   "note": "The S&P Global flash eurozone PMI release of 23 October 2026 gives a composite output index of 51.9 (down from 53.1), below 53.0.",
+   "resolved_at": "2026-10-24T05:18:00+02:00",
+   "held": true
+  },
+  {
+   "claim": "fr-49-3",
+   "outcome": "no",
+   "evidence": "https://lcp.fr/index%2ephp/dossiers/budget-2027-440523?page=3",
+   "note": "assemblee-nationale.fr was unreachable (fetch refused); LCP's Budget 2027 dossier carries no 49.3 on the PLF or PLFSS 2027, and a news search found no report of the government engaging its responsibility by 23 Oct.",
+   "resolved_at": "2026-10-24T05:24:00+02:00"
+  },
+  {
+   "claim": "fr-etat-urgence",
+   "outcome": "no",
+   "evidence": "https://www.leclubdesjuristes.com/droit/letat-durgence-apres-les-violences-du-17-octobre-17937/",
+   "note": "Légifrance was unreachable (fetch refused); Actu-Juridique (20 Oct) states no decree under the 1955 law has been published and Le Club des juristes (21 Oct) says the government preferred local curfews, and a search found no decree published by 23 Oct.",
+   "resolved_at": "2026-10-24T05:24:00+02:00"
+  },
+  {
+   "claim": "ve-election-date",
+   "outcome": "no",
+   "evidence": "https://www.ntn24.com/noticias-actualidad/elecciones-presidenciales-en-venezuela-podrian-retrasarse-hasta-finales-de-2027-por-reformas-institucionales-y-logisticas-segun-la-agencia-reuters-653611",
+   "note": "cne.gob.ve was unreachable (fetch refused); NTN24 reports Delcy Rodríguez refusing to set a date (\"Yo no fijo fechas\") with Reuters pointing to late 2027, and a search found no CNE or Rodríguez announcement of a date by 23 Oct.",
+   "resolved_at": "2026-10-24T05:24:00+02:00"
+  },
+  {
+   "claim": "ir-us-round",
+   "outcome": "no",
+   "evidence": "https://www.newsquawk.com/headlines/us-and-iranian-delegations-have-reportedly-agreed-to-hold-another-round-of-talks-after-their-recent-meeting-with-the-time-and-venue-to-be-decided-later-pakistani-press-reports",
+   "note": "state.gov was unreachable (fetch refused); the Pakistani report of a further round with \"time and venue to be decided later\" dates from 13 April 2026 and names no date anyway, and a search found no official US or Iranian statement naming a date by 23 Oct.",
+   "resolved_at": "2026-10-24T05:24:00+02:00"
+  },
+  {
+   "claim": "ru-ua-trilateral-date",
+   "outcome": "no",
+   "evidence": "https://news.liga.net/en/war/news/zelenskyy-us-proposes-trilateral-meeting-with-ukraine-and-russia-by-the-end-of-october",
+   "note": "kremlin.ru was unreachable (fetch refused); the latest on-record remark found is Zelensky's of 4 Oct that Ukraine is ready 'by the end of October', which names no calendar date, and a search found no Kremlin, White House or Ukrainian presidency announcement of a date by 23 Oct.",
+   "resolved_at": "2026-10-24T05:24:00+02:00"
+  }
+ ]
+}
