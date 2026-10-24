@@ -76,3 +76,9 @@ Polymarket, "Serbia Election: Student List Vote Share?", read 2026-10-23T17:02:4
 - https://www.novosti.rs/drustvo/vesti/1658233/rik-ukupan-broja-biraca-srbiji-parlamentarne-izbore-6-450-523
 - https://polymarket.com/event/serbia-election-student-list-vote-share (via markets.mjs)
 - Sweep: scratchpad/sweep/europe.json (Vreme list names, Al Jazeera rally)
+
+## Morning update (24 Oct, 05:10 CEST, overnight check)
+- Polymarket Serbia winner (https://polymarket.com/event/serbia-parliamentary-election-winner-2026), read 2026-10-24T03:01Z: Student List most seats 0.195 (was 0.295 at 17:02Z 23 Oct, −10 pts); United Serbia 0.795 (was 0.71).
+- Polymarket Student List vote share (https://polymarket.com/event/serbia-election-student-list-vote-share): normalised ≥40% = 0.614 (was 0.659). Bands: <30 0.0485, 30–35 0.0945, 35–40 0.26, 40–45 0.275, 45–50 0.225, ≥50 0.1405.
+- Kalshi (thin) Students ≥38 0.80, ≥46 0.45, ≥50 0.18.
+- No new poll and no news found explaining the move (polling silence); 23 Oct items are minor incidents.

@@ -44,3 +44,10 @@
 - https://www.ctvnews.ca/vancouver/article/who-are-the-party-leaders-as-british-columbia-goes-to-the-polls/ (opened)
 - Sweep world.json (globalnews Ipsos, CTV 20 Oct, Polymarket)
 - Polymarket via markets.mjs; poll-error.json; slip.mjs; models.mjs
+
+## Morning update (24 Oct, 05:10 CEST, overnight check)
+- New market on the exact question: Kalshi "BC Conservatives seats" (https://kalshi.com/markets/kxbcconseats), read 2026-10-24T03:01Z: ≥47 seats 0.75; ≥52 seats 0.26. Kalshi NDP ≥47 seats 0.12. Kalshi probably settles on the final count, not the preliminary results at 12:00 CET.
+- Polymarket "Conservatives win most seats" 0.895 (was 0.925 on 23 Oct). Kalshi Doerkson next premier 0.90.
+- 338Canada (22 Oct): Con 57 seats (range 42–69), NDP 33, Greens 3; Con majority 84%, NDP 10%. https://www.338canada.com/bc
+- Éric Grenier (21 Oct): Con 52, NDP 39. Vote-Scope, Poliwave: Con mid-50s.
+- Final polls (decided): Ipsos/Global 20–22 Oct Con 44, NDP 39, Green 13 (Island NDP 46/Con 32; Interior/North Con 53/NDP 31) https://www.ipsos.com/en-ca/bc-conservatives-knocking-door-majority-government ; Research Co. 21–23 Oct Con 44, NDP 40, Green 10 (Metro Vancouver Con 45/NDP 41) https://researchco.ca/2026/10/23/bcpoli-oct23/ ; Léger 21 Oct 44/39/13; Mainstreet 17–18 Oct 41.7/36.0/14.6.

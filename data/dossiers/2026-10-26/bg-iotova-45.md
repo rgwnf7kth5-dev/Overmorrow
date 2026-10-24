@@ -67,3 +67,9 @@
 - Polymarket via scripts/markets.mjs: bulgaria-presidential-election, -first-round-margin-of-victory, -first-round-2nd-place, -first-round-3rd-place
 - Sweep notes: scratchpad/sweep/europe.json (Bulgaria entries)
 - pipeline/reference-data/poll-error.json
+
+## Morning update (24 Oct, 05:10 CEST, overnight check) — polls published 23 Oct missing from the evening dossier
+- Alpha Research, fieldwork 18–22 Oct, n=1,000: Iotova 41.1, Gyurov 28.3; turnout intention 40% (up from 37%). Trend for 24 Chasa, 14–20 Oct, n=1,002: Iotova 45.9, Gyurov 27.8, Kostadinov 10.9. Source: Novinite 23 Oct 10:08 https://www.novinite.com/articles/241210/Two+Polls+Show+Yotova+in+Front,+but+Gap+with+Gyurov+Narrows
+- BTA media review 23 Oct: final-week ranges Iotova 41.4–45.9, Gyurov 27.9–28.3, Kostadinov 10.9–12.8. https://www.bta.bg/en/news/bulgaria/1231010-media-review-october-23
+- Mean of freshest polls (Gallup, Alpha, Trend) ≈ 43.4 (was 45.2). Note poll shares may be of declared voters, not valid votes.
+- Polymarket Iotova to win 0.875 (unchanged); first-round margin <10 0.18, 10–20 0.62, 20–30 0.125.

@@ -87,3 +87,8 @@ Polymarket, "Serbia Election: United Serbia Vote Share?", read 2026-10-23T17:02:
 - https://n1info.rs/english/news/vucic-expects-turnout-of-more-than-4-million-accuses-opponents-of-planning-election-fraud
 - https://polymarket.com/event/serbia-election-united-serbia-vote-share (via markets.mjs)
 - Sweep: scratchpad/sweep/europe.json
+
+## Morning update (24 Oct, 05:10 CEST, overnight check)
+- Polymarket United Serbia vote share (https://polymarket.com/event/serbia-election-united-serbia-vote-share), read 2026-10-24T03:01Z: normalised ≥45% = 0.515 (dossier 0.518). Bands: <35 0.026, 35–40 0.165, 40–45 0.285, 45–50 0.395, 50–55 0.095, ≥55 0.015.
+- Polymarket winner market: United Serbia most seats 0.795 (was 0.71); Student List 0.195 (was 0.295). Margin market: United Serbia by ≥10 0.27 (was 0.255).
+- No new poll; no news explaining the winner-market move.

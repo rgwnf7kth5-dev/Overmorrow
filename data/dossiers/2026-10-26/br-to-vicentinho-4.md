@@ -57,3 +57,8 @@
 - https://mais.opovo.com.br/jornal/politica/2026/10/16/12-governadores-eleitos-e-4-que-lideram-2-turno-apoiam-flavio.html (via sweep)
 - https://polymarket.com/event/tocantins-governor-election-second-round-margin-of-victory ; https://polymarket.com/event/tocantins-governor-election-winner (via markets.mjs)
 - pipeline/reference-data/poll-error.json
+
+## Morning update (24 Oct, 05:10 CEST, overnight check) — poll missed by the evening dossier
+- Paraná Pesquisas, fieldwork 14–17 Oct, published 19 Oct (TO-09349/2026): Vicentinho 56.5, Dorinha 43.5 valid votes (+13.0). https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/parana-pesquisas-governador-tocantins-outubro-2026-segundo-turno/
+- With it, mean of latest polls ≈ +8.3 (≈ +4.8 including Directa).
+- Markets read 2026-10-24T03:01Z: Polymarket Vicentinho wins by ≥4 pts 0.595 (unchanged); Vicentinho to win 0.885; Kalshi Vicentinho 0.87.
