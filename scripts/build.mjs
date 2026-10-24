@@ -329,8 +329,9 @@ function storyHtml(story, results, show, L, opts = {}) {
     .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
   const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
   const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${fixes}${checks}`;
-  const content = isLead || opts.wide ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
-  return `<div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${H}>${esc(story.headline)}</${H}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}${content}`;
+  const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
+  const Hx = opts.h || H;
+  return `<div class="hgroup"><div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${Hx}>${esc(story.headline)}</${Hx}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}</div>${content}`;
 }
 
 const spanClass = { half: 's6', third: 's4', quarter: 's3' };
@@ -347,7 +348,7 @@ function editionMain(original, L, isLatest = false) {
   const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
   const tone = (st) => storyTone(st, results);
   const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
-  const art = (st, cls, wide) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id) })}</article>`; };
+  const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), ...extra })}</article>`; };
   const w = ed.weather;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
 
@@ -373,26 +374,77 @@ function editionMain(original, L, isLatest = false) {
   }
   const rail = ed.front.rail.map((id) => art(byId.get(id), '')).join('');
 
-  // Sections: pack stories into rows of 12 columns and widen the last story of any row that would leave a gap.
-  const widths = { half: 6, third: 4, quarter: 3 };
+  // Sections: stories flow through newspaper columns (3 / 2 / 1 by screen width). Text may continue into the next
+  // column, the headline block never splits, so columns end level and no gaps or squeezed columns appear.
   let sections = '';
   for (const sec of secs) {
     sections += `<div class="section"><h2>${esc(sec.name)}</h2>${sec.dek ? `<span>${esc(sec.dek)}</span>` : ''}</div>`;
-    const rows = [];
-    for (const id of sec.stories) {
-      const span = widths[byId.get(id).size] || 6;
-      const row = rows[rows.length - 1];
-      if (row && row.used + span <= 12) { row.items.push({ id, span }); row.used += span; } else rows.push({ used: span, items: [{ id, span }] });
-    }
-    for (const row of rows) {
-      const last = row.items[row.items.length - 1];
-      last.span += 12 - row.used;
-      row.items.forEach((it, k) => { sections += art(byId.get(it.id), `s${it.span}${k ? ' vr' : ''}`, it.span >= 8); });
-    }
+    sections += `<div class="flow s12">${sec.stories.map((id) => art(byId.get(id), '', false, { flat: true, h: byId.get(id).size === 'half' ? 'h3' : 'h4' })).join('')}</div>`;
   }
   const diary = ed.diary?.length ? `<div class="section"><h2>${L.comingUp}</h2><span>${L.comingDek}</span></div><div class="s12"><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
 
   const updBanner = ed.update ? `<p class="updbanner">${L.upd.banner(hhmm(ed.update.frozen_at), ed.update.revisions, ed.update.added)}</p>` : '';
+  if (L === T.cs) {
+    // Czech edition: two desks side by side, foreign news left, domestic right; tabs on narrow screens.
+    const enSec = new Map(); for (const sc of original.sections || []) for (const id of sc.stories) enSec.set(id, sc.name);
+    const domestic = (st) => st.desk ? st.desk === 'domestic' : st.id.startsWith('cz-') || /czech/i.test(enSec.get(st.id) || '') || (original.front.rail || []).includes(st.id);
+    const enOrder = [original.front.lead, ...(original.front.rail || []), ...(original.sections || []).flatMap((x) => x.stories)];
+    const csOrder = [ed.front.lead, ...(ed.front.rail || []), ...(ed.sections || []).flatMap((x) => x.stories)];
+    const uniq = (a) => [...new Set(a)].filter((id) => byId.has(id));
+    const foreign = uniq(enOrder).filter((id) => !domestic(byId.get(id)));
+    const home = uniq([...csOrder, ...enOrder]).filter((id) => domestic(byId.get(id)));
+    // Balance: choose the width split and, for the longer desk, one or two inner columns so that both desks end at
+    // about the same height. Height is estimated as text length / column width; the lead story always spans the desk.
+    const len = (id) => textLen(byId.get(id));
+    const est = (ids, extra, share, k) => (ids.reduce((a, id) => a + len(id), 0) + extra) / (share * k) * (k > 1 ? 1.1 : 1);
+    let best = null;
+    for (let sh = 0.34; sh <= 0.661; sh += 0.02) for (const kf of [1, 2]) for (const kh of [1, 2]) {
+      if ((kf === 2 && sh < 0.5) || (kh === 2 && sh > 0.5)) continue; // two inner columns only in the wider desk
+      const diff = Math.abs(est(foreign, 0, sh, kf) - est(home, w ? 600 : 0, 1 - sh, kh));
+      const score = diff * (1 + 0.15 * (kf + kh - 2)) + Math.abs(sh - 0.5) * 400; // prefer single columns and an even split
+      if (!best || score < best.score) best = { score, sh, kf, kh };
+    }
+    const cols = `style="--fw:${best.sh.toFixed(2)}fr;--hw:${(1 - best.sh).toFixed(2)}fr"`;
+    // With two inner columns the whole desk flows, lead included; with one, the lead heads the desk.
+    const desk = (ids, key, title, k, tail = '') => `<section class="desk ${key}${k > 1 ? ' two' : ''}" aria-labelledby="desk-${key}"><h2 class="deskhead" id="desk-${key}">${title}</h2><div class="deskbody">${ids.map((id, i) => art(byId.get(id), i === 0 ? 'dlead' : '', false, { flat: true, h: i === 0 ? 'h3' : 'h4' })).join('')}${tail}</div></section>`;
+    // When the domestic desk is still the shorter one, the diary moves into it instead of running across the page.
+    const homeShort = est(home, w ? 600 : 0, 1 - best.sh, best.kh) < est(foreign, 0, best.sh, best.kf) * 0.8;
+    const diaryBox = ed.diary?.length ? `<div class="box diarybox"><h4>${L.comingUp}</h4><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
+    return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
+${updBanner}
+${scorebar}
+<input type="radio" name="desk" id="tab-foreign" class="tabin" checked><input type="radio" name="desk" id="tab-home" class="tabin">
+<div class="tabs" role="tablist"><label for="tab-foreign">Zahraničí</label><label for="tab-home">Domácí</label></div>
+<main class="desks" ${cols}>
+  ${desk(foreign, 'foreign', 'Zahraničí', best.kf)}
+  ${desk(home, 'home', 'Domácí', best.kh, weather + (diaryBox ? diaryBox.replace('class="box diarybox"', `class="box diarybox"${homeShort ? '' : ' hidden'}`) : ''))}
+</main>
+<div class="grid">${isLatest ? watchStrip(L) : ''}${diary ? `<div class="fulldiary"${homeShort ? ' hidden' : ''}>${diary}</div>` : ''}</div>
+<script>
+// Measure both desks and pick the width split, inner columns and diary placement that end them most nearly level.
+(function () {
+  var desks = document.querySelector('.desks'); if (!desks) return;
+  var f = desks.querySelector('.foreign'), h = desks.querySelector('.home');
+  var box = h.querySelector('.diarybox'), full = document.querySelector('.fulldiary');
+  function bottom(el) { var m = 0; el.querySelectorAll('.story,.box').forEach(function (e) { if (e.hidden) return; var r = e.getClientRects(); for (var i = 0; i < r.length; i++) m = Math.max(m, r[i].bottom); }); return m; }
+  function apply(c) { desks.style.setProperty('--fw', c.sh + 'fr'); desks.style.setProperty('--hw', (1 - c.sh).toFixed(2) + 'fr'); f.classList.toggle('two', c.kf > 1); h.classList.toggle('two', c.kh > 1); if (box) { box.hidden = !c.diary; if (full) full.hidden = c.diary; } }
+  function balance() {
+    if (getComputedStyle(desks).display !== 'grid') return;
+    var best = null;
+    for (var sh = 0.34; sh <= 0.701; sh += 0.02) for (var kf = 1; kf <= 2; kf++) for (var kh = 1; kh <= 2; kh++) for (var d = 0; d <= (box ? 1 : 0); d++) {
+      if ((kf === 2 && sh < 0.54) || (kh === 2 && sh > 0.46)) continue;
+      var c = { sh: +sh.toFixed(2), kf: kf, kh: kh, diary: !!d }; apply(c);
+      var diff = Math.abs(bottom(f) - bottom(h));
+      var score = diff + 60 * (kf + kh - 2) + 300 * Math.abs(c.sh - 0.5) + (d ? 40 : 0);
+      if (!best || score < best.score) { best = c; best.score = score; }
+    }
+    apply(best);
+  }
+  var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(balance, 150); });
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(balance);
+})();
+</script>`;
+  }
   return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
 ${updBanner}
 ${scorebar}

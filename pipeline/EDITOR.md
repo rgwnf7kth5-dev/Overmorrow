@@ -117,6 +117,8 @@ Each story gets a `cs` object (`kicker`, `headline`, `standfirst` for a lead, `b
 
 Translate faithfully into natural Czech newspaper prose (ČTK style), Czech date and number formats; identical numbers, probabilities and deadlines. **Foreign women's surnames are never feminised** (Roberta Metsola, Kaja Kallas, Iliana Iotova; předsedkyně Metsola, s Kajou Kallas). Czech and Slovak women keep their own forms.
 
+**Czech page layout.** The Czech edition is split into two desks side by side: ZAHRANIČÍ (left) and DOMÁCÍ (right), with tabs on phones. A story goes to the domestic desk when its id starts with `cz-`, when it sits in an English section with "Czech" in its name, or when it is in the front-page rail; set `"desk": "domestic"` or `"desk": "foreign"` on a story to override. The first story listed for each desk heads it, so order `cs.layout` with the most important domestic story first. Both desks should carry real weight: with at least `cz_stories_min` Czech stories the page balances itself.
+
 ## 6c. Fact-check (mandatory)
 
 One agent that did not write the stories opens every URL in `sources` and every `resolution_source` and marks each factual statement and number in English and Czech as supported, unsupported or wrong; it checks times, time zones, dates, attributions and EN–CS agreement. Fix every wrong statement; source or cut every unsupported one. A correction that changes a forecast's premise sends the claim back to step 4.

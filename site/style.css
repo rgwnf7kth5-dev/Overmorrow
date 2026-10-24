@@ -162,3 +162,52 @@ table.watch td.n b{display:block;font-size:17px}
 td.ch{font-family:var(--sans);font-variant-numeric:tabular-nums}
 td.ch.up{color:var(--yes)}td.ch.down{color:var(--no)}
 table.watch details.check{margin-top:4px}
+
+/* Flowing section columns: text may continue into the next column; headline blocks never split. */
+.flow{column-count:3;column-gap:28px;column-rule:1px solid var(--hair)}
+.flow>.story{break-inside:auto;padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--hair);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.flow>.story:last-child{border-bottom:0;margin-bottom:0}
+.hgroup{break-inside:avoid;break-after:avoid}
+.story p{orphans:3;widows:3}
+.story h3,.story h4{hyphens:manual;-webkit-hyphens:manual;overflow-wrap:normal}
+
+/* Czech edition: foreign desk left, domestic desk right, divided by a vertical rule. */
+.tabin{position:absolute;opacity:0;pointer-events:none}
+.tabs{display:none}
+.desks{display:grid;grid-template-columns:minmax(0,var(--fw,1fr)) minmax(0,var(--hw,1fr));column-gap:0;margin-top:22px;border-top:3px double var(--rule)}
+.desk{min-width:0;padding:14px 28px 0 0}
+.desk.home{border-left:1px solid var(--rule);padding:14px 0 0 28px}
+.deskhead{font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;border-bottom:2px solid var(--rule);padding-bottom:6px;margin:0 0 16px}
+.desk .story{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--hair);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.deskbody>.story:last-child{border-bottom:0;margin-bottom:0}
+.desk.two .deskbody{column-count:2;column-gap:24px;column-rule:1px solid var(--hair)}
+.desk.two .deskbody>.story{break-inside:auto}
+.desk .dlead h3{font-size:clamp(26px,2.6vw,36px);letter-spacing:-.01em;margin-bottom:10px}
+.desk .box{margin-top:6px}
+@media (max-width:980px){
+  .flow{column-count:2}
+}
+@media (max-width:860px){
+  .tabs{display:flex;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--rule);margin-top:16px}
+  .tabs label{flex:1;text-align:center;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:10px 0;cursor:pointer;color:var(--ink-3);border-bottom:3px solid transparent;margin-bottom:-2px}
+  .desks{display:block;border-top:0;margin-top:8px}
+  .desk,.desk.home{display:none;border-left:0;padding:8px 0 0}
+  .desk.two .deskbody{column-count:1}
+  #tab-foreign:checked~.desks .foreign,#tab-home:checked~.desks .home{display:block}
+  #tab-foreign:checked~.tabs label[for="tab-foreign"],#tab-home:checked~.tabs label[for="tab-home"]{color:var(--ink);border-bottom-color:var(--ink)}
+  .tabin:focus-visible~.tabs{outline:2px solid var(--accent)}
+  .deskhead{display:none}
+}
+@media (max-width:640px){
+  .flow{column-count:1;column-rule:0}
+}
+.diarybox .diary{display:block}
+.diarybox .diary li{border-top:1px solid var(--hair);padding:7px 0;font-size:15px}
+.desk .box+.box{margin-top:16px}
+.desk.two .dlead h3{font-size:clamp(24px,2.2vw,30px)}
+.fulldiary{display:contents}
+.fulldiary[hidden],.diarybox[hidden],[hidden]{display:none!important}
+/* Weather: place name, then the forecast; long forecasts wrap in their own column. */
+.wx{grid-template-columns:max-content minmax(0,1fr);column-gap:14px;row-gap:6px}
+.wx span:nth-child(even){text-align:left}
+.wx span:nth-child(odd){font-weight:600}
