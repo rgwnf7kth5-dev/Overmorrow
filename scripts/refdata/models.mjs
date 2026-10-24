@@ -88,9 +88,19 @@ if (isMain) {
   const [cmd, ...a] = process.argv.slice(2);
   const n = a.map(Number);
   const fmt = (p) => `${(p * 100).toFixed(1)}%`;
-  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd> | odds <o1> <o2> [...] | quantiles <consensus> <surpriseSd>';
+  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd> | odds <o1> <o2> [...] | quantiles <consensus> <surpriseSd> | derive <q10> <q50> <q90> < | > <x> | derive <q10> <q50> <q90> between | outside <a> <b>';
   if (cmd === 'odds' && a.length >= 2) { const r = fromOdds(n); console.log(JSON.stringify({ probs: r.probs.map((x) => +x.toFixed(4)), overround: +r.overround.toFixed(4) })); process.exit(0); }
   if (cmd === 'quantiles' && a.length === 2) { const q = releaseQuantiles(n[0], n[1]); console.log(JSON.stringify(Object.fromEntries(Object.entries(q).map(([k, v]) => [k, +v.toFixed(4)])))); process.exit(0); }
+  if (cmd === 'derive' && a.length >= 5) {
+    const { derivedProb } = await import('../lib.mjs');
+    const c = { quantiles: { q10: n[0], q50: n[1], q90: n[2] } };
+    const ev = a[3];
+    const d = ev === 'between' || ev === 'outside' ? { event: ev, x: [n[4], n[5]] } : { event: ev, x: n[4] };
+    const q = derivedProb(c, d);
+    if (q === null || Number.isNaN(q)) { console.error(usage); process.exit(1); }
+    console.log(`${q.toFixed(4)} (${fmt(q)})  two-piece normal through q10/q50/q90; use with "derived": ${JSON.stringify({ from: '<interval claim id>', ...d })}`);
+    process.exit(0);
+  }
   let p;
   if (cmd === 'lead' && a.length === 2) p = pWinFromPolls(n[0], n[1]);
   else if (cmd === 'leadabove' && a.length === 3) p = pLeadAbove(n[0], n[1], n[2]);

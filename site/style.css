@@ -221,3 +221,7 @@ table.watch details.check{margin-top:4px}
 .story.lead .photo{margin-bottom:14px}
 .story.lead .photo img,.story.dlead .photo img{aspect-ratio:16/8;object-fit:cover}
 .hgroup + .photo{margin-top:8px}
+
+/* Accuracy page: small-sample warning */
+.warnbox{border-left:3px solid #b7791f;background:#fbf5e6;padding:10px 14px;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink)}
+ul.missed{font-size:15px}

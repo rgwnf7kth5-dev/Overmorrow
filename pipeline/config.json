@@ -42,5 +42,43 @@
     0.7
   ],
   "interval_claims_max": 3,
-  "new_rules_from": 4
+  "new_rules_from": 4,
+  "method_versions": [
+    {
+      "version": 1,
+      "from": 1,
+      "date": "2026-10-21",
+      "label": "Pilot and early editions: forecasts without a structured record of the forecasters"
+    },
+    {
+      "version": 2,
+      "from": 4,
+      "date": "2026-10-23",
+      "label": "Five recorded forecasters, slip classes, interval claims, quotas on probability bands"
+    },
+    {
+      "version": 3,
+      "from": 5,
+      "date": "2026-10-24",
+      "label": "Event window and evidence time, full record of forecasting steps (blind and after-market estimates), numbers derived from one distribution, no quotas on probabilities, coverage of missed events"
+    }
+  ],
+  "v3": {
+    "probability_min": 0.01,
+    "probability_max": 0.99,
+    "coherence_tolerance": 0.03,
+    "watch_tolerance": 0.05,
+    "revision_min_pp": 0.05,
+    "revision_min_logit": 0.5,
+    "decomposition_tolerance": 0.02,
+    "small_sample_n": 100,
+    "agent_inputs": [
+      "dossier",
+      "signals",
+      "own-research",
+      "reference-data",
+      "union-of-facts",
+      "overnight-facts"
+    ]
+  }
 }

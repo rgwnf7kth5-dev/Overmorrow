@@ -1,7 +1,7 @@
 // Builds the static site into dist/: English at /, Czech at /cs/. Run: node scripts/build.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -34,8 +34,8 @@ const T = {
     match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
-    deadline: 'Deadline',
-    basis: 'Basis', sources: 'Sources', correction: 'Correction',
+    deadline: 'Deadline', window: 'Event window', evidenceAt: 'Evidence expected', 
+    basis: 'Basis', sources: 'Sources', correction: 'Correction', edNote: 'Editor’s note',
     comingUp: 'Coming Up', comingDek: 'Fixed dates for the next fortnight',
     footer: [
       ['About The Overmorrow', 'A newspaper written two days ahead. Every report describes a scheduled or expected event and states the outcome we consider most likely, with a probability. Nothing is edited after publication.'],
@@ -48,6 +48,13 @@ const T = {
       empty: (d) => `No forecasts have been resolved yet. The first results appear on the morning of ${d}, when the claims of edition No. 1 fall due.`,
       howH: 'How we score',
       how: 'Each claim gets a Brier score: the squared difference between our probability and the outcome (1 if it came true, 0 if not). Lower is better. A forecaster who always says 50% scores 0.250. We also keep a log score, which punishes confident misses more heavily, and a calibration chart, which compares our stated probabilities with how often those claims came true.',
+      notYet: 'not yet checked',
+      small: (n, ev, lo, hi) => `<b>Small sample.</b> ${n} resolved claims from ${ev} separate events. Several claims on one election are not several independent tests, so the 90% interval of the Brier score is ${lo}–${hi}. Differences of a few hundredths mean nothing yet.`,
+      verH: 'By version of the method', verNote: 'The method changes as we learn; each edition records the version it was made under, and old editions are never rescored under new rules. Only the latest version measures the method as it now stands.', verCols: ['Version', 'Editions', 'Claims', 'Events', 'Brier (90% interval)', 'Full forecaster record'],
+      ver: { 1: 'Pilot and early editions (no recorded ensemble)', 2: 'Five recorded forecasters', 3: 'Event window, full record, derived numbers' },
+      comboH: 'Combination rules compared', comboNote: 'The published figure is the geometric mean of the five forecasters’ odds. On the same claims we also score the plain mean, the median, the blind ensemble (estimates made before any market or bookmaker was shown), the market and the base rate. If a simpler rule wins over enough events, we switch.', comboCols: ['Rule', 'Claims', 'Brier', 'Skill vs coin'], comboRows: { pub: 'Published figure', geo: 'Geometric mean of odds', mean: 'Plain mean', median: 'Median', blind: 'Blind ensemble (before markets)', market: 'Market or bookmaker', base: 'Base rate' }, comboEmpty: 'No resolved claim has a full forecaster record yet.',
+      decH: 'Timing or outcome?', decNote: 'For scheduled events each forecast is split into the chance that the event happens in the window and the outcome if it does. Scoring the two parts separately shows whether our misses come from the calendar or from the result.', decCols: ['Part', 'Claims', 'Brier'], decRows: ['Event happens in the window', 'Outcome, given it happened'],
+      covH: 'What we missed', covNote: 'Each morning the resolver lists the significant events of the forecast day by a fixed procedure (an event counts when it appears in at least two of the reference lists) and marks whether the paper covered it, considered and dropped it, or missed it.', covCols: ['', 'Czech', 'Europe', 'World'], covRows: { covered: 'Covered', dropped: 'Considered, not selected', missed: 'Missed' }, covEmpty: 'Coverage is recorded from edition No. 5 on.',
       figs: ['claims resolved', 'Brier score (0.250 = coin toss)', 'calls that went our way', 'log score (0.69 = coin toss)'],
       calH: 'Calibration', cal: 'Each dot is a group of claims with similar probabilities. On the dashed line, our 70% calls come true 70% of the time. Dots below the line mean we were overconfident; above it, too cautious.',
       calCols: ['Forecast band', 'Claims', 'Average forecast', 'Came true'], axisX: 'Forecast probability', axisY: 'How often it came true',
@@ -107,8 +114,8 @@ const T = {
     match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
-    deadline: 'Termín',
-    basis: 'Podklad', sources: 'Zdroje', correction: 'Oprava',
+    deadline: 'Termín', window: 'Okno události', evidenceAt: 'Doklad se čeká', 
+    basis: 'Podklad', sources: 'Zdroje', correction: 'Oprava', edNote: 'Poznámka redakce',
     comingUp: 'Co nás čeká', comingDek: 'Pevné termíny na příští dva týdny',
     footer: [
       ['O novinách The Overmorrow', 'Noviny psané dva dny dopředu. Každá zpráva popisuje naplánovanou nebo očekávanou událost a uvádí výsledek, který považujeme za nejpravděpodobnější, s pravděpodobností. Po vydání se nic neupravuje.'],
@@ -121,6 +128,13 @@ const T = {
       empty: (d) => `Zatím nebyla vyhodnocena žádná predikce. První výsledky přibudou ráno ${d}, kdy vyprší termín tvrzení z vydání č. 1.`,
       howH: 'Jak hodnotíme',
       how: 'Každé tvrzení dostane Brierovo skóre: druhou mocninu rozdílu mezi naší pravděpodobností a výsledkem (1, když se splnilo, 0, když ne). Nižší je lepší. Kdo vždy tipuje 50 %, má 0,250. Sledujeme i logaritmické skóre, které víc trestá sebejisté omyly, a kalibrační graf, který porovnává uvedené pravděpodobnosti s tím, jak často se tvrzení splnila.',
+      notYet: 'dosud nevyhodnoceno',
+      small: (n, ev, lo, hi) => `<b>Malý vzorek.</b> ${n} vyhodnocených tvrzení z ${ev} samostatných událostí. Několik tvrzení k jedněm volbám není několik nezávislých zkoušek, a 90% interval Brierova skóre je proto ${lo}–${hi}. Rozdíly o pár setin zatím nic neznamenají.`,
+      verH: 'Podle verze metody', verNote: 'Metoda se mění podle toho, co se učíme; každé vydání nese verzi, podle které vzniklo, a stará vydání se podle nových pravidel nepřehodnocují. Metodu v dnešní podobě měří jen poslední verze.', verCols: ['Verze', 'Vydání', 'Tvrzení', 'Události', 'Brier (90% interval)', 'Úplný záznam prognostiků'],
+      ver: { 1: 'Pilot a první vydání (bez zaznamenaného týmu)', 2: 'Pět zaznamenaných prognostiků', 3: 'Okno události, úplný záznam, odvozená čísla' },
+      comboH: 'Srovnání pravidel spojování', comboNote: 'Zveřejněné číslo je geometrický průměr šancí pěti prognostiků. Na stejných tvrzeních hodnotíme i prostý průměr, medián, slepý tým (odhady před ukázáním trhů a kurzů), trh a základní četnost. Pokud jednodušší pravidlo vyhrává na dost událostech, přejdeme na ně.', comboCols: ['Pravidlo', 'Tvrzení', 'Brier', 'Dovednost proti minci'], comboRows: { pub: 'Zveřejněné číslo', geo: 'Geometrický průměr šancí', mean: 'Prostý průměr', median: 'Medián', blind: 'Slepý tým (před trhy)', market: 'Trh nebo sázková kancelář', base: 'Základní četnost' }, comboEmpty: 'Zatím není vyhodnocené žádné tvrzení s úplným záznamem prognostiků.',
+      decH: 'Termín, nebo výsledek?', decNote: 'U naplánovaných událostí se každá predikce dělí na pravděpodobnost, že se událost v daném okně uskuteční, a na výsledek, pokud se uskuteční. Samostatné hodnocení obou částí ukáže, zda se mýlíme v kalendáři, nebo ve výsledku.', decCols: ['Část', 'Tvrzení', 'Brier'], decRows: ['Událost se v okně uskuteční', 'Výsledek, pokud se uskutečnila'],
+      covH: 'Co jsme přehlédli', covNote: 'Hodnotitel každé ráno pevným postupem sestaví seznam významných událostí předpovídaného dne (událost se počítá, když je aspoň ve dvou referenčních přehledech) a označí, zda ji noviny měly, zvažovaly a nevybraly, nebo přehlédly.', covCols: ['', 'Česko', 'Evropa', 'Svět'], covRows: { covered: 'Ve vydání', dropped: 'Zvažováno, nevybráno', missed: 'Přehlédnuto' }, covEmpty: 'Pokrytí se zaznamenává od vydání č. 5.',
       figs: ['vyhodnocených tvrzení', 'Brierovo skóre (0,250 = hod mincí)', 'tipů, které vyšly', 'log. skóre (0,69 = hod mincí)'],
       calH: 'Kalibrace', cal: 'Každý bod je skupina tvrzení s podobnou pravděpodobností. Na přerušované čáře se naše tipy na 70 % splní v 70 % případů. Body pod čarou znamenají přílišnou sebejistotu, nad ní přílišnou opatrnost.',
       calCols: ['Pásmo predikce', 'Tvrzení', 'Průměrná predikce', 'Splnilo se'], axisX: 'Predikovaná pravděpodobnost', axisY: 'Jak často se splnilo',
@@ -160,10 +174,11 @@ const T = {
 // ---------- helpers ----------
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const pctNum = (p, L) => (L.locale === 'cs-CZ' ? `${Math.round(p * 100)} %` : `${Math.round(p * 100)}%`);
-const decimalsOf = (c) => Math.min(2, Math.max(...[c.quantiles.q10, c.quantiles.q50, c.quantiles.q90].map((x) => (String(x).split('.')[1] || '').length)));
+// Reader-facing precision: one decimal unless the claim asks otherwise (display_decimals) or the usual surprise is tiny.
+const decimalsOf = (c) => c.display_decimals ?? Math.min(Math.max(...[c.quantiles.q10, c.quantiles.q50, c.quantiles.q90].map((x) => (String(x).split('.')[1] || '').length)), c.scale && c.scale < 0.3 ? 2 : 1);
 /** A value of an interval claim with its unit, in the page's number format ("2.4%", "2,4 %", "CZK 386 bn"). */
-function ivNum(x, c, L) {
-  const d = Math.max(decimalsOf(c), Math.min(3, (String(x).split('.')[1] || '').length));
+function ivNum(x, c, L, exact = false) {
+  const d = exact ? Math.max(decimalsOf(c), Math.min(3, (String(x).split('.')[1] || '').length)) : decimalsOf(c);
   const t = x.toLocaleString(L.locale, { minimumFractionDigits: d, maximumFractionDigits: d });
   const u = c.unit || '';
   if (!u) return t;
@@ -284,7 +299,7 @@ function stampFor(result, L, claim) {
   if (!result) return `<span class="stamp pending">${L.stamp.pending}</span>`;
   const c = closeness(claim, result);
   const style = c === null ? '' : ` style="--h:${hue(c)}"`;
-  if (result.outcome === 'measured' && isInterval(claim)) return `<span class="stamp measured scored"${style}>${L.iv.actual} ${ivNum(result.value, claim, L)} · ${intervalHit(claim, result.value) ? L.iv.inside : L.iv.outside}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
+  if (result.outcome === 'measured' && isInterval(claim)) return `<span class="stamp measured scored"${style}>${L.iv.actual} ${ivNum(result.value, claim, L, true)} · ${intervalHit(claim, result.value) ? L.iv.inside : L.iv.outside}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
   return `<span class="stamp ${result.outcome}${c === null ? '' : ' scored'}"${style}>${L.stamp[result.outcome]}${c === null ? '' : ` · ${L.match} ${pctNum(c, L)}`}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
 }
 
@@ -300,7 +315,10 @@ function likelihood(claim, results, show, L) {
   const r = results.get(claim.id);
   if (isInterval(claim)) {
     const val = show && r?.outcome === 'measured' ? r.value : undefined;
-    return `<div class="lk iv">${ivBar(claim, val)}<span>${esc(claim.label)}: <b>${ivNum(claim.quantiles.q50, claim, L)}</b> <small>(${ivRange(claim, L)})</small></span>${show ? stampFor(r, L, claim) : ''}</div>${
+    const mq = claim.morning_quantiles;
+    const was = mq ? `<s title="${L.upd.morning}">${ivNum(mq.q50, claim, L)}</s> → ` : '';
+    const ivWhy = mq && claim.update?.reason ? `<p class="why"><b>${L.upd.why}:</b> ${esc(claim.update.reason)}${(claim.update.sources || []).filter((x) => x.url).map((x) => ` <a href="${esc(x.url)}">${esc(x.title)}</a>`).join(';')}</p>` : '';
+    return `<div class="lk iv${mq ? ' rev' : ''}">${ivBar(claim, val)}<span>${esc(claim.label)}: ${was}<b>${ivNum(claim.quantiles.q50, claim, L)}</b> <small>(${ivRange(claim, L)})${mq ? ` ${L.upd.afternoon} ${hhmm(claim.update.frozen_at)}` : ''}</small></span>${show ? stampFor(r, L, claim) : ''}</div>${ivWhy}${
       r && r.note ? `<p class="resnote">${esc(r.note)}${r.evidence ? ` <a href="${esc(r.evidence)}">${L.evidence}</a>` : ''}</p>` : ''}`;
   }
   const revised = claim.update && claim.morning !== null && claim.morning !== undefined && claim.morning !== claim.probability;
@@ -326,8 +344,8 @@ function storyHtml(story, results, show, L, opts = {}) {
   if (table) paras.splice(Math.min(2, paras.length), 0, table);
   const sources = (story.sources || []).filter((s) => s.url).map((s) => `<a href="${esc(s.url)}">${esc(s.title)}</a>`).join('; ');
   const checks = `<details class="check"><summary>${L.howChecked(story.claims.length > 1)}</summary>${story.claims
-    .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
-  const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
+    .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)}${c.event_window ? ` ${L.window}: ${esc(fmtStamp(c.event_window.start, L))} – ${esc(fmtStamp(c.event_window.end, L))}${c.tz ? ` (${esc(c.tz)})` : ''}.` : ''}${c.evidence_at ? ` ${L.evidenceAt}: ${esc(fmtStamp(c.evidence_at, L))}.` : ''} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
+  const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${c.kind === 'note' ? L.edNote : L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
   const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${fixes}${checks}`;
   const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
   const Hx = opts.h || H;
@@ -483,7 +501,7 @@ function printPage(original, L) {
   const claimLine = (c) => {
     const r = results.get(c.id), k = closeness(c, r);
     if (isInterval(c)) {
-      const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${r.outcome === 'measured' ? `${L.iv.actual} ${ivNum(r.value, c, L)}` : L.stamp[r.outcome]}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
+      const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${r.outcome === 'measured' ? `${L.iv.actual} ${ivNum(r.value, c, L, true)}` : L.stamp[r.outcome]}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
       return `<p class="lk">${esc(c.label)}: <b>${ivNum(c.quantiles.q50, c, L)}</b> (${ivRange(c, L)})${res}</p>`;
     }
     const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.match} ${pctNum(k, L)}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
@@ -742,8 +760,8 @@ function moreBlocks(editions, rows, L) {
   if (all.length) {
     const n = all.length;
     const late = all.filter(({ claim, result }) => Date.parse(result.resolved_at) - Date.parse(claim.resolves_by) > 48 * 3600e3).length;
-    const checked = all.filter(({ result }) => typeof result.held === 'boolean');
-    out += `<h2>${A.qualH}</h2>${tbl2(A.qualCols, [[A.qualRows[0], String(n)], [A.qualRows[1], share(all.filter(({ result }) => result.outcome === 'void').length, n)], [A.qualRows[2], share(all.filter(({ result }) => result.ambiguous).length, n)], [A.qualRows[3], share(late, n)], [A.qualRows[4], share(checked.filter(({ result }) => result.held === false).length, checked.length)]])}`;
+    const checked = all.filter(({ claim, result }) => typeof result.held === 'boolean' && claim.slip_class && claim.slip_class !== 'none');
+    out += `<h2>${A.qualH}</h2>${tbl2(A.qualCols, [[A.qualRows[0], String(n)], [A.qualRows[1], share(all.filter(({ result }) => result.outcome === 'void').length, n)], [A.qualRows[2], share(all.filter(({ result }) => result.ambiguous).length, n)], [A.qualRows[3], share(late, n)], [A.qualRows[4], checked.length ? share(checked.filter(({ result }) => result.held === false).length, checked.length) : A.notYet]])}`;
   }
 
   const cal = loadCalibration(), cfg = loadConfig();
@@ -771,6 +789,63 @@ function moreBlocks(editions, rows, L) {
     out += `<h2>${A.pubH}</h2><p>${A.pubNote}</p>${tbl2(A.pubCols, rowsP)}`;
   }
   return out;
+}
+
+/** Added 24 Oct 2026: method versions, small-sample warning, combination rules, timing vs outcome, coverage. */
+const fullRecord = (r) => (r.forecast?.agents || []).filter((a) => typeof a.p === 'number').length >= 3;
+function versionBlock(editions, rows, L) {
+  const A = L.acc;
+  const cfg = loadConfig();
+  const fmtCI = (ci) => (ci ? ` (${num3(ci.lo, L)}–${num3(ci.hi, L)})` : '');
+  const vers = [...new Set(editions.map((e) => methodVersion(e, cfg)))].sort();
+  const lines = vers.map((v) => {
+    const eds = editions.filter((e) => methodVersion(e, cfg) === v);
+    const list = rows.filter((r) => methodVersion(r.edition, cfg) === v);
+    const nums = eds.map((e) => e.number);
+    const range = nums.length > 1 ? `${Math.min(...nums)}–${Math.max(...nums)}` : String(nums[0]);
+    if (!list.length) return [esc(A.ver[v] || `v${v}`), range, '0', '0', '–', '–'];
+    const sm = summarise(list);
+    const ci = brierInterval(list);
+    return [esc(A.ver[v] || `v${v}`), range, String(sm.n), String(new Set(list.map(eventKey)).size), `${num3(sm.brier, L)}${fmtCI(ci)}`, `${list.filter(fullRecord).length} / ${list.length}`];
+  });
+  const ci = brierInterval(rows);
+  const events = new Set(rows.map(eventKey)).size;
+  const warn = rows.length < (cfg.v3?.small_sample_n ?? 100) && ci ? `<p class="note warnbox">${A.small(rows.length, events, num3(ci.lo, L), num3(ci.hi, L))}</p>` : '';
+  return `${warn}<h2>${A.verH}</h2><p>${A.verNote}</p>${tbl2(A.verCols, lines)}`;
+}
+function comboBlock(rows, L) {
+  const A = L.acc;
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const full = rows.filter((r) => altCombos(r));
+  let out = `<h2>${A.comboH}</h2><p>${A.comboNote}</p>`;
+  if (!full.length) return `${out}<p><i>${A.comboEmpty}</i></p>`;
+  const line = (label, list, pf) => { if (!list.length) return null; const b = mean(list.map((r) => brier(pf(r), r.outcome))), coin = mean(list.map((r) => brier(0.5, r.outcome))); const k = skill(b, coin); return [label, String(list.length), num3(b, L), k === null ? '–' : `${k >= 0 ? '+' : '−'}${num3(Math.abs(k), L)}`]; };
+  const R = A.comboRows;
+  const withBlind = full.filter((r) => altCombos(r).blind !== null);
+  const withMarket = full.filter((r) => typeof r.forecast?.market?.p === 'number');
+  const withBase = full.filter((r) => typeof r.forecast?.base_rate?.rate === 'number' && r.forecast.base_rate.rate >= 0 && r.forecast.base_rate.rate <= 1);
+  const lines = [line(R.pub, full, (r) => r.probability), line(R.geo, full, (r) => altCombos(r).geo), line(R.mean, full, (r) => altCombos(r).mean), line(R.median, full, (r) => altCombos(r).median), line(R.blind, withBlind, (r) => altCombos(r).blind), line(R.market, withMarket, (r) => r.forecast.market.p), line(R.base, withBase, (r) => r.forecast.base_rate.rate)].filter(Boolean);
+  return out + tbl2(A.comboCols, lines);
+}
+function decompBlock(rows, L) {
+  const A = L.acc;
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const d = rows.filter((r) => r.forecast?.decomposition && typeof r.result.held === 'boolean');
+  if (!d.length) return '';
+  const held = d.filter((r) => r.result.held);
+  const b1 = mean(d.map((r) => (r.forecast.decomposition.p_held - (r.result.held ? 1 : 0)) ** 2));
+  const lines = [[A.decRows[0], String(d.length), num3(b1, L)]];
+  if (held.length) lines.push([A.decRows[1], String(held.length), num3(mean(held.map((r) => brier(r.forecast.decomposition.p_if_held, r.outcome))), L)]);
+  return `<h2>${A.decH}</h2><p>${A.decNote}</p>${tbl2(A.decCols, lines)}`;
+}
+function coverageBlock(L) {
+  const A = L.acc;
+  const all = loadCoverage().flatMap((c) => c.events || []);
+  if (!all.length) return `<h2>${A.covH}</h2><p>${A.covNote}</p><p><i>${A.covEmpty}</i></p>`;
+  const cnt = (st, sc) => String(all.filter((e) => e.status === st && e.scope === sc).length);
+  const lines = ['covered', 'dropped', 'missed'].map((st) => [A.covRows[st], cnt(st, 'cz'), cnt(st, 'europe'), cnt(st, 'world')]);
+  const missed = all.filter((e) => e.status === 'missed').slice(-8).map((e) => `<li>${esc(e.title)}${e.note ? ` — <small>${esc(e.note)}</small>` : ''}</li>`).join('');
+  return `<h2>${A.covH}</h2><p>${A.covNote}</p>${tbl2(A.covCols, lines)}${missed ? `<ul class="missed">${missed}</ul>` : ''}`;
 }
 
 function accuracyPage(editions, L) {
@@ -804,13 +879,17 @@ function accuracyPage(editions, L) {
   <div><b>${pctNum(sum.hits / sum.n, L)}</b><span>${A.figs[2]}</span></div>
   <div><b>${num3(sum.log, L).slice(0, -1)}</b><span>${A.figs[3]}</span></div>
 </div>
+${versionBlock(editions, rows, L)}
 <h2>${A.calH}</h2><p>${A.cal}</p>
 <div class="chart">${calibrationSvg(bins, L)}</div>
 <div class="tbl"><table><thead><tr><th>${A.calCols[0]}</th><th class="n">${A.calCols[1]}</th><th class="n">${A.calCols[2]}</th><th class="n">${A.calCols[3]}</th></tr></thead><tbody>${bins.filter((b) => b.n).map((b) => `<tr><td>${b.label}</td><td class="n">${b.n}</td><td class="n">${pctNum(b.meanP, L)}</td><td class="n">${pctNum(b.freq, L)}</td></tr>`).join('')}</tbody></table></div>
 <h2>${A.secH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
 ${benchBlocks(rows, L)}
+${comboBlock(rows, L)}
+${decompBlock(rows, L)}
 ${moreBlocks(editions, rows, L)}
+${coverageBlock(L)}
 ${trackBlock(editions, L)}
 <h2>${A.missH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.missCols[0]}</th><th>${A.missCols[1]}</th><th class="n">${A.missCols[2]}</th><th>${A.missCols[3]}</th></tr></thead><tbody>${worst}</tbody></table></div>

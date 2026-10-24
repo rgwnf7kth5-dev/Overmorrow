@@ -41,13 +41,19 @@ export function mergeUpdate(base) {
   const ed = structuredClone(base);
   for (const s of ed.stories) for (const c of s.claims) c.morning = c.probability;
   const up = loadUpdate(ed.id);
-  if (!up) return ed;
+  if (!up || (!(up.revisions || []).length && !(up.added || []).length)) return ed; // checks only: nothing changes for readers
   ed.update = { frozen_at: up.frozen_at, summary: up.summary, summary_cs: up.summary_cs, revisions: (up.revisions || []).length, added: (up.added || []).length };
   const byClaim = new Map();
   for (const s of ed.stories) for (const c of s.claims) byClaim.set(c.id, c);
   for (const r of up.revisions || []) {
     const c = byClaim.get(r.claim);
     if (!c) continue;
+    if (r.quantiles && isInterval(c)) {
+      c.morning_quantiles = c.quantiles;
+      c.update = { quantiles: r.quantiles, reason: r.reason, reason_cs: r.reason_cs, sources: r.sources || [], frozen_at: up.frozen_at };
+      c.quantiles = r.quantiles;
+      continue;
+    }
     c.update = { probability: r.probability, reason: r.reason, reason_cs: r.reason_cs, sources: r.sources || [], frozen_at: up.frozen_at };
     c.probability = r.probability;
   }
@@ -74,7 +80,7 @@ export function correctionsFor(id, lang = 'en') {
   const map = new Map();
   for (const c of loadCorrections(id)?.corrections || []) {
     const list = map.get(c.story) || [];
-    list.push({ date: c.date, text: lang === 'cs' && c.text_cs ? c.text_cs : c.text, url: c.url });
+    list.push({ date: c.date, kind: c.kind, text: lang === 'cs' && c.text_cs ? c.text_cs : c.text, url: c.url });
     map.set(c.story, list);
   }
   return map;
@@ -313,4 +319,104 @@ export function oddsToProbs(odds) {
   const inv = odds.map((o) => 1 / o);
   const s = inv.reduce((a, b) => a + b, 0);
   return { probs: inv.map((x) => x / s), overround: s - 1 };
+}
+
+// ---------- added 24 Oct 2026: method versions, event windows, coherent numbers, honest scoring ----------
+
+/**
+ * Method version of an edition (METHODOLOGY 12). Editions from config.method_versions[*].from on carry the
+ * version in `method_version`; older ones are classified by number so their record is never rewritten.
+ */
+export function methodVersion(ed, cfg = loadConfig()) {
+  if (typeof ed.method_version === 'number') return ed.method_version;
+  let v = 1;
+  for (const m of cfg.method_versions || []) if (ed.number >= m.from) v = m.version;
+  return v;
+}
+
+/** Offset in ms of an IANA time zone at instant t (local wall time − UTC). Throws on an unknown zone. */
+export function tzOffset(tz, t) {
+  const f = new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const p = Object.fromEntries(f.formatToParts(new Date(t)).map((x) => [x.type, x.value]));
+  return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second) - Math.floor(t / 1000) * 1000;
+}
+/** Instant of a local wall-clock time (YYYY-MM-DD, hh, mm, ss) in an IANA zone. */
+export function zonedTime(date, tz, h = 0, m = 0, s = 0) {
+  const [y, mo, d] = date.split('-').map(Number);
+  const guess = Date.UTC(y, mo - 1, d, h, m, s);
+  let t = guess - tzOffset(tz, guess);
+  t = guess - tzOffset(tz, t);
+  return t;
+}
+export const isZone = (tz) => { try { new Intl.DateTimeFormat('en-US', { timeZone: tz }); return typeof tz === 'string' && tz.includes('/'); } catch { return false; } };
+
+/** Standard normal CDF (Abramowitz–Stegun 7.1.26, error below 1e-7). */
+export function normCdf(z) {
+  const t = 1 / (1 + 0.3275911 * Math.abs(z) / Math.SQRT2);
+  const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-(z * z) / 2);
+  return z >= 0 ? 0.5 * (1 + y) : 0.5 * (1 - y);
+}
+/**
+ * CDF of an interval claim's distribution: a two-piece normal through q10, q50 and q90 (each side has its own
+ * spread, so a skewed range is kept). Used to derive binary claims about the same quantity (METHODOLOGY 4.6).
+ */
+export function intervalCdf(c, x) {
+  const { q10, q50, q90 } = c.quantiles;
+  const z90 = 1.2815516;
+  const s = x < q50 ? (q50 - q10) / z90 : (q90 - q50) / z90;
+  return normCdf((x - q50) / s);
+}
+/** Probability of a derived event on an interval claim: {event: '<' | '>' | 'between' | 'outside', x}. */
+export function derivedProb(c, d) {
+  const F = (x) => intervalCdf(c, x);
+  if (d.event === '<') return F(d.x);
+  if (d.event === '>') return 1 - F(d.x);
+  if (d.event === 'between') return F(d.x[1]) - F(d.x[0]);
+  if (d.event === 'outside') return 1 - (F(d.x[1]) - F(d.x[0]));
+  return null;
+}
+
+const mulberry = (a) => () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+/** Independent events behind a set of claims: one per story (or per `event_key` when a story sets it). */
+export const eventKey = (r) => r.story?.event_key || `${r.edition?.id}:${r.story?.id}`;
+/**
+ * 90% interval of the mean Brier score by a cluster bootstrap: whole events are resampled, because several
+ * claims on one election are not several independent experiences. Deterministic (fixed seed).
+ */
+export function brierInterval(rows, reps = 2000) {
+  const groups = new Map();
+  for (const r of rows) { const k = eventKey(r); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(brier(r.probability, r.outcome)); }
+  const gs = [...groups.values()];
+  if (gs.length < 2) return null;
+  const rnd = mulberry(20261024);
+  const out = [];
+  for (let i = 0; i < reps; i++) {
+    let s = 0, n = 0;
+    for (let j = 0; j < gs.length; j++) { const g = gs[Math.floor(rnd() * gs.length)]; for (const x of g) { s += x; n++; } }
+    out.push(s / n);
+  }
+  out.sort((a, b) => a - b);
+  return { lo: out[Math.floor(0.05 * reps)], hi: out[Math.floor(0.95 * reps)], events: gs.length };
+}
+
+/** Alternative combination rules, scored side by side on the same claims (METHODOLOGY 7). */
+export function altCombos(c) {
+  const ps = (c.forecast?.agents || []).map((a) => a.p).filter((p) => typeof p === 'number' && p > 0 && p < 1);
+  if (ps.length < 3) return null;
+  const sorted = [...ps].sort((a, b) => a - b);
+  const mid = sorted.length / 2;
+  const blind = (c.forecast.agents || []).map((a) => a.p_blind).filter((p) => typeof p === 'number' && p > 0 && p < 1);
+  return {
+    geo: geoMeanOdds(ps),
+    mean: ps.reduce((a, b) => a + b, 0) / ps.length,
+    median: sorted.length % 2 ? sorted[Math.floor(mid)] : (sorted[mid - 1] + sorted[mid]) / 2,
+    blind: blind.length >= 3 ? geoMeanOdds(blind) : null,
+  };
+}
+
+/** Coverage files: which significant events of the forecast day the paper had, dropped or missed (RESOLVER 7). */
+export const COVERAGE_DIR = path.join(ROOT, 'data', 'coverage');
+export function loadCoverage() {
+  if (!fs.existsSync(COVERAGE_DIR)) return [];
+  return fs.readdirSync(COVERAGE_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().map((f) => ({ file: f, ...readJson(path.join(COVERAGE_DIR, f)) }));
 }
