@@ -54,3 +54,7 @@ npx serve dist
 ## Netlify
 
 Connect the repository; `netlify.toml` sets the build command and the `dist` publish directory. Deploy previews for pull requests are used to review each edition before it is merged.
+
+## Photographs (experiment)
+
+Optional illustrative photographs per edition live in `data/images/<edition>.json` (story id → file, alt text, caption, credit, licence, Commons source; Czech `alt_cs`/`caption_cs`), with the image files in `site/photos/<edition>/` (960 px wide JPEG). Only freely licensed photos of places and objects, never people at events that have not happened yet; every photo is credited and marked as illustrative. The edition file itself is never touched; deleting the JSON removes the photos. Not used in the print edition.

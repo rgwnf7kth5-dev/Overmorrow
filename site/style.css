@@ -211,3 +211,13 @@ table.watch details.check{margin-top:4px}
 .wx{grid-template-columns:max-content minmax(0,1fr);column-gap:14px;row-gap:6px}
 .wx span:nth-child(even){text-align:left}
 .wx span:nth-child(odd){font-weight:600}
+
+/* Experimental illustrative photographs (data/images/<edition>.json) */
+.photo{margin:0 0 12px;break-inside:avoid}
+.photo img{display:block;width:100%;height:auto;filter:grayscale(.15) contrast(1.02);border:1px solid var(--hair)}
+.photo figcaption{font-family:var(--sans);font-size:12.5px;line-height:1.4;color:var(--ink-2);padding:5px 0 0;border-bottom:1px solid var(--hair);padding-bottom:6px}
+.photo .credit{color:var(--ink-3);font-size:11.5px}
+.photo .credit a{color:inherit}
+.story.lead .photo{margin-bottom:14px}
+.story.lead .photo img,.story.dlead .photo img{aspect-ratio:16/8;object-fit:cover}
+.hgroup + .photo{margin-top:8px}

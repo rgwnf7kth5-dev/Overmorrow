@@ -10,7 +10,7 @@ const LANGS = ['en', 'cs'];
 // ---------- interface text ----------
 const T = {
   en: {
-    locale: 'en-GB', prefix: '',
+    locale: 'en-GB', prefix: '', photo: 'Illustrative photo',
     motto: 'Tomorrow happens. Overmorrow reports it. You read it today.',
     places: 'Prague · Brussels · World',
     nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method'],
@@ -83,7 +83,7 @@ const T = {
     notFound: ['Page not found', 'Try <a href="{p}/">today’s edition</a> or the <a href="{p}/archive/">archive</a>.'],
   },
   cs: {
-    locale: 'cs-CZ', prefix: '/cs',
+    locale: 'cs-CZ', prefix: '/cs', photo: 'Ilustrační foto',
     motto: 'Zítra se to stane. Pozítří se o tom píše. Vy to čtete dnes.',
     places: 'Praha · Brusel · Svět',
     nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda'],
@@ -331,7 +331,22 @@ function storyHtml(story, results, show, L, opts = {}) {
   const basis = `<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${fixes}${checks}`;
   const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
   const Hx = opts.h || H;
-  return `<div class="hgroup"><div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${Hx}>${esc(story.headline)}</${Hx}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}</div>${content}`;
+  const ph = opts.photo;
+  const photo = ph ? `<figure class="photo"><img src="/photos/${esc(ph.edition)}/${esc(ph.file)}" width="${ph.width}" height="${ph.height}" alt="${esc(ph.alt)}" decoding="async"><figcaption>${esc(ph.caption)} <span class="credit">${L.photo}: ${esc(ph.credit)}, ${ph.license_url ? `<a href="${esc(ph.license_url)}">${esc(ph.license)}</a>` : esc(ph.license)}, <a href="${esc(ph.source_url)}">Wikimedia Commons</a></span></figcaption></figure>` : '';
+  const top = opts.top ?? isLead;
+  return `${top ? photo : ''}<div class="hgroup"><div class="kicker">${story.added ? `<span class="addtag">${L.upd.added}</span> ` : ''}${esc(story.kicker)}</div><${Hx}>${esc(story.headline)}</${Hx}>${story.standfirst ? `<p class="standfirst">${esc(story.standfirst)}</p>` : ''}${lines}</div>${top ? '' : photo}${content}`;
+}
+
+/** Experimental illustrative photographs, kept apart from the frozen edition in data/images/<edition>.json. */
+function photosFor(id, lang) {
+  const f = path.join(ROOT, 'data', 'images', `${id}.json`);
+  if (!fs.existsSync(f)) return {};
+  const out = {};
+  for (const [sid, p] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')).photos || {})) {
+    if (!fs.existsSync(path.join(ROOT, 'site', 'photos', id, p.file))) continue;
+    out[sid] = { ...p, edition: id, alt: (lang === 'cs' && p.alt_cs) || p.alt, caption: (lang === 'cs' && p.caption_cs) || p.caption };
+  }
+  return out;
 }
 
 const spanClass = { half: 's6', third: 's4', quarter: 's3' };
@@ -348,7 +363,8 @@ function editionMain(original, L, isLatest = false) {
   const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
   const tone = (st) => storyTone(st, results);
   const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
-  const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), ...extra })}</article>`; };
+  const photos = photosFor(original.id, L === T.cs ? 'cs' : 'en');
+  const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), photo: photos[st.id], ...extra })}</article>`; };
   const w = ed.weather;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
 
@@ -406,7 +422,7 @@ function editionMain(original, L, isLatest = false) {
     }
     const cols = `style="--fw:${best.sh.toFixed(2)}fr;--hw:${(1 - best.sh).toFixed(2)}fr"`;
     // With two inner columns the whole desk flows, lead included; with one, the lead heads the desk.
-    const desk = (ids, key, title, k, tail = '') => `<section class="desk ${key}${k > 1 ? ' two' : ''}" aria-labelledby="desk-${key}"><h2 class="deskhead" id="desk-${key}">${title}</h2><div class="deskbody">${ids.map((id, i) => art(byId.get(id), i === 0 ? 'dlead' : '', false, { flat: true, h: i === 0 ? 'h3' : 'h4' })).join('')}${tail}</div></section>`;
+    const desk = (ids, key, title, k, tail = '') => `<section class="desk ${key}${k > 1 ? ' two' : ''}" aria-labelledby="desk-${key}"><h2 class="deskhead" id="desk-${key}">${title}</h2><div class="deskbody">${ids.map((id, i) => art(byId.get(id), i === 0 ? 'dlead' : '', false, { flat: true, h: i === 0 ? 'h3' : 'h4', top: i === 0 })).join('')}${tail}</div></section>`;
     // When the domestic desk is still the shorter one, the diary moves into it instead of running across the page.
     const homeShort = est(home, w ? 600 : 0, 1 - best.sh, best.kh) < est(foreign, 0, best.sh, best.kf) * 0.8;
     const diaryBox = ed.diary?.length ? `<div class="box diarybox"><h4>${L.comingUp}</h4><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
@@ -838,6 +854,7 @@ fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'site', 'style.css'), path.join(DIST, 'style.css'));
 for (const f of ['logo.svg', 'favicon.svg']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
+if (fs.existsSync(path.join(ROOT, 'site', 'photos'))) fs.cpSync(path.join(ROOT, 'site', 'photos'), path.join(DIST, 'photos'), { recursive: true });
 
 const editions = loadEditions();
 const latest = editions[editions.length - 1];
