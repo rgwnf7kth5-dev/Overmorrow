@@ -349,8 +349,23 @@ function masthead(L, ed, latestDate, printHref) {
     : `<span>${L.writtenAhead}</span><span>${L.latest}: <a href="${link(L, '/')}">${fmtDate(latestDate, L, DAY)}</a></span>`;
   return `<header>
   <div class="topline"><span>${esc(top)}</span><span>${L.places}</span></div>
-  <div class="mast"><a href="${link(L, '/')}"><img class="logo" src="/logo.svg" width="400" height="400" alt=""><span>The Overmorrow</span></a></div>
-  <p class="motto">${esc(L.motto)}</p>
+  <div class="mast"><a href="${link(L, '/')}"><img class="logo" src="/logo.svg" width="400" height="400" alt=""><span class="mastcol"><span class="title">The Overmorrow</span><span class="motto">${esc(L.motto)}</span></span></a></div>
+  <script>
+  // The motto spans exactly the width of the title, and the logo is as tall as title and motto together.
+  (function () {
+    var col = document.currentScript.previousElementSibling.querySelector('.mastcol'); if (!col) return;
+    var t = col.querySelector('.title'), m = col.querySelector('.motto'), logo = col.parentNode.querySelector('.logo');
+    function fit() {
+      m.style.fontSize = '100px';
+      var w = m.getBoundingClientRect().width, tw = t.getBoundingClientRect().width;
+      if (w && tw) m.style.fontSize = Math.max(11, 100 * tw / w * 0.995) + 'px';
+      if (getComputedStyle(col.parentNode).flexDirection === 'row') { var h = col.getBoundingClientRect().height; logo.style.width = logo.style.height = h + 'px'; }
+      else logo.style.width = logo.style.height = '';
+    }
+    fit(); (document.fonts ? document.fonts.ready : Promise.resolve()).then(fit);
+    var r; window.addEventListener('resize', function () { clearTimeout(r); r = setTimeout(fit, 100); });
+  })();
+  </script>
   <div class="dateline">${line}</div>
 </header>`;
 }
