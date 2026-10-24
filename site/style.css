@@ -225,3 +225,13 @@ table.watch details.check{margin-top:4px}
 /* Accuracy page: small-sample warning */
 .warnbox{border-left:3px solid #b7791f;background:#fbf5e6;padding:10px 14px;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink)}
 ul.missed{font-size:15px}
+
+/* Morning edition by e-mail */
+.signup{border-top:3px double var(--ink);border-bottom:1px solid var(--hair);margin:28px 0 0;padding:16px 0;display:grid;gap:6px}
+.signup h4{margin:0;font-family:var(--sans);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.signup p{margin:0;font-size:15px}
+.signup form{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.signup input[type=email]{flex:1 1 220px;min-width:0;font:inherit;font-size:16px;padding:8px 10px;border:1px solid var(--ink-3);background:#fff;color:var(--ink)}
+.signup button{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.04em;padding:8px 16px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
+.rssline{font-family:var(--sans);font-size:13px;margin:18px 0 0;color:var(--ink-3)}
+.signup .rssline{margin-top:4px}

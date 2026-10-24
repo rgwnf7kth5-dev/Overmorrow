@@ -80,5 +80,11 @@
       "union-of-facts",
       "overnight-facts"
     ]
+  },
+  "newsletter": {
+    "_note": "Morning edition by e-mail: the service reads /feed.xml (English) or /cs/feed.xml (Czech) and sends each new item. Set username to the Buttondown account name to show the sign-up form on the site.",
+    "provider": "buttondown",
+    "username": "",
+    "site": "https://overmorrownews.com"
   }
 }

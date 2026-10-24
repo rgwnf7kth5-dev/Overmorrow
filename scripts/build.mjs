@@ -37,6 +37,8 @@ const T = {
     deadline: 'Deadline', window: 'Event window', evidenceAt: 'Evidence expected', 
     basis: 'Basis', sources: 'Sources', correction: 'Correction', edNote: 'Editor’s note',
     comingUp: 'Coming Up', comingDek: 'Fixed dates for the next fortnight',
+    feed: { title: 'The Overmorrow — morning edition', desc: 'A newspaper written two days ahead: forecasts of tomorrow’s scheduled events, with probabilities, published at 06:00.', item: (date, n) => `${date} (No. ${n})`, notice: (ev) => `Every report below is a forecast of ${ev}, written before the events. The figure is our probability that the line comes true.`, read: 'Read the full edition', results: (date, k, n, b) => `Results of the edition dated ${date}: ${k} of ${n} forecasts went our way (Brier score ${b}).`, more: 'Also in this edition' },
+    signup: { h: 'The morning edition by e-mail', p: 'Every morning at about 06:15: the lead and every forecast of the day, with a link to the full edition. Unsubscribe in one click.', ph: 'your@email', btn: 'Subscribe', rss: 'RSS feed' },
     footer: [
       ['About The Overmorrow', 'A newspaper written two days ahead. Every report describes a scheduled or expected event and states the outcome we consider most likely, with a probability. Nothing is edited after publication.'],
       ['Reading the likelihood bars', 'The figure is our estimated probability that the claim in that line comes true. Over many reports, a 70% call should prove right about seven times in ten. The <a href="{p}/accuracy/">accuracy page</a> shows whether it does.'],
@@ -117,6 +119,8 @@ const T = {
     deadline: 'Termín', window: 'Okno události', evidenceAt: 'Doklad se čeká', 
     basis: 'Podklad', sources: 'Zdroje', correction: 'Oprava', edNote: 'Poznámka redakce',
     comingUp: 'Co nás čeká', comingDek: 'Pevné termíny na příští dva týdny',
+    feed: { title: 'The Overmorrow — ranní vydání', desc: 'Noviny psané dva dny dopředu: predikce zítřejších naplánovaných událostí s pravděpodobnostmi, vychází v 6:00.', item: (date, n) => `${date} (č. ${n})`, notice: (ev) => `Všechny zprávy níže jsou predikce napsané předem (den událostí: ${ev}). Číslo je naše pravděpodobnost, že se daný řádek splní.`, read: 'Celé vydání na webu', results: (date, k, n, b) => `Výsledky vydání z ${date}: vyšlo ${k} z ${n} predikcí (Brierovo skóre ${b}).`, more: 'Dále ve vydání' },
+    signup: { h: 'Ranní vydání e-mailem', p: 'Každé ráno kolem 6:15: hlavní zpráva a všechny predikce dne s odkazem na celé vydání. Odhlášení jedním kliknutím.', ph: 'vas@email.cz', btn: 'Odebírat', rss: 'RSS kanál' },
     footer: [
       ['O novinách The Overmorrow', 'Noviny psané dva dny dopředu. Každá zpráva popisuje naplánovanou nebo očekávanou událost a uvádí výsledek, který považujeme za nejpravděpodobnější, s pravděpodobností. Po vydání se nic neupravuje.'],
       ['Jak číst proužky', 'Číslo je náš odhad pravděpodobnosti, že se tvrzení na daném řádku splní. Z mnoha tipů na 70 % by mělo vyjít zhruba sedm z deseti. Jestli to platí, ukazuje <a href="{p}/accuracy/">stránka přesnosti</a>.'],
@@ -244,6 +248,66 @@ function localise(ed, lang) {
   return c;
 }
 
+// ---------- morning edition by e-mail: RSS feed read by the mailing service, sign-up form ----------
+const NEWS = loadConfig().newsletter || {};
+const SITE = NEWS.site || 'https://overmorrownews.com';
+function signupBox(L) {
+  const S = L.signup;
+  const rss = `<a href="${link(L, '/feed.xml')}">${S.rss}</a>`;
+  if (!NEWS.username) return `<p class="rssline">${rss}</p>`;
+  return `<section class="signup" aria-labelledby="signup-h"><h4 id="signup-h">${S.h}</h4><p>${S.p}</p>
+<form action="https://buttondown.com/api/emails/embed-subscribe/${esc(NEWS.username)}" method="post" target="_blank"><input type="email" name="email" required placeholder="${S.ph}" aria-label="E-mail"><input type="hidden" name="tag" value="${L === T.cs ? 'cs' : 'en'}"><button type="submit">${S.btn}</button></form><p class="rssline">${rss}</p></section>`;
+}
+const rfc822 = (iso) => new Date(Date.parse(iso)).toUTCString();
+const cdata = (h) => `<![CDATA[${h.replaceAll(']]>', ']]]]><![CDATA[>')}]]>`;
+/** E-mail-friendly HTML of one edition, with the morning figures (an afternoon update never changes what was sent). */
+function mailHtml(original, L, editions) {
+  const lang = L === T.cs ? 'cs' : 'en';
+  const ed = localise(original, lang);
+  const byId = new Map(ed.stories.map((x) => [x.id, x]));
+  const url = `${SITE}${link(L, `/edition/${ed.id}/`)}`;
+  const fig = (c) => {
+    if (isInterval(c)) { const q = { ...c, quantiles: c.morning_quantiles || c.quantiles }; return `${esc(c.label)}: <b>${ivNum(q.quantiles.q50, q, L)}</b> (${ivRange(q, L)})`; }
+    const p = c.morning ?? c.probability;
+    return p === null || p === undefined ? '' : `${esc(c.label)}: <b>${pctNum(p, L)}</b>`;
+  };
+  const claimsList = (st) => `<ul>${st.claims.map((c) => fig(c)).filter(Boolean).map((x) => `<li>${x}</li>`).join('')}</ul>`;
+  const lead = byId.get(ed.front.lead);
+  let h = `<p><i>${esc(L.feed.notice(fmtDate(ed.events_date, L, DAY)))}</i></p>`;
+  const dayD = (original.frozen_at || '').slice(0, 10);
+  const scored = editions.find((e) => e.edition_date === dayD);
+  if (scored) { const sm = summarise(scoredClaims([scored])); if (sm) h += `<p>${esc(L.feed.results(fmtDate(scored.edition_date, L, { day: 'numeric', month: 'long' }), sm.hits, sm.n, num3(sm.brier, L)))} <a href="${SITE}${link(L, `/edition/${scored.id}/`)}">→</a></p>`; }
+  if (lead) h += `<p><small>${esc(lead.kicker)}</small></p><h2><a href="${url}">${esc(lead.headline)}</a></h2>${lead.standfirst ? `<p>${esc(lead.standfirst)}</p>` : ''}${claimsList(lead)}`;
+  const seen = new Set([ed.front.lead]);
+  const rail = (ed.front.rail || []).map((id) => byId.get(id)).filter(Boolean);
+  const groups = [];
+  if (rail.length) groups.push({ name: L.feed.more, stories: rail });
+  for (const sec of ed.sections || []) if (!sec.update) groups.push({ name: sec.name, stories: (sec.stories || []).map((id) => byId.get(id)).filter(Boolean) });
+  for (const g of groups) {
+    const list = g.stories.filter((x) => !seen.has(x.id));
+    if (!list.length) continue;
+    h += `<h3>${esc(g.name)}</h3>`;
+    for (const st of list) { seen.add(st.id); h += `<p><b>${esc(st.headline)}</b></p>${claimsList(st)}`; }
+  }
+  h += `<p><a href="${url}"><b>${L.feed.read} →</b></a></p><p><small>${esc(L.motto)}</small></p>`;
+  return h;
+}
+function feedXml(editions, L) {
+  const lang = L === T.cs ? 'cs' : 'en';
+  const items = [...editions].reverse().slice(0, 10).map((e) => {
+    const ed = localise(e, lang);
+    const lead = ed.stories.find((x) => x.id === ed.front.lead);
+    const url = `${SITE}${link(L, `/edition/${e.id}/`)}`;
+    return `<item><title>${esc(L.feed.item(fmtDate(e.edition_date, L), e.number))}: ${esc(lead?.headline || '')}</title><link>${url}</link><guid isPermaLink="true">${url}</guid><pubDate>${rfc822(e.frozen_at)}</pubDate><description>${esc(lead?.standfirst || lead?.headline || '')}</description><content:encoded>${cdata(mailHtml(e, L, editions))}</content:encoded></item>`;
+  }).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><title>${esc(L.feed.title)}</title><link>${SITE}${link(L, '/')}</link><description>${esc(L.feed.desc)}</description><language>${lang}</language><atom:link href="${SITE}${link(L, '/feed.xml')}" rel="self" type="application/rss+xml"/>
+${items}
+</channel></rss>
+`;
+}
+
 // ---------- page frame ----------
 function layout(L, { title, nav, header, main, description, path: pagePath }) {
   const keys = ['today', 'watch', 'archive', 'accuracy', 'method'];
@@ -259,6 +323,7 @@ function layout(L, { title, nav, header, main, description, path: pagePath }) {
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="${pagePath}">
 <link rel="alternate" hreflang="cs" href="/cs${pagePath}">
+<link rel="alternate" type="application/rss+xml" title="${esc(L.feed.title)}" href="${link(L, '/feed.xml')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap">
@@ -269,6 +334,7 @@ function layout(L, { title, nav, header, main, description, path: pagePath }) {
 ${header}
 <nav class="nav" aria-label="Sections">${keys.map((k, i) => `<a href="${link(L, hrefs[i])}"${k === nav ? ' aria-current="page"' : ''}>${L.nav[i]}</a>`).join('')}<a class="lang" href="${link(other, pagePath)}" hreflang="${L.otherLang}">${L.other}</a></nav>
 ${main}
+${signupBox(L)}
 <footer>${L.footer.map(([h, p]) => `<div><h4>${h}</h4><p>${fill(p, L)}</p></div>`).join('')}</footer>
 </div>
 </body>
@@ -955,6 +1021,7 @@ for (const lang of LANGS) {
   const plain = masthead(L, null, latest.edition_date);
   write(`${pre}watch/index.html`, layout(L, { title: `${L.watch.h} — The Overmorrow`, nav: 'watch', header: plain, main: watchPage(L), path: '/watch/' }));
   write(`${pre}archive/index.html`, layout(L, { title: `${L.archive.h} — The Overmorrow`, nav: 'archive', header: plain, main: archivePage(editions, L), path: '/archive/' }));
+  fs.writeFileSync(path.join(DIST, `${pre}feed.xml`), feedXml(editions, L));
   write(`${pre}accuracy/index.html`, layout(L, { title: `${L.acc.h} — The Overmorrow`, nav: 'accuracy', header: plain, main: accuracyPage(editions, L), path: '/accuracy/' }));
   const mdFile = path.join(ROOT, lang === 'en' ? 'METHODOLOGY.md' : 'METHODOLOGY.cs.md');
   const method = fs.readFileSync(fs.existsSync(mdFile) ? mdFile : path.join(ROOT, 'METHODOLOGY.md'), 'utf8');
