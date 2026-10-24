@@ -76,7 +76,10 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .scorebar small{flex-basis:100%;font-size:12.5px;color:var(--ink-3)}.stamp.void{color:var(--void)}.stamp.pending{color:var(--ink-3);border-style:dashed}
 .resnote{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);margin:-4px 0 10px}
 
-.basis{font-family:var(--sans);font-size:13px;color:var(--ink-3);border-top:1px solid var(--hair);padding-top:7px;margin-top:6px;line-height:1.45}
+.basis{font-family:var(--sans);font-size:13px;color:var(--ink-3);margin:6px 0 0;line-height:1.45}
+details.basisbox{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--hair);padding-top:6px;margin-top:6px}
+details.basisbox>summary{cursor:pointer;color:var(--ink-2);list-style-position:inside}
+details.basisbox[open]>summary{margin-bottom:2px}
 .basis a{color:var(--ink-2)}
 details.check{font-family:var(--sans);font-size:12.5px;color:var(--ink-3);margin-top:4px}
 details.check summary{cursor:pointer;color:var(--ink-2)}
