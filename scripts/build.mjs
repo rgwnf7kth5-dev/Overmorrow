@@ -471,7 +471,7 @@ function editionMain(original, L, isLatest = false) {
 
   // Front page balance: the lead column (8/12) and the rail (4/12) should end level. Estimate heights from text
   // length per column width; while the rail is clearly taller, move the first story of the sections up under the lead.
-  const textLen = (st) => 260 + [st.headline, st.standfirst || '', ...st.body, st.basis, ...(st.sources || []).map((x) => x.title)].join(' ').length;
+  const textLen = (st) => 120 + [st.headline, st.standfirst || '', ...st.body].join(' ').length; // basis and sources are folded
   const railH = ed.front.rail.reduce((a, id) => a + textLen(byId.get(id)), 0) / 4 + (w ? 500 / 4 : 0);
   let leadH = (textLen(byId.get(ed.front.lead)) + 200) / 8;
   const secs = (ed.sections || []).map((sec) => ({ ...sec, stories: [...sec.stories] }));
@@ -597,7 +597,7 @@ function printPage(original, L) {
     const table = s.table ? `<table>${s.table.rows.map((row) => { const c = s.claims.find((x) => x.id === row.claim); return `<tr><td>${esc(row.label)}</td><td>${c ? pctNum(c.probability, L) : ''}</td></tr>`; }).join('')}</table>` : '';
     const paras = s.body.map((t, i) => `<p class="${i === 0 ? 'first' : lead ? 'extra lead-extra' : 'extra'}">${esc(t)}</p>`).join('');
     const t = storyTone(s, results);
-    return `<article class="${lead ? 'lead' : 'st'}${t.cls}"${t.style}><div class="kick">${esc(s.kicker)}</div><h${lead ? 2 : 3}>${esc(s.headline)}</h${lead ? 2 : 3}>${lead && s.standfirst ? `<p class="stand">${esc(s.standfirst)}</p>` : ''}${lines}${lead ? `<div class="leadcols">${paras}${table}</div>` : paras + table}<p class="basis">${L.basis}: ${esc(s.basis.replace(/^(Basis|Podklad):\s*/i, ''))}</p></article>`;
+    return `<article class="${lead ? 'lead' : 'st'}${t.cls}"${t.style}><div class="kick">${esc(s.kicker)}</div><h${lead ? 2 : 3}>${esc(s.headline)}</h${lead ? 2 : 3}>${lead && s.standfirst ? `<p class="stand">${esc(s.standfirst)}</p>` : ''}${lines}${lead ? `<div class="leadcols">${paras}${table}</div>` : paras + table}</article>`;
   };
   const order = [...ed.front.rail, ...ed.sections.flatMap((x) => x.stories)];
   const secOf = new Map(); ed.sections.forEach((x) => x.stories.forEach((id, i) => { if (i === 0) secOf.set(id, x.name); }));
