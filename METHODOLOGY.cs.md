@@ -37,7 +37,6 @@ Každé vydání začíná průchodem oficiálních kalendářů na den D+1. Sez
 - **Evropská unie:** program pléna Parlamentu, výhled Rady a kalendář předsednictví, program kolegia Komise, soudní kalendář Soudního dvora, kalendář ECB, kalendář Eurostatu.
 - **Soudy:** naplánované rozsudky mezinárodních a vrcholných národních soudů.
 - **Věda, zdraví a kultura:** starty raket (ESA, NASA a další), WHO, velké ceny a vyhlášení, velké festivaly a premiéry.
-- **Počasí:** ČHMÚ a národní služby (jen pro informaci, obvykle se nehodnotí).
 
 ### 2.2 Probíhající kauzy
 

@@ -37,7 +37,6 @@ Every edition starts with a sweep of official calendars for day D+1. The registr
 - **European Union:** Parliament plenary agenda, the Council's forward look and the rotating Presidency's calendar, the Commission's College agenda, the Court of Justice judicial calendar, ECB monetary policy calendar, Eurostat release calendar.
 - **Courts:** scheduled verdicts and rulings of international and high national courts.
 - **Science, health and culture:** launch schedules (ESA, NASA, others), WHO, major prizes and announcements, large festivals and premieres.
-- **Weather:** ČHMÚ and ECMWF-based national services (shown for information; normally not scored).
 
 ### 2.2 The running-story sweep
 

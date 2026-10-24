@@ -449,7 +449,8 @@ function editionMain(original, L, isLatest = false) {
   const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
   const photos = photosFor(original.id, L === T.cs ? 'cs' : 'en');
   const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), photo: photos[st.id], ...extra })}</article>`; };
-  const w = ed.weather;
+  // The weather box was dropped on 24 October 2026: a forecast of D+1 weather reads as a report of weather already past.
+  const w = null;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
 
   // Front page balance: the lead column (8/12) and the rail (4/12) should end level. Estimate heights from text
@@ -585,7 +586,7 @@ function printPage(original, L) {
   const order = [...ed.front.rail, ...ed.sections.flatMap((x) => x.stories)];
   const secOf = new Map(); ed.sections.forEach((x) => x.stories.forEach((id, i) => { if (i === 0) secOf.set(id, x.name); }));
   const flow = order.map((id) => `${secOf.has(id) ? `<h4 class="sec">${esc(secOf.get(id))}</h4>` : ''}${story(byId.get(id), false)}`).join('');
-  const w = ed.weather;
+  const w = null; // weather box dropped (see editionMain)
   const extras = `${w ? `<div class="box"><h4>${esc(w.title)}</h4>${w.rows.map(([a, b]) => `<div class="row"><span>${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>` : ''}${ed.diary?.length ? `<div class="box"><h4>${L.comingUp}</h4>${ed.diary.map((d) => `<p><b>${esc(d.date)}</b> ${esc(d.text)}</p>`).join('')}</div>` : ''}`;
   const site = `${L.prefix}/edition/${ed.id}/`;
   return `<!doctype html>

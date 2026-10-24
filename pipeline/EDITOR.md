@@ -147,11 +147,11 @@ Write `data/editions/<D+2>.json` in the format of the latest edition. Rules:
 - Each story ends with a `basis` line. No forecasts of deaths, accidents, disasters, crimes or anyone's health; no private individuals. No invented quotations or figures.
 - Where a story moves a question on the forecast board, add `"watch": ["question-id"]` and mention the board figure in the body.
 - `meta`: `{"candidates": <pool size>, "unreachable": [sources that failed]}`.
-- `diary`, `weather` (never empty; fallbacks in `sources.json`), `number` = previous + 1.
+- `diary`, `number` = previous + 1. No `weather`: the box was dropped on 24 October 2026 (a forecast of the next day's weather reads, in a paper dated the day after, as a report of weather already past).
 
 ## 6b. Czech version
 
-Each story gets a `cs` object (`kicker`, `headline`, `standfirst` for a lead, `body`, `basis`, `table`, `claims` keyed by id with `label`, `text`, `criterion`). The edition gets a top-level `cs` with `weather`, `diary` and `layout` (`front` with `lead` and `rail`, `sections` with `name`, `dek`, `stories`). A Czech story that leads the Czech edition needs a Czech standfirst even if it is not the English lead.
+Each story gets a `cs` object (`kicker`, `headline`, `standfirst` for a lead, `body`, `basis`, `table`, `claims` keyed by id with `label`, `text`, `criterion`). The edition gets a top-level `cs` with `diary` and `layout` (`front` with `lead` and `rail`, `sections` with `name`, `dek`, `stories`). A Czech story that leads the Czech edition needs a Czech standfirst even if it is not the English lead.
 
 Translate faithfully into natural Czech newspaper prose (ČTK style), Czech date and number formats; identical numbers, probabilities and deadlines. **Foreign women's surnames are never feminised** (Roberta Metsola, Kaja Kallas, Iliana Iotova; předsedkyně Metsola, s Kajou Kallas). Czech and Slovak women keep their own forms.
 
