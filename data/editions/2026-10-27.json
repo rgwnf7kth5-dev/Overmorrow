@@ -1,0 +1,2313 @@
+{
+ "id": "2026-10-27",
+ "number": 5,
+ "method_version": 3,
+ "edition_date": "2026-10-27",
+ "events_date": "2026-10-26",
+ "frozen_at": "2026-10-25T05:12:00+01:00",
+ "front": {
+  "lead": "br-aftermath",
+  "rail": [
+   "cz-confidence",
+   "cz-pardubice"
+  ]
+ },
+ "sections": [
+  {
+   "name": "World",
+   "dek": "Serbia and Bulgaria count, Toronto chooses a mayor",
+   "stories": [
+    "rs-election",
+    "bg-election",
+    "ca-toronto"
+   ]
+  },
+  {
+   "name": "Europe",
+   "dek": "German business mood, Baltic fishing quotas",
+   "stories": [
+    "de-ifo",
+    "eu-agrifish"
+   ]
+  },
+  {
+   "name": "Czech Republic",
+   "dek": "Babiš in Algiers, Prague’s coalition",
+   "stories": [
+    "cz-algeria",
+    "cz-prague"
+   ]
+  }
+ ],
+ "stories": [
+  {
+   "id": "br-aftermath",
+   "scope": "world",
+   "size": "lead",
+   "kicker": "Brazil · After the runoff",
+   "headline": "Brazil's Defeated Candidate Concedes the Presidency Within a Day",
+   "standfirst": "Whoever lost Sunday's knife-edge runoff between President Lula and Flávio Bolsonaro was expected to recognise the result by Monday night, as most beaten runoff candidates have done since 2002. The exception, in 2022, was the Bolsonaro family's own.",
+   "body": [
+    "The candidate who lost Brazil's presidential runoff on Sunday 25 October was expected to recognise his opponent's victory in his own words by the end of Monday, and our forecast put the chance of that at 75%. The test we set was strict. It counted only a statement by the loser himself that his opponent had won, or congratulations to the winner, made before 23:59 Brasília time on Monday, which was 03:59 CET on Tuesday. Words from aides, ministers or relatives did not count, nor did appeals for calm, thanks to voters or promises to respect the Constitution that stopped short of naming the result.",
+    "The contest was as close as any in the country's recent history. All seven polls collected by Gazeta do Povo on the eve of the vote put Flávio Bolsonaro numerically ahead, but none by more than its margin of error. Datafolha, with 4,050 interviews on 23–24 October, gave him 51% of valid votes against 49% for Luiz Inácio Lula da Silva; Quaest, with 3,702 interviews over the same two days, showed the same split. AtlasIntel had 50.8% to 49.2% and Gerp, the widest, 52% to 48%.",
+    "Both men had said in advance that they would accept the outcome. Lula told Der Spiegel in April, in remarks carried by Agência O Globo, that ‘when the people take a decision, whether of the right, the left or the centre, we have to accept that result’. Voting in São Bernardo do Campo in the first round on 4 October, he said, according to Bahia Notícias, that the people were sovereign and their verdict would be accepted by all 215 million Brazilians. Flávio, asked on Band's Canal Livre programme on 2 August whether he would accept the result, answered: ‘I will accept it; I will run under these rules.’ He said the electoral court would this time be impartial, unlike in 2022, and that he was asking only for ‘more layers of security and transparency’, not speaking against the voting machines, Folhapress reported.",
+    "History favoured a quick concession. According to a Folhapress review of past runoffs, José Serra telephoned Lula at 21:10 on election night in 2002 ‘to recognise your victory’; Geraldo Alckmin called Lula to congratulate him in 2006; Serra admitted defeat in a statement at 22:35 in 2010; and Aécio Neves phoned Dilma Rousseff in 2014. Fernando Haddad did not concede on the night in 2018, but the next day he wrote on Twitter: ‘President Jair Bolsonaro. I wish you success. Our country deserves the best,’ Poder360 recalled.",
+    "The exception was 2022. Jair Bolsonaro said nothing on election night after losing to Lula, and it was his chief of staff, Ciro Nogueira, who spoke about the transition. When he finally spoke on 1 November, in an address of about two minutes, he neither named Lula nor directly acknowledged defeat, according to Poder360. Counting that case, five of the six runoff losers since 2002 met our test in time.",
+    "The forecast rested heavily on who lost. A defeated Lula, a sitting president with a public pledge on record, looked very likely to concede, which we put at about four in five. A defeated Flávio looked closer to an even chance: his August pledge and a court he described as impartial pointed one way, his father's silence in 2022 and his own earlier doubts about the machines the other. Because the final polls leaned slightly towards Flávio, Lula was the likelier loser, which lifted the overall figure.",
+    "The main risk was the margin itself. With every final poll inside its margin of error, a result decided by a few hundred thousand votes could have tempted the loser to wait for the full count, ask for an audit, or offer only a hedged statement that thanked voters without saying who had won. Any of those would have meant a ‘no’ on our board."
+   ],
+   "claims": [
+    {
+     "id": "br-loser-concedes",
+     "label": "Runoff loser concedes",
+     "text": "The candidate who loses Brazil's 25 October presidential runoff (Lula or Flávio Bolsonaro) publicly acknowledges defeat or congratulates the winner by 23:59 Brasília time on 26 October.",
+     "criterion": "YES if, between 06:00 BRT on 25 Oct 2026 and 23:59 BRT on 26 Oct 2026, the losing candidate (fewer valid votes in the TSE count) himself, in a speech, interview, video, a phone call made public by him or the winner, or a post on his own verified social-media account, recognises that his opponent won (e.g. 'reconheço a vitória', 'perdemos', calls him 'presidente eleito') or congratulates the winner or wishes him success as president. Statements by aides, party leaders, ministers or relatives do not count; nor do statements that only thank voters, promise to keep fighting, call for calm or pledge to respect the Constitution without recognising the outcome. NO if the losing candidate makes no such statement in the window, including if the runoff is not held on 25 Oct.",
+     "resolution_source": "Losing candidate's own verified X/Instagram accounts and speech coverage by Agência Brasil, Folha de S.Paulo and G1",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "Election-night speeches from about 20:00 BRT on 25 Oct (01:00 CET 26 Oct); any statement by 23:59 BRT on 26 Oct (03:59 CET 27 Oct), reported live by Agência Brasil, Folha, G1",
+     "tz": "America/Sao_Paulo",
+     "event_window": {
+      "start": "2026-10-25T06:00:00-03:00",
+      "end": "2026-10-26T23:59:59-03:00"
+     },
+     "evidence_at": "2026-10-27T03:59:00+01:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.75,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:26Z",
+        "p_blind": 0.68,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.74,
+        "p_held": 0.99,
+        "p_if_held": 0.75,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:19Z",
+        "reason": "Base class 5/7 (electronic era 5/6). Signals: no market on concession, but Polymarket puts Lula as the loser in ~83% of scenarios. Lula conceding (~0.85) is likelier than Flávio conceding (~0.5), so the mixture comes to ~0.79 (+0.4 log-odds over blind). Shaded back for a likely close margin (Flávio <4% at 0.385, which invites delay or audits) and for the strict wording."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:17:40Z",
+        "p_blind": 0.74,
+        "inputs_blind": [
+         "own-research"
+        ],
+        "p": 0.77,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:12:30Z",
+        "reason": "Base rate 5/6 in the electronic era. Weight on Lula being the loser rises to ~0.7: Polymarket has Flávio at 0.83, while the Datafolha of 20-22 Oct is tied 50-50, so I blend. A sitting Lula with public pledges ('temos que aceitar') concedes with ~0.88; a losing Flávio concedes with ~0.55 (August pledge vs the 2022 family precedent). A close margin (market ~0.5 that it is under 4 pp) is the main risk of a hedged or late statement. Up ~+0.15 log-odds from the blind estimate."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:19:00Z",
+        "p_blind": 0.67,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.72,
+        "p_held": 0.99,
+        "p_if_held": 0.73,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:15:00Z",
+        "reason": "No market on concession itself. The signals move the loser mixture: Polymarket (liquid, ~$650k) has Flávio 0.83, so Lula is the loser in ~83% of scenarios rather than my blind ~68%, and Lula (sitting president, April pledge, transition law, 'o povo decidiu' counts) concedes in 31 h at ~0.80 against ~0.50 for Flávio. The margin ladder also has P(margin <4) only ~0.53 (vs ~0.74 in yesterday's edition), so a wider, less contestable result is more likely. Mixture 0.83×0.80 + 0.17×0.50 ≈ 0.75, shaved ~0.1 log-odds for resolver strictness on hedged wording → 0.73 if held.",
+        "note": "While reading edition No. 4 for background during the blind step it saw stale market lines on other questions (Brazil winner, Bulgaria margins); none on these five claims; recorded by the agent."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:13:00Z",
+        "p": 0.73,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor 0.714 (5/7). Polymarket winner market (Flávio 0.8305, vol ~$30m, re-read 17:11Z) puts Lula as the likely loser (~83%); a sitting president who said he would accept the result probably recognises it (~0.8), while a Flávio loss carries the 2022 family-silence precedent (~0.5): mix ~0.75. Small trim for a very close margin (polls 49–51) delaying recognition and for strict wording rules (hedged statements do not count); x0.99 held.",
+        "anchor": {
+         "source": "base rate (dossier/claim spec): Brazilian runoff losers conceding by end of next day",
+         "url": "https://www.acessa.com/politica/2022/11/106759-veja-como-foram-os-discursos-de-candidatos-derrotados-em-outras-eleicoes-presidenciais-no-brasil.html",
+         "price": 0.714,
+         "read_time": "2026-10-24T16:58Z (dossier)",
+         "liquidity": "n/a (no market on concession; n=7, electronic era 5/6)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:20:17Z",
+        "p_blind": 0.72,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.77,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:05Z",
+        "reason": "Polymarket gives Lula losing in about 83% of scenarios; he said he would accept and conceded before (~85%), Flavio ~55%, giving ~0.80. Close-margin ladder (about 39% under 4 pts) costs a few points. Blind 0.72, raised +0.3 log-odds."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.747,
+      "combined_blind": 0.703,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.05,
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.758,
+       "p_if_not_held": 0
+      },
+      "base_rate": {
+       "class": "Brazilian presidential runoff loser acknowledges defeat or congratulates winner by end of the day after the vote",
+       "rate": 0.714,
+       "n": 7,
+       "source": "1989–2022 runoffs: yes 2002, 2006, 2010, 2014, 2018; no 1989 (paper count, ~2 days), 2022 (Bolsonaro, ~45 h, no explicit concession) — acessa.com, poder360.com.br, agazeta.com.br; electronic era 5/6"
+      },
+      "market": null,
+      "market_note": "No market on concession; Polymarket's winner market (Flávio 0.83) only informs who is likely to concede.",
+      "dossier": "data/dossiers/2026-10-27/br-loser-concedes.md",
+      "signals": "data/dossiers/2026-10-27/br-loser-concedes.signals.md"
+     }
+    }
+   ],
+   "basis": "Base rate of Brazilian runoff losers conceding by the next day (five of six since 2002), both candidates' public pledges to accept the result and the eve-of-vote polls; main risk: a margin of a point or two prompting a delayed, hedged or audit-first response, especially if Flávio Bolsonaro lost.",
+   "sources": [
+    {
+     "title": "Gazeta do Povo: what the polls said on the eve of the runoff (24 Oct 2026)",
+     "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/o-que-dizem-as-pesquisas-para-presidente-na-vespera-do-segundo-turno/"
+    },
+    {
+     "title": "TVT News: Quaest eve-of-runoff poll, fieldwork 23–24 Oct, 3,702 voters",
+     "url": "https://tvtnews.com.br/quaest-pesquisa-para-presidente-2-turno-lula-flavio/"
+    },
+    {
+     "title": "Jornal de Brasília/Folhapress: Flávio says he will accept the result (3 Aug 2026)",
+     "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/flavio-bolsonaro-diz-que-vai-aceitar-resultado-das-urnas-e-que-tse-e-diferente-de-2022/"
+    },
+    {
+     "title": "Folha de Pernambuco/Agência O Globo: Lula to Der Spiegel, 'we have to accept' (17 Apr 2026)",
+     "url": "https://www.folhape.com.br/politica/quando-povo-toma-decisao-temos-que-aceitar-diz-lula-sobre-eventual/481550/"
+    },
+    {
+     "title": "Bahia Notícias: Lula votes in São Bernardo, says result will be respected (4 Oct 2026)",
+     "url": "https://www.bahianoticias.com.br/noticia/321917-lula-registra-voto-em-sao-bernardo-e-diz-que-resultado-das-urnas-sera-respeitado"
+    },
+    {
+     "title": "Acessa/Folhapress: how defeated presidential candidates conceded (1 Nov 2022)",
+     "url": "https://www.acessa.com/politica/2022/11/amp/106759-veja-como-foram-os-discursos-de-candidatos-derrotados-em-outras-eleicoes-presidenciais-no-brasil.html"
+    },
+    {
+     "title": "Poder360: in 2018 Haddad did not call Bolsonaro and avoided speaking of defeat (1 Nov 2022)",
+     "url": "https://www.poder360.com.br/eleicoes/em-2018-haddad-nao-ligou-para-bolsonaro-e-evitou-falar-em-derrota/"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. br-loser-concedes: base-rate 0.74, evidence 0.77, adversarial 0.72, anchor 0.73, outsider 0.77; combined 0.747, published 0.75; base rate Brazilian presidential runoff loser acknowledges defeat or congratulates winner by end of the day after the vote 0.714. Main risk: a narrow Flávio defeat answered only with \"respect for the Constitution\", as in 2022, which would resolve no.",
+   "cs": {
+    "kicker": "Brazílie · Po druhém kole",
+    "headline": "Poražený kandidát v Brazílii do druhého dne uznal porážku",
+    "standfirst": "Ať už nedělní vyrovnané druhé kolo mezi prezidentem Lulou a Flávio Bolsonarem prohrál kdokoli, očekávalo se, že výsledek uzná do pondělní noci, jak to od roku 2002 udělala většina poražených ve druhém kole. Výjimkou byl v roce 2022 právě Bolsonarův rod.",
+    "body": [
+     "Od kandidáta, který v neděli 25. října prohrál druhé kolo brazilských prezidentských voleb, se čekalo, že do konce pondělí vlastními slovy uzná vítězství soupeře. Naše předpověď to odhadovala na 75 %. Podmínka byla přísná: počítalo se jen prohlášení samotného poraženého, že soupeř zvítězil, případně blahopřání vítězi, a to do 23:59 brasilijského času v pondělí, tedy do 3:59 SEČ v úterý. Nepočítala se slova poradců, ministrů ani příbuzných, ani výzvy ke klidu, poděkování voličům či sliby dodržovat ústavu, které výsledek přímo nepojmenovaly.",
+     "Souboj byl tak těsný jako málokterý v nedávné historii země. Všech sedm průzkumů, které v předvečer hlasování shrnul list Gazeta do Povo, vidělo Flávia Bolsonara početně vpředu, žádný však o víc, než činila statistická chyba. Datafolha mu po 4050 rozhovorech ve dnech 23. a 24. října přisoudila 51 % platných hlasů proti 49 % pro Luize Inácia Lulu da Silvu; stejný poměr ukázala Quaest po 3702 rozhovorech ve stejných dnech. AtlasIntel naměřil 50,8 % proti 49,2 % a Gerp, s největším rozdílem, 52 % proti 48 %.",
+     "Oba muži předem slíbili, že výsledek přijmou. Lula v dubnu řekl časopisu Der Spiegel, jak citovala agentura O Globo, že „když lid rozhodne, ať napravo, nalevo, nebo ve středu, musíme ten výsledek přijmout“. Při hlasování v prvním kole 4. října v São Bernardu do Campo podle serveru Bahia Notícias prohlásil, že lid je suverénní a jeho verdikt přijme všech 215 milionů Brazilců. Flávio na otázku pořadu Canal Livre stanice Band 2. srpna, zda výsledek přijme, odpověděl: „Přijmu ho, budu kandidovat podle těchto pravidel.“ Podle agentury Folhapress dodal, že volební soud bude tentokrát na rozdíl od roku 2022 nestranný a že žádá jen „víc vrstev zabezpečení a transparentnosti“, nikoli že by vystupoval proti volebním přístrojům.",
+     "Historie hovořila pro rychlé uznání porážky. Podle přehledu agentury Folhapress José Serra v roce 2002 ve volební noci ve 21:10 zatelefonoval Lulovi, „aby uznal jeho vítězství“; Geraldo Alckmin v roce 2006 Lulovi zavolal s gratulací; Serra v roce 2010 uznal porážku v prohlášení ve 22:35 a Aécio Neves v roce 2014 zatelefonoval Dilmě Rousseff. Fernando Haddad v roce 2018 porážku ve volební noci neuznal, druhý den však na Twitteru napsal: „Pane prezidente Jaire Bolsonaro, přeji vám úspěch. Naše země si zaslouží to nejlepší,“ připomněl server Poder360.",
+     "Výjimkou byl rok 2022. Jair Bolsonaro po porážce s Lulou ve volební noci mlčel a o předání moci mluvil šéf jeho kanceláře Ciro Nogueira. Když 1. listopadu konečně promluvil, v asi dvouminutovém projevu Lulu nejmenoval ani porážku přímo neuznal, uvedl Poder360. Včetně tohoto případu splnilo naši podmínku včas pět ze šesti poražených ve druhém kole od roku 2002.",
+     "Předpověď do velké míry závisela na tom, kdo prohraje. U poraženého Luly – úřadujícího prezidenta s veřejným slibem – jsme uznání považovali za velmi pravděpodobné, zhruba čtyři ku pěti. U poraženého Flávia šlo spíš o vyrovnanou šanci: pro hovořil jeho srpnový slib a soud, který označil za nestranný, proti mlčení jeho otce v roce 2022 a jeho vlastní dřívější pochybnosti o volebních přístrojích. Protože závěrečné průzkumy mírně favorizovaly Flávia, pravděpodobnějším poraženým byl Lula, což celkový odhad zvýšilo.",
+     "Hlavním rizikem byl samotný rozdíl. Když všechny závěrečné průzkumy ležely v mezích statistické chyby, výsledek rozhodnutý několika sty tisíci hlasů mohl poraženého svádět k čekání na úplné sečtení, k žádosti o audit nebo jen k vyhýbavému prohlášení, které poděkuje voličům, ale neřekne, kdo vyhrál. Cokoli z toho by na naší tabuli znamenalo „ne“."
+    ],
+    "basis": "Základní míra uznání porážky poraženými ve druhém kole brazilských voleb do druhého dne (pět ze šesti od roku 2002), veřejné sliby obou kandidátů přijmout výsledek a průzkumy z předvečera voleb; hlavní riziko: rozdíl jednoho či dvou bodů, který by vedl k opožděné, vyhýbavé reakci nebo k požadavku auditu, zejména při porážce Flávia Bolsonara.",
+    "claims": {
+     "br-loser-concedes": {
+      "label": "Poražený uzná porážku",
+      "text": "Kandidát, který prohraje nedělní druhé kolo brazilských prezidentských voleb (Lula, nebo Flávio Bolsonaro), do 23:59 brasilijského času 26. října veřejně uzná porážku nebo poblahopřeje vítězi.",
+      "criterion": "ANO, pokud mezi 6:00 brasilijského času 25. 10. 2026 a 23:59 brasilijského času 26. 10. 2026 poražený kandidát (méně platných hlasů podle sčítání TSE) sám – v projevu, rozhovoru, videu, telefonátu, který zveřejní on nebo vítěz, nebo v příspěvku na svém ověřeném účtu na sociálních sítích – uzná, že soupeř zvítězil (např. „uznávám vítězství“, „prohráli jsme“, nazve jej „zvoleným prezidentem“), nebo vítězi poblahopřeje či mu popřeje úspěch v úřadu. Nepočítají se vyjádření poradců, stranických předáků, ministrů ani příbuzných ani prohlášení, která jen děkují voličům, slibují další boj, vyzývají ke klidu nebo slibují dodržovat ústavu, aniž by uznala výsledek. NE, pokud poražený kandidát v tomto okně nic takového neřekne, a to i tehdy, kdyby se druhé kolo 25. 10. nekonalo."
+     }
+    }
+   }
+  },
+  {
+   "id": "cz-algeria",
+   "scope": "cz",
+   "size": "half",
+   "kicker": "Czech Republic · Energy",
+   "headline": "No gas deal on the first day of Babiš's Algeria visit",
+   "body": [
+    "Andrej Babiš's two-day visit to Algeria had been billed since June as a trip to buy gas, but the first day, Monday 26 October, was not expected to produce a signed gas document. According to the programme the Government Office released on 22 October, as reported by ČTK, the prime minister and the industry and trade minister, Karel Havlíček, were to fly out on Monday morning with a business delegation, meet President Abdelmadjid Tebboune and Prime Minister Sifi Ghrieb, and open a Czech–Algerian business forum. A visit to the tram maker Setram was set for Tuesday.",
+    "The talks were to cover trade, investment, energy and the defence industry. ČTK's preview named no agreement or memorandum, and did not list gas as a topic, although the last Czech ministerial visit, by Jozef Síkela in 2022, had discussed possible Algerian gas supplies.",
+    "A commercial link already exists. ČEZ has bought Algerian gas from Sonatrach since October 2024 and extended the contract in October 2025, ČEZ told ČTK; the deliveries cover just over 2% of Czech annual consumption, and the terms were not disclosed.",
+    "Our forecast put the chance of a Czech–Algerian gas agreement, contract or memorandum being signed by midnight on Monday at 37%. A new ČEZ–Sonatrach deal would have been a natural deliverable, but none was announced in advance, and any signing could have fallen on Tuesday, outside the window."
+   ],
+   "claims": [
+    {
+     "id": "cz-algeria-gas-agreement",
+     "label": "Czech–Algerian gas document signed by 26 Oct",
+     "text": "During PM Andrej Babiš's official visit to Algeria, by 23:59 Algiers time on 26 October 2026, a Czech party (the government, a ministry, ČEZ or another Czech company) and an Algerian party (the government, a ministry or Sonatrach) sign an agreement, contract or memorandum on natural-gas supply or natural-gas cooperation.",
+     "criterion": "YES if, between 06:00 on 25 Oct 2026 and 23:59 on 26 Oct 2026 (Algiers time = CET, UTC+1), a document whose subject is natural-gas supply or natural-gas cooperation (pipeline gas or LNG; a broader energy document counts only if the official report says it covers natural gas) is signed by a Czech party (government, ministry, ČEZ or another Czech company) and an Algerian party (government, ministry, Sonatrach or another Algerian state company), as stated by the Czech Government Office (vlada.gov.cz), the Ministry of Industry and Trade (mpo.gov.cz), ČEZ, Sonatrach, APS or ČTK. Documents signed on 27 Oct or later, statements that gas \"was discussed\", and announcements of a future signing do not count. NO if no such document is signed in the window (including if the visit is cancelled or postponed).",
+     "resolution_source": "Government Office (vlada.gov.cz) / MPO (mpo.gov.cz) releases and ČTK reports on the visit; ČEZ, Sonatrach, APS as secondary",
+     "schedule": "official",
+     "slip_class": "summit-or-visit",
+     "publishes": "Government Office and ČTK reports on 26 Oct afternoon/evening, after Tebboune talks and business forum",
+     "tz": "Africa/Algiers",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+01:00",
+      "end": "2026-10-26T23:59:59+01:00"
+     },
+     "evidence_at": "2026-10-26T21:00:00+01:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.37,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "p_blind": 0.35,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.35,
+        "p_held": 0.92,
+        "p_if_held": 0.38,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "Dossier's small, non-systematic class of gas-focused EU–Algeria visits gives 2/4 (0.5); summit-or-visit slip 0.08. Adjust down ~-0.5 log-odds: no signing announced, gas not named in the official programme, the two YES precedents were pre-negotiated supply deals, and a signing on day 2 (27 Oct) falls outside the window. Small upward pull from the trip's explicit gas framing and the existing ČEZ–Sonatrach relationship. Final: the signals file has no market or forecast matching this claim, so I kept the blind number."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "p_blind": 0.5,
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "p": 0.42,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "The trip has been framed around buying gas since June, and ČEZ–Sonatrach is a natural deliverable; the Slovenia 2024 and Germany 2026 precedents both produced signings (+). But the official programme does not name gas or announce any memorandum, and day 1 is only talks plus the forum after a Monday-morning flight, so a signing could land on 27 Oct, outside the window (−0.3 log-odds from blind). A generic energy document would be NO, and the dossier's precedents run 2/4. No signals."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "p_blind": 0.33,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.33,
+        "p_held": 0.92,
+        "p_if_held": 0.36,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Outside view: small class of EU leader visits to/from Algiers with gas on the agenda, 2/4 signed; Babiš's own gas trips (Azerbaijan) and Síkela 2022 produced talks only, and the official programme two days out names trade/energy/defence with no signing announced and gas not named (pre-announced signings are the norm when a deliverable is ready: about -0.6 log-odds). Case against: ČEZ renewed Sonatrach only a year ago, a company contract can be confidential or signed on day 2 (27 Oct, outside window), and a generic 'energy cooperation' MoU fails the criterion unless the report says gas. Case for: the trip is framed 'kvůli nákupu plynu', Havlíček and a business delegation travel, Algeria stages signings before Tebboune (Slovenia, Germany) and Babiš wants a deliverable in an energy crisis (+0.4). Visit slip from summit-or-visit 0.08 → p_held 0.92; p_if_held 0.36; product 0.33. Signals: no market, bookmaker line or model on the question; blind number kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "p": 0.45,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor: no market (signals); dossier cited base rate 2/4 gas-agenda EU–Algeria visits ended in a signed gas document, times slip summit-or-visit 0.08 → 0.46. Up: the trip has been framed around gas since June, ČEZ–Sonatrach already have a contract, and Sonatrach signed during the Slovenian and German visits (+0.2). Down: no signing announced, gas missing from the official programme, a document may be signed only on 27 Oct, and the criterion requires explicit gas content (−0.25). Net about 0.45."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "p_blind": 0.3,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.3,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Gas-framed trip with minister and business delegation, ČEZ already buys Sonatrach gas, and day 1 (26 Oct) has the Tebboune talks and business forum, so a signing is plausible. But nothing is announced, programme topics are broad, signing may fall on 27 Oct, and a gas-specific document must be named in the official report; roughly 2/4 weak precedents times ~8% slip and timing/specificity discounts. Signals read: no relevant market; blind number kept."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.368,
+      "combined_blind": 0.367,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.15,
+      "decomposition": {
+       "p_held": 0.92,
+       "p_if_held": 0.402,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/cz-algeria-gas-agreement.md",
+      "signals": "data/dossiers/2026-10-27/cz-algeria-gas-agreement.signals.md"
+     }
+    }
+   ],
+   "basis": "ČTK's published programme with no signing announced, and Sonatrach's record of signing during EU leaders' visits. Main risk: an unannounced ČEZ–Sonatrach document signed before Tebboune on day one.",
+   "sources": [
+    {
+     "title": "Respekt/ČTK: Babiš s Havlíčkem míří na sever Afriky, v Alžírsku budou dva dny (22 Oct)",
+     "url": "https://www.respekt.cz/informacni-servis/babis-s-havlickem-miri-na-sever-afriky-v-alzirsku-budou-dva-dny-2026-10-22-15-53"
+    },
+    {
+     "title": "ČTK: ČEZ bude dál odebírat plyn z Alžírska, prodloužil smlouvu (16 Oct 2025)",
+     "url": "https://www.ceskenoviny.cz/zpravy/cez-bude-dal-odebirat-plyn-z-alzirska-prodlouzil-smlouvu-s-tamnim-dodavatelem/2734961"
+    },
+    {
+     "title": "Deník N/ČTK: Babiš se kvůli nákupu plynu chystá na cestu do Alžíru (23 Jun)",
+     "url": "https://denikn.cz/minuta/2103894"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. cz-algeria-gas-agreement: base-rate 0.35, evidence 0.42, adversarial 0.33, anchor 0.45, outsider 0.3; combined 0.368, published 0.37. Main risk: documents signed may be generic (economy, defence) or fall on 27 Oct, outside the window.",
+   "cs": {
+    "kicker": "Česko · Energetika",
+    "headline": "První den Babišovy návštěvy Alžírska bez dohody o plynu",
+    "body": [
+     "Dvoudenní návštěva Andreje Babiše v Alžírsku byla už od června ohlašována jako cesta za nákupem plynu, první den, pondělí 26. října, však neměl přinést podepsaný dokument o plynu. Podle programu, který 22. října zveřejnil Úřad vlády a o němž informovala ČTK, měl premiér s ministrem průmyslu a obchodu Karlem Havlíčkem odletět v pondělí ráno s podnikatelskou delegací, setkat se s prezidentem Abdalmadžídem Tabbúním a premiérem Sífím Ghrajbem a zahájit česko-alžírské podnikatelské fórum. Na úterý byla naplánována návštěva výrobce tramvají Setram.",
+     "Jednání se měla týkat obchodu, investic, energetiky a obranného průmyslu. Upoutávka ČTK nezmiňovala žádnou dohodu ani memorandum a plyn mezi tématy neuváděla, přestože poslední česká ministerská návštěva, kterou v roce 2022 vykonal Jozef Síkela, se možnými dodávkami alžírského plynu zabývala.",
+     "Obchodní vazba už existuje. ČEZ odebírá alžírský plyn od společnosti Sonatrach od října 2024 a v říjnu 2025 smlouvu prodloužil, sdělil ČEZ agentuře ČTK; dodávky pokrývají něco přes 2 % roční spotřeby v Česku a podmínky nebyly zveřejněny.",
+     "Naše předpověď odhadovala pravděpodobnost, že do pondělní půlnoci bude podepsána česko-alžírská dohoda, smlouva nebo memorandum o plynu, na 37 %. Nová dohoda ČEZ se Sonatrachem by byla přirozeným výsledkem cesty, předem však ohlášena nebyla a případný podpis mohl připadnout až na úterý, tedy mimo sledované okno."
+    ],
+    "basis": "Program zveřejněný ČTK bez ohlášeného podpisu a zkušenost, že Sonatrach při návštěvách evropských lídrů smlouvy podepisuje. Hlavní riziko: neohlášený dokument ČEZ a Sonatrachu podepsaný před Tabbúním hned první den.",
+    "claims": {
+     "cz-algeria-gas-agreement": {
+      "label": "Česko a Alžírsko podepíší dokument o plynu do 26. října",
+      "text": "Během oficiální návštěvy premiéra Andreje Babiše v Alžírsku podepíše do 23:59 alžírského času 26. října 2026 česká strana (vláda, ministerstvo, ČEZ či jiná česká firma) s alžírskou stranou (vládou, ministerstvem nebo společností Sonatrach) dohodu, smlouvu nebo memorandum o dodávkách zemního plynu či spolupráci v oblasti plynu.",
+      "criterion": "ANO, pokud mezi 6:00 25. října 2026 a 23:59 26. října 2026 (alžírský čas = SEČ) podepíše česká strana (vláda, ministerstvo, ČEZ nebo jiná česká firma) s alžírskou stranou (vládou, ministerstvem, Sonatrachem či jinou alžírskou státní firmou) dokument, jehož předmětem jsou dodávky zemního plynu nebo spolupráce v oblasti plynu (plynovodem či LNG; širší energetický dokument se počítá, jen pokud oficiální zpráva uvádí, že se týká zemního plynu), jak uvede Úřad vlády, MPO, ČEZ, Sonatrach, APS nebo ČTK. Dokumenty podepsané 27. října či později, prohlášení, že se o plynu „jednalo“, a ohlášení budoucího podpisu se nepočítají. NE, pokud v tomto okně žádný takový dokument podepsán není (včetně zrušení či odložení návštěvy)."
+     }
+    }
+   }
+  },
+  {
+   "id": "cz-prague",
+   "scope": "cz",
+   "size": "half",
+   "kicker": "Czech Republic · Prague",
+   "headline": "Prague's three-party portfolio deal was not sealed on Monday",
+   "body": [
+    "The negotiating teams of STAN, Spolu and Praha sobě were due to meet on Monday 26 October, and ČT24 reported that afterwards the politicians should announce which portfolios would go to which grouping. Our forecast put the chance that all three would announce an agreed split of council portfolios, or sign a coalition agreement, by midnight at 37%.",
+    "Much was already settled. Under the plan described by STAN's leader, Petr Hlaváček, STAN would take five seats on the city council, Spolu four and Praha sobě two, one of them with responsibility for transport; the second Praha sobě portfolio was still open, ČT24 said. The Pirates had turned down STAN's offer of a single council seat.",
+    "The fallback weakened the pressure on Monday. STAN and Spolu hold 34 of the 65 seats, and ČT24 reported that if no three-party coalition was formed by the November assembly session, the two would run the city alone. Praha sobě had replied only that it wanted to keep negotiating, ČT24 reported, and its chairman, Adam Scheinherr, and the Pirates' leader, Tereza Nislerová, had preferred a coalition of STAN, Praha sobě and the Pirates.",
+    "In our forecasters' view, a first joint round of three teams rarely closes a full portfolio list on the same day, and any partial announcement, such as a seat count or transport alone, would not have counted."
+   ],
+   "claims": [
+    {
+     "id": "cz-prague-coalition-agreement",
+     "label": "Prague three-party portfolio split announced by 26 Oct",
+     "text": "By 23:59 on 26 October 2026, STAN, Spolu and Praha sobě publicly announce that the three of them have agreed how the Prague City Council (rada) portfolios are divided among them, or sign a three-party coalition agreement.",
+     "criterion": "YES if, between 06:00 CET on 25 Oct 2026 and 23:59 CET on 26 Oct 2026, the three groupings jointly, or a lead negotiator of one of them (e.g. Petr Hlaváček, Tomáš Portlík, Adam Scheinherr) without contradiction from another of the three by 23:59 on 26 Oct, publicly state that STAN, Spolu and Praha sobě have agreed the allocation of council portfolios (gesce) among the three, as reported by ČTK, ČT24 or another major Czech outlet. Signing a three-party coalition agreement in the window also counts. Statements that talks continue, agreement \"in principle\" on a coalition without the portfolio split, a seat count without portfolios, or a STAN–Spolu split without Praha sobě do not count. NO if no such announcement is made in the window.",
+     "resolution_source": "ČTK (ceskenoviny.cz) and ČT24 reports on the 26 Oct STAN–Spolu–Praha sobě meeting; parties' official channels",
+     "schedule": "reported",
+     "slip_class": "negotiation-round",
+     "publishes": "ČTK/ČT24 after the Monday 26 Oct negotiating meeting (time not published)",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+01:00",
+      "end": "2026-10-26T23:59:59+01:00"
+     },
+     "evidence_at": "2026-10-26T20:00:00+01:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.37,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "p_blind": 0.37,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.37,
+        "p_held": 0.7,
+        "p_if_held": 0.53,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "negotiation-round slip 0.30 (meeting slips or ends with 'talks continue'). Given a concluding meeting, roughly even odds of a full three-party portfolio split being announced: reports say the split should be announced after Monday's meeting (+), but Praha sobě has preferred a different coalition, wants guarantees and may need internal approval (-), and partial announcements do not count. Final: the signals file has no market or forecast matching this claim, so I kept the blind number."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "p_blind": 0.45,
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "p": 0.42,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "ČT24 says the full portfolio split should be announced after Monday's three-party meeting, and the 5/4/2 seat split and the transport post are already set (+). Against that: Praha sobě has preferred a coalition without Spolu, may need internal approval, the second portfolio is still open, and there is no deadline pressure before the November session (−). A STAN–Spolu fallback also exists. The slip prior is 0.30, and the Polymarket mayor market says nothing about timing."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "p_blind": 0.25,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.25,
+        "p_held": 0.75,
+        "p_if_held": 0.33,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Outside view: negotiation-round slip 0.30, and first joint meetings of three teams in big-city coalition talks rarely settle a full portfolio list the same day (Prague 2022 took months; Hradec Králové split competences a week before signing). The 'announcement after Monday' expectation rests on ČT24's reading of a Hlaváček hint, not a joint commitment; Praha sobě only agreed on 22 Oct to keep talking, preferred a coalition without Spolu and wants guarantees on transport and housing, while Spolu prefers two parties (-0.8). Criterion traps: a seat count (5/4/2, already public) or 'transport to Praha sobě' alone does not count, and any contradiction by one party kills it. For: STAN's deadline pressure (STAN–Spolu alone by November) and a prepared STAN–Spolu programme could force a quick deal (+0.4). p_held 0.75 that the three actually meet Monday; p_if_held 0.33; product 0.25. Signals: only Polymarket Next Mayor of Prague (Hlaváček 0.925), consistent with both the three-party and the STAN–Spolu variant, so uninformative on Monday; blind number kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "p": 0.45,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor: slip class negotiation-round 0.30 → 0.70 that Monday's round concludes; no timing market (the Polymarket mayor market, Hlaváček 0.925, fits both coalition variants). ČT24 says the portfolio split should be announced after the meeting (up), but Praha sobě is reluctant, wanted a coalition without Spolu and may need internal approval, and the announcement must give the full three-party split without contradiction (down, so p_if_held 0.65). 0.70×0.65 ≈ 0.45."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "p_blind": 0.4,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.4,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Reported plan is to announce the portfolio split after the Monday meeting, but round-type events often end with talks continuing (slip ~0.30), Praha sobě has publicly preferred other partners and the full three-way split must be stated. Roughly 0.7 held times ~0.55 full agreement. Signals read: no relevant market; blind number kept."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.375,
+      "combined_blind": 0.364,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.2,
+      "decomposition": {
+       "p_held": 0.725,
+       "p_if_held": 0.511,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/cz-prague-coalition-agreement.md",
+      "signals": "data/dossiers/2026-10-27/cz-prague-coalition-agreement.signals.md"
+     }
+    }
+   ],
+   "basis": "ČT24's report that the split would follow Monday's meeting, weighed against Praha sobě's reluctance and the 30% rate at which such rounds slip. Main risk: a quick deal driven by STAN's two-party fallback.",
+   "sources": [
+    {
+     "title": "ČT24: Pokud nebude trojkoalice do listopadu, bude Prahu řídit STAN a SPOLU (22 Oct)",
+     "url": "https://ct24.ceskatelevize.cz/clanek/regiony/hlavni-mesto-praha/v-hlavnim-meste-asi-vznikne-koalice-stan-spolu-a-prahy-sobe-naznacil-hlavacek-378900"
+    },
+    {
+     "title": "Aktuálně.cz/ČTK: Pokud nebude trojkoalice do listopadu, bude Prahu řídit koalice STAN a Spolu (22 Oct)",
+     "url": "https://zpravy.aktualne.cz/domaci/pokud-nebude-trojkoalice-do-listopadu-bude-prahu-ridit-koalice-stan-a-spolu/r~aaa29a7e1db2bef719c831ff917261fc/"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. cz-prague-coalition-agreement: base-rate 0.37, evidence 0.42, adversarial 0.25, anchor 0.45, outsider 0.4; combined 0.375, published 0.37. Main risk: Hlaváček has spoken of a deal \"in November\", so Monday may end with talks continuing.",
+   "cs": {
+    "kicker": "Česko · Praha",
+    "headline": "Pražská trojkoalice se v pondělí na gescích nedohodla",
+    "body": [
+     "Vyjednávací týmy STAN, Spolu a Prahy sobě se měly sejít v pondělí 26. října a podle ČT24 měli politici po schůzce oznámit, jaké gesce připadnou kterému uskupení. Naše předpověď odhadovala pravděpodobnost, že všechna tři uskupení do půlnoci oznámí dohodnuté rozdělení gescí v radě nebo podepíší koaliční smlouvu, na 37 %.",
+     "Mnohé už bylo dané. Podle plánu, který popsal lídr STAN Petr Hlaváček, by STAN obsadil v radě pět míst, Spolu čtyři a Praha sobě dvě, z toho jedno s gescí dopravy; druhá gesce Prahy sobě byla podle ČT24 stále otevřená. Piráti nabídku STAN na jedno místo v radě odmítli.",
+     "Záložní varianta tlak na pondělní dohodu oslabovala. STAN a Spolu mají 34 z 65 zastupitelů a podle ČT24 by v případě, že trojkoalice nevznikne do listopadového zastupitelstva, řídily město samy. Praha sobě podle ČT24 odpověděla pouze, že chce dál jednat, a její předseda Adam Scheinherr i lídryně Pirátů Tereza Nislerová dříve preferovali koalici STAN, Prahy sobě a Pirátů.",
+     "Podle našich prognostiků první společné kolo tří týmů jen zřídka uzavře úplný seznam gescí hned týž den a dílčí oznámení, například jen počet radních nebo samotná doprava, by se nepočítalo."
+    ],
+    "basis": "Zpráva ČT24, že rozdělení gescí má následovat po pondělní schůzce, poměřená zdrženlivostí Prahy sobě a 30% mírou, s jakou se taková kola odkládají. Hlavní riziko: rychlá dohoda vynucená záložní dvoukoalicí STAN a Spolu.",
+    "claims": {
+     "cz-prague-coalition-agreement": {
+      "label": "STAN, Spolu a Praha sobě ohlásí rozdělení gescí v pražské radě",
+      "text": "STAN, Spolu a Praha sobě do 23:59 26. října 2026 veřejně oznámí, že se všechny tři dohodly na rozdělení gescí v Radě hlavního města Prahy, nebo podepíší trojkoaliční smlouvu.",
+      "criterion": "ANO, pokud mezi 6:00 25. října 2026 a 23:59 26. října 2026 tři uskupení společně, nebo hlavní vyjednavač jednoho z nich (např. Petr Hlaváček, Tomáš Portlík, Adam Scheinherr), aniž by to jiné z nich do 23:59 26. října popřelo, veřejně oznámí, že se STAN, Spolu a Praha sobě dohodly na rozdělení gescí v pražské radě mezi sebe, jak uvede ČTK, ČT24 či jiné hlavní české médium. Počítá se i podpis trojkoaliční smlouvy v tomto okně. Nepočítají se prohlášení, že jednání pokračují, dohoda „v principu“ bez rozdělení gescí, pouhý počet radních bez gescí ani rozdělení mezi STAN a Spolu bez Prahy sobě. NE, pokud v tomto okně k takovému oznámení nedojde."
+     }
+    }
+   }
+  },
+  {
+   "id": "rs-election",
+   "scope": "europe",
+   "size": "half",
+   "kicker": "Serbia · Election results",
+   "headline": "Dačić's Socialists Scrape Past the 3% Threshold",
+   "body": [
+    "Ivica Dačić's Socialist Party of Serbia kept its place in parliament: in the preliminary results of Sunday's election, released by the Republic Electoral Commission (RIK) on Monday, its list cleared the 3 per cent threshold. Our forecast put the chance at 63%. The party ran alone this time, as list no. 2, \"Ivica Dačić – Stability Factor\", rather than with Aleksandar Vučić's list, Vreme reported.",
+    "It was close on the polls. PolitPro's average put the list at 3.3 per cent on election day; the last Ipsos survey had it at 3.2 and NSPM at 2.9. Vreme wrote before the vote that the Socialists \"must fear\" for the threshold, and quoted the party official Dušan Bajatović asking whether it was \"three percent or not\". OSW, the Warsaw think-tank, described a party \"grappling with a crisis within its own ranks\".",
+    "In the list's favour were its record and the models: it took 6.57 per cent in RIK's preliminary count in 2023, Insajder reported, and PolitPro's own model gave it a 72 per cent chance of entering parliament.",
+    "The main risk was a repeat of 2023, when the final polls overstated the Socialists by about two points, together with RIK's practice of dividing by all ballots cast, invalid ones included, which shaves a little off the printed share. Polls closed at 20:00 CET on Sunday; in 2023 RIK published its preliminary figures on the Monday evening."
+   ],
+   "claims": [
+    {
+     "id": "rs-sps-threshold",
+     "label": "Dačić's Socialists clear 3%",
+     "text": "In the Republic Electoral Commission's preliminary results of Serbia's 25 October parliamentary election, Ivica Dačić's SPS-led list gets at least 3% of the vote.",
+     "criterion": "YES if the Republic Electoral Commission's (RIK) preliminary results of the 25 Oct 2026 election (rik.parlament.gov.rs or a RIK session), as published at the time the resolver reads them, show list no. 2 'Ivica Dačić – Stability Factor' at 3.00% or more (the percentage RIK prints; if none is printed, the list's votes divided by the number of voters who voted). NO if the share shown is below 3.00%, or if the election is not held on 25 Oct 2026.",
+     "resolution_source": "https://www.rik.parlament.gov.rs/",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "RIK preliminary results at a RIK session / rik.parlament.gov.rs; in 2023 on the Monday evening (~21:46 CET), in 2016 on election night (~00:40); expected night of 25/26 Oct or evening of 26 Oct CET",
+     "tz": "Europe/Belgrade",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+01:00",
+      "end": "2026-10-26T23:59:59+01:00"
+     },
+     "evidence_at": "2026-10-26T22:30:00+01:00",
+     "resolves_by": "2026-10-27T12:00:00+01:00",
+     "probability": 0.63,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:26Z",
+        "p_blind": 0.42,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.55,
+        "p_held": 0.99,
+        "p_if_held": 0.555,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:19Z",
+        "reason": "Blind 0.42: poll average 3.3, the 2023 overstatement of SPS (~25%) and the small-list squeeze put the central estimate at ~2.85. The thin Polymarket 'SPS third in seats' at 0.76 (~$9k vol) is effectively a lower bound for clearing 3%. Moved +0.5 log-odds, discounted for the thin market and for the possibility that it ignores the 2023 polling miss."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:17:40Z",
+        "p_blind": 0.5,
+        "inputs_blind": [
+         "own-research"
+        ],
+        "p": 0.55,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:12:30Z",
+        "reason": "PolitPro average 3.3 (Ipsos 22 Oct 3.2, NSPM 2.9) sits on the line. In 2023 the final polls overstated SPS by ~2 pp, and RIK's all-voters denominator takes ~0.08 pp off (both down). Against that, Polymarket's 'Dačić list third in seats' at 0.76 is roughly a lower bound on clearing 3%, though the market is thin (~$9k volume), and SPS's local machine is durable (up). Net slightly above even."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:19:00Z",
+        "p_blind": 0.44,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.62,
+        "p_held": 0.99,
+        "p_if_held": 0.63,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:15:00Z",
+        "reason": "Polymarket 'third most seats' has Dačić's list at 0.76 (liq ~$25k, vol ~$9k); since a list under 3% wins no seats, this is a lower bound for crossing, implying ~0.80 once SPS-crosses-but-not-third cases are added. That is far above my blind 0.44 and I move most of the way but not all: the market is thin and settles on seats, traders may price 'who is third' without modelling threshold risk, and the fundamentals (latest polls 3.2/2.9, 2023 overstatement of ~2 pp, two-bloc squeeze with record turnout, RIK's all-ballots denominator) still put the central estimate at ~3.0. Written reason for the remaining ~15-point gap to the implied market: thin liquidity and indirect settlement. Blend ~60% market in log-odds → 0.63.",
+        "note": "While reading edition No. 4 for background during the blind step it saw stale market lines on other questions (Brazil winner, Bulgaria margins); none on these five claims; recorded by the agent."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:13:00Z",
+        "p": 0.6,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No market on the exact question; the third-in-seats market is roughly a lower bound for crossing 3% but is thin and settles on seats, so I anchor on the poll model (0.54) and move up partway (+0.25 log-odds) toward the market. Downward pressures kept: 2023 polls overstated SPS by ~2 pp, latest independent poll NSPM 2.9, squeeze by polarisation, RIK prints share of all voters (−0.08 pp).",
+        "anchor": {
+         "source": "Statistical model models.mjs leadabove 3.1 1.0 3.0 (PolitPro poll average 3.3, adjusted −0.2 for 2023 SPS overstatement/RIK all-ballot basis); cross-check Polymarket 'Dačić list third most seats' (exchange)",
+         "url": "https://politpro.eu/en/serbia ; https://polymarket.com/event/serbia-parliamentary-election-3rd-place",
+         "price": "model 0.54; market 0.76",
+         "read_time": "model 2026-10-24T17:12Z; market 2026-10-24T17:11Z",
+         "liquidity": "market thin: vol ~$9.2k, liq ~$24.7k; question differs (seats, not 3% in RIK preliminary)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:20:17Z",
+        "p_blind": 0.48,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.78,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:05Z",
+        "reason": "Polymarket gives SPS 0.76 to finish third in seats, which implies SPS clears 3% (a lower bound, though thin at about $9k volume). Seat settlement differs from RIK's printed percentage. Blind 0.48, moved up about +1.3 log-odds."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.625,
+      "combined_blind": 0.46,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.23,
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.636,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "market_note": "No market on the 3% question. Polymarket 'Dačić list third in seats' 0.76 (thin, liquidity about $25k, settles on seats) is related but does not match; recorded in the signals file only.",
+      "dossier": "data/dossiers/2026-10-27/rs-sps-threshold.md",
+      "signals": "data/dossiers/2026-10-27/rs-sps-threshold.signals.md"
+     }
+    }
+   ],
+   "basis": "Final polls collated by PolitPro, Vreme and OSW on the Socialists' campaign, RIK's 2023 preliminary figures via Insajder; main risk: a 2023-style polling overstatement of about two points with the list polling only 0.3 points above the line.",
+   "sources": [
+    {
+     "title": "Vreme: Elections 2026 – electoral lists (RIK)",
+     "url": "https://vreme.com/en/izbori-2026/izbori-2026-izborne-liste-rik/"
+    },
+    {
+     "title": "PolitPro: Serbia election trend and polls (as of 25 Oct 2026)",
+     "url": "https://politpro.eu/en/serbia"
+    },
+    {
+     "title": "OSW: Vučić or the students? Serbia ahead of the parliamentary elections (21 Oct 2026)",
+     "url": "https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-10-21/vucic-or-students-serbia-ahead-parliamentary-elections"
+    },
+    {
+     "title": "Insajder: RIK announces preliminary results (18 Dec 2023)",
+     "url": "https://insajder.net/prenosimo/rik-saopstio-preliminarne-rezultate-na-izborima-za-skupstinu-srbije"
+    },
+    {
+     "title": "Reuters via ThePrint: Serbia votes as students seek to unseat Vucic (25 Oct 2026)",
+     "url": "https://theprint.in/world/serbia-votes-as-students-seek-to-unseat-vucic-in-snap-election/3080849/"
+    },
+    {
+     "title": "Wikipedia (background): Opinion polling for the 2023 Serbian parliamentary election",
+     "url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2023_Serbian_parliamentary_election"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. rs-sps-threshold: base-rate 0.55, evidence 0.55, adversarial 0.62, anchor 0.6, outsider 0.78; combined 0.625, published 0.63. Main risk: SPS polls at 2.9–3.3% and RIK counts all voters in the base.",
+   "cs": {
+    "kicker": "Srbsko · Výsledky voleb",
+    "headline": "Dačićovi socialisté těsně překročili třiprocentní hranici",
+    "body": [
+     "Socialistická strana Srbska Ivici Dačiće si udržela místo v parlamentu: podle předběžných výsledků nedělních voleb, které v pondělí zveřejnila Republiková volební komise (RIK), její kandidátka překročila třiprocentní hranici. Naše předpověď tomu dávala 63 %. Strana tentokrát kandidovala samostatně, jako kandidátka č. 2 „Ivica Dačić – Faktor stability“, a ne společně s kandidátkou Aleksandara Vučiće, uvedl týdeník Vreme.",
+     "Podle průzkumů šlo o těsnou věc. Průměr PolitPro jí v den voleb připisoval 3,3 %, poslední průzkum agentury Ipsos 3,2 % a NSPM 2,9 %. Vreme před hlasováním napsal, že se socialisté o hranici „musí bát“, a citoval stranického funkcionáře Dušana Bajatoviće, který se ptal, zda to budou „tři procenta, nebo ne“. Varšavský institut OSW popsal stranu, která „zápasí s krizí ve vlastních řadách“.",
+     "Ve prospěch kandidátky mluvila její minulost i modely: v roce 2023 získala podle serveru Insajder v předběžném sčítání RIK 6,57 % a vlastní model PolitPro jí dával 72% šanci na vstup do parlamentu.",
+     "Hlavním rizikem bylo opakování roku 2023, kdy závěrečné průzkumy socialisty nadhodnotily zhruba o dva body, a také praxe RIK počítat podíl ze všech odevzdaných hlasovacích lístků včetně neplatných, což zveřejněné procento mírně snižuje. Volební místnosti se zavřely v neděli ve 20:00 SEČ; v roce 2023 zveřejnila RIK předběžné výsledky v pondělí večer."
+    ],
+    "basis": "Závěrečné průzkumy podle PolitPro, Vreme a OSW o kampani socialistů, předběžné výsledky RIK z roku 2023 podle serveru Insajder; hlavní riziko: nadhodnocení v průzkumech o zhruba dva body jako v roce 2023, přičemž kandidátka byla jen 0,3 bodu nad hranicí.",
+    "claims": {
+     "rs-sps-threshold": {
+      "label": "Dačićovi socialisté překročí 3 %",
+      "text": "Podle předběžných výsledků Republikové volební komise získá v nedělních parlamentních volbách v Srbsku kandidátka socialistů Ivici Dačiće nejméně tři procenta hlasů.",
+      "criterion": "ANO, pokud předběžné výsledky Republikové volební komise (RIK; rik.parlament.gov.rs nebo zasedání RIK) zveřejněné mezi 6:00 SEČ 25. 10. a 23:59 SEČ 26. 10. 2026 ukážou kandidátku č. 2 „Ivica Dačić – Faktor stability“ s 3,00 % nebo více (procento uvedené RIK; pokud žádné neuvede, hlasy kandidátky dělené počtem voličů, kteří hlasovali); rozhoduje poslední údaj zveřejněný v tomto okně. NE, pokud bude uvedený podíl nižší než 3,00 %, nebo pokud se volby 25. 10. nekonají."
+     }
+    }
+   }
+  },
+  {
+   "id": "de-ifo",
+   "scope": "europe",
+   "size": "third",
+   "kicker": "Germany · ifo index",
+   "headline": "German Business Mood Stalled Near a Three-Year High",
+   "body": [
+    "The ifo Institute's October business climate index for Germany, due at 10:30 CET on Monday, was forecast to end a run of five monthly rises. Our central estimate was 89.7 points, with an 80% range of 88.4 to 91.0, against 89.9 in September. We put the chance of a further rise at 40%.",
+    "September's reading, published on 24 September, was the highest in more than three years and beat analysts' expectation of 89.0, Textilwirtschaft reported; the survey covers about 9,000 firms. The institute's president, Clemens Fuest, said the German economy was continuing its recovery, according to the dpa report carried by the paper.",
+    "Firms nonetheless faced headwinds. The European Central Bank raised its key rate by a quarter point to 2.5% on 10 September, and Brent crude traded above $102 a barrel on 23 September, Admiral Markets noted. The index has swung widely this year: it fell to 84.4 in April, its lowest since May 2020, after the Iran war began. The main risk to our forecast was momentum. Another upside surprise like September's, or a revision to the September figure, could have tipped the comparison."
+   ],
+   "claims": [
+    {
+     "id": "de-ifo-oct",
+     "label": "German ifo business climate in October",
+     "text": "The ifo Business Climate Index for Germany for October 2026 stands at …",
+     "criterion": "The headline ifo Business Climate Index (Geschäftsklimaindex, all sectors, 2015=100, seasonally adjusted) for October 2026 in the ifo Institute's release of 26 Oct 2026.",
+     "resolution_source": "https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland",
+     "publishes": "ifo Institute press release, ifo.de, 10:30 CET on 26 Oct 2026",
+     "tz": "Europe/Berlin",
+     "event_window": {
+      "start": "2026-10-26T00:00:00+01:00",
+      "end": "2026-10-26T23:59:00+01:00"
+     },
+     "evidence_at": "2026-10-26T10:30:00+01:00",
+     "kind": "interval",
+     "quantity": "ifo Business Climate Index Germany, headline, October 2026",
+     "unit": "",
+     "scale": 1,
+     "slip_class": "stats-release",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "quantiles": {
+      "q10": 88.36,
+      "q50": 89.68,
+      "q90": 91
+     },
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "q10": 88.4,
+        "q50": 89.8,
+        "q90": 91.2,
+        "q_blind": {
+         "q10": 88.4,
+         "q50": 89.8,
+         "q90": 91.2
+        },
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "Centered on the calendar consensus of 89.8 (last value 89.9) with surprise sd ~1.1 (rms of verified surprises; m/m sd 1.0–1.2). Recent positive surprises (+) roughly offset by softer October ZEW expectations and flash PMI (-), so no shift from consensus. Final: the signals file has no market or forecast matching this claim, so I kept the blind number. The provider's own forecast of 89.5 was already in the dossier."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "q10": 88.3,
+        "q50": 89.6,
+        "q90": 90.9,
+        "q_blind": {
+         "q10": 88.6,
+         "q50": 89.9,
+         "q90": 91.2
+        },
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "Calendar consensus is 89.8 and the provider's model says 89.5; the 90.1 preview from my own research has no named source. ZEW expectations fell sharply and the flash PMI dropped after a three-year-high ifo level, so I tilt a little below consensus. Against that, five months of rises with positive surprises (+0.9 and +1.6) temper the tilt. Scale is sd 1.0."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "q10": 88.4,
+        "q50": 89.7,
+        "q90": 91,
+        "q_blind": {
+         "q10": 88.4,
+         "q50": 89.7,
+         "q90": 91
+        },
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Anchor: consensus 89.8 (TE calendar, read after the 23 Oct flash PMI), last 89.9, usual surprise sd about 1.0. Shade 0.1 below consensus: ZEW expectations fell 6.6 points (first fall in five months), flash composite PMI fell to 52.8 with the weakest new business in three months, energy costs and the ECB hike weigh on expectations after a three-year high in the ifo level (mean-reversion). Against the shade: ifo beat consensus three times running (+0.4, +1.6, +0.9), ZEW current situation jumped 11.2 and PMI output is still in expansion, so the current-situation component may hold up. Band ±1.3 at 80%. Signals: no market; the only published figures are the TE calendar consensus 89.8 and TE model 89.5 (already in the dossier), bracketing my median 89.7; quantiles kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "q10": 88.4,
+        "q50": 89.7,
+        "q90": 91,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor: Trading Economics calendar consensus 89.8 (signals), surprise sd 1.0 → models.mjs 88.5/89.8/91.1. I shaded the median 0.1 toward the provider's own model forecast of 89.5 and the softer October ZEW (−6.6) and flash PMI (52.8 from 53.8). This is partly offset by the last three surprises all being positive. sd 1.05."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "q10": 88.3,
+        "q50": 89.6,
+        "q90": 90.9,
+        "q_blind": {
+         "q10": 88.3,
+         "q50": 89.6,
+         "q90": 90.9
+        },
+        "inputs_blind": [
+         "dossier"
+        ],
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Anchored near calendar consensus 89.8 but shaded down for ZEW expectations drop (-6.6), softer flash PMI and energy price shock after five straight rises to a 3-year high; mean reversion of momentum series. Scale ~1.0. Signals read: no relevant market; blind number kept. ifo consensus 89.8 / model 89.5 already considered."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "consensus": {
+       "value": 89.8,
+       "source": "Trading Economics calendar consensus, read 2026-10-24T17:05Z (provider's own forecast 89.5); no Reuters/Bloomberg poll figure found"
+      },
+      "last_value": 89.9,
+      "scale_source": "Usual ifo headline surprise about 1 point: rms of verified surprises Oct 2025 +0.4, Aug 2026 +1.6, Sep 2026 +0.9 = 1.1; sd of m/m changes Nov 2024–Sep 2026 1.03 (last 12: 1.23); dossier de-ifo-oct.",
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/de-ifo-oct.md",
+      "signals": "data/dossiers/2026-10-27/de-ifo-oct.signals.md"
+     },
+     "schedule": "official"
+    },
+    {
+     "id": "de-ifo-oct-rises",
+     "label": "ifo index rises in October",
+     "text": "The ifo Business Climate Index for October 2026 is above its September value as shown in the October release.",
+     "criterion": "YES if the October 2026 headline ifo Business Climate Index in the ifo release of 26 Oct 2026 is strictly greater than the September 2026 value printed in the same release (one decimal; a tie is NO). NO if it is equal or lower, or if ifo does not release the October results on 26 Oct.",
+     "resolution_source": "https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland",
+     "publishes": "ifo Institute press release, ifo.de, 10:30 CET on 26 Oct 2026",
+     "tz": "Europe/Berlin",
+     "event_window": {
+      "start": "2026-10-26T00:00:00+01:00",
+      "end": "2026-10-26T23:59:00+01:00"
+     },
+     "evidence_at": "2026-10-26T10:30:00+01:00",
+     "derived": {
+      "from": "de-ifo-oct",
+      "event": ">",
+      "x": 89.95
+     },
+     "slip_class": "stats-release",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "derived_note": "Criterion is 'strictly greater at one decimal', so the continuous threshold is half a decimal above the September value.",
+     "probability": 0.4,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "p_blind": 0.44,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.44,
+        "p_held": 0.99,
+        "p_if_held": 0.445,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "Derived from own quantiles: P(>=90.0) ~0.445 under Normal(89.8,1.1) with ties = NO; times 0.99 slip. Five straight rises and 14/23 recent rises argue for momentum, but the consensus, PMI and ZEW point to flat or softer, so I stay close to the model. Final: the signals file has no market or forecast matching this claim, so I kept the blind number."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "p_blind": 0.47,
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "p": 0.37,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "This follows from my quantiles: P(value ≥ 89.95) with median 89.6 and sd 1.0 is 0.36. A tie is NO, and a ±0.1 revision of September is possible, which adds a little uncertainty either way."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "p_blind": 0.39,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.39,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Derived from my quantiles (median 89.7, sd 1.0): P(> 89.9) = 0.42 by the two-piece normal, less about 0.03 for a tie at one decimal (NO) and the 0.01 slip. Trap: September 89.9 is often revised by 0.1–0.2 and the comparison is with the revised print; after five rises in a row and a consensus implying a flat-to-lower reading, the streak is the obvious narrative and the surveys published since (ZEW, PMI) point the other way. Signals: none beyond the consensus already used; kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "p": 0.4,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "From own quantiles: models.mjs release 89.7 89.95 1.05 = 0.406 (must print ≥90.0 against September's 89.9; a tie is NO; September may be revised by ±0.1–0.2), times (1−0.01 slip) → 0.40."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "p_blind": 0.38,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.38,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Median 89.6 with sd ~1.0 gives P(>89.9) about 0.38; tie counts NO and September revision of +-0.2 adds noise but no direction. Signals read: no relevant market; blind number kept. ifo consensus 89.8 / model 89.5 already considered."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.396,
+      "combined_blind": 0.42,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.07,
+      "derived_value": 0.397,
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.404,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/de-ifo-oct-rises.md",
+      "signals": "data/dossiers/2026-10-27/de-ifo-oct-rises.signals.md"
+     },
+     "schedule": "official"
+    }
+   ],
+   "basis": "Our forecast rested on a median just below September's 89.9, after five rises, a three-year high and higher energy costs and interest rates; main risk: the momentum of recent upside surprises and revisions to the September figure.",
+   "sources": [
+    {
+     "title": "ifo Institute: ifo Geschäftsklima Deutschland (release date, September result)",
+     "url": "https://www.ifo.de/umfrage/ifo-geschaeftsklima-deutschland"
+    },
+    {
+     "title": "Textilwirtschaft: Ifo-Geschäftsklima weiter auf Erholungskurs",
+     "url": "https://www.textilwirtschaft.de/data-markets/ifo-geschaeftsklima-weiter-auf-erholungskurs-406221"
+    },
+    {
+     "title": "Admiral Markets: Ifo Business Climate Index September 2026, forecast and market context",
+     "url": "https://admiralmarkets.com/analytics/traders-blog/ifo-business-climate-september-2026"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. de-ifo-oct: base-rate 89.8, evidence 89.6, adversarial 89.7, anchor 89.7, outsider 89.6; mean quantiles {\"q10\":88.36,\"q50\":89.68,\"q90\":91} | de-ifo-oct-rises: base-rate 0.44, evidence 0.37, adversarial 0.39, anchor 0.4, outsider 0.38; combined 0.396, published 0.4. Main risk: a revised September value in the October release.",
+   "cs": {
+    "kicker": "Německo · Index ifo",
+    "headline": "Nálada německých firem se zastavila poblíž tříletého maxima",
+    "body": [
+     "Říjnový index podnikatelského klimatu institutu ifo pro Německo, ohlášený na pondělí na 10:30 SEČ, měl podle naší předpovědi ukončit sérii pěti měsíčních vzestupů. Náš střední odhad činil 89,7 bodu s 80% rozpětím 88,4 až 91,0, zatímco v září index dosáhl 89,9 bodu. Pravděpodobnost dalšího růstu jsme odhadli na 40 %.",
+     "Zářijová hodnota zveřejněná 24. září byla nejvyšší za více než tři roky a překonala očekávání analytiků, kteří počítali s 89,0 bodu, napsal list Textilwirtschaft; průzkum zahrnuje zhruba 9000 firem. Prezident institutu Clemens Fuest podle zprávy agentury dpa, kterou list převzal, uvedl, že německá ekonomika pokračuje v zotavování.",
+     "Firmy přesto čelily překážkám. Evropská centrální banka 10. září zvýšila základní sazbu o čtvrt procentního bodu na 2,5 % a ropa Brent se 23. září obchodovala nad 102 dolary za barel, upozornil Admiral Markets. Index letos silně kolísal: v dubnu po začátku války s Íránem klesl na 84,4 bodu, nejníže od května 2020. Hlavním rizikem naší předpovědi byla setrvačnost. Další pozitivní překvapení jako v září nebo revize zářijového čísla mohly srovnání zvrátit."
+    ],
+    "basis": "Předpověď stála na mediánu těsně pod zářijovými 89,9 bodu po pěti vzestupech, tříletém maximu a vyšších cenách energií a úrocích; hlavní riziko: setrvačnost nedávných pozitivních překvapení a revize zářijového údaje.",
+    "claims": {
+     "de-ifo-oct": {
+      "label": "Index ifo v říjnu",
+      "text": "Index podnikatelského klimatu ifo pro Německo za říjen 2026 dosahuje …",
+      "criterion": "Hlavní index podnikatelského klimatu ifo (všechna odvětví, 2015 = 100, sezónně očištěný) za říjen 2026 ve zprávě institutu ifo z 26. října 2026."
+     },
+     "de-ifo-oct-rises": {
+      "label": "Index ifo v říjnu stoupne",
+      "text": "Index podnikatelského klimatu ifo za říjen 2026 je vyšší než zářijová hodnota uvedená v říjnové zprávě.",
+      "criterion": "ANO, pokud je říjnová hodnota hlavního indexu ifo ve zprávě z 26. října 2026 vyšší než zářijová hodnota uvedená v téže zprávě (na jedno desetinné místo; shoda znamená NE). NE, pokud je stejná nebo nižší, nebo pokud ifo říjnové výsledky 26. října nezveřejní."
+     }
+    }
+   }
+  },
+  {
+   "id": "cz-confidence",
+   "scope": "cz",
+   "size": "rail",
+   "kicker": "Czech Republic · Economy",
+   "headline": "Czech economic confidence slipped again in October",
+   "body": [
+    "The Czech Statistical Office (ČSÚ) was due to publish its October business and consumer surveys on Monday 26 October. Our forecast put the composite confidence indicator at 99.3, with an 80% range of 97.3 to 101.3, and the chance that it rose above September's level at 44%.",
+    "In September the composite fell by 1.0 point to 99.5. Business confidence dropped 1.8 points to 98.4, which ČSÚ's Jiří Obst attributed mainly to a sharp fall in demand in industry and weaker sentiment in services, while consumer confidence rose 2.8 points to 105.1.",
+    "Our forecasters leaned slightly lower, citing softer German surveys and high energy prices. But the composite moves by about 1.2 points in an average month, and its business and consumer parts often pull in opposite directions, so a small rise was nearly as likely. ČSÚ does not state the release hour; ČTK carried the December 2023 survey at 09:30 on release day."
+   ],
+   "claims": [
+    {
+     "id": "cz-confidence-oct",
+     "label": "Czech economic confidence in October",
+     "text": "ČSÚ's composite confidence indicator (seasonally adjusted, 2003–2025 average = 100) for October 2026 stands at …",
+     "criterion": "The October 2026 value of the seasonally adjusted composite confidence indicator (souhrnný indikátor důvěry, base index) in ČSÚ's 'Konjunkturální průzkumy – říjen 2026' release published on 26 Oct 2026.",
+     "resolution_source": "https://csu.gov.cz/rychle-informace/konjunkturalni-pruzkumy-zari-2026 (October release at csu.gov.cz/rychle-informace)",
+     "publishes": "ČSÚ rychlá informace 'Konjunkturální průzkumy – říjen 2026', csu.gov.cz, 26 Oct 2026, expected 09:00 CET (hour not stated by ČSÚ)",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-10-26T00:00:00+01:00",
+      "end": "2026-10-26T23:59:00+01:00"
+     },
+     "evidence_at": "2026-10-26T09:00:00+01:00",
+     "kind": "interval",
+     "quantity": "ČSÚ composite confidence indicator (souhrnný indikátor důvěry), seasonally adjusted base index, October 2026",
+     "unit": "",
+     "scale": 1.5,
+     "slip_class": "stats-release",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "quantiles": {
+      "q10": 97.32,
+      "q50": 99.3,
+      "q90": 101.26
+     },
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "q10": 97.3,
+        "q50": 99.3,
+        "q90": 101.3,
+        "q_blind": {
+         "q10": 97.3,
+         "q50": 99.3,
+         "q90": 101.3
+        },
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "No consensus; naive anchor is the last value 99.5, scale is the 24-month m/m sd of 1.5 (slightly widened). Median shaded -0.2 for weaker German PMI/ZEW in October and falling Czech business sentiment; base rate of October rises 9/23 and recent rises 11/24 are consistent with a small downward tilt. Final: the signals file has no market or forecast matching this claim, so I kept the blind number."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "q10": 97.3,
+        "q50": 99.2,
+        "q90": 101.1,
+        "q_blind": {
+         "q10": 97.6,
+         "q50": 99.5,
+         "q90": 101.4
+        },
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "This is a random walk from 99.5 with sd 1.5 and a small downward shift (−0.3). German indicators softened in October (ZEW expectations −6.6, flash PMI −1.0), the energy shock is continuing, and Czech industry already reported a sharp drop in demand in September. Consumers firmed in September and October seasonality is flat. No consensus exists."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "q10": 97.2,
+        "q50": 99.1,
+        "q90": 101,
+        "q_blind": {
+         "q10": 97.2,
+         "q50": 99.1,
+         "q90": 101
+        },
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "No consensus; anchor last value 99.5 with m/m sd 1.5 (24 months). Shade the median down 0.4: September's business indicator was the weakest since 2025 on a sharp demand drop in industry, German October surveys softened (flash PMI 52.8 from 53.8, ZEW expectations -6.6), gas at a new high and Brent above $100 hit real incomes, and the consumer indicator's +2.8 jump after a -3.3 fall looks like noise that tends to give back. Against the shade: components often move oppositely so the composite change is small, and October changes show no seasonal pattern (9 rises / 14 falls since 2004). Symmetric 80% band of ±1.9. Signals: no market or published forecast for the ČSÚ composite; quantiles kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "q10": 97.3,
+        "q50": 99.3,
+        "q90": 101.3,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor: no consensus or market; models.mjs quantiles centred on last value 99.5 with m/m sd 1.5 (97.6/99.5/101.4). I shifted the median down 0.2 because the German PMI and ZEW softened, the energy shock continues, Czech industry demand is falling, and the jump in the consumer index may partly reverse. sd 1.55."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "q10": 97.5,
+        "q50": 99.6,
+        "q90": 101.6,
+        "q_blind": {
+         "q10": 97.5,
+         "q50": 99.6,
+         "q90": 101.6
+        },
+        "inputs_blind": [
+         "dossier"
+        ],
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Random-walk anchor at 99.5 with m/m sd ~1.5; slight offset to mean reversion after business drop to 98.4 (consumers likely stay high), offset by energy shock and soft German demand; kept symmetric and slightly wide. Signals read: no relevant market; blind number kept."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "consensus": null,
+      "last_value": 99.5,
+      "scale_source": "sd of month-on-month changes of the composite, last 24 months (Oct 2024–Sep 2026), ČSÚ Graf 1 September 2026 vintage: 1.54 (mean abs 1.17); 60-month sd 2.07. No consensus exists, so m/m sd is used.",
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/cz-confidence-oct.md",
+      "signals": "data/dossiers/2026-10-27/cz-confidence-oct.signals.md"
+     },
+     "schedule": "official"
+    },
+    {
+     "id": "cz-confidence-oct-rises",
+     "label": "Czech confidence rises in October",
+     "text": "ČSÚ's composite confidence indicator for October 2026 is above its September value as shown in the October release.",
+     "criterion": "YES if the October 2026 seasonally adjusted composite confidence indicator in ČSÚ's 26 Oct 2026 release is strictly greater than the September 2026 value printed in the same release (one decimal; a tie is NO). NO if it is equal or lower, or if ČSÚ does not release the October survey on 26 Oct.",
+     "resolution_source": "https://csu.gov.cz/rychle-informace/konjunkturalni-pruzkumy-zari-2026 (October release at csu.gov.cz/rychle-informace)",
+     "publishes": "ČSÚ rychlá informace 'Konjunkturální průzkumy – říjen 2026', csu.gov.cz, 26 Oct 2026, expected 09:00 CET (hour not stated by ČSÚ)",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-10-26T00:00:00+01:00",
+      "end": "2026-10-26T23:59:00+01:00"
+     },
+     "evidence_at": "2026-10-26T09:00:00+01:00",
+     "derived": {
+      "from": "cz-confidence-oct",
+      "event": ">",
+      "x": 99.55
+     },
+     "slip_class": "stats-release",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "derived_note": "Criterion is 'strictly greater at one decimal', so the continuous threshold is half a decimal above the September value.",
+     "probability": 0.44,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "p_blind": 0.42,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.42,
+        "p_held": 0.99,
+        "p_if_held": 0.43,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "Derived from own quantiles: P(value >= 99.6 vs printed Sept ~99.5) ~0.43 under Normal(99.3,1.5) with one-decimal ties = NO; times 0.99 stats-release slip. Matches the base rate of 46% rises over 24 months and 39% for Octobers. Final: the signals file has no market or forecast matching this claim, so I kept the blind number."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "p_blind": 0.48,
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "p": 0.41,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "This follows from my quantiles: P(value ≥ 99.55) with median 99.2 and sd 1.5 is 0.41. A tie at one decimal is NO, and the September figure may be revised by about ±0.1–0.2."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "p_blind": 0.37,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.37,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Derived from my quantiles (median 99.1, sd 1.5): P(value > 99.5) = 0.39 by the two-piece normal, less about 0.02 for a tie at one decimal (NO) and the 0.01 stats-release slip; September may be revised ±0.1–0.2, which is symmetric. Empirical rate of rises 46% of last 24 months; the softer October survey backdrop pulls below that. Signals: none; kept."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "p": 0.43,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "From own quantiles: models.mjs release 99.3 99.55 1.55 = 0.436 (strictly above 99.5 at one decimal, so a tie is NO), times (1−0.01 stats-release slip) → 0.43. Matches the history: 11 of the last 24 changes were rises, and 9 of 23 Octobers."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "p_blind": 0.5,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.5,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Consistent with median 99.6 vs threshold 99.5: about 0.52 before the tie and revision risk (one-decimal tie ~4%, September revision +-0.2), giving ~0.50. Signals read: no relevant market; blind number kept."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.426,
+      "combined_blind": 0.442,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.13,
+      "derived_value": 0.435,
+      "adjustment": "Published figure derived from the interval cz-confidence-oct (EDITOR 6a: related numbers from one distribution): 0.435; the five forecasters' own binary figures combine to 0.426.",
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.444,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/cz-confidence-oct-rises.md",
+      "signals": "data/dossiers/2026-10-27/cz-confidence-oct-rises.signals.md"
+     },
+     "schedule": "official"
+    }
+   ],
+   "basis": "A random walk from September's 99.5 with monthly changes of about 1.5 points (one standard deviation), shaded down for weaker German surveys and energy prices. Main risk: consumer optimism carrying the composite higher.",
+   "sources": [
+    {
+     "title": "ČSÚ: Konjunkturální průzkumy – září 2026 (24 Sep)",
+     "url": "https://csu.gov.cz/rychle-informace/konjunkturalni-pruzkumy-zari-2026"
+    },
+    {
+     "title": "ČTK: ČSÚ – Důvěra podnikatelů v ekonomiku stoupla (27 Dec 2023, release-day precedent)",
+     "url": "https://www.ceskenoviny.cz/zpravy/2458523"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. cz-confidence-oct: base-rate 99.3, evidence 99.2, adversarial 99.1, anchor 99.3, outsider 99.6; mean quantiles {\"q10\":97.32,\"q50\":99.3,\"q90\":101.26} | cz-confidence-oct-rises: base-rate 0.42, evidence 0.41, adversarial 0.37, anchor 0.43, outsider 0.5; combined 0.426, published 0.44. Main risk: ČSÚ revises the September seasonally adjusted value.",
+   "cs": {
+    "kicker": "Česko · Ekonomika",
+    "headline": "Důvěra v českou ekonomiku v říjnu opět mírně klesla",
+    "body": [
+     "Český statistický úřad (ČSÚ) měl v pondělí 26. října zveřejnit říjnové konjunkturální průzkumy mezi podniky a spotřebiteli. Naše předpověď odhadovala souhrnný indikátor důvěry na 99,3 bodu s 80% rozpětím 97,3 až 101,3 a pravděpodobnost, že stoupne nad zářijovou úroveň, na 44 %.",
+     "V září souhrnný indikátor klesl o 1,0 bodu na 99,5. Důvěra podnikatelů se snížila o 1,8 bodu na 98,4, což Jiří Obst z ČSÚ přičítá hlavně výraznému snížení poptávky v průmyslu a zhoršení sentimentu ve službách; důvěra spotřebitelů naopak vzrostla o 2,8 bodu na 105,1.",
+     "Naši prognostici se mírně přikláněli k poklesu kvůli slabším německým průzkumům a vysokým cenám energií. Souhrnný indikátor se však v průměrném měsíci pohne zhruba o 1,2 bodu a jeho podnikatelská a spotřebitelská složka často míří opačným směrem, takže mírný růst byl téměř stejně pravděpodobný. ČSÚ hodinu zveřejnění neuvádí; průzkum za prosinec 2023 přinesla ČTK v den vydání v 9:30."
+    ],
+    "basis": "Náhodná procházka od zářijových 99,5 bodu se směrodatnou odchylkou měsíčních změn zhruba 1,5 bodu, mírně snížená kvůli slabším německým průzkumům a cenám energií. Hlavní riziko: optimismus spotřebitelů vytáhne souhrnný indikátor nahoru.",
+    "claims": {
+     "cz-confidence-oct": {
+      "label": "Důvěra v českou ekonomiku v říjnu",
+      "text": "Souhrnný indikátor důvěry ČSÚ (sezónně očištěný, průměr 2003–2025 = 100) za říjen 2026 dosahuje …",
+      "criterion": "Říjnová hodnota sezónně očištěného souhrnného indikátoru důvěry (bazický index) v rychlé informaci ČSÚ „Konjunkturální průzkumy – říjen 2026“ zveřejněné 26. října 2026."
+     },
+     "cz-confidence-oct-rises": {
+      "label": "Důvěra v ekonomiku v říjnu stoupne",
+      "text": "Souhrnný indikátor důvěry ČSÚ za říjen 2026 je vyšší než zářijová hodnota uvedená v říjnové zprávě.",
+      "criterion": "ANO, pokud je říjnová hodnota sezónně očištěného souhrnného indikátoru důvěry ve zprávě ČSÚ z 26. října 2026 vyšší než zářijová hodnota uvedená v téže zprávě (na jedno desetinné místo; shoda znamená NE). NE, pokud je stejná nebo nižší, nebo pokud ČSÚ říjnový průzkum 26. října nezveřejní."
+     }
+    }
+   }
+  },
+  {
+   "id": "bg-election",
+   "scope": "europe",
+   "size": "half",
+   "kicker": "Bulgaria · Presidential election",
+   "headline": "Gyurov Clears 28% in Bulgaria's First Round",
+   "body": [
+    "Andrey Gyurov, running with Georgi Kandev, took at least 28 per cent of the valid vote in the first round of Bulgaria's presidential election on Sunday, according to the Central Election Commission's (CIK) count published through Monday. Our forecast put the chance at 52%, barely better than a coin toss, because the line sat almost exactly on his final polls.",
+    "Gallup International Balkan, polling face to face from 14 to 22 October, gave him 29.7 per cent against 43.2 for Iliana Iotova and Kiril Valchev, BTA reported. Myara, for Bulgarian National Radio, had him on 28.9, with Iotova on 43.4 and 2.5 per cent for \"none of the above\". Novinite listed Alpha Research at 28.3, Market Links for bTV at 30.6 per cent of decided voters and Sova Harris for Trud at only 24.8.",
+    "Our forecasters trimmed the poll average because CIK counts the \"I do not support anyone\" option among valid votes, which lowers every candidate's share, and set that against signs of anti-Iotova voters consolidating behind Gyurov and late-arriving protocols from Sofia and abroad.",
+    "The main risk was the crowded ballot: 27 tickets, the largest field since direct presidential elections began in 1992, according to Novinite. Polls closed at 19:00 CET on Sunday; CIK has 48 hours to name the two tickets for the runoff on 1 November."
+   ],
+   "claims": [
+    {
+     "id": "bg-gyurov-28",
+     "label": "Gyurov at 28% or more",
+     "text": "In the Central Election Commission's results of the first round of Bulgaria's presidential election on 25 October, Andrey Gyurov gets at least 28% of valid votes.",
+     "criterion": "YES if the Central Election Commission's (CIK, results.cik.bg / cik.bg) results of the 25 Oct 2026 first round — the final result if published, otherwise the latest preliminary result with the most protocols processed when the resolver reads it — show the Gyurov–Kandev ticket at 28.00% or more of valid votes as CIK counts them (including the 'I do not support anyone' option); CIK's printed percentage decides, otherwise votes divided by that total. NO if the share shown is below 28.00%, or if the first round is not held on 25 Oct 2026.",
+     "resolution_source": "https://results.cik.bg/",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "CIK interim results on results.cik.bg from about midnight EET on election night by share of processed protocols; ~98% by early afternoon 26 Oct on the April 2026 pattern",
+     "tz": "Europe/Sofia",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+02:00",
+      "end": "2026-10-26T23:59:59+02:00"
+     },
+     "evidence_at": "2026-10-26T15:00:00+02:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.52,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:26Z",
+        "p_blind": 0.52,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.52,
+        "p_held": 0.99,
+        "p_if_held": 0.53,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:19Z",
+        "reason": "Unchanged. Signals have no share market. Second-place and margin markets (Iotova lead mostly 10–20) fit the poll picture without telling us whether Gyurov reaches 28. The central estimate stays ~28.1 after the 'none' base adjustment, with sd 2.61, giving ~0.52."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:17:40Z",
+        "p_blind": 0.48,
+        "inputs_blind": [
+         "own-research"
+        ],
+        "p": 0.52,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:12:30Z",
+        "reason": "Final-week mean 28.6 (27.8-29.7), about 28.1 after adjusting for the CIK base including 'none' (~-0.5 pp); with a pooled sd of ~2.6 pp that is close to a coin flip. Upward momentum through October, likely strategic anti-Iotova consolidation, and late Sofia/diaspora protocols lift the final count slightly (+). Minor tickets plus 'none' running above polls (-). Market second-place odds (0.95-0.98) are not informative about the 28% line."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:19:00Z",
+        "p_blind": 0.5,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.53,
+        "p_held": 0.99,
+        "p_if_held": 0.54,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:15:00Z",
+        "reason": "No share market. The Polymarket margin ladder (Iotova by <10 at 0.27, 10–20 at 0.565) mapped onto an Iotova share of 41–45 puts Gyurov's share mostly in the 23–33 band with a fat upper tail — mildly supportive of ≥28 relative to a Normal(28.1, 2.6) centred just above the line, as it prices a one-in-four chance of a Gyurov surge/Iotova sag. Second-place markets (0.95–0.98) say nothing about the 28 line. Fundamentals unchanged: CIK base with NOTA and 24 minor tickets costs ~0.5 pp, Trend already at 27.8; diaspora protocols and anti-Iotova consolidation push up. Nudge +0.1 log-odds → 0.54.",
+        "note": "While reading edition No. 4 for background during the blind step it saw stale market lines on other questions (Brazil winner, Bulgaria margins); none on these five claims; recorded by the agent."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:13:00Z",
+        "p": 0.52,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Model 0.515 at a line sitting on the poll mean. Small upward nudge for upward trend over October, strategic anti-Iotova consolidation and late Sofia/diaspora protocols; offsetting risk that 'none' and 24 minor tickets exceed polled levels. Net ~0.52.",
+        "anchor": {
+         "source": "Statistical model models.mjs leadabove 28.1 2.61 28 (final-week poll mean 28.6, −0.5 for CIK 'none' base; sd 2.61 pooled party error, poll-error.json)",
+         "url": "pipeline/reference-data/poll-error.json",
+         "price": 0.515,
+         "read_time": "2026-10-24T17:12Z",
+         "liquidity": "n/a; no market on Gyurov's share (Polymarket second place 0.952, margin ladder only)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:20:17Z",
+        "p_blind": 0.5,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.5,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:05Z",
+        "reason": "The signals give no direct share market. Gyurov to come second at 0.95-0.98 and the Iotova margin ladder (about 15 pts at the mode) are consistent with Gyurov near 28, so no change."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.518,
+      "combined_blind": 0.5,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.03,
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.525,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/bg-gyurov-28.md",
+      "signals": "data/dossiers/2026-10-27/bg-gyurov-28.signals.md"
+     }
+    }
+   ],
+   "basis": "Final-week polls reported by BTA, Bulgarian National Radio and Novinite, adjusted for CIK's inclusion of the 'none' option in valid votes; main risk: 'none' and 25 minor tickets taking more than polled, with the line on the poll mean.",
+   "sources": [
+    {
+     "title": "BTA: Iotova and Valchev lead with 43.2% – Gallup International poll (23 Oct 2026)",
+     "url": "https://www.bta.bg/en/news/bulgaria/1231172-iotova-and-valchev-lead-in-presidential-election-with-43-2-support-gallup-poll"
+    },
+    {
+     "title": "Radio Bulgaria (BNR): Poll: Iotova 43.4%, Gyurov 28.9% (22 Oct 2026)",
+     "url": "https://bnrnews.bg/en/post/546000/poll-iotova-leads-presidential-race-with-434percent-gyurov-on-289percent"
+    },
+    {
+     "title": "Novinite: Change or more of the same – Bulgaria picks a president on Sunday (22 Oct 2026)",
+     "url": "https://www.novinite.com/articles/241182/Change+or+More+of+the+Same:+Bulgaria+Picks+a+President+on+Sunday"
+    },
+    {
+     "title": "CIK results",
+     "url": "https://results.cik.bg/"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. bg-gyurov-28: base-rate 0.52, evidence 0.52, adversarial 0.53, anchor 0.52, outsider 0.5; combined 0.518, published 0.52. Main risk: the base includes \"I support no one\" votes; Sova Harris had Gyurov at 24.8%.",
+   "cs": {
+    "kicker": "Bulharsko · Prezidentské volby",
+    "headline": "Gjurov v prvním kole bulharských voleb překročil 28 %",
+    "body": [
+     "Andrej Gjurov, který kandidoval s Georgim Kandevem, získal v nedělním prvním kole bulharských prezidentských voleb nejméně 28 % platných hlasů, vyplývá ze sčítání Ústřední volební komise (CIK) zveřejňovaného v průběhu pondělí. Naše předpověď tomu dávala 52 %, tedy jen o málo víc než hod mincí, protože hranice ležela téměř přesně na jeho výsledcích v posledních průzkumech.",
+     "Agentura Gallup International Balkan, která se ptala osobně od 14. do 22. října, mu přisoudila 29,7 % proti 43,2 % pro Ilianu Iotova a Kirila Valčeva, informovala agentura BTA. Agentura Myara pro Bulharský národní rozhlas mu dávala 28,9 %, Iotova měla 43,4 % a 2,5 % připadlo na možnost „nikdo z uvedených“. Server Novinite uvedl Alpha Research s 28,3 %, Market Links pro televizi bTV s 30,6 % rozhodnutých voličů a Sova Harris pro deník Trud s pouhými 24,8 %.",
+     "Naši prognostici průměr průzkumů snížili, protože CIK započítává mezi platné hlasy i možnost „Nepodporuji nikoho“, což snižuje podíl všech kandidátů, a postavili to proti známkám, že se odpůrci Iotova sjednocují za Gjurovem, a proti později docházejícím protokolům ze Sofie a ze zahraničí.",
+     "Hlavním rizikem byl přeplněný hlasovací lístek: 27 dvojic, nejvíce od zavedení přímé volby prezidenta v roce 1992, uvedl Novinite. Volební místnosti se zavřely v neděli v 19:00 SEČ; CIK má 48 hodin na to, aby oznámila dvě dvojice postupující do druhého kola 1. listopadu."
+    ],
+    "basis": "Průzkumy z posledního týdne podle BTA, Bulharského národního rozhlasu a serveru Novinite, upravené o to, že CIK počítá mezi platné hlasy i možnost „nikdo“; hlavní riziko: možnost „nikdo“ a 25 menších dvojic získají víc, než ukazovaly průzkumy, přičemž hranice ležela na průměru průzkumů.",
+    "claims": {
+     "bg-gyurov-28": {
+      "label": "Gjurov získá nejméně 28 %",
+      "text": "Podle výsledků Ústřední volební komise získá Andrej Gjurov v nedělním prvním kole bulharských prezidentských voleb nejméně 28 procent platných hlasů.",
+      "criterion": "ANO, pokud poslední předběžný nebo konečný výsledek prvního kola zveřejněný Ústřední volební komisí (CIK; results.cik.bg / cik.bg) mezi 6:00 východoevropského času 25. 10. a 23:59 východoevropského času 26. 10. 2026 ukáže dvojici Gjurov–Kandev s 28,00 % nebo více platných hlasů tak, jak je počítá CIK (včetně možnosti „Nepodporuji nikoho“); rozhoduje procento uvedené CIK, jinak hlasy dělené tímto součtem. NE, pokud bude uvedený podíl nižší než 28,00 %, nebo pokud se první kolo 25. 10. nekoná."
+     }
+    }
+   }
+  },
+  {
+   "id": "ca-toronto",
+   "scope": "world",
+   "size": "third",
+   "kicker": "Canada · Toronto",
+   "headline": "Olivia Chow Re-elected Mayor of Toronto",
+   "body": [
+    "Olivia Chow won a new term as mayor of Toronto on Monday, taking the most votes in the city's unofficial results against councillor Brad Bradford. Our forecast put her chance at 59%. Voting places closed at 20:00 Toronto time, 01:00 CET on Tuesday.",
+    "The final polls were split. Nanos Research for CP24 and CTV, polling from 15 to 18 October, had Chow on 49.8 per cent of decided voters and Bradford on 46.6, with 16 per cent undecided, CP24 reported. Global News reported Liaison Strategies with Bradford ahead by 49 to 47 and Mainstreet Research by 48.9 to 47.5, while Pollara, for the civic workers' union CUPE Local 416, had Chow ahead by 53 to 46.",
+    "Our forecasters gave the incumbent the edge; the main risk was a polling miss of two points or so in a race with 53 mayoral candidates on the ballot, according to the City of Toronto."
+   ],
+   "claims": [
+    {
+     "id": "ca-toronto-chow-reelected",
+     "label": "Chow re-elected in Toronto",
+     "text": "Olivia Chow wins Monday's Toronto mayoral election, with the most votes in the City of Toronto's unofficial results.",
+     "criterion": "YES if the City of Toronto's unofficial election-night results for Mayor (toronto.ca/election-results) for the 26 Oct 2026 election, with all voting places reported, show Olivia Chow with more votes than any other candidate. NO if another candidate has the most votes, or if the vote does not take place on 26 Oct 2026. Later recounts or the official declaration do not change the resolution.",
+     "resolution_source": "https://www.toronto.ca/election-results",
+     "schedule": "official",
+     "slip_class": "election-held",
+     "publishes": "City of Toronto unofficial results at toronto.ca/election-results from 20:00 EDT on 26 Oct (01:00 CET 27 Oct), usually complete within a few hours",
+     "tz": "America/Toronto",
+     "event_window": {
+      "start": "2026-10-26T10:00:00-04:00",
+      "end": "2026-10-26T23:59:59-04:00"
+     },
+     "evidence_at": "2026-10-27T04:00:00+01:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.59,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:26Z",
+        "p_blind": 0.55,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.61,
+        "p_held": 0.99,
+        "p_if_held": 0.615,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:19Z",
+        "reason": "Blind ~0.55 from polls near-tied (Chow +0 to +1.7) with municipal poll error sd ~5 pp and a small incumbency nudge. Polymarket 0.655 and Kalshi 0.67 (liquid, same outcome) sit above it. Moved about two-thirds of the way toward them (+0.25 log-odds), not all the way, since the polls give little edge."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:17:40Z",
+        "p_blind": 0.46,
+        "inputs_blind": [
+         "own-research"
+        ],
+        "p": 0.55,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:12:30Z",
+        "reason": "The dossier's mean of the four final polls is Chow +1.7 (49.3-47.6), split 2-2 by method, with a trend toward Bradford; incumbents seeking re-election in Toronto went 4/4. Exchanges price Chow at 0.655-0.67 on decent volume, which I weight partly. Up from blind 0.46, because I had underweighted Nanos (Chow +3.2) and the incumbency record."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:19:00Z",
+        "p_blind": 0.47,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.56,
+        "p_held": 0.99,
+        "p_if_held": 0.57,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:15:00Z",
+        "reason": "Three independent venues agree on Chow 0.655–0.67 (Polymarket liq ~$98k, Kalshi, Manifold), which is 18–20 points above my blind 0.47. Written reason for staying >15 points below the market... is not needed since I move to within 10: the markets may hold information from after the 19 Oct fieldwork, and my trend extrapolation (−3 pp/week) is the weakest link in the adversarial case. I still discount the market: thin for a municipal race, exchange prices favour incumbents/known names, two of four final polls show Bradford ahead, and undecideds in an incumbent referendum tend to break to the challenger. Log-odds midpoint between 0.47 and 0.66 ≈ 0.57.",
+        "note": "While reading edition No. 4 for background during the blind step it saw stale market lines on other questions (Brazil winner, Bulgaria margins); none on these five claims; recorded by the agent."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:13:00Z",
+        "p": 0.65,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Liquid exchange on the same outcome, settling on the election result. Poll model (mean lead Chow +1.7 over four 18–19 Oct polls, rms lead error 2.734 pooled) gives 0.73, but the polls split by method and the pooled sd is not Canadian-municipal, so stay at the market; ~1% slip folded in.",
+        "anchor": {
+         "source": "Polymarket 'Will Olivia Chow win the 2026 Toronto mayoral election?' (exchange)",
+         "url": "https://polymarket.com/event/toronto-mayoral-election-winner-545",
+         "price": 0.655,
+         "read_time": "2026-10-24T17:11Z",
+         "liquidity": "vol ~$330.5k, liq ~$95.5k; Kalshi 0.67 (vol ~$44.7k) consistent"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:20:17Z",
+        "p_blind": 0.52,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.6,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:05Z",
+        "reason": "Three markets agree on Chow at 0.65-0.67, versus my blind 0.52 from a split poll mean. Blend, with the market getting about half the weight because the polls are split and the markets are thin."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.595,
+      "combined_blind": 0.5,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.1,
+      "decomposition": {
+       "p_held": 0.99,
+       "p_if_held": 0.596,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/toronto-mayoral-election-winner-545",
+       "p": 0.655,
+       "read_at": "2026-10-24T17:11:00Z",
+       "liquidity": "volume about $330k, liquidity about $96k; Kalshi 0.67 (volume about $45k) consistent",
+       "match": "same outcome (most votes), settles on the election result"
+      },
+      "dossier": "data/dossiers/2026-10-27/ca-toronto-chow-reelected.md",
+      "signals": "data/dossiers/2026-10-27/ca-toronto-chow-reelected.signals.md"
+     }
+    }
+   ],
+   "basis": "Final polls reported by CP24 and Global News, with weight for incumbency; main risk: the polls split by method, and a two-point miss either way decides the race.",
+   "sources": [
+    {
+     "title": "CP24: Exclusive poll – Chow and Bradford in statistical tie (20 Oct 2026)",
+     "url": "https://www.cp24.com/local/toronto/2026/10/20/exclusive-poll-olivia-chow-and-brad-bradford-in-statistical-tie-with-toronto-election-less-than-one-week-away"
+    },
+    {
+     "title": "Global News: polls on Chow and Bradford (21 Oct 2026)",
+     "url": "https://globalnews.ca/news/12110991/poll-chow-bradford-toronto-election/"
+    },
+    {
+     "title": "City of Toronto: Fact sheet – 2026 Toronto municipal election",
+     "url": "https://www.toronto.ca/news/fact-sheet-2026-toronto-municipal-election/"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. ca-toronto-chow-reelected: base-rate 0.61, evidence 0.55, adversarial 0.56, anchor 0.65, outsider 0.6; combined 0.595, published 0.59; market polymarket 0.655. Main risk: Mainstreet and Liaison had Bradford ahead with many undecided.",
+   "cs": {
+    "kicker": "Kanada · Toronto",
+    "headline": "Olivia Chow obhájila post starostky Toronta",
+    "body": [
+     "Olivia Chow v pondělí obhájila post starostky Toronta, když v neoficiálních výsledcích města získala nejvíce hlasů a porazila radního Brada Bradforda. Naše předpověď jí dávala 59 %. Volební místnosti se zavřely ve 20:00 torontského času, v úterý v 01:00 SEČ.",
+     "Závěrečné průzkumy se rozcházely. Agentura Nanos Research pro CP24 a CTV, která se ptala od 15. do 18. října, připsala starostce Chow 49,8 % rozhodnutých voličů a Bradfordovi 46,6 %, přičemž 16 % dotázaných bylo nerozhodnutých, uvedla stanice CP24. Global News informovala, že podle Liaison Strategies vedl Bradford 49 ku 47 a podle Mainstreet Research 48,9 ku 47,5, zatímco Pollara pro odbory městských zaměstnanců CUPE Local 416 viděla v čele Chow v poměru 53 ku 46.",
+     "Naši prognostici dali přednost úřadující starostce; hlavním rizikem byla chyba průzkumů zhruba o dva body ve volbě, v níž na lístku figurovalo 53 kandidátů na starostu, uvádí město Toronto."
+    ],
+    "basis": "Závěrečné průzkumy podle CP24 a Global News, s přihlédnutím k výhodě úřadující starostky; hlavní riziko: průzkumy se podle metody rozcházejí a o výsledku rozhodne chyba dvou bodů jedním či druhým směrem.",
+    "claims": {
+     "ca-toronto-chow-reelected": {
+      "label": "Chow obhájí Toronto",
+      "text": "Olivia Chow vyhraje pondělní volbu starosty Toronta – v neoficiálních výsledcích města získá nejvíce hlasů.",
+      "criterion": "ANO, pokud neoficiální výsledky volby starosty Toronta z 26. 10. 2026, které město zveřejňuje na toronto.ca/election-results, po sečtení všech volebních míst ukážou, že Olivia Chow získala více hlasů než kterýkoli jiný kandidát. NE, pokud nejvíce hlasů získá jiný kandidát nebo pokud se volba 26. 10. 2026 nekoná. Pozdější přepočítání ani oficiální vyhlášení na vyhodnocení nic nemění."
+     }
+    }
+   }
+  },
+  {
+   "id": "cz-pardubice",
+   "scope": "cz",
+   "size": "rail",
+   "kicker": "Czech Republic · Pardubice",
+   "headline": "Pardubice's five-party coalition did not sign on Monday",
+   "body": [
+    "The five groupings set to run Pardubice city hall, ODS, STAN, Progresivní Pardubice, Naše Pardubice and Noví lidovci, wanted to sign their coalition agreement that week or, at the latest, at the start of the week of 26 October, STAN's local leader, Daniel Vondra, said, as info.cz reported on 22 October. Our forecast put the chance of a signing between Sunday morning and Monday midnight at 27%.",
+    "Together the five hold 22 of the 39 seats and would push ANO into opposition after twelve years, with ODS's Ondřej Tichý as their candidate for mayor. The programme was nearly finished, but details were to be published only with the agreement, and the parties still differed on parking and transport, info.cz reported, citing Czech Radio.",
+    "The target had already slipped: on 14 October the parties said the agreement could be finished the following week, ČTK reported, and 'the start of the week' could as easily mean Tuesday. A signing before Sunday morning, which we found no report of, would also have counted as no."
+   ],
+   "claims": [
+    {
+     "id": "cz-pardubice-coalition-signed-26",
+     "label": "Pardubice five-party agreement signed 25–26 Oct",
+     "text": "The five groupings negotiating to run Pardubice city hall (ODS, STAN, Progresivní Pardubice, Naše Pardubice, Noví lidovci) sign their coalition agreement between 06:00 on 25 October and 23:59 on 26 October 2026.",
+     "criterion": "YES if, between 06:00 CET on 25 Oct 2026 and 23:59 CET on 26 Oct 2026, representatives of ODS, STAN, Progresivní Pardubice, Naše Pardubice and Noví lidovci (or of a coalition containing at least ODS and STAN that excludes ANO) sign a coalition agreement for the Pardubice city council for 2026–2030, as reported by ČTK, iRozhlas, Deník, ČT24 or the parties' official channels. A memorandum, \"agreement in principle\", agreed programme or announced future signing date does not count. NO if no such signature takes place in the window, including if it was signed before 06:00 on 25 Oct or is signed after 26 Oct.",
+     "resolution_source": "ČTK, iRozhlas, Pardubický Deník, ČT24 reports; parties' official channels",
+     "schedule": "reported",
+     "slip_class": "negotiation-round",
+     "publishes": "ČTK/iRozhlas/Deník report on the day of signing",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+01:00",
+      "end": "2026-10-26T23:59:59+01:00"
+     },
+     "evidence_at": "2026-10-26T20:00:00+01:00",
+     "resolves_by": "2026-10-27T05:00:00+01:00",
+     "probability": 0.27,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:15:59Z",
+        "p_blind": 0.25,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.25,
+        "p_held": 0.27,
+        "p_if_held": 0.95,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:10Z",
+        "reason": "The target 'this week, at the latest start of next week' has already slipped twice (negotiation-round slip 0.30, likely higher here). About a 15% chance it was already signed on 23–24 Oct (outside the window). Of the remaining dates, the window covers only Monday (Sunday is unlikely), against Tue/Wed or the constituent session, so ~0.3 conditional on not already signed. A coalition signing that excludes ANO is near-certain if a signing happens. Final: the signals file has no market or forecast matching this claim, so I kept the blind number. The thin Polymarket mayor market (Tichý 0.81) supports the coalition holding, which is already in p_if_held, and says nothing about the date."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:50Z",
+        "p_blind": 0.38,
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "p": 0.33,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:12:00Z",
+        "reason": "The target is 'this week, at the latest the start of next week' (Vondra, 22 Oct). The target has slipped twice before. The deal could already have been signed on 23–24 Oct, which would make this NO, though no report of that was found. Signing could also land on Tuesday or later, or with the constituent session. The window is in practice Monday only. The mayor market (Tichý 0.81) suggests the coalition holds but says nothing about the date."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:18:14Z",
+        "p_blind": 0.27,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.28,
+        "p_held": 0.29,
+        "p_if_held": 0.97,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:14:00Z",
+        "reason": "Outside view: negotiation-round slip 0.30 applies to a soft target ('nejpozději začátkem příštího týdne') that has already slipped twice (week of 19 Oct → this week → start of next week); Sunday is dead, so the window is one working day. Rough distribution of the signing date: already signed 23–24 Oct (unreported but not excluded) 0.10, Monday 26 Oct 0.28, Tue–Fri 0.35, later or collapse 0.27 — 'start of the week' comfortably includes Tuesday, five parties need internal approvals, programme publication is tied to the signing, and a mandate lawsuit is pending. For: comparable 2026 cities (Olomouc Monday 19 Oct, Brno 23 Oct) signed within days of agreeing; no sign of collapse. If a signing happens in the window it almost surely meets the criterion (p_if_held 0.97); p_held 0.28; product 0.27. Signals: thin Polymarket Next Mayor of Pardubice moved Tichý 0.774→0.809 (liq ~$270), a weak sign the five-party deal is holding (lowers the collapse share slightly) but nothing on timing; +0.01."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:11:12Z",
+        "p": 0.26,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor: slip class negotiation-round 0.30 → 0.70 that the 'start of next week at the latest' target holds. Strong move down: the window is effectively Monday only (25 Oct is a Sunday), and 'start of week' could also mean Tue/Wed (roughly −1.0 log-odds). It may already have been signed on 23–24 Oct, which would make this NO (P≈0.2), and the target has slipped twice. The Polymarket Tichý 0.81 mayor market says the coalition holds, which supports p_if_held."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:19:57Z",
+        "p_blind": 0.22,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.22,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:13Z",
+        "reason": "Target was 'start of next week' after two slips, but 25 Oct is Sunday so it needs Monday exactly; could also have been signed 23-24 Oct, or slip to later that week/constituent session. Five parties, programme details unresolved; roughly 0.5 on Monday-ish signing times ~0.5 not slipping again. Signals read: no relevant market; blind number kept."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.266,
+      "combined_blind": 0.276,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.11,
+      "decomposition": {
+       "p_held": 0.28,
+       "p_if_held": 0.965,
+       "p_if_not_held": 0
+      },
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/cz-pardubice-coalition-signed-26.md",
+      "signals": "data/dossiers/2026-10-27/cz-pardubice-coalition-signed-26.signals.md"
+     }
+    }
+   ],
+   "basis": "A soft target that had already slipped once and a window that in practice covered only Monday. Main risk: the five parties keeping to the target and signing on Monday itself.",
+   "sources": [
+    {
+     "title": "INFO.CZ: Jedna poslankyně, pět stran a vítěz voleb v opozici (22 Oct)",
+     "url": "https://www.info.cz/zpravodajstvi-a-komentare/vitez-voleb-v-opozici-pardubice"
+    },
+    {
+     "title": "ČTK: Pětikoalice v Pardubicích ladí program, subjekty deklarují ochotu ke kompromisu (14 Oct)",
+     "url": "https://www.ceskenoviny.cz/zpravy/petikoalice-v-pardubicich-ladi-program-subjekty-deklaruji-ochotu-ke-kompromisu-/2886580"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. cz-pardubice-coalition-signed-26: base-rate 0.25, evidence 0.33, adversarial 0.28, anchor 0.26, outsider 0.22; combined 0.266, published 0.27. Main risk: the agreement may already have been signed before Monday (not verified: Pardubický Deník unreachable).",
+   "cs": {
+    "kicker": "Česko · Pardubice",
+    "headline": "Pardubická pětikoalice v pondělí smlouvu nepodepsala",
+    "body": [
+     "Pět uskupení, která se chystají vést pardubickou radnici, tedy ODS, STAN, Progresivní Pardubice, Naše Pardubice a Noví lidovci, chtělo podle lídra pardubických Starostů Daniela Vondry podepsat koaliční smlouvu ten týden, nejpozději začátkem týdne od 26. října, uvedl 22. října server info.cz. Naše předpověď odhadovala pravděpodobnost podpisu mezi nedělním ránem a pondělní půlnocí na 27 %.",
+     "Pětice má dohromady 22 z 39 zastupitelů a po dvanácti letech by poslala ANO do opozice; kandidátem na primátora je lídr ODS Ondřej Tichý. Program byl podle serveru info.cz, který citoval Český rozhlas, téměř hotový, podrobnosti ale měly být zveřejněny až se smlouvou a strany se dál rozcházely v otázce parkování a dopravy.",
+     "Termín se už posunul: 14. října strany podle ČTK uváděly, že smlouva by mohla být hotová příští týden, a „začátek týdne“ mohl stejně dobře znamenat úterý. Za ne by se počítal i podpis před nedělním ránem, o kterém jsme však žádnou zprávu nenašli."
+    ],
+    "basis": "Volně stanovený termín, který se už jednou posunul, a okno, které v praxi zahrnovalo jen pondělí. Hlavní riziko: pětice termín dodrží a podepíše přímo v pondělí.",
+    "claims": {
+     "cz-pardubice-coalition-signed-26": {
+      "label": "Pětikoalice v Pardubicích podepíše smlouvu 25.–26. října",
+      "text": "Pět uskupení jednajících o vedení Pardubic (ODS, STAN, Progresivní Pardubice, Naše Pardubice, Noví lidovci) podepíše koaliční smlouvu mezi 6:00 25. října a 23:59 26. října 2026.",
+      "criterion": "ANO, pokud mezi 6:00 25. října 2026 a 23:59 26. října 2026 zástupci ODS, STAN, Progresivních Pardubic, Našich Pardubic a Nových lidovců (nebo koalice obsahující alespoň ODS a STAN a nezahrnující ANO) podepíší koaliční smlouvu pro pardubické zastupitelstvo na období 2026–2030, jak uvede ČTK, iRozhlas, Deník, ČT24 nebo oficiální kanály stran. Memorandum, dohoda „v principu“, dohodnutý program ani ohlášený budoucí termín podpisu se nepočítají. NE, pokud k podpisu v tomto okně nedojde, včetně případu, že smlouva byla podepsána před 6:00 25. října nebo bude podepsána po 26. říjnu."
+     }
+    }
+   }
+  },
+  {
+   "id": "eu-agrifish",
+   "scope": "europe",
+   "size": "quarter",
+   "kicker": "EU · Baltic fishing quotas",
+   "headline": "Baltic Catch Limits Not Settled on Day One",
+   "body": [
+    "EU agriculture and fisheries ministers meeting in Luxembourg were forecast not to have sealed political agreement on 2027 Baltic Sea fishing opportunities by midnight on Monday. The Council's notice for the two-day meeting on 26 and 27 October listed the Baltic regulation for political agreement, with a possible vote, but did not say on which day it would be taken. We put the chance of a deal by 23:59 CET on Monday at 10%.",
+    "The Commission's proposal of 24 August would raise central Baltic herring by 49% and sprat by 44%, but cut by-catch limits for western Baltic cod by 88%, eastern Baltic cod by 51% and western Baltic herring by 45%, the Baltic Times reported. The Brussels Times noted that it would also end the exemption for small-scale coastal fishing of western Baltic herring.",
+    "Last year ministers reached agreement only on the Tuesday, after overnight negotiations, with Sweden not backing the compromise, the Cyprus News Agency reported. The main risk to our forecast was a quick deal on Monday evening, helped by the generous herring and sprat increases."
+   ],
+   "claims": [
+    {
+     "id": "eu-baltic-quotas-26",
+     "label": "EU Baltic 2027 fishing quotas agreed on Monday",
+     "text": "At the Agriculture and Fisheries Council in Luxembourg, EU ministers reach political agreement on the 2027 Baltic Sea fishing opportunities by 23:59 CET on 26 October 2026.",
+     "criterion": "YES if the Council of the EU (press release, meeting page or presidency) states that ministers reached political agreement on the Council regulation fixing 2027 fishing opportunities in the Baltic Sea, and the agreement was reached at or before 23:59 CET on 26 Oct 2026 — shown by a Council press release dated 26 Oct 2026, or by a presidency/minister statement or agency report time-stamped no later than 23:59 CET on 26 Oct 2026 saying the deal is done. An agreement reached after midnight (press release dated 27 Oct saying 'today'), a postponement, or no agreement at this Council = NO.",
+     "resolution_source": "Council of the EU press releases and AGRIFISH 26-27 Oct 2026 meeting page (consilium.europa.eu)",
+     "schedule": "official",
+     "slip_class": "eu-council-adoption",
+     "publishes": "Council press release on consilium.europa.eu when agreement is reached (in 2023-2025 at 10:15-11:15 on day 2)",
+     "tz": "Europe/Luxembourg",
+     "event_window": {
+      "start": "2026-10-25T06:00:00+01:00",
+      "end": "2026-10-26T23:59:59+01:00"
+     },
+     "evidence_at": "2026-10-26T23:59:59+01:00",
+     "resolves_by": "2026-10-27T12:00:00+01:00",
+     "probability": 0.1,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:16:26Z",
+        "p_blind": 0.12,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.12,
+        "p_held": 0.88,
+        "p_if_held": 0.14,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:11:19Z",
+        "reason": "Unchanged. The signals contain nothing. Base class is a day-1 agreement in 0/3 years (Laplace ~0.2), against an unknown day split and an overnight-negotiation norm. p_held means agreement at this Council at all; p_if_held means before Monday midnight."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:17:40Z",
+        "p_blind": 0.1,
+        "inputs_blind": [
+         "own-research"
+        ],
+        "p": 0.08,
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:12:30Z",
+        "reason": "0/3 for 2023-25: the item was opened on day 1 (in 2025 too) but agreed overnight, with press releases at 10:15-11:15 on day 2. The day split for 26-27 Oct is unknown; large herring and sprat increases may reduce friction, but cod by-catch cuts and the removal of the coastal exemption are contentious. No market. A deal before midnight on day 1 is unlikely."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-24T17:19:00Z",
+        "p_blind": 0.1,
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "p": 0.1,
+        "p_held": 0.8,
+        "p_if_held": 0.13,
+        "inputs": [
+         "dossier",
+         "signals",
+         "reference-data"
+        ],
+        "at_blind": "2026-10-24T17:15:00Z",
+        "reason": "No market or model found; unchanged. Base rate 0/3 for a day-1 announcement (overnight negotiation, press release 10:15–11:15 on day 2 in 2023–2025); Baltic item is no. 5 behind the CAP partial general approach with the day split unconfirmed, so p_held (item opened Monday) ~0.80 and p_if_held (deal sealed and time-stamped before midnight) ~0.13. The adversarial case for YES — large herring/sprat increases, a non-Baltic Irish presidency, early minister posts — is not enough to beat the ritual of the all-nighter.",
+        "note": "While reading edition No. 4 for background during the blind step it saw stale market lines on other questions (Brazil winner, Bulgaria margins); none on these five claims; recorded by the agent."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-24T17:13:00Z",
+        "p": 0.15,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Laplace-smoothed 0/3 gives 0.20; day split unknown and the item might sit on Tuesday (NO by construction), and talks usually run overnight. Slight upward consideration for a less contested proposal (large herring/sprat increases) does not offset; p_held = agreement at this Council (1 − 0.15 eu-council-adoption slip), p_if_held = done before midnight on day 1.",
+        "anchor": {
+         "source": "Base rate: October AGRIFISH Baltic agreement reached on day 1, Council press releases 2023–2025 (0/3), Laplace (0+1)/(3+2)=0.20",
+         "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/10/28/baltic-sea-council-agrees-on-catch-limits-for-2026/",
+         "price": 0.2,
+         "read_time": "2026-10-24T16:45Z (dossier)",
+         "liquidity": "n/a; no market found (signals 16:58Z)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-24T17:20:17Z",
+        "p_blind": 0.07,
+        "inputs_blind": [
+         "dossier"
+        ],
+        "p": 0.07,
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "at_blind": "2026-10-24T17:11:05Z",
+        "reason": "No markets or models. The 0/3 day-1 base rate and the overnight pattern stand."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combined": 0.101,
+      "combined_blind": 0.096,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "spread": 0.08,
+      "decomposition": {
+       "p_held": 0.839,
+       "p_if_held": 0.119,
+       "p_if_not_held": 0
+      },
+      "base_rate": {
+       "class": "October AGRIFISH Baltic agreement reached on day 1",
+       "rate": 0,
+       "n": 3,
+       "source": "Council press releases 2023-2025 (all dated day 2)"
+      },
+      "market": null,
+      "dossier": "data/dossiers/2026-10-27/eu-baltic-quotas-26.md",
+      "signals": "data/dossiers/2026-10-27/eu-baltic-quotas-26.signals.md"
+     }
+    }
+   ],
+   "basis": "Our forecast rested on the habit of all-night talks, with agreement announced on the meeting's second day in recent years, and on the chance that the item was scheduled for Tuesday; main risk: a fast Monday deal eased by the large herring and sprat increases.",
+   "sources": [
+    {
+     "title": "Council of the EU: notice of meeting CM 4478/26, AGRIFISH 26-27 October 2026",
+     "url": "https://data.consilium.europa.eu/doc/document/CM-4478-2026-INIT/en/pdf"
+    },
+    {
+     "title": "Baltic Times: Commission proposes fishing opportunities for the Baltic Sea for 2027",
+     "url": "https://www.baltictimes.com/commission_proposes_fishing_opportunities_for_the_baltic_sea_for_2027/"
+    },
+    {
+     "title": "Brussels Times: Baltic cod faces 88% by-catch cut under stricter EU fishing rules",
+     "url": "https://www.brusselstimes.com/2285723/baltic-cod-faces-88-by-catch-cut-under-stricter-eu-fishing-rules"
+    },
+    {
+     "title": "Cyprus News Agency: Council reaches compromise on 2026 catch limits in the Baltic Sea",
+     "url": "https://www.cna.org.cy/en/article/9309293/council-reaches-compromise-on-2026-catch-limits-in-the-baltic-sea"
+    }
+   ],
+   "rationale": "Evening ensemble kept: the overnight check (25 Oct, 05:00–05:10) found nothing material. eu-baltic-quotas-26: base-rate 0.12, evidence 0.08, adversarial 0.1, anchor 0.15, outsider 0.07; combined 0.101, published 0.1; base rate October AGRIFISH Baltic agreement reached on day 1 0. Main risk: the Council has not published which day the Baltic item is taken.",
+   "cs": {
+    "kicker": "EU · Kvóty v Baltu",
+    "headline": "Baltské úlovkové limity první den uzavřeny nebyly",
+    "body": [
+     "Ministři zemědělství a rybolovu EU, kteří zasedali v Lucemburku, podle naší předpovědi do pondělní půlnoci nedosáhli politické dohody o rybolovných možnostech v Baltském moři na rok 2027. Oznámení Rady o dvoudenním zasedání 26. a 27. října uvádělo baltské nařízení k politické dohodě s možným hlasováním, neuvádělo však, kterého dne se jím ministři budou zabývat. Pravděpodobnost dohody do 23:59 SEČ v pondělí jsme odhadli na 10 %.",
+     "Návrh Komise z 24. srpna by podle listu Baltic Times zvýšil kvóty pro sledě ve střední části Baltu o 49 % a pro šproty o 44 %, ale snížil limity vedlejších úlovků tresky v západním Baltu o 88 %, tresky ve východním Baltu o 51 % a sledě v západním Baltu o 45 %. Brussels Times upozornil, že by také zrušil výjimku pro drobný pobřežní rybolov sledě v západním Baltu.",
+     "Loni se ministři dohodli až v úterý po celonočním jednání, přičemž Švédsko kompromis nepodpořilo, uvedla kyperská tisková agentura CNA. Hlavním rizikem naší předpovědi byla rychlá dohoda v pondělí večer, kterou by usnadnilo výrazné navýšení kvót pro sledě a šproty."
+    ],
+    "basis": "Předpověď stála na zvyku celonočních jednání, kdy byla dohoda v posledních letech ohlášena až druhý den zasedání, a na možnosti, že bod připadne na úterý; hlavní riziko: rychlá pondělní dohoda usnadněná velkým navýšením kvót pro sledě a šproty.",
+    "claims": {
+     "eu-baltic-quotas-26": {
+      "label": "Baltské kvóty na rok 2027 dohodnuty už v pondělí",
+      "text": "Ministři EU na zasedání Rady pro zemědělství a rybolov v Lucemburku dosáhnou do 23:59 SEČ 26. října 2026 politické dohody o rybolovných možnostech v Baltském moři na rok 2027.",
+      "criterion": "ANO, pokud Rada EU (tisková zpráva, stránka zasedání nebo předsednictví) uvede, že ministři dosáhli politické dohody o nařízení Rady o rybolovných možnostech v Baltském moři na rok 2027 a dohoda padla nejpozději ve 23:59 SEČ 26. října 2026 – doloženo tiskovou zprávou Rady s datem 26. října 2026, nebo prohlášením předsednictví či ministra nebo zprávou agentury s časem zveřejnění nejpozději 23:59 SEČ 26. října, že dohoda je uzavřena. Dohoda po půlnoci (tisková zpráva z 27. října se slovem „dnes“), odklad nebo žádná dohoda na tomto zasedání = NE."
+     }
+    }
+   }
+  }
+ ],
+ "diary": [
+  {
+   "date": "Tue 27 Oct",
+   "text": "Knesset election in Israel; Babiš in Algeria (second day); EU Agriculture and Fisheries Council ends in Luxembourg."
+  },
+  {
+   "date": "Wed 28 Oct",
+   "text": "Czech state holiday: President Pavel presents state honours at Prague Castle. US Federal Reserve decision; Russia–Africa summit in Moscow (to 29 Oct)."
+  },
+  {
+   "date": "Thu 29 Oct",
+   "text": "ECB monetary policy decision; EU–Canada summit in Montreal (to 30 Oct)."
+  },
+  {
+   "date": "Fri 30 Oct",
+   "text": "Eurostat flash estimate of euro-area GDP for the third quarter; Bank of Japan decision; Czech municipal councils may hold constituent sessions from today."
+  },
+  {
+   "date": "Sun 1 Nov",
+   "text": "Likely presidential runoff in Bulgaria."
+  },
+  {
+   "date": "Tue 3 Nov",
+   "text": "US midterm elections."
+  }
+ ],
+ "meta": {
+  "candidates": 51,
+  "cz_shortfall": "Four Czech stories proposed instead of eight: Monday 26 Oct is a Chamber committee week with no plenary, no Senate sitting, the PM and first deputy PM are abroad, constituent council sessions can only start on 30 Oct, the Castle does not publish honourees before 28 Oct, and the cabinet agenda shows no contested item. The morning may add a cabinet claim if the State Audiovisual Fund budget is on the 26 Oct agenda. Morning check: the cabinet meets on 26 Oct without Babiš and Havlíček, but its agenda on odok.cz could not be read, so no cabinet claim was added.",
+  "unreachable": [
+   "odok.cz (blocked)",
+   "pardubicky.denik.cz",
+   "consilium.europa.eu (AGRIFISH meeting page)",
+   "tradingeconomics.com",
+   "polymarket.com",
+   "hrad.cz (Cloudflare)",
+   "en.mfa.ir"
+  ]
+ },
+ "cs": {
+  "sections": [
+   {
+    "name": "Svět",
+    "dek": "Srbsko a Bulharsko sčítají hlasy, Toronto volí starostu"
+   },
+   {
+    "name": "Evropa",
+    "dek": "Nálada německých firem, kvóty na lov v Baltu"
+   },
+   {
+    "name": "Česko",
+    "dek": "Babiš v Alžíru, pražská koalice"
+   }
+  ],
+  "diary": [
+   {
+    "date": "Út 27. 10.",
+    "text": "Volby do Knesetu v Izraeli; Babiš v Alžírsku (druhý den); v Lucemburku končí Rada EU pro zemědělství a rybolov."
+   },
+   {
+    "date": "St 28. 10.",
+    "text": "Státní svátek: prezident Pavel předává na Pražském hradě státní vyznamenání. Rozhodnutí americké centrální banky; summit Rusko–Afrika v Moskvě (do 29. 10.)."
+   },
+   {
+    "date": "Čt 29. 10.",
+    "text": "Měnověpolitické rozhodnutí ECB; summit EU–Kanada v Montrealu (do 30. 10.)."
+   },
+   {
+    "date": "Pá 30. 10.",
+    "text": "Předběžný odhad HDP eurozóny za třetí čtvrtletí (Eurostat); rozhodnutí Bank of Japan; obecní zastupitelstva mohou od dnešního dne konat ustavující zasedání."
+   },
+   {
+    "date": "Ne 1. 11.",
+    "text": "Pravděpodobné druhé kolo prezidentských voleb v Bulharsku."
+   },
+   {
+    "date": "Út 3. 11.",
+    "text": "Volby do amerického Kongresu."
+   }
+  ],
+  "layout": {
+   "front": {
+    "lead": "br-aftermath",
+    "rail": [
+     "cz-algeria",
+     "cz-prague"
+    ]
+   },
+   "sections": [
+    {
+     "name": "Domov",
+     "dek": "Spotřebitelská a podnikatelská důvěra, pardubická koalice",
+     "stories": [
+      "cz-confidence",
+      "cz-pardubice"
+     ]
+    },
+    {
+     "name": "Svět",
+     "dek": "Srbsko a Bulharsko sčítají hlasy, Toronto volí starostu",
+     "stories": [
+      "rs-election",
+      "bg-election",
+      "ca-toronto"
+     ]
+    },
+    {
+     "name": "Evropa",
+     "dek": "Nálada německých firem, kvóty na lov v Baltu",
+     "stories": [
+      "de-ifo",
+      "eu-agrifish"
+     ]
+    }
+   ]
+  }
+ }
+}

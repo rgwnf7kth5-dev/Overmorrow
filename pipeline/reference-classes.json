@@ -130,7 +130,7 @@
    "source": "ČT24, Echo24 2023-2025",
    "own_record": {
     "yes": 0,
-    "no": 0
+    "no": 2
    }
   },
   {
@@ -141,7 +141,7 @@
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
     "yes": 0,
-    "no": 6
+    "no": 7
    }
   },
   {
@@ -197,6 +197,17 @@
    "own_record": {
     "yes": 2,
     "no": 0
+   }
+  },
+  {
+   "id": "israel-daily-polls-no-bloc-majority",
+   "description": "No poll published on a given day before an Israeli election gives either bloc 61 or more seats (Wikipedia government-parties column)",
+   "base_rate": 0.8,
+   "n": "small; October 2026 campaign polls, Channel 14 regularly shows the government bloc at 61+",
+   "source": "Wikipedia opinion polling table for the 2026 Israeli election (estimate pending a full count)",
+   "own_record": {
+    "yes": 0,
+    "no": 1
    }
   }
  ]
