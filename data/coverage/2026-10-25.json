@@ -1,0 +1,48 @@
+{
+ "edition": "2026-10-25",
+ "checked_at": "2026-10-25T05:14:00+01:00",
+ "procedure": "coverage-1",
+ "note": "Lists used: Wikipedia Portal:Current events/2026 October 24; ČT24 and ČTK front pages read on the morning of 25 Oct. Reuters World and AP could not be read (HTTP 401/403), so list (b) is missing; events were counted on two of the remaining lists. No planning file exists for 2026-10-25, so nothing can be marked dropped.",
+ "events": [
+  {
+   "title": "Second nationwide day of Yellow Vest (Act II) protests in France, about 410,000 marchers and over 1,000 arrests",
+   "scope": "europe",
+   "lists": ["wikipedia", "ct24", "ctk"],
+   "source": "https://www.france24.com/en/france/20261024-live-hundreds-of-protests-expected-in-france-amid-high-tensions-and-heavy-police-presence",
+   "status": "covered",
+   "story": "france-act2"
+  },
+  {
+   "title": "Chamber sends the bill abolishing ČT and ČRo licence fees to second reading after an overnight sitting; President Pavel criticises the procedure, protests in Prague and Brno",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/shrnuti-pavel-vyzval-ke-zklidneni-situace-kolem-poplatku-pro-ct-a-cro/2892589",
+   "status": "missed",
+   "note": "Not announced in advance of the freeze: the coalition added the bill to the Chamber agenda unexpectedly on Friday 23 Oct, after the edition froze at 04:48 that day; the decision to sit on Friday and Saturday was taken on Thursday evening and not published."
+  },
+  {
+   "title": "Typhoon Champi makes landfall in Taiwan, one dead and more than 500 injured",
+   "scope": "world",
+   "lists": ["wikipedia", "ct24"],
+   "source": "https://www.dw.com/en/typhoon-champi-taiwan/a-79748221",
+   "status": "missed",
+   "note": "Not a scheduled event; the storm track was forecast days ahead by the Central Weather Administration, but the paper does not plan weather events abroad."
+  },
+  {
+   "title": "Fire largely destroys the Eagle's Nest (Kehlsteinhaus) above Berchtesgaden",
+   "scope": "europe",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/orli-hnizdo-nekdejsi-hitlerovo-horske-sidlo-zachvatil-rozsahly-pozar/2892400",
+   "status": "missed",
+   "note": "Unscheduled accident; could not have been announced in advance."
+  },
+  {
+   "title": "Zelensky says Starlink and Starshield service restored to Ukraine without speed limits; Russian drones hit Chornomorsk",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/zelenskyj-systemy-starlink-a-starshield-obnovily-provoz-bez-omezeni-rychlosti/2892525",
+   "status": "missed",
+   "note": "Unscheduled announcement late on 24 Oct; not announced in advance."
+  }
+ ]
+}
