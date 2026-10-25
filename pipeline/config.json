@@ -61,6 +61,12 @@
       "from": 5,
       "date": "2026-10-24",
       "label": "Event window and evidence time, full record of forecasting steps (blind and after-market estimates), numbers derived from one distribution, no quotas on probabilities, coverage of missed events"
+    },
+    {
+      "version": 4,
+      "from": 6,
+      "date": "2026-10-25",
+      "label": "Selection by news value: the biggest running stories of the day must be covered with a claim on their next step; economy desk with a minimum; photographs in every edition"
     }
   ],
   "v3": {
@@ -86,5 +92,31 @@
     "provider": "buttondown",
     "username": "",
     "site": "https://overmorrownews.com"
+  },
+  "v4": {
+    "topics": [
+      "politics",
+      "economy",
+      "security",
+      "society",
+      "law",
+      "science-health",
+      "culture"
+    ],
+    "economy_min": 3,
+    "running_list_min": 8,
+    "running_min": 6,
+    "photos_min": 3,
+    "photos_max": 6,
+    "running_lists": [
+      "Reuters World (reuters.com/world)",
+      "Reuters Business (reuters.com/business)",
+      "AP Top News (apnews.com)",
+      "BBC News (bbc.com/news)",
+      "Financial Times (ft.com)",
+      "ČT24 (ct24.ceskatelevize.cz)",
+      "Seznam Zprávy (seznamzpravy.cz)",
+      "iROZHLAS (irozhlas.cz)"
+    ]
   }
 }

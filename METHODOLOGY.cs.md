@@ -42,6 +42,8 @@ Každé vydání začíná průchodem oficiálních kalendářů na den D+1. Sez
 
 Mnoho důležitých událostí v žádném kalendáři není: vyjednávání, války, krize, kampaně. U každé probíhající kauzy čteme zpravodajství za posledních 48 hodin aspoň ze dvou nezávislých zdrojů a určíme další krok, který se čeká na den D+1.
 
+Od vydání č. 6 začíná výběr **hlavními tématy dne**: kauzami, které vedou, nebo jsou mezi prvními pěti, aspoň na dvou referenčních titulních stránkách (Reuters World a Business, AP, BBC, Financial Times, ČT24, Seznam Zprávy, iROZHLAS). O nich budou čtenáři dne D+1 slyšet, a proto každá dostane zprávu s predikcí dalšího vývoje do konce toho dne, i když žádná instituce nic nenaplánovala. Aspoň šest z osmi až deseti největších musí být v novinách; u ostatních se zapíše důvod.
+
 ### 2.3 Záznam kandidátů
 
 Každý kandidát se zapíše s údaji:
@@ -62,7 +64,7 @@ Každý kandidát dostane tři známky od 1 do 5:
 - **Dosah**: pro kolik čtenářů je důležitý. Jsou to všeobecné noviny s českým zázemím a pohledem na svět, ne bulletin EU: nejvíc váží české události a velké světové události; instituce EU dostanou vysokou známku jen tehdy, když má rozhodnutí skutečné důsledky mimo Brusel (peníze, zákony měnící každodenní život, zahraniční politika).
 - **Hodnota nejistoty**: kolik čtenáři predikce řekne. Téměř jistý výsledek nebo čistý hod mincí bez informací dostane málo; sporný výsledek, ke kterému existují podklady, hodně.
 
-Redakční skóre je Dopad × Dosah × Hodnota nejistoty. Kandidáti se seřadí a rozdělí do rubrik tak, aby každé vydání pokrylo Česko, svět, Evropu, ekonomiku a, když se najde, aspoň jednu věc z vědy, zdraví nebo kultury. Rubrika Svět je největší; zpráv o institucích EU smí být ve vydání nejvýš tři, včetně titulní strany. Sport a ceny na finančních trzích jsou vyloučené.
+Redakční skóre je Dopad × Dosah × Hodnota nejistoty. Od vydání č. 6 se zprávy vybírají podle zpravodajské hodnoty, Dopad × Dosah; Hodnota nejistoty rozhoduje, jaké tvrzení zpráva ponese, nikdy ne o tom, zda velká kauza vyjde. Každé vydání má ekonomickou rubriku nejméně se třemi zprávami: statistická data, centrální banky, rozpočty a daně, výsledky a rozhodnutí firem, energie a regulované ceny, obchod a cla, práce a stávky. Vyloučené jsou jen tržní ceny (akciové indexy, kurzy měn, ceny komodit a kryptoměn). Každé vydání má také tři až šest ilustračních fotografií míst a předmětů z Wikimedia Commons pod svobodnou licencí, s uvedením autora a označením jako ilustrace; nikdy ne snímky lidí při událostech, které se ještě nestaly. Kandidáti se seřadí a rozdělí do rubrik tak, aby každé vydání pokrylo Česko, svět, Evropu, ekonomiku a, když se najde, aspoň jednu věc z vědy, zdraví nebo kultury. Rubrika Svět je největší; zpráv o institucích EU smí být ve vydání nejvýš tři, včetně titulní strany. Sport a ceny na finančních trzích jsou vyloučené.
 
 Počet českých zpráv (`cz_stories_min`) je cíl, ne kvóta, kterou je nutné naplnit za každou cenu. Když den nenabízí dost českých událostí skutečné váhy, vydání je kratší a důvod se zapíše (`meta.cz_shortfall`). Tvrzení, že se něco *nestane* (nebude sankce, dohoda, oznámení), je v pořádku, když je krok opravdu ve hře; není to způsob, jak zaplnit stránku.
 
@@ -233,3 +235,4 @@ Každé vydání nese verzi metody, podle které vzniklo (`method_version`; u st
 | 1 | č. 1 | 21. října 2026 | Pilot a první vydání: predikce bez strukturovaného záznamu prognostiků. |
 | 2 | č. 4 | 23. října 2026 | Pět zaznamenaných prognostiků s modely, třídy skluzu, číselné predikce, kvóty na pásma pravděpodobností. |
 | 3 | č. 5 | 24. října 2026 | Po vnějším posudku: oddělené okno události a čas dokladu, vyloučení událostí po dni D+1; úplný záznam každého kroku včetně slepých odhadů a odhadů po zobrazení trhu; podklad oddělený od tržních signálů; termín a výsledek hodnocené zvlášť; související čísla z jednoho rozdělení; zrušené kvóty na pravděpodobnosti; ukládání každého odpoledního přepočtu; výsledky podle verze metody s počtem událostí a nejistotou; evidence přehlédnutých událostí. |
+| 4 | č. 6 | 25. října 2026 | Výběr podle zpravodajské hodnoty; hlavní kauzy dne pokryté predikcí jejich dalšího kroku; ekonomická rubrika nejméně se třemi zprávami; ilustrační fotografie v každém vydání. |

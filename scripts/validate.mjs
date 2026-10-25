@@ -228,6 +228,48 @@ function checkCoherence(ed, w) {
   }
 }
 
+// ---------- method version 4 (edition No. 6 on): news value, running stories, economy desk, photographs ----------
+const V4 = cfg.v4 || {};
+const OK_LICENCE = /^(public domain|pd\b|cc0|cc by(-sa)? \d)/i;
+function checkSelectionV4(ed, w) {
+  const stories = ed.stories || [];
+  for (const st of stories) if (!(V4.topics || []).includes(st.topic)) err(`${w} story ${st.id}`, `topic must be one of ${(V4.topics || []).join(', ')}`);
+  const econ = stories.filter((st) => st.topic === 'economy').length;
+  if (econ < (V4.economy_min ?? 3) && !nonEmpty(ed.meta?.economy_shortfall)) err(w, `${econ} economy stories; at least ${V4.economy_min}, or say why in meta.economy_shortfall`);
+  const run = ed.meta?.running;
+  if (!Array.isArray(run) || run.length < (V4.running_list_min ?? 8)) err(w, `meta.running: the ${V4.running_list_min} biggest running stories of the day from the reference front pages (PLANNER step 3a)`);
+  else {
+    const ids = new Set(stories.map((x) => x.id));
+    for (const r of run) {
+      const rw = `${w} running "${r.title || '?'}"`;
+      if (!nonEmpty(r.title) || !Array.isArray(r.lists) || r.lists.length < 2) err(rw, 'title and lists (at least two reference front pages) required');
+      if (r.status === 'covered') { if (!ids.has(r.story)) err(rw, 'covered: name the story id'); }
+      else if (r.status === 'not_covered') { if (!nonEmpty(r.why) || /^no (dated|scheduled) step\.?$/i.test(r.why.trim())) err(rw, 'not_covered needs a real reason; "no dated step" is not one: forecast what happens by the end of the day'); }
+      else err(rw, 'status must be covered or not_covered');
+    }
+    const cov = run.filter((r) => r.status === 'covered').length;
+    if (cov < (V4.running_min ?? 6) && !nonEmpty(ed.meta?.running_shortfall)) err(w, `${cov} of the running stories covered; at least ${V4.running_min}, or say why in meta.running_shortfall`);
+  }
+  const ph = loadPhotos(ed.id);
+  const n = Object.keys(ph?.photos || {}).length;
+  if (n < (V4.photos_min ?? 3) && !nonEmpty(ed.meta?.photos_shortfall)) err(w, `${n} photographs; at least ${V4.photos_min} (scripts/photos.mjs), or say why in meta.photos_shortfall`);
+  if (n > (V4.photos_max ?? 6)) err(w, `${n} photographs; at most ${V4.photos_max}`);
+}
+function loadPhotos(id) { const t = fileText(`data/images/${id}.json`); return t ? JSON.parse(t) : null; }
+function checkPhotos(ed, w) {
+  const ph = loadPhotos(ed.id);
+  if (!ph) return;
+  const ids = new Set((mergeUpdate(ed).stories || []).map((x) => x.id));
+  for (const [sid, p] of Object.entries(ph.photos || {})) {
+    const pw = `images/${ed.id}.json ${sid}`;
+    if (!ids.has(sid)) err(pw, 'no story with this id');
+    for (const f of ['file', 'alt', 'alt_cs', 'caption', 'caption_cs', 'credit', 'license', 'source_url']) if (!nonEmpty(p[f])) err(pw, `${f} required`);
+    if (!(p.width > 0 && p.height > 0)) err(pw, 'width and height required');
+    if (p.license && !OK_LICENCE.test(p.license)) err(pw, `licence not allowed: ${p.license}`);
+    if (p.file && fileText(`site/photos/${ed.id}/${p.file}`) === null) err(pw, `site/photos/${ed.id}/${p.file} missing`);
+  }
+}
+
 function checkClaim(c, cw, frozen) {
   const ed = c.edition;
   if (ed && ed.number >= NEW_FROM) {
@@ -295,7 +337,10 @@ for (const ed of editions) {
     else if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00 (if the set does not cover every outcome, e.g. "not yet decided", mark its claims set_exhaustive: false)`);
   }
   if (ver >= 3) checkCoherence(ed, w);
-  if (ed.number >= ((cfg.method_versions || []).find((m) => m.version === 3)?.from ?? Infinity) && ed.method_version !== 3) err(w, 'method_version: 3 required from this edition on');
+  checkPhotos(ed, w);
+  { let need = null; for (const m of cfg.method_versions || []) if (m.version >= 3 && ed.number >= m.from) need = m.version;
+    if (need !== null && ed.method_version !== need) err(w, `method_version: ${need} required for this edition`); }
+  if (ver >= 4) checkSelectionV4(ed, w);
 
   if (ed.number >= QUALITY_FROM) {
     const all = claimsOf(ed).filter((c) => !isInterval(c));

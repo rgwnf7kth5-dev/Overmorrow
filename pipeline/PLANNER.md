@@ -21,9 +21,17 @@ Update `data/planning/agenda.json` (`items`: `date`, `time`, `title`, `title_cs`
 
 Remove past items; keep every entry sourced.
 
+## 3a. The stories of the day *(v4, from edition No. 6)*
+
+Before any calendar work, list what the news is actually about. Open the reference front pages in `config.v4.running_lists` (Reuters World, Reuters Business, AP, BBC, FT, ČT24, Seznam Zprávy, iROZHLAS) and take the stories that lead or sit in the top five of **at least two** of them: wars and security (Ukraine, the Middle East), big political fights, big business and technology stories (Starlink in Ukraine, tariffs, a major merger or failure), Czech front-page affairs. Keep the 8–10 biggest in the planning file as `running`: `{ "title": "…", "lists": ["reuters-world", "bbc"], "sources": [two URLs], "next_step": "what may happen by 23:59 on E+2" }`.
+
+Each of them gets a story in the edition with a claim on its **next development by 23:59 local time on E+2** (a statement, a decision, a restored service, a vote, a deal, a figure published, a strike called off), unless there is truly nothing that can be forecast for that day. "No dated step" is not a reason: running stories move every day, and forecasting the next move is the paper's job. At least `config.v4.running_min` of them must be covered; the morning records the list in `meta.running` with `status` `covered` (and `story`) or `not_covered` (and `why`).
+
 ## 3. Shortlist for edition E+3
 
-From the agenda items dated E+2, the running stories (two outlets each, last 48 hours) and the forecast board (a question whose next step falls on E+2), build a pool of at least `candidate_pool_min` candidates. Score each 1–5 on Impact, Reach (for a Czech reader and for a world reader) and Uncertainty value. Write `data/planning/<E+3>.json`:
+From the stories of the day (step 3a), the agenda items dated E+2, the other running stories (two outlets each, last 48 hours) and the forecast board (a question whose next step falls on E+2), build a pool of at least `candidate_pool_min` candidates. Score each 1–5 on Impact, Reach (for a Czech reader and for a world reader) and Uncertainty value. *(v4)* **Stories are selected by news value, Impact × Reach.** Uncertainty value decides which claim a story carries (aim it at the open part), not whether a big story runs: a story is never dropped because its outcome looks predictable or because it has no calendar slot.
+
+*(v4)* **Economy desk.** At least `config.v4.economy_min` stories with `topic: "economy"`: data releases (ČSÚ, Eurostat, US and other national statistics), central banks, budgets and taxes, company results and decisions of large companies, energy and regulated prices, trade and tariffs, labour and strikes, big deals and insolvencies. The exclusion of "financial market prices" covers only stock indices, exchange rates and commodity or crypto prices; everything else in the economy is news. Give every story a `topic` from `config.v4.topics`. Write `data/planning/<E+3>.json`:
 
 ```json
 {

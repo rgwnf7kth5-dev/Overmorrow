@@ -27,7 +27,11 @@ For every story in the planning file, one evidence agent reads the reporting sin
 
 ## 2. Selection (final)
 
-The planning file ranks candidates by Impact × Reach × Uncertainty value (METHODOLOGY 2.4). Confirm or adjust it with the overnight facts, then fill the edition:
+The planning file ranks candidates by news value (METHODOLOGY 2.4; *(v4)* Impact × Reach decides which stories run, Uncertainty value which claim they carry). Confirm or adjust it with the overnight facts, then fill the edition:
+
+- *(v4)* **The stories of the day first** (PLANNER step 3a): every big running story from the planning file's `running` list gets a story with a claim on its next development by 23:59 local time on D+1, at least `config.v4.running_min` of them. Record the list in `meta.running` (`title`, `lists`, `status: covered` with `story`, or `not_covered` with a real `why`; "no dated step" is not one). Refresh the list with the overnight front pages.
+- *(v4)* **Economy:** at least `config.v4.economy_min` stories with `topic: "economy"` (or `meta.economy_shortfall` with the reason). The English edition has an **Economy** section; in Czech they sit in the Domácí or Zahraničí desk. Only stock indices, exchange rates and commodity or crypto prices are excluded.
+- *(v4)* Every story has `topic` (`config.v4.topics`).
 
 - **Stories:** between `stories_min` and `stories_max`. Every story gets `scope`: `cz`, `europe` or `world`.
 - **Czech stories:** aim for `cz_stories_min` with scope `cz` — politics, economy, courts, regions, companies, unions, society, Czech culture. A neighbouring country is not Czech. *(v3)* This is a target: if the day does not have enough Czech events of real weight, run fewer and write the reason in `meta.cz_shortfall`. Do not invent "nothing will happen" claims to fill the desk; such a claim is fine only when the action is genuinely in play.
@@ -156,6 +160,17 @@ Each story gets a `cs` object (`kicker`, `headline`, `standfirst` for a lead, `b
 Translate faithfully into natural Czech newspaper prose (ČTK style), Czech date and number formats; identical numbers, probabilities and deadlines. **Foreign women's surnames are never feminised** (Roberta Metsola, Kaja Kallas, Iliana Iotova; předsedkyně Metsola, s Kajou Kallas). Czech and Slovak women keep their own forms.
 
 **Czech page layout.** The Czech edition is split into two desks side by side: ZAHRANIČÍ (left) and DOMÁCÍ (right), with tabs on phones. A story goes to the domestic desk when its id starts with `cz-`, when it sits in an English section with "Czech" in its name, or when it is in the front-page rail; set `"desk": "domestic"` or `"desk": "foreign"` on a story to override. The first story listed for each desk heads it, so order `cs.layout` with the most important domestic story first. Both desks should carry real weight: with at least `cz_stories_min` Czech stories the page balances itself.
+
+## 6d. Photographs *(v4)*
+
+Give 3 to 6 stories an illustrative photograph (at least `config.v4.photos_min`; otherwise `meta.photos_shortfall` with the reason): the lead, then stories where a place or object carries the subject (a parliament, a seat of government, a company headquarters, a factory, a border crossing, a ship). Never photos of people at events that have not happened yet, no news photos of a specific day, no logos. Use only Wikimedia Commons with a free licence:
+
+```
+node scripts/photos.mjs search "Palácio do Planalto"
+node scripts/photos.mjs add <D+2> <story-id> "File:…jpg" --alt "…" --alt-cs "…" --caption "…" --caption-cs "…"
+```
+
+The script checks the licence, downloads a 960 px copy into `site/photos/<D+2>/` and writes the credit into `data/images/<D+2>.json`; the page marks each one as an illustrative photo with author, licence and source. Captions describe the place, not the forecast. Commons rate-limits shared addresses: the script waits; run the searches early and in one batch.
 
 ## 6c. Fact-check (mandatory)
 

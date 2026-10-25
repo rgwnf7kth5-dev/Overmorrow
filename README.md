@@ -62,3 +62,7 @@ Optional illustrative photographs per edition live in `data/images/<edition>.jso
 ## Method version 3 (from edition No. 5, adopted 24 October 2026)
 
 After an outside review the rules changed; see METHODOLOGY section 12. In short: every claim has `tz`, `event_window` (the event must happen by 23:59 local time on D+1) and `evidence_at`, kept apart from `resolves_by`; missing evidence is pending, not "no"; every forecaster records model, time, inputs and a blind estimate made before the signals file (`<claim>.signals.md`, kept out of the dossier); scheduled events carry `forecast.decomposition` (timing × outcome); binary claims about an interval quantity are `derived` from it; no quotas on probability bands; afternoon recomputations are stored in `checks`; the resolver writes `data/coverage/<edition>.json` (covered / dropped / missed). The accuracy page reports results by method version, with the number of separate events and a bootstrap interval. `node scripts/refdata/models.mjs derive q10 q50 q90 '<' x` computes a derived probability.
+
+## Method version 4 (from edition No. 6, adopted 25 October 2026)
+
+Stories are chosen by news value; the biggest running stories of the day (`meta.running`, from the reference front pages in `config.v4.running_lists`) are covered with a claim on their next development; every story has a `topic` and at least three are `economy`; every edition carries 3–6 illustrative Commons photographs added with `node scripts/photos.mjs` (credits in `data/images/<edition>.json`).
