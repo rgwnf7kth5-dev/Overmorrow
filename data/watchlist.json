@@ -1615,6 +1615,46 @@
      "market": null,
      "note": "The BC Conservatives led the final Leger poll by about five points, although Angus Reid calls the race a statistical tie, and 338Canada projects them winning a majority of around 54 seats; a clear result would let a new premier be sworn in by mid-November, as past Canadian changes of government took about three weeks. A narrow or minority result, with mail-in ballots and recounts dragging out the count or Eby staying on to test the House with Green support, could push a swearing-in past 30 November.",
      "note_cs": "Konzervativci v závěrečném průzkumu agentury Leger vedli zhruba o pět bodů, ačkoli agentura Angus Reid mluví o statisticky vyrovnaném souboji, a projekce 338Canada jim přisuzuje většinu kolem 54 křesel; při jasném výsledku by nový premiér mohl složit přísahu do poloviny listopadu, neboť dřívější výměny vlád v Kanadě trvaly asi tři týdny. Těsný nebo menšinový výsledek, při němž by se sčítání korespondenčních hlasů a přepočty protáhly nebo by Eby zůstal v úřadu a s podporou zelených se pokusil obstát v parlamentu, by však mohl přísahu posunout za 30. listopad."
+    },
+    {
+     "at": "2026-10-25T22:00:00+01:00",
+     "p": 0.93,
+     "combined": 0.927,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.94,
+       "reason": "Reference class of Canadian majority changes of government (AB 2015 19 days, AB 2019 14, ON 2018 22, SK 2007 14, BC 2001 20; even close BC 2024 took 30) puts swearing-in well inside the 37-day window, and a 64-seat majority with Eby conceded and a transition team named removes count risk; residual risk is only an unusual delay (final mail-in count, the interim-leader constitutional question)."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.93,
+       "reason": "Conservatives won a clear majority (64 of 93), Eby conceded and resigned, and Doerkson has met the Lieutenant Governor and named a transition team. The only real risk is timing: 37 days is enough for a majority transfer (BC 2001 took 20 days, AB 2015 19 days, ON 2018 22 days), and the questions over his interim-leader status do not block his appointment."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.85,
+       "reason": "The result is not in doubt (64 of 93, Eby conceded and resigned), so the only case against is timing: BC swearing-ins after a vote have taken 20-33 days (2001: 20, 2013: 24, 2009: 29, 2024: 30, 2020: 33 with heavy mail-in), the final count runs to about 7 Nov, four ridings face recounts, a rookie caucus needs a cabinet built, and the interim-leader constitutional wrinkle adds friction, so a 2020-style 33-day transition lands 26 Nov with only four days of slack before a deadline that in Pacific time is actually 30 Nov 14:59. Still, a landslide majority removes every reason for the LG or Doerkson to wait beyond mid/late November."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92,
+       "reason": "Start from Polymarket's Doerkson 'next premier' price of 0.974. I moved down because that market has no date, and this question needs the swearing-in by 30 Nov. The Conservatives have a ~64-seat majority and the transition team is named, so a swearing-in about 3-5 weeks after the vote is normal. The remaining risk is a slip past 30 Nov if they wait for the final count (~2 weeks) or the interim-leader constitutional question delays things. Any Conservative premier counts."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.96,
+       "reason": "Conservatives lead or are elected in 64 of 93 seats (47 needed), Eby has conceded and resigned and a transition team is named; the 2024 swearing-in took about four weeks, so 30 Nov is very likely met. The residual risk is a delayed ceremony or an unforeseen interim-leader complication."
+      }
+     ],
+     "market": null,
+     "note": "The BC Conservatives won a majority on 24 October (elected or leading in 64 of 93 seats), David Eby conceded and resigned as NDP leader, and Lorne Doerkson has met the lieutenant-governor and named a transition team; the only remaining risk is a swearing-in after 30 November while mail-in ballots are counted.",
+     "note_cs": "Konzervativci v Britské Kolumbii vyhráli 24. října většinu (vedou nebo mají zvoleno 64 z 93 křesel), David Eby uznal porážku a odstoupil z čela NDP a Lorne Doerkson se sešel s guvernérkou a jmenoval předávací tým. Zbývá jen riziko, že přísaha proběhne až po 30. listopadu kvůli sčítání korespondenčních hlasů."
     }
    ],
    "result": null
@@ -1758,6 +1798,46 @@
      "market": null,
      "note": "With SPS running separately, the SNS-led list needs roughly 47% of the vote to win 126 seats on its own, a level only the government-friendly Faktor Plus (48.6%) shows, while NSPM, CRTA and Birodi put it at 35.7–41.7% and behind the Student List. A low wasted vote, a fragmented opposition and SNS's incumbency and state-resource advantages, which have helped it beat independent polls before, are its route to a majority.",
      "note_cs": "Protože SPS kandiduje samostatně, potřebuje kandidátka vedená SNS k zisku 126 mandátů sama zhruba 47 % hlasů, což ukazuje jen vládě nakloněná agentura Faktor Plus (48,6 %), zatímco NSPM, CRTA a Birodi jí přisuzují 35,7 až 41,7 % a řadí ji za Studentskou kandidátku. Cestou k většině je nízký počet propadlých hlasů, roztříštěná opozice a výhody SNS plynoucí z postavení u moci a ze státních zdrojů, které jí už dříve pomohly překonat nezávislé průzkumy."
+    },
+    {
+     "at": "2026-10-25T22:00:00+01:00",
+     "p": 0.03,
+     "combined": 0.03,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Ipsos/CeSID projections at ~50% sample have historically been within a few seats of RIK finals, and they give the SNS list ~104 seats against 126 needed, with Vucic himself conceding defeat; a 22-seat swing in the official count has no precedent."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "The Ipsos/CeSID projection gives the Vučić list about 104 seats against 138 for the Student List, and Vučić himself conceded and put SNS at about 105. Reaching 126 would need a swing of more than 20 seats in the official RIK count, which is not plausible."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.03,
+       "reason": "The only YES case is that the Ipsos/CeSID projection (SNS 39.3%, ~104 seats on half a 750-station sample) is wrong and RIK's early 54.7% count on 24,802 voters is signal, but that is a rural first-report artefact, 126 seats would need roughly 47% of the vote, and Vučić himself conceded with 'oko 105' seats; no plausible recount, annulment or late-count shift moves 22 seats."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "There is no direct majority market. Polymarket prices the Vučić list winning the most seats at 0.0335 (vol 3.6M), and 126+ seats is stricter than that. The Ipsos/CeSID projection gives it ~104 seats and Vučić conceded; the early RIK sample showing SNS at 54.7% is tiny and unrepresentative. I set the floor."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.03,
+       "reason": "Vučić himself conceded, and the Ipsos/CeSID projection gives the Student List about 138 seats against about 104 for the SNS-led list, well short of 126. A reversal in the RIK count is very unlikely."
+      }
+     ],
+     "market": null,
+     "note": "The Ipsos/CeSID projection on election night gave Vučić’s list 39.3% and about 104 seats against 52% and about 138 for the Student List, and Vučić conceded defeat; 126 seats are out of reach unless the official count differs sharply.",
+     "note_cs": "Projekce Ipsos/CeSID ve volební noci dala Vučićově kandidátce 39,3 % a asi 104 křesel, Studentské kandidátce 52 % a asi 138, a Vučić porážku uznal. Na 126 křesel by SNS dosáhla jen při výrazně odlišném oficiálním sčítání."
     }
    ],
    "result": null
@@ -1832,6 +1912,52 @@
      "note_cs": "Vučić potřebuje parlamentní většinu pro vládu, kterou povede, ať už SNS sama, nebo s partnery, což rozporuplné průzkumy zpochybňují, a musí být zvolen do 31. ledna, tedy zhruba 98 dní po volbách, přičemž tak rychle vznikla od roku 2014 jen jedna z pěti srbských vlád. Pomoci mu může silná motivace postupovat rychle, protože po rezignaci na prezidentský úřad nezastává žádnou funkci, a precedens z roku 2014, kdy jeho vláda vznikla za 42 dní, zdržet ho naopak mohou protesty, přepočítávání hlasů a souběžné prezidentské volby.",
      "market_note": "The market asks who will be the next prime minister with no deadline; our question needs Vučić elected by 31 January, and forming a government can take up to 90 days after the parliament is constituted.",
      "market_note_cs": "Trh se ptá, kdo bude příštím premiérem, bez termínu; naše otázka vyžaduje Vučićovo zvolení do 31. ledna a sestavení vlády může trvat až 90 dní od ustavení parlamentu."
+    },
+    {
+     "at": "2026-10-25T22:00:00+01:00",
+     "p": 0.03,
+     "combined": 0.03,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "With the Student List projected at ~138 seats (an outright majority) and refusing cooperation with SNS, and Vucic conceding, there is no plausible majority to elect a Vucic government by 31 January; floor kept for extreme scenarios (count reversal or mass defections)."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Vučić publicly conceded that the Student List won an outright majority (135 to 140 seats), and the Student List rejects any cooperation with SNS, so no majority is available to elect a government he heads by 31 Jan."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.03,
+       "reason": "The YES case needs the Student List (135-140 seats) to splinter within 98 days and ~17 of its MPs to cross to an SNS+minorities bloc of ~109, or a mass-annulment rerun, in a country where SNS has poached MPs before; but a fresh landslide, the list's explicit refusal to work with SNS, and Vučić's own public concession make any Vučić-led government elected by 31 Jan a tail event."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Polymarket prices Vučić as next PM at 0.0105 (vol 1.8M), and the market's 'next PM' question is close to this criterion. The Student List has a projected 135-140 seats and refuses to cooperate with SNS, and Vučić conceded. I ignored Kalshi's stale 0.60, which runs to 2028 on thin volume. I set the floor."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.03,
+       "reason": "He conceded defeat, the Student List would hold a majority alone and rejects cooperation with SNS, and no plausible coalition gets Vučić elected PM by 31 January."
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+      "p": 0.0105,
+      "read_at": "2026-10-25T20:46:04Z"
+     },
+     "note": "Vučić conceded on election night (“jasno je da smo izgubili izbore”) as the Student List was projected at about 138 of 250 seats and rejects any cooperation with SNS, leaving him no route to the premiership.",
+     "note_cs": "Vučić ve volební noci uznal porážku („jasno je da smo izgubili izbore“); Studentská kandidátka má podle projekce asi 138 z 250 křesel a spolupráci se SNS odmítá, takže Vučić nemá cestu do premiérského křesla."
     }
    ],
    "result": null
@@ -1908,6 +2034,52 @@
      },
      "note": "Iliana Iotova, backed by Rumen Radev's dominant Progressive Bulgaria, polled 43.4% against 28.9% for Andrey Gyurov, and no first-round leader has lost a Bulgarian presidential runoff since 1992. The main risks are anti-Radev voters consolidating behind Gyurov in the likely 1 November runoff and the Central Election Commission declaring the result after the 3 November deadline.",
      "note_cs": "Iliana Iotova, kterou podporuje dominantní strana Progresivní Bulharsko Rumena Radeva, měla v průzkumu 43,4 % proti 28,9 % pro Andreje Gjurova a od roku 1992 žádný vítěz prvního kola bulharských prezidentských voleb neprohrál ve druhém kole. Hlavními riziky jsou sjednocení odpůrců Radeva za Gjurovem v pravděpodobném druhém kole 1. listopadu a vyhlášení výsledku Ústřední volební komisí až po termínu 3. listopadu."
+    },
+    {
+     "at": "2026-10-25T22:00:00+01:00",
+     "p": 0.64,
+     "combined": 0.638,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.7,
+       "reason": "First-round leaders have won every Bulgarian runoff since 1992 and Iotova leads in four of five parallel counts, but the margin is near zero (one count has Gyurov ahead), so the base rate must be shrunk heavily toward a coin flip; Vazrazhdane's 12-15% electorate is more likely to break toward the Radev-backed Iotova than PP-DB's Gyurov, and CIK normally declares within 48 hours, well before 3 Nov."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.64,
+       "reason": "The first round is almost a tie: Iotova leads in four of five parallel counts by about 0.5 to 3 points, and Market Links has Gyurov ahead. Kostadinov's 12 to 15% Vazrazhdane voters are nationalist and Russia-friendly, so they should lean towards the Radev-backed Iotova rather than PP-DB's Gyurov, though very low turnout and anti-establishment consolidation make the runoff genuinely uncertain. There is a small extra risk that the CEC declares the result after 3 Nov."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.6,
+       "reason": "The pre-election 43-29 poll was badly wrong: exit polls and parallel counts have Iotova 32-35 vs Gyurov 31.6-33.5 with one agency putting Gyurov ahead, so the 7/7 'first-round leader always wins' base rate rests on a 1-3 point lead and 22% turnout; GERB and Peevski's DPS votes (anti-Radev machine blocs) plus any PP-DB mobilisation give Gyurov a plausible path, Kostadinov (12-15%) is personally hostile to Radev and will not endorse for free, and CIK must publish a decision declaring her elected by 3 Nov 23:59 CET, about 48 hours after polls close, a small technical risk. Against that, Vazrazhdane voters' second preference is far closer to Radev's camp than to a PP-DB liberal, BSP and nationalist remnants flow to her, and incumbency plus Radev's machine still make her the modest favourite."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.7,
+       "reason": "Anchored on Polymarket at 0.715 (vol 0.73M; Kalshi 0.79 on thin volume). The first round was a near tie, 4 of 5 parallel counts have Iotova ahead, and the 1 Nov runoff likely depends on Vazrazhdane voters, who probably lean to her rather than PP-DB's Gyurov. I trimmed slightly for the small risk that CIK publishes after the 3 Nov deadline."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.54,
+       "reason": "Iotova's first-round lead is far smaller than the 43% polled (about 32-35% against Gyurov at 31-33.5%), and one agency has Gyurov ahead. The 12-15% Kostadinov vote and anti-Radev consolidation make the runoff close, but the first-round leader has won every runoff since 1992 and four of five parallel counts have her first."
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/bulgaria-presidential-election",
+      "p": 0.715,
+      "read_at": "2026-10-25T20:46:14Z"
+     },
+     "note": "The first round on 25 October was far closer than the polls: exit polls and parallel counts put Iliana Iotova at 32–35% and Andrey Gyurov at 31–33.5% (one agency has Gyurov ahead), on a turnout of about 22%; the 1 November runoff is likely to turn on Vazrazhdane voters.",
+     "note_cs": "První kolo 25. října dopadlo mnohem těsněji, než ukazovaly průzkumy: podle odhadů u volebních místností a paralelních sčítání má Iliana Iotova 32–35 % a Andrej Gyurov 31–33,5 % (jedna agentura vidí v čele Gyurova) při účasti kolem 22 %. Druhé kolo 1. listopadu nejspíš rozhodnou voliči Obrození."
     }
    ],
    "result": null
@@ -2281,7 +2453,7 @@
    ],
    "base_rate": {
     "class": "Sitting Senate presidents seeking re-election after a biennial election with their club still largest (Vystrčil 2020, 2022, 2024)",
-    "rate": 1.0,
+    "rate": 1,
     "n": 3,
     "source": "https://www.e15.cz/vysledky-voleb-a-referend/volby-do-senatu/vystrcil-zrejme-zustane-v-cele-senatu-ma-podporu-stan-i-koalice-top-09-s-ods-1374134"
    },
