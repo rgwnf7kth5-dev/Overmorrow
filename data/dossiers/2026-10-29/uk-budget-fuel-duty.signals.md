@@ -1,0 +1,8 @@
+# uk-budget-fuel-duty — signals
+
+Searched with `node scripts/markets.mjs search` ("UK budget", "Autumn Budget", "fuel duty"), read 2026-10-26T18:19–18:21Z.
+
+- Manifold "UK Autumn Budget 2026: will the fuel duty rise due on 1 January 2027 be cancelled or delayed?" — 0.85, volume M82, closes 2026-10-28 12:00 UTC — https://manifold.markets/MaxGhenis/uk-autumn-budget-2026-will-the-fuel. **Closest match** (same direction as our claim). Criteria page not read; a delay to a date inside January might be treated differently from ours.
+- Manifold "UK Autumn Budget 2026: will it freeze fuel duty or cancel a scheduled rise?" — 0.817 (page read 18:24Z: 82%), volume M493, 7 traders, closes 2026-10-28 12:00 UTC — https://manifold.markets/MaxGhenis/uk-autumn-budget-2026-will-it-freez. Criteria: YES if the policy decisions table shows a fuel duty measure with a negative Exchequer impact in 2027-28 (freeze, cancelled/delayed rise, cut). Broader than ours: a measure that cancels only the March rise or the April RPI uprating, while letting a January rise stand, would be YES there and NO here.
+- Polymarket "Will the UK Budget include an increase to fuel duty?" — Yes 0.325–0.345 (two reads), volume $5,995, liquidity ~$300–343, closes 2026-10-29 03:59 UTC — https://polymarket.com/event/what-will-be-in-the-uk-budget-20260914. Inverse direction, rules not readable (page refused). Unclear whether letting the legislated January rise stand counts as "an increase"; if it does, it is roughly the complement of our claim (0.325 ⇔ ~0.67 for ours) and diverges from the Manifold markets. Settlement mismatch risk; treat with caution.
+- No bookmaker lines found; no published model.

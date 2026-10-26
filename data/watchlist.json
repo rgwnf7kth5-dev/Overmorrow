@@ -568,6 +568,50 @@
      "note_cs": "STAN a Spolu mají 34 z 65 mandátů, Tomáš Portlík ze Spolu přenechal post primátora STAN a budoucím primátorem má být Petr Hlaváček, přičemž pokud by se jednání o trojkoalici s uskupením Praha sobě protahovala, mohou obě strany vládnout samy. Hlavním rizikem je načasování: volební stížnost, většina jediného hlasu nebo přerušené ustavující zasedání jako v roce 2022, kdy byl primátor zvolen až v únoru 2023, mohou volbu posunout za 30. listopad.",
      "market_note": "The market asks who will be the next mayor with no deadline; our question also needs the election to happen by 30 November, and coalition talks in Prague have run long before.",
      "market_note_cs": "Trh se ptá, kdo bude příštím primátorem, bez termínu; naše otázka navíc vyžaduje volbu do 30. listopadu a koaliční jednání v Praze se v minulosti protahovala."
+    },
+    {
+     "at": "2026-10-26T21:15:00+01:00",
+     "p": 0.85,
+     "combined": 0.847,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "p_blind": 0.82,
+       "reason": "Prague elected its mayor by end-November in 2014 and 2018 but not 2022 (deadlock); this time STAN+Spolu hold a majority either way, Hlaváček is the agreed candidate and the constituent session is expected 19 Nov, leaving slack. Risks: session slips, election challenges. Signals: No matched market (Polymarket mayor market has no date; Hlaváček 0.955 supports identity, not timing); no move."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "p_blind": 0.82,
+       "reason": "No matching market (Polymarket Next Mayor of Prague has Hlaváček 0.955 with no date); kept blind given the expected 19 Nov constituent session."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.84,
+       "p_blind": 0.84,
+       "reason": "No new market in the signals (the earlier Polymarket 0.935 asks who, not when); unchanged. A 19 Nov constituent session with a named STAN mayor and a stated two-party fallback leaves adjournment, a secret-ballot defection on a one-seat majority or a late court complaint as the NO routes."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.84,
+       "reason": "Anchor: Polymarket Hlaváček next mayor at 0.955 (no deadline). Discounted for timing: the constituent session is expected on 19 Nov, within the window, and there is a two-party STAN–Spolu fallback with 34 of 65 seats. The remaining risks are an election challenge, an adjourned session or the thin majority. Up from 0.78."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.9,
+       "p_blind": 0.9,
+       "reason": "Polymarket Hlaváček 0.955 (no date limit), timing risk makes ours lower; unchanged."
+      }
+     ],
+     "market": null,
+     "note": "STAN's Jiří Hlaváček expects the constituent session on 19 November with himself as mayor and the eleven council seats split STAN 5, Spolu 4, Praha sobě 2; talks continue on 27 October, with a STAN–Spolu coalition as the fallback, which would also give STAN the mayor (ČTK, ČT24, 26 Oct).",
+     "note_cs": "Jiří Hlaváček (STAN) počítá s ustavujícím zasedáním 19. listopadu, s tím, že se stane primátorem a jedenáct míst v radě si rozdělí STAN (5), Spolu (4) a Praha sobě (2); jednání pokračují 27. října a záložní variantou je koalice STAN a Spolu, v níž by primátora rovněž měl STAN (ČTK, ČT24, 26. října)."
     }
    ],
    "result": null
@@ -902,7 +946,12 @@
      "note_cs": "Večerní přepočet s podklady k vydání: ve třech průzkumech z posledního týdne vede Flávio Bolsonaro o zhruba 1,3 bodu platných hlasů (Datafolha 50:50, Quaest a PoderData 51:49), pozdější průzkum AtlasIntel ho rovněž vidí v čele a prognostici nyní počítají s širší souhrnnou chybou průzkumů místo vlastní bilance agentury Datafolha. Likvidní trh (0,235) se nepohnul. Poslední průzkumy Datafolha a Quaest vyjdou 24. října."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
+    "note": "With 100% of votes counted the TSE count gives Lula 51.79% of valid votes against Flávio Bolsonaro’s 48.21%, and the electoral authority confirmed his victory on the night of 25 October (Guardian, 26 Oct 00:19 UTC; BBC). Bolsonaro’s call to annul the result does not change the count. The TSE results page itself (a JavaScript app) was not read directly.",
+    "resolved_at": "2026-10-26T21:15:00+01:00"
+   }
   },
   {
    "id": "il-netanyahu-tasked",
@@ -1110,6 +1159,50 @@
      },
      "note": "After Steve Witkoff met Vladimir Putin on 21 October, Kremlin adviser Yuri Ushakov said Russia agreed in principle to resume three-way talks after 10 November, with Abu Dhabi under consideration, which leaves about five weeks of slack before 15 December, and the same format already met three times earlier in 2026. The main risk is that Moscow stalls or cancels, as Zelensky warned it has done before, or that the contacts are downgraded to bilateral meetings, which do not count.",
      "note_cs": "Poté, co se Steve Witkoff 21. října setkal s Vladimirem Putinem, prohlásil poradce Kremlu Jurij Ušakov, že Rusko v zásadě souhlasí s obnovením třístranných jednání po 10. listopadu, přičemž se zvažuje Abú Zabí; do 15. prosince tak zbývá zhruba pět týdnů rezervy a stejný formát se letos sešel už třikrát. Hlavním rizikem je, že Moskva jednání zdrží nebo zruší, jak se podle Zelenského už dříve stalo, případně že kontakty budou omezeny na dvoustranná setkání, která se nepočítají."
+    },
+    {
+     "at": "2026-10-26T21:15:00+01:00",
+     "p": 0.72,
+     "combined": 0.72,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "p_blind": 0.7,
+       "reason": "Talks agreed in principle with a stated timetable (after 4 Nov, Abu Dhabi) and the format met three times in 2026; base rate for in-principle rounds materialising within ~7 weeks is roughly two-thirds, with Russian stalling and downgrade to bilateral as the main failure modes. Signals: Polymarket 30 Nov 0.71 / 31 Dec 0.785 interpolates to ~0.75 for 15 Dec but its talks definition is looser than three official delegations; moved slightly up from 0.70."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.73,
+       "p_blind": 0.72,
+       "reason": "Polymarket 0.71 (30 Nov) and 0.785 (31 Dec) bracket our 15 Dec deadline at about 0.75, but its definition of talks may be broader than an official trilateral meeting; nudged up from blind 0.72."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.72,
+       "p_blind": 0.7,
+       "reason": "Polymarket gives 0.71 for talks by 30 Nov and 0.785 by 31 Dec, so roughly 0.75 for our 15 Dec deadline, but its definition is broader (any official Russia–Ukraine talks, not necessarily trilateral), so I move only two points up. The NO case (no official date or venue, Moscow's record of stalling, a possible downgrade to bilateral contacts) keeps me below the market."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.7,
+       "reason": "Anchor: Polymarket peace talks by 30 Nov at 0.71 and by 31 Dec at 0.785 interpolate to about 0.75 for 15 Dec. Cut to 0.70 because Polymarket's 'talks' may count meetings our criterion excludes, and we need all three delegations plus official confirmation. The 26 Oct facts (Kremlin 'decision', after 4 Nov, Abu Dhabi) support the 0.66 to 0.70 move."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.73,
+       "p_blind": 0.72,
+       "reason": "Signals: Polymarket 'talks by 30 Nov' 0.71 and 31 Dec 0.785 (looser definition); our 15 Dec with strict trilateral definition sits slightly below the interpolation; roughly unchanged."
+      }
+     ],
+     "market": null,
+     "note": "The Kremlin now speaks of a decision to resume three-way talks, with the next round reported for after 4 November, most likely in Abu Dhabi, and Kyiv pressing to bring it forward (TASS, Meduza, 26 Oct); no official date or venue yet. A US-involved local ceasefire around Oleshky starts on 27 October.",
+     "note_cs": "Kreml nově hovoří o rozhodnutí obnovit třístranná jednání; další kolo se podle zpráv chystá po 4. listopadu, nejspíše v Abú Zabí, a Kyjev tlačí na dřívější termín (TASS, Meduza, 26. října). Oficiální datum ani místo zatím nejsou. Od 27. října platí za účasti USA místní příměří u Olešek."
     }
    ],
    "result": null
@@ -1473,6 +1566,50 @@
      },
      "note": "Acting President Delcy Rodríguez promised elections at the UN in September without giving a date, Reuters reports the vote could slip to late 2027 pending institutional reforms and a new electoral council (CNE), and Trump has said Venezuela is \"not ready yet\". Government–opposition talks that opened in Caracas on 14 October, where the opposition said it would \"look for a date\", and protests over the missing date are the main routes to an earlier announcement.",
      "note_cs": "Úřadující prezidentka Delcy Rodríguez v září v OSN slíbila volby, ale datum neuvedla, podle agentury Reuters se hlasování kvůli institucionálním reformám a ustavení nové volební rady CNE může posunout až na konec roku 2027 a Trump prohlásil, že Venezuela na volby „ještě není připravena“. Hlavní cestou k dřívějšímu oznámení jsou rozhovory vlády s opozicí zahájené 14. října v Caracasu, kde opozice uvedla, že „bude hledat datum“, a protesty kvůli chybějícímu termínu."
+    },
+    {
+     "at": "2026-10-26T21:15:00+01:00",
+     "p": 0.17,
+     "combined": 0.168,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.16,
+       "p_blind": 0.13,
+       "reason": "Transitional governments without a legal deadline rarely publish a firm date within three months; Reuters points to late 2027 and a new CNE first. Machado's return adds pressure but she asks only for a vote by July 2027; slight rise from 0.11. Signals: Polymarket scheduled-by-31-Dec doubled to 0.17 and our window has one extra month, but Kalshi/Manifold related lines stay low; moved part way up from 0.13."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.17,
+       "p_blind": 0.12,
+       "reason": "Polymarket \"election scheduled by 31 Dec\" doubled to 0.17 after Machado returned, and our window is a month longer; moved up from blind 0.12, held below the market because no CNE step and Reuters points to late 2027."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.17,
+       "p_blind": 0.14,
+       "reason": "Polymarket's 'scheduled by 31 Dec 2026' doubled to 0.17 after Machado's return, and our deadline runs a month longer, which points to about 0.20; I discount that for post-return hype on a thin market and the absence of any CNE or decree action, and land at 0.17, up three points from the blind number."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.19,
+       "reason": "Anchor: Polymarket 'election scheduled by 31 Dec 2026' at 0.17, up from 0.085 after Machado returned, plus about one more month to 31 Jan, gives about 0.21. Shaded to 0.19 because Kalshi and Manifold are lower, 'scheduled' may be read more loosely than a CNE date, and Machado herself is asking only for a vote by July 2027."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.15,
+       "p_blind": 0.14,
+       "reason": "Polymarket 'scheduled by 31 Dec' 0.17, Kalshi before Jun 2027 0.27; deadline is a month later but our criterion needs a formal CNE/decree date; small upward nudge."
+      }
+     ],
+     "market": null,
+     "note": "María Corina Machado returned to Venezuela on 25 October and is calling for an election by July 2027; the electoral council has taken no step. Prediction markets on an election being scheduled this year roughly doubled after her return.",
+     "note_cs": "María Corina Machado se 25. října vrátila do Venezuely a požaduje volby do července 2027; volební rada zatím nic neučinila. Sázkové trhy na vypsání voleb ještě letos po jejím návratu zhruba zdvojnásobily svůj odhad."
     }
    ],
    "result": null
@@ -2492,6 +2629,76 @@
      "market": null,
      "note": "Vystrčil was re-elected after each of the last three Senate elections, his ODS–TOP 09 club remains the largest, and both STAN’s leader Vít Rakušan and ODS leader Martin Kupka have backed him; the vote is due in November after the new senators take the oath on 19 November. The residual risk is a surprise rival in the secret ballot.",
      "note_cs": "Vystrčil byl znovu zvolen po každých z posledních tří senátních voleb, jeho klub ODS a TOP 09 zůstává nejsilnější a podpořili ho předseda STAN Vít Rakušan i předseda ODS Martin Kupka; volba se čeká v listopadu po složení slibu nových senátorů 19. listopadu. Zbývajícím rizikem je překvapivý protikandidát v tajné volbě."
+    }
+   ]
+  },
+  {
+   "id": "rs-student-list-pm",
+   "scope": "europe",
+   "topic": "Serbia government",
+   "question": "Will Serbia's National Assembly elect a prime minister from, or nominated by, the Student List by 31 January 2027?",
+   "question_cs": "Zvolí srbský parlament do 31. ledna 2027 premiérem člena Studentské kandidátky nebo jejího nominanta?",
+   "criterion": "Yes if, by 31 Jan 2027 23:59 CET, the National Assembly of Serbia elects a Prime Minister who is a member of, or was nominated by, the Student List, as recorded by the National Assembly (parlament.gov.rs) or reported by two major outlets. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. ledna 2027 ve 23:59 SEČ Národní shromáždění Srbska zvolí předsedou vlády člena Studentské kandidátky nebo osobu, kterou tato kandidátka navrhla, podle záznamu Národního shromáždění (parlament.gov.rs) nebo zpráv dvou velkých médií. Jinak ne.",
+   "resolution_source": "http://www.parlament.gov.rs/",
+   "opened": "2026-10-26",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "The Student List, which grew out of nearly two years of student-led protests, won the snap parliamentary election of 25 October 2026 with a projected majority of about 140 of 250 seats; Aleksandar Vučić, who had resigned as president to run for prime minister, conceded defeat. The list campaigned without a named leader.",
+   "sources": [
+    {
+     "title": "ČT24: Vučić uznal porážku své strany (26 Oct 2026)",
+     "url": "https://ct24.ceskatelevize.cz/clanek/svet/vucic-jeste-pred-ohlasenim-vysledku-voleb-uznal-porazku-sve-strany-379002"
+    },
+    {
+     "title": "Novinite: Vučić concedes Serbia election defeat as Student List claims 135–140 seats",
+     "url": "https://www.novinite.com/articles/241255/Vucic+Concedes+Serbia+Election+Defeat+as+Student+List+Claims+135-140+Seats"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-10-26T21:15:00+01:00",
+     "p": 0.33,
+     "combined": 0.327,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "p_blind": 0.33,
+       "reason": "Serbian governments since 2012 were elected within ~98 days of the election in 2 of 6 cases (2012, 2014); final results, the 30-day convening and an SNS acting president who proposes the PM candidate all add delay, offset by a clear Student List majority and urgency. Signals: No market collected; no move."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "p_blind": 0.3,
+       "reason": "No market; kept blind: timetable for results, assembly convening and SNS acting president nomination makes 31 Jan tight."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.42,
+       "p_blind": 0.42,
+       "reason": "No market in the signals; unchanged. Serbia's post-election record (three to seven months to a government in four of the last five cycles), SNS control of the nomination through acting president Brnabić and of the results process, and the lack of a named candidate weigh against fourteen weeks; an absolute majority that needs no coalition and the dissolution clock keep it close to even."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.5,
+       "reason": "Anchor: Polymarket next-PM prices for Student List figures (Šoškić 0.385, Srdanović 0.22, plus Saičić, Bodiroga, Stojiljković, Đokić) sum to about 0.78 with no deadline. Multiplied by about 0.64 for completing the steps by 31 Jan: final RIK results took 26 days in 2023, the assembly convenes within 30 days of them, and acting president Brnabić (SNS) nominates the candidate and may delay. No PM candidate has been named yet."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.15,
+       "p_blind": 0.15,
+       "reason": "No market; unchanged."
+      }
+     ],
+     "market": null,
+     "note": "New question. The Student List won the 25 October snap election with about 53% and a projected 138–140 of 250 seats; Vučić conceded. The list has not named a prime-ministerial candidate. Final results took 26 days in 2023; the assembly then has 90 days to elect a government, and the nomination runs through acting president Ana Brnabić (SNS). The forecasters disagree (0.15–0.50) on the same facts: the timetable alone leaves little slack before 31 January, and the outsider weighs obstruction by the SNS-held presidency more heavily.",
+     "note_cs": "Nová otázka. Studentská kandidátka vyhrála předčasné volby 25. října s asi 53 % hlasů a podle projekce 138 až 140 z 250 mandátů; Vučić uznal porážku. Kandidáta na premiéra kandidátka zatím nejmenovala. Konečné výsledky trvaly v roce 2023 šestadvacet dní, parlament pak má 90 dní na zvolení vlády a kandidáta navrhuje úřadující prezidentka Ana Brnabić (SNS). Prognostici se na stejných faktech rozcházejí (0,15 až 0,50): samotný harmonogram nechává do 31. ledna malou rezervu a outsider přikládá větší váhu obstrukci ze strany prezidentského úřadu ovládaného SNS."
     }
    ]
   }
