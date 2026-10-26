@@ -1,8 +1,8 @@
 {
   "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
-  "fitted_at": "2026-10-25T04:09:20Z",
-  "version": "2026-10-25",
-  "resolved": 0,
+  "fitted_at": "2026-10-26T04:09:32Z",
+  "version": "2026-10-26",
+  "resolved": 6,
   "thresholds": {
     "weighting": 120,
     "calibration": 50
@@ -27,29 +27,35 @@
   },
   "forecasters": {
     "base-rate": {
-      "n": 0,
-      "brier": null
+      "n": 6,
+      "brier": 0.1627333333333333
     },
     "evidence": {
-      "n": 0,
-      "brier": null
+      "n": 6,
+      "brier": 0.15766666666666665
     },
     "adversarial": {
-      "n": 0,
-      "brier": null
+      "n": 6,
+      "brier": 0.19001666666666664
     },
     "anchor": {
-      "n": 0,
-      "brier": null
+      "n": 6,
+      "brier": 0.14995000000000003
     },
     "outsider": {
-      "n": 0,
-      "brier": null
+      "n": 6,
+      "brier": 0.1521833333333333
     }
   },
   "diagnostics": {
-    "raw_ensemble": null,
-    "published": null,
+    "raw_ensemble": {
+      "brier": 0.1615,
+      "log": 0.4749
+    },
+    "published": {
+      "brier": 0.1607,
+      "log": 0.4731
+    },
     "platt_leave_one_out": null
   }
 }

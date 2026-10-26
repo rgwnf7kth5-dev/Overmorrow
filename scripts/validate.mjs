@@ -242,7 +242,10 @@ function checkSelectionV4(ed, w) {
     const ids = new Set(stories.map((x) => x.id));
     for (const r of run) {
       const rw = `${w} running "${r.title || '?'}"`;
-      if (!nonEmpty(r.title) || !Array.isArray(r.lists) || r.lists.length < 2) err(rw, 'title and lists (at least two reference front pages) required');
+      // Exception (approved by the publisher on 26 Oct 2026): when reference front pages are blocked, an entry may list fewer
+      // than two pages if meta.running_shortfall says which pages failed and the entry's lists_note says what was checked.
+      const listsExcused = nonEmpty(ed.meta?.running_shortfall) && nonEmpty(r.lists_note);
+      if (!nonEmpty(r.title) || !Array.isArray(r.lists) || (r.lists.length < 2 && !listsExcused)) err(rw, 'title and lists (at least two reference front pages) required, or lists_note with meta.running_shortfall when the pages were unreachable');
       if (r.status === 'covered') { if (!ids.has(r.story)) err(rw, 'covered: name the story id'); }
       else if (r.status === 'not_covered') { if (!nonEmpty(r.why) || /^no (dated|scheduled) step\.?$/i.test(r.why.trim())) err(rw, 'not_covered needs a real reason; "no dated step" is not one: forecast what happens by the end of the day'); }
       else err(rw, 'status must be covered or not_covered');
