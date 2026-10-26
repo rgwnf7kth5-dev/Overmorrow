@@ -2,6 +2,14 @@
 
 One paragraph for each confident miss: a claim at 70% or more that failed, or 30% or less that came true. Newest first.
 
+## 2026-10-26 · sk-vallo-10 (35%, came true)
+
+We gave Vallo only a 35% chance of beating Ráž by more than 10 points; ŠÚ SR results gave him 64.36% to 32.32%, a 32-point margin. The forecast ran the national poll-lead model on a single local poll showing a 7-point lead, and its own base-rate note already said the pooled error "understates spread for one local n=500 poll" — yet the spread was used to cap the margin rather than widen it. Incumbent big-city mayors with a fragmented or weak opposition tend to win by landslides that one small poll does not capture. Diagnosis: wrong base rate (a national-election error model applied to a municipal race, anchored on one poll). Rule: for local races with one poll, take the incumbent's previous margin as the anchor and widen the error well beyond the pooled rms.
+
+## 2026-10-25 · br-datafolha-flavio (28%, came true)
+
+We said Datafolha's 23–24 October poll would not show Flávio Bolsonaro strictly ahead; it gave him 51% to Lula's 49% of valid votes. Datafolha's own runoff series had shown Flávio at 52–48 (6–7 Oct) and 51–49 (13–15 Oct) before a 50–50 tie on 22 Oct, so "strictly ahead" was close to a coin flip on the house's own trend, not a 28% outcome. Diagnosis: wrong base rate from over-reading the last tie as a trend toward Lula. (Lula went on to win the actual runoff, so the poll itself was off; the claim was about the poll.) Rule: for claims about a named pollster's next release, start from the distribution of that house's last three rounds.
+
 
 ## 2026-10-23 · israel-no-majority (80%, failed)
 
@@ -13,6 +21,7 @@ We said the unemployment-benefit cut would stay stuck in the Chamber on 23 Octob
 
 ## Claim design
 
+- 2026-10-24 · fr-paris-ban: the prefecture banned the negotiated march route (Bastille–Nation) rather than issuing a zone ban, and the resolver had to read a route ban as "banning demonstrations in part of Paris"; say explicitly whether a route ban counts.
 - 2026-10-24 · cz-benefits-stalled: criterion named a stand-alone bill that did not exist; name the print (tisk) number.
 - 2026-10-24 · france-unions-out: "formally call members to join" had to be read against a statement condemning the bans without a call; define what counts as a call (a published call to the specific day).
 - 2026-10-24 · serbia-sns-ahead: criterion fixed a tracker snapshot date ("as of 23 October") that the tracker does not archive; use a dated publication instead.
