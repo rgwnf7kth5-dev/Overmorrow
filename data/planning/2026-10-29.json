@@ -3,7 +3,7 @@
  "events_date": "2026-10-28",
  "method_version": 4,
  "number_expected": 7,
- "prepared_at": "2026-10-26T21:10:00+01:00",
+ "prepared_at": "2026-10-26T20:45:00+01:00",
  "candidates": 50,
  "running": [
   {
@@ -18,13 +18,16 @@
    ],
    "next_step": "Student List names its candidate for prime minister by 23:59 Belgrade time on 28 Oct",
    "status": "planned",
-   "planned": "rs-government"
+   "planned": "rs-government",
+   "lists_note": "ČT24 lead (1st); not in the top eight of Seznam Zprávy or iROZHLAS at 20:00 CET."
   },
   {
    "title": "Czech coalition to renegotiate the licence-fee abolition bill; protests, ČT/ČRo strike on 3 Nov",
    "title_cs": "Koalice bude jednat o podobě zákona o zrušení poplatků; protesty, stávka ČT a ČRo 3. listopadu",
    "lists": [
-    "ct24"
+    "ct24",
+    "seznam",
+    "irozhlas"
    ],
    "sources": [
     "https://ct24.ceskatelevize.cz/clanek/domaci/koalice-bude-jednat-o-podobe-zakona-o-poplatcich-pro-ct-a-cro-uvedl-babis-379007",
@@ -32,13 +35,15 @@
    ],
    "next_step": "Coalition announces an agreed change to tisk 231; opposition files a motion to remove Speaker Okamura; Pavel's 28 Oct speech mentions public-service media",
    "status": "planned",
-   "planned": "cz-licence-fees"
+   "planned": "cz-licence-fees",
+   "lists_note": "ČT24 2nd; Seznam Zprávy lead (Babiš and the fee protests); iROZHLAS 2nd (the 4:36 vote) and 5th (Babiš will not withdraw the bill)."
   },
   {
    "title": "Brazil: Lula re-elected, Flávio Bolsonaro seeks annulment",
    "title_cs": "Brazílie: Lula znovu zvolen, Flávio Bolsonaro chce výsledek zrušit",
    "lists": [
-    "ct24"
+    "ct24",
+    "seznam"
    ],
    "sources": [
     "https://ct24.ceskatelevize.cz/clanek/svet/brazilci-vybiraji-prezidenta-vyzyvatelem-luly-je-bolsonaro-378991",
@@ -46,21 +51,24 @@
    ],
    "next_step": "A formal annulment request filed at the TSE by 23:59 Brasília time on 28 Oct",
    "status": "planned",
-   "planned": "br-aftermath"
+   "planned": "br-aftermath",
+   "lists_note": "ČT24 3rd; Seznam Zprávy 3rd; iROZHLAS 8th."
   },
   {
    "title": "US midterm elections, one week out",
    "title_cs": "Americké volby do Kongresu za týden",
    "lists": [
-    "ct24"
+    "ct24",
+    "irozhlas"
    ],
    "sources": [
     "https://ct24.ceskatelevize.cz/clanek/svet/jedny-volby-padesat-systemu-jaka-je-cesta-americanu-k-hlasovani-378270",
     "https://news.kalshi.com/p/democrats-midterm-senate-odds-jump-to-63-up-14-points-since-mid-september"
    ],
-   "next_step": "Campaign events only; the vote is on 3 Nov",
-   "status": "not_planned",
-   "why": "No step on 28 Oct with a checkable outcome of news value (campaign rallies only); the outcome is followed on the forecast board (us-house-democrats, us-senate-democrats) and the vote on 3 Nov gets its own edition. The morning should reconsider if a scheduled event (debate, court ruling on ballots) appears."
+   "next_step": "UF Election Lab early-vote tracker passes 40 million by the end of 28 Oct (New York time)",
+   "status": "planned",
+   "lists_note": "ČT24 4th; iROZHLAS 3rd.",
+   "planned": "us-midterms"
   },
   {
    "title": "Czech government extends fuel price caps to 30 November",
@@ -74,7 +82,8 @@
    ],
    "next_step": "Ministry of Finance sets the maximum diesel price valid on 28 Oct",
    "status": "planned",
-   "planned": "cz-fuel-caps"
+   "planned": "cz-fuel-caps",
+   "lists_note": "ČT24 6th; Seznam Zprávy 8th."
   },
   {
    "title": "Ukraine: Zelensky rejects limits on the army; trilateral talks expected in November",
@@ -88,13 +97,16 @@
    ],
    "next_step": "Official announcement of the date of the next US–Russia–Ukraine round by 23:59 Kyiv time on 28 Oct",
    "status": "planned",
-   "planned": "ua-peace"
+   "planned": "ua-peace",
+   "lists_note": "ČT24 8th; iROZHLAS 7th (live blog) — top eight, not top five, on both."
   },
   {
    "title": "Israel votes in a Knesset election on 27 October",
    "title_cs": "Izrael volí 27. října Kneset",
-   "lists": [],
-   "lists_note": "Led ČT24 on 25 Oct (previous evening desk); tonight only the ČT24 homepage could be read, where the Serbian and Brazilian results had displaced it.",
+   "lists": [
+    "irozhlas"
+   ],
+   "lists_note": "iROZHLAS 4th tonight; led ČT24 on 25 Oct.",
    "sources": [
     "https://www.ynetnews.com/article/s1wppltnme",
     "https://www.timesofisrael.com/final-polls-before-election-show-both-blocs-short-of-majority-small-parties-out-of-knesset/"
@@ -130,10 +142,10 @@
    "planned": "us-fed; uk-budget"
   }
  ],
- "running_note": "Reference front pages read 26 Oct about 18:50–19:05 CET. Only the ČT24 homepage loaded (top eight read); Reuters World/Business, AP, BBC, FT, Seznam Zprávy and iROZHLAS (and their RSS) were refused by the fetch tool tonight (permission/provenance error), so most entries rest on one reference page plus the previous evening's lists and agency copy. The morning must refresh the lists (at least two pages per story) and record meta.running_shortfall if pages stay unreachable.",
+ "running_note": "Reference front pages read on 26 Oct: ČT24 at about 19:00 CET; Seznam Zprávy and iROZHLAS at about 20:05 CET (refused earlier in the evening, readable on retry). Reuters World and Business, AP, BBC and FT are blocked for the fetch tool (SITE_BLOCKED), also via RSS. Lists therefore name only the three Czech reference pages; lists_note gives the position on each. The morning must refresh the lists and record meta.running_shortfall for the blocked pages.",
  "cz_shortfall": "Six Czech stories with ten Czech claims proposed instead of eight stories: 28 Oct is a state holiday (no cabinet, no ČSÚ or ČNB releases, courts closed), the Chamber is in a committee week (media committee on the fee bill only on 29 Oct), and the only scheduled Czech events are the Castle ceremonies; the rest are running-story steps (fees, Okamura recall, Prague coalition, Constitutional Court).",
  "economy": "Six economy stories proposed (Fed with two claims, UK Budget with two, Bank of Canada, Microsoft results, Australian CPI with an interval and a derived claim, Czech regulated diesel price with an interval and a derived claim). The diesel maximum price is an administratively set regulated price (allowed as 'energy and regulated prices'), though computed from wholesale quotes: the morning editor should confirm it passes the market-price exclusion, otherwise drop it.",
- "note": "Evening desk round one, method v4. Selection by news value (score = Impact × Reach; score_v3 kept). Combination: plain geometric mean of odds (calibration not active). Each forecaster gave a blind estimate before opening the signals file and a final one after it (anchor: no blind step). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-1; outsider claude-sonnet-5-5. A session rate limit at about 19:33 CET cut off the evidence agents for all three groups and the adversarial agents mid-run: adversarial agents were resumed in the same agent after the limit lifted; evidence group A was rerun from scratch; evidence groups B and C had written their blind estimates from own research before the cut-off, and their final step was done by a continuation agent that took the blind file as given (noted on each agent record). Web access: most fetches were refused tonight unless the URL came from a search; several dossier facts rest on the evening sweep summaries and are flagged in notes_for_editor. One spread above 0.25 (ru-africa-putin-meets-28, genuine). Derived claims (au-cpi-sep-4, cz-diesel-max-28-above) take their published figure from the mean quantiles of their interval claims. Morning checks: (1) Israel: the vote is on 27 Oct, after the freeze — keep il-yashar-largest-28 as written; (2) whether Flávio Bolsonaro already filed at the TSE (then replace with the ready alternative in notes_for_editor); (3) Kremlin schedule for 28 Oct; (4) verify the 27 Oct diesel maximum (48.96) in the věstník; (5) Microsoft consensus (threshold fixed at $90.61bn); (6) refresh the running lists.",
+ "note": "Evening desk round one, method v4. Selection by news value (score = Impact × Reach; score_v3 kept). Combination: plain geometric mean of odds (calibration not active). Each forecaster gave a blind estimate before opening the signals file and a final one after it (anchor: no blind step). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-1; outsider claude-sonnet-5-5. A session rate limit at about 19:33 CET cut off the evidence agents for all three groups and the adversarial agents mid-run: adversarial agents were resumed in the same agent after the limit lifted; evidence group A was rerun from scratch; evidence groups B and C had written their blind estimates from own research before the cut-off, and their final step was done by a continuation agent that took the blind file as given (noted on each agent record). Web access: most fetches were refused tonight unless the URL came from a search; several dossier facts rest on the evening sweep summaries and are flagged in notes_for_editor. Added after 20:05 CET, when Seznam Zprávy and iROZHLAS became readable and showed the US midterms in the top five of two pages: story us-midterms with claim us-midterms-early-40m-28 (full five-forecaster round). One spread above 0.25 (ru-africa-putin-meets-28, genuine). Derived claims (au-cpi-sep-4, cz-diesel-max-28-above) take their published figure from the mean quantiles of their interval claims. Morning checks: (1) Israel: the vote is on 27 Oct, after the freeze — keep il-yashar-largest-28 as written; (2) whether Flávio Bolsonaro already filed at the TSE (then replace with the ready alternative in notes_for_editor); (3) Kremlin schedule for 28 Oct; (4) verify the 27 Oct diesel maximum (48.96) in the věstník; (5) Microsoft consensus (threshold fixed at $90.61bn); (6) refresh the running lists.",
  "stories": [
   {
    "id": "us-fed",
@@ -2192,6 +2204,168 @@
    "score_v3": 60
   },
   {
+   "id": "us-midterms",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 5,
+    "uncertainty": 3
+   },
+   "event": "US midterm elections take place on 3 Nov 2026, and early voting is surging in their final week. The UF Election Lab counted more than 28 million early votes according to Newsweek (26 Oct 15:23Z) and more than 30 million according to WJLA (26 Oct). NPR reported more than 19 million on 23 Oct. AP finds early voting well above the same point in 2022 in several states: Texas +74%, Maine +39%, Ohio +30%. Trump rallies in Lubbock and Waco, Texas, on 27 Oct. On 28 Oct, early in-person voting continues in many states, and the Election Lab tracker updates several times a day.",
+   "sources": [
+    {
+     "title": "Newsweek: Map shows states with most early voters so far (26 Oct)",
+     "url": "https://www.newsweek.com/map-states-early-voters-midterms-12619134"
+    },
+    {
+     "title": "WJLA Fact Check Team: What early voting numbers tell us (26 Oct)",
+     "url": "https://wjla.com/news/nation-world/fact-check-team-what-early-voting-numbers-tell-us-about-the-midterm-election-ballots"
+    },
+    {
+     "title": "UF Election Lab: 2026 Early Voting tracker",
+     "url": "https://election.lab.ufl.edu/early-vote/2026-early-voting/"
+    },
+    {
+     "title": "NPR: Over 19 million people have already cast their votes (23 Oct)",
+     "url": "https://www.npr.org/2026/10/23/nx-s1-6012692/over-19-million-people-have-already-cast-their-votes-for-the-midterms-data-shows"
+    },
+    {
+     "title": "Texas Scorecard: Trump plans two Texas rallies (27 Oct)",
+     "url": "https://texasscorecard.com/decisiontexas/trump-plans-two-texas-rallies-in-final-stretch-of-midterm-campaign/"
+    }
+   ],
+   "notes_for_editor": "The Election Lab national figures render by JavaScript, and our text fetch saw only 'X' placeholders. Read the live total in a browser in the morning, together with its 'Last updated' time. The threshold rests on the 26 Oct press figures (28m and 30m+) and the 23 Oct NPR figure (19m, tracker unverified). If the live figure on 27 Oct morning is already about 38m or more, or far below 33m, consider whether 40m is still the open question. The text and criterion fix 40m as a round milestone; do not retune it to a probability. No 2022 same-point national figure was read: rpubs.com/ElectProject/early_vote_2022 was not fetched. The Guardian live blog was blocked.",
+   "claims": [
+    {
+     "id": "us-midterms-early-40m-28",
+     "label": "Early vote reaches 40 million by 28 Oct",
+     "text": "By the end of Wednesday 28 October 2026 (New York time), the University of Florida Election Lab's 2026 early-vote tracker shows at least 40 million early votes (in-person and mail combined) cast nationwide in the US midterm elections.",
+     "criterion": "YES if the national \"Total early votes\" figure on the UF Election Lab 2026 early-voting tracker (https://election.lab.ufl.edu/early-vote/2026-early-voting/), in its last update timestamped at or before 23:59:59 EDT on 28 Oct 2026, is 40,000,000 or more. Read from the live page, an archived copy of it, or a report (AP, NPR, major outlet) quoting that update's figure. NO if that figure is below 40,000,000. A later update (29 Oct or after) does not count, even if it adds votes cast on 28 Oct. Delayed reading is not NO: if the figure cannot be read by the morning run, the claim stays pending until the timestamped figure is found.",
+     "resolution_source": "UF Election Lab 2026 early-voting tracker (election.lab.ufl.edu/early-vote/2026-early-voting/), its 'Last updated' stamp and national 'Total early votes'; archive.org snapshot or press reports quoting it",
+     "schedule": "reported",
+     "slip_class": "none",
+     "publishes": "UF Election Lab (Michael McDonald), tracker updated several times daily; last 28 Oct update by 23:59 EDT (05:59 CET 29 Oct)",
+     "tz": "America/New_York",
+     "event_window": {
+      "start": "2026-10-27T06:00:00-04:00",
+      "end": "2026-10-28T23:59:59-04:00"
+     },
+     "evidence_at": "2026-10-28T23:59:59-04:00",
+     "resolves_by": "2026-10-29T07:00:00+01:00",
+     "cs": {
+      "label": "Předčasně hlasovalo 40 milionů Američanů",
+      "text": "Podle sledování University of Florida Election Lab odevzdá do konce středy 28. října 2026 (newyorského času) předčasně hlas v amerických volbách do Kongresu, osobně nebo poštou, nejméně 40 milionů voličů.",
+      "criterion": "ANO, pokud celostátní údaj „Total early votes“ ve sledování předčasného hlasování University of Florida Election Lab za rok 2026 (https://election.lab.ufl.edu/early-vote/2026-early-voting/) dosáhne nejméně 40 000 000. Rozhoduje poslední aktualizace s časem nejpozději 23:59:59 newyorského letního času 28. října 2026. Údaj lze odečíst ze živé stránky, z její archivní kopie nebo ze zprávy (AP, NPR, velké médium), která údaj z této aktualizace cituje. NE, pokud je tento údaj nižší než 40 000 000. Pozdější aktualizace (29. října a dál) se nepočítá, ani když přidá hlasy odevzdané 28. října. Pozdní odečtení neznamená NE: dokud se údaj s příslušným časem nepodaří zjistit, tvrzení zůstává otevřené."
+     },
+     "dossier": "data/dossiers/2026-10-29/us-midterms-early-40m-28.md",
+     "signals": "data/dossiers/2026-10-29/us-midterms-early-40m-28.signals.md",
+     "probability": 0.43,
+     "forecast": {
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-26T19:54:42Z",
+        "p": 0.42,
+        "p_blind": 0.42,
+        "at_blind": "2026-10-26T19:54:29Z",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "No reference class fits; using the 2022 midterm early-vote trajectory as the base (roughly 3m/day in the final week, ~33-35m six days out) and 2026 running ahead of it. From ~28-30m on 26 Oct, 40m needs ~4.3m/day over ~2.2 reporting days versus a recent pace of ~3.7m/day, so slightly below even.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No reference class fits; base is the 2022 midterm early-vote trajectory (~3m/day in the final week) with 2026 running ahead. From ~28-30m on 26 Oct, 40m by the last 28 Oct update needs ~4.3m/day against a recent ~3.7m/day, so slightly below even. Signals hold no market or model, so no move."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-26T19:55:26Z",
+        "p": 0.4,
+        "p_blind": 0.4,
+        "at_blind": "2026-10-26T19:55:15Z",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "UF Election Lab: 12.6M on 20 Oct (Axios), 'more than 30M' around 26 Oct (Sinclair Fact Check), i.e. ~2.9M/day and rising. 40M by the last 28 Oct update needs ~10M in ~2.4 days (~4M/day), plausible with late-week acceleration but slightly above the trend.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "UF Lab series 12.6M (20 Oct), ~19M (23 Oct), 28-30M (26 Oct), so the pace is accelerating from ~2M/day to ~3-3.5M/day. Reaching 40M by the last 28 Oct update needs ~4M/day over ~2.4 days: plausible but slightly above trend. The dossier confirms the figures and the signals file has no market, so no move."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-1",
+        "at": "2026-10-26T19:56:00Z",
+        "p": 0.45,
+        "p_blind": 0.45,
+        "at_blind": "2026-10-26T19:55:00Z",
+        "inputs_blind": [
+         "dossier"
+        ],
+        "reason_blind": "Case for NO: the tracker stood at about 28-30m on 26 Oct afternoon and needs +10m by its last 28 Oct update; the recent pace (19m on 23 Oct to about 30m on 26 Oct) is roughly 3-3.5m/day, and the last Wednesday update will largely reflect votes through Tuesday because of state reporting lags, giving only about 1.7-2 effective reporting days (about 7-9m, i.e. 37-39m). Case for YES: the final week accelerates (weekday in-person voting in Texas, Florida, Georgia, North Carolina plus mail returns can reach 4-5m/day) and a bulk mail-return upload from a big state could add millions in one update. The threshold sits almost exactly at the expected value, so this is a coin flip with a slight lean to NO from the lag argument.",
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "reason": "No market, model or bookmaker line on the early-vote count exists in the signals file, so nothing moves the blind number. The threshold of 40m sits almost exactly at the expected value of the last 28 Oct update (about 30m on 26 Oct afternoon plus roughly 1.7-2 effective reporting days at 3.5-5m/day gives 37-41m); state reporting lags tilt it slightly to NO, final-week acceleration and possible bulk mail uploads tilt it to YES."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-10-26T19:55:00Z",
+        "p": 0.33,
+        "inputs": [
+         "signals",
+         "dossier"
+        ],
+        "reason": "No market, bookmaker or published model exists (signals), so the anchor is my own projection run through models.mjs leadabove: roughly 30m at the 26 Oct 15:13 ET update (Newsweek says 28m, WJLA says >30m), plus about 3.5-4.5m a day over about 2.2 reporting days, gives a mean of about 38.5m by the last 28 Oct update. With sd 3m that is P(>=40m) of about 0.31. I nudged it up slightly because daily increments usually grow in the final week and 2026 is running ahead of 2022, but state reporting lags mean the 28 Oct figure mostly reflects votes cast through 27 Oct."
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-10-26T19:54:53Z",
+        "p": 0.55,
+        "p_blind": 0.55,
+        "at_blind": "2026-10-26T19:54:46Z",
+        "inputs_blind": [
+         "dossier"
+        ],
+        "reason_blind": "About 30M at 26 Oct 3pm ET, needs ~10M more by last 28 Oct update; pace 3-4M/day and rising toward election day makes it close to a coin flip, slightly favouring yes.",
+        "inputs": [
+         "dossier",
+         "signals"
+        ],
+        "reason": "Signals add nothing (no market on early-vote totals). Needs ~10M more than the ~30M seen 26 Oct; accelerating pace roughly 3-4M/day makes it near a coin flip, slightly favouring yes."
+       }
+      ],
+      "missing": [],
+      "disagreement": null,
+      "combination": {
+       "method": "geo-odds"
+      },
+      "calibrated": null,
+      "base_rate": null,
+      "market": null,
+      "dossier": "data/dossiers/2026-10-29/us-midterms-early-40m-28.md",
+      "signals": "data/dossiers/2026-10-29/us-midterms-early-40m-28.signals.md",
+      "combined": 0.429,
+      "combined_blind": 0.455
+     }
+    }
+   ],
+   "rank": 10,
+   "score": 20,
+   "score_v3": 60
+  },
+  {
    "id": "cz-castle-attendance",
    "scope": "cz",
    "topic": "politics",
@@ -2502,7 +2676,7 @@
      }
     }
    ],
-   "rank": 10,
+   "rank": 11,
    "score": 9,
    "score_v3": 36
   },
@@ -2678,7 +2852,7 @@
      }
     }
    ],
-   "rank": 11,
+   "rank": 12,
    "score": 9,
    "score_v3": 45
   },
@@ -2848,7 +3022,7 @@
      }
     }
    ],
-   "rank": 12,
+   "rank": 13,
    "score": 16,
    "score_v3": 48
   },
@@ -3015,7 +3189,7 @@
      }
     }
    ],
-   "rank": 13,
+   "rank": 14,
    "score": 9,
    "score_v3": 36
   },
@@ -3320,7 +3494,7 @@
      "probability": 0.6
     }
    ],
-   "rank": 14,
+   "rank": 15,
    "score": 8,
    "score_v3": 32
   },
@@ -3622,7 +3796,7 @@
      "probability": 0.62
     }
    ],
-   "rank": 15,
+   "rank": 16,
    "score": 9,
    "score_v3": 36
   },
@@ -3799,7 +3973,7 @@
      }
     }
    ],
-   "rank": 16,
+   "rank": 17,
    "score": 9,
    "score_v3": 27
   },
@@ -3959,7 +4133,7 @@
      }
     }
    ],
-   "rank": 17,
+   "rank": 18,
    "score": 9,
    "score_v3": 36
   }
@@ -4743,6 +4917,56 @@
     "uncertainty": 1
    },
    "why": "Macklem already said the forecast will be lifted noticeably; near-certain",
+   "scope": "world"
+  },
+  {
+   "event": "[us-midterms] Televised Senate or governor debate on 28 Oct in a key race",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "No debate on 28 Oct found (OnTheIssues list, one search). The Maine Collins–Jackson series ended 15 Oct.",
+   "scope": "world"
+  },
+  {
+   "event": "[us-midterms] Trump holds an in-person campaign rally on 28 Oct",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Only the 27 Oct Lubbock and Waco rallies are confirmed. A Corpus Christi rally is undated, and no 28 Oct stop was found, so this is speculative. FOMC day falls in the same news cycle. Could be revived if a 28 Oct rally is announced on 27 Oct.",
+   "scope": "world"
+  },
+  {
+   "event": "[us-midterms] Court ruling on election rules due 28 Oct (SCOTUS or state supreme court)",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "No scheduled ruling for 28 Oct found within the search cap.",
+   "scope": "world"
+  },
+  {
+   "event": "[us-midterms] Final national generic-ballot poll released 28 Oct",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "No named poll with a confirmed 28 Oct release found. Previous readings were not available.",
+   "scope": "world"
+  },
+  {
+   "event": "[us-midterms] Early vote exceeds the 2022 same-point total",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "Reports say 2026 is already outpacing 2022, so this is near-certain. The 2022 same-point national figure was also not read.",
    "scope": "world"
   }
  ]
