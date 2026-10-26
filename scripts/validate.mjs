@@ -508,6 +508,30 @@ for (const ed of editions) {
   }
 }
 
+// Text rewrites of published editions: text only, news form
+{
+  const eds = new Map(editions.map((e) => [e.id, e]));
+  const dir = pathv.join(process.cwd(), 'data', 'rewrites');
+  if (fsv.existsSync(dir)) for (const f of fsv.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+    const rw = JSON.parse(fsv.readFileSync(pathv.join(dir, f), 'utf8'));
+    const ed = eds.get(f.replace('.json', ''));
+    const rw0 = `rewrites/${f}`;
+    if (!ed) { err(rw0, 'no edition with this date'); continue; }
+    if (!isDate(rw.date)) err(rw0, 'date (YYYY-MM-DD) required');
+    const ids = new Set(ed.stories.map((x) => x.id));
+    const EN = /\b(our|we) (forecast|forecasters|estimate[sd]?|put|gave|give|expect(ed)?|thought)\b|\bforecast(s|ers|ing)?\b|\bprobabilit|\bchances? (of|that)\b|\bodds\b|main risk|\bthe polls? (suggested|pointed|implied)|\bwas expected to\b|\bwould have (been|won|passed)\b/i;
+    const CS = /\b(náš|naše|našich|našim|naši) (predikc|předpov|odhad|prognost)|předpov[ěí]d|\bpredikc|pravděpodobnost|\bšanc|hlavní riziko|průzkumy (naznačovaly|ukazovaly na)|se očekávalo, že/i;
+    for (const [sid, x] of Object.entries(rw.stories || {})) {
+      const sw = `${rw0} ${sid}`;
+      if (!ids.has(sid)) { err(sw, 'unknown story'); continue; }
+      if (!nonEmpty(x.headline) || !Array.isArray(x.body) || !x.body.length || !Array.isArray(x.analysis)) err(sw, 'headline, body and analysis required');
+      if (!x.cs || !nonEmpty(x.cs.headline) || !Array.isArray(x.cs.body) || !Array.isArray(x.cs.analysis)) err(sw, 'cs.headline, cs.body and cs.analysis required');
+      for (const t of [x.standfirst, ...(x.body || [])]) { const m = (t || '').match(EN); if (m) err(sw, `forecast language "${m[0]}" in the report`); }
+      for (const t of [x.cs?.standfirst, ...(x.cs?.body || [])]) { const m = (t || '').match(CS); if (m) err(sw, `forecast language "${m[0]}" in the Czech report`); }
+    }
+  }
+}
+
 // Planning files (evening desk)
 {
   const fsx = await import('node:fs');

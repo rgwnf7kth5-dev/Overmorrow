@@ -22,7 +22,30 @@ export function loadEditions({ merged = true } = {}) {
     .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
     .sort()
     .map((f) => ({ file: f, ...readJson(path.join(EDITIONS_DIR, f)) }))
-    .map((ed) => (merged ? mergeUpdate(ed) : ed));
+    .map((ed) => (merged ? applyRewrite(mergeUpdate(ed)) : ed));
+}
+
+export const REWRITES_DIR = path.join(ROOT, 'data', 'rewrites');
+/** Text rewrites of a published edition (data/rewrites/<id>.json), or null. Only text: claims and figures never change. */
+export function loadRewrite(id) {
+  const file = path.join(REWRITES_DIR, `${id}.json`);
+  return fs.existsSync(file) ? { file: `${id}.json`, ...readJson(file) } : null;
+}
+/**
+ * Applies a text rewrite: on 26 October 2026 the publisher asked for reports written as news, without forecasting
+ * talk; editions already published were rewritten in that form. The original text stays in the edition file and in git.
+ */
+export function applyRewrite(ed) {
+  const rw = loadRewrite(ed.id);
+  if (!rw) return ed;
+  for (const s of ed.stories) {
+    const x = rw.stories?.[s.id];
+    if (!x) continue;
+    for (const k of ['headline', 'standfirst', 'body', 'analysis']) if (x[k] !== undefined) s[k] = x[k];
+    if (x.cs) { s.cs = { ...(s.cs || {}) }; for (const k of ['headline', 'standfirst', 'body', 'analysis']) if (x.cs[k] !== undefined) s.cs[k] = x.cs[k]; }
+    s.rewritten = rw.date;
+  }
+  return ed;
 }
 
 /** Afternoon update file for an edition, or null. */

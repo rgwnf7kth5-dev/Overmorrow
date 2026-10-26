@@ -35,7 +35,7 @@ const T = {
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
     deadline: 'Deadline', window: 'Event window', evidenceAt: 'Evidence expected', 
-    basis: 'Basis', basisShow: 'Basis and sources', sources: 'Sources', correction: 'Correction', edNote: 'Editor’s note',
+    basis: 'Basis', basisShow: 'Basis and sources', rewritten: (d) => `Report rewritten in news form on ${d} at the publisher’s request; the forecasts and their figures are unchanged. The original text is in the edition file.`, sources: 'Sources', correction: 'Correction', edNote: 'Editor’s note',
     comingUp: 'Coming Up', comingDek: 'Fixed dates for the next fortnight',
     feed: { title: 'The Overmorrow — morning edition', desc: 'A newspaper written two days ahead: forecasts of tomorrow’s scheduled events, with probabilities, published at 06:00.', item: (date, n) => `${date} (No. ${n})`, notice: (ev) => `Every report below is a forecast of ${ev}, written before the events. The figure is our probability that the line comes true.`, read: 'Read the full edition', results: (date, k, n, b) => `Results of the edition dated ${date}: ${k} of ${n} forecasts went our way (Brier score ${b}).`, more: 'Also in this edition' },
     signup: { h: 'The morning edition by e-mail', p: 'Every morning at about 06:15: the lead and every forecast of the day, with a link to the full edition. Unsubscribe in one click.', ph: 'your@email', btn: 'Subscribe', rss: 'RSS feed' },
@@ -117,7 +117,7 @@ const T = {
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
     deadline: 'Termín', window: 'Okno události', evidenceAt: 'Doklad se čeká', 
-    basis: 'Podklad', basisShow: 'Podklad a zdroje', sources: 'Zdroje', correction: 'Oprava', edNote: 'Poznámka redakce',
+    basis: 'Podklad', basisShow: 'Podklad a zdroje', rewritten: (d) => `Zpráva přepsána do zpravodajské podoby ${d} na žádost vydavatele; predikce a jejich čísla se nezměnily. Původní text je v souboru vydání.`, sources: 'Zdroje', correction: 'Oprava', edNote: 'Poznámka redakce',
     comingUp: 'Co nás čeká', comingDek: 'Pevné termíny na příští dva týdny',
     feed: { title: 'The Overmorrow — ranní vydání', desc: 'Noviny psané dva dny dopředu: predikce zítřejších naplánovaných událostí s pravděpodobnostmi, vychází v 6:00.', item: (date, n) => `${date} (č. ${n})`, notice: (ev) => `Všechny zprávy níže jsou predikce napsané předem (den událostí: ${ev}). Číslo je naše pravděpodobnost, že se daný řádek splní.`, read: 'Celé vydání na webu', results: (date, k, n, b) => `Výsledky vydání z ${date}: vyšlo ${k} z ${n} predikcí (Brierovo skóre ${b}).`, more: 'Dále ve vydání' },
     signup: { h: 'Ranní vydání e-mailem', p: 'Každé ráno kolem 6:15: hlavní zpráva a všechny predikce dne s odkazem na celé vydání. Odhlášení jedním kliknutím.', ph: 'vas@email.cz', btn: 'Odebírat', rss: 'RSS kanál' },
@@ -454,7 +454,7 @@ function storyHtml(story, results, show, L, opts = {}) {
     .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)}${c.event_window ? ` ${L.window}: ${esc(fmtStamp(c.event_window.start, L))} – ${esc(fmtStamp(c.event_window.end, L))}${c.tz ? ` (${esc(c.tz)})` : ''}.` : ''}${c.evidence_at ? ` ${L.evidenceAt}: ${esc(fmtStamp(c.evidence_at, L))}.` : ''} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
   const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${c.kind === 'note' ? L.edNote : L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
   // Basis, sources and the checking rule stay folded until the reader opens them; editor's notes and corrections stay visible.
-  const basis = `<details class="basisbox"><summary>${L.basisShow}</summary>${(story.analysis || []).map((t) => `<p class="analysis">${esc(t)}</p>`).join('')}<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}</details>${fixes}`;
+  const basis = `<details class="basisbox"><summary>${L.basisShow}</summary>${(story.analysis || []).map((t) => `<p class="analysis">${esc(t)}</p>`).join('')}${story.rewritten ? `<p class="basis">${L.rewritten(fmtDay(story.rewritten, L))}</p>` : ''}<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}</details>${fixes}`;
   const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
   const Hx = opts.h || H;
   const ph = opts.photo;
