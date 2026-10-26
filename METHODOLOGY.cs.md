@@ -157,8 +157,8 @@ Po poledni se totéž vydání aktualizuje podle [`pipeline/UPDATE.md`](pipeline
 
 ## 5. Psaní zpráv
 
-- Zprávy se píšou v minulém čase, jako by den už proběhl.
-- Známá fakta (termíny, čísla z dokumentů, už vyslovené postoje) se drží odděleně od predikce. Predikcí je tvrzení; text kolem něj ho vysvětluje.
+- Zprávy se píšou v minulém čase, jako by den už proběhl, a čtou se jako zpravodajství: nejpravděpodobnější výsledek se podává jako to, co se stalo, se skutečnými souvislostmi kolem. Od vydání č. 7 samotná zpráva o předpovídání nemluví: průzkumy, trhy, naše úvahy a rizika patří do rozboru a podkladu, které se zobrazí pod odkazem „Podklad a zdroje“, a čísla nesou proužky pravděpodobnosti.
+- Známá fakta (termíny, čísla z dokumentů, už vyslovené postoje) se drží odděleně od predikce. Predikcí je tvrzení; rozbor ho vysvětluje.
 - Žádné vymyšlené citace. Žádná vymyšlená čísla: každé číslo je buď z uvedeného zdroje, nebo je to samotná predikce.
 - Každá zpráva končí řádkem **Podklad**, který říká, z čeho vychází a co je hlavní riziko predikce.
 - Nepředpovídáme úmrtí, nehody, katastrofy, trestné činy ani zdravotní stav konkrétních lidí a nepíšeme o soukromých osobách.

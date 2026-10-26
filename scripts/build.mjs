@@ -236,7 +236,7 @@ function localise(ed, lang) {
     const x = s.cs || {};
     const out = { ...s };
     if (top.layout) out.size = role.get(s.id) || (s.size === 'lead' || s.size === 'rail' ? 'half' : s.size);
-    for (const k of ['kicker', 'headline', 'standfirst', 'body', 'basis']) if (x[k]) out[k] = x[k];
+    for (const k of ['kicker', 'headline', 'standfirst', 'body', 'basis', 'analysis']) if (x[k]) out[k] = x[k];
     if (x.table && s.table) out.table = { caption: x.table.caption || s.table.caption, rows: s.table.rows.map((r, i) => ({ ...r, ...(x.table.rows?.[i] || {}) })) };
     out.claims = s.claims.map((cl) => {
       const o = { ...cl, ...(x.claims?.[cl.id] || {}) };
@@ -454,7 +454,7 @@ function storyHtml(story, results, show, L, opts = {}) {
     .map((c) => `<p><b>${esc(c.text)}</b> ${esc(c.criterion)}${c.event_window ? ` ${L.window}: ${esc(fmtStamp(c.event_window.start, L))} – ${esc(fmtStamp(c.event_window.end, L))}${c.tz ? ` (${esc(c.tz)})` : ''}.` : ''}${c.evidence_at ? ` ${L.evidenceAt}: ${esc(fmtStamp(c.evidence_at, L))}.` : ''} ${L.deadline}: ${esc(fmtStamp(c.resolves_by, L))}.</p>`).join('')}</details>`;
   const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${c.kind === 'note' ? L.edNote : L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
   // Basis, sources and the checking rule stay folded until the reader opens them; editor's notes and corrections stay visible.
-  const basis = `<details class="basisbox"><summary>${L.basisShow}</summary><p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}</details>${fixes}`;
+  const basis = `<details class="basisbox"><summary>${L.basisShow}</summary>${(story.analysis || []).map((t) => `<p class="analysis">${esc(t)}</p>`).join('')}<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}</details>${fixes}`;
   const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
   const Hx = opts.h || H;
   const ph = opts.photo;

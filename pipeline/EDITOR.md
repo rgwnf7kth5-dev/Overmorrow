@@ -143,13 +143,15 @@ One agent reads the complete draft: the single most likely reason each forecast 
 
 Write `data/editions/<D+2>.json` in the format of the latest edition. Rules:
 
-- Past tense, as if D+1 has happened. British spelling. Plain newspaper prose. Headline states the forecast outcome; standfirst for the lead.
+- **The body is a news report, not an article about forecasts** (from edition No. 7; the validator rejects forecast language in `body` and `standfirst`). Write it the way Reuters or ČTK would write it on the evening of D+1, after the event, describing the most likely outcome as what happened: who decided what, the result, the reactions, what follows, and the background a reader needs. Past tense, British spelling, plain newspaper prose. Headline states the outcome; standfirst for the lead.
+- **No forecasting talk in the report.** Never: "our forecast", "we gave / put / expected", "forecast", "probability", "chance", "the polls suggested", "the main risk", "was expected to", "would have", conditional scenarios. Polls, markets, base rates, the reasoning and the risks belong in `analysis` (a list of short paragraphs, English and `cs.analysis` in Czech) and the `basis` line; both are shown only when the reader opens "Basis and sources". The likelihood bars already show the numbers.
+- Invented detail stays out: no invented quotations, figures, vote counts or reactions. Where the outcome itself is the forecast (the winner, a vote passing), state it plainly; surround it with real, sourced facts (schedule, the actors, their stated positions, what the decision means). A plausible reaction may be described only in general terms that follow from stated positions ("the opposition criticised the decision"), never as a quotation.
 - **Read the sources yourself**; write from the source pages and the dossier, never from an agent's summary alone. Every factual sentence must be traceable to a page in `sources`.
 - **Sources:** at least two different sites per story, at least one primary source or major outlet; name the outlet that actually published the text; no content farms or aggregators; Wikipedia is background only.
 - **Times and dates** in Central European time, checked against daylight-saving changes.
 - **Length** (body): lead 5–8 paragraphs, 400–650 words; `half` 3–5 paragraphs, 150–300 words; `third`, `quarter`, rail 2–4 paragraphs, 100–200 words. No rail story longer than the lead.
-- Each story ends with a `basis` line. No forecasts of deaths, accidents, disasters, crimes or anyone's health; no private individuals. No invented quotations or figures.
-- Where a story moves a question on the forecast board, add `"watch": ["question-id"]` and mention the board figure in the body.
+- Each story ends with a `basis` line (what the forecast rests on and the main risk) and `analysis` (the forecasting discussion: polls, markets, base rate, why this outcome, what could go the other way). No forecasts of deaths, accidents, disasters, crimes or anyone's health; no private individuals. No invented quotations or figures.
+- Where a story moves a question on the forecast board, link it with `watch` and mention the board figure in `analysis`, not in the body.
 - `meta`: `{"candidates": <pool size>, "unreachable": [sources that failed]}`.
 - `diary`, `number` = previous + 1. No `weather`: the box was dropped on 24 October 2026 (a forecast of the next day's weather reads, in a paper dated the day after, as a report of weather already past).
 

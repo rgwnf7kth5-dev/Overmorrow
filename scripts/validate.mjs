@@ -73,6 +73,16 @@ function checkStory(s, sw, ed) {
     }
   }
   for (const t of s.body || []) if (/“[^”]{20,}”/.test(t) && !ed.pilot) warn(sw, 'body contains a long quotation; check it is sourced, not invented');
+  // From config.news_style_from: the report is a news report; forecasting talk belongs in analysis and basis.
+  if (ed.number >= (cfg.news_style_from ?? Infinity)) {
+    const EN = /\b(our|we) (forecast|forecasters|estimate[sd]?|put|gave|give|expect(ed)?|thought)\b|\bforecast(s|ers|ing)?\b|\bprobabilit|\bchances? (of|that)\b|\bodds\b|main risk|\bthe polls? (suggested|pointed|implied)|\bwas expected to\b|\bwould have (been|won|passed)\b/i;
+    const CS = /\b(náš|naše|našich|našim|naši) (predikc|předpov|odhad|prognost)|předpov[ěí]d|\bpredikc|pravděpodobnost|\bšanc|hlavní riziko|průzkumy (naznačovaly|ukazovaly na)|se očekávalo, že/i;
+    const chk = (txt, re, where) => { const m = (txt || '').match(re); if (m) err(sw, `${where}: forecast language "${m[0]}" in the report; write it as news and move the reasoning to analysis`); };
+    for (const t of [s.standfirst, ...(s.body || [])]) chk(t, EN, 'body');
+    for (const t of [cs?.standfirst, ...(cs?.body || [])]) chk(t, CS, 'cs.body');
+    if (!Array.isArray(s.analysis) || !s.analysis.length) err(sw, 'analysis: the forecasting discussion (polls, markets, reasoning, risks) as short paragraphs');
+    if (cs && (!Array.isArray(cs.analysis) || !cs.analysis.length)) err(sw, 'cs.analysis missing');
+  }
 }
 
 // Structured ensemble record (edition No. 4 on): five independent forecasters, combined by the geometric mean of odds.

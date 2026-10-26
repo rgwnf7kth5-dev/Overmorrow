@@ -241,3 +241,6 @@ ul.missed{font-size:15px}
 .signup button{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.04em;padding:8px 16px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
 .rssline{font-family:var(--sans);font-size:13px;margin:18px 0 0;color:var(--ink-3)}
 .signup .rssline{margin-top:4px}
+
+/* Forecast analysis, shown inside the folded basis box */
+.basisbox .analysis{font-family:var(--serif);font-size:15px;line-height:1.5;color:var(--ink-2);margin:6px 0}

@@ -157,8 +157,8 @@ After midday the same edition is updated, following [`pipeline/UPDATE.md`](pipel
 
 ## 5. Writing the reports
 
-- Reports are written in the past tense, as if the day had happened.
-- Known facts (schedules, numbers from documents, positions already stated) are kept apart from the forecast content. The forecast is the claim; the text around it explains it.
+- Reports are written in the past tense, as if the day had happened, and read as news reports: the most likely outcome is told as what happened, with the real background around it. From edition No. 7 the report itself contains no talk about forecasting: polls, markets, our reasoning and the risks go into the analysis and basis shown under "Basis and sources", and the likelihood bars carry the numbers.
+- Known facts (schedules, numbers from documents, positions already stated) are kept apart from the forecast content. The forecast is the claim; the analysis explains it.
 - No invented quotations. No invented figures: every number is either from a cited source or is the forecast itself.
 - Each report ends with a **basis** line naming what it rests on and the main risk to the forecast.
 - We do not forecast deaths, accidents, disasters, crimes, or the health of named people, and we do not write about private individuals.
