@@ -143,6 +143,62 @@
      "market": null,
      "note": "September inflation of 2.5% and core inflation of 3.1% both beat the ČNB's forecasts, and most analysts, including ING, Komerční banka and Erste, expect a 25-basis-point hike on 5 November, when a new forecast is also due. Against that, the September hold was unanimous, board member Frait says a hike is \"not a done deal\" and that waiting carries little risk, and the October fuel price cap will depress the next inflation figure.",
      "note_cs": "Zářijová inflace 2,5 % i jádrová inflace 3,1 % překonaly prognózu ČNB a většina analytiků včetně ING, Komerční banky a Erste očekává 5. listopadu, kdy bude k dispozici i nová prognóza, zvýšení o 25 bazických bodů. Proti hovoří to, že v září rada o ponechání sazeb rozhodla jednomyslně, člen bankovní rady Frait uvedl, že zvýšení „není hotová věc“ a že vyčkávání nese malé riziko, a říjnové zastropování cen pohonných hmot stlačí příští údaj o inflaci."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.74,
+     "combined": 0.744,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "Reference class: CNB meetings where board members publicly lean to a move and the market/bank consensus prices it usually deliver (~75-85%); trimmed because Frait explicitly calls the outcome open and says waiting is low-risk with swaps already ~150bp higher."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "Seidler leans to +25bp (Reuters 27 Oct), Frait calls the case 'relatively strong' but open, KB expects a hike and forwards price ~4 hikes; Frait's argument that swap rates are already up 150bp and waiting is low-risk points to a split board and real hold risk."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.6,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "Case for NO: Deputy Governor Frait says delay is low-risk, market rates (~4.9% swaps) and a strong koruna (24.30) already tighten, domestic pressure is weaker than in summer and mortgage lending is slowing; the board already held in Aug and Sep against similar expectations and only Seidler has publicly committed. Still, Seidler, KB, heavy market pricing, a new forecast likely raising 2027 inflation and an energy shock make a 25bp hike more likely than not."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.88,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "Anchor: Kalshi 25bp hike at 0.97 last (bid 0.93/ask 0.99, ~$4k volume). Shaded down because the market is thin and Frait says the outcome is 'not predetermined' and waiting carries little risk, even though Seidler leans to a hike and KB expects one."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.74,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Seidler leans to +25bp, Frait calls case relatively strong, KB expects a hike, swaps price several hikes; Frait's 'open' leaves room to wait."
+      }
+     ],
+     "market": {
+      "source": "kalshi",
+      "url": "https://kalshi.com/markets/kxcbdczech",
+      "p": 0.96,
+      "read_at": "2026-10-27T18:28:41Z",
+      "kind": "exchange"
+     },
+     "note": "Board member Jan Seidler said on 27 October he leans towards a standard 25-point rise on 5 November, Deputy Governor Jan Frait told Bloomberg the case is 'relatively strong' though not decided, and Komerční banka's weekly now expects a hike. The forecasters disagree on how much weight Frait's 'waiting is low-risk' carries (0.60 to 0.88): the spread is kept as genuine.",
+     "note_cs": "Člen bankovní rady Jan Seidler 27. října uvedl, že se přiklání ke standardnímu zvýšení sazeb o 25 bazických bodů 5. listopadu, viceguvernér Jan Frait agentuře Bloomberg řekl, že argumenty pro zvýšení jsou „relativně silné“, ale rozhodnuto není, a týdenní zpráva Komerční banky nyní zvýšení očekává. Prognostici se liší v tom, jakou váhu má Fraitův argument, že vyčkávání je málo riskantní (0,60 až 0,88); rozptyl ponecháváme jako skutečnou neshodu.",
+     "market_note": "Kalshi's Czech-rate market (0.96 mid) is thin (about $4,000 traded, wide spread) and its question is the November decision only; Frait's public 'not decided' and the board's record of holding when split keep the ensemble lower.",
+     "disagreement": {
+      "cause": "genuine",
+      "note": "Same facts; the forecasters weigh Frait's caution against Seidler's lean and market pricing differently."
+     }
     }
    ],
    "result": null
@@ -214,6 +270,51 @@
      "market": null,
      "note": "The rate needs only one 25-basis-point hike at either the 5 November or the 17 December meeting, most analysts expect one in November, and Erste, Raiffeisen and the September minutes all name 4.0% as the likely peak. It would fall short only if the board holds at both meetings, for instance if energy prices ease and the dovish members Kubelková and Procházka prevail.",
      "note_cs": "K dosažení 4 % stačí jediné zvýšení o 25 bazických bodů na zasedání 5. listopadu nebo 17. prosince, většina analytiků je čeká už v listopadu a Erste, Raiffeisenbank i zápis ze zářijového zasedání označují 4,0 % za pravděpodobný vrchol. Nestalo by se tak jen v případě, že rada ponechá sazby beze změny na obou zasedáních, například pokud zlevní energie a prosadí se holubičí členové rady Kubelková a Procházka."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.85,
+     "combined": 0.846,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.83,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "P(Nov hike) ~0.72 plus ~half of the remaining mass for a December hike given forecast revision and inflation drift; small residual for both being skipped."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.84,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "About 0.72 for a November hike, plus roughly half of the remaining cases ending in a December hike if November is a hold (higher forecast, inflation rising toward ~3.5% in Q1 2027)."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.72,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "Case for NO: the board could hold at both meetings if Frait's view (markets and koruna do the tightening, 'no reasons for 100bp') carries Michl and the centre, and fuel caps plus a strong CZK soften the Q4 prints. But two shots at one 25bp hike, with Frait saying a hike could come 'soon after' November, keep YES around 0.6 + 0.4*0.3."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "Derived from the Nov-hike anchor: about 0.88, plus roughly 0.12 x 0.6 for a December hike if November holds. Swaps price about 4 hikes in 12 months, so a reversal by December is negligible."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.87,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Only one 25bp hike across Nov or Dec is needed; hawkish board signals and stagflation shock make at least one likely."
+      }
+     ],
+     "market": null,
+     "note": "Seidler's lean towards a November hike and Frait's remark that a hold now could be followed by a hike soon after raise the chance that the repo rate reaches 4.00% by the December meeting: two meetings for one 25-point step.",
+     "note_cs": "Seidlerův sklon ke zvýšení v listopadu a Fraitova poznámka, že po případném listopadovém ponechání by zvýšení mohlo přijít brzy poté, zvyšují šanci, že repo sazba do prosincového zasedání dosáhne 4,00 %: na jeden krok o 25 bodů jsou dvě zasedání."
     }
    ],
    "result": null
@@ -352,6 +453,51 @@
      "market": null,
      "note": "The ČNB expects inflation to stay between 2% and 3% for the rest of 2026 and to exceed 3% only in early 2027, a path Erste, Patria and Creditas share, and October is expected to come in at around 2.2–2.5% because of a tough base and the fuel price cap. A favourable base from November 2025, when prices fell 0.3% month on month, and a rebound in fuel prices after the October cap expires could still lift November to 3%.",
      "note_cs": "ČNB čeká, že inflace zůstane do konce roku 2026 mezi 2 a 3 % a nad 3 % se dostane až počátkem roku 2027, a stejný vývoj předpokládají i Erste, Patria a Creditas; říjnová inflace by kvůli vysoké základně a zastropování cen pohonných hmot měla činit zhruba 2,2 až 2,5 %. Listopadovou inflaci by na 3 % přesto mohla vytlačit příznivá základna z listopadu 2025, kdy ceny meziměsíčně klesly o 0,3 %, a odraz cen pohonných hmot po skončení říjnového stropu."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.39,
+     "combined": 0.39,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.43,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "Needs a further +0.5pp in two months after +0.6pp in September; typical two-month swings in Czech y/y CPI are ~0.3-0.5pp, and Seidler's Q1-2027 peak ~3.5% implies the path crosses 3% around year-end, while fuel price caps dampen November."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.45,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "September came in at 2.5% against 2.2% in the summer forecast, and Seidler expects a ~3.5% peak only in Q1 2027; November is near the threshold, but the fuel price cap extended to end-November damps it."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.42,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "Case for NO: Seidler's ~3.5% peak is for Q1 2027 (January repricing of regulated prices), the government has extended fuel price caps through November, the koruna is strong, and a linear path from 2.5% in September puts November near 2.9-3.0%, i.e. a coin flip with the threshold on the wrong side of rounding. The energy shock (0.6pp jump in September) and >6% wages keep it close."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.36,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "Model anchor (release, centre 2.8%, sd 0.4, threshold 3.0) gives 0.35. Inflation is rising from 2.5% with a soft 2025 base and Seidler sees a peak of about 3.5% in Q1 2027. But fuel price caps run through November and the peak is a Q1 story."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Sept 2.5% with rising energy, but Seidler sees peak ~3.5% only in Q1 2027 and fuel price caps persist; 0.5pp more in two months is a stretch."
+      }
+     ],
+     "market": null,
+     "note": "Seidler expects inflation to peak around 3.5% only in the first quarter of 2027, and September's 2.5% was above the ČNB's summer path; against that, the cabinet on 26 October extended the fuel price caps to the end of November, removing the end-of-cap jump the previous figure allowed for.",
+     "note_cs": "Seidler očekává vrchol inflace kolem 3,5 % až v prvním čtvrtletí 2027 a zářijových 2,5 % bylo nad letní trajektorií ČNB; proti tomu vláda 26. října prodloužila regulaci cen pohonných hmot do konce listopadu, takže odpadá skok po skončení stropů, s nímž počítal předchozí odhad."
     }
    ],
    "result": null
@@ -683,6 +829,51 @@
      "market": null,
      "note": "The ČNB's summer forecast put 2027 inflation at exactly 2.5%, and since then September inflation has beaten its forecast, core inflation has stayed around 3%, the bank has said it expects inflation above 3% in early 2027 and the 2027 budget has turned out more expansionary than assumed, all pointing to an upward revision. An unchanged 2.5% would resolve the question negatively, and a higher assumed interest-rate path, fuel price regulation or a stronger koruna could keep the figure there.",
      "note_cs": "Letní prognóza ČNB počítala pro rok 2027 s inflací přesně 2,5 % a od té doby zářijová inflace předčila odhad banky, jádrová inflace se drží kolem 3 %, ČNB čeká počátkem roku 2027 inflaci nad 3 % a rozpočet na rok 2027 je expanzivnější, než prognóza předpokládala, což vše ukazuje na revizi směrem nahoru. Nezměněných 2,5 % by otázku rozhodlo záporně a na této úrovni by údaj mohla udržet vyšší předpokládaná trajektorie úrokových sazeb, regulace cen pohonných hmot nebo silnější koruna."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.73,
+     "combined": 0.73,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.6,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "CNB one-year-ahead average forecasts usually sit near 2.0-2.5%, but a board member says the 2027 projection will be raised and a ~3.5% Q1 2027 peak would put the annual average near or above 2.5%."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.85,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "The summer 2026 forecast had 2027 inflation at exactly 2.5% (cnb.cz). Seidler says energy prices above assumptions and wages >6% mean the 2027 forecast will likely be raised, with a ~3.5% Q1 2027 peak, so the average should land above 2.5%."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.74,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "The August forecast already had 2027 inflation at exactly 2.5%, so 'above' needs only a 0.1pp upward revision, and Seidler says a raise is likely given oil/gas above assumptions and wages >6%. Case for NO: a koruna much stronger than assumed, fuel caps and the one-decimal table could leave the published figure at 2.5%, and Frait describes domestic pressure as weaker than in summer."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.7,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "Model anchor (centre about 2.8, sd 0.4, threshold 2.5) gives 0.73. Seidler says the 2027 forecast will likely be raised and headline inflation could peak at about 3.5% in Q1 2027. Shaded slightly because the August baseline is unknown and the ČNB forecast assumes its own tightening."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.72,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Seidler says 2027 forecast will likely be raised given energy above assumptions, wages >6%, and a Q1 peak near 3.5%; prior level unknown."
+      }
+     ],
+     "market": null,
+     "note": "The ČNB's summer forecast already put 2027 inflation at exactly 2.5%, so a revision of one tenth upwards resolves yes, and Seidler said on 27 October that the bank will likely raise the 2027 forecast because energy prices are above its assumptions and wages are growing by more than 6%.",
+     "note_cs": "Letní prognóza ČNB už počítala s inflací v roce 2027 přesně 2,5 %, takže k odpovědi ano stačí zvýšení o desetinu, a Seidler 27. října řekl, že banka prognózu na rok 2027 nejspíš zvýší, protože ceny energií jsou nad jejími předpoklady a mzdy rostou o více než 6 %."
     }
    ],
    "result": null
@@ -1977,7 +2168,12 @@
      "note_cs": "Projekce Ipsos/CeSID ve volební noci dala Vučićově kandidátce 39,3 % a asi 104 křesel, Studentské kandidátce 52 % a asi 138, a Vučić porážku uznal. Na 126 křesel by SNS dosáhla jen při výrazně odlišném oficiálním sčítání."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "no",
+    "evidence": "https://www.tportal.hr/vijesti/clanak/studenti-ce-sami-formirati-vlast-u-srbiji-ali-tko-ce-im-biti-premijer-foto-20261026",
+    "note": "RIK's count with 8,077 of 8,392 polling stations processed gives the Vučić list 39.29% and the Student List 52.54%, with about 103 projected seats for SNS against the 126 needed. The remaining ~4% of stations and any repeat voting cannot close a 23-seat gap. Reaching 126 seats would take about 47%. The formal RIK final report is still pending after a three-day appeals period. Resolved as certain under the criterion (latest published RIK results); the official final report is a formality.",
+    "resolved_at": "2026-10-27T20:45:00+01:00"
+   }
   },
   {
    "id": "rs-vucic-prime-minister",
@@ -2288,6 +2484,58 @@
      "market": null,
      "note": "Ministers call adoption by vote \"très difficile\" and have not ruled out Article 49.3, the Assembly's 40-day first-reading limit (around 10 November) and the 70-day point after which ordinances become possible (around 10 December) both fall within the window, and Lecornu used 49.3 for the 2026 budget. But in the last cycle he waited, bridged the year-end with a special law and invoked 49.3 only in January 2026, and a repeat of that sequence or the use of ordinances would resolve the question negatively.",
      "note_cs": "Ministři označují schválení rozpočtu hlasováním za „velmi obtížné“ a použití článku 49.3 nevyloučili, do sledovaného období spadá 40denní lhůta pro první čtení v Národním shromáždění (kolem 10. listopadu) i 70denní lhůta, po níž lze rozpočet zavést nařízeními (kolem 10. prosince), a Lecornu článek 49.3 použil u rozpočtu na rok 2026. V minulém cyklu však vyčkával, konec roku překlenul zvláštním zákonem a k článku 49.3 sáhl až v lednu 2026; opakování tohoto postupu nebo použití nařízení by otázku rozhodlo záporně."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.43,
+     "combined": 0.433,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.35,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "49.3 on the PLF by 31 Dec happened under Borne (2022, 2023) but not in the last two minority-government cycles (Barnier used it only on PLFSS; Lecornu waited until Jan 2026); Lecornu's no-49.3 pledge and pre-presidential censure risk weigh against, ordinances after the 70-day deadline are an alternative."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.45,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "Lecornu is publicly pledged against 49.3/ordinances and in the 2026 cycle used 49.3 only in January after a special law, but the 17 Dec constitutional deadline, the rapporteur's calls and Coquerel's expectation of a 49.3 make a December 49.3 in nouvelle lecture plausible."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.4,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "Case for NO: Lecornu has pledged neither 49.3 nor ordinances, PS and LFI promise censure if he uses 49.3 (which would take the budget down with the government), ordinances under Art. 47 are a safer bypass that survives censure, and the 2024 and 2025 precedents both ended the year with a loi spéciale and no 49.3 on the PLF before 31 Dec (the 2026 budget's 49.3 came only in January). Against that, the Assemblée has no majority for any text, the LR rapporteur and Coquerel expect a 49.3, and the new-reading stage around 15-17 Dec is the natural moment to use it."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.52,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "Anchor: Kalshi KXFRANCE493 (same question and deadline) at 0.62 mid (bid 0.59/ask 0.65, thin). Shaded down because Lecornu has pledged no 49.3, ordinances are a censure-proof alternative, and last cycle's 49.3 came only in January after a special law, which would miss the 31 Dec deadline."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.45,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Lecornu is boxed in by his no-49.3 pledge but used it in January 2026 and the Dec 17 deadline looms; ordinances or a PLF failing are alternatives."
+      }
+     ],
+     "market": {
+      "source": "kalshi",
+      "url": "https://kalshi.com/markets/kxfrance493",
+      "p": 0.62,
+      "read_at": "2026-10-27T18:28:48Z",
+      "kind": "exchange"
+     },
+     "note": "Europe 1 reported on 27 October that the government is choosing between Article 49.3 and passing the budget by ordinance after the Assembly rejected the social-security budget's revenue part on 23 October; an ordinance would resolve no, and Lecornu's pledge not to use 49.3 still stands, while the PLF timetable runs to a final Assembly vote on 17 November and the 17 December deadline.",
+     "note_cs": "Europe 1 27. října uvedla, že vláda poté, co Národní shromáždění 23. října odmítlo příjmovou část rozpočtu sociálního zabezpečení, volí mezi článkem 49.3 a přijetím rozpočtu nařízením; nařízení by znamenalo odpověď ne a Lecornuův slib, že 49.3 nepoužije, stále platí. Harmonogram státního rozpočtu počítá se závěrečným hlasováním Národního shromáždění 17. listopadu a lhůtou 17. prosince.",
+     "market_note": "Kalshi's matching 49.3 market (0.62 mid) is thin; the ensemble weighs Lecornu's pledge, the ordinance route (which resolves no) and last cycle's 49.3 coming only in January more heavily."
     }
    ],
    "result": null
@@ -2563,6 +2811,51 @@
      "market": null,
      "note": "The coalition has a majority and pushed the bill onto the agenda on 23 October, but first reading has only just begun under announced obstruction, the committee stage takes weeks and the 2027 budget occupies the floor until its third reading on 2 December, so a third-reading vote by 31 January needs fixed-time voting or similar procedural force.",
      "note_cs": "Koalice má většinu a 23. října prosadila návrh na program, první čtení však teprve začalo za ohlášené obstrukce, výborové projednání trvá týdny a do třetího čtení rozpočtu 2. prosince zabírá jednací čas rozpočet 2027, takže hlasování ve třetím čtení do 31. ledna vyžaduje pevné hlasování nebo podobný procedurální nástroj."
+    },
+    {
+     "at": "2026-10-27T20:45:00+01:00",
+     "p": 0.26,
+     "combined": 0.264,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.25,
+       "at": "2026-10-27T18:27:31Z",
+       "reason": "Committee period runs to ~24 Dec so 2nd and 3rd readings must both fit in January against announced obstruction; psp.cz base rates show government-bill 2nd/3rd readings completed at their meeting only ~47%/19% in this term, though the coalition majority makes eventual passage near-certain."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.28,
+       "at": "2026-10-27T18:27:44Z",
+       "reason": "First reading passed 24 Oct, but the 60-day committee period pushes 2nd reading into January, Babiš says debate may take weeks, and the opposition plans obstruction; only about 4 January weeks remain before the deadline."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.2,
+       "at": "2026-10-27T18:29:18Z",
+       "reason": "Case for NO is strong: the 60-day committee period was not shortened, so second reading cannot start before late December and lands in the January session, where the opposition (~90 deputies with privileged unlimited speakers) promises obstruction; Babiš himself says debate 'can take weeks', the coalition plans its own 2nd-reading amendments (voluntary fees), and the third reading needs a further waiting period and a Wed/Fri slot. Only a marathon extraordinary session in mid-January gets it done by 31 Jan."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "at": "2026-10-27T18:30:00Z",
+       "reason": "No market. The 60-day committee period means the 2nd reading comes only after 24 Dec, so January leaves a narrow window. Babiš says the debate can take weeks, and the opposition plans obstruction, so a 3rd-reading vote by 31 Jan is less likely than not despite the coalition majority."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "at": "2026-10-27T18:27:17Z",
+       "reason": "Second reading only after 24 Dec and Babiš concedes weeks of debate; opposition obstruction and budget competing for floor time make a third reading by 31 Jan tight though the coalition has a majority."
+      }
+     ],
+     "market": null,
+     "note": "The 60-day committee period after the 24 October first reading was not shortened, so the second reading can start only after 24 December and is expected in January, with the third reading 48 to 72 hours later; the opposition promises obstruction and Babiš plans amendments on 'voluntary fees', leaving little room before the 31 January deadline.",
+     "note_cs": "Šedesátidenní lhůta k projednání ve výborech po prvním čtení 24. října nebyla zkrácena, takže druhé čtení může začít až po 24. prosinci a čeká se v lednu, třetí čtení o 48 až 72 hodin později; opozice slibuje obstrukce a Babiš chystá pozměňovací návrh o „dobrovolných poplatcích“, takže do termínu 31. ledna zbývá málo prostoru."
     }
    ]
   },
