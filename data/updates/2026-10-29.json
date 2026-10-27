@@ -1,6 +1,6 @@
 {
   "edition": "2026-10-29",
-  "frozen_at": "2026-10-27T12:42:00+01:00",
+  "frozen_at": "2026-10-27T12:35:00+01:00",
   "revisions": [
     {
       "claim": "cz-babis-vladislav-28",
@@ -15,19 +15,19 @@
   "checks": [
     {
       "claim": "cz-babis-vladislav-28",
-      "at": "2026-10-27T12:39:00+01:00",
+      "at": "2026-10-27T12:34:00+01:00",
       "agents": [
-        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.89, "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "p": 0.89, "inputs": ["dossier", "reference-data", "overnight-facts", "signals"], "p_held": 0.97, "p_if_held": 0.92 },
-        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.85, "inputs_blind": ["own-research"], "p": 0.93, "inputs": ["own-research", "dossier", "overnight-facts", "signals"] },
-        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-10-27T12:38:00+01:00", "p_blind": 0.85, "inputs_blind": ["dossier", "overnight-facts", "reference-data"], "p": 0.85, "inputs": ["dossier", "overnight-facts", "reference-data", "signals"], "p_held": 0.95, "p_if_held": 0.90 },
-        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-10-27T12:38:00+01:00", "p": 0.92, "inputs": ["signals", "dossier", "overnight-facts", "reference-data"], "anchor": "no market found; reliability of an official programme published the day before for a head of government's attendance at a set-piece state event (about 0.95) times ceremony held (0.97)" },
-        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.88, "inputs_blind": ["dossier", "overnight-facts"], "p": 0.88, "inputs": ["dossier", "overnight-facts", "signals"] }
+        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-10-27T12:33:00+01:00", "p_blind": 0.89, "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "p": 0.89, "inputs": ["dossier", "reference-data", "overnight-facts", "signals"], "p_held": 0.97, "p_if_held": 0.92 },
+        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-10-27T12:33:00+01:00", "p_blind": 0.85, "inputs_blind": ["own-research"], "p": 0.93, "inputs": ["own-research", "dossier", "overnight-facts", "signals"] },
+        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-10-27T12:34:00+01:00", "p_blind": 0.85, "inputs_blind": ["dossier", "overnight-facts", "reference-data"], "p": 0.85, "inputs": ["dossier", "overnight-facts", "reference-data", "signals"], "p_held": 0.95, "p_if_held": 0.90 },
+        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-10-27T12:34:00+01:00", "p": 0.92, "inputs": ["signals", "dossier", "overnight-facts", "reference-data"], "anchor": "no market found; reliability of an official programme published the day before for a head of government's attendance at a set-piece state event (about 0.95) times ceremony held (0.97)" },
+        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-10-27T12:33:00+01:00", "p_blind": 0.88, "inputs_blind": ["dossier", "overnight-facts"], "p": 0.88, "inputs": ["dossier", "overnight-facts", "signals"] }
       ],
       "combination": { "method": "geo-odds" },
       "combined": 0.898,
       "combined_blind": 0.869,
       "decomposition": { "p_held": 0.96, "p_if_held": 0.935, "p_if_not_held": 0 },
-      "red_team": { "model": "claude-opus-5-5", "at": "2026-10-27T12:40:00+01:00", "verdict": "stands", "risk": "A last-minute political no-show over the dispute with President Pavel after the programme was published; no announced absence or cancellation found (the boycott and 'hradní malost' reports it cited date from the Zeman era, not 2026)." },
+      "red_team": { "model": "claude-opus-5-5", "at": "2026-10-27T12:34:00+01:00", "verdict": "stands", "risk": "A last-minute political no-show over the dispute with President Pavel after the programme was published; no announced absence or cancellation found (the boycott and 'hradní malost' reports it cited date from the Zeman era, not 2026)." },
       "market": null,
       "new_facts": "work/2026-10-29/new-facts-cz-babis-vladislav-28.md"
     }
