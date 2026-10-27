@@ -1,0 +1,56 @@
+{
+ "edition": "2026-10-27",
+ "checked_at": "2026-10-27T05:09:00+01:00",
+ "procedure": "coverage-1",
+ "note": "Lists used: ČT24 'SOUHRN: Zásadní události pondělí 26. října' (seven items) and ČTK (front page plus the /cr/ and /svet/ section lists for 26 Oct). Wikipedia Portal:Current events/2026 October 26, Reuters World, AP and the ČT24 and ČTK front pages could not be fetched because the fetch permission prompt timed out, so lists (a) and (b) are missing. As in edition 2026-10-25, events were counted when both (c) lists had them. Democracy Now and Havana Times headlines were read only as a cross-check and are not counted as lists.",
+ "events": [
+  {
+   "title": "Serbia: celebrations in Belgrade and other cities after Vučić's SNS loses the snap parliamentary election; the Student List is projected to win a majority",
+   "scope": "europe",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/-v-srbsku-po-volebni-porazce-vucice-vypukly-oslavy/2891890",
+   "status": "covered",
+   "story": "rs-election"
+  },
+  {
+   "title": "Brazil: Lula elected president for a fourth term, 51.76% to 48.24%; Flávio Bolsonaro refuses to accept the result and seeks annulment",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/lula-byl-podle-predbeznych-vysledku-zvolen-brazilskym-prezidentem/2892823",
+   "status": "covered",
+   "story": "br-aftermath"
+  },
+  {
+   "title": "Pardubice: five-party coalition (ODS, STAN, Progresivní Pardubice, Naše Pardubice, Noví lidovci) signs agreement, 22 of 39 seats, ODS's Ondřej Tichý to be mayor; ANO goes into opposition",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/pardubice-povede-nova-petikoalice-primatorem-ma-byt-ondrej-tichy-z-ods-/2893137",
+   "status": "covered",
+   "story": "cz-pardubice"
+  },
+  {
+   "title": "Cabinet extends fuel price regulation and the lower diesel excise duty to 30 November; backs a bill limiting appellate courts' powers, the D35 Opatovec–Mohelnice concession and enshrining the koruna in the constitution",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/-vlada-prodlouzila-opatreni-proti-vysokym-cenam-pohonnych-hmot/2893057",
+   "status": "dropped",
+   "note": "Planning dropped 'Czech cabinet meeting on 26 Oct': no open item identified; full ODOK agenda could not be read (site blocked). The fuel-regulation extension was nevertheless previewed by ČTK on 25/26 Oct (https://www.ceskenoviny.cz/zpravy/vlada-projedna-pokracovani-regulace-cen-pohonnych-hmot-ci-zmenu-trestniho-radu/2892778), so it was an open, checkable item."
+  },
+  {
+   "title": "Babiš: coalition will not withdraw the bill abolishing ČT and ČRo licence fees, will propose voluntary payment in second reading; says the issue 'is to be misused' around 17 November; rejects ČRo director's call for a public debate",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/babis-ma-informace-ze-tema-poplatku-bude-zneuzito-17listopadu-navrh-nestahne/2893084",
+   "status": "missed",
+   "note": "Statements, not a scheduled event; not announced in advance. The open question (whether the coalition withdraws or amends the bill after the 25 Oct Old Town Square rally) was foreseeable from the 2026-10-25 coverage miss and ČTK's 25 Oct reporting, but nothing on it was in the planning file."
+  },
+  {
+   "title": "UN Independent International Commission of Inquiry finds Israeli authorities and forces committed crimes against humanity in the occupied West Bank; Israel rejects the report",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/komise-osn-izrael-spachal-na-zapadnim-brehu-zlociny-proti-lidskosti/2893309",
+   "status": "missed",
+   "note": "Report release not verified as announced in advance. The Commission's reports to the UN General Assembly (Third Committee, late October) are usually listed on the OHCHR CoI page and the UN Journal, which is where we should have seen it; the planning sweep did not cover OHCHR/UNGA Third Committee schedules."
+  }
+ ]
+}
