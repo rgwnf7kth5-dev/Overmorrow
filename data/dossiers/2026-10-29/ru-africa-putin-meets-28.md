@@ -54,3 +54,9 @@
 
 ## Added after round one (union of facts, 26 Oct ~21:00 CET)
 - The evidence forecaster's own research found a Sputnik report listing three Putin bilaterals with African leaders on 28 Oct (URL not retained by the agent; same direction as The Diplomatic Insight). It conflicts with TASS/Ushakov, who place the named bilaterals and the AU-chair meeting on 29 Oct. The morning must check the Kremlin's published schedule.
+
+## Overnight facts (morning check, 27 Oct 05:10–05:25 CET)
+- TASS (26 Oct, read 27 Oct ~05:20 CET), https://tass.com/politics/2208229 : Kremlin aide Yuri Ushakov said that on 28 Oct Putin will meet Egypt's President Abdel Fattah el-Sisi before the evening reception in the Palace of Facets, Ethiopia's Prime Minister Abiy Ahmed after the reception, and the Republic of Congo's President Denis Sassou Nguesso as the last meeting of the day. The 29 Oct meetings (Madagascar, Zimbabwe, Namibia, Sudan) are a separate block. This briefing was published before the evening freeze but was missed by the dossier (which had only the TASS reports covering the 29 Oct block).
+- Sputnik (26 Oct 15:24 GMT, updated 17:23 GMT), https://sputnikglobe.com/20261026/putin-to-hold-24-bilateral-meetings-during-russia-africa-summit---kremlin-aide-1124943405.html : Ushakov said Putin will hold 24 bilateral meetings during the summit; per-day counts as reported add up to 25.
+- kremlin.ru itself could not be opened this morning.
+- Remaining ways to NO: a meeting slipping past 23:59 Moscow time or to 29 Oct; kremlin.ru recording only reception contacts.

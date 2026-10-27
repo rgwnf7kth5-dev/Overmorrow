@@ -141,7 +141,7 @@
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
     "yes": 1,
-    "no": 9
+    "no": 11
    }
   },
   {
@@ -151,8 +151,8 @@
    "n": "own record only",
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
-    "yes": 1,
-    "no": 2
+    "yes": 2,
+    "no": 3
    }
   },
   {
@@ -217,8 +217,8 @@
    "n": 6,
    "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
    "own_record": {
-    "yes": 2,
-    "no": 0
+    "yes": 3,
+    "no": 3
    }
   },
   {
@@ -228,7 +228,7 @@
    "n": "small; depends on lead vs threshold",
    "source": "models.mjs poll-lead model; own record 2026",
    "own_record": {
-    "yes": 2,
+    "yes": 4,
     "no": 0
    }
   },
@@ -250,7 +250,7 @@
    "n": "large; cancellations are rare",
    "source": "News record (estimate pending a full count)",
    "own_record": {
-    "yes": 1,
+    "yes": 2,
     "no": 0
    }
   },
@@ -285,6 +285,50 @@
    "own_record": {
     "yes": 1,
     "no": 0
+   }
+  },
+  {
+   "id": "turnout-above-previous-election",
+   "description": "Turnout in an election exceeds the turnout of the previous comparable election",
+   "base_rate": 0.5,
+   "n": "own record",
+   "source": "Own record (from 27 Oct 2026)",
+   "own_record": {
+    "yes": 1,
+    "no": 0
+   }
+  },
+  {
+   "id": "vote-share-threshold",
+   "description": "A candidate or list reaches a stated vote-share threshold in official results",
+   "base_rate": 0.5,
+   "n": "own record",
+   "source": "Own record (from 27 Oct 2026)",
+   "own_record": {
+    "yes": 2,
+    "no": 1
+   }
+  },
+  {
+   "id": "coalition-deal-announced-short-window",
+   "description": "Local or national coalition partners announce or sign an agreement within a window of one or two days",
+   "base_rate": 0.3,
+   "n": "own record",
+   "source": "Own record (from 27 Oct 2026)",
+   "own_record": {
+    "yes": 1,
+    "no": 4
+   }
+  },
+  {
+   "id": "runoff-loser-concedes-within-day",
+   "description": "The loser of a presidential runoff publicly concedes or congratulates the winner within about a day of the result",
+   "base_rate": 0.7,
+   "n": "small; Latin American and European runoffs",
+   "source": "News record (estimate); own record from 27 Oct 2026",
+   "own_record": {
+    "yes": 0,
+    "no": 1
    }
   }
  ]

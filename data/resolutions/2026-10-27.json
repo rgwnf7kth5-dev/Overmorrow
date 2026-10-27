@@ -1,0 +1,89 @@
+{
+ "edition": "2026-10-27",
+ "results": [
+  {
+   "claim": "br-loser-concedes",
+   "outcome": "no",
+   "evidence": "https://www.metropoles.com/brasil/lula-nao-reconheceria-minha-vitoria-se-fosse-o-contrario-diz-flavio",
+   "note": "Losing candidate Flávio Bolsonaro said on 25 Oct (about 22:40 BRT; CNN Brasil, Gazeta do Povo) that it is 'impossível reconhecer o resultado' and that he would seek annulment. In a 26 Oct video (Metrópoles 17:21 BRT) he again refused to recognise the result, and Folha do Acre quotes him as saying 'não fui eu que perdi, foi o sistema que ganhou' and seeking cassação of Lula's ticket. Only the PL (Valdemar Costa Neto, who does not count) recognised the TSE result; no recognition or congratulation by Flávio himself was found in the window. His own X/Instagram accounts were not checked directly.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "de-ifo-oct",
+   "outcome": "measured",
+   "value": 90.2,
+   "evidence": "https://www.ifo.de/en/press-release/2026-10-26/ifo-business-climate-rises-october-2026",
+   "note": "ifo press release of 26 Oct 2026: Business Climate Index 90.2 points in October (September 89.9).",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "de-ifo-oct-rises",
+   "outcome": "yes",
+   "evidence": "https://www.ifo.de/en/press-release/2026-10-26/ifo-business-climate-rises-october-2026",
+   "note": "ifo release of 26 Oct prints October 90.2 vs September 89.9, strictly higher.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "bg-gyurov-28",
+   "outcome": "yes",
+   "evidence": "https://news.bg/politics/rezultati-ot-izborite-za-prezident-2026.html",
+   "note": "results.cik.bg was unreachable; News.bg and BNT (CIK preliminary, 99.94% of protocols) show Gyurov–Kandev at 31.94–31.95%, at least 28.00%; CIK final results are due 27 Oct.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "ca-toronto-chow-reelected",
+   "outcome": "yes",
+   "evidence": "https://www.cp24.com/local/toronto/2026/10/27/olivia-chow-re-elected-as-torontos-mayor-live-updates-here/",
+   "note": "toronto.ca/election-results was unreachable. CP24 reports Chow re-elected with about 54% and a 113,267-vote lead over Bradford at 87% of polls, a lead the remaining polls cannot overturn; the Globe and Mail and Global News headlines also report her re-elected. The final all-polls figure was not seen.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true,
+   "ambiguous": true
+  },
+  {
+   "claim": "cz-algeria-gas-agreement",
+   "outcome": "no",
+   "evidence": "https://algerie-eco.com/2026/10/26/algerie-republique-tcheque-les-echanges-commerciaux-ont-atteint-323-millions-de-dollars-en-2025/",
+   "note": "The four memoranda signed on 26 Oct covered a business council, civil protection, geology and cinematography, none on gas; ČTK (18:03) reports only a 'preliminary promise' from Tebboune to roughly double gas imports, with no gas document signed (vlada.gov.cz/aktualne unreachable).",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-prague-coalition-agreement",
+   "outcome": "no",
+   "evidence": "https://prahatv.eu/zprava/stan-spolu-a-praha-sobe-jednaly-spolecne-dohoda-o-koalici-zatim-neni/",
+   "note": "After the 26 Oct three-party meeting, Praha TV (17:09) reports they discussed areas and the split of portfolios but reached no coalition agreement and will keep talking; ČTK's preview said the final portfolio split was still to be worked out with at least four points open.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-confidence-oct",
+   "outcome": "measured",
+   "value": 97.9,
+   "evidence": "https://www.ceskenoviny.cz/zpravy/duvera-v-ekonomiku-v-cr-v-rijnu-klesla-snizila-se-u-podnikatelu-i-spotrebitelu/2893128",
+   "note": "ČTK (26 Oct 10:42) and kurzy.cz, quoting ČSÚ's 26 Oct release, give the October composite confidence indicator as 97.9, down 1.6 points m/m; the ČSÚ October page itself could not be fetched.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-confidence-oct-rises",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/duvera-v-ekonomiku-v-cr-v-rijnu-klesla-snizila-se-u-podnikatelu-i-spotrebitelu/2893128",
+   "note": "October is 97.9, down 1.6 points from September's 99.5 (the value on ČSÚ's September release page), so it did not rise; the ČSÚ October page itself could not be fetched.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-pardubice-coalition-signed-26",
+   "outcome": "yes",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/pardubice-povede-nova-petikoalice-primatorem-ma-byt-ondrej-tichy-z-ods-/2893137",
+   "note": "ČTK (26 Oct 17:58) reports ODS, STAN, Naše Pardubice, Progresivní Pardubice and Noví lidovci signed the coalition agreement in the early evening of 26 Oct, and Pardubický deník confirms a Monday-evening signing at Café Gočár.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  }
+ ],
+ "corrections": []
+}

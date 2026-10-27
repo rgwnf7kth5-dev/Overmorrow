@@ -48,3 +48,11 @@
 - https://metropoles.com/brasil/flavio-que-agora-pede-anulacao-da-eleicao-prometeu-aceitar-o-resultado
 - https://midiamax.com.br/brasil/2026/zanin-pede-parecer-pgr-agu-acao-psd-2o-turno-rio/
 - data/dossiers/2026-10-28/br-flavio-tse-filing.md
+
+## Overnight facts (morning check, 27 Oct 05:00–05:35 CET)
+- ND+ (26 Oct 19:09 BRT = 23:09 CET), https://ndmais.com.br/politica/flavio-bolsonaro-desiste-de-pedir-anulacao-da-eleicao-e-muda-estrategia-para-tentar-cassar-chapa-de-lula/ : citing campaign members speaking to CNN Brasil, Flávio Bolsonaro dropped the plan to ask for the election to be annulled and will instead seek the cassação (removal) of the Lula–Alckmin ticket for abuse of power.
+- NC News (26 Oct 19:00 BRT), https://ncnews.com.br/2026/10/26/flavio-desiste-anulacao-eleicao/ : about 20 cassação actions are "already filed or in progress"; court not specified. One checkable example was filed at the TSE on 28 Sep (before the runoff, outside the window).
+- Fundação Perseu Abramo (PT-linked; 26 Oct 19:55 BRT), https://fpabramo.org.br/tse-confirma-vitoria-de-lula-flavio-bolsonaro-desiste-de-pedir-anulacao-da-eleicao/ : quotes his Monday video: he will ask for the cassação of Lula's ticket.
+- Diário do Centro do Mundo (26 Oct 20:23 BRT), https://www.diariodocentrodomundo.com.br/pl-rompe-com-discurso-de-flavio-sobre-fraude-e-reconhece-vitoria-de-lula : the PL, in a note signed by Valdemar Costa Neto, says it recognises the presidential result proclaimed by the TSE.
+- Gazeta do Povo (updated 26 Oct 13:45 BRT), https://www.gazetadopovo.com.br/eleicoes/2026/flavio-bolsonaro-pronunciamento-anulacao-eleicao/ : no annulment filing so far; the only TSE request was the 25 Oct one to extend voting in SP/PR/SC.
+- Claim wording tightened this morning: a NEW action filed in the window that seeks cassação of the elected ticket counts as a request to invalidate the runoff result; actions filed before 25 Oct do not.

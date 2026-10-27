@@ -45,6 +45,112 @@
    "evidence": "https://www.ctvnews.ca/vancouver/article/bc-conservatives-win-majority-eby-resigns-as-ndp-leader-recap/",
    "note": "bcndp.ca was not checked; CTV ('Eby resigns as B.C. NDP leader in concession speech', election night 24 Oct PT, i.e. after 04:00 CET 25 Oct) and the Canadian Press ('Conservatives win majority in election, Eby resigns as leader') both report he announced he is stepping down as leader.",
    "resolved_at": "2026-10-26T05:12:00+01:00"
+  },
+  {
+   "claim": "br-flavio-wins",
+   "outcome": "no",
+   "evidence": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
+   "note": "TSE news release (00:18 BRT 26 Oct) gives Lula 64,256,232 (51.79%) vs Flávio Bolsonaro 59,826,041 (48.21%); same figures in Gazeta do Povo and Rio Times; resultados.tse.jus.br itself was unreachable.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "br-margin-under-4",
+   "outcome": "yes",
+   "evidence": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
+   "note": "TSE: Lula 51.79% vs Flávio 48.21% of valid votes at 100%, a gap of 3.58 points, below 4.00.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "br-lula-share",
+   "outcome": "measured",
+   "value": 51.79,
+   "evidence": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
+   "note": "TSE release gives Lula 51.79% of valid votes (64,256,232) at full totalisation; Gazeta do Povo has the same.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "br-turnout-2022",
+   "outcome": "yes",
+   "evidence": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026",
+   "note": "TSE release: abstention about 19.2% (128.2 million of over 158 million voters attended), i.e. turnout about 80.8%; Rio Times gives the TSE figure as 80.78% turnout / 19.22% abstention, above 79.41%.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "bg-iotova-45",
+   "outcome": "no",
+   "evidence": "https://bntnews.bg/news/cik-pri-obraboteni-9995-sik-protokoli-yotova-i-gyurov-otivat-na-balotazh-na-1-noemvri-obnovyava-se-1418875news.html",
+   "note": "results.cik.bg was unreachable; BNT and News.bg (CIK at 99.94% of protocols, 09:00 EET 26 Oct) both show Iotova–Valchev at 34.76%, far below 45.00%; runoff with Gyurov on 1 Nov.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "bg-kostadinov-10",
+   "outcome": "yes",
+   "evidence": "https://bntnews.bg/news/cik-pri-obraboteni-9995-sik-protokoli-yotova-i-gyurov-otivat-na-balotazh-na-1-noemvri-obnovyava-se-1418875news.html",
+   "note": "results.cik.bg was unreachable; BNT and News.bg (CIK at 99.94% of protocols) both show Kostadinov–Volgin at 12.54%, at least 10.00%.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "br-rn-allyson",
+   "outcome": "no",
+   "evidence": "https://jovempan.com.br/politica/segundo-turno-seis-governadores-eleitos-2026/",
+   "note": "resultados.tse.jus.br was unreachable; Jovem Pan (100% counted) has Cadu de Lula 50.77% (1,073,024) vs Allyson 49.23%, and Gazeta do Povo (98.76%) also reports Cadu elected, so Allyson lost.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "br-to-vicentinho-4",
+   "outcome": "yes",
+   "evidence": "https://jovempan.com.br/politica/segundo-turno-seis-governadores-eleitos-2026/",
+   "note": "resultados.tse.jus.br was unreachable; Jovem Pan (100% counted) has Vicentinho Júnior 64.52% vs Dorinha 35.48% (a 29.04-point margin), and CNN Brasil (citing TSE) and Gazeta do Cerrado (562k votes, 253k lead) confirm he won.",
+   "resolved_at": "2026-10-27T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-babis-algeria-arrival-noon",
+   "outcome": "yes",
+   "evidence": "https://vlada.gov.cz/cz/media-centrum/ocekavane-udalosti/26--27--rijna-2026-premier-babis-navstivi-alzirsko-229500/",
+   "note": "Government programme had Babiš opening the Czech-Algerian business forum in Algiers at 11:00 on 26 Oct, and ČTK (story 2893063, 12:27 version datelined Alžír) and APS (12:58) report that the forum, the memoranda signed there and the Ghrieb talks went ahead as planned, so he was in Algeria before noon; vlada.gov.cz/aktualne, Babiš's X and the pre-noon ČTK versions could not be opened, and no report with a pre-noon timestamp saying he had landed was found.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true,
+   "ambiguous": true
+  },
+  {
+   "claim": "cz-algeria-gas-deal-announced",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/babis-s-havlickem-chteji-v-alzirsku-jednat-i-o-dodavkach-plynu-/2893063",
+   "note": "ČTK (12:27 version) reports only that ČEZ CEO Beneš 'should negotiate' extending the gas deal and Havlíček saying volumes depend on the Algerian offer; Radio Prague (07:53, updated 12:05) quotes Havlíček that it was too early to say; nobody said a gas document had been or would be signed (vlada.gov.cz/aktualne unreachable).",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-prague-prahasobe-joins",
+   "outcome": "no",
+   "evidence": "https://prahatv.eu/zprava/stan-spolu-a-praha-sobe-jednaly-spolecne-dohoda-o-koalici-zatim-neni/",
+   "note": "Praha TV (26 Oct 17:09) reports the first joint STAN–Spolu–Praha sobě meeting ended with 'no coalition agreement yet' and talks continuing; ČT24 (22 Oct) had Praha sobě only wanting to continue talks; no statement by Praha sobě that it had agreed to join was found (ceskenoviny.cz homepage unreachable).",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-prague-pirates-join",
+   "outcome": "no",
+   "evidence": "https://nasregion.cz/stan-chce-jednat-o-prazske-koalici-se-spolu-a-prahou-sobe-pirati-odmitli-nabidku-jednoho-radniho-461953/",
+   "note": "The Pirates rejected STAN's offer of one council seat on 22 Oct (also ČT24 that day); STAN then moved to three-party talks with Spolu and Praha sobě, and ČTK's preview of the 26 Oct talks mentions only an informal meeting with the Pirates; no Pirate acceptance before 12:00 on 26 Oct was found.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-pardubice-coalition-signed",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/pardubice-povede-nova-petikoalice-primatorem-ma-byt-ondrej-tichy-z-ods-/2893137",
+   "note": "ČTK (published 26 Oct 17:58) reports the five groupings signed 'vpodvečer' (early evening) on 26 Oct, and Pardubický deník says 'v pondělních večerních hodinách', so no signing had been reported by 12:00.",
+   "resolved_at": "2026-10-27T05:35:00+01:00",
+   "held": true
   }
  ],
  "corrections": []
