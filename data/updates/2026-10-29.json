@@ -1,0 +1,35 @@
+{
+  "edition": "2026-10-29",
+  "frozen_at": "2026-10-27T12:42:00+01:00",
+  "revisions": [
+    {
+      "claim": "cz-babis-vladislav-28",
+      "probability": 0.9,
+      "reason": "The Government Office's programme for the state holiday, published at 11:13 on 27 October, says Prime Minister Babiš will attend the 20:00 state honours ceremony in Vladislav Hall after the morning Vítkov commemoration. New ensemble: base-rate 0.89, evidence 0.93, adversarial 0.85, anchor 0.92, outsider 0.88; combined 0.898 (geometric mean of odds).",
+      "reason_cs": "Program Úřadu vlády ke státnímu svátku, zveřejněný 27. října v 11.13, uvádí, že se premiér Babiš po dopoledním pietním aktu na Vítkově zúčastní ve 20.00 slavnostního ceremoniálu předávání státních vyznamenání ve Vladislavském sále. Nový soubor odhadů: základní míra 0,89, důkazy 0,93, oponent 0,85, kotva 0,92, outsider 0,88; kombinace 0,898 (geometrický průměr šancí).",
+      "sources": [
+        { "title": "Kurzy.cz (press release of the Government Office, vlada.cz): 28. října 2026: Premiér Babiš se zúčastní oslav státního svátku Dne vzniku samostatného československého státu (27 Oct 2026, 11:13)", "url": "https://zpravy.kurzy.cz/879607-28-rijna-2026-premier-babis-se-zucastni-oslav-statniho-svatku-dne-vzniku-samostatneho" }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "cz-babis-vladislav-28",
+      "at": "2026-10-27T12:39:00+01:00",
+      "agents": [
+        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.89, "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "p": 0.89, "inputs": ["dossier", "reference-data", "overnight-facts", "signals"], "p_held": 0.97, "p_if_held": 0.92 },
+        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.85, "inputs_blind": ["own-research"], "p": 0.93, "inputs": ["own-research", "dossier", "overnight-facts", "signals"] },
+        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-10-27T12:38:00+01:00", "p_blind": 0.85, "inputs_blind": ["dossier", "overnight-facts", "reference-data"], "p": 0.85, "inputs": ["dossier", "overnight-facts", "reference-data", "signals"], "p_held": 0.95, "p_if_held": 0.90 },
+        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-10-27T12:38:00+01:00", "p": 0.92, "inputs": ["signals", "dossier", "overnight-facts", "reference-data"], "anchor": "no market found; reliability of an official programme published the day before for a head of government's attendance at a set-piece state event (about 0.95) times ceremony held (0.97)" },
+        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-10-27T12:37:00+01:00", "p_blind": 0.88, "inputs_blind": ["dossier", "overnight-facts"], "p": 0.88, "inputs": ["dossier", "overnight-facts", "signals"] }
+      ],
+      "combination": { "method": "geo-odds" },
+      "combined": 0.898,
+      "combined_blind": 0.869,
+      "decomposition": { "p_held": 0.96, "p_if_held": 0.935, "p_if_not_held": 0 },
+      "red_team": { "model": "claude-opus-5-5", "at": "2026-10-27T12:40:00+01:00", "verdict": "stands", "risk": "A last-minute political no-show over the dispute with President Pavel after the programme was published; no announced absence or cancellation found (the boycott and 'hradní malost' reports it cited date from the Zeman era, not 2026)." },
+      "market": null,
+      "new_facts": "work/2026-10-29/new-facts-cz-babis-vladislav-28.md"
+    }
+  ]
+}
