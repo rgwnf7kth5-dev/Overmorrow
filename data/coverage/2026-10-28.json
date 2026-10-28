@@ -1,0 +1,137 @@
+{
+ "edition": "2026-10-28",
+ "checked_at": "2026-10-28T05:20:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Reuters World (reuters.com/world: HTTP 401)",
+  "AP (apnews.com: HTTP 403)"
+ ],
+ "note": "Lists used: (a) Wikipedia Portal:Current events/2026 October 27, read via the raw wikitext (index.php?action=raw) because WebFetch's permission prompt timed out; (c) ČT24 'SOUHRN: Zásadní události úterý 27. října' plus the ČT24 front page, and ČTK front page plus /cr/ and /svet/ section lists. (b) Reuters World and AP were blocked, so list (b) is missing; Wikipedia items citing Reuters/AP were not counted as (b). Wikipedia-only items (Ethiopia Oromia killings, Nigeria Taraba toll, US Caribbean boat strike, Cúcuta bomb, Netherlands Eurovision withdrawal, Cyclone Arnab evacuations, Haiti/DR floods, Antalya tornado, Saca release) appeared in one list only. ČTK-only items (state honours list, Babiš–Fico statue, Pavel's speech to diplomats, CV90 delay, Okamura–AfD meeting, pope on holy war, prosecutors on appeal reform, Ebola >10,000) and ČT24-only items (truck toll increase, Capitol rioters case dropped) did not qualify; note that cz-cz-sk-statue and cz-pavel-diplomats were nonetheless covered. Sport and market prices (STAR Market fall) excluded.",
+ "events": [
+  {
+   "title": "Israel holds Knesset election; exit polls give Likud most seats (24–25) but neither bloc a clear 61-seat majority; turnout highest since 1999",
+   "scope": "world",
+   "lists": [
+    "wikipedia",
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/v-izraeli-se-uzavrely-volebni-mistnosti-zacina-scitani-hlasu-379071",
+   "status": "covered",
+   "story": "il-election"
+  },
+  {
+   "title": "Flávio Bolsonaro leaves Brazil for the United States despite orders to surrender his passports; government cancels them",
+   "scope": "world",
+   "lists": [
+    "wikipedia",
+    "ct24"
+   ],
+   "source": "https://www.reuters.com/world/americas/flavio-bolsonaro-leaves-brazil-us-after-election-defeat-source-media-say-2026-10-27/",
+   "status": "covered",
+   "story": "br-transition",
+   "note": "The edition's Brazil story (claim: annulment bid did not reach the electoral court) covered the post-runoff situation; the departure itself was not foreseen. ct24 = front page (not in its evening SOUHRN); not seen on ČTK's lists."
+  },
+  {
+   "title": "Local Oleshky ceasefire takes effect (to 1 Nov) while Russia strikes Kyiv overnight, hitting the Southern Bridge",
+   "scope": "europe",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/rusko-a-ukrajina-zavedly-lokalni-primeri-u-mesta-olesky-trvat-ma-do-nedele/2892222",
+   "status": "covered",
+   "story": "ua-oleshky-ceasefire"
+  },
+  {
+   "title": "Finnish President Stubb and Norwegian PM Støre hold phone call with Putin on ending the war, then brief Zelensky",
+   "scope": "europe",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/lidri-finska-a-norska-jednali-s-putinem-o-ukonceni-valky-na-ukrajine/2893643",
+   "status": "missed",
+   "note": "Not announced in advance (Stubb's office announced it after the call). Nothing in the planning file; only foreseeable as a generic Ukraine-diplomacy step."
+  },
+  {
+   "title": "WMO Greenhouse Gas Bulletin: CO2, methane and nitrous oxide concentrations hit record highs in 2025 (CO2 426.8 ppm)",
+   "scope": "world",
+   "lists": [
+    "wikipedia",
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/koncentrace-co2-v-atmosfere-dosahla-loni-rekordni-urovne-uvadi-agentura-osn/2893791",
+   "status": "missed",
+   "note": "Announced in advance: the WMO Greenhouse Gas Bulletin is released annually before the COP with a media advisory/embargo on wmo.int (press releases and media advisories). The planning sweep does not cover the WMO/UNEP pre-COP report calendar (also UNEP Emissions Gap Report) — sweep gap."
+  },
+  {
+   "title": "Licence-fee dispute: DAMU, Masaryk University and Ostrava University students declare strike alert and will join the 3 Nov ČT/ČRo strike; Okamura says he would back abolishing ČT and ČRo",
+   "scope": "cz",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/studenti-odmitli-zmeny-pro-ct-a-cro-nekde-vyhlasili-stavkovou-pohotovost/2893639",
+   "status": "covered",
+   "story": "cz-licence-fees",
+   "note": "The edition's licence-fee story was about the Okamura recall motion; the student strike alert and Okamura's statement were not forecast."
+  },
+  {
+   "title": "Culture minister Klempíř dismisses ex-ČT director Petr Dvořák as chair of the State Audiovisual Fund board",
+   "scope": "cz",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/klempir-odvola-exreditele-ct-dvoraka-z-cela-predstavenstva-fondu-audiovize/2893722",
+   "status": "missed",
+   "note": "Not announced in advance. Related item 'Cabinet 26 Oct: venture fund and State Audiovisual Fund 2027 budget' was dropped (agenda unreadable); the dispute over the fund's 2027 budget was the place to see it coming."
+  },
+  {
+   "title": "National Theatre drama company unions declare strike alert, demand minister Klempíř's departure",
+   "scope": "cz",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/narodni-divadlo-vyhlasilo-stavkovou-pohotovost-chce-konec-klempire/2893991",
+   "status": "missed",
+   "note": "Not announced in advance (late-evening decision). Nothing in the planning file."
+  },
+  {
+   "title": "MP David Pražák leaves ANO, becomes an independent; coalition keeps its majority (107 of 200)",
+   "scope": "cz",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/poslanec-prazak-ukoncil-clenstvi-v-ano-bude-nezarazeny-poslanec/2893947",
+   "status": "missed",
+   "note": "Not announced in advance; no reason given. Unforeseeable."
+  },
+  {
+   "title": "ODS leadership dissolves its Plzeň-Slovany local branch over post-election disputes",
+   "scope": "cz",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/vedeni-ods-zrusilo-mistni-organizaci-v-plzni-slovanech-kvuli-povolebnim-rozporum/2890514",
+   "status": "missed",
+   "note": "Minor regional party matter; the ODS executive council meeting was not tracked. Not announced as a decision in advance."
+  },
+  {
+   "title": "European Commission proposes a bigger role for Frontex in migrant returns",
+   "scope": "europe",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://www.ceskenoviny.cz/zpravy/frontex-ma-hrat-vetsi-roli-pri-navratech-migrantu-navrhuje-ek/2893712",
+   "status": "missed",
+   "note": "Likely announced in advance on the Commission's College agenda/forward planning (ec.europa.eu, 'Liste des points prévus'), not verified. The planning sweep did not list it; check whether the Commission's College agenda is in pipeline/sources.json."
+  }
+ ]
+}
