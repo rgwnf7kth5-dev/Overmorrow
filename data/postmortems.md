@@ -42,3 +42,10 @@ We said the unemployment-benefit cut would stay stuck in the Chamber on 23 Octob
 ## 2026-10-23 · sakharov-icc (15%, came true)
 
 The Sakharov Prize went to the International Criminal Court and its officials, the finalist we rated least likely. We leaned on the Conference of Presidents arithmetic, assuming the EPP and ECR would carry Lissu, and gave too little weight to the chance that group leaders would converge on a laureate that defended international institutions under pressure. Diagnosis: wrong base rate. The class "laureate is the EPP-backed finalist" was untested and built from a handful of recent years; with this result it stands at 0 of 1 in our own record, and future Sakharov forecasts should start closer to an even split among finalists until the record grows. The pilot edition also lacked the three-agent ensemble that might have challenged the assumption.
+
+### 2026-10-28 run
+- **eu-baltic-quotas-26 (edition 2026-10-27, 10%, came true).** The Council reached the Baltic agreement on day 1 of AGRIFISH (26 Oct), as its own press release says. We leaned on the habit of overnight Baltic talks running into day 2; the reference class (day-1 agreements in October AGRIFISH) was built from too few years. Wrong base rate.
+- **cz-cabinet-26-koruna (edition 2026-10-28, 27% in the edition, 83% after the afternoon update, came true).** The cabinet approved a positive opinion on tisk 320 on 26 Oct. The morning number missed that the item was on the published agenda; the afternoon update caught it. Missed fact.
+
+## Coverage
+- 2026-10-28 run, edition 2026-10-28: WMO Greenhouse Gas Bulletin (27 Oct) was missed though announced in advance; the WMO/UNEP pre-COP report calendar is not in the sweep. Added to pipeline/sources.json.
