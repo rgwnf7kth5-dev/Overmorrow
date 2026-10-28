@@ -1,0 +1,5 @@
+# cz-diesel-cap-31 — signals
+
+- No matching market found for the Czech diesel cap; searched (node scripts/markets.mjs search, read 2026-10-28T18:10Z): "diesel price czech" (only Polymarket "US diesel export ban by Oct 31", Yes 0.0065 — unrelated), "gasoil" (nothing relevant), "brent crude october 30", "brent".
+- Related input (partial/indirect match): Kalshi KXBRENTMON "Brent crude close on October 30, 2026 at 5:00 PM EDT", read 2026-10-28T18:10Z, volumes ~USD 2k–18k per strike: above 106.99 0.81; above 108.99 0.76; above 110.99 0.55; above 112.99 0.40; above 114.99 0.24; above 116.99 0.11; above 118.99 0.07. Implied median ≈ 111–112 USD/bbl for the 30 Oct close, below the 28 Oct quote of 115.41 (oenergetice.cz) — i.e. the market leans to a modest fall by Friday's close. Note: the 31 Oct cap uses wholesale quotes from before 30 Oct 14:00 with a lag, so the Friday close itself does not enter; the ladder is a weak cross-check on the direction of the wholesale trend only. Question, deadline and settlement do not match the claim.
+- Bookmakers / forecasting platforms: none list Czech fuel caps.

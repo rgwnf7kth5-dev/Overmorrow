@@ -1207,6 +1207,50 @@
      "market": null,
      "note": "In the Jerusalem Post average of four mainstream polls Netanyahu's bloc has about 50 seats against about 53 for the Zionist opposition, with Eisenkot's Yashar ahead of Likud, so Eisenkot is likely to collect more recommendations if the opposition, and possibly Arab parties, line up behind him. Netanyahu could still get the mandate, as he did after 7 of the 9 elections he has contested as Likud leader since 2006, if polls underestimate the right or the opposition splits its recommendations between Eisenkot and Bennett.",
      "note_cs": "V průměru čtyř hlavních průzkumů listu The Jerusalem Post má Netanjahuův blok asi 50 křesel proti zhruba 53 pro sionistickou opozici a Eisenkotova strana Jašar předstihuje Likud, takže více doporučení pravděpodobně získá Eisenkot, pokud se za něj postaví opozice a případně i arabské strany. Netanjahu by přesto mohl pověření dostat, jako se mu to od roku 2006 podařilo po sedmi z devíti voleb, v nichž vedl Likud, pokud průzkumy podcenily pravici nebo pokud opozice rozdělí svá doporučení mezi Eisenkota a Bennetta."
+    },
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.6,
+     "combined": 0.605,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Base rate 7/9 shrunk for a 53-54 seat bloc facing a possible Eisenkot+Arab recommendation count; Polymarket next-PM 0.465 is a harder event than the first mandate, so no move.",
+       "p_blind": 0.55
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.52,
+       "reason": "The PM market (0.465) is a stricter event than receiving the first mandate; Likud as largest party and a 53-54 bloc vs 48-49 make him the default unless Arab parties line up behind Eisenkot, so about even.",
+       "p_blind": 0.5
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.62,
+       "reason": "Polymarket has Netanyahu as next PM at 0.465 and Eisenkot at 0.2725, a partial match: a first mandate is easier than becoming PM, so the mandate probability sits above 0.465 unless Herzog tasks Eisenkot first on a 65-67 recommendation count including Arab parties (the 2020 Gantz precedent), which remains my main NO case; nudged up two points from 0.60.",
+       "p_blind": 0.6
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Polymarket 'next PM' Netanyahu 0.465 is a lower-ish proxy; the first mandate goes to the largest recommending bloc and Netanyahu's 53-54 leads Eisenkot's 48-49 unless Arab parties recommend Eisenkot, with ample time to 30 Nov."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.76,
+       "reason": "Netanyahu's bloc (53-54) leads Eisenkot's (48-49) and both camps exclude Arab parties, so he likely gets most recommendations before 30 Nov; risk is Arab-party recommendations for Eisenkot. Market has Netanyahu next PM ~0.47, a lower proxy, so shaded down.",
+       "p_blind": 0.8
+      }
+     ],
+     "market": null,
+     "note": "After the 27 October election Netanyahu's Likud is the largest party and his bloc has 53–54 seats against 48–49 for the Eisenkot-led bloc, with Arab-led parties at 17–19; neither side has 61. As leader of the largest party and bloc Netanyahu is the default choice for the first mandate after certification on 4 November, unless the Arab parties and Bennett all recommend Eisenkot.",
+     "note_cs": "Po volbách 27. října je Netanjahuův Likud nejsilnější stranou a jeho blok má 53 až 54 křesel proti 48 až 49 pro blok vedený Eisenkotem; arabské strany mají 17 až 19 mandátů a 61 nemá žádná strana sporu. Jako předseda nejsilnější strany a bloku je Netanjahu po potvrzení výsledků 4. listopadu přirozeným kandidátem na první pověření, pokud Eisenkota nedoporučí arabské strany i Bennett."
     }
    ],
    "result": null
@@ -1274,6 +1318,50 @@
      "market": null,
      "note": "Polls give neither bloc 61 seats without the Arab parties, a deadlock resembling the two 2019 elections that never produced a government, and the first mandate with its extension runs to about late December, leaving little time for a second attempt before 31 January. A government could still be sworn in on time if the right outperforms the mainstream polls or the opposition builds a coalition relying on Ra'am, as in 2021.",
      "note_cs": "Podle průzkumů nezíská bez arabských stran 61 křesel žádný blok, což připomíná patovou situaci po obou volbách v roce 2019, z nichž vláda nikdy nevzešla, a první pověření i s prodloužením vyprší zhruba koncem prosince, takže na druhý pokus do 31. ledna zbývá málo času. Vláda by přesto mohla včas složit přísahu, pokud pravice dopadne lépe, než naznačují hlavní průzkumy, nebo pokud opozice sestaví koalici opřenou o stranu Ra'am jako v roce 2021."
+    },
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.24,
+     "combined": 0.24,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.26,
+       "reason": "Hung-parliament base rate ~0.3; thin Polymarket legs (0.14 by 31 Dec, 0.265 by 28 Feb) interpolate to ~0.2 for 31 Jan, so I move down a little.",
+       "p_blind": 0.3
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.25,
+       "reason": "Thin markets put a government by 31 Dec at 0.14 and by 28 Feb at 0.265, implying about 0.20 for 31 Jan; I sit slightly above for Herzog's push against new elections and possible defections, but neither bloc has 61.",
+       "p_blind": 0.32
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.3,
+       "reason": "Polymarket's thin 'government formed by 31 Dec' 0.14 and 'by 28 Feb' 0.265 interpolate to roughly 0.20 for 31 Jan, and 'exactly one election' at 0.44 caps the no-repeat-election path; against that, Netanyahu needs only seven seats and two of four post-2019 deadlocks produced a government inside 96 days, so I come down from 0.37 but stay above the thin market.",
+       "p_blind": 0.37
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "Interpolating thin Polymarket legs (0.14 by 31 Dec, 0.265 by 28 Feb) to 31 Jan, with neither bloc near 61 seats."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.2,
+       "reason": "No bloc near 61 and both exclude Arab parties, so deadlock or a third election is likelier than a confidence vote by 31 Jan.",
+       "p_blind": 0.2
+      }
+     ],
+     "market": null,
+     "note": "The 27 October election left both blocs short of 61 seats (Netanyahu's bloc 53–54, Eisenkot-led bloc 48–49, Arab-led parties 17–19), the same kind of deadlock as in 2019, when two elections produced no government. The ensemble cut the chance of a government sworn in by 31 January from 46% to 24%; thin government-formation markets point to about 20%.",
+     "note_cs": "Volby 27. října nedaly žádnému bloku 61 křesel (Netanjahuův blok 53 až 54, blok vedený Eisenkotem 48 až 49, arabské strany 17 až 19), což připomíná patovou situaci z roku 2019, kdy dvoje volby nepřinesly vládu. Soubor prognóz snížil šanci, že nová vláda složí slib do 31. ledna, ze 46 na 24 %; málo likvidní trhy na sestavení vlády ukazují zhruba 20 %."
     }
    ],
    "result": null
@@ -1540,7 +1628,12 @@
      "note_cs": "Trhy se od chvíle, kdy vysoká zářijová inflace krátce zvýšila sázky na zvýšení sazeb, výrazně přiklonily k jejich ponechání, Warsh 16. října uvedl, že data jeho názor nezměnila, a zářijové projekce ukazují jako přirozený další krok prosinec. Výsledek by změnilo jen jestřábí překvapení ze strany Warshe, který říjnové zasedání formálně nechal otevřené a před obdobím mlčení nic nenaznačil, a Fed trhy takto překvapuje jen zřídka."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "no",
+    "evidence": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    "note": "FOMC statement of 28 Oct 2026 (14:00 EDT): target range maintained at 3.75–4.00%; vote 10–2, Cook and Hammack dissenting in favour of a 25 bp hike.",
+    "resolved_at": "2026-10-28T19:40:00+01:00"
+   }
   },
   {
    "id": "us-fed-hike-december",
@@ -1610,6 +1703,56 @@
      },
      "note": "The Fed raised rates unanimously to 3.75–4.00% in September, the median September projection points to another hike in December, Warsh says inflation will not return to target on its own, and markets see a December move as likely. Easing energy prices after any de-escalation with Iran, weak payrolls, political pressure on Warsh or a surprise October hike that pre-empts December could still lead to a hold.",
      "note_cs": "Fed v září jednomyslně zvýšil sazby na 3,75 až 4,00 %, medián zářijových projekcí ukazuje na další zvýšení v prosinci, Warsh tvrdí, že se inflace sama k cíli nevrátí, a trhy prosincový krok považují za pravděpodobný. K ponechání sazeb by přesto mohlo vést zlevnění energií po případné deeskalaci s Íránem, slabá data o zaměstnanosti, politický tlak na Warshe nebo nečekané zvýšení v říjnu, které by prosincový krok předběhlo."
+    },
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.78,
+     "combined": 0.785,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.77,
+       "reason": "Base rate ~0.72 for moves priced this high; Polymarket 0.84 (close match, read before Warsh's presser) and CME ~84% pull me up, held back slightly for the softer statement wording.",
+       "p_blind": 0.7
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.77,
+       "reason": "Polymarket prices a December hike at 0.84 after the 28 Oct hold with two hike dissents; I stay a little below because the statement dropped its forward commitment and Warsh's press conference was not covered.",
+       "p_blind": 0.7
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.76,
+       "reason": "Polymarket prices a December hike at 0.841 (25 bp 0.815 + 50 bp 0.026, read 20 minutes after the decision and possibly before the press conference; Manifold 0.84), a close match, so I move up from 0.66 but stay below it: the October statement's wait-for-information hedge, Warsh's refusal to pre-commit, a possible post-midterm Iran de-escalation deflating energy prices, and Trump's pressure are the live NO paths that two-month-ahead futures pricing tends to under-weight.",
+       "p_blind": 0.66
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Anchored on Polymarket Dec hike 0.84 (and FedWatch ~84% pre-decision), trimmed slightly because the read predates the press conference and the statement softened to 'accumulation of more information'."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.82,
+       "reason": "Fed held 10-2 with two dissenters wanting a hike now, statement shifted hawkish on growth, and the September median pointed to December. Market ~0.84 agrees.",
+       "p_blind": 0.82
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+      "p": 0.841,
+      "read_at": "2026-10-28T18:20:42Z"
+     },
+     "note": "The Fed held at 3.75–4.00% on 28 October, but two members (Cook and Hammack) dissented in favour of a 25 bp hike, and futures and Polymarket put a December hike at about 84% shortly after the decision. The ensemble stays a little below the market because the statement softened its forward guidance and the press conference had not been digested.",
+     "note_cs": "Fed 28. října ponechal sazby na 3,75–4,00 %, dva členové (Lisa Cook a Beth Hammack) však hlasovali pro zvýšení o 25 bazických bodů a futures i Polymarket krátce po rozhodnutí oceňovaly prosincové zvýšení zhruba na 84 %. Soubor prognóz zůstává mírně pod trhem, protože prohlášení zmírnilo výhled a tisková konference ještě nebyla vyhodnocena."
     }
    ],
    "result": null
@@ -2413,6 +2556,56 @@
      },
      "note": "The first round on 25 October was far closer than the polls: exit polls and parallel counts put Iliana Iotova at 32–35% and Andrey Gyurov at 31–33.5% (one agency has Gyurov ahead), on a turnout of about 22%; the 1 November runoff is likely to turn on Vazrazhdane voters.",
      "note_cs": "První kolo 25. října dopadlo mnohem těsněji, než ukazovaly průzkumy: podle odhadů u volebních místností a paralelních sčítání má Iliana Iotova 32–35 % a Andrej Gyurov 31–33,5 % (jedna agentura vidí v čele Gyurova) při účasti kolem 22 %. Druhé kolo 1. listopadu nejspíš rozhodnou voliči Obrození."
+    },
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.71,
+     "combined": 0.707,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "reason": "First-round leaders 7/7 in runoffs, shrunk for a ~2-point lead; Polymarket 0.735 and Kalshi 0.74 agree, small nudge up.",
+       "p_blind": 0.7
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "reason": "Markets (0.735-0.74) agree with a narrow first-round lead plus BSP/VMRO endorsements and Vazrazhdane voters leaning her way, against a thin 2-point margin.",
+       "p_blind": 0.7
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.66,
+       "reason": "Polymarket 0.735 and Kalshi 0.74 are near-exact matches and have risen since the endorsements, so I move up from 0.62, but the 3 Nov publication deadline (CIK must declare within about 48 hours of polls closing) and the unpledged GERB, DPS and Vazrazhdane electorates on a record-low turnout keep me below the market.",
+       "p_blind": 0.62
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.74,
+       "reason": "Polymarket 0.735 and Kalshi 0.74 match the question directly; Iotova led the first round and has broad runoff endorsements."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.69,
+       "reason": "Iotova led the first round by 2-4 points and has broad runoff endorsements, but the lead is thin and turnout very low. Markets ~0.74 nudge up slightly.",
+       "p_blind": 0.66
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/bulgaria-presidential-election",
+      "p": 0.735,
+      "read_at": "2026-10-28T18:21:47Z"
+     },
+     "note": "Iotova led the 25 October first round by about two points on record-low turnout and faces Gyurov in the 1 November runoff; first-round leaders have won every Bulgarian runoff since 1992, and Polymarket and Kalshi both price her at about 74%.",
+     "note_cs": "Iliana Iotova vedla v prvním kole 25. října zhruba o dva body při rekordně nízké účasti a 1. listopadu se ve druhém kole utká s Gjurovem; vítěz prvního kola vyhrál každé bulharské druhé kolo od roku 1992 a Polymarket i Kalshi ji oceňují zhruba na 74 %."
     }
    ],
    "result": null
@@ -2992,8 +3185,199 @@
      "market": null,
      "note": "New question. The Student List won the 25 October snap election with about 53% and a projected 138–140 of 250 seats; Vučić conceded. The list has not named a prime-ministerial candidate. Final results took 26 days in 2023; the assembly then has 90 days to elect a government, and the nomination runs through acting president Ana Brnabić (SNS). The forecasters disagree (0.15–0.50) on the same facts: the timetable alone leaves little slack before 31 January, and the outsider weighs obstruction by the SNS-held presidency more heavily.",
      "note_cs": "Nová otázka. Studentská kandidátka vyhrála předčasné volby 25. října s asi 53 % hlasů a podle projekce 138 až 140 z 250 mandátů; Vučić uznal porážku. Kandidáta na premiéra kandidátka zatím nejmenovala. Konečné výsledky trvaly v roce 2023 šestadvacet dní, parlament pak má 90 dní na zvolení vlády a kandidáta navrhuje úřadující prezidentka Ana Brnabić (SNS). Prognostici se na stejných faktech rozcházejí (0,15 až 0,50): samotný harmonogram nechává do 31. ledna malou rezervu a outsider přikládá větší váhu obstrukci ze strany prezidentského úřadu ovládaného SNS."
+    },
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.41,
+     "combined": 0.409,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.48,
+       "reason": "Timetable base rate (2/6 governments within ~98 days) against a clear majority with urgency; Polymarket gives Student List names ~0.84 to be the next PM but with no deadline, so the timing question dominates and I stay near even.",
+       "p_blind": 0.5
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.42,
+       "reason": "Markets give Student List names ~0.84 to be the next PM but with no deadline; the 98-day timetable (final results, 30-day convening, then nomination) is the binding constraint, eased by the new Speaker replacing Brnabić as acting president.",
+       "p_blind": 0.42
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.4,
+       "reason": "Polymarket's Student List-linked names sum to about 0.84 for next PM with no deadline; multiplied by roughly a coin flip that final results, the constituent session, a nomination through acting president Brnabic and the election all land by 31 Jan gives about 0.42, consistent with my blind 0.40; unchanged.",
+       "p_blind": 0.4
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.35,
+       "reason": "Student-List-linked names sum ~0.84 for next PM with no deadline, multiplied by roughly 0.4 that the final results, assembly constitution, presidential nomination and vote all fit before 31 Jan."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.4,
+       "reason": "Clear majority and pressure to move fast, but no candidate, final results pending, and SNS acting president controls nomination timing against a tight 31 Jan deadline.",
+       "p_blind": 0.4
+      }
+     ],
+     "market": null,
+     "note": "The Student List won the 25 October election with 52.7% of the vote on RIK's preliminary count (about 140 of 250 seats) and Vučić conceded; it has not yet named its candidate for prime minister and says its MPs will choose after final results are proclaimed. The remaining risk is the timetable: the assembly must be constituted and the government elected by 31 January.",
+     "note_cs": "Studentská kandidátka podle předběžných výsledků RIK vyhrála volby 25. října s 52,7 % hlasů (zhruba 140 z 250 křesel) a Vučić porážku uznal; kandidáta na premiéra zatím nejmenovala a uvádí, že ho poslanci vyberou po vyhlášení konečných výsledků. Zbývajícím rizikem je časový plán: do 31. ledna se musí ustavit parlament a zvolit vláda."
     }
    ]
+  },
+  {
+   "id": "cz-media-strike-3-nov",
+   "scope": "cz",
+   "topic": "Public broadcasters (ČT, ČRo)",
+   "question": "Will employees of Česká televize or Český rozhlas hold a strike on 3 November 2026?",
+   "question_cs": "Budou zaměstnanci České televize nebo Českého rozhlasu 3. listopadu 2026 stávkovat?",
+   "criterion": "YES if on 3 Nov 2026 employees of ČT or ČRo stop work in a strike or warning strike against the bill abolishing the licence fees, as reported by ČTK, ČT24, iROZHLAS or another major Czech outlet. A symbolic action without a work stoppage (a statement only, a broadcast continuing as normal with a symbol on screen, or a rally outside working hours) does not count. NO otherwise, including if the strike is called off or postponed.",
+   "criterion_cs": "ANO, pokud 3. listopadu 2026 zaměstnanci ČT nebo ČRo přeruší práci ve stávce nebo výstražné stávce proti zákonu o zrušení poplatků, jak informuje ČTK, ČT24, iROZHLAS nebo jiné velké české médium. Symbolická akce bez přerušení práce (pouhé prohlášení, vysílání beze změny se symbolem na obrazovce nebo shromáždění mimo pracovní dobu) se nepočítá. Jinak NE, i pokud bude stávka odvolána nebo odložena.",
+   "resolution_source": "ČTK (ceskenoviny.cz), ČT24, iROZHLAS reports on 3 Nov 2026",
+   "opened": "2026-10-28",
+   "resolves_by": "2026-11-04T12:00:00+01:00",
+   "background": "The ANO–SPD–Motoristé coalition bill abolishing the ČT and ČRo licence fees (tisk 231) passed first reading on 24 Oct. The initiative Veřejnoprávně has called an all-day strike at ČT and ČRo on 3 Nov, and the students' Výbor solidarity studentů called a warning strike for the same day (ČTK, 28 Oct). ČT and ČRo staff held a 24-hour warning strike on 22 June 2026. Babiš says the bill will not be withdrawn. The broadcasters must keep broadcasting by law, so a strike may be partial.",
+   "sources": [
+    {
+     "title": "ČTK: Studenti vyhlásili kvůli rušení poplatků pro ČT a ČRo na 3. listopad stávku",
+     "url": "https://www.ceskenoviny.cz/zpravy/studenti-vyhlasili-kvuli-ruseni-poplatku-pro-ct-a-cro-na-3-listopad-stavku/2894141"
+    },
+    {
+     "title": "ČT24: Studenti vyhlásili stávku kvůli rušení poplatků pro ČT a ČRo",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/studenti-vyhlasili-stavku-kvuli-ruseni-poplatku-pro-ct-a-cro-379086"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.81,
+     "combined": 0.813,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Announced union/staff strikes in the same dispute usually go ahead (ČT/ČRo held a 24-hour strike on 22 June over the same bill), and the coalition refuses to withdraw; risks are a last-minute deal/postponement or a format that resolves as symbolic rather than a work stoppage.",
+       "p_blind": 0.8
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "No market; Veřejnoprávně's all-day strike call, the 22 June precedent of a 24-hour strike reported as such, and the coalition's refusal to withdraw the bill make it likely, with call-off or a 'symbolic only' ruling as the main risks.",
+       "p_blind": 0.8
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.85,
+       "reason": "No market; unchanged at 0.85, with the June 22 precedent of a reported 24-hour warning strike as the main YES anchor and the broadcast-continuity law and a possible postponement after coalition talks as the residual NO paths.",
+       "p_blind": 0.85
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.75,
+       "reason": "No market; the all-day ČT/ČRo strike is formally called with a June 24-hour precedent and the coalition refusing to withdraw the bill, discounted for postponement risk and the partial-strike/symbolic-action wording."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.85,
+       "reason": "Verejnoprávně all-day ČT/ČRo strike formally called with a June 24-hour precedent and the coalition refusing to withdraw; partial strike likely counts, risk is postponement or symbolic-only format.",
+       "p_blind": 0.85
+      }
+     ],
+     "market": null,
+     "note": "The strike is formally called by the Veřejnoprávně initiative, a 24-hour strike over the same bill took place on 22 June and the coalition refuses to withdraw the bill. The risks are a postponement if the coalition offers talks and a format that counts only as a symbolic action.",
+     "note_cs": "Stávku formálně vyhlásila iniciativa Veřejnoprávně, kvůli stejnému zákonu se už 22. června stávkovalo 24 hodin a koalice odmítá zákon stáhnout. Rizikem je odklad, pokud koalice nabídne jednání, nebo forma, která by se počítala jen jako symbolická akce."
+    }
+   ],
+   "result": null
+  },
+  {
+   "id": "es-puente-out-nov",
+   "scope": "europe",
+   "topic": "Spain: Toledo rail collision",
+   "question": "Will Óscar Puente cease to be Spain's transport minister by 29 November 2026?",
+   "question_cs": "Přestane být Óscar Puente do 29. listopadu 2026 španělským ministrem dopravy?",
+   "criterion": "YES if by 23:59 Madrid time on 29 Nov 2026 Óscar Puente announces his resignation as Minister of Transport and Sustainable Mobility, or his dismissal (cese) is announced by La Moncloa or published in the BOE. Remaining in office, including as a caretaker after the election, counts as NO.",
+   "criterion_cs": "ANO, pokud Óscar Puente do 23:59 madridského času 29. listopadu 2026 oznámí rezignaci na post ministra dopravy a udržitelné mobility nebo pokud jeho odvolání oznámí Moncloa či zveřejní úřední věstník BOE. Setrvání v úřadu, i jako dočasně pověřeného ministra po volbách, znamená NE.",
+   "resolution_source": "https://www.boe.es/ and La Moncloa press releases",
+   "opened": "2026-10-28",
+   "resolves_by": "2026-11-30T12:00:00+01:00",
+   "background": "On 28 Oct a Renfe high-speed train ran into the back of an Iryo train near Urda (Toledo), the second deadly high-speed accident in Spain within a year. Transport minister Óscar Puente said \"de momento no\" to calls to resign and blamed a restart decision by Adif's control centre; Prime Minister Sánchez said negligence, if any, would come to light. A general election is due on 29 Nov.",
+   "sources": [
+    {
+     "title": "CLM24: Accidente de Urda: crece la presión política y Puente descarta dimitir",
+     "url": "https://www.clm24.es/actualidad/accidente-urda-crece-presion-politica-puente-descarta-dimitir/20261028174626484851.html"
+    },
+    {
+     "title": "LBC: Spain transport minister refuses resignation calls after fatal collision",
+     "url": "https://www.lbc.co.uk/article/spain-transport-minister-refuses-resignation-calls-fatal-collision-5HjdkZh_2/"
+    }
+   ],
+   "base_rate": {
+    "class": "Spanish transport ministers resigning after deadly rail or air accidents (Trillo 2003, Álvarez 2008, Pastor 2013, Puente 2026 Adamuz)",
+    "rate": 0.0,
+    "n": 4,
+    "source": "data/dossiers/2026-10-31/es-puente-out-30.md"
+   },
+   "history": [
+    {
+     "at": "2026-10-28T19:40:00+01:00",
+     "p": 0.16,
+     "combined": 0.157,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Spanish ministers facing calls after deadly transport disasters (Trillo, Álvarez, Pastor, Puente after Adamuz) resigned 0 of 4 times; the election a month away and a second crash raise pressure, but scapegoating Adif is the usual route.",
+       "p_blind": 0.12
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.18,
+       "reason": "No market; Puente survived Adamuz in January and says 'de momento no', but a second mass-fatality crash a month before the 29 Nov election leaves a real chance Sánchez drops him.",
+       "p_blind": 0.18
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.25,
+       "reason": "No market; unchanged at 0.25, weighing the 0-of-4 record of Spanish transport ministers surviving deadly crashes against an unprecedented second mass-casualty crash in ten months during an election campaign.",
+       "p_blind": 0.25
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "No market; Spanish ministers rarely quit after deadly crashes (Puente survived Adamuz) and the election is on the deadline day, but a second mass-casualty crash and possible Adif findings leave some month-long risk."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.14,
+       "reason": "Puente said 'de momento no' and survived Adamuz, 0 of 4 comparable resignations, but 68 dead and a second crash raise pre-election risk.",
+       "p_blind": 0.14
+      }
+     ],
+     "market": null,
+     "note": "No Spanish transport minister has resigned over a deadly accident in four comparable cases, including Puente himself after Adamuz, and he said \"de momento no\" on 28 October. A second mass-casualty crash within a year and a general election a month away add pressure.",
+     "note_cs": "Ve čtyřech srovnatelných případech, včetně samotného Puenta po neštěstí v Adamuzu, žádný španělský ministr dopravy kvůli smrtelné nehodě neodstoupil a Puente 28. října řekl „de momento no“. Tlak zvyšuje druhá hromadná nehoda během jednoho roku a všeobecné volby za měsíc."
+    }
+   ],
+   "result": null
   }
  ]
 }
