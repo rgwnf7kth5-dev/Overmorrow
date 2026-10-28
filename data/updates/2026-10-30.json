@@ -1,0 +1,53 @@
+{
+  "edition": "2026-10-30",
+  "frozen_at": "2026-10-28T12:34:00+01:00",
+  "revisions": [
+    {
+      "claim": "il-coalition-61-29",
+      "probability": 0.02,
+      "reason": "As counting continued on 28 October the Central Elections Committee figures put Netanyahu's bloc at 55 seats with 51.5% of votes counted (Ynet, 07:37 Israel time) and at 54 with more than three quarters counted, seven short of a majority, with only double-envelope ballots left to add. New ensemble: base-rate 0.01, evidence 0.015, adversarial 0.02, anchor 0.02, outsider 0.02; combined 0.016 (geometric mean of odds).",
+      "reason_cs": "Při pokračujícím sčítání 28. října dávaly údaje Ústřední volební komise Netanjahuovu bloku 55 mandátů po sečtení 51,5 % hlasů (Ynet, 7.37 izraelského času) a 54 mandátů po sečtení více než tří čtvrtin hlasů, tedy o sedm méně, než je třeba k většině; zbývá přičíst jen hlasy z dvojitých obálek. Nový soubor odhadů: základní míra 0,01, důkazy 0,015, oponent 0,02, kotva 0,02, outsider 0,02; kombinace 0,016 (geometrický průměr šancí).",
+      "sources": [
+        { "title": "Ynet: Israel election results: Netanyahu bloc at 55 seats with over half the votes counted (28 Oct 2026, 07:37 IST)", "url": "https://www.ynetnews.com/article/hjnatbkaml" },
+        { "title": "Al Jazeera: Five key takeaways from Israel's parliamentary elections (28 Oct 2026)", "url": "https://www.aljazeera.com/news/2026/10/28/five-key-takeaways-from-israels-parliamentary-elections" },
+        { "title": "Times of Israel liveblog, 28 Oct 2026: Likud-led bloc leads count with 54 seats, short of majority", "url": "https://www.timesofisrael.com/liveblog-october-28-2026/" }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "il-coalition-61-29",
+      "at": "2026-10-28T12:34:00+01:00",
+      "agents": [
+        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.02, "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "p": 0.01, "inputs": ["dossier", "reference-data", "overnight-facts", "signals"] },
+        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "p_blind": 0.02, "inputs_blind": ["own-research"], "p": 0.015, "inputs": ["own-research", "dossier", "overnight-facts", "signals"] },
+        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.02, "inputs_blind": ["dossier", "overnight-facts", "reference-data"], "p": 0.02, "inputs": ["dossier", "overnight-facts", "reference-data", "signals"] },
+        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "p": 0.02, "inputs": ["signals", "dossier", "overnight-facts"], "anchor": "Polymarket 'Any coalition wins a majority?' Yes 0.0195 read 11:32Z; partial match (upper bound), no net adjustment" },
+        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.03, "inputs_blind": ["dossier", "overnight-facts"], "p": 0.02, "inputs": ["dossier", "overnight-facts", "signals"] }
+      ],
+      "combination": { "method": "geo-odds" },
+      "combined": 0.016,
+      "combined_blind": 0.022,
+      "red_team": { "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "verdict": "stands", "risk": "Count not final: double-envelope ballots and a small list (Ra'am, 4 seats) falling below the threshold could shift seats, but not by the seven the bloc needs." },
+      "market": { "p": 0.0195, "read_at": "2026-10-28T11:32:14Z", "url": "https://polymarket.com/event/israel-election-any-coalition-wins-a-majority" },
+      "new_facts": "work/2026-10-30/new-facts-il-coalition-61-29.md"
+    },
+    {
+      "claim": "us-iran-talks-announced-29",
+      "at": "2026-10-28T12:34:00+01:00",
+      "agents": [
+        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.07, "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "p": 0.05, "inputs": ["dossier", "reference-data", "overnight-facts", "signals"] },
+        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "p_blind": 0.04, "inputs_blind": ["own-research"], "p": 0.04, "inputs": ["own-research", "dossier", "overnight-facts", "signals"] },
+        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.08, "inputs_blind": ["dossier", "overnight-facts", "reference-data"], "p": 0.07, "inputs": ["dossier", "overnight-facts", "reference-data", "signals"] },
+        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "p": 0.05, "inputs": ["signals", "dossier", "overnight-facts"], "anchor": "Polymarket 'Next US-Iran senior diplomatic meeting by October 31' Yes 0.0305 read 11:32Z; +0.03 because an announced future date also counts, -0.01 for the short window" },
+        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-10-28T12:32:00+01:00", "p_blind": 0.07, "inputs_blind": ["dossier", "overnight-facts"], "p": 0.06, "inputs": ["dossier", "overnight-facts", "signals"] }
+      ],
+      "combination": { "method": "geo-odds" },
+      "combined": 0.053,
+      "combined_blind": 0.063,
+      "red_team": { "model": "claude-opus-5-5", "at": "2026-10-28T12:33:00+01:00", "verdict": "stands", "risk": "Tehran accepting Qatar's seven-day draft early and an official naming a start date, though Iran's reply is expected only by the end of the week." },
+      "market": { "p": 0.0305, "read_at": "2026-10-28T11:32:18Z", "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt" },
+      "new_facts": "work/2026-10-30/new-facts-us-iran-talks-announced-29.md"
+    }
+  ]
+}
