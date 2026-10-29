@@ -49,3 +49,7 @@ The Sakharov Prize went to the International Criminal Court and its officials, t
 
 ## Coverage
 - 2026-10-28 run, edition 2026-10-28: WMO Greenhouse Gas Bulletin (27 Oct) was missed though announced in advance; the WMO/UNEP pre-COP report calendar is not in the sweep. Added to pipeline/sources.json.
+
+### 2026-10-29 run
+- Claim design · il-yashar-largest-28 (edition 2026-10-29): the criterion asked which list won the most votes, but the reachable count reported seats; the resolver had to infer the vote order from seats (Likud 26, Yashar 21 at about 90% counted). Name a source that publishes raw vote totals, or ask about seats.
+- Coverage · edition 2026-10-29: five significant events of 28 Oct were missed (Toledo high-speed collision, Belgrade embassy knife attack, Pellegrini on Slovak airspace, Russia–Ukraine strikes, Reuters' Iran-war cost estimate); none was announced in advance, so no sweep gap. Reuters and AP lists were unreachable.
