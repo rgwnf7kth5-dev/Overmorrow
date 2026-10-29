@@ -3,8 +3,8 @@
  "events_date": "2026-10-31",
  "method_version": 4,
  "number_expected": 10,
- "prepared_at": "2026-10-29T19:48:30Z",
- "candidates": 69,
+ "prepared_at": "2026-10-29T19:58:08Z",
+ "candidates": 77,
  "running": [
   {
    "title": "Spain high-speed train collision near Urda (Toledo): fallout for transport minister Óscar Puente",
@@ -3780,6 +3780,94 @@
     "uncertainty": 2
    },
    "why": "a claim about fighting resuming borders on forecasting violence; the extension decision is the open, checkable step"
+  },
+  {
+   "event": "Italy: USB general strike on Fri 30 Oct closes at least one ATM (Milan) or ATAC (Rome) metro line despite the ministry's postponement order",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "the strike day is Fri 30 Oct, the events day of the edition dated 31 Oct, which already carries it-strike-30 on the same strike; a second claim on it here would report Friday in Sunday's paper"
+  },
+  {
+   "event": "Prague: STAN and Spolu announce a coalition with Praha sobě or the Pirates by 31 Oct",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "Hlaváček (ČTK, 27 Oct) said the working groups run until the end of next week and the result will be announced at the start of the week after (about 9 Nov). The tripartite meetings are on 2–3 Nov, so a deal by 31 Oct is near-certain NO."
+  },
+  {
+   "event": "Zlín coalition agreement without ANO concluded by 31 Oct",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "The next negotiating round is on Sunday 1 Nov (ČTK, 28 Oct), outside the window."
+  },
+  {
+   "event": "A big-city constituent council session elects a mayor on Fri 30 Oct (the earliest legal day; ČT24 25 Oct)",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "No statutory city with a session on 30 Oct was found within the search budget. Olomouc meets on 9 Nov and Jičín on 4 Nov. Where coalitions are signed (Pardubice, Ústí), the election is near-certain."
+  },
+  {
+   "event": "ČEZ shareholder vote on its transformation",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "The AGM was on 1 June 2026 and no extraordinary meeting is listed for 30–31 Oct (cez.cz)."
+  },
+  {
+   "event": "VW names a new Škoda Auto CEO by 31 Oct",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "No date is set. E15 (28 Oct, paywalled) says only that the selection is under way; leans NO and is undated."
+  },
+  {
+   "event": "California SEIU Local 1000 reaches a tentative agreement at mediation resuming 30 Oct",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 2
+   },
+   "why": "Low relevance for the readership, and a deal at the first resumed session is unlikely (WSWS 22 Oct; CalMatters 8 Oct)."
+  },
+  {
+   "event": "O2 Slovakia–UPC Slovakia legal merger",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 1
+   },
+   "why": "Effective 1 Nov (E15, 29 Oct), outside the window and certain."
   }
  ]
 }
