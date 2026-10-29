@@ -141,7 +141,7 @@
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
     "yes": 1,
-    "no": 11
+    "no": 17
    }
   },
   {
@@ -151,7 +151,7 @@
    "n": "own record only",
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
-    "yes": 2,
+    "yes": 4,
     "no": 3
    }
   },
@@ -162,7 +162,7 @@
    "n": "own record only",
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
-    "yes": 1,
+    "yes": 2,
     "no": 0
    }
   },
@@ -218,7 +218,7 @@
    "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
    "own_record": {
     "yes": 3,
-    "no": 3
+    "no": 4
    }
   },
   {
@@ -250,7 +250,7 @@
    "n": "large; cancellations are rare",
    "source": "News record (estimate pending a full count)",
    "own_record": {
-    "yes": 2,
+    "yes": 3,
     "no": 0
    }
   },
@@ -317,7 +317,7 @@
    "source": "Own record (from 27 Oct 2026)",
    "own_record": {
     "yes": 1,
-    "no": 4
+    "no": 5
    }
   },
   {
@@ -326,6 +326,72 @@
    "base_rate": 0.7,
    "n": "small; Latin American and European runoffs",
    "source": "News record (estimate); own record from 27 Oct 2026",
+   "own_record": {
+    "yes": 0,
+    "no": 1
+   }
+  },
+  {
+   "id": "company-results-beat-threshold",
+   "description": "A listed company's reported quarterly figure beats a consensus-based threshold",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
+   "own_record": {
+    "yes": 1,
+    "no": 0
+   }
+  },
+  {
+   "id": "budget-measure-trailed-in-press",
+   "description": "A fiscal measure widely trailed in the press before a budget statement is included in it",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
+   "own_record": {
+    "yes": 2,
+    "no": 0
+   }
+  },
+  {
+   "id": "honours-specific-person",
+   "description": "A specific contested person is named among state honours recipients",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
+   "own_record": {
+    "yes": 0,
+    "no": 1
+   }
+  },
+  {
+   "id": "central-bank-dissent",
+   "description": "At least one dissent at a central-bank rate decision when dissent is signalled",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
+   "own_record": {
+    "yes": 1,
+    "no": 0
+   }
+  },
+  {
+   "id": "central-bank-moves-as-priced",
+   "description": "A central bank moves its rate when markets price the move as likely",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
+   "own_record": {
+    "yes": 1,
+    "no": 0
+   }
+  },
+  {
+   "id": "runoff-loser-files-contest-short-window",
+   "description": "A defeated runoff candidate files a formal electoral contest within about two days",
+   "base_rate": null,
+   "n": 0,
+   "source": "Own record only (created 2026-10-29)",
    "own_record": {
     "yes": 0,
     "no": 1

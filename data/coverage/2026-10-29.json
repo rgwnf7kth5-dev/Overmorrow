@@ -1,0 +1,94 @@
+{
+ "edition": "2026-10-29",
+ "checked_at": "2026-10-29T05:05:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Reuters World (reuters.com/world: HTTP 401)",
+  "AP (apnews.com: HTTP 403)"
+ ],
+ "note": "Lists used: (a) Wikipedia Portal:Current events/2026 October 28, read via the raw wikitext (index.php?action=raw); (c) ČT24 'SOUHRN: Zásadní události středy 28. října' plus the ČT24 front page, and the ČTK (ceskenoviny.cz) front page plus /cr/ and /svet/ section lists, items dated 28 Oct only. (b) Reuters World and AP were blocked and two web searches found no dated top-story list for the day, so list (b) is missing; Wikipedia items citing Reuters/AP were not counted as (b), as in the 2026-10-28 file. Wikipedia-only items (Saudi airstrike on Al Hazm market, Kadugli airstrike, Jio IPO, Cyclone Arnab landfall, US sanctions on Rwanda's defence ministry, UNGA Cuba embargo vote, Tommy Robinson conviction) appeared in one list only; the Bank of Canada hike (Wikipedia only) did not qualify but was covered (ca-boc). ČTK-only items (Pavel–Stubb call about the Putin call, WSJ: Vance letter to Iran, Trump on a Putin–Zelensky meeting, Oleshky truce holding per AP, Rubio's holiday message, Politico: EU drops associate membership for Canada, Klaus on statehood, Vučić coup report) and ČT24-only items (sea drones hit cargo ship in the Black Sea, Moldova security council after cyberattack, Siberian permafrost methane study) did not qualify. Sport (Czech cup, World Series, Japan Series) and market prices (EU gas briefly above EUR 100/MWh) excluded. Okamura on abolishing ČT/ČRo, MP Pražák leaving ANO and the National Theatre strike alert are 27 Oct items (counted in the 2026-10-28 file).",
+ "events": [
+  {
+   "title": "Two high-speed trains collide between Los Yébenes and Urda (Toledo, Spain): at least 68 dead, 179 injured; minister blames a dispatcher error; a Czech citizen among the missing",
+   "scope": "europe",
+   "lists": ["wikipedia", "ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/za-tragickou-srazkou-vlaku-ve-spanelsku-chyba-dispecera-patra-se-po-cechovi/2894120",
+   "status": "missed",
+   "note": "Accident; not announced in advance and not foreseeable by any sweep. Happened after the evening planning; only a morning refresh of the running lists could have added it."
+  },
+  {
+   "title": "Israel count: Netanyahu's bloc leads (about 54 seats at 84.5% counted) but has no majority; Arab parties strengthen; Likud accuses Arab parties of stealing the election",
+   "scope": "world",
+   "lists": ["wikipedia", "ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/posileni-arabskych-stran-v-izraeli-muze-byt-klicem-k-nove-vlade-379085",
+   "status": "covered",
+   "story": "il-count"
+  },
+  {
+   "title": "Flávio Bolsonaro lands near Miami and declares himself Brazil's rightful president-elect; Lula accuses the US of colluding with him",
+   "scope": "world",
+   "lists": ["wikipedia", "ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/porazeny-bolsonaro-se-z-usa-prohlasil-za-pravoplatneho-prezidenta-brazilie/2894062",
+   "status": "covered",
+   "story": "br-aftermath",
+   "note": "The edition's story asked whether he would file an annulment request; the self-proclamation from the US was not foreseen (the planning file kept 'publicly recognises Lula's victory' only as a dropped fallback)."
+  },
+  {
+   "title": "Knife attacker wounds a police officer outside Israel's embassy in Belgrade and is shot dead",
+   "scope": "europe",
+   "lists": ["wikipedia", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/utocnik-v-belehrade-u-izraelske-ambasady-napadl-cetnika-ten-ho-zastrelil/2894102",
+   "status": "missed",
+   "note": "Attack; not announced in advance and not foreseeable."
+  },
+  {
+   "title": "Independence Day at Prague Castle: Pavel's speech warns against ignoring crises and rash changes; 51 people decorated (Čáslavská, Forman, Janžurová)",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/pavel-varoval-pred-prehlizenim-krizi-i-neuvazenymi-zmenami/2894032",
+   "status": "covered",
+   "story": "cz-state-honours"
+  },
+  {
+   "title": "Vítkov memorial ceremony for the 108th anniversary of Czechoslovakia; Pavel promotes 16 generals, Hlaváč to army general",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/pavel-jmenoval-hlavace-armadnim-generalem-celkem-povysil-16-muzu/2893208",
+   "status": "dropped",
+   "note": "Both in the dropped list: generals' appointment 'practically certain (promotions announced by the Castle); low uncertainty value'; Vítkov ceremony 'ceremonial; no open checkable outcome beyond attendance (covered via the Vladislav Hall claims)'."
+  },
+  {
+   "title": "Students' Solidarity Committee calls a 3 Nov strike over the licence-fee abolition; holiday rallies for ČT and ČRo in Brno, Plzeň and Hradec Králové",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/lide-v-cesku-opet-protestovali-proti-zmenam-u-ct-a-cro-studenti-ohlasili-stavku/2894141",
+   "status": "covered",
+   "story": "cz-licence-fees",
+   "note": "The edition's fee story covered the dispute (coalition deal, Okamura recall motion). The holiday protests themselves were in the dropped list: 'no protest announced for 28 Oct (Milion chvilek next rally 15 Nov); speculative'."
+  },
+  {
+   "title": "Pellegrini: Slovakia can again fully protect its own airspace (F-16s in service, ending allied air policing incl. Czech)",
+   "scope": "europe",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/slovensko-je-opet-schopne-plne-chranit-sve-nebe-oznamil-prezident-pellegrini/2894131",
+   "status": "missed",
+   "note": "Announced by the president on the 28 Oct anniversary; no advance notice of the announcement found in the sweep (not checked further, search cap). Could only have been foreseen from Slovak defence-ministry F-16 delivery news."
+  },
+  {
+   "title": "Russia and Ukraine report dead and wounded after mutual strikes: injuries in Kharkiv, Ukraine hits a Russian chemical plant",
+   "scope": "europe",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/ukrajina-a-rusko-informuji-o-mrtvych-a-ranenych-po-vzajemnych-utocich/2894091",
+   "status": "missed",
+   "note": "Daily war strikes; not announced. The edition's ua-peace story covered diplomacy only; the planning file dropped an Oleshky-truce claim but had no strikes item. ct24 = front page (not in its evening SOUHRN)."
+  },
+  {
+   "title": "Reuters: US cost of the war on Iran exceeds $47bn",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/naklady-usa-na-valku-v-iranu-presahuji-47-miliard-dolaru-bilion-kc/2894093",
+   "status": "missed",
+   "note": "A Reuters calculation published on the day, not a scheduled event; not announced in advance. The us-iran story covered the talks track only. ct24 = front page (not in its SOUHRN)."
+  }
+ ]
+}
