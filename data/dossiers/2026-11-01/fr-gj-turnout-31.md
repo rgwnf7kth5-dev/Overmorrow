@@ -1,0 +1,47 @@
+# fr-gj-turnout-31
+
+- **Claim:** By 23:59 Paris time on Saturday 31 October 2026, more than 300,000 people demonstrate across France that day (gilets jaunes "Act III" and the other cost-of-living / civil-liberties marches and rallies), according to the Interior Ministry's nationwide count for Saturday 31 October.
+- **Criterion:** YES if the first nationwide participant figure for Saturday 31 Oct 2026 published by the French Interior Ministry (communiqué, statement by the minister, or the ministry figure as reported by AFP, Le Monde, franceinfo or BFMTV) is greater than 300,000. NO if that figure is 300,000 or lower. The organisers' or CGT figures do not count; a Paris-only figure does not count. If the ministry gives a range, its midpoint is used. Until a ministry nationwide figure is available the claim stays pending; it is void only if the ministry never gives a nationwide figure for 31 Oct.
+- **Event window:** 2026-10-31T00:00:00+01:00 to 2026-10-31T23:59:59+01:00 (Europe/Paris); ministry figure normally released Saturday evening
+- **Written at:** 2026-10-29T18:15:00Z
+
+## Schedule
+- Gilets jaunes coordination calendar (as relayed): Fri 30 Oct pot-and-pan protest outside the Assemblée 18:00–21:00 and 19:00 nationwide; Sat 31 Oct "rallies and sit-ins at 2 p.m. outside the National Assembly, at the starting or finishing points of marches, and outside town halls where there is no march"; 5–6 Nov strikes/blockades; 7 Nov Act IV. — Sortir à Paris https://www.sortiraparis.com/en/news/in-paris/articles/355779-october-31-demonstration-what-to-expect-in-paris-route-and-information (updated 2026-10-29 09:40, read 2026-10-29T17:58Z)
+- Paris police prefecture rejected both routes filed for 31 Oct: gilets jaunes Bastille–Concorde and CGT/inter-union Bastille–Nation; prefecture offered Porte de Bagnolet–Porte de Charenton, which the unions reject. — same page: "The Paris police headquarters rejected both"; Sortir à Paris https://www.sortiraparis.com/en/news/in-paris/articles/356351-october-31-demonstration-in-paris-inter-union-coalition-s-route-rejected-a-new-one-proposed (updated 2026-10-29 09:16, read 2026-10-29T17:59Z) "the Paris police prefecture has rejected the inter-union coalition's Bastille–Nation route and proposed a route along the edge of the capital"
+- Inter-union coalition asked the administrative court's emergency judge to force a prefecture decision (Le Parisien 29 Oct 15:25, as relayed). — Sortir à Paris https://www.sortiraparis.com/en/news/in-paris/articles/355206-yellow-vests-in-paris-on-october-31-disputed-route-what-impact-on-travel (updated 2026-10-29 16:01, read 2026-10-29T17:59Z) "the union coalition has petitioned the administrative court's emergency judge"
+- So the protest day is going ahead (route dispute only); the suggested "prefecture bans the Bastille–Concorde march" claim is already settled (rejected), hence the turnout claim.
+
+## Facts
+- Act I, Sat 17 Oct: Interior Ministry about 550,000 nationwide, organisers 800,000; 110 marches. — AFP via La DH https://www.dhnet.be/dernieres-depeches/2026/10/17/manifestations-en-france-environ-550000-manifestants-en-france-400-interpellations-GTPRJOCSN5EG3AQLIP4AHRCEU4/ (published 2026-10-17 19:06Z, read 2026-10-29T18:04Z) "Environ \"550.000\" manifestants en France"; also Sortir à Paris https://www.sortiraparis.com/en/news/in-paris/articles/355065-act-ii-on-october-24-what-to-expect-in-paris-this-saturday (updated 2026-10-22 18:06, read 2026-10-29T17:59Z) "around 550,000 people took to the streets across France, as reported by the Interior Ministry, versus the 800,000 claimed by organizers"
+- Act II, Sat 24 Oct: Interior Ministry 410,000 nationwide (Paris 110,000); CGT 800,000 (Paris 250,000). — Journée mondiale citing Le Monde https://www.journee-mondiale.com/mobilisation-du-24-octobre-le-bilan-actualise-au-25-octobre-2026-de-410-000-a-800-000-14241.htm (published 2026-10-25 17:07, read 2026-10-29T18:05Z) "Le ministère de l'Intérieur compte 410 000 manifestants en France, tandis que la CGT en revendique 800 000"; Sud Radio/AFP https://www.sudradio.fr/societe/apres-un-samedi-plus-calme-quattendu-les-autorites-prudentes-sur-les-suites-de-la-colere-sociale (published 2026-10-25 15:00Z, read 2026-10-29T18:05Z) "ont rassemblé entre 410.000 et 800.000"; Sortir à Paris 355779 (above, citing ICI).
+- The ministry published an official bulletin for 24 Oct (page title "Bilan de la journée de mobilisation nationale du 24 octobre 2026", https://www.interieur.gouv.fr/actualites/communiques-de-presse/bilan-de-journee-de-mobilisation-nationale-du-24-octobre-2026 — found by search, page did not load). Ministry figures exist for both earlier Saturdays.
+- Arithmetic (own): Act I → Act II −140,000 (−25%). The same proportional drop again gives about 306,000; 300,000 is 73% of the Act II figure.
+- Format of 31 Oct: the gilets jaunes call focuses on "stationary gatherings" (sit-ins at 14:00 at the Assemblée and town halls) rather than marches; theme shifted from cost of living to civil liberties. — Sortir à Paris 355779 (above) "The movement is focusing mainly on stationary gatherings."
+- Unions also on the street: CGT/inter-union filed a Paris march for 31 Oct ("third day of protests against the rising cost of living") — Sortir à Paris 356351 (above). High-school students encouraged to join but "still on their All Saints' Day break"; "How many will turn out on Saturday? It is hard to say in the middle of the school holidays. The real test is more likely to come when school resumes on Monday, November 2" — Sortir à Paris 355779.
+- Timing: 31 Oct is Halloween and the eve of All Saints' (Sun 1 Nov), a long weekend in the Toussaint school holidays. Next big dates already called: 3 Nov (students), 5–6 Nov strike/blockades, 7 Nov Act IV — which may draw people away from 31 Oct.
+- Government stance: Macron (26 Oct, Marseille) said marches on 31 Oct and 5 Nov would be routed away from city centres; Nuñez promised an "extremely robust" operation; prefects told not to authorise city-centre marches. — Sortir à Paris 355779; Sud Radio https://www.sudradio.fr/sud-radio/manifestation-du-31-octobre-vers-un-acte-iii-loin-des-centres-villes (27 Oct 12:41, carried over from agenda_world.json, not re-read).
+- 24 Oct security: 70,000 police/gendarmes deployed; for 31 Oct staffing raised to 75% (DGPN telegram, via BFMTV/RMC) — Sortir à Paris 355779.
+
+## Base rate
+- `protest-second-day-smaller` (pipeline/reference-classes.json): 0.8, n ≈ 10 French protest series since 2018 — a second nationwide day draws fewer than the first (ministry count). Loose fit: this is the third day, and the question is about a 300,000 threshold, not just "smaller". Series so far: 550,000 → 410,000. 2018 gilets jaunes series (same class source): 282,000 → 166,000 (−41%) Act I → II, and continued falling in Act III (own memory, not re-verified).
+- No class for "third day exceeds threshold"; the threshold is set near the trend-extrapolated value (≈306,000).
+
+## Schedule slip
+- Slip class: `strike-or-protest` → 0.250 [estimate] (`node scripts/refdata/slip.mjs strike-or-protest`, run 2026-10-29T18:03Z). Here the protest day itself cannot really slip (rallies are called regardless of route); the slip risk is in the count: the ministry may publish late (Sunday) or not at all for a smaller day. On 17 and 24 Oct figures came Saturday evening / Sunday.
+
+## Risks
+- Toward NO: school holidays + All Saints' long weekend; sit-in format instead of big marches; fatigue after two Saturdays; organisers saving forces for 5–7 Nov; city-centre routes refused; heavy security and identity checks may deter.
+- Toward YES: unions (CGT/inter-union) also mobilise, not only gilets jaunes; civil-liberties framing after route bans and curfews could re-energise; nationwide rallies at town halls everywhere; Act II was still 410,000 despite peripheral routes.
+- Count risk: if the day is smaller the ministry might give only partial (Paris) figures or publish late; a late figure leaves the claim pending; no nationwide figure at all makes it void (criterion revised 29 Oct 21:00 CET).
+- Ambiguity: whether the ministry figure includes all marches that day (unions + gilets jaunes) — it did on 24 Oct (single national total).
+
+## Sources
+- https://www.sortiraparis.com/en/news/in-paris/articles/355779-october-31-demonstration-what-to-expect-in-paris-route-and-information (curl)
+- https://www.sortiraparis.com/en/news/in-paris/articles/356351-october-31-demonstration-in-paris-inter-union-coalition-s-route-rejected-a-new-one-proposed (curl)
+- https://www.sortiraparis.com/en/news/in-paris/articles/355206-yellow-vests-in-paris-on-october-31-disputed-route-what-impact-on-travel (curl)
+- https://www.sortiraparis.com/en/news/in-paris/articles/355065-act-ii-on-october-24-what-to-expect-in-paris-this-saturday (curl)
+- https://www.dhnet.be/dernieres-depeches/2026/10/17/manifestations-en-france-environ-550000-manifestants-en-france-400-interpellations-GTPRJOCSN5EG3AQLIP4AHRCEU4/ (curl)
+- https://www.journee-mondiale.com/mobilisation-du-24-octobre-le-bilan-actualise-au-25-octobre-2026-de-410-000-a-800-000-14241.htm (curl)
+- https://www.sudradio.fr/societe/apres-un-samedi-plus-calme-quattendu-les-autorites-prudentes-sur-les-suites-de-la-colere-sociale (curl)
+- https://www.interieur.gouv.fr/actualites/communiques-de-presse/bilan-de-journee-de-mobilisation-nationale-du-24-octobre-2026 (did not load)
+- Search: "manifestation 24 octobre 2026 410 000 manifestants ministère de l'Intérieur" (2026-10-29T18:04Z)

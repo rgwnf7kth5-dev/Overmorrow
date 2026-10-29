@@ -1251,6 +1251,98 @@
      "market": null,
      "note": "After the 27 October election Netanyahu's Likud is the largest party and his bloc has 53–54 seats against 48–49 for the Eisenkot-led bloc, with Arab-led parties at 17–19; neither side has 61. As leader of the largest party and bloc Netanyahu is the default choice for the first mandate after certification on 4 November, unless the Arab parties and Bennett all recommend Eisenkot.",
      "note_cs": "Po volbách 27. října je Netanjahuův Likud nejsilnější stranou a jeho blok má 53 až 54 křesel proti 48 až 49 pro blok vedený Eisenkotem; arabské strany mají 17 až 19 mandátů a 61 nemá žádná strana sporu. Jako předseda nejsilnější strany a bloku je Netanjahu po potvrzení výsledků 4. listopadu přirozeným kandidátem na první pověření, pokud Eisenkota nedoporučí arabské strany i Bennett."
+    },
+    {
+     "at": "2026-10-29T21:00:00+01:00",
+     "p": 0.46,
+     "combined": 0.462,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:37:21Z",
+       "p": 0.5,
+       "reason": "Signals: thin direct Manifold 0.42 (Eisenkot 0.52), Polymarket next-PM Netanyahu falling, Kalshi 0.21; checker confirms the 53 vs 67 count means Arab recommendations for Eisenkot would top Netanyahu. Base rate 7/9 still argues the right often gets the mandate when the opposition splits, so I move partway toward the market, from 0.58 to 0.50.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.58,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:38:01Z",
+       "p": 0.47,
+       "reason": "Dossier step: count 53 vs 48+19 confirmed; Joint List signals openness; Herzog wants to avoid another election; certification ~4 Nov. Netanyahu is default unless Arab lists recommend Eisenkot — Ra'am alone would put Eisenkot at ~56 if all 48 back him, but Arab recommendations and Herzog's weighting of formation prospects are uncertain -> 0.52. Signals: thin Manifold Netanyahu 0.42 (Eisenkot 0.52), Polymarket next-PM Netanyahu 0.43; markets lean against Netanyahu, trimmed to 0.47.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.46,
+       "inputs_blind": [
+        "own-research"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-29T19:41:06Z",
+       "p": 0.41,
+       "reason": "The only direct market (thin Manifold, Netanyahu 0.42 / Eisenkot 0.52 / nobody 0.014) sits on my blind figure; Polymarket next-PM 0.43 and Kalshi 0.21 measure a different thing (eventual PM) and diverge from each other, so I give them little weight. Our own 28 Oct figure of 0.60 predates the count settling at 53 vs 67. Nudge from 0.40 to 0.41 only.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.4,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:36:52Z",
+       "p": 0.41,
+       "reason": "Anchor: Manifold direct-match 0.42 (thin, 10 traders); cross-check Polymarket next-PM Netanyahu 0.43 (liquid, but eventual PM not first mandate; Kalshi 0.21). Count settled 53 vs 48+19: if Hadash-Ta'al/Ra'am recommend Eisenkot he out-recommends Netanyahu; Herzog may still weigh that Zionist parties reject Arab partners and Netanyahu's bloc is the cohesive largest, as Rivlin did in 2021. Timing (certification ~4 Nov, consultations within a week) is not a constraint before 30 Nov. Slight trim to 0.41. Down from our 0.60.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-29T19:36:21Z",
+       "p": 0.52,
+       "reason": "Thin markets 0.42-0.43; Arab-list recommendation of Eisenkot is real risk but Balad/Hadash often refuse; raised-down from blind.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.66,
+       "inputs_blind": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "Manifold (thin; direct match: 'Who will President Herzog first task…')",
+      "url": "https://manifold.markets/Terminator2/who-will-president-herzog-first-tas",
+      "p": 0.42,
+      "read_at": "2026-10-29T18:10:00Z",
+      "volume": 577
+     },
+     "note": "The count has settled: Netanyahu's bloc 53 seats against 48 for the Jewish-led opposition and 19 for the Arab-led lists, so if the Arab lists, Bennett and Liberman all recommend Gadi Eisenkot, he would out-recommend Netanyahu (as Gantz did in 2020). Likud claims fraud; police reject it. Herzog wants to avoid another election; consultations are expected after certification on 4 Nov. Down from 60%.",
+     "note_cs": "Sčítání je uzavřené: Netanjahuův blok má 53 křesel, opozice vedená židovskými stranami 48 a arabské kandidátky 19. Pokud by Gadiho Eisenkota doporučily arabské strany, Bennett i Liberman, získal by víc doporučení než Netanjahu, jako v roce 2020 Ganc. Likud mluví o podvodu, policie to odmítá. Herzog chce zabránit dalším volbám; konzultace se čekají po potvrzení výsledků 4. listopadu. Pokles z 60 %."
     }
    ],
    "result": null
@@ -1362,6 +1454,98 @@
      "market": null,
      "note": "The 27 October election left both blocs short of 61 seats (Netanyahu's bloc 53–54, Eisenkot-led bloc 48–49, Arab-led parties 17–19), the same kind of deadlock as in 2019, when two elections produced no government. The ensemble cut the chance of a government sworn in by 31 January from 46% to 24%; thin government-formation markets point to about 20%.",
      "note_cs": "Volby 27. října nedaly žádnému bloku 61 křesel (Netanjahuův blok 53 až 54, blok vedený Eisenkotem 48 až 49, arabské strany 17 až 19), což připomíná patovou situaci z roku 2019, kdy dvoje volby nepřinesly vládu. Soubor prognóz snížil šanci, že nová vláda složí slib do 31. ledna, ze 46 na 24 %; málo likvidní trhy na sestavení vlády ukazují zhruba 20 %."
+    },
+    {
+     "at": "2026-10-29T21:00:00+01:00",
+     "p": 0.31,
+     "combined": 0.314,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:37:21Z",
+       "p": 0.33,
+       "reason": "Signals: thin Polymarket legs interpolate to 0.37 for 31 Jan, up from ~0.20; 'exactly one election' 0.52. Deadlock reference class (2/4) and depth of the deadlock keep me below market; small move up from 0.31.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.31,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:38:01Z",
+       "p": 0.35,
+       "reason": "Dossier step: main parties reject Arab partners, deadlock, first mandate plus extension runs to ~late Dec, little time for a second -> 0.33. Signals: thin Polymarket interpolation 0.37 (doubled since 28 Oct); nudged up slightly to 0.35.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.38,
+       "inputs_blind": [
+        "own-research"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-29T19:41:06Z",
+       "p": 0.31,
+       "reason": "Thin Polymarket formation legs (by 31 Dec 0.275, by 28 Feb 0.47, interpolated 0.37 for 31 Jan, ~26k volume) have doubled since 28 Oct, which says traders see some unity/defection path I cannot see in the facts. The by-31-Dec leg at 0.275 looks too high against the mandate calendar (first mandatee would need to finish inside 42 days), so I move only part of the way: 0.28 to 0.31.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.28,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:36:52Z",
+       "p": 0.29,
+       "reason": "Anchor: Polymarket formation legs interpolated 0.37 (thin, ~26k combined; 31 Dec 0.275, 28 Feb 0.47). Linear interpolation overstates Jan: approvals cluster at mandate expiries (first mandate+extension ~late Dec, second ~late Jan, then 21-day Knesset phase), so a 31 Jan vote needs success in the first mandate or a fast second one. Arithmetic is hard: Netanyahu needs 8 crossers; Jewish-led opposition 48 + Ra'am still short of 61. Herzog's anti-election push gives some unity-government upside. 0.29, above our 0.24 given market move.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-29T19:36:21Z",
+       "p": 0.29,
+       "reason": "Thin market interpolation 0.37; deadlock structure keeps me lower.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.22,
+       "inputs_blind": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "Polymarket (thin)",
+      "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+      "p": 0.37,
+      "read_at": "2026-10-29T18:00:33Z",
+      "volume": 26257
+     },
+     "note": "With the count settled at 53 v 67 and neither camp near 61 without the Arab lists or a cross-bloc deal (UTJ offering Eisenkot the premiership for a draft exemption; Eisenkot rules out serving with Netanyahu), the forecasters see a slightly better chance of a government by 31 January than a week ago; thin markets on government formation roughly doubled. Up from 24%.",
+     "note_cs": "Při konečném poměru 53 ku 67 nemá žádný tábor bez arabských stran nebo dohody napříč bloky ke 61 hlasům blízko (UTJ nabízí Eisenkotovi post premiéra výměnou za výjimku z branné povinnosti, Eisenkot odmítá vládnout s Netanjahuem). Prognostici přesto vidí o něco vyšší šanci na vládu do 31. ledna než před týdnem; slabě obchodované trhy na sestavení vlády zhruba zdvojnásobily ceny. Nárůst z 24 %."
     }
    ],
    "result": null
@@ -1829,6 +2013,98 @@
      },
      "note": "Iran told Pakistan on 20 October there would be no talks until its seven conditions are met, Washington insists on the nuclear file and enrichment cuts first, and the question requires both governments to confirm a same-venue negotiating round, not just messages passed through Qatar or Pakistan. Reuters reports Tehran is dragging out the stalemate until the 3 November US midterms, so mediators who have convened rounds quickly before could open a window in November and December.",
      "note_cs": "Írán 20. října Pákistánu vzkázal, že jednat nebude, dokud nebude splněno jeho sedm podmínek, Washington naopak trvá na tom, že se nejprve musí řešit jaderný program a omezení obohacování uranu, a otázka vyžaduje, aby obě vlády potvrdily kolo jednání na stejném místě, nikoli jen předávání zpráv přes Katar či Pákistán. Podle agentury Reuters Teherán patovou situaci záměrně protahuje až do amerických voleb 3. listopadu, takže zprostředkovatelé, kteří už dříve dokázali kola jednání rychle svolat, by mohli v listopadu a prosinci otevřít prostor k rozhovorům."
+    },
+    {
+     "at": "2026-10-29T21:00:00+01:00",
+     "p": 0.4,
+     "combined": 0.397,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:37:21Z",
+       "p": 0.37,
+       "reason": "Signals: Polymarket senior-meeting-by-31-Dec 0.495 (up from 0.345) but thin, internally inconsistent with a sibling, and looser than our both-governments-confirm same-venue criterion; strike threat after midterms remains. Move partway from 0.32 to 0.37.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.32,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:38:01Z",
+       "p": 0.36,
+       "reason": "Dossier step: Iran on 20 Oct said no talks until seven conditions met; Vance letter received but unanswered; US reportedly warned of short campaign after midterms; strict both-sides same-venue criterion -> 0.30. Signals: Polymarket 0.495 by 31 Dec but looser definition and inconsistent sibling (no meeting 0.335); moved partly to 0.36.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.42,
+       "inputs_blind": [
+        "own-research"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-29T19:41:06Z",
+       "p": 0.47,
+       "reason": "Polymarket 'senior diplomatic meeting by 31 Dec' jumped from 0.345 to 0.495 on the Vance letter (284k volume), while a thin sibling implies 0.665; both use a looser definition than our both-sides-confirm, same-venue criterion, and the checker notes the US reportedly leans toward strikes after 3 Nov. The counter-precedent to my 2025 analogy is that after the June 2025 strikes talks did not resume for months. Small move toward the market: 0.45 to 0.47.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.45,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:36:52Z",
+       "p": 0.39,
+       "reason": "Anchor: Polymarket senior diplomatic meeting by 31 Dec 0.495 (283k; sibling implies 0.665, inconsistent and thin, so I use the main leg). Our criterion needs both governments to confirm a same-venue round; indirect counts, which is looser, but the dual-confirmation is stricter. Iran has not replied to the Vance letter and holds to seven conditions; reported US plan for a short strike campaign after 3 Nov could delay talks beyond December (or force a quick ceasefire round). Net cut to 0.39, up from our 0.31.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-29T19:36:21Z",
+       "p": 0.4,
+       "reason": "Market 0.495 looser definition; Vance letter, but Iran silent and strike talk; dual-confirmation criterion.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.33,
+       "inputs_blind": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt",
+      "p": 0.495,
+      "read_at": "2026-10-29T18:00:55Z",
+      "volume": 283681
+     },
+     "note": "Vice President Vance sent a letter via Qatar to the head of Iran's security council, Rezaei, proposing talks \"as soon as next week\" in Qatar or Türkiye; Tehran has received it but not replied and repeats its seven conditions, while Trump denies directing talks and reportedly told Gulf allies to prepare for a campaign after the 3 Nov midterms. A first written channel since the war raises the chance of a confirmed round by 31 Dec. Up from 31%.",
+     "note_cs": "Viceprezident Vance poslal přes Katar dopis tajemníkovi íránské bezpečnostní rady Rezáímu s návrhem na jednání „hned příští týden“ v Kataru nebo Turecku. Teherán dopis obdržel, ale neodpověděl a trvá na sedmi podmínkách; Trump popírá, že by jednání řídil, a podle zpráv vyzval spojence v Zálivu, aby se připravili na tažení po volbách 3. listopadu. První písemný kanál od začátku války zvyšuje šanci na potvrzené kolo jednání do 31. prosince. Nárůst z 31 %."
     }
    ],
    "result": null
@@ -2126,6 +2402,103 @@
      "market": null,
      "note": "The BC Conservatives won a majority on 24 October (elected or leading in 64 of 93 seats), David Eby conceded and resigned as NDP leader, and Lorne Doerkson has met the lieutenant-governor and named a transition team; the only remaining risk is a swearing-in after 30 November while mail-in ballots are counted.",
      "note_cs": "Konzervativci v Britské Kolumbii vyhráli 24. října většinu (vedou nebo mají zvoleno 64 z 93 křesel), David Eby uznal porážku a odstoupil z čela NDP a Lorne Doerkson se sešel s guvernérkou a jmenoval předávací tým. Zbývá jen riziko, že přísaha proběhne až po 30. listopadu kvůli sčítání korespondenčních hlasů."
+    },
+    {
+     "at": "2026-10-29T21:00:00+01:00",
+     "p": 0.84,
+     "combined": 0.842,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:37:21Z",
+       "p": 0.88,
+       "reason": "Signals: Polymarket 0.959 does not price timing; checker notes BC 2024 swore in on 18 Nov right after certification, supporting the ~12-day slack. No change.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.88,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:38:01Z",
+       "p": 0.87,
+       "reason": "Dossier step: Doerkson premier-designate with transition team; clerk says swearing-in not before certification expected 18 Nov (may refer only to MLA oaths; premier is appointed by LG), leaving ~12 days; 2024 precedent sworn in 18 Nov -> 0.85. Signals: Polymarket 0.959 prices identity not timing; slight up to 0.87.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.9,
+       "inputs_blind": [
+        "own-research"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-29T19:41:06Z",
+       "p": 0.57,
+       "reason": "No market prices the timing (Polymarket 0.959 is only who). The checker's point that the Clerk's remark may cover MLA oaths rather than the premier, who is appointed by the Lieutenant Governor, opens a path to an earlier ceremony, so a small upward nudge: 0.55 to 0.57. Our earlier 0.93 assumed no certification floor and should be cut.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.55,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:36:52Z",
+       "p": 0.9,
+       "reason": "Anchor: Polymarket Doerkson next premier 0.959 (no timing). The outcome is settled (64/93 majority, Eby conceded); the only risk is timing. The clerk's 18 Nov certification floor probably applies to MLA oaths, not the LG appointing a premier and cabinet, but BC in 2024 also swore in on 18 Nov, so the practical earliest date may be ~18 Nov, leaving 12 days of slack. A ceremony between 18 and 27 Nov is the usual case. 0.90, slightly down from our 0.93.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-29T19:36:21Z",
+       "p": 0.88,
+       "reason": "Certification 18 Nov leaves 12 days; 2024 precedent swore in 18 Nov; market 0.96 no timing.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.86,
+       "inputs_blind": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "Polymarket (partial: next premier, no timing)",
+      "url": "https://polymarket.com/event/next-premier-of-british-columbia",
+      "p": 0.959,
+      "read_at": "2026-10-29T17:59:47Z",
+      "volume": 109177
+     },
+     "note": "The legislature clerk says swearing-in ceremonies cannot take place before the results are certified, expected on 18 Nov, leaving about 12 days before the 30 Nov deadline (in 2020 and 2024 the lag after certification was 10–18 days). Down from 93%. The forecasters disagree (57%–90%) on whether the certification floor binds the premier's own oath or only the MLAs' oaths: same facts, different judgement (genuine disagreement), kept as is.",
+     "note_cs": "Úředník zákonodárného sboru uvádí, že přísahy se nemohou konat před potvrzením výsledků, které se čeká 18. listopadu; do termínu 30. listopadu tak zbývá asi 12 dní (v letech 2020 a 2024 to po potvrzení trvalo 10 až 18 dní). Pokles z 93 %. Prognostici se rozcházejí (57–90 %) v tom, zda se tato podmínka týká i přísahy premiéra, nebo jen poslanců: stejná fakta, jiný úsudek, rozptyl ponechán.",
+     "market_note": "Polymarket's next-premier market (0.959) prices who becomes premier, not whether the swearing-in happens by 30 Nov.",
+     "disagreement": {
+      "cause": "genuine",
+      "note": "The forecasters disagree (57%–90%) on whether the certification floor binds the premier's own oath or only the MLAs' oaths: same facts, different judgement (genuine disagreement), kept as is."
+     }
     }
    ],
    "result": null
@@ -3327,7 +3700,7 @@
    ],
    "base_rate": {
     "class": "Spanish transport ministers resigning after deadly rail or air accidents (Trillo 2003, Álvarez 2008, Pastor 2013, Puente 2026 Adamuz)",
-    "rate": 0.0,
+    "rate": 0,
     "n": 4,
     "source": "data/dossiers/2026-10-31/es-puente-out-30.md"
    },
@@ -3378,6 +3751,132 @@
     }
    ],
    "result": null
+  },
+  {
+   "id": "eu-ecb-president-nominated-2026",
+   "scope": "europe",
+   "topic": "ECB: succession to Christine Lagarde",
+   "question": "Will the EU formally name Christine Lagarde's successor as ECB President by 31 December 2026?",
+   "question_cs": "Určí EU formálně do 31. prosince 2026 nástupce Christine Lagarde v čele ECB?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, a press release or conclusions on consilium.europa.eu (or the Official Journal) record either (a) the Council of the EU adopting its recommendation to the European Council naming a specific candidate for President of the ECB, or (b) the European Council adopting a decision appointing the next ECB President under Article 283(2) TFEU. A Eurogroup agreement, leaders' political endorsement or press reports alone do not count. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 23:59 SEČ tisková zpráva nebo závěry na consilium.europa.eu (nebo Úřední věstník EU) zaznamenají buď (a) přijetí doporučení Rady EU Evropské radě, které jmenovitě uvádí kandidáta na prezidenta ECB, nebo (b) přijetí rozhodnutí Evropské rady o jmenování příštího prezidenta ECB podle čl. 283 odst. 2 SFEU. Samotná dohoda Euroskupiny, politická podpora lídrů nebo zprávy médií se nepočítají. Jinak ne.",
+   "resolution_source": "https://www.consilium.europa.eu/en/press/press-releases/",
+   "opened": "2026-10-29",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "On 29 Oct 2026 the ECB announced that President Christine Lagarde will step down on 7 February 2027, nine months before the end of her term. Under Article 283(2) TFEU the European Council appoints her successor by qualified majority on a recommendation of the Council, after consulting the European Parliament and the ECB Governing Council. European Council President António Costa said the process would start immediately; Klaas Knot (backed by the Netherlands) and Pablo Hernández de Cos (backed by Spain) are named as front-runners.",
+   "sources": [
+    {
+     "title": "ECB: ECB President Lagarde to step down on 7 February 2027",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html"
+    },
+    {
+     "title": "The National: ECB President Christine Lagarde resigns after months of speculation",
+     "url": "https://www.thenationalnews.com/news/europe/2026/10/29/ecb-president-christine-lagarde-resigns-after-months-of-speculation/"
+    },
+    {
+     "title": "HNGN: Lagarde to Leave ECB Nine Months Early, Successor Race Opens",
+     "url": "https://www.hngn.com/articles/273612/20261029/lagarde-leave-ecb-nine-months-early-successor-race-opens.htm"
+    }
+   ],
+   "base_rate": {
+    "class": "ECB presidency appointments: formal Council recommendation within about nine weeks of the vacancy becoming known (loose; 2011 and 2019 cases had longer lead times)",
+    "rate": null,
+    "n": 2,
+    "source": "forecasters' own reconstruction; not in pipeline/reference-data"
+   },
+   "history": [
+    {
+     "at": "2026-10-29T21:00:00+01:00",
+     "p": 0.5,
+     "combined": 0.495,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:37:21Z",
+       "p": 0.55,
+       "reason": "Signals: only candidate markets (Hernández de Cos 0.42, Knot 0.34), no timing market; split frontrunners hint at a contested choice but nothing changes the timing base rate. No change.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.55,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:38:01Z",
+       "p": 0.55,
+       "reason": "Dossier step: Lagarde steps down 7 Feb 2027 (ECB PR 29 Oct); Costa says process begins immediately; Knot and de Cos frontrunners, Paris reportedly backs Knot. To have a successor in place by 7 Feb the Council recommendation must come roughly Nov-Dec (EP and ECB consultation take weeks; 2011 Draghi ~5 weeks rec-to-appointment), so strong time pressure; risk is contested choice (board package with Lane/Schnabel seats) slipping to Jan with VP acting -> 0.55. Signals: only candidate markets (de Cos 0.42, Knot 0.34), no timing info; unchanged.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.3,
+       "inputs_blind": [
+        "own-research"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-29T19:41:06Z",
+       "p": 0.46,
+       "reason": "Markets only price who (de Cos 0.42, Knot 0.34, ~24% on others), not when. A genuinely split field with no consensus candidate on day one slightly supports the slow-bargaining case, so 0.48 to 0.46.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "p_blind": 0.48,
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-29T19:36:52Z",
+       "p": 0.6,
+       "reason": "No timing market (the markets cover only who: de Cos 0.42, Knot 0.34). Anchor on precedent/procedure: in 2019 the ECOFIN recommendation came 9 July, a week after the leaders' deal; Draghi's came ~6 weeks before appointment. To appoint before 7 Feb, after the EP hearing/plenary opinion and GC opinion (~1-2 months in 2019), the Council recommendation is needed by about mid-December, so the timetable pushes toward a Eurogroup pick plus ECOFIN recommendation at the November or December meetings, and Costa says 'without delay'. Against: a contested Knot vs de Cos race tied to wider package deals, a candidate call taking 2-3 weeks, and the political deal slipping to the 17-18 Dec EUCO, with the formal recommendation in January. 0.60.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-29T19:36:21Z",
+       "p": 0.32,
+       "reason": "Markets only on identity, no timing info; keep blind view.",
+       "inputs": [
+        "dossier",
+        "signals"
+       ],
+       "p_blind": 0.3,
+       "inputs_blind": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "market_note": "Kalshi and Polymarket price only who succeeds Lagarde (Hernández de Cos about 0.42, Knot about 0.34), not when the formal step is taken.",
+     "disagreement": {
+      "cause": "genuine",
+      "note": "Same facts; the outsider (0.32) weighs a contested race slipping into January (with an interim chair possible), the anchor (0.60) the need for a Council recommendation by mid-December to appoint before 7 February."
+     },
+     "note": "New question. Lagarde leaves on 7 February 2027; to appoint a successor before then after consulting Parliament and the ECB, the Council's formal recommendation is needed by about mid-December, the natural venue being the December European Council. The risk is a contested race (Knot v Hernández de Cos, tied to other top jobs) that slips into January.",
+     "note_cs": "Nová otázka. Lagarde odchází 7. února 2027; aby mohl být nástupce jmenován do té doby po konzultaci s Evropským parlamentem a ECB, musí Rada přijmout formální doporučení zhruba do poloviny prosince, nejspíš kolem prosincové Evropské rady. Rizikem je spor o kandidáta (Knot proti Hernándezi de Cos, provázaný s dalšími posty), který by se mohl protáhnout do ledna."
+    }
+   ]
   }
  ]
 }
