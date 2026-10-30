@@ -72,6 +72,70 @@
      "market": null,
      "note": "The Chamber approved the 2027 budget's basic parameters in first reading on 22 October with 93 coalition votes after a 19.5-hour debate, every budget that cleared first reading in the past two terms went on to pass, and the third reading is scheduled for 2 December, four weeks before the deadline. The main risk is opposition obstruction or a revolt by SPD, two of whose MPs abstained, pushing the final vote past year-end.",
      "note_cs": "Sněmovna schválila 22. října po devatenáctipůlhodinové rozpravě v prvním čtení základní parametry rozpočtu na rok 2027 hlasy 93 koaličních poslanců, každý rozpočet, který v posledních dvou volebních obdobích prošel prvním čtením, byl nakonec schválen a třetí čtení je naplánováno na 2. prosince, tedy čtyři týdny před termínem. Hlavním rizikem je obstrukce opozice nebo vzpoura SPD, jejíž dva poslanci se zdrželi hlasování, která by závěrečné hlasování odsunula za konec roku."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.91,
+     "combined": 0.905,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.92,
+       "reason": "Bills reaching a third-reading vote pass 256/258 (9th term) and 29/30 (10th), and every budget that cleared first reading in the past two terms passed; the cz-chamber-budget slip rate (0.10 per scheduled day) is mostly absorbed by four weeks of slack between the 2 Dec slot and 31 Dec.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.88,
+       "reason": "The coalition passed first reading with 93 votes on 22 Oct, and third reading is scheduled for 2 Dec, four weeks before the deadline. No new reporting shows an SPD revolt; the residual risk is obstruction or slippage past year-end.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.9,
+       "reason": "Case for NO: the only post-1993 budget that missed 31 Dec (2022 budget, passed March 2022) followed a government change, and the current coalition faces 19-hour obstruction, two SPD abstentions at first reading and a 2 Dec third reading that any slip (budget slip class 0.10) pushes toward the holidays; a provisional budget is painless for the government, so it has no hard forcing deadline. Honest view: the coalition has 108 seats, every budget that cleared first reading in the last two terms passed, and four weeks of buffer remain, so slippage past year-end is the main risk at roughly one in ten.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.9,
+       "reason": "No market; reference anchor: every budget that passed first reading in the last two terms passed third reading (5/5), and the third reading is scheduled for 2 Dec with four weeks of slack. Discounted for SPD wobble and opposition obstruction pushing past year-end.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.92,
+       "reason": "Passed first reading with 93 coalition votes and every budget past first reading has passed; third reading scheduled 2 Dec, four weeks of slack.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. No change in the timetable: committees in November, third reading planned for 2 Dec; no new sign of an SPD revolt.",
+     "note_cs": "Týdenní přepočet. Harmonogram beze změny: výbory v listopadu, třetí čtení plánováno na 2. prosince; žádné nové známky vzpoury SPD."
     }
    ],
    "result": null
@@ -382,6 +446,70 @@
      "market": null,
      "note": "Prices rose 0.5% month on month in October 2025, a tough base, so October 2026 would need a monthly rise of roughly 0.6% to beat September's 2.5%, and the fuel price cap and diesel excise cut in force through October hit the very item that drove September's jump. A weaker koruna, regulated energy prices, a rebound in food prices or core inflation near 3.1% could still push the figure above 2.5%.",
      "note_cs": "V říjnu 2025 ceny meziměsíčně stouply o 0,5 %, což je vysoká srovnávací základna, takže letos by musely meziměsíčně vzrůst zhruba o 0,6 %, aby inflace překonala zářijových 2,5 %, a zastropování cen pohonných hmot spolu se snížením spotřební daně z nafty platné po celý říjen dopadá právě na položku, která táhla zářijový skok. Údaj nad 2,5 % by přesto mohla přinést slabší koruna, regulované ceny energií, obrat cen potravin nebo jádrová inflace kolem 3,1 %."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.34,
+     "combined": 0.335,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.33,
+       "reason": "Our stats-release-beats-threshold record (6/9) covers thresholds near consensus, but here the threshold is the prior month's 2.5% against a tough base (Oct 2025 +0.5% m/m) with the fuel-price cap and diesel excise cut in force, so the outside view tilts below; release slip risk is negligible (stats-release 0.006).",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.35,
+       "reason": "October 2025's +0.5% m/m is a tough base effect, and the fuel cap and diesel excise cut hit the item behind September's jump. No new data before the 4 Nov flash.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.32,
+       "reason": "Case for YES: core inflation near 3.1%, regulated energy, a weaker koruna and food rebounds could add the needed ~0.6% m/m, and the ČNB's own hike talk for 5 Nov implies the board sees upward pressure. Honest view: the October 2025 base (+0.5% m/m) is tough and the fuel price cap and diesel excise cut hit exactly the item that drove September's jump; a reading at or below 2.5% (a 2.5 print resolves NO) is the more likely outcome.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.3,
+       "reason": "No market; model anchor: beating 2.5% needs about +0.6% m/m against a 0.5% October 2025 base, which happened in roughly 1 of 8 Octobers since 2018, and the fuel cap and diesel excise cut lean against it. Raised from the bare base rate for koruna, energy and core-inflation upside risks.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.38,
+       "reason": "September was 2.5%, the threshold is strictly above it; high October 2025 base and fuel cap push down, but energy and core inflation push up.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. October 2025 rose 0.5% m/m, a tough base; the fuel price cap and the diesel excise cut weigh on the item that drove September. The flash estimate is due on 4 Nov.",
+     "note_cs": "Týdenní přepočet. V říjnu 2025 ceny meziměsíčně vzrostly o 0,5 %, což je náročná srovnávací základna; cenový strop na pohonné hmoty a nižší spotřební daň z nafty tlačí na položku, která táhla zářijovou inflaci. Předběžný odhad vyjde 4. listopadu."
     }
    ],
    "result": null
@@ -565,6 +693,70 @@
      "market": null,
      "note": "ANO and Motoristé hold only 93 of 200 seats without SPD, whose leader Okamura says it will not vote for the cuts, and the committee stage can run to about 19 December while the budget dominates the Chamber's November–December agenda. A compromise on a smaller cut, which Labour Minister Juchelka is seeking, combined with a faster timetable driven by the January start date and the CZK 5 billion of savings counted in the budget, could still get it through.",
      "note_cs": "ANO a Motoristé mají bez SPD jen 93 z 200 mandátů a předseda SPD Okamura prohlásil, že hnutí pro škrty hlasovat nebude; projednávání ve výboru navíc může trvat zhruba do 19. prosince a listopadovému a prosincovému programu Sněmovny dominuje rozpočet. Novelu by přesto mohl prosadit kompromis o menším snížení, o který usiluje ministr práce Juchelka, spolu s rychlejším projednáním, k němuž tlačí lednová účinnost a úspora pět miliard korun započtená v rozpočtu."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.3,
+     "combined": 0.303,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.28,
+       "reason": "Government bills referred to committee eventually pass (47/47 in the 10th term), but that is over a full term, not nine weeks: gov-bill-reading slip is 0.60 per meeting, the budget crowds the Nov–Dec agenda, and ANO+Motoristé have only 93 seats without SPD, which opposes the cut; a smaller-cut compromise for a January start is the YES path.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.33,
+       "reason": "SPD's Šafránková (CNN Prima, 27 Oct) says SPD will not back the bill as submitted and is negotiating changes. An amended compromise would count, but there is no reported deal or timetable, and the budget crowds the Nov–Dec agenda.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.22,
+       "reason": "Case for YES: the CZK 5 billion saving is counted in the 2027 budget, the January start date and the overdue pay-transparency transposition create pressure, and Juchelka's smaller-cut compromise could bring SPD along for a December third reading. Honest view: the government-bill reading slip rate is 0.60 in this reference class, the committee deadline runs to about 19 Dec while the budget monopolises the November–December plenary, and ANO plus Motoristé hold only 93 votes without an SPD that publicly refuses the cuts, so passage by 31 Dec requires both a deal and an accelerated timetable.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.4,
+       "reason": "No market; ANO and Motoristé have only 93 of 200 votes without SPD, which says it opposes the cut, and the budget crowds the Nov–Dec agenda. A watered-down compromise tied to the January start date and the CZK 5 bn counted in the budget remains plausible.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.3,
+       "reason": "Coalition lacks a majority without SPD, which opposes the cuts, and the Chamber is busy with the budget; a compromise bill by year-end is possible but uncertain.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast, down. SPD said on 27 Oct it will not back the cut as submitted and is negotiating changes; ANO and Motoristé have 93 seats without SPD, and the budget crowds the November–December agenda.",
+     "note_cs": "Týdenní přepočet, snížení. SPD 27. října uvedla, že škrt v předložené podobě nepodpoří a vyjednává změny; ANO a Motoristé mají bez SPD 93 mandátů a program do konce roku zahlcuje rozpočet."
     }
    ],
    "result": null
@@ -636,6 +828,70 @@
      "market": null,
      "note": "No bank-levy bill exists: Schillerová said on 4 October that a bank tax was not on the table, Babiš talks only of negotiating mortgage prices with the banks, and his 2019 idea of a fund financed from bank dividends never became a cabinet bill. A quick dividend-transfer bill to raise budget revenue could still emerge, as the fast-moving refinery windfall tax showed, though a voluntary deal with the banks would not count.",
      "note_cs": "Návrh zákona o zvláštním odvodu bank neexistuje: Schillerová 4. října uvedla, že bankovní daň není na stole, Babiš mluví jen o jednání s bankami o cenách hypoték a jeho nápad z roku 2019 na fond financovaný z bankovních dividend se do vládního návrhu zákona nikdy nedostal. Vláda by přesto mohla rychle předložit zákon o převodu dividend jako zdroj příjmů rozpočtu, jak ukázala pohotově připravená daň z mimořádných zisků rafinerií, dobrovolná dohoda s bankami se však nepočítá."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.07,
+     "combined": 0.069,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.07,
+       "reason": "No draft exists and both Babiš and Schillerová have denied a bank tax; unscheduled measures not in the pipeline rarely appear (our unscheduled-announcement record 1/18, albeit for shorter windows), and a cabinet-approved bill within three months would need drafting plus consultation; the refinery windfall tax is the one fast precedent.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.06,
+       "reason": "No bill exists, Schillerová ruled out a bank tax and Babiš talks of negotiating with banks; nothing new found.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.09,
+       "reason": "Case for YES: Babiš's bank-bashing, SPD's support for a bank tax, a 389 billion deficit and the precedent of a fast-tracked refinery windfall tax show a dividend-transfer or 'fund' bill could be drafted and approved by cabinet within weeks, and a mandatory dividend transfer would count. Honest view: there is no bill, no ministry draft in eKLEP, Schillerová ruled a bank tax out on 4 Oct and Babiš is pursuing a negotiated mortgage-price deal that explicitly would not count; three months is short for a cabinet-approved draft law that nobody has started.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.06,
+       "reason": "No market; reference anchor 0/5 Babiš-government years with a bank levy bill, Schillerová ruled out a bank tax on 4 Oct and no new reporting since. A small tail for a quick dividend-transfer bill.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.07,
+       "reason": "Finance minister ruled out a bank tax and Babiš talks only of negotiating with banks; a cabinet-approved levy bill by January is unlikely.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. No draft exists; Finance Minister Schillerová has ruled out a bank tax.",
+     "note_cs": "Týdenní přepočet. Žádný návrh neexistuje; ministryně financí Schillerová bankovní daň vyloučila."
     }
    ],
    "result": null
@@ -946,6 +1202,76 @@
      },
      "note": "Democrats need a net gain of only a few seats on the 220–215 result of 2024, the president's party has lost House seats in 18 of 20 midterms since 1946, and betting markets strongly favour Democratic control. A correlated polling miss in Republicans' favour or mid-decade redistricting such as Texas's could still keep them below 218 seats.",
      "note_cs": "Demokratům stačí oproti výsledku z roku 2024 (220:215) čistý zisk jen několika křesel, strana úřadujícího prezidenta ztratila ve Sněmovně reprezentantů křesla v 18 z 20 voleb v polovině funkčního období od roku 1946 a sázkové trhy demokratickou kontrolu jasně favorizují. Pod hranicí 218 křesel by je přesto mohla udržet plošná chyba průzkumů ve prospěch republikánů nebo překreslení volebních obvodů v polovině dekády, například v Texasu."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.91,
+     "combined": 0.906,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.93,
+       "reason": "The president's party lost House seats in 18 of 20 midterms since 1946, Democrats need only a few net gains, and a D+8.9 generic-ballot lead is about three typical generic-ballot errors from the roughly even point; redistricting and a correlated miss remain the tail.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.88,
+       "reason": "The generic ballot is about D+8.9 to D+9.1 days before the vote, and the Silver Bulletin model still rates Democrats strong favourites. Only a large correlated polling miss stops them reaching 218.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.9,
+       "reason": "Case for NO: mid-decade Republican redistricting (Texas and others) raises the generic-ballot margin Democrats need, generic-ballot polls overstated Democrats in 2020 and 2016 by 3–5 points, and a correlated miss plus a few unfavourable districts could leave them at 215–217. Honest view: at D +8.9 Democrats have roughly twice the cushion a normal polling error would erase, they need only a handful of net seats from 220–215, and the president's party has lost House seats in 18 of 20 postwar midterms.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.93,
+       "reason": "Polymarket's deep House-control market prices Democrats at 93.5%, consistent with a D+8.9 generic ballot and models calling them strong favourites. Control equals 218+ seats, so the market matches.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.88,
+       "reason": "Generic ballot near D+9 and the models give Democrats strong favourite status; mid-decade redistricting and a polling miss are the residual risks.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026",
+      "p": 0.935,
+      "read_at": "2026-10-30T18:21:14Z"
+     },
+     "note": "Weekly re-forecast. Generic-ballot average near D+9 (Silver Bulletin D+8.9 on 30 Oct); polls close on 3 Nov.",
+     "note_cs": "Týdenní přepočet. Průměr obecné preference kolem D+9 (Silver Bulletin 30. října D+8,9); volby 3. listopadu."
     }
    ],
    "result": null
@@ -1018,6 +1344,77 @@
      },
      "note": "Democrats need a net gain of four seats to reach the required 51, early-September polling averages showed them ahead in North Carolina, Maine, Ohio, Texas and Alaska and narrowly holding Michigan and New Hampshire, and markets have moved their way since mid-September. Because the path depends on winning several close races at once, a single polling error of two or three points towards Republicans could flip several and leave them short, and a 50–50 Senate would not be enough.",
      "note_cs": "Demokraté potřebují čistý zisk čtyř křesel, aby dosáhli potřebných 51, průměry průzkumů z počátku září je ukazovaly ve vedení v Severní Karolíně, Maine, Ohiu, Texasu a na Aljašce a při těsném udržení Michiganu a New Hampshiru a trhy se od poloviny září posouvají v jejich prospěch. Protože cesta k většině vyžaduje vyhrát najednou několik těsných soubojů, jediná chyba průzkumů o dva až tři body ve prospěch republikánů by jich mohla zvrátit víc a demokratům by pak většina unikla, přičemž poměr 50:50 nestačí."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.56,
+     "combined": 0.558,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.52,
+       "reason": "A net +4 requires winning nearly all of several races where leads are 2–4 points (TX, OH, AK, ME) while holding MI, NH and GA; each lead is roughly a 70–80% proposition with a ~4-point state polling error, but the errors are correlated, which puts the joint chance near a coin flip, nudged up slightly by the D+9 environment.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.56,
+       "reason": "The path needs a net +4, and Democratic leads in TX, OH, AK and ME are only 2.4–3.6 points, each a normal polling error from flipping. A D+9 environment helps, but correlated misses cut both ways.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.5,
+       "reason": "Case for NO: Democrats must flip four Republican seats where their leads are only 2.4–3.6 points (Texas, Ohio, Alaska, Maine) while holding Michigan, New Hampshire and Georgia, Senate polls in these same states overstated Democrats in 2020 (Collins trailed in polls and won by 9) and 2022, and a 50–50 Senate resolves NO. Honest view: the generic ballot and model narrative favour them and they lead in enough seats, but the path is a conjunction of several coin-flip-plus races with correlated error, so it is close to even.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.7,
+       "reason": "Polymarket's Senate-control market is at 71.5%. With a Republican VP, control requires 51 seats, which matches the criterion. Leads of 2–4 points in TX, OH, AK and ME keep a correlated polling miss a live risk.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.5,
+       "reason": "Democrats need a net four seats with leads of only 2-4 points in TX, OH, AK and ME, each within a normal polling error; the national environment favours them.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026",
+      "p": 0.715,
+      "read_at": "2026-10-30T18:21:21Z"
+     },
+     "note": "Weekly re-forecast, down. Democrats need a net gain of four; their leads in Texas, Ohio, Alaska and Maine are only 2.4–3.6 points, polling errors are correlated, and 50–50 resolves no.",
+     "note_cs": "Týdenní přepočet, snížení. Demokraté potřebují čistý zisk čtyř křesel; jejich náskok v Texasu, Ohiu, na Aljašce a v Maine je jen 2,4–3,6 bodu, chyby průzkumů jsou provázané a výsledek 50:50 znamená ne.",
+     "market_note": "Polymarket's Senate-control market (0.715) is above our 0.56: the forecasters weigh correlated polling errors in four must-flip states with 2–4 point leads, and Democrats' need to hold MI, NH and GA; the market has priced Democratic control consistently above the polling averages."
     }
    ],
    "result": null
@@ -1343,6 +1740,76 @@
      },
      "note": "The count has settled: Netanyahu's bloc 53 seats against 48 for the Jewish-led opposition and 19 for the Arab-led lists, so if the Arab lists, Bennett and Liberman all recommend Gadi Eisenkot, he would out-recommend Netanyahu (as Gantz did in 2020). Likud claims fraud; police reject it. Herzog wants to avoid another election; consultations are expected after certification on 4 Nov. Down from 60%.",
      "note_cs": "Sčítání je uzavřené: Netanjahuův blok má 53 křesel, opozice vedená židovskými stranami 48 a arabské kandidátky 19. Pokud by Gadiho Eisenkota doporučily arabské strany, Bennett i Liberman, získal by víc doporučení než Netanjahu, jako v roce 2020 Ganc. Likud mluví o podvodu, policie to odmítá. Herzog chce zabránit dalším volbám; konzultace se čekají po potvrzení výsledků 4. listopadu. Pokles z 60 %."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.23,
+     "combined": 0.232,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.22,
+       "reason": "Herzog gives the first mandate to the candidate with the most recommendations, and the 2020 precedent (Gantz tasked with Joint List backing) applies: with 53 against a potential 48+19, and reporting that both camps expect Eisenkot first, Netanyahu gets it only if Arab lists or Liberman withhold recommendations; a second mandate would come after 30 Nov.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.2,
+       "reason": "Final results: bloc 53, opposition 48, Arab lists 19. Ra'am is open to joining and the Joint List to backing an Eisenkot government, and Ynet reports both camps expect Eisenkot to get the first mandate. Herzog must assign it by 11 Nov, and a second mandate to Netanyahu before 30 Nov is implausible under the 28-day clock.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.3,
+       "reason": "Case for YES: Netanyahu's bloc of 53 will recommend him as one block, while Eisenkot's 48 only out-recommend him if Liberman ('neither Bibi nor Tibi') and the Joint List, which has abstained in past consultations, actually name him; with abstentions Eisenkot could land near 51–57 recommendations, and Herzog, who wants to avoid a sixth election, could judge that the largest coherent bloc has the better chance, as presidents did in 2021 when Netanyahu had the most recommendations. Honest view: both camps' own politicians expect Eisenkot to get the first mandate, Ra'am and the Joint List are signalling support for ousting Netanyahu, and the 2020 precedent (Gantz tasked first with Joint List backing) points the same way, so Netanyahu is the minority outcome but far from excluded.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.25,
+       "reason": "Polymarket and Kalshi both put Netanyahu getting the first mandate at about 30%. Reporting since 29 Oct that both blocs expect Eisenkot to be tasked first (48 + 19 Arab-list seats vs 53) pushes slightly below the market. The 11 Nov legal deadline makes 'no mandate by 30 Nov' negligible.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.2,
+       "reason": "Results 53 Netanyahu bloc, 48 Eisenkot, 19 Arab lists; both camps expect Eisenkot to get the first mandate, and Herzog must assign by 11 Nov, though Liberman and Arab-party recommendations leave real uncertainty.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/who-will-receive-the-first-mandate-to-form-israels-next-government-20261019144924877",
+      "p": 0.295,
+      "read_at": "2026-10-30T18:25:00Z"
+     },
+     "note": "Down sharply. Final results 53 (Netanyahu bloc) vs 48 + 19; Ynet reports figures in both blocs expect Eisenkot to receive the first mandate, the Arab lists lean towards him, and Herzog must assign the mandate by 11 Nov.",
+     "note_cs": "Výrazné snížení. Konečné výsledky 53 (Netanjahuův blok) proti 48 + 19; podle Ynetu politici v obou blocích čekají, že první pověření dostane Eisenkot, arabské strany se kloní k němu a Herzog musí pověření udělit do 11. listopadu."
     }
    ],
    "result": null
@@ -1738,6 +2205,70 @@
      },
      "note": "No general ceasefire has been agreed in four and a half years of negotiations, strikes continued around Witkoff's 21 October visit to St Petersburg, and Ushakov frames the next talks around a post-war security system rather than an interim truce. Only a breakthrough at the talks expected after 10 November, producing a ceasefire of at least 30 days along the whole front that both sides announce and that is in force by 31 January, would change this.",
      "note_cs": "Za čtyři a půl roku vyjednávání nebylo dohodnuto žádné všeobecné příměří, útoky pokračovaly i během Witkoffovy návštěvy Petrohradu 21. října a Ušakov spojuje příští jednání s poválečným bezpečnostním uspořádáním, nikoli s dočasným klidem zbraní. Změnit to by mohl jen průlom na jednáních očekávaných po 10. listopadu, z něhož by vzešlo příměří nejméně na 30 dní po celé frontě, oznámené oběma stranami a platné do 31. ledna."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.04,
+     "combined": 0.044,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.04,
+       "reason": "Zero general ceasefires in about 18 quarters of the war and in about 10 envoy rounds (envoy-visit-ceasefire class 0.03); Moscow frames the November talks around a post-war security system, and a 30-day+ whole-front truce that is in force and announced by both sides in three months would be unprecedented.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.04,
+       "reason": "No new developments, and the Abu Dhabi talks are still undated. The Russian side frames the talks around a post-war security system, not a truce, and a 30-day-plus general ceasefire in force by 31 Jan is very unlikely.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.05,
+       "reason": "Case for YES: Abu Dhabi trilateral talks are slated for the first half of November, a post-midterm Trump has freer hands to pressure both sides, and the 30-day general-ceasefire concept has been on the table since March 2025, so a signed truce in force by late January is not unthinkable. Honest view: Ushakov frames the talks around post-war security rather than a truce, strikes continued through Witkoff's visit, and four and a half years of talks have produced only prisoner swaps; a full-front ceasefire announced by both capitals and in force within three months remains a tail outcome.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.05,
+       "reason": "Polymarket's 'ceasefire agreement by 31 Dec' is at 13.5%, but it does not match: it counts an agreement, while ours requires both sides to announce a general, whole-front ceasefire of 30+ days in force by 31 Jan. That stricter bar and no movement since Ushakov's framing put it well below the market.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.04,
+       "reason": "No general ceasefire in over four years; Russia is framing talks around post-war security and strikes continue; a 30-day full-front ceasefire in force by January is very unlikely.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. Only a local truce around Oleshky (ending 1 Nov); Abu Dhabi talks still undated and framed by Moscow around post-war security, not a truce.",
+     "note_cs": "Týdenní přepočet. Jen místní příměří v Oleškách (končí 1. listopadu); jednání v Abú Zabí stále bez data a Moskva je rámuje poválečnou bezpečností, ne příměřím."
     }
    ],
    "result": null
@@ -2291,6 +2822,70 @@
      "market": null,
      "note": "Trump accepted Xi's invitation to the APEC summit in Shenzhen on 18–19 November, writing on 25 September that \"we will meet again in China in November\". The main risk is a last-minute cancellation over post-midterm politics, an escalation of the Iran war or a trade or Taiwan flare-up; Trump skipped APEC in 2018.",
      "note_cs": "Trump přijal pozvání Si Ťin-pchinga na summit APEC v Šen-čenu 18. a 19. listopadu a 25. září napsal, že „se znovu setkáme v Číně v listopadu“. Hlavním rizikem je zrušení cesty na poslední chvíli kvůli domácí politice po volbách v polovině funkčního období, eskalaci války s Íránem nebo vyostření sporů o obchod či Tchaj-wan; Trump už v roce 2018 summit APEC vynechal."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.86,
+     "combined": 0.856,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.87,
+       "reason": "Scheduled leader appearances happen at about 0.92 and the summit-or-visit slip class is 0.05; Trump has accepted the invitation and the White House confirmed Manila then Shenzhen, but he skipped APEC in 2018 and the Iran war and post-midterm turmoil add some cancellation risk.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.86,
+       "reason": "White House-confirmed plan: ASEAN in Manila on 16 Nov, then APEC in Shenzhen with a Xi meeting. Nothing contradicts it; risks are cancellation over Iran escalation or post-midterm politics.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.84,
+       "reason": "Case for NO: Trump skipped APEC in 2018 and the 2019 summit was cancelled, he may be deciding on new strikes on Iran with mines in Hormuz, a bad midterm or a Taiwan or trade flare-up could prompt a last-minute cancellation, and the summit-or-visit slip rate applies to each leg of a Manila-plus-Shenzhen trip. Honest view: the White House confirmed the itinerary and Trump publicly accepted Xi's invitation, both sides want the trade truce extended, and the meeting is three weeks away, so a cancellation is the only real risk.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.86,
+       "reason": "No matching market found (searched Trump Xi, Trump China visit, Xi Jinping, APEC). Reference anchor: publicly pre-agreed Trump–Xi meetings took place about 85% of the time. The White House-confirmed Manila-then-Shenzhen itinerary holds, minus cancellation risk from the Iran war or post-midterm politics.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.85,
+       "reason": "Trump accepted Xi invitation and the White House reportedly confirmed the Shenzhen trip and meeting; cancellation risk from Iran or trade shocks remains.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. The White House itinerary (Manila, then APEC in Shenzhen 18–19 Nov with a Xi meeting) stands.",
+     "note_cs": "Týdenní přepočet. Program Bílého domu (Manila, poté APEC v Šen-čenu 18.–19. listopadu se schůzkou se Si Ťin-pchingem) platí."
     }
    ],
    "result": null
@@ -2571,6 +3166,76 @@
      },
      "note": "With euro-area inflation at 3.8%, 64 of 73 economists in the Reuters poll expect a 25-basis-point hike on 17 December, when new projections are due, and Danske sees it as the final hike to a 2.75% peak. The main risks are the recently less hawkish tone of Governing Council members, weakening growth, or a surprise October hike followed by a December hold, which would resolve the question negatively.",
      "note_cs": "Při inflaci v eurozóně 3,8 % očekává 64 ze 73 ekonomů v anketě agentury Reuters zvýšení o 25 bazických bodů 17. prosince, kdy budou zveřejněny i nové projekce, a Danske Bank to považuje za poslední zvýšení na vrchol 2,75 %. Hlavními riziky jsou méně jestřábí tón členů Rady guvernérů v poslední době, slábnoucí růst nebo nečekané zvýšení v říjnu, po němž by sazby v prosinci zůstaly beze změny, což by otázku rozhodlo záporně."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.79,
+     "combined": 0.787,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.85,
+       "reason": "Central banks move when the move is priced and pre-signalled (own record 1/0; 64/73 economists expected a December hike); Lagarde said on 29 Oct that the direction of travel is clear barring a major development, and the October hold removes the 'hike Oct, hold Dec' path; the residual is data-driven reversal or a growth or energy shock.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.82,
+       "reason": "The 29 Oct hold was unanimous after a hike debate. Lagarde said 'the direction of travel is quite clear' barring a major development, and energy upside risks were flagged. The October-hike path that would have resolved NO is gone.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.68,
+       "reason": "Case for NO: a unanimous decision not to hike with inflation at 3.8% shows the Council's reluctance to tighten into an energy supply shock with weakening growth and already-tighter financing conditions, December projections may show inflation falling back toward 2% in 2027–28 without a move, and a hold with a 'next meeting is live' message is the classic way to keep the option without using it (the 2011 hikes are the cautionary precedent). Honest view: Lagarde's 'direction of travel is quite clear', the explicit upside-risk language and 64 of 73 economists expecting a December hike make a 25 bp move the single most likely outcome, but a Council that just passed on a hike it debated is not committed.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.83,
+       "reason": "Polymarket's December market prices a 25 bp hike at 81% plus 0.7% for 50+ bp (thin, about $25k volume). Lagarde's unanimous hold with 'direction of travel is quite clear', together with the Reuters poll (64/73 for a hike), supports it, and the hold in October removes the 'hike Oct, hold Dec' path.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.72,
+       "reason": "ECB held unanimously on 29 Oct, Lagarde said the direction of travel is clear and energy risks are rising; most economists expect a December hike, with growth weakness as the main risk.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/ecb-interest-rates-december-2026",
+      "p": 0.817,
+      "read_at": "2026-10-30T18:21:40Z"
+     },
+     "note": "Weekly re-forecast. On 29 Oct the ECB held unanimously after debating a hike; Lagarde: 'the direction of travel is quite clear'. 64 of 73 economists expect a December hike.",
+     "note_cs": "Týdenní přepočet. ECB 29. října jednomyslně ponechala sazby po debatě o zvýšení; Lagardeová: „směr je zcela jasný“. Zvýšení v prosinci čeká 64 ze 73 ekonomů."
     }
    ],
    "result": null
@@ -3173,6 +3838,70 @@
      "market": null,
      "note": "A censure motion has passed only twice in the Fifth Republic, in 1962 and against Barnier in 2024, every motion against Lecornu has failed (with 271 and 256 votes against the 289 needed), and success would require the Socialists and the RN to vote together, which both have pre-election reasons to avoid. A 49.3 on a budget that keeps pension de-indexation, the RN's red line, without the changes the Socialists demand is the most likely trigger that could change this.",
      "note_cs": "Návrh na vyslovení nedůvěry prošel za páté republiky jen dvakrát, v roce 1962 a v roce 2024 proti Barnierovi, všechny návrhy proti Lecornuovi neuspěly (získaly 271 a 256 hlasů při potřebných 289) a úspěch by vyžadoval společné hlasování socialistů a Národního sdružení, kterému se obě strany mají před prezidentskými volbami důvod vyhnout. Nejpravděpodobnějším spouštěčem změny by bylo použití článku 49.3 u rozpočtu, který zachová zmrazení valorizace důchodů, tedy červenou linii Národního sdružení, a nebude obsahovat změny požadované socialisty."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.14,
+     "combined": 0.14,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.13,
+       "reason": "Only 2 of more than 150 Fifth Republic censure motions have passed, though under hung assemblies with budget fights it is roughly 1 in 3 seasons (Barnier yes, Bayrou fell differently, Lecornu Jan–Feb 2026 survived with 256–271 votes); a passing motion needs PS and RN together, most plausibly after a 49.3 that keeps pension de-indexation.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.15,
+       "reason": "Nothing new found. A censure needs the PS and RN to vote together; earlier motions fell short at 271 and 256 votes against the 289 needed, though a 49.3 on the budget keeping pension de-indexation remains a live trigger.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.22,
+       "reason": "Case for YES: the 2027 budget is in the same calendar slot that toppled Barnier in December 2024, a 49.3 that keeps pension de-indexation hits the RN's declared red line while the Socialists demand changes, gilets jaunes violence raises the cost of propping up the government, and the RN has pre-2027 incentive to show it can bring the executive down. Honest view: every Lecornu motion has fallen 18–33 votes short, PS and RN each pay a price for voting together, and the government has so far avoided 49.3; a successful censure needs a specific misstep in a two-month window.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.12,
+       "reason": "No market found. Reference anchor: about 1% of Fifth Republic motions passed, but a minority government during budget season faces much higher odds per government (Barnier fell in Dec 2024). Previous motions against Lecornu fell 18–33 votes short, and a 49.3 on pension de-indexation is the trigger.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.1,
+       "reason": "Only two censures succeeded in the Fifth Republic and all motions against Lecornu failed; success needs the PS and RN voting together, which is possible only after a 49.3 on a budget with pension de-indexation.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. Censure still needs the PS and the RN to vote together; a 49.3 on the budget (whole-bill vote planned for 17 Nov) is the trigger to watch.",
+     "note_cs": "Týdenní přepočet. Vyslovení nedůvěry stále vyžaduje společné hlasování PS a RN; spouštěčem by bylo použití článku 49.3 u rozpočtu (hlasování o celém zákonu plánováno na 17. listopadu)."
     }
    ],
    "result": null
@@ -3244,6 +3973,70 @@
      "market": null,
      "note": "Three months after the 21st package the Commission had still not presented the 22nd by 19 October and gave no date, so a proposal in November would leave only weeks for unanimous agreement, while recent packages have taken from five weeks to more than two and a half months, with Hungary, Slovakia and Greece holding up earlier ones. A pre-Christmas push like the December adoptions of 2023 and 2024 could still deliver it by year-end, though oil measures during an energy-price crisis invite fresh vetoes.",
      "note_cs": "Komise ani tři měsíce po přijetí 21. balíku do 19. října 22. balík nepředložila a neuvedla žádné datum, takže při návrhu v listopadu by na jednomyslnou shodu zbývalo jen několik týdnů, zatímco nedávné balíky trvaly od pěti týdnů po více než dva a půl měsíce a Maďarsko, Slovensko a Řecko ty předchozí zdržovaly. Přijetí do konce roku by přesto mohl přinést předvánoční tlak, jako tomu bylo při prosincovém schválení balíků v letech 2023 a 2024, opatření týkající se ropy v době energetické krize však mohou vyvolat nová veta."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.34,
+     "combined": 0.34,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.35,
+       "reason": "Applied literally, a Council press release or OJ act must record the '22nd package', and the 12 Oct listings were not numbered; the Commission still has no proposal and recent packages took 5–11 weeks from proposal to adoption (eu-council-adoption slip 0.13), so YES needs a November proposal and a pre-Christmas adoption like those in Dec 2023 and Dec 2024.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.25,
+       "reason": "Read literally, the criterion needs a Council or OJ record of the '22nd package'. The 12 Oct listings were not numbered by the Council, and no sectoral proposal had been tabled by late October. A proposal in November plus unanimity by mid-December is possible but tight.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.38,
+       "reason": "Case for YES: the EU has adopted packages in December in 2023 and 2024, the Ukrainian envoy expects the sectoral package in November, a Commission proposal in early November leaves six weeks, which is within the fastest recent adoption times, and the Council would naturally number the next package the 22nd. Honest view: there is no Commission proposal as of 30 Oct, recent packages took five weeks to over two and a half months with Hungary, Slovakia and Greece as veto points, oil measures during an energy-price crisis invite blocking, and the criterion requires a Council or OJ record naming the 22nd package, which the 12 Oct listings do not provide.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.4,
+       "reason": "No market found. Applying the criterion literally, the 12 Oct listings were not labelled the 22nd package by the Council, so a numbered package must still be proposed and adopted unanimously by 31 Dec. No Commission proposal as of 19 Oct; December pushes in 2023 and 2024 delivered, but energy-crisis oil measures invite vetoes.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.33,
+       "reason": "Read literally, the 12 Oct listings are not the numbered 22nd package; no Commission proposal yet, so formal unanimous adoption by 31 Dec depends on a pre-Christmas push.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast, down. Read literally, the criterion needs a Council or Official Journal record of a '22nd package'; the 12 Oct listings were not numbered by the Council and no Commission proposal for a new package was known by 30 Oct, with unanimity required.",
+     "note_cs": "Týdenní přepočet, snížení. Kritérium doslova vyžaduje záznam Rady nebo Úředního věstníku o „22. balíčku“; sankční seznamy z 12. října Rada neočíslovala a do 30. října nebyl znám návrh Komise na nový balíček, přičemž je nutná jednomyslnost."
     }
    ],
    "result": null
@@ -3311,6 +4104,76 @@
      "market": null,
      "note": "The October summit ended inconclusively, the Irish presidency's €141 billion cut was largely rejected and leaders softened the year-end target, while previous MFF deals took 20–26 months from the Commission's proposal against about 17 months for a December 2026 deal. Only a breakthrough on António Costa's new negotiating box at the 26 November special summit or the December European Council could produce an agreement this year.",
      "note_cs": "Říjnový summit skončil bez výsledku, návrh irského předsednictví na snížení o 141 miliard eur byl z velké části odmítnut a lídři zmírnili cíl dohodnout se do konce roku, přičemž předchozí dohody o víceletém finančním rámci trvaly od návrhu Komise 20 až 26 měsíců, kdežto dohoda v prosinci 2026 by přišla zhruba po 17 měsících. Dohodu by letos mohl přinést jen průlom nad novým vyjednávacím návrhem Antónia Costy na mimořádném summitu 26. listopadu nebo na prosincové Evropské radě."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.11,
+     "combined": 0.112,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.07,
+       "reason": "The previous MFF deals took about 19–26 months from proposal (n=3) and were reached 5–12 months before the period began; a December 2026 deal would come at about 17 months and more than two years early, after an October summit that softened the year-end target.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.12,
+       "reason": "The October summit failed and the year-end target was softened. Historical MFF deals took 20–26 months versus about 17 here; only the 26 Nov special summit or the December European Council could deliver.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.08,
+       "reason": "Case for YES: Costa has taken the file personally, a special summit on 26 Nov plus the December European Council give two dedicated attempts, and net payers and the Parliament both want certainty early to avoid a 2020-style last-minute crunch. Honest view: no MFF has ever been agreed more than about six months before it starts, the October summit rejected the presidency's box and leaders deliberately softened the year-end target, and a deal requires all 27 to settle size, rebates and new own resources in eight weeks.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.15,
+       "reason": "Kalshi's 'EU long-term budget deal before 2027' is at 22% but almost untraded (about $2k volume, no resting liquidity), so it is a weak anchor. The reference class says 0/3 MFF deals came this fast, and October's inconclusive summit plus softened conclusions argue lower, leaving the 26 Nov special summit and December EUCO as the only paths.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.17,
+       "reason": "October summit was inconclusive, leaders softened the year-end target and the Irish cut was rejected; only a breakthrough at the 26 Nov special summit or December council would count.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": {
+      "source": "kalshi",
+      "kind": "exchange",
+      "url": "https://kalshi.com/markets/kxeumffdeal",
+      "p": 0.22,
+      "read_at": "2026-10-30T18:25:00Z"
+     },
+     "note": "Weekly re-forecast. The October summit did not agree and leaders softened the year-end target; only the 26 Nov special summit or December can deliver.",
+     "note_cs": "Týdenní přepočet. Říjnový summit se nedohodl a lídři změkčili cíl do konce roku; dohodu může přinést jen mimořádný summit 26. listopadu nebo prosincový summit."
     }
    ],
    "result": null
@@ -3488,6 +4351,70 @@
      "market": null,
      "note": "Vystrčil was re-elected after each of the last three Senate elections, his ODS–TOP 09 club remains the largest, and both STAN’s leader Vít Rakušan and ODS leader Martin Kupka have backed him; the vote is due in November after the new senators take the oath on 19 November. The residual risk is a surprise rival in the secret ballot.",
      "note_cs": "Vystrčil byl znovu zvolen po každých z posledních tří senátních voleb, jeho klub ODS a TOP 09 zůstává nejsilnější a podpořili ho předseda STAN Vít Rakušan i předseda ODS Martin Kupka; volba se čeká v listopadu po složení slibu nových senátorů 19. listopadu. Zbývajícím rizikem je překvapivý protikandidát v tajné volbě."
+    },
+    {
+     "at": "2026-10-30T21:00:00+01:00",
+     "p": 0.91,
+     "combined": 0.915,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.92,
+       "reason": "Vystrčil was re-elected after each of the last three Senate elections (3/3), his club stays largest and STAN and ODS leaders back him; the vote falls in November well before the 31 Dec deadline (cz-senate-item slip 0.10, mostly absorbed), leaving secret-ballot surprise as the residual risk.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T19:40:00Z",
+       "p": 0.89,
+       "reason": "ODS–TOP 09 is the largest club and the STAN and ODS leaders both back him. The vote follows the 19 Nov oath; only a secret-ballot surprise threatens it.",
+       "inputs": [
+        "own-research",
+        "dossier"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-10-30T18:22:00Z",
+       "p": 0.92,
+       "reason": "Case for NO: STAN now holds the most seats and could in a secret ballot quietly back one of its own or Drahoš despite Rakušan's public line, Vystrčil is a prominent irritant to the Babiš government, and a drawn-out club reshuffle could push the vote past December. Honest view: both ODS and STAN leaders have endorsed him, the ODS–TOP 09 club remains the largest and the new Senate's constituent session in November reliably elects its president, so only a secret-ballot surprise stands in the way.",
+       "inputs": [
+        "dossier",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-10-30T18:30:00Z",
+       "p": 0.91,
+       "reason": "No market; reference anchor 3/3 re-elections with his club largest, plus public backing from STAN's Rakušan and ODS's Kupka. Residual risk is a secret-ballot surprise or the vote slipping, though it is due in November.",
+       "inputs": [
+        "signals",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-10-30T18:21:12.157Z",
+       "p": 0.93,
+       "reason": "Re-elected after three consecutive Senate elections, largest club backs him and the STAN leader has no objection; only a secret-ballot surprise is a risk.",
+       "inputs": [
+        "dossier"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. ODS and STAN leaders back Vystrčil and his club remains the largest; the constituent session is in November.",
+     "note_cs": "Týdenní přepočet. Vedení ODS i STAN Vystrčila podporuje a jeho klub zůstává největší; ustavující schůze bude v listopadu."
     }
    ]
   },
