@@ -1,0 +1,101 @@
+{
+ "edition": "2026-10-30",
+ "checked_at": "2026-10-30T05:25:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Reuters World (reuters.com/world: HTTP 401)",
+  "AP (apnews.com/world-news: HTTP 403)"
+ ],
+ "note": "Lists used: (a) Wikipedia Portal:Current events/2026 October 29, read through the raw wikitext (index.php?action=raw); (c) ČT24 'SOUHRN: Zásadní události čtvrtka 29. října' plus the ČT24 front page, and the ČTK (ceskenoviny.cz) RSS feeds for all news, Czech news and world news, counting items dated 29 Oct only. List (b) is missing because Reuters World and AP were blocked; Wikipedia items that cite Reuters or AP were not counted as (b), as in earlier files. Items found in Wikipedia only did not qualify: the Saudi airstrike in Taiz, Salvadoran troops sent to Haiti, Canada's stake in Cohere, DoorDash–Instacart, the Tharparkar ambulance blast, the Göreme hoodoo collapse, the Italian Chinook crash near Brčko, Sweden's second PM vote, and Haiti's election dates. Items found in ČTK only did not qualify: the ECB hold (covered as eu-ecb), US Q3 GDP at 3.4% (covered as us-economy), the diesel cap rise (covered as cz-fuel-caps), Putin saying Russia does not want war with Europe, the ČNB embezzlement audit, Kydalka's acquittal, EUR 951m from the EU recovery plan, and Klempíř on the film fund. Items found on ČT24 only did not qualify: the WSJ report that Ukraine paused refinery strikes under US pressure, Musk's record donation to Republicans, von der Leyen on cooperation with Canada, and the Moldova security council after a cyberattack. The Toledo train collision (death toll rose to 69 on 29 Oct) and the student strike call are 28 Oct events and are counted in the 2026-10-29 file. Sport (curling Euros, Basel tennis, F1) and market prices are excluded.",
+ "events": [
+  {
+   "title": "ECB President Christine Lagarde announces she will step down early, on 7 February 2027",
+   "scope": "europe",
+   "lists": ["wikipedia", "ctk"],
+   "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+   "status": "missed",
+   "note": "Not announced in advance. Reuters (28 Oct) named 'Lagarde's future' as a market focus, and the eu-ecb dossier looked at a Lagarde-exit market (0.44 by end-2026) but judged it negligible before 29 Oct. The ECB story covered the rate decision but did not cover the resignation, and no claim was written on it. Not a sweep gap: no source announced the step."
+  },
+  {
+   "title": "Russian drone strike on Dnipro railway station kills 14; Russia says it downed a record 1,214 Ukrainian drones",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/rusky-utok-na-dnipro-zabil-14-lidi-rusko-znicilo-1214-ukrajinskych-dronu/2894431",
+   "status": "missed",
+   "note": "Strike, not announced in advance. The running war story (ua-war) covered the Oleshky truce and aid; the planning file's next steps for the running story listed a large strike on Kyiv as an option, but no claim was written on strikes."
+  },
+  {
+   "title": "Israel completes the count with neither bloc holding a Knesset majority; police reject Likud claims that Arab parties stole the election",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/izraelska-policie-odmitla-tvrzeni-o-kradezi-voleb-arabskymi-stranami-pise-toi-379107",
+   "status": "covered",
+   "story": "il-election"
+  },
+  {
+   "title": "Ukrainian and Russian ombudsmen head to Oleshky; both say the local truce is holding",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/do-olesek-miri-ombudsmani-ukrajiny-i-ruska-primeri-je-podle-nich-dodrzovano/2894155",
+   "status": "covered",
+   "story": "ua-war"
+  },
+  {
+   "title": "Actor Patrick Stewart dies aged 86 (announced 29 Oct)",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/ve-veku-86-let-zemrel-britsky-herec-patrick-stewart/2894824",
+   "status": "missed",
+   "note": "A death; not announced in advance and not forecastable."
+  },
+  {
+   "title": "First joint Czech–Hungarian government consultations in Prague; Babiš and Magyar agree to seek EU money for a high-speed rail link",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/cr-a-madarsko-budou-usilovat-o-penize-eu-na-propojeni-vysokorychlostni-zeleznici/2893335",
+   "status": "covered",
+   "story": "cz-hungary"
+  },
+  {
+   "title": "Licence-fee abolition: the Chamber media committee adjourns the debate until December; Babiš meets ČT director Chudárek and floats a non-budget funding model",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/chudarek-babis-pripustil-jiny-model-financovani-ct-a-cro-mimo-rozpocet-/2894474",
+   "status": "covered",
+   "story": "cz-licence-fees",
+   "note": "The Babiš–Chudárek meeting itself is in the planning file's dropped list ('no meeting announced; speculative')."
+  },
+  {
+   "title": "KHNP ends talks on the Dukovany construction contract with Daewoo E&C and Doosan Enerbility without agreement",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/khnp-ukoncila-bez-dohody-jednani-o-smlouve-na-stavebni-prace-v-dukovanech/2894657",
+   "status": "missed",
+   "note": "Not announced in advance, so no sweep gap. The Dukovany project is a long-running story and has no entry on the board or in the dossiers."
+  },
+  {
+   "title": "ANO loses its councillors in Turnov after Semily; Havlíček denies a significant fall in membership",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/ano-ztratilo-sve-zastupitele-i-v-turnove-podle-havlicka-clenu-vyrazneji-neubyva-/2894639",
+   "status": "missed",
+   "note": "Not announced in advance; part of the post-election string of local ANO departures, which the planning file does not track."
+  },
+  {
+   "title": "Human remains found at former barracks in Postoloprty: ÚDV opens criminal proceedings on suspicion of murder",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/kvuli-nalezu-ostatku-v-postoloprtech-zahajila-policie-ukony-trestniho-rizeni-/2894743",
+   "status": "missed",
+   "note": "A police step, not announced in advance."
+  },
+  {
+   "title": "Most: the ProMost–ANO coalition continues to run the town hall",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://www.ceskenoviny.cz/zpravy/mosteckou-radnici-povede-dal-koalice-promost-a-ano/2894633",
+   "status": "missed",
+   "note": "A local coalition deal, not announced in advance. The planning file followed Prague and other large-city coalitions only."
+  }
+ ]
+}

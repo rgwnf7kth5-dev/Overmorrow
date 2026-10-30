@@ -1,0 +1,64 @@
+{
+  "edition": "2026-10-30",
+  "results": [
+    {
+      "claim": "us-core-pce-sep-31",
+      "outcome": "yes",
+      "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+      "note": "BEA’s core PCE page, updated with the Personal Income and Outlays release of 29 Oct 2026, shows September 2026 at +3.1% from one year ago (August 3.0%).",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-core-pce-sep",
+      "outcome": "measured",
+      "value": 3.1,
+      "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+      "note": "BEA (current release 29 Oct 2026): the PCE price index excluding food and energy rose 3.1% in the 12 months to September 2026.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-gdp-q3-3pct",
+      "outcome": "yes",
+      "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "note": "BEA’s advance estimate released on 29 Oct 2026 puts Q3 2026 real GDP growth at 3.4% at an annual rate (Q2: 2.2%), which is above 3.0.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-gdp-q3",
+      "outcome": "measured",
+      "value": 3.4,
+      "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "note": "BEA ‘GDP (Advance Estimate), 3rd Quarter 2026’ (current release 29 Oct 2026): real GDP increased at an annual rate of 3.4 percent.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "eu-ecb-hold-29",
+      "outcome": "yes",
+      "evidence": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "note": "The ECB’s 29 Oct 2026 ‘Monetary policy decisions’ release says the deposit facility, MRO and marginal lending rates remain unchanged at 2.50%, 2.65% and 2.90%.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "eu-ecb-unanimous-29",
+      "outcome": "yes",
+      "evidence": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+      "note": "In the 29 Oct press conference transcript, Lagarde says the Governing Council debated a hike but ‘unanimously decided’ to hold, and later says ‘there was a unanimous decision at the end of the discussion’.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-kb-profit-consensus-29",
+      "outcome": "yes",
+      "evidence": "https://www.kb.cz/cs/o-bance/pro-investory/novinky/hospodarske-vysledky-ke-dni-30-9-2026",
+      "note": "KB’s 29 Oct release (06:45) reports 9M 2026 net profit attributable to owners of the parent of CZK 13,201 million. Less H1’s 8,519 million, that gives Q3 at CZK 4,682 million (headline ‘4.7 billion’), above 4,437 million.",
+      "resolved_at": "2026-10-30T05:20:00+01:00",
+      "held": true
+    }
+  ],
+  "corrections": []
+}

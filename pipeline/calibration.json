@@ -1,8 +1,8 @@
 {
   "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
-  "fitted_at": "2026-10-29T04:19:50Z",
-  "version": "2026-10-29",
-  "resolved": 68,
+  "fitted_at": "2026-10-30T04:14:31Z",
+  "version": "2026-10-30",
+  "resolved": 76,
   "thresholds": {
     "weighting": 120,
     "calibration": 50
@@ -21,44 +21,44 @@
       "outsider": 1
     },
     "platt": {
-      "a": 0.0191,
-      "b": 1.1338
+      "a": 0.079,
+      "b": 1.223
     }
   },
   "forecasters": {
     "base-rate": {
-      "n": 68,
-      "brier": 0.1598093676470588
+      "n": 76,
+      "brier": 0.1500373289473684
     },
     "evidence": {
-      "n": 68,
-      "brier": 0.15917723529411762
+      "n": 76,
+      "brier": 0.1497664736842105
     },
     "adversarial": {
-      "n": 68,
-      "brier": 0.1644461764705882
+      "n": 76,
+      "brier": 0.1551992105263158
     },
     "anchor": {
-      "n": 68,
-      "brier": 0.1594125294117647
+      "n": 76,
+      "brier": 0.1496414736842105
     },
     "outsider": {
-      "n": 68,
-      "brier": 0.1638275294117647
+      "n": 76,
+      "brier": 0.15295489473684212
     }
   },
   "diagnostics": {
     "raw_ensemble": {
-      "brier": 0.1598,
-      "log": 0.4814
+      "brier": 0.15,
+      "log": 0.4589
     },
     "published": {
-      "brier": 0.16,
-      "log": 0.4817
+      "brier": 0.1504,
+      "log": 0.4597
     },
     "platt_leave_one_out": {
-      "brier": 0.1664,
-      "log": 0.4993
+      "brier": 0.1544,
+      "log": 0.4699
     }
   }
 }
