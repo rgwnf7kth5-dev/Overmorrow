@@ -2468,6 +2468,52 @@
      },
      "note": "The Fed held at 3.75–4.00% on 28 October, but two members (Cook and Hammack) dissented in favour of a 25 bp hike, and futures and Polymarket put a December hike at about 84% shortly after the decision. The ensemble stays a little below the market because the statement softened its forward guidance and the press conference had not been digested.",
      "note_cs": "Fed 28. října ponechal sazby na 3,75–4,00 %, dva členové (Lisa Cook a Beth Hammack) však hlasovali pro zvýšení o 25 bazických bodů a futures i Polymarket krátce po rozhodnutí oceňovaly prosincové zvýšení zhruba na 84 %. Soubor prognóz zůstává mírně pod trhem, protože prohlášení zmírnilo výhled a tisková konference ještě nebyla vyhodnocena."
+    },
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.65,
+     "combined": 0.653,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.64,
+       "reason": "Fed has followed a hawkish dissent-plus-SEP-signalled next-meeting move in most cases (prior ~0.75 from 2022-23 and Sept 2026 hikes in central-banks.json), cut ~0.5 log-odds for Warsh declining to commit, softer PCE and the tech sell-off six weeks before the meeting."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.66,
+       "reason": "Two hawkish dissents in October and 3.6% PCE keep a hike the base case, but Warsh would not commit, real spending was flat and PCE came in below expectations, and with seven weeks of data still to come (jobs, CPI) a December hike is likely but no longer firm."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.62,
+       "reason": "Case for NO: the committee majority chose to wait in October despite 3.6% PCE, Warsh refused to commit, the statement softened guidance, real spending is flat and equities are selling off, so two soft payroll or CPI prints or an Iran de-escalation in energy would let the Fed hold again; against that, two hawkish dissents and the September dots still make a December hike the base case, so the honest figure falls to the low 60s."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "reason": "Anchored on Polymarket's hike legs summing to ~0.72 and CME FedWatch at 72.7% (30 Oct); no reason to deviate, since the softer guidance, Warsh's non-commitment and the slightly soft PCE are already priced while two hawkish dissents keep a hike the base case."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.62,
+       "reason": "Two hawkish dissents and 3.6% PCE favour a hike, but softened guidance and a Chair unwilling to commit leave real room for a hold."
+      }
+     ],
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+      "p": 0.722,
+      "read_at": "2026-10-31T17:51:05Z"
+     },
+     "note": "Markets scaled back December hike pricing on 30 Oct (CME FedWatch 83% → 73%, Polymarket 0.84 → 0.72) after Chair Warsh declined to commit to further hikes and September PCE (3.6%) and real spending came in soft; a hike remains the base case.",
+     "note_cs": "Trhy 30. října snížily očekávání prosincového zvýšení sazeb (CME FedWatch z 83 na 73 %), když předseda Fedu Warsh odmítl další zvyšování přislíbit a zářijová inflace PCE (3,6 %) i reálné výdaje vyšly slabě; zvýšení zůstává základním scénářem."
     }
    ],
    "result": null
@@ -4285,6 +4331,46 @@
      "market": null,
      "note": "The 60-day committee period after the 24 October first reading was not shortened, so the second reading can start only after 24 December and is expected in January, with the third reading 48 to 72 hours later; the opposition promises obstruction and Babiš plans amendments on 'voluntary fees', leaving little room before the 31 January deadline.",
      "note_cs": "Šedesátidenní lhůta k projednání ve výborech po prvním čtení 24. října nebyla zkrácena, takže druhé čtení může začít až po 24. prosinci a čeká se v lednu, třetí čtení o 48 až 72 hodin později; opozice slibuje obstrukce a Babiš chystá pozměňovací návrh o „dobrovolných poplatcích“, takže do termínu 31. ledna zbývá málo prostoru."
+    },
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.14,
+     "combined": 0.137,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.13,
+       "reason": "Government bills that reach third reading pass ~99% (cz-chamber.json), but timing dominates: second reading cannot start before 24 Dec, gov-bill reading slip rate 0.60 per meeting, opposition obstruction and SPD now placing the funding-model deal in the first half of 2027, so the 31 Jan deadline is unlikely."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.15,
+       "reason": "Okamura expects the replacement funding model to be agreed only in the first half of 2027 and rejects Babiš's tax-based variants, so the coalition is split over the model; together with the 60-day committee period and promised obstruction, a third reading by 31 Jan looks unlikely."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.12,
+       "reason": "Case for NO: the committee period runs to 24 December, Okamura now says the replacement funding model will be settled 'in the first half of next year' with the second reading as the venue while SPD rejects Babiš's earmarked-tax idea, the 1 January 2027 start is already lost so the coalition has no urgency, and third reading needs a voting day after the statutory gap plus promised obstruction; passing by 31 January would need an unexpectedly fast coalition agreement and a January session devoted to it."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "No market; the second reading cannot start before 24 Dec, and Okamura now expects the replacement funding model to be agreed only in the first half of 2027 while the opposition promises obstruction, so a third reading by 31 Jan looks unlikely."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.17,
+       "reason": "Committee period runs to late December, funding model unsettled until H1 2027 per SPD, and obstruction is promised."
+      }
+     ],
+     "market": null,
+     "note": "Okamura (SPD) rejects any tax-based funding and expects the replacement model to be agreed only in the first half of 2027; the committee period runs to 24 Dec, so a third reading by 31 Jan looks less likely.",
+     "note_cs": "Okamura (SPD) odmítá financování formou daně a dohodu na novém modelu čeká až v první polovině roku 2027; lhůta pro výbory běží do 24. prosince, takže třetí čtení do 31. ledna je méně pravděpodobné."
     }
    ]
   },
@@ -4599,6 +4685,46 @@
      "market": null,
      "note": "The strike is formally called by the Veřejnoprávně initiative, a 24-hour strike over the same bill took place on 22 June and the coalition refuses to withdraw the bill. The risks are a postponement if the coalition offers talks and a format that counts only as a symbolic action.",
      "note_cs": "Stávku formálně vyhlásila iniciativa Veřejnoprávně, kvůli stejnému zákonu se už 22. června stávkovalo 24 hodin a koalice odmítá zákon stáhnout. Rizikem je odklad, pokud koalice nabídne jednání, nebo forma, která by se počítala jen jako symbolická akce."
+    },
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.94,
+     "combined": 0.943,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.93,
+       "reason": "A strike three days out with 1,340 ČRo sign-ups, published broadcast arrangements and a June precedent is far below the generic strike-or-protest slip rate of 0.25; remaining risk is a last-minute call-off or a format judged symbolic."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.94,
+       "reason": "The 24-hour strike is fully organised: 1,340 ČRo staff signed up, the plan cuts broadcasting to the legal minimum (ČT24 reruns, hourly news), and no talks offer from the coalition has been reported; the remaining risk is a last-minute postponement."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.93,
+       "reason": "Case for NO: the coalition meets on 2 November on the funding model and could offer talks that lead the organisers to postpone, and the legal duty to keep broadcasting could make the action look symbolic; but 1,340 ČRo staff have signed up, ČT24 is dropping live broadcasts and Události will run without newsreaders, which is a clear work stoppage, and the June precedent shows the organisers go through with it."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.95,
+       "reason": "No market; the 24-hour strike is announced in detail (programming cut to the legal minimum, 1,340 ČRo staff signed up), which is a clear work stoppage, so only a last-minute cancellation, which nobody signals, would make it NO."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.96,
+       "reason": "Mass sign-ups and detailed broadcast-cut plans make a real work stoppage near certain."
+      }
+     ],
+     "market": null,
+     "note": "The strike is fully organised: 1,340 ČRo staff and freelancers signed up (ČTK, 30 Oct) and the plan cuts broadcasting to the legal minimum for 24 hours; organisers name only emergencies as a reason to stop.",
+     "note_cs": "Stávka je plně připravena: zapojí se 1340 zaměstnanců a externistů ČRo (ČTK, 30. října) a vysílání se na 24 hodin omezí na zákonné minimum; organizátoři jako důvod k přerušení uvádějí jen mimořádné události."
     }
    ],
    "result": null
@@ -4675,6 +4801,46 @@
      "market": null,
      "note": "No Spanish transport minister has resigned over a deadly accident in four comparable cases, including Puente himself after Adamuz, and he said \"de momento no\" on 28 October. A second mass-casualty crash within a year and a general election a month away add pressure.",
      "note_cs": "Ve čtyřech srovnatelných případech, včetně samotného Puenta po neštěstí v Adamuzu, žádný španělský ministr dopravy kvůli smrtelné nehodě neodstoupil a Puente 28. října řekl „de momento no“. Tlak zvyšuje druhá hromadná nehoda během jednoho roku a všeobecné volby za měsíc."
+    },
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.07,
+     "combined": 0.068,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.05,
+       "reason": "No Spanish transport minister resigned in four comparable deadly-accident cases, Puente explicitly refused on 30 Oct with no pressure from Sánchez, and caretaker status after the election counts NO."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.07,
+       "reason": "Puente explicitly refused to resign and ruled out dismissal on 30 Oct, no pressure from Sánchez or partners has been reported, and with a general election a month away he will most likely stay on as caretaker, which counts as NO."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.12,
+       "reason": "Case for YES: 69 dead at Urda and more than 100 across two crashes in a year, a general election on 29 November and an investigation pointing at Adif could make Sánchez cut him loose to limit the damage; but Puente refused to resign on 30 October and ruled out dismissal, no coalition partner is pressing, and no Spanish transport minister has gone over a deadly accident, so four weeks is short for a reversal."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.07,
+       "reason": "No market; Puente explicitly refused to resign on 30 Oct and ruled out dismissal, Sánchez and partners are not pressing, and with an election a month away the government will most likely carry him into caretaker status, which counts as NO."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.05,
+       "reason": "He publicly refused to resign, no pressure from Sanchez, and base rates for such resignations are very low."
+      }
+     ],
+     "market": null,
+     "note": "On 30 Oct Puente explicitly refused to resign over the Urda crash and ruled out dismissal; staying on as caretaker through the 29 Nov election resolves NO.",
+     "note_cs": "Puente 30. října kvůli neštěstí u Urdy výslovně odmítl rezignovat a vyloučil odvolání; setrvání v úřadu do voleb 29. listopadu znamená NE."
     }
    ],
    "result": null
@@ -4802,6 +4968,136 @@
      },
      "note": "New question. Lagarde leaves on 7 February 2027; to appoint a successor before then after consulting Parliament and the ECB, the Council's formal recommendation is needed by about mid-December, the natural venue being the December European Council. The risk is a contested race (Knot v Hernández de Cos, tied to other top jobs) that slips into January.",
      "note_cs": "Nová otázka. Lagarde odchází 7. února 2027; aby mohl být nástupce jmenován do té doby po konzultaci s Evropským parlamentem a ECB, musí Rada přijmout formální doporučení zhruba do poloviny prosince, nejspíš kolem prosincové Evropské rady. Rizikem je spor o kandidáta (Knot proti Hernándezi de Cos, provázaný s dalšími posty), který by se mohl protáhnout do ledna."
+    }
+   ]
+  },
+  {
+   "id": "cz-fuel-cap-december",
+   "scope": "cz",
+   "topic": "Fuel price caps",
+   "question": "Will the Czech government extend the regulation of petrol and diesel prices beyond 30 November 2026?",
+   "question_cs": "Prodlouží vláda regulaci cen benzinu a nafty i po 30. listopadu 2026?",
+   "criterion": "Yes if, by 30 Nov 2026 23:59 CET, a government resolution (vlada.cz) or a Ministry of Finance price decree (Cenový věstník or mfcr.cz) sets maximum retail prices or capped retailer margins for petrol or diesel that apply on 1 Dec 2026 or later. Extending only the reduced excise duty on diesel does not count. Otherwise no.",
+   "criterion_cs": "ANO, pokud do 30. listopadu 2026 do 23:59 SEČ usnesení vlády (vlada.cz) nebo cenový výměr ministerstva financí (Cenový věstník nebo mfcr.cz) stanoví maximální ceny nebo zastropované marže obchodníků u benzinu či nafty, které budou platit 1. prosince 2026 nebo později. Samotné prodloužení snížené spotřební daně z nafty se nepočítá. Jinak NE.",
+   "resolution_source": "https://mf.gov.cz/cs/kontrola-a-regulace/cenova-regulace-a-kontrola/maximalni-pripustne-ceny-benzinu-a-nafty",
+   "opened": "2026-10-31",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "On 26 Oct the cabinet extended daily maximum fuel prices, capped retail margins and the diesel excise cut to the EU minimum from end-October to 30 Nov on a Finance Ministry proposal (announced by Schillerová). The caps weigh on CPI and feed the ČNB inflation questions.",
+   "sources": [
+    {
+     "title": "cesky.radio.cz",
+     "url": "https://cesky.radio.cz/vlada-prodlouzila-opatreni-proti-vysokym-cenam-pohonnych-hmot-do-konce-listopadu-8901029"
+    },
+    {
+     "title": "www.ceskenoviny.cz",
+     "url": "https://www.ceskenoviny.cz/zpravy/-vlada-prodlouzila-opatreni-proti-vysokym-cenam-pohonnych-hmot/2893057"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.71,
+     "combined": 0.71,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.66,
+       "reason": "Emergency price caps once rolled over month to month are usually extended again while the price shock persists (prior ~0.7), with the populist coalition unlikely to let caps lapse into a December price jump, minus a little for fiscal cost and inflation-optics arguments for ending margin caps."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.78,
+       "reason": "The caps were renewed on 1 Oct and extended to 30 Nov with Brent above $110, analysts say the government is unlikely to drop them while oil stays high, and Schillerová frames them as an anti-inflation tool; the main risk is a fall in oil prices (the government ended earlier regulation in July once prices eased) or an extension of the excise cut only."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.66,
+       "reason": "Case for NO: the Finance Ministry calls the caps temporary, each extension costs budget revenue, the ČNB is hiking and complains the caps distort CPI, retailers object to daily maximum prices, and any US-Iran de-escalation would lower oil and let the government keep only the excise cut, which does not count; against that the cabinet has already rolled the measure over month by month, a Monday 30 November cabinet meeting fits the deadline, and a populist government rarely lets a price cap lapse with energy prices high and winter starting."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.65,
+       "reason": "No market; the cabinet has already extended the caps once (26 Oct) and the Babiš government favours visible price relief ahead of winter, but the caps are monthly decisions and the Finance Ministry could let them lapse if pump prices ease or the CPI and budget cost weigh, so extension is likely but not settled."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.78,
+       "reason": "The cabinet has repeatedly extended the caps month by month and has no easy exit while prices stay high."
+      }
+     ],
+     "market": null,
+     "note": "Opened: five-forecaster ensemble.",
+     "note_cs": "Otevřeno: odhad pěti prognostiků."
+    }
+   ]
+  },
+  {
+   "id": "cz-cnb-rate-425-feb",
+   "scope": "cz",
+   "topic": "ČNB (February 2027)",
+   "question": "Will the ČNB's two-week repo rate be 4.25% or higher after the Bank Board's first monetary-policy meeting of 2027?",
+   "question_cs": "Bude dvoutýdenní repo sazba ČNB po prvním měnověpolitickém zasedání bankovní rady v roce 2027 činit nejméně 4,25 procenta?",
+   "criterion": "Yes if, following the first scheduled monetary-policy decision of the ČNB Bank Board in 2027 (expected in early February), as published on cnb.cz by 12 Feb 2027 23:59 CET, the two-week repo rate in effect is 4.25% or higher. No if lower, or if no such decision is published by then.",
+   "criterion_cs": "ANO, pokud po prvním řádném měnověpolitickém rozhodnutí bankovní rady ČNB v roce 2027 (očekává se začátkem února), které ČNB zveřejní na cnb.cz do 12. února 2027 do 23:59 SEČ, bude platná dvoutýdenní repo sazba 4,25 procenta nebo vyšší. NE, pokud bude nižší nebo pokud rozhodnutí do té doby nezveřejní.",
+   "resolution_source": "https://www.cnb.cz/cs/menova-politika/bankovni-rada/",
+   "opened": "2026-10-31",
+   "resolves_by": "2027-02-12T23:59:00+01:00",
+   "background": "Markets price a 25 bp hike to 4.00% on 5 Nov (Kalshi 99%); the question is whether the tightening continues in December or February. Seidler says a November hike would not start a tightening cycle; Frait calls the case for hikes sensible but undecided; Citfin expects the new forecast to shape the 2027 path. Verify the exact Feb 2027 meeting date on cnb.cz before adding.",
+   "sources": [
+    {
+     "title": "citfin.cz",
+     "url": "https://citfin.cz/okenko-analytika/cnb-zvysi-sazby-trhy-ceka-volatilni-zacatek-listopadu"
+    },
+    {
+     "title": "www.cnb.cz",
+     "url": "https://www.cnb.cz/cs/verejnost/servis-pro-media/autorske-clanky-rozhovory-s-predstaviteli-cnb/Jan-Frait-Argumenty-pro-zvyseni-sazeb-davaji-smysl-rozhodnuto-ale-jeste-neni/"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-10-31T20:20:00+01:00",
+     "p": 0.31,
+     "combined": 0.307,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.27,
+       "reason": "Needs a second 25 bp hike in Dec or Feb after the near-certain Nov hike to 4.00%; in the 2026 episode the ČNB hiked once and then held for three meetings, and Seidler and Erste/Raiffeisen name 4.00% as the peak, so the outside view is about one in four, nudged slightly up for the Q1 2027 inflation peak near 3.5%."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.37,
+       "reason": "A November hike to 4.00% is near-certain, and markets price about four hikes over 12 months, but Frait calls even 50 bp 'abrupt', Seidler says November would not start a cycle, and core inflation is 3.1%; a second hike by February (in December or February) is possible but not the board's apparent default."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.3,
+       "reason": "Case for NO: 4.25% needs a second 25 bp step in December or February after the expected November hike, yet Seidler says November would not start a cycle, Erste, Raiffeisen and the September minutes name 4.00% as the peak, the board has dovish members, fuel caps hold down headline CPI and the ČNB historically moves one step and waits; the YES case is inflation heading to about 3.5% in early 2027 with an expansionary budget, high energy prices and ECB and Fed hikes, which could make the new forecast imply a higher path."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "reason": "Kalshi prices a 25 bp hike to 4.00% on 5 Nov at 0.99, but no market covers December or February; a second hike to 4.25% by the first 2027 meeting needs a tightening cycle that Seidler explicitly says the November move would not start and Frait calls undecided, so I put it well below even, pending the November forecast."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "reason": "Reaching 4.25% needs a hike to 4.00% in November plus another in December or February, while board members signal no clear cycle."
+      }
+     ],
+     "market": null,
+     "note": "Opened: five-forecaster ensemble.",
+     "note_cs": "Otevřeno: odhad pěti prognostiků."
     }
    ]
   }
