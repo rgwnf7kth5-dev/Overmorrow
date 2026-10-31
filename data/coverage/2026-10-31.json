@@ -1,0 +1,59 @@
+{
+ "edition": "2026-10-31",
+ "checked_at": "2026-10-31T05:30:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Reuters World and AP (not attempted this run; blocked in earlier runs)"
+ ],
+ "note": "Lists used: (a) Wikipedia Portal:Current events/2026 October 30, raw wikitext; (c) ČT24 'SOUHRN: Zásadní události pátku 30. října' (bold headings only) and the ČTK (ceskenoviny.cz) all-news RSS feed, items dated 30 Oct only. List (b) is missing. Items found in Wikipedia only did not qualify: the burning tanker in the Strait of Hormuz, the Houthi drone towards Mecca, Pope Leo voting in the US midterms, Novaya Gazeta closing, Syrian floods, the Joshimath helicopter crash, Erin Patterson's appeal, the Balmoral investigation, the Binance theft, the Kosiah sentence and the Italian general strike (covered as it-general-strike). Items found in one Czech list only did not qualify: Albert buying Tesco in Czechia and Slovakia and the science grants appeal (ČT24); the PAC-3 sale to Ukraine, the EU–Canada alliance statement, the Balaštíková charge, the ČRo strike count, the fuel caps falling for the weekend (covered as cz-fuel-caps), the Eurostat GDP flash (covered as eu-gdp) and the Kremlin on Europe at peace talks (ČTK). Sport (CAS ruling on Russian hockey teams, ELH, F1, curling) and market prices (Brent, Prague exchange) are excluded.",
+ "events": [
+  {
+   "title": "Poland: police enter the Constitutional Tribunal after its president Święczkowski is suspended; President Nawrocki turns his plane around",
+   "scope": "europe",
+   "lists": ["wikipedia", "ctk"],
+   "source": "https://apnews.com/article/poland-european-union-justice-protests-police-tribunal-67eda2e3a151e00038d85a5e894a2a72",
+   "status": "missed",
+   "note": "Not announced in advance (the suspension was announced on the day); nothing on the Polish tribunal dispute was in the planning file. Not a sweep gap."
+  },
+  {
+   "title": "Evacuations from Oleshky begin under the local truce; evacuees reach occupied Crimea",
+   "scope": "world",
+   "lists": ["wikipedia", "ctk"],
+   "source": "https://www.theguardian.com/world/2026/oct/30/evacuation-besieged-ukrainian-city-oleshky",
+   "status": "covered",
+   "story": "ua-war"
+  },
+  {
+   "title": "Ukraine resumes strikes on Russian refineries; Novokuibyshevsk refinery on fire, one dead in Kyiv after a Russian attack",
+   "scope": "world",
+   "lists": ["ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-30-rijna-379155",
+   "status": "missed",
+   "note": "Strikes, not announced in advance. The 2026-10-30 coverage file noted the WSJ report of a US-requested pause in refinery strikes; the running war story covered only Oleshky. Not a sweep gap."
+  },
+  {
+   "title": "Czech citizen confirmed among the dead of the Toledo train collision (foreign ministry)",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-30-rijna-379155",
+   "status": "covered",
+   "story": "es-train-crash"
+  },
+  {
+   "title": "ČEZ to raise electricity and gas prices for 1.6 million customers next year",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-30-rijna-379155",
+   "status": "missed",
+   "note": "Company price announcement, not announced in advance; not in the planning file. Not a sweep gap."
+  },
+  {
+   "title": "České Budějovice: coalition talks among parties without the winner Naše Česko",
+   "scope": "cz",
+   "lists": ["ct24", "ctk"],
+   "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-30-rijna-379155",
+   "status": "missed",
+   "note": "Local coalition talks with no announced date for 30 Oct; the planning file tracked only Prague talks. Not a sweep gap."
+  }
+ ]
+}
