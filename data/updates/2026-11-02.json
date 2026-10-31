@@ -1,0 +1,146 @@
+{
+  "edition": "2026-11-02",
+  "frozen_at": "2026-10-31T12:26:00+01:00",
+  "revisions": [
+    {
+      "claim": "us-iran-talks-1",
+      "probability": 0.22,
+      "reason": "On 31 October, after the morning freeze, reports citing Al-Araby Al-Jadeed and Axios said Qatari mediators had made a breakthrough in 12 hours of talks in Tehran, that talks continue in Doha on Saturday and that a US delegation is expected there for direct talks; no government has yet named a date. New ensemble: base-rate 0.26, evidence 0.30, adversarial 0.24, anchor 0.19, outsider 0.25; geometric mean of odds 0.246, calibrated 0.215.",
+      "reason_cs": "Podle zpráv zveřejněných 31. října po ranní uzávěrce, které se odvolávají na list Al-Arabí al-Džadíd a server Axios, dosáhli katarští prostředníci po dvanáctihodinových jednáních v Teheránu průlomu, rozhovory pokračují v sobotu v Dauhá a očekává se tam americká delegace k přímým jednáním; žádná vláda zatím datum neoznámila. Nový soubor odhadů: základní míra 0,26, důkazy 0,30, oponent 0,24, kotva 0,19, outsider 0,25; geometrický průměr šancí 0,246, po kalibraci 0,215.",
+      "sources": [
+        {
+          "title": "ANI: US delegation expected in Doha for direct Iran talks after reported breakthrough (31 Oct 2026, 08:05 UTC)",
+          "url": "https://www.aninews.in/news/world/middle-east/us-delegation-expected-in-doha-for-direct-iran-talks-after-reported-breakthrough-reports20261031133523/"
+        },
+        {
+          "title": "Türkiye Today: US delegation to join Iran for direct talks in Doha after breakthrough: report (31 Oct 2026)",
+          "url": "https://www.turkiyetoday.com/region/us-delegation-to-join-iran-for-direct-talks-in-doha-after-breakthrough-report-3231394"
+        },
+        {
+          "title": "Iran International liveblog: Trump plans new Iran strikes after midterms, Iran negotiators head to Doha",
+          "url": "https://www.iranintl.com/en/liveblog/202610244311"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "us-iran-talks-1",
+      "at": "2026-10-31T12:25:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-10-31T12:23:00+01:00",
+          "p_blind": 0.3,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "About 1 YES in 18 for dated or named announcements inside two-day windows in this conflict, roughly tripled by the 31 Oct reports of a breakthrough and a US delegation expected in Doha.",
+          "p": 0.26,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Markets (read 30 Oct, before the reports) price only 0.28 for any meeting by 30 Nov; slight trim."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-10-31T12:23:00+01:00",
+          "p_blind": 0.2,
+          "inputs_blind": [
+            "own-research"
+          ],
+          "reason_blind": "Own searches found no official date or named Iranian acceptance on 31 Oct; Qatari shuttle mediation active, Iran answers through mediators.",
+          "p": 0.3,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Reports of Iranian negotiators heading to Doha and a US delegation expected make a dated Qatari or White House announcement plausible, as in late June, but all sourcing is anonymous and strikes are signalled after the midterms."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-10-31T12:23:00+01:00",
+          "p_blind": 0.27,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "YES: talks continue in Doha Saturday and Trump rarely keeps a date quiet; NO: everything is anonymous, Iran's Doha trip is with Qatari mediators, Trump says 'we have time' while preparing post-midterm strikes.",
+          "p": 0.24,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Stale markets price only 0.28 for a meeting by 30 Nov, tempering the lift."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-10-31T12:23:00+01:00",
+          "p": 0.19,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "anchor": "Polymarket 'US-Iran senior diplomatic meeting by 30 Nov' 0.28 (read 30 Oct 18:09Z; fresh read failed 31 Oct); ~25% of that mass on an announcement in this window plus named-acceptance route gives ~0.10, raised to 0.19 for the Doha breakthrough reports."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-10-31T12:23:00+01:00",
+          "p_blind": 0.27,
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason_blind": "Doha reports point to progress, but an official date or named acceptance within two days is a high bar.",
+          "p": 0.25,
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Markets price nothing for a weekend announcement; stays near blind estimate."
+        }
+      ],
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.0634,
+          "b": 1.2146
+        },
+        "version": "2026-10-31"
+      },
+      "combined": 0.215,
+      "combined_blind": 0.258,
+      "red_team": {
+        "model": "claude-opus-5-5",
+        "at": "2026-10-31T12:25:00+01:00",
+        "verdict": "stands",
+        "risk": "The rise rests on unnamed sources with about 40 hours left; Tehran's habit of denying direct talks and post-midterm strike planning could push any dated announcement past 1 November, while Trump has announced a talks date on his own before (Doha, June 2026)."
+      },
+      "new_facts": "work/2026-11-02/new-facts-us-iran-talks-1.md"
+    }
+  ]
+}
