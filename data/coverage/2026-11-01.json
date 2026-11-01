@@ -1,0 +1,34 @@
+{
+ "edition": "2026-11-01",
+ "checked_at": "2026-11-01T05:15:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Reuters World and AP (not attempted this run; blocked in earlier runs)",
+  "ČT24 daily summary for Saturday 31 Oct (not found on the rubric page fetched)"
+ ],
+ "note": "Lists used: (a) Wikipedia Portal:Current events/2026 October 31, raw wikitext; (c) the ČTK (ceskenoviny.cz) all-news RSS feed, items dated 31 Oct only. Lists (b) and the ČT24 half of (c) are missing, so no Czech event could qualify (one Czech list alone is not enough). Items found in Wikipedia only did not qualify: Madagascar dismantling 13 Chinese-run scam centres and extraditing 148 Chinese nationals, and the youth-led protests in 34 German cities. Items found in ČTK only did not qualify: Rubio–Lavrov call on a possible Trump–Putin meeting (covered as g20-fm), Zelensky–Erdoğan talks, Oleshky evacuees reaching Ukrainian-held territory (covered as ua-war), Babiš on licence fees and the 3 Nov strike (covered as cz-media-strike), Khamenei's warning to the US, the AP report on damage to US bases, the WSJ ruling against Trump and the body of a Czech found in Norway. Sport (Breeders' Cup Classic, Youth Olympics opening, football, F1, NHL) and market prices (bitcoin) are excluded.",
+ "events": [
+  {
+   "title": "Poland: Constitutional Tribunal crisis deepens; ambassadors to Romania and China resign over Święczkowski's suspension, Tusk accuses the opposition of trying to destroy democracy",
+   "scope": "europe",
+   "lists": [
+    "wikipedia",
+    "ctk"
+   ],
+   "source": "https://wiadomosci.wp.pl/prezydent-karol-nawrocki-przyjechal-do-trybunalu-konstytucyjnego-relacja-na-zywo-7345695014824384l",
+   "status": "missed",
+   "note": "Running story since 30 Oct (missed then too) with no scheduled step on 31 Oct; the resignations weren't announced in advance and the planning file has nothing on the Polish tribunal dispute. Not a sweep gap, but the running-story sweep should have picked it up after 30 Oct."
+  },
+  {
+   "title": "France: third weekend of nationwide protests (about 320,000 according to ČTK)",
+   "scope": "europe",
+   "lists": [
+    "wikipedia",
+    "ctk"
+   ],
+   "source": "https://www.france24.com/en/france/20261031-live-france-braces-for-halloween-protests-government-vows-tough-response",
+   "status": "covered",
+   "story": "fr-gilets-jaunes"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "edition": "2026-11-01",
+ "results": [
+  {
+   "claim": "cn-pmi-oct",
+   "outcome": "measured",
+   "value": 49.3,
+   "evidence": "https://www.stats.gov.cn/sj/zxfb/202610/t20261031_1965718.html",
+   "note": "NBS release of 31 Oct 2026 '2026年10月中国采购经理指数运行情况': the manufacturing PMI was 49.3%, down 0.8 points from September.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cn-pmi-50",
+   "outcome": "no",
+   "evidence": "https://www.stats.gov.cn/sj/zxfb/202610/t20261031_1965718.html",
+   "note": "The NBS release of 31 Oct 2026 puts October's manufacturing PMI at 49.3%, below 50.0.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  }
+ ],
+ "corrections": []
+}
