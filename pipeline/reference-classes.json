@@ -141,7 +141,7 @@
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
     "yes": 1,
-    "no": 18
+    "no": 19
    }
   },
   {
@@ -151,8 +151,8 @@
    "n": "own record only",
    "source": "own resolved claims (resolver, 24 Oct 2026)",
    "own_record": {
-    "yes": 7,
-    "no": 3
+    "yes": 10,
+    "no": 6
    }
   },
   {
@@ -338,7 +338,7 @@
    "n": 0,
    "source": "Own record only (created 2026-10-29)",
    "own_record": {
-    "yes": 3,
+    "yes": 4,
     "no": 1
    }
   },
@@ -371,7 +371,7 @@
    "n": 0,
    "source": "Own record only (created 2026-10-29)",
    "own_record": {
-    "yes": 1,
+    "yes": 2,
     "no": 0
    }
   },
@@ -406,6 +406,28 @@
    "own_record": {
     "yes": 1,
     "no": 0
+   }
+  },
+  {
+   "id": "unsc-mandate-renewal-unanimous",
+   "description": "UN Security Council renews a mission mandate with all 15 members in favour",
+   "base_rate": null,
+   "n": "not yet counted",
+   "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-colombia-30",
+   "own_record": {
+    "yes": 1,
+    "no": 0
+   }
+  },
+  {
+   "id": "unsc-mandate-renewal-split-vote",
+   "description": "UN Security Council adopts a contested mission renewal with a stated number of abstentions",
+   "base_rate": null,
+   "n": "not yet counted",
+   "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-minurso-30",
+   "own_record": {
+    "yes": 0,
+    "no": 1
    }
   }
  ]

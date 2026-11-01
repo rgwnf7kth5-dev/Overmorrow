@@ -1,0 +1,112 @@
+{
+ "edition": "2026-10-31",
+ "results": [
+  {
+   "claim": "de-gdp-q3",
+   "outcome": "measured",
+   "value": 0.2,
+   "evidence": "https://www.destatis.de/EN/Press/2026/10/PE26_381_811.html",
+   "note": "Destatis press release of 30 Oct 2026: 'Gross domestic product in the 3rd quarter of 2026 up 0.2% on the previous quarter' (price-, seasonally and calendar-adjusted).",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "de-gdp-q3-neg",
+   "outcome": "no",
+   "evidence": "https://www.destatis.de/EN/Press/2026/10/PE26_381_811.html",
+   "note": "Destatis' first estimate of 30 Oct 2026 puts Q3 2026 GDP at +0.2% on the previous quarter, which is not negative.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "eu-gdp-q3",
+   "outcome": "measured",
+   "value": 0.4,
+   "evidence": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
+   "note": "Eurostat's preliminary flash estimate for Q3 2026 (30 Oct 2026): seasonally adjusted GDP increased by 0.4% in the euro area compared with the previous quarter.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "eu-gdp-q3-02",
+   "outcome": "yes",
+   "evidence": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
+   "note": "Eurostat's preliminary flash estimate of 30 Oct 2026 puts euro-area Q3 2026 GDP growth at 0.4% q/q, which is at least 0.2%.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-gdp-q3",
+   "outcome": "measured",
+   "value": 0.5,
+   "evidence": "https://csu.gov.cz/rychle-informace/predbezny-odhad-hdp-3-ctvrtleti-2026",
+   "note": "ČSÚ 'Předběžný odhad HDP - 3. čtvrtletí 2026' (050055-26, 30 Oct 2026): GDP grew by 0.5% quarter on quarter (1.6% year on year).",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-gdp-q3-04",
+   "outcome": "yes",
+   "evidence": "https://csu.gov.cz/rychle-informace/predbezny-odhad-hdp-3-ctvrtleti-2026",
+   "note": "ČSÚ's preliminary estimate of 30 Oct 2026 puts Q3 2026 GDP growth at 0.5% q/q, which is 0.4 or higher.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "fr-cpi-oct-31",
+   "outcome": "yes",
+   "evidence": "https://www.insee.fr/fr/accueil",
+   "note": "INSEE's home page key-figure panel shows consumer price inflation (glissement annuel) of +3.4% in October 2026, from the provisional estimate of 30 Oct; the Informations rapides page itself was not opened.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "un-colombia-30",
+   "outcome": "yes",
+   "evidence": "https://press.un.org/en",
+   "note": "UN meetings coverage of 30 Oct 2026: the Security Council 'unanimously adopted resolution 2833 (2026)' extending the Verification Mission in Colombia until 31 Oct 2027.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "un-minurso-30",
+   "outcome": "no",
+   "evidence": "https://press.un.org/en",
+   "note": "UN meetings coverage of 30 Oct 2026: the Security Council 'failed to adopt' both draft resolutions to extend MINURSO, so no extension was adopted in the window.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-exxon-eps-30",
+   "outcome": "yes",
+   "evidence": "https://www.sec.gov/Archives/edgar/data/0002115436/000211543626000018/livef8k3q26991.htm",
+   "note": "ExxonMobil's Q3 2026 earnings release (8-K Exhibit 99.1, 30 Oct 2026) reports Adjusted Earnings Per Common Share (Non-GAAP) of $4.23, above $4.03.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "jp-boj-dissent-30",
+   "outcome": "yes",
+   "evidence": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+   "note": "The BoJ Statement on Monetary Policy of 30 Oct 2026 records an 8-1 vote keeping the call rate at around 1.25%, with Takata Hajime voting against and proposing 1.5%.",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-us-interim-30",
+   "outcome": "no",
+   "evidence": "https://www.usoud.cz/aktualne",
+   "note": "The Constitutional Court's news list has only one item dated 29–30 Oct (29 Oct, the hearing schedule for week 45) and none on the interim-measure request in the heads-of-missions case; this rests on the Court's own list, ČTK was not checked.",
+   "resolved_at": "2026-11-01T05:12:00+01:00"
+  },
+  {
+   "claim": "cz-diesel-cap-31",
+   "outcome": "no",
+   "evidence": "https://www.mfcr.cz/cs/kontrola-a-regulace/cenova-regulace-a-kontrola/maximalni-pripustne-ceny-benzinu-a-nafty",
+   "note": "The MF notice set on 30 Oct 2026 at 14:00 fixes the diesel maximum for 31 Oct–2 Nov at 49.45 CZK/l incl. VAT, below the 49.69 valid on 30 Oct (Cenový věstník 113/2026).",
+   "resolved_at": "2026-11-01T05:12:00+01:00",
+   "held": true
+  }
+ ],
+ "corrections": []
+}
