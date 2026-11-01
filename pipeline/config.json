@@ -67,6 +67,12 @@
       "from": 6,
       "date": "2026-10-25",
       "label": "Selection by news value: the biggest running stories of the day must be covered with a claim on their next step; economy desk with a minimum; photographs in every edition"
+    },
+    {
+      "version": 5,
+      "from": 13,
+      "date": "2026-11-01",
+      "label": "Lessons from the first 132 resolved claims: results within 72 hours, poll models with a minimum error for elections, wider number ranges centred on consensus, data-direction claims only away from the threshold, calibration only when it helps out of sample, recorded market search, research when forecasters disagree, an outsider without the shared dossier"
     }
   ],
   "v3": {
@@ -119,5 +125,32 @@
       "iROZHLAS (irozhlas.cz)"
     ]
   },
-  "news_style_from": 7
+  "news_style_from": 7,
+  "v5": {
+    "from": 13,
+    "due_hours": 72,
+    "election_lead_sd_min": {
+      "national": 3.5,
+      "regional": 4.5,
+      "local": 5.5
+    },
+    "election_model_tolerance": 0.12,
+    "election_no_poll_range": [
+      0.25,
+      0.75
+    ],
+    "interval_width_min_scales": 4.1,
+    "interval_centre_max_scales": 0.5,
+    "release_threshold_min_scales": 0.5,
+    "research_spread": 0.15,
+    "market_search_tools": [
+      "markets.mjs"
+    ],
+    "_notes": {
+      "election_lead_sd_min": "Minimum sd (pp) of the top-two lead in the poll model, by level. Pooled poll error 2.7–3.6 pp (pipeline/reference-data/poll-error.json); our first 17 election claims scored Brier 0.265, so the floor sits at the upper end and above it for regional and local races, where polling is thinner.",
+      "interval_width_min_scales": "q90 − q10 must be at least this many surprise scales: 1.6 × the Normal 80% width (2.56). Only 7 of our first 13 ranges held the result.",
+      "release_threshold_min_scales": "A yes/no claim on a data release needs the threshold at least this many surprise scales from consensus; nearer, it is a coin toss: use an interval claim instead.",
+      "research_spread": "If the five final estimates span more than this, a research agent looks for the disputed fact before freezing (spread ≥ 15 points scored 0.170 against 0.140)."
+    }
+  }
 }

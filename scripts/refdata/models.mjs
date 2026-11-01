@@ -77,8 +77,8 @@ export function fromOdds(odds) {
  * Quantiles of a data release from consensus and the usual surprise size (Normal): q10, q50, q90.
  * For interval claims (kind "interval"); widen when the consensus range is wide or the source is noisy.
  */
-export function releaseQuantiles(consensus, surpriseSd) {
-  const z = 1.2815515655446004;
+export function releaseQuantiles(consensus, surpriseSd, widen = 1) {
+  const z = 1.2815515655446004 * widen;
   return { q10: consensus - z * surpriseSd, q50: consensus, q90: consensus + z * surpriseSd };
 }
 
@@ -88,9 +88,9 @@ if (isMain) {
   const [cmd, ...a] = process.argv.slice(2);
   const n = a.map(Number);
   const fmt = (p) => `${(p * 100).toFixed(1)}%`;
-  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd> | odds <o1> <o2> [...] | quantiles <consensus> <surpriseSd> | derive <q10> <q50> <q90> < | > <x> | derive <q10> <q50> <q90> between | outside <a> <b>';
+  const usage = 'usage: models.mjs lead <leadMean> <sd> | leadabove <leadMean> <sd> <threshold> | atleast <n> <pEach> <k> | release <consensus> <threshold> <surpriseSd> | odds <o1> <o2> [...] | quantiles <consensus> <surpriseSd> [widen: 1.6 from method v5] | derive <q10> <q50> <q90> < | > <x> | derive <q10> <q50> <q90> between | outside <a> <b>';
   if (cmd === 'odds' && a.length >= 2) { const r = fromOdds(n); console.log(JSON.stringify({ probs: r.probs.map((x) => +x.toFixed(4)), overround: +r.overround.toFixed(4) })); process.exit(0); }
-  if (cmd === 'quantiles' && a.length === 2) { const q = releaseQuantiles(n[0], n[1]); console.log(JSON.stringify(Object.fromEntries(Object.entries(q).map(([k, v]) => [k, +v.toFixed(4)])))); process.exit(0); }
+  if (cmd === 'quantiles' && (a.length === 2 || a.length === 3)) { const q = releaseQuantiles(n[0], n[1], a.length === 3 ? n[2] : 1); console.log(JSON.stringify(Object.fromEntries(Object.entries(q).map(([k, v]) => [k, +v.toFixed(4)])))); process.exit(0); }
   if (cmd === 'derive' && a.length >= 5) {
     const { derivedProb } = await import('../lib.mjs');
     const c = { quantiles: { q10: n[0], q50: n[1], q90: n[2] } };

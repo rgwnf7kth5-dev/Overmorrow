@@ -50,16 +50,19 @@ function fitPlatt(pts, tau) {
   }
   return { a, b };
 }
-const plattOn = n >= cfg.calibration_min_resolved;
-const platt = plattOn ? fitPlatt(data, cfg.calibration_prior_strength) : { a: 0, b: 1 };
-const clampB = Math.min(cfg.extremize_max, Math.max(1 / cfg.extremize_max, platt.b));
-const params = { method: weightsOn || plattOn ? 'calibrated' : 'geo-odds', weights, platt: { a: +platt.a.toFixed(4), b: +clampB.toFixed(4) } };
-
-// In-sample diagnostics (for the accuracy page and the report). Out-of-sample: leave-one-out for Platt.
+// Diagnostics. A stage is switched on only when it has enough claims AND improves the score out of sample
+// (method version 5): with 91 claims the fitted correction looked good in sample but was worse leave-one-out.
 const score = (f) => { if (!n) return null; let b = 0, l = 0; rows.forEach((r, i) => { const p = Math.min(0.99, Math.max(0.01, f(r, i))); b += brier(p, r.outcome); l += logLoss(p, r.outcome); }); return { brier: +(b / n).toFixed(4), log: +(l / n).toFixed(4) }; };
+const clamp = (b) => Math.min(cfg.extremize_max, Math.max(1 / cfg.extremize_max, b));
 const raw = score((r) => combine(r.forecast.agents));
 const published = score((r) => r.probability);
-const loo = plattOn ? score((r, i) => { const pl = fitPlatt(data.filter((_, j) => j !== i), cfg.calibration_prior_strength); return sigmoid(pl.a + Math.min(cfg.extremize_max, Math.max(1 / cfg.extremize_max, pl.b)) * data[i].x); }) : null;
+const plattEligible = n >= cfg.calibration_min_resolved;
+const loo = plattEligible ? score((r, i) => { const pl = fitPlatt(data.filter((_, j) => j !== i), cfg.calibration_prior_strength); return sigmoid(pl.a + clamp(pl.b) * data[i].x); }) : null;
+const plattOn = plattEligible && loo.brier < raw.brier;
+const platt = plattOn ? fitPlatt(data, cfg.calibration_prior_strength) : { a: 0, b: 1 };
+const clampB = clamp(platt.b);
+const params = { method: weightsOn || plattOn ? 'calibrated' : 'geo-odds', weights, platt: { a: +platt.a.toFixed(4), b: +clampB.toFixed(4) } };
+const gate = { platt: !plattEligible ? `needs ${cfg.calibration_min_resolved} resolved claims` : plattOn ? `leave-one-out ${loo.brier} beats raw ${raw.brier}` : `off: leave-one-out ${loo.brier} does not beat raw ${raw.brier}` };
 
 const out = {
   _about: 'Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is "calibrated"; the validator recomputes the probability from it. Do not edit by hand.',
@@ -68,9 +71,10 @@ const out = {
   resolved: n,
   thresholds: { weighting: cfg.weighting_min_resolved, calibration: cfg.calibration_min_resolved },
   active: { weights: weightsOn, platt: plattOn },
+  gate,
   params,
   forecasters: roleBrier,
   diagnostics: { raw_ensemble: raw, published, platt_leave_one_out: loo },
 };
 if (dry) console.log(JSON.stringify(out, null, 2));
-else { fs.writeFileSync(CALIBRATION_FILE, JSON.stringify(out, null, 2) + '\n'); console.log(`calibration: ${n} resolved claims; weights ${weightsOn ? 'on' : `off (need ${cfg.weighting_min_resolved})`}, Platt ${plattOn ? `on (a=${params.platt.a}, b=${params.platt.b})` : `off (need ${cfg.calibration_min_resolved})`}.`); }
+else { fs.writeFileSync(CALIBRATION_FILE, JSON.stringify(out, null, 2) + '\n'); console.log(`calibration: ${n} resolved claims; weights ${weightsOn ? 'on' : `off (need ${cfg.weighting_min_resolved})`}, Platt ${plattOn ? `on (a=${params.platt.a}, b=${params.platt.b})` : gate.platt}.`); }

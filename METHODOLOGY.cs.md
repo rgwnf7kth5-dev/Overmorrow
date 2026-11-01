@@ -146,6 +146,7 @@ Samostatný oponent čte hotové predikce s jedinou otázkou: co nás zítra nej
   - **Korekce vlastního zkreslení** (od 50 vyhodnocených tvrzení): logit(p) = a + b·x, kde x je průměrný logaritmus šancí prognostiků. Sklon b nad 1 znamená, že surový tým byl příliš opatrný, a jeho čísla se posunou dál od 50 % (prognostici se společnými informacemi mají sklon reagovat společně slabě); nenulové a opravuje náklon k ano nebo ne. Odhad je tažen k „žádné korekci“, takže malé vzorky mění málo, a jeho účinek mimo vzorek se zveřejňuje.
   - **Váhy prognostiků** (od 120 vyhodnocených tvrzení): prognostici s lepším Brierovým skóre dostanou v průměru větší váhu, tlumenou směrem k rovným vahám.
 - Dokud je korekce aktivní, každé nové tvrzení zapisuje použité parametry (`forecast.combination`), validátor z nich zveřejněné číslo přepočítá a stránka přesnosti ukazuje aktuální stav.
+- *(v5)* Korekce se zapne, jen když pomáhá i mimo vzorek: když se odhadne pokaždé bez jednoho vyhodnoceného tvrzení, musí na něm vyjít lépe než prostý průměr týmu. Ke 1. listopadu při 91 tvrzeních vypadala korekce (sklon 1,30) dobře na vzorku, ale při vynechávání vyšla hůř (0,1528 proti 0,1507), a proto se vypnula.
 
 ### 4.7 Uzávěrka
 
@@ -236,3 +237,18 @@ Každé vydání nese verzi metody, podle které vzniklo (`method_version`; u st
 | 2 | č. 4 | 23. října 2026 | Pět zaznamenaných prognostiků s modely, třídy skluzu, číselné predikce, kvóty na pásma pravděpodobností. |
 | 3 | č. 5 | 24. října 2026 | Po vnějším posudku: oddělené okno události a čas dokladu, vyloučení událostí po dni D+1; úplný záznam každého kroku včetně slepých odhadů a odhadů po zobrazení trhu; podklad oddělený od tržních signálů; termín a výsledek hodnocené zvlášť; související čísla z jednoho rozdělení; zrušené kvóty na pravděpodobnosti; ukládání každého odpoledního přepočtu; výsledky podle verze metody s počtem událostí a nejistotou; evidence přehlédnutých událostí. |
 | 4 | č. 6 | 25. října 2026 | Výběr podle zpravodajské hodnoty; hlavní kauzy dne pokryté predikcí jejich dalšího kroku; ekonomická rubrika nejméně se třemi zprávami; ilustrační fotografie v každém vydání. |
+| 5 | č. 13 | 1. listopadu 2026 | Poučení z prvních 132 vyhodnocených tvrzení (oddíl 13). |
+
+## 13. Co nás naučilo prvních 132 výsledků
+
+Po deseti vyhodnocených vydáních (21. října až 1. listopadu 2026) vypadal záznam takto: Brierovo skóre 0,145 (90% interval 0,118–0,171 na 109 nezávislých událostech) proti 0,250 u hodu mincí; vyšlo 108 ze 132 tipů; chyba kalibrace 0,013, s mírným sklonem k opatrnosti (tvrzení s 80–90 % se splnila v 92 % případů). Slabá místa byla konkrétní a verze 5 odpovídá na každé z nich:
+
+- **Volby** dopadly nejhůř (0,265 na 17 tvrzeních). Tvrzení o vítězi, rozdílu nebo pořadí nově vycházejí z modelu průzkumů s minimální chybou (3,5 bodu pro náskok v celostátních volbách, 4,5 v regionálních, 5,5 v místních); zveřejněné číslo se od modelu smí odchýlit nejvýš o 12 bodů se zdůvodněním a samotná cena na trhu zdůvodněním není. Bez použitelných průzkumů zůstává číslo mezi 25 a 75 %.
+- **Číselné predikce** byly příliš sebejisté: do našeho 80% rozpětí padlo jen 7 ze 13 výsledků a naše střední hodnoty nebyly přesnější než konsenzus analytiků. Rozpětí je nově nejméně 1,6krát širší než učebnicová šířka pro obvyklé překvapení ukazatele a střední hodnota se drží u konsenzu, pokud doložený důvod neříká jinak.
+- **Tvrzení ano/ne o statistických datech** blízko konsenzu byla hodem mincí (0,195 na 14). Takové tvrzení nově potřebuje práh nejméně půl obvyklého překvapení od konsenzu; jinak se číslo předpovídá jako rozpětí.
+- **Tržní signály pomáhají** (stejných 66 tvrzení mělo 0,155, než je prognostici viděli, a 0,135 potom), ale mělo je jen 11 z 91 tvrzení. Každé tvrzení nově zapisuje hledání na trzích, i když nic nenajde.
+- **Pět prognostiků bylo téměř zaměnitelných** (každý 0,150–0,155). Nezávislý prognostik už nečte společný podklad, a když se pět odhadů liší o víc než 15 bodů (taková tvrzení měla 0,170 proti 0,140), cílená rešerše před uzávěrkou hledá sporný fakt.
+- **Odklady byly vzácnější, než jsme čekali**: z prvních 79 naplánovaných událostí se neodložila žádná, protože předpovídáme události, až když jsou potvrzené. Odhadované míry odkladů jsme snížili.
+- **Výsledky musí přicházet včas**: 1. listopadu čekalo 25 tvrzení po termínu na výsledek. Tvrzení déle než 72 hodin po termínu nově zastaví ranní běh, dokud se nevyhodnotí z nejlepších dostupných dokladů; stránka přesnosti ukazuje, kolik jich čeká.
+- **Kalibrační korekce jen tehdy, když pomáhá mimo vzorek** (oddíl 4.6).
+- **Kalendáře**: předvídatelné přehlédnuté události (program kolegia Komise, výroční zprávy jako bulletin WMO o skleníkových plynech, ceníky energií na příští rok) jsme doplnili do průchodu kalendáři.

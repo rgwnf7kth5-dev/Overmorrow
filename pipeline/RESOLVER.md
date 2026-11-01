@@ -18,7 +18,7 @@ For each due claim:
    - `no`: the criterion is not met, including when the event was postponed, cancelled or happened outside its `event_window` (from edition No. 5);
    - `void`: only if the criterion cannot be applied at all (the source no longer exists, or the claim proves self-contradictory). Explain why in the note.
    - for an interval claim (`kind: "interval"`): `measured` with `value` (the number exactly as published, in the claim's unit), or `void`.
-4. **Missing evidence is not a "no".** If the source has not yet published, leave the claim pending and try again in later runs, even if an old criterion says otherwise. After 72 hours past the deadline, resolve from the best available evidence (two independent outlets) and say so in the note; mark it `ambiguous` if that required interpretation.
+4. **Missing evidence is not a "no".** If the source has not yet published, leave the claim pending and try again in later runs, even if an old criterion says otherwise. After 72 hours past the deadline, resolve from the best available evidence (two independent outlets) and say so in the note; mark it `ambiguous` if that required interpretation. *(v5)* This is binding: `node scripts/validate.mjs --strict-due` fails while any claim is more than `v5.due_hours` past its deadline without a result, and the morning run must use it. On 1 November 25 claims were waiting, the oldest four days; claims that are hard to decide are the ones most likely to have been missed, so a backlog flatters the score.
 5. Record: `claim`, `outcome`, `evidence` (URL), `note` (one sentence on what the evidence shows), `resolved_at` (current time with offset), and:
    - `held`: `true` if the scheduled event behind the claim took place on the day it was expected (from edition No. 5: inside its `event_window`), `false` if it was postponed, interrupted, dropped or moved — required for every claim whose `slip_class` is not `none` (unless void). It records the schedule, not the outcome: a vote that took place and failed is `held: true`.
    - `ambiguous: true` if the criterion had to be interpreted (the reading a neutral observer would take); say how in the note.
@@ -34,7 +34,7 @@ node scripts/refdata/slip.mjs        # schedule-slip rates with today's held/sli
 node scripts/calibrate.mjs           # writes pipeline/calibration.json (weights and bias correction)
 ```
 
-Commit `pipeline/calibration.json` with the results. If the calibration has just switched on (or its parameters moved by more than 0.1), say so in the report. If a claim was `ambiguous` or `void` because of how it was written, add the cause in one line to `data/postmortems.md` under the heading "Claim design". For misses where the probability was 70% or higher (or 30% or lower for claims that came true), add a one-paragraph post-mortem to `data/postmortems.md`: what we missed and whether it was a wrong base rate, a missed fact, bad claim design, or plain bad luck.
+Commit `pipeline/calibration.json` with the results. *(v5)* The correction switches on only when it beats the plain ensemble with each claim left out in turn (`gate` in the file); if it has just switched on or off, or its parameters moved by more than 0.1, say so in the report. If a claim was `ambiguous` or `void` because of how it was written, add the cause in one line to `data/postmortems.md` under the heading "Claim design". For misses where the probability was 70% or higher (or 30% or lower for claims that came true), add a one-paragraph post-mortem to `data/postmortems.md`: what we missed and whether it was a wrong base rate, a missed fact, bad claim design, or plain bad luck.
 
 ## 3b. Coverage: what the paper missed
 
@@ -56,7 +56,7 @@ For the edition whose claims you just resolved (events of the previous day), wri
 ## 4. Validate, build, publish
 
 ```
-node scripts/validate.mjs
+node scripts/validate.mjs --strict-due
 node scripts/build.mjs
 ```
 

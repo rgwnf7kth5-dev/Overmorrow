@@ -21,7 +21,7 @@ Write the findings to `work/<D+2>/afternoon.md`, each with time of publication a
 
 For each morning claim with a material new fact:
 
-1. Run the full ensemble again (EDITOR.md, steps 4 and 5): the five independent forecasters on their models from `config.ensemble_models`, combined as in step 4 (including `pipeline/calibration.json` when active), and the red team, each given the new fact with its link. Record every agent as in EDITOR.md step 4 (model, time, inputs).
+1. Run the full ensemble again (EDITOR.md, steps 4 and 5): the five independent forecasters on their models from `config.ensemble_models`, combined as in step 4 (including `pipeline/calibration.json` when active), and the red team, each given the new fact with its link. Record every agent as in EDITOR.md step 4 (model, time, inputs). *(v5)* The revised figure follows EDITOR.md step 4b like a morning one: poll model for elections, market search on record, research when the forecasters span more than 15 points.
 2. *(v3)* **Store every recomputation** in `checks` (claim, `at`, `agents`, `combined`, and the market price read at the same time if one exists), whatever its size.
 3. Publish a revision only if the new combined probability differs from the morning figure by at least `v3.revision_min_pp` (5 points) **or** `v3.revision_min_logit` (0.5 in log-odds; 96% → 99% qualifies). Below that the morning figure stands for readers, but the check is on record.
 4. *(v3)* Interval claims may be revised (`quantiles` instead of `probability`); revise the binary claims derived from them in the same update so they stay consistent.

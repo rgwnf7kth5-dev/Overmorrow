@@ -146,6 +146,7 @@ A separate reviewer reads the finished forecasts with one question: what is most
   - **Correction of our own bias** (from 50 resolved claims): logit(p) = a + b·x, where x is the forecasters' mean log-odds. A slope b above 1 means the raw ensemble has been too timid and its figures are pushed away from 50% (forecasters who share information tend to under-react together); a non-zero a corrects a lean towards yes or no. The fit is pulled towards "no correction", so small samples change little, and its out-of-sample effect is reported.
   - **Forecaster weights** (from 120 resolved claims): forecasters with a better Brier score get more weight in the mean, shrunk towards equal weights.
 - While a correction is active, every new claim records the parameters used (`forecast.combination`), the validator recomputes the published figure from them, and the accuracy page shows the current status.
+- *(v5)* A correction is switched on only when it also helps out of sample: refitted with each resolved claim left out in turn, it must score better on that claim than the plain ensemble. On 1 November, with 91 claims, the fitted correction (slope 1.30) looked better in sample but was worse left-out (0.1528 against 0.1507), so it was switched off.
 
 ### 4.7 Freeze
 
@@ -235,3 +236,18 @@ Each edition records the version of the method it was made under (`method_versio
 | 2 | No. 4 | 23 October 2026 | Five recorded forecasters with their models, schedule-slip classes, number forecasts, quotas on probability bands. |
 | 3 | No. 5 | 24 October 2026 | After an outside review: event window and evidence time kept apart, events after day D+1 excluded; full record of every forecasting step with blind and after-market estimates; dossier split from market signals; timing and outcome scored separately; related numbers derived from one distribution; quotas on probabilities removed; every recomputed afternoon figure stored; results by method version with event counts and uncertainty; coverage of missed events. |
 | 4 | No. 6 | 25 October 2026 | Stories chosen by news value; the biggest running stories of the day covered with a forecast of their next step; an economy desk of at least three reports; illustrative photographs in every edition. |
+| 5 | No. 13 | 1 November 2026 | Lessons from the first 132 resolved claims (section 13). |
+
+## 13. What the first 132 results taught us
+
+After ten scored editions (21 October to 1 November 2026) the record was: Brier score 0.145 (90% interval 0.118–0.171 over 109 independent events), against 0.250 for a coin toss; 108 of 132 calls went our way; calibration error 0.013, with a slight tendency to timidity (claims at 80–90% came true 92% of the time). The weak points were specific, and version 5 answers each of them:
+
+- **Elections** scored worst (0.265 on 17 claims). Election claims about who wins, the margin or the ranking now rest on a poll model with a minimum error (3.5 points for the lead in a national race, 4.5 regional, 5.5 local); the published figure may depart from it by at most 12 points with a stated reason, and a market price alone is not one. Without usable polls the figure stays between 25 and 75%.
+- **Number forecasts** were too sure of themselves: only 7 of 13 results fell inside our 80% ranges, and our central figures were no better than the analysts' consensus. Ranges are now at least 1.6 times the textbook width for the indicator's usual surprise, and the central figure stays near consensus unless a documented reason says otherwise.
+- **Yes/no claims on data releases** near the consensus were coin tosses (0.195 on 14). Such a claim now needs its threshold at least half a usual surprise away from consensus; otherwise the number is forecast as a range.
+- **Market signals help** (the same 66 claims scored 0.155 before the forecasters saw them and 0.135 after), but only 11 of 91 claims had one. Every claim now records the market search, also when it finds nothing.
+- **The five forecasters were nearly interchangeable** (each 0.150–0.155). The outsider no longer reads the shared research dossier, and when the five differ by more than 15 points (those claims scored 0.170 against 0.140) a research step looks for the fact in dispute before the freeze.
+- **Postponements were rarer than assumed**: none of the first 79 scheduled events slipped, because we forecast events once they are confirmed. Estimated postponement rates were lowered.
+- **Results must arrive on time**: on 1 November 25 claims were past their deadline without a result. A claim more than 72 hours late now stops the morning run until it is resolved from the best available evidence; the accuracy page shows how many are waiting.
+- **Calibration correction only when it helps out of sample** (section 4.6).
+- **Calendars**: the foreseeable misses (the Commission's College agenda, annual reports such as the WMO Greenhouse Gas Bulletin, energy price lists for the next year) were added to the sweep.

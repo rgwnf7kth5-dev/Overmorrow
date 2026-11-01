@@ -92,4 +92,10 @@ Commit to `main`: `Evening desk <E>: agenda, dossiers for <E+3>, forecast board`
 
 ## 8. Report
 
-In Czech, at most six lines: the planned lead and Czech stories for E+3, how many claims and dossiers, forecast-board moves of 5 points or more (old → new and why), questions resolved or added, anything that failed.
+In Czech, at most seven lines: the planned lead and Czech stories for E+3, how many claims and dossiers, forecast-board moves of 5 points or more (old → new and why), questions resolved or added, anything that failed. *(v5)* Last line: **„Pro vydavatele:“** two or three Czech claims planned for E+3, each as `id – text – termín`, so the publisher can send his own probabilities before the events day begins (METHODOLOGY 11). Pick claims he can judge from Czech politics, not data releases.
+
+## 9. Rules from method version 5
+
+Dossiers and round-one forecasts follow EDITOR.md step 4b: the market search is recorded for every claim; election claims get `election` and the poll model; number ranges are at least 4.1 surprise scales wide and centred on consensus; a data-direction claim needs its threshold at least half a scale from consensus; the outsider gets no dossier; a spread above 15 points triggers targeted research. The dossier for a number release records the consensus with its source and the surprise sd with its source.
+
+**Calendars that we missed.** In the agenda sweep also check, for E+2: the Commission's College agenda and its list of planned items (`pipeline/sources.json`, "European Commission College agenda"); the annual-reports calendar (WMO Greenhouse Gas Bulletin and State of the Climate, UNEP Emissions Gap, IEA World Energy Outlook, OECD and Commission economic forecasts); Czech energy suppliers' price lists for the next year (ČEZ, PRE, E.ON, innogy) and ERÚ price decisions, which come from October to December; ECB and ČNB personnel questions when markets or Reuters discuss them. The coverage files of 25–31 October show these as the foreseeable misses.

@@ -443,3 +443,23 @@ export function loadCoverage() {
   if (!fs.existsSync(COVERAGE_DIR)) return [];
   return fs.readdirSync(COVERAGE_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().map((f) => ({ file: f, ...readJson(path.join(COVERAGE_DIR, f)) }));
 }
+
+/** Claims past resolves_by + hours without any result (overdue for the resolver). */
+export function overdueClaims(editions, hours = 72, now = Date.now()) {
+  const out = [];
+  for (const ed of editions) {
+    const res = resultsFor(ed.id);
+    for (const c of claimsOf(ed)) {
+      if (res.has(c.id) || !c.resolves_by) continue;
+      const h = (now - Date.parse(c.resolves_by)) / 3600e3;
+      if (h > hours) out.push({ edition: ed.id, claim: c.id, hours: Math.floor(h) });
+    }
+  }
+  return out;
+}
+/** Claims past resolves_by without a result, overdue or not. */
+export function pendingClaims(editions, now = Date.now()) {
+  const out = [];
+  for (const ed of editions) { const res = resultsFor(ed.id); for (const c of claimsOf(ed)) if (!res.has(c.id) && c.resolves_by && Date.parse(c.resolves_by) < now) out.push({ edition: ed.id, claim: c.id, hours: Math.floor((now - Date.parse(c.resolves_by)) / 3600e3) }); }
+  return out;
+}

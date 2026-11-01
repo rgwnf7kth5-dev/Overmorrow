@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage } from './lib.mjs';
+import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage, normCdf, resultsFor, overdueClaims } from './lib.mjs';
 import fsv from 'node:fs';
 import pathv from 'node:path';
 
@@ -240,6 +240,59 @@ function checkCoherence(ed, w) {
 
 // ---------- method version 4 (edition No. 6 on): news value, running stories, economy desk, photographs ----------
 const V4 = cfg.v4 || {};
+const V5 = cfg.v5 || {};
+const STRICT_DUE = process.argv.includes('--strict-due') || process.env.OVERMORROW_STRICT_DUE === '1';
+
+// ---------- method version 5 (edition No. 13 on): lessons from the first 132 resolved claims ----------
+function checkV5(c, cw) {
+  const f = c.forecast || {};
+  const sc = (x) => x / (c.scale || 1);
+  if (isInterval(c)) {
+    const q = c.quantiles;
+    if (q && c.scale > 0) {
+      if (sc(q.q90 - q.q10) < V5.interval_width_min_scales - 1e-9) err(cw, `80% range ${q.q10}–${q.q90} is ${sc(q.q90 - q.q10).toFixed(2)} surprise scales wide; at least ${V5.interval_width_min_scales} (our ranges held only 7 of 13 results)`);
+      const cons = f.consensus?.value;
+      if (typeof cons === 'number' && sc(Math.abs(q.q50 - cons)) > V5.interval_centre_max_scales && !nonEmpty(f.consensus_note)) err(cw, `central figure ${q.q50} is ${sc(Math.abs(q.q50 - cons)).toFixed(2)} scales from consensus ${cons}; stay within ${V5.interval_centre_max_scales} or explain in forecast.consensus_note`);
+    }
+  } else if (c.slip_class === 'stats-release' && !c.derived) {
+    const r = f.release;
+    if (!r || ![r.consensus, r.threshold, r.scale].every((x) => typeof x === 'number') || !(r.scale > 0) || !nonEmpty(r.source)) err(cw, 'a yes/no claim on a data release needs forecast.release {consensus, threshold, scale, source}, or derived from an interval claim');
+    else if (Math.abs(r.consensus - r.threshold) / r.scale < V5.release_threshold_min_scales) err(cw, `threshold ${r.threshold} is within ${V5.release_threshold_min_scales} surprise scales of consensus ${r.consensus}: a coin toss; forecast the number as an interval claim instead`);
+  }
+  if (c.slip_class === 'election-held' && !isInterval(c) && !c.derived) {
+    const e = c.election;
+    if (!e || !['winner', 'margin', 'rank', 'turnout', 'other'].includes(e.kind) || !['national', 'regional', 'local'].includes(e.level)) err(cw, 'election {kind: winner | margin | rank | turnout | other, level: national | regional | local} required for election claims');
+    else if (['winner', 'margin', 'rank'].includes(e.kind)) {
+      const m = f.poll_model;
+      if (m?.none) {
+        const [lo, hi] = V5.election_no_poll_range;
+        if (!nonEmpty(m.why)) err(cw, 'poll_model.none: say why no poll is usable');
+        if ((c.probability < lo || c.probability > hi) && !nonEmpty(m.note)) err(cw, `no usable polls: keep the probability between ${lo * 100} and ${hi * 100}% or explain in poll_model.note`);
+      } else if (!m || ![m.lead, m.sd].every((x) => typeof x === 'number') || !nonEmpty(m.source)) err(cw, 'forecast.poll_model {lead, sd, threshold?, p, source} required: the lead (pp) of the side the claim is about in the latest poll average, its error sd and the implied probability; or poll_model.none with why');
+      else {
+        const min = V5.election_lead_sd_min[e.level];
+        if (m.sd < min) err(cw, `poll_model.sd ${m.sd} below the minimum ${min} pp for a ${e.level} race`);
+        const p = normCdf((m.lead - (m.threshold || 0)) / m.sd);
+        if (typeof m.p !== 'number' || Math.abs(m.p - p) > 0.02) err(cw, `poll_model.p must be ${p.toFixed(3)} = Φ((lead − threshold) / sd)`);
+        if (Math.abs(c.probability - p) > V5.election_model_tolerance && !nonEmpty(m.note)) err(cw, `published ${c.probability} is more than ${V5.election_model_tolerance * 100} points from the poll model (${p.toFixed(2)}); explain in poll_model.note (a market price alone is not a reason)`);
+      }
+    }
+  }
+  if (!f.market) {
+    const s = f.market_search;
+    if (!s || !isStamp(s.at) || !Array.isArray(s.checked) || !s.checked.length || !(V5.market_search_tools || []).every((t) => s.checked.some((x) => String(x).includes(t)))) err(cw, `forecast.market or forecast.market_search {at, checked: ["markets.mjs search …", …], note}: record the search even when nothing matches`);
+  }
+  if (!isInterval(c) && (f.agents || []).length >= 3) {
+    const ps = f.agents.map((a) => a.p).filter((x) => typeof x === 'number');
+    if (ps.length && Math.max(...ps) - Math.min(...ps) > V5.research_spread) {
+      const r = f.research;
+      if (!r || !isStamp(r.at) || !nonEmpty(r.question) || !nonEmpty(r.finding)) err(cw, `forecasters span ${Math.round((Math.max(...ps) - Math.min(...ps)) * 100)} points: record forecast.research {at, question (the disputed fact), finding, sources} from the targeted research before the freeze`);
+      else if (isStamp(c.edition?.frozen_at) && Date.parse(r.at) > Date.parse(c.edition.frozen_at)) err(cw, 'forecast.research after the freeze');
+    }
+  }
+  const out = (f.agents || []).find((a) => a.role === 'outsider');
+  if (out && (out.inputs || []).includes('dossier')) err(cw, 'the outsider works without the shared dossier from method version 5 (its own short research and reference data only)');
+}
 const OK_LICENCE = /^(public domain|pd\b|cc0|cc by(-sa)? \d)/i;
 function checkSelectionV4(ed, w) {
   const stories = ed.stories || [];
@@ -291,6 +344,7 @@ function checkClaim(c, cw, frozen) {
   }
   const v3 = ed && methodVersion(ed, cfg) >= 3;
   if (v3) { checkWindow(c, cw, frozen); if (!c.added || c.forecast) checkForecastV3(c, cw, frozen); }
+  if (ed && methodVersion(ed, cfg) >= 5 && (!c.added || c.forecast)) checkV5(c, cw);
   if (isInterval(c)) {
     if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
     else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');
@@ -598,6 +652,9 @@ for (const ed of editions) {
     }
   }
 }
+
+// Results due: a claim more than v5.due_hours past its deadline without a result (RESOLVER step 4).
+for (const o of overdueClaims(loadEditions(), V5.due_hours ?? 72)) (STRICT_DUE ? err : warn)(`resolutions/${o.edition}.json`, `claim ${o.claim} is ${o.hours} hours past its deadline without a result; resolve it from the best available evidence`);
 
 for (const x of warnings) console.warn(`warning  ${x}`);
 for (const x of errors) console.error(`error    ${x}`);
