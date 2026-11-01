@@ -263,6 +263,58 @@
       "cause": "genuine",
       "note": "Same facts; the forecasters weigh Frait's caution against Seidler's lean and market pricing differently."
      }
+    },
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.82,
+     "combined": 0.822,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Central-bank-decision slip rate ~0.01; when a board member publicly leans to a move and banks and markets price it (Kalshi 0.99, thin), the CNB usually delivers (~80-85%), trimmed for Frait's 'waiting is low-risk' and the pending 4 Nov flash CPI.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "reason": "Board member Seidler leans towards a 25 bp rise, Deputy Governor Frait calls the case 'relatively strong', most bank analysts expect a hike and Kalshi is at 0.99 (thin), with the 4 Nov October flash CPI as the only remaining swing input.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.7,
+       "reason": "Case for NO: Frait says the decision is not predetermined and waiting is low-risk, the board held unanimously in August and September, swaps and a strong koruna already tighten, the fuel cap and falling diesel futures mean the 4 Nov flash CPI could undercut 2.5% and give a cautious Michl board its excuse, and only Seidler has committed publicly; against that, Seidler's lean, Frait's 'relatively strong', the bank consensus, a new forecast with an expansionary 2027 budget and Kalshi at 0.99 (thin) make a 25bp hike more likely than not, so I move up a little from 0.60.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.87,
+       "reason": "Kalshi 'hike 1-25bp' 0.99 (bid 0.99/ask 1.00) but only $4.9k volume, so shaded for thinness, Frait's 'not predetermined' and the 4 Nov flash CPI that the fuel cap could pull down.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.88,
+       "reason": "Thin Kalshi market at 0.99 plus analysts expecting a hike outweighs the 0.13 base rate, with some discount for thinness.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Board members' latest statements (Seidler leaning to a 25 bp hike, Frait calling the case \"relatively strong\") and the analysts' consensus point to a hike on 5 Nov; the 4 Nov flash CPI is the last input.",
+     "note_cs": "Poslední výroky členů bankovní rady (Seidler se kloní ke zvýšení o 25 bodů, Frait mluví o „poměrně silném“ argumentu) a shoda analytiků ukazují na zvýšení 5. listopadu; posledním vstupem bude předběžný odhad inflace 4. listopadu.",
+     "market": {
+      "source": "kalshi",
+      "kind": "exchange",
+      "url": "https://kalshi.com/markets/kxcbdczech",
+      "p": 0.99,
+      "read_at": "2026-11-01T18:57:09Z"
+     },
+     "market_note": "The Kalshi market (0.99) has about $4.9k of volume; the forecasters weigh the 4 Nov flash CPI and Frait's \"not predetermined\" against it."
     }
    ],
    "result": null
@@ -1415,6 +1467,57 @@
      "note": "Weekly re-forecast, down. Democrats need a net gain of four; their leads in Texas, Ohio, Alaska and Maine are only 2.4–3.6 points, polling errors are correlated, and 50–50 resolves no.",
      "note_cs": "Týdenní přepočet, snížení. Demokraté potřebují čistý zisk čtyř křesel; jejich náskok v Texasu, Ohiu, na Aljašce a v Maine je jen 2,4–3,6 bodu, chyby průzkumů jsou provázané a výsledek 50:50 znamená ne.",
      "market_note": "Polymarket's Senate-control market (0.715) is above our 0.56: the forecasters weigh correlated polling errors in four must-flip states with 2–4 point leads, and Democrats' need to hold MI, NH and GA; the market has priced Democratic control consistently above the polling averages."
+    },
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.66,
+     "combined": 0.664,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-01T18:32:43Z",
+       "p": 0.69,
+       "reason": "Tipping-point poll model 0.73 and simulation 0.66-0.78; markets 0.71-0.715 and Silver ~0.75 suggest my pro-D poll-bias shading was a bit heavy; keep some for correlated midterm misses and the Georgia runoff rule."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-01T18:33:21Z",
+       "p": 0.66,
+       "reason": "The dossier's late averages (NC +10.1, KS +3.2, ME +3.1, TX +2.8, OH +2.6, AK +1.9, MI hold +4.5) put the tipping point at about D+2.8; a correlated simulation with state-specific shading gives about 0.64, slightly below markets (0.71) and Silver (0.75 on 19 Oct)."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-01T18:34:23Z",
+       "p": 0.58,
+       "reason": "Liquid markets sit at 0.71 and Silver's model at ~0.75, which already price the red-state poll bias I weighted heavily; I move up from 0.52 but stay below the market because our criterion counts a Georgia runoff (~10% risk) as NO and four pickups with 2-3 pp leads in states where Democrats have run behind their polls remain the tipping point."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-01T18:22:01Z",
+       "p": 0.74,
+       "reason": "Tipping-point seat TX D+2.8 with sd 4.5 gives 0.733; a simulation over all close races (common 3 pp + independent 3 pp error) gives about 0.77 because KS, ME, OH, AK all sit near the tipping point, offset by the Georgia-runoff-counts-as-NO rule and slight downgrades of TX/OH/ME, so 0.74."
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-01T18:34:50Z",
+       "p": 0.64,
+       "reason": "Markets about 0.71 and Silver 0.75 versus my structural 0.50; blended, keeping a haircut for the four-seat requirement."
+      }
+     ],
+     "market": {
+      "source": "Kalshi",
+      "kind": "exchange",
+      "url": "https://kalshi.com/markets/controls",
+      "p": 0.71,
+      "read_at": "2026-11-01T18:09:52Z"
+     },
+     "note": "Full five-forecaster ensemble of the evening desk for the same outcome (claim us-senate-dem-1 of the edition dated 4 Nov). Final race averages: NC +10.1, GA +8.5, KS +3.2, ME +3.1, TX +2.8, OH +2.6, AK +1.9 for the Democrats; the tipping-point seat is Texas. Georgia's ballot has only two candidates, so a runoff is all but excluded.",
+     "note_cs": "Úplný odhad pěti prognostiků večerní směny pro týž výsledek (výrok us-senate-dem-1 vydání ze 4. listopadu). Konečné průměry průzkumů: Severní Karolína +10,1, Georgie +8,5, Kansas +3,2, Maine +3,1, Texas +2,8, Ohio +2,6, Aljaška +1,9 pro demokraty; rozhodujícím křeslem je Texas. V Georgii kandidují jen dva, druhé kolo je tak téměř vyloučeno."
     }
    ],
    "result": null
@@ -2682,6 +2785,57 @@
      },
      "note": "Vice President Vance sent a letter via Qatar to the head of Iran's security council, Rezaei, proposing talks \"as soon as next week\" in Qatar or Türkiye; Tehran has received it but not replied and repeats its seven conditions, while Trump denies directing talks and reportedly told Gulf allies to prepare for a campaign after the 3 Nov midterms. A first written channel since the war raises the chance of a confirmed round by 31 Dec. Up from 31%.",
      "note_cs": "Viceprezident Vance poslal přes Katar dopis tajemníkovi íránské bezpečnostní rady Rezáímu s návrhem na jednání „hned příští týden“ v Kataru nebo Turecku. Teherán dopis obdržel, ale neodpověděl a trvá na sedmi podmínkách; Trump popírá, že by jednání řídil, a podle zpráv vyzval spojence v Zálivu, aby se připravili na tažení po volbách 3. listopadu. První písemný kanál od začátku války zvyšuje šanci na potvrzené kolo jednání do 31. prosince. Nárůst z 31 %."
+    },
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.33,
+     "combined": 0.332,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "Stalled US-Iran tracks resume a same-venue round within ~10 weeks ~25% (n=6); Polymarket 0.425 uses a looser definition, Araghchi says no need to meet, and the strike warning for after 4 Nov cuts both ways (escalation or a forced ceasefire round).",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "Araghchi said on 31 Oct that there is 'no need to meet with the Americans at this stage', no date is set for a US delegation to Doha, and the US is reportedly preparing strikes from 4 Nov; Polymarket fell from 0.495 to 0.425 for a looser definition, and the criterion needs both governments to confirm a same-venue round.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.34,
+       "reason": "Case for YES: Qatar is actively mediating with an Iranian delegation in Doha, Araghchi called the Vance letter a positive step, and a short post-midterm strike campaign could, as the market at 0.425 by 31 Dec implies, end in a mediated round; but Araghchi says there is no need to meet now, Tehran still conditions talks on its seven demands, the US is warning allies of strikes from 4 Nov that would push any round past December, the criterion needs both governments to confirm a same-venue round, and the base rate for a stalled track resuming within ten weeks is about 0.25, so I come down from 0.47.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.36,
+       "reason": "Polymarket senior meeting by 31 Dec fell to 0.425 ($304k) from 0.495; our criterion needs both governments to confirm a same-venue round, and Araghchi's 'no need to meet' plus US strike warnings for after 4 Nov argue for staying below the market.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "reason": "Base rate about 0.25 for a stalled track resuming, slightly raised by Qatari mediation, but both sides must confirm a same-venue meeting.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Iran's foreign minister Araghchi said on 31 Oct there is \"no need to meet the Americans at this stage\"; the US reportedly warned Gulf allies of possible strikes from 4 Nov; no date for a US delegation in Doha.",
+     "note_cs": "Íránský ministr zahraničí Arákčí 31. října prohlásil, že „v této fázi není třeba se s Američany setkat“; USA podle zpráv varovaly spojence v Zálivu před možnými údery od 4. listopadu; termín americké delegace v Dauhá není.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt",
+      "p": 0.425,
+      "read_at": "2026-11-01T18:56:48Z"
+     }
     }
    ],
    "result": null
@@ -3518,6 +3672,57 @@
      },
      "note": "Vučić conceded on election night (“jasno je da smo izgubili izbore”) as the Student List was projected at about 138 of 250 seats and rejects any cooperation with SNS, leaving him no route to the premiership.",
      "note_cs": "Vučić ve volební noci uznal porážku („jasno je da smo izgubili izbore“); Studentská kandidátka má podle projekce asi 138 z 250 křesel a spolupráci se SNS odmítá, takže Vučić nemá cestu do premiérského křesla."
+    },
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.05,
+     "combined": 0.055,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Nothing changed since Vucic conceded and the Student List holds a majority refusing SNS; Polymarket 0.011, floor kept.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Vučić conceded on 25 Oct, the Student List has a projected majority and refuses to work with SNS; nothing has changed and Polymarket is at 0.011.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.03,
+       "reason": "The only YES path is a Student List with about 140 of 250 seats splintering within weeks or an annulment, against Vucic's own concession, the list's refusal to work with SNS and Polymarket at 0.011; nothing in the repeat voting at 53 stations changes that, so the floor stays.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Polymarket Vučić next PM 0.011 ($2.57m) and the Student List majority unchanged; held at the floor.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.42,
+       "reason": "Base rate 0.2 for forming a government within the window against a prior market near 0.72 and a still-uncertain majority.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Weekly re-forecast: nothing new since Vučić conceded the parliamentary majority on 25 Oct; one forecaster (outsider, without the shared research) put it at 0.42, which lifts the mean.",
+     "note_cs": "Týdenní přepočet: od 25. října, kdy Vučić uznal ztrátu většiny, nic nového; jeden z prognostiků (outsider bez sdílené rešerše) dal 42 %, což průměr zvedá.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+      "p": 0.011,
+      "read_at": "2026-11-01T18:57:17Z"
+     }
     }
    ],
    "result": null
@@ -3690,6 +3895,57 @@
      },
      "note": "Iotova led the 25 October first round by about two points on record-low turnout and faces Gyurov in the 1 November runoff; first-round leaders have won every Bulgarian runoff since 1992, and Polymarket and Kalshi both price her at about 74%.",
      "note_cs": "Iliana Iotova vedla v prvním kole 25. října zhruba o dva body při rekordně nízké účasti a 1. listopadu se ve druhém kole utká s Gjurovem; vítěz prvního kola vyhrál každé bulharské druhé kolo od roku 1992 a Polymarket i Kalshi ji oceňují zhruba na 74 %."
+    },
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.96,
+     "combined": 0.958,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.97,
+       "reason": "First-round leaders 7/7 in runoffs, and exit polls give Iotova a 6-8 point lead (Polymarket 0.994); CIK published the first-round result the next day, so the only residual risk is a formal declaration after 3 Nov 23:59.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.96,
+       "reason": "AP-cited exit polls put Iotova at about 52% to 44% (bTV/Market Links 50.7 to 44) and Polymarket is at 0.994; the remaining risk is mainly that CIK does not declare her elected by 3 Nov 23:59, since it published first-round results the day after the vote.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.93,
+       "reason": "Case for NO is only the criterion: every exit poll (50.7-52 vs 44) and Polymarket 0.994 say she won, but the criterion needs a cik.bg result declaring her elected by 3 Nov 23:59 CET, and the formal CIK declaration in 2016 and 2021 came on the Tuesday after the runoff, so a one-day slip or a resolver reading a 99% count as not a declaration is the real residual risk; the vote itself is about 0.98.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.96,
+       "reason": "Polymarket Iotova 0.995 ($1.88m) and Kalshi 0.97 with exit polls 51-52 vs 44; shaded below the market only for the criterion's need for a CIK declaration published by 3 Nov (CIK published round-one results the next day).",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.96,
+       "reason": "Runoff already held and the market sits at 0.97-0.99 with the first-round leader never having lost a runoff.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Runoff held on 1 Nov; exit polls put Iotova ahead about 51–52% to 44% (AP; Market Links for bTV). The remaining risk is only that the CIK declaration comes after the 3 Nov deadline.",
+     "note_cs": "Druhé kolo se konalo 1. listopadu; podle odhadů z volebních místností vede Iotova zhruba 51–52 % proti 44 % (AP, Market Links pro bTV). Zbývá jen riziko, že ÚVK vyhlásí výsledek až po 3. listopadu.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/bulgaria-presidential-election",
+      "p": 0.995,
+      "read_at": "2026-11-01T18:56:41Z"
+     }
     }
    ],
    "result": null
@@ -5098,6 +5354,152 @@
      "market": null,
      "note": "Opened: five-forecaster ensemble.",
      "note_cs": "Otevřeno: odhad pěti prognostiků."
+    }
+   ]
+  },
+  {
+   "scope": "cz",
+   "topic": "Dukovany II",
+   "question": "Will KHNP name a new main construction contractor for Dukovany II, or announce that it will carry out the construction works itself, by 31 January 2027?",
+   "question_cs": "Oznámí KHNP do 31. ledna 2027 nového hlavního stavebního dodavatele pro Dukovany II, nebo že stavební práce provede sama?",
+   "criterion": "Yes if, by 31 Jan 2027 23:59 CET, KHNP, Elektrárna Dukovany II (EDU II) or the Czech Ministry of Industry and Trade publicly states, in a press release or as reported by ČTK or Yonhap, either that (a) KHNP has selected or signed with a named company or consortium for the main construction (civil) works of Dukovany II, including a renewed agreement with Daewoo E&C–Doosan Enerbility; or (b) KHNP will perform those works itself without an external main construction contractor. Lists of candidates, talks with named firms, the launch of a tender, or statements that KHNP is \"considering\" doing the work itself do not count. Otherwise no.",
+   "criterion_cs": "ANO, pokud do 31. ledna 2027 do 23:59 SEČ KHNP, Elektrárna Dukovany II (EDU II) nebo ministerstvo průmyslu a obchodu veřejně oznámí (tiskovou zprávou nebo podle zpravodajství ČTK či Yonhap), že (a) KHNP vybrala konkrétní firmu či konsorcium pro hlavní stavební práce na Dukovanech II nebo s ní podepsala smlouvu, a to i v případě obnovené dohody s Daewoo E&C a Doosan Enerbility, nebo že (b) KHNP tyto práce provede sama bez externího hlavního stavebního dodavatele. Seznamy kandidátů, jednání s konkrétními firmami, vyhlášení výběrového řízení ani prohlášení, že KHNP vlastní provedení prací „zvažuje“, se nepočítají. Jinak NE.",
+   "resolution_source": "https://www.cez.cz/cs/pro-media/tiskove-zpravy ; KHNP press releases ; ČTK",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "background": "On 29–30 Oct KHNP ended talks with the Daewoo E&C–Doosan Enerbility consortium on the construction contract for the two new Dukovany units (CZK 407 bn; construction from 2029, completion 2036) and said it wants a new contractor while keeping the schedule; Korea's trade minister criticised KHNP and said Seoul is not backing away.",
+   "sources": [
+    {
+     "title": "ČTK (ceskenoviny.cz)",
+     "url": "https://www.ceskenoviny.cz/zpravy/korea-podle-ministra-neustupuje-od-zavazku-dokoncit-rozsireni-dukovan/2894657"
+    },
+    {
+     "title": "ČT24",
+     "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/korejci-hledaji-nove-stavebniky-pro-dukovany-cesi-jim-pripominaji-cenu-a-sankce-379156"
+    }
+   ],
+   "id": "cz-dukovany-new-contractor",
+   "opened": "2026-11-01",
+   "history": [
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.32,
+     "combined": 0.316,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "reason": "No reference class; a tender for main civil works of a CZK 400bn project rarely concludes in 3 months, so YES mostly runs through a renewed Daewoo-Doosan deal (talks may be price bargaining via media) or a self-performance announcement under schedule pressure; unscheduled-announcement own record is low.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.38,
+       "reason": "KHNP says it wants to choose a new contractor with the schedule as its top priority, and the Korean minister is pushing it publicly; either renewed Daewoo–Doosan terms or a quickly appointed Korean builder would count, but a fresh tender for main civil works usually takes longer than three months and nothing has been named yet.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.33,
+       "reason": "Case for YES: the Korean minister publicly told KHNP to listen to its partner companies, ČEZ's Benes reads the break as price negotiation through the media, a renewed Daewoo-Doosan deal counts under (a), Hyundai E&C or Samsung C&T could be picked without a long tender, and permit documentation due April 2027 adds pressure; but KHNP's stated route is a new tender, which cannot select a main civil-works contractor in three months, resumed talks are not a signed renewed agreement, self-performance of 'key work in transition' does not count, and no nuclear new-build has replaced its civil contractor within a quarter, so NO is more likely by 31 Jan.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "No market or model; three months is short for a new civil-works tender, but a renewed Daewoo-Doosan deal under the Korean minister's pressure, a quick pick of another Korean builder or a self-performance statement all count, and KHNP calls the schedule its top priority.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.25,
+       "reason": "Outsider with no sources: a named contractor or self-build announcement within three months is possible but a short, strict window.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Opened with the full five-forecaster ensemble.",
+     "note_cs": "Otevřeno s úplným odhadem pěti prognostiků."
+    }
+   ]
+  },
+  {
+   "scope": "world",
+   "topic": "US–Iran war",
+   "question": "Will the United States strike targets on Iranian territory between 4 and 30 November 2026?",
+   "question_cs": "Zaútočí Spojené státy mezi 4. a 30. listopadem 2026 na cíle na íránském území?",
+   "criterion": "Yes if, between 4 Nov 2026 00:00 and 30 Nov 2026 23:59 CET, the White House, the Department of Defense / Department of War or US Central Command confirms a US military strike (air, missile or drone) on a target on Iranian territory, including Iranian territorial waters and islands. Strikes only on Iranian proxies outside Iran, on vessels in international waters, or by Israel alone do not count. Otherwise no.",
+   "criterion_cs": "ANO, pokud mezi 4. listopadem 2026 0:00 a 30. listopadem 2026 23:59 SEČ Bílý dům, ministerstvo obrany (Department of Defense / Department of War) nebo Ústřední velitelství USA (CENTCOM) potvrdí americký vojenský úder (letecký, raketový nebo dronový) na cíl na íránském území, včetně íránských výsostných vod a ostrovů. Údery jen na íránské spojence mimo Írán, na lodě v mezinárodních vodách nebo údery samotného Izraele se nepočítají. Jinak NE.",
+   "resolution_source": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/ ; https://www.whitehouse.gov/",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "background": "The US has not struck Iran since 1 September; Trump pledged no attacks before the midterms and the US reportedly warned Gulf allies of possible strikes as early as 4 November, while Qatar mediates and Iran's foreign minister says there is no need to meet the Americans now.",
+   "sources": [
+    {
+     "title": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks"
+    },
+    {
+     "title": "Khaleej Times",
+     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026"
+    }
+   ],
+   "id": "us-iran-strikes-november",
+   "opened": "2026-11-01",
+   "history": [
+    {
+     "at": "2026-11-01T21:15:00+01:00",
+     "p": 0.47,
+     "combined": 0.474,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.5,
+       "reason": "The war has seen US strikes on Iran since Feb but none since 1 Sep; reported warnings to Gulf allies of strikes from 4 Nov and Trump's pre-midterm pause point to a real chance, while Polymarket's ceasefire-breach 0.63 uses a wider definition and pre-announced strike warnings are often not followed within weeks.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.5,
+       "reason": "The US has not struck Iran since 1 Sep, but it reportedly told Gulf allies to prepare for a brief intense campaign as early as 4 Nov, attacks on Hormuz shipping hit a record in October and diplomacy is stalled; against that, Rubio says no decision has been made, Qatari mediation continues, and the criterion needs official US confirmation of a strike on Iranian territory (Polymarket's broader ceasefire-breach market is about 0.63).",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.47,
+       "reason": "Case for NO: the US has not struck Iran since 1 Sep, Rubio says Trump has made no decision, the Vance letter and Qatari mediation give Trump a talks track he would wreck by striking, warnings to Gulf allies are also a pressure tactic, and the criterion needs an official US confirmation of a strike on Iranian territory or waters, narrower than the market's breach definition; for YES, the reported warning of strikes 'as early as 4 Nov', a planned 'brief intense campaign' after the midterms, record Hormuz attacks and Polymarket implying about 0.63 for a ceasefire breach by 30 Nov make it close to even, so I sit just below the coin flip.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.45,
+       "reason": "Polymarket ceasefire ladder implies about 0.57 for a breach between the midterms (0.935 holds) and 30 Nov (0.37 holds, $1.09m); cut to about 0.8 of that because the market's breach definition is wider than a US-confirmed strike on Iranian territory.",
+       "at": "2026-11-01T18:58:41Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.45,
+       "reason": "Polymarket ceasefire-through-30-Nov at 0.37 implies about 0.6 breach, discounted because the breach definition is wider than a confirmed US strike on Iranian territory.",
+       "at": "2026-11-01T18:58:41Z"
+      }
+     ],
+     "note": "Opened with the full five-forecaster ensemble.",
+     "note_cs": "Otevřeno s úplným odhadem pěti prognostiků.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
+      "p": 0.63,
+      "read_at": "2026-11-01T18:56:55Z"
+     },
+     "market_note": "The Polymarket ceasefire market counts any breach, a wider event than a US-confirmed strike on Iranian territory; the forecasters discount it for that."
     }
    ]
   }
