@@ -1,169 +1,202 @@
 {
-  "edition": "2026-10-29",
-  "results": [
-    {
-      "claim": "us-msft-revenue-beat",
-      "outcome": "yes",
-      "evidence": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
-      "note": "Microsoft's 28 Oct release (published ~16:47 EDT) reports Q1 FY27 revenue of $92,279 million, above the $90,610 million threshold.",
-      "resolved_at": "2026-10-29T05:19:24+01:00",
-      "held": true
-    },
-    {
-      "claim": "uk-budget-bank-tax",
-      "outcome": "yes",
-      "evidence": "https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar",
-      "note": "HM Treasury's Budget 2026 OOTLAR (para 1.37) temporarily raises the bank corporation tax surcharge from 3% to 6% for 15 months from 1 Jan 2027, confirmed by Bloomberg and AFP reports of the 28 Oct statement.",
-      "resolved_at": "2026-10-29T05:19:24+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-zeman-decorated-28",
-      "outcome": "no",
-      "evidence": "https://www.ceskenoviny.cz/zpravy/pavel-udelil-nejvyssi-vyznamenani-caslavske-formanovi-ci-janzurove/2893938",
-      "note": "hrad.cz returned 403; ČTK's report of the 51 honourees at the 28 Oct evening ceremony in Vladislav Hall (and Aktuálně's full list) does not include Miloš Zeman.",
-      "resolved_at": "2026-10-29T05:19:24+01:00",
-      "held": true
-    },
-    {
-      "claim": "ua-talks-date-announced-28",
-      "outcome": "no",
-      "evidence": "https://ua.news/en/world/zelenskii-nazvav-termini-tristoronnoyi-zustrichi-v-abu-dabi",
-      "note": "On 28 Oct Zelensky only gave an expected window of 6–10 November for the Abu Dhabi round and said the final date was not set; Washington and the Kremlin confirmed no date (AP via Yahoo), so no specific calendar day was announced.",
-      "resolved_at": "2026-10-29T05:19:24+01:00"
-    },
-    {
-      "claim": "il-yashar-largest-28",
-      "outcome": "no",
-      "evidence": "https://www.timesofisrael.com/with-85-of-votes-counted-netanyahu-bloc-has-53-seats-eisenkots-48-arab-parties-surge-to-19/",
-      "note": "CEC count of ~90% of votes (after 21:00 on 28 Oct, unchanged at 23:37 per ToI) gives Likud 26 seats to Yashar's 21; raw votes were not quoted, so Likud's vote lead is inferred from the proportional seat allocation.",
-      "resolved_at": "2026-10-29T05:19:24+01:00",
-      "ambiguous": true
-    },
-    {
-      "claim": "us-fed-hold-28",
-      "outcome": "yes",
-      "evidence": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "note": "FOMC statement released 2:00 p.m. EDT on 28 Oct says the Committee decided to maintain the target range at 3-3/4 to 4 percent (10-2 vote, Cook and Hammack preferring a hike).",
-      "resolved_at": "2026-10-29T05:11:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-okamura-recall-filed-28",
-      "outcome": "no",
-      "evidence": "https://www.ceskenoviny.cz/sluzby/rss/domov.php",
-      "note": "Neither the ČTK domestic feed nor the ČT24 domestic feed for 26-28 Oct reports any submission of a signed recall proposal; ČTK on 24 Oct said the Pirates intend to propose the recall at the next sitting of the Chamber (3 Nov).",
-      "resolved_at": "2026-10-29T05:11:00+01:00"
-    },
-    {
-      "claim": "us-iran-talks-announced-28",
-      "outcome": "no",
-      "evidence": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks",
-      "note": "Al Jazeera's live coverage through 28 Oct shows Trump denying reports that he had directed Vance to start peace talks and Araghchi saying only that Iran is in contact with mediators, with no dated or held round of US-Iran negotiations announced on record.",
-      "resolved_at": "2026-10-29T05:11:00+01:00"
-    },
-    {
-      "claim": "rs-student-pm-named-28",
-      "outcome": "no",
-      "evidence": "https://n1info.rs/biznis/dok-kandidati-studentske-liste-tvrde-na-nema-mesta-panici-odlazeci-rezim-plasi-ekonomskim-slomom/",
-      "note": "N1 at 21:33 on 28 Oct still described Dejan Soskic only as a candidate on the Student List, and none of the N1 items for 28 Oct (feed checked to 22:48) or RFE/RL report a named PM candidate.",
-      "resolved_at": "2026-10-29T05:11:00+01:00"
-    },
-    {
-      "claim": "uk-budget-fuel-duty",
-      "outcome": "yes",
-      "evidence": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html",
-      "note": "The Budget 2026 document published on 28 Oct says the government is cancelling plans to add 5p back onto fuel duty from January 2027 and is extending the 5p cut and deferring the RPI increase to 1 July 2027.",
-      "resolved_at": "2026-10-29T05:11:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "au-cpi-sep",
-      "outcome": "measured",
-      "value": 4.3,
-      "evidence": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
-      "note": "ABS release for the September 2026 reference period (released 28/10/2026, 11:30am AEDT): CPI rose 4.3% in the 12 months to September 2026.",
-      "resolved_at": "2026-10-29T05:11:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-diesel-max-28",
-      "outcome": "measured",
-      "value": 49.46,
-      "evidence": "https://mf.gov.cz/assets/attachments/2026-10-27_Cenovy-vestnik-112-2026.pdf",
-      "note": "Cenový věstník 112/2026 of 27 Oct sets the maximum price of B7 diesel for 28-29 Oct 2026 at 49.46 CZK per litre including VAT.",
-      "resolved_at": "2026-10-29T05:11:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "us-fed-dissent-28",
-      "outcome": "yes",
-      "evidence": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "note": "The 28 Oct FOMC statement records 'Voting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range ... by 1/4 percentage point'.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-prague-three-party-28",
-      "outcome": "no",
-      "evidence": "https://www.ceskenoviny.cz/zpravy/stan-a-spolu-budou-dnes-dale-jednat-s-prahou-sobe-o-magistratni-koalici/2893550",
-      "note": "ČTK reports that after the 27 Oct meetings STAN and Spolu will keep negotiating with both Praha sobě and the Pirates in working groups until the end of next week, with Praha sobě not yet confirming participation and a STAN–Spolu two-party coalition not ruled out, so no three-party agreement was announced in the window.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "ru-africa-putin-meets-28",
-      "outcome": "yes",
-      "evidence": "https://www.al-monitor.com/originals/2026/10/egypts-sisi-putin-meet-russia-steps-africa-push-what-know",
-      "note": "kremlin.ru could not be reached from here (timeouts and connection resets), so this rests on two independent sources: Al-Monitor (citing the Egyptian presidency and Russian state media) and the Egyptian presidency's own release (presidency.eg news28102026-2). Both report that President el-Sisi held talks with Putin at the Kremlin on the evening of Wednesday 28 Oct, Moscow time.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "ca-boc-hike-28",
-      "outcome": "yes",
-      "evidence": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
-      "note": "The Bank of Canada's 28 Oct 2026 press release is headlined 'Bank of Canada raises the policy rate by 25 basis points to 2½%'.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "au-cpi-sep-4",
-      "outcome": "yes",
-      "evidence": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
-      "note": "ABS 'Consumer Price Index, Australia, September 2026' (released 28/10/2026 11:30am AEDT): the CPI rose 4.3% in the 12 months to September 2026, up from 4.0%.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-diesel-max-28-above",
-      "outcome": "yes",
-      "evidence": "https://mf.gov.cz/assets/attachments/2026-10-27_Cenovy-vestnik-112-2026.pdf",
-      "note": "Cenový věstník 112/2026 (27 Oct) sets the maximum price of B7 diesel at 49.46 CZK/l incl. VAT for 28–29 Oct 2026, which is above 48.96.",
-      "resolved_at": "2026-10-29T05:12:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-fee-coalition-deal-28",
-      "outcome": "no",
-      "evidence": "https://www.ceskenoviny.cz/zpravy/chudarek-babis-pripustil-jiny-model-financovani-ct-a-cro-mimo-rozpocet-/2894474",
-      "note": "The ČTK domestic feed, which runs without a gap from 09:29 on 27 Oct to 22:04 on 29 Oct, reports no coalition council or joint ANO–SPD–Motoristé announcement of an agreed change to tisk 231. On 29 Oct ČT director Chudárek said Babiš had only floated a non-budget funding model and that nothing was agreed; this rests on the absence of any report.",
-      "resolved_at": "2026-10-30T05:20:00+01:00"
-    },
-    {
-      "claim": "br-flavio-tse-filing-28",
-      "outcome": "no",
-      "evidence": "https://www.itatiaia.com.br/politica/disputa-entre-lula-e-flavio-continua-no-tse-apos-eleicoes/",
-      "note": "The TSE docket was not checked directly. CNN Brasil (via Itatiaia, 27 Oct) and BBC Brasil (via A Gazeta, 26 Oct) report only Flávio’s stated intention to seek cassação; the Aijes against Lula–Alckmin found in searches were filed on 28 Sep and 20 Oct. No report of a new filing at the TSE on 27–28 Oct was found, so this rests on the absence of any report.",
-      "resolved_at": "2026-10-30T05:20:00+01:00"
-    },
-    {
-      "claim": "cz-us-interim-28",
-      "outcome": "no",
-      "evidence": "https://www.usoud.cz/aktualne",
-      "note": "The Constitutional Court’s news list has only one item for 27–28 Oct (27 Oct, on inheritance of copyright), and its next item is dated after the window. Neither the Court nor the ČTK domestic feed for 27–29 Oct reports a decision on the interim-measure request in the heads-of-missions case.",
-      "resolved_at": "2026-10-30T05:20:00+01:00"
-    }
-  ],
-  "corrections": []
+ "edition": "2026-10-29",
+ "results": [
+  {
+   "claim": "us-msft-revenue-beat",
+   "outcome": "yes",
+   "evidence": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/",
+   "note": "Microsoft's 28 Oct release (published ~16:47 EDT) reports Q1 FY27 revenue of $92,279 million, above the $90,610 million threshold.",
+   "resolved_at": "2026-10-29T05:19:24+01:00",
+   "held": true
+  },
+  {
+   "claim": "uk-budget-bank-tax",
+   "outcome": "yes",
+   "evidence": "https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar",
+   "note": "HM Treasury's Budget 2026 OOTLAR (para 1.37) temporarily raises the bank corporation tax surcharge from 3% to 6% for 15 months from 1 Jan 2027, confirmed by Bloomberg and AFP reports of the 28 Oct statement.",
+   "resolved_at": "2026-10-29T05:19:24+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-zeman-decorated-28",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/pavel-udelil-nejvyssi-vyznamenani-caslavske-formanovi-ci-janzurove/2893938",
+   "note": "hrad.cz returned 403; ČTK's report of the 51 honourees at the 28 Oct evening ceremony in Vladislav Hall (and Aktuálně's full list) does not include Miloš Zeman.",
+   "resolved_at": "2026-10-29T05:19:24+01:00",
+   "held": true
+  },
+  {
+   "claim": "ua-talks-date-announced-28",
+   "outcome": "no",
+   "evidence": "https://ua.news/en/world/zelenskii-nazvav-termini-tristoronnoyi-zustrichi-v-abu-dabi",
+   "note": "On 28 Oct Zelensky only gave an expected window of 6–10 November for the Abu Dhabi round and said the final date was not set; Washington and the Kremlin confirmed no date (AP via Yahoo), so no specific calendar day was announced.",
+   "resolved_at": "2026-10-29T05:19:24+01:00"
+  },
+  {
+   "claim": "il-yashar-largest-28",
+   "outcome": "no",
+   "evidence": "https://www.timesofisrael.com/with-85-of-votes-counted-netanyahu-bloc-has-53-seats-eisenkots-48-arab-parties-surge-to-19/",
+   "note": "CEC count of ~90% of votes (after 21:00 on 28 Oct, unchanged at 23:37 per ToI) gives Likud 26 seats to Yashar's 21; raw votes were not quoted, so Likud's vote lead is inferred from the proportional seat allocation.",
+   "resolved_at": "2026-10-29T05:19:24+01:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "us-fed-hold-28",
+   "outcome": "yes",
+   "evidence": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "FOMC statement released 2:00 p.m. EDT on 28 Oct says the Committee decided to maintain the target range at 3-3/4 to 4 percent (10-2 vote, Cook and Hammack preferring a hike).",
+   "resolved_at": "2026-10-29T05:11:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-okamura-recall-filed-28",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/sluzby/rss/domov.php",
+   "note": "Neither the ČTK domestic feed nor the ČT24 domestic feed for 26-28 Oct reports any submission of a signed recall proposal; ČTK on 24 Oct said the Pirates intend to propose the recall at the next sitting of the Chamber (3 Nov).",
+   "resolved_at": "2026-10-29T05:11:00+01:00"
+  },
+  {
+   "claim": "us-iran-talks-announced-28",
+   "outcome": "no",
+   "evidence": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks",
+   "note": "Al Jazeera's live coverage through 28 Oct shows Trump denying reports that he had directed Vance to start peace talks and Araghchi saying only that Iran is in contact with mediators, with no dated or held round of US-Iran negotiations announced on record.",
+   "resolved_at": "2026-10-29T05:11:00+01:00"
+  },
+  {
+   "claim": "rs-student-pm-named-28",
+   "outcome": "no",
+   "evidence": "https://n1info.rs/biznis/dok-kandidati-studentske-liste-tvrde-na-nema-mesta-panici-odlazeci-rezim-plasi-ekonomskim-slomom/",
+   "note": "N1 at 21:33 on 28 Oct still described Dejan Soskic only as a candidate on the Student List, and none of the N1 items for 28 Oct (feed checked to 22:48) or RFE/RL report a named PM candidate.",
+   "resolved_at": "2026-10-29T05:11:00+01:00"
+  },
+  {
+   "claim": "uk-budget-fuel-duty",
+   "outcome": "yes",
+   "evidence": "https://www.gov.uk/government/publications/budget-2026-document/budget-2026-html",
+   "note": "The Budget 2026 document published on 28 Oct says the government is cancelling plans to add 5p back onto fuel duty from January 2027 and is extending the 5p cut and deferring the RPI increase to 1 July 2027.",
+   "resolved_at": "2026-10-29T05:11:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "au-cpi-sep",
+   "outcome": "measured",
+   "value": 4.3,
+   "evidence": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+   "note": "ABS release for the September 2026 reference period (released 28/10/2026, 11:30am AEDT): CPI rose 4.3% in the 12 months to September 2026.",
+   "resolved_at": "2026-10-29T05:11:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-diesel-max-28",
+   "outcome": "measured",
+   "value": 49.46,
+   "evidence": "https://mf.gov.cz/assets/attachments/2026-10-27_Cenovy-vestnik-112-2026.pdf",
+   "note": "Cenový věstník 112/2026 of 27 Oct sets the maximum price of B7 diesel for 28-29 Oct 2026 at 49.46 CZK per litre including VAT.",
+   "resolved_at": "2026-10-29T05:11:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-fed-dissent-28",
+   "outcome": "yes",
+   "evidence": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "note": "The 28 Oct FOMC statement records 'Voting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range ... by 1/4 percentage point'.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-prague-three-party-28",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/stan-a-spolu-budou-dnes-dale-jednat-s-prahou-sobe-o-magistratni-koalici/2893550",
+   "note": "ČTK reports that after the 27 Oct meetings STAN and Spolu will keep negotiating with both Praha sobě and the Pirates in working groups until the end of next week, with Praha sobě not yet confirming participation and a STAN–Spolu two-party coalition not ruled out, so no three-party agreement was announced in the window.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "ru-africa-putin-meets-28",
+   "outcome": "yes",
+   "evidence": "https://www.al-monitor.com/originals/2026/10/egypts-sisi-putin-meet-russia-steps-africa-push-what-know",
+   "note": "kremlin.ru could not be reached from here (timeouts and connection resets), so this rests on two independent sources: Al-Monitor (citing the Egyptian presidency and Russian state media) and the Egyptian presidency's own release (presidency.eg news28102026-2). Both report that President el-Sisi held talks with Putin at the Kremlin on the evening of Wednesday 28 Oct, Moscow time.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "ca-boc-hike-28",
+   "outcome": "yes",
+   "evidence": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
+   "note": "The Bank of Canada's 28 Oct 2026 press release is headlined 'Bank of Canada raises the policy rate by 25 basis points to 2½%'.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "au-cpi-sep-4",
+   "outcome": "yes",
+   "evidence": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+   "note": "ABS 'Consumer Price Index, Australia, September 2026' (released 28/10/2026 11:30am AEDT): the CPI rose 4.3% in the 12 months to September 2026, up from 4.0%.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-diesel-max-28-above",
+   "outcome": "yes",
+   "evidence": "https://mf.gov.cz/assets/attachments/2026-10-27_Cenovy-vestnik-112-2026.pdf",
+   "note": "Cenový věstník 112/2026 (27 Oct) sets the maximum price of B7 diesel at 49.46 CZK/l incl. VAT for 28–29 Oct 2026, which is above 48.96.",
+   "resolved_at": "2026-10-29T05:12:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-fee-coalition-deal-28",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/chudarek-babis-pripustil-jiny-model-financovani-ct-a-cro-mimo-rozpocet-/2894474",
+   "note": "The ČTK domestic feed, which runs without a gap from 09:29 on 27 Oct to 22:04 on 29 Oct, reports no coalition council or joint ANO–SPD–Motoristé announcement of an agreed change to tisk 231. On 29 Oct ČT director Chudárek said Babiš had only floated a non-budget funding model and that nothing was agreed; this rests on the absence of any report.",
+   "resolved_at": "2026-10-30T05:20:00+01:00"
+  },
+  {
+   "claim": "br-flavio-tse-filing-28",
+   "outcome": "no",
+   "evidence": "https://www.itatiaia.com.br/politica/disputa-entre-lula-e-flavio-continua-no-tse-apos-eleicoes/",
+   "note": "The TSE docket was not checked directly. CNN Brasil (via Itatiaia, 27 Oct) and BBC Brasil (via A Gazeta, 26 Oct) report only Flávio’s stated intention to seek cassação; the Aijes against Lula–Alckmin found in searches were filed on 28 Sep and 20 Oct. No report of a new filing at the TSE on 27–28 Oct was found, so this rests on the absence of any report.",
+   "resolved_at": "2026-10-30T05:20:00+01:00"
+  },
+  {
+   "claim": "cz-us-interim-28",
+   "outcome": "no",
+   "evidence": "https://www.usoud.cz/aktualne",
+   "note": "The Constitutional Court’s news list has only one item for 27–28 Oct (27 Oct, on inheritance of copyright), and its next item is dated after the window. Neither the Court nor the ČTK domestic feed for 27–29 Oct reports a decision on the interim-measure request in the heads-of-missions case.",
+   "resolved_at": "2026-10-30T05:20:00+01:00"
+  },
+  {
+   "claim": "us-midterms-early-40m-28",
+   "outcome": "void",
+   "evidence": "https://election.lab.ufl.edu/early-vote/2026-early-voting/",
+   "note": "Void after 72 hours: the criterion needs the figure of the tracker's last update stamped on 28 Oct, but the UF page keeps no history and no archive or report quotes that update; reports bracket the threshold (Spectrum News nearly 40 million on Wednesday afternoon, WISN more than 41 million on Thursday morning), so the criterion cannot be applied.",
+   "resolved_at": "2026-11-01T11:20:00+01:00"
+  },
+  {
+   "claim": "cz-pavel-speech-media-28",
+   "outcome": "no",
+   "evidence": "https://www.forum24.cz/odvadime-pozornost-kourovymi-clonami-prectete-si-cely-projev-prezidenta-pavla",
+   "note": "Forum24's full text of the speech (hrad.cz blocked to the resolver) and ČT24's report show only general references, to trust in 'instituce, média, vědu' and to not breaking up 'mediální prostor' by ill-considered law changes, with no explicit mention of ČT, ČRo, public-service media or licence fees; the press read this as a defence of public media, but it does not meet the criterion's explicit-mention test.",
+   "resolved_at": "2026-11-01T09:15:00+01:00",
+   "held": true,
+   "ambiguous": true
+  },
+  {
+   "claim": "cz-babis-vladislav-28",
+   "outcome": "yes",
+   "evidence": "https://www.blesk.cz/galerie/zpravy-politika/1506873/top-momenty-pavlovych-metalu-ostry-projev-i-pohled-klause-babis-s-monikou-i-necasovi?foto=0",
+   "note": "Blesk's gallery includes a ČTK photo (Ondřej Deml) captioned 'Andrej Babiš dorazil s manželkou Monikou' (28.10.2026) and photos of Babiš with the Pavels in Vladislav Hall, and Deník N and Echo24 also report him present during the speech.",
+   "resolved_at": "2026-11-01T09:15:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-okamura-vladislav-28",
+   "outcome": "no",
+   "evidence": "https://www.blesk.cz/clanek/zpravy-politika/851489/co-se-delo-na-hrade-kdyz-kamery-zhasly-recepce-bez-klempire-a-rodinne-dychanky.html",
+   "note": "Resolved after 72 hours from the best available evidence: Blesk (29 Oct) lists the politicians at the ceremony and reception, naming deputy speaker Barbora Urbanová but not Okamura, and no ČTK, ČT24, Deník N, Echo24 or CNN Prima report places him in Vladislav Hall (they place him at Vítkov and at the 13:00 ČSBS event); his presence was not shown, so the claim resolves no.",
+   "resolved_at": "2026-11-01T11:20:00+01:00",
+   "held": true,
+   "ambiguous": true
+  }
+ ],
+ "corrections": []
 }

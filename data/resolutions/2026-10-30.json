@@ -1,96 +1,177 @@
 {
-  "edition": "2026-10-30",
-  "results": [
-    {
-      "claim": "us-core-pce-sep-31",
-      "outcome": "yes",
-      "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
-      "note": "BEA’s core PCE page, updated with the Personal Income and Outlays release of 29 Oct 2026, shows September 2026 at +3.1% from one year ago (August 3.0%).",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "us-core-pce-sep",
-      "outcome": "measured",
-      "value": 3.1,
-      "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
-      "note": "BEA (current release 29 Oct 2026): the PCE price index excluding food and energy rose 3.1% in the 12 months to September 2026.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "us-gdp-q3-3pct",
-      "outcome": "yes",
-      "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
-      "note": "BEA’s advance estimate released on 29 Oct 2026 puts Q3 2026 real GDP growth at 3.4% at an annual rate (Q2: 2.2%), which is above 3.0.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "us-gdp-q3",
-      "outcome": "measured",
-      "value": 3.4,
-      "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
-      "note": "BEA ‘GDP (Advance Estimate), 3rd Quarter 2026’ (current release 29 Oct 2026): real GDP increased at an annual rate of 3.4 percent.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "eu-ecb-hold-29",
-      "outcome": "yes",
-      "evidence": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-      "note": "The ECB’s 29 Oct 2026 ‘Monetary policy decisions’ release says the deposit facility, MRO and marginal lending rates remain unchanged at 2.50%, 2.65% and 2.90%.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "eu-ecb-unanimous-29",
-      "outcome": "yes",
-      "evidence": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
-      "note": "In the 29 Oct press conference transcript, Lagarde says the Governing Council debated a hike but ‘unanimously decided’ to hold, and later says ‘there was a unanimous decision at the end of the discussion’.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-kb-profit-consensus-29",
-      "outcome": "yes",
-      "evidence": "https://www.kb.cz/cs/o-bance/pro-investory/novinky/hospodarske-vysledky-ke-dni-30-9-2026",
-      "note": "KB’s 29 Oct release (06:45) reports 9M 2026 net profit attributable to owners of the parent of CZK 13,201 million. Less H1’s 8,519 million, that gives Q3 at CZK 4,682 million (headline ‘4.7 billion’), above 4,437 million.",
-      "resolved_at": "2026-10-30T05:20:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cn-plenum-zhang-29",
-      "outcome": "yes",
-      "evidence": "https://www.thestandard.com.hk/china/article/346925/Chinas-Communist-Party-confirms-expulsion-of-33-officials",
-      "note": "Xinhua was not read directly; two outlets (Reuters via kelo.com, 29 Oct 2026, and The Standard) report that the Fifth Plenum communique released by Xinhua on Thursday 29 Oct confirmed the expulsion of 33 officials including former senior military leader Zhang Youxia from the Party.",
-      "resolved_at": "2026-10-31T05:24:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "us-amazon-sales-202",
-      "outcome": "no",
-      "evidence": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
-      "note": "Amazon’s 8-K Exhibit 99.1 filed 29 Oct 2026 reports Q3 2026 total net sales of $201,944 million (headline $201.9 billion), which is not above $202,000 million.",
-      "resolved_at": "2026-10-31T05:24:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "eu-shell-buyback-3bn",
-      "outcome": "yes",
-      "evidence": "https://www.shell.com/investors/results-and-reporting/quarterly-results/_jcr_content/root/main/section/simple/promo_1962010312_cop/links/item0.stream/1793238861562/c51182ec68b70b120e29f5a1ede9bd4911d54432/q3-2026-quarterly-press-release.pdf",
-      "note": "Shell’s Q3 2026 press release (London, 29 Oct 2026) announces a $5 billion share buyback programme for the next three months, above $3.0bn.",
-      "resolved_at": "2026-10-31T05:24:00+01:00",
-      "held": true
-    },
-    {
-      "claim": "cz-diesel-cap-30-above",
-      "outcome": "yes",
-      "evidence": "https://mf.gov.cz/assets/attachments/2026-10-29_Cenovy-vestnik-113-2026.pdf",
-      "note": "Cenový věstník 113/2026 of 29 Oct sets the maximum price of B7 diesel for 30 Oct 2026 at 49.69 CZK per litre incl. VAT, above 49.46.",
-      "resolved_at": "2026-10-31T05:24:00+01:00",
-      "held": true
-    }
-  ],
-  "corrections": []
+ "edition": "2026-10-30",
+ "results": [
+  {
+   "claim": "us-core-pce-sep-31",
+   "outcome": "yes",
+   "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+   "note": "BEA’s core PCE page, updated with the Personal Income and Outlays release of 29 Oct 2026, shows September 2026 at +3.1% from one year ago (August 3.0%).",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-core-pce-sep",
+   "outcome": "measured",
+   "value": 3.1,
+   "evidence": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+   "note": "BEA (current release 29 Oct 2026): the PCE price index excluding food and energy rose 3.1% in the 12 months to September 2026.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-gdp-q3-3pct",
+   "outcome": "yes",
+   "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
+   "note": "BEA’s advance estimate released on 29 Oct 2026 puts Q3 2026 real GDP growth at 3.4% at an annual rate (Q2: 2.2%), which is above 3.0.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-gdp-q3",
+   "outcome": "measured",
+   "value": 3.4,
+   "evidence": "https://www.bea.gov/data/gdp/gross-domestic-product",
+   "note": "BEA ‘GDP (Advance Estimate), 3rd Quarter 2026’ (current release 29 Oct 2026): real GDP increased at an annual rate of 3.4 percent.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "eu-ecb-hold-29",
+   "outcome": "yes",
+   "evidence": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+   "note": "The ECB’s 29 Oct 2026 ‘Monetary policy decisions’ release says the deposit facility, MRO and marginal lending rates remain unchanged at 2.50%, 2.65% and 2.90%.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "eu-ecb-unanimous-29",
+   "outcome": "yes",
+   "evidence": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+   "note": "In the 29 Oct press conference transcript, Lagarde says the Governing Council debated a hike but ‘unanimously decided’ to hold, and later says ‘there was a unanimous decision at the end of the discussion’.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-kb-profit-consensus-29",
+   "outcome": "yes",
+   "evidence": "https://www.kb.cz/cs/o-bance/pro-investory/novinky/hospodarske-vysledky-ke-dni-30-9-2026",
+   "note": "KB’s 29 Oct release (06:45) reports 9M 2026 net profit attributable to owners of the parent of CZK 13,201 million. Less H1’s 8,519 million, that gives Q3 at CZK 4,682 million (headline ‘4.7 billion’), above 4,437 million.",
+   "resolved_at": "2026-10-30T05:20:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cn-plenum-zhang-29",
+   "outcome": "yes",
+   "evidence": "https://www.thestandard.com.hk/china/article/346925/Chinas-Communist-Party-confirms-expulsion-of-33-officials",
+   "note": "Xinhua was not read directly; two outlets (Reuters via kelo.com, 29 Oct 2026, and The Standard) report that the Fifth Plenum communique released by Xinhua on Thursday 29 Oct confirmed the expulsion of 33 officials including former senior military leader Zhang Youxia from the Party.",
+   "resolved_at": "2026-10-31T05:24:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-amazon-sales-202",
+   "outcome": "no",
+   "evidence": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+   "note": "Amazon’s 8-K Exhibit 99.1 filed 29 Oct 2026 reports Q3 2026 total net sales of $201,944 million (headline $201.9 billion), which is not above $202,000 million.",
+   "resolved_at": "2026-10-31T05:24:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "eu-shell-buyback-3bn",
+   "outcome": "yes",
+   "evidence": "https://www.shell.com/investors/results-and-reporting/quarterly-results/_jcr_content/root/main/section/simple/promo_1962010312_cop/links/item0.stream/1793238861562/c51182ec68b70b120e29f5a1ede9bd4911d54432/q3-2026-quarterly-press-release.pdf",
+   "note": "Shell’s Q3 2026 press release (London, 29 Oct 2026) announces a $5 billion share buyback programme for the next three months, above $3.0bn.",
+   "resolved_at": "2026-10-31T05:24:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-diesel-cap-30-above",
+   "outcome": "yes",
+   "evidence": "https://mf.gov.cz/assets/attachments/2026-10-29_Cenovy-vestnik-113-2026.pdf",
+   "note": "Cenový věstník 113/2026 of 29 Oct sets the maximum price of B7 diesel for 30 Oct 2026 at 49.69 CZK per litre incl. VAT, above 49.46.",
+   "resolved_at": "2026-10-31T05:24:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-hu-joint-declaration-29",
+   "outcome": "no",
+   "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/v-praze-poprve-spolecne-zasednou-ceska-a-madarska-vlada-379100",
+   "note": "ČT24 and ČTK (ceskenoviny.cz/zpravy/2893335, updated 17:39 on 29 Oct) report that the first joint Czech–Hungarian government session took place in Prague on 29 Oct; the only document signed was a transport cooperation memorandum signed by the ministers, and neither outlet reports any declaration or memorandum signed or adopted by Babiš and Magyar; vlada.gov.cz could not be fetched.",
+   "resolved_at": "2026-11-01T09:30:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "rs-student-pm-named-29",
+   "outcome": "no",
+   "evidence": "https://www.euronews.rs/srbija/politika/249421/srdanovic-dijalog-o-kosovu-i-nastavak-puta-ka-eu/vest",
+   "note": "Euronews Serbia and Kurir (27 Oct) quote list leader Ilija Srdanović saying the list's majority group of MPs will pick the prime minister only after the electoral process formally ends; Vreme (27 Oct) says the decision comes once the assembly is constituted; searches of N1, RFE/RL, Vreme and Serbian-language news for 28–29 Oct found no single named candidate.",
+   "resolved_at": "2026-11-01T09:30:00+01:00"
+  },
+  {
+   "claim": "cz-prague-pha-sobe-29",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/2893550",
+   "note": "ČTK (27 Oct) and Blesk (27 Oct 16:14) report that Praha sobě accepted two council seats but had not definitively confirmed joining the coalition, and Scheinherr still had to consult the party's council club; searches of ČTK, iROZHLAS, Pražský deník, Echo24, Seznam Zprávy and Blesk found no confirmation made on 28–29 Oct.",
+   "resolved_at": "2026-11-01T09:30:00+01:00"
+  },
+  {
+   "claim": "us-midterms-early-vote-29",
+   "outcome": "yes",
+   "evidence": "https://www.yahoo.com/news/politics/articles/more-43-million-ballots-cast-195653475.html",
+   "note": "BBC (Max Matza, syndicated on Yahoo, published 29 Oct 20:35 UTC = 16:35 EDT), citing the UF Election Lab's Thursday figures, reports more than 43 million votes already cast, and AP via PBS (30 Oct) also reports more than 43 million; the UF tracker's last update by 23:59 EDT on 29 Oct can only be at or above that afternoon reading, so it was well over 42 million (live US.csv now sums to 52.8 million; the archive.org copy of the 29 Oct file could not be reached).",
+   "resolved_at": "2026-11-01T09:30:00+01:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "cz-sfa-chair-named-29",
+   "outcome": "no",
+   "evidence": "https://sfa.gov.cz/",
+   "note": "The State Audiovisual Fund's news list has nothing between its 27 Oct statement on Dvořák's removal and two 30 Oct calls for applications, and ČTK, ČT24, MediaGuru, Blesk and Newstream (all 27 Oct) name no new, acting or interim board chair; searches found none named on 28–29 Oct.",
+   "resolved_at": "2026-11-01T09:30:00+01:00"
+  },
+  {
+   "claim": "cz-fee-committee-resolution-29",
+   "outcome": "no",
+   "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/opozice-zatahla-media-verejne-sluzby-do-politickeho-boje-mini-klempir-379120",
+   "note": "ČT24 (29 Oct) reports that at its Thursday session the media committee interrupted (přerušil) debate on tisk 231 until 10 December without recommending approval or rejection, and did not adopt STAN's counter-resolution; the psp.cz resolution page was not checked directly.",
+   "resolved_at": "2026-11-01T09:40:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-iran-talks-announced-29",
+   "outcome": "no",
+   "evidence": "https://eaworldview.com/2026/10/us-war-on-iran-vance-talks-tehran/",
+   "note": "EA WorldView's running log (to 1 Nov) shows no dated or held round of US–Iran negotiations announced on record on 28–29 Oct: Trump played down talks with 'if you want to do it, that's fine' to Vance, only unnamed sources spoke of a possible Doha/Istanbul meeting, and on 1 Nov Araghchi said there were no plans for meetings with US officials; Al Jazeera's 29 Oct live blog likewise reports no such announcement.",
+   "resolved_at": "2026-11-01T09:40:00+01:00"
+  },
+  {
+   "claim": "il-coalition-61-29",
+   "outcome": "no",
+   "evidence": "https://www.israelhayom.com/2026/10/29/israels-2026-election-results-released/",
+   "note": "Israel Hayom (29 Oct, 19:57 Israel time) reports the CEC count released that evening, including double-envelope ballots, giving Netanyahu's bloc 53 seats (Likud 27, Otzma 7, UTJ 7, Shas 6, RZP–Zehut 6), and Arutz Sheva's CEC-based tally also gives 53.",
+   "resolved_at": "2026-11-01T09:40:00+01:00"
+  },
+  {
+   "claim": "ua-trilateral-date-29",
+   "outcome": "no",
+   "evidence": "https://en.apa.az/europe/zelenskyy-ukraine-hopes-to-hold-trilateral-meeting-in-abu-dhabi-by-nov-10-532795",
+   "note": "APA (28 Oct) quotes Zelensky saying only that he hoped for a meeting 'between November 6 and 10' and that 'after November 4, we will have a date', a range that the criterion excludes; English and Russian searches found no Kremlin, White House or Ukrainian presidency announcement of a specific day on 28–29 Oct.",
+   "resolved_at": "2026-11-01T09:40:00+01:00"
+  },
+  {
+   "claim": "ua-oleshky-aid-29",
+   "outcome": "no",
+   "evidence": "https://www.aljazeera.com/news/2026/10/30/aid-convoy-enters-besieged-ukrainian-town-oleshky",
+   "note": "Al Jazeera (30 Oct) and the Irish Times (30 Oct) report that the aid convoy of buses and ambulances carrying food and medicine entered Oleshky on Friday 30 October, after the window; Radio Svoboda (28 Oct, 19:56) quotes Lubinets saying the routes were still being demined.",
+   "resolved_at": "2026-11-01T09:40:00+01:00",
+   "held": false
+  },
+  {
+   "claim": "ua-starlink-29",
+   "outcome": "no",
+   "evidence": "https://kyivindependent.com/starshield-operations-restored-above-400-km-h-ukraines-defense-ministry-says/",
+   "note": "The Kyiv Independent and other outlets report the 24 Oct restoration, and English and Ukrainian searches for 28–29 Oct statements by Zelensky, the Defence Ministry, the Digital Ministry or Beskrestnov found none saying Starlink or Starshield had again been restricted; this rests on the absence of any report.",
+   "resolved_at": "2026-11-01T09:40:00+01:00"
+  }
+ ],
+ "corrections": []
 }

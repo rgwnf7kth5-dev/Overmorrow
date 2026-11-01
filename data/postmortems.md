@@ -2,6 +2,14 @@
 
 One paragraph for each confident miss: a claim at 70% or more that failed, or 30% or less that came true. Newest first.
 
+## 2026-10-31 · cz-fee-strike-rector-30 (26%, came true)
+
+We gave 26% to a rector or the Rectors' Conference backing the 3 November strike for Czech Television and Czech Radio, or excusing students, within two days; on 30 October Masaryk University's leadership decided to excuse students who attend the rally (Deník N, Brněnský deník). The forecasters started from our own class of unscheduled announcements within a day (then 1 in 20) and treated the criterion as one decision, when in fact some twenty-six public universities could each meet it and the academic community had been mobilising openly for a week. Diagnosis: wrong base rate (a one-actor class used for a claim that any of many actors could satisfy). Rule: when a criterion is met by any one of N independent actors, estimate per actor and combine, 1 − (1 − p)^N, instead of using a single-announcement base rate.
+
+## 2026-10-29 · cz-pavel-speech-media-28 (70%, failed)
+
+We gave 70% to President Pavel naming Czech Television, Czech Radio, public-service media or the licence fee in his 28 October speech; he spoke only of trust in "institutions, the media and science" and of not breaking up "the media space" by ill-considered changes to the law (Forum24 full text, ČT24). The forecast read the political context correctly — the speech did address the fee bill — but the claim required an explicit name, and Pavel's habit in set-piece speeches is to allude rather than name what is before Parliament. Diagnosis: bad claim design (a wording test where the substance was the real question) together with a wrong base rate for explicit naming. Rule: for speech claims, base the probability on the speaker's past wording in comparable speeches, and if the substance is what matters, write the criterion on the substance (for example "criticises the bill on public-service media funding").
+
 ## 2026-10-27 · br-loser-concedes (75%, failed)
 
 We said the loser of Brazil's runoff would publicly acknowledge defeat or congratulate the winner in time; Flávio Bolsonaro said on election night that it was "impossible to recognise the result" and repeated it in a video on 26 October, while only his party, the PL, recognised the TSE's result. The forecast leaned on the general norm of concession in Latin American runoffs and on the PL's institutional behaviour, but the candidate himself had spent the campaign casting doubt on the voting extension and the family's 2022 precedent was a refusal to concede. Diagnosis: wrong base rate (a generic concession norm applied to a candidate with a stated record of contesting results). Rule: for concession claims, start from the candidate's own public record and statements in the final week, not the regional norm.
@@ -32,6 +40,8 @@ We said no poll dated 22 October would give either Israeli bloc 61 seats; Channe
 We said the unemployment-benefit cut would stay stuck in the Chamber on 23 October; in fact the government had attached the cut to the Labour Code amendment (tisk 300), which passed its first reading on 20 October (motion to reject failed 43–78). The story rested on a ČT24 article of 8 October and nobody re-checked the Chamber's own record before freezing. Diagnosis: missed fact, compounded by bad claim design — the criterion spoke of a "benefit bill" that did not exist as a separate print, so the resolver had to interpret it. Rule: Chamber claims must name the print number (tisk) and be checked against psp.cz on the morning of the freeze.
 
 ## Claim design
+
+- 2026-11-01: us-midterms-early-40m-28 was voided: its criterion needed the figure of a tracker update that the source does not keep (no history, no archive), so the claim could not be checked after the fact. A criterion must name a figure that will still be readable when the resolver comes, or name the archive (Wayback) and require it at freeze.
 
 - 2026-10-27 · ca-toronto-chow-reelected, cz-babis-algeria-arrival-noon: resolved as ambiguous because the primary source (toronto.ca results; a time-stamped arrival report) could not be read; name a secondary fallback with timestamps in the criterion.
 - 2026-10-24 · fr-paris-ban: the prefecture banned the negotiated march route (Bastille–Nation) rather than issuing a zone ban, and the resolver had to read a route ban as "banning demonstrations in part of Paris"; say explicitly whether a route ban counts.
