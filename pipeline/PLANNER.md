@@ -2,7 +2,7 @@
 
 The evening run (about 18:40 Europe/Paris on day **E**) does the slow work so that the morning run can concentrate on what changed overnight. It prepares the edition that the next morning run (day E+1) publishes: dated **E+3**, about the events of **E+2**. It also maintains the 14-day agenda and the forecast board. It implements [`METHODOLOGY.md`](../METHODOLOGY.md) sections 2, 4 and 10. From edition No. 5 the rules of method version 3 apply (METHODOLOGY section 12; EDITOR.md steps marked *(v3)*).
 
-Run every agent in parallel. A session has a limited number of web searches (about 200 shared by all agents): give agents narrow tasks, prefer `WebFetch` on known pages, `node scripts/markets.mjs` and `pipeline/reference-data/`.
+Run every agent in parallel. A session has a limited number of web searches (about 200 shared by all agents). *(v6)* Split them in advance (`v6.search_budget`): at most 120 for agenda and dossiers, and 50 kept for the evidence forecasters, whose own research must not be the step that runs out. In general: give agents narrow tasks, prefer `WebFetch` on known pages, `node scripts/markets.mjs` and `pipeline/reference-data/`.
 
 ## 1. Setup
 
@@ -99,3 +99,7 @@ In Czech, at most seven lines: the planned lead and Czech stories for E+3, how m
 Dossiers and round-one forecasts follow EDITOR.md step 4b: the market search is recorded for every claim; election claims get `election` and the poll model; number ranges are at least 4.1 surprise scales wide and centred on consensus; a data-direction claim needs its threshold at least half a scale from consensus; the outsider gets no dossier; a spread above 15 points triggers targeted research. The dossier for a number release records the consensus with its source and the surprise sd with its source.
 
 **Calendars that we missed.** In the agenda sweep also check, for E+2: the Commission's College agenda and its list of planned items (`pipeline/sources.json`, "European Commission College agenda"); the annual-reports calendar (WMO Greenhouse Gas Bulletin and State of the Climate, UNEP Emissions Gap, IEA World Energy Outlook, OECD and Commission economic forecasts); Czech energy suppliers' price lists for the next year (ČEZ, PRE, E.ON, innogy) and ERÚ price decisions, which come from October to December; ECB and ČNB personnel questions when markets or Reuters discuss them. The coverage files of 25–31 October show these as the foreseeable misses.
+
+## 10. Rules from method version 6
+
+The planning file and dossiers already carry what EDITOR step 4c asks of a claim: `forecast.baseline`, `event_key` and `case_key`, the scale basis of number forecasts, the simulation for a chamber claim, and the two-step blind procedure.

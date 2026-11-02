@@ -1,0 +1,37 @@
+{
+ "edition": "2026-10-31",
+ "entries": [
+  {
+   "claim": "de-gdp-q3-neg",
+   "outcome": "no",
+   "evidence": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia/germania-l-economia-cresce-sopra-le-attese-nel-terzo-trimestre-65_2026-10-30_TLB.html?lang=it",
+   "note": "Destatis first estimate of 30 Oct shows Q3 GDP +0.2% q/q (DATEV also reports growth); destatis.de press release not read directly.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "us-exxon-eps-30",
+   "outcome": "yes",
+   "evidence": "https://investor.exxonmobil.com/company-information/press-releases/detail/1213/exxonmobil-announces-third-quarter-2026-results",
+   "note": "ExxonMobil's release of 30 Oct states Q3 2026 adjusted EPS (non-GAAP, diluted) of $4.23, above $4.04; company release read.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "il-bloc-seats-30",
+   "outcome": "no",
+   "evidence": "https://www.republicworld.com/global-news/israel-in-hung-knesset-again-netanyahu-bloc-gets-53-opposition-48-arab-parties-19-no-one-reaches-61-majority-2026-10-29-139982",
+   "note": "With 100% counted including double envelopes (29-30 Oct) Netanyahu's bloc stood at 53 seats; CEC site not reachable, based on media reporting the CEC count.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "ua-oleshky-evac-30",
+   "outcome": "yes",
+   "evidence": "https://kyivindependent.com/oleshky-evacuation-begins-but-volunteer-claims-russia-already-moved-people-outside-of-agreed-terms/",
+   "note": "Russian ombudsman Lantratova and Ukraine's Lubinets confirmed the organised Oleshky evacuation began on 30 Oct (also Al Jazeera); primary Telegram posts not read.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  }
+ ]
+}

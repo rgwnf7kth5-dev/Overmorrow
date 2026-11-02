@@ -1,0 +1,45 @@
+{
+ "edition": "2026-10-26",
+ "entries": [
+  {
+   "claim": "bg-iotova-45",
+   "outcome": "no",
+   "evidence": "https://gna.org.gh/2026/10/bulgarian-presidential-vote-to-have-run-off-official-results-confirm/",
+   "note": "Official CIK results put Iotova first with 34.7% and a run-off; results.cik.bg not read, based on outlets citing CIK.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "cz-algeria-gas-deal-announced",
+   "outcome": "no",
+   "evidence": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-andrej-babis-jednal-v-alzirsku-o-dodavkach-plynu-a-dalsim-rozvoji-ekonomicke-spoluprace-229592/",
+   "note": "Government pre-announcement (22 Oct) lists energy cooperation only generally, and the post-visit release says only four non-gas memoranda were signed; no pre-noon 26 Oct statement of a gas document found (vlada.gov.cz read).",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "cz-pardubice-coalition-signed",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/pardubice-povede-nova-petikoalice-primatorem-ma-byt-ondrej-tichy-z-ods-/2893137",
+   "note": "ČTK reports the five-party agreement was signed in the evening of 26 Oct (article stamped 17:58), after the 12:00 deadline; ceskenoviny.cz read.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "cz-honours-number-announced",
+   "outcome": "no",
+   "evidence": "https://www.respekt.cz/informacni-servis/statni-vyznamenani-od-pavla-obdrzi-51-osobnosti-o-tri-vice-nez-loni-2026-10-28-12-23",
+   "note": "ČTK says the Presidential Office confirmed the figure of 51 on 28 Oct; I found no earlier exact-number statement before 12:00 on 26 Oct (hrad.cz itself not read).",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "cz-spd-budget-abstainers-sanction",
+   "outcome": "no",
+   "evidence": "https://www.byznysnoviny.cz/2026/10/23/snemovna-schvalila-schodek-statniho-rozpoctu-386-mld-kc-je-druhy-nejvyssi-v-historii/",
+   "note": "Majerová and Ševčík did abstain, but ČTK and other coverage report no SPD sanction in the window; absence found across several outlets, no primary SPD source read.",
+   "at": "2026-11-02T06:27:33+00:00",
+   "model": "claude-sonnet-5-5"
+  }
+ ]
+}

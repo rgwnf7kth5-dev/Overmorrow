@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pendingClaims, overdueClaims } from './lib.mjs';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage, caseKey, baselineMap, statusQuoOf, auditRows, auditSample } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -30,6 +30,7 @@ const T = {
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
     stamp: { yes: 'Came true', no: 'Did not happen', void: 'Void', pending: 'Awaiting result', corrected: 'corrected', measured: 'Measured' },
     iv: { range: '80% range', actual: 'actual', inside: 'inside our range', outside: 'outside our range' },
+    limited: (a, b, c, d) => `<b>Limited sources.</b> This edition was made with restricted access to its sources: ${a} of ${b} reference front pages read, ${c} of ${d} cited pages opened at the final check. The others rely on dated excerpts.`,
     upd: { at: (t) => ` · updated ${t}`, banner: (t, r, a) => `<b>Afternoon update, ${t}.</b> ${r} forecast${r === 1 ? '' : 's'} revised, ${a} stor${a === 1 ? 'y' : 'ies'} added. Morning figures stay on record and are scored separately.`, morning: 'morning', afternoon: 'afternoon', why: 'Why it changed', added: 'Added in the afternoon update' },
     print: 'Print edition', printBtn: 'Print or save as PDF', printNote: 'One A4 page. Use your browser’s print dialog; choose “Save as PDF” to keep a copy.', printFoot: 'All reports are forecasts written before the events. Results and sources:',
     match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
@@ -52,17 +53,20 @@ const T = {
       howH: 'How we score',
       how: 'Each claim gets a Brier score: the squared difference between our probability and the outcome (1 if it came true, 0 if not). Lower is better. A forecaster who always says 50% scores 0.250. We also keep a log score, which punishes confident misses more heavily, and a calibration chart, which compares our stated probabilities with how often those claims came true.',
       notYet: 'not yet checked',
-      small: (n, ev, lo, hi) => `<b>Small sample.</b> ${n} resolved claims from ${ev} separate events. Several claims on one election are not several independent tests, so the 90% interval of the Brier score is ${lo}–${hi}. Differences of a few hundredths mean nothing yet.`,
+      small: (n, ev, lo, hi) => `<b>Small sample.</b> ${n} resolved claims from ${ev} running stories. Several claims on one election, or a week of claims on one negotiation, are not independent tests, so the 90% interval of the Brier score, which resamples whole stories, is ${lo}–${hi}. Differences of a few hundredths mean nothing yet.`,
+      hardH: 'What the headline figure hides', hardNote: 'We choose our own questions, and an easy question flatters any score. The hard questions are those we put between 15 and 85%. The baseline is fixed in advance and needs no research: it expects things to continue as announced, at the rate at which they have done so up to that morning. The single analyst is one forecaster on their own, the role named in advance in the settings. Each row compares us on the same claims.', hardCols: ['Test', 'Claims', 'Our Brier', 'Benchmark', 'Skill'], hardRows: { hard: 'Hard questions (15–85%) against a coin toss', base: 'All claims with a clear status quo against the baseline', analyst: (r) => `All full records against one analyst (${r})`, v6: 'The same, method version 6 and later only' },
+      auditH: 'Independent audit of results', auditNote: 'Our system writes its forecasts and also records their results. So a fixed tenth of the results, picked by a hash and not by anyone’s choice, is settled again by a separate agent that cannot see the recorded outcome. Where the two differ, the result is reviewed and any correction is shown.', auditCols: ['', 'Results'], auditRows: ['In the sample', 'Audited', 'Audit agrees', 'Audit differs', 'Audit could not settle it'], auditEmpty: 'The first audit is still to come.',
+      runH: 'What a run costs', runNote: 'Recorded by each morning run from method version 6. Five forecasters earn their place only if they beat the single analyst and the baseline above by more than these runs cost.', runCols: ['', 'Average'], runRows: ['Editions recorded', 'Minutes per run', 'Agent runs', 'Web searches'], runEmpty: 'Recorded from method version 6.',
       verH: 'By version of the method', verNote: 'The method changes as we learn; each edition records the version it was made under, and old editions are never rescored under new rules. Only the latest version measures the method as it now stands.', verCols: ['Version', 'Editions', 'Claims', 'Events', 'Brier (90% interval)', 'Full forecaster record'],
-      ver: { 1: 'Pilot and early editions (no recorded ensemble)', 2: 'Five recorded forecasters', 3: 'Event window, full record, derived numbers', 4: 'Selection by news value, economy desk' },
-      comboH: 'Combination rules compared', comboNote: 'The published figure is the geometric mean of the five forecasters’ odds. On the same claims we also score the plain mean, the median, the blind ensemble (estimates made before any market or bookmaker was shown), the market and the base rate. If a simpler rule wins over enough events, we switch.', comboCols: ['Rule', 'Claims', 'Brier', 'Skill vs coin'], comboRows: { pub: 'Published figure', geo: 'Geometric mean of odds', mean: 'Plain mean', median: 'Median', blind: 'Blind ensemble (before markets)', market: 'Market or bookmaker', base: 'Base rate' }, comboEmpty: 'No resolved claim has a full forecaster record yet.',
+      ver: { 1: 'Pilot and early editions (no recorded ensemble)', 2: 'Five recorded forecasters', 3: 'Event window, full record, derived numbers', 4: 'Selection by news value, economy desk', 5: 'Lessons from the first 132 results', 6: 'Honest measurement' },
+      comboH: 'Combination rules compared', comboNote: 'All morning figures, frozen at the same time. Each rule is set against our published morning figure on exactly the same claims, so read across a row, not down the table. The blind ensemble is the estimate made before the signals file, which holds other people’s models and consensus as well as markets, so a gain over it does not show that markets helped.', comboCols: ['Rule', 'Claims', 'Brier', 'Our Brier, same claims', 'Skill vs coin'], comboRows: { pub: 'Published morning figure', geo: 'Geometric mean of odds', mean: 'Plain mean', median: 'Median', blind: 'Blind ensemble (before the signals file)', market: 'Market or bookmaker', base: 'Base rate' }, comboEmpty: 'No resolved claim has a full forecaster record yet.',
       decH: 'Timing or outcome?', decNote: 'For scheduled events each forecast is split into the chance that the event happens in the window and the outcome if it does. Scoring the two parts separately shows whether our misses come from the calendar or from the result.', decCols: ['Part', 'Claims', 'Brier'], decRows: ['Event happens in the window', 'Outcome, given it happened'],
       covH: 'What we missed', covNote: 'Each morning the resolver lists the significant events of the forecast day by a fixed procedure (an event counts when it appears in at least two of the reference lists) and marks whether the paper covered it, considered and dropped it, or missed it.', covCols: ['', 'Czech', 'Europe', 'World'], covRows: { covered: 'Covered', dropped: 'Considered, not selected', missed: 'Missed' }, covEmpty: 'Coverage is recorded from edition No. 5 on.',
       figs: ['claims resolved', 'Brier score (0.250 = coin toss)', 'calls that went our way', 'log score (0.69 = coin toss)'],
       calH: 'Calibration', cal: 'Each dot is a group of claims with similar probabilities. On the dashed line, our 70% calls come true 70% of the time. Dots below the line mean we were overconfident; above it, too cautious.',
       calCols: ['Forecast band', 'Claims', 'Average forecast', 'Came true'], axisX: 'Forecast probability', axisY: 'How often it came true',
       secH: 'By section', secCols: ['Section', 'Claims', 'Went our way', 'Brier'],
-      trackH: 'Morning edition and afternoon update', trackNote: 'Both versions are frozen and scored on their own. If the afternoon revisions work, their Brier score is lower than the morning one on the same claims.', trackCols: ['Forecasts', 'Claims', 'Brier'], tracks: ['Morning edition, all claims', 'Final forecasts, after updates', 'Revised claims: morning figure', 'Revised claims: afternoon figure'],
+      trackH: 'Morning edition and afternoon update', trackNote: 'Both versions are frozen and scored on their own. A revision made after the deciding news was already reported helps readers, but it is confirmation rather than forecasting, so the forecast score and the figures at the top of this page leave it out.', trackCols: ['Forecasts', 'Claims', 'Brier'], tracks: ['Morning edition, all claims', 'Forecasts after updates, without confirmations', 'Everything published, with confirmations', 'Revised claims: morning figure', 'Revised claims: afternoon figure'],
       missH: 'Largest misses', missCols: ['Edition', 'Claim', 'Forecast', 'Outcome'], front: 'Front page',
       benchH: 'Against benchmarks', benchNote: 'Each row compares our Brier score with a benchmark on the same claims. Lower is better. A benchmark only counts where it existed when we froze the forecast.', benchCols: ['Benchmark', 'Claims', 'Ours', 'Benchmark'], bench: { coin: 'Coin toss (50%)', base: 'Base rate of the reference class', market: 'Prediction market at freeze', informative: 'Our informative claims only (15–85%)' },
       skillCol: 'Skill',
@@ -112,6 +116,7 @@ const T = {
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
     stamp: { yes: 'Vyšlo', no: 'Nevyšlo', void: 'Neplatné', pending: 'Čeká na výsledek', corrected: 'opraveno', measured: 'Změřeno' },
     iv: { range: '80% rozpětí', actual: 'skutečnost', inside: 'v našem rozpětí', outside: 'mimo naše rozpětí' },
+    limited: (a, b, c, d) => `<b>Omezené podklady.</b> Toto vydání vzniklo s omezeným přístupem ke zdrojům: přečteno ${a} z ${b} referenčních titulních stran, při závěrečné kontrole otevřeno ${c} z ${d} citovaných stránek. Zbytek stojí na datovaných výňatcích.`,
     upd: { at: (t) => ` · aktualizováno ${t}`, banner: (t, r, a) => `<b>Odpolední aktualizace, ${t}.</b> Změněné predikce: ${r}, přidané zprávy: ${a}. Ranní čísla zůstávají v záznamu a hodnotí se zvlášť.`, morning: 'ráno', afternoon: 'odpoledne', why: 'Proč se to změnilo', added: 'Přidáno v odpolední aktualizaci' },
     print: 'Tisková verze', printBtn: 'Vytisknout nebo uložit jako PDF', printNote: 'Jedna strana A4. Použijte tisk v prohlížeči; volbou „Uložit jako PDF“ si uložíte kopii.', printFoot: 'Všechny zprávy jsou predikce napsané před událostmi. Výsledky a zdroje:',
     match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
@@ -134,17 +139,20 @@ const T = {
       howH: 'Jak hodnotíme',
       how: 'Každé tvrzení dostane Brierovo skóre: druhou mocninu rozdílu mezi naší pravděpodobností a výsledkem (1, když se splnilo, 0, když ne). Nižší je lepší. Kdo vždy tipuje 50 %, má 0,250. Sledujeme i logaritmické skóre, které víc trestá sebejisté omyly, a kalibrační graf, který porovnává uvedené pravděpodobnosti s tím, jak často se tvrzení splnila.',
       notYet: 'dosud nevyhodnoceno',
-      small: (n, ev, lo, hi) => `<b>Malý vzorek.</b> ${n} vyhodnocených tvrzení z ${ev} samostatných událostí. Několik tvrzení k jedněm volbám není několik nezávislých zkoušek, a 90% interval Brierova skóre je proto ${lo}–${hi}. Rozdíly o pár setin zatím nic neznamenají.`,
+      small: (n, ev, lo, hi) => `<b>Malý vzorek.</b> ${n} vyhodnocených tvrzení z ${ev} průběžných kauz. Několik tvrzení k jedněm volbám ani týden tvrzení o jednom vyjednávání nejsou nezávislé zkoušky, a 90% interval Brierova skóre, který převzorkovává celé kauzy, je proto ${lo}–${hi}. Rozdíly o pár setin zatím nic neznamenají.`,
+      hardH: 'Co souhrnné číslo skrývá', hardNote: 'Otázky si vybíráme sami a snadná otázka zlepší každé skóre. Těžké otázky jsou ty, kterým dáváme 15 až 85 %. Základní model je stanovený předem a nepotřebuje žádnou rešerši: čeká, že věci půjdou dál podle ohlášení, a to s četností, s jakou se tak do onoho rána dělo. Jeden analytik je jediný prognostik sám za sebe, role určená předem v nastavení. Každý řádek nás srovnává na stejných tvrzeních.', hardCols: ['Test', 'Tvrzení', 'Náš Brier', 'Srovnání', 'Dovednost'], hardRows: { hard: 'Těžké otázky (15–85 %) proti hodu mincí', base: 'Tvrzení s jasným stavem věcí proti základnímu modelu', analyst: (r) => `Úplné záznamy proti jednomu analytikovi (${r})`, v6: 'Totéž, jen metoda verze 6 a novější' },
+      auditH: 'Nezávislý audit výsledků', auditNote: 'Náš systém píše předpovědi a sám zapisuje jejich výsledky. Pevnou desetinu výsledků, vybranou hashem a ne něčím rozhodnutím, proto znovu vyhodnocuje samostatný agent, který zapsaný výsledek nevidí. Když se oba liší, výsledek se přezkoumá a případná oprava se zobrazí.', auditCols: ['', 'Výsledky'], auditRows: ['Ve vzorku', 'Prověřeno', 'Audit souhlasí', 'Audit se liší', 'Audit nerozhodl'], auditEmpty: 'První audit teprve proběhne.',
+      runH: 'Co běh stojí', runNote: 'Zapisuje každý ranní běh od metody verze 6. Pět prognostiků se vyplatí, jen když porazí jednoho analytika a základní model výše o víc, než tyto běhy stojí.', runCols: ['', 'Průměr'], runRows: ['Zapsaná vydání', 'Minut na běh', 'Spuštění agentů', 'Webových hledání'], runEmpty: 'Zapisuje se od metody verze 6.',
       verH: 'Podle verze metody', verNote: 'Metoda se mění podle toho, co se učíme; každé vydání nese verzi, podle které vzniklo, a stará vydání se podle nových pravidel nepřehodnocují. Metodu v dnešní podobě měří jen poslední verze.', verCols: ['Verze', 'Vydání', 'Tvrzení', 'Události', 'Brier (90% interval)', 'Úplný záznam prognostiků'],
-      ver: { 1: 'Pilot a první vydání (bez zaznamenaného týmu)', 2: 'Pět zaznamenaných prognostiků', 3: 'Okno události, úplný záznam, odvozená čísla', 4: 'Výběr podle zpravodajské hodnoty, ekonomika' },
-      comboH: 'Srovnání pravidel spojování', comboNote: 'Zveřejněné číslo je geometrický průměr šancí pěti prognostiků. Na stejných tvrzeních hodnotíme i prostý průměr, medián, slepý tým (odhady před ukázáním trhů a kurzů), trh a základní četnost. Pokud jednodušší pravidlo vyhrává na dost událostech, přejdeme na ně.', comboCols: ['Pravidlo', 'Tvrzení', 'Brier', 'Dovednost proti minci'], comboRows: { pub: 'Zveřejněné číslo', geo: 'Geometrický průměr šancí', mean: 'Prostý průměr', median: 'Medián', blind: 'Slepý tým (před trhy)', market: 'Trh nebo sázková kancelář', base: 'Základní četnost' }, comboEmpty: 'Zatím není vyhodnocené žádné tvrzení s úplným záznamem prognostiků.',
+      ver: { 1: 'Pilot a první vydání (bez zaznamenaného týmu)', 2: 'Pět zaznamenaných prognostiků', 3: 'Okno události, úplný záznam, odvozená čísla', 4: 'Výběr podle zpravodajské hodnoty, ekonomika', 5: 'Poučení z prvních 132 výsledků', 6: 'Poctivé měření' },
+      comboH: 'Srovnání pravidel spojování', comboNote: 'Všechno jsou ranní čísla zamčená ve stejný čas. Každé pravidlo stojí proti našemu zveřejněnému rannímu číslu na přesně stejných tvrzeních, takže se čte po řádcích, ne po sloupci. Slepý tým je odhad před souborem signálů, v němž jsou kromě trhů i cizí modely a konsenzus; zlepšení oproti němu proto neukazuje, že pomohly trhy.', comboCols: ['Pravidlo', 'Tvrzení', 'Brier', 'Náš Brier, stejná tvrzení', 'Dovednost proti minci'], comboRows: { pub: 'Zveřejněné ranní číslo', geo: 'Geometrický průměr šancí', mean: 'Prostý průměr', median: 'Medián', blind: 'Slepý tým (před souborem signálů)', market: 'Trh nebo sázková kancelář', base: 'Základní četnost' }, comboEmpty: 'Zatím není vyhodnocené žádné tvrzení s úplným záznamem prognostiků.',
       decH: 'Termín, nebo výsledek?', decNote: 'U naplánovaných událostí se každá predikce dělí na pravděpodobnost, že se událost v daném okně uskuteční, a na výsledek, pokud se uskuteční. Samostatné hodnocení obou částí ukáže, zda se mýlíme v kalendáři, nebo ve výsledku.', decCols: ['Část', 'Tvrzení', 'Brier'], decRows: ['Událost se v okně uskuteční', 'Výsledek, pokud se uskutečnila'],
       covH: 'Co jsme přehlédli', covNote: 'Hodnotitel každé ráno pevným postupem sestaví seznam významných událostí předpovídaného dne (událost se počítá, když je aspoň ve dvou referenčních přehledech) a označí, zda ji noviny měly, zvažovaly a nevybraly, nebo přehlédly.', covCols: ['', 'Česko', 'Evropa', 'Svět'], covRows: { covered: 'Ve vydání', dropped: 'Zvažováno, nevybráno', missed: 'Přehlédnuto' }, covEmpty: 'Pokrytí se zaznamenává od vydání č. 5.',
       figs: ['vyhodnocených tvrzení', 'Brierovo skóre (0,250 = hod mincí)', 'tipů, které vyšly', 'log. skóre (0,69 = hod mincí)'],
       calH: 'Kalibrace', cal: 'Každý bod je skupina tvrzení s podobnou pravděpodobností. Na přerušované čáře se naše tipy na 70 % splní v 70 % případů. Body pod čarou znamenají přílišnou sebejistotu, nad ní přílišnou opatrnost.',
       calCols: ['Pásmo predikce', 'Tvrzení', 'Průměrná predikce', 'Splnilo se'], axisX: 'Predikovaná pravděpodobnost', axisY: 'Jak často se splnilo',
       secH: 'Podle rubrik', secCols: ['Rubrika', 'Tvrzení', 'Vyšlo', 'Brier'],
-      trackH: 'Ranní vydání a odpolední aktualizace', trackNote: 'Obě verze jsou zamčené a hodnotí se samostatně. Pokud odpolední změny pomáhají, mají na stejných tvrzeních nižší Brierovo skóre než ranní.', trackCols: ['Predikce', 'Tvrzení', 'Brier'], tracks: ['Ranní vydání, všechna tvrzení', 'Konečné predikce po aktualizacích', 'Změněná tvrzení: ranní číslo', 'Změněná tvrzení: odpolední číslo'],
+      trackH: 'Ranní vydání a odpolední aktualizace', trackNote: 'Obě verze jsou zamčené a hodnotí se samostatně. Změna provedená až poté, co rozhodující zpráva vyšla, čtenáři pomůže, ale je to potvrzení, ne předpověď. Skóre předpovědí a čísla v záhlaví stránky ji proto nezahrnují.', trackCols: ['Predikce', 'Tvrzení', 'Brier'], tracks: ['Ranní vydání, všechna tvrzení', 'Předpovědi po aktualizacích, bez potvrzení', 'Vše zveřejněné, včetně potvrzení', 'Změněná tvrzení: ranní číslo', 'Změněná tvrzení: odpolední číslo'],
       missH: 'Největší omyly', missCols: ['Vydání', 'Tvrzení', 'Predikce', 'Výsledek'], front: 'Titulní strana',
       benchH: 'Proti měřítkům', benchNote: 'Každý řádek porovnává naše Brierovo skóre s měřítkem na stejných tvrzeních. Nižší je lepší. Měřítko se počítá jen tam, kde existovalo v okamžiku uzávěrky.', benchCols: ['Měřítko', 'Tvrzení', 'My', 'Měřítko'], bench: { coin: 'Hod mincí (50 %)', base: 'Základní míra referenční třídy', market: 'Predikční trh při uzávěrce', informative: 'Jen naše informativní tvrzení (15–85 %)' },
       skillCol: 'Dovednost',
@@ -527,6 +535,8 @@ function editionMain(original, L, isLatest = false) {
   }
   const diary = ed.diary?.length ? `<div class="section"><h2>${L.comingUp}</h2><span>${L.comingDek}</span></div><div class="s12"><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
 
+  const sa = ed.meta?.source_access;
+  const limitedBanner = sa?.limited ? `<p class="updbanner">${L.limited(sa.reference?.read, sa.reference?.total, sa.factcheck?.opened, sa.factcheck?.total)}</p>` : '';
   const updBanner = ed.update ? `<p class="updbanner">${L.upd.banner(hhmm(ed.update.frozen_at), ed.update.revisions, ed.update.added)}</p>` : '';
   if (L === T.cs) {
     // Czech edition: two desks side by side, foreign news left, domestic right; tabs on narrow screens.
@@ -555,7 +565,7 @@ function editionMain(original, L, isLatest = false) {
     const homeShort = est(home, w ? 600 : 0, 1 - best.sh, best.kh) < est(foreign, 0, best.sh, best.kf) * 0.8;
     const diaryBox = ed.diary?.length ? `<div class="box diarybox"><h4>${L.comingUp}</h4><ul class="diary">${ed.diary.map((d) => `<li><time>${esc(d.date)}</time>${esc(d.text)}</li>`).join('')}</ul></div>` : '';
     return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
-${updBanner}
+${limitedBanner}${updBanner}
 ${scorebar}
 <input type="radio" name="desk" id="tab-foreign" class="tabin" checked><input type="radio" name="desk" id="tab-home" class="tabin">
 <div class="tabs" role="tablist"><label for="tab-foreign">Zahraničí</label><label for="tab-home">Domácí</label></div>
@@ -592,7 +602,7 @@ ${scorebar}
 </script>`;
   }
   return `<p class="method">${L.notice(fmtDate(ed.events_date, L, DAY), show)}</p>
-${updBanner}
+${limitedBanner}${updBanner}
 ${scorebar}
 <main class="grid">
   <div class="frontcol s8">${art(byId.get(ed.front.lead), 'lead')}${frontExtra.map((st) => art(st, 'second', true)).join('')}</div>
@@ -813,11 +823,11 @@ function calibrationSvg(bins, L) {
 function trackBlock(editions, L) {
   if (!editions.some((e) => e.update)) return '';
   const A = L.acc;
-  const morning = scoredClaims(editions, 'morning'), latest = scoredClaims(editions, 'latest');
+  const morning = scoredClaims(editions, 'morning'), latest = scoredClaims(editions, 'latest'), fc = scoredClaims(editions, 'forecast');
   const isRev = (r) => r.update && r.morning !== null && r.morning !== undefined;
   const revM = morning.filter(isRev), revA = latest.filter(isRev);
   const row = (label, rows) => { const x = summarise(rows); return `<tr><td>${label}</td><td class="n">${x ? x.n : 0}</td><td class="n">${x ? num3(x.brier, L) : '–'}</td></tr>`; };
-  return `<h2>${A.trackH}</h2><p>${A.trackNote}</p><div class="tbl"><table><thead><tr><th>${A.trackCols[0]}</th><th class="n">${A.trackCols[1]}</th><th class="n">${A.trackCols[2]}</th></tr></thead><tbody>${row(A.tracks[0], morning)}${row(A.tracks[1], latest)}${row(A.tracks[2], revM)}${row(A.tracks[3], revA)}</tbody></table></div>`;
+  return `<h2>${A.trackH}</h2><p>${A.trackNote}</p><div class="tbl"><table><thead><tr><th>${A.trackCols[0]}</th><th class="n">${A.trackCols[1]}</th><th class="n">${A.trackCols[2]}</th></tr></thead><tbody>${row(A.tracks[0], morning)}${row(A.tracks[1], fc)}${row(A.tracks[2], latest)}${row(A.tracks[3], revM)}${row(A.tracks[4], revA)}</tbody></table></div>`;
 }
 
 /** Benchmarks, forecasters, scope and the forecast board, from the structured forecast records (edition No. 4 on). */
@@ -921,8 +931,7 @@ function versionBlock(editions, rows, L) {
     return [esc(A.ver[v] || `v${v}`), range, String(sm.n), String(new Set(list.map(eventKey)).size), `${num3(sm.brier, L)}${fmtCI(ci)}`, `${list.filter(fullRecord).length} / ${list.length}`];
   });
   const ci = brierInterval(rows);
-  const events = new Set(rows.map(eventKey)).size;
-  const warn = rows.length < (cfg.v3?.small_sample_n ?? 100) && ci ? `<p class="note warnbox">${A.small(rows.length, events, num3(ci.lo, L), num3(ci.hi, L))}</p>` : '';
+  const warn = ci && new Set(rows.map(caseKey)).size < (cfg.v3?.small_sample_n ?? 100) * 2 ? `<p class="note warnbox">${A.small(rows.length, ci.events, num3(ci.lo, L), num3(ci.hi, L))}</p>` : '';
   return `${warn}<h2>${A.verH}</h2><p>${A.verNote}</p>${tbl2(A.verCols, lines)}`;
 }
 function comboBlock(rows, L) {
@@ -931,7 +940,7 @@ function comboBlock(rows, L) {
   const full = rows.filter((r) => altCombos(r));
   let out = `<h2>${A.comboH}</h2><p>${A.comboNote}</p>`;
   if (!full.length) return `${out}<p><i>${A.comboEmpty}</i></p>`;
-  const line = (label, list, pf) => { if (!list.length) return null; const b = mean(list.map((r) => brier(pf(r), r.outcome))), coin = mean(list.map((r) => brier(0.5, r.outcome))); const k = skill(b, coin); return [label, String(list.length), num3(b, L), k === null ? '–' : `${k >= 0 ? '+' : '−'}${num3(Math.abs(k), L)}`]; };
+  const line = (label, list, pf) => { if (!list.length) return null; const b = mean(list.map((r) => brier(pf(r), r.outcome))), ours = mean(list.map((r) => brier(r.probability, r.outcome))), coin = mean(list.map((r) => brier(0.5, r.outcome))); const k = skill(b, coin); return [label, String(list.length), num3(b, L), num3(ours, L), k === null ? '–' : `${k >= 0 ? '+' : '−'}${num3(Math.abs(k), L)}`]; };
   const R = A.comboRows;
   const withBlind = full.filter((r) => altCombos(r).blind !== null);
   const withMarket = full.filter((r) => typeof r.forecast?.market?.p === 'number');
@@ -960,9 +969,36 @@ function coverageBlock(L) {
   return `<h2>${A.covH}</h2><p>${A.covNote}</p>${tbl2(A.covCols, lines)}${missed ? `<ul class="missed">${missed}</ul>` : ''}`;
 }
 
+/** Added in method version 6: hard questions, the baseline, the single analyst, the audit and the cost of a run. */
+function honestBlocks(editions, L) {
+  const A = L.acc, cfg = loadConfig();
+  const m = scoredClaims(editions, 'morning');
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const skillTxt = (k) => (k === null ? '–' : `${k >= 0 ? '+' : '−'}${num3(Math.abs(k), L)}`);
+  const line = (label, list, pf) => { if (!list.length) return null; const o = mean(list.map((r) => brier(r.probability, r.outcome))), b = mean(list.map((r) => brier(pf(r), r.outcome))); return [label, String(list.length), num3(o, L), num3(b, L), skillTxt(skill(o, b))]; };
+  const base = baselineMap(m, cfg);
+  const role = cfg.v6?.single_analyst || 'anchor';
+  const solo = (r) => r.forecast?.agents?.find((a) => a.role === role)?.p;
+  const full = m.filter((r) => typeof solo(r) === 'number');
+  const v6 = full.filter((r) => methodVersion(r.edition, cfg) >= 6);
+  const lines = [
+    line(A.hardRows.hard, m.filter((r) => r.probability >= 0.15 && r.probability <= 0.85), () => 0.5),
+    line(A.hardRows.base, m.filter((r) => statusQuoOf(r) !== 'unclear'), (r) => base.get(`${r.edition.id}:${r.id}`)),
+    line(A.hardRows.analyst(esc(A.roles[role] || role)), full, solo),
+    line(A.hardRows.v6, v6, solo),
+  ].filter(Boolean);
+  let out = `<h2>${A.hardH}</h2><p>${A.hardNote}</p>${tbl2(A.hardCols, lines)}`;
+  const sample = auditSample(editions, cfg), au = auditRows(editions);
+  const settled = au.filter((r) => r.agrees !== null);
+  out += `<h2>${A.auditH}</h2><p>${A.auditNote}</p>${au.length ? tbl2(A.auditCols, [[A.auditRows[0], String(sample.length)], [A.auditRows[1], String(au.length)], [A.auditRows[2], String(settled.filter((r) => r.agrees).length)], [A.auditRows[3], String(settled.filter((r) => !r.agrees).length)], [A.auditRows[4], String(au.length - settled.length)]]) : `<p><i>${A.auditEmpty}</i></p>`}`;
+  const runs = editions.map((e) => e.meta?.run).filter((r) => r && Date.parse(r.finished_at) > Date.parse(r.started_at));
+  out += `<h2>${A.runH}</h2><p>${A.runNote}</p>${runs.length ? tbl2(A.runCols, [[A.runRows[0], String(runs.length)], [A.runRows[1], String(Math.round(mean(runs.map((r) => (Date.parse(r.finished_at) - Date.parse(r.started_at)) / 60000))))], [A.runRows[2], String(Math.round(mean(runs.map((r) => r.agents || 0))))], [A.runRows[3], String(Math.round(mean(runs.map((r) => r.searches || 0))))]]) : `<p><i>${A.runEmpty}</i></p>`}`;
+  return out;
+}
+
 function accuracyPage(editions, L) {
   const A = L.acc;
-  const rows = scoredClaims(editions);
+  const rows = scoredClaims(editions, 'forecast');
   const sum = summarise(rows);
   const head = `<div class="prose"><h1>${A.h}</h1><p class="lede">${A.lede}</p>`;
   if (!sum) return `${head}<div class="empty">${A.empty(fmtDate(editions[0].edition_date, L, DAY))}</div><h2>${A.howH}</h2><p>${A.how}</p></div>`;
@@ -992,13 +1028,14 @@ function accuracyPage(editions, L) {
   <div><b>${num3(sum.log, L).slice(0, -1)}</b><span>${A.figs[3]}</span></div>
 </div>
 ${versionBlock(editions, rows, L)}
+${honestBlocks(editions, L)}
 <h2>${A.calH}</h2><p>${A.cal}</p>
 <div class="chart">${calibrationSvg(bins, L)}</div>
 <div class="tbl"><table><thead><tr><th>${A.calCols[0]}</th><th class="n">${A.calCols[1]}</th><th class="n">${A.calCols[2]}</th><th class="n">${A.calCols[3]}</th></tr></thead><tbody>${bins.filter((b) => b.n).map((b) => `<tr><td>${b.label}</td><td class="n">${b.n}</td><td class="n">${pctNum(b.meanP, L)}</td><td class="n">${pctNum(b.freq, L)}</td></tr>`).join('')}</tbody></table></div>
 <h2>${A.secH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
 ${benchBlocks(rows, L)}
-${comboBlock(rows, L)}
+${comboBlock(scoredClaims(editions, 'morning'), L)}
 ${decompBlock(rows, L)}
 ${moreBlocks(editions, rows, L)}
 ${coverageBlock(L)}

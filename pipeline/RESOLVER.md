@@ -36,6 +36,14 @@ node scripts/calibrate.mjs           # writes pipeline/calibration.json (weights
 
 Commit `pipeline/calibration.json` with the results. *(v5)* The correction switches on only when it beats the plain ensemble with each claim left out in turn (`gate` in the file); if it has just switched on or off, or its parameters moved by more than 0.1, say so in the report. If a claim was `ambiguous` or `void` because of how it was written, add the cause in one line to `data/postmortems.md` under the heading "Claim design". For misses where the probability was 70% or higher (or 30% or lower for claims that came true), add a one-paragraph post-mortem to `data/postmortems.md`: what we missed and whether it was a wrong base rate, a missed fact, bad claim design, or plain bad luck.
 
+Also run `node scripts/refdata/series.mjs` to add the new number results to the history. *(v6)* Record the first published figure, never a later revision.
+
+## 3a. Audit *(v6)*
+
+`node scripts/audit.mjs sample` lists the results in the fixed sample that have not been audited, without their recorded outcome. Hand that list, and nothing else from the repository, to one separate agent on `config.v6.audit_model`. It must not open the repository or the site; it applies each criterion from the evidence, as in step 2, and answers `yes`, `no`, `measured` with `value`, `void`, or `unresolved` if the evidence does not settle it. Write its answers to `data/audits/<edition>.json` as `{"edition": "…", "entries": [{"claim", "outcome", "value", "evidence", "note", "at", "model"}]}`, without changing them.
+
+`node scripts/audit.mjs report` lists the differences. For each one, read both sources. If the record is wrong, add a correction under step 2; if the audit is wrong, say why in `data/postmortems.md` under "Audit". Audit files are append-only.
+
 ## 3b. Coverage: what the paper missed
 
 For the edition whose claims you just resolved (events of the previous day), write `data/coverage/<edition id>.json` by this fixed procedure, version `coverage-1`, so that the choice cannot be bent after the fact:

@@ -73,6 +73,12 @@
       "from": 13,
       "date": "2026-11-01",
       "label": "Lessons from the first 132 resolved claims: results within 72 hours, poll models with a minimum error for elections, wider number ranges centred on consensus, data-direction claims only away from the threshold, calibration only when it helps out of sample, recorded market search, research when forecasters disagree, an outsider without the shared dossier"
+    },
+    {
+      "version": 6,
+      "from": 15,
+      "date": "2026-11-02",
+      "label": "Honest measurement: a recorded state of the sources behind each edition, revisions that only confirm reported news kept out of the forecast score, event and case keys, a pre-stated baseline on every claim, an independent audit of a fixed sample of results, a history of surprises for number forecasts, and a joint simulation of linked races"
     }
   ],
   "v3": {
@@ -152,5 +158,43 @@
       "release_threshold_min_scales": "A yes/no claim on a data release needs the threshold at least this many surprise scales from consensus; nearer, it is a coin toss: use an interval claim instead.",
       "research_spread": "If the five final estimates span more than this, a research agent looks for the disputed fact before freezing (spread ≥ 15 points scored 0.170 against 0.140)."
     }
+  },
+  "v6": {
+    "from": 15,
+    "audit_share": 0.1,
+    "audit_due_days": 7,
+    "audit_model": "sonnet",
+    "source_access_min_share": 0.5,
+    "baseline_prior": [
+      3,
+      1
+    ],
+    "scale_bases": [
+      "series",
+      "published",
+      "pooled"
+    ],
+    "banned_scale_words": [
+      "from memory",
+      "own spread"
+    ],
+    "sim_min_draws": 20000,
+    "single_analyst": "anchor",
+    "backtest_min_train": 50,
+    "search_budget": {
+      "total": 200,
+      "dossiers_max": 120,
+      "evidence_reserve": 50,
+      "morning_reserve": 30
+    },
+    "_notes": {
+      "audit_share": "Share of results re-resolved by a separate agent that cannot see the recorded outcome. Fixed by hash in lib.mjs (auditSample).",
+      "source_access_min_share": "Below this share of reference pages read, or of fact-check pages opened, the edition is marked as limited on its page.",
+      "single_analyst": "The role named in advance as the single-analyst comparison from version 6. Chosen here on 2 November 2026 from the record to that date, so only editions of version 6 and later count as a fair test.",
+      "baseline_prior": "Beta prior of the persistence baseline: the share of status-quo outcomes among results known before an edition's freeze.",
+      "backtest_min_test": "A fitted stage goes live only after beating the plain ensemble by at least backtest_min_gain on this many later claims. On 2 November 2026 the correction led by 0.0035 on 38 claims, which proves nothing."
+    },
+    "backtest_min_test": 100,
+    "backtest_min_gain": 0.002
   }
 }

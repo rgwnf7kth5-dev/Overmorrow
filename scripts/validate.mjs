@@ -1,6 +1,6 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage, normCdf, resultsFor, overdueClaims } from './lib.mjs';
+import { auditRows, auditSample, loadAudits, resultsFor, loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage, normCdf, overdueClaims } from './lib.mjs';
 import fsv from 'node:fs';
 import pathv from 'node:path';
 
@@ -241,7 +241,36 @@ function checkCoherence(ed, w) {
 // ---------- method version 4 (edition No. 6 on): news value, running stories, economy desk, photographs ----------
 const V4 = cfg.v4 || {};
 const V5 = cfg.v5 || {};
+const V6 = cfg.v6 || {};
 const STRICT_DUE = process.argv.includes('--strict-due') || process.env.OVERMORROW_STRICT_DUE === '1';
+
+// ---------- method version 6 (see config.v6): honest measurement ----------
+const BASELINE_VALUES = ['yes', 'no', 'unclear'];
+const seriesFile = () => { const f = pathv.join(process.cwd(), 'pipeline/reference-data/series.json'); return fsv.existsSync(f) ? JSON.parse(fsv.readFileSync(f, 'utf8')) : { series: {} }; };
+function checkV6Claim(c, cw) {
+  const f = c.forecast || {};
+  if (isInterval(c)) {
+    if (!(V6.scale_bases || []).includes(f.scale_basis)) err(cw, `forecast.scale_basis must be one of ${(V6.scale_bases || []).join(', ')}: say where the surprise scale comes from (node scripts/refdata/series.mjs scale <key>)`);
+    if (f.scale_basis === 'series' && !seriesFile().series?.[f.series]?.n) err(cw, 'scale_basis "series" needs forecast.series naming a series with recorded surprises');
+    if (f.scale_basis === 'published' && !/^https?:\/\//.test(f.scale_url || '')) err(cw, 'scale_basis "published" needs forecast.scale_url');
+    const src = String(f.scale_source || '').toLowerCase();
+    for (const w of V6.banned_scale_words || []) if (src.includes(w)) err(cw, `scale_source says "${w}": a scale needs a sourced history, not memory or the forecasters' own spread`);
+  } else if (!c.derived && !BASELINE_VALUES.includes(f.baseline?.status_quo)) err(cw, 'forecast.baseline.status_quo must be yes, no or unclear, set before the forecasters report');
+  if (c.election?.kind === 'chamber') {
+    const s = f.sim;
+    if (!s || typeof s.p !== 'number' || !(s.draws >= V6.sim_min_draws) || !fileText(s.input)) err(cw, `a chamber claim needs forecast.sim {input, draws of at least ${V6.sim_min_draws}, p} from scripts/refdata/election-sim.mjs, with the input file committed`);
+    else if (Math.abs(c.probability - s.p) > V5.election_model_tolerance && !nonEmpty(s.note)) err(cw, `published ${c.probability} is more than ${V5.election_model_tolerance * 100} points from the simulation (${s.p}); forecast.sim.note must give the reason`);
+  }
+}
+function checkV6Edition(ed, w) {
+  const sa = ed.meta?.source_access;
+  const share = (a, b) => (b > 0 ? a / b : 1);
+  if (!sa || typeof sa.reference?.read !== 'number' || typeof sa.reference?.total !== 'number' || typeof sa.factcheck?.opened !== 'number' || typeof sa.factcheck?.total !== 'number' || typeof sa.limited !== 'boolean') err(w, 'meta.source_access {reference: {read, total}, factcheck: {opened, total}, limited} required');
+  else if (!sa.limited && Math.min(share(sa.reference.read, sa.reference.total), share(sa.factcheck.opened, sa.factcheck.total)) < V6.source_access_min_share) err(w, `under ${V6.source_access_min_share * 100}% of sources were read: meta.source_access.limited must be true, so readers see it`);
+  const run = ed.meta?.run;
+  if (!run || !isStamp(run.started_at) || !isStamp(run.finished_at) || typeof run.agents !== 'number' || typeof run.searches !== 'number') err(w, 'meta.run {started_at, finished_at, agents, searches} required');
+  for (const s of ed.stories || []) if (!/^[a-z0-9-]+$/.test(s.event_key || '') || !/^[a-z0-9-]+$/.test(s.case_key || '')) err(`${w} story ${s.id}`, 'event_key and case_key required (kebab-case; case_key stays the same across editions: read the last edition)');
+}
 
 // ---------- method version 5 (edition No. 13 on): lessons from the first 132 resolved claims ----------
 function checkV5(c, cw) {
@@ -345,6 +374,7 @@ function checkClaim(c, cw, frozen) {
   const v3 = ed && methodVersion(ed, cfg) >= 3;
   if (v3) { checkWindow(c, cw, frozen); if (!c.added || c.forecast) checkForecastV3(c, cw, frozen); }
   if (ed && methodVersion(ed, cfg) >= 5 && (!c.added || c.forecast)) checkV5(c, cw);
+  if (ed && methodVersion(ed, cfg) >= 6 && (!c.added || c.forecast)) checkV6Claim(c, cw);
   if (isInterval(c)) {
     if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
     else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');
@@ -408,6 +438,7 @@ for (const ed of editions) {
   { let need = null; for (const m of cfg.method_versions || []) if (m.version >= 3 && ed.number >= m.from) need = m.version;
     if (need !== null && ed.method_version !== need) err(w, `method_version: ${need} required for this edition`); }
   if (ver >= 4) checkSelectionV4(ed, w);
+  if (ver >= 6) checkV6Edition(ed, w);
 
   if (ed.number >= QUALITY_FROM) {
     const all = claimsOf(ed).filter((c) => !isInterval(c));
@@ -489,6 +520,7 @@ for (const ed of editions) {
         if (typeof r.probability !== 'number' || r.probability < pmin || r.probability > pmax) err(rw, 'probability out of range');
         else if (mc && ver >= 3 && Math.abs(r.probability - mc.probability) < (V3.revision_min_pp ?? 0.05) - 1e-9 && Math.abs(logit(r.probability) - logit(mc.probability)) < (V3.revision_min_logit ?? 0.5)) err(rw, 'change below the display threshold (5 points or 0.5 in log-odds): record it in checks, not as a revision');
       }
+      if (ver >= 6 && !['forecast', 'confirmation'].includes(r.kind)) err(rw, 'kind required: "confirmation" if the deciding news had already been reported, otherwise "forecast"');
       if (!nonEmpty(r.reason) || !nonEmpty(r.reason_cs)) err(rw, 'reason and reason_cs required: name the new fact');
       if (!Array.isArray(r.sources) || !r.sources.some((x) => /^https?:\/\//.test(x.url || ''))) err(rw, 'at least one source with a URL for the new fact');
     }
@@ -655,6 +687,16 @@ for (const ed of editions) {
 
 // Results due: a claim more than v5.due_hours past its deadline without a result (RESOLVER step 4).
 for (const o of overdueClaims(loadEditions(), V5.due_hours ?? 72)) (STRICT_DUE ? err : warn)(`resolutions/${o.edition}.json`, `claim ${o.claim} is ${o.hours} hours past its deadline without a result; resolve it from the best available evidence`);
+
+// Audit: a result in the fixed sample of a version 6 edition must be audited within v6.audit_due_days.
+{ const eds = loadEditions();
+  const done = new Set(auditRows(eds).map((r) => `${r.edition}:${r.claim}`));
+  for (const s of auditSample(eds, cfg)) {
+    if (done.has(`${s.edition}:${s.claim}`)) continue;
+    const ed = eds.find((e) => e.id === s.edition), r = resultsFor(s.edition).get(s.claim);
+    if (methodVersion(ed, cfg) >= 6 && Date.now() - Date.parse(r.resolved_at) > (V6.audit_due_days ?? 7) * 86400e3) (STRICT_DUE ? err : warn)(`audits/${s.edition}.json`, `claim ${s.claim} is in the audit sample and not audited (RESOLVER step 3c)`);
+  }
+  for (const a of loadAudits()) for (const e of a.entries || []) if (!['yes', 'no', 'measured', 'void', 'unresolved'].includes(e.outcome) || !nonEmpty(e.note) || !isStamp(e.at)) err(`audits/${a.file}`, `entry ${e.claim}: outcome, note and at required`); }
 
 for (const x of warnings) console.warn(`warning  ${x}`);
 for (const x of errors) console.error(`error    ${x}`);
