@@ -1,27 +1,27 @@
 {
   "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
-  "fitted_at": "2026-11-01T10:08:11Z",
-  "version": "2026-11-01",
-  "resolved": 115,
+  "fitted_at": "2026-11-02T04:12:34Z",
+  "version": "2026-11-02",
+  "resolved": 133,
   "thresholds": {
     "weighting": 120,
     "calibration": 50
   },
   "active": {
-    "weights": false,
+    "weights": true,
     "platt": false
   },
   "gate": {
-    "platt": "off: leave-one-out 0.1458 does not beat raw 0.1437"
+    "platt": "off: leave-one-out 0.1426 does not beat raw 0.1406"
   },
   "params": {
-    "method": "geo-odds",
+    "method": "calibrated",
     "weights": {
-      "base-rate": 1,
-      "evidence": 1,
-      "adversarial": 1,
-      "anchor": 1,
-      "outsider": 1
+      "base-rate": 1.003,
+      "evidence": 0.999,
+      "adversarial": 0.992,
+      "anchor": 1.011,
+      "outsider": 0.995
     },
     "platt": {
       "a": 0,
@@ -30,38 +30,38 @@
   },
   "forecasters": {
     "base-rate": {
-      "n": 115,
-      "brier": 0.14467684347826085
+      "n": 133,
+      "brier": 0.14175666917293234
     },
     "evidence": {
-      "n": 115,
-      "brier": 0.1447317565217391
+      "n": 133,
+      "brier": 0.1428928721804511
     },
     "adversarial": {
-      "n": 115,
-      "brier": 0.1483473043478261
+      "n": 133,
+      "brier": 0.14518676691729318
     },
     "anchor": {
-      "n": 115,
-      "brier": 0.14384306086956516
+      "n": 133,
+      "brier": 0.13922896240601496
     },
     "outsider": {
-      "n": 115,
-      "brier": 0.147148452173913
+      "n": 133,
+      "brier": 0.1440997894736842
     }
   },
   "diagnostics": {
     "raw_ensemble": {
-      "brier": 0.1437,
-      "log": 0.4421
+      "brier": 0.1406,
+      "log": 0.4325
     },
     "published": {
-      "brier": 0.1433,
-      "log": 0.4404
+      "brier": 0.1401,
+      "log": 0.4294
     },
     "platt_leave_one_out": {
-      "brier": 0.1458,
-      "log": 0.4428
+      "brier": 0.1426,
+      "log": 0.4306
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+ "edition": "2026-11-02",
+ "checked_at": "2026-11-02T05:20:00+01:00",
+ "procedure": "coverage-1",
+ "unreachable": [
+  "Wikipedia Portal:Current events/2026 November 1 (fetch permission not granted)",
+  "Reuters World and AP (not attempted; blocked in earlier runs)"
+ ],
+ "note": "Lists used: (c) ČT24 summary of Sunday 1 Nov (six items) and the ČTK 'Přehled zpráv' listing, which showed only the 18 newest items of 1 Nov (from about 19:00). Lists (a) and (b) are missing and the ČTK list is partial, so this count is a lower bound. Items in one list only did not qualify: Ukraine's strike on the Kstovo refinery and Russian strikes on Vinnytsia and the grid (ČT24; war covered as ua-war), the end of the Oleshky truce with Russia refusing to extend it (ČTK; covered as ua-war), the coalition on a fixed-time vote on public media (ČT24; covered as cz-media-strike), former Polish Constitutional Tribunal presidents backing the leadership change (ČT24), Šťastný on Russian hockey teams (ČT24), a private plane crash in Florida, Trump–Netanyahu call on Iran, Prostějov and Zlín coalitions (ČTK). Sport is excluded.",
+ "events": [
+  {
+   "title": "Bulgaria: Iliana Yotova wins the presidential runoff against Andrei Gyurov, exit polls show",
+   "scope": "europe",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/bulhari-ve-druhem-kole-prezidentskych-voleb-rozhoduji-o-hlave-statu-379192",
+   "status": "covered",
+   "story": "bg-runoff"
+  },
+  {
+   "title": "France: firebomb attack on a gendarme at Saturday's protests investigated as attempted murder",
+   "scope": "europe",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/utok-na-cetniky-pri-demonstracich-vysetruji-ve-francii-jako-pokus-o-vrazdu-379198",
+   "status": "missed",
+   "note": "Not announced in advance; follow-up to the 31 Oct protests, which had no story in this edition. No sweep gap. The ČTK item (2895743) was seen as a source in the 2026-11-04 planning file, outside the part of the listing read."
+  }
+ ]
+}
