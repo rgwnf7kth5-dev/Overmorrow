@@ -1,0 +1,547 @@
+{
+  "edition": "2026-11-04",
+  "frozen_at": "2026-11-02T12:47:00+01:00",
+  "revisions": [
+    {
+      "claim": "cz-diesel-cap-2",
+      "probability": 0.78,
+      "kind": "forecast",
+      "reason": "Brent fell on Monday 2 November, to about $108.40 at 09:58 GMT against a Friday settlement of 113.43, on hopes of US–Iran negotiations, and Monday's prices enter the cap for Wednesday while the dearer days of 27 and 29 October drop out; no gasoil price for Monday could be read, so the evidence is mixed. New ensemble: base-rate 0.85, evidence 0.78, adversarial 0.76, anchor 0.81, outsider 0.66; geometric mean of odds 0.778.",
+      "reason_cs": "Ropa Brent v pondělí 2. listopadu zlevnila na zhruba 108,40 dolaru v 10:58 SEČ oproti páteční závěrečné ceně 113,43 dolaru, a to díky nadějím na jednání USA s Íránem. Pondělní ceny vstoupí do stropu na středu a vypadnou z něj dražší dny 27. a 29. října. Pondělní cenu plynového oleje se nepodařilo zjistit, důkazy tedy nejsou jednoznačné. Nový soubor odhadů: základní míra 0,85, důkazy 0,78, oponent 0,76, kotva 0,81, outsider 0,66; geometrický průměr šancí 0,778.",
+      "sources": [
+        {
+          "title": "Flux: Brent falls to $108 on renewed US-Iran negotiation hopes (2 Nov 2026)",
+          "url": "https://www.flux.live/reports/brent-falls-to-108-on-renewed-us-iran-negotiation-hopes/"
+        },
+        {
+          "title": "Tradingkey: Brent down 2.00% on Nov 2",
+          "url": "https://www.tradingkey.com/news/market-movers/262263302-market-movers-ukoil-20261102"
+        }
+      ]
+    },
+    {
+      "claim": "fr-recettes-1",
+      "probability": 0.03,
+      "kind": "forecast",
+      "reason": "On the morning of 2 November about 1,450 amendments to the revenue part were still pending by LCP's count, so Tuesday's solemn vote, still on the agenda, looks hard to hold, and a postponement resolves no, as would rejection. New ensemble: base-rate 0.015, evidence 0.025, adversarial 0.03, anchor 0.03, outsider 0.10; geometric mean of odds 0.032.",
+      "reason_cs": "Ráno 2. listopadu zbývalo podle počtu LCP projednat zhruba 1450 pozměňovacích návrhů k příjmové části, takže úterní slavnostní hlasování, které je stále na programu, bude obtížné stihnout. Odklad i zamítnutí znamenají u této předpovědi ne. Nový soubor odhadů: základní míra 0,015, důkazy 0,025, oponent 0,03, kotva 0,03, outsider 0,10; geometrický průměr šancí 0,032.",
+      "sources": [
+        {
+          "title": "Politique Matin: Budget 2027, 1 450 amendements encore à examiner, le vote prévu mardi sous pression (2 Nov 2026, 07:39)",
+          "url": "https://www.politiquematin.fr/budget-2027-1450-amendements-vote-3-novembre-calendrier"
+        },
+        {
+          "title": "Entrevue: Budget 2027, les députés à la veille d'un vote décisif (2 Nov 2026, 08:44)",
+          "url": "https://entrevue.fr/politique/budget-2027-les-deputes-a-la-veille-dun-vote-decisif-le-gouvernement/"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "cz-rally-1",
+      "at": "2026-11-02T12:47:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:47:00+01:00",
+          "p_blind": 0.43,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Organisers claimed tens of thousands at 2 of 4 comparable 2026 Prague rallies (only one in ČTK copy), so I start near even, trim for the staff organisers and the ČTK/ČT24 reporting test, add back for the converging student marches, and take about 5% off for the rally not happening.",
+          "p": 0.32,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "On the shared facts ČTK or ČT24 carried an attributed figure of 10,000 or more for only 1 of 4 comparable Prague rallies, since even the large 25 Oct crowd got only 'tisíce' in ČTK, so I start near one in three, add a little for the strike-day salience and student marches, take a little off for an inexperienced staff organiser and strike-limited ČT24, and discount about 4% for the rally not happening.",
+          "p_held": 0.95,
+          "p_if_held": 0.45,
+          "rounds": [
+            {
+              "p": 0.43,
+              "at": "2026-11-02T12:37:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:47:00+01:00",
+          "p_blind": 0.45,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "A strike-day rally fed by many student marches could well top 10,000, but the 25 Oct Prague protest was only reported as thousands and YES needs an explicit organiser or police figure carried by ČTK or ČT24 that evening.",
+          "p": 0.33,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "A crowd of 10,000 is quite possible with the strike and student marches, but ČTK or ČT24 carried a qualifying organiser figure for only one of the four earlier Prague rallies, even omitting the organisers' 'tens of thousands' on 25 Oct, and this staff-run rally has no published size, stage or notified number, with police rarely giving a figure.",
+          "rounds": [
+            {
+              "p": 0.42,
+              "at": "2026-11-02T12:37:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-02T12:47:00+01:00",
+          "p_blind": 0.42,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Strike-day peak with five student marches converging on Wenceslas Square makes a big crowd likely, but the criterion needs a ČTK/ČT24-reported organiser or police figure of 10,000+, and an inexperienced staff initiative plus ČTK's habit of writing 'tisíce' and police silence leave the attributed-number step close to a coin flip.",
+          "p": 0.36,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "The shared fact base shows no expected attendance, notified size or police figure anywhere for 3 Nov, and of the four comparable Prague rallies ČTK itself carried an organiser figure of 'desítky tisíc' only once (5 May), with the 25 Oct organiser claim appearing only in Seznam Zprávy, so even though a strike-day crowd fed by five student marches will probably be large, the chance that a staff initiative supplies a 10,000+ number and ČTK or a striking ČT24 carries it by 23:59 is somewhat below even.",
+          "p_held": 0.93,
+          "p_if_held": 0.45,
+          "rounds": [
+            {
+              "p": 0.42,
+              "at": "2026-11-02T12:37:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:47:00+01:00",
+          "p": 0.34,
+          "inputs": [
+            "signals",
+            "reference-data",
+            "dossier",
+            "overnight-facts",
+            "union-of-facts"
+          ],
+          "reason": "The log-crowd model still gives about 0.63 for at least 10,000, but the shared facts show a qualifying carried figure in only one of the earlier Prague rallies (5 May, not 25 Oct, when ČTK's text had no attribution), so I lower the chance of an attributed figure reaching ČTK or ČT24 by midnight to about 0.55, with a first-time staff organiser and ČT24 on strike as further drags and no registered size or expected attendance found.",
+          "rounds": [
+            {
+              "p": 0.42,
+              "at": "2026-11-02T12:37:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-02T12:47:00+01:00",
+          "p_blind": 0.8,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Student marches, a media strike and a Wenceslas Square rally make an organiser claim of tens of thousands likely, and organisers' figures run high.",
+          "p": 0.5,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "union-of-facts"
+          ],
+          "reason": "A crowd of 10,000 or more is likely with students and the strike, but ČTK usually writes an unattributed \"tisíce\" and only 2 of 4 earlier Prague rallies this year got a carried organiser figure, so the reporting step is a coin flip.",
+          "rounds": [
+            {
+              "p": 0.8,
+              "at": "2026-11-02T12:37:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        }
+      ],
+      "combined": 0.3682,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.18,
+      "market_search": {
+        "at": "2026-11-02T12:28:00+01:00",
+        "checked": [
+          "markets.mjs search \"Texas Senate\" (timed out; market search not re-run this afternoon)"
+        ],
+        "note": "Forecasters read the morning signals files of these claims, which hold no market on the question itself; prices were not re-read."
+      },
+      "disagreement": {
+        "cause": "inputs",
+        "note": "First round spread 0.38: the outsider had not seen how ČTK and ČT24 carried figures; all five reran once with the union of facts. A research agent (12:35–12:40 CET) found no expected attendance or registered size. The remaining spread of 0.18 stands: evidence mixed."
+      }
+    },
+    {
+      "claim": "cz-diesel-cap-2",
+      "at": "2026-11-02T12:37:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.85,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "October caps fell on 10 of 21 days, but the days swapped in the formula compare a sharply weaker Monday market with higher late-October inputs, which adds about 1.9 in log-odds; publication risk is negligible under the decree.",
+          "p": 0.85,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No market covers the Czech cap, so the estimate stays at the even October base rate shifted up about 1.9 log-odds for Monday's weaker crude entering the formula in place of higher late-October inputs.",
+          "p_held": 0.99,
+          "p_if_held": 0.86
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.6,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Crude fell about 2-3% on Monday, and that day enters the three-day window while late-October days drop out, which leans lower though the window's rolling structure and the latest rises in diesel leave real doubt.",
+          "p": 0.78,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The comparison swaps 29 Oct offers and 27 Oct Platts for 3 Nov offers and 2 Nov Platts, and with diesel proxies already down by 30 Oct and crude about 5% below 29 Oct on Monday the cap should fall unless Tuesday brings a sharp rebound, the main risk alongside a tie or missed publication."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.76,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "The 4 Nov cap swaps out the 29 Oct wholesale offers and 27 Oct Platts day, both near the late-October peak, for 3 Nov offers and 2 Nov Platts after crude fell about 4-5% on US-Iran talk hopes, so all four formula columns point down; the case against is a Tuesday rebound, sticky ČEPRO offers, a tight gasoil crack and a rounding tie.",
+          "p": 0.76,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No market tracks the Czech cap, so the formula arithmetic stands: the days dropping out (29 Oct offers, 27 Oct Platts) sit near the October high while the days coming in follow a Monday crude slide of several percent, so a fall is the likelier outcome; the strongest NO case is a Tuesday reversal if the US-Iran talk hopes fade with Hormuz still shut and a tanker just hit, plus wholesale offers that lag and a rounding tie, which together keep roughly a quarter on NO.",
+          "p_held": 0.98,
+          "p_if_held": 0.78
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p": 0.81,
+          "inputs": [
+            "signals",
+            "reference-data",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "No market matches, so the release model with the dossier's 0.31 CZK/l daily sd and an estimated drift of about -0.30 gives roughly 0.83 for a fall of at least one haléř, because Brent's fall of 2 percent or more on Monday means the 29 Oct and 27 Oct days dropping out are replaced by much cheaper ones, trimmed slightly for the unseen gasoil crack, a Tuesday rebound and a small non-publication risk."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.66,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Brent fell about 2 percent on Monday on US-Iran talk hopes, and the Wednesday cap should reflect that, though a tie or a bounce is possible.",
+          "p": 0.66,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Signals add nothing on the Czech cap, so the view stays that Monday's oil fall pushes Wednesday's cap lower."
+        }
+      ],
+      "combined": 0.7779,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.19,
+      "market_search": {
+        "at": "2026-11-02T12:28:00+01:00",
+        "checked": [
+          "markets.mjs search \"Texas Senate\" (timed out; market search not re-run this afternoon)"
+        ],
+        "note": "Forecasters read the morning signals files of these claims, which hold no market on the question itself; prices were not re-read."
+      },
+      "research": {
+        "at": "2026-11-02T12:40:00+01:00",
+        "question": "Actual move of European diesel on 2 Nov against the days dropping out of the formula",
+        "finding": "No gasoil, ULSD or USD/CZK figure for 2 Nov could be read; only Brent below $111. The spread of 0.19 stands: evidence mixed.",
+        "sources": [
+          "data/dossiers/2026-11-04/afternoon-research.md"
+        ]
+      }
+    },
+    {
+      "claim": "fr-recettes-1",
+      "at": "2026-11-02T12:37:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.015,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Recent Part 1 votes have all been rejected with no majority in sight, and with about 1,450 amendments pending on Monday morning the Tuesday vote itself is unlikely to take place, far beyond the 13% class slip rate.",
+          "p": 0.015,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No market covers this vote and the related year-end 49.3 market leans to no adoption by vote, so rejection precedents plus the 1,450 pending amendments keep this very low.",
+          "p_held": 0.25,
+          "p_if_held": 0.05
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.05,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "With about 1,450 amendments left a day before the slot, the vote is unlikely to happen on Tuesday, and if it did there is no assured majority for adoption.",
+          "p": 0.025,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "About 1,450 amendments make a Tuesday vote unlikely, and even if held the recent precedents of rejected first parts, a committee rejection and no majority make adoption improbable."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.03,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "About 1,450 amendments were still pending on Monday morning against a pace of roughly 400 a day, so the 3 Nov slot itself is unlikely to hold, and even if it does the last two Part 1 votes were crushing rejections and no group has signalled abstention; the only YES path is RN or PS abstaining to avoid a special law.",
+          "p": 0.03,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Markets price 49.3 at some point and a budget by year-end around even, which says nothing about Tuesday specifically; the strongest YES case is that RN prefers an imperfect budget to a special law and the text is now amended in opposition's favour, but with roughly 1,450 amendments left on Monday the vote itself will most likely slide past 3 Nov, and if held the precedents are 404-1 and 115-1 rejections with the government openly fearing defeat.",
+          "p_held": 0.25,
+          "p_if_held": 0.12
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p": 0.03,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "No market covers this vote and the related budget and 49.3 markets only show a hard passage, so I multiply about 0.4 that a vote happens on 3 Nov with about 1,450 amendments pending by about 0.08 that it is then adopted, given the 404 to 1 and 115 to 1 rejections of comparable parts and no stable majority."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.1,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "About 1,450 amendments remain, the schedule looks hard to keep and the government has no stable majority, so postponement or rejection is much more likely than adoption.",
+          "p": 0.1,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Thin markets suggest a 49.3 is more likely than not at some point, which would also make this NO, and adoption by vote on the day stays unlikely."
+        }
+      ],
+      "combined": 0.0323,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.085,
+      "market_search": {
+        "at": "2026-11-02T12:28:00+01:00",
+        "checked": [
+          "markets.mjs search \"Texas Senate\" (timed out; market search not re-run this afternoon)"
+        ],
+        "note": "Forecasters read the morning signals files of these claims, which hold no market on the question itself; prices were not re-read."
+      }
+    },
+    {
+      "claim": "pl-tk-1",
+      "at": "2026-11-02T12:37:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.04,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "The loose one-day-action class is about 10%, and it drops further because the agenda is the budget, sources say the immunity files cannot reach Tuesday, the quorum is disputed and some of the eight judges are wavering.",
+          "p": 0.03,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The thin market on charges by year end sits at about 10%, which fits consent on Tuesday being very unlikely given the budget-only agenda, the disputed quorum and the unread files.",
+          "p_held": 0.75,
+          "p_if_held": 0.04
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.05,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Immunity may not even reach Tuesday's agenda, judges still need to review the files, and the quorum depends on a contested count with some of the eight wavering.",
+          "p": 0.03,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Unofficial reports say immunity goes to a later Assembly, judges have not reviewed the 50 volumes, a month-long deadline removes urgency, and the quorum relies on a contested count with the old camp boycotting and some of the eight wavering."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.07,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "The convening order covers only the 2027 budget, reporting says the immunity motions will go to a later Assembly because judges need time with 50 volumes of files, the old camp is boycotting so a 10-judge quorum needs a contested base of 12, and some of the eight are wavering; the YES path is the new majority counting quorum from 12 and voting anyway.",
+          "p": 0.07,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "A thin market on charges by year-end sits near 10 percent, consistent with consent being slow rather than imminent; the strongest YES case is that the new majority holds the building, faces a one-month statutory clock and could count quorum from 12 and vote the same day, but the agenda is budget-only, several reports say the files cannot be read by Tuesday, the boycott leaves the quorum contested and some of the eight are wavering, so a same-day immunity vote is a long shot.",
+          "p_held": 0.14,
+          "p_if_held": 0.5
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p": 0.03,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "The thin 'charged by December 31' market near 0.10 is a loose ceiling on consent coming at all this year, and 3 Nov is much less likely still because WP reports immunity is undecided and some sources see no chance of it reaching the agenda, the budget is the only certain item, and the quorum is disputed with some of the eight wavering."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-02T12:37:00+01:00",
+          "p_blind": 0.1,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Immunity may not be on Tuesday's agenda and the quorum is disputed, so a resolution on the day is unlikely.",
+          "p": 0.09,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The thin market price on charges is low and nothing shows immunity reaching Tuesday's agenda."
+        }
+      ],
+      "combined": 0.0445,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.06,
+      "market_search": {
+        "at": "2026-11-02T12:28:00+01:00",
+        "checked": [
+          "markets.mjs search \"Texas Senate\" (timed out; market search not re-run this afternoon)"
+        ],
+        "note": "Forecasters read the morning signals files of these claims, which hold no market on the question itself; prices were not re-read."
+      }
+    }
+  ]
+}
