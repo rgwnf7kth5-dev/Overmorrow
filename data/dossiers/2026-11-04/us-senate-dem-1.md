@@ -61,3 +61,6 @@
 - The Federalist (J. H. Anderson), 28 Oct 2026: average Senate polling misses 2016–2024: Republicans better than expected in ME 4.3, IA 3.6, MI 2.5, NC 1.7, TX 1.0, OH 1.0; Democrats better in NH 3.4, MN 2.3, GA 0.3. https://thefederalist.com/2026/10/28/what-the-midterm-senate-polls-wont-tell-you-and-where-they-might-be-wrong/
 - Newsweek, 1 Oct 2026 (presidential, 270toWin): IA 2024 Trump +4.7 avg vs +13; OH +7.7 vs just over +11; TX +7.4 vs nearly +14. https://www.newsweek.com/democrat-optimism-in-six-senate-races-may-be-a-mirage-what-the-polls-reveal-12512862
 - "The State of the Polls, 2019" (repost): Senate polling bias "is not very consistent from cycle to cycle"; average error 5.3 pts, average bias D+0.1 across all years since 1998; 2017–19 error 4.3. https://www.goodreads.com/author_blog_posts/19102010-the-state-of-the-polls-2019
+
+## Morning red team (2 Nov, 05:15–05:25 CET)
+- Georgia's two-name ballot makes a runoff very unlikely; the runoff discount in some evening reasons was stale. Pending clause tightened to match the House claim.

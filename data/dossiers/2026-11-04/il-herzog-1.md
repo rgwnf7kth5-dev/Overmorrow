@@ -44,3 +44,7 @@ Question: does the Residence publish the faction timetable before the day it rec
 - **2022, 9 Nov reports:** JPost article-721875 (9 Nov 2022 09:52) and JNS (9 Nov 2022 11:06, "After receiving official election results, Herzog sets date to grant mandate") — https://www.jpost.com/breaking-news/article-721875, https://jns.org/israeli-president-receives-official-election-results-2 (read 18:32Z, 18:43Z). The Jewish Press "Schedule of consultations (subject to change)" page has no timestamp — https://jewishpress.com/news/elections-news/schedule-president-herzog-to-begin-consultations-with-knesset-party-representatives/2022/11/09.
 - **2019 and 2021:** no source on when those schedules were released was found.
 - Nothing found settles the question.
+
+## Morning red team (2 Nov, 05:15–05:25 CET)
+- Times of Israel, 9 Nov 2022 09:23, gives only a general order of meetings, no timetable: https://www.timesofisrael.com/herzog-to-begin-formal-consultations-on-who-should-form-new-coalition/
+- The list dated 8 Nov 2022 (JPost 721778) says "will meet today", and that day was 9 Nov, so it was probably added on results day. Every other datable 2022 schedule report is from 9 Nov.
