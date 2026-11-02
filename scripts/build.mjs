@@ -24,6 +24,7 @@ const T = {
     latest: 'Latest',
     notice: (d, resolved) => `<b>Every report in this edition is a forecast.</b> Each describes an event scheduled or expected for ${d} and states the outcome we consider most likely, with its probability. The basis line under each report names what it rests on${resolved ? '. Stamps show how each forecast turned out' : ''}.`,
     results: 'Results',
+    spider: 'Search the paper',
     wentOurWay: (h, n) => `${h} of ${n} scored calls went our way`,
     noScored: 'No scored claims yet',
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
@@ -110,6 +111,7 @@ const T = {
     latest: 'Nejnovější',
     notice: (d, resolved) => `<b>Všechny zprávy v tomto vydání jsou predikce.</b> Každá popisuje událost naplánovanou nebo očekávanou na ${d} a uvádí výsledek, který považujeme za nejpravděpodobnější, s jeho pravděpodobností. Řádek „Podklad“ pod zprávou říká, z čeho vychází${resolved ? '. Razítka ukazují, jak predikce dopadly' : ''}.`,
     results: 'Výsledky',
+    spider: 'Hledat v novinách',
     wentOurWay: (h, n) => `${h} z ${n} hodnocených tipů vyšlo`,
     noScored: 'Zatím žádné hodnocené predikce',
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
@@ -341,7 +343,7 @@ function layout(L, { title, nav, header, main, description, path: pagePath }) {
 <body>
 <div class="page">
 ${header}
-<nav class="nav" aria-label="Sections">${keys.map((k, i) => `<a href="${link(L, hrefs[i])}"${k === nav ? ' aria-current="page"' : ''}>${L.nav[i]}</a>`).join('')}<a class="lang" href="${link(other, pagePath)}" hreflang="${L.otherLang}">${L.other}</a></nav>
+<nav class="nav" aria-label="Sections">${keys.map((k, i) => `<a href="${link(L, hrefs[i])}"${k === nav ? ' aria-current="page"' : ''}>${L.nav[i]}</a>`).join('')}<button class="spiderbtn" type="button" data-spider title="${L.spider}" aria-label="${L.spider}"><svg viewBox="0 0 28 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M11 8 6 3 1 5M10.5 10 5 8 1 11M10.5 11 5 13 2 17M11 12 7 16 4 19M17 8 22 3 27 5M17.5 10 23 8 27 11M17.5 11 23 13 26 17M17 12 21 16 24 19"/></g><ellipse cx="14" cy="12.5" rx="3.6" ry="4.5" fill="currentColor"/><circle cx="14" cy="6.5" r="2.3" fill="currentColor"/></svg></button><a class="lang" href="${link(other, pagePath)}" hreflang="${L.otherLang}">${L.other}</a></nav>
 ${main}
 ${signupBox(L)}
 <footer>${L.footer.map(([h, p]) => `<div><h4>${h}</h4><p>${fill(p, L)}</p></div>`).join('')}</footer>
@@ -372,6 +374,7 @@ window.OMcols = (function () {
   return { reset: reset, run: run };
 })();
 </script>
+<script src="/spider.js" defer></script>
 </body>
 </html>
 `;
@@ -499,7 +502,7 @@ function editionMain(original, L, isLatest = false) {
   const tone = (st) => storyTone(st, results);
   const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
   const photos = photosFor(original.id, L === T.cs ? 'cs' : 'en');
-  const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), photo: photos[st.id], ...extra })}</article>`; };
+  const art = (st, cls, wide, extra = {}) => { const t = tone(st); return `<article id="s-${esc(st.id)}" class="story${cls ? ` ${cls}` : ''}${t.cls}"${t.style}>${storyHtml(st, results, show, L, { wide, corrections: fixesFor.get(st.id), photo: photos[st.id], ...extra })}</article>`; };
   // The weather box was dropped on 24 October 2026: a forecast of D+1 weather reads as a report of weather already past.
   const w = null;
   const weather = w ? `<div class="box"><h4>${esc(w.title)}</h4><div class="wx">${w.rows.map(([a, b]) => `<span>${esc(a)}</span><span>${esc(b)}</span>`).join('')}</div>${w.note ? `<p class="note">${esc(w.note)}</p>` : ''}</div>` : '';
@@ -1077,11 +1080,39 @@ function md(src) {
   return out;
 }
 
+// ---------- search ----------
+/** The Spider's index: every story of every edition, with its claims and results, plus the forecast board. Fetched only when the Spider is opened. */
+function searchIndex(editions, L, lang) {
+  const stories = [];
+  for (const original of editions) {
+    const ed = localise(original, lang);
+    const results = resultsFor(ed.id);
+    for (const st of ed.stories) {
+      stories.push({ e: ed.id, d: ed.edition_date, id: st.id, k: st.kicker, h: st.headline, s: st.standfirst || '', t: (st.body || []).join(' '),
+        c: st.claims.map((cl) => {
+          const r = results.get(cl.id);
+          const near = closeness(cl, r);
+          const out = { l: cl.label, x: cl.text || '', p: isInterval(cl) ? null : cl.probability };
+          if (isInterval(cl)) out.v = ivNum(cl.quantiles.q50, cl, L);
+          out.o = r ? r.outcome : 'pending';
+          out.st = stampFor(r, L, cl).replace(/<[^>]+>/g, '');
+          if (near !== null) out.hue = hue(near);
+          if (r && (r.outcome === 'yes' || r.outcome === 'no') && !isInterval(cl)) out.y = (cl.probability > 0.5) === (r.outcome === 'yes') ? 1 : 0;
+          return out;
+        }) });
+    }
+  }
+  const watch = loadWatchlist().questions.filter((q) => !q.result).map((q) => ({ topic: qText(q, lang, 'topic'), q: qText(q, lang, 'question'), p: lastH(q)?.p })).filter((q) => typeof q.p === 'number');
+  const newest = editions[editions.length - 1].id;
+  const tips = [...new Set(stories.filter((s) => s.e === newest).map((s) => s.k.split(' · ')[0]))].filter((k) => k.length <= 24).slice(0, 5);
+  return { editions: editions.length, tips, stories, watch };
+}
+
 // ---------- build ----------
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'site', 'style.css'), path.join(DIST, 'style.css'));
-for (const f of ['logo.svg', 'favicon.svg']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
+for (const f of ['logo.svg', 'favicon.svg', 'spider.js']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
 if (fs.existsSync(path.join(ROOT, 'site', 'photos'))) fs.cpSync(path.join(ROOT, 'site', 'photos'), path.join(DIST, 'photos'), { recursive: true });
 
 const editions = loadEditions();
@@ -1105,6 +1136,7 @@ for (const lang of LANGS) {
   write(`${pre}watch/index.html`, layout(L, { title: `${L.watch.h} — The Overmorrow`, nav: 'watch', header: plain, main: watchPage(L), path: '/watch/' }));
   write(`${pre}archive/index.html`, layout(L, { title: `${L.archive.h} — The Overmorrow`, nav: 'archive', header: plain, main: archivePage(editions, L), path: '/archive/' }));
   fs.writeFileSync(path.join(DIST, `${pre}feed.xml`), feedXml(editions, L));
+  fs.writeFileSync(path.join(DIST, `${pre}search.json`), JSON.stringify(searchIndex(editions, L, lang)));
   write(`${pre}accuracy/index.html`, layout(L, { title: `${L.acc.h} — The Overmorrow`, nav: 'accuracy', header: plain, main: accuracyPage(editions, L), path: '/accuracy/' }));
   const mdFile = path.join(ROOT, lang === 'en' ? 'METHODOLOGY.md' : 'METHODOLOGY.cs.md');
   const method = fs.readFileSync(fs.existsSync(mdFile) ? mdFile : path.join(ROOT, 'METHODOLOGY.md'), 'utf8');

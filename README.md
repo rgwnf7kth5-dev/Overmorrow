@@ -73,3 +73,7 @@ After an outside review the rules changed; see METHODOLOGY section 12. In short:
 ## Method version 4 (from edition No. 6, adopted 25 October 2026)
 
 Stories are chosen by news value; the biggest running stories of the day (`meta.running`, from the reference front pages in `config.v4.running_lists`) are covered with a claim on their next development; every story has a `topic` and at least three are `economy`; every edition carries 3–6 illustrative Commons photographs added with `node scripts/photos.mjs` (credits in `data/images/<edition>.json`).
+
+## Search: the Spider
+
+Type `spider` anywhere on the site, or use the small spider in the navigation (the only way in on a phone). `site/spider.js` draws the search overlay, taken over from How ANO Vote and redrawn in the paper's ink; credit to @rybinfx stays in the overlay. `scripts/build.mjs` writes `search.json` and `cs/search.json` on every build from all editions, their results and the open questions on the forecast board, so a new edition needs no extra step. The index is fetched only when the Spider is opened. Stories have anchors of the form `#s-<story id>`.
