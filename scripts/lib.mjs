@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -77,7 +78,8 @@ export function mergeUpdate(base) {
       c.quantiles = r.quantiles;
       continue;
     }
-    c.update = { probability: r.probability, reason: r.reason, reason_cs: r.reason_cs, sources: r.sources || [], frozen_at: up.frozen_at };
+    const kind = r.kind || revisionClasses()[`${ed.id}:${r.claim}`]?.kind || 'forecast';
+    c.update = { probability: r.probability, reason: r.reason, reason_cs: r.reason_cs, sources: r.sources || [], frozen_at: up.frozen_at, kind };
     c.probability = r.probability;
   }
   if ((up.added || []).length) {
@@ -146,7 +148,8 @@ export const logLoss = (p, outcome) => -Math.log(outcome === 'yes' ? p : 1 - p);
 /**
  * Scored records (yes/no only) across the given editions.
  * track 'latest': the last published probability (afternoon if revised or added, else morning);
- * track 'morning': morning probabilities only (afternoon-added claims are skipped).
+ * track 'morning': morning probabilities only (afternoon-added claims are skipped);
+ * track 'forecast': like 'latest', but a revision that only confirmed news already reported keeps the figure before it.
  */
 export function scoredClaims(editions, track = 'latest') {
   const rows = [];
@@ -155,7 +158,7 @@ export function scoredClaims(editions, track = 'latest') {
     for (const c of claimsOf(ed)) {
       const r = results.get(c.id);
       if (!r || (r.outcome !== 'yes' && r.outcome !== 'no')) continue;
-      const p = track === 'morning' ? c.morning : c.probability;
+      const p = track === 'morning' ? c.morning : track === 'forecast' && c.update?.kind === 'confirmation' ? c.morning : c.probability;
       if (p === null || p === undefined) continue;
       rows.push({ ...c, probability: p, outcome: r.outcome, result: r });
     }
@@ -400,15 +403,17 @@ export function derivedProb(c, d) {
 }
 
 const mulberry = (a) => () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
-/** Independent events behind a set of claims: one per story (or per `event_key` when a story sets it). */
-export const eventKey = (r) => r.story?.event_key || `${r.edition?.id}:${r.story?.id}`;
+/** The occurrence a claim is resolved on (one vote, one release): set on the story, or from the label overlay. */
+export const eventKey = (r) => r.story?.event_key || labelOf(r.edition?.id, r.id).event || `${r.edition?.id}:${r.story?.id}`;
+/** The running story behind a claim, the same across editions: US–Iran talks are one case however many days they last. */
+export const caseKey = (r) => r.story?.case_key || labelOf(r.edition?.id, r.id).case || eventKey(r);
 /**
- * 90% interval of the mean Brier score by a cluster bootstrap: whole events are resampled, because several
- * claims on one election are not several independent experiences. Deterministic (fixed seed).
+ * 90% interval of the mean Brier score by a cluster bootstrap: whole running stories are resampled, because several
+ * claims on one election, or a week of claims on one negotiation, are not independent experiences. Deterministic.
  */
 export function brierInterval(rows, reps = 2000) {
   const groups = new Map();
-  for (const r of rows) { const k = eventKey(r); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(brier(r.probability, r.outcome)); }
+  for (const r of rows) { const k = caseKey(r); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(brier(r.probability, r.outcome)); }
   const gs = [...groups.values()];
   if (gs.length < 2) return null;
   const rnd = mulberry(20261024);
@@ -462,4 +467,82 @@ export function pendingClaims(editions, now = Date.now()) {
   const out = [];
   for (const ed of editions) { const res = resultsFor(ed.id); for (const c of claimsOf(ed)) if (!res.has(c.id) && c.resolves_by && Date.parse(c.resolves_by) < now) out.push({ edition: ed.id, claim: c.id, hours: Math.floor((now - Date.parse(c.resolves_by)) / 3600e3) }); }
   return out;
+}
+
+// ---------- method version 6: results audit, event keys, baseline, revision classes ----------
+export const AUDITS_DIR = path.join(ROOT, 'data', 'audits');
+const readOpt = (f, d) => (fs.existsSync(f) ? readJson(f) : d);
+const hash01 = (s) => { const h = crypto.createHash('sha256').update(s).digest(); return h.readUInt32BE(0) / 4294967296; };
+/** Audit files, one per edition: {edition, entries: [{claim, outcome, value?, evidence, note, at, model}]}. */
+export function loadAudits() {
+  if (!fs.existsSync(AUDITS_DIR)) return [];
+  return fs.readdirSync(AUDITS_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().map((f) => ({ file: f, ...readJson(path.join(AUDITS_DIR, f)) }));
+}
+/** The fixed audit sample: results whose hash falls under the audit share. */
+export function auditSample(editions, cfg) {
+  const share = cfg.v6?.audit_share ?? 0.1;
+  const out = [];
+  for (const ed of editions) for (const [claim, r] of resultsFor(ed.id)) if (r.outcome !== 'void' && hash01(`audit-1:${ed.id}:${claim}`) < share) out.push({ edition: ed.id, claim });
+  return out;
+}
+/** Audit entries compared with the recorded results; a number agrees within the claim's stated rounding. */
+export function auditRows(editions) {
+  const ids = new Set(editions.map((e) => e.id));
+  const rows = [];
+  for (const a of loadAudits()) {
+    if (!ids.has(a.edition)) continue;
+    const res = resultsFor(a.edition);
+    for (const e of a.entries || []) {
+      const r = res.get(e.claim);
+      if (!r || e.outcome === 'unresolved') { rows.push({ edition: a.edition, claim: e.claim, recorded: r?.outcome, audit: e.outcome, agrees: null, note: e.note }); continue; }
+      const same = r.outcome === 'measured' ? e.outcome === 'measured' && Math.abs(e.value - r.value) < 1e-9 : e.outcome === r.outcome;
+      rows.push({ edition: a.edition, claim: e.claim, recorded: r.outcome === 'measured' ? r.value : r.outcome, audit: e.outcome === 'measured' ? e.value : e.outcome, agrees: same, note: e.note });
+    }
+  }
+  return rows;
+}
+/** Overlay for editions published before version 6: event, case and baseline labels, never touching the edition files. */
+export const labelsFile = () => readOpt(path.join(ROOT, 'data', 'claim-labels.json'), { claims: {} });
+let _labels;
+export const labelOf = (edition, claim) => { _labels ??= labelsFile(); return _labels.claims[`${edition}:${claim}`] || {}; };
+/** Which revisions confirmed an outcome already reported, rather than forecast one (overlay for old update files). */
+export const revisionClasses = () => readOpt(path.join(ROOT, 'data', 'revision-classes.json'), {});
+
+/** Which outcome a mechanical "nothing surprising happens" reader expects: yes, no or unclear. */
+export const statusQuoOf = (r) => r.forecast?.baseline?.status_quo || labelOf(r.edition?.id, r.id).status_quo || 'unclear';
+/**
+ * The persistence baseline, fixed in advance: for each edition, the share of status-quo outcomes among results
+ * known before its freeze (with a Beta prior), given to the status-quo side of the claim; 0.5 where it is unclear.
+ * Returns Map 'edition:claim' -> p. It learns only from the past, like a real forecast.
+ */
+export function baselineMap(rows, cfg) {
+  const [a, b] = cfg.v6?.baseline_prior || [3, 1];
+  const known = rows.filter((r) => statusQuoOf(r) !== 'unclear').map((r) => ({ at: Date.parse(r.result.resolved_at), hit: (r.outcome === 'yes') === (statusQuoOf(r) === 'yes') }));
+  const out = new Map();
+  for (const r of rows) {
+    const sq = statusQuoOf(r);
+    const past = known.filter((k) => k.at < Date.parse(r.edition.frozen_at));
+    const share = (a + past.filter((k) => k.hit).length) / (a + b + past.length);
+    out.set(`${r.edition.id}:${r.id}`, sq === 'yes' ? share : sq === 'no' ? 1 - share : 0.5);
+  }
+  return out;
+}
+
+/**
+ * Chronological test of a fitted procedure: each edition is scored with parameters fitted only on results known
+ * before its freeze. fit(train) returns a function (row) => probability, or null while there is too little to fit.
+ * The reference is scored on the same claims. Returns {n, editions, brier, reference} or null.
+ */
+export function prequential(rows, fit, reference, minTrain) {
+  const eds = [...new Map(rows.map((r) => [r.edition.id, r.edition])).values()];
+  let n = 0, b = 0, c = 0, used = 0;
+  for (const ed of eds) {
+    const train = rows.filter((r) => Date.parse(r.result.resolved_at) < Date.parse(ed.frozen_at));
+    if (train.length < minTrain) continue;
+    const f = fit(train);
+    if (!f) continue;
+    used++;
+    for (const r of rows.filter((x) => x.edition.id === ed.id)) { b += brier(Math.min(0.99, Math.max(0.01, f(r))), r.outcome); c += brier(reference(r), r.outcome); n++; }
+  }
+  return n ? { n, editions: used, brier: b / n, reference: c / n } : null;
 }

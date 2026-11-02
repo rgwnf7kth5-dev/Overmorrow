@@ -25,7 +25,8 @@ For each morning claim with a material new fact:
 2. *(v3)* **Store every recomputation** in `checks` (claim, `at`, `agents`, `combined`, and the market price read at the same time if one exists), whatever its size.
 3. Publish a revision only if the new combined probability differs from the morning figure by at least `v3.revision_min_pp` (5 points) **or** `v3.revision_min_logit` (0.5 in log-odds; 96% → 99% qualifies). Below that the morning figure stands for readers, but the check is on record.
 4. *(v3)* Interval claims may be revised (`quantiles` instead of `probability`); revise the binary claims derived from them in the same update so they stay consistent.
-5. Record the revision with `claim`, `probability`, `reason` (one sentence in English naming the new fact), `reason_cs` (the same in Czech, house rules apply), and `sources` (at least one URL).
+5. *(v6)* Set `kind`: `confirmation` if the deciding news had already been reported when you revised (the vote took place, the cabinet is reported to have approved, and only the official record is missing), otherwise `forecast`. In doubt, `confirmation`. The forecast score leaves confirmations out.
+5a. Record the revision with `claim`, `probability`, `reason` (one sentence in English naming the new fact), `reason_cs` (the same in Czech, house rules apply), and `sources` (at least one URL).
 6. Exclusive sets must still sum to 100% after revision (or at most 100% for a set marked `set_exhaustive: false`): revise every member of the set together.
 
 Do not revise a claim because of opinion or commentary alone. Do not touch headlines or body text of morning stories; the revision line under the likelihood bar is the only change readers see.

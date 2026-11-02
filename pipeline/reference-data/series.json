@@ -1,0 +1,236 @@
+{
+ "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
+ "updated": "2026-11-02",
+ "pooled": {
+  "n": 11,
+  "rms_in_scales": 1.282,
+  "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
+ },
+ "series": {
+  "lula-s-share-of-valid-votes-presidential-runoff-tse": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-26",
+     "claim": "br-lula-share",
+     "consensus": 49.04,
+     "first": 51.79,
+     "centre": 49.08,
+     "scale_used": 1.3,
+     "source": "Unweighted mean of the latest valid-vote poll of 13 pollsters with fieldwork ending 13 Oct or later (dossier br-lula-share, Additional sources); three final-week polls 49.3"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 2.75
+  },
+  "turnout-of-registered-voters-rik": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-26",
+     "claim": "rs-turnout",
+     "consensus": 65,
+     "first": 68.84,
+     "centre": 63,
+     "scale_used": 4,
+     "source": "Polymarket turnout buckets read 2026-10-23T17:02Z, normalised median ≈64.75, Normal fit mean ≈65.1 (https://polymarket.com/event/serbia-parliamentary-election-turnout); Vučić's 4.1m voters ÷ 6,450,523 registered ≈63.6%; 2023: 58.77%"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 3.84
+  },
+  "ifo-business-climate-index-germany-headline-october-2026": {
+   "unit": "",
+   "records": [
+    {
+     "edition": "2026-10-27",
+     "claim": "de-ifo-oct",
+     "consensus": 89.8,
+     "first": 90.2,
+     "centre": 89.68,
+     "scale_used": 1,
+     "source": "Trading Economics calendar consensus, read 2026-10-24T17:05Z (provider's own forecast 89.5); no Reuters/Bloomberg poll figure found"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.4
+  },
+  "c-su-composite-confidence-indicator-souhrnny-indika-tor-du-v": {
+   "unit": "",
+   "records": [
+    {
+     "edition": "2026-10-27",
+     "claim": "cz-confidence-oct",
+     "consensus": null,
+     "first": 97.9,
+     "centre": 99.3,
+     "scale_used": 1.5,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
+  },
+  "conference-board-consumer-confidence-index-us-october-2026-p": {
+   "unit": "index points",
+   "records": [
+    {
+     "edition": "2026-10-28",
+     "claim": "us-confidence-oct",
+     "consensus": 80.4,
+     "first": 91.7,
+     "centre": 80.08,
+     "scale_used": 4.5,
+     "source": "Bloomberg/Reuters consensus shown in LBBW economic calendar (read 2026-10-25); LBBW forecast 78.8"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 11.3
+  },
+  "australia-cpi-12-months-to-september-2026-headline-monthly-c": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-29",
+     "claim": "au-cpi-sep",
+     "consensus": null,
+     "first": 4.3,
+     "centre": 4.04,
+     "scale_used": 0.3,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
+  },
+  "mf-maximum-daily-retail-price-of-diesel-b7-valid-on-28-oct-2": {
+   "unit": "CZK/l",
+   "records": [
+    {
+     "edition": "2026-10-29",
+     "claim": "cz-diesel-max-28",
+     "consensus": null,
+     "first": 49.46,
+     "centre": 49.038,
+     "scale_used": 0.28,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
+  },
+  "us-core-pce-price-index-12-month-change-september-2026-first": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-30",
+     "claim": "us-core-pce-sep",
+     "consensus": 3.1,
+     "first": 3.1,
+     "centre": 3.1,
+     "scale_used": 0.1,
+     "source": "Investing.com calendar (read 27 Oct); LBBW calendar 3.1; Wells Fargo 3.1"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
+  },
+  "us-real-gdp-growth-q3-2026-advance-estimate-seasonally-adjus": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-30",
+     "claim": "us-gdp-q3",
+     "consensus": 3.2,
+     "first": 3.4,
+     "centre": 3.22,
+     "scale_used": 0.8,
+     "source": "Investing.com and Trading Economics calendars (read 27 Oct); LBBW calendar 3.0; Wells Fargo 3.2; Continuum 2.8"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.2
+  },
+  "german-gdp-q3-2026-change-on-previous-quarter-price-seasonal": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-31",
+     "claim": "de-gdp-q3",
+     "consensus": 0.1,
+     "first": 0.2,
+     "centre": 0.004,
+     "scale_used": 0.15,
+     "source": "currencyhedger.com week ahead, 24 Oct 2026; Bundesbank monthly report: 'probably stagnated'"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "euro-area-gdp-q3-2026-change-on-previous-quarter-seasonally-": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-31",
+     "claim": "eu-gdp-q3",
+     "consensus": 0.2,
+     "first": 0.4,
+     "centre": 0.174,
+     "scale_used": 0.15,
+     "source": "currencyhedger.com week ahead, 24 Oct 2026 (0.2% q/q, 1.1% y/y)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.2
+  },
+  "czech-gdp-q3-2026-change-on-previous-quarter-seasonally-and-": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-31",
+     "claim": "cz-gdp-q3",
+     "consensus": 0.4,
+     "first": 0.5,
+     "centre": 0.32,
+     "scale_used": 0.3,
+     "source": "Raiffeisenbank via FXstreet.cz 'Měsíční odhady listopad 2026' (27 Oct 2026): +0.4% q/q, +1.6% y/y; Trading Economics consensus +0.6% (sweep, not re-read), TE model +0.3%"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "china-nbs-official-manufacturing-pmi-october-2026-headline-i": {
+   "unit": "index points (%)",
+   "records": [
+    {
+     "edition": "2026-11-01",
+     "claim": "cn-pmi-oct",
+     "consensus": 50.1,
+     "first": 49.3,
+     "centre": 49.94,
+     "scale_used": 0.41,
+     "source": "Trading Economics consensus column, read 2026-10-29T18:00Z (TE model 50.3); no Reuters/Bloomberg poll found yet"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.8
+  },
+  "south-korea-total-exports-october-2026-preliminary-usd-bn": {
+   "unit": "bn USD",
+   "records": [
+    {
+     "edition": "2026-11-02",
+     "claim": "kr-exports-oct",
+     "consensus": 115.1,
+     "first": 115.3,
+     "centre": 115.5,
+     "scale_used": 6.2,
+     "source": "Reuters poll of 9 economists, 29 Oct 2026: +93.2% y/y on the $59.57bn of October 2025 (found by the morning red team)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.2
+  }
+ },
+ "extra": {}
+}

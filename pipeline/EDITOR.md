@@ -10,7 +10,7 @@ Notation: the run starts at about 05:00 on day **D**, right after the resolver p
 
 Time budget: resolver part by about 05:15; overnight check and re-forecasts by 05:30; red team and freeze by 05:38; writing, Czech version and fact-check by 05:55. Run all agents in parallel.
 
-**Tool budget.** A run has a limited number of web searches (about 200 per session, shared by every agent). Prefer `WebFetch` on pages already known (the dossier lists them), `node scripts/markets.mjs` for markets and `pipeline/reference-data/` for base rates. Give each agent a narrow task.
+**Tool budget.** A run has a limited number of web searches (about 200 per session, shared by every agent). *(v6)* Keep at least `v6.search_budget.morning_reserve` for the morning's checks, and count them: the total goes into `meta.run.searches`. Prefer `WebFetch` on pages already known (the dossier lists them), `node scripts/markets.mjs` for markets and `pipeline/reference-data/` for base rates. Give each agent a narrow task.
 
 ## 0. Setup
 
@@ -148,6 +148,16 @@ Record every claim's forecast in the claim itself:
 `base_rate` and `market` are null when none exists. `market.kind` is `exchange` (Polymarket, Kalshi, Betfair), `bookmaker` or `platform` (Metaculus, Manifold, Good Judgment Open). A bookmaker entry also carries `odds` (decimal odds of every outcome of that market) and `outcome` (the index of the outcome the claim is about); `p` is the margin-free probability. When the calibration is active, `combination` is a copy of `pipeline/calibration.json` `params` plus its `version`. The validator checks all of this arithmetic and the market rule.
 
 Also write a short `rationale` per story: the class and base rate, the five numbers, the combined number, any market, the main risk.
+
+### 4c. Rules from method version 6 (edition No. 15 on)
+
+- **Baseline first.** Before any forecaster reports, set `forecast.baseline.status_quo` on every binary claim that is not derived: `yes` if the claim's YES is what you get when things simply continue (the published schedule goes ahead, a situation persists, nobody does anything not already announced), `no` if YES needs a change, `unclear` if it cannot be told. Never change it after seeing a forecast.
+- **Keys.** Every story has `event_key` (the occurrence it resolves on, such as `il-knesset-vote-2026-10-27`) and `case_key` (the running story, such as `us-iran-talks`). Read the keys in the last editions and in `data/claim-labels.json` and reuse a case key whenever the story continues.
+- **Blind means blind.** Give a forecaster the signals file only in a second, separate step, after its blind estimate has been written to a file and that file exists. A blind estimate fixed in the same step as reading the signals is recorded in `forecast.missing`.
+- **Number forecasts.** `node scripts/refdata/series.mjs scale <key>` gives the scale. Record `forecast.series`, `forecast.scale_basis` (`series`, `published` with `forecast.scale_url`, or `pooled`) and `scale_source`. A scale from memory or from the forecasters' own spread is refused. When no sourced figure can be found, use a similar indicator with the pooled factor.
+- **Linked races.** When an edition carries a claim on control of a chamber or on a total of seats, mark it `election.kind: "chamber"`, write the races to `data/dossiers/<D+2>/<claim>.sim.json`, run `node scripts/refdata/election-sim.mjs <file>` and record `forecast.sim` `{input, draws, p, scenario}` (at least `v6.sim_min_draws` draws). Use one polling average per race, and take the claims on each race and on the chamber from the same run. The story's `analysis` gives the chance of the exact combination it tells.
+- **Sources.** Before the freeze record `meta.source_access`: `reference` `{read, total}` for the reference front pages, `factcheck` `{opened, total}` from step 6c, and `limited: true` if either share is under `v6.source_access_min_share`. At the start of the run fetch one reference page. If `WebFetch` fails or waits for a permission, say so in `meta.unreachable` with the exact error, and read the remaining pages one at a time, because a timed-out batch costs the whole budget.
+- **Run record.** `meta.run` `{started_at, finished_at, agents, searches}`, covering the morning run.
 
 ## 5. Red team and freeze
 

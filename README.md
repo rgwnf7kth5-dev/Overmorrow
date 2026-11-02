@@ -23,11 +23,18 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `data/dossiers/YYYY-MM-DD/` | Research dossiers behind each claim of that edition. |
 | `data/postmortems.md` | Reviews of confident misses and of badly designed claims. |
 | `data/publisher/YYYY-MM-DD.json` | The publisher's own probabilities on that edition's claims, scored separately (METHODOLOGY 11). |
+| `data/audits/YYYY-MM-DD.json` | Independent re-resolution of a fixed sample of results (RESOLVER 3a). Append-only. |
+| `data/claim-labels.json` | Event, case and status-quo labels for editions before method version 6, made without sight of outcomes. |
+| `data/revision-classes.json` | Older revisions that confirmed reported news; from version 6 the update file says so itself. |
 | `METHODOLOGY.cs.md` | Czech version of the methodology, shown at /cs/method/. |
 | `pipeline/` | Source registry, reference classes, settings and manuals (EDITOR, PLANNER, RESOLVER, UPDATE). |
 | `pipeline/reference-data/` | Base rates computed from data, rebuilt by `scripts/refdata/`, and schedule-slip rates (`schedule-slip.json`). |
 | `pipeline/calibration.json` | Forecaster weights and bias correction fitted on our own record by `scripts/calibrate.mjs`. |
 | `scripts/markets.mjs` | Prediction-market lookup (Polymarket, Kalshi, Manifold, Metaculus with a token). Bookmakers' odds: `scripts/refdata/models.mjs odds`. |
+| `scripts/audit.mjs` | Lists the audit sample and compares audits with the record. |
+| `scripts/refdata/series.mjs` | History of surprises for number forecasts (`pipeline/reference-data/series.json`). |
+| `scripts/refdata/election-sim.mjs` | Joint simulation of linked races. |
+| `.claude/settings.json` | Allows `WebFetch` and `WebSearch` in unattended runs. |
 | `scripts/validate.mjs` | Checks all data against the rules. The Netlify build fails on any error. |
 | `scripts/build.mjs` | Generates the site into `dist/`. No dependencies beyond Node 20. |
 | `site/style.css` | The stylesheet. |

@@ -1,6 +1,6 @@
 {
   "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
-  "fitted_at": "2026-11-02T04:12:34Z",
+  "fitted_at": "2026-11-02T06:26:02Z",
   "version": "2026-11-02",
   "resolved": 133,
   "thresholds": {
@@ -8,20 +8,21 @@
     "calibration": 50
   },
   "active": {
-    "weights": true,
+    "weights": false,
     "platt": false
   },
   "gate": {
-    "platt": "off: leave-one-out 0.1426 does not beat raw 0.1406"
+    "weights": "off: chronological test 0.1219 against 0.1220 on 38 later claims",
+    "platt": "off: chronological test 0.1185 against 0.1220 on 38 later claims"
   },
   "params": {
-    "method": "calibrated",
+    "method": "geo-odds",
     "weights": {
-      "base-rate": 1.003,
-      "evidence": 0.999,
-      "adversarial": 0.992,
-      "anchor": 1.011,
-      "outsider": 0.995
+      "base-rate": 1,
+      "evidence": 1,
+      "adversarial": 1,
+      "anchor": 1,
+      "outsider": 1
     },
     "platt": {
       "a": 0,
@@ -62,6 +63,20 @@
     "platt_leave_one_out": {
       "brier": 0.1426,
       "log": 0.4306
+    },
+    "chronological": {
+      "weights": {
+        "n": 38,
+        "editions": 3,
+        "brier": 0.12194858208689273,
+        "reference": 0.12195715509006966
+      },
+      "weights_and_platt": {
+        "n": 38,
+        "editions": 3,
+        "brier": 0.1184596510913164,
+        "reference": 0.12195715509006966
+      }
     }
   }
 }
