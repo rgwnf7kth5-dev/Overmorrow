@@ -1066,6 +1066,64 @@
      "market": null,
      "note": "STAN's Jiří Hlaváček expects the constituent session on 19 November with himself as mayor and the eleven council seats split STAN 5, Spolu 4, Praha sobě 2; talks continue on 27 October, with a STAN–Spolu coalition as the fallback, which would also give STAN the mayor (ČTK, ČT24, 26 Oct).",
      "note_cs": "Jiří Hlaváček (STAN) počítá s ustavujícím zasedáním 19. listopadu, s tím, že se stane primátorem a jedenáct míst v radě si rozdělí STAN (5), Spolu (4) a Praha sobě (2); jednání pokračují 27. října a záložní variantou je koalice STAN a Spolu, v níž by primátora rovněž měl STAN (ČTK, ČT24, 26. října)."
+    },
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.83,
+     "combined": 0.833,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Prague mayor elections after the last five polls (from memory, not repo data): about 4 of 5 fell within roughly seven weeks of the vote, 2022-23 being the miss; 34 of 65 and a likely 19 Nov session fit that, but a one-seat cushion and an unfinished deal cost log-odds. Polymarket 0.96 for Hlavacek has no date, so it informs p_if_held only.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.86,
+       "reason": "STAN+Spolu hold 34/65 and agree on Hlaváček by convention, with a two-party fallback if the third partner fails; the 5 Nov session adjourns one or two weeks, leaving room before 30 Nov. Main risk is a repeat of the 2022 drag, or a one-seat majority wobbling; the market covers who, not when.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.77,
+       "reason": "NO case: the parties missed their 21 Oct decision point, the 5 Nov plan has already slipped, Pirates' and Praha sobě's internal approvals add a week after any deal, the resumed session can be pushed past 30 Nov, 2022 took five months, and six short-window claims on this case all resolved NO. Against that, STAN+Spolu hold 34 of 65 and can elect Hlaváček alone, Hlaváček speaks of adjourning one or two weeks, and 2010, 2014 and 2018 all had a Prague mayor within 51 days; Polymarket's 0.96 for Hlaváček is not time-bound, so I stay well below it.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.86,
+       "reason": "Anchor: Polymarket Hlaváček 0.962, thin ($16k), with no 30 Nov limit, while ours counts any STAN member or nominee by that date. Timing cut is now smaller: STAN+Spolu hold 34 of 65, Portlík concedes the post, and the session opens 5 Nov then adjourns, likely to 19 Nov, leaving 11 days of slack; 2022 talks running into 2023 is the remaining risk.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.82,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.86,
+       "reason": "STAN+Spolu hold 34 of 65 seats, Hlaváček is the favourite, and the constituent session is 5 Nov then adjourned one or two weeks, which leaves room before 30 Nov; risks are a slipped deal as in 2022-23 or a Portlík compromise.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.82,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "Weekly re-forecast. The constituent session is on 5 Nov and will be adjourned for one or two weeks; Hlaváček says the coalition agreement will not be ready by then.",
+     "note_cs": "Týdenní přepočet. Ustavující zasedání je 5. listopadu a bude přerušeno na jeden až dva týdny; Hlaváček říká, že koaliční dohoda do té doby hotová nebude."
     }
    ],
    "result": null
@@ -2236,6 +2294,72 @@
      "market": null,
      "note": "The Kremlin now speaks of a decision to resume three-way talks, with the next round reported for after 4 November, most likely in Abu Dhabi, and Kyiv pressing to bring it forward (TASS, Meduza, 26 Oct); no official date or venue yet. A US-involved local ceasefire around Oleshky starts on 27 October.",
      "note_cs": "Kreml nově hovoří o rozhodnutí obnovit třístranná jednání; další kolo se podle zpráv chystá po 4. listopadu, nejspíše v Abú Zabí, a Kyjev tlačí na dřívější termín (TASS, Meduza, 26. října). Oficiální datum ani místo zatím nejsou. Od 27. října platí za účasti USA místní příměří u Olešek."
+    },
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.63,
+     "combined": 0.631,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.66,
+       "reason": "No date yet, so negotiation-round slip 0.07 (0 of 7, confirmed events only) does not apply; prior about 0.5 from rounds promised in this war, with no round since February, raised for Ushakov, Peskov and Zelensky all pointing to November and a six-week window. Polymarket talks by 30 Nov 0.685 agrees, though its definition may be wider; the lapsed Oleshky truce cuts slightly.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.68,
+       "reason": "Kremlin, Kyiv and Washington all point to a November round (Abu Dhabi named, Ushakov on 1 Nov wants a trilateral first phase), with six weeks of margin and a market near 0.69 by 30 Nov on a possibly looser test. No date is fixed, the March-to-October gap shows such promises slip, and the Oleshky truce has just lapsed.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.55,
+       "reason": "NO case: no trilateral round in eight months despite repeated agreements 'in principle', Ryabkov calls it premature, Russia let the Oleshky truce lapse and resumed strikes, Ushakov ties timing to Ukrainian strikes around 4 Nov, the US team is absorbed by Iran after the midterms and the Abu Dhabi venue sits next to a Gulf war. For YES: both Moscow and Kyiv say the next round should be trilateral, Zelensky names 6–10 Nov, Russia announced the February round two days ahead, 'any level, any venue' is a low bar and six weeks remain; Polymarket 0.685 for talks by 30 Nov uses a looser definition, so I sit below it.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.66,
+       "reason": "Anchor: Polymarket Russia-Ukraine peace talks by 30 Nov 0.685 ($590k); its wording does not require the US, but Ushakov (1 Nov) says the next round starts trilateral, so it now tracks this event. Extended to 15 Dec about 0.75, times about 0.88 three-way and confirmed; no date yet, and Ryabkov calling it premature plus the end of the Oleshky truce keep me below the market extension.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.4,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.6,
+       "reason": "Russia agreed in principle to resume trilateral talks after 10 Nov and Zelensky expects a meeting soon, but no date is set, Ryabkov calls it premature, and earlier rounds were erratic; six weeks gives decent room.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.3,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "Weekly re-forecast. Still no date; Ushakov said on 1 Nov the next round should be trilateral, and Russia let the Oleshky truce lapse.",
+     "note_cs": "Týdenní přepočet. Termín stále není; Ušakov 1. listopadu řekl, že další kolo má být trojstranné, a Rusko nechalo příměří u Olešek vypršet.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "p": 0.685,
+      "read_at": "2026-11-02T18:52:00Z",
+      "url": "https://polymarket.com/event/russia-x-ukraine-peace-talks-byptptpt-20260609012540716"
+     },
+     "market_note": "Peace talks by 30 Nov; does not require the US and ends earlier."
     }
    ],
    "result": null
@@ -2836,6 +2960,64 @@
       "p": 0.425,
       "read_at": "2026-11-01T18:56:48Z"
      }
+    },
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.39,
+     "combined": 0.391,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.35,
+       "reason": "Few same-venue rounds in eight months of war gives roughly 0.3 for a two-month window, raised for the Doha track; Polymarket attendee prices peak at 0.445 (Witkoff, Kushner), discounted because both governments must confirm a same-venue negotiation and Iran says there are no direct talks.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.34,
+       "reason": "Mediation in Doha is active but with no US delegation, and Araghchi says no need to meet Americans; the criterion needs same-venue talks confirmed by both sides. Market prices Witkoff or Kushner attending a meeting by year-end at about 0.45; I shade down for dual confirmation and strike risk.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.4,
+       "reason": "NO case: Araghchi says there is no need to meet the Americans now, Iran is prolonging the stalemate, for four months the exchange has been written messages via Qatar and Pakistan (which do not count), the US wants the nuclear file first, and a US strike campaign after the vote (market 0.59 for a ceasefire break by 30 Nov) would freeze contacts for weeks. For YES: an Iranian team is already in Doha, NYT reports possible direct talks the week after the midterms, oil at $110 and the blockade press both sides, and Polymarket prices Witkoff or Kushner attending a US–Iran meeting by 31 Dec at 0.445; I shade slightly below that because both governments must confirm a same-venue meeting.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.42,
+       "reason": "Anchor is a proxy: Polymarket Witkoff attends by 31 Dec 0.445 implies about 0.50 for a meeting. Negotiators in Qatar make an indirect same-venue round plausible, but Iran says there are no direct talks, no US delegation is found in Doha, and ours needs both sides to confirm a negotiation in one venue, so about 0.85 of that.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.44,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.45,
+       "reason": "An Iranian delegation is in Qatar and there is a live Doha proposal, but Iran denies direct talks and demands conditions first; same-venue talks with both sides confirming still need a US delegation.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.45,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "Iran says negotiators in Qatar are discussing a proposal on Hormuz, without direct talks with Washington (2 Nov).",
+     "note_cs": "Írán uvádí, že vyjednavači v Kataru jednají o návrhu k Hormuzu, bez přímých rozhovorů s Washingtonem (2. listopadu)."
     }
    ],
    "result": null
@@ -2951,6 +3133,64 @@
      "market": null,
      "note": "María Corina Machado returned to Venezuela on 25 October and is calling for an election by July 2027; the electoral council has taken no step. Prediction markets on an election being scheduled this year roughly doubled after her return.",
      "note_cs": "María Corina Machado se 25. října vrátila do Venezuely a požaduje volby do července 2027; volební rada zatím nic neučinila. Sázkové trhy na vypsání voleb ještě letos po jejím návratu zhruba zdvojnásobily svůj odhad."
+    },
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.1,
+     "combined": 0.102,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.1,
+       "reason": "Own record for unscheduled announcements is 3 of 30 per one-day window, of little use over three months; the sequence needs a renewed CNE and TSJ first and Reuters points to late 2027. Polymarket is 0.075 by 31 Dec and 0.33 by 31 Mar (thin), interpolating to about 0.12.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Rodríguez ties elections to a renewed CNE that does not yet exist, and the US-backed roadmap renews CNE and TSJ before any vacancy clock starts, with Reuters citing a late-2027 slip. Thin markets imply about 0.08 by December and 0.33 by March.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.13,
+       "reason": "The roadmap (new CNE, new TSJ, then a vacancy declaration that starts a six-month clock) puts a formal date-setting at the earliest in January and every step is in Chavismo's hands, Reuters reports a vote slipping to late 2027, Rodríguez again refused a calendar on 29 Oct and Trump said Venezuela is 'not ready'; Polymarket gives 0.075 by 31 Dec and 0.33 by 31 Mar. The YES path is US pressure forcing a quick CNE renewal and a date in January, which I weigh at roughly the market interpolation.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.1,
+       "reason": "Anchor: Polymarket scheduled by 31 Dec 0.075 ($169k), one month short of our deadline; the thin 31 Mar price of 0.33 implies at most about 0.17. The sequence reported is a new CNE and TSJ first, then a vacancy starting a six-month clock, with Reuters pointing to late 2027 and no calendar on 29 Oct, which favours the low end.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.13,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.07,
+       "reason": "No date, and the reported roadmap renews the CNE and TSJ first, with a vote possibly slipping to late 2027; a date by January is unlikely.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.12,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "Weekly re-forecast. Rodríguez gave no date on 29 Oct; a new electoral council and court come first.",
+     "note_cs": "Týdenní přepočet. Rodríguezová 29. října termín neuvedla; nejdřív přijde nová volební rada a soud."
     }
    ],
    "result": null
@@ -5224,6 +5464,64 @@
      },
      "note": "New question. Lagarde leaves on 7 February 2027; to appoint a successor before then after consulting Parliament and the ECB, the Council's formal recommendation is needed by about mid-December, the natural venue being the December European Council. The risk is a contested race (Knot v Hernández de Cos, tied to other top jobs) that slips into January.",
      "note_cs": "Nová otázka. Lagarde odchází 7. února 2027; aby mohl být nástupce jmenován do té doby po konzultaci s Evropským parlamentem a ECB, musí Rada přijmout formální doporučení zhruba do poloviny prosince, nejspíš kolem prosincové Evropské rady. Rizikem je spor o kandidáta (Knot proti Hernándezi de Cos, provázaný s dalšími posty), který by se mohl protáhnout do ledna."
+    },
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.66,
+     "combined": 0.655,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.68,
+       "reason": "Past presidents (from memory, n=3: Trichet, Draghi, Lagarde) had a Council recommendation 3.5 to 5.5 months before taking office; here a 7 Feb exit needs one by about early January for EP and Governing Council consultation, so December is the natural slot. Slip class eu-council-adoption 0.086 applies only once dated; a leaders-level deal on 17-18 Dec with several board seats in a package could push the formal step into January.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "reason": "Lagarde leaves 7 Feb, and EP and Governing Council consultation need weeks, so a Council recommendation in December fits (2019: one week after the leaders deal, 16 weeks ahead); Costa started on 29 Oct. Risk is a package tied to the Schnabel and Lane seats, with a December leaders deal formalised only in January.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.45,
+       "reason": "NO case: the Lagarde, Schnabel and Lane seats form a package with Spain's vice-presidency and Germany's claim to a seat, EU personnel packages slip (Draghi took three months, Lagarde's followed a summit horse-trade), no ECOFIN item exists yet and the December European Council could settle for a political endorsement with the formal recommendation adopted at a January ECOFIN, which does not count. For YES: Costa started the process on 29 Oct, the 7 Feb departure forces a December recommendation if the EP is to be consulted in January, and the recommendation can be adopted by written procedure within days of a deal, as in July 2019.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "reason": "No market. Scale changed: Lagarde leaves 7 Feb 2027 and Costa started the process on 29 Oct. The Council recommendation must precede EP and Governing Council consultation, which took about five weeks for Draghi in 2011 (recalled), so a Feb handover needs it by December, and option (a) alone suffices. Risk is a package fight over the Schnabel and Lane seats pushing it to January, with the vice-president covering.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.04,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.55,
+       "reason": "Lagarde leaves 7 Feb 2027 and Costa started the process on 29 Oct, so a Council recommendation or European Council decision is likely by the December summit; the risk is slipping to January because of EP and ECB consultation and national bargaining over several board seats.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.06,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "Costa opened the process on 29 Oct and Lagarde is reported to leave on 7 Feb 2027, which points to a recommendation by December. Forecasters remain apart: a January step would not count.",
+     "note_cs": "Costa 29. října zahájil výběr a Lagardeová má podle zpráv odejít 7. února 2027, což ukazuje na doporučení do prosince. Prognostici se dál rozcházejí: krok v lednu by se nepočítal."
     }
    ]
   },
@@ -5500,6 +5798,176 @@
       "read_at": "2026-11-01T18:56:55Z"
      },
      "market_note": "The Polymarket ceasefire market counts any breach, a wider event than a US-confirmed strike on Iranian territory; the forecasters discount it for that."
+    }
+   ]
+  },
+  {
+   "scope": "world",
+   "topic": "Strait of Hormuz",
+   "question": "Will the United States and Iran both announce an arrangement to reopen the Strait of Hormuz to commercial shipping by 31 December 2026?",
+   "question_cs": "Oznámí Spojené státy a Írán do 31. prosince 2026 dohodu o znovuotevření Hormuzského průlivu pro obchodní lodní dopravu?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, both the Iranian government (foreign ministry or its spokesman) and the US government (White House or State Department) publicly confirm an agreement or arrangement, direct or through mediators, under which commercial shipping may transit the Strait of Hormuz. Announcements by one side only, by mediators only, or of talks without an agreement do not count. Actual traffic levels are not required. Otherwise no.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ íránská vláda (ministerstvo zahraničí nebo jeho mluvčí) i vláda USA (Bílý dům nebo ministerstvo zahraničí) veřejně potvrdí dohodu či ujednání, přímé nebo zprostředkované, podle nichž může obchodní lodní doprava proplouvat Hormuzským průlivem. Oznámení jen jedné strany, jen prostředníků nebo oznámení jednání bez dohody se nepočítají. Skutečná intenzita dopravy se nevyžaduje. Jinak ne.",
+   "resolution_source": "https://www.state.gov/",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Iran's top diplomat said on 2 Nov that negotiators in Qatar were discussing a proposal that could reopen the strait within two days if the US meets conditions, and that there were no direct talks with Washington. A US naval blockade halts Iran's oil exports.",
+   "sources": [
+    {
+     "title": "aljazeera.com",
+     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks"
+    },
+    {
+     "title": "clickondetroit.com",
+     "url": "https://www.clickondetroit.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/"
+    }
+   ],
+   "id": "ir-hormuz-arrangement",
+   "opened": "2026-11-02",
+   "history": [
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.21,
+     "combined": 0.211,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "Mediated-deal class 0.30 for short windows but own record 0 of 2, and a mutually confirmed deal has been rare in this war; traffic markets at 0.07 to 0.115 are a floor since traffic need not recover. The Doha proposal raises it, the need for confirmation from both governments cuts it.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.19,
+       "reason": "An Iranian two-day reopening proposal is on the table, but it carries heavy conditions (sanctions, frozen funds, US forces) with no reported flexibility, and both governments must confirm. Earlier memoranda show deals are possible; traffic markets are low (0.07 to 0.12), though they test more than this criterion.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.18,
+       "reason": "NO case: Iran's seven conditions include lifting the blockade, Washington wants the nuclear file first, the September 'seven days' offer has sat five weeks without a US answer, both governments must confirm the same arrangement while Iran frames any reopening as its own concession, a US strike campaign in November is about even odds, and markets put normal traffic by 31 Dec at 0.07–0.115. For YES: an arrangement can be announced well before traffic normalises, the June memorandum shows a deal can come fast after strikes, and oil at $110 after the midterms gives Trump a motive, so I sit above the traffic markets.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "No matching market: Polymarket traffic normal by 31 Dec 0.115 and Kalshi PortWatch 0.071 measure traffic, ours an arrangement confirmed by both sides, so 1.5-2 times those prices. The Doha proposal could reopen the strait within two days if the US meets conditions, a shorter path than a round of talks, though those prices were read after it and confirmation by both remains demanding.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.16,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "reason": "A Doha proposal reportedly could reopen Hormuz within days, but it is conditional on US concessions, Iran denies talks with Washington, and both governments must publicly confirm an agreement.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.2,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "New question, first forecast.",
+     "note_cs": "Nová otázka, první odhad."
+    }
+   ]
+  },
+  {
+   "scope": "cz",
+   "topic": "Refinery tax",
+   "question": "Will the Chamber of Deputies pass the extraordinary refinery tax bill in third reading by 31 December 2026?",
+   "question_cs": "Schválí Poslanecká sněmovna ve třetím čtení návrh mimořádné daně pro rafinerie do 31. prosince 2026?",
+   "criterion": "Yes if the Chamber of Deputies' record of votes (psp.cz) shows the government bill introducing an extraordinary tax on refineries (first reading 13 Oct 2026) passed in third reading, with or without amendments, on or before 31 Dec 2026 23:59 CET. Approval by the Senate or the president's signature is not required. No if it is rejected, withdrawn or not voted on in third reading by then.",
+   "criterion_cs": "Ano, pokud záznam hlasování Poslanecké sněmovny (psp.cz) ukáže, že vládní návrh zavádějící mimořádnou daň pro rafinerie (první čtení 13. 10. 2026) byl schválen ve třetím čtení, s pozměňovacími návrhy i bez nich, nejpozději 31. 12. 2026 ve 23:59 SEČ. Schválení Senátem ani podpis prezidenta se nevyžadují. Ne, pokud bude zamítnut, stažen nebo o něm do té doby nebude ve třetím čtení hlasováno.",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The government sent the Chamber a 50% extraordinary tax on refineries; the first reading was on 13 Oct and a final vote is reported as possible in late November or early December. The opposition calls it retroactive and says it would hit only Orlen. The source pages disagree on its yield; the print number was not found.",
+   "sources": [
+    {
+     "title": "ct24.ceskatelevize.cz",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-zahajit-jednani-o-zavedeni-mimoradne-dane-na-rafinerie-378520"
+    },
+    {
+     "title": "ct24.ceskatelevize.cz",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/vlada-hleda-cesty-na-snizeni-schodku-rozpoctu-prisla-s-dani-pro-rafinerie-379206"
+    },
+    {
+     "title": "e15.cz",
+     "url": "https://www.e15.cz/domaci/politika/mimoradna-dan-rafinerie-lex-unipetrol-orlen-schillerova-1436526"
+    }
+   ],
+   "id": "cz-refinery-tax-passed",
+   "opened": "2026-11-02",
+   "history": [
+    {
+     "at": "2026-11-02T19:03:53+00:00",
+     "p": 0.73,
+     "combined": 0.733,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.72,
+       "reason": "First readings of government bills never failed this term (47 of 47) and third-reading passage is 0.947 (n=19); the risk is timing, with slip class 0.60 for a given date, softened by a two-month window, budget-linked urgency and a vote trailed for late Nov or early Dec. Crowded floor time, the retroactivity dispute and possible government retreat cut it.",
+       "at": "2026-11-02T18:56:31Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.87,
+       "reason": "Government bill with a coalition majority, a budget-deficit measure tied to 2027, first reading done, and a vote expected around the turn of November and December, leaving weeks of margin. Risks are obstruction, floor time and the retroactivity objection; print number and committee detail unverified.",
+       "at": "2026-11-02T18:59:42Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.5,
+       "reason": "NO case: eleven weeks from first reading to third is fast for a contested government bill (10th-term third readings completed at the listed meeting 19% of the time), the opposition calls the tax retroactive and will obstruct the second reading, December is crowded with the budget's third reading on 2 Dec and other saving measures, the committee deadline and print number are unknown, and a 60-day deadline would alone push it past 31 Dec. For YES: the coalition holds 108, needs the tax in force before year-end to reach 2026 profits, has shown it can force bills through in days (licence-fee first reading), and the 2022 windfall tax passed in five weeks.",
+       "at": "2026-11-02T18:58:46Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.78,
+       "reason": "No market. Government bills reaching a third-reading vote pass 95-99% with 108 seats (cz-chamber.json). A Chamber vote is reported possible in late Nov or early Dec, leaving about four weeks of slack, and the tax serves the deficit, so the coalition has a reason to finish. Risks are the 0.60 reading slip, budget floor time and the retroactivity dispute; the sources were summaries, not opened articles.",
+       "at": "2026-11-02T19:01:24Z",
+       "rounds": [
+        {
+         "p": 0.62,
+         "at": "2026-11-02T18:56:45Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.72,
+       "reason": "The coalition has a majority and the government needs the revenue for the deficit, with a Chamber vote reported possible late Nov or early Dec; the risks are retroactivity objections, opposition delays and competition from the budget.",
+       "at": "2026-11-02T19:02:00Z",
+       "rounds": [
+        {
+         "p": 0.55,
+         "at": "2026-11-02T18:58:00Z",
+         "reason": "first round without the shared facts file"
+        }
+       ]
+      }
+     ],
+     "note": "New question, first forecast.",
+     "note_cs": "Nová otázka, první odhad."
     }
    ]
   }
