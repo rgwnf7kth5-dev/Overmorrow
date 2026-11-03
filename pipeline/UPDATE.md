@@ -4,6 +4,9 @@ This is the procedure for the afternoon run on day **D**. It updates the edition
 
 The morning file in `data/editions/` is never changed. Everything this run produces goes into `data/updates/<D+2>.json`.
 
+
+**Reading web pages: never use the WebFetch tool** (decision of the publisher, 3 November 2026: WebFetch stops the run for a per-site approval that keeps expiring). Read pages from the shell with `node scripts/read.mjs <url>` (`--links` lists a front page's article links, `--grep "word|other"` keeps matching paragraphs, `--max` sets the length); it prints the title, the publication time and the text. If a site refuses (exit 2: Reuters, AP, FT, Politico, iROZHLAS) or is unreachable (exit 3: some Czech government sites), use WebSearch results or another outlet for the same fact, and record the site in `meta.unreachable`. Tell every agent you start the same thing, in its prompt. Use the script only to read; never submit forms or send data.
+
 ## 0. Setup
 
 1. Fetch `main`. If today's edition (dated D+2) is in `main`, branch `update/<D>` from `main`. If it is not there yet because the morning pull request is still awaiting approval, branch from `daily/<D>` instead, so the update sits on top of it.

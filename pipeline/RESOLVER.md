@@ -2,6 +2,9 @@
 
 This is the procedure for the first part of the morning run (starting about 05:00, finished by about 05:15). It implements section 6 of [`METHODOLOGY.md`](../METHODOLOGY.md). The resolver must not change anything in `data/editions/`. The edition part ([`EDITOR.md`](EDITOR.md)) follows on the same branch.
 
+
+**Reading web pages: never use the WebFetch tool** (decision of the publisher, 3 November 2026: WebFetch stops the run for a per-site approval that keeps expiring). Read pages from the shell with `node scripts/read.mjs <url>` (`--links` lists a front page's article links, `--grep "word|other"` keeps matching paragraphs, `--max` sets the length); it prints the title, the publication time and the text. If a site refuses (exit 2: Reuters, AP, FT, Politico, iROZHLAS) or is unreachable (exit 3: some Czech government sites), use WebSearch results or another outlet for the same fact, and record the site in `meta.unreachable`. Tell every agent you start the same thing, in its prompt. Use the script only to read; never submit forms or send data.
+
 ## 1. Find what is due
 
 1. Create the branch `daily/<today>` from `main`.

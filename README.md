@@ -34,7 +34,8 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `scripts/audit.mjs` | Lists the audit sample and compares audits with the record. |
 | `scripts/refdata/series.mjs` | History of surprises for number forecasts (`pipeline/reference-data/series.json`). |
 | `scripts/refdata/election-sim.mjs` | Joint simulation of linked races. |
-| `.claude/settings.json` | Allows `WebFetch` and `WebSearch` in unattended runs. |
+| `.claude/settings.json` | Allows `WebFetch` and `WebSearch` in unattended runs (WebFetch is no longer used: pages are read with `node scripts/read.mjs`). |
+| `scripts/read.mjs` | Reads a web page as text from the shell (title, publication time, paragraphs, or a front page's links), so unattended runs never wait for per-site approval. |
 | `scripts/validate.mjs` | Checks all data against the rules. The Netlify build fails on any error. |
 | `scripts/build.mjs` | Generates the site into `dist/`. No dependencies beyond Node 20. |
 | `site/style.css` | The stylesheet. |

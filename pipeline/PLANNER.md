@@ -2,7 +2,9 @@
 
 The evening run (about 18:40 Europe/Paris on day **E**) does the slow work so that the morning run can concentrate on what changed overnight. It prepares the edition that the next morning run (day E+1) publishes: dated **E+3**, about the events of **E+2**. It also maintains the 14-day agenda and the forecast board. It implements [`METHODOLOGY.md`](../METHODOLOGY.md) sections 2, 4 and 10. From edition No. 5 the rules of method version 3 apply (METHODOLOGY section 12; EDITOR.md steps marked *(v3)*).
 
-Run every agent in parallel. A session has a limited number of web searches (about 200 shared by all agents). *(v6)* Split them in advance (`v6.search_budget`): at most 120 for agenda and dossiers, and 50 kept for the evidence forecasters, whose own research must not be the step that runs out. In general: give agents narrow tasks, prefer `WebFetch` on known pages, `node scripts/markets.mjs` and `pipeline/reference-data/`.
+**Reading web pages: never use the WebFetch tool** (decision of the publisher, 3 November 2026: WebFetch stops the run for a per-site approval that keeps expiring). Read pages from the shell with `node scripts/read.mjs <url>` (`--links` lists a front page's article links, `--grep "word|other"` keeps matching paragraphs, `--max` sets the length); it prints the title, the publication time and the text. If a site refuses (exit 2: Reuters, AP, FT, Politico, iROZHLAS) or is unreachable (exit 3: some Czech government sites), use WebSearch results or another outlet for the same fact, and record the site in `meta.unreachable`. Tell every agent you start the same thing, in its prompt. Use the script only to read; never submit forms or send data.
+
+Run every agent in parallel. A session has a limited number of web searches (about 200 shared by all agents). *(v6)* Split them in advance (`v6.search_budget`): at most 120 for agenda and dossiers, and 50 kept for the evidence forecasters, whose own research must not be the step that runs out. In general: give agents narrow tasks, prefer `node scripts/read.mjs` on known pages, `node scripts/markets.mjs` and `pipeline/reference-data/`.
 
 ## 1. Setup
 
