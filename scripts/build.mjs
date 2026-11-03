@@ -348,32 +348,7 @@ ${main}
 ${signupBox(L)}
 <footer>${L.footer.map(([h, p]) => `<div><h4>${h}</h4><p>${fill(p, L)}</p></div>`).join('')}</footer>
 </div>
-<script>
-// Balance every multi-column block ourselves: browsers (Safari above all) can leave one column far longer than the
-// others when hyphenation, widows and unbreakable headline blocks interact. Find the lowest height at which the
-// content still fits in the given number of columns, filling them in order.
-window.OMcols = (function () {
-  var SEL = '.cols, .flow, .desk.two .deskbody';
-  function each(f) { document.querySelectorAll(SEL).forEach(f); }
-  function reset() { each(function (el) { el.style.height = ''; el.style.columnFill = ''; }); }
-  function fits(el, h) { el.style.height = h + 'px'; return el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= h + 1; }
-  function one(el) {
-    var n = parseInt(getComputedStyle(el).columnCount, 10);
-    if (!(n > 1)) return;
-    var natural = el.getBoundingClientRect().height;
-    el.style.columnFill = 'auto';
-    var lo = Math.max(0, natural / n - 50), hi = natural * 1.6 + 200;
-    if (!fits(el, hi)) { el.style.height = ''; el.style.columnFill = ''; return; }
-    for (var i = 0; i < 18 && hi - lo > 2; i++) { var mid = (lo + hi) / 2; if (fits(el, mid)) hi = mid; else lo = mid; }
-    el.style.height = Math.ceil(hi + 1) + 'px';
-  }
-  function run() { reset(); each(one); }
-  var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(run, 250); });
-  (document.fonts ? document.fonts.ready : Promise.resolve()).then(run);
-  window.addEventListener('load', run);
-  return { reset: reset, run: run };
-})();
-</script>
+
 <script src="/spider.js" defer></script>
 </body>
 </html>
@@ -467,7 +442,7 @@ function storyHtml(story, results, show, L, opts = {}) {
   const fixes = (opts.corrections || []).map((c) => `<p class="correction"><b>${c.kind === 'note' ? L.edNote : L.correction} (${esc(fmtDay(c.date, L))}):</b> ${esc(c.text)}${c.url ? ` <a href="${esc(c.url)}">${L.sources}</a>` : ''}</p>`).join('');
   // Basis, sources and the checking rule stay folded until the reader opens them; editor's notes and corrections stay visible.
   const basis = `<details class="basisbox"><summary>${L.basisShow}</summary>${(story.analysis || []).map((t) => `<p class="analysis">${esc(t)}</p>`).join('')}${story.rewritten ? `<p class="basis">${L.rewritten(fmtDay(story.rewritten, L))}</p>` : ''}<p class="basis">${L.basis}: ${esc(story.basis.replace(/^(Basis|Podklad):\s*/i, ''))}${sources ? ` ${L.sources}: ${sources}.` : ''}</p>${checks}</details>${fixes}`;
-  const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}${basis}</div>` : `${paras.join('')}${basis}`;
+  const content = (isLead || opts.wide) && !opts.flat ? `<div class="cols">${paras.join('')}</div>${basis}` : `${paras.join('')}${basis}`;
   const Hx = opts.h || H;
   const ph = opts.photo;
   const photo = ph ? `<figure class="photo"><img src="/photos/${esc(ph.edition)}/${esc(ph.file)}" width="${ph.width}" height="${ph.height}" alt="${esc(ph.alt)}" decoding="async"><figcaption>${esc(ph.caption)} <span class="credit">${L.photo}: ${esc(ph.credit)}, ${ph.license_url ? `<a href="${esc(ph.license_url)}">${esc(ph.license)}</a>` : esc(ph.license)}, <a href="${esc(ph.source_url)}">Wikimedia Commons</a></span></figcaption></figure>` : '';
@@ -586,8 +561,7 @@ ${scorebar}
   function bottom(el) { var m = 0; el.querySelectorAll('.story,.box').forEach(function (e) { if (e.hidden) return; var r = e.getClientRects(); for (var i = 0; i < r.length; i++) m = Math.max(m, r[i].bottom); }); return m; }
   function apply(c) { desks.style.setProperty('--fw', c.sh + 'fr'); desks.style.setProperty('--hw', (1 - c.sh).toFixed(2) + 'fr'); f.classList.toggle('two', c.kf > 1); h.classList.toggle('two', c.kh > 1); if (box) { box.hidden = !c.diary; if (full) full.hidden = c.diary; } }
   function balance() {
-    if (window.OMcols) window.OMcols.reset();
-    if (getComputedStyle(desks).display !== 'grid') { if (window.OMcols) window.OMcols.run(); return; }
+    if (getComputedStyle(desks).display !== 'grid') return;
     var best = null;
     for (var sh = 0.34; sh <= 0.701; sh += 0.02) for (var kf = 1; kf <= 2; kf++) for (var kh = 1; kh <= 2; kh++) for (var d = 0; d <= (box ? 1 : 0); d++) {
       if ((kf === 2 && sh < 0.54) || (kh === 2 && sh > 0.46)) continue;
@@ -597,7 +571,6 @@ ${scorebar}
       if (!best || score < best.score) { best = c; best.score = score; }
     }
     apply(best);
-    if (window.OMcols) window.OMcols.run();
   }
   var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(balance, 150); });
   (document.fonts ? document.fonts.ready : Promise.resolve()).then(balance);

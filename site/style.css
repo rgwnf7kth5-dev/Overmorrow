@@ -144,7 +144,7 @@ footer h4{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacin
   body{font-size:16.5px}
   .s3{grid-column:1/-1}
   .s3.vr{border-top:1px solid var(--hair);padding-top:18px}
-  .cols{column-count:1}
+  .cols,.story.s12 .cols,.story.s10 .cols,.story.s9 .cols,.frontcol .second .cols{column-count:1}
   .dateline,.topline{justify-content:center;text-align:center}
   .mast a{flex-direction:column;gap:10px}
   .mast .logo{width:132px;height:132px}
@@ -171,7 +171,7 @@ table.watch details.check{margin-top:4px}
 
 /* Flowing section columns: text may continue into the next column; headline blocks never split. */
 .flow{column-count:3;column-gap:28px;column-rule:1px solid var(--hair)}
-.flow>.story{break-inside:auto;padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--hair);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.flow>.story{padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--hair);-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .flow>.story:last-child{border-bottom:0;margin-bottom:0}
 .hgroup{break-inside:avoid;break-after:avoid}
 .story p{orphans:3;widows:3}
@@ -187,7 +187,6 @@ table.watch details.check{margin-top:4px}
 .desk .story{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--hair);-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .deskbody>.story:last-child{border-bottom:0;margin-bottom:0}
 .desk.two .deskbody{column-count:2;column-gap:24px;column-rule:1px solid var(--hair)}
-.desk.two .deskbody>.story{break-inside:auto}
 .desk .dlead h3{font-size:clamp(26px,2.6vw,36px);letter-spacing:-.01em;margin-bottom:10px}
 .desk .box{margin-top:6px}
 @media (max-width:980px){
@@ -312,3 +311,10 @@ article[id^="s-"]:target>.hgroup h3,article[id^="s-"]:target>.hgroup h4{text-dec
   .sp-date{grid-row:auto}
 }
 @media (prefers-reduced-motion:reduce){.sp-card{animation:none}}
+
+/* Closed <details> must take no space anywhere: WebKit still lays out their content inside multi-column text,
+   which leaves gaps and unbalanced columns on iPhone and in Safari. */
+details:not([open]) > :not(summary){display:none!important}
+/* A multi-column block must never get its height from a stretched grid row (WebKit then spills text into extra
+   columns beyond the page edge). */
+.grid>.story,.desks>.desk{align-self:start}
