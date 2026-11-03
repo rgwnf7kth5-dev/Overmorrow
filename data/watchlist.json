@@ -315,6 +315,50 @@
       "read_at": "2026-11-01T18:57:09Z"
      },
      "market_note": "The Kalshi market (0.99) has about $4.9k of volume; the forecasters weigh the 4 Nov flash CPI and Frait's \"not predetermined\" against it."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.94,
+     "combined": 0.936,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.95,
+       "reason": "Reference class: a central-bank move that every polled economist expects happens about 95% of the time, and the slip rate for a scheduled decision is 1%. I sit below Kalshi's thin 0.99 because the 4 Nov flash CPI is still unknown and the board is only leaning, not committed.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.95,
+       "reason": "All ČTK-polled economists expect 25 bp, Seidler and Frait lean to a hike, and Kalshi shows about 0.99 on a thin book. Remaining risk is a soft 4 Nov flash tipping a split board into a hold.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.8,
+       "reason": "Case against: the ČNB has defied a one-sided consensus before (Nov 2023 hold when a cut was expected, Feb 2024 50 bp), Frait's own remark that a hold now could be followed by a hike later shows a hold is on the table, Michl prefers stability, and a soft 4 Nov flash plus extended fuel caps would give the doves cover; Kalshi's 0.99 is thin. Still, two members leaning publicly to a hike, a forecast meeting and a unanimous ČTK poll keep the hike as the strong base case.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.95,
+       "reason": "Anchor: Kalshi 0.99 for +25 bp, unanimous ČTK poll. Cut 0.04 because the market is thin with unreliable last prices and the 4 Nov flash CPI could still give a divided board a reason to wait.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.96,
+       "reason": "Unanimous economist expectation of 25 bp and Kalshi at 0.99; residual is a surprise hold after the 4 Nov flash CPI.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "Weekly check before the meeting: every economist asked by ČTK expects a 25 bp hike; board member Seidler leans to it.",
+     "note_cs": "Kontrola před zasedáním: všichni ekonomové oslovení ČTK čekají zvýšení o 25 bazických bodů, člen bankovní rady Seidler se k němu kloní."
     }
    ],
    "result": null
@@ -431,6 +475,50 @@
      "market": null,
      "note": "Seidler's lean towards a November hike and Frait's remark that a hold now could be followed by a hike soon after raise the chance that the repo rate reaches 4.00% by the December meeting: two meetings for one 25-point step.",
      "note_cs": "Seidlerův sklon ke zvýšení v listopadu a Fraitova poznámka, že po případném listopadovém ponechání by zvýšení mohlo přijít brzy poté, zvyšují šanci, že repo sazba do prosincového zasedání dosáhne 4,00 %: na jeden krok o 25 bodů jsou dvě zasedání."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.95,
+     "combined": 0.946,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.97,
+       "reason": "A November hike (0.95) almost surely holds through December, since a reversal within six weeks has no precedent in the 2022-26 ČNB table. If November is a hold, December would still hike about 55% of the time, which sums to about 0.975.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.96,
+       "reason": "A 5 Nov hike almost guarantees 4.00% in December since no cut is in view, even on KB's stay-at-4% call. If November is a hold, December remains a live second chance.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.87,
+       "reason": "A November hike to 4.00% makes a December cut practically impossible; the only no-path is a November hold that signals a reluctant board and is not corrected on 17 Dec, roughly 0.20 x 0.6. Two meetings for one 25 bp step that the whole profession already expects.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.96,
+       "reason": "Model: 0.95 hike now times about 1.0 (no reversal with terminal priced near 5%, KB sees a hold at 4%) plus 0.05 times 0.6 for a catch-up in December gives 0.98; trimmed to 0.96 for overconfidence in the hike leg.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.93,
+       "reason": "A November hike takes the rate to 4.00% and inflation is rising, so a December cut is very unlikely; a hold in November would still leave a decent chance of a December hike.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "Weekly re-forecast: the expected November hike would itself take the rate to 4.00%.",
+     "note_cs": "Týdenní přepočet: očekávané listopadové zvýšení by samo posunulo sazbu na 4,00 %."
     }
    ],
    "result": null
@@ -678,6 +766,50 @@
      "market": null,
      "note": "Seidler expects inflation to peak around 3.5% only in the first quarter of 2027, and September's 2.5% was above the ČNB's summer path; against that, the cabinet on 26 October extended the fuel price caps to the end of November, removing the end-of-cap jump the previous figure allowed for.",
      "note_cs": "Seidler očekává vrchol inflace kolem 3,5 % až v prvním čtvrtletí 2027 a zářijových 2,5 % bylo nad letní trajektorií ČNB; proti tomu vláda 26. října prodloužila regulaci cen pohonných hmot do konce listopadu, takže odpadá skok po skončení stropů, s nímž počítal předchozí odhad."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.33,
+     "combined": 0.33,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "From September's 2.5%, a likely flat October and a soft November 2025 base (from my memory of last year's prints, not checked), I centre November near 2.8 with a two-month sd of about 0.3, giving about 0.3 for a print of 3.0 or more. The 3.8-3.9 peak falls in Q1 on January effects, and the fuel cap runs through November, so I only nudge this up.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.34,
+       "reason": "Needs about half a point from September's 2.5% with fuel caps kept through November. A likely soft November 2025 base helps (from memory, not in the files), but the previews' 3.8-3.9% peak falls in Q1 2027, so 3.0 by November looks a stretch; the flash on 4 Nov is the next test.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.37,
+       "reason": "Case for yes: November 2025 was a soft base (y/y fell from 2.5% to 2.2%), so flat prices in Nov 2026 alone add about 0.3 pp to the October print, energy is above the ČNB's assumptions and ING/KB now see a Q1 2027 peak near 3.9%, which implies a steep climb through year-end. Against: the board gives October only a 34% chance of exceeding 2.5%, fuel caps run to end-November and the big repricing usually comes in January, so 3.0% in November needs October near 2.7% or a strong month.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.31,
+       "reason": "Model: October near 2.4-2.5 plus a helpful November 2025 base (my recollection, m/m about -0.2, unverified here) centres November near 2.8, sd 0.25, needing 2.95 to print 3.0, about 0.27. Nudged up because previews put the Q1 peak at 3.8-3.9, above Seidler's 3.5; below the board's 0.39 since fuel caps hold through November.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "reason": "September was 2.5%, the October base is tough and fuel caps run to end-November; the peak is expected only in Q1 2027, so 3.0% in November is a stretch.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "Weekly re-forecast: analysts place the peak in the first quarter of 2027, with fuel prices capped to the end of November.",
+     "note_cs": "Týdenní přepočet: analytici čekají vrchol v prvním čtvrtletí 2027, ceny paliv jsou zastropeny do konce listopadu."
     }
    ],
    "result": null
@@ -1240,6 +1372,50 @@
      "market": null,
      "note": "The ČNB's summer forecast already put 2027 inflation at exactly 2.5%, so a revision of one tenth upwards resolves yes, and Seidler said on 27 October that the bank will likely raise the 2027 forecast because energy prices are above its assumptions and wages are growing by more than 6%.",
      "note_cs": "Letní prognóza ČNB už počítala s inflací v roce 2027 přesně 2,5 %, takže k odpovědi ano stačí zvýšení o desetinu, a Seidler 27. října řekl, že banka prognózu na rok 2027 nejspíš zvýší, protože ceny energií jsou nad jejími předpoklady a mzdy rostou o více než 6 %."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.89,
+     "combined": 0.889,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.92,
+       "reason": "The start is exactly 2.5, so any upward tenth resolves yes, and a board member's pre-announced direction of revision days before publication holds about 90% of the time. Previews with a 3.8-3.9 Q1 peak leave room above 2.5 for the annual average, and publication risk is about 1%.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.91,
+       "reason": "The summer forecast was exactly 2.5%, so one tenth up suffices. Seidler signalled a raise, and a Q1 2027 peak near 3.8-3.9% in bank previews makes a 2027 average above 2.5% very likely.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.76,
+       "reason": "Case against: the ČNB forecast is conditional on its own rate path, which will now include hikes pushing 2027 back toward 2% in the second half, the crown and extended price caps dampen headline, and the summer figure was exactly 2.5% so a model revision could land on 2.5% again, which resolves no. For: Seidler said on 27 Oct the bank will likely raise the 2027 number, and a hike needs a forecast showing inflation above target to justify it; the peak everyone sees in Q1 2027 lifts the annual average almost mechanically.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.91,
+       "reason": "Anchor: summer forecast at exactly 2.5, so one tenth up resolves yes; Seidler says the bank will likely raise it, and previews' Q1 2027 peak of 3.8-3.9 points the same way. Residual risk is the higher rate path or fiscal energy measures pulling the average back to 2.5.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.9,
+       "reason": "Summer forecast was exactly 2.5%, Seidler signalled an upward revision and private banks see Q1 2027 near 3.8-3.9%, so the 2027 average is very likely above 2.5%.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "Weekly re-forecast: bank previews put 2027 inflation well above the August 2.5%; ING has 3.4%.",
+     "note_cs": "Týdenní přepočet: výhledy bank kladou inflaci v roce 2027 výrazně nad srpnových 2,5 %, ING uvádí 3,4 %."
     }
    ],
    "result": null
@@ -1971,6 +2147,50 @@
      },
      "note": "Down sharply. Final results 53 (Netanyahu bloc) vs 48 + 19; Ynet reports figures in both blocs expect Eisenkot to receive the first mandate, the Arab lists lean towards him, and Herzog must assign the mandate by 11 Nov.",
      "note_cs": "Výrazné snížení. Konečné výsledky 53 (Netanjahuův blok) proti 48 + 19; podle Ynetu politici v obou blocích čekají, že první pověření dostane Eisenkot, arabské strany se kloní k němu a Herzog musí pověření udělit do 11. listopadu."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.17,
+     "combined": 0.169,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Presidents nearly always task whoever has the most recommendations, and March 2020 shows Arab-list recommendations count, as with Gantz. Netanyahu's path needs both Arab lists to hold back (Ra'am named no one in 2021), leaving 53 v 48; one list recommending Eisenkot closes it.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.13,
+       "reason": "All five opposition parties now back Eisenkot, including Liberman who was undecided, which removes a key Netanyahu path. The residual risk is the Arab lists not formally recommending, which would leave Eisenkot on 48 against up to 53, since the 60-46 tally assumes them; UTJ's 7 are also unaligned.",
+       "at": "2026-11-03T18:35:59Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.25,
+       "reason": "Case for yes: Eisenkot has 48 formal recommendations against 53 for Netanyahu if the bloc holds; Joint List and Ra'am have not formally recommended and declined to recommend anyone in 2021, Liberman rules out Arab partners, and Rivlin in 2021 followed the count (Netanyahu 52 vs 45) despite no path. Against: Ynet reports the Arab lists leaning to Eisenkot, one list suffices to pass 53, UTJ is flirting with Eisenkot, and Polymarket's 0.335 for Netanyahu as next PM is inflated by caretaker ambiguity.",
+       "at": "2026-11-03T18:38:13Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Polymarket next-PM 0.335 does not match, since he could become PM after a failed first mandate. Cut from there and from the board's 0.23 because all five opposition parties back Eisenkot; his path is Arab lists declining to recommend, leaving 53 v 48.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.27,
+       "reason": "All five opposition parties back Eisenkot and Ynet reports figures in both blocs expect him to get the mandate, but if the Arab lists do not formally recommend, Netanyahu's 53 outnumbers Eisenkot's 48 and Herzog could pick him. A later mandate to Netanyahu would fall after 30 Nov.",
+       "at": "2026-11-03T18:35:46Z"
+      }
+     ],
+     "note": "On 3 Nov the five opposition parties agreed to recommend Eisenkot; Liberman had been undecided.",
+     "note_cs": "Pět opozičních stran se 3. listopadu dohodlo, že doporučí Eisenkota; Liberman byl dosud nerozhodnutý."
     }
    ],
    "result": null
@@ -2360,6 +2580,50 @@
       "url": "https://polymarket.com/event/russia-x-ukraine-peace-talks-byptptpt-20260609012540716"
      },
      "market_note": "Peace talks by 30 Nov; does not require the US and ends earlier."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.81,
+     "combined": 0.815,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.83,
+       "reason": "Announced talks with a named venue and date usually happen or slip by days, and five weeks of slack past 10-11 Nov covers a slip; market 0.91 is on a looser title. Discount for Moscow not confirming dates or delegation and the all-three, official-confirmation requirement.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.84,
+       "reason": "Witkoff has named Abu Dhabi 10-11 Nov, Ushakov said Moscow is ready after 4 Nov and wants a trilateral format, the market is 0.91 on a near match, and a month of slippage room remains. Discount because Moscow has not confirmed dates and the source chain is RT and relays, and because the criterion needs official confirmation of all three delegations.",
+       "at": "2026-11-03T18:35:59Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.8,
+       "reason": "Witkoff has named Abu Dhabi 10-11 Nov, the format exists and five weeks remain after that date, so a slip is survivable. Against: Moscow has confirmed neither dates nor delegation, Ushakov calls it a trial run, the Oleshky truce was allowed to lapse, and the criterion needs an official readout that all three delegations were in the room, not US-mediated shuttling.",
+       "at": "2026-11-03T18:38:13Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Polymarket 0.91 for talks by 30 Nov. Down because our criterion needs all three delegations and official confirmation, and Moscow has not confirmed the Witkoff dates; the later 15 Dec deadline gives some back.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.8,
+       "reason": "Witkoff announced an Abu Dhabi round for 10-11 Nov and Ushakov said Moscow is ready after 4 Nov. Moscow has not confirmed, but there are five weeks of slack to 15 Dec.",
+       "at": "2026-11-03T18:35:46Z"
+      }
+     ],
+     "note": "Witkoff named Abu Dhabi for 10-11 Nov and the Kremlin named Medinsky as head of its delegation.",
+     "note_cs": "Witkoff oznámil jednání v Abú Zabí na 10. až 11. listopadu a Kreml jmenoval vedoucím delegace Medinského."
     }
    ],
    "result": null
@@ -4188,7 +4452,12 @@
      }
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.novinite.com/articles/241424/CEC+Officially+Declares+Iotova+and+Valchev+Bulgaria%27s+Elected+Leaders",
+    "note": "The Central Election Commission declared Iotova president-elect on 3 Nov with 57.566% of the vote, as reported by Novinite and BTA; cik.bg itself was not read.",
+    "resolved_at": "2026-11-03T18:57:30Z"
+   }
   },
   {
    "id": "fr-49-3-budget-2027",
@@ -4309,6 +4578,50 @@
      "note": "Europe 1 reported on 27 October that the government is choosing between Article 49.3 and passing the budget by ordinance after the Assembly rejected the social-security budget's revenue part on 23 October; an ordinance would resolve no, and Lecornu's pledge not to use 49.3 still stands, while the PLF timetable runs to a final Assembly vote on 17 November and the 17 December deadline.",
      "note_cs": "Europe 1 27. října uvedla, že vláda poté, co Národní shromáždění 23. října odmítlo příjmovou část rozpočtu sociálního zabezpečení, volí mezi článkem 49.3 a přijetím rozpočtu nařízením; nařízení by znamenalo odpověď ne a Lecornuův slib, že 49.3 nepoužije, stále platí. Harmonogram státního rozpočtu počítá se závěrečným hlasováním Národního shromáždění 17. listopadu a lhůtou 17. prosince.",
      "market_note": "Kalshi's matching 49.3 market (0.62 mid) is thin; the ensemble weighs Lecornu's pledge, the ordinance route (which resolves no) and last cycle's 49.3 coming only in January more heavily."
+    },
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.33,
+     "combined": 0.335,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "reason": "Of the four minority-era PLFs, 49.3 came by 31 Dec in 2 (2022, 2023), and not in 2024 or 2025, when Lecornu's used it only in the new year. His pledge, a new reading squeezed against mid-December, and the ordinance and loi speciale exits pull below the board's 0.43.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.37,
+       "reason": "First-reading 49.3 now looks unlikely as the revenue part heads for rejection and transfer to the Senate, so the only real window is a new reading after the mid-December CMP, competing with ordinances (70-day limit 17 Dec) or a loi spéciale. Slightly below 0.43 given the squeezed calendar and Lecornu's standing pledge, though that analysis is a journalist's, not a government position.",
+       "at": "2026-11-03T18:35:59Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.37,
+       "reason": "Case for yes: revenues will be rejected, the CMP lands mid-December and a new reading before Christmas is the classic 49.3 moment, with ordinances untested and a loi speciale unattractive before the 2027 presidential year. Against: the pledge, last year's precedent of a loi speciale with no 49.3 before 31 Dec, the ordinance deadline of 17 Dec as an exit, and a timetable that leaves only about a week for a new reading.",
+       "at": "2026-11-03T18:38:13Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.36,
+       "reason": "No market, so anchored on the board's 0.43. Down because first-reading use is now unlikely, leaving only a mid-to-late December new reading, and ordinances or a loi speciale with a January 49.3 (as for the 2026 budget) would miss the deadline.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.28,
+       "reason": "First reading ends 17 Nov with rejection and no 49.3 expected; the only window is the new reading after a failed CMP in late December, against Lecornu's pledge and the ordinance and loi spéciale exits (70-day limit 17 Dec, loi spéciale by 19 Dec).",
+       "at": "2026-11-03T18:35:46Z"
+      }
+     ],
+     "note": "The vote on the revenue part slipped; Public Sénat expects no 49.3 at first reading, and the ordinance route stays open.",
+     "note_cs": "Hlasování o příjmové části se odložilo; Public Sénat v prvním čtení článek 49.3 nečeká a zůstává cesta nařízením."
     }
    ],
    "result": null
@@ -5223,7 +5536,12 @@
      "note_cs": "Stávka je plně připravena: zapojí se 1340 zaměstnanců a externistů ČRo (ČTK, 30. října) a vysílání se na 24 hodin omezí na zákonné minimum; organizátoři jako důvod k přerušení uvádějí jen mimořádné události."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://forbes.cz/ct-a-cesky-rozhlas-stavkuji-vysilani-omezily-demonstrace-zacnou-v-1636/",
+    "note": "A 24-hour strike with a real stoppage of work began around midnight on 3 Nov at ČT and ČRo (Forbes CZ, Mediaguru).",
+    "resolved_at": "2026-11-03T18:57:30Z"
+   }
   },
   {
    "id": "es-puente-out-nov",
@@ -5968,6 +6286,213 @@
      ],
      "note": "New question, first forecast.",
      "note_cs": "Nová otázka, první odhad."
+    }
+   ]
+  },
+  {
+   "id": "cz-prague-pirates-council",
+   "scope": "cz",
+   "topic": "Prague coalition",
+   "question": "Will the Pirates be part of the Prague city council (rada) elected by 30 November 2026?",
+   "question_cs": "Budou Piráti součástí pražské rady zvolené do 30. listopadu 2026?",
+   "criterion": "Yes if, by 30 Nov 2026 23:59 CET, the Prague city assembly elects a city council (rada hl. m. Prahy) that includes at least one member nominated by the Pirates, as recorded on praha.eu or reported by ČTK. No if the council elected has no Pirate nominee, or no council is elected by then.",
+   "criterion_cs": "Ano, pokud pražské zastupitelstvo do 30. listopadu 2026 ve 23:59 SEČ zvolí radu hl. m. Prahy, jejímž členem bude alespoň jeden člověk nominovaný Piráty, podle praha.eu nebo ČTK. Ne, pokud v zvolené radě nominant Pirátů nebude nebo pokud do té doby rada zvolena nebude.",
+   "resolution_source": "https://www.praha.eu/",
+   "opened": "2026-11-03",
+   "resolves_by": "2026-11-30T23:59:00+01:00",
+   "sources": [
+    {
+     "title": "Deník: result of the Prague coalition talks due next week",
+     "url": "https://prazsky.denik.cz/komunalni-volby/vysledek-jednani-o-koalici-v-praze-oznami-strany-v-utery-ci-ve-stredu/"
+    },
+    {
+     "title": "ČTK: Hlaváček on adjourning the constituent session",
+     "url": "https://www.ceskenoviny.cz/zpravy/hlavacek-ustavujici-zastupitelstvo-prahy-prerusime-do-dojednani-koalice/2895938"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.48,
+     "combined": 0.478,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.49,
+       "reason": "A council elected by 30 Nov is about 0.85, and in a two-way choice a side 'slightly further along' wins about 58% of the time, giving about 0.49. Both parties are still in play and the result comes on 10-11 Nov.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.5,
+       "reason": "Talks with the Pirates are slightly further along than with Praha sobě, so about 0.58 conditional on a council. Multiplied by about 0.87 that a council is elected by 30 Nov, it lands near a coin flip.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.45,
+       "reason": "Pirates are reported as slightly ahead of Praha sobě for the third seat at the table, but ODS-Pirates relations in Prague are poor after 2022-23, Praha sobě is the smaller and cheaper partner, and any council must also be elected by 30 Nov (about 0.8). Roughly 0.57 x 0.8, shaded down because a Pirate deal is likelier to take longer.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.45,
+       "reason": "Model, no market: Pirates 0.50, Praha sobě 0.35, two-party STAN-Spolu 0.15 (talks with Pirates slightly further along, but Praha sobě has 13 seats to 7 and STAN-Spolu need neither), times 0.92 that a council is elected by 30 Nov, with a little credit for a four-party variant.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.5,
+       "reason": "Pirates or Praha sobě are the third partner with Pirates slightly further along; council must also be elected by 30 Nov after the 19 Nov resumption.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "New question: STAN and Spolu are choosing a third partner, Praha sobě or the Pirates.",
+     "note_cs": "Nová otázka: STAN a Spolu vybírají třetího partnera, Prahu sobě, nebo Piráty."
+    }
+   ]
+  },
+  {
+   "id": "cz-media-next-strike",
+   "scope": "cz",
+   "topic": "Public media fees",
+   "question": "Will employees of Česká televize or Český rozhlas hold another strike by 31 January 2027?",
+   "question_cs": "Uspořádají zaměstnanci České televize nebo Českého rozhlasu další stávku do 31. ledna 2027?",
+   "criterion": "Yes if, between 4 Nov 2026 00:00 and 31 Jan 2027 23:59 CET, employees of ČT or ČRo stop work in a strike or warning strike against the bill abolishing the licence fees, as reported by ČTK, ČT24, iROZHLAS or another major Czech outlet. A statement, rally or on-screen symbol without a work stoppage does not count. Otherwise no.",
+   "criterion_cs": "Ano, pokud mezi 4. listopadem 2026 00:00 a 31. lednem 2027 23:59 SEČ zaměstnanci ČT nebo ČRo přeruší práci ve stávce nebo výstražné stávce proti návrhu na zrušení koncesionářských poplatků, podle ČTK, ČT24, iROZHLASu nebo jiného velkého českého média. Prohlášení, shromáždění nebo symbol na obrazovce bez přerušení práce se nepočítají. Jinak ne.",
+   "resolution_source": "https://www.ceskenoviny.cz/",
+   "opened": "2026-11-03",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "sources": [
+    {
+     "title": "Mediaguru: thousands in Wenceslas Square",
+     "url": "https://www.mediaguru.cz/tisice-lidi-na-vaclavskem-namesti-demonstruji-na-podporu-ct-a-cro"
+    },
+    {
+     "title": "ČT24: ČT and ČRo to strike on 3 Nov",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ct-a-cro-budou-3-listopadu-stavkovat-k-protestum-se-prida-verejnost-napric-zemi-379229"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.25,
+     "combined": 0.246,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.16,
+       "reason": "A second work stoppage within three months of a large one-day protest strike is uncommon, roughly 10-20% by judgement: strikers go unpaid and rallies are the cheaper escalation, as on 17 Nov. The mid-January second reading and Babiš's refusal to withdraw the bill give a real trigger, which keeps it at the upper end.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "Babiš is not backing down and a mid-January second reading is a natural trigger. But the strike was just held, strikers go unpaid, the 17 Nov and rally routes need no stoppage, and a real work stoppage within 12 weeks is a high bar.",
+       "at": "2026-11-03T18:35:58Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.42,
+       "reason": "Case against: public-broadcaster strikes are costly and the unions have now spent their strongest card; the next pressure points are rallies (17 Nov) and the January second reading, the coalition may soften the bill (voluntary-payment and SPD variants) and remove the trigger, and a second reading around 15 Jan could slip past January. For: even a short warning stoppage counts, the organisation is in place with 1,340 ČRo participants, Babiš refuses to withdraw, and groups that have struck once strike again more easily.",
+       "at": "2026-11-03T18:10:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "Outside view, no market: a second work stoppage within three months is uncommon, strikers go unpaid and the bill sits in committee until December. Raised from about 0.12 because Babiš refuses to withdraw, 1,340 ČRo staff already joined, and a mid-January second reading gives a natural trigger, though a repeat rally alone would not count.",
+       "at": "2026-11-03T18:40:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.3,
+       "reason": "Strikers lose pay and Babiš won't withdraw the bill, but the mid-January second reading is a natural trigger for another warning strike; nothing announced yet.",
+       "at": "2026-11-03T18:35:36Z"
+      }
+     ],
+     "note": "New question after the 3 Nov strike; second reading is expected around 15 January.",
+     "note_cs": "Nová otázka po stávce 3. listopadu; druhé čtení se čeká kolem 15. ledna."
+    }
+   ]
+  },
+  {
+   "id": "il-eisenkot-tasked",
+   "scope": "world",
+   "topic": "Israeli coalition",
+   "question": "Will President Herzog give Gadi Eisenkot the first mandate to form Israel's next government by 12 November 2026?",
+   "question_cs": "Pověří prezident Herzog do 12. listopadu 2026 Gadiho Eisenkota jako prvního sestavením příští izraelské vlády?",
+   "criterion": "Yes if, by 12 Nov 2026 23:59 CET, the Israeli President's Office (president.gov.il) announces that Eisenkot has received the first mandate to form a government after the 27 Oct 2026 Knesset election. No if another person receives it first, or no mandate is given by then.",
+   "criterion_cs": "Ano, pokud izraelská prezidentská kancelář (president.gov.il) do 12. listopadu 2026 ve 23:59 SEČ oznámí, že Eisenkot dostal první pověření sestavit vládu po volbách do Knesetu 27. října 2026. Ne, pokud je dříve pověřen někdo jiný nebo pokud do té doby nikdo pověřen není.",
+   "resolution_source": "https://www.gov.il/en/departments/the_president_of_the_state_of_israel/govil-landing-page",
+   "opened": "2026-11-03",
+   "resolves_by": "2026-11-12T23:59:00+01:00",
+   "sources": [
+    {
+     "title": "Al Jazeera: opposition leaders back Eisenkot",
+     "url": "https://www.aljazeera.com/news/2026/11/3/israeli-opposition-leaders-back-eisenkot-to-oust-netanyahu"
+    },
+    {
+     "title": "Ynet: projected recommendations",
+     "url": "https://www.ynetnews.com/article/sk8eaw4pge"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-11-03T18:57:30Z",
+     "p": 0.77,
+     "combined": 0.77,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "reason": "The most-recommendations rule makes him the favourite if either Arab list recommends him, with five parties already behind him and both camps reportedly expecting it. The rest is both Arab lists abstaining (Netanyahu) or a small chance Herzog uses unity pressure or a third name; the statutory 11 Nov deadline makes timing a minor risk.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.81,
+       "reason": "Five-party backing plus a likely Arab-list route to 60-67 recommendations makes him the clear favourite, with Herzog bound by the 11 Nov deadline inside the window. Main risk is the formal Arab recommendations failing to materialise, or Herzog using his discretion, given UTJ and Likud consultations are still to come.",
+       "at": "2026-11-03T18:35:59Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.71,
+       "reason": "Complement of the Netanyahu case with a few points for a delay or a different first nominee: the five opposition parties all back him, the Arab lists lean his way and one of them is enough, and Herzog has no reason to defy a plurality of recommendations. The risk is that neither Arab list formally recommends, leaving 48 against 53 and a count-following president.",
+       "at": "2026-11-03T18:38:13Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.82,
+       "reason": "Polymarket next-PM 0.467 understates this because a first mandate is much easier than forming a government. Raised on the five-party backing and Arab lean towards 67 recommendations; held back as Joint List and Ra'am are not formal and Likud reports last.",
+       "at": "2026-11-03T18:36:00Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.66,
+       "reason": "The opposition five back Eisenkot and both blocs expect him to get the mandate, but the 67 depends on Joint List and Ra'am recommending, which is not formal. Herzog usually follows the larger recommendation count, and Likud consults last on Thursday.",
+       "at": "2026-11-03T18:35:46Z"
+      }
+     ],
+     "note": "New question: the opposition five back Eisenkot; Herzog must decide by 11 Nov.",
+     "note_cs": "Nová otázka: pět opozičních stran podporuje Eisenkota; Herzog musí rozhodnout do 11. listopadu."
     }
    ]
   }
