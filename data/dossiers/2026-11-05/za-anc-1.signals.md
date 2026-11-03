@@ -11,3 +11,6 @@ No market covers the ANC's national share or the turnout.
 
 ## Other signals
 - No published model of the national share found. Ipsos says its figures are not a prediction.
+
+## Overnight signals (3 Nov)
+Poll model refreshed: lead 31, sd 5.5, threshold 33 gives 0.358. No market on national share. Polymarket Zille Johannesburg mayor 0.57.

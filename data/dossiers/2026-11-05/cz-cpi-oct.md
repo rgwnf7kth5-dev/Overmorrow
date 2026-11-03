@@ -44,3 +44,7 @@
 - https://www.fxstreet.cz/odhad-csu-mezirocni-inflace-v-cr-zrychlila-na-25-procenta.html
 - data/planning/agenda.json; data/watchlist.json (cz-cpi-oct-above-sept)
 - Could not be read: the July 2026 monthly estimates page on the Czech portal zpravy (robots refused) (robots)
+
+## Overnight update (read 3 Nov ~04:00Z)
+- Flash date: Wed 4 Nov per two market notes (fxstreet.cz 209825, 209842) and Raiffeisenbank ("4 or 10 November"). ČSÚ calendar not read; 09:00 customary.
+- Published forecasts for October y/y: Komerční banka-attributed 2.3 (209825), ČSOB 2.4 "very slightly below the market" (209827), another note 2.4 (209842), Raiffeisenbank 2.5, +0.5% m/m (209602). Mean 2.4. September was 2.5. No numeric poll consensus. ČNB meets Thu 5 Nov; consensus +25 bp to 4.00%.

@@ -41,3 +41,12 @@
 - https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/ (via agenda)
 - https://www.cnbcafrica.com/2026/iran-claims-four-tankers-struck-mines-in-hormuz-as-strike-fears-grow-after-u-s-midterms (via agenda)
 - data/dossiers/2026-10-28/us-iran-strike-27.md ; data/dossiers/2026-11-04/ir-ukmto-1.md ; data/watchlist.json
+
+## Overnight update (read 3 Nov ~04:05Z)
+- The US reportedly struck targets on Qeshm Island on the night of 2 Nov, before this claim's window (opens 05:00Z). Confirmation so far anonymous only (WSJ, CBS/BBC, Axios, NewsNation, AP "a US official"); CENTCOM did not comment; Pentagon referred questions to CENTCOM. Stated anonymously: IRGC fired on a US aircraft; strikes "limited", "defensive". The dossier's "no US strike since about 1 Sep" is out of date: WSJ calls this the latest of a series of limited strikes in recent weeks, kept quiet, unconfirmed on record.
+- Trump on Monday, before the reports: asked if he would strike after the midterms: "no", "no rush", "One way or the other, we will do something, but there is no rush"; "might need to go after Pickaxe"; "we haven't been doing any fighting for months". Channel 12: Trump rebuffed Netanyahu's push to resume strikes. Mojtaba Khamenei told forces to respond to attack immediately with no geographical restriction. No Iranian retaliation found at read time.
+- Key for the criterion: named on-record confirmation by WH/Trump/DoW/CENTCOM of a strike carried out IN the window is required; quiet strikes have so far not been confirmed on record.
+- Sources: https://www.yahoo.com/news/us/articles/us-strikes-iran-ahead-midterm-033914733.html ; https://www.thenationalnews.com/news/us/2026/11/03/us-strike-qeshm-iran-hormuz/ ; https://www.siasat.com/us-launches-defensive-strikes-on-iranian-targets-in-hormuz-3568878/ ; https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html
+
+## Red-team update (3 Nov ~05:25 CET)
+A confirmation published after the window counts (by resolves_by, 12:00 CET on 5 Nov); the window closing at 15:29 ET limits the strike, not the confirmation. "Never confirmed on record" holds only for the recent quiet series: CENTCOM confirmed a Qeshm strike on 3 Jun within a day (https://www.pukmedia.com/EN/Details/81696). No in-window strike or on-record confirmation of the 2 Nov strike found.

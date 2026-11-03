@@ -41,6 +41,51 @@
    "note": "No new Kantar model found: ČT24's summary of 1 Nov, the ČTK list and the planning file of 31 Oct do not mention one and politpro's Kantar table ends with the August poll; the ČT topic page itself could not be opened.",
    "resolved_at": "2026-11-02T05:20:00+01:00",
    "held": false
+  },
+  {
+   "claim": "bg-iotova-wins-1",
+   "outcome": "yes",
+   "evidence": "https://kyivindependent.com/russia-friendly-yotova-wins-bulgarias-presidential-runoff/",
+   "note": "Kyiv Independent, citing BNT and the central election commission, reports Yotova 57.58% to Gyurov 39.47% with 99.95% of protocols processed in the 1 Nov runoff; cik.bg itself could not be fetched.",
+   "resolved_at": "2026-11-03T05:22:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "bg-turnout-above-r1-1",
+   "outcome": "yes",
+   "evidence": "https://kyivindependent.com/russia-friendly-yotova-wins-bulgarias-presidential-runoff/",
+   "note": "Kyiv Independent reports runoff turnout of about 27-29%, 'a few percentage points higher' than the first round's record low, so above 22.98% across the whole range; cik.bg itself could not be fetched.",
+   "resolved_at": "2026-11-03T05:22:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-strike-off-1",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/2894956",
+   "note": "CTK via Ceske noviny on 2 Nov still reports the full-day CT and CRo strike and Tuesday's protest as going ahead, and a CTK headline says the strike began, so it was not called off by 1 Nov.",
+   "resolved_at": "2026-11-03T05:22:00+01:00"
+  },
+  {
+   "claim": "us-iran-talks-1",
+   "outcome": "no",
+   "evidence": "https://www.aljazeera.com/news/2026/11/2/iran-pushing-accelerated-plan-for-ceasefire-talks-with-us",
+   "note": "Al Jazeera on 2 Nov reports no date announced and no acceptance of the US proposal, with Baghaei saying talks could begin 'within a short period' only if Iran's demands are met; Reuters via Al-Monitor describes Doha contacts through Qatari mediators with no US delegation reported.",
+   "resolved_at": "2026-11-03T05:22:00+01:00"
+  },
+  {
+   "claim": "us-trump-rally-1",
+   "outcome": "yes",
+   "evidence": "https://www.yahoo.com/news/politics/articles/trump-rallies-iowa-kansas-final-103939043.html",
+   "note": "The Yahoo-hosted report, matched by AP via ABC News and Iowa Public Radio, says Trump spoke in person on 1 Nov at rallies in Dubuque, Iowa, and Salina, Kansas, with Iowa Republican candidates present.",
+   "resolved_at": "2026-11-03T05:22:00+01:00"
+  },
+  {
+   "claim": "opec-dec-hold-1",
+   "outcome": "yes",
+   "evidence": "https://tass.com/economy/2211539",
+   "note": "TASS reports the seven countries met on 1 Nov and decided to maintain September 2026 required production for December, keeping quotas at the November level; Iraq Business News quotes the same statement, and opec.org could not be fetched.",
+   "resolved_at": "2026-11-03T05:22:00+01:00",
+   "held": true
   }
  ],
  "corrections": []

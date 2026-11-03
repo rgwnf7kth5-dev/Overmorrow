@@ -43,3 +43,7 @@
 - https://houseofsaud.com/iran-hormuz-ceasefire-conditions-oct28/ (via agenda)
 - data/dossiers/2026-11-04/ir-ukmto-1.md ; data/dossiers/2026-10-28/us-iran-deal-announced.md
 - Refused: https://aa.com.tr/en/world/araghchi-says-iran-awaits-formal-us-response-on-hormuz-proposal/4070470 (robots)
+
+## Overnight update (read 3 Nov ~04:05Z)
+- Iranian negotiators left Doha on 1 Nov (RFE/RL: not a breakdown; a draft is circulating). Baghaei 2 Nov: seven-step plan condensed to "within two days"; demands unchanged (lifting naval blockade, sanctions, guarantee against strikes, regional ceasefire incl. Lebanon). Iran: "the ball is in the US court". Trump: a deal "could happen", "Iran wants a settlement". US reportedly struck Qeshm on the night of 2 Nov (anonymous sources). No arrangement announced.
+- Sources: https://www.aljazeera.com/news/2026/11/2/iran-pushing-accelerated-plan-for-ceasefire-talks-with-us ; https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html
