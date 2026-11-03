@@ -42,7 +42,7 @@ Každé vydání začíná průchodem oficiálních kalendářů na den D+1. Sez
 
 Mnoho důležitých událostí v žádném kalendáři není: vyjednávání, války, krize, kampaně. U každé probíhající kauzy čteme zpravodajství za posledních 48 hodin aspoň ze dvou nezávislých zdrojů a určíme další krok, který se čeká na den D+1.
 
-Od vydání č. 6 začíná výběr **hlavními tématy dne**: kauzami, které vedou, nebo jsou mezi prvními pěti, aspoň na dvou referenčních titulních stránkách (Reuters World a Business, AP, BBC, Financial Times, ČT24, Seznam Zprávy, iROZHLAS). O nich budou čtenáři dne D+1 slyšet, a proto každá dostane zprávu s predikcí dalšího vývoje do konce toho dne, i když žádná instituce nic nenaplánovala. Aspoň šest z osmi až deseti největších musí být v novinách; u ostatních se zapíše důvod.
+Od vydání č. 6 začíná výběr **hlavními tématy dne**: kauzami, které vedou, nebo jsou mezi prvními pěti, aspoň na dvou referenčních titulních stránkách (Reuters World a Business, AP, BBC, Financial Times, ČT24, Seznam Zprávy, iROZHLAS). O nich budou čtenáři dne D+1 slyšet, a proto každá dostane zprávu s predikcí dalšího vývoje do konce toho dne, i když žádná instituce nic nenaplánovala. Od vydání č. 15 zpráva začíná něčím, co se ten den skutečně stane, a hlásí jeho výsledek; zpráva o tom, že se něco nestalo, je zprávou jen tehdy, když se to všeobecně čekalo, a ve vydání smějí být nanejvýš tři takové. Aspoň šest z osmi až deseti největších musí být v novinách; u ostatních se zapíše důvod.
 
 ### 2.3 Záznam kandidátů
 

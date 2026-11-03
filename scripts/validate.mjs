@@ -434,6 +434,16 @@ for (const ed of editions) {
     else if (Math.abs(sum - 1) > 0.011) err(`${w} set ${set}`, `exclusive set sums to ${sum.toFixed(2)}, must be 1.00 (if the set does not cover every outcome, e.g. "not yet decided", mark its claims set_exhaustive: false)`);
   }
   if (ver >= 3) checkCoherence(ed, w);
+  // From config.positive_from: report what happens; at most negative_stories_max "nothing happened" stories.
+  if (ed.number >= (cfg.positive_from ?? Infinity)) {
+    const NEG_EN = /\b(no|not|without|neither|nor|didn['’]t|did not|failed to|fails? to|held off|holds off|still|yet to|stays? silent|stayed silent)\b/i;
+    const NEG_CS = /(^|[\s„"(])(ne(?!děl|mocn|mec|měc|ček|bo|jen|jv|jl|jd|jn|jm|jp|js|jz|ž)[a-zá-žěščřžýáíéůú]{2,}(l|la|lo|li|ly|í|á|ou|ují|ají|ěl|ala|je|jí)|bez|stále|ani)(?=[\s,.;:!?“"]|$)/i;
+    const neg = (ed.stories || []).filter((st) => {
+      const main = (st.claims || [])[0]; // a number forecast leading the story reports a figure, not a non-event
+      return (main && !isInterval(main) && main.probability < 0.5) || NEG_EN.test(st.headline || '') || NEG_CS.test(st.cs?.headline || '');
+    });
+    if (neg.length > (cfg.negative_stories_max ?? 3)) err(w, `${neg.length} stories report that something did not happen (main claim below 50% or a negative headline): ${neg.map((x) => x.id).join(', ')}; at most ${cfg.negative_stories_max}. Lead each story with something that happens that day (EDITOR step 2, "Report what happens").`);
+  }
   checkPhotos(ed, w);
   { let need = null; for (const m of cfg.method_versions || []) if (m.version >= 3 && ed.number >= m.from) need = m.version;
     if (need !== null && ed.method_version !== need) err(w, `method_version: ${need} required for this edition`); }

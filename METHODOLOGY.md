@@ -42,7 +42,7 @@ Every edition starts with a sweep of official calendars for day D+1. The registr
 
 Many important events have no calendar entry: negotiations, wars, crises, campaigns. For each running story we read the reporting of the previous 48 hours from at least two independent outlets and identify the next step that is expected on day D+1.
 
-From edition No. 6 the selection starts from **the stories of the day**: the stories that lead, or are in the top five of, at least two reference front pages (Reuters World and Business, AP, BBC, the Financial Times, ČT24, Seznam Zprávy, iROZHLAS). These are what readers will hear about on D+1, and each of them gets a report with a forecast of its next development by the end of that day, even when no institution has scheduled anything. At least six of the eight to ten biggest must be in the paper; the others are listed with the reason.
+From edition No. 6 the selection starts from **the stories of the day**: the stories that lead, or are in the top five of, at least two reference front pages (Reuters World and Business, AP, BBC, the Financial Times, ČT24, Seznam Zprávy, iROZHLAS). These are what readers will hear about on D+1, and each of them gets a report with a forecast of its next development by the end of that day, even when no institution has scheduled anything. From edition No. 15 a report leads with something that happens that day and reports its outcome; a report that something did not happen is news only when it was widely expected, and an edition carries at most three of them. At least six of the eight to ten biggest must be in the paper; the others are listed with the reason.
 
 ### 2.3 Recording candidates
 
