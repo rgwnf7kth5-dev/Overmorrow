@@ -12,3 +12,6 @@ Read 2026-11-02T18:14–18:17Z with `node scripts/markets.mjs search`, queries "
 
 ## Published models
 - None found.
+
+## Overnight signals (read 3 Nov ~04:07Z)
+Polymarket "US x Iran ceasefire continues through November 3?" Yes 0.10, volume $278k; through 5 Nov 0.083; 2 Nov market 0.4935 (rules not read; no stored comparator). No market on on-record confirmation of a strike in the window.

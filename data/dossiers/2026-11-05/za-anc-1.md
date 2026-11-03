@@ -45,3 +45,8 @@
 - https://www.timeslive.co.za/politics/elections-2026/2026-10-24-mk-eyes-durban-majority-da-leads-in-tshwane/
 - https://www.timeslive.co.za/politics/2026-10-10-da-leads-anc-in-knife-edge-metro-races/
 - work/agenda-world.json
+
+## Overnight update (read 3 Nov ~04:05Z)
+- Ipsos PDF read: ANC 30, DA 28, MK 12, EFF 10, don't know 3 (registered voters, 12 Sep–13 Oct). SRF October: ANC 32 (replaces July 34). Daily Maverick: all polls 22–32. Latest-poll average about 31.
+- Ipsos's table gives the ANC 2021 result as 47.5 against the dossier's 45.6 (unresolved): the gap between ballot types may be about 2 points, not "a few tenths". Criterion reads the PR-ballot national figure where published.
+- Date and result timing unchanged.

@@ -11,3 +11,6 @@ Read 2026-11-02T18:15–18:16Z with `node scripts/markets.mjs search`, queries "
 
 ## Published models
 - None found.
+
+## Overnight signals (read 3 Nov ~04:07Z)
+Polymarket "no-hormuz-agreement-by-nov-2" Yes 0.985, volume $897k, closes 4 Nov (rules not read). Strait traffic normal by 30 Nov 0.055; by 31 Dec 0.115. Brent settled $104.77 on 2 Nov, down sharply.

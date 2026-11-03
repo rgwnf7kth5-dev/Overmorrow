@@ -54,3 +54,6 @@ Read by 2026-11-02T18:51:33Z through a summarising fetch tool; quoted wording is
 
 ### Facts: expectation for this Q3
 - No analyst statement on the Q3 2026 outlook change was found. The latest full-year guidance comment read concerns the Q2 report (Citi via Dow Jones, 2026-07-20, https://www.itiger.com/hans/news/2652267239). Stockti (published 2026-08-16) gives the date of Q3 results and no view on guidance: https://stockti.com/novo-nordisk-outlook-upgrade-fails-to-lift-shares-as-analysts-see-slim-gains
+
+## Red-team update (3 Nov ~05:25 CET)
+The evening anchor's "raised at Q3 about 5 of 5" was from memory; the dossier's sourced record: 2023 raised before the report, 2024 symmetric narrowing, 2025 cut. FY revenue consensus sits in the lower half of the range.

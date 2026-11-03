@@ -49,3 +49,6 @@
 - https://www.flux.live/reports/brent-falls-to-108-on-renewed-us-iran-negotiation-hopes/
 - data/dossiers/2026-11-04/cz-diesel-cap-2.md
 - data/updates/2026-11-04.json
+
+## Red-team update (3 Nov ~05:25 CET)
+Brent settled at $104.77 on 2 Nov (Seoul Economic Daily; percentage disputed) against the 108.40 intraday figure used by the evening; early 3 Nov about 105.25 (The National). Gasoil unread. Cap for 3 Nov confirmed 49.35 (ČTK). The days dropping from the averaging window are the dear 27 and 29 Oct.

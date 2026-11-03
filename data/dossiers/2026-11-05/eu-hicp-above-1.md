@@ -25,3 +25,5 @@
 
 ## Sources
 - As listed in data/dossiers/2026-11-05/eu-hicp-oct.md.
+## Red-team update (3 Nov ~05:25 CET)
+October national flashes, published 30 Oct: Germany HICP 2.8 (Sep 3.3), Destatis PE26_382; Spain HICP 4.9 (Sep 5.0), INE; Italy HICP 5.6 and CPI 5.4 (Sep CPI 4.2, on regulated energy tariffs), France HICP 3.8 (Sep 3.4), Euronews 30 Oct. https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html ; https://www.ine.es/dyngs/Prensa/en/adIPC1026.pdf ; https://www.euronews.com/2026/10/30/germany-france-italy-and-spain-where-was-inflation-highest-in-october . Rough sum with approximate weights from Sep euro-area 3.78: about 3.9 to 3.95.
