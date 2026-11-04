@@ -1,0 +1,1319 @@
+{
+  "edition": "2026-11-06",
+  "frozen_at": "2026-11-04T12:41:00+01:00",
+  "revisions": [
+    {
+      "claim": "us-senate-seats-1",
+      "probability": 0.98,
+      "kind": "confirmation",
+      "reason": "AP had called 20 Democratic wins by 11:21 UTC on 4 November, among them Minnesota, Maine and Michigan after the morning freeze, which with 34 holdovers makes 54 seats. New ensemble: base-rate 0.99, evidence 0.99, adversarial 0.97, anchor 0.99, outsider 0.97.",
+      "reason_cs": "Agentura AP do 12:21 SEČ 4. listopadu vyhlásila 20 vítězství demokratů, po ranní uzávěrce mimo jiné v Minnesotě, Maine a Michiganu, což s 34 senátory mimo volbu dává 54 křesel. Nový soubor odhadů: 0,99, 0,99, 0,97, 0,99, 0,97.",
+      "sources": [
+        {
+          "title": "NPR/AP Senate results feed",
+          "url": "https://apps.npr.org/2026-election-results/data/senate.json"
+        },
+        {
+          "title": "NBC News: Senate results",
+          "url": "https://www.nbcnews.com/politics/2026-elections/senate-results"
+        }
+      ]
+    },
+    {
+      "claim": "us-maine-1",
+      "probability": 0.99,
+      "kind": "confirmation",
+      "reason": "AP called Maine for Troy Jackson at 1:02 a.m. ET on 4 November, with Collins conceding. New ensemble: base-rate 0.99, evidence 0.99, adversarial 0.98, anchor 0.99, outsider 0.99.",
+      "reason_cs": "AP vyhlásila v Maine vítězem Troye Jacksona 4. listopadu v 7:02 SEČ, Collins uznala porážku. Nový soubor odhadů: 0,99, 0,99, 0,98, 0,99, 0,99.",
+      "sources": [
+        {
+          "title": "Maine Public: Troy Jackson unseats Susan Collins",
+          "url": "https://www.mainepublic.org/politics/2026-11-04/susan-collins-concedes-to-troy-jackson-in-maine-senate-race"
+        },
+        {
+          "title": "NPR/AP Senate results feed",
+          "url": "https://apps.npr.org/2026-election-results/data/senate.json"
+        }
+      ]
+    },
+    {
+      "claim": "ua-drones-2",
+      "probability": 0.68,
+      "kind": "forecast",
+      "reason": "The Ukrainian Air Force reported 310 drones in the night to 4 November, the fourth night running above 150. New ensemble: base-rate 0.70, evidence 0.63, adversarial 0.68, anchor 0.67, outsider 0.72.",
+      "reason_cs": "Ukrajinské letectvo hlásilo v noci na 4. listopadu 310 dronů, už čtvrtou noc v řadě přes 150. Nový soubor odhadů: 0,70, 0,63, 0,68, 0,67, 0,72.",
+      "sources": [
+        {
+          "title": "Kyiv Post: Russia attacks Ukraine with 310 drones",
+          "url": "https://www.kyivpost.com/post/89068"
+        }
+      ]
+    },
+    {
+      "claim": "fr-strike-2",
+      "probability": 0.77,
+      "kind": "forecast",
+      "reason": "A French intelligence note reported by RTL on 4 November expects 500,000-700,000 demonstrators in the regions, and a Paris police note 40,000-80,000. New ensemble after the union of facts: base-rate 0.72, evidence 0.81, adversarial 0.73, anchor 0.78, outsider 0.78.",
+      "reason_cs": "Podle zprávy francouzských tajných služeb, o níž 4. listopadu informovalo RTL, se v regionech čeká 500 až 700 tisíc demonstrantů a podle pařížské policie 40 až 80 tisíc v Paříži. Nový soubor odhadů po sjednocení faktů: 0,72, 0,81, 0,73, 0,78, 0,78.",
+      "sources": [
+        {
+          "title": "RTL: 500,000 to 700,000 expected in the regions",
+          "url": "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-5-novembre-500-000-a-700-000-manifestants-attendus-en-regions-d-apres-les-renseignements-journee-classee-a-risque-7900692469"
+        },
+        {
+          "title": "BFMTV via Yahoo: mobilisation du 5 novembre",
+          "url": "https://fr.news.yahoo.com/mobilisation-5-novembre-entre-500-101450757.html"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "us-senate-seats-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.99,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Already decided by the resolver's source: NPR/AP feed at 11:21Z shows 20 AP Democratic calls plus 34 holdovers = 54, and AP retractions are vanishingly rare.",
+          "p": 0.99,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Already decided by the resolver's source: AP via NPR shows 20 Democratic calls plus 34 holdovers = 54, and only a retracted call could undo it."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.99,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "The AP feed I read shows 20 Democratic calls which with 34 holdovers already make 54; only a retracted call could undo it.",
+          "p": 0.99,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP's feed already shows 20 Democratic calls plus 34 holdovers, 54 seats; only a retraction could change it, and the morning prices are superseded by those calls."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.97,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "AP has already called 20 Democratic wins plus 34 holdovers = 54 and NBC agrees; the only paths to NO are an AP retraction, a feed glitch, or a miscount of an independent, all rare.",
+          "p": 0.97,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP already shows 54 Democratic-caucus seats (20 calls plus 34 holdovers), NBC agrees and Polymarket had every needed race above 0.98; only a retraction or feed error gives NO."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.99,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Afternoon read of the AP feed has 20 Democratic calls plus 34 holdovers, already 54, so only a retracted AP call could undo it."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.96,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "AP already had 54 Democratic-caucus seats by midday 4 Nov and calls only add.",
+          "p": 0.97,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP already had 54 by midday 4 Nov and further calls only add."
+        }
+      ],
+      "combined": 0.9844,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.02,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      }
+    },
+    {
+      "claim": "us-maine-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.99,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Already decided: AP called Maine for Jackson at 06:02Z (1:02 a.m. ET) with a 7.7-point margin and Collins conceded.",
+          "p": 0.99,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Already decided: AP called Maine for Jackson at 06:02Z, Collins conceded and the margin is 7.7 points."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.99,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "The AP feed carries Jackson's win with winnerDateTime 2026-11-04T06:02Z, inside the window.",
+          "p": 0.99,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP's call for Jackson is in the feed, dated 06:02Z on 4 Nov, inside the window."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.98,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "AP called Jackson at 06:02Z with a 53.8-46.1 margin and Collins conceded; a retraction is the only NO path.",
+          "p": 0.98,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP called Jackson at 06:02Z by 7.7 points and Collins conceded; a retraction is the only NO path."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.99,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "AP called Maine for Jackson at 1:02 a.m. ET on 4 Nov and Collins conceded, so the outcome is settled barring a feed anomaly."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.99,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "AP called Jackson at 1:02 a.m. ET on 4 Nov, inside the window.",
+          "p": 0.99,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "AP called Jackson at 1:02 a.m. ET on 4 Nov."
+        }
+      ],
+      "combined": 0.9885,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.01,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      }
+    },
+    {
+      "claim": "cz-cnb-hike-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.9,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Central banks move as priced in roughly nine of ten cases at this consensus; analysts kept 4.00% after a flash CPI only 0.1 below expectations with core unchanged, less about 1% slip.",
+          "p": 0.955,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The priced-move base rate of about 0.9 moves up on Kalshi's 0.99 for a hike read after the flash CPI plus unanimous analysts, with a discount because that market's prices can be stale and thin.",
+          "p_held": 0.993,
+          "p_if_held": 0.96
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.91,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "A 0.1pp downside CPI surprise with core unchanged at 3.3% left analysts unanimous on +25bp to 4.00%, and a hold needs a board majority to look through forecast upgrades that argue the other way.",
+          "p": 0.96,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Kalshi read after the flash CPI still has a 25bp hike at 0.99 bid, matching unanimous analysts, so I move up from 0.91 and shade slightly for a thin market that has shown stale prices."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.78,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Hike almost fully priced and analysts still expect 4.00%, but October CPI undershot at 2.4%, Brent fell, GDP undershot and this board has held against expectations before, so a hold is a real minority outcome.",
+          "p": 0.88,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Kalshi priced a hike at 0.99 after the soft 2.4% CPI flash and analysts still expect 4.00%, but the Kalshi book is thin and this board has surprised with holds before, so the undershoot, falling Brent and weak GDP keep a hold as a live minority outcome.",
+          "p_held": 0.993,
+          "p_if_held": 0.89
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.94,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Kalshi hike strike reads 0.99 after the flash CPI, shaded to 0.94 because the book is thin and partly stale while unanimous analyst consensus of +25bp survived a 0.1pp CPI miss."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.7,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "October CPI undershot at 2.4% but analysts still expect a 25bp hike to 4.00% on a hawkish outlook.",
+          "p": 0.96,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Kalshi prices a 1-25bp hike at 0.99 and analysts kept their call after the soft CPI."
+        }
+      ],
+      "combined": 0.9443,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.08,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "market": {
+        "p": 0.99,
+        "read_at": "2026-11-04T12:25:00+01:00",
+        "url": "https://kalshi.com/markets/kxcbdczech"
+      }
+    },
+    {
+      "claim": "cz-cnb-vote-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.35,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rate-changing ČNB decisions were unanimous 4 of 11 since 2023 and the only comparable hike went 6-1 with Kubelková dissenting; softer CPI and lower oil do not help unanimity.",
+          "p": 0.36,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Rate-changing decisions were unanimous 4 of 11 since 2023 and the only comparable hike went 6-1; no signal exists on the split and a near-certain hike only slightly narrows the room for dissent.",
+          "p_held": 0.993,
+          "p_if_held": 0.36
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.36,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rate changes were unanimous in only 4 of 11 cases since 2023, Kubelkova dissented on the June hike, and the softer flash CPI gives a dove cover for a hold vote.",
+          "p": 0.36,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "There is no market on the split, so my blind view stands: rate changes split in 7 of 11 cases since 2023, Kubelkova dissented in June, and the soft flash gives a dove cover."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.3,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "The only hike in the sample (June) was 6-1 with Kubelkova dissenting, a softer CPI print gives doves more reason to dissent, and a surprise hold would itself split from the hawkish side; rate changes were unanimous in only 4 of 11 cases.",
+          "p": 0.3,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The one hike in the sample (June) was 6-1 with Kubelkova dissenting, a softer CPI print gives doves more reason to dissent, and a surprise hold would split from the hawkish side; rate changes were unanimous in only 4 of 11 cases.",
+          "p_held": 0.993,
+          "p_if_held": 0.3
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.32,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Binomial with 0.85 per member for siding with the majority gives 0.32, matching the 4 of 11 unanimous rate changes and the 6-1 June hike with Kubelkova dissenting, and the soft flash CPI gives no reason to go higher."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.35,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "A hike after a soft CPI print makes a split board likely, and a hold would mean dissent from hawks.",
+          "p": 0.35,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No split forecast exists; a hike amid a soft CPI print and a tightening cycle often draws dissent, but unanimity is plausible."
+        }
+      ],
+      "combined": 0.3376,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.06,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      }
+    },
+    {
+      "claim": "cz-cnb-fc-2027-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.94,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Threshold equals the August figure, so 0.1 up suffices, and inflation outturns, energy assumptions and analysts (above 3% in 2027) all point well above it; the higher rate path and rounding are the small risks.",
+          "p": 0.94,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "A 0.1 rise from August suffices and ING (3.4%) and Komerční banka (peak about 3.8%) sit well above it, leaving the higher rate path and rounding as the small risks.",
+          "p_held": 0.993,
+          "p_if_held": 0.947
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.96,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "August's 2.5% needs only +0.1pp, and energy, food, the end of the renewables-levy effect, wages and analysts seeing 2027 above 3% all push it up, with one October tenth irrelevant.",
+          "p": 0.96,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No market exists, but ING's 3.4% and KB's near-3.8% February peak confirm the upward direction against a threshold needing only +0.1pp from August."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.72,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "August had exactly 2.5% and outturns, energy, EURIBOR and wage assumptions push up, with Q1 2027 already near 3%, but the model's higher rate path and convergence to target plus rounding to 2.5 can keep the row at or below the threshold.",
+          "p": 0.72,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "August had exactly 2.5% and outturns, energy, EURIBOR and wage assumptions push up (KB sees a 3.8% peak in Feb 2027), but the model's higher rate path and convergence to target plus rounding to 2.5 can keep the row at or below the threshold.",
+          "p_held": 0.993,
+          "p_if_held": 0.73
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.9,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Release model with my central 3.0 for the new figure, threshold 2.55 and sd 0.35 gives 0.90, the threshold equals the August figure and oil, gas, wages and the September overshoot all push up."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.85,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Core 3.3%, services above 4% and analysts see inflation above 3% next year, so the 2027 forecast is likely above 2.5%.",
+          "p": 0.88,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "ING expects 3.4% for 2027 and analysts see inflation above 3%, so the ČNB forecast is very likely above 2.5%."
+        }
+      ],
+      "combined": 0.9014,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.24,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "note": "Spread above 15 points comes from the adversarial forecaster; no disputed fact to settle, the morning figure stands."
+    },
+    {
+      "claim": "ua-drones-2",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.7,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "About five of seven known recent nights reached 150 and the last four did (median near 290), but attacks pulse and nights of 112-113 occurred a week ago.",
+          "p": 0.7,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "About five of seven known recent nights reached 150, including the last four, but attacks pulse and 112-113 nights occurred a week ago; no market exists."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.63,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Four straight nights above 150 (433, 193, 289, 310) and a high autumn level favour YES, but nights of 112-113 a week earlier show that pauses between large pulses are common.",
+          "p": 0.63,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No market signal exists, so the blind estimate stands: four straight nights above 150 against pauses of 112-113 a week earlier."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.68,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Four nights in a row above 150 (433, 193, 289, 310) but Russia attacks in pulses and late October nights were 112-113, so a lull night after a heavy run is plausible.",
+          "p": 0.68,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Four nights in a row above 150 (433, 193, 289, 310) but Russia attacks in pulses and late-October nights were 112-113, so a lull after a heavy run is plausible; no market signal."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.67,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "4 of 6 known recent nights reached 150 and a lognormal fit with median about 200 gives about 0.70, trimmed slightly because large attacks come in pulses and the last two weeks included nights near 112."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.72,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Four straight nights above 150 drones, though lulls occur around talks.",
+          "p": 0.72,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Four straight nights above 150 drones, with no contrary signal."
+        }
+      ],
+      "combined": 0.6807,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.09,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      }
+    },
+    {
+      "claim": "fr-budget-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.56,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rejection is near certain and the PLFSS revenue part was voted straight after debate on 23 Oct, but no date is set, two earlier solemn dates slipped, the page runs to 6 Nov, and a solemn vote on Tuesday 10 Nov remains the usual slot.",
+          "p": 0.72,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The Conférence record removes the solemn-vote slot, so the vote follows the last amendment and rejection is near certain; the live risk is debate running past Thursday midnight, given Arcadie's Thursday-or-Friday estimate and two earlier slips against LCP's Wednesday evening.",
+          "p_held": 0.74,
+          "p_if_held": 0.98
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.75,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rejection is near certain and LCP puts the end of debate probably on Wednesday evening, with the PLFSS (23 Oct) and PLF 2026 precedents of voting at once, but no vote time is published, the Assembly page runs to Friday 6 Nov, and solemn votes have been a Tuesday slot, so 10 Nov or Friday remain real NO routes.",
+          "p": 0.74,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Arcadie removes the 10 Nov solemn-vote route and AFP and LCP point to Wednesday or Thursday, but Arcadie's own estimate of Thursday or Friday evening keeps a Friday vote or a post-midnight finish as the live NO route, so the net is unchanged."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.38,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rejection is near-certain whenever the vote happens, but the Assembly has twice scheduled a solemn Tuesday vote and the 2025 precedent (exam ends, solemn vote following Tuesday) points to 10 Nov, outside the window, unless the vote is taken at the end of the exam Wednesday night as with the PLFSS on 23 Oct.",
+          "p": 0.68,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The Conference of Presidents dropped the solemn vote, so Part 1 is voted right after the last amendment and rejection is near-certain; the live NO route is the exam running to Friday evening as Projet Arcadie estimates, against LCP's and Chenu's 'Wednesday evening' and AFP's 'Wednesday or Thursday'.",
+          "p_held": 0.72,
+          "p_if_held": 0.95
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.8,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Vote by Thursday about 0.82 (LCP probably Wednesday evening, AFP Wednesday or Thursday, Arcadie Thursday or Friday, no solemn vote) times rejection about 0.97."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.3,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Rejection is likely but the Assemblée schedule runs to Friday and a solemn vote may be set for a later Tuesday.",
+          "p": 0.6,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "No solemn vote is scheduled and rejection is near certain, with the vote expected Wednesday evening or Thursday, but a Friday finish or one past midnight would make it NO."
+        }
+      ],
+      "combined": 0.7124,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.2,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "research": {
+        "at": "2026-11-04T12:31:00+01:00",
+        "question": "Can the vote on Part 1 slip to a solemn vote on Tuesday 10 November?",
+        "finding": "The Conférence des présidents record dropped the solemn vote: Part 1 is voted when the amendments are exhausted, per Projet Arcadie and AFP, possibly Wednesday or Thursday; Arcadie estimates Thursday or Friday evening. The NO route is a Friday vote.",
+        "sources": [
+          "https://projetarcadie.com/budget-2027-pas-de-vote-solennel/",
+          "https://www.boursorama.com/actualite-economique/actualites/budget-2027-les-deputes-s-attaquent-a-la-fiscalite-des-eoliennes-avant-un-vote-couperet-cette-semaine-f6c1c8fa6b55f843fa519069a7ee3adf"
+        ]
+      }
+    },
+    {
+      "claim": "fr-strike-2",
+      "at": "2026-11-04T12:39:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:39:00+01:00",
+          "p_blind": 0.74,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Threshold is about 65% of the low end of the intelligence forecast (540-780k) and this autumn's Saturdays drew 410-550k, though Interior counts often undershoot such notes (weekday 206k on 29 Sep) and RATP expects normal traffic.",
+          "p": 0.72,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "The threshold is about 53% of the 660k forecast midpoint, and even 18 Sep 2025, which undershot, reached 505k against a 750k midpoint (67%), while a joint-union weekday with growing popularity outweighs the falling Saturdays (550k, 410k, 320k), though 2 Oct 2025 at 195k and normal RATP traffic keep real downside.",
+          "p_held": 0.97,
+          "p_if_held": 0.76,
+          "rounds": [
+            {
+              "p": 0.74,
+              "at": "2026-11-04T12:33:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:39:00+01:00",
+          "p_blind": 0.86,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "The intelligence note implies 540-780k, and even the 18 Sep 2025 shortfall (506k against 600-900k, about 0.67 of midpoint) would give about 440k; the ministry already counted 550k and 410k this autumn, leaving a two-thirds miss as the main NO route.",
+          "p": 0.81,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "The 540-780k forecast clears 350k even with an 18 Sep 2025-style one-third shortfall (about 440k) and the 17 Oct forecast undershot, but the falling Saturday counts (550k, 410k, 320k), normal RATP traffic and fear of violence make a sub-350k count a real risk, so I trim from 0.86.",
+          "rounds": [
+            {
+              "p": 0.86,
+              "at": "2026-11-04T12:33:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:39:00+01:00",
+          "p_blind": 0.72,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "The DNRT note expects 540,000-780,000 nationwide and the movement is growing, but intelligence pre-estimates can overshoot a weekday count (29 Sep gave only 206,000), RATP expects normal traffic, and Paris violence or a late revised figure could pull the last ministry figure under 350,000.",
+          "p": 0.73,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "The DNRT/DRPP range of 540,000-780,000 sits far above 350,000 and even the 2025 undershoot (505k on a 600-900k forecast, 84% of the low end) would leave about 450k, but the falling Saturday trend (550k, 410k, 320k), RATP's normal traffic and the weekday strike format (195k-206k on the last two union weekdays) keep a one-in-four chance that the ministry's evening figure lands under the threshold.",
+          "p_held": 0.95,
+          "p_if_held": 0.75,
+          "rounds": [
+            {
+              "p": 0.72,
+              "at": "2026-11-04T12:33:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:39:00+01:00",
+          "p": 0.78,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts",
+            "union-of-facts"
+          ],
+          "reason": "The two given pairs (17 Oct 550k/210k = 2.62, 18 Sep 2025 505k/750k midpoint = 0.67) put the threshold at 0.53 of the 660k midpoint, below the worse ratio, which still implies about 444k, and a normal fit on those two points gives about 0.83, trimmed to 0.78 because two pairs are very thin, the Saturday counts fell to 320k and RATP expects normal traffic.",
+          "rounds": [
+            {
+              "p": 0.86,
+              "at": "2026-11-04T12:33:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:39:00+01:00",
+          "p_blind": 0.6,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Intelligence note expects 540k-780k, but the ministry's final count often falls short of such forecasts.",
+          "p": 0.78,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "reason": "Police forecast of 540-780k sits well above 350k and past forecasts missed by roughly 0.6-1.3x, so the low end of that range still clears the threshold, with residual risk of a weekday fall-off or a late count.",
+          "rounds": [
+            {
+              "p": 0.6,
+              "at": "2026-11-04T12:33:00+01:00",
+              "reason": "first afternoon round, before the union of facts"
+            }
+          ]
+        }
+      ],
+      "combined": 0.7657,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.09,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "disagreement": {
+        "cause": "inputs",
+        "note": "The first round spanned 26 points on different facts; all five reran on the union of facts."
+      },
+      "research": {
+        "at": "2026-11-04T12:38:00+01:00",
+        "question": "How have Interior counts compared with intelligence forecasts, and how was the last day counted?",
+        "finding": "505k on a forecast of 600-900k (18 Sep 2025), 550k on a forecast of 210k (17 Oct 2026), so forecasts miss both ways; RTL first published the note at 09:34Z on 4 Nov, after the freeze; 31 Oct stood at 320k.",
+        "sources": [
+          "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-5-novembre-500-000-a-700-000-manifestants-attendus-en-regions-d-apres-les-renseignements-journee-classee-a-risque-7900692469"
+        ]
+      }
+    },
+    {
+      "claim": "il-recs-2",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.92,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Expected tally is 48 to 46 even with no Arab list, with UTJ the main swing but leaning to no one and Arab recommendations as cover; a defection or a late Yashar slot are the residual risks.",
+          "p": 0.92,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Expected tally is 48 to 46 without any Arab list, with UTJ the main swing but leaning to no one and Arab recommendations as cover; next-PM prices favour Eisenkot but do not match the claim.",
+          "p_held": 0.96,
+          "p_if_held": 0.945
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.9,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "Eisenkot starts 48-46 ahead; only UTJ going to Netanyahu with neither Arab list recommending, a Zionist-party defection or a slot slip reverses it, and the Joint List is likely to back him.",
+          "p": 0.9,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "The market shows only next-PM odds favouring Eisenkot, which does not change the 48-46 base and the several routes that protect his lead."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.76,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Ynet expects 48 vs 46 with UTJ recommending nobody, and the Joint List is reported likely to endorse Eisenkot; NO needs UTJ to go for Netanyahu (53) while both Arab lists withhold, or Liberman to defect, which together is roughly a one-in-four outcome.",
+          "p": 0.76,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Ynet expects 48 vs 46 with UTJ recommending nobody and a Joint List source says it is likely to endorse Eisenkot; NO needs UTJ to back Netanyahu (53) while both Arab lists withhold, or Liberman to defect, roughly a one-in-four combination.",
+          "p_held": 0.88,
+          "p_if_held": 0.8
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.9,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Bloc 48 beats Netanyahu 46 unless UTJ backs him, and then either Arab list adding 6 or more suffices, so NO needs UTJ for Netanyahu plus both Arab lists abstaining or a Liberman defection."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.8,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Eisenkot is expected to lead Netanyahu on recommendations, 48 to 46 per Ynet, with the Joint List likely to endorse him, and the Thursday slots fall within the window.",
+          "p": 0.82,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Eisenkot is expected to lead on recommendations and Polymarket favours him as next PM, with the Thursday slots inside the window."
+        }
+      ],
+      "combined": 0.87,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.16,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "note": "Spread above 15 points comes from the adversarial forecaster; no disputed fact to settle, the morning figure stands."
+    },
+    {
+      "claim": "il-recs-1",
+      "at": "2026-11-04T12:33:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.33,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Needs Ra'am and most of the Joint List: Ra'am declined to recommend in 2021 and 2022, Balad has often abstained, Ynet projects only 48, and the bloc ruled out governing with them on 3 Nov, against a source calling a Joint List endorsement likely.",
+          "p": 0.33,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Needs Ra'am and most of the Joint List, but Ra'am declined in 2021 and 2022 by my recollection, Balad has often abstained, and Ynet projects 48; no matching market exists and a source calling a Joint List endorsement likely is the main upside.",
+          "p_held": 0.96,
+          "p_if_held": 0.345
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.5,
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "reason_blind": "61 needs both Arab lists (or UTJ); the Joint List is likely but unformal, Ra'am is only expected, the Eisenkot bloc's no-government-with-them pledge and the Shin Bet row reduce goodwill, and Ynet's 48 tally counts neither.",
+          "p": 0.5,
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "Next-PM prices do not speak to recommendations, so this remains a question of whether both Arab lists formally name him, and that is close to even."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.27,
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "61 requires both Ra'am and the Joint List to name Eisenkot after his bloc publicly ruled out any government with them; Ynet's expected 48 recommendations implies neither is counted, and a Joint List source's 'likely' endorsement alone reaches only 59.",
+          "p": 0.27,
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "61 requires both Ra'am and the Joint List to name Eisenkot after his bloc publicly ruled out any government with them; Ynet's expected 48 implies neither is counted, and a Joint List endorsement alone reaches only 59.",
+          "p_held": 0.88,
+          "p_if_held": 0.3
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p": 0.38,
+          "inputs": [
+            "signals",
+            "dossier",
+            "overnight-facts"
+          ],
+          "reason": "Needs both Arab lists: Raam about 0.6 times most of Joint List about 0.75 times Liberman and schedule holding about 0.88 gives 0.40, trimmed because Ynet still counts only 48 and the bloc ruled out governing with them."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-04T12:33:00+01:00",
+          "p_blind": 0.3,
+          "inputs_blind": [
+            "own-research",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "reason_blind": "Without Ra'am his bloc is about 59 seats, so reaching 61 depends on the Arab parties all recommending him.",
+          "p": 0.3,
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "reason": "His bloc is about 59 seats without Ra'am, so reaching 61 needs both Arab parties and UTJ drifting is not enough."
+        }
+      ],
+      "combined": 0.3525,
+      "combination": {
+        "method": "geo-odds"
+      },
+      "spread": 0.23,
+      "market_search": {
+        "at": "2026-11-04T12:34:00+01:00",
+        "checked": [
+          "markets.mjs search Eisenkot recommendations Herzog",
+          "markets.mjs search Russia drones Ukraine November",
+          "markets.mjs search Senate seats Democrats Alaska Mississippi",
+          "markets.mjs search Israel next prime minister",
+          "models.mjs atleast 7 0.85 7",
+          "models.mjs release 3.0 2.55 0.35",
+          "models.mjs leadabove -0.1 0.38 -0.635"
+        ],
+        "note": "Only cz-cnb-hike-1 has a matching market; the next-PM price does not match the Israeli claims."
+      },
+      "note": "Combined figure is below the morning 49% by more than the threshold, but no revision is published: the red team found that the only fact on the Arab lists published after the freeze (Joint List source to Fox, likely to endorse) points up, and the reasons for the fall (Ynet tally of 48, UTJ possibly recommending neither, refusal to govern with the Arab lists) were all known before the freeze. Neither list had decided by 12:40. Only facts after the freeze count as new."
+    }
+  ]
+}
