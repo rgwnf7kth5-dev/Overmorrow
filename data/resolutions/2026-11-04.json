@@ -1,0 +1,124 @@
+{
+ "edition": "2026-11-04",
+ "results": [
+  {
+   "claim": "cz-strike-held-1",
+   "outcome": "yes",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/skoncila-stavka-ct-a-cro-proti-financovani-medii-ze-statniho-rozpoctu/2897028",
+   "note": "ČTK reports a full-day strike of ČT and ČRo staff on 3 Nov that cut broadcasting to archive programmes, with no Události; organisers counted 2,257 at ČT and 1,376 at ČRo taking part.",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-rally-1",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/shromazdeni-na-podporu-ct-a-cro-v-centru-prahy/2896664",
+   "note": "The rally took place, but ČTK's reports through its 4 Nov wrap say only 'tisíce lidí' filling the lower half of the square, with no organiser or police figure of 10,000 or more for Prague (the 'up to 10,000' police remark concerned Brno, in Novinky).",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "ua-talks-date-2",
+   "outcome": "yes",
+   "evidence": "https://www.ukrinform.net/rubric-polytics/4181002-zelensky-outlines-key-topics-for-trilateral-meeting-in-abu-dhabi.html",
+   "note": "Ukrinform, 3 Nov 17:20 Kyiv time, quotes Zelensky naming 'the November 10-11 meeting in Abu Dhabi' and reports Witkoff giving the same dates; the Zelensky statement falls inside the window.",
+   "resolved_at": "2026-11-04T05:08:00+01:00"
+  },
+  {
+   "claim": "cz-media-model-1",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/skoncila-stavka-ct-a-cro-proti-financovani-medii-ze-statniho-rozpoctu/2897028",
+   "note": "ČTK's 4 Nov wrap says the form of funding is still to be discussed, and its feed shows no released document; held is false, read as the release that might have followed the 2 Nov council not happening, with the matter moved to the January second reading.",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": false
+  },
+  {
+   "claim": "fr-recettes-1",
+   "outcome": "no",
+   "evidence": "https://lcp.fr/actualites/budget-2027-le-marathon-de-la-partie-recettes-n-etant-pas-termine-le-vote-solennel-prevu",
+   "note": "LCP reports the 3 Nov vote postponed with 758 amendments left, and the Assemblée's scrutin list shows only amendment votes on article 42 at the latest sitting of 3 Nov, so no vote on Part 1 took place.",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": false
+  },
+  {
+   "claim": "us-amd-rev-1",
+   "outcome": "no",
+   "evidence": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm",
+   "note": "AMD's 3 Nov 2026 release reports third-quarter revenue of $13.4 billion, below the $13.50 billion threshold.",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "au-rba-1",
+   "outcome": "yes",
+   "evidence": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+   "note": "The RBA Monetary Policy Board statement of 3 Nov 2026 raised the cash rate target by 25 basis points to 4.85 per cent.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-jolts-below-1",
+   "outcome": "no",
+   "evidence": "https://www.bls.gov/news.release/jolts.nr0.htm",
+   "note": "The BLS release of 3 Nov 2026 puts September job openings at 7.5 million in its summary text, well above the 7.079 million threshold, although Table 1 itself could not be extracted.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "pl-tk-1",
+   "outcome": "no",
+   "evidence": "https://notesfrompoland.com/2026/11/03/disputed-polish-constitutional-court-holds-first-meeting-after-takeover-by-government-backed-judges/",
+   "note": "The Assembly met with eight judges, but Notes from Poland, TVN24 and OKO.press (two independent outlets plus one, no Tribunal communique seen) report only the budget, disciplinary lots and a disciplinary officer, with no immunity resolution; this is inferred from those detailed lists of decisions, and TVN24 reports Zurek filing a sixth immunity motion that day.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-diesel-cap-2",
+   "outcome": "yes",
+   "evidence": "https://mf.gov.cz/assets/attachments/2026-11-03_Cenovy-vestnik-116-2026.pdf",
+   "note": "Cenovy vestnik 116/2026 sets the diesel cap for 4 Nov at CZK 49.00 per litre, below the CZK 49.35 for 3 Nov in vestnik 115/2026, a 35-haler fall that CTK confirms.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "us-pfizer-guide-1",
+   "outcome": "yes",
+   "evidence": "https://www.sec.gov/Archives/edgar/data/0000078003/000007800326000125/pfe-9272026xex99.htm",
+   "note": "Pfizer's 3 Nov 2026 release raised and narrowed full-year adjusted diluted EPS guidance to $2.95-$3.05, a $3.00 midpoint above $2.90.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "tr-cpi-oct",
+   "outcome": "measured",
+   "value": 29.77,
+   "evidence": "https://www.bloomberght.com/enflasyonda-ekim-tablosu-3793165",
+   "note": "TUIK was unreachable, so Bloomberg HT and Hurriyet Daily News, two independent outlets, are used; both give annual CPI of 29.77% for October in data published 3 Nov.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "tr-cpi-below-1",
+   "outcome": "no",
+   "evidence": "https://www.hurriyetdailynews.com/turkiyes-annual-inflation-edges-up-to-29-77-pct-228953",
+   "note": "TUIK was unreachable, so Hurriyet Daily News and Bloomberg HT, two independent outlets, are used; both report 29.77% for October, up from 29.73% in September and so not below the threshold.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  },
+  {
+   "claim": "cz-dukovany-2",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/dohodnuty-harmonogram-pro-dukovany-zustava-beze-zmeny-uvedla-khnp/2894657",
+   "note": "CTK reported at about 14:00 on 3 Nov that KHNP was still drawing up an alternative plan for choosing a new construction contractor, and no later report of a named partner or in-house works was found in CTK, oEnergetice or Echo24 listings.",
+   "resolved_at": "2026-11-04T05:10:00+01:00"
+  },
+  {
+   "claim": "fr-goncourt-1",
+   "outcome": "yes",
+   "evidence": "https://www.livreshebdo.fr/article/philippe-jaenada-remporte-le-prix-goncourt-2026",
+   "note": "The Academie site refused reading, so Livres Hebdo and ActuaLitte, two independent outlets, are used; both report the 2026 Goncourt went to Philippe Jaenada for L'inconnue du quai de Javel on 3 Nov.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "held": true
+  }
+ ]
+}
