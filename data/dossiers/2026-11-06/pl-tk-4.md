@@ -67,3 +67,7 @@ Class `other-scheduled`: 0.115 (`node scripts/refdata/slip.mjs other-scheduled`,
 - https://tvn24.pl/polska/nowe-oswiadczenie-sedzi-anny-korwin-piotrowskiej-trybunal-konstytucyjny-dziala-st9318966
 - https://tvn24.pl/polska/spor-o-trybunal-konstytucyjny-adam-bodnar-to-stajnia-augiasza-trzeba-ja-oczyscic-i-wyjsc-z-zaleglosci-st9318999
 - Refused, not read: tysol.pl.
+
+## Morning addendum (2026-11-04T04:15Z)
+- The Sejm API's agenda for the 68th sitting (5-6 Nov) has no item on the Constitutional Tribunal; the "Informacja bieżąca" topic is not stated. YES now needs a break or agenda motion naming the dispute, or a current-information topic naming the Tribunal. https://api.sejm.gov.pl/sejm/term10/proceedings/68
+- PiS tends to file break motions at sittings; whether one names the Tribunal on 5 Nov is the question. Votes may come on 6 Nov instead.

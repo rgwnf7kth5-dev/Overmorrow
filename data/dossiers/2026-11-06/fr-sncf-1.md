@@ -43,3 +43,6 @@ None applies. Only comparable found: 10 June 2026, one in three TGV cancelled, n
 - At 15:00 on 3 Nov a page said the forecast was not yet out and rail unions were gathering outside SNCF headquarters; no outcome reported — https://www.directs.fr/greve-du-5-novembre-ce-que-lon-sait-deja-pour-les-transports-37698 (published 2026-11-03 15:00, read 2026-11-03T18:36Z) "La SNCF indique que ses prévisions de circulation pour jeudi doivent être disponibles environ 48 heures avant"
 Neither title gives a number of TGV running (no "x in y", no percentage) and the two titles show no time. Whether "légèrement perturbé" is SNCF's own wording or its full plan could not be read.
 Outcome of the 3 Nov Castex meeting: NOT FOUND. Both titles speak of the strike call as still standing; no report of a withdrawal by any union was found.
+
+## Morning addendum (2026-11-04T04:15Z)
+- SNCF's first indication on the afternoon of 3 Nov (via franceinfo, as quoted by Sortiraparis): TGV "slightly disrupted"; Intercités, TER and Ile-de-France services "disrupted". The day is described as less severe than 10 June, when one TGV in three was cancelled. Detailed plan due late afternoon on 4 Nov. https://www.sortiraparis.com/en/news/in-paris/articles/355255-sncf-strike-on-november-5-2026-to-go-ahead-tgv-and-rer-forecasts

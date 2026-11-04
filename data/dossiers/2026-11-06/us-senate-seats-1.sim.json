@@ -1,0 +1,4 @@
+{ "national_sd": 1.0, "df": 5, "draws": 50000, "seed": 15, "needed": 54, "safe": 49,
+  "_note": "Live count at 04:22Z instead of polling averages, which the count has overtaken; leads are the expected final margin read from the count and the outstanding vote (one row per race). The sim models winners only; AP's call time is a separate risk.",
+  "races": [ {"id":"ks","lead":7,"sd":3}, {"id":"ia","lead":5.5,"sd":3}, {"id":"mi","lead":4,"sd":2.5}, {"id":"mn","lead":6,"sd":3.5}, {"id":"me","lead":3,"sd":2}, {"id":"ak","lead":2.5,"sd":2.5}, {"id":"ms","lead":-1,"sd":2} ],
+  "scenario": {"ks":true,"ia":true,"mi":true,"mn":true,"me":true} }

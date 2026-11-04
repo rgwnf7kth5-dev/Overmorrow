@@ -1,445 +1,445 @@
 {
- "_note": "Base rates used in the outside view. Each entry: what the class is, the rate, how many cases, where it comes from. Update counts with every resolved claim (field 'own_record').",
- "classes": [
-  {
-   "id": "ep-final-vote-trilogue-deal",
-   "description": "European Parliament plenary adopts a provisional trilogue agreement put to a final vote",
-   "base_rate": 0.97,
-   "n": "large; failures are rare and usually signalled days ahead",
-   "source": "Legislative Observatory records, 9th and 10th terms (estimate pending a full count)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "ep-resolution-after-debate",
-   "description": "A non-legislative resolution scheduled for a vote after a plenary debate is adopted that week",
-   "base_rate": 0.93,
-   "n": "large",
-   "source": "Plenary minutes (estimate pending a full count); main risk is postponement",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "cz-budget-first-reading-majority",
-   "description": "Czech Chamber approves the state budget in first reading when the government holds a majority",
-   "base_rate": 0.95,
-   "n": "every budget since 1993 with a majority government",
-   "source": "psp.cz voting records; risk is timing (obstruction pushing the vote past the deadline)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "envoy-visit-ceasefire",
-   "description": "A ceasefire in the Russia-Ukraine war is announced within 48 hours of a US envoy meeting with Putin",
-   "base_rate": 0.03,
-   "n": "about 10 meetings 2025-2026, none followed by a ceasefire within 48 h",
-   "source": "News record 2025-2026",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "sakharov-conference-presidents",
-   "description": "Sakharov laureate is the finalist backed by the EPP",
-   "base_rate": 0.7,
-   "n": "roughly 10 years of decisions; EPP-backed finalist usually wins, sometimes jointly with an ECR or Renew candidate",
-   "source": "EP press releases 2015-2025 (estimate pending a full count)",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "envoy-visit-prisoner-release",
-   "description": "A US detainee in Russia is released during or within 48 hours of a US envoy visit to Moscow",
-   "base_rate": 0.35,
-   "n": "small; Witkoff visits 2025-2026",
-   "source": "News record 2025-2026",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "mediated-deal-announced-short-window",
-   "description": "An officially announced US–Iran agreement within 48 hours of a mediators’ proposal being delivered",
-   "base_rate": 0.3,
-   "n": "small",
-   "source": "News record 2025-2026",
-   "own_record": {
-    "yes": 0,
-    "no": 2
-   }
-  },
-  {
-   "id": "poll-gap-within-2",
-   "description": "A named pollster’s next runoff poll shows the two candidates within 2 points when the previous poll was within 2 points",
-   "base_rate": 0.65,
-   "n": "estimate",
-   "source": "Brazil 2022 and 2026 Datafolha series",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "outbreak-case-count-rises",
-   "description": "A country with an active Ebola outbreak reports a confirmed count above a stated threshold within 48 hours",
-   "base_rate": 0.7,
-   "n": "estimate",
-   "source": "WHO situation reports",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "protest-second-day-smaller",
-   "description": "A second nationwide protest day without union backing draws fewer people than the first, by the Interior Ministry count",
-   "base_rate": 0.8,
-   "n": "about 10 French protest series since 2018",
-   "source": "Ministry counts reported by AFP/Le Monde (2018 gilets jaunes: 282,000 then 166,000)",
-   "own_record": {
-    "yes": 2,
-    "no": 0
-   }
-  },
-  {
-   "id": "bg-presidential-runoff",
-   "description": "A Bulgarian presidential election goes to a second round",
-   "base_rate": 0.97,
-   "n": "7 of 7 since 1992",
-   "source": "CIK results",
-   "own_record": {
-    "yes": 0,
-    "no": 0
-   }
-  },
-  {
-   "id": "cz-honours-names-early",
-   "description": "Prague Castle publishes the names of 28 October honours recipients four or more days before the ceremony",
-   "base_rate": 0.03,
-   "n": "0 of about 5 under Pavel",
-   "source": "ČT24, Echo24 2023-2025",
-   "own_record": {
-    "yes": 0,
-    "no": 2
-   }
-  },
-  {
-   "id": "unscheduled-announcement-within-one-day",
-   "description": "An unscheduled announcement or decision (date set, decree, levy, round of talks) is made within a one-day window",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 4,
-    "no": 35
-   }
-  },
-  {
-   "id": "stats-release-beats-threshold",
-   "description": "A scheduled statistical release (retail sales, PMI) comes in above a threshold near consensus",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 11,
-    "no": 9
-   }
-  },
-  {
-   "id": "central-bank-holds-as-expected",
-   "description": "A central bank holds its rate when a hold is the consensus",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 3,
-    "no": 0
-   }
-  },
-  {
-   "id": "scheduled-publication-takes-place",
-   "description": "A scheduled debate, poll publication or informal meeting takes place as planned (with no decisions where none are expected)",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 4,
-    "no": 0
-   }
-  },
-  {
-   "id": "cz-chamber-government-bill-progress",
-   "description": "Czech Chamber: government bill clears or is stuck at a reading on the expected day, or reaches a stated vote count",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 1,
-    "no": 2
-   }
-  },
-  {
-   "id": "protest-and-poll-leader-status-quo",
-   "description": "Status quo holds for a protest alliance or a poll leader over one day",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "own resolved claims (resolver, 24 Oct 2026)",
-   "own_record": {
-    "yes": 2,
-    "no": 0
-   }
-  },
-  {
-   "id": "israel-daily-polls-no-bloc-majority",
-   "description": "No poll published on a given day before an Israeli election gives either bloc 61 or more seats (Wikipedia government-parties column)",
-   "base_rate": 0.8,
-   "n": "small; October 2026 campaign polls, Channel 14 regularly shows the government bloc at 61+",
-   "source": "Wikipedia opinion polling table for the 2026 Israeli election (estimate pending a full count)",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "final-poll-leader-wins",
-   "description": "The party or candidate leading the final pre-election polls wins the most votes or seats",
-   "base_rate": 0.833,
-   "n": 6,
-   "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
-   "own_record": {
-    "yes": 3,
-    "no": 4
-   }
-  },
-  {
-   "id": "poll-lead-margin-threshold",
-   "description": "A poll leader's final margin (or seat tally) clears a stated threshold beyond simply winning",
-   "base_rate": 0.5,
-   "n": "small; depends on lead vs threshold",
-   "source": "models.mjs poll-lead model; own record 2026",
-   "own_record": {
-    "yes": 4,
-    "no": 0
-   }
-  },
-  {
-   "id": "named-poll-leader-repeats",
-   "description": "A named pollster's next poll shows a candidate strictly ahead when recent rounds were within 2 points",
-   "base_rate": 0.4,
-   "n": "small; Datafolha 2026 runoff series",
-   "source": "Pollster series 2026 (estimate)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "scheduled-appearance-takes-place",
-   "description": "A leader appears in person at a scheduled public event (rally, summit) the day it is announced for",
-   "base_rate": 0.92,
-   "n": "large; cancellations are rare",
-   "source": "News record (estimate pending a full count)",
-   "own_record": {
-    "yes": 3,
-    "no": 1
-   }
-  },
-  {
-   "id": "festival-award-winner-attribute",
-   "description": "A film festival's top award in a category goes to a film with a stated attribute (e.g. woman director)",
-   "base_rate": 0.35,
-   "n": "share of qualifying films in the competition",
-   "source": "Competition line-ups (estimate)",
-   "own_record": {
-    "yes": 2,
-    "no": 1
-   }
-  },
-  {
-   "id": "irregular-poll-publication-in-window",
-   "description": "A pollster with an irregular publication schedule publishes a new model in a given short window",
-   "base_rate": 0.12,
-   "n": "Kantar/ČT 2026: 5 models in about 42 weekends",
-   "source": "ČT24 topic page record 2026",
-   "own_record": {
-    "yes": 0,
-    "no": 2
-   }
-  },
-  {
-   "id": "defeated-leader-resigns-election-night",
-   "description": "A party leader who loses office in a general election announces resignation as leader on election night or the next day",
-   "base_rate": 0.4,
-   "n": "small; Canadian provincial and Westminster-system cases",
-   "source": "News record (estimate)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "turnout-above-previous-election",
-   "description": "Turnout in an election exceeds the turnout of the previous comparable election",
-   "base_rate": 0.5,
-   "n": "own record",
-   "source": "Own record (from 27 Oct 2026)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "vote-share-threshold",
-   "description": "A candidate or list reaches a stated vote-share threshold in official results",
-   "base_rate": 0.5,
-   "n": "own record",
-   "source": "Own record (from 27 Oct 2026)",
-   "own_record": {
-    "yes": 2,
-    "no": 1
-   }
-  },
-  {
-   "id": "coalition-deal-announced-short-window",
-   "description": "Local or national coalition partners announce or sign an agreement within a window of one or two days",
-   "base_rate": 0.3,
-   "n": "own record",
-   "source": "Own record (from 27 Oct 2026)",
-   "own_record": {
-    "yes": 1,
-    "no": 6
-   }
-  },
-  {
-   "id": "runoff-loser-concedes-within-day",
-   "description": "The loser of a presidential runoff publicly concedes or congratulates the winner within about a day of the result",
-   "base_rate": 0.7,
-   "n": "small; Latin American and European runoffs",
-   "source": "News record (estimate); own record from 27 Oct 2026",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "company-results-beat-threshold",
-   "description": "A listed company's reported quarterly figure beats a consensus-based threshold",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 6,
-    "no": 2
-   }
-  },
-  {
-   "id": "budget-measure-trailed-in-press",
-   "description": "A fiscal measure widely trailed in the press before a budget statement is included in it",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 2,
-    "no": 0
-   }
-  },
-  {
-   "id": "honours-specific-person",
-   "description": "A specific contested person is named among state honours recipients",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "central-bank-dissent",
-   "description": "At least one dissent at a central-bank rate decision when dissent is signalled",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 2,
-    "no": 0
-   }
-  },
-  {
-   "id": "central-bank-moves-as-priced",
-   "description": "A central bank moves its rate when markets price the move as likely",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 2,
-    "no": 0
-   }
-  },
-  {
-   "id": "runoff-loser-files-contest-short-window",
-   "description": "A defeated runoff candidate files a formal electoral contest within about two days",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-29)",
-   "own_record": {
-    "yes": 0,
-    "no": 3
-   }
-  },
-  {
-   "id": "central-bank-unanimity-stated",
-   "description": "The central bank chief describes a rate decision as unanimous at the press conference when a hold is the consensus",
-   "base_rate": null,
-   "n": 0,
-   "source": "Own record only (created 2026-10-30)",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "unsc-mandate-renewal-unanimous",
-   "description": "UN Security Council renews a mission mandate with all 15 members in favour",
-   "base_rate": null,
-   "n": "not yet counted",
-   "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-colombia-30",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  },
-  {
-   "id": "unsc-mandate-renewal-split-vote",
-   "description": "UN Security Council adopts a contested mission renewal with a stated number of abstentions",
-   "base_rate": null,
-   "n": "not yet counted",
-   "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-minurso-30",
-   "own_record": {
-    "yes": 0,
-    "no": 1
-   }
-  },
-  {
-   "id": "local-truce-evacuation-starts-in-days",
-   "description": "An organised civilian evacuation under a negotiated local truce in the Russia–Ukraine war starts within the first days of the truce",
-   "base_rate": null,
-   "n": "own record only",
-   "source": "Dossier ua-oleshky-evac-30 (Mariupol corridors and similar); no full count",
-   "own_record": {
-    "yes": 1,
-    "no": 0
-   }
-  }
- ]
+  "_note": "Base rates used in the outside view. Each entry: what the class is, the rate, how many cases, where it comes from. Update counts with every resolved claim (field 'own_record').",
+  "classes": [
+    {
+      "id": "ep-final-vote-trilogue-deal",
+      "description": "European Parliament plenary adopts a provisional trilogue agreement put to a final vote",
+      "base_rate": 0.97,
+      "n": "large; failures are rare and usually signalled days ahead",
+      "source": "Legislative Observatory records, 9th and 10th terms (estimate pending a full count)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "ep-resolution-after-debate",
+      "description": "A non-legislative resolution scheduled for a vote after a plenary debate is adopted that week",
+      "base_rate": 0.93,
+      "n": "large",
+      "source": "Plenary minutes (estimate pending a full count); main risk is postponement",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-budget-first-reading-majority",
+      "description": "Czech Chamber approves the state budget in first reading when the government holds a majority",
+      "base_rate": 0.95,
+      "n": "every budget since 1993 with a majority government",
+      "source": "psp.cz voting records; risk is timing (obstruction pushing the vote past the deadline)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "envoy-visit-ceasefire",
+      "description": "A ceasefire in the Russia-Ukraine war is announced within 48 hours of a US envoy meeting with Putin",
+      "base_rate": 0.03,
+      "n": "about 10 meetings 2025-2026, none followed by a ceasefire within 48 h",
+      "source": "News record 2025-2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "sakharov-conference-presidents",
+      "description": "Sakharov laureate is the finalist backed by the EPP",
+      "base_rate": 0.7,
+      "n": "roughly 10 years of decisions; EPP-backed finalist usually wins, sometimes jointly with an ECR or Renew candidate",
+      "source": "EP press releases 2015-2025 (estimate pending a full count)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "envoy-visit-prisoner-release",
+      "description": "A US detainee in Russia is released during or within 48 hours of a US envoy visit to Moscow",
+      "base_rate": 0.35,
+      "n": "small; Witkoff visits 2025-2026",
+      "source": "News record 2025-2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "mediated-deal-announced-short-window",
+      "description": "An officially announced US–Iran agreement within 48 hours of a mediators’ proposal being delivered",
+      "base_rate": 0.3,
+      "n": "small",
+      "source": "News record 2025-2026",
+      "own_record": {
+        "yes": 0,
+        "no": 2
+      }
+    },
+    {
+      "id": "poll-gap-within-2",
+      "description": "A named pollster’s next runoff poll shows the two candidates within 2 points when the previous poll was within 2 points",
+      "base_rate": 0.65,
+      "n": "estimate",
+      "source": "Brazil 2022 and 2026 Datafolha series",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "outbreak-case-count-rises",
+      "description": "A country with an active Ebola outbreak reports a confirmed count above a stated threshold within 48 hours",
+      "base_rate": 0.7,
+      "n": "estimate",
+      "source": "WHO situation reports",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "protest-second-day-smaller",
+      "description": "A second nationwide protest day without union backing draws fewer people than the first, by the Interior Ministry count",
+      "base_rate": 0.8,
+      "n": "about 10 French protest series since 2018",
+      "source": "Ministry counts reported by AFP/Le Monde (2018 gilets jaunes: 282,000 then 166,000)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "bg-presidential-runoff",
+      "description": "A Bulgarian presidential election goes to a second round",
+      "base_rate": 0.97,
+      "n": "7 of 7 since 1992",
+      "source": "CIK results",
+      "own_record": {
+        "yes": 0,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-honours-names-early",
+      "description": "Prague Castle publishes the names of 28 October honours recipients four or more days before the ceremony",
+      "base_rate": 0.03,
+      "n": "0 of about 5 under Pavel",
+      "source": "ČT24, Echo24 2023-2025",
+      "own_record": {
+        "yes": 0,
+        "no": 2
+      }
+    },
+    {
+      "id": "unscheduled-announcement-within-one-day",
+      "description": "An unscheduled announcement or decision (date set, decree, levy, round of talks) is made within a one-day window",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 4,
+        "no": 35
+      }
+    },
+    {
+      "id": "stats-release-beats-threshold",
+      "description": "A scheduled statistical release (retail sales, PMI) comes in above a threshold near consensus",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 11,
+        "no": 9
+      }
+    },
+    {
+      "id": "central-bank-holds-as-expected",
+      "description": "A central bank holds its rate when a hold is the consensus",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 3,
+        "no": 0
+      }
+    },
+    {
+      "id": "scheduled-publication-takes-place",
+      "description": "A scheduled debate, poll publication or informal meeting takes place as planned (with no decisions where none are expected)",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 4,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-chamber-government-bill-progress",
+      "description": "Czech Chamber: government bill clears or is stuck at a reading on the expected day, or reaches a stated vote count",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 1,
+        "no": 2
+      }
+    },
+    {
+      "id": "protest-and-poll-leader-status-quo",
+      "description": "Status quo holds for a protest alliance or a poll leader over one day",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own resolved claims (resolver, 24 Oct 2026)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "israel-daily-polls-no-bloc-majority",
+      "description": "No poll published on a given day before an Israeli election gives either bloc 61 or more seats (Wikipedia government-parties column)",
+      "base_rate": 0.8,
+      "n": "small; October 2026 campaign polls, Channel 14 regularly shows the government bloc at 61+",
+      "source": "Wikipedia opinion polling table for the 2026 Israeli election (estimate pending a full count)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "final-poll-leader-wins",
+      "description": "The party or candidate leading the final pre-election polls wins the most votes or seats",
+      "base_rate": 0.833,
+      "n": 6,
+      "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
+      "own_record": {
+        "yes": 3,
+        "no": 4
+      }
+    },
+    {
+      "id": "poll-lead-margin-threshold",
+      "description": "A poll leader's final margin (or seat tally) clears a stated threshold beyond simply winning",
+      "base_rate": 0.5,
+      "n": "small; depends on lead vs threshold",
+      "source": "models.mjs poll-lead model; own record 2026",
+      "own_record": {
+        "yes": 4,
+        "no": 0
+      }
+    },
+    {
+      "id": "named-poll-leader-repeats",
+      "description": "A named pollster's next poll shows a candidate strictly ahead when recent rounds were within 2 points",
+      "base_rate": 0.4,
+      "n": "small; Datafolha 2026 runoff series",
+      "source": "Pollster series 2026 (estimate)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "scheduled-appearance-takes-place",
+      "description": "A leader appears in person at a scheduled public event (rally, summit) the day it is announced for",
+      "base_rate": 0.92,
+      "n": "large; cancellations are rare",
+      "source": "News record (estimate pending a full count)",
+      "own_record": {
+        "yes": 3,
+        "no": 1
+      }
+    },
+    {
+      "id": "festival-award-winner-attribute",
+      "description": "A film festival's top award in a category goes to a film with a stated attribute (e.g. woman director)",
+      "base_rate": 0.35,
+      "n": "share of qualifying films in the competition",
+      "source": "Competition line-ups (estimate)",
+      "own_record": {
+        "yes": 2,
+        "no": 1
+      }
+    },
+    {
+      "id": "irregular-poll-publication-in-window",
+      "description": "A pollster with an irregular publication schedule publishes a new model in a given short window",
+      "base_rate": 0.12,
+      "n": "Kantar/ČT 2026: 5 models in about 42 weekends",
+      "source": "ČT24 topic page record 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 2
+      }
+    },
+    {
+      "id": "defeated-leader-resigns-election-night",
+      "description": "A party leader who loses office in a general election announces resignation as leader on election night or the next day",
+      "base_rate": 0.4,
+      "n": "small; Canadian provincial and Westminster-system cases",
+      "source": "News record (estimate)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "turnout-above-previous-election",
+      "description": "Turnout in an election exceeds the turnout of the previous comparable election",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "Own record (from 27 Oct 2026)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "vote-share-threshold",
+      "description": "A candidate or list reaches a stated vote-share threshold in official results",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "Own record (from 27 Oct 2026)",
+      "own_record": {
+        "yes": 2,
+        "no": 1
+      }
+    },
+    {
+      "id": "coalition-deal-announced-short-window",
+      "description": "Local or national coalition partners announce or sign an agreement within a window of one or two days",
+      "base_rate": 0.3,
+      "n": "own record",
+      "source": "Own record (from 27 Oct 2026)",
+      "own_record": {
+        "yes": 1,
+        "no": 6
+      }
+    },
+    {
+      "id": "runoff-loser-concedes-within-day",
+      "description": "The loser of a presidential runoff publicly concedes or congratulates the winner within about a day of the result",
+      "base_rate": 0.7,
+      "n": "small; Latin American and European runoffs",
+      "source": "News record (estimate); own record from 27 Oct 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "company-results-beat-threshold",
+      "description": "A listed company's reported quarterly figure beats a consensus-based threshold",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 6,
+        "no": 2
+      }
+    },
+    {
+      "id": "budget-measure-trailed-in-press",
+      "description": "A fiscal measure widely trailed in the press before a budget statement is included in it",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "honours-specific-person",
+      "description": "A specific contested person is named among state honours recipients",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "central-bank-dissent",
+      "description": "At least one dissent at a central-bank rate decision when dissent is signalled",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "central-bank-moves-as-priced",
+      "description": "A central bank moves its rate when markets price the move as likely",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "runoff-loser-files-contest-short-window",
+      "description": "A defeated runoff candidate files a formal electoral contest within about two days",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-29)",
+      "own_record": {
+        "yes": 0,
+        "no": 3
+      }
+    },
+    {
+      "id": "central-bank-unanimity-stated",
+      "description": "The central bank chief describes a rate decision as unanimous at the press conference when a hold is the consensus",
+      "base_rate": null,
+      "n": 0,
+      "source": "Own record only (created 2026-10-30)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "unsc-mandate-renewal-unanimous",
+      "description": "UN Security Council renews a mission mandate with all 15 members in favour",
+      "base_rate": null,
+      "n": "not yet counted",
+      "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-colombia-30",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "unsc-mandate-renewal-split-vote",
+      "description": "UN Security Council adopts a contested mission renewal with a stated number of abstentions",
+      "base_rate": null,
+      "n": "not yet counted",
+      "source": "UN press releases of past renewal votes (count pending); created 2026-11-01 from un-minurso-30",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "local-truce-evacuation-starts-in-days",
+      "description": "An organised civilian evacuation under a negotiated local truce in the Russia–Ukraine war starts within the first days of the truce",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "Dossier ua-oleshky-evac-30 (Mariupol corridors and similar); no full count",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    }
+  ]
 }

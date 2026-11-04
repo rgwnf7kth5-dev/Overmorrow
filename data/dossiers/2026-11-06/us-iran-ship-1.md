@@ -41,3 +41,7 @@
 - https://www.iranintl.com/en/liveblog/202610312594
 - https://raw.githubusercontent.com/iMariner/maritime-security-tracker/main/data/incidents.json
 - data/dossiers/2026-11-04/ir-ukmto-1.md
+
+## Morning addendum (2026-11-04T04:15Z)
+- Al Jazeera live blog, 4 Nov (modified 03:58Z): UKMTO reports a tanker hit by two "unknown projectiles" near Hormuz; the IRGC says three tankers hit mines. Incident time not given; before the window. No new US strike since Qeshm (2 Nov). Vance "sees progress"; Tehran warns of a "crushing response".
+- UKMTO reported an attack in the Persian Gulf on 1-2 Nov as well (gCaptain citing UKMTO; strike 2347 UTC 1 Nov).
