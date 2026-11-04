@@ -650,6 +650,50 @@
      "market": null,
      "note": "Weekly re-forecast. October 2025 rose 0.5% m/m, a tough base; the fuel price cap and the diesel excise cut weigh on the item that drove September. The flash estimate is due on 4 Nov.",
      "note_cs": "Týdenní přepočet. V říjnu 2025 ceny meziměsíčně vzrostly o 0,5 %, což je náročná srovnávací základna; cenový strop na pohonné hmoty a nižší spotřební daň z nafty tlačí na položku, která táhla zářijovou inflaci. Předběžný odhad vyjde 4. listopadu."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.03,
+     "combined": 0.034,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Flash is 2.4; YES needs a +0.2 revision to 2.6 and ČSÚ flashes are normally confirmed. Floor.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "ČSÚ flash is 2.4%, so YES needs an upward revision of 0.2pp to 2.6%; flash revisions are rare and rarely that big.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.04,
+       "reason": "Strongest YES case is a two-tenths upward revision of the 2.4% flash, which ČSÚ has essentially never made; a one-tenth revision to 2.5% still resolves NO.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Model: no market. Flash is 2.4%; YES needs a final of at least 2.6%, a +0.2 revision that ČSÚ finals essentially never show.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.04,
+       "reason": "Flash was 2.4% (below 2.5%); final ČSÚ figure rarely revised, and it would need a +0.2pp upward revision.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "ČSÚ's flash estimate of 4 Nov puts October inflation at 2.4%, below September's 2.5%; the final figure on 10 Nov rarely moves by more than 0.1.",
+     "note_cs": "Rychlý odhad ČSÚ ze 4. listopadu ukazuje říjnovou inflaci 2,4 %, tedy pod zářijovými 2,5 %. Konečný údaj 10. listopadu se od odhadu obvykle liší nejvýše o desetinu."
     }
    ],
    "result": null
@@ -810,6 +854,50 @@
      ],
      "note": "Weekly re-forecast: analysts place the peak in the first quarter of 2027, with fuel prices capped to the end of November.",
      "note_cs": "Týdenní přepočet: analytici čekají vrchol v prvním čtvrtletí 2027, ceny paliv jsou zastropeny do konce listopadu."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.09,
+     "combined": 0.092,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.07,
+       "reason": "Needs +0.6pp in one month against a usual monthly change of 0.1-0.3pp; a soft year-ago base (my recollection, unverified) helps, but capped fuel and Brent are falling and analysts place 3% in 2027.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.17,
+       "reason": "November 2025 was -0.3% m/m, so the base effect lifts y/y to about 2.7 with flat prices, but 3.0 needs roughly +0.3% m/m while fuel caps and oil fall and analysts place the 3% crossing in 2027.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.13,
+       "reason": "YES case: November 2025 base was soft (y/y fell 2.5 to 2.2), so a +0.4% m/m in Nov 2026 would reach 3.0%; but fuel caps are falling, Brent is under 100, food is -4% y/y and analysts put the energy pass-through at the turn of the year, so a 0.6pp jump in one month is a stretch.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.08,
+       "reason": "Model: no market. From 2.4%, a base effect from a soft November 2025 (recalled, about -0.2% m/m) gives about 2.6% on a flat month; 3.0% needs roughly +0.4% m/m while fuel caps fall and analysts place the 3% crossing in 2027.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.05,
+       "reason": "From 2.4% in October with falling fuel caps and Brent under $100; the pass-through of energy tariffs is a turn-of-year story, so 3.0% in November is a large jump.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "October's flash came in at 2.4% and analysts place the return above 3% next year, not in November.",
+     "note_cs": "Říjnový rychlý odhad činí 2,4 % a analytici čekají návrat nad 3 % až příští rok, ne v listopadu."
     }
    ],
    "result": null
@@ -1560,7 +1648,12 @@
      "note_cs": "Týdenní přepočet. Průměr obecné preference kolem D+9 (Silver Bulletin 30. října D+8,9); volby 3. listopadu."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.npr.org/2026/11/03/g-s1-149526/2026-midterms-congress-balance-of-power",
+    "note": "NPR tally of AP race calls (modified 4 Nov 06:52Z) has Democrats in control of the House; NBC projects at least 258 seats. AP timestamp of the 218th seat not read: AP refuses scripted reading.",
+    "resolved_at": "2026-11-04T19:02:43Z"
+   }
   },
   {
    "id": "us-senate-democrats",
@@ -1754,7 +1847,12 @@
      "note_cs": "Úplný odhad pěti prognostiků večerní směny pro týž výsledek (výrok us-senate-dem-1 vydání ze 4. listopadu). Konečné průměry průzkumů: Severní Karolína +10,1, Georgie +8,5, Kansas +3,2, Maine +3,1, Texas +2,8, Ohio +2,6, Aljaška +1,9 pro demokraty; rozhodujícím křeslem je Texas. V Georgii kandidují jen dva, druhé kolo je tak téměř vyloučeno."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.npr.org/2026/11/03/g-s1-149526/2026-midterms-congress-balance-of-power",
+    "note": "NPR tally of AP race calls: Democrats hold the Senate with seven flips (NC, SC, OH, TX, KS, IA, ME); NBC projected it at 04:36Z on 4 Nov. Mississippi and Alaska are not needed. Certified results are still to come.",
+    "resolved_at": "2026-11-04T19:02:43Z"
+   }
   },
   {
    "id": "br-lula-wins-runoff",
@@ -2394,6 +2492,50 @@
      },
      "note": "With the count settled at 53 v 67 and neither camp near 61 without the Arab lists or a cross-bloc deal (UTJ offering Eisenkot the premiership for a draft exemption; Eisenkot rules out serving with Netanyahu), the forecasters see a slightly better chance of a government by 31 January than a week ago; thin markets on government formation roughly doubled. Up from 24%.",
      "note_cs": "Při konečném poměru 53 ku 67 nemá žádný tábor bez arabských stran nebo dohody napříč bloky ke 61 hlasům blízko (UTJ nabízí Eisenkotovi post premiéra výměnou za výjimku z branné povinnosti, Eisenkot odmítá vládnout s Netanjahuem). Prognostici přesto vidí o něco vyšší šanci na vládu do 31. ledna než před týdnem; slabě obchodované trhy na sestavení vlády zhruba zdvojnásobily ceny. Nárůst z 24 %."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.37,
+     "combined": 0.367,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.38,
+       "reason": "Hung Israeli results since 2019 produced a government within about 96 days in 2 of 4 cases; 53 v 48 with 19 Arab seats and Eisenkot refusing Netanyahu sits below that, despite unity pressure.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "The 53/48/19 deadlock, the pledges against Arab partners and sequential mandates running into January point to failure or slippage, offset by Herzog and Trump pressure for a unity deal; 2022 took 58 days even with a clear majority.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.42,
+       "reason": "A 53-48-19 split is the 2019 deadlock pattern and the second-mandate clock runs into mid-January, so failure is the structural default; the YES case is Trump-brokered unity pressure, Herzog's push, and Netanyahu's record of buying one small party, which is enough to keep this near a coin flip.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.36,
+       "reason": "Market anchor: no timed match. Kalshi prices a Likud-Yashar government before 1 Feb at 0.18 (very thin) and Polymarket no government at all at 0.425; I add about 0.18 for a non-unity route, given neither bloc has 61 and two mandate rounds run past late January.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.35,
+       "reason": "Neither bloc has a majority and Arab parties will not sit in a coalition; 28+14 days from mid-November runs to late December, and a unity deal or a second mandate is needed before 31 Jan.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Results certified on 4 Nov, consultations under way; the mandate runs 28 days plus 14, and Ra'am's backing shortens the path to a coalition.",
+     "note_cs": "Výsledky jsou od 4. listopadu potvrzené a konzultace běží. Pověření platí 28 dní plus 14 a podpora strany Ra'am zkracuje cestu ke koalici."
     }
    ],
    "result": null
@@ -3282,6 +3424,57 @@
      ],
      "note": "Iran says negotiators in Qatar are discussing a proposal on Hormuz, without direct talks with Washington (2 Nov).",
      "note_cs": "Írán uvádí, že vyjednavači v Kataru jednají o návrhu k Hormuzu, bez přímých rozhovorů s Washingtonem (2. listopadu)."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.32,
+     "combined": 0.32,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.2,
+       "reason": "Current format is message relay via Qatar, which does not count; both sides must confirm a same-venue round within 57 days amid strikes and an 'unconvincing' reply.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.24,
+       "reason": "Talks are Qatar-relayed exchanges of proposals, not same-venue rounds, and have been stalled for months; the midterm rout raises US appetite, but Iran calls the reply unconvincing and both governments must confirm a venue meeting.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.47,
+       "reason": "YES case: Qatar is already shuttling proposals in real time, Vance blames the war for the midterm loss and Trump wants a deal, so a same-venue proximity round in Doha confirmed by both sides is a small step from where things stand; NO case is Iran refusing to sit under blockade, fresh US strikes, Khamenei's rhetoric, and the strict two-side confirmation test.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.4,
+       "reason": "Market anchor: Polymarket senior meeting by 31 Dec 0.435. Shaded because both governments must confirm a same-venue round, partly offset by no seniority requirement here.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.33,
+       "reason": "Current talks are indirect with Qatar passing proposals in real time, which does not count; both sides confirming a same-venue round within two months needs a de-escalation that is not yet visible.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Qatar is passing proposals, Iran called the US reply unconvincing, and no round is set.",
+     "note_cs": "Katar předává návrhy, Írán označil americkou odpověď za nepřesvědčivou a žádné kolo není stanoveno.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt",
+      "p": 0.435,
+      "read_at": "2026-11-04T18:48:45Z"
+     }
     }
    ],
    "result": null
@@ -3798,6 +3991,50 @@
       "cause": "genuine",
       "note": "The forecasters disagree (57%–90%) on whether the certification floor binds the premier's own oath or only the MLAs' oaths: same facts, different judgement (genuine disagreement), kept as is."
      }
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.96,
+     "combined": 0.961,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.97,
+       "reason": "Premier-designate with 63 seats; cabinet swearing-in set for 20 Nov. Near-certain transfer; capped.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.97,
+       "reason": "CBC reports Doerkson swears in his cabinet on 20 Nov with a 63-seat preliminary result; his own oath is not dated but normally comes with or just before the cabinet.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.93,
+       "reason": "Doerkson is premier-designate with a 63-28 margin and a cabinet swearing-in fixed for 20 Nov, ten days before the deadline; the NO case is only an unforeseen delay of the ceremony or a personal event, since recounts cannot change the majority.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.97,
+       "reason": "Model: market search found no match. Premier-designate Doerkson swears in his cabinet on 20 Nov, which requires him to be premier by then.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.95,
+       "reason": "Conservatives won 63 seats, Doerkson is premier-designate, MLAs are sworn on 19 Nov and cabinet on 20 Nov, so his own oath falls before 30 Nov.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Doerkson is premier-designate; final count 6-10 Nov, MLAs sworn in on 19 Nov and cabinet on 20 Nov, inside the deadline.",
+     "note_cs": "Doerkson je určeným premiérem. Konečné sčítání proběhne 6. až 10. listopadu, poslanci složí slib 19. listopadu a vláda 20. listopadu, tedy před termínem."
     }
    ],
    "result": null
@@ -5424,6 +5661,50 @@
      "market": null,
      "note": "The Student List won the 25 October election with 52.7% of the vote on RIK's preliminary count (about 140 of 250 seats) and Vučić conceded; it has not yet named its candidate for prime minister and says its MPs will choose after final results are proclaimed. The remaining risk is the timetable: the assembly must be constituted and the government elected by 31 January.",
      "note_cs": "Studentská kandidátka podle předběžných výsledků RIK vyhrála volby 25. října s 52,7 % hlasů (zhruba 140 z 250 křesel) a Vučić porážku uznal; kandidáta na premiéra zatím nejmenovala a uvádí, že ho poslanci vyberou po vyhlášení konečných výsledků. Zbývajícím rizikem je časový plán: do 31. ledna se musí ustavit parlament a zvolit vláda."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.73,
+     "combined": 0.726,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.77,
+       "reason": "140 of 250 seats and a stated aim of quick formation; transfer-of-power precedents (2000-01 about 33 days, 2012 about 80) fit the roughly 98 days available. Risk is Brnabić and Vučić using procedural deadlines.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "The Student List has 140 of 250 seats and says formation will not run to the legal limit, but no candidate is named, Brnabić controls the convening date and Vučić can slow-walk the nomination, so January is the tight part.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.52,
+       "reason": "NO case: Vučić still convenes parliament through Brnabić and proposes the PM candidate, says he plans to defeat them, and can lawfully stall to the 90-day limit that runs past January; the Student List has 140 of 250 seats and no PM name yet, and may fracture. YES case is the majority and the political cost to Vučić of open obstruction.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.75,
+       "reason": "Market anchor: no timed match. Polymarket and Kalshi put student-aligned names (Šoškić 0.51-0.56, Srdanović 0.20) far ahead, so identity is near certain; the risk is timing, since Brnabić controls the convening and Vučić the nomination, and in 2024 the process ran close to the legal limit.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.75,
+       "reason": "The Student List holds 140 of 250 seats and says government formation will be quick; the assembly must be convened first by Brnabić, but a PM vote by end January is the base case with some risk of internal disagreement or delay.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Weekly re-forecast: the Student List says it will form a government and only Brnabić's convening of the Assembly is awaited; no candidate is named yet.",
+     "note_cs": "Týdenní přepočet: Studentská kandidátka tvrdí, že sestaví vládu, a čeká se jen na svolání parlamentu předsedkyní Brnabić. Kandidáta zatím nejmenovala."
     }
    ]
   },
@@ -5657,7 +5938,12 @@
      "note_cs": "Puente 30. října kvůli neštěstí u Urdy výslovně odmítl rezignovat a vyloučil odvolání; setrvání v úřadu do voleb 29. listopadu znamená NE."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.rtve.es/noticias/20261103/oscar-puente-diputacion-permanente-congreso-accidente-tren-cronica/17298150.shtml",
+    "note": "Puente announced his resignation in Congress on 3 Nov (RTVE); Sánchez gave the Transport post to Carlos Cuerpo on 4 Nov (elDiario.es).",
+    "resolved_at": "2026-11-04T19:02:43Z"
+   }
   },
   {
    "id": "eu-ecb-president-nominated-2026",
@@ -5840,6 +6126,50 @@
      ],
      "note": "Costa opened the process on 29 Oct and Lagarde is reported to leave on 7 Feb 2027, which points to a recommendation by December. Forecasters remain apart: a January step would not count.",
      "note_cs": "Costa 29. října zahájil výběr a Lagardeová má podle zpráv odejít 7. února 2027, což ukazuje na doporučení do prosince. Prognostici se dál rozcházejí: krok v lednu by se nepočítal."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.73,
+     "combined": 0.729,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.83,
+       "reason": "Council recommendation typically follows Eurogroup agreement within days, and a 7 Feb exit needs EP and ECB opinions, forcing it by December; risk is three-post package bargaining pushing to January.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.8,
+       "reason": "Nominations close 6 Nov, the Eurogroup takes stock 9 Nov and Lagarde leaves 7 Feb, so the Parliament and ECB opinions require a Council recommendation by about December; a Knot versus Hernández de Cos fight could push it into January.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.62,
+       "reason": "Nominations by 6 Nov, Eurogroup review 9 Nov and a 7 Feb departure mean a December Ecofin recommendation is the natural landing; the NO case is that ECB succession fights are usually bundled with other jobs and nationality bargains and can easily slide into January with de Guindos acting.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.87,
+       "reason": "Model: no timing market (Polymarket has Knot 0.42, de Cos 0.41 with thin volume). Lagarde's 7 Feb exit plus the Parliament and ECB opinions force a Council recommendation by about December, and the Eurogroup pledged speed; main risk is a deadlock under the 16-of-21 and 65% rule.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.4,
+       "reason": "Nominations close 6 Nov and Eurogroup meets 9 Nov; Lagarde leaves 7 Feb so the European Council should decide by December or January, but the Council recommendation needs EP and ECB opinions first and could slip into January.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Nominations close on 6 Nov, the Netherlands put forward Knot and ministers take stock on 9 Nov, so the process is moving before the end of the year.",
+     "note_cs": "Nominace se uzavírají 6. listopadu, Nizozemsko navrhlo Knota a ministři je probírají 9. listopadu, takže proces do konce roku postupuje."
     }
    ]
   },
@@ -6039,6 +6369,50 @@
      ],
      "note": "Opened with the full five-forecaster ensemble.",
      "note_cs": "Otevřeno s úplným odhadem pěti prognostiků."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.15,
+     "combined": 0.148,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Replacing a main contractor on a megaproject in under three months is rare; KHNP is only drafting an alternative plan, and lists or talks do not count. Schedule pressure adds a little.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.09,
+       "reason": "KHNP is only drafting an alternative selection plan after talks collapsed on 29 Oct; naming a contractor for a huge civil package inside three months, under fixed price, is fast, though Havlíček says there are plenty of interested firms.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.33,
+       "reason": "YES case: 'selected' counts without a signed contract, KHNP says an alternative selection plan is in hand, Havlíček says there are plenty of takers and ČEZ is threatening sanctions, so a preferred-bidder announcement or a patched-up Daewoo-Doosan deal inside three months is realistic; against it, a multi-billion civil-works package is rarely re-let that fast.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.12,
+       "reason": "Model: no market. KHNP only ended Daewoo-Doosan talks on 29 Oct and is drafting an alternative selection plan; three months is short for a named pick, with some chance of a quick swap or renewed deal given the schedule pressure.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.15,
+       "reason": "KHNP is drafting an alternative selection plan only days after ending talks; naming a firm or going self-build within three months is possible but tender-like steps do not count.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "KHNP ended talks with Daewoo E&C and Doosan and on 3 Nov said it is drawing up a plan to pick a new contractor, with no name; a choice by January looks less likely.",
+     "note_cs": "KHNP ukončila jednání s Daewoo E&C a Doosanem a 3. listopadu uvedla, že chystá plán na výběr nového dodavatele, jméno však nezveřejnila. Výběr do ledna je méně pravděpodobný."
     }
    ]
   },
@@ -6116,6 +6490,50 @@
       "read_at": "2026-11-01T18:56:55Z"
      },
      "market_note": "The Polymarket ceasefire market counts any breach, a wider event than a US-confirmed strike on Iranian territory; the forecasters discount it for that."
+    },
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.58,
+     "combined": 0.579,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Hazard from Jul-Sep episodes (5 in 56 days) gives ~90% over 27 days, the Sep-Nov phase ~35%; pledge has ended, plans exist and carriers are in place, offset by Qatar talks, midterm drubbing and the on-record confirmation requirement.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.4,
+       "reason": "Qeshm was hit on 2-3 Nov, the IRGC claims another MQ-9 kill, strike plans are ready and three carriers are in the region, so limited tit-for-tat is plausible; against that, Trump and Vance blame the war for the rout and oil fell 9% on bets of a deal.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.75,
+       "reason": "NO case: the midterm drubbing gives Trump a reason to pause and bargain, and the 2-3 Nov Qeshm strike was framed as a one-off 'defensive' response; but with a blockade, an MQ-9 claimed downed, mines sinking tankers, three carriers and CENTCOM plans for post-election strikes, 27 days without one confirmed hit on Iranian territory or waters is the less likely outcome.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Market anchor: Polymarket ceasefire through 30 Nov at 0.425 implies 0.575 for a US strike hitting Iran after market creation. Shaded slightly for the required official US confirmation; plans are ready and carriers in place, while Qatar's channel stays open.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.62,
+       "reason": "CENTCOM reportedly has strike plans that could begin after the midterms, Trump said 'if we have to', and the latest Qeshm strike came just before the window; Iranian fire and mines keep pressure high, though talks and a US political rebuke could restrain.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Trump confirmed a strike on Qeshm around 2-3 Nov, and US media report plans for further strikes after the midterms.",
+     "note_cs": "Trump potvrdil úder na Kešm kolem 2. a 3. listopadu a americká média píší o plánech dalších úderů po volbách."
     }
    ]
   },
@@ -6493,6 +6911,79 @@
      ],
      "note": "New question: the opposition five back Eisenkot; Herzog must decide by 11 Nov.",
      "note_cs": "Nová otázka: pět opozičních stran podporuje Eisenkota; Herzog musí rozhodnout do 11. listopadu."
+    }
+   ]
+  },
+  {
+   "id": "sk-fico-out-jan",
+   "scope": "europe",
+   "topic": "Slovak government",
+   "question": "Will Robert Fico cease to be Prime Minister of Slovakia by 31 January 2027?",
+   "question_cs": "Přestane být Robert Fico do 31. ledna 2027 předsedou slovenské vlády?",
+   "criterion": "Yes if by 31 Jan 2027 23:59 CET Fico has resigned, been dismissed or been removed by a no-confidence vote, or the president has accepted his government's resignation, or a successor has been appointed. An announcement of a future resignation does not count. Otherwise no.",
+   "criterion_cs": "Ano, pokud Fico do 31. ledna 2027 ve 23:59 SEČ odstoupí, bude odvolán nebo vyslovením nedůvěry zbaven funkce, prezident přijme demisi jeho vlády nebo bude jmenován jeho nástupce. Ohlášení budoucí demise se nepočítá. Jinak ne.",
+   "resolution_source": "https://www.prezident.sk/",
+   "opened": "2026-11-04",
+   "resolves_by": "2027-01-31T23:59:00+01:00",
+   "sources": [
+    {
+     "title": "ČT24: Fico rejects early elections",
+     "url": "https://ct24.ceskatelevize.cz/clanek/svet/fico-po-ztrate-vetsiny-v-parlamentu-nechce-predcasne-volby-379266"
+    },
+    {
+     "title": "Pravda: PS to file Blanár motion",
+     "url": "https://www.pravda.sk/spravy/domace/clanok/2072327-blanar-mlci-o-moskve-korcok-vytiahol-vazne-obvinenia-ruska-propaganda-imunita-a-navrh-na-odvolanie"
+    },
+    {
+     "title": "Pravda: coalition recount",
+     "url": "https://www.pravda.sk/spravy/domace/clanok/2072373-malatinec-sns-danko-huliak-parlamentne-volby"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-11-04T19:02:43Z",
+     "p": 0.09,
+     "combined": 0.087,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.1,
+       "reason": "Base rate for a Slovak PM falling within three months of losing the majority is about 20%, but Fico rejects early elections, a no-confidence needs 76, and Malatinec does not seek an early vote.",
+       "at": "2026-11-04T18:45:20Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.05,
+       "reason": "Fico rejects early elections and the budget is passed; removal needs 76 votes and Taraba and Malatinec are not aiming at that, and the coalition has every incentive to last to September 2027.",
+       "at": "2026-11-04T18:45:39Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.12,
+       "reason": "YES case: a 75-seat coalition facing a budget vote and open blame of SNS and Hlas could lose Danko or Hlas and face a 76-vote no-confidence; but Malatinec says he backs useful laws and wants no early election, Taraba's group has no interest in handing power to PS, and Fico has bought his way out of every defection since 2024.",
+       "at": "2026-11-04T18:46:16Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.08,
+       "reason": "Model: no market (searches for Fico and Slovakia found none). Fico rejected early elections, a no-confidence vote needs 76 and Malatinec is not seeking a fall; 75 seats is fragile, but Fico has survived similar crises and SNS or Hlas exit risk is limited over three months.",
+       "at": "2026-11-04T18:48:45Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.1,
+       "reason": "Coalition is down to 75 of 150 but Fico rejects early elections, the opposition needs 76 for no-confidence and SNS/Hlas defections are not signalled; he has survived worse.",
+       "at": "2026-11-04T19:00:00Z"
+      }
+     ],
+     "note": "Opened after the coalition fell to 75 of 150 seats.",
+     "note_cs": "Otevřeno poté, co koalice klesla na 75 ze 150 mandátů."
     }
    ]
   }
