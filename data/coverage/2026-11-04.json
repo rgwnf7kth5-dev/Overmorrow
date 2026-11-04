@@ -1,0 +1,16 @@
+{"edition":"2026-11-04","checked_at":"2026-11-04T05:10:00+01:00","procedure":"coverage-1",
+"unreachable":[
+"Reuters World (node scripts/read.mjs https://www.reuters.com/world --links: HTTP 401, site refuses scripted reading; WebSearch 'Reuters world news November 3 2026 top stories' returned no usable 3 Nov list)",
+"AP top stories (node scripts/read.mjs https://www.apnews.com --links: HTTP 403, site refuses scripted reading)",
+"ČTK main stories (no front page read; only ceskenoviny.cz items surfaced in one WebSearch, pre-event notices)"],
+"lists_read":["wikipedia (Portal:Current events/2026 November 3, read; short, about 12 entries)","ct24 (front page, read 04 Nov 04:00 UTC; shows 3-4 Nov items)"],
+"note":"Only Wikipedia and ČT24 were readable. An event needs two lists, so only events in both (or ČT24 plus a Wikipedia/Reuters/AP entry for Czech events) are recorded. BBC and Seznam front pages were read as cross-checks but are not coverage-1 lists. Reuters/AP/ČTK absence means events seen on Wikipedia alone cannot be qualified; they are listed in not_qualified.",
+"events":[
+{"title":"US midterm elections; US outlets project Democrats win the House, Democrats gain in Senate","scope":"world","lists":["wikipedia","ct24"],"source":"https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_3","status":"covered","story":"us-midterms"},
+{"title":"ČT and Czech Radio 24-hour strike over abolition of licence fees","scope":"cz","lists":["ct24","ctk (ceskenoviny.cz pre-event notice via WebSearch)"],"source":"https://ct24.ceskatelevize.cz/clanek/domaci/ct-a-cro-budou-3-listopadu-stavkovat-k-protestum-se-prida-verejnost-napric-zemi-379229","status":"covered","story":"cz-strike"}],
+"not_qualified":[
+{"title":"Spain: Transport Minister Óscar Puente resigns in Congress (announced Tue evening 3 Nov, withdraws from the 29 Nov election list)","seen_in":["bbc (not a coverage list; published 2026-11-03T20:28Z)"],"source":"https://www.bbc.com/news/articles/c6wydqd4yxdyo","status":"dropped","note":"Not on Wikipedia 3 Nov, Reuters/AP unreadable, so not qualified by rule. It was in the planning file's dropped list ('resignation by 23:59 practically excluded, 7%'), and happened; worth a postmortem line on that forecast."},
+{"title":"RBA raises rate 0.25 pt to 4.85%","seen_in":["wikipedia"],"status":"covered","story":"au-rba"},
+{"title":"Indian national killed in attack on vessel off Oman (Hormuz); US strikes on Qeshm (2-3 Nov)","seen_in":["wikipedia","bbc"],"status":"covered","story":"us-iran"},
+{"title":"Russian strikes on Ukrainian aid centre/hospice: toll 38 in 24 h","seen_in":["bbc","ct24 (earlier toll 26)"],"status":"covered","story":"ua-war"},
+{"title":"Bomb hoaxes on seven European flights","seen_in":["wikipedia","bbc"],"status":"not in planning file","note":"Minor, no step."}]}

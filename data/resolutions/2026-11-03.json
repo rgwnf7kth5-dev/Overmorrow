@@ -103,6 +103,65 @@
    "note": "Ryanair's RNS of 2 Nov 2026 (via Reuters/TradingView, confirmed by RTE) reports H1 FY27 profit after tax of EUR 2,147.6m, above EUR 2.10bn.",
    "resolved_at": "2026-11-03T05:22:00+01:00",
    "held": true
+  },
+  {
+   "claim": "ir-ukmto-incident-1",
+   "outcome": "yes",
+   "evidence": "https://gcaptain.com/new-wave-of-attacks-hits-tankers-and-lng-carrier-in-strait-of-hormuz-and-persian-gulf/",
+   "note": "UKMTO's own page refused scripted reading; gCaptain, citing UKMTO, puts a tanker struck by two projectiles 72 nm east of Ras Al Khafji at 2347 UTC on 1 November, which is 03:47 Gulf time on 2 November, and Bloomberg via gCaptain confirms the strike in the Persian Gulf.",
+   "resolved_at": "2026-11-04T05:10:00+01:00"
+  },
+  {
+   "claim": "ua-talks-date-1",
+   "outcome": "no",
+   "evidence": "https://kyivindependent.com/witkoff-reveals-location-date-for-new-trilateral-peace-deal-negotiations/",
+   "note": "Witkoff named 10-11 November on X, which the Kyiv Independent (published 01:51 Kyiv time on 3 Nov) dates to 3 November while RFE/RL says Monday 2 November; the post's exact time was not seen, so I read it as after 23:59 Kyiv time on the Kyiv Independent's date and the window's Kyiv clock.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "il-likud-challenge-1",
+   "outcome": "no",
+   "evidence": "https://www.jpost.com/israel-election-2026/article-913737",
+   "note": "The Jerusalem Post reports that on Monday Sohlberg rejected a Likud demand for an investigative briefing before the results were approved and said those entitled could challenge in court, with no filing reported; I read a demand for a briefing as not seeking annulment, a re-vote or a recount and not as contesting the results.",
+   "resolved_at": "2026-11-04T05:10:00+01:00",
+   "ambiguous": true
+  },
+  {
+   "claim": "cz-coalition-media-1",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/babis-druhe-cteni-navrhu-na-zruseni-poplatku-by-mohlo-byt-kolem-15-ledna/2896300",
+   "note": "ČTK reports Babiš at the 2 Nov press conference saying the coalition will settle the form of funding at second reading around 15 January, and no leader announced an agreed model; held is false because the settlement expected from the Monday council moved to January and no report found says the council met.",
+   "resolved_at": "2026-11-04T05:08:00+01:00",
+   "held": false
+  },
+  {
+   "claim": "pl-tribunal-1",
+   "outcome": "no",
+   "evidence": "https://notesfrompoland.com/2026/11/03/disputed-polish-constitutional-court-holds-first-meeting-after-takeover-by-government-backed-judges/",
+   "note": "trybunal.gov.pl was unreachable, so on two outlets: prawo.pl (31 Oct) gives the budget as the stated purpose with immunity only a possibility, Notes from Poland (3 Nov) reports the Assembly's decisions as budget and disciplinary panels, and neither reports a statement in the window that the motions were on the agenda.",
+   "resolved_at": "2026-11-04T05:08:00+01:00"
+  },
+  {
+   "claim": "rs-student-pm-1",
+   "outcome": "no",
+   "evidence": "https://www.danas.rs/tag/studentska-lista/",
+   "note": "Primary channels not checked directly; the Danas Student List feed and the N1 front page read on 4 Nov carry no named prime ministerial candidate, and Vučić's 3 Oct claim about Šoškić is not a naming by the List.",
+   "resolved_at": "2026-11-04T05:08:00+01:00"
+  },
+  {
+   "claim": "cz-dukovany-1",
+   "outcome": "no",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/korea-podle-ministra-neustupuje-od-zavazku-dokoncit-rozsireni-dukovan/2894657",
+   "note": "ČTK on 3 Nov reports KHNP still drawing up an alternative plan for choosing a new builder, with its 29 Oct statement only preparing the agreement's termination and a tender, so neither step was confirmed as done in the window.",
+   "resolved_at": "2026-11-04T05:08:00+01:00"
+  },
+  {
+   "claim": "cz-court-missions-1",
+   "outcome": "no",
+   "evidence": "https://www.usoud.cz/aktualne",
+   "note": "The Constitutional Court's news page lists nothing on this request through 2 Nov, and no ČTK or other report of a decision on the request filed in October was found.",
+   "resolved_at": "2026-11-04T05:08:00+01:00"
   }
  ]
 }

@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "pooled": {
-  "n": 13,
-  "rms_in_scales": 1.25,
+  "n": 14,
+  "rms_in_scales": 1.21,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -262,6 +262,22 @@
    ],
    "n": 1,
    "rms_surprise": 1.7
+  },
+  "turkey-cpi-annual-change-october-2026-tu-i-k": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-04",
+     "claim": "tr-cpi-oct",
+     "consensus": 29.5,
+     "first": 29.77,
+     "centre": 29.47,
+     "scale_used": 0.6,
+     "source": "Median of ForInvest Haber survey (17 economists, 27 Oct 2026) and CNBC-e survey (20 economists, 27 Oct 2026), both 29.5%; Matriks survey mean 29.44%"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.27
   }
  },
  "extra": {}
