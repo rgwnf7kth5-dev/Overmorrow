@@ -4,3 +4,5 @@ Searched: markets.mjs search Mississippi Senate; Colom; AP call Mississippi Sena
 - Polymarket "Will the Democrats win the Mississippi Senate race in 2026?" 0.8925, liquidity 48k, volume 1.8m; Republicans 0.111, liquidity 140k.
 Match: these ask who eventually wins, with no 6 Nov deadline, so they do not match the claim, which also needs AP's call inside the window. forecast.market stays null. No contract on the timing of an AP call found. They do show where the eventual winner is priced.
 No published model found.
+
+Morning read 2026-11-05 about 04:05Z: Kalshi SENATEMS-26-D moved 0.89 to 0.954 (Democrat wins eventually; no 6 Nov deadline, no match with the AP-call claim). markets.mjs timed out; price read from Kalshi's API by the overnight agent.

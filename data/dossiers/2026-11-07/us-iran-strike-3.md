@@ -46,3 +46,8 @@
 - https://www.aljazeera.com/news/2026/11/4/no-regrets-trump-says-iran-war-justified-despite-polls-drubbing
 - data/dossiers/2026-11-06/us-iran-strike-2.md
 - data/dossiers/2026-11-06/us-iran-ship-1.md
+
+## Overnight facts (morning run, read 5 Nov 2026 05:00-05:10 CET)
+No US strike on Iranian territory reported up to 03:56Z on 5 Nov; the "as early as 4 Nov" date in earlier reports has passed. Trump played down the prospect of strikes after the midterm defeat, saying there were no immediate plans. — https://gcaptain.com/trump-plays-down-prospect-of-iran-strikes-after-midterm-rout/ (2026-11-04T17:19Z)
+The IRGC claimed downing an MQ-9 on 4 Nov. Headlines suggest the US has hit Qeshm repeatedly (2-3 Nov). A small "defensive" exchange is the likely form of any strike. — https://maritime-executive.com/article/iran-claims-strikes-on-multiple-tankers-emboldened-after-us-elections
+Vance blamed the war for the defeat. Brent fell about 9% to about $94.50 on diplomacy hopes. Qatar passes proposals between the sides. — https://www.bbc.com/news/articles/crz98zqkz7z0o; https://investinglive.com/commodities/gold-jumps-as-oil-slumps-on-iran-diplomacy-hopes-an-early-test-of-citi-s-thesis/ (02:12Z)
