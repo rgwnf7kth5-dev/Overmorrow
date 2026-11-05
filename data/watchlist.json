@@ -125,7 +125,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.92,
        "reason": "Passed first reading with 93 coalition votes and every budget past first reading has passed; third reading scheduled 2 Dec, four weeks of slack.",
        "inputs": [
@@ -361,7 +361,13 @@
      "note_cs": "Kontrola před zasedáním: všichni ekonomové oslovení ČTK čekají zvýšení o 25 bazických bodů, člen bankovní rady Seidler se k němu kloní."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.ceskenoviny.cz/zpravy/cnb-zvysila-zakladni-urokovou-sazbu-a-zhorsila-vyhled-ekonomiky/2895624",
+    "note": "The Bank Board raised the two-week repo rate by 0.25 pp to 4.00% on 5 Nov 2026, with three of seven members voting to hold.",
+    "note_cs": "Bankovní rada ČNB 5. listopadu 2026 zvýšila dvoutýdenní repo sazbu o 0,25 procentního bodu na 4,00 %; tři ze sedmi členů hlasovali pro ponechání.",
+    "resolved_at": "2026-11-05T18:49:23Z"
+   }
   },
   {
    "id": "cz-cnb-rate-4pct-dec",
@@ -639,7 +645,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.38,
        "reason": "September was 2.5%, the threshold is strictly above it; high October 2025 base and fuel cap push down, but energy and core inflation push up.",
        "inputs": [
@@ -1018,7 +1024,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.3,
        "reason": "Coalition lacks a majority without SPD, which opposes the cuts, and the Chamber is busy with the budget; a compromise bill by year-end is possible but uncertain.",
        "inputs": [
@@ -1153,7 +1159,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.07,
        "reason": "Finance minister ruled out a bank tax and Babiš talks only of negotiating with banks; a cabinet-approved levy bill by January is unlikely.",
        "inputs": [
@@ -1344,6 +1350,68 @@
      ],
      "note": "Weekly re-forecast. The constituent session is on 5 Nov and will be adjourned for one or two weeks; Hlaváček says the coalition agreement will not be ready by then.",
      "note_cs": "Týdenní přepočet. Ustavující zasedání je 5. listopadu a bude přerušeno na jeden až dva týdny; Hlaváček říká, že koaliční dohoda do té doby hotová nebude."
+    },
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.74,
+     "combined": 0.74,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.7,
+       "reason": "Class 0.80 (n=5) for a mayor within ~7 weeks; about 0.75 here because the session is adjourned to 19 Nov, the third partner is still open and 2022 shows slippage. About 0.93 that the mayor is STAN, given the STAN+Spolu core and Portlik conceding the post.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.87,
+       "reason": "STAN (17) + Spolu (17) = 34 of 65 is already a majority and is agreed as the core; ČTK calls Hlaváček the probable mayor, with STAN taking the post in the three-party split. Session resumes 19 Nov, leaving 11 days of slack; risks are a further adjournment over the third partner or a secret-ballot upset.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.58,
+       "reason": "Case for NO: STAN and Spolu tied at 17, so ODS can contest the mayoralty (Praha sobě's floated Portlík offer shows a Spolu-mayor path exists); three-party deal with Pirates or Praha sobě still open; 2010 and 2014 mayors came only at the end of a 7-week window and 2022 took to Feb; 19 Nov session can be adjourned again. For YES: deal expected 10-11 Nov, session set for 19 Nov, Spolu conceded winner's claim, Hlaváček the consensus name. P(mayor elected by 30 Nov) ~0.68 x P(STAN | elected) ~0.85.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.77,
+       "reason": "Polymarket Hlaváček 0.95 and Kalshi 0.93 have no 30 Nov deadline, so not used as a match. Rate 0.8 elected within ~7 weeks; session resumes 19 Nov, STAN-Spolu core agreed, talks due 10-11 Nov. P(elected by 30 Nov) ~0.8 x P(STAN) ~0.96; third partner still open.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.72,
+       "reason": "STAN-Spolu core, talks to conclude ~10-11 Nov, session resumes 19 Nov; Hlaváček favoured, but 2022-style delay and Spolu claim are risks.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "The assembly adjourned to 19 Nov without a mayor or coalition; the third partner is still open and the result is due on 10-11 Nov.",
+     "note_cs": "Zastupitelstvo se přerušilo do 19. listopadu bez primátora i koalice; třetí partner je stále otevřený a výsledek má být znám 10.–11. listopadu."
     }
    ],
    "result": null
@@ -1506,7 +1574,13 @@
      "note_cs": "Týdenní přepočet: výhledy bank kladou inflaci v roce 2027 výrazně nad srpnových 2,5 %, ING uvádí 3,4 %."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.ceskenoviny.cz/zpravy/cnb-zvysila-zakladni-urokovou-sazbu-a-zhorsila-vyhled-ekonomiky/2895624",
+    "note": "ČNB's 5 Nov 2026 forecast puts 2027 average inflation at 3.2%, above the 2.5% threshold (ČTK report; cnb.cz table not read directly).",
+    "note_cs": "Prognóza ČNB z 5. listopadu 2026 uvádí průměrnou inflaci v roce 2027 na 3,2 %, tedy nad hranicí 2,5 % (podle ČTK; tabulku na cnb.cz jsem přímo nečetl).",
+    "resolved_at": "2026-11-05T18:49:23Z"
+   }
   },
   {
    "id": "us-house-democrats",
@@ -1629,7 +1703,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.88,
        "reason": "Generic ballot near D+9 and the models give Democrats strong favourite status; mid-decade redistricting and a polling miss are the residual risks.",
        "inputs": [
@@ -1776,7 +1850,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.5,
        "reason": "Democrats need a net four seats with leads of only 2-4 points in TX, OH, AK and ME, each within a normal polling error; the national environment favours them.",
        "inputs": [
@@ -2228,7 +2302,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.2,
        "reason": "Results 53 Netanyahu bloc, 48 Eisenkot, 19 Arab lists; both camps expect Eisenkot to get the first mandate, and Herzog must assign by 11 Nov, though Liberman and Arab-party recommendations leave real uncertainty.",
        "inputs": [
@@ -2289,6 +2363,68 @@
      ],
      "note": "On 3 Nov the five opposition parties agreed to recommend Eisenkot; Liberman had been undecided.",
      "note_cs": "Pět opozičních stran se 3. listopadu dohodlo, že doporučí Eisenkota; Liberman byl dosud nerozhodnutý."
+    },
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.03,
+     "combined": 0.03,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.02,
+       "reason": "The 0.78 class is overridden: Eisenkot holds 67 recommendations, a Knesset majority, against Netanyahu's 46 plus UTJ abstaining. Convention tasks the member with most recommendations, and a later mandate passing to Netanyahu by 30 Nov is not possible within the 28-day term. Tail is a Herzog-brokered unity deal.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.02,
+       "reason": "Eisenkot has 67 recommendations to 46 and is expected to get the mandate by 11 Nov. Criterion gives NO if another person gets the first mandate; a second mandate to Netanyahu could not come before December anyway.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.03,
+       "reason": "Case for YES: Herzog reportedly seeks a Netanyahu-Eisenkot unity government; Likud consultation last; a rotation with Netanyahu first is the only route. But Eisenkot has 67 recommendations to Netanyahu's 46, Herzog must task by 11 Nov, and a failed Eisenkot mandate would pass only after 30 Nov. Near-certain NO.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.02,
+       "reason": "Polymarket 0.02 and Kalshi 0.02 on the first mandate (their deadlines run to end 2027 and 1 Jan, so not recorded as a match). Eisenkot has 67 recommendations to Netanyahu's 46; the 0.78 historical class no longer applies.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.1,
+       "reason": "Eisenkot 67 recommendations vs 46; Netanyahu only via unity-deal manoeuvre or Herzog surprise.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "Eisenkot has 67 recommendations against 46 for Netanyahu.",
+     "note_cs": "Eisenkot má 67 doporučení, Netanjahu 46."
     }
    ],
    "result": null
@@ -2536,6 +2672,68 @@
      ],
      "note": "Results certified on 4 Nov, consultations under way; the mandate runs 28 days plus 14, and Ra'am's backing shortens the path to a coalition.",
      "note_cs": "Výsledky jsou od 4. listopadu potvrzené a konzultace běží. Pověření platí 28 dní plus 14 a podpora strany Ra'am zkracuje cestu ke koalici."
+    },
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.58,
+     "combined": 0.583,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.68,
+       "reason": "Class 0.67 (4/6 within 96 days). A 67-MK recommendation is a plus and the 28+14 days ends ~22 Dec, leaving room for a second mandate. Offset by a bloc spanning Yisrael Beytenu to Arab parties, Herzog pressing on stable majority and Yashar seeking an emergency national government. Net near base.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.7,
+       "reason": "Class rate 0.67. Tasking by 11 Nov gives 42 days to about 23 Dec, plus a second-mandate window before 31 Jan. A 67-MK anti-Netanyahu base helps and Eisenkot has prepared for a minority government, but the 67 includes Ra'am and the Joint List, the bloc is split even on a Knesset speaker, and Herzog pressed Yashar on a stable majority.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.58,
+       "reason": "Case for NO: 67-seat bloc spans Liberman to Joint List; Herzog pressed Yashar on stability; Yashar's 'emergency national government' talk implies courting Likud, which takes time; Bennett/Liberman bases resist Arab parties; two of six recent elections produced no government; successes took 58-82 days, here 96 available. For YES: clear 67 majority already recommending, strong anti-Netanyahu glue, 2021 precedent with a thinner bloc; if Eisenkot fails by ~23 Dec a Knesset-phase swearing-in by 31 Jan is still possible. Slightly above the 0.67 base rate discounted for coalition heterogeneity.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.44,
+       "reason": "Polymarket sworn-in ladder: 31 Dec 0.295, 28 Feb 0.555; no 31 Jan rung, interpolated ~0.43, not an exact match. Add 0.01 because a second mandate cycle after the 42 days can still finish before 31 Jan; below the 0.67 class since 67 for Eisenkot includes Arab lists and Yashar seeks a unity government.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.5,
+       "reason": "Base rate 0.67 within 96 days; Eisenkot has recommendations but a stable majority is unclear and relies on Arab-party support or unity deal.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "Eisenkot has 67 recommendations, including the Joint List and Ra'am, and is expected to get the mandate.",
+     "note_cs": "Eisenkot má 67 doporučení včetně Společné kandidátky a Ra'am a čeká se, že pověření dostane."
     }
    ],
    "result": null
@@ -2891,7 +3089,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.04,
        "reason": "No general ceasefire in over four years; Russia is framing talks around post-war security and strikes continue; a 30-day full-front ceasefire in force by January is very unlikely.",
        "inputs": [
@@ -3475,6 +3673,65 @@
       "p": 0.435,
       "read_at": "2026-11-04T18:48:45Z"
      }
+    },
+    {
+     "at": "2026-11-05T18:49:40Z",
+     "p": 0.37,
+     "combined": 0.368,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.3,
+       "reason": "Class 0.25 for ~10 weeks; window is ~8 weeks. Up slightly for Qatari draft and 'direct talks in coming days' plus Trump's post-midterm incentive, held down by own record 0/2 on mediated Iran outcomes, Iran's preconditions, recent strikes, and the two-sided confirmation requirement.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.3,
+       "reason": "Class rate 0.25 over ~10 weeks; here 8 weeks. Up: Qatar pushing a draft with Axios saying direct talks possible within days, both committed per Doha, Trump weakened by midterms and Vance blaming the war. Down: Rezaei rejects the US reply, strike preparations, and the strict test requires both governments to confirm a same-venue meeting.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.45,
+       "reason": "Case for NO: Iran insists on its conditions first (blockade, sanctions, guarantees), calls the US reply unconvincing, Araghchi sees no need to meet; US wants nuclear first and is poised for renewed strikes, which would freeze talks; criterion needs both governments confirming a same-venue round, not message-passing; base rate 0.25 per ~10 weeks. For YES: Qatar says both committed, draft circulating, Axios floats direct talks within days, Trump motivated by the midterm loss to close; Iranian delegation was in Doha on 1 Nov. Eight weeks is long.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.4,
+       "reason": "Polymarket senior meeting by 31 Dec 0.435, Kalshi 0.42 (bid 0.38); differ on seniority and need no dual confirmation, so not recorded as a match. Down slightly: both foreign ministry and US must confirm and strikes risk derailing; Qatari draft and talk of direct talks are in the price.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.4,
+       "reason": "Base 0.25 for resumption, raised by Qatari draft and talk of direct talks soon; offset by Iranian rejection and possible US strikes; both-side confirmation required.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      }
+     ],
+     "note": "Reports of possible direct talks in the coming days, and Trump says there may be no reason to resume combat, though no round is set and Iran calls the US reply unconvincing.",
+     "note_cs": "Objevily se zprávy o možných přímých jednáních v nejbližších dnech a Trump říká, že možná není důvod obnovovat boje; žádné kolo však není stanoveno a Írán označil americkou odpověď za nepřesvědčivou."
     }
    ],
    "result": null
@@ -3772,7 +4029,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.85,
        "reason": "Trump accepted Xi invitation and the White House reportedly confirmed the Shenzhen trip and meeting; cancellation risk from Iran or trade shocks remains.",
        "inputs": [
@@ -4160,7 +4417,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.72,
        "reason": "ECB held unanimously on 29 Oct, Lagarde said the direction of travel is clear and energy risks are rising; most economists expect a December hike, with growth weakness as the main risk.",
        "inputs": [
@@ -4983,7 +5240,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.1,
        "reason": "Only two censures succeeded in the Fifth Republic and all motions against Lecornu failed; success needs the PS and RN voting together, which is possible only after a 49.3 on a budget with pension de-indexation.",
        "inputs": [
@@ -5118,7 +5375,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.33,
        "reason": "Read literally, the 12 Oct listings are not the numbered 22nd package; no Commission proposal yet, so formal unanimous adoption by 31 Dec depends on a pre-Christmas push.",
        "inputs": [
@@ -5249,7 +5506,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.17,
        "reason": "October summit was inconclusive, leaders softened the year-end target and the Irish cut was rejected; only a breakthrough at the 26 Nov special summit or December council would count.",
        "inputs": [
@@ -5417,6 +5674,68 @@
      "market": null,
      "note": "Okamura (SPD) rejects any tax-based funding and expects the replacement model to be agreed only in the first half of 2027; the committee period runs to 24 Dec, so a third reading by 31 Jan looks less likely.",
      "note_cs": "Okamura (SPD) odmítá financování formou daně a dohodu na novém modelu čeká až v první polovině roku 2027; lhůta pro výbory běží do 24. prosince, takže třetí čtení do 31. ledna je méně pravděpodobné."
+    },
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.09,
+     "combined": 0.086,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.06,
+       "reason": "Bills reaching a third-reading vote pass ~99% (10th term 29/30), so the risk is timing. Second reading only 'possibly January or February', gov bill readings slip 0.60 per class (completed at meeting 19-47%), opposition obstruction promised, and the valorisation formula is still being reworked.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.09,
+       "reason": "Bill is through first reading, but Babiš himself puts second reading in January or February, the coalition is reopening its content on 9 Nov, and the opposition promises obstruction. Third reading by 31 Jan needs the early end of that range plus no delay; the coalition did force an unexpected night vote, so not negligible.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.12,
+       "reason": "Case for YES: coalition majority 108, Babiš says no retreat, bill could be pushed through December/January sessions with shortened third-reading interval. Case for NO: Novinky reports second reading only in January or February; coalition still haggling over the valorisation formula (council 9 Nov); third reading needs 14 days (7 if shortened) after second reading; opposition obstruction promised; 1 Jan start already abandoned by ministers. Third reading by 31 Jan requires everything to go fast.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.06,
+       "reason": "No market found. Babiš puts second reading in January or February, the formula is still being reworked, opposition promises obstruction, and slip class for government bill readings is 0.60. P(second reading done in Jan) ~0.25 x P(third by 31 Jan) ~0.25.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.12,
+       "reason": "Second reading only Jan/Feb, opposition obstruction, coalition tweaking valorisation; third reading by 31 Jan unlikely.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "Second reading now put in January or February and the coalition reopens the formula on 9 Nov, which leaves little room for a third reading by 31 January.",
+     "note_cs": "Druhé čtení se nyní čeká v lednu nebo únoru a koalice se 9. listopadu vrací ke vzorci, takže na třetí čtení do 31. ledna zbývá málo prostoru."
     }
    ]
   },
@@ -5536,7 +5855,7 @@
       {
        "role": "outsider",
        "model": "claude-sonnet-5-5",
-       "at": "2026-10-30T18:21:12.157Z",
+       "at": "2026-10-30T18:21:12Z",
        "p": 0.93,
        "reason": "Re-elected after three consecutive Senate elections, largest club backs him and the STAN leader has no objection; only a secret-ballot surprise is a risk.",
        "inputs": [
@@ -6911,6 +7230,68 @@
      ],
      "note": "New question: the opposition five back Eisenkot; Herzog must decide by 11 Nov.",
      "note_cs": "Nová otázka: pět opozičních stran podporuje Eisenkota; Herzog musí rozhodnout do 11. listopadu."
+    },
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.94,
+     "combined": 0.938,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.95,
+       "reason": "No class; 67 recommendations, ynet 'expected to receive the mandate', and a legal deadline of 11 Nov, one day inside the window. Remaining risk is a unity-government manoeuvre or a tasking of another name; schedule slip for statutory steps is small.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.96,
+       "reason": "67 of 120 recommendations, a majority; ynet and JPost both expect him to get it, and the legal deadline of 11 Nov falls inside the window. Residual risk: a delay or an unusual move by Herzog over a unity push (the October report was denied by his office), or the announcement timing.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.9,
+       "reason": "Case for NO: Herzog's unity push could delay or reshape the tasking; no date announced as of 5 Nov evening; legal deadline computed from official results could slip a day; a rotation deal might put another name first. But 67 recommendations, ynet 'expected to receive the mandate', and a statutory deadline of 11 Nov inside the 12 Nov CET window leave little room. Residual for slippage past 12 Nov or a surprise name.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.97,
+       "reason": "Polymarket 0.982 and Kalshi 0.98-0.99 that he gets the first mandate, with deadlines to end 2027 and 1 Jan, so not recorded as a match. Legal deadline 11 Nov and 67 recommendations; down ~0.01 for date or unity-manoeuvre risk before 12 Nov.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.86,
+       "reason": "Clear recommendation lead (67 vs 46), legal deadline 11 Nov; residual risk of unity-government delay or Herzog manoeuvre.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "Eisenkot has 67 recommendations; Herzog's legal deadline is 11 Nov.",
+     "note_cs": "Eisenkot má 67 doporučení; Herzogova zákonná lhůta končí 11. listopadu."
     }
    ]
   },
@@ -6986,6 +7367,95 @@
      "note_cs": "Otevřeno poté, co koalice klesla na 75 ze 150 mandátů."
     }
    ]
+  },
+  {
+   "id": "us-hegseth-out-jan",
+   "scope": "world",
+   "topic": "US politics",
+   "question": "Will Pete Hegseth cease to be US Secretary of Defense by 31 January 2027?",
+   "question_cs": "Skončí Pete Hegseth v čele amerického ministerstva obrany do 31. ledna 2027?",
+   "criterion": "Yes if by 23:59 ET on 31 Jan 2027 Hegseth has left the post, or Trump or Hegseth has announced a resignation or removal taking effect by that date. No otherwise.",
+   "criterion_cs": "Ano, pokud Hegseth do 31. ledna 2027 ve 23:59 východoamerického času funkci opustil nebo pokud Trump či Hegseth oznámili jeho rezignaci nebo odvolání s účinností do tohoto data. Jinak ne.",
+   "resolution_source": "White House and Department of Defense statements; AP, Reuters",
+   "opened": "2026-11-05",
+   "resolves_by": "2027-01-31T23:59:00-05:00",
+   "background": "After the midterm defeat Vance and other Republicans blamed the Iran war; Trump told ABC he has every intention of keeping Hegseth; Massie says he will trigger an impeachment vote when the House returns.",
+   "sources": [
+    {
+     "title": "BBC live, 5 Nov",
+     "url": "https://www.bbc.com/news/live/cj1dw0ydn595t"
+    },
+    {
+     "title": "WAPT (CNN): Massie on impeachment",
+     "url": "https://www.wapt.com/article/thomas-massie-impeachment-defense-secretary-hegseth/74338077"
+    }
+   ],
+   "base_rate": null,
+   "history": [
+    {
+     "at": "2026-11-05T18:49:23Z",
+     "p": 0.4,
+     "combined": 0.401,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:42Z",
+       "p": 0.4,
+       "reason": "No class. Post-midterm-defeat exits are common precedent (Rumsfeld 2006, Sessions 2018) and the 87-day window sits on top of an expected House impeachment vote with GOP support and blame from allies. Against: Trump's 'every intention' of keeping him and his habit of resisting pressure. Unnamed-source reports do not count.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:40:54Z",
+       "p": 0.3,
+       "reason": "Twelve weeks of unusually high pressure: GOP blaming him, a House impeachment vote expected to pass with GOP support, team souring, Massie urging replacement before the Democratic Senate. But Trump says 'every intention' of keeping him, personally likes him, wants him if strikes resume, and a Democratic Senate from January makes replacement harder. Rumsfeld 2006 is the analogue for a post-midterm exit.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-05T18:42:08Z",
+       "p": 0.4,
+       "reason": "Case for NO: Trump on 5 Nov says 'every intention' to keep him; he stood by Hegseth through Signalgate and a year of scandals; dropping him concedes the war was wrong; House impeachment passes but Senate conviction needs 67; Trump resists congressional pressure on principle. Case for YES: midterm rout with Vance and 'many' GOP lawmakers pinning blame on him, House GOP repudiation vote within days, Massie's confirm-before-new-Congress argument gives a concrete pre-3 Jan window, Trump's pattern (Flynn, Waltz) of voicing support weeks before removal; three-month window. Pressure is unusually broad but Trump's stated position is the anchor.",
+       "inputs": [
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-05T18:46:19Z",
+       "p": 0.62,
+       "reason": "Kalshi out before Feb 1 0.65 (bid 0.64). Down 0.03: Polymarket year-end 0.495 sits below Kalshi 0.54, and Trump says he has 'every intention' of keeping him; House repudiation vote and GOP blame keep it high.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-05T18:39:57Z",
+       "p": 0.3,
+       "reason": "Trump says he intends to keep him, but GOP blame after midterms, imminent House repudiation and impeachment push; 3 months is long; unscheduled-exit base rate low.",
+       "inputs": [
+        "union-of-facts",
+        "reference-data"
+       ]
+      }
+     ],
+     "note": "New question: Republican blame for the Iran war and an impeachment push, with Trump standing by Hegseth.",
+     "note_cs": "Nová otázka: republikáni viní válku s Íránem a chystá se ústavní žaloba, Trump však Hegsetha podporuje."
+    }
+   ],
+   "result": null
   }
  ]
 }
