@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "pooled": {
-  "n": 14,
-  "rms_in_scales": 1.21,
+  "n": 17,
+  "rms_in_scales": 1.158,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -215,6 +215,22 @@
    "n": 1,
    "rms_surprise": 0.8
   },
+  "bulgarian-presidential-runoff-turnout-1-nov-2026-cik-headlin": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-02",
+     "claim": "bg-turnout-1",
+     "consensus": null,
+     "first": 28.67,
+     "centre": 24.12,
+     "scale_used": 2.59,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
+  },
   "south-korea-total-exports-october-2026-preliminary-usd-bn": {
    "unit": "bn USD",
    "records": [
@@ -263,6 +279,22 @@
    "n": 1,
    "rms_surprise": 1.7
   },
+  "us-jolts-total-nonfarm-job-openings-september-2026-seasonall": {
+   "unit": "million",
+   "records": [
+    {
+     "edition": "2026-11-04",
+     "claim": "us-jolts-sep",
+     "consensus": 7.1,
+     "first": 7.523,
+     "centre": 7.126,
+     "scale_used": 0.43,
+     "source": "Trading Economics consensus (https://tradingeconomics.com/united-states/job-offers, read 2026-11-01T18:06Z); TE own forecast 7.06m"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.423
+  },
   "turkey-cpi-annual-change-october-2026-tu-i-k": {
    "unit": "%",
    "records": [
@@ -278,6 +310,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.27
+  },
+  "czech-cpi-year-on-year-october-2026-flash-estimate-c-su": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-05",
+     "claim": "cz-cpi-oct",
+     "consensus": 2.5,
+     "first": 2.4,
+     "centre": 2.448,
+     "scale_used": 0.14,
+     "source": "Market expectation 2.5% y/y, 0.5% m/m per fxstreet.cz 209890 (2 Nov); named banks 2.3 (KB), 2.4 (ČSOB), 2.4, 2.5 (Raiffeisenbank), mean 2.4"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "euro-area-hicp-annual-change-october-2026-flash-estimate-eur": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-05",
+     "claim": "eu-hicp-oct",
+     "consensus": 3.9,
+     "first": 4,
+     "centre": 3.922,
+     "scale_used": 0.11,
+     "source": "ForexFundamentals calendar (Forecast 3.9%, verified 1 Nov) and FinanceCalendar (3.9%, 2 Nov); may share an origin; no Reuters or Bloomberg poll seen"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
   }
  },
  "extra": {}

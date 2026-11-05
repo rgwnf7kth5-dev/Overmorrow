@@ -119,6 +119,37 @@
    "note": "The Academie site refused reading, so Livres Hebdo and ActuaLitte, two independent outlets, are used; both report the 2026 Goncourt went to Philippe Jaenada for L'inconnue du quai de Javel on 3 Nov.",
    "resolved_at": "2026-11-04T05:10:00+01:00",
    "held": true
+  },
+  {
+   "claim": "il-herzog-1",
+   "outcome": "yes",
+   "evidence": "https://jpost.com/israel-election-2026/article-913577",
+   "note": "On Monday 2 Nov the President's Office announced consultations starting Wednesday 4 Nov at 17:00 with Religious Zionism-Zehut and ending with Likud at 20:30 on Thursday (Jerusalem Post, i24NEWS).",
+   "resolved_at": "2026-11-05T05:06:00+01:00"
+  },
+  {
+   "claim": "us-jolts-sep",
+   "outcome": "measured",
+   "value": 7.523,
+   "evidence": "https://www.bls.gov/news.release/jolts.nr0.htm",
+   "note": "The 3 Nov BLS release puts September openings at 7.5 million; the exact preliminary level of 7,523 thousand comes from the BLS public data API series JTS000000000000000JOL, because Table 1 cells did not render in the reader.",
+   "held": true,
+   "resolved_at": "2026-11-05T05:06:00+01:00"
+  },
+  {
+   "claim": "cz-okamura-1",
+   "outcome": "yes",
+   "held": true,
+   "evidence": "https://www.ceskenoviny.cz/zpravy/opozice-neprosadila-doplneni-programu-schuze-o-odvolani-okamury-z-cela-snemovny/2896078",
+   "note": "ČTK reports the Chamber voted on 3 Nov on Hřib's proposal to add Okamura's removal to the agenda, 72 for and 87 against; psp.cz unreachable, confirmed by Deník N (https://denikn.cz/minuta/2243656).",
+   "resolved_at": "2026-11-05T05:06:00+01:00"
+  },
+  {
+   "claim": "cz-energy-1",
+   "outcome": "no",
+   "evidence": "https://ekonomickydenik.cz/cez-zdrazil-nove-srovnani-cen/",
+   "note": "No report found of E.ON, innogy or PRE stating 1 January 2027 open-ended household prices or an explicit unchanged between 2 Nov 06:00 and 3 Nov. Company sites were only partly checkable (innogy refused the request, PRE press and price-list URLs redirected to its home page, E.ON page showed nothing), so this rests on the absence of any report.",
+   "resolved_at": "2026-11-05T05:06:00+01:00"
   }
  ]
 }
