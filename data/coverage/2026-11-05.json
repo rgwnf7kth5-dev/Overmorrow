@@ -1,0 +1,260 @@
+{
+"edition": "2026-11-05",
+"checked_at": "2026-11-05T05:05:00+01:00",
+"procedure": "coverage-1",
+"unreachable": [
+"Reuters World (node scripts/read.mjs https://www.reuters.com/world/ --links: HTTP 401, site refuses scripted reading; WebSearch 'Reuters world news November 4 2026 top stories' returned no usable 4 Nov list)",
+"AP top stories (node scripts/read.mjs https://apnews.com/world-news --links: HTTP 403, site refuses scripted reading; WebSearch 'AP news top stories Wednesday November 4 2026' returned no list, only one syndicated AP 'The Latest' page on Trump after the midterms)",
+"ČT24 section pages (/rubrika/domaci, /svet, /ekonomika: HTTP 404; front page and the evening SOUHRN were read instead)"
+],
+"lists_read": [
+"wikipedia (Portal:Current events/2026 November 4, read 05 Nov 04:00 UTC; only 4 entries so far: Bangladesh wage board, Singapore haze law, Philippine meth seizure, Swift re-entry; the page was still thin and may grow)",
+"ct24 (front page and 'SOUHRN: Zásadní události středy 4. listopadu', read 05 Nov 04:00 UTC)",
+"ctk (ceskenoviny.cz front page plus the /cr/, /svet/ and /ekonomika/ sections, read 05 Nov 04:00-04:01 UTC)"
+],
+"note": "Reuters and AP were unreadable, and the Wikipedia day page had only four entries, none of them on ČT24 or ČTK as read, so no event qualified through Wikipedia. Every event below qualified on ct24 plus ctk. That pairing is the Czech rule; for the non-Czech events (US midterms, Commission report, Fico) ct24 and ctk are used as the two lists, as the 2026-11-04 file did with ct24 for the midterms. World events seen on one list cannot be qualified and are in not_qualified, so the world side of this check is weak: the absence of a world event from 'missed' means not determined. BBC World was read as a cross-check but is not a coverage-1 list. The edition was frozen on 3 Nov at 05:32, before all these events, so 'covered' means it had a story on the event, not that it reported the outcome. Portal:Current_events (main page) entries below the 4 Nov heading belong to earlier days (RBA, midterms, Komyshuvakha) and were not used. Five web searches used of 6.",
+"events": [
+{
+"title": "US midterm results: Democrats take House and Senate on projections, Alaska and Mississippi Senate seats open; Trump and Vance respond",
+"scope": "world",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-stredy-4-listopadu-379282",
+"status": "covered",
+"story": "us-midterms"
+},
+{
+"title": "Commission enlargement report: Montenegro can close its chapters by year-end, Ukraine must speed up reforms, Serbia criticised",
+"scope": "europe",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/svet/ukrajina-musi-podle-ek-zrychlit-tempo-reforem-cerna-hora-je-na-clenstvi-pripravena-379279",
+"status": "covered",
+"story": "eu-enlargement"
+},
+{
+"title": "After the ČT and Czech Radio strike Babiš says the coalition will still abolish licence fees",
+"scope": "cz",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/babis-vzal-stavku-na-vedomi-od-zruseni-poplatku-neustoupi/2897108",
+"status": "covered",
+"story": "cz-strike"
+},
+{
+"title": "Chamber passes rise of about CZK 13bn in state health payments and the digital economy act",
+"scope": "cz",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262",
+"status": "missed",
+"note": "Recorded as one event because ČT24 reports both votes in one article; ČTK has two. Announced in advance in general terms: the planning file notes an agenda copy of 16 Oct listing 4 Nov as 'possibly' third-reading items, and said psp.cz could not be read and the sitting was unconfirmed. Whether that copy named these two bills was not checked. Should have been seen on psp.cz, which is already in pipeline/sources.json, so the gap is the failed read, not a missing source."
+},
+{
+"title": "Babiš meets Tusk and Nawrocki on a one-day working visit to Warsaw; both praise the restored V4 cooperation",
+"scope": "cz",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/babis-a-tusk-ocenili-obnovu-spoluprace-ve-visegradske-ctyrce-i-dobre-vztahy/2896062",
+"status": "missed",
+"note": "Not in the planning file or agenda.json. A prime minister's visit is normally announced, but one search found no prior notice, so advance announcement is not established. The government's expected-events page (vlada.gov.cz) is already in pipeline/sources.json and is where it should have appeared."
+},
+{
+"title": "Fico rejects early elections and wants the regular September vote after his coalition lost its majority on 3 Nov",
+"scope": "europe",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/fico-i-po-ztrate-vetsiny-ve-snemovne-chce-volby-v-radnem-terminu/2897171",
+"status": "missed",
+"note": "Not announced in advance; the trigger, an MP's defection, came on 3 Nov, after the freeze."
+},
+{
+"title": "Konečná leaves KSČM after 21 years following her move to the Patriots group",
+"scope": "cz",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/konecna-po-vstupu-do-patriotu-odchazi-z-kscm-se-stranou-bude-dal-spolupracovat/2897083",
+"status": "missed",
+"note": "Not announced in advance; a Facebook post on 4 Nov."
+},
+{
+"title": "KRNAP (Krkonoše national park) unions declare strike alert; protest in Vrchlabí and petition of almost 5,000 signatures against director Moravec",
+"scope": "cz",
+"lists": [
+"ct24",
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/odborari-krnap-vyhlasili-stavkovou-pohotovost/2897217",
+"status": "missed",
+"note": "Not announced in advance: ČTK calls the protest spontaneous, and it followed the director's dismissal of two deputies on 3 Nov. agenda.json now holds a follow-up item for next week, added after the event; the planning file has nothing."
+}
+],
+"not_qualified": [
+{
+"title": "North Korea fires several missiles from Sondok towards the Sea of Japan, fourth such test in a month",
+"seen_in": [
+"ct24 (citing Reuters; not a Reuters list reading)"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-stredy-4-listopadu-379282",
+"status": "not in planning file",
+"note": "One list; one search found no second report. Reuters/AP would probably qualify it."
+},
+{
+"title": "Swift Observatory re-enters over Sumatra, ending a mission of nearly 22 years",
+"seen_in": [
+"wikipedia"
+],
+"source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_4",
+"status": "not in planning file"
+},
+{
+"title": "Singapore amends its Transboundary Haze Pollution Act, fines up tenfold",
+"seen_in": [
+"wikipedia"
+],
+"source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_4",
+"status": "not in planning file"
+},
+{
+"title": "Bangladesh garment wage board agrees to raise minimum wages after five days of protests",
+"seen_in": [
+"wikipedia"
+],
+"source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_4",
+"status": "not in planning file"
+},
+{
+"title": "Philippines seizes 200 kg of methamphetamine at Manila port",
+"seen_in": [
+"wikipedia"
+],
+"source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_4",
+"status": "not in planning file",
+"note": "Minor."
+},
+{
+"title": "Czech October inflation flash eases",
+"seen_in": [
+"ctk"
+],
+"status": "covered",
+"story": "cz-cpi"
+},
+{
+"title": "Euro-area October inflation flash rises to a three-year high",
+"seen_in": [
+"ctk"
+],
+"status": "covered",
+"story": "eu-hicp"
+},
+{
+"title": "Czech fuel price cap for Thursday: diesel below CZK 49",
+"seen_in": [
+"ctk"
+],
+"status": "covered",
+"story": "cz-fuel"
+},
+{
+"title": "South Africa municipal elections",
+"seen_in": [
+"bbc (not a coverage list)"
+],
+"status": "covered",
+"story": "za-municipal"
+},
+{
+"title": "Commission work programme: 18 initiatives withdrawn, 14 acts to be repealed",
+"seen_in": [
+"ctk"
+],
+"status": "covered",
+"story": "eu-enlargement"
+},
+{
+"title": "EP ENVI committee backs softer CO2 targets for new cars",
+"seen_in": [
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/europoslanci-z-vyboru-envi-podporili-mirnejsi-emisni-cile-pro-nova-auta/2897412",
+"status": "dropped",
+"note": "Planning reason: 'Secondary digest only; EU institution stories capped at three.'"
+},
+{
+"title": "France foils a cyberattack on blood banks' cold rooms",
+"seen_in": [
+"ctk",
+"bbc (not a coverage list)"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/francie-zachytila-utok-na-krevni-banky-mel-zvysit-teploty-na-vysoke-urovne/2897248",
+"status": "dropped",
+"note": "Close to the dropped item on refrigeration cyberattacks: 'Forecasting further attacks is excluded; see running list.' BBC says blood storage was impacted, ČTK says the attack was intercepted."
+},
+{
+"title": "Herzog begins coalition consultations in Israel",
+"seen_in": [
+"bbc (not a coverage list)"
+],
+"source": "https://www.bbc.com/news/articles/c6z98z5z91ppo",
+"status": "dropped",
+"note": "Planning reason: 'Joint List slot confirmed for Thu 5 Nov, so il-consult-1 was moot; next edition.'"
+},
+{
+"title": "US reports first bird flu death in a year, in Washington state",
+"seen_in": [
+"ct24"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/veda/usa-hlasi-mrtveho-s-ptaci-chripkou-nakazil-se-od-dobytka-379273",
+"status": "not in planning file"
+},
+{
+"title": "ČT Reportéři: environment ministry intervention in the Heřmanice tip case, NCOZ looking into it",
+"seen_in": [
+"ct24"
+],
+"source": "https://ct24.ceskatelevize.cz/clanek/regiony/moravskoslezsky-kraj/sporny-zasah-resortu-v-kauze-hermanicke-haldy-zkoumali-reporteri-ct-skody-muzou-jit-do-miliard-379248",
+"status": "not in planning file"
+},
+{
+"title": "Bill to require 300,000 petition signatures to propose a national referendum",
+"seen_in": [
+"ctk"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/k-navrzeni-celostatniho-referenda-ma-byt-potreba-300000-podpisu-v-petici/2897324",
+"status": "not in planning file"
+},
+{
+"title": "Škoda Auto to reconsider ice hockey World Championship sponsorship if Russia plays",
+"seen_in": [
+"ct24"
+],
+"status": "excluded",
+"note": "Sport."
+},
+{
+"title": "Komyshuvakha toll rises to 40 (attack of 2 Nov)",
+"seen_in": [
+"ctk",
+"bbc (not a coverage list)"
+],
+"source": "https://www.ceskenoviny.cz/zpravy/pondelni-rusky-utok-na-komysuvachu-ma-40-obeti-oznamil-zelenskyj/2897368",
+"status": "not in planning file",
+"note": "Event of 2 Nov, so not of this day; only the toll is new."
+}
+]
+}
