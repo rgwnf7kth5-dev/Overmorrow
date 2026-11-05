@@ -1,0 +1,795 @@
+{
+ "edition": "2026-11-07",
+ "frozen_at": "2026-11-05T12:39:00+01:00",
+ "revisions": [
+  {
+   "claim": "za-anc-national-2",
+   "probability": 0.96,
+   "kind": "forecast",
+   "reason": "With 37% of districts in the ANC stood at about 32% on the ward and PR ballots at midday, and the CSIR model, published after the morning freeze, projected 31.7%; adding the district ballot would give 33.3%. New ensemble: base-rate, evidence, adversarial, anchor, outsider 0.92, 0.95, 0.83, 0.88, 0.87.",
+   "reason_cs": "Při 37 % sečtených okrsků měl ANC v poledne na obvodních a stranických hlasovacích lístcích asi 32 % a model CSIR, zveřejněný po ranní uzávěrce, mu předpověděl 31,7 %; se započtením okresních lístků by to bylo 33,3 %. Nový soubor odhadů: 0,92, 0,95, 0,83, 0,88, 0,87.",
+   "sources": [
+    {
+     "title": "SABC: CSIR early predictions",
+     "url": "https://www.sabcnews.com/sabcnews/at-13-of-vds-declared-csir-early-predictions-place-anc-at-31-7/"
+    },
+    {
+     "title": "esp.info: IEC data by ballot",
+     "url": "https://esp.info/elections/local/2026?ballot=dc"
+    }
+   ]
+  },
+  {
+   "claim": "il-recs-3",
+   "probability": 0.95,
+   "kind": "forecast",
+   "reason": "On Thursday Ra'am and the Democrats recommended Eisenkot as expected, and Kan and the Jerusalem Post reported that the Joint List, due at 16:45, was set to do the same without preconditions, which would take him to 67 seats; it needs only five of its eleven members. New ensemble: 0.91, 0.87, 0.86, 0.91, 0.8.",
+   "reason_cs": "Ve čtvrtek doporučily Eisenkota podle očekávání strany Ra'am a Demokraté a televize Kan i Jerusalem Post uvedly, že Společná kandidátka, která má schůzku v 16:45, se chystá učinit totéž bez podmínek, což by mu dalo 67 mandátů; stačí pět z jejích jedenácti poslanců. Nový soubor odhadů: 0,91, 0,87, 0,86, 0,91, 0,8.",
+   "sources": [
+    {
+     "title": "Jerusalem Post: consultations enter final stretch",
+     "url": "https://www.jpost.com/israel-election-2026/article-913890"
+    },
+    {
+     "title": "Israel National News, citing Kan",
+     "url": "https://www.israelnationalnews.com/news/435694"
+    }
+   ]
+  },
+  {
+   "claim": "il-mandate-2",
+   "probability": 0.38,
+   "kind": "forecast",
+   "reason": "A clear majority for Eisenkot now looks likely once consultations end on Thursday evening, which makes a quick statement more plausible, though no date has been given and Shabbat shortens Friday. New ensemble: 0.36, 0.42, 0.35, 0.23, 0.55.",
+   "reason_cs": "Po skončení konzultací ve čtvrtek večer se rýsuje jasná většina pro Eisenkota, což činí rychlé oznámení pravděpodobnějším, datum však nikdo neuvedl a šabat zkracuje pátek. Nový soubor odhadů: 0,36, 0,42, 0,35, 0,23, 0,55.",
+   "sources": [
+    {
+     "title": "Ynet",
+     "url": "https://www.ynetnews.com/article/rydawnytgl"
+    },
+    {
+     "title": "Jerusalem Post live",
+     "url": "https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880"
+    }
+   ]
+  },
+  {
+   "claim": "il-mandate-3",
+   "probability": 0.32,
+   "kind": "forecast",
+   "reason": "The same timing question, and the Jerusalem Post now reports Eisenkot as expected to receive the mandate. New ensemble: 0.34, 0.39, 0.31, 0.21, 0.45.",
+   "reason_cs": "Stejná otázka načasování; Jerusalem Post navíc uvádí, že se očekává pověření Eisenkota. Nový soubor odhadů: 0,34, 0,39, 0,31, 0,21, 0,45.",
+   "sources": [
+    {
+     "title": "Jerusalem Post live",
+     "url": "https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "za-anc-national-2",
+   "at": "2026-11-05T12:38:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:38:00+01:00",
+     "p_blind": 0.93,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "ANC is 31.9 at 37% of districts and needs +3.1 to reach 35, while the precedents moved far less after an early count (2021: 46.97 at 37% to 45.59 final, -1.4; 2016: 53.47 at first results to 53.91 final, +0.4; n=2), though uncounted townships and small n keep a tail.",
+     "p": 0.92,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Mixture over the two ballot bases: ward+PR (weight about 0.67), which matches the 2021 headline of 45.59 and today's quoted 32, ends near 32 and gives about 0.97 below 35, while the three-ballot sum (now 33.3, about +1.4 to +1.9 at the end) ends near 33.5-34 and gives about 0.82.",
+     "rounds": [
+      {
+       "p": 0.95,
+       "at": "2026-11-05T12:34:00+01:00",
+       "reason": "before the ballot-basis fact from the red team"
+      }
+     ]
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:38:00+01:00",
+     "p_blind": 0.96,
+     "inputs_blind": [
+      "own-research"
+     ],
+     "reason_blind": "ANC is on 31.9% of 4.03m ward votes (IEC-fed https://sepush.co.za/elections/local/2026, about 13:30 SAST 5 Nov; 31.7% at 25% of districts, https://novanews.co.za/iec-confirms-official-2026-local-election-results-to-be-announced-on-sunday/); a by-province projection on share of districts in gives 31-32.5% and only about 19.9% in Gauteng, so even Limpopo (15% in, ANC 53.7%) and township catch-up leave reaching 35% needing roughly 390k more ANC votes than my high case.",
+     "p": 0.95,
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Ward and PR figures of 32.0-32.3 project to about 31.5-33 and clear 35 easily, and even if the headline sums all three ballots (33.3 now, a gap of about 1.3-1.9 as in 2021's 47.5 v 45.59) the ANC needs ward/PR of about 33.1-33.7 to reach 35, so with about a 25% chance of the all-ballot basis (the published 45.59 and today's quoted 32 fit ward/PR) and about 12% of a miss on it, the risk rises only to about 5%.",
+     "rounds": [
+      {
+       "p": 0.97,
+       "at": "2026-11-05T12:34:00+01:00",
+       "reason": "before the ballot-basis fact from the red team"
+      }
+     ]
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-05T12:38:00+01:00",
+     "p_blind": 0.85,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "ANC at 31.9% with 37% of districts in and the early count in SA local elections historically leans rural and ANC-friendly (2016 and 2021 shares fell from first count to final), while the lagging KZN and metro townships are MK and DA-leaning; the adversarial case is that large uncounted township VDs and Limpopo/Eastern Cape rural weight carry more votes than districts and Mantashe's 'up to 40%' spin, but a 3.1-point rise against the historical direction is unlikely, and if 90% is missed the Sunday 8 Nov declaration decides the same way.",
+     "p": 0.83,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "The ballot basis matters: ward and PR ballots show the ANC at 32.0-32.3 but the IEC also sums the ANC-heavy non-metro DC40 ballot (36.2), giving 33.3 on all three (in 2021 the all-ballot figure ran 1.9 above the 45.59 ward+PR figure that became the record), so if the IEC headline is the three-ballot sum the margin to 35.0 shrinks to about 1.7 points against a Limpopo lag worth about a point and a 2021-style downward drift of about 1.4; weighting roughly a third on the three-ballot basis (Reuters and Mantashe's 'about 32' fit ward/PR, and 2021's record was ward+PR) gives about 0.72 there and 0.90 on ward/PR.",
+     "rounds": [
+      {
+       "p": 0.88,
+       "at": "2026-11-05T12:34:00+01:00",
+       "reason": "before the ballot-basis fact from the red team"
+      }
+     ]
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:38:00+01:00",
+     "p": 0.88,
+     "inputs": [
+      "signals",
+      "dossier",
+      "overnight-facts",
+      "union-of-facts"
+     ],
+     "reason": "Mixture of two ballot bases: ward+PR at about 80% (2021's 45.59 and today's quoted 32 both fit it), lead 3.0 below 35, sd 2.0, gives 0.93; the three-ballot sum at about 20% (33.3 now, adds about 1.8) gives lead 1.2 and 0.73, and 2021's fall of 1.4 from the 37% count argues against an ANC late surge.",
+     "rounds": [
+      {
+       "p": 0.91,
+       "at": "2026-11-05T12:34:00+01:00",
+       "reason": "before the ballot-basis fact from the red team"
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-05T12:38:00+01:00",
+     "p_blind": 0.55,
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "reason_blind": "ANC at 32.2% with 31% of votes counted on 5 Nov, with township areas still to come and Mantashe hoping to rise, so a final result a little under 35 is slightly more likely than not.",
+     "p": 0.87,
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "With 37% counted the ANC is at about 32 on ward and PR ballots (33.3 if all three are summed), CSIR projects 31.7 with about 2 points error, and in 2021 the ANC share fell from early counts to final, so a rise of 3 points or more is unlikely.",
+     "rounds": [
+      {
+       "p": 0.66,
+       "at": "2026-11-05T12:34:00+01:00",
+       "reason": "before the ballot-basis fact from the red team"
+      }
+     ]
+    }
+   ],
+   "combined": 0.8978,
+   "calibrated": 0.96,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.188,
+     "b": 1.3762
+    },
+    "version": "2026-11-05"
+   },
+   "spread": 0.12,
+   "market_search": {
+    "at": "2026-11-05T12:34:00+01:00",
+    "checked": [
+     "markets.mjs search Johannesburg mayor (timed out)",
+     "markets.mjs search Eisenkot (timed out)",
+     "Polymarket public search Johannesburg mayor"
+    ],
+    "note": "markets.mjs timed out this afternoon. No market on party rank, the ANC national share, the recommendations or the tasking by Friday; the mayor and next-prime-minister markets ask other questions."
+   },
+   "research": {
+    "at": "2026-11-05T12:37:00+01:00",
+    "question": "Which fact would settle the difference?",
+    "finding": "CSIR overshot the ANC by about 1.8 in 2024 at 8% of districts; stated error about 2 points; red team found the IEC adds a DC ballot, which puts all three ballots at 33.3 against 32 on ward or PR.",
+    "sources": [
+     {
+      "title": "SABC: CSIR early predictions",
+      "url": "https://www.sabcnews.com/sabcnews/at-13-of-vds-declared-csir-early-predictions-place-anc-at-31-7/"
+     },
+     {
+      "title": "esp.info: IEC data by ballot",
+      "url": "https://esp.info/elections/local/2026?ballot=dc"
+     }
+    ]
+   },
+   "red_team": "New fact: the ballot basis of the IEC headline; all five reran with it (first numbers in rounds)."
+  },
+  {
+   "claim": "za-joburg-largest-1",
+   "at": "2026-11-05T12:34:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.86,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "Class final-poll-leader-wins 0.833 (n=6) with polls split, lifted by the national swing since 2021 (ANC about -14, DA about +6) applied to Joburg 2021, but cut because the 40-17 lead rests on 16% of districts with townships out and the DA led Gauteng early in 2016 before the ANC retained Joburg.",
+     "p": 0.87,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "ANC at only about 30-38% in partly counted Soweto wards suggests the usual township catch-up will be too small to overturn a DA lead of 40-17, and the swing since 2021 agrees, but early DA leads were overtaken in 2016 and reportedly in 2021, and no Joburg projection or rank market exists."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.91,
+     "inputs_blind": [
+      "own-research"
+     ],
+     "reason_blind": "DA 40.0, ANC 17.0, ActionSA 15.4 on 179k ward votes in Johannesburg (https://sepush.co.za/elections/local/2026/gauteng/city-of-johannesburg; https://insidepolitic.co.za/anc-narrowly-leads-da-nationally-as-early-election-results-show-major-losses-in-joburg/), but the count is early and DA-weighted: ANC leads many partly counted Soweto wards at about 30-38%, so I expect the gap to narrow to about DA 31-35 vs ANC 22-26, with ActionSA, SACP and EFF splitting the ANC's township vote.",
+     "p": 0.88,
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "DA leads 40.0 to 17.0, but only about 142 of 862 districts are in, the gap has narrowed from the first count, the ANC leads many Soweto wards at 30-38%, and it reportedly overtook the DA this way in 2021 (unverified), though ActionSA and others now split that vote and I expect about DA 31-35 vs ANC 22-26, in line with MarkData rather than Ipsos."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.84,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "DA 40.0 vs ANC 17.0 at about 142 of 862 districts with suburbs counting first; the adversarial case is 2021, when the DA led Johannesburg early and the ANC overtook as Soweto's large VDs came in (final ANC 33.6, DA 26.2), a swing of roughly 15-20 points from early to final, but today's 23-point gap plus the ANC's national fall from 40 to about 32 and losses to MK and ActionSA in townships leave the DA ahead; ActionSA at about 17 is no threat to first place and a 90% miss sends it to the Sunday declaration.",
+     "p": 0.88,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "DA 40 vs ANC 17 at about 16% of districts, and the 2021 Soweto overtake cannot repeat when the ANC leads partly counted Soweto wards at only 30-38% rather than the 60%-plus it needed in 2021; late township weight will narrow the gap but not erase a 23-point lead, and ActionSA at about 17 is no threat to first place."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p": 0.9,
+     "inputs": [
+      "signals",
+      "dossier",
+      "overnight-facts"
+     ],
+     "reason": "Poll model alone gives 0.76 (+4.6, sd 6.5), but the DA leads 40.0 to 17.0 at 142 of 862 districts and 34 to 25 on wards with ActionSA on 15, so a rough +9 (sd 5.5) gives 0.95; only about 14% is counted and Soweto is uncounted, so the ANC needs just a 4-point lead in the remainder."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.6,
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "reason_blind": "Pre-election polls showed DA and ANC close in Johannesburg, and early national counts show DA far ahead of a collapsing ANC with ActionSA also strong, but I found no Johannesburg count.",
+     "p": 0.68,
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "DA leads 40 to 17 for ANC on about 16% of districts, and although Soweto still to come helped the ANC overtake in 2021, a 23-point gap is hard to close and ActionSA is also far behind."
+    }
+   ],
+   "combined": 0.8541,
+   "calibrated": 0.9322,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.188,
+     "b": 1.3762
+    },
+    "version": "2026-11-05"
+   },
+   "spread": 0.22,
+   "market_search": {
+    "at": "2026-11-05T12:34:00+01:00",
+    "checked": [
+     "markets.mjs search Johannesburg mayor (timed out)",
+     "markets.mjs search Eisenkot (timed out)",
+     "Polymarket public search Johannesburg mayor"
+    ],
+    "note": "markets.mjs timed out this afternoon. No market on party rank, the ANC national share, the recommendations or the tasking by Friday; the mayor and next-prime-minister markets ask other questions."
+   },
+   "research": {
+    "at": "2026-11-05T12:37:00+01:00",
+    "question": "Which fact would settle the difference?",
+    "finding": "No CSIR projection for Johannesburg found. SABC 13:14 SAST: DA 40.7, ANC just over 17, ActionSA 15.4. Whether the DA led early in 2021 could not be confirmed.",
+    "sources": [
+     {
+      "title": "SABC: DA takes early lead in Johannesburg",
+      "url": "https://www.sabcnews.com/sabcnews/da-takes-early-lead-against-anc-in-johannesburg/"
+     }
+    ]
+   }
+  },
+  {
+   "claim": "il-recs-3",
+   "at": "2026-11-05T12:34:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.87,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "No reference class fits: 23 are delivered, Yashar and B'Yachad add 33 to reach 56, and 61 needs 5 of the 11 Joint List MKs, whom JPost expects to back Eisenkot at a slot that falls inside the window, with the risk being a split or a refusal by the list.",
+     "p": 0.91,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Kan's report of a recommendation without preconditions and Haaretz's report that Eisenkot and Lapid favour it raise the chance of the 5 Joint List MKs needed, and Liberman's preference for abstention does not bind the list, though the list reportedly recommended nobody in 2021 and 2022 and nothing was formal at reading."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.87,
+     "inputs_blind": [
+      "own-research"
+     ],
+     "reason_blind": "Yisrael Beytenu 7, Ra'am 8 and Democrats 8 have already recommended Eisenkot, and Yashar 21 and B'Yachad 12 are due today, giving 56, so 5 Joint List members are needed; Kan reports the Joint List will recommend without preconditions, with a decision near its 16:45 meeting (https://www.emess.co.il/radio/1956275), and even if Balad's 3 stayed out 8 would give 64, while the risk is an abstention, since Haaretz says Liberman prefers one though Eisenkot and Lapid favour the endorsement (https://www.haaretz.com/israel-news/elections/2026-11-05/ty-article/.premium/abbas-ual-backs-eisenkot-joint-list-seeks-to-follow-but-his-bloc-is-wary/000001a1-ab39-dd7a-a3ed-eb79fdd60000).",
+     "p": 0.87,
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Only 5 Joint List members are needed on top of an expected 56, and Kan and JPost expect it to recommend Eisenkot with Eisenkot and Lapid in favour, so the main risk is an abstention, which Liberman prefers and which fits its reported, unverified refusals in 2021 and 2022."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.78,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "Eisenkot has 23 delivered plus 33 declared (Yashar, B'Yachad) = 56, so 61 needs at least 5 of the Joint List's 11 at 16:45 IST today; JPost and Walla say the Joint List is expected to back him and Karib already counts 67, but the adversarial case is the Joint List's record (recommended nobody in 2021 and 2022, Balad refused in 2019), the Eisenkot bloc's public refusal to govern with them, the Shin Bet probe of Odeh, and Tibi's phrase 'support from outside' which is not a recommendation; a split faction still counts the members named.",
+     "p": 0.86,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Kan reports the Joint List will recommend Eisenkot without preconditions and Haaretz says it seeks to follow Ra'am, which with Yashar and B'Yachad delivering tonight gives 67; the remaining risk is a last-minute abstention or partial split (Balad-style refusal, Liberman preferring abstention, Eisenkot's bloc wary) leaving fewer than 5 of 11 named, or a slot slipping past Friday."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p": 0.91,
+     "inputs": [
+      "signals",
+      "dossier",
+      "overnight-facts"
+     ],
+     "reason": "Arithmetic: 56 are delivered or firmly declared and at least 5 of the 11 Joint List MKs are needed; JPost expects it to back Eisenkot, Tibi and a senior official point the same way, and a Balad-style partial split would still clear 61, leaving a refusal by the whole list as the main risk."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.72,
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "reason_blind": "Eisenkot's own bloc has 48 seats and needs both the Joint List (11) and Ra'am (8) to reach 61; both were reported leaning toward recommending him in consultations that began 4 Nov.",
+     "p": 0.8,
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Joint List reportedly recommends without preconditions and Ra'am already backs him, giving 67 with the 56 already in hand; the main risk is a Joint List abstention or a Liberman wobble leaving him at 56-60."
+    }
+   ],
+   "combined": 0.875,
+   "calibrated": 0.9461,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.188,
+     "b": 1.3762
+    },
+    "version": "2026-11-05"
+   },
+   "spread": 0.11,
+   "market_search": {
+    "at": "2026-11-05T12:34:00+01:00",
+    "checked": [
+     "markets.mjs search Johannesburg mayor (timed out)",
+     "markets.mjs search Eisenkot (timed out)",
+     "Polymarket public search Johannesburg mayor"
+    ],
+    "note": "markets.mjs timed out this afternoon. No market on party rank, the ANC national share, the recommendations or the tasking by Friday; the mayor and next-prime-minister markets ask other questions."
+   },
+   "note": "Joint List meets Herzog at 16:45 Israel time, after this freeze; no formal decision read."
+  },
+  {
+   "claim": "il-mandate-2",
+   "at": "2026-11-05T12:34:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.38,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "From memory, about 5 of 7 Israeli namings since 2013 came within a day of the last consultation, but the window here is only Friday before Shabbat at about 16:30, no date was announced by Thursday midday, Herzog is pushing unity and has until 11 Nov, and his one precedent (2022) went to Sunday.",
+     "p": 0.36,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "A named Friday statement counts, but no new timing fact emerged, consultations may run into Friday, Herzog is pushing unity with until 11 Nov, and 2022 went to Sunday, against the historical tendency to name soon after the last meeting and a likely clear tally."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.5,
+     "inputs_blind": [
+      "own-research"
+     ],
+     "reason_blind": "Consultations end Thursday evening 5 Nov and I found no announced date; Al Jazeera says he has several days (https://www.aljazeera.com/news/2026/11/5/israels-herzog-accepts-vote-results-opens-talks-on-forming-a-government), and from memory, not checked, past presidents usually announced within 0-2 days, with 2022 ending on a Friday and the tasking on Sunday, so a statement Thursday night or Friday before Shabbat is about even against Sunday or later, especially as Herzog is pushing to avoid deadlock.",
+     "p": 0.42,
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "No date has been reported, Likud meets at 20:30 Thursday, Friday is short before Shabbat, the 2022 precedent was a Sunday naming, and the limit is 11 Nov with Herzog pushing unity, against which a clear tally and a possible Friday statement naming Eisenkot for a later ceremony keep it near even, shaded down for our poor record on unscheduled announcements."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.35,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "Consultations end with Likud at 20:30 IST Thursday and Friday is short before Shabbat; the 2022 precedent was a date announced and the name withheld until Sunday, Herzog is openly pushing unity and 'creative solutions' with a legal limit of 11 Nov, and jfeed says consultations may run into Friday; the case for YES is that a clear 67 makes a Friday morning statement that he 'will task' Eisenkot easy (March 2020 next-day precedent) and such a statement counts even if the ceremony is Sunday.",
+     "p": 0.35,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Nothing new on timing: consultations end Thursday 20:30 IST, Friday is short before Shabbat, the 2022 pattern was a date announced and the name withheld to Sunday, and Herzog is pushing unity with a legal limit of 11 Nov; YES needs a Friday statement that he 'will task' Eisenkot, plausible with a clear 67 (March 2020 next-day precedent) but not the base pattern."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p": 0.23,
+     "inputs": [
+      "signals",
+      "dossier",
+      "overnight-facts"
+     ],
+     "reason": "No date is announced and Likud finishes at 20:30 Thursday, leaving only Friday before Shabbat at about 16:30; Herzog's unity push and the 2022 Sunday precedent favour 8 Nov or later (limit 11 Nov), though a 61-plus tally makes a quick Friday statement possible."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.65,
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "reason_blind": "Herzog normally announces the day consultations end, which should be 5-6 Nov, but he may delay while pushing for a unity government.",
+     "p": 0.55,
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Last consultation is Thursday 20:30 and a Friday statement before Shabbat is possible, but the 2022 precedent of naming on a Sunday and Herzog's unity-government push make a date-only or later announcement likely."
+    }
+   ],
+   "combined": 0.3764,
+   "calibrated": 0.3759,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.188,
+     "b": 1.3762
+    },
+    "version": "2026-11-05"
+   },
+   "spread": 0.32,
+   "market_search": {
+    "at": "2026-11-05T12:34:00+01:00",
+    "checked": [
+     "markets.mjs search Johannesburg mayor (timed out)",
+     "markets.mjs search Eisenkot (timed out)",
+     "Polymarket public search Johannesburg mayor"
+    ],
+    "note": "markets.mjs timed out this afternoon. No market on party rank, the ANC national share, the recommendations or the tasking by Friday; the mayor and next-prime-minister markets ask other questions."
+   },
+   "research": {
+    "at": "2026-11-05T12:37:00+01:00",
+    "question": "Which fact would settle the difference?",
+    "finding": "No source gives a day. Ynet: consultations end Thursday evening, after which Herzog determines. Israel Hayom 2 Nov: second round not ruled out. Finding not decisive; spread stands.",
+    "sources": [
+     {
+      "title": "Ynet",
+      "url": "https://www.ynetnews.com/article/rydawnytgl"
+     },
+     {
+      "title": "Israel Hayom",
+      "url": "https://www.israelhayom.com/2026/11/02/how-israels-president-chooses-who-forms-the-next-government/"
+     }
+    ]
+   },
+   "disagreement": {
+    "cause": "genuine",
+    "note": "Same facts, different judgement on whether Herzog names someone before Shabbat or waits, as in 2022, for Sunday."
+   }
+  },
+  {
+   "claim": "il-mandate-3",
+   "at": "2026-11-05T12:34:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.35,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "Same timing as il-mandate-2 (0.38), times about 0.93 that a quick naming is Eisenkot, given 56 to 67 recommendations against 46 for Netanyahu and JPost's report that he is expected to receive the mandate.",
+     "p": 0.34,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Same timing as il-mandate-2 (0.36), times about 0.95 that a quick naming is Eisenkot now that the Joint List looks set to take him to 67 against 46."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.46,
+     "inputs_blind": [
+      "own-research"
+     ],
+     "reason_blind": "Eisenkot is the expected choice (https://www.jpost.com/israel-news/article-913842) with a likely 56-67 recommendations against about 46 for Netanyahu, now that UTJ has declined to recommend anyone (https://www.jpost.com/israel-election-2026/article-913890), so about 0.93 conditional on an announcement in time, times 0.5 for il-mandate-2.",
+     "p": 0.39,
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "About 0.93 that the name is Eisenkot, given he is widely expected to get the mandate and leads recommendations, times 0.42 for an announcement in time."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.31,
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "reason_blind": "Same timing problem as il-mandate-2; if Herzog does name someone by Friday night it is almost surely Eisenkot (JPost headline 'Eisenkot expected to receive mandate', 56-67 recommendations against at most 46), the residual being a unity-driven choice of Netanyahu or a joint call, which Herzog can make since he is not bound by the count.",
+     "p": 0.31,
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "Same timing problem; if a name is announced by Friday night it is very likely Eisenkot (67 recommendations expected against at most 46, JPost 'Eisenkot expected to receive mandate'), with a small residue for a unity-driven choice of Netanyahu since Herzog is not bound by the count."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p": 0.21,
+     "inputs": [
+      "signals",
+      "dossier",
+      "overnight-facts"
+     ],
+     "reason": "il-mandate-2 at 0.23 times about 0.92 that a name given this quickly is Eisenkot, since the only fast path is a clear majority of recommendations for him."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-05T12:34:00+01:00",
+     "p_blind": 0.55,
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "reason_blind": "If Herzog announces, Eisenkot very likely gets it as he leads the recommendation count, with the main risk being Herzog delaying for a unity deal.",
+     "p": 0.45,
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "reason": "If he names someone by Friday it is very probably Eisenkot given 60-plus recommendations, so this is roughly 0.8 of the announcement probability."
+    }
+   ],
+   "combined": 0.3346,
+   "calibrated": 0.3191,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.188,
+     "b": 1.3762
+    },
+    "version": "2026-11-05"
+   },
+   "spread": 0.24,
+   "market_search": {
+    "at": "2026-11-05T12:34:00+01:00",
+    "checked": [
+     "markets.mjs search Johannesburg mayor (timed out)",
+     "markets.mjs search Eisenkot (timed out)",
+     "Polymarket public search Johannesburg mayor"
+    ],
+    "note": "markets.mjs timed out this afternoon. No market on party rank, the ANC national share, the recommendations or the tasking by Friday; the mayor and next-prime-minister markets ask other questions."
+   },
+   "research": {
+    "at": "2026-11-05T12:37:00+01:00",
+    "question": "Which fact would settle the difference?",
+    "finding": "As il-mandate-2.",
+    "sources": [
+     {
+      "title": "Ynet",
+      "url": "https://www.ynetnews.com/article/rydawnytgl"
+     },
+     {
+      "title": "Israel Hayom",
+      "url": "https://www.israelhayom.com/2026/11/02/how-israels-president-chooses-who-forms-the-next-government/"
+     }
+    ]
+   }
+  }
+ ]
+}
