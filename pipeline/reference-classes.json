@@ -75,7 +75,7 @@
       "source": "News record 2025-2026",
       "own_record": {
         "yes": 0,
-        "no": 2
+        "no": 3
       }
     },
     {
@@ -141,7 +141,7 @@
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
         "yes": 5,
-        "no": 44
+        "no": 48
       }
     },
     {
@@ -151,7 +151,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 12,
+        "yes": 13,
         "no": 10
       }
     },
@@ -184,7 +184,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 2
       }
     },
@@ -218,7 +218,7 @@
       "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
       "own_record": {
         "yes": 3,
-        "no": 4
+        "no": 5
       }
     },
     {
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 3,
+        "yes": 5,
         "no": 1
       }
     },
@@ -294,7 +294,7 @@
       "n": "own record",
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 0
       }
     },
@@ -306,7 +306,7 @@
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
         "yes": 2,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -372,7 +372,7 @@
       "source": "Own record only (created 2026-10-29)",
       "own_record": {
         "yes": 2,
-        "no": 0
+        "no": 1
       }
     },
     {
@@ -382,7 +382,7 @@
       "n": 0,
       "source": "Own record only (created 2026-10-29)",
       "own_record": {
-        "yes": 2,
+        "yes": 4,
         "no": 0
       }
     },
@@ -405,7 +405,7 @@
       "source": "Own record only (created 2026-10-30)",
       "own_record": {
         "yes": 1,
-        "no": 0
+        "no": 1
       }
     },
     {
@@ -460,7 +460,7 @@
       "source": "own record",
       "own_record": {
         "yes": 1,
-        "no": 0
+        "no": 1
       }
     },
     {
@@ -494,6 +494,105 @@
       "own_record": {
         "yes": 0,
         "no": 1
+      }
+    },
+    {
+      "id": "regulated-cap-falls-next-day",
+      "description": "A regulated daily fuel cap falls below a named figure the next day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "us-chamber-call-by-date",
+      "description": "AP calls control of a US chamber by a stated date",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "merchant-incident-reported-on-day",
+      "description": "UKMTO reports a new merchant-shipping incident on a given day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "us-strike-iran-in-short-window",
+      "description": "US strike on Iranian territory in a one-to-two-day window",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "protest-official-count-above-threshold",
+      "description": "Official demonstrators count above a named threshold",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "drone-count-above-threshold-night",
+      "description": "Ukrainian Air Force nightly drone count at or above a threshold",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "faction-recommendations-reach-majority",
+      "description": "Parliamentary factions recommending a candidate reach a stated seat total",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "transport-plan-below-threshold",
+      "description": "Published strike transport plan falls below a stated service level",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "assembly-rejects-budget-part",
+      "description": "A hung assembly rejects part of a budget bill",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 6 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
       }
     }
   ]

@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "pooled": {
-  "n": 17,
-  "rms_in_scales": 1.158,
+  "n": 18,
+  "rms_in_scales": 1.173,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -65,6 +65,22 @@
      "first": 97.9,
      "centre": 99.3,
      "scale_used": 1.5,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
+  },
+  "final-national-turnout-knesset-election-2026": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-10-28",
+     "claim": "il-turnout",
+     "consensus": null,
+     "first": 77.97,
+     "centre": 71.88,
+     "scale_used": 3.4,
      "source": null
     }
    ],
@@ -342,6 +358,22 @@
    ],
    "n": 1,
    "rms_surprise": 0.1
+  },
+  "czech-retail-sales-ex-autos-yoy-calendar-adjusted": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-06",
+     "claim": "cz-retail-sep-1",
+     "consensus": 4.7,
+     "first": 4.1,
+     "centre": 4.61,
+     "scale_used": 0.43,
+     "source": "Trading Economics calendar, updated 2026-11-02; single provider"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.6
   }
  },
  "extra": {}
