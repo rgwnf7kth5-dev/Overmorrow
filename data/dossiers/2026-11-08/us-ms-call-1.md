@@ -1,0 +1,7 @@
+# us-ms-call-1 (morning rewrite, 6 Nov 2026)
+
+3. us-ms-call-1 | none | By 23:59 ET on 7 Nov 2026, AP declares a winner in the US Senate race in Mississippi.
+Criterion: YES if between 06:00 ET on 6 Nov and 23:59 ET on 7 Nov 2026 AP declares a winner, on its results page or in a report quoting the call; if AP cannot be read, a report by NBC, WLBT or Mississippi Free Press saying AP called it. NO if uncalled at that time.
+FACTS: Uncalled. Colom +1,882 (MFP, Thu; path 43, 65, 1,138, 1,764, 1,882). NBC 49.0/48.9, 951,744 votes, 95.7% in, about 44,000 left. Outstanding 3,300 mail ballots; 6,936 affidavits processed; mail accepted to about 8 Nov. DeSoto (about 2,100 affidavits) tentatively 10 Nov; Hinds open; Harrison starts 10 Nov. NRSC demands affidavits be segregated; MS GOP threatens court action. Margin well above 0.1%? About 0.2%. Mississippi has no automatic recount.
+
+us-ms-call-1: AP calls only when no scenario lets the trailing candidate close the gap. No automatic or requested recount in Mississippi, only court-ordered. Mail ballots count if received within five business days: Tue 10 Nov (not 8 Nov). DeSoto affidavits (about 2,100) tentatively 10 Nov after 18:00; Hinds unsure; Rankin 1,667 affidavits undecided; Lee 1,545. MFP: public counting continues "over the next week", as many as 20,000 votes outstanding. Lafayette affidavits went 142-60 for Colom. Colom +1,882. No concession. Rule of thumb: AP called Pennsylvania 2024 three days after.

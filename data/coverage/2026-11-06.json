@@ -1,0 +1,105 @@
+{
+  "edition": "2026-11-06",
+  "checked_at": "2026-11-06T05:10:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 5, read 06 Nov 03:59 UTC)",
+    "ct24 (SOUHRN: Zásadní události čtvrtka 5. listopadu, read 06 Nov 04:00 UTC, plus front page headings)",
+    "ctk (ceskenoviny.cz front page with timestamps, read 06 Nov 04:00 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP top stories were not read (sites refuse scripted reading); three WebSearches (standard) returned only syndicated pieces of earlier days, no list for 5 Nov. List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such."
+  ],
+  "not_qualified": [
+    "Trump meets Dmitriev, Ukraine deal 'near' (ctk only, 23:31)",
+    "Bomb threats on 20+ European flights (ctk only on 5 Nov; search shows the wave began 3 Nov)",
+    "WHO approves trials of two Bundibugyo Ebola vaccines (ct24 only)",
+    "Dolní Lutyně rail crash sentences (ct24 only)",
+    "Eisenkot ahead of Netanyahu (ct24, AFP; covered by il-coalition anyway)",
+    "Trump faces Republican pressure after midterms (ct24 citing Reuters; follow-up to us-midterms)",
+    "Joshua Wong extra 10 years, Somalia Supreme Court ruling, Atiku nomination invalidated, Koldo affair arrests, Jordan embassy stabbing (Wikipedia only as read)",
+    "US stocks fall, LIV Golf, hockey (excluded: markets, sport)",
+    "Chamber to vote on stricter temporary protection for Ukrainians (6 Nov item, ctk)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. The 2026-11-05 edition's event list for 5 Nov includes only items the lists as read confirmed.",
+  "events": [
+    {
+      "title": "ČNB raises repo rate by 0.25 points to 4.00%",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-ctvrtka-5-listopadu-379319",
+      "status": "covered",
+      "story": "cz-cnb"
+    },
+    {
+      "title": "France general strike: CGT claims 1.6 million on the streets, interior ministry over 600,000",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-ctvrtka-5-listopadu-379319",
+      "status": "covered",
+      "story": "fr-strike"
+    },
+    {
+      "title": "Pavel and the V4 presidents meet von der Leyen in Trenčín (Pavel floats a Marshall-plan-style scheme for Ukraine, V4 Skyfox cooperation)",
+      "scope": "europe",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/zeme-v4-by-mohly-spolupracovat-pri-vyuzivani-letounu-skyfox-rekl-pavel-/2897915",
+      "status": "covered",
+      "story": "cz-v4"
+    },
+    {
+      "title": "Babiš on ČT and ČRo financing after the strike: stable funding, possible change to the indexation formula",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-ct-a-cro-budou-mit-stabilni-a-predvidatelne-financovani/2898039",
+      "status": "covered",
+      "story": "cz-media"
+    },
+    {
+      "title": "Courts change municipal election results after recounts: Havířov, Prague 15, Prague 10 (Naše Praha 10 out of the assembly)",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-ctvrtka-5-listopadu-379319",
+      "status": "missed",
+      "note": "Not in the planning file (cz-prague covers only the Prague city assembly sitting). Not announced in advance as far as checked: the rulings on election complaints (Krajský soud Ostrava, Městský soud v Praze) have no published date that I found; I did not check whether the courts publish decision dates. Possible sources to try: court press offices (ČTK court calendar), not added."
+    },
+    {
+      "title": "Paraguay: President Santiago Peña announces resignation after the ueno bank collapse; Chamber of Deputies votes unanimously to begin impeachment trial",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ap-reuters (as cited in the Wikipedia entry; AP/Reuters pages themselves not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_5",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Only lead-up was visible: the ueno bank seizure and central bank chief's resignation on 3 Nov (Reuters/AP syndicated, found by search on 6 Nov). The resignation itself was not announced in advance; the crisis was in the news 3-4 Nov, so a sweep of Reuters/AP world headlines on the evening of 3 Nov should have flagged it. Not on ČT24 or ČTK as read, so the list count rests on Wikipedia plus the wire citation."
+    },
+    {
+      "title": "Grenada general election: Mitchell's NDC re-elected, opposition leader Pierre loses her seat",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_5",
+      "status": "dropped",
+      "note": "In planning dropped: 'Grenada vote is of low reach for our readers; stories_max.' Announced in advance (election date known)."
+    }
+  ]
+}
