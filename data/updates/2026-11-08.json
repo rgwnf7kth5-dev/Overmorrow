@@ -1,0 +1,853 @@
+{
+ "edition": "2026-11-08",
+ "frozen_at": "2026-11-06T12:38:00+01:00",
+ "revisions": [
+  {
+   "claim": "py-removed-1",
+   "probability": 0.57,
+   "kind": "forecast",
+   "reason": "Hoy reported on Friday that Peña's request for 72 hours was still being studied and that Congress may yet finish voting on his resignation, which would end the trial without a removal, while La Nación said a sentence tonight was the best case; the evidence is mixed. New ensemble: 0.66, 0.58, 0.37, 0.68, 0.33.",
+   "reason_cs": "Hoy v pátek uvedl, že Peñovu žádost o 72 hodin senátoři stále posuzují a že Kongres může ještě dokončit hlasování o jeho rezignaci, čímž by proces skončil bez odvolání; La Nación označil verdikt ještě tuto noc za nejlepší případ. Důkazy jsou smíšené. Nový soubor odhadů: 0,66, 0,58, 0,37, 0,68, 0,33.",
+   "sources": [
+    {
+     "title": "La Nación (PY): sucesión y calendario",
+     "url": "https://www.lanacion.com.py/politica/2026/11/06/sucesion-alliana-asume-de-inmediato-la-presidencia-si-el-senado-condena-a-pena/"
+    },
+    {
+     "title": "Hoy: prórroga y renuncia",
+     "url": "https://www.hoy.com.py/nacionales/2026/11/06/analizan-pedido-de-prorroga-de-pena-y-no-descartan-aprobar-su-renuncia"
+    }
+   ]
+  },
+  {
+   "claim": "py-sworn-1",
+   "probability": 0.67,
+   "kind": "forecast",
+   "reason": "The trial's timetable is less certain than in the morning: the request for 72 hours is still open and a sentence tonight is only the best case, though both removal and an accepted resignation lead to Alliana. New ensemble: 0.64, 0.71, 0.5, 0.65, 0.48.",
+   "reason_cs": "Časový plán procesu je méně jistý než ráno: žádost o 72 hodin je stále otevřená a verdikt ještě tuto noc je jen nejlepší případ, i když k Allianovi vede odvolání i přijatá rezignace. Nový soubor odhadů: 0,64, 0,71, 0,5, 0,65, 0,48.",
+   "sources": [
+    {
+     "title": "La Nación (PY): sucesión y calendario",
+     "url": "https://www.lanacion.com.py/politica/2026/11/06/sucesion-alliana-asume-de-inmediato-la-presidencia-si-el-senado-condena-a-pena/"
+    },
+    {
+     "title": "Hoy: prórroga y renuncia",
+     "url": "https://www.hoy.com.py/nacionales/2026/11/06/analizan-pedido-de-prorroga-de-pena-y-no-descartan-aprobar-su-renuncia"
+    }
+   ]
+  },
+  {
+   "claim": "fr-acte4-route-2",
+   "probability": 0.94,
+   "kind": "forecast",
+   "reason": "The Paris police prefecture validated the intersyndicale's République-Nation route for Saturday at 14:00, not banning the march as on the last two Saturdays; a small doubt remains over whether a union march counts as an Act IV march, so the figure stays at the plain ensemble. New ensemble: 0.94, 0.94, 0.85, 0.97, 0.94.",
+   "reason_cs": "Pařížská policejní prefektura schválila odborům trasu République–Nation na sobotu ve 14:00 a pochod nezakázala jako poslední dvě soboty; malá pochybnost zůstává, zda se odborový pochod počítá jako pochod IV. dějství, proto údaj zůstává na prostém průměru souboru. Nový soubor odhadů: 0,94, 0,94, 0,85, 0,97, 0,94.",
+   "sources": [
+    {
+     "title": "Le Parisien: la préfecture valide le parcours",
+     "url": "https://www.leparisien.fr/paris-75/manifestation-du-7-novembre-a-paris-la-prefecture-de-police-valide-le-parcours-entre-republique-et-nation-06-11-2026-6L2O65H6HBBVRBZZVOAF3WRLS4.php"
+    }
+   ]
+  },
+  {
+   "claim": "fr-acte4-count-1",
+   "quantiles": {
+    "q10": 131,
+    "q50": 293,
+    "q90": 689
+   },
+   "kind": "forecast",
+   "reason": "The unions and youth organisations also called people out for Saturday and the Paris route was validated, which lifts the centre, though the count of marches is well below Thursday's. New ensemble, central figures: 260, 260, 360, 295, 290.",
+   "reason_cs": "Do soboty vyzvaly k účasti také odbory a mládežnické organizace a pařížská trasa je schválená, což střed posouvá výš, i když pochodů je mnohem méně než ve čtvrtek. Nový soubor odhadů, středy: 260, 260, 360, 295, 290.",
+   "sources": [
+    {
+     "title": "Le Parisien: à quoi s'attendre samedi",
+     "url": "https://www.leparisien.fr/societe/colere-sociale-manifestations-parcours-a-paris-a-quoi-sattendre-pour-la-mobilisation-du-samedi-7-novembre-06-11-2026-YZHWGVJLYZHO3DCWRNBLJVPZPU.php"
+    }
+   ]
+  },
+  {
+   "claim": "cz-media-partners-1",
+   "probability": 0.29,
+   "kind": "forecast",
+   "reason": "Okamura, Klempíř and Macinka spoke to ČTK on Friday without addressing the 6% trigger and left the matter to Monday's coalition council and the second reading. New ensemble: 0.42, 0.32, 0.22, 0.3, 0.33.",
+   "reason_cs": "Okamura, Klempíř a Macinka v pátek pro ČTK k šestiprocentní hranici nic konkrétního neřekli a věc nechali na pondělní koaliční radu a druhé čtení. Nový soubor odhadů: 0,42, 0,32, 0,22, 0,3, 0,33.",
+   "sources": [
+    {
+     "title": "ČTK: Okamura o financování médií",
+     "url": "https://www.ceskenoviny.cz/zpravy/okamura-u-financovani-medii-je-mantinelem-zruseni-poplatku-a-nezvysovani-dani/2898304"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "py-removed-1",
+   "at": "2026-11-06T12:36:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.66,
+     "p_held": 0.72,
+     "p_if_held": 0.92,
+     "reason": "The extension is not yet formally refused and Núñez calls settling the resignation the healthiest course; 30 of 45 still likely if a vote comes.",
+     "rounds": [
+      {
+       "p": 0.78,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Núñez refused the 72-hour extension and the five steps could end in a vote tonight, with Saturday as margin; 30 of 45 looks secure after 78-0 and Cartes's backing."
+      }
+     ],
+     "p_blind": 0.78,
+     "reason_blind": "Lugo 2012 ran to verdict in about a day and the numbers look ample (78-0 charges, Cartes against Peña), so the main risk is the schedule, a vote slipping past Saturday, as the other-scheduled slip of 0.14 and talk of Monday suggest."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.58,
+     "p_held": 0.66,
+     "p_if_held": 0.88,
+     "reason": "A trial vote with 30 or more stays the likeliest path, with the 42-41 count against acceptance and Saturday as buffer.",
+     "rounds": [
+      {
+       "p": 0.62,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Removal likely with Saturday as buffer; Núñez said it is healthiest to settle the resignation (a NO), and the unfinished vote can be resumed."
+      }
+     ],
+     "p_blind": 0.6,
+     "reason_blind": "Hoy reports unanimity to remove and vote possible Friday night or dawn with Saturday as buffer, but Nunez himself said accepting the resignation is 'lo mas sano' (would be NO) and a 72h extension could slip it to Monday."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.37,
+     "p_held": 0.42,
+     "p_if_held": 0.88,
+     "reason": "The fast track has gone: Núñez favours acceptance, the extension is under study and he says the Senate respects the five-session rule.",
+     "rounds": [
+      {
+       "p": 0.57,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Votes exist, but autos para sentencia can push the verdict past Saturday, and Peña may use all the time he needs."
+      }
+     ],
+     "p_blind": 0.57,
+     "reason_blind": "Votes exist (Cartes and opposition, 'unanimidad'), but Resolution 3287 ends Friday with 'autos para sentencia' and deliberation, La Nación says a vote tonight is 'the best case', Recalde sees Monday, Peña can use all the time he needs and may litigate; a Saturday sitting is unusual."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs": [
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.68,
+     "p_held": 0.72,
+     "p_if_held": 0.94,
+     "reason": "A short extension fits in Saturday; the resignation route is about 7%.",
+     "rounds": [
+      {
+       "p": 0.78,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Step model from La Nación's timetable: tonight at best with Saturday spare."
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.33,
+     "p_held": 0.6,
+     "p_if_held": 0.55,
+     "reason": "No clear majority on 5 Nov and the trial may drag to Monday.",
+     "rounds": [
+      {
+       "p": 0.65,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "The Colorado choice of Alliana implies the votes for removal exist."
+      }
+     ],
+     "p_blind": 0.62,
+     "reason_blind": "Senate pressing on with trial, Colorado majority seems to have turned, vote possibly tonight, 30/45 threshold uncertain."
+    }
+   ],
+   "combined": 0.525,
+   "calibrated": 0.5716,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1525,
+     "b": 1.3591
+    },
+    "version": "2026-11-06"
+   },
+   "spread": 0.35,
+   "market_search": {
+    "at": "2026-11-06T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Paraguay impeachment\"",
+     "markets.mjs search \"gilets jaunes France protest\"",
+     "markets.mjs search \"Czech TV\""
+    ],
+    "note": "No matching market."
+   },
+   "research": {
+    "at": "2026-11-06T12:33:00+01:00",
+    "question": "When will the sentence vote come, and can the resignation be accepted first?",
+    "finding": "No sentence date and no tally found. The joint session on the resignation can resume, unscheduled; the extension was still under study at 08:21 Asunción. This went to all five as a union of facts; the spread stands.",
+    "sources": [
+     {
+      "title": "Hoy: pedido de prórroga y renuncia",
+      "url": "https://www.hoy.com.py/nacionales/2026/11/06/analizan-pedido-de-prorroga-de-pena-y-no-descartan-aprobar-su-renuncia"
+     }
+    ]
+   },
+   "disagreement": {
+    "cause": "genuine",
+    "note": "After the union of facts the five read the same facts differently: whether the trial finishes by Saturday, and whether the resignation route revives."
+   },
+   "red_team": "No new decisive fact; main risk is timing."
+  },
+  {
+   "claim": "py-sworn-1",
+   "at": "2026-11-06T12:36:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.64,
+     "p_held": 0.75,
+     "p_if_held": 0.85,
+     "reason": "About 0.57 via removal plus 0.07 via an accepted resignation.",
+     "rounds": [
+      {
+       "p": 0.67,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Follows removal; same-day oath in 2012."
+      }
+     ],
+     "p_blind": 0.67,
+     "reason_blind": "Follows removal; in 2012 Franco swore in within hours and the constitutional succession is automatic, but a late-night verdict, notification steps, a quorum walkout and the investigation of Alliana each trim the conditional."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.71,
+     "p_held": 0.77,
+     "p_if_held": 0.92,
+     "reason": "Both exits lead to Alliana; the main threat is slippage to Monday.",
+     "rounds": [
+      {
+       "p": 0.74,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Removal and an accepted resignation both lead to Alliana."
+      }
+     ],
+     "p_blind": 0.73,
+     "reason_blind": "Either route (removal or accepted resignation) puts Alliana in at once per Duarte and the Colorado deal; only slippage past Saturday or a late Alliana challenge stops it."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.5,
+     "p_held": 0.6,
+     "p_if_held": 0.83,
+     "reason": "Two routes to the oath, both of which an extension or slower trial pushes past Saturday.",
+     "rounds": [
+      {
+       "p": 0.5,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "The oath depends on a vote landing by Saturday."
+      }
+     ],
+     "p_blind": 0.5,
+     "reason_blind": "Needs removal (or acceptance) first plus a Congress oath in the window; 2012 shows a same-night oath, but the leaked Peña-Alliana chat and Fiscalía probe give a second way to stall."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs": [
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.65,
+     "p_held": 0.77,
+     "p_if_held": 0.84,
+     "reason": "0.59 via removal plus 0.06 via resignation.",
+     "rounds": [
+      {
+       "p": 0.68,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Removal then oath in the window."
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-06T12:36:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.48,
+     "p_held": 0.6,
+     "p_if_held": 0.8,
+     "reason": "Either exit leads to the oath, but nothing is scheduled.",
+     "rounds": [
+      {
+       "p": 0.52,
+       "at": "2026-11-06T12:30:00+01:00",
+       "reason": "Needs the vote first; the Fiscalía probe adds risk."
+      }
+     ],
+     "p_blind": 0.5,
+     "reason_blind": "Oath follows removal quickly per constitutionalist but formalities and Alliana's own exposure add risk."
+    }
+   ],
+   "combined": 0.5992,
+   "calibrated": 0.6679,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1525,
+     "b": 1.3591
+    },
+    "version": "2026-11-06"
+   },
+   "spread": 0.23,
+   "market_search": {
+    "at": "2026-11-06T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Paraguay impeachment\"",
+     "markets.mjs search \"gilets jaunes France protest\"",
+     "markets.mjs search \"Czech TV\""
+    ],
+    "note": "No matching market."
+   },
+   "research": {
+    "at": "2026-11-06T12:33:00+01:00",
+    "question": "When will the sentence vote come, and can the resignation be accepted first?",
+    "finding": "No sentence date and no tally found. The joint session on the resignation can resume, unscheduled; the extension was still under study at 08:21 Asunción. This went to all five as a union of facts; the spread stands.",
+    "sources": [
+     {
+      "title": "Hoy: pedido de prórroga y renuncia",
+      "url": "https://www.hoy.com.py/nacionales/2026/11/06/analizan-pedido-de-prorroga-de-pena-y-no-descartan-aprobar-su-renuncia"
+     }
+    ]
+   },
+   "disagreement": {
+    "cause": "genuine",
+    "note": "After the union of facts the five read the same facts differently: whether the trial finishes by Saturday, and whether the resignation route revives."
+   },
+   "red_team": "No new decisive fact; removal and oath can split if a resignation is accepted."
+  },
+  {
+   "claim": "fr-acte4-route-2",
+   "at": "2026-11-06T12:36:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.94,
+     "reason": "The prefecture validated République-Nation; residual is a late ban or a strict reading of Act IV.",
+     "p_blind": 0.94,
+     "reason_blind": "The prefecture validated République-Nation on Friday and declared marches went ahead on earlier Saturdays; slip class is 0.08 but a validated route the day before cuts it, leaving residual risk of a late ban or of the union march not being read as an Act IV march.",
+     "p_held": 0.97,
+     "p_if_held": 0.97
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.94,
+     "reason": "The prefecture validated the route and Le Parisien frames it as Act IV.",
+     "p_blind": 0.93,
+     "reason_blind": "The PP validated the Republique-Nation route on 6 Nov and Le Parisien ties it to Act IV; residual risk is a late ban or a reading that the intersyndicale march is not an Act IV march."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.85,
+     "reason": "A strict reading could exclude a union march while the coordination's Concorde plan is static.",
+     "p_blind": 0.83,
+     "reason_blind": "PP validated République-Nation for the intersyndicale, so an authorised Saturday march is near-certain; the residual is whether a union march counts as 'called for Act IV' when the coordination's own Paris plan is a static Concorde rally with no decision, plus a late ban after Friday violence.",
+     "p_held": 0.95,
+     "p_if_held": 0.9
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs": [
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.97,
+     "reason": "Far above the earlier evening figure after the prefecture's validation."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.94,
+     "reason": "Validated and not banned; the remaining risk is whether it counts as Act IV.",
+     "p_blind": 0.93,
+     "reason_blind": "Prefecture validated the intersyndicale route Republique-Nation for Saturday."
+    }
+   ],
+   "combined": 0.9366,
+   "calibrated": 0.9784,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1525,
+     "b": 1.3591
+    },
+    "version": "2026-11-06"
+   },
+   "spread": 0.12,
+   "market_search": {
+    "at": "2026-11-06T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Paraguay impeachment\"",
+     "markets.mjs search \"gilets jaunes France protest\"",
+     "markets.mjs search \"Czech TV\""
+    ],
+    "note": "No matching market."
+   },
+   "red_team": "No new fact, but 98% looks too high: no source says the coordination joins République-Nation, and GasBu calls it distinct from the Concorde rally. Suggested 92-94%.",
+   "adjustment": "Published 0.94, the plain ensemble, not the calibrated 0.98: the correction extremises the forecasters' reading of a wording risk which it was not fitted to, and the red team found the risk real."
+  },
+  {
+   "claim": "fr-acte4-count-1",
+   "at": "2026-11-06T12:36:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "q10": 120,
+     "q50": 260,
+     "q90": 675,
+     "reason": "Saturday trend gives about 250; about 80 rendezvous against 193 marches cap it; union calls and a legal route nudge it up.",
+     "q10_blind": 120,
+     "q50_blind": 260,
+     "q90_blind": 675,
+     "reason_blind": "Saturday trend gives about 250; about 80 rendezvous against 193 marches cap it; union calls and a legal route nudge it up."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "signals"
+     ],
+     "q10": 120,
+     "q50": 260,
+     "q90": 680,
+     "reason": "The -22% trend and fatigue pull down, the unbanned route and union calls pull up.",
+     "q10_blind": 120,
+     "q50_blind": 265,
+     "q90_blind": 680,
+     "reason_blind": "The -22% trend and fatigue pull down, the unbanned route and union calls pull up."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "q10": 140,
+     "q50": 360,
+     "q90": 700,
+     "reason": "First Saturday with an intersyndicale and youth call plus an authorised Paris route.",
+     "q10_blind": 130,
+     "q50_blind": 350,
+     "q90_blind": 690,
+     "reason_blind": "First Saturday with an intersyndicale and youth call plus an authorised Paris route."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs": [
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "q10": 175,
+     "q50": 295,
+     "q90": 730,
+     "reason": "Between Saturday decay near 250 and a union-day ratio near 345."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "q10": 100,
+     "q50": 290,
+     "q90": 660,
+     "reason": "Falling Saturdays, offset by unions and youth joining.",
+     "q10_blind": 90,
+     "q50_blind": 280,
+     "q90_blind": 660,
+     "reason_blind": "Falling Saturdays, offset by unions and youth joining."
+    }
+   ],
+   "quantiles": {
+    "q10": 131,
+    "q50": 293,
+    "q90": 689
+   },
+   "market_search": {
+    "at": "2026-11-06T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"gilets jaunes France protest\""
+    ],
+    "note": "No matching market."
+   },
+   "red_team": "No new decisive fact; two-sided risk, the range covers it."
+  },
+  {
+   "claim": "cz-media-partners-1",
+   "at": "2026-11-06T12:36:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.42,
+     "reason": "Many eligible speakers, but the Friday quotes avoid the trigger.",
+     "p_blind": 0.42,
+     "reason_blind": "Own class for unscheduled announcements is 5 of 49 per day but a statement is a lower bar with many eligible speakers and the topic is live; however the Friday quotes avoid the trigger and leaders can wait for Monday's council."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.32,
+     "reason": "The three leaders answered only in general, and Monday's council is the natural moment.",
+     "p_blind": 0.3,
+     "reason_blind": "Babis floated 6% on 5 Nov, but Okamura, Klempir and Macinka spoke generally and pushed it to Monday's coalition council and second reading, so a trigger-specific remark by Saturday night is less likely than not."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-1",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.22,
+     "reason": "The general remarks fall outside the criterion, and only a targeted follow-up would count.",
+     "p_blind": 0.2,
+     "reason_blind": "Okamura, Klempíř and Macinka all spoke to ČTK on 6 Nov without naming the 10%-to-6% trigger (Okamura's 'koeficient' is the tax-share coefficient); partners defer to Monday's council and Saturday is quiet, so a trigger-specific statement is a narrow target."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs": [
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.3,
+     "reason": "About 4 active voices at about 9% each."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-06T12:30:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-06T12:28:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.33,
+     "reason": "Quotes skirt the trigger and the weekend window is short.",
+     "p_blind": 0.3,
+     "reason_blind": "Quotes so far skirt the 6% trigger and weekend window is short."
+    }
+   ],
+   "combined": 0.3144,
+   "calibrated": 0.2876,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1525,
+     "b": 1.3591
+    },
+    "version": "2026-11-06"
+   },
+   "spread": 0.2,
+   "market_search": {
+    "at": "2026-11-06T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Paraguay impeachment\"",
+     "markets.mjs search \"gilets jaunes France protest\"",
+     "markets.mjs search \"Czech TV\""
+    ],
+    "note": "No matching market."
+   },
+   "red_team": "No new decisive fact; risk of a lenient reading of Okamura."
+  }
+ ]
+}
