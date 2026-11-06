@@ -1,0 +1,3 @@
+# cz-sector-tax-banks-9 — signals
+Searched with markets.mjs ("Czech television fees" read 2026-11-06T18:02:01Z and 18:02:27Z; "Czech bank tax" 18:02:08Z; "Babis" 18:02:15Z). Results were Prague and other Czech mayoral questions, UEFA EURO 2028 winner and a Guinea-Bissau election question. Nothing on ČT/ČRo funding, strikes, university leave, Czech sector or bank taxes, or statements by Babiš, Schillerová or Havlíček. No match: question, deadline and settlement differ from the claim.
+Tipsport and Fortuna were not read (the runs cannot read them; earlier attempts gave HTTP 403 or no market text). No published model or platform question found.
