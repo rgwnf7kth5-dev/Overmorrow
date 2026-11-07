@@ -1,14 +1,23 @@
 {
- "edition": "2026-11-04",
- "entries": [
-  {
-   "claim": "tr-cpi-below-1",
-   "outcome": "no",
-   "value": "29.77%",
-   "evidence": "Search results (Daily Sabah, AzerNews, Anadolu-linked outlets, anews dated 2026-11-03, RTE 3 Nov 2026) report October 2026 annual CPI at 29.77%, up slightly from 29.73%, with monthly +2.58%.",
-   "note": "29.77 is above the 29.72 threshold. Figure from outlet headlines/snippets, not read from the TUIK bulletin itself.",
-   "at": "2026-11-05T05:10:00+01:00",
-   "model": "claude-sonnet-5-5"
-  }
- ]
+  "edition": "2026-11-04",
+  "entries": [
+    {
+      "claim": "tr-cpi-below-1",
+      "outcome": "no",
+      "value": "29.77%",
+      "evidence": "Search results (Daily Sabah, AzerNews, Anadolu-linked outlets, anews dated 2026-11-03, RTE 3 Nov 2026) report October 2026 annual CPI at 29.77%, up slightly from 29.73%, with monthly +2.58%.",
+      "note": "29.77 is above the 29.72 threshold. Figure from outlet headlines/snippets, not read from the TUIK bulletin itself.",
+      "at": "2026-11-05T05:10:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "ir-ukmto-1",
+      "outcome": "yes",
+      "value": null,
+      "evidence": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
+      "note": "Al Jazeera reports UKMTO said two projectiles struck a tanker's engine room 14 nm NE of Limah, Oman, on Tuesday 3 Nov.",
+      "at": "2026-11-07T05:25:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
 }

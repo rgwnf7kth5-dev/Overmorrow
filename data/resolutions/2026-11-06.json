@@ -158,6 +158,36 @@
       "resolved_at": "2026-11-06T05:10:00+01:00",
       "held": true,
       "value": 4.1
+    },
+    {
+      "claim": "us-senate-seats-1",
+      "outcome": "yes",
+      "evidence": "https://apps.npr.org/2026-election-results/data/senate.json",
+      "note": "NPR/AP feed shows 20 Democratic 2026 race calls (CO, DE, GA, IA, IL, KS, MI, MN, NC, NJ, NM, OH, OR, SC, TX, VA, MA, ME, NH, RI), all with winnerDateTime on 4 Nov UTC, giving 34+20=54 by 23:59 ET on 5 Nov (AK and MS uncalled).",
+      "resolved_at": "2026-11-07T05:20:00+01:00"
+    },
+    {
+      "claim": "us-maine-1",
+      "outcome": "yes",
+      "evidence": "https://apps.npr.org/2026-election-results/data/senate.json",
+      "note": "NPR/AP feed shows Jackson (Dem) called winner in Maine with winnerDateTime 2026-11-04T06:02:01Z, before the deadline.",
+      "resolved_at": "2026-11-07T05:20:00+01:00"
+    },
+    {
+      "claim": "us-iran-strike-2",
+      "outcome": "no",
+      "evidence": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know",
+      "note": "Al Jazeera (6 Nov) says the last US-confirmed strikes on Qeshm and Bandar Lengeh were before the midterms and that, per Axios, CENTCOM was still awaiting orders to resume operations; Trump on 5 Nov only threatened action, and no US confirmation of a 5 Nov strike exists.",
+      "resolved_at": "2026-11-07T05:20:00+01:00"
+    },
+    {
+      "claim": "ca-budget-2",
+      "outcome": "no",
+      "evidence": "https://budget.canada.ca/2026/report-rapport/overview-apercu-en.html",
+      "note": "Budget 2026, tabled 5 Nov, projects a 2026-27 deficit-to-GDP ratio of 1.8% and says the outlook is stronger than the Spring Economic Update, implying a deficit of roughly C$60 billion, below C$65.3 billion.",
+      "resolved_at": "2026-11-07T05:20:00+01:00",
+      "held": true,
+      "ambiguous": true
     }
   ]
 }

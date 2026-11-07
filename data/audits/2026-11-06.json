@@ -1,0 +1,23 @@
+{
+  "edition": "2026-11-06",
+  "entries": [
+    {
+      "claim": "fr-sncf-1",
+      "outcome": "no",
+      "value": null,
+      "evidence": "https://www.mediaterranee.com/0432026-greve-sncf-du-5-novembre-mon-tgv-ter-ou-rer-va-t-il-rouler.html",
+      "note": "SNCF Voyageurs on 4 Nov said TGV 'slightly disrupted' and gave no national or axis proportion, which the criterion resolves as NO.",
+      "at": "2026-11-07T05:25:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-cnb-vote-1",
+      "outcome": "no",
+      "value": null,
+      "evidence": "https://www.fxstreet.cz/cnb-podle-ocekavani-zvysila-zakladni-urokovou-sazbu-rozhodnuti-bylo-tesne.html",
+      "note": "ČNB raised the repo rate to 4.00% on 5 Nov by 4:3, three members voting for unchanged rates.",
+      "at": "2026-11-07T05:25:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}

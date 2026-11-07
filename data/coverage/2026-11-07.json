@@ -1,0 +1,101 @@
+{
+  "edition": "2026-11-07",
+  "checked_at": "2026-11-07T05:03:03+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 6, read 07 Nov 04:01 UTC)",
+    "ct24 (SOUHRN: Zásadní události pátku 6. listopadu, published 6 Nov 18:29, modified 19:15; plus front page headings, read 07 Nov 04:01 UTC)",
+    "ctk (ceskenoviny.cz front page 'Hlavní zprávy' with timestamps, read 07 Nov 04:01 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP top stories were not read (sites refuse scripted reading; WebSearch refuses reuters.com and apnews.com as domain filters). Unfiltered standard WebSearches returned no list for 6 Nov (only older syndicated AP summaries). List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such."
+  ],
+  "not_qualified": [
+    "Russian strikes: Komyshuvakha toll rises to 53, overnight strikes on 6 Nov, refinery fire in southern Russia (ct24 only; ua-war covered the overnight drones anyway)",
+    "Zelensky and Klitschko criticise each other over Kyiv (ctk only, citing Reuters)",
+    "Bomb threats: Prague airport checks aircraft again; Irish and British media threatened (ctk only)",
+    "King Philippe refuses De Wever's resignation (wikipedia only as read)",
+    "Measles in the US at highest total since 1991; Lent (Ain) bus crash; Au Kam San sentenced in Macau; Istanbul court detains Fatma Betül Sayan Kaya (wikipedia only)",
+    "Okamura on media financing; Sokol to sue former officials; Dynamo insolvency ruling (ctk only)",
+    "České Budějovice coalition; Czech teenagers' physical activity study (Lancet Global Health); groundwater fee rider (ct24 only)",
+    "Weekend fuel price caps fall again (ctk only; covered by cz-fuel anyway)",
+    "Football, hockey, tennis, F1; Prague stock exchange and koruna (excluded: sport, markets)",
+    "US October payrolls, Canadian LFS, Czech industry and trade (not in any list as read; all covered: us-jobs, ca-jobs, cz-industry, cz-trade)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. ct24 and ctk count as lists for non-Czech events too, as in the 2026-11-06 file.",
+  "events": [
+    {
+      "title": "Paraguay: Senate removes President Santiago Peña over the ueno bank affair; Peña placed under house arrest; Vice-President Pedro Alliana sworn in",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/paraguay-ma-noveho-prezidenta-predchudce-kratce-predtim-sesadili-379372",
+      "status": "missed",
+      "note": "Nowhere in the planning file (prepared 4 Nov 19:02 UTC). The Senate removal had no date before planning closed: the Chamber voted to open the trial on the evening of 5 Nov. The lead-up was visible (Senators announced a trial request on 3 Nov; the 2026-11-06 coverage file already logged Peña's resignation as missed). Same gap as the 6 Nov entry: Reuters/AP Latin America headlines were not swept on 3-4 Nov. No dated announcement, so not a new sweep gap."
+    },
+    {
+      "title": "Kenya: Shakahola cult leader Paul Mackenzie sentenced to 200 years for the murder of 190 children and one adult",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/vudce-kenske-sekty-dostal-dve-ste-let-vezeni-za-vrazdu-190-deti-379354",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance: after the conviction on 19-20 Oct the Mombasa High Court scheduled its sentencing decision for 6 Nov, and the ODPP published its sentencing submissions (death penalty sought) on 3 Nov (The Kenya Times, 3-4 Nov: https://thekenyatimes.com/latest-kenya-times-news/pastor-mackenzie-penalty/). We should have seen it in a world court calendar; none for Kenya is in pipeline/sources.json. Sweep gap. Note the planning file excluded crime stories (cut of the French blood-bank cyber-attack), but a scheduled sentencing with a numeric outcome is a forecastable court event."
+    },
+    {
+      "title": "Thomas Markle, father of the Duchess of Sussex, arrested by the FBI in Florida over child sexual abuse material",
+      "scope": "world",
+      "lists": ["wikipedia", "ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/otce-vevodkyne-meghan-zadrzela-kvuli-drzeni-detske-pornografie-fbi-379366",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (an arrest); no sweep gap. Crime story, outside the paper's usual remit."
+    },
+    {
+      "title": "Trump: White House chief of staff Susie Wiles leaves, Stephen Miller to replace her",
+      "scope": "world",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/novym-personalnim-sefem-bileho-domu-bude-stephen-miller-379370",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (Trump denied in mid-October that he would replace Wiles); announced late on 6 Nov (ctk 22:28). No sweep gap. Not yet in the Wikipedia day page as read."
+    },
+    {
+      "title": "European Commission preliminarily finds TikTok in breach of the DSA over its 'For You' recommender ('rabbit holes')",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/tiktok-porusuje-narizeni-a-vede-uzivatele-do-kralicich-nor-mini-ek-379352",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance: the Commission does not pre-date preliminary DSA findings (the TikTok proceedings were open, but no step was scheduled). No sweep gap."
+    },
+    {
+      "title": "Finance Ministry and ČNB worsen outlooks: 2026 general government deficit 2.8% of GDP (MF: 3.5% in 2027), 2026 growth cut to 1.7%",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-6-listopadu-379364",
+      "status": "missed",
+      "note": "Nowhere in the planning file (its 'deficit' mentions are only the trade balance). Announced in advance as a regular release: the MF November Macroeconomic Forecast and Fiscal Outlook are a fixed quarterly publication, and the ČNB forecast followed the 5 Nov board meeting (ČNB monetary-policy page is in sources.json; MF is not). I did not verify that MF published the exact date beforehand. Treated as a sweep gap: the MF publication schedule is missing from pipeline/sources.json."
+    },
+    {
+      "title": "onsemi cancels USD 2bn expansion of its Rožnov pod Radhoštěm plant",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/firma-onsemi-rusi-plany-na-rozsireni-vyroby-v-roznovskem-zavode-379368",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (company press release on 6 Nov). No sweep gap."
+    },
+    {
+      "title": "Power outage in Prague 5, 6 and Malá Strana (about 45 minutes, 70,000 customers) halts trams, hospitals affected, Chamber interrupted",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/prahu-5-a-6-zasahl-vypadek-elektrickeho-proudu-379343",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (a fault). No sweep gap."
+    },
+    {
+      "title": "Chamber closes its three-week sitting: pension savings changes sent to third reading; NKÚ audit of ČT/ČRo, groundwater fee and stricter temporary protection for Ukrainians postponed; fourth failed bid to add Okamura's removal",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-schvalovat-zprisneni-podminek-docasne-ochrany-ukrajincu-379335",
+      "status": "covered",
+      "story": "cz-chamber",
+      "note": "The edition's story covers the Friday sitting and its close at 14:00 (lead: Criminal Code amendment passed); the pension-savings step and the postponements are not its focus, and Okamura's removal is in the planning dropped list ('Chamber refused twice to add it')."
+    }
+  ]
+}

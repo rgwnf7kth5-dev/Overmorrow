@@ -2,6 +2,10 @@
 
 One paragraph for each confident miss: a claim at 70% or more that failed, or 30% or less that came true. Newest first.
 
+## 2026-11-06 · cz-chamber-any-1 (76%, failed)
+
+We gave 76% to the Chamber of Deputies passing at least one of three government bills in third reading before its 34th sitting ended; the sitting closed on 6 November without a third-reading vote on any of them (ČT24, ČTK; psp.cz could not be read), after a power cut interrupted the Chamber and several items were postponed. The forecast treated a scheduled reading as the event and counted three chances as nearly independent, when all three hung on the same agenda running its course in the last days of a long sitting. Diagnosis: wrong base rate for agenda slippage at the end of a sitting, plus correlated outcomes treated as independent. Rule: when several claims depend on the same sitting reaching its items, apply the slip rate once to the whole set and model the items as correlated.
+
 ## 2026-10-31 · cz-fee-strike-rector-30 (26%, came true)
 
 We gave 26% to a rector or the Rectors' Conference backing the 3 November strike for Czech Television and Czech Radio, or excusing students, within two days; on 30 October Masaryk University's leadership decided to excuse students who attend the rally (Deník N, Brněnský deník). The forecasters started from our own class of unscheduled announcements within a day (then 1 in 20) and treated the criterion as one decision, when in fact some twenty-six public universities could each meet it and the academic community had been mobilising openly for a week. Diagnosis: wrong base rate (a one-actor class used for a claim that any of many actors could satisfy). Rule: when a criterion is met by any one of N independent actors, estimate per actor and combine, 1 − (1 − p)^N, instead of using a single-announcement base rate.
@@ -98,3 +102,5 @@ The Sakharov Prize went to the International Criminal Court and its officials, t
 - Claim design · cz-v4-1 (edition 2026-11-06): "in person" was not literally stated by any source; prefer a criterion that the reports will actually state.
 - Coverage · edition 2026-11-06: two significant events missed: Paraguay's president announcing his resignation with the Chamber opening impeachment (live on the wires from 3 Nov, not announced in advance) and courts changing municipal results in Havířov, Prague 15 and Prague 10 (no published date found). Reuters and AP were unreadable, so the world side is weak.
 - Audit · 5 Nov result cz-energy-2: the audit answered "unresolved" for lack of evidence, not against the record; no correction.
+- Coverage · edition 2026-11-07: Mackenzie's Shakahola sentencing in Kenya (6 Nov, scheduled after the 20 Oct conviction) was missed though announced in advance; the sweep had no court calendar outside the EU. Kenya ODPP added to pipeline/sources.json.
+- Coverage · edition 2026-11-07: the Finance Ministry's November macroeconomic forecast and fiscal outlook (deficit 2.8% of GDP, 6 Nov) was missed though it is a fixed quarterly release; the MF forecast page added to pipeline/sources.json. Six other missed events (Markle, Wiles–Miller, TikTok DSA finding, onsemi, Prague power cut, Peña's removal) were not announced in advance.
