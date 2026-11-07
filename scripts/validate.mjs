@@ -555,7 +555,11 @@ for (const ed of editions) {
     const merged = mergeUpdate(ed);
     const setsAfter = new Map();
     for (const c of claimsOf(merged)) if (c.exclusive_set) setsAfter.set(c.exclusive_set, (setsAfter.get(c.exclusive_set) || 0) + c.probability);
-    for (const [set, sum] of setsAfter) if (Math.abs(sum - 1) > 0.011) err(`${uw} set ${set}`, `after revision the exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
+    for (const [set, sum] of setsAfter) {
+      // UPDATE.md step 6: a set marked set_exhaustive: false may sum to at most 1.00 (same rule as the morning check).
+      if (openSet(set)) { if (sum > 1.011) err(`${uw} set ${set}`, `after revision the open exclusive set sums to ${sum.toFixed(2)}, must be at most 1.00`); }
+      else if (Math.abs(sum - 1) > 0.011) err(`${uw} set ${set}`, `after revision the exclusive set sums to ${sum.toFixed(2)}, must be 1.00`);
+    }
   }
 
   const res = loadResolution(ed.id);

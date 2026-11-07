@@ -1,0 +1,302 @@
+{
+  "edition": "2026-11-09",
+  "frozen_at": "2026-11-07T12:32:00+01:00",
+  "revisions": [
+    {
+      "claim": "py-cabinet-1",
+      "probability": 0.9,
+      "kind": "forecast",
+      "reason": "On Saturday ABC Color and Examedia reported that naming a new Interior minister, with a member of Congress tipped, is among President Alliana's first decisions, and La Nación said the first cabinet changes could come the same day; no appointment had been made by Saturday morning. New ensemble: 0.82, 0.80, 0.74, 0.85, 0.85.",
+      "reason_cs": "ABC Color a Examedia v sobotu uvedly, že jmenování nového ministra vnitra, na jehož post se zmiňuje poslanec, patří k prvním rozhodnutím prezidenta Alliany, a La Nación napsal, že první změny ve vládě mohou přijít ještě týž den; do sobotního rána ale nikdo jmenován nebyl. Nový soubor odhadů: 0,82, 0,80, 0,74, 0,85, 0,85.",
+      "sources": [
+        {
+          "title": "ABC Color: primer día de Alliana, gabinete",
+          "url": "https://www.abc.com.py/politica/2026/11/07/primer-dia-de-alliana-como-presidente-a-que-ministros-de-pena-mantendra-en-su-gabinete/"
+        },
+        {
+          "title": "La Nación (PY): primeras reuniones en el Palacio",
+          "url": "https://www.lanacion.com.py/politica/2026/11/07/salud-sera-una-de-las-grandes-prioridades-alliana-realiza-primeras-reuniones-en-el-palacio/"
+        },
+        {
+          "title": "Examedia: primer día entre decretos",
+          "url": "https://examedia.com.ar/portada/post/88196421"
+        }
+      ]
+    },
+    {
+      "claim": "py-economy-2",
+      "probability": 0.07,
+      "kind": "forecast",
+      "reason": "A Presidency circular on Saturday called Economy Minister Oscar Lovera to the palace together with the ministers expected to stay, and no report points to his replacement. New ensemble: 0.12, 0.15, 0.13, 0.22, 0.09.",
+      "reason_cs": "Oběžník prezidentské kanceláře v sobotu pozval ministra hospodářství Oscara Loveru do paláce spolu s ministry, kteří mají zůstat, a žádná zpráva nenaznačuje jeho výměnu. Nový soubor odhadů: 0,12, 0,15, 0,13, 0,22, 0,09.",
+      "sources": [
+        {
+          "title": "ABC Color: primer día de Alliana, gabinete",
+          "url": "https://www.abc.com.py/politica/2026/11/07/primer-dia-de-alliana-como-presidente-a-que-ministros-de-pena-mantendra-en-su-gabinete/"
+        },
+        {
+          "title": "La Nación (PY): primeras reuniones en el Palacio",
+          "url": "https://www.lanacion.com.py/politica/2026/11/07/salud-sera-una-de-las-grandes-prioridades-alliana-realiza-primeras-reuniones-en-el-palacio/"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "py-cabinet-1",
+      "at": "2026-11-07T12:27:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.82,
+          "reason_blind": "Successors after an impeachment or sudden succession (Franco 2012, Boluarte 2022, Temer 2016) usually fill empty ministries within one to three days; Interior is vacant with a legislator reportedly lined up.",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.82,
+          "reason": "Signals hold no market on appointments; blind estimate stands."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts",
+            "dossier"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.8,
+          "reason_blind": "ABC and Examedia report the Interior designation among Alliana's first decisions, a member of Congress the likely pick; risks are keeping interim Benítez or a Monday announcement.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "dossier",
+            "signals"
+          ],
+          "p": 0.8,
+          "reason": "Signals concern a different question; unchanged."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.74,
+          "reason_blind": "His first day is spent interviewing Peña's ministers one by one and decrees usually land on weekdays, so Benítez bridging the weekend and a Monday announcement is a real path to NO.",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.74,
+          "reason": "Signals pre-date the oath and say nothing on timing; 0.74 stands."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs": [
+            "signals",
+            "reference-data",
+            "dossier",
+            "overnight-facts"
+          ],
+          "p": 0.85,
+          "reason": "Hazard of about 0.6 per day over two days gives about 0.85, held there because nothing was signed by midday on 7 Nov and Benítez could be kept."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.85,
+          "reason_blind": "Interior is vacant, a parliamentarian is the reported pick among his first decisions, and he has two days.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.85,
+          "reason": "Signals have nothing on cabinet appointments; unchanged."
+        }
+      ],
+      "combined": 0.8151,
+      "calibrated": 0.901,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.0953,
+          "b": 1.4241
+        },
+        "version": "2026-11-07"
+      },
+      "spread": 0.11,
+      "market_search": {
+        "at": "2026-11-07T12:26:00+01:00",
+        "checked": [
+          "markets.mjs search \"Paraguay\" (timed out after 25 s)"
+        ],
+        "note": "markets.mjs did not answer; the morning signals file (read 6 Nov 18:03Z) lists only Kalshi and Polymarket contracts on Alliana's presidency, none on cabinet appointments."
+      },
+      "red_team": "No decisive fact as of 08:26 Asunción. Main risk: an acting head (encargado de despacho), a reshuffled Peña minister or a decree after Sunday 23:59 at Interior."
+    },
+    {
+      "claim": "py-economy-2",
+      "at": "2026-11-07T12:27:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.12,
+          "reason_blind": "New presidents seldom change the finance minister in the first 48 hours of a banking crisis; Lovera was convened to Saturday's meeting and is not under investigation.",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.12,
+          "reason": "No market or model on the post; unchanged."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts",
+            "dossier"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.15,
+          "reason_blind": "Lovera was convened on 7 Nov, came in after a change Alliana wanted and is not in the ueno probe; Alliana has said he wants most of Peña's ministers out.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "dossier",
+            "signals"
+          ],
+          "p": 0.15,
+          "reason": "No market on the post; unchanged."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.13,
+          "reason_blind": "A 'no tibios' purge naming a new economist to calm markets is possible but unlikely within 48 hours; continuity favoured mid-bank-run.",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.13,
+          "reason": "No signal bears on the post."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs": [
+            "signals",
+            "reference-data",
+            "dossier",
+            "overnight-facts"
+          ],
+          "p": 0.22,
+          "reason": "Keeping the finance minister in a banking crisis is the default; Lovera was called in with the ministers who stay."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-07T12:25:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-07T12:24:00+01:00",
+          "p_blind": 0.1,
+          "reason_blind": "Lovera was convened with the other ministers and nothing suggests replacement.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.09,
+          "reason": "Signals hold nothing on the ministry; shaded down slightly."
+        }
+      ],
+      "combined": 0.1369,
+      "calibrated": 0.074,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.0953,
+          "b": 1.4241
+        },
+        "version": "2026-11-07"
+      },
+      "spread": 0.13,
+      "market_search": {
+        "at": "2026-11-07T12:26:00+01:00",
+        "checked": [
+          "markets.mjs search \"Paraguay\" (timed out after 25 s)"
+        ],
+        "note": "markets.mjs did not answer; the morning signals file (read 6 Nov 18:03Z) lists only Kalshi and Polymarket contracts on Alliana's presidency, none on cabinet appointments."
+      },
+      "red_team": "No decisive fact as of 08:26 Asunción. Main risk: an acting head (encargado de despacho), a reshuffled Peña minister or a decree after Sunday 23:59 at Interior."
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "wahlrecht.de (connection reset)",
+      "markets.mjs (timed out)"
+    ]
+  }
+}
