@@ -3159,6 +3159,58 @@
      ],
      "note": "Witkoff named Abu Dhabi for 10-11 Nov and the Kremlin named Medinsky as head of its delegation.",
      "note_cs": "Witkoff oznámil jednání v Abú Zabí na 10. až 11. listopadu a Kreml jmenoval vedoucím delegace Medinského."
+    },
+    {
+     "at": "2026-11-07T18:36:00Z",
+     "p": 0.91,
+     "combined": 0.912,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.91,
+       "reason": "Negotiation-round slip rate is 0.069 (own record 0/7). The round now has a date confirmed by the Kremlin and named delegations from all three sides, and five weeks of slack cover a slip (prior about 0.95, logit 2.9). Minus about 0.6 logit for the requirement that an official readout confirm all three delegations, in case the format turns into US shuttling, and for the overnight strikes on Kyiv.",
+       "at": "2026-11-07T18:28:09Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.92,
+       "reason": "Putin and Peskov have now confirmed Abu Dhabi on 10-11 Nov and named a five-member delegation, with Witkoff, Kushner and Umerov on the other sides, so all three parties have committed to a set date. Five weeks of slack remain if it slips; the remaining risks are a last-minute collapse after the 6-7 Nov strikes on Kyiv or a meeting that is only bilateral.",
+       "at": "2026-11-07T18:27:57Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.91,
+       "reason": "Case for NO: Russia hit Kyiv's grid with 172 drones the night before naming its team, Ukraine could suspend in protest, the US envoys are being pulled into the Qatari Hormuz plan, and the round could be run as US shuttle meetings in separate rooms that a strict reader would not count as a three-delegation meeting. Honest view: Putin, Peskov, Kyiv and Witkoff have all confirmed Abu Dhabi for 10-11 Nov with named delegations (our negotiation-round slip class is 0 of 7), the format met three times this year, any level and venue counts, and five weeks remain to 15 Dec to absorb a slip.",
+       "at": "2026-11-07T18:30:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.92,
+       "reason": "Polymarket has peace talks by 15 Nov at 0.9575 and by 30 Nov at 0.9625. Now that the Kremlin has confirmed 10–11 Nov in Abu Dhabi and named its delegation, the slip rate for a confirmed negotiation round is about 0.07, and five weeks of slack remain. Shaded below the market because our criterion needs all three delegations and confirmation from an official site.",
+       "at": "2026-11-07T18:29:37Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.9,
+       "reason": "The Kremlin has confirmed date, venue and a named delegation for 10-11 Nov, and five weeks of slack remain for a slip. Residual risk is a last-minute collapse or a format the sources do not count as trilateral.",
+       "at": "2026-11-07T18:27:30Z"
+      }
+     ],
+     "note": "Putin and the Kremlin confirmed the Abu Dhabi round for 10–11 Nov and named the Russian delegation (Medinsky, Ryabkov, Kostyukov); Umerov leads Ukraine, Witkoff and Kushner the US.",
+     "note_cs": "Putin a Kreml potvrdili kolo v Abú Zabí na 10. až 11. listopadu a jmenovali ruskou delegaci (Medinskij, Rjabkov, Kostjukov); Ukrajinu vede Umerov, USA Witkoff a Kushner.",
+     "market": {
+      "source": "polymarket",
+      "kind": "exchange",
+      "p": 0.9575,
+      "read_at": "2026-11-07T18:25:00Z",
+      "url": "https://polymarket.com"
+     },
+     "market_note": "Polymarket \"talks by 15 Nov\" has a looser wording (no three-delegation or official-confirmation requirement); not a match."
     }
    ],
    "result": null
@@ -7363,6 +7415,50 @@
      "market": null,
      "note": "Opened: five-forecaster ensemble.",
      "note_cs": "Otevřeno: odhad pěti prognostiků."
+    },
+    {
+     "at": "2026-11-07T18:36:00Z",
+     "p": 0.63,
+     "combined": 0.632,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.62,
+       "reason": "Prior about 0.7 that emergency caps rolled over month to month are extended again, since this cabinet extended on 1 Oct and on 26 Oct. Minus about 0.35 logit because caps keep falling as oil eases, and the government ended the earlier regulation in July once prices eased. No decision three weeks out is normal: last time it came 5 days before expiry.",
+       "at": "2026-11-07T18:28:09Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "No December decision has been reported, and the caps are falling every day with Brent down about 17% last week. The government ended the earlier regulation in July once prices eased, so letting it lapse (perhaps keeping only the diesel excise cut, which does not count) is now realistic. Against that, the October rollover came only five days before expiry, so silence so far says little, and a populist cabinet going into winter leans towards extending.",
+       "at": "2026-11-07T18:27:57Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.62,
+       "reason": "Case for NO: caps fell every day this week (diesel 47.28, petrol 41.42), Brent dropped about 17% in a week with a Qatari plan to reopen Hormuz on the table, the government scrapped the earlier regulation in July as soon as prices eased, the ČNB complains the caps distort CPI, retailers resent daily maximum prices, and no December decision has been trailed; the Finance Ministry could keep only the excise cut, which does not count. For YES: the margin caps cost the budget nothing, the cabinet has rolled the measure over month by month and decided the last one five days before expiry, and a populist government is unlikely to let a visible price cap lapse going into Christmas while diesel is still far above pre-crisis levels.",
+       "at": "2026-11-07T18:30:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.64,
+       "reason": "No market. The cabinet has rolled the caps month to month, deciding five days before expiry last time, and the government-item slip of about 0.25 still leaves time before 30 Nov. Kept a little below the board's 0.71 because the caps keep falling (diesel 47.28, petrol 41.42), which strengthens the Finance Ministry's case for letting them lapse or keeping only the excise cut.",
+       "at": "2026-11-07T18:29:37Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.72,
+       "reason": "Caps have been rolled over monthly, the last extension came five days before expiry, and prices are still high though falling. Falling prices and fiscal or inflation objections leave a real chance they lapse.",
+       "at": "2026-11-07T18:27:30Z"
+      }
+     ],
+     "note": "Weekly re-forecast: caps keep falling (diesel 47.28, petrol 41.42 CZK/l for 7–9 Nov) and oil fell about 17% last week, which makes letting the regulation lapse on 30 Nov easier; no decision on December has been reported, and the October extension came only five days before expiry.",
+     "note_cs": "Týdenní přepočet: stropy dál klesají (nafta 47,28, benzin 41,42 Kč/l na 7. až 9. listopadu) a ropa minulý týden zlevnila asi o 17 %, což usnadňuje nechat regulaci 30. listopadu skončit; o prosinci zatím nepadlo rozhodnutí a říjnové prodloužení přišlo jen pět dní před koncem."
     }
    ]
   },
@@ -7728,7 +7824,14 @@
      "note": "Trump confirmed a strike on Qeshm around 2-3 Nov, and US media report plans for further strikes after the midterms.",
      "note_cs": "Trump potvrdil úder na Kešm kolem 2. a 3. listopadu a americká média píší o plánech dalších úderů po volbách."
     }
-   ]
+   ],
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
+    "note": "On 6 Nov 2026 President Trump told reporters in West Palm Beach that US forces had carried out \"minor strikes\" on an Iranian air-defence site on Qeshm island; Iranian media reported missiles hitting Qeshm that evening. A strike on Iranian territory inside the 4–30 Nov window confirmed on the record by the President (White House) meets the criterion. CENTCOM did not comment.",
+    "note_cs": "Prezident Trump 6. listopadu 2026 ve West Palm Beach novinářům řekl, že americké síly provedly „menší údery“ na íránské protivzdušné stanoviště na ostrově Kešm; íránská média ten večer informovala o raketách na Kešm. Úder na íránské území v období 4. až 30. listopadu, který veřejně potvrdil prezident (Bílý dům), splňuje kritérium. CENTCOM se nevyjádřil.",
+    "resolved_at": "2026-11-07T18:36:00Z"
+   }
   },
   {
    "scope": "world",
@@ -8630,6 +8733,146 @@
       "read_at": "2026-11-06T18:30:56Z"
      },
      "market_note": "Kalshi asks about a meeting before 1 Jan, a longer window."
+    }
+   ]
+  },
+  {
+   "id": "cz-groundwater-fee-passed",
+   "scope": "cz",
+   "topic": "Groundwater fee",
+   "opened": "2026-11-07",
+   "question": "Will the Chamber of Deputies pass in third reading, by 31 December 2026, the bill containing the rise of the groundwater abstraction fee?",
+   "question_cs": "Schválí Poslanecká sněmovna do 31. prosince 2026 ve třetím čtení návrh zákona se zvýšením poplatku za odběr podzemní vody?",
+   "criterion": "Yes if the psp.cz record of votes shows that, on or before 31 Dec 2026 23:59 CET, the Chamber passed in third reading the amendment to the plant-protection act (rostlinolékařská péče) with a rise of the groundwater abstraction fee above today's CZK 2 (drinking water) or CZK 3 (other uses) per cubic metre included, at 7 CZK or any other higher figure. No if the bill is passed without such a rise, rejected, or not voted on in third reading by then.",
+   "criterion_cs": "Ano, pokud záznam hlasování na psp.cz ukáže, že Sněmovna nejpozději 31. 12. 2026 ve 23:59 SEČ schválila ve třetím čtení novelu zákona o rostlinolékařské péči včetně zvýšení poplatku za odběr podzemní vody nad dnešní 2 Kč (pitná voda) nebo 3 Kč (ostatní užití) za metr krychlový, ať na 7 Kč, nebo na jinou vyšší částku. Ne, pokud bude návrh schválen bez takového zvýšení, zamítnut, nebo o něm do té doby nebude ve třetím čtení hlasováno.",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "The coalition wants to raise the groundwater fee from CZK 2/3 to CZK 7 per cubic metre, with most of the money going to the Agriculture Ministry. The third-reading vote was postponed on 6 Nov to the next regular sitting, which has no date; the coalition partner Motoristé want to reopen the rise at the coalition council on 9 Nov.",
+   "background_cs": "Koalice chce zvýšit poplatek za podzemní vodu ze 2 a 3 Kč na 7 Kč za metr krychlový, většina peněz má jít ministerstvu zemědělství. Hlasování ve třetím čtení bylo 6. listopadu odloženo na příští řádnou schůzi, která nemá termín; koaliční Motoristé chtějí zdražení znovu otevřít na koaliční radě 9. listopadu.",
+   "sources": [
+    {
+     "title": "ČT24: Koalice chce zvýšit poplatky za podzemní vodu",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/koalice-chce-zvysit-poplatky-za-podzemni-vodu-rust-cen-muze-pocitit-i-cast-domacnosti-379369"
+    },
+    {
+     "title": "ČTK: Motoristé chtějí v koalici probrat zdražení čerpání podzemních vod",
+     "url": "https://www.ceskenoviny.cz/zpravy/motoriste-chteji-v-koalici-probrat-zdrazeni-cerpani-podzemnich-vod/2898670"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-11-07T18:36:00Z",
+     "p": 0.46,
+     "combined": 0.455,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.48,
+       "reason": "Third readings pass almost always once voted (0.99), but this one has no date: government-bill third readings are dealt with at the meeting where they are listed only about 0.2–0.35 of the time, and December floor time goes to the budget, so P(vote by 31 Dec) is about 0.7. P that the rise survives is about 0.7, because Motoristé want to reopen it and a coalition partner plus the opposition can strip the amendment, though a smaller rise would still count.",
+       "at": "2026-11-07T18:28:09Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.5,
+       "reason": "The bill is already at third reading, but the vote was pushed to an undated regular sitting, and the 13 Nov extraordinary sitting cannot take it. A December slot competes with the budget. Motoristé want to reopen the rise on Monday. ANO's ministry has the 2 bn in its budget, so a compromise at a lower figure would still count; dropping the rise or missing the year would not.",
+       "at": "2026-11-07T18:27:57Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.5,
+       "reason": "Case for NO: the host bill (print 48, plant-protection) has been stuck since a June third-reading vote that produced no passage, the 6 Nov vote was postponed to a regular sitting with no date, government-bill third readings are completed at a listed meeting only 19% of the time this term, December floor time goes to the budget, Motoristé object to both the rise and the six-sevenths split for the Agriculture ministry, and the coalition could pass the EU transposition without the rider or push the rise to a separate bill. For YES: ANO's agriculture budget already books 2 bn from the rise, the bill is at the head of the queue with its third reading already opened, a compromise figure or a better split for the regions would still count, and two sittings remain before Christmas.",
+       "at": "2026-11-07T18:30:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.45,
+       "reason": "No market. Model: P(third reading held by 31 Dec) about 0.7. The next regular sitting is undated but likely late Nov or Dec around the budget, and the gov-bill reading slip of 0.64 is offset by about seven weeks of window. P(fee rise survives | passed) about 0.65: amendments are voted at third reading, and ANO+SPD (about 95) need the Motoristé, who want to reopen the rise on 9 Nov. Any compromise above 2/3 CZK would still count.",
+       "at": "2026-11-07T18:29:37Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.35,
+       "reason": "Third reading has no date, the extraordinary sitting cannot take it, and the coalition is split on the rise, with Motoristé wanting to reopen it. There is time before 31 Dec, but the fee rise could be dropped or the vote slip.",
+       "at": "2026-11-07T18:27:30Z"
+      }
+     ],
+     "note": "Opened: the third reading was postponed on 6 Nov without a new date and Motoristé want to reopen the rise at Monday's coalition council.",
+     "note_cs": "Otevřeno: třetí čtení bylo 6. listopadu odloženo bez nového termínu a Motoristé chtějí zdražení znovu otevřít na pondělní koaliční radě."
+    }
+   ]
+  },
+  {
+   "id": "be-dewever-out",
+   "scope": "europe",
+   "topic": "Belgian government",
+   "opened": "2026-11-07",
+   "question": "Will Bart De Wever cease to be Prime Minister of Belgium, or King Philippe formally accept his government's resignation, by 31 December 2026?",
+   "question_cs": "Přestane Bart De Wever do 31. prosince 2026 být belgickým premiérem, nebo král Filip formálně přijme demisi jeho vlády?",
+   "criterion": "Yes if, by 31 Dec 2026 23:59 CET, the Royal Palace announces that King Philippe has accepted the resignation of the De Wever government (even if it stays on in a caretaker capacity), or another person is sworn in as Prime Minister. A resignation offered and refused or held in abeyance does not count. No otherwise.",
+   "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ královský palác oznámí, že král Filip přijal demisi De Weverovy vlády (i když zůstane v demisi úřadovat), nebo pokud premiérem složí přísahu jiná osoba. Nabídnutá demise, kterou král odmítl nebo ponechal v zásobě, se nepočítá. Jinak ne.",
+   "resolution_source": "https://www.monarchie.be/en/agenda",
+   "resolves_by": "2026-12-31T23:59:00+01:00",
+   "background": "Prime Minister Bart De Wever offered his government's resignation after the five-party Arizona coalition failed to agree the 2027 budget; on 6 Nov King Philippe refused it and asked him to restart the budget talks.",
+   "background_cs": "Premiér Bart De Wever nabídl demisi vlády poté, co se pětičlenná koalice Arizona nedohodla na rozpočtu na rok 2027; král Filip ji 6. listopadu odmítl a požádal ho, aby rozpočtová jednání obnovil.",
+   "sources": [
+    {
+     "title": "Euronews: Belgian king refuses PM De Wever's resignation",
+     "url": "https://www.euronews.com/2026/11/06/belgian-king-refuses-pm-bart-de-wevers-resignation-and-asks-him-to-restart-budget-talks"
+    },
+    {
+     "title": "Brussels Signal: Belgian king refuses De Wever's resignation",
+     "url": "https://brusselssignal.eu/2026/11/belgian-king-refuses-de-wevers-resignation-and-orders-coalition-back-to-budget-talks/"
+    }
+   ],
+   "history": [
+    {
+     "at": "2026-11-07T18:36:00Z",
+     "p": 0.25,
+     "combined": 0.252,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "reason": "Reference class: Belgian PMs whose resignation the King held in abeyance. Leterme in July 2008 was never accepted, though he fell later over Fortis; Leterme in April 2010 was accepted within days; Michel in Dec 2018 was accepted at once. That gives roughly 0.4 within about 8 weeks. Down because the King has explicitly sent the Arizona coalition back to budget talks, and no party has an interest in early elections.",
+       "at": "2026-11-07T18:28:09Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.3,
+       "reason": "King Philippe refused the resignation and sent De Wever back to budget talks, which in Belgian practice usually signals a push for a deal. In Michel's December 2018 case, though, the resignation held in abeyance was accepted within days once talks failed. Eight weeks of budget brinkmanship leave a real chance the Arizona talks fail again and the King accepts.",
+       "at": "2026-11-07T18:27:57Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.3,
+       "reason": "Case for YES: De Wever has already resigned once, the King's refusal only buys time, the Vooruit-MR deadlock over the budget is structural, Belgium is under the EU deficit procedure, and a second failed round would leave the King little choice but to accept, as he did with Leterme in December 2008 after refusing in July. Honest view: Belgian coalitions usually find a budget deal after a staged crisis, none of the Arizona partners wants an election that would feed Vlaams Belang and PTB, provisional twelfths let the government limp into 2027, and De Wever stays PM unless he resubmits and the King accepts within seven weeks.",
+       "at": "2026-11-07T18:30:00Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "No market. Reference class: Belgian resignations that the King held or refused while ordering talks. Leterme 2008 (July) survived, while Leterme 2010 and Michel 2018 were accepted within days, so roughly half end in acceptance, usually quickly. This king refused the resignation outright and sent the Arizona coalition back to budget talks, and no partner gains from early elections, so I sit below half for the eight weeks left.",
+       "at": "2026-11-07T18:29:37Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.1,
+       "reason": "The King refused the resignation and De Wever is restarting budget talks, so he stays in office unless talks fail again. A government fall or accepted resignation by year-end is possible but less likely than a patched deal.",
+       "at": "2026-11-07T18:27:30Z"
+      }
+     ],
+     "note": "Opened after King Philippe refused De Wever's resignation on 6 Nov and sent the coalition back to budget talks.",
+     "note_cs": "Otevřeno poté, co král Filip 6. listopadu odmítl De Weverovu demisi a poslal koalici zpět k rozpočtovým jednáním."
     }
    ]
   }
