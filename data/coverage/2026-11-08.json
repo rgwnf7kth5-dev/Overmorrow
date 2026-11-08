@@ -1,0 +1,105 @@
+{
+  "edition": "2026-11-08",
+  "checked_at": "2026-11-08T05:01:07+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 7, read 08 Nov 03:59 UTC; five entries at that time)",
+    "ct24 (SOUHRN: Zásadní události soboty 7. listopadu, published 7 Nov 18:29, modified 21:59; plus front page headings, read 08 Nov 03:58-04:00 UTC)",
+    "ctk (ceskenoviny.cz front page main stories with timestamps, read 08 Nov 04:00 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World (HTTP 401) and AP (HTTP 403) refuse scripted reading. Two standard WebSearches for AP/Reuters top stories of 7 Nov returned no usable list. List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such."
+  ],
+  "not_qualified": [
+    "Sudan: SAF says it recaptured Iyal Bakhit (West Kordofan) and downed an RSF drone (wikipedia only, cited to Sudan Tribune; planning dropped 'Sudan: fighting excluded' anyway)",
+    "US offers up to USD 20m for information on Iran's nuclear programme (ct24 only; not on the ctk front as read)",
+    "Czech police announce preventive measures after Kraków; MZV has no reports of Czech victims (ctk only; part of the Kraków event)",
+    "France investigates bomb threats against flights, possible foreign links (ctk only; bomb hoaxes in planning dropped list as crime)",
+    "Motorists want to discuss the groundwater fee rise in the coalition (ctk only; ct24 piece dated 6 Nov)",
+    "Hungary opens communist secret-police informer files (ct24 only)",
+    "Record used-car imports (ct24 only; Jan-Sep data, not an event of the day)",
+    "Iron Age British king was a woman, archaeologists say (ct24 only)",
+    "Paraguay: ex-president Peña charged (BBC, not a reference list; ct24 Paraguay piece dated 6 Nov; py-crisis covered the removal)",
+    "Football, ice hockey (IIHF, Swiss refusal to play Russia), F1 São Paulo qualifying, athletics (excluded: sport)",
+    "Democrats' win and markets (ctk; excluded: markets)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in the 2026-11-06 and 2026-11-07 files, ct24 and ctk count as lists for non-Czech events too. The Wikipedia day page was thin at reading time (five entries; no Israel item yet). The planning file was prepared 5 Nov 18:48 UTC, so anything dated after that was not visible to it.",
+  "events": [
+    {
+      "title": "Kraków: gunman kills six on the Main Market Square and three relatives at his home in Ostrowiec Świętokrzyski; 15-16 injured; far-right motive, Tusk calls it terrorism",
+      "scope": "europe",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)", "ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/po-strelbe-na-namesti-v-krakove-jsou-hlaseni-mrtvi-i-zraneni-379380",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (an attack); no sweep gap. Not forecastable for the 8 Nov edition; follow-ups (mourning to 11 Nov, charges, Independence Day security) are candidates for later editions."
+    },
+    {
+      "title": "New Zealand general election: preliminary count gives no clear winner (Labour and National within a fraction of a point); special votes outstanding, official results 27 Nov",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/novozelandske-volby-ukazuji-tesny-souboj-mezi-vladni-stranou-a-labouristy-379376",
+      "status": "covered",
+      "story": "nz-election",
+      "note": "Lead story. The lists differ on who leads the party vote (Wikipedia: Labour; ct24 at 60% counted: National 29.45 vs Labour 29.25); that is for the resolver, not this check."
+    },
+    {
+      "title": "France: fourth weekend of protests (yellow vests, unions, students); turnout lower than earlier weekends",
+      "scope": "europe",
+      "lists": ["wikipedia", "ctk", "ct24 (front page video piece)"],
+      "source": "https://www.ceskenoviny.cz/zpravy/afp-protestu-ve-francii-se-dnes-zucastnilo-mene-lidi-nez-minule-vikendy/2898693",
+      "status": "covered",
+      "story": "fr-acte4",
+      "note": "The counts differ: Wikipedia (AFP) has about 146,000; the edition says the ministry counted about 222,000. That is for the resolver."
+    },
+    {
+      "title": "Israel: President Herzog announces that opposition leader Gadi Eisenkot will be tasked with forming the government (formal mandate on Sunday)",
+      "scope": "world",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/eisenkot-bude-sestavovat-novou-izraelskou-vladu-prezident-ho-poveri-v-nedeli/2898824",
+      "status": "covered",
+      "story": "il-coalition",
+      "note": "Not yet on the Wikipedia day page as read."
+    },
+    {
+      "title": "Russian overnight attack on Kyiv and its region (30+ ballistic missiles plus drones, energy targets): one dead, at least six injured; Zelensky says the strikes are pressure before the talks",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/rozsahly-rusky-utok-na-kyjev-zranil-pet-lidi-zasahl-skolku-ci-energetiku-379374",
+      "status": "covered",
+      "story": "ua-war",
+      "note": "The edition covers the same overnight attack through the Air Force drone count (at least 150) ahead of Abu Dhabi. It does not mention the ballistic missiles or the casualties."
+    },
+    {
+      "title": "AFP: thousands of Syrian troops to deploy in Saudi Arabia and Yemen against the Houthis (Syria denies the Yemen deployment)",
+      "scope": "world",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/afp-v-saudske-arabii-a-jemenu-budou-nasazeny-tisice-syrskych-vojaku/2898688",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Yemen offensive': 'No dated step.' This is a loose match: the dropped item is the conflict as a whole, and this particular report could not have been foreseen (it is an anonymous-source report)."
+    },
+    {
+      "title": "Houthi-Saudi conflict: Saudi air strikes on homes near Sanaa kill at least 25-27",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_7",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Yemen offensive': 'No dated step.' This qualifies only through the AP citation inside Wikipedia (BBC also had it, but BBC is not a reference list). Air strikes are not announced in advance."
+    },
+    {
+      "title": "Prague: rival rallies over public-media funding: 'Běh pro svobodná média' run in support of ČT and ČRo in the morning; Svatopluk march to ČT at Kavčí hory against the licence fees in the afternoon (several hundred people by ČTK's estimate, 2,000 by the organisers'; SPD and Stačilo! speakers)",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/pro-i-proti-lide-v-praze-kvuli-poplatkum-za-ct-a-cro-vyrazili-do-ulic-379386",
+      "status": "missed",
+      "note": "Not in the planning file. The cz-media story covers the public-media dispute, but its event is the coalition partners' position and Tuesday's student protest; it does not mention Saturday's rallies. The planning cz_shortfall says that no Saturday demonstration was found and that praha.eu and ČTK Předpokládané události were unreadable. A march with a set route (from Kongresové centrum to ČT) was very likely notified in advance to the Prague magistrate and listed in ČTK Předpokládané události, but I did not verify an advance announcement (one WebSearch found nothing). It is probably a sweep gap: these are exactly the sources the planning could not read. Oddity: the ČTK page carries a 'Komerční prezentace' label in its header."
+    },
+    {
+      "title": "Night frost breaks 7 November records at eight Czech stations; below -14 °C in the mountains",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/pocasi/nocni-mraz-prekonal-rekordy-na-osmi-stanicich-hlavne-v-nizsich-polohach-379375",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Frost on Saturday': 'Weather, no news weight.'"
+    }
+  ]
+}

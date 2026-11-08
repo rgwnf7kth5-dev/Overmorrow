@@ -18,6 +18,24 @@
       "note": "ČNB raised the repo rate to 4.00% on 5 Nov by 4:3, three members voting for unchanged rates.",
       "at": "2026-11-07T05:25:00+01:00",
       "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "us-iran-ship-1",
+      "outcome": "yes",
+      "value": null,
+      "evidence": "https://shipandbunker.com/news/world/235398-tanker-attacked-off-the-coast-of-qatar",
+      "note": "UKMTO reported a tanker struck by two projectiles 50nm north of Madinat ash Shamal (Persian Gulf) at 23:20 UTC Wed 4 Nov (03:20 Gulf time 5 Nov); Gulf News dates it 5 Nov; incident-vs-report time slightly ambiguous.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "pl-tk-4",
+      "outcome": "yes",
+      "value": null,
+      "evidence": "https://api.sejm.gov.pl/sejm/term10/votings/68",
+      "note": "Vote 6 (09:18, 5 Nov) on a motion for a break, moved by MP Sachajko who cited the forcible takeover of the Constitutional Tribunal and asked for the PM's information.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
     }
   ]
 }

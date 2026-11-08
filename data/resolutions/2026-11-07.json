@@ -197,6 +197,62 @@
       "note": "When nominations closed on 6 Nov the Eurogroup named only two candidates, Knot (Netherlands) and Hernández de Cos (Spain); Bloomberg ('the only two candidates') and WSJ ('officially a two-horse race') confirm that no other government nominated anyone.",
       "resolved_at": "2026-11-07T05:12:00+01:00",
       "held": true
+    },
+    {
+      "claim": "us-iran-strike-3",
+      "outcome": "yes",
+      "evidence": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation",
+      "note": "Al Jazeera's Tehran correspondent reports US projectiles hit Qeshm Island on Friday night (6 Nov) and that Trump called them 'minor strikes'. Xinhua reports Trump said on Friday that US forces had launched new strikes on Iran's air defences. Marked ambiguous because the exact strike time against the 23:59 Tehran cut-off is not given and comes from secondary outlets (CENTCOM page returned no content).",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "us-ms-lead-3",
+      "outcome": "yes",
+      "evidence": "https://www.wlbt.com/2026/11/07/colom-meets-jackson-voters-senate-ballot-count-continues/",
+      "note": "WLBT carries AP's count. Its report published 00:29 UTC 7 Nov (19:29 ET on 6 Nov) shows Colom 467,930 (49.1%) to Hyde-Smith 465,356 (48.8%) with 96.9% in and no call. WLBT's results box still shows those figures on 8 Nov, so Colom led at 23:59 ET on 6 Nov.",
+      "resolved_at": "2026-11-08T05:09:13+01:00"
+    },
+    {
+      "claim": "us-ms-senate-1",
+      "outcome": "no",
+      "evidence": "https://www.wlbt.com/2026/11/07/colom-meets-jackson-voters-senate-ballot-count-continues/",
+      "note": "As of 6-7 Nov, WLBT (AP results) and its weekly recap say the race remains too close to call, with no winner marked. AP made no call in the window.",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-acbc-law-1",
+      "outcome": "yes",
+      "evidence": "http://www.npc.gov.cn/npc/c2/kgfb/202611/t20261106_458565.html",
+      "note": "Xinhua on npc.gov.cn (Beijing, 6 Nov) reports that the closing meeting of the 14th NPC Standing Committee's 25th session on the morning of 6 Nov passed 5 laws, including the Anti-Cross-Border Corruption Law (反跨境腐败法). The NPC front page also carries the headline '反跨境腐败法表决通过'.",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-waico-ratify-2",
+      "outcome": "yes",
+      "evidence": "http://www.npc.gov.cn/npc/c2/kgfb/202611/t20261106_458565.html",
+      "note": "The same Xinhua report on the 6 Nov closing meeting of the 25th session says the session decided to ratify one agreement: the Agreement on the Establishment of the World Artificial Intelligence Cooperation Organization (审议批准关于成立世界人工智能合作组织的协定).",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true
+    },
+    {
+      "claim": "za-joburg-largest-1",
+      "outcome": "yes",
+      "evidence": "https://businesstech.co.za/news/government/883196/2026-election-results-final-numbers-in-sight-as-95-of-votes-counted-with-winners-and-losers-clear/",
+      "note": "BusinessTech (22:20 SAST, 6 Nov, 95% counted nationally) and EWN (6 Nov, 82% of districts) both report the DA leading in Johannesburg, ahead of the ANC and ActionSA. Marked ambiguous because the IEC dashboard could not be read and Johannesburg's own capture percentage at 23:59 and its final declaration were not seen.",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "za-anc-national-2",
+      "outcome": "yes",
+      "evidence": "https://businesstech.co.za/news/government/883196/2026-election-results-final-numbers-in-sight-as-95-of-votes-counted-with-winners-and-losers-clear/",
+      "note": "BusinessTech, citing results at 95% counted on the evening of 6 Nov, puts the ANC at 31.2% nationally. EWN gives about 31% at 82% of districts. Both are far below 35.0%. Taken from secondary outlets because the IEC dashboard did not render.",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true
     }
   ]
 }

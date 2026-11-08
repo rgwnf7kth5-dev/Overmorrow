@@ -156,6 +156,15 @@
       "evidence": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002130357&type=S-1",
       "note": "EDGAR's latest registration filing is the S-1/A accepted 2 Nov, before the window and with a blank price range; nothing filed 3-4 Nov.",
       "resolved_at": "2026-11-06T05:05:06+01:00"
+    },
+    {
+      "claim": "cz-army-1",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/opozice-neprosadila-doplneni-programu-schuze-o-odvolani-okamury-z-cela-snemovny/2896078",
+      "note": "psp.cz was unreachable. ČTK's reports on the 3 Nov agenda debate (about four hours, 40 opposition speakers) and the 4 Nov sitting record only the votes on adding Okamura's removal to the agenda (72-87 on 3 Nov, Jurečka's motion on 4 Nov) and the vote on state health-insurance payments. They report no vote on adding the Army Concept 2040 or the 2045 outlook, and no resolution on either; the outcome is inferred from that absence.",
+      "resolved_at": "2026-11-08T05:09:13+01:00",
+      "held": true,
+      "ambiguous": true
     }
   ]
 }

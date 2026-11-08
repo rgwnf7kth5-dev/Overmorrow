@@ -240,6 +240,18 @@
       "name": "Ministry of Finance: Macroeconomic Forecast and Fiscal Outlook",
       "url": "https://www.mfcr.cz/cs/rozpoctova-politika/makroekonomika/makroekonomicka-predikce",
       "note": "Quarterly release; the November 2026 forecast (6 Nov) was missed."
+    },
+    {
+      "section": "Czech Republic",
+      "name": "Prague City Hall: Aktuální přehled oznámených shromáždění (PDF list of notified assemblies; the file name carries its date)",
+      "url": "https://www.praha.eu/",
+      "note": "The public-media rallies of 7 Nov 2026 were missed because praha.eu and ČTK Předpokládané události could not be read. Find the latest PDF from the site (pattern praha.eu/documents/d/praha/aktualni-prehled-oznamenych-shromazdeni-YYYYMMDD-pdf) with scripts/read.mjs; if that fails, check the ČT24 weekend preview."
+    },
+    {
+      "section": "Czech Republic",
+      "name": "ČT24 topic page: Veřejnoprávně (public-media funding dispute, announced protests and strikes)",
+      "url": "https://ct24.ceskatelevize.cz/tema/verejnopravne-106812",
+      "note": "Fallback for weekend demonstrations on the public-media fee dispute; added after the 7 Nov 2026 Prague rallies were missed."
     }
   ],
   "running_story_outlets": [

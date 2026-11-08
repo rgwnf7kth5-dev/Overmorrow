@@ -1,0 +1,234 @@
+{
+  "edition": "2026-11-08",
+  "results": [
+    {
+      "claim": "nz-election-coalition-majority-2",
+      "outcome": "yes",
+      "evidence": "https://www.rnz.co.nz/news/election-2026-results",
+      "note": "electionresults.govt.nz refused scripted reading (403), so this uses the fallback: RNZ's results page with Electoral Commission data gives the preliminary allocation as National 42, ACT 13, NZ First 12 = 67 of 131 seats, which is more than half (1News puts it at 67 of 130, still a majority).",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "held": true
+    },
+    {
+      "claim": "nz-election-opportunity-5pct-4",
+      "outcome": "yes",
+      "evidence": "https://www.rnz.co.nz/news/politics_election-2026/2420113/too-close-to-call-wait-begins-for-special-votes-after-cliffhanger-election-night",
+      "note": "electionresults.govt.nz refused scripted reading (403), so this uses the fallback: RNZ reports Opportunity on 6% of the party vote in the preliminary count with 7 seats, 1News says 6%, and the Spinoff gives 6.02%, all above 5.00%.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-iran-ship-3",
+      "outcome": "yes",
+      "evidence": "https://www.iranintl.com/en/liveblog/202611077068",
+      "note": "Iran International (21:40 GMT, 7 Nov) quotes UKMTO saying it received a report on Saturday of an incident involving a bulk carrier and military forces about 18nm east of Khor Fakkan in the Gulf of Oman; CENTCOM (via Reuters/gCaptain) says a US aircraft fired precision munitions at the St Kitts-flagged M/V Huda there that day. UKMTO's own wording is 'incident involving military forces', and I read it as a projectile hit on a merchant vessel because CENTCOM describes one.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "us-iran-strike-4",
+      "outcome": "no",
+      "evidence": "https://www.iranintl.com/en/liveblog/202611077068",
+      "note": "On 7 Nov the US struck a cargo vessel in the Gulf of Oman off the UAE (not Iranian territory or waters) and launched a land-route task force; no White House, Pentagon or CENTCOM confirmation of a strike on Iranian territory that day was found, and the WSJ reports advisers still divided over renewed strikes.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "us-iran-talks-date-1",
+      "outcome": "no",
+      "evidence": "https://www.iranintl.com/en/liveblog/202611077068",
+      "note": "Coverage through 7 Nov mentions only a Vance letter proposing renewed talks, Qatari statements that mediation continues, and a UAE official's optimism; no US and Iranian on-the-record confirmation of a date for a new round.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "us-ms-count-1",
+      "outcome": "yes",
+      "evidence": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
+      "note": "No report quoting AP was found, so the NBC News race page decides: it was last updated at 08:43 ET on 7 Nov (so it stood unchanged at 20:00 ET) and shows the race uncalled, with Colom ahead of Hyde-Smith 49.1% to 48.8% and 96.9% of expected votes in.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "us-ak-count-1",
+      "outcome": "yes",
+      "evidence": "https://www.nbcnews.com/politics/2026-elections/alaska-senate-results",
+      "note": "NBC News' Alaska race page (updated 08:19 ET on 7 Nov, next state updates expected the following week) shows Peltola ahead of Sullivan in first-choice votes, 48.2% to 47.9%, with 74.1% of expected votes in.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "ua-drones-4",
+      "outcome": "yes",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4182349-air-defense-downs-four-missiles-149-drones-used-by-russia-to-attack-ukraine-overnight.html",
+      "note": "Ukrinform carries the Air Force's 7 Nov morning summary: from 18:00 on 6 Nov Russia launched 172 attack UAVs (Shaheds, Gerberas, decoys) plus missiles, and 149 drones were downed or suppressed by 09:00.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "ua-pow-3",
+      "outcome": "no",
+      "evidence": "https://kyivindependent.com/tag/prisoner-exchange/",
+      "note": "Kyiv Independent's prisoner-exchange tag has nothing newer than 23 Oct, and neither Interfax-Ukraine nor a web search shows any exchange on 6-7 Nov.",
+      "resolved_at": "2026-11-08T05:04:25+01:00"
+    },
+    {
+      "claim": "ua-delegation-2",
+      "outcome": "yes",
+      "evidence": "https://kyivindependent.com/umerov-to-lead-ukraine-delegation-in-abu-dhabi-peace-talks-despite-media-confusion-top-official-confirms/",
+      "note": "On 6 Nov Zelensky's communications adviser Dmytro Lytvyn ('No changes so far') and faction head Arakhamia ('Umerov is head of negotiations') confirmed on the record that Rustem Umerov will lead the delegation in Abu Dhabi. Lytvyn's answer to a direct question is counted as a statement by Zelensky's office.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "py-removed-1",
+      "outcome": "yes",
+      "evidence": "https://en.mercopress.com/2026/11/07/paraguay-s-senate-removes-santiago-pena-who-is-placed-under-arrest-and-pedro-alliana-takes-office",
+      "note": "MercoPress (with Última Hora concurring) reports the Senate removed Peña at 18:55 on Friday 6 Nov with all 44 senators present out of 45 voting in favour; his resignation was never considered.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "held": true
+    },
+    {
+      "claim": "py-sworn-1",
+      "outcome": "yes",
+      "evidence": "https://en.mercopress.com/2026/11/07/paraguay-s-senate-removes-santiago-pena-who-is-placed-under-arrest-and-pedro-alliana-takes-office",
+      "note": "Pedro Alliana was sworn in as president before Congress on the night of 6 Nov, minutes after Peña's removal (MercoPress, Última Hora, La Nación).",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "held": true
+    },
+    {
+      "claim": "py-vp-1",
+      "outcome": "yes",
+      "evidence": "https://www.ultimahora.com/de-senador-suplente-a-la-vicepresidencia-medico-personal-de-cartes-juro-como-vice-de-alliana",
+      "note": "Última Hora reports Congress president Basilio Núñez swore in Antonio Barrios as vice-president before the full Congress on 6 Nov after Peña's removal (also reported by ABC via MercoPress). No vote count was reported, so I read the oath before the joint session as the Congress designating him.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "pope-sat-1",
+      "outcome": "yes",
+      "evidence": "https://www.vaticannews.va/en/pope/news/2026-11/pope-at-uruguay-prayer-vigil-07-november-2026.html",
+      "note": "Vatican News reports Pope Leo XIV led the prayer vigil in Montevideo on Saturday evening 7 Nov, and El País (Uruguay) describes him at the Centenario vigil with 60,000 faithful.",
+      "resolved_at": "2026-11-08T05:04:25+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-media-partners-1",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/okamura-u-financovani-medii-je-mantinelem-zruseni-poplatku-a-nezvysovani-dani/2898304",
+      "note": "ČTK's 6 Nov item quotes Okamura (SPD), Klempíř and Macinka (Motoristé) only on abolishing fees, no tax rises, a voluntary-fee model and debating options at second reading; the 6% valorisation trigger is attributed only to Babiš (ANO), and the ČTK topic page and a search show no SPD/Motoristé position on it through 7 Nov.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-media-strike-call-1",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/prilohy/ceska-televize-rozhlas-poplatky/",
+      "note": "ČTK's media-funding topic page lists no strike alert or new strike by Veřejnoprávně or the ČT/ČRo unions on 6-7 Nov (its 7 Nov item covers a Svatopluk protest against ČT and a Milion chvilek rally called for 15 Nov); searches found only earlier strike-alert reports.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "ecb-list-1",
+      "outcome": "yes",
+      "evidence": "https://www.consilium.europa.eu/en/council-eu/eurogroup/",
+      "note": "On 6 Nov the Eurogroup President issued a statement on the nominations for ECB President naming Hernández de Cos (Spain) and Knot (Netherlands), as recorded in the 7 Nov resolutions (ecb-nom-1) and reported by Bloomberg.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "ecb-list-2",
+      "outcome": "no",
+      "evidence": "https://www.consilium.europa.eu/en/council-eu/eurogroup/",
+      "note": "The Eurogroup's 6 Nov statement named only two candidates, Knot and Hernández de Cos; Bloomberg called them 'the only two candidates' (see 7 Nov resolution ecb-nom-2).",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "fr-acte4-route-2",
+      "outcome": "no",
+      "evidence": "https://www.franceinfo.fr/economie/greve/direct-mobilisation-du-7-novembre-suivez-avec-nous-cette-nouvelle-journee-de-manifestations_8272010.html",
+      "note": "Franceinfo reports the gilets jaunes coordination went it alone with a rally at Place de la Concorde that the authorities banned, while the authorised République-Nation march was called by the youth intersyndicale and union bodies; read literally, that march was not an Act IV march, so no Act IV march took an authorised route.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "fr-acte4-count-1",
+      "outcome": "measured",
+      "value": 146,
+      "evidence": "https://www.franceinfo.fr/economie/greve/direct-mobilisation-du-7-novembre-suivez-avec-nous-cette-nouvelle-journee-de-manifestations_8272010.html",
+      "note": "Franceinfo (citing the Interior Ministry's statement to AFP) reports 146,000 demonstrators nationwide on 7 Nov, 46,000 of them in Paris; this was the only ministry figure as of 05:00 on 8 Nov, and the criterion counts the last figure by 23:59 on 8 Nov.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "fr-acte4-unions-3",
+      "outcome": "no",
+      "evidence": "https://www.cgt.fr/actualites",
+      "note": "The CGT news page (updated 6 Nov) only says the follow-up to 5 Nov 'is being built from Saturday 7 Nov' in the street and at workplaces, and franceinfo's 7 Nov live and searches show no intersyndicale or joint CGT-CFDT date for a new national day.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-bank-deposit-1",
+      "outcome": "no",
+      "evidence": "https://www.e15.cz/finexpert",
+      "note": "E15 Finexpert's latest savings items are mBank (5 Nov, excluded) and KB (3 Nov), and searches of ČTK, Peníze.cz and Newstream found no new retail deposit-rate increase announced on 6-7 Nov.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-bank-mortgage-1",
+      "outcome": "no",
+      "evidence": "https://www.hyponamiru.cz/cnb-zvysila-sazby-na-4-zdrazi-hypoteky-nebo-ne/",
+      "note": "Hyponamiru's 6 Nov article on the CNB hike says swaps fell in early November and cites only ČSOB Hypoteční banka's 12 Oct increase, and E15 Finexpert shows no new mortgage-rate increase by the six banks on 6-7 Nov.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "berkshire-q3-opearn-1",
+      "outcome": "measured",
+      "value": 12.705,
+      "evidence": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+      "note": "Berkshire's 7 Nov 2026 release states third-quarter 2026 operating earnings of $12,705 million (after tax), against $13,485 million a year earlier.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "berkshire-q3-buyback-2",
+      "outcome": "yes",
+      "evidence": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+      "note": "Berkshire's 7 Nov release says it acquired approximately $9.6 billion of treasury shares in Q3 2026 ($14.4 billion over nine months), above $5.0 billion.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-diesel-cap-9",
+      "outcome": "yes",
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-06_Cenovy-vestnik-119-2026.pdf",
+      "note": "Cenový věstník 119/2026 of 6 Nov sets the maximum diesel (B7) price for 7-9 Nov 2026 at CZK 47.28 per litre incl. VAT, below 47.91.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-petrol-cap-1",
+      "outcome": "yes",
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-06_Cenovy-vestnik-119-2026.pdf",
+      "note": "Cenový věstník 119/2026 of 6 Nov sets the maximum Natural 95 (E10) price for 7-9 Nov 2026 at CZK 41.42 per litre incl. VAT, below 41.84.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-superdavky-minister-1",
+      "outcome": "no",
+      "evidence": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-hrozi-zpozdeni-ve-vyplaceni-superdavek-urady-prace-jsou-zahlcene-prepocty-319814",
+      "note": "The 5 Nov Seznam Zprávy report on the delay risk quotes only ministry spokespeople, and searches of ČTK, ČT24, Novinky, Seznam Zprávy, Aktuálně and E15 found no comment by Juchelka in person on November benefit delays on 6-7 Nov.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-lexukr-1",
+      "outcome": "no",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-schvalovat-zprisneni-podminek-docasne-ochrany-ukrajincu-379335",
+      "note": "ČT24 (6 Nov, updated 16:01) reports the Chamber ended its sitting and postponed the vote on the bill tightening temporary protection for Ukrainians; the next sitting (13 Nov) is limited to the refinery tax.",
+      "resolved_at": "2026-11-08T05:02:55+01:00",
+      "held": false
+    }
+  ]
+}

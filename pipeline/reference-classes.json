@@ -140,8 +140,8 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 5,
-        "no": 48
+        "yes": 6,
+        "no": 54
       }
     },
     {
@@ -185,7 +185,7 @@
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
         "yes": 2,
-        "no": 2
+        "no": 3
       }
     },
     {
@@ -217,7 +217,7 @@
       "n": 6,
       "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
       "own_record": {
-        "yes": 3,
+        "yes": 4,
         "no": 5
       }
     },
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 5,
+        "yes": 6,
         "no": 1
       }
     },
@@ -305,7 +305,7 @@
       "n": "own record",
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
-        "yes": 2,
+        "yes": 4,
         "no": 2
       }
     },
@@ -338,7 +338,7 @@
       "n": 0,
       "source": "Own record only (created 2026-10-29)",
       "own_record": {
-        "yes": 6,
+        "yes": 7,
         "no": 2
       }
     },
@@ -449,7 +449,7 @@
       "source": "own record",
       "own_record": {
         "yes": 2,
-        "no": 0
+        "no": 1
       }
     },
     {
@@ -503,7 +503,7 @@
       "n": 0,
       "source": "own record from 6 Nov 2026",
       "own_record": {
-        "yes": 1,
+        "yes": 3,
         "no": 0
       }
     },
@@ -525,7 +525,7 @@
       "n": 0,
       "source": "own record from 6 Nov 2026",
       "own_record": {
-        "yes": 1,
+        "yes": 3,
         "no": 0
       }
     },
@@ -536,8 +536,8 @@
       "n": 0,
       "source": "own record from 6 Nov 2026",
       "own_record": {
-        "yes": 0,
-        "no": 1
+        "yes": 1,
+        "no": 2
       }
     },
     {
@@ -558,7 +558,7 @@
       "n": 0,
       "source": "own record from 6 Nov 2026",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -593,6 +593,116 @@
       "own_record": {
         "yes": 1,
         "no": 0
+      }
+    },
+    {
+      "id": "parliament-takes-up-live-dispute-on-sitting-day",
+      "description": "A parliament holds a vote on a motion or debates an item on a live political dispute on a given sitting day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "count-leader-holds-at-checkpoint",
+      "description": "The candidate leading an uncalled count still leads it at a stated later checkpoint",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 3,
+        "no": 0
+      }
+    },
+    {
+      "id": "close-race-called-by-date",
+      "description": "AP calls a close individual race by a stated date",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "npcsc-adopts-scheduled-item",
+      "description": "China's NPC Standing Committee adopts or ratifies an item on its session agenda by the closing meeting",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "bloc-wins-seat-majority",
+      "description": "A named bloc of parties holds more than half the seats in the preliminary allocation",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "ua-ru-pow-exchange-two-day-window",
+      "description": "Russia and Ukraine carry out a prisoner exchange in a given two-day window",
+      "base_rate": 0.069,
+      "n": 304,
+      "source": "data/dossiers/2026-11-05/ua-pow-1.md (21 of 304 two-day windows in 2026); own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "succession-step-within-short-window",
+      "description": "A step of a constitutional succession (removal vote, oath, designation of a successor) is completed within a one-to-two-day window",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 3,
+        "no": 0
+      }
+    },
+    {
+      "id": "official-shortlist-composition",
+      "description": "An official body publishes a shortlist with a stated composition (named people, or a minimum number) by a date",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 1,
+        "no": 1
+      }
+    },
+    {
+      "id": "protest-march-on-authorised-route",
+      "description": "A called protest march takes place on a route the authorities or a court allowed",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cz-bank-rate-rise-short-window",
+      "description": "A Czech bank announces higher retail deposit or mortgage rates in a one-to-two-day window after a CNB move",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 8 Nov 2026",
+      "own_record": {
+        "yes": 0,
+        "no": 2
       }
     }
   ]

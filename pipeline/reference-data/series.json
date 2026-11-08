@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "pooled": {
-  "n": 21,
-  "rms_in_scales": 1.291,
+  "n": 23,
+  "rms_in_scales": 1.265,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -422,6 +422,38 @@
    ],
    "n": 1,
    "rms_surprise": 5.1
+  },
+  "fr-acte-interior-ministry-count-2026": {
+   "unit": "thousand",
+   "records": [
+    {
+     "edition": "2026-11-08",
+     "claim": "fr-acte4-count-1",
+     "consensus": 320,
+     "first": 146,
+     "centre": 293,
+     "scale_used": 135,
+     "source": "No forecast found. Last Saturday count, Act III of 31 Oct: 320,000 (Interior Ministry, via Sortiraparis). Replace with any ministry or intelligence estimate on 6 Nov."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 174
+  },
+  "berkshire-operating-earnings-q3-2026": {
+   "unit": "USD billion",
+   "records": [
+    {
+     "edition": "2026-11-08",
+     "claim": "berkshire-q3-opearn-1",
+     "consensus": 13.3,
+     "first": 12.705,
+     "centre": 13.42,
+     "scale_used": 1.5,
+     "source": "Bullstory EPS estimate 9,253.77 per A share, source unnamed, converted to about USD 13.3bn on the Q3 2025 per-share ratio (own arithmetic). Other readings: 12.7bn (2 estimates, The Right Trader), 14.2-14.7bn (Morningstar). No LSEG or FactSet figure read."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.595
   }
  },
  "extra": {}

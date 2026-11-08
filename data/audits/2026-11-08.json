@@ -1,0 +1,59 @@
+{
+  "edition": "2026-11-08",
+  "entries": [
+    {
+      "claim": "us-iran-ship-3",
+      "outcome": "unresolved",
+      "value": null,
+      "evidence": "https://gcaptain.com/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman/",
+      "note": "CENTCOM disabled a cargo vessel in the Gulf of Oman on 7 Nov, but I found no UKMTO report of any 7 Nov incident (ukmto.org blocked).",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "py-vp-1",
+      "outcome": "yes",
+      "value": null,
+      "evidence": "https://www.hoy.com.py/nacionales/2026/11/06/antonio-barrios-es-elegido-nuevo-vicepresidente-de-la-republica",
+      "note": "Congress in extraordinary session on 6 Nov designated Antonio Barrios vice-president (unanimous show of hands) after Alliana assumed the presidency; La Nacion and Ultima Hora also report his oath.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-media-partners-1",
+      "outcome": "unresolved",
+      "value": null,
+      "evidence": "https://www.ceskenoviny.cz/prilohy/ceska-televize-rozhlas-poplatky/",
+      "note": "Okamura on 6 Nov spoke of abolishing fees as the red line, but I found no report addressing the 10% to 6% trigger specifically.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-bank-deposit-1",
+      "outcome": "unresolved",
+      "value": null,
+      "evidence": "https://www.e15.cz/finexpert/banky-a-ucty/",
+      "note": "Found only increases announced 3-5 Nov (KB, mBank); no new increase dated 6-7 Nov located.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-diesel-cap-9",
+      "outcome": "yes",
+      "value": "47.28",
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-06_Cenovy-vestnik-119-2026.pdf",
+      "note": "Cenovy vestnik 119/2026 sets diesel max at CZK 47.28/l for 7-9 Nov, below 47.91 for 6 Nov (vestnik 118/2026).",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-lexukr-1",
+      "outcome": "no",
+      "value": null,
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-patku-6-listopadu-379364",
+      "note": "CT24 reports the Chamber postponed the Ukrainian temporary-protection tightening bill on 6 Nov; 7 Nov was a Saturday with no vote found.",
+      "at": "2026-11-08T05:23:14+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
