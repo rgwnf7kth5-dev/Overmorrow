@@ -1,0 +1,4 @@
+# us-iran-ship-11 signals
+Read 2026-11-08T17:52Z. Searches: markets.mjs search Hormuz ; markets.mjs search UKMTO ; markets.mjs search US x Iran ceasefire
+
+No daily-incident market. Closest: Polymarket weekly counts of UKMTO notices (not incidents, different window): "UKMTO publish 8-11 notices between November 2-November 8" Yes 0.93 (volume about 1.2k, liquidity about 2.7k); for 9-15 Nov: "8-11 notices" Yes 0.405, "4-7" 0.40, "12-15" 0.175, "fewer than 4" 0.175, "16 or more" 0.16 (tiny volume, 0-460; the bins overlap so prices do not sum to one). Long-dated: Polymarket "Strait of Hormuz traffic returns to normal by November 30?" Yes 0.024 (volume about 1.56M); "... by December 31?" Yes 0.085; "US announces end of Iranian blockade by November 15" Yes 0.0465 (volume about 1.4M). The ceasefire-continues questions closed 6-7 Nov. None settles on a ship incident on 10 Nov. No published model found.

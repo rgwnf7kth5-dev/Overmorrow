@@ -1165,6 +1165,50 @@
      ],
      "note": "Weekly re-forecast. No committee action, second-reading date or change in SPD's position found since 30 Oct, with the budget filling the agenda.",
      "note_cs": "Týdenní přepočet. Od 30. října se neobjevil postup ve výboru, termín druhého čtení ani změna postoje SPD; program Sněmovny plní rozpočet."
+    },
+    {
+     "at": "2026-11-08T18:40:00Z",
+     "p": 0.31,
+     "combined": 0.312,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.32,
+       "reason": "Reference class: Czech government bills with a 1 January start that pass first reading in October usually reach third reading by mid-December (roughly half to two-thirds), but this one lacks a sure majority because SPD opposes it, which roughly halves that. The new item is that Juchelka is preparing a compromise and the coalition council meets on 9 Nov. Okamura is not satisfied with it yet, so the estimate rises only slightly from 0.26.",
+       "at": "2026-11-08T18:14:58Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.33,
+       "reason": "ČT24 (8 Nov) reports Juchelka has drafted a compromise amendment sparing over-52s, people in retraining and those returning from parental leave, and Okamura, though 'not satisfied', says 'some resolution must come'; Motoristé back it and ANO says it can still pass in time for January. SPD has not yet agreed and the budget crowds the floor, so it stays below even, but SPD is now bargaining rather than refusing outright, so up from 0.26.",
+       "at": "2026-11-08T18:15:53Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.4,
+       "reason": "Case for Yes is stronger than the last figure allowed: Juchelka has a compromise amendment ready, Motoristé back it, Okamura says 'some resolution must come' rather than a flat no, ANO says the bill can still be processed for a January start, and the 60-day committee period (to 19 Dec) is a maximum, not a minimum, so a committee report in late November allows second and third readings in December; the criterion also counts a softened bill. Case for No: SPD is 'not satisfied', coalition councils keep deferring, the budget takes the December floor time, and any SPD deal may push effect to a later date with the vote in January. Up to 0.40.",
+       "at": "2026-11-08T18:19:08Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.27,
+       "reason": "No market found; model. P(ANO-SPD deal on Juchelka's compromise) about 0.5 (SPD says it is not satisfied but is negotiating, Motoristé on board, coalition council 9 Nov) times P(committee, second and third reading fit before 31 Dec around the budget | deal) about 0.55 gives about 0.27, a touch up from 0.26 because a concrete compromise now exists.",
+       "at": "2026-11-08T18:17:21Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.25,
+       "reason": "Committee stage runs to about 19 Dec and the budget fills the agenda. SPD says it is not satisfied with Juchelka's softened compromise, but ANO has a January start and CZK 5 bn of budgeted savings to push for. A further SPD-driven watering-down could still get it through by year end.",
+       "at": "2026-11-08T18:14:34Z"
+      }
+     ],
+     "note": "Labour minister Juchelka is preparing a compromise that keeps current benefits for over-52s, people in retraining and parents returning from leave (ČT24, 8 Nov); Motoristé back it, SPD says it is 'not satisfied' but a solution must come. Coalition council takes it up on 9 Nov.",
+     "note_cs": "Ministr práce Juchelka připravuje kompromis, podle něhož by současné podpory zůstaly lidem nad 52 let, rekvalifikovaným a rodičům po rodičovské (ČT24, 8. 11.); Motoristé ho podporují, SPD „není spokojena“, ale řešení podle ní přijít musí. Koaliční rada ho projedná 9. 11."
     }
    ],
    "result": null
@@ -2622,7 +2666,13 @@
      "note_cs": "Eisenkot má 67 doporučení, Netanjahu 46."
     }
    ],
-   "result": null
+   "result": {
+    "outcome": "no",
+    "evidence": "https://www.israelnationalnews.com/news/435855",
+    "note": "The first mandate went to Gadi Eisenkot on 8 Nov 2026, not to Netanyahu.",
+    "note_cs": "První pověření dostal 8. listopadu 2026 Gadi Eisenkot, nikoli Netanjahu.",
+    "resolved_at": "2026-11-08T18:40:00Z"
+   }
   },
   {
    "id": "il-government-sworn-in",
@@ -2929,6 +2979,58 @@
      ],
      "note": "Eisenkot has 67 recommendations, including the Joint List and Ra'am, and is expected to get the mandate.",
      "note_cs": "Eisenkot má 67 doporučení včetně Společné kandidátky a Ra'am a čeká se, že pověření dostane."
+    },
+    {
+     "at": "2026-11-08T18:40:00Z",
+     "p": 0.51,
+     "combined": 0.514,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Since 2009, seven of nine Knesset elections produced a government within about 95 days; the two failures were both in 2019, in a deadlocked parliament. This Knesset is closer to the 2019 deadlock: Eisenkot's 67 rests on the Arab lists plus parties with mutual vetoes, and Herzog said so openly. The sequence of two mandates and then the Knesset's own period runs to about 7 Feb, so a formation late in that process would miss the 31 Jan deadline.",
+       "at": "2026-11-08T18:14:58Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.55,
+       "reason": "Herzog formally gave Eisenkot the mandate on 8 Nov (JPost), which starts a 28+14-day clock to about 20 Dec. However, the opposition bloc holds only 48 seats, and the Arab parties' recommendations do not commit them to joining; Eisenkot is courting the haredim and calling for an 'emergency government'. A path exists but mutual vetoes remain, so slightly below the last 0.58.",
+       "at": "2026-11-08T18:15:53Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.48,
+       "reason": "Case for No: Eisenkot's bloc has 48 seats and reaches 61 only with Ra'am plus the Joint List or with haredi parties, and the bloc's own members (Liberman, Bennett) have red lines on each; Herzog himself said the 67 recommendations do not settle who can form a government because of mutual vetoes; in 2019 two mandates failed in a row, and if Eisenkot fails around 20 Dec a second candidate's 28 days plus the confidence vote run to the edge of 31 Jan. Case for Yes: the recommendation majority is real, UTJ is estranged from Netanyahu, and every government that was formed after 2019 was sworn in within 96 days. Down from 0.58 to 0.48; Polymarket's by-Dec-31 (0.39) and by-Feb-28 (0.69) prices bracket a similar figure.",
+       "at": "2026-11-08T18:19:08Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.54,
+       "reason": "No market with a 31 Jan deadline; interpolated linearly between Polymarket 'Next Israeli government formed by Dec 31, 2026' (0.39, vol 56k) and 'by Feb 28, 2027' (0.69, vol 38k), giving about 0.54 (volume shown is the two combined). Eisenkot's 28+14-day mandate runs to mid-December, and markets price a sizeable chance of a second mandate or no government (Polymarket 'no government formed' 0.33).",
+       "at": "2026-11-08T18:17:21Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.45,
+       "reason": "Eisenkot holds the mandate with 67 recommendations and the 28+14 day clock leaves room for a swearing-in before 31 Jan. Mutual vetoes and the need for Arab-party backing, or a haredi deal, make a 61-seat confidence vote uncertain, and Herzog himself said the tally settles nothing.",
+       "at": "2026-11-08T18:14:34Z"
+      }
+     ],
+     "note": "Herzog formally gave Gadi Eisenkot the mandate on 8 Nov (28 days, extendable by 14). His bloc has 48 seats; he needs the Arab lists or the haredi parties, against the parties' mutual vetoes.",
+     "note_cs": "Herzog 8. listopadu formálně pověřil sestavením vlády Gadiho Eisenkota (28 dní, lze prodloužit o 14). Jeho blok má 48 mandátů a potřebuje arabské strany nebo ultraortodoxní strany, proti čemuž stojí vzájemná veta stran.",
+     "market": {
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+      "p": 0.54,
+      "read_at": "2026-11-08T18:16:37Z",
+      "volume": 93563,
+      "kind": "exchange"
+     }
     }
    ],
    "result": null
@@ -5256,6 +5358,58 @@
       "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
       "p": 0.011,
       "read_at": "2026-11-01T18:57:17Z"
+     }
+    },
+    {
+     "at": "2026-11-08T18:40:00Z",
+     "p": 0.03,
+     "combined": 0.03,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Leaders who concede losing their majority almost never become prime minister in the same parliament, and the Student List rejects working with SNS. Nothing new; the estimate stays at the floor.",
+       "at": "2026-11-08T18:14:58Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Nothing on the premiership since Vučić conceded the election on 25 Oct; the news is prosecutors probing his security chief and justice minister over election abuse, which hurts rather than helps him. The Student List majority makes a Vučić government implausible.",
+       "at": "2026-11-08T18:15:53Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.03,
+       "reason": "Case for Yes is nearly empty: it would need the Student List's projected majority to collapse or recounts to reverse the result, and nothing in the past week points that way; prosecutors are instead probing regime figures over election abuse. Vučić conceded on 25 Oct and the Student List rejects SNS. Down to the floor of 0.03; Polymarket has him at 0.023 for next PM.",
+       "at": "2026-11-08T18:19:08Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.03,
+       "reason": "Polymarket 'Will Aleksandar Vučić be the next Prime Minister of Serbia?' trades at 0.023 (vol 2.7m, past its nominal close date but still active), consistent with his concession and the Student List majority. Nothing new on the premiership; floor at 0.03.",
+       "at": "2026-11-08T18:17:21Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.03,
+       "reason": "Vučić conceded the election and the Student List has a majority and rejects cooperation with SNS. The market is near 1%. Nothing in the news gives him a route to the premiership.",
+       "at": "2026-11-08T18:14:34Z"
+      }
+     ],
+     "note": "Weekly re-forecast: nothing new on the premiership; Polymarket 0.023 for Vučić as next prime minister.",
+     "note_cs": "Týdenní přepočet: k postu premiéra nic nového; Polymarket dává Vučićovi jako příštímu premiérovi 0,023.",
+     "market": {
+      "source": "polymarket",
+      "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+      "p": 0.023,
+      "read_at": "2026-11-08T18:16:37Z",
+      "volume": 2704211,
+      "kind": "exchange"
      }
     }
    ],
@@ -8073,6 +8227,50 @@
      ],
      "note": "New question, first forecast.",
      "note_cs": "Nová otázka, první odhad."
+    },
+    {
+     "at": "2026-11-08T18:40:00Z",
+     "p": 0.66,
+     "combined": 0.656,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "p": 0.63,
+       "reason": "Government tax bills backed by a majority coalition and counted in the budget usually pass on roughly their planned timetable, about 70%. Two things pull it down: the plan to bolt a wider sector tax onto this bill invites delay and disputes inside the coalition, and Pikora (Motoristé), who chairs the budget committee, opposes sector taxes. If the 60-day committee period is not shortened, it ends around 12 Dec, leaving little slack before year-end.",
+       "at": "2026-11-08T18:14:58Z"
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "p": 0.68,
+       "reason": "ČTK and ČT24 (8 Nov) confirm the bill is in the Chamber after first reading with the coalition behind it, but Echo24 reports the cabinet wants to attach a further sector tax (likely on banks) as an amendment, which budget committee chair Pikora (Motoristé) opposes in principle and STAN says would be rushed. That could cause coalition friction and opposition obstruction, and the budget takes floor time until early December, so slightly below 0.73.",
+       "at": "2026-11-08T18:15:53Z"
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "p": 0.64,
+       "reason": "Case for No: the coalition now plans to hang a bank or wider sector tax on this bill as an amendment, which the budget committee chair Pikora (Motoristé) opposes in principle, so drafting and coalition fights could push the second reading into December and past the budget's third reading on 2 Dec, while the opposition can refuse shortened deadlines and attack retroactivity. Case for Yes: the tax applies to 2026 and 2027, so the coalition needs it by year-end, it has the votes, and ČTK still reports a late-November or early-December final vote. Down from 0.73 to 0.64.",
+       "at": "2026-11-08T18:19:08Z"
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "p": 0.65,
+       "reason": "No market found; model. A coalition-majority revenue bill after a 13 Oct first reading normally reaches third reading within about 2-3 months (final vote reported possible late Nov/early Dec), so about 0.75 on its own, but the budget competes for floor time and a plan to attach a bank or other sector tax as an amendment, opposed by budget committee chair Pikora, adds delay and conflict risk: about 0.65.",
+       "at": "2026-11-08T18:17:21Z"
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "p": 0.68,
+       "reason": "A final vote is reported as possible in late Nov or early Dec, with the coalition behind the bill. Attaching other sectors, and Pikora's opposition in the budget committee, add some delay risk. Seven weeks of slack remains.",
+       "at": "2026-11-08T18:14:34Z"
+      }
+     ],
+     "note": "Coalition plans to widen the sector tax by attaching other sectors, most likely banks, to the refinery bill by MPs' amendment (Echo24, ČT24, 7-8 Nov); budget committee chair Pikora opposes sector taxes. The extraordinary sitting on 13 Nov takes the bill; December floor time goes to the budget.",
+     "note_cs": "Koalice chce rozšířit sektorovou daň o další odvětví, nejspíš banky, poslaneckým pozměňovacím návrhem k zákonu o dani rafinerií (Echo24, ČT24, 7.–8. 11.); předseda rozpočtového výboru Pikora sektorové daně odmítá. Mimořádná schůze 13. 11. má zákon na programu, prosincový čas pléna zabere rozpočet."
     }
    ]
   },
@@ -8473,7 +8671,14 @@
      "note": "Eisenkot has 67 recommendations; Herzog's legal deadline is 11 Nov.",
      "note_cs": "Eisenkot má 67 doporučení; Herzogova zákonná lhůta končí 11. listopadu."
     }
-   ]
+   ],
+   "result": {
+    "outcome": "yes",
+    "evidence": "https://www.jpost.com/israel-election-2026/article-914236",
+    "note": "President Herzog formally tasked Gadi Eisenkot with forming the government at the President's Residence on Sunday 8 Nov 2026 (67 recommendations against 46 for Netanyahu); reported by JPost and Arutz Sheva; president.gov.il could not be read by script.",
+    "note_cs": "Prezident Herzog v neděli 8. listopadu 2026 v prezidentské rezidenci formálně pověřil sestavením vlády Gadiho Eisenkota (67 doporučení proti 46 pro Netanjahua); informovaly JPost a Aruc Ševa, web president.gov.il nebylo možné načíst.",
+    "resolved_at": "2026-11-08T18:40:00Z"
+   }
   },
   {
    "id": "sk-fico-out-jan",

@@ -1,0 +1,4 @@
+# cz-prague-deal-11 signals
+Read 2026-11-08T17:55Z. Searches: markets.mjs search "Prague coalition"; markets.mjs search "Prague mayor".
+
+No match for the claim (no market on the coalition's composition or the date of its announcement). "Prague coalition" returned an unrelated football market. "Prague mayor" returned the next-mayor markets, which have no deadline and concern the person, not the coalition: Polymarket "Will Petr Hlaváček be the next Mayor of Prague?" Yes 0.9535 (volume about 16.0k, liquidity about 11.0k); Portlík 0.0325 (volume about 20.6k); Scheinherr 0.0235; Kalshi "Will Petr Hlaváček win the first Prague mayoral election following the October 2026 municipal election?" 0.94 (volume 849); Kalshi Portlík 0.05; Scheinherr 0.06. These relate to board question cz-prague-mayor-stan (no 30 Nov deadline in the market) but not to a coalition announcement on 10 Nov. Czech bookmaker pages not read. No published model.
