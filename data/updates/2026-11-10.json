@@ -1,0 +1,154 @@
+{
+  "edition": "2026-11-10",
+  "frozen_at": "2026-11-08T12:30:00+01:00",
+  "revisions": [
+    {
+      "claim": "ua-drones-10",
+      "probability": 0.68,
+      "kind": "forecast",
+      "reason": "On Sunday morning the Ukrainian Air Force reported 164 drones in the night of 7–8 November, the seventh night out of the last eight at 160 or more. New ensemble: 0.60, 0.64, 0.52, 0.59, 0.66.",
+      "reason_cs": "Ukrajinské letectvo v neděli ráno ohlásilo 164 dronů v noci na 8. listopadu, což je sedmá noc z posledních osmi se 160 a více drony. Nový soubor odhadů: 0,60, 0,64, 0,52, 0,59, 0,66.",
+      "sources": [
+        {
+          "title": "Ukrinform: ADF neutralises 137 of 164 Russian drones overnight",
+          "url": "https://www.ukrinform.net/rubric-ato/4182552-adf-neutralises-137-of-164-russian-drones-overnight.html"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "ua-drones-10",
+      "at": "2026-11-08T12:24:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-08T12:22:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-08T12:21:00+01:00",
+          "p_blind": 0.6,
+          "reason_blind": "Adding 7–8 Nov (164) puts 7 of the last 8 nights at 160 or more and the level well above the late-October lull, but the series is pulsed with dips after runs of big nights and 164 barely clears the line.",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.6,
+          "reason": "No market covers nightly drone counts; estimate stands."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-08T12:22:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts",
+            "dossier"
+          ],
+          "at_blind": "2026-11-08T12:21:00+01:00",
+          "p_blind": 0.64,
+          "reason_blind": "The 164-drone night makes 7 of 8 at 160 or more; held below the raw rate because many nights land near the threshold and a big combined strike can be followed by a quieter night; no 8 Nov daytime warnings found.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "dossier",
+            "signals"
+          ],
+          "p": 0.64,
+          "reason": "No market covers nightly drone counts; estimate stands."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-1",
+          "at": "2026-11-08T12:22:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-08T12:21:00+01:00",
+          "p_blind": 0.52,
+          "reason_blind": "The streak hides a falling run (227, 172, 164) and the series' habit of a lull after three or four heavy nights; only lifted by Russia's habit of a show of force on the eve of talks.",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.52,
+          "reason": "No market covers nightly drone counts; estimate stands."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-08T12:22:00+01:00",
+          "inputs": [
+            "signals",
+            "reference-data",
+            "dossier",
+            "overnight-facts"
+          ],
+          "p": 0.59,
+          "reason": "From the morning 0.55, nudged up for 7 of the last 8 nights at 160 or more; 160 is still the 14-night median, so close to a coin flip."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at": "2026-11-08T12:22:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "overnight-facts"
+          ],
+          "at_blind": "2026-11-08T12:21:00+01:00",
+          "p_blind": 0.66,
+          "reason_blind": "Zelensky counts over 3,000 attack drones in the past week and the night of 7–8 Nov had 164, so a 160+ night is more likely than not, though single nights vary widely.",
+          "inputs": [
+            "own-research",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.66,
+          "reason": "No market covers nightly drone counts; estimate stands."
+        }
+      ],
+      "combined": 0.6029,
+      "calibrated": 0.6752,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.1626,
+          "b": 1.3624
+        },
+        "version": "2026-11-08"
+      },
+      "spread": 0.14,
+      "market_search": {
+        "at": "2026-11-08T12:25:00+01:00",
+        "checked": [
+          "markets.mjs search \"Ukraine drones\" (timed out after 30 s)"
+        ],
+        "note": "markets.mjs did not answer; the morning record found no market on nightly drone counts."
+      },
+      "red_team": "The 164 figure is the Air Force's 08:00 summary counting from 18:00 on 7 Nov, decoys included and missiles separate, so it matches the claim's rule; no counting change, pause or attack under way found. Suggested trimming to about 0.64 because the five share one base rate; the calibrated figure is kept as the rule requires."
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "timesofisrael.com (refuses scripted reading)",
+      "lemonde.fr (HTTP 402)",
+      "vlada.gov.cz meeting programme (HTTP 404)",
+      "markets.mjs (timed out)"
+    ]
+  }
+}
