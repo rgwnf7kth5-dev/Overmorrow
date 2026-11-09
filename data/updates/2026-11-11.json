@@ -1,0 +1,71 @@
+{
+  "edition": "2026-11-11",
+  "frozen_at": "2026-11-09T12:28:00+01:00",
+  "revisions": [
+    {
+      "claim": "ua-talks-held-11",
+      "probability": 0.89,
+      "kind": "forecast",
+      "reason": "On Monday morning the EU confirmed it is sending a joint team with France, Germany and the UK to the Abu Dhabi talks on 10–11 November, and the Kremlin reaffirmed that the talks will mainly follow the trilateral US-Russia-Ukraine format. New ensemble: 0.80, 0.80, 0.78, 0.80, 0.80.",
+      "reason_cs": "EU v pondělí ráno potvrdila, že na jednání v Abú Zabí 10. a 11. listopadu vyšle společný tým s Francií, Německem a Británií, a Kreml zopakoval, že rozhovory se povedou převážně v třístranném formátu USA–Rusko–Ukrajina. Nový soubor odhadů: 0,80, 0,80, 0,78, 0,80, 0,80.",
+      "sources": [
+        { "title": "Euronews: EU to send joint team to Ukraine-Russia peace talks in Abu Dhabi", "url": "https://www.euronews.com/2026/11/09/eu-to-send-joint-team-to-ukraine-russia-peace-talks-in-abu-dhabi" },
+        { "title": "Arab News: Zelensky says 'coordinated positions' with EU chief ahead of Abu Dhabi talks", "url": "https://www.arabnews.pk/world/zelensky-says-coordinated-positions-with-eu-chief-ahead-of-abu-dhabi-talks-3006540" },
+        { "title": "TASS: trilateral talks in Abu Dhabi on 10-11 November", "url": "https://tass.com/politics/2214649" }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "ua-talks-held-11",
+      "at": "2026-11-09T12:27:00+01:00",
+      "agents": [
+        { "role": "base-rate", "model": "claude-opus-5-5", "at": "2026-11-09T12:26:00+01:00",
+          "inputs_blind": ["dossier", "reference-data", "overnight-facts"], "at_blind": "2026-11-09T12:26:00+01:00", "p_blind": 0.8,
+          "reason_blind": "Negotiation-round slip is about 0.07 (own record 0/7) and all three 2026 trilateral rounds met on their announced dates; about 0.12 off for a day one of separate bilateral contacts or a late start, a small lift for the Kremlin's reaffirmed trilateral format and the EU's confirmation of 10-11 Nov.",
+          "inputs": ["dossier", "reference-data", "overnight-facts", "signals"], "p": 0.8,
+          "reason": "No market on this claim (markets.mjs returned nothing at 12:25); Polymarket 'peace talks by 15 Nov' about 0.95 says nothing about a trilateral session on 10 Nov; estimate stands." },
+        { "role": "evidence", "model": "claude-opus-5-5", "at": "2026-11-09T12:26:00+01:00",
+          "inputs_blind": ["own-research", "overnight-facts", "dossier"], "at_blind": "2026-11-09T12:26:00+01:00", "p_blind": 0.8,
+          "reason_blind": "Delegations named and 10-11 Nov confirmed by the Kremlin, Kyiv and the US; Peskov insists on the agreed trilateral format (TASS 07:52Z); the January and February Abu Dhabi rounds had a joint session on day one; risks are bilateral-only contacts with the mediator, friction over the Europeans, or a late start.",
+          "inputs": ["own-research", "overnight-facts", "dossier", "signals"], "p": 0.8,
+          "reason": "The only related markets ask about any peace talks by 15 or 30 Nov (about 0.95), not a trilateral session on 10 Nov; estimate stands." },
+        { "role": "adversarial", "model": "claude-fable-5-1", "at": "2026-11-09T12:26:00+01:00",
+          "inputs_blind": ["dossier", "overnight-facts"], "at_blind": "2026-11-09T12:26:00+01:00", "p_blind": 0.78,
+          "reason_blind": "Dates are fixed with named delegations and a slip rate near 7%, but no government has confirmed a joint session on day one; 'predominantly trilateral', the mediator-shuttle pattern and new European participation leave a real chance that the three-way table comes only on 11 Nov.",
+          "inputs": ["dossier", "overnight-facts", "signals"], "p": 0.78,
+          "reason": "The Polymarket markets are about any talks by a later date, not a same-room trilateral on 10 Nov; estimate stands." },
+        { "role": "anchor", "model": "claude-opus-5-5", "at": "2026-11-09T12:26:00+01:00",
+          "inputs": ["signals", "reference-data", "dossier", "overnight-facts"], "p": 0.8,
+          "reason": "No matching liquid market (peace-talks-by-date markets about 0.95 used only as a ceiling). Model: P(held on 10 Nov) = 1 - 0.069 = 0.93; P(same-room trilateral session on day one reported as such | held) = 0.85; 0.93 x 0.85 = 0.79; EU/E3 presence (format risk) and the Kremlin's reaffirmed trilateral format roughly cancel, slight lift to 0.80." },
+        { "role": "outsider", "model": "claude-sonnet-5-5", "at": "2026-11-09T12:26:00+01:00",
+          "inputs_blind": ["own-research", "overnight-facts"], "at_blind": "2026-11-09T12:26:00+01:00", "p_blind": 0.8,
+          "reason_blind": "Talks confirmed for 10-11 Nov with the Kremlin reaffirming a mainly trilateral format, and earlier 2026 rounds opened with a trilateral session on day one; day one could still be bilateral shuttle contacts or slip to 11 Nov.",
+          "inputs": ["own-research", "overnight-facts", "signals"], "p": 0.8,
+          "reason": "Only generic 'peace talks by date' markets at about 0.95-0.96 that do not match the claim; estimate stands." }
+      ],
+      "combined": 0.7961,
+      "calibrated": 0.8875,
+      "combination": {
+        "method": "calibrated",
+        "weights": { "base-rate": 1, "evidence": 1, "adversarial": 1, "anchor": 1, "outsider": 1 },
+        "platt": { "a": 0.1806, "b": 1.3834 },
+        "version": "2026-11-09"
+      },
+      "spread": 0.02,
+      "market": null,
+      "market_search": {
+        "at": "2026-11-09T12:25:00+01:00",
+        "checked": ["markets.mjs search \"Russia Ukraine talks November\" (no output within 30 s)"],
+        "note": "No market on a trilateral session on 10 Nov; the morning record found only Polymarket 'peace talks by 15/30 Nov' (about 0.95), a different question."
+      },
+      "red_team": "No decisive fact found: TASS at 07:52Z still gives 10-11 Nov with Medinsky and Umerov leading, and nothing on postponement, venue change or a delegation not travelling. The likeliest failure is a day one of bilateral meetings with the mediator and the Europeans behind closed doors, with the first confirmed three-way plenary reported only on 11 Nov; the reviewer suggested about 0.83-0.85, the calibrated figure is kept as the rule requires."
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "splash247.com (HTTP 403, refuses scripted reading)",
+      "markets.mjs (no output within 30 s)"
+    ]
+  }
+}
