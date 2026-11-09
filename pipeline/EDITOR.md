@@ -110,6 +110,10 @@ Combine by the geometric mean of odds of all five (`combined`). If `pipeline/cal
 
 *(v5)* **Research when the forecasters disagree.** If the five final estimates span more than `v5.research_spread` (15 points), one research agent gets the question "which fact would settle the difference?" (from the forecasters' reasons, not their numbers), looks for it (at most 6 searches) and records `forecast.research {at, question, finding, sources}`. If it finds a new decisive fact, the five forecasters rerun with it (earlier numbers in `rounds`); if not, the spread stands and the basis line says the evidence is mixed. Claims with a spread of 15 points or more scored 0.170 against 0.140 for the rest: they need the extra work, not a rounder number.
 
+### 4a. Shadow trials *(from 9 November 2026)*
+
+Claims in the planning file may carry `forecast.shadow` (PLANNER step 11: a sequential researcher, other vendors' models). Copy it into the edition unchanged. It is never one of `forecast.agents`, never part of `combined`, `calibrated` or the published probability, and is not mentioned in the report or its basis line. If the overnight check finds something material and the five forecasters rerun for a claim, give the same new facts to the claim's sequential researcher as one more step (no new search): it rewrites its belief state, the trace gains a step, and `p`, `at` and `steps` are updated; rerun the external providers on the dossier with the new facts added. Every shadow figure must carry a time before the freeze. The accuracy page scores them beside the published figure; none goes live before it beats that figure by `v6.backtest_min_gain` on `v6.backtest_min_test` later claims, and that decision is the publisher's.
+
 ### 4b. Rules from method version 5 (edition No. 13 on)
 
 These come from the first 132 resolved claims (accuracy page; analysis of 1 November 2026). The validator enforces them.
