@@ -444,6 +444,18 @@ for (const ed of editions) {
     });
     if (neg.length > (cfg.negative_stories_max ?? 3)) err(w, `${neg.length} stories report that something did not happen (main claim below 50% or a negative headline): ${neg.map((x) => x.id).join(', ')}; at most ${cfg.negative_stories_max}. Lead each story with something that happens that day (EDITOR step 2, "Report what happens").`);
   }
+  // From config.open_questions.from (publisher's decision, 9 November 2026): ask the open question, not the safe one.
+  const OQ = cfg.open_questions || {};
+  if (ed.number >= (OQ.from ?? Infinity)) {
+    const conf = (c) => Math.max(c.probability, 1 - c.probability);
+    const easy = (ed.stories || []).filter((st) => { const m = (st.claims || [])[0]; return m && !isInterval(m) && conf(m) >= OQ.easy_main_threshold - 1e-9; });
+    if (easy.length > OQ.easy_main_max) err(w, `${easy.length} stories lead with a near-certain claim (${Math.round(OQ.easy_main_threshold * 100)}% or more either way): ${easy.map((x) => x.id).join(', ')}; at most ${OQ.easy_main_max}. Lead with the question a reader actually asks (who wins, how much, how a vote goes, what is decided); reframe the claim, do not drop the story (EDITOR step 2, "Ask the open question").`);
+    for (const st of ed.stories || []) for (const c of (st.claims || []).slice(1)) {
+      if (isInterval(c) || c.derived || conf(c) < OQ.sure_claim - 1e-9) continue;
+      const ob = c.forecast?.open_because;
+      if (!ob || !nonEmpty(ob.why) || !/^https?:\/\//.test(ob.source || '')) err(`${w} claim ${c.id}`, `${Math.round(c.probability * 100)}%: a secondary claim this sure says nothing to the reader and only flatters the score. Drop it, or give forecast.open_because {why, source} showing that the question is genuinely open (someone credible expects or demands it, with a URL).`);
+    }
+  }
   checkPhotos(ed, w);
   { let need = null; for (const m of cfg.method_versions || []) if (m.version >= 3 && ed.number >= m.from) need = m.version;
     if (need !== null && ed.method_version !== need) err(w, `method_version: ${need} required for this edition`); }

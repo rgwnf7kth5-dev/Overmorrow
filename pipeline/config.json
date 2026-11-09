@@ -198,5 +198,13 @@
     "backtest_min_gain": 0.002
   },
   "positive_from": 15,
-  "negative_stories_max": 3
+  "negative_stories_max": 3,
+  "open_questions": {
+    "_note": "Publisher's decision, 9 November 2026: about a third of all claims were 90% sure or more, and they flattered the score. The accuracy page and each edition's results lead with open questions (band); near-certain claims are shown apart. From edition `from` at most easy_main_max stories may lead with a claim of 90% or more (either way), and every other claim at or beyond sure_claim needs forecast.open_because, a sourced reason the question is genuinely open.",
+    "band": [0.2, 0.8],
+    "from": 22,
+    "easy_main_threshold": 0.9,
+    "easy_main_max": 2,
+    "sure_claim": 0.95
+  }
 }

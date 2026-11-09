@@ -26,6 +26,7 @@ const T = {
     results: 'Results',
     spider: 'Search the paper',
     wentOurWay: (h, n) => `${h} of ${n} scored calls went our way`,
+    openWay: (h, n, b) => `Open questions (20–80%): ${h} of ${n}, Brier ${b}`,
     noScored: 'No scored claims yet',
     brierNote: (b) => `Brier score ${b} (lower is better; 0.250 = always guessing 50%)`,
     awaiting: (n, v) => `${n} awaiting result${v ? `, ${v} void` : ''}`,
@@ -55,7 +56,7 @@ const T = {
       how: 'Each claim gets a Brier score: the squared difference between our probability and the outcome (1 if it came true, 0 if not). Lower is better. A forecaster who always says 50% scores 0.250. We also keep a log score, which punishes confident misses more heavily, and a calibration chart, which compares our stated probabilities with how often those claims came true.',
       notYet: 'not yet checked',
       small: (n, ev, lo, hi) => `<b>Small sample.</b> ${n} resolved claims from ${ev} running stories. Several claims on one election, or a week of claims on one negotiation, are not independent tests, so the 90% interval of the Brier score, which resamples whole stories, is ${lo}–${hi}. Differences of a few hundredths mean nothing yet.`,
-      hardH: 'What the headline figure hides', hardNote: 'We choose our own questions, and an easy question flatters any score. The hard questions are those we put between 15 and 85%. The baseline is fixed in advance and needs no research: it expects things to continue as announced, at the rate at which they have done so up to that morning. The single analyst is one forecaster on their own, the role named in advance in the settings. Each row compares us on the same claims.', hardCols: ['Test', 'Claims', 'Our Brier', 'Benchmark', 'Skill'], hardRows: { hard: 'Hard questions (15–85%) against a coin toss', base: 'All claims with a clear status quo against the baseline', analyst: (r) => `All full records against one analyst (${r})`, v6: 'The same, method version 6 and later only' },
+      hardH: 'What the headline figure hides', hardNote: 'We choose our own questions, and an easy question flatters any score. The open questions are those we put between 20 and 80%. The baseline is fixed in advance and needs no research: it expects things to continue as announced, at the rate at which they have done so up to that morning. The single analyst is one forecaster on their own, the role named in advance in the settings. Each row compares us on the same claims.', hardCols: ['Test', 'Claims', 'Our Brier', 'Benchmark', 'Skill'], hardRows: { hard: 'Open questions (20–80%) against a coin toss', base: 'All claims with a clear status quo against the baseline', analyst: (r) => `All full records against one analyst (${r})`, v6: 'The same, method version 6 and later only' },
       auditH: 'Independent audit of results', auditNote: 'Our system writes its forecasts and also records their results. So a fixed tenth of the results, picked by a hash and not by anyone’s choice, is settled again by a separate agent that cannot see the recorded outcome. Where the two differ, the result is reviewed and any correction is shown.', auditCols: ['', 'Results'], auditRows: ['In the sample', 'Audited', 'Audit agrees', 'Audit differs', 'Audit could not settle it'], auditEmpty: 'The first audit is still to come.',
       runH: 'What a run costs', runNote: 'Recorded by each morning run from method version 6. Five forecasters earn their place only if they beat the single analyst and the baseline above by more than these runs cost.', runCols: ['', 'Average'], runRows: ['Editions recorded', 'Minutes per run', 'Agent runs', 'Web searches'], runEmpty: 'Recorded from method version 6.',
       verH: 'By version of the method', verNote: 'The method changes as we learn; each edition records the version it was made under, and old editions are never rescored under new rules. Only the latest version measures the method as it now stands.', verCols: ['Version', 'Editions', 'Claims', 'Events', 'Brier (90% interval)', 'Full forecaster record'],
@@ -64,6 +65,8 @@ const T = {
       decH: 'Timing or outcome?', decNote: 'For scheduled events each forecast is split into the chance that the event happens in the window and the outcome if it does. Scoring the two parts separately shows whether our misses come from the calendar or from the result.', decCols: ['Part', 'Claims', 'Brier'], decRows: ['Event happens in the window', 'Outcome, given it happened'],
       covH: 'What we missed', covNote: 'Each morning the resolver lists the significant events of the forecast day by a fixed procedure (an event counts when it appears in at least two of the reference lists) and marks whether the paper covered it, considered and dropped it, or missed it.', covCols: ['', 'Czech', 'Europe', 'World'], covRows: { covered: 'Covered', dropped: 'Considered, not selected', missed: 'Missed' }, covEmpty: 'Coverage is recorded from edition No. 5 on.',
       figs: ['claims resolved', 'Brier score (0.250 = coin toss)', 'calls that went our way', 'log score (0.69 = coin toss)'],
+      openH: 'Open questions', openNote: (lo, hi) => `The score that counts. We choose our own questions, and a claim we put near 0% or 100% (the Pope attends his own vigil) proves almost nothing. These are the claims we put between ${lo} and ${hi}%, where a forecast can be wrong.`, openFigs: ['open questions resolved', 'Brier score (0.250 = coin toss)', 'calls that went our way', 'skill against a coin toss'],
+      allNote: (n, b, h, e, eh) => `All ${n} claims together: Brier ${b}, ${h} went our way. Of them ${e} were near-certain (below 20% or above 80%), and ${eh} of those went our way; they are shown for completeness and say little about skill.`,
       calH: 'Calibration', cal: 'Each dot is a group of claims with similar probabilities. On the dashed line, our 70% calls come true 70% of the time. Dots below the line mean we were overconfident; above it, too cautious.',
       calCols: ['Forecast band', 'Claims', 'Average forecast', 'Came true'], axisX: 'Forecast probability', axisY: 'How often it came true',
       secH: 'By section', secCols: ['Section', 'Claims', 'Went our way', 'Brier'],
@@ -113,6 +116,7 @@ const T = {
     results: 'Výsledky',
     spider: 'Hledat v novinách',
     wentOurWay: (h, n) => `${h} z ${n} hodnocených tipů vyšlo`,
+    openWay: (h, n, b) => `Otevřené otázky (20–80 %): ${h} z ${n}, Brier ${b}`,
     noScored: 'Zatím žádné hodnocené predikce',
     brierNote: (b) => `Brierovo skóre ${b} (nižší je lepší; 0,250 = tip vždy 50 %)`,
     awaiting: (n, v) => `${n} čeká na výsledek${v ? `, ${v} neplatné` : ''}`,
@@ -142,7 +146,7 @@ const T = {
       how: 'Každé tvrzení dostane Brierovo skóre: druhou mocninu rozdílu mezi naší pravděpodobností a výsledkem (1, když se splnilo, 0, když ne). Nižší je lepší. Kdo vždy tipuje 50 %, má 0,250. Sledujeme i logaritmické skóre, které víc trestá sebejisté omyly, a kalibrační graf, který porovnává uvedené pravděpodobnosti s tím, jak často se tvrzení splnila.',
       notYet: 'dosud nevyhodnoceno',
       small: (n, ev, lo, hi) => `<b>Malý vzorek.</b> ${n} vyhodnocených tvrzení z ${ev} průběžných kauz. Několik tvrzení k jedněm volbám ani týden tvrzení o jednom vyjednávání nejsou nezávislé zkoušky, a 90% interval Brierova skóre, který převzorkovává celé kauzy, je proto ${lo}–${hi}. Rozdíly o pár setin zatím nic neznamenají.`,
-      hardH: 'Co souhrnné číslo skrývá', hardNote: 'Otázky si vybíráme sami a snadná otázka zlepší každé skóre. Těžké otázky jsou ty, kterým dáváme 15 až 85 %. Základní model je stanovený předem a nepotřebuje žádnou rešerši: čeká, že věci půjdou dál podle ohlášení, a to s četností, s jakou se tak do onoho rána dělo. Jeden analytik je jediný prognostik sám za sebe, role určená předem v nastavení. Každý řádek nás srovnává na stejných tvrzeních.', hardCols: ['Test', 'Tvrzení', 'Náš Brier', 'Srovnání', 'Dovednost'], hardRows: { hard: 'Těžké otázky (15–85 %) proti hodu mincí', base: 'Tvrzení s jasným stavem věcí proti základnímu modelu', analyst: (r) => `Úplné záznamy proti jednomu analytikovi (${r})`, v6: 'Totéž, jen metoda verze 6 a novější' },
+      hardH: 'Co souhrnné číslo skrývá', hardNote: 'Otázky si vybíráme sami a snadná otázka zlepší každé skóre. Otevřené otázky jsou ty, kterým dáváme 20 až 80 %. Základní model je stanovený předem a nepotřebuje žádnou rešerši: čeká, že věci půjdou dál podle ohlášení, a to s četností, s jakou se tak do onoho rána dělo. Jeden analytik je jediný prognostik sám za sebe, role určená předem v nastavení. Každý řádek nás srovnává na stejných tvrzeních.', hardCols: ['Test', 'Tvrzení', 'Náš Brier', 'Srovnání', 'Dovednost'], hardRows: { hard: 'Otevřené otázky (20–80 %) proti hodu mincí', base: 'Tvrzení s jasným stavem věcí proti základnímu modelu', analyst: (r) => `Úplné záznamy proti jednomu analytikovi (${r})`, v6: 'Totéž, jen metoda verze 6 a novější' },
       auditH: 'Nezávislý audit výsledků', auditNote: 'Náš systém píše předpovědi a sám zapisuje jejich výsledky. Pevnou desetinu výsledků, vybranou hashem a ne něčím rozhodnutím, proto znovu vyhodnocuje samostatný agent, který zapsaný výsledek nevidí. Když se oba liší, výsledek se přezkoumá a případná oprava se zobrazí.', auditCols: ['', 'Výsledky'], auditRows: ['Ve vzorku', 'Prověřeno', 'Audit souhlasí', 'Audit se liší', 'Audit nerozhodl'], auditEmpty: 'První audit teprve proběhne.',
       runH: 'Co běh stojí', runNote: 'Zapisuje každý ranní běh od metody verze 6. Pět prognostiků se vyplatí, jen když porazí jednoho analytika a základní model výše o víc, než tyto běhy stojí.', runCols: ['', 'Průměr'], runRows: ['Zapsaná vydání', 'Minut na běh', 'Spuštění agentů', 'Webových hledání'], runEmpty: 'Zapisuje se od metody verze 6.',
       verH: 'Podle verze metody', verNote: 'Metoda se mění podle toho, co se učíme; každé vydání nese verzi, podle které vzniklo, a stará vydání se podle nových pravidel nepřehodnocují. Metodu v dnešní podobě měří jen poslední verze.', verCols: ['Verze', 'Vydání', 'Tvrzení', 'Události', 'Brier (90% interval)', 'Úplný záznam prognostiků'],
@@ -151,6 +155,8 @@ const T = {
       decH: 'Termín, nebo výsledek?', decNote: 'U naplánovaných událostí se každá predikce dělí na pravděpodobnost, že se událost v daném okně uskuteční, a na výsledek, pokud se uskuteční. Samostatné hodnocení obou částí ukáže, zda se mýlíme v kalendáři, nebo ve výsledku.', decCols: ['Část', 'Tvrzení', 'Brier'], decRows: ['Událost se v okně uskuteční', 'Výsledek, pokud se uskutečnila'],
       covH: 'Co jsme přehlédli', covNote: 'Hodnotitel každé ráno pevným postupem sestaví seznam významných událostí předpovídaného dne (událost se počítá, když je aspoň ve dvou referenčních přehledech) a označí, zda ji noviny měly, zvažovaly a nevybraly, nebo přehlédly.', covCols: ['', 'Česko', 'Evropa', 'Svět'], covRows: { covered: 'Ve vydání', dropped: 'Zvažováno, nevybráno', missed: 'Přehlédnuto' }, covEmpty: 'Pokrytí se zaznamenává od vydání č. 5.',
       figs: ['vyhodnocených tvrzení', 'Brierovo skóre (0,250 = hod mincí)', 'tipů, které vyšly', 'log. skóre (0,69 = hod mincí)'],
+      openH: 'Otevřené otázky', openNote: (lo, hi) => `Skóre, které se počítá. Otázky si vybíráme sami a tvrzení, kterému dáme skoro 0 nebo 100 % (papež se zúčastní vlastní vigilie), nedokazuje skoro nic. Tady jsou tvrzení, kterým jsme dali ${lo} až ${hi} %, kde se předpověď může mýlit.`, openFigs: ['vyhodnocených otevřených otázek', 'Brierovo skóre (0,250 = hod mincí)', 'tipů, které vyšly', 'dovednost proti hodu mincí'],
+      allNote: (n, b, h, e, eh) => `Všech ${n} tvrzení dohromady: Brier ${b}, vyšlo ${h}. Z toho ${e} bylo téměř jistých (pod 20 % nebo nad 80 %) a vyšlo z nich ${eh}; uvádíme je pro úplnost, o dovednosti vypovídají málo.`,
       calH: 'Kalibrace', cal: 'Každý bod je skupina tvrzení s podobnou pravděpodobností. Na přerušované čáře se naše tipy na 70 % splní v 70 % případů. Body pod čarou znamenají přílišnou sebejistotu, nad ní přílišnou opatrnost.',
       calCols: ['Pásmo predikce', 'Tvrzení', 'Průměrná predikce', 'Splnilo se'], axisX: 'Predikovaná pravděpodobnost', axisY: 'Jak často se splnilo',
       secH: 'Podle rubrik', secCols: ['Rubrika', 'Tvrzení', 'Vyšlo', 'Brier'],
@@ -470,10 +476,11 @@ function editionMain(original, L, isLatest = false) {
   const byId = new Map(ed.stories.map((s) => [s.id, s]));
   const show = results.size > 0;
   const sum = summarise(scoredClaims([original]));
+  const openSum = summarise(openOnly(scoredClaims([original])));
   const total = claimsOf(original).length;
   const voids = [...results.values()].filter((r) => r.outcome === 'void').length;
 
-  const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
+  const scorebar = show ? `<div class="scorebar"><b>${L.results}</b><span>${sum ? L.wentOurWay(sum.hits, sum.n) : L.noScored}</span>${sum ? `<span>${L.brierNote(num3(sum.brier, L))}</span>` : ''}${openSum ? `<span>${L.openWay(openSum.hits, openSum.n, num3(openSum.brier, L))}</span>` : ''}<span>${L.awaiting(total - results.size, voids)}</span><span class="legend"><span>${L.scale[0]}</span><i aria-hidden="true"></i><span>${L.scale[1]}</span></span><small>${L.scaleNote}</small></div>` : '';
   const tone = (st) => storyTone(st, results);
   const fixesFor = correctionsFor(original.id, L === T.cs ? 'cs' : 'en');
   const photos = photosFor(original.id, L === T.cs ? 'cs' : 'en');
@@ -958,7 +965,7 @@ function honestBlocks(editions, L) {
   const full = m.filter((r) => typeof solo(r) === 'number');
   const v6 = full.filter((r) => methodVersion(r.edition, cfg) >= 6);
   const lines = [
-    line(A.hardRows.hard, m.filter((r) => r.probability >= 0.15 && r.probability <= 0.85), () => 0.5),
+    line(A.hardRows.hard, openOnly(m), () => 0.5),
     line(A.hardRows.base, m.filter((r) => statusQuoOf(r) !== 'unclear'), (r) => base.get(`${r.edition.id}:${r.id}`)),
     line(A.hardRows.analyst(esc(A.roles[role] || role)), full, solo),
     line(A.hardRows.v6, v6, solo),
@@ -970,6 +977,29 @@ function honestBlocks(editions, L) {
   const runs = editions.map((e) => e.meta?.run).filter((r) => r && Date.parse(r.finished_at) > Date.parse(r.started_at));
   out += `<h2>${A.runH}</h2><p>${A.runNote}</p>${runs.length ? tbl2(A.runCols, [[A.runRows[0], String(runs.length)], [A.runRows[1], String(Math.round(mean(runs.map((r) => (Date.parse(r.finished_at) - Date.parse(r.started_at)) / 60000))))], [A.runRows[2], String(Math.round(mean(runs.map((r) => r.agents || 0))))], [A.runRows[3], String(Math.round(mean(runs.map((r) => r.searches || 0))))]]) : `<p><i>${A.runEmpty}</i></p>`}`;
   return out;
+}
+
+/** Publisher's decision, 9 November 2026: lead with the open questions; near-certain claims shown apart. */
+function openOnly(rows) {
+  const [lo, hi] = loadConfig().open_questions?.band || [0.2, 0.8];
+  return rows.filter((r) => r.probability >= lo - 1e-9 && r.probability <= hi + 1e-9);
+}
+function openFigures(rows, sum, L) {
+  const A = L.acc;
+  const [lo, hi] = loadConfig().open_questions?.band || [0.2, 0.8];
+  const o = summarise(openOnly(rows));
+  const easy = rows.filter((r) => !openOnly([r]).length), e = summarise(easy);
+  const all = `<p class="note">${A.allNote(sum.n, num3(sum.brier, L), pctNum(sum.hits / sum.n, L), easy.length, e ? pctNum(e.hits / e.n, L) : '–')}</p>`;
+  if (!o) return all;
+  const sk = skill(o.brier, 0.25);
+  return `<h2>${A.openH}</h2><p>${A.openNote(Math.round(lo * 100), Math.round(hi * 100))}</p>
+<div class="figures">
+  <div><b>${o.n}</b><span>${A.openFigs[0]}</span></div>
+  <div><b>${num3(o.brier, L)}</b><span>${A.openFigs[1]}</span></div>
+  <div><b>${pctNum(o.hits / o.n, L)}</b><span>${A.openFigs[2]}</span></div>
+  <div><b>${sk === null ? '–' : `${sk >= 0 ? '+' : '−'}${pctNum(Math.abs(sk), L)}`}</b><span>${A.openFigs[3]}</span></div>
+</div>
+${all}`;
 }
 
 function accuracyPage(editions, L) {
@@ -997,12 +1027,7 @@ function accuracyPage(editions, L) {
     .map((r) => `<tr><td><a href="${link(L, `/edition/${r.edition.id}/`)}">${fmtDate(r.edition.edition_date, L, { day: 'numeric', month: 'short' })}</a></td><td>${esc(claimText(r))}</td><td class="n">${pctNum(r.probability, L)}</td><td>${L.stamp[r.outcome]}</td></tr>`).join('');
 
   return `${head}
-<div class="figures">
-  <div><b>${sum.n}</b><span>${A.figs[0]}</span></div>
-  <div><b>${num3(sum.brier, L)}</b><span>${A.figs[1]}</span></div>
-  <div><b>${pctNum(sum.hits / sum.n, L)}</b><span>${A.figs[2]}</span></div>
-  <div><b>${num3(sum.log, L).slice(0, -1)}</b><span>${A.figs[3]}</span></div>
-</div>
+${openFigures(rows, sum, L)}
 ${versionBlock(editions, rows, L)}
 ${honestBlocks(editions, L)}
 <h2>${A.calH}</h2><p>${A.cal}</p>

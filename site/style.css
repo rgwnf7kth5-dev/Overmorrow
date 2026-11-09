@@ -318,3 +318,4 @@ details:not([open]) > :not(summary){display:none!important}
 /* A multi-column block must never get its height from a stretched grid row (WebKit then spills text into extra
    columns beyond the page edge). */
 .grid>.story,.desks>.desk{align-self:start}
+.prose p.note{font-family:var(--sans);font-size:14px;color:var(--ink-3);margin:6px 0 18px}
