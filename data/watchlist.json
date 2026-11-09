@@ -4399,6 +4399,73 @@
      ],
      "note": "Weekly re-forecast. Rodríguez gave no date on 29 Oct; a new electoral council and court come first.",
      "note_cs": "Týdenní přepočet. Rodríguezová 29. října termín neuvedla; nejdřív přijde nová volební rada a soud."
+    },
+    {
+     "at": "2026-11-09T19:25:00Z",
+     "p": 0.09,
+     "combined": 0.088,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:20:00Z",
+       "p": 0.07,
+       "reason": "No class with n. Post-crisis transitions usually renew institutions before dating a vote, and the US-backed roadmap is in three steps: new TSJ (target mid-Dec), then a new CNE, then a declared vacancy that opens a 6-month window. All three must happen within about 11 weeks, and Rubio commits only to 'ideally 2027'. Upside: the CNE talks next week move fast.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:10:00Z",
+       "p": 0.07,
+       "reason": "Rubio (NYT 5 Nov) gives no date, says 'ideally' 2027; the roadmap is TSJ renewal (mid-Dec), then new CNE, then a declared vacancy that opens a 6-month window, so a dated calendar by 31 Jan needs all steps in ~11 weeks. Upside only if the 11 Nov talks fast-track the CNE.",
+       "inputs": [
+        "own-research",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-09T18:56:25Z",
+       "p": 0.09,
+       "reason": "Case against the board's 0.10 being too low: the US-backed roadmap is now explicit (TSJ by mid-December, CNE talks next week, then a vacancy declaration), a fourth round of talks opens 11 Nov and a Chavista government could pre-empt with an early date to control timing. Honest view: a dated calendar needs all three sequential steps inside 11 weeks over Christmas, Rubio says only 'ideally 2027' with no guarantee, the vacancy opens a six-month window rather than forcing an immediate date, and Rodríguez has refused a calendar twice; I shade slightly below the board.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:05:00Z",
+       "p": 0.1,
+       "reason": "Markets: Kalshi 'call election before 1 Jan 2027' 0.04, Polymarket 'scheduled by 31 Dec' 0.085 and 'by 31 Mar 2027' 0.35. Interpolating to 31 Jan gives about 0.10–0.13. Rubio's sequence (TSJ renewal, then new CNE, then declared vacancy) argues for the low end. Upside: CNE talks next week.",
+       "inputs": [
+        "signals",
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-09T19:30:00Z",
+       "p": 0.12,
+       "reason": "Post-Maduro transition; no date known to me, CNE rarely sets dates early; short window.",
+       "inputs": [
+        "own-research",
+        "reference-data"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Weekly re-forecast. Rubio told the NYT elections are 'ideally' in 2027 with no date; the US-backed sequence (new Supreme Court by mid-December, then a new CNE, then a declared vacancy opening a six-month window) makes a dated election by 31 January unlikely. Government-opposition talks resume on 11 November.",
+     "note_cs": "Týdenní přepočet. Rubio deníku NYT řekl, že volby by se měly konat „ideálně“ v roce 2027, datum ale neuvedl; postup podporovaný USA (nový Nejvyšší soud do poloviny prosince, poté nová volební rada a vyhlášení uprázdnění úřadu, které otevře šestiměsíční lhůtu) činí stanovení data voleb do 31. ledna nepravděpodobným. Jednání vlády s opozicí pokračují 11. listopadu.",
+     "market_note": "No matching market: Kalshi 'election called before 1 Jan' 0.04 and Polymarket 'scheduled by 31 Dec' 0.085 have earlier deadlines (read 2026-11-09T18:53Z)."
     }
    ],
    "result": null
@@ -7856,6 +7923,72 @@
      ],
      "note": "KHNP ended talks with Daewoo E&C and Doosan and on 3 Nov said it is drawing up a plan to pick a new contractor, with no name; a choice by January looks less likely.",
      "note_cs": "KHNP ukončila jednání s Daewoo E&C a Doosanem a 3. listopadu uvedla, že chystá plán na výběr nového dodavatele, jméno však nezveřejnila. Výběr do ledna je méně pravděpodobný."
+    },
+    {
+     "at": "2026-11-09T19:25:00Z",
+     "p": 0.07,
+     "combined": 0.073,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:20:00Z",
+       "p": 0.06,
+       "reason": "Replacing a megaproject's main contractor within three months is rare, and Korea Herald (2 Nov) reports that KHNP targets selection by July 2027. Lists of candidates or 'considering self-performance' do not count, so YES needs a surprise quick deal.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:10:00Z",
+       "p": 0.06,
+       "reason": "Korea Herald (2 Nov) says KHNP targets picking a new main contractor by July 2027, well past 31 Jan; KHNP says the 2029 start is unchanged, so there is no rush. Yes needs a quick renewed Daewoo-Doosan deal or a self-performance announcement.",
+       "inputs": [
+        "own-research",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-09T18:56:25Z",
+       "p": 0.08,
+       "reason": "Case for Yes: 'selected' counts without a signed contract, a renewed Daewoo-Doosan agreement counts, Seoul's trade ministry is pressing KHNP after an emergency review and Havlíček says plenty of firms are interested, so a quick patched-up deal is possible. Honest view: the Korea Herald reports KHNP's own target of selecting a new main contractor by July 2027, five months past the deadline, which the 4 Nov note did not factor in; KHNP says only that it is drafting a selection plan, and re-letting a multi-billion civil-works package in under three months is rare. Below the board's 0.15.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:05:00Z",
+       "p": 0.1,
+       "reason": "No market. Korea Herald (2 Nov) reports that KHNP aims to select a new main contractor by July 2027, well past the deadline. Yes would need a fast renewal with Daewoo–Doosan or a declaration that KHNP will build it itself.",
+       "inputs": [
+        "signals",
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-09T19:30:00Z",
+       "p": 0.07,
+       "reason": "KHNP naming a new civil contractor within 3 months after dispute is unlikely; criterion excludes talks.",
+       "inputs": [
+        "own-research",
+        "reference-data"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "The Korea Herald reported on 2 November that KHNP aims to select a new main construction contractor by July 2027, well after the 31 January deadline; the previous entry did not use this report.",
+     "note_cs": "Korea Herald 2. listopadu uvedl, že KHNP chce nového hlavního dodavatele stavby vybrat do července 2027, tedy dlouho po termínu 31. ledna; předchozí záznam tuto zprávu nezohlednil."
     }
    ]
   },
@@ -8271,6 +8404,72 @@
      ],
      "note": "Coalition plans to widen the sector tax by attaching other sectors, most likely banks, to the refinery bill by MPs' amendment (Echo24, ČT24, 7-8 Nov); budget committee chair Pikora opposes sector taxes. The extraordinary sitting on 13 Nov takes the bill; December floor time goes to the budget.",
      "note_cs": "Koalice chce rozšířit sektorovou daň o další odvětví, nejspíš banky, poslaneckým pozměňovacím návrhem k zákonu o dani rafinerií (Echo24, ČT24, 7.–8. 11.); předseda rozpočtového výboru Pikora sektorové daně odmítá. Mimořádná schůze 13. 11. má zákon na programu, prosincový čas pléna zabere rozpočet."
+    },
+    {
+     "at": "2026-11-09T19:25:00Z",
+     "p": 0.61,
+     "combined": 0.614,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:20:00Z",
+       "p": 0.63,
+       "reason": "Third readings that are voted pass 99% of the time (n=258), but the gov-bill reading slip class is 0.65 per meeting (own 6/7). The second reading on 13 Nov arrives without a coalition position on widening the tax, and December floor time goes to the budget; the core bill has the budget behind it.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:10:00Z",
+       "p": 0.64,
+       "reason": "Majority coalition bill counted in the budget, but there is still no coalition position on widening it to banks before the 13 Nov sitting, and December floor time goes to the budget; the third-reading timing is the risk.",
+       "inputs": [
+        "own-research",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-09T18:56:25Z",
+       "p": 0.63,
+       "reason": "Case for No: the 13 Nov second reading now comes without a coalition position on widening the bill to banks and other sectors, so the coalition may hold it open or return it to committee, the widening amendments would be fought over before third reading, Pikora opposes sector taxes, December floor time goes to the budget and third readings are completed at the listed meeting only 19% of the time this term. Case for Yes: the core 50% refinery tax is uncontested inside the coalition, applies to 2026 so the coalition needs it by year-end, has the votes, and keeping the bill clean would speed it; seven weeks remain. Slightly below the board's 0.66.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:05:00Z",
+       "p": 0.62,
+       "reason": "No market. Chamber reference data: 95–99% of government bills that reach a third-reading vote pass, and the coalition has 107 seats. The binding risk is timing: second reading on 13 Nov with no coalition line on widening the bill, and a December agenda crowded by the budget.",
+       "inputs": [
+        "signals",
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-09T19:30:00Z",
+       "p": 0.55,
+       "reason": "Coalition has 107/200 and government bills pass third reading ~99%, but timing slip risk before Dec 31 after Oct first reading.",
+       "inputs": [
+        "own-research",
+        "reference-data"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "Sector taxes were not discussed by the cabinet or the coalition council on 9 November (the finance minister was in Brussels) and coalition MPs are split on widening the levy to banks; the second reading on 13 November thus comes without an agreed coalition position, and the budget takes much of December's floor time.",
+     "note_cs": "Vláda ani koaliční rada 9. listopadu sektorové daně neprojednaly (ministryně financí byla v Bruselu) a koaliční poslanci se neshodnou na rozšíření odvodu na banky. Druhé čtení 13. listopadu tak přichází bez dohodnuté koaliční pozice a velkou část prosincového jednacího času zabere rozpočet."
     }
    ]
   },
@@ -9078,6 +9277,103 @@
      ],
      "note": "Opened after King Philippe refused De Wever's resignation on 6 Nov and sent the coalition back to budget talks.",
      "note_cs": "Otevřeno poté, co král Filip 6. listopadu odmítl De Weverovu demisi a poslal koalici zpět k rozpočtovým jednáním."
+    }
+   ]
+  },
+  {
+   "id": "cz-energy-act-price-regulation",
+   "scope": "cz",
+   "topic": "Energy prices",
+   "question": "Will the Chamber of Deputies pass in third reading, by 31 March 2027, the government's amendment to the Energy Act that allows the government to regulate electricity prices and cap producers' excess revenues?",
+   "question_cs": "Schválí Poslanecká sněmovna do 31. března 2027 ve třetím čtení vládní novelu energetického zákona, která vládě umožní regulovat ceny elektřiny a zastropovat nadměrné příjmy výrobců?",
+   "criterion": "Yes if the Chamber of Deputies' record of votes (psp.cz) shows that the government amendment to the Energy Act approved by the cabinet on 9 November 2026 (power to regulate electricity prices for customers and to cap and levy producers' excess revenues) passed in third reading, with or without amendments, on or before 31 March 2027 23:59 CET. Approval by the Senate or the president's signature is not required. No if it is rejected, withdrawn or not voted on in third reading by then.",
+   "criterion_cs": "Ano, pokud záznam hlasování Poslanecké sněmovny (psp.cz) ukáže, že vládní novela energetického zákona schválená vládou 9. 11. 2026 (pravomoc regulovat ceny elektřiny pro odběratele a zastropovat a odvést nadměrné příjmy výrobců) byla schválena ve třetím čtení, s pozměňovacími návrhy i bez nich, nejpozději 31. 3. 2027 ve 23:59 SEČ. Schválení Senátem ani podpis prezidenta se nevyžadují. Ne, pokud bude zamítnuta, stažena nebo o ní do té doby nebude ve třetím čtení hlasováno.",
+   "resolution_source": "https://www.psp.cz/sqw/hp.sqw?k=1005",
+   "opened": "2026-11-09",
+   "resolves_by": "2027-03-31T23:59:00+02:00",
+   "background": "On 9 November 2026 the cabinet approved an amendment to the Energy Act that would let the government, in a sharp price rise, regulate electricity prices for customers and cap producers' excess revenues, using a levy on them to cover the state's costs. Industry minister Karel Havlíček (ANO) said it is not an automatic regulation but a tool to react quickly. The coalition of ANO, SPD and Motoristé holds 107 of 200 seats.",
+   "sources": [
+    {
+     "title": "ČTK: Vláda schválila úpravu pro regulaci cen elektřiny a zastropování příjmů výrobců",
+     "url": "https://www.ceskenoviny.cz/zpravy/vlada-schvalila-upravu-pro-regulaci-cen-elektriny-a-zastropovani-prijmu-vyrobcu/2898989"
+    },
+    {
+     "title": "ČT24: Vláda schválila zákon, který při mimořádné situaci umožní regulovat ceny elektřiny",
+     "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/vlada-schvalila-zakon-ktery-pri-mimoradne-situaci-umozni-regulovat-ceny-elektriny-379442"
+    }
+   ],
+   "base_rate": {
+    "class": "government bills: third-reading passage once voted (10th term)",
+    "rate": 0.95,
+    "n": 19,
+    "source": "pipeline/reference-data/cz-chamber.json; timing, not passage, is the open part"
+   },
+   "history": [
+    {
+     "at": "2026-11-09T19:25:00Z",
+     "p": 0.37,
+     "combined": 0.368,
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:20:00Z",
+       "p": 0.25,
+       "reason": "Government bills almost always pass (first readings 47/47 this term, voted third readings 29/30), so timing decides it: there are about 140 days from cabinet approval to 31 Mar, including the budget-dominated December, the Christmas recess and a 60-day committee period, and gov-bill readings slip 0.65 per meeting. Havlíček presents it as a reserve tool with no urgency, so it is unlikely to be fast-tracked; ODS is not hostile, but quick passage under §90(2) is rare (3/47).",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:10:00Z",
+       "p": 0.35,
+       "reason": "Cabinet approved on 9 Nov and the bill now goes to the Chamber; government bills are never rejected (290/290 decisive first readings, 9th term) and ODS is open to it. But Havlicek and analysts frame it as a reserve tool with no need to activate soon, so no fast-track has been signalled, and 4.7 months covering the December budget is short for three readings plus a committee stage. A section 90(2) fast track (51 of 290 in the 9th term) or a renewed price spike from Hormuz would make passage likely.",
+       "inputs": [
+        "own-research",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-1",
+       "at": "2026-11-09T18:56:25Z",
+       "p": 0.48,
+       "reason": "Case for No: no legislative emergency or shortened deadlines were announced, Havlíček frames it as a precaution rather than an acute measure, the Chamber's winter agenda is crowded (budget, refinery tax and its widening, groundwater fee, TV fees, referendum), this coalition did not shorten the 60-day committee period for the TV-fee bill, government-bill readings are completed at the listed meeting only 19-47% of the time this term, and a first reading that slips to January pushes the committee period to March and the third reading past 31 Mar; ordinary Czech government bills take six to nine months, against a 4.7-month window. Case for Yes: the coalition has 107 of 200 seats, bills reaching a third reading pass 97-99%, ODS is not opposing in advance, energy prices are rising and the government wants the tool ready, so a December first reading with a 30-day committee period and second and third readings in the same February sitting is realistic. About even.",
+       "inputs": [
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-09T19:05:00Z",
+       "p": 0.25,
+       "reason": "No market. A standing-framework bill that Havlíček says is not needed soon, so a fast track (§90(2) or legislative emergency) is unlikely. The standard path (first reading, a committee period of about 60 days, then second and third reading) in 4.7 months, with the budget and licence-fee bills ahead in the queue, is tight. Only about 21% of government first readings on an agenda are dealt with per meeting. ODS is not hostile.",
+       "inputs": [
+        "signals",
+        "reference-data",
+        "union-of-facts"
+       ]
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-09T19:30:00Z",
+       "p": 0.55,
+       "reason": "Coalition majority; fast-tracked emergency-price law, but 4.5 months and possible opposition/obstruction or amendments; Czech gov bills pass ~99% eventually, timing the risk.",
+       "inputs": [
+        "own-research",
+        "reference-data"
+       ]
+      }
+     ],
+     "market": null,
+     "note": "New question. The cabinet approved the bill on 9 November. Government bills almost always pass once voted on, so timing decides: three readings and a committee stage in under five months, with the 2027 budget in December; the industry minister calls it a reserve tool that should not be needed soon, and no fast track has been signalled.",
+     "note_cs": "Nová otázka. Vláda návrh schválila 9. listopadu. Vládní návrhy při hlasování téměř vždy projdou, rozhoduje tedy čas: tři čtení a projednání ve výborech za necelých pět měsíců, přičemž prosinec zabere rozpočet na rok 2027. Ministr průmyslu označuje novelu za záložní nástroj, který by neměl být brzy potřeba, a zrychlené projednání nebylo avizováno."
     }
    ]
   }
