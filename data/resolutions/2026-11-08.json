@@ -229,6 +229,53 @@
       "note": "ČT24 (6 Nov, updated 16:01) reports the Chamber ended its sitting and postponed the vote on the bill tightening temporary protection for Ukrainians; the next sitting (13 Nov) is limited to the refinery tax.",
       "resolved_at": "2026-11-08T05:02:55+01:00",
       "held": false
+    },
+    {
+      "claim": "il-herzog-meet-1",
+      "outcome": "yes",
+      "evidence": "https://www.timesofisrael.com/liveblog_entry/herzog-announces-he-will-task-eisenkot-tomorrow-with-forming-new-government-after-meeting-him-and-netanyahu/",
+      "note": "Times of Israel (headline via search; the site blocks scripted reading) and Ynet ('After meeting Netanyahu, Herzog to task Eisenkot', 7 Nov) report that Herzog met both Netanyahu and Eisenkot in the weekend personal talks before announcing his choice on Saturday evening 7 Nov.",
+      "resolved_at": "2026-11-09T05:03:59+01:00",
+      "held": true
+    },
+    {
+      "claim": "il-utj-1",
+      "outcome": "no",
+      "evidence": "https://www.jns.org/news/israel-news/herzog-67-mks-recommend-eisenkot-46-netanyahu-mandate-to-be-assigned-sunday",
+      "note": "UTJ abstained from recommending anyone and only 'signalled openness to talks' (JNS, 6 Nov); an i24 item says a UTJ faction 'won't vote against' an Eisenkot government (a report, and abstention does not count); JPost's 7 Nov live blog has no named UTJ commitment to join or vote confidence.",
+      "resolved_at": "2026-11-09T05:03:59+01:00"
+    },
+    {
+      "claim": "us-ms-call-1",
+      "outcome": "no",
+      "evidence": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
+      "note": "AP results could not be read directly; NBC's results page (updated 7 Nov) still lists Mississippi Senate as 'Too close to call' (Colom 49.1%, Hyde-Smith 48.8%), and the Mississippi Free Press liveblog (updated 8 Nov) reports affidavit ballots still being counted with no AP call.",
+      "resolved_at": "2026-11-09T05:03:59+01:00"
+    },
+    {
+      "claim": "us-hegseth-out-1",
+      "outcome": "no",
+      "evidence": "https://www.ynetnews.com/category/3082",
+      "note": "Searches and news front pages show no statement by Trump, the White House or Hegseth on 6-7 Nov that Hegseth is leaving; the only recent Pentagon departures found are other officials, such as the Army secretary in September.",
+      "resolved_at": "2026-11-09T05:03:59+01:00"
+    },
+    {
+      "claim": "nz-election-party-vote-1",
+      "outcome": "yes",
+      "evidence": "https://www.rnz.co.nz/news/politics_election-2026/2453494/analysis-new-zealand-election-figures-tell-story-of-disenchantment-and-fracturing",
+      "note": "electionresults.govt.nz refused scripted reading (403); RNZ reports the preliminary count as Labour 710,330 party votes vs National 706,680 (1News: 'effectively locked in a dead heat'), so Labour has the most party votes; election held 7 Nov.",
+      "resolved_at": "2026-11-09T05:04:29+01:00",
+      "held": true
+    },
+    {
+      "claim": "nz-election-national-share-3",
+      "outcome": "measured",
+      "value": 29.21,
+      "evidence": "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+      "note": "electionresults.govt.nz refused (403) and RNZ/1News give only counts or 'around 29%'; the Wikipedia tabulation of the Electoral Commission preliminary result gives National 706,680 party votes = 29.21%, with the vote count matching RNZ's preliminary figure.",
+      "resolved_at": "2026-11-09T05:04:29+01:00",
+      "held": true,
+      "ambiguous": true
     }
   ]
 }

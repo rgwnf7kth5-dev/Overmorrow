@@ -140,8 +140,8 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 6,
-        "no": 54
+        "yes": 7,
+        "no": 58
       }
     },
     {
@@ -217,7 +217,7 @@
       "n": 6,
       "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
       "own_record": {
-        "yes": 4,
+        "yes": 5,
         "no": 5
       }
     },
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 6,
+        "yes": 7,
         "no": 1
       }
     },
@@ -317,7 +317,7 @@
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
         "yes": 1,
-        "no": 7
+        "no": 8
       }
     },
     {
@@ -703,6 +703,28 @@
       "own_record": {
         "yes": 0,
         "no": 2
+      }
+    },
+    {
+      "id": "own count: Air Force nightly drone counts at or above 150, nights to 25 Oct-6 Nov 2026",
+      "description": "Added by the resolver from claim ua-drones-5",
+      "base_rate": 0.54,
+      "n": 13,
+      "source": "data/dossiers/2026-11-09/ua-drones-5.md (Ukrinform relays of Air Force summaries; 3 Nov inferred from a total with missiles); class drone-count-above-threshold-night own record 0/1 too thin",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "other-scheduled (slip)",
+      "description": "Added by the resolver from claim za-iec-decl-2",
+      "base_rate": 0.138,
+      "n": 26,
+      "source": "node scripts/refdata/slip.mjs other-scheduled (prior 0.07, own 4/26)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
       }
     }
   ]

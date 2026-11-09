@@ -1,0 +1,116 @@
+{
+  "edition": "2026-11-09",
+  "checked_at": "2026-11-09T05:12:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 8, read 09 Nov 04:06 UTC; nine entries at that time)",
+    "ct24 (SOUHRN: Zásadní události neděle 8. listopadu, published 8 Nov 18:29; front page headings, links and 'Právě se děje' ticker, read 09 Nov 04:06-04:08 UTC)",
+    "ctk (ceskenoviny.cz front page and world section with timestamps, read 09 Nov 04:06-04:07 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading. WebSearch refuses apnews.com and reuters.com as domain filters; two unfiltered searches (AP top stories of 8 Nov; Reuters on the Eisenkot mandate) returned no usable top-stories list. List (b) is therefore represented only by wire citations inside Wikipedia entries (and the Reuters/AFP attribution inside the ct24 Israel piece), marked as such."
+  ],
+  "not_qualified": [
+    "Houthi missile intercepted over Riyadh damages Aramco Tower (wikipedia only, cited to Al Jazeera and BBC; planning dropped 'Yemen offensive' anyway)",
+    "Explosions on Qeshm after US projectiles (wikipedia, cited to Middle East Eye; counted under the us-iran event below together with ctk)",
+    "NVIDIA opens an investigation into Jensen Huang (wikipedia only, cited to NYT; not on ct24 or ctk as read)",
+    "Sudanese army detains ICC suspect Ahmed Haroun (wikipedia only, cited to AFP via Arab News)",
+    "Philadelphia pro-Palestine / pro-Israel protester clashes (wikipedia only, NBC)",
+    "Pope Leo XIV in Argentina calls for democracy and fight against corruption (ct24 only; not on the ctk front or the Wikipedia page as read). Covered anyway: pope-argentina",
+    "Europe to join Abu Dhabi talks, says Barrot (ct24 only; part of the ua-war case)",
+    "Taiyuan (Shanxi) apartment fire kills 14 (ct24 ticker only)",
+    "Macinka calls women hockey players 'mužatky' (ctk only)",
+    "Polish media praise two Kraków police officers; witnesses on first shots (ctk/ct24 colour pieces; part of the Kraków event)",
+    "CNN: Democrats' win encourages Central American migrants; employer monthly reporting may add data (ctk only)",
+    "Prague coalition talks STAN/SPOLU/Pirates (ct24 ticker, meeting on Mon 9 Nov; not an event of the day; cz-prague covers the case)",
+    "NASCAR Cup (Larson), F1 Brazil GP (Norris), football, NHL, tennis, women's hockey WC, U20 WC schedule with Russia (excluded: sport)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in earlier files, ct24 and ctk count as lists for non-Czech events too, and an AP/Reuters citation inside a Wikipedia entry counts as list (b), as in the 2026-11-08 file. The planning file was prepared 6 Nov 19:20 UTC, so anything that arose after that (Kraków, the Japan quake, the Egypt train) was not visible to it.",
+  "events": [
+    {
+      "title": "Kraków attack, day after: prosecutors investigate the Saturday shooting (six dead on the Main Market Square, 15 injured) as terrorism; square reopened in the evening; deputy PM Gawkowski warns of a wave of disinformation",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/mezi-obetmi-strelby-v-krakove-je-brit-ostatni-jsou-polaci-uvedly-urady-379395",
+      "status": "missed",
+      "note": "Nowhere in the planning file (prepared 6 Nov, before the attack). Not announced in advance; no sweep gap. Already a missed event in the 2026-11-08 file; the follow-ups (mourning to 11 Nov, charges, Independence Day security on 11 Nov) remain candidates for the next editions."
+    },
+    {
+      "title": "Israel: Herzog formally tasks Gadi Eisenkot with forming the government; 28 days, extendable by 14",
+      "scope": "world",
+      "lists": ["ct24", "ctk", "reuters (as cited in the ct24 piece; Reuters page not read)"],
+      "source": "https://www.ceskenoviny.cz/zpravy/izraelsky-prezident-herzog-poveril-eisenkota-sestavenim-nove-vlady/2898824",
+      "status": "covered",
+      "story": "il-mandate",
+      "note": "Lead story. Not on the Wikipedia day page as read."
+    },
+    {
+      "title": "Russian attacks on Ukraine: drone strike on rescuers at Komyshuvakha, one dead in Odesa and one near Dnipro, over half a million without power in Dnipropetrovsk region",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/rusove-na-ukrajine-zabili-dalsi-dva-lidi-napadli-i-zachranare-tvrdi-urady/2898862",
+      "status": "covered",
+      "story": "ua-war",
+      "note": "The edition covers the same day's attacks through the Air Force overnight drone count ahead of Abu Dhabi; it does not mention the deaths, the attack on rescuers or the power cuts."
+    },
+    {
+      "title": "US-Iran: explosions on Qeshm after US fire; Trump tells CNN that renewed attacks on Iran are very unlikely",
+      "scope": "world",
+      "lists": ["wikipedia", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/cnn-obnoveni-utoku-proti-iranu-je-podle-trumpa-velmi-nepravdepodobne/2899180",
+      "status": "covered",
+      "story": "us-iran",
+      "note": "Loose pairing: Wikipedia has the Qeshm explosions (Middle East Eye), ctk has Trump's CNN remark; both are the weekend US-Iran step the story covers. Trump's 'very unlikely' line sits against the story's 'US forces strike Iran again'; that is for the resolver."
+    },
+    {
+      "title": "Czech public media: Babiš and Havlíček refuse the five opposition leaders' call for a separate debate on ČT/ČRo funding; coalition council on Monday",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-odmitl-s-opozici-debatovat-o-ruseni-poplatku-za-ct-a-cro-379400",
+      "status": "covered",
+      "story": "cz-media",
+      "note": "The story's event is the opposition's withdrawal call in Nedělní debata; the lists lead with Babiš's refusal. Same dispute, same day."
+    },
+    {
+      "title": "Nedělní debata: Havlíček to present the government a plan for further energy price rises (caps on end prices via the regulated component) on Monday; SPD's Fiala says the coalition may discuss extending the sector tax beyond refineries",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/vlada-projedna-plan-pro-pripad-dalsiho-zdrazovani-energii/2898989",
+      "status": "covered",
+      "story": "cz-sector-tax",
+      "note": "Partly covered: cz-sector-tax covers the sector-tax half (banks left open, Havlíček in the debate). The energy price-cap plan itself was not in the planning file or the edition; it was announced on the day, not in advance. Fiala's remark on extending the tax is for the resolver against the bank-levy claim."
+    },
+    {
+      "title": "Kantar October voter model for ČT: ANO 29.5 %, STAN 23.5 %, five parties above the threshold",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/kantar-stan-s-235-vyrazne-stahl-naskok-ano-s-295-/2898977",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Czech voter model on Sunday (Kantar for ČT, STEM, Median)': 'No release announced; Kantar's last model for ČT was on 30 Aug.' The model did come out on Sunday. ČT airs the Kantar model in its Sunday programming, so a Sunday release was foreseeable; whether ČT announced it in advance was not verified. Worth a look at the ČT programme/press pages in the sweep."
+    },
+    {
+      "title": "Japan: magnitude 5.7 earthquake in central Japan (Shizuoka), at least 22-24 injured",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/japonsko-zasahlo-silne-zemetreseni-zraneni-utrpelo-nejmene-22-lidi-379390",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (an earthquake); no sweep gap. The lists differ on the injured (Wikipedia 22, ct24 24)."
+    },
+    {
+      "title": "Egypt: train derails near Giza (El Ayyat), seven dead and 125 injured",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_8",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (an accident); no sweep gap. Qualifies only through the AP citation inside Wikipedia; not on ct24 or ctk as read."
+    },
+    {
+      "title": "Mexico: Navy arrests 'El R2' (Rafael Álvarez Ayala), alleged leader of the CJNG cell Los Rs, in Zapopan; 19 others detained",
+      "scope": "world",
+      "lists": ["wikipedia", "ct24 (ticker 'Právě se děje', 9 Nov 03:01)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_8",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Weak qualification: ct24 has it only as a ticker item posted early on 9 Nov. A police operation, not announced in advance and of the crime kind the planning excludes; no sweep gap."
+    }
+  ]
+}

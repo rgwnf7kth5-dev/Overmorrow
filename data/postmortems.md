@@ -124,3 +124,9 @@ The Sakharov Prize went to the International Criminal Court and its officials, t
 
 ### 2026-11-08 run
 - Coverage · edition 2026-11-08: the Prague public-media rallies of Saturday 7 Nov (the 'Běh pro svobodná média' run for ČT and ČRo, and the Svatopluk march from Kongresové centrum to Kavčí hory against the fees) were missed. The planning found no Saturday demonstration because praha.eu (the magistrate's list of notified assemblies) and ČTK Předpokládané události could not be read. A march on a set route is notified in advance, so this is a sweep gap from failed reads. The magistrate's PDF of notified assemblies and the ČT24 Veřejnoprávně topic page were added to pipeline/sources.json as fallbacks.
+
+### 2026-11-09 run
+- py-ueno-3 (19%, came true): the BCP began guarantee payments to a second group of ueno depositors on 7 Nov, earlier than the staged timetable in the dossier implied. Missed fact: the central bank had signalled it would speed up payouts under the new president; the forecasters read the published schedule as binding. Lesson: for a regulator under new political pressure, treat a published payout timetable as a ceiling, not a floor.
+- Claim design · cz-prague-partner-9: `held` had to be interpreted because the announcement was never scheduled inside the window; for "by 23:59" claims with no scheduled event, use slip_class none.
+- Claim design · cz-sector-tax-banks-9: "did not rule out" was met by "Budeme o tom jednat" without the word banks; criteria about signals in a debate should name the words that count.
+- Claim design · us-iran-ship-2: the UKMTO notice gave no incident date; criteria keyed to the day an incident occurred should accept the day of the first report when no date is given.

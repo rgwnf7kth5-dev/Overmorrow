@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "pooled": {
-  "n": 23,
-  "rms_in_scales": 1.265,
+  "n": 26,
+  "rms_in_scales": 1.235,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -423,6 +423,22 @@
    "n": 1,
    "rms_surprise": 5.1
   },
+  "national-party-vote-share-preliminary-count-general-election": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-08",
+     "claim": "nz-election-national-share-3",
+     "consensus": 27.3,
+     "first": 29.21,
+     "centre": 27.88,
+     "scale_used": 2.61,
+     "source": "Equal average of the latest poll of five pollsters, fieldwork ending 19 Oct to 3 Nov 2026, Freshwater final poll included: 28.9, 29.5, 24.8, 26.5, 26.4 = 27.32."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 1.91
+  },
   "fr-acte-interior-ministry-count-2026": {
    "unit": "thousand",
    "records": [
@@ -454,6 +470,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.595
+  },
+  "za-anc-national-share-municipal": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-09",
+     "claim": "za-anc-share-3",
+     "consensus": 30.9,
+     "first": 30.76,
+     "centre": 30.62,
+     "scale_used": 0.35,
+     "source": "Provisional national ward-ballot tally, 14,298,063 valid votes, ANC 30.9% (esp.info aggregator of IEC data, modified 2026-11-07T03:58Z); no published forecast of the final share."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.14
+  },
+  "insa-afd-lead-over-union-bams": {
+   "unit": "pp",
+   "records": [
+    {
+     "edition": "2026-11-09",
+     "claim": "de-insa-gap-1",
+     "consensus": 8.5,
+     "first": 10,
+     "centre": 8.52,
+     "scale_used": 1.02,
+     "source": "No analysts' consensus exists for a poll. Mean of INSA's two latest readings on wahlrecht.de: TOM 31.10.2026 gap 9 (AfD 29, Union 20), online panel 03.11.2026 gap 8 (AfD 28, Union 20)."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 1.5
   }
  },
  "extra": {}
