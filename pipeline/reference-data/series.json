@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "pooled": {
-  "n": 26,
-  "rms_in_scales": 1.235,
+  "n": 28,
+  "rms_in_scales": 1.234,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -130,10 +130,19 @@
      "centre": 49.038,
      "scale_used": 0.28,
      "source": null
+    },
+    {
+     "edition": "2026-11-10",
+     "claim": "cz-diesel-max-10",
+     "consensus": 47.28,
+     "first": 46.7,
+     "centre": 47.01,
+     "scale_used": 0.349,
+     "source": "Last published cap (Cenový věstník 119/2026, valid 7-9 Nov); no analyst consensus exists"
     }
    ],
-   "n": 0,
-   "rms_surprise": null
+   "n": 1,
+   "rms_surprise": 0.58
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -502,6 +511,22 @@
    ],
    "n": 1,
    "rms_surprise": 1.5
+  },
+  "china-cpi-year-on-year-october-2026-nbs-first-release": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-10",
+     "claim": "cn-cpi-oct-10",
+     "consensus": 0.8,
+     "first": 0.7,
+     "centre": 0.796,
+     "scale_used": 0.23,
+     "source": "Lundgreen's Investor Insights with Yiyi Capital, 'Next Week in China: 9-13 November 2026', 6 Nov 2026 (own forecast, not a poll; no Reuters/Bloomberg poll readable)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
   }
  },
  "extra": {}
