@@ -1,0 +1,29 @@
+{
+  "edition": "2026-11-09",
+  "entries": [
+    {
+      "claim": "us-iran-strike-5",
+      "outcome": "no",
+      "evidence": "https://www.fox7austin.com/news/us-strikes-iran-air-defense-system-unveils-new-effort-monitor-tehrans-borders",
+      "note": "The only confirmed US strike (Qeshm air defense) was Friday 6 Nov, before the window; I found no reports of a strike on 7-8 Nov.",
+      "at": "2026-11-10T05:05:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "de-merz-aigner-2",
+      "outcome": "no",
+      "evidence": "https://www.zdfheute.de/politik/bundespraesidentin-aigner-koalition-merz-100.html",
+      "note": "ZDF (6 Nov) says Merz and Aigner would appear together on Monday and nothing was officially confirmed; I found no Merz quote from 7-8 Nov.",
+      "at": "2026-11-10T05:05:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "py-ueno-3",
+      "outcome": "unresolved",
+      "evidence": "https://www.emol.com/noticias/Internacional/2026/11/07/1216410/banco-ueno-paraguay-clientes.html",
+      "note": "EFE on 7 Nov reports BCP's Acosta describing a second tranche (G. 10 million up to 40 minimum wages), but it is unclear whether this was a new start-of-payments announcement in the window or part of the earlier plan.",
+      "at": "2026-11-10T05:05:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}

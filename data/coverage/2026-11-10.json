@@ -1,0 +1,154 @@
+{
+  "edition": "2026-11-10",
+  "checked_at": "2026-11-10T05:08:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 9, read 10 Nov 04:01 UTC; nine entries at that time)",
+    "ct24 (SOUHRN: Zásadní události pondělí 9. listopadu, published 9 Nov 18:27; front page headings and links, read 10 Nov 04:01 UTC)",
+    "ctk (ceskenoviny.cz front page, world section and the public-media dossier page with timestamps, read 10 Nov 04:01-04:02 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading. One unfiltered WebSearch for Reuters world news of 9 Nov returned only aggregator pages, no usable top-stories list. List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: Aliağa (Turkey) factory explosion, 17 dead (BBC); Booker Prize to M. John Harrison (Guardian); South Korean FTC fines Woowa Brothers and Coupang (AFP); Pitt Rivers Museum returns Naga remains (AFP). None on ct24 or ctk as read",
+    "Želechovice: Olomouc court declares the municipal vote invalid (someone entered the polling room overnight) (ct24 only, ČTK-sourced; not on the ctk front or world pages as read). Covered anyway: cz-zelechovice. Note for the resolver: ct24 reports the vote declared invalid, against the edition's headline 'upholds'",
+    "CDU/Merz nominate Ilse Aigner for federal president (ctk only). Covered anyway: de-president",
+    "Coalition council on ČT/ČRo funding: no outcome on ct24 or ctk as read; ct24 media section has an undated 'Babiš připustil možnost úpravy valorizačního vzorce'. Case covered: cz-media-funding",
+    "Nvidia investigates reports on Jensen Huang and an alleged Chinese spy (ct24 SOUHRN only; on the Wikipedia page of 8 Nov, not 9 Nov)",
+    "Orlová (Karviná): 23-car pile-up on ice, six lightly injured (ct24 only)",
+    "Republican congressman files impeachment resolution against Hegseth; Jeffries backs it (ctk only; planning dropped 'Massie's impeachment push')",
+    "Trump: the Iran war is militarily over (ctk only, 23:23; case us-iran)",
+    "Russia hits Ukrainian energy, Ukraine hits the Kirishi refinery; Ukraine claims record Russian losses; Russian delegation leaves for Abu Dhabi; EU looks for a further EUR 45bn for Ukraine (ctk only; counted under the ua-war event below where they belong to it)",
+    "Syria denies troops in Yemen (ctk only; planning dropped it); ECOFIN/Eurogroup preview (ctk only; dropped); Le Pen would beat Mélenchon, poll (ctk only); Trump says deportation policy may have been too harsh, expects to meet Putin and Xi at APEC (ctk only)",
+    "Cabinet: 68 bn CZK health investment to 2034, compulsory e-requests, disabled-employment contributions (ct24 only)",
+    "Polar vortex weakening (ct24 only); President Pavel awards Golden Rescue Crosses (ct24 only); Czech student wins junior astronomy olympiad (ct24 only); Pekárna Zelená louka denies charges (ct24 only)",
+    "Students' rally for ČT and ČRo (ctk live page; event of 10 Nov, not of the day)",
+    "Šťastný on Russian women at the U18 hockey WC, Muchová at the WTA Finals, football items (excluded: sport)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in earlier files, ct24 and ctk count as lists for non-Czech events too, and a Reuters/AP citation inside a Wikipedia entry counts as list (b). The planning file was prepared 7 Nov 18:38-19:40 CET and the edition frozen 8 Nov 05:31 CET, so the Sunday announcement of the energy-price plan was not visible to either.",
+  "events": [
+    {
+      "title": "Kraków attack: the gunman dies in hospital on Monday morning; prosecutors reject the interior minister's talk of far-right views, no evidence of an ideology yet",
+      "scope": "europe",
+      "lists": ["wikipedia", "ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/strelec-z-krakova-zemrel-v-nemocnici-379413",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Kraków Main Square shooting aftermath': 'Crime and deaths: excluded.'"
+    },
+    {
+      "title": "Czech cabinet approves an energy-law amendment letting it regulate end-user electricity prices and cap producers' excess revenues in a further price shock",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/vlada-schvalila-upravu-pro-regulaci-cen-elektriny-a-zastropovani-prijmu-vyrobcu/2898989",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance only on Sunday 8 Nov (Havlíček in Nedělní debata; flagged as not planned in the 2026-11-09 coverage file), after the planning file (7 Nov) and the freeze (8 Nov 05:31). Not a source gap: ct24 and ctk are swept; the timing beat the cycle."
+    },
+    {
+      "title": "Czech cabinet approves a constitutional bill on nationwide referendums (300,000 signatures, 35% turnout quorum; no votes on EU/NATO membership or defence); coalition is 13 votes short of the three-fifths majority",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/vlada-posila-snemovne-navrh-ustavniho-zakona-o-celostatnim-referendu/2897324",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance: it was on the Monday cabinet agenda (the same agenda the planning used for cz-drones; odok.gov.cz was blocked, morning check 3 said to check it) and ct24 ran a preview at 04:42 on 9 Nov ('Vláda projedná ústavní zákon o celostátním referendu'). Sweep gap: no readable source for the cabinet agenda."
+    },
+    {
+      "title": "Czech cabinet approves the anti-drone bill letting police and critical-infrastructure operators stop and destroy drones",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/vlada-podporila-navrh-na-obranu-infrastruktury-proti-dronum/2898612",
+      "status": "covered",
+      "story": "cz-drones"
+    },
+    {
+      "title": "Ukraine on the eve of Abu Dhabi: Trump tells CBS post-war Ukraine's borders will look 'a bit different'; Russian strikes on energy infrastructure; Russian delegation flies to Abu Dhabi",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/trump-hranice-povalecne-ukrajiny-budou-vypadat-trochu-jinak/2899256",
+      "status": "covered",
+      "story": "ua-war",
+      "note": "Loose pairing: both lists have Trump's CBS remark; the strikes and the delegation's departure are on ctk only. The edition covers the eve of the talks (drone count, delegations) but not Trump's border remark."
+    },
+    {
+      "title": "Germany ties the next EU budget to all member states sharing Ukraine's 2027 budget deficit (Merz letter to Costa, per FT and AFP)",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/nemecko-chce-aby-na-schodek-ukrajinskeho-rozpoctu-prispely-vsechny-zeme-eu/2899745",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (a leaked letter); no sweep gap."
+    },
+    {
+      "title": "Hungary: police detain Áron Orbán, brother of ex-PM Viktor Orbán, on suspicion of people smuggling; Orbán calls it an attack on himself",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/v-madarsku-byl-zatcen-expremieruv-bratr-viktor-orban-to-oznacil-za-utok-na-sebe/2899470",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (an arrest); no sweep gap."
+    },
+    {
+      "title": "France blames Iran's Revolutionary Guards for October cyberattacks on supermarket refrigeration; Barrot promises consequences and seeks EU sanctions",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/pariz-vini-iranske-gardy-z-utoku-na-chladici-zarizeni-v-obchodech/2899690",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance; no sweep gap."
+    },
+    {
+      "title": "Supreme Public Prosecutor Bradáčová files an extraordinary appeal against the acquittal in the SPD election-posters case; it goes to the Supreme Court",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/bradacova-se-dovolala-v-kauze-plakatu-spd/2899339",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance; no sweep gap."
+    },
+    {
+      "title": "Macinka apologises for calling Russian women hockey players 'mužatky' after criticism from players, coaches and politicians",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/macinka-se-omluvil-za-vyroky-o-hokejistkach/2899646",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (the remark was made on Sunday 8 Nov, after the freeze); no sweep gap. ctk-only on 8 Nov, so in not_qualified of the 2026-11-09 file."
+    },
+    {
+      "title": "Constitutive city councils elect new mayors: Richard Vereš (ANO) in Ostrava, Marek Zelenka (STAN) in Olomouc, Ondřej Tichý (ODS) in Pardubice, Jana Jílková in Prostějov",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/regiony/ostrava-a-olomouc-maji-nove-primatory-379421",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance: the constitutive sessions are called by the outgoing mayors and published on the city boards, and the coalition deals were reported beforehand (ctk regional desks). Sweep gap of low weight; the planning had only the Prague coalition (dropped)."
+    },
+    {
+      "title": "Russell Brand sentenced to ten and a half years for one rape and three sexual assaults",
+      "scope": "europe",
+      "lists": ["wikipedia", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/britsky-komik-russell-brand-byl-za-znasilneni-odsouzen-na-105-roku/2899599",
+      "status": "missed",
+      "note": "Nowhere in the planning file. A sentencing hearing is set in advance, so announced in advance (date not verified here). The planning excludes crime stories (as with Kraków and the bomb hoaxes), so it would most likely have been dropped; the gap is in visibility, not in the choice."
+    },
+    {
+      "title": "Paraguay: President Pedro Alliana appoints economist Jorge Schreiner to lead the central bank after the ueno collapse; the Senate approves him",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_9",
+      "status": "covered",
+      "story": "py-crisis",
+      "note": "Partly covered: py-crisis covers the same case on the day (central bank begins paying ueno savers who owe the bank) but not the appointment. Qualifies only through the Reuters citation inside Wikipedia; not on ct24 or ctk as read."
+    },
+    {
+      "title": "Cyprus: Christodoulides and Erhürman agree on two more crossings through the UN buffer zone and further negotiations",
+      "scope": "europe",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_9",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Whether the leaders' meeting was announced in advance was not verified (UN-hosted meetings usually are). Qualifies only through the Reuters citation inside Wikipedia; not on ct24 or ctk as read."
+    },
+    {
+      "title": "Russia: Novaya Gazeta closes its Moscow offices, citing pressure from authorities and security services",
+      "scope": "europe",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_9",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance; no sweep gap. Qualifies only through the AP citation inside Wikipedia; not on ct24 or ctk as read."
+    }
+  ]
+}
