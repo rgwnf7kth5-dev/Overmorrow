@@ -1,0 +1,478 @@
+{
+ "edition": "2026-11-12",
+ "frozen_at": "2026-11-10T12:46:00+01:00",
+ "revisions": [
+  {
+   "claim": "fr-iran-deny-12",
+   "probability": 0.72,
+   "kind": "forecast",
+   "reason": "By midday on Tuesday Iran had still not reacted, even after France summoned its ambassador and prosecutors sought arrest warrants for three Revolutionary Guards cyber officers. New ensemble: 0.55, 0.55, 0.78, 0.55, 0.70.",
+   "reason_cs": "Írán do úterního poledne nereagoval, přestože Francie předvolala jeho velvyslance a prokuratura požádala o zatykače na tři důstojníky kybernetické jednotky Revolučních gard. Nový soubor odhadů: 0,55; 0,55; 0,78; 0,55; 0,70.",
+   "sources": [
+    {
+     "title": "Reuters via Boursorama: Cyberattaques, l'ambassadeur d'Iran convoqué au Quai d'Orsay",
+     "url": "https://www.boursorama.com/actualite-economique/actualites/cyberattaques-l-ambassadeur-d-iran-convoque-au-quai-d-orsay-e66dc7a1d5374ebdfee5e59f915b4da4"
+    },
+    {
+     "title": "Iran International: France seeks arrest warrants for three IRGC cyber unit members",
+     "url": "https://www.iranintl.com/en/202611105429"
+    },
+    {
+     "title": "Al Jazeera: France summons Iran's ambassador over supermarket fridge sabotage",
+     "url": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage"
+    }
+   ]
+  },
+  {
+   "claim": "fr-iran-summon-12",
+   "probability": 0.13,
+   "kind": "forecast",
+   "reason": "France summoned Iran's ambassador on Tuesday morning, but by midday Tehran had answered neither with a statement nor with a summons of the French envoy, and in July its reciprocal summons came only six days later. New ensemble: 0.22, 0.27, 0.15, 0.18, 0.10.",
+   "reason_cs": "Francie v úterý ráno předvolala íránského velvyslance, Teherán však do poledne neodpověděl prohlášením ani předvoláním francouzského vyslance; v červenci přišlo jeho odvetné předvolání až po šesti dnech. Nový soubor odhadů: 0,22; 0,27; 0,15; 0,18; 0,10.",
+   "sources": [
+    {
+     "title": "Reuters via Boursorama: Cyberattaques, l'ambassadeur d'Iran convoqué au Quai d'Orsay",
+     "url": "https://www.boursorama.com/actualite-economique/actualites/cyberattaques-l-ambassadeur-d-iran-convoque-au-quai-d-orsay-e66dc7a1d5374ebdfee5e59f915b4da4"
+    },
+    {
+     "title": "Iran International: France seeks arrest warrants for three IRGC cyber unit members",
+     "url": "https://www.iranintl.com/en/202611105429"
+    },
+    {
+     "title": "Al Jazeera: France summons Iran's ambassador over supermarket fridge sabotage",
+     "url": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "ua-talks-day2-12",
+   "at": "2026-11-10T12:44:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:26:59+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:56+01:00",
+     "p_blind": 0.79,
+     "reason_blind": "Two-day trilateral rounds held a second day 3 of 3 (Laplace 0.8), negotiation-round slip about 0.12; day one opened trilateral and TASS says two days: p_held about 0.88, trilateral on day two about 0.9.",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.79,
+     "reason": "Signals hold only talks-by-date contracts (about 0.98), not a session on 11 Nov; unchanged.",
+     "p_held": 0.88,
+     "p_if_held": 0.9
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:55+01:00",
+     "p_blind": 0.8,
+     "reason_blind": "Trilateral format began on 10 Nov, all sides say two days, no cancellation; February rounds held trilateral sessions on day two.",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.84,
+     "reason": "All three earlier two-day trilateral rounds met again on day two and TASS confirms two days after the start; risk is a bilateral-only or vaguely reported day two."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at": "2026-11-10T12:27:05+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:59+01:00",
+     "p_blind": 0.8,
+     "reason_blind": "Day one opened trilaterally and TASS says two days, 3/3 earlier rounds held day two; risk of an abrupt end tonight, a bilateral or working-group day two, or vague reporting.",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.8,
+     "reason": "No matching market in the signals; slip rate 0.119 plus a bilateral-only day two remain the NO paths; unchanged.",
+     "p_held": 0.9,
+     "p_if_held": 0.89
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:21+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.8,
+     "reason": "No matching market (markets.mjs timed out; talks-by-date contracts not a match). Model: P(day two held) 0.89 x P(confirmed trilateral | held) 0.90 = 0.80."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-10T12:27:30+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:47+01:00",
+     "p_blind": 0.6,
+     "reason_blind": "Trilateral format began on day one and talks are said to last two days, but day two may split into bilaterals or end early, and a trilateral session must be confirmed.",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.6,
+     "reason": "Signals have no relevant market; blind view stands."
+    }
+   ],
+   "combined": 0.7742,
+   "calibrated": 0.8678,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2019,
+     "b": 1.3635
+    },
+    "version": "2026-11-10"
+   },
+   "spread": 0.24,
+   "market": null,
+   "market_search": {
+    "at": "2026-11-10T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Iran France ambassador\" (no output within 30 s)",
+     "markets.mjs search \"Abu Dhabi talks Russia Ukraine\" (no output within 30 s)",
+     "markets.mjs search \"Iran France ambassador summon\" (no output within 30 s)"
+    ],
+    "note": "No market on these claims; the morning record found only Polymarket talks-by-date contracts (about 0.98), a different question."
+   },
+   "research": {
+    "at": "2026-11-10T12:40:00+01:00",
+    "question": "Is a trilateral session explicitly planned for Wednesday 11 Nov, or is day two limited to working groups or bilaterals?",
+    "finding": "Umerov (9 Nov, before the morning freeze) and Interfax-Ukraine (10 Nov 09:54 EET) give trilateral talks on 10-11 Nov; no report of day two limited to bilaterals or of the round ending today. No new decisive fact; the spread stands.",
+    "sources": [
+     "https://en.interfax.com.ua/news/general/1233833.html",
+     "https://www.ukrinform.net/rubric-polytics/4183246-trilateral-talks-begin-in-abu-dhabi-umerov.html"
+    ]
+   },
+   "red_team": "No decisive fact found; likeliest failure is the round ending early or day two held only as bilateral or expert contacts. Below the display threshold (88% morning)."
+  },
+  {
+   "claim": "fr-iran-deny-12",
+   "at": "2026-11-10T12:44:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:26:59+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:56+01:00",
+     "p_blind": 0.55,
+     "reason_blind": "Iran usually rejects Western cyber attributions within days (Albania 2022), but has stayed silent about 30 hours including the Tuesday government briefing slot, with about 36 hours left.",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.55,
+     "reason": "Signals found no matching market; unchanged."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:55+01:00",
+     "p_blind": 0.6,
+     "reason_blind": "Iran routinely rejects Western cyber attributions and France escalated (ambassador summoned, warrants, EU sanctions), but no denial found by 12:30 and the weekly Baghaei briefing was on Monday.",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.55,
+     "reason": "Precedent and escalation make a rejection likely, but the Tuesday press conference passed with no denial and Tehran may only attack France without denying."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at": "2026-11-10T12:27:05+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:59+01:00",
+     "p_blind": 0.78,
+     "reason_blind": "Tehran normally rejects Western cyber attributions within a day or two and warrants plus a summons raise pressure, but about 20 hours of silence and a possible attack-without-denial reply keep it short of 0.85.",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.78,
+     "reason": "No market or third-party signal; unchanged."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:21+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.55,
+     "reason": "Model: rejection within a 2-day window about 0.75, discounted because the Tuesday government press conference passed without a denial; about 35 hours left and new escalation raise an MFA reply."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-10T12:27:30+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:47+01:00",
+     "p_blind": 0.7,
+     "reason_blind": "France summoned the ambassador and sought warrants and Iran habitually denies cyber accusations, though the weekly-briefing timing could miss the window.",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.7,
+     "reason": "Signals have no relevant market; blind view stands."
+    }
+   ],
+   "combined": 0.6325,
+   "calibrated": 0.7196,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2019,
+     "b": 1.3635
+    },
+    "version": "2026-11-10"
+   },
+   "spread": 0.23,
+   "market": null,
+   "market_search": {
+    "at": "2026-11-10T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Iran France ambassador\" (no output within 30 s)",
+     "markets.mjs search \"Abu Dhabi talks Russia Ukraine\" (no output within 30 s)",
+     "markets.mjs search \"Iran France ambassador summon\" (no output within 30 s)"
+    ],
+    "note": "No market on these claims; the morning record found only Polymarket talks-by-date contracts (about 0.98), a different question."
+   },
+   "research": {
+    "at": "2026-11-10T12:40:00+01:00",
+    "question": "Has any Iranian official commented on, or responded with a summons to, the French accusation, summons and arrest-warrant requests?",
+    "finding": "No Iranian comment and no Iranian summons of the French envoy found by about 12:30 CET; Reuters, AFP and France 24 report no Iranian reaction. No new decisive fact; the spread stands.",
+    "sources": [
+     "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage",
+     "https://www.france24.com/fr/france/20261110-cyberattaque-contre-des-frigos-la-france-dit-ne-s-interdit-rien-dans-la-riposte-contre-l-iran"
+    ]
+   },
+   "red_team": "No decisive fact found; the reviewer thinks silence by midday is weak evidence and suggested 78-80%; the calibrated figure is kept as the rule requires."
+  },
+  {
+   "claim": "fr-iran-summon-12",
+   "at": "2026-11-10T12:44:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:26:59+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:56+01:00",
+     "p_blind": 0.22,
+     "reason_blind": "When a European country summons Iran's ambassador, Iran answers with its own summons within days perhaps a third of the time; none by midday despite the summons and warrant requests.",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.22,
+     "reason": "Signals found no matching market; unchanged."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:55+01:00",
+     "p_blind": 0.3,
+     "reason_blind": "Tehran sometimes summons the other side's envoy in return but often answers with statements; no summons reported yet.",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.27,
+     "reason": "No base rate in the dossier and no summons by 12:25; Iran's interest in courting Europe during its war with the US argues for restraint."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at": "2026-11-10T12:27:05+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:59+01:00",
+     "p_blind": 0.15,
+     "reason_blind": "Reciprocal summons possible but no sign yet; Iran is courting Europeans and usually answers with statements; French mission staffing in wartime Tehran uncertain.",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.15,
+     "reason": "No signal found; unchanged."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-10T12:27:21+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.18,
+     "reason": "Model: P(reciprocal summons) about 0.4 x P(within the window given none so far) about 0.45 = 0.18."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at": "2026-11-10T12:27:30+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "at_blind": "2026-11-10T12:26:47+01:00",
+     "p_blind": 0.1,
+     "reason_blind": "Iran rarely mirrors a summons of the French ambassador within two days.",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.1,
+     "reason": "Signals have no relevant market; blind view stands."
+    }
+   ],
+   "combined": 0.1763,
+   "calibrated": 0.1301,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2019,
+     "b": 1.3635
+    },
+    "version": "2026-11-10"
+   },
+   "spread": 0.17,
+   "market": null,
+   "market_search": {
+    "at": "2026-11-10T12:27:00+01:00",
+    "checked": [
+     "markets.mjs search \"Iran France ambassador\" (no output within 30 s)",
+     "markets.mjs search \"Abu Dhabi talks Russia Ukraine\" (no output within 30 s)",
+     "markets.mjs search \"Iran France ambassador summon\" (no output within 30 s)"
+    ],
+    "note": "No market on these claims; the morning record found only Polymarket talks-by-date contracts (about 0.98), a different question."
+   },
+   "research": {
+    "at": "2026-11-10T12:40:00+01:00",
+    "question": "Has any Iranian official commented on, or responded with a summons to, the French accusation, summons and arrest-warrant requests?",
+    "finding": "No Iranian comment and no Iranian summons of the French envoy found by about 12:30 CET; Reuters, AFP and France 24 report no Iranian reaction. No new decisive fact; the spread stands.",
+    "sources": [
+     "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage",
+     "https://www.france24.com/fr/france/20261110-cyberattaque-contre-des-frigos-la-france-dit-ne-s-interdit-rien-dans-la-riposte-contre-l-iran"
+    ]
+   },
+   "red_team": "No decisive fact found; the reviewer cited Iran's July 2026 tit-for-tat summons, which came six days later, and suggested about 18%; the calibrated figure is kept as the rule requires."
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "psp.cz (connection reset)",
+   "thehill.com, punchbowl.news, ukmto.org, seatrade-maritime.com (HTTP 403)",
+   "tehrantimes.com, en.irna.ir (connection reset)",
+   "presstv.ir (TLS error)",
+   "markets.mjs (no output within 30 s)"
+  ],
+  "notes": "Recomputed only claims with material facts published after 05:16 CET: ua-talks-day2-12 (day one trilateral session held), fr-iran-deny-12 and fr-iran-summon-12 (France summoned Iran's ambassador, arrest warrants requested). No new events for 11 Nov merited a story. Findings: work/2026-11-12/afternoon.md."
+ }
+}
