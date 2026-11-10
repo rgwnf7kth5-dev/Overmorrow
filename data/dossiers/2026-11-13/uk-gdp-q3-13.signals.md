@@ -1,0 +1,15 @@
+# uk-gdp-q3-13 — signals
+- `node scripts/markets.mjs search UK GDP Q3` (2026-11-10T17:58Z): process killed (exit 137), no output.
+- `node scripts/markets.mjs search UK GDP growth quarter` (2026-11-10T17:58:05Z): no output (no markets).
+- `node scripts/markets.mjs search UK economy September 2026` (2026-11-10T17:58:32Z): only "UK 2026 annual inflation 3.5–3.9%" (Polymarket, Yes 0.5465) — no match.
+- `node scripts/markets.mjs search "UK GDP growth in Q3 2026"` (2026-11-10T17:58:58Z): Polymarket event "UK GDP growth in Q3 2026 (QoQ)?", https://polymarket.com/event/uk-gdp-growth-in-q3-2026-qoq-20260813112748100, all buckets close 2026-11-13T04:59Z. Yes prices:
+  - negative 0.0035 (vol 6,258, liq 1,342)
+  - 0%–0.1% 0.004 (vol 9,774, liq 1,155)
+  - 0.2%–0.3% 0.005 (vol 12,265, liq 1,097)
+  - 0.4%–0.5% 0.065 (vol 12,729, liq 734)
+  - 0.6%–0.7% 0.635 (vol 10,328, liq 642)
+  - 0.8%–0.9% 0.2385 (vol 5,721, liq 986)
+  - at least 1.0% 0.0045 (vol 2,091, liq 1,103)
+  - Question matches the quantity (UK Q3 2026 q/q GDP, ONS first estimate presumably) and the deadline; buckets, not a single claim, so `market` is left null. Thin liquidity (under USD 1,400 per bucket). Implied centre roughly 0.7%, consistent with the dossier consensus.
+- Published forecasts: RSM (about 13–14 Oct) Q3 0.4–0.5%; NIESR tracker (15 Oct) 0.7% (search-result headline); Continuum (15 Oct) "decent growth"; Bloomberg consensus for Q4 0.2% (via RSM). No November poll found. No bookmaker odds.
+- First WebSearch result list also surfaced the same Polymarket page (2026-11-10 ~17:56Z).

@@ -1,0 +1,53 @@
+# cz-sector-levy-13
+- **Claim:** Between 06:00 on Wed 11 Nov and 23:59 on Thu 12 Nov 2026 (Prague), a concrete proposal to extend the refinery windfall tax, or add a new sector levy, to banks or at least one other sector besides refining is made public by the government side: either the government or an MP of ANO, SPD or Motoristé files such an amendment to the refinery-tax bill (in the budget committee or in the Chamber's amendment system), or Babiš, Schillerová, Havlíček, Okamura, Macinka or a coalition club chair announces that the coalition has agreed on such a levy and names the sector(s).
+- **Criterion:** YES if, in the window, (a) a government or ANO/SPD/Motoristé MP amendment to the refinery-tax bill that taxes or levies banks, insurers, energy firms, telecom operators, retail chains, arms makers or any other sector besides refining is filed (budget-committee resolution, psp.cz amendment record, or reported by ČTK/ČT24/Novinky/Seznam Zprávy/HN/E15/Deník N/Echo24/Aktuálně as filed or sent to MPs), or (b) one of the named people says publicly that the coalition (or the coalition council / government) has agreed to such a levy and names at least one sector. NO if nothing of this happens in the window, including: statements that sector taxes are "being discussed", "options are being prepared" or "will be decided later"; opposition amendments (e.g. STAN's extension to fuel importers); the separate energy-act amendment allowing up to 90% skimming of excess electricity revenues in a declared crisis (already cabinet-approved, not a refinery-bill amendment); a voluntary arrangement with banks; or an amendment filed only after 23:59 on 12 Nov (e.g. tabled from the floor at Friday's second reading).
+- **Event window:** 2026-11-11T06:00:00+01:00 to 2026-11-12T23:59:00+01:00 (Europe/Prague). Occasions: budget committee session on the bill (Wed 11 Nov), a rescheduled coalition council (date not announced), any pre-sitting presentation before Friday's second reading.
+- **Written at:** 2026-11-10T18:05Z
+
+## Schedule
+- Budget committee adjourned the bill on 27 Oct "do 11. listopadu" for amendments — ČTK via Respekt https://www.respekt.cz/informacni-servis/snemovni-rozpoctovy-vybor-prerusil-debatu-o-zavedeni-mimoradne-dane-na-rafinerie-2026-10-27-16-59 (as cited in data/dossiers/2026-11-12/cz-refinery-committee-12.md, read 2026-11-09T17:52Z; not re-read tonight).
+- Extraordinary Chamber sitting Fri 13 Nov, second reading, limited to the refinery tax "a případně další sektory" — ČTK https://www.ceskenoviny.cz/zpravy/snemovna-ukoncila-tri-tydny-trvajici-schuzi-ktera-zacala-v-puli-rijna/2898131 (as cited in data/dossiers/2026-11-10/cz-bank-tax-agreed-10.md, read 2026-11-07T17:57Z; not re-read).
+- The 9 Nov coalition council did not discuss sector taxes; no new date for that discussion found tonight (ČT24 coalition-council topic page and ČTK, Echo24, E15, Deník N checked 2026-11-10T17:56–17:57Z).
+- psp.cz unreachable (connection reset, 2026-11-10T17:57Z): committee invitation and amendment records not checked.
+- Procedure (general, not re-verified tonight): amendments in second reading are formally tabled from the floor in the detailed debate; MPs commonly upload the text to the Chamber's system beforehand. This claim therefore asks whether a proposal is made public before the sitting, not whether it is formally tabled.
+
+## Facts
+- Deník N, 10 Nov: coalition did not discuss sector taxes at all on Monday, contrary to plan; the plan's fate is uncertain; taxing high-profit sectors "je ale zatím v nedohlednu" — https://denikn.cz/2252198/sektorova-dan-je-v-mlze-pred-klicovou-schuzi-o-ni-vladni-koalice-vubec-nejednala/ (published 2026-11-10 16:43+01:00, read 2026-11-10T17:56Z; paywalled, lead only) "Vládní koalice o něm totiž v pondělí oproti předchozímu plánu nakonec vůbec nejednala."
+- Echo24, 9 Nov: minister Šťastný (Motoristé): neither cabinet nor coalition council would deal with sector taxes that day because Schillerová was at ECOFIN in Brussels; "Je pravděpodobné, že otázku rozpočtu a těchto věcí budeme řešit někdy jindy" — https://www.echo24.cz/a/HVPuc/zpravy-ekonomika-sektorove-dane-podle-stastneho-dnes-vlada-ani-koalice-projednavat-nebudou (published 2026-11-09 13:04+01:00, read 2026-11-10T17:56Z).
+- E15, 9 Nov: Havlíček (ANO) on ČT's Sunday debate: "Na koaliční radě si řekneme, jestli cestou sektorových daní vůbec půjdeme"; the 2023-style windfall tax is not in play; SPD club chief Radim Fiala: "Dosud s námi oficiálně nikdo nehovořil"; Okamura warned a bank-asset tax could raise fees and mortgage costs; Kupka (ODS) and Rakušan (STAN) against; Czech Banking Association against — https://www.e15.cz/domaci/politika/zdaneni-bank-je-ve-hre-pripustil-havlicek-opozice-varuje-pred-rychlym-schvalenim-zmen-1437199 (published 2026-11-09 13:20+01:00, read 2026-11-10T17:56Z).
+- ČTK, 9 Nov (citing HN): Schillerová was to bring the council a first proposal of higher levies on "banky, pojišťovny, energetické firmy, mobilní operátoři, obchodní řetězce nebo obranný průmysl" — https://www.ceskenoviny.cz/zpravy/koalice-probere-ruseni-poplatku-za-ct-a-cro-mozna-i-sektorove-dane/2899213 (published 2026-11-09 00:05, read 2026-11-10T17:55Z).
+- Seznam Zprávy, 9 Nov: Hrnčíř (SPD): "na stole zatím nic konkrétního není"; Pařil (ANO, committee vice-chair) against a bank tax now; Foldyna (SPD) against banks, open to up to 90% on arms makers; Motoristé against — https://www.seznamzpravy.cz/clanek/domaci-politika-vlada-resi-koho-zdani-jeji-poslanci-se-neshodnou-320073 (as cited in data/dossiers/2026-11-12/cz-refinery-banks-12.md, read 2026-11-09T17:53Z; not re-read).
+- Budget committee chair Pikora (Motoristé): "každá sektorová daň je podle ekonomické teorie špatně" — Echo24 https://m.echo24.cz/a/HJyeF/zpravy-ekonomika-vlada-ma-pristi-tyden-resit-sektorove-dane-je-to-spatne-ekonomicka-teorie-pikora (as cited in cz-bank-tax-agreed-10.md; not re-read).
+- Seznam Zprávy, 6 Nov: intention was "rovnou příští týden novinku přilepit ve Sněmovně k již rozjetému zákonu o zdanění rafinérií" — https://www.seznamzpravy.cz/clanek/ekonomika-finance-uroky-rostou-banky-bohatnou-a-babis-ma-problem-319813 (as cited in cz-refinery-banks-12.md; not re-read).
+- Deník N, 6 Nov: Babiš wants up to CZK 60bn from a new tax; Schillerová "Žádnou z možností předem nevylučuji" — https://denikn.cz/2248469/babis-chce-z-mimoradne-dane-ziskat-az-sedesat-miliard-bruselu-by-to-ale-nestacilo/ (as cited in cz-bank-tax-agreed-10.md; not re-read).
+- Separate measure (does not count): cabinet-approved energy-act amendment allowing the state in a price crisis to skim up to 90% of electricity producers' excess revenue above a cap; goes to the Chamber — Echo24 https://www.echo24.cz/a/HCGcK/zpravy-ekonomika-stat-by-mohl-na-odvodech-vybrat-az-devadesat-pct-nadmernych-prijmu-vyrobcu-elektriny (published 2026-11-10 15:07+01:00, read 2026-11-10T17:56Z) "Odvod by přitom mohl činit až 90 procent nadměrného příjmu".
+- Headlines seen only (Google News RSS, read 2026-11-10T17:55Z, not opened): HN 9 Nov "Vláda zvažuje další sektorové daně. Dražší zboží i služby včetně hypoték by nakonec zaplatili zákazníci"; Reflex 9 Nov "Babišova daňová hydra vrátí drahotu. Schillerová zdaní banky, zaplatíte to vy". No item dated 10 Nov reports a coalition agreement or an amendment text.
+- Precedent 2022: the Fiala coalition put its windfall tax (banks, energy, refineries) through as an MPs' amendment rather than a government bill, and its parties were still disputing rate and bank scope days before — ČT24 1 Nov 2022 https://ct24.ceskatelevize.cz/clanek/domaci/pro-vic-bank-ci-s-jinou-sazbou-koalice-se-nedohodla-na-finalni-podobe-valecne-dane-14542 (read 2026-11-10T17:57Z) "nám jako koalici nezbyl jiný způsob, než jít cestou pozměňovacího návrhu".
+
+## Base rate
+- `coalition-deal-announced-short-window` (pipeline/reference-classes.json): prior 0.3, own record 1 yes / 11 no.
+- `unscheduled-announcement-within-one-day`: own record 7 yes / 58 no (a two-day window here, and no date set for the council).
+
+## Schedule slip
+- `node scripts/refdata/slip.mjs other-scheduled` → 0.075 (prior 0.07, own 5/66) [estimate]. The decisive occasion (coalition council on sector taxes) has no fixed date; the committee session on 11 Nov is scheduled. Signs of slip: council postponed on 9 Nov; Deník N 10 Nov says the plan is uncertain; Babiš may be in Dublin on 12 Nov (EPC; desk sweep cz.json, not confirmed).
+
+## Risks
+- Coalition could wait and table the amendment only from the floor on Friday (NO here) — the main design risk.
+- A leader may say "we agreed in principle to tax banks, details later": counts only if the statement says the coalition agreed and names a sector.
+- An individual SPD MP (e.g. Foldyna on arms makers) filing a solo amendment counts under (a) even without coalition agreement.
+- Reporting may describe "a draft circulating" without saying it was filed or agreed — resolver needs explicit filing/sent-to-MPs or an agreement statement.
+- psp.cz unreachable for verification.
+
+## Watchlist consistency (no probabilities)
+- cz-bank-levy-bill requires a cabinet-approved draft law on banks by 31 Jan 2027; an MPs' amendment to the refinery bill would not meet it; the board's 9 Nov note already says the coalition had no position. A YES here (banks via MP amendment) would not resolve that question.
+- cz-refinery-tax-passed: board notes risk that widening delays the bill; tonight's facts (no coalition discussion, Friday second reading still single-item) point towards a bill without a sector extension on Friday unless something changes on 11–12 Nov.
+
+## Sources
+- https://denikn.cz/2252198/sektorova-dan-je-v-mlze-pred-klicovou-schuzi-o-ni-vladni-koalice-vubec-nejednala/
+- https://www.echo24.cz/a/HVPuc/zpravy-ekonomika-sektorove-dane-podle-stastneho-dnes-vlada-ani-koalice-projednavat-nebudou
+- https://www.e15.cz/domaci/politika/zdaneni-bank-je-ve-hre-pripustil-havlicek-opozice-varuje-pred-rychlym-schvalenim-zmen-1437199
+- https://www.ceskenoviny.cz/zpravy/koalice-probere-ruseni-poplatku-za-ct-a-cro-mozna-i-sektorove-dane/2899213
+- https://www.echo24.cz/a/HCGcK/zpravy-ekonomika-stat-by-mohl-na-odvodech-vybrat-az-devadesat-pct-nadmernych-prijmu-vyrobcu-elektriny
+- https://ct24.ceskatelevize.cz/clanek/domaci/pro-vic-bank-ci-s-jinou-sazbou-koalice-se-nedohodla-na-finalni-podobe-valecne-dane-14542
+- earlier dossiers: data/dossiers/2026-11-12/cz-refinery-banks-12.md, cz-refinery-committee-12.md; data/dossiers/2026-11-10/cz-bank-tax-agreed-10.md
+- WebSearch (2 queries, 2026-11-10T17:56–17:57Z): returned older items (2019–2023 bank-tax debates, MF press release on the refinery bill); used only for the 2022 precedent.
