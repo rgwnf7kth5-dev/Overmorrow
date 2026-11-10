@@ -365,6 +365,43 @@ function checkPhotos(ed, w) {
   }
 }
 
+/**
+ * Shadow trials (METHODOLOGY 16): forecasters recorded beside the published figure. They are scored on the accuracy
+ * page and must never be one of forecast.agents, so the published figure cannot depend on them.
+ */
+function checkShadow(c, cw, frozen) {
+  const f = c.forecast || {}, s = f.shadow;
+  for (const a of f.agents || []) if (['sequential', 'external'].includes(a.role)) err(cw, `forecast.agents holds a shadow forecaster (${a.role}); record it under forecast.shadow`);
+  if (s === undefined) return;
+  if (!s || typeof s !== 'object' || Array.isArray(s)) return err(cw, 'forecast.shadow must be an object {sequential?, external?}');
+  const prob = (p) => typeof p === 'number' && p > 0 && p < 1;
+  const late = (at) => isStamp(frozen) && Date.parse(at) > Date.parse(frozen);
+  const q = s.sequential;
+  if (q !== undefined) {
+    if (!q || !prob(q.p) || !nonEmpty(q.model) || !isStamp(q.at)) err(cw, 'forecast.shadow.sequential needs model, at and p strictly between 0 and 1');
+    else {
+      if (late(q.at)) err(cw, 'forecast.shadow.sequential recorded after the freeze');
+      if (q.p_blind !== undefined && !prob(q.p_blind)) err(cw, 'forecast.shadow.sequential.p_blind must lie strictly between 0 and 1');
+      const lim = cfg.shadow?.sequential || {};
+      if (!Number.isInteger(q.steps) || q.steps < 1 || (lim.steps_max && q.steps > lim.steps_max)) err(cw, `forecast.shadow.sequential.steps must be between 1 and ${lim.steps_max ?? '?'}`);
+      if (!Number.isInteger(q.searches) || q.searches < 0 || (lim.searches_max && q.searches > lim.searches_max)) err(cw, `forecast.shadow.sequential.searches must be between 0 and ${lim.searches_max ?? '?'}`);
+      const trace = fileText(q.trace);
+      if (!nonEmpty(q.trace) || trace === null) err(cw, 'forecast.shadow.sequential.trace: path of the belief file (<claim>.belief.json) next to the dossier');
+      else {
+        let t; try { t = JSON.parse(trace); } catch { t = null; }
+        if (!t || !Array.isArray(t.steps) || t.steps.length !== q.steps || !t.steps.every((x) => nonEmpty(x.action) && x.belief && prob(x.belief.p))) err(cw, `${q.trace}: steps [{action, belief {p, …}}], one per recorded step`);
+      }
+    }
+  }
+  if (s.external !== undefined) {
+    if (!Array.isArray(s.external)) err(cw, 'forecast.shadow.external must be a list');
+    else for (const e of s.external) {
+      if (!e || !nonEmpty(e.provider) || !nonEmpty(e.model) || !isStamp(e.at) || !prob(e.p)) err(cw, 'forecast.shadow.external entries need provider, model, at and p strictly between 0 and 1');
+      else if (late(e.at)) err(cw, `forecast.shadow.external ${e.provider} recorded after the freeze`);
+    }
+  }
+}
+
 function checkClaim(c, cw, frozen) {
   const ed = c.edition;
   if (ed && ed.number >= NEW_FROM) {
@@ -375,6 +412,7 @@ function checkClaim(c, cw, frozen) {
   if (v3) { checkWindow(c, cw, frozen); if (!c.added || c.forecast) checkForecastV3(c, cw, frozen); }
   if (ed && methodVersion(ed, cfg) >= 5 && (!c.added || c.forecast)) checkV5(c, cw);
   if (ed && methodVersion(ed, cfg) >= 6 && (!c.added || c.forecast)) checkV6Claim(c, cw);
+  checkShadow(c, cw, frozen);
   if (isInterval(c)) {
     if (!isStamp(c.resolves_by)) err(cw, 'resolves_by must be an ISO timestamp with offset');
     else if (isStamp(frozen) && Date.parse(c.resolves_by) <= Date.parse(frozen)) err(cw, 'resolves_by must be after frozen_at');

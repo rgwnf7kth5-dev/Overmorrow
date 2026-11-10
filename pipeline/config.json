@@ -201,10 +201,67 @@
   "negative_stories_max": 3,
   "open_questions": {
     "_note": "Publisher's decision, 9 November 2026: about a third of all claims were 90% sure or more, and they flattered the score. The accuracy page and each edition's results lead with open questions (band); near-certain claims are shown apart. From edition `from` at most easy_main_max stories may lead with a claim of 90% or more (either way), and every other claim at or beyond sure_claim needs forecast.open_because, a sourced reason the question is genuinely open.",
-    "band": [0.2, 0.8],
+    "band": [
+      0.2,
+      0.8
+    ],
     "from": 22,
     "easy_main_threshold": 0.9,
     "easy_main_max": 2,
     "sure_claim": 0.95
+  },
+  "shadow": {
+    "adopted": "2026-11-09",
+    "market_blend": {
+      "weights": [
+        0.5,
+        0.67
+      ]
+    },
+    "conformal": {
+      "coverage": 0.8,
+      "min_past": 8
+    },
+    "sequential": {
+      "enabled": true,
+      "model": "opus",
+      "claims_max": 3,
+      "steps_max": 8,
+      "searches_max": 6,
+      "band": [
+        0.2,
+        0.8
+      ]
+    },
+    "external": {
+      "enabled": false,
+      "providers": [
+        {
+          "id": "openai",
+          "base_url": "https://api.openai.com/v1",
+          "key_env": "OPENAI_API_KEY",
+          "model": null
+        },
+        {
+          "id": "google",
+          "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+          "key_env": "GEMINI_API_KEY",
+          "model": null
+        },
+        {
+          "id": "xai",
+          "base_url": "https://api.x.ai/v1",
+          "key_env": "XAI_API_KEY",
+          "model": null
+        }
+      ]
+    },
+    "_notes": {
+      "purpose": "Shadow trials (METHODOLOGY 16): each method is computed or recorded beside the published figure and scored on the same claims. None enters the published figure until it beats it by v6.backtest_min_gain on v6.backtest_min_test later claims.",
+      "market_blend": "Weights on the market price in log-odds, fixed here on 9 November 2026 before any scoring: 0.5 (no prior view) and 0.67 (the weight the AIA Forecaster report fitted on liquid markets). Computed at build time; no extra work in the runs.",
+      "conformal": "Empirical 80% ranges for number forecasts: consensus plus or minus the 80% quantile of past absolute surprises in scale units, from results known before the freeze; at least min_past results.",
+      "sequential": "One extra forecaster per edition for at most claims_max binary claims whose round-one figure lies inside band (widest spread first): no dossier, a research loop of at most steps_max steps and searches_max searches, a written belief state after every step. Skipped when the search budget is short.",
+      "external": "Forecasters on models of other vendors through OpenAI-compatible endpoints (scripts/external.mjs). Off until the publisher supplies an API key (key_env in the run's environment), a model name, and sets enabled to true."
+    }
   }
 }

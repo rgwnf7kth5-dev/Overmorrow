@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pendingClaims, overdueClaims } from './lib.mjs';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage, caseKey, baselineMap, statusQuoOf, auditRows, auditSample } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage, caseKey, baselineMap, statusQuoOf, auditRows, auditSample, marketBlend, shadowP, withVoices, empiricalRanges } from './lib.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -61,6 +61,10 @@ const T = {
       runH: 'What a run costs', runNote: 'Recorded by each morning run from method version 6. Five forecasters earn their place only if they beat the single analyst and the baseline above by more than these runs cost.', runCols: ['', 'Average'], runRows: ['Editions recorded', 'Minutes per run', 'Agent runs', 'Web searches'], runEmpty: 'Recorded from method version 6.',
       verH: 'By version of the method', verNote: 'The method changes as we learn; each edition records the version it was made under, and old editions are never rescored under new rules. Only the latest version measures the method as it now stands.', verCols: ['Version', 'Editions', 'Claims', 'Events', 'Brier (90% interval)', 'Full forecaster record'],
       ver: { 1: 'Pilot and early editions (no recorded ensemble)', 2: 'Five recorded forecasters', 3: 'Event window, full record, derived numbers', 4: 'Selection by news value, economy desk', 5: 'Lessons from the first 132 results', 6: 'Honest measurement' },
+      shadowH: 'Trials in the shadow', shadowNote: (gain, n, since) => `Methods we are testing. Each is computed or recorded beside the published figure and scored on exactly the same claims; none of them changes what we publish. A method goes live only after it beats the published figure by at least ${gain} on at least ${n} later claims. Until then a difference here proves nothing. The blend and the number ranges can be computed from stored data, so they also cover older claims; only claims frozen after the trial began (${since}) count towards the test.`,
+      shadowCols: ['Method', 'Claims', 'Since the trial began', 'Running stories', 'Brier', 'Published, same claims', 'Gain'], shadowRows: { blend: (w) => `Blend with the market (weight ${w})`, seq: 'Sequential researcher alone', seqPlus: 'Five forecasters plus the sequential researcher', ext: 'Other vendors’ models alone', extPlus: 'Five forecasters plus other vendors’ models' },
+      shadowExplain: 'Blend: where a prediction market matches the claim, our figure and the market price are averaged in log-odds with a weight fixed in advance. Sequential researcher: one more forecaster who works without the shared dossier, searches step by step and rewrites a short statement of belief after every step. Other vendors’ models: forecasters on models from other companies, because models of one family tend to make the same mistakes.', shadowExtOff: 'Other vendors’ models are not switched on yet.',
+      shadowIvH: 'Number ranges', shadowIvNote: 'The empirical range is the analysts’ consensus plus or minus the size of surprise that covered 80% of our earlier number forecasts, using only results known before the freeze.', shadowIvCols: ['Range', 'Results', 'Inside the 80% range', 'Interval score'], shadowIvRows: ['Published range', 'Empirical range'], shadowNone: '–',
       comboH: 'Combination rules compared', comboNote: 'All morning figures, frozen at the same time. Each rule is set against our published morning figure on exactly the same claims, so read across a row, not down the table. The blind ensemble is the estimate made before the signals file, which holds other people’s models and consensus as well as markets, so a gain over it does not show that markets helped.', comboCols: ['Rule', 'Claims', 'Brier', 'Our Brier, same claims', 'Skill vs coin'], comboRows: { pub: 'Published morning figure', geo: 'Geometric mean of odds', mean: 'Plain mean', median: 'Median', blind: 'Blind ensemble (before the signals file)', market: 'Market or bookmaker', base: 'Base rate' }, comboEmpty: 'No resolved claim has a full forecaster record yet.',
       decH: 'Timing or outcome?', decNote: 'For scheduled events each forecast is split into the chance that the event happens in the window and the outcome if it does. Scoring the two parts separately shows whether our misses come from the calendar or from the result.', decCols: ['Part', 'Claims', 'Brier'], decRows: ['Event happens in the window', 'Outcome, given it happened'],
       covH: 'What we missed', covNote: 'Each morning the resolver lists the significant events of the forecast day by a fixed procedure (an event counts when it appears in at least two of the reference lists) and marks whether the paper covered it, considered and dropped it, or missed it.', covCols: ['', 'Czech', 'Europe', 'World'], covRows: { covered: 'Covered', dropped: 'Considered, not selected', missed: 'Missed' }, covEmpty: 'Coverage is recorded from edition No. 5 on.',
@@ -151,6 +155,10 @@ const T = {
       runH: 'Co běh stojí', runNote: 'Zapisuje každý ranní běh od metody verze 6. Pět prognostiků se vyplatí, jen když porazí jednoho analytika a základní model výše o víc, než tyto běhy stojí.', runCols: ['', 'Průměr'], runRows: ['Zapsaná vydání', 'Minut na běh', 'Spuštění agentů', 'Webových hledání'], runEmpty: 'Zapisuje se od metody verze 6.',
       verH: 'Podle verze metody', verNote: 'Metoda se mění podle toho, co se učíme; každé vydání nese verzi, podle které vzniklo, a stará vydání se podle nových pravidel nepřehodnocují. Metodu v dnešní podobě měří jen poslední verze.', verCols: ['Verze', 'Vydání', 'Tvrzení', 'Události', 'Brier (90% interval)', 'Úplný záznam prognostiků'],
       ver: { 1: 'Pilot a první vydání (bez zaznamenaného týmu)', 2: 'Pět zaznamenaných prognostiků', 3: 'Okno události, úplný záznam, odvozená čísla', 4: 'Výběr podle zpravodajské hodnoty, ekonomika', 5: 'Poučení z prvních 132 výsledků', 6: 'Poctivé měření' },
+      shadowH: 'Zkoušky ve stínu', shadowNote: (gain, n, since) => `Metody, které zkoušíme. Každá se počítá nebo zaznamenává vedle zveřejněného čísla a hodnotí se na přesně stejných tvrzeních; žádná nemění to, co vychází. Metoda se nasadí, až když zveřejněné číslo překoná aspoň o ${gain} na nejméně ${n} pozdějších tvrzeních. Do té doby rozdíl v této tabulce nic nedokazuje. Směs a číselná rozpětí lze spočítat z uložených dat, proto zahrnují i starší tvrzení; do zkoušky se počítají jen tvrzení uzavřená po jejím začátku (${since}).`,
+      shadowCols: ['Metoda', 'Tvrzení', 'Od začátku zkoušky', 'Běžící příběhy', 'Brier', 'Zveřejněno, stejná tvrzení', 'Zisk'], shadowRows: { blend: (w) => `Směs s trhem (váha ${w})`, seq: 'Postupný rešeršér sám', seqPlus: 'Pět prognostiků a postupný rešeršér', ext: 'Modely jiných výrobců samy', extPlus: 'Pět prognostiků a modely jiných výrobců' },
+      shadowExplain: 'Směs: kde tvrzení odpovídá predikční trh, průměrujeme naše číslo a cenu trhu v logaritmu šancí s vahou stanovenou předem. Postupný rešeršér: další prognostik, který pracuje bez společného dossieru, hledá krok za krokem a po každém kroku přepíše krátký zápis svého úsudku. Modely jiných výrobců: prognostici na modelech jiných firem, protože modely jedné rodiny dělají stejné chyby.', shadowExtOff: 'Modely jiných výrobců zatím nejsou zapnuté.',
+      shadowIvH: 'Číselná rozpětí', shadowIvNote: 'Empirické rozpětí je konsenzus analytiků plus minus překvapení, které pokrylo 80 % našich dřívějších číselných předpovědí; počítá se jen z výsledků známých před uzávěrkou.', shadowIvCols: ['Rozpětí', 'Výsledky', 'Uvnitř 80% rozpětí', 'Intervalové skóre'], shadowIvRows: ['Zveřejněné rozpětí', 'Empirické rozpětí'], shadowNone: '–',
       comboH: 'Srovnání pravidel spojování', comboNote: 'Všechno jsou ranní čísla zamčená ve stejný čas. Každé pravidlo stojí proti našemu zveřejněnému rannímu číslu na přesně stejných tvrzeních, takže se čte po řádcích, ne po sloupci. Slepý tým je odhad před souborem signálů, v němž jsou kromě trhů i cizí modely a konsenzus; zlepšení oproti němu proto neukazuje, že pomohly trhy.', comboCols: ['Pravidlo', 'Tvrzení', 'Brier', 'Náš Brier, stejná tvrzení', 'Dovednost proti minci'], comboRows: { pub: 'Zveřejněné ranní číslo', geo: 'Geometrický průměr šancí', mean: 'Prostý průměr', median: 'Medián', blind: 'Slepý tým (před souborem signálů)', market: 'Trh nebo sázková kancelář', base: 'Základní četnost' }, comboEmpty: 'Zatím není vyhodnocené žádné tvrzení s úplným záznamem prognostiků.',
       decH: 'Termín, nebo výsledek?', decNote: 'U naplánovaných událostí se každá predikce dělí na pravděpodobnost, že se událost v daném okně uskuteční, a na výsledek, pokud se uskuteční. Samostatné hodnocení obou částí ukáže, zda se mýlíme v kalendáři, nebo ve výsledku.', decCols: ['Část', 'Tvrzení', 'Brier'], decRows: ['Událost se v okně uskuteční', 'Výsledek, pokud se uskutečnila'],
       covH: 'Co jsme přehlédli', covNote: 'Hodnotitel každé ráno pevným postupem sestaví seznam významných událostí předpovídaného dne (událost se počítá, když je aspoň ve dvou referenčních přehledech) a označí, zda ji noviny měly, zvažovaly a nevybraly, nebo přehlédly.', covCols: ['', 'Česko', 'Evropa', 'Svět'], covRows: { covered: 'Ve vydání', dropped: 'Zvažováno, nevybráno', missed: 'Přehlédnuto' }, covEmpty: 'Pokrytí se zaznamenává od vydání č. 5.',
@@ -931,6 +939,40 @@ function comboBlock(rows, L) {
   const lines = [line(R.pub, full, (r) => r.probability), line(R.geo, full, (r) => altCombos(r).geo), line(R.mean, full, (r) => altCombos(r).mean), line(R.median, full, (r) => altCombos(r).median), line(R.blind, withBlind, (r) => altCombos(r).blind), line(R.market, withMarket, (r) => r.forecast.market.p), line(R.base, withBase, (r) => r.forecast.base_rate.rate)].filter(Boolean);
   return out + tbl2(A.comboCols, lines);
 }
+/** Added 9 Nov 2026: shadow trials (METHODOLOGY 16). Morning figures only; every row is set against the published morning figure on its own claims. */
+function shadowBlock(editions, L) {
+  const A = L.acc, cfg = loadConfig(), S = cfg.shadow;
+  if (!S) return '';
+  const rows = scoredClaims(editions, 'morning');
+  const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
+  const sgn = (x) => `${x >= 0 ? '+' : '−'}${num3(Math.abs(x), L)}`;
+  const began = Date.parse(`${S.adopted}T23:59:59Z`);
+  const line = (label, pf) => {
+    const list = rows.filter((r) => pf(r) !== null);
+    if (!list.length) return [label, '0', '0', A.shadowNone, A.shadowNone, A.shadowNone, A.shadowNone];
+    const b = mean(list.map((r) => brier(pf(r), r.outcome))), ours = mean(list.map((r) => brier(r.probability, r.outcome)));
+    return [label, String(list.length), String(list.filter((r) => Date.parse(r.edition.frozen_at) >= began).length), String(new Set(list.map(caseKey)).size), num3(b, L), num3(ours, L), sgn(ours - b)];
+  };
+  const mkt = (r) => (typeof r.forecast?.market?.p === 'number' && r.forecast.market.p > 0 && r.forecast.market.p < 1 ? r.forecast.market.p : null);
+  const plus = (kind) => (r) => { const p = shadowP(r, kind); return p === null ? null : withVoices(r, kind === 'external' ? (r.forecast.shadow.external || []).map((e) => e.p).filter((x) => x > 0 && x < 1) : [p]); };
+  const R = A.shadowRows;
+  const lines = [
+    ...(S.market_blend?.weights || []).map((w) => line(R.blend(L.locale === 'cs-CZ' ? String(w).replace('.', ',') : String(w)), (r) => (mkt(r) === null ? null : marketBlend(r.probability, mkt(r), w)))),
+    line(R.seq, (r) => shadowP(r, 'sequential')), line(R.seqPlus, plus('sequential')),
+    line(R.ext, (r) => shadowP(r, 'external')), line(R.extPlus, plus('external')),
+  ];
+  const extOn = S.external?.enabled && (S.external.providers || []).some((p) => p.model);
+  let out = `<h2 id="shadow">${A.shadowH}</h2><p>${A.shadowNote(num3(cfg.v6?.backtest_min_gain ?? 0.002, L), cfg.v6?.backtest_min_test ?? 100, fmtDate(S.adopted, L, { day: 'numeric', month: 'long', year: 'numeric' }))}</p><p>${A.shadowExplain}${extOn ? '' : ` ${A.shadowExtOff}`}</p>${tbl2(A.shadowCols, lines)}`;
+  const measured = measuredClaims(editions), ranges = empiricalRanges(measured, cfg);
+  const both = measured.filter((c) => ranges.has(`${c.edition.id}:${c.id}`));
+  if (both.length) {
+    const pub = both.map((c) => ({ ...c, quantiles: c.morning_quantiles || c.quantiles })), emp = both.map((c) => ({ ...c, quantiles: ranges.get(`${c.edition.id}:${c.id}`) }));
+    const row = (label, list) => [label, String(list.length), `${pctNum(list.filter((c) => intervalHit(c, c.value)).length / list.length, L)} (${list.filter((c) => intervalHit(c, c.value)).length})`, num3(mean(list.map((c) => intervalScore(c, c.value))), L)];
+    out += `<h3>${A.shadowIvH}</h3><p>${A.shadowIvNote}</p>${tbl2(A.shadowIvCols, [row(A.shadowIvRows[0], pub), row(A.shadowIvRows[1], emp)])}`;
+  }
+  return out;
+}
+
 function decompBlock(rows, L) {
   const A = L.acc;
   const mean = (xs) => xs.reduce((a, b) => a + b, 0) / xs.length;
@@ -1037,6 +1079,7 @@ ${honestBlocks(editions, L)}
 <div class="tbl"><table><thead><tr><th>${A.secCols[0]}</th><th class="n">${A.secCols[1]}</th><th class="n">${A.secCols[2]}</th><th class="n">${A.secCols[3]}</th></tr></thead><tbody>${secRows}</tbody></table></div>
 ${benchBlocks(rows, L)}
 ${comboBlock(scoredClaims(editions, 'morning'), L)}
+${shadowBlock(editions, L)}
 ${decompBlock(rows, L)}
 ${moreBlocks(editions, rows, L)}
 ${coverageBlock(L)}

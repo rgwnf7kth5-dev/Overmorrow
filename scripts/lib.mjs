@@ -546,3 +546,41 @@ export function prequential(rows, fit, reference, minTrain) {
   }
   return n ? { n, editions: used, brier: b / n, reference: c / n } : null;
 }
+
+// ---------- shadow trials (adopted 9 Nov 2026): methods scored beside the published figure, never part of it ----------
+const clampP = (p, lo = 0.01, hi = 0.99) => Math.min(hi, Math.max(lo, p));
+/** Our figure blended with a market price in log-odds, with a weight on the market fixed in advance (config.shadow). */
+export const marketBlend = (p, m, w) => sigmoid((1 - w) * logit(clampP(p)) + w * logit(clampP(m)));
+/** A shadow forecaster's probability recorded on a claim: forecast.shadow.sequential, or the mean of forecast.shadow.external. */
+export function shadowP(c, kind) {
+  const s = c.forecast?.shadow;
+  if (!s) return null;
+  const ok = (p) => typeof p === 'number' && p > 0 && p < 1;
+  if (kind === 'sequential') return ok(s.sequential?.p) ? s.sequential.p : null;
+  if (kind === 'external') { const ps = (s.external || []).map((e) => e.p).filter(ok); return ps.length ? geoMeanOdds(ps) : null; }
+  return null;
+}
+/** The five recorded forecasters plus extra voices, by the plain geometric mean of odds; null without a full record. */
+export function withVoices(c, extra) {
+  const ps = (c.forecast?.agents || []).map((a) => a.p).filter((p) => typeof p === 'number' && p > 0 && p < 1);
+  return ps.length >= 3 && extra.length ? geoMeanOdds([...ps, ...extra]) : null;
+}
+/**
+ * Empirical 80% ranges for number forecasts (split conformal): centre on the consensus, half-width = the
+ * empirical quantile of |result − consensus| ÷ scale over number forecasts resolved before the edition's freeze.
+ * Nothing is assumed about the shape of surprises. Returns Map 'edition:claim' -> {q10, q50, q90, n}.
+ */
+export function empiricalRanges(measured, cfg = loadConfig()) {
+  const { coverage = 0.8, min_past = 8 } = cfg.shadow?.conformal || {};
+  const usable = measured.filter((c) => typeof c.forecast?.consensus?.value === 'number' && c.scale > 0);
+  const out = new Map();
+  for (const c of usable) {
+    const past = usable.filter((x) => Date.parse(x.result.resolved_at) < Date.parse(c.edition.frozen_at))
+      .map((x) => Math.abs(x.value - x.forecast.consensus.value) / x.scale).sort((a, b) => a - b);
+    if (past.length < min_past) continue;
+    const k = Math.min(past.length, Math.ceil((past.length + 1) * coverage));
+    const half = past[k - 1] * c.scale, mid = c.forecast.consensus.value;
+    out.set(`${c.edition.id}:${c.id}`, { q10: mid - half, q50: mid, q90: mid + half, n: past.length });
+  }
+  return out;
+}

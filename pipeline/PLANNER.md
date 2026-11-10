@@ -105,3 +105,27 @@ Dossiers and round-one forecasts follow EDITOR.md step 4b: the market search is 
 ## 10. Rules from method version 6
 
 The planning file and dossiers already carry what EDITOR step 4c asks of a claim: `forecast.baseline`, `event_key` and `case_key`, the scale basis of number forecasts, the simulation for a chamber claim, and the two-step blind procedure.
+
+## 11. Shadow trials *(from 9 November 2026; METHODOLOGY 16)*
+
+These run beside the ensemble and are recorded under each claim's `forecast.shadow` in the planning file. They never change a published figure, never enter `forecast.agents`, and are never shown to the five forecasters, the red team or the writers. Settings: `config.shadow`.
+
+**Sequential researcher** (`shadow.sequential.enabled`). After round one, take the binary claims whose combined round-one figure lies inside `band` (20–80%), order them by the spread of the five forecasters (widest first, ties by claim id) and take the first `claims_max` (3). For each, start one agent on `shadow.sequential.model` with only the claim text, its criterion, the deadline, today's date and `pipeline/reference-data/`. It gets no dossier, no signals file and no other forecaster's number or reasoning. It works in a loop of at most `steps_max` (8) steps:
+
+1. Step 1 states a prior from the reference class or the slip class, before any search.
+2. Each later step takes exactly one action, chosen from what the belief state says is still open: `search` (one WebSearch; at most `searches_max`, 6, per claim), `read` (one page with `node scripts/read.mjs`), `data` (one lookup in `pipeline/reference-data/` or `scripts/refdata/`), or `submit`.
+3. After every action the agent rewrites its whole belief state; it does not append notes: `{"p": 0.58, "confidence": "low | medium | high", "for": ["dated fact — URL", …], "against": […], "open": ["what would move the figure most", …]}`. A fact that is not in the belief state is lost, so the state must carry everything the final figure rests on. The next action is chosen from `open`.
+4. `submit` ends the loop; it is forced at the step limit. The figure at `submit` is `p_blind`. Then the same agent reads `<claim-id>.signals.md` (if there is one) and gives its final `p`.
+
+The agent writes the trace to `data/dossiers/<E+3>/<claim-id>.belief.json`: `{claim, model, started_at, finished_at, steps: [{n, action, target, found, belief}], p_blind, p}` (`target` is the query, URL or data file; `found` one sentence). Record on the claim:
+
+```json
+"shadow": {"sequential": {"model": "claude-opus-5-5", "at": "2026-11-10T19:40:00+01:00", "p_blind": 0.55, "p": 0.58, "steps": 6, "searches": 4, "trace": "data/dossiers/2026-11-13/<claim-id>.belief.json"}}
+```
+
+The searches count towards `meta.run.searches`. The shadow run never takes searches from the dossiers, the evidence forecaster or the morning reserve (`v6.search_budget`): if the budget is short, run it for fewer claims or not at all, and say so in the report. A skipped shadow run needs no entry in `forecast.missing`.
+
+**Other vendors' models** (`shadow.external.enabled`; off until the publisher supplies keys). `node scripts/external.mjs check` lists the providers that are ready. For each ready provider and each binary claim, write a plain-text file in `work/external/` with today's date, the claim text, the criterion, the deadline and the full text of the dossier, and run `node scripts/external.mjs forecast <provider> <file>`: that figure is `p_blind`. Append the signals file to the text and run it again: that is `p`. Record `"shadow": {"external": [{"provider": "openai", "model": "<as returned>", "at": "…", "p_blind": 0.61, "p": 0.63, "inputs": ["dossier", "signals"]}]}`. Exit code 4 means the provider is not configured: skip it silently. Exit code 3 is a network or provider error: record it in the planning file's `meta.unreachable` and go on. Send nothing but that file; never put a key in a file, a prompt or a commit.
+
+**Nothing to do** for the market blend and the empirical number ranges: `scripts/build.mjs` computes them from what the claims already record (`forecast.market`, `forecast.consensus`, `scale`).
+

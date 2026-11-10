@@ -36,6 +36,7 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `scripts/refdata/election-sim.mjs` | Joint simulation of linked races. |
 | `.claude/settings.json` | Allows `WebFetch` and `WebSearch` in unattended runs (WebFetch is no longer used: pages are read with `node scripts/read.mjs`). |
 | `scripts/read.mjs` | Reads a web page as text from the shell (title, publication time, paragraphs, or a front page's links), so unattended runs never wait for per-site approval. |
+| `scripts/external.mjs` | Shadow forecasters on other vendors' models (OpenAI-compatible endpoints). Off until keys and model names are set in `config.shadow.external`. |
 | `scripts/validate.mjs` | Checks all data against the rules. The Netlify build fails on any error. |
 | `scripts/build.mjs` | Generates the site into `dist/`. No dependencies beyond Node 20. |
 | `site/style.css` | The stylesheet. |
@@ -78,3 +79,10 @@ Stories are chosen by news value; the biggest running stories of the day (`meta.
 ## Search: the Spider
 
 Type `spider` anywhere on the site, or use the small spider in the navigation (the only way in on a phone). `site/spider.js` draws the search overlay, taken over from How ANO Vote and redrawn in the paper's ink; credit to @rybinfx stays in the overlay. `scripts/build.mjs` writes `search.json` and `cs/search.json` on every build from all editions, their results and the open questions on the forecast board, so a new edition needs no extra step. The index is fetched only when the Spider is opened. Stories have anchors of the form `#s-<story id>`.
+
+## Shadow trials (from 9 November 2026)
+
+Methods under test are scored beside the published figure and never change it; see METHODOLOGY section 16 and the "Trials in the shadow" table on the accuracy page. Two are computed from stored data (a blend with the market price; empirical ranges for number forecasts), one is an extra forecaster recorded in `forecast.shadow.sequential` with its step-by-step belief file `data/dossiers/<edition>/<claim>.belief.json`, and one is prepared but off: forecasters on other vendors' models.
+
+To switch the other vendors' models on: put the API key into the environment of the scheduled runs under the name in `config.shadow.external.providers[].key_env` (`OPENAI_API_KEY`, `GEMINI_API_KEY`, `XAI_API_KEY`), allow the provider's host in the runs' network settings, set the provider's `model`, and set `enabled` to `true`. `node scripts/external.mjs check` shows what is ready. Keys never go into the repository.
+
