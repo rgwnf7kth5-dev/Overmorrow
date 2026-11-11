@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "pooled": {
-  "n": 28,
-  "rms_in_scales": 1.234,
+  "n": 30,
+  "rms_in_scales": 1.284,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -527,6 +527,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.1
+  },
+  "us-cpi-u-core-all-items-less-food-and-energy-seasonally-adju": {
+   "unit": "% m/m",
+   "records": [
+    {
+     "edition": "2026-11-11",
+     "claim": "us-core-cpi-oct-11",
+     "consensus": 0.2,
+     "first": 0.3,
+     "centre": 0.238,
+     "scale_used": 0.14,
+     "source": "Bloomberg survey of economists, core CPI m/m, as quoted by MLQ (8 Nov 2026) and FXEmpire (8 Nov); RBC 0.3, Cleveland Fed nowcast 0.21 (signal)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "maximum-retail-price-of-diesel-b7-valid-on-11-nov-2026-set-i": {
+   "unit": "CZK/l incl. VAT",
+   "records": [
+    {
+     "edition": "2026-11-11",
+     "claim": "cz-diesel-max-11",
+     "consensus": 47.28,
+     "first": 46.4,
+     "centre": 47.14,
+     "scale_used": 0.35,
+     "source": "Persistence: last published cap (47.28 for 7-9 Nov, věstník 119 of 6 Nov). Re-anchor to the cap for 10 Nov published on 9 Nov (proxy chain suggests about 47.16 for 11 Nov)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.88
   }
  },
  "extra": {}

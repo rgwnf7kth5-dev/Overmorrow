@@ -1,0 +1,230 @@
+{
+  "edition": "2026-11-11",
+  "checked_at": "2026-11-11T05:06:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 10, read 11 Nov 04:02 UTC; twelve entries at that time)",
+    "ct24 (SOUHRN: Zásadní události úterý 10. listopadu, published 10 Nov 18:28; front page headings and links, read 11 Nov 04:02 UTC)",
+    "ctk (ceskenoviny.cz front page, 'hlavní události' RSS (50 items, ~10:00 10 Nov to 01:00 11 Nov), world, economy and ČR sections and the public-media dossier page, with timestamps, read 11 Nov 04:02-04:10 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading. Two WebSearch queries (Reuters world news 10 Nov; AP top stories 10 Nov) returned only aggregator pages and older AP summaries, no usable top-stories list. List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: DR Congo military court in Goma sentences 66 soldiers to death (DW); suspected al-Shabaab attack in Mandera, Kenya, eight dead (AFP via AA); Albanese announces mandatory AI safeguards and a regulator (AFP, ABC). Not on ct24 or ctk as read",
+    "ctk-only: Median poll (ANO 32%); fuel price caps for 11 Nov (covered anyway: cz-fuel-cap); Zelensky in Copenhagen, Danish aid; Rubio calls Ukraine talks very productive; Zelensky: Europe must choose its negotiator (counted under the Abu Dhabi event); Křetínský's EPG takes majority in Fnac Darty; Plesio debt restructuring; cabinet: CZK 250m for large farms, ÚOHS chair tender; lung-cancer screening for smokers 50-79; Slavětín and Vysoká u Příbramě votes declared invalid by courts; ODS presidium on Friday; KRNAP management changes; ENISA warning on home appliances; Harry and Meghan in Brussels; Brent below USD 90 (market price, excluded)",
+    "ct24-only: South Africa anti-migrant violence (feature); Czech bank fraud losses (ČBA); Poland constitutional-court reform (analysis); Ukrainian gas exports (video); Spain asks for TikTok child-abuse inquiry",
+    "Nvidia/Jensen Huang FBI inquiry (ct24 SOUHRN and ctk 09:09): Trump spoke on Monday 9 Nov (US time) per both reports; not an event of 10 Nov",
+    "Plzeň appeal court hears the Berbr football-corruption case (ct24 front video, ctk ČR section): counted as sport (match-fixing in the football leagues) and excluded; recorded for transparency",
+    "Planned stories not on any list as read: G7 foreign ministers in Paris (g7-foreign-ministers), US October CPI (us-cpi), Knesset swearing-in (il-knesset), us-iran Hormuz incidents, Infineon results (infineon-fy), Paraguay ueno payouts (py-crisis), diesel cap (cz-fuel-cap; ctk only). Their absence from the lists may reflect the unreadable Reuters/AP list"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in earlier files, ct24 and ctk count as lists for non-Czech events too, and a Reuters/AP citation inside a Wikipedia entry counts as list (b). The planning file was prepared 8 Nov 18:26 UTC and the edition frozen 9 Nov 05:16 CET. Two covered stories appear to have gone against the edition's forecast headlines (us-hegseth: House blocked Massie's resolution on Tuesday; cz-prague-coalition: STAN named Spolu and Praha sobě on Tuesday) - for the resolver.",
+  "events": [
+    {
+      "title": "Abu Dhabi: US-mediated trilateral talks of Ukraine, Russia and the US open (humanitarian issues, prisoner exchanges, return of children, security guarantees); continue on Wednesday",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)",
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/v-abu-dhabi-zacalo-jednani-o-ceste-k-ukonceni-ruske-valky-na-ukrajine-379465",
+      "status": "covered",
+      "story": "ua-talks"
+    },
+    {
+      "title": "US House Republicans block (table) Thomas Massie's resolution to impeach Defense Secretary Pete Hegseth",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/republikani-zablokovali-snahu-o-odvolani-hegsetha/2900326",
+      "status": "covered",
+      "story": "us-hegseth",
+      "note": "Covered; the edition's headline expected a vote 'later this week' and no roll call on Tuesday, the House blocked the measure on Tuesday (US time) - for the resolver."
+    },
+    {
+      "title": "Czech and Slovak governments hold a joint session in Bratislava; Babiš and Fico say Europe should be at the Ukraine negotiating table and reject Merz's call for more financial support for Ukraine",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-a-fico-se-ohradili-vuci-vyzve-merze-k-financni-podpore-ukrajiny/2899954",
+      "status": "covered",
+      "story": "cz-sk-governments"
+    },
+    {
+      "title": "University students protest in Prague (náměstí Republiky, 16:36) and other cities in support of Czech Television and Radio",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/stovky-studentu-v-praze-demonstrovaly-na-podporu-ct-a-cro/2897774",
+      "status": "covered",
+      "story": "cz-student-protest"
+    },
+    {
+      "title": "Prague: STAN's club votes for a coalition with Spolu and Praha sobě (Pirates left out)",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/v-praze-povladne-koalice-stan-spolu-a-prahy-sobe/2895938",
+      "status": "covered",
+      "story": "cz-prague-coalition",
+      "note": "Covered; the edition's headline said no line-up would be announced on Tuesday, but STAN announced its choice on Tuesday - for the resolver."
+    },
+    {
+      "title": "Babiš will skip the 17 November commemorations and visit Israel 16-18 November with part of the cabinet; opposition criticises the timing",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-misto-oslav-17-listopadu-navstivi-izrael-podle-opozice-je-zbabelec/2899872",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Babiš visit to Israel': 'No date announced.' (The dates were announced on 10 Nov itself.)"
+    },
+    {
+      "title": "Kraków shooter was interested in Breivik and may have been close to the far right, says justice minister Żurek",
+      "scope": "europe",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/krakovsky-strelec-ktery-zabil-devet-lidi-se-zajimal-o-breivika-rekl-ministr/2900278",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Kraków Main Square shooting aftermath': 'Crime: excluded by policy.'"
+    },
+    {
+      "title": "President Pavel receives Hungarian President András Baka (his first official bilateral trip abroad); both say support for Ukraine is a strategic investment in their own security",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/cesko-a-madarsko-maji-podle-pavla-podobny-pohled-na-bezpecnost-evropy/2896038",
+      "status": "missed",
+      "note": "Nowhere in the planning file or agenda. An official visit continuing on 11 Nov (Babiš receives Baka at Kramářova vila), so very probably announced in advance by Prague Castle (hrad.cz programme), but no advance notice was found in this check (one search, inconclusive). Where to have seen it: the President's weekly programme on hrad.cz and ČTK's daily outlook."
+    },
+    {
+      "title": "NÚKIB publishes an analysis warning of long-term Russian state-sponsored cyber-espionage against Czech and allied institutions, with destructive attacks not ruled out",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/nukib-v-analyze-upozornuje-na-dlouhodobe-ruske-kyberutoky/2900050",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not found announced in advance; an unscheduled report release."
+    },
+    {
+      "title": "Chamber mandate and immunity committee opens disciplinary proceedings against SPD MP Miroslav Ševčík over his 'menopause' heckle",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/snemovni-vybor-zahajil-rizeni-vuci-sevcikovi-za-spd-kvuli-vyroku-na-plenu/2899801",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Possibly on the committee's published agenda (psp.cz) beforehand; not verified. Minor procedural step."
+    },
+    {
+      "title": "Prague hygiene station: expired eggs (spaghetti dish) at a school canteen caused the September salmonella outbreak in Újezd nad Lesy",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/zdrojem-epidemie-salmonelozy-v-ujezdu-byly-spagety-z-jidelny-zs/2899947",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (result of an investigation)."
+    },
+    {
+      "title": "UK police arrest a US Army service member near Gloucester on suspicion of national-security (espionage) offences linked to Russia",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/britska-policie-zatkla-prislusnika-armady-usa-tyka-se-to-ruska/2900261",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (police action); unforeseeable."
+    },
+    {
+      "title": "Bulgaria: multiple pile-ups of some 80-90 vehicles in fog on the Trakia motorway near Yambol kill 11-12 and injure about 50; national mourning on Wednesday",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/nejmene-11-mrtvych-pri-nehodach-na-bulharske-dalnici-v-zemi-bude-smutek/2900017",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (accident); the paper's policy excludes disasters in any case."
+    },
+    {
+      "title": "US FDA orders warnings on GLP-1 drugs (semaglutide, tirzepatide) about a risk of NAION, an optic-nerve disorder that can cause blindness",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "reuters (as cited in the Wikipedia entry; Reuters page not read)",
+        "ct24"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_10",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not found announced in advance (regulatory action without a public date)."
+    },
+    {
+      "title": "Privy Council strikes down Trinidad and Tobago's laws criminalising consensual same-sex relations (Jason Jones case)",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "reuters (as cited in the Wikipedia entry; Reuters page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_10",
+      "status": "missed",
+      "note": "Nowhere in the planning file. A judgment date is normally listed in advance on the JCPC website (jcpc.uk 'future judgments'), not checked here; JCPC is not among the swept sources."
+    },
+    {
+      "title": "Indonesian Vice-President Gibran Rakabuming Raka announces he will resign over the controversy about his school diploma",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "reuters (as cited in the Wikipedia entry; Reuters page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_10",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance."
+    },
+    {
+      "title": "Cambodia: school bus plunges into a pond in Kandal province, five schoolgirls killed and 21 injured",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_10",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Accident, not announced; disasters excluded by policy anyway."
+    },
+    {
+      "title": "Spain: explosive device kills a police officer and his dog and injures another in Oviedo while they respond to a shooting",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_10",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced; crime, excluded by policy anyway."
+    }
+  ]
+}

@@ -41,7 +41,7 @@
       "n": "about 10 meetings 2025-2026, none followed by a ceasefire within 48 h",
       "source": "News record 2025-2026",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -151,7 +151,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 13,
+        "yes": 14,
         "no": 10
       }
     },
@@ -173,7 +173,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 6,
+        "yes": 8,
         "no": 0
       }
     },
@@ -184,7 +184,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 2,
+        "yes": 3,
         "no": 3
       }
     },
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 7,
+        "yes": 8,
         "no": 1
       }
     },
@@ -317,7 +317,7 @@
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
         "yes": 1,
-        "no": 11
+        "no": 12
       }
     },
     {
@@ -459,7 +459,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 1
       }
     },
@@ -525,8 +525,8 @@
       "n": 0,
       "source": "own record from 6 Nov 2026",
       "own_record": {
-        "yes": 3,
-        "no": 0
+        "yes": 4,
+        "no": 1
       }
     },
     {
@@ -537,7 +537,7 @@
       "source": "own record from 6 Nov 2026",
       "own_record": {
         "yes": 1,
-        "no": 2
+        "no": 3
       }
     },
     {
@@ -559,7 +559,7 @@
       "source": "own record from 6 Nov 2026",
       "own_record": {
         "yes": 1,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -722,6 +722,17 @@
       "base_rate": 0.138,
       "n": 26,
       "source": "node scripts/refdata/slip.mjs other-scheduled (prior 0.07, own 4/26)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "court-annuls-local-election",
+      "description": "Czech regional court declares a contested municipal election invalid on the hearing day",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record from 2026-11-11",
       "own_record": {
         "yes": 1,
         "no": 0
