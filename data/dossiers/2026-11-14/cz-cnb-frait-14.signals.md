@@ -1,0 +1,4 @@
+# cz-cnb-frait-14 — signals
+- `node scripts/markets.mjs search Czech National Bank` (read_at 2026-11-11T18:17:22Z): only one ČNB market, Kalshi KXCBDCZECH-26DEC17-HOLD "Will the Czech National Bank maintain the current rate at the December Bank Board monetary policy meeting?" — Yes 0.97 (bid 0.90 / ask 0.96), volume ~3,184, closes 2026-12-17. Does NOT match this claim (it is about the 17 Dec decision, not individual votes on 5 Nov); context only: it prices a hold in December, consistent with the governor's "fine-tuning" line. Other hits were Czech mayoral and UEFA EURO 2028 markets — no match.
+- No market, bookmaker or published model on individual ČNB board members' votes found.
+- Market-implied path quoted in news: markets priced three further quarter-point hikes over the next year after the decision (ČTK via expats.cz, 5 Nov); Frait on 22 Oct called pricing of four hikes "a little bit of a mystery" (ČNB/Bloomberg interview). Context only.

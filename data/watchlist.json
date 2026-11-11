@@ -1019,6 +1019,44 @@
           ],
           "note": "October's flash came in at 2.4% and analysts place the return above 3% next year, not in November.",
           "note_cs": "Říjnový rychlý odhad činí 2,4 % a analytici čekají návrat nad 3 % až příští rok, ne v listopadu."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.06,
+          "combined": 0.057,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "reason": "A rise of 0.6 pp or more in Czech year-on-year CPI within one month is rare. October was confirmed at 2.4% (ČSÚ), fuel caps fall again from 12 Nov, and analysts expect a return above 3% only in 2027.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.06,
+              "reason": "ČSÚ confirmed October CPI at 2.4%, 0.1 pp below September. Fuel caps fall again from 12 Nov and Brent dropped below USD 90 on 10 Nov, so reaching 3.0% in November would need a jump of about 0.6 pp.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.06,
+              "reason": "Case for Yes rests only on a soft November 2025 base. The full release confirmed October at 2.4% with food down 4% y/y, fuel caps fall again from 12 Nov and Brent dropped below USD 90 on 10 Nov, so a 0.6pp jump in one month is very unlikely.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.06,
+              "reason": "Model, no market: ČSÚ confirmed October at 2.4% (food -4% y/y); a soft Nov-2025 base puts a flat month near 2.6-2.7, sd ~0.2, but fuel caps fell again from 12 Nov and Brent dropped below USD 90 on 10 Nov, so reaching 3.0 needs an unusually strong month.",
+              "at": "2026-11-11T18:35:00Z"
+            }
+          ],
+          "note": "Weekly re-forecast: ČSÚ confirmed October inflation at 2.4% and the regulated fuel price caps kept falling (diesel CZK 45.87 for 12 Nov, the ninth cut in a row).",
+          "note_cs": "Týdenní přepočet: ČSÚ potvrdil říjnovou inflaci na 2,4 % a regulované maximální ceny pohonných hmot dál klesají (nafta 45,87 Kč na 12. listopadu, deváté snížení za sebou).",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
         }
       ],
       "result": null
@@ -1259,6 +1297,44 @@
           ],
           "note": "Labour minister Juchelka is preparing a compromise that keeps current benefits for over-52s, people in retraining and parents returning from leave (ČT24, 8 Nov); Motoristé back it, SPD says it is 'not satisfied' but a solution must come. Coalition council takes it up on 9 Nov.",
           "note_cs": "Ministr práce Juchelka připravuje kompromis, podle něhož by současné podpory zůstaly lidem nad 52 let, rekvalifikovaným a rodičům po rodičovské (ČT24, 8. 11.); Motoristé ho podporují, SPD „není spokojena“, ale řešení podle ní přijít musí. Koaliční rada ho projedná 9. 11."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.25,
+          "combined": 0.254,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.25,
+              "reason": "Contested bills without a secured majority rarely clear third reading within about seven budget-dominated weeks. ANO and Motoristé hold 93 seats, and on 9 Nov Okamura called Juchelka's compromise insufficient while Juchelka refused to go further, so there was still no coalition agreement as of 11 Nov.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.27,
+              "reason": "On 9 Nov Juchelka said he would table his softening as an MP's amendment, but at that day's coalition council Okamura (SPD) called it insufficient, and no deal had been reported by 11 Nov (blesk.cz/clanek/852380). The bill still has no second-reading date, and the budget and refinery tax crowd the December agenda.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.29,
+              "reason": "Case for Yes: Juchelka is tabling his softening as an MP's amendment (9 Nov), Motoristé back it, unions and employers reportedly agree and ANO needs the savings from January. But at the 9 Nov coalition council Okamura called it insufficient, Juchelka refused to go further, and no deal was reported by 11 Nov with the budget crowding December.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.21,
+              "reason": "No market (Czech search found none); model P(SPD deal) ~0.4 x P(committee, 2nd and 3rd reading before 31 Dec around the budget | deal) ~0.5. Down from 0.27: at the 9 Nov coalition council Okamura called Juchelka's compromise insufficient and Juchelka refused to soften further; no agreement reported by 11 Nov (Blesk, 9 Nov).",
+              "at": "2026-11-11T18:35:00Z"
+            }
+          ],
+          "note": "At the 9 Nov coalition council SPD leader Okamura called Juchelka's softened version insufficient; Juchelka will table it as an MP's amendment and refuses to soften further, Motoristé back it; no deal reported by 11 Nov.",
+          "note_cs": "Na koaliční radě 9. listopadu označil předseda SPD Okamura Juchelkovu zmírněnou verzi za nedostatečnou; Juchelka ji předloží jako poslanecký pozměňovací návrh a dál ustupovat odmítá, Motoristé ji podporují; do 11. listopadu dohoda oznámena nebyla.",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
         }
       ],
       "result": null
@@ -3131,6 +3207,64 @@
             "read_at": "2026-11-08T18:16:37Z",
             "volume": 93563,
             "kind": "exchange"
+          }
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.43,
+          "combined": 0.431,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.5,
+              "reason": "Recent Israeli government formations took 2 to 2.5 months when a bloc had a majority (2021, 2022), but they failed altogether in the 2019-20 deadlocks. Eisenkot's mandate runs to about 20 Dec (extendable). Liberman rejects reliance on the Arab parties, and a UTJ-plus-Ra'am-abstention model was only being explored on 9 Nov, so the outcome is close to a coin flip.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.48,
+              "reason": "Eisenkot has held the mandate since 8 Nov. On 9 Nov Liberman refused to rely on Arab parties, while UTJ would join only on conditions over the draft law (israelhayom, 9 Nov). The opposition's bid for Knesset speaker needs the Arab lists' votes, which shows how fragile any majority is.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.45,
+              "reason": "Case for No: Liberman told Eisenkot on 9 Nov he will not rely on the Arab parties, UTJ sets draft-law conditions the bloc's secularists reject, and the fallback (UTJ plus Ra'am abstention) is fragile; a failed mandate pushes past January. For Yes: the Knesset was sworn in on 10 Nov, UTJ is willing in principle, and the Kahana speaker bid tests Arab-list cooperation.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.5,
+              "reason": "Anchored on interpolated Polymarket ~0.52, nudged down because on 9 Nov Liberman refused to rely on Arab parties and Eisenkot is improvising a UTJ-plus-Ra'am-abstention model (Israel Hayom), while UTJ's conditional willingness and the 10 Nov Knesset swearing-in keep it near even.",
+              "at": "2026-11-11T18:35:00Z",
+              "market": {
+                "source": "polymarket",
+                "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+                "p": 0.52,
+                "read_at": "2026-11-11T18:28:04Z",
+                "match": "partial: no 31 Jan rung; linear interpolation between 'formed by Dec 31' 0.375 and 'by Feb 28' 0.66; 'formed' approximates confidence vote"
+              }
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.25,
+              "reason": "NBC 30 Oct 2026: Netanyahu bloc 53, Eisenkot bloc 48, neither near 61; Arab parties (19) excluded by both blocs, so deadlock/second election plausible. https://www.nbcnews.com/world/israel/israels-final-election-results-show-neither-netanyahu-rival-can-immedi-rcna606290",
+              "at": "2026-11-11T18:28:17.979922Z"
+            }
+          ],
+          "note": "The 26th Knesset was sworn in on 10 Nov; Liberman refuses to rely on the Arab parties, United Torah Judaism sets conditions over the draft law, and Eisenkot's camp is testing a fragile UTJ-plus-Ra'am-abstention model.",
+          "note_cs": "Nový, 26. Kneset složil slib 10. listopadu; Liberman odmítá spoléhat na arabské strany, Sjednocený judaismus Tóry klade podmínky kvůli zákonu o odvodech a Eisenkotův tábor zkouší křehký model s podporou UTJ a zdržením se strany Ra'am.",
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+            "p": 0.52,
+            "read_at": "2026-11-11T18:28:04Z",
+            "match": "partial: no 31 Jan rung; linear interpolation between 'formed by Dec 31' 0.375 and 'by Feb 28' 0.66; 'formed' approximates confidence vote"
           }
         }
       ],
@@ -5083,6 +5217,58 @@
           ],
           "note": "Doerkson is premier-designate; final count 6-10 Nov, MLAs sworn in on 19 Nov and cabinet on 20 Nov, inside the deadline.",
           "note_cs": "Doerkson je určeným premiérem. Konečné sčítání proběhne 6. až 10. listopadu, poslanci složí slib 19. listopadu a vláda 20. listopadu, tedy před termínem."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.94,
+          "combined": 0.943,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.94,
+              "reason": "The scheduled swearing-in of the MLAs (19 Nov) and the cabinet (20 Nov) is unchanged and falls inside the 30 Nov deadline. A 'constitutional question' piece on Castanet could not be read, so a little risk is kept.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.94,
+              "reason": "The final count on 9-10 Nov raised the Conservatives to 64 of 93 seats (CBC, 9 Nov); two judicial recounts cannot change the majority. MLAs are sworn in on 19 Nov and the cabinet on 20 Nov. A 'constitutional question' piece could not be read (403).",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.94,
+              "reason": "Case for No: an unread Castanet report mentions a 'constitutional question' around Doerkson's premiership, which is an unknown. But the timetable is unchanged (MLAs sworn in 19 Nov, cabinet 20 Nov), with a 63-seat majority and ten days of slack.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.95,
+              "reason": "Identity settled per market; timetable unchanged with MLAs sworn in 19 Nov and cabinet 20 Nov, ten days inside the deadline. Small discount for an unread Castanet report on a 'constitutional question' around Doerkson's premiership.",
+              "at": "2026-11-11T18:35:00Z",
+              "market": {
+                "source": "polymarket",
+                "url": "https://polymarket.com/event/next-premier-of-british-columbia",
+                "p": 0.9955,
+                "read_at": "2026-11-11T18:31:00Z",
+                "match": "partial: identity (Doerkson next premier), no timing"
+              }
+            }
+          ],
+          "note": "Weekly re-forecast: the final count gives the BC Conservatives 64 of 93 seats; MLAs are sworn in on 19 Nov and the cabinet on 20 Nov. A Castanet report on a 'constitutional question' could not be read.",
+          "note_cs": "Týdenní přepočet: podle konečného sčítání mají konzervativci v Britské Kolumbii 64 z 93 křesel; poslanci složí slib 19. listopadu, vláda 20. listopadu. Zprávu serveru Castanet o „ústavní otázce“ se nepodařilo přečíst.",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters).",
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/next-premier-of-british-columbia",
+            "p": 0.9955,
+            "read_at": "2026-11-11T18:31:00Z",
+            "match": "partial: identity (Doerkson next premier), no timing"
+          }
         }
       ],
       "result": null
@@ -7294,6 +7480,64 @@
           ],
           "note": "Weekly re-forecast: the Student List says it will form a government and only Brnabić's convening of the Assembly is awaited; no candidate is named yet.",
           "note_cs": "Týdenní přepočet: Studentská kandidátka tvrdí, že sestaví vládu, a čeká se jen na svolání parlamentu předsedkyní Brnabić. Kandidáta zatím nejmenovala."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.71,
+          "combined": 0.712,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.68,
+              "reason": "Serbian governments have often taken months to form after elections (2020 and 2022 took about 4 to 7 months). This time a single list holds a clear majority, the assembly convenes on 17 Nov, and the constitutional limit is 90 days. Still, no PM candidate has been named, and the nomination runs through acting president Brnabić (SNS).",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.72,
+              "reason": "Brnabić has called the new Assembly's constitutive session for 17 Nov (n1info, 8 Nov). That leaves about ten weeks for a nomination and vote with a clear Student List majority, but the list has still named no PM candidate.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.7,
+              "reason": "Case for No: Brnabić, as acting president and speaker, controls the nomination and the calendar, the Student List still has no named PM candidate, and an early presidential election before year-end could be used to delay. But she set the constitutive session for 17 Nov, earlier than feared, leaving about 75 days for a list with 140 of 250 seats.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.74,
+              "reason": "Identity near-certain given the 52.9% majority; the risk is timing and the still-unnamed candidate. Brnabić set the constitutive session for 17 Nov (N1, 8 Nov), leaving about 10 weeks to 31 Jan, enough unless the Student List stalls on its candidate.",
+              "at": "2026-11-11T18:35:00Z",
+              "market": {
+                "source": "polymarket",
+                "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+                "p": 0.74,
+                "read_at": "2026-11-11T18:30:00Z",
+                "match": "partial: identity only, no deadline; sum of Student-List-linked names (Šoškić 0.357, Popović 0.22, Saičić 0.10, Srdanović 0.06)"
+              }
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.72,
+              "reason": "Student List won 140 of 250 seats (RIK final 5 Nov), Vucic conceded, but it has not named a PM and Brnabic is acting president, so process delays possible. https://en.wikipedia.org/wiki/2026_Serbian_parliamentary_election",
+              "at": "2026-11-11T18:28:17.979922Z"
+            }
+          ],
+          "note": "Weekly re-forecast: acting president Brnabić called the new Assembly's constituent session for 17 Nov; the Student List, with a majority of seats, has still not named its candidate for prime minister.",
+          "note_cs": "Týdenní přepočet: úřadující prezidentka Brnabićová svolala ustavující schůzi nového parlamentu na 17. listopadu; Studentská kandidátka, která má většinu mandátů, dosud nejmenovala kandidáta na premiéra.",
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+            "p": 0.74,
+            "read_at": "2026-11-11T18:30:00Z",
+            "match": "partial: identity only, no deadline; sum of Student-List-linked names (Šoškić 0.357, Popović 0.22, Saičić 0.10, Srdanović 0.06)"
+          }
         }
       ]
     },
@@ -9290,6 +9534,44 @@
           ],
           "note": "Opened after the coalition fell to 75 of 150 seats.",
           "note_cs": "Otevřeno poté, co koalice klesla na 75 ze 150 mandátů."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.09,
+          "combined": 0.089,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.08,
+              "reason": "Central European prime ministers who lose a formal majority usually limp on, because a no-confidence vote needs 76 of 150 seats. No no-confidence vote or resignation had been found as of 11 Nov, and the outcome of the 10 Nov votes is unknown.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.11,
+              "reason": "On 11 Nov the coalition lost a priority criminal-code vote 75-74 with one abstention, and Smer now admits it has only 75 MPs and mentions early elections (aktuality.sk, 11 Nov). But early elections would leave Fico in office past January, and Taraba's group is not seeking a no-confidence vote.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.08,
+              "reason": "Case for Yes: Seznam Zprávy (6 Nov) reports the coalition majority has collapsed, with test votes due on 10 Nov whose outcome is unknown. But no no-confidence motion or resignation has appeared, removal needs 76 votes and the defectors do not want early elections.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.09,
+              "reason": "No market (Fico/Slovakia search found none); model. Coalition at 75 of 150, but a no-confidence vote needs 76 and Fico rejects early elections; Seznam Zprávy (6 Nov) reported offers to departing Hlas MPs and votes on 10 Nov, outcome not found. Unchanged.",
+              "at": "2026-11-11T18:35:00Z"
+            }
+          ],
+          "note": "Weekly re-forecast: on 11 Nov the coalition lost a priority criminal-code vote 75–74 and Smer has mentioned early elections, but no no-confidence motion or resignation is in sight, and early elections would leave Fico in office beyond January.",
+          "note_cs": "Týdenní přepočet: koalice 11. listopadu prohrála hlasování o prioritní novele trestního zákoníku 75:74 a Smer zmínil předčasné volby, žádný návrh na vyslovení nedůvěry ani demise však nejsou na obzoru a předčasné volby by Fica v úřadu ponechaly i po lednu.",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
         }
       ]
     },
@@ -9378,6 +9660,58 @@
           ],
           "note": "New question: Republican blame for the Iran war and an impeachment push, with Trump standing by Hegseth.",
           "note_cs": "Nová otázka: republikáni viní válku s Íránem a chystá se ústavní žaloba, Trump však Hegsetha podporuje."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.27,
+          "combined": 0.267,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.25,
+              "reason": "Few cabinet secretaries backed by the president leave within about 11 weeks. On 10 Nov the House voted 211-204 to send the impeachment resolution to committee and Trump praised Hegseth. The Democratic Congress arriving in January keeps some risk alive, but too late to matter much before the deadline.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.28,
+              "reason": "On 10 Nov the House voted 211-204 to refer Massie's impeachment resolution to committee, which killed the floor vote, and Trump praised Hegseth (ceskenoviny.cz 2900326). The immediate pressure has eased, though the Democratic Congress from January keeps a tail.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.26,
+              "reason": "Case for Yes: a Democratic Congress sits in January, Republicans blamed him for the Iran war and a quiet post-midterm reshuffle remains possible. But the House referred Massie's impeachment resolution to committee 211-204 on 10 Nov, killing the floor vote, and Trump praised Hegseth again, so the main forcing event has gone.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.28,
+              "reason": "Anchored on Kalshi out-before-Feb-1 at 0.33 (down from 0.65 a week ago), shaded down because the year-end rungs sit at 0.10-0.125 and on 10 Nov the House voted 211-204 to refer Massie's impeachment resolution to committee while Trump praised Hegseth; the Democratic House arrives in January.",
+              "at": "2026-11-11T18:35:00Z",
+              "market": {
+                "source": "kalshi",
+                "url": "https://kalshi.com/markets/kxhegsethout",
+                "p": 0.33,
+                "read_at": "2026-11-11T18:28:25Z",
+                "match": "close: 'out before Feb 1, 2027' matches the deadline; our criterion also counts an announced removal effective by then. Kalshi before Jan 1 0.10, Polymarket by Dec 31 0.125"
+              }
+            }
+          ],
+          "note": "On 10 Nov the House voted 211–204 to refer Massie's impeachment resolution to the Judiciary Committee, which ends it in this Congress; Trump praised Hegseth. The remaining routes are a resignation or dismissal, or the new Democratic Congress from January.",
+          "note_cs": "Sněmovna reprezentantů 10. listopadu poměrem 211:204 postoupila Massieho návrh na impeachment justičnímu výboru, čímž ho v tomto Kongresu pohřbila; Trump Hegsetha pochválil. Zbývá rezignace či odvolání, nebo nový demokratický Kongres od ledna.",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters).",
+          "market": {
+            "source": "kalshi",
+            "url": "https://kalshi.com/markets/kxhegsethout",
+            "p": 0.33,
+            "read_at": "2026-11-11T18:28:25Z",
+            "match": "close: 'out before Feb 1, 2027' matches the deadline; our criterion also counts an announced removal effective by then. Kalshi before Jan 1 0.10, Polymarket by Dec 31 0.125"
+          }
         }
       ],
       "result": null
@@ -9618,6 +9952,44 @@
           ],
           "note": "Opened after King Philippe refused De Wever's resignation on 6 Nov and sent the coalition back to budget talks.",
           "note_cs": "Otevřeno poté, co král Filip 6. listopadu odmítl De Weverovu demisi a poslal koalici zpět k rozpočtovým jednáním."
+        },
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.2,
+          "combined": 0.2,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.22,
+              "reason": "Belgian kings have accepted resignations they first held back, as with Leterme in 2008, but usually only after talks collapse again. On 9 Nov all five party leaders formally committed to concessions, and De Wever reports to the King on 16 Nov.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.2,
+              "reason": "Per the 9 Nov palace statement, all five coalition leaders formally committed to concessions, and De Wever is holding bilateral budget talks and reports to the King on 16 Nov (vrt.be, 9 Nov). This lowers the chance that the King accepts the resignation, though the deadlock is not resolved.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.2,
+              "reason": "Case for Yes: the Vooruit-MR budget split is structural and De Wever reports back to the King on 16 Nov, so a second failure could come fast and would probably be accepted. But the Palace said on 9 Nov that all five party leaders formally committed to concessions, which makes a patched deal the likelier outcome.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.18,
+              "reason": "No market; reference class of royal-held Belgian resignations (~half accepted, usually quickly). Down from 0.25 because on 9 Nov the Palace said all five coalition leaders formally committed to concessions, with De Wever reporting to the King on 16 Nov (VRT), which is a renewed attempt rather than a breakdown.",
+              "at": "2026-11-11T18:35:00Z"
+            }
+          ],
+          "note": "The palace said on 9 Nov that all five coalition party leaders formally committed to concessions in the budget talks; De Wever reports back to the King on 16 Nov.",
+          "note_cs": "Královský palác 9. listopadu oznámil, že všech pět předsedů koaličních stran se formálně zavázalo k ústupkům v rozpočtových jednáních; De Wever podá králi zprávu 16. listopadu.",
+          "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
         }
       ]
     },
@@ -9715,6 +10087,152 @@
           "market": null,
           "note": "New question. The cabinet approved the bill on 9 November. Government bills almost always pass once voted on, so timing decides: three readings and a committee stage in under five months, with the 2027 budget in December; the industry minister calls it a reserve tool that should not be needed soon, and no fast track has been signalled.",
           "note_cs": "Nová otázka. Vláda návrh schválila 9. listopadu. Vládní návrhy při hlasování téměř vždy projdou, rozhoduje tedy čas: tři čtení a projednání ve výborech za necelých pět měsíců, přičemž prosinec zabere rozpočet na rok 2027. Ministr průmyslu označuje novelu za záložní nástroj, který by neměl být brzy potřeba, a zrychlené projednání nebylo avizováno."
+        }
+      ]
+    },
+    {
+      "id": "cz-safe-second-round",
+      "scope": "cz",
+      "topic": "Czech defence spending",
+      "question": "Will the Czech government approve Czech participation in the second round of the EU SAFE defence-loan instrument by 31 March 2027?",
+      "question_cs": "Schválí česká vláda do 31. března 2027 zapojení Česka do druhého kola evropských obranných půjček SAFE?",
+      "criterion": "Yes if a government resolution (vlada.gov.cz) or a ČTK report shows that the cabinet approved a Czech request for, or participation in, the second round of the EU SAFE loan instrument (any amount) between 11 Nov 2026 and 31 Mar 2027 23:59 CET. Statements of interest by ministers do not count. No otherwise.",
+      "criterion_cs": "Ano, pokud usnesení vlády (vlada.gov.cz) nebo zpráva ČTK doloží, že vláda mezi 11. listopadem 2026 a 31. březnem 2027 (23:59 SEČ) schválila českou žádost o účast nebo účast ve druhém kole evropského úvěrového nástroje SAFE (v jakékoli výši). Projevy zájmu ministrů se nepočítají. Jinak ne.",
+      "resolution_source": "https://vlada.gov.cz/cz/jednani-vlady/",
+      "opened": "2026-11-11",
+      "resolves_by": "2027-03-31T23:59:00+02:00",
+      "background": "Czechia took EUR 2.06bn in the first SAFE round. On 11 Nov 2026 PM Babiš said Czechia is interested in the second round, which has about EUR 21.3bn available after a Commission call in late October, and wants a 'substantially higher' share; the defence ministry is to bring a proposal to the cabinet, while the finance ministry has been lukewarm (ČTK). Kyiv Post reported a submission deadline of 13 Nov for the second round.",
+      "sources": [
+        {
+          "title": "ČTK/České noviny: Česko má zájem zapojit se do obranných půjček SAFE, řekl Babiš (11 Nov 2026)",
+          "url": "https://www.ceskenoviny.cz/zpravy/cesko-ma-zajem-zapojit-se-do-obrannych-pujcek-safe-rekl-babis/2900333"
+        },
+        {
+          "title": "European Commission: SAFE – Security Action for Europe",
+          "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/safe-security-action-europe_en"
+        },
+        {
+          "title": "Kyiv Post: SAFE second round",
+          "url": "https://www.kyivpost.com/post/88653"
+        }
+      ],
+      "base_rate": null,
+      "result": null,
+      "history": [
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.6,
+          "combined": 0.602,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.6,
+              "reason": "Czechia took part in the first SAFE round (EUR 2.06 bn, requested by the cabinet and approved by the EU in spring 2026), and the Commission invited second-round requests in late October (EUR 21.3 bn). On 11 Nov Babiš said the defence ministry will submit a larger request to the cabinet (ČTK), but the finance ministry is lukewarm and the application window is unknown.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.6,
+              "reason": "On 11 Nov Babiš said Czechia wants a substantially larger loan in the second SAFE round and that the defence ministry should bring it to the cabinet, though the finance ministry is lukewarm (ceskenoviny.cz 2900333). The submission deadline is reportedly 13 Nov (Kyiv Post, 30 Oct), which could be missed or met without a cabinet resolution, but approving the plan by March is still likely.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.56,
+              "reason": "Case for No: Babiš (11 Nov) voiced only interest, the defence ministry has yet to prepare the proposal, the finance ministry did not favour it because the interest rate is not set, and the Commission's round-two timetable may not require a cabinet decision before April. For Yes: Babiš wants a 'substantially higher' share than the EUR 2.06 bn of round one, the pot is only EUR 21.3 bn so early applicants gain, and there are 4.5 months.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.6,
+              "reason": "No market; model. On 11 Nov Babiš said Czechia wants to join the second SAFE round with a substantially larger share and that the defence ministry will submit it to cabinet (ČTK); the Commission invited applications in late October and the first-round request was cabinet-approved. The finance ministry is lukewarm and the round's application deadline is not known, so cabinet approval could slip past 31 March.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.65,
+              "reason": "Babis said 11 Nov Czechia wants a bigger share of the second SAFE round, MoD to prepare it for cabinet; Finance Ministry lukewarm; deadline timing unknown. https://www.ceskenoviny.cz/zpravy/cesko-ma-zajem-zapojit-se-do-obrannych-pujcek-safe-rekl-babis/2900333",
+              "at": "2026-11-11T18:28:17.979922Z"
+            }
+          ],
+          "note": "New question: on 11 Nov Babiš said Czechia wants a substantially larger share in the second SAFE round than the EUR 2.06bn of the first; the defence ministry is to bring it to the cabinet, the finance ministry is lukewarm and the timing of the round is unclear.",
+          "note_cs": "Nová otázka: Babiš 11. listopadu řekl, že Česko chce ve druhém kole SAFE podstatně vyšší podíl než 2,06 miliardy eur z prvního kola; ministerstvo obrany má návrh předložit vládě, ministerstvo financí je zdrženlivé a harmonogram kola není jasný."
+        }
+      ]
+    },
+    {
+      "id": "ru-ua-prisoner-swap-1000",
+      "scope": "world",
+      "topic": "War in Ukraine",
+      "question": "Will Russia and Ukraine complete a prisoner exchange returning at least 1,000 people to each side by 15 December 2026?",
+      "question_cs": "Dokončí Rusko a Ukrajina do 15. prosince 2026 výměnu zajatců, při níž se na každou stranu vrátí nejméně 1000 lidí?",
+      "criterion": "Yes if, between 11 Nov and 15 Dec 2026 23:59 CET, Ukraine's Coordination Headquarters for the Treatment of Prisoners of War or the presidency and the Russian defence ministry report a completed exchange (a single swap, or stages announced as one agreed swap) returning at least 1,000 prisoners to each side. Agreements without a completed exchange do not count. No otherwise.",
+      "criterion_cs": "Ano, pokud mezi 11. listopadem a 15. prosincem 2026 (23:59 SEČ) ukrajinský Koordinační štáb pro zacházení s válečnými zajatci nebo prezidentská kancelář a ruské ministerstvo obrany oznámí dokončenou výměnu (jednorázovou, nebo po etapách ohlášených jako jedna dohodnutá výměna), při níž se na každou stranu vrátí nejméně 1000 zajatců. Dohody bez dokončené výměny se nepočítají. Jinak ne.",
+      "resolution_source": "https://koordynatsiinyi-shtab.gov.ua/",
+      "opened": "2026-11-11",
+      "resolves_by": "2026-12-15T23:59:00+01:00",
+      "background": "The US-Russia-Ukraine talks in Abu Dhabi (10–11 Nov 2026) ended without a ceasefire; the one concrete result was agreement on a large prisoner exchange. TASS, citing Russian negotiator Zorin, said more than 1,000 per side, expected in two to three weeks; Kyiv has given no numbers or date. In May 2025 a 1,000-for-1,000 swap agreed in Istanbul was completed in three days about a week later.",
+      "sources": [
+        {
+          "title": "Al Jazeera: Russia-Ukraine talks in Abu Dhabi end with prisoner exchange agreement (11 Nov 2026)",
+          "url": "https://www.aljazeera.com/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement"
+        },
+        {
+          "title": "Kyiv Independent: Large-scale prisoner exchange agreed as 2nd day of Abu Dhabi talks concludes, Umerov says",
+          "url": "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/"
+        }
+      ],
+      "base_rate": null,
+      "result": null,
+      "history": [
+        {
+          "at": "2026-11-11T19:03:17Z",
+          "p": 0.65,
+          "combined": 0.648,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.6,
+              "reason": "The May 2025 Istanbul agreement led to a 1,000-for-1,000 swap within about a week, but other agreed exchanges were staged or delayed. The 11 Nov Abu Dhabi deal ('more than 1,000 each', per TASS, expected in 2-3 weeks) still lacks details, and the deadline of 15 Dec leaves about five weeks.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.68,
+              "reason": "On 11 Nov both sides agreed a 'large-scale' exchange. TASS cites Zorin saying more than 1,000 per side, expected in 2-3 weeks, and Kushner said numbers would be fixed on 12 Nov (Kyiv Independent; Al Jazeera, 11 Nov). The May 2025 1,000-for-1,000 swap was done within about a week, but staged swaps can drag past 15 Dec or end up below 1,000.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.55,
+              "reason": "Case for No: only an agreement in principle exists (Umerov, Medinsky, 11 Nov) with details and date open; the June 2025 Istanbul deal dragged on in stages without clear counts, and the criterion needs both sides to report at least 1,000 each within five weeks. For Yes: Zorin (TASS) says more than 1,000 per side, and the May 2025 1,000-for-1,000 swap was completed nine days after it was agreed.",
+              "at": "2026-11-11T18:28:49Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.68,
+              "reason": "No market (search found none); model from precedent. Both Umerov and Medinsky confirmed on 11 Nov a 'large-scale' swap that TASS (citing Zorin) says will exceed 1,000 per side, expected in 2-3 weeks; the May 2025 1,000-for-1,000 swap was carried out 7-9 days after the Istanbul agreement. Details are still being negotiated and past large swaps slipped, but there are five weeks to 15 Dec.",
+              "at": "2026-11-11T18:35:00Z"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.72,
+              "reason": "Abu Dhabi talks ended with a 'fundamental agreement' (Medinsky); TASS says more than 1,000 each side; the May 2025 1,000-for-1,000 swap was done in 3 days, but date unannounced. https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/",
+              "at": "2026-11-11T18:28:17.979922Z"
+            }
+          ],
+          "note": "New question: Abu Dhabi ended on 11 Nov with an agreed large prisoner exchange (TASS: more than 1,000 per side in two to three weeks); neither date nor numbers have been confirmed by Kyiv.",
+          "note_cs": "Nová otázka: jednání v Abú Zabí skončila 11. listopadu dohodou o velké výměně zajatců (podle TASS přes 1000 na každou stranu do dvou až tří týdnů); Kyjev datum ani počty nepotvrdil."
         }
       ]
     }
