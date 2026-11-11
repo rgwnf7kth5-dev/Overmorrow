@@ -10,7 +10,6 @@
 
 ## Facts
 - Czech representation at the Dublin EPC is not announced in any source opened tonight — work/sweep/cz.json (10 Nov) "No source confirms who attends the EPC"; searches tonight (see Sources) found nothing newer.
-- Cabinet approved Babiš's mandate for the 13 Nov informal EU meeting only — Kurzy.cz summary of 9 Nov cabinet results, as cited in work/sweep/cz.json; URL not recorded; not re-read tonight.
 - President Pavel meets Babiš on Wed 11 Nov at 08:00 at Prague Castle about, among other things, "nadcházejících zahraničních návštěvách a cestách" — ČTK https://www.ceskenoviny.cz/zpravy/pavel-bude-jednat-s-babisem-mimo-jine-o-jmenovani-predsedy-uohs/2900135 (published 2026-11-10 15:44, read 2026-11-10T17:55Z) "Podle Hradu je středeční setkání obou politiků pravidelné a plánované."
 - Seznam Zprávy: Babiš's letter to Costa "bude i tématem neformálního setkání evropských lídrů v Dublinu, které se bude konat ve čtvrtek a v pátek tento týden" — https://www.seznamzpravy.cz/clanek/zahranicni-stredni-evropa-nenechame-se-vydirat-merzem-prohlasili-babis-s-ficem-320172 (published 2026-11-10T12:02Z, read 2026-11-10T17:56Z).
 - On 10 Nov in Bratislava, Babiš and Fico rejected Merz's call for all EU states to commit to covering Ukraine's 2027 budget gap; Babiš sent Costa a letter "před neformálním summitem EU v Dublinu" — ČTK https://www.ceskenoviny.cz/zpravy/babis-a-fico-se-ohradili-vuci-vyzve-merze-k-financni-podpore-ukrajiny/2899954 (published 2026-11-10 11:42, read 2026-11-10T17:55Z).
@@ -41,3 +40,6 @@
 - https://eurozpravy.cz/domaci/babis-bude-v-armenii-jednat-se-zelenskym-ci-starmerem.av7xbtcr
 - work/sweep/cz.json, work/sweep/europe.json, work/sweep/running.json
 - WebSearch (10 Nov, ~17:56Z): "Babiš Dublin summit Evropského politického společenství"; "Babiš Dublin čtvrtek odletí summit listopad 2026"; "vláda mandát neformální setkání hlav států Dublin 13. listopadu Babiš"; "Babiš Merz schůzka Dublin Ukrajina půjčka" — no report on Czech EPC representation.
+
+
+_Morning check 11 Nov 2026: 1 line(s) citing a Czech financial news site (analyst previews and a cabinet summary) were moved to the signals file because the validator treats the site name as a market word; the evening blind estimates had seen them._
