@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "pooled": {
-  "n": 30,
-  "rms_in_scales": 1.284,
+  "n": 33,
+  "rms_in_scales": 1.445,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -139,10 +139,19 @@
      "centre": 47.01,
      "scale_used": 0.349,
      "source": "Last published cap (Cenový věstník 119/2026, valid 7-9 Nov); no analyst consensus exists"
+    },
+    {
+     "edition": "2026-11-12",
+     "claim": "cz-diesel-max-12",
+     "consensus": 46.7,
+     "first": 45.87,
+     "centre": 46.12,
+     "scale_used": 0.36,
+     "source": "Persistence: last cap published before the freeze (valid 10 Nov), MF Cenový věstník 120/2026 of 9 Nov; no analyst forecast of daily caps exists"
     }
    ],
-   "n": 1,
-   "rms_surprise": 0.58
+   "n": 2,
+   "rms_surprise": 0.716
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -559,6 +568,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.88
+  },
+  "siemens-energy-group-revenue-fiscal-year-2026-as-first-repor": {
+   "unit": "EUR bn",
+   "records": [
+    {
+     "edition": "2026-11-12",
+     "claim": "de-siemens-energy-revenue-12",
+     "consensus": 44.14,
+     "first": 44.243,
+     "centre": 44.16,
+     "scale_used": 0.27,
+     "source": "Reported Q1-Q3 revenue EUR 31.416bn (MarketScreener table) plus Q4 consensus EUR 12.72bn (average of estimates, trading-treff.de 27 Oct 2026); MarketScreener FY2026 estimate EUR 44.194bn (28 analysts) as cross-check. Company-compiled consensus not found published."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.103
+  },
+  "csg-group-revenue-january-september-2026-as-reported-in-the-": {
+   "unit": "EUR billion",
+   "records": [
+    {
+     "edition": "2026-11-12",
+     "claim": "cz-csg-revenue-12",
+     "consensus": 5.21,
+     "first": 4.761,
+     "centre": 5.248,
+     "scale_used": 0.12,
+     "source": "J&T Banka preview, kurzy.cz 7 Nov 2026: https://zpravy.kurzy.cz/881020-pristi-tyden-bude-na-trzich-stale-rezonovat-vysledek-americkych-midterms-a-pokracuje-vysledkova/"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.449
   }
  },
  "extra": {}
