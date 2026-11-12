@@ -39,3 +39,7 @@
 - https://www.eunews.it/2026/11/05/costa-chiama-i-ventisette-a-dublino-lue-deve-definire-la-sua-posizione-nella-corsa-globale-sullia/
 - data/dossiers/2026-11-13/cz-babis-noloan-13.md; work/agenda_cz.json
 - WebSearch (11 Nov ~17:58Z): "Babiš Dublin Ukrajina financování půjčka Kbely summit listopad 2026" (only older Dec 2025 items).
+
+## Overnight facts (morning desk, 12 Nov ~05:15 CET)
+- In his letter to Merz, Costa writes that Ukraine's 2027 financing will be dealt with at the Special European Council: "We will address this issue in the Special European Council on 26-27 November", after a Commission proposal; Dublin will "make time for a broad discussion on Ukraine". Kyiv Independent lists Czechia among the states pushing back — https://kyivindependent.com/eus-costa-keeps-ukraine-funding-talks-on-late-november-agenda-despite-merz-appeal/ (2026-11-11T03:15Z). So the €45bn decision is formally not on the Dublin agenda (the dossier earlier said it was, citing Xinhua and EUobserver); Babiš may still be asked at doorsteps.
+- No new Babiš statement on Ukraine financing since 11 Nov 18:20 (ČTK, Novinky, Seznam Zprávy checked 05:10 CET 12 Nov).
