@@ -1,0 +1,4 @@
+# fr-protest-count-15 — signals
+- markets.mjs search "France protest" (read 2026-11-12T17:56:35Z): Polymarket — France declares state of emergency by 31 Dec 2026 (Yes 0.021, volume ~2.21m); state of siege by 15 Nov (0.003, ~137k) and by 31 Dec (0.0185, ~104k); France accuses foreign country of provoking unrest by 30 Nov (0.0365, ~47k); Macron ceases to be President before 2027 (0.041, ~35k); new Republic by 2030 (0.18, ~117). None matches turnout on 14 Nov. No matching market.
+- markets.mjs search "France fuel shortage" (read 2026-11-12T17:56:39Z): unrelated football markets only.
+- No intelligence-service (renseignement territorial) forecast for 14 Nov found. Series fr-acte-interior-ministry-count-2026 has n=1 record (8 Nov edition: consensus 320, outcome 146); series.mjs scale says use published/pooled (n<4).

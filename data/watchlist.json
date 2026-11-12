@@ -4131,6 +4131,79 @@
             "p": 0.94,
             "read_at": "2026-11-10T18:20:30Z"
           }
+        },
+        {
+          "at": "2026-11-12T19:45:00+01:00",
+          "p": 0.95,
+          "combined": 0.948,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:15Z",
+              "p": 0.94,
+              "reason": "Scheduled Fed decisions almost never break from near-certain market pricing (central-bank-decision slip 0.01; FOMC moves in central-banks.json track guidance); hot October CPI pushed futures to ~100% and Waller/Dallas Fed back a hike. Shaded below market for a month of data risk (November CPI/payrolls, energy de-escalation).",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:18Z",
+              "p": 0.95,
+              "reason": "October CPI beat (headline 0.4%, core 0.3% m/m), CME FedWatch put a 9 Dec hike at 100% and even dove Waller talks of 50bp while Logan wants at least two more hikes; only a sharp shock before 8-9 Dec would produce a hold.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-12T18:24:46Z",
+              "p": 0.94,
+              "reason": "Hot October CPI and payrolls, two October dissents, Waller and Dallas pushing 25-50bp and futures near 100% make a December hike the clear base case. The case against is a month of tail risk: a sudden Iran settlement collapsing energy prices, a financial accident, weak November data, or Warsh, who has refused to pre-commit, holding.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:27:37Z",
+              "p": 0.97,
+              "reason": "Polymarket's December Fed event prices a 25bp hike at 0.895 and a 50+bp hike at 0.095, about 0.99 for any hike, which fits futures near 100% after the hot October CPI. Capped at 0.97 because a month of data and the meeting are still to come.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-12T18:24:53Z",
+              "p": 0.93,
+              "reason": "Hot October CPI, Waller and Dallas Fed hawkish, markets about 100% for a hike; residual risk is a shock reversal or Iran de-escalation before 9 Dec.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+            "p": 0.99,
+            "read_at": "2026-11-12T18:24:53Z",
+            "volume": 12919213
+          },
+          "note": "US October CPI came in hot on 10 Nov (+0.4% m/m, core +0.3%, both above consensus); futures price a December hike at about 100% and Waller says 50 points should be considered.",
+          "note_cs": "Říjnová inflace v USA 10. listopadu překonala odhady (+0,4 % meziměsíčně, jádrová +0,3 %); trhy počítají s prosincovým zvýšením sazeb téměř jistě a Waller připouští i krok o 50 bodů."
         }
       ],
       "result": null
@@ -4518,6 +4591,79 @@
           ],
           "note": "Reports of possible direct talks in the coming days, and Trump says there may be no reason to resume combat, though no round is set and Iran calls the US reply unconvincing.",
           "note_cs": "Objevily se zprávy o možných přímých jednáních v nejbližších dnech a Trump říká, že možná není důvod obnovovat boje; žádné kolo však není stanoveno a Írán označil americkou odpověď za nepřesvědčivou."
+        },
+        {
+          "at": "2026-11-12T19:45:00+01:00",
+          "p": 0.24,
+          "combined": 0.244,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:15Z",
+              "p": 0.22,
+              "reason": "Stalled wartime talks with hard preconditions on both sides rarely produce a jointly confirmed same-venue round within seven weeks; the 'direct talks within days' report did not materialise, Iran now demands its conditions be implemented first and the US is adding sanctions, so trimmed down, with Qatari mediation and Trump's 'momentum' keeping a tail.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:18Z",
+              "p": 0.27,
+              "reason": "Al Jazeera (12 Nov) describes talks as stalled with Ghalibaf requiring the seven conditions before Iran returns to talks and the US adding sanctions and keeping the blockade instead of conceding; Qatari mediation and past quick same-venue rounds in Doha keep a confirmed round by 31 Dec possible but less likely than a week ago.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-12T18:24:46Z",
+              "p": 0.19,
+              "reason": "Positions hardened on 12 Nov: Ghalibaf demands the seven conditions be implemented before any talks, Rubio calls them unacceptable, and the 'direct talks within days' report of 5 Nov lapsed; the criterion also needs both governments to confirm a same-venue round, not message-passing. Seven weeks, active Qatari mediation and Trump's 'momentum' talk keep a quick convened round possible.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:27:37Z",
+              "p": 0.27,
+              "reason": "Polymarket's 'Next US-Iran senior diplomatic meeting by December 31' trades at 0.315 ($840k volume). Shaded down because our criterion needs both governments to confirm a same-venue negotiating round, and on 12 Nov Iran made implementing its conditions a precondition for any talks.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-12T18:24:53Z",
+              "p": 0.28,
+              "reason": "Iran makes implementing its seven conditions a precondition and Rubio calls them unacceptable; Qatar mediation continues, but a both-sides-confirmed same-venue round in about seven weeks is less likely than not.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-us-iran-senior-diplomatic-meeting-byptptpt",
+            "p": 0.315,
+            "read_at": "2026-11-12T18:24:58Z",
+            "volume": 840286
+          },
+          "note": "Weekly re-forecast. The reported direct talks did not happen; on 12 Nov Ghalibaf said Iran's seven conditions must be implemented before it returns to talks, Rubio calls them unacceptable and the US has tightened sanctions; Qatar keeps mediating.",
+          "note_cs": "Týdenní přepočet. Ohlašované přímé rozhovory se nekonaly; Ghalíbáf 12. listopadu uvedl, že Írán se k jednání vrátí až po splnění svých sedmi podmínek, Rubio je označil za nepřijatelné a USA zpřísnily sankce; Katar dál zprostředkovává."
         }
       ],
       "result": null
@@ -7127,6 +7273,72 @@
           ],
           "note": "Second reading now put in January or February and the coalition reopens the formula on 9 Nov, which leaves little room for a third reading by 31 January.",
           "note_cs": "Druhé čtení se nyní čeká v lednu nebo únoru a koalice se 9. listopadu vrací ke vzorci, takže na třetí čtení do 31. ledna zbývá málo prostoru."
+        },
+        {
+          "at": "2026-11-12T19:45:00+01:00",
+          "p": 0.09,
+          "combined": 0.09,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:15Z",
+              "p": 0.11,
+              "reason": "Government bills almost always pass their third reading eventually (cz-chamber.json ~95-99%), but timing is the constraint: government-bill readings slip ~60% per meeting, second reading is only planned for January with the funding model still open and obstruction promised, leaving little room for a third reading by 31 Jan.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:18Z",
+              "p": 0.12,
+              "reason": "ČTK (10 Nov) says the second reading is set for January while the coalition still agrees only on abolishing fees with several funding models open, and the opposition promises obstruction, so a third reading by 31 Jan needs a fast, forced timetable.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-12T18:24:46Z",
+              "p": 0.09,
+              "reason": "Second reading is only due in January after the unshortened committee period, the coalition agrees on abolition but not on a funding model, SPD expects the model in the first half of 2027, CT pushes for 2028 and the opposition promises obstruction. A third-reading vote by 31 Jan would need a settled formula and fixed-time voting within a few January sitting weeks.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:27:37Z",
+              "p": 0.12,
+              "reason": "The committee period runs to 24 Dec, the second reading is only pencilled in for January with the funding formula unresolved, and obstruction is promised. The slip model gives 0.65 for Czech Chamber government-bill readings, so passing both the second and third readings by 31 Jan is unlikely.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-12T18:24:53Z",
+              "p": 0.04,
+              "reason": "Second reading is not before late December or January, the funding model is unresolved and the opposition is obstructing, so third reading by 31 Jan is very unlikely.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. ČTK (10 Nov): the second reading is pencilled in for January and the funding model is still open; ČT wants the change no earlier than 2028 and the opposition promises obstruction.",
+          "note_cs": "Týdenní přepočet. Podle ČTK (10. listopadu) je druhé čtení předběžně naplánováno na leden a model financování zůstává otevřený; ČT chce změnu nejdříve od roku 2028 a opozice slibuje obstrukce."
         }
       ]
     },
@@ -9812,6 +10024,72 @@
             "read_at": "2026-11-06T18:30:56Z"
           },
           "market_note": "Kalshi asks about a meeting before 1 Jan, a longer window."
+        },
+        {
+          "at": "2026-11-12T19:45:00+01:00",
+          "p": 0.41,
+          "combined": 0.411,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:15Z",
+              "p": 0.38,
+              "reason": "No precedent for a separate Trump-Xi-Putin three-way meeting, and announced-but-unconfirmed leader formats often shrink to bilaterals; Trump's expectation and all three heading to Shenzhen raise it from a low base, but Kremlin readouts mention only a Putin-Trump talk and no format is confirmed.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:25:18Z",
+              "p": 0.5,
+              "reason": "Trump and Putin are both set for Shenzhen (Trump's 8 Nov remarks; Ushakov 12 Nov via ČTK) and Trump expects a three-way meeting with China saying it is in contact, but Ushakov spoke only of Putin-Trump talks and no separate trilateral format is confirmed.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-12T18:24:46Z",
+              "p": 0.44,
+              "reason": "All three leaders look set to be in Shenzhen and Trump expects a three-way meeting, but the format is still unconfirmed six days out: Ushakov spoke only of a Putin-Trump talk on Ukraine, Beijing has said no more than 'in communication', and the criterion excludes bilaterals, photos and wider sessions. Any travel cancellation or a host preference for separate bilaterals yields No.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-12T18:27:37Z",
+              "p": 0.55,
+              "reason": "No market covers a separate three-way meeting. Polymarket's 'Trump, Putin and Xi seen together before 2027' (0.94) is far looser, since a group photo counts there. All three are expected in Shenzhen and Trump says one meeting will be with Putin and Xi, but the format is unconfirmed and the Kremlin speaks only of a Trump-Putin talk.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-12T18:24:53Z",
+              "p": 0.22,
+              "reason": "Trump expects a meeting with Putin and Xi, but Ushakov spoke only of Putin and Trump on Ukraine, and Beijing has not confirmed a separate three-way format.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Trump says one of his Shenzhen meetings will be with Putin and Xi, but on 12 Nov the Kremlin (Ushakov) spoke only of a Putin–Trump conversation at APEC; no separate three-way format is confirmed six days before the summit.",
+          "note_cs": "Trump tvrdí, že jedna ze schůzek v Šen-čenu bude s Putinem a Si Ťin-pchingem, Kreml (Ušakov) ale 12. listopadu hovořil jen o rozhovoru Putina s Trumpem na summitu APEC; samostatná trojstranná schůzka šest dní před summitem potvrzena není."
         }
       ]
     },
