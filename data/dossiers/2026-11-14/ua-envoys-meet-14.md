@@ -1,0 +1,5 @@
+# ua-envoys-meet-14
+- **Claim:** Volodymyr Zelensky meets US envoys Steve Witkoff and/or Jared Kushner in person by 23:59 Dublin time on Friday 13 November 2026.
+- **Criterion:** YES if the Office of the President of Ukraine (president.gov.ua or Zelensky's official channels), the White House or the US envoys, or at least one of Kyiv Independent, Ukrinform, Ukrainska Pravda, BBC, Reuters or AP reports that Zelensky met Witkoff, Kushner or both in person (in Dublin or anywhere else) in a meeting that began between 05:40 CET on 12 Nov 2026 and 23:59 Dublin time (GMT) on 13 Nov 2026. A phone or video call does not count. NO if no such in-person meeting begins in that window (postponed to 14 Nov or later, cancelled, or replaced by a call).
+- **Event window:** 2026-11-12T05:40+01:00 to 2026-11-13T23:59+00:00 (Europe/Dublin)
+- **Written at:** 2026-11-12T04:30Z (morning desk: main claim reframed to whether the debrief happens at all by Friday night; the date question stays in ua-envoys-zelensky-14). All facts: data/dossiers/2026-11-14/ua-envoys-zelensky-14.md including its "Overnight facts" section.
