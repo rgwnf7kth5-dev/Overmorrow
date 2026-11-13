@@ -1,0 +1,198 @@
+{
+  "claim": "cz-letna-count-16",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-13T18:21:55Z",
+  "finished_at": "2026-11-13T18:23:34Z",
+  "steps": [
+    {
+      "n": 1,
+      "action": "data",
+      "target": "scripts/refdata/slip.mjs strike-or-protest",
+      "found": "Slip class strike-or-protest: P(event slips) 0.06, so rally very likely held; count threshold must come from history.",
+      "belief": {
+        "p": 0.35,
+        "confidence": "low",
+        "for": [
+          "Slip class strike-or-protest: only 6% of protests slip — scripts/refdata/slip.mjs",
+          "Milion chvilek has a history of announcing round, large figures for Letna (~250,000+ in June and Nov 2019, from memory)"
+        ],
+        "against": [
+          "300,000 would exceed the organisers' own 2019 Letna peaks (~250-300k), a record-level claim",
+          "Organisers' first figure is often given mid-rally and later revised up; criterion uses first final figure by 23:59"
+        ],
+        "open": [
+          "What Milion chvilek announced for recent 2025-2026 rallies",
+          "Whether this rally is billed as record-scale / mobile-operator data plans",
+          "Any news on expected turnout or permit for 15 Nov 2026"
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "action": "search",
+      "target": "Milion chvilek Letná proti 4:36 15. listopadu 2026",
+      "found": "Results show an earlier 2026 Saturday Letna demonstration by Milion chvilek (ceskenoviny 2802485, Turek and Babis reacting) and public-media fee protests on Old Town Square; a further Letna is being called (iprima).",
+      "belief": {
+        "p": 0.35,
+        "confidence": "low",
+        "for": [
+          "Slip class strike-or-protest: only 6% of protests slip — scripts/refdata/slip.mjs",
+          "Milion chvilek already held a 2026 Letna rally (Babis/Turek reacted) and is calling 'another Letna' — https://www.ceskenoviny.cz/zpravy/2802485 , https://cnn.iprima.cz/...-504358",
+          "Organisers historically announce round large Letna figures (~250k in 2019, memory)"
+        ],
+        "against": [
+          "300,000 would match or exceed the organisers' record Letna claims",
+          "Parallel smaller Old Town Square media protests suggest fragmented mobilisation — expats.cz"
+        ],
+        "open": [
+          "What figure organisers announced for the earlier 2026 Letna rally (read ceskenoviny 2802485)",
+          "Whether 15 Nov rally is billed as bigger / expected turnout"
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "action": "read",
+      "target": "https://www.ceskenoviny.cz/zpravy/2802485",
+      "found": "At the 21 Mar 2026 Letna rally Milion chvilek announced 'at least a quarter million' (nejmene 250,000) — below 300,000.",
+      "belief": {
+        "p": 0.3,
+        "confidence": "medium",
+        "for": [
+          "Slip class strike-or-protest: only 6% of protests slip — scripts/refdata/slip.mjs",
+          "Organisers do announce a same-day figure at Letna (21 Mar 2026: 'at least 250,000') — https://www.ceskenoviny.cz/zpravy/2802485",
+          "15 Nov is the eve of 17 Nov anniversary; 16 Nov 2019 Letna drew organisers' claims of ~250-300k (memory)",
+          "Media-fee abolition and other government moves may have intensified mobilisation since March"
+        ],
+        "against": [
+          "Most recent comparable (Mar 2026 Letna) organiser figure was 250,000, under threshold — ceskenoviny 2802485",
+          "Organisers tend to reuse the round 'quarter million' claim; 300k would be a record announcement",
+          "Fragmented protests (Old Town Square media rallies) may drain turnout — expats.cz"
+        ],
+        "open": [
+          "Pre-rally signals for 15 Nov: expected turnout, organisers' framing (biggest ever?), what '4:36' refers to",
+          "Any organiser statements on 2019 Nov figure as benchmark"
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "action": "search",
+      "target": "\"Letná proti 4:36\" Milion chvilek",
+      "found": "No direct page on the 15 Nov rally; results mostly the March 2026 Letna coverage and a Seznam podcast on '4:36' tied to the TV/radio fee abolition; no turnout forecast for November surfaced.",
+      "belief": {
+        "p": 0.3,
+        "confidence": "medium",
+        "for": [
+          "Slip class strike-or-protest: only 6% of protests slip — scripts/refdata/slip.mjs",
+          "Organisers announce a same-day figure at Letna (21 Mar 2026: 'at least 250,000') — https://www.ceskenoviny.cz/zpravy/2802485",
+          "15 Nov is the eve of 17 Nov anniversary, historically the peak mobilisation date (Nov 2019 Letna)",
+          "'4:36' theme tied to public-media fee abolition, a highly mobilising issue — https://www.seznamzpravy.cz/clanek/318753"
+        ],
+        "against": [
+          "Most recent comparable (Mar 2026 Letna) organiser figure was 250,000, under threshold — ceskenoviny 2802485",
+          "Organisers tend to reuse the round 'quarter million' claim; 300k would be a record announcement",
+          "Several protests since March (Old Town Square media rallies) may cause fatigue — expats.cz"
+        ],
+        "open": [
+          "November-specific pre-rally news: expected size, organisers' ambitions, weather",
+          "Did 2019 November Letna organisers claim 300k (benchmark for 'record' framing)"
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "action": "search",
+      "target": "Milion chvilek Letná 15. listopadu demonstrace Minář očekává",
+      "found": "Confirms March 2026 Minar stage claim 'at least 250,000' (iprima 507398); recent ids ceskenoviny 2893236 and seznamzpravy 319701/319991 likely cover the November rally.",
+      "belief": {
+        "p": 0.3,
+        "confidence": "medium",
+        "for": [
+          "Slip class strike-or-protest: only 6% of protests slip — scripts/refdata/slip.mjs",
+          "Organisers announce from stage (Minar 21 Mar 2026: 'at least 250,000') — https://cnn.iprima.cz/on-line-je-nas-tu-az-250-tisic-prohlasil-na-letne-minar-akci-doprovazi-narusitele-507398",
+          "15 Nov is eve of 17 Nov anniversary, historically peak mobilisation",
+          "Fee-abolition theme ('4:36') highly mobilising — https://www.seznamzpravy.cz/clanek/318753"
+        ],
+        "against": [
+          "Latest comparable organiser figure 250,000, under threshold — ceskenoviny 2802485",
+          "Organisers reuse round 'quarter million'; 300k would be record",
+          "Multiple 2026 protests may cause fatigue — expats.cz"
+        ],
+        "open": [
+          "Read recent ceskenoviny 2893236 for November rally preview (expected size, framing)"
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "action": "read",
+      "target": "https://www.ceskenoviny.cz/zpravy/2893236",
+      "found": "26 Oct 2026: Minar confirms 15 Nov Letna protest against the '4:36' night vote on abolishing TV/radio fees; escalating conflict with Babis, Old Town Square protest drew 'thousands'.",
+      "belief": {
+        "p": 0.33,
+        "confidence": "medium",
+        "for": [
+          "Slip class strike-or-protest: only 6% slip; rally confirmed by Minar 26 Oct — https://www.ceskenoviny.cz/zpravy/2893236",
+          "Organisers announce from stage (Minar 21 Mar 2026: 'at least 250,000') — https://cnn.iprima.cz/...-507398",
+          "Escalated grievance: fee abolition passed to 2nd reading at 04:36, heated govt-vs-Milion chvilek rhetoric, 17 Nov framing — ceskenoviny 2893236",
+          "Eve of 17 Nov historically peak mobilisation"
+        ],
+        "against": [
+          "Latest comparable organiser figure 250,000 (Mar 2026), under threshold — ceskenoviny 2802485",
+          "Organisers reuse round 'quarter million'; 300k would be a record claim (2019 peaks ~250-300k)",
+          "November weather and protest fatigue after Oct media protests"
+        ],
+        "open": [
+          "Latest pre-rally news (Nov 2026): expected size, any organiser 'biggest since 1989' framing"
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "action": "search",
+      "target": "Letná neděle Milion chvilek demonstrace listopad 2026 poplatky účast",
+      "found": "Nothing new on the November rally; March 2026 coverage repeats organisers' 'up to / at least 250,000' framing.",
+      "belief": {
+        "p": 0.33,
+        "confidence": "medium",
+        "for": [
+          "Slip class strike-or-protest: only 6% slip; rally confirmed by Minar 26 Oct — https://www.ceskenoviny.cz/zpravy/2893236",
+          "Organisers announce from stage (Minar 21 Mar 2026: 'at least 250,000') — https://cnn.iprima.cz/...-507398",
+          "Escalated grievance: fee abolition to 2nd reading at 04:36, 17 Nov framing — ceskenoviny 2893236",
+          "Eve of 17 Nov historically peak mobilisation"
+        ],
+        "against": [
+          "Latest comparable organiser figure 250,000 (Mar 2026), under threshold; repeated round 'quarter million' convention — ceskenoviny 2802485, newstream",
+          "300k would be a record organiser claim",
+          "November weather, protest fatigue after Oct media protests"
+        ],
+        "open": [
+          "None resolvable within budget; submit"
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "action": "submit",
+      "target": "-",
+      "found": "Submitted p_blind 0.33: rally very likely held; organisers' habitual round figure is 250k, 300k needs a record claim, though grievance is sharper than in March.",
+      "belief": {
+        "p": 0.33,
+        "confidence": "medium",
+        "for": [
+          "Rally confirmed, slip rate 6%",
+          "Sharper grievance and 17 Nov eve timing"
+        ],
+        "against": [
+          "Organisers' last two Letna-scale claims centred on 250,000",
+          "300k would be a record"
+        ],
+        "open": []
+      }
+    }
+  ],
+  "p_blind": 0.33,
+  "p": 0.3,
+  "p_note": "Signals: no market or odds; sociologist Herzmann expects 'well over 100,000' (Seznam Zpravy, 4 Nov), a modest expectation that does not point to a record 300k organiser claim."
+}
