@@ -1,0 +1,94 @@
+{
+  "edition": "2026-11-13",
+  "checked_at": "2026-11-13T05:10:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 12, read 13 Nov 04:01 UTC; 13 entries at that time)",
+    "ct24 (front page links, read 13 Nov 04:01 UTC)",
+    "ctk (ceskenoviny.cz front page and ekonomika section, with timestamps, read 13 Nov 04:01-04:05 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2); no WebSearch budget was spent on their top-stories lists. List (b) is represented only by Reuters/AP citations inside Wikipedia entries, marked as such.",
+    "ct24 SOUHRN for 12 Nov was not found among the front-page links read; ct24 is represented by its front page only."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries without a Reuters/AP citation and not on ct24 or ctk as read: Haitian and Salvadoran troops retake Stade Sylvio Cator (France 24); Bangladesh BNP factional clash in Munshiganj (TBS); Fujairah multi-vehicle crash, 14 dead (AFP, Al Jazeera); Bangladesh measles toll (BSS); Europol Operation TorNado (AFP); Microsoft 365/Teams outage (BBC)",
+    "Sport excluded: Finland and Norway bar Russian athletes (Wikipedia, ctk, ct24); football and tennis results on ctk",
+    "ctk-only: EPC summit in Dublin backs Ukraine, says Irish PM (covered anyway: epc-dublin); Babiš meets Zelensky in Dublin (covered anyway: cz-babis-dublin); ČEZ nine-month results and raised outlook (covered anyway: cz-cez); fuel caps for Friday (covered anyway: cz-fuel-cap); V4 parliament speakers back ETS2 delay; Holiš stays head of the Association of Regions; customs officers help uncover cocaine smuggling; poll: a fifth of Czechs would welcome a return to communism; Israel bars Mélenchon; Česká elita ranking; D11 and D35 road openings",
+    "ct24-only: FBI says North Korean hackers stole over USD 400m in crypto; regions demand a guaranteed share of groundwater fees; US-China dispute over the form of a Trump-Xi-Putin summit in Shenzhen; Storm Charles in southern Portugal and the Canaries; video and feature pieces",
+    "Refinery windfall tax second reading (ctk, ct24): takes place on Fri 13 Nov, not 12 Nov (covered as cz-sector-tax eve story)"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in earlier files, ct24 and ctk count as lists for non-Czech events too, and a Reuters/AP citation inside a Wikipedia entry counts as list (b). The planning file was prepared 10 Nov 18:26 UTC. No missed event was announced in advance, so there is no sweep gap; the Huang resignation is the significant miss, a running story (nvidia-huang in edition 2026-11-12) not carried into this edition's planning.",
+  "events": [
+    {
+      "title": "Zelensky and US envoy Kushner announce European representatives will join future peace talks; Witkoff and Kushner meet Putin in Moscow, then Zelensky in Dublin",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "reuters (as cited in the Wikipedia entry; Reuters page not read)",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/evropske-zeme-se-pripoji-k-dalsimu-jednani-o-ukrajine-rekl-witkoff-/2900950",
+      "status": "covered",
+      "story": "ua-talks"
+    },
+    {
+      "title": "Jensen Huang resigns as Nvidia CEO and leaves the board after reports of affairs, one with a suspected Chinese intelligence agent; CFO Colette Kress becomes interim CEO",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "reuters (as cited in the Wikipedia entry; Reuters page not read)",
+        "ctk",
+        "ct24"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/sef-nvidie-jensen-huang-rezignoval-379557",
+      "status": "missed",
+      "note": "Nowhere in the planning file for this edition, though nvidia-huang ran in edition 2026-11-12 (claims on a briefing, a letter and Huang stepping aside by 11 Nov, the last at 1%). The resignation was not announced in advance; a running-story follow-up with an exit claim over a longer window would have caught it."
+    },
+    {
+      "title": "Gunman near the White House (Logan Circle, Washington) shoots five people, one fatally, then kills himself",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)",
+        "ct24"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/strelec-nedaleko-bileho-domu-zabil-jednoho-cloveka-dalsi-ctyri-postrelil-379568",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced; crime excluded by policy anyway."
+    },
+    {
+      "title": "British court convicts two Iranian men of spying on journalists of London-based Iran International, one also of preparing a violent attack; a third is acquitted",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_12",
+      "status": "missed",
+      "note": "Nowhere in the planning file. A jury verdict has no date announced in advance; criminal proceedings are excluded by policy."
+    },
+    {
+      "title": "Turkish military helicopter crashes in Samankoy, killing four soldiers",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_12",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Accident, not announced; disasters excluded by policy."
+    },
+    {
+      "title": "Bus crashes into a slope in Bhimphedi, Nepal, killing ten",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "ap (as cited in the Wikipedia entry; AP page not read)"
+      ],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_12",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Accident, not announced; disasters excluded by policy."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "pooled": {
-  "n": 33,
+  "n": 36,
   "rms_in_scales": 1.445,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
@@ -148,10 +148,19 @@
      "centre": 46.12,
      "scale_used": 0.36,
      "source": "Persistence: last cap published before the freeze (valid 10 Nov), MF Cenový věstník 120/2026 of 9 Nov; no analyst forecast of daily caps exists"
+    },
+    {
+     "edition": "2026-11-13",
+     "claim": "cz-diesel-max-13",
+     "consensus": 46.4,
+     "first": 45.49,
+     "centre": 45.92,
+     "scale_used": 0.37,
+     "source": "Persistence: last cap published before the freeze, Cenový věstník 121/2026 of 10 Nov for 11 Nov (46.40 CZK/l); no analyst forecast exists."
     }
    ],
-   "n": 2,
-   "rms_surprise": 0.716
+   "n": 3,
+   "rms_surprise": 0.786
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -600,6 +609,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.449
+  },
+  "c-ez-group-adjusted-net-profit-january-september-2026": {
+   "unit": "CZK bn",
+   "records": [
+    {
+     "edition": "2026-11-13",
+     "claim": "cz-cez-profit-13",
+     "consensus": 25.6,
+     "first": 26.3,
+     "centre": 25.14,
+     "scale_used": 1.5,
+     "source": "H1 2026 adjusted NP 17.8 (ČEZ via ČTK/oEnergetice, 11 Aug) + Komerční banka Q3 estimate 7.8 (adjusted basis; Kurzy.cz, 5 Nov 2026). Single house."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.7
+  },
+  "uk-gdp-q3-2026-first-estimate-q-q": {
+   "unit": "% q/q",
+   "records": [
+    {
+     "edition": "2026-11-13",
+     "claim": "uk-gdp-q3-13",
+     "consensus": 0.7,
+     "first": 0.7,
+     "centre": 0.69,
+     "scale_used": 0.185,
+     "source": "No formal poll found. Writer's synthesis: ONS monthly data (Jun +0.4, Jul +0.4, Aug +0.1 m/m; 3m to Aug +0.7%) imply ~0.7% with a flat September; NIESR GDP tracker 0.7% (15 Oct, FXStreet headline); Continuum (15 Oct) 'decent growth'. RSM's earlier 0.4–0.5% predates the August upside surprise."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
   }
  },
  "extra": {}
