@@ -1,0 +1,327 @@
+{
+  "edition": "2026-11-16",
+  "frozen_at": "2026-11-14T12:27:00+01:00",
+  "revisions": [
+    {
+      "claim": "ms-outage-16",
+      "probability": 0.97,
+      "kind": "confirmation",
+      "reason": "At 06:09 UTC on 14 November, after the morning freeze, Microsoft 365 Status said it had addressed the underlying issue and \"restored service to the remaining impacted customers and regions\" (incident MO1550821), which outlets report as the outage being fully resolved. New ensemble: 0.90, 0.93, 0.93, 0.93, 0.90.",
+      "reason_cs": "Účet Microsoft 365 Status 14. listopadu v 6:09 UTC, tedy po ranní uzávěrce, oznámil, že odstranil příčinu incidentu MO1550821 a „obnovil službu zbývajícím postiženým zákazníkům a regionům“; média to popisují jako úplné vyřešení výpadku. Nový soubor odhadů: 0,90; 0,93; 0,93; 0,93; 0,90.",
+      "sources": [
+        {
+          "title": "Microsoft 365 Status on X (14 Nov 2026, 06:09 UTC)",
+          "url": "https://x.com/MSFT365Status/status/2121485746334777593"
+        },
+        {
+          "title": "Lowyat.NET: Microsoft Says Microsoft 365 Outage Is Fully Resolved (14 Nov 2026)",
+          "url": "https://www.lowyat.net/2026/409757/microsoft-365-outage-resolved/"
+        },
+        {
+          "title": "Digital Trends: Microsoft’s longest outage in years is finally over (14 Nov 2026)",
+          "url": "https://www.digitaltrends.com/computing/microsoft-365-outage-resolved/"
+        }
+      ]
+    },
+    {
+      "claim": "ua-drones-16",
+      "probability": 0.33,
+      "kind": "forecast",
+      "reason": "The Air Force reported 96 drones on the night to 14 November, the fifth night in a row below 170 and the lowest of the fortnight; a large strike after the five-night lull remains possible. New ensemble: 0.30, 0.38, 0.28, 0.33, 0.40.",
+      "reason_cs": "Ukrajinské letectvo hlásilo za noc na 14. listopadu 96 ruských dronů, už pátou noc za sebou méně než 170 a nejméně za poslední dva týdny; velký úder po pětidenním útlumu ale zůstává možný. Nový soubor odhadů: 0,30; 0,38; 0,28; 0,33; 0,40.",
+      "sources": [
+        {
+          "title": "Interfax-Ukraine: Air defense forces neutralize 81 of 96 enemy drones (14 Nov 2026, 11:08 Kyiv)",
+          "url": "https://en.interfax.com.ua/news/general/1236499.html"
+        },
+        {
+          "title": "UNN: Russia attacked Ukraine with 96 drones (14 Nov 2026)",
+          "url": "https://unn.ua/en/news/russia-attacked-ukraine-with-96-drones-85percent-of-the-neutralized-ones-were-jet-powered"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "ms-outage-16",
+      "at": "2026-11-14T12:25:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.9,
+          "reason_blind": "@MSFT365Status 06:09 UTC (after the 04:18 UTC freeze): 'completed our efforts to address the underlying issue... restored service to the remaining impacted customers and regions.' Microsoft usually ends an incident with this wording, with no further 'resolved' post (precedents MO941162, July 2025), and outlets report it as fully resolved. The main risk is a strict reading of the wording.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.9,
+          "reason": "Signals add nothing (no matching market). A post-freeze Microsoft statement of restored service to all remaining customers, reported as fully restored, most likely meets the 'service restored' branch. About 10% held back for a strict reading of the wording and a small relapse risk."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.75,
+          "reason_blind": "Own research: BleepingComputer's last update (13 Nov 12:06 ET) said recovery was going well, queues near normal, intermittent issues remaining. No resolution statement found. About 60 hours of window left; similar incidents closed in 1–2 days, but weekend monitoring is possible.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.93,
+          "reason": "@MSFT365Status 06:09 UTC 14 Nov, after the freeze: underlying issue addressed and service restored to the remaining customers and regions. This is a final service-restored update, and outlets report it as fully resolved. Doubt left: the wording never says 'resolved', the admin-center closure is not public, and a strict reader might object."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.93,
+          "reason_blind": "@MSFT365Status 06:09 UTC 14 Nov, after the freeze: issue addressed, service restored to the remaining customers and regions; PA, Digital Trends and Lowyat report it fully restored. Against: no literal 'resolved', the 'further updates' line suggests the admin-center entry may still be open, and a resolver could read strictly. A relapse would not undo a declaration.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.93,
+          "reason": "No matching market. The statement came after the freeze and fits the 'service restored' branch with no residual or most-users caveat. Remaining risk: a strict resolver who demands the word 'resolved' or a formal admin-center closure, which may still come by 15 Nov."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.93,
+          "reason": "Criterion reading: the 06:09 UTC 14 Nov post (after the 04:18 UTC freeze) says 'completed our efforts to address the underlying issue' and 'restored service to the remaining impacted customers and regions'. It is a 'service restored' statement with no residual caveat, and PA and Lowyat report it as fully restored or resolved. Risks: no literal 'resolved', the 'further updates' line, a strict resolver. No market matches."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "reference-data"
+          ],
+          "p_blind": 0.6,
+          "reason_blind": "Own searches returned nothing on the MO1550821 status. Multi-day M365 incidents usually get a resolved notice within days, but the strict wording and the two-day window leave real risk.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.9,
+          "reason": "After the union of facts: the 06:09 UTC post came after the freeze and says service was restored to the remaining impacted customers and regions. That matches the criterion's 'service restored', and outlets report it as fully resolved. Remaining risk: a strict reading of 'resolved'.",
+          "rounds": [
+            {
+              "p": 0.6,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "reason": "No matching market and no new facts in the signals. Unchanged from the blind estimate; the strict wording excludes 'most users restored'."
+            }
+          ]
+        }
+      ],
+      "combined": 0.9192,
+      "calibrated": 0.9731,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.2205,
+          "b": 1.3849
+        },
+        "version": "2026-11-14"
+      },
+      "spread": 0.03,
+      "disagreement": {
+        "cause": "inputs",
+        "note": "Round-one final spread 0.33 (outsider 0.60, others 0.90–0.93): the outsider, without the dossier or afternoon facts, had not found the 06:09 UTC Microsoft post. Given the union of facts (numbers removed) it gave 0.90; its first numbers are in rounds. No forecaster relied on a market."
+      },
+      "market_search": "markets.mjs search \"Microsoft outage\" (anchor, 11:24 UTC): only GitHub incident-length, Microsoft/FAA and root-cause markets; none on MO1550821 resolution.",
+      "decomposition": null,
+      "market": null,
+      "red_team": {
+        "case_for_morning": "The criterion is strict about wording. 'Restored service to the remaining impacted customers and regions' never says 'resolved', 'remediated' or 'fully recovered', and it points to MO1550821 'for further updates', which suggests the admin-center entry may still be open in monitoring. A strict resolver could insist on the tenant-only admin-center closure or on an exact phrase, and Microsoft could post a residual or relapse notice before Monday's load.",
+        "case_further": "The 06:09:51 UTC post came after the freeze at 04:18 UTC and is a final 'service restored' update ('completed our efforts to address the underlying issue'). The criterion lists 'service restored' as qualifying and @MSFT365Status as a source, and outlets quoting Microsoft (PA via Yahoo UK, Lowyat, Digital Trends) read it as resolved. The event has in effect happened, and a relapse cannot undo a declaration, so 0.98–0.99 is defensible.",
+        "stronger": "revision",
+        "why": "The statement exists, came after the freeze and fits the criterion's 'service restored' branch, and the press reports it as resolved. The only risk left is how the wording is read, which justifies a few points off 0.99 but not a return towards 0.74.",
+        "new_decisive_fact": null,
+        "factor": "outcome (the declaration itself); nothing found after 06:09 UTC that reopened or relabelled MO1550821",
+        "likeliest_failure": "The resolver reads 'restored service to the remaining impacted customers' as short of 'resolved', because the post points to further admin-center updates and no explicit 'resolved' wording appears publicly by 23:59 UTC on 15 Nov."
+      }
+    },
+    {
+      "claim": "ua-drones-16",
+      "at": "2026-11-14T12:25:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.3,
+          "reason_blind": "15-night series (to 1–14 Nov): 7 of 15 reached 170 (0.47). The last 7 have only 1 (0.14) and the last five are falling to 96. Own-record class: 1 yes, 4 no. The five-night lull without a large night is the longest in the window, and earlier lulls ended in big strikes. Net about 0.30 in log-odds.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.3,
+          "reason": "No market on nightly counts. The ceasefire market at 0.115 by year end implies no pause. Blind estimate kept: low recent counts against a higher chance of a big strike after the lull."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.4,
+          "reason_blind": "Own research found only older counts and no sign of a pause; attacks continue (Zaporizhzhia casualties). Roughly half of recent nights reached 170, so slightly below even.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.38,
+          "reason": "Last five nights (162, 163, 123, 117, 96) all below 170 and falling; 2 of the last 7 reached it. Against that: no night of 289 or more since 9 Nov, the longest lull in the window. Big strikes follow lulls, and Ukraine's ~1,200-drone raid may provoke retaliation. No pause announced."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.28,
+          "reason_blind": "Five nights below 170 and falling (162, 163, 123, 117, 96); recent rate about 0.2. The case the other way: the longest lull since a 289+ night, stockpiling before a mass strike, possible retaliation for Ukraine's ~1,200-drone attack, and large weekend nights. The lull hazard lifts the estimate above the trend, not to parity.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.28,
+          "reason": "No market on nightly counts; unchanged. The falling run argues low. The stock built up during the lull and the retaliation motive argue a mass strike is due, but whether it comes tonight is uncertain."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.33,
+          "reason": "Empirical model on 15 nights (31 Oct–14 Nov, including 96): 7 of 15 (0.47) at 170 or more. Recency weighting with half-lives of 5, 7 and 10 nights gives 0.30, 0.35 and 0.38. The last 5 nights are below 170 and falling, but a five-night lull often precedes a large strike. No pause announced. Blend about 0.33. No market on nightly counts."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-14T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "reference-data"
+          ],
+          "p_blind": 0.4,
+          "reason_blind": "Searches found no November 2026 counts. Typical nights run 70–150, with raids of 200 or more every week or two, so 170 or more on a given night is below even odds.",
+          "at": "2026-11-14T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "signals"
+          ],
+          "p": 0.4,
+          "reason": "The signals have no market or model on nightly counts, so nothing changes. Base rate for a night of 170 or more stays near 0.4."
+        }
+      ],
+      "combined": 0.3365,
+      "calibrated": 0.3274,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.2205,
+          "b": 1.3849
+        },
+        "version": "2026-11-14"
+      },
+      "spread": 0.12,
+      "disagreement": {
+        "cause": "none",
+        "note": "Final spread 0.12. No market on nightly drone counts; no forecaster relied on a market."
+      },
+      "market_search": "markets.mjs search \"russia drones ukraine\" (anchor, 11:24 UTC): ceasefire, NATO-drone, energy-ceasefire and Kremlin-strike markets only; none on nightly launch counts.",
+      "decomposition": null,
+      "market": null,
+      "red_team": {
+        "case_for_morning": "Large strikes usually come after lulls, and the current one (five nights since 317 on 9 Nov) is the longest in the window; earlier gaps were 2, 1 and 5 nights, so the hazard is rising. Falling counts fit stockpiling for a mass combined strike. Ukraine's ~1,200-drone raid and the run-up to the Berlin Coalition of the Willing meeting and the Trump–Putin meeting give motives to retaliate or signal. 0.43 already discounted the 0.50 base rate.",
+        "case_further": "Only 2 of the last 7 nights reached 170, the five latest all fell below it, and the series has dropped to 96, the low of the window. No reports of strategic-bomber build-up or mass-strike warnings for 14 Nov were found, and with peace diplomacy under way Russia may be holding back mass strikes, so 0.25 is arguable.",
+        "stronger": "revision",
+        "why": "The lull-hazard argument is real but already reflected at 0.33 (agents 0.28–0.40). The momentum evidence is five falling nights below 170 with no sign of strike preparation, while the lull hazard prevents going much lower. Both cases roughly cancel around 0.30–0.35.",
+        "new_decisive_fact": null,
+        "factor": "slip_class none; the new count moves the outcome (whether tonight is a mass-strike night), not the timing of the report",
+        "likeliest_failure": "Russia ends the lull with a mass combined strike (often 300+ drones) on the night of 14–15 Nov, in retaliation for Ukraine's raid or as leverage before the Berlin meeting."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "https://censor.net/en/news/4033671/nighttime-drone-attack-on-november-14-how-many-targets-were-shot-down-by-ukrainian-air-defense (HTTP 403)"
+    ],
+    "not_recomputed": "Other claims: no material fact published after the morning freeze was found (no date for the next Ukraine talks round, no new on-record US strike on Iranian targets after the CENTCOM Bahrain statements, no change to the Letná rally, the Gagauzia and Cabo Verde votes, the papal programme in Pucallpa or the Israeli CPI release). de-gas-16 not recomputed: the latest AGSI+ value (gas day 12 Nov, 57.57%) was public before the freeze and gas day 13 is not yet published."
+  },
+  "added": []
+}
