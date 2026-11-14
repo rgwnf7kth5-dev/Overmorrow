@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "pooled": {
-  "n": 36,
-  "rms_in_scales": 1.445,
+  "n": 39,
+  "rms_in_scales": 1.407,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -157,10 +157,19 @@
      "centre": 45.92,
      "scale_used": 0.37,
      "source": "Persistence: last cap published before the freeze, Cenový věstník 121/2026 of 10 Nov for 11 Nov (46.40 CZK/l); no analyst forecast exists."
+    },
+    {
+     "edition": "2026-11-14",
+     "claim": "cz-diesel-max-14",
+     "consensus": 45.87,
+     "first": 45.38,
+     "centre": 45.734,
+     "scale_used": 0.37,
+     "source": "Persistence: last published cap, Cenový věstník 122/2026 of 11 Nov for 12 Nov; no analyst forecast exists. The 13 Nov cap (věstník of 12 Nov) will be known before a 13 Nov morning freeze and should replace this value then."
     }
    ],
-   "n": 3,
-   "rms_surprise": 0.786
+   "n": 4,
+   "rms_surprise": 0.7234
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -641,6 +650,38 @@
    ],
    "n": 1,
    "rms_surprise": 0
+  },
+  "us-ppi-final-demand-m-m-sa-first-print": {
+   "unit": "% m/m",
+   "records": [
+    {
+     "edition": "2026-11-14",
+     "claim": "us-ppi-oct-14",
+     "consensus": 0.4,
+     "first": 0.3,
+     "centre": 0.53,
+     "scale_used": 0.53,
+     "source": "Bloomberg survey median via TD Economics 'Upcoming Economic Releases' table dated 6 Nov 2026 (before the October CPI); same figure in investingLive's week ahead."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "poland-gdp-flash-y-y-nsa": {
+   "unit": "% y/y",
+   "records": [
+    {
+     "edition": "2026-11-14",
+     "claim": "pl-gdp-q3-14",
+     "consensus": 3.4,
+     "first": 3.5,
+     "centre": 3.48,
+     "scale_used": 0.2,
+     "source": "ING's own forecast (CEE week ahead, 6 Nov 2026); no Reuters/PAP/Bloomberg survey found (cbonds consensus page refused, 403)."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
   }
  },
  "extra": {}

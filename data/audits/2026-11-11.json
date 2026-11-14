@@ -24,6 +24,14 @@
       "note": "The 10 Nov Cenový věstník PDF appears to exist but the reader cannot parse PDFs and no ČTK report of the 11 Nov figure surfaced, so the value is unread.",
       "at": "2026-11-12T04:05:00+00:00",
       "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-students-protest-11",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/2897774",
+      "note": "ČTK (10 Nov) reports the náměstí Republiky protest took place and quotes organisers' estimate of 4000 (ČTK's own count was 'vyšší stovky'), which meets the literal numeric-estimate test.",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
     }
   ]
 }

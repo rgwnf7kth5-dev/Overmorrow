@@ -2,6 +2,12 @@
 
 One paragraph for each confident miss: a claim at 70% or more that failed, or 30% or less that came true. Newest first.
 
+## 2026-11-14 · eu-envoy-agreed-14 (25%, came true)
+EU leaders in Dublin agreed on 13 November that the EU institutions plus France, Germany, Italy, Poland and the UK will represent Europe in the Ukraine talks, which Costa announced that evening (Kyiv Independent, RTÉ); the resolver counted that team as the "defined small team" of the criterion (ambiguous). Diagnosis: missed fact and claim design — AFP had already reported the five-country formula before the freeze, and the criterion's "envoy or representative" wording left the team format to interpretation.
+
+## 2026-11-14 · fr-iran-sanctions-13 (74%, failed)
+Barrot's calls for EU sanctions over the Iranian cyberattacks came on 9–10 November, before the window; nothing on the record on 11–12 November was found (ambiguous: absence after a limited search). Diagnosis: wrong base rate — repetition of a position within a two-day window was taken as near-routine, but ministers had moved on after the initial statements.
+
 ## 2026-11-10 · us-iran-ship-10 (77%, failed)
 No UKMTO or JMIC incident was reported for Monday 9 November: gCaptain's incident list runs from the 7 November Khasab incidents straight to Warning 201-26 on 10 November. The base rate from late October (about 11 of 16 days) was right for the period, but the claim ignored the quiet run that had begun on 8 November as transits fell and the de-escalation talk grew. Partly a stale base rate (a rolling window of the last 7 days would have given less), partly bad luck: an incident followed the next day.
 
@@ -160,3 +166,9 @@ The Sakharov Prize went to the International Criminal Court and its officials, t
 - Coverage · edition 2026-11-12: Havlíček's business mission to Ukraine (11 Nov: up to 16 Skyfox aircraft, energy memoranda) was missed though announced in advance on businessinfo.cz (MPO/CzechTrade missions); now in pipeline/sources.json. 23 other missed events of 11 Nov were not announced for that day or rest on a failed hrad.cz read; Reuters and AP lists were unreachable.
 - Coverage · edition 2026-11-13: six significant events of 12 Nov; one covered (Europeans to join the Ukraine talks), five missed. The notable miss is Jensen Huang's resignation as Nvidia CEO: nvidia-huang ran in edition 2026-11-12 but was not carried into the 2026-11-13 planning; a running scandal with an exit claim at 1% over two days should be followed with a longer-window exit claim. The others (Washington shooting, UK verdict on Iranians spying on Iran International, Turkish helicopter and Nepal bus crashes) were not announced in advance, so there is no sweep gap. Reuters and AP lists were unreachable.
 - Audit · 10 Nov results ua-drones-11 and cz-diesel-max-11: the audit answered "unresolved" (Air Force post and the Cenový věstník PDF not found or not readable); ua-talks-held-11 agrees (yes). No correction.
+
+### 2026-11-14 run
+- Coverage · edition 2026-11-14: 17 significant events of 13 Nov; 5 covered, 12 missed (Reuters and AP refused the reader; BBC World and Al Jazeera used for list b). The SpaceX Starship flight 15 launch window was public days ahead and is nowhere in the planning file: sweep gap, NextSpaceflight's launch schedule added to pipeline/sources.json. Czech misses (innogy prices, the Charles University cyberattack, the Wine Fund council, the drinking-water warning) were not announced in advance.
+- Claim design · eu-envoy-agreed-14: "envoy or representative" vs a five-country team needed interpretation; name the form (a single person, or a named group of states) in the criterion.
+- Claim design · the three fr-iran-*-13 claims and cz-babis-noloan-13 resolved "no" from absence after a limited search (ambiguous); statements by one person in a two-day window need a named transcript source that the runs can read.
+- Audit · results of 10–11 Nov (5 claims): the audit agrees on all five; no correction.

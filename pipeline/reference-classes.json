@@ -140,8 +140,8 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 10,
-        "no": 61
+        "yes": 12,
+        "no": 68
       }
     },
     {
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 11,
+        "yes": 12,
         "no": 1
       }
     },
@@ -317,7 +317,7 @@
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
         "yes": 3,
-        "no": 15
+        "no": 17
       }
     },
     {
@@ -624,7 +624,7 @@
       "n": 0,
       "source": "own record from 8 Nov 2026",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -799,6 +799,105 @@
       "base_rate": 0.85,
       "n": "own record only",
       "source": "own resolved claims (resolver, 13 Nov 2026)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "es-general-strike-power-demand",
+      "description": "Spanish general strike: peninsular electricity demand drop vs same weekday a week earlier (REData)",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 1,
+        "no": 1
+      }
+    },
+    {
+      "id": "company-results-beat-guidance",
+      "description": "Company quarterly results or guidance above a stated threshold (beat vs consensus or guidance)",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "leader-speech-specific-term",
+      "description": "A leader explicitly uses a specific phrase or makes a specific call in a scheduled speech",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "gulf-daily-merchant-incident",
+      "description": "Own count: Gulf days with a UKMTO/JMIC-reported merchant incident",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "us-confirmed-strike-iran-day",
+      "description": "Own count: days with an on-the-record US-confirmed strike on Iranian territory",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "ru-ua-swap-after-round",
+      "description": "Russia-Ukraine prisoner swap on the last day of a negotiation round or the day after",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "ua-nightly-drone-count-threshold",
+      "description": "Ukrainian Air Force nightly drone count at or above a threshold near the recent median",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cnb-record-member-minority",
+      "description": "A named ČNB board member in the minority in the published monetary-policy record",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-chamber-reading-completed-same-day",
+      "description": "Czech Chamber completes a scheduled reading at the sitting it was scheduled for",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 1,
         "no": 0

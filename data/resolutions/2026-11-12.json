@@ -189,6 +189,45 @@
       "evidence": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_12",
       "note": "Huang's resignation as Nvidia CEO, with Colette Kress as interim CEO, was announced on 12 Nov (Wikipedia Current events for 12 Nov citing AFP and Reuters; NYT and MarketWatch live coverage from 12 Nov 19:00 GMT), after the 10-11 Nov window closed.",
       "resolved_at": "2026-11-13T05:05:20+01:00"
+    },
+    {
+      "claim": "nvidia-huang-brief-12",
+      "outcome": "no",
+      "evidence": "https://www.nbcnews.com/tech/tech-news/jensen-huang-agrees-brief-congress-interactions-alleged-spy-lawmaker-s-rcna608990",
+      "note": "NBC News (12 Nov 10:32 ET) reports Rep. Mast said Huang has agreed to brief lawmakers, and TechCrunch's timeline (13 Nov) records that on 11 Nov Huang had still not responded and Moolenaar threatened a subpoena, so the on-record confirmation came after the 11 Nov 23:59 ET window closed.",
+      "resolved_at": "2026-11-14T05:04:45+01:00"
+    },
+    {
+      "claim": "nvidia-huang-letter-12",
+      "outcome": "no",
+      "evidence": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "note": "TechCrunch's scandal timeline (13 Nov) and ABC News (10-11 Nov) mention only the 5 Nov Mast/Moolenaar/Crawford letter, subpoena threats on 10-11 Nov and a Neal/Wyden letter addressed to Commerce Secretary Lutnick; no new congressional letter to Nvidia or Huang dated 10 or 11 Nov was reported.",
+      "ambiguous": true,
+      "resolved_at": "2026-11-14T05:04:45+01:00"
+    },
+    {
+      "claim": "es-strike-power-12",
+      "outcome": "yes",
+      "evidence": "https://apidatos.ree.es/es/datos/demanda/evolucion?start_date=2026-11-04T00:00&end_date=2026-11-11T23:59&time_trunc=day&geo_limit=peninsular&geo_ids=8741",
+      "note": "REData peninsular daily Demanda read 14 Nov 05:05 CET (last update 13 Nov 07:56) gives 646,796.9 MWh for 11 Nov vs 675,411.9 MWh for 4 Nov, a change of -4.24%, at or below -3.0%; the general strike went ahead on 11 Nov (Ara, energias-renovables).",
+      "held": true,
+      "resolved_at": "2026-11-14T05:06:02+01:00"
+    },
+    {
+      "claim": "es-strike-power6-12",
+      "outcome": "no",
+      "evidence": "https://apidatos.ree.es/es/datos/demanda/evolucion?start_date=2026-11-04T00:00&end_date=2026-11-11T23:59&time_trunc=day&geo_limit=peninsular&geo_ids=8741",
+      "note": "REData peninsular daily Demanda read 14 Nov 05:05 CET (last update 13 Nov 07:56) gives 646,796.9 MWh for 11 Nov vs 675,411.9 MWh for 4 Nov, a change of -4.24%, not as low as -6.0%; the strike itself took place on 11 Nov.",
+      "held": true,
+      "resolved_at": "2026-11-14T05:06:02+01:00"
+    },
+    {
+      "claim": "us-iran-meet-12",
+      "outcome": "no",
+      "evidence": "https://www.aljazeera.com/video/newsfeed/2026/11/10/trump-signals-positive-momentum-with-iran-after-meeting-qatari-pm",
+      "note": "Al Jazeera (10 Nov) reports Trump only signalled positive momentum after meeting the Qatari PM, and Anadolu (10 Nov) reports Iran denied any talks or planned Qatar meeting; no on-record US statement in the 10-11 Nov window naming a date or venue for a US-Iran meeting was found.",
+      "ambiguous": true,
+      "resolved_at": "2026-11-14T05:06:58+01:00"
     }
   ]
 }
