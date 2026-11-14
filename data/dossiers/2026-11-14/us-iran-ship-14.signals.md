@@ -1,0 +1,5 @@
+# us-iran-ship-14 signals
+Searches (markets.mjs, run one at a time):
+- `node scripts/markets.mjs search Hormuz` (read 2026-11-11T18:00:08Z): Polymarket "Strait of Hormuz traffic returns to normal by December 31?" Yes 0.075 (volume ~17.6M, liquidity ~224k); Polymarket "... by November 30?" Yes 0.023 (volume ~2.0M); Kalshi PortWatch 7-day transits above 60 before 1 Dec 0.01, before 1 Jan 2027 0.06. No match: none asks about a UKMTO-reported incident on 13 Nov; they only confirm the disrupted regime.
+- `node scripts/markets.mjs search UKMTO` (read ~2026-11-11T18:00:30Z): Polymarket "How many UKMTO notices November 9-15?" bins: fewer than 4 0.42, 4-7 0.465, 8-11 0.465, 12-15 0.115, 16+ 0.05 (very thin: liquidity 30-280 USD, volume under 1k; prices do not sum to 1). Counts notices (including advisories), not incidents on a given day; no match. Week 16-22 Nov bins: <4 0.24, 4-7 0.315, 8-11 0.455, 12-15 0.46 (thin). Manifold "Free flow of shipping through Hormuz returns to normal in 2026?" 0.034 (liquidity 100).
+No published model or bookmaker prices found.

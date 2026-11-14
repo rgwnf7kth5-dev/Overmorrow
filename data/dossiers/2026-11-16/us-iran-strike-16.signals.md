@@ -1,0 +1,6 @@
+# us-iran-strike-16 signals
+Searches (markets.mjs):
+- `node scripts/markets.mjs search CENTCOM Iran` (read 2026-11-13T17:56:21Z): only carrier-deployment markets, e.g. Polymarket "Will the USS Theodore Roosevelt arrive in CENTCOM by November 15, 2026?" Yes 0.453 (volume ~25.8k, liquidity ~3.2k); "3 US aircraft carriers in CENTCOM on November 30" Yes 0.805 (volume ~22.9k); Manifold "Will Iran successfully attack major oil terminal in Persian Gulf by EOY 2026?" 0.575 (volume ~100). No match: none asks about a US engagement on 15 Nov.
+- `node scripts/markets.mjs search US strike Iran` (read 2026-11-13T17:56:42Z): Polymarket "Will the U.S. invade Iran before 2027?" Yes 0.085 (volume ~80m, liquidity ~415k); "Will Iran sabotage undersea internet cables by December 31?" 0.11; "Will Iran strike US military base at least once before December?" 0.519 (volume ~1k, liquidity 1k, closes 30 Nov); "Will Iran strike US soil this year?" 0.073. No match on question or deadline.
+- `node scripts/markets.mjs search US Iran military clash November` (read 2026-11-13T17:56:27Z): only "US x Russia military clash by December 31, 2026?" 0.03. No match.
+No matching market. No bookmaker odds or published models found.

@@ -1,0 +1,37 @@
+{
+  "edition": "2026-11-11",
+  "entries": [
+    {
+      "claim": "ua-talks-held-11",
+      "outcome": "yes",
+      "evidence": "https://kyivindependent.com/ukraine-russia-us-resume-trilateral-peace-talks-in-abu-dhabi-after-9-month-pause/",
+      "note": "Kyiv Independent (citing Umerov's spokesperson) reports Ukrainian, Russian and US delegations concluded a 4+ hour trilateral first round in Abu Dhabi on 10 Nov; Zelensky also confirmed it.",
+      "at": "2026-11-12T04:05:00+00:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "ua-drones-11",
+      "outcome": "unresolved",
+      "evidence": "https://t.me/kpszsu",
+      "note": "I could not find the Air Force morning summary for 10 Nov 2026 within the search budget; results returned only other dates (7 Nov: 172, 8 Nov: 164).",
+      "at": "2026-11-12T04:05:00+00:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-diesel-max-11",
+      "outcome": "unresolved",
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-10_Cenovy-vestnik-121-2026.pdf",
+      "note": "The 10 Nov Cenový věstník PDF appears to exist but the reader cannot parse PDFs and no ČTK report of the 11 Nov figure surfaced, so the value is unread.",
+      "at": "2026-11-12T04:05:00+00:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-students-protest-11",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/2897774",
+      "note": "ČTK (10 Nov) reports the náměstí Republiky protest took place and quotes organisers' estimate of 4000 (ČTK's own count was 'vyšší stovky'), which meets the literal numeric-estimate test.",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}

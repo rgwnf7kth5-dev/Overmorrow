@@ -1,0 +1,37 @@
+{
+  "edition": "2026-11-12",
+  "entries": [
+    {
+      "claim": "ua-talks-outcome-12",
+      "outcome": "yes",
+      "evidence": "https://www.ajc.com/news/2026/11/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough/",
+      "note": "AP reports both sides said on 11 Nov that a large POW exchange was agreed at the Abu Dhabi talks (Umerov and Russian side confirming; 314 prisoners per other outlets).",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "cz-media-voluntary-12",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/prilohy/ceska-televize-rozhlas-poplatky/",
+      "note": "The voluntary-fee statements by Babiš found are dated 31 Oct and 5 Nov, outside the window, and ČTK's dossier shows no qualifying statement on 10-11 Nov (limited search, moderate confidence).",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "uk-easyjet-vote-12",
+      "outcome": "yes",
+      "evidence": "https://www.irishtimes.com/business/2026/11/11/easyjet-shareholders-approve-57-billion-apollo-takeover/",
+      "note": "Reuters via Irish Times: on 11 Nov easyJet said 97.07% of scheme shares voted in favour and 83.29% of voting holders, clearing the threshold; RNS text itself not read.",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "us-hegseth-impeach-12",
+      "outcome": "no",
+      "evidence": "https://www.kuow.org/npr-news/2026-11-10/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
+      "note": "On 10 Nov the House voted 211-204 to refer the articles to committee, so no article was adopted.",
+      "at": "2026-11-14T05:00:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}

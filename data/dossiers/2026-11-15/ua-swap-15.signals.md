@@ -1,0 +1,3 @@
+# ua-swap-15 — signals
+- `node scripts/markets.mjs search ukraine prisoner exchange` (read 2026-11-12T17:54:33Z): No matching market. Results were Polymarket "Zelenskyy out as Ukraine president by end of 2026?" (Yes 0.0315), "Russia x Ukraine ceasefire agreement by December 31, 2026?" (0.125), "Ukraine signs peace deal with Russia by December 31, 2026?" (0.065), "Russia x Ukraine ceasefire by December 31, 2026?" (0.059), "Ukraine joins NATO before 2027?" (0.0095), "Will Ukraine agree to cede territory to Russia before 2027?" (0.049), "Russia x Ukraine ceasefire agreement by March 31, 2027?" (0.355) — none on a prisoner exchange or the 13–14 Nov window.
+- No bookmaker quotes or models found.

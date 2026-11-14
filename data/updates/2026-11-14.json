@@ -1,0 +1,193 @@
+{
+ "edition": "2026-11-14",
+ "frozen_at": "2026-11-12T12:31:00+01:00",
+ "revisions": [
+  {
+   "claim": "nvidia-huang-out-14",
+   "probability": 0.49,
+   "kind": "forecast",
+   "reason": "Nvidia's board met late on Wednesday to decide Huang's future but announced no decision overnight, and by Thursday midday there was still no statement; Kalshi's \"before 14 Nov\" market fell from 68% to 43%. New ensemble: 0.42, 0.48, 0.42, 0.50, 0.40.",
+   "reason_cs": "Správní rada Nvidie se ve středu pozdě večer sešla k Huangově budoucnosti, přes noc ale žádné rozhodnutí neoznámila a ani ve čtvrtek v poledne nevydala prohlášení; trh Kalshi „do 14. listopadu“ klesl z 68 na 43 %. Nový soubor odhadů: 0,42; 0,48; 0,42; 0,50; 0,40.",
+   "sources": [
+    {
+     "title": "The Next Web (citing Reuters): Jensen Huang's fate hangs on Nvidia's board after overnight meeting",
+     "url": "https://thenextweb.com/news/nvidia-board-meeting-jensen-huang-ouster-no-decision"
+    },
+    {
+     "title": "Yahoo Finance live: Nvidia stock tanks after new affair allegations, board reportedly preparing to oust Jensen Huang",
+     "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-nvidia-stock-tanks-in-after-hours-after-allegations-of-a-second-affair-surface-222438011.html"
+    },
+    {
+     "title": "Kalshi: Will Jensen Huang leave as Nvidia CEO?",
+     "url": "https://kalshi.com/markets/kxceonvda"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "nvidia-huang-out-14",
+   "at": "2026-11-12T12:30:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-12T12:24:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.37,
+     "reason_blind": "Reference class unscheduled-announcement-within-one-day is 10/70 (0.14, log-odds -1.79). Board actively deliberating with an external firm scouting replacements (+1.6); a relationship with a direct report breaches codes of conduct on its own, as at McDonald's 2019 and Intel 2018 (+0.4); the Wednesday meeting ended with no decision and some investors urge waiting for the investigation (-0.7).",
+     "at": "2026-11-12T12:24:05+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.42,
+     "reason": "Anchors on Kalshi \"before Nov 14\" at about 0.425 (down from 0.68 after the meeting produced nothing); our window runs a few hours longer and counts a leave of absence, which offsets the small premium of the blind view.",
+     "p_held": 0.5,
+     "p_if_held": 0.75
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-12T12:24:42+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.58,
+     "reason_blind": "WSJ reported Nvidia was preparing to oust Huang, Bloomberg says the board is weighing an interim CEO with an outside search firm, and a relationship with a direct report breaches most codes on its own; but the board met late Wednesday and announced nothing, its last word (8 Nov) expressed confidence and its investigation is still running.",
+     "at": "2026-11-12T12:24:45+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "signals",
+      "overnight-facts"
+     ],
+     "p": 0.48,
+     "reason": "Own research leans yes, but Kalshi fell from 0.68 to about 0.42 after a night with no decision and the board could wait for the investigation; a little above the market because a leave of absence also counts."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-12T12:24:07+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.4,
+     "reason_blind": "Case for delay: the board met Wednesday night and announced nothing, is only now working with an external firm on replacements, its investigation is four days old and some investors want it to wait; against that, the direct-report relationship is a standalone breach and a leave of absence with an interim CEO is a fast option that counts as YES.",
+     "at": "2026-11-12T12:24:30+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.42,
+     "reason": "Kalshi \"before Nov 14\" fell from 0.68 to 0.42/0.43 after the no-decision night (about 0.58 by Nov 17), matching the blind view; a small premium only for leave or suspension counting.",
+     "p_held": 0.52,
+     "p_if_held": 0.8
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-12T12:24:13+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.5,
+     "reason": "Kalshi \"leave before Nov 14\" 0.42/0.44 (mid 0.43) read at 11:24Z, down from 0.68 at the morning freeze; raised to 0.50 because our claim also counts a leave of absence and an announced future step-down (excluded by Kalshi's rules) and runs to 23:59 PT; Polymarket \"announced resignation or removal by Nov 13\" at 0.54.",
+     "anchor": {
+      "source": "kalshi",
+      "p": 0.43,
+      "read_at": "2026-11-12T11:24:03Z",
+      "url": "https://kalshi.com/markets/kxceonvda"
+     }
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-12T12:25:03+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p_blind": 0.3,
+     "reason_blind": "With the board investigation, the WSJ report that the board is preparing to oust him and an external search for replacements, a departure or leave within about two days is live; the board announced nothing after its Wednesday meeting and boards often take longer.",
+     "at": "2026-11-12T12:25:10+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "union-of-facts",
+      "signals"
+     ],
+     "p": 0.4,
+     "reason": "Kalshi \"before Nov 14\" bid 0.43 / ask 0.45; shaded slightly below because the board has announced nothing so far.",
+     "rounds": [
+      {
+       "p": 0.002,
+       "at": "2026-11-12T12:24:06+01:00",
+       "reason": "First round missed the reporting entirely (found \"no sign of trouble\") and read the expired Kalshi \"before Nov 12\" market; rerun once with the union of facts, numbers removed (disagreement cause: inputs)."
+      }
+     ]
+    }
+   ],
+   "combined": 0.4437,
+   "calibrated": 0.4866,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2534,
+     "b": 1.358
+    },
+    "version": "2026-11-12"
+   },
+   "spread": 0.1,
+   "disagreement": {
+    "cause": "inputs",
+    "note": "The outsider's first round (0.002) rested on a failed search and an expired market; it was rerun once with the union of facts, numbers removed. Final spread 0.10."
+   },
+   "decomposition": {
+    "p_held": 0.51,
+    "p_if_held": 0.96,
+    "p_if_not_held": 0
+   },
+   "market": {
+    "p": 0.43,
+    "read_at": "2026-11-12T11:24:03Z",
+    "url": "https://kalshi.com/markets/kxceonvda"
+   },
+   "market_search": {
+    "at": "2026-11-12T11:23:00Z",
+    "checked": [
+     "markets.mjs search \"Jensen Huang\" (no output within 40 s)",
+     "Kalshi API series KXCEONVDA"
+    ],
+    "note": "Kalshi \"before Nov 14\" 0.42/0.43, \"before Nov 13\" 0.37/0.38, \"before Nov 17\" ~0.58; Polymarket \"announced resignation or removal by Nov 13\" 0.54 (anchor)."
+   },
+   "red_team": "No Nvidia release, 8-K or credible report of a decision or its timing as of ~11:30 UTC. Likeliest failure: the figure is too high, since Kalshi prices much of a departure for 14-16 Nov, before the 17 Nov earnings, outside this window; or the reverse, a Friday-night announcement after US markets close."
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "technology.org, cnbc.com (HTTP 403)",
+   "markets.mjs (no output within 40 s; Kalshi API read directly)"
+  ],
+  "notes": "Recomputed only nvidia-huang-out-14 (board meeting ended with no announcement; market 0.68 -> 0.43). Checked without material new facts after 05:38 CET: Zelensky-Witkoff/Kushner meeting (envoys in Moscow, Dublin meeting still set for Thursday evening), EU envoy (no change; spokesperson doubts a decision, reported before the freeze), Babiš (sector-tax plans, no new Ukraine-funding statement), refinery-tax sitting (unchanged for Friday), ODS presidium (Friday, no new announcements), Hormuz (incidents continue, as assumed), Yemen sanctions, Pope in Chiclayo, ČNB record, PPI, Polish GDP, diesel cap. No newly announced events for 13 Nov merited a story. Findings: work/2026-11-14/afternoon.md."
+ }
+}

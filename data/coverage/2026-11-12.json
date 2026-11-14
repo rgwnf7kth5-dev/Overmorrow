@@ -1,0 +1,274 @@
+{
+  "edition": "2026-11-12",
+  "checked_at": "2026-11-12T05:14:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 11, read 12 Nov 04:01 UTC; 27 entries at that time)",
+    "ct24 (SOUHRN: Zásadní události středy 11. listopadu, published 11 Nov 18:28; front page and the domácí, svět and ekonomika section pages, read 12 Nov 04:01-04:04 UTC)",
+    "ctk (ceskenoviny.cz front page, 'hlavní události' RSS (50 items, ~11:24 11 Nov to 00:13 12 Nov), svět, ekonomika and ČR section pages, with timestamps, read 12 Nov 04:01-04:03 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading. One WebSearch query (Reuters world news 11 Nov) returned only aggregator pages (StreetInsider, Devdiscourse, older summaries), no usable top-stories list. List (b) is therefore represented only by wire citations inside Wikipedia entries, marked as such.",
+    "ct24 /ekonomika section once reset the connection (read on retry via the bare path)."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (no Reuters/AP citation, not on ct24 or ctk as read): German cabinet approves a 24 TWh strategic gas reserve (AFP); Kenya discharges its last Ebola patient (DW); DR Congo Ebola cases pass 11,000 (Al Jazeera); Russia bans two French MPs and two journalists (Al Jazeera); Kenya-Sudan tea deal; arrests over the RCN Televisión attack in Cali; Red Brigades member Bertulazzi escapes house arrest in Buenos Aires; Brazil's TSE fines Meta R$7.5m",
+    "Wikipedia sport entry excluded: US withdraws from the FIFA U-17 World Cup (AFP, ESPN)",
+    "ctk-only: Babiš receives Hungarian President Baka (planning dropped it); Babiš to meet Zelensky in Dublin; Babiš: Czechia wants to join SAFE round two; Babiš on the Israel trip date; army concept of up to 38,000 soldiers; Chamber social committee backs the pension bill and CZK 2,000 bonus; Supreme Court rejects Benešová's appeal; court voids Sedlák's election in Pardubice V; ČT Council: Chudárek keeps regional studios (planning dropped a ČT Council item); ÚOHS record fines; ÚZIS births may fall below 75,000; CCPI climate index (Czechia 45th, from Antalya); Russian ambassador to the US Darchiev dies; White House warns Democrats over investigations; FSB claims arrest of two Polish agents; Kremlin on the US soldier arrested in Britain; Trump's BBC suit may proceed; Hoekstra on EU climate rules; Ukrainian drones hit Omsk refinery; Bessent moves to a base (NYT); Volkswagen China EVs (Reuters via ctk); Remoska moves production; St Martin's wine (dropped); CSG nine-month revenue CZK 115.9bn and share fall (covered anyway: cz-csg; share price excluded); diesel/petrol caps for Thursday (covered anyway: cz-fuel-cap); Prague stock exchange (market price, excluded)",
+    "ct24-only: NÚKIB advice on attacks on refrigeration systems (related to fr-iran-hack); Česká hlava awards; ČT reporters on Babiš's health-care business; Supreme Court on spouses' flat use; Radetzky statue dispute; Mecca missile debris (reported overnight to Thursday); Chinese record low temperature in space; feature and analysis pieces (Kherson, Estonia, Spain housing, Poland constitutional crisis, etc.)",
+    "US House Republicans block the Hegseth impeachment resolution (ct24 SOUHRN, ctk 00:52 on 11 Nov): happened on Tuesday 10 Nov (US time); already recorded in coverage 2026-11-11 as covered (us-hegseth)",
+    "VOA director's dismissal ruled illegal (ct24): appeals court ruled on Tuesday 10 Nov; ct24 only in any case",
+    "Planned stories not on any list as read: us-iran (Hormuz shipping attack), cop31-leaders (only the CCPI index from Antalya on ctk), fr-iran-hack, nvidia-huang, eu-dfa, cz-refinery-tax, cz-media-funding, de-siemens-energy, uk-easyjet. Their absence may reflect the unreadable Reuters/AP list"
+  ],
+  "note": "Weak check on the world side: Reuters/AP not readable, so a world event absent from the events list means not determined. As in earlier files, ct24 and ctk count as lists for non-Czech events too, and a Reuters/AP citation inside a Wikipedia entry counts as list (b). The planning file was prepared 9 Nov 18:38-20:20 CET. Many missed Czech items are same-day statements or decisions (Mlsna's clearance, Sviták, sectoral taxes, canteen standards) that no sweep could have caught; Havlíček's Ukraine business mission (announced in advance) is the one sweep gap. Accidents, crime and disasters are recorded for transparency though excluded by policy.",
+  "events": [
+    {
+      "title": "Abu Dhabi: second day of US-Russia-Ukraine talks; Medinsky says a large prisoner exchange is agreed; Witkoff and Kushner to meet Putin in Moscow on Thursday and Zelensky in Dublin",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/vyslanci-usa-se-po-jednani-v-abu-zabi-sejdou-s-putinem-a-se-zelenskym/2900427",
+      "status": "covered",
+      "story": "ua-talks"
+    },
+    {
+      "title": "Spain: first general strike in 14 years, over housing and living costs; millions take part, roads blocked, about 30-50 arrests",
+      "scope": "europe",
+      "lists": ["wikipedia", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/spanelsko-ochromila-generalni-stavka-po-cele-zemi-se-cekaji-demonstrace-379512",
+      "status": "covered",
+      "story": "es-general-strike"
+    },
+    {
+      "title": "Prague: leaders of STAN, Spolu and Praha sobě confirm their coalition; Hlaváček to be mayor, council line-up next week",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/praha-ma-koalici-stan-spolu-a-prahy-sobe-primatorem-bude-hlavacek/2895938",
+      "status": "covered",
+      "story": "cz-prague-coalition"
+    },
+    {
+      "title": "European Parliament debates the situation of Czech public-service media; Commissioner McGrath says Czech law must ensure adequate, sustainable and predictable funding",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/financovani-verejnopravnich-medii-v-cr-musi-byt-udrzitelne-uvedl-eurokomisar/2900557",
+      "status": "dropped",
+      "note": "Planning dropped list, 'European Parliament mini-plenary opens (debates only, votes on 12 Nov)': 'No votes on 11 Nov; votes fall on 12 Nov, next edition.' The Czech-media debate itself was not named in the planning file; related story cz-media-funding covered the coalition's funding model, not this debate."
+    },
+    {
+      "title": "Poland's Independence Day: President Nawrocki leads the Warsaw Independence March (organisers: at least 500,000) under tightened security after the Kraków shooting",
+      "scope": "europe",
+      "lists": ["wikipedia", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/polsko-slavi-svatek-nezavislosti-ve-varsave-se-kona-pochod-nacionalistu-379523",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Poland: Independence Day march in Warsaw': 'No reliable turnout figure is published and kept; the march itself is near certain; the Kraków link concerns a crime.'"
+    },
+    {
+      "title": "Budapest court remands Áron Orbán, brother of former PM Viktor Orbán, and his partner for one month on suspicion of smuggling Vietnamese nationals",
+      "scope": "europe",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/madarsky-soud-poslal-orbanova-bratra-a-jeho-pritelkyni-do-vazby/2899470",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Hungary: court decision on detention of Áron Orbán': 'Criminal case: excluded topic.'"
+    },
+    {
+      "title": "Czech Veterans Day: ceremony at Vítkov; President Pavel says peace and freedom are not something to demand from the government",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/pavel-mir-a-svoboda-nejsou-narokem-se-kterym-se-muzeme-obratit-na-vladu-/2900324",
+      "status": "dropped",
+      "note": "Planning dropped list, 'Veterans Day at Vítkov with President Pavel': 'Ceremonial, practically certain.'"
+    },
+    {
+      "title": "NBÚ revokes the security clearance of competition-office (ÚOHS) chair Petr Mlsna (Deník N); Mlsna confirms and will challenge it",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/sef-uohs-mlsna-potvrdil-ze-mu-nbu-odebral-proverku-bude-se-branit/2900467",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (press revelation)."
+    },
+    {
+      "title": "Babiš meets President Pavel at Prague Castle: Ukraine, the army concept, his Israel trip, the PM's Ukraine letter, public media and the ÚOHS chair appointment",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-s-pavlem-hovoril-o-valce-na-ukrajine-i-o-sve-nadchazejici-ceste-do-izraele/2900135",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Probably on the President's programme (hrad.cz, in the sweep but returned 403 at planning); not verified. No checkable outcome beyond the meeting taking place. Gap from a failed read, not a missing source."
+    },
+    {
+      "title": "Havlíček's business mission in Ukraine: Czechia could supply 16 Skyfox aircraft (12 more discussed with PM Koretsky); energy memoranda (nuclear, hydro, renewables) signed with energy minister Shmyhal",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/cesko-by-mohlo-dodat-ukrajine-16-letounu-skyfox/2900335",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance: the two-day accompanying business mission of Deputy PM Havlíček to Ukraine was advertised by MPO/CzechTrade on businessinfo.cz, and ČTK reported on 10 Nov 17:09 that he would discuss Skyfox deliveries there. Where to have seen it: businessinfo.cz events calendar (business missions), not in the sweep. Sweep gap: source added to pipeline/sources.json."
+    },
+    {
+      "title": "Liberec region: governor Půta (elected senator) to be succeeded by MP Jan Sviták (SLK), who will give up his Chamber seat; vote in December",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/putu-zrejme-v-cele-libereckeho-kraje-vystrida-poslanec-jan-svitak-z-slk/2900417",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (party decision)."
+    },
+    {
+      "title": "Regional court in Hradec Králové annuls part of KRNAP's rules on vehicle access to the national park (Luční and Labská bouda owners win)",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/soud-v-hradci-kralove-zrusil-cast-pravidel-vjezdu-do-krnap/2900445",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Regional administrative court rulings are not published in advance in any source we read; not found announced."
+    },
+    {
+      "title": "Zlín: STAN, Zlín 21 and the ODS-led three-party bloc sign a coalition agreement; ANO, the election winner, in opposition",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/koalicni-smlouvu-ve-zline-podepsaly-stan-zlin-21-a-trojblok/2900812",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Signing not found announced in advance; local politics."
+    },
+    {
+      "title": "Ministers Plaga and Šťastný: nutritional standards in the new school-canteen decree will be non-binding; children's ombudsman and parents' union object",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/ministri-standardy-vyhlasky-o-skolnim-stravovani-budou-nezavaznym-doporucenim/2900695",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (press conference called the same day)."
+    },
+    {
+      "title": "Babiš confirms the government is seriously considering sectoral taxes on banks, arms makers and energy firms, mainly to cut the 2028 deficit",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-na-moznych-sektorovych-danich-pracuje-se-schillerovou/2900336",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (interview with Blesk.cz)."
+    },
+    {
+      "title": "President Pavel calls the absence of Czech soldiers from the exercise in Poland unfortunate",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/pavel-neucast-vojaku-na-cviceni-v-polsku-nepovazuji-za-stastnou/2900379",
+      "status": "missed",
+      "note": "Nowhere in the planning file. A statement, not announced in advance."
+    },
+    {
+      "title": "Fog pile-ups on the D8 motorway and near the Chomutov border crossing (two lorries and a double-decker bus): eight injured, D8 closed towards Germany for hours",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/-nehody-komplikovaly-na-severu-prejezd-do-nemecka/2899936",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Accident, not announced; disasters excluded by policy anyway."
+    },
+    {
+      "title": "Olomouc regional court sentences Radek Pavlík to an exceptional 25 years for the Šumperk taxi-driver murder and two attempted murders",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/soud-ulozil-muzi-za-vrazdu-taxikarky-a-pokus-o-vrazdu-dvou-lidi-25-let-/2886698",
+      "status": "missed",
+      "note": "Nowhere in the planning file. The hearing date was probably on the court's calendar, but crime and criminal proceedings are excluded by policy, so no sweep gap."
+    },
+    {
+      "title": "Thousands of schools in Italy (over 6,000) and Britain evacuated or checked after bomb threats; no devices found",
+      "scope": "europe",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/tisice-skol-v-italii-a-britanii-dostaly-vyhruzky-bombou-zadne-nebyly-nalezeny-/2900524",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance."
+    },
+    {
+      "title": "Brooklyn, New York: three-storey apartment building partially collapses, two dead and at least ten injured",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/pri-zriceni-budovy-v-brooklynu-zemrel-jeden-clovek-dalsi-jsou-zraneni-379535",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Accident, not announced; disasters excluded by policy anyway."
+    },
+    {
+      "title": "Mississippi Senate race called for Democrat Scott Colom over Cindy Hyde-Smith after a week of counting affidavit ballots; first Black senator from the state since Reconstruction",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)", "ct24"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/svet/colom-bude-prvnim-afroamerickym-senatorem-v-mississippi-od-obcanske-valky-pise-ap-379536",
+      "status": "missed",
+      "note": "Nowhere in the planning file (the US midterms aftermath was a running story). The timing of the call was not announced; the count's end could have been a candidate claim for the running story."
+    },
+    {
+      "title": "Indonesian Vice-President Gibran Rakabuming Raka submits his resignation over the diploma controversy; Bloomberg reports Prabowo accepts it",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced on 10 Nov (recorded as missed in coverage 2026-11-11); the submission date was not fixed in advance. A follow-up candidate the evening desk could have drawn from the previous day's coverage file, which came after this planning file was prepared."
+    },
+    {
+      "title": "Israeli strikes kill at least nine Palestinians across Gaza, including five at the Nasser Medical Complex in Khan Younis",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced; attacks are not forecastable."
+    },
+    {
+      "title": "DR Congo: Islamic State-affiliated ADF rebels kill at least 22 people in eight locations in Mambasa territory, Ituri",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced."
+    },
+    {
+      "title": "Pakistan: ten police, including two senior officers, killed in a Pakistani Taliban ambush in Kohat district, Khyber Pakhtunkhwa",
+      "scope": "world",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced."
+    },
+    {
+      "title": "Portugal closes about 8,000 schools and suspends non-essential public services as Storm Charles approaches; second day of Web Summit in Lisbon cancelled",
+      "scope": "europe",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file (Storm Charles was mentioned only as a factor in es-general-strike). Closures decided at short notice after the planning; weather, excluded by policy as a disaster."
+    },
+    {
+      "title": "Ocean liner SS United States sunk off Destin-Fort Walton Beach, Florida, to become the world's largest artificial reef",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Announced in advance, but for 12 Nov (Okaloosa County set the date in late October: Cruise Industry News, Stars and Stripes, AP via local stations); it was carried out a day early. Not a sweep gap for the events of 11 Nov; it was not in the 13 Nov planning either. Low news value for the paper."
+    },
+    {
+      "title": "Iran designates Argentina's navy and air force as terrorist organisations, in response to Argentina's designation of the IRGC",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance."
+    },
+    {
+      "title": "Germany's armed forces to stop using Chinese-made drones for training and exercises, replacing them with European models",
+      "scope": "europe",
+      "lists": ["wikipedia", "ap (as cited in the Wikipedia entry; AP page not read)", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance."
+    },
+    {
+      "title": "Romanian intelligence (SRI) says it stopped a December 2025 cyberattack by the Russia-linked Turla toolset on a government institution",
+      "scope": "europe",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (report release)."
+    },
+    {
+      "title": "CloudSek: Kazakhstan-linked group Silent Lynx used an autonomous AI agent to breach a Tajik government database and steal over 2,000 security documents",
+      "scope": "world",
+      "lists": ["wikipedia", "reuters (as cited in the Wikipedia entry; Reuters page not read)"],
+      "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_11",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (security-firm report)."
+    }
+  ]
+}

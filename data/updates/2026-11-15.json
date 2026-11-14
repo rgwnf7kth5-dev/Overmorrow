@@ -1,0 +1,321 @@
+{
+ "edition": "2026-11-15",
+ "frozen_at": "2026-11-13T12:28:00+01:00",
+ "revisions": [
+  {
+   "claim": "fr-fuel-grandest-15",
+   "probability": 0.03,
+   "kind": "forecast",
+   "reason": "The official table now shows Grand Est falling to 19% (12 Nov 17h) and 18% (13 Nov 9h) from 22%, and the Rhine at Kaub is back to normal at 67 cm, so Saturday needs a rise of five points. New ensemble: 0.07, 0.07, 0.06, 0.06, 0.06.",
+   "reason_cs": "Oficiální tabulka nyní ukazuje pokles podílu v regionu Grand Est z 22 na 19 % (12. 11. v 17 h) a 18 % (13. 11. v 9 h) a Rýn u Kaubu je s 67 cm zpět na běžné hladině; v sobotu by podíl musel vzrůst o pět bodů. Nový soubor odhadů: 0,07; 0,07; 0,06; 0,06; 0,06.",
+   "sources": [
+    {
+     "title": "prix-carburants.gouv.fr: stations en difficulté par région (Grand Est 21 % / 19 % / 18 %, 11 Nov 17h – 13 Nov 9h)",
+     "url": "https://www.prix-carburants.gouv.fr/disponibilites-carburants"
+    },
+    {
+     "title": "Pegelonline: Rhine at Kaub, 67 cm (normal), 13 Nov 12:15",
+     "url": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KAUB/W/currentmeasurement.json"
+    }
+   ]
+  },
+  {
+   "claim": "starship-launch-15",
+   "probability": 0.73,
+   "kind": "forecast",
+   "reason": "On launch morning SpaceX still targets Friday 4:45 p.m. CST, the launch-day beach and road closures are in place, the weather forecast is good and no slip has been reported; the FAA licence is still not listed. New ensemble: 0.60, 0.62, 0.57, 0.57, 0.77.",
+   "reason_cs": "Ráno v den startu SpaceX dál počítá s pátkem 16.45 středoamerického času, pláž a silnice jsou na den startu uzavřeny, předpověď počasí je dobrá a o odkladu nikdo nepíše; licence FAA ale stále není zveřejněna. Nový soubor odhadů: 0,60; 0,62; 0,57; 0,57; 0,77.",
+   "sources": [
+    {
+     "title": "Space.com: Watch SpaceX attempt a historic Starship launch and double-catch landing today (Nov. 13)",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live"
+    },
+    {
+     "title": "Starbase Events: Flight 15 launch-day status",
+     "url": "https://www.starbaseevents.com/flights/15"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "fr-fuel-grandest-15",
+   "at": "2026-11-13T12:24:30+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-13T12:23:30+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.07,
+     "reason_blind": "Latest readings fell 22→19→18 (13 Nov 9h) and the Kaub gauge is back to normal at 67 cm, ahead of forecast. YES needs a rise of 5+ points by Saturday, reversing the trend; persistence and mean reversion of a falling indicator make that rare. Small allowance for a weekend demand spike or a supply hiccup.",
+     "at": "2026-11-13T12:23:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.07,
+     "reason": "No market or other signals exist; same as the blind estimate."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-13T12:23:30+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.35,
+     "reason_blind": "Own research: the official table did not render through read.mjs and searches found only older coverage (Grand Est 14% in September, Rhine low-water shortages since August), so no current level was found; prior near a coin flip, shaded down.",
+     "at": "2026-11-13T12:23:30+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.07,
+     "reason": "Grand Est fell from 22% (12 Nov 9h) to 19% (12 Nov 17h) to 18% (13 Nov 9h); France total 8%. Rhine at Kaub back to normal (67 cm) and rising as forecast. Needs a reversal of 5+ points by Saturday 17h."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-13T12:23:30+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.1,
+     "reason_blind": "Rebound case: 9h readings have run below 17h ones, Saturday demand peaks, barges need days to refill depots after the Rhine rises, declarations lag. But 22 to 19 to 18 with France down to 8% means a 5-point rebound in 32 hours.",
+     "at": "2026-11-13T12:23:30+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.06,
+     "reason": "Grand Est fell 22 to 19 to 18% by 13 Nov 9h, Rhine at 67 cm and rising on forecast, national rate easing; 23% by Saturday 17h needs a new depot outage or panic wave."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-13T12:23:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.06,
+     "reason": "Random walk on the series 20,19,21,22,19,18 (steps -1,+2,+1,-3,-1, sd about 2); three steps to Saturday 17h, total sd about 3.5; needs +5 (22.5 or more). Zero drift gives about 10%, mild downward drift (Rhine back to normal) about 4–5%; small upside tail for weekend demand: 6%."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-13T12:23:30+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.35,
+     "reason_blind": "The dossier's continuation to 24–26% rested on a stale 22% peak; the 12 Nov 17h (19) and 13 Nov 9h (18) readings show the decline had begun.",
+     "at": "2026-11-13T12:23:30+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.06,
+     "reason": "Grand Est fell 22 to 19 to 18 and the Rhine is recovering on forecast. Reaching 23 by Saturday 17h needs a reversal of 5+ points. Unlikely."
+    }
+   ],
+   "combined": 0.0638,
+   "calibrated": 0.0303,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2553,
+     "b": 1.3857
+    },
+    "version": "2026-11-13"
+   },
+   "spread": 0.01,
+   "disagreement": {
+    "cause": "none",
+    "note": "Final spread 0.01. No market exists; no forecaster relied on a market."
+   },
+   "decomposition": null,
+   "market": null,
+   "market_search": "none: no market or bookmaker lists this indicator (as in the morning).",
+   "red_team": {
+    "case_for_morning": "The series is noisy and moved 3 points in one day (19→22, 11→12 Nov). Weekend demand peaks and lags in station declarations could add 5 points; barges reach depots days after the Rhine gauge rises.",
+    "case_further": "Three readings in a row fell (22→19→18) while France dropped to 8%; the Rhine is back to normal on forecast, pointing to about 14–16% by Saturday 17h; 0.03 may still be too high.",
+    "stronger": "revision",
+    "why": "The morning 59% rested on a rising trend that has reversed on two official readings, and its cause, the low Rhine, is easing on schedule. No new shock found.",
+    "new_decisive_fact": null,
+    "factor": "outcome (slip_class none; p_held unchanged, Saturday publication still a void risk only)",
+    "likeliest_failure": "A new shock before Saturday 17h: depot blockade or strike, panic buying or slow barge deliveries."
+   }
+  },
+  {
+   "claim": "starship-launch-15",
+   "at": "2026-11-13T12:26:30+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-13T12:25:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.55,
+     "reason_blind": "Reference class: Starship Flights 10–14 lifted off on or within a day of the date targeted two days earlier 3 of 5 times (0.60); Flight 15 still had no FAA licence on 11–12 Nov, a hurdle none of those faced, so 0.55. The two-day window absorbs one 24-hour slip.",
+     "at": "2026-11-13T12:25:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.6,
+     "reason": "Launch-day closures in place, weather good, Space.com still says today, no slip reported. The missing licence is silence under UPDATE 2a.1 and is not counted; modest rise."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-13T12:25:00+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.55,
+     "reason_blind": "Own research: Wikipedia (edited 05:32Z) still NET 13 Nov 22:45 UTC pending regulatory approval; no report that the licence was issued; first ship catch over land adds licensing risk; hardware ready; past flights often scrubbed; Saturday is a backup day.",
+     "at": "2026-11-13T12:25:00+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.62,
+     "reason": "Space.com says launching today, the beach road closes at 11:00 CST, weather good, no slip reported. Licence not appearing yet is silence; base rate 3/5; two-day window helps."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-13T12:25:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.45,
+     "reason_blind": "Case against: FAA licence still unissued on launch morning for a new ship return over land; first V3 booster catch adds commit criteria; Flights 10, 12 and 13 all scrubbed at least once, Flight 13 slipped eight days; only one retry day.",
+     "at": "2026-11-13T12:25:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.57,
+     "reason": "Target reaffirmed on launch morning, closures in place, weather good, TFRs issued; late licences are normal, but licence plus scrub risk in a two-day window keeps it near the base rate."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-13T12:25:00+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.57,
+     "reason": "Flights 10–14: launched on first attempt 2/5 (about 0.45 with closures and good weather in place); P(launch next day | day-one scrub) about 1/3. 0.45+0.55×0.35≈0.64; P(licence in time)≈0.88 → 0.57."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-13T12:25:00+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.3,
+     "reason_blind": "Licence still unissued about 11 hours before liftoff and the first ship return over land is new; Flights 10, 12 and 13 all scrubbed at least once and 13 slipped 8 days; only two days covered.",
+     "at": "2026-11-13T12:25:00+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.77,
+     "reason": "Beach closures, good weather and no slip reports support Friday; a one-day slip still resolves YES. Pending licence and scrub history cap it near 0.77."
+    }
+   ],
+   "combined": 0.6303,
+   "calibrated": 0.73,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2553,
+     "b": 1.3857
+    },
+    "version": "2026-11-13"
+   },
+   "spread": 0.2,
+   "disagreement": {
+    "cause": "genuine",
+    "note": "Spread 0.20 (outsider 0.77 against 0.57–0.62), under the 0.25 limit; same facts read differently on scrub risk. No market used."
+   },
+   "decomposition": {
+    "factor": "p_held",
+    "morning": {
+     "p_held": 0.68,
+     "p_if_held": 1
+    },
+    "afternoon": {
+     "p_held": 0.73,
+     "p_if_held": 1
+    }
+   },
+   "market": null,
+   "market_search": "none found (as in the morning).",
+   "red_team": {
+    "case_for_morning": "Every new fact was scheduled and expected from the 7 Nov target; the real hurdle, the FAA licence, is still unlisted on launch morning; scrubs cluster on launch day; the raw finals (0.63) are below the morning figure and only calibration lifts them to 0.73.",
+    "case_further": "The window runs two days, so one scrub or 24-hour slip still counts; closures are in force, weather good, nothing slipped 11 hours before T-0; past licences arrived in the last day; 0.78–0.80 is defensible.",
+    "stronger": "revision",
+    "why": "The facts are launch-day timing evidence (closures, weather, no slip) that move p_held up; licence silence is not counted under UPDATE 2a.1; +5 points is proportionate.",
+    "new_decisive_fact": null,
+    "factor": "timing (p_held)",
+    "likeliest_failure": "The FAA licence for the first ship return over land does not arrive by Saturday, or a Friday scrub needs more than 24 hours to recycle."
+   }
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "https://www.nasaspaceflight.com/2026/11/starship-flight-15-spacex-history/ (HTTP 403)",
+   "https://www.technology.org/2026/11/13/starship-flight-15-launch-double-tower-catch-ship-42/ (HTTP 403)"
+  ],
+  "not_recomputed": "Other claims: no material fact published after the morning freeze was found (no prisoner exchange reported, no new UKMTO-relevant change, no COP31, Melaka, papal-visit or food-collection schedule change). Starship catch claims not recomputed: the launch revision moves their timing factor by under the display threshold."
+ }
+}

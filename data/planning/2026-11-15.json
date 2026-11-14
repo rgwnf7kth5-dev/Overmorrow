@@ -1,0 +1,3221 @@
+{
+  "edition": "2026-11-15",
+  "events_date": "2026-11-14",
+  "prepared_at": "2026-11-12T18:30:30.084Z",
+  "method_version": 6,
+  "number_expected": 24,
+  "candidates": 48,
+  "candidates_note": "8 proposed stories (12 claims), 40 dropped entries (two with dossiers: us-trump-depart-15, fr-protest-count-15) — 48 considered. Saturday 14 Nov is a thin day: no parliaments, cabinets, central banks or statistics releases.",
+  "cz_note": "One Czech story: cz-food-collection (Sbírka potravin, cz-food-tonnes-15).",
+  "cz_shortfall": "One Czech story proposed against the aim of eight. Saturday 14 Nov has no Czech event of weight with a checkable outcome: the Chamber, Senate and cabinet do not sit; no ČNB or ČSÚ release; no party congress, council or regional assembly (ODS included); the Letná rally is on Sunday 15 Nov and Babiš's Israel visit, the Prague council and mayor votes and the NSS ruling fall on 16–19 Nov; fuel-cap věstníky are not issued on Saturdays; President Pavel's programme could not be read (hrad.cz 403). Czech stories to look for again in the morning: any Saturday statement by the coalition before Letná.",
+  "economy": "One story with topic economy: fr-fuel (Grand Est fuel shortages). Shortfall against economy_min 3: no data release, central-bank, budget or company step falls on Saturday 14 Nov (China activity data Mon 16 Nov; Anthropic pricing 18 Nov, EDGAR closed at weekends; Nvidia results 17 Nov; French strike 17 Nov; the Saturday cost-of-living protest has no union call and the ministry count would likely be void). The morning should record meta.economy_shortfall unless an overnight economy step for Saturday appears.",
+  "easy_main": "No main claim at 90% or more either way.",
+  "negative_main": "Main claims below 50%: ua-drones-15 (49%) and pope-corruption-15 (28%) — two, within the limit of three. ua-drones is the nightly figure of the war (a number the paper reports either way); pope-corruption asks what the Pope says in his former diocese. my-malacca-bn-15 sits at 50%.",
+  "reports_what_happens": "All 8 stories lead with an occurrence on 13–14 Nov: an overnight attack size, a launch, a shipping incident, a fuel-availability figure, a collection total, what the Pope says, whether COP31's subsidiary bodies close on time, and the Melaka seat count.",
+  "running_note": "Stories of the day from BBC, ČT24, Seznam Zprávy, DW, Al Jazeera, the Guardian (world section), ČTK and Novinky; Reuters World and Business (401), AP, FT and iROZHLAS (403) refused the reader. 10 listed (3 excluded topics); 3 covered (ua-war, us-iran, cop31). Below running_min (6): Nvidia, the canteen decree and the Dublin aftermath have no Saturday step, and Letná is on Sunday; each reason is recorded. The morning should look again at the overnight front pages.",
+  "running": [
+    {
+      "title": "Ukraine peace talks: Witkoff/Kushner met Putin in Moscow, then Zelensky in Dublin; new trilateral round with Europeans agreed",
+      "title_cs": "Mírová jednání o Ukrajině: Witkoff a Kushner po schůzce s Putinem jednají se Zelenským, příští kolo i s Evropany",
+      "lists": [
+        "dw",
+        "guardian",
+        "ctk",
+        "novinky",
+        "seznamzpravy"
+      ],
+      "sources": [
+        "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates",
+        "https://www.ceskenoviny.cz/zpravy/evropske-zeme-se-pripoji-k-dalsimu-jednani-o-ukrajine-rekl-witkoff-/2900950"
+      ],
+      "next_step": "No date or venue set yet for the next trilateral round (the Kremlin had offered a 10-19 Nov window: https://news.liga.net/en/amp/politics/news/kremlin-names-timeframe-for-resuming-ukraine-russia-us-talks). By Saturday, expect read-outs or statements after the envoys' Dublin meeting with Zelensky, possibly a date and venue for the next round, and Europe naming its negotiators (Babiš suggested Meloni or Tusk). Putin is due to discuss Ukraine with Trump at APEC in Shenzhen next week, after Saturday. Putin also proposed a humanitarian mission in Kostiantynivka, saying demining would take 5 days (ČTK link above). No fixed Saturday event was found.",
+      "status": "covered",
+      "story": "ua-war"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang resigns amid affair/suspected Chinese spy scandal; CFO Colette Kress interim CEO",
+      "title_cs": "Šéf Nvidie Jensen Huang rezignoval kvůli aféře s údajnou čínskou špionkou, firmu dočasně vede Colette Kress",
+      "lists": [
+        "bbc",
+        "ct24",
+        "aljazeera",
+        "dw",
+        "seznamzpravy",
+        "ctk"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/live/c6zjry11v8w1t",
+        "https://ct24.ceskatelevize.cz/clanek/svet/sef-nvidie-jensen-huang-rezignoval-379557"
+      ],
+      "next_step": "Saturday is a market-closed weekend day. Possible steps: board statements about the succession search, headhunter reports (https://www.thestandard.com.hk/finance/article/348055/Headhunters-may-be-hunting-for-Nvidias-next-successor-The-Information-reports), and US political or security reactions. Nvidia's quarterly results are reportedly around 17-19 Nov, after Saturday and unverified (the source page returned 410). No fixed Saturday step was found. The spy angle may involve an investigation, so keep the crime aspect out of the forecast.",
+      "status": "not_covered",
+      "why": "No dated step on Sat 14 Nov: Nvidia's 8-K names no board meeting or statement; the permanent-CEO search has no timetable and results are on Tue 17 Nov (dossier agent, anthropic/nvidia check). A \"permanent CEO named by Saturday\" claim would be practically certain NO."
+    },
+    {
+      "title": "Czech school canteens: 'consumer basket' nutrition rules to be dropped from decree at Babiš's request; SZÚ director objects",
+      "title_cs": "Spotřební koš mizí z vyhlášky o školním stravování, ředitelka SZÚ varuje před nevýživnými obědy",
+      "lists": [
+        "ct24",
+        "seznamzpravy",
+        "novinky"
+      ],
+      "sources": [
+        "https://ct24.ceskatelevize.cz/clanek/domaci/reditelka-szu-pochybuje-zda-budou-skolni-jidelny-dodrzovat-nezavazna-doporuceni-379560",
+        "https://www.novinky.cz/clanek/domaci-deti-budou-dostavat-ve-skolnich-jidelnach-nevyzivna-jidla-plna-polotovaru-obava-se-sefka-szu-40608370"
+      ],
+      "next_step": "No Saturday step was found. The decree amendment has not yet been published, and the Food Chamber supports the change while experts oppose it. Possible Saturday items are a petition or statements from experts or opposition parties. Weekend political TV (on Sunday) falls outside the window. The topic touches health, so frame it as education/regulation policy only.",
+      "status": "not_covered",
+      "why": "Policy story with no step on Saturday (decree change announced; no consultation deadline or ministerial act dated 14 Nov found); touches nutrition, framed as policy only."
+    },
+    {
+      "title": "European Political Community / EU summit in Dublin: Europe's seat at Ukraine talks and dispute over Merz's demand that all EU states fund Ukraine's 2027 deficit (EU budget threat)",
+      "title_cs": "Summit v Dublinu: kdo bude za Evropu jednat o míru a spor o Merzův požadavek financovat ukrajinský schodek",
+      "lists": [
+        "ctk",
+        "seznamzpravy",
+        "dw"
+      ],
+      "sources": [
+        "https://www.ceskenoviny.cz/zpravy/babis-se-v-dublinu-na-okraj-evropskeho-summitu-sesel-se-zelenskym-/2900531",
+        "https://www.seznamzpravy.cz/clanek/domaci-politika-babis-ukazal-na-politiky-kteri-by-podle-nej-meli-jednat-o-miru-s-ruskem-320401"
+      ],
+      "next_step": "The EPC met Thursday and the informal European Council meets Friday 13 Nov (previous edition). Saturday is the aftermath: reactions to the summit conclusions on European negotiators and the Ukraine financing / EU budget dispute (Babiš and Fico vs Merz). No scheduled Saturday meeting was found.",
+      "status": "not_covered",
+      "why": "The Dublin meetings were on 12–13 Nov (previous edition); nothing scheduled for Saturday. Follow-ups are on the forecast board (eu-22nd-sanctions-package, eu-mff-deal-2026)."
+    },
+    {
+      "title": "Milion chvilek 'Letná proti 4:36' demonstration for public-media independence (Sunday 15 Nov, Prague)",
+      "title_cs": "Demonstrace Milionu chvilek „Letná proti 4:36“ za nezávislost ČT a ČRo",
+      "lists": [
+        "ctk"
+      ],
+      "sources": [
+        "https://www.ceskenoviny.cz/zpravy/na-letne-ocekava-milion-chvilek-stovky-tisic-lidi-oznami-dalsi-plany/2901226",
+        "https://www.ceskenoviny.cz/prilohy/ceska-televize-rozhlas-poplatky/"
+      ],
+      "next_step": "The rally is SUNDAY 15 Nov at 14:00, the day after our window. On Saturday expect only preparations: organisers' statements, buses from the regions, and the Prague transport plan (DPP reinforces metro and trams on Sunday). Included as a near-miss: it is in only one top 5, though the ČT/ČRo fees dispute also runs on ČTK's front page.",
+      "status": "not_covered",
+      "why": "The rally is on Sunday 15 Nov at 14:00, after E+2 (belongs to the next edition); no government decision, union action or counter-event set for Saturday (cz-letna check)."
+    },
+    {
+      "title": "COP31 climate summit in Antalya (leaders' segment 11-12 Nov; Burnham speech)",
+      "title_cs": "Klimatická konference COP31 v Antalyi",
+      "lists": [
+        "bbc",
+        "ct24"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/articles/cmg46y7wev42o",
+        "https://www.climatechangenews.com/2026/04/14/turkiye-sets-cop31-dates-and-appoints-australian-cattle-farmer-as-youth-champion/"
+      ],
+      "next_step": "This is a near-miss: it is not in any top 5 but appears on BBC and ČT24 lower down. The leaders' summit ran 11-12 Nov (days 3-4), so the conference opened Mon 9 Nov. Saturday 14 Nov ends the first negotiating week, which usually means the closing of the subsidiary bodies' sessions and draft texts passed to the presidency. Check the official schedule (PDF, not readable here): https://unfccc.int/sites/default/files/resource/COP_31_Overview_Schedule.pdf",
+      "status": "covered",
+      "story": "cop31"
+    },
+    {
+      "title": "US-Iran tensions: Iran vows '10 times more severe' reply to any US attack; Israel prepares; Houthis target Saudi energy",
+      "title_cs": "Napětí mezi USA a Íránem: Teherán hrozí tvrdou odvetou",
+      "lists": [
+        "aljazeera",
+        "bbc"
+      ],
+      "sources": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza",
+        "https://www.bbc.com/news/videos/cke89dqmlp2eo"
+      ],
+      "next_step": "No scheduled Saturday step was found. Only statements or threats are forecastable. Any military-strike outcomes are excluded (deaths).",
+      "status": "covered",
+      "story": "us-iran"
+    },
+    {
+      "title": "Israeli strike on Gaza's Nasser hospital kills surgeon and others",
+      "title_cs": "Izraelský úder na nemocnici Násir v Gaze",
+      "lists": [
+        "aljazeera",
+        "guardian"
+      ],
+      "sources": [
+        "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+        "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza"
+      ],
+      "next_step": "EXCLUDED: deaths/military strike. Do not forecast.",
+      "status": "not_covered",
+      "why": "Excluded topic (deaths in an air strike)."
+    },
+    {
+      "title": "UK court convicts two Iranian men of spying on Persian-language journalists",
+      "title_cs": "Britský soud uznal dva Íránce vinnými ze špionáže novinářů",
+      "lists": [
+        "aljazeera",
+        "dw"
+      ],
+      "sources": [
+        "https://www.aljazeera.com/news/2026/11/12/uk-court-finds-two-iranian-men-guilty-of-spying-for-iran",
+        "https://www.dw.com/en/uk-court-convicts-2-iranian-men-of-spying-on-journalists/a-79931583"
+      ],
+      "next_step": "EXCLUDED: crime. Sentencing is not dated within the window.",
+      "status": "not_covered",
+      "why": "Excluded topic (crime / court case)."
+    },
+    {
+      "title": "Disasters and violence: Brooklyn building collapse (8 dead), Washington DC shooting, UAE Fujairah 23-vehicle crash (14 dead)",
+      "title_cs": "Neštěstí a násilí: zřícení domu v Brooklynu, střelba ve Washingtonu, hromadná nehoda v SAE",
+      "lists": [
+        "bbc",
+        "aljazeera",
+        "dw"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/live/cm20qr0znxg0t",
+        "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident"
+      ],
+      "next_step": "EXCLUDED: deaths, disasters, crime. Do not forecast.",
+      "status": "not_covered",
+      "why": "Excluded topic (disasters and violence)."
+    }
+  ],
+  "unreachable": [
+    "reuters.com (401)",
+    "apnews.com, ft.com, irozhlas.cz (403)",
+    "theguardian.com/international (client challenge)",
+    "hrad.cz (403)",
+    "senat.cz (request rejected)",
+    "psp.cz (unreachable)",
+    "ukmto.org (blocks scripted reading)",
+    "enb.iisd.org COP31 HTML page (exit 2; PDFs read)",
+    "unfccc.int COP31/SB65 pages (empty), COP31 schedule PDF (bot protection)",
+    "nasaspaceflight.com (403)",
+    "spacex.com launch pages (JavaScript, empty)",
+    "spaceflightnow.com (refused)",
+    "mississippitoday.org (refused)",
+    "SCMP (refused)",
+    "Le Monde (402)",
+    "euronews (406)",
+    "economie.gouv.fr (403)",
+    "api.nst.com.my (403)",
+    "inquirer.net, businessmirror.com.ph, vietnamnews.vn (403)",
+    "fourweekmba.com (403), tech-insider.org (410)",
+    "censor.net (403)",
+    "Seatrade, Splash247, Riviera, Dawn, Anadolu (refused)",
+    "sbirkapotravin.cz results archive (404)"
+  ],
+  "run": {
+    "started_at": "2026-11-12T18:39:00+01:00",
+    "finished_at": "2026-11-12T18:31:25.363Z",
+    "agents": 34,
+    "searches": 162
+  },
+  "note": "Evening desk round one, prepared 12 Nov 2026 18:40–20:00 CET. 8 stories, 12 claims (0 interval, 0 derived). Published binary figure: calibrated combination, pipeline/calibration.json version 2026-11-12 (Platt a 0.2534, b 1.358; weights equal). Each forecaster ran on its config model (base-rate, evidence, anchor: claude-opus-5-5; adversarial: claude-fable-5-2; outsider: claude-sonnet-5-5) in two steps with the same agent, the blind file written before any signals file was opened (anchor: one step). Union-of-facts rerun for my-malacca-bn-15, my-malacca-ph-15 and pope-corruption-15 (spread > 25); research step for the claims with spread > 15 (none decisive). No interval claim: no official number is released on Saturday. Shadow sequential researcher not run: the search budget was short after a thin-day candidate hunt (the morning reserve is kept). The baseline status_quo was set by each dossier agent before any forecast.",
+  "stories": [
+    {
+      "id": "ua-war",
+      "scope": "europe",
+      "topic": "security",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "event_key": "ua-war-2026-11-14",
+      "case_key": "ru-ua-peace-talks",
+      "event": "The trilateral US-Russia-Ukraine round in Abu Dhabi ended on 11 Nov without a breakthrough but with an agreement on a 'large-scale' prisoner exchange (TASS, citing Gen. Zorin: more than 1,000 per side); neither side has given a date, and Umerov said details and practical implementation were still being agreed. On 12 Nov Putin received US envoys Witkoff and Kushner in the Kremlin, proposed a humanitarian mission in Kostiantynivka, and Witkoff called the upcoming exchange progress; the envoys are to debrief Zelensky in Dublin. No date for a next round has been published. Russia attacked Kyiv with ballistic missiles and drones hours after the talks ended (123 drones on the night to 12 Nov per the Air Force), and Zelensky said on 12 Nov that speed restrictions on Starshield (military Starlink) are hampering the interception of Russian jet-powered drones.",
+      "title_cs": "Rusko dál útočí drony, Kyjev a Moskva čekají na termín velké výměny zajatců",
+      "sources": [
+        {
+          "title": "Kyiv Independent: 'Large-scale' prisoner exchange agreed as 2nd day of Abu Dhabi talks concludes, Umerov says",
+          "url": "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/"
+        },
+        {
+          "title": "TASS: What to know about Putin's meeting with US envoys in Kremlin",
+          "url": "https://tass.com/politics/2217341"
+        },
+        {
+          "title": "Kyiv Independent: Russian attacks kill 10, injure 40 across Ukraine over past day, as peace talks end",
+          "url": "https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/"
+        },
+        {
+          "title": "Kyiv Independent: Starshield speed restrictions return, hampering efforts to intercept Russian drones, Zelensky says",
+          "url": "https://kyivindependent.com/starshield-speed-restrictions-return-hampering-efforts-to-intercept-russian-drones-zelensky-says/"
+        },
+        {
+          "title": "Kyiv Independent: Putin proposes 'humanitarian mission' in contested Kostiantynivka",
+          "url": "https://kyivindependent.com/witkoff-kushner-arrive-in-moscow-following-ukraine-peace-talks/"
+        }
+      ],
+      "rank": 1,
+      "claims": [
+        {
+          "id": "ua-drones-15",
+          "label": "Night drone attack of at least 170",
+          "text": "The Ukrainian Air Force reports that Russia launched at least 170 drones at Ukraine in the night of 13–14 November 2026.",
+          "criterion": "YES if the Ukrainian Air Force's first morning summary on 14 Nov 2026, covering the overnight attack that normally counts from 18:00 Kyiv time on 13 Nov, states that Russia launched at least 170 drones (strike UAVs as the summary counts them: Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions the summary includes in the UAV total; missiles listed separately not counted), as published on the Air Force's Telegram channel or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Separate daytime reports and later corrections do not count. NO if that summary gives fewer than 170 drones.",
+          "resolution_source": "https://t.me/kpszsu ; https://kyivindependent.com/ ; https://www.pravda.com.ua/eng/ ; https://en.interfax.com.ua/",
+          "schedule": "official",
+          "slip_class": "none",
+          "publishes": "Air Force morning summary, usually 08:00–10:00 Kyiv time on 14 Nov 2026",
+          "tz": "Europe/Kyiv",
+          "event_window": {
+            "start": "2026-11-13T18:00:00+02:00",
+            "end": "2026-11-14T09:00:00+02:00"
+          },
+          "evidence_at": "2026-11-14T12:00:00+02:00",
+          "resolves_by": "2026-11-15T05:00:00+01:00",
+          "cs": {
+            "label": "Noční útok nejméně 170 drony",
+            "text": "Ukrajinské letectvo oznámí, že Rusko v noci na 14. listopadu 2026 vyslalo proti Ukrajině nejméně 170 dronů.",
+            "criterion": "ANO, pokud první ranní souhrn ukrajinského letectva ze 14. listopadu 2026 o nočním útoku (obvykle počítaném od 18:00 kyjevského času 13. listopadu) uvede, že Rusko vyslalo nejméně 170 dronů (útočné drony, jak je souhrn počítá: Šáhedy včetně proudových, Gerbery, Parodije a další klamné drony a případně proudová munice zahrnutá do celkového počtu dronů; samostatně uváděné rakety se nepočítají), jak ho zveřejní kanál letectva na Telegramu nebo převezme Ukrinform, Ukrajinska pravda, Kyiv Independent či Interfax-Ukrajina. Samostatná denní hlášení a pozdější opravy se nepočítají. NE, pokud souhrn uvede méně než 170 dronů."
+          },
+          "dossier": "data/dossiers/2026-11-15/ua-drones-15.md",
+          "signals": "data/dossiers/2026-11-15/ua-drones-15.signals.md",
+          "notes": "Same framing as ua-drones-11..14. Median of last 14 nights = 168 → 170 (unchanged from ua-drones-14). Last 7 nights 3/7 ≥170; last three nights 162, 163, 123 (low run); no night ≥289 since 9 Nov. Morning desk: add the night to 13 Nov (published morning of 13 Nov) and recompute the median; if it moves to ≥175 or ≤165, the rounded threshold changes. An interval claim was considered but no consensus/scale source exists for nightly counts.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Threshold set at the 14-night median (168); 7 of the last 14 nights reached 170.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:54:42Z",
+              "checked": [
+                "markets.mjs search russia drones ukraine"
+              ],
+              "note": "No market on nightly drone counts."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "own count: Air Force nightly drone counts at or above 170, nights to 30 Oct–12 Nov 2026",
+              "rate": 0.5,
+              "n": 14,
+              "source": "data/dossiers/2026-11-15/ua-drones-15.md (Kyiv Independent/Ukrinform relays of Air Force summaries; 3 Nov 'at least 289')"
+            },
+            "dossier": "data/dossiers/2026-11-15/ua-drones-15.md",
+            "signals": "data/dossiers/2026-11-15/ua-drones-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.47,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "Threshold equals the 14-night median (7/14 = 0.50 at >=170; last 7 nights 3/7). Last three nights were low (162, 163, 123), nudging down slightly, while large nights recur every 3-5 nights and none since 9 Nov, so only a small net downward adjustment.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.47,
+                "at": "2026-11-12T18:14:24Z",
+                "reason": "No matching market or model in signals; blind estimate stands: threshold at the 14-night median (0.50), shaded slightly down for the low last three nights.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.4,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "Air Force morning summaries for nights 24 Oct-12 Nov: 7 of 19 known nights had >=170 drones (280, 433, 193, 310, 227, 172, 317), with recent typical nights 120-165; Russia now also runs large daytime waves (143 drones on 12 Nov daytime) that are counted separately, which may thin the overnight count.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.45,
+                "at": "2026-11-12T18:15:14Z",
+                "reason": "Dossier fills in 3 Nov (>=289): 7 of the last 14 nights reached 170 (median 168) and 3 of the last 7; the last three nights were low (162, 163, 123), but big nights have come every 3-5 nights and none since 9 Nov; no strike pause announced despite the Witkoff-Putin talks; no market.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "Threshold is the 14-night median (7/14 at or above 170), but the last three nights were 162, 163, 123 and only 3 of the last 7 cleared it, pushing below 0.50. Against that, large waves (289+) have come every 3-5 nights and none since 9 Nov, so a big night is due on 13 or 14 Nov; the unknown 13 Nov figure keeps this near even, slightly under.",
+                "inputs_blind": [
+                  "dossier"
+                ],
+                "p": 0.45,
+                "at": "2026-11-12T18:16:13Z",
+                "reason": "No market or model on nightly drone counts, so the blind view stands: 7 of 14 nights at or above 170 but a low recent run (162, 163, 123), partly offset by a large wave being due.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.48,
+                "at": "2026-11-12T18:11:16Z",
+                "reason": "Two-piece normal through the last 14 nights' q10/q50/q90 (123/168/313) gives 0.49 for >=170. Trimmed slightly because the last three nights (162,163,123) ran low; a big night is due after 5 quiet ones, which keeps it close to even.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs derive 123 168 313 > 169.5 = 0.495 (14-night empirical distribution; no market on nightly counts)"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.38,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "Recent Air Force nightly counts in searches ranged ~70-230; 170+ is a large-attack night, not typical; Fri-Sat night with no specific info.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.38,
+                "at": "2026-11-12T18:16:52Z",
+                "reason": "Signals add nothing (no market or model); keep blind view that 170+ is a large-attack night.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.446,
+            "calibrated": 0.489,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.1,
+            "disagreement": null
+          },
+          "probability": 0.49
+        },
+        {
+          "id": "ua-swap-15",
+          "label": "Prisoner exchange on 13–14 Nov",
+          "text": "Russia and Ukraine carry out a prisoner exchange between the morning of Friday 13 November and the end of Saturday 14 November 2026 (Kyiv time).",
+          "criterion": "YES if, between 07:00 Kyiv time (UTC+2) on 13 Nov 2026 and 23:59 Kyiv time on 14 Nov 2026, Russia and Ukraine carry out an exchange of prisoners (prisoners of war, and civilians if released in the same swap) in which both sides hand over people, as confirmed by Zelensky, the Ukrainian Presidential Office, the Coordination Headquarters for the Treatment of POWs or the Russian Ministry of Defence, or reported as fact by at least two major outlets (e.g. Reuters, AP, AFP, Kyiv Independent, Ukrinform, Ukrainska Pravda, TASS, Moscow Times). Any size counts; it need not be the large-scale exchange agreed in Abu Dhabi; the first stage of a multi-stage exchange counts if it takes place in the window. Does NOT count: an announced agreement or date for a future exchange; exchanges of bodies only; one-sided releases or handovers; returns of children or civilians outside a two-way prisoner swap. NO if no such exchange takes place in the window. A report published after the window counts if it makes clear the exchange took place in the window.",
+          "resolution_source": "https://www.president.gov.ua/en/news ; https://t.me/koordshtab ; https://kyivindependent.com/ ; https://tass.com/",
+          "schedule": "speculative",
+          "slip_class": "none",
+          "publishes": "same-day posts by Zelensky / Coordination HQ / Russian MoD when a swap happens, usually around midday Kyiv",
+          "tz": "Europe/Kyiv",
+          "event_window": {
+            "start": "2026-11-13T07:00:00+02:00",
+            "end": "2026-11-14T23:59:00+02:00"
+          },
+          "evidence_at": "2026-11-14T23:59:00+02:00",
+          "resolves_by": "2026-11-15T05:00:00+01:00",
+          "cs": {
+            "label": "Výměna zajatců 13.–14. listopadu",
+            "text": "Rusko a Ukrajina provedou výměnu zajatců mezi pátečním ránem 13. listopadu a koncem soboty 14. listopadu 2026 (kyjevského času).",
+            "criterion": "ANO, pokud mezi 7:00 kyjevského času (UTC+2) 13. listopadu 2026 a 23:59 kyjevského času 14. listopadu 2026 Rusko a Ukrajina provedou výměnu zajatců (válečných zajatců, případně i civilistů propuštěných v rámci téže výměny), při níž lidi předají obě strany, což potvrdí Zelenskyj, ukrajinská prezidentská kancelář, Koordinační štáb pro zacházení s válečnými zajatci nebo ruské ministerstvo obrany, případně to jako fakt uvedou nejméně dvě velká média (např. Reuters, AP, AFP, Kyiv Independent, Ukrinform, Ukrajinska pravda, TASS, Moscow Times). Počítá se výměna jakékoli velikosti, nemusí jít o rozsáhlou výměnu dohodnutou v Abú Zabí; první etapa vícefázové výměny se počítá, proběhne-li v okně. NEpočítá se: oznámená dohoda nebo termín budoucí výměny, výměna pouze těl, jednostranné propuštění či předání, návrat dětí nebo civilistů mimo oboustrannou výměnu. NE, pokud v okně žádná taková výměna neproběhne. Zpráva zveřejněná po skončení okna se počítá, pokud z ní jasně vyplývá, že výměna proběhla v okně."
+          },
+          "dossier": "data/dossiers/2026-11-15/ua-swap-15.md",
+          "signals": "data/dossiers/2026-11-15/ua-swap-15.signals.md",
+          "notes": "Secondary claim; likely NO but genuinely open given an agreed, imminent exchange (Witkoff 12 Nov: 'upcoming'). Zorin via BBC: possibly within two to three weeks. Alternative window 'on 14 Nov only' considered; the two-day window matches the predecessor ua-talks-swap-13 and the reference class. Morning desk: check Coordination HQ and Zelensky on 13 Nov morning for any announcement.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "no",
+              "why": "No date announced; Umerov said details and implementation are still being agreed, so YES needs the swap to happen faster than in any comparable case.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:54:33Z",
+              "checked": [
+                "markets.mjs search ukraine prisoner exchange"
+              ],
+              "note": "No market on a prisoner exchange; only ceasefire/peace-deal/Zelensky questions returned."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "ua-ru-pow-exchange-two-day-window",
+              "rate": 0.069,
+              "n": 304,
+              "source": "pipeline/reference-classes.json (21 of 304 two-day windows in 2026, data/dossiers/2026-11-05/ua-pow-1.md); conditional own count: first swap 2–3 days after an announced agreement 0 of 5 (lags 0, 7, 7, 15, 82 days)"
+            },
+            "dossier": "data/dossiers/2026-11-15/ua-swap-15.md",
+            "signals": "data/dossiers/2026-11-15/ua-swap-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.1,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "Reference class 0.069 per two-day window; the 11 Nov Abu Dhabi agreement raises it, but in 0 of 5 past agreements did the first swap come 2-3 days later (non-same-day lags were 7+ days) and Umerov said implementation details were still being worked out.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.1,
+                "at": "2026-11-12T18:14:24Z",
+                "reason": "Signals hold no exchange market or quote; blind estimate stands: class rate 0.069 lifted by the 11 Nov agreement, but past agreements never produced a swap 2-3 days later.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.1,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "A large swap was agreed in principle in Abu Dhabi on 11 Nov with numbers to be finalised 12 Nov, but Russian General Staff officer Zorin said it could take place in the next two or three weeks; past agreed swaps took about a week or more to execute, and the last swap was 23 Oct.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.09,
+                "at": "2026-11-12T18:15:14Z",
+                "reason": "The swap is agreed only in principle with no date; Zorin says two to three weeks; in 0 of 5 past agreements did the first swap come 2-3 days later (lags 0, 7, 7, 15, 82 days); the base rate for any two-day window in 2026 is 0.069; no market.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.07,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "Case for YES: a swap was agreed in Abu Dhabi on 11 Nov, both sides and Witkoff flag it, and a small separate swap would count. But 0 of 5 past agreements produced a swap 2-3 days later (non-same-day lags were 7, 7, 15, 82 days), Umerov says details are still being agreed and Zorin spoke of two to three weeks, so the window is little better than the 0.069 two-day base rate.",
+                "inputs_blind": [
+                  "dossier"
+                ],
+                "p": 0.07,
+                "at": "2026-11-12T18:16:13Z",
+                "reason": "No market on a prisoner exchange; ceasefire markets are low and add nothing for this window. Unchanged: 0 of 5 past agreements led to a swap within 2-3 days and details are still being negotiated.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.12,
+                "at": "2026-11-12T18:11:16Z",
+                "reason": "Reference class gives 0.069 per two-day window in 2026; the 11 Nov Abu Dhabi agreement and Witkoff's 'upcoming exchange' raise it. But 0 of 5 past agreements led to a swap 2-3 days later (non-same-day lags were 7+ days), and Umerov said details were still being worked out.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "base-rate",
+                  "detail": "ua-ru-pow-exchange-two-day-window 0.069 (21/304), adjusted up for a fresh agreement"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.22,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "Large exchange agreed in Abu Dhabi 10 Nov 'in the near future'; last swap 23 Oct; two-day window is short, execution often lags agreement by days to weeks.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.22,
+                "at": "2026-11-12T18:16:52Z",
+                "reason": "No market; Abu Dhabi agreement of 10 Nov points to a swap soon but two-day window is narrow.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.112,
+            "calibrated": 0.072,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.15,
+            "disagreement": null
+          },
+          "probability": 0.07
+        }
+      ]
+    },
+    {
+      "id": "starship-15",
+      "scope": "world",
+      "topic": "science-health",
+      "scores": {
+        "impact": 4,
+        "reach": 5,
+        "uncertainty": 4
+      },
+      "event_key": "spacex-starship-flight15-2026-11-14",
+      "case_key": "spacex-starship-2026",
+      "event": "SpaceX targets Starship Flight 15 (Booster 22, Ship 42) from Pad 2 at Starbase, Texas, on Friday 13 November 2026 in a 75-minute window opening 4:45 p.m. CST (22:45 UTC), pending FAA approval; the licence was still outstanding on 10–11 November. It is the first attempt to catch both stages with the launch tower: the booster about 6.5 minutes after liftoff, the ship about 22.5 hours later (around 3:17 p.m. CST Saturday for an on-time launch) after about 14 orbits at ~275 km and deployment of 26 Starlink V3 satellites. The ship returns only if its systems are healthy. SpaceX has caught Super Heavy on Flights 5, 7 and 8 but never a ship; Flight 14 on 28 September was the first orbital flight. V3 boosters were lost after engine relight failures on Flights 12 and 13 (SpaceX via Space.com, Starlust, The Space Road, Teslarati, Wikipedia).",
+      "title_cs": "SpaceX se při 15. letu Starship poprvé pokusí zachytit věží booster i loď",
+      "sources": [
+        {
+          "title": "Space.com: SpaceX Starship Flight 15 live updates",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt"
+        },
+        {
+          "title": "Starlust: SpaceX shares launch timing for Starship Flight 15",
+          "url": "https://starlust.org/14-orbits-in-22-hours-how-spacex-has-planned-starships-flight-15-timing-and-streaming-details-here/"
+        },
+        {
+          "title": "The Space Road: Starship Flight 15 live",
+          "url": "https://thespaceroad.com/launches/starship-flight-15/"
+        },
+        {
+          "title": "Teslarati: SpaceX's next Starship flight set to make history on Friday the 13th",
+          "url": "https://www.teslarati.com/spacex-starship-catch-nov-13/"
+        },
+        {
+          "title": "Next Spaceflight: Starship Flight 15",
+          "url": "https://nextspaceflight.com/launches/details/8403/"
+        },
+        {
+          "title": "Wikipedia: List of Starship launches",
+          "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_flight_tests"
+        }
+      ],
+      "rank": 2,
+      "claims": [
+        {
+          "id": "starship-launch-15",
+          "label": "Starship Flight 15 lifts off by Sat 14 Nov",
+          "text": "SpaceX's Starship Flight 15 (Booster 22 / Ship 42) lifts off from Starbase, Texas, between 05:30 CET on Fri 13 Nov 2026 and 23:59 CST on Sat 14 Nov 2026.",
+          "criterion": "YES if Starship Flight 15 lifts off (leaves the pad) from Starbase, Texas, between 2026-11-13T05:30+01:00 and 2026-11-14T23:59-06:00 (05:59 UTC Sun 15 Nov), as shown by SpaceX's webcast/@SpaceX posts or spacex.com, or reported by Space.com, SpaceNews or Spaceflight Now. Liftoff counts regardless of how the flight ends. NO if no liftoff occurs in that window (scrub, slip, licence delay). A pad abort before liftoff is NO.",
+          "resolution_source": "SpaceX webcast and @SpaceX on X (https://x.com/SpaceX); https://www.spacex.com/launches/starship-flight-15 ; fallback Space.com live blog https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt , SpaceNews, Spaceflight Now",
+          "schedule": "official",
+          "slip_class": "launch",
+          "publishes": "Live: SpaceX webcast starts ~30 min before liftoff; window Fri 16:45–18:00 CST (22:45–24:00 UTC), backup Sat same time; outlets report within minutes",
+          "tz": "America/Chicago",
+          "event_window": {
+            "start": "2026-11-13T05:30:00+01:00",
+            "end": "2026-11-14T23:59:00-06:00"
+          },
+          "evidence_at": "2026-11-15T01:00:00+01:00",
+          "resolves_by": "2026-11-15T05:00:00+01:00",
+          "cs": {
+            "label": "Starship odstartuje k 15. letu do soboty 14. listopadu",
+            "text": "Raketa Starship společnosti SpaceX (Booster 22 / Ship 42) odstartuje k 15. letu z texaské základny Starbase mezi 5:30 SEČ v pátek 13. listopadu 2026 a 23:59 středoamerického času (CST) v sobotu 14. listopadu 2026.",
+            "criterion": "ANO, pokud Starship při letu 15 odstartuje (opustí rampu) ze Starbase v Texasu mezi 13. 11. 2026 5:30 SEČ a 14. 11. 2026 23:59 CST (6:59 SEČ v neděli 15. 11.), jak doloží přenos či příspěvky SpaceX na X nebo web spacex.com, případně zprávy Space.com, SpaceNews nebo Spaceflight Now. Start se počítá bez ohledu na průběh letu. NE, pokud v tomto okně ke startu nedojde (zrušení odpočtu, odklad, chybějící licence). Přerušení odpočtu na rampě před vzletem znamená NE."
+          },
+          "dossier": "data/dossiers/2026-11-15/starship-launch-15.md",
+          "signals": "data/dossiers/2026-11-15/starship-launch-15.signals.md",
+          "notes": "Main per assignment, but note: the launch itself happens Fri 13 Nov CST (Sat early CET); the genuinely SATURDAY outcome is the ship catch (~15:17 CST Sat), offered as claim 3 — editor may prefer it as main (EDITOR rule: main = outcome that happens on Sat 14). FAA licence status not confirmed for 12 Nov; check at freeze. Window end in UTC is 05:59 Sun 15 Nov.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "SpaceX's announced target is Fri 13 Nov 16:45 CST with a Saturday backup inside the window; YES if things go as announced, though the FAA licence was still pending on 11 Nov.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T18:07:00Z",
+              "checked": [
+                "markets.mjs search starship flight 15",
+                "markets.mjs search starship catch"
+              ],
+              "note": "Polymarket 'launch by November 15' Yes 0.565 (vol ~$12.7k) — deadline about a day longer than our window, not an exact match; 'by Nov 30' 0.947. Details in signals."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "Starship launched on or within 1 day of the date targeted ~2 days before (Flights 10–14)",
+              "rate": 0.6,
+              "n": 5,
+              "source": "Own count from Wikipedia flight pages: F11, F12, F14 yes; F10 (+2 d), F13 (+8 d) no"
+            },
+            "dossier": "data/dossiers/2026-11-15/starship-launch-15.md",
+            "signals": "data/dossiers/2026-11-15/starship-launch-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.55,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "In the recent-flight reference class, 3/5 flights launched within a day of the target set two days out, and the launch slip class is 0.30 per day while the window covers Friday and Saturday. Adjusted down because the FAA licence was still not issued on 11 Nov and a dual RTLS is new. That is held back by Starship licences historically arriving a day or so before launch and by the vehicles being on the pad, with TFRs/NOTAMs issued.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.53,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Polymarket prices launch by 15 Nov at 0.565 (thin, about $12.7k). Its deadline is about a day longer than our window, so it implies roughly 0.50 to 0.53 for ours, which agrees with the 3/5 reference class adjusted for the pending FAA licence. I nudged the estimate down slightly from 0.55.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.53,
+                "p_if_held": 1
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.55,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "Booster 22 is on Pad 2, road closures are set for Fri 13 and Sat 14 Nov (75-min window from 16:45 CST each day), giving two attempts; but as of 12 Nov no FAA licence for Flight 15 is listed (needed for land-return ship catch), and Starship first attempts often slip.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.52,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "Polymarket prices 'launch by 15 Nov' at 0.565, over a window about a day wider than ours. The FAA licence was still pending on 11-12 Nov, and recent flights launched on or within a day of target 3/5. Two windows (Fri and Sat at 16:45 CST) are available.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.55,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "Slip-class rate 0.30 and own 3/5 within-one-day record would give about 0.6-0.7 for a two-day window, but the FAA licence was still outstanding a day before, and it must cover a first ship return over land, which the base sample never faced. Hardware on the pad, TFRs issued and SpaceX holding 13 Nov push up; three of the last five flights scrubbed at least once.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.5,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "Polymarket prices launch by 15 Nov at 0.565 with a deadline about a day longer than ours, so our window is worth a few points less. With the FAA licence still not issued a day out and three of the last five flights scrubbed at least once, I move down from 0.55.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.5,
+                "p_if_held": 1
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.5,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "Polymarket 'launch by Nov 15' at 0.565 has a deadline ~23 h longer than ours (ends 04:59Z 16 Nov vs 05:59Z 15 Nov), so Sunday-launch mass (~0.06) is removed. FAA licence still outstanding on 11-12 Nov and a scrub history on 3 of last 5 flights keep it near a coin flip.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "market",
+                  "detail": "Polymarket 'Will Starship Flight Test 15 launch by November 15, 2026?' Yes 0.565 (vol ~$12.7k, closes 2026-11-16T04:59Z), read 2026-11-12T18:11Z; minus ~0.06 for Sunday 15 Nov"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.66,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "Space.com (12 Nov) says liftoff is targeted for 13 Nov at 22:45 GMT, with a 75-minute window. A backup day on 14 Nov falls inside the claim window. The launch slip prior is 0.30, reduced for the extra day.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.57,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "Polymarket 'launch by 15 Nov' is 0.565 with a slightly wider deadline than ours, so I moved down from 0.66 toward the market.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.524,
+            "calibrated": 0.595,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.07,
+            "disagreement": null,
+            "decomposition": {
+              "p_held": 0.515,
+              "p_if_held": 1,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.59
+        },
+        {
+          "id": "starship-booster-catch-15",
+          "label": "Tower catches Super Heavy booster on Flight 15",
+          "text": "The Super Heavy booster (Booster 22) of Starship Flight 15 is caught by the Starbase launch tower's arms between 05:30 CET on Fri 13 Nov 2026 and 23:59 CST on Sat 14 Nov 2026.",
+          "criterion": "YES if Flight 15 lifts off in the window 2026-11-13T05:30+01:00 to 2026-11-14T23:59-06:00 and Booster 22 is caught and held by the launch tower's chopstick arms at Starbase, as shown by SpaceX's webcast/@SpaceX or reported by Space.com, SpaceNews or Spaceflight Now. NO if there is no liftoff in the window, if the booster is diverted to the Gulf, splashes down, is lost, or hits the tower without being held.",
+          "resolution_source": "SpaceX webcast and @SpaceX on X (https://x.com/SpaceX); https://www.spacex.com/launches/starship-flight-15 ; fallback Space.com live blog https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt , SpaceNews, Spaceflight Now",
+          "schedule": "official",
+          "slip_class": "launch",
+          "publishes": "Live on the SpaceX webcast ~T+6:35 after liftoff; outlets within minutes",
+          "tz": "America/Chicago",
+          "event_window": {
+            "start": "2026-11-13T05:30:00+01:00",
+            "end": "2026-11-14T23:59:00-06:00"
+          },
+          "evidence_at": "2026-11-15T01:10:00+01:00",
+          "resolves_by": "2026-11-15T05:00:00+01:00",
+          "cs": {
+            "label": "Věž zachytí booster Super Heavy při 15. letu Starship",
+            "text": "Startovní věž na základně Starbase zachytí svými rameny booster Super Heavy (Booster 22) z 15. letu Starship mezi 5:30 SEČ v pátek 13. listopadu 2026 a 23:59 CST v sobotu 14. listopadu 2026.",
+            "criterion": "ANO, pokud let 15 odstartuje v okně od 13. 11. 2026 5:30 SEČ do 14. 11. 2026 23:59 CST a Booster 22 zachytí a udrží ramena („chopsticks“) startovní věže na Starbase, jak doloží přenos či příspěvky SpaceX na X, případně zprávy Space.com, SpaceNews nebo Spaceflight Now. NE, pokud v okně ke startu nedojde, booster je odkloněn do Mexického zálivu, přistane na hladině, je zničen nebo narazí do věže, aniž by byl zachycen."
+          },
+          "dossier": "data/dossiers/2026-11-15/starship-booster-catch-15.md",
+          "signals": "data/dossiers/2026-11-15/starship-booster-catch-15.signals.md",
+          "notes": "First catch attempt of a V3 booster and first at Pad 2; last catch attempt was Flight 8 (Mar 2025).",
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "The announced plan is a launch Fri 13 Nov and a booster tower catch ~6.5 min later; YES if the plan simply runs.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T18:07:00Z",
+              "checked": [
+                "markets.mjs search starship flight 15",
+                "markets.mjs search starship catch"
+              ],
+              "note": "Polymarket booster-catch market Yes 0.81 (vol ~$8.1k) has no date limit — not a match. Details in signals."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "Super Heavy tower-catch attempts caught",
+              "rate": 0.75,
+              "n": 4,
+              "source": "Wikipedia list: F5, F7, F8 caught, F6 waved off; V3 boosters 1/3 completed landing burn (F12–F14). Unconditional also needs launch in window (3/5)."
+            },
+            "dossier": "data/dossiers/2026-11-15/starship-booster-catch-15.md",
+            "signals": "data/dossiers/2026-11-15/starship-booster-catch-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.25,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "This needs a launch in the window (0.55) and then a catch. Earlier booster catch attempts succeeded 3/4, but V3 boosters completed a clean landing burn in only 1/3 (engine relight failures on B19 and B20, engine shutdowns on B21). This is also the first V3 catch and the first at the Pad 2 tower, so P(catch | launch) is about 0.45.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.29,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Polymarket puts a booster catch at 0.81 with no date limit and Manifold puts a catch attempt at 0.85. I moved P(catch | launch) up from 0.45 to 0.55, but not all the way, because V3 boosters completed a clean landing burn in only 1/3 flights and this is the first catch at Pad 2. Multiplied by about 0.53 for a launch in the window.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.53,
+                "p_if_held": 0.55
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.38,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "Requires launch in the window (~0.55, licence still pending) and then a first catch of a V3 Super Heavy; SpaceX caught boosters on Flights 5, 7 and 8, but the V3 booster catch is new and the attempt is subject to go/no-go calls.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.32,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "This needs a launch in the window (~0.52) and then the first V3 booster catch, at a Pad 2 tower that has never caught a booster. V3 boosters lost engine relights on Flights 12-14 (2 of 3 destroyed), versus 3/4 catches for older boosters. Polymarket's undated booster-catch price of 0.81 looks generous given the V3 record.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.21,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "Needs liftoff in window (0.55) and a first V3 catch at a tower that has never caught one. V3 boosters failed engine relights on two of three returns and Flight 14's lost engines in descent, and any tower or vehicle doubt diverts to the Gulf; the 3/4 record is for older boosters at Pad 1.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.3,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "Markets price a booster catch at 0.81 with no date limit (booster explodes 0.21-0.26), far above my blind 0.38 given launch, so I raise the conditional to 0.60. I stay below the market because V3 boosters failed relights on two of three returns and Pad 2 has never caught one; times 0.50 for liftoff in window.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.5,
+                "p_if_held": 0.6
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.36,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "Launch in window ~0.50 times P(catch | launch) ~0.72: Polymarket no-deadline booster-catch market 0.81, shaded down because V3 boosters failed engine relights on 2 of 3 returns and this is the first V3/Pad 2 catch (booster-explodes market 0.26).",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "market",
+                  "detail": "Polymarket booster chopsticks catch 0.81 (no deadline) x launch-in-window 0.50 from 'launch by Nov 15' 0.565 adjusted"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.48,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "Needs liftoff in the window, then a successful tower catch. Booster catches have mostly succeeded on recent V2/V3 flights, but V3 is new hardware. This is the first dual-catch attempt.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.46,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "Launch about 0.57 times booster catch given launch about 0.80 (Polymarket 0.81, Manifold attempt 0.85).",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.344,
+            "calibrated": 0.349,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.17,
+            "disagreement": null,
+            "decomposition": {
+              "p_held": 0.515,
+              "p_if_held": 0.68,
+              "p_if_not_held": 0
+            },
+            "research": {
+              "at": "2026-11-12T18:22Z",
+              "question": "Has the FAA issued the Flight 15 licence, and is a booster catch (not a Gulf splashdown) the plan for Booster 22?",
+              "finding": "No evidence that the licence had been issued as of 18:22Z. The FAA Starship page has no Flight 15 licence text, and the FAA commercial-space data page was last updated 22 Sep. starbaseevents.com still shows 'Planned, no FAA license yet'. Google News results from the last two days include 'No earlier than Friday, November 13, if the FAA signs off', and no licence headline was found. The Space.com live blog (modified 15:56Z) says 'Liftoff is on track for Friday, Nov. 13, at 4:45 p.m. CST' and does not mention the licence. Catch plan confirmed: SpaceX's own Booster 22 post (10 Nov) calls it 'the first Super Heavy V3 booster planned to return to the launch site for catch', with a suspended squeeze test at catch height. The SpaceX mission description relayed by WFTV (9 Nov) lists boostback and return to the launch site for catch as booster objectives. A Gulf divert remains possible after the go/no-go poll; this is unchanged from the dossier.",
+              "sources": [
+                "https://www.faa.gov/space/stakeholder_engagement/spacex_starship",
+                "https://www.faa.gov/data_research/commercial_space_data/licenses",
+                "https://www.starbaseevents.com/flights/15",
+                "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt",
+                "https://www.wftv.com/news/local/spacex-plans-first-ever-catch-starship-spacecraft-during-next-launch/EATBSQ7XXRACFOQHNXIVI66UHQ/",
+                "https://news.google.com/rss/search?q=Starship%20FAA%20license%20when:2d&hl=en-US&gl=US&ceid=US:en"
+              ],
+              "decisive": false
+            }
+          },
+          "probability": 0.35
+        },
+        {
+          "id": "starship-ship-catch-15",
+          "label": "Tower catches Starship upper stage by Sat 14 Nov",
+          "text": "Starship's upper stage (Ship 42) on Flight 15 is caught by the launch tower at Starbase, Texas, by 23:59 CST on Saturday 14 November 2026.",
+          "criterion": "YES if, between 2026-11-13T05:30+01:00 and 2026-11-14T23:59-06:00, Ship 42 returns to Starbase and is caught and held by a launch tower's arms, as shown by SpaceX's webcast/@SpaceX or reported by Space.com, SpaceNews or Spaceflight Now. NO if there is no launch early enough, if SpaceX forgoes the return (ocean disposal), if the ship is lost, or if it hits the tower without being held, or if the catch happens after 23:59 CST Sat.",
+          "resolution_source": "SpaceX webcast and @SpaceX on X (https://x.com/SpaceX); https://www.spacex.com/launches/starship-flight-15 ; fallback Space.com live blog https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt , SpaceNews, Spaceflight Now",
+          "schedule": "official",
+          "slip_class": "launch",
+          "publishes": "Live on SpaceX webcast at ~T+22:32:34 (≈15:17–16:32 CST Sat for a Friday launch); outlets within minutes",
+          "tz": "America/Chicago",
+          "event_window": {
+            "start": "2026-11-13T05:30:00+01:00",
+            "end": "2026-11-14T23:59:00-06:00"
+          },
+          "evidence_at": "2026-11-15T00:00:00+01:00",
+          "resolves_by": "2026-11-15T05:00:00+01:00",
+          "cs": {
+            "label": "Věž na Starbase zachytí horní stupeň Starship do soboty",
+            "text": "Startovní věž na texaské základně Starbase zachytí horní stupeň Starship (Ship 42) z 15. letu nejpozději do 23:59 CST v sobotu 14. listopadu 2026.",
+            "criterion": "ANO, pokud se mezi 13. 11. 2026 5:30 SEČ a 14. 11. 2026 23:59 CST Ship 42 vrátí na Starbase a ramena startovní věže ho zachytí a udrží, jak doloží přenos či příspěvky SpaceX na X, případně zprávy Space.com, SpaceNews nebo Spaceflight Now. NE, pokud start neproběhne dost brzy, SpaceX od návratu ustoupí (zánik nad oceánem), loď je zničena, narazí do věže, aniž by byla zachycena, nebo k zachycení dojde až po 23:59 CST v sobotu."
+          },
+          "dossier": "data/dossiers/2026-11-15/starship-ship-catch-15.md",
+          "signals": "data/dossiers/2026-11-15/starship-ship-catch-15.signals.md",
+          "notes": "Timing officially stated in SpaceX's timeline (T+22:32:34 per The Space Road / Starbase Events quoting SpaceX). This is the true Saturday-outcome question and genuinely open; editor may promote it to main. Launch slip of 1 day → catch Sunday → NO.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Plan as announced yields a Saturday ~15:17 CST catch, but it requires a first-ever ship catch, a Friday launch and an in-flight health go for RTLS.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T18:07:00Z",
+              "checked": [
+                "markets.mjs search starship flight 15",
+                "markets.mjs search starship catch"
+              ],
+              "note": "Polymarket ship-catch market Yes 0.395 (vol ~$11.9k) has no date limit — not a match; our claim also needs a Friday launch. Details in signals."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "Starship launched on first targeted day (Flights 10–14) — gate for Saturday catch",
+              "rate": 0.4,
+              "n": 5,
+              "source": "Own count, Wikipedia flight pages: F11, F14 on day; no prior ship catch attempts (n=0); ships 5/5 controlled splashdowns F10–F14"
+            },
+            "dossier": "data/dossiers/2026-11-15/starship-ship-catch-15.md",
+            "signals": "data/dossiers/2026-11-15/starship-ship-catch-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.1,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "A catch inside the window needs a launch on Friday 13 Nov itself. Launches on the first targeted day went 2/5 and the slip class is 0.30, with the pending licence pulling down, which gives about 0.42. With no ship ever caught (n=0), Flight 14's shortened mission after an engine shutdown, and a 22-hour, 14-orbit flight plus an RTLS go/no-go before the first-ever ship catch, P(catch | Friday launch) is about 0.24.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.12,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Polymarket prices a ship catch with no date limit at 0.395, Manifold puts an attempt at 0.70, and Musk says 50-60%. With no ship ever caught and Flight 14 cut short, I raised P(catch | launch) only to 0.30. The claim also needs a launch on Friday itself (about 0.40, since a Saturday launch puts the catch on Sunday).",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.4,
+                "p_if_held": 0.3
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.17,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "The ship flies ~22 h (14 orbits) before catch, so only a Fri 13 Nov launch puts the catch (~15:17 CST Sat) inside the window; a Sat backup launch makes it NO. Then a never-before-tried ship catch from orbit, conditional on healthy systems and licence covering land return; Musk puts it at 50-60%.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.14,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "Only a Friday launch puts the ~T+22.5 h catch (~15:17 CST Sat) inside the window (first-day launches 2/5; licence still pending). Polymarket prices an undated ship catch at 0.395, and Flight 14's ship had an engine out and a shortened mission.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.06,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "The catch is at T+22.5 h, so only a Friday liftoff counts (first-day launch 2/5, licence still pending, about 0.40). Then the ship must stay healthy for 14 orbits (Flight 14 was cut to under two), pass FAA-approved return criteria, and succeed at a catch no ship has ever attempted.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.1,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "Polymarket has a ship catch at 0.395 with no date limit and Musk says above even, so I raise the conditional from 0.15 to 0.27. The claim still needs a Friday liftoff (about 0.37 with the licence pending), a healthy ship after 14 orbits and a first-ever catch.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.37,
+                "p_if_held": 0.27
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.14,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "Requires a Friday launch (a Saturday launch puts the catch on Sunday): ~0.33 of the 0.50 in-window mass. Polymarket ship-catch 0.395 / launch-by-Nov-30 0.947 implies ~0.42 catch given launch; first-ever ship catch, with RTLS gated on vehicle health.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "market",
+                  "detail": "Polymarket ship chopsticks catch 0.395 (no deadline) / 0.947 launch -> 0.42 conditional, x P(Friday launch) ~0.33"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.2,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "The ship catch comes about 22 hours after launch, so liftoff must happen on 13 Nov for the catch to land by 23:59 CST on 14 Nov. This would be the first ship catch, after several orbits. Many ways to fail: deorbit burn, reentry, or SpaceX forgoing the catch.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.2,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "Needs a 13 Nov launch (about 0.50) and a first-ever ship catch (market 0.395 undated, Musk 50-60%, implies about 0.42 given a flight); product about 0.20.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.137,
+            "calibrated": 0.096,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.1,
+            "disagreement": null,
+            "decomposition": {
+              "p_held": 0.385,
+              "p_if_held": 0.26,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "id": "us-iran",
+      "scope": "world",
+      "topic": "security",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "event_key": "us-iran-2026-11-14",
+      "case_key": "us-iran",
+      "event": "Iran says the Strait of Hormuz stays shut until the US meets its seven conditions, which include lifting the naval blockade of Iranian ports, sanctions relief and the release of frozen funds; parliament speaker and chief negotiator Ghalibaf told Al Jazeera on 12 November that the conditions must be implemented before Iran returns to talks through a Qatari mediator, and that 'the ball is now in the American court'. Washington keeps the port blockade, has tightened sanctions and launched 'Task Force Iron Gate'; on 12 November Trump wrote 'we don't need a deal' after reports that Vice President Vance might meet Iranian commander Mohsen Rezaei. Attacks on shipping go on: UKMTO reported two tankers hit by projectiles on 10 November and a tanker hit in its engine room off Ras Al Khaimah on 11 November, and the IRGC says two supertankers exploded on mines on the night of 11 November. UKMTO-reported attacks on merchant ships fell on 11 of the last 14 Gulf days.",
+      "title_cs": "Útoky na tankery v Hormuzu pokračují, Írán i USA trvají na svém",
+      "sources": [
+        {
+          "title": "Al Jazeera: 'No war, no peace': Can Iran break the deadlock with the US?",
+          "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us"
+        },
+        {
+          "title": "The Siasat Daily: Two tanker attacks reported in Gulf waters within 24 hours",
+          "url": "https://www.siasat.com/two-tanker-attacks-reported-in-gulf-waters-within-24-hours-3575733/"
+        },
+        {
+          "title": "IBTimes: Iran says two supertankers carrying 4 million barrels were disabled",
+          "url": "https://www.ibtimes.com/iran-says-two-supertankers-burning-strait-hormuz-3809664"
+        },
+        {
+          "title": "IBTimes: Trump appears to dismiss talks between JD Vance and top Iran officials",
+          "url": "https://www.ibtimes.com/trump-vance-iran-talks-strait-tanker-incidents-3809673"
+        },
+        {
+          "title": "Shipping Telegraph: Two tankers hit mines in Hormuz, US disables cargo ship",
+          "url": "https://shippingtelegraph.com/shipping-news/two-tankers-hit-mines-in-hormuz-us-disables-cargo-ship/"
+        }
+      ],
+      "rank": 3,
+      "claims": [
+        {
+          "id": "us-iran-ship-15",
+          "label": "Hormuz shipping incident on Saturday",
+          "text": "UKMTO or JMIC reports at least one new attack or incident involving a merchant vessel in the Strait of Hormuz, the Gulf of Oman or the Persian Gulf that occurs on Saturday 14 November 2026 (Gulf time).",
+          "criterion": "YES if the UK Maritime Trade Operations (UKMTO) or the Joint Maritime Information Center (JMIC) reports an attack, explosion, mine strike, projectile hit, hostile approach (armed craft firing on or attempting to board the vessel), boarding or seizure involving a merchant vessel in the Strait of Hormuz, the Gulf of Oman or the Persian Gulf that occurred between 00:00 and 23:59 Gulf Standard Time (UTC+4) on 14 Nov 2026, as shown on ukmto.org or by a wire, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeera or another established news outlet quoting UKMTO or JMIC. When UKMTO/JMIC give only a date and no time, that date decides. A merchant vessel disabled, boarded or seized by US or other military forces counts only if UKMTO or JMIC itself reports that incident. A report published after the window counts if the incident occurred in it. Suspicious approaches, hailings or sightings without weapons fire or a boarding attempt, GPS or navigation-aid interference alone, notices of an \"incident\" or \"suspicious activity\" that state no attack, explosion, hit, boarding or seizure, and claims by Iran (including IRGC statements) or other parties that neither UKMTO nor JMIC reports do not count. NO if no such incident occurred on that day.",
+          "resolution_source": "https://www.ukmto.org/recent-incidents (scripted reading refused; use outlets quoting UKMTO/JMIC, e.g. https://gcaptain.com/, https://www.siasat.com/news/middle-east/, https://news.google.com/rss/search?q=UKMTO%20when:3d)",
+          "schedule": "speculative",
+          "slip_class": "none",
+          "publishes": "UKMTO posts notices/warnings within hours of an incident, sometimes classifies attacks 1-2 days later (Warnings 203-26/204-26 for 10-11 Nov posted 12 Nov)",
+          "tz": "Asia/Dubai",
+          "event_window": {
+            "start": "2026-11-14T00:00:00+04:00",
+            "end": "2026-11-14T23:59:00+04:00"
+          },
+          "evidence_at": "2026-11-15T00:00:00+01:00",
+          "resolves_by": "2026-11-16T05:00:00+01:00",
+          "cs": {
+            "label": "Incident lodi v Hormuzu v sobotu",
+            "text": "UKMTO nebo JMIC ohlásí nejméně jeden nový útok či incident s obchodní lodí v Hormuzském průlivu, Ománském zálivu nebo Perském zálivu, k němuž dojde v sobotu 14. listopadu 2026 (podle času v Zálivu).",
+            "criterion": "ANO, pokud britské středisko UK Maritime Trade Operations (UKMTO) nebo Společné námořní informační centrum (JMIC) ohlásí útok, výbuch, najetí na minu, zásah projektilem, nepřátelské přiblížení (ozbrojené plavidlo na loď střílí nebo se na ni pokouší vniknout), vniknutí na palubu nebo zabavení obchodní lodi v Hormuzském průlivu, Ománském zálivu nebo Perském zálivu, k němuž došlo mezi 00:00 a 23:59 času Perského zálivu (UTC+4) dne 14. 11. 2026, a to na ukmto.org nebo podle agentury, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeery či jiného zavedeného média citujícího UKMTO nebo JMIC. Uvede-li UKMTO/JMIC jen datum bez času, rozhoduje toto datum. Obchodní loď vyřazená, obsazená nebo zabavená americkými či jinými ozbrojenými silami se počítá, jen pokud incident ohlásí samo UKMTO nebo JMIC. Zpráva zveřejněná po skončení okna se počítá, pokud k incidentu došlo v okně. Nepočítají se podezřelá přiblížení, volání vysílačkou nebo pozorování bez střelby či pokusu o vniknutí na palubu, samotné rušení GPS nebo navigačních zařízení, oznámení o „incidentu“ či „podezřelé činnosti“ bez zmínky o útoku, výbuchu, zásahu, vniknutí na palubu či zabavení ani tvrzení Íránu (včetně prohlášení IRGC) či jiných stran, která UKMTO ani JMIC neohlásí. NE, pokud k takovému incidentu ten den nedošlo."
+          },
+          "dossier": "data/dossiers/2026-11-15/us-iran-ship-15.md",
+          "signals": "data/dossiers/2026-11-15/us-iran-ship-15.signals.md",
+          "notes": "Criterion as us-iran-ship-14 with date moved and two fixes: (1) closed relay list widened to 'another established news outlet quoting UKMTO or JMIC', because UKMTO Warnings 203-26/204-26 were found only via The Siasat Daily (not on the list) while ukmto.org refuses scripted reading; (2) a date-only UKMTO report counts for the date stated. 11 Nov reclassified from unclear to yes; 12 Nov unclear (vague UKMTO tanker 'incident' notice ~15:41Z; IRGC supertanker claims unconfirmed by UKMTO). resolves_by set to 16 Nov 05:00 CET because of late UKMTO classification. Saturdays: 31 Oct no, 7 Nov yes. The main claim is somewhat likely YES, but no outcome-type Saturday event exists for this story.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "Attacks have continued on 11 of the last 14 Gulf days with no ceasefire or de-escalation step announced; continuation means YES.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:56:00Z",
+              "checked": [
+                "markets.mjs search UKMTO",
+                "markets.mjs search Hormuz"
+              ],
+              "note": "Only weekly UKMTO notice-count markets (thin) and Hormuz-normalisation markets; none asks about an incident on 14 Nov. See signals file."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "own count: Gulf days with a UKMTO/JMIC-reported merchant-vessel attack, 29 Oct-11 Nov 2026",
+              "rate": 0.79,
+              "n": 14,
+              "source": "data/dossiers/2026-11-14/us-iran-ship-14.md incident record plus Siasat (UKMTO Warning 204-26) for 11 Nov; longer window 24 Oct-11 Nov 13/19 = 0.68; last 7 days 5/7"
+            },
+            "dossier": "data/dossiers/2026-11-15/us-iran-ship-15.md",
+            "signals": "data/dossiers/2026-11-15/us-iran-ship-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.68,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "Own record 11/14 recent Gulf days and 13/19 over a longer span (0.68-0.79) with attacks continuing on 10-11 Nov; shaded toward the longer-run rate for quiet-day clusters, Saturday uncertainty and strict exclusion of vague UKMTO notices.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.68,
+                "at": "2026-11-12T18:14:24Z",
+                "reason": "Only weekly UKMTO-notice markets (thin, mid bins ~0.4-0.5 for 8-11 notices) which confirm an active regime but do not price a 14 Nov incident; blind 0.68 from the 11/14 and 13/19 day records stands.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.55,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "Attack tempo is high: UKMTO/JMIC logged at least 11 ships attacked in the week to 6 Nov, warnings up to 199-26 by 9 Nov (about one per day since September), and fresh strikes off Khasab and on an ADNOC vessel on 7-10 Nov; but attacks cluster and not every day has a UKMTO-reported qualifying incident.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.68,
+                "at": "2026-11-12T18:15:14Z",
+                "reason": "Dossier own count: a UKMTO-reported qualifying incident on 11 of the last 14 Gulf days and 5 of the last 7, with new tanker strikes on 10-11 Nov and no sign of de-escalation (Iran's conditions, US blockade); quiet pairs of days and vague UKMTO notices are the downside; the Polymarket weekly count bins are illiquid and do not match.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.68,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "Qualifying UKMTO/JMIC incidents on 11 of the last 14 Gulf days and 13 of 19, with the tempo high (two tankers hit 10-11 Nov, talks deadlocked). Pushing down: quiet days come in pairs (8-9 Nov), vague 'incident' notices and IRGC-only claims do not count, date attribution can fall on the adjacent day, and reported Vance-Rezaei contact could bring a lull.",
+                "inputs_blind": [
+                  "dossier"
+                ],
+                "p": 0.68,
+                "at": "2026-11-12T18:16:13Z",
+                "reason": "The only related market (weekly UKMTO notice count) is thin, incoherent and counts advisories, so it carries no weight beyond confirming a disrupted regime. Unchanged: 11 of 14 recent days had a qualifying incident, trimmed for quiet pairs and the exclusion of vague notices.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.68,
+                "at": "2026-11-12T18:11:16Z",
+                "reason": "An incident was reported on 11 of the last 14 Gulf days (0.79) and 13 of 19 (0.68), with tankers struck on 10 and 11 Nov and no de-escalation. Shaded toward the longer window because quiet pairs of days occur, the criterion is strict, and UKMTO may classify incidents late.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "base-rate",
+                  "detail": "own daily incident rate 11/14=0.79, 13/19=0.68; Polymarket weekly-notice-count market does not match and is illiquid"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "UKMTO reports of Hormuz-area attacks described as rising in 2026, but a single specific day needs a qualifying UKMTO/JMIC incident, not just advisories.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.5,
+                "at": "2026-11-12T18:16:52Z",
+                "reason": "Polymarket UKMTO notice bins imply roughly 4-11 notices a week in the disrupted Hormuz regime, raising chance of a qualifying incident on a given day, though notices include advisories.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.646,
+            "calibrated": 0.745,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.18,
+            "disagreement": null,
+            "research": {
+              "at": "2026-11-12T18:23Z",
+              "question": "How many recent Gulf days had a qualifying UKMTO/JMIC incident, and has anything since 11 Nov changed the tempo?",
+              "finding": "12 Nov now looks like a qualifying day, so there has been no lull. The UKMTO tanker notice relayed around 15:12Z on 12 Nov was first worded 'a report of an attack involving a tanker in the Strait of Hormuz, according to local authorities' (Newsquawk 15:12Z). An updated UKMTO warning said a tanker 'was hit by an unidentified projectile while passing through' the strait, crew safe, and reclassified the incident as an 'Attack' (Anadolu via usmuslims.com, 18:42+03:00). Defcon Alerts noted that 'the incident date and time remain to be confirmed in the warning'. Iran's army said two tankers hit mines on Thursday afternoon (12 Nov) in the eastern strait (Reuters via 1027wbow, 16:27Z); Reuters could not verify this. If UKMTO dates the attack to 12 Nov, the dossier's tally becomes 10, 11 and 12 Nov 'yes' and 12 of the last 15 Gulf days (28 Oct–12 Nov per the dossier record). Same Reuters piece: attacks continue 'despite a rebound in traffic and expectations of a de-escalation… reflected in falling oil prices'. Al Jazeera's live blog (modified 18:18Z) leads with Houthi claims of attacks on Saudi Aramco and the East-West pipeline. No mediation breakthrough or pause was found. ukmto.org (403) and Lloyd's List (403) are unreadable, and gCaptain has no new Hormuz item.",
+              "sources": [
+                "https://www.usmuslims.com/tanker-struck-by-unknown-projectile-in-strait-of-hormuz-uk-agency-381361h.htm",
+                "https://www.newsquawk.com/headlines/ukmto-says-it-has-received-a-report-of-an-attack-involving-a-tanker-in-the-strait-of-hormuz-according-to-local-authorities",
+                "https://www.defconalerts.com/p/tanker-struck-by-projectile-in-strait-c09",
+                "https://1027wbow.com/2026/11/12/four-tankers-struck-by-explosions-in-strait-of-hormuz-iran-says/",
+                "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza",
+                "https://news.google.com/rss/search?q=UKMTO%20when:1d&hl=en-US&gl=US&ceid=US:en"
+              ],
+              "decisive": false
+            }
+          },
+          "probability": 0.75
+        }
+      ]
+    },
+    {
+      "id": "fr-fuel",
+      "scope": "europe",
+      "topic": "economy",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "event_key": "fr-fuel-grandest-2026-11-14",
+      "case_key": "fr-fuel-shortage-2026",
+      "event": "Service stations in north-east France are running dry. The government fuel-price site's official indicator showed 22% of stations in the Grand Est region short of diesel or of all petrol grades at 9:00 on 12 November, up from 20% on the evening of 10 November and 21% on 11 November; nationally the share was 12%, and 19% in Ile-de-France. France began releasing 10 million barrels of diesel from strategic stocks on 2 November under a G7 decision, which cut the average diesel price to €2.20 a litre on 9 November from a record €2.41 in September and sped up sales, while a historically low Rhine has stopped barges resupplying north-eastern depots. Minister Serge Papin said on 10 November further releases could follow 'if needed'; a day later his office said none was on the agenda. The Rhine gauge at Kaub rose from about 10–20 cm last week to 48 cm on 12 November and is forecast at about 78 cm on Saturday morning.",
+      "title_cs": "Pumpy na východě Francie vysychají: bude v sobotu bez paliva aspoň 23 % stanic v Grand Est?",
+      "sources": [
+        {
+          "title": "Economie Matin: Carburants : 19% des stations du Grand Est en rupture",
+          "url": "https://www.economiematin.fr/carburants-paradoxe-stocks-strategiques-rhin"
+        },
+        {
+          "title": "Prix-carburants.gouv.fr: Disponibilités carburants (état des stations en difficulté par région)",
+          "url": "https://www.prix-carburants.gouv.fr/disponibilites-carburants"
+        },
+        {
+          "title": "Selectra: Gazole à 2,25 € pile : plus d'une de ces stations sur cinq n'en a plus",
+          "url": "https://selectra.info/energie/actualites/marche/gazole-rupture-stations-2-25-apres-baisse"
+        },
+        {
+          "title": "Pegelonline (WSV): Rhine gauge Kaub, water level and forecast",
+          "url": "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KAUB/W/currentmeasurement.json"
+        }
+      ],
+      "rank": 4,
+      "claims": [
+        {
+          "id": "fr-fuel-grandest-15",
+          "label": "Grand Est stations short ≥23%",
+          "text": "The official share of service stations in the Grand Est region short of at least one fuel (diesel and/or all petrol grades) on Saturday 14 November 2026 is 23% or more.",
+          "criterion": "YES if the regional table 'Stations en difficulté (ruptures d'au moins un produit gazole et/ou essence) par région' on https://www.prix-carburants.gouv.fr/disponibilites-carburants shows a Grand Est value dated 14 Nov 2026 of 23% or more. If the table shows more than one 14 Nov value (e.g. 9h and 17h), the latest-timed one counts. If the table carries no 14 Nov column, a Grand Est figure for 14 Nov attributed to the government or a ministry (the same indicator) and reported by AFP, Le Monde, franceinfo, BFMTV or France 3 Grand Est counts. NO if that 14 Nov figure is below 23%. Void if no official Grand Est figure for 14 Nov appears by 12:00 on 15 Nov 2026 (Paris time).",
+          "resolution_source": "https://www.prix-carburants.gouv.fr/disponibilites-carburants",
+          "schedule": "official",
+          "slip_class": "none",
+          "publishes": "Rolling table of the last three readings, seen updated at 9:00 and 17:00 (headers on 12 Nov: '10 nov. à 17h | 11 nov. à 17h | 12 nov. à 9h00'); updated on the 11 Nov public holiday; a Saturday update is not confirmed. Resolver should read the page on Saturday evening or before Sunday's 9:00 refresh pushes columns along.",
+          "tz": "Europe/Paris",
+          "event_window": {
+            "start": "2026-11-14T00:00:00+01:00",
+            "end": "2026-11-14T23:59:00+01:00"
+          },
+          "evidence_at": "2026-11-14T18:00:00+01:00",
+          "resolves_by": "2026-11-15T12:00:00+01:00",
+          "cs": {
+            "label": "Grand Est: bez paliva aspoň 23 % stanic",
+            "text": "Podle oficiálního ukazatele bude v sobotu 14. listopadu 2026 v regionu Grand Est nejméně 23 % čerpacích stanic bez alespoň jednoho druhu paliva (nafty nebo všech druhů benzinu).",
+            "criterion": "ANO, pokud regionální tabulka „Stations en difficulté (ruptures d'au moins un produit gazole et/ou essence) par région“ na https://www.prix-carburants.gouv.fr/disponibilites-carburants uvádí pro Grand Est hodnotu s datem 14. 11. 2026 ve výši 23 % či více. Uvádí-li tabulka pro 14. 11. více hodnot (např. v 9 a 17 hodin), platí ta s nejpozějším časem. Nemá-li tabulka sloupec za 14. 11., platí údaj za Grand Est ke 14. 11. připsaný vládě či ministerstvu (týž ukazatel), který uvede AFP, Le Monde, franceinfo, BFMTV nebo France 3 Grand Est. NE, pokud je tento údaj za 14. 11. nižší než 23 %. Neplatné, pokud se oficiální údaj za Grand Est ke 14. 11. neobjeví do 12:00 15. 11. 2026 (pařížského času)."
+          },
+          "dossier": "data/dossiers/2026-11-15/fr-fuel-grandest-15.md",
+          "signals": "data/dossiers/2026-11-15/fr-fuel-grandest-15.signals.md",
+          "notes": "Threshold 23% sits between flat (22%, last reading) and straight-line trend (about 24–26% by Saturday 17h; 17h readings run above 9h ones). Forecast Rhine rise at Kaub (48 cm now, about 78 cm Saturday morning) argues for stabilisation, but depot resupply lags are unknown. Alternatives: ≥22% (status quo YES, likelier YES), ≥25% (needs the trend to hold, likelier NO), national total ≥12% (less newsworthy). Main risk is void: Saturday table update unconfirmed (11 Nov holiday was updated). The CSV of station states is live and own recomputation matched the table (22.4% → shown 22%), so a resolver can check rounding. Data come from stations' own declarations to the economy ministry's fuel-price site.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "no",
+              "why": "The latest reading is 22%; YES needs the share to rise at least one more point by Saturday (it has risen about a point a day), while the Rhine is forecast to recover.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:56:39Z",
+              "checked": [
+                "markets.mjs search France fuel shortage",
+                "markets.mjs search France protest"
+              ],
+              "note": "No matching market; only unrelated football and France emergency markets."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "own series: rises between successive official Grand Est readings 10–12 Nov",
+              "rate": 0.67,
+              "n": 3,
+              "source": "prix-carburants.gouv.fr table (20, 21, 22) and Economie Matin (19 at 11 Nov 9h); too short to rely on"
+            },
+            "dossier": "data/dossiers/2026-11-15/fr-fuel-grandest-15.md",
+            "signals": "data/dossiers/2026-11-15/fr-fuel-grandest-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.58,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "No reference class fits; persistence from 22% (22.4% recomputed) on 12 Nov 9h with a rising trend of about +1 point a day at 17h puts Saturday 17h near or above 23%. The forecast rise of the Rhine at Kaub (~48 to ~78 cm, still low) and possible new stock releases pull down, but barge resupply lags by days. Void risk (no Saturday table) is not counted in this number.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.58,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Signals hold no market or third-party model, so the blind persistence-plus-trend estimate stands: 22.4% on 12 Nov 9h, rising about 1 point a day, against Rhine recovery that comes with a lag. The void risk is not included.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "Official table shows Grand Est at 20% (10 Nov 17h), 21% (11 Nov 17h), 22% (12 Nov 9h), after 24% on 9 Nov and 19% on 11 Nov 9h: hovering just under the 23% bar with an upward drift. Low Rhine disrupts depot resupply and the government says no new stock release, but the series is noisy and Rhine/rain changes could move it either way.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.42,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "Grand Est readings were 24/20/19/21/22% over 9-12 Nov (own CSV check: 22.4%), sitting just under 23%. The dossier shows the Kaub gauge forecast to rise from about 15 cm to about 78 cm by Saturday morning, which should ease barge resupply, while weekend demand and depot outages push up. No market.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.58,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "Grand Est is at 22% (22.4% recomputed) and rose about 1 point a day, so flat-to-rising gives YES and Saturday demand plus thin weekend deliveries help. Against: Kaub is forecast to rise from 48 to 78 cm by Saturday, barges can resume part-loaded, the government may release stock, and one point of easing or truncating rounding gives NO; no-Saturday-update is void, not NO.",
+                "inputs_blind": [
+                  "dossier"
+                ],
+                "p": 0.58,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "No market or model found; unchanged. Grand Est sits at 22% and has risen about a point a day, which favours YES, but the forecast Rhine rise to about 78 cm by Saturday and a one-point margin keep it near even.",
+                "inputs": [
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.58,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "Official Grand Est series rising 20-21-22% (10-12 Nov), straight trend gives 24-26% by Saturday 17h, but the Rhine at Kaub is forecast to recover from ~20 cm to ~78 cm by Saturday, which should slow the rise; threshold 23 sits just above the current 22.4%.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs release 23.3 22.5 3 -> 0.605 (median 23.3% Sat 17h, sd 3, threshold 22.5 for rounding to 23); trimmed for Rhine recovery"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "Grand Est was at 23.6-30.9% in mid-October and is the worst-hit region. Strategic-stock release from 1 Nov and falling diesel prices should ease it (national share still above one in five stations on 4 Nov). The 23% threshold is probably near the current level. Small void risk if no figure appears.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.45,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "Signals add nothing (no market or odds). Stay with my blind view: Grand Est was 24-31% in October but easing after the strategic-stock release; threshold near current level.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.522,
+            "calibrated": 0.592,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.16,
+            "disagreement": null,
+            "research": {
+              "at": "2026-11-12T18:23Z",
+              "question": "Latest official Grand Est reading (12 Nov 17h?), is the Rhine rising and are depots being resupplied, and does the table update at weekends?",
+              "finding": "At 18:20Z the regional table still has the columns '10 nov. à 17h | 11 nov. à 17h | 12 nov. à 9h00' with Grand Est 20 % / 21 % / 22 %, so no 12 Nov 17h column is published yet. The live station CSV at 18:20Z gives exactly what the dossier found at 17:54Z: Grand Est 193 of 863 stations = 22.4%, France 11.6%. Rhine at Kaub was 49 cm at 19:15 CET, tracking the official forecast from 07:00: 63 cm 13 Nov 07:00, 73 cm 13 Nov 19:00, 78 cm 14 Nov 07:00, 80 cm 14 Nov 19:00, 83 cm 16 Nov. No news report found on barges resuming or depots in the north-east being resupplied. Weekend publication is still not directly confirmed for 2026. Precedent: during the Oct 2022 shortage the ministry gave Saturday-morning national and regional percentages to AFP (Sat 15 Oct 2022: 27.3% nationally; Hauts-de-France 22%, IdF 39.9%, CVL 36.4%).",
+              "sources": [
+                "https://www.prix-carburants.gouv.fr/disponibilites-carburants",
+                "https://www.prix-carburants.gouv.fr/disponibilites-carburants/telecharger",
+                "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KAUB/W/currentmeasurement.json",
+                "https://www.pegelonline.wsv.de/webservices/rest-api/v2/stations/KAUB/WV/measurements.json?start=P1D",
+                "https://www.connaissancedesenergies.org/afp/approvisionnement-en-carburants-legere-amelioration-avec-273-des-stations-service-en-difficulte-samedi-matin-221015"
+              ],
+              "decisive": false
+            }
+          },
+          "probability": 0.59
+        }
+      ]
+    },
+    {
+      "id": "cz-food-collection",
+      "scope": "cz",
+      "topic": "society",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "event_key": "cz-food-collection-2026-11-14",
+      "case_key": "cz-sbirka-potravin",
+      "event": "The nationwide autumn Sbírka potravin (food collection) runs on Saturday 14 November 2026 from 08:00 to 18:00 in more than 3,560 shops of 13 retail chains, the most ever for an autumn round (ČTK, 9 Nov); online donations run 10–24 November. It is organised by the Czech Federation of Food Banks and the Confederation of Commerce and Tourism. Last autumn (8 Nov 2025) shoppers gave a record 719 tonnes in about 2,800 shops, announced the next day; the final total with online gifts was 774 t. This spring (25 Apr 2026) 623 t were given in 3,539 shops (702 t final). Past first totals were released on the Sunday after the collection.",
+      "title_cs": "Sbírka potravin: překonají Češi loňských 719 tun?",
+      "sources": [
+        {
+          "title": "ČTK: Podzimní Sbírka potravin se uskuteční 14. listopadu ve více než 3560 prodejnách",
+          "url": "https://www.ceskenoviny.cz/zpravy/2899375"
+        },
+        {
+          "title": "Česká federace potravinových bank: Prázdné talíře na Václavském náměstí… Sbírka potravin bude už 14. listopadu",
+          "url": "https://www.potravinovebanky.cz/tiskove-zpravy/prazdne-talire-na-vaclavskem-namesti-v-praze-pripominaji-pribehy-lidi-v-nouzi-sbirka-potravin-bude-uz-14-listopadu"
+        },
+        {
+          "title": "ČT24: V potravinové sbírce se vybralo rekordních 719 tun zboží",
+          "url": "https://ct24.ceskatelevize.cz/clanek/domaci/v-potravinove-sbirce-se-vybralo-rekordnich-719-tun-zbozi-367005"
+        },
+        {
+          "title": "Česká federace potravinových bank: Jarní Sbírka potravin 2026: 623 tun",
+          "url": "https://www.potravinovebanky.cz/tiskove-zpravy/jarni-sbirka-potravin-2026-623-tun-potravin-a-drogerie-pro-potrebne"
+        },
+        {
+          "title": "Sbírka potravin: Jak sbírka funguje",
+          "url": "https://www.sbirkapotravin.cz/"
+        }
+      ],
+      "rank": 5,
+      "claims": [
+        {
+          "id": "cz-food-tonnes-15",
+          "label": "Food collection ≥780 t",
+          "text": "In the autumn Sbírka potravin held in shops on Saturday 14 November 2026, the first official total announced by the organisers is at least 780 tonnes of food and toiletries.",
+          "criterion": "YES if the first official total for the 14 Nov 2026 in-store collection announced by the Česká federace potravinových bank and/or Svaz obchodu a cestovního ruchu ČR (press release, or as reported by ČTK/ČT24 citing them) is 780 tonnes or more of goods (food plus drugstore/hygiene items combined). If that first announcement gives both an in-store Saturday figure and a combined figure including online/company donations, the in-store Saturday figure counts. Later revised or final totals do not count. NO if the figure is below 780 t, or if the in-store collection does not take place on 14 Nov 2026.",
+          "resolution_source": "https://www.potravinovebanky.cz/aktuality ; https://www.ceskenoviny.cz/ ; https://ct24.ceskatelevize.cz/tema/potravinova-sbirka-3848",
+          "schedule": "official",
+          "slip_class": "other-scheduled",
+          "publishes": "First total usually released by the organisers on the Sunday after the collection, around midday to afternoon (13:34–16:27 in 2023–2025), via ČTK/ČT24 and a federation press release",
+          "tz": "Europe/Prague",
+          "event_window": {
+            "start": "2026-11-14T08:00:00+01:00",
+            "end": "2026-11-14T18:00:00+01:00"
+          },
+          "evidence_at": "2026-11-15T18:00:00+01:00",
+          "resolves_by": "2026-11-17T12:00:00+01:00",
+          "cs": {
+            "label": "Sbírka potravin aspoň 780 tun",
+            "text": "V podzimní Sbírce potravin, která se v obchodech uskuteční v sobotu 14. listopadu 2026, oznámí organizátoři v prvním oficiálním výsledku nejméně 780 tun potravin a drogerie.",
+            "criterion": "ANO, pokud první oficiální výsledek sobotní sbírky v obchodech 14. 11. 2026, který oznámí Česká federace potravinových bank nebo Svaz obchodu a cestovního ruchu ČR (tisková zpráva nebo zpráva ČTK/ČT24 s odkazem na ně), činí nejméně 780 tun zboží (potraviny a drogerie dohromady). Uvede-li první oznámení jak údaj za sobotní sbírku v obchodech, tak souhrn včetně online a firemních darů, platí údaj za obchody. Pozdější opravené či konečné součty se nepočítají. NE, pokud je údaj nižší než 780 tun nebo pokud se sbírka v obchodech 14. 11. 2026 neuskuteční."
+          },
+          "dossier": "data/dossiers/2026-11-15/cz-food-tonnes-15.md",
+          "signals": "data/dossiers/2026-11-15/cz-food-tonnes-15.signals.md",
+          "notes": "Threshold 780 t = ~+8.5% on autumn 2025's 719 t; trend extrapolations: 623 t spring 2026 × mean autumn/spring ratio 1.26 ≈ 785 t; 719 × 1.03–1.12 ≈ 740–805 t. Store count up ~27% vs last autumn (2,800 → >3,560), but spring 2026 store growth of +38% yielded +20% tonnage. Alternatives considered: ≥750 t (likelier YES), ≥800 t (likelier NO), 'new record above 719 t' (too likely YES). Federation's 9 Nov release says autumn 2025 was in 3,539 stores while ČTK/ČT24 say ~2,800 — organiser figures are not always consistent. An interval claim on the tonnage is an alternative (consensus ≈785 t, pooled scale ~50 t, no published consensus) — not proposed because no sourced scale exists. evidence_at Sunday evening; resolves_by 17 Nov 12:00 allows for a Monday announcement.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "The collection is scheduled; whether the total reaches 780 t depends on growth over last autumn's 719 t, and the threshold is set near the trend value.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:55:10Z",
+              "checked": [
+                "markets.mjs search sbirka potravin",
+                "markets.mjs search Czech food bank"
+              ],
+              "note": "No matching market; only unrelated Prague-mayor markets returned."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "autumn in-store first total up ≥8.5% year on year (own count)",
+              "rate": 0.5,
+              "n": 2,
+              "source": "ČT24/ČTK first totals: 624 t (2023), 640 t (2024, +3%), 719 t (2025, +12%)"
+            },
+            "dossier": "data/dossiers/2026-11-15/cz-food-tonnes-15.md",
+            "signals": "data/dossiers/2026-11-15/cz-food-tonnes-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.51,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "Postponement risk starts from the other-scheduled class rate of 0.09 and is cut to about 0.03 because the date is confirmed by organisers, ČTK and retailers. Given the collection happens, applying the autumn/spring ratio (1.13 to 1.39, mean 1.26) to spring 2026's 623 t gives about 785 t, and year-on-year autumn growth gives 740 to 805 t. The store count is barely above spring 2026's 3,539, so extra stores add little. That puts 780 t at roughly the median.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.51,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Signals hold no market and no organiser expectation for this round, so the blind estimate is kept. Seasonal and year-on-year extrapolations centre on about 785 t, roughly at the threshold, and postponement risk is small.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.97,
+                "p_if_held": 0.53
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.3,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "In-store Saturday totals: autumn 2023 624 t, autumn 2024 640 t, autumn 2025 a record 719 t (2800 shops); spring 2026 only 623 t in-store despite 3539 shops. Autumn 2026 has 3560+ shops (barely more than spring), so 780 t needs about +8.5% over the record; plausible autumn/spring uplift puts the median near 740-760 t.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.42,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "The dossier gives a lower spring-2025 first figure (518 t), so the autumn/spring ratio averages about 1.26, and 623 x 1.26 is about 785 t. Year-on-year autumn growth of 3-12% gives 740-805 t. 780 t sits near the median, but spring 2026's weak tonnage per store pulls slightly under. No market.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.44,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "780 t needs +8.5% on last autumn's first-announced 719 t; simple extrapolations centre on 770-785 t, with autumn growth of +3% and +12% in the last two years. Record store count (+27%) pushes up, but spring 2026 showed added small stores yield little per store, and the first announcement is in-store only; the collection itself is firmly on (slip-class 0.092 judged far too high for a 3,560-store event confirmed two days out).",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.44,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "No market, model or organiser target found; unchanged. 780 t needs +8.5% on 719 t and sits in the middle of the simple extrapolations (about 740-805 t), with weak per-store yield from added small shops pulling slightly below even.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.99,
+                "p_if_held": 0.45
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.56,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "No market. Autumn/spring ratio (1.26 x 623 t) gives ~785 t, autumn YoY growth gives 740-805 t, and a record store count (>3,560, +27%) pushes up, but spring 2026 showed store growth adds tonnage weakly; 780 t sits near the median.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs release 790 780 55 -> 0.572 (central estimate 790 t, sd 55 t)"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.4,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "Record number of shops (3560 vs 2800 last autumn, 3539 this spring). Autumn 2024 total was 640 t; the 780 t line looks near or above recent records. The first announcement may include online donations, but the in-store figure counts.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.4,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "Signals add nothing; organisers published no expectation. Record shop count but 780 t is above the 640 t of autumn 2024; unchanged.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.466,
+            "calibrated": 0.517,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.16,
+            "disagreement": null,
+            "decomposition": {
+              "p_held": 0.98,
+              "p_if_held": 0.531,
+              "p_if_not_held": 0
+            },
+            "research": {
+              "at": "2026-11-12T18:23Z",
+              "question": "Is the 3,560-store figure real, what is the store mix, and did the organisers publish an expectation or target?",
+              "finding": "The 3,560 figure is real: the official store map (sbirkapotravin.cz/kde-nakoupit, embedded 'locations' data) lists exactly 3,560 stores. By chain: COOP 675, Teta 513, Penny 446, Hruška 415, Lidl 317, Billa 309, dm 259, Tesco 190, Albert 151, Kaufland 149, Flop Top 107, Globus 16, Makro 13. 380 of the stores (all Penny) are marked for a financial contribution only ('Zapojte se finančním příspěvkem'), not goods donations. Another 1,130 (COOP 292, Penny 66, Teta 513, dm 259) take goods or money, and 2,050 take goods only. Many of the stores are small (COOP, Teta, Hruška) or drugstores; only about 506 are hypermarkets or large supermarkets (Tesco, Albert, Kaufland, Globus). The federation's 9 Nov release and ČTK publish no tonnage target or expectation. The federation release again gives autumn 2025 as 774 t in 3,539 stores of 15 chains, while ČTK says autumn 2025 had 2,800 stores and spring 2026 had 3,539. The '15 chains' count includes the online shops Rohlík and Košík, against 13 store chains plus 2 e-shops this year. So the store count rises only about 0.6% on spring 2026 (3,539), not 27%, if the ČTK series is right.",
+              "sources": [
+                "https://www.sbirkapotravin.cz/kde-nakoupit",
+                "https://www.ceskenoviny.cz/zpravy/2899375",
+                "https://www.potravinovebanky.cz/tiskove-zpravy/prazdne-talire-na-vaclavskem-namesti-v-praze-pripominaji-pribehy-lidi-v-nouzi-sbirka-potravin-bude-uz-14-listopadu",
+                "https://eurozpravy.cz/domaci/cesko-ceka-dalsi-rocnik-potravinove-sbirky-probehne-v-sobotu.hrl1ivok"
+              ],
+              "decisive": false
+            }
+          },
+          "probability": 0.52
+        }
+      ]
+    },
+    {
+      "id": "pope-peru",
+      "scope": "world",
+      "topic": "society",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "event_key": "pope-leo-peru-2026-11-14",
+      "case_key": "pope-leo-latin-america-2026",
+      "event": "Pope Leo XIV spends Saturday 14 November in his former diocese of Chiclayo, northern Peru: at 08:00 he crowns the Immaculate Virgin in Chiclayo cathedral, at 11:00 celebrates Mass at Santa Cruz de Succhabamba in the Cajamarca highlands (reached by Air Force helicopter; organisers expect more than 80,000 people), a town he visited every September as bishop, and at 17:30 leads a prayer meeting closing the jubilee year of St Toribio de Mogrovejo. In his first Peru speeches he spoke of dialogue, listening, violence, migration and responsible mining but did not use the word corruption before the authorities on 11 Nov; he did list corruption among the sufferings of Peruvians in his address to the bishops on 12 Nov. On the whole trip so far the word appears in 3 of 21 texts (on 3 of 7 days), never in a homily.",
+      "title_cs": "Papež Lev XIV. v bývalé diecézi: zazní v Peru slovo korupce?",
+      "sources": [
+        {
+          "title": "Vatican: Apostolic Journey to Uruguay, Argentina and Peru — programme",
+          "url": "https://www.vatican.va/content/leo-xiv/en/travels/2026/documents/uruguay-argentina-peru-6-17novembre2026.html"
+        },
+        {
+          "title": "El Peruano: Papa León XIV en Perú, agenda oficial",
+          "url": "https://elperuano.pe/noticia/305157-papa-leon-xiv-en-peru-revisa-aqui-la-agenda-oficial-de-su-visita-del-11-al-16-de-noviembre"
+        },
+        {
+          "title": "Vatican: Meeting with the Authorities, Lima, 11 Nov 2026",
+          "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/november/documents/20261111-peru-autorita-lima.html"
+        },
+        {
+          "title": "Vatican: Meeting with the Bishops of Peru, 12 Nov 2026",
+          "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/november/documents/20261112-peru-vescovi.html"
+        },
+        {
+          "title": "Canal N: Papa León XIV volverá a Santa Cruz de Succhabamba",
+          "url": "https://canaln.pe/actualidad/papa-leon-xiv-volvera-santa-cruz-succhabamba-cajamarca-donde-anos-atras-fue-obispo-n495267"
+        }
+      ],
+      "rank": 6,
+      "claims": [
+        {
+          "id": "pope-corruption-15",
+          "label": "Pope says 'corruption' on 14 Nov",
+          "text": "In at least one of his texts delivered on Saturday 14 November 2026 in northern Peru (coronation rite in Chiclayo, Mass at Santa Cruz de Succhabamba, St Toribio jubilee prayer meeting, or any other address that day), Pope Leo XIV uses the word \"corruption\" or \"corrupt\" (Spanish \"corrupción\"/\"corrupto\").",
+          "criterion": "YES if any homily, speech, address, greeting or prayer text of Pope Leo XIV for an event held on 14 Nov 2026 (America/Lima), as published on vatican.va (English version or Spanish original), contains a word of the stem \"corrupt-\" in English (corruption, corrupt, corrupted, corrupting, corruptly) or \"corrup-\"/\"corromp-\" in Spanish (corrupción, corrupto/a/os/as, corromper, corrompe…), or if Vatican News directly quotes him using such a word in remarks spoken that day (including off-script). \"Incorrupt\", \"incorruptible\", \"incorrupto\", \"incorrupción\" do not count; footnotes and titles of cited documents do not count; telegrams and written messages not delivered on 14 Nov do not count. NO if none of the 14 Nov texts or directly quoted remarks contains such a word, or if no papal event takes place on 14 Nov.",
+          "resolution_source": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/november.index.html ; https://www.vatican.va/content/leo-xiv/en/homilies/2026.index.html ; Spanish versions under https://www.vatican.va/content/leo-xiv/es/ ; https://www.vaticannews.va/",
+          "schedule": "official",
+          "slip_class": "summit-or-visit",
+          "publishes": "vatican.va posts each text at or soon after delivery on the day (Lima 11–12 Nov texts were online within hours); last event 17:30 Lima (22:30 UTC) on 14 Nov",
+          "tz": "America/Lima",
+          "event_window": {
+            "start": "2026-11-14T00:00:00-05:00",
+            "end": "2026-11-14T23:59:00-05:00"
+          },
+          "evidence_at": "2026-11-15T00:30:00Z",
+          "resolves_by": "2026-11-15T12:00:00+01:00",
+          "cs": {
+            "label": "Papež řekne v sobotu „korupce“",
+            "text": "Papež Lev XIV. v sobotu 14. listopadu na severu Peru (korunovace Panny Marie v Chiclayu, mše v Santa Cruz de Succhabamba, modlitební setkání k závěru jubilejního roku svatého Toribia z Mogroveja či jiné tamní vystoupení) alespoň v jednom svém projevu použije slovo „korupce“ či „zkorumpovaný“ (španělsky „corrupción“/„corrupto“).",
+            "criterion": "ANO, pokud kterákoli homilie, projev, pozdrav či modlitba papeže Lva XIV. k události konané 14. 11. 2026 (čas Limy), zveřejněná na vatican.va (anglická verze nebo španělský originál), obsahuje slovo se základem „corrupt-“ v angličtině (corruption, corrupt, corrupted, corrupting, corruptly) nebo „corrup-“/„corromp-“ ve španělštině (corrupción, corrupto/a/os/as, corromper, corrompe…), anebo pokud ho Vatican News přímo cituje, jak takové slovo ten den pronesl (i mimo připravený text). Slova „incorrupt“, „incorruptible“, „incorrupto“, „incorrupción“ se nepočítají, stejně jako poznámky pod čarou a názvy citovaných dokumentů; telegramy a písemná poselství nepřednesená 14. 11. se nepočítají. NE, pokud žádný text ani přímo citovaný výrok ze 14. 11. takové slovo neobsahuje, nebo pokud se 14. 11. žádná papežova akce nekoná."
+          },
+          "dossier": "data/dossiers/2026-11-15/pope-corruption-15.md",
+          "signals": "data/dossiers/2026-11-15/pope-corruption-15.signals.md",
+          "notes": "Texts of 12 Nov 11:30 'challenges and hopes' meeting and the youth vigil, and the 13 Nov Pimentel homily and Chiclayo meetings, were not yet published at writing — the morning should recount (they may shift the trip rate). 14 Nov has one Mass homily (0/9 homilies so far used the word), likely words at the coronation rite, and the jubilee prayer-meeting address (speech-like; St Toribio is presented as a reforming, justice-minded bishop). Exclude the non-moral 'incorrupt heart' type hit (Claypole 9 Nov). Succhabamba: organisers expect 80,000+ (Canal N, Sept); no credible official attendance-publication practice for such a small venue, so no attendance claim. Pimentel 13 Nov Mass has not happened yet (12 Nov 12:56 Lima at writing).",
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "The events are scheduled; whether the word appears depends on unpublished texts — it was used on 3 of 7 trip days so far.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:54:46Z",
+              "checked": [
+                "markets.mjs search Pope Leo Peru",
+                "markets.mjs search pope corruption"
+              ],
+              "note": "Only unrelated TIME Person of the Year and other markets; no match."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "papal trip days with 'corrupt-' in a delivered text (Uruguay/Argentina/Peru, 6–12 Nov 2026)",
+              "rate": 0.43,
+              "n": 7,
+              "source": "own count of 21 vatican.va texts (3 days of 7; 3 texts of 21; 0 of 9 homilies, 3 of 12 speeches), dossier pope-corruption-15"
+            },
+            "dossier": "data/dossiers/2026-11-15/pope-corruption-15.md",
+            "signals": "data/dossiers/2026-11-15/pope-corruption-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.33,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "Trip rate 3/7 days but by text type homilies 0/9 and speeches 3/12; 14 Nov is mostly liturgical (coronation rite, Mass) plus one prayer-meeting address, giving roughly 0.3, nudged up slightly for Peru's corruption salience and the St Toribio reformer theme. Visit slip 0.012.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.33,
+                "at": "2026-11-12T18:18:13Z",
+                "reason": "Outsider's thematic point (corruption is common in Latin American addresses, but not guaranteed in liturgical texts) agrees with the dossier's count: on this trip 3/12 speeches and 0/9 homilies used the word. 14 Nov is mostly liturgical, with one address.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.988,
+                "p_if_held": 0.34,
+                "rounds": [
+                  {
+                    "p": 0.33,
+                    "at": "2026-11-12T18:14:24Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.3,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "On this trip Leo used 'corruption' on 3 of 7 days (Buenos Aires authorities, Buenos Aires prison, Peru bishops) but in none of 8 homilies, and not even in the Lima authorities speech; 14 Nov is liturgical (coronation rite, Mass, jubilee prayer), which lowers the odds, though Chiclayo and St Toribio themes could still bring it up.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.3,
+                "at": "2026-11-12T18:18:29Z",
+                "reason": "No new facts in the union. On this trip the word appeared on 3 of 7 days, but in 0 of 9 homilies and not in the Lima authorities speech; 14 Nov is a mostly liturgical day (coronation rite, Mass, jubilee prayer), so I stay below the day rate.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.3,
+                    "at": "2026-11-12T18:15:14Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.21,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "The dossier's 3-of-7 day rate overstates it: all three hits were in speeches to authorities, prisoners or bishops, and 0 of 9 homilies on the trip used the word; 14 Nov is a devotional day (Marian coronation, highland Mass, jubilee prayer meeting). Kept above 0.15 because three texts give three chances, the St Toribio address may praise him as a reformer, 'corruption of sin' is natural Immaculate-Conception language, and he used the word in Peru on 12 Nov; visit slip rate 0.012 and the other events survive a cancelled helicopter leg.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.21,
+                "at": "2026-11-12T18:18:59Z",
+                "reason": "The union adds only the general point that corruption is a common papal theme in Latin America, which the dossier's trip count already reflects. Unchanged: 0 of 9 trip homilies used the word and 14 Nov is devotional, with three texts and the St Toribio reformer theme giving a real minority chance.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.99,
+                "p_if_held": 0.21,
+                "rounds": [
+                  {
+                    "p": 0.21,
+                    "at": "2026-11-12T18:16:13Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.32,
+                "at": "2026-11-12T18:19:10Z",
+                "reason": "The union dossier is the same as mine, and the outsider adds only a generic remark that the theme is common in Latin America but not guaranteed on a liturgical day, which agrees with my view. On this trip the word appeared in speeches only (3 of 12), never in homilies (0 of 9), and 14 Nov is mostly liturgical with one address.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data",
+                  "union-of-facts"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs atleast 3 0.13 1 = 0.34; day base rate 0.43"
+                },
+                "rounds": [
+                  {
+                    "p": 0.32,
+                    "at": "2026-11-12T18:11:16Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.5,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "Several texts in northern Peru on one day; corruption is a common theme in Latin American papal addresses and Peru, but not guaranteed in a single day's liturgical texts.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.3,
+                "at": "2026-11-12T18:19:46Z",
+                "reason": "Trip day-rate 3/7 but all hits were speeches to authorities/prisoners/bishops; 0/9 homilies. 14 Nov has a coronation rite, a highland Mass and a jubilee prayer meeting, all pastoral; ad-lib or Toribio-reformer language is the main path.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-12T18:16:52Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              }
+            ],
+            "combined": 0.29,
+            "calibrated": 0.276,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.12,
+            "disagreement": {
+              "cause": "inputs",
+              "note": "Round-one spread 0.29 (outsider 0.50 without the trip text count). All five re-forecast once on the union of facts; spread fell to 0.12."
+            },
+            "decomposition": {
+              "p_held": 0.989,
+              "p_if_held": 0.283,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.28
+        }
+      ]
+    },
+    {
+      "id": "cop31",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 4
+      },
+      "event_key": "cop31-sb-close-2026-11-14",
+      "case_key": "cop31-antalya-2026",
+      "event": "The UN climate conference COP31 runs 9–20 November 2026 in Antalya, Turkey, with Turkey's Murat Kurum as COP President and Australia's Chris Bowen as 'President of Negotiations' (ENB). The two subsidiary bodies, SBSTA 65 and SBI 65, are officially scheduled for 9–14 November (UNFCCC agendas FCCC/SBI/2026/18, FCCC/SBSTA/2026/7) and must close on Saturday 14 November, forwarding draft texts to ministers for week two; the presidency will set second-week working modalities after the SB closing plenaries. Agenda fights were averted only by pre-sessional consultations running into the early hours of 9 November, logistics problems delayed sessions, and positions on the adaptation goal, the mitigation work programme and the just transition mechanism remain far apart (ENB). The presidency, which plans a 'Presidency-initiated, Party-driven' cover decision, takes written inputs on it until Saturday. In the last five COPs the SBs closed before midnight on their scheduled day three times (COP27, COP28, COP30) and ran past midnight twice (COP26, COP29), several times by under an hour (ENB).",
+      "title_cs": "COP31 v Antalyi: stihnou vedlejší orgány uzavřít první týden jednání do sobotní půlnoci?",
+      "sources": [
+        {
+          "title": "ENB: Antalya Climate Change Conference, Monday 9 November 2026",
+          "url": "https://enb.iisd.org/sites/default/files/2026-11/enb12902e.pdf"
+        },
+        {
+          "title": "ENB: Antalya Climate Change Conference, Tuesday 10 November 2026",
+          "url": "https://enb.iisd.org/sites/default/files/2026-11/enb12903e.pdf"
+        },
+        {
+          "title": "ENB: Antalya Climate Change Conference, Wednesday 11 November 2026",
+          "url": "https://enb.iisd.org/sites/default/files/2026-11/enb12904e.pdf"
+        },
+        {
+          "title": "UNFCCC: SBI 65 provisional agenda and annotations",
+          "url": "https://unfccc.int/sites/default/files/resource/sbi2026_18_adv.pdf"
+        },
+        {
+          "title": "UNFCCC: SBSTA 65 provisional agenda and annotations",
+          "url": "https://unfccc.int/sites/default/files/resource/sbsta2026_07_adv.pdf"
+        },
+        {
+          "title": "Carbon Brief: Interactive: Tracking negotiating texts at the COP31 climate summit",
+          "url": "https://www.carbonbrief.org/interactive-tracking-negotiating-texts-at-the-cop31-climate-summit"
+        }
+      ],
+      "rank": 7,
+      "claims": [
+        {
+          "id": "cop31-sb-close-15",
+          "label": "COP31 SBs close by Saturday midnight",
+          "text": "At the COP31 climate conference in Antalya, both subsidiary bodies (SBSTA 65 and SBI 65) close their sessions by 23:59 Antalya time on Saturday 14 November 2026.",
+          "criterion": "YES if the Earth Negotiations Bulletin daily report for 14 November 2026 (or the UNFCCC record / SB reports) shows that both the SBSTA 65 Chair and the SBI 65 Chair declared their sessions closed at or before 23:59 Europe/Istanbul time on 14 Nov 2026 (closure on an earlier day also counts). NO if either body is declared closed at 00:00 on 15 Nov or later, or if either session is suspended and not closed by 23:59 on 14 Nov. The local closing time given by ENB is decisive; if ENB gives none, a UNFCCC, Carbon Brief or Climate Home News report of the closing time is used.",
+          "resolution_source": "https://enb.iisd.org/antalya-un-climate-change-conference-cop31 (daily report for 14 November 2026, PDF under https://enb.iisd.org/sites/default/files/2026-11/); backup https://unfccc.int/cop31 , https://www.carbonbrief.org , https://www.climatechangenews.com",
+          "schedule": "official",
+          "slip_class": "negotiation-round",
+          "publishes": "ENB daily report for Saturday 14 Nov, expected Monday 16 Nov 2026 morning Antalya time (ENB's COP30 Saturday report was dated Monday); news reports of the closing time usually late Saturday night or Sunday",
+          "tz": "Europe/Istanbul",
+          "event_window": {
+            "start": "2026-11-13T07:30:00+03:00",
+            "end": "2026-11-14T23:59:00+03:00"
+          },
+          "evidence_at": "2026-11-16T09:00:00+03:00",
+          "resolves_by": "2026-11-16T18:00:00+01:00",
+          "cs": {
+            "label": "Vedlejší orgány COP31 skončí do sobotní půlnoci",
+            "text": "Na klimatické konferenci COP31 v Antalyi oba vedlejší orgány (SBSTA 65 a SBI 65) uzavřou svá zasedání do sobotního 14. listopadu 2026, 23:59 místního času.",
+            "criterion": "ANO, pokud denní zpráva Earth Negotiations Bulletin za 14. listopadu 2026 (případně záznam UNFCCC či zprávy SB) uvede, že předsedové SBSTA 65 i SBI 65 prohlásili zasedání za ukončená nejpozději ve 23:59 antalyjského času (Europe/Istanbul) 14. listopadu (ukončení v dřívější den se počítá také). NE, pokud kterýkoli z orgánů skončí až 15. listopadu v 00:00 nebo později, nebo pokud je zasedání přerušeno a do 23:59 14. listopadu neukončeno. Rozhoduje místní čas uvedený ENB; pokud jej ENB neuvede, použije se zpráva UNFCCC, Carbon Brief nebo Climate Home News."
+          },
+          "dossier": "data/dossiers/2026-11-15/cop31-sb-close-15.md",
+          "signals": "data/dossiers/2026-11-15/cop31-sb-close-15.signals.md",
+          "notes": "Genuinely close: 4 of 5 recent cases ended within ~1 hour either side of midnight. Both SBs must close by 23:59; if only one does, NO. The slip class overlaps with the outcome itself (an overrun is the NO case), so do not double-count. ENB HTML pages refuse scripted reading but the PDFs download; the 14 Nov report PDF should be enb12906e.pdf or nearby (#1 = 12902 dated 10 Nov; one issue per weekday). Alternative threshold considered: closure by 20:00 local (less informative).",
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "The SBs are officially scheduled to close on 14 Nov; YES happens if they close as scheduled, NO requires the closing plenary to overrun past midnight.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:57:00Z",
+              "checked": [
+                "markets.mjs search COP31",
+                "markets.mjs search climate summit Antalya"
+              ],
+              "note": "Only an unrelated COP31 pledge question and unrelated results; no market on the SB closing time."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "COP week-one SB closure by 23:59 local on scheduled day (COP26–COP30)",
+              "rate": 0.6,
+              "n": 5,
+              "source": "Own count from ENB daily reports: COP26 NO (12:19/12:07 am Sun), COP27 YES (10:59/11:05 pm), COP28 YES (11:04 pm Wed), COP29 NO (12:23 am Sun), COP30 YES (2:03 pm). ENB 12:788, 12:813, 12:818, 12:837, 12:860, 12:883."
+            },
+            "dossier": "data/dossiers/2026-11-15/cop31-sb-close-15.md",
+            "signals": "data/dossiers/2026-11-15/cop31-sb-close-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.5,
+                "at_blind": "2026-11-12T18:11:49Z",
+                "reason_blind": "Reference class of week-one SB closures at the last five COPs gives 3/5 closed by midnight, shrunk toward 0.5 for n=5 and the near-midnight margins on both sides; early logistics delays, the Leaders' Summit drain and repeated old positions on GGA/MWP/just transition push slightly down. Here the slip (closing after midnight) is the NO outcome itself, so p_held carries the whole probability and p_if_held is 1.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.5,
+                "at": "2026-11-12T18:14:46Z",
+                "reason": "Signals hold no matching market or model; they only repeat the 3/5 count of recent COPs whose SBs closed before midnight. That leaves the blind estimate unchanged: a near coin flip, shaded slightly down by the logistics delays and contested items.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.5,
+                "p_if_held": 1
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.68,
+                "at_blind": "2026-11-12T18:13:47Z",
+                "reason_blind": "COP31 runs 9-20 Nov so SB65 closure is due Sat 14 Nov; recent COP SB sessions usually gavel closed on the first Saturday evening, but SB64 in Bonn ended only just before midnight amid GGA/agenda gridlock and COP31 opened with finance clashes, so a slide past midnight or suspension is a real risk. No in-session ENB detail was readable (ENB blocks scripted reads).",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.6,
+                "at": "2026-11-12T18:15:45Z",
+                "reason": "Dossier base rate is 3/5 recent COPs closing the SBs by midnight on the scheduled day, with misses by under 25 minutes at COP26 and COP29. ENB shows agenda fights resolved overnight, logistics delays, and GGA/MWP positions hardening, and SB64 ended right at midnight; this pulls slightly below my blind 0.68. No matching market.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.5,
+                "at_blind": "2026-11-12T18:11:39Z",
+                "reason_blind": "Own ENB count is 3/5 on-time closures, with two of the three YES cases inside the last hour and both misses under 25 minutes late, so it is near a coin flip. Both bodies must close, transport gridlock and the Leaders' Summit cost room time, and GGA/MWP/just-transition positions are stuck, which pushes slightly below 0.60; an early Rule-16 forwarding to SB 66 (as at COP30) is the YES path. Slip-class rate 0.09 is not applied separately because slipping past midnight is the NO outcome itself.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.5,
+                "at": "2026-11-12T18:16:33Z",
+                "reason": "No market or outside model exists, so the signals add nothing and the blind view stands: 3/5 on-time closures with every recent result but one within about an hour of midnight, and both bodies must close. Lost room time and stuck GGA/MWP items push a little below the 0.60 base rate.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p_held": 0.5,
+                "p_if_held": 1
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.55,
+                "at": "2026-11-12T18:11:34Z",
+                "reason": "No matching market; dossier base rate 3/5 recent COPs closed both SBs by midnight on the scheduled day, with both misses under 25 minutes late. Shaded down slightly for early logistics delays, Leaders' Summit disruption and contested items (GGA, MWP, cover decision) repeating old positions.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data"
+                ],
+                "anchor": {
+                  "kind": "base-rate",
+                  "detail": "Dossier own count COP26-COP30: 3/5 = 0.60 closed by 23:59 local on scheduled day"
+                }
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.65,
+                "at_blind": "2026-11-12T18:11:41Z",
+                "reason_blind": "Closing plenaries are scheduled for the end of week 1; reference slip rate for negotiation rounds is about 0.09. SB closings often run late into the evening, so some risk of a past-midnight close or suspension. No direct evidence found on the schedule.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.62,
+                "at": "2026-11-12T18:17:08Z",
+                "reason": "No market. Signals note 3 of the last 5 COPs closed the SBs before midnight, in line with my blind estimate; slight trim.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ]
+              }
+            ],
+            "combined": 0.555,
+            "calibrated": 0.634,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.12,
+            "disagreement": null,
+            "decomposition": {
+              "p_held": 0.5,
+              "p_if_held": 1,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.63
+        }
+      ]
+    },
+    {
+      "id": "my-malacca",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "event_key": "my-malacca-election-2026-11-14",
+      "case_key": "my-malacca-election-2026",
+      "event": "Melaka (Malacca) holds its 16th state election on Saturday 14 November 2026: 28 seats, 15 for a majority, 687,697 voters, 79 candidates (Election Commission via Malay Mail, The Star). Barisan Nasional (UMNO-led) runs 23 candidates and its partner Perikatan Nasional 5 (two of them PAS) in a seat pact; Pakatan Harapan runs 24, Bersatu 7 separately and Rafizi Ramli's Bersama 16. In 2021 BN won 21 seats, PH 5 and PN 2 (both Bersatu). PH left the BN-led state government in July 2026 over an amendment creating seven appointed seats. In neighbouring Negeri Sembilan on 1 August a BN–PN pact won 25 of 36 seats and PH fell from 17 to 11. BN leaders target 25–26 seats; PH defends Bukit Katil, Ayer Keroh, Bandar Hilir, Kesidang and Kota Laksamana. Ilham Centre says about 13% of voters were undecided; no numeric surveys have been published (The Vibes, NST, Wikipedia).",
+      "title_cs": "Malajsijská Melaka volí, vládní Barisan Nasional jde do voleb ve spojenectví s islamisty",
+      "sources": [
+        {
+          "title": "The Vibes: Melaka state election battle hinges on urban strongholds",
+          "url": "https://www.thevibes.com/articles/news/129314/melaka-state-election-battle-hinges-on-urban-strongholds"
+        },
+        {
+          "title": "NST: Melaka election: Final push to win over voters",
+          "url": "https://www.nst.com.my/amp/news/regional/2026/11/1573660/melaka-election-final-push-win-over-voters"
+        },
+        {
+          "title": "The Star: Melaka polls: Early voting records 94.96% turnout",
+          "url": "https://www.thestar.com.my/news/nation/2026/11/10/melaka-polls-early-voting-records-9496-turnout"
+        },
+        {
+          "title": "Malay Mail: Melaka state election set for Nov 14 polling, Oct 31 nomination",
+          "url": "https://www.malaymail.com/news/malaysia/2026/10/07/melaka-state-election-set-for-nov-14-polling-oct-31-nomination/238079"
+        },
+        {
+          "title": "Wikipedia: 2026 Negeri Sembilan state election",
+          "url": "https://en.wikipedia.org/wiki/2026_Negeri_Sembilan_state_election"
+        }
+      ],
+      "rank": 8,
+      "claims": [
+        {
+          "id": "my-malacca-bn-15",
+          "label": "BN–PN pact wins ≥24 of 28 seats in Melaka",
+          "text": "In the Melaka state election on Saturday 14 November 2026, candidates of the Barisan Nasional–Perikatan Nasional pact win at least 24 of the 28 seats.",
+          "criterion": "YES if the official results of the 16th Melaka state election published by Malaysia's Election Commission (SPR) for polling held on 14 Nov 2026 show that the BN–PN pact's candidates (BN's 23 nominees from UMNO, MCA, MIC and PN's 5 nominees) together won 24 or more of the 28 seats. Bersatu's 7 separate candidates and independents do not count, even if they later align with the pact; post-poll deals do not count. NO if the pact wins 23 or fewer, or if polling is not held on 14 Nov 2026 (if polling is postponed in some seats, count only seats declared for 14 Nov polling). Official results published overnight count; if SPR's site is unreachable, EC-announced results reported by Bernama, The Star, NST or Malaysiakini count.",
+          "resolution_source": "https://dashboard.spr.gov.my/ ; https://spr.gov.my/prudunmelaka16/ (fallback: Bernama, The Star, NST, Malaysiakini reporting EC results)",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "SPR declares seat results from roughly 20:00–21:00 local on 14 Nov after polls close (2021: 15 seats confirmed by 21:36, last seat about 23:15 MYT); dashboard updates live",
+          "tz": "Asia/Kuala_Lumpur",
+          "event_window": {
+            "start": "2026-11-14T08:00:00+08:00",
+            "end": "2026-11-14T23:59:00+08:00"
+          },
+          "evidence_at": "2026-11-15T02:00:00+08:00",
+          "resolves_by": "2026-11-15T12:00:00+01:00",
+          "cs": {
+            "label": "Pakt BN–PN získá v Melace nejméně 24 z 28 křesel",
+            "text": "Ve volbách do zákonodárného shromáždění malajsijského státu Melaka v sobotu 14. listopadu 2026 získají kandidáti paktu Barisan Nasional a Perikatan Nasional nejméně 24 z 28 křesel.",
+            "criterion": "ANO, pokud oficiální výsledky 16. voleb v Melace zveřejněné malajsijskou volební komisí (SPR) pro hlasování 14. 11. 2026 ukážou, že kandidáti paktu BN–PN (23 nominantů BN z UMNO, MCA a MIC a 5 nominantů PN) získali dohromady 24 nebo více z 28 křesel. Samostatně kandidující Bersatu (7 kandidátů) ani nezávislí se nepočítají, ani když se k paktu později připojí; povolební dohody se nepočítají. NE, pokud pakt získá 23 nebo méně křesel, nebo pokud se hlasování 14. 11. 2026 nekoná (při odložení hlasování v některých obvodech se počítají jen křesla vyhlášená za hlasování 14. 11.). Oficiální výsledky zveřejněné přes noc platí; není-li web SPR dostupný, platí výsledky vyhlášené komisí podle Bernamy, The Star, NST nebo Malaysiakini."
+          },
+          "dossier": "data/dossiers/2026-11-15/my-malacca-bn-15.md",
+          "signals": "data/dossiers/2026-11-15/my-malacca-bn-15.signals.md",
+          "election": {
+            "kind": "other",
+            "level": "regional"
+          },
+          "notes": "Threshold choice: 23 = the pact parties' 2021 tally (21+2), but both PN seats were Bersatu's and Bersatu now runs 7 candidates against the pact; BN targets 25–26 (party claims). Negeri Sembilan's August swing (PH 17→11) and Bukit Katil's thin PH majority (1,057, 65% Malay) point to pact gains, while three Chinese-majority DAP seats are likely to stay PH and Bersatu/Bersama split votes in 17 multi-cornered seats. 24 sits near the middle of a plausible 21–26 range. Alternatives considered: BN alone ≥20 (BN contests only 23, label-counting risk with MCA/MIC included), pact ≥25 (its stated target; probably below 50%), pact ≥15 (near-certain). Polling hours for 14 Nov not confirmed tonight (2021: 08:00–17:30). Strongly correlated with my-malacca-ph-15.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "no",
+              "why": "The pact parties held 23 seats in 2021 (BN 21 + PN 2, both Bersatu, which now stands against the pact); 24 requires a net gain over that tally.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:54:00Z",
+              "checked": [
+                "markets.mjs search melaka election",
+                "markets.mjs search malaysia malacca"
+              ],
+              "note": "No matching market; only Malaysian parliament-dissolution and Anwar-tenure markets (see signals)."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "BN–PN pact improves on its components' previous seat tally in a 2026 state election (own count)",
+              "rate": 1,
+              "n": 1,
+              "source": "Negeri Sembilan 1 Aug 2026: pact 17 → 25 of 36 (Wikipedia 2026 Negeri Sembilan state election); n=1, weak"
+            },
+            "dossier": "data/dossiers/2026-11-15/my-malacca-bn-15.md",
+            "signals": "data/dossiers/2026-11-15/my-malacca-bn-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "Pact components took 23/28 in 2021, and the Negeri Sembilan BN-PN pact gained 8 seats; reaching 24 needs a near-sweep of the 23 non-PH seats (incl. the two former Bersatu seats now contested by Bersatu) plus a PH seat such as Bukit Katil, while three Chinese-majority DAP seats look safe. Slip rate 0.004.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.45,
+                "at": "2026-11-12T18:18:13Z",
+                "reason": "Union adds no new facts: the dossier is unchanged and the outsider's note (24+ needs a near sweep against PH and separate Bersatu) is the structural point already priced in. Negeri Sembilan's pact gain (+8) is offset by three safe DAP seats and multi-cornered fights, so the estimate stays just under even.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.996,
+                "p_if_held": 0.45,
+                "rounds": [
+                  {
+                    "p": 0.45,
+                    "at": "2026-11-12T18:14:24Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.63,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "In 2021 BN 21 + PN 2 = 23 with split Malay vote; a consolidated BN-PN pact (25/36 in Negeri Sembilan in Aug, PH cut to 11) should take mixed seats like Bukit Katil, so PH likely falls to about 4 (the DAP Chinese-majority core), giving the pact 24; downside is PH holding 5 or Bersatu/others winning a seat.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.65,
+                "at": "2026-11-12T18:18:29Z",
+                "reason": "The union adds only the outsider's general point that 24 or more is a high bar. Seat by seat, the pact reaches 24 if PH drops Bukit Katil or Ayer Keroh, both at risk to a combined BN+PN vote (PH fell from 17 to 11 in Negeri Sembilan), while Bersatu, which won its 2021 seats against a split field, now runs alone; held at 0.65.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.65,
+                    "at": "2026-11-12T18:15:14Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.48,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "24 of 28 leaves room for only four losses: PH's three Chinese-majority DAP seats are near-safe and Ayer Keroh likely, so the pact must then sweep everything else including Bukit Katil (Adly's own seat) and the two ex-Bersatu seats where Bersatu now splits the Malay vote against the pact's PN nominees. The Negeri Sembilan pact wave and PN votes now added to BN in 2021 marginals make this plausible, but party targets of 25-26 are boasts and one slip anywhere gives NO; slip rate 0.004, with a small extra allowance for the PN deregistration litigation.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.48,
+                "at": "2026-11-12T18:18:59Z",
+                "reason": "The union adds only the outsider's restatement that BN won 21 in 2021 and 24 is a high bar, already in the dossier. Unchanged: the pact can lose four seats, PH has three to four near-safe DAP seats, and Bersatu splits in its former seats make sweeping the rest about even despite the Negeri Sembilan wave.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.99,
+                "p_if_held": 0.48,
+                "rounds": [
+                  {
+                    "p": 0.48,
+                    "at": "2026-11-12T18:16:13Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.62,
+                "at": "2026-11-12T18:19:10Z",
+                "reason": "The union adds only the outsider's point that 24+ is a high bar starting from BN's 21 seats in 2021. But both 2021 PN seats were Bersatu's, so the pact starts from about 23 if it takes them. Bukit Katil is the likely flip, and Negeri Sembilan shows the pact's strength. Trimmed 2 points because Bersatu splits the vote and the seat-level picture is uncertain.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data",
+                  "union-of-facts"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs derive 22 24.5 26.5 > 23.5 = 0.70 (subjective seat quantiles; no polls or markets)"
+                },
+                "rounds": [
+                  {
+                    "p": 0.64,
+                    "at": "2026-11-12T18:11:16Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.2,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "BN won 21 of 28 in 2021; 24+ for BN-PN pact needs near sweep against PH and separate Bersatu candidates, a high bar.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.15,
+                "at": "2026-11-12T18:19:46Z",
+                "reason": "Negeri Sembilan pact took 25/36 (69%); 24/28 (86%) would need sweeping Chinese-majority DAP seats and holding 2021 Bersatu seats against Bersatu/Bersama splits. Party targets of 25-26 are aspirations.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.22,
+                    "at": "2026-11-12T18:16:52Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              }
+            ],
+            "combined": 0.455,
+            "calibrated": 0.502,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.5,
+            "disagreement": {
+              "cause": "genuine",
+              "note": "Spread above 25 points after round one (outsider far from the rest). Cause first judged as inputs: all five re-forecast once on the union of facts (dossier plus the outsider's own research, numbers removed); the union added no new fact and the spread stayed. Remaining disagreement is genuine judgement on the same facts (whether the BN–PN pact repeats its Negeri Sembilan sweep, with no vote-share polls); the basis line should say the evidence is mixed."
+            },
+            "poll_model": {
+              "none": true,
+              "why": "No published vote-share or seat survey for Melaka; Ilham Centre released only an undecided share (~13%) without sample or dates (NST 9 Nov)."
+            },
+            "decomposition": {
+              "p_held": 0.993,
+              "p_if_held": 0.504,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.5
+        },
+        {
+          "id": "my-malacca-ph-15",
+          "label": "Pakatan Harapan wins ≥5 seats in Melaka",
+          "text": "In the Melaka state election on Saturday 14 November 2026, Pakatan Harapan wins at least 5 of the 28 seats.",
+          "criterion": "YES if the official results of the 16th Melaka state election published by Malaysia's Election Commission (SPR) for polling held on 14 Nov 2026 show that Pakatan Harapan candidates (PKR, DAP, Amanah) won 5 or more of the 28 seats. Seats won by Bersama, Bersatu or independents do not count, even if they later align with PH. NO if PH wins 4 or fewer, or if polling is not held on 14 Nov 2026 (if polling is postponed in some seats, count only seats declared for 14 Nov polling). Official results published overnight count; if SPR's site is unreachable, EC-announced results reported by Bernama, The Star, NST or Malaysiakini count.",
+          "resolution_source": "https://dashboard.spr.gov.my/ ; https://spr.gov.my/prudunmelaka16/ (fallback: Bernama, The Star, NST, Malaysiakini reporting EC results)",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "SPR declares seat results from roughly 20:00–21:00 local on 14 Nov after polls close (2021: last seat about 23:15 MYT); dashboard updates live",
+          "tz": "Asia/Kuala_Lumpur",
+          "event_window": {
+            "start": "2026-11-14T08:00:00+08:00",
+            "end": "2026-11-14T23:59:00+08:00"
+          },
+          "evidence_at": "2026-11-15T02:00:00+08:00",
+          "resolves_by": "2026-11-15T12:00:00+01:00",
+          "cs": {
+            "label": "Pakatan Harapan získá v Melace nejméně 5 křesel",
+            "text": "Ve volbách do zákonodárného shromáždění malajsijského státu Melaka v sobotu 14. listopadu 2026 získá Pakatan Harapan nejméně 5 z 28 křesel.",
+            "criterion": "ANO, pokud oficiální výsledky 16. voleb v Melace zveřejněné malajsijskou volební komisí (SPR) pro hlasování 14. 11. 2026 ukážou, že kandidáti Pakatan Harapan (PKR, DAP, Amanah) získali 5 nebo více z 28 křesel. Křesla stran Bersama, Bersatu nebo nezávislých se nepočítají, ani když se k PH později připojí. NE, pokud PH získá 4 nebo méně křesel, nebo pokud se hlasování 14. 11. 2026 nekoná (při odložení hlasování v některých obvodech se počítají jen křesla vyhlášená za hlasování 14. 11.). Oficiální výsledky zveřejněné přes noc platí; není-li web SPR dostupný, platí výsledky vyhlášené komisí podle Bernamy, The Star, NST nebo Malaysiakini."
+          },
+          "dossier": "data/dossiers/2026-11-15/my-malacca-ph-15.md",
+          "signals": "data/dossiers/2026-11-15/my-malacca-ph-15.signals.md",
+          "election": {
+            "kind": "other",
+            "level": "regional"
+          },
+          "notes": "Threshold 5 = PH's 2021 tally and incumbent seats (Bukit Katil, Ayer Keroh, Bandar Hilir, Kesidang, Kota Laksamana). Three Chinese-majority DAP seats look solid; Bukit Katil (65% Malay, 2021 majority 1,057) and Ayer Keroh are exposed to the pact; PH's possible pickups are 2021 marginals (Pengkalan Batu, Serkam) where PN's vote now adds to BN. ≥4 judged too likely, ≥6 too unlikely. Strongly (not perfectly) anti-correlated with my-malacca-bn-15.",
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "PH won 5 seats in 2021; YES means it holds at least its current tally.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market_search": {
+              "at": "2026-11-12T17:54:00Z",
+              "checked": [
+                "markets.mjs search melaka election",
+                "markets.mjs search malaysia malacca"
+              ],
+              "note": "No matching market."
+            },
+            "market": null,
+            "base_rate": {
+              "class": "PH holds at least its previous seat tally against a BN–PN pact in a 2026 state election (own count)",
+              "rate": 0,
+              "n": 1,
+              "source": "Negeri Sembilan 1 Aug 2026: PH 17 → 11 of 36 (Wikipedia 2026 Negeri Sembilan state election); n=1, weak"
+            },
+            "dossier": "data/dossiers/2026-11-15/my-malacca-ph-15.md",
+            "signals": "data/dossiers/2026-11-15/my-malacca-ph-15.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.38,
+                "at_blind": "2026-11-12T18:11:33Z",
+                "reason_blind": "PH must hold all 5 2021 seats or offset losses; in Negeri Sembilan PH kept only 11 of 17 against a BN-PN pact, and Malay-majority Bukit Katil (1,057 majority in a three-cornered 2021 race) now faces combined BN+PN votes, though Bersatu splitting the Malay vote helps PH somewhat.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.38,
+                "at": "2026-11-12T18:18:13Z",
+                "reason": "Outsider's 'coin flip at its 2021 baseline' adds no facts. YES needs PH to hold all five 2021 seats including Malay-majority Bukit Katil against merged BN+PN votes, and in Negeri Sembilan PH kept only 11 of 17 against the pact. That keeps it below even.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.996,
+                "p_if_held": 0.38,
+                "rounds": [
+                  {
+                    "p": 0.38,
+                    "at": "2026-11-12T18:14:24Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "p_blind": 0.3,
+                "at_blind": "2026-11-12T18:13:29Z",
+                "reason_blind": "PH holds 5 (4 DAP urban seats plus Amanah's Bukit Katil) won against a split BN/PN vote; with BN-PN consolidating the Malay vote, Bukit Katil and possibly Ayer Keroh (mixed, Bersama in the race) are at risk, while gaining Gadek or Bemban looks hard, so PH reaching 5 needs it to hold everything or pick up a seat.",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p": 0.24,
+                "at": "2026-11-12T18:18:29Z",
+                "reason": "The outsider's 'coin flip' rests on 5 being PH's 2021 baseline, but those 5 were won against split BN and PN votes. With the pact consolidating Malay voters (Bukit Katil is 65% Malay), Bersama splitting votes in 16 seats, and DAP losing to MCA in Negeri Sembilan, PH holding all five or offsetting a loss is less likely than not.",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.24,
+                    "at": "2026-11-12T18:15:14Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "p_blind": 0.37,
+                "at_blind": "2026-11-12T18:11:57Z",
+                "reason_blind": "PH must hold all five 2021 seats or offset losses: Bukit Katil is 65% Malay with a 1,057 majority won when BN and PN ran separately, and BN-PN now run together; Negeri Sembilan saw PH drop from 17 to 11 against the same pact and Bersama splits the urban vote. For YES: Adly is a personal-vote incumbent, Bersatu splits the Malay vote in seven seats, and a three-way split in an ex-Bersatu seat could hand PH a gain.",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p": 0.37,
+                "at": "2026-11-12T18:18:59Z",
+                "reason": "The union adds no new fact (PH won 5 in 2021, multi-cornered races). Unchanged and below even: 5 is PH's 2021 tally won when BN and PN ran apart, Bukit Katil is Malay-majority with a 1,057 majority, and PH lost a third of its seats to the same pact in Negeri Sembilan; Adly's personal vote and Bersatu splits keep it live.",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p_held": 0.99,
+                "p_if_held": 0.37,
+                "rounds": [
+                  {
+                    "p": 0.37,
+                    "at": "2026-11-12T18:16:13Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "p": 0.35,
+                "at": "2026-11-12T18:19:10Z",
+                "reason": "The outsider's 'coin flip' view ignores that PH now faces a merged BN-PN vote in Malay-majority Bukit Katil and that in Negeri Sembilan PH kept only 11 of its 17 seats. Kept near the complement of the pact claim, with a 2-point nudge for Bersatu and Bersama splitting votes.",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data",
+                  "union-of-facts"
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "same seat model as my-malacca-bn-15: P(pact<=23) ~0.30-0.38, which roughly equals P(PH>=5)"
+                },
+                "rounds": [
+                  {
+                    "p": 0.33,
+                    "at": "2026-11-12T18:11:16Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "p_blind": 0.45,
+                "at_blind": "2026-11-12T18:11:20Z",
+                "reason_blind": "PH won 5 in 2021; contesting against BN-PN pact and Bersatu in a three/four-cornered race; 5 is roughly its prior baseline, coin flip.",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p": 0.62,
+                "at": "2026-11-12T18:19:46Z",
+                "reason": "PH holds 5 seats, 4 urban DAP-leaning (Kesidang, Kota Laksamana, Bandar Hilir, Ayer Keroh) plus fragile Bukit Katil (1,057 majority); Negeri Sembilan showed PH falling 17 to 11 so losing 1+ is plausible, but PH contests 24 seats with pickups possible (Pengkalan Batu, Serkam). 5+ slightly more likely than not.",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "rounds": [
+                  {
+                    "p": 0.45,
+                    "at": "2026-11-12T18:16:52Z",
+                    "reason": "round one, before the union-of-facts rerun (forecasters had different facts)"
+                  }
+                ]
+              }
+            ],
+            "combined": 0.387,
+            "calibrated": 0.408,
+            "combination": {
+              "method": "calibrated",
+              "weights": {
+                "base-rate": 1,
+                "evidence": 1,
+                "adversarial": 1,
+                "anchor": 1,
+                "outsider": 1
+              },
+              "platt": {
+                "a": 0.2534,
+                "b": 1.358
+              },
+              "version": "2026-11-12"
+            },
+            "spread": 0.38,
+            "disagreement": {
+              "cause": "genuine",
+              "note": "Spread above 25 points after round one (outsider far from the rest). Cause first judged as inputs: all five re-forecast once on the union of facts (dossier plus the outsider's own research, numbers removed); the union added no new fact and the spread stayed. Remaining disagreement is genuine judgement on the same facts (whether the BN–PN pact repeats its Negeri Sembilan sweep, with no vote-share polls); the basis line should say the evidence is mixed."
+            },
+            "poll_model": {
+              "none": true,
+              "why": "No published vote-share or seat survey for Melaka; Ilham Centre gave only an undecided share (~13%)."
+            },
+            "decomposition": {
+              "p_held": 0.993,
+              "p_if_held": 0.413,
+              "p_if_not_held": 0
+            }
+          },
+          "probability": 0.41
+        }
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "event": "Anthropic IPO: price range $70–78, books close 18 Nov, Nasdaq listing 19 Nov",
+      "scope": "world",
+      "topic": "economy",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "No checkable step on Saturday: EDGAR accepts filings only on weekdays, so no range change can be filed before Mon 16 Nov; the order book was reported covered on 10 Nov. Next step: pricing 18 Nov.",
+      "source": "https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx"
+    },
+    {
+      "event": "Nvidia after Jensen Huang's resignation (interim CEO Colette Kress)",
+      "scope": "world",
+      "topic": "economy",
+      "scores": {
+        "impact": 5,
+        "reach": 5,
+        "uncertainty": 2
+      },
+      "why": "No dated step on Saturday; results Tue 17 Nov. Running story not covered (see running).",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+    },
+    {
+      "event": "Trump leaves for Asia (Manila ASEAN, Shenzhen APEC) — departure by 23:59 ET Sat 14 Nov (us-trump-depart-15)",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 4,
+        "reach": 5,
+        "uncertainty": 2
+      },
+      "why": "Dossier written. Philippine organisers now have Trump landing in Manila on Tue 17 Nov 17:30 local; with a ~20–24 h trip he most likely leaves Sun night or Mon, so a Saturday departure claim would be a near-certain NO and a negative main. Trump–Xi(–Putin) meetings are on the forecast board.",
+      "source": "https://www.philstar.com/",
+      "claims_prepared": [
+        "us-trump-depart-15"
+      ]
+    },
+    {
+      "event": "France: \"Acte V\" Saturday protests over the cost of living — Interior Ministry nationwide count of at least 50,000 (fr-protest-count-15)",
+      "scope": "europe",
+      "topic": "economy",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 4
+      },
+      "why": "Dossier written. No union or youth-union call for 14 Nov (the unions focus on the 17 Nov strike); only a gilets-jaunes call to join other marches, and the ministry gave no national figure for a comparable climate day on 26 Sep, so the claim would most likely be void.",
+      "source": "https://www.connexionfrance.com/news/strikes-and-protests-in-france-in-november-2026/827359",
+      "claims_prepared": [
+        "fr-protest-count-15"
+      ]
+    },
+    {
+      "event": "Spain: first weekend of the 29 Nov election campaign",
+      "scope": "europe",
+      "topic": "politics",
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Nothing with an open outcome on Saturday: no poll scheduled for publication, Academia de TV debate dates not set, laSexta debate on Fri 13 Nov.",
+      "source": "https://www.democrata.es/encuestas/elecciones-generales/promedio-encuestas-elecciones-generales-adelanto-electoral-2026/"
+    },
+    {
+      "event": "Milion chvilek rally \"Letná proti 4:36\" for public-service media",
+      "scope": "cz",
+      "topic": "society",
+      "scores": {
+        "impact": 4,
+        "reach": 5,
+        "uncertainty": 3
+      },
+      "why": "Happens after E+2 (Sunday 15 Nov 14:00); belongs to the next edition.",
+      "source": "https://www.ceskenoviny.cz/zpravy/na-letne-ocekava-milion-chvilek-stovky-tisic-lidi-oznami-dalsi-plany/2901226"
+    },
+    {
+      "event": "ODS after the 13 Nov presidium on the poll slump (Děčín branch wants an early congress)",
+      "scope": "cz",
+      "topic": "politics",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "No ODS congress, council or regional assembly meets on Saturday; the presidium itself was covered in the previous edition.",
+      "source": "https://www.ceskenoviny.cz/zpravy/v-ods-roste-nespokojenost-kvuli-preferencim-v-patek-se-sejde-predsednictvo/2899978"
+    },
+    {
+      "event": "School canteens: nutrition \"consumer basket\" dropped from the decree",
+      "scope": "cz",
+      "topic": "society",
+      "scores": {
+        "impact": 3,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "No step on Saturday.",
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/reditelka-szu-pochybuje-zda-budou-skolni-jidelny-dodrzovat-nezavazna-doporuceni-379560"
+    },
+    {
+      "event": "Refinery windfall tax: third reading in the Chamber",
+      "scope": "cz",
+      "topic": "economy",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Date of the third reading not known; the Chamber does not sit on Saturday. On the forecast board (cz-refinery-tax-passed).",
+      "source": "https://oenergetice.cz/energetika-v-cr/stat-chce-zdanit-rafinerie-vybor-dal-vladnimu-navrhu-zelenou"
+    },
+    {
+      "event": "Czech fuel price caps (Finance Ministry věstník)",
+      "scope": "cz",
+      "topic": "economy",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "No věstník is issued on Saturday (the Friday one, valid from 14 Nov, was in the previous edition); December extension on the forecast board (cz-fuel-cap-december).",
+      "source": "https://www.mfcr.cz/"
+    },
+    {
+      "event": "Czech pension bill final vote",
+      "scope": "cz",
+      "topic": "economy",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Date of the final vote unknown; not on Saturday.",
+      "source": "https://www.ceskenoviny.cz/"
+    },
+    {
+      "event": "President Pavel: weekend programme / bill-signing deadlines",
+      "scope": "cz",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "hrad.cz (403) and senat.cz unreadable; no act dated 14 Nov found in one search. Unresolved, not ruled out.",
+      "source": "https://www.hrad.cz/"
+    },
+    {
+      "event": "ČNB / ČSÚ releases",
+      "scope": "cz",
+      "topic": "economy",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "None on Saturday; next ČSÚ releases Mon 16 Nov (producer prices).",
+      "source": "https://csu.gov.cz/pdi-ws/external/ics/ri?rocnik=2026"
+    },
+    {
+      "event": "Babiš official visit to Israel",
+      "scope": "cz",
+      "topic": "politics",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Scheduled for 16–18 Nov, after E+2.",
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-misto-oslav-17-listopadu-navstivi-izrael-podle-opozice-je-zbabelec/2899872"
+    },
+    {
+      "event": "Prague: council line-up (18 Nov) and mayor election (19 Nov)",
+      "scope": "cz",
+      "topic": "politics",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "After E+2; on the forecast board (cz-prague-mayor-stan, cz-prague-pirates-council).",
+      "source": "https://www.ceskenoviny.cz/"
+    },
+    {
+      "event": "Supreme Administrative Court ruling on the Žďár Senate-election complaint",
+      "scope": "cz",
+      "topic": "law",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "why": "Scheduled for 18 Nov, after E+2.",
+      "source": "https://www.nssoud.cz/"
+    },
+    {
+      "event": "World premiere of the ballet \"Anna Pavlova\", Plzeň",
+      "scope": "cz",
+      "topic": "culture",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "No checkable outcome.",
+      "source": "https://www.djkt.eu/"
+    },
+    {
+      "event": "Liberec region: Sviták nominated as governor",
+      "scope": "cz",
+      "topic": "politics",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "Minor; no vote on Saturday.",
+      "source": "https://www.ceskenoviny.cz/"
+    },
+    {
+      "event": "APEC final senior officials' meeting, Shenzhen (14–15 Nov)",
+      "scope": "world",
+      "topic": "economy",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "why": "Closed-door meeting ending on Sunday; no checkable Saturday outcome.",
+      "source": "https://news.cgtn.com/news/2026-10-17/APEC-2026-30-days-to-go-until-Shenzhen-hosts-world-leaders-1RjNBWgfQxG/p.html"
+    },
+    {
+      "event": "China October activity data (industrial output, retail sales)",
+      "scope": "world",
+      "topic": "economy",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Released Mon 16 Nov 10:00 Beijing (NBS calendar), after E+2.",
+      "source": "https://www.stats.gov.cn/"
+    },
+    {
+      "event": "UN Security Council: UNISFA (Abyei) renewal",
+      "scope": "world",
+      "topic": "security",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "Vote expected on Fri 13 Nov (the Yemen and MINUSCA votes were on 12 Nov); nothing on Saturday.",
+      "source": "https://www.securitycouncilreport.org/"
+    },
+    {
+      "event": "Israel: coalition talks (Eisenkot holds the mandate to about 6 Dec)",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "Shabbat; no step on Saturday. On the forecast board (il-government-sworn-in).",
+      "source": "https://www.ynetnews.com/"
+    },
+    {
+      "event": "Ukraine–Russia: date of the next trilateral round with the Europeans",
+      "scope": "europe",
+      "topic": "security",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "No dated step; an announcement by Saturday is unlikely and loosely defined. Story covered through ua-drones-15 and ua-swap-15.",
+      "source": "https://www.ceskenoviny.cz/zpravy/evropske-zeme-se-pripoji-k-dalsimu-jednani-o-ukrajine-rekl-witkoff-/2900950"
+    },
+    {
+      "event": "Pope Leo XIV: illegal mining / migration mentioned on 14 Nov; crowd at Succhabamba",
+      "scope": "world",
+      "topic": "society",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "Alternatives to pope-corruption-15: illegal mining most likely NO (Pucallpa on 15 Nov is the natural place), violence near-certain, and no official crowd count is likely.",
+      "source": "https://elperuano.pe/noticia/305157-papa-leon-xiv-en-peru-revisa-aqui-la-agenda-oficial-de-su-visita-del-11-al-16-de-noviembre"
+    },
+    {
+      "event": "COP31: presidency publishes a first draft cover decision by Saturday",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "The presidency gives only a summary by Friday and takes written inputs until Saturday; most likely NO.",
+      "source": "https://enb.iisd.org/sites/default/files/2026-11/enb12902e.pdf"
+    },
+    {
+      "event": "Thessaloniki Film Festival awards (Golden Alexander)",
+      "scope": "europe",
+      "topic": "culture",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "why": "Awards date not confirmed by the festival; low reach.",
+      "source": "https://www.filmfestival.gr/"
+    },
+    {
+      "event": "Soyuz-2.1b launch from Vostochny (Sat 00:50 UTC)",
+      "scope": "world",
+      "topic": "science-health",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "Minor launch.",
+      "source": "https://nextspaceflight.com/launches/"
+    },
+    {
+      "event": "Rocket Lab Electron, QPS-SAR-19 (Sat 05:30 UTC)",
+      "scope": "world",
+      "topic": "science-health",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "Minor commercial launch.",
+      "source": "https://rocketlaunch.live/"
+    },
+    {
+      "event": "Thuringian Greens leadership vote, Suhl (13–14 Nov)",
+      "scope": "europe",
+      "topic": "politics",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "Regional party event of low reach.",
+      "source": "https://gruene-thueringen.de/"
+    },
+    {
+      "event": "Bari: 24-hour local transport strike",
+      "scope": "europe",
+      "topic": "economy",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "Local strike, minor.",
+      "source": "https://www.ilsole24ore.com/"
+    },
+    {
+      "event": "Italy: CGIL general strike",
+      "scope": "europe",
+      "topic": "economy",
+      "scores": {
+        "impact": 3,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "On 20 Nov, after E+2.",
+      "source": "https://en.ilsole24ore.com/art/strike-calendar-for-20-november-nationwide-industrial-action-AJ6emg1B"
+    },
+    {
+      "event": "France: general strike over the cost of living",
+      "scope": "europe",
+      "topic": "economy",
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "On Tue 17 Nov, after E+2.",
+      "source": "https://www.connexionfrance.com/news/strikes-and-protests-in-france-in-november-2026/827359"
+    },
+    {
+      "event": "Serbia: first sitting of the new National Assembly",
+      "scope": "europe",
+      "topic": "politics",
+      "scores": {
+        "impact": 3,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "On 17 Nov 10:00 (N1), after E+2. On the forecast board (rs-student-list-pm).",
+      "source": "https://n1info.rs/"
+    },
+    {
+      "event": "US Senate, Mississippi: Hyde-Smith concession",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "Already happened (conceded 11 Nov; AP called the race for Colom).",
+      "source": "https://www.wlox.com/"
+    },
+    {
+      "event": "Moldova: Gagauzia Bashkan and assembly elections; Cabo Verde presidential election",
+      "scope": "world",
+      "topic": "politics",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 3
+      },
+      "why": "On Sunday 15 Nov, after E+2 (next edition).",
+      "source": "https://en.wikipedia.org/wiki/2026_Gagauz_general_election"
+    },
+    {
+      "event": "Gaza: Israeli strike on Nasser hospital",
+      "scope": "world",
+      "topic": "security",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "Excluded topic (deaths).",
+      "source": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon"
+    },
+    {
+      "event": "UK: two Iranian men convicted of spying on journalists",
+      "scope": "europe",
+      "topic": "law",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "Excluded topic (crime); verdict already given.",
+      "source": "https://www.dw.com/en/uk-court-convicts-2-iranian-men-of-spying-on-journalists/a-79931583"
+    },
+    {
+      "event": "Brooklyn building collapse, Washington DC shooting, UAE crash",
+      "scope": "world",
+      "topic": "society",
+      "scores": {
+        "impact": 3,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "Excluded topics (disasters, crime).",
+      "source": "https://www.bbc.com/news/live/cm20qr0znxg0t"
+    },
+    {
+      "event": "Dublin informal EU summit follow-up (EU envoy for Ukraine talks, Merz on Ukraine 2027 funding)",
+      "scope": "europe",
+      "topic": "politics",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "Meetings on 12–13 Nov (previous edition); nothing scheduled for Saturday.",
+      "source": "https://www.ceskenoviny.cz/zpravy/babis-se-v-dublinu-na-okraj-evropskeho-summitu-sesel-se-zelenskym-/2900531"
+    },
+    {
+      "event": "Czech Sbírka potravin: alternative thresholds (700 t, record-beating 720 t)",
+      "scope": "cz",
+      "topic": "society",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "Near-certain with 3,560 stores; 780 t chosen as the open threshold.",
+      "source": "https://www.sbirkapotravin.cz/"
+    }
+  ]
+}
