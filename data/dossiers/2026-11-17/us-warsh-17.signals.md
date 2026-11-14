@@ -1,0 +1,6 @@
+# us-warsh-17 — signals
+- markets.mjs search "Warsh say" (read 2026-11-14T17:58:55Z): Kalshi mention markets for Warsh's **December 2026 press conference** only (e.g. "Will Kevin Warsh say Uncertainty ...?" 0.78, vol ~2.3k; "Productivity" 0.81, ~1.7k; "Central Bank" 0.83; closes 2026-12-10). Different event and different question: no match.
+- markets.mjs search "Warsh speech" (read 2026-11-14T17:59:00Z): Polymarket Fed December decision: 25 bp hike Yes 0.875 (vol ~8.5m), no change 0.0365 (~8.2m), 50+ bp hike 0.0935 (~6.4m), closes 2026-12-09; "no Fed rate cuts in 2026" 0.9845. Context only (same as watch question us-fed-hike-december); not the claim's outcome.
+- markets.mjs search "Fed December hike" (read 2026-11-14T17:59:05Z): Polymarket Dec–Jan–Mar path markets (hike-hike-pause 0.225, hike-pause-pause 0.165; thin, <1k volume). Context only.
+- markets.mjs search "Kevin Warsh inflation" (read 2026-11-14T17:59:18Z): 10-year Treasury yield markets only. No match.
+- No market, odds or published model on what Warsh says on 16 Nov found. Analyst views: Newsquawk notes Warsh disavows forward guidance outside crises (28 Oct); other FOMC members (Williams, Daly, Collins, Goolsbee, Logan) have signalled further hikes since the October CPI.

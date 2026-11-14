@@ -1,0 +1,18 @@
+# jp-gdp-17 — signals
+- markets.mjs search "Japan GDP", "Japan economy growth", "Japan recession" (2026-11-14T17:57Z): no results returned (empty).
+- markets.mjs search "Japan" (read 2026-11-14T17:58:19Z): Polymarket event "Japan GDP growth in Q3 2026 (QoQ Annualized)?" — https://polymarket.com/event/japan-gdp-growth-in-q3-2026-qoq-annualized. Bucket ladder (Yes price; volume; liquidity):
+  - less than −2.4%: 0.0115 (vol $3.5k, liq $0.7k)
+  - −2.4 to −1.6%: 0.093 (vol $5.6k, liq $0.9k)
+  - −1.6 to −0.8%: 0.1725 (vol $4.2k, liq $0.5k)
+  - −0.8 to 0.0%: 0.20 (vol $11.0k, liq $0.5k)
+  - 0.0 to 0.8%: 0.2775 (vol $36.7k, liq $0.7k)
+  - 0.8 to 1.6%: 0.1165 (vol $9.3k, liq $0.5k)
+  - 1.6 to 2.4%: 0.053 (vol $6.0k, liq $0.8k)
+  - 2.4 to 3.2%: 0.006 (vol $5.2k, liq $1.1k)
+  - (no "above 3.2%" bucket returned by the search)
+  - Prices sum to 0.93. Renormalised, P(below 0.0%) ≈ 0.51; implied median ≈ −0.05%; implied q10 ≈ −1.7%, q90 ≈ +1.4% (own interpolation within buckets).
+  - Match: same quantity (Q3 2026 real GDP, q/q annualised); buckets close 16 Nov 00:00Z / 17 Nov 04:59Z, after the 23:50Z 15 Nov release. Resolution rules not readable from the page text (only the description, which cites the ~0.3% forecasts), so whether it settles on the first preliminary figure and how bucket edges are treated is unconfirmed. Thin: liquidity under $1.2k per bucket, total volume about $81k. The ladder leans below the Reuters consensus (0.3%).
+  - Page description (Polymarket, modified 2026-11-13): "trader odds clustered tightly around zero to slight contraction".
+- Polymarket "Japan recession in 2026?": Yes 0.11 (vol $4.3k), closes 2027-05-01 — not the same question.
+- Published estimates: ITOCHU Economic Research Institute +1.4% annualised (3 Nov, https://norbertgehrke.substack.com/p/japans-q3-gdp-projected-to-expand). Reuters poll median +0.3% (dossier).
+- No bookmaker prices found.

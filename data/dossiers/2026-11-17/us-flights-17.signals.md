@@ -1,0 +1,5 @@
+# us-flights-17 — signals
+- markets.mjs search "flight cancellations" (read 2026-11-14T18:01:06Z): Starship/Starliner markets; Manifold "Will it be revealed this year that the aircraft grounding was due to a cyberattack?" 0.01. None about cancellation counts.
+- markets.mjs search "FAA" (read 2026-11-14T18:01:16Z): cause-attribution contracts only — Kalshi "specific identified malfunction ... caused the ground stop" 0.98 (vol ~97k); "maintenance, an upgrade or another planned change" 0.98 (vol ~85k); "failure in a network or system run by L3Harris" 0.98 (vol ~68k); "software or configuration error" 0.66 (vol ~62k); "SMART system" 0.03; Polymarket "FAA outage attributed to hack?" 0.023 (vol ~123k), "to Iran?" 0.0105, "to a foreign actor?" 0.015, "to AI?" 0.0265. All settle by 1 Dec; none about Monday cancellations. Not matching.
+- markets.mjs search "flights cancelled US" (read 2026-11-14T18:01:23Z): same FAA attribution markets plus Ben Gurion suspension markets. Not matching.
+- No published forecasts of Monday cancellation counts found. Duffy: disruption "for a few days", operations back "as we come into ... Thanksgiving" (dossier).

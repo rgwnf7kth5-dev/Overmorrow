@@ -1,0 +1,4 @@
+# ca-cpi-17 — signals
+- markets.mjs search "Canada inflation" (read 2026-11-14T17:55:25Z), "Canada CPI" (read 2026-11-14T17:55:40Z), "Canada CPI October" (read 2026-11-14T17:55:52Z): only Polymarket "Canada Annual Inflation 2026" buckets (https://polymarket.com/event/canada-annual-inflation-2026), closing 18–19 Jan 2027: 3.0–3.4% Yes 0.4595 (vol ~21.9k), 2.5–2.9% 0.225 (~21.3k), 3.5–3.9% 0.0575 (~20.8k), 2.0–2.4% 0.0825, ≥4.0% 0.057, 1.5–1.9% 0.0045, 1.0–1.4% 0.01. These settle on the 2026 annual figure (December 2026 release), not on the October y/y print: question and deadline do NOT match. No October-specific market found.
+- Money-market pricing (context only, Newsquawk Week in Focus 13 Nov): ~60% chance of a 25 bp BoC hike in December. Not about the CPI figure.
+- No published model probabilities for the October print found. Named forecasts (point estimates, in dossier): Reuters poll 3.2, RBC 3.0, Desjardins "similar or slightly higher" than 3.1, Continuum 3.3.

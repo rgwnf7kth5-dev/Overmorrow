@@ -5387,6 +5387,81 @@
             "volume": 14862,
             "matches": "proxy: Trump visits China before 1 Dec (attendance, not a confirmed Trump–Xi meeting); Polymarket Trump/Putin/Xi together before 2027 0.945"
           }
+        },
+        {
+          "at": "2026-11-14T20:40:00+01:00",
+          "p": 0.95,
+          "combined": 0.947,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:45:00Z",
+              "p": 0.94,
+              "reason": "Announced leader summits on a fixed host-country schedule almost always happen (summit-or-visit slip 0.01; scheduled-appearance class 0.92+); the White House has scheduled a Trump–Xi bilateral/working lunch on 19 Nov and China's MFA says Xi will hold bilaterals at APEC. Residual risk is a trip cancellation or slip by a crisis, with 11 days of slack to 30 Nov. The caller's 'Kremlin confirmed Trump–Xi–Putin' line was not sourced, but BBC/France 24 in the dossier carry the White House schedule.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.94,
+              "reason": "White House (BBC, 14 Nov) says Trump arrives in Shenzhen late 18 Nov with a bilateral/working lunch with Xi on 19 Nov, and Chinese state media already reported Xi will hold bilateral talks at APEC; WH confirmation alone resolves YES. Note the brief's 'confirmed' line was itself unsourced, but BBC/France 24 confirm it; residual risk is trip cancellation or slip (summit slip rate ~1%) or a crisis (Iran war).",
+              "inputs": [
+                "dossier",
+                "own-research",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-14T18:33:59Z",
+              "p": 0.92,
+              "reason": "Case for NO: Trump has not left yet, the trip was already compressed once (Manila moved from 16 to 17 Nov), an Iran-war or domestic crisis or a row with Beijing over the trilateral format could cancel Shenzhen, and China has announced only unnamed 'bilateral meetings'. Honest view: the White House has set a Trump-Xi bilateral and working lunch for 19 Nov, departure is Monday, and summit slip is about 1%, so only a late cancellation stops it.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.97,
+              "reason": "Polymarket 'Trump meet with Xi by 30 Nov' trades 0.9855 (vol ~40k); White House announced a Trump-Xi bilateral/working lunch on 19 Nov in Shenzhen and the trip leaves Monday. Residual risk is trip disruption or cancellation; capped at 0.97.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.95,
+              "reason": "White House says Trump will hold a bilateral with Xi in Shenzhen and a trilateral; Euronews 14 Nov, Mao Ning welcomed the summit. Residual risk is a trip cancellation or Chinese non-confirmation.",
+              "inputs": [
+                "own-research"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/who-will-trump-meet-with-by-november-30-2026",
+            "p": 0.9855,
+            "read_at": "2026-11-14T18:32:30Z"
+          },
+          "note": "Re-forecast after material news: the White House has scheduled a Trump–Xi bilateral meeting and working lunch in Shenzhen on 19 Nov alongside the first Trump–Xi–Putin meeting (BBC, France 24, 14 Nov); Trump leaves for Asia on Monday. Remaining risk: a late cancellation of the trip.",
+          "note_cs": "Nová prognóza po podstatné zprávě: Bílý dům naplánoval na 19. listopadu v Šen-čenu dvoustrannou schůzku a pracovní oběd Trumpa se Si Ťin-pchingem vedle první schůzky Trump–Si–Putin (BBC, France 24, 14. listopadu); Trump odlétá do Asie v pondělí. Zbývajícím rizikem je pozdní zrušení cesty."
         }
       ],
       "result": null
@@ -9031,6 +9106,74 @@
           ],
           "note": "Weekly re-forecast: caps keep falling (diesel 47.28, petrol 41.42 CZK/l for 7–9 Nov) and oil fell about 17% last week, which makes letting the regulation lapse on 30 Nov easier; no decision on December has been reported, and the October extension came only five days before expiry.",
           "note_cs": "Týdenní přepočet: stropy dál klesají (nafta 47,28, benzin 41,42 Kč/l na 7. až 9. listopadu) a ropa minulý týden zlevnila asi o 17 %, což usnadňuje nechat regulaci 30. listopadu skončit; o prosinci zatím nepadlo rozhodnutí a říjnové prodloužení přišlo jen pět dní před koncem."
+        },
+        {
+          "at": "2026-11-14T20:40:00+01:00",
+          "p": 0.53,
+          "combined": 0.53,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:45:00Z",
+              "p": 0.58,
+              "reason": "Emergency caps that have been rolled over month to month (1 Oct, 26 Oct) are more often extended again than dropped while oil stays high (Brent back near 96 USD), and a populist cabinet is unlikely to let prices jump in December. But caps have fallen eleven days in a row, the government ended earlier regulation in July once prices eased, an excise-only extension would be NO, and Schillerová calls the decision open.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.6,
+              "reason": "ČTK (13 Nov) confirms Schillerová said the government must decide within a week or ten days whether the measures continue in December, so it is genuinely open; diesel caps have fallen eleven days in a row to 45.38 (below the 1 Oct start) which argues for lapse, as in July when the spring regulation ended once prices eased, but Brent is still ~$96 with Hormuz disrupted and the coalition prefers visible relief into winter; extending only the excise cut would be NO.",
+              "inputs": [
+                "dossier",
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-14T18:33:59Z",
+              "p": 0.52,
+              "reason": "Case for NO: the diesel cap has fallen eleven times in a row to 45.38, below the 48.72 at which caps began on 1 Oct, the government ended the earlier regulation in July once prices eased, and Schillerová on 13 Nov spoke of deciding 'whether' the measures continue, so keeping only the excise cut (which does not count) is a live option. Case for YES: Brent rebounded to about 96 USD with the Iran war unresolved, the crown weakened, wholesale quotes turned up, and a populist cabinet has rolled the caps over twice and may not risk a December price jump; I rate it close to even.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "own-research"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.45,
+              "reason": "No market; judgement model. The cabinet extended once already (26 Oct, five days before expiry) and Brent is back near 96, but diesel caps have fallen eleven days running to the lowest level since October, and Schillerová frames December as an open decision, with a plausible excise-only extension counting NO.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.5,
+              "reason": "The cap was extended in October and Schillerová signals a decision within 7-10 days, so it is live, but oil is down sharply and the government may let it lapse; no reported decision.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Finance Minister Schillerová said on 13 Nov that the cabinet will decide within a week or ten days whether to continue the fuel-price caps after 30 Nov (ČTK). The diesel cap has fallen eleven days in a row to CZK 45.38/l, below its level when the caps began on 1 Oct, while Brent is near 96 USD; extending only the diesel excise cut would resolve No.",
+          "note_cs": "Týdenní nová prognóza. Ministryně financí Schillerová 13. listopadu řekla, že vláda do týdne až deseti dnů rozhodne, zda cenové stropy pohonných hmot po 30. listopadu zachová (ČTK). Strop nafty klesl jedenáctkrát za sebou na 45,38 Kč/l, pod úroveň ze začátku regulace 1. října, Brent se ale drží kolem 96 USD; pouhé prodloužení snížené spotřební daně z nafty by znamenalo odpověď Ne."
         }
       ]
     },
@@ -10956,6 +11099,77 @@
           "market": null,
           "note": "Trump says one of his Shenzhen meetings will be with Putin and Xi, but on 12 Nov the Kremlin (Ushakov) spoke only of a Putin–Trump conversation at APEC; no separate three-way format is confirmed six days before the summit.",
           "note_cs": "Trump tvrdí, že jedna ze schůzek v Šen-čenu bude s Putinem a Si Ťin-pchingem, Kreml (Ušakov) ale 12. listopadu hovořil jen o rozhovoru Putina s Trumpem na summitu APEC; samostatná trojstranná schůzka šest dní před summitem potvrzena není."
+        },
+        {
+          "at": "2026-11-14T20:40:00+01:00",
+          "p": 0.8,
+          "combined": 0.802,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:45:00Z",
+              "p": 0.8,
+              "reason": "Meetings confirmed by two of three parties five days out usually happen (base ~0.9), but Beijing has not confirmed, MERICS notes Xi's reasons to avoid a formal trilateral, and China rejects trilateral nuclear talks, so the format could be diluted into something short of a separate three-way meeting. Chinese late-confirmation habit (Busan 2025, one day before) means silence so far is weak evidence against.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.8,
+              "reason": "White House and Kremlin both announced the Trump-Xi-Putin meeting for 19 Nov, but Beijing has not confirmed (MFA still 'in communication' on 13 Nov; MFA earlier called trilateral nuclear talks unrealistic, MERICS says Xi has reasons to avoid a formal three-way format), so a downgrade to a group encounter without a separate three-way meeting is the main NO path. Polymarket 'Trump, Putin, Xi seen together before 2027' at 0.96 is related but looser.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-14T18:33:59Z",
+              "p": 0.8,
+              "reason": "Case for NO: Beijing alone has not confirmed (Mao Ning on 13 Nov still 'in communication'), China rejected trilateral nuclear talks in October and MERICS argues Xi prefers to avoid a formal three-way, so it could be downgraded to a photo, a banquet encounter or back-to-back bilaterals that fail the 'separate three-way meeting' test, or Putin's travel could fall through. Honest view: the White House and the Kremlin both name 19 Nov, a host rarely lets two guests announce a meeting it will refuse, and Beijing confirmed Busan 2025 only a day ahead.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.87,
+              "reason": "Kalshi 'Trump, Xi and Putin meet together before 2027' 0.97 and Polymarket 'seen together before 2027' 0.96, but thin Manifold 'three-way meeting by 22 Nov' is only 0.78. White House and Kremlin confirmed 19 Nov, Beijing has not, and the criterion needs a separate three-way meeting, not a photo or plenary; discounted from the long-dated markets to ~0.87.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.72,
+              "reason": "White House confirmed a trilateral on 13-14 Nov, but Moscow and Beijing had not commented and Ushakov spoke only of a Trump-Putin conversation; Xi may prefer separate bilaterals or a larger session.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast after material news: on 13–14 Nov the White House announced the first Trump–Xi–Putin meeting in Shenzhen on 19 Nov on the APEC sidelines (agenda: nuclear arms control and the Iran war, not Ukraine), and Moscow named the same date; Beijing has not yet confirmed and still says it is 'in communication'. The main risk is a downgrade to a format that is not a separate three-way meeting.",
+          "note_cs": "Nová prognóza po podstatné zprávě: Bílý dům 13.–14. listopadu oznámil první schůzku Trump–Si–Putin 19. listopadu v Šen-čenu na okraj summitu APEC (program: jaderné zbrojení a válka s Íránem, nikoli Ukrajina) a Moskva uvedla stejné datum; Peking ji zatím nepotvrdil a mluví jen o tom, že je „v kontaktu“. Hlavním rizikem je změna formátu na jiný než samostatnou schůzku tří lídrů.",
+          "market_note": "Kalshi and Polymarket markets on the three leaders meeting or being seen together before 2027 (0.96–0.97) have a looser criterion (a photo or wider session counts) and a later deadline; not a match. A small Manifold market for a three-way meeting by 22 Nov stood at 0.78."
         }
       ]
     },
@@ -11026,6 +11240,71 @@
           ],
           "note": "Opened: the third reading was postponed on 6 Nov without a new date and Motoristé want to reopen the rise at Monday's coalition council.",
           "note_cs": "Otevřeno: třetí čtení bylo 6. listopadu odloženo bez nového termínu a Motoristé chtějí zdražení znovu otevřít na pondělní koaliční radě."
+        },
+        {
+          "at": "2026-11-14T20:40:00+01:00",
+          "p": 0.54,
+          "combined": 0.536,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:45:00Z",
+              "p": 0.55,
+              "reason": "Third readings pass about 99% of the time once voted, but government-bill reading slip is about 0.63 per sitting and December floor time goes to the budget, so a vote by 31 Dec is about 0.7. The rise surviving now looks about 0.8: the 6 Nov vote failed for a power outage, not politics, and Macinka (Motoristé) says the coalition already discussed the rise.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts",
+                "dossier"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.48,
+              "reason": "No new date for the third reading found (psp.cz unreachable; search found nothing after 9 Nov); the minister and coalition still back the CZK 5 rise with a small-user exemption, so if voted it likely passes with the rise, but floor time before 31 Dec competes with the budget and the host bill has stalled before; Motoristé and regions' opposition add risk of dilution to zero.",
+              "inputs": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-14T18:33:59Z",
+              "p": 0.55,
+              "reason": "Case for NO: the third reading has no date, the opposition objects to the rise as a rider on an unrelated bill and can obstruct, December floor time goes to the budget, regions want compensation for about CZK 380m a year and farmers want an exemption, so the vote can slip into 2027 or the rider be dropped. Honest view: the 6 Nov miss was a power outage, not a split; Macinka says the coalition has already discussed the rise and the minister defended it after cabinet on 9 Nov, so the coalition majority probably passes it at a late-November or December sitting. psp.cz was not reachable and the outcome of the 12 Nov meeting with the regions is unknown.",
+              "inputs": [
+                "overnight-facts",
+                "own-research"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.5,
+              "reason": "No market; judgement model. The coalition has a majority, the agriculture committee backed the amendment and the 2027 Agriculture budget already counts on CZK 2bn, but Motoristé object, regions are pushing for compensation, the third reading has no date, and December floor time goes to the budget amid opposition obstruction.",
+              "inputs": [
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.6,
+              "reason": "Coalition majority with the third reading only postponed (power outage) and the minister defending the rise; risk is Motoristé reopening it, or the fee being amended out before the vote.",
+              "inputs": [
+                "overnight-facts",
+                "own-research"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. The 6 Nov third reading was cut short by a power outage; coalition figures (Macinka, 8 Nov; Agriculture Minister Šebestyán, 9 Nov) back the CZK 5 per 1,000 litres rise, with compensation for regions under negotiation. No third-reading date is set; the Chamber next sits from 24 Nov and December floor time goes mostly to the budget.",
+          "note_cs": "Týdenní nová prognóza. Třetí čtení 6. listopadu přerušil výpadek proudu; představitelé koalice (Macinka 8. listopadu, ministr zemědělství Šebestyán 9. listopadu) zvýšení o 5 Kč za 1000 litrů podporují a o kompenzaci pro kraje se jedná. Termín třetího čtení není stanoven; Sněmovna se znovu sejde od 24. listopadu a prosincový čas na plénu připadne hlavně rozpočtu."
         }
       ]
     },
@@ -11442,6 +11721,98 @@
           ],
           "note": "New question: Abu Dhabi ended on 11 Nov with an agreed large prisoner exchange (TASS: more than 1,000 per side in two to three weeks); neither date nor numbers have been confirmed by Kyiv.",
           "note_cs": "Nová otázka: jednání v Abú Zabí skončila 11. listopadu dohodou o velké výměně zajatců (podle TASS přes 1000 na každou stranu do dvou až tří týdnů); Kyjev datum ani počty nepotvrdil."
+        }
+      ]
+    },
+    {
+      "id": "es-feijoo-pm-jan",
+      "scope": "europe",
+      "topic": "Spanish snap election and government formation",
+      "question": "Will Alberto Núñez Feijóo be elected Prime Minister of Spain by the Congress of Deputies by 31 January 2027?",
+      "question_cs": "Zvolí Kongres poslanců Alberta Núñeze Feijóa španělským premiérem do 31. ledna 2027?",
+      "criterion": "Yes if, by 31 Jan 2027 23:59 CET, the Congress of Deputies grants Alberto Núñez Feijóo its confidence in an investiture vote (absolute majority in the first vote or a simple majority in a later vote), as recorded by the Congreso de los Diputados or the Boletín Oficial del Estado. Otherwise no.",
+      "criterion_cs": "Ano, pokud do 31. ledna 2027 do 23:59 SEČ Kongres poslanců vysloví Albertu Núñezi Feijóovi důvěru v hlasování o investituře (absolutní většinou v prvním hlasování nebo prostou většinou v dalším), jak zaznamená Congreso de los Diputados nebo Boletín Oficial del Estado. Jinak ne.",
+      "resolution_source": "https://www.congreso.es/ ; https://www.boe.es/",
+      "opened": "2026-11-14",
+      "resolves_by": "2027-01-31T23:59:00+01:00",
+      "background": "Spain holds a snap general election on Sunday 29 Nov 2026. Poll average (Demócrata, 14 Nov): PP 31.4%, PSOE 26.9%, Vox 19.1%; average seat projection PP 135, PSOE 106, Vox 67 (PP and Vox together 202 against 176 for a majority). The Sánchez–Feijóo debate is on 19 Nov. After the vote the new Cortes constitute (reportedly around 23 Dec), the King consults the parties and proposes a candidate; Feijóo would need Vox's votes or abstention in a later round.",
+      "sources": [
+        {
+          "title": "Demócrata: poll average and trackings for 29N",
+          "url": "https://www.democrata.es/encuestas/elecciones-generales/promedio-encuestas-trackings-29n/"
+        },
+        {
+          "title": "Vozpópuli: Sánchez–Feijóo head-to-head on 19 November",
+          "url": "https://www.vozpopuli.com/espana/el-cara-a-cara-entre-sanchez-y-feijoo-sera-el-19-de-noviembre.html"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-14T20:40:00+01:00",
+          "p": 0.51,
+          "combined": 0.508,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:45:00Z",
+              "p": 0.57,
+              "reason": "With PP+Vox averaging 202 seats against 176 needed, a right-wing majority is about 0.88, and the poll-lead model gives a PP lead of 0.80–0.90 (lead 3–4.5, sd 3.5). Timing is the main issue. Spanish investitures came within 63 days of the election in every clear-majority case (2000, 2004, 2008, 2011: 30–45 days) and in the 2019 coalition case (58 days, over Christmas). But PP–Vox regional deals in 2023 often took 7–15 weeks, and Vox has leverage for ministries, so P(by 31 Jan | majority) is about 0.65.",
+              "inputs": [
+                "reference-data",
+                "own-research"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.6,
+              "reason": "Seat averages put PP+Vox at ~202 (majority 176) and the 4.5-point PP lead gives ~0.90 for PP first (models.mjs leadabove 4.5 3.5 0), so a right-wing majority is ~0.85-0.9 even allowing for 2023's overstatement of PP+Vox; but investiture by 31 Jan needs Congress to constitute ~late Dec and a PP-Vox deal (Vox must vote yes, abstention is not enough), and Vox has dragged out regional investitures, so timing/deal risk takes it to ~0.6.",
+              "inputs": [
+                "reference-data",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-14T18:33:59Z",
+              "p": 0.48,
+              "reason": "Case for NO: daily trackings narrow the PP-PSOE gap to 1.3 points before the 19 Nov debate, and even with a PP+Vox majority the calendar is tight: Congress constitutes about 3-4 weeks after 29 Nov, then royal consultations over Christmas, and Vox with about 67 seats can demand ministries and drag talks as it did for months after the 2025-26 regional elections (in 2023 Feijóo's own vote came 66 days after the election, in 2019 Sánchez's took 58). Honest view: the average gives PP a 4.7-point lead (PP first about 0.90 with sd 3.6) and PP+Vox 202 seats, so a right majority is about 0.9 likely and Vox pays a price for keeping Sánchez as caretaker, but I give only about 0.55 that the vote is held by 31 Jan.",
+              "inputs": [
+                "reference-data",
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.6,
+              "reason": "Polymarket 'Feijóo next PM of Spain' 0.85 (vol ~1m) is undated. The poll model gives P(PP first) ~0.87-0.90 (lead 4.5, sd 3.5-4), and PP+Vox at ~202 seats has a wide margin over 176. The 31 Jan deadline is tight: Cortes meets ~late Dec, Vox needs to vote yes and may hold out for cabinet seats, as it did in regional deals, so ~0.7 conditional on timing.",
+              "inputs": [
+                "reference-data",
+                "own-research"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-14T18:40:00Z",
+              "p": 0.3,
+              "reason": "PP leads and PP+Vox averages about 202 seats, but the Cortes constitute on 23 Dec, consultations are expected only in January (El Debate, 13 Nov), and a Vox deal is needed; 2019 precedent was an investiture on 7 Jan, 2023 failed.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "market_note": "Polymarket 'Next Prime Minister of Spain' prices Feijóo at 0.85 (about $1m traded), but it has no 31 Jan deadline; our question adds the timing of the investiture (Cortes constitute in late December; PP needs Vox's votes or abstention), so it is not a match.",
+          "note": "New question: a snap election on 29 Nov, with PP clearly ahead in the poll average and PP plus Vox projected above a majority; the open part is whether a PP–Vox understanding produces an investiture vote by 31 January.",
+          "note_cs": "Nová otázka: předčasné volby 29. listopadu, v nichž lidovci (PP) v průměru průzkumů jasně vedou a PP s Vox mají podle projekcí většinu; otevřené je, zda dohoda PP a Vox přinese hlasování o investituře do 31. ledna."
         }
       ]
     }
