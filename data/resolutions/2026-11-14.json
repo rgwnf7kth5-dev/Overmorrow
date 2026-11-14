@@ -1,0 +1,72 @@
+{
+  "edition": "2026-11-14",
+  "results": [
+    {
+      "claim": "us-ppi-oct-14",
+      "outcome": "measured",
+      "value": 0.3,
+      "evidence": "https://www.bls.gov/news.release/ppi.nr0.htm",
+      "note": "BLS PPI news release (USDL 26-1687, 08:30 ET Fri 13 Nov 2026): the PPI for final demand rose 0.3 percent in October, seasonally adjusted.",
+      "resolved_at": "2026-11-14T05:06:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "ua-drones-14",
+      "outcome": "no",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4184168-air-defense-downs-80-of-117-russian-drones-launched-overnight.html",
+      "note": "Ukrinform (13 Nov 08:39 Kyiv) repeats the Air Force morning summary: from 18:00 on 12 Nov Russia attacked with 117 strike UAVs (incl. 63 jet-powered), below 170.",
+      "resolved_at": "2026-11-14T05:06:00+01:00"
+    },
+    {
+      "claim": "pl-gdp-q3-14",
+      "outcome": "measured",
+      "value": 3.5,
+      "evidence": "https://stat.gov.pl/obszary-tematyczne/rachunki-narodowe/kwartalne-rachunki-narodowe/szybki-szacunek-produktu-krajowego-brutto-za-3-kwartal-2026-r-,1,55.html",
+      "note": "GUS flash estimate for Q3 2026 (stat.gov.pl, 13 Nov): real GDP not seasonally adjusted (constant average prices of the previous year) rose 3.5% y/y.",
+      "resolved_at": "2026-11-14T05:08:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-cnb-frait-14",
+      "outcome": "yes",
+      "evidence": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/Rozhodnuti-bankovni-rady-CNB-1793865600000/?tab=record",
+      "note": "The ČNB record of the 5 Nov 2026 meeting on cnb.cz states four members voted for the decision (Michl, Kubíček, Procházka, Seidler) and three, Zamrazilová, Frait and Kubelková, voted for stable rates.",
+      "resolved_at": "2026-11-14T05:08:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-diesel-max-14",
+      "outcome": "measured",
+      "value": 45.38,
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-13_Cenovy-vestnik-124-2026.pdf",
+      "note": "Finance Ministry Cenový věstník částka 124 dated 13 Nov 2026 (cap set 14:00) sets the maximum price of B7 diesel for 14–16 Nov 2026 at 45.38 CZK/l incl. VAT.",
+      "resolved_at": "2026-11-14T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "ua-envoys-meet-14",
+      "outcome": "yes",
+      "evidence": "https://www.ukrinform.net/rubric-polytics/4184145-zelensky-meets-with-witkoff-and-kushner-outlines-key-outcomes-of-abu-dhabi-talks.html",
+      "note": "Ukrinform (13 Nov 06:27 Kyiv), citing its correspondent, reports Zelensky's statement following talks with Witkoff and Kushner in Dublin, i.e. an in-person meeting on 12 Nov, inside the window; the presidential office also posted a read-out of the discussion.",
+      "resolved_at": "2026-11-14T05:15:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "eu-envoy-agreed-14",
+      "outcome": "yes",
+      "evidence": "https://kyivindependent.com/european-leaders-agree-on-joint-team-for-ukraine-peace-negotiations-costa-says/",
+      "note": "Kyiv Independent (13 Nov 20:40 UTC) reports Costa announced that leaders at the informal Dublin meeting agreed EU institutions together with the E5 (France, Germany, Italy, Poland, UK) will jointly represent Europe in the peace negotiations; consilium.europa.eu refused scripted reading.",
+      "resolved_at": "2026-11-14T05:15:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "cz-refinery-second-14",
+      "outcome": "yes",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-se-sejdou-k-navrhu-na-zavedeni-mimoradne-dane-na-rafinerie-379573",
+      "note": "ČT24/ČTK (13 Nov, updated in the afternoon) report that at Friday's sitting deputies sent the government refinery-tax bill to third reading, with the opposition tabling about thirty amendments, i.e. the second reading was concluded; psp.cz was unreachable.",
+      "resolved_at": "2026-11-14T05:19:00+01:00",
+      "held": true
+    }
+  ]
+}
