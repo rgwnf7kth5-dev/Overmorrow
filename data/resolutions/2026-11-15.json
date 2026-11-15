@@ -1,0 +1,43 @@
+{
+  "edition": "2026-11-15",
+  "results": [
+    {
+      "claim": "ua-drones-15",
+      "outcome": "no",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4184585-air-defenses-neutralize-81-of-96-drones-launched-by-russia-against-ukraine-since-evening.html",
+      "note": "Ukrinform (14 Nov 08:38 Kyiv) repeats the Air Force morning summary: from 18:00 on 13 Nov Russia attacked with 96 strike UAVs (61 jet-powered Shaheds, Gerberas, Parodiya decoys), below 170.",
+      "resolved_at": "2026-11-15T05:05:00+01:00"
+    },
+    {
+      "claim": "ua-swap-15",
+      "outcome": "no",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4184745-lubinets-russian-ombudswoman-discuss-mechanism-for-largescale-prisoner-exchange.html",
+      "note": "Ukrinform (15 Nov 03:39 Kyiv) reports ombudsman Lubinets still discussing with his Russian counterpart the mechanism for an exchange of at least 1,000 people, and Novinky (15 Nov) the same, so no exchange took place on 13–14 Nov.",
+      "resolved_at": "2026-11-15T05:05:00+01:00"
+    },
+    {
+      "claim": "starship-launch-15",
+      "outcome": "yes",
+      "evidence": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt",
+      "note": "Space.com live blog and SpaceNews ('Starship launches on 15th test, calls off booster catch', 13 Nov): Flight 15 lifted off from Starbase on Fri 13 Nov at 22:47 UTC (16:47 CST), inside the window.",
+      "resolved_at": "2026-11-15T05:05:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "starship-booster-catch-15",
+      "outcome": "no",
+      "evidence": "https://spacenews.com/starship-launches-on-15th-test-calls-off-booster-catch/",
+      "note": "SpaceNews and Space.com: Super Heavy ended its boostback early on a low-fuel-mass alarm, aborted the tower catch and diverted to a water landing in the Gulf of Mexico on 13 Nov.",
+      "resolved_at": "2026-11-15T05:05:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "starship-ship-catch-15",
+      "outcome": "yes",
+      "evidence": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt",
+      "note": "Space.com and SpaceNews ('SpaceX catches Starship upper stage', 14 Nov): the Ship was caught by the Starbase tower's chopstick arms on Sat 14 Nov at about 21:20 UTC (15:20 CST), before the 23:59 CST deadline; BBC also reports the catch.",
+      "resolved_at": "2026-11-15T05:05:00+01:00",
+      "held": true
+    }
+  ]
+}
