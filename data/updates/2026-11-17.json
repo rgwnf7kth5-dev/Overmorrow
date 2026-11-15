@@ -1,0 +1,182 @@
+{
+  "edition": "2026-11-17",
+  "frozen_at": "2026-11-15T12:28:00+01:00",
+  "revisions": [
+    {
+      "claim": "ir-intel-17",
+      "probability": 0.99,
+      "kind": "confirmation",
+      "reason": "In its open session on Sunday 15 November, after the morning freeze, Iran's parliament approved single urgency of the plan amending the Intelligence Ministry founding law, which removes the ijtihad requirement for the minister (Mehr News, Khabaronline, Entekhab: 267 votes in favour). New ensemble: 0.95, 0.95, 0.94, 0.96, 0.95.",
+      "reason_cs": "Íránský parlament v neděli 15. listopadu na otevřeném zasedání, tedy po ranní uzávěrce, schválil zrychlené projednání (jednoduchou naléhavost) návrhu novely zákona o zřízení ministerstva zpravodajských služeb, který ruší požadavek, aby ministr měl kvalifikaci idžtihádu (Mehr News, Khabaronline, Entekhab: pro hlasovalo 267 poslanců). Nový soubor odhadů: 0,95; 0,95; 0,94; 0,96; 0,95.",
+      "sources": [
+        {
+          "title": "Mehr News: یک فوریت طرح اصلاح قانون تأسیس وزارت اطلاعات تصویب شد (15 Nov 2026)",
+          "url": "https://www.mehrnews.com/news/7011225/"
+        },
+        {
+          "title": "Khabaronline: یک فوریت طرح «اصلاح قانون تاسیس وزارت اطلاعات» تصویب شد (15 Nov 2026)",
+          "url": "https://www.khabaronline.ir/news/2302287"
+        },
+        {
+          "title": "Entekhab: 267 MPs agreed to consider the plan amending the Intelligence Ministry law (15 Nov 2026)",
+          "url": "https://www.entekhab.ir/fa/news/947979"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "ir-intel-17",
+      "at": "2026-11-15T12:26:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-15T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.94,
+          "reason_blind": "When six or more Persian outlets run matching same-day headlines that the Majlis approved an urgency, about 3-5% turn out misdated, about a different item or corrected; 'amendment of the law establishing the Intelligence Ministry' is the formal title of the ijtihad plan and single urgency counts.",
+          "at": "2026-11-15T12:24:30+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.95,
+          "reason": "Khabaronline, Eghtesadnews, Shargh, Hamshahri, Entekhab (267 votes), Khabarfoori and Rouydad24 report single urgency approved in the Sunday 15 Nov session, which opens after 06:00 Tehran. Remaining risk: pages not read, and a strict resolver wanting a listed source."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-15T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.68,
+          "reason_blind": "Own research confirmed only that the vote was scheduled for Sunday 15 Nov (Iran International, The Defense News); no report of the result found, Iranian sites reset the connection.",
+          "at": "2026-11-15T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.95,
+          "reason": "The afternoon facts list several Persian outlets reporting on 15 Nov that MPs approved single urgency for the bill amending the Intelligence Ministry founding law; any degree of urgency counts and the session is inside the window. Remaining risk: headlines only, vote time not read."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-15T12:24:00+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.66,
+          "reason_blind": "The presidium confirmed the double-urgency item for Sunday and the regime wants a minister quickly, but urgency votes can fail, be downgraded or slip, and clerical opposition exists.",
+          "at": "2026-11-15T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.94,
+          "reason": "Strongest NO case: approval known only from search headlines of outlets not on the criterion's list, and Entekhab's '267 MPs agreed to the request to consider' could be procedural. But several independent outlets carry the same 'single urgency approved' wording dated 15 Nov and any degree counts."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-15T12:25:00+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.96,
+          "reason": "Anchor: agreeing multi-outlet vote headlines are about 97% reliable; six or more outlets ran the same headline on 15 Nov, Entekhab with a 267-vote count, and any degree of urgency counts. No market covers the claim (only unrelated Polymarket Iran markets), so no price was used."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-15T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.6,
+          "reason_blind": "Searches show the double-urgency plan on the Majlis agenda for the week and Sunday 15 Nov an open-session day; no report of the vote itself found.",
+          "at": "2026-11-15T12:25:00+01:00",
+          "inputs": [
+            "own-research",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.95,
+          "reason": "After the union of facts: several outlets report single urgency approved in the 15 Nov open session, inside the window. Remaining risk: headlines from search snippets only, or a broader bill under that headline."
+        }
+      ],
+      "combined": 0.9504,
+      "calibrated": 0.9859,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.2019,
+          "b": 1.3711
+        },
+        "version": "2026-11-15"
+      },
+      "spread": 0.02,
+      "disagreement": {
+        "cause": null,
+        "note": "Final spread 0.02. Blind estimates (0.60-0.94) differed because the forecasters with own research only had not found the result; all finals rest on the same set of Persian reports. No forecaster used a market."
+      },
+      "market_search": "markets.mjs search \"Iran intelligence minister\" (anchor, 12:25 CET): only unrelated Polymarket markets (US invasion of Iran before 2027, Iran leadership change by 31 Dec); none on the Majlis vote.",
+      "market": null,
+      "decomposition": {
+        "morning": {
+          "p_held": 0.8,
+          "p_if_held": 0.862
+        },
+        "afternoon": {
+          "p_held": 0.99,
+          "p_if_held": 0.99
+        },
+        "factor": "both"
+      },
+      "red_team": {
+        "case_for_morning": "The revision rests on search-result headlines; no page could be opened, most outlets are not on the criterion's source list, the vote time was not read, and the item was billed as double urgency while the reports say single urgency, which hints at a procedural twist. These are reasons to stop short of 0.99, not to go back to 0.69.",
+        "case_further": "Seven outlets carry the same specific fact, one with a vote count (267), under the plan's formal title; the Majlis never sits before 06:00 Tehran; any degree of urgency counts; ICANA, IRNA, Tasnim and Mehr report every urgency vote. The event has happened, so only resolution error remains, plausibly under 1%.",
+        "stronger": "revision",
+        "why": "Both morning uncertainties (would the vote be held, would urgency pass) are settled by concordant same-day reports; after the red team asked for a listed-source confirmation, a Mehr News headline (a listed source) was found: 'single urgency of the plan amending the Intelligence Ministry founding law approved'.",
+        "new_decisive_fact": null,
+        "factor": "both: p_held 0.80 -> about 0.99 (the session voted on the item); p_if_held 0.86 -> about 0.99 (urgency approved, any degree counts)",
+        "likeliest_failure": "The headlines are garbled (a 'consideration' vote rather than urgency) or the resolver cannot find a listed-source report."
+      }
+    }
+  ],
+  "added": [],
+  "meta": {
+    "unreachable": [
+      "https://www.mehrnews.com/news/7011225 (connection reset)",
+      "https://www.khabaronline.ir/news/2302287 (connection reset)",
+      "https://www.eghtesadnews.com (connection reset)",
+      "https://www.hamshahrionline.ir/news/1086221 (connection reset)",
+      "https://www.rouydad24.ir (connection reset)",
+      "https://www.sharghdaily.com (connection reset)",
+      "https://www.khabarfoori.com (connection reset)"
+    ],
+    "not_recomputed": "Other claims: no material fact published after the morning freeze was found (no change to Trump's Monday departure, no new step by KDNP or Seszták after the 14 Nov calls, no new Babiš statement on licence fees, no Chinese MFA statement on the trilateral meeting on a Sunday, no Kremlin statement; the Monday data releases and the diesel cap are not yet out)."
+  }
+}
