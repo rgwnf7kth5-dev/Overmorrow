@@ -32,6 +32,14 @@
       "note": "On 10 Nov the House voted 211-204 to refer the articles to committee, so no article was adopted.",
       "at": "2026-11-14T05:00:00+01:00",
       "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "es-strike-power-12",
+      "outcome": "yes",
+      "evidence": "https://apidatos.ree.es/es/datos/demanda/evolucion?start_date=2026-11-04T00:00&end_date=2026-11-11T23:59&time_trunc=day&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741",
+      "note": "REData (last-update 14 Nov 06:50) gives 11 Nov 646,796.9 and 4 Nov 675,411.9 MWh, ratio -4.24%; press (El Salto, Emol) reports the strike went ahead on 11 Nov. (-4.24% (646,796.9 vs 675,411.9 MWh))",
+      "at": "2026-11-15T05:17:00+01:00",
+      "model": "claude-sonnet-5-5"
     }
   ]
 }

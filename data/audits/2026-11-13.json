@@ -1,0 +1,21 @@
+{
+  "edition": "2026-11-13",
+  "entries": [
+    {
+      "claim": "us-iran-ship-13",
+      "outcome": "unresolved",
+      "evidence": "https://www.arabnews.com/middle-east/bulk-carrier-military-forces-involved-in-latest-gulf-of-oman-incident-ukmto-says-3010416",
+      "note": "ukmto.org returned 403 and no source found dates a UKMTO/JMIC-reported incident to 12 Nov (found ones dated 7 Nov, 14 Nov mine hit); absence is not a no.",
+      "at": "2026-11-15T05:17:00+01:00",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "claim": "us-iran-strike-13",
+      "outcome": "unresolved",
+      "evidence": "https://www.arabnews.com/middle-east/iran-targets-us-radar-system-in-bahrain-3011593",
+      "note": "Found only a reported US attack on a Sirik telecom tower around 13 Nov (Iranian claim) and no on-record US confirmation of a strike on 12 Nov; CENTCOM page unreadable via script.",
+      "at": "2026-11-15T05:17:00+01:00",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
