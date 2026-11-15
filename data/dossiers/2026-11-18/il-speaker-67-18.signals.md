@@ -1,0 +1,2 @@
+# il-speaker-67-18 — signals
+Searches 2026-11-15 ~17:50Z (scripts/markets.mjs): "Knesset speaker", "Kahana", "Ohana". No market on the vote tally. Related: Kalshi "Knesset elect a Speaker before Nov 18" Yes 0.91 (vol 28) https://kalshi.com/markets/kxisrspeakerdate ; Polymarket "Matan Kahana next Speaker" Yes 0.935 (vol ~4.8k) https://polymarket.com/event/who-will-be-the-next-speaker-of-the-knesset-20261019103128390 ; Kalshi Kahana first speaker election 0.90 https://kalshi.com/markets/kxisrspeaker . None matches the margin. No bookmaker prices or models found.

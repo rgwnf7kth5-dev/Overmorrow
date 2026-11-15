@@ -6370,6 +6370,57 @@
             "volume": 2704211,
             "kind": "exchange"
           }
+        },
+        {
+          "at": "2026-11-15T18:07:45Z",
+          "p": 0.03,
+          "combined": 0.028,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.02,
+              "reason": "The Student List holds an outright 140/250 majority; Vučić's list has 103. Only a collapse of the student majority could make him PM.",
+              "at": "2026-11-15T18:02:46Z"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "Student List holds outright majority 140/250 and will elect its own PM; Vucic's list has 103; no path short of mass defections.",
+              "at": "2026-11-15T18:04:22Z"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.03,
+              "reason": "Student List holds 140 of 250 seats; Vucic's list has 103 and leads the opposition group. Only a collapse of the majority would change this.",
+              "at": "2026-11-15T18:05:40Z"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "Polymarket 'Vučić next Serbian PM' 0.019 (vol ~2.7m), Kalshi 0.02. Student List holds 140/250 outright, so the floor is 0.03.",
+              "at": "2026-11-15T18:07:45Z"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.03,
+              "reason": "Student List holds 140/250 majority; Vucic list 103; no path to PM",
+              "at": "2026-11-15T18:06:47Z"
+            }
+          ],
+          "note": "Weekly re-forecast: final results give the Student List 140 of 250 seats and Vučić's list 103; the new Assembly constitutes on 17 Nov; no Student List prime-ministerial candidate named yet. Nothing points to a Vučić-led government; figure stays at the floor.",
+          "note_cs": "Týdenní přepočet: podle konečných výsledků má Studentská kandidátka 140 z 250 mandátů a Vučićova kandidátka 103; nové Národní shromáždění se ustaví 17. listopadu; Studentská kandidátka zatím nenavrhla premiéra. Nic nenasvědčuje vládě pod Vučićovým vedením, odhad zůstává na spodní hranici.",
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
+            "p": 0.019,
+            "read_at": "2026-11-15T18:07:26Z"
+          }
         }
       ],
       "result": null
