@@ -834,7 +834,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -956,6 +956,28 @@
       "own_record": {
         "yes": 1,
         "no": 0
+      }
+    },
+    {
+      "id": "election-bloc-seat-threshold",
+      "description": "A named bloc or party wins at least a stated number of seats in official results of a state or regional election",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-16 morning run, from claims my-malacca-bn-15 and my-malacca-ph-15)",
+      "own_record": {
+        "yes": 1,
+        "no": 1
+      }
+    },
+    {
+      "id": "official-shortage-share-above-threshold",
+      "description": "An official daily share of fuel stations short of a product in a region reaches a stated threshold",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-16 morning run, from claim fr-fuel-grandest-15)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
       }
     }
   ]

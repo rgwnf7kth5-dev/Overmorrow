@@ -1,8 +1,8 @@
 {
   "_about": "Fitted by scripts/calibrate.mjs on resolved morning claims with five-forecaster records. Copy `params` into forecast.combination of every new claim while method is \"calibrated\"; the validator recomputes the probability from it. Do not edit by hand.",
-  "fitted_at": "2026-11-15T04:22:03Z",
-  "version": "2026-11-15",
-  "resolved": 424,
+  "fitted_at": "2026-11-16T04:02:54Z",
+  "version": "2026-11-16",
+  "resolved": 428,
   "thresholds": {
     "weighting": 120,
     "calibration": 50
@@ -12,8 +12,8 @@
     "platt": true
   },
   "gate": {
-    "weights": "off: chronological test 0.1423 against 0.1423 on 326 later claims",
-    "platt": "on: chronological test 0.1394 against 0.1423 on 326 later claims"
+    "weights": "off: chronological test 0.1429 against 0.1430 on 330 later claims",
+    "platt": "on: chronological test 0.1402 against 0.1430 on 330 later claims"
   },
   "params": {
     "method": "calibrated",
@@ -25,57 +25,57 @@
       "outsider": 1
     },
     "platt": {
-      "a": 0.2019,
-      "b": 1.3711
+      "a": 0.1911,
+      "b": 1.3736
     }
   },
   "forecasters": {
     "base-rate": {
-      "n": 424,
-      "brier": 0.14496634198113195
+      "n": 428,
+      "brier": 0.14569609579439238
     },
     "evidence": {
-      "n": 424,
-      "brier": 0.14527792216981142
+      "n": 428,
+      "brier": 0.14496340887850478
     },
     "adversarial": {
-      "n": 424,
-      "brier": 0.1484144127358491
+      "n": 428,
+      "brier": 0.14886801635514024
     },
     "anchor": {
-      "n": 424,
-      "brier": 0.14251520754716984
+      "n": 428,
+      "brier": 0.14283212149532715
     },
     "outsider": {
-      "n": 424,
-      "brier": 0.15822463915094356
+      "n": 428,
+      "brier": 0.16001553037383195
     }
   },
   "diagnostics": {
     "raw_ensemble": {
-      "brier": 0.1441,
-      "log": 0.4435
+      "brier": 0.1446,
+      "log": 0.4449
     },
     "published": {
-      "brier": 0.1423,
-      "log": 0.4355
+      "brier": 0.1429,
+      "log": 0.4372
     },
     "platt_leave_one_out": {
-      "brier": 0.1426,
-      "log": 0.4337
+      "brier": 0.1432,
+      "log": 0.4353
     },
     "chronological": {
       "weights": {
-        "n": 326,
+        "n": 330,
         "editions": 16,
-        "brier": 0.14225512272701443,
-        "reference": 0.14227232011404634
+        "brier": 0.14293940045633927,
+        "reference": 0.1429829123392348
       },
       "weights_and_platt": {
-        "n": 326,
+        "n": 330,
         "editions": 16,
-        "brier": 0.13937026878563832,
-        "reference": 0.14227232011404634
+        "brier": 0.14018808327811857,
+        "reference": 0.1429829123392348
       }
     }
   }
