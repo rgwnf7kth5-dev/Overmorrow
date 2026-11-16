@@ -38,6 +38,37 @@
       "note": "Space.com and SpaceNews ('SpaceX catches Starship upper stage', 14 Nov): the Ship was caught by the Starbase tower's chopstick arms on Sat 14 Nov at about 21:20 UTC (15:20 CST), before the 23:59 CST deadline; BBC also reports the catch.",
       "resolved_at": "2026-11-15T05:05:00+01:00",
       "held": true
+    },
+    {
+      "claim": "my-malacca-bn-15",
+      "outcome": "yes",
+      "evidence": "https://www.freemalaysiatoday.com/category/nation/2026/11/14/live-vote-counting-for-melaka-polls-begins",
+      "note": "SPR site carried no readable results, so from EC-announced results reported by FMT (\"OFFICIAL: BN-PN wins 24 seats in Melaka, PH 4\") and NST/Malay Mail: the BN–PN pact won 24 of the 28 seats in polling held on 14 Nov, meeting the 24-seat threshold.",
+      "resolved_at": "2026-11-16T05:01:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "my-malacca-ph-15",
+      "outcome": "no",
+      "evidence": "https://www.freemalaysiatoday.com/category/nation/2026/11/14/live-vote-counting-for-melaka-polls-begins",
+      "note": "SPR site carried no readable results, so from EC-announced results reported by FMT and The Edge (\"PH routed in Melaka, retains just four seats\"): Pakatan Harapan won 4 of 28 seats (DAP’s four urban seats), below the 5-seat threshold.",
+      "resolved_at": "2026-11-16T05:01:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "pope-corruption-15",
+      "outcome": "no",
+      "evidence": "https://www.vatican.va/content/leo-xiv/en/homilies/2026/documents/20261114-peru-messa-santacruzdesucchabamba.html",
+      "note": "None of the three 14 Nov texts on vatican.va (coronation rite in Chiclayo, Mass at Santa Cruz de Succhabamba, St Toribio prayer meeting in Zaña), in English or Spanish, contains a corrupt-/corrup-/corromp- word, and no Vatican News quote of such an off-script remark that day was found.",
+      "resolved_at": "2026-11-16T05:01:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "fr-fuel-grandest-15",
+      "outcome": "no",
+      "evidence": "https://www.prix-carburants.gouv.fr/disponibilites-carburants",
+      "note": "The official regional table shows Grand Est at 17% for 14 Nov at 17h (the only 14 Nov column), below the 23% threshold.",
+      "resolved_at": "2026-11-16T05:01:00+01:00"
     }
   ]
 }
