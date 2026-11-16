@@ -1,0 +1,181 @@
+{
+  "edition": "2026-11-18",
+  "frozen_at": "2026-11-16T12:31:00+01:00",
+  "revisions": [],
+  "checks": [
+    {
+      "claim": "ir-hormuz-18",
+      "at": "2026-11-16T12:28:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-16T12:23:30+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.49,
+          "reason_blind": "Visit reconfirmed for Tuesday (Muscat Daily, PhotoNews), so slip risk is low; precedent readouts (n=2) named the US track, but the agenda now centres on the bilateral Hormuz corridor while the US channel runs via Qatar and Pakistan.",
+          "at": "2026-11-16T12:23:45+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.49,
+          "p_held": 0.88,
+          "p_if_held": 0.56,
+          "reason": "Related markets only (an Iran–Oman agreement is a higher bar); the corridor understanding pulls readouts towards bilateral Hormuz language, though IRNA or Araghchi often tie Muscat talks to US conditions. Held slightly up on reconfirmation."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-16T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.43,
+          "reason_blind": "Baghaei/IRNA confirm the Muscat leg on Tue 17 Nov; with the US channel through Qatar and Hormuz the main agenda, readouts may stay generic. An explicit US-track mention is about a coin toss.",
+          "at": "2026-11-16T12:24:20+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.42,
+          "p_held": 0.9,
+          "p_if_held": 0.47,
+          "reason": "The two precedents (June, July) came under an active Iran–US MoU; Monday’s Iran–Oman corridor understanding makes Hormuz, not US diplomacy, the likely headline; Araghchi’s remarks in Muscat could still name the Qatari channel or Iran’s conditions."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-16T12:23:40+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.44,
+          "reason_blind": "Monday’s corridor understanding makes a bilateral, navigation-only readout likelier; US channel runs via Qatar; Omani wording is often generic; Muscat-time cut-off and the Pakistan leg add slip risk.",
+          "at": "2026-11-16T12:23:55+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.44,
+          "p_held": 0.88,
+          "p_if_held": 0.5,
+          "reason": "No matching market. Strongest NO case: Hormuz ratification dominates the readouts. Against it, six eligible sources and Araghchi’s habit of commenting on US conditions keep it near even if the visit takes place."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-16T12:24:30+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.42,
+          "p_held": 0.88,
+          "p_if_held": 0.48,
+          "reason": "Statistical anchor: 0.88 that the visit happens on 17 Nov × about 0.5 share of readouts naming the US track (precedents too few and from MoU periods); the corridor understanding makes a Hormuz-only readout more likely, 0.44 → 0.42. Polymarket Iran–Oman agreement markets need a concluded agreement by 30 Nov/31 Dec: a different event, not used."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-16T12:23:30+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.42,
+          "reason_blind": "Own search: a Tuesday Muscat meeting is likely, Hormuz looks like the main agenda, readouts often mention US messages or mediation; about a coin toss.",
+          "at": "2026-11-16T12:23:40+01:00",
+          "inputs": [
+            "own-research",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.46,
+          "p_held": 0.92,
+          "p_if_held": 0.5,
+          "reason": "Visit confirmed for Tuesday, agenda undisclosed; the corridor understanding makes Hormuz the headline but readouts may still mention US talks or Omani mediation. Markets give no direct signal."
+        }
+      ],
+      "combined": 0.4459,
+      "calibrated": 0.4731,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.1911,
+          "b": 1.3736
+        },
+        "version": "2026-11-16"
+      },
+      "spread": 0.07,
+      "disagreement": {
+        "cause": null,
+        "note": "Final spread 0.07. All five read the same new fact (Iran–Oman corridor understanding announced Monday) as moving p_if_held down slightly and p_held up slightly; no forecaster relied on a market."
+      },
+      "market_search": "markets.mjs search \"Iran Oman\" (anchor, 11:24Z): Iran–Oman Hormuz Agreement by 30 Nov Yes 0.075 (morning 0.08), by 31 Dec 0.22 (morning 0.195); related only, no market matches the claim.",
+      "market": null,
+      "decomposition": {
+        "morning": {
+          "p_held": 0.85,
+          "p_if_held": 0.6
+        },
+        "afternoon": {
+          "p_held": 0.89,
+          "p_if_held": 0.5
+        },
+        "factor": "both"
+      },
+      "red_team": {
+        "case_for_morning": "The visit is reconfirmed (p_held about 0.9); Oman is the main Iran–US channel and Muscat readouts usually mention messages or mediation; the Hormuz deal needs US acquiescence, so a statement linking the corridor to US talks is plausible. The effects roughly cancel.",
+        "case_for_larger": "The corridor understanding gives Tuesday a ready-made agenda with nothing to do with the US (ratification, traffic scheme, bilateral ties); with tankers hitting mines any US mention may be as an aggressor, which does not count; p_if_held about 0.45, overall about 0.40.",
+        "stronger": "The case for a larger drop, but it rests on the same fact the forecasters weighed; no claim sent back. The morning 0.51 stands for readers because the change (−3.7 points, −0.15 log-odds) is under the display threshold.",
+        "send_back": false
+      },
+      "sources": [
+        {
+          "title": "AnewZ: Tehran and Muscat near deal on Hormuz shipping rules amid tanker mine explosions (16 Nov 2026)",
+          "url": "https://anewz.tv/world/world-news/26760/iran-oman-near-agreement-on-hormuz-navigation/news"
+        },
+        {
+          "title": "PhotoNews Pakistan: Abbas Araqchi Oman visit set for Tuesday ministerial talks",
+          "url": "https://photonews.com.pk/abbas-araqchi-oman-visit-set-for-tuesday-ministerial-talks/"
+        },
+        {
+          "title": "Muscat Daily: Iranian FM to visit Muscat for talks (16 Nov 2026)",
+          "url": "https://www.muscatdaily.com/2026/11/16/iranian-fm-to-visit-muscat-for-talks/"
+        }
+      ]
+    }
+  ],
+  "added": [],
+  "meta": {
+    "unreachable": [
+      "https://www.muscatdaily.com/2026/11/16/iranian-fm-to-visit-muscat-for-talks/ (403)",
+      "https://censor.net (403)",
+      "https://www.cnbc.com (403)",
+      "https://www.timesofisrael.com (403)",
+      "https://iz.ru (403)",
+      "https://humenglish.com (403)",
+      "https://chinadailystar.com (403)"
+    ],
+    "not_recomputed": "Other claims: no material fact published after the morning freeze was found. Peskov’s Monday briefing (vz.ru, EADaily) said only that Putin is preparing for the APEC contacts and repeated the line on lasting peace, nothing on Ukraine in Shenzhen; Trump arrives in Manila on Monday as expected; no change found to the Knesset Speaker vote, Babiš’s or Pavel’s plans, Korzo Národní, the French strike day, Nvidia, US retail sales, UK jobs or the Commission forecast. No new event announced for 17 Nov merited a story."
+  }
+}
