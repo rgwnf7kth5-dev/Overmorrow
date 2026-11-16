@@ -3396,6 +3396,83 @@
             "read_at": "2026-11-11T18:28:04Z",
             "match": "partial: no 31 Jan rung; linear interpolation between 'formed by Dec 31' 0.375 and 'by Feb 28' 0.66; 'formed' approximates confidence vote"
           }
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.52,
+          "combined": 0.52,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.53,
+              "reason": "Class 2015-22: sworn in within 96 days in 4 of 6 cases (0.67), lower in deadlocks. UTJ has formed a negotiating team and Liberman has softened on the draft law, both upward. Polymarket interpolated to 31 Jan is about 0.56, but nothing is signed and no 61-seat majority without the Arab parties is shown.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.53,
+              "reason": "UTJ has formed a negotiating team, and talks are 'beyond preliminary' (JPost 16 Nov). Liberman concedes there will be no universal draft law. The Eisenkot bloc has a speaker majority with the Arab lists. Polymarket gives Netanyahu-next-out-before-2027 0.39. No deal yet, Rabbi Lando is hostile, and mutual vetoes remain.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.49,
+              "reason": "Against a rise: UTJ rules out religion-state compromise, Rabbi Lando does not endorse talks, and Eisenkot's mandate ends about 20 Dec; a failed mandate pushes past January. For: formal UTJ team, Liberman softened, Polymarket interpolates to about 0.56.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.55,
+              "reason": "Polymarket \"formed by Dec 31\" 0.45 (vol 66k) and \"by Feb 28\" 0.66 interpolate to ~0.56 for 31 Jan, up from 0.52. UTJ now has a formal negotiating team and Liberman softened on the draft; \"formed\" approximates the confidence vote.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.5,
+              "reason": "Market gives about 36% to no government formed; talks are advancing, but fragmented blocs and the deadline leave real risk of a second election.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+            "p": 0.56,
+            "read_at": "2026-11-16T18:14:05Z",
+            "note": "Partial match: no 31 Jan rung; linear interpolation between 'formed by Dec 31' 0.45 and 'by Feb 28' 0.66 (combined vol ~106k). Manifold 'elections result in government formation' by May 2027 0.68 (thin)."
+          },
+          "note": "Re-forecast after material news: on 16 Nov United Torah Judaism set up a formal negotiating team and called talks with Eisenkot's bloc 'beyond preliminary' (JPost); Liberman conceded there will be no universal draft law. No deal signed; Eisenkot's mandate runs to about early December.",
+          "note_cs": "Nová předpověď po podstatné zprávě: Sjednocený judaismus Tóry 16. listopadu sestavil vyjednávací tým a rozhovory s Eisenkotovým blokem označil za pokročilé (JPost); Liberman připustil, že plošný zákon o branné povinnosti nebude. Dohoda zatím podepsána není, Eisenkotův mandát trvá zhruba do začátku prosince."
         }
       ],
       "result": null
@@ -5107,6 +5184,83 @@
           "note": "Weekly re-forecast. Rubio told the NYT elections are 'ideally' in 2027 with no date; the US-backed sequence (new Supreme Court by mid-December, then a new CNE, then a declared vacancy opening a six-month window) makes a dated election by 31 January unlikely. Government-opposition talks resume on 11 November.",
           "note_cs": "Týdenní přepočet. Rubio deníku NYT řekl, že volby by se měly konat „ideálně“ v roce 2027, datum ale neuvedl; postup podporovaný USA (nový Nejvyšší soud do poloviny prosince, poté nová volební rada a vyhlášení uprázdnění úřadu, které otevře šestiměsíční lhůtu) činí stanovení data voleb do 31. ledna nepravděpodobným. Jednání vlády s opozicí pokračují 11. listopadu.",
           "market_note": "No matching market: Kalshi 'election called before 1 Jan' 0.04 and Polymarket 'scheduled by 31 Dec' 0.085 have earlier deadlines (read 2026-11-09T18:53Z)."
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.11,
+          "combined": 0.11,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.08,
+              "reason": "No reference class with an n. Post-crisis transitions usually rebuild institutions before dating a vote. The TSJ is due 11 Dec, the CNE is not yet on the talks agenda, and Figuera expects late 2027 or 2028. Polymarket (0.15 by Dec, 0.285 by Mar) looks loose.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.07,
+              "reason": "The fourth round of talks (13 to about 21 Nov) still has not taken up CNE renewal. The TSJ is due 11 Dec, then the CNE, then a vacancy declaration and calendar, all in 7 weeks. Opposition negotiator Figuera expects the vote in late 2027 or 2028. Polymarket's 0.15 (by 31 Dec) looks rich.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.09,
+              "reason": "Case against 0.09: Polymarket 'scheduled by 31 Dec' rose to 0.15 and Chavismo could pre-empt with a date. But the CNE is not yet on the talks agenda, TSJ judges come only on 11 Dec, and the opposition's negotiator expects a vote in late 2027–28.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.12,
+              "reason": "Kalshi \"call election before 1 Feb 2027\" 0.11 (direct deadline, negligible volume); Polymarket \"scheduled by 31 Dec\" 0.15 (thin), by 31 Mar 0.285. Shaded low: CNE renewal is not on the talks agenda; the opposition negotiator expects a vote in late 2027 or 2028.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.25,
+              "reason": "Polymarket prices a date by 31 Dec at 15% and by 31 Mar 2027 at 28.5%; 31 Jan lies between, nudged to the lower side.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": {
+            "source": "kalshi",
+            "kind": "exchange",
+            "url": "https://kalshi.com/markets/kxvenezuelaelectioncall",
+            "p": 0.11,
+            "read_at": "2026-11-16T18:13:30Z",
+            "note": "Direct deadline match ('before Feb 1, 2027') but volume ~$12; 'call' close to 'set a date'. Cross-check Polymarket 'scheduled by Dec 31' 0.15 (vol 173k, liq 4.4k, up from 0.085 on 9 Nov without matching news) and 'by Mar 31' 0.285 (vol 8k); interpolation ~0.19."
+          },
+          "note": "Weekly re-forecast: the fourth round of government–opposition talks (13 to about 21 Nov) still has no renewal of the electoral council on its agenda; new Supreme Court judges are due on 11 Dec; the opposition's negotiator expects a vote in late 2027 or 2028. Thin markets drifted up without news.",
+          "note_cs": "Týdenní přepočet: čtvrté kolo jednání vlády s opozicí (13. až asi 21. listopadu) stále nemá na programu obměnu volební rady; noví soudci Nejvyššího soudu mají být jmenováni 11. prosince; vyjednavačka opozice čeká volby koncem roku 2027 nebo v roce 2028. Málo likvidní trhy bez zpráv mírně stouply."
         }
       ],
       "result": null
@@ -9599,6 +9753,73 @@
           "market": null,
           "note": "The Korea Herald reported on 2 November that KHNP aims to select a new main construction contractor by July 2027, well after the 31 January deadline; the previous entry did not use this report.",
           "note_cs": "Korea Herald 2. listopadu uvedl, že KHNP chce nového hlavního dodavatele stavby vybrat do července 2027, tedy dlouho po termínu 31. ledna; předchozí záznam tuto zprávu nezohlednil."
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.07,
+          "combined": 0.065,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.05,
+              "reason": "Replacing a megaproject's main contractor within three months is rare. Every source gives KHNP's plan as a bidder briefing in Jan 2027 and a contract in July 2027. Yes needs a surprise direct award or a formal decision to self-perform, and neither has been signalled.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.05,
+              "reason": "Every source puts selection in July 2027, with only a bidder briefing in January. KHNP says the 2029 start is unchanged, so there is no rush. Havlíček visits Seoul in December. Yes needs a surprise direct award, a renewed Daewoo deal or a self-perform announcement, and none has been signalled.",
+              "inputs": [
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.05,
+              "reason": "Case for Yes: Seoul told KHNP to lead as main EPC, Havlíček visits Seoul in December, and a renewed Daewoo deal counts. But every source gives a bidder briefing in January and a contract by July 2027; 'considering' and tenders do not count.",
+              "inputs": [
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.06,
+              "reason": "No market. KHNP's own roadmap: bidder briefing Jan 2027, tender Apr, contract Jul 2027. Seoul told KHNP to 'lead as main EPC contractor', but that is not a self-perform announcement for civil works. Yes needs a surprise direct award or renewed Daewoo-Doosan deal.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.15,
+              "reason": "Outsider prior: naming a new main civil contractor or self-build within about 10 weeks is unlikely; the criterion excludes talks, candidates and tenders.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast: nothing new; KHNP's plan is still a bidder briefing in January 2027 and a contract in July 2027; EDU II warned KHNP on 11 Nov that it will hold it to the contract; Havlíček plans a trip to Seoul in December.",
+          "note_cs": "Týdenní přepočet: nic nového; KHNP dál plánuje setkání s uchazeči v lednu 2027 a smlouvu v červenci 2027; EDU II 11. listopadu KHNP upozornila, že bude trvat na smlouvě; Havlíček chce v prosinci do Soulu."
         }
       ]
     },
@@ -11221,6 +11442,83 @@
           "note": "Re-forecast after material news: on 13–14 Nov the White House announced the first Trump–Xi–Putin meeting in Shenzhen on 19 Nov on the APEC sidelines (agenda: nuclear arms control and the Iran war, not Ukraine), and Moscow named the same date; Beijing has not yet confirmed and still says it is 'in communication'. The main risk is a downgrade to a format that is not a separate three-way meeting.",
           "note_cs": "Nová prognóza po podstatné zprávě: Bílý dům 13.–14. listopadu oznámil první schůzku Trump–Si–Putin 19. listopadu v Šen-čenu na okraj summitu APEC (program: jaderné zbrojení a válka s Íránem, nikoli Ukrajina) a Moskva uvedla stejné datum; Peking ji zatím nepotvrdil a mluví jen o tom, že je „v kontaktu“. Hlavním rizikem je změna formátu na jiný než samostatnou schůzku tří lídrů.",
           "market_note": "Kalshi and Polymarket markets on the three leaders meeting or being seen together before 2027 (0.96–0.97) have a looser criterion (a photo or wider session counts) and a later deadline; not a match. A small Manifold market for a three-way meeting by 22 Nov stood at 0.78."
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.92,
+          "combined": 0.918,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.93,
+              "reason": "The White House, the Kremlin and China's MFA all now announce a trilateral summit on 19 Nov. Announced summits rarely slip (class 0.92 to 0.99), and Kalshi has 0.98 before 2027. The residual risk is a cancellation or a format that fails the 'separate three-way meeting' test.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.93,
+              "reason": "All three governments have now confirmed: China's MFA (Mao Ning, 16 Nov, DW) called it the 'first trilateral summit' in Shenzhen on Thu 19 Nov, after the White House and the Kremlin. That leaves three days. The remaining risk is a last-minute cancellation or a shift to a group-only format.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.93,
+              "reason": "Beijing's confirmation of a 'first trilateral summit' on 19 Nov removes the main risk behind 0.80. Remaining: a three-day cancellation window (Iran war, Ukraine escalation, travel) and a dilution to a format without a separate three-way session.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.93,
+              "reason": "All three governments now announce a \"first trilateral summit\" in Shenzhen on 19 Nov (China MFA via DW). Manifold \"three-way meeting by 22 Nov\" 0.94 matches best; Kalshi 0.98 and Polymarket 0.99 are looser. Residual risk: cancellation or a diluted format.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.85,
+              "reason": "China's foreign ministry confirmed the Shenzhen trilateral for 19 Nov; remaining risk is last-minute cancellation, or a format not counted as a separate three-way meeting.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": {
+            "source": "manifold",
+            "kind": "platform",
+            "url": "https://manifold.markets/Terminator2/will-trump-xi-and-putin-hold-a-thre",
+            "p": 0.94,
+            "read_at": "2026-11-16T18:14:23Z",
+            "note": "Close match: same three-way in-person criterion, deadline 22 Nov (earlier than 30 Nov); thin (vol ~2.8k mana). Kalshi 'meet together before Jan 1 2027' 0.98 (vol 75k) and Polymarket 'seen together before 2027' 0.99 (vol 186k) are looser."
+          },
+          "note": "Re-forecast after material news: on 16 Nov China's foreign ministry (Mao Ning) confirmed that Xi, Trump and Putin hold their first trilateral summit in Shenzhen on Thu 19 Nov (DW); all three governments have now announced it. Remaining risk: cancellation or a format without a separate three-way meeting.",
+          "note_cs": "Nová předpověď po podstatné zprávě: čínské ministerstvo zahraničí (Mao Ning) 16. listopadu potvrdilo, že Si Ťin-pching, Trump a Putin se ve čtvrtek 19. listopadu v Šen-čenu sejdou na prvním trojstranném summitu (DW); setkání tak ohlásily všechny tři vlády. Zbývá riziko zrušení nebo formátu bez samostatného trojstranného jednání."
         }
       ]
     },
@@ -11464,6 +11762,74 @@
           "note": "The palace said on 9 Nov that all five coalition party leaders formally committed to concessions in the budget talks; De Wever reports back to the King on 16 Nov.",
           "note_cs": "Královský palác 9. listopadu oznámil, že všech pět předsedů koaličních stran se formálně zavázalo k ústupkům v rozpočtových jednáních; De Wever podá králi zprávu 16. listopadu.",
           "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.32,
+          "combined": 0.323,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.3,
+              "reason": "About half of Belgian resignations held in abeyance end up accepted. Talks failed again on 15 Nov, and the King has given a time-limited one-week extension, with a report due 23 Nov. Kings often grant further extensions or a deal is patched, and only acceptance counts.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.32,
+              "reason": "Talks collapsed on 15 Nov, and De Wever reported to the King empty-handed (VRT). The King kept the resignation pending and gave one more week, to 23 Nov. A second failure makes acceptance a live option, though Belgian kings habitually extend, and a late deal or a provisional-twelfths muddle are both plausible.",
+              "inputs": [
+                "own-research",
+                "dossier"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.3,
+              "reason": "0.20 rested on the 9 Nov concessions pledge, which produced no deal; talks broke up 15 Nov and the King's patience is now time-limited to 23 Nov. Against: abeyance still counts as No, and Belgian palaces prefer repeated extensions to a year-end collapse.",
+              "inputs": [
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.3,
+              "reason": "No matching market; Polymarket \"snap election called by Dec 31\" 0.16 is a narrower outcome. About half of held Belgian resignations end up accepted. Talks failed again on 15 Nov and the King gave only one more week (to 23 Nov). Up from 0.20.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.4,
+              "reason": "The King held the resignation pending and gave one more week; compromise is plausible, but a repeat failure on 23 Nov would likely lead to acceptance before year-end.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast after material news: coalition talks broke up again on 15 Nov; on 16 Nov King Philippe kept De Wever's resignation in abeyance and gave him one more week, with a report due on 23 Nov (VRT). A second failure makes acceptance a real option; an extension or a late deal remain likelier.",
+          "note_cs": "Nová předpověď po podstatné zprávě: koaliční jednání 15. listopadu znovu ztroskotala; král Filip 16. listopadu De Weverovu demisi dál nepřijal a dal mu ještě týden, zprávu má podat 23. listopadu (VRT). Další neúspěch by přijetí demise reálně otevřel; pravděpodobnější zůstává prodloužení nebo pozdní dohoda."
         }
       ]
     },
@@ -11561,6 +11927,74 @@
           "market": null,
           "note": "New question. The cabinet approved the bill on 9 November. Government bills almost always pass once voted on, so timing decides: three readings and a committee stage in under five months, with the 2027 budget in December; the industry minister calls it a reserve tool that should not be needed soon, and no fast track has been signalled.",
           "note_cs": "Nová otázka. Vláda návrh schválila 9. listopadu. Vládní návrhy při hlasování téměř vždy projdou, rozhoduje tedy čas: tři čtení a projednání ve výborech za necelých pět měsíců, přičemž prosinec zabere rozpočet na rok 2027. Ministr průmyslu označuje novelu za záložní nástroj, který by neměl být brzy potřeba, a zrychlené projednání nebylo avizováno."
+        },
+        {
+          "at": "2026-11-16T19:55:00+01:00",
+          "p": 0.44,
+          "combined": 0.437,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:14:47Z",
+              "p": 0.42,
+              "reason": "Government bills pass once voted (95%), so timing decides it. HN reports a fast-track bid, but §90(2) succeeded for only 3 of 47 government bills this term, and two clubs can block it. The fallback is a December or January first reading, 60 days in committee, then readings in March; about 0.3 by 31 Mar.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:20:00Z",
+              "p": 0.45,
+              "reason": "HN (9 Nov) says Havlíček wants a fast-track passage by end-2026, which overturns the 'no fast track' premise. Two clubs could block it, but the normal route still fits by 31 Mar. Retail price rises (innogy, E.ON, PP) raise salience. Government bills essentially never fail, but December belongs to the budget.",
+              "inputs": [
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-16T18:14:31Z",
+              "p": 0.5,
+              "reason": "0.37 assumed no fast track; HN says Havlíček wants passage by end-2026 and rising tariffs add urgency. Against: two clubs can veto §90(2), December is crowded, and a first-reading approval is formally not a 'third reading', a wording trap.",
+              "inputs": [
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-16T18:15:32Z",
+              "p": 0.47,
+              "reason": "No market. Up from 0.37: HN (9 Nov) says Havlíček wants a fast-track reading by end-2026; January price rises add urgency. Two clubs can block §90(2), and the regular path is tight. Caveat: §90(2) passage happens in first reading, not a strict third reading.",
+              "inputs": [
+                "dossier",
+                "signals",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-16T19:30:00+01:00",
+              "p": 0.35,
+              "reason": "Fast-track needs no blocking by two clubs or 50 MPs, which the opposition can easily do; even the normal route to third reading by March is tight but possible.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast and material correction: Hospodářské noviny reported on 9 Nov (19:08) that Havlíček wants the bill through the Chamber in a fast-track reading by the end of 2026, contrary to the premise of the last entry; two clubs or 50 MPs can block the fast track. Suppliers announced January price rises (innogy, E.ON, Pražská plynárenská). Note: if the bill passes in first reading under §90(2), there is no separate third reading; the forecasters counted that route as YES and the criterion should be read that way.",
+          "note_cs": "Týdenní přepočet a podstatná oprava: Hospodářské noviny 9. listopadu (19:08) napsaly, že Havlíček chce novelu protlačit Sněmovnou ve zrychleném čtení do konce roku 2026, což odporuje předpokladu minulého záznamu; zrychlené čtení mohou zablokovat dva kluby nebo 50 poslanců. Dodavatelé ohlásili zdražení od ledna (innogy, E.ON, Pražská plynárenská). Pozn.: schválí-li Sněmovna novelu už v prvním čtení podle § 90 odst. 2, samostatné třetí čtení nebude; prognostici tuto cestu počítali jako ANO."
         }
       ]
     },

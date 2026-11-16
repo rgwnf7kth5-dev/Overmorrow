@@ -1,0 +1,2926 @@
+{
+ "edition": "2026-11-19",
+ "events_date": "2026-11-18",
+ "prepared_at": "2026-11-16T19:45:00+01:00",
+ "method_version": 6,
+ "number_expected": 28,
+ "candidates": 45,
+ "candidates_note": "10 proposed stories with 11 claims (3 interval: ant-ipo-price-19, uk-cpi-19, cz-diesel-19; 1 derived: ant-ipo-above-19) and 34 dropped entries, plus the EU Commission story (eu-quantum-19, eu-circular-19) proposed, forecast and then dropped (see dropped). Candidates from four sweeps (Czech; world and Europe; economy and newsroom planners; stories of the day), the forecast board and the running list. 18 Nov is thin: no Czech Chamber or cabinet sitting, no ČSÚ release, no EP plenary or Council, no elections anywhere (IFES); the big diplomatic events (Trump–Xi, the trilateral) fall on 19 Nov.",
+ "planned_lead": "ant-ipo (Anthropic prices the largest IPO on record: price per share, above the $70–78 range at 66%); alternative lead us-asia-trip (Trump's state visit to Manila before the Shenzhen summit). Czech lead: cz-nss-zdar (NSS ruling on the one-vote Senate complaint), with cz-fuel-cap and cz-uohs in the rail.",
+ "cz_note": "Three Czech stories: cz-nss-zdar (NSS rules on Černý's complaint; Klement's election stands, 76%), cz-fuel-cap (diesel cap for 19 Nov, interval 44.7–46.3 CZK/l), cz-uohs (at least five applicants for ÚOHS chair, 73%).",
+ "cz_shortfall": "Three Czech stories against the aim of eight. Wed 18 Nov follows the 17 Nov holiday: the Chamber has no plenary (next sitting 24 Nov), the cabinet meets on Thu 19 Nov, ČSÚ publishes nothing (next 20 Nov), no ČNB meeting, the Senate and Prague votes are on 19 Nov, and PM Babiš ends his Israel visit with a hospital visit and no announced signing. Remaining items (Prague council line-up, Constitutional Court routine rulings, wind) have no open outcome of weight.",
+ "economy": "Six stories with topic economy: ant-ipo (IPO price, interval; above range derived), uk-cpi (UK CPI October, interval), cz-fuel-cap (diesel cap, interval), id-bi (Bank Indonesia holds at 5.75%), fr-plfss (French Senate adopts the social security budget with ≥185 votes), tgt-results (Target adjusted EPS ≥ $2.12). us-permitting (Senate permitting reform) is economy-related and filed as economy.",
+ "easy_main": "No main claim at 90% or more either way (highest: id-bi-19 at 88%).",
+ "negative_main": "No main claim below 50% and no negative headline (lowest main claim: tgt-eps-19 at 53%). No story needs `awaited`. The Commission story was dropped rather than run as a non-event after MLex reported the Quantum Act delayed to 24 Nov.",
+ "reports_what_happens": "Every main claim is about an outcome on 18 Nov: Anthropic's IPO price, the US–Philippine joint document in Manila, the UK CPI figure, the NSS ruling, the diesel cap, the Senate cloture vote, Bank Indonesia's rate decision, the French Senate vote count, Target's EPS, the number of ÚOHS applicants.",
+ "running_note": "Stories of the day from BBC (incl. business), ČT24, Seznam Zprávy (read) with DW, Al Jazeera, ČTK, Novinky and Aktuálně as substitutes; Reuters World and Business (401), AP, FT, iROZHLAS (403) refused and the Guardian returned a bot check. 9 listed, 2 covered (us-asia-trip, cz-uohs); 7 not covered because nothing reportable happens in them on 18 Nov (diary lines).",
+ "running_shortfall": "2 running stories covered against running_min 6. The other seven have no reportable occurrence on Wed 18 Nov: Nvidia (results 17 Nov, no board step), Rwanda return hub (announced 16 Nov, pilot 2027), EU sanctions listings (adopted 16 Nov), Babiš in Israel (hospital visit, no signing announced), licence fees/EMFA (next step 26 Nov), Estonia border (1 Dec), Burnham/Brexit (summit 20 Nov). Per the publisher's rule of 16 Nov they go to the diary instead of manufactured claims.",
+ "running": [
+  {
+   "title": "Trump, Xi and Putin head for their first trilateral summit at APEC in Shenzhen (19 Nov); Trump in Manila on 18 Nov",
+   "title_cs": "Trump, Si a Putin míří na první trojstranný summit v Šen-čenu (19. listopadu); Trump 18. listopadu v Manile",
+   "lists": [
+    "ctk",
+    "novinky",
+    "aktualne",
+    "dw"
+   ],
+   "sources": [
+    "https://www.dw.com/en/china-says-xi-trump-putin-to-discuss-world-peace/a-79959570",
+    "https://www.ceskenoviny.cz/zpravy/putin-ohledne-ukrajiny-slevuje-rekl-trump/2902738"
+   ],
+   "next_step": "18 Nov: Trump's state visit to Manila (welcome 11:05, bilateral 11:30, lunch 12:30 Manila time), then flight to Shenzhen; the Trump–Xi lunch and the trilateral are on Thu 19 Nov (next edition).",
+   "status": "covered",
+   "story": "us-asia-trip"
+  },
+  {
+   "title": "Nvidia in turmoil after Jensen Huang's resignation; Trump backs 'Bring Jensen Back'",
+   "title_cs": "Nvidia v turbulencích po odchodu Jensena Huanga, Trump podporuje kampaň za jeho návrat",
+   "lists": [
+    "bbc",
+    "bbc-business",
+    "aljazeera",
+    "dw",
+    "ct24"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/cry49plv8v3go",
+    "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+   ],
+   "next_step": "Results on 17 Nov belong to edition 18 Nov; on 18 Nov only the share price reacts (excluded) and no board meeting or CEO decision is dated.",
+   "status": "not_covered",
+   "why": "Nothing reportable dated for 18 Nov: the Q3 results are on 17 Nov (previous edition), the share-price reaction is an excluded market price, and no board decision on the CEO is scheduled. Diary line."
+  },
+  {
+   "title": "Five EU countries to open a migrant 'return hub' in Rwanda",
+   "title_cs": "Pět zemí EU otevře ve Rwandě centrum pro navracení migrantů",
+   "lists": [
+    "bbc",
+    "dw",
+    "novinky",
+    "ct24"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/cw987343352go",
+    "https://www.dw.com/en/germany-eu-states-open-talks-on-rwanda-deportation-scheme/a-79959158"
+   ],
+   "next_step": "Announced 16 Nov in Vienna; pilot from 2027; no dated step.",
+   "status": "not_covered",
+   "why": "Announcement done on 16 Nov; no vote, signing or decision dated for 18 Nov. Diary only."
+  },
+  {
+   "title": "EU adds 145 names to Russia sanctions",
+   "title_cs": "EU přidala na sankční seznam proti Rusku 145 jmen",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/svet/ministri-zahranici-eu-schvalili-dalsi-protiruske-sankce-379659",
+    "https://www.ceskenoviny.cz/zpravy/ministri-eu-schvalili-dalsi-sankce-proti-rusku-na-seznam-pribylo-145-jmen-/2900980"
+   ],
+   "next_step": "Adopted 16 Nov; the 22nd package is not yet proposed formally.",
+   "status": "not_covered",
+   "why": "Decision taken on 16 Nov; no Council step on 18 Nov."
+  },
+  {
+   "title": "Czech PM Babiš in Israel for talks on air defence",
+   "title_cs": "Premiér Babiš v Izraeli jedná o protivzdušné obraně",
+   "lists": [
+    "ct24",
+    "ctk"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/svet/babis-zahajil-navstevu-izraele-bude-jednat-o-protivzdusne-obrane-379666",
+    "https://www.ceskenoviny.cz/zpravy/babis-zahajil-navstevu-izraele-s-netanjahuem-ma-jednat-o-obrane/2900513"
+   ],
+   "next_step": "18 Nov: visit to Ichilov hospital and return home; no signing, memorandum or press conference announced (ČT24, 16 Nov).",
+   "status": "not_covered",
+   "why": "Nothing reportable on 18 Nov: no agreement came from the Netanyahu meeting and none is announced; a 'Babiš says' claim is not allowed. Dossier work recorded in the diary note; diary line."
+  },
+  {
+   "title": "Klempíř wants the EU media freedom act debated before the licence-fee abolition",
+   "title_cs": "Klempíř chce nejprve projednat evropský akt o svobodě médií, až pak poplatky",
+   "lists": [
+    "ct24",
+    "ctk",
+    "novinky"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/domaci/klempir-chce-nejprve-probrat-evropsky-akt-o-svobode-medii-az-pak-poplatky-za-ct-a-cro-379662",
+    "https://www.ceskenoviny.cz/zpravy/klempir-jednani-o-financovani-ct-a-cro-ma-predchazet-diskuse-o-emfa/2902667"
+   ],
+   "next_step": "Next dated steps: media committee hearing 26 Nov, amendment deadline 27 Nov, Chamber 10 Dec; second reading early 2027.",
+   "status": "not_covered",
+   "why": "No Chamber sitting, committee or vote on 18 Nov; next step 26 Nov. Diary line."
+  },
+  {
+   "title": "Czech competition chief Mlsna to seek a new term despite losing his security clearance",
+   "title_cs": "Šéf ÚOHS Mlsna se přihlásí do výběrového řízení navzdory odebrané prověrce",
+   "lists": [
+    "ctk",
+    "novinky",
+    "aktualne"
+   ],
+   "sources": [
+    "https://www.ceskenoviny.cz/zpravy/petr-mlsna-se-prihlasi-do-vyberoveho-rizeni-na-predsedu-uohs-na-dalsi-obdobi/2902732"
+   ],
+   "next_step": "Applications close 18 Nov.",
+   "status": "covered",
+   "story": "cz-uohs"
+  },
+  {
+   "title": "Estonia to close all border crossings with Russia from 1 December",
+   "title_cs": "Estonsko od 1. prosince uzavře všechny hraniční přechody s Ruskem",
+   "lists": [
+    "ct24",
+    "seznam"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/svet/uzavreni-estonsko-ruske-hranice-bude-pro-narvu-bolestivou-ranou-mini-exstarostka-379664",
+    "https://www.seznamzpravy.cz/clanek/zahranicni-nikoho-to-nemuze-prekvapit-krajni-reseni-se-v-estonsku-stava-realitou-320725"
+   ],
+   "next_step": "Closure takes effect 1 Dec.",
+   "status": "not_covered",
+   "why": "Next dated step 1 Dec; nothing on 18 Nov."
+  },
+  {
+   "title": "Burnham says the UK lost more than it gained from Brexit, ahead of the UK–EU summit (20 Nov)",
+   "title_cs": "Burnham: Británie na brexitu víc ztratila, než získala; summit EU a Británie 20. listopadu",
+   "lists": [
+    "bbc",
+    "bbc-business"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/crp3e1n5kezpo"
+   ],
+   "next_step": "UK–EU summit Fri 20 Nov; on 18 Nov only PMQs.",
+   "status": "not_covered",
+   "why": "Summit falls on 20 Nov; 18 Nov offers only a repeat of known positions. Diary line."
+  }
+ ],
+ "diary": [
+  {
+   "date": "2026-11-19",
+   "text": "Trump–Xi lunch and the first Trump–Xi–Putin meeting in Shenzhen; Senate elects its President; Prague assembly elects the mayor; Czech cabinet (fuel caps)",
+   "text_cs": "Trumpův oběd se Si Ťin-pchingem a první setkání Trumpa, Si Ťin-pchinga a Putina v Šen-čenu; Senát volí předsedu; pražské zastupitelstvo volí primátora; vláda (stropy cen paliv)"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "Babiš ends his visit to Israel at the Ichilov hospital",
+   "text_cs": "Babiš končí návštěvu Izraele v nemocnici Ichilov"
+  },
+  {
+   "date": "2026-11-20",
+   "text": "UK–EU summit; BC Conservative cabinet sworn in",
+   "text_cs": "Summit EU a Británie; v Britské Kolumbii složí slib konzervativní vláda"
+  },
+  {
+   "date": "2026-11-24",
+   "text": "Commission to adopt the Quantum Act (MLex); Chamber sitting with the 2027 budget second reading and the refinery tax",
+   "text_cs": "Komise má přijmout akt o kvantových technologiích (MLex); schůze Sněmovny s druhým čtením rozpočtu na rok 2027 a daní pro rafinerie"
+  },
+  {
+   "date": "2026-11-26",
+   "text": "Media committee hearing on the licence-fee bill",
+   "text_cs": "Veřejné slyšení mediálního výboru k zákonu o zrušení poplatků"
+  },
+  {
+   "date": "2026-12-01",
+   "text": "Estonia closes its border crossings with Russia",
+   "text_cs": "Estonsko uzavře hraniční přechody s Ruskem"
+  }
+ ],
+ "unreachable": [
+  "reuters.com (401)",
+  "apnews.com, ft.com, irozhlas.cz, politico (403, exit 2)",
+  "theguardian.com (bot check)",
+  "psp.cz (exit 3)",
+  "hrad.cz (403)",
+  "vlada.gov.cz job listings (502)",
+  "bi.go.id (unreachable)",
+  "consilium.europa.eu (403)",
+  "commission.europa.eu College page (429)",
+  "euractiv.com, sciencebusiness.net (403)",
+  "timesofisrael.com (403/Cloudflare)",
+  "cnbc.com, benzinga, tipranks, fxstreet, itp.net (403)",
+  "pco.gov.ph, inquirer.net (403)",
+  "insideclimatenews, scmp, congress.gov, govtrack, iaea.org (403)",
+  "en.wikipedia.org (429)",
+  "MLex body (paywall; headline read)"
+ ],
+ "run": {
+  "started_at": "2026-11-16T18:38:00+01:00",
+  "finished_at": null,
+  "agents": 33,
+  "searches": 168,
+  "note": "Searches as reported by agents: agenda and stories-of-the-day sweeps 44, dossiers 50, board checks 18, evidence forecasters 23, outsiders 6, disagreement research 7, sequential shadow 7, board re-forecast 5, editor 1. Dossiers and agenda 94 (≤120); evidence reserve used 23 of 50; morning reserve 30 untouched. Agents: 4 sweeps, 6 dossier, 2 board checks, 10 forecasters (5 roles × 2 groups), 1 research, 2 shadow, 5 board forecasters, plus continuations by SendMessage not counted."
+ },
+ "note": "Evening desk round one, prepared 16 Nov 2026 18:38–about 20:30 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-16, Platt a 0.1911, b 1.3736; equal weights). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written and checked before the agents were sent the signals step (anchor: one step). The outsider-B final file was written empty at first and rewritten by the same agent with the figures it had reported at 18:07Z. Spread above 0.25 only on us-permit-19 (genuine; Monday's Senate vote result not yet posted). Research run for us-permit-19, us-manila-19, id-bi-19, fr-plfss-19, cz-uohs-19: no decisive fact. For the morning: check the Senate wrap-up of 16–17 Nov (substitute cloture result and the time of the bill's cloture vote), any announced US–Philippine signing, whether Anthropic filed a revised range, and whether the NSS confirms its 18 Nov date.",
+ "stories": [
+  {
+   "id": "ant-ipo",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 5,
+    "reach": 5,
+    "uncertainty": 3
+   },
+   "event_key": "ant-ipo-2026-11-18",
+   "case_key": "anthropic-ipo",
+   "event": "Anthropic is expected to price its US initial public offering of 825 million Class A shares on Wednesday 18 November after the US close, with Nasdaq trading under the ticker ANT due on 19 November. The filed range is $70–78 (up to $64.35bn, plus a $26bn private placement), and the book is reported to be about seven times covered. The FT reported that bankers expect to price above the range.",
+   "title_cs": "Anthropic stanoví cenu akcií při vstupu na burzu, zájem investorů převyšuje nabídku zhruba sedmkrát",
+   "sources": [
+    {
+     "title": "MLQ.ai: Anthropic's bankers weigh pricing its IPO above the $70 to $78 range (FT, CNBC, Bloomberg summary)",
+     "url": "https://mlq.ai/news/anthropics-bankers-weigh-pricing-its-ipo-above-the-70-to-78-range-lifting-its-valuation-to-15-trillion-or-more-ft-reports/"
+    },
+    {
+     "title": "Stocktwits/Yahoo Finance: Anthropic IPO reportedly oversubscribed 7 times",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-reportedly-oversubscribed-7-035659320.html"
+    },
+    {
+     "title": "Renaissance Capital: Anthropic sets terms for $61 billion IPO",
+     "url": "https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1.2-trillion-market-cap"
+    },
+    {
+     "title": "investingLive: Earnings week ahead (Anthropic prices Wednesday night)",
+     "url": "https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/"
+    }
+   ],
+   "rank": 1,
+   "claims": [
+    {
+     "id": "ant-ipo-price-19",
+     "label": "Anthropic IPO price",
+     "kind": "interval",
+     "quantity": "Anthropic IPO price per Class A share set on 18 Nov 2026",
+     "unit": "USD per share",
+     "text": "Anthropic prices its US initial public offering on Wednesday 18 November 2026 at … US dollars per share.",
+     "criterion": "The initial public offering price per Class A share (ticker ANT) set by Anthropic and its underwriters, as stated in Anthropic's pricing press release, a free-writing prospectus or the 424B4 on SEC EDGAR, or as reported by Bloomberg, Reuters, CNBC, WSJ or AP. Counts only if the pricing takes place by 23:59 ET on 18 Nov 2026; a pricing agreed on 18 Nov but published after midnight still counts. If the offering is priced on 19 Nov or later, postponed or withdrawn, the claim is scored as not held.",
+     "resolution_source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=anthropic ; Anthropic newsroom (anthropic.com/news) ; Bloomberg/Reuters/CNBC reports",
+     "schedule": "reported",
+     "slip_class": "company-event",
+     "publishes": "Anthropic press release / FWP Wed 18 Nov evening ET (about 01:00–04:00 CET Thu 19 Nov); 424B4 on EDGAR Thu 19 Nov",
+     "tz": "America/New_York",
+     "event_window": {
+      "start": "2026-11-18T00:00:00-05:00",
+      "end": "2026-11-18T23:59:00-05:00"
+     },
+     "evidence_at": "2026-11-19T08:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Cena akcií Anthropicu v IPO",
+      "text": "Anthropic ve středu 18. listopadu 2026 stanoví cenu akcií při své primární veřejné nabídce na … dolarů za akcii.",
+      "criterion": "Cena za jednu akcii třídy A (symbol ANT) v primární veřejné nabídce, kterou stanoví Anthropic a upisující banky, podle tiskové zprávy firmy, prospektu (FWP nebo 424B4) na SEC EDGAR, nebo podle zpráv Bloombergu, Reuters, CNBC, WSJ či AP. Počítá se jen tehdy, pokud cena bude stanovena do 23:59 newyorského času 18. listopadu 2026; cena dohodnutá 18. listopadu, ale zveřejněná po půlnoci se počítá. Pokud bude cena stanovena až 19. listopadu nebo později, případně nabídka odložena či zrušena, výrok se považuje za nekonaný."
+     },
+     "quantiles": {
+      "q10": 72.7,
+      "q50": 80.5,
+      "q90": 89.2
+     },
+     "scale": 4.0,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Interval claim; filed range $70–78 unchanged as of 12 Nov, reports point to pricing at or above the top.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:57:00Z",
+       "checked": [
+        "markets.mjs search \"Anthropic IPO price\"",
+        "markets.mjs search \"Anthropic IPO\"",
+        "markets.mjs search \"Anthropic valuation IPO\"",
+        "markets.mjs search \"Anthropic IPO priced above range\"",
+        "markets.mjs search \"What will Anthropic's IPO valuation be\""
+       ],
+       "note": "Polymarket price-per-share brackets exist but are untraded (vol $26–625, prices sum well above 1); valuation brackets ($1.25–1.5T 0.539, $1.5–1.75T 0.393, vol $75–129k) related but basis unclear; timing markets ~97% trading by 19 Nov. Details in signals file."
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/what-will-anthropics-ipo-valuation-be",
+       "p": 0.39,
+       "read_at": "2026-11-16T17:57:00Z",
+       "note": "Related only: P(IPO valuation $1.50–1.75T) = 0.393 (vol $129k, liq $4.8k); if fully diluted, $1.5T ≈ $83/share. Not the same quantity; no 18-Nov deadline. Price-per-share bracket market untraded."
+      },
+      "base_rate": null,
+      "consensus": {
+       "value": 80,
+       "source": "https://mlq.ai/news/anthropics-bankers-weigh-pricing-its-ipo-above-the-70-to-78-range-lifting-its-valuation-to-15-trillion-or-more-ft-reports/",
+       "note": "Midpoint of FT 10 Nov (banks expect above range, $1.5tn+ ≈ $83/share fully diluted, MLQ arithmetic) and Bloomberg 15 Nov ('targeting $1.4 trillion' ≈ $78 top of range, via https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-reportedly-oversubscribed-7-035659320.html). No published point estimate."
+      },
+      "scale": 4.0,
+      "scale_basis": "pooled",
+      "scale_url": "https://www.renaissancecapital.com/IPO-Center/News/113374/buy-now-trade-later-e-commerce-loan-platform-klarna-prices-ipo-above",
+      "scale_source": "Final price vs range midpoint in oversubscribed large tech IPOs: Arm +4.1%, Reddit +4.6%, Figma +6.5% (vs raised range), Klarna +11.1%, Circle ~+13% (vs raised range); sd ≈ 4%, RMS ≈ 8.5%; 5.4% of $74 ≈ $4. Sources: Renaissance (Klarna), Fortune (Figma) https://fortune.com/2025/07/31/figma-venture-backed-ipo-circle-coreweave-high-growth-software-listings/, Wolf Street (prices) https://wolfstreet.com/2025/12/29/ipo-bloodletting-after-the-pop-in-2025-venture-global-coreweave-figma-klarna-bullish-circle-internet-naven-firefly-fermi/ ; Arm/Reddit/Circle ranges not re-verified.",
+      "series": null,
+      "model_quantiles": {
+       "q10": 71.8,
+       "q50": 80.0,
+       "q90": 88.2,
+       "cmd": "node scripts/refdata/models.mjs quantiles 80 4 1.6"
+      },
+      "dossier": "data/dossiers/2026-11-19/ant-ipo-price-19.md",
+      "signals": "data/dossiers/2026-11-19/ant-ipo-price-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "q10": 72.5,
+        "q50": 80.0,
+        "q90": 89.0,
+        "reason": "Oversubscribed large tech IPOs priced at or above range top; valuation market ~40% for >=$1.5tn (~$83) supports $80 median. Timing markets ~97% for 19 Nov debut lift p_held.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.95,
+        "q_blind": {
+         "q10": 72.0,
+         "q50": 79.5,
+         "q90": 88.5
+        },
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "Oversubscribed large tech IPOs (Arm, Reddit, Klarna, Figma, Circle) all priced at top or above; Bloomberg $1.4tn target pulls toward $78. Company-event slip 0.006 raised for Thu/Fri debut reports.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "q10": 73.0,
+        "q50": 81.0,
+        "q90": 89.5,
+        "reason": "Book 6-7x, FT says banks expect above range; Polymarket valuation ~40% for >=$1.5tn (~$83). AI selloff and strategic placement temper. Markets ~97% on 19 Nov debut, so pricing 18 Nov likely.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 72.0,
+         "q50": 80.5,
+         "q90": 88.5
+        },
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "Book 6-7x covered, FT: bankers weigh higher range/pricing above $78; but AI selloff (Nasdaq -11%, Nvidia -32%) and strategic placement at IPO price cap upside. No range raise reported by 16 Nov midday ET.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "q10": 73.0,
+        "q50": 80.5,
+        "q90": 89.5,
+        "reason": "Markets put ~97% on a 19 Nov debut, so Wednesday pricing is likely; valuation market gives ~39% for $1.5tn+ (about $83). Bloomberg's $1.4tn target and upsizing keep $78 a strong mass point.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.95,
+        "q_blind": {
+         "q10": 72.5,
+         "q50": 79.5,
+         "q90": 89.0
+        },
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Bloomberg 15 Nov still says $1.4tn = $78 top; upsizing may replace a price raise; FT says above range. Stocktwits 'Thursday or Friday' debut and $64bn size raise the risk of Thursday pricing.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "q10": 73.0,
+        "q50": 81.0,
+        "q90": 89.5,
+        "reason": "Model Normal(80,4) widened 1.6. Nudged up $1: ~7x book, FT says above range; valuation market ~40% on $1.5T+ (~$83). Per-share Polymarket untraded/incoherent, ignored. Timing markets ~97% priced 18 Nov.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "model",
+         "detail": "node scripts/refdata/models.mjs quantiles 80 4 1.6"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "q10": 72,
+        "q50": 80,
+        "q90": 88.5,
+        "reason": "Markets put ~96% on trading from 19 Nov (pricing 18 Nov). Price market incoherent; valuation market implies ~40% for >=$83. Range 70-78, oversubscribed.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 72,
+         "q50": 80,
+         "q90": 88.5
+        },
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "Range 70-78, multiple times oversubscribed, banks weighing above range; price likely 78-84. Pricing usually evening before listing; some risk it lands 19 Nov or slips.",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "spread_q50": 1.0,
+      "width_scales": 4.12,
+      "centre_offset_scales": 0.12,
+      "decomposition": {
+       "p_held": 0.95,
+       "note": "interval claim: p_held is the geometric mean of the base-rate and adversarial figures"
+      }
+     }
+    },
+    {
+     "id": "ant-ipo-above-19",
+     "label": "Anthropic IPO above $78",
+     "derived": {
+      "from": "ant-ipo-price-19",
+      "event": ">",
+      "x": 78
+     },
+     "text": "Anthropic prices its IPO above $78 per share, the top of its filed range, by 23:59 ET on Wednesday 18 November 2026.",
+     "criterion": "YES if the initial public offering price per Class A share (ticker ANT), set by 23:59 ET on 18 Nov 2026 and stated in Anthropic's pricing press release, a free-writing prospectus or the 424B4 on SEC EDGAR, or reported by Bloomberg, Reuters, CNBC, WSJ or AP, is above $78.00. NO if the price is $78.00 or lower, or if the offering is not priced by 23:59 ET on 18 Nov 2026 (pricing on 19 Nov or later, postponement, withdrawal). A pricing agreed on 18 Nov but published after midnight still counts.",
+     "resolution_source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=anthropic ; Anthropic newsroom ; Bloomberg/Reuters/CNBC reports",
+     "schedule": "reported",
+     "slip_class": "company-event",
+     "publishes": "Anthropic press release / FWP Wed 18 Nov evening ET (about 01:00–04:00 CET Thu 19 Nov); 424B4 on EDGAR Thu 19 Nov",
+     "tz": "America/New_York",
+     "event_window": {
+      "start": "2026-11-18T00:00:00-05:00",
+      "end": "2026-11-18T23:59:00-05:00"
+     },
+     "evidence_at": "2026-11-19T08:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Anthropic nad 78 dolarů",
+      "text": "Anthropic do 23:59 newyorského času ve středu 18. listopadu 2026 stanoví cenu akcií ve své primární veřejné nabídce nad 78 dolarů, tedy nad horní hranicí ohlášeného rozpětí.",
+      "criterion": "ANO, pokud cena za akcii třídy A (symbol ANT) v primární veřejné nabídce, stanovená do 23:59 newyorského času 18. listopadu 2026 a uvedená v tiskové zprávě firmy, prospektu (FWP nebo 424B4) na SEC EDGAR nebo ve zprávách Bloombergu, Reuters, CNBC, WSJ či AP, bude vyšší než 78,00 dolaru. NE, pokud bude 78,00 dolaru nebo nižší, nebo pokud cena nebude stanovena do 23:59 newyorského času 18. listopadu 2026 (stanovení 19. listopadu či později, odklad, zrušení). Cena dohodnutá 18. listopadu, ale zveřejněná po půlnoci se počítá."
+     },
+     "forecast": {
+      "baseline": {
+       "status_quo": "no",
+       "why": "Filed range tops at $78 with no revision on file as of 12 Nov; YES requires lifting the price above the filed range (FT reported banks expect this).",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:57:00Z",
+       "checked": [
+        "markets.mjs search \"Anthropic IPO price\"",
+        "markets.mjs search \"Anthropic IPO\"",
+        "markets.mjs search \"Anthropic valuation IPO\"",
+        "markets.mjs search \"Anthropic IPO priced above range\""
+       ],
+       "note": "No direct above-range market; price brackets untraded and incoherent; valuation brackets related only. See signals file."
+      },
+      "market": null,
+      "base_rate": null,
+      "release": {
+       "consensus": 80,
+       "threshold": 78,
+       "scale": 4.0,
+       "source": "Derived from ant-ipo-price-19 (FT 10 Nov via MLQ; Bloomberg 15 Nov via Yahoo/Stocktwits); scale pooled from large-IPO price vs range"
+      },
+      "dossier": "data/dossiers/2026-11-19/ant-ipo-above-19.md",
+      "signals": "data/dossiers/2026-11-19/ant-ipo-above-19.signals.md",
+      "derived_p": 0.6594,
+      "note": "Derived from ant-ipo-price-19 (derive 72.7 80.5 89.2 > 78). The interval does not include the chance that pricing slips to 19 Nov (p_held about 0.94 in ant-ipo-price-19); a slip resolves this claim NO."
+     },
+     "probability": 0.66
+    }
+   ]
+  },
+  {
+   "id": "us-asia-trip",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "event_key": "us-asia-trip-2026-11-18",
+   "case_key": "trump-asia-apec-2026",
+   "event": "Donald Trump makes a state visit to Manila on Wednesday 18 November: welcome ceremony with President Ferdinand Marcos Jr. at Malacañang at 11:05, bilateral meeting and state lunch, then flies to Shenzhen for the APEC summit. US officials promised 'commercial deals and strategic investments'; the Pax Silica AI-hub framework will not be signed, per the US ambassador. Trump meets Xi Jinping and then Xi and Vladimir Putin in Shenzhen on Thursday 19 November.",
+   "title_cs": "Trump na státní návštěvě Manily jedná s Marcosem, pak odlétá na APEC do Šen-čenu",
+   "sources": [
+    {
+     "title": "White House schedule 16-19 Nov (Mace News via TradingView)",
+     "url": "https://www.tradingview.com/news/macenews:d0687f60a094b:0-monday-thursday-white-house-schedule-president-trump-attends-asean-meeting-in-manila-and-then-to-apec-meeting-in-shenzhen-china/"
+    },
+    {
+     "title": "AP via PBS: Southeast Asian leaders open annual summit",
+     "url": "https://www.pbs.org/newshour/world/southeast-asian-leaders-open-annual-summit-with-major-conflicts-and-their-impact-topping-the-agenda"
+    },
+    {
+     "title": "ABC News: Trump to meet with Putin and Xi in China",
+     "url": "https://abcnews.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914"
+    },
+    {
+     "title": "GMA: DFA chief mum on Pax Silica deal signing",
+     "url": "https://www.gmanetwork.com/news/topstories/nation/1009698/dfa-chief-mum-on-pax-silica-deal-signing-during-trump-s-ph-visit/story/"
+    }
+   ],
+   "rank": 2,
+   "claims": [
+    {
+     "id": "us-manila-19",
+     "label": "US–Philippines joint statement or signed agreement",
+     "text": "During Donald Trump's state visit to Manila on Wednesday 18 November 2026, the US and Philippine governments issue a joint leaders' statement (or joint fact sheet) or sign at least one bilateral government-to-government agreement or memorandum.",
+     "criterion": "YES if, by 23:59 Manila time (UTC+8) on 18 Nov 2026, (a) a joint statement / joint fact sheet / joint declaration of Presidents Trump and Marcos (or of the two governments) on the visit is published by the White House, the Presidential Communications Office, the DFA or the US Embassy Manila, or (b) officials of the two governments sign any bilateral agreement, memorandum of understanding, framework or arrangement during the visit, as reported by the White House, PCO/PNA, AP, Reuters, Inquirer, Philstar, GMA or ABS-CBN. Unilateral fact sheets, readouts, speeches, one-sided statements, company-to-company deals and documents signed on 17 Nov do not count. A document signed/issued on 18 Nov but published later still counts. NO if none of this happens by 23:59 Manila time on 18 Nov 2026, including if the visit is cancelled or postponed.",
+     "resolution_source": "https://www.whitehouse.gov/briefings-statements/ ; https://pco.gov.ph/news_releases/ ; https://ph.usembassy.gov/",
+     "schedule": "official",
+     "slip_class": "summit-or-visit",
+     "publishes": "White House / PCO same day; welcome 11:05 Manila (04:05 CET), lunch 12:30 (05:30 CET); reports by ~10:00 CET 18 Nov",
+     "tz": "Asia/Manila",
+     "event_window": {
+      "start": "2026-11-18T08:00:00+08:00",
+      "end": "2026-11-18T23:59:00+08:00"
+     },
+     "evidence_at": "2026-11-19T00:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Společné prohlášení nebo dohoda USA–Filipíny",
+      "text": "Během státní návštěvy Donalda Trumpa v Manile ve středu 18. listopadu 2026 vydají vlády USA a Filipín společné prohlášení prezidentů (nebo společný přehled výsledků) nebo podepíší alespoň jednu bilaterální mezivládní dohodu či memorandum.",
+      "criterion": "ANO, pokud do 23:59 manilského času (UTC+8) 18. 11. 2026 (a) Bílý dům, filipínský Prezidentský komunikační úřad (PCO), filipínské ministerstvo zahraničí nebo velvyslanectví USA v Manile zveřejní společné prohlášení / společný přehled / společnou deklaraci prezidentů Trumpa a Marcose (nebo obou vlád) k návštěvě, nebo (b) představitelé obou vlád během návštěvy podepíší jakoukoli bilaterální dohodu, memorandum o porozumění, rámec či ujednání, jak uvede Bílý dům, PCO/PNA, AP, Reuters, Inquirer, Philstar, GMA nebo ABS-CBN. Jednostranné přehledy, shrnutí jednání, projevy, prohlášení jen jedné strany, dohody mezi firmami a dokumenty podepsané 17. 11. se nepočítají. Dokument podepsaný/vydaný 18. 11., ale zveřejněný později, se počítá. NE, pokud se nic z toho do 23:59 manilského času 18. 11. 2026 nestane, včetně zrušení či odložení návštěvy."
+     },
+     "probability": 0.7,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "The visit itself is near-certain (WH schedule), but no official source has announced a joint statement or a signing; Pax Silica signing ruled out by the US ambassador and DTI; Philippine editorial expects 'a joint statement with warm wording'; Trump's past Asia bilaterals mixed (~2/5 produced joint documents on the day).",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:55:00Z",
+       "checked": [
+        "markets.mjs search \"Trump Marcos\"",
+        "markets.mjs search \"Trump Philippines\"",
+        "markets.mjs search \"Philippines Pax Silica\""
+       ],
+       "note": "No market on the Manila visit outcomes. Related: Polymarket 'Will Trump meet with Xi Jinping by November 30, 2026?' Yes 0.995 (board question us-cn-trump-xi-apec)."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-19/us-manila-19.md",
+      "signals": "data/dossiers/2026-11-19/us-manila-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "p": 0.55,
+        "reason": "Trump Asia bilaterals ~2/5 joint documents same day; state visit and broad any-MOU criterion raise it; short visit, Pax Silica ruled out. No market.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.98,
+        "p_if_held": 0.56,
+        "p_blind": 0.55,
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "Trump Asia bilaterals ~2/5 joint documents same day; state visits with alliance reaffirmation and broad 'any MOU' criterion raise it; short visit, Pax Silica ruled out, outputs often unilateral.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "p": 0.72,
+        "reason": "State visit with bilateral; AP expects renewed alliance commitment, US promises deals; Trump Asia visits usually yield signed MOUs/joint statements. Pax Silica off, DFA noncommittal, short stop.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.72,
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "State visits by Trump in Asia routinely yield signed MOUs/frameworks or joint statements; tariff talks (12.5% rate) on agenda. But Pax Silica signing uncertain/off, DFA non-committal, short visit, Thai doc signed separately on 17th.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "p": 0.5,
+        "reason": "No market. Nothing joint announced, Pax Silica ruled out, 90-minute programme, outputs may be unilateral or company deals; state visit, tariff order and broad criterion argue for yes.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.98,
+        "p_if_held": 0.51,
+        "p_blind": 0.5,
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Nothing joint announced; Pax Silica ruled out; 90-minute programme; outputs may be unilateral fact sheets or company deals. Against: state visit, pending tariff order, broad criterion (any government MOU).",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.55,
+        "reason": "No market. Trump Asia bilaterals ~2/5 joint documents same day, but state visit to treaty ally with promised deals; any G2G MOU counts. Pax Silica excluded; company deals don't count.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "stub baseline: Trump past Asia bilaterals ~2/5 joint docs; slip.mjs summit-or-visit 0.009"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "p": 0.75,
+        "reason": "No markets on it; state visit plus Pax Silica talk makes a signing or joint statement likely, 18 Nov timing is the risk.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.75,
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "State visit around ASEAN; US-Philippine visits typically produce MOUs or joint statement, but timing on 18 Nov specifically uncertain.",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.62,
+      "calibrated": 0.703,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.25,
+      "decomposition": {
+       "p_held": 0.98,
+       "p_if_held": 0.714,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-16T18:12Z",
+       "question": "Has either government announced a joint statement, a signing ceremony or specific agreements for the 18 Nov Trump–Marcos bilateral meeting?",
+       "finding": "No announcement found. On 16 Nov, DFA Secretary Lazaro declined to say whether anything (e.g. the Pax Silica framework) would be signed ('we'll wait for that day'). Trade Secretary Roque said tariffs (12.5% now, Manila wants 10%) will be discussed on 18 Nov but 'I cannot disclose it now… wait for November 18'. BCDA/DTI earlier said there was no date for the Pax Silica signing, only 'before end-2026'. No PCO/White House notice of a joint statement or fact sheet was found.",
+       "sources": [
+        "https://www.gmanetwork.com/news/topstories/nation/1009698/dfa-chief-mum-on-pax-silica-deal-signing-during-trump-s-ph-visit/story/",
+        "https://www.pna.gov.ph/article/roque-hopeful-for-lower-exports-tariff-after-ph-us-bilateral-talks",
+        "https://www.pna.gov.ph/article/pbbm-to-hold-bilateral-meetings-with-trump-4-world-leaders"
+       ],
+       "decisive": false
+      },
+      "shadow": {
+       "sequential": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T19:12:30+01:00",
+        "p_blind": 0.62,
+        "p": 0.62,
+        "steps": 8,
+        "searches": 4,
+        "trace": "data/dossiers/2026-11-19/us-manila-19.belief.json"
+       }
+      },
+      "disagreement": null,
+      "spread_note": "Spread 0.25 (above 0.15, not above 0.25): research step run, no decisive fact found, spread kept; evidence mixed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "uk-cpi",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "event_key": "uk-cpi-2026-11-18",
+   "case_key": "uk-inflation",
+   "event": "The Office for National Statistics publishes UK consumer price inflation for October 2026 at 07:00 London time (08:00 CET) on Wednesday 18 November. September's rate was 3.5%, the highest since October 2025, driven by motor fuels. The calendar consensus is 3.6%, while Deutsche Bank and the Bank of England's November projection point to 3.7–3.8% after a higher Ofgem price cap and pump prices. The figure feeds the BoE's 17 December decision after its November hike.",
+   "title_cs": "Britská inflace v říjnu: ONS zveřejní, jak silně ji zvedly ceny energií",
+   "sources": [
+    {
+     "title": "GOV.UK: Consumer price inflation, UK: October 2026 (release announcement)",
+     "url": "https://www.gov.uk/government/statistics/announcements/consumer-price-inflation-uk-october-2026"
+    },
+    {
+     "title": "ONS: Consumer price inflation, UK: September 2026",
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/september2026"
+    },
+    {
+     "title": "investingLive: Market outlook for the week of 16th-20th November",
+     "url": "https://investinglive.com/forex/market-outlook-for-the-week-of-16th-20th-november/"
+    },
+    {
+     "title": "BM Magazine: UK inflation forecast to hit 3.8 per cent",
+     "url": "https://bmmagazine.co.uk/news/uk-inflation-forecast-october-youth-unemployment/"
+    }
+   ],
+   "rank": 3,
+   "claims": [
+    {
+     "id": "uk-cpi-19",
+     "label": "UK CPI October y/y",
+     "kind": "interval",
+     "quantity": "UK CPI 12-month rate, October 2026, ONS first release",
+     "unit": "%",
+     "text": "The ONS release of Wed 18 Nov 2026 puts the UK CPI 12-month rate for October 2026 at … per cent.",
+     "criterion": "Value = the CPI 12-month rate (all items, UK) for October 2026, to one decimal, as first published by the Office for National Statistics on 18 Nov 2026 (Consumer price inflation, UK: October 2026). Later revisions do not count. Void if the release does not take place on 18 Nov 2026 (UK time); pending if published but not yet readable.",
+     "resolution_source": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026 ; https://www.ons.gov.uk/economy/inflationandpriceindices",
+     "schedule": "official",
+     "slip_class": "stats-release",
+     "publishes": "ONS, 18 Nov 2026 07:00 GMT (08:00 CET)",
+     "tz": "Europe/London",
+     "event_window": {
+      "start": "2026-11-18T00:00:00+00:00",
+      "end": "2026-11-18T23:59:00+00:00"
+     },
+     "evidence_at": "2026-11-18T07:00:00+00:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Britská inflace v říjnu",
+      "text": "Britský statistický úřad ONS ve středu 18. listopadu 2026 zveřejní, že spotřebitelské ceny (CPI) ve Spojeném království v říjnu 2026 meziročně vzrostly o … procenta.",
+      "criterion": "Hodnota = meziroční míra inflace CPI (všechny položky, Spojené království) za říjen 2026 na jedno desetinné místo, jak ji poprvé zveřejní Office for National Statistics 18. 11. 2026 (Consumer price inflation, UK: October 2026). Pozdější revize se nepočítají. Neplatné, pokud zveřejnění 18. 11. 2026 (britského času) neproběhne; čeká se, pokud je zveřejněno, ale zatím nečitelné."
+     },
+     "quantiles": {
+      "q10": 3.396,
+      "q50": 3.672,
+      "q90": 3.942
+     },
+     "scale": 0.13,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Interval claim: consensus 3.6% (+0.1 pp on September); BoE projection 3.73% and Deutsche Bank 3.8% above it, one nowcast (Scanalytics) at 3.4%.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:56:00Z",
+       "checked": [
+        "markets.mjs search UK CPI October",
+        "markets.mjs search UK inflation",
+        "markets.mjs search October Inflation UK Annual",
+        "markets.mjs search Bank of England inflation November"
+       ],
+       "note": "Polymarket 'October Inflation UK - Annual' bracket market: 3.4–3.6 at 0.36, 3.7–3.9 at 0.62, others ~0.01 or less; thin (vol ~$9k top bracket). Bracket market, not a single-point probability; details in signals file."
+      },
+      "market": {
+       "source": "polymarket",
+       "kind": "exchange",
+       "url": "https://polymarket.com/event/october-inflation-uk-annual-2026",
+       "p": 0.62,
+       "read_at": "2026-11-16T17:54:48Z",
+       "note": "p = price of the 3.7–3.9% bracket (3.4–3.6% at 0.36). Same quantity; thin liquidity; settlement rules not read."
+      },
+      "base_rate": null,
+      "consensus": {
+       "value": 3.6,
+       "source": "https://investinglive.com/forex/market-outlook-for-the-week-of-16th-20th-november/",
+       "note": "Same 3.6 on forexfundamentals.com calendar; no Reuters/Bloomberg poll median found. Deutsche Bank 3.8, BoE Nov MPR 3.73, Scanalytics nowcast 3.4. Core consensus 2.8."
+      },
+      "scale": 0.13,
+      "scale_basis": "published",
+      "scale_url": "https://forexfundamentals.com/economic-calendar/uk-cpi/2026-10-21",
+      "scale_source": "RMS of first print minus forecast over 11 UK CPI releases on forexfundamentals.com (Oct 2025–Oct 2026, Dec/Jan missing) = 0.113; pooled cross-check 0.1 x 1.407 = 0.14; taken 0.13. No UK CPI key in series.json.",
+      "series": null,
+      "model_quantiles": {
+       "q10": 3.33,
+       "q50": 3.6,
+       "q90": 3.87,
+       "cmd": "node scripts/refdata/models.mjs quantiles 3.6 0.13 1.6"
+      },
+      "dossier": "data/dossiers/2026-11-19/uk-cpi-19.md",
+      "signals": "data/dossiers/2026-11-19/uk-cpi-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "q10": 3.38,
+        "q50": 3.65,
+        "q90": 3.93,
+        "reason": "Consensus 3.6; BoE 3.73, DB 3.8 and thin Polymarket (62% on 3.7-3.9) skew up, recent misses skew down; median nudged 0.05 above consensus (within 0.5 scale).",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.997,
+        "q_blind": {
+         "q10": 3.35,
+         "q50": 3.62,
+         "q90": 3.9
+        },
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "Consensus 3.6 hits exactly 6/11, misses skewed down, but BoE 3.73 and DB 3.8 skew up; centred slightly above consensus, width 4.2 scales. Stats-release slip 0.003.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "q10": 3.35,
+        "q50": 3.65,
+        "q90": 3.92,
+        "reason": "Consensus 3.6; BoE 3.73, DB 3.8, Nomura petrol +4.5%, gas cap up; Scanalytics 3.4; thin Polymarket 62% on 3.7-3.9. Slight upward tilt within 0.5 scale of consensus.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 3.35,
+         "q50": 3.62,
+         "q90": 3.9
+        },
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "Consensus 3.6; gas cap +8% and pumps +3.1% push up, offset by high Oct-2025 base (+0.4% m/m). DB 3.8, BoE 3.73, Scanalytics 3.4. Slight upward tilt.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "q10": 3.4,
+        "q50": 3.66,
+        "q90": 3.94,
+        "reason": "Thin Polymarket puts 62% on 3.7-3.9 and 36% on 3.4-3.6, in line with BoE 3.73 and DB 3.8; calendar consensus 3.6, nowcast 3.4 and downside record of misses hold the median near 3.65.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.995,
+        "q_blind": {
+         "q10": 3.38,
+         "q50": 3.62,
+         "q90": 3.92
+        },
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Consensus 3.6; BoE 3.73 and DB 3.8 pull up, nowcast 3.4 and the downside record of misses (3 of 11 by -0.2) pull down; base effect needs +0.5% m/m.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "q10": 3.43,
+        "q50": 3.7,
+        "q90": 3.97,
+        "reason": "Polymarket same-quantity brackets: 3.7–3.9 at 0.62, 3.4–3.6 at 0.36, implying ~3.7; thin volume. Consensus 3.6 but BoE 3.73, DB 3.8 back market; q50 3.7 is documented departure.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "market",
+         "detail": "https://polymarket.com/event/october-inflation-uk-annual-2026"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "q10": 3.42,
+        "q50": 3.7,
+        "q90": 3.95,
+        "reason": "Polymarket puts 62% on 3.7-3.9 vs 36% on 3.4-3.6; BoE 3.73, DB 3.8. q50 moved >0.5 scale above 3.6 consensus for that documented reason.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 3.38,
+         "q50": 3.65,
+         "q90": 3.92
+        },
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "Consensus 3.6; BoE 3.73 and DB 3.8 lean higher, nowcast 3.4 lower; slight upward tilt.",
+        "inputs_blind": [
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "spread_q50": 0.05,
+      "width_scales": 4.2,
+      "centre_offset_scales": 0.55,
+      "decomposition": {
+       "p_held": 0.996,
+       "note": "interval claim: p_held is the geometric mean of the base-rate and adversarial figures"
+      },
+      "consensus_note": "The mean of the five central figures (3.67) sits 0.55 scales above the 3.6 consensus (investingLive, forexfundamentals). Documented reasons: the Bank of England's November Monetary Policy Report projects 3.73% for October and Deutsche Bank forecasts 3.8% (both in the dossier); a thin Polymarket bracket market leans the same way. Against: the Scanalytics nowcast (3.4) and three downside misses of 0.2 in the last 11 releases. Kept, not trimmed to the band."
+     }
+    }
+   ]
+  },
+  {
+   "id": "cz-nss-zdar",
+   "scope": "cz",
+   "topic": "law",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "event_key": "cz-nss-zdar-2026-11-18",
+   "case_key": "cz-senate-election-2026",
+   "event": "The NSS election senate is due to rule on Wednesday 18 Nov on the last complaint against the 2026 Senate elections, Vol 11/2026. ODS candidate Radek Černý missed the runoff in district 51 (Žďár nad Sázavou) by one vote (11,372 to 11,373) to Josef Klement (KDU-ČSL), who then won the seat. The court ordered the ballot papers from 26 precincts to be recounted; no interim result has been published. The legal deadline is 19 Nov.",
+   "title_cs": "NSS rozhodne o stížnosti Radka Černého na senátní volby na Žďársku",
+   "sources": [
+    {
+     "title": "NSS: Volebnímu senátu zbývá k projednání poslední z návrhů (11. 11. 2026)",
+     "url": "https://www.nssoud.cz/aktualne/tiskove-zpravy/detail/volebnimu-senatu-zbyva-k-projednani-posledni-z-navrhu"
+    },
+    {
+     "title": "ČTK: NSS obdržel 16 stížností k senátním volbám, rozhodnout musí do 19. listopadu",
+     "url": "https://www.ceskenoviny.cz/zpravy/2895136"
+    },
+    {
+     "title": "Seznam Zprávy/ČTK: Kandidát do Senátu neprošel o jediný hlas, podá návrh na neplatnost voleb",
+     "url": "https://www.seznamzpravy.cz/clanek/318225"
+    }
+   ],
+   "rank": 4,
+   "claims": [
+    {
+     "id": "cz-nss-zdar-19",
+     "label": "NSS leaves Klement's election standing",
+     "text": "On Wednesday 18 November 2026 the Supreme Administrative Court decides Radek Černý's complaint Vol 11/2026 (Senate district 51, Žďár nad Sázavou) without declaring any vote, election or candidate's election invalid, so Josef Klement remains senator.",
+     "criterion": "YES if, between 00:00 and 23:59 Prague time on 18 Nov 2026, the NSS election senate issues its decision in case Vol 11/2026 and that decision dismisses (zamítá) or rejects (odmítá) the complaint, or otherwise ends the case without declaring the vote (hlasování), the election (volby) or the election of a candidate (volba kandidáta) in district 51 invalid. Evidence: the NSS press release or official notice board (úřední deska, register mark Vol), or reports by ČTK, ČT24 or another national outlet. NO if the NSS declares any of these invalid (in whole or in part), or if it issues no decision in Vol 11/2026 by 23:59 Prague time on 18 Nov 2026. A decision dated 19 Nov is NO.",
+     "resolution_source": "https://www.nssoud.cz/aktualne/tiskove-zpravy ; https://www.nssoud.cz (úřední deska, Vol) ; https://www.ceskenoviny.cz",
+     "schedule": "official",
+     "slip_class": "cz-court-ruling",
+     "publishes": "NSS press release on 18 Nov (hour not announced), followed by ČTK reports",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-11-18T00:00:00+01:00",
+      "end": "2026-11-18T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-18T18:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "NSS ponechá Klementovo zvolení v platnosti",
+      "text": "Nejvyšší správní soud ve středu 18. listopadu 2026 rozhodne o stížnosti Radka Černého Vol 11/2026 (senátní obvod č. 51 Žďár nad Sázavou), aniž by prohlásil za neplatné hlasování, volby nebo volbu kandidáta. Senátorem tak zůstane Josef Klement.",
+      "criterion": "ANO, pokud volební senát NSS mezi 00:00 a 23:59 pražského času 18. 11. 2026 vydá rozhodnutí ve věci Vol 11/2026, kterým stížnost zamítne nebo odmítne, případně řízení jinak skončí, aniž by prohlásil za neplatné hlasování, volby nebo volbu kandidáta v obvodu č. 51. Zdrojem je tisková zpráva NSS nebo jeho úřední deska (rejstříková značka Vol), případně zpravodajství ČTK, ČT24 či jiného celostátního média. NE, pokud NSS cokoli z toho zcela nebo zčásti prohlásí za neplatné, nebo pokud ve věci Vol 11/2026 nerozhodne do 23:59 pražského času 18. 11. 2026. Rozhodnutí s datem 19. listopadu znamená NE."
+     },
+     "probability": 0.76,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Klement was declared elected; the NSS has not upheld any Senate complaint since 2016, and in narrow-margin recounts (Prostějov 2018) it kept the result. A ruling is announced for 18 Nov. Against this: the margin is one vote and the court is recounting 26 precincts.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:55:00Z",
+       "checked": [
+        "markets.mjs search \"Czech Senate election court\"",
+        "markets.mjs search \"Czech Senate Zdar\"",
+        "markets.mjs search \"UOHS Mlsna\""
+       ],
+       "note": "No relevant market; only an unrelated Prague mayor market."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "NSS Senate election complaints upheld (annulment) per election cycle since 2004",
+       "rate": 0.18,
+       "n": 11,
+       "source": "About 2 annulments (Praha 11 2004, Most 2016) in about 11 cycles; none in 2012, 2018, 2020 or 2022 (novinky 313685, ct24 106597, advokatnidenik 2018/2022, ct24 43549). The per-complaint rate is well under 5 %. Recount cases changed the outcome in about 1 of 6 (Kupka 2017 changed the result; Prostějov 2018, Rokycany 2018, Šumpersko 2012, Šojdrová 2024 and Blansko 2021 did not)."
+      },
+      "dossier": "data/dossiers/2026-11-19/cz-nss-zdar-19.md",
+      "signals": "data/dossiers/2026-11-19/cz-nss-zdar-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:30Z",
+        "p": 0.62,
+        "reason": "Court-set date, slip 0.09, deadline 19 Nov slack. Annulments rare (~2/11 cycles), recounts flip ~1/6, but one-vote margin over 26 recounted precincts makes reversal far likelier than usual. Signals: no market or model.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.88,
+        "p_if_held": 0.71,
+        "p_blind": 0.62,
+        "at_blind": "2026-11-16T18:02:07Z",
+        "reason_blind": "Court-set date, slip 0.09, deadline 19 Nov slack. Annulments rare (~2/11 cycles), recounts flip ~1/6, but one-vote margin over 26 recounted precincts makes reversal far likelier than usual.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:25:00Z",
+        "p": 0.62,
+        "reason": "NSS set decision for 18 Nov (deadline 19th). One-vote margin and a 26-precinct recount: any net shift of ≥1 toward Černý means tie/flip and likely annulment. Precedents mostly dismissed but none this tight. No market.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.62,
+        "at_blind": "2026-11-16T18:10:00Z",
+        "reason_blind": "NSS says decision due 18 Nov (deadline 19th). Margin is one vote and 26 precincts were recounted, so a tie/flip leading to annulment of Klement's election is a real risk (~1/3), well above usual base rates.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:22.210Z",
+        "p": 0.64,
+        "reason": "One-vote margin with 26 precincts recounted: any net +1 for Cerny flips second place, and recounts often find small errors. A flip may also need more time, pushing to deadline 19 Nov = NO. No market signal.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.89,
+        "p_if_held": 0.72,
+        "p_blind": 0.64,
+        "at_blind": "2026-11-16T18:02:11Z",
+        "reason_blind": "One-vote margin with 26 precincts recounted: any net +1 for Cerny flips second place, and recounts often find small errors. A flip may also need more time, pushing to deadline 19 Nov = NO.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.7,
+        "reason": "No market. Ruling announced for 18 Nov (cz-court-ruling slip 0.09; 19 Nov deadline allows a late decision). One-vote margin with a 26-precinct recount gives above-base annulment risk, about 0.2.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "slip.mjs cz-court-ruling 0.090; recount outcome changed in ~1/6 cases, raised for the 1-vote margin -> 0.91 x 0.78"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T19:10:00Z",
+        "p": 0.75,
+        "reason": "Signals found nothing; NSS rarely upholds complaints, but one-vote margin and recount add flip risk.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.75,
+        "at_blind": "2026-11-16T19:00:00Z",
+        "reason_blind": "NSS rarely upholds Senate complaints; but one-vote margin and 26-precinct recount add flip risk; ruling announced for 18 Nov, deadline 19 Nov.",
+        "inputs_blind": [
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.668,
+      "calibrated": 0.76,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.13,
+      "decomposition": {
+       "p_held": 0.885,
+       "p_if_held": 0.859,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "shadow_note": "Sequential researcher run for us-permit-19 and us-manila-19 (widest spreads in the 20–80% band); fr-plfss-19 (third widest) skipped to keep the search budget."
+     }
+    }
+   ]
+  },
+  {
+   "id": "cz-fuel-cap",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "event_key": "cz-fuel-cap-2026-11-18",
+   "case_key": "cz-fuel-price-cap",
+   "event": "The Finance Ministry sets daily maximum retail prices of petrol and diesel under government regulation 203/2026 Sb., valid to 30 November. The cap for 17–18 Nov rose 35 haléř to CZK 45.73 per litre of diesel, the first rise after eleven falls; petrol stays at 40.50. Diesel futures fell about 5% on 16 Nov. The cabinet must decide within days whether the caps and the cut diesel excise continue into December; it next meets on 19 Nov.",
+   "title_cs": "Ministerstvo financí stanoví maximální ceny paliv na čtvrtek",
+   "sources": [
+    {
+     "title": "MF: Cenový věstník 125/2026 (maximální ceny 17.–18. 11.)",
+     "url": "https://mf.gov.cz/assets/attachments/2026-11-16_Cenovy-vestnik-125-2026.pdf"
+    },
+    {
+     "title": "ČTK: Listopadový pokles maximálních cen paliv skončil, nafta v úterý zdraží",
+     "url": "https://www.ceskenoviny.cz/zpravy/listopadovy-pokles-maximalnich-cen-paliv-skoncil-nafta-v-utery-zdrazi/2902681"
+    },
+    {
+     "title": "Seznam Zprávy: Stropy na ceny paliv budou platit i v listopadu",
+     "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-stropy-na-ceny-paliv-budou-platit-i-v-listopadu-318807"
+    }
+   ],
+   "rank": 5,
+   "claims": [
+    {
+     "id": "cz-diesel-19",
+     "label": "Diesel price cap from Thursday",
+     "text": "The maximum price of diesel that the Czech Finance Ministry publishes on Wednesday 18 November 2026, valid from Thursday 19 November, is … CZK per litre.",
+     "criterion": "The diesel (\"b) nafty\") figure in the Finance Ministry's Cenový věstník issued on 18 Nov 2026 (the cap valid from 19 Nov, whatever end date it gives), in CZK per litre including VAT (mf.gov.cz, or as reported by ČTK). Void if no věstník with fuel caps is issued on 18 Nov 2026.",
+     "resolution_source": "https://mf.gov.cz/cs/kontrola-a-regulace/cenova-regulace-a-kontrola/cenovy-vestnik/2026 ; https://www.ceskenoviny.cz",
+     "schedule": "official",
+     "slip_class": "other-scheduled",
+     "publishes": "Finance Ministry, Cenový věstník, early afternoon of Wed 18 Nov (recent věstníky 14:04–14:33 CET); ČTK shortly after",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-11-18T00:00:00+01:00",
+      "end": "2026-11-18T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-18T15:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Maximální cena nafty od čtvrtka",
+      "text": "Maximální cena nafty, kterou ministerstvo financí zveřejní ve středu 18. listopadu 2026 s platností od čtvrtka 19. listopadu, bude … Kč za litr.",
+      "criterion": "Údaj pro motorovou naftu („b) nafty“) v Cenovém věstníku ministerstva financí vydaném 18. 11. 2026 (cena platná od 19. 11., bez ohledu na uvedené konečné datum) v Kč za litr včetně DPH (mf.gov.cz nebo ČTK). Neplatí, pokud 18. 11. 2026 nevyjde věstník s cenami pohonných hmot."
+     },
+     "kind": "interval",
+     "quantity": "Maximum retail price of diesel (B7) valid from 19 Nov 2026, set in the Cenový věstník of 18 Nov",
+     "unit": "CZK/l incl. VAT",
+     "dossier": "data/dossiers/2026-11-19/cz-diesel-19.md",
+     "signals": "data/dossiers/2026-11-19/cz-diesel-19.signals.md",
+     "quantiles": {
+      "q10": 44.726,
+      "q50": 45.494,
+      "q90": 46.284
+     },
+     "scale": 0.37,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Interval claim: persistence gives 45.73 (cap for 17–18 Nov, věstník 125); diesel futures fell about 5% and Brent 2.7% on 16 Nov, which should pull the 3-day averages down, while the lagging wholesale indices were still rising.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:54:14Z",
+       "checked": [
+        "markets.mjs search Czech diesel",
+        "markets.mjs search Czech fuel price cap"
+       ],
+       "note": "Polymarket only, Czech mayor and EURO 2028 questions; nothing on Czech fuel caps."
+      },
+      "market": null,
+      "base_rate": null,
+      "consensus": {
+       "value": 45.5,
+       "source": "https://mf.gov.cz/assets/attachments/2026-11-16_Cenovy-vestnik-125-2026.pdf",
+       "note": "No analyst forecast exists. Persistence 45.73 (věstník 125) minus 0.23 for the documented 16 Nov fall of diesel futures (ULSD −5%, Brent −2.7%, crown slightly weaker) entering the 3-day averages: Platts proxy −0.2 to −0.6 CZK/l, wholesale indices partly following; own arithmetic, see dossier."
+      },
+      "scale": 0.37,
+      "scale_basis": "published",
+      "scale_url": "https://mf.gov.cz/cs/kontrola-a-regulace/cenova-regulace-a-kontrola/cenovy-vestnik/2026",
+      "scale_source": "sd of the 32 changes between consecutive published daily diesel caps 1 Oct–17 Nov 2026 (MF Cenový věstník 91–125) 0.361 CZK; last 15 sd 0.395 (own arithmetic; full list in the dossier). One step. series.mjs keys cz-diesel-max-* have n=0.",
+      "series": null,
+      "model_quantiles": {
+       "q10": 44.74,
+       "q50": 45.5,
+       "q90": 46.26,
+       "cmd": "node scripts/refdata/models.mjs quantiles 45.50 0.37 1.6"
+      },
+      "dossier": "data/dossiers/2026-11-19/cz-diesel-19.md",
+      "signals": "data/dossiers/2026-11-19/cz-diesel-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:30Z",
+        "q10": 44.72,
+        "q50": 45.5,
+        "q90": 46.28,
+        "reason": "Consensus 45.50 (persistence minus futures drop); scale 0.37 sd of daily steps; slightly wider than 4.1 scale for two-quote-day window shift after holiday. Věstník every working day since 1 Oct. Signals: no market or model.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.98,
+        "q_blind": {
+         "q10": 44.72,
+         "q50": 45.5,
+         "q90": 46.28
+        },
+        "at_blind": "2026-11-16T18:02:07Z",
+        "reason_blind": "Consensus 45.50 (persistence minus futures drop); scale 0.37 sd of daily steps; slightly wider than 4.1 scale for two-quote-day window shift after holiday. Věstník every working day since 1 Oct.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:25:00Z",
+        "q10": 44.65,
+        "q50": 45.45,
+        "q90": 46.25,
+        "reason": "Cap 45.73 for 17–18 Nov. Cap = (mean of four 3-day indices + 2.50) × 1.21. The 16 Nov ULSD −5% pulls Platts down 0.2–0.6, while lagging wholesale indices may still rise. Centre slightly below the 45.50 consensus; width ≥4.1×0.37.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 44.65,
+         "q50": 45.45,
+         "q90": 46.25
+        },
+        "at_blind": "2026-11-16T18:10:00Z",
+        "reason_blind": "Caps set for two-day blocks from 3-day moving average of wholesale prices plus 2.50 margin; 45.73 for 17–18 Nov. 16 Nov futures fall feeds the average, pulling slightly down; one-step sd ~0.37.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:22.210Z",
+        "q10": 44.74,
+        "q50": 45.52,
+        "q90": 46.3,
+        "reason": "Futures fell 5% on 16 Nov, pulling Platts average down, but lagging wholesale indices may still rise and window after holiday is uncertain; 17 Nov quotes unknown. Vestnik issued every working day. No market signal.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.96,
+        "q_blind": {
+         "q10": 44.74,
+         "q50": 45.52,
+         "q90": 46.3
+        },
+        "at_blind": "2026-11-16T18:02:11Z",
+        "reason_blind": "Futures fell 5% on 16 Nov, pulling Platts average down, but lagging wholesale indices may still rise and window after holiday is uncertain; 17 Nov quotes unknown. Vestnik issued every working day.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "q10": 44.74,
+        "q50": 45.5,
+        "q90": 46.27,
+        "reason": "No market. Model quantiles around the stub consensus of 45.50 (persistence 45.73 minus the 16 Nov futures drop), scale 0.37, widened 1.6x. Width 1.53 meets the 4.1x scale rule.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "model",
+         "detail": "models.mjs quantiles 45.50 0.37 1.6 -> 44.74/45.50/46.26"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T19:10:00Z",
+        "q10": 44.78,
+        "q50": 45.5,
+        "q90": 46.32,
+        "reason": "Signals found nothing; persistence 45.73 less 16 Nov futures fall, consensus 45.50.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "q_blind": {
+         "q10": 44.78,
+         "q50": 45.5,
+         "q90": 46.32
+        },
+        "at_blind": "2026-11-16T19:00:00Z",
+        "reason_blind": "Persistence 45.73 less fall in diesel futures on 16 Nov; consensus 45.50; moderate day-to-day volatility with wide tails.",
+        "inputs_blind": [
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "spread_q50": 0.07,
+      "width_scales": 4.21,
+      "centre_offset_scales": -0.02,
+      "decomposition": {
+       "p_held": 0.97,
+       "note": "interval claim: p_held is the geometric mean of the base-rate and adversarial figures"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "us-permitting",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "event_key": "us-permitting-2026-11-18",
+   "case_key": "us-permitting-reform",
+   "event": "The US Senate is moving the bipartisan permitting-reform bill (Bipartisan American Affordability and Jobs Act, vehicle H.R.2347) by Capito, Lee, Whitehouse and Heinrich. Cloture on the motion to proceed was invoked 73-25 on 9 Nov; on Monday 16 Nov the Senate votes on cloture on the Capito substitute, and cloture already filed on the bill itself ripens on Wednesday 18 Nov under Senate rules; 60 votes are needed. Trump backs the bill; environmental groups and some Democrats oppose it.",
+   "title_cs": "Americký Senát má rozhodnout o ukončení rozpravy k reformě povolovacích řízení",
+   "sources": [
+    {
+     "title": "Senate Democrats: Schedule for Monday, November 16, 2026",
+     "url": "https://www.democrats.senate.gov/2026/11/12/schedule-for-monday-november-16-2026"
+    },
+    {
+     "title": "Senate Daily Press: Monday, November 16, 2026",
+     "url": "https://www.dailypress.senate.gov/monday-november-16-2026/"
+    },
+    {
+     "title": "Bommarito Consulting: BAAJA Senate votes",
+     "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/"
+    },
+    {
+     "title": "Energy News Beat: 73–25",
+     "url": "https://energynewsbeat.co/regulations/73-25-the-senate-moves-to-build-faster-your-power-bill-will-have-to-wait/"
+    }
+   ],
+   "rank": 6,
+   "claims": [
+    {
+     "id": "us-permit-19",
+     "label": "Senate invokes cloture on permitting bill",
+     "text": "By 23:59 ET on Wednesday 18 November 2026 the US Senate invokes cloture on H.R.2347, the legislative vehicle for the Bipartisan American Affordability and Jobs Act (permitting reform), i.e. on the bill itself.",
+     "criterion": "YES if, by 23:59 ET on 18 Nov 2026, the Senate records a roll-call vote in which the motion to invoke cloture on H.R.2347 (Cal. #453) itself — not on the Capito substitute #6883 and not on the motion to proceed — is agreed to, as shown on senate.gov roll-call votes, the Senate Democrats floor wrap-up or the Senate Daily/Periodical Press Gallery; also YES if the Senate passes H.R.2347 by that time without a separate cloture vote. NO if the cloture vote on the bill fails, or if it has not been held (and the bill not passed) by 23:59 ET on 18 Nov 2026.",
+     "resolution_source": "https://www.democrats.senate.gov/floor ; https://www.senate.gov/legislative/votes_new.htm ; https://www.dailypress.senate.gov/",
+     "schedule": "reported",
+     "slip_class": "other-scheduled",
+     "publishes": "Senate floor wrap-up same evening ET (≈01:00–05:00 CET 19 Nov); roll call on senate.gov within hours",
+     "tz": "America/New_York",
+     "event_window": {
+      "start": "2026-11-17T00:00:00-05:00",
+      "end": "2026-11-18T23:59:00-05:00"
+     },
+     "evidence_at": "2026-11-19T06:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Senát ukončí rozpravu k povolovacímu zákonu",
+      "text": "Americký Senát do 23:59 východoamerického času ve středu 18. listopadu 2026 odhlasuje ukončení rozpravy (cloture) k samotnému zákonu H.R.2347, legislativnímu nosiči reformy povolovacích řízení (Bipartisan American Affordability and Jobs Act).",
+      "criterion": "ANO, pokud Senát do 23:59 ET 18. 11. 2026 v jmenovitém hlasování schválí návrh na ukončení rozpravy (cloture) k samotnému zákonu H.R.2347 (Cal. #453) — nikoli k pozměňovacímu návrhu Capitové #6883 ani k návrhu na zahájení projednávání — podle senate.gov, přehledu jednání Senátu (democrats.senate.gov) nebo tiskové galerie Senátu; ANO také, pokud Senát do té doby H.R.2347 schválí bez samostatného hlasování o cloture. NE, pokud hlasování o cloture k zákonu neprojde nebo se do 23:59 ET 18. 11. 2026 nekoná (a zákon není schválen)."
+     },
+     "probability": 0.68,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Cloture on the bill was filed 11 Nov; under Rule XXII it follows the substitute (cloture vote Mon 16 Nov 17:30 ET + up to 30 h), which puts it on Wednesday; the coalition cleared 60 by 13 on 9 Nov. Main risk is timing slipping to Thursday by consent agreement. Monday's substitute-cloture result was not yet known at writing.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:55:00Z",
+       "checked": [
+        "markets.mjs search \"permitting reform Senate\"",
+        "markets.mjs search \"Senate permitting bill pass\"",
+        "markets.mjs search \"permitting reform law 2026\"",
+        "markets.mjs search \"SPEED Act permitting\""
+       ],
+       "note": "No relevant market found."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-19/us-permit-19.md",
+      "signals": "data/dossiers/2026-11-19/us-permit-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "p": 0.63,
+        "reason": "MTP cloture 73-25 makes bill cloture likely if voted; Wednesday is derived from Rule XXII, Thursday slip via consent deal is the main risk. No market.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.69,
+        "p_if_held": 0.92,
+        "p_blind": 0.63,
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "MTP cloture 73-25 makes bill cloture likely if voted; Rule XXII timing points to Wednesday but other-scheduled slip 0.079 understates derived-date risk of a Thursday consent deal; substitute vote outcome unknown.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "p": 0.55,
+        "reason": "Monday substitute cloture result not yet posted (checked 18:05Z). 30h post-cloture puts bill cloture ~Wed unless UC; slip to Thu plausible. 73-25 MTP margin strong; no market.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.55,
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "Capito-substitute cloture vote Mon 17:30 ET not yet held at research time (13:00 ET). Bill cloture filed 11 Nov, ripens after substitute disposed; 30h post-cloture puts it ~Wed unless UC or opponents drag to Thu. 73-25 MTP margin strong; some Dems wavering.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "p": 0.65,
+        "reason": "No market. Wednesday is derived, not announced; a consent deal could move the vote to Thursday or vitiate cloture; Monday's substitute result unknown. A 73-vote coalition makes the outcome itself likely.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.7,
+        "p_if_held": 0.93,
+        "p_blind": 0.65,
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Wednesday is derived, not announced; consent deal could vitiate cloture or move votes to Thursday; Monday substitute cloture unknown (not posted at 18:02Z). Coalition of 73 makes the outcome itself likely.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data",
+         "own-research"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.74,
+        "reason": "No market. MTP cloture 73-25 shows 60+ votes; bill cloture ripens Wed. Main risk timing slip to Thursday by consent/time agreement (other-scheduled slip 8%, raised for Senate floor fluidity).",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "node scripts/refdata/slip.mjs other-scheduled (0.079)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "p": 0.4,
+        "reason": "No markets or forecasts found; procedural sequencing and Senate slippage keep it below even.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.4,
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "Bipartisan bill advanced with vote after midterms; cloture on bill itself (after substitute steps) by Wed uncertain; Senate scheduling slips often.",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.598,
+      "calibrated": 0.677,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.34,
+      "decomposition": {
+       "p_held": 0.695,
+       "p_if_held": 0.978,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-16T18:12Z",
+       "question": "Has a unanimous-consent agreement set the timing of the cloture vote on H.R.2347 itself (Wed vs Thu)? What was the result of Monday's ~17:30 ET cloture vote on Capito substitute #6883?",
+       "finding": "No UC agreement on the timing of the bill-cloture vote has been posted: the Senate Daily Press page for Mon 16 Nov (published 14:46Z) and the Democrats' Monday schedule list only the 17:30 ET votes (Domenico confirmation, then cloture on substitute #6883), with cloture on H.R.2347 shown only as 'filed'. The substitute cloture vote had not yet been held at the time of reading (13:12 ET), so its result is unknown. Check the 16 Nov wrap-up after ~19:00 ET (01:00 CET).",
+       "sources": [
+        "https://www.dailypress.senate.gov/monday-november-16-2026/",
+        "https://www.democrats.senate.gov/2026/11/12/schedule-for-monday-november-16-2026",
+        "https://www.democrats.senate.gov/floor",
+        "https://www.democrats.senate.gov/2026/11/12/wrap-up-for-thursday-november-12-2026"
+       ],
+       "decisive": false
+      },
+      "shadow": {
+       "sequential": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T19:12:00+01:00",
+        "p_blind": 0.4,
+        "p": 0.4,
+        "steps": 8,
+        "searches": 3,
+        "trace": "data/dossiers/2026-11-19/us-permit-19.belief.json"
+       }
+      },
+      "disagreement": {
+       "cause": "genuine",
+       "note": "Spread 0.40–0.74. All five read the same schedule facts: cloture on H.R.2347 was filed on 11 Nov and ripens after the vote on the Capito substitute (Mon 16 Nov, about 17:30 ET; result not posted when the forecasters worked) and up to 30 hours of post-cloture debate; no consent agreement sets the time. They differ on how likely a Wednesday vote is against a Thursday one, a judgement, not a fact. The research step found no decisive fact (forecast.research). Spread kept; the basis line should say the evidence on timing is mixed. The morning run must read the Senate wrap-up of 16–17 Nov first."
+      },
+      "window_note": "Event window moved by the editor from 16 Nov 17:30 ET (dossier stub) to 17 Nov 00:00 ET, so that it opens after the evening freeze; a cloture vote on the bill on 17 Nov also resolves YES."
+     }
+    }
+   ]
+  },
+  {
+   "id": "id-bi",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 3
+   },
+   "event_key": "id-bi-2026-11-18",
+   "case_key": "bank-indonesia-rates",
+   "event": "Bank Indonesia's Board of Governors meets on 17–18 November and announces its rate decision on Wednesday afternoon Jakarta time. The BI-Rate has been 5.75% since June after 100 bp of hikes; in October BI held but raised the deposit facility rate to 5.00%. The rupiah hit a record low of about Rp18,270 per dollar on 16 November, while a Bloomberg survey median of 22 economists expects another hold.",
+   "title_cs": "Indonéská centrální banka rozhodne o sazbách při rekordně slabé rupii",
+   "sources": [
+    {
+     "title": "Bloomberg Technoz: Tekanan Berlanjut, Rupiah Cetak Rekor Terendah Baru",
+     "url": "https://www.bloombergtechnoz.com/detail-news/127850/tekanan-berlanjut-rupiah-cetak-rekor-terendah-baru"
+    },
+    {
+     "title": "Gotrade: BI Rate Diproyeksi Tetap 5,75% Saat The Fed Makin Hawkish",
+     "url": "https://www.heygotrade.com/id/news/bi-rate-diproyeksi-tetap-the-fed-hawkish-rupiah-tertekan/"
+    },
+    {
+     "title": "New Straits Times: Bank Indonesia to deliver policy rates decision as capital market reels",
+     "url": "https://www.nst.com.my/amp/business/economy/2026/10/1560394/bank-indonesia-deliver-policy-rates-decision-capital-market-reels"
+    },
+    {
+     "title": "Newsquawk: Week in Focus 16-20 November 2026",
+     "url": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+    }
+   ],
+   "rank": 7,
+   "claims": [
+    {
+     "id": "id-bi-19",
+     "label": "BI holds at 5.75%",
+     "text": "At the end of its Board of Governors meeting on Wednesday 18 November 2026, Bank Indonesia keeps the BI-Rate unchanged at 5.75%.",
+     "criterion": "YES if Bank Indonesia announces on 18 Nov 2026 (by 23:59 Jakarta time, WIB) the result of its 17–18 November Board of Governors meeting with the BI-Rate held at 5.75%, as shown in BI's press release (bi.go.id) or reported by Reuters, Bloomberg/Bloomberg Technoz, Antara, Kontan or Bisnis. NO if the BI-Rate is changed (hike or cut), or if no decision is announced by 23:59 WIB on 18 Nov 2026. Changes to the Deposit Facility or Lending Facility rates or other measures do not affect the result.",
+     "resolution_source": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/ ; https://www.bloombergtechnoz.com/ ; https://en.antaranews.com/",
+     "schedule": "reported",
+     "slip_class": "central-bank-decision",
+     "publishes": "Bank Indonesia press conference ~14:00 WIB (08:00 CET) on 18 Nov 2026",
+     "tz": "Asia/Jakarta",
+     "event_window": {
+      "start": "2026-11-18T00:00:00+07:00",
+      "end": "2026-11-18T23:59:00+07:00"
+     },
+     "evidence_at": "2026-11-18T14:30:00+07:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Indonéská banka ponechá sazbu 5,75 %",
+      "text": "Indonéská centrální banka (Bank Indonesia) na konci zasedání rady guvernérů ve středu 18. listopadu 2026 ponechá základní úrokovou sazbu BI-Rate beze změny na 5,75 %.",
+      "criterion": "ANO, pokud Bank Indonesia 18. 11. 2026 (do 23:59 jakartského času) oznámí výsledek zasedání rady guvernérů ze 17.–18. listopadu se sazbou BI-Rate ponechanou na 5,75 %, podle tiskové zprávy BI (bi.go.id) nebo zpráv Reuters, Bloomberg/Bloomberg Technoz, Antara, Kontan či Bisnis. NE, pokud BI-Rate změní (zvýší či sníží), nebo pokud do 23:59 jakartského času 18. 11. 2026 rozhodnutí neoznámí. Změny sazeb depozitní či zápůjční facility nebo jiná opatření výsledek neovlivňují."
+     },
+     "probability": 0.88,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Hold continues four meetings of holds since July and matches the Bloomberg survey median of 22 economists; the risk is a hike to defend the rupiah at a record low.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:56:00Z",
+       "checked": [
+        "markets.mjs search Bank Indonesia",
+        "markets.mjs search Indonesia interest rate",
+        "markets.mjs search BI rate",
+        "markets.mjs search Indonesia",
+        "markets.mjs search Bank Indonesia hike",
+        "markets.mjs search Bank Indonesia cut"
+       ],
+       "note": "Kalshi KXCBDINDONESIA-26NOV18: only the 'cut 1-25bps' outcome surfaced (Yes 0.01, vol ~3.9k); hold/hike outcomes not returned. No Polymarket/Metaculus market."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "central-bank-holds-as-expected",
+       "rate": null,
+       "n": 3,
+       "source": "pipeline/reference-classes.json own record 3 yes / 0 no; no published rate"
+      },
+      "dossier": "data/dossiers/2026-11-19/id-bi-19.md",
+      "signals": "data/dossiers/2026-11-19/id-bi-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "p": 0.8,
+        "reason": "Survey-median holds usually happen; BI held four meetings, prefers FX tools. Kalshi cut 1% removes cut risk only; hike risk from record-low rupiah remains.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.994,
+        "p_if_held": 0.8,
+        "p_blind": 0.8,
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "Central banks usually match survey-median hold (~85-90%; own record 3/0); BI held four meetings and prefers FX tools, but record-low rupiah and hawkish Fed add hike risk.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "p": 0.67,
+        "reason": "Bloomberg median of 22 = hold; BI raised deposit rate in Oct instead of BI-Rate and prefers FX tools. Rupiah record low, Oct poll nearly split, some houses call +25bp.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.68,
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "Bloomberg median of 22 economists = hold; Bloomberg Economics says BI prefers FX intervention/hedging tools. But rupiah at record ~18,270, Fed hike expected, Permata and Trading Economics call +25bp; BI has surprised with defensive hikes before.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "p": 0.72,
+        "reason": "Kalshi prices a cut at 1%, hold/hike split not shown. Survey median hold and BI's preference for non-rate tools, against a record-low rupiah, priced Fed hike and near-split October poll.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.99,
+        "p_if_held": 0.73,
+        "p_blind": 0.72,
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Survey median is hold and BI has preferred non-rate tools, but rupiah at a record low, Fed hike priced and near-split October poll make a defensive 25 bp hike a live risk.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.82,
+        "reason": "Bloomberg median of 22 hold; Kalshi cut 1%; BI prefers FX intervention. Record-low rupiah gives real hike risk (BI hiked 100bp earlier). Slip ~0.6%.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "pipeline/reference-classes.json central-bank-holds-as-expected (3/0); Kalshi KXCBDINDONESIA-26NOV18 cut 0.01"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "p": 0.88,
+        "reason": "Bloomberg survey of 22 economists median hold; Kalshi cut 1c; BI favours FX tools over hike.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.8,
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "BI in hold mode at 5.75; no strong evidence of change; unchanged is the base case.",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.787,
+      "calibrated": 0.88,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.21,
+      "decomposition": {
+       "p_held": 0.992,
+       "p_if_held": 0.887,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-16T18:12Z",
+       "question": "What is the latest Reuters/Bloomberg poll split for the 17–18 Nov BI meeting, and has any BI official signalled anything since the rupiah's record low?",
+       "finding": "No Reuters poll for November and no split of the Bloomberg survey (median of 22 = hold at 5.75%) were found. Previews from Kontan, CORE, Mirae and Bloomberg Technoz on 16 Nov all expect a hold. The rupiah closed at Rp18,268/US$ on 16 Nov (JISDOR 18,250). No statement by a BI official after the record low was found. One retail-broker headline (Ajaib) discusses a possible move to 6%, but the article could not be read.",
+       "sources": [
+        "https://investasi.kontan.co.id/news/kurs-rupiah-tertekan-jelang-rdg-bi-suku-bunga-acuan-diproyeksi-tetap-575",
+        "https://www.heygotrade.com/id/news/bi-rate-diproyeksi-tetap-the-fed-hawkish-rupiah-tertekan/",
+        "https://www.bloombergtechnoz.com/detail-news/127775/alasan-bi-masih-akan-tahan-suku-bunga-pekan-ini",
+        "https://id.tradingview.com/news/kontan:ed1cb35ba87ea:0/"
+       ],
+       "decisive": false
+      },
+      "disagreement": null,
+      "spread_note": "Spread 0.21 (above 0.15, not above 0.25): research step run, no decisive fact found, spread kept; evidence mixed.",
+      "shadow_note": "Sequential researcher run for us-permit-19 and us-manila-19 (widest spreads in the 20–80% band); fr-plfss-19 (third widest) skipped to keep the search budget."
+     }
+    }
+   ]
+  },
+  {
+   "id": "fr-plfss",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "event_key": "fr-plfss-2026-11-18",
+   "case_key": "fr-budget-2027",
+   "event": "The French Senate holds its solemn vote on the whole 2027 social security financing bill (PLFSS) on Wednesday 18 November at 16:30, after a week of rewriting the government's text, which the National Assembly rejected on 23 October. The right-centre majority (LR 124, centrists 63, Les Indépendants 15) is expected to adopt it; the left and the RN group oppose the partial freeze of pensions. Last year the Senate adopted the PLFSS 2026 by 196 votes to 119.",
+   "title_cs": "Francouzský Senát hlasuje o rozpočtu sociálního zabezpečení na rok 2027",
+   "sources": [
+    {
+     "title": "Sénat – ordre du jour",
+     "url": "https://www.senat.fr/ordre-du-jour/ordre-du-jour.html"
+    },
+    {
+     "title": "Public Sénat – Budget de la Sécurité sociale 2027 : les points chauds",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-les-points-chauds-lors-des-debats-au-senat-du-9-au-17-novembre"
+    },
+    {
+     "title": "Public Sénat – nouvelle composition du Sénat",
+     "url": "https://www.publicsenat.fr/actualites/politique/decouvrez-la-nouvelle-composition-du-senat-apres-la-formation-des-groupes-politiques"
+    },
+    {
+     "title": "Public Sénat – Le Sénat adopte sa version du PLFSS 2026 (196–119)",
+     "url": "https://www.publicsenat.fr/actualites/sante/le-senat-adopte-sa-version-du-projet-de-budget-de-la-securite-sociale-pour-2026"
+    }
+   ],
+   "rank": 8,
+   "claims": [
+    {
+     "id": "fr-plfss-19",
+     "label": "Senate adopts PLFSS with 185+ votes",
+     "text": "On Wednesday 18 November 2026 the French Senate adopts the 2027 social security financing bill (PLFSS 2027) at first reading, with at least 185 senators voting in favour.",
+     "criterion": "YES if, in the scrutin public solennel on the whole of the PLFSS for 2027 (Sénat n° 138, 2026-2027) held on 18 Nov 2026 before 23:59 Paris time, the Senate adopts the bill and the official result shows 185 or more votes in favour (senat.fr scrutin page, or Public Sénat/AFP report of the official count). NO if it is adopted with 184 or fewer votes in favour, if it is rejected, or if the solemn vote does not take place on 18 Nov 2026.",
+     "resolution_source": "https://www.senat.fr/ordre-du-jour/ordre-du-jour.html ; https://www.senat.fr/scrutin-public/ ; https://www.publicsenat.fr",
+     "schedule": "official",
+     "slip_class": "other-scheduled",
+     "publishes": "Senate announces result in the chamber about 17:30–18:30 CET on 18 Nov; scrutin page on senat.fr and Public Sénat article the same evening",
+     "tz": "Europe/Paris",
+     "event_window": {
+      "start": "2026-11-18T16:30:00+01:00",
+      "end": "2026-11-18T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-18T20:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Senát schválí PLFSS nejméně 185 hlasy",
+      "text": "Francouzský Senát ve středu 18. listopadu 2026 v prvním čtení schválí zákon o financování sociálního zabezpečení na rok 2027 (PLFSS 2027), pro hlasuje nejméně 185 senátorů.",
+      "criterion": "ANO, pokud Senát ve slavnostním veřejném hlasování o celém návrhu PLFSS 2027 (Sénat č. 138, 2026-2027), konaném 18. 11. 2026 do 23:59 pařížského času, návrh schválí a oficiální výsledek ukazuje 185 nebo více hlasů pro (stránka hlasování na senat.fr, případně Public Sénat/AFP s oficiálním sčítáním). NE, pokud je schválen se 184 nebo méně hlasy pro, pokud je zamítnut, nebo pokud se slavnostní hlasování 18. 11. 2026 nekoná."
+     },
+     "probability": 0.74,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Adoption is near-certain; 185 sits just below the scaled estimate (~189) from last year's 196 with a core majority now 202 instead of 209 senators. 2024: 202, 2025: 196.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:55:00Z",
+       "checked": [
+        "markets.mjs search \"French Senate social security budget\"",
+        "markets.mjs search \"PLFSS\"",
+        "markets.mjs search \"France budget 2027\""
+       ],
+       "note": "Only markets on enacting the 2027 state budget by 31 Dec and on 49.3; nothing on the Senate PLFSS vote."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "Senate first-reading solemn vote on PLFSS adopted on scheduled date",
+       "rate": 1.0,
+       "n": 2,
+       "source": "Public Sénat reports 26 Nov 2024 (202–109) and 26 Nov 2025 (196–119)"
+      },
+      "consensus": {
+       "value": 189,
+       "source": "own estimate in dossier (no published forecast)",
+       "note": "196 × 202/209 core-majority seats"
+      },
+      "dossier": "data/dossiers/2026-11-19/fr-plfss-19.md",
+      "signals": "data/dossiers/2026-11-19/fr-plfss-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:30Z",
+        "p": 0.66,
+        "reason": "Adoption n=2/2; official agenda, slip shaded below 0.079. Count: scaled centre ~189 vs threshold 185, sd ~6; RDPI pour possible upside, abstentions/absences downside. Signals: no market or model.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.95,
+        "p_if_held": 0.7,
+        "p_blind": 0.66,
+        "at_blind": "2026-11-16T18:02:07Z",
+        "reason_blind": "Adoption n=2/2; official agenda, slip shaded below 0.079. Count: scaled centre ~189 vs threshold 185, sd ~6; RDPI pour possible upside, abstentions/absences downside.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:25:00Z",
+        "p": 0.68,
+        "reason": "Vote fixed 16:30 on 18 Nov. Core majority 202 (vs 209 last year, which gave 196 with macronists abstaining) → centre ~189 vs 185. Limited pension-freeze dissent; possible RDPI/RDSE pour votes add upside. No market.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.68,
+        "at_blind": "2026-11-16T18:10:00Z",
+        "reason_blind": "Solemn vote fixed 18 Nov; LR+UC+LI core about 202 vs threshold 185. Past: 202 (2024, RDPI mostly abstained), 196 (2025). Pension-freeze dissent (Houpert, LI) is limited; RDPI support could add.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:22.210Z",
+        "p": 0.49,
+        "reason": "Adoption near-certain, but 185 sits at the centre: core majority 202, last year's yield ~91-94% gives 184-190. Pension freeze dissent, RDPI abstention, debate overrun risk (slip ~8%). No market signal.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.93,
+        "p_if_held": 0.53,
+        "p_blind": 0.49,
+        "at_blind": "2026-11-16T18:02:11Z",
+        "reason_blind": "Adoption near-certain, but 185 sits at the centre: core majority 202, last year's yield ~91-94% gives 184-190. Pension freeze dissent, RDPI abstention, debate overrun risk (slip ~8%).",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.73,
+        "reason": "Normal model, centre 189 (196x202/209), sd 6-8 from 202/196 history: P(>=185) 0.71-0.77; times held ~0.97 (other-scheduled slip 0.079, solemn Senate votes rarely move).",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "model",
+         "detail": "models.mjs leadabove 189 6 184.5 = 0.773; sd 8 = 0.713; x p_held 0.96"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T19:10:00Z",
+        "p": 0.68,
+        "reason": "Signals found nothing; adoption near-certain, prior years 202/196 votes, 185 threshold modest margin.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.68,
+        "at_blind": "2026-11-16T19:00:00Z",
+        "reason_blind": "Adoption near-certain; 2024: 202, 2025: 196, core majority ~202 now; 185 threshold gives some margin but abstentions/absences possible.",
+        "inputs_blind": [
+         "reference-data",
+         "own-research"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.651,
+      "calibrated": 0.741,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.24,
+      "decomposition": {
+       "p_held": 0.94,
+       "p_if_held": 0.787,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-16T18:12Z",
+       "question": "How will RDPI, RDSE and Les Indépendants vote? Is there LR/centrist dissent over the pension freeze? What was the exact 2025 breakdown by group?",
+       "finding": "2025 (scrutin n°61, 26 Nov 2025): 196 pour, 119 contre, 27 abstentions. The 'pour' came only from LR 124/130 (2 contre: Houpert, Muller-Bronn; 2 abstentions; Larcher and one other did not vote), UC 54/59 (1 contre, 2 abstentions, 2 did not vote) and Les Indépendants 18/20 (1 abstention). RDPI abstained 19/19, RDSE voted 14 contre and 3 abstentions, and the left and the non-inscrits voted all contre. No 2026 group voting announcements were found (explications de vote come on 18 Nov). Applying 2025 turnout rates to the 2026 seats (LR 124, UCI 63, LI 15) gives about 189 pour, so the margin over 185 depends on dissent and absences in LR and UCI.",
+       "sources": [
+        "https://www.senat.fr/scrutin-public/2025/scr2025-61.html",
+        "https://www.senat.fr/scrutin-public/scr2025.html",
+        "https://www.publicsenat.fr/actualites/sante/le-senat-adopte-sa-version-du-projet-de-budget-de-la-securite-sociale-pour-2026",
+        "https://www.publicsenat.fr/actualites/sante/budget-2027-de-la-securite-sociale-les-senateurs-proposent-de-revaloriser-sur-linflation-les-pensions-allant-jusqua-1500-euros"
+       ],
+       "decisive": false
+      },
+      "disagreement": null,
+      "spread_note": "Spread 0.24 (above 0.15, not above 0.25): research step run, no decisive fact found, spread kept; evidence mixed.",
+      "shadow_note": "Sequential researcher run for us-permit-19 and us-manila-19 (widest spreads in the 20–80% band); fr-plfss-19 (third widest) skipped to keep the search budget."
+     }
+    }
+   ]
+  },
+  {
+   "id": "tgt-results",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "event_key": "tgt-results-2026-11-18",
+   "case_key": "us-retail-earnings",
+   "event": "Target reports third-quarter 2026 results before the US open on Wednesday 18 November, with a call at 8:00 ET. Analysts expect adjusted EPS of $2.03 on revenue of $26.38bn (year-ago $1.78 and $25.27bn); the unofficial whisper is $2.17. Target has posted two quarters of positive comparable sales (+5.6%, +3.8%) under CEO Michael Fiddelke and beat EPS consensus five quarters running.",
+   "title_cs": "Target zveřejní čtvrtletní výsledky, analytici čekají zisk 2,03 dolaru na akcii",
+   "sources": [
+    {
+     "title": "Earnings Whispers: Target faces a higher bar as whisper number tops consensus",
+     "url": "https://www.earningswhispers.com/article/TGT/23131"
+    },
+    {
+     "title": "IFYOUSPENT: US retail earnings preview, November 2026",
+     "url": "https://news.ifyouspent.com/en/news/retail-earnings-preview-walmart-home-depot-target-november-2026"
+    },
+    {
+     "title": "AP via BNN Bloomberg: Target's comeback quarter (Q2 2026)",
+     "url": "https://www.bnnbloomberg.ca/business/company-news/2026/08/19/targets-comeback-quarter-new-merchandise-more-shoppers-and-a-us994m-tariff-refund/"
+    }
+   ],
+   "rank": 9,
+   "claims": [
+    {
+     "id": "tgt-eps-19",
+     "label": "Target EPS at least $2.12",
+     "text": "Target reports third-quarter 2026 adjusted earnings per share of at least $2.12, above the analysts' consensus of $2.03.",
+     "criterion": "YES if the Adjusted EPS (diluted) for Target's third quarter of fiscal 2026, as stated in Target Corporation's earnings press release (corporate.target.com or SEC 8-K Exhibit 99) published by 23:59 ET on 18 Nov 2026, is $2.12 or higher, taken as Target reports it (including any items such as tariff refunds that Target leaves inside Adjusted EPS). NO if it is $2.11 or lower, or if Target does not publish its Q3 results by 23:59 ET on 18 Nov 2026.",
+     "resolution_source": "https://corporate.target.com/investors ; https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000027419&type=8-K",
+     "schedule": "official",
+     "slip_class": "company-event",
+     "publishes": "Target press release ~06:30 ET (12:30 CET) on 18 Nov; call 08:00–09:00 ET (14:00–15:00 CET)",
+     "tz": "America/New_York",
+     "event_window": {
+      "start": "2026-11-18T06:00:00-05:00",
+      "end": "2026-11-18T23:59:00-05:00"
+     },
+     "evidence_at": "2026-11-18T13:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "Target: zisk na akcii nejméně 2,12 USD",
+      "text": "Target vykáže za třetí čtvrtletí 2026 upravený zisk na akcii nejméně 2,12 dolaru, tedy nad konsenzem analytiků 2,03 dolaru.",
+      "criterion": "ANO, pokud upravený zředěný zisk na akcii (Adjusted EPS) za třetí čtvrtletí fiskálního roku 2026 uvedený v tiskové zprávě Target Corporation (corporate.target.com nebo příloha 99 formuláře 8-K na SEC), zveřejněné do 23:59 newyorského času 18. listopadu 2026, bude 2,12 dolaru nebo vyšší, a to tak, jak ho Target vykáže (včetně položek, jako jsou vrácená cla, které Target v upraveném zisku ponechá). NE, pokud bude 2,11 dolaru nebo nižší, nebo pokud Target výsledky za třetí čtvrtletí do 23:59 newyorského času 18. listopadu 2026 nezveřejní."
+     },
+     "probability": 0.53,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Release yes/no; threshold is half a surprise scale above consensus; Target beat consensus five quarters running (two by ≥$0.25).",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:56:00Z",
+       "checked": [
+        "markets.mjs search \"Target earnings\"",
+        "markets.mjs search \"Target EPS\"",
+        "markets.mjs search \"Target beat earnings\""
+       ],
+       "note": "No market on Target Corp. results found."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "Target adjusted EPS vs consensus, beat by >= $0.09, last 5 quarters (Q2'26 ex-refund)",
+       "rate": 0.6,
+       "n": 5,
+       "source": "Own count: Q2'25 +0.04, Q3'25 +0.04 (itiger.com/news/1148266162), Q4'25 +0.28 (AP/MPR), Q1'26 +0.25 (Quartz/Yahoo), Q2'26 +0.12 ex-refund (AP/BNN)"
+      },
+      "consensus": {
+       "value": 2.03,
+       "source": "https://www.earningswhispers.com/article/TGT/23131",
+       "note": "Earnings Whispers 10 Nov; whisper $2.17. Comparable-sales consensus not found."
+      },
+      "scale": 0.18,
+      "scale_basis": "published",
+      "scale_url": "https://www.earningswhispers.com/article/TGT/23131",
+      "scale_source": "RMS of Target adjusted EPS minus consensus, last 5 quarters (+0.04, +0.04, +0.28, +0.25, +0.12 ex-refund) from published actuals and consensus (itiger, AP/MPR, Quartz/Yahoo, AP/BNN); mean +0.15",
+      "series": null,
+      "model_quantiles": {
+       "q10": 1.66,
+       "q50": 2.03,
+       "q90": 2.4,
+       "cmd": "node scripts/refdata/models.mjs quantiles 2.03 0.18 1.6"
+      },
+      "release": {
+       "consensus": 2.03,
+       "threshold": 2.12,
+       "scale": 0.18,
+       "source": "https://www.earningswhispers.com/article/TGT/23131"
+      },
+      "dossier": "data/dossiers/2026-11-19/tgt-eps-19.md",
+      "signals": "data/dossiers/2026-11-19/tgt-eps-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:16Z",
+        "p": 0.48,
+        "reason": "Threshold +$0.09 over consensus; 3/5 recent quarters cleared it, longer history has big misses; whisper $2.17 already known. No market. Unchanged.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.99,
+        "p_if_held": 0.48,
+        "p_blind": 0.48,
+        "at_blind": "2026-11-16T18:02:21Z",
+        "reason_blind": "Threshold +$0.09 (~4.4%) over consensus; 3/5 recent quarters cleared it, but longer Target history includes big misses; shrink mean surprise to ~+0.06, sd 0.18 gives ~0.45, refund upside nudges up.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:10:00Z",
+        "p": 0.55,
+        "reason": "Consensus $2.03 (TradingKey $2.08), whisper $2.17; needs +$0.09. Beat >=0.09 in 3/5 recent quarters (ex-refund), easy comps base; no market signal.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.55,
+        "at_blind": "2026-11-16T18:06:00Z",
+        "reason_blind": "Consensus $2.03-2.08 (TradingKey $2.08); threshold needs +$0.04-0.09 beat. Beat >=0.09 in 3/5 recent quarters; momentum and possible tariff-refund items in adjusted EPS add upside.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:01Z",
+        "p": 0.49,
+        "reason": "No market. Threshold 9 cents over consensus; only 2-3 of 5 recent beats cleared it; whisper 2.17 and possible refunds help, weak consumer and SG&A growth hurt.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.995,
+        "p_if_held": 0.49,
+        "p_blind": 0.49,
+        "at_blind": "2026-11-16T18:02:27Z",
+        "reason_blind": "Threshold is 9 cents over consensus; only 2-3 of 5 recent beats cleared it; whisper 2.17 and possible refunds in adjusted EPS help, weak consumer and rising SG&A hurt.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.45,
+        "reason": "Release model gives 0.31 (2.03, sd 0.18, ≥2.12). Raised: five straight beats averaging +$0.15, 3/5 by ≥$0.09, whisper $2.17; consensus+0.07 bias gives 0.46. No market.",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "model",
+         "detail": "node scripts/refdata/models.mjs release 2.03 2.12 0.18"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T18:07:43+00:00",
+        "p": 0.45,
+        "reason": "No market; whisper 2.17 vs consensus 2.03 and options imply large move; threshold needs 9c beat.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.45,
+        "at_blind": "2026-11-16T18:01:58+00:00",
+        "reason_blind": "Consensus 2.03, whisper 2.17; need +9c beat. Target beats often but variable; roughly even-ish.",
+        "inputs_blind": [
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.484,
+      "calibrated": 0.526,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.1,
+      "decomposition": {
+       "p_held": 0.992,
+       "p_if_held": 0.534,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "shadow_note": "Sequential researcher run for us-permit-19 and us-manila-19 (widest spreads in the 20–80% band); fr-plfss-19 (third widest) skipped to keep the search budget."
+     }
+    }
+   ]
+  },
+  {
+   "id": "cz-uohs",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "event_key": "cz-uohs-2026-11-18",
+   "case_key": "cz-uohs-chair",
+   "event": "Applications in the government's selection procedure for the next chair of the competition office ÚOHS close on Wednesday 18 November. Incumbent Petr Mlsna, whose term ends on 2 Dec, said on 16 Nov he will apply even though the NBÚ withdrew his security clearance. Under the selection terms a clearance is not required. In 2020 the Office of the Government reported 11 applicants on the deadline day.",
+   "title_cs": "Končí lhůta pro přihlášky do výběrového řízení na předsedu ÚOHS",
+   "sources": [
+    {
+     "title": "ČTK: Petr Mlsna se přihlásí do výběrového řízení na předsedu ÚOHS na další období",
+     "url": "https://www.ceskenoviny.cz/zpravy/petr-mlsna-se-prihlasi-do-vyberoveho-rizeni-na-predsedu-uohs-na-dalsi-obdobi/2902732"
+    },
+    {
+     "title": "Seznam Zprávy: Šéf antimonopolního úřadu Mlsna přišel o bezpečnostní prověrku",
+     "url": "https://www.seznamzpravy.cz/clanek/320270"
+    },
+    {
+     "title": "Novinky (2020): O post šéfa ÚOHS se po Rafajovi uchází 11 lidí",
+     "url": "https://www.novinky.cz/clanek/ekonomika-o-post-sefa-uohs-se-po-rafajovi-uchazi-11-lidi-40341537"
+    }
+   ],
+   "rank": 10,
+   "claims": [
+    {
+     "id": "cz-uohs-19",
+     "label": "At least 5 apply to head ÚOHS (weak)",
+     "text": "At least five people apply, by the 18 November 2026 deadline, in the selection procedure for chair of the competition office ÚOHS.",
+     "criterion": "YES if the Office of the Government (Úřad vlády) or the government spokesperson states that at least 5 applications to the selection procedure for chair of ÚOHS were received by the deadline on 18 Nov 2026, or if ČTK or another national outlet reports this citing the Office of the Government. The count must be published or reported by 2026-11-20T05:00+01:00. NO if the stated number is 4 or fewer, or if the deadline is extended beyond 18 Nov 2026. Applications that are delivered late and not admitted do not count. If no count is published by 2026-11-20T05:00+01:00, the claim cannot be resolved.",
+     "resolution_source": "https://vlada.gov.cz ; https://www.ceskenoviny.cz",
+     "schedule": "official",
+     "slip_class": "cz-government-item",
+     "publishes": "Office of the Government / government spokesperson, probably on 18 Nov after the deadline or on 19 Nov (in 2020: same day, about 2.5 h after a 12:00 deadline)",
+     "tz": "Europe/Prague",
+     "event_window": {
+      "start": "2026-11-18T00:00:00+01:00",
+      "end": "2026-11-18T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-19T12:00:00+01:00",
+     "resolves_by": "2026-11-20T05:00:00+01:00",
+     "cs": {
+      "label": "O post šéfa ÚOHS se uchází nejméně pět lidí (slabé)",
+      "text": "Do výběrového řízení na předsedu Úřadu pro ochranu hospodářské soutěže se do uzávěrky 18. listopadu 2026 přihlásí nejméně pět uchazečů.",
+      "criterion": "ANO, pokud Úřad vlády nebo mluvčí vlády uvede, že do uzávěrky 18. 11. 2026 obdržel nejméně pět přihlášek do výběrového řízení na předsedu ÚOHS, nebo to s odkazem na Úřad vlády uvede ČTK či jiné celostátní médium. Počet musí být zveřejněn do 20. 11. 2026 05:00. NE, pokud zveřejněný počet je čtyři nebo méně, nebo pokud bude lhůta prodloužena za 18. listopad. Opožděné a nepřijaté přihlášky se nepočítají. Pokud počet do 20. 11. 2026 05:00 zveřejněn nebude, nelze tvrzení vyhodnotit."
+     },
+     "weak": true,
+     "probability": 0.73,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "In the only precedent (2020) there were 11 applicants. The 2026 window is shorter (8 days vs 15) and the context is contentious. It is unknown whether the count will be published by 20 Nov. WEAK claim.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-16T17:55:00Z",
+       "checked": [
+        "markets.mjs search \"Czech competition office chair\"",
+        "markets.mjs search \"UOHS Mlsna\""
+       ],
+       "note": "No relevant market."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "Applicant count in ÚOHS chair selections",
+       "rate": 1.0,
+       "n": 1,
+       "source": "2020: 11 applications (Novinky, 6 Nov 2020). One case only; not a real base rate."
+      },
+      "dossier": "data/dossiers/2026-11-19/cz-uohs-19.md",
+      "signals": "data/dossiers/2026-11-19/cz-uohs-19.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:05:30Z",
+        "p": 0.68,
+        "reason": "n=1 precedent (11 applicants 2020); shorter 8-day window and contentious context lower count; extension unlikely despite cz-government-item 0.227 slip (that class is about agenda items). Signals: no market or model.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.95,
+        "p_if_held": 0.72,
+        "p_blind": 0.68,
+        "at_blind": "2026-11-16T18:02:07Z",
+        "reason_blind": "n=1 precedent (11 applicants 2020); shorter 8-day window and contentious context lower count; extension unlikely despite cz-government-item 0.227 slip (that class is about agenda items).",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:25:00Z",
+        "p": 0.72,
+        "reason": "2020 open selection drew 11 under the same PM. High-profile, NGO pressure, Mlsna applying. Downside: 8-day window and a perceived favourite. Non-publication voids rather than NO. No market.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "p_blind": 0.72,
+        "at_blind": "2026-11-16T18:10:00Z",
+        "reason_blind": "High-profile open selection (NGO and president pressure) usually draws many; 2020 had 11. But window only 8 days (10–18 Nov) and perceived favourite may deter. Mlsna will apply.",
+        "inputs_blind": [
+         "own-research"
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-16T18:07:22.210Z",
+        "p": 0.66,
+        "reason": "2020 had 11 in 15 days; now 8 days, strict requirements, charged context and a presumed favourite deter applicants; none named but Mlsna. Extension unlikely. Conditional on a count being published. No market signal.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "p_held": 0.95,
+        "p_if_held": 0.7,
+        "p_blind": 0.66,
+        "at_blind": "2026-11-16T18:02:11Z",
+        "reason_blind": "2020 had 11 in 15 days; now 8 days, strict requirements, charged context and a presumed favourite deter applicants; none named but Mlsna. Extension unlikely. Conditional on a count being published.",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-16T18:02:00Z",
+        "p": 0.6,
+        "reason": "No market. Only precedent (2020) had 11 applicants; shorter 8-day window and an incumbent applying may deter some. Extension risk is small (cz-government-item slip 0.227 is mostly about timing, not deadline extensions).",
+        "inputs": [
+         "signals",
+         "reference-data"
+        ],
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "n=1 precedent of 11 applicants; discounted for the short window and the contentious incumbent"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-16T19:10:00Z",
+        "p": 0.54,
+        "reason": "Signals found nothing; 2020 had 11 applicants, shorter window, count publication uncertain.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "p_blind": 0.54,
+        "at_blind": "2026-11-16T19:00:00Z",
+        "reason_blind": "2020 had 11 applicants, but shorter window and contentious context; count publication by 20 Nov uncertain (gov-item slip class ~23%).",
+        "inputs_blind": [
+         "reference-data"
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.642,
+      "calibrated": 0.73,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1911,
+        "b": 1.3736
+       },
+       "version": "2026-11-16"
+      },
+      "spread": 0.18,
+      "decomposition": {
+       "p_held": 0.95,
+       "p_if_held": 0.768,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-16T18:12Z",
+       "question": "Will the Office of the Government publish the number or names of applicants, and when? Are any applicants named besides Mlsna?",
+       "finding": "No commitment to publish the count or names was found. The 2026 announcement does not even name the selection committee or the criteria (Echo24, 13 Nov), unlike 2020, when the committee was known in advance and the count (11) was given about 2.5 h after the deadline. Mlsna is the only named applicant (ČT24/ČTK, 16 Nov). Conditions: age 40 or older, a master's degree, 10 years of legal or economic practice, and a short- and long-term concept of up to 8 pages. NGOs asked for the 8-day window to be extended; no extension has been announced.",
+       "sources": [
+        "https://m.echo24.cz/a/HmJTt/zpravy-domov-prezident-pavel-babis-uohs-antimonopolni-urad-mlsna-proverka-nbu-komise-vyber-vlada-transparentnost",
+        "https://www.ceskenoviny.cz/zpravy/vlada-vypsala-vyberove-rizeni-na-predsedu-uohs-nastoupi-od-prosince/2900198",
+        "https://ct24.ceskatelevize.cz/clanek/domaci/mlsna-se-prihlasi-do-vyberoveho-rizeni-na-sefa-uohs-na-dalsi-obdobi-379668",
+        "https://www.transparency.cz/babis-podcenil-vyber-noveho-sefa-uohs-expertni-organizace-zadaji-prodlouzeni-lhuty/"
+       ],
+       "decisive": false
+      },
+      "disagreement": null,
+      "spread_note": "Spread 0.18 (above 0.15, not above 0.25): research step run, no decisive fact found, spread kept; evidence mixed.",
+      "shadow_note": "Sequential researcher run for us-permit-19 and us-manila-19 (widest spreads in the 20–80% band); fr-plfss-19 (third widest) skipped to keep the search budget."
+     }
+    }
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "event": "European Commission adopts the Quantum Act (College, 18 Nov)",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Proposed with dossier and full round one (eu-quantum-19: 0.04–0.85), then dropped: MLex reported on 16 Nov (06:19 ET) 'EU Quantum Act proposal delayed to Nov. 24'; with adoption off 18 Nov the story would report a non-event that was not widely awaited.",
+   "source": "https://www.mlex.com/mlex/data-privacy-security/articles/2549947"
+  },
+  {
+   "event": "European Commission adopts the Circular Economy Act (College, 18 Nov)",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 2
+   },
+   "why": "Dossier and round one done (eu-circular-19: 0.03–0.06); a DG GROW head of unit said on 9 Nov it is due on 2 Dec; would be a non-event.",
+   "source": "https://www.eunews.it/en/2026/10/26/a-fiery-november-ahead-college-eu/"
+  },
+  {
+   "event": "Babiš's last day in Israel: any air-defence document signed",
+   "scope": "cz",
+   "topic": "security",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "No signing, memorandum or press conference announced for 18 Nov; only the Ichilov hospital visit and return (ČT24, 16 Nov). A 'Babiš says' claim is not allowed. Diary.",
+   "source": "https://ct24.ceskatelevize.cz/clanek/svet/babis-zahajil-navstevu-izraele-bude-jednat-o-protivzdusne-obrane-379666"
+  },
+  {
+   "event": "Prague coalition (STAN, Spolu, Praha sobě) presents its council line-up",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "Names agreed by the parties; the votes (mayor, council) are on 19 Nov, next edition; board questions cz-prague-mayor-stan and cz-prague-pirates-council cover them.",
+   "source": "https://www.ceskenoviny.cz/zpravy/praha-ma-koalici-stan-spolu-a-prahy-sobe-primatorem-bude-hlavacek/2895938"
+  },
+  {
+   "event": "Constitutional Court public pronouncements (II. senát)",
+   "scope": "cz",
+   "topic": "law",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 2
+   },
+   "why": "Routine individual complaints; low news value.",
+   "source": "https://www.usoud.cz/aktualne/prehled-jednani-ustavniho-soudu-pro-47-kalendarni-tyden-roku-2026"
+  },
+  {
+   "event": "ČHMÚ wind warning and power cuts on 18 Nov",
+   "scope": "cz",
+   "topic": "society",
+   "scores": {
+    "impact": 1,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "Weather and outages: excluded type (disasters) and low impact.",
+   "source": "https://www.ceskenoviny.cz/zpravy/tyden-bude-v-cesku-oblacny-s-destem-v-utery-a-ve-stredu-zesili-vitr/2902510"
+  },
+  {
+   "event": "Czech energy suppliers' 2027 price lists (PPAS, E.ON, innogy)",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 1
+   },
+   "why": "Announced on 13–16 Nov; nothing new dated for 18 Nov; ERÚ final decision by end-November.",
+   "source": "https://www.ceskenoviny.cz/zpravy/prazska-plynarenska-pristi-rok-zdrazi-elektrinu-a-plyn-bez-zavazku/2902640"
+  },
+  {
+   "event": "Licence-fee abolition bill: next step after Letná",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 2
+   },
+   "why": "No sitting or vote on 18 Nov; committee hearing 26 Nov; board question cz-licence-fee-abolition-passed.",
+   "source": "https://www.ceskenoviny.cz/zpravy/klempir-jednani-o-financovani-ct-a-cro-ma-predchazet-diskuse-o-emfa/2902667"
+  },
+  {
+   "event": "Czech cabinet decision on extending fuel-price caps",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Earliest cabinet date is Thu 19 Nov (next edition); board question cz-fuel-cap-december.",
+   "source": "https://www.ceskenoviny.cz/zpravy/listopadovy-pokles-maximalnich-cen-paliv-skoncil-nafta-v-utery-zdrazi/2902681"
+  },
+  {
+   "event": "Senate elects its President (Vystrčil)",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "On 19 Nov, after E+2; board question cz-vystrcil-senate-president.",
+   "source": "https://www.ceskenoviny.cz/zpravy/pavel-bude-jednat-s-babisem-mimo-jine-o-jmenovani-predse"
+  },
+  {
+   "event": "FOMC minutes of the 27–28 Oct meeting (20:00 CET)",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "No checkable outcome beyond wording; a December hike is covered by board question us-fed-hike-december.",
+   "source": "https://www.financecalendar.com/events/category/central-banks-monetary-policy/2026-11/"
+  },
+  {
+   "event": "Euro-area final HICP for October (flash 4.0%)",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "The final print almost always confirms the flash; practically certain.",
+   "source": "https://www.onvista.de/news/2026/11-12-wochenvorschau-termine-bis-26-november-2026-0-10-26"
+  },
+  {
+   "event": "ECB Financial Stability Review",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "No checkable outcome.",
+   "source": "https://www.onvista.de/news/2026/11-12-wochenvorschau-termine-bis-26-november-2026-0-10-26"
+  },
+  {
+   "event": "US housing starts and building permits for October",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "No published consensus (only one forecaster); would be a fourth interval claim (limit 3).",
+   "source": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+  },
+  {
+   "event": "South Africa CPI for October",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 3
+   },
+   "why": "Low reach for our readers; release date not confirmed on the Stats SA calendar; interval limit.",
+   "source": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+  },
+  {
+   "event": "Palo Alto Networks Q1 FY2027 results",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Lower reach than Target; one company-results story is enough on a day with the Anthropic IPO.",
+   "source": "https://www.onvista.de/news/2026/11-12-wochenvorschau-termine-bis-26-november-2026-0-10-26"
+  },
+  {
+   "event": "TJX Q3 results",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Lower reach than Target.",
+   "source": "https://www.onvista.de/news/2026/11-12-wochenvorschau-termine-bis-26-november-2026-0-10-26"
+  },
+  {
+   "event": "Lowe's Q3 results",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Date still tentative on the company's site; consensus figure doubtful.",
+   "source": "https://www.onvista.de/news/2026/11-12-wochenvorschau-termine-bis-26-november-2026-0-10-26"
+  },
+  {
+   "event": "Australia wage price index Q3",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 3
+   },
+   "why": "Low reach.",
+   "source": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+  },
+  {
+   "event": "Anthropic's European retail offer closes",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "Folded into the ant-ipo story.",
+   "source": "https://investinglive.com/news/earnings-week-ahead-nvidia-without-jensen-anthropic-s-ipo-and-the-consumer-meets-a-hiking-fed/"
+  },
+  {
+   "event": "Trump arrives in Shenzhen on 18 Nov",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 1
+   },
+   "why": "Practically certain; the story leads with the Manila outcome instead.",
+   "source": "https://abcnews.go.com/"
+  },
+  {
+   "event": "Trump–Xi–Putin trilateral in Shenzhen",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 5,
+    "reach": 5,
+    "uncertainty": 2
+   },
+   "why": "On Thu 19 Nov, after E+2 (next edition); board question us-cn-ru-trilateral-meeting.",
+   "source": "https://www.dw.com/en/china-says-xi-trump-putin-to-discuss-world-peace/a-79959570"
+  },
+  {
+   "event": "US–Iran standoff around Hormuz (drone attacks, mines)",
+   "scope": "world",
+   "topic": "security",
+   "scores": {
+    "impact": 5,
+    "reach": 5,
+    "uncertainty": 3
+   },
+   "why": "No scheduled event on 18 Nov; would be a forecast of attacks (excluded) or a non-event; board questions us-iran-talks-resume and ir-hormuz-arrangement.",
+   "source": "https://www.aljazeera.com/"
+  },
+  {
+   "event": "Ukraine: E5 + EU talks format, drone strikes",
+   "scope": "world",
+   "topic": "security",
+   "scores": {
+    "impact": 5,
+    "reach": 5,
+    "uncertainty": 2
+   },
+   "why": "No talks round dated for 18 Nov; strikes are excluded as forecast subjects; board question ru-ua-ceasefire.",
+   "source": "https://www.aljazeera.com/"
+  },
+  {
+   "event": "Israel coalition talks (Eisenkot mandate)",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "No dated step on 18 Nov (Speaker vote 17 Nov was the previous edition); board question il-government-sworn-in.",
+   "source": "https://www.jpost.com/israel-election-2026"
+  },
+  {
+   "event": "Serbia: new National Assembly after its constitution (17 Nov)",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "No dated vote on 18 Nov found; board questions rs-vucic-prime-minister and rs-student-list-pm.",
+   "source": "https://n1info.rs/"
+  },
+  {
+   "event": "Belgium: De Wever's resignation held in abeyance",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Report to the King due 23 Nov; nothing dated on 18 Nov; board question be-dewever-out.",
+   "source": "https://www.vrt.be/vrtnws/nl/"
+  },
+  {
+   "event": "BC Conservative cabinet sworn in",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 1
+   },
+   "why": "On 20 Nov; board question ca-bc-conservative-premier.",
+   "source": "https://www.cbc.ca/news/canada/british-columbia"
+  },
+  {
+   "event": "US House vote on the American Franchise Act",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 2
+   },
+   "why": "Low news value; floor timing not confirmed.",
+   "source": "https://www.congress.gov/"
+  },
+  {
+   "event": "European Parliament Conference of Presidents; MFF press conference",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 1
+   },
+   "why": "No checkable outcome.",
+   "source": "https://www.europarl.europa.eu/"
+  },
+  {
+   "event": "Victoria (Australia) state election: early voting opens",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 1
+   },
+   "why": "Election on 28 Nov; nothing to forecast on 18 Nov.",
+   "source": "https://www.vec.vic.gov.au/"
+  },
+  {
+   "event": "COP31 draft decision on transition away from fossil fuels",
+   "scope": "world",
+   "topic": "science-health",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Talks close later in the week; no adoption step dated on 18 Nov.",
+   "source": "https://www.dw.com/en/top-stories/s-9097"
+  },
+  {
+   "event": "UK Prime Minister's Questions before the UK–EU summit",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "Restating known positions; summit on 20 Nov.",
+   "source": "https://www.bbc.com/news/articles/crp3e1n5kezpo"
+  },
+  {
+   "event": "Nvidia board decision on the CEO",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Not scheduled; no reportable step on 18 Nov.",
+   "source": "https://www.bbc.com/news/articles/cry49plv8v3go"
+  }
+ ]
+}
