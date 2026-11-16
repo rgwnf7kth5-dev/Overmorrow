@@ -198,7 +198,7 @@
     "backtest_min_gain": 0.002
   },
   "positive_from": 15,
-  "negative_stories_max": 3,
+  "negative_stories_max": 1,
   "open_questions": {
     "_note": "Publisher's decision, 9 November 2026: about a third of all claims were 90% sure or more, and they flattered the score. The accuracy page and each edition's results lead with open questions (band); near-certain claims are shown apart. From edition `from` at most easy_main_max stories may lead with a claim of 90% or more (either way), and every other claim at or beyond sure_claim needs forecast.open_because, a sourced reason the question is genuinely open.",
     "band": [
@@ -263,5 +263,9 @@
       "sequential": "One extra forecaster per edition for at most claims_max binary claims whose round-one figure lies inside band (widest spread first): no dossier, a research loop of at most steps_max steps and searches_max searches, a written belief state after every step. Skipped when the search budget is short.",
       "external": "Forecasters on models of other vendors through OpenAI-compatible endpoints (scripts/external.mjs). Off until the publisher supplies an API key (key_env in the run's environment), a model name, and sets enabled to true."
     }
+  },
+  "nonevent": {
+    "_note": "Publisher's decision, 16 November 2026: the allowance of three 'did not happen' stories was used as a daily quota (3 in most editions from No. 22), filled with 'X did not restate Y' reports. From edition `from` a story may report a non-event only if it names in `awaited` what had been announced or scheduled for that day and where (source); at most negative_stories_max (1) per edition. A claim that someone merely repeats a known position may not lead a story. A running story with nothing reportable that day goes to the diary, not into a story.",
+    "from": 28
   }
 }

@@ -480,7 +480,21 @@ for (const ed of editions) {
       const main = (st.claims || [])[0]; // a number forecast leading the story reports a figure, not a non-event
       return (main && !isInterval(main) && main.probability < 0.5) || NEG_EN.test(st.headline || '') || NEG_CS.test(st.cs?.headline || '');
     });
-    if (neg.length > (cfg.negative_stories_max ?? 3)) err(w, `${neg.length} stories report that something did not happen (main claim below 50% or a negative headline): ${neg.map((x) => x.id).join(', ')}; at most ${cfg.negative_stories_max}. Lead each story with something that happens that day (EDITOR step 2, "Report what happens").`);
+    const NE = cfg.nonevent || {};
+    const strict = ed.number >= (NE.from ?? Infinity);
+    if (strict) {
+      // Publisher's decision, 16 November 2026: a non-event is a story only when the event was announced or scheduled.
+      for (const st of neg) if (!nonEmpty(st.awaited?.what) || !nonEmpty(st.awaited?.source)) err(`${w} story ${st.id}`, 'reports that something did not happen (main claim below 50% or a negative headline) but has no awaited.what and awaited.source naming what had been announced or scheduled for that day. If nothing was, this is not a story: lead with something that does happen, phrase a threshold towards the likelier side or use an interval claim, or move the running story to the diary (EDITOR step 2, "Report what happens").');
+      const REP_EN = /\b(restat\w*|repeat\w*|reiterat\w*|reaffirm\w*|again (says|said|states|stated)|stands by|sticks to|insists)\b/i;
+      const REP_CS = /(zopak\w*|opak(uje|oval\w*)|znovu (řekl|uvedl|prohlásil|potvrdil)\w*|trvá na|trval\w* na)/i;
+      for (const st of ed.stories || []) {
+        const main = (st.claims || [])[0];
+        if (REP_EN.test(st.headline || '') || REP_CS.test(st.cs?.headline || '') || (main && REP_EN.test(main.text || '')))
+          err(`${w} story ${st.id}`, 'leads with someone repeating (or not repeating) a known position. That is not news either way; lead with a decision, a vote, a meeting and what it agreed, a figure, or a change of position (EDITOR step 2, "Report what happens").');
+      }
+    }
+    const negMax = strict ? (cfg.negative_stories_max ?? 1) : Math.max(cfg.negative_stories_max ?? 3, 3);
+    if (neg.length > negMax) err(w, `${neg.length} stories report that something did not happen (main claim below 50% or a negative headline): ${neg.map((x) => x.id).join(', ')}; at most ${negMax}. Lead each story with something that happens that day (EDITOR step 2, "Report what happens").`);
   }
   // From config.open_questions.from (publisher's decision, 9 November 2026): ask the open question, not the safe one.
   const OQ = cfg.open_questions || {};
