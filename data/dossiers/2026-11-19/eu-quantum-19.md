@@ -35,5 +35,5 @@ status_quo: yes — on the latest known planning for 18 Nov, with no reported po
 - https://ec.europa.eu/transparency/documents-register/api/files/SEC(2026)2580_0/090166e53491ebbc ; https://www.eunews.it/en/2026/10/26/a-fiery-november-ahead-college-eu/ ; https://thequantuminsider.com/2026/11/10/draft-eu-quantum-act-would-favor-european-suppliers-set-computing-and-security-targets/ ; https://www.mlex.com/mlex/articles/2543650 ; https://www.mlex.com/mlex/data-privacy-security/articles/2531216 ; https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-quantum-act
 - Failed: commission.europa.eu College meetings page (HTTP 429); thequantuminsider.com search (403); sciencebusiness.net (403).
 
-## Added after round one (editor, 2026-11-16T19:45+01:00)
+## Added after round one (editor, 2026-11-16T19:12+01:00)
 - MLex, 16 Nov: headline "EU Quantum Act proposal delayed to Nov. 24" — https://www.mlex.com/mlex/data-privacy-security/articles/2549947 (published 2026-11-16T06:19-05:00, read 2026-11-16T18:08Z; body paywalled, headline only). Found by the evidence forecaster's own research; the story was dropped from the plan.

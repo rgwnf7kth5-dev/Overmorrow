@@ -1,7 +1,7 @@
 {
  "edition": "2026-11-19",
  "events_date": "2026-11-18",
- "prepared_at": "2026-11-16T19:45:00+01:00",
+ "prepared_at": "2026-11-16T19:12:00+01:00",
  "method_version": 6,
  "number_expected": 28,
  "candidates": 45,
@@ -211,12 +211,12 @@
  ],
  "run": {
   "started_at": "2026-11-16T18:38:00+01:00",
-  "finished_at": null,
+  "finished_at": "2026-11-16T19:22:00+01:00",
   "agents": 33,
   "searches": 168,
   "note": "Searches as reported by agents: agenda and stories-of-the-day sweeps 44, dossiers 50, board checks 18, evidence forecasters 23, outsiders 6, disagreement research 7, sequential shadow 7, board re-forecast 5, editor 1. Dossiers and agenda 94 (≤120); evidence reserve used 23 of 50; morning reserve 30 untouched. Agents: 4 sweeps, 6 dossier, 2 board checks, 10 forecasters (5 roles × 2 groups), 1 research, 2 shadow, 5 board forecasters, plus continuations by SendMessage not counted."
  },
- "note": "Evening desk round one, prepared 16 Nov 2026 18:38–about 20:30 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-16, Platt a 0.1911, b 1.3736; equal weights). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written and checked before the agents were sent the signals step (anchor: one step). The outsider-B final file was written empty at first and rewritten by the same agent with the figures it had reported at 18:07Z. Spread above 0.25 only on us-permit-19 (genuine; Monday's Senate vote result not yet posted). Research run for us-permit-19, us-manila-19, id-bi-19, fr-plfss-19, cz-uohs-19: no decisive fact. For the morning: check the Senate wrap-up of 16–17 Nov (substitute cloture result and the time of the bill's cloture vote), any announced US–Philippine signing, whether Anthropic filed a revised range, and whether the NSS confirms its 18 Nov date.",
+ "note": "Evening desk round one, prepared 16 Nov 2026 18:38–19:22 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-16, Platt a 0.1911, b 1.3736; equal weights). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written and checked before the agents were sent the signals step (anchor: one step). The outsider-B final file was written empty at first and rewritten by the same agent with the figures it had reported at 18:07Z. Spread above 0.25 only on us-permit-19 (genuine; Monday's Senate vote result not yet posted). Research run for us-permit-19, us-manila-19, id-bi-19, fr-plfss-19, cz-uohs-19: no decisive fact. For the morning: check the Senate wrap-up of 16–17 Nov (substitute cloture result and the time of the bill's cloture vote), any announced US–Philippine signing, whether Anthropic filed a revised range, and whether the NSS confirms its 18 Nov date.",
  "stories": [
   {
    "id": "ant-ipo",
