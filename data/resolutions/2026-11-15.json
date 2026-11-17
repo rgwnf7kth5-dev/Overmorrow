@@ -69,6 +69,22 @@
       "evidence": "https://www.prix-carburants.gouv.fr/disponibilites-carburants",
       "note": "The official regional table shows Grand Est at 17% for 14 Nov at 17h (the only 14 Nov column), below the 23% threshold.",
       "resolved_at": "2026-11-16T05:01:00+01:00"
+    },
+    {
+      "claim": "us-iran-ship-15",
+      "outcome": "no",
+      "evidence": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/",
+      "note": "Resolved from best available evidence (ukmto.org not readable): gCaptain (16 Nov) lists the UKMTO-reported attacks of 15 Nov (an Indian-notified tanker attack in the Gulf) and 16 Nov (two tankers near Khasab) with none dated 14 Nov, Arab News (15 Nov) has UKMTO speaking of the Indian report only on Sunday, and the Saturday tanker \"mine strike\" was claimed only by Iran's navy (gCaptain/Reuters, 14 Nov), which does not count; read as no UKMTO/JMIC-reported incident occurring on 14 Nov.",
+      "resolved_at": "2026-11-17T05:10:00+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "cop31-sb-close-15",
+      "outcome": "no",
+      "evidence": "https://enb.iisd.org/sites/default/files/2026-11/enb12907e.pdf",
+      "note": "ENB Vol. 12 No. 907 (daily report for Saturday 14 Nov) states under \"Closure of the SBs\" that SBI 65 and SBSTA 65 adopted their reports and \"the SBs closed at 12:48 am on 15 November\", after the 23:59 deadline; held is false because the closing plenaries ran past midnight out of the window.",
+      "resolved_at": "2026-11-17T05:10:00+01:00",
+      "held": false
     }
   ]
 }
