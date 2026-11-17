@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "pooled": {
-  "n": 39,
-  "rms_in_scales": 1.407,
+  "n": 41,
+  "rms_in_scales": 1.45,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -682,6 +682,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.1
+  },
+  "israel-cpi-12-month-change-october-2026-cbs-first-release": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-16",
+     "claim": "il-cpi-16",
+     "consensus": 1.5,
+     "first": 1.1,
+     "centre": 1.52,
+     "scale_used": 0.17,
+     "source": "Mean of Psagot (1.6% y/y, +0.5% m/m) and Nissan Avraham (1.4% y/y), Maariv 12 Nov 2026, https://www.maariv.co.il/economy/israel/article-1387514"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.4
+  },
+  "germany-gas-storage-fill-level-agsi-country-aggregate-end-of": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-16",
+     "claim": "de-gas-16",
+     "consensus": 56.56,
+     "first": 57.32,
+     "centre": 56.48,
+     "scale_used": 0.41,
+     "source": "No analysts' consensus exists; trend extrapolation by rule: gas day 11 (57.68%, AGSI+ via gasspeicherkarte.de) minus 3 × mean daily change of gas days 7–11 Nov (−0.372 pt)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.76
   }
  },
  "extra": {}

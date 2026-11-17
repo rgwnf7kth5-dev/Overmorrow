@@ -1,0 +1,26 @@
+{
+  "edition": "2026-11-16",
+  "checked_at": "2026-11-17T05:12:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 15, read 17 Nov 04:07 UTC; 19 entries at that time, 6 of them sport)",
+    "ct24 (evening 'SOUHRN: Zásadní události neděle 15. listopadu' and ČT24 articles 379628-379642 dated 15 Nov, read 17 Nov 04:08-04:09 UTC)",
+    "ctk (ceskenoviny.cz world and Czech section lists with 15 Nov timestamps, read 17 Nov 04:09-04:10 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2); no WebSearch was spent on their 15 Nov top stories. The BBC World and Al Jazeera front pages, used as substitutes for list (b) in earlier files, had already rolled over to 16-17 Nov stories when read, so list (b) is missing for this day."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: Cabo Verde presidential election (covered anyway by cv-election); Gagauzia general election (covered anyway by md-gagauzia); Hamas Rafah commander Samir Abu Younis killed; Gaza shelling deaths; Nigeria army raids and Sokoto cattle raid; AUSSOM hands Barawe bases to Somali army; Bangladesh garment factory closures, measles and dengue tolls; Ilam bus crash (12 dead); Maredsous Christmas market explosion; Australia-Philippines defence agreement; Jordan death sentences for the Karak church shooting; Archive of Our Own restored; sport results (WTA Finals, Race to Dubai, Grey Cup, Women's Rugby League World Cup, Nations League)",
+    "ct24-only: Houthis advance as the Yemeni government reinforces Aden; drones hit three cargo ships at the Danube mouth (Romania); record daily migrant arrivals on the Canary Islands; Skopeček-Murová debate on sector taxes; Macinka and Fiala on the demonstrations; Gödel notebooks deciphered with AI; Pope condemns the suffering of enslaved Africans (Peru, evening of 14 Nov Lima time; covered anyway by pope-peru)",
+    "ctk-only: Trump blames Biden for the US flight outage and asks Congress for modernisation money; Iran claims an attack on a US radar in Bahrain (14 Nov event); Zelensky says Starshield restrictions help Russian attacks; D8 motorway pile-up; features"
+  ],
+  "note": "A thin check: list (b) is missing (Reuters/AP refused, BBC and Al Jazeera fronts already on later days), and Letná dominated the Czech lists. ct24 and ctk count as lists for non-Czech events too, as in earlier files. The one missed event (Estonia closing its Russian border crossings) was not announced in advance; no source added to pipeline/sources.json.",
+  "events": [
+    {"title": "Milion chvilek's 'Letná proti 4:36' rally fills Letná plain in Prague (organisers: about 400,000, later 350,000-450,000) against the ČT/ČRo fee-abolition bill; Minář demands the bill's withdrawal, Okamura's removal as Speaker and SPD's loss of the defence ministry, and calls a nationwide 'warning' for 2 Dec", "scope": "cz", "lists": ["ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/domaci/protivladni-demonstrace-na-letne-379631", "status": "covered", "story": "cz-letna"},
+    {"title": "Estonia announces it will close all its border crossings with Russia from 1 December after a GRU-ordered sabotage attempt on drone maker Threod Systems", "scope": "europe", "lists": ["wikipedia", "ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/svet/estonsko-uzavre-hranicni-prechody-s-ruskem-kvuli-hrozbe-sabotaze-379640", "status": "missed", "note": "Nowhere in the planning file. A government decision announced the same day, not foreseeable from a calendar."},
+    {"title": "Iran's Revolutionary Guards say two tankers struck mines in the Strait of Hormuz and a supertanker carrying two million barrels sank; UKMTO notes an Indian report of a tanker attack in the Gulf", "scope": "world", "lists": ["wikipedia", "ctk"], "source": "https://www.ceskenoviny.cz/zpravy/dva-tankery-v-hormuzskem-prulivu-narazily-na-miny-jeden-se-potopil-uvedl-iran/2902319", "status": "covered", "story": "us-iran", "note": "The edition's us-iran story covers the tanker attacks around Hormuz; its claim was on US strikes, not on ship incidents."},
+    {"title": "Russian strikes on Zaporizhzhia and across Ukraine injure 16; Ukrainian drones hit the Rostov region and Nizhnekamsk in Tatarstan", "scope": "europe", "lists": ["ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/svet/rusove-utocili-na-zaporozi-ukrajina-uderila-v-rostovske-oblasti-a-v-tatarstanu-379632", "status": "covered", "story": "ua-war"},
+    {"title": "49th ASEAN Summit opens in Manila amid US tariff and China questions; Philippine police arrest at least 287 at protests against a 'Pax Silica' deal with the US", "scope": "world", "lists": ["wikipedia", "ct24"], "source": "https://en.wikipedia.org/wiki/Portal:Current_events/2026_November_15", "status": "dropped", "note": "Planning dropped it: 'Dates conflict (15-17 vs 16-18 Nov); leaders' sessions and any digital-economy signing fall on 16-17 Nov.'"}
+  ]
+}

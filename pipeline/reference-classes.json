@@ -141,7 +141,7 @@
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
         "yes": 13,
-        "no": 73
+        "no": 74
       }
     },
     {
@@ -217,7 +217,7 @@
       "n": 6,
       "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
       "own_record": {
-        "yes": 5,
+        "yes": 6,
         "no": 5
       }
     },
@@ -228,7 +228,7 @@
       "n": "small; depends on lead vs threshold",
       "source": "models.mjs poll-lead model; own record 2026",
       "own_record": {
-        "yes": 4,
+        "yes": 5,
         "no": 0
       }
     },
@@ -305,7 +305,7 @@
       "n": "own record",
       "source": "Own record (from 27 Oct 2026)",
       "own_record": {
-        "yes": 4,
+        "yes": 5,
         "no": 3
       }
     },
@@ -833,7 +833,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
-        "yes": 0,
+        "yes": 2,
         "no": 2
       }
     },
@@ -845,7 +845,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -856,7 +856,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -878,7 +878,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -978,6 +978,50 @@
       "own_record": {
         "yes": 0,
         "no": 1
+      }
+    },
+    {
+      "id": "negotiation-session-closes-by-deadline",
+      "description": "A negotiating body or session (e.g. UNFCCC subsidiary bodies) is gavelled closed by a stated local clock time on its scheduled last day",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-17 morning run, from claim cop31-sb-close-15)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "organisers-attendance-figure-threshold",
+      "description": "Organisers' first announced attendance figure for a large rally reaches a stated threshold",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-17 morning run, from claim cz-letna-count-16)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "rally-announces-dated-next-action",
+      "description": "Organisers announce a further protest action with a specific date at or on the day of a large rally",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-17 morning run, from claim cz-letna-next-16)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "outage-declared-resolved-by-date",
+      "description": "A provider declares an ongoing large service outage resolved by a stated deadline",
+      "base_rate": 0.5,
+      "n": "own record",
+      "source": "own record (created 2026-11-17 morning run, from claim ms-outage-16)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
       }
     }
   ]
