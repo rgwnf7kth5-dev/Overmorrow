@@ -1,0 +1,6 @@
+# icj-genocide-20 — signals
+- markets.mjs searches, read 2026-11-17T17:55–17:59Z: "Myanmar genocide ICJ", "ICJ Myanmar", "Rohingya genocide", "Gambia Myanmar", "Rohingya ICJ ruling".
+- Manifold (platform, play money): "Will the ICJ determine that Myanmar committed genocide?" — Yes 0.446; volume 82 (mana), liquidity 100; closes 2050-01-01; https://manifold.markets/nathanwei/icj-determines-myanmar-committed-ge (read 2026-11-17T17:55Z). Match: question close to the claim, but no deadline tied to 19 Nov and settlement wording not checked (it may count findings of "genocide occurred" without attribution). Very thin; weak signal.
+- Related, not matching: Polymarket "Will an international court find Israel or its leaders guilty of Genocide by December 31, 2027?" Yes 0.11 (different case). Metaculus Israel-genocide questions (no public price).
+- No bookmaker odds found in news reports. No published model or expert numeric probability found. Sweep note (sweep-world.json, the desk's own prior, not an external signal): "p commit ~0.5, any breach ~0.8".
+- Qualitative expert views (not probabilities): FDD (5 Nov) says there is "strong evidence" Myanmar met the existing high standard; Global Centre R2P says the case "could become the first time" the ICJ holds a state liable for commission (dossier sources).

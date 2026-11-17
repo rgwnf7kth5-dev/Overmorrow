@@ -699,6 +699,50 @@
           ],
           "note": "Weekly re-forecast: the repo rate has stood at 4.00% since the 5 November hike, so only a cut on 17 December would leave it below the line.",
           "note_cs": "Týdenní přepočet: repo sazba je od zvýšení 5. listopadu na 4,00 %, pod hranici by ji dostalo jen snížení 17. prosince."
+        },
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.97,
+          "combined": 0.968,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.97,
+              "reason": "Class: ČNB decisions since 2022 (16 changes): never reversed direction one meeting after a move; record shows no member for a cut. Residual: shock-driven cut.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.96,
+              "reason": "Rate 4.00% since 5 Nov hike; 4-3 record shows no member for a cut; only a cut in Dec resolves No.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.97,
+              "reason": "Only a cut would give NO; record shows 4-3 hike, no member for a cut, three for stability. Residual: oil plunge or shock within a month.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.97,
+              "reason": "No market. Rate 4.00% after 4-3 hike; record shows no member for a cut. Cut in December very unlikely.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.97,
+              "reason": "Rate 4.00%; no member favours a cut.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "Weekly re-forecast: the record of the 5 Nov meeting shows a 4–3 vote for the hike to 4.00% and no member arguing for a cut, so a December cut below 4% is very unlikely.",
+          "note_cs": "Týdenní přepočet: záznam z jednání 5. listopadu ukazuje hlasování 4:3 pro zvýšení na 4,00 % a nikdo z členů rady nenavrhoval snížení, takže prosincové snížení pod 4 % je velmi nepravděpodobné."
         }
       ],
       "result": null
@@ -1957,6 +2001,56 @@
             "url": "https://polymarket.com/event/next-mayor-of-prague-2026",
             "p": 0.9665,
             "read_at": "2026-11-10T18:21:13Z"
+          }
+        },
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.95,
+          "combined": 0.948,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.95,
+              "reason": "Signed 47/65 STAN-led coalition, vote 19 Nov with fallback until 30 Nov; other-scheduled slip ~8% per date, mostly recoverable within window.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.94,
+              "reason": "Coalition 47/65 with Hlaváček; vote 19 Nov with fallback dates before 30 Nov if delayed.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.95,
+              "reason": "47-seat coalition with Hlavacek; even if 19 Nov slips (about 8%), eleven days remain. Risk: coalition deal collapsing over council names.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.95,
+              "reason": "Polymarket Hlaváček next mayor 0.9665 (no date); window to 30 Nov leaves room for a slipped 19 Nov vote.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.95,
+              "reason": "Coalition 47/65 with Hlaváček; vote 19 Nov, 11 days slack.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "Weekly re-forecast: the STAN–Spolu–Praha sobě coalition (47 of 65 seats) has agreed on Hlaváček and an 11-member council; the assembly votes on 19 Nov.",
+          "note_cs": "Týdenní přepočet: koalice STAN, Spolu a Prahy sobě (47 z 65 mandátů) se dohodla na Hlaváčkovi a jedenáctičlenné radě; zastupitelstvo hlasuje 19. listopadu.",
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/next-mayor-of-prague-2026",
+            "p": 0.9665,
+            "read_at": "2026-11-17T18:06:25Z"
           }
         }
       ],
@@ -6185,6 +6279,57 @@
             "p": 0.928,
             "read_at": "2026-11-10T18:20:44Z"
           }
+        },
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.88,
+          "combined": 0.883,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.83,
+              "reason": "ECB held 29 Oct (last hike 16 Sep per reference data); chief economist and Bundesbank signal December hike. Class: well-signalled ECB moves ~85-90% follow-through; small data risk.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.85,
+              "reason": "Lane, Nagel signal Dec hike; Lagarde 7 Nov said hike possible; sources report Dec hike then pause; inflation 4.0%. Falling oil is the main risk.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.83,
+              "reason": "Lane and Nagel signalled a December hike with inflation at 4.0%; no new signal. Case against: a month of data left, falling oil prices could let doves argue for a pause.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.97,
+              "reason": "Polymarket December ECB: +25bp 0.968, +50bp 0.012, no change 0.022. Take market, small haircut for thin volume.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.85,
+              "reason": "Lane and Nagel signalled December hike; inflation 4%.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "Weekly re-forecast: no new ECB signal since 10 Nov; the Commission's autumn forecast (17 Nov) raised euro-area growth to 1.2%, and inflation is at 4.0% (October flash).",
+          "note_cs": "Týdenní přepočet: od 10. listopadu žádný nový signál ECB; podzimní prognóza Komise (17. listopadu) zvýšila odhad růstu eurozóny na 1,2 % a inflace je na 4,0 % (předběžný odhad za říjen).",
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/ecb-interest-rates-december-2026",
+            "p": 0.98,
+            "read_at": "2026-11-17T18:06:36Z"
+          },
+          "market_note": "The Polymarket buckets for a December hike (0.98) sit 10 points above us; we keep some weight on a pause after the 4.0% October flash is revised and on the ECB's data dependence."
         }
       ],
       "result": null
@@ -7014,6 +7159,57 @@
           ],
           "note": "Weekly re-forecast: the budget is now in the Senate until about 9 December after the Assemblée rejected it; a 49.3 before the year ends needs the final reading in late December, while ordinances or a special law, as last year, would mean no.",
           "note_cs": "Týdenní přepočet: rozpočet je po zamítnutí v Národním shromáždění v Senátu zhruba do 9. prosince; článek 49.3 před koncem roku by vyžadoval závěrečné čtení koncem prosince, kdežto nařízení nebo zvláštní zákon jako loni by znamenaly ne."
+        },
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.28,
+          "combined": 0.283,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.25,
+              "reason": "Class: PLF 49.3 use: 2022-2024 yes, 2025 no (special law). Senate vote 9 Dec, ordinance deadline 17 Dec leave narrow window; minority government reluctance. Hold near board.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.32,
+              "reason": "Senate vote 9 Dec, CMP mid-Dec, 70-day deadline 17 Dec; Sud Radio 9 Nov: executive undecided between 49.3 and ordinances. 49.3 in new reading before 31 Dec plausible but censure risk; ordinances or special law alternatives.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.23,
+              "reason": "Timetable leaves only a late-December new reading for 49.3; ordinance deadline 17 Dec and special-law route as last year point to NO; censure risk deters use.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.38,
+              "reason": "Kalshi 49.3-before-2027 0.58 but tiny volume ($589); Polymarket/Kalshi budget enacted by 31 Dec 0.41, which in practice needs 49.3. Blend toward the more liquid budget market.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.25,
+              "reason": "Ordinances or special law plausible; 49.3 needs new reading late December.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "Weekly re-forecast: nothing new; the Senate debates the budget from 20 Nov to 8 Dec and votes on 9 Dec, so a 49.3 in 2026 needs a late-December final reading, while ordinances or a special law (as last year) mean no.",
+          "note_cs": "Týdenní přepočet: nic nového; Senát projednává rozpočet od 20. listopadu do 8. prosince a hlasuje 9. prosince, takže 49.3 ještě v roce 2026 by vyžadovalo závěrečné čtení koncem prosince, kdežto nařízení nebo zvláštní zákon jako loni znamenají ne.",
+          "market": {
+            "source": "kalshi",
+            "url": "https://kalshi.com/markets/kxfrance493",
+            "p": 0.58,
+            "read_at": "2026-11-17T18:06:49Z"
+          },
+          "market_note": "The Kalshi market (0.58) traded only about $589; Polymarket and Kalshi give 0.41 for France passing a budget by 31 Dec at all, and Lecornu's pledge and the ordinance route after 17 Dec make 49.3 within 2026 less likely than the thin market suggests."
         }
       ],
       "result": null
@@ -10617,6 +10813,50 @@
           ],
           "note": "STAN chose a coalition without the Pirates on 10 November; the planned council split (STAN 5 plus the mayor, Spolu 4, Praha sobě 2) leaves no seat for them.",
           "note_cs": "STAN 10. listopadu zvolil koalici bez Pirátů; plánované rozdělení rady (STAN 5 a primátor, Spolu 4, Praha sobě 2) pro ně nenechává žádné místo."
+        },
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.03,
+          "combined": 0.028,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "Agreed 11-seat council with no Pirate seat; reversal within 11 days needs coalition collapse. Low base rate.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "Agreed 11-member council: mayor+4 STAN, 4 Spolu, 2 Praha sobě; Pirates excluded.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.02,
+              "reason": "Council split agreed without Pirates; YES needs coalition collapse and a new deal with council elected by 30 Nov.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "No market. Agreed 11-member council has no Pirate seat; only a collapse of the deal before the vote changes this.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.03,
+              "reason": "Council of 11 agreed without Pirates.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "Weekly re-forecast: the agreed 11-member council splits STAN 5, Spolu 4, Praha sobě 2, with no Pirates; the vote is on 19 Nov.",
+          "note_cs": "Týdenní přepočet: dohodnutá jedenáctičlenná rada má složení STAN 5, Spolu 4, Praha sobě 2, bez Pirátů; hlasuje se 19. listopadu."
         }
       ]
     },
@@ -12298,6 +12538,83 @@
           "market_note": "Polymarket 'Next Prime Minister of Spain' prices Feijóo at 0.85 (about $1m traded), but it has no 31 Jan deadline; our question adds the timing of the investiture (Cortes constitute in late December; PP needs Vox's votes or abstention), so it is not a match.",
           "note": "New question: a snap election on 29 Nov, with PP clearly ahead in the poll average and PP plus Vox projected above a majority; the open part is whether a PP–Vox understanding produces an investiture vote by 31 January.",
           "note_cs": "Nová otázka: předčasné volby 29. listopadu, v nichž lidovci (PP) v průměru průzkumů jasně vedou a PP s Vox mají podle projekcí většinu; otevřené je, zda dohoda PP a Vox přinese hlasování o investituře do 31. ledna."
+        }
+      ]
+    },
+    {
+      "id": "rs-student-list-president",
+      "scope": "europe",
+      "topic": "Serbia presidency",
+      "question": "Will a candidate nominated or endorsed by the Student List be elected President of Serbia by 24 January 2027?",
+      "question_cs": "Bude do 24. ledna 2027 zvolen srbským prezidentem kandidát, kterého navrhla nebo podpořila Studentská kandidátka?",
+      "criterion": "Yes if, by 24 Jan 2027 23:59 CET, Serbia's Republic Electoral Commission (rik.parlament.gov.rs) publishes results declaring elected as President of the Republic a candidate who was nominated by, or formally endorsed before the decisive round by, the Student List (as reported by two major outlets). No if another candidate is declared elected, or if no President has been declared elected by that time.",
+      "criterion_cs": "Ano, pokud do 24. ledna 2027 ve 23:59 SEČ srbská Republiková volební komise (rik.parlament.gov.rs) zveřejní výsledky, podle nichž byl prezidentem republiky zvolen kandidát, kterého navrhla Studentská kandidátka nebo kterého formálně podpořila před rozhodujícím kolem (podle zpráv dvou velkých médií). Ne, pokud je zvolen jiný kandidát nebo pokud do té doby žádný prezident zvolen není.",
+      "resolution_source": "https://www.rik.parlament.gov.rs/",
+      "opened": "2026-11-17",
+      "resolves_by": "2027-01-24T23:59:00+01:00",
+      "background": "Vučić resigned as president in September 2026 to run for prime minister; the Student List won 140 of 250 seats on 25 October. With the new Assembly constituted on 17 November and a new speaker becoming acting president, a snap presidential election must be called by 27 November and held by 27 December; a run-off, if needed, follows about two weeks later. Vučić cannot run again (two-term limit); both camps are expected to field candidates.",
+      "sources": [
+        {
+          "title": "DW: Students' List candidates take seats as Serbian parliament opens (17 Nov 2026)",
+          "url": "https://www.dw.com/en/students-list-candidates-take-seats-as-serbian-parliament-opens/a-79969166"
+        },
+        {
+          "title": "The Guardian: Serbia's Student List candidates sworn in as MPs after election triumph (17 Nov 2026)",
+          "url": "https://www.theguardian.com/world/2026/nov/17/serbia-student-list-mps-sworn-in-election-triumph"
+        }
+      ],
+      "base_rate": null,
+      "history": [
+        {
+          "at": "2026-11-17T18:25:00Z",
+          "p": 0.42,
+          "combined": 0.425,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.22,
+              "reason": "No election date in given facts; Vučić's term runs to 2027 so a vote by 24 Jan needs an early election already called (date choice hints a runoff). P(election held) ~0.4 x P(Student List wins) ~0.55.",
+              "at": "2026-11-17T19:05:20+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.62,
+              "reason": "Student List won 140/250 seats; snap presidential vote must be held by 27 Dec, runoff ~2 weeks later, so declaration by 24 Jan is feasible but tight. Student candidate favoured; no candidate named yet; SNS fields own.",
+              "at": "2026-11-17T19:07:01+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.28,
+              "reason": "No fact given that a presidential vote is set before 24 Jan 2027; question deadline suggests one may be. Rough: about 0.45 that a result is declared in time, times about 0.62 win after parliamentary triumph.",
+              "at": "2026-11-17T18:05:14+00:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.45,
+              "reason": "Kalshi student-backed winner 0.87 (Polymarket Saičić 0.67); election call by 30 Nov 0.955. Vote 45-60 days after call puts first round in January; a runoff would likely fall after 24 Jan.",
+              "at": "2026-11-17T19:08:38+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.6,
+              "reason": "Student List won 140/250 seats; presidential vote due by about 27 Dec, runoff before 24 Jan; presidential race less certain.",
+              "at": "2026-11-17T18:10:00+00:00"
+            }
+          ],
+          "note": "New question: Serbia must call a snap presidential election by 27 Nov and hold it by 27 Dec (DW); Vučić cannot run again; a run-off would follow about two weeks later, so a declared winner by 24 Jan is possible but tight.",
+          "note_cs": "Nová otázka: Srbsko musí vyhlásit předčasné prezidentské volby do 27. listopadu a uspořádat je do 27. prosince (DW); Vučić znovu kandidovat nemůže; případné druhé kolo by následovalo asi o dva týdny později, takže vyhlášený vítěz do 24. ledna je možný, ale časově napjatý.",
+          "market": {
+            "source": "kalshi",
+            "url": "https://kalshi.com/markets/kxserbiapres",
+            "p": 0.87,
+            "read_at": "2026-11-17T18:06:08Z"
+          },
+          "market_note": "Kalshi (0.87) and Polymarket ask who wins, with no deadline; our question also needs a winner declared by 24 Jan 2027, which a January run-off could miss. Forecasters split 0.22–0.62 on the timing."
         }
       ]
     }

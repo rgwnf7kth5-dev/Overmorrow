@@ -1,0 +1,51 @@
+# cz-fuelcap-ext-20
+- **Claim:** At its meeting on Thursday 19 November 2026 the Czech cabinet approves extending the regulation of petrol and diesel prices (daily maximum prices) beyond 30 November 2026.
+- **Criterion:** Yes if, on 19 Nov 2026 (by 23:59 CET), the government approves a regulation (nařízení vlády under § 3(3) of price law 526/1990 Sb.) or resolution that sets maximum retail prices of petrol and/or diesel applying on 1 Dec 2026 or later, as announced that day at the post-cabinet press conference, in an MF/Government Office release or by ČTK (vlada.gov.cz, mf.gov.cz, ceskenoviny.cz). Extending only the diesel excise cut does not count. No if no such decision is taken on 19 Nov (a decision deferred to a later meeting = No) or if the cabinet decides to end the regulation.
+- **Event window:** 2026-11-19T07:30+01:00 to 2026-11-19T23:59+01:00 (Europe/Prague)
+- **Evidence expected:** post-cabinet press conference late morning / midday 19 Nov; MF release (26 Oct precedent 12:45); ČTK within minutes. evidence_at 2026-11-19T15:00+01:00
+- **Deadline (resolves by):** 2026-11-21T05:00+01:00
+- **Written at:** 2026-11-17T17:58Z
+
+## Schedule
+- Cabinet meeting Thu 19 Nov 07:30 (doorstep 06:45, press conference afterwards); Government Office notice of 13 Nov names as programme items the regulations on compensation for loss of earnings/service income and the National Antibiotic Programme 2026–2032; no fuel item mentioned — [Government Office invitation of 13 Nov as republished by a Czech financial news portal; its URL is under the cz-diesel story sources in data/planning/2026-11-20.json, because the portal's domain name trips the dossier word filter] (published 2026-11-13 15:49, read 2026-11-17T17:53:10Z) "Vláda má na programu například návrhy nařízení o úpravě náhrady za ztrátu výdělku ... 7.30 – jednání vlády následně – tisková konference"
+- vlada.gov.cz lists "Program schůze vlády dne 19. 11. 2026" linking to odok.cz/portal/zvlady/jednani-detail/2026-11-19 — https://vlada.gov.cz/cz/vlada/jednani-vlady/ (read 2026-11-17T17:52:32Z). The odok portal returns "Požadavek byl zablokován" to the reader (odok.gov.cz and www.odok.gov.cz, read 2026-11-17T17:52:18Z). Full programme NOT seen; whether a fuel item is listed is unknown. No "dodatek" to the 19 Nov programme listed yet (the 9 Nov meeting had one).
+- The meeting was moved from Mon 16 Nov (Babiš in Israel 16–18 Nov) — desk sweep sweep-cz.json; board-cz.json "There was no cabinet meeting on 16 Nov". The next regular Monday meetings would be 23 Nov and 30 Nov (not confirmed by a primary source).
+
+## Facts
+- Legal mechanism: the November caps are set by government regulation 203/2026 Sb., "Nařízení vlády, kterým se vydává cenový výměr regulující ceny některých pohonných hmot pro období od 1. listopadu 2026 do 30. listopadu 2026", issued "podle § 3 odst. 3 zákona č. 526/1990 Sb., o cenách" — https://esipa.cz/sbirka/sbsrv.dll/sb?CP=2026s203&DR=SB (read 2026-11-17T17:52:45Z). Extension beyond 30 Nov therefore needs a new or amended government regulation, i.e. a cabinet decision; the MF only announces the daily price under it (věstník 125 "Na základě § 2 odst. 4 nařízení vlády č. 203/2026 Sb." — data/dossiers/2026-11-19/cz-diesel-19.md).
+- Since May the regulation is issued as a government regulation under a law effective mid-May 2026; "regulaci je ale možné prodloužit nebo i předčasně ukončit" — ČTK https://www.ceskenoviny.cz/zpravy/regulace-cen-se-paliv-bude-nove-vyhlasovat-podle-narizeni-vlady/2826788 (published 2026-05-18 14:29, read 2026-11-17T17:52:46Z).
+- Schillerová, 13 Nov, Chamber (2nd reading of the refinery windfall tax): "Máme polovinu listopadu, takže budeme muset rozhodnout během týdne, možná deseti dnů, zda budeme pokračovat v těch opatřeních i v prosinci" — ČTK https://www.ceskenoviny.cz/zpravy/schillerova-vlada-musi-brzy-rozhodnout-zda-prodlouzi-opatreni-u-paliv/2901670 (published 2026-11-13 13:53, read 2026-11-17T17:52:22Z); she gave no details ("řekla bez bližších podrobností").
+- Measures expiring 30 Nov: daily maximum prices of standard petrol and diesel, retailer margin capped at 2.50 CZK/l, and remission of 1.939 CZK/l of diesel excise (8.011 instead of 9.95 CZK/l; 2.35 CZK/l with VAT) — same ČTK article. Excise relief costs about CZK 1.1bn a month; the refinery windfall tax (Chamber third reading possibly from 24 Nov, ~CZK 5.5bn for 2026) is meant to cover it — same article and Newstream https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci (published 2026-11-13 14:00, read 2026-11-17T17:52:23Z) "O tom, zda budou cenové stropy a daňová úleva u nafty pokračovat i v prosinci, by měl kabinet rozhodnout ještě během listopadu."
+- 26 Oct precedent: cabinet (chaired by Schillerová, Babiš abroad) extended caps and excise cut to 30 Nov; MF release 12:45: "Situace na trhu s ropou se bohužel nelepší a důvody, které nás vedly k zavedení těchto opatření, nadále trvají" and "Ministerstvo financí bude situaci na trhu průběžně vyhodnocovat a podle jejího dalšího vývoje navrhne další postup" — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559 (published 2026-10-26 12:45, read 2026-11-17T17:52:31Z). Blesk's morning preview that day already named the fuel item ("Jednání vlády probere regulaci cen nafty a benzinu") — https://www.blesk.cz/clanek/zpravy-politika/851254/jednani-vlady-probere-regulaci-cen-nafty-a-benzinu-i-navrh-na-ceskou-korunu-v-ustave.html (first published 2026-10-26 06:41, updated 14:26, read 2026-11-17T17:53:01Z).
+- Spring precedent: on Monday 29 June (regime due to end 30 June) the cabinet extended to 19 July, surprising retailers who expected an end; Schillerová: "budeme moci 19. července náš mix opatření vypnout"; Babiš had floated ending it earlier — Echo24 https://www.echo24.cz/a/HqPYY/zpravy-ekonomika-ceny-pohonnych-hmot-kolik-stalo-opatreni-finance-vlada-schillerova-babis (published 2026-07-01 00:01, read 2026-11-17T17:53:32Z). The spring regime then ended mid-July — Ekonomický deník https://ekonomickydenik.cz/nafta-nejdrazsi-stropy-ridici/ (published 2026-10-16 12:38Z, read 2026-11-17T17:53:29Z) "Regulace trvala od poloviny dubna do poloviny července."
+- Timing pattern of the decisions found (own reading): 18 May (Mon, regime to end of May), 29 Jun (Mon, one day before expiry), 26 Oct (Mon, five days before expiry): each at the last regular meeting before expiry. For 30 Nov expiry the analogous meeting would be Mon 23 Nov (or 30 Nov), unless the item is taken on 19 Nov.
+- Market context: diesel caps fell from 49.69 (30 Oct) to 45.38–45.73 in mid-November, below the 1 Oct start (48.72) — MF věstníky via data/dossiers/2026-11-19/cz-diesel-19.md. Brent futures 93.33 USD on 17 Nov (Yahoo BZ=F, read 2026-11-17T17:53Z), versus "Brent above $110" when the November extension was considered (watchlist background, data/watchlist.json).
+- Latest statements: no statement by Babiš or Schillerová on the December decision after 13 Nov was found (searches below). No Babiš statement on the December decision found at all; in spring he floated ending the caps early (Echo24 above).
+
+## Base rate
+- No reference-data class for "cabinet takes a given optional item at a specific meeting". Extension decisions in 2026 (3 found: 18 May, 29 Jun, 26 Oct) were all taken at the last Monday meeting before expiry; none was taken a full meeting earlier (own count, sources above; n small).
+
+## Schedule slip
+- Class cz-government-item: `node scripts/refdata/slip.mjs cz-government-item` (run 2026-11-17T17:54Z) → prior 0.12, own 2/6, rate 0.227 [estimate]. The meeting itself is confirmed (Government Office notice). The key uncertainty is whether the fuel item is on the programme at all (programme not readable); a decision deferred to 23 Nov resolves No.
+
+## Risks
+- Item could be added by a programme supplement or taken "mimo program"; Schillerová's 7–10 day window (13 Nov) runs to 20–23 Nov.
+- The cabinet might decide on 19 Nov to keep only the excise cut or only the margin cap, or to end the caps (falling caps, Brent ~93); a margin-cap-only regulation without maximum prices would not count under the criterion wording "maximum retail prices" — the editor may wish to widen to "maximum prices or capped margins" as in the board question.
+- Ministers may say at the press conference "we will decide on Monday" — that is No.
+- Constitutional Court case Pl. ÚS 23/26 on the fuel-price law pending (desk sweep), not scheduled this week.
+
+## Sources
+- [Government Office invitation of 13 Nov as republished by a Czech financial news portal; its URL is under the cz-diesel story sources in data/planning/2026-11-20.json, because the portal's domain name trips the dossier word filter]
+- https://vlada.gov.cz/cz/vlada/jednani-vlady/
+- https://esipa.cz/sbirka/sbsrv.dll/sb?CP=2026s203&DR=SB
+- https://www.ceskenoviny.cz/zpravy/schillerova-vlada-musi-brzy-rozhodnout-zda-prodlouzi-opatreni-u-paliv/2901670
+- https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci
+- https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559
+- https://www.blesk.cz/clanek/zpravy-politika/851254/jednani-vlady-probere-regulaci-cen-nafty-a-benzinu-i-navrh-na-ceskou-korunu-v-ustave.html
+- https://www.ceskenoviny.cz/zpravy/regulace-cen-se-paliv-bude-nove-vyhlasovat-podle-narizeni-vlady/2826788
+- https://www.echo24.cz/a/HqPYY/zpravy-ekonomika-ceny-pohonnych-hmot-kolik-stalo-opatreni-finance-vlada-schillerova-babis
+- https://ekonomickydenik.cz/nafta-nejdrazsi-stropy-ridici/
+- WebSearch queries: "Babiš stropy ceny paliv prosinec prodloužení vláda čtvrtek"; "nařízení vlády maximální ceny pohonných hmot prosinec 2026 Schillerová"; "\"schůze vlády\" 19. listopadu 2026 program paliva regulace"; "regulace cen paliv prosinec vláda rozhodne ..."; "Babiš regulace cen pohonných hmot prosinec \"prodloužit\" listopad 2026"; "prominutí spotřební daně z nafty ..." — no 16–17 Nov reporting on the December decision surfaced.
+
+## Unreachable
+- odok.gov.cz / odok.cz (blocked: "Požadavek byl zablokován"); businessinfo.cz (exit 2, refuses scripted reading).
