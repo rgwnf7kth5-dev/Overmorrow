@@ -1,0 +1,3 @@
+# eu-uk-sps-21 — signals
+- markets.mjs search, read 2026-11-18T17:55:17–17:55:31Z ("EU UK summit", "UK EU SPS agreement", "UK EU youth mobility", "Brexit reset"): no market on the 20 Nov summit, the SPS agreement or the ETS-linking agreement. Results were unrelated (Polymarket "European military action on Iran by Dec 31") or long-dated Metaculus questions on UK rejoining the EU / EEA (no community forecast via API). NO MATCH.
+- No bookmaker prices, published models or pundit probabilities found. Qualitative only: ING "A deal is widely expected on 20 November" (econ sweep); a senior EU diplomat to AFP: the three deals "appeared to have largely been wrapped up".

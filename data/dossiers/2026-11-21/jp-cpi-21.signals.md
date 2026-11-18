@@ -1,0 +1,6 @@
+# jp-cpi-21 — signals
+- markets.mjs search, read 2026-11-18T17:56Z ("Japan CPI", "Japan inflation October", "Bank of Japan December"; run without METACULUS_TOKEN, not set in the environment). No market on the October 2026 national headline CPI print.
+- Polymarket "Japan Core CPI YoY in 2026" (https://polymarket.com/event/japan-core-cpi-yoy-in-2026-20260617224131789): "≤1.9%" Yes 0.6175 (vol ~$47.6k, liq ~$2.6k); "2.0–2.4%" Yes 0.3665 (vol ~$43.7k); "2.5–2.9%" Yes 0.0015. Core (ex fresh food), calendar-year 2026 — different measure and period; does not match.
+- Polymarket "Japan Core-core CPI YoY in 2026" (https://polymarket.com/event/japan-core-core-cpi-yoy-in-2026-20260617223728725): "2.0–2.4%" Yes 0.915 (vol ~$34.7k, liq ~$0.7k). Different measure and period; does not match.
+- Context only (BoJ December meeting, not the claim): Polymarket "Bank of Japan increases interest rates by 25 bps after the December 2026 meeting?" Yes 0.93 (vol ~$30.8k, liq ~$6.2k) — https://polymarket.com/event/bank-of-japan-decision-in-december-20260918; "No change" Yes 0.045. Kalshi KXCBDECISIONJAPAN: hike 25 bp 0.90 (vol ~$16.9k), hold 0.08 (vol ~$21.0k), hike >25 bp 0.04 — https://kalshi.com/markets/kxcbdecisionjapan. All read 2026-11-18T17:56Z.
+- No published model probabilities for the October print found.

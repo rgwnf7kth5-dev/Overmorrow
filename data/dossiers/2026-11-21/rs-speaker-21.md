@@ -1,0 +1,59 @@
+# rs-speaker-21
+- **Claim:** Serbia's National Assembly elects Aleksandar Čupić (Student List) as its speaker by 23:59 on 20 Nov 2026 (Europe/Belgrade).
+- **Criterion:** YES if, between 05:00 on 19 Nov 2026 and 23:59 on 20 Nov 2026 Belgrade time, the National Assembly of Serbia (15th legislature) elects Aleksandar Čupić President (speaker) of the National Assembly, i.e. the announced vote gives him at least 126 votes (majority of all 250 MPs), as reported by parlament.gov.rs, N1, RTS, Tanjug/FoNet or B92. NO if no speaker is elected in that window (debate still running, sitting adjourned past 20 Nov, vote not held), if Čupić falls short of 126, or if someone else is elected. A result published after 23:59 about a vote held within the window counts.
+- **Event window:** 2026-11-19T05:00+01:00 – 2026-11-20T23:59+01:00 (Europe/Belgrade)
+- **Evidence expected:** N1 live blog / parlament.gov.rs / Tanjug on the day of the vote; most likely Thu 19 Nov afternoon or evening (sitting resumes 10:00; SNS says it will finish its speeches by 13:00). evidence_at 2026-11-19T18:00+01:00 (could slip to 20 Nov).
+- **Resolves by:** 2026-11-22T05:00+01:00
+- **Written at:** 2026-11-18T17:58Z
+
+## Schedule
+- The constituent sitting of the 15th legislature opened Tue 17 Nov; mandates verified, groups formed; the second agenda item (speaker election) not completed; "The session is set to resume at 10 am on Wednesday." — https://n1info.rs/english/news/serbian-parliament-adjourns-first-day-of-inaugural-session-to-resume-wednesday/ (published 2026-11-17T20:33+01:00, read 2026-11-18T17:53Z)
+- Day two (Wed 18 Nov): debate on the speaker candidates continued; the chair "Stojan Radenović je oko 18.00 časova zaključio raspravu za danas. Sednica će biti nastavljena sutra u 10.00 sati." — N1 live blog https://n1info.rs/vesti/blog-nastavak-konstitutivne-sednice-skupstine-srbije-uzivo-2026/ (published 2026-11-18T09:48+01:00, modified 17:11Z, read 2026-11-18T17:53Z)
+- Same blog: SNS group leader Vučić "je rekao da će ta stranka završiti sa raspravom do 13 sati. 'A onda vi odredite vreme za glasanje'" (Thursday). Student List MP Gašić had asked SNS to extend Wednesday's sitting so the speaker could be elected that evening; this did not happen.
+- Agenda of the constituent sitting (six items): verification of mandates, election of the speaker and deputy speakers, appointment of the secretary-general, working bodies, delegations; convened by outgoing speaker Brnabić — https://www.novosti.rs/vesti/politika/1671524/jos-zna-novi-celnik-parlamenta-konstitutivna-sednica-narodne-skupstine-zakazana-sutra-poznate-tacke-dnevnog-reda (published 2026-11-16T07:49+01:00, read 2026-11-18T17:53Z)
+- No statutory deadline for finishing the speaker election was found. Indirect pressure: the presidential election must be called by 27 Nov (see Facts); the 90-day government-formation clock runs from the constitution of the Assembly.
+- No primary-source (parlament.gov.rs) agenda page for Thu 19 Nov was read; the schedule rests on the chair's announcement as reported by N1 and B92 (B92 ticker: "Nastavak sutra u 10 časova; Predsednik još nije izabran", seen on https://www.b92.net/english/politics/280780/brnabic-presidential-elections-to-be-called-by-november-27/vest, read 2026-11-18T17:54Z).
+
+## Facts
+- Candidates: Student List — Aleksandar Čupić, docent at the Belgrade Faculty of Transport and Traffic Engineering; opposition (SNS) — mathematician Stojan Radenović, who chairs the sitting as the oldest MP — N1 blog 18 Nov (above) "Kandidat Studentske liste za predsednika Skupštine Srbije je docent Saobraćajnog fakulteta u Beogradu Aleksandar Čupić, a kandidat opozicije je ... Stojan Radenović"
+- Seats: Student List 140, "Aleksandar Vučić – Ujedinjena Srbija" 103, minority lists 7 (SVM 2, Albanian coalition 2, Ljajić 1, SDA Sandžaka 1, Zukorlić 1), final RIK results of 5 Nov — Novosti 1671524 (above) "apsolutnu većinu od 140 mandata osvojila je 'Studentska lista'"; DW https://www.dw.com/en/students-list-candidates-take-seats-as-serbian-parliament-opens/a-79969166 (published 2026-11-17T12:09Z, read 2026-11-18T17:53Z) "The movement holds 140 seats in the 250-member parliament while Vucic's ... SNS holds 103"
+- Majority required: Rules of Procedure — "Za predsednika Narodne skupštine izabran je narodni poslanik za koga je glasala većina od ukupnog broja narodnih poslanika." (126 of 250) — https://www.paragraf.rs/propisi/poslovnik-narodne-skupstine-republike-srbije.html (consolidated text, read 2026-11-18T17:54Z). Student List margin over 126: 14 seats.
+- Procedure (same Rules): candidate proposed by at least 30 MPs; "O predlogu kandidata za predsednika Narodne skupštine otvara se pretres. Nakon pretresa, predsedavajući utvrđuje listu kandidata ... po azbučnom redu"; the Rules provide a secret ballot run by the chair ("Tajnim glasanjem za izbor predsednika Narodne skupštine rukovodi predsedavajući"). The chair (Radenović, SNS) therefore closes the debate and conducts the vote.
+- At the pre-session consultations (13 Nov) the lists' representatives "su se složili da glasanje bude javno" (public vote) — https://www.novosti.rs/vesti/politika/1670838/oglasila-studentska-lista-posle-konsultacija-predsednik-skupstine-broj-potpredsednika-bice-izglasani-vecinom-sednici (published 2026-11-13T15:03+01:00, read 2026-11-18T17:53Z). Whether the vote will be public or secret was not confirmed for Thursday.
+- Obstruction: Student List MP Bubnjević said the proposer's representative (Vučić) was "zloupotrebljavajući član 96" (speaking rights of the proposer's representative) — N1 blog 18 Nov. Student List MP Đajić: "dvoje ljudi opstruiše rad Skupštine već dva dana, a da će tako će nastaviti i sutra"; once Čupić is elected the Assembly will pass a Law on Government by urgent procedure "da bismo mogli što pre da izaberemo Vladu" — https://n1info.rs/vesti/djajic-dvoje-ljudi-opstruise-rad-skupstine-vec-dva-dana-tako-ce-nastaviti-i-sutra/ (published 2026-11-18T17:31+01:00, read 2026-11-18T17:53Z)
+- Student List withdrew its remaining speakers on Wednesday "u cilju produktivnosti" (Gašić) — N1 blog 18 Nov.
+- SNS on 17 Nov (Jovanov): the opposition will not impose personnel choices or decide on the majority's behalf — N1 day-one blog https://n1info.rs/vesti/blog-konstitutivna-sednica-skupstine-srbije-uzivo-2026/ (published 2026-11-17T09:07+01:00, read 2026-11-18T17:53Z)
+- Čupić faced SNS attacks over his property (Vučić read land-registry data); Čupić said he will file an asset report with the Agency — N1 headlines on the pages above ("Čupić: Podneću izveštaj o imovini Agenciji…", 18 Nov). No report of Student List MPs refusing to back him was found. Before the session Vučić claimed a "velika bitka" inside the Student List between Čupić and Katarina Šćepanović — https://www.novosti.rs/vesti/politika/1669945/vucic-skupstini-velika-bitka-unutar-studentske-liste-biti-predsednik-parlamenta (published 2026-11-10T18:35+01:00, read 2026-11-18T17:54Z); the Student List nominated Čupić.
+- Why it matters: the new speaker becomes acting president; the speaker has held that role since Vučić resigned in September; "A snap presidential election must be called by November 27 and held by December 27." — DW (above). Vučić resigned on 27 Sep 2026; 30–60 days must pass between calling and voting, so the final date to call is 27 Nov — B92 https://www.b92.net/english/politics/280780/brnabic-presidential-elections-to-be-called-by-november-27/vest (published 2026-10-30T12:15+01:00, read 2026-11-18T17:54Z)
+- Precedents for the length of the speaker debate at a constituent sitting:
+  - 2024: speaker vote on the third day of debate (18–20 Mar 2024, after the session opened on 6 Feb and was adjourned); Brnabić elected with 153 votes, opposition absent — https://n1info.rs/vesti/blog-treci-dan-rasprave-o-izboru-predsednice-parlamenta/ (published 2024-03-20T10:14+01:00, read 2026-11-18T17:53Z) "sa 153 glasova za i pet protiv"; https://vreme.com/vesti/medju-potpredsednicima-narodne-skupstine-nema-nikog-iz-opozicije/ (published 2024-03-20T17:57+01:00, read 17:54Z) "trećeg dana zasedanja"; on 18 Mar 2024 the chair (also Radenović) set the vote for Wednesday at 10:00 — https://vreme.com/vesti/konstitutivna-sednica-jos-jedan-dan-razmene-uvreda-vlasti-i-opozcije/ (published 2024-03-18T07:13+01:00, read 17:54Z)
+  - 2022: session opened 1 Aug; speaker expected to be elected on day two (2 Aug, Orlić) — https://vreme.com/vesti/nastavak-konstituisanja-skupstine-opozicija-nije-ni-malobrojna-ni-nemocna/ (published 2022-08-02T00:27+02:00, read 17:54Z) "Očekuje se da 250 poslanika danas izabere predsednika Skupštine"
+  - 2026: Thursday 19 Nov will be the third sitting day (debate on the speaker started 17 Nov).
+
+## Base rate
+- No class in pipeline/reference-data/ applies. Serbian constituent sittings: 2024 speaker vote on the 3rd day of the speaker debate; 2022 on day 2 (n=2, both with the majority's candidate elected at the first vote). Neither had a chair from the minority side.
+
+## Schedule slip
+- slip_class: other-scheduled. `node scripts/refdata/slip.mjs other-scheduled`: prior 0.07, own 7/93, rate 0.075 [estimate].
+- Signs of slip for this event: the chair belongs to SNS and the SNS group leader has spoken at length for two days; however, Vučić publicly said SNS will finish by 13:00 Thursday and left the timing of the vote to the majority. The window covers two sitting days (Thu and Fri). No sign that the Student List candidate will change.
+
+## Risks
+- Continued filibuster: the proposer's representative (Art. 96) and procedural objections may keep the debate open past Friday; the chair controls when the debate is closed.
+- Vote mechanics: if a secret paper ballot is used, counting takes time but should still finish the same day.
+- Absences or defections in the Student List: the margin is 14 above 126; minority MPs (7) could add votes.
+- Candidate change (e.g. if property allegations escalate) → a different Student List speaker would make the claim NO as worded.
+- Possible early vote: if the Assembly sat after midnight on 18/19 Nov and voted before 05:00 19 Nov (no sign: adjourned ~18:00 on 18 Nov), the claim would fall outside the window.
+
+## Sources
+- https://n1info.rs/vesti/blog-nastavak-konstitutivne-sednice-skupstine-srbije-uzivo-2026/
+- https://n1info.rs/vesti/djajic-dvoje-ljudi-opstruise-rad-skupstine-vec-dva-dana-tako-ce-nastaviti-i-sutra/
+- https://n1info.rs/english/news/serbian-parliament-adjourns-first-day-of-inaugural-session-to-resume-wednesday/
+- https://n1info.rs/vesti/blog-konstitutivna-sednica-skupstine-srbije-uzivo-2026/
+- https://www.dw.com/en/students-list-candidates-take-seats-as-serbian-parliament-opens/a-79969166
+- https://www.novosti.rs/vesti/politika/1671524/jos-zna-novi-celnik-parlamenta-konstitutivna-sednica-narodne-skupstine-zakazana-sutra-poznate-tacke-dnevnog-reda
+- https://www.novosti.rs/vesti/politika/1670838/oglasila-studentska-lista-posle-konsultacija-predsednik-skupstine-broj-potpredsednika-bice-izglasani-vecinom-sednici
+- https://www.novosti.rs/vesti/politika/1669945/vucic-skupstini-velika-bitka-unutar-studentske-liste-biti-predsednik-parlamenta
+- https://www.paragraf.rs/propisi/poslovnik-narodne-skupstine-republike-srbije.html
+- https://www.b92.net/english/politics/280780/brnabic-presidential-elections-to-be-called-by-november-27/vest
+- https://n1info.rs/vesti/blog-treci-dan-rasprave-o-izboru-predsednice-parlamenta/ ; https://vreme.com/vesti/medju-potpredsednicima-narodne-skupstine-nema-nikog-iz-opozicije/ ; https://vreme.com/vesti/konstitutivna-sednica-jos-jedan-dan-razmene-uvreda-vlasti-i-opozcije/ ; https://vreme.com/vesti/nastavak-konstituisanja-skupstine-opozicija-nije-ni-malobrojna-ni-nemocna/
+- Failed: paragraf.rs alternative URLs (404); parlament.gov.rs Rules page returned only navigation; 021.rs article returned no body text.

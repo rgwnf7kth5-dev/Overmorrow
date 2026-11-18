@@ -1166,6 +1166,70 @@
           "note": "Weekly re-forecast: ČSÚ confirmed October inflation at 2.4% and the regulated fuel price caps kept falling (diesel CZK 45.87 for 12 Nov, the ninth cut in a row).",
           "note_cs": "Týdenní přepočet: ČSÚ potvrdil říjnovou inflaci na 2,4 % a regulované maximální ceny pohonných hmot dál klesají (nafta 45,87 Kč na 12. listopadu, deváté snížení za sebou).",
           "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.05,
+          "combined": 0.054,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.05,
+              "reason": "Class: Czech CPI monthly y/y change ≥0.6pp is rare; model Normal(2.65, sd 0.2) gives ~7% above 2.95. Fuel caps fell again 19 Nov and food was -4% y/y in Oct, so shaded to 0.05.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.05,
+              "reason": "October 2.4%; fuel caps resumed falling 19 Nov (diesel 45.68). Soft Nov-2025 base gives maybe 2.6-2.7; a 0.6pp jump to 3.0 needs an unusual month.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.05,
+              "reason": "Case for Yes: soft Nov-2025 base puts a flat month near 2.6-2.7 and food could rebound. But fuel caps kept falling to 19 Nov and October was 2.4%, so 3.0% needs a ~0.6 pp jump in one month.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.05,
+              "reason": "No market. Model: Oct 2.4%, soft Nov-2025 base puts flat month ~2.65, surprise sd 0.2 → P(≥3.0)=0.04; fuel caps fell again 19 Nov. Small tail for food/base effects.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:14:54+01:00",
+              "p": 0.07,
+              "reason": "Oct CPI 2.4% y/y (ČSÚ); 0.6pp jump in one month is unlikely despite fuel prices.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "note": "Fuel caps paused their decline on 17 Nov then fell again; no change. Weekly re-forecast by all five forecasters.",
+          "note_cs": "Stropy cen paliv 17. 11. přestaly klesat, pak opět klesly; beze změny. Týdenní nová předpověď všech pěti prognostiků."
         }
       ],
       "result": null
@@ -1444,6 +1508,78 @@
           "note": "At the 9 Nov coalition council SPD leader Okamura called Juchelka's softened version insufficient; Juchelka will table it as an MP's amendment and refuses to soften further, Motoristé back it; no deal reported by 11 Nov.",
           "note_cs": "Na koaliční radě 9. listopadu označil předseda SPD Okamura Juchelkovu zmírněnou verzi za nedostatečnou; Juchelka ji předloží jako poslanecký pozměňovací návrh a dál ustupovat odmítá, Motoristé ji podporují; do 11. listopadu dohoda oznámena nebyla.",
           "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.21,
+          "combined": 0.208,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.2,
+              "reason": "psp.cz: 99% of bills reaching 3rd reading pass, but timing is the issue: no SPD deal since 9 Nov, no 2nd-reading date, budget crowds December. P(deal)~0.4 x P(all readings by 31 Dec)~0.5, trimmed for a week lost.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.22,
+              "reason": "No SPD deal or second-reading date reported since the 9 Nov coalition council; another week gone with the budget crowding December. Deal still possible, but time is short.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.2,
+              "reason": "Case for Yes: ANO needs the savings from January and SPD could trade its vote in budget bargaining. But another week passed with no deal and no second-reading date, leaving six budget-crowded weeks.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.22,
+              "reason": "No market. Model P(SPD deal)~0.4 x P(2nd+3rd reading by 31 Dec|deal)~0.55. Trimmed from 0.25: a further week passed with no deal or second-reading date and the budget crowds December.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:28:54+01:00",
+              "p": 0.2,
+              "reason": "No coalition deal (SPD rejects Juchelka compromise), no second-reading date, budget crowds December; but coalition majority keeps some chance.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "union-of-facts"
+              ],
+              "rounds": [
+                {
+                  "p": 0.5,
+                  "at": "2026-11-18T19:14:54+01:00",
+                  "reason": "first board estimate without the facts the other four had (own research only); differed by more than 25 points"
+                }
+              ]
+            }
+          ],
+          "note": "No coalition deal with SPD reported since 9 Nov. Weekly re-forecast by all five forecasters. The outsider first worked without the facts the others had (spread over 25 points, cause: inputs); it was given the union of facts and re-estimated once (first figure kept in its rounds).",
+          "note_cs": "Od 9. 11. žádná zpráva o dohodě koalice s SPD. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
         }
       ],
       "result": null
@@ -5038,6 +5174,70 @@
           },
           "note": "Weekly re-forecast. The reported direct talks did not happen; on 12 Nov Ghalibaf said Iran's seven conditions must be implemented before it returns to talks, Rubio calls them unacceptable and the US has tightened sanctions; Qatar keeps mediating.",
           "note_cs": "Týdenní přepočet. Ohlašované přímé rozhovory se nekonaly; Ghalíbáf 12. listopadu uvedl, že Írán se k jednání vrátí až po splnění svých sedmi podmínek, Rubio je označil za nepřijatelné a USA zpřísnily sankce; Katar dál zprostředkovává."
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.19,
+          "combined": 0.194,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.17,
+              "reason": "No talks set; 17-18 Nov US strike on Qeshm and Iranian attacks on Kuwait/Bahrain; Qatar warns diplomacy undermined. Market was 0.315 before escalation and our criterion is stricter (both confirm same-venue round). Down from 0.24.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.18,
+              "reason": "Direct strikes resumed 17-18 Nov (Qeshm, Kuwait, Bahrain); Qatar calls it a dangerous escalation undermining diplomacy. Both-sides-confirmed same-venue round in six weeks is less likely; market was 0.315 before.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.17,
+              "reason": "Case for Yes: escalation often precedes a mediated round, Qatar is pushing harder and the 19 Nov Trump-Xi-Putin meeting covers Iran. But direct US-Iran strikes resumed 17-18 Nov and both sides must confirm a same-venue round.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.17,
+              "reason": "Polymarket senior diplomatic meeting by Dec 31 fell to 0.225 (from 0.315, $903k). Shaded down: our criterion needs both governments to confirm a same-venue negotiating round, and strikes resumed 17-18 Nov (Qeshm, Kuwait, Bahrain).",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:14:54+01:00",
+              "p": 0.3,
+              "reason": "Hormuz crisis context; both sides must confirm same-venue talks; market prices normal traffic by Dec only ~4.5%.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "note": "Direct US–Iran strikes resumed (Qeshm, Kuwait, Bahrain); mediators warn talks are further away. Re-forecast by all five forecasters.",
+          "note_cs": "Obnovily se přímé údery mezi USA a Íránem (Kešm, Kuvajt, Bahrajn); zprostředkovatelé varují, že se jednání vzdalují. Nová předpověď všech pěti prognostiků."
         }
       ],
       "result": null
@@ -5712,7 +5912,13 @@
           "note_cs": "Nová prognóza po podstatné zprávě: Bílý dům naplánoval na 19. listopadu v Šen-čenu dvoustrannou schůzku a pracovní oběd Trumpa se Si Ťin-pchingem vedle první schůzky Trump–Si–Putin (BBC, France 24, 14. listopadu); Trump odlétá do Asie v pondělí. Zbývajícím rizikem je pozdní zrušení cesty."
         }
       ],
-      "result": null
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://english.news.cn/20261118/c7ff5ee65b5c428b97678d92146d37be/c.html",
+        "note": "Xinhua: on 18 Nov 2026 Xi Jinping welcomed Donald Trump at Shenzhen airport and the two shook hands; an in-person meeting confirmed by Xinhua, as the criterion requires.",
+        "note_cs": "Agentura Nová Čína: Si Ťin-pching 18. listopadu 2026 přivítal Donalda Trumpa na letišti v Šen-čenu a oba si podali ruce; osobní setkání potvrzené agenturou, jak vyžaduje kritérium.",
+        "resolved_at": "2026-11-18T18:50:00Z"
+      }
     },
     {
       "id": "ca-bc-conservative-premier",
@@ -6014,6 +6220,78 @@
             "read_at": "2026-11-11T18:31:00Z",
             "match": "partial: identity (Doerkson next premier), no timing"
           }
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.95,
+          "combined": 0.95,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.95,
+              "reason": "Scheduled transitions with a 64/93 majority almost always happen on time (slip class small); premier and cabinet swearing-in set for 20 Nov, ten days before deadline; small residual for unverified date and unread 'constitutional question'.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.95,
+              "reason": "64-seat majority; MLAs sworn in 19 Nov, cabinet 20 Nov per timetable; no sign of delay found (searches show nothing new). Ten days of slack before 30 Nov.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.95,
+              "reason": "Case for No: the 20 Nov swearing-in is not re-verified and an unread 'constitutional question' report lingers. But a 64-of-93 majority, a premier-designate and ten days of slack make a slip past 30 Nov very unlikely.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.95,
+              "reason": "Polymarket Doerkson next premier 0.996 settles identity; swearing-in expected 20 Nov, ten days inside the deadline. Small discount: timetable not re-verified and unread 'constitutional question' report.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:28:54+01:00",
+              "p": 0.95,
+              "reason": "Union facts: Conservatives won 64/93 seats, Doerkson premier-designate, swearing-in scheduled 20 Nov; I lacked the election result.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "union-of-facts"
+              ],
+              "rounds": [
+                {
+                  "p": 0.02,
+                  "at": "2026-11-18T19:14:54+01:00",
+                  "reason": "first board estimate without the facts the other four had (own research only); differed by more than 25 points"
+                }
+              ]
+            }
+          ],
+          "note": "Nothing new; Doerkson's swearing-in still expected on 20 Nov. Weekly re-forecast by all five forecasters. The outsider first worked without the facts the others had (spread over 25 points, cause: inputs); it was given the union of facts and re-estimated once (first figure kept in its rounds).",
+          "note_cs": "Nic nového; Doerksonova přísaha se stále čeká 20. 11. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
         }
       ],
       "result": null
@@ -8759,6 +9037,70 @@
             "read_at": "2026-11-11T18:30:00Z",
             "match": "partial: identity only, no deadline; sum of Student-List-linked names (Šoškić 0.357, Popović 0.22, Saičić 0.10, Srdanović 0.06)"
           }
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.71,
+          "combined": 0.706,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.7,
+              "reason": "Student List has 140/250; Assembly constituted 17-19 Nov despite SNS obstruction; plan is speaker, then urgent Law on Government, then cabinet. ~10 weeks to 31 Jan; PM candidate still unnamed and Serbian formations often slow. Unchanged.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.72,
+              "reason": "Student List (140/250) sworn in 17 Nov; SNS obstructs speaker vote but they plan Law on Government by urgency to elect a government quickly. PM still unnamed; ~10 weeks left.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.71,
+              "reason": "Case for No: SNS has stalled the speaker vote for two days, no PM candidate is named and a Law on Government must pass first. But the list holds 140 of 250 seats and has ten weeks; obstruction delays, not blocks.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.68,
+              "reason": "Polymarket identity: Student-List-linked names sum ~0.66 (Šoškić 0.441, Popović 0.151, Saičić 0.046, Srdanović 0.025). Majority of 140/250 supports identity; timing risk: SNS obstruction, no candidate yet, 90-day clock runs past 31 Jan.",
+              "inputs": [
+                "signals",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:14:54+01:00",
+              "p": 0.72,
+              "reason": "Student List won 140/250 seats, sworn in 17 Nov; government must be formed within 90 days; MP said possibly by year-end; PM not yet named.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "note": "Assembly opened 17 Nov but speaker vote stalled by SNS speeches; still no PM candidate named. Weekly re-forecast by all five forecasters.",
+          "note_cs": "Skupština se sešla 17. 11., volbu předsedy zdržuje SNS; kandidát na premiéra stále nebyl jmenován. Týdenní nová předpověď všech pěti prognostiků."
         }
       ]
     },
@@ -11305,6 +11647,70 @@
           "note": "Weekly re-forecast: on 11 Nov the coalition lost a priority criminal-code vote 75–74 and Smer has mentioned early elections, but no no-confidence motion or resignation is in sight, and early elections would leave Fico in office beyond January.",
           "note_cs": "Týdenní přepočet: koalice 11. listopadu prohrála hlasování o prioritní novele trestního zákoníku 75:74 a Smer zmínil předčasné volby, žádný návrh na vyslovení nedůvěry ani demise však nejsou na obzoru a předčasné volby by Fica v úřadu ponechaly i po lednu.",
           "agents_note": "The outsider returned a figure it described as a guess without research; it is not used (four forecasters)."
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.06,
+          "combined": 0.063,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.07,
+              "reason": "Central European PMs with a thin or lost majority usually survive months; no-confidence needs 76 and none is filed; early elections would keep Fico in office past January. Friction (postal-vote bill, son's account) but no move against him.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.07,
+              "reason": "Coalition friction (postal-vote bill, Taraba group) but no no-confidence motion or resignation; removal needs 76 votes and early elections would keep Fico in office past January.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.08,
+              "reason": "Case for Yes: coalition stuck at 75 of 150, Taraba's group blocks bills, and a money-laundering story touches Fico's son. But removal needs 76 votes, no motion exists and early elections would keep him past January.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.08,
+              "reason": "No market. Base rate: CE PMs with a lost majority usually limp on; no-confidence needs 76 votes, no motion or resignation scheduled, and early elections would keep Fico in office past January. Friction persists, slight trim.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:14:54+01:00",
+              "p": 0.03,
+              "reason": "No sign of imminent fall of government; coalition holds.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "note": "Coalition friction continues but no move against Fico's office. Weekly re-forecast by all five forecasters.",
+          "note_cs": "Spory v koalici trvají, ale nic, co by ohrožovalo Ficův post. Týdenní nová předpověď všech pěti prognostiků."
         }
       ]
     },
@@ -11444,6 +11850,76 @@
             "p": 0.33,
             "read_at": "2026-11-11T18:28:25Z",
             "match": "close: 'out before Feb 1, 2027' matches the deadline; our criterion also counts an announced removal effective by then. Kalshi before Jan 1 0.10, Polymarket by Dec 31 0.125"
+          }
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.19,
+          "combined": 0.194,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.23,
+              "reason": "Base: a president-backed cabinet secretary rarely leaves in ~10 weeks (<10%), but elevated by Iran-war blame and Democratic House from Jan. No news since 11 Nov; impeachment shelved; Kalshi was 0.33. Slight time decay from 0.27.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.22,
+              "reason": "No new reporting since the House killed the impeachment floor vote on 10 Nov; Trump backs him. Another week passed; tail rests on a reshuffle or the new Congress in January.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.24,
+              "reason": "Case for Yes: Kalshi was at 0.33, the Iran war is escalating again and a post-midterm reshuffle is possible. But the impeachment route died 211-204, Trump praised him and a week passed with no new reporting.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.29,
+              "reason": "Kalshi out before Feb 1 at 0.29 ($434k), down from 0.33; before Jan 1 0.13, Polymarket by Dec 31 0.155. Our criterion also counts an announced removal effective by then, a small plus; no new news.",
+              "inputs": [
+                "signals"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:14:54+01:00",
+              "p": 0.07,
+              "reason": "Base rate of cabinet departures in a 2.5-month window is low absent a specific trigger.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "note": "No new reporting found on Hegseth's position since 11 Nov. Re-forecast by all five forecasters.",
+          "note_cs": "Od 11. 11. žádná nová zpráva o Hegsethově postu. Nová předpověď všech pěti prognostiků.",
+          "market": {
+            "source": "kalshi",
+            "kind": "exchange",
+            "url": "https://kalshi.com/markets/kxhegsethout",
+            "p": 0.29,
+            "read_at": "2026-11-18T18:15:00Z"
           }
         }
       ],
@@ -12446,6 +12922,79 @@
           ],
           "note": "New question: Abu Dhabi ended on 11 Nov with an agreed large prisoner exchange (TASS: more than 1,000 per side in two to three weeks); neither date nor numbers have been confirmed by Kyiv.",
           "note_cs": "Nová otázka: jednání v Abú Zabí skončila 11. listopadu dohodou o velké výměně zajatců (podle TASS přes 1000 na každou stranu do dvou až tří týdnů); Kyjev datum ani počty nepotvrdil."
+        },
+        {
+          "at": "2026-11-18T19:31:00+01:00",
+          "p": 0.65,
+          "combined": 0.651,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:07+01:00",
+              "p": 0.74,
+              "reason": "Precedent: May 2025 1,000-for-1,000 done within ~9 days of agreement; others slipped or staged. Zelensky (13 Nov) now confirms 1,000+ per side, TASS said 2-3 weeks from 11 Nov; four weeks of slack to 15 Dec. Up from 0.65.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:15:18+01:00",
+              "p": 0.58,
+              "reason": "Zelensky (13 Nov) confirms 1,000+ per side, but no date by 18 Nov; Crimean Bridge strike and Odesa attacks raise tension. TASS window (2-3 weeks) ends ~2 Dec; staging could split counts.",
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-18T19:14:53+01:00",
+              "p": 0.7,
+              "reason": "Case for No: no date a week on, large swaps have slipped or been staged below the count, and both sides must report 1,000+. But Zelensky confirmed the 1,000+ figure on 13 Nov with US involvement; four weeks remain.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-18T19:16:31+01:00",
+              "p": 0.62,
+              "reason": "Polymarket 'major' exchange by Dec 31 0.90, by Nov 30 0.425 (thin, looser threshold). Ours needs ≥1,000 each by 15 Dec as one agreed swap; Kyiv confirmed 1,000+ on 13 Nov, but staging/slippage risk.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-18T19:28:54+01:00",
+              "p": 0.6,
+              "reason": "Zelensky and TASS: agreed deal for more than 1,000 each, expected in 2-3 weeks; the May 2025 swap was fast, but staging or delays could miss 15 Dec or fall below 1,000.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "union-of-facts"
+              ],
+              "rounds": [
+                {
+                  "p": 0.1,
+                  "at": "2026-11-18T19:14:54+01:00",
+                  "reason": "first board estimate without the facts the other four had (own research only); differed by more than 25 points"
+                }
+              ]
+            }
+          ],
+          "note": "Kyiv (Zelensky, 13 Nov) now confirms the 1,000+ per side figure; no exchange done yet. Weekly re-forecast by all five forecasters. The outsider first worked without the facts the others had (spread over 25 points, cause: inputs); it was given the union of facts and re-estimated once (first figure kept in its rounds).",
+          "note_cs": "Kyjev (Zelenskyj, 13. 11.) potvrdil přes 1000 zajatců na každé straně; výměna zatím neproběhla. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
         }
       ]
     },
