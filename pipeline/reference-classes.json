@@ -140,7 +140,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 13,
+        "yes": 14,
         "no": 74
       }
     },
@@ -152,7 +152,7 @@
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
         "yes": 14,
-        "no": 10
+        "no": 12
       }
     },
     {
@@ -250,7 +250,7 @@
       "n": "large; cancellations are rare",
       "source": "News record (estimate pending a full count)",
       "own_record": {
-        "yes": 12,
+        "yes": 13,
         "no": 1
       }
     },
@@ -492,7 +492,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -602,7 +602,7 @@
       "n": 0,
       "source": "own record from 8 Nov 2026",
       "own_record": {
-        "yes": 3,
+        "yes": 4,
         "no": 0
       }
     },
@@ -746,7 +746,7 @@
       "source": "own resolved claims (resolver, 12 Nov 2026)",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -768,7 +768,7 @@
       "source": "own resolved claims (resolver, 12 Nov 2026)",
       "own_record": {
         "yes": 1,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -834,7 +834,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 2,
-        "no": 2
+        "no": 4
       }
     },
     {
@@ -1019,6 +1019,72 @@
       "base_rate": 0.5,
       "n": "own record",
       "source": "own record (created 2026-11-17 morning run, from claim ms-outage-16)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "eu-sanctions-listings-count-threshold",
+      "description": "The Council adopts at a scheduled FAC at least a stated number of new sanctions listings (count threshold set from pre-meeting reports)",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "us-daily-flight-cancellations-threshold",
+      "description": "FlightAware's daily count of US cancellations reaches a stated threshold on a given day",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "party-disciplines-member-short-window",
+      "description": "A party body suspends or expels a member under investigation within a two-day window after a suspension is proposed",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "politician-resigns-seat-under-pressure-short-window",
+      "description": "A legislator under criminal investigation gives up the seat within a two-day window after party leaders call for it",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "regulated-cap-rise-above-size",
+      "description": "The Czech daily fuel cap rises by at least a stated amount (not just any rise) the next day",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "charity-collection-total-threshold",
+      "description": "Organisers' first announced total of a national charity collection reaches a stated threshold",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 2026-11-18 morning run)",
       "own_record": {
         "yes": 1,
         "no": 0

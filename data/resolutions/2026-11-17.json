@@ -1,0 +1,150 @@
+{
+  "edition": "2026-11-17",
+  "results": [
+    {
+      "claim": "us-trip-17",
+      "outcome": "yes",
+      "evidence": "https://www.pbs.org/newshour/world/trump-arrives-in-philippines-to-kick-off-asia-trip-with-economic-deals-and-talks-with-allies",
+      "note": "AP (via PBS) reports Trump arrived in Manila on Tuesday 17 Nov; whitehouse.gov/AP hub not readable for a take-off time, so a Monday ET departure inside the window is inferred from a Tuesday Manila arrival (a later take-off cannot arrive Tuesday local, an earlier one would have arrived Monday).",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-mfa-trilateral-17",
+      "outcome": "yes",
+      "evidence": "https://www.mfa.gov.cn/eng/xw/fyrbt/lxjzh/202611/t20261116_12060306.html",
+      "note": "At the 16 Nov regular briefing, spokesperson Mao Ning, asked about 'the announcement of the China-Russia-U.S. Shenzhen Summit', said it 'will be the first ever face-to-face meeting between the Chinese, Russian and U.S. heads of state' and that 'the three presidents will have an in-depth exchange of views'.",
+      "resolved_at": "2026-11-18T05:10:00+01:00"
+    },
+    {
+      "claim": "cz-fees-babis-17",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/babis-nezvazuje-ze-vyhovi-pozadavkum-z-demonstrace-na-letne/2902519",
+      "note": "ČTK and ČT24 on Babiš's Monday pre-departure remarks: the explicit 'the government will abolish the fees' was his Sunday statement; on Monday he only denied the change was an attack on democracy and said 'we will follow the European Commission directive', which a neutral reader does not take as restating abolition or non-withdrawal (no other Monday statement found).",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "ua-kremlin-17",
+      "outcome": "no",
+      "evidence": "https://www.interfax.ru/news/2026/11/16/",
+      "note": "Interfax's 16 Nov news archive (Peskov on APEC meetings, Trump's remarks, Europeans in talks; Ushakov call with Kushner/Witkoff) and kremlin.ru carry no on-record statement by Putin, Peskov, Ushakov or Lavrov that day that Ukraine must not join NATO; TASS/RIA not searchable in full.",
+      "resolved_at": "2026-11-18T05:10:00+01:00"
+    },
+    {
+      "claim": "eu-fac-listings-17",
+      "outcome": "yes",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/svet/ministri-zahranici-eu-schvalili-dalsi-protiruske-sankce-379659",
+      "note": "consilium.europa.eu refused scripted reading; ČT24 citing the Council: on 16 Nov the FAC added 145 names: 113 (12 persons, 101 entities) under the Ukraine territorial-integrity regime, 31 (SDA plus 30 persons) under the hybrid-threats regime and NoName057(16) under the cyber regime, so exactly 145 >= 145.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-flights-17",
+      "outcome": "yes",
+      "evidence": "https://www.nbcnews.com/news/us-news/flights-air-traffic-delays-groundstop-faa-duffy-rcna609545",
+      "note": "The FlightAware 'yesterday' page and its archive snapshot could not be read in the 17 Nov window (page now shows 17 Nov; archive.org unreachable); NBC (FlightAware, ~300 US cancellations by 9 a.m. ET Monday, American alone 157) and City News Service/heysocal (FlightAware, 530 cancellations into or out of the US by early Monday) put the Monday total above 300 since daily counts only rise.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "ambiguous": true
+    },
+    {
+      "claim": "ir-intel-17",
+      "outcome": "yes",
+      "evidence": "https://www.iranintl.com/en/202611151907",
+      "note": "Iran International (15 Nov 06:34 GMT, i.e. 10:04 Tehran) reports the Majlis voted on Sunday 192-49-4 for single urgency of the bill removing the ijtihad requirement for the intelligence minister; Persian outlets incl. Mehr carried the same.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "hu-kdnp-17",
+      "outcome": "no",
+      "evidence": "https://444.hu/2026/11/16",
+      "note": "No report on 15-16 Nov (444 daily archives, hvg.hu Itthon, searches) that a KDNP body suspended or expelled Seszták; only the 14 Nov initiative ('felfüggeszthetik') and Rétvári's call to give up his mandate.",
+      "resolved_at": "2026-11-18T05:10:00+01:00"
+    },
+    {
+      "claim": "hu-probe-17",
+      "outcome": "no",
+      "evidence": "https://444.hu/2026/11/16",
+      "note": "No report by 16 Nov 23:59 that Seszták gave up his seat (444 and hvg.hu coverage of 15-17 Nov mention the Seszták cash case but no resignation; KDNP's Rétvári had only called on him to return the mandate on 14 Nov).",
+      "resolved_at": "2026-11-18T05:10:00+01:00"
+    },
+    {
+      "claim": "cn-retail-17",
+      "outcome": "measured",
+      "value": 0.4,
+      "evidence": "https://www.stats.gov.cn/english/PressRelease/202611/t20261117_1965878.html",
+      "note": "NBS: October 2026 total retail sales of consumer goods 4,646.3 bn yuan, up 0.4% y/y (data first released in the NBS overview of 16 Nov; English detail page dated 17 Nov).",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-ip-17",
+      "outcome": "no",
+      "evidence": "https://www.stats.gov.cn/english/PressRelease/202611/t20261117_1965883.html",
+      "note": "NBS: October 2026 value added of industrial enterprises above designated size rose 4.8% y/y in real terms, below 6.0%; released 16 Nov (overview) so the release was held.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "jp-gdp-17",
+      "outcome": "measured",
+      "value": -0.1,
+      "evidence": "https://investinglive.com/news/japan-q3-gdp-shrinks-0-1-annualised-vs-0-3-expected-as-exports-and-consumers-weigh/",
+      "note": "investingLive (15 Nov 23:57 GMT = 16 Nov 08:57 JST) and AP: first preliminary Q3 2026 real GDP -0.1% seasonally adjusted annualised (consensus +0.3%); ESRI page gave no figure in text.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-ppi-17",
+      "outcome": "measured",
+      "value": 4.7,
+      "evidence": "https://csu.gov.cz/rychle-informace/indexy-cen-vyrobcu-rijen-2026",
+      "note": "ČSÚ 'Indexy cen výrobců - říjen 2026' (16 Nov, ČTK 10:27): industrial producer prices +0.9% m/m and +4.7% y/y (September +3.7%).",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-prices-17",
+      "outcome": "no",
+      "evidence": "https://csu.gov.cz/rychle-informace/indexy-cen-vyrobcu-rijen-2026",
+      "note": "ČSÚ release of 16 Nov puts October industrial producer prices at +4.7% y/y, below 5.0%.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-israel-defence-17",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/babis-chce-urychlit-nakup-protivzdusne-obrany/2902798",
+      "note": "After meeting Netanyahu on 16 Nov Babiš said the Czech Republic should acquire further air-defence systems quickly and the army should decide which; he mentioned Iron Dome, Arrow 3 and Barak and that the delegation met Arrow 3 makers and wants to talk to the Barak maker, but named no system the country wants or is negotiating to buy; Defence Minister Zůna's remark about signing for Spyder All-in-One was a minister's remark, not a Government Office/MoD statement, which the criterion excludes.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "cz-israel-sign-17",
+      "outcome": "no",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/svet/babis-zahajil-navstevu-izraele-bude-jednat-o-protivzdusne-obrane-379666",
+      "note": "ČT24 and ČTK reports of the 16 Nov Babiš-Netanyahu meeting (defence, AI, health talks; joint government session agreed for later) mention no intergovernmental document signed that day.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-fuel-rise-17",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/listopadovy-pokles-maximalnich-cen-paliv-skoncil-nafta-v-utery-zdrazi/2902681",
+      "note": "ČTK (16 Nov 14:08) citing the Finance Ministry's price bulletin issued that day: the diesel cap rises by 35 haléř to CZK 45.73/l for the next two days, above 45.38 (PDF on mf.gov.cz not machine-readable).",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-fuel-diesel-17",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/listopadovy-pokles-maximalnich-cen-paliv-skoncil-nafta-v-utery-zdrazi/2902681",
+      "note": "ČTK (16 Nov) citing the Finance Ministry's bulletin: the diesel cap from 17 Nov is CZK 45.73/l, 2 haléř below the 45.75 threshold.",
+      "resolved_at": "2026-11-18T05:10:00+01:00",
+      "held": true
+    }
+  ]
+}

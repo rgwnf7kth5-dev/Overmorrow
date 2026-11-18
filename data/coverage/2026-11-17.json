@@ -1,0 +1,25 @@
+{
+  "edition": "2026-11-17",
+  "checked_at": "2026-11-18T05:12:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 16, read 18 Nov 04:07 UTC)",
+    "ct24 (ČT24 articles dated 16 Nov 2026 found via the poplatky and sbírka topic pages and searches, read 18 Nov 04:02-04:05 UTC; the ct24.ceskatelevize.cz/svet list returned no dated items)",
+    "ctk (ceskenoviny.cz world, economy and poplatky section lists with 16 Nov timestamps, read 18 Nov 04:02-04:07 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2); no WebSearch was spent on their 16 Nov top stories, so list (b) is missing for this day."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: Saudi coalition commander appointed in Yemen; Komyshuvakha search ends (72 dead); Mexican cartel shootings; East London Awami League attack; Gazipur garment protests; Patong fire (11 dead); Grand Canyon plane crash; US reverses UNSOS funding cut; Houngbo re-elected ILO director-general; Peña transferred to military prison (Paraguay); South African mass shootings; Bahrain life sentences for 64; Barrow cleared for third term in Gambia",
+    "ctk-only: Russia says it downed a record 1,336 Ukrainian drones overnight; five EU states plan a Rwanda deportation centre; Peskov on 'peace for centuries'; French troops reportedly in Ukraine (RFI/AFP); Le Pen on Ukraine commitments; Robert Pattinson named James Bond; USS Theodore Roosevelt reaches the Middle East; Czech PPI (covered anyway by cz-prices); diesel cap rises (covered anyway by cz-fuel)"
+  ],
+  "note": "A thin check: list (b) missing and ČT24's own dated lists were not readable, so ct24 rests on individual dated articles. ct24 and ctk count as lists for non-Czech events too, as in earlier files. Two missed events, neither announced in advance as a dated item in our sweep; no source added.",
+  "events": [
+    {"title": "PM Babiš begins a three-day visit to Israel, meets Netanyahu, says the Czech Republic must speed up buying further air-defence systems; delegation meets Arrow 3 makers", "scope": "cz", "lists": ["ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/svet/babis-zahajil-navstevu-izraele-bude-jednat-o-protivzdusne-obrane-379666", "status": "covered", "story": "cz-israel"},
+    {"title": "Babiš rejects the Letná rally's demands (Okamura's removal, SPD losing defence) before leaving for Israel and defends the change in ČT/ČRo financing", "scope": "cz", "lists": ["ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/domaci/babis-nezvazuje-ze-by-vyhovel-pozadavkum-z-demonstrace-na-letne-379650", "status": "covered", "story": "cz-fees"},
+    {"title": "EU foreign ministers add 145 names to Russia-related sanctions lists (banks, Wildberries, Social Design Agency, NoName057(16)); Kallas sets out Europe's demands of Moscow", "scope": "europe", "lists": ["ct24", "ctk"], "source": "https://ct24.ceskatelevize.cz/clanek/svet/ministri-zahranici-eu-schvalili-dalsi-protiruske-sankce-379659", "status": "covered", "story": "eu-fac"},
+    {"title": "Ukrainian strike damages the Crimean Bridge; Russia closes it to vehicles, partly reopening it later", "scope": "europe", "lists": ["wikipedia", "ctk"], "source": "https://www.ceskenoviny.cz/zpravy/ukrajina-zasahla-a-poskodila-krymsky-most-rusove-utocili-na-mosty-v-kyjeve/2902810", "status": "missed", "note": "Not in the planning file; a military strike, not announced in advance (the ua-kremlin story covered the diplomacy instead)."},
+    {"title": "European Commission and US Federal Reserve approve UniCredit's EUR 45bn takeover of Commerzbank", "scope": "europe", "lists": ["wikipedia", "ctk"], "source": "https://www.ceskenoviny.cz/zpravy/brusel-schvalil-italske-bance-unicredit-zamer-prevzit-nemeckou-commerzbank-/2799844", "status": "missed", "note": "Not in the planning file. EU merger decisions have a public review deadline in the Commission's competition case register, but no dated announcement was in our sweep sources; worth checking DG COMP deadlines for big bank deals."}
+  ]
+}

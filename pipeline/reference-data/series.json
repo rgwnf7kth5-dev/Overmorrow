@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "pooled": {
-  "n": 41,
-  "rms_in_scales": 1.45,
+  "n": 44,
+  "rms_in_scales": 1.403,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -714,6 +714,54 @@
    ],
    "n": 1,
    "rms_surprise": 0.76
+  },
+  "china-retail-sales-yoy-nbs-first-release": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-17",
+     "claim": "cn-retail-17",
+     "consensus": 0.8,
+     "first": 0.4,
+     "centre": 0.74,
+     "scale_used": 0.98,
+     "source": "Newsquawk week ahead consensus, 13 Nov 2026, https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs ; Lundgreen's 0.8 https://www.lundgreensinvestorinsights.com/next-week-in-china-16-20-november-2026/ ; ING 0.7 https://think.ing.com/articles/asia-week-ahead-131126/"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.4
+  },
+  "japan-real-gdp-q-q-saar-first-preliminary": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-17",
+     "claim": "jp-gdp-17",
+     "consensus": 0.3,
+     "first": -0.1,
+     "centre": 0.14,
+     "scale_used": 0.92,
+     "source": "Reuters poll median of 16 economists (6 Nov), via IndexBox https://www.indexbox.io/blog/japan-q3-gdp-growth-seen-slowing-to-03-as-consumption-external-demand-weigh/ ; ING 13 Nov https://think.ing.com/articles/asia-week-ahead-131126/ (0.1% q/q)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.4
+  },
+  "czech-industrial-producer-prices-ceny-pru-myslovy-ch-vy-robc": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-17",
+     "claim": "cz-ppi-17",
+     "consensus": 4.7,
+     "first": 4.7,
+     "centre": 4.61,
+     "scale_used": 0.36,
+     "source": "https://www.fxblue.com/calendar/item/6ca98587-ed94-41b1-98ec-704905b1c430/6083bb35-9335-40bf-90ec-4da0b3674195"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
   }
  },
  "extra": {}
