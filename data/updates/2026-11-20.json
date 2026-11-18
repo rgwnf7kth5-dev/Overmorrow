@@ -1,0 +1,333 @@
+{
+  "edition": "2026-11-20",
+  "frozen_at": "2026-11-18T12:42:00+01:00",
+  "revisions": [
+    {
+      "claim": "cn-trump-putin-20",
+      "probability": 0.51,
+      "kind": "forecast",
+      "reason": "Kremlin aide Yury Ushakov said on Wednesday in Shenzhen that it 'has been decided' Putin and Trump will meet, possibly at the gala dinner and 'certainly' during Thursday's plenary and immediately afterward, 'sitting or simply standing' – settings that point to informal contacts the claim does not count (forecasters 0.55, 0.57, 0.44, 0.53, 0.28).",
+      "reason_cs": "Kremelský poradce Jurij Ušakov ve středu v Šen-čenu řekl, že je „rozhodnuto“, že se Putin s Trumpem setkají, možná už na slavnostní večeři a „určitě“ ve čtvrtek během plenárního zasedání a hned po něm, „vsedě, nebo prostě vestoje“ – tedy spíš při neformálních setkáních, která se do předpovědi nepočítají.",
+      "sources": [
+        {
+          "title": "Putin, Trump could meet in China as early as Wednesday evening: Kremlin aide (A News, 18 Nov 2026)",
+          "url": "https://www.anews.com.tr/world/2026/11/18/putin-trump-could-meet-in-china-as-early-as-wednesday-evening-kremlin-aide"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "cn-trump-putin-20",
+      "at": "2026-11-18T12:31:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-18T12:22:37+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.55,
+          "reason_blind": "Ushakov says it is 'decided they will meet' (dinner, around the plenary, right after it): contact very likely, but the settings he names and his 'standing or sitting' framing point to informal sideline talks that the criterion excludes; no reference rate for unscheduled summit bilaterals.",
+          "at": "2026-11-18T12:22:39+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.55,
+          "p_held": 0.79,
+          "p_if_held": 0.7,
+          "reason": "No matching market. Ushakov's statement moves timing: p_held up from 0.74. His informal framing (dinner, 'standing and looking each other in the eye') raises the risk of a sideline label, so p_if_held down from 0.77."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-18T12:22:58+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.6,
+          "reason_blind": "Kremlin (Peskov 16 Nov '100% they will meet'; Ushakov 16 Nov separate bilateral after the trilateral being arranged; Ushakov 18 Nov 'certainly' meet Thursday at the plenary and immediately afterward) strongly signals contact; White House lists no bilateral, and the 'armchairs, stools or standing' wording points to an informal format.",
+          "at": "2026-11-18T12:23:04+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.57,
+          "p_held": 0.78,
+          "p_if_held": 0.73,
+          "reason": "Kremlin repeatedly commits to contact, including a separate meeting after the trilateral, and Trump said he would if available. But the US schedule is tight, no White House confirmation, and Ushakov's framing risks sideline-chat wording. No market. Holding near morning."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-18T12:22:39+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.45,
+          "reason_blind": "Ushakov's 'decided they will meet' names only excluded settings (gala dinner, plenary) plus 'immediately afterward', and his armchairs/stools/standing line signals no arranged sit-down; US side still lists no one-on-one; Trump's 19 Nov is packed.",
+          "at": "2026-11-18T12:22:48+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.44,
+          "p_held": 0.7,
+          "p_if_held": 0.63,
+          "reason": "No matching market. Ushakov names only excluded settings plus 'immediately afterward'; the stools/standing remark implies no arranged sit-down. Kremlin will probably say 'vstrecha', but a standing post-trilateral exchange may be reported as a short conversation."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-18T12:24:30+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.53,
+          "p_held": 0.8,
+          "p_if_held": 0.66,
+          "reason": "Ushakov now says they will 'certainly' meet, possibly several times, so p_held rises; but the formats he names (gala dinner, during the plenary, 'immediately afterward', even 'simply standing') point to informal exchanges that may not count, lowering p_if_held. No reference base rate. Polymarket 'meet next in China', 'meet in 2026', 'meet by Dec 31' (0.99+) resolve on any meeting incl. the trilateral, deadlines 31 Dec/1 Jan UTC, no 'separate' condition: not used."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-18T12:26:00+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.3,
+          "reason_blind": "Trilateral planned on 19 Nov, announced by both sides; no separate bilateral found scheduled; summit formats usually yield sideline contact, which the criterion excludes.",
+          "at": "2026-11-18T12:31:00+01:00",
+          "inputs": [
+            "own-research",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.28,
+          "p_held": 0.42,
+          "p_if_held": 0.68,
+          "reason": "Ushakov says they will 'certainly' meet, maybe several times: at dinner, the plenary and 'immediately afterward'; his 'standing or sitting' wording points to informal contact. No separate bilateral scheduled. Markets do not price this claim."
+        }
+      ],
+      "combined": 0.4709,
+      "calibrated": 0.5094,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.198,
+          "b": 1.3756
+        },
+        "version": "2026-11-18"
+      },
+      "spread": 0.29,
+      "research": {
+        "at": "2026-11-18T12:24:21+01:00",
+        "question": "Is a separate, arranged Trump–Putin bilateral planned for 18 or 19 Nov in Shenzhen, or only informal contacts at the dinner and plenary?",
+        "finding": "Kremlin says a separate bilateral is being arranged but nothing is fixed: TASS (16 Nov) 'time and venue ... are still being worked out'; Peskov (16 Nov) 'a separate bilateral meeting between Putin and Trump is also being arranged'. No White House confirmation; AP (14 Nov) confirms only the trilateral. No report from the gala dinner yet.",
+        "sources": [
+          "https://tass.com/politics/2219051",
+          "https://anews.com.tr/world/2026/11/16/kremlin-says-putin-trump-xi-trilateral-meeting-to-be-centerpiece-of-putins-nov-18-19-visit-to-shenzhen",
+          "https://www.wcax.com/2026/11/14/trump-xi-putin-plan-an-unprecedented-joint-meeting-white-house-says/"
+        ],
+        "decisive": false,
+        "by": "research agent (claude-opus-5-5)"
+      },
+      "disagreement": {
+        "cause": "genuine",
+        "note": "Final spread 0.29 (0.28–0.57); research not decisive, spread kept. The outsider (no dossier) puts p_held at 0.42; the four dossier forecasters at 0.70–0.80. Without the outsider the calibrated figure would be about 0.58, so the size of the cut rests on the outsider's reading. All five agree the new fact raises the chance of contact but lowers the chance that it qualifies (p_if_held 0.63–0.73 against 0.77). No forecaster relied on a market."
+      },
+      "market_search": "markets.mjs search \"Trump Putin\" (anchor, 2026-11-18T11:23:42Z): Polymarket 'meet next in China' 0.994, 'meet in 2026' 0.9945, 'meets by Dec 31' 0.995, 'Trump, Putin, Xi seen together' 0.9935 — all settled by any meeting including the trilateral; none matches.",
+      "market": null,
+      "decomposition": {
+        "morning": {
+          "p_held": 0.738,
+          "p_if_held": 0.772
+        },
+        "afternoon": {
+          "p_held": 0.7,
+          "p_if_held": 0.68
+        },
+        "factor": "both",
+        "note": "The new fact (Ushakov, 18 Nov) moves both factors: dossier forecasters raise p_held (0.70–0.80) while all five lower p_if_held, because the settings he names (dinner, plenary, 'simply standing') are those the criterion excludes. Afternoon values are the means of the five."
+      },
+      "red_team": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-18T12:25:03+01:00",
+        "case_for_morning": "The only new fact makes a meeting more likely: Ushakov says it 'has been decided that they will meet', 'certainly' on Thursday 'immediately afterward' the plenary, possibly several times, adding to Peskov's 16 Nov line that a separate bilateral is being arranged. Only one government must call it a meeting or talks, and Kremlin readouts usually say 'vstrecha'. The cut comes from lower p_if_held and from an outsider p_held of 0.42 that contradicts the Kremlin's explicit statement; the four dossier forecasters support holding near 0.55–0.57.",
+        "case_for_larger": "Ushakov describes informal encounters, not a scheduled bilateral: he names the gala dinner and the plenary, both excluded, then 'immediately afterward' and 'sitting ... or simply standing' — the language of a pull-aside. Two days after Peskov spoke of a separate bilateral, there is still no time or venue and no White House confirmation; Thursday is taken by the trilateral. A standing chat would be reported as a brief conversation and resolve NO: about 0.36–0.42.",
+        "verdict": "The case for a larger cut is somewhat stronger: the new fact raises the chance they meet at all but points to encounter types the criterion excludes, and falls short of a fixed bilateral. Process flag: the outsider's low p_held is not credible on its own terms. Publish 0.51. The case for the morning figure rests on facts the dossier forecasters had weighed.",
+        "unweighed_facts": false
+      }
+    },
+    {
+      "claim": "berlin-2027-aid-20",
+      "at": "2026-11-18T12:40:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-18T12:26:38+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.22,
+          "reason_blind": "0/3 collective military totals in Coalition statements; Merz frames 2027 financing as the main goal. The Commission's €45bn loan (€25bn defence) is an EU proposal awaiting all 27, not a participants' pledge; the decision is likely left to the EU summit.",
+          "at": "2026-11-18T12:26:41+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.22,
+          "p_held": 0.99,
+          "p_if_held": 0.22,
+          "reason": "No matching market. Past statements gave no totals. The Commission proposal invites the statement to welcome it, but it is an EU figure; a collective 2027 military commitment is plausible only if partners pledge the remaining third."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-18T12:26:40+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.15,
+          "reason_blind": "Merz names 2027 defence financing as a main goal, but earlier co-chairs' statements gave no collective military totals; figures tend to be EU, NATO or national. No 18 Nov report of a draft figure.",
+          "at": "2026-11-18T12:26:54+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.18,
+          "p_held": 0.97,
+          "p_if_held": 0.185,
+          "reason": "The €45bn Commission loan (€25bn defence) and the €70bn gap give leaders numbers to cite, but it is an EU figure, disputed by CZ/SK/HU/BG; Eunews reported the Commission adopting a €45bn 2027 proposal on 30 Oct, so the figure is not wholly new. Slight rise."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-18T12:26:39+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.21,
+          "reason_blind": "Merz named 2027 defence financing objective one and the €25bn EU defence tranche gives leaders a ready number; against, no earlier co-chairs' statement carried a collective military total and the EU figure is a proposal of 27, not a Coalition pledge.",
+          "at": "2026-11-18T12:26:43+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.2,
+          "p_held": 0.98,
+          "p_if_held": 0.205,
+          "reason": "No market. Upside: Merz's goal plus the fresh €25bn figure could be quoted as a joint commitment. Downside: welcoming a Commission proposal is not a participants' pledge; decisions sit with the EU summit and Ramstein."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-18T12:26:48+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals"
+          ],
+          "p": 0.2,
+          "p_held": 0.99,
+          "p_if_held": 0.2,
+          "reason": "Slip 0.009 (summit-or-visit). Base rate 0/3 for collective military totals; host named 2027 financing the first objective. The Commission's €45bn proposal gives a figure to cite but is not a participants' pledge, and money may slide to the 26–27 Nov European Council. Up slightly from 0.18."
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-18T12:26:36+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.12,
+          "reason_blind": "Summit set for 19 Nov, but Coalition statements usually cover guarantees, troops and principles, not a collective euro figure for next-year military aid; no preview of a 2027 amount found.",
+          "at": "2026-11-18T12:40:00+01:00",
+          "inputs": [
+            "own-research",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.14,
+          "p_held": 0.88,
+          "p_if_held": 0.16,
+          "reason": "The 18 Nov €45bn proposal (€25bn defence) is a Commission loan, not a coalition pledge; a statement could cite it, but the criterion needs a collective, military, 2027 figure. No markets."
+        }
+      ],
+      "combined": 0.1863,
+      "calibrated": 0.1383,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.198,
+          "b": 1.3756
+        },
+        "version": "2026-11-18"
+      },
+      "spread": 0.08,
+      "disagreement": {
+        "cause": null,
+        "note": "Final spread 0.08; all five read the Commission's €45bn 2027 proposal as a figure the leaders could cite but not a Coalition commitment. Below the display threshold (morning 0.16): no revision."
+      },
+      "market_search": "markets.mjs search \"Ukraine aid\" and \"Coalition of the Willing\" (anchor, 2026-11-18T11:26:44–48Z): only ceasefire, peace-deal, Zelenskyy-exit, NATO-membership and Swedish coalition markets; none matches.",
+      "market": null,
+      "decomposition": {
+        "morning": {
+          "p_held": 0.99,
+          "p_if_held": 0.165
+        },
+        "afternoon": {
+          "p_held": 0.96,
+          "p_if_held": 0.19
+        },
+        "factor": "p_if_held"
+      }
+    }
+  ],
+  "added": [],
+  "meta": {
+    "unreachable": [
+      "https://www.euronews.com (406)",
+      "https://www.cnbc.com (403)",
+      "https://www.irozhlas.cz (403)"
+    ],
+    "not_recomputed": "Other claims: no material fact published after the morning freeze. The Senate's votes on H.R.2347 are scheduled for 11:45 ET on Wednesday, after this freeze, as the morning research assumed, with no time agreement reported (Daily Press for 18 Nov not yet online); Prague's STAN–SPOLU–Praha sobě coalition signed its agreement naming Hlaváček mayor-designate, as expected; no change found to the ICJ ruling date, the Senate constituent session, the Czech cabinet agenda, Walmart, SARB or US jobless claims. No new event announced for 19 Nov merited a story."
+  }
+}
