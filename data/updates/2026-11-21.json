@@ -1,0 +1,201 @@
+{
+  "edition": "2026-11-21",
+  "frozen_at": "2026-11-19T12:29:01+01:00",
+  "revisions": [
+    {
+      "claim": "eu-uk-youth-21",
+      "probability": 0.82,
+      "kind": "forecast",
+      "reason": "The Irish Times reported on Thursday that Burnham and von der Leyen are set to sign a deal that would create a youth mobility programme, and the draft joint statement, as quoted by Agence Europe, still 'welcomes the conclusion of negotiations' on the scheme, with only the cap (80,000 or 100,000) open; the UK government says the scheme 'will be agreed' at the summit (forecasters 0.64, 0.75, 0.62, 0.71, 0.85).",
+      "reason_cs": "Irish Times ve čtvrtek napsal, že Burnham a von der Leyen podepíší dohodu, která zavede program mobility mladých, a návrh společného prohlášení podle Agence Europe stále „vítá uzavření jednání“ o tomto programu, otevřený zůstává jen strop (80 000, nebo 100 000 lidí); britská vláda uvádí, že program „bude dohodnut“ na summitu.",
+      "sources": [
+        {
+          "title": "Andy Burnham will sign a Brexit reset deal tomorrow. The real battle comes next (Irish Times, 19 Nov 2026)",
+          "url": "https://www.irishtimes.com/world/europe/2026/11/19/andy-burnham-will-sign-a-brexit-reset-deal-tomorrow-the-real-battle-comes-next/"
+        },
+        {
+          "title": "UK-EU Summit package - factsheet and mythbuster (Cabinet Office, updated 18 Nov 2026)",
+          "url": "https://www.gov.uk/government/news/uk-eu-summit-package-factsheet-and-mythbuster"
+        },
+        {
+          "title": "EU and UK still need to find common ground on several agreements ahead of bilateral summit (Agence Europe, 18 Nov 2026)",
+          "url": "https://agenceurope.eu/en/bulletin/article/13984/21/eu-and-uk-still-need-to-find-common-ground-on-several-agreements-ahead-of-bilateral-summit"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim": "eu-uk-youth-21",
+      "at": "2026-11-19T12:27:00+01:00",
+      "agents": [
+        {
+          "role": "base-rate",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-19T12:23:37+01:00",
+          "inputs_blind": [
+            "dossier",
+            "reference-data",
+            "overnight-facts"
+          ],
+          "p_blind": 0.5,
+          "reason_blind": "Ref class: deliverables the host government pre-announces as 'will be agreed' land ~80%. Cut in log-odds for 17 Nov drafts ('seal by 2028', i: not yet agreed), unresolved cap and fees, and wording risk (commitment vs agreed in principle). New facts (UK factsheet, Irish Times 'ink', Guardian 'agreed in principle') lift from 15%. p_held 0.99, p_if_held 0.505.",
+          "at": "2026-11-19T12:25:18+01:00",
+          "inputs": [
+            "dossier",
+            "reference-data",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.64,
+          "p_held": 0.99,
+          "p_if_held": 0.65,
+          "reason": "Agence Europe: 17 Nov draft still 'welcomes the conclusion of negotiations' on YES, cap merely bracketed (EU 100k vs UK 80k); Guardian's 'apply by 2028' reads as entry into force, not still negotiating. With UK factsheet 'will be agreed', +0.6 log-odds from blind 0.50. Residual risk: unresolved cap drops the conclusion wording. No market."
+        },
+        {
+          "role": "evidence",
+          "model": "claude-opus-5-5",
+          "at_blind": "2026-11-19T12:24:13+01:00",
+          "inputs_blind": [
+            "own-research"
+          ],
+          "p_blind": 0.7,
+          "reason_blind": "17 Nov draft joint statement (Agence Europe) still 'welcomes the conclusion of negotiations on a YES', 3-year stays, cap bracketed; UK Cabinet Office factsheet (17-18 Nov) says YES 'will be agreed at the Summit on 20 November'. Risks: 80k vs 100k cap unresolved on 18 Nov, tuition-fee/Made-in-EU linkage, wording downgraded to 'work towards'.",
+          "at": "2026-11-19T12:25:41+01:00",
+          "inputs": [
+            "own-research",
+            "dossier",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.75,
+          "reason": "Agence Europe quotes the 17 Nov draft verbatim: 'welcomes the conclusion of negotiations on a YES', 3-year stays, only the number bracketed; '2028' is the apply date, which the i and Euronews paraphrased as 'seal'. UK factsheet: YES 'will be agreed' on 20 Nov; Irish Times 19 Nov: set to ink. Risk: cap fight could downgrade the wording. No market."
+        },
+        {
+          "role": "adversarial",
+          "model": "claude-fable-5-2",
+          "at_blind": "2026-11-19T12:23:48+01:00",
+          "inputs_blind": [
+            "dossier",
+            "overnight-facts"
+          ],
+          "p_blind": 0.4,
+          "reason_blind": "Leaked 17 Nov drafts say 'aim to seal by 2028', cap still disputed: a NO wording. But Cabinet Office factsheet says the youth scheme 'will be agreed' at the summit, Irish Times and Guardian expect agreement in principle with a ~100,000 cap, and a UK government statement alone can resolve YES. Wording trap keeps it below even.",
+          "at": "2026-11-19T12:25:57+01:00",
+          "inputs": [
+            "dossier",
+            "overnight-facts",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.62,
+          "p_held": 0.99,
+          "p_if_held": 0.63,
+          "reason": "Agence Europe quotes the 17 Nov draft as still 'welcomes the conclusion of negotiations', with only the cap (80,000 vs 100,000) and the 2028 application date bracketed; 'by 2028' is application, not conclusion. Cabinet Office says 'will be agreed'. Risk: cap unresolved, leaders dilute wording to 'aim to conclude'. No market."
+        },
+        {
+          "role": "anchor",
+          "model": "claude-opus-5-5",
+          "at": "2026-11-19T12:26:08+01:00",
+          "inputs": [
+            "dossier",
+            "signals",
+            "overnight-facts",
+            "reference-data",
+            "union-of-facts"
+          ],
+          "p": 0.71,
+          "p_held": 0.99,
+          "p_if_held": 0.72,
+          "reason": "No matching market (searched 11:24Z). Anchor p_held 0.99 (slip 0.008) x p_if_held. Agence Europe: 17 Nov draft still 'welcomes the conclusion of negotiations', a YES wording; 'apply no later than 2028' is the start date. gov.uk factsheet: scheme will be agreed on 20 Nov. Risks: cap bracketed (80k vs 100k); the i reports 'yet to agree'.",
+          "rounds": [
+            {
+              "p": 0.55,
+              "at": "2026-11-19T12:24:35+01:00",
+              "reason": "Before the union of facts: factsheet, Guardian and Irish Times up; 17 Nov drafts read as seal by 2028 down."
+            }
+          ]
+        },
+        {
+          "role": "outsider",
+          "model": "claude-sonnet-5-5",
+          "at_blind": "2026-11-19T12:24:00+01:00",
+          "inputs_blind": [
+            "own-research",
+            "reference-data"
+          ],
+          "p_blind": 0.88,
+          "reason_blind": "Reuters (3 Nov) saw draft joint statement that welcomes conclusion of youth experience scheme negotiations (18-34, up to 3 years, no cap stated). Risks: later reporting of cap disputes, French resistance, possible slip to May 2027, summit slip (base rate ~1%).",
+          "at": "2026-11-19T12:26:00+01:00",
+          "inputs": [
+            "own-research",
+            "reference-data",
+            "signals",
+            "union-of-facts"
+          ],
+          "p": 0.85,
+          "p_held": 0.99,
+          "p_if_held": 0.86,
+          "reason": "UK government factsheet says the youth scheme 'will be agreed' on 20 Nov. Drafts 'welcome the conclusion of negotiations'; cap (~100,000) bracketed and talks 'go to the wire'. Residual risk: wording shifts to 'aim to conclude by 2028'. 'Agreed in principle' also counts. Summit slip ~1%. No market."
+        }
+      ],
+      "combined": 0.7229,
+      "calibrated": 0.8153,
+      "combination": {
+        "method": "calibrated",
+        "weights": {
+          "base-rate": 1,
+          "evidence": 1,
+          "adversarial": 1,
+          "anchor": 1,
+          "outsider": 1
+        },
+        "platt": {
+          "a": 0.1719,
+          "b": 1.3697
+        },
+        "version": "2026-11-19"
+      },
+      "spread": 0.23,
+      "research": {
+        "at": "2026-11-19T12:28:00+01:00",
+        "at_note": "Time the main run received the finding (it was in hand when the first draft of this file was built at 12:28:16). The research agent stamped its report 12:30, which was later than the clock at receipt, so that stamp is not used.",
+        "question": "Does 18–19 Nov reporting show whether the draft joint statement still 'welcomes the conclusion of negotiations' on the Youth Experience Scheme or has been downgraded to a commitment to conclude later, and is the cap settled?",
+        "finding": "No 19 Nov report settles the wording or the cap. The Guardian (17 Nov 17:50Z) quotes the draft: 'aim to apply this agreement no later than 2028 ... opportunities ... no later than January 2030' – an application date, consistent with 'welcomes the conclusion'; quota expected about 100,000. National Pulse (18 Nov): cap 'still being negotiated'. No reported Coreper outcome. Not decisive; spread kept.",
+        "sources": [
+          "https://www.aol.co.uk/articles/andy-burnham-delays-taking-stock-175040000.html",
+          "https://thenationalpulse.com/2026/11/18/burnhams-eu-youth-scheme-would-let-europeans-compete-for-british-jobs/",
+          "https://www.euronews.com/2026/11/18/eu-uk-summit-leaked-draft-reveals-ambition-and-limits-of-brexit-reset"
+        ]
+      },
+      "disagreement": {
+        "cause": "inputs",
+        "note": "Blind estimates spanned 0.40–0.88 because the forecasters had different readings of the 17 Nov draft: the dossier (the i, Euronews: 'yet to agree', 'seal by 2028') against Agence Europe's verbatim quote ('welcomes the conclusion of negotiations') found by the evidence forecaster. All five were given the union of facts (no numbers) and gave final estimates 0.62–0.85; the anchor's first number is kept in rounds. Final spread 0.23 (below the 0.25 limit, above 0.15, so research was run; not decisive). The evidence forecaster's stated p_held 0.70 contradicts its own p and the slip rate and is not recorded. No forecaster relied on a market; none exists."
+      },
+      "market_search": "markets.mjs search \"UK EU youth\", \"EU UK summit\", \"youth experience scheme\" (anchor, 2026-11-19T11:24:27Z–11:24:35Z): nothing matches; Metaculus 37738 (youth mobility scheme before 2030) does not match.",
+      "market": null,
+      "decomposition": {
+        "morning": {
+          "p_held": 0.99,
+          "p_if_held": 0.152
+        },
+        "afternoon": {
+          "p_held": 0.99,
+          "p_if_held": 0.828
+        },
+        "factor": "p_if_held",
+        "note": "The new facts concern the outcome, not timing: the summit is still set for 20 Nov (slip rate 0.008). The re-reading of the 17 Nov draft (Agence Europe's verbatim 'welcomes the conclusion of negotiations'; '2028' is the application date) and the UK factsheet ('will be agreed') raise p_if_held; the 19 Nov reports (Irish Times: set to ink a deal creating the programme; Daily Mail: cap still contested) leave it there. Afternoon p_held is the geometric mean of base-rate and adversarial; p_if_held is scaled to the published figure."
+      },
+      "red_team": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T12:27:00+01:00",
+        "case_for_morning": "Two outlets (the i, Euronews) read the 17 Nov draft as 'yet to agree' with sealing 'by 2028'. Agence Europe shows the cap and the 2028 date still bracketed, and Coreper was still redrafting on 18 Nov. The Daily Mail (19 Nov) says 'frantic negotiations' continue and the cap is 'a central point of contention'. The EU could hold the scheme back as leverage on tuition fees, and the Guardian flagged a slip to May 2027. A text that only commits to agree the terms later resolves NO.",
+        "case_for_larger": "The 17 Nov draft itself, quoted verbatim by Agence Europe, still 'welcomes the conclusion of negotiations on a Youth Experience Scheme' – YES wording; 2028 is an application date, so the morning dossier misread it. The UK government's own factsheet (updated 18 Nov) says the scheme 'will be agreed at the UK-EU Summit on 20 November'. The criterion accepts 'agreed in principle' and 'with or without a cap'. Summit slip about 0.8%. That points to 0.85–0.9.",
+        "verdict": "The case for going higher is stronger: the morning figure rested on a misreading of the draft, and official UK text plus the verbatim draft back the YES reading. The leftover risk – the cap or fees fight producing wording that defers agreement – is real but small. Both post-freeze facts bear on p_if_held, not timing. Publish 82%, the calibrated figure.",
+        "unweighed_facts": false
+      }
+    }
+  ]
+}
