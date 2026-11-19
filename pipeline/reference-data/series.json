@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "pooled": {
-  "n": 44,
-  "rms_in_scales": 1.403,
+  "n": 47,
+  "rms_in_scales": 1.385,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -762,6 +762,54 @@
    ],
    "n": 1,
    "rms_surprise": 0
+  },
+  "nvidia-total-revenue-third-quarter-of-fiscal-2027-quarter-en": {
+   "unit": "US$ bn",
+   "records": [
+    {
+     "edition": "2026-11-18",
+     "claim": "nvda-rev-18",
+     "consensus": 108.9,
+     "first": 115.8,
+     "centre": 111.56,
+     "scale_used": 3.86,
+     "source": "https://www.fool.com/investing/2026/11/10/prediction-nov-17-will-be-a-huge-day-for-the-stock-market/"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 6.9
+  },
+  "us-advance-retail-and-food-services-sales-october-2026-month": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-18",
+     "claim": "us-retail-18",
+     "consensus": 0.2,
+     "first": 0.2,
+     "centre": 0.13,
+     "scale_used": 0.42,
+     "source": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
+  },
+  "uk-ilo-unemployment-rate-aged-16-seasonally-adjusted-july-se": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-18",
+     "claim": "uk-unemp-18",
+     "consensus": 4.7,
+     "first": 4.6,
+     "centre": 4.708,
+     "scale_used": 0.15,
+     "source": "https://forexfundamentals.com/economic-calendar/uk-unemployment/2026-11-17"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
   }
  },
  "extra": {}
