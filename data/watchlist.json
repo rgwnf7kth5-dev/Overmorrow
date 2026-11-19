@@ -2190,7 +2190,13 @@
           }
         }
       ],
-      "result": null
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://www.ceskenoviny.cz/zpravy/praha-ma-nove-vedeni-svobodu-vystridal-v-roli-primatora-hlavacek-/2903301",
+        "note": "On 19 Nov 2026 the Prague assembly elected Petr Hlaváček (STAN) mayor, replacing Bohuslav Svoboda (ODS) (ČTK).",
+        "note_cs": "Pražské zastupitelstvo 19. 11. 2026 zvolilo primátorem Petra Hlaváčka (STAN), který vystřídal Bohuslava Svobodu (ODS) (ČTK).",
+        "resolved_at": "2026-11-19T18:20:15Z"
+      }
     },
     {
       "id": "cz-cnb-forecast-2027-inflation",
@@ -4714,6 +4720,76 @@
           },
           "note": "US October CPI came in hot on 10 Nov (+0.4% m/m, core +0.3%, both above consensus); futures price a December hike at about 100% and Waller says 50 points should be considered.",
           "note_cs": "Říjnová inflace v USA 10. listopadu překonala odhady (+0,4 % meziměsíčně, jádrová +0,3 %); trhy počítají s prosincovým zvýšením sazeb téměř jistě a Waller připouští i krok o 50 bodů."
+        },
+        {
+          "at": "2026-11-19T19:20:15+01:00",
+          "p": 0.94,
+          "combined": 0.937,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T21:30:00+01:00",
+              "p": 0.94,
+              "reason": "Since 2022 the FOMC has not gone against a move futures priced at about 90% or more four weeks out (2022-23 hikes, 2024-25 cuts: all delivered). Minutes show nearly all participants expect a hike; futures ~95%. Small haircut for Nov CPI/jobs data and Bessent's pressure on Warsh.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.96,
+              "reason": "Oct minutes: nearly all participants expect a 25bp December hike and some float 50bp. Hot CPI and strong payrolls. Polymarket prices +25bp at 0.915 and +50bp at 0.06, so any hike is about 0.975; no change is 0.025. Bessent's political pushback is the only drag.",
+              "inputs": [
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-19T19:12:00+01:00",
+              "p": 0.92,
+              "reason": "Case for a hold: Bessent's public pressure on a Trump-appointed chair, an energy supply shock argument, and one more CPI and payrolls print before the meeting. But minutes show nearly all officials expecting 25 bp, two dissented for a hike already in October and futures sit near 95%. Small discount for political and data risk.",
+              "inputs": [
+                "dossier"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.95,
+              "reason": "Polymarket Dec meeting: +25bp 0.915, +50bp+ 0.06 (sum ~0.976), no change 0.0245; $10m volume; CME ~95%. Shaded ~2pts for Bessent pressure, Iran energy shock and three weeks of data (Nov payrolls/CPI) still to come.",
+              "inputs": [
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-19T22:00:00+01:00",
+              "p": 0.9,
+              "reason": "Minutes show nearly all officials expect a 25bp December hike; futures ~95%. Residual: energy-shock data turn, political pressure from Bessent, a hold at the 9-10 Dec meeting.",
+              "inputs": [
+                "dossier"
+              ]
+            }
+          ],
+          "note": "Weekly re-forecast. October minutes (18 Nov): nearly all participants expect a 25 bp hike in December, some open to 50 bp; futures and Polymarket price a hike at about 95–98%. Residual risk: November data and political pressure (Bessent).",
+          "note_cs": "Týdenní přepočet. Zápis z říjnového zasedání (18. 11.): téměř všichni účastníci čekají v prosinci zvýšení o 0,25 bodu, někteří připouštějí 0,5 bodu; futures i Polymarket oceňují zvýšení na 95–98 %. Zbytkové riziko: listopadová data a politický tlak (Bessent).",
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+            "p": 0.976,
+            "read_at": "2026-11-19T18:07:52Z",
+            "volume": 10416236
+          }
         }
       ],
       "result": null
@@ -8561,6 +8637,68 @@
           "market": null,
           "note": "Weekly re-forecast. ČTK (10 Nov): the second reading is pencilled in for January and the funding model is still open; ČT wants the change no earlier than 2028 and the opposition promises obstruction.",
           "note_cs": "Týdenní přepočet. Podle ČTK (10. listopadu) je druhé čtení předběžně naplánováno na leden a model financování zůstává otevřený; ČT chce změnu nejdříve od roku 2028 a opozice slibuje obstrukce."
+        },
+        {
+          "at": "2026-11-19T19:20:15+01:00",
+          "p": 0.09,
+          "combined": 0.088,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T21:30:00+01:00",
+              "p": 0.05,
+              "reason": "Committee period runs to 24 Dec; govt says the second reading will be 'early next year' and the funding model is still open (Okamura: H1 2027). psp.cz: a government bill's second reading is dealt with at its listed meeting only 47-70% of the time, and the opposition promises obstruction. Third reading must follow within January: about 5%.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.06,
+              "reason": "Klempíř (16 Nov) puts the second reading 'at the beginning of next year' and links funding talks to the EMFA law. The model is still open, obstruction is promised and Letná added pressure. A third reading by 31 Jan needs a January second reading plus fixed-time votes; possible but unlikely.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-19T19:12:00+01:00",
+              "p": 0.1,
+              "reason": "Case for Yes: coalition majority, fixed-time vote already used in first reading, Babis unmoved by Letna, Klempir puts second reading at 'beginning of next year', and third reading can follow in 48-72 h. Against: funding model open, tied to EMFA law, SPD objections, obstruction, January slot uncertain. Marginally above the board.",
+              "inputs": [
+                "dossier"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.08,
+              "reason": "No market found (searched 'Czech licence fees', 'Czech', 'Babis'). Fallback to board model: committee period to 24 Dec, government says second reading 'beginning of next year', funding model tied to EMFA law, obstruction promised; third reading by 31 Jan needs fast procedural force. Slight trim from 0.09.",
+              "inputs": [
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-19T22:00:00+01:00",
+              "p": 0.2,
+              "reason": "Passed only first reading 24 Oct; second reading 'beginning of next year', opposition promises obstruction, funding talks tied to EMFA law. Third reading by 31 Jan needs a fast sequence; coalition majority but timeline tight.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            }
+          ],
+          "note": "Weekly re-forecast. Culture Minister Klempíř (16 Nov): second reading in early 2027, funding talks tied to the EMFA implementation law; the 15 Nov Letná rally did not move Babiš; the opposition promises obstruction. Little time for a third reading by 31 January.",
+          "note_cs": "Týdenní přepočet. Ministr kultury Klempíř (16. 11.): druhé čtení začátkem roku 2027, jednání o financování spojená se zákonem k provedení EMFA; demonstrace na Letné 15. 11. Babiše nezviklala; opozice slibuje obstrukce. Na třetí čtení do 31. ledna zbývá málo času."
         }
       ]
     },
@@ -8822,7 +8960,14 @@
           "note": "Weekly re-forecast. The new Senate first sits on 19 Nov; no challenger to Vystrčil has been reported.",
           "note_cs": "Týdenní přepočet. Nový Senát se poprvé sejde 19. listopadu; žádný protikandidát Vystrčila nebyl ohlášen."
         }
-      ]
+      ],
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://www.ceskenoviny.cz/zpravy/vystrcil-byl-popate-zvolen-predsedou-senatu-nemel-protikandidata/2903719",
+        "note": "On 19 Nov 2026 the new Senate re-elected Miloš Vystrčil (ODS) as its president for a fifth time, with 69 of 77 votes cast and no challenger (ČTK).",
+        "note_cs": "Nový Senát 19. 11. 2026 popáté zvolil předsedou Miloše Vystrčila (ODS), který získal 69 ze 77 hlasů a neměl protikandidáta (ČTK).",
+        "resolved_at": "2026-11-19T18:20:15Z"
+      }
     },
     {
       "id": "rs-student-list-pm",
@@ -9101,6 +9246,71 @@
           ],
           "note": "Assembly opened 17 Nov but speaker vote stalled by SNS speeches; still no PM candidate named. Weekly re-forecast by all five forecasters.",
           "note_cs": "Skupština se sešla 17. 11., volbu předsedy zdržuje SNS; kandidát na premiéra stále nebyl jmenován. Týdenní nová předpověď všech pěti prognostiků."
+        },
+        {
+          "at": "2026-11-19T19:20:15+01:00",
+          "p": 0.66,
+          "combined": 0.656,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T21:30:00+01:00",
+              "p": 0.67,
+              "reason": "Serbian govts after the assembly is constituted (2012-2024, n=6): 3 elected within 75 days (2012, 2014, 2016) and 3 took 86 days (2020, 2022, 2024). Base 0.5; +0.7 logit: clear single-list majority, and the speakership (and with it the acting presidency) is now held by the Student List. Holidays and no named candidate yet hold it back.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.77,
+              "reason": "Čupić (Student List) became speaker on 19 Nov with 140 votes. As speaker he is also acting president (Art. 120), so the PM nomination no longer runs through SNS's Brnabić, which removes the main obstruction. The remaining risk is slow plenum-based choice of a PM with a 90-day limit in mid-Feb; Saičić says formation won't drag.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-19T19:12:00+01:00",
+              "p": 0.68,
+              "reason": "Against: no PM candidate named after 25 days, slow collective decision-making, a December presidential campaign competing for attention, and a legal deadline in mid-February that removes pressure to finish by 31 Jan. For: 140 disciplined votes shown today and the speaker, hence the acting presidency, now in Student List hands.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.74,
+              "reason": "Only stale 'next PM of Serbia' markets (closed 25 Oct, no deadline; Šoškić 0.43) - not matching. Model: speaker Čupić (Student List) elected 140 votes, which as acting head of state also removes SNS control of nomination; 140-seat majority; but no PM named and legal deadline mid-Feb, after 31 Jan.",
+              "inputs": [
+                "dossier",
+                "own-research",
+                "signals"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-19T22:00:00+01:00",
+              "p": 0.38,
+              "reason": "Student List has a majority and the speaker, but no PM candidate named; constitutional deadline is mid-Feb, and Serbian governments tend to use the time. Possible quick formation given the landslide and desire to move before the presidential vote.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            }
+          ],
+          "note": "Čupić (Student List) elected speaker on 19 Nov, 140–97, which also makes him acting president, so the PM nomination no longer runs through SNS. But no PM candidate has been named, a presidential campaign now takes December, and the constitutional deadline (mid-February) lies after the 31 Jan cut-off.",
+          "note_cs": "Čupić (Studentská kandidátka) byl 19. 11. zvolen předsedou parlamentu poměrem 140:97, čímž se stal i úřadujícím prezidentem a návrh premiéra už nejde přes SNS. Kandidát na premiéra ale dosud nebyl jmenován, prosinec zaplní prezidentská kampaň a ústavní lhůta (polovina února) končí až po 31. lednu."
         }
       ]
     },
@@ -9917,6 +10127,69 @@
           "market": null,
           "note": "Weekly re-forecast. Finance Minister Schillerová said on 13 Nov that the cabinet will decide within a week or ten days whether to continue the fuel-price caps after 30 Nov (ČTK). The diesel cap has fallen eleven days in a row to CZK 45.38/l, below its level when the caps began on 1 Oct, while Brent is near 96 USD; extending only the diesel excise cut would resolve No.",
           "note_cs": "Týdenní nová prognóza. Ministryně financí Schillerová 13. listopadu řekla, že vláda do týdne až deseti dnů rozhodne, zda cenové stropy pohonných hmot po 30. listopadu zachová (ČTK). Strop nafty klesl jedenáctkrát za sebou na 45,38 Kč/l, pod úroveň ze začátku regulace 1. října, Brent se ale drží kolem 96 USD; pouhé prodloužení snížené spotřební daně z nafty by znamenalo odpověď Ne."
+        },
+        {
+          "at": "2026-11-19T19:20:15+01:00",
+          "p": 0.47,
+          "combined": 0.468,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T21:30:00+01:00",
+              "p": 0.45,
+              "reason": "Same government: 1 extension (Oct, decided 5 days before expiry) and 1 lapse (July, when the 'extraordinary situation' had passed); emergency caps tend to lapse once prices normalise. Capped prices are now below where they started, but a cap that no longer binds costs little to extend, and Babiš is populist. Start 0.5, small cut.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.45,
+              "reason": "ČTK 19 Nov: the cabinet skipped the decision because Schillerová was away; she promised one within 10 days. Capped prices keep falling (petrol 39.80, diesel 45.20, below pre-cap levels), and in July the caps were allowed to lapse. Brent near 96 and Hormuz still argue for keeping the cheap margin cap; the October extension came late.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-19T19:12:00+01:00",
+              "p": 0.44,
+              "reason": "Case for Yes: populist cabinet, Hormuz still blocked, October extension came late too. Case for No: pump averages are already below the caps, so the cap no longer binds; it costs about CZK 1bn a month; the July precedent was a lapse; cabinet skipped it today. An excise-only extension resolves No. Slightly below even.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.45,
+              "reason": "No market found ('Czech fuel price', 'fuel price cap'). Model: decision postponed on 19 Nov; caps falling (petrol <40 CZK), July precedent of letting caps lapse; but Babiš populism and Brent ~96 with Iran war keep extension live; October extension came late too. Slightly below the board's 0.53.",
+              "inputs": [
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-19T22:00:00+01:00",
+              "p": 0.55,
+              "reason": "Government has extended monthly repeatedly; Schillerova favours it and the cabinet merely skipped 19 Nov. But prices are falling and caps lapsed in July on the same logic; a decision at the 23-26 Nov meeting is a toss-up leaning extension.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            }
+          ],
+          "note": "The cabinet did not take up the extension on 19 Nov (Finance Minister Schillerová away); capped prices keep falling (diesel CZK 45.20, petrol 39.80 on 20 Nov), below where the caps began; the government let earlier caps lapse in July. Decision expected at the cabinet of 23–26 Nov.",
+          "note_cs": "Vláda 19. 11. prodloužení neprojednala (ministryně financí Schillerová chyběla); maximální ceny dál klesají (nafta 45,20 Kč, benzin 39,80 Kč 20. 11.), pod úroveň ze začátku regulace; dřívější stropy vláda v červenci nechala vypršet. Rozhodnutí se čeká na schůzi vlády 23.–26. 11."
         }
       ]
     },
@@ -11200,7 +11473,14 @@
           "note": "Weekly re-forecast: the agreed 11-member council splits STAN 5, Spolu 4, Praha sobě 2, with no Pirates; the vote is on 19 Nov.",
           "note_cs": "Týdenní přepočet: dohodnutá jedenáctičlenná rada má složení STAN 5, Spolu 4, Praha sobě 2, bez Pirátů; hlasuje se 19. listopadu."
         }
-      ]
+      ],
+      "result": {
+        "outcome": "no",
+        "evidence": "https://www.ceskenoviny.cz/zpravy/praha-ma-nove-vedeni-svobodu-vystridal-v-roli-primatora-hlavacek-/2903301",
+        "note": "On 19 Nov the Prague assembly elected Mayor Petr Hlaváček (STAN), five deputies and five councillors, all from STAN, Spolu and Praha sobě. No Pirate is on the council; the Pirates got only two committee chairs (ČTK).",
+        "note_cs": "Zastupitelstvo 19. 11. zvolilo primátora Petra Hlaváčka (STAN), pět náměstků a pět radních, všechny za STAN, Spolu a Prahu sobě. Žádný Pirát v radě není; Piráti získali jen dvě předsednictví výborů (ČTK).",
+        "resolved_at": "2026-11-19T18:20:15Z"
+      }
     },
     {
       "id": "cz-media-next-strike",
@@ -12236,7 +12516,14 @@
           "note": "Re-forecast after material news: on 16 Nov China's foreign ministry (Mao Ning) confirmed that Xi, Trump and Putin hold their first trilateral summit in Shenzhen on Thu 19 Nov (DW); all three governments have now announced it. Remaining risk: cancellation or a format without a separate three-way meeting.",
           "note_cs": "Nová předpověď po podstatné zprávě: čínské ministerstvo zahraničí (Mao Ning) 16. listopadu potvrdilo, že Si Ťin-pching, Trump a Putin se ve čtvrtek 19. listopadu v Šen-čenu sejdou na prvním trojstranném summitu (DW); setkání tak ohlásily všechny tři vlády. Zbývá riziko zrušení nebo formátu bez samostatného trojstranného jednání."
         }
-      ]
+      ],
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://www.bbc.com/news/articles/c623j4ln97x7o",
+        "note": "Trump, Xi and Putin held a roughly 90-minute three-way meeting at Kylin Villa, Shenzhen, on 19 Nov on the APEC sidelines and issued a joint 'Heads of State Declaration toward Peace' (BBC; also DW, Al Jazeera, Ukrinform).",
+        "note_cs": "Trump, Si a Putin 19. 11. jednali v Šen-čenu (Kylin Villa) na okraji APEC zhruba 90 minut ve třech a vydali společnou „Mírovou deklaraci“ (BBC; také DW, Al-Džazíra, Ukrinform).",
+        "resolved_at": "2026-11-19T18:20:15Z"
+      }
     },
     {
       "id": "cz-groundwater-fee-passed",
@@ -13164,6 +13451,70 @@
             "read_at": "2026-11-17T18:06:08Z"
           },
           "market_note": "Kalshi (0.87) and Polymarket ask who wins, with no deadline; our question also needs a winner declared by 24 Jan 2027, which a January run-off could miss. Forecasters split 0.22–0.62 on the timing."
+        },
+        {
+          "at": "2026-11-19T19:20:15+01:00",
+          "p": 0.53,
+          "combined": 0.526,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T21:30:00+01:00",
+              "p": 0.47,
+              "reason": "Win: Student List took 53% a month ago and SNS has no Vučić, so P(SL-backed candidate eventually wins) is about 0.72. Timing: vote by about 27 Dec plus a run-off about 2 weeks later gives a declaration by mid-January if the schedule holds; P about 0.68, cut because Serbian law's 45-60-day calling window could push the run-off past 24 Jan.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.55,
+              "reason": "Speaker Čupić must call the election by 27 Nov so it is held by 27 Dec; a run-off around 10 Jan leaves room before 24 Jan. The Student List won 53% and SNS lacks a Vučić successor, but no SL candidate or endorsement has been found yet. The movement's leaderless style is a risk. Estimate: endorsement ~0.8 × win ~0.8 × timing ~0.9.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-19T19:12:00+01:00",
+              "p": 0.44,
+              "reason": "Against: no candidate named, a personal contest is harder than a list vote at 53%, a run-off around 10 Jan plus repeat voting at annulled polling stations and complaints could push the RIK declaration past 24 Jan. For: Student List speaker now controls the call, Vucic cannot run, first-round win is plausible. Timing is the main risk.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-19T19:15:00+01:00",
+              "p": 0.57,
+              "reason": "Polymarket next Serbian president: Saičić 0.705, Đokić 0.06, SNS names ~0.01 ($136k on Saičić); call-by-30-Nov market 0.978. Market has no 24 Jan deadline and Saičić's formal Student List endorsement is unconfirmed; discount for runoff/RIK timing (~10 Jan) and endorsement risk.",
+              "inputs": [
+                "dossier",
+                "signals"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-19T22:00:00+01:00",
+              "p": 0.6,
+              "reason": "Student List landslide, Vucic cannot run, Speaker calls election by 27 Nov, held by 27 Dec with run-off about two weeks later; results fit before 24 Jan. Risks: no clear candidate named yet, run-off timing, results slipping past the cut-off.",
+              "inputs": [
+                "dossier",
+                "own-research"
+              ]
+            }
+          ],
+          "note": "Čupić elected speaker and acting president on 19 Nov; he must call the presidential election by 27 Nov for a vote by 27 Dec, with any run-off about two weeks later, before the 24 Jan cut-off. Vučić cannot run; no Student List candidate has been named yet.",
+          "note_cs": "Čupić byl 19. 11. zvolen předsedou parlamentu a je úřadujícím prezidentem; prezidentské volby musí vypsat do 27. 11. s hlasováním do 27. 12., případné druhé kolo by bylo asi o dva týdny později, před 24. lednem. Vučić kandidovat nemůže; Studentská kandidátka zatím kandidáta nejmenovala."
         }
       ]
     }

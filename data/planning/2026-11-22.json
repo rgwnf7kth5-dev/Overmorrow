@@ -1,0 +1,3498 @@
+{
+ "edition": "2026-11-22",
+ "events_date": "2026-11-21",
+ "prepared_at": "2026-11-19T19:19:46+01:00",
+ "method_version": 6,
+ "number_expected": 31,
+ "candidates": 47,
+ "candidates_note": "9 proposed stories with 11 claims (3 interval: fr-acte6-count-22, uk-psnb-22, ea-conf-22; no derived claims) and 38 dropped entries, including two researched and forecast claims not proposed (rs-call-22 0.37, ca-bc-sworn-22 0.99). Candidates from the running list, a Czech sweep, a world/Europe/economy sweep, a supplementary Czech and Friday sweep, and the forecast board. The window runs from Fri 20 Nov 06:00 (after the morning freeze) to Sat 21 Nov 23:59 local; Saturday itself is thin.",
+ "planned_lead": "cop31 (COP31 adopts its cover decision in Antalya by 23:59 Saturday: 0.61; the adopted text mentions fossil fuels 0.1). Alternatives: ua-war (Air Force reports at least 150 drones in the night to 21 Nov: 0.54) or fr-acte6 (Interior Ministry count of Act VI, interval). Czech lead: none (see cz_shortfall); the Czech edition should lead with cop31 or ua-war.",
+ "cz_note": "No Czech story proposed.",
+ "cz_shortfall": "No Czech story against the aim of eight. Sat 21 Nov has no Czech event of weight with a checkable outcome, and Friday after the freeze adds none that is not already in edition No. 30: the Chamber, Senate and cabinet do not sit (the cabinet skipped the fuel-cap extension on 19 Nov; next decision expected 23–26 Nov); no ČSÚ or ČNB release; no party congress (ODS meets on Mon 23 Nov), demonstration (Milion chvilek on 2 Dec), court ruling or union action was found; the weekend fuel cap set on Fri 20 Nov is already the claim cz-diesel-21; the Brno tunnels' delay is already announced; the Pelicot premiere is on Sunday. psp.cz, hrad.cz, odok.cz and iROZHLAS could not be read, and ČTK's weekend 'Předpokládané události' was not yet out: the morning should recheck them. Per the publisher's rule of 16 Nov these go to the diary rather than into manufactured claims.",
+ "economy": "Three stories with topic economy: uk-moodys (Moody's keeps the UK at Aa3 stable at its 20 Nov review, 0.95), uk-borrowing (ONS October public sector net borrowing, interval) and ea-confidence (euro-area flash consumer confidence for November, interval).",
+ "easy_main": "One main claim at 90% or more: uk-moodys-22 (0.95; the reader's question is whether Moody's moves the rating or outlook). The BC story leads with the size of the cabinet (0.77) instead of the swearing-in (0.99), which is not proposed. No secondary claim at 95% or more.",
+ "negative_main": "No main claim below 50% and no negative headline. The low claims are secondaries: cop31-fossil-22, fr-acte6-route-22. The Serbian election call (rs-call-22, below 50%, nothing announced for the day) is not proposed and goes to the diary.",
+ "reports_what_happens": "Every main claim is about an outcome in the window: the COP31 closing plenary, the overnight Russian drone count reported by the Ukrainian Air Force, UKMTO-reported shipping incidents, the Interior Ministry count of Act VI, the Moody's review, two published figures (UK borrowing, euro-area confidence), the size of the BC cabinet sworn in on Friday, and the NROL-136 launch.",
+ "running_note": "Stories of the day from BBC, ČT24 and Seznam Zprávy, with Al Jazeera, DW, Novinky, ČTK and Euronews for the lists that refused (read 19 Nov ~17:40–17:55Z); Reuters World and Business (401), AP, FT and iROZHLAS (403) refused, the Guardian returned a bot check. 10 listed, 2 covered (Crimean Bridge strikes and Putin's vow → ua-war; US–Iran fighting and the Houthi strike on Riyadh → gulf-shipping); 8 have nothing reportable on 21 Nov.",
+ "running_shortfall": "2 running stories covered against running_min 6. The other eight have no reportable occurrence in the window: the Shenzhen meeting ended on 19 Nov (board question resolved), the Coalition of the Willing has no next date, the Anthropic IPO is a share price, the ICJ ruling is final, the EU–UK summit is covered by edition No. 30, the licence-fee bill waits for early 2027, the Plzeň bus crash is an accident and the Brno tunnels' delay is already announced. They go to the diary. COP31, a world story of the first rank but not on two front-page lists, leads.",
+ "running": [
+  {
+   "title": "Trump, Xi and Putin issue 'peace declaration' after first trilateral summit in Shenzhen",
+   "title_cs": "Trump, Si a Putin po první trojstranné schůzce v Šen-čenu vydali „mírovou deklaraci“",
+   "lists": [
+    "bbc",
+    "ct24",
+    "seznam",
+    "aljazeera",
+    "dw",
+    "novinky",
+    "ctk",
+    "euronews"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/c623j4ln97x7o",
+    "https://www.dw.com/en/apec-summit-trump-xi-putin-talks-end-with-peace-declaration/live-79964719"
+   ],
+   "next_step": "Nothing reportable on 21 Nov from the summit itself: APEC Leaders' Meeting ran 18-19 Nov and has concluded (https://www.lg.gov.cn/english/news/latestnews/content/post_12588327.html). Next: Fri 20 Nov, Trump news conference at the White House on the trip (BBC). Declaration promises a trilateral 'dialogue on reducing nuclear risks' - no date set (DW).",
+   "status": "not_covered",
+   "why": "Nothing reportable on Sat 21 Nov: the APEC summit and the trilateral meeting ended on 19 Nov; Trump's news conference on Fri 20 Nov was announced with trade deals as its only named topic and no decision; the declaration's nuclear-risk dialogue has no date. Board question us-cn-ru-trilateral-meeting resolved YES."
+  },
+  {
+   "title": "Ukraine strikes Crimean Bridge for third time in a week; Putin vows 'far more painful' response",
+   "title_cs": "Ukrajina potřetí za týden zasáhla Krymský most, Putin slibuje „mnohem bolestivější“ odvetu",
+   "lists": [
+    "bbc",
+    "ct24",
+    "dw",
+    "novinky",
+    "euronews",
+    "ctk"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/cm879dqn3e1jo",
+    "https://www.euronews.com/2026/11/19/ukraine-strikes-key-bridge-linking-russia-and-crimea-for-third-time-this-week-halting-rail"
+   ],
+   "next_step": "Nothing scheduled on 21 Nov; ongoing combat. Reportable unscheduled outcomes: a large Russian missile/drone strike framed as the promised retaliation; further strike on/repair status of the bridge (road section destroyed, rail resumed on one track per ČT24 https://ct24.ceskatelevize.cz/clanek/media/souhrn-zasadni-udalosti-ctvrtka-19-listopadu-379766).",
+   "status": "covered",
+   "story": "ua-war"
+  },
+  {
+   "title": "Coalition of the Willing meets in Berlin; Trump phones in to question European aid; next round of peace talks pending",
+   "title_cs": "Koalice ochotných jednala v Berlíně, Trump do jednání zavolal a zpochybnil evropskou pomoc Ukrajině",
+   "lists": [
+    "dw",
+    "novinky",
+    "ctk",
+    "euronews",
+    "ct24"
+   ],
+   "sources": [
+    "https://www.euronews.com/2026/11/19/trump-questions-europes-billions-in-ukraine-aid-during-surprise-call",
+    "https://www.dw.com/en/wadephul-coalition-of-the-willing-talks-in-berlin-send-strong-signal-to-moscow/a-79990664"
+   ],
+   "next_step": "Nothing reportable on 21 Nov; next: a US-Ukraine-Russia multilateral round with European participation, announced 12 Nov for 'as early as next week' but still with no date or venue (https://www.kyivpost.com/post/89964; TASS 18 Nov https://tass.com/world/2220767). Putin on 19 Nov invited Europeans to Moscow for talks on the format (DW).",
+   "status": "not_covered",
+   "why": "No dated step: the next US–Ukraine–Russia round with the Europeans has no date or venue."
+  },
+  {
+   "title": "Anthropic shares jump in record Nasdaq debut",
+   "title_cs": "Akcie Anthropicu po rekordním úpisu na burze prudce posílily",
+   "lists": [
+    "bbc",
+    "aljazeera",
+    "dw",
+    "novinky",
+    "ctk",
+    "euronews"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/live/c933xxm82mr8t",
+    "https://www.euronews.com/2026/11/19/anthropic-shares-open-34-above-ipo-price-in-nasdaq-debut-after-record-listing"
+   ],
+   "next_step": "Nothing reportable on 21 Nov (Saturday, US markets closed); Friday 20 Nov close is the last data point before the edition. Next: Mon 23 Nov trading session.",
+   "status": "not_covered",
+   "why": "Share prices are excluded (financial market prices); US markets are shut on Saturday."
+  },
+  {
+   "title": "UN top court rules Myanmar committed genocide against the Rohingya",
+   "title_cs": "Mezinárodní soudní dvůr rozhodl, že Myanmar spáchal genocidu Rohingů",
+   "lists": [
+    "bbc",
+    "ct24",
+    "aljazeera",
+    "dw",
+    "euronews",
+    "novinky"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/c804wzp20ddvo",
+    "https://www.aljazeera.com/news/2026/11/19/what-the-icj-ruling-means-for-the-rohingya"
+   ],
+   "next_step": "Nothing reportable on 21 Nov; ruling is final. Next: separate ICJ phase to fix reparations amount (no date; BBC); possible UN Security Council follow-up (not scheduled).",
+   "status": "not_covered",
+   "why": "The ICJ judgment is final; reparations will be set later with no date. Nothing on 21 Nov."
+  },
+  {
+   "title": "Houthi attack hits tower in Riyadh's financial district as US blockade of Iran tightens",
+   "title_cs": "Útok jemenských hútíů poškodil mrakodrap v rijádské finanční čtvrti, USA dál blokují Írán",
+   "lists": [
+    "aljazeera",
+    "ct24",
+    "euronews"
+   ],
+   "sources": [
+    "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
+    "https://ct24.ceskatelevize.cz/clanek/svet/jemensti-hutiove-poskodili-nejvyssi-mrakodrap-v-saudskoarabskem-rijadu-379758"
+   ],
+   "next_step": "Nothing scheduled on 21 Nov; US-Iran talks stalled since early-Nov exchange of proposals (https://www.nbcnews.com/world/iran/iran-defends-2-day-proposal-peace-talks-us-rejects-outrageous-conditio-rcna608263). Reportable unscheduled outcomes: further Houthi/Iranian strikes on Gulf states, US interdiction of ships.",
+   "status": "covered",
+   "story": "gulf-shipping"
+  },
+  {
+   "title": "EU-UK summit in Brussels to seal food trade and youth mobility deals",
+   "title_cs": "Summit EU a Británie v Bruselu má přinést dohody o obchodu s potravinami a mobilitě mladých",
+   "lists": [
+    "bbc",
+    "aljazeera",
+    "dw"
+   ],
+   "sources": [
+    "https://www.bbc.com/news/articles/c623j4kpg94go",
+    "https://www.aljazeera.com/news/2026/11/19/as-burnham-heads-to-brussels-are-new-brexit-wars-about-to-begin"
+   ],
+   "next_step": "Summit is Fri 20 Nov in Brussels (BBC); outcome known before Saturday. Nothing on 21 Nov itself; next: if agreed, UK government introduces implementing legislation 'next week' (week of 23 Nov, BBC).",
+   "status": "not_covered",
+   "why": "Covered in edition No. 30 (dated 21 Nov), whose claims resolve on the summit day, Fri 20 Nov; UK legislation follows the week of 23 Nov. Nothing new reportable on 21 Nov."
+  },
+  {
+   "title": "Czech public-media fee abolition: government under pressure after mass Letná protest",
+   "title_cs": "Vláda čelí po masové demonstraci na Letné tlaku, aby stáhla zákon o zrušení poplatků",
+   "lists": [
+    "novinky",
+    "ctk",
+    "ct24",
+    "seznam"
+   ],
+   "sources": [
+    "https://www.novinky.cz/clanek/podcasty-policheck-fiala-veri-ze-babis-ustoupi-demonstrantum-sam-to-jako-premier-ostre-odmital-40609276",
+    "https://www.ceskenoviny.cz/zpravy/koalice-ochotnych-ma-jina-dulezita-temata-nez-financovani-ct-a-cro-uvedl-berlin/2903420"
+   ],
+   "next_step": "Nothing reportable on 21 Nov; bill passed first reading and awaits second reading in the Chamber (no date found; reporting suggests final vote probably in January). Next dated step: not confirmed - check Chamber schedule.",
+   "status": "not_covered",
+   "why": "The bill waits for its second reading, set for early 2027 (Klempíř, 16 Nov); the media committee meets on 26 Nov. Board question cz-licence-fee-abolition-passed."
+  },
+  {
+   "title": "School bus carrying nursery children crashes near Plzeň; car driver killed",
+   "title_cs": "Na Plzeňsku havaroval po srážce s autem autobus s dětmi z mateřské školy, řidička auta zemřela",
+   "lists": [
+    "ct24",
+    "novinky",
+    "ctk"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/domaci/na-plzensku-po-srazce-havaroval-autobus-s-detmi-ridic-auta-zemrel-379752",
+    "https://www.novinky.cz/clanek/krimi-vsude-byl-kour-deti-plakaly-popsal-svedek-tragickou-srazku-skolniho-autobusu-s-osobakem-na-plzensku-40609443"
+   ],
+   "next_step": "Nothing reportable on 21 Nov; police investigation of cause ongoing (Novinky). Next: police findings, no date.",
+   "status": "not_covered",
+   "why": "An accident: the paper does not forecast accidents or their investigation."
+  },
+  {
+   "title": "Brno's Pisárecké tunnels will not reopen on Saturday as planned",
+   "title_cs": "Pisárecké tunely v Brně se v sobotu podle plánu neotevřou, práce se protáhnou nejméně o devět dnů",
+   "lists": [
+    "ct24",
+    "novinky",
+    "ctk"
+   ],
+   "sources": [
+    "https://ct24.ceskatelevize.cz/clanek/regiony/prace-v-pisareckych-tunelech-se-protahnou-nejmene-o-devet-dnu-uvedlo-rsd-379771",
+    "https://www.novinky.cz/clanek/domaci-zpravy-jihomoravsky-kraj-pisarecke-tunely-v-brne-se-otevrou-pozdeji-40609540"
+   ],
+   "next_step": "Tunnels were due to reopen Sat 21 Nov after six-week refit; ŘSD now says closure extended up to 9 days (contractor Eltodo requested extension). Fri 20 Nov: coordination meeting at the South Moravian regional authority (police, DPMB, city, Eltodo) to decide on extension (ČT24).",
+   "status": "not_covered",
+   "why": "The tunnels do not reopen as planned (ŘSD: up to 9 more days); a claim would only report a non-event that is already announced, and no new date is scheduled for 21 Nov."
+  }
+ ],
+ "diary": [
+  {
+   "date": "2026-11-21",
+   "text": "Ukraine marks the Day of Dignity and Freedom; SCO dialogue in New Delhi with a Pakistani minister (to 22 Nov); APC rally in Ibadan",
+   "text_cs": "Ukrajina si připomíná Den důstojnosti a svobody; dialog Šanghajské organizace pro spolupráci v Dillí za účasti pákistánského ministra (do 22. 11.); předvolební shromáždění APC v Ibadanu"
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Likud and the Eisenkot bloc meet on a unity government; Czech premiere of \"Proces Pelicot\" at the National Theatre festival; Lithuanian by-election run-off",
+   "text_cs": "Likud a blok Gadiho Eisenkota jednají o vládě jednoty; česká premiéra inscenace Proces Pelicot; druhé kolo doplňovacích voleb v Litvě"
+  },
+  {
+   "date": "2026-11-23",
+   "text": "De Wever reports to the King; ODS leadership meets regional chairs; Spanish four-way TV debate; euro-area flash PMIs",
+   "text_cs": "De Wever podává zprávu králi; vedení ODS jedná s krajskými předsedy; televizní debata čtyř lídrů ve Španělsku; předběžné indexy PMI eurozóny"
+  },
+  {
+   "date": "2026-11-24",
+   "text": "Chamber of Deputies session opens (refinery tax, budget second reading)",
+   "text_cs": "Začíná schůze Poslanecké sněmovny (daň z mimořádných zisků rafinerií, druhé čtení rozpočtu)"
+  },
+  {
+   "date": "2026-11-26",
+   "text": "Extraordinary EU summit on the Ukraine loan and the MFF; Chamber media committee on the licence-fee bill",
+   "text_cs": "Mimořádný summit EU o úvěru pro Ukrajinu a víceletém rozpočtu; mediální výbor Sněmovny k zákonu o zrušení poplatků"
+  },
+  {
+   "date": "2026-11-27",
+   "text": "Last day for Serbia's acting president Čupić to call the presidential election; Český slavík awards",
+   "text_cs": "Poslední den, kdy může úřadující prezident Srbska Čupić vypsat prezidentské volby; ceny Český slavík"
+  }
+ ],
+ "unreachable": [
+  "Reuters, AP, FT, Politico week-ahead planners (not attempted (known refusals, exit 2); used LiteFinance, Newsquawk, Euronews, DW, BBC, Al Jazeera, Kyiv Independent instead)",
+  "aldeparty.eu/council-ireland-2026 (HTTP 404; ALDE Council in Ireland dates not found)",
+  "anobudelip.cz (ANO) (HTTP 403 (exit 2))",
+  "apnews.com (exit 2 (HTTP 403))",
+  "carbonbrief.org, climatechangenews.com, unfccc.int/news (render empty or no current items)",
+  "ceskenoviny search (404)",
+  "ceskenoviny.cz Předpokládané události (section page shows only general news; no weekend preview yet (likely published Fri))",
+  "consilium.europa.eu meeting pages (HTTP 403 (exit 2))",
+  "ec.europa.eu/eurostat release calendar (renders without dates (JavaScript))",
+  "echo24.cz (article) (exit 3 (timeout))",
+  "edition.cnn.com (not reached (output truncated, not used))",
+  "enb.iisd.org (HTTP 403 (exit 2))",
+  "enb.iisd.org, theguardian.com, businessgreen.com (403/bot check)",
+  "engineeringnews.co.za (HTTP 403 (exit 2))",
+  "euronews.com article (Philippe / French centre-right) (HTTP 406 (exit 2))",
+  "ft.com (exit 2 (HTTP 403))",
+  "hrad.cz (HTTP 403 (exit 2); president's programme taken from regional press)",
+  "https://www.hln.be/ (consent wall)",
+  "https://www.hrad.cz/cs/pro-media/program-prezidenta (403)",
+  "https://www.irozhlas.cz/ (exit 2)",
+  "https://www.standaard.be/ (403)",
+  "interieur.gouv.fr (HTTP 403)",
+  "investing.com, forexfactory.com, fxstreet.com (HTTP 403)",
+  "irish-presidency.consilium.europa.eu/en/events/ (502 CONNECT tunnel failed (exit 3))",
+  "irozhlas.cz (HTTP 403 (refuses scripted reading, exit 2))",
+  "irozhlas.cz (exit 2 (HTTP 403))",
+  "mestaasobci.cz (STAN) (CONNECT 502 (exit 3))",
+  "news.gov.bc.ca (post-election blackout)",
+  "odok.cz / odok.gov.cz (request blocked page; cabinet 23 Nov programme not available)",
+  "prefecturedepolice.interieur.gouv.fr (empty)",
+  "psp.cz (connection reset (exit 3); Chamber 24 Nov agenda not verified beyond existing agenda items)",
+  "ratings.moodys.com (HTTP 403)",
+  "rbnz.govt.nz (HTTP 403 (exit 2); November 2026 RBNZ decision date not verified)",
+  "reuters.com/business (exit 2 (HTTP 401))",
+  "reuters.com/world (exit 2 (HTTP 401))",
+  "spaceflightnow.com, timescolonist.com, castanet.net (HTTP 403)",
+  "theguardian.com /world and /environment/climate-crisis (bot check 'Client Challenge' (empty))",
+  "theguardian.com/international (exit 0 but bot challenge page, no content)",
+  "timesofisrael.com (HTTP 403 (exit 2))",
+  "ukmto.org (refused)",
+  "vlada.gov.cz/cz/jednani-vlady/ (HTTP 404)"
+ ],
+ "run": {
+  "started_at": "2026-11-19T18:38:00+01:00",
+  "finished_at": "2026-11-19T19:20:42+01:00",
+  "agents": 27,
+  "searches": 155,
+  "note": "Searches as reported by agents: sweeps 44 (running list 8, Czech 14, world/Europe/economy 14, supplementary Czech/Friday 8), board checks 18, dossiers 35 (agenda and dossiers 79, with board checks 97 ≤ 120); evidence forecasters 25, outsiders 15, anchors 4, disagreement research 8, board evidence 3 and board outsider 3 (forecasting 58, above the evidence reserve of 50 by 8); morning reserve 45 left (≥ 30). Agents: 4 sweeps, 2 board checks, 5 dossier, 10 forecasters (5 roles × 2 groups, continued by SendMessage for the signals step and the COP31 rerun), 1 research, 5 board forecasters. The sequential shadow researcher was not run: the searches left after the evidence reserve were needed for the morning reserve (PLANNER step 11 allows skipping)."
+ },
+ "note": "Evening desk round one, prepared 19 Nov 2026 18:38–20:40 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-19, Platt a 0.1719, b 1.3697; equal weights). Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written before the agent was sent the signals step (anchor: one step). Times are those the agents recorded. Disagreement: the COP31 claims (spread 0.26 and 0.29) were traced to inputs (the outsider lacked the 19 Nov draft facts); all five reran once on a union of facts (spread then 0.16 and 0.11). ca-bc-cabinet-22 spread 0.29 kept as genuine. Research step for cop31, gulf-ukmto, nrol136, rs-call, ca-bc-cabinet: nothing decisive (new: a second tanker struck near Khasab on 18 Nov). For the morning: (1) COP31: any third draft, closing-plenary time, or adoption on Fri 20 Nov (adoption on Friday also resolves YES); (2) did USSF-317 launch at 04:33 UTC Fri 20 Nov? a further slip would hit nrol136-22; (3) Paris prefecture order on the Act VI route (if issued before the freeze, replace fr-acte6-route-22 with the reserve on arrests or drop it); (4) a published consensus for UK PSNB (Reuters/Newsquawk) to replace the £18.0bn proxy and recompute uk-psnb-22; (5) any BC report on the cabinet size before the ceremony; (6) ČTK Předpokládané události for the weekend and psp.cz/hrad.cz for a Czech event; (7) whether Čupić called the Serbian election on Thu evening or set a date.",
+ "for_publisher": [
+  "cop31-adopt-22 – COP31 v Antalyi přijme hlavní závěrečné rozhodnutí do 23:59 antalyjského času v sobotu 21. 11. – 21. 11. 23:59 (Antalya)",
+  "ua-drones-22 – Ukrajinské letectvo ohlásí, že Rusko v noci na 21. 11. vyslalo aspoň 150 dronů – 21. 11. 12:00 (Kyjev)",
+  "uk-moodys-22 – Moody's ponechá Británii rating Aa3 se stabilním výhledem – 21. 11. 23:59 (Londýn)"
+ ],
+ "stories": [
+  {
+   "id": "cop31",
+   "scope": "world",
+   "topic": "politics",
+   "rank": 1,
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 4
+   },
+   "event_key": "cop31-cover-adoption-2026-11-21",
+   "case_key": "cop31-antalya-2026",
+   "event": "COP31, the UN climate conference in Antalya (Türkiye presidency, Australia leading negotiations), was scheduled to close on Friday 20 November 2026. On Thursday the presidency published a 9-page second draft of the cover decision ('Antalya Declaration') that drops all fossil-fuel wording and the $120bn adaptation-finance target but keeps a goal of 35% electricity share of final energy by 2035; Reuters says it is not the final version. Panama has threatened in writing to block any deal without a cap on global oil production, while the EU reconvenes ministers on Friday; the last two COPs ended on Saturday and Sunday.",
+   "title_cs": "COP31 v Antalyi: dohoda o závěrečném textu, z něhož zmizela fosilní paliva",
+   "sources": [
+    {
+     "title": "RTÉ: COP31 draft climate deal removes mention of fossil fuels",
+     "url": "https://www.rte.ie/news/world/2026/1119/1599773-cop31-thursday/"
+    },
+    {
+     "title": "Reuters (via WIKY): COP31 draft drops fossil fuel language as talks near deadline",
+     "url": "https://wiky.com/2026/11/19/cop31-negotiators-publish-revised-deal-text-with-no-mention-of-fossil-fuels/"
+    },
+    {
+     "title": "AFP (via Arab News): COP31 draft climate deal removes mention of fossil fuels",
+     "url": "https://www.arabnews.com/world/cop31-draft-climate-deal-removes-mention-of-fossil-fuels-3012956"
+    },
+    {
+     "title": "Ara: The elimination of the reduction of fossil fuels in the final agreement threatens to derail COP31",
+     "url": "https://en.ara.cat/international/the-elimination-of-the-reduction-of-fossil-fuels-in-the-final-agreement-threatens-to-derail-cop31_1_5916264.html"
+    },
+    {
+     "title": "Anadolu: COP31 Presidency unveils 2nd draft cover decision",
+     "url": "https://aa.com.tr/en/turkiye/cop31-presidency-unveils-2nd-draft-cover-decision-with-paris-agreement-goals-electrification-on-focus/4131143"
+    },
+    {
+     "title": "Climate Home News: COP31 Bulletin Day 10: New draft keeps electrification goal but drops fossil fuel references",
+     "url": "https://www.climatechangenews.com/2026/11/19/cop31-antalya-turkiye-australia-ministers-agremeent-fossil-fuels-electrification/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "cop31-adopt-22",
+     "label": "COP31 adopts cover decision by Saturday",
+     "text": "The COP31 plenary in Antalya adopts the conference's main cover decision by 23:59 Antalya time on Saturday 21 November 2026.",
+     "criterion": "YES if the overarching COP31 cover decision (the presidency decision drafted by Türkiye and Australia, called the 'Antalya Declaration' in the 19 Nov draft, under whatever title it is finally adopted, by the COP and/or the CMA) is gavelled through in a plenary between 07:00 on Fri 20 Nov and 23:59 on Sat 21 Nov 2026, Europe/Istanbul time (UTC+3), as shown by the UNFCCC decisions page / record of the closing plenary or by the gavel time reported by at least two of Reuters, AFP, AP, Carbon Brief, ENB (IISD), Climate Home News. NO if it has not been gavelled by 23:59 on 21 Nov Antalya time (including when the plenary is still running or suspended at midnight, or when the conference ends without a cover decision). Adoption of other agenda items alone does not count. A late record does not make it NO: the time of the gavel decides.",
+     "resolution_source": "https://unfccc.int/cop31 (UNFCCC COP31 decisions / closing plenary record); gavel time per Reuters, AFP, Carbon Brief, ENB (IISD)",
+     "schedule": "official",
+     "slip_class": "other-scheduled",
+     "publishes": "UNFCCC posts adopted decisions (advance unedited versions) on unfccc.int within hours of the closing plenary; Reuters/AFP/Carbon Brief report the gavel time live",
+     "tz": "Europe/Istanbul",
+     "event_window": {
+      "start": "2026-11-20T07:00:00+03:00",
+      "end": "2026-11-21T23:59:00+03:00"
+     },
+     "evidence_at": "2026-11-22T08:00:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "COP31 schválí závěrečné rozhodnutí do soboty",
+      "text": "Plénum konference COP31 v Antalyi schválí hlavní zastřešující rozhodnutí konference do 23:59 antalyjského času v sobotu 21. listopadu 2026.",
+      "criterion": "ANO, pokud plénum mezi 7:00 v pátek 20. listopadu a 23:59 v sobotu 21. listopadu 2026 antalyjského času (UTC+3) schválí zastřešující rozhodnutí COP31 (rozhodnutí předsednictví připravené Tureckem a Austrálií, v návrhu z 19. listopadu nazvané „Antalyjská deklarace“, ať už bude nakonec nazváno jakkoli), doloženo záznamem UNFCCC nebo časem schválení podle alespoň dvou zdrojů z okruhu Reuters, AFP, AP, Carbon Brief, ENB (IISD), Climate Home News. NE, pokud do 23:59 v sobotu antalyjského času schváleno nebylo (včetně případu, kdy plénum o půlnoci stále jedná nebo je přerušeno, či kdy konference skončí bez zastřešujícího rozhodnutí). Schválení jiných bodů programu samo nestačí. O výsledku rozhoduje čas schválení, ne čas zveřejnění záznamu."
+     },
+     "dossier": "data/dossiers/2026-11-22/cop31-adopt-22.md",
+     "signals": "data/dossiers/2026-11-22/cop31-adopt-22.signals.md",
+     "probability": 0.61,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "No consensus text yet on 19 Nov evening (second 9-page draft, 'not expected to be the final version'); COP21–COP30 adopted the main decision by the end of scheduled day + 1 in 7 of 10 cases (3 of the last 6), with COP25, COP27 and COP29 running into Sunday; Panama has threatened in writing to block.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:06Z",
+       "checked": [
+        "markets.mjs search \"COP31\"",
+        "markets.mjs search \"COP31 fossil fuel\"",
+        "markets.mjs search \"climate summit agreement Antalya\""
+       ],
+       "note": "No market on adoption or timing of the COP31 cover decision; only a Manifold market on 35x35 pledge signatories (does not match)."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "COP main decision adopted by 23:59 local on scheduled last day + 1 (COP21–COP30)",
+       "rate": 0.7,
+       "n": 10,
+       "source": "Carbon Brief key-outcomes articles COP23–COP30; LSE Grantham (COP22); Wikipedia (COP21); see dossier data/dossiers/2026-11-22/cop31-adopt-22.md"
+      },
+      "dossier": "data/dossiers/2026-11-22/cop31-adopt-22.md",
+      "signals": "data/dossiers/2026-11-22/cop31-adopt-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:15:39+01:00",
+        "p": 0.47,
+        "p_blind": 0.47,
+        "at_blind": "2026-11-19T19:01:32+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "COP21-30 adoption by end of day+1: 7/10 (0.70), last six 3/6. Down: 2nd draft only Thu pm, 'not final', EU verdict deferred to Fri, Panama written veto threat, LMDC hostility; two YES cases within 1h of midnight. Up: contested items already cut (COP30 pattern). Net ~-0.95 logit.",
+        "p_held": 0.49,
+        "p_if_held": 0.96,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "No change: union adds no new fact beyond my dossier (7/10, last six 3/6; Thu 2nd draft not final, no 3rd draft, EU verdict Fri, Panama threat). Union's 'COP29 ended Saturday' conflicts with Carbon Brief (05:31 Sun) and its own list; I keep COP29 as NO.",
+        "rounds": [
+         {
+          "p": 0.47,
+          "at": "2026-11-19T19:03:48+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:35:00+01:00",
+        "p": 0.63,
+        "p_blind": 0.68,
+        "at_blind": "2026-11-19T19:05:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Scheduled end Fri 20; slim 2nd draft (9pp) out Thu, Bowen consulting overnight, Reuters: overruns >24h common. Recent COPs gavelled by Sat 23:59 local ~7/10 (COP30,28,26,24 yes; 29,27,25 no). Divisions (EU, LMDC, finance) keep Sun-risk real.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Union adds nothing new: no third draft yet, EU reviewing overnight, Panama written block threat. Record 7/10 (last six 3/6), two YES near midnight. Note union says COP29 ended Saturday; dossier has 05:31 Sun (NO). Hold ~0.63.",
+        "rounds": [
+         {
+          "p": 0.64,
+          "at": "2026-11-19T19:20:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:17:00+01:00",
+        "p": 0.54,
+        "p_blind": 0.54,
+        "at_blind": "2026-11-19T19:01:52+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Day+1 adoption 7/10 COP21-30, 3/6 recent; 2 YES within 1h of midnight. Case for NO: 2nd draft only Thu pm and not final, EU defers to Fri, Panama veto letter, both camps unhappy -> 3rd draft Fri night, Sunday gavel. For YES: hard items already cut (COP30 pattern). Slight shade down from 0.6.",
+        "p_held": 0.55,
+        "p_if_held": 0.99,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Union adds no fact beyond the dossier: 7/10 and 3/6 record, draft not final, no 3rd draft or plenary time Thu evening, EU decides Fri, Panama threat. (Union line 'COP29 ended on Saturday' contradicts its own 'COP29 ran into Sunday'; dossier: 05:31 Sun.) No change.",
+        "rounds": [
+         {
+          "p": 0.54,
+          "at": "2026-11-19T19:05:34+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:25:00+01:00",
+        "p": 0.52,
+        "p_held": 0.53,
+        "p_if_held": 0.98,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier",
+         "union-of-facts"
+        ],
+        "reason": "No change. Union adds no new fact beyond the dossier. Its line 'COP29 ended on Saturday' conflicts with Carbon Brief (05:31 Sun 24 Nov 2024) and is not used. Anchor stays 7/10 (3/6 recent); overrun median ~28h vs ~30h available; Panama/EU risk.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "COP21-COP30 overrun record: 7/10 gavel by 23:59 day+1, last 6: 3/6; overruns ~3-44h, median ~28h"
+        },
+        "rounds": [
+         {
+          "p": 0.52,
+          "at": "2026-11-19T19:02:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T20:30:00+01:00",
+        "p": 0.6,
+        "p_blind": 0.78,
+        "at_blind": "2026-11-19T19:30:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "COP due to end Fri 20 Nov; first draft only Mon 16 Nov, so overrun likely; one-day overrun to Sat typical (COP28-30 closed by Sat/Wed). other-scheduled slip 7%. Risk: runs past Sat midnight or no cover deal.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Record: 3 of last 6 COPs ran into Sunday, 7 of 10 done by day after close; no third draft or closing time yet, second draft is contested (EU, Panama). Lowered from 0.73.",
+        "rounds": [
+         {
+          "p": 0.73,
+          "at": "2026-11-19T20:00:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.553,
+      "calibrated": 0.613,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.16,
+      "decomposition": {
+       "p_held": 0.52,
+       "p_if_held": 1,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-19T18:15:00Z",
+       "question": "Is the COP31 closing plenary expected Friday night or Saturday? Has a new text appeared, how has the EU reacted to the 19 Nov draft, and does Panama threaten to block it? (One entry used for both cop31-adopt-22 and cop31-fossil-22.)",
+       "finding": "Nothing new beyond the dossiers as of ~18:15Z Thu 19 Nov. No third draft and no closing-plenary time announced; no outlet read gives a schedule. RTE (modified 17:27Z 19 Nov): EU ministers chaired by Ireland's Darragh O'Brien met after the second draft and 'would continue examining the document throughout the evening, with ministers reconvening tomorrow' (Fri 20 Nov). Hoekstra said the EU will judge the draft against three tests (1.5C response, implementation, the EU mandate) and declined to say whether the EU will insist that fossil-fuel wording go back in. So the EU has not demanded it yet, and its position comes Friday. AFP/France24 (13:30Z 19 Nov): talks 'formally close Friday' but often run over; Panama threatened on Thursday to block any deal that does not meet its demands, including a cap on global oil production. Reuters/Globe and Mail (14:13Z): the second draft is 'not expected to be the final version'; recent COPs 'regularly blown past this deadline by more than 24 hours'. UN News (19 Nov): 'On the eve of the summit's scheduled close, ministers and the Presidency were still trying to bridge sharp differences.' Common Dreams (17:35Z): the words 'fossil fuels' appear nowhere in the 19 Nov draft, which offers only a 'transition towards low greenhouse gas emissions and climate-resilient development'. NGOs (Greenpeace, Oil Change, 350.org, Power Shift Africa 'ghost COP') call it unacceptable. No report of AOSIS/LDC demands since then. ENB (403), the Guardian (403) and BusinessGreen (403) could not be read; the Climate Home bulletin is paywalled.",
+       "sources": [
+        "https://www.rte.ie/news/world/2026/1119/1599773-cop31-thursday/",
+        "https://www.france24.com/en/live-news/20261119-cop31-draft-climate-deal-removes-mention-of-fossil-fuels",
+        "https://www.theglobeandmail.com/world/article-cop31-revised-deal-draft-fossil-fuels/",
+        "https://www.commondreams.org/news/cop31-green-transition",
+        "https://news.un.org/en/news/topic/climate-change",
+        "https://www.yahoo.com/news/science/articles/cop31-talks-must-drive-shift-103631104.html"
+       ],
+       "decisive": false
+      },
+      "adjustment": "No adjustment of the figure: the published 0.61 is the calibrated combination (Platt a 0.1719, b 1.3697) of the five estimates (plain geometric mean 0.553); the map moves it above the forecasters' own chance that the event happens in the window (0.52), so the decomposition cannot reproduce it with p_if_held ≤ 1.",
+      "disagreement": {
+       "cause": "inputs",
+       "note": "First round spread 0.26 (adopt) and 0.29 (fossil): the outsider, who by design had no dossier, did not have the 19 Nov second draft (fossil-fuel wording removed), the Panama veto letter or the 3-of-6 recent record. All five got the union of facts (no numbers; fc/union_cop31.md) and reran once; first figures kept in rounds. The union file wrongly said COP29 ended on Saturday (it ended at 05:31 on Sunday); the four forecasters who had the dossier noticed and kept the dossier version. Spread after rerun: adopt 0.16, fossil 0.11."
+      },
+      "spread_note": "Spread 0.16 above 0.15: research step run (forecast.research); no decisive new fact, so the spread stands and the basis line says the evidence is mixed."
+     }
+    },
+    {
+     "id": "cop31-fossil-22",
+     "label": "COP31 decision mentions fossil fuels",
+     "text": "The cover decision adopted at COP31 by 23:59 Antalya time on Saturday 21 November 2026 contains the words 'fossil fuel' or 'fossil fuels'.",
+     "criterion": "YES if the COP31 cover decision gavelled through between 07:00 on Fri 20 Nov and 23:59 on Sat 21 Nov 2026, Europe/Istanbul time (the decision that counts under cop31-adopt-22), contains anywhere in its adopted text (preamble, operative paragraphs, footnotes, or the title of an initiative or roadmap it names) the string 'fossil fuel' or 'fossil fuels' (also hyphenated 'fossil-fuel'), checked against the adopted text on unfccc.int or a verbatim quote by Reuters, AFP, AP, Carbon Brief, ENB (IISD) or Climate Home News. Mentions of 'coal', 'oil', 'gas' or 'transitional fuels' without the words do not count, nor does a reference to 'paragraph 28 of decision 1/CMA.5' without them. NO if no cover decision is adopted in that window, or if the adopted cover decision does not contain the words.",
+     "resolution_source": "https://unfccc.int/cop31 (adopted COP31 cover decision, advance unedited version); verbatim quotes by Reuters, AFP, Carbon Brief, ENB (IISD)",
+     "schedule": "official",
+     "slip_class": "other-scheduled",
+     "publishes": "UNFCCC posts the adopted text on unfccc.int within hours of the closing plenary; Carbon Brief/Reuters/AFP report final wording the same night",
+     "tz": "Europe/Istanbul",
+     "event_window": {
+      "start": "2026-11-20T07:00:00+03:00",
+      "end": "2026-11-21T23:59:00+03:00"
+     },
+     "evidence_at": "2026-11-22T10:00:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Rozhodnutí COP31 zmíní fosilní paliva",
+      "text": "Zastřešující rozhodnutí schválené na COP31 do 23:59 antalyjského času v sobotu 21. listopadu 2026 obsahuje slova „fossil fuel“ nebo „fossil fuels“ (fosilní palivo, fosilní paliva).",
+      "criterion": "ANO, pokud zastřešující rozhodnutí COP31 schválené mezi 7:00 v pátek 20. listopadu a 23:59 v sobotu 21. listopadu 2026 antalyjského času (rozhodnutí, které se počítá pro cop31-adopt-22) obsahuje kdekoli ve schváleném anglickém znění (preambule, výrokové odstavce, poznámky pod čarou nebo název iniciativy či plánu, který zmiňuje) výraz „fossil fuel“ nebo „fossil fuels“ (i ve tvaru „fossil-fuel“), ověřeno podle textu na unfccc.int nebo doslovné citace agentur Reuters, AFP, AP, Carbon Brief, ENB (IISD) či Climate Home News. Zmínka o uhlí, ropě, plynu či „přechodných palivech“ bez těchto slov nestačí, stejně jako odkaz na „odstavec 28 rozhodnutí 1/CMA.5“ bez nich. NE, pokud v tomto okně žádné zastřešující rozhodnutí schváleno nebude, nebo pokud schválené rozhodnutí tato slova neobsahuje."
+     },
+     "dossier": "data/dossiers/2026-11-22/cop31-fossil-22.md",
+     "signals": "data/dossiers/2026-11-22/cop31-fossil-22.signals.md",
+     "probability": 0.1,
+     "forecast": {
+      "baseline": {
+       "status_quo": "no",
+       "why": "The 19 Nov second draft contains no explicit reference to fossil fuels (RTÉ, Reuters, AFP); the claim also needs adoption by Saturday midnight (cop31-adopt-22).",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:06Z",
+       "checked": [
+        "markets.mjs search \"COP31\"",
+        "markets.mjs search \"COP31 fossil fuel\"",
+        "markets.mjs search \"climate summit agreement Antalya\""
+       ],
+       "note": "No market on the fossil-fuel wording of the COP31 decision."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "COP main decision contains 'fossil fuel(s)' (COP26–COP30, no adoption = no)",
+       "rate": 0.6,
+       "n": 5,
+       "source": "Carbon Brief key-outcomes articles COP26, COP28, COP30; COP27 from general record; COP29 had no cover decision. Last two (COP29, COP30): 0/2. Restoration after deletion in a late draft: COP28 yes, COP30 no."
+      },
+      "dossier": "data/dossiers/2026-11-22/cop31-fossil-22.md",
+      "signals": "data/dossiers/2026-11-22/cop31-fossil-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:15:39+01:00",
+        "p": 0.13,
+        "p_blind": 0.13,
+        "at_blind": "2026-11-19T19:01:32+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Nested: needs adoption (~0.47). Cover text w/ 'fossil fuel' 3/5 COP26-30 but 0/2 latest; restoration after deletion 1/2 (COP28 yes, COP30 no). 19 Nov draft has none; presidency defends cut to keep Arab Group/LMDC. Quick Saturday deal correlates with holding the line. P(words|adopted)~0.28.",
+        "p_held": 0.47,
+        "p_if_held": 0.28,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "No change: same facts (draft has no fossil words; 3/5 COP26-30, 0/2 latest; restoration 1/2; broad criterion incl. subsidies already priced in). Fast Saturday adoption correlates with holding the cut line.",
+        "rounds": [
+         {
+          "p": 0.13,
+          "at": "2026-11-19T19:03:48+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:35:00+01:00",
+        "p": 0.21,
+        "p_blind": 0.2,
+        "at_blind": "2026-11-19T19:05:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "19 Nov draft dropped both fossil-fuel mentions and the TAFF roadmap welcome; presidency defends it (Kurum). COP30 analog: dropped language never returned. Some chance EU/AOSIS push restores a ref (~30%), times adoption-in-window ~0.68.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Hoekstra noncommittal on restoring fossil wording; Panama's demand (oil-production cap) is maximalist; presidency defends cut. Broad criterion (any mention incl. subsidies) helps. ~0.33 conditional x 0.63. No change.",
+        "rounds": [
+         {
+          "p": 0.21,
+          "at": "2026-11-19T19:20:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:17:00+01:00",
+        "p": 0.1,
+        "p_blind": 0.1,
+        "at_blind": "2026-11-19T19:01:52+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Nested: P(adopt in window) ~0.55 x P(words | adopted) ~0.18. Draft has none; Arab Group/LMDC/Russia red line; restored 1/2 (COP28 yes, COP30 no). Case for YES: broad string test (subsidies, roadmap title), EU/Panama pressure. But restoration fight correlates with Sunday overrun.",
+        "p_held": 0.55,
+        "p_if_held": 0.18,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Union confirms: draft has no fossil wording, EU would not say it will demand it back, Arab Group/Russia/LMDC against, 0/2 in last two COPs, restored 1/2. Broad string test (subsidies) already priced. Restoration fight would push adoption to Sunday. No change.",
+        "rounds": [
+         {
+          "p": 0.1,
+          "at": "2026-11-19T19:05:34+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:25:00+01:00",
+        "p": 0.15,
+        "p_held": 0.52,
+        "p_if_held": 0.29,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier",
+         "union-of-facts"
+        ],
+        "reason": "No change. Union confirms 19 Nov draft has no fossil wording, 0/2 recent COPs, COP28 restore vs COP30 not; EU stance undeclared. Nested 0.52 x 0.29.",
+        "anchor": {
+         "kind": "model",
+         "detail": "product of adoption anchor (0.52) and conditional wording estimate (0.29) from COP26-30 record and restoration precedents"
+        },
+        "rounds": [
+         {
+          "p": 0.15,
+          "at": "2026-11-19T19:02:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T20:30:00+01:00",
+        "p": 0.2,
+        "p_blind": 0.42,
+        "at_blind": "2026-11-19T19:30:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "First draft (AFP 16 Nov) 'calls for accelerated action to phase out fossil fuels'; oil states resist, COP30 cover dropped it. ~0.52 retained given adoption x 0.78 adoption.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Second draft removed all fossil-fuel wording; Arab Group, Russia, LMDC oppose; COP30 did not restore, COP28 did. About 0.33 restored given adoption, times 0.6 adoption.",
+        "rounds": [
+         {
+          "p": 0.39,
+          "at": "2026-11-19T20:00:00+01:00",
+          "reason": "first evening round, before the union of facts"
+         }
+        ]
+       }
+      ],
+      "missing": [],
+      "combined": 0.153,
+      "calibrated": 0.103,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.11,
+      "decomposition": {
+       "p_held": 0.51,
+       "p_if_held": 0.196,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-19T18:15:00Z",
+       "question": "Is the COP31 closing plenary expected Friday night or Saturday? Has a new text appeared, how has the EU reacted to the 19 Nov draft, and does Panama threaten to block it? (One entry used for both cop31-adopt-22 and cop31-fossil-22.)",
+       "finding": "Nothing new beyond the dossiers as of ~18:15Z Thu 19 Nov. No third draft and no closing-plenary time announced; no outlet read gives a schedule. RTE (modified 17:27Z 19 Nov): EU ministers chaired by Ireland's Darragh O'Brien met after the second draft and 'would continue examining the document throughout the evening, with ministers reconvening tomorrow' (Fri 20 Nov). Hoekstra said the EU will judge the draft against three tests (1.5C response, implementation, the EU mandate) and declined to say whether the EU will insist that fossil-fuel wording go back in. So the EU has not demanded it yet, and its position comes Friday. AFP/France24 (13:30Z 19 Nov): talks 'formally close Friday' but often run over; Panama threatened on Thursday to block any deal that does not meet its demands, including a cap on global oil production. Reuters/Globe and Mail (14:13Z): the second draft is 'not expected to be the final version'; recent COPs 'regularly blown past this deadline by more than 24 hours'. UN News (19 Nov): 'On the eve of the summit's scheduled close, ministers and the Presidency were still trying to bridge sharp differences.' Common Dreams (17:35Z): the words 'fossil fuels' appear nowhere in the 19 Nov draft, which offers only a 'transition towards low greenhouse gas emissions and climate-resilient development'. NGOs (Greenpeace, Oil Change, 350.org, Power Shift Africa 'ghost COP') call it unacceptable. No report of AOSIS/LDC demands since then. ENB (403), the Guardian (403) and BusinessGreen (403) could not be read; the Climate Home bulletin is paywalled.",
+       "sources": [
+        "https://www.rte.ie/news/world/2026/1119/1599773-cop31-thursday/",
+        "https://www.france24.com/en/live-news/20261119-cop31-draft-climate-deal-removes-mention-of-fossil-fuels",
+        "https://www.theglobeandmail.com/world/article-cop31-revised-deal-draft-fossil-fuels/",
+        "https://www.commondreams.org/news/cop31-green-transition",
+        "https://news.un.org/en/news/topic/climate-change",
+        "https://www.yahoo.com/news/science/articles/cop31-talks-must-drive-shift-103631104.html"
+       ],
+       "decisive": false
+      },
+      "disagreement": {
+       "cause": "inputs",
+       "note": "First round spread 0.26 (adopt) and 0.29 (fossil): the outsider, who by design had no dossier, did not have the 19 Nov second draft (fossil-fuel wording removed), the Panama veto letter or the 3-of-6 recent record. All five got the union of facts (no numbers; fc/union_cop31.md) and reran once; first figures kept in rounds. The union file wrongly said COP29 ended on Saturday (it ended at 05:31 on Sunday); the four forecasters who had the dossier noticed and kept the dossier version. Spread after rerun: adopt 0.16, fossil 0.11."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ua-war",
+   "scope": "world",
+   "topic": "security",
+   "rank": 2,
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 4
+   },
+   "event_key": "ua-war-2026-11-21",
+   "case_key": "ru-ua-peace-talks",
+   "event": "Ukraine struck the Crimean Bridge three times this week: a roadway section collapsed after a Flamingo missile strike overnight on 17 November and Neptune missiles damaged the railway track overnight on 19 November, halting trains. Putin said on 19 November that Russia's response would be 'far more painful' and that Moscow would no longer discuss energy and Black Sea ceasefires. Russia launched 306 drones plus ballistic and cruise missiles on the night to 17 November and a day-long drone attack on Kyiv on 19 November damaged the Dutch embassy; overnight counts have otherwise run at 96–158 since 13 November.",
+   "title_cs": "Putin slibuje „mnohem bolestivější“ odvetu za útoky na Krymský most",
+   "sources": [
+    {
+     "title": "BBC: Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
+     "url": "https://www.bbc.com/news/articles/cm879dqn3e1jo"
+    },
+    {
+     "title": "Kyiv Independent: 'We will not negotiate' — Putin addresses Ukraine's strikes on Crimean Bridge",
+     "url": "https://kyivindependent.com/we-will-not-negotiate-putin-addresses-ukraines-strikes-on-crimean-bridge/"
+    },
+    {
+     "title": "Kyiv Independent: Entire section of Crimean Bridge collapses after 'seven-phase operation,' Zelensky reveals",
+     "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-crimean-bridge-after-russian-missiles-hit-kyiv-bridges/"
+    },
+    {
+     "title": "Ukrinform: Air defense downs 69 drones launched by Russia in overnight attack on Ukraine",
+     "url": "https://www.ukrinform.net/rubric-ato/4186225-air-defense-downs-69-drones-launched-by-russia-in-overnight-attack-on-ukraine.html"
+    },
+    {
+     "title": "Kyiv Independent: Dutch Embassy damaged in massive, ongoing Russian drone strike on Kyiv",
+     "url": "https://kyivindependent.com/breaking-dutch-embassy-damaged-in-russian-drone-strike-on-kyiv/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "ua-drones-22",
+     "label": "Night drone attack of at least 150",
+     "text": "The Ukrainian Air Force reports that Russia launched at least 150 drones at Ukraine in the night of 20–21 November 2026.",
+     "criterion": "YES if the Ukrainian Air Force's first summary of the overnight attack published on 21 Nov 2026, covering the attack that normally counts from 18:00 Kyiv time on 20 Nov, states that Russia launched at least 150 drones (strike UAVs as the summary counts them: Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions such as Banderol/Dan-T that the summary includes in the UAV total; missiles listed separately not counted), as published on the Air Force's Telegram channel (t.me/kpszsu) or Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. A summary issued late in the morning or around noon still counts as the first summary. Separate daytime reports and later corrections do not count. NO if that summary gives fewer than 150 drones.",
+     "resolution_source": "https://t.me/s/kpszsu (Air Force of the Armed Forces of Ukraine, Telegram); https://www.ukrinform.net/rubric-ato ; https://kyivindependent.com/",
+     "schedule": "official",
+     "slip_class": "none",
+     "publishes": "Ukrainian Air Force morning summary on Telegram/Facebook, usually 08:00–10:00 Kyiv on 21 Nov 2026 (after very large attacks about 12:00); relayed by Ukrinform and Kyiv Independent within the hour",
+     "tz": "Europe/Kyiv",
+     "event_window": {
+      "start": "2026-11-20T18:00:00+02:00",
+      "end": "2026-11-21T12:00:00+02:00"
+     },
+     "evidence_at": "2026-11-21T14:00:00+02:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Noční útok nejméně 150 drony",
+      "text": "Ukrajinské letectvo oznámí, že Rusko v noci na 21. listopadu 2026 vyslalo proti Ukrajině nejméně 150 dronů.",
+      "criterion": "ANO, pokud první souhrn ukrajinského letectva o nočním útoku zveřejněný 21. listopadu 2026 (útok se obvykle počítá od 18:00 kyjevského času 20. listopadu) uvede, že Rusko vyslalo nejméně 150 dronů (útočné drony, jak je souhrn počítá: Šáhedy včetně proudových, Gerbery, Parodije a další klamné drony a případně proudová munice typu Banderol/Daň-T zahrnutá do celkového počtu dronů; samostatně uváděné rakety se nepočítají), jak ho zveřejní letectvo na Telegramu (t.me/kpszsu) či Facebooku nebo převezme Ukrinform, Ukrajinska pravda, Kyiv Independent či Interfax-Ukrajina. Za první souhrn se považuje i souhrn vydaný pozdě dopoledne nebo kolem poledne. Samostatná denní hlášení a pozdější opravy se nepočítají. NE, pokud souhrn uvede méně než 150 dronů."
+     },
+     "dossier": "data/dossiers/2026-11-22/ua-drones-22.md",
+     "signals": "data/dossiers/2026-11-22/ua-drones-22.signals.md",
+     "probability": 0.54,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Threshold 150 sits just below the 14-night median (160) and 21-night median (162); 12 of the last 21 and 8 of the last 14 nights reached 150, but only 2 of the last 7 (median 132). Putin's 19 Nov vow of a 'far more painful' response to the Crimean Bridge strikes raises the chance of a large attack in the coming nights, timing unknown.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:48Z",
+       "checked": [
+        "markets.mjs search \"russia drones ukraine\"",
+        "markets.mjs search \"russia massive strike ukraine november\"",
+        "markets.mjs search \"crimean bridge retaliation\""
+       ],
+       "note": "No market on nightly drone counts; only ceasefire/NATO/Crimea-territory markets."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "own count: Air Force nightly drone counts at or above 150, nights to 30 Oct–19 Nov 2026",
+       "rate": 0.57,
+       "n": 21,
+       "source": "data/dossiers/2026-11-22/ua-drones-22.md (Ukrinform/Kyiv Independent/Telegram relays of Air Force summaries); last 14 nights 8/14, last 7 nights 2/7"
+      },
+      "dossier": "data/dossiers/2026-11-22/ua-drones-22.md",
+      "signals": "data/dossiers/2026-11-22/ua-drones-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:03:48+01:00",
+        "p": 0.53,
+        "p_blind": 0.53,
+        "at_blind": "2026-11-19T19:01:32+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Own record >=150: 12/21 (0.57), last 14 8/14, last 7 only 2/7 (median 132). Putin's 19 Nov 'far more painful' retaliation vow; past retaliations came after 1-10 nights with 240-410 drones, 4 nights since last big night. Timing uncertain (could hit night to 20 Nov). Net ~0.53.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No change: no market on nightly drone counts; ceasefire markets (0.04-0.10) confirm no pause in strikes expected."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.47,
+        "p_blind": 0.4,
+        "at_blind": "2026-11-19T19:05:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Recent nights: 98 (19 Nov), 141 (18 Nov), 132 (15 Nov), 193 (2 Nov), ~300 (4 Nov). Typical nights 100-145, with periodic large raids above 150. No specific signal for 20-21 Nov; threshold slightly above median.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier 21-night base >=150 = 12/21, last 14 8/14, but last 7 only 2/7; Putin vowed 'far more painful' retaliation for Crimean Bridge strikes; 4 nights since last big raid. No market. Raised from 0.40."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:05:34+01:00",
+        "p": 0.49,
+        "p_blind": 0.49,
+        "at_blind": "2026-11-19T19:01:52+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": ">=150 on 12/21 nights (0.57), 8/14, but 2/7 last week (median 132); daytime waves thin night counts. Putin vow raises odds of a big night within 1-10 days, yet it may land on night to 20 Nov, by day, or be missile-heavy, leaving a quiet 21 Nov. Net near even.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No change: no market on nightly counts; ceasefire markets very low (0.04-0.095), i.e. no pause expected, already assumed."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:02:00+01:00",
+        "p": 0.55,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No market. Lognormal fits on Air Force counts: P(>=150) 0.43 (7 nights), 0.57 (14), 0.63 (21). Blend ~0.5; Putin's retaliation vow (big strikes 1-10 days after, drone counts 240-410) adds ~0.25 chance this is the big night; partly offset if it lands night to 20 Nov.",
+        "anchor": {
+         "kind": "model",
+         "detail": "lognormal on recent nightly drone counts (median 132/159/173, sd log 0.37-0.43) mixed with 25% retaliation-night scenario"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T20:00:00+01:00",
+        "p": 0.45,
+        "p_blind": 0.45,
+        "at_blind": "2026-11-19T19:30:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "No reference data or fresh counts found; prior from 2025-26 pattern that ~150+ drones on roughly 40-50% of nights, with big salvos often on weekend nights.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No market on counts; no change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.498,
+      "calibrated": 0.54,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.1,
+      "disagreement": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "gulf-shipping",
+   "scope": "world",
+   "topic": "security",
+   "rank": 3,
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event_key": "us-iran-2026-11-21",
+   "case_key": "us-iran",
+   "event": "The US keeps its naval blockade of Iranian ports, has brought a third aircraft carrier into the region and on 18 November warned that ships taking Iranian cargo at sea may be treated as blockade runners; US jets struck an Iranian missile site on Qeshm Island this week. Attacks on merchant shipping go on: UKMTO reported two tankers hit near Khasab on 16 November, a second strike on the burning LPG tanker TARA GAS and an attack on an ADNOC vessel on 17 November (one seafarer missing), and roughly one attack a day this month. The Houthis hit a tower in Riyadh's financial district on 19 November and have retaken positions overlooking the Bab el-Mandeb, while Gulf states condemned Iranian drone attacks on Kuwait and Bahrain.",
+   "title_cs": "Útoky na tankery u Hormuzu pokračují, Húsíové zasáhli věž v Rijádu",
+   "sources": [
+    {
+     "title": "gCaptain (Bloomberg): Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+     "url": "https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/"
+    },
+    {
+     "title": "gCaptain: TARA GAS Burning Off Oman as Another Tanker Attack Leaves 11 Injured",
+     "url": "https://gcaptain.com/tara-gas-burning-off-oman-as-another-tanker-attack-leaves-11-injured/"
+    },
+    {
+     "title": "gCaptain: UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
+     "url": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/"
+    },
+    {
+     "title": "Al Jazeera: Tower in Riyadh's financial centre hit by Houthi attack (live)",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz"
+    },
+    {
+     "title": "Al Jazeera: 'Too early' to determine impact of US blockade on Iran, with Tehran defiant",
+     "url": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant"
+    }
+   ],
+   "claims": [
+    {
+     "id": "gulf-ukmto-22",
+     "label": "Shipping incident on Saturday",
+     "text": "UKMTO or JMIC reports at least one new attack or security incident involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman, the Arabian Sea or the Red Sea/Gulf of Aden that took place on Saturday 21 November 2026 (Gulf time).",
+     "criterion": "YES if the UK Maritime Trade Operations (UKMTO) or the Joint Maritime Information Center (JMIC) reports an attack, explosion, mine strike, projectile or drone hit, hostile approach (armed craft firing on or attempting to board the vessel), boarding, hijacking or seizure involving a merchant vessel in the Strait of Hormuz, the Persian (Arabian) Gulf, the Gulf of Oman, the Arabian Sea (including the waters around Socotra), the Gulf of Aden, the Bab el-Mandeb or the Red Sea that occurred between 00:00 and 23:59 Gulf Standard Time (UTC+4) on 21 Nov 2026, as shown on ukmto.org or by a wire, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeera or another established news outlet quoting UKMTO or JMIC. When UKMTO/JMIC give only a date and no time, that date decides. A report published after the window (including a \"time-late\" report) counts if the incident occurred in it. A merchant vessel disabled, boarded or seized by US or other military forces counts only if UKMTO or JMIC itself reports that incident. Suspicious approaches, hailings or sightings without weapons fire or a boarding attempt, GPS or navigation-aid interference alone, notices of an \"incident\" or \"suspicious activity\" that state no attack, explosion, hit, boarding or seizure, and claims by Iran (including IRGC statements), the Houthis or other parties that neither UKMTO nor JMIC reports do not count. NO if no such incident occurred on that day.",
+     "resolution_source": "https://www.ukmto.org/recent-incidents (UKMTO; scripted reading refused — use outlets quoting UKMTO/JMIC: https://gcaptain.com/ , https://www.newsquawk.com/headlines , https://news.google.com/rss/search?q=UKMTO%20when:3d)",
+     "schedule": "reported",
+     "slip_class": "none",
+     "publishes": "UKMTO posts warnings/advisories on X (@UK_MTO) and ukmto.org within hours of an incident; some arrive as time-late reports 1–4 days later; relayed by gCaptain, Arab News, Gulf News, Anadolu, Newsquawk",
+     "tz": "Asia/Dubai",
+     "event_window": {
+      "start": "2026-11-21T00:00:00+04:00",
+      "end": "2026-11-21T23:59:00+04:00"
+     },
+     "evidence_at": "2026-11-22T12:00:00+04:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Incident lodi v sobotu",
+      "text": "UKMTO nebo JMIC ohlásí nejméně jeden nový útok či bezpečnostní incident s obchodní lodí v Hormuzském průlivu, Perském zálivu, Ománském zálivu, Arabském moři nebo v Rudém moři či Adenském zálivu, k němuž došlo v sobotu 21. listopadu 2026 (podle času v Zálivu).",
+      "criterion": "ANO, pokud britské středisko UK Maritime Trade Operations (UKMTO) nebo Společné námořní informační centrum (JMIC) ohlásí útok, výbuch, najetí na minu, zásah projektilem či dronem, nepřátelské přiblížení (ozbrojené plavidlo na loď střílí nebo se na ni pokouší vniknout), vniknutí na palubu, únos nebo zabavení obchodní lodi v Hormuzském průlivu, Perském (Arabském) zálivu, Ománském zálivu, Arabském moři (včetně vod kolem Sokotry), Adenském zálivu, Bab al-Mandabu nebo Rudém moři, k němuž došlo mezi 00:00 a 23:59 času Perského zálivu (UTC+4) dne 21. 11. 2026, a to na ukmto.org nebo podle agentury, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeery či jiného zavedeného média citujícího UKMTO nebo JMIC. Uvede-li UKMTO/JMIC jen datum bez času, rozhoduje toto datum. Zpráva zveřejněná po skončení okna (včetně opožděného hlášení) se počítá, pokud k incidentu došlo v okně. Obchodní loď vyřazená, obsazená nebo zabavená americkými či jinými ozbrojenými silami se počítá, jen pokud incident ohlásí samo UKMTO nebo JMIC. Nepočítají se podezřelá přiblížení, volání vysílačkou nebo pozorování bez střelby či pokusu o vniknutí na palubu, samotné rušení GPS nebo navigačních zařízení, oznámení o „incidentu“ či „podezřelé činnosti“ bez zmínky o útoku, výbuchu, zásahu, vniknutí na palubu či zabavení ani tvrzení Íránu (včetně prohlášení IRGC), Húsíů či jiných stran, která UKMTO ani JMIC neohlásí. NE, pokud k takovému incidentu ten den nedošlo."
+     },
+     "dossier": "data/dossiers/2026-11-22/gulf-ukmto-22.md",
+     "signals": "data/dossiers/2026-11-22/gulf-ukmto-22.signals.md",
+     "probability": 0.6,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "UKMTO has reported roughly one attack a day in November (Bloomberg via gCaptain, 19 Nov); 13 of the last 21 Gulf days (29 Oct–18 Nov) had a UKMTO/JMIC-reported merchant incident, before adding the Arabian Sea, Gulf of Aden and Red Sea; but the last 7 days had 3–4 and Saturdays 31 Oct and 14 Nov were quiet.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:53:00Z",
+       "checked": [
+        "markets.mjs search \"ukmto\"",
+        "markets.mjs search \"UKMTO notices November 16\"",
+        "markets.mjs search \"hormuz shipping attack\"",
+        "markets.mjs search \"red sea houthi ship\""
+       ],
+       "note": "Only weekly UKMTO notice-count buckets (16–22 Nov: 8–11 notices 0.62, 12–15 0.32, 16+ 0.08, 4–7 0.04; thin volume) — related, not matching the daily-attack question."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "own count: Gulf days with a UKMTO/JMIC-reported merchant attack or incident, 29 Oct–18 Nov 2026",
+       "rate": 0.62,
+       "n": 21,
+       "source": "data/dossiers/2026-11-22/gulf-ukmto-22.md (gCaptain, Newsquawk, resolutions 2026-11-10…16); last 14 days 8/14, last 7 days 3/7; widened area not included in the count"
+      },
+      "dossier": "data/dossiers/2026-11-22/gulf-ukmto-22.md",
+      "signals": "data/dossiers/2026-11-22/gulf-ukmto-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:03:48+01:00",
+        "p": 0.55,
+        "p_blind": 0.55,
+        "at_blind": "2026-11-19T19:01:32+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Own record 13-14/21 Gulf days (0.62-0.67), last 7 3-4/7, Saturdays 1/3, 18-19 Nov none found. Widened area (Aden/Red Sea, Houthis at Bab el-Mandeb) adds a little; late reports after resolution and vague notices subtract. ~0.55.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No change: thin Polymarket UKMTO notice-count market (8-11 notices for 16-22 Nov week 0.62) counts all notices by week, consistent with ~1/day tempo incl. non-counting advisories."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.62,
+        "p_blind": 0.65,
+        "at_blind": "2026-11-19T19:05:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Active Hormuz campaign: UKMTO 7 tanker attacks week to 11 Nov, 11 week to 4 Nov; attacks 15, 16 (x2), ~18 Nov; 'near-daily'. ~1/day clustered gives ~60-70% for a given day incl. time-late reports. Red Sea quiet since Aug.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier own record 13-14/21 days (0.62-0.67), last 7 3-4/7, Saturdays 1/3; widened area adds a little; late-report risk. Polymarket UKMTO notices 8-11/week 0.62 consistent with ~1/day. Slight trim."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:05:34+01:00",
+        "p": 0.56,
+        "p_blind": 0.55,
+        "at_blind": "2026-11-19T19:01:52+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Own record 13/21 (0.62), 8/14, 3/7 last week; Saturdays 1/3; 18-19 Nov none found so far. Up: wider area, 'about one attack a day', IRGC vow, 3rd carrier. Down: strict exclusions (approaches, vague notices, IRGC claims), time-late reports after resolution deadline.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Polymarket UKMTO notices 16-22 Nov: 8-11 at 0.62, 12-15 at 0.32 (thin) - implies a busy week still expected after 18-19 Nov lull, but counts all notices incl. advisories. Tiny move up."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:02:00+01:00",
+        "p": 0.57,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Polymarket UKMTO notices 16-22 Nov centred on 8-11 (thin, counts all notices) consistent with ~1 notice/day, not all attacks. Own record 13/21 (0.62), last 7 days 3-4/7; widened area (Red Sea/Aden piracy) adds; late-report/resolver cutoff risk subtracts.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "own daily record 29 Oct-18 Nov 13/21=0.62; cross-check Polymarket weekly notice-count bands (8-11: 0.62)"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T20:00:00+01:00",
+        "p": 0.4,
+        "p_blind": 0.4,
+        "at_blind": "2026-11-19T19:30:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Coverage mentions a conflict-driven energy crisis, but no recent UKMTO incident rate found; one-day window across wide region, strict criterion. Prior guess.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Polymarket ~8-11 UKMTO notices/week (incl. advisories) implies ~1.3/day; qualifying incidents fewer. No change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.54,
+      "calibrated": 0.597,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.22,
+      "research": {
+       "at": "2026-11-19T18:15:00Z",
+       "question": "Which UKMTO incidents occurred on 18-19 Nov, and is the tempo changing?",
+       "finding": "18 Nov was not quiet. UKMTO logged a second incident: a time-delayed report published late on 18 Nov (Arab News 23:12Z; TASS) of a tanker 'struck by an unknown projectile in the engine room while transiting outbound' about 6 nm north of Khasab, crew safe. This comes on top of the ADNOC L&S tanker struck 13 nm north of Khasab (UKMTO time-delayed notice 10:14Z 18 Nov, one missing, 11 injured). Treadstone 71 (11:27Z 19 Nov): 'UKMTO recorded two tankers struck off Khasab on 18 November.' On 19 Nov, Iran's army navy (Mehr, 20:21Z 18 Nov) claimed three 'violating' tankers hit mines east of Hormuz, and the IRGC navy (about 09:54Z 19 Nov) claimed two supertankers with 4m+ barrels hit mines. No matching UKMTO/JMIC notices were found, so these claims alone do not count. No UKMTO incident dated 19 Nov was found as of ~18:15Z. Escalation signals on 19 Nov: Iranian strikes on Bahrain and Kuwait (The National, PBS); a Houthi strike on a Riyadh financial-district tower and Saudi strikes on Sanaa; the IRGC says it will not allow the US blockade to continue; the US widened the blockade to ship-to-ship transfers; a houseofsaud.com headline says Muscat talks failed. No de-escalation step found.",
+       "sources": [
+        "https://www.arabnews.com/middle-east/tanker-struck-by-projectile-near-omans-khasab-as-attacks-in-hormuz-continue-3012815",
+        "https://tass.com/world/2220835",
+        "https://www.newsquawk.com/headlines/ukmto-reports-a-time-delayed-notification-of-a-tanker-being-struck-by-an-unidentified-projectile-in-the-strait-of-hormuz-13nm-north-of-khasab-oman-citing-local-authorities",
+        "https://treadstone71.substack.com/p/five-tankers-claimed-two-struck",
+        "https://www.aninews.in/news/world/middle-east/iran-says-3-oil-tankers-catch-fire-after-hitting-mines-east-of-strait-of-hormuz20261119042727/",
+        "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz"
+       ],
+       "decisive": false
+      },
+      "disagreement": null,
+      "spread_note": "Spread 0.22 above 0.15: research step run (forecast.research); no decisive new fact, so the spread stands and the basis line says the evidence is mixed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "fr-acte6",
+   "scope": "europe",
+   "topic": "society",
+   "rank": 4,
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event_key": "fr-acte6-2026-11-21",
+   "case_key": "fr-social-movement-2026",
+   "event": "The gilets jaunes coordination calls Act VI for Saturday 21 November, during the movement's eighth-anniversary week, with roundabout and toll-plaza occupations from 20 to 22 November and a joint call by social movements in seven European countries. It has declared a Paris march from Bastille to Concorde, 14:00-17:00; the police prefecture had not ruled by Thursday 19 November, and the same route was banned on 31 October. Interior Ministry counts for the five earlier Saturdays fell from 550,000 to 106,000.",
+   "title_cs": "Žluté vesty o výročí: šesté dějství a spor o pochod na Concorde",
+   "sources": [
+    {
+     "title": "Sortiraparis: Yellow Vests Act VI, what to expect",
+     "url": "https://www.sortiraparis.com/en/news/in-paris/articles/358378-yellow-vest-demonstration-on-november-21-what-to-expect"
+    },
+    {
+     "title": "Sortiraparis: Act VI route declared",
+     "url": "https://www.sortiraparis.com/en/news/in-paris/articles/358619-november-21-paris-protest-yellow-vests-route-declared"
+    },
+    {
+     "title": "Coordination des gilets jaunes: call for Act VI",
+     "url": "https://17octobregiletjaune.net/"
+    },
+    {
+     "title": "La Gazette France (AFP): Act V, 106,000 by the ministry",
+     "url": "https://www.lagazettefrance.fr/article/pour-l-acte-v-du-mouvement-social-samedi-des-mobilisations-aux-revendications-variees"
+    }
+   ],
+   "claims": [
+    {
+     "id": "fr-acte6-count-22",
+     "label": "Act VI, ministry count",
+     "text": "The French Interior Ministry counts … thousand demonstrators nationwide on Saturday 21 November 2026, the day of Yellow Vest Act VI. (Interval claim.)",
+     "criterion": "The national number of demonstrators (\"manifestants\") in France on Saturday 21 Nov 2026, in thousands, Paris included, as stated by the French Interior Ministry and shown on interieur.gouv.fr or reported by AFP, Le Monde, franceinfo or BFMTV. If several ministry figures for that day appear, the last one given by 23:59 Paris time on 21 Nov counts. Union, organiser, coordination, prefecture-only and media counts do not count. Void if the ministry gives no national figure for that day by 23:59 on 21 Nov 2026.",
+     "resolution_source": "https://www.interieur.gouv.fr/actualites/communiques-de-presse — French Interior Ministry press releases (and AFP via franceinfo https://www.franceinfo.fr/societe/manifestations/)",
+     "schedule": "reported",
+     "slip_class": "strike-or-protest",
+     "publishes": "Interior Ministry, evening of Sat 21 Nov 2026, through AFP and its own press release",
+     "tz": "Europe/Paris",
+     "event_window": {
+      "start": "2026-11-20T06:00:00+01:00",
+      "end": "2026-11-21T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-21T21:00:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Šesté dějství, počet podle ministerstva",
+      "text": "Francouzské ministerstvo vnitra napočítá v sobotu 21. listopadu 2026, v den šestého dějství žlutých vest, v celé zemi … tisíc demonstrantů.",
+      "criterion": "Celostátní počet demonstrantů ve Francii v sobotu 21. listopadu 2026 v tisících včetně Paříže podle francouzského ministerstva vnitra, na webu interieur.gouv.fr nebo podle AFP, Le Monde, franceinfo či BFMTV. Vyjde-li za tento den více údajů ministerstva, platí poslední uvedený do 23.59 pařížského času 21. listopadu. Údaje odborů, pořadatelů, koordinace, samotné prefektury a médií se nepočítají. Tvrzení se ruší, pokud ministerstvo do 23.59 21. listopadu 2026 neuvede celostátní údaj za tento den."
+     },
+     "dossier": "data/dossiers/2026-11-22/fr-acte6-count-22.md",
+     "signals": "data/dossiers/2026-11-22/fr-acte6-count-22.signals.md",
+     "kind": "interval",
+     "quantity": "Demonstrators in France on Sat 21 Nov 2026, Interior Ministry count",
+     "unit": "thousand",
+     "quantiles": {
+      "q10": 32.6,
+      "q50": 75.4,
+      "q90": 243.0
+     },
+     "scale": 51,
+     "forecast": {
+      "market_search": {
+       "at": "2026-11-19T17:52:07Z",
+       "checked": [
+        "markets.mjs search \"gilets jaunes\"",
+        "markets.mjs search \"France protest\"",
+        "markets.mjs search \"yellow vest\""
+       ],
+       "note": "No matching market; only unrelated France state-of-emergency questions."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "protest-second-day-smaller",
+       "rate": 0.8,
+       "n": "about 10 French protest series since 2018; this wave 4 of 4 Saturdays smaller than the previous",
+       "source": "pipeline/reference-classes.json"
+      },
+      "dossier": "data/dossiers/2026-11-22/fr-acte6-count-22.md",
+      "signals": "data/dossiers/2026-11-22/fr-acte6-count-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "q10": 45,
+        "q50": 85,
+        "q90": 255,
+        "q_blind": {
+         "q10": 45,
+         "q50": 85,
+         "q90": 255
+        },
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Stand-in 106 (Act V). q50 85, ~0.4 scale below: every Saturday smaller (4/4, median -26% -> ~78), no union/youth Sat call, union day Tue; partly offset by anniversary/European call/DAL. Right-skewed tail for rebound; width 210 >= 4.1x51.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: signals file has no matching market or model."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "q10": 40,
+        "q50": 85,
+        "q90": 250,
+        "q_blind": {
+         "q10": 55,
+         "q50": 85,
+         "q90": 140
+        },
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Ministry counts: 550k (17 Oct), 410k, 320k, 146k (7 Nov), 106k (14 Nov). ~25-30%/wk decay -> ~75-85k; Tuesday 17 Nov union day may drain or re-energise. Right-skewed tail for a rebound.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier stand-in 106 (Act V), trend ~78; q50 85 within half scale. Range widened to meet 4.1x51 rule, skewed right (floor ~30-40k; rebound tail). No signals."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "q10": 28,
+        "q50": 82,
+        "q90": 238,
+        "q_blind": {
+         "q10": 28,
+         "q50": 82,
+         "q90": 238
+        },
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Stand-in 106 (Act V); 4/4 Saturdays fell, median -26% -> ~78; no union/youth call, union day 4 days earlier, roundabout format. Rebound case: anniversary week, 7-country call, DAL march. q50 82 (within 0.5 scale), right-skewed; width = 4.1 x 51 as required; void risk ~8%.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: no market, ministry or intelligence estimate for 21 Nov."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "q10": 40,
+        "q50": 85,
+        "q90": 250,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No signal. Model: trend -26%/Saturday gives ~78, stand-in 106; q50 85 (within 0.5 scale) weighting trend, roundabout format, union day 17 Nov, partly offset by anniversary/European call. Right-skewed: width 210 >= 4.1x51; floor ~30k.",
+        "anchor": {
+         "kind": "model",
+         "detail": "Geometric decay of ministry Saturday counts 550/410/320/146/106 (median -26%) blended with last value; scale 51k pooled (models.mjs quantiles 106 51), skewed right."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "q10": 10,
+        "q50": 40,
+        "q90": 222,
+        "q_blind": {
+         "q10": 12,
+         "q50": 35,
+         "q90": 85
+        },
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Ministry bilan of 14 Nov said participation 'en baisse'; figures not retrieved. Wide guess around ~35k with fatigue and right skew; some void risk.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No signal; widened to 4.1x sourced scale (51k); small upward shift of median for skew."
+       }
+      ],
+      "missing": [],
+      "consensus": {
+       "value": 106,
+       "source": "No forecast exists. Stand-in: Act V count of Sat 14 Nov 2026, 106,000 (Interior Ministry via AFP, La Gazette France 14 Nov). The documented trend (median -26% per Saturday) would give about 78."
+      },
+      "scale_source": "Series fr-acte-interior-ministry-count-2026 has n=1 recorded surprise. Root mean square of the four Saturday-to-Saturday relative changes (-25.5%, -22.0%, -54.4%, -27.4%) = 34.8%, times the 106 level = 36.9k, times pooled factor 1.385 = 51k.",
+      "scale_basis": "pooled",
+      "series": "fr-acte-interior-ministry-count-2026",
+      "normal_quantiles": {
+       "q10": 1.4,
+       "q50": 106,
+       "q90": 210.6
+      },
+      "scale_url": "https://www.lagazettefrance.fr/article/pour-l-acte-v-du-mouvement-social-samedi-des-mobilisations-aux-revendications-variees",
+      "width_scales": 4.13,
+      "centre_offset_scales": -0.6,
+      "consensus_note": "No forecast of the count exists; the stand-in is the Act V count (106k). The central figure 75.4k sits 0.6 scales below it because each of the five Saturday counts so far has fallen (550, 410, 320, 146, 106; median fall 26% a week, which gives about 78k), as documented in the dossier; four of five forecasters put q50 at 82–85k and the outsider at 40k.",
+      "shadow": null
+     }
+    },
+    {
+     "id": "fr-acte6-route-22",
+     "label": "Bastille–Concorde march allowed",
+     "text": "The Paris police prefecture allows the Yellow Vest march on Saturday 21 November 2026 to proceed from Bastille to Concorde.",
+     "criterion": "YES if, at 14:00 Paris time on Sat 21 Nov 2026, the Act VI march declared by the gilets jaunes coordination may lawfully proceed on a route that starts at Place de la Bastille and ends at Place de la Concorde: either the Préfecture de police has issued no order banning or modifying it, or it has authorised that route (street changes that keep the Bastille start and the Concorde end count as YES), or the administrative court has suspended a ban or modification. NO if, at 14:00 on 21 Nov, a prefectoral order in force bans the march or moves its start or end point away from Bastille or Concorde (including a march allowed only on another route or ending short of Concorde), or if the declared march is withdrawn or replaced by another route by agreement with the prefecture. Sources: the Préfecture de police website, AFP, Le Monde, Le Figaro, Le Parisien, franceinfo or BFMTV. Whether marchers actually reach Concorde, and police action during the march, do not count.",
+     "resolution_source": "https://www.prefecturedepolice.interieur.gouv.fr/ — Préfecture de police de Paris (orders), with AFP/franceinfo reports https://www.franceinfo.fr/societe/manifestations/",
+     "schedule": "reported",
+     "slip_class": "strike-or-protest",
+     "publishes": "Préfecture de police, order usually the day before or two days before (Thu 19 or Fri 20 Nov); press reports through Sat 21 Nov",
+     "tz": "Europe/Paris",
+     "event_window": {
+      "start": "2026-11-20T06:00:00+01:00",
+      "end": "2026-11-21T14:00:00+01:00"
+     },
+     "evidence_at": "2026-11-21T14:00:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Pochod Bastila–Concorde povolen",
+      "text": "Pařížská policejní prefektura dovolí, aby pochod žlutých vest v sobotu 21. listopadu 2026 prošel z Bastily na Concorde.",
+      "criterion": "ANO, pokud ve 14.00 pařížského času v sobotu 21. listopadu 2026 smí pochod šestého dějství ohlášený koordinací žlutých vest legálně vyrazit po trase začínající na náměstí Bastily a končící na náměstí Concorde: buď policejní prefektura nevydala žádné nařízení, které by ho zakazovalo nebo měnilo, nebo tuto trasu povolila (změny ulic se zachováním začátku na Bastile a konce na Concorde se počítají jako ANO), nebo správní soud zákaz či změnu pozastavil. NE, pokud ve 14.00 21. listopadu platí nařízení prefektury, které pochod zakazuje nebo přesouvá jeho začátek či konec mimo Bastilu nebo Concorde (včetně povolení jen na jiné trase nebo s koncem před Concorde), nebo pokud je ohlášený pochod po dohodě s prefekturou stažen či nahrazen jinou trasou. Zdroje: web policejní prefektury, AFP, Le Monde, Le Figaro, Le Parisien, franceinfo či BFMTV. Nerozhoduje, zda demonstranti na Concorde skutečně dojdou, ani zásahy policie během pochodu."
+     },
+     "dossier": "data/dossiers/2026-11-22/fr-acte6-route-22.md",
+     "signals": "data/dossiers/2026-11-22/fr-acte6-route-22.signals.md",
+     "probability": 0.07,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Literally, the route is declared and no order exists as of Thu 19 Nov 18:58 Paris time, so silence means YES; but the prefecture banned all three Concorde-bound requests in this wave (31 Oct, 5 Nov, 7 Nov) and keeps marches away from 'centres of power'.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:07Z",
+       "checked": [
+        "markets.mjs search \"gilets jaunes\"",
+        "markets.mjs search \"France protest\"",
+        "markets.mjs search \"yellow vest\""
+       ],
+       "note": "No matching market."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "own record: Concorde-bound route requests in this wave",
+       "rate": 0.0,
+       "n": 3,
+       "source": "Sortiraparis 358619 (31 Oct ban), Le Figaro 4 Nov (5 Nov ban upheld by court), ICI/franceinfo (7 Nov Concorde rally banned); class protest-march-on-authorised-route own 0/1"
+      },
+      "dossier": "data/dossiers/2026-11-22/fr-acte6-route-22.md",
+      "signals": "data/dossiers/2026-11-22/fr-acte6-route-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "p": 0.15,
+        "p_blind": 0.15,
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Own record: 0/3 Concorde-bound requests allowed this wave (court upheld ban once); 'centres of power' doctrine, Assembly opposite Concorde. Laplace ~0.2; small softening chance after calm 14/17 Nov. Withdrawal/reroute (slip 0.047) = NO.",
+        "p_held": 0.95,
+        "p_if_held": 0.16,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: signals file has no matching market, odds or model."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.07,
+        "p_blind": 0.06,
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Préfecture banned identical gilets jaunes Bastille->Concorde route on 31 Oct and Concorde rally 7 Nov; Concorde treated as 'seat of power' off-limits since mid-Oct. Repeat ban or reroute very likely; référé success unlikely.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier: 0 of 3 Concorde-bound requests allowed this wave, court upheld ban 4 Nov; no order yet (silence=YES, small softening chance after calm 14/17 Nov). No signals. No change."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "p": 0.07,
+        "p_blind": 0.07,
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Record 0/3 Concorde-bound requests allowed this wave, court upheld ban 4 Nov, 'centres of power' doctrine, Assembly opposite. Case for YES: calm 14/17 Nov, Lyon Bellecour exception, silence or court suspension. Withdrawal/reroute by agreement also NO. Held .95 x .07.",
+        "p_held": 0.95,
+        "p_if_held": 0.07,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: no market or forecast on the route decision."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "p": 0.13,
+        "p_held": 0.95,
+        "p_if_held": 0.14,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No market. Own record 0/3 Concorde-bound routes allowed this wave (court upheld one ban); centres-of-power doctrine, Assembly at Concorde, Champs-Elysees event Sun. Small YES room: no order, court suspension, softening after calm 14/17 Nov. Search found no order yet.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "0/3 (Laplace ~0.2) for Concorde routes in this wave, shaded down for defiance on 7 Nov and negotiated-reroute path counting NO; slip 0.047."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "p": 0.2,
+        "p_blind": 0.2,
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Search: prefecture banned CGT and gilets jaunes routes on 30 Oct and Concorde on 7 Nov ('banned but going ahead'). Pattern of bans/modifications suggests Concorde end unlikely allowed. Could not read pages (read.mjs denied).",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No signal; no change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.115,
+      "calibrated": 0.068,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.13,
+      "decomposition": {
+       "p_held": 0.95,
+       "p_if_held": 0.074,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "disagreement": null
+     },
+     "not_derived": true
+    }
+   ]
+  },
+  {
+   "id": "uk-moodys",
+   "scope": "europe",
+   "topic": "economy",
+   "rank": 5,
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "event_key": "moodys-uk-review-2026-11-20",
+   "case_key": "moodys-uk-sovereign-rating",
+   "event": "Moody's is scheduled to review the United Kingdom's sovereign rating on Friday 20 November, after markets close. It rates the UK Aa3 with a stable outlook, unchanged since October 2023 and last affirmed in November 2025. Chancellor John Healey's 28 October Budget kept the fiscal rules and calmed gilt markets, but the OBR cut fiscal headroom to £15bn and 10-year gilt yields hit their highest since 2007 in early October.",
+   "title_cs": "Moody's přezkoumá rating Británie",
+   "sources": [
+    {
+     "title": "MNI Sovereign Rating Review Calendar 2026",
+     "url": "https://media.marketnews.com/MNI_Sovereign_Rating_Review_Calendar_2026_29077cbd54.pdf"
+    },
+    {
+     "title": "AJ Bell / Alliance News: Moody's affirms UK credit rating and outlook before budget (Nov 2025)",
+     "url": "https://www.ajbell.co.uk/news/articles/moodys-affirms-uk-credit-rating-and-outlook-budget"
+    },
+    {
+     "title": "Reuters via GBAF: Rating agencies weigh up Britain's Burnham factor",
+     "url": "https://www.globalbankingandfinance.com/rating-agencies-weigh-up-britains-burnham-factor/"
+    },
+    {
+     "title": "countryeconomy.com: United Kingdom credit rating",
+     "url": "https://countryeconomy.com/ratings/uk"
+    },
+    {
+     "title": "OBR: Economic and fiscal outlook – October 2026",
+     "url": "https://www.gov.uk/government/publications/october-2026-economic-and-fiscal-outlook/economic-and-fiscal-outlook-october-2026"
+    }
+   ],
+   "claims": [
+    {
+     "id": "uk-moodys-22",
+     "label": "Moody's keeps UK Aa3 stable",
+     "text": "Moody's keeps the United Kingdom at Aa3 with a stable outlook at its scheduled sovereign review on 20 November 2026.",
+     "criterion": "YES if, between 06:00 on Fri 20 Nov 2026 and 23:59 on Sat 21 Nov 2026 (Europe/London), Moody's Ratings announces no change to the UK Government's long-term issuer rating (Aa3) or its outlook (stable): an affirmation, a periodic review without rating action, or no announcement at all on its scheduled date counts as YES. NO if in that window Moody's announces a downgrade or upgrade, a change of outlook, or places the rating on review. Checked against Moody's press releases and Reuters or Alliance News reports; if none reports a UK rating action by the deadline, the rating is unchanged (YES).",
+     "resolution_source": "https://ratings.moodys.com (Moody's Ratings press releases, Government of United Kingdom); Reuters / Alliance News (e.g. https://www.ajbell.co.uk/news) reports; https://countryeconomy.com/ratings/uk (rating history)",
+     "schedule": "official",
+     "slip_class": "other-scheduled",
+     "publishes": "Moody's Ratings, press release after EU market close on Fri 20 Nov 2026 (sovereign calendar date), if it takes or announces an action",
+     "tz": "Europe/London",
+     "event_window": {
+      "start": "2026-11-20T06:00:00+00:00",
+      "end": "2026-11-21T23:59:00+00:00"
+     },
+     "evidence_at": "2026-11-21T09:00:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Moody's ponechá Británii Aa3",
+      "text": "Agentura Moody's při plánovaném přezkumu 20. listopadu 2026 ponechá Spojenému království rating Aa3 se stabilním výhledem.",
+      "criterion": "ANO, pokud mezi 6:00 v pátek 20. listopadu 2026 a 23:59 v sobotu 21. listopadu 2026 (londýnského času) agentura Moody's neoznámí žádnou změnu dlouhodobého ratingu britské vlády (Aa3) ani jeho výhledu (stabilní): potvrzení ratingu, pravidelný přezkum bez ratingové akce i to, že v plánovaný den nezveřejní nic, se počítá jako ANO. NE, pokud v tomto období oznámí snížení nebo zvýšení ratingu, změnu výhledu nebo zařazení ratingu k přezkumu. Ověřuje se podle tiskových zpráv Moody's a zpráv agentur Reuters či Alliance News; pokud do termínu žádná z nich o ratingové akci vůči Británii neinformuje, rating se nemění (ANO)."
+     },
+     "dossier": "data/dossiers/2026-11-22/uk-moodys-22.md",
+     "signals": "data/dossiers/2026-11-22/uk-moodys-22.signals.md",
+     "probability": 0.95,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Aa3 stable since Oct 2023, affirmed 21 Nov 2025, no action on 22 May 2026; no change flagged before this review.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:55:45Z",
+       "checked": [
+        "markets.mjs search \"Moody's UK\"",
+        "markets.mjs search \"UK credit rating\""
+       ],
+       "note": "No market on the UK rating; only France/Oracle/CoreWeave downgrade markets and unrelated UK politics markets."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "Moody's scheduled UK sovereign review produces a rating/outlook change",
+       "rate": 0.24,
+       "n": 25,
+       "source": "Compiled from countryeconomy.com/ratings/uk history: about 6 changes on scheduled dates 2014–2026 out of ~25 calendar dates (two per year assumed per the 2026 MNI calendar); 0 in ~5 dates since Oct 2023"
+      },
+      "dossier": "data/dossiers/2026-11-22/uk-moodys-22.md",
+      "signals": "data/dossiers/2026-11-22/uk-moodys-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "p": 0.86,
+        "p_blind": 0.86,
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Dossier class: ~6 changes/25 scheduled UK dates since 2014 (0.24), but 0/5 since Oct 2023 and stable outlook only 1y old; Budget well received. Fiscal slippage/gilt highs keep negative-outlook risk. p_if_held 0.85; slip (no publication, 0.071) resolves YES.",
+        "p_held": 0.93,
+        "p_if_held": 0.85,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: signals file has no matching market, odds or model."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.86,
+        "p_blind": 0.87,
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Moody's affirmed Aa3 stable Nov 2025. Oct 2026 Budget (Healey, PM Burnham) loosened near term (+£8bn) but OBR: fiscal mandate met with £15bn headroom, debt peaks ~97% GDP. Moody's said only a major policy shift matters. Outlook-change risk real but modest.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier: ~0.24 change rate per scheduled date historically, but none in 5 dates since Oct 2023; Budget well received, rules kept. No signal/market. Essentially no change."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "p": 0.9,
+        "p_blind": 0.9,
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: base ~6/25 changes per scheduled date, gilts at multi-decade highs in Oct, headroom cut to 15bn, new Burnham govt. But 0/5 since 2023, Budget calm, rules kept, no signalling; silence = YES. Slip does not hurt (p_held = window elapses; no-publication counts YES).",
+        "p_held": 0.99,
+        "p_if_held": 0.91,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: no UK rating market; France downgrade market (0.095) is a different issuer."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "p": 0.89,
+        "p_held": 0.93,
+        "p_if_held": 0.88,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No UK rating market. Dossier base rate ~0.24 change per scheduled date, but changes came with shocks; stable outlook only 1 yr old, no action May 2026, Budget well received. Gilt highs and overshoots keep negative-outlook risk ~0.12. No publication (slip) = YES.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "6 changes in ~25 scheduled Moody's UK dates (0.24), cut to ~0.12 for calm post-Budget backdrop; P = 0.07 slip + 0.93*0.88."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "p": 0.93,
+        "p_blind": 0.93,
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Moody's affirmed Aa3 stable earlier; rating actions rare on a given review date; no-announcement counts YES. Slip class irrelevant (delay also YES). Small downgrade/outlook-change risk given fiscal overshoot.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No signal; no change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.891,
+      "calibrated": 0.955,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.07,
+      "decomposition": {
+       "p_held": 0.973,
+       "p_if_held": 0.976,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "disagreement": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "uk-borrowing",
+   "scope": "europe",
+   "topic": "economy",
+   "rank": 6,
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event_key": "uk-psf-oct-2026-2026-11-20",
+   "case_key": "uk-public-sector-finances",
+   "event": "The ONS publishes UK public sector finances for October 2026 on Friday 20 November at 07:00 GMT, the first monthly data since Chancellor John Healey's Budget of 28 October. September borrowing was £24.5bn, £1.9bn above the OBR's forecast, and borrowing in the first half of the financial year ran £6.0bn above forecast as debt interest climbed. The OBR raised its 2026-27 borrowing forecast by about £18bn and put fiscal headroom at £15bn. October 2025 borrowing was £16.2bn.",
+   "title_cs": "Britské vládní výpůjčky za říjen",
+   "sources": [
+    {
+     "title": "ONS: Public sector finances, UK: October 2026 (release calendar)",
+     "url": "https://www.ons.gov.uk/releases/publicsectorfinancesukoctober2026"
+    },
+    {
+     "title": "ONS: Public sector finances, UK: September 2026",
+     "url": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/september2026"
+    },
+    {
+     "title": "OBR: Economic and fiscal outlook – October 2026",
+     "url": "https://www.gov.uk/government/publications/october-2026-economic-and-fiscal-outlook/economic-and-fiscal-outlook-october-2026"
+    },
+    {
+     "title": "Newsquawk European Market Wrap, 21 Oct 2026",
+     "url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---21st-october-2026"
+    }
+   ],
+   "claims": [
+    {
+     "id": "uk-psnb-22",
+     "label": "UK borrowing October 2026",
+     "text": "ONS puts UK public sector net borrowing excluding public sector banks in October 2026 at £… billion.",
+     "criterion": "Value = public sector net borrowing excluding public sector banks (PSNB ex, series J5II, deficit shown as a positive number), October 2026, £ billion, as first published by the Office for National Statistics in 'Public sector finances, UK: October 2026' on 20 Nov 2026 (scheduled 07:00 GMT). Later revisions do not count. Void if the release does not take place on 20 Nov 2026 (Europe/London); pending if published but not yet readable.",
+     "resolution_source": "https://www.ons.gov.uk/releases/publicsectorfinancesukoctober2026 ; https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/october2026 (ONS, Public sector finances, UK: October 2026)",
+     "schedule": "official",
+     "slip_class": "stats-release",
+     "publishes": "ONS bulletin 'Public sector finances, UK: October 2026', 07:00 GMT (08:00 CET) on Fri 20 Nov 2026",
+     "tz": "Europe/London",
+     "event_window": {
+      "start": "2026-11-20T06:00:00+00:00",
+      "end": "2026-11-21T23:59:00+00:00"
+     },
+     "evidence_at": "2026-11-20T08:05:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Britské vládní výpůjčky v říjnu",
+      "text": "Britský statistický úřad ONS vyčíslí čisté výpůjčky veřejného sektoru bez veřejných bank za říjen 2026 na … mld. liber.",
+      "criterion": "Hodnota = čisté výpůjčky veřejného sektoru bez bank ve veřejném vlastnictví (PSNB ex, řada J5II, schodek jako kladné číslo) za říjen 2026 v miliardách liber, jak je poprvé zveřejní britský statistický úřad ONS ve zprávě „Public sector finances, UK: October 2026“ 20. listopadu 2026 (plánováno v 7:00 GMT). Pozdější revize se nepočítají. Neplatné, pokud se zveřejnění 20. listopadu 2026 (londýnského času) neuskuteční; čeká se, pokud je údaj zveřejněn, ale zatím nečitelný."
+     },
+     "dossier": "data/dossiers/2026-11-22/uk-psnb-22.md",
+     "signals": "data/dossiers/2026-11-22/uk-psnb-22.signals.md",
+     "kind": "interval",
+     "quantity": "UK public sector net borrowing excluding public sector banks, October 2026, £bn (ONS first release)",
+     "unit": "£bn",
+     "quantiles": {
+      "q10": 8.2,
+      "q50": 18.62,
+      "q90": 29.5
+     },
+     "scale": 5.14,
+     "forecast": {
+      "market_search": {
+       "at": "2026-11-19T17:55:45Z",
+       "checked": [
+        "markets.mjs search \"UK borrowing\"",
+        "markets.mjs search \"public sector net borrowing\""
+       ],
+       "note": "No market on UK PSNB; only unrelated UK politics/GDP markets and a Manifold 2028 debt-interest question."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-22/uk-psnb-22.md",
+      "signals": "data/dossiers/2026-11-22/uk-psnb-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "q10": 8.0,
+        "q50": 18.5,
+        "q90": 29.2,
+        "q_blind": {
+         "q10": 8.0,
+         "q50": 18.5,
+         "q90": 29.2
+        },
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Desk proxy 18.0 (Oct 2025 16.2 + recent y/y ~1.8). Nudge +0.5: 6/8 non-Jan first releases above consensus, OBR raised 2026-27 borrowing ~£1.5bn/month, debt interest high. Width 21.2 >= 4.1x5.14.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: signals file has no matching market or model."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "q10": 8.2,
+        "q50": 18.8,
+        "q90": 29.4,
+        "q_blind": {
+         "q10": 14.0,
+         "q50": 18.6,
+         "q90": 23.5
+        },
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Oct 2025 first est £17.4bn (Oct 2024 ~19bn). Sep 2026 £24.5bn, +1.8bn y/y, YTD £6bn over OBR; Oct Budget adds ~£8bn spending this FY, debt interest high. Centre ~£18.5bn; no consensus found, so wide.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier proxy 18.0 (Oct25 revised 16.2 + ~1.8 y/y); 6/8 recent non-Jan prints beat consensus and Budget adds spending, so q50 18.8. Width set by 5.14 scale rule. No signals."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "q10": 8.4,
+        "q50": 18.8,
+        "q90": 29.6,
+        "q_blind": {
+         "q10": 8.4,
+         "q50": 18.8,
+         "q90": 29.6
+        },
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Proxy 18.0 (Oct25 revised 16.2 + ~1.8 y/y). Upside case: first releases above consensus 6/8 non-Jan months (mean +1.3), Oct25 first print 17.4 later cut to 16.2, debt interest up, FY +6bn vs OBR. Downside: receipts timing. q50 18.8; width 4.1 x 5.14. Slip 0.002.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: no market, nowcast or consensus found."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "q10": 8.4,
+        "q50": 19.0,
+        "q90": 29.8,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No consensus/market. Proxy 18.0 built on revised Oct-25 (16.2); first release was 17.4 and first prints ran above consensus 6/9; OBR Oct EFO +18bn/yr. Centre 19.0 (+1.0 = 0.2 scale). Width 21.4 >= 4.1x5.14.",
+        "anchor": {
+         "kind": "model",
+         "detail": "Oct-25 first print 17.4 + recent y/y increase ~1.8 => ~19; scale 5.14 pooled (RMS 3.71 x 1.385)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "q10": 8,
+        "q50": 18,
+        "q90": 29.5,
+        "q_blind": {
+         "q10": 13,
+         "q50": 18,
+         "q90": 23
+        },
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Oct 2025 was about 17.4bn; 2026 borrowing running above OBR forecasts per headlines; consensus not found. Centre ~18.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No signal; widened to 4.1x scale (5.14bn) around own centre."
+       }
+      ],
+      "missing": [],
+      "consensus": {
+       "value": 18.0,
+       "source": "Desk proxy, no published consensus found: Oct 2025 latest value £16.2bn (ONS J5II) + £1.8bn average y/y rise in Aug–Sep 2026 (ONS J5II CSV, https://www.ons.gov.uk/generator?format=csv&uri=/economy/governmentpublicsectorandtaxes/publicsectorfinance/timeseries/j5ii/pusf)"
+      },
+      "scale_source": "RMS 3.71bn of 9 sourced first-release surprises Dec 2025–Sep 2026 (Newsquawk headlines 'vs. Exp.') × pooled factor 1.385; no series in series.json (series.mjs scale: n=0)",
+      "scale_basis": "pooled",
+      "series": null,
+      "normal_quantiles": {
+       "q10": 7.46,
+       "q50": 18.0,
+       "q90": 28.54
+      },
+      "scale_url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---21st-october-2026",
+      "width_scales": 4.14,
+      "centre_offset_scales": 0.12
+     }
+    }
+   ]
+  },
+  {
+   "id": "ea-confidence",
+   "scope": "europe",
+   "topic": "economy",
+   "rank": 7,
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "event_key": "ea-consumer-confidence-flash-nov-2026-2026-11-20",
+   "case_key": "ea-consumer-confidence-flash",
+   "event": "The European Commission publishes its flash estimate of euro area consumer confidence for November on Friday 20 November at 16:00 CET. The indicator fell to −17.9 in October from −16.5 in September, a second monthly decline, with inflation at 4.0% and the ECB having raised rates twice this year. Economists expect a small rebound to −17.3.",
+   "title_cs": "Spotřebitelská důvěra v eurozóně v listopadu",
+   "sources": [
+    {
+     "title": "DG ECFIN: Latest business and consumer surveys",
+     "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/latest-business-and-consumer-surveys_en"
+    },
+    {
+     "title": "Admiral Markets: Euro Area Consumer Confidence Flash November 2026 preview",
+     "url": "https://admiralmarkets.com/education/articles/forex-analysis/euro-area-consumer-confidence-flash-november-2026"
+    },
+    {
+     "title": "Econoday: EMU EC Consumer Confidence Flash (Oct 2026)",
+     "url": "https://www.cmegroup.com/education/events/econoday/682510"
+    }
+   ],
+   "claims": [
+    {
+     "id": "ea-conf-22",
+     "label": "Euro area consumer confidence November",
+     "text": "The European Commission's flash consumer confidence indicator for the euro area in November 2026 is …",
+     "criterion": "Value = DG ECFIN's flash estimate of the consumer confidence indicator (balance, seasonally adjusted) for the euro area, November 2026, as first published by the European Commission on 20 Nov 2026 (scheduled 16:00 CET). The final November figure and later revisions do not count. Void if the flash is not published on 20 Nov 2026 (Europe/Brussels); pending if published but not yet readable.",
+     "resolution_source": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/latest-business-and-consumer-surveys_en (European Commission, DG ECFIN flash consumer confidence)",
+     "schedule": "official",
+     "slip_class": "stats-release",
+     "publishes": "European Commission (DG ECFIN) flash consumer confidence press release, 16:00 CET on Fri 20 Nov 2026",
+     "tz": "Europe/Brussels",
+     "event_window": {
+      "start": "2026-11-20T06:00:00+01:00",
+      "end": "2026-11-21T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-20T16:05:00+01:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Spotřebitelská důvěra v eurozóně v listopadu",
+      "text": "Předběžný ukazatel spotřebitelské důvěry Evropské komise pro eurozónu za listopad 2026 činí …",
+      "criterion": "Hodnota = předběžný (flash) odhad ukazatele spotřebitelské důvěry (saldo, sezonně očištěno) pro eurozónu za listopad 2026, jak jej poprvé zveřejní Evropská komise (GŘ ECFIN) 20. listopadu 2026 (plánováno v 16:00 SEČ). Konečný listopadový údaj ani pozdější revize se nepočítají. Neplatné, pokud předběžný odhad nebude 20. listopadu 2026 zveřejněn; čeká se, pokud je údaj zveřejněn, ale zatím nečitelný."
+     },
+     "dossier": "data/dossiers/2026-11-22/ea-conf-22.md",
+     "signals": "data/dossiers/2026-11-22/ea-conf-22.signals.md",
+     "kind": "interval",
+     "quantity": "Euro area consumer confidence indicator, flash estimate, November 2026 (DG ECFIN, balance)",
+     "unit": "points (balance)",
+     "quantiles": {
+      "q10": -22.38,
+      "q50": -17.54,
+      "q90": -12.88
+     },
+     "scale": 2.3,
+     "forecast": {
+      "market_search": {
+       "at": "2026-11-19T17:55:45Z",
+       "checked": [
+        "markets.mjs search \"euro area consumer confidence\"",
+        "markets.mjs search \"eurozone consumer confidence\""
+       ],
+       "note": "No consumer-confidence market; only ECB-decision, euro area GDP and inflation brackets."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-22/ea-conf-22.md",
+      "signals": "data/dossiers/2026-11-22/ea-conf-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "q10": -22.3,
+        "q50": -17.5,
+        "q90": -12.8,
+        "q_blind": {
+         "q10": -22.2,
+         "q50": -17.4,
+         "q90": -12.7
+        },
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Consensus -17.3; past surprises balanced (mean -0.2). Slight downward tilt to -17.4: GfK Nov fell, French confidence at 2013 lows, inflation 4.0%, ECB hike talk. Width 9.5 >= 4.1x2.30.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals: TE model -17.6 (below consensus -17.3); Polymarket prices a Dec ECB hike ~0.97, which weighs on household expectations. q50 -17.4 -> -17.5; width 9.5 kept."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "q10": -22.4,
+        "q50": -17.6,
+        "q90": -12.9,
+        "q_blind": {
+         "q10": -19.8,
+         "q50": -17.9,
+         "q90": -16.0
+        },
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Oct 2026 flash/final -17.9 (5-month low, from -16.8). No Nov consensus found; persistence -> median ~-17.9; typical surprise ~0.8pt, symmetric.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier consensus -17.3, TE model -17.6 (signal); inflation 4% and ECB hikes argue against rebound, so q50 -17.6. Widened to 4.1x2.3 scale rule."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "q10": -22.7,
+        "q50": -17.7,
+        "q90": -13.2,
+        "q_blind": {
+         "q10": -22.7,
+         "q50": -17.7,
+         "q90": -13.2
+        },
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Consensus -17.3 expects rebound after two falls; against: HICP 4.0%, GfK Nov down, French confidence at 2013 low, ECB hike talk, TE model -17.6, momentum negative. q50 -17.7 (within 0.5 scale), slight downside skew; width 4.1 x 2.30. Slip 0.002.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: only signal is the Trading Economics model -17.6, already in the dossier and in my q50 -17.7; ECB hike priced at 0.97 fits the downside lean."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "q10": -22.3,
+        "q50": -17.5,
+        "q90": -12.8,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Consensus -17.3, TE model -17.6 (signals); q50 -17.5 averages them, slight downside lean from two falls, GfK and French confidence lows, ECB hike pricing. Width 9.5 >= 4.1x2.30.",
+        "anchor": {
+         "kind": "model",
+         "detail": "Consensus -17.3 / Trading Economics -17.6 midpoint; scale 2.30 pooled (RMS surprise 1.66 x 1.385), models.mjs quantiles -17.3 2.30."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "q10": -22.2,
+        "q50": -17.4,
+        "q90": -12.7,
+        "q_blind": {
+         "q10": -20.2,
+         "q50": -17.7,
+         "q90": -15.3
+        },
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Oct flash seemingly -17.9 (prev -16.5) per Newsquawk headline (year unverified). Nov centre near Oct level, slight mean reversion; sd ~1.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Consensus -17.3, TE model -17.6 (Admiral preview); median -17.4; widened to 4.1x scale 2.3."
+       }
+      ],
+      "missing": [],
+      "consensus": {
+       "value": -17.3,
+       "source": "Admiral Markets preview citing Trading Economics and CME Group/Econoday (https://admiralmarkets.com/education/articles/forex-analysis/euro-area-consumer-confidence-flash-november-2026); TE model −17.6"
+      },
+      "scale_source": "RMS 1.66 pts of 8 sourced flash surprises Mar–Oct 2026 (Econoday consensus sections, Newsquawk) × pooled factor 1.385; no series in series.json",
+      "scale_basis": "pooled",
+      "series": null,
+      "normal_quantiles": {
+       "q10": -22.02,
+       "q50": -17.3,
+       "q90": -12.58
+      },
+      "scale_url": "https://www.cmegroup.com/education/events/econoday/682508",
+      "width_scales": 4.13,
+      "centre_offset_scales": -0.1
+     }
+    }
+   ]
+  },
+  {
+   "id": "ca-bc",
+   "scope": "world",
+   "topic": "politics",
+   "rank": 8,
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event_key": "ca-bc-premier-swearing-in-2026-11-20",
+   "case_key": "ca-bc-election-2026",
+   "event": "The BC Conservatives won 64 of 93 seats in British Columbia's snap election on 24 October. Premier-designate Lorne Doerkson is due to be sworn in with his cabinet at Government House in Victoria on Friday 20 November. In 2024 the Conservatives called NDP Premier David Eby's 27-member cabinet bloated.",
+   "title_cs": "Konzervativec Doerkson se ujímá vlády v Britské Kolumbii",
+   "sources": [
+    {
+     "title": "My Nelson Now: B.C. Conservatives prepare to officially take power this week",
+     "url": "https://www.mynelsonnow.com/81503/news/politics/b-c-conservatives-prepare-to-officially-take-power-this-week/"
+    },
+    {
+     "title": "CFJC/CP: Eby's NDP cabinet 'bloated, expensive,' says B.C. Conservative leader John Rustad",
+     "url": "https://cfjctoday.com/2024/11/20/ebys-ndp-cabinet-bloated-expensive-says-b-c-conservative-leader-john-rustad/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "ca-bc-cabinet-22",
+     "label": "Doerkson cabinet under 27 members",
+     "text": "The cabinet sworn in with Premier Lorne Doerkson by 23:59 Pacific time on Saturday 21 November 2026 has fewer than 27 members besides the premier (ministers and ministers of state).",
+     "criterion": "YES if a new British Columbia cabinet is sworn in between 06:00 on Fri 20 Nov 2026 and 23:59 on Sat 21 Nov 2026 (America/Vancouver) and the number of ministers plus ministers of state sworn in, not counting the premier and not counting parliamentary secretaries, is 26 or fewer, per the BC government's cabinet list or news release (news.gov.bc.ca) or, failing that, The Canadian Press or CBC. NO if that number is 27 or more, or if no new cabinet is sworn in within the window.",
+     "resolution_source": "https://news.gov.bc.ca/ — BC Gov News cabinet release; CBC / The Canadian Press cabinet list",
+     "schedule": "reported",
+     "slip_class": "other-scheduled",
+     "publishes": "BC government (news.gov.bc.ca) cabinet list and CP/CBC lists, Fri 20 Nov 2026 afternoon Pacific",
+     "tz": "America/Vancouver",
+     "event_window": {
+      "start": "2026-11-20T06:00:00-08:00",
+      "end": "2026-11-21T23:59:00-08:00"
+     },
+     "evidence_at": "2026-11-20T15:00:00-08:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Doerksonova vláda pod 27 členů",
+      "text": "Vláda, která do soboty 21. listopadu 2026 do 23:59 tichomořského času složí přísahu spolu s premiérem Lornem Doerksonem, bude mít kromě premiéra méně než 27 členů (ministrů a státních ministrů).",
+      "criterion": "ANO, pokud mezi 6:00 v pátek 20. listopadu 2026 a 23:59 v sobotu 21. listopadu 2026 (čas Vancouveru) složí přísahu nová vláda Britské Kolumbie a počet ministrů a státních ministrů bez premiéra a bez parlamentních tajemníků bude nejvýše 26, podle seznamu nebo tiskové zprávy vlády BC (news.gov.bc.ca), případně agentury The Canadian Press či CBC. NE, pokud jich bude 27 a více nebo pokud nová vláda v okně přísahu nesloží."
+     },
+     "dossier": "data/dossiers/2026-11-22/ca-bc-cabinet-22.md",
+     "signals": "data/dossiers/2026-11-22/ca-bc-cabinet-22.signals.md",
+     "probability": 0.77,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Benchmark: Eby's 2024 cabinet had 23 ministers + 4 ministers of state (27), which the Conservatives called 'bloated, expensive'; but Doerkson has a bigger caucus (64) and wants regional balance. No report on planned size found.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:24Z",
+       "checked": [
+        "markets.mjs search \"BC cabinet\"",
+        "markets.mjs search \"Doerkson\""
+       ],
+       "note": "No market on cabinet size."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-22/ca-bc-cabinet-22.md",
+      "signals": "data/dossiers/2026-11-22/ca-bc-cabinet-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:04:00+01:00",
+        "p": 0.64,
+        "p_blind": 0.64,
+        "at_blind": "2026-11-19T19:02:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Slip 0.071 but swearing-in firmly announced for Fri -> p_held 0.96. Size: party called Eby's 27 'bloated'; new premiers often trim (Clark 2011: 17). Against: 64-MLA caucus, regional balance, Campbell 2001 went big. Start 0.5, +0.7 log-odds for stated restraint -> ~0.67 if held.",
+        "p_held": 0.96,
+        "p_if_held": 0.67,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: signals file has no matching market, odds or model."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.55,
+        "p_blind": 0.58,
+        "at_blind": "2026-11-19T19:04:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Doerkson (BC Con majority) to be sworn in 20 Nov per Wikipedia/PG Citizen: held ~0.95. Eby 2024 cabinet = 27 besides premier (23 min + 4 MoS), the threshold. New right-of-centre govts usually trim (Ford 21) and campaign on leaner govt; but big caucus/regional asks. ~0.6 if held.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier confirms Fri swearing-in (slip 0.07) and Rustad calling 27 bloated, but caucus is 64 (vs Eby 47) and regional balance pressure; no size report. Signals: none. Slightly down."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:06:01+01:00",
+        "p": 0.84,
+        "p_blind": 0.84,
+        "at_blind": "2026-11-19T19:01:39+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: 64-MLA caucus, regional balancing, ministers of state could push to 27+; slip 0.07 class but MLAs already sworn, ceremony set Fri. Against: party called 27 'bloated'; new conservative premiers shrink (Clark 17); BC cabinets pre-2022 were 22-24. Held .97 x .87.",
+        "p_held": 0.97,
+        "p_if_held": 0.87,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "no change: no market, odds or published estimate of cabinet size."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:40:00+01:00",
+        "p": 0.75,
+        "p_held": 0.95,
+        "p_if_held": 0.79,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No market. Base rate: new conservative provincial governments (Clark 2011 17, Ford 2018 21, Kenney 2019 22, Houston 2021 18) usually cut to well under 27; party called 27 bloated. Risks: 64-MLA caucus, regional balance, ministers of state. Held 0.95 (slip 0.071, ceremony set Fri).",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Recent new Canadian centre-right cabinets mostly 12-22 excl. premier (~8 of 10 below 27, own recollection); slip other-scheduled 0.071; one search found no reported size."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T21:00:00+01:00",
+        "p": 0.55,
+        "p_blind": 0.55,
+        "at_blind": "2026-11-19T20:00:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Search found only Eby's 27-member 2024 cabinet. Slip other-scheduled 0.07. Assume Conservative premier likely trims cabinet below 27 (~0.62), times ~0.9 chance sworn in within window.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No signal (no market or estimate on cabinet size); no change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.678,
+      "calibrated": 0.768,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.29,
+      "decomposition": {
+       "p_held": 0.965,
+       "p_if_held": 0.798,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-19T18:15:00Z",
+       "question": "Is there any report on the size of Doerkson's cabinet, or any pledge of a smaller cabinet?",
+       "finding": "None found. Canadian Press (18 and 19 Nov): Doerkson will be sworn in as premier on Fri 20 Nov at Government House, where he will also announce his first cabinet. 'Ministers will get to work from Day 1'. No fall sitting. Neither article gives a size. Platform coverage (CP via BNN Bloomberg, insauga) contains no pledge to shrink cabinet or cut ministries. The 'bloated' remark about Eby's 27-member cabinet (Rustad, Nov 2024) is still the only related statement. Coverage before the announcement (CBC 'Peace region key role', Vancouver Sun 'regional and ideological diversity', Times Colonist on Island prospects) stresses regional balance across a 64-MLA caucus. The Vancouver Sun, Times Colonist, BIV and Castanet articles refused scripted reading.",
+       "sources": [
+        "https://www.thecanadianpressnews.ca/national/conservative-legislators-will-be-sworn-in-thursday-as-doerkson-prepares-to-take-power/article_573e0817-497a-50a9-903c-2ea302c92e7f.html",
+        "https://cheknews.ca/sixty-four-b-c-conservatives-including-premier-designate-doerkson-take-office-oath-1362548/",
+        "https://www.bnnbloomberg.ca/business/politics/2026/10/25/heres-what-the-bc-conservatives-promised-to-do-when-elected/",
+        "https://www.insauga.com/costed-b-c-conservative-platform-promises-2-6-b-in-growth-10-8b-deficit/"
+       ],
+       "decisive": false
+      },
+      "disagreement": {
+       "cause": "genuine",
+       "note": "Spread 0.29: the same facts (no report on the planned cabinet size; the party called 27 bloated; a 64-member caucus wants regional balance) read differently: adversarial and anchor rely on recent conservative provincial cabinets of 17–22, base-rate, evidence and outsider weight the bigger caucus. The research step found no report of the size. Basis line: the evidence is mixed."
+      },
+      "spread_note": "Spread 0.29 above 0.15: research step run (forecast.research); no decisive new fact, so the spread stands and the basis line says the evidence is mixed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spacex-nrol",
+   "scope": "world",
+   "topic": "science-health",
+   "rank": 9,
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 4
+   },
+   "event_key": "spacex-nrol-136-2026-11-21",
+   "case_key": "spacex-nro-proliferated",
+   "event": "SpaceX plans to launch NROL-136, the 15th batch of the National Reconnaissance Office's proliferated spy-satellite constellation, on a Falcon 9 from Space Launch Complex 4E at Vandenberg, California, on Saturday 21 November at 12:30 UTC (04:30 PST). The same pad is due to launch the USSF-317 mission about 32 hours earlier, after a two-day slip.",
+   "title_cs": "SpaceX má vynést další špionážní družice pro NRO",
+   "sources": [
+    {
+     "title": "Orbital Radar: Falcon 9 NROL-136 launch",
+     "url": "https://orbitalradar.com/launch/falcon-9-nrol-136"
+    },
+    {
+     "title": "Space Launch Schedule: SpaceX NROL-136",
+     "url": "https://www.spacelaunchschedule.com/launch/falcon-9-block-5-nrol-136/"
+    },
+    {
+     "title": "NRO: Launch NROL-136",
+     "url": "https://www.nro.gov/launches/launch-nrol-136/"
+    }
+   ],
+   "claims": [
+    {
+     "id": "nrol136-22",
+     "label": "Falcon 9 launches NROL-136",
+     "text": "Falcon 9 lifts off with NROL-136 from Vandenberg by 23:59 Pacific time on Saturday 21 November 2026.",
+     "criterion": "YES if a SpaceX Falcon 9 carrying the National Reconnaissance Office's NROL-136 mission lifts off from Vandenberg Space Force Base between 06:00 on Fri 20 Nov 2026 and 23:59 on Sat 21 Nov 2026 (America/Los_Angeles), as confirmed by SpaceX, the NRO (nro.gov) or Vandenberg SFB, or reported by Spaceflight Now or Space.com; liftoff counts regardless of mission outcome. NO if there is no liftoff in that window.",
+     "resolution_source": "https://www.nro.gov/launches/launch-nrol-136/ — NRO; SpaceX (spacex.com/launches, @SpaceX)",
+     "schedule": "reported",
+     "slip_class": "launch",
+     "publishes": "SpaceX webcast/X post and NRO press release on Sat 21 Nov shortly after the 04:30 PST (12:30 UTC) target",
+     "tz": "America/Los_Angeles",
+     "event_window": {
+      "start": "2026-11-20T06:00:00-08:00",
+      "end": "2026-11-21T23:59:00-08:00"
+     },
+     "evidence_at": "2026-11-21T07:00:00-08:00",
+     "resolves_by": "2026-11-23T05:00:00+01:00",
+     "cs": {
+      "label": "Falcon 9 vynese NROL-136",
+      "text": "Raketa Falcon 9 s misí NROL-136 odstartuje z Vandenbergu do soboty 21. listopadu 2026 do 23:59 tichomořského času.",
+      "criterion": "ANO, pokud raketa Falcon 9 společnosti SpaceX s misí NROL-136 Národního průzkumného úřadu (NRO) odstartuje ze základny Vandenberg mezi 6:00 v pátek 20. listopadu 2026 a 23:59 v sobotu 21. listopadu 2026 (tichomořského času), podle potvrzení SpaceX, NRO nebo základny Vandenberg, případně zpráv Spaceflight Now či Space.com; start se počítá bez ohledu na výsledek mise. NE, pokud v tomto okně neodstartuje."
+     },
+     "dossier": "data/dossiers/2026-11-22/nrol136-22.md",
+     "signals": "data/dossiers/2026-11-22/nrol136-22.signals.md",
+     "probability": 0.73,
+     "forecast": {
+      "baseline": {
+       "status_quo": "no",
+       "why": "Scheduled NET Sat 21 Nov 12:30 UTC (04:30 PST), window 12:30–13:00 UTC, SLC-4E, per RocketLaunch.Live, Orbital Radar, Space Launch Schedule, Next Spaceflight; no slip since first scheduled 12 Nov. But USSF-317 is set from the same pad ~32 h earlier and has already slipped two days.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-19T17:52:41Z",
+       "checked": [
+        "markets.mjs search \"NROL-136\"",
+        "markets.mjs search \"SpaceX launch Vandenberg\"",
+        "markets.mjs search \"Falcon 9 launches November\""
+       ],
+       "note": "No matching market."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "launch (schedule slip)",
+       "rate": 0.782,
+       "n": 3,
+       "source": "pipeline/reference-data/schedule-slip.json via slip.mjs launch: P(slip) 0.218 [estimate] → on-time 0.782"
+      },
+      "dossier": "data/dossiers/2026-11-22/nrol136-22.md",
+      "signals": "data/dossiers/2026-11-22/nrol136-22.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:03:48+01:00",
+        "p": 0.72,
+        "p_blind": 0.72,
+        "at_blind": "2026-11-19T19:01:32+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Launch slip class 0.218 -> 0.78. Down: single Sat 04:30 PST attempt with 30-min NRO window (scrub = Sunday), same-pad ~32h turnaround after USSF-317 which already slipped 2 days. Up: trackers 'Go', no slips since 12 Nov. ~0.72.",
+        "p_held": 0.73,
+        "p_if_held": 0.99,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No change: no matching market or weather forecast found."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:20:00+01:00",
+        "p": 0.68,
+        "p_blind": 0.75,
+        "at_blind": "2026-11-19T19:05:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "NET Sat 21 Nov 12:30 UTC (04:30 PST), status Go on SLS; a 1-day scrub pushes to Sun, outside window, so essentially one attempt. Slip rate for launch class ~0.22; NRO proliferated F9 missions usually go first try.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Dossier: USSF-317 on same pad SLC-4E slipped 2 days, now ~32h before NROL-136; any further slip cascades; 30-min window, single attempt. Launch slip 0.22. No market. Lowered from 0.75."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-19T19:05:34+01:00",
+        "p": 0.48,
+        "p_blind": 0.48,
+        "at_blind": "2026-11-19T19:01:52+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Launch slip 0.218 generic, but here: one 30-min attempt in window, no next-day margin, same pad SLC-4E ~32h after USSF-317 (itself slipped 2 days, rain 28%) - a very tight turnaround; any 317 slip cascades. For YES: all trackers Go, no slip since 12 Nov. Slip odds raised to ~0.5.",
+        "p_held": 0.49,
+        "p_if_held": 0.99,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No change: no market or launch-probability model; no weather-squadron forecast."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T19:02:00+01:00",
+        "p": 0.62,
+        "p_held": 0.62,
+        "p_if_held": 1.0,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "No market. Launch slip prior 0.218 -> 0.78; down for single attempt (Sat 04:30 PST, no Sunday margin) and ~32h same-pad turnaround after USSF-317 (already slipped 2 days), a very tight SLC-4E turnaround. Trackers 'Go', no slips since 12 Nov.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "slip.mjs launch: rate 0.218 (prior 0.30, own 0/3), adjusted -0.4 logit for pad-turnaround dependency and one-attempt window"
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-19T20:00:00+01:00",
+        "p": 0.72,
+        "p_blind": 0.72,
+        "at_blind": "2026-11-19T19:30:00+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Spacelaunchschedule: Go, Sat 21 Nov 12:30 GMT (04:30 PT), inside window with only the Sat slot; launch slip class 0.22 (small n); Falcon 9 NRO Vandenberg flights usually on time but weather/scrubs possible.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No matching signal; no change."
+       }
+      ],
+      "missing": [],
+      "combined": 0.648,
+      "calibrated": 0.733,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1719,
+        "b": 1.3697
+       },
+       "version": "2026-11-19"
+      },
+      "spread": 0.24,
+      "decomposition": {
+       "p_held": 0.617,
+       "p_if_held": 1,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+      },
+      "research": {
+       "at": "2026-11-19T18:15:00Z",
+       "question": "What are the current USSF-317 launch date (same pad, SLC-4E) and the NROL-136 NET date and time?",
+       "finding": "USSF-317 has moved again, but only by minutes within the same day. Launch Library 2 update log: 'Now targeting Nov 20 at 02:46 UTC' (logged 17 Nov), 'Nov 20 at 04:28 UTC' (logged 05:07Z 19 Nov), 'Nov 20 at 04:32 UTC' (logged 14:50Z 19 Nov). Status 'Go for Launch', NET 2026-11-20T04:32:55Z, window 02:46-06:46Z (Thu 20:32 PST), LL2 last updated 16:40Z 19 Nov. Earlier history: 14 Nov -> 15 Nov -> 'NET 17 Nov PST' -> 19 Nov 03:00Z -> 20 Nov, so the date has slipped about six days since 9 Nov. RocketLaunch.Live still shows 04:28Z and Space Launch Schedule shows 'Go For Launch' with a 28% rain chance. NROL-136 is unchanged: LL2 'Go for Launch', NET 2026-11-21T12:30:00Z, window 12:30-13:00Z, with no update since it was added on 12 Nov (last_updated 14 Nov). RocketLaunch.Live gives the same time. The gap between the two launches is now about 32 h. USSF-317 flies about 9 h after this check, so its outcome (launch, or scrub to 21 Nov) will be known Friday morning CET and is the deciding fact.",
+       "sources": [
+        "https://ll.thespacedevs.com/2.3.0/launches/76617033-4dc0-4448-b50c-e5b0d5a18539/?mode=detailed",
+        "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=USSF-317&mode=list",
+        "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=NROL-136&mode=list",
+        "https://fdo.rocketlaunch.live/json/launches/next/5",
+        "https://www.spacelaunchschedule.com/launch/falcon-9-block-5-ussf-317/"
+       ],
+       "decisive": false
+      },
+      "adjustment": "No adjustment of the figure: the published 0.73 is the calibrated combination (Platt a 0.1719, b 1.3697) of the five estimates (plain geometric mean 0.648); the map moves it above the forecasters' own chance that the event happens in the window (0.617), so the decomposition cannot reproduce it with p_if_held ≤ 1.",
+      "disagreement": null,
+      "spread_note": "Spread 0.24 above 0.15: research step run (forecast.research); no decisive new fact, so the spread stands and the basis line says the evidence is mixed."
+     }
+    }
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "event": "Serbia: Speaker Čupić signs the decision calling the presidential election by 23:59 Sat 21 Nov (rs-call-22)",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 4
+   },
+   "why": "Researched and forecast but not proposed: the five forecasters put it at 0.37 (spread 0.2), so as a main claim it would report a non-event, and nothing had been announced for that day (no awaited). The call must come by 27 Nov; diary line. Dossier kept.",
+   "source": "https://balkaninsight.com/",
+   "claim": {
+    "id": "rs-call-22",
+    "label": "Čupić calls presidential election",
+    "text": "Speaker Aleksandar Čupić signs the decision calling Serbia's presidential election by 23:59 CET on Saturday 21 November 2026.",
+    "criterion": "YES if, between 06:00 on Fri 20 Nov 2026 and 23:59 on Sat 21 Nov 2026 (Europe/Belgrade), Aleksandar Čupić, as Speaker of the National Assembly performing the duties of President of the Republic, signs the decision calling the election for President of the Republic, as published in the Službeni glasnik or announced by the National Assembly or the Presidency, or reported by RTS, Tanjug, N1, Danas or Insajder. NO if he does not sign such a decision in that window. A report published after 23:59 about a decision signed within the window counts.",
+    "resolution_source": "https://www.parlament.gov.rs/ — National Assembly of Serbia; RTS https://www.rts.rs/ ; N1 https://n1info.rs/",
+    "schedule": "reported",
+    "slip_class": "none",
+    "publishes": "National Assembly/Presidency announcement and RTS/Tanjug/N1 reports on the day of signing; Službeni glasnik within days",
+    "tz": "Europe/Belgrade",
+    "event_window": {
+     "start": "2026-11-20T06:00:00+01:00",
+     "end": "2026-11-21T23:59:00+01:00"
+    },
+    "evidence_at": "2026-11-21T20:00:00+01:00",
+    "resolves_by": "2026-11-23T05:00:00+01:00",
+    "cs": {
+     "label": "Čupić vypíše prezidentské volby",
+     "text": "Předseda srbského parlamentu Aleksandar Čupić podepíše do soboty 21. listopadu 2026 do 23:59 SEČ rozhodnutí o vypsání prezidentských voleb.",
+     "criterion": "ANO, pokud Aleksandar Čupić jako předseda Národního shromáždění vykonávající pravomoci prezidenta republiky mezi 6:00 v pátek 20. listopadu 2026 a 23:59 v sobotu 21. listopadu 2026 (bělehradského času) podepíše rozhodnutí o vypsání voleb prezidenta republiky, podle zveřejnění ve Službenim glasniku, oznámení parlamentu nebo prezidentského úřadu, případně zpráv RTS, Tanjugu, N1, Danasu nebo Insajderu. NE, pokud takové rozhodnutí v tomto okně nepodepíše. Platí i zpráva zveřejněná po 23:59 o rozhodnutí podepsaném v okně."
+    },
+    "dossier": "data/dossiers/2026-11-22/rs-call-22.md",
+    "signals": "data/dossiers/2026-11-22/rs-call-22.signals.md",
+    "probability": 0.37,
+    "forecast": {
+     "baseline": {
+      "status_quo": "no",
+      "why": "Čupić became speaker and acting president at ~13:30 on 19 Nov; no call signed or dated as of 19 Nov evening (Srpske novine: 'Datum raspisivanja još nije objavljen'). Legal last day to call is 27 Nov (vote by 27 Dec, 30–60 days after the call); only a call by 20 Nov keeps a 20 Dec vote possible.",
+      "set_by": "dossier agent, before the forecasters reported"
+     },
+     "market_search": {
+      "at": "2026-11-19T17:52:33Z",
+      "checked": [
+       "markets.mjs search \"Serbia call election\"",
+       "markets.mjs search \"Serbia presidential election\"",
+       "markets.mjs search \"Cupic\""
+      ],
+      "note": "Polymarket 'call its presidential election by November 30, 2026' Yes 0.976 (vol ~$19k) — same event but deadline 30 Nov, not 21 Nov: partial, not a match."
+     },
+     "market": null,
+     "base_rate": null,
+     "dossier": "data/dossiers/2026-11-22/rs-call-22.md",
+     "signals": "data/dossiers/2026-11-22/rs-call-22.signals.md",
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:03:48+01:00",
+       "p": 0.43,
+       "p_blind": 0.42,
+       "at_blind": "2026-11-19T19:01:32+01:00",
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ],
+       "reason_blind": "No ref class; precedents 2012 speaker called next day (n=1). Legal last date 27 Nov; Fri 20 Nov is last call keeping a 20 Dec vote, any later call fixes ~27 Dec. 'Soon/u najkracem roku' expectations vs. constituent session ongoing, new speaker, candidate unsettled, weekend. ~0.42.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "Tiny up: Polymarket call by 30 Nov 0.976 confirms a call is imminent within the legal 27 Nov limit, but says nothing on 20-21 Nov vs 23-27 Nov timing."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:20:00+01:00",
+       "p": 0.4,
+       "p_blind": 0.35,
+       "at_blind": "2026-11-19T19:05:00+01:00",
+       "inputs_blind": [
+        "own-research"
+       ],
+       "reason_blind": "Čupić elected Speaker/acting president 19 Nov; call date not announced. Vote by 27 Dec with >=30 days => call by ~27 Nov (Brnabić). 'Public expects quick call', but he has a week; constitutive session still ongoing; weekend signing less likely.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "reason": "Dossier: legal last day 27 Nov; 2012 precedent speaker called next day; Friday call keeps 20 Dec vote possible; but no date announced, Assembly still constituting. Polymarket 0.976 by 30 Nov only an upper bound. Small raise."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-2",
+       "at": "2026-11-19T19:05:34+01:00",
+       "p": 0.36,
+       "p_blind": 0.36,
+       "at_blind": "2026-11-19T19:01:52+01:00",
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ],
+       "reason_blind": "No date announced; legal last day 27 Nov, so window is 2 of 8 remaining days. Case for YES: 2012 next-day precedent, 'u najkraćem roku', Fri call is the only way to keep 20 Dec. Case for NO: no candidate named, sitting still running, Law on Government first, 27 Dec vote needs no hurry.",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "Polymarket call by 30 Nov 0.976 is only an upper bound (legal last day 27 Nov); says nothing on Fri/Sat vs next week. No change."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:02:00+01:00",
+       "p": 0.45,
+       "inputs": [
+        "signals",
+        "reference-data",
+        "dossier"
+       ],
+       "reason": "Polymarket call by 30 Nov 0.976 (legal deadline 27 Nov) caps it; question is timing within 20-27 Nov. Fri call is last to keep a 20 Dec vote; public 'najkraćem roku' expectation and 2012 next-day precedent vs constituent session still running and no date signal. ~45% on Fri-Sat.",
+       "anchor": {
+        "kind": "market",
+        "detail": "Polymarket 'Serbia call presidential election by Nov 30' 0.976 (~$19k vol) as upper bound, scaled by share of remaining days 20-27 Nov weighted to Fri 20 Nov"
+       }
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-19T20:00:00+01:00",
+       "p": 0.25,
+       "p_blind": 0.22,
+       "at_blind": "2026-11-19T19:30:00+01:00",
+       "inputs_blind": [
+        "own-research",
+        "reference-data"
+       ],
+       "reason_blind": "Vucic resigned 27 Sep; Cupic now acting; election must be held by ~27 Dec and call deadline reportedly 27 Nov. Two-day window of 8 remaining days; may call on deadline. Unknown if a call is scheduled.",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "Polymarket 0.976 call by 30 Nov, 0.93 before 1 Dec; deadline ~27 Nov, so a call 20-21 Nov is plausible but likely later. Slight raise."
+      }
+     ],
+     "missing": [],
+     "combined": 0.375,
+     "calibrated": 0.371,
+     "combination": {
+      "method": "calibrated",
+      "weights": {
+       "base-rate": 1,
+       "evidence": 1,
+       "adversarial": 1,
+       "anchor": 1,
+       "outsider": 1
+      },
+      "platt": {
+       "a": 0.1719,
+       "b": 1.3697
+      },
+      "version": "2026-11-19"
+     },
+     "spread": 0.2,
+     "research": {
+      "at": "2026-11-19T18:15:00Z",
+      "question": "Have Čupić or the Assembly said when the presidential election will be called; any statement on Thursday evening?",
+      "finding": "No date or statement on when the election will be called found as of ~19:10 CET Thu 19 Nov. The constitutive session was still running Thursday evening (N1 live blog updated 19:08 CET). Remaining agenda: election of deputy speakers, appointment of the secretary general, working bodies and delegations. Čupić spent the afternoon giving warnings to SNS MPs (seven, including Vučić and Brnabić). RTS and Nova reported congratulations and his 'dignity of parliament' speech, but no word on calling the election. Google News headlines (not opened): Student List MP Ilija Srdanović said 'the next step is calling the presidential election' (NSPM); Šoškić told Direktno 'first forming the Assembly working bodies, then presidential elections, government and budget', which suggests the call comes after the constitutive work. The legal deadline is still 27 Nov.",
+      "sources": [
+       "https://n1info.rs/vesti/blog-konstitutivna-sednica-skupstine-treci-dan-izbori-2026/",
+       "https://n1info.rs/vesti/predsednik-skupstine-srbije-aleksandar-cupic-izrekao-prve-opomene-poslanicima-sns-a-nisu-se-drzali-dnevnog-reda/",
+       "https://www.rts.rs/vesti/politika.html",
+       "https://nova.rs/feed/",
+       "https://www.novosti.rs/vesti/politika/1665851/raspisivanje-predsednickih-izbora-27-novembra-brnabic-nadam--biti-neko-drugi"
+      ],
+      "decisive": false
+     },
+     "disagreement": null,
+     "spread_note": "Spread 0.2 above 0.15: research step run (forecast.research); no decisive new fact, so the spread stands and the basis line says the evidence is mixed."
+    }
+   }
+  },
+  {
+   "event": "British Columbia: Lorne Doerkson sworn in as premier on Fri 20 Nov (ca-bc-sworn-22)",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "Researched and forecast (0.99) but replaced as the story's main claim by the open question, the size of the cabinet (ca-bc-cabinet-22); kept out as a secondary because a 95%+ secondary needs open_because. Board question ca-bc-conservative-premier resolves on the same ceremony.",
+   "source": "https://www.cbc.ca/news/canada/british-columbia",
+   "claim": {
+    "id": "ca-bc-sworn-22",
+    "label": "Doerkson sworn in as BC premier",
+    "text": "Lorne Doerkson is sworn in as Premier of British Columbia by 23:59 Pacific time on Saturday 21 November 2026.",
+    "criterion": "YES if, between 06:00 on Fri 20 Nov 2026 and 23:59 on Sat 21 Nov 2026 (America/Vancouver), Lorne Doerkson is sworn in as Premier of British Columbia (takes the oath of office / is appointed by the Lieutenant Governor), as announced by the BC government (news.gov.bc.ca) or reported by The Canadian Press, CBC or CTV. NO if he is not sworn in as premier in that window (ceremony postponed beyond 21 Nov, or another person sworn in). A report published after 23:59 about a ceremony held within the window counts.",
+    "resolution_source": "https://news.gov.bc.ca/ — BC Gov News (Office of the Premier); CBC British Columbia / The Canadian Press",
+    "schedule": "reported",
+    "slip_class": "other-scheduled",
+    "publishes": "BC government news release (news.gov.bc.ca) and CP/CBC/CTV reports, Fri 20 Nov 2026, after the ceremony at Government House, Victoria",
+    "tz": "America/Vancouver",
+    "event_window": {
+     "start": "2026-11-20T06:00:00-08:00",
+     "end": "2026-11-21T23:59:00-08:00"
+    },
+    "evidence_at": "2026-11-20T15:00:00-08:00",
+    "resolves_by": "2026-11-23T05:00:00+01:00",
+    "cs": {
+     "label": "Doerkson premiérem Britské Kolumbie",
+     "text": "Lorne Doerkson složí do soboty 21. listopadu 2026 do 23:59 tichomořského času přísahu jako premiér Britské Kolumbie.",
+     "criterion": "ANO, pokud Lorne Doerkson mezi 6:00 v pátek 20. listopadu 2026 a 23:59 v sobotu 21. listopadu 2026 (čas Vancouveru) složí přísahu jako premiér Britské Kolumbie (jmenuje ho guvernérka), podle oznámení vlády BC (news.gov.bc.ca) nebo zpráv agentury The Canadian Press, CBC či CTV. NE, pokud v tomto okně přísahu jako premiér nesloží (obřad se odloží po 21. listopadu nebo přísahu složí někdo jiný). Platí i zpráva zveřejněná po 23:59 o obřadu, který se konal v okně."
+    },
+    "dossier": "data/dossiers/2026-11-22/ca-bc-sworn-22.md",
+    "signals": "data/dossiers/2026-11-22/ca-bc-sworn-22.signals.md",
+    "probability": 0.99,
+    "forecast": {
+     "baseline": {
+      "status_quo": "no",
+      "why": "Doerkson is premier-designate; Eby remains premier until the swearing-in. The ceremony is set for Fri 20 Nov at Government House (CP, CBC, My Nelson Now, Williams Lake Tribune); invitations issued; MLAs sworn in on 19 Nov as scheduled.",
+      "set_by": "dossier agent, before the forecasters reported"
+     },
+     "market_search": {
+      "at": "2026-11-19T17:52:16Z",
+      "checked": [
+       "markets.mjs search \"British Columbia premier\"",
+       "markets.mjs search \"Doerkson\"",
+       "markets.mjs search \"BC cabinet\""
+      ],
+      "note": "Only Polymarket 'Next Premier of British Columbia' (Doerkson Yes 0.996, vol ~$115k): identity, no timing; not a match."
+     },
+     "market": null,
+     "base_rate": {
+      "class": "scheduled premier swearing-in after a majority win (BC 2011, 2017, 2024; AB 2015/2019; ON 2018; SK 2007)",
+      "rate": 1.0,
+      "n": 7,
+      "source": "desk compilation (board history ca-bc-conservative-premier; CBC 2024 report); none postponed"
+     },
+     "dossier": "data/dossiers/2026-11-22/ca-bc-sworn-22.md",
+     "signals": "data/dossiers/2026-11-22/ca-bc-sworn-22.signals.md",
+     "agents": [
+      {
+       "role": "base-rate",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:03:48+01:00",
+       "p": 0.97,
+       "p_blind": 0.97,
+       "at_blind": "2026-11-19T19:01:32+01:00",
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ],
+       "reason_blind": "Vice-regal swearing-in fixed for Fri 20 Nov since early Nov, invitations out, MLA oaths went ahead 19 Nov; premier swearing-ins on announced date ~n=6-8 no slips; generic slip 0.071 too high for class; Sat buffer. ~0.97.",
+       "p_held": 0.975,
+       "p_if_held": 0.995,
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "No change: Polymarket Doerkson next premier 0.996 confirms identity, not timing."
+      },
+      {
+       "role": "evidence",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:20:00+01:00",
+       "p": 0.97,
+       "p_blind": 0.96,
+       "at_blind": "2026-11-19T19:05:00+01:00",
+       "inputs_blind": [
+        "own-research"
+       ],
+       "reason_blind": "CP (18-19 Nov): Doerkson to be sworn in as premier by LG Cocchia on Fri 20 Nov at Government House with cabinet; MLAs sworn Thu. Firmly scheduled ceremony; residual risk only.",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "signals"
+       ],
+       "reason": "Dossier confirms Fri 20 Nov ceremony set since early Nov, invitations issued; Polymarket Doerkson next premier 0.996. Slight raise."
+      },
+      {
+       "role": "adversarial",
+       "model": "claude-fable-5-2",
+       "at": "2026-11-19T19:05:34+01:00",
+       "p": 0.96,
+       "p_blind": 0.96,
+       "at_blind": "2026-11-19T19:01:52+01:00",
+       "inputs_blind": [
+        "dossier",
+        "reference-data"
+       ],
+       "reason_blind": "Premier swearing-ins on announced date n~6-8, none postponed; generic slip 0.071 too high: invitations out, MLA oaths held 19 Nov, Sat buffer. Case for NO: unread 'constitutional question' on interim-leader status, illness/weather, Loewen recount (not relevant to him). Small haircut.",
+       "p_held": 0.965,
+       "p_if_held": 0.995,
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "Polymarket next premier Doerkson 0.996 (identity only, no timing): confirms no rival outcome, already assumed. No change."
+      },
+      {
+       "role": "anchor",
+       "model": "claude-opus-5-5",
+       "at": "2026-11-19T19:02:00+01:00",
+       "p": 0.97,
+       "p_held": 0.975,
+       "p_if_held": 0.995,
+       "inputs": [
+        "signals",
+        "reference-data",
+        "dossier"
+       ],
+       "reason": "Polymarket next BC premier Doerkson 0.996 (identity). Ceremony fixed for Fri 20 Nov since early Nov, invitations out, MLA oaths went ahead 19 Nov; Sat buffer. Generic slip 0.071 too high for vice-regal ceremony; residual ~3%.",
+       "anchor": {
+        "kind": "market",
+        "detail": "Polymarket 'Next Premier of British Columbia' Doerkson 0.996 (~$115k vol) times timing probability ~0.975 (BC 2011/2017/2024 all on schedule)"
+       }
+      },
+      {
+       "role": "outsider",
+       "model": "claude-sonnet-5-5",
+       "at": "2026-11-19T20:00:00+01:00",
+       "p": 0.94,
+       "p_blind": 0.93,
+       "at_blind": "2026-11-19T19:30:00+01:00",
+       "inputs_blind": [
+        "own-research",
+        "reference-data"
+       ],
+       "reason_blind": "Wikipedia/Prince George Citizen: Doerkson assumes office and cabinet revealed 20 Nov 2026; slip class other-scheduled 7%. Small risk the oath is dated outside window.",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "signals"
+       ],
+       "reason": "Polymarket Doerkson 0.996 as premier; timing from my research (20 Nov). Slight raise."
+      }
+     ],
+     "missing": [],
+     "combined": 0.963,
+     "calibrated": 0.991,
+     "combination": {
+      "method": "calibrated",
+      "weights": {
+       "base-rate": 1,
+       "evidence": 1,
+       "adversarial": 1,
+       "anchor": 1,
+       "outsider": 1
+      },
+      "platt": {
+       "a": 0.1719,
+       "b": 1.3697
+      },
+      "version": "2026-11-19"
+     },
+     "spread": 0.03,
+     "decomposition": {
+      "p_held": 0.97,
+      "p_if_held": 1,
+      "p_if_not_held": 0,
+      "note": "p_held: geometric mean of base-rate and adversarial; p_if_held scaled so that the product equals the published figure"
+     },
+     "disagreement": null
+    }
+   }
+  },
+  {
+   "event": "Czech weekend fuel caps (Finance Ministry věstník of Fri 20 Nov, valid Sat 21–Mon 23 Nov)",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Already the claim cz-diesel-21 in edition No. 30 (the Friday věstník that sets the Saturday cap); a second claim on the same figure would duplicate it.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Czech government extends fuel price regulation beyond 30 Nov by 23:59 Sat 21 Nov",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 2
+   },
+   "why": "Cabinet skipped it on 19 Nov (Schillerová away); no per-rollam vote or date announced; expected at the cabinet of 23–26 Nov. As a claim on 20–21 Nov it would be a low non-event. Board question cz-fuel-cap-december.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Petrol cap valid Sat 21 Nov stays below CZK 40.00/l",
+   "scope": "cz",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "Set on Fri 20 Nov in the same věstník as cz-diesel-21 (edition No. 30); duplicate of a published claim.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Brno: Pisárecké tunnels reopen to traffic on 21 Nov",
+   "scope": "cz",
+   "topic": "society",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "ŘSD already announced the delay (up to 9 more days): a non-event; local.",
+   "source": "https://ct24.ceskatelevize.cz/"
+  },
+  {
+   "event": "President Pavel calls the repeat Senate election in Žďár nad Sázavou by Sat 21 Nov",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "Must be called within 30 days of receiving the NSS ruling; nothing scheduled for 20–21 Nov, a low unannounced step.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "President Pavel ends his Olomouc Region visit (briefing in Šternberk, Fri 20 Nov)",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "A regional visit with no checkable outcome; hrad.cz programme unreachable.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Czech premiere of 'Proces Pelicot' (National Theatre with Dejvické divadlo)",
+   "scope": "cz",
+   "topic": "culture",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "On Sun 22 Nov, outside the window; sold out, no checkable outcome.",
+   "source": "https://www.narodni-divadlo.cz/"
+  },
+  {
+   "event": "ODS meeting of leadership and regional chairs on the party slump",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "Mon 23 Nov, outside the window.",
+   "source": "https://www.ceskenoviny.cz/zpravy/ods-pripravuje-reformy-mimoradny-sjezd-neni-tematem-uvedl-kupka/2901416"
+  },
+  {
+   "event": "Czech licence-fee abolition bill (after the Letná rally)",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 2
+   },
+   "why": "No step on 20–21 Nov; second reading early 2027.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Milion chvilek nationwide action",
+   "scope": "cz",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "On 2 Dec, outside the window.",
+   "source": "https://www.ceskenoviny.cz/"
+  },
+  {
+   "event": "Trump White House news conference on the Shenzhen trip (Fri 20 Nov, 12:00 ET)",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 2
+   },
+   "why": "Announced topic is trade deals with Thailand, the Philippines and others; no decision on Ukraine or Iran trailed. A claim on what he says would be a statement without a known new element.",
+   "source": "https://www.bbc.com/news/articles/c623j4ln97x7o"
+  },
+  {
+   "event": "Trump–Xi–Putin Shenzhen declaration: follow-up nuclear-risk dialogue",
+   "scope": "world",
+   "topic": "security",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 1
+   },
+   "why": "No date for the dialogue; summit over on 19 Nov.",
+   "source": "https://www.dw.com/en/apec-summit-trump-xi-putin-talks-end-with-peace-declaration/live-79964719"
+  },
+  {
+   "event": "Crimean Bridge road section reopens by 21 Nov",
+   "scope": "world",
+   "topic": "security",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "Repairs after a collapse take weeks; a non-event. The retaliation is covered through ua-drones-22.",
+   "source": "https://www.bbc.com/news/articles/cm879dqn3e1jo"
+  },
+  {
+   "event": "Coalition of the Willing / next US–Ukraine–Russia round",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 1
+   },
+   "why": "No date or venue.",
+   "source": "https://www.dw.com/"
+  },
+  {
+   "event": "Houthi strike on Riyadh; Saudi response",
+   "scope": "world",
+   "topic": "security",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "Military events are not forecast as such; shipping incidents covered by gulf-ukmto-22.",
+   "source": "https://www.aljazeera.com/"
+  },
+  {
+   "event": "Anthropic shares after the IPO",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 2
+   },
+   "why": "Share prices are excluded; US markets closed Saturday.",
+   "source": "https://www.bbc.com/news/live/c933xxm82mr8t"
+  },
+  {
+   "event": "ICJ: Myanmar genocide judgment follow-up",
+   "scope": "world",
+   "topic": "law",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "Judgment delivered 19 Nov; reparations phase undated.",
+   "source": "https://www.bbc.com/news/articles/c804wzp20ddvo"
+  },
+  {
+   "event": "EU–UK summit outcomes (Fri 20 Nov)",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 4,
+    "uncertainty": 3
+   },
+   "why": "Covered by edition No. 30 (eu-uk-sps-21, eu-uk-youth-21).",
+   "source": "https://www.gov.uk/government/news/prime-minister-to-attend-uk-eu-summit-in-brussels-on-20-november"
+  },
+  {
+   "event": "Plzeň school-bus crash investigation",
+   "scope": "cz",
+   "topic": "society",
+   "scores": {
+    "impact": 2,
+    "reach": 3,
+    "uncertainty": 1
+   },
+   "why": "An accident; not forecast.",
+   "source": "https://ct24.ceskatelevize.cz/"
+  },
+  {
+   "event": "Belgium: De Wever budget talks without Vooruit",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Report to the King on Mon 23 Nov; nothing due Fri–Sat. Board question be-dewever-out.",
+   "source": "https://www.vrt.be/vrtnws/"
+  },
+  {
+   "event": "Israel: Likud–Eisenkot bloc talks",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "Meeting on Sun 22 Nov, outside the window. Board question il-government-sworn-in.",
+   "source": "https://www.jpost.com/"
+  },
+  {
+   "event": "Nigeria: APC campaign rally in Ibadan with Tinubu",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 2
+   },
+   "why": "Only source a local X account; low reach.",
+   "source": "https://x.com/OyoNews1/status/2122977341584355546"
+  },
+  {
+   "event": "SCO dialogue in New Delhi with a Pakistani minister (20–22 Nov)",
+   "scope": "world",
+   "topic": "politics",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 2
+   },
+   "why": "No bilateral meeting announced; window ends Sun 22 Nov; low reach.",
+   "source": "https://www.dw.com/"
+  },
+  {
+   "event": "Ukraine's Day of Dignity and Freedom",
+   "scope": "world",
+   "topic": "society",
+   "scores": {
+    "impact": 1,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "Commemoration; no checkable outcome.",
+   "source": "https://www.wincalendar.com/Calendar/Date/November-21-2026"
+  },
+  {
+   "event": "Paris: more than 50 arrests at the Yellow Vest Act VI march",
+   "scope": "europe",
+   "topic": "society",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Kept as a reserve if the route claim is overtaken by a prefecture order before the freeze; arrest counts are crime-adjacent.",
+   "source": "https://www.sortiraparis.com/"
+  },
+  {
+   "event": "COP31: 35% electricity-share goal kept in the adopted text",
+   "scope": "world",
+   "topic": "science-health",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "One secondary per story is enough; the fossil-fuel wording is the question readers ask.",
+   "source": "https://www.rte.ie/news/world/2026/1119/1599773-cop31-thursday/"
+  },
+  {
+   "event": "COP31: numeric adaptation-finance target in the adopted text",
+   "scope": "world",
+   "topic": "science-health",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "As above; the $120bn target was removed in the 19 Nov draft.",
+   "source": "https://www.rte.ie/news/world/2026/1119/1599773-cop31-thursday/"
+  },
+  {
+   "event": "Germany PPI October (Fri 20 Nov 08:00)",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Lower reach than the UK and euro-area releases; three interval claims already used.",
+   "source": "https://www.destatis.de/"
+  },
+  {
+   "event": "Canada retail sales September (Fri 20 Nov 14:30 CET)",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 1,
+    "uncertainty": 3
+   },
+   "why": "Low reach; interval cap reached.",
+   "source": "https://www.statcan.gc.ca/"
+  },
+  {
+   "event": "UK GfK consumer confidence November",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 2,
+    "reach": 2,
+    "uncertainty": 3
+   },
+   "why": "Released 00:01 GMT Fri 20 Nov, before the morning freeze.",
+   "source": "https://www.gfk.com/"
+  },
+  {
+   "event": "China loan prime rates",
+   "scope": "world",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 2,
+    "uncertainty": 1
+   },
+   "why": "Fixed at about 03:00 CET Fri 20 Nov, before the freeze; expected unchanged.",
+   "source": "https://www.pbc.gov.cn/"
+  },
+  {
+   "event": "Lagarde at the European Banking Congress",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "Fri 20 Nov 09:00; covered in edition No. 30 (ecb-lagarde-21 dropped there); a statement.",
+   "source": "https://www.ecb.europa.eu/"
+  },
+  {
+   "event": "Italy: CGIL general strike",
+   "scope": "europe",
+   "topic": "economy",
+   "scores": {
+    "impact": 3,
+    "reach": 3,
+    "uncertainty": 3
+   },
+   "why": "Fri 20 Nov; covered by edition No. 30 (it-strike-21).",
+   "source": "https://www.cgil.it/"
+  },
+  {
+   "event": "Spain: campaign for the 29 Nov snap election (weekend rallies, polls)",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 4,
+    "reach": 3,
+    "uncertainty": 2
+   },
+   "why": "No scheduled poll release or debate on 21 Nov; the Atresmedia debate is on 23 Nov. Board question es-feijoo-pm-jan.",
+   "source": "https://www.electocracia.com/"
+  },
+  {
+   "event": "Lithuania: Northern Nalšia Seimas by-election, 2nd round",
+   "scope": "europe",
+   "topic": "politics",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 3
+   },
+   "why": "Sun 22 Nov, outside the window.",
+   "source": "https://www.vrk.lt/"
+  },
+  {
+   "event": "USSF-317 Falcon 9 launch from Vandenberg",
+   "scope": "world",
+   "topic": "science-health",
+   "scores": {
+    "impact": 1,
+    "reach": 1,
+    "uncertainty": 2
+   },
+   "why": "Early Fri 20 Nov (04:33 UTC), before the morning freeze; its slip matters only as the main risk to nrol136-22.",
+   "source": "https://nextspaceflight.com/launches/"
+  }
+ ]
+}

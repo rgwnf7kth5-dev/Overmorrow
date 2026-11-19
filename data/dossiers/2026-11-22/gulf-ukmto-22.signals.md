@@ -1,0 +1,5 @@
+# gulf-ukmto-22 — signals
+- `node scripts/markets.mjs search "ukmto"` and `node scripts/markets.mjs search "UKMTO notices November 16"` (read 2026-11-19T17:52–17:53Z): Polymarket event "How many UKMTO notices November 16–22?" (https://polymarket.com/event/how-many-ukmto-notices-november-1622, closes 2026-11-23T04:59Z): 4–7 notices 0.04 (vol ~2.7k); 8–11 notices 0.62 (vol ~0.7k); 12–15 notices 0.32 (vol ~0.16k); 16 or more 0.08 (vol ~0.3k). Week 23–29 Nov: fewer than 4 0.37; 8–11 0.305; 12–15 0.205; 16+ 0.345 (volumes 0.2–0.3k). Thin. Related but not matching: counts all UKMTO notices (including advisories and suspicious-activity notices) by publication week, not attacks on a given day; the 16–22 Nov week includes 21 Nov.
+- `node scripts/markets.mjs search "hormuz shipping attack"` (read 2026-11-19T17:52Z): only blockade-end and Bab el-Mandeb-closure markets (e.g. "Bab el-Mandeb Strait effectively closed by November 30?" 0.0145, vol ~240k) — not matching.
+- `node scripts/markets.mjs search "red sea houthi ship"` (read 2026-11-19T17:52Z): same Bab el-Mandeb/Panama closure markets — not matching.
+- No bookmaker odds or published models on daily incidents found.

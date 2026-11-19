@@ -1,0 +1,5 @@
+# cop31-adopt-22 — signals
+- `node scripts/markets.mjs search "COP31"` (read 2026-11-19T17:51:58Z): one result, Manifold "CI2026: Will either China, India, or the US sign the 35 by 35 pledge at COP31?" Yes 0.16, volume ≈2,877 mana, 46 traders, closes 2026-11-20T22:59Z — https://manifold.markets/FrankfurtSchool/ci2026-will-either-china-india-or-t — does NOT match (voluntary pledge, not adoption or timing of the cover decision).
+- `node scripts/markets.mjs search "COP31 fossil fuel"` (read 2026-11-19T17:52:02Z): only unrelated Polymarket Kroger sales markets — no match.
+- `node scripts/markets.mjs search "climate summit agreement Antalya"` (read 2026-11-19T17:52:06Z): only unrelated weather/climate markets (Mississippi level, Climate Clock, snow, earthquakes) — no match.
+- No bookmaker odds, published model or pundit probability on the timing of COP31's adoption found. Qualitative only: Reuters (19 Nov) "regularly blown past this deadline by more than 24 hours"; Ara (19 Nov) "already expected to extend to Saturday as is customary".
