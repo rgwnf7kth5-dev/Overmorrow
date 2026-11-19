@@ -1,0 +1,122 @@
+{
+  "edition": "2026-11-18",
+  "results": [
+    {
+      "claim": "ua-talks-18",
+      "outcome": "no",
+      "evidence": "https://www.interfax.ru/news/2026/11/17/",
+      "note": "Interfax's 17 Nov archive (Putin's arrival in Shenzhen, 21:07 MSK) carries Ushakov's earlier remarks on the trilateral agenda and says Ukraine will come up in Putin–Xi talks, but no on-record statement dated 17 Nov by Putin, Peskov, Ushakov or Lavrov that Putin will discuss the Ukraine settlement with Trump was found (TASS/RIA not searchable in full).",
+      "resolved_at": "2026-11-19T05:12:00+01:00"
+    },
+    {
+      "claim": "us-manila-18",
+      "outcome": "yes",
+      "evidence": "https://www.pna.gov.ph/article/marcos-announces-asean-us-agreement-vs-online-scams",
+      "note": "PNA (17 Nov): Marcos and Trump led the ASEAN-US Special Summit in Manila on Tuesday 17 Nov, where Marcos announced the ASEAN-US anti-scam work plan.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-pavel-18",
+      "outcome": "no",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/na-narodni-tride-lide-zapaluji-prvni-svicky-k-pripomince-17-listopadu-379680",
+      "note": "ČT24/ČTK's day report quotes Pavel at Národní třída (past not to be idealised, disputes handled civilly, defending Babiš's Israel trip and air defence) with no mention of ČT, ČRo, public-service media or the fees, and ČTK's ČT/ČRo fees topic list has no 17 Nov item; his own accounts were not readable.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-babis-fees-18",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/prilohy/ceska-televize-rozhlas-poplatky/",
+      "note": "ČTK's fees topic list has no 17 Nov item (last Babiš statement on 15-16 Nov), and ČT24's 17 Nov report records Babiš in Tel Aviv only on 17 November, freedom and where the holiday is marked, with no statement on abolishing the fees or keeping the bill.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-babis-israel-18",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/cr-ma-podle-babise-od-izraele-nabidku-na-novy-obranny-system-spyder-all-in-one/2903254",
+      "note": "ČTK and ČT24 coverage of the Israel visit (air defence, Spyder offer, Havel bench) contains no statement by Babiš or the Government Office that the embassy will move to Jerusalem or that the government will decide to move it.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-korzo-102-18",
+      "outcome": "no",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/na-narodni-tride-lide-zapaluji-prvni-svicky-k-pripomince-17-listopadu-379680",
+      "note": "ČT24/ČTK: 'according to T-Mobile's rough estimate over a hundred thousand visitors came to Národní, similar to last year'; taking this T-Mobile figure as the organisers' first figure, 'over 100,000' counts by its lower bound, which is not above 102,000.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "cz-korzo-18",
+      "outcome": "no",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/na-narodni-tride-lide-zapaluji-prvni-svicky-k-pripomince-17-listopadu-379680",
+      "note": "ČT24/ČTK report T-Mobile's rough estimate of 'over a hundred thousand, similar to last year' (the data source the organisers use); read as the first organiser figure it is below 110,000.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "nvda-rev-18",
+      "outcome": "measured",
+      "evidence": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "note": "Nvidia's 17 Nov release: revenue for the quarter ended 25 Oct 2026 of $115.8 billion, up 20% q/q and 103% y/y.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "value": 115.8,
+      "held": true
+    },
+    {
+      "claim": "nvda-guide-18",
+      "outcome": "yes",
+      "evidence": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "note": "Outlook: Q4 FY2027 revenue (quarter includes an extra week) 'expected to be $130.0 billion, plus or minus 3%', midpoint above $125.0bn.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-retail-18",
+      "outcome": "measured",
+      "evidence": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "note": "Census advance report CB26-181 (17 Nov): October retail and food services sales $748.2bn, +0.2% from September (revised +0.8%).",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "value": 0.2,
+      "held": true
+    },
+    {
+      "claim": "uk-unemp-18",
+      "outcome": "measured",
+      "evidence": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest",
+      "note": "ONS Labour market overview (17 Nov): UK unemployment rate (16+) estimated at 4.6% in July to September 2026, down 0.3 pp on the quarter.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "value": 4.6,
+      "held": true
+    },
+    {
+      "claim": "eu-forecast-18",
+      "outcome": "yes",
+      "evidence": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2026-economic-forecast-shows-continued-growth-amid-higher-inflation_en",
+      "note": "Commission Autumn 2026 Forecast (17 Nov): euro-area GDP 2026: 1.2% (EU 1.4%), above the 1.1% threshold.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "il-speaker-18",
+      "outcome": "yes",
+      "evidence": "https://www.jns.org/news/israel-news/matan-kahana-elected-knesset-speaker-drawing-likud-rebuke",
+      "note": "JNS (citing AP): Kahana elected Speaker with 66 votes to 52 for Likud's Ofir Katz after a debate of about seven hours; with the sitting called for 16:00 on 17 Nov that puts the vote around 23:00 Israel time, inside the window (timing inferred, no exact time stated).",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "il-speaker-67-18",
+      "outcome": "no",
+      "evidence": "https://www.jns.org/news/israel-news/matan-kahana-elected-knesset-speaker-drawing-likud-rebuke",
+      "note": "JNS (citing AP): Kahana received 66 votes in the 120-member chamber, one short of 67.",
+      "resolved_at": "2026-11-19T05:12:00+01:00",
+      "held": true
+    }
+  ]
+}

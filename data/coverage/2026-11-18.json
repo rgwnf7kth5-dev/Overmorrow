@@ -1,0 +1,51 @@
+{
+  "edition": "2026-11-18",
+  "checked_at": "2026-11-19T05:14:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 17, read 19 Nov 04:03 UTC)",
+    "ct24 (ČT24 domácí list and Korzo Národní topic page, read 19 Nov 04:00-04:05 UTC; items credited ČTK, ČT24)",
+    "ctk (ceskenoviny.cz front page and ČT/ČRo fees topic list, read 19 Nov 04:03 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2); list (b) is missing for this day."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: Gaza and West Bank casualties; Iranian drones at Bahrain's Sheikh Isa base and US strikes on Qeshm; Crimean Bridge struck again; Bangladesh unrest and garment protests; Canada-China tariff cuts; Russian An-12 crash near Kemerovo (19 dead); PAHO revokes US, Mexico, Bolivia measles elimination status; France-Malaysia strategic partnership; UK sanctions on settlement builders; Costa Rica journalist killed; Guinea mining trial; North Macedonia arrests over Greece plot; Mongolian president resigns; Haiti marches; Apple outage"
+  ],
+  "events": [
+    {
+      "title": "17 November anniversary: Korzo Národní, Pavel at Národní třída, Babiš marks the day in Israel",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/na-narodni-tride-lide-zapaluji-prvni-svicky-k-pripomince-17-listopadu-379680",
+      "status": "covered",
+      "story": "cz-korzo"
+    },
+    {
+      "title": "Babiš's visit to Israel: air-defence talks and Spyder offer",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/cr-ma-podle-babise-od-izraele-nabidku-na-novy-obranny-system-spyder-all-in-one/2903254",
+      "status": "covered",
+      "story": "cz-babis"
+    },
+    {
+      "title": "Two trains collide head-on near Prague main station, 46 injured",
+      "scope": "cz",
+      "lists": [
+        "wikipedia",
+        "ct24"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/u-hlavniho-nadrazi-v-praze-se-srazily-dva-vlaky-na-miste-jsou-podle-policie-zraneni-379684",
+      "status": "missed",
+      "note": "An accident, not announced in advance; no sweep gap."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# New facts for us-permit-21 (morning 19 Nov 2026, ~05:10 CET)
+- Wed 18 Nov 2026, Senate: Capito substitute amendment #6883 to H.R.2347 adopted 69–27 (13:23 ET); budget point-of-order waiver agreed 70–26; cloture on the bill itself invoked 65–31 at about 14:30 ET (27 Democrats/independents plus Republicans Hawley and Rounds voted no; Johnson, Klobuchar, Murphy, Schiff not voting). Source: https://www.dailypress.senate.gov/wednesday-november-18-2026/ ; https://www.democrats.senate.gov/2026/11/18/wrap-up-for-wednesday-november-18-2026
+- The Senate adjourned without passage and without a time agreement. Thu 19 Nov: convenes 10:00 ET, resumes H.R.2347 post-cloture, "roll call votes are expected" (https://www.democrats.senate.gov/2026/11/18/schedule-for-thursday-november-19-2026). Up to 30 hours of post-cloture time would expire about 20:30 ET Thu 19 Nov unless yielded back.
+- Competing floor business: H.Con.Res.93 (Iran war powers, 6 h debate, vote no later than Fri 20 Nov under UC) and several judicial cloture votes.
+- No passage occurred before 23:00 ET 18 Nov (the claim window opens then).
