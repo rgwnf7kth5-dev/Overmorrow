@@ -1,0 +1,32 @@
+{
+ "edition": "2026-11-18",
+ "entries": [
+  {
+   "claim": "us-manila-18",
+   "outcome": "yes",
+   "value": null,
+   "evidence": "https://tribune.net.ph/2026/11/17/trump-rallies-quad-leaders-at-asean",
+   "note": "Trump landed in Manila 17:33 on 17 Nov and Daily Tribune reports he attended the ASEAN-US Special Summit with Marcos and regional leaders that night (Inquirer/Newswav piece of 20:48 PHT confirms it was convened that evening); exact clock time not seen but published 01:30 PHT 18 Nov as already held.",
+   "at": "2026-11-20T04:08:00+01:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "cz-korzo-18",
+   "outcome": "unresolved",
+   "value": null,
+   "evidence": "https://www.ceskenoviny.cz/zpravy/2902848",
+   "note": "ČTK reported only a rough T-Mobile estimate of 'over 100,000' (similar to last year) and no explicit organiser figure was found, so whether the first organiser figure reached 110,000 is not settled.",
+   "at": "2026-11-20T04:08:00+01:00",
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "claim": "il-speaker-67-18",
+   "outcome": "no",
+   "value": null,
+   "evidence": "https://www.i24news.tv/en/news/israel/artc-matan-kahana-elected-knesset-speaker-with-66-votes-replacing-likud-s-amir-ohana",
+   "note": "Kahana was elected Speaker on 17 Nov with 66 votes (opponent Ophir Katz 52), one short of 67.",
+   "at": "2026-11-20T04:08:00+01:00",
+   "model": "claude-sonnet-5-5"
+  }
+ ]
+}

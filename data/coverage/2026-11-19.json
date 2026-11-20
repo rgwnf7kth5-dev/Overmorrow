@@ -1,0 +1,85 @@
+{
+  "edition": "2026-11-19",
+  "checked_at": "2026-11-20T05:06:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 18, read 20 Nov 04:04 UTC)",
+    "ct24 (ČT24 domácí list, pages 1-2, items dated 18 Nov; read 20 Nov 04:05 UTC; items credited ČTK, ČT24). The ČT24 'Souhrn zásadních událostí středy 18. listopadu' was not found (WebSearch returned only other days)",
+    "ctk (ceskenoviny.cz ČR, Svět and Ekonomika lists, items dated 18.11.2026; read 20 Nov 04:05 UTC; the front page had already moved to 19 Nov)"
+  ],
+  "unreachable": [
+    "Reuters World (401) and AP (403) refuse scripted reading (exit 2); WebSearch (4 queries) returned no day list for 18 Nov, and Wikipedia citations to AP/Reuters were not counted as a top-stories list. List (b) is missing for this day, so no world or Europe event could reach two lists."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries: Crimean Bridge struck a third time and closed; Salvadoran forces in Haiti; Bangladesh political violence and garment-worker protests; first Israeli operation in central Gaza since the October 2025 ceasefire; Kashmir militant commander killed; Jalisco cartel operation; Van Gogh 'Blossoming Chestnut Trees' sells for $190.4m; Hegseth in Colombia and US-Venezuela military cooperation agreement; Yunus ancestral home burned; Voyager 1 reaches one light-day; PlayStation outage before GTA VI (also on the ČTK economy list, but list (c) counts only for Czech events); Litton Das record (sport).",
+    "ČTK-only Czech items: Chomutov mayor elected; Cimický summoned to prison; pension liabilities 309.1% of GDP; Košík fined CZK 9.3m; Olomouc-region murder plea; wind warning (dropped in the plan); car output, household debt, bank-association GDP outlook. ČT24-only: Ukraine detains suspect in school bomb threats (Eurojust).",
+    "ČTK world items (not counted, list (c) is for Czech events): Commission proposes a EUR 45bn Ukraine loan; Germany cuts electricity tax and caps fuel prices; ship attacked in Hormuz, 11 hurt; Peltola wins Alaska Senate seat; Xi at APEC; EU October inflation 4.0% (final HICP, dropped in the plan)."
+  ],
+  "events": [
+    {
+      "title": "Supreme Administrative Court annuls the Žďár Senate election (one-vote complaint); the race is re-run from the first round",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/soud-oznami-rozhodnuti-o-stiznosti-na-senatni-volby-na-zdarsku-rozdil-tam-byl-jeden-hlas-379710",
+      "status": "covered",
+      "story": "cz-nss-zdar",
+      "note": "Covered as a story; its headline forecast a dismissal, the court annulled the result instead."
+    },
+    {
+      "title": "Babiš, Zůna and Macinka in Israel: Spyder All-in-One air-defence offer, tender possible next year",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-mohlo-vypsat-zakazku-na-protivzdusnou-obranu-pristi-rok-uvedl-zuna-379704",
+      "status": "dropped",
+      "note": "Planning dropped 'Babiš's last day in Israel: any air-defence document signed': no signing, memorandum or press conference announced for 18 Nov, only the Ichilov hospital visit. The Spyder offer was carried by edition 2026-11-18 (cz-babis)."
+    },
+    {
+      "title": "Prague coalition (STAN, Spolu, Praha sobě) signs its agreement and presents the council; Hlaváček to be mayor",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/regiony/hlavni-mesto-praha/stan-spolu-a-praha-sobe-podepsaly-koalicni-smlouvu-v-praze-379711",
+      "status": "dropped",
+      "note": "Planning dropped it: names agreed by the parties, the votes (mayor, council) are on 19 Nov, next edition. Counted for ctk via the ČTK-credited ČT24 item."
+    },
+    {
+      "title": "Interior minister Metnar: Russian athletes will not be let into Czechia (Russian hockey teams at world championships)",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/brifink-po-jednani-metnara-s-vedenim-hokejoveho-svazu-379717",
+      "status": "missed",
+      "note": "A meeting of Šťastný, Macinka, Metnar and the hockey unions was announced on 1 Nov (ČTK) without a date; no dated announcement of the 18 Nov meeting found, and Macinka's visa refusal was already public on 17 Nov. Not treated as a sweep gap."
+    },
+    {
+      "title": "Police treat the Prague main-station train collision as negligent endangerment (up to eight years)",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/nehodu-vlaku-v-praze-policie-resi-jako-obecne-ohrozeni-hrozi-za-nej-az-osm-let-379705",
+      "status": "missed",
+      "note": "Follow-up to the 17 Nov accident (missed in edition 2026-11-18); not announced in advance; no sweep gap."
+    },
+    {
+      "title": "Unions at the National Institute of Public Health (SZÚ) declare strike alert over 10% job cuts",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/odbory-statniho-zdravotniho-ustavu-vyhlasily-stavkovou-pohotovost-379713",
+      "status": "missed",
+      "note": "Not announced in advance; no sweep gap."
+    },
+    {
+      "title": "Justice minister Tejc: court proceedings shortened again; amendment to stop appeal courts binding lower courts",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/ministerstvo-spravedlnosti-chysta-novelu-rusici-pravomoc-vyssich-soudu-zavazovat-nizsi-379734",
+      "status": "missed",
+      "note": "Ministry statistics release and briefing; no advance announcement found (the ČT24 day plan for 18 Nov could not be retrieved); no sweep gap."
+    },
+    {
+      "title": "Christmas-market stalls burn on náměstí Svobody in Brno",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/na-namesti-svobody-v-brne-zacalo-horet-nekolik-stanku-pro-vanocni-trhy-379715",
+      "status": "missed",
+      "note": "An accident, not announced in advance; no sweep gap."
+    }
+  ]
+}
