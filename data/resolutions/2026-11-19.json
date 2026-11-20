@@ -1,0 +1,96 @@
+{
+  "edition": "2026-11-19",
+  "results": [
+    {
+      "claim": "ant-ipo-price-19",
+      "outcome": "measured",
+      "value": 83,
+      "evidence": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "note": "Anthropic's release dated 18 Nov 2026 says it priced its IPO of 980 million Class A shares at $83.00 per share; trading on Nasdaq as ANT began 19 Nov.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "ant-ipo-above-19",
+      "outcome": "yes",
+      "evidence": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "note": "Priced on 18 Nov 2026 at $83.00 per share, above the $78 top of the $70–78 range.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-manila-19",
+      "outcome": "no",
+      "evidence": "https://abcnews4.com/news/nation-world/no-deal-signed-yet-philippine-officials-temper-trumps-claim-of-very-big-trade-pact",
+      "note": "The state visit took place on 18 Nov, but Ambassador Romualdez said nothing was signed and no joint statement was released (TNND, citing Reuters); the White House statements list shows Quad and US–Thailand joint texts but no US–Philippines one.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "uk-cpi-19",
+      "outcome": "measured",
+      "value": 3.6,
+      "evidence": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
+      "note": "ONS bulletin of 18 Nov 2026: CPI rose by 3.6% in the 12 months to October 2026, up from 3.5% in September.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-nss-zdar-19",
+      "outcome": "no",
+      "evidence": "https://www.nssoud.cz/aktualne/tiskove-zpravy/detail/volebni-senat-nss-vyslovil-neplatnost-hlasovani-v-obou-kolech-voleb-do-senatu-parlamentu-cr-v-celem-volebnim-obvodu-zdar-nad-sazavou",
+      "note": "NSS press release of 18 Nov 2026: in Vol 11/2026 the election senate granted Černý's complaint and declared the vote in both rounds in the whole of district 51 invalid, after a review of ballots from precincts with high invalid-vote shares.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-diesel-19",
+      "outcome": "measured",
+      "value": 45.68,
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-18_Cenovy-vestnik-126-2026.pdf",
+      "note": "Cenový věstník částka 126 of 18 Nov 2026 sets the maximum diesel price for 19 Nov at 45,68 Kč s DPH per litre (petrol 40,22).",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-permit-19",
+      "outcome": "yes",
+      "evidence": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm",
+      "note": "Senate roll call 268 on 18 Nov 2026 at 1:23 PM: motion to invoke cloture re H.R.2347 (the bill itself) agreed to, 65–31; the bill passed on 19 Nov.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "id-bi-19",
+      "outcome": "no",
+      "evidence": "https://en.antaranews.com/news/443543/bi-raises-rate-to-6-percent-to-defend-rupiah-against-fed-moves",
+      "note": "Antara, 18 Nov 2026: Bank Indonesia raised the BI-Rate by 25 bp to 6.00% after its November Board of Governors meeting (deposit facility 5.25%, lending facility 6.75%); also reported by Xinhua and The Star.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "fr-plfss-19",
+      "outcome": "yes",
+      "evidence": "https://fr.qz.com/senat-adopte-budget-securite-sociale-2027-premiere-lecture-111826",
+      "note": "Per AFP (via Quartz FR, also CNews), the Senate adopted the PLFSS 2027 at first reading in the solemn vote of 18 Nov 2026 by 201 votes to 124; senat.fr scrutin pages refuse the reader.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "tgt-eps-19",
+      "outcome": "yes",
+      "evidence": "https://www.sec.gov/Archives/edgar/data/0000027419/000002741926000051/a2026q3ex-99.htm",
+      "note": "Target's Q3 2026 release (8-K Ex. 99, 18 Nov) reports GAAP and Adjusted EPS of $2.65, including $0.50 of tariff-refund benefits that Target leaves inside Adjusted EPS.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-uohs-19",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/ve-vyberovem-rizeni-na-sefa-uohs-se-seslo-17-prihlasek/2902732",
+      "note": "ČTK: according to the Office of the Government's statement on Wednesday 18 Nov, 17 applications were received (Babiš said 16 on 19 Nov); either way at least 5, and no deadline extension was reported.",
+      "resolved_at": "2026-11-20T05:02:00+01:00",
+      "held": true
+    }
+  ]
+}

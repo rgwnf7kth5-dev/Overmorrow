@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "pooled": {
-  "n": 47,
-  "rms_in_scales": 1.385,
+  "n": 50,
+  "rms_in_scales": 1.353,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -810,6 +810,54 @@
    ],
    "n": 1,
    "rms_surprise": 0.1
+  },
+  "anthropic-ipo-price-per-class-a-share-set-on-18-nov-2026": {
+   "unit": "USD per share",
+   "records": [
+    {
+     "edition": "2026-11-19",
+     "claim": "ant-ipo-price-19",
+     "consensus": 80,
+     "first": 83,
+     "centre": 80.5,
+     "scale_used": 4,
+     "source": "https://mlq.ai/news/anthropics-bankers-weigh-pricing-its-ipo-above-the-70-to-78-range-lifting-its-valuation-to-15-trillion-or-more-ft-reports/"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 3
+  },
+  "uk-cpi-12-month-rate-october-2026-ons-first-release": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-19",
+     "claim": "uk-cpi-19",
+     "consensus": 3.7,
+     "first": 3.6,
+     "centre": 3.672,
+     "scale_used": 0.13,
+     "source": "https://www.forexfundamentals.com/economic-calendar"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
+  },
+  "maximum-retail-price-of-diesel-b7-valid-from-19-nov-2026-set": {
+   "unit": "CZK/l incl. VAT",
+   "records": [
+    {
+     "edition": "2026-11-19",
+     "claim": "cz-diesel-19",
+     "consensus": 45.5,
+     "first": 45.68,
+     "centre": 45.494,
+     "scale_used": 0.37,
+     "source": "https://mf.gov.cz/assets/attachments/2026-11-16_Cenovy-vestnik-125-2026.pdf"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.18
   }
  },
  "extra": {}
