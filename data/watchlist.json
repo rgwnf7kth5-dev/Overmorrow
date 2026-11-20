@@ -266,6 +266,51 @@
           ],
           "note": "Weekly re-forecast. Timetable unchanged (third reading planned for 2 Dec); Babiš says new sector taxes would mostly apply from 2028.",
           "note_cs": "Týdenní přepočet. Harmonogram se nemění (třetí čtení plánováno na 2. prosince); nové sektorové daně by podle Babiše platily převážně od roku 2028."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.93,
+          "combined": 0.926,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.93,
+              "reason": "Class: state budgets scheduled for third reading under a majority government (cz-chamber.json: 5/5 third-reading items dealt with and passed in the 9th–10th terms; past misses were a new government or minority cabinets), base ~0.92; third reading set for 2 Dec leaves four weeks of slack against a per-slot slip of 0.10, +0.1 log-odds.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.92,
+              "reason": "No change to the timetable (second reading ends 25 Nov, third reading 2 Dec) or to the coalition majority since 13 Nov; four weeks of slack before 31 Dec leave only obstruction or a coalition rupture as risks. psp.cz agenda could not be checked.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.92,
+              "reason": "Case against: opposition obstruction, a restive SPD ('we will be more radical', 20 Nov) and the unsettled sector-tax row could push the 2 Dec vote; but the coalition holds a majority, the timetable is unchanged and four weeks of slack remain before 31 Dec.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.93,
+              "reason": "No market; anchor is the base rate: state budgets with a majority coalition passed third reading in every case (4/4 in the 9th term), less the cz-chamber-budget slip rate (0.10) on the 2 Dec slot. Four weeks of slack before 31 Dec absorb most delay, and no new risk was reported.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.93,
+              "reason": "State budget bills passed 4 of 4 in the last term; coalition majority, third reading planned 2 Dec leaves a month of slack.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. No change in the timetable: second reading ends 25 Nov, third reading planned for 2 Dec; the coalition majority holds. The agenda of the sitting from 24 Nov could not be checked on psp.cz.",
+          "note_cs": "Týdenní přepočet. Harmonogram se nemění: druhé čtení skončí 25. listopadu, třetí je naplánováno na 2. prosince; koaliční většina drží. Program schůze od 24. listopadu se na psp.cz nepodařilo ověřit."
         }
       ],
       "result": null
@@ -1845,6 +1890,51 @@
           ],
           "note": "Weekly re-forecast, down 6.5 points. The refinery tax went to third reading on 13 Nov without any coalition amendment extending it to banks; bank and defence-industry taxes are still only being considered, mostly for 2028.",
           "note_cs": "Týdenní přepočet, pokles o 6,5 bodu. Daň pro rafinerie postoupila 13. listopadu do třetího čtení bez koaličního návrhu rozšířit ji na banky; daně pro banky a zbrojaře se zatím jen zvažují, převážně od roku 2028."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.2,
+          "combined": 0.196,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.17,
+              "reason": "Class: a sector tax the PM says is being prepared, with no draft yet, reaching a cabinet-approved bill within ~10 weeks: about 0.25 (Czech windfall-tax precedent 2022 took ~2 months but went via MPs' amendment). Adjusted −0.5 log-odds because the yield is aimed mostly at 2028, the amendment route would not count and the December holidays cut cabinet time; Babiš's end-November coalition deal target keeps it from going lower.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.2,
+              "reason": "Babiš now openly says sector taxes on banks, energy and arms makers are being prepared with a coalition deal targeted by end-November (E15, 18 Nov), a firmer timetable than before; but there is still no draft, the yield may be aimed at 2028, and a cabinet-approved bill by 31 Jan needs fast drafting.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.16,
+              "reason": "Case for yes: Babiš now says sector taxes on banks are being prepared with a coalition deal wanted by 30 Nov, and a consolidation-package bill could reach cabinet in January; but no draft exists, the yield is aimed mostly at 2028, and drafting plus comment procedure by 31 Jan is tight.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.17,
+              "reason": "Anchor ~0.07 (unscheduled sector-tax bill, 0/5 Babiš-government years), raised in log-odds because Babiš now openly prepares bank, energy and arms sector taxes and wants a coalition deal by end-November (E15, 18 Nov). There is still no draft, the revenue may be aimed at 2028, and a cabinet-approved bill by 31 Jan needs fast drafting.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.3,
+              "reason": "Babiš targets a coalition deal by end-November but no draft exists; a cabinet-approved bank-specific levy bill by 31 Jan needs a fast drafting and may be aimed at 2028.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast; up from 10% to 20%. Babiš told ČT the government is preparing sector taxes on banks, energy companies and arms makers and wants a coalition deal on them by the end of November (E15, 18 Nov); no draft bill yet, and the tax may still be meant for 2028.",
+          "note_cs": "Týdenní přepočet; nárůst z 10 na 20 %. Babiš v ČT řekl, že vláda chystá sektorové daně pro banky, energetické firmy a zbrojaře a dohodu v koalici chce mít do konce listopadu (E15, 18. 11.); návrh zákona zatím neexistuje a daň může mířit až na rok 2028."
         }
       ],
       "result": null
@@ -4279,6 +4369,51 @@
             "volume": 2019988,
             "matches": "partial: deadline 31 Dec 2026 vs our 31 Jan 2027; Mar 2027 contract 0.245 used to interpolate"
           }
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.04,
+          "combined": 0.037,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.03,
+              "reason": "Class: two-month windows of the war since 2022 with active US-led talks (~20 rounds/envoy visits, envoy-visit-ceasefire base 0.03, no general ceasefire ever agreed). Moscow's 20 Nov rejection of NATO-style guarantees and talk only of an energy truce give no reason to move off the floor.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.04,
+              "reason": "Berlin talks on 19 Nov and a European call for a winter energy truce (which would not count), but Ryabkov rejected NATO-style guarantees on 20 Nov and no general ceasefire is announced or scheduled; Polymarket's looser Dec 31 ceasefire contract is 0.05.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.03,
+              "reason": "Case for yes: Berlin talks, Russia agreeing to a multilateral round and US pressure could yield a sudden deal; but Ryabkov rejected the guarantees formula on 20 Nov, the only truce on the table is energy-only (does not count) and no general ceasefire is scheduled.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "reason": "Anchor: Polymarket 'ceasefire by Dec 31' at 0.0525, stretched to 31 Jan (~0.07), and discounted because our criterion is stricter (both sides announce a general ceasefire in force) and for long-shot bias. The looser 'agreement by Jan 31' is 0.185. Ryabkov's 20 Nov rejection of NATO-style guarantees points down.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.04,
+              "reason": "Moscow rejected NATO-style guarantees on 20 Nov and nothing is scheduled; a full 30-day-plus ceasefire in force by 31 Jan is a very low base rate event.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Russia's mass strike of 20 Nov and Europe's rejection of the Shenzhen framework leave no sign of a general ceasefire; a multilateral meeting is promised 'soon' with no date.",
+          "note_cs": "Týdenní přepočet. Masivní ruský útok z 20. listopadu a odmítnutí šen-čenského rámce Evropou nenaznačují obecné příměří; mnohostranná schůzka je slibována „brzy“, bez data."
         }
       ],
       "result": null
@@ -7828,6 +7963,51 @@
           ],
           "note": "Weekly re-forecast. No new censure motion; the Senate debates the budget from 20 Nov.",
           "note_cs": "Týdenní přepočet. Žádný nový návrh na vyslovení nedůvěry; Senát projedná rozpočet od 20. listopadu."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.1,
+          "combined": 0.097,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.12,
+              "reason": "Class: French governments without a majority in budget season since 2022: one censure adopted (Barnier, Dec 2024) in about four budget autumns, ~0.2 for the December window, but the 2027 budget is in the Senate until 9 Dec so a 49.3 and censure vote would have to fit into the last two weeks of December; −0.6 log-odds for that timing.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.09,
+              "reason": "No motion pending while the budget is in the Senate until 9 Dec; the trigger is a December 49.3 or ordinances on the final reading, and a successful censure still needs PS and RN to vote together, which no 2026 motion achieved.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.1,
+              "reason": "Case for yes: the Socialists report no dialogue ('nada'), the budget returns to the Assembly after 9 Dec and a 49.3 or ordinances could unite PS and RN; but every motion against Lecornu has failed, the government can avoid the trigger via a special law, and neither party wants to own a pre-Christmas collapse.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.08,
+              "reason": "No market; anchor ~0.05 (2 of ~160 Fifth Republic motions passed, one success in the minority-parliament era). Nudged up because a December 49.3 on the budget's return is a live option and the PS complains of no dialogue, but censure still needs PS and RN to vote together.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.1,
+              "reason": "No motion tabled, PS rhetoric only, and the budget returns to the Assembly after 9 Dec; a motion would need 289 votes and the Lecornu government has survived such threats.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. No new motion of censure with a path to a majority; the budget timetable continues.",
+          "note_cs": "Týdenní přepočet. Žádný nový návrh na vyslovení nedůvěry, který by měl šanci na většinu; rozpočtový harmonogram pokračuje."
         }
       ],
       "result": null
@@ -8092,6 +8272,51 @@
           ],
           "note": "Up 13 points: Commissioner Albuquerque told Parliament on 12 Nov that the Commission and the EEAS are finishing the 22nd package proposal; foreign ministers adopt separate listings on 16 Nov.",
           "note_cs": "Nárůst o 13 bodů: komisařka Albuquerque 12. listopadu řekla europoslancům, že Komise a ESVČ dokončují návrh 22. balíčku; ministři zahraničí 16. listopadu schválí samostatné sankční seznamy."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.46,
+          "combined": 0.464,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.6,
+              "reason": "Class: Russia sanctions packages 12–19, proposal to adoption: 6 of 8 within ~5 weeks (12th and 15th adopted in mid-December after November proposals), ~0.75. Adjusted −0.7 log-odds because this package has already slipped from October, targets banks and crypto, needs unanimity, and the proposal itself is only due the week of 23 Nov.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.45,
+              "reason": "Von der Leyen (18 Nov) said the package will be presented next week and reports say preparation is complete; a late-November proposal fits the 2023 and 2024 pattern of pre-Christmas adoption, but unanimity on banking, crypto and shadow-fleet measures in about four weeks remains tight.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.4,
+              "reason": "Case against: unanimity on banks, crypto and the shadow fleet in under six weeks, with Hungarian/Slovak leverage during an energy crunch, often slips into the new year; but the proposal is ready for the week of 23 Nov and December adoptions in 2023 and 2024 took three to five weeks.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.47,
+              "reason": "No market. Anchor: recent packages took 3 to 5.5 weeks from proposal to adoption (Dec 2023 and Dec 2024 met pre-Christmas pushes; mid-2025 packages were held up by Slovakia). The Commission presents the week of 23 Nov, leaving ~5 weeks, so this is roughly a coin flip less veto risk.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.4,
+              "reason": "Commission only tables the package week of 23 Nov; unanimity packages usually take 1-3 months with Hungary/Slovakia holdouts, so year-end adoption is roughly a coin flip, slightly below.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Von der Leyen said the package will be presented in the week of 23 Nov; adoption by the end of December needs unanimity within about five weeks.",
+          "note_cs": "Týdenní přepočet. Von der Leyenová uvedla, že balík předloží v týdnu od 23. listopadu; přijetí do konce prosince vyžaduje jednomyslnost zhruba do pěti týdnů."
         }
       ],
       "result": null
@@ -8358,6 +8583,51 @@
           ],
           "note": "Weekly re-forecast. Nothing on the budget came out of Dublin; Costa prepares a revised negotiating box for the special summit on 26–27 Nov.",
           "note_cs": "Týdenní přepočet. Dublinská schůzka k rozpočtu nic nepřinesla; Costa připravuje upravený vyjednávací rámec pro mimořádný summit 26.–27. listopadu."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.07,
+          "combined": 0.07,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.07,
+              "reason": "Class: MFF negotiations: the first special budget summit failed in both modern cases (Nov 2012, Feb 2020) and deals came 5–11 months before the period started; this one starts in 2028, so a deal 13 months early would be unusually fast (only 2005 came this early). Net payers (Austria) and Parliament remain far apart.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.08,
+              "reason": "Process on schedule (revised negotiating box 21 Nov, special summit 26-27 Nov, EUCO 17-18 Dec) but Austria demands deep cuts while Parliament wants more and no convergence is reported; first MFF special summits have usually failed.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.06,
+              "reason": "Case for yes: Costa presents a revised box on 21 Nov and two summits remain; but the presidency expects no major changes, Austria and other net payers demand deep cuts while Parliament wants more, and no MFF was ever agreed this soon after the proposal.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.07,
+              "reason": "No market; anchor ~0.06. The last three MFFs were agreed 20–26 months after the proposal (this would be 17), and first special summits failed in 2012 and Feb 2020. Costa's revised box (21 Nov) expects no major changes while Austria demands deep cuts and Parliament wants +10%.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.07,
+              "reason": "Large gaps between net payers and Parliament and MFF deals historically land after many summits; 26-27 Nov special summit is unlikely to close all 27.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Costa's revised proposal is due on 21 Nov and a special summit on 26–27 Nov, but the gap between net payers and cohesion countries remains wide.",
+          "note_cs": "Týdenní přepočet. Costův upravený návrh má přijít 21. listopadu a mimořádný summit se koná 26.–27. listopadu, rozdíly mezi čistými plátci a kohezními zeměmi však zůstávají velké."
         }
       ],
       "result": null
@@ -9950,6 +10220,51 @@
           ],
           "note": "Up 19 points: leaders want to choose between Hernández de Cos and Knot at the special summit on 26–27 Nov, and Handelsblatt reports Paris and Berlin near a deal for Hernández de Cos (Berlin denies it is sealed).",
           "note_cs": "Nárůst o 19 bodů: lídři chtějí mezi Hernándezem de Cos a Knotem vybrat na mimořádném summitu 26.–27. listopadu a podle Handelsblattu jsou Paříž a Berlín blízko dohody na Hernándezovi de Cos (Berlín popírá, že je hotová)."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.83,
+          "combined": 0.83,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.85,
+              "reason": "Class: ECB president appointments once the big states align (Draghi 2011, Lagarde 2019): the Council recommendation followed the political choice within weeks. Germany and France back De Cos, and the reported 7 Dec ECON hearing and 17 Dec European Council imply a Council recommendation before then; Knot staying in can force a QMV vote but not block it.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.8,
+              "reason": "Germany joined France behind Hernández de Cos (17 Nov) and Expansión reports an ECON hearing on 7 Dec and formal appointment at the 17 Dec European Council, which requires the Council recommendation first; Knot staying in may force a vote but no longer looks like a deadlock, and Lagarde's 7 Feb exit forces the pace.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.76,
+              "reason": "Case against: Knot stays in and may force a leaders' vote, the Spanish election on 29 Nov and a package with the chief-economist seat could push the Council recommendation into January; but Paris and Berlin back De Cos and a dated path (ECON 7 Dec, EUCO 17 Dec) requires the recommendation first.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.84,
+              "reason": "No timing market (Polymarket 0.968 on who, not when). Anchor: in 2019 the Council recommendation followed the political deal within a week, and Lagarde's 7 Feb exit forces it. Germany backed De Cos on 17 Nov and Expansión dates an ECON hearing on 7 Dec and appointment on 17 Dec, which implies the recommendation before then. Knot staying in is the slip risk.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.88,
+              "reason": "Germany and France back De Cos, ECON hearing 7 Dec and European Council 17 Dec are dated; the Council recommendation needed for YES should precede, Knot staying in is the main risk.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast; up from 71% to 83%. Germany formally backed Hernández de Cos on 17 Nov, joining France, and Expansión reports an ECON hearing on 7 Dec and appointment at the 17 Dec European Council; Knot stays in the race.",
+          "note_cs": "Týdenní přepočet; nárůst ze 71 na 83 %. Německo 17. listopadu formálně podpořilo Hernándeze de Cos, stejně jako Francie, a Expansión uvádí slyšení ve výboru ECON 7. prosince a jmenování na Evropské radě 17. prosince; Knot ze souboje neodstoupil."
         }
       ]
     },
@@ -10385,6 +10700,51 @@
           ],
           "note": "Weekly re-forecast. No new ČNB signal; markets price a December hold, so 4.25% by February needs a further hike after a pause; the ČNB expects inflation well above 3% in February.",
           "note_cs": "Týdenní přepočet. Žádný nový signál ČNB; trhy počítají v prosinci s ponecháním sazeb, takže 4,25 % do února by vyžadovalo další zvýšení po pauze; ČNB čeká v únoru inflaci výrazně nad 3 %."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.19,
+          "combined": 0.187,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.2,
+              "reason": "Class: ČNB meetings in the current cycle (central-banks.json: 2 hikes in ~7 meetings since June 2026, ~0.29 per meeting, so ~0.5 over Dec+Feb). Adjusted down ~−1.4 log-odds: the governor says Nov was not the start of a cycle, analysts rule out December, and falling fuel caps ease inflation; the 4–3 split and the ČNB forecast's upside risk keep it at about one in five.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.18,
+              "reason": "Since 13 Nov only commentary: analysts read the minutes as no December hike and the board as less divided, Zamrazilová gave a generic inflation-control line; no board member signalled another hike, so a second 25 bp move by the first 2027 meeting stays the minority path.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.16,
+              "reason": "Case for yes: the ČNB's own forecast implies rising rates, Zamrazilová sounds hawkish and inflation is seen above 3% in early 2027; but the November hike was 4-3 and called preventive, fuel prices keep falling, and no member has signalled a second hike by February.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.18,
+              "reason": "No market. Anchor: the ČNB hiked in Jun and Nov 2026 with about five months between them (central-banks.json), so a third hike within the next two meetings is the minority path. Analysts read the minutes as making a December hike unlikely and no board member signalled more, which keeps it below the ~0.25 one-in-four prior.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.22,
+              "reason": "Rate is at 4.00% and the board is hesitant, December hike seen unlikely; reaching 4.25% by February needs a hike after a pause.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Analysts still expect no further ČNB hike in December; nothing points to a February hike to 4.25%.",
+          "note_cs": "Týdenní přepočet. Analytici dál nečekají v prosinci další zvýšení sazeb ČNB; nic nenasvědčuje zvýšení na 4,25 % v únoru."
         }
       ]
     },
@@ -10988,6 +11348,58 @@
             "volume": 762830,
             "matches": "close: same deadline, requires both US and Iran to announce acceptance of a Hormuz traffic agreement"
           }
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.07,
+          "combined": 0.065,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.07,
+              "reason": "Class: mediated US–Iran agreements (own record 1 of 4 in short windows) and, more broadly, negotiated reopenings during active hostilities within six weeks: about 0.1. Adjusted −0.4 log-odds because strikes resumed, the blockade was tightened on 20 Nov and no round is scheduled.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.07,
+              "reason": "Since 13 Nov direct US-Iran strikes resumed, the US tightened its blockade to ship-to-ship transfers and tankers keep being hit, with no talks scheduled; the matching Polymarket contract fell from 0.225 to 0.095.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.05,
+              "reason": "Case for yes: Qatar and Oman keep mediating, Trump says Iran wants a deal and both sides are hurting; but direct strikes resumed, the blockade was tightened on 18-20 Nov, tankers are still being hit, no round is set and the matching market fell to 0.095.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.07,
+              "reason": "Anchor: Polymarket 'US-Iran Hormuz Agreement by Dec 31' at 0.095 (same deadline, near-identical criterion), shaded down for long-shot bias and the two-side confirmation requirement. Strikes resumed, the blockade was tightened and no talks are scheduled.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.07,
+              "reason": "Active strikes, tightened blockade and no scheduled talks; matching market at 0.095 and both sides must publicly confirm.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "url": "https://polymarket.com/event/us-iran-hormuz-agreement-by-december-31",
+            "p": 0.095,
+            "read_at": "2026-11-20T18:00:00Z",
+            "volume": 859589,
+            "matches": "close: same deadline, requires both sides to agree a Hormuz arrangement"
+          },
+          "note": "Weekly re-forecast; down from 12% to 7%. Direct US–Iran strikes resumed on 17–18 Nov, the US widened its blockade to ship-to-ship transfers and more tankers were hit; Polymarket's 'US-Iran Hormuz Agreement by December 31' fell from 0.225 to 0.095.",
+          "note_cs": "Týdenní přepočet; pokles z 12 na 7 %. Přímé americko-íránské údery se 17.–18. listopadu obnovily, USA rozšířily blokádu na překládku mezi tankery a zasaženy byly další tankery; trh Polymarket na dohodu o Hormuzu do 31. prosince klesl z 0,225 na 0,095."
         }
       ]
     },
@@ -11250,6 +11662,51 @@
           ],
           "note": "Up 24 points: the Chamber finished the second reading on 13 Nov; the third reading can come at the sitting from 24 Nov, and Schillerová moved to shorten the waiting period to seven days.",
           "note_cs": "Nárůst o 24 bodů: Sněmovna 13. listopadu dokončila druhé čtení; třetí čtení může přijít na schůzi od 24. listopadu a Schillerová navrhla zkrátit lhůtu před ním na sedm dní."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.86,
+          "combined": 0.859,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.82,
+              "reason": "Class: government bills with second reading finished and a coalition majority (bills reaching a third-reading vote pass 99%; per-sitting slip for government readings 0.615, with two sittings before 31 Dec giving ~0.7–0.75 that the vote is held). Adjusted +0.4 log-odds for the government's revenue urgency and the shortened wait to seven days; the budget crowding December's floor time is the main risk.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.87,
+              "reason": "Second reading finished 13 Nov and the third reading is possible at the sitting opening 24 Nov; MPs want to soften it and the opposition objects, but nothing suggests the coalition will pull it, and five weeks of slack absorb budget floor-time slippage.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.87,
+              "reason": "Case against: MPs want to soften the tax, the opposition has ~30 amendments and may obstruct, the agenda for 24 Nov is unverified and the coalition could fold it into the wider sector-tax package; but second reading is done, the wait was shortened and five weeks of sittings remain.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.87,
+              "reason": "Anchor: third readings that reach a vote pass 99% of the time (n=258), discounted for the ~0.6 per-sitting slip of a government bill reading. With a sitting from 24 Nov plus December sittings, there are several chances before 31 Dec; obstruction, budget floor time and the softening debate are the residual risks.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.86,
+              "reason": "Government bill with coalition majority; final vote possible at the sitting from 24 Nov, with five weeks of slack even if softened.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Third reading still possible at the Chamber sitting from 24 Nov; no new obstacle reported.",
+          "note_cs": "Týdenní přepočet. Třetí čtení je dál možné na schůzi Sněmovny od 24. listopadu; žádná nová překážka nebyla hlášena."
         }
       ]
     },
@@ -11678,6 +12135,51 @@
           ],
           "note": "Weekly re-forecast. No strike signal at ČT or ČRo; the Letná rally on 15 Nov is a demonstration, not a strike.",
           "note_cs": "Týdenní přepočet. V ČT ani v ČRo se stávka nechystá; nedělní shromáždění na Letné je demonstrace, nikoli stávka."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.13,
+          "combined": 0.132,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.12,
+              "reason": "Class: a repeat work stoppage within three months in a Czech public-sector dispute when the decisive legislative step (second reading in February) falls outside the window: roughly 0.1–0.15. Two employers and a new union add small independent chances, but no strike call exists and the next trigger (new funding model in January) is late in the window.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.13,
+              "reason": "No stoppage called: activity is a new union (OTO ČT), talks with Babiš and comments on the bill; the second reading is in February and the government's new funding model only in January, which is a possible but late trigger.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.13,
+              "reason": "Case for yes: strike alert persists, a new ČT union formed and a provocative coalition step could trigger a warning strike; but the dispute has moved to talks and comments, the second reading and new funding model come only in January-February, and no stoppage is called.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.11,
+              "reason": "Anchor: public-media work stoppages are rare (one so far, 3 Nov). The natural trigger, the second reading or the government's new funding model, comes in January or February. The new OTO ČT union and the comment process are talks, not stoppages.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.18,
+              "reason": "No strike called, only a new union, talks and comment procedures; the new funding model comes in January, so a trigger exists but a work stoppage is a high bar.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast; down from 17% to 13%. A new ČT union (Otevřené odbory ČT) announced itself on 20 Nov without calling a stoppage; the licence-fee bill moves slowly (committee deadline 27 Nov) and ČRo says the government has promised another funding model for January.",
+          "note_cs": "Týdenní přepočet; pokles ze 17 na 13 %. V ČT se 20. listopadu ohlásila nová odborová organizace (Otevřené odbory ČT), stávku ale nevyhlásila; zákon o zrušení poplatků postupuje pomalu (lhůta výboru 27. 11.) a ČRo uvádí, že vláda slíbila jiný model financování od ledna."
         }
       ]
     },
@@ -13138,6 +13640,51 @@
           ],
           "note": "Up 11 points: ČTK reports that states can notify the Commission until 30 Nov; the defence ministry is to bring a proposal to the cabinet.",
           "note_cs": "Nárůst o 11 bodů: podle ČTK mohou státy zájem oznámit Komisi do 30. listopadu; ministerstvo obrany má vládě předložit návrh."
+        },
+        {
+          "at": "2026-11-20T19:38:00+01:00",
+          "p": 0.7,
+          "combined": 0.701,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.72,
+              "reason": "Class: the cabinet formally approving an EU funding request that the PM has publicly said he wants, with an EU notification deadline (30 Nov) and a four-month window: ~0.8 (the first SAFE round was approved by cabinet, cz-government-item slip 0.21). Adjusted −0.4 log-odds for the finance ministry's reluctance and the risk that participation is notified without a published cabinet resolution.",
+              "at": "2026-11-20T19:38:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.72,
+              "reason": "The 19 Nov cabinet had no SAFE item, but the 30 Nov notification deadline and Babiš's wish for a larger share point to a resolution at the 23 Nov or following cabinet; risks are the lukewarm finance ministry and notification without a formal resolution, with a window to 31 Mar.",
+              "at": "2026-11-20T19:35:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.68,
+              "reason": "Case against: the cabinet skipped SAFE on 19 Nov, the finance ministry is lukewarm amid a consolidation drive, and the 30 Nov step may be a mere notification without a resolution; still Babiš wants a much larger share and four months remain for a formal cabinet approval.",
+              "at": "2026-11-20T19:20:18+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.73,
+              "reason": "Anchor: cabinet items slip ~23%, applied to an expected resolution before the 30 Nov notification deadline (cabinet meets Mon 23 Nov). The first round set a precedent and the window runs to 31 Mar. The finance ministry's coolness and no SAFE item on 19 Nov keep it from going higher.",
+              "at": "2026-11-20T19:20:44+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.65,
+              "reason": "30 Nov Commission notification deadline forces a decision and the cabinet approved round one; main risk is the government declining a second loan.",
+              "at": "2026-11-20T19:38:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. No cabinet resolution yet; the Commission's notification deadline is 30 Nov.",
+          "note_cs": "Týdenní přepočet. Usnesení vlády zatím není; lhůta pro oznámení Komisi je 30. listopadu."
         }
       ]
     },

@@ -1,0 +1,33 @@
+{
+  "claim": "golden-horse-23",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-20T19:38:37+01:00",
+  "finished_at": "2026-11-20T19:40:30+01:00",
+  "steps": [
+    {"n": 1, "action": "prior", "target": "slip_class culture-prize; reference class: Golden Horse most-nominated film tops the wins (strictly; tie = NO)",
+     "found": "From memory, the leading nominee usually but not always ends the night with the most wins, and ties count as NO, so the prior sits a little under one half.",
+     "belief": {"p": 0.45, "confidence": "low", "for": ["Leading nominees at the Golden Horse often take the most awards (general knowledge of past editions, unsourced)"], "against": ["Tie for most awards resolves NO", "Awards at Golden Horse are often spread across several films"], "open": ["Which categories the 11 nominations are in (craft vs top-line)", "How strong the second- and third-placed films are", "Any frontrunner commentary"]}},
+    {"n": 2, "action": "read", "target": "https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en",
+     "found": "Screen Daily (10 Nov 2026) calls Arrested Memory the 'awards frontrunner'; Variety (1 Oct 2026) reports it leads nominations with Shu Qi's 'Girl' close behind.",
+     "belief": {"p": 0.47, "confidence": "low", "for": ["Screen Daily, 10 Nov 2026: 'how Sabu created awards frontrunner Arrested Memory' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en", "Variety, 1 Oct 2026: Arrested Memory leads nominations — same feed"], "against": ["Variety, 1 Oct 2026: 'Girl' close behind — same feed", "Tie for most awards resolves NO"], "open": ["Category breakdown of the 11 nominations", "Nomination counts of rivals"]}},
+    {"n": 3, "action": "read", "target": "Google News article link for Variety 1 Oct 2026",
+     "found": "The Google News redirect returned no article text.",
+     "belief": {"p": 0.47, "confidence": "low", "for": ["Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en", "Variety, 1 Oct 2026: leads nominations — same feed"], "against": ["'Girl' close behind (Variety, 1 Oct 2026) — same feed", "Tie resolves NO"], "open": ["Category breakdown of the 11 nominations", "Nomination counts of rivals"]}},
+    {"n": 4, "action": "search", "target": "Arrested Memory Golden Horse 11 nominations Girl Kung Fu categories",
+     "found": "Results point to Screen Daily, SCMP and Focus Taiwan nominations reports of 1 Oct 2026 but give no breakdown in the snippets.",
+     "belief": {"p": 0.47, "confidence": "low", "for": ["Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en"], "against": ["'Girl' close behind — same feed", "Tie resolves NO"], "open": ["Read a full nominations report (SCMP, Screen Daily or Focus Taiwan)"]}},
+    {"n": 5, "action": "read", "target": "https://www.scmp.com/lifestyle/entertainment/article/3369500/golden-horse-awards-2026-nominations-full-arrested-memory-and-girl-lead-race",
+     "found": "SCMP refused scripted reading (HTTP 403).",
+     "belief": {"p": 0.47, "confidence": "low", "for": ["Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en"], "against": ["'Girl' close behind — same feed", "Tie resolves NO"], "open": ["Read Screen Daily or Focus Taiwan nominations report"]}},
+    {"n": 6, "action": "read", "target": "https://www.screendaily.com/news/sabus-arrested-memory-shu-qis-girl-lead-golden-horse-awards-2026-nominations/5220955.article",
+     "found": "Screen Daily refused scripted reading (HTTP 405).",
+     "belief": {"p": 0.47, "confidence": "low", "for": ["Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en"], "against": ["'Girl' close behind — same feed", "Tie resolves NO"], "open": ["Read Focus Taiwan nominations report"]}},
+    {"n": 7, "action": "read", "target": "https://focustaiwan.tw/culture/202610010022",
+     "found": "Arrested Memory's 11 nominations are feature, director, actor, supporting actor and seven craft categories; Girl has 10, Double Happiness and We Are Born Good 9 each, and the actor/actress races are led by other films.",
+     "belief": {"p": 0.42, "confidence": "low", "for": ["Focus Taiwan, 1 Oct 2026: 11 nominations incl. feature, director, actor, supporting actor, cinematography, art direction, makeup & costume, action choreography, song, editing, sound effects — https://focustaiwan.tw/culture/202610010022", "Craft-heavy genre film can collect several technical awards (action choreography, sound, makeup) — same", "Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en"], "against": ["Focus Taiwan, 1 Oct 2026: Girl 10, Double Happiness 9, We Are Born Good 9 nominations — crowded field likely to spread awards — https://focustaiwan.tw/culture/202610010022", "No nomination in leading actress; Double Happiness and We Are Born Good contest both acting races — same", "A tie for most awards (e.g. 3–3) resolves NO"], "open": ["Published predictions or critics' picks", "Nomination categories of Girl"]}},
+    {"n": 8, "action": "submit", "target": "", "found": "Submitted p_blind 0.42.",
+     "belief": {"p": 0.42, "confidence": "low", "for": ["Focus Taiwan, 1 Oct 2026: 11 nominations across top and craft categories — https://focustaiwan.tw/culture/202610010022", "Screen Daily, 10 Nov 2026: 'awards frontrunner' — https://news.google.com/rss/search?q=%22Arrested+Memory%22+Golden+Horse&hl=en"], "against": ["Focus Taiwan, 1 Oct 2026: three rivals with 9–10 nominations — https://focustaiwan.tw/culture/202610010022", "Tie resolves NO"], "open": ["Published predictions or critics' picks"]}}
+  ],
+  "p_blind": 0.42,
+  "p": 0.42
+}

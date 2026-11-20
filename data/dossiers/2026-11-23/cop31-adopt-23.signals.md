@@ -1,0 +1,7 @@
+# cop31-adopt-23 — signals
+- `node scripts/markets.mjs search "COP31"` (read 2026-11-20T18:08:37Z): one result, Manifold "CI2026: Will either China, India, or the US sign the 35 by 35 pledge at COP31?" Yes 0.10, volume ≈3,063 mana, liquidity 100, 49 traders, closes 2026-11-20T22:59Z — https://manifold.markets/FrankfurtSchool/ci2026-will-either-china-india-or-t — does NOT match (voluntary pledge, not adoption or its timing).
+- `node scripts/markets.mjs search "COP31 fossil fuel"` (read 2026-11-20T18:08:42Z): four unrelated Polymarket Kroger "identical sales without fuel" markets — no match.
+- `node scripts/markets.mjs search "climate summit agreement"` (read 2026-11-20T18:08:45Z): 37 unrelated weather/climate markets (El Niño RONI, river levels, snow, earthquakes, Climate Clock) — no match.
+- **Nothing on any market or platform matches this claim.**
+- Others' forecasts: Carbon Brief "When will COP31 end?" reader sweepstake (entries closed 23:59 Thu 19 Nov Antalya) — https://connect.carbonbrief.org/t/sweepstake-when-will-cop31-end/181 (published 2026-11-17T15:42Z, updated later; read 2026-11-20T18:06Z): "not one of the 230+ guesses have COP31 ending on time. The median estimate would see the gavel going down at 10:35pm on Saturday evening. The most pessimistic guesses include two for Tuesday at around 5am and 4pm". The median (22:35 Sat) lies inside this claim's window. Not a probability; spread chart not read in numbers. Note "end" = final gavel, which may come after the cover decision's adoption.
+- No bookmaker odds or published model found.

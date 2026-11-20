@@ -1,0 +1,72 @@
+# cop31-adopt-23
+- **Claim:** The COP31 plenary in Antalya adopts the conference's main cover decision by 23:59 Antalya time on Sunday 22 November 2026.
+- **Criterion:** YES if the overarching COP31 cover decision (the presidency decision drafted by Türkiye and Australia, called the "Antalya Declaration" in the 19 Nov draft and possibly the "Antalya Accord", under whatever title it is finally adopted, by the COP and/or the CMA) is gavelled through in a plenary between 07:00 on Sat 21 Nov and 23:59 on Sun 22 Nov 2026, Europe/Istanbul time (UTC+3), as shown by the UNFCCC record of the closing plenary / decisions page or by the gavel time reported by at least two of Reuters, AFP, AP, Carbon Brief, ENB (IISD), Climate Home News. NO if it has not been gavelled by 23:59 on Sun 22 Nov Antalya time (including when the plenary is still running or suspended at midnight, or when the conference ends without a cover decision). Adoption of other agenda items alone does not count. A late record does not make it NO: the time of the gavel decides.
+- **Event window:** 2026-11-21T07:00+03:00 – 2026-11-22T23:59+03:00 (Europe/Istanbul) = 2026-11-21T05:00+01:00 – 2026-11-22T21:59+01:00 Paris
+- **Evidence expected:** time-stamped live reporting of the closing plenary (Reuters, AFP, Carbon Brief, Climate Home, DW live); unfccc.int decisions page (advance unedited versions); ENB summary issue, announced for Tue 24 Nov. evidence_at 2026-11-23T01:00+01:00.
+- **Deadline (resolves by):** 2026-11-24T05:00+01:00
+- **Written at:** 2026-11-20T18:20Z (21:20 Antalya, Fri 20 Nov)
+
+## STATUS AT WRITING — NOT ADOPTED ON FRIDAY (as of 18:09Z / 21:09 Antalya)
+- The conference passed its scheduled close (18:00 local, 15:00 UTC, Fri 20 Nov) without a deal; no source read reports a third draft of the cover decision released or a closing plenary convened as of 18:09Z.
+- **Edge for the morning desk:** if the cover decision is gavelled overnight before 07:00 Sat Antalya (05:00 Paris = freeze), it falls OUTSIDE this window and the claim would be NO by construction; the morning desk will know this at the freeze and must drop or rewrite the claim. No source suggests an overnight adoption: the third draft was still awaited and a fourth draft was expected by COP veterans (Carbon Brief, below).
+
+## Schedule
+- Official close passed: DW live, 20 Nov https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516 (published 2026-11-20T09:52Z, live page; read 2026-11-20T18:06Z) "As of the top of this hour, the session has officially gone past its scheduled end time of 1500 GMT/UTC on Friday, or 6 p.m. local time on site in Turkey." and "Like in previous years, the climate summit is likely to be extended until a consensus is reached".
+- Reuters, 20 Nov (via WHTC) https://whtc.com/2026/11/20/cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels/ (published 2026-11-20T15:04Z, read 2026-11-20T18:06Z) "The COP31 climate conference slipped into overtime on Friday" ... "A new version was expected later on Friday, but hopes of major changes in tone were not high."
+- AFP via Manila Times https://www.manilatimes.net/2026/11/21/world/americas-emea/crunch-time-for-cop31-but-no-agreement-in-sight/2474972 (published 2026-11-20T16:04Z, read 2026-11-20T18:08Z) "the summit appeared poised to extend into the weekend."
+- No announced time for the closing plenary found in any readable source. UNFCCC pages (unfccc.int/cop31, live-updates archive) render empty to the scripted reader.
+
+## Facts
+- Third draft: expected Friday, not yet seen. Carbon Brief Connect https://connect.carbonbrief.org/t/23-countries-call-for-cop31-cover-text-to-include-transition-away-from-fossil-fuels/193 (published 2026-11-20T09:07Z, read 18:06Z) "A third draft of the cover decision is expected to be released today." Carbon Brief DeBriefed https://www.carbonbrief.org/debriefed-20-november-2026-deal-distant-fossil-fuel-fractions-coalitions-seek-progress (published 2026-11-20T13:23Z, modified 16:06Z, read 18:06Z) "A third draft is due later today. COP veterans told Carbon Brief to expect a fourth draft before the close." Carbon Brief Connect 16:13Z "As we await new draft texts for the cover decision, just transition work programme, global goal on adaptation and more" (https://connect.carbonbrief.org/t/civil-society-hits-out-at-terrible-cop-that-is-abject-failure/198, read 18:06Z).
+- ENB, 20 Nov issue (covering Thu 19 Nov) https://enb.iisd.org/sites/default/files/2026-11/enb12911e.pdf (dated 2026-11-20, downloaded 2026-11-20T18:07Z) "without a stocktaking plenary, few seemed to have a clear picture of where items stand ... There were hints of items being held hostage to one another and procedural outcomes that would merely 'kick the can down the road.' A new iteration of draft texts published in the afternoon featured streamlined decisions with significantly fewer brackets, but many noted that they were still unlikely to be agreed."; "technical and ministerial consultations continued into the night".
+- Presidency stance: Bowen (AFP, Manila Times above) "We will be consulting and negotiating until it is very clear to us that we have a consensus"; (DW live) pledged to keep working "for as long as it takes, to get the job done" ... "no one has said to me let's give up and go home".
+- Blocking threats / hold-outs:
+  - Panama letter (19 Nov): "Panama will not join any consensus, and will formally object in the closing plenaries, to the adoption of any decision that does not lead to an outcome satisfactory to our principles and our values"; demands include "Global oil production must be capped at current levels" — Carbon Brief Connect https://connect.carbonbrief.org/t/panama-will-formally-object-to-cop31-outcome-without-oil-cap-finance-renewable-electrification/189 (published 2026-11-19T12:55Z, read 2026-11-20T18:06Z). Navarro, 20 Nov: "It is not acceptable to have a COP or a cover document that does not even mention fossil fuels, and we simply will not put up with it" — Reuters (WHTC above).
+  - Nine countries reject the text as it stands: Climate Home Bulletin Day 11 https://www.climatechangenews.com/2026/11/20/cop31-bulletin-day-11-best-cop-worst-cop-weary-negotiators-seek-to-strengthen-outcome/ (published 2026-11-20T10:08Z, modified 17:21Z, read 18:09Z; body paywalled) "Panama, France, Belgium, Finland, Sweden, Spain, Vanuatu, Cote d'Ivoire and Guatemala said they would not accept the text as it is, and insisted it must comply with six main demands."
+  - 23 countries (fronted by the Netherlands; incl. DE, FR, UK, ES, BR, Indonesia, Panama, Pacific states) demand "transitioning away from fossil fuels" be re-added — Carbon Brief Connect (above, 09:07Z).
+  - EU: an EU official called the draft "not acceptable and not ambitious enough" ... "We don't want this COP to become a 'fossil' COP" — RTÉ https://www.rte.ie/news/world/2026/1120/1599970-cop31-turkey/ (modified 2026-11-20T15:48Z, read 18:06Z). No report found of an explicit EU threat to walk out or to block adoption.
+  - Producers: drafts stripped of fossil references "following objections from Saudi Arabia and other major oil and gas producers"; "OPEC members Saudi Arabia and Venezuela have both made a case for a future role for fossil fuels in their official speeches" — Reuters (WHTC above). Arab Group "firmly resisted '35 by 35', insisting that the cover decision should not target any fuels or sectors" but wants CCUS references — Carbon Brief Connect https://connect.carbonbrief.org/t/cop31-cover-text-carbon-capture-and-storage/195 (published 2026-11-20T11:53Z, read 18:06Z). Earlier: Arab Group and Russia rejected the first draft; LMDC called the fossil roadmap a red line (Climate Home Day 8, via 2026-11-22 dossier). ENB 20 Nov: "a few Parties block any references to it [TAFF] in the cover decision negotiations".
+  - Other open files: IPCC timing (Saudi Arabia, India want 2029) — AFP (Manila Times above); adaptation finance tripling baseline, just transition mechanism — "Both draft texts are wholly contained in brackets" (Carbon Brief DeBriefed above); CCUS numbers in square brackets (Carbon Brief Connect 11:53Z).
+- Possible bridge: China–Australia joint statement (Xinhua, 20 Nov) welcomes 35% electrification by 2035 "on a voluntary basis"; it "does not mention finance or fossil fuels" — Carbon Brief Connect https://connect.carbonbrief.org/t/china-australia-joint-climate-statement-endorses-35-by-35/199 (published 2026-11-20T17:30Z, read 18:06Z).
+- Mood: CAN "rejecting what is currently on the table"; Adow "worst COP ever" — DW live (above). LDC spokesperson (Sierra Leone): "Ministers from LDCs have requests on the table for the presidency" — DW live.
+- Every COP since 2009 adopted a main decision eventually (Ara, 19 Nov, via 2026-11-22 dossier).
+
+## Base rate
+Class: COP main decision adopted in [07:00 day+1, 23:59 day+2] local, where day = scheduled last day. From the COP21–COP30 record in data/dossiers/2026-11-22/cop31-adopt-22.md (Carbon Brief key-outcomes pages, read 2026-11-18/19):
+- Adopted by 23:59 on day+2: **10/10** (COP21 Sat; COP22 Fri; COP23 05:30 Sat; COP24 late Sat; COP25 13:55 Sun; COP26 23:27 Sat; COP27 09:19 Sun; COP28 Wed day+1; COP29 05:31 Sun; COP30 Sat 20:44).
+- Conditional on no adoption on the scheduled day (this case; COP22 excluded): inside the window **8/9**; the exception COP23 (05:30 Sat) gavelled before 07:00 day+1, i.e. before this window would open. Latest finishes: COP25 ~44 h over (13:55 Sun, still inside a day+2 window).
+- Caveat: COP29 had no overarching "cover decision" as such (main outcome = NCQG decision); the earlier dossier counted its main decision. Pre-2015 overruns (Durban 2011 early Sun, Lima 2014 early Sun) also fit day+2 (general record, not re-verified). Copenhagen 2009: Accord only "taken note of" — the last COP without an adopted main outcome.
+
+## Schedule slip
+- slip_class: **other-scheduled** — `node scripts/refdata/slip.mjs other-scheduled` → "other-scheduled 0.07 7/101 0.069 [estimate]" (run 2026-11-20T18:08Z). Chosen over summit-or-visit (`summit-or-visit 0.04 0/35 0.007 [estimate]`), whose definition is "Summit, state visit or official meeting of leaders takes place as announced": here the conference is already under way and the question is the unscheduled timing of an overrun adoption; other-scheduled ("any other scheduled or firmly expected event") fits better and matches cop31-adopt-22. The COP overrun record above is the more relevant measure of slippage.
+- Signs of slippage beyond Sunday: third draft still not out ~3 h after scheduled close; a fourth draft expected; nine countries say they won't accept the text, Panama promises a formal objection in plenary; Arab Group/LMDC resist targeting fuels or sectors; finance, adaptation, JT mechanism texts fully bracketed (Carbon Brief); ENB: items "held hostage to one another".
+- Signs it lands by Sunday: presidency already cut the most contested items; Bowen negotiating "for as long as it takes"; China moving on 35x35 (voluntary); delegations' travel booked around a weekend close (DW live); the COP30 path (Saturday adoption without fossil language).
+
+## Risks
+- Sunday-night/Monday overrun (COP25/COP27/COP29 pattern pushed further), e.g. if the presidency issues a fourth and fifth draft Sunday.
+- Formal objection at the gavel (Panama; possibly others among the nine) — the presidency may gavel over a lone objection (COP28/COP29 precedent) or suspend the plenary.
+- No cover decision: the presidency drops the overarching text and adopts only agenda-item decisions → NO.
+- Pre-window adoption (before 07:00 Sat) → NO by construction (see status box).
+- Plenary opened Sunday evening and gavel after 00:00 Mon → NO.
+
+## Sources
+- https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516
+- https://whtc.com/2026/11/20/cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels/ (Reuters)
+- https://www.manilatimes.net/2026/11/21/world/americas-emea/crunch-time-for-cop31-but-no-agreement-in-sight/2474972 (AFP)
+- https://connect.carbonbrief.org/t/23-countries-call-for-cop31-cover-text-to-include-transition-away-from-fossil-fuels/193
+- https://connect.carbonbrief.org/t/panama-will-formally-object-to-cop31-outcome-without-oil-cap-finance-renewable-electrification/189
+- https://connect.carbonbrief.org/t/civil-society-hits-out-at-terrible-cop-that-is-abject-failure/198
+- https://connect.carbonbrief.org/t/china-australia-joint-climate-statement-endorses-35-by-35/199
+- https://connect.carbonbrief.org/t/cop31-cover-text-carbon-capture-and-storage/195
+- https://connect.carbonbrief.org/latest
+- https://www.carbonbrief.org/debriefed-20-november-2026-deal-distant-fossil-fuel-fractions-coalitions-seek-progress
+- https://www.climatechangenews.com/2026/11/20/cop31-bulletin-day-11-best-cop-worst-cop-weary-negotiators-seek-to-strengthen-outcome/ (intro only, paywall)
+- https://www.rte.ie/news/world/2026/1120/1599970-cop31-turkey/
+- https://enb.iisd.org/sites/default/files/2026-11/enb12909e.pdf, enb12910e.pdf, enb12911e.pdf (ENB 18–20 Nov issues, PDF)
+- https://gulfnews.com/world/countries-air-grievances-in-search-of-cop31-climate-deal-1.500752218 (AFP, 18 Nov; background)
+- https://unfccc.int/sites/default/files/resource/dt_cop31_cover_decision.pdf (first draft, last-modified 16 Nov; not used for content)
+- Google News RSS searches (COP31 when:1d / when:6h, third draft, Saudi, walk out); data/dossiers/2026-11-22/cop31-adopt-22.md (base-rate record re-used)
+- WebSearch (6 used across both claims): "COP31 Antalya third draft cover decision overtime plenary"; "COP31 new draft released Friday night fossil fuels EU Hoekstra Saudi Arabia"; "Cop31 live Antalya talks continue Saturday third draft cover text Bowen Kurum"; "\"COP31 Bulletin Day 11\" Climate Home"; "COP31 Arab Group Saudi Arabia reject fossil fuel language Friday EU \"walk away\" no deal Antalya"; "COP31 third draft cover decision published fossil fuels November 20 2026".
+
+## Unreachable
+- Guardian (theguardian.com/environment/cop31: "Client Challenge"; live blog not read); ENB HTML pages (HTTP 403; PDFs read instead); unfccc.int HTML pages (empty render); Reuters direct (by brief; read via WHTC); Politico Europe (by brief); rapporteur.com (403); dhakatribune.com (403); Climate Home Day 11 body (paywall); Euronews green front page (no COP links extracted); Al Jazeera: no 20 Nov text article found (video only).
