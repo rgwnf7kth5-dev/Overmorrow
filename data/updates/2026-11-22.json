@@ -1,0 +1,521 @@
+{
+ "edition": "2026-11-22",
+ "frozen_at": "2026-11-20T12:28:33+01:00",
+ "revisions": [
+  {
+   "claim": "nrol136-22",
+   "probability": 0.05,
+   "kind": "forecast",
+   "reason": "SpaceX scrubbed Thursday's USSF-317 launch and relisted it for 02:32 UTC on Saturday from the same Vandenberg pad, SLC-4E, about ten hours before NROL-136's only window, far quicker than the pad has ever been turned round (forecasters 0.07, 0.05, 0.10, 0.15, 0.15).",
+   "reason_cs": "SpaceX ve čtvrtek odvolal start mise USSF-317 a přeplánoval ho na sobotu na 2:32 UTC ze stejné rampy SLC-4E na Vandenbergu, asi deset hodin před jediným startovním oknem NROL-136; tak rychle se tato rampa k dalšímu startu nikdy nepřipravila (odhady prognostiků 0,07, 0,05, 0,10, 0,15, 0,15).",
+   "sources": [
+    {
+     "title": "KeepTrack Space Brief, 20 Nov 2026: SpaceX scrubs USSF-317",
+     "url": "https://keeptrack.space/space-brief/space-brief-2026-11-20"
+    },
+    {
+     "title": "Space Launch Schedule: USSF-317, Sat 21 Nov 02:32 UTC, SLC-4E",
+     "url": "https://www.spacelaunchschedule.com/launch/falcon-9-block-5-ussf-317/"
+    },
+    {
+     "title": "Orbital Radar: Falcon 9 NROL-136, SLC-4E, 21 Nov 12:30 UTC",
+     "url": "https://orbitalradar.com/launch/falcon-9-nrol-136"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "nrol136-22",
+   "at": "2026-11-20T12:28:33+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:24:31+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.07,
+     "reason_blind": "Ref class: Falcon 9 launch slip 0.22 (schedule-slip.json), swamped by the new fact: USSF-317 relisted at SLC-4E 21 Nov 02:32Z, 10 h before NROL-136. No Falcon pad has turned around in under about 2 days. Residual = listing errors.",
+     "at": "2026-11-20T12:24:33+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.07,
+     "p_held": 0.08,
+     "p_if_held": 0.85,
+     "reason": "No market. Timing fact (p_held), not the outcome. One 30-min NRO window per day, so the next try after Sat 12:30Z is Sun 12:30Z, outside the window. YES needs the USSF-317 pad/time listing to be wrong. Not silence-based: two trackers plus KeepTrack."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:25:00+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.04,
+     "reason_blind": "USSF-317 relisted Sat 02:32Z from SLC-4E; NROL-136 still listed 12:30Z from the same pad. SLC-4E turnaround record about two days. 30-min NRO window, next try outside the window. YES needs a pad swap or reorder; none reported.",
+     "at": "2026-11-20T12:25:18+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.05,
+     "p_held": 0.05,
+     "p_if_held": 1,
+     "reason": "New fact (pad conflict, not silence): USSF-317 now Sat 02:32Z at SLC-4E (KeepTrack 09:04Z, SLS, RLL API). Morning 0.73 assumed a 32 h gap; 10 h is far below the SLC-4E record. A USSF-317 scrub also blocks the pad. Small residual for a reorder or pad change."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-20T12:24:23+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.13,
+     "reason_blind": "Same-pad launches 10 h apart are physically implausible; even 32 h was aggressive. One try (Sat 04:30 PST). YES needs USSF-317 to stand down and NROL-136 to go first, or a pad-listing error.",
+     "at": "2026-11-20T12:24:29+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.1,
+     "p_held": 0.1,
+     "p_if_held": 1,
+     "reason": "No signal. RocketLaunch.Live 11:24Z: USSF-317 entry modified 20 Nov 10:45Z (SLC-4E, 21 Nov 02:32Z); NROL-136 entry unmodified since 18 Nov, a stale listing. Residual YES: USSF-317 stood down and NROL-136 moved ahead. Timing fact: p_held only."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-20T12:26:12+01:00",
+     "inputs": [
+      "dossier",
+      "signals",
+      "overnight-facts",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p": 0.15,
+     "p_held": 0.15,
+     "p_if_held": 0.99,
+     "reason": "No matching market. Timing fact: USSF-317 relisted from SLC-4E at 21 Nov 02:32Z (KeepTrack 09:04Z; SLS, RLL); NROL-136 still listed 10 h later from the same pad. SLC-4E turnaround has not been under about 2 days, so both cannot fly. p_held 0.74 to 0.15.",
+     "rounds": [
+      {
+       "p": 0.73,
+       "at": "2026-11-20T12:24:18+01:00",
+       "reason": "Before the overnight facts: dossier, signals and reference data."
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-20T12:23:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.7,
+     "reason_blind": "NET Sat 04:30 PST inside the window; NRO Falcon 9 launches usually go within a day or two of NET.",
+     "at": "2026-11-20T12:23:45+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "union-of-facts",
+      "signals"
+     ],
+     "p": 0.15,
+     "p_held": 0.15,
+     "p_if_held": 1,
+     "reason": "USSF-317 relisted Sat 02:32Z from SLC-4E, 10 h before NROL-136. SLC-4E turnaround is far longer than 10 h, so NROL-136 almost surely slips past the window. Only path: a listing error or USSF-317 moving off the pad.",
+     "at_note": "The outsider stamped its steps 12:24:07 and 12:30:00, later than the clock when its report was received (about 12:23:45, run time 20 s); the receipt time is used."
+    }
+   ],
+   "combined": 0.0963,
+   "calibrated": 0.0538,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1557,
+     "b": 1.3496
+    },
+    "version": "2026-11-20"
+   },
+   "spread": 0.1,
+   "market_search": "markets.mjs search \"COP31\", \"COP31 agreement\", \"NROL\", \"SpaceX launch\", \"Vandenberg\" (anchor, 2026-11-20T11:24:19Z–11:25:23Z): no market matches any of the three claims; the only COP31 market (Manifold, China/India/US 35x35 pledge) is a different question.",
+   "market": null,
+   "decomposition": {
+    "morning": {
+     "p_held": 0.617,
+     "p_if_held": 1
+    },
+    "afternoon": {
+     "p_held": 0.05,
+     "p_if_held": 1
+    },
+    "factor": "p_held",
+    "note": "The new fact is about timing only: the pad is very unlikely to be free for NROL-136's single in-window attempt (Sat 04:30 PST) because USSF-317 is relisted from the same pad SLC-4E about 10 h earlier. It is a reported schedule change, not silence or a market move. Morning factors as recorded in the edition (p_held there was scaled from base-rate and adversarial); afternoon p_held set to the published figure."
+   },
+   "fact_timing_note": "The USSF-317 relisting appeared on trackers at 03:10Z (Space Launch Schedule), before the morning freeze, but was not in the morning dossier; the first report of the scrub and new time is KeepTrack, published 09:04Z, and RocketLaunch.Live modified its USSF-317 entry at 10:45Z.",
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-20T12:27:00+01:00",
+    "case_for_morning": "The NROL-136 listings were still 'Go, 21 Nov 12:30Z, SLC-4E, no slips' (Orbital Radar, modified 20 Nov). The best path for the morning figure: SpaceX puts the NRO mission first. If USSF-317 stands down again or is moved behind NROL-136 (customer priority, or more trouble after Thursday's unexplained scrub), NROL-136 keeps its Sat 04:30 PST slot. Smaller paths: a pad listing is wrong, or the pad is recycled in a record ~10 h. None of these is reported; no source puts NROL-136 on SLC-6.",
+    "case_for_larger": "NROL-136 has one 30-minute attempt in the window and no next-day margin. A ~10 h same-pad recycle has never been done at SLC-4E. If USSF-317 scrubs again its next slot (Sat 18:32 PST) still blocks the pad. Weather (49% rain forecast for USSF-317) adds risk. A fair figure could be 2–3%.",
+    "verdict": "The revision is right; the case for the morning figure is much weaker and rests on an unreported reorder or a stale pad listing, both weighed by the forecasters. It is a timing fact (p_held). 5%, the calibrated figure, is published; 3–5% would be defensible.",
+    "unweighed_facts": false
+   }
+  },
+  {
+   "claim": "cop31-adopt-22",
+   "at": "2026-11-20T12:28:33+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:24:31+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.55,
+     "reason_blind": "COP21-30 main decision gavelled by 23:59 on day+1: 7/10, last six 3/6. Deadlock on final day, weekend overrun expected (fits both outcomes), no third draft by 11:20Z, EU rejection unconfirmed. About 7 of 41 h used: silence does not count (2a.1).",
+     "at": "2026-11-20T12:24:33+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.55,
+     "p_held": 0.55,
+     "p_if_held": 1,
+     "reason": "No matching market (Manifold 35x35 pledge is a different question). Slight cut from 0.61: CNN, Climate Current and Streamline describe deep deadlock; EU hard line on fossil language raises the risk of another draft round into Sunday."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:25:00+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.52,
+     "reason_blind": "Base about 60%. Deep deadlock, third draft due 'later' Friday, Panama veto threat, EU 'not acceptable' (AFP). Points to late Saturday or Sunday.",
+     "at": "2026-11-20T12:25:18+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.55,
+     "p_held": 0.55,
+     "p_if_held": 1,
+     "reason": "AFP quotes an EU official calling the draft 'not acceptable and not ambitious enough'; third draft not yet out; Panama reiterates veto threat. 'EU agreed to reject' is aggregator-only. Few hours elapsed, no silence penalty. Small timing cut."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-20T12:24:23+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.5,
+     "reason_blind": "Final day in 'deep deadlock', no third draft by 14:20 local, overrun expected. Base 7/10 but 3/6 recent, two YES within an hour of midnight.",
+     "at": "2026-11-20T12:24:29+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.52,
+     "p_held": 0.52,
+     "p_if_held": 1,
+     "reason": "No market. No third draft yet is silence under half the window: not a fact. Three outlets: spill into the weekend (Saturday still YES). Unconfirmed EU rejection raises Sunday risk. COP30 had the same pattern and gavelled Saturday."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-20T12:26:12+01:00",
+     "inputs": [
+      "dossier",
+      "signals",
+      "overnight-facts",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p": 0.59,
+     "p_held": 0.59,
+     "p_if_held": 1,
+     "reason": "No market. Base 7/10, cut for Panama's veto letter and a non-final draft. Deadlock and 'braced for weekend' (CNN, Streamline), no third draft by 11:20Z: consistent with the Saturday finish already priced. Silence guard applies. Small trim.",
+     "rounds": [
+      {
+       "p": 0.61,
+       "at": "2026-11-20T12:24:18+01:00",
+       "reason": "Before the overnight facts: dossier, signals and reference data."
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-20T12:23:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.75,
+     "reason_blind": "COPs usually gavel within a day of the scheduled close; Saturday overtime is customary.",
+     "at": "2026-11-20T12:23:45+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "union-of-facts",
+      "signals"
+     ],
+     "p": 0.68,
+     "p_held": 0.68,
+     "p_if_held": 1,
+     "reason": "Deadlocked, expected into the weekend; EU rejects the draft, finance target dropped. Window gives about a day of overtime; Sunday-early finish is a real risk; the presidency has a strong incentive to close.",
+     "at_note": "The outsider stamped its steps 12:24:07 and 12:30:00, later than the clock when its report was received (about 12:23:45, run time 20 s); the receipt time is used."
+    }
+   ],
+   "combined": 0.5793,
+   "calibrated": 0.6428,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1557,
+     "b": 1.3496
+    },
+    "version": "2026-11-20"
+   },
+   "spread": 0.16,
+   "market_search": "markets.mjs search \"COP31\", \"COP31 agreement\", \"NROL\", \"SpaceX launch\", \"Vandenberg\" (anchor, 2026-11-20T11:24:19Z–11:25:23Z): no market matches any of the three claims; the only COP31 market (Manifold, China/India/US 35x35 pledge) is a different question.",
+   "market": null,
+   "research": {
+    "at": "2026-11-20T12:28:33+01:00",
+    "question": "Has the COP31 presidency released a third draft of the cover decision, or set a time for the closing plenary, since the morning freeze?",
+    "finding": "No third draft and no plenary time found as of 12:28 Paris (11:28Z). AFP (09:09Z) says the next draft is expected later on Friday and quotes an EU official calling the current draft 'not acceptable and not ambitious enough'; the report that EU ministers agreed to reject any text without the Dubai fossil-fuel language comes only from an aggregator and was not confirmed. Not decisive; spread kept.",
+    "sources": [
+     "https://sg.news.yahoo.com/un-climate-talks-enter-crunch-020142914.html",
+     "https://www.rte.ie/news/world/2026/1120/1599970-cop31-turkey/",
+     "https://edition.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification"
+    ]
+   },
+   "decomposition": {
+    "morning": {
+     "p_held": 0.52,
+     "p_if_held": 1
+    },
+    "afternoon": {
+     "p_held": 0.64,
+     "p_if_held": 1
+    },
+    "factor": "p_held",
+    "note": "All new facts are about timing (deadlock, overrun into the weekend expected). Silence (no third draft yet) does not count under 2a.1: about 7 of 41 hours used. The recalibrated figure (0.64) differs from the morning 0.61 by less than the display threshold; the morning figure stands for readers."
+   }
+  },
+  {
+   "claim": "cop31-fossil-22",
+   "at": "2026-11-20T12:28:33+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:24:31+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.1,
+     "reason_blind": "Nested in adoption (0.55). Words in text 3/5 for COP26-30, 0/2 recently; restored after removal 1/2. Thursday draft has none.",
+     "at": "2026-11-20T12:24:33+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.1,
+     "p_held": 0.55,
+     "p_if_held": 0.18,
+     "reason": "No market. Draft still has no fossil words. EU pressure raises the chance of restoring them, but restoration likely means a longer fight and adoption after Saturday. 0.55 x 0.18."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-20T12:25:00+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.11,
+     "reason_blind": "Second draft removed every mention; presidency defends the cut; Arab Group, Russia, LMDC oppose. COP30 ended without. About 0.2 if adopted x 0.52.",
+     "at": "2026-11-20T12:25:18+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.11,
+     "p_held": 0.55,
+     "p_if_held": 0.2,
+     "reason": "EU 'not acceptable' (AFP) and the coalition briefing (RTÉ) slightly raise the chance of restored TAFF wording, but a fossil reference likely means a later gavel. Effects offset: 0.55 x 0.2."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-20T12:24:23+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.08,
+     "reason_blind": "Needs adoption (~0.5) and the words restored (~0.16). Arab Group/LMDC/Russia red line; COP30 not restored.",
+     "at": "2026-11-20T12:24:29+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.08,
+     "p_held": 0.52,
+     "p_if_held": 0.16,
+     "reason": "No signal. EU hard line cuts both ways: raises restored wording if adopted, lowers adoption by Saturday midnight. Net near morning."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-20T12:26:12+01:00",
+     "inputs": [
+      "dossier",
+      "signals",
+      "overnight-facts",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p": 0.1,
+     "p_held": 0.59,
+     "p_if_held": 0.17,
+     "reason": "No market. Needs adoption (0.59) and the words restored. COP30 dropped and did not restore; COP28 did. Barbut 'black mark' and unconfirmed EU rejection push toward restoring, but also raise overrun risk. Net unchanged.",
+     "rounds": [
+      {
+       "p": 0.1,
+       "at": "2026-11-20T12:24:18+01:00",
+       "reason": "Before the overnight facts: dossier, signals and reference data."
+      }
+     ]
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-20T12:23:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.35,
+     "reason_blind": "Draft (Monday's, as found) says 'accelerated action to phase out fossil fuels', contested by Gulf states; COP30 dropped the term.",
+     "at": "2026-11-20T12:23:45+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "union-of-facts",
+      "signals"
+     ],
+     "p": 0.35,
+     "p_held": 0.68,
+     "p_if_held": 0.5,
+     "reason": "Thursday draft removed fossil wording ('irreversible global transition'). EU and others insist on the Dubai language; a compromise might recall it in a preamble. 0.68 x 0.5.",
+     "at_note": "The outsider stamped its steps 12:24:07 and 12:30:00, later than the clock when its report was received (about 12:23:45, run time 20 s); the receipt time is used."
+    }
+   ],
+   "combined": 0.1291,
+   "calibrated": 0.0816,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.1557,
+     "b": 1.3496
+    },
+    "version": "2026-11-20"
+   },
+   "spread": 0.27,
+   "market_search": "markets.mjs search \"COP31\", \"COP31 agreement\", \"NROL\", \"SpaceX launch\", \"Vandenberg\" (anchor, 2026-11-20T11:24:19Z–11:25:23Z): no market matches any of the three claims; the only COP31 market (Manifold, China/India/US 35x35 pledge) is a different question.",
+   "market": null,
+   "research": {
+    "at": "2026-11-20T12:32:00+01:00",
+    "question": "Has the COP31 presidency released a third draft of the cover decision, or set a time for the closing plenary, since the morning freeze?",
+    "finding": "No third draft and no plenary time found as of 12:28 Paris (11:28Z). AFP (09:09Z) says the next draft is expected later on Friday and quotes an EU official calling the current draft 'not acceptable and not ambitious enough'; the report that EU ministers agreed to reject any text without the Dubai fossil-fuel language comes only from an aggregator and was not confirmed. Not decisive; spread kept.",
+    "sources": [
+     "https://sg.news.yahoo.com/un-climate-talks-enter-crunch-020142914.html",
+     "https://www.rte.ie/news/world/2026/1120/1599970-cop31-turkey/",
+     "https://edition.cnn.com/2026/11/20/climate/cop31-talks-fossil-fuels-finance-electrification"
+    ]
+   },
+   "disagreement": {
+    "cause": "inputs",
+    "note": "The outsider (0.35) worked without the dossier and first found Monday's draft with 'accelerated action to phase out fossil fuels'; after the union of facts it kept p_if_held 0.5. The other four (0.08–0.11) weigh the COP30 precedent and the Arab Group/LMDC/Russia red line. Spread 0.27 exceeds the 0.25 limit; research found no third draft, so the spread is kept and recorded. Calibrated 0.08 against morning 0.10: below the display threshold, morning figure stands."
+   },
+   "decomposition": {
+    "morning": {
+     "p_held": 0.51,
+     "p_if_held": 0.196
+    },
+    "afternoon": {
+     "p_held": 0.57,
+     "p_if_held": 0.14
+    },
+    "factor": "p_if_held",
+    "note": "No new fact on the text itself; EU objections raise the chance of restored wording but are tied to a later gavel. Below threshold."
+   }
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "investing.com (Reuters copy)",
+   "energeticcity.ca",
+   "princegeorgecitizen.com",
+   "ktla.com",
+   "forum.nasaspaceflight.com",
+   "allafrica.com",
+   "spaceflightnow.com"
+  ],
+  "not_revised": "uk-psnb-22: ONS published £17.0bn at 07:00 GMT; the outcome is known, left to the resolver. Other claims: no material new fact by 12:30."
+ }
+}
