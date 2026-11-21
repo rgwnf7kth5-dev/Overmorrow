@@ -220,8 +220,7 @@
     "ukmto.org (403)",
     "euronews.com (406 on some pages)",
     "bx1.be (403)",
-    "enb.iisd.org (403)",
-    "external providers openai, google, xai: all 57 calls exited 3 with an authentication error (no API key attached by the proxy; one retry each confirmed); the shadow trials of other vendors' models, with and without their own search, did not run"
+    "enb.iisd.org (403)"
   ],
   "run": {
     "started_at": "2026-11-21T18:38:00+01:00",
@@ -731,9 +730,61 @@
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-24/cz-fuel-24.belief.json"
               },
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable.",
-              "research": []
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:53:24Z",
+                  "p_blind": 0.46,
+                  "p": 0.42,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:53:40Z",
+                  "p_blind": 0.42,
+                  "p": 0.36,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:57:42Z",
+                  "p_blind": 0.34,
+                  "p": 0.28,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T20:04:55Z",
+                  "p": 0.56,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/cz-fuel-24.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T20:06:22Z",
+                  "p": 0.33,
+                  "searches": 14,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/cz-fuel-24.research.json"
+                }
+              ]
             },
             "disagreement": null,
             "research_note": "Spread 24 points (anchor 0.33 to evidence 0.57). Research (6 searches) found no new fact: Monday's programme on odok.cz stays unreadable and no minister has spoken since 19 Nov. The spread stands; the basis line must say the evidence is mixed (whether the item is taken on 23 or 30 Nov, and whether the government extends or lets the caps lapse as in July).",
@@ -952,9 +1003,61 @@
                 "searches": 2,
                 "trace": "data/dossiers/2026-11-24/cz-safe-24.belief.json"
               },
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable.",
-              "research": []
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:53:23Z",
+                  "p_blind": 0.31,
+                  "p": 0.3,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:53:33Z",
+                  "p_blind": 0.28,
+                  "p": 0.25,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:56:07Z",
+                  "p_blind": 0.12,
+                  "p": 0.15,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T20:04:59Z",
+                  "p": 0.28,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/cz-safe-24.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T20:06:00Z",
+                  "p": 0.17,
+                  "searches": 12,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/cz-safe-24.research.json"
+                }
+              ]
             },
             "research_note": "Spread 19 points. Research found nothing new: no report that the Defence Ministry has submitted the SAFE material or that it is on Monday's programme. The spread stands; evidence mixed.",
             "watch_note": "Board question cz-safe-second-round (approval by 31 Mar 2027) stays at 0.70; different deadline, not linked."
@@ -1175,8 +1278,41 @@
             "spread": 0.06,
             "blind_combined": 0.564,
             "shadow": {
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable."
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:53:33Z",
+                  "p_blind": 0.67,
+                  "p": 0.68,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:53:48Z",
+                  "p_blind": 0.64,
+                  "p": 0.65,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:57:47Z",
+                  "p_blind": 0.64,
+                  "p": 0.7,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -1595,8 +1731,41 @@
               "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
             },
             "shadow": {
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable."
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:53:44Z",
+                  "p_blind": 0.15,
+                  "p": 0.13,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:54:09Z",
+                  "p_blind": 0.08,
+                  "p": 0.06,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:56:06Z",
+                  "p_blind": 0.07,
+                  "p": 0.12,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             },
             "open_because": {
               "why": "De Wever tendered his government's resignation on 2 Nov; the King kept it in abeyance and on 16 Nov gave him one more week, to Mon 23 Nov, when he reports back for the fourth time this month with no five-party budget deal; acceptance is one of the options before the King.",
@@ -2063,8 +2232,41 @@
               "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
             },
             "shadow": {
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable."
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:54:02Z",
+                  "p_blind": 0.68,
+                  "p": 0.82,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:54:29Z",
+                  "p_blind": 0.72,
+                  "p": 0.84,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:56:33Z",
+                  "p_blind": 0.64,
+                  "p": 0.8,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2295,8 +2497,41 @@
               "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
             },
             "shadow": {
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable."
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:54:42Z",
+                  "p_blind": 0.91,
+                  "p": 0.91,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:55:06Z",
+                  "p_blind": 0.88,
+                  "p": 0.88,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:57:49Z",
+                  "p_blind": 0.78,
+                  "p": 0.81,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2535,9 +2770,61 @@
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-24/ariane-24.belief.json"
               },
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable.",
-              "research": []
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:56:17Z",
+                  "p_blind": 0.79,
+                  "p": 0.81,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:56:33Z",
+                  "p_blind": 0.75,
+                  "p": 0.75,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T19:58:24Z",
+                  "p_blind": 0.74,
+                  "p": 0.73,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T20:05:29Z",
+                  "p": 0.88,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/ariane-24.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T20:06:16Z",
+                  "p": 0.76,
+                  "searches": 9,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/ariane-24.research.json"
+                }
+              ]
             }
           }
         }
@@ -2764,8 +3051,41 @@
               "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
             },
             "shadow": {
-              "external": [],
-              "external_note": "All three providers (openai, google, xai) failed with an authentication error (exit 3; no key attached by the proxy); recorded in meta.unreachable."
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-21T19:56:44Z",
+                  "p_blind": 0.77,
+                  "p": 0.73,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T19:57:01Z",
+                  "p_blind": 0.78,
+                  "p": 0.78,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-21T20:04:33Z",
+                  "p_blind": 0.66,
+                  "p": 0.66,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3217,5 +3537,22 @@
       "why": "No checkable outcome on Monday that is not a forecast of deaths; leads only Al Jazeera.",
       "source": "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
     }
-  ]
+  ],
+  "external_run": {
+    "at": "2026-11-21T20:06:22Z",
+    "providers": [
+      "openai gpt-6.2-sol",
+      "google gemini-4-argon",
+      "xai grok-4.7"
+    ],
+    "binary_claims": 8,
+    "forecasts": 24,
+    "contested": [
+      "cz-fuel-24",
+      "cz-safe-24",
+      "ariane-24"
+    ],
+    "research": 6,
+    "failed": []
+  }
 }
