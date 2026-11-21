@@ -400,7 +400,7 @@ function checkShadow(c, cw, frozen) {
       else if (late(e.at)) err(cw, `forecast.shadow.external ${e.provider} recorded after the freeze`);
     }
   }
-  // Other vendors' models with their own search (from 22 Nov 2026). Structure only: a provider that searched more than
+  // Other vendors' models with their own search (from 21 Nov 2026). Structure only: a provider that searched more than
   // asked is a matter for the report, not a reason to stop an edition.
   if (s.research !== undefined) {
     if (!Array.isArray(s.research)) err(cw, 'forecast.shadow.research must be a list');

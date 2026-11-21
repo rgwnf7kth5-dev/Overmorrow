@@ -293,7 +293,7 @@
       ],
       "research": {
         "enabled": true,
-        "adopted": "2026-11-22",
+        "adopted": "2026-11-21",
         "claims_max": 3,
         "searches_max": 6,
         "band": [
@@ -308,7 +308,7 @@
       "conformal": "Empirical 80% ranges for number forecasts: consensus plus or minus the 80% quantile of past absolute surprises in scale units, from results known before the freeze; at least min_past results.",
       "sequential": "One extra forecaster per edition for at most claims_max binary claims whose round-one figure lies inside band (widest spread first): no dossier, a research loop of at most steps_max steps and searches_max searches, a written belief state after every step. Skipped when the search budget is short.",
       "external": "Forecasters on models of other vendors through OpenAI-compatible endpoints (scripts/external.mjs). Switched on by the publisher on 21 November 2026 with OpenAI, Google and xAI. auth \"proxy\": each key is a network secret of the runs' cloud environment (Default), attached by the environment's proxy to requests for the provider's host; no key is in the repository, the prompts or the machine. Model names as listed by each provider on that day.",
-      "external_research": "Own search (from the edition prepared on 22 November 2026): for at most claims_max binary claims inside band (the same claims as the sequential researcher: widest spread first), each provider gets only the date, the claim, the criterion and the deadline and searches for itself with its vendor's search tool (OpenAI web search; xAI web and X search; Google Search), at most searches_max searches per claim. No dossier, no signals, no other forecaster's figure. Recorded in forecast.shadow.research; scored beside the published figure like every shadow trial. Ceiling per day: claims_max x providers calls, claims_max x providers x searches_max searches."
+      "external_research": "Own search (from the edition prepared on 21 November 2026): for at most claims_max binary claims inside band (the same claims as the sequential researcher: widest spread first), each provider gets only the date, the claim, the criterion and the deadline and searches for itself with its vendor's search tool (OpenAI web search; xAI web and X search; Google Search), at most searches_max searches per claim. No dossier, no signals, no other forecaster's figure. Recorded in forecast.shadow.research; scored beside the published figure like every shadow trial. Ceiling per day: claims_max x providers calls, claims_max x providers x searches_max searches."
     }
   },
   "nonevent": {

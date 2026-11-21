@@ -7,7 +7,7 @@
 //   node scripts/external.mjs check                       which providers are ready (key, model, enabled)
 //   node scripts/external.mjs forecast <provider> <file>  one forecast; <file> holds the claim, criterion, deadline
 //                                                          and the facts the forecaster may use (plain text)
-//   node scripts/external.mjs research <provider> <file>  one forecast from the model's own search (from 22 Nov 2026,
+//   node scripts/external.mjs research <provider> <file>  one forecast from the model's own search (from 21 Nov 2026,
 //                                                          config.shadow.external.research); <file> holds only today's
 //                                                          date, the claim, the criterion and the deadline
 // Output of `forecast` is one JSON object: {provider, model, at, p, reason}.
