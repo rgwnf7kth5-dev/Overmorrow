@@ -76,6 +76,10 @@ PROBABILITY: 0.NN`;
 const researchState = (p) => (state(p) !== 'ready' ? state(p) : !RES.enabled ? 'disabled in config.shadow.external.research.enabled' : !p.research?.api ? 'no research settings for this provider' : 'ready');
 const uniq = (xs) => [...new Set(xs.filter((x) => typeof x === 'string' && /^https?:\/\//.test(x)).map((x) => x.replace(/[?&]utm_source=[^&]*$/, '')))];
 
+/** The text blocks of an Interactions API answer, and their text. */
+const interactionBlocks = (d) => (d.steps || d.outputs || d.output || []).flatMap((i) => (i.type === 'model_output' ? i.content || [] : i.type === 'text' ? [i] : []));
+const interactionText = (d) => interactionBlocks(d).map((c) => c.text || '').join('\n') || d.output_text || '';
+
 /** One request in the provider's own format; returns {text, searches, sources, model}. */
 async function research(p, text) {
   const cap = RES.searches_max || 6, base = p.base_url.replace(/\/$/, ''), key = viaProxy(p) ? null : process.env[p.key_env];
@@ -91,11 +95,11 @@ async function research(p, text) {
   }
   if (p.research.api === 'interactions') {
     // Google: the Interactions API with Google Search. It has no cap on searches, so the instruction carries it.
-    const d = await post(p.research.url, key, { model: p.model, input: `${researchInstruction(cap)}\n\n${text}`, tools: p.research.tools }, 600);
+    const d = await post(p.research.url || p.interactions_url, key, { model: p.model, input: `${researchInstruction(cap)}\n\n${text}`, tools: p.research.tools }, 600);
     const e = Array.isArray(d) ? d[0]?.error : d.error;
     if (e) throw new Error(JSON.stringify(e).slice(0, 300));
     const items = d.steps || d.outputs || d.output || [];
-    const blocks = items.flatMap((i) => (i.type === 'model_output' ? i.content || [] : i.type === 'text' ? [i] : []));
+    const blocks = interactionBlocks(d);
     const queries = items.filter((i) => i.type === 'google_search_call').flatMap((i) => i.arguments?.queries || i.queries || [null]);
     return { text: blocks.map((c) => c.text || '').join('\n') || d.output_text || '', searches: queries.length, model: d.model,
       sources: uniq(blocks.flatMap((c) => (c.annotations || []).map((a) => a.url))) };
@@ -111,8 +115,19 @@ if (cmd === 'check') {
   if (!p || !file || !fs.existsSync(file)) { console.error('usage: node scripts/external.mjs forecast <provider> <file>'); process.exit(2); }
   if (state(p) !== 'ready') { console.error(`${p.id}: ${state(p)}`); process.exit(4); }
   try {
-    const out = await post(`${p.base_url.replace(/\/$/, '')}/chat/completions`, viaProxy(p) ? null : process.env[p.key_env], { model: p.model, messages: [{ role: 'system', content: INSTRUCTION }, { role: 'user', content: fs.readFileSync(file, 'utf8') }] });
-    const text = out.choices?.[0]?.message?.content || '';
+    const key = viaProxy(p) ? null : process.env[p.key_env], body = fs.readFileSync(file, 'utf8');
+    let out, text;
+    if (p.api === 'interactions') {
+      // Google's own interface (no tools here): its OpenAI-compatible endpoint takes the key only as a Bearer token,
+      // the stored secret carries it as x-goog-api-key, which this interface and its search both accept.
+      out = await post(p.interactions_url, key, { model: p.model, input: `${INSTRUCTION}\n\n${body}` });
+      const e = Array.isArray(out) ? out[0]?.error : out.error;
+      if (e) throw new Error(JSON.stringify(e).slice(0, 300));
+      text = interactionText(out);
+    } else {
+      out = await post(`${p.base_url.replace(/\/$/, '')}/chat/completions`, key, { model: p.model, messages: [{ role: 'system', content: INSTRUCTION }, { role: 'user', content: body }] });
+      text = out.choices?.[0]?.message?.content || '';
+    }
     const prob = parseProbability(text);
     if (prob === null) { console.error(`${p.id}: no PROBABILITY line in the answer`); process.exit(3); }
     console.log(JSON.stringify({ provider: p.id, model: out.model || p.model, at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), p: Math.min(0.99, Math.max(0.01, prob)), reason: text.replace(/PROBABILITY:.*$/im, '').trim().slice(-1200) }));
