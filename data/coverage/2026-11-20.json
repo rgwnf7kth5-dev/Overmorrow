@@ -1,0 +1,45 @@
+{
+  "edition": "2026-11-20",
+  "checked_at": "2026-11-21T05:15:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 19, read 21 Nov 04:00 UTC)",
+    "ct24 (ČT24 domácí list, pages 1-3, items dated 19 Nov; read 21 Nov 04:10 UTC). The ČT24 Prague regional list could not be found at the guessed URLs",
+    "ctk (ceskenoviny.cz ČR and Ekonomika lists, items dated 19.11.2026; read 21 Nov 04:02 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2) and no day list for 19 Nov was available from a substitute within the search budget, so list (b) is missing: no world or Europe event could reach two lists."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (list (b) missing): Xi-Putin-Trump trilateral in Shenzhen and its joint declaration (covered, cn-shenzhen); ICJ rules Myanmar committed genocide against the Rohingya (covered, icj-myanmar); Philippines-Chile FTA at APEC; tanker hits a mine east of Hormuz; Israeli strike in the Bekaa; Houthi missiles on Riyadh's financial district; Haiti police operation; Bangladesh violence and garment protests; Senegal budget by decree; GTA VI record launch; Hegseth signs Honduras security agreements; Pakistan-Qatar MoU; Somalia expels UAE ambassador; Abu Safiya detention extended; Bukele registers for a third term; Mongolian president's resignation accepted.",
+    "ČTK-only Czech items: Prague assembly elects Hlaváček mayor (covered, cz-prague; ČT24's domestic list did not carry it); cabinet did not take up the fuel-cap extension (covered by cz-fuelcap-ext-20 in cz-diesel); diesel and petrol caps for 20 Nov (covered, cz-diesel); Liberec elects Hájek mayor (dropped in the plan); Babiš names the ÚOHS selection commission; Babiš on civil-service numbers in 2027; Hejna complaint rejected; illegal online gambling ring; Šumava contamination; Wienerberger to close Stod plant; Schillerová on EET leniency; wind damage overnight.",
+    "ČT24-only Czech items: Havlíček backs selling L-39 Skyfox aircraft to Ukraine; Plzeň-region bus crash with pre-school children (ČTK follow-up dated 20 Nov only); Feri appeal reasoning; Russian dissident in Czechia sought by Moscow; Christmas-tree prices; ČT report on textile collection."
+  ],
+  "events": [
+    {
+      "title": "Czech Senate constituent session re-elects Vystrčil President (69 votes) and elects Drahoš, Oberfalzer, Václavec and Grolich vice-presidents",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
+      "status": "covered",
+      "story": "cz-senate"
+    },
+    {
+      "title": "Cabinet meeting: fuel-price cap extension not taken up (Schillerová absent); Martin Kozák named head of the new Land Development Office",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+      "status": "covered",
+      "story": "cz-diesel",
+      "note": "The cabinet decision on the caps was carried as claim cz-fuelcap-ext-20 in the cz-diesel story (a separate cz-cabinet story was dropped in planning); the Kozák appointment was not covered."
+    },
+    {
+      "title": "Justice Minister Tejc plans to abolish 27 district courts in the judicial reform",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/ministr-tejc-pocita-se-zrusenim-27-okresnich-soudu-pri-justicni-reforme/2904176",
+      "status": "missed",
+      "note": "Not in the planning file; an evening statement of the minister's plan, not announced in advance in our sources, so not a sweep gap."
+    }
+  ]
+}

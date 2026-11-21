@@ -1,0 +1,138 @@
+{
+  "edition": "2026-11-20",
+  "results": [
+    {
+      "claim": "cn-trump-putin-20",
+      "outcome": "yes",
+      "evidence": "http://en.kremlin.ru/events/president/news/81302",
+      "note": "Kremlin item \"Meeting with US President Donald Trump\" (19 Nov, Shenzhen): after the APEC plenary Putin met Trump with delegations (Lavrov, Siluanov, Ushakov, Dmitriev; Rubio, Bessent), separately from the later three-way meeting.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-apec-decl-20",
+      "outcome": "yes",
+      "evidence": "https://en.people.cn/n3/2026/1119/c90000-20521197.html",
+      "note": "Xinhua via People's Daily, 19 Nov: the meeting chaired by Xi \"adopted by consensus the 2026 APEC Leaders' Declaration\" (Shenzhen Outlook) plus three outcome documents; apec.org had not yet listed it when read.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cn-trilateral-20",
+      "outcome": "yes",
+      "evidence": "https://www.whitehouse.gov/briefings-statements/2026/11/u-s-russia-china-heads-of-state-declaration-toward-peace/",
+      "note": "The three-way meeting took place on 19 Nov and the joint \"Declaration toward Peace\" says \"the three countries will conduct a dialogue on reducing nuclear risks and preventing the proliferation of nuclear weapons\", which we read as an agreed trilateral follow-up on nuclear arms control/strategic stability rather than vague \"maintain communication\" wording (interpreted).",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "icj-breach-20",
+      "outcome": "yes",
+      "evidence": "https://www.aljazeera.com/news/2026/11/20/myanmar-china-object-to-unfair-icj-genocide-ruling",
+      "note": "The ICJ judgment of 19 Nov (case 178) found that Myanmar committed genocide against the Rohingya (9 votes to 6), a breach of the Genocide Convention; ICJ PDFs refuse scripted reading, so confirmed by Al Jazeera/AFP/Reuters and the Wikipedia case entry quoting the finding.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "icj-genocide-20",
+      "outcome": "yes",
+      "evidence": "https://www.aljazeera.com/news/2026/11/20/myanmar-china-object-to-unfair-icj-genocide-ruling",
+      "note": "Al Jazeera (with AFP and Reuters): the Court ruled on 19 Nov that Myanmar had committed genocide, nine judges to six, the first such finding against a state; Wikipedia quotes the finding that Myanmar \"committed acts falling under ... the genocide convention with an intent to destroy\" the Rohingya.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-prague-elected-20",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/praha-ma-nove-vedeni-svobodu-vystridal-v-roli-primatora-hlavacek-/2903301",
+      "note": "ČTK, 19 Nov: at the resumed constituent session the assembly elected Petr Hlaváček (STAN) mayor of Prague, replacing Bohuslav Svoboda.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-prague-mayor-20",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/praha-ma-nove-vedeni-svobodu-vystridal-v-roli-primatora-hlavacek-/2903301",
+      "note": "ČTK gives no vote count but names only two opposition members (Hušbauer and Nepil, ANO) who voted for Hlaváček, so his total was at most 47 + 2 = 49, below 50 (inferred; no assembly record readable).",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "cz-senate-vp-ano-20",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/vystrcil-byl-popate-zvolen-predsedou-senatu-nemel-protikandidata/2903719",
+      "note": "ČTK, 19 Nov: Ladislav Václavec (for ANO) was re-elected Senate vice-president with 63 votes.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-senate-pres-20",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/vystrcil-byl-popate-zvolen-predsedou-senatu-nemel-protikandidata/2903719",
+      "note": "ČTK, 19 Nov: Vystrčil was elected Senate President for the fifth time, unopposed, with 69 of 77 votes cast (seven more than in 2024).",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "berlin-2027-aid-20",
+      "outcome": "no",
+      "evidence": "https://kyivindependent.com/coalition-of-the-willing-calls-on-russia-to-accept-winter-energy-truce/",
+      "note": "The Berlin joint statement and Burnham's speech name air defence, 1,000 UK drones, a UK £10bn package and the EU's existing €90bn Ukraine Support Loan, but no collective amount for military support in 2027; we did not count the EU loan, an existing 2026-27 EU instrument for budget and military needs (interpreted).",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true,
+      "ambiguous": true
+    },
+    {
+      "claim": "wmt-guidance-20",
+      "outcome": "yes",
+      "evidence": "https://www.wpxi.com/news/business/walmart-raises/EWZMVZKFEE7HDHEIZFU6BXGY4I/",
+      "note": "AP, 19 Nov: Walmart now projects full-year EPS of $2.84 to $2.89 (from $2.80-2.87), midpoint $2.865, above $2.835; Walmart's own release was not read.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-permit-20",
+      "outcome": "yes",
+      "evidence": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm",
+      "note": "Senate roll call 270 on 19 Nov: H.R. 2347, as amended, passed 62-33.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-diesel-20",
+      "outcome": "measured",
+      "value": 45.2,
+      "evidence": "https://mf.gov.cz/assets/attachments/2026-11-19_Cenovy-vestnik-127-2026.pdf",
+      "note": "Cenový věstník částka 127 of 19 Nov 2026 sets the maximum diesel price for 20 Nov at 45,20 Kč s DPH per litre (petrol 39,80).",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "cz-fuelcap-ext-20",
+      "outcome": "no",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+      "note": "ČTK, 19 Nov: Babiš said after the cabinet meeting that the government did not take up extending fuel-price regulation beyond November because Finance Minister Schillerová was away in Brno.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": false
+    },
+    {
+      "claim": "za-sarb-20",
+      "outcome": "yes",
+      "evidence": "https://businesstech.co.za/news/finance/885187/reserve-bank-holds-interest-rates-2/",
+      "note": "BusinessTech, 19 Nov: the SARB MPC kept the repo rate at 7.25%, four members for the hold and three for a 25 bp hike.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    },
+    {
+      "claim": "us-claims-20",
+      "outcome": "measured",
+      "value": 203,
+      "evidence": "https://www.wpxi.com/news/business/number-people/JHQX75YB4YZ35L2EGSVDG4PBK4/",
+      "note": "AP, 19 Nov 13:33 UTC: the Labor Department said initial jobless claims rose to 203,000 for the week (from a revised 202,000); dol.gov PDF not machine-readable from the run.",
+      "resolved_at": "2026-11-21T05:10:00+01:00",
+      "held": true
+    }
+  ]
+}
