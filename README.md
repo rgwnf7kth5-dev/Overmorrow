@@ -36,7 +36,7 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `scripts/refdata/election-sim.mjs` | Joint simulation of linked races. |
 | `.claude/settings.json` | Allows `WebFetch` and `WebSearch` in unattended runs (WebFetch is no longer used: pages are read with `node scripts/read.mjs`). |
 | `scripts/read.mjs` | Reads a web page as text from the shell (title, publication time, paragraphs, or a front page's links), so unattended runs never wait for per-site approval. |
-| `scripts/external.mjs` | Shadow forecasters on other vendors' models (OpenAI-compatible endpoints). Off until keys and model names are set in `config.shadow.external`. |
+| `scripts/external.mjs` | Shadow forecasters on other vendors' models (OpenAI-compatible endpoints). Keys are network secrets of the runs' environment; models and the switch are in `config.shadow.external`. |
 | `scripts/validate.mjs` | Checks all data against the rules. The Netlify build fails on any error. |
 | `scripts/build.mjs` | Generates the site into `dist/`. No dependencies beyond Node 20. |
 | `site/style.css` | The stylesheet. |
@@ -82,7 +82,7 @@ Type `spider` anywhere on the site, or use the small spider in the navigation (t
 
 ## Shadow trials (from 9 November 2026)
 
-Methods under test are scored beside the published figure and never change it; see METHODOLOGY section 16 and the "Trials in the shadow" table on the accuracy page. Two are computed from stored data (a blend with the market price; empirical ranges for number forecasts), one is an extra forecaster recorded in `forecast.shadow.sequential` with its step-by-step belief file `data/dossiers/<edition>/<claim>.belief.json`, and one is prepared but off: forecasters on other vendors' models.
+Methods under test are scored beside the published figure and never change it; see METHODOLOGY section 16 and the "Trials in the shadow" table on the accuracy page. Two are computed from stored data (a blend with the market price; empirical ranges for number forecasts), one is an extra forecaster recorded in `forecast.shadow.sequential` with its step-by-step belief file `data/dossiers/<edition>/<claim>.belief.json`, and one is a set of forecasters on other vendors' models, recorded in `forecast.shadow.external`.
 
-To switch the other vendors' models on: put the API key into the environment of the scheduled runs under the name in `config.shadow.external.providers[].key_env` (`OPENAI_API_KEY`, `GEMINI_API_KEY`, `XAI_API_KEY`), allow the provider's host in the runs' network settings, set the provider's `model`, and set `enabled` to `true`. `node scripts/external.mjs check` shows what is ready. Keys never go into the repository.
+Other vendors' models are on from 21 November 2026 (OpenAI, Google, xAI; models in `config.shadow.external.providers[].model`). Each provider has `auth: "proxy"`: its API key is stored as a network secret of the cloud environment in which the scheduled runs start (claude.ai/code, environment Default, Network secrets, one secret per host: `api.openai.com`, `api.x.ai`, `generativelanguage.googleapis.com`, type Bearer). The environment's proxy adds the key to requests for that host, so the key never reaches the run, the prompts or the repository. `node scripts/external.mjs check` shows what is ready; a provider whose secret is missing answers with an error, which the run records and passes over. To change a key, delete the secret and add it again. A provider without `auth: "proxy"` reads its key from the environment variable in `key_env` instead. Keys never go into the repository.
 

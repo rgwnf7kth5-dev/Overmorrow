@@ -11,8 +11,9 @@
 // EXTERNAL_TRANSPORT=curl skips Node's fetch and goes straight to curl (which honours HTTPS_PROXY).
 // Exit codes: 0 ok; 2 bad arguments; 3 network or provider error; 4 not configured (no key, no model or disabled).
 //
-// The provider is called through its OpenAI-compatible chat endpoint (<base_url>/chat/completions). The key is read
-// from the environment variable named in config (key_env) and is never written anywhere. Only the text of <file> and
+// The provider is called through its OpenAI-compatible chat endpoint (<base_url>/chat/completions). With auth "proxy"
+// (the default set-up) the key is a network secret of the runs' environment and never reaches this machine; otherwise it
+// is read from the environment variable named in config (key_env). It is never written anywhere. Only the text of <file> and
 // the instruction below are sent: no personal data, no repository contents beyond that file.
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -26,12 +27,16 @@ PROBABILITY: 0.NN`;
 
 const ext = loadConfig().shadow?.external || {};
 const providers = ext.providers || [];
-const state = (p) => (!ext.enabled ? 'disabled in config.shadow.external.enabled' : !p.model ? 'no model name in config' : !process.env[p.key_env] ? `no key in ${p.key_env}` : 'ready');
+// auth "proxy": the key is a network secret of the runs' cloud environment. The environment's proxy adds it to requests
+// for the provider's host after they leave the machine, so no key exists here and none is sent by this script.
+const viaProxy = (p) => p.auth === 'proxy';
+const state = (p) => (!ext.enabled ? 'disabled in config.shadow.external.enabled' : !p.model ? 'no model name in config' : viaProxy(p) ? 'ready' : !process.env[p.key_env] ? `no key in ${p.key_env}` : 'ready');
 
 async function post(url, key, body) {
   const payload = JSON.stringify(body);
   try {
-    if (process.env.EXTERNAL_TRANSPORT === 'curl') throw new Error('curl requested');
+    // Without a key the request must pass through the environment's proxy, which only curl uses.
+    if (process.env.EXTERNAL_TRANSPORT === 'curl' || !key) throw new Error('curl requested');
     const res = await fetch(url, { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${key}` }, body: payload });
     const text = await res.text();
     if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}: ${text.slice(0, 300)}`), { http: true });
@@ -39,10 +44,11 @@ async function post(url, key, body) {
   } catch (e) {
     if (e.http) throw e;
     // Node's fetch ignores HTTPS_PROXY; curl honours it. The key goes in through a config on stdin, not the command line.
-    const cfg = `url = "${url}"\nheader = "content-type: application/json"\nheader = "authorization: Bearer ${key}"\ndata-binary = "@-"\n`;
+    const cfg = `url = "${url}"\nheader = "content-type: application/json"\n${key ? `header = "authorization: Bearer ${key}"\n` : ''}data-binary = "@-"\n`;
     const tmp = `${process.env.TMPDIR || '/tmp'}/overmorrow-external-${process.pid}.cfg`;
     fs.writeFileSync(tmp, cfg, { mode: 0o600 });
-    try { return JSON.parse(execFileSync('curl', ['-sS', '--fail-with-body', '--max-time', '300', '-K', tmp], { input: payload, encoding: 'utf8', maxBuffer: 16e6 })); }
+    try { return JSON.parse(execFileSync('curl', ['-sS', '--fail-with-body', '--max-time', '300', '-K', tmp], { input: payload, encoding: 'utf8', maxBuffer: 16e6, stdio: ['pipe', 'pipe', 'pipe'] })); }
+    catch (e2) { throw new Error(String(e2.stdout || e2.stderr || e2.message).slice(0, 300)); }
     finally { fs.rmSync(tmp, { force: true }); }
   }
 }
@@ -57,13 +63,13 @@ export function parseProbability(text) {
 
 const [cmd, id, file] = process.argv.slice(2);
 if (cmd === 'check') {
-  console.log(JSON.stringify(providers.map((p) => ({ provider: p.id, model: p.model, state: state(p) })), null, 1));
+  console.log(JSON.stringify(providers.map((p) => ({ provider: p.id, model: p.model, auth: viaProxy(p) ? 'proxy' : 'key', state: state(p) })), null, 1));
 } else if (cmd === 'forecast') {
   const p = providers.find((x) => x.id === id);
   if (!p || !file || !fs.existsSync(file)) { console.error('usage: node scripts/external.mjs forecast <provider> <file>'); process.exit(2); }
   if (state(p) !== 'ready') { console.error(`${p.id}: ${state(p)}`); process.exit(4); }
   try {
-    const out = await post(`${p.base_url.replace(/\/$/, '')}/chat/completions`, process.env[p.key_env], { model: p.model, messages: [{ role: 'system', content: INSTRUCTION }, { role: 'user', content: fs.readFileSync(file, 'utf8') }] });
+    const out = await post(`${p.base_url.replace(/\/$/, '')}/chat/completions`, viaProxy(p) ? null : process.env[p.key_env], { model: p.model, messages: [{ role: 'system', content: INSTRUCTION }, { role: 'user', content: fs.readFileSync(file, 'utf8') }] });
     const text = out.choices?.[0]?.message?.content || '';
     const prob = parseProbability(text);
     if (prob === null) { console.error(`${p.id}: no PROBABILITY line in the answer`); process.exit(3); }
