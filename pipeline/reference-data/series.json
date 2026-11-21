@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "pooled": {
-  "n": 50,
-  "rms_in_scales": 1.353,
+  "n": 52,
+  "rms_in_scales": 1.331,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -166,10 +166,19 @@
      "centre": 45.734,
      "scale_used": 0.37,
      "source": "Persistence: last published cap, Cenový věstník 122/2026 of 11 Nov for 12 Nov; no analyst forecast exists. The 13 Nov cap (věstník of 12 Nov) will be known before a 13 Nov morning freeze and should replace this value then."
+    },
+    {
+     "edition": "2026-11-20",
+     "claim": "cz-diesel-20",
+     "consensus": 44.95,
+     "first": 45.2,
+     "centre": 44.85,
+     "scale_used": 0.72,
+     "source": "https://mf.gov.cz/assets/attachments/2026-11-16_Cenovy-vestnik-125-2026.pdf"
     }
    ],
-   "n": 4,
-   "rms_surprise": 0.7234
+   "n": 5,
+   "rms_surprise": 0.6567
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -858,6 +867,22 @@
    ],
    "n": 1,
    "rms_surprise": 0.18
+  },
+  "us-initial-jobless-claims-seasonally-adjusted-week-ending-14": {
+   "unit": "thousand",
+   "records": [
+    {
+     "edition": "2026-11-20",
+     "claim": "us-claims-20",
+     "consensus": 198.5,
+     "first": 203,
+     "centre": 198.8,
+     "scale_used": 7.1,
+     "source": "Midpoint of 197k (Economic Weekly, https://economicweekly.substack.com/p/economic-weekly-november-13-2026) and 200k (Trading Economics via https://analysisofficial.substack.com/p/global-macro-week-ahead-nov-1620; Admirals provisional)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 4.5
   }
  },
  "extra": {}

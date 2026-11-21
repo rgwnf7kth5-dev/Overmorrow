@@ -162,7 +162,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 3,
+        "yes": 4,
         "no": 1
       }
     },
@@ -217,7 +217,7 @@
       "n": 6,
       "source": "pipeline/reference-data/poll-error.json (national elections); own record adds local and provincial races",
       "own_record": {
-        "yes": 6,
+        "yes": 9,
         "no": 5
       }
     },
@@ -459,7 +459,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 3,
+        "yes": 4,
         "no": 2
       }
     },
@@ -1195,6 +1195,138 @@
       "base_rate": null,
       "n": "own record only",
       "source": "own record (created 2026-11-19 morning run)",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "summit-sideline-bilateral-held",
+      "description": "Two leaders hold a separate bilateral meeting at a multilateral summit when one side says it has been agreed but the other has not confirmed it",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cn-trump-putin-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "apec-leaders-declaration-adopted",
+      "description": "An APEC Economic Leaders' Meeting adopts a collective Leaders' Declaration by its close",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cn-apec-decl-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "summit-announces-agreed-follow-up",
+      "description": "A first-ever leaders' meeting in a new format announces an agreed follow-up (further talks or another meeting) the same day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cn-trilateral-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "icj-genocide-convention-breach-found",
+      "description": "ICJ merits judgment finds any breach of the Genocide Convention or of provisional measures",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim icj-breach-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "icj-finds-genocide-committed",
+      "description": "ICJ merits judgment finds that the respondent state committed genocide",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim icj-genocide-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "agreed-candidate-elected-at-constituent-session",
+      "description": "A candidate agreed by the majority (or nominated by a club under a share-out) is elected at a constituent session on the scheduled day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cz-prague-elected-20",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "prague-mayor-votes-above-coalition",
+      "description": "Prague mayor elected with votes well beyond the size of the majority coalition (stated threshold)",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cz-prague-mayor-20",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "sole-candidate-vote-total-threshold",
+      "description": "An unopposed incumbent presiding officer is re-elected with at least his previous vote total",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cz-senate-pres-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "cotw-statement-collective-military-total",
+      "description": "A Coalition of the Willing summit states a collective money amount for military support to Ukraine for a named year",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim berlin-2027-aid-20",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "us-senate-passes-bill-by-date",
+      "description": "The US Senate passes a bill on which cloture has been invoked or a final-passage vote is scheduled by a stated date",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim us-permit-20",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "cz-cabinet-decides-trailed-item-on-day",
+      "description": "The Czech cabinet takes a trailed decision (not on the published agenda) at a given meeting",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim cz-fuelcap-ext-20",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "araghchi-muscat-readout-links-us-track",
+      "description": "Araghchi Muscat visits during the 2026 war whose official readout links the talks to the Iran–US track",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 21 Nov 2026 (resolver); added from claim ir-hormuz-18",
       "own_record": {
         "yes": 0,
         "no": 1
