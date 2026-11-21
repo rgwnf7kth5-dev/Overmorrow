@@ -1,0 +1,324 @@
+{
+ "edition": "2026-11-23",
+ "frozen_at": "2026-11-21T12:28:00+01:00",
+ "revisions": [],
+ "checks": [
+  {
+   "claim": "cop31-adopt-23",
+   "at": "2026-11-21T12:27:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-21T12:23:13+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.8,
+     "reason_blind": "Ref class COP21-30 overruns: main decision gavelled by 23:59 day+2 10/10; still open at ~14:00 day+1: 7/7 (Laplace 8/9=0.89). reference-classes.json: no COP class (negotiation-session-closes-by-deadline n=1). Slip 0.067. Down for no 3rd draft yet, Hoekstra no-deal, Panama objection.",
+     "at": "2026-11-21T12:23:24+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.81,
+     "p_held": 0.81,
+     "p_if_held": 0.99,
+     "reason": "Signals: no matching market; Carbon Brief sweepstake median gavel 22:35 Sat (inside window), small nudge up. Timing is the whole claim. Facts: plenary suspended Fri 22:29; 3rd draft promised Sat (Hurriyet 05:58 CET), not out by 12:21 CET; Hoekstra 10:45 CET 'no deal' if bar not met; flights leaving (AFP 09:09)."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-21T12:23:44+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.84,
+     "reason_blind": "7 searches; no Sat 21 Nov report surfaced (no third-draft text, no plenary time); page reader blocked, titles only. Prior: COPs that overrun Friday nearly always gavel Sat/Sun (COP25-30). Risk: Sunday-night slip or no cover text.",
+     "at": "2026-11-21T12:24:00+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.83,
+     "p_held": 0.83,
+     "p_if_held": 0.99,
+     "reason": "Timing only. Base rate 8/9 in window after Friday overrun. Hurriyet 05:58 CET: third draft 'for release on Nov. 21'; AFP 09:09: delegates catching flights; Hoekstra (AFP 10:45 CET): 'no deal' if bar not met, but also 'close to finish line'. No third draft by 12:21 CET. Sweepstake median 22:35 Sat. No new URLs beyond facts file.",
+     "note": "The shell page reader was refused to this agent by the permission system; its own research rests on search-result titles only."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-21T12:22:59+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.79,
+     "reason_blind": "Against: third draft still unseen Sat midday, a 4th expected; Hoekstra 'no deal' (Sat), Panama vows objection, delegates flying out (quorum), finance/JT texts bracketed; cover text could be dropped. For: 8/9 overruns gavel by day+2, 38 h left, presidency stripped hard items.",
+     "at": "2026-11-21T12:23:11+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.78,
+     "p_held": 0.79,
+     "p_if_held": 0.99,
+     "reason": "Timing only. No third draft or plenary time by 12:21 CET Sat; Hoekstra to AFP (10:45 CET) 'the bar is not met and there is no deal'; Kurum's plenary suspended Fri 22:29 local. AFP headline 'close to the finish line' and 8/9 base rate hold it up. Signals: no market; Carbon Brief sweepstake median 22:35 Sat, inside window. No real move (0.99 cap)."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "rounds": [
+      {
+       "p": 0.78,
+       "at": "2026-11-21T12:24:12+01:00",
+       "reason": "Before the overnight facts: dossier and signals."
+      }
+     ],
+     "at": "2026-11-21T12:24:41+01:00",
+     "inputs": [
+      "dossier",
+      "signals",
+      "overnight-facts",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p": 0.8,
+     "p_held": 0.8,
+     "p_if_held": 1,
+     "reason": "Base rate 8/9 overrun COPs gavel in [07:00 d+1, 23:59 d+2]. Overnight: plenary suspended Fri 22:29, third draft due Sat (Hurriyet 05:58, Climate Watch 08:21 CET); AFP 10:45 CET 'close to the finish line', delegates catching flights (09:09) push timing in; Hoekstra 'no deal' if bar unmet adds slip risk. Timing fact, small net up."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-21T12:23:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.78,
+     "reason_blind": "Recent COPs overran 1-2 days and nearly always gavel a cover decision (COP27/29 Sunday, COP30 Saturday); window runs to Sun 23:59, two days past the scheduled close. Searches showed no news after the second draft.",
+     "at": "2026-11-21T12:25:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals"
+     ],
+     "p": 0.78,
+     "p_held": 0.78,
+     "p_if_held": 1,
+     "reason": "Carbon Brief sweepstake median gavel Sat 22:35 (230+ guesses, a few as late as Tue) is inside the window; no market matches. Third draft promised Sat; Reuters 20 Nov expected a low-ambition text. Timing risk only; no new facts."
+    }
+   ],
+   "combined": 0.8007,
+   "calibrated": 0.8908,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2019,
+     "b": 1.364
+    },
+    "version": "2026-11-21"
+   },
+   "spread": 0.05,
+   "market_search": "markets.mjs search \"COP31\", \"COP31 fossil\", \"climate conference deal\" (anchor, 2026-11-21 Same searches as cop31-adopt-23 (2026-11-21T11:23:55Z-11:24:03Z): 'COP31' none, 'COP31 fossil' none, 'climate conference deal' only unrelated weather markets. No market on fossil-fuel wording.): no market matches either claim.",
+   "market": null,
+   "decomposition": {
+    "morning": {
+     "p_held": 0.926,
+     "p_if_held": 0.94
+    },
+    "afternoon": {
+     "p_held": 0.8,
+     "p_if_held": 0.99
+    },
+    "factor": "p_held",
+    "note": "Afternoon factors: geometric means of the base-rate and adversarial figures. Hoekstra's \"no deal\" line (AFP 10:45 CET) bears on timing (risk of no adoption in the window) and on the wording (pressure to restore the words); the third draft was not published by 12:25 CET."
+   },
+   "published": false,
+   "not_published": "Below the display threshold (87% morning, 89% recomputed)."
+  },
+  {
+   "claim": "cop31-fossil-23",
+   "at": "2026-11-21T12:27:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-21T12:23:13+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.4,
+     "reason_blind": "P(adopt)0.80 x P(words|adopt)0.50. Words in main decision COP26-30 3/5 (last 2: 0/2); restored after a draft dropped them 1/2 (COP28 yes, COP30 no). Up: broad any-mention criterion, 23-country/EU push; down: draft 2 had zero, Arab Group 'no fuels'.",
+     "at": "2026-11-21T12:23:24+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.4,
+     "p_held": 0.81,
+     "p_if_held": 0.5,
+     "reason": "Signals: no market; internal desk lean 55% (not outside); Reuters 20 Nov 'hopes of major changes not high' offsets. Outcome unchanged: 3rd draft text unseen at 12:21 CET; Bowen 'transitioning away from fossil fuels' (AFP 09:09 CET) is a quote, not text; Hoekstra no-deal threat 10:45 CET pushes both ways."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-21T12:23:44+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.42,
+     "reason_blind": "Second draft dropped all fossil wording after Saudi/producer objections; nothing found on third draft. Broad string criterion and strong EU/AOSIS/LatAm push vs COP30 precedent (not restored). ~0.5 if adopted x 0.84.",
+     "at": "2026-11-21T12:24:00+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.42,
+     "p_held": 0.83,
+     "p_if_held": 0.5,
+     "reason": "Outcome unchanged: third draft wording unknown at 12:21 CET. For: Hoekstra 'no deal' if bar not met (AFP 10:45 CET); 23-country/Panama pressure; Bowen frames electrification as 'transitioning away from fossil fuels' (AFP 09:09). Against: Arab Group/LMDC block, COP30 precedent. No new URLs beyond facts file.",
+     "note": "The shell page reader was refused to this agent by the permission system; its own research rests on search-result titles only."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-21T12:22:59+01:00",
+     "inputs_blind": [
+      "dossier",
+      "overnight-facts"
+     ],
+     "p_blind": 0.28,
+     "reason_blind": "Return case: EU 'no deal' bar, 23 states, Panama; Bowen's own 'transitioning away from fossil fuels' line; any incidental mention counts. Stay-out case: Arab Group/LMDC red line, consensus favours silence, COP30 precedent, Reuters 'hopes not high'. ~0.36 if held x 0.79.",
+     "at": "2026-11-21T12:23:11+01:00",
+     "inputs": [
+      "dossier",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.28,
+     "p_held": 0.79,
+     "p_if_held": 0.36,
+     "reason": "Outcome unchanged: third draft wording still unpublished at 12:21 CET Sat. Hoekstra's 'no deal' (AFP 10:45 CET) raises both a restored mention and a blocked text; Bowen quote (AFP 09:09 CET) is press talk, not text. Arab Group 'no fuels or sectors' stands. Signals: no market; desk's 55% lean is internal, not weighed."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "rounds": [
+      {
+       "p": 0.35,
+       "at": "2026-11-21T12:24:12+01:00",
+       "reason": "Before the overnight facts: dossier and signals."
+      }
+     ],
+     "at": "2026-11-21T12:24:41+01:00",
+     "inputs": [
+      "dossier",
+      "signals",
+      "overnight-facts",
+      "reference-data",
+      "union-of-facts"
+     ],
+     "p": 0.4,
+     "p_held": 0.8,
+     "p_if_held": 0.5,
+     "reason": "Second draft has no 'fossil fuels'; Arab Group opposes targeting fuels. Overnight: Hoekstra (AFP 10:45 CET) 'if we don't meet the bar ... there is no deal', EU warns of 'fossil summit'; new draft centres electrification, Bowen ties it to 'transitioning away from fossil fuels' (AFP 09:09). Third text unseen. Base 3/5, restore 1/2. Outcome up slightly: 0.8x0.5."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-21T12:23:00+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.3,
+     "reason_blind": "Second draft (Thu) deleted all fossil fuel mentions under producer objections; but a dozen-plus states demand it and a compromise reference (e.g. UAE consensus wording) is plausible. Joint with adoption timing.",
+     "at": "2026-11-21T12:25:00+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals"
+     ],
+     "p": 0.32,
+     "p_held": 0.78,
+     "p_if_held": 0.41,
+     "reason": "Reuters 20 Nov: hopes of major tone change low; Vanuatu: not a high-ambition text; desk lean 55% yes before third draft is not outside evidence. Wording outcome, not timing, is the main uncertainty; 0.78 x 0.41."
+    }
+   ],
+   "combined": 0.3621,
+   "calibrated": 0.3611,
+   "combination": {
+    "method": "calibrated",
+    "weights": {
+     "base-rate": 1,
+     "evidence": 1,
+     "adversarial": 1,
+     "anchor": 1,
+     "outsider": 1
+    },
+    "platt": {
+     "a": 0.2019,
+     "b": 1.364
+    },
+    "version": "2026-11-21"
+   },
+   "spread": 0.14,
+   "market_search": "markets.mjs search \"COP31\", \"COP31 fossil\", \"climate conference deal\" (anchor, 2026-11-21 Same searches as cop31-adopt-23 (2026-11-21T11:23:55Z-11:24:03Z): 'COP31' none, 'COP31 fossil' none, 'climate conference deal' only unrelated weather markets. No market on fossil-fuel wording.): no market matches either claim.",
+   "market": null,
+   "decomposition": {
+    "morning": {
+     "p_held": 0.825,
+     "p_if_held": 0.291
+    },
+    "afternoon": {
+     "p_held": 0.8,
+     "p_if_held": 0.424
+    },
+    "factor": "p_if_held",
+    "note": "Afternoon factors: geometric means of the base-rate and adversarial figures. Hoekstra's \"no deal\" line (AFP 10:45 CET) bears on timing (risk of no adoption in the window) and on the wording (pressure to restore the words); the third draft was not published by 12:25 CET."
+   },
+   "published": false,
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-21T12:26:01+01:00",
+    "case_for_morning": "The rise is re-estimation, not news. Base-rate's blind 0.40 and anchor's pre-overnight round 0.35 already exceed 24% before any new fact; p_if_held ~0.50 comes from the 3/5 and 1/2 rates in the morning dossier. Bowen's quote is not new: the dossier cites it (DW live, Fri) as said to reporters, not text. Hoekstra's no-deal line restates the EU's Friday 'not acceptable'/'fossil COP' stance and cuts both ways: it raises restoration odds but also blockage (p_held down). Third draft still unseen; Arab Group red line and COP30 path stand. Silence is not a fact.",
+    "case_for_larger": "Criterion is broad: any incidental 'fossil fuel(s)' counts (clean-electrification contrast, CCUS caveat, COP28 recall). The presidency's own framing is 'transitioning away from fossil fuels'; EU now ties the deal to the bar, joining 23 states and Panama, so a no-mention text may simply not pass, leaving YES as the main adopted path. COP28 shows restoration under a hard EU line; p_if_held could be 0.55-0.6, giving ~0.45.",
+    "verdict": "Case for morning is stronger. Only Hoekstra's 10:45 CET quote is new and it is a negotiating position (commentary), moving p_held down and p_if_held up by an unknown, partly offsetting amount. Bowen's line was in the morning dossier; the unpublished third draft is silence. The 24%->36% rise comes from re-estimating p_if_held on morning-knowable base rates. No material new fact under UPDATE.md 2a: do not publish; revisit when the third draft text is out.",
+    "publish_revision": false,
+    "unweighed_facts": false,
+    "new_facts": []
+   },
+   "not_published": "The recomputed 36% is 12 points above the morning 24%, but the red team found the rise comes from re-estimating p_if_held on base rates already in the morning dossier (base-rate blind 0.40, anchor pre-overnight round 0.35); the only new item is a negotiating statement (Hoekstra, AFP 10:45 CET), and the third draft is unpublished (silence). Under UPDATE.md 2a and the rule against revising on commentary alone, the morning figure stands for readers; revisit when the third draft is out."
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "archynewsy.com"
+  ],
+  "not_revised": "cop31-adopt-23 and cop31-fossil-23 recomputed (no revision published, see checks). ua-drones-23, ua-pow-23, gulf-ukmto-23, golden-horse-2-23, golden-horse-23, it-malpensa-23: no material new fact by 12:25 CET (no new POW exchange announced, no UKMTO report for 21 Nov found, Malpensa strike not revoked, Golden Horse ceremony on Sunday). No new events for 22 Nov added.",
+  "afternoon_notes": "work/2026-11-23/afternoon.md"
+ }
+}
