@@ -1,0 +1,2318 @@
+{
+ "id": "2026-11-23",
+ "number": 32,
+ "method_version": 6,
+ "edition_date": "2026-11-23",
+ "events_date": "2026-11-22",
+ "frozen_at": "2026-11-21T05:21:32+01:00",
+ "front": {
+  "lead": "cop31",
+  "rail": []
+ },
+ "sections": [
+  {
+   "name": "World",
+   "dek": "War in Ukraine, Gulf shipping, the Golden Horse awards",
+   "stories": [
+    "ua-war",
+    "gulf-shipping",
+    "golden-horse"
+   ]
+  },
+  {
+   "name": "Economy",
+   "dek": "An air-traffic strike at Milan Malpensa",
+   "stories": [
+    "it-malpensa"
+   ]
+  }
+ ],
+ "stories": [
+  {
+   "id": "cop31",
+   "scope": "world",
+   "topic": "politics",
+   "event_key": "cop31-cover-adoption-2026-11-22",
+   "case_key": "cop31-antalya-2026",
+   "size": "lead",
+   "kicker": "COP31 climate talks",
+   "headline": "COP31 adopts Antalya climate deal after weekend overtime",
+   "standfirst": "Nearly 200 countries at the UN climate conference in Antalya adopted the summit's main decision at the weekend, after the talks ran past their scheduled close. The text made no mention of fossil fuels, the central dispute of the final week.",
+   "body": [
+    "ANTALYA, 22 November – Countries at the COP31 UN climate conference in Antalya adopted the summit's overarching cover decision at the weekend, after the talks ran past their scheduled close at 16:00 CET on Friday. The decision, drafted by host Türkiye and lead negotiator Australia, made no reference to fossil fuels.",
+    "The presidency's first draft, published on Monday, had called for \"accelerated action to phase out fossil fuels, including through the immediate transition away from fossil fuels in energy systems\". A slimmed-down second version on Thursday removed every mention of them after objections from Saudi Arabia and other major oil and gas producers, and dropped a $120bn target for finance to help developing countries adapt. The Arab Group had insisted that the decision should not target any fuels or sectors.",
+    "Panama, France, Belgium, Finland, Sweden, Spain, Vanuatu, Côte d'Ivoire and Guatemala said on Friday that they would not accept the text as it stood, and 23 countries fronted by the Netherlands, including Germany, Britain, Brazil and Indonesia, called for the words \"transitioning away from fossil fuels\" to be restored. The European Union warned that the draft \"risks turning this climate COP into a fossil summit\". \"It is not acceptable to have a COP or a cover document that does not even mention fossil fuels,\" Panama's environment minister Juan Carlos Navarro said; his government had written to the presidency threatening to object formally in the closing plenaries.",
+    "A closing session late on Friday approved technical matters but left the political deal open, and talks continued through the night. Australia's climate minister Chris Bowen, who chaired the negotiations, shuttled between delegations and said he would keep working \"for as long as it takes, to get the job done\". \"No one has said to me 'Let's give up and go home',\" he told reporters.",
+    "Thursday's draft set a goal of raising the share of the world's final energy demand met by electricity to 35% by 2035, without specifying that the power must come from renewables, and proposed capturing up to 2.5 billion tonnes of carbon dioxide a year by 2035. It was also the first cover text to say outright that global warming is projected to pass the 1.5C limit of the Paris Agreement. China and Australia endorsed the electrification goal \"on a voluntary basis\" in a joint statement on Friday.",
+    "Developing countries had pressed throughout the final days for firmer finance commitments. Ghana's environment minister Zanetor Agyeman-Rawlings said Africa \"will not accept an outcome that offers declarations without the resources to deliver them\". Small island states and campaigners criticised the omission of fossil fuels; Mohamed Adow of Power Shift Africa had already called Antalya \"the worst COP ever\".",
+    "Nations agreed at COP28 in Dubai in 2023 to transition away from fossil fuels, but no summit since has made that pledge more specific. The United States, the largest historical emitter, stayed away from the talks for a second year after President Donald Trump ended co-operation on climate. Last year's COP30 in Belém also ran past its deadline, and Ethiopia hosts COP32 next year."
+   ],
+   "basis": "Rests on the record of COPs that overran their scheduled close (8 of 9 since 2015 adopted the main decision between 07:00 the next day and midnight two days after the scheduled close), the presidency's continued talks with no delegation walking out, and the 19 November draft that had dropped every reference to fossil fuels over the objections of oil producers.",
+   "analysis": [
+    "Adoption of the cover decision between 07:00 Saturday and 23:59 Sunday Antalya time (05:00 Saturday to 21:59 Sunday CET) was put at 87%; the words \"fossil fuel(s)\" appearing in it at 24%, so the story reports a decision without them. No prediction market covered either question; a Carbon Brief reader sweepstake (230+ entries) put the median final gavel at 22:35 on Saturday.",
+    "Base rate: of the nine COPs since 2015 that missed their scheduled last day, eight adopted the main decision inside such a window (the exception, COP23, gavelled before 07:00 on the Saturday). On fossil fuels, 3 of the 5 cover decisions from COP26 to COP30 named them, but none of the last two, and the words came back after a draft had weakened or dropped them in only 1 of 2 cases (COP28 yes, COP30 no).",
+    "Five forecasters on adoption: base-rate 0.80, evidence 0.80, adversarial 0.80, anchor 0.75, outsider 0.78; geometric mean 0.787, calibrated 0.87. On a fossil-fuel mention: 0.26, 0.27, 0.22, 0.30, 0.33; geometric mean 0.274, calibrated 0.24.",
+    "What could go the other way: a plenary running past Sunday midnight (the COP25 and COP29 pattern pushed further), a formal objection by Panama that stalls the gavel, or the presidency dropping the overarching text and adopting only item decisions. On fossil fuels, the 23-country bloc could still have traded acceptance of carbon capture and the electrification goal for a recall of the Dubai wording, and any incidental mention counts.",
+    "Overnight check (05:15 CET Saturday): no third draft had been published and the Friday-night plenary adopted only technical items, so no adoption fell before the window opened."
+   ],
+   "sources": [
+    {
+     "title": "Reuters (via WHTC): COP31 climate talks spill into overtime as nations quarrel over fossil fuels (20 Nov 2026)",
+     "url": "https://whtc.com/2026/11/20/cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels/"
+    },
+    {
+     "title": "AFP (via The Straits Times): Nations row over fossil fuels as COP31 goes into overtime (21 Nov 2026)",
+     "url": "https://www.straitstimes.com/world/nations-row-over-fossil-fuels-as-cop31-goes-into-overtime"
+    },
+    {
+     "title": "Al Jazeera: Fossil fuel talks deadlock pushes COP31 climate summit into overtime (20 Nov 2026)",
+     "url": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime"
+    },
+    {
+     "title": "The Independent: Cop31 heading for overtime thanks to bitter dispute over fossil fuels (20 Nov 2026)",
+     "url": "https://www.independent.co.uk/climate-change/news/cop31-turkey-fossil-fuel-transition-b3088614.html"
+    },
+    {
+     "title": "Carbon Brief Connect: 23 countries call for COP31 cover text to include 'transition away from fossil fuels' (20 Nov 2026)",
+     "url": "https://connect.carbonbrief.org/t/23-countries-call-for-cop31-cover-text-to-include-transition-away-from-fossil-fuels/193"
+    },
+    {
+     "title": "Carbon Brief Connect: Panama will 'formally object to' COP31 outcome (19 Nov 2026)",
+     "url": "https://connect.carbonbrief.org/t/panama-will-formally-object-to-cop31-outcome-without-oil-cap-finance-renewable-electrification/189"
+    },
+    {
+     "title": "Carbon Brief Connect: COP31 cover text: Carbon capture and storage (20 Nov 2026)",
+     "url": "https://connect.carbonbrief.org/t/cop31-cover-text-carbon-capture-and-storage/195"
+    },
+    {
+     "title": "Carbon Brief Connect: China-Australia joint climate statement endorses '35 by 35' (20 Nov 2026)",
+     "url": "https://connect.carbonbrief.org/t/china-australia-joint-climate-statement-endorses-35-by-35/199"
+    },
+    {
+     "title": "Climate Home News: COP31 Bulletin Day 11 (20 Nov 2026)",
+     "url": "https://www.climatechangenews.com/2026/11/20/cop31-bulletin-day-11-best-cop-worst-cop-weary-negotiators-seek-to-strengthen-outcome/"
+    },
+    {
+     "title": "DW: COP31 UN climate summit enters final phase (live, 20–21 Nov 2026)",
+     "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516"
+    },
+    {
+     "title": "ENB (IISD): Summary report, Belém Climate Change Conference COP30 (2025)",
+     "url": "https://enb.iisd.org/belem-un-climate-change-conference-cop30-summary"
+    }
+   ],
+   "rationale": "cop31-adopt-23: class COP main decision adopted in [07:00 day+1, 23:59 day+2] local given no adoption on the scheduled day (COP21–COP30) 8/9 = 0.89; agents base-rate 0.80, evidence 0.80, adversarial 0.80, anchor 0.75, outsider 0.78; combined 0.787, calibrated 0.872 (published 0.87); no market (Carbon Brief sweepstake median 22:35 Sat). Main risk: plenary past Sunday midnight, a stalled gavel over Panama's objection, or no cover decision. cop31-fossil-23: class cover decisions naming fossil fuels COP26–COP30 3/5 = 0.6 (last two 0/2; restoration after a drop 1/2); agents 0.26, 0.27, 0.22, 0.30, 0.33; combined 0.274, calibrated 0.239 (published 0.24); no market. Told as NO mention. Main risk: the 23-country bloc wins back the Dubai wording in a late draft. Overnight check 21 Nov 05:10–05:20 CET: nothing material; evening numbers and record kept.",
+   "cs": {
+    "kicker": "Klimatická konference COP31",
+    "headline": "Konference COP31 po víkendovém prodloužení schválila klimatickou dohodu z Antalye",
+    "standfirst": "Téměř 200 zemí na klimatické konferenci OSN v turecké Antalyi o víkendu schválilo hlavní rozhodnutí summitu, poté, co jednání přesáhla plánovaný konec. Text se nezmiňuje o fosilních palivech, hlavním sporu závěrečného týdne.",
+    "body": [
+     "ANTALYA 22. listopadu – Státy na klimatické konferenci OSN COP31 v turecké Antalyi o víkendu schválily hlavní zastřešující rozhodnutí summitu, poté, co jednání přesáhla plánovaný konec v pátek v 16:00 SEČ. Rozhodnutí, které připravily pořadatelské Turecko a hlavní vyjednavačka Austrálie, fosilní paliva nezmiňuje.",
+     "První návrh předsednictví zveřejněný v pondělí vyzýval k „urychlenému postupu při postupném ukončení využívání fosilních paliv, mimo jiné okamžitým odklonem od fosilních paliv v energetice“. Zeštíhlená druhá verze ve čtvrtek po námitkách Saúdské Arábie a dalších velkých producentů ropy a plynu všechny zmínky o nich vypustila a vyškrtla i cíl 120 miliard dolarů na financování adaptace rozvojových zemí. Arabská skupina trvala na tom, že rozhodnutí nemá cílit na žádná paliva ani odvětví.",
+     "Panama, Francie, Belgie, Finsko, Švédsko, Španělsko, Vanuatu, Pobřeží slonoviny a Guatemala v pátek uvedly, že text v dané podobě nepřijmou, a 23 zemí v čele s Nizozemskem, mezi nimi Německo, Británie, Brazílie a Indonésie, žádalo vrátit do textu slova o „odklonu od fosilních paliv“. Evropská unie varovala, že návrh „hrozí udělat z této klimatické COP summit fosilních paliv“. „Je nepřijatelné mít COP či zastřešující dokument, který fosilní paliva ani nezmíní,“ prohlásil panamský ministr životního prostředí Juan Carlos Navarro; jeho vláda předsednictví písemně pohrozila formální námitkou na závěrečném plénu.",
+     "Závěrečné zasedání pozdě v pátek schválilo technické body, politická dohoda však zůstala otevřená a jednání pokračovala přes noc. Australský ministr pro klima Chris Bowen, který vyjednávání řídil, obcházel delegace a řekl, že bude pracovat „tak dlouho, jak bude třeba, aby se věc dotáhla“. „Nikdo mi neřekl: Vzdejme to a jeďme domů,“ uvedl před novináři.",
+     "Čtvrteční návrh stanovil cíl zvýšit do roku 2035 podíl elektřiny na celosvětové konečné spotřebě energie na 35 procent, aniž by určil, že musí pocházet z obnovitelných zdrojů, a navrhoval do roku 2035 zachytávat až 2,5 miliardy tun oxidu uhličitého ročně. Jako první zastřešující text také otevřeně uvedl, že oteplení podle projekcí překročí hranici 1,5 stupně Celsia z Pařížské dohody. Čína a Austrálie cíl elektrifikace v pátek podpořily ve společném prohlášení „na dobrovolném základě“.",
+     "Rozvojové země v závěrečných dnech naléhaly na pevnější finanční závazky. Ghanská ministryně životního prostředí Zanetor Agyeman-Rawlings uvedla, že Afrika „nepřijme výsledek, který nabízí prohlášení bez prostředků na jejich naplnění“. Malé ostrovní státy a ekologické organizace vypuštění fosilních paliv kritizovaly; Mohamed Adow z organizace Power Shift Africa už předtím označil Antalyu za „nejhorší COP vůbec“.",
+     "Státy se na COP28 v Dubaji v roce 2023 dohodly na odklonu od fosilních paliv, žádný summit od té doby však tento závazek nezpřesnil. Spojené státy, historicky největší producent emisí, se jednání druhým rokem neúčastnily poté, co prezident Donald Trump ukončil spolupráci v oblasti klimatu. Loňská COP30 v brazilském Belému se rovněž protáhla za termín, příští konferenci COP32 pořádá Etiopie."
+    ],
+    "basis": "Opírá se o průběh konferencí COP, které nestihly plánovaný konec (8 z 9 od roku 2015 schválilo hlavní rozhodnutí mezi 7:00 následujícího dne a půlnocí druhého dne po plánovaném konci), o pokračující jednání předsednictví, z nichž žádná delegace neodešla, a o návrh z 19. listopadu, z něhož kvůli námitkám producentů ropy zmizely všechny zmínky o fosilních palivech.",
+    "analysis": [
+     "Schválení zastřešujícího rozhodnutí mezi sobotou 7:00 a nedělí 23:59 antalyjského času (sobota 5:00 až neděle 21:59 SEČ) jsme odhadli na 87 %, výskyt slov „fossil fuel(s)“ v něm na 24 %, proto text popisuje rozhodnutí bez nich. Žádný predikční trh obě otázky nepokrýval; tipovačka čtenářů Carbon Brief (přes 230 tipů) měla medián závěrečného úderu kladívkem v sobotu ve 22:35.",
+     "Základní četnost: z devíti konferencí od roku 2015, které nestihly plánovaný poslední den, osm schválilo hlavní rozhodnutí v takovém okně (výjimka COP23 skončila před sobotní 7. hodinou). Fosilní paliva zmínila 3 z 5 zastřešujících rozhodnutí COP26 až COP30, ale žádné z posledních dvou, a po oslabení či vypuštění v návrhu se slova vrátila jen v 1 ze 2 případů (COP28 ano, COP30 ne).",
+     "Pět prognostiků ke schválení: základní četnost 0,80, důkazy 0,80, oponent 0,80, kotva 0,75, outsider 0,78; geometrický průměr 0,787, po kalibraci 0,87. Ke zmínce fosilních paliv: 0,26, 0,27, 0,22, 0,30, 0,33; geometrický průměr 0,274, po kalibraci 0,24.",
+     "Co mohlo dopadnout jinak: plénum přesahující nedělní půlnoc (vzorec COP25 a COP29 ještě protažený), formální námitka Panamy, která by schválení zdržela, nebo vypuštění zastřešujícího textu a schválení jen dílčích rozhodnutí. U fosilních paliv mohl blok 23 zemí výměnou za souhlas se zachytáváním uhlíku a cílem elektrifikace prosadit odkaz na dubajskou formulaci; počítá se jakákoli zmínka.",
+     "Noční kontrola (sobota 5:15 SEČ): třetí návrh dosud nevyšel a páteční noční plénum schválilo jen technické body, žádné schválení tedy nepřišlo před otevřením okna."
+    ],
+    "claims": {
+     "cop31-adopt-23": {
+      "label": "COP31 schválí závěrečné rozhodnutí do neděle",
+      "text": "Plénum konference COP31 v Antalyi schválí hlavní zastřešující rozhodnutí konference do 23:59 antalyjského času v neděli 22. listopadu 2026.",
+      "criterion": "ANO, pokud plénum mezi 7:00 v sobotu 21. listopadu a 23:59 v neděli 22. listopadu 2026 antalyjského času (UTC+3) schválí zastřešující rozhodnutí COP31 (rozhodnutí předsednictví připravené Tureckem a Austrálií, v návrhu z 19. listopadu nazvané „Antalyjská deklarace“, případně „Antalyjská dohoda“, ať už bude nakonec nazváno jakkoli, přijaté COP a/nebo CMA), doloženo záznamem UNFCCC o závěrečném plénu či stránkou rozhodnutí nebo časem schválení podle alespoň dvou zdrojů z okruhu Reuters, AFP, AP, Carbon Brief, ENB (IISD), Climate Home News. NE, pokud do 23:59 v neděli antalyjského času schváleno nebylo (včetně případu, kdy plénum o půlnoci stále jedná nebo je přerušeno, či kdy konference skončí bez zastřešujícího rozhodnutí). Schválení jiných bodů programu samo nestačí. O výsledku rozhoduje čas schválení, ne čas zveřejnění záznamu; chybějící doklad ponechává tvrzení otevřené."
+     },
+     "cop31-fossil-23": {
+      "label": "Rozhodnutí COP31 zmíní fosilní paliva",
+      "text": "Zastřešující rozhodnutí schválené na COP31 do 23:59 antalyjského času v neděli 22. listopadu 2026 obsahuje slova „fossil fuel“ nebo „fossil fuels“ (fosilní palivo, fosilní paliva).",
+      "criterion": "ANO, pokud zastřešující rozhodnutí COP31 schválené mezi 7:00 v sobotu 21. listopadu a 23:59 v neděli 22. listopadu 2026 antalyjského času (rozhodnutí, které se počítá pro cop31-adopt-23) obsahuje kdekoli ve schváleném anglickém znění (preambule, výrokové odstavce, poznámky pod čarou nebo název iniciativy či plánu, který zmiňuje) výraz „fossil fuel“ nebo „fossil fuels“ (i ve tvaru „fossil-fuel“), ověřeno podle textu na unfccc.int nebo doslovné citace agentur Reuters, AFP, AP, Carbon Brief, ENB (IISD) či Climate Home News. Zmínka o uhlí, ropě, plynu či „přechodných palivech“ bez těchto slov nestačí, stejně jako odkaz na „odstavec 28 rozhodnutí 1/CMA.5“ bez nich. NE, pokud v tomto okně žádné zastřešující rozhodnutí schváleno nebude, nebo pokud schválené rozhodnutí tato slova neobsahuje. Je-li rozhodnutí schváleno, ale jeho text ještě není k dispozici, tvrzení zůstává otevřené."
+     }
+    }
+   },
+   "claims": [
+    {
+     "id": "cop31-adopt-23",
+     "label": "COP31 adopts cover decision by Sunday",
+     "text": "The COP31 plenary in Antalya adopts the conference's main cover decision by 23:59 Antalya time on Sunday 22 November 2026.",
+     "criterion": "YES if the overarching COP31 cover decision (the presidency decision drafted by Türkiye and Australia, called the 'Antalya Declaration' in the 19 Nov draft and possibly the 'Antalya Accord', under whatever title it is finally adopted, by the COP and/or the CMA) is gavelled through in a plenary between 07:00 on Sat 21 Nov and 23:59 on Sun 22 Nov 2026, Europe/Istanbul time (UTC+3), as shown by the UNFCCC record of the closing plenary / decisions page or by the gavel time reported by at least two of Reuters, AFP, AP, Carbon Brief, ENB (IISD), Climate Home News. NO if it has not been gavelled by 23:59 on Sun 22 Nov Antalya time (including when the plenary is still running or suspended at midnight, or when the conference ends without a cover decision). Adoption of other agenda items alone does not count. A late record does not make it NO: the time of the gavel decides; missing evidence leaves the claim pending.",
+     "resolution_source": "https://unfccc.int/cop31 (COP31 decisions / closing plenary record); gavel time per Reuters, AFP, Carbon Brief (https://www.carbonbrief.org), ENB (https://enb.iisd.org/antalya-un-climate-change-conference-cop31)",
+     "schedule": "reported",
+     "slip_class": "other-scheduled",
+     "publishes": "Gavel time reported live by Reuters/AFP/Carbon Brief/DW the same night; UNFCCC posts adopted decisions (advance unedited versions) on unfccc.int within hours; ENB summary Tue 24 Nov",
+     "tz": "Europe/Istanbul",
+     "event_window": {
+      "start": "2026-11-21T07:00:00+03:00",
+      "end": "2026-11-22T23:59:00+03:00"
+     },
+     "evidence_at": "2026-11-23T01:00:00+01:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/cop31-adopt-23.md",
+     "signals": "data/dossiers/2026-11-23/cop31-adopt-23.signals.md",
+     "probability": 0.87,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "COPs that overrun their Friday close have almost always adopted their main decision on Saturday or Sunday (8 of 9 overrunning COPs since 2015 inside such a window, the exception finishing before it); the presidency is still negotiating with no one walking out, so the default continuation is a weekend adoption.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:08:45Z",
+       "checked": [
+        "markets.mjs search \"COP31\"",
+        "markets.mjs search \"COP31 fossil fuel\"",
+        "markets.mjs search \"climate summit agreement\""
+       ],
+       "note": "Only an unrelated Manifold market on China/India/US signing the 35-by-35 pledge and unrelated Polymarket markets; nothing on adoption or its timing. Carbon Brief reader sweepstake (median gavel 22:35 Sat) recorded in the signals file."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "COP main decision adopted between 07:00 day+1 and 23:59 day+2 local, given no adoption on the scheduled last day (COP21–COP30)",
+       "rate": 0.89,
+       "n": 9,
+       "source": "data/dossiers/2026-11-23/cop31-adopt-23.md (Carbon Brief key-outcomes pages)"
+      },
+      "dossier": "data/dossiers/2026-11-23/cop31-adopt-23.md",
+      "signals": "data/dossiers/2026-11-23/cop31-adopt-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:00+01:00",
+        "p": 0.8,
+        "p_blind": 0.78,
+        "at_blind": "2026-11-20T19:20:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Reference class: COPs that overran their scheduled last day adopted the main decision inside [07:00 day+1, 23:59 day+2] in 8/9 cases (COP21-COP30; Laplace 0.82, log-odds +1.50); slip class other-scheduled 0.069. Adjusted down about -0.25 log-odds for a harder-than-usual endgame (third draft not out 3 h after close, fourth draft expected, nine countries reject the text, Panama promises a formal objection, finance/adaptation texts fully bracketed) and the small risks of a pre-07:00 Saturday gavel or no cover decision at all.",
+        "p_held": 0.85,
+        "p_if_held": 0.94,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals hold no matching market; the Carbon Brief reader sweepstake (230+ entries) puts the median final gavel at 22:35 Sat, inside the window, with only a few guesses running into Monday or Tuesday. That fits the 8/9 overrun base rate, so I move up slightly from 0.78 (+0.1 log-odds). The entries closed before Friday's stalled endgame, so I keep most of my blind discount."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:07+01:00",
+        "p": 0.8,
+        "p_blind": 0.8,
+        "at_blind": "2026-11-20T19:20:55+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "COP31 is in overtime with a third draft due Friday evening and a fourth expected before the close (Carbon Brief DeBriefed 20 Nov); Bowen says nobody has said 'go home' (Reuters 20 Nov). Overrunning COPs (COP25-COP30) have nearly all gavelled their main decision on the Saturday or by early Sunday, which falls inside this window. The NO paths are a gavel before 07:00 Saturday (unlikely given how far apart they are), a slip past Sunday midnight, or a collapse or blocked adoption (Panama and others threaten to object).",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "No change. The dossier confirms the base rate: 8 of 9 COPs that overran their last day adopted inside an equivalent window, and the one exception gavelled before the window opened. The Carbon Brief sweepstake median (22:35 Sat) also falls inside the window. Against this, the texts are fully bracketed, nine countries reject the text, Panama has pledged a formal objection, and a fourth draft is expected, so a slip past Sunday or a stalled plenary keeps the figure at about 0.8."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:23:06+01:00",
+        "p": 0.8,
+        "p_blind": 0.79,
+        "at_blind": "2026-11-20T19:20:26+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: third draft still unseen hours after the scheduled close, a fourth expected, nine countries rejecting the text, Panama promising a formal objection, finance/adaptation texts fully bracketed; routes to NO are a gavel after Sunday midnight (~10%), the presidency dropping the overarching text for item decisions only (~5%, COP29-like), a pre-window overnight gavel (~3%) or a suspended plenary. Against that, 8 of 9 overrunning COPs since 2015 gavelled inside such a window, none ran past day+2, and presidencies gavel over lone objectors; the slip-class rate (0.07) is consistent with this.",
+        "p_held": 0.85,
+        "p_if_held": 0.94,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No market matches. The only outside signal, the Carbon Brief reader sweepstake (median final gavel 22:35 Sat, most pessimistic guesses Tuesday), sits inside the window and mildly supports the 8/9 record, so +1 point; it is not a probability and concerns the final gavel, so the Sunday-midnight, dropped-cover-text and pre-window risks stay."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:25+01:00",
+        "p": 0.75,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Anchor 0.82 from the 8/9 overrun record, cut to 0.75 because this COP is unusually split three hours after the scheduled close: no third draft out, a fourth expected, nine countries reject the text and Panama promises a formal objection, and the finance/adaptation/JT texts are fully bracketed. That raises the risk of a gavel after midnight on Sunday (the COP25/COP29 pattern pushed further) or a cover decision being dropped. The presidency is negotiating 'for as long as it takes' with nobody walking out, and the sweepstake median falls on Saturday night, so the window still holds most of the mass.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Dossier record: COPs that overran the scheduled last day adopted the main decision inside [07:00 day+1, 23:59 day+2] in 8/9 cases (COP21-COP30; exception COP23 gavelled before 07:00 day+1). Laplace (8+1)/(9+2) = 0.82. No matching market; Carbon Brief reader sweepstake median gavel 22:35 Sat (inside window)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:23:24+01:00",
+        "p": 0.78,
+        "p_blind": 0.7,
+        "at_blind": "2026-11-20T19:19:56+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Summit already overran its scheduled end (Fri 20 Nov) with a presidency cover draft circulating on 19 Nov; COPs usually gavel the cover text within 1-2 days of overrun, but open disagreement on scope and ambition could push it past Sunday midnight.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Carbon Brief sweepstake median (230+ guesses) puts the final gavel at 22:35 Sat, inside the window; up from 0.70, tempered by the tail of late guesses and the contested draft.",
+        "time_note": "at reported by the agent as 2026-11-20T21:30:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.787,
+      "calibrated": 0.872,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.05,
+      "decomposition": {
+       "p_held": 0.926,
+       "p_if_held": 0.94,
+       "p_if_not_held": 0,
+       "note": "The calibrated figure (0.87) is above the forecasters' p_held (geometric mean 0.85), so p_if_held is kept at the forecasters' geometric mean and p_held is scaled so that the product equals the published figure."
+      }
+     }
+    },
+    {
+     "id": "cop31-fossil-23",
+     "label": "COP31 decision mentions fossil fuels",
+     "text": "The cover decision adopted at COP31 by 23:59 Antalya time on Sunday 22 November 2026 contains the words 'fossil fuel' or 'fossil fuels'.",
+     "criterion": "YES if the COP31 cover decision gavelled through between 07:00 on Sat 21 Nov and 23:59 on Sun 22 Nov 2026, Europe/Istanbul time (the decision that counts under cop31-adopt-23), contains anywhere in its adopted text (preamble, operative paragraphs, footnotes, or the title of an initiative or roadmap it names) the string 'fossil fuel' or 'fossil fuels' (also hyphenated 'fossil-fuel'), checked against the adopted text on unfccc.int or a verbatim quote by Reuters, AFP, AP, Carbon Brief, ENB (IISD) or Climate Home News. Mentions of 'coal', 'oil', 'gas' or 'transitional fuels' without the words do not count, nor does a reference to 'paragraph 28 of decision 1/CMA.5' without them. NO if no cover decision is adopted in that window, or if the adopted cover decision does not contain the words. If a decision is adopted but its text is not yet available, the claim stays pending.",
+     "resolution_source": "https://unfccc.int/cop31 (adopted COP31 cover decision, advance unedited version); verbatim quotes by Reuters, AFP, Carbon Brief (https://www.carbonbrief.org), ENB (IISD)",
+     "schedule": "reported",
+     "slip_class": "other-scheduled",
+     "publishes": "UNFCCC posts the adopted text on unfccc.int within hours of the closing plenary; Carbon Brief/Reuters/AFP report the final wording the same night",
+     "tz": "Europe/Istanbul",
+     "event_window": {
+      "start": "2026-11-21T07:00:00+03:00",
+      "end": "2026-11-22T23:59:00+03:00"
+     },
+     "evidence_at": "2026-11-23T04:00:00+01:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/cop31-fossil-23.md",
+     "signals": "data/dossiers/2026-11-23/cop31-fossil-23.signals.md",
+     "probability": 0.24,
+     "forecast": {
+      "baseline": {
+       "status_quo": "no",
+       "why": "The latest published draft (19 Nov, second draft) does not contain the words at all; YES needs them restored (or newly added) in a later draft and then adopted within the window.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:08:45Z",
+       "checked": [
+        "markets.mjs search \"COP31\"",
+        "markets.mjs search \"COP31 fossil fuel\"",
+        "markets.mjs search \"climate summit agreement\""
+       ],
+       "note": "No market on the wording of the COP31 decision; only an unrelated Manifold 35-by-35 pledge market and unrelated Polymarket markets."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "COP cover decisions containing the words 'fossil fuel(s)', COP26–COP30",
+       "rate": 0.6,
+       "n": 5,
+       "source": "data/dossiers/2026-11-23/cop31-fossil-23.md"
+      },
+      "dossier": "data/dossiers/2026-11-23/cop31-fossil-23.md",
+      "signals": "data/dossiers/2026-11-23/cop31-fossil-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:28:00+01:00",
+        "p": 0.26,
+        "p_blind": 0.3,
+        "at_blind": "2026-11-20T19:20:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Nested on adoption in the window (~0.78). Given adoption, base rate of a main decision naming fossil fuels is 3/5 (COP26-30) but 0/2 for the last two, and restoration after a draft dropped the words 1/2 (COP28 yes, COP30 no); the 19 Nov draft has none and the Arab Group/LMDC block any fuel targeting, partly offset by a 23-country push and a broad criterion where any incidental mention counts. P(words | adopted) about 0.38, so 0.78 x 0.38 = 0.30.",
+        "p_held": 0.85,
+        "p_if_held": 0.3,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Starting point unchanged: adoption in the window at about 0.80 (8/9 overrunning COPs), and the words come back after a draft dropped them in 1 of 2 cases, with 0 of the last 2 cover decisions naming them. The union adds that the 19 Nov draft also drops the paragraph-28 recall and puts early warning, 35-by-35 and CCS where the Dubai paragraph's fuel language used to be. That deliberate substitution narrows the incidental routes I had counted on under the broad criterion. No third draft has appeared and Saudi Arabia/Arab Group opposition holds. P(words | adopted) falls from 0.35 to 0.30 (about -0.2 log-odds), giving 0.85 x 0.30 = 0.26.",
+        "rounds": [
+         {
+          "p": 0.3,
+          "at": "2026-11-20T19:22:00+01:00",
+          "reason": "first evening round, before the union of facts (outsider had read only the spec)"
+         }
+        ]
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:28:16+01:00",
+        "p": 0.27,
+        "p_blind": 0.27,
+        "at_blind": "2026-11-20T19:20:55+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "The second draft (19 Nov) removed every mention of fossil fuels after Saudi/Arab Group objections (Reuters, Carbon Brief). At least 23 countries, including EU states and Panama, demand the words back, so a reference such as 'transitioning away from fossil fuels' could return in a third or fourth draft. But COP29 and COP30 also ended without the words under similar petrostate resistance, and a reference to the GST paragraph alone does not count. My estimate is about 0.33 if a decision is adopted, times about 0.8 that it is adopted in the window.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "Down from 0.30. The union adds that the 19 Nov second draft has no recall of paragraph 28 of 1/CMA.5 at all. Its new para 36 copies the Dubai paragraph's structure but swaps in electrification and CCS, which looks like a deliberate substitution rather than an oversight; this closes the easiest incidental route to YES. As of 18:27Z there was still no third draft, and Saudi Arabia and other producers 'have resisted reopening the issue' (Turkish Minute, RFI). Restoration still has a real chance: the 23-country bloc includes the EU's large states, Brazil and Indonesia; Panama has a written objection threat; and COP28 is a precedent for language coming back. I estimate about 0.34 that the words appear if a cover decision is adopted, times about 0.8 that one is adopted in the window.",
+        "rounds": [
+         {
+          "p": 0.3,
+          "at": "2026-11-20T19:22:07+01:00",
+          "reason": "first evening round, before the union of facts (outsider had read only the spec)"
+         }
+        ]
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:28:38+01:00",
+        "p": 0.22,
+        "p_blind": 0.23,
+        "at_blind": "2026-11-20T19:20:26+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Nested in adoption in the window (~0.79). Case for YES: 23 countries incl. EU states and Brazil demand the words, nine refuse the text as it stands, and the criterion is broad (any incidental mention, a quoted COP28 recall or a roadmap title counts). But the latest draft has none, Reuters expects no major change of tone, the Arab Group/LMDC hold a red line on naming fuels, and the COP30 precedent is that dropped words stay out (restoration 1/2, last two COPs 0/2); about 0.29 if adopted.",
+        "p_held": 0.8,
+        "p_if_held": 0.27,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "The union adds little that I did not have, and what is new points slightly to NO: the second draft avoids not only the words but any reference to paragraph 28 of 1/CMA.5, and its para 36 copies the Dubai layout with electrification and CCS in place of fossil fuels, which reads as a deliberate presidency design to hold the producers rather than an oversight; no third draft and no report of Saudi/Arab Group/LMDC accepting any wording as of 18:27Z. The strongest YES case stays the same (23 countries, nine refusing the text, Panama's written objection, a broad criterion where any mention counts), but restoring the words needs the producers to yield and the COP30 precedent is that they do not. About 0.27 if a cover decision is adopted in the window, times 0.80 for adoption in the window.",
+        "rounds": [
+         {
+          "p": 0.23,
+          "at": "2026-11-20T19:23:06+01:00",
+          "reason": "first evening round, before the union of facts (outsider had read only the spec)"
+         }
+        ]
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:28:53+01:00",
+        "p": 0.3,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier",
+         "union-of-facts"
+        ],
+        "reason": "Same anchor as before: P(adopted in window) about 0.75, from 8 of 9 overrunning COPs, times P(words | adopted). That second factor falls from about 0.45 to about 0.40, so the estimate moves from 0.34 to 0.30. The new fact is that the second draft has no recall of paragraph 28 of 1/CMA.5 either, and its para 36 keeps the Dubai paragraph's layout but puts electrification and CCS in place of the fossil list. That looks like a deliberate substitution, which closes the easiest incidental route to YES. The research also found no third draft and no sign that Saudi Arabia, the Arab Group or the LMDC have accepted any wording. The 23-country push and Panama's threatened objection keep a restoration on the COP28 pattern possible, and any mention anywhere in the adopted text counts.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Nested on cop31-adopt-23 (0.75). Cover decision contains 'fossil fuel(s)': 3/5 COP26-COP30, 0/2 in the last two; restored after a draft dropped them 1/2 (COP28 yes, COP30 no). Conditional ~0.45 x 0.75 = 0.34. No market."
+        },
+        "rounds": [
+         {
+          "p": 0.34,
+          "at": "2026-11-20T19:20:25+01:00",
+          "reason": "first evening round, before the union of facts (outsider had read only the spec)"
+         }
+        ]
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:29:05+01:00",
+        "p": 0.33,
+        "p_blind": 0.6,
+        "at_blind": "2026-11-20T19:19:56+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Press reports say the draft calls for accelerated action on phasing out/exiting fossil fuels, so the words are very likely in any adopted text (~85%); multiplied by ~70% chance of adoption in window.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals",
+         "union-of-facts"
+        ],
+        "reason": "The current (19 Nov) draft has neither the words nor a paragraph-28 recall, so my earlier 0.58 rested on a draft that no longer exists. Restoration pressure is large (23 countries, EU, Panama's formal objection), but producers have blocked it and the COP30 precedent was a dropped phrase that did not return; a compromise may also cite 1/CMA.5 without the words, which does not count. I put P(words | adopted) at about 0.42 and P(adopted in window) at about 0.78.",
+        "rounds": [
+         {
+          "p": 0.58,
+          "at": "2026-11-20T19:23:24+01:00",
+          "reason": "first evening round, before the union of facts (outsider had read only the spec)"
+         }
+        ],
+        "time_note": "at reported by the agent as 2026-11-20T22:00:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.274,
+      "calibrated": 0.239,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.11,
+      "decomposition": {
+       "p_held": 0.825,
+       "p_if_held": 0.291,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
+      },
+      "disagreement": {
+       "cause": "inputs",
+       "note": "First-round spread 0.35 (outsider 0.58 against 0.23–0.34): the outsider, working without the dossier, assumed the first draft's fossil-fuel wording was still on the table. All five reran once on a union of facts (work/evening/union-cop31-fossil.md plus the research finding); the spread fell to 0.11. First-round numbers are kept in each agent's rounds."
+      },
+      "research": {
+       "at": "2026-11-20T18:30:00Z",
+       "question": "Has a third draft of the COP31 cover decision appeared, and does it contain 'fossil fuel(s)' or a recall of paragraph 28 of 1/CMA.5? Have Saudi Arabia, the Arab Group or the LMDC accepted any wording?",
+       "finding": "No third draft as of 18:27Z Fri 20 Nov (RFI 16:38Z, Turkish Minute 15:12Z and Reuters 15:04Z still describe the 19 Nov second draft as current). The second draft contains neither 'fossil fuels' nor a reference to paragraph 28 of decision 1/CMA.5; its para 36 copies that paragraph's layout but lists early warning, 35-by-35 electrification and CCS. No time announced for a new text or the closing plenary; Saudi Arabia and other producers still oppose. Not decisive.",
+       "sources": [
+        "https://connect.carbonbrief.org/t/23-countries-call-for-cop31-cover-text-to-include-transition-away-from-fossil-fuels/193",
+        "https://www.rfi.fr/en/",
+        "https://www.turkishminute.com/2026/11/20/cop31-talks-head-into-overtime-as-countries-split-over-fossil-fuels/",
+        "https://whtc.com/2026/11/20/cop31-climate-talks-spill-into-overtime-as-nations-quarrel-over-fossil-fuels/"
+       ],
+       "decisive": false
+      },
+      "shadow": {
+       "sequential": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:42:00+01:00",
+        "p_blind": 0.24,
+        "p": 0.22,
+        "steps": 8,
+        "searches": 2,
+        "trace": "data/dossiers/2026-11-23/cop31-fossil-23.belief.json",
+        "note": "One extra Google News lookup after step 7 (no result) was folded into the step-8 submit."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ua-war",
+   "scope": "world",
+   "topic": "security",
+   "event_key": "ua-war-2026-11-22",
+   "case_key": "ru-ua-peace-talks",
+   "size": "half",
+   "kicker": "War in Ukraine",
+   "headline": "Russia launches some 150 drones at Ukraine overnight",
+   "body": [
+    "KYIV, 22 November – Russia launched about 150 attack and decoy drones at Ukraine overnight into Sunday, the Ukrainian Air Force said in its morning summary, two nights after a combined strike with 404 drones and dozens of missiles in which Russian missiles came down in Poland.",
+    "In that attack on the night to Friday, Russia fired 84 cruise missiles as well as ballistic missiles, the Air Force said; President Volodymyr Zelensky put the number of ballistic missiles at 27. At least nine people were killed and three bridges in Kyiv were damaged. Polish Defence Minister Władysław Kosiniak-Kamysz said two missiles and a jet-powered drone fell on Polish territory, at Nowy Lipowiec, Rudnik nad Sanem and Molodycz, and called it another Russian provocation.",
+    "On Friday evening two ballistic missiles struck central Kryvyi Rih, followed by drones as rescuers arrived, killing a seven-year-old boy and a 20-year-old paramedic and injuring 47 people, the head of the city's defence council, Oleksandr Vilkul, said. Air Force spokesman Yurii Ihnat said Russia was launching up to 200 drones every night and more than 100 during the day.",
+    "Talks on a large prisoner exchange agreed at the Abu Dhabi talks earlier this month continued. US envoy Jared Kushner said on Thursday that thousands of prisoners of war were to return home in the coming weeks; Zelensky has spoken of 1,000 for 1,000, possibly 1,500 for 1,500."
+   ],
+   "basis": "Rests on the Air Force's first summaries for the last 30 nights (median 160 drones, 145 on second nights after a mass strike) and the absence of any announced pause in strikes; a prisoner exchange before Sunday night was judged improbable.",
+   "analysis": [
+    "The Air Force count for the night to 22 November was put at a median of 151 drones, with a 10–90% range of about 60 to 437. No market or published forecast covers nightly drone counts.",
+    "Base rate: the last 30 first summaries (nights to 22 Oct–20 Nov) had a median of 160, mean 189 and sd 91.4; 7 of 30 nights reached 280 or more. The night to 22 November was the second night after the 404-drone strike, and second nights after big strikes had a median of 145 (n=6). The five forecasters' medians: base-rate 150, evidence 145, adversarial 150, anchor 150, outsider 160.",
+    "What could go the other way: another retaliation wave after Putin's vow over the Crimean Bridge (mass nights came every 1–8 nights, sometimes back to back, as on 3–4 November) would put the count far above 280; daytime waves can also thin the night count.",
+    "Prisoner exchange on 21–22 November: put at 8%. Class rate for a two-day window 6.9% (n=304); forecasters base-rate 0.13, evidence 0.13, adversarial 0.08, anchor 0.12, outsider 0.17; combined 0.12, calibrated 0.08. Polymarket's 'exchange by 30 November' at about 0.55 is only an upper bound. Timing words ('next week', 'coming weeks') and Russia's lists still outstanding on 19 November point past the weekend, so the story does not report an exchange."
+   ],
+   "sources": [
+    {
+     "title": "Ukrinform: Ukraine's air defenses down 82 missiles, 380 Russian drones overnight (20 Nov)",
+     "url": "https://www.ukrinform.net/rubric-ato/4186737-ukraines-air-defenses-down-82-missiles-380-russian-drones-overnight.html"
+    },
+    {
+     "title": "Kyiv Independent: 3 Kyiv bridges struck in massive Russian aerial assault on Ukraine, at least 9 dead (20 Nov)",
+     "url": "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/"
+    },
+    {
+     "title": "Kyiv Independent: 2 Russian Kh-101 missiles, drone, fall in Poland during Russian attack on Ukraine (20 Nov)",
+     "url": "https://kyivindependent.com/poland-reports-airspace-violation-during-russian-attack-on-ukraine-investigates-debris-crash/"
+    },
+    {
+     "title": "Ukrinform: Two Russian missiles, jet-powered drone crash in Poland – Defense Minister (20 Nov)",
+     "url": "https://www.ukrinform.net/rubric-ato/4186795-two-russian-missiles-jetpowered-drone-crash-in-poland-defense-minister.html"
+    },
+    {
+     "title": "Kyiv Independent: 'Despicable' – Russian double-tap attack in Kryvyi Rih kills 7-year-old and paramedic, injures 47 (21 Nov)",
+     "url": "https://kyivindependent.com/russian-ballistic-missile-strikes-on-kryvyi-rih-kill-7-year-old-paramedic-injure-42-others-in-double-tap-attack/"
+    },
+    {
+     "title": "Ukrinform: Russia launches up to 200 attack drones nightly and more than 100 during the day – Ihnat (21 Nov)",
+     "url": "https://www.ukrinform.net/rubric-ato/4186874-russia-launches-up-to-200-attack-drones-nightly-and-more-than-100-during-the-day-ihnat.html"
+    },
+    {
+     "title": "Ukrinform: Kushner reports progress on security guarantees for Ukraine and postwar reconstruction (19 Nov)",
+     "url": "https://www.ukrinform.net/rubric-polytics/4186570-kushner-reports-progress-on-security-guarantees-for-ukraine-and-postwar-reconstruction.html"
+    },
+    {
+     "title": "Interfax-Ukraine: Kushner confirms agreement on large-scale POW exchange reached in Abu Dhabi (11 Nov)",
+     "url": "https://en.interfax.com.ua/news/general/1234775.html"
+    }
+   ],
+   "rationale": "ua-drones-23 (interval): no base-rate class; own record of Air Force first summaries, 30 nights median 160, sd 91.4 (scale), second nights after >=280 median 145; agents q10/q50/q90 base-rate 75/150/450, evidence 50/145/425, adversarial 72/150/448, anchor 65/150/440, outsider 40/160/420; combined 60.4/151/436.6; no market. Main risk: a further mass retaliation strike (about one night in four at 280+). ua-pow-23: class ua-ru-pow-exchange-two-day-window 0.069 (n=304); agents base-rate 0.13, evidence 0.13, adversarial 0.08, anchor 0.12, outsider 0.17; combined 0.123, calibrated 0.076 (0.08); no matching market (Polymarket by 30 Nov 0.55-0.565 as upper bound). Main risk: an early first stage at the weekend, announced only once done. Overnight check 21 Nov 05:10–05:20 CET: nothing material; evening numbers and record kept.",
+   "cs": {
+    "kicker": "Válka na Ukrajině",
+    "headline": "Rusko v noci vyslalo na Ukrajinu zhruba 150 dronů",
+    "body": [
+     "KYJEV 22. listopadu – Rusko v noci na neděli vyslalo proti Ukrajině zhruba 150 útočných a klamných dronů, uvedlo ve svém ranním souhrnu ukrajinské letectvo. Stalo se tak dvě noci po kombinovaném útoku 404 drony a desítkami raket, při němž ruské střely dopadly i do Polska.",
+     "Při útoku v noci na pátek Rusko podle letectva odpálilo 84 střel s plochou dráhou letu a také balistické rakety; prezident Volodymyr Zelenskyj uvedl, že balistických raket bylo 27. Zahynulo nejméně devět lidí a poškozeny byly tři kyjevské mosty. Polský ministr obrany Władysław Kosiniak-Kamysz oznámil, že na polské území dopadly dvě střely a proudový dron, a to u obcí Nowy Lipowiec, Rudnik nad Sanem a Molodycz. Označil to za další ruskou provokaci.",
+     "V pátek večer zasáhly centrum Kryvého Rihu dvě balistické rakety a po příjezdu záchranářů následovaly drony. Zahynul sedmiletý chlapec a dvacetiletá zdravotnice, 47 lidí utrpělo zranění, uvedl šéf městské obranné rady Oleksandr Vilkul. Mluvčí letectva Jurij Ihnat řekl, že Rusko každou noc vysílá až 200 dronů a přes den více než 100.",
+     "Pokračovala jednání o rozsáhlé výměně zajatců, na níž se strany dohodly na rozhovorech v Abú Zabí na začátku měsíce. Americký vyslanec Jared Kushner ve čtvrtek uvedl, že se v příštích týdnech mají domů vrátit tisíce válečných zajatců; Zelenskyj hovořil o výměně 1000 za 1000, případně 1500 za 1500."
+    ],
+    "basis": "Opírá se o první souhrny letectva za posledních 30 nocí (medián 160 dronů, 145 ve druhé noci po masivním útoku) a o to, že žádná pauza v útocích ohlášena nebyla; výměnu zajatců do neděle večer vyhodnotila redakce jako nepravděpodobnou.",
+    "analysis": [
+     "Počet dronů za noc na 22. listopadu podle letectva byl odhadnut s mediánem 151 a rozpětím 10–90 % zhruba 60 až 437. Žádný trh ani zveřejněná prognóza noční počty dronů nepokrývá.",
+     "Základní četnost: posledních 30 prvních souhrnů (noci na 22. října až 20. listopadu) mělo medián 160, průměr 189 a směrodatnou odchylku 91,4; v 7 z 30 nocí bylo dronů 280 a více. Noc na 22. listopadu byla druhou nocí po útoku 404 drony a druhé noci po velkých útocích měly medián 145 (n = 6). Mediány pěti prognostiků: základní četnost 150, důkazy 145, oponent 150, kotva 150, outsider 160.",
+     "Co mohlo dopadnout jinak: další odvetná vlna po Putinově slibu kvůli Krymskému mostu (masivní noci přicházely každou 1. až 8. noc, někdy i po sobě, jako 3. a 4. listopadu) by počet vytlačila vysoko nad 280; denní vlny navíc mohou noční počet snížit.",
+     "Výměna zajatců 21.–22. listopadu: odhad 8 %. Základní četnost pro dvoudenní okno 6,9 % (n = 304); prognostici: základní četnost 0,13, důkazy 0,13, oponent 0,08, kotva 0,12, outsider 0,17; kombinace 0,12, po kalibraci 0,08. Kurz Polymarketu na výměnu do 30. listopadu kolem 0,55 je jen horní mez. Časové údaje („příští týden“, „v příštích týdnech“) a ruské seznamy, které 19. listopadu stále chyběly, ukazují až za víkend, proto zpráva výměnu neuvádí."
+    ],
+    "claims": {
+     "ua-drones-23": {
+      "label": "Drony vyslané v noci na neděli",
+      "text": "Počet dronů, které podle prvního ranního souhrnu ukrajinského letectva z neděle 22. listopadu 2026 Rusko vyslalo proti Ukrajině v noci na 22. listopadu (od 18:00 kyjevského času 21. listopadu).",
+      "criterion": "Celkový počet bezpilotních letounů v prvním souhrnu nočního útoku, který ukrajinské letectvo zveřejní 22. listopadu 2026 (kyjevského času) a který zahrnuje útok počítaný od 18:00 kyjevského času 21. listopadu, jak je zveřejněn na telegramovém kanálu letectva (t.me/kpszsu) nebo jeho facebookové stránce či jak jej převezmou Ukrinform, Ukrajinska pravda, Kyiv Independent nebo Interfax-Ukrajina. Drony jsou útočné bezpilotní letouny tak, jak je souhrn počítá (drony typu Šáhed včetně proudových, Gerbera, Parodija a jiné klamné drony a také proudové střely jako Banderol/Dan-T, pokud je souhrn zahrnuje do celkového počtu dronů); rakety uvedené zvlášť se nepočítají. Souhrn vydaný pozdě dopoledne nebo kolem poledne se stále počítá jako první souhrn; samostatné denní zprávy a pozdější opravy se nepočítají. Pokud letectvo oznámí, že té noci žádné drony vyslány nebyly, hodnota je 0. Pokud souhrn za tuto noc nebude zveřejněn, tvrzení zůstává otevřené."
+     },
+     "ua-pow-23": {
+      "label": "Výměna zajatců do neděle",
+      "text": "Rusko a Ukrajina mezi 06:00 kyjevského času v sobotu 21. listopadu a 23:59 kyjevského času v neděli 22. listopadu 2026 uskuteční výměnu válečných zajatců (jakéhokoli rozsahu).",
+      "criterion": "ANO, pokud Zelenskyj, ukrajinský Koordinační štáb pro zacházení s válečnými zajatci nebo ruské ministerstvo obrany uvede, že mezi 06:00 kyjevského času 21. listopadu a 23:59 kyjevského času 22. listopadu 2026 proběhla výměna válečných zajatců mezi Ruskem a Ukrajinou, při níž se zajatci vrátili na obě strany; počítá se jakýkoli rozsah včetně první etapy vícefázové výměny. Předání ostatků, jednostranná propuštění a návraty pouze civilistů (bez válečných zajatců) se nepočítají. Prohlášení zveřejněné po 23:59 22. listopadu se počítá, pokud uvádí, že výměna proběhla v daném okně. NE, pokud v okně žádná taková výměna neproběhla."
+     }
+    }
+   },
+   "claims": [
+    {
+     "id": "ua-drones-23",
+     "label": "Drones launched in the night to Sunday",
+     "text": "The number of drones that, according to the Ukrainian Air Force's first morning summary on Sunday 22 November 2026, Russia launched at Ukraine in the night of 21-22 November (from 18:00 Kyiv time on 21 November).",
+     "criterion": "The UAV total in the Ukrainian Air Force's first summary of the overnight attack published on 22 Nov 2026 (Kyiv time), covering the attack counted from 18:00 Kyiv time on 21 Nov, as published on the Air Force's Telegram channel (t.me/kpszsu) or Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Drones means strike UAVs as the summary counts them (Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions such as Banderol/Dan-T that the summary includes in its UAV total); missiles listed separately are not counted. A summary issued late in the morning or around noon still counts as the first summary; separate daytime reports and later corrections do not count. If the Air Force reports that no drones were launched that night, the value is 0. If no summary for that night has been published, the claim stays pending.",
+     "resolution_source": "https://t.me/s/kpszsu ; https://www.ukrinform.net/rubric-ato ; https://kyivindependent.com/",
+     "schedule": "official",
+     "slip_class": "none",
+     "publishes": "Ukrainian Air Force Telegram morning summary, normally 08:00-10:00 Kyiv on 22 Nov (up to ~12:00 after very large attacks); Ukrinform repeats it within the hour",
+     "tz": "Europe/Kyiv",
+     "event_window": {
+      "start": "2026-11-21T18:00:00+02:00",
+      "end": "2026-11-22T12:00:00+02:00"
+     },
+     "evidence_at": "2026-11-22T14:00:00+02:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/ua-drones-23.md",
+     "signals": "data/dossiers/2026-11-23/ua-drones-23.signals.md",
+     "kind": "interval",
+     "quantity": "Drones launched by Russia at Ukraine in the night of 21-22 Nov 2026, Ukrainian Air Force first morning summary",
+     "unit": "drones",
+     "quantiles": {
+      "q10": 60.4,
+      "q50": 151,
+      "q90": 436.6
+     },
+     "scale": 91.4,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "Interval claim: a reader who expects nothing unusual would expect a night near the recent median of about 160 drones (last 30 nights), with a mass strike (280+) on roughly one night in four.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:11:36Z",
+       "checked": [
+        "markets.mjs search \"russia drones ukraine\"",
+        "markets.mjs search \"russia ukraine prisoner exchange\""
+       ],
+       "note": "No market on nightly drone counts; closest are ceasefire and NATO-drone-shootdown markets, which do not match."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-23/ua-drones-23.md",
+      "signals": "data/dossiers/2026-11-23/ua-drones-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:00+01:00",
+        "q10": 75,
+        "q50": 150,
+        "q90": 450,
+        "q_blind": {
+         "q10": 75,
+         "q50": 150,
+         "q90": 450
+        },
+        "at_blind": "2026-11-20T19:20:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Reference: Air Force first summaries for the last 30 nights (median 160, empirical p10/p90 about 111/311, 7 of 30 nights at 280+); the claim night is the second night after the 404-drone strike of 20 Nov, and second nights after big strikes had a median of 145, so centre 150. Right-skewed range; the spec's minimum width (4.1 x 91.4 = 375) forces q90 well above the empirical p90, which I place on the upside where the mass-strike tail and Putin's retaliation vow sit.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals: no market or published forecast of nightly drone counts. Unchanged from blind: centre on the median of second nights after big strikes (145) and the 30-night median (160), skewed upward with the width the spec requires."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:07+01:00",
+        "q10": 50,
+        "q50": 145,
+        "q90": 425,
+        "q_blind": {
+         "q10": 45,
+         "q50": 140,
+         "q90": 425
+        },
+        "at_blind": "2026-11-20T19:20:55+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Recent ordinary nights are 69-160 drones (Ukrinform/UP headlines this week), and a 404-drone mass strike came on the night to 20 Nov. Another mass strike only two nights later is less likely than usual, so I centre slightly below the 30-night median of 160. The upper tail is kept wide (a mass strike is possible) to meet the minimum width of 4.1 x 91.4.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Final q10 50 / q50 145 / q90 425 (width 375, at least 4.1 x 91.4). Small upward shift. In the dossier's 30-night record, the second night after a 280+ strike had a median of 145 (range 98-289), and 7 of 30 nights were 280+, sometimes on consecutive nights. The log-scale model gives 66/160/389. I stay slightly below 160 because of the 20 Nov strike, and keep the right skew. The signals file has no market or model."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:23:06+01:00",
+        "q10": 72,
+        "q50": 150,
+        "q90": 448,
+        "q_blind": {
+         "q10": 72,
+         "q50": 150,
+         "q90": 448
+        },
+        "at_blind": "2026-11-20T19:20:26+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Second night after a 404-drone strike: second nights after big strikes had median 145 and the 30-night median is 160, so the centre sits slightly below 160. Adversarial tail: back-to-back mass nights have happened (3-4 Nov), Putin's retaliation cycle is live and big nights come every 1-8 nights (7 of 30 at 280+), so the upper tail is long; range skewed on the log scale and widened to the required minimum width.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals contain no market, model or forecast of nightly drone counts; unchanged from the blind range."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:25+01:00",
+        "q10": 65,
+        "q50": 150,
+        "q90": 440,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Centre at 150, slightly below the 30-night median because the claim's night is the second night after the 404-drone mass strike of 20 Nov, and second nights after big strikes have a median of 145. The range is skewed upward because Putin's retaliation vow and the back-to-back big nights of 3-4 Nov leave about a one-in-four chance of a mass strike. The width is set to the method's minimum (4.1 x scale 91.4 = 375), which is wider than the empirical 10-90 range; the extra width goes to the upper tail because counts cannot be negative.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Air Force first summaries, last 30 nights: median 160, empirical p10/p90 about 111/311, log-sd 0.433; second nights after a >=280 night: median 145 (n=6). Log-scale start about 66/160/389 (dossier). No market or consensus."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:23:24+01:00",
+        "q10": 40,
+        "q50": 160,
+        "q90": 420,
+        "q_blind": {
+         "q10": 40,
+         "q50": 160,
+         "q90": 420
+        },
+        "at_blind": "2026-11-20T19:19:56+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Centre on the 30-night median of 160 with right-skew (mean 189); no specific information on the night, range widened to meet the minimum width.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals contain no market or model for nightly counts; unchanged.",
+        "time_note": "at reported by the agent as 2026-11-20T21:30:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "consensus": null,
+      "scale_source": "No analysts' consensus exists and series.mjs has no surprises for this quantity (n=0, pooled factor 1.353). Scale = sd of the Air Force's first-summary nightly counts over the last 30 nights (nights to 22 Oct-20 Nov 2026: median 160, mean 188.8, sd 91.4; sd of night-to-night changes 128.1, i.e. 90.6 per night), sources listed night by night in data/dossiers/2026-11-23/ua-drones-23.md (Ukrinform/Air Force Telegram). The level sd already exceeds any plausible forecast error, so the pooled factor was not applied on top. The counts are right-skewed (log sd 0.433); the Normal start therefore has a negative q10.",
+      "scale_basis": "pooled",
+      "series": null,
+      "normal_quantiles": {
+       "q10": -27.4,
+       "q50": 160,
+       "q90": 347.4
+      },
+      "width_scales": 4.116
+     }
+    },
+    {
+     "id": "ua-pow-23",
+     "label": "POW exchange by Sunday",
+     "text": "Between 06:00 Kyiv time on Saturday 21 November and 23:59 Kyiv time on Sunday 22 November 2026, Russia and Ukraine carry out a prisoner-of-war exchange (of any size).",
+     "criterion": "YES if Zelensky, Ukraine's Coordination Headquarters for the Treatment of Prisoners of War or the Russian Defence Ministry states that an exchange of prisoners of war between Russia and Ukraine took place between 06:00 Kyiv time on 21 Nov and 23:59 Kyiv time on 22 Nov 2026, with prisoners returned to both sides; any size counts, including the first stage of a multi-stage exchange. Returns of bodies, one-way releases, and returns of civilians only (with no POWs) do not count. A statement published after 23:59 on 22 Nov counts if it says the exchange took place in the window. NO if no such exchange took place in the window.",
+     "resolution_source": "https://koordshtab.gov.ua/ ; https://www.president.gov.ua/ ; https://kyivindependent.com/tag/prisoner-exchange/ ; https://en.interfax.com.ua/news/general.html ; https://www.ukrinform.net/",
+     "schedule": "reported",
+     "slip_class": "none",
+     "publishes": "Same-day posts by Zelensky (Telegram/X), the Coordination HQ and the Russian Defence Ministry when an exchange happens; Kyiv Independent, Ukrinform and Interfax-Ukraine within hours",
+     "tz": "Europe/Kyiv",
+     "event_window": {
+      "start": "2026-11-21T06:00:00+02:00",
+      "end": "2026-11-22T23:59:00+02:00"
+     },
+     "evidence_at": "2026-11-22T22:00:00+02:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/ua-pow-23.md",
+     "signals": "data/dossiers/2026-11-23/ua-pow-23.signals.md",
+     "probability": 0.08,
+     "not_derived": true,
+     "forecast": {
+      "baseline": {
+       "status_quo": "no",
+       "why": "No date is set; Zelensky said on 19 Nov that Russia had not yet provided its lists, and the timing words used ('next week' on 19 Nov, 'coming weeks') point after the weekend. YES needs the exchange to happen sooner than announced.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:11:42Z",
+       "checked": [
+        "markets.mjs search \"russia ukraine prisoner exchange\"",
+        "markets.mjs search \"prisoner swap november\"",
+        "markets.mjs search \"prisoner exchange november 30\""
+       ],
+       "note": "No market on a 21-22 Nov window. Polymarket 'Russia x Ukraine prisoner exchange by November 30, 2026?' 0.55-0.565 (vol ~3.8k) has a later deadline and is only an upper bound."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "ua-ru-pow-exchange-two-day-window",
+       "rate": 0.069,
+       "n": 304,
+       "source": "pipeline/reference-classes.json"
+      },
+      "dossier": "data/dossiers/2026-11-23/ua-pow-23.md",
+      "signals": "data/dossiers/2026-11-23/ua-pow-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:00+01:00",
+        "p": 0.13,
+        "p_blind": 0.13,
+        "at_blind": "2026-11-20T19:20:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Class ua-ru-pow-exchange-two-day-window 0.069 (21/304); scaled to this 2.75-day window about 0.095. Raised (+0.35 log-odds) because a large swap is agreed and the Kremlin calls it the 'final stage' (Polymarket by 30 Nov ~0.55 implies an elevated hazard), but held down because on 19 Nov Zelensky said Russia had not provided its lists and the timing words ('next week', 'coming weeks') point after the weekend.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Polymarket 'exchange by 30 Nov' at 0.55-0.565 is an upper bound. Spreading that over about 10 days, with the timing words ('next week') pointing past the weekend and Russia's lists not delivered as of 19 Nov, a 21-22 Nov share of about a quarter of it is consistent with my blind 0.13. Unchanged."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:07+01:00",
+        "p": 0.13,
+        "p_blind": 0.15,
+        "at_blind": "2026-11-20T19:20:55+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "The Kremlin says the swap agreed in Abu Dhabi is in its 'final stage' with lists being verified (Kyiv Post, Peskov). But on 19 Nov Zelensky said Russia had not yet sent its lists, and the US/EFE wording points to 'next week' (from 23 Nov). A large exchange of about 1,000 each way usually needs days after the lists are agreed, so a Saturday-Sunday swap would be early but not impossible.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Slightly down. The Polymarket price for an exchange by 30 Nov (0.55-0.565) is an upper bound, and our 2.75-day window is roughly a quarter of its window. The window also sits before the 'next week' period named in the EFE headline. The May 2025 precedent (agreed 16 May, 'next week' on 17 May, carried out 23-25 May) and Russia's lists still outstanding on 19 Nov point after the weekend. The class rate for a two-day window is 0.069; the 'final stage' wording lifts this case above it."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:23:06+01:00",
+        "p": 0.08,
+        "p_blind": 0.08,
+        "at_blind": "2026-11-20T19:20:26+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for YES: Kremlin says 'final stage', 28 days since the last swap, large swaps often fall on weekends and are announced only when done. But Zelensky said on 19 Nov that Russia's lists had not arrived, the timing words ('next week', 'coming weeks') point after Sunday, the May 2025 precedent took a week from agreement, and the unconditional two-day rate is 7%; a small early first stage is the only realistic route.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "The Polymarket by-30-Nov exchange market (0.55, thin) is only an upper bound; spread over the ten remaining days with timing words pointing to 23-29 Nov, the weekend share is consistent with my blind 8%, so unchanged."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:25+01:00",
+        "p": 0.12,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "The evenly spread market gives about 0.20, cut to 0.12 because the timing signals push the mass past the weekend: the EFE headline said 'next week' on 19 Nov (Mon 23 to Sun 29 Nov), Kushner said 'coming weeks', and Zelensky said on 19 Nov that Russia had not yet sent its lists. It stays above the 0.07 class rate because the Kremlin says the deal is in its 'final stage', it is 28 days since the last swap, and past large swaps were often held at weekends.",
+        "anchor": {
+         "kind": "market",
+         "detail": "Polymarket 'Russia x Ukraine prisoner exchange by November 30, 2026?' 0.55-0.565 (vol ~3.8k), an upper bound. Spreading it evenly over the ~10 days to 30 Nov gives ~0.20 for this 2.75-day window: 1 - 0.44^(2.75/10.2). Class ua-ru-pow-exchange-two-day-window base rate 0.069 (n=304)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:23:24+01:00",
+        "p": 0.17,
+        "p_blind": 0.15,
+        "at_blind": "2026-11-20T19:19:56+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "A large exchange was agreed at the 11 Nov Abu Dhabi talks; I could not confirm whether it has already happened. Exchanges come every few weeks, so a given 2-day window is low base rate, raised a bit by the pending agreement.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Polymarket 0.55 for any exchange by 30 Nov is an upper bound on a 2-day window out of ~10; slight rise from 0.15.",
+        "time_note": "at reported by the agent as 2026-11-20T21:30:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.123,
+      "calibrated": 0.076,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.09
+     }
+    }
+   ]
+  },
+  {
+   "id": "gulf-shipping",
+   "scope": "world",
+   "topic": "security",
+   "event_key": "us-iran-2026-11-22",
+   "case_key": "us-iran",
+   "size": "third",
+   "kicker": "Gulf shipping",
+   "headline": "UKMTO reports fresh incident with merchant ship in Gulf waters",
+   "body": [
+    "DUBAI, 22 November – The UK Maritime Trade Operations centre reported a new security incident involving a merchant vessel in the waters off the Arabian Peninsula over the weekend, extending a run of attacks on shipping in and around the Strait of Hormuz under the US blockade of Iran.",
+    "On Friday, UKMTO said an outbound tanker was struck on its port bow by an unknown projectile about eight nautical miles north of Khasab in Oman at around 16:00 CET, starting a fire on board. UKMTO counted six attacks on tankers in the week to 18 November, with traffic through the strait about 65% below pre-war levels, and the Joint Maritime Information Center rates the threat there as severe.",
+    "Foreign Minister Abbas Araghchi said on Friday that Iran would break the blockade, while the Revolutionary Guards-affiliated Fars agency proposed a tanker convoy and threatened strikes on Gulf oil facilities if it were stopped. The US military said on 18 November it would also treat ships taking Iranian cargo in ship-to-ship transfers as evading the blockade."
+   ],
+   "basis": "Rests on the UKMTO/JMIC record (an incident in 19 of 21 two-day spans from 30 October to 20 November, 14 of 22 days) and the continuing US–Iran confrontation at sea; the evidence on how often strictly qualifying incidents occur is mixed (8 of the last 14 days).",
+   "analysis": [
+    "At least one UKMTO/JMIC-reported attack or security incident with a merchant vessel in Hormuz, the Gulf, the Gulf of Oman or the Arabian Sea between 08:00 Gulf time on 21 November and the end of 22 November was put at 86%. No market matches the claim; Polymarket's weekly UKMTO notice-count buckets count all regions and notice types.",
+    "Base rate: 19 of the last 21 two-day spans (30 October–20 November) had a qualifying incident, 14 of 22 single days (0.64 a day, about 0.82 for the 1.67-day window). Five forecasters: base-rate 0.79, evidence 0.80, adversarial 0.79, anchor 0.80, outsider 0.65; combined 0.77, calibrated 0.86.",
+    "What could go the other way: the weekend of 14–15 November was quiet, UKMTO often reports late (time-late notices days afterwards) and the criterion excludes suspicious approaches, Red Sea and Gulf of Aden incidents and claims by Iran alone. A tanker convoy from Kharg would raise the tempo."
+   ],
+   "sources": [
+    {
+     "title": "gCaptain: Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide (20 Nov)",
+     "url": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/"
+    },
+    {
+     "title": "Arab News: Tanker hit in Strait of Hormuz as missile strikes Iran's Qeshm Island (20 Nov)",
+     "url": "https://www.arabnews.com/middle-east/tanker-hit-in-strait-of-hormuz-as-missile-strikes-irans-qeshm-island-3013176"
+    },
+    {
+     "title": "Iran International: Strait of Hormuz shipping 65% below pre-war levels in mid-November, UKMTO says (21 Nov)",
+     "url": "https://www.iranintl.com/en/202611215184"
+    },
+    {
+     "title": "Iran International: Iran hardliners push tanker convoy to defy US blockade (21 Nov)",
+     "url": "https://www.iranintl.com/en/202611204994"
+    },
+    {
+     "title": "Iran International: Iran readies tankers to run US blockade, threatens Persian Gulf oil if fired on (20 Nov)",
+     "url": "https://www.iranintl.com/en/202611204873"
+    },
+    {
+     "title": "gCaptain (Reuters): U.S. Targets Ship-to-Ship Transfers in Expanded Iran Maritime Blockade (18 Nov)",
+     "url": "https://gcaptain.com/u-s-targets-ship-to-ship-transfers-in-expanded-iran-maritime-blockade/"
+    }
+   ],
+   "rationale": "gulf-ukmto-23: class own count of two-day spans with a UKMTO/JMIC-reported merchant incident in the Gulf area (30 Oct–20 Nov) 19/21 = 0.90; daily 14/22 = 0.64 (≈0.82 for 1.67 days); agents base-rate 0.79, evidence 0.80, adversarial 0.79, anchor 0.80, outsider 0.65; combined 0.77, calibrated 0.856 (0.86); no matching market (weekly UKMTO notice buckets do not match). Main risk: a quiet weekend (as 14–15 Nov) or a time-late report arriving after the resolution deadline. Overnight check 21 Nov 05:10–05:20 CET: nothing material; evening numbers and record kept.",
+   "cs": {
+    "kicker": "Lodní doprava v Zálivu",
+    "headline": "Středisko UKMTO ohlásilo nový incident s obchodní lodí v Zálivu",
+    "body": [
+     "DUBAJ 22. listopadu – Britské středisko pro námořní obchodní operace UKMTO o víkendu ohlásilo nový bezpečnostní incident s obchodní lodí ve vodách u Arabského poloostrova. Navazuje tak na sérii útoků na lodní dopravu v Hormuzském průlivu a jeho okolí v době americké blokády Íránu.",
+     "V pátek UKMTO oznámilo, že tanker plující z průlivu zasáhla neznámá střela do levoboku zhruba osm námořních mil severně od ománského Chasabu kolem 16:00 SEČ a na palubě vypukl požár. UKMTO za týden do 18. listopadu napočítalo šest útoků na tankery, provoz v průlivu byl asi o 65 % nižší než před válkou a Společné námořní informační centrum JMIC hodnotí tamní hrozbu jako vážnou.",
+     "Íránský ministr zahraničí Abbás Arakčí v pátek prohlásil, že Írán blokádu prolomí, a agentura Fars napojená na Revoluční gardy navrhla konvoj tankerů a pohrozila útoky na ropná zařízení v Zálivu, pokud by jej někdo zastavil. Americká armáda 18. listopadu oznámila, že za obcházení blokády bude považovat i lodě, které íránský náklad převezmou při překládce na moři."
+    ],
+    "basis": "Opírá se o záznamy UKMTO/JMIC (incident v 19 z 21 dvoudenních období od 30. října do 20. listopadu, ve 14 z 22 dní) a pokračující americko-íránskou konfrontaci na moři; doklady o tom, jak často dochází k incidentům splňujícím přísnou definici, jsou smíšené (8 z posledních 14 dnů).",
+    "analysis": [
+     "Nejméně jeden útok či bezpečnostní incident s obchodní lodí v Hormuzu, Perském zálivu, Ománském zálivu nebo Arabském moři, ohlášený UKMTO či JMIC, mezi 08:00 času Zálivu 21. listopadu a koncem 22. listopadu byl odhadnut na 86 %. Odpovídající trh neexistuje; týdenní pásma Polymarketu na počet hlášení UKMTO zahrnují všechny oblasti i typy hlášení.",
+     "Základní četnost: kvalifikovaný incident mělo 19 z posledních 21 dvoudenních období (30. října až 20. listopadu) a 14 z 22 jednotlivých dní (0,64 denně, zhruba 0,82 pro okno 1,67 dne). Pět prognostiků: základní četnost 0,79, důkazy 0,80, oponent 0,79, kotva 0,80, outsider 0,65; kombinace 0,77, po kalibraci 0,86.",
+     "Co mohlo dopadnout jinak: víkend 14.–15. listopadu byl klidný, UKMTO často hlásí se zpožděním a kritérium vylučuje podezřelá přiblížení, incidenty v Rudém moři a Adenském zálivu i samotná tvrzení Íránu. Konvoj tankerů z ostrova Charg by tempo zvýšil."
+    ],
+    "claims": {
+     "gulf-ukmto-23": {
+      "label": "Incident lodi v Zálivu o víkendu",
+      "text": "UKMTO nebo JMIC ohlásí alespoň jeden nový útok či bezpečnostní incident týkající se obchodní lodi v Hormuzském průlivu, Perském zálivu, Ománském zálivu nebo Arabském moři, k němuž došlo mezi 08:00 místního času v sobotu 21. listopadu a 23:59 místního času v neděli 22. listopadu 2026.",
+      "criterion": "ANO, pokud britské středisko pro námořní obchodní operace (UKMTO) nebo Společné námořní informační centrum (JMIC) ohlásí útok, výbuch, najetí na minu, zásah střelou nebo dronem, nepřátelské přiblížení (ozbrojené plavidlo, které na loď střílí nebo se ji pokouší obsadit), obsazení, únos nebo zadržení obchodní lodi v Hormuzském průlivu, Perském (Arabském) zálivu, Ománském zálivu nebo Arabském moři (včetně vod kolem Sokotry), k němuž došlo mezi 08:00 času Zálivu (UTC+4) 21. listopadu 2026 a 23:59 času Zálivu 22. listopadu 2026, jak vyplývá z ukmto.org nebo účtu UKMTO na síti X, případně ze zprávy agentury, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al-Džazíry, Newsquawk či jiného zavedeného média, které se odvolává na UKMTO nebo JMIC. Pokud UKMTO/JMIC uvedou jen datum bez času, incident s datem 22. listopadu se počítá a incident s datem 21. listopadu se počítá, pokud jej zpráva nezařadí před 08:00 času Zálivu. Zpráva zveřejněná po skončení okna (včetně opožděného hlášení) se počítá, pokud k incidentu došlo v okně. Obchodní loď vyřazená, obsazená nebo zadržená americkými či jinými vojenskými silami se počítá, jen pokud tento incident ohlásí samo UKMTO nebo JMIC. Nepočítají se podezřelá přiblížení, výzvy nebo pozorování bez střelby či pokusu o obsazení, samotné rušení GPS nebo navigačních systémů, oznámení o „incidentu“ či „podezřelé činnosti“, která neuvádějí útok, výbuch, zásah, obsazení ani zadržení, incidenty v Adenském zálivu, Bab al-Mandabu nebo Rudém moři ani tvrzení Íránu (včetně prohlášení Revolučních gard), Húsíů či jiných stran, která UKMTO ani JMIC neohlásí. NE, pokud k žádnému takovému incidentu v okně nedošlo."
+     }
+    }
+   },
+   "claims": [
+    {
+     "id": "gulf-ukmto-23",
+     "label": "Gulf shipping incident at the weekend",
+     "text": "UKMTO or JMIC reports at least one new attack or security incident involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman or the Arabian Sea that took place between 08:00 Gulf time on Saturday 21 November and 23:59 Gulf time on Sunday 22 November 2026.",
+     "criterion": "YES if the UK Maritime Trade Operations (UKMTO) or the Joint Maritime Information Center (JMIC) reports an attack, explosion, mine strike, projectile or drone hit, hostile approach (armed craft firing on or attempting to board the vessel), boarding, hijacking or seizure involving a merchant vessel in the Strait of Hormuz, the Persian (Arabian) Gulf, the Gulf of Oman or the Arabian Sea (including the waters around Socotra) that occurred between 08:00 Gulf Standard Time (UTC+4) on 21 Nov 2026 and 23:59 GST on 22 Nov 2026, as shown on ukmto.org or UKMTO's X account or by a wire, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeera, Newsquawk or another established news outlet quoting UKMTO or JMIC. When UKMTO/JMIC give only a date and no time, an incident dated 22 Nov counts, and one dated 21 Nov counts unless the report places it before 08:00 GST. A report published after the window (including a 'time-late' report) counts if the incident occurred in the window. A merchant vessel disabled, boarded or seized by US or other military forces counts only if UKMTO or JMIC itself reports that incident. Suspicious approaches, hailings or sightings without weapons fire or a boarding attempt, GPS or navigation-aid interference alone, notices of an 'incident' or 'suspicious activity' that state no attack, explosion, hit, boarding or seizure, incidents in the Gulf of Aden, the Bab el-Mandeb or the Red Sea, and claims by Iran (including IRGC statements), the Houthis or other parties that neither UKMTO nor JMIC reports do not count. NO if no such incident occurred in the window.",
+     "resolution_source": "https://www.ukmto.org/recent-incidents ; https://x.com/UK_MTO ; https://gcaptain.com/ ; https://www.arabnews.com/middle-east ; https://www.newsquawk.com/",
+     "schedule": "speculative",
+     "slip_class": "none",
+     "publishes": "UKMTO Warnings/advisories on ukmto.org and X within hours of an incident (time-late reports can follow days later); relayed by gCaptain, Arab News, Gulf News, Newsquawk; JMIC advisories; UKMTO weekly overview on Fridays",
+     "tz": "Asia/Dubai",
+     "event_window": {
+      "start": "2026-11-21T08:00:00+04:00",
+      "end": "2026-11-22T23:59:00+04:00"
+     },
+     "evidence_at": "2026-11-23T12:00:00+04:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/gulf-ukmto-23.md",
+     "signals": "data/dossiers/2026-11-23/gulf-ukmto-23.signals.md",
+     "probability": 0.86,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "Attacks have continued at about one a day: a UKMTO/JMIC-reported incident in the area on 14 of the last 22 Gulf days and in 19 of 21 two-day spans; if the current pattern simply continues, the weekend sees at least one.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:11:53Z",
+       "checked": [
+        "markets.mjs search \"hormuz tanker attack\"",
+        "markets.mjs search \"UKMTO notices\"",
+        "markets.mjs search \"iran ship attack november\"",
+        "markets.mjs search \"strait of hormuz\""
+       ],
+       "note": "No market on a UKMTO/JMIC incident in the 21-22 Nov window. Polymarket weekly UKMTO-notice-count buckets (16-22 Nov: 8-11 at 0.47, 12-15 at 0.41, 16+ at 0.16; thin) count all notices in all regions and do not match."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "two-day spans with at least one UKMTO/JMIC-reported merchant-vessel incident in the Gulf area, 30 Oct–20 Nov 2026 (own count)",
+       "rate": 0.9,
+       "n": 21,
+       "source": "data/dossiers/2026-11-23/gulf-ukmto-23.md"
+      },
+      "dossier": "data/dossiers/2026-11-23/gulf-ukmto-23.md",
+      "signals": "data/dossiers/2026-11-23/gulf-ukmto-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:00+01:00",
+        "p": 0.79,
+        "p_blind": 0.78,
+        "at_blind": "2026-11-20T19:20:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Own count: a UKMTO/JMIC-reported incident on 14 of the last 22 Gulf days (0.64/day) and in 19 of 21 two-day spans (Laplace 0.87); this window is only about 1.67 days, giving about 0.82 under independence. Small downward adjustment for weekend pairs being weaker (2/3), the strict criterion (no Gulf of Aden/Red Sea, no IRGC-only claims) and time-late reports that may miss the resolver, against an escalating backdrop (four tankers hit near Khasab this week, Kharg convoy threat).",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No matching market. The Polymarket UKMTO-notice buckets for 16-22 Nov (mostly 8-15 notices) confirm a high notice tempo but count all regions and notice types. Small nudge up from 0.78 because the tempo is sustained; the base rate (14/22 days, 19/21 two-day spans) still drives it."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:22:07+01:00",
+        "p": 0.8,
+        "p_blind": 0.82,
+        "at_blind": "2026-11-20T19:20:55+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "UKMTO has reported tanker attacks in or near Hormuz almost daily ('seven Hormuz tanker attacks in a week' per Middle East Eye, more hits on 19-20 Nov), and the US blockade plus Iran's planned Kharg convoy keep tension high. Over a roughly 40-hour window at this rate, at least one qualifying UKMTO/JMIC-reported attack is likely. The strict criterion (no suspicious approaches, no Gulf of Aden or Red Sea incidents) and the chance of a lull keep it below 0.9.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Slightly down. The dossier's record is 14 of 22 days (0.64 a day) and 19 of 21 two-day spans. Over the 1.67-day window that gives about 1 - 0.36^1.67, roughly 0.82. One of the last three weekend pairs (14-15 Nov) was empty, and a time-late report could arrive after the resolver's deadline. JMIC's 'severe' rating and the Kharg convoy threat support the high rate. The UKMTO notice-count markets do not match this claim."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:23:06+01:00",
+        "p": 0.79,
+        "p_blind": 0.79,
+        "at_blind": "2026-11-20T19:20:26+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: the window is 1.67 days not 2, the last comparable weekend (14-15 Nov) was empty or unclear, quiet days do occur (12, 14, 19 Nov), the criterion excludes vague notices, IRGC claims and unarmed approaches, and UKMTO time-late reports can arrive after the resolution deadline. Still, the daily rate of 0.64 gives about 0.82 for 1.67 days, 19 of 21 two-day pairs had an incident, JMIC rates the threat severe and a Kharg convoy raises the tempo.",
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No matching market; the weekly UKMTO notice-count buckets confirm a high notice tempo already in the dossier and de-escalation markets are near zero (blockade end 0.04, Hormuz agreement 0.03), which removes little risk I had priced. Unchanged."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:25+01:00",
+        "p": 0.8,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "The 0.82 base rate is trimmed slightly. Only 2 of 3 recent weekend pairs had an incident, UKMTO itself under-reports, and a time-late report could miss the resolution deadline. The tempo is at its highest since mid-October: four tankers hit near Khasab in three days, the latest on 20 Nov, and JMIC says further attacks are 'highly likely'. Iran's threatened tanker convoy from Kharg adds upside risk.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Own record over 22 Gulf days (30 Oct-20 Nov): a qualifying UKMTO/JMIC incident on 14 of them (0.64 per day); 19 of 21 two-day pairs had at least one. For a 1.67-day window, 1 - 0.36^1.67 = 0.82. The Polymarket weekly UKMTO-notice buckets do not match (all regions and notice types)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:23:24+01:00",
+        "p": 0.65,
+        "p_blind": 0.6,
+        "at_blind": "2026-11-20T19:19:56+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "2026 coverage shows frequent UKMTO-reported attacks around Hormuz and the Gulf of Oman (attacks rising, per Gulf News); a 2-day window with a fairly strict incident definition gives somewhat better than even odds, with no confirmation of current tempo.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "UKMTO warnings 207-214 issued 16-20 Nov and weekly-notice markets imply a high tempo; strict incident definition and de-escalation tail keep it moderate; up from 0.60.",
+        "time_note": "at reported by the agent as 2026-11-20T21:30:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.77,
+      "calibrated": 0.856,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.15,
+      "research": {
+       "at": "2026-11-21T05:21:17+01:00",
+       "time_note": "system-clock time at which the research report was received",
+       "model": "claude-opus-5-5",
+       "question": "Over 7–20 Nov 2026, on how many days did UKMTO/JMIC report an incident meeting the strict definition (attack, hit, armed approach, boarding, seizure) in Hormuz, the Gulf, the Gulf of Oman or the Arabian Sea, were any weekend pairs empty, and is any pause announced for 21–22 Nov?",
+       "finding": "8 of 14 days qualified (9 with an unclear 15 Nov report); 11 of 13 two-day pairs had an incident, the empty ones being 8–9 Nov and the weekend of 14–15 Nov; no ceasefire, talks or pause covering 21–22 Nov, and JMIC rates the Hormuz threat severe with 7 strikes in the 7 days to 20 Nov. Not decisive: it supports a figure between the two camps, nearer 0.80; the spread stands.",
+       "sources": [
+        "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/",
+        "https://www.arabnews.com/middle-east/tanker-hit-in-strait-of-hormuz-as-missile-strikes-irans-qeshm-island-3013176",
+        "https://www.newsquawk.com/headlines/ukmto-says-it-receiverd-a-delayed-report-of-tanker-hit-by-unidentified-projectile-near-omans-khasab-while-crew-are-safe",
+        "https://gulfnews.com/world/gulf/oman/iran-oman-move-closer-to-hormuz-shipping-deal-what-it-means-for-global-oil-trade-1.500753065"
+       ],
+       "decisive": false
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "golden-horse",
+   "scope": "world",
+   "topic": "culture",
+   "event_key": "golden-horse-2026-11-22",
+   "case_key": "golden-horse-awards",
+   "size": "third",
+   "kicker": "Golden Horse Awards",
+   "headline": "SABU's 'Arrested Memory' wins more than one Golden Horse award",
+   "body": [
+    "TAIPEI, 22 November – \"Arrested Memory\", the darkly comic crime thriller by Japanese director SABU that went into the 63rd Golden Horse Awards with a leading 11 nominations, was among the night's winners in Taipei on Sunday, taking more than one award.",
+    "The film, about a Taiwanese detective who develops amnesia, was nominated for best narrative feature, director, leading actor for Ethan Juan and supporting actor, as well as in seven craft categories, among them cinematography, editing and action choreography. \"Girl\" followed with 10 nominations, and \"Double Happiness\" and \"We Are Born Good\" had nine each.",
+    "The ceremony at the Taipei Music Center began at 18:30 local time (11:30 CET); the best narrative feature, the last prize of the evening, was presented by committee chairman Chang Chen and jury president Sylvia Chang."
+   ],
+   "basis": "Rests on the record of recent Golden Horse ceremonies, where the most-nominated film usually collected several awards, and on Arrested Memory's 11 nominations, though most of them were in craft categories contested by Girl and Kung Fu.",
+   "analysis": [
+    "\"Arrested Memory\" winning at least two of the 24 competitive categories was put at 79%; topping the wins outright (golden-horse-23) only at 36%, so the story does not say it won the most.",
+    "Base rate: in 6 of 9 editions (2017–2025) the most-nominated film won the most awards, each time with four or five; the other three cases were not counted, so two or more probably happened in about 75–85% of editions. A per-nomination model (11 nominations at 0.2–0.25 each) gives 0.68–0.80.",
+    "Five forecasters: base-rate 0.75, evidence 0.75, adversarial 0.64, anchor 0.71, outsider 0.64; combined 0.70, calibrated 0.79. No market. Ceremony slip risk about 2%.",
+    "What could go the other way: the film has no screenplay nomination, its craft nominations face Girl and Kung Fu directly, Ethan Juan's leading-actor race against Liu Kuan-ting was seen as close, and a jury under Sylvia Chang could spread the prizes; leaders ended with a single award in some past editions."
+   ],
+   "sources": [
+    {
+     "title": "Focus Taiwan: 'Arrested Memory' leads 11 Golden Horse nominations (1 Oct 2026)",
+     "url": "https://focustaiwan.tw/culture/202610010022"
+    },
+    {
+     "title": "CNA: 金馬獎「狂忘警探」入圍11項最風光 (1 Oct 2026)",
+     "url": "https://www.cna.com.tw/news/amov/202610010327.aspx"
+    },
+    {
+     "title": "NOWnews: 63rd Golden Horse full nominations list (1 Oct 2026)",
+     "url": "https://www.nownews.com/news/6879257"
+    },
+    {
+     "title": "Bella: Golden Horse presenters, Sylvia Chang presents Best Narrative Feature (9 Nov 2026)",
+     "url": "https://www.bella.tw/articles/movies&culture/61022/2026-golden-horse-awards-presenters"
+    }
+   ],
+   "rationale": "golden-horse-2-23 (lead): class most-nominated film at Golden Horse 2017–2025, won most 6/9 with 4–5 wins, >=2 est. 0.75–0.85; agents base-rate 0.75, evidence 0.75, adversarial 0.64, anchor 0.71, outsider 0.64; combined 0.70, calibrated 0.786; no market; main risk craft-category competition from Girl and Kung Fu, no screenplay nod. golden-horse-23: base rate 0.67 (n=9); agents 0.40/0.36/0.30/0.42/0.38; combined 0.371, calibrated 0.364; no market; main risk spread field (Girl 10, Double Happiness and We Are Born Good 9). Not asserted. Overnight check 21 Nov 05:10–05:20 CET: nothing material; evening numbers and record kept.",
+   "cs": {
+    "kicker": "Ceny Zlatý kůň",
+    "headline": "Snímek Arrested Memory režiséra SABU získal víc než jednoho Zlatého koně",
+    "body": [
+     "TCHAJ-PEJ 22. listopadu – Snímek „Arrested Memory“, temně komická kriminální detektivka japonského režiséra SABU, jenž šel do 63. ročníku cen Zlatý kůň s nejvyšším počtem 11 nominací, patřil v neděli v Tchaj-peji k vítězům večera a získal více než jednu cenu.",
+     "Film o tchajwanském detektivovi, který ztratí paměť, byl nominován za nejlepší hraný film, režii, hlavní mužský herecký výkon Ethana Juana a vedlejší mužskou roli a dále v sedmi technických a uměleckých kategoriích, mimo jiné za kameru, střih a akční choreografii. Následoval snímek „Girl“ s deseti nominacemi, „Double Happiness“ a „We Are Born Good“ měly po devíti.",
+     "Slavnostní večer v hudebním centru Taipei Music Center začal v 18:30 místního času (11:30 SEČ); cenu za nejlepší hraný film, poslední cenu večera, předávali předseda výkonného výboru Chang Chen a předsedkyně poroty Sylvia Chang."
+    ],
+    "basis": "Opírá se o výsledky posledních ročníků cen Zlatý kůň, kde nejvíce nominovaný film obvykle získal několik cen, a o 11 nominací snímku Arrested Memory, byť většinou v technických kategoriích, kde soupeřil s filmy Girl a Kung Fu.",
+    "analysis": [
+     "Pravděpodobnost, že „Arrested Memory“ získá aspoň dvě ze 24 soutěžních cen, činila 79 %; že získá cen nejvíc (golden-horse-23), jen 36 %, proto zpráva netvrdí, že vyhrál nejvíc cen.",
+     "Základní míra: v 6 z 9 ročníků (2017–2025) nejvíce nominovaný film získal nejvíc cen, pokaždé čtyři nebo pět; zbylé tři případy nebyly sečteny, takže dvě a více cen připadly zřejmě v 75–85 % ročníků. Model po jednotlivých nominacích (11 nominací po 0,2–0,25) dává 0,68–0,80.",
+     "Pět prognostiků: základní míra 0,75, důkazy 0,75, oponent 0,64, kotva 0,71, outsider 0,64; spojeně 0,70, po kalibraci 0,79. Trh neexistoval. Riziko posunu ceremonie asi 2 %.",
+     "Co mohlo dopadnout jinak: film neměl nominaci za scénář, v technických kategoriích přímo soupeřil se snímky Girl a Kung Fu, souboj Ethana Juana s Liuem Kuan-tingem o hlavní mužskou roli byl považován za vyrovnaný a porota pod vedením Sylvie Chang mohla ceny rozdělit; v některých minulých ročnících získal favorit jen jednu cenu."
+    ],
+    "claims": {
+     "golden-horse-2-23": {
+      "label": "Arrested Memory získá aspoň dvě ceny",
+      "text": "Snímek „Arrested Memory“ získá na 63. ročníku filmových cen Zlatý kůň v Tchaj-peji v neděli 22. listopadu 2026 nejméně dvě ceny.",
+      "criterion": "ANO, pokud na slavnostním předávání 63. ročníku cen Zlatý kůň, které se uskuteční mezi 05:00 SEČ v sobotu 21. listopadu 2026 a 23:59 tchajpejského času v neděli 22. listopadu 2026, snímek „Arrested Memory“ (狂忘警探, režie SABU) získá nejméně dvě ceny ve 24 soutěžních kategoriích, jejichž nominace byly vyhlášeny 1. října 2026, podle oficiálního seznamu vítězů (goldenhorse.org.tw) nebo zprávy agentury CNA / Focus Taiwan. Počítají se jen soutěžní kategorie; cena za celoživotní dílo, cena pro tchajwanského filmaře roku a cena diváků se nepočítají. NE, pokud získá méně než dvě ceny nebo pokud se předávání v tomto okně neuskuteční."
+     },
+     "golden-horse-23": {
+      "label": "Arrested Memory s nejvíce Zlatými koňmi",
+      "text": "Snímek „Arrested Memory“ získá na 63. ročníku filmových cen Zlatý kůň v Tchaj-peji v neděli 22. listopadu 2026 více cen než kterýkoli jiný film.",
+      "criterion": "ANO, pokud na slavnostním předávání 63. ročníku cen Zlatý kůň, které se uskuteční mezi 05:00 SEČ v sobotu 21. listopadu 2026 a 23:59 tchajpejského času v neděli 22. listopadu 2026, snímek „Arrested Memory“ (狂忘警探, režie SABU) získá ve 24 soutěžních kategoriích, jejichž nominace byly vyhlášeny 1. října 2026, více cen než kterýkoli jiný jednotlivý film, podle oficiálního seznamu vítězů (goldenhorse.org.tw) nebo zprávy agentury CNA / Focus Taiwan. Počítají se jen soutěžní kategorie; cena za celoživotní dílo, cena pro tchajwanského filmaře roku a cena diváků se nepočítají. Dělené prvenství v počtu cen znamená NE. NE, pokud se předávání v tomto okně neuskuteční."
+     }
+    }
+   },
+   "claims": [
+    {
+     "id": "golden-horse-2-23",
+     "label": "Arrested Memory wins two or more",
+     "text": "\"Arrested Memory\" wins at least two awards at the 63rd Golden Horse Awards in Taipei on Sunday 22 November 2026.",
+     "criterion": "YES if, at the 63rd Golden Horse Awards ceremony held between 05:00 CET on Sat 21 Nov 2026 and 23:59 Taipei time on Sun 22 Nov 2026, \"Arrested Memory\" (狂忘警探, dir. SABU) wins at least two of the 24 competitive categories announced with nominees on 1 Oct 2026, counted from the official winners list (goldenhorse.org.tw) or the Central News Agency / Focus Taiwan winners report. Only competitive categories count; the Lifetime Achievement Award, Outstanding Taiwanese Filmmaker of the Year and the Audience Choice Award do not. NO if it wins fewer than two, or if the ceremony does not take place in the window.",
+     "resolution_source": "https://www.goldenhorse.org.tw/awards/nw/?r=en ; https://focustaiwan.tw/culture ; https://www.cna.com.tw/list/amov.aspx",
+     "schedule": "official",
+     "slip_class": "culture-prize",
+     "publishes": "Winners announced live from 18:30 Taipei time (11:30 CET) on Sun 22 Nov; full list from the Golden Horse committee and CNA/Focus Taiwan around 22:00 Taipei (15:00 CET)",
+     "tz": "Asia/Taipei",
+     "event_window": {
+      "start": "2026-11-21T05:00:00+01:00",
+      "end": "2026-11-22T23:59:00+08:00"
+     },
+     "evidence_at": "2026-11-22T22:30:00+08:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/golden-horse-2-23.md",
+     "signals": "data/dossiers/2026-11-23/golden-horse-2-23.signals.md",
+     "probability": 0.79,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "An award outcome, not a continuing state.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:12:29Z",
+       "checked": [
+        "markets.mjs search \"Golden Horse\"",
+        "markets.mjs search \"Golden Horse Awards best film\"",
+        "markets.mjs search \"Taiwan film award\""
+       ],
+       "note": "No market on the Golden Horse Awards; results were Golden Globes 2027, Kentucky Derby and Taipei mayoral markets."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-23/golden-horse-2-23.md",
+      "signals": "data/dossiers/2026-11-23/golden-horse-2-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:37:00+01:00",
+        "p": 0.75,
+        "p_blind": 0.75,
+        "at_blind": "2026-11-20T19:36:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Reference class from the dossier (Golden Horse 2017-2025, n=9): the most-nominated film won the most awards in 6/9, each time with 4-5 wins, so at least 6/9 cleared two (Laplace floor ~0.73, likely higher since the other three also took some awards); a per-nomination model (11 noms at ~0.2-0.25 each) gives P(>=2) 0.68-0.80. Shaded down slightly because most of its nominations are craft categories contested directly by Girl and Kung Fu and it has no screenplay nod; ceremony slip risk 0.017 (culture-prize).",
+        "p_held": 0.983,
+        "p_if_held": 0.76,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Unchanged from blind: the signals contain no market, odds or published forecast, only NOWnews commentary naming Ethan Juan a best-actor front-runner, which the blind estimate already took into account. Base rate (at least 6/9 most-nominated films took 4+ awards) and the per-nomination model (0.68-0.80) still apply, with a small cut for craft-category competition from Girl and Kung Fu and 0.017 slip risk."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:36:48+01:00",
+        "p": 0.75,
+        "p_blind": 0.72,
+        "at_blind": "2026-11-20T19:36:07+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Arrested Memory leads with 11 nominations, 6 of them in craft categories (cinematography, art direction, makeup/costume, action choreography, editing, sound effects) where a stylised genre film tends to collect awards, and Screen Daily (10 Nov) calls it the awards frontrunner (https://focustaiwan.tw/culture/202610010022). From memory, the most-nominated film at recent Golden Horse ceremonies has usually won two or more (A Foggy Tale 2025 per Screen Daily, Old Fox 2023, Limbo 2022), roughly 80%. I take a little off because the field is spread out (Girl 10, Double Happiness and We Are Born Good 9 each), and juries often share the prizes around. A postponement is negligible.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Raised slightly from 0.72. The dossier's Wikipedia infoboxes show the most-nominated film topped the wins outright (4–5 awards) in 6 of 9 editions (2017–2025). The other three cases (Detention 2019, Drifting 2021, Snow in Midsummer 2023) are not resolved by the dossier, so the two-or-more rate is at least about 67% and probably 75–85%. My blind note was wrong to count Old Fox as most-nominated in 2023: it was Snow in Midsummer. I stay at the low end because Girl and Kung Fu compete directly in most of Arrested Memory's craft categories, and Arrested Memory has no screenplay nomination. Ethan Juan being called a Best Actor front-runner (NOWnews) adds another way to win. The signals show no market or published odds, so nothing changes from that side, and a postponement is negligible (culture-prize slip 0.02).",
+        "time_note": "at reported by the agent as 2026-11-20T19:55:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T19:40:00+01:00, later than its file was written; replaced by the file's write time."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:37:00+01:00",
+        "p": 0.64,
+        "p_blind": 0.64,
+        "at_blind": "2026-11-20T19:36:00+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: the film has no screenplay nomination, is a genre thriller by a Japanese director, and each of its seven craft nominations is contested by Girl (cinematography, editing, art, makeup, sound) or Kung Fu (art, makeup, action, sound), while its acting hope sits in a 'death group' with Liu Kuan-ting; the nomination leader has ended with a single award in roughly 3 of the last 10 editions (from memory, not in the dossier: Godspeed 2016, Drifting 2021, Snow in Midsummer 2023), and the jury under Sylvia Chang may spread prizes. Honest view: 11 chances including a co-favourite lead actor and action choreography make two wins more likely than not, and the dossier shows the leader took 4-5 awards in 6 of 9 years; about 0.65 if held, times 0.98 that the ceremony takes place on 22 Nov (culture-prize slip 0.017).",
+        "p_held": 0.98,
+        "p_if_held": 0.65,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Unchanged: the signals hold no market, bookmaker odds, critics' poll or published forecast for this claim, only the commentary already in the dossier that Ethan Juan and Liu Kuan-ting are the lead-actor front-runners. Nothing indicates a schedule move, so 0.98 held times 0.65 if held stands."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:31:00+01:00",
+        "p": 0.71,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "The binomial gives 0.68. I move up a little because the record shows most-nominated films usually win several awards: at least 6 of the last 9 won 4 or more, and the other 3 are not counted, so 2 or more probably happened in about 0.8 of editions. I move back down because Arrested Memory's nominations are mostly in craft categories where Girl and Kung Fu compete directly, it has no screenplay nomination, and its lead (11 to 10) is narrow. The independence assumption also understates the chance that the jury simply does not favour it (0 or 1 wins). Net 0.72, minus the 0.017 slip risk, gives about 0.71.",
+        "anchor": {
+         "kind": "model",
+         "detail": "models.mjs atleast 11 0.2 2 -> 0.678 (11 nominations, 0.2 per category, about one in five nominees per category); cross-check from the dossier base rate: the most-nominated film topped the wins with at least 4 awards in 6 of 9 editions 2017-2025, so it won 2 or more in at least 6 of 9 (0.67 as a floor). Culture-prize slip rate 0.017. No market (signals)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:37:14+01:00",
+        "p": 0.64,
+        "p_blind": 0.62,
+        "at_blind": "2026-11-20T19:35:37+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Most-nominated film (11, mostly craft categories such as sound, VFX, makeup, action, editing) usually converts at least two of them; genre films tend to sweep technical awards even when Best Film goes elsewhere, but competition from Girl and the Singapore films and the spread of 24 categories cap it. Ceremony postponement risk is about 2% (culture-prize slip class). Own research was one search that returned only headlines, no predictions.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals hold no market, odds or published forecast. The only new fact is NOWnews calling Ethan Juan (Arrested Memory) an actor front-runner, which adds a little to the chance of a second win beyond the craft categories. Raised slightly from 0.62.",
+        "time_note": "at reported by the agent as 2026-11-20T22:00:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.7,
+      "calibrated": 0.786,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.11,
+      "decomposition": {
+       "p_held": 0.981,
+       "p_if_held": 0.805,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
+      },
+      "round_note": "Claim reframed by the desk at about 19:30 CET after round one (the outright-most-awards claim, golden-horse-23, came out at about 36%, too low for a main claim). The group-B forecasters, who had already read the signals file, gave 0.75/0.80/0.70/0.71/0.75 on the new claim; because they had no clean blind step, the base-rate, evidence, adversarial and outsider estimates recorded here come from four fresh agents with a proper blind step and then the signals. The anchor, a single-step role, is the group-B anchor (0.71)."
+     }
+    },
+    {
+     "id": "golden-horse-23",
+     "label": "Arrested Memory tops Golden Horse wins",
+     "text": "\"Arrested Memory\" wins more awards than any other film at the 63rd Golden Horse Awards in Taipei on Sunday 22 November 2026.",
+     "criterion": "YES if, at the 63rd Golden Horse Awards ceremony held between 05:00 CET on Sat 21 Nov 2026 and 23:59 Taipei time on Sun 22 Nov 2026, \"Arrested Memory\" (狂忘警探, dir. SABU) wins strictly more of the 24 competitive categories announced with nominees on 1 Oct 2026 than any other single film, counted from the official winners list (goldenhorse.org.tw) or the Central News Agency / Focus Taiwan winners report. Only competitive categories count; the Lifetime Achievement Award, Outstanding Taiwanese Filmmaker of the Year and the Audience Choice Award do not. A tie for the most awards is NO. NO if the ceremony does not take place in the window.",
+     "resolution_source": "https://www.goldenhorse.org.tw/awards/nw/?r=en ; https://focustaiwan.tw/culture ; https://www.cna.com.tw/list/amov.aspx",
+     "schedule": "official",
+     "slip_class": "culture-prize",
+     "publishes": "Winners announced live from 18:30 Taipei time (11:30 CET) on Sun 22 Nov; full list from the Golden Horse committee and CNA/Focus Taiwan around 22:00 Taipei (15:00 CET)",
+     "tz": "Asia/Taipei",
+     "event_window": {
+      "start": "2026-11-21T05:00:00+01:00",
+      "end": "2026-11-22T23:59:00+08:00"
+     },
+     "evidence_at": "2026-11-22T22:30:00+08:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/golden-horse-23.md",
+     "signals": "data/dossiers/2026-11-23/golden-horse-23.signals.md",
+     "probability": 0.36,
+     "forecast": {
+      "baseline": {
+       "status_quo": "unclear",
+       "why": "An award outcome, not a continuing state: nothing 'simply continues'. The leading nominee topped the wins in 6 of the last 9 editions, but Arrested Memory's nominations are mostly craft categories shared with Girl and Kung Fu.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:12:29Z",
+       "checked": [
+        "markets.mjs search \"Golden Horse\"",
+        "markets.mjs search \"Golden Horse Awards best film\"",
+        "markets.mjs search \"Taiwan film award\""
+       ],
+       "note": "No market on the Golden Horse Awards; results were Golden Globes 2027, Kentucky Derby and Taipei mayoral markets."
+      },
+      "market": null,
+      "base_rate": {
+       "class": "most-nominated film also wins the most Golden Horse awards, 2017–2025 (own count from Wikipedia; ties not checked)",
+       "rate": 0.67,
+       "n": 9,
+       "source": "data/dossiers/2026-11-23/golden-horse-23.md"
+      },
+      "dossier": "data/dossiers/2026-11-23/golden-horse-23.md",
+      "signals": "data/dossiers/2026-11-23/golden-horse-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:23:29+01:00",
+        "p": 0.4,
+        "p_blind": 0.4,
+        "at_blind": "2026-11-20T19:20:10+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Reference class 'most-nominated film tops the wins' 6 of 9 (2017-2025, dossier count; Laplace 7/11 = 0.64, log-odds +0.56), but the infobox may count shared leads as wins while a tie is NO here (-0.4), and Arrested Memory's lead rests on 7 craft categories shared with Girl and Kung Fu with no screenplay nomination (-0.5). Slip culture-prize 0.017.",
+        "p_held": 0.98,
+        "p_if_held": 0.41,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Unchanged: signals hold no market, odds or published prediction for the Golden Horse; the only commentary (Juan vs Liu as best-actor front-runners) does not move the 6-of-9 base rate adjusted for ties-as-NO and craft-category splitting."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:24:02+01:00",
+        "p": 0.36,
+        "p_blind": 0.38,
+        "at_blind": "2026-11-20T19:21:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "Arrested Memory leads with 11 nominations (Focus Taiwan, 1 Oct: https://focustaiwan.tw/culture/202610010022), but the field is tight (Girl 10, Double Happiness and We Are Born Good 9 each), and Golden Horse wins are usually spread thin, so a strict-lead requirement with ties counting NO cuts well below a naive 'favourite wins' rate. Its many craft nominations (action, makeup/costume, art direction, sound, editing, cinematography) give it a fair path to a top tally; Screen Daily calls it the awards frontrunner (https://www.screendaily.com/news/sabus-arrested-memory-shu-qis-girl-lead-golden-horse-awards-2026-nominations/5220955.article, page refused, headline via Google News).",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Little change: the dossier confirms the 11/10/9/9 spread and adds Kung Fu (8) as a direct rival in art direction, makeup, action and sound, so craft awards can split and leave a tie (NO). Its 6/9 base rate for the top nominee winning most awards may count shared leads as wins. The signals file has no market or prediction, so I trimmed slightly.",
+        "time_note": "at reported by the agent as 2026-11-20T19:35:00+01:00, later than its file was written; replaced by the file's write time."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:24:23+01:00",
+        "p": 0.3,
+        "p_blind": 0.3,
+        "at_blind": "2026-11-20T19:20:23+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case against: the 6-of-9 base rate does not exclude shared leads, the claim needs a strict lead, and Arrested Memory's 11 nominations are mostly craft categories contested by Girl and Kung Fu, with no screenplay nomination and a 'death group' actor race; three rivals sit within two nominations and Double Happiness / We Are Born Good hold the screenplay and actress routes. Recent winners of the most awards took only 4-5, so a tie at 3 is a live outcome. Honest estimate well below the raw base rate.",
+        "p_held": 0.985,
+        "p_if_held": 0.305,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals hold no market, odds or critics poll for the film with most awards; only commentary naming Ethan Juan a best-actor front-runner, already in the dossier. Nothing changed from the blind estimate."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:00+01:00",
+        "p": 0.42,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Start at 0.64 and adjust down: the infobox count may include shared leads, but a tie is NO here; Arrested Memory's lead is 11 vs 10 and most of its nominations are craft categories shared with Girl and Kung Fu, and it has no screenplay nomination, so a spread night with a 3-3 tie or a Double Happiness sweep is plausible. Minus ~0.9 log-odds gives about 0.42.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "Dossier count: most-nominated film topped the wins 6 of 9 editions 2017-2025 (Laplace 7/11 = 0.64); culture-prize slip 0.017. No market (signals)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:24:38+01:00",
+        "p": 0.38,
+        "p_blind": 0.38,
+        "at_blind": "2026-11-20T19:19:48+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Spec cites the leading nominee topping wins 6 of 9 times, but strict-plurality (ties are NO) and craft-heavy nominations shared with rivals cut that; ceremony itself is near-certain.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Signals held no probabilistic information (no market or odds); only actor front-runner commentary. Unchanged.",
+        "time_note": "at reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T20:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.371,
+      "calibrated": 0.364,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.12,
+      "decomposition": {
+       "p_held": 0.982,
+       "p_if_held": 0.367,
+       "p_if_not_held": 0,
+       "note": "p_held: geometric mean of the base-rate and adversarial figures; p_if_held scaled so that the product equals the published figure."
+      },
+      "shadow": {
+       "sequential": {
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:42:00+01:00",
+        "p_blind": 0.42,
+        "p": 0.42,
+        "steps": 8,
+        "searches": 1,
+        "trace": "data/dossiers/2026-11-23/golden-horse-23.belief.json",
+        "note": "The researcher saw the whole spec file, including the event, baseline and sources fields (with the dossier's 6-of-9 base rate), not only the claim text and criterion."
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "it-malpensa",
+   "scope": "europe",
+   "topic": "economy",
+   "event_key": "it-malpensa-atc-strike-2026-11-22",
+   "case_key": "italy-transport-strikes-2026",
+   "size": "quarter",
+   "kicker": "Italy",
+   "headline": "Air-traffic staff at Milan Malpensa hold four-hour strike",
+   "body": [
+    "MILAN, 22 November – Air-navigation staff of ENAV at Milan Malpensa airport went on strike from 13:00 to 17:00 CET on Sunday in a stoppage called by the RSA FAST-CONFSAL-AV union, which the Ministry of Infrastructure and Transport had registered and ENAV had confirmed.",
+    "The strike was first called on 30 September for the whole day and was cut to four hours in the week before it took place. It fell outside the protected bands of 07:00–10:00 and 18:00–21:00, in which flights are guaranteed during Italian air-transport strikes. Flights to and from Bari were also guaranteed.",
+    "The Malpensa stoppage came at the end of a weekend of Italian transport strikes that included a general strike on Friday and a national rail strike. Security staff at Venice Marco Polo and ground workers at Pisa and Florence airports were also called out for 24 hours on Sunday."
+   ],
+   "basis": "Rests on the strike's registration with the ministry, ENAV's confirmation of the shortened form and the absence of any revocation in the ministry data on the eve of the stoppage.",
+   "analysis": [
+    "The strike going ahead in some form on Sunday, not revoked, postponed or barred, was put at 92%.",
+    "Strike-or-protest slip rate 0.045 (own record 0/14) gives about 0.95; forecasters marked it down because the strike had already been cut from 24 to four hours for an unexplained reason and the national ENAV strike of 21 November was reported revoked.",
+    "Five forecasters: base-rate 0.88, evidence 0.77, adversarial 0.85, anchor 0.88, outsider 0.80; combined 0.84, calibrated 0.92. No market.",
+    "What could go the other way: a last-minute revocation by the union or a ministerial order (precettazione); neither had been reported by early Saturday, when the ministry data mirrored by scioperiitalia.it still showed the strike in force."
+   ],
+   "sources": [
+    {
+     "title": "scioperiitalia.it (MIT data): Sciopero aerei 22 novembre 2026, ENAV Aeroporto di Milano Malpensa (checked 21 Nov 2026)",
+     "url": "https://scioperiitalia.it/sciopero/2026-11-22-aerei-personale-soc-enav-aeroporto-di-milano-8579"
+    },
+    {
+     "title": "Viaggi-USA: Sciopero aerei 22 novembre 2026 a Malpensa (18 Nov 2026)",
+     "url": "https://www.viaggi-usa.it/sciopero-22-novembre-2026-malpensa/"
+    },
+    {
+     "title": "Moveo by Telepass: Sciopero degli aerei, stop domenica 22 novembre (20 Nov 2026)",
+     "url": "https://moveo.telepass.com/sciopero-aerei-22-novembre-2026-scali-voli/"
+    },
+    {
+     "title": "DeepArrival: Malpensa ENAV strike November 22 (3 Oct 2026)",
+     "url": "https://deeparrival.com/news/malpensa-enav-strike-november-22-2026/"
+    },
+    {
+     "title": "Travelers Today: Italy faces three days of strikes (18 Nov 2026)",
+     "url": "https://www.travelerstoday.com/articles/61312/20261118/italy-faces-three-days-strikes-friday-hitting-trains-air-traffic-control-four-airports.htm"
+    }
+   ],
+   "rationale": "it-malpensa-23: class strike-or-protest slip 0.045 (own 0/14), no reference class; agents base-rate 0.88, evidence 0.77, adversarial 0.85, anchor 0.88, outsider 0.80; combined 0.841, calibrated 0.917 (0.92); no market. Main risk: late revocation (the national ENAV strike of 21 Nov was reported revoked) or precettazione. Overnight check 21 Nov 05:10–05:20 CET: nothing material; evening numbers and record kept.",
+   "cs": {
+    "kicker": "Itálie",
+    "headline": "Řídící letového provozu na milánské Malpense čtyři hodiny stávkovali",
+    "body": [
+     "MILÁN 22. listopadu – Zaměstnanci řízení letového provozu ENAV na milánském letišti Malpensa v neděli od 13:00 do 17:00 SEČ stávkovali. Stávku vyhlásila odborová organizace RSA FAST-CONFSAL-AV, zapsalo ji ministerstvo infrastruktury a dopravy a potvrdila společnost ENAV.",
+     "Stávka byla 30. září vyhlášena na celý den a v týdnu před jejím konáním byla zkrácena na čtyři hodiny. Proběhla mimo chráněná pásma od 7:00 do 10:00 a od 18:00 do 21:00, v nichž jsou lety při italských stávkách v letecké dopravě zaručeny. Zaručeny byly i lety do Bari a z Bari.",
+     "Stávka na Malpense uzavřela víkend italských stávek v dopravě, který zahrnoval páteční generální stávku a celostátní stávku na železnici. Na neděli byla na 24 hodin vyhlášena také stávka bezpečnostních pracovníků na benátském letišti Marco Polo a pozemního personálu na letištích v Pise a Florencii."
+    ],
+    "basis": "Opírá se o zápis stávky na ministerstvu, potvrzení zkrácené podoby společností ENAV a o to, že údaje ministerstva v předvečer stávky neuváděly žádné odvolání.",
+    "analysis": [
+     "Konání stávky v nějaké podobě v neděli, tedy bez odvolání, odložení či zákazu, dostalo pravděpodobnost 92 procent.",
+     "Míra posunů u stávek a protestů 0,045 (vlastní záznam 0 ze 14) dává asi 0,95; prognostici ji snížili, protože stávka už byla z nevysvětleného důvodu zkrácena z 24 na čtyři hodiny a celostátní stávka ENAV z 21. listopadu byla podle zpráv odvolána.",
+     "Pět prognostiků: základní míra 0,88, důkazy 0,77, oponent 0,85, kotva 0,88, nezávislý 0,80; kombinace 0,84, po kalibraci 0,92. Sázkový trh neexistuje.",
+     "Opačným směrem mohlo vést odvolání odbory na poslední chvíli nebo ministerský příkaz (precettazione); ani jedno nebylo do soboty rána hlášeno a údaje ministerstva zrcadlené webem scioperiitalia.it stávku stále vedly jako platnou."
+    ],
+    "claims": {
+     "it-malpensa-23": {
+      "label": "Stávka ENAV na Malpense se koná",
+      "text": "Stávka zaměstnanců řízení letového provozu ENAV na milánském letišti Malpensa, kterou vyhlásila odborová organizace RSA FAST-CONFSAL-AV, se uskuteční v neděli 22. listopadu 2026: nebude odvolána, odložena ani zakázána vládním nařízením.",
+      "criterion": "ANO, pokud stávka zaměstnanců ENAV na letišti Milano Malpensa, kterou na neděli 22. listopadu 2026 vyhlásila RSA FAST-CONFSAL-AV (zapsaná v registru ministerstva infrastruktury a dopravy, MIT), platí ještě na začátku svých zapsaných hodin 22. listopadu, takže se ten den uskuteční přerušení práce jakékoli délky. Stávka tedy nesmí být odvolána odbory, odložena na jiný den ani v celém rozsahu pozastavena či zakázána nařízením ministra infrastruktury a dopravy nebo prefekta (precettazione) či po zásahu Komise pro záruky (Commissione di garanzia). Další zkrácení stávky se počítá jako ANO, pokud 22. listopadu zůstane nějaké přerušení práce. NE, pokud před zapsaným začátkem 22. listopadu registr stávek MIT uvádí stávku jako odvolanou, odloženou (differito) nebo pozastavenou, pokud nařízení zakáže celé přerušení práce, nebo pokud ENAV, ENAC, SEA, ANSA či hlavní italská média oznámí, že byla zrušena. Účast a počet zrušených letů se nepočítají. Chybějící doklady nechávají tvrzení nerozhodnuté, nikoli NE."
+     }
+    }
+   },
+   "claims": [
+    {
+     "id": "it-malpensa-23",
+     "label": "Malpensa ENAV strike goes ahead",
+     "text": "The strike by ENAV air-navigation staff at Milan Malpensa airport called by RSA FAST-CONFSAL-AV takes place on Sunday 22 November 2026: it is not revoked, postponed or barred by a government order.",
+     "criterion": "YES if the strike of ENAV staff at Milano Malpensa called by RSA FAST-CONFSAL-AV for Sun 22 Nov 2026 (registered with the Ministry of Infrastructure and Transport, MIT) is still in force at the start of its registered hours on 22 Nov, so that a stoppage of any length takes place that day. That means it has not been revoked by the union, postponed to another date, or suspended or prohibited in full by an order of the Minister of Infrastructure and Transport or a prefect (precettazione), or after an intervention of the Commissione di garanzia. A further shortening of the hours counts as YES while some stoppage remains on 22 Nov. NO if, before the registered start on 22 Nov, the MIT strike register shows it as revoked, postponed (differito) or suspended, or an order bars the whole stoppage, or ENAV, ENAC, SEA, ANSA or major Italian outlets report that it has been called off. Turnout and the number of cancelled flights do not count. Missing evidence leaves the claim pending, not NO.",
+     "resolution_source": "https://scioperi.mit.gov.it/mit2/public/scioperi ; https://scioperiitalia.it/sciopero/2026-11-22-aerei-personale-soc-enav-aeroporto-di-milano-8579 ; ANSA; https://www.milanotoday.it/",
+     "schedule": "official",
+     "slip_class": "strike-or-protest",
+     "publishes": "MIT strike register (status column), continuously; ENAV/ENAC notices and Italian press on Sun 22 Nov around the 13:00–17:00 stoppage",
+     "tz": "Europe/Rome",
+     "event_window": {
+      "start": "2026-11-21T05:00:00+01:00",
+      "end": "2026-11-22T23:59:00+01:00"
+     },
+     "evidence_at": "2026-11-22T18:00:00+01:00",
+     "resolves_by": "2026-11-24T05:00:00+01:00",
+     "dossier": "data/dossiers/2026-11-23/it-malpensa-23.md",
+     "signals": "data/dossiers/2026-11-23/it-malpensa-23.signals.md",
+     "probability": 0.92,
+     "forecast": {
+      "baseline": {
+       "status_quo": "yes",
+       "why": "The strike is registered with MIT, was confirmed by ENAV on 17 Nov in its 4-hour form and showed no revocation on 20 Nov; if nothing changes, it goes ahead.",
+       "set_by": "dossier agent, before the forecasters reported"
+      },
+      "market_search": {
+       "at": "2026-11-20T18:10:00Z",
+       "checked": [
+        "markets.mjs search \"Malpensa\"",
+        "markets.mjs search \"Italy strike\""
+       ],
+       "note": "No market on Italian aviation strikes; results were unrelated (Italian PM, Sanremo, Zelenskyy–Putin meeting)."
+      },
+      "market": null,
+      "base_rate": null,
+      "dossier": "data/dossiers/2026-11-23/it-malpensa-23.md",
+      "signals": "data/dossiers/2026-11-23/it-malpensa-23.signals.md",
+      "agents": [
+       {
+        "role": "base-rate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:23:29+01:00",
+        "p": 0.88,
+        "p_blind": 0.88,
+        "at_blind": "2026-11-20T19:20:10+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Slip strike-or-protest 0.045 (own 0/14) gives ~0.95 held; registered, confirmed by ENAV 17 Nov in 4-hour form, no revocation at 14:48 on 20 Nov. Adjust down (-0.9 log-odds) because the strike was already cut from 24 to 4 h for an unknown reason and the same weekend's national ENAV strike was reportedly revoked, so a late revocation or settlement is more likely than the class average.",
+        "p_held": 0.89,
+        "p_if_held": 0.99,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "Unchanged: no market or published forecast; estimate still the strike-or-protest slip rate (0.045) adjusted down for the earlier 24-to-4-hour cut and the reported revocation of the 21 Nov national ENAV strike."
+       },
+       {
+        "role": "evidence",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:24:02+01:00",
+        "p": 0.77,
+        "p_blind": 0.82,
+        "at_blind": "2026-11-20T19:21:00+01:00",
+        "inputs_blind": [
+         "own-research"
+        ],
+        "reason_blind": "The MIT data show the RSA FAST-CONFSAL-AV strike (cut to 13:00-17:00) with no revocation at 14:48 on 20 Nov (https://scioperiitalia.it/sciopero/2026-11-22-aerei-personale-soc-enav-aeroporto-di-milano-8579), and ENAV confirmed it on 17 Nov (https://www.viaggi-usa.it/sciopero-22-novembre-2026-malpensa/). Shortening rather than withdrawing suggests the union means to strike; the main risk is a last-minute local deal or revocation (the national FILT-CGIL/UGL-TA ENAV strike of 21 Nov is reported revoked, same source) or a precettazione, which is rare for a 4-hour local stoppage.",
+        "inputs": [
+         "own-research",
+         "dossier",
+         "signals"
+        ],
+        "reason": "Slightly lower than blind. The dossier notes that the scioperiitalia mirror still showed the national 21 Nov ENAV strike as active although it is reported revoked, so a Malpensa revocation could already be missed. The reason for the cut from 24 to 4 hours is also unknown. Still, the strike is registered, ENAV confirmed it on 17 Nov and no precettazione was found. The signals file has no market.",
+        "time_note": "at reported by the agent as 2026-11-20T19:35:00+01:00, later than its file was written; replaced by the file's write time."
+       },
+       {
+        "role": "adversarial",
+        "model": "claude-fable-5-2",
+        "at": "2026-11-20T19:24:23+01:00",
+        "p": 0.85,
+        "p_blind": 0.85,
+        "at_blind": "2026-11-20T19:20:23+01:00",
+        "inputs_blind": [
+         "dossier",
+         "reference-data"
+        ],
+        "reason_blind": "Case for NO: the hours were already cut once for an unknown reason, the sister national ENAV strike of 21 Nov is reported revoked while the MIT mirror lags on revocations, and a crowded strike weekend invites a Commissione di garanzia or ministerial intervention. Still, ENAV confirmed the 4-hour form on 17 Nov, the register showed no revocation on 20 Nov, and a cut to 4 hours looks like compliance rather than retreat, so the slip rate of 0.045 is raised to about 0.15.",
+        "p_held": 0.86,
+        "p_if_held": 0.99,
+        "inputs": [
+         "dossier",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No market, model or published forecast in the signals. Unchanged: revocation or bar risk held at about 0.15 because of the earlier cut in hours and the reported revocation of the national ENAV strike."
+       },
+       {
+        "role": "anchor",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-20T19:20:00+01:00",
+        "p": 0.88,
+        "inputs": [
+         "signals",
+         "reference-data",
+         "dossier"
+        ],
+        "reason": "Start at 0.955; adjust down because this strike has already been changed once (24 h cut to 4 h around 17-18 Nov, reason unknown) and the related national ENAV strike of 21 Nov is reported revoked, raising late-revocation risk. A 4-hour Sunday-afternoon RSA strike confirmed by ENAV on 17 Nov is an unlikely target for precettazione, so about 0.88.",
+        "anchor": {
+         "kind": "base-rate",
+         "detail": "slip.mjs strike-or-protest 0.045 (own 0/14) -> held 0.955. No market (signals)."
+        }
+       },
+       {
+        "role": "outsider",
+        "model": "claude-sonnet-5-5",
+        "at": "2026-11-20T19:24:38+01:00",
+        "p": 0.8,
+        "p_blind": 0.8,
+        "at_blind": "2026-11-20T19:19:48+01:00",
+        "inputs_blind": [
+         "own-research",
+         "reference-data"
+        ],
+        "reason_blind": "Registered, already cut to 4 hours and not revoked as of 20 Nov; Italian aviation strikes are sometimes revoked or barred by the Commissione di garanzia, but any remaining stoppage counts as YES.",
+        "inputs": [
+         "own-research",
+         "reference-data",
+         "signals"
+        ],
+        "reason": "No market or new evidence on the strike's status. Unchanged.",
+        "time_note": "at reported by the agent as 2026-11-20T21:00:00+01:00, later than its file was written; replaced by the file's write time. at_blind reported by the agent as 2026-11-20T20:00:00+01:00, later than its file was written; replaced by the file's write time."
+       }
+      ],
+      "missing": [],
+      "combined": 0.841,
+      "calibrated": 0.917,
+      "combination": {
+       "method": "calibrated",
+       "weights": {
+        "base-rate": 1,
+        "evidence": 1,
+        "adversarial": 1,
+        "anchor": 1,
+        "outsider": 1
+       },
+       "platt": {
+        "a": 0.1557,
+        "b": 1.3496
+       },
+       "version": "2026-11-20"
+      },
+      "spread": 0.11,
+      "decomposition": {
+       "p_held": 0.929,
+       "p_if_held": 0.99,
+       "p_if_not_held": 0,
+       "note": "The calibrated figure (0.92) is above the forecasters' p_held (geometric mean 0.875), so p_if_held is kept at the forecasters' geometric mean and p_held is scaled so that the product equals the published figure."
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "diary": [
+  {
+   "date": "2026-11-22",
+   "text": "Los Angeles and Long Beach: PMA and ILWU Local 26 watchmen after the contract lapse at 00:01 PST on Saturday (deal, extension or walk-out)"
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Hong Kong: Election Committee subsector ordinary elections in 31 contested subsectors (856 candidates for 723 seats), polls 09:00–18:00 local time"
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Czech premiere of Milo Rau's \"The Pelicot Trial\" at the Pražské křižovatky festival (Galaxie, 18:00); Likud and Eisenkot's Yashar resume unity talks; Nepal's PM Balen Shah arrives in New Delhi; Serbian Speaker Čupić on N1 (the presidential election must be called by 27 Nov); Lithuanian by-election run-off"
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Belgian PM De Wever reports to the King on the budget talks; national union demonstration in Brussels; Czech cabinet may decide on extending fuel price caps into December; ODS republic assembly; EU General Affairs Council (cohesion) and AGRIFISH; RTVE eight-party debate in Spain"
+  },
+  {
+   "date": "2026-11-27",
+   "text": "Deadline for calling Serbia's presidential election; Chamber media committee deadline for amendments to the licence-fee bill"
+  },
+  {
+   "date": "2026-11-29",
+   "text": "Spanish general election; Brno's Pisárecké tunnels due to reopen; OPEC+ meeting"
+  }
+ ],
+ "meta": {
+  "candidates": 42,
+  "running": [
+   {
+    "title": "Russia's mass air strike on Ukraine; Russian missiles and drone crash in Poland",
+    "title_cs": "Rozsáhlý ruský útok na Ukrajinu, ruské střely a dron dopadly v Polsku",
+    "lists": [
+     "bbc",
+     "euronews",
+     "aljazeera",
+     "dw",
+     "ct24",
+     "novinky",
+     "ctk"
+    ],
+    "sources": [
+     "https://www.bbc.com/news/articles/cqx2x9dklxnro",
+     "https://www.euronews.com/2026/11/20/unidentified-object-falls-in-eastern-poland-amid-major-russian-attack-on-ukraine"
+    ],
+    "next_step": "Sat 21 Nov: NATO Secretary General Mark Rutte visits Warsaw (BBC https://www.bbc.com/news/articles/cqx2x9dklxnro ; PAP 'NATO chief to visit Poland on Saturday, PM Tusk says'). Polish defence minister Kosiniak-Kamysz said he would ask NATO for additional support (same BBC article); a formal Article 4 request/consultation is possible but NOT announced. Nothing scheduled found for Sun 22 Nov itself.",
+    "status": "covered",
+    "story": "ua-war"
+   },
+   {
+    "title": "Ukraine peace diplomacy after the Trump–Xi–Putin Shenzhen meeting and the Berlin Coalition of the Willing summit",
+    "title_cs": "Mírová diplomacie k Ukrajině po schůzce Trumpa, Si Ťin-pchinga a Putina a po berlínském summitu koalice ochotných",
+    "lists": [
+     "dw",
+     "euronews",
+     "bbc",
+     "novinky",
+     "ctk",
+     "ct24",
+     "seznam"
+    ],
+    "sources": [
+     "https://www.dw.com/en/new-ukraine-talks-including-europe-to-be-held-soon-merz/a-79997961",
+     "https://www.euronews.com/2026/11/20/what-does-it-mean-zelenskyy-asks-us-to-clarify-article-5-like-guarantee"
+    ],
+    "next_step": "No meeting dated for Sat 21 or Sun 22 Nov. Merz: talks including Europe 'soon' on neutral ground such as the UAE, no date (DW). Kushner (19 Nov): a new Russia–Ukraine prisoner exchange 'next week' (EFE link above) – most likely in the week of 23 Nov, but a swap by Sunday cannot be excluded. Russia preparing an E3 (DE/FR/UK) envoy visit to Moscow, no date (bne IntelliNews, 20 Nov, seen via Google News only). FT (20 Nov, via Google News headline): Trump wants a peace deal by early January.",
+    "status": "covered",
+    "story": "ua-war"
+   },
+   {
+    "title": "COP31 climate summit in Antalya runs into overtime over fossil fuels",
+    "title_cs": "Klimatická konference COP31 v Antalyi se prodlužuje kvůli sporu o fosilní paliva",
+    "lists": [
+     "dw",
+     "ctk",
+     "euronews"
+    ],
+    "sources": [
+     "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516",
+     "https://www.ceskenoviny.cz/zpravy/klimaticka-konference-osn-cop31-se-prodlouzuje-spor-je-hlavne-o-fosilni-paliva-/2904003"
+    ],
+    "next_step": "Talks passed the scheduled close (15:00 UTC Fri 20 Nov) and per DPA (via ČTK) are likely to run into the weekend; a closing plenary adopting (or failing to adopt) the final decisions is very likely on Sat 21 or Sun 22 Nov. Open issues: whether the text mentions fossil fuels (EU, France, Finland, Panama and others demand it; EU negotiators said they would prefer no document to a weak one), the '35-by-35' electrification target, and whether the next IPCC report is due 2028 or 2029 (Saudi Arabia and India want 2029). Sources: ČTK and DW above.",
+    "status": "covered",
+    "story": "cop31"
+   },
+   {
+    "title": "Iran war: US oil blockade, Iranian tanker convoy at Kharg, Houthi–Saudi escalation",
+    "title_cs": "Válka s Íránem: americká ropná blokáda, konvoj tankerů u Charku a eskalace mezi hútíi a Saúdskou Arábií",
+    "lists": [
+     "aljazeera",
+     "euronews",
+     "ct24",
+     "novinky",
+     "dw"
+    ],
+    "sources": [
+     "https://www.euronews.com/2026/11/20/iran-readies-tanker-convoy-at-kharg-island-to-test-us-oil-blockade",
+     "https://www.aljazeera.com/news/2026/11/20/us-targets-irans-ship-to-ship-transfers-can-tehran-break-the-blockade"
+    ],
+    "next_step": "No scheduled step on Sun 22 Nov found. More than 14 tankers with crews and Iranian flags are staged at Kharg Island, convoy expected to head for the Sea of Oman 'in the coming days' (Euronews); Washington has warned it would target ship-to-ship transfers. US–Iran mediated talks: no next date found. Saudi-led coalition and Houthis exchanging strikes and threats against ports (Al Jazeera live).",
+    "status": "covered",
+    "story": "gulf-shipping"
+   },
+   {
+    "title": "EU–UK summit seals post-Brexit reset deal (youth scheme, agrifood, carbon markets)",
+    "title_cs": "Summit EU a Británie uzavřel dohodu o obnově vztahů po brexitu",
+    "lists": [
+     "bbc",
+     "aljazeera",
+     "dw",
+     "euronews"
+    ],
+    "sources": [
+     "https://www.bbc.com/news/live/cm1j6gd3k5pdt",
+     "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal"
+    ],
+    "next_step": "Nothing reportable on Sun 22 Nov: the deal was agreed Fri 20 Nov; tuition fees deferred to a deal 'within six months'; member states' final approval pending, no date (Euronews).",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov: the deal was sealed on 20 Nov; next step UK participation in Erasmus+ from 1 Jan 2027 (Euronews).",
+    "next_dated_step": "1 Jan 2027: UK participation in Erasmus+ starts; tuition-fee deal due within six months (by ~May 2027); youth scheme running by Jan 2030 at the latest – https://www.euronews.com/2026/11/20/young-europeans-win-a-route-back-to-the-uk-but-not-cheaper-university-fees-yet"
+   },
+   {
+    "title": "Anthropic's record IPO and the wider tech sell-off",
+    "title_cs": "Rekordní IPO firmy Anthropic a širší výprodej technologických akcií",
+    "lists": [
+     "bbc",
+     "dw",
+     "ctk"
+    ],
+    "sources": [
+     "https://www.bbc.com/news/articles/c6808ym10vzgo",
+     "https://www.dw.com/en/anthropic-trading-tests-investors-appetite-for-ai/a-79993163"
+    ],
+    "next_step": "Nothing reportable on Sun 22 Nov (markets closed; share prices are out of scope by the brief). IPO proceeds finalised at $93.5bn after greenshoe (ČTK/CNBC).",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov: no corporate step dated; share-price claims are excluded by policy.",
+    "next_dated_step": "No dated corporate step found (next trading session Mon 23 Nov, price claims excluded)."
+   },
+   {
+    "title": "Czech fight over abolishing the TV and radio licence fee (ČT/ČRo funding)",
+    "title_cs": "Spor o zrušení poplatků a financování ČT a ČRo",
+    "lists": [
+     "ctk",
+     "novinky"
+    ],
+    "sources": [
+     "https://www.ceskenoviny.cz/zpravy/chudarek-prinesl-babisovi-pripominky-k-zakonu-o-financovani-medii/2904342",
+     "https://www.ceskenoviny.cz/zpravy/pavel-vlada-pri-planovanem-zruseni-poplatku-za-ct-a-cro-podcenila-komunikaci/2904447"
+    ],
+    "next_step": "Nothing reportable on Sun 22 Nov (Sunday TV debates would only repeat known positions). Chudárek met Babiš on 20 Nov; deadline for amendments at the Chamber's media committee ends next Friday 27 Nov; second reading expected mid-January (ČTK). Milion chvilek: nationwide 'warning' on Wed 2 Dec at 16:36 and invitation to the cabinet to a debate on 2 Dec 19:00 at Švandovo divadlo (Blesk).",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov: next steps are the media committee amendment deadline on Fri 27 Nov (ČTK) and the Milion chvilek warning on Wed 2 Dec (Blesk). Diary line.",
+    "next_dated_step": "Fri 27 Nov 2026: media-committee deadline for amendments (https://www.ceskenoviny.cz/zpravy/chudarek-prinesl-babisovi-pripominky-k-zakonu-o-financovani-medii/2904342); Wed 2 Dec: Milion chvilek nationwide warning (https://www.blesk.cz/clanek/852779)"
+   },
+   {
+    "title": "Cost-of-living protests and strikes across Europe",
+    "title_cs": "Protesty proti drahotě a stávky napříč Evropou",
+    "lists": [
+     "bbc",
+     "aljazeera",
+     "euronews"
+    ],
+    "sources": [
+     "https://www.euronews.com/2026/11/20/thousands-protest-across-europe-demanding-better-wages-and-services",
+     "https://www.aljazeera.com/news/2026/11/20/protests-held-across-europe-over-wages-services-high-living-costs"
+    ],
+    "next_step": "Unions, tenants' groups and movements from seven countries (France, UK, Belgium, Spain, Italy, Portugal, Greece) called coordinated protests on 20, 21 and 22 Nov (Novosti, 4 Nov; RFI 20 Nov: 'set to continue throughout the weekend'). No specific Sunday march with city/time confirmed.",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov with a checkable outcome: no named Sunday march with an official count was found in the coordinated 20–22 Nov protests.",
+    "next_dated_step": "Sat 21–Sun 22 Nov coordinated protests (https://www.rfi.fr/en/international/20261120-protesters-join-forces-across-europe-against-high-living-costs)"
+   },
+   {
+    "title": "Brno's Pisárecké tunnels stay closed after contractor misses deadline",
+    "title_cs": "Pisárecké tunely v Brně zůstávají zavřené, zhotovitel nestihl termín",
+    "lists": [
+     "ct24",
+     "novinky",
+     "seznam",
+     "ctk"
+    ],
+    "sources": [
+     "https://www.novinky.cz/clanek/domaci-ostuda-v-brne-klicove-tunely-jsou-dal-neprujezdne-ilegalni-uzavirku-firma-odmita-vysvetlit-40609709",
+     "https://www.ceskenoviny.cz/zpravy/eltodo-uvedlo-ze-praci-v-pisareckych-tunelech-v-brne-dokonci-29-listopadu/2904123"
+    ],
+    "next_step": "Nothing reportable on Sun 22 Nov; Eltodo says it will finish the work by Sun 29 Nov (ČTK, ČT24).",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov: Eltodo says the works finish on Sun 29 Nov (ČTK). Diary line.",
+    "next_dated_step": "Sun 29 Nov 2026: planned completion of works (https://www.ceskenoviny.cz/zpravy/eltodo-uvedlo-ze-praci-v-pisareckych-tunelech-v-brne-dokonci-29-listopadu/2904123)"
+   },
+   {
+    "title": "Russian hybrid attacks: Estonia to shut Russia border, Denmark expels Russian attaché over plot",
+    "title_cs": "Ruské hybridní útoky: Estonsko zavře hranici s Ruskem, Dánsko vyhostilo ruského přidělence",
+    "lists": [
+     "euronews",
+     "ct24",
+     "novinky"
+    ],
+    "sources": [
+     "https://www.euronews.com/2026/11/20/estonia-to-shut-border-with-russia-over-gru-linked-sabotage-attack",
+     "https://www.euronews.com/2026/11/20/two-danes-suspected-of-russian-backed-plot-to-kill-ukrainian-rapper"
+    ],
+    "next_step": "Nothing reportable on Sun 22 Nov.",
+    "status": "not_covered",
+    "why": "Nothing reportable on Sun 22 Nov: Estonia closes its road checkpoints on 1 Dec (Euronews).",
+    "next_dated_step": "1 Dec 2026: Estonia closes all five road checkpoints with Russia (https://www.euronews.com/2026/11/20/estonia-to-shut-border-with-russia-over-gru-linked-sabotage-attack)"
+   },
+   {
+    "title": "Nvidia leadership crisis: Jensen Huang's resignation in a spy-linked scandal, Trump urges his reinstatement, Nvidia shares down 14%",
+    "title_cs": "Krize ve vedení Nvidie: Jensen Huang odstoupil kvůli skandálu s údajnou čínskou špionkou, Trump žádá jeho návrat, akcie se propadly o 14 procent",
+    "lists": [
+     "aljazeera",
+     "seznam",
+     "bbc"
+    ],
+    "sources": [
+     "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+     "https://www.seznamzpravy.cz/clanek/ekonomika-finance-akcie-fondy-patecni-zemetreseni-na-wall-street-nvidia-se-propadla-o-1",
+     "https://www.bbc.com/news/articles/c6808ym10vzgo",
+     "https://decrypt.co/383411/nvidia-board-not-considering-jensen-huangs-return-report"
+    ],
+    "next_step": "Huang resigned on 12 Nov. On Fri 20 Nov Trump said he wants Huang given 'a second chance'. Reports (CNBC via Decrypt and others) say the board is not considering his return and is focused on its probe. No board meeting or decision is dated.",
+    "status": "not_covered",
+    "why": "Nothing is scheduled for Sunday and markets are closed. A board statement over the weekend is possible but not announced. Overlaps the existing Anthropic/tech sell-off item and could be folded into it."
+   },
+   {
+    "title": "GTA VI launch breaks records ($3.79bn on its first day)",
+    "title_cs": "GTA VI za první den vydělala rekordních 3,79 miliardy dolarů",
+    "lists": [
+     "bbc",
+     "dw",
+     "ct24",
+     "novinky",
+     "ctk"
+    ],
+    "sources": [
+     "https://www.ceskenoviny.cz/zpravy/gta-6-za-prvni-den-dosahla-rekordnich-trzeb-379-miliardy-dolaru/2",
+     "https://www.bbc.com/news/articles/cmqj5dr01e85o"
+    ],
+    "next_step": "No scheduled step. Further sales figures may follow but none are announced for Sunday.",
+    "status": "not_covered",
+    "why": "Sunday has no event with a checkable outcome."
+   },
+   {
+    "title": "Trump threatens to ban or heavily tax US firms that build AI data centres abroad",
+    "title_cs": "Trump hrozí americkým firmám zákazem nebo obřími daněmi za stavbu datových center v zahraničí",
+    "lists": [
+     "bbc",
+     "ct24",
+     "novinky"
+    ],
+    "sources": [
+     "https://ct24.ceskatelevize.cz/clanek/svet/trump-chce-udrzet-datova-centra-v-usa-firmam-hrozi-obrimi-danemi-379803",
+     "https://www.novinky.cz/clanek/zahranicni-amerika-budou-celit-obrovske-dani-trump-chce-zarazit-vystavbu-datacenter-v-zahranici-40609792"
+    ],
+    "next_step": "Few details given (BBC: his team was only hearing about it). No executive order or date has been announced.",
+    "status": "not_covered",
+    "why": "No dated step. Any order signed on a Sunday cannot be predicted."
+   },
+   {
+    "title": "Ukrainian strike brings down part of the Kerch (Crimea) Bridge",
+    "title_cs": "Ukrajinský úder poškodil Kerčský (Krymský) most",
+    "lists": [
+     "bbc",
+     "aljazeera",
+     "dw",
+     "novinky"
+    ],
+    "sources": [
+     "https://www.aljazeera.com/news/2026/11/20/ukraine-strikes-kerch-bridge-as-putin-ally-declares-no-one-needs",
+     "https://www.bbc.com/news/videos/ckvg28jy77z5o"
+    ],
+    "next_step": "Better added as a development to the existing ua-war items than run as a new story. Novinky: Russia will build a motorway to Crimea through occupied territory. Nothing is scheduled for Sunday.",
+    "status": "not_covered",
+    "why": "No dated event."
+   },
+   {
+    "title": "ICJ ruling in the Rohingya genocide case against Myanmar",
+    "title_cs": "Rozsudek Mezinárodního soudního dvora v případu genocidy Rohingů",
+    "lists": [
+     "dw",
+     "aljazeera"
+    ],
+    "sources": [
+     "https://www.dw.com/en/myanmar-genocide-ruling-rohingya-say-struggle-for-justice-not-over/a-80003365",
+     "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza"
+    ],
+    "next_step": "The ruling has already been delivered and only reactions and analysis remain.",
+    "status": "not_covered",
+    "why": "The event is over and nothing follows on Sunday."
+   }
+  ],
+  "running_note": "Evening list refreshed with the overnight front pages (read 21 Nov ~04:12Z): bbc read, ct24 read, seznam read, dw read, euronews read, aljazeera read, novinky read, ctk read, reuters refused (exit 2: HTTP 401 (site refuses scripted reading)), ap refused (exit 2: HTTP 403 (site refuses scripted reading)), ft refused (exit 2: HTTP 403 (site refuses scripted reading)), irozhlas refused (exit 2: HTTP 403 (site refuses scripted reading)). New running items (Nvidia leadership, GTA VI launch, AI data-centre threat, Kerch Bridge, ICJ Rohingya ruling) have nothing reportable on Sun 22 Nov.",
+  "running_shortfall": "4 running stories covered against running_min 6. The other six have nothing reportable on Sunday 22 Nov: the EU–UK deal was sealed on 20 Nov, the Anthropic IPO is a share price, the licence-fee bill's next step is 27 Nov, the cost-of-living protests have no counted Sunday march, the Brno tunnels reopen on 29 Nov and Estonia closes its border on 1 Dec. Each is in the diary or the dropped list with its next dated step.",
+  "cz_shortfall": "No Czech story against the aim of eight. Sun 22 Nov has no Czech event of weight with an open, checkable outcome: no party congress or leadership vote (the ODS assembly and the cabinet decision on fuel caps fall on Mon 23 Nov), no poll due, no demonstration announced, no ČSÚ or ČNB release, no public weekend programme of the President, and the fuel caps for Sun–Mon were already set on Friday; the only scheduled Czech event, the Czech premiere of Proces Pelicot, is practically certain. Czech-relevant world stories (Ukraine and the Polish airspace, COP31) carry the Czech edition. The morning sweep (ČT24, Seznam Zprávy, Novinky, ČTK) found only the second day of the Czech Medical Chamber congress in Brno, of low weight; the Nová sociální demokracie founding congress and the Svobodní leadership vote fall on Saturday.",
+  "economy_shortfall": "1 economy story (it-malpensa) against economy_min 3. 2 economy stories against economy_min 3: Sunday 22 Nov has no data release, central-bank or OPEC+ meeting, budget vote or tariff deadline; the Belgian budget deal (be-budget-23, about 6%) and a GTA VI sales announcement would both be non-event leads with nothing scheduled for that day, so they went to the diary and the dropped list. Morning sweep: OPEC+ meets on 29 Nov; no data release or corporate decision of weight on Sun 22 Nov. The planned second economy story (us-ports, the LA/Long Beach watchmen) was dropped in the morning: its claim window opened on Friday 20 Nov Pacific time, before the edition's day (see dropped_morning).",
+  "stories_shortfall": "5 stories against stories_min 12: Sunday 22 Nov is the thinnest day of the week (no election, data release or Czech event of weight); the morning check found no new event of the top half to add; us-ports and hk-election-committee were dropped in the morning (see dropped_morning).",
+  "negative_main": "No main claim below 50% and no negative headline after the morning drop of us-ports (the one planned non-event story, with awaited). Low claims only as secondaries: cop31-fossil-23, ua-pow-23, golden-horse-23.",
+  "easy_main": "One main claim at 90% or more: it-malpensa-23 (0.92; the reader's question is whether the strike goes ahead after it was already cut from 24 to 4 hours and the national ENAV strike was revoked). No secondary claim at 95% or more.",
+  "reports_what_happens": "Every main claim is about an outcome in the window: the COP31 closing plenary, the Air Force count of the night's drones, UKMTO/JMIC-reported attacks on ships, the outcome of the LA/Long Beach watchmen's contract talks, the Hong Kong turnout figure, the Malpensa strike, and the Golden Horse awards.",
+  "overnight": {
+   "at": "2026-11-21T05:17:00+01:00",
+   "time_note": "system-clock time by which all four desk reports had been received",
+   "summary": "Four desk agents checked all seven stories 05:12–05:20 CET; nothing material. COP31: no cover decision adopted before 07:00 Sat Antalya time (late Friday plenary adopted technical items only; third draft not yet out, AFP via Straits Times/Business Recorder). LA/Long Beach watchmen: no deal, extension or walk-out reported by 20:15 PT Friday (gCaptain). Malpensa: no revocation in the MIT strike data (scioperiitalia.it copy, 04:56). Ukraine: Air Force summary for the night to 21 Nov not yet published at 06:12 Kyiv; no POW exchange lists or swap announced. Gulf: no new UKMTO incident since Warning 214-26; no convoy left Kharg. Hong Kong and Taipei: arrangements unchanged. Evening numbers kept for all claims; no rerun."
+  },
+  "red_team": {
+   "at": "2026-11-21T05:18:00+01:00",
+   "time_note": "system-clock time at which the red-team report was received (the agent itself reported checking 05:17–05:27)",
+   "model": "claude-opus-5-5",
+   "summary": "No decisive new fact on any claim. Watch points: a third COP31 draft restoring backward-looking fossil-fuel wording or a formal objection pushing the gavel past Sunday midnight; a late extension for the port watchmen (coin flip); another mass Russian raid; a late revocation at Malpensa. Draft fixes made: COP31 adoption timing written as 'at the weekend'; an unsupported Hong Kong sentence on turnout being 'in line' removed."
+  },
+  "run": {
+   "started_at": "2026-11-21T04:57:00+01:00",
+   "finished_at": "2026-11-21T05:25:32+01:00",
+   "agents": 11,
+   "searches": 36,
+   "note": "Searches as reported by agents: resolver 15, audit about 2, desks 7, running refresh 5, red team 5, research 1, fact-check 1. Agents: resolver, audit, 4 story desks, running-list refresh, red team, research, 2 fact-checkers (plus the lead editor). No forecaster rerun: nothing material overnight."
+  },
+  "source_access": {
+   "reference": {
+    "read": 8,
+    "total": 12
+   },
+   "factcheck": {
+    "opened": 44,
+    "total": 45
+   },
+   "limited": false
+  },
+  "photos_note": "Three illustrative photos of places: the Expo 2016 grounds in Antalya, the Strait of Hormuz from space, Terminal 1 at Milan Malpensa.",
+  "unreachable": [
+   "https://www.reuters.com/world/ (refused (exit 2, HTTP 401))",
+   "https://www.reuters.com/business/ (refused (exit 2, HTTP 401))",
+   "https://apnews.com/ (refused (exit 2, HTTP 403))",
+   "https://www.ft.com/ (refused (exit 2, HTTP 403))",
+   "https://www.irozhlas.cz/ (refused (exit 2, HTTP 403))",
+   "hrad.cz (HTTP 403)",
+   "psp.cz (connection reset)",
+   "senat.cz (request rejected)",
+   "vlada.gov.cz (JS-rendered, empty)",
+   "pmanet.org (403)",
+   "ilwu.org (406)",
+   "scioperi.mit.gov.it and cgsse.it (connection reset)",
+   "securitycouncilreport.org (403)",
+   "consilium.europa.eu (403)",
+   "scmp.com (403)",
+   "screendaily.com (405)",
+   "euronews.com (406 on some pages)",
+   "efe.com (refused)",
+   "theguardian.com (bot check)",
+   "enb.iisd.org web pages (403; PDFs read)",
+   "unfccc.int (empty render)",
+   "news.google.com article links (do not resolve)",
+   "Morning 21 Nov: reuters (exit 2: HTTP 401 (site refuses scripted reading)); ap (exit 2: HTTP 403 (site refuses scripted reading)); ft (exit 2: HTTP 403 (site refuses scripted reading)); irozhlas (exit 2: HTTP 403 (site refuses scripted reading))",
+   "scioperi.mit.gov.it (exit 3, connection reset; MIT data read via scioperiitalia.it)",
+   "enb.iisd.org enb12912e.pdf (404)",
+   "scmp.com (exit 2)",
+   "bernama.com (connection reset)",
+   "ceskenoviny.cz events page (404)",
+   "ICJ PDFs (Cloudflare), dol.gov PDF, apnews.com (resolver)"
+  ],
+  "dropped_morning": [
+   {
+    "claim": "us-ports-23",
+    "story": "us-ports",
+    "why": "The claim's event window opens at 20:00 PT on Fri 20 Nov, before the edition's day in Los Angeles and before this morning's freeze (20:30 PT); the most likely way to YES, a last-minute extension before the 00:01 PST expiry, falls on Friday night. Moving the window to Saturday would change the question materially and needs a full rerun, which the morning could not do properly before 06:00, so the story went to the diary. The shadow record also exceeded the step limit (11 of 8)."
+   },
+   {
+    "claim": "hk-turnout-23",
+    "story": "hk-election-committee",
+    "why": "The fact-check found that the dossier's premise was wrong: the REO release of 30 Oct (P2026103000270) lists Education among the 31 contested subsectors, while the dossier, the centre of the range (92.4%, 2021 rates re-weighted without Education at 83.94%) and the forecasters' reasons treated it as uncontested. The correction moves the centre by a few points; a proper rerun of all five forecasters could not be completed before 06:00, so the story was dropped rather than published on a wrong premise."
+   }
+  ],
+  "fact_check": {
+   "at": "2026-11-21T05:24:00+01:00",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "opened": 44,
+   "total": 45,
+   "corrections": 6,
+   "note": "Two fact-checkers (cop31; the other five stories). Corrections: COP31 basis (8 of 9 overrunning COPs adopted between 07:00 the next day and midnight two days after the scheduled close, not 'the following Saturday or Sunday'), COP28 precedent (draft weakened, not dropped, the fossil wording), 'geometric mean' in the COP31 analysis, Czech grammar in the COP31 lead and a relative pronoun in the Golden Horse story; Hong Kong: Education is contested this year, which broke the turnout forecast's premise, so the story was dropped. ENB COP30 summary refused (403)."
+  }
+ },
+ "cs": {
+  "diary": [
+   {
+    "date": "2026-11-22",
+    "text": "Los Angeles a Long Beach: strážní z ILWU Local 26 a sdružení PMA po vypršení smlouvy v sobotu v 00:01 místního času (dohoda, prodloužení, nebo stávka)"
+   },
+   {
+    "date": "2026-11-22",
+    "text": "Hongkong: řádné volby do podsektorů Volebního výboru v 31 sporných podsektorech (856 kandidátů na 723 míst), hlasování 9:00–18:00 místního času"
+   },
+   {
+    "date": "2026-11-22",
+    "text": "Česká premiéra inscenace Mila Raua „Proces Pelicot“ na festivalu Pražské křižovatky (Galaxie, 18:00); Likud a Eisenkotova strana Jašar obnoví jednání o vládě jednoty; nepálský premiér Balen Šáh přiletí do Dillí; předseda srbského parlamentu Čupić v pořadu televize N1 (prezidentské volby musí vyhlásit do 27. listopadu); druhé kolo doplňovacích voleb v Litvě"
+   },
+   {
+    "date": "2026-11-23",
+    "text": "Belgický premiér De Wever podá králi zprávu o jednáních o rozpočtu; celostátní odborová demonstrace v Bruselu; česká vláda možná rozhodne o prodloužení cenových stropů pohonných hmot do prosince; republikové shromáždění ODS; Rada EU pro obecné záležitosti (soudržnost) a Rada pro zemědělství a rybolov; debata osmi stran na španělské RTVE"
+   },
+   {
+    "date": "2026-11-27",
+    "text": "Lhůta pro vyhlášení prezidentských voleb v Srbsku; termín pro pozměňovací návrhy k zákonu o zrušení poplatků v mediálním výboru Sněmovny"
+   },
+   {
+    "date": "2026-11-29",
+    "text": "Předčasné parlamentní volby ve Španělsku; v Brně se mají znovu otevřít Pisárecké tunely; schůzka OPEC+"
+   }
+  ],
+  "sections": [
+   {
+    "name": "Svět",
+    "dek": "Válka na Ukrajině, lodní doprava v Zálivu, ceny Zlatý kůň"
+   },
+   {
+    "name": "Ekonomika",
+    "dek": "Stávka řídících letového provozu na milánské Malpense"
+   }
+  ],
+  "layout": {
+   "front": {
+    "lead": "cop31",
+    "rail": []
+   },
+   "sections": [
+    {
+     "name": "Domov",
+     "dek": "Žádná česká událost s ověřitelným výsledkem v neděli 22. listopadu",
+     "stories": []
+    },
+    {
+     "name": "Svět",
+     "dek": "Válka na Ukrajině, lodní doprava v Zálivu, ceny Zlatý kůň",
+     "stories": [
+      "ua-war",
+      "gulf-shipping",
+      "golden-horse"
+     ]
+    },
+    {
+     "name": "Ekonomika",
+     "dek": "Stávka řídících letového provozu na milánské Malpense",
+     "stories": [
+      "it-malpensa"
+     ]
+    }
+   ]
+  }
+ }
+}
