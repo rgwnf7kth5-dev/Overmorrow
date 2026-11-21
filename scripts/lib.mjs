@@ -551,13 +551,13 @@ export function prequential(rows, fit, reference, minTrain) {
 const clampP = (p, lo = 0.01, hi = 0.99) => Math.min(hi, Math.max(lo, p));
 /** Our figure blended with a market price in log-odds, with a weight on the market fixed in advance (config.shadow). */
 export const marketBlend = (p, m, w) => sigmoid((1 - w) * logit(clampP(p)) + w * logit(clampP(m)));
-/** A shadow forecaster's probability recorded on a claim: forecast.shadow.sequential, or the mean of forecast.shadow.external. */
+/** A shadow forecaster's probability recorded on a claim: forecast.shadow.sequential, or the mean (of odds) of forecast.shadow.external or forecast.shadow.research. */
 export function shadowP(c, kind) {
   const s = c.forecast?.shadow;
   if (!s) return null;
   const ok = (p) => typeof p === 'number' && p > 0 && p < 1;
   if (kind === 'sequential') return ok(s.sequential?.p) ? s.sequential.p : null;
-  if (kind === 'external') { const ps = (s.external || []).map((e) => e.p).filter(ok); return ps.length ? geoMeanOdds(ps) : null; }
+  if (kind === 'external' || kind === 'research') { const ps = (s[kind] || []).map((e) => e.p).filter(ok); return ps.length ? geoMeanOdds(ps) : null; }
   return null;
 }
 /** The five recorded forecasters plus extra voices, by the plain geometric mean of odds; null without a full record. */
