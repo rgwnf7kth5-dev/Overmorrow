@@ -3799,6 +3799,80 @@
           },
           "note": "Re-forecast after material news: on 16 Nov United Torah Judaism set up a formal negotiating team and called talks with Eisenkot's bloc 'beyond preliminary' (JPost); Liberman conceded there will be no universal draft law. No deal signed; Eisenkot's mandate runs to about early December.",
           "note_cs": "Nová předpověď po podstatné zprávě: Sjednocený judaismus Tóry 16. listopadu sestavil vyjednávací tým a rozhovory s Eisenkotovým blokem označil za pokročilé (JPost); Liberman připustil, že plošný zákon o branné povinnosti nebude. Dohoda zatím podepsána není, Eisenkotův mandát trvá zhruba do začátku prosince."
+        },
+        {
+          "at": "2026-11-21T19:48:00+01:00",
+          "p": 0.47,
+          "combined": 0.468,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:33+01:00",
+              "p": 0.47,
+              "reason": "In the six Israeli elections from 2015 to 2022, four produced a government within about 96 days; in the four where the first mandate holder stalled (2019a, 2019b, 2020, 2021), two produced one in time. Eisenkot's mandate runs to 6 Dec, extendable to about 20 Dec, with a Knesset-mandate stage possible before 31 Jan, and he now has three tracks (unity with Likud, the Haredim, a minority government) with no deal and Liberman opposing the minority option. Polymarket's 'formed by' ladder (0.365 by 31 Dec, 0.585 by 28 Feb) interpolates to about 0.47 by 31 Jan.",
+              "inputs": [
+                "reference-data",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:34+01:00",
+              "p": 0.45,
+              "reason": "Eisenkot's mandate runs to 6 Dec. He keeps three tracks open: unity with Likud (talks on 22 Nov), a deal with the Haredim, or a vote on a minority government before 6 Dec (JPost and ynetnews, 20–21 Nov). Liberman rejected the emergency-government proposal and threatens to block a minority government, and Netanyahu demands a full term (ynetnews, 21 Nov). Polymarket gives 0.365 for a government by 31 Dec and 0.765 by 30 Jun 2027, which interpolates to about 0.45 for 31 Jan. Neither market deadline matches the question.",
+              "inputs": [
+                "own-research",
+                "dossier"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-21T19:10:31+01:00",
+              "p": 0.45,
+              "reason": "Case for No: three tracks and no deal on any; Liberman rejects both the emergency government and a minority government, Netanyahu's price for unity (full term, no 7 October inquiry) is unacceptable to Eisenkot's bloc, and the haredi draft deal is elusive, so the mandate (to 6 Dec, plus 14 days) may lapse and move to others. Case for Yes: 71 days remain, deadline pressure and fear of a new election usually produce late deals, and a minority-government vote is planned. Polymarket brackets the date at 0.365 (by 31 Dec) and 0.585 (by 28 Feb), which implies about 0.48 for 31 Jan; I shade slightly lower on the mutual vetoes.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:26+01:00",
+              "p": 0.47,
+              "reason": "Polymarket 'next Israeli government formed by Dec 31' is 0.365 (vol 83k) and 'by Feb 28' is 0.585 (vol 43k); linear interpolation to 31 Jan gives about 0.48, down from about 0.56 on 16 Nov. 'Formed' approximates the confidence vote. I shade slightly lower because Liberman rejected Eisenkot's emergency-government idea on 21 Nov and no deal has been reached on the unity, Haredi or minority-government track, with the mandate ending on 6 Dec.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-21T19:08:45+01:00",
+              "p": 0.5,
+              "reason": "The 2015–2022 base rate is 0.67 but this election is deadlocked: Liberman rejects an emergency government and insists on a Haredi coalition, and Eisenkot talks with Likud and the ultra-Orthodox continue. Eisenkot's threat of a minority-government vote and the 14-day extension, plus roughly ten weeks left to 31 Jan, keep it near even.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+            "p": 0.48,
+            "read_at": "2026-11-21T18:09:00Z",
+            "note": "Partial match: no 31 Jan rung; linear interpolation between \"formed by Dec 31\" 0.365 (vol ~83k) and \"by Feb 28\" 0.585 (vol ~43k)."
+          },
+          "note": "Re-forecast after material news: Eisenkot said on 20 Nov he will keep the mandate and put a minority government to a vote if the other tracks fail; Liberman rejected that on 21 Nov; Eisenkot's bloc and Likud meet again on 22 Nov; the mandate expires on 6 Dec with no deal. Polymarket's \"formed by\" ladder fell (31 Dec 0.365, 28 Feb 0.585).",
+          "note_cs": "Přepočet po podstatné zprávě: Eisenkot 20. listopadu uvedl, že si mandát ponechá, a pokud ostatní cesty selžou, předloží ke schválení menšinovou vládu; Liberman to 21. listopadu odmítl; Eisenkotův blok a Likud se znovu sejdou 22. listopadu; mandát vyprší 6. prosince a dohoda zatím není. Na Polymarketu klesly ceny sázek na vznik vlády (do 31. prosince 0,365, do 28. února 0,585)."
         }
       ],
       "result": null
@@ -6505,7 +6579,13 @@
           "note_cs": "Nic nového; Doerksonova přísaha se stále čeká 20. 11. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
         }
       ],
-      "result": null
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://news.gov.bc.ca/releases/2026PREM0069-001142",
+        "note": "BC Conservative leader Lorne Doerkson was sworn in as British Columbia's premier by the Lieutenant Governor on 20 Nov 2026 (BC Gov News; CBC).",
+        "note_cs": "Předseda britskokolumbijských konzervativců Lorne Doerkson složil 20. listopadu 2026 přísahu jako premiér Britské Kolumbie (BC Gov News; CBC).",
+        "resolved_at": "2026-11-21T18:48:00Z"
+      }
     },
     {
       "id": "eu-ecb-hike-december",
@@ -13159,6 +13239,73 @@
           "market": null,
           "note": "Weekly re-forecast. The 6 Nov third reading was cut short by a power outage; coalition figures (Macinka, 8 Nov; Agriculture Minister Šebestyán, 9 Nov) back the CZK 5 per 1,000 litres rise, with compensation for regions under negotiation. No third-reading date is set; the Chamber next sits from 24 Nov and December floor time goes mostly to the budget.",
           "note_cs": "Týdenní nová prognóza. Třetí čtení 6. listopadu přerušil výpadek proudu; představitelé koalice (Macinka 8. listopadu, ministr zemědělství Šebestyán 9. listopadu) zvýšení o 5 Kč za 1000 litrů podporují a o kompenzaci pro kraje se jedná. Termín třetího čtení není stanoven; Sněmovna se znovu sejde od 24. listopadu a prosincový čas na plénu připadne hlavně rozpočtu."
+        },
+        {
+          "at": "2026-11-21T19:48:00+01:00",
+          "p": 0.54,
+          "combined": 0.544,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:33+01:00",
+              "p": 0.55,
+              "reason": "Reference class: Chamber third readings interrupted for procedural or technical reasons with a governing majority still backing the bill usually resume within a few sittings, but December floor time slips often (roughly 30-40% slip past year-end when the budget dominates). Log-odds up for the coalition majority, Babiš and the Agriculture Minister defending the rise and the 2027 budget already counting on the revenue; down for the regions' unanimous objection, the unrelated-rider procedure inviting obstruction, and no confirmed date at the sitting opening 24 Nov.",
+              "inputs": [
+                "reference-data",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:34+01:00",
+              "p": 0.57,
+              "reason": "The third reading on 6 Nov was cut short by a power outage, not by a vote, and Babiš, Šebestyán and Macinka have backed the rise since then; the 2027 budget already counts on the revenue, and no coalition retreat has been reported since 14 Nov (board-cz; Seznam Zprávy 10 and 12 Nov). Against it: the regions' unanimous demand for a guaranteed share (Seznam Zprávy, 12 Nov), the industry warnings (Ekonomický deník, 16 Nov) and December floor time going to the budget, with no third-reading date set for the sitting from 24 Nov. A fresh search found nothing newer.",
+              "inputs": [
+                "own-research",
+                "dossier"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-21T19:10:31+01:00",
+              "p": 0.57,
+              "reason": "Case for No: the third reading still has no date, the sitting from 24 Nov is crowded (budget second reading 25 Nov, refinery tax), the ANO-led Association of Regions unanimously demands a guaranteed share and the opposition objects to the rider. Against that, the bill is one interrupted vote away from passage, Babiš, Šebestyán and Macinka back the rise, and the 2027 budget already counts on the revenue, which pushes the coalition to vote before year-end. No coalition retreat has been reported since 14 Nov, so I stay slightly above even.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:26+01:00",
+              "p": 0.48,
+              "reason": "No market (searched 'Czech groundwater'), so I start from the board's judgement model at 0.50. Nothing has changed since 14 Nov: the coalition still backs the CZK 7 rise and the 2027 budget counts on the money, but the third reading has no date, the regions want guarantees, and from 24 Nov floor time is crowded by the budget's second reading (25 Nov) and the refinery tax. A week has passed without progress and about 5.5 weeks are left, so I trim slightly.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-21T19:08:45+01:00",
+              "p": 0.55,
+              "reason": "The coalition has a majority, the budget already counts on the revenue and ministers and Babiš defended the rise after 9 Nov, so a December third reading is likely once the Chamber sits from 24 Nov. Against that: the vote has slipped once, the regions demand guarantees, floor time goes to the budget and nothing is dated.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast (last entry 14 Nov). Nothing material since: the coalition still backs the rise to CZK 7/m³ and the 2027 budget counts on the revenue; Veolia and Kofola warn of higher prices (Ekonomický deník, 16 Nov); the regions still want a guaranteed share; no third-reading date is set, and the sitting from 24 Nov is crowded with the budget and the refinery tax.",
+          "note_cs": "Týdenní přepočet (poslední záznam 14. listopadu). Od té doby nic podstatného: koalice dál podporuje zvýšení na 7 Kč/m³ a rozpočet na rok 2027 s výnosem počítá; Veolia a Kofola varují před zdražením (Ekonomický deník, 16. listopadu); kraje dál chtějí zaručený podíl; termín třetího čtení stanoven není a schůze od 24. listopadu je zaplněná rozpočtem a daní pro rafinerie."
         }
       ]
     },
@@ -13335,6 +13482,73 @@
           "market": null,
           "note": "Re-forecast after material news: coalition talks broke up again on 15 Nov; on 16 Nov King Philippe kept De Wever's resignation in abeyance and gave him one more week, with a report due on 23 Nov (VRT). A second failure makes acceptance a real option; an extension or a late deal remain likelier.",
           "note_cs": "Nová předpověď po podstatné zprávě: koaliční jednání 15. listopadu znovu ztroskotala; král Filip 16. listopadu De Weverovu demisi dál nepřijal a dal mu ještě týden, zprávu má podat 23. listopadu (VRT). Další neúspěch by přijetí demise reálně otevřel; pravděpodobnější zůstává prodloužení nebo pozdní dohoda."
+        },
+        {
+          "at": "2026-11-21T19:48:00+01:00",
+          "p": 0.26,
+          "combined": 0.256,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:33+01:00",
+              "p": 0.25,
+              "reason": "Belgian resignations held in abeyance end in acceptance in a minority of cases (Leterme 2008, first resignation; Michel 2018 was accepted quickly only because the coalition had already broken), and budget impasses have usually been patched. All five parties say they want to keep negotiating, De Wever and Rousseau met for three hours on 20 Nov and Fitch expects a resolution, but Vooruit's isolation and the fourth report to the King on 23 Nov keep acceptance a real risk over 40 days.",
+              "inputs": [
+                "reference-data",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:34+01:00",
+              "p": 0.25,
+              "reason": "Since the 16 Nov breakdown, De Wever and Vooruit chair Rousseau met for about three hours on 20 Nov, and VRT (21 Nov, 17:04) reports that all five parties say they want to keep negotiating, not bring the government down; Fitch expects the impasse to be resolved. There is still no deal and no schedule, and De Wever reports to the King on Mon 23 Nov for the fourth time this month, so acceptance of the resignation by 31 Dec remains a real but minority outcome.",
+              "inputs": [
+                "own-research",
+                "dossier"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-21T19:10:31+01:00",
+              "p": 0.25,
+              "reason": "Case for Yes: talks collapsed twice, Vooruit is isolated and may pull the plug, Monday is the fourth palace visit this month and falls on a national strike day. But the King has twice declined to accept the resignation, De Wever and Rousseau talked for three hours on 20 Nov, all five parties say they want to keep negotiating, and nobody gains from an election; an extension or a late budget deal remains likelier than acceptance by 31 Dec. No market found.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:26+01:00",
+              "p": 0.25,
+              "reason": "No matching market (searched 'De Wever', 'Belgium government'), so I start from my 16 Nov model at 0.30, based on about half of held resignations being accepted. I move down because De Wever and Rousseau talked for about 3 hours on 20 Nov and all five parties say they want to keep negotiating rather than bring the government down (VRT, 21 Nov), and Fitch expects the impasse to be resolved. Monday's fourth report to the King is still a real risk point, given the Vooruit standoff and the 23 Nov national strike.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-21T19:08:45+01:00",
+              "p": 0.28,
+              "reason": "All five parties say they want to keep negotiating, and De Wever and Vooruit's Rousseau talked for three hours on 20 Nov. The King has already held the resignation in abeyance twice, so another extension or a late deal is likelier than acceptance, but Monday's report is a real risk point and Vooruit could pull the plug.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast after material news: De Wever and Vooruit's leader Rousseau met for about three hours on 20 Nov and all five parties say they want to keep negotiating (VRT); no budget deal by Saturday evening; De Wever reports to the King again on Mon 23 Nov, with a national strike and demonstration in Brussels the same day.",
+          "note_cs": "Přepočet po podstatné zprávě: De Wever a předseda strany Vooruit Rousseau spolu 20. listopadu asi tři hodiny jednali a všech pět stran tvrdí, že chce dál vyjednávat (VRT); do sobotního večera dohoda o rozpočtu nepadla; De Wever podá králi znovu zprávu v pondělí 23. listopadu, kdy se v Bruselu koná také celostátní stávka a demonstrace."
         }
       ]
     },
@@ -13921,6 +14135,74 @@
           "market_note": "Polymarket 'Next Prime Minister of Spain' prices Feijóo at 0.85 (about $1m traded), but it has no 31 Jan deadline; our question adds the timing of the investiture (Cortes constitute in late December; PP needs Vox's votes or abstention), so it is not a match.",
           "note": "New question: a snap election on 29 Nov, with PP clearly ahead in the poll average and PP plus Vox projected above a majority; the open part is whether a PP–Vox understanding produces an investiture vote by 31 January.",
           "note_cs": "Nová otázka: předčasné volby 29. listopadu, v nichž lidovci (PP) v průměru průzkumů jasně vedou a PP s Vox mají podle projekcí většinu; otevřené je, zda dohoda PP a Vox přinese hlasování o investituře do 31. ledna."
+        },
+        {
+          "at": "2026-11-21T19:48:00+01:00",
+          "p": 0.48,
+          "combined": 0.478,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:33+01:00",
+              "p": 0.45,
+              "reason": "Spanish investitures after elections took 30 days (2011, absolute majority) to 58-66 days (2016, 2019, 2023) for the first vote, and 31 Jan is 63 days after the 29 Nov vote with the Cortes constituting only around 23 Dec and the holidays in between. I put a PP+Vox majority at about 0.75 (average 194 seats but the PSOE is narrowing and one pollster has 175) and a PP-Vox deal plus a successful vote by 31 Jan at about 0.6 given that, since Vox's regional deals have often taken weeks. The Polymarket price of 0.875 is for 'next PM' with no deadline, so it overstates this question.",
+              "inputs": [
+                "reference-data",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:34+01:00",
+              "p": 0.55,
+              "reason": "Demócrata's 21 Nov average projects PP+Vox at 194 seats (majority 176), but the PSOE is narrowing the gap (40dB puts it 0.7 points behind) and SW Demoscopia has PP+Vox at 175 (democrata.es, 21 Nov). Even with a majority, Feijóo needs Vox's yes votes, and the Cortes constitute only around 23 Dec, which leaves about five weeks for consultations, a PP–Vox deal and the vote by 31 Jan. Polymarket's 0.875 for Feijóo as next PM has no deadline, so it sets the ceiling, not the level.",
+              "inputs": [
+                "own-research",
+                "dossier"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-21T19:10:31+01:00",
+              "p": 0.39,
+              "reason": "Case for No: the PSOE is closing (40dB gap 0.7 points; SW Demoscopia has PP+Vox at 175), and even with a PP+Vox majority (average 194) the Cortes constitute only around 23 Dec, leaving about five weeks over Christmas for royal consultations and a deal with a Vox that will ask a high price; in 2023 the first investiture vote came two months after the election and in 2019 after 58 days. Polymarket's 0.875 for Feijóo as next PM has no 31 Jan deadline, so it prices who, not when. I put a right-wing majority near 0.78 and a completed investiture by 31 Jan given that near 0.5.",
+              "inputs": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-21T19:10:26+01:00",
+              "p": 0.55,
+              "reason": "Anchor: Polymarket 'Feijóo next PM' is 0.875 (vol ~1.06m) but has no deadline; the lead model (leadabove 3.2 3.5 0) gives 0.82 for PP first on Demócrata's 21 Nov average (PP 31.0, PSOE 27.8; PP+Vox 194 seats, with SW at 175 and 40dB showing a 0.7-point gap). Multiplying by about 0.63 for the timing (the Cortes constitute around late December, Vox must vote yes, and the two-month clock only starts at the first investiture vote, so nothing forces speed) gives about 0.55, down from 0.60 as the PSOE narrows the gap.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-21T19:08:45+01:00",
+              "p": 0.45,
+              "reason": "Poll averages give PP plus Vox about 194 seats against 176 needed, though the PSOE is narrowing the gap and one pollster has PP plus Vox at 175. Even with a majority, the Cortes constitute around 23 Dec, so an investiture vote needs a quick PP–Vox deal before 31 Jan; Vox bargaining could delay it.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast with new polls: Demócrata's average of 19 pollsters (21 Nov) has PP 31.0, PSOE 27.8, Vox 18.9 and PP+Vox at about 194 seats (majority 176); 40dB (16–20 Nov) has the PP only 0.7 points ahead; the Cortes constitute around 23 Dec, leaving about five weeks to 31 Jan for an investiture that needs Vox.",
+          "note_cs": "Týdenní přepočet s novými průzkumy: průměr 19 agentur serveru Demócrata (21. listopadu) dává PP 31,0 %, PSOE 27,8 % a Vox 18,9 %, PP a Vox dohromady asi 194 mandátů (většina je 176); 40dB (16.–20. listopadu) má PP před PSOE jen o 0,7 bodu; Cortes se ustaví kolem 23. prosince, takže na investituru, k níž je potřeba Vox, zbývá do 31. ledna asi pět týdnů.",
+          "market_note": "Polymarket \"Next Prime Minister of Spain\" prices Feijóo at 0.875 (about $1.06m traded, read 21 Nov ~18:08Z), but it has no 31 Jan deadline; our question adds the timing of the investiture, so it is not a match."
         }
       ]
     },

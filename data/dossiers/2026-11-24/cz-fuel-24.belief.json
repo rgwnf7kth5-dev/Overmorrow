@@ -1,0 +1,186 @@
+{
+ "claim": "cz-fuel-24",
+ "model": "claude-opus-5-5",
+ "started_at": "2026-11-21T19:16:11+01:00",
+ "finished_at": "2026-11-21T19:17:14+01:00",
+ "steps": [
+  {
+   "n": 1,
+   "action": "data",
+   "target": "node scripts/refdata/slip.mjs cz-government-item",
+   "found": "Slip class cz-government-item: P(scheduled item slips) ~0.27; whether the item is on Monday's agenda is unknown.",
+   "belief": {
+    "p": 0.45,
+    "confidence": "low",
+    "for": [
+     "Monthly extensions of a running regulation are usually renewed if the cause persists (reference class, no URL yet)"
+    ],
+    "against": [
+     "Slip rate for Czech government items ~0.27 (pipeline/reference-data/schedule-slip.json)",
+     "Unknown whether decision falls on 23 Nov or 30 Nov, or regulation ends"
+    ],
+    "open": [
+     "Has the regulation been extended monthly and when were past decisions taken?",
+     "Is the item on the 23 Nov agenda?"
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "action": "search",
+   "target": "regulace cen benzinu nafty prodloužení vláda listopad 2026",
+   "found": "Results show the government extended the caps to end of November (MF release).",
+   "belief": {
+    "p": 0.5,
+    "confidence": "low",
+    "for": [
+     "Regulation was extended once already, to 30 Nov — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559"
+    ],
+    "against": [
+     "Slip rate ~0.27",
+     "Timing of December decision unknown"
+    ],
+    "open": [
+     "Date and terms of the November extension decision",
+     "Any statement on December"
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "action": "read",
+   "target": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559",
+   "found": "MF release of 26 Oct (Monday): caps and 2.50 CZK margin extended to 30 Nov because oil market had not improved.",
+   "belief": {
+    "p": 0.55,
+    "confidence": "low",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559"
+    ],
+    "against": [
+     "Slip rate ~0.27",
+     "For November the last Monday before month end is 30 Nov itself, so the decision could be taken then"
+    ],
+    "open": [
+     "Any news on the December decision timing"
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "action": "search",
+   "target": "vláda pondělí 23. listopadu regulace cen pohonných hmot prosinec Schillerová",
+   "found": "Found ČTK 19 Nov 'government did not deal with extension today' and Newstream 13 Nov on December decision.",
+   "belief": {
+    "p": 0.55,
+    "confidence": "low",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559"
+    ],
+    "against": [
+     "Slip rate ~0.27",
+     "Government already skipped the item once on 19 Nov"
+    ],
+    "open": [
+     "Content of ČTK 19 Nov and Newstream 13 Nov articles"
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "action": "read",
+   "target": "https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+   "found": "ČTK 19 Nov: item not discussed because the finance minister was in Brno; she had said the decision would come within ten days.",
+   "belief": {
+    "p": 0.65,
+    "confidence": "medium",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559",
+     "19 Nov 2026: cabinet (Thursday meeting) did not take up the extension because Schillerová was absent; points to the next meeting — https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899"
+    ],
+    "against": [
+     "Slip rate ~0.27; item already deferred once",
+     "Could be taken on 30 Nov or regulation allowed to lapse"
+    ],
+    "open": [
+     "Exact timing statement by Schillerová",
+     "Agenda of 23 Nov meeting"
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "action": "read",
+   "target": "https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci",
+   "found": "Newstream 13 Nov: Schillerová said the decision must come within a week or ten days, i.e. around 20–23 Nov; no hint on content.",
+   "belief": {
+    "p": 0.68,
+    "confidence": "medium",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559",
+     "19 Nov 2026: cabinet (Thursday meeting) did not take up the extension because Schillerová was absent; points to the next meeting — https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+     "13 Nov 2026: Schillerová said the government must decide 'within a week, maybe ten days' whether to continue in December — https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci"
+    ],
+    "against": [
+     "Slip rate ~0.27; item already deferred once (19 Nov)",
+     "No statement on whether caps continue; decision may be only on diesel excise or to end regulation"
+    ],
+    "open": [
+     "Agenda of 23 Nov meeting"
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "action": "search",
+   "target": "program schůze vlády 23. listopadu 2026 pohonné hmoty nařízení vlády cenové stropy",
+   "found": "A Blesk headline 'Vláda projedná naftu i náhrady po pracovním úrazu' (https://www.blesk.cz/clanek/853027) suggests diesel is on an upcoming agenda (unread, date unverified); no direct confirmation that the caps are on the 23 Nov agenda.",
+   "belief": {
+    "p": 0.68,
+    "confidence": "medium",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559",
+     "19 Nov 2026: cabinet (Thursday meeting) did not take up the extension because Schillerová was absent; points to the next meeting — https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+     "13 Nov 2026: Schillerová said the government must decide 'within a week, maybe ten days' whether to continue in December — https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci",
+     "Blesk preview headline says the government will discuss diesel ('projedná naftu'), date unverified — https://www.blesk.cz/clanek/853027"
+    ],
+    "against": [
+     "Slip rate ~0.27; item already deferred once (19 Nov)",
+     "'Naftu' may mean only the diesel excise cut, which does not count",
+     "Regulation could be allowed to end"
+    ],
+    "open": [
+     "Whether the Blesk preview concerns 23 Nov and covers price caps, not only excise"
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "action": "submit",
+   "target": "",
+   "found": "Submitted p_blind 0.68.",
+   "belief": {
+    "p": 0.68,
+    "confidence": "medium",
+    "for": [
+     "26 Oct 2026: government extended fuel price caps and diesel excise cut to 30 Nov, decided at the last Monday meeting before month end — https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-rozhodla-o-prodlouzeni-regulace-cen-pohonnyc-65559",
+     "19 Nov 2026: cabinet (Thursday meeting) did not take up the extension because Schillerová was absent; points to the next meeting — https://www.ceskenoviny.cz/zpravy/prodlouzenim-regulace-cen-pohonnych-hmot-se-dnes-vlada-nezabyvala/2903899",
+     "13 Nov 2026: Schillerová said the government must decide 'within a week, maybe ten days' whether to continue in December — https://www.newstream.cz/politika/levnejsi-nafta-i-cenove-stropy-v-nejistote-vlada-rozhodne-co-bude-v-prosinci",
+     "Blesk preview headline on government discussing diesel — https://www.blesk.cz/clanek/853027"
+    ],
+    "against": [
+     "Slip rate ~0.27; already deferred once",
+     "Possibility of excise-only extension or lapse",
+     "30 Nov meeting remains a fallback date"
+    ],
+    "open": [
+     "23 Nov agenda contents"
+    ]
+   }
+  }
+ ],
+ "p_blind": 0.68,
+ "p": 0.62,
+ "note": "An extra read attempt of https://vlada.gov.cz/cz/jednani-vlady/program-schuze-vlady/ returned HTTP 404 (between steps 6 and 7); it yielded nothing and is not counted as a step. Final p: signals file found no market; the desk's internal board question cz-fuel-cap-december (extension by 30 Nov) stood at 0.47 on 19 Nov, which bounds a 23 Nov decision from below in its view, so p lowered from 0.68 to 0.62.",
+ "searches": 3
+}
