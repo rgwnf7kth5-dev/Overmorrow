@@ -241,30 +241,74 @@
           "base_url": "https://api.openai.com/v1",
           "key_env": "OPENAI_API_KEY",
           "model": "gpt-6.2-sol",
-          "auth": "proxy"
+          "auth": "proxy",
+          "research": {
+            "api": "responses",
+            "tools": [
+              {
+                "type": "web_search"
+              }
+            ],
+            "extra": {
+              "include": [
+                "web_search_call.action.sources"
+              ]
+            }
+          }
         },
         {
           "id": "google",
           "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
           "key_env": "GEMINI_API_KEY",
           "model": "gemini-4-argon",
-          "auth": "proxy"
+          "auth": "proxy",
+          "research": {
+            "api": "interactions",
+            "url": "https://generativelanguage.googleapis.com/v1beta/interactions",
+            "tools": [
+              {
+                "type": "google_search"
+              }
+            ]
+          }
         },
         {
           "id": "xai",
           "base_url": "https://api.x.ai/v1",
           "key_env": "XAI_API_KEY",
           "model": "grok-4.7",
-          "auth": "proxy"
+          "auth": "proxy",
+          "research": {
+            "api": "responses",
+            "tools": [
+              {
+                "type": "web_search"
+              },
+              {
+                "type": "x_search"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "research": {
+        "enabled": true,
+        "adopted": "2026-11-21",
+        "claims_max": 3,
+        "searches_max": 6,
+        "band": [
+          0.2,
+          0.8
+        ]
+      }
     },
     "_notes": {
       "purpose": "Shadow trials (METHODOLOGY 16): each method is computed or recorded beside the published figure and scored on the same claims. None enters the published figure until it beats it by v6.backtest_min_gain on v6.backtest_min_test later claims.",
       "market_blend": "Weights on the market price in log-odds, fixed here on 9 November 2026 before any scoring: 0.5 (no prior view) and 0.67 (the weight the AIA Forecaster report fitted on liquid markets). Computed at build time; no extra work in the runs.",
       "conformal": "Empirical 80% ranges for number forecasts: consensus plus or minus the 80% quantile of past absolute surprises in scale units, from results known before the freeze; at least min_past results.",
       "sequential": "One extra forecaster per edition for at most claims_max binary claims whose round-one figure lies inside band (widest spread first): no dossier, a research loop of at most steps_max steps and searches_max searches, a written belief state after every step. Skipped when the search budget is short.",
-      "external": "Forecasters on models of other vendors through OpenAI-compatible endpoints (scripts/external.mjs). Switched on by the publisher on 21 November 2026 with OpenAI, Google and xAI. auth \"proxy\": each key is a network secret of the runs' cloud environment (Default), attached by the environment's proxy to requests for the provider's host; no key is in the repository, the prompts or the machine. Model names as listed by each provider on that day."
+      "external": "Forecasters on models of other vendors through OpenAI-compatible endpoints (scripts/external.mjs). Switched on by the publisher on 21 November 2026 with OpenAI, Google and xAI. auth \"proxy\": each key is a network secret of the runs' cloud environment (Default), attached by the environment's proxy to requests for the provider's host; no key is in the repository, the prompts or the machine. Model names as listed by each provider on that day.",
+      "external_research": "Own search (from the edition prepared on 21 November 2026): for at most claims_max binary claims inside band (the same claims as the sequential researcher: widest spread first), each provider gets only the date, the claim, the criterion and the deadline and searches for itself with its vendor's search tool (OpenAI web search; xAI web and X search; Google Search), at most searches_max searches per claim. No dossier, no signals, no other forecaster's figure. Recorded in forecast.shadow.research; scored beside the published figure like every shadow trial. Ceiling per day: claims_max x providers calls, claims_max x providers x searches_max searches."
     }
   },
   "nonevent": {

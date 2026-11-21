@@ -371,9 +371,9 @@ function checkPhotos(ed, w) {
  */
 function checkShadow(c, cw, frozen) {
   const f = c.forecast || {}, s = f.shadow;
-  for (const a of f.agents || []) if (['sequential', 'external'].includes(a.role)) err(cw, `forecast.agents holds a shadow forecaster (${a.role}); record it under forecast.shadow`);
+  for (const a of f.agents || []) if (['sequential', 'external', 'research'].includes(a.role)) err(cw, `forecast.agents holds a shadow forecaster (${a.role}); record it under forecast.shadow`);
   if (s === undefined) return;
-  if (!s || typeof s !== 'object' || Array.isArray(s)) return err(cw, 'forecast.shadow must be an object {sequential?, external?}');
+  if (!s || typeof s !== 'object' || Array.isArray(s)) return err(cw, 'forecast.shadow must be an object {sequential?, external?, research?}');
   const prob = (p) => typeof p === 'number' && p > 0 && p < 1;
   const late = (at) => isStamp(frozen) && Date.parse(at) > Date.parse(frozen);
   const q = s.sequential;
@@ -398,6 +398,19 @@ function checkShadow(c, cw, frozen) {
     else for (const e of s.external) {
       if (!e || !nonEmpty(e.provider) || !nonEmpty(e.model) || !isStamp(e.at) || !prob(e.p)) err(cw, 'forecast.shadow.external entries need provider, model, at and p strictly between 0 and 1');
       else if (late(e.at)) err(cw, `forecast.shadow.external ${e.provider} recorded after the freeze`);
+    }
+  }
+  // Other vendors' models with their own search (from 21 Nov 2026). Structure only: a provider that searched more than
+  // asked is a matter for the report, not a reason to stop an edition.
+  if (s.research !== undefined) {
+    if (!Array.isArray(s.research)) err(cw, 'forecast.shadow.research must be a list');
+    else for (const e of s.research) {
+      if (!e || !nonEmpty(e.provider) || !nonEmpty(e.model) || !isStamp(e.at) || !prob(e.p)) err(cw, 'forecast.shadow.research entries need provider, model, at and p strictly between 0 and 1');
+      else {
+        if (late(e.at)) err(cw, `forecast.shadow.research ${e.provider} recorded after the freeze`);
+        if (!Number.isInteger(e.searches) || e.searches < 0) err(cw, `forecast.shadow.research ${e.provider}: searches must be a whole number`);
+        if (e.trace !== undefined && fileText(e.trace) === null) err(cw, `forecast.shadow.research ${e.provider}: trace file ${e.trace} not found`);
+      }
     }
   }
 }
