@@ -776,6 +776,15 @@
                   "trace": "data/dossiers/2026-11-24/cz-fuel-24.research.json"
                 },
                 {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T20:36:54Z",
+                  "p": 0.28,
+                  "searches": 24,
+                  "sources": 23,
+                  "trace": "data/dossiers/2026-11-24/cz-fuel-24.research.json"
+                },
+                {
                   "provider": "xai",
                   "model": "grok-4.7",
                   "at": "2026-11-21T20:06:22Z",
@@ -1046,6 +1055,15 @@
                   "p": 0.28,
                   "searches": 5,
                   "sources": 25,
+                  "trace": "data/dossiers/2026-11-24/cz-safe-24.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T20:36:25Z",
+                  "p": 0.22,
+                  "searches": 16,
+                  "sources": 9,
                   "trace": "data/dossiers/2026-11-24/cz-safe-24.research.json"
                 },
                 {
@@ -2816,6 +2834,15 @@
                   "trace": "data/dossiers/2026-11-24/ariane-24.research.json"
                 },
                 {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-21T20:36:29Z",
+                  "p": 0.8,
+                  "searches": 7,
+                  "sources": 15,
+                  "trace": "data/dossiers/2026-11-24/ariane-24.research.json"
+                },
+                {
                   "provider": "xai",
                   "model": "grok-4.7",
                   "at": "2026-11-21T20:06:16Z",
@@ -3539,20 +3566,20 @@
     }
   ],
   "external_run": {
-    "at": "2026-11-21T20:06:22Z",
+    "at": "2026-11-21T20:36:54Z",
     "providers": [
       "openai gpt-6.2-sol",
       "google gemini-4-argon",
       "xai grok-4.7"
     ],
     "binary_claims": 8,
-    "forecasts": 24,
+    "forecasts": 0,
     "contested": [
       "cz-fuel-24",
       "cz-safe-24",
       "ariane-24"
     ],
-    "research": 6,
+    "research": 3,
     "failed": []
   }
 }
