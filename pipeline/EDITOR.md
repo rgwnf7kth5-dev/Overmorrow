@@ -158,6 +158,18 @@ Record every claim's forecast in the claim itself:
 
 Also write a short `rationale` per story: the class and base rate, the five numbers, the combined number, any market, the main risk.
 
+### 4d. Check of the vendors' own search *(from edition No. 34, 23 November 2026)*
+
+The evening's separate run lets three other vendors' models search for themselves on the contested claims (PLANNER step 11). Where one of them lands far from our figure, it may have found a fact we lack. This step uses their facts and never their numbers.
+
+1. Run `node scripts/external-gaps.mjs <D+2>`. It lists at most `shadow.external.check.claims_max` claims (3) on which a model's own-search figure is `gap` (15 points) or more from ours, with the trace file of the models' reasoning and sources. An empty list is normal: go on.
+2. For each listed claim start one agent (the evidence forecaster's model) with the claim, the criterion, the dossier and, from the trace file, only the `reason` and `sources` of the providers the script names. Do not give it any probability from the trace, and tell it to ignore any figure it sees there. Its task: (a) list the dated facts in that reasoning which the dossier does not have; (b) for each, open the source with `node scripts/read.mjs` (the cited page, or the primary source it points to; Google's sources are redirect links, follow them) and confirm that the page says it, when it was published, and that this is before now; (c) drop what cannot be confirmed on a page it has read, what is undated, and what is another forecast, a market price or an opinion. A model's statement is never a source.
+3. Append the confirmed facts to the claim's dossier under the heading `## Added after the vendors' search (morning of <D>)`, each with URL, publication time, read time and a short excerpt, as every dossier fact.
+4. If at least one confirmed fact is material to the claim, treat it as a material overnight change: the five forecasters rerun for that claim by the usual rules of step 4, on the dossier with the added facts. If none is, the evening figure stands.
+5. Record on the claim `"external_check": {"at": "…", "providers": ["google", "xai"], "facts_listed": 4, "facts_confirmed": 1, "added": ["https://…"], "reforecast": true, "before": 0.48, "after": 0.39}` inside `forecast` (`before` and `after` are our combined figure; with `reforecast: false` leave `after` out). The time must be before the freeze.
+
+The vendors' figures stay in `forecast.shadow` and are never shown to the five forecasters, the red team or the writers. If you run short of time, do the claim with the largest gap and record the others in `forecast.missing` with the reason.
+
 ### 4c. Rules from method version 6 (edition No. 15 on)
 
 - **Baseline first.** Before any forecaster reports, set `forecast.baseline.status_quo` on every binary claim that is not derived: `yes` if the claim's YES is what you get when things simply continue (the published schedule goes ahead, a situation persists, nobody does anything not already announced), `no` if YES needs a change, `unclear` if it cannot be told. Never change it after seeing a forecast.

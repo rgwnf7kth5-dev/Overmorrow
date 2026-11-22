@@ -400,6 +400,16 @@ function checkShadow(c, cw, frozen) {
       else if (late(e.at)) err(cw, `forecast.shadow.external ${e.provider} recorded after the freeze`);
     }
   }
+  // The morning's check of the vendors' own search (EDITOR step 4d, from edition No. 34).
+  const xc = c.forecast?.external_check;
+  if (xc !== undefined) {
+    if (!xc || typeof xc !== 'object' || !isStamp(xc.at) || !Array.isArray(xc.providers) || !Number.isInteger(xc.facts_confirmed) || typeof xc.reforecast !== 'boolean') err(cw, 'forecast.external_check needs at, providers, facts_confirmed and reforecast');
+    else {
+      if (late(xc.at)) err(cw, 'forecast.external_check recorded after the freeze');
+      if (xc.reforecast && (!prob(xc.before) || !prob(xc.after))) err(cw, 'forecast.external_check with reforecast needs before and after');
+      if (xc.reforecast && xc.facts_confirmed < 1) err(cw, 'forecast.external_check: a rerun needs at least one confirmed fact');
+    }
+  }
   // Other vendors' models with their own search (from 21 Nov 2026). Structure only: a provider that searched more than
   // asked is a matter for the report, not a reason to stop an edition.
   if (s.research !== undefined) {
