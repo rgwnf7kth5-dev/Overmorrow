@@ -476,7 +476,71 @@
                 "steps": 8,
                 "searches": 1,
                 "trace": "data/dossiers/2026-11-25/ua-drones-25.belief.json"
-              }
+              },
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:08:13Z",
+                  "p_blind": 0.72,
+                  "p": 0.71,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:08:40Z",
+                  "p_blind": 0.71,
+                  "p": 0.73,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:10:52Z",
+                  "p_blind": 0.71,
+                  "p": 0.72,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:20:12Z",
+                  "p": 0.77,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/ua-drones-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:20:29Z",
+                  "p": 0.76,
+                  "searches": 8,
+                  "sources": 24,
+                  "trace": "data/dossiers/2026-11-25/ua-drones-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:20:39Z",
+                  "p": 0.68,
+                  "searches": 11,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/ua-drones-25.research.json"
+                }
+              ]
             },
             "open_because": {
               "why": "Routine nightly attack; its size varies from under 100 to over 400 drones and is not announced in advance.",
@@ -737,6 +801,43 @@
             "open_because": {
               "why": "Iran keeps striking tankers in and near Hormuz amid the US blockade; whether a UKMTO-reported incident falls on a given day is not known in advance.",
               "source": "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf"
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:08:15Z",
+                  "p_blind": 0.66,
+                  "p": 0.66,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:08:36Z",
+                  "p_blind": 0.6,
+                  "p": 0.58,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:11:15Z",
+                  "p_blind": 0.61,
+                  "p": 0.63,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -1003,7 +1104,44 @@
               "decisive": true,
               "reforecast": true
             },
-            "disagreement": null
+            "disagreement": null,
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:08:23Z",
+                  "p_blind": 0.88,
+                  "p": 0.89,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:08:48Z",
+                  "p_blind": 0.86,
+                  "p": 0.77,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:13:15Z",
+                  "p_blind": 0.72,
+                  "p": 0.71,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           }
         }
       ],
@@ -1239,7 +1377,71 @@
                 "steps": 8,
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-25/eu-dbp-25.belief.json"
-              }
+              },
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:08:52Z",
+                  "p_blind": 0.83,
+                  "p": 0.81,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:09:15Z",
+                  "p_blind": 0.78,
+                  "p": 0.82,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:12:30Z",
+                  "p_blind": 0.7,
+                  "p": 0.69,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:20:39Z",
+                  "p": 0.81,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/eu-dbp-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:21:33Z",
+                  "p": 0.88,
+                  "searches": 19,
+                  "sources": 24,
+                  "trace": "data/dossiers/2026-11-25/eu-dbp-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:22:08Z",
+                  "p": 0.78,
+                  "searches": 15,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/eu-dbp-25.research.json"
+                }
+              ]
             },
             "open_because": {
               "why": "France's 2026 net expenditure was forecast above its annual cap (1.4% vs 1.2%, June), its deficit targets are missed in the autumn forecast (5.5% in 2026, 5.4% in 2027 vs 5.0% planned), and the Assembly rejected the 2027 finance bill; yet the cumulative path was still within the limit and Dombrovskis has called the draft 'ambitious'.",
@@ -1462,7 +1664,44 @@
               "p_if_not_held": 0
             },
             "spread": 0.06,
-            "disagreement": null
+            "disagreement": null,
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:09:03Z",
+                  "p_blind": 0.94,
+                  "p": 0.93,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:09:34Z",
+                  "p_blind": 0.93,
+                  "p": 0.94,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:12:00Z",
+                  "p_blind": 0.87,
+                  "p": 0.85,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           }
         }
       ],
@@ -1562,11 +1801,11 @@
                   "reference-data"
                 ],
                 "q10_blind": 81.7,
-                "q50_blind": 92.0,
+                "q50_blind": 92,
                 "q90_blind": 102.4,
                 "reason_blind": "Consensus 92.1, surprise RMS 5.02 (n=12, no sign bias, 9 of 12 outside the consensus range). Michigan rose in November but the sharp equity sell-off hits the stock-expectations item; net a hair below consensus; width 20.7 = 4.12 x scale.",
                 "q10": 81.7,
-                "q50": 92.0,
+                "q50": 92,
                 "q90": 102.4,
                 "at": "2026-11-22T19:10:03+01:00",
                 "inputs": [
@@ -1616,11 +1855,11 @@
                   "reference-data"
                 ],
                 "q10_blind": 80.6,
-                "q50_blind": 91.0,
+                "q50_blind": 91,
                 "q90_blind": 101.4,
                 "reason_blind": "Consensus 92.1, scale 5.02 (RMS of 12 Econoday surprises; 9 of 12 outside the consensus range). Adversarial case: October's +7.5 jump (an 11.3 beat) is preliminary and such jumps often partly reverse, and the November equity sell-off hits the expectations items; against that, Michigan rose and gasoline fell. Centre shaded 1.1 below consensus (within half a scale), width 20.8 >= 4.1 x scale. Slip 0.002 (0/67), date confirmed by the Conference Board.",
                 "q10": 80.6,
-                "q50": 91.0,
+                "q50": 91,
                 "q90": 101.4,
                 "at": "2026-11-22T19:10:42+01:00",
                 "inputs": [
@@ -1634,7 +1873,7 @@
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "q10": 81.7,
-                "q50": 92.0,
+                "q50": 92,
                 "q90": 102.3,
                 "at": "2026-11-22T19:06:20+01:00",
                 "inputs": [
@@ -1652,11 +1891,11 @@
                   "own-research",
                   "reference-data"
                 ],
-                "q10_blind": 82.0,
+                "q10_blind": 82,
                 "q50_blind": 92.1,
                 "q90_blind": 102.2,
                 "reason_blind": "October first print was 91.7 (surprise rise, per search headlines), consensus 92.1; RMS surprise 5.0 so wide interval at the method minimum, centred on consensus.",
-                "q10": 82.0,
+                "q10": 82,
                 "q50": 92.1,
                 "q90": 102.2,
                 "at": "2026-11-22T19:20:00+01:00",
@@ -1991,7 +2230,7 @@
             "market": null,
             "base_rate": {
               "class": "dell-fy-revenue-guidance-raise",
-              "rate": 1.0,
+              "rate": 1,
               "n": 3,
               "source": "Dell press releases Q3 FY26 (SEC 8-K), Q1 FY27, Q2 FY27 — 3 of 3 in-year reports raised the full-year revenue outlook; own record company-results-beat-guidance 2/0"
             },
@@ -2179,6 +2418,43 @@
             "open_because": {
               "why": "Dell has not pre-announced; whether it lifts the full-year figure depends on Q3 shipments under memory constraints and its Q4 view.",
               "source": "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:09:43Z",
+                  "p_blind": 0.85,
+                  "p": 0.83,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:10:15Z",
+                  "p_blind": 0.72,
+                  "p": 0.72,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:14:57Z",
+                  "p_blind": 0.55,
+                  "p": 0.64,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2300,7 +2576,7 @@
                 "q50_blind": 98.1,
                 "q90_blind": 101.4,
                 "reason_blind": "October first release 97.9 (-1.6, third fall; industry -5.6, consumers 104.3) per ČSÚ release. No consensus; naive centre 97.9 nudged +0.2 for mild mean reversion. Width 6.6 >= 4.1 x 1.58. After dossier: euro-area flash consumer confidence +1.0 and lower Czech fuel caps -> centre +0.2 more.",
-                "q10": 95.0,
+                "q10": 95,
                 "q50": 98.3,
                 "q90": 101.6,
                 "at": "2026-11-22T19:10:22+01:00",
@@ -2347,7 +2623,7 @@
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "q10": 94.8,
-                "q50": 98.0,
+                "q50": 98,
                 "q90": 101.3,
                 "at": "2026-11-22T19:06:20+01:00",
                 "inputs": [
@@ -2366,11 +2642,11 @@
                   "reference-data"
                 ],
                 "q10_blind": 94.7,
-                "q50_blind": 98.0,
+                "q50_blind": 98,
                 "q90_blind": 101.2,
                 "reason_blind": "No own research on the Czech indicator; naive random walk around October 97.9 with the stated month-on-month sd 1.58 widened to the 4.1x scale minimum; slip rate for stats releases ~0.2%.",
                 "q10": 94.7,
-                "q50": 98.0,
+                "q50": 98,
                 "q90": 101.2,
                 "at": "2026-11-22T19:20:00+01:00",
                 "inputs": [
@@ -2605,7 +2881,44 @@
               "p_if_not_held": 0
             },
             "spread": 0.06,
-            "disagreement": null
+            "disagreement": null,
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:11:03Z",
+                  "p_blind": 0.83,
+                  "p": 0.83,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:11:32Z",
+                  "p_blind": 0.88,
+                  "p": 0.87,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:14:21Z",
+                  "p_blind": 0.83,
+                  "p": 0.77,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           }
         }
       ],
@@ -2844,7 +3157,71 @@
                 "steps": 8,
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-25/ep-eia-25.belief.json"
-              }
+              },
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:11:46Z",
+                  "p_blind": 0.79,
+                  "p": 0.79,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:12:18Z",
+                  "p_blind": 0.58,
+                  "p": 0.62,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:19:37Z",
+                  "p_blind": 0.51,
+                  "p": 0.46,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:21:02Z",
+                  "p": 0.73,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/ep-eia-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:22:13Z",
+                  "p": 0.58,
+                  "searches": 14,
+                  "sources": 11,
+                  "trace": "data/dossiers/2026-11-25/ep-eia-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:24:04Z",
+                  "p": 0.66,
+                  "searches": 13,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/ep-eia-25.research.json"
+                }
+              ]
             },
             "open_because": {
               "why": "Committee adopted the text by one vote (36–35–11) with S&D, Greens and the Left against; EPP, Renew and S&D tabled joint plenary amendments on species protection. With S&D the text likely clears 400; without it, a right-leaning majority (Omnibus I: 382) falls short.",
@@ -3071,6 +3448,43 @@
             "open_because": {
               "why": "Management called this quarter the PC-margin trough from memory costs; consensus ($0.74) sits at the midpoint of HP's non-GAAP range, so an in-line or slightly better result decides it.",
               "source": "https://finviz.com/news/423393/hps-memory-cost-trough-meets-a-whisper-number-above-its-own-guidance"
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:12:28Z",
+                  "p_blind": 0.68,
+                  "p": 0.69,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:12:58Z",
+                  "p_blind": 0.68,
+                  "p": 0.72,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:17:38Z",
+                  "p_blind": 0.64,
+                  "p": 0.67,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3266,6 +3680,43 @@
             "open_because": {
               "why": "Čupić said on 20 Nov (and again in reports to 22 Nov) that he would call the election 'in the next few days', within the 27 Nov legal deadline; he has not named a day. He gives an RTS interview on Sun 22 Nov at 20:05.",
               "source": "https://naslovi.net/2026-11-21/bbc-news/kad-ce-biti-raspisani-predsednicki-izbori-u-srbiji-i-ko-ce-naslediti-vucica/42539247"
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T19:13:08Z",
+                  "p_blind": 0.45,
+                  "p": 0.47,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T19:13:36Z",
+                  "p_blind": 0.43,
+                  "p": 0.48,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T19:17:55Z",
+                  "p_blind": 0.37,
+                  "p": 0.42,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3855,5 +4306,22 @@
         }
       }
     }
-  ]
+  ],
+  "external_run": {
+    "at": "2026-11-22T19:24:04Z",
+    "providers": [
+      "openai gpt-6.2-sol",
+      "google gemini-4-argon",
+      "xai grok-4.7"
+    ],
+    "binary_claims": 10,
+    "forecasts": 30,
+    "contested": [
+      "ua-drones-25",
+      "eu-dbp-25",
+      "ep-eia-25"
+    ],
+    "research": 9,
+    "failed": []
+  }
 }
