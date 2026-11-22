@@ -418,7 +418,8 @@
   },
   "2026-10-30:us-core-pce-sep-31": {
    "openai": 0.77,
-   "google": 0.68
+   "google": 0.68,
+   "xai": 0.64
   },
   "2026-10-30:eu-ecb-unanimous-29": {
    "openai": 0.93,
@@ -610,7 +611,8 @@
   },
   "2026-11-01:cn-pmi-50": {
    "openai": 0.51,
-   "google": 0.54
+   "google": 0.54,
+   "xai": 0.58
   },
   "2026-11-01:fr-gj-turnout-31": {
    "openai": 0.4,
@@ -619,7 +621,8 @@
   },
   "2026-11-01:rs-pm-named-31": {
    "openai": 0.05,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.1
   },
   "2026-11-01:g20-rubio-lavrov-31": {
    "openai": 0.64,
@@ -628,47 +631,58 @@
   },
   "2026-11-01:ua-oleshky-extend-31": {
    "openai": 0.12,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.13
   },
   "2026-11-01:cz-us-missions-31": {
    "openai": 0.13,
-   "google": 0.12
+   "google": 0.12,
+   "xai": 0.14
   },
   "2026-11-01:br-flavio-tse-31": {
    "openai": 0.16,
-   "google": 0.14
+   "google": 0.14,
+   "xai": 0.1
   },
   "2026-11-01:us-ca-ballots-ruling-31": {
    "openai": 0.46,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.27
   },
   "2026-11-01:md-css-31": {
    "openai": 0.55,
-   "google": 0.56
+   "google": 0.56,
+   "xai": 0.38
   },
   "2026-11-01:cz-dukovany-talks-31": {
    "openai": 0.04,
-   "google": 0.03
+   "google": 0.03,
+   "xai": 0.08
   },
   "2026-11-01:es-puente-out-31": {
    "openai": 0.06,
-   "google": 0.11
+   "google": 0.11,
+   "xai": 0.11
   },
   "2026-11-01:cz-jihlava-czechjoy-31": {
    "openai": 0.41,
-   "google": 0.38
+   "google": 0.38,
+   "xai": 0.36
   },
   "2026-11-02:bg-turnout-above-r1-1": {
    "openai": 0.74,
-   "google": 0.65
+   "google": 0.65,
+   "xai": 0.58
   },
   "2026-11-02:cz-strike-off-1": {
    "openai": 0.02,
-   "google": 0.02
+   "google": 0.02,
+   "xai": 0.03
   },
   "2026-11-02:cz-energy-follow-1": {
    "openai": 0.07,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.12
   },
   "2026-11-02:bg-iotova-wins-1": {
    "openai": 0.71,
@@ -676,7 +690,8 @@
   },
   "2026-11-02:us-iran-talks-1": {
    "openai": 0.21,
-   "google": 0.14
+   "google": 0.14,
+   "xai": 0.13
   },
   "2026-11-02:us-trump-rally-1": {
    "openai": 0.88,
@@ -684,23 +699,28 @@
   },
   "2026-11-02:ua-oleshky-extend-1": {
    "openai": 0.11,
-   "google": 0.11
+   "google": 0.11,
+   "xai": 0.15
   },
   "2026-11-02:il-recommend-bibi-1": {
    "openai": 0.02,
-   "google": 0.01
+   "google": 0.01,
+   "xai": 0.04
   },
   "2026-11-02:rs-pm-named-1": {
    "openai": 0.04,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.08
   },
   "2026-11-02:es-puente-out-1": {
    "openai": 0.07,
-   "google": 0.05
+   "google": 0.05,
+   "xai": 0.05
   },
   "2026-11-02:opec-dec-hold-1": {
    "openai": 0.89,
-   "google": 0.83
+   "google": 0.83,
+   "xai": 0.68
   },
   "2026-11-02:kr-exports-record-1": {
    "openai": 0.19,
@@ -712,23 +732,28 @@
   },
   "2026-11-02:in-gst-oct-210": {
    "openai": 0.78,
-   "google": 0.62
+   "google": 0.62,
+   "xai": 0.77
   },
   "2026-11-02:in-maruti-oct-1": {
    "openai": 0.84,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.81
   },
   "2026-11-02:cz-praha-sobe-1": {
    "openai": 0.04,
-   "google": 0.03
+   "google": 0.03,
+   "xai": 0.08
   },
   "2026-11-02:cz-coalition-mp-leaves-1": {
    "openai": 0.02,
-   "google": 0.02
+   "google": 0.02,
+   "xai": 0.03
   },
   "2026-11-03:us-trump-rome-1": {
    "openai": 0.35,
-   "google": 0.12
+   "google": 0.12,
+   "xai": 0.2
   },
   "2026-11-03:us-alaska-ruling-1": {
    "openai": 0.08,
@@ -736,11 +761,13 @@
   },
   "2026-11-03:ir-ukmto-incident-1": {
    "openai": 0.48,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.33
   },
   "2026-11-03:ua-talks-date-1": {
    "openai": 0.06,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.06
   },
   "2026-11-03:il-likud-challenge-1": {
    "openai": 0.42,
@@ -748,11 +775,13 @@
   },
   "2026-11-03:cz-coalition-media-1": {
    "openai": 0.22,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.14
   },
   "2026-11-03:cz-strike-off-2": {
    "openai": 0.06,
-   "google": 0.05
+   "google": 0.05,
+   "xai": 0.11
   },
   "2026-11-03:pl-tribunal-1": {
    "openai": 0.24,
@@ -760,7 +789,8 @@
   },
   "2026-11-03:us-ism-55-1": {
    "openai": 0.34,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.34
   },
   "2026-11-03:us-apple-rev-1": {
    "openai": 0.52,
@@ -768,19 +798,23 @@
   },
   "2026-11-03:es-puente-out-2": {
    "openai": 0.15,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.11
   },
   "2026-11-03:rs-student-pm-1": {
    "openai": 0.08,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.12
   },
   "2026-11-03:cz-sfa-budget-1": {
    "openai": 0.75,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.58
   },
   "2026-11-03:cz-kvacr-1": {
    "openai": 0.77,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.65
   },
   "2026-11-03:cz-pmi-535-1": {
    "openai": 0.43,
@@ -788,11 +822,13 @@
   },
   "2026-11-03:cz-dukovany-1": {
    "openai": 0.12,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.12
   },
   "2026-11-03:cz-court-missions-1": {
    "openai": 0.12,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.1
   },
   "2026-11-03:cz-diesel-cap-1": {
    "openai": 0.28,
@@ -800,7 +836,8 @@
   },
   "2026-11-04:us-oh-brown-1": {
    "openai": 0.71,
-   "google": 0.72
+   "google": 0.72,
+   "xai": 0.71
   },
   "2026-11-03:ie-ryanair-h1-1": {
    "openai": 0.58,
@@ -808,47 +845,58 @@
   },
   "2026-11-04:us-tx-talarico-1": {
    "openai": 0.69,
-   "google": 0.69
+   "google": 0.69,
+   "xai": 0.65
   },
   "2026-11-04:us-me-jackson-1": {
    "openai": 0.68,
-   "google": 0.69
+   "google": 0.69,
+   "xai": 0.67
   },
   "2026-11-04:ir-ukmto-1": {
    "openai": 0.38,
-   "google": 0.38
+   "google": 0.38,
+   "xai": 0.36
   },
   "2026-11-04:cz-strike-held-1": {
    "openai": 0.95,
-   "google": 0.96
+   "google": 0.96,
+   "xai": 0.88
   },
   "2026-11-04:cz-rally-1": {
    "openai": 0.2,
-   "google": 0.14
+   "google": 0.14,
+   "xai": 0.27
   },
   "2026-11-04:ua-talks-date-2": {
    "openai": 0.1,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.07
   },
   "2026-11-04:cz-media-model-1": {
    "openai": 0.16,
-   "google": 0.12
+   "google": 0.12,
+   "xai": 0.14
   },
   "2026-11-04:il-herzog-1": {
    "openai": 0.32,
-   "google": 0.45
+   "google": 0.45,
+   "xai": 0.18
   },
   "2026-11-04:fr-recettes-1": {
    "openai": 0.06,
-   "google": 0.05
+   "google": 0.05,
+   "xai": 0.09
   },
   "2026-11-04:au-rba-1": {
    "openai": 0.91,
-   "google": 0.92
+   "google": 0.92,
+   "xai": 0.91
   },
   "2026-11-04:cz-okamura-1": {
    "openai": 0.32,
-   "google": 0.28
+   "google": 0.28,
+   "xai": 0.14
   },
   "2026-11-04:us-amd-rev-1": {
    "openai": 0.61,
@@ -856,119 +904,148 @@
   },
   "2026-11-04:us-jolts-below-1": {
    "openai": 0.43,
-   "google": 0.46
+   "google": 0.46,
+   "xai": 0.44
   },
   "2026-11-04:pl-tk-1": {
    "openai": 0.04,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.11
   },
   "2026-11-04:cz-energy-1": {
    "openai": 0.27,
-   "google": 0.18
+   "google": 0.18,
+   "xai": 0.15
   },
   "2026-11-04:cz-diesel-cap-2": {
    "openai": 0.64,
-   "google": 0.6
+   "google": 0.6,
+   "xai": 0.6
   },
   "2026-11-04:us-pfizer-guide-1": {
    "openai": 0.69,
-   "google": 0.68
+   "google": 0.68,
+   "xai": 0.38
   },
   "2026-11-04:cz-dukovany-2": {
    "openai": 0.04,
-   "google": 0.03
+   "google": 0.03,
+   "xai": 0.08
   },
   "2026-11-04:fr-goncourt-1": {
    "openai": 0.35,
-   "google": 0.33
+   "google": 0.33,
+   "xai": 0.3
   },
   "2026-11-04:tr-cpi-below-1": {
    "openai": 0.73,
-   "google": 0.68
+   "google": 0.68,
+   "xai": 0.64
   },
   "2026-11-05:us-house-call-1": {
    "openai": 0.77,
-   "google": 0.76
+   "google": 0.76,
+   "xai": 0.8
   },
   "2026-11-05:cz-cpi-above-1": {
    "openai": 0.24,
-   "google": 0.21
+   "google": 0.21,
+   "xai": 0.27
   },
   "2026-11-05:ir-hormuz-1": {
    "openai": 0.08,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.09
   },
   "2026-11-05:us-senate-call-1": {
    "openai": 0.66,
-   "google": 0.65
+   "google": 0.65,
+   "xai": 0.67
   },
   "2026-11-05:ir-strike-1": {
    "openai": 0.11,
-   "google": 0.16
+   "google": 0.16,
+   "xai": 0.14
   },
   "2026-11-05:eu-enl-1": {
    "openai": 0.61,
-   "google": 0.55
+   "google": 0.55,
+   "xai": 0.38
   },
   "2026-11-05:ua-pow-1": {
    "openai": 0.05,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.04
   },
   "2026-11-05:cz-strike-next-1": {
    "openai": 0.13,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.15
   },
   "2026-11-05:eu-cwp-1": {
    "openai": 0.68,
-   "google": 0.75
+   "google": 0.75,
+   "xai": 0.45
   },
   "2026-11-05:ant-ipo-1": {
    "openai": 0.06,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.1
   },
   "2026-11-05:eu-hicp-above-1": {
    "openai": 0.72,
-   "google": 0.76
+   "google": 0.76,
+   "xai": 0.77
   },
   "2026-11-05:cz-budget-1": {
    "openai": 0.14,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.1
   },
   "2026-11-05:cz-army-1": {
    "openai": 0.42,
-   "google": 0.55
+   "google": 0.55,
+   "xai": 0.31
   },
   "2026-11-05:za-anc-1": {
    "openai": 0.36,
-   "google": 0.34
+   "google": 0.34,
+   "xai": 0.34
   },
   "2026-11-05:pl-tk-2": {
    "openai": 0.48,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.44
   },
   "2026-11-05:novo-guide-1": {
    "openai": 0.27,
-   "google": 0.25
+   "google": 0.25,
+   "xai": 0.24
   },
   "2026-11-05:cz-chamber-2": {
    "openai": 0.43,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.3
   },
   "2026-11-05:cz-diesel-cap-3": {
    "openai": 0.2,
-   "google": 0.1
+   "google": 0.1,
+   "xai": 0.08
   },
   "2026-11-05:es-aesf-1": {
    "openai": 0.33,
-   "google": 0.3
+   "google": 0.3,
+   "xai": 0.24
   },
   "2026-11-05:cz-energy-2": {
    "openai": 0.27,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.2
   },
   "2026-11-06:cz-cnb-hike-1": {
    "openai": 0.96,
-   "google": 0.88
+   "google": 0.88,
+   "xai": 0.93
   },
   "2026-11-06:us-maine-1": {
    "openai": 0.85,
@@ -976,7 +1053,8 @@
   },
   "2026-11-06:cz-cnb-vote-1": {
    "openai": 0.37,
-   "google": 0.34
+   "google": 0.34,
+   "xai": 0.48
   },
   "2026-11-06:us-senate-seats-1": {
    "openai": 0.75,
@@ -984,307 +1062,383 @@
   },
   "2026-11-06:cz-cnb-fc-2027-1": {
    "openai": 0.79,
-   "google": 0.87
+   "google": 0.87,
+   "xai": 0.64
   },
   "2026-11-06:us-iran-strike-2": {
    "openai": 0.04,
-   "google": 0.03
+   "google": 0.03,
+   "xai": 0.06
   },
   "2026-11-06:us-iran-ship-1": {
    "openai": 0.48,
-   "google": 0.62
+   "google": 0.62,
+   "xai": 0.62
   },
   "2026-11-06:us-iran-reply-1": {
    "openai": 0.23,
-   "google": 0.17
+   "google": 0.17,
+   "xai": 0.22
   },
   "2026-11-06:ua-drones-2": {
    "openai": 0.58,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.62
   },
   "2026-11-06:ua-delegation-1": {
    "openai": 0.16,
-   "google": 0.16
+   "google": 0.16,
+   "xai": 0.14
   },
   "2026-11-06:uk-boe-vote-1": {
    "openai": 0.74,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.8
   },
   "2026-11-06:uk-boe-hike-1": {
    "openai": 0.98,
-   "google": 0.97
+   "google": 0.97,
+   "xai": 0.96
   },
   "2026-11-06:fr-budget-1": {
    "openai": 0.4,
-   "google": 0.48
+   "google": 0.48,
+   "xai": 0.17
   },
   "2026-11-06:fr-strike-2": {
    "openai": 0.53,
-   "google": 0.42
+   "google": 0.42,
+   "xai": 0.34
   },
   "2026-11-06:fr-sncf-1": {
    "openai": 0.14,
-   "google": 0.12
+   "google": 0.12,
+   "xai": 0.2
   },
   "2026-11-06:il-mandate-1": {
    "openai": 0.08,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.08
   },
   "2026-11-06:cz-media-1": {
    "openai": 0.1,
-   "google": 0.06
+   "google": 0.06,
+   "xai": 0.12
   },
   "2026-11-06:il-recs-1": {
    "openai": 0.72,
-   "google": 0.48
+   "google": 0.48,
+   "xai": 0.34
   },
   "2026-11-06:il-recs-2": {
    "openai": 0.89,
-   "google": 0.84
+   "google": 0.84,
+   "xai": 0.71
   },
   "2026-11-06:pl-tk-4": {
    "openai": 0.31,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.31
   },
   "2026-11-06:cz-chamber-pass-2": {
    "openai": 0.85,
-   "google": 0.77
+   "google": 0.77,
+   "xai": 0.84
   },
   "2026-11-06:ca-budget-2": {
    "openai": 0.58,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.58
   },
   "2026-11-06:cz-v4-1": {
    "openai": 0.82,
-   "google": 0.83
+   "google": 0.83,
+   "xai": 0.75
   },
   "2026-11-06:cz-prague-1": {
    "openai": 0.95,
-   "google": 0.95
+   "google": 0.95,
+   "xai": 0.9
   },
   "2026-11-06:rheinmetall-1": {
    "openai": 0.73,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.65
   },
   "2026-11-06:cz-diesel-cap-5": {
    "openai": 0.8,
-   "google": 0.87
+   "google": 0.87,
+   "xai": 0.66
   },
   "2026-11-07:us-iran-ship-2": {
    "openai": 0.61,
-   "google": 0.45
+   "google": 0.45,
+   "xai": 0.71
   },
   "2026-11-07:us-iran-strike-3": {
    "openai": 0.13,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.17
   },
   "2026-11-07:us-jobs-negative-2": {
    "openai": 0.11,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.16
   },
   "2026-11-07:us-jobs-rate-3": {
    "openai": 0.25,
-   "google": 0.25
+   "google": 0.25,
+   "xai": 0.24
   },
   "2026-11-07:cz-chamber-any-1": {
    "openai": 0.57,
-   "google": 0.72
+   "google": 0.72,
+   "xai": 0.61
   },
   "2026-11-07:cz-animal-pass-1": {
    "openai": 0.53,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.45
   },
   "2026-11-07:cz-maintenance-pass-2": {
    "openai": 0.37,
-   "google": 0.42
+   "google": 0.42,
+   "xai": 0.42
   },
   "2026-11-07:cz-boards-pass-1": {
    "openai": 0.32,
-   "google": 0.42
+   "google": 0.42,
+   "xai": 0.26
   },
   "2026-11-07:cz-conflict-first-1": {
    "openai": 0.52,
-   "google": 0.42
+   "google": 0.42,
+   "xai": 0.42
   },
   "2026-11-07:ecb-nom-1": {
    "openai": 0.87,
-   "google": 0.9
+   "google": 0.9,
+   "xai": 0.62
   },
   "2026-11-07:ecb-nom-2": {
    "openai": 0.3,
-   "google": 0.25
+   "google": 0.25,
+   "xai": 0.24
   },
   "2026-11-07:il-recs-3": {
    "openai": 0.7,
-   "google": 0.42
+   "google": 0.42,
+   "xai": 0.52
   },
   "2026-11-07:il-mandate-2": {
    "openai": 0.18,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.18
   },
   "2026-11-07:ua-drones-3": {
    "openai": 0.62,
-   "google": 0.56
+   "google": 0.56,
+   "xai": 0.74
   },
   "2026-11-07:ua-pow-2": {
    "openai": 0.07,
-   "google": 0.06
+   "google": 0.06,
+   "xai": 0.07
   },
   "2026-11-07:il-mandate-3": {
    "openai": 0.18,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.13
   },
   "2026-11-07:ua-human-1": {
    "openai": 0.38,
-   "google": 0.3
+   "google": 0.3,
+   "xai": 0.28
   },
   "2026-11-07:us-ms-lead-3": {
    "openai": 0.96,
-   "google": 0.94
+   "google": 0.94,
+   "xai": 0.86
   },
   "2026-11-07:us-gop-leader-trump-2": {
    "openai": 0.28,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.25
   },
   "2026-11-07:cn-acbc-law-1": {
    "openai": 0.74,
-   "google": 0.88
+   "google": 0.88,
+   "xai": 0.78
   },
   "2026-11-07:cn-waico-ratify-2": {
    "openai": 0.9,
-   "google": 0.94
+   "google": 0.94,
+   "xai": 0.86
   },
   "2026-11-07:us-ms-senate-1": {
    "openai": 0.1,
-   "google": 0.17
+   "google": 0.17,
+   "xai": 0.12
   },
   "2026-11-07:fr-tgvm-1": {
    "openai": 0.91,
-   "google": 0.88
+   "google": 0.88,
+   "xai": 0.83
   },
   "2026-11-07:pl-azyl-1": {
    "openai": 0.94,
-   "google": 0.96
+   "google": 0.96,
+   "xai": 0.91
   },
   "2026-11-07:pl-kier-1": {
    "openai": 0.85,
-   "google": 0.88
+   "google": 0.88,
+   "xai": 0.82
   },
   "2026-11-07:pl-okolo-1": {
    "openai": 0.59,
-   "google": 0.55
+   "google": 0.55,
+   "xai": 0.27
   },
   "2026-11-07:sk-blanar-1": {
    "openai": 0.67,
-   "google": 0.62
+   "google": 0.62,
+   "xai": 0.38
   },
   "2026-11-07:za-joburg-largest-1": {
    "openai": 0.77,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.63
   },
   "2026-11-07:cz-diesel-cap-8": {
    "openai": 0.84,
-   "google": 0.85
+   "google": 0.85,
+   "xai": 0.73
   },
   "2026-11-07:za-anc-national-2": {
    "openai": 0.79,
-   "google": 0.78
+   "google": 0.78,
+   "xai": 0.81
   },
   "2026-11-08:nz-election-party-vote-1": {
    "openai": 0.58,
-   "google": 0.52
+   "google": 0.52,
+   "xai": 0.58
   },
   "2026-11-07:cz-trade-sep-1": {
    "openai": 0.15,
-   "google": 0.93
+   "google": 0.93,
+   "xai": 0.84
   },
   "2026-11-08:nz-election-opportunity-5pct-4": {
    "openai": 0.78,
-   "google": 0.72
+   "google": 0.72,
+   "xai": 0.73
   },
   "2026-11-08:us-iran-ship-3": {
    "openai": 0.6,
-   "google": 0.45
+   "google": 0.45,
+   "xai": 0.57
   },
   "2026-11-08:us-iran-strike-4": {
    "openai": 0.1,
-   "google": 0.07
+   "google": 0.07,
+   "xai": 0.1
   },
   "2026-11-08:nz-election-coalition-majority-2": {
    "openai": 0.68,
-   "google": 0.58
+   "google": 0.58,
+   "xai": 0.6
   },
   "2026-11-08:us-iran-talks-date-1": {
    "openai": 0.12,
-   "google": 0.05
+   "google": 0.05,
+   "xai": 0.07
   },
   "2026-11-08:cz-media-partners-1": {
    "openai": 0.36,
-   "google": 0.38
+   "google": 0.38,
+   "xai": 0.36
   },
   "2026-11-08:cz-media-strike-call-1": {
    "openai": 0.13,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.13
   },
   "2026-11-08:il-herzog-meet-1": {
    "openai": 0.4,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.3
   },
   "2026-11-08:il-utj-1": {
    "openai": 0.12,
-   "google": 0.12
+   "google": 0.12,
+   "xai": 0.09
   },
   "2026-11-08:us-ms-count-1": {
    "openai": 0.94,
-   "google": 0.95
+   "google": 0.95,
+   "xai": 0.84
   },
   "2026-11-08:us-ak-count-1": {
    "openai": 0.96,
-   "google": 0.94
+   "google": 0.94,
+   "xai": 0.88
   },
   "2026-11-08:us-ms-call-1": {
    "openai": 0.14,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.22
   },
   "2026-11-08:us-hegseth-out-1": {
    "openai": 0.12,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.07
   },
   "2026-11-08:ua-drones-4": {
    "openai": 0.56,
-   "google": 0.55
+   "google": 0.55,
+   "xai": 0.45
   },
   "2026-11-08:ua-pow-3": {
    "openai": 0.06,
-   "google": 0.05
+   "google": 0.05,
+   "xai": 0.04
   },
   "2026-11-08:ua-delegation-2": {
    "openai": 0.18,
-   "google": 0.18
+   "google": 0.18,
+   "xai": 0.15
   },
   "2026-11-08:ecb-list-1": {
    "openai": 0.53,
-   "google": 0.63
+   "google": 0.63,
+   "xai": 0.26
   },
   "2026-11-08:ecb-list-2": {
    "openai": 0.2,
-   "google": 0.24
+   "google": 0.24,
+   "xai": 0.18
   },
   "2026-11-08:cz-bank-deposit-1": {
    "openai": 0.27,
-   "google": 0.22
+   "google": 0.22,
+   "xai": 0.33
   },
   "2026-11-08:fr-acte4-unions-3": {
    "openai": 0.3,
-   "google": 0.15
+   "google": 0.15,
+   "xai": 0.18
   },
   "2026-11-08:fr-acte4-route-2": {
    "openai": 0.35,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.62
   },
   "2026-11-08:cz-bank-mortgage-1": {
    "openai": 0.11,
-   "google": 0.06
+   "google": 0.06,
+   "xai": 0.11
   },
   "2026-11-08:cz-diesel-cap-9": {
    "openai": 0.69,
@@ -2187,7 +2341,8 @@
   },
   "2026-10-31:un-minurso-30": {
    "openai": 0.52,
-   "google": 0.35
+   "google": 0.35,
+   "xai": 0.12
   },
   "2026-11-01:fr-gj-turnout-31": {
    "openai": 0.02,
@@ -2196,55 +2351,68 @@
   },
   "2026-11-02:us-trump-rally-1": {
    "openai": 0.8,
-   "google": 0.65
+   "google": 0.65,
+   "xai": 0.62
   },
   "2026-11-02:cz-kantar-ano30-1": {
    "openai": 0.18,
-   "google": 0.24
+   "google": 0.24,
+   "xai": 0.03
   },
   "2026-11-03:ir-ukmto-incident-1": {
    "openai": 0.03,
-   "google": 0.02
+   "google": 0.02,
+   "xai": 0.02
   },
   "2026-11-04:cz-media-model-1": {
    "openai": 0.27,
-   "google": 0.25
+   "google": 0.25,
+   "xai": 0.08
   },
   "2026-11-04:us-jolts-below-1": {
    "openai": 0.49,
-   "google": 0.52
+   "google": 0.52,
+   "xai": 0.47
   },
   "2026-11-05:cz-strike-next-1": {
    "openai": 0.12,
-   "google": 0.14
+   "google": 0.14,
+   "xai": 0.07
   },
   "2026-11-05:za-anc-1": {
    "openai": 0.9,
-   "google": 0.62
+   "google": 0.62,
+   "xai": 0.64
   },
   "2026-11-06:us-iran-strike-2": {
    "openai": 0.01,
-   "google": 0.01
+   "google": 0.01,
+   "xai": 0.03
   },
   "2026-11-06:fr-strike-2": {
    "openai": 0.37,
-   "google": 0.25
+   "google": 0.25,
+   "xai": 0.36
   },
   "2026-11-07:ecb-nom-1": {
    "openai": 0.02,
-   "google": 0.08
+   "google": 0.08,
+   "xai": 0.07
   },
   "2026-11-07:ua-pow-2": {
    "openai": 0.09,
-   "google": 0.06
+   "google": 0.06,
+   "xai": 0.07
   },
   "2026-11-08:il-utj-1": {
    "openai": 0.02,
-   "google": 0.02
+   "google": 0.02,
+   "xai": 0.04
   },
   "2026-11-08:us-hegseth-out-1": {
    "openai": 0.01,
-   "google": 0.04
+   "google": 0.04,
+   "xai": 0.02
   },
   "2026-11-08:cz-bank-mortgage-1": {
    "openai": 0.06,
