@@ -60,5 +60,13 @@ const out = {
     facts: r.runs.filter((x) => all || r.far.includes(x.provider)).flatMap((x) => (x.facts || []).map((f) => ({ provider: x.provider, ...f }))),
   })),
 };
-if (all) out.wording = (plan.external_run?.wording_flags || []).filter((w) => !(plan.stories || []).flatMap((s) => s.claims || []).find((c) => c.id === w.claim)?.wording_check);
+// Wording flags are counted from the models' answers by today's threshold (wording.flag_at), not from an earlier list.
+if (all) {
+  const need = cfg.shadow?.external?.wording?.flag_at ?? 3;
+  out.wording = (plan.stories || []).flatMap((s) => s.claims || []).filter((c) => !c.wording_check).map((c) => {
+    const file = `data/dossiers/${date}/${c.id}.wording.json`;
+    const by = readTrace(file).filter((x) => x.ambiguous).map((x) => x.provider);
+    return by.length >= need ? { claim: c.id, flagged_by: by, file } : null;
+  }).filter(Boolean);
+}
 console.log(JSON.stringify(out, null, 1));

@@ -299,7 +299,7 @@ Vedle zveřejněného čísla proto zkoušíme pět metod. Každá se na stránc
   - **Agenda.** Před večerní přípravou každý model vypíše, co je na daný den naplánováno. Událost, kterou uvedou dva a my ji neměli, ověříme na zdroji, a pokud platí, hodnotí se jako každý jiný kandidát.
   - **Druhý názor na výsledky.** Dva modely dají nezávislý výsledek u každého tvrzení, kterému vyprší termín. Náš vyhodnocovatel rozhodne první a tam, kde některý nesouhlasí, se podívá znovu; rozhoduje primární zdroj, ne počet hlasů.
   - **Kontrola faktů po vydání.** Dva modely ověřují pozadí, které článek uvádí jako už platné. Výhradu, kterou potvrdíme na zdroji, zveřejníme jako opravu.
-  - **Znění.** Každý model řekne, co kritérium vyžaduje. Kde dva vidí situaci, kterou by kritérium nerozhodlo, zpřesníme ho před uzávěrkou.
+  - **Znění.** Každý model řekne, co kritérium vyžaduje. Kde všechny tři vidí situaci, kterou by kritérium nerozhodlo, zpřesníme ho před uzávěrkou.
   - **Protiargument.** S hledáním každý model napíše nejsilnější důvod proti pravděpodobnějšímu výsledku. Oponent je čte jako podněty a ověřuje je na zdrojích.
   Každý z těchto vstupů je podnět, který náš vlastní běh potvrzuje na stránce; žádný se nepřebírá na slovo modelu.
 - **Empirická číselná rozpětí.** U číselných předpovědí konsenzus analytiků plus minus překvapení, které pokrylo 80 % našich dřívějších číselných předpovědí, jen z výsledků známých před uzávěrkou. O tvaru překvapení nic nepředpokládá. Na 15 výsledcích, kde šlo spočítat, obsáhlo 14 a zveřejněné rozpětí 13, se stejným intervalovým skóre: širší rozpětí verze 5 už většinu chyby odstranila. Zůstává jako průběžná kontrola.

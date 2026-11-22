@@ -298,7 +298,7 @@ So five methods are now tested beside the published figure. Each is scored on th
   - **The agenda.** Before the evening desk, each model lists what is scheduled for the day. An event two of them name and we did not have is checked on its source and, if it holds, scored like any other candidate.
   - **A second opinion on results.** Two models give an independent outcome for every claim falling due. Our resolver decides first, then looks again wherever one of them disagrees; the primary source decides, not the count.
   - **A fact-check after publication.** Two models check the background each report states as already true. A flag we confirm on the source becomes a published correction.
-  - **The wording.** Each model says what a criterion requires. Where two of them see a situation the criterion would not settle, we tighten it before the freeze.
+  - **The wording.** Each model says what a criterion requires. Where all three see a situation the criterion would not settle, we tighten it before the freeze.
   - **The counter-argument.** With its search each model writes the strongest case against the likelier outcome. The red team reads these as leads and checks them on the sources.
   Every one of these is a lead for our own run to confirm on a page; none is taken on a model's word.
 - **Empirical number ranges.** For number forecasts, the analysts' consensus plus or minus the size of surprise that covered 80% of our earlier number forecasts, using only results known before the freeze. It assumes nothing about the shape of surprises. On the 15 results where it could be computed it held 14 and the published range 13, with the same interval score: the wider ranges of version 5 had already fixed most of what was wrong. It stays as a running check.
