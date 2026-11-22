@@ -30,6 +30,17 @@ For each due claim:
 
 Results are append-only. A recorded result is never changed. If one later proves wrong, add an entry to that file's `corrections` list with the claim id, the corrected outcome, the evidence and the date; the scoring uses the correction and the page shows both.
 
+### 2a. Second opinion *(from 23 November 2026)*
+
+Before this run, a separate task asks two other vendors' models, each with its own search, for the outcome of every claim falling due and writes `data/external/resolve/<today>.json` (`edition`, `claim`, `provider`, `outcome` yes / no / not_yet / unclear, `evidence`, `note`). Decide every outcome by yourself first, by step 2, without opening that file. Then compare:
+
+1. Where a model answers the opposite (yes against your no, or no against your yes), open its `evidence` page with `node scripts/read.mjs` and your own evidence again, and apply the criterion literally once more. The primary source decides, not the count of opinions. Change your outcome only if the page shows you were wrong.
+2. Where you resolved and a model says `not_yet` or `unclear`, check once more that your evidence is the source the criterion names and that it has in fact published.
+3. Where you left a claim pending and a model gives an outcome with an `evidence` page, read that page: if it settles the criterion, resolve.
+4. Record in the result `"second_opinion": {"agree": ["google"], "disagree": ["openai"], "note": "one sentence on what you found when you looked again"}` for every claim that had opinions. A claim on which you and a model still disagree after the second look is `ambiguous: true` if the difference comes from how the criterion is read.
+
+If the file is missing or empty, go on without it. The models' answers are never evidence and are never quoted in a note.
+
 ## 3. Learn
 
 For every resolved claim, add one to `own_record.yes` or `own_record.no` of the matching reference class in `pipeline/reference-classes.json`, or create a new class if none fits. Then refit the record-based parameters:

@@ -47,6 +47,16 @@ On 12 November the afternoon run cut `nvidia-huang-out-14` from 72% to 49% becau
 
 Add at most three stories, only for events newly announced for D+1 that clearly merit a place and happen by 23:59 local time on D+1. Each follows the full morning protocol: claim design (with `slip_class` and `publishes`), ensemble, red team, English text and Czech version (EDITOR.md, steps 3–6c). Put them in `added`, with `size` `quarter` or `half`. If you add stories, write a one-line `summary` and `summary_cs` of the update.
 
+## 3a. Fact-check flags from other vendors' models *(from 23 November 2026)*
+
+After the morning edition is out, a separate task has two other vendors' models read each story's background (what the report states as already true, not the events it forecasts) and writes `data/external/factcheck/<D+2>.json`: per story a list of `flags` with the `statement` quoted from the report, the `problem` and a `source`. A flag is a lead, not a finding.
+
+1. For each flag whose `in_report` is true, open the `source` with `node scripts/read.mjs` and the story's own source for that statement. Decide: the report is wrong, the report is right, or it cannot be settled on a page.
+2. Where the report is wrong, write a correction to `data/corrections/<D+2>.json` (the existing file format: `story`, `date`, `kind: "correction"`, `text`, `text_cs`, `url`): what the report said, what is right, and the source. Never edit `data/editions/`. If the wrong statement was a premise of a forecast, that claim goes through step 2 as a new fact.
+3. Add `"factcheck": {"flags": 7, "checked": 7, "wrong": 1, "right": 5, "open": 1}` to the update file, and name the corrections in the report to the publisher.
+
+If the file is missing, go on. A commit that holds only corrections is published like any other update.
+
 ## 4. Freeze, validate, publish
 
 1. Set `frozen_at` when the red team is done.

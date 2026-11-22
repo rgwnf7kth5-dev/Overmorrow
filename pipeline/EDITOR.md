@@ -160,15 +160,12 @@ Also write a short `rationale` per story: the class and base rate, the five numb
 
 ### 4d. Check of the vendors' own search *(from edition No. 34, 23 November 2026)*
 
-The evening's separate run lets three other vendors' models search for themselves on the contested claims (PLANNER step 11). Where one of them lands far from our figure, it may have found a fact we lack. This step uses their facts and never their numbers.
+In the evening three other vendors' models search for themselves on up to six claims, and a run of our own ("Overmorrow evening check", PLANNER step 12) confirms the facts they found, adds them to the dossiers and reruns the five forecasters where a confirmed fact is material. Each checked claim carries `forecast.external_check`. The morning only catches what that run missed:
 
-1. Run `node scripts/external-gaps.mjs <D+2>`. It lists at most `shadow.external.check.claims_max` claims (3) on which a model's own-search figure is `gap` (15 points) or more from ours, with the trace file of the models' reasoning and sources. An empty list is normal: go on.
-2. For each listed claim start one agent (the evidence forecaster's model) with the claim, the criterion, the dossier and, from the trace file, only the `reason` and `sources` of the providers the script names. Do not give it any probability from the trace, and tell it to ignore any figure it sees there. Its task: (a) list the dated facts in that reasoning which the dossier does not have; (b) for each, open the source with `node scripts/read.mjs` (the cited page, or the primary source it points to; Google's sources are redirect links, follow them) and confirm that the page says it, when it was published, and that this is before now; (c) drop what cannot be confirmed on a page it has read, what is undated, and what is another forecast, a market price or an opinion. A model's statement is never a source.
-3. Append the confirmed facts to the claim's dossier under the heading `## Added after the vendors' search (morning of <D>)`, each with URL, publication time, read time and a short excerpt, as every dossier fact.
-4. If at least one confirmed fact is material to the claim, treat it as a material overnight change: the five forecasters rerun for that claim by the usual rules of step 4, on the dossier with the added facts. If none is, the evening figure stands.
-5. Record on the claim `"external_check": {"at": "…", "providers": ["google", "xai"], "facts_listed": 4, "facts_confirmed": 1, "added": ["https://…"], "reforecast": true, "before": 0.48, "after": 0.39}` inside `forecast` (`before` and `after` are our combined figure; with `reforecast: false` leave `after` out). The time must be before the freeze.
+1. Run `node scripts/external-gaps.mjs <D+2>`. It lists claims that have **no** `external_check` yet and on which a model's own-search figure is `check.gap` (15 points) or more from ours, at most `check.claims_max` (3). An empty list is the normal case: go on.
+2. For each listed claim do steps 2 to 5 of PLANNER step 12 now (confirm the facts on the page, add them to the dossier under `## Added after the vendors' search (morning of <D>)`, rerun the five forecasters if one is material, record `external_check`; the time must be before the freeze). If you run short of time, do the claim listed first and record the others in `forecast.missing` with the reason.
 
-The vendors' figures stay in `forecast.shadow` and are never shown to the five forecasters, the red team or the writers. If you run short of time, do the claim with the largest gap and record the others in `forecast.missing` with the reason.
+A `wording_check` left open by the evening (`changed: false` because the fix would alter the claim) is yours to settle in step 3: reframe the claim with the ensemble or keep it and say why. The vendors' figures stay in `forecast.shadow` and are never shown to the five forecasters, the red team or the writers.
 
 ### 4c. Rules from method version 6 (edition No. 15 on)
 
@@ -182,7 +179,7 @@ The vendors' figures stay in `forecast.shadow` and are never shown to the five f
 
 ## 5. Red team and freeze
 
-One agent reads the complete draft: the single most likely reason each forecast is wrong tomorrow, using only information published before now. A new decisive fact sends that claim back to step 4. Then set `frozen_at`. From here on, use no new information for the forecasts.
+One agent reads the complete draft: the single most likely reason each forecast is wrong tomorrow, using only information published before now. Before it starts, run `node scripts/external-gaps.mjs <D+2> counters` and hand it the output *(from edition No. 34)*: the counter-arguments that other vendors' models wrote after their own search, as text without any figure. They are leads, not facts: the red team checks on the sources whether one of them names something real that the forecast overlooks, and says so; an argument it cannot tie to a page counts for nothing. A new decisive fact sends that claim back to step 4. Then set `frozen_at`. From here on, use no new information for the forecasts.
 
 ## 6. Writing
 

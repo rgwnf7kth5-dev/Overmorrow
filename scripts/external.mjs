@@ -11,7 +11,10 @@
 //                                                          config.shadow.external.research); <file> holds only today's
 //                                                          date, the claim, the criterion and the deadline
 // Output of `forecast` is one JSON object: {provider, model, at, p, reason}.
+//   node scripts/external.mjs ask <provider> <file.json>   a general question with or without search, for the other
+//                                                          desks; <file.json> holds {instruction, input, search, cap}
 // Output of `research` is one JSON object: {provider, model, at, p, searches, sources, reason}.
+// Output of `ask` is one JSON object: {provider, model, at, searches, sources, text}.
 // EXTERNAL_TRANSPORT=curl skips Node's fetch and goes straight to curl (which honours HTTPS_PROXY).
 // Exit codes: 0 ok; 2 bad arguments; 3 network or provider error; 4 not configured (no key, no model or disabled).
 //
@@ -71,7 +74,12 @@ const researchInstruction = (n) => `You are a careful forecaster with a web sear
 Do your own research: at most ${n} searches. Look first for the primary source (the body that decides, publishes or hosts the event), then for the most recent dated reporting. Note the publication date of what you use and prefer the newest; discard anything undated. Do not look for other forecasts of this claim.
 Then work in this order: (1) the base rate for comparable cases; (2) the dated facts you found that move this case away from it, each with its direction; (3) the strongest reason the obvious outcome might fail, including the chance that the event does not take place in its window.
 Give your probability that the claim resolves YES under the criterion as written.
-End with exactly one line of the form:
+Close your answer with these three parts, in this order:
+NEW FACTS
+- YYYY-MM-DD | one dated fact you found, in one sentence | the URL of the page that states it
+(up to 8 such lines: only facts you read on a page, with that page's publication date; no forecasts, market prices or opinions)
+COUNTER
+The strongest argument against the outcome you consider more likely, in two or three sentences, without any probability.
 PROBABILITY: 0.NN`;
 const researchState = (p) => (state(p) !== 'ready' ? state(p) : !RES.enabled ? 'disabled in config.shadow.external.research.enabled' : !p.research?.api ? 'no research settings for this provider' : 'ready');
 const uniq = (xs) => [...new Set(xs.filter((x) => typeof x === 'string' && /^https?:\/\//.test(x)).map((x) => x.replace(/[?&]utm_source=[^&]*$/, '')))];
@@ -80,12 +88,13 @@ const uniq = (xs) => [...new Set(xs.filter((x) => typeof x === 'string' && /^htt
 const interactionBlocks = (d) => (d.steps || d.outputs || d.output || []).flatMap((i) => (i.type === 'model_output' ? i.content || [] : i.type === 'text' ? [i] : []));
 const interactionText = (d) => interactionBlocks(d).map((c) => c.text || '').join('\n') || d.output_text || '';
 
-/** One request in the provider's own format; returns {text, searches, sources, model}. */
-async function research(p, text) {
-  const cap = RES.searches_max || 6, base = p.base_url.replace(/\/$/, ''), key = viaProxy(p) ? null : process.env[p.key_env];
+/** One request in the provider's own format, with the vendor's search tools unless search is false; returns {text, searches, sources, model}. */
+async function ask(p, text, instruction, search = true, cap = RES.searches_max || 6) {
+  const base = p.base_url.replace(/\/$/, ''), key = viaProxy(p) ? null : process.env[p.key_env];
+  const tools = search ? { tools: p.research.tools } : {};
   if (p.research.api === 'responses') {
     // OpenAI and xAI: the Responses API with the vendor's search tools, capped by max_tool_calls.
-    const d = await post(`${base}/responses`, key, { model: p.model, instructions: researchInstruction(cap), input: text, tools: p.research.tools, max_tool_calls: cap, ...(p.research.extra || {}) }, 600);
+    const d = await post(`${base}/responses`, key, { model: p.model, instructions: instruction, input: text, ...tools, ...(search ? { max_tool_calls: cap, ...(p.research.extra || {}) } : {}) }, 600);
     if (d.error) throw new Error(JSON.stringify(d.error).slice(0, 300));
     const items = d.output || [];
     const parts = items.filter((i) => i.type === 'message').flatMap((i) => i.content || []);
@@ -95,7 +104,7 @@ async function research(p, text) {
   }
   if (p.research.api === 'interactions') {
     // Google: the Interactions API with Google Search. It has no cap on searches, so the instruction carries it.
-    const d = await post(p.research.url || p.interactions_url, key, { model: p.model, input: `${researchInstruction(cap)}\n\n${text}`, tools: p.research.tools }, 600);
+    const d = await post(p.research.url || p.interactions_url, key, { model: p.model, input: `${instruction}\n\n${text}`, ...tools }, 600);
     const e = Array.isArray(d) ? d[0]?.error : d.error;
     if (e) throw new Error(JSON.stringify(e).slice(0, 300));
     const items = d.steps || d.outputs || d.output || [];
@@ -137,9 +146,20 @@ if (cmd === 'check') {
   if (!p || !file || !fs.existsSync(file)) { console.error('usage: node scripts/external.mjs research <provider> <file>'); process.exit(2); }
   if (researchState(p) !== 'ready') { console.error(`${p.id}: ${researchState(p)}`); process.exit(4); }
   try {
-    const r = await research(p, fs.readFileSync(file, 'utf8'));
+    const r = await ask(p, fs.readFileSync(file, 'utf8'), researchInstruction(RES.searches_max || 6));
     const prob = parseProbability(r.text);
     if (prob === null) { console.error(`${p.id}: no PROBABILITY line in the answer (${r.searches} searches)`); process.exit(3); }
-    console.log(JSON.stringify({ provider: p.id, model: r.model || p.model, at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), p: Math.min(0.99, Math.max(0.01, prob)), searches: r.searches, sources: r.sources.slice(0, 25), reason: r.text.replace(/PROBABILITY:.*$/im, '').trim().slice(-2000) }));
+    console.log(JSON.stringify({ provider: p.id, model: r.model || p.model, at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), p: Math.min(0.99, Math.max(0.01, prob)), searches: r.searches, sources: r.sources.slice(0, 25), reason: r.text.replace(/PROBABILITY:.*$/im, '').trim().slice(-6000) }));
   } catch (e) { console.error(`${p.id}: ${String(e.message || e).slice(0, 400)}`); process.exit(3); }
-} else if (cmd) { console.error('usage: node scripts/external.mjs check | forecast <provider> <file> | research <provider> <file>'); process.exit(2); }
+} else if (cmd === 'ask') {
+  // A general question for the other desks (scripts/external-desk.mjs): <file> is JSON {instruction, input, search, cap}.
+  const p = providers.find((x) => x.id === id);
+  if (!p || !file || !fs.existsSync(file)) { console.error('usage: node scripts/external.mjs ask <provider> <file.json>'); process.exit(2); }
+  if (state(p) !== 'ready' || !p.research?.api) { console.error(`${p.id}: ${state(p) !== 'ready' ? state(p) : 'no research settings for this provider'}`); process.exit(4); }
+  try {
+    const q = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const r = await ask(p, String(q.input || ''), String(q.instruction || ''), q.search !== false, q.cap || RES.searches_max || 6);
+    if (!r.text.trim()) { console.error(`${p.id}: empty answer`); process.exit(3); }
+    console.log(JSON.stringify({ provider: p.id, model: r.model || p.model, at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), searches: r.searches, sources: r.sources.slice(0, 40), text: r.text.slice(0, 20000) }));
+  } catch (e) { console.error(`${p.id}: ${String(e.message || e).slice(0, 400)}`); process.exit(3); }
+} else if (cmd) { console.error('usage: node scripts/external.mjs check | forecast <provider> <file> | research <provider> <file> | ask <provider> <file.json>'); process.exit(2); }
