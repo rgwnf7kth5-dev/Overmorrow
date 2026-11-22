@@ -9,8 +9,8 @@
       "https://www.psp.cz/eknih/cdrom/opendata/tisky.zip",
       "https://www.psp.cz/eknih/cdrom/opendata/schuze.zip"
     ],
-    "downloaded": "2026-10-23",
-    "generated": "2026-10-23T05:43:01.152Z"
+    "downloaded": "2026-11-22",
+    "generated": "2026-11-22T18:43:17.964Z"
   },
   "coalition_definitions": "Coalition membership is club membership (zarazeni.unl, cl_funkce = 0) in the listed clubs at the time of each vote. Periods start at the appointment of the government; the Pirates’ exit is dated by the end of Ivan Bartoš’s ministerial functions in zarazeni.unl (2024-09-30 20:00).",
   "terms": [
@@ -793,16 +793,16 @@
       "id": "2025-",
       "label": "10th term (PSP10, 2025-)",
       "chamber_organ_id": 174,
-      "votes_in_file": 2503,
+      "votes_in_file": 2702,
       "final_votes_on_bills": {
         "definition": "Unit = a bill (sněmovní tisk of kind 1 government bill, 2 other bill, 3 state budget) on which at least one valid vote (not declared void in zmatecne.unl, not a manual R vote) was held under an agenda item of type 5 (third reading) during the term. \"Passed\" = the bill history (hist.unl) records a transition out of a third-reading state with action 22 \"souhlas\" (approved) dated within the term. Bills with third-reading votes but no such transition either failed the final vote or had their third reading interrupted and not completed; they are listed in not_passed_examples so each can be checked. Bills approved already in first reading under §90(2) are counted separately (approved_in_first_reading_s90) because failures of such votes are not recorded in hist.unl.",
-        "bills_with_third_reading_votes": 30,
-        "passed": 29,
-        "share_passed": 0.9667,
+        "bills_with_third_reading_votes": 32,
+        "passed": 31,
+        "share_passed": 0.9688,
         "by_kind": {
           "government_bills": {
-            "n": 19,
-            "share_passed": 0.9474
+            "n": 21,
+            "share_passed": 0.9524
           },
           "other_bills": {
             "n": 10,
@@ -850,10 +850,10 @@
           "counts": {
             "approved_in_first_reading_s90": 3,
             "withdrawn": 2,
-            "referred_to_committee": 44
+            "referred_to_committee": 45
           },
-          "decisive": 47,
-          "approved": 47,
+          "decisive": 48,
+          "approved": 48,
           "share_approved": 1
         },
         "other_bills": {
@@ -868,11 +868,11 @@
         "state_budget": {
           "counts": {
             "returned_to_sponsor": 1,
-            "referred_to_committee": 1
+            "referred_to_committee": 2
           },
-          "decisive": 2,
-          "approved": 1,
-          "share_approved": 0.5
+          "decisive": 3,
+          "approved": 2,
+          "share_approved": 0.6667
         }
       },
       "coalition_discipline": [
@@ -886,75 +886,75 @@
             "Motoristé",
             "ANO"
           ],
-          "votes_considered": 2362,
+          "votes_considered": 2561,
           "contested_votes": {
             "definition": "Electronic votes (druh_hlasovani N, not void) in the period in which a majority of the coalition clubs’ members voted ano (A) and fewer than half of the logged-in non-coalition deputies voted ano. S = coalition club members holding a mandate at the time of the vote; yes = coalition members voting A. Absent (@), excused (M), logged-in-but-not-voting (F), no (B/N) and abstain (C) all count as not yes.",
-            "n": 397,
+            "n": 440,
             "coalition_seats_S": {
-              "107": 6,
-              "108": 391
+              "107": 33,
+              "108": 407
             },
             "yes_votes": {
-              "n": 397,
-              "mean": 88.02,
-              "sd": 10.504,
+              "n": 440,
+              "mean": 87.423,
+              "sd": 10.232,
               "min": 55,
-              "q05": 68.8,
-              "q10": 72,
-              "q25": 82,
-              "median": 89,
-              "q75": 96,
-              "q90": 100,
+              "q05": 69,
+              "q10": 72.9,
+              "q25": 81,
+              "median": 88,
+              "q75": 94.25,
+              "q90": 99,
               "max": 108
             },
             "shortfall_S_minus_yes": {
-              "n": 397,
-              "mean": 19.965,
-              "sd": 10.512,
+              "n": 440,
+              "mean": 20.502,
+              "sd": 10.204,
               "min": 0,
               "q05": 4,
-              "q10": 8,
-              "q25": 12,
-              "median": 19,
-              "q75": 26,
-              "q90": 36,
+              "q10": 9,
+              "q25": 13,
+              "median": 20,
+              "q75": 27,
+              "q90": 35,
               "max": 53
             },
             "attendance_share_logged_in": {
-              "n": 397,
-              "mean": 0.837,
-              "sd": 0.084,
+              "n": 440,
+              "mean": 0.831,
+              "sd": 0.082,
               "min": 0.5648,
               "q05": 0.676,
               "q10": 0.722,
-              "q25": 0.796,
-              "median": 0.843,
+              "q25": 0.787,
+              "median": 0.824,
               "q75": 0.898,
               "q90": 0.935,
               "max": 1
             },
             "yes_share": {
-              "n": 397,
-              "mean": 0.815,
-              "sd": 0.097,
+              "n": 440,
+              "mean": 0.81,
+              "sd": 0.095,
               "min": 0.5093,
-              "q05": 0.637,
-              "q10": 0.667,
-              "q25": 0.759,
-              "median": 0.824,
-              "q75": 0.889,
-              "q90": 0.926,
+              "q05": 0.639,
+              "q10": 0.676,
+              "q25": 0.75,
+              "median": 0.815,
+              "q75": 0.879,
+              "q90": 0.917,
               "max": 1
             },
             "p_yes_at_least_S_minus_k": {
-              "S-0": 0.005,
-              "S-1": 0.0252,
-              "S-2": 0.0327,
-              "S-3": 0.0327,
-              "S-4": 0.0579,
-              "S-5": 0.063
+              "S-0": 0.0045,
+              "S-1": 0.0227,
+              "S-2": 0.0295,
+              "S-3": 0.0295,
+              "S-4": 0.0523,
+              "S-5": 0.0568
             },
-            "share_adopted": 0.9798
+            "share_adopted": 0.9818
           },
           "contested_absolute_majority_votes": {
             "definition": "Contested votes (as above) with a quorum (kvorum) of 101, i.e. votes needing an absolute majority of all deputies (e.g. overriding a Senate or presidential veto, confidence).",
@@ -1167,38 +1167,38 @@
       "agenda_items": {
         "definition": "Unit = an item on the approved agenda (bod_schuze.unl, pozvanka null) of a meeting (schůze) that has ended. Status from bod_schuze.id_bod_stav: dealt_with = 0 \"projednán\"; not_dealt_with = 1 \"neprojednán\", 2 \"přerušen\" (interrupted), 5 \"odročen\" (postponed), 7 \"vyřazen\" (dropped, typically carried to a later meeting). Excluded: 3 \"neprojednatelný\" (moot because of the legislative process), 6 \"již projednán\", 4 in progress. A \"fixed slot\" item has a note fixing its date/order (poznamka or pozn2 non-empty). Items are counted per meeting, so a bill carried over several meetings counts once per meeting; the Chamber runs several meetings in parallel and long agendas are rarely completed, so share_dealt_with is the probability that an item listed on a meeting’s agenda is completed at that meeting, not the probability that a vote announced for a given day happens that day.",
         "other_items": {
-          "scheduled": 516,
-          "dealt_with": 136,
-          "not_dealt_with": 380,
-          "share_dealt_with": 0.2636
+          "scheduled": 613,
+          "dealt_with": 167,
+          "not_dealt_with": 446,
+          "share_dealt_with": 0.2724
         },
         "all_items": {
-          "scheduled": 1150,
-          "dealt_with": 266,
-          "not_dealt_with": 884,
-          "share_dealt_with": 0.2313
+          "scheduled": 1385,
+          "dealt_with": 321,
+          "not_dealt_with": 1064,
+          "share_dealt_with": 0.2318
         },
         "all_bill_items": {
-          "scheduled": 634,
-          "dealt_with": 130,
-          "not_dealt_with": 504,
-          "share_dealt_with": 0.205
+          "scheduled": 772,
+          "dealt_with": 154,
+          "not_dealt_with": 618,
+          "share_dealt_with": 0.1995
         },
         "government_bills_first_reading": {
-          "scheduled": 156,
-          "dealt_with": 33,
-          "not_dealt_with": 123,
-          "share_dealt_with": 0.2115
+          "scheduled": 187,
+          "dealt_with": 42,
+          "not_dealt_with": 145,
+          "share_dealt_with": 0.2246
         },
         "other_bills_first_reading": {
-          "scheduled": 284,
+          "scheduled": 347,
           "dealt_with": 22,
-          "not_dealt_with": 262,
-          "share_dealt_with": 0.0775
+          "not_dealt_with": 325,
+          "share_dealt_with": 0.0634
         },
         "state_budget_first_reading": {
-          "scheduled": 1,
-          "dealt_with": 1,
+          "scheduled": 2,
+          "dealt_with": 2,
           "not_dealt_with": 0,
           "share_dealt_with": 1
         },
@@ -1209,16 +1209,16 @@
           "share_dealt_with": 1
         },
         "other_bills_second_reading": {
-          "scheduled": 23,
-          "dealt_with": 13,
-          "not_dealt_with": 10,
-          "share_dealt_with": 0.5652
+          "scheduled": 26,
+          "dealt_with": 14,
+          "not_dealt_with": 12,
+          "share_dealt_with": 0.5385
         },
         "other_bills_third_reading": {
-          "scheduled": 36,
+          "scheduled": 42,
           "dealt_with": 9,
-          "not_dealt_with": 27,
-          "share_dealt_with": 0.25
+          "not_dealt_with": 33,
+          "share_dealt_with": 0.2143
         },
         "state_budget_third_reading": {
           "scheduled": 1,
@@ -1233,16 +1233,16 @@
           "share_dealt_with": 1
         },
         "government_bills_second_reading": {
-          "scheduled": 49,
-          "dealt_with": 23,
-          "not_dealt_with": 26,
-          "share_dealt_with": 0.4694
+          "scheduled": 63,
+          "dealt_with": 29,
+          "not_dealt_with": 34,
+          "share_dealt_with": 0.4603
         },
         "government_bills_third_reading": {
-          "scheduled": 69,
-          "dealt_with": 13,
-          "not_dealt_with": 56,
-          "share_dealt_with": 0.1884
+          "scheduled": 89,
+          "dealt_with": 20,
+          "not_dealt_with": 69,
+          "share_dealt_with": 0.2247
         },
         "government_bills_other_stage": {
           "scheduled": 6,

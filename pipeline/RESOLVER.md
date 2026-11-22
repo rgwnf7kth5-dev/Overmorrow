@@ -1,5 +1,7 @@
 # Resolver's Manual: Scoring Editions
 
+For Czech Chamber claims, start with [the PSP desk snapshot](../data/psp/latest.json) and its named vote files. Match the motion in the stenogram to the vote ID and event window. For late proceedings, check the official vote index beyond the snapshot cutoff.
+
 This is the procedure for the first part of the morning run (starting about 05:00, finished by about 05:15). It implements section 6 of [`METHODOLOGY.md`](../METHODOLOGY.md). The resolver must not change anything in `data/editions/`. The edition part ([`EDITOR.md`](EDITOR.md)) follows on the same branch.
 
 

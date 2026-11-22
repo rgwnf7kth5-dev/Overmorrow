@@ -1,0 +1,162 @@
+{
+  "as_of": "2026-11-22T18:47:38.796Z",
+  "timezone": "Europe/Prague",
+  "term": 10,
+  "sources": {
+    "proposed": "https://www.psp.cz/sqw/ischuze.sqw?o=10&pozvanka=1",
+    "approved": "https://www.psp.cz/sqw/ischuze.sqw?o=10",
+    "vote_index": "https://www.psp.cz/sqw/hlasovani.sqw?o=10",
+    "open_data": "https://www.psp.cz/sqw/hp.sqw?k=1300"
+  },
+  "meetings": [
+    {
+      "number": 37,
+      "status": "proposed",
+      "file": "data/psp/meetings/10-37.json",
+      "source": "https://www.psp.cz/schuze/10/37"
+    },
+    {
+      "number": 36,
+      "status": "completed",
+      "file": "data/psp/meetings/10-36.json",
+      "source": "https://www.psp.cz/schuze/10/36"
+    }
+  ],
+  "latest_vote_date": "2026-11-13",
+  "latest_roll_calls": "data/psp/votes/2026-11-13.json",
+  "claims": [
+    {
+      "id": "cz-orlen-25",
+      "event_date": "2026-11-24",
+      "meeting": 37,
+      "print": 311,
+      "proposed_item": 148,
+      "as_of_status": "eligible_no_fixed_slot",
+      "notes": "V úterý od 14:00 je navržen obecný pořad. Ve středu po druhém čtení rozpočtu a v pátek je možný blok třetích čtení. Definitivní rozhodnutí vyžaduje závěrečné hlasování o zákonu.",
+      "sources": [
+        "https://www.psp.cz/schuze/10/37",
+        "https://www.psp.cz/sqw/historie.sqw?o=10&t=311"
+      ]
+    },
+    {
+      "id": "cz-stan-25",
+      "event_date": "2026-11-24",
+      "meeting": 37,
+      "proposed_item": null,
+      "requested_position": 1,
+      "as_of_status": "public_request_not_listed",
+      "notes": "STAN 21. 11. požádal o první bod k incidentu v Polsku. Zveřejněná pozvánka bod neobsahuje. Pro resolver zaznamenejte hlasování o zařazení návrhu STAN, jeho předkladatele a případná opakování samostatně od hlasování o obsahu usnesení.",
+      "sources": [
+        "https://www.psp.cz/schuze/10/37",
+        "https://www.starostove.cz/prectete-si/vyzva-vlade-podporte-polsko-po-ruskem-utoku"
+      ]
+    }
+  ],
+  "prints": [
+    {
+      "claim_ids": [
+        "cz-orlen-25",
+        "cz-refinery-tax-passed"
+      ],
+      "print": 311,
+      "next_stage": "third_reading",
+      "eligible_from": "2026-11-21",
+      "meeting": 37,
+      "proposed_item": 148,
+      "fixed_slot": null,
+      "notes": "Druhé čtení skončilo 13. 11. Tisk 311/3 rozeslán v 16:38. Hlasování 89028 zkrátilo lhůtu na sedm dnů. PSP uvádí, že po 14. 12. se nepřihlédne k námitce proti projednávání. Rozpočtový výbor uvádí tisk na pozvánce na 24. 11. Závěrečné plénum nemá v návrhu pevný čas.",
+      "deadline_vote": 89028,
+      "other_sources": [
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89028",
+        "https://www.psp.cz/eknih/2025ps/stenprot/036schuz/s036026.htm",
+        "https://www.psp.cz/sqw/text/text2.sqw?idd=292586"
+      ],
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311"
+    },
+    {
+      "claim_ids": [
+        "cz-budget-2027-third-reading"
+      ],
+      "print": 324,
+      "next_stage": "second_reading",
+      "meeting": 37,
+      "proposed_item": 1,
+      "proposed_slot": {
+        "date": "2026-11-25",
+        "order": 1
+      },
+      "notes": "První čtení skončilo 22. 10. Návrh pořadu dává druhé čtení na středu jako první bod. Otázka na tabuli vyžaduje třetí čtení.",
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324"
+    },
+    {
+      "claim_ids": [
+        "cz-unemployment-benefit-cut-passed"
+      ],
+      "print": 300,
+      "next_stage": "second_reading",
+      "eligible_from": "2026-11-20",
+      "meeting": 37,
+      "proposed_item": 10,
+      "fixed_slot": null,
+      "notes": "Novela zákoníku práce obsahující změny podpory. První čtení skončilo 20. 10., lhůta pro výbory byla stanovena na 30 dnů. Bod 146 pro třetí čtení je v pozvánce označen jako dosud neprojednatelný kvůli druhému čtení.",
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
+    },
+    {
+      "claim_ids": [
+        "cz-licence-fee-abolition-passed"
+      ],
+      "print": 231,
+      "next_stage": "committee_after_first_reading",
+      "eligible_from": "2026-12-24",
+      "notes": "Vládní návrh po prvním čtení. Výbor pro média a kulturu 30. 10. přerušil projednávání.",
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231"
+    },
+    {
+      "claim_ids": [
+        "cz-groundwater-fee-passed"
+      ],
+      "print": 48,
+      "next_stage": "third_reading",
+      "eligible_from": "2026-11-05",
+      "meeting": 37,
+      "proposed_item": 127,
+      "fixed_slot": null,
+      "notes": "Novela o rostlinolékařské péči. Po vrácení z třetího čtení skončilo opakované druhé čtení 20. 10. K vyhodnocení otázky doložte i přijetí ustanovení o poplatku ve výsledném znění.",
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48"
+    },
+    {
+      "claim_ids": [
+        "cz-energy-act-price-regulation"
+      ],
+      "print": 369,
+      "next_stage": "first_reading",
+      "notes": "Vládní návrh předložen 13. 11. Předkladatel žádá souhlas již v prvním čtení podle § 90 odst. 2. Kritérium tabule uvádí třetí čtení. V návrhu 37. schůze nebyl nalezen tisk 369.",
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369"
+    }
+  ],
+  "vote_evidence": [
+    {
+      "id": 89028,
+      "meeting": 36,
+      "number": 3,
+      "time": "2026-11-13T13:17:00+01:00",
+      "print": 311,
+      "motion": "Zkrácení lhůty pro zahájení třetího čtení na sedm dní",
+      "result": "adopted",
+      "yes": 77,
+      "no": 23,
+      "abstain": 0,
+      "present": 100,
+      "quorum": 51,
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89028",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/036schuz/s036026.htm"
+    }
+  ],
+  "base_rates": {
+    "file": "pipeline/reference-data/cz-chamber.json",
+    "downloaded": "2026-11-22",
+    "archives": 5,
+    "status": "refreshed",
+    "latest_vote_in_input": 89028
+  }
+}
