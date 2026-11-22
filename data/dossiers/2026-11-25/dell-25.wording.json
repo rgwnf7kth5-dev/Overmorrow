@@ -1,0 +1,32 @@
+{
+ "claim": "Dell Technologies raises its full-year fiscal 2027 revenue guidance above $192.0 billion when it reports third-quarter results after the US close on Tuesday 24 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:45:36Z",
+   "ambiguous": true,
+   "scenario": "If Dell reaffirms guidance already above $192.0 billion, the criterion says YES, but the claim’s word “raises” suggests NO. Likewise, a qualifying release before the U.S. market close would satisfy the criterion but not the claim’s “after the US close” wording. The stated criterion controls in both cases.",
+   "yes_requires": "Dell must publish its fiscal Q3 2027 results on November 24, 2026, Eastern time, within the stated event window. The results release or accompanying guidance must state full-year fiscal 2027 revenue guidance with a range midpoint, or a single figure if no range is given, strictly above $192.0 billion.",
+   "decided_by": "Dell Technologies’ official fiscal Q3 2027 results release or the guidance published with it, together with the Eastern-time publication timestamp."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:45:47Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Dell Technologies must publish its fiscal Q3 2027 results on Tuesday, November 24, 2026 (US Eastern time), and the results press release or accompanying published guidance must state a full-year fiscal 2027 revenue guidance midpoint (or single point figure) strictly greater than $192.0 billion.",
+   "decided_by": "Dell Technologies' fiscal Q3 2027 results press release and accompanying published guidance materials."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:48:56Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Dell Technologies' fiscal Q3 2027 results press release, or the full-year guidance published with it, is issued on Tuesday 24 November 2026 (US Eastern time) and states full-year fiscal 2027 revenue guidance whose midpoint—or single point figure if no range is given—is strictly above $192.0 billion.",
+   "decided_by": "The wording of Dell Technologies' official fiscal Q3 2027 results press release and any full-year revenue guidance published with that release."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "On Tuesday 24 November 2026 the Chamber of Deputies votes down STAN's proposal to add to the sitting's agenda its draft resolution calling the missiles and drone that fell in Poland a Russian provocation.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:45:12Z",
+   "ambiguous": true,
+   "scenario": "If the Chamber rejects a STAN motion to add a general debate on the missiles and drone that fell in Poland, but never votes on adding the specific draft resolution calling the incident a Russian provocation, one reader could resolve YES under the criterion’s broader phrase 'a point on the missiles/drone,' while another could resolve NO because the claim identifies that specific draft resolution.",
+   "yes_requires": "During the specified Prague-time window on 24 November 2026, the Chamber of Deputies must vote on at least one qualifying STAN proposal to add the Poland missiles-and-drone item to the agenda or move it to first place. At least one such proposal must fail, and none may be adopted. If no qualifying vote occurs, the result is NO.",
+   "decided_by": "The Chamber’s vote result, as documented in the official psp.cz vote record or reported by ČTK, ČT24, or another major Czech outlet."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:45:15Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 00:00 and 23:59 on 24 November 2026 (Europe/Prague), the Czech Chamber of Deputies holds a vote on a STAN proposal to add (or put first) an agenda point regarding the missiles/drone that fell in Poland, and at least one such proposal is rejected while none are adopted.",
+   "decided_by": "The official Chamber of Deputies vote record (psp.cz) or reporting by ČTK, ČT24, or another major Czech news outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:47:03Z",
+   "ambiguous": true,
+   "scenario": "psp.cz, ČTK and ČT24 are silent, and the only report that the Chamber rejected the STAN agenda motion is in a borderline Czech outlet such as Echo24 or Parlamentní listy; one reader treats it as a major outlet and resolves YES, the other does not and resolves NO.",
+   "yes_requires": "Between 00:00 and 23:59 on 24 November 2026 (Europe/Prague), the Chamber of Deputies holds a vote on a STAN proposal to add or put first an agenda point about the missiles or drone that fell in Poland, and that proposal is not adopted. If several such STAN proposals are voted, at least one is rejected and none is adopted. That vote and result must appear in the psp.cz vote record or be reported by",
+   "decided_by": "The psp.cz vote record, or reporting by ČTK, ČT24, or another major Czech outlet."
+  }
+ ]
+}

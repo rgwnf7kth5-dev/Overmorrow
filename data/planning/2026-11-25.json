@@ -837,6 +837,35 @@
                     "signals"
                   ]
                 }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T20:40:30Z",
+                  "p": 0.59,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/gulf-ukmto-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T20:40:42Z",
+                  "p": 0.43,
+                  "searches": 6,
+                  "sources": 15,
+                  "trace": "data/dossiers/2026-11-25/gulf-ukmto-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T20:41:28Z",
+                  "p": 0.7,
+                  "searches": 10,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/gulf-ukmto-25.research.json"
+                }
               ]
             }
           }
@@ -2454,6 +2483,35 @@
                     "signals"
                   ]
                 }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T20:41:11Z",
+                  "p": 0.75,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/dell-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T20:41:19Z",
+                  "p": 0.75,
+                  "searches": 5,
+                  "sources": 12,
+                  "trace": "data/dossiers/2026-11-25/dell-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T20:42:55Z",
+                  "p": 0.58,
+                  "searches": 13,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/dell-25.research.json"
+                }
               ]
             }
           }
@@ -3484,6 +3542,35 @@
                     "signals"
                   ]
                 }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-22T20:41:50Z",
+                  "p": 0.55,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/hp-25.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-22T20:42:26Z",
+                  "p": 0.56,
+                  "searches": 6,
+                  "sources": 11,
+                  "trace": "data/dossiers/2026-11-25/hp-25.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-22T20:45:03Z",
+                  "p": 0.46,
+                  "searches": 13,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-25/hp-25.research.json"
+                }
               ]
             }
           }
@@ -4308,20 +4395,81 @@
     }
   ],
   "external_run": {
-    "at": "2026-11-22T19:24:04Z",
+    "at": "2026-11-22T20:49:32Z",
     "providers": [
       "openai gpt-6.2-sol",
       "google gemini-4-argon",
       "xai grok-4.7"
     ],
     "binary_claims": 10,
-    "forecasts": 30,
+    "forecasts": 0,
     "contested": [
-      "ua-drones-25",
+      "ep-eia-25",
       "eu-dbp-25",
-      "ep-eia-25"
+      "ua-drones-25",
+      "gulf-ukmto-25",
+      "dell-25",
+      "hp-25"
     ],
     "research": 9,
+    "wording_flags": [
+      {
+        "claim": "ua-drones-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/ua-drones-25.wording.json"
+      },
+      {
+        "claim": "gulf-ukmto-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/gulf-ukmto-25.wording.json"
+      },
+      {
+        "claim": "cz-stan-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/cz-stan-25.wording.json"
+      },
+      {
+        "claim": "eu-dbp-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/eu-dbp-25.wording.json"
+      },
+      {
+        "claim": "cz-us-cro-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/cz-us-cro-25.wording.json"
+      },
+      {
+        "claim": "ep-eia-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/ep-eia-25.wording.json"
+      },
+      {
+        "claim": "rs-call-25",
+        "flagged_by": [
+          "openai",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-25/rs-call-25.wording.json"
+      }
+    ],
     "failed": []
   }
 }

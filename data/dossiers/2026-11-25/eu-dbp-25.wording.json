@@ -1,0 +1,32 @@
+{
+ "claim": "In the European Semester autumn package adopted on Tuesday 24 November 2026, the European Commission concludes that France's 2027 draft budgetary plan complies with the Council's recommendations (rather than being at risk of non-compliance or not compliant).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:45:17Z",
+   "ambiguous": true,
+   "scenario": "If the Commission adopts the package and a compliant opinion on Monday, 23 November, a reader applying the criterion’s full window would resolve YES, while a reader treating the claim’s Tuesday, 24 November adoption date as a requirement would resolve NO.",
+   "yes_requires": "The European Commission must adopt both the autumn package and its opinion on France’s 2027 Draft Budgetary Plan within the stated Brussels-time window. The opinion’s overall conclusion must be that the plan complies with, or is in line with, the Council recommendation under the excessive deficit procedure. Caveats do not negate a compliant conclusion.",
+   "decided_by": "The Commission’s adoption timing and overall conclusion, as evidenced by the opinion, a Commission press release or communication, or AFP, Reuters, or Euronews reporting quoting the conclusion. Report"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:45:24Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 20:00 on 22 Nov 2026 and 23:59 on 24 Nov 2026 (Europe/Brussels), the European Commission must adopt its opinion on France's 2027 Draft Budgetary Plan with an overall conclusion that the plan complies, is compliant, or is in line with the Council recommendation under the excessive deficit procedure.",
+   "decided_by": "The European Commission's opinion, press release, or communication, or reporting by AFP, Reuters, or Euronews quoting it."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:46:13Z",
+   "ambiguous": true,
+   "scenario": "The Commission’s stated overall conclusion is the distinct intermediate label ‘broadly compliant’ or ‘broadly in line’, or the formal opinion uses that label while a press release or wire quote says simply ‘compliant’ or ‘in line’. One reader treats ‘broadly’ as still a complies/in-line conclusion (or follows the softer source); another treats it as matching neither the YES phrases nor the listed NO phrases and follows the stricter source.",
+   "yes_requires": "Within 20:00 on 22 Nov 2026 to 23:59 on 24 Nov 2026 (Europe/Brussels), the Commission adopts its opinion on France’s 2027 Draft Budgetary Plan and the opinion’s overall conclusion is that the plan complies, is compliant, or is in line with the Council recommendation under the excessive deficit procedure, as stated in the opinion, a Commission press release or communication, or AFP/Reuters/Euronews",
+   "decided_by": "The European Commission’s opinion, as stated in the opinion, a Commission press release or communication, or AFP, Reuters, or Euronews reporting that quotes it."
+  }
+ ]
+}

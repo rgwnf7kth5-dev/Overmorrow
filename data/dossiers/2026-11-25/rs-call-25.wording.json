@@ -1,0 +1,32 @@
+{
+ "claim": "Serbia's Speaker and acting President Aleksandar Čupić formally calls the presidential election by 23:59 on Tuesday 24 November.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:47:11Z",
+   "ambiguous": true,
+   "scenario": "An official notice dated 22 November is posted after 20:00 and confirms the decision was signed that day, but gives no signing time. One reader might accept the posting time as evidence for YES; another might leave the claim unresolved because the signature could have preceded 20:00, making it void. The criterion does not specify how to handle that evidence gap.",
+   "yes_requires": "The Speaker of Serbia’s National Assembly signs the decision calling the presidential election between 20:00 on 22 November and 23:59 on 24 November 2026, Belgrade time. An announcement alone does not count. A qualifying report may appear after the deadline if the signature was in the window.",
+   "decided_by": "The signing time, as established by the decision in Službeni glasnik, a National Assembly or Republic Electoral Commission notice, or reporting by RTS, Tanjug, Beta, FoNet or N1. A signature before th"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:47:22Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Speaker of the National Assembly of Serbia must sign the formal decision calling the presidential election between 20:00 on 22 November 2026 and 23:59 on 24 November 2026 (Europe/Belgrade time).",
+   "decided_by": "The decision published in the Službeni glasnik, a notice from the National Assembly or Republic Electoral Commission, or reports by RTS, Tanjug, Beta, FoNet, or N1."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:49:15Z",
+   "ambiguous": true,
+   "scenario": "RTS reports that the Speaker signed the decision calling the presidential election late on 24 November, while the Službeni glasnik and Tanjug date the signature to 25 November. One reader treats the RTS report as sufficient under the listed-source clause and resolves YES; another treats the official gazette date as controlling, so the signature is outside the window, and resolves NO.",
+   "yes_requires": "The Speaker of the National Assembly signs a decision calling the election of the President of the Republic at a time from 20:00 on 22 November 2026 through 23:59 on 24 November 2026 (Europe/Belgrade), and that in-window signature is shown by the decision in the Službeni glasnik, a National Assembly or Republic Electoral Commission notice, or a report by RTS, Tanjug, Beta, FoNet, or N1. A report p",
+   "decided_by": "The designated sources: the Službeni glasnik text of the decision, a National Assembly or Republic Electoral Commission notice, or reporting by RTS, Tanjug, Beta, FoNet, or N1."
+  }
+ ]
+}

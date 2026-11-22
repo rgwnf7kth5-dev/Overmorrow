@@ -1,0 +1,194 @@
+{
+ "claim": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, armed hostile approach, boarding or seizure involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman or the Arabian Sea that took place on Tuesday 24 November 2026 (00:00-23:59 Gulf time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:40:30Z",
+   "p": 0.59,
+   "searches": 6,
+   "sources": [
+    "https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59",
+    "https://www.ukmto.org/-/media/ukmto/products/20261122_ukmto_-advisory_217-26.pdf?rev=564a29fc164b4b558b32e30dc68b4cf5",
+    "https://apnews.com/article/59f6f304f3053c69c8cc890138a94d1b",
+    "https://apnews.com/article/582e0b5d51be06f0ed630fac24f39b72",
+    "https://apnews.com/article/9858fc82c61c7a1d159e7bba72afe99a",
+    "https://apnews.com/article/e772be52a06d75699594a7396ec78f25",
+    "https://apnews.com/article/b71b1d25f3cff987b4b125196ecb4c3a",
+    "https://apnews.com/article/29159a6f3365ff447c0ccbd1d7260f75",
+    "https://www.ukmto.org/recent-incidents",
+    "https://www.ukmto.org/recent-incidents?gsid=646bb556-74ab-45ae-b68f-9ba64b7462ce",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_113_12-nov.pdf",
+    "https://www.ukmto.org/recent-incidents?trk=public_post_comment-text",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_113_12-nov.pdf?rev=7fe7908661f24d2ebb037b750628f240",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_115_19-nov.pdf?download=1",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_111_05-nov.pdf",
+    "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_115_19-nov.pdf",
+    "https://www.ukmto.org/?success=true",
+    "https://www.ukmto.org/?trk=public_post-text",
+    "https://www.ukmto.org/?trk=public_post_reshare-text",
+    "https://www.ukmto.org/?trk=organization_guest_main-feed-card-text",
+    "https://hormuz.data-tracking.net/guides/shipping-timeline",
+    "https://www.ukmto.org/?rev=4e323c355599427087a871bf31ec06e7",
+    "https://www.ukmto.org/recent-incidents?gsid=de183c87-991a-45f4-ba50-ee0a2d51e556",
+    "https://www.ukmto.org/"
+   ],
+   "reason": "**Base rate.** UKMTO’s November 20 review logged 148 vessel-damage reports across 263 days of conflict in the Strait of Hormuz, Persian Gulf and Gulf of Oman. A simple Poisson conversion gives a 43% chance of at least one reportable event on a given day. That’s a rough baseline, not a count of qualifying days: multiple strikes can occur on the same day, and some qualifying incidents cause no damage. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa))\n\n**What moves the estimate.** **Up:** JMIC’s November 22 update counted seven tanker strikes in Hormuz since November 16, including three on November 20–21. U.S.-assisted transits also rose from about 27 to 38 per day in the latest reporting period, so vessels continued to pass through despite the attacks. **Down:** Three of those strikes occurred within about 15 hours, so the strike count overstates how consistently attacks happen day to day. The November 22 UKMTO advisory about a tanker and military forces does not itself describe a qualifying act, so I don’t count it as evidence of another attack day. On balance, I put more weight on the recent surge than on the full-conflict average. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59))\n\nNEW FACTS\n- 2026-11-22 | JMIC reported that seven tankers had been struck in the Strait of Hormuz since November 16. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59)) | https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59\n- 2026-11-22 | JMIC reported about 38 U.S.-assisted Hormuz transits per day on November 19–21, up from about 27 on November 15–18. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59)) | https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59\n- 2026-11-22 | UKMTO reported a tanker incident involving military forces in the Gulf of Oman without specifying an attack, boarding or seizure. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/20261122_ukmto_-advisory_217-26.pdf?rev=564a29fc164b4b558b32e30dc68b4cf5&utm_source=openai)) | https://www.ukmto.org/-/media/ukmto/products/20261122_ukmto_-advisory_217-26.pdf?rev=564a29fc164b4b558b32e30dc68b4cf5\n- 2026-11-20 | UKMTO’s weekly review recorded 148 vessel-damage reports over 263 days of conflict in Hormuz, the Persian Gulf and the Gulf of Oman. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa)) | https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa\n\nCOUNTER\n\nThe strongest case for NO is that the recent strikes came in bursts, so November 24 could fall between them even if the broader campaign continues. An attack just outside the Gulf-time window, or an in-window incident that neither UKMTO nor JMIC reports as a qualifying act, would still leave the claim at NO.",
+   "facts": [
+    {
+     "date": "2026-11-22",
+     "fact": "JMIC reported that seven tankers had been struck in the Strait of Hormuz since November 16. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59))",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "JMIC reported about 38 U.S.-assisted Hormuz transits per day on November 19–21, up from about 27 on November 15–18. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59))",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf?rev=7d2a81d10d1d467cbe75f405f2392f59"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "UKMTO reported a tanker incident involving military forces in the Gulf of Oman without specifying an attack, boarding or seizure. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/20261122_ukmto_-advisory_217-26.pdf?rev=564a29fc164b4b558b32e30dc68b4cf5&utm_source=openai))",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/20261122_ukmto_-advisory_217-26.pdf?rev=564a29fc164b4b558b32e30dc68b4cf5"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "UKMTO’s weekly review recorded 148 vessel-damage reports over 263 days of conflict in Hormuz, the Persian Gulf and the Gulf of Oman. ([ukmto.org](https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa))",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/20261120-ukmto_vra_overview_u.pdf?rev=5dbbfece42834c3896b685bc2223e1aa"
+    }
+   ],
+   "counter": "The strongest case for NO is that the recent strikes came in bursts, so November 24 could fall between them even if the broader campaign continues. An attack just outside the Gulf-time window, or an in-window incident that neither UKMTO nor JMIC reports as a qualifying act, would still leave the claim at NO."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:40:42Z",
+   "p": 0.43,
+   "searches": 6,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcM37YlZeADIH9i2ujlntSO8HDASBQl7-wu_6e5nGhmuDgAckREnbn0O1Z81p_7Fz9ss_JGUVIRcwQuljzqoZ6P-F3tcxRBfdfH_Ktd1hXuaYUxy4cLjAcryBuqbpkH8NrArq-ME3fA-6rIDD3qQFtpVs-1SFgipwaSIT8oyUuDAWgx7yDhmzEJB-SyEBsXhFJ35bilKcp6p0_hml0rlf4kbEb5O72mfc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvdcU9K9gJQSLOABsddlflbOqyDRaFBmSB4vBDGsU-bGeWlDKeBQ7IsNc0FKgWStj2GmmFzZpuOQYGFBLRps2zAdg0u1ukHzoI5Ug9Dq4o-5LGGPMdtOgWrAc5RzT7f54-RsE10-frzg2qrLjxCvfHGHAQOs6j00Kumb32dYAeUIL86A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqa9NEM_m_AduECKp6QeXOvn2fXA465DTq4Qq8ktPEhFJOImEDVUKog3R16dXVZeTnd7VHtcp3w3y-mtdEPLH7V3TyKd6j1ARME6M2DwGFELnfMK6ic5YqfLuJPXy9GbTH6W5__F7xcErCF_vNmQRdfB44shjuaApt97nFonvbpGbTokRberh6dlpYP3UtnaOIUrNLgA2qHG6FR5W_d41pllPdNq6M14npeg4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKqlDHTLqcAaGJIqiOVYcd6ieGqjA0JD1-OQsTdPlBD-l7k3nggnmFFY-pxMZ8B2qYxPJoOwMBhOwL3sM8IcT3e3x0iDHn98y9_tVywuEvHXjfg_pby86YGPv-hKop8PRL9qaYafbTBLsfB40G0L6zT2d8PhrdM1vyIYG6UgvlGfsImOzw",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZbjfMbn_WlOyqxrKm0D4-4hPPsqgDGO21rbfpbBpA7gsVAunhYY0DJq24XoEb6gijjS5FrGBpJ5jhbvNfy_Ewea1slr_jE8caUCv4Hlyakbg6qCy-CnxXYpTljHPs5QGwkqjRj0NOaltkv4xLFC-ypBUIRg06T2oWgDq1MwOxwhTCLWj9",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVp7dNkYyw0hkip_GaNoW81mSmE2bbd_ypIaa23mUZ4tMvd7BB4luj37r5ydVK8pW4bm3uK6zO6Xi4t1h-h3-9qfnifw8C2el3aLkUToz2KdEmTFxRXu_9rafetULYyMgP9LbCDJCzJhyb7T-IIOt8YsFVlVwZ9UOasYBUkY_vVqUJweCU",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_rXrUxoX34s8MKURkO8Tsoj_IIvDXR1Luw-Be3TpFF1xHArRleg-PY0jA9pODGajcu0_nqeiCOj4l-24VeB_35CGidvnElZNo4x4u3p3fgrUFka_VBE6i4bAtzFjtbmjXt7nqJE3ytKcFZVEKwBjGPFnPllEyIZ9vwNgjjRi80UFvX1xdXAEI",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENBQ-JligVvVTZlbHf5KnleN-NMFY3-dYiuuSgtZZPLcyKB-T4XXOiiOMWZsPCenlhabBfeW3_OBDr02eDK4yqrO8ls34Wj6vApqSsgtvfr5XD0Z9HVVIAeu3WcU4mmcFTg8hjHsSrK8cX6SRoqvxZRDHzKA81ljSM5MtZXTa2z683",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP2huai6MEEKQs8dmPV8aOX6YSBpMToqhpBH_dT2bW_RWQT5ztrS5WYcNSiFMht9jg_Hgzechq-xuavnZ1sK_ZiEMHeZmX09Bx-kUavmswgxSBB0Kdy1acUCuCerbD0gnmsiAZcsmfKl9-ZAq05zfz30QF3ueI76PAFaI2ii-VNdUVCdnShvydGU0LQRX35CjIFpyZqB11Hx0FQMfaXj_xKdo=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNEFWh-KPSBmmHvEGsn3z6rGc5txfAEySg2Gp6ocNlv_hSW1tZ_XSAqepckREjdkx7C3E2jQo92MSN3nEakd-Foal9U4W56rFNQsN6DEjBRNzpTXx7ev7S9C0nbnKEzFr0lfwz764mnhQikQ-pybz4OUAGI6PJtjWfz6BJanfE0VHWReE7cnfsYgJ2TiMO",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqHOkT3WUSpzD1V_9NQS40dm-QDdApTXpaoKhhV_kJoNJNXidsAMiG3x28LE_v1fB_lUfeo0IyF8CSBvFCfuDPaiUyzCl_wocN4qLLkplqxoHLS51UIPhMywjVD6mhsCJu0d5XQtX_CwVceGYbkCXZy5MQ-Dn8pI1PRhndeqiqCZBN0XmSHd7l_XQcvKvN-QpM",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELwiUJzjqwRcQQWo7KDQnNu1P3JgVZHhwNj0BqjVDg-XyN6uEkjYD0HlYcz77LC_X3bXeSmktckhSFe5ndALkNmnM0OWop8shUACKjouIGlFVrBbaCU-Kxfth8_UCIXUMl4bacEhcvY040A4ds1VOL56rM0gy_oohZvbF-EQh2RZGCuyKBgjLH13yntSkMccqL4BnK",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpaH3iXv59HKrCfP7AnaWQpVHX0D2UM0ISeSydFQlTZlvnYxMEHigkauCjz8N1eJDjSpiqkko7rOkEjagk005t6dbRCeoxOxrjmz605FJIwV1sJKrdfQxdDeqC9UUyD5F25NANwp6_Pyx85E_lQkWqs2P5hZH9giBYdAbI7aOoGBPdqncepejWxJAszy_mz4o5vodVuY_5BndQp-nh0-h0JrDcRIAPyW6E1P4YpwQHu5Llyt5upvKCm-Ju",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAO2oRldoQd-ZWuF6dLVRvc5HtWSDe7CVpytP8yhSYqB9QeQYly8LOluO0vtAekAXG5kRAyR_wR4lBajqmVATabDsBDd07XB8FlEn1-_XrZOJtU9XEUBVnBEBY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoU9_C9ykjvUxA2Rqf3pUcJKve3rCECghvcb5wC7V7AeJVk3QPos2TJhcbmqDqDkXzjPnOIAuElHAOJZDbCV3_6xKN2WeZrbDK4QRhH0_DZ2W1HdZUv4gqxt6tVGsDiJ6bdhwJ"
+   ],
+   "reason": "SEVERE\" amid ongoing U.S. naval blockade enforcement and Iranian kinetic activity, assessing further deliberate hostile attacks as likely.\n* **Declining transit volume and widespread underreporting (– toward NO):** UKMTO reported on 20 November 2026 that total vessel transits through the Strait of Hormuz dropped to 263 in the week to 18 November (down from 308 the prior week, and ~65% below pre-war levels). Furthermore, Lloyd's List and UKMTO noted in October and November 2026 that a large proportion of attacked vessels decline to report incidents to UKMTO, and UKMTO only publishes incidents verified through primary sources.\n* **Exclusion of vague advisories and unverified claims (– toward NO):** On 22 November 2026, UKMTO reported an unspecified \"incident involving a tanker and military forces in the Gulf of Oman\", while Iranian media claimed mine strikes that UKMTO/JMIC have not corroborated. Under the resolution criterion, generic notices of an incident with military forces without details of an attack, hit, boarding, or seizure—as well as uncorroborated Iranian claims—do not count, and between 19 and 22 November (4 days) only 20 November produced a clearly qualifying UKMTO attack report.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile \"NO\" is slightly more likely than \"YES\" for any single 24-hour window due to reduced commercial traffic, underreporting by shadow-fleet operators, and the episodic clustering of strikes, the active kinetic campaign near Khasab and in the Persian Gulf has produced verified projectile hits on roughly half of all days in November 2026. Moreover, because the criterion counts time-late reports published by UKMTO or JMIC after 24 November (such as in a subsequent JMIC update or via Indian shipping authorities) so long as the attack or boarding occurred on 24 November, an incident does not have to be reported on the same day to resolve YES.\n\nNEW FACTS\n- 2026-11-18 | JMIC Update 115 reported that the tankers DAR SALWA (13 Nov), TARA GAS (16 and 17 Nov), and NAVIG8 MESSI (17 Nov) were struck by projectiles in the Arabian Gulf and Strait of Hormuz, maintaining the regional threat level at SEVERE. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqa9NEM_m_AduECKp6QeXOvn2fXA465DTq4Qq8ktPEhFJOImEDVUKog3R16dXVZeTnd7VHtcp3w3y-mtdEPLH7V3TyKd6j1ARME6M2DwGFELnfMK6ic5YqfLuJPXy9GbTH6W5__F7xcErCF_vNmQRdfB44shjuaApt97nFonvbpGbTokRberh6dlpYP3UtnaOIUrNLgA2qHG6FR5W_d41pllPdNq6M14npeg4=\n- 2026-11-18 | JMIC Advisory 017-26 stated that the U.S. naval blockade of all Iranian ports remains in force and warned of possible attacks on AIS-transmitting vessels in the Gulf, Strait of Hormuz, Gulf of Oman, and North Arabian Sea. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNEFWh-KPSBmmHvEGsn3z6rGc5txfAEySg2Gp6ocNlv_hSW1tZ_XSAqepckREjdkx7C3E2jQo92MSN3nEakd-Foal9U4W56rFNQsN6DEjBRNzpTXx7ev7S9C0nbnKEzFr0lfwz764mnhQikQ-pybz4OUAGI6PJtjWfz6BJanfE0VHWReE7cnfsYgJ2TiMO\n- 2026-11-18 | UKMTO Warning 212-26 reported that a tanker was struck in its engine room by an unknown projectile while sailing outbound through the Strait of Hormuz 6 nautical miles north of Khasab, Oman. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuSb3lFEnvEKrNaP3FwCo1lmOgUcrGcN0ySKjbDGXFNxxb83RO0vMJReJmr5Xl7nLUiLzrbQeb4EWs-6Les8G3AqBsmTPq3UxniHfD70DiMzTk6g_AzLfx3a2rL6V2uIpsyL_fbknSK7P9Jb6M008Cs95K7XkklkNQkli3sN_APrT2vs1aIcBuj4HxFfDRWw9f9ilTFDQhszqxjBaBz97ZZZR8tkcmB_mC_BU=\n- 2026-11-20 | UKMTO's weekly security overview recorded 169 total conflict events since 28 February 2026, including six tanker attacks between 13 and 18 November 2026, and noted that UKMTO only reports incidents verified through primary sources. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvdcU9K9gJQSLOABsddlflbOqyDRaFBmSB4vBDGsU-bGeWlDKeBQ7IsNc0FKgWStj2GmmFzZpuOQYGFBLRps2zAdg0u1ukHzoI5Ug9Dq4o-5LGGPMdtOgWrAc5RzT7f54-RsE10-frzg2qrLjxCvfHGHAQOs6j00Kumb32dYAeUIL86A==\n- 2026-11-21 | UKMTO reported that Strait of Hormuz vessel transits fell to 263 in the seven days to 18 November 2026 (down from 308 the previous week) as shipping remained roughly 65% below pre-conflict levels. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENBQ-JligVvVTZlbHf5KnleN-NMFY3-dYiuuSgtZZPLcyKB-T4XXOiiOMWZsPCenlhabBfeW3_OBDr02eDK4yqrO8ls34Wj6vApqSsgtvfr5XD0Z9HVVIAeu3WcU4mmcFTg8hjHsSrK8cX6SRoqvxZRDHzKA81ljSM5MtZXTa2z683\n- 2026-11-21 | UKMTO Warning 214-26, issued on 20 November 2026, reported that an outbound tanker was struck on its port bow by an unknown projectile approximately 8 nautical miles north of Khasab, Oman, causing a fire onboard. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_rXrUxoX34s8MKURkO8Tsoj_IIvDXR1Luw-Be3TpFF1xHArRleg-PY0jA9pODGajcu0_nqeiCOj4l-24VeB_35CGidvnElZNo4x4u3p3fgrUFka_VBE6i4bAtzFjtbmjXt7nqJE3ytKcFZVEKwBjGPFnPllEyIZ9vwNgjjRi80UFvX1xdXAEI\n- 2026-11-22 | UKMTO reported an incident at 14:25 GMT on 22 November 2026 involving a tanker and military forces in the Gulf of Oman off Chabahar without specifying further details. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIC1VPQyVIYklLV9QHQgVrYn47adYoZuV6kgJuIaFjXNvmUVceDxaHo8EPUzaGc3ABMw98P7CRRt2sTVPQyGVfBOrOrJsLhnQnQN3Ki7VFwoucK7Vz7dFlfM8LzHQYp6aydwudaFuS-k5WrTlaeNqn6jnH6Ayn9oSWYdIfB5Uo36IDG3zaBXOoRdfANQintja-pMya82LS_ymCzO2BEjZR7wT3eTJpTeuczd40Pu1CXQN4NgdRCYE=\n\nCOUNTER\nCommercial tankers are being struck by projectiles in the Strait of Hormuz and Persian Gulf at a sustained pace in November 2026, with qualifying attacks verified by UKMTO or JMIC on more than half of the days so far this month. Because JMIC assesses the regional threat level as severe and time-late reports confirmed days later by flag states or JMIC updates count toward the criterion, a single projectile hit, pirate boarding attempt in the Arabian Sea, or confirmed U.S. blockade enforcement action occurring on 24 November will easily trigger a positive resolution.",
+   "facts": [
+    {
+     "date": "2026-11-18",
+     "fact": "JMIC Update 115 reported that the tankers DAR SALWA (13 Nov), TARA GAS (16 and 17 Nov), and NAVIG8 MESSI (17 Nov) were struck by projectiles in the Arabian Gulf and Strait of Hormuz, maintaining the regional threat level at SEVERE.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqa9NEM_m_AduECKp6QeXOvn2fXA465DTq4Qq8ktPEhFJOImEDVUKog3R16dXVZeTnd7VHtcp3w3y-mtdEPLH7V3TyKd6j1ARME6M2DwGFELnfMK6ic5YqfLuJPXy9GbTH6W5__F7xcErCF_vNmQRdfB44shjuaApt97nFonvbpGbTokRberh6dlpYP3UtnaOIUrNLgA2qHG6FR5W_d41pllPdNq6M14npeg4="
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "JMIC Advisory 017-26 stated that the U.S. naval blockade of all Iranian ports remains in force and warned of possible attacks on AIS-transmitting vessels in the Gulf, Strait of Hormuz, Gulf of Oman, and North Arabian Sea.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNEFWh-KPSBmmHvEGsn3z6rGc5txfAEySg2Gp6ocNlv_hSW1tZ_XSAqepckREjdkx7C3E2jQo92MSN3nEakd-Foal9U4W56rFNQsN6DEjBRNzpTXx7ev7S9C0nbnKEzFr0lfwz764mnhQikQ-pybz4OUAGI6PJtjWfz6BJanfE0VHWReE7cnfsYgJ2TiMO"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "UKMTO Warning 212-26 reported that a tanker was struck in its engine room by an unknown projectile while sailing outbound through the Strait of Hormuz 6 nautical miles north of Khasab, Oman.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuSb3lFEnvEKrNaP3FwCo1lmOgUcrGcN0ySKjbDGXFNxxb83RO0vMJReJmr5Xl7nLUiLzrbQeb4EWs-6Les8G3AqBsmTPq3UxniHfD70DiMzTk6g_AzLfx3a2rL6V2uIpsyL_fbknSK7P9Jb6M008Cs95K7XkklkNQkli3sN_APrT2vs1aIcBuj4HxFfDRWw9f9ilTFDQhszqxjBaBz97ZZZR8tkcmB_mC_BU="
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "UKMTO's weekly security overview recorded 169 total conflict events since 28 February 2026, including six tanker attacks between 13 and 18 November 2026, and noted that UKMTO only reports incidents verified through primary sources.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvdcU9K9gJQSLOABsddlflbOqyDRaFBmSB4vBDGsU-bGeWlDKeBQ7IsNc0FKgWStj2GmmFzZpuOQYGFBLRps2zAdg0u1ukHzoI5Ug9Dq4o-5LGGPMdtOgWrAc5RzT7f54-RsE10-frzg2qrLjxCvfHGHAQOs6j00Kumb32dYAeUIL86A=="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "UKMTO reported that Strait of Hormuz vessel transits fell to 263 in the seven days to 18 November 2026 (down from 308 the previous week) as shipping remained roughly 65% below pre-conflict levels.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENBQ-JligVvVTZlbHf5KnleN-NMFY3-dYiuuSgtZZPLcyKB-T4XXOiiOMWZsPCenlhabBfeW3_OBDr02eDK4yqrO8ls34Wj6vApqSsgtvfr5XD0Z9HVVIAeu3WcU4mmcFTg8hjHsSrK8cX6SRoqvxZRDHzKA81ljSM5MtZXTa2z683"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "UKMTO Warning 214-26, issued on 20 November 2026, reported that an outbound tanker was struck on its port bow by an unknown projectile approximately 8 nautical miles north of Khasab, Oman, causing a fire onboard.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_rXrUxoX34s8MKURkO8Tsoj_IIvDXR1Luw-Be3TpFF1xHArRleg-PY0jA9pODGajcu0_nqeiCOj4l-24VeB_35CGidvnElZNo4x4u3p3fgrUFka_VBE6i4bAtzFjtbmjXt7nqJE3ytKcFZVEKwBjGPFnPllEyIZ9vwNgjjRi80UFvX1xdXAEI"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "UKMTO reported an incident at 14:25 GMT on 22 November 2026 involving a tanker and military forces in the Gulf of Oman off Chabahar without specifying further details.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIC1VPQyVIYklLV9QHQgVrYn47adYoZuV6kgJuIaFjXNvmUVceDxaHo8EPUzaGc3ABMw98P7CRRt2sTVPQyGVfBOrOrJsLhnQnQN3Ki7VFwoucK7Vz7dFlfM8LzHQYp6aydwudaFuS-k5WrTlaeNqn6jnH6Ayn9oSWYdIfB5Uo36IDG3zaBXOoRdfANQintja-pMya82LS_ymCzO2BEjZR7wT3eTJpTeuczd40Pu1CXQN4NgdRCYE="
+    }
+   ],
+   "counter": "Commercial tankers are being struck by projectiles in the Strait of Hormuz and Persian Gulf at a sustained pace in November 2026, with qualifying attacks verified by UKMTO or JMIC on more than half of the days so far this month. Because JMIC assesses the regional threat level as severe and time-late reports confirmed days later by flag states or JMIC updates count toward the criterion, a single projectile hit, pirate boarding attempt in the Arabian Sea, or confirmed U.S. blockade enforcement action occurring on 24 November will easily trigger a positive resolution."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:41:28Z",
+   "p": 0.7,
+   "searches": 10,
+   "sources": [
+    "https://x.com/Info_Fusion_Ctr",
+    "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
+    "https://www.devdiscourse.com/article/international/4010574-ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman",
+    "https://valuechainasia.com/articles/logistics/hormuz-transits-ais-ukmto-portwatch",
+    "https://streamlinefeed.co.ke/news/two-tankers-struck-near-strait-of-hormuz-ukmto-says",
+    "https://www.thehansindia.com/news/international/two-tanker-attack-incidents-reported-near-omans-khasab-ukmto-1144381",
+    "https://caracalintelligence.com/security-briefings/2026-10-25-jmic-updates-hormuz-tanker-incident-and-vessel-congestion/",
+    "https://x.com/sentdefender/status/2123812271088369968",
+    "https://x.com/staunovo/status/2123777299455647791",
+    "https://declassifiednow.com/editors-choice/hormuz-tanker-attacks-weekly-high/",
+    "https://www.devdiscourse.com/article/international/4010254-two-tanker-attack-incidents-reported-near-omans-khasab-on-saturday-ukmto-says",
+    "https://www.ukmto.org/indian-ocean/jmic-products/jmic-infonote",
+    "https://marineinsight360.com/maritime-guides/strait-of-hormuz-closure",
+    "https://english.aawsat.com/gulf/5344354-ukmto-reports-incident-involving-tanker-and-military-forces-gulf-oman",
+    "https://app.beehiiv.com/downloads/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltSXhaV00yTXpobUxXTmtObVF0TkRneVl5MWhNVGMzTFRjMlkySXlaVGd4TVRCa05DST0iLCJleHAiOm51bGwsInB1ciI6ImRvd25sb2FkYWJsZS9kb3dubG9hZCJ9fQ--e7eee44dd6bceec7a84f3af87ec2957ecb10975e8eddeb3e683518172ac02757",
+    "https://en.hathalyoum.net/articles/307771",
+    "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456",
+    "https://x.com/UK_MTO/status/2124532578942169266",
+    "https://x.com/staunovo/status/2123286816199454820",
+    "https://x.com/supbrow/status/2121999272703082683",
+    "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
+    "https://sabq.org/en/article/unidentified-projectiles-hit-two-tankers-off-oman-as-escalating-hormuz-attacks",
+    "https://political.org/strait-of-hormuz-tracker/",
+    "https://www.thehawk.in/news/world/middle-east/two-tanker-attack-incidents-reported-near-omans-khasab-ukmto",
+    "https://x.com/UK_MTO/status/2124537896061280336"
+   ],
+   "reason": "The ongoing US-Israel-Iran conflict that began in late February 2026 has produced a sustained pattern of Iranian projectile strikes on merchant vessels, overwhelmingly outbound tankers, in the Strait of Hormuz and adjacent waters that fall inside the claim’s geographic scope. UKMTO’s own logs and contemporaneous JMIC updates show roughly one reported attack per day on average through 21 November (about 21 attack-classified reports in that span), with multiples on some days and occasional gaps; the implied daily probability of at least one qualifying report is therefore in the 0.65–0.75 range. JMIC continues to rate the Hormuz threat “severe” (attack highly likely), US-facilitated transits persist at roughly 25–30 vessels per day, and the most recent cluster (projectiles striking tankers 8–17 nm from Khasab on 20 and 21 November) shows the pattern has not broken.\n\nDated developments reinforce rather than reverse that base rate: attacks remain concentrated on the southern/outbound corridor that UKMTO and JMIC routinely publicize, oil-price and diplomatic pressure have not produced a pause, and time-late reports are explicitly accepted by the resolution rule. The principal uncertainty is ordinary day-to-day variance plus the possibility of a short operational lull.\n\nNEW FACTS\n- 2026-11-21 | UKMTO Warning 215-26 and 216-26 reported two outbound tankers struck by unidentified projectiles 11 nm north and 17 nm east of Khasab while transiting the Strait of Hormuz, with no casualties noted. | https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/\n- 2026-11-22 | UKMTO Advisory 217-26 stated only that it had received a report of an incident involving a tanker and military forces in the Gulf of Oman at 1425 UTC, with investigations ongoing and no attack, hit, boarding or seizure described. | https://www.arabnews.com/world/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574\n- 2026-11-22 | CNN’s analysis of UKMTO data found at least 22 attacks reported in November as of 22 November, the second-highest monthly total since the war began, with three tankers struck since Friday. | https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl\n- 2026-11-21 | UKMTO’s weekly security overview counted six tanker attacks in the seven days to 18 November (four inside the Strait of Hormuz) while rating the threat severe. | https://www.marineinsight.com/strait-hormuz-shipping-65-below-tanker-attacks/\n- 2026-11-22 | JMIC Advisory Update 116 recorded three projectile attacks on outbound tankers 8–17 nm from Khasab on 20–21 November and maintained the severe threat assessment. | https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf\n- 2026-11-20 | UKMTO Warning 214-26 reported an outbound tanker struck on the port bow by an unknown projectile 8 nm north of Khasab, producing a fire, with no casualties. | https://x.com/UK_MTO/status/2123812271088369968\n\nCOUNTER\nEven in the current high-intensity phase, zero-attack days still occur (no qualifying UKMTO attack report has been tied to 19 November, and none had appeared by late on 22 November). A one- or two-day operational pause by Iranian forces, a temporary drop in outbound tankers using the vulnerable southern corridor, or incidents that ships simply do not report to UKMTO would be enough to leave 24 November without a qualifying public report.",
+   "facts": [
+    {
+     "date": "2026-11-21",
+     "fact": "UKMTO Warning 215-26 and 216-26 reported two outbound tankers struck by unidentified projectiles 11 nm north and 17 nm east of Khasab while transiting the Strait of Hormuz, with no casualties noted.",
+     "url": "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "UKMTO Advisory 217-26 stated only that it had received a report of an incident involving a tanker and military forces in the Gulf of Oman at 1425 UTC, with investigations ongoing and no attack, hit, boarding or seizure described.",
+     "url": "https://www.arabnews.com/world/ukmto-reports-incident-involving-tanker-and-military-forces-in-gulf-of-oman-3013574"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "CNN’s analysis of UKMTO data found at least 22 attacks reported in November as of 22 November, the second-highest monthly total since the war began, with three tankers struck since Friday.",
+     "url": "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "UKMTO’s weekly security overview counted six tanker attacks in the seven days to 18 November (four inside the Strait of Hormuz) while rating the threat severe.",
+     "url": "https://www.marineinsight.com/strait-hormuz-shipping-65-below-tanker-attacks/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "JMIC Advisory Update 116 recorded three projectile attacks on outbound tankers 8–17 nm from Khasab on 20–21 November and maintained the severe threat assessment.",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_116_22-nov.pdf"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "UKMTO Warning 214-26 reported an outbound tanker struck on the port bow by an unknown projectile 8 nm north of Khasab, producing a fire, with no casualties.",
+     "url": "https://x.com/UK_MTO/status/2123812271088369968"
+    }
+   ],
+   "counter": "Even in the current high-intensity phase, zero-attack days still occur (no qualifying UKMTO attack report has been tied to 19 November, and none had appeared by late on 22 November). A one- or two-day operational pause by Iranian forces, a temporary drop in outbound tankers using the vulnerable southern corridor, or incidents that ships simply do not report to UKMTO would be enough to leave 24 November without a qualifying public report."
+  }
+ ]
+}

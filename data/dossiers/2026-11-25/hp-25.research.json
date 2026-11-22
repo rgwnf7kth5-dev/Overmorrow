@@ -1,0 +1,190 @@
+{
+ "claim": "HP Inc. reports non-GAAP diluted net EPS of at least $0.75 for its fiscal fourth quarter of 2026 (ended 31 October) in results published after the US close on Tuesday 24 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:41:50Z",
+   "p": 0.55,
+   "searches": 5,
+   "sources": [
+    "https://investor.hp.com/news-events/news/news-details/2022/HP-Inc.-Reports-Fiscal-2022-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase-and-Future-Ready-Transformation/default.aspx",
+    "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-First-Quarter-Results/default.aspx",
+    "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx",
+    "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Third-Quarter-Results/default.aspx",
+    "https://investor.hp.com/news-events/events/event-details/2026/Q4-2026-HP-Inc-Earnings-Conference-Call/",
+    "https://www.hp.com/us-en/newsroom/press-releases/2026/hp-inc-reports-fiscal-2026-third-quarter-results.html",
+    "https://investor.hp.com/news-events/events/event-details/2026/Q4-2026-HP-Inc-Earnings-Conference-Call/default.aspx",
+    "https://investor.hp.com/overview/default.aspx",
+    "https://investor.hp.com/overview/default.aspx?bmtid=GB-FY24-GSB17555-2",
+    "https://www.hp.com/content/dam/sites/garage-press/press/press-releases/2026/q2-fy26-earnings/HP_Inc_Reports_Q2_FY26_Earnings.pdf",
+    "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Second-Quarter-Results/default.aspx",
+    "https://investor.hp.com/governance/overview/default.aspx",
+    "https://investor.hp.com/news-events/news/default.aspx",
+    "https://investor.hp.com/news-events/default.aspx",
+    "https://www.hp.com/us-en/newsroom/press-releases/2025/hp-inc-reports-fiscal-2025-full-year-and-fourth-quarter-results.html",
+    "https://www.tomshardware.com/pc-components/ssds/ssds-laptops-and-phones-may-get-cheaper-as-consumer-nand-spot-pricing-drops-20-percent-bank-of-america-expects-contract-price-drops-report-cites-oversupply-in-consumer-market-amid-declining-demand-and-growing-chinese-competition",
+    "https://investor.hp.com/news-events/news/news-details/2025/HP-Inc--Reports-Fiscal-2025-Full-Year-and-Fourth-Quarter-Results/default.aspx",
+    "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Announces-Leadership-Transition/default.aspx",
+    "https://www.gartner.com/en/newsroom/press-releases/2026-10-12-gartner-says-worldwide-pc-shipments-declined-22-point-4-percent-in-third-quarter-of-2026-as-component-cost-inflation-raised-asps?trk=public_post_comment-text",
+    "https://investor.hp.com/news-events/news/news-details/2024/HP-Inc.-Reports-Fiscal-2024-Full-Year-and-Fourth-Quarter-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/47217/000114036126037170/ef20082499_form8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm",
+    "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000047217/1e393100-444f-4003-8bfb-fa21b0e67c18.pdf",
+    "https://investor.hp.com/news-events/news/news-details/2023/HP-Inc.-Reports-Fiscal-2023-Full-Year-and-Fourth-Quarter-Results/default.aspx",
+    "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000047217/6fee99ba-2942-4f7a-be75-ddfe366f5cde.pdf"
+   ],
+   "reason": "I lean **YES**, narrowly. The main uncertainty is whether HP clears the EPS threshold, not whether it reports on November 24.\n\n**Base rate.** HP’s fiscal Q4 non-GAAP diluted net EPS cleared $0.75 in all four years from FY2022 through FY2025. But this year’s threshold is one cent above HP’s own guidance midpoint, and only one of those four quarters beat its midpoint by at least a cent. That makes the raw 4-for-4 record a poor guide to this year’s result. ([investor.hp.com](https://investor.hp.com/news-events/news/news-details/2022/HP-Inc.-Reports-Fiscal-2022-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase-and-Future-Ready-Transformation/default.aspx))\n\n**What moves this case.** On August 26, HP gave Q4 non-GAAP diluted net EPS guidance of $0.69–$0.79, including an estimated $0.08 tariff-refund benefit. The $0.74 midpoint weighs against YES, but HP beat its guidance midpoint in each of the first three quarters of FY2026, which pushes the other way. Its August 27 filing disclosed that it had already received $91 million in tariff refunds after July 31. That makes the refund assumption more credible; it is not a reason to add another $0.08 to guidance. Gartner’s October 12 estimate that HP’s calendar-Q3 PC shipments fell 30.9% year over year is a downside signal, though that period only partly overlaps HP’s fiscal Q4 and unit shipments do not directly measure earnings. ([investor.hp.com](https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-First-Quarter-Results/default.aspx?utm_source=openai))\n\n**Timing risk.** HP announced on November 3 that it would review results at 5:00 p.m. ET on Tuesday, November 24. I put the chance of no qualifying release on that date at about 1%; a release on a different date would resolve NO regardless of EPS. ([investor.hp.com](https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx?utm_source=openai))\n\nNEW FACTS\n- 2026-11-03 | HP announced its fiscal Q4 results call for November 24 at 5:00 p.m. ET. | https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx\n- 2026-10-12 | Gartner’s preliminary data showed HP’s calendar-Q3 PC shipments fell 30.9% year over year, versus 22.4% for the worldwide market. | https://www.gartner.com/en/newsroom/press-releases/2026-10-12-gartner-says-worldwide-pc-shipments-declined-22-point-4-percent-in-third-quarter-of-2026-as-component-cost-inflation-raised-asps\n- 2026-08-27 | HP’s Form 10-Q disclosed $91 million in tariff refunds received after the July 31 quarter-end. | https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm\n- 2026-08-26 | HP reported fiscal Q3 non-GAAP diluted net EPS of $0.83, including an $0.11 tariff-refund benefit. | https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Third-Quarter-Results/default.aspx\n\nCOUNTER  \nHP can land exactly at the midpoint of its own guidance and still resolve NO. The sharp fall in PC shipments makes it plausible that higher selling prices did not offset weaker volumes and higher component costs, leaving EPS at $0.74 or below even if the release comes out on schedule. ([investor.hp.com](https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Third-Quarter-Results/default.aspx?utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-03",
+     "fact": "HP announced its fiscal Q4 results call for November 24 at 5:00 p.m. ET.",
+     "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx"
+    },
+    {
+     "date": "2026-10-12",
+     "fact": "Gartner’s preliminary data showed HP’s calendar-Q3 PC shipments fell 30.9% year over year, versus 22.4% for the worldwide market.",
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-12-gartner-says-worldwide-pc-shipments-declined-22-point-4-percent-in-third-quarter-of-2026-as-component-cost-inflation-raised-asps"
+    },
+    {
+     "date": "2026-08-27",
+     "fact": "HP’s Form 10-Q disclosed $91 million in tariff refunds received after the July 31 quarter-end.",
+     "url": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm"
+    },
+    {
+     "date": "2026-08-26",
+     "fact": "HP reported fiscal Q3 non-GAAP diluted net EPS of $0.83, including an $0.11 tariff-refund benefit.",
+     "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Third-Quarter-Results/default.aspx"
+    }
+   ],
+   "counter": "HP can land exactly at the midpoint of its own guidance and still resolve NO. The sharp fall in PC shipments makes it plausible that higher selling prices did not offset weaker volumes and higher component costs, leaving EPS at $0.74 or below even if the release comes out on schedule. ([investor.hp.com](https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Third-Quarter-Results/default.aspx?utm_source=openai))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:42:26Z",
+   "p": 0.56,
+   "searches": 6,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDaQcm2iYSmRlwPG1Me7Wv071x1vHjaBAJKyb9eN2xwpXlObwTHJ4qUc6CizA9WFPW2lQtP4OH-HbtZCIPbPEleH3t5ElbBReAZ01_6Me9S11RK0P3F-7pWWiIomnRkY3I4XB_eTfviM4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTTRHFzEEVKbztwSjRjF92XZrVcF0tg2U_W2E7juin7Us-34vyFQsgz3EF4Sb052pUjMb_UUUmiIoKyWVTIXez5eALnsaL08N41uXspbU1vVNWDi0og0im25J6ah7lnAbkgkeooz08DYoj45vAaIh36nk2xcjBnyTauWQYuapknR-DDMH3QH6fY0NQel9CUZ4_iDqXoySobQgKfs0Ggs70Sa8Tax51BHxHc6PREYe4zSrxIX0LeZAYzdLd-_YO_VWKVRIKnhvp4ZMW2NAgl1c-MYy_Vg1kLjSD0vGS59VtKqR52g1NdtszPC5O41ItpF5am6cXLQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5oLVYx-qu0jFlsBr1VUM2Ylf4rnqu9u2m8DbL-yLezy9TD9x7eNa81I_ejaBOSKHQCWJueeRX3_7QxfPqjF6olKS7BZtQEAJJOVTJQKAnPty-u0OoxAJtShULq_wc5VxYLKkLPddm5OHHIfWrB-oJaeYAQpcZlnBT5mHeDaVM5dbTZW99qrL38zQRNw_vGAY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_JQda5hWNvLDNLCTSewJ2fOLF5opwerARg5cbHkucz1rvhJFkW2ND78m3KmSiP4dRy8BSVlds-oHdc3XXkyurB0zCMHftFsOpdL_OBkRzY2LLIPrt931lmVTiPjqeAi3gUlonrmFNkSHKMxRczc_Ai_rnh7GSwX6UUHtuGO5JyIM44tMzM68QoIb33VFoHqgFa_U=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaflIF3rFeNqcCrsNnRcibDf6l_0L5nGmTtTitA2p7jV5Rz3dTgvxJI81QKJeMosmLeKD624_Ugj_oHzfgvn0qxOE9XrSYelJ9wbMylY3z1ytF8tce2yjCdOgMxAAg1hHUuqs6CYfG3nOjvjC4RK4H6hZsLsU-p4PJk9Pt1c3QzF4e3DFkcckS2i1FKAOsRSEpQARRfIah3AYTkNOqfdnl",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELzYvvOszL4Xxk8MQgwEzTu16XjWWcaJNSOZbOwvbGap_IPzU_RiinF36u00QkYvWGzmHxUOrnlxspNn1xwfShgdyIotlq_orAO7bUXm9CAbmxoQSFUISV7MpHF9u-N5sgdGFeRnC8HYdh8s7I67oMV_knvYXcBvsC6z6SEK4_FJhd5lN4cFRmwU9kebozBmiFVE3Vp28aN_8kInaBDB5JHVV12mp1Yrb0T5cVk4-6oq0ZyzUq6Ca-F_t49UzK55xgC7KmjwrVcUWqvJg8v0etZiJoaLc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyYuUOOWS9prCPb3WuhvS09h9LVK0CJWHT9ZweykLBbQn2suNRmk_w8ijVqPn5YtV8IUYF8yNiBQqCQDnmnPhEp0ipc4yrad_ylI16X-Ofd4C3JcGj3alu_4xsmGj7JnKJUSY1e2AAGpPUa8GZKDY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnNb6orkPSMeScAfSi6suj1N29vNPgqhl2MQPE2jvviepiJo-yvppWG_Hp-TyoXFaCx-ANWnT7FowdUK7fw2UO7IzkVjKOr5yMJl8keOP_PpNexs6Szsv9NcRXep6AfdHWMpyNxPSSb-rpgwrJRQ1_Czh2unk4woOxBbZuV3hxzuURzXuoySuU7zJUaFIue8DHn6y-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtQaiohuJ1JtQT6RLVFug5y-QMfhzLLuzdGWL3nZqMryZDCMPBa52NvQEChElmgWuImDfCcLQKz7P0ygViKZU2nZ2w8avSo_IjHoGMt8KgaN_AEMYVm8ysZdX6l1CLyb6x54kSwg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVy-pJrN76xn4Ad8G9IqR6eiJNpEMBll119kJolC4vLL9wJw9NV_D5T0PfeMl8XMybQ1xLrjLF3DztSYD3M_HIV6ooq14vOxPaFtCCCKEVgL0eJReaWI_lzQVAUc1IvhiVWcosKEk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbK-HFI6YOOPASUpVq_JOFjwGgXs2fhKvJ-QGfLqjz9itNb5N_sY0FQ88W3LNml_7OodcG1H1hduzpD6b0wogR2mTsbjuJS1dGW6pdm-Z__wvouC95W7UlLryYNS-s7BWxF2R6w6bJkbJ8MDdxVJPP6HFjQNPRLQYnUDPPgUCktEpttjNauTvtl3mTzJf7Ej0gUeKZ6mf5nX4-5K4wROY8Z5LnKxs3"
+   ],
+   "reason": "h reporting on November 20, 2026, the Zacks Consensus Estimate for HP's Q4 non-GAAP EPS stands at $0.74 per share. MarketBeat (November 21, 2026) and Tickeron (November 20, 2026) list consensus EPS at $0.75. Because consensus sits right on the $0.74/$0.75 boundary, even an \"in-line\" result per Zacks ($0.74) would fail the $0.75 threshold.\n* **Component Cost and Margin Pressures (Direction: Negative):** During the August 26, 2026 earnings call, HP management noted that memory and storage cost inflation compressed Q3 gross margins by 120 basis points and guided Q4 Personal Systems operating margins to trough below Q3's 4.6% level. Zacks reiterated on November 20, 2026, that rising component costs threaten Q4 profitability despite strong AI PC and premium product revenue growth.\n\n### 3. Strongest Reason the Outcome Might Fail\nWhile HP has consistently exceeded guidance throughout fiscal 2026, the threshold of $0.75 is positioned one cent above both the company's guidance midpoint ($0.74) and the Zacks Consensus Estimate ($0.74). If memory and storage cost inflation compressed Personal Systems margins more severely than anticipated during the October quarter, or if any portion of the projected $0.08 per share tariff refund benefit slipped past the October 31 fiscal year-end cutoff, non-GAAP EPS could easily land at $0.74 or below. (The chance that HP fails to publish its results on November 24, 2026, is negligible—around 1%—given the formal November 3 schedule announcement and the smooth leadership transition announcement on November 4 appointing Emma Walmsley as CEO effective January 2027.)\n\nBalancing HP's strong track record of beating its quarterly guidance midpoints in FY26 against the fact that $0.75 sits above the $0.74 guidance midpoint and Zacks consensus amid known Q4 margin headwinds, a YES outcome is slightly favored.\n\nNEW FACTS\n- 2026-08-26 | HP Inc. reported Q3 FY26 non-GAAP diluted net EPS of $0.83 (including an $0.11 favorable impact from tariff refunds) on net revenue of $15.7 billion. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXPd3L5YEkRUdCy5Axt8-xvqcSfdJf2ZLkuIPNAZp_Pf2PWqdjv4m05FSGa5xyzgJYtGuU315D0c-qwTQLdHhWheSEpEJOWQCbniO-WZb-T0qh41WBnIGzv6qO0GCu88ZH4acWuQmIpFgkvEl3MMwxe_ijScB1532sDvIAiJ5kzc5Gp-kp_VMZAtJb8yDUgFqGMmEpkT1qcbDN7blTlEtvf9_b7-FstpXLHb4__xM=\n- 2026-08-26 | In its Q3 FY26 earnings presentation and filing, HP guided Q4 FY26 non-GAAP diluted net EPS to $0.69–$0.79 (and full-year FY26 non-GAAP diluted net EPS to $3.19–$3.29), inclusive of an estimated $0.08 favorable impact in Q4 from tariff refunds. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_JQda5hWNvLDNLCTSewJ2fOLF5opwerARg5cbHkucz1rvhJFkW2ND78m3KmSiP4dRy8BSVlds-oHdc3XXkyurB0zCMHftFsOpdL_OBkRzY2LLIPrt931lmVTiPjqeAi3gUlonrmFNkSHKMxRczc_Ai_rnh7GSwX6UUHtuGO5JyIM44tMzM68QoIb33VFoHqgFa_U=\n- 2026-08-26 | During its Q3 FY26 earnings call, HP management stated that memory and storage costs compressed gross margins and guided Q4 Personal Systems operating margins to trough below Q3's 4.6% level. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtQaiohuJ1JtQT6RLVFug5y-QMfhzLLuzdGWL3nZqMryZDCMPBa52NvQEChElmgWuImDfCcLQKz7P0ygViKZU2nZ2w8avSo_IjHoGMt8KgaN_AEMYVm8ysZdX6l1CLyb6x54kSwg==\n- 2026-11-03 | HP Inc. announced that it will host a conference call and webcast to review its fourth fiscal quarter results ended October 31, 2026, on Tuesday, November 24, 2026, at 5:00 p.m. ET. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTTRHFzEEVKbztwSjRjF92XZrVcF0tg2U_W2E7juin7Us-34vyFQsgz3EF4Sb052pUjMb_UUUmiIoKyWVTIXez5eALnsaL08N41uXspbU1vVNWDi0og0im25J6ah7lnAbkgkeooz08DYoj45vAaIh36nk2xcjBnyTauWQYuapknR-DDMH3QH6fY0NQel9CUZ4_iDqXoySobQgKfs0Ggs70Sa8Tax51BHxHc6PREYe4zSrxIX0LeZAYzdLd-_YO_VWKVRIKnhvp4ZMW2NAgl1c-MYy_Vg1kLjSD0vGS59VtKqR52g1NdtszPC5O41ItpF5am6cXLQ==\n- 2026-11-04 | HP Inc. announced that its Board of Directors appointed Emma Walmsley as Chief Executive Officer effective January 4, 2027, succeeding Interim CEO Bruce Broussard. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-ws5nGxmkDU3xt3PnGly3PXlYNhnxWh1bLuJmkdsvPJWZJHd9ARbVq3bddQtTbeCRQgllO4akR8Yz-SHxaQinUA78OEu1EZPGPhrzma35ZrEGp1Oa2Chwu1zEbsQoQCTCEPrRt7SRV2AMP6e58kEbmO0efINdpm8xcBoGF8QzTBmkcIYMOn7-EhxhNcOWu5nVas_OW5orcvJF3t7jkK8HJZC1-_PhY70fkc7u28q4P9nZ7O3jbNpa\n- 2026-11-20 | Zacks Equity Research reported that the Zacks Consensus Estimate for HP Inc.'s Q4 fiscal 2026 earnings is $0.74 per share on projected revenue of $15.47 billion. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELzYvvOszL4Xxk8MQgwEzTu16XjWWcaJNSOZbOwvbGap_IPzU_RiinF36u00QkYvWGzmHxUOrnlxspNn1xwfShgdyIotlq_orAO7bUXm9CAbmxoQSFUISV7MpHF9u-N5sgdGFeRnC8HYdh8s7I67oMV_knvYXcBvsC6z6SEK4_FJhd5lN4cFRmwU9kebozBmiFVE3Vp28aN_8kInaBDB5JHVV12mp1Yrb0T5cVk4-6oq0ZyzUq6Ca-F_t49UzK55xgC7KmjwrVcUWqvJg8v0etZiJoaLc=\n- 2026-11-21 | MarketBeat reported that HP beat consensus non-GAAP EPS estimates in Q1 2026 ($0.81 vs. $0.77), Q2 2026 ($0.86 vs. $0.72), and Q3 2026 ($0.83 vs. $0.664), and listed the Q4 2026 consensus EPS estimate at $0.75. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDaQcm2iYSmRlwPG1Me7Wv071x1vHjaBAJKyb9eN2xwpXlObwTHJ4qUc6CizA9WFPW2lQtP4OH-HbtZCIPbPEleH3t5ElbBReAZ01_6Me9S11RK0P3F-7pWWiIomnRkY3I4XB_eTfviM4=\n\nCOUNTER\nThe $0.75 threshold sits one cent above both the midpoint of HP's own Q4 non-GAAP EPS guidance ($0.69–$0.79) and the Zacks Consensus Estimate of $0.74. Because management explicitly warned in August that rising memory and storage component costs would cause Personal Systems operating margins to trough in the fourth quarter, even an on-target performance at the guidance midpoint will result in $0.74 and resolve the claim as NO. Furthermore, if any portion of the estimated $0.08 per share tariff refund benefit baked into Q4 guidance was delayed beyond October 31, non-GAAP EPS could fall into the lower half of the guidance range.",
+   "facts": [
+    {
+     "date": "2026-08-26",
+     "fact": "HP Inc. reported Q3 FY26 non-GAAP diluted net EPS of $0.83 (including an $0.11 favorable impact from tariff refunds) on net revenue of $15.7 billion.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXPd3L5YEkRUdCy5Axt8-xvqcSfdJf2ZLkuIPNAZp_Pf2PWqdjv4m05FSGa5xyzgJYtGuU315D0c-qwTQLdHhWheSEpEJOWQCbniO-WZb-T0qh41WBnIGzv6qO0GCu88ZH4acWuQmIpFgkvEl3MMwxe_ijScB1532sDvIAiJ5kzc5Gp-kp_VMZAtJb8yDUgFqGMmEpkT1qcbDN7blTlEtvf9_b7-FstpXLHb4__xM="
+    },
+    {
+     "date": "2026-08-26",
+     "fact": "In its Q3 FY26 earnings presentation and filing, HP guided Q4 FY26 non-GAAP diluted net EPS to $0.69–$0.79 (and full-year FY26 non-GAAP diluted net EPS to $3.19–$3.29), inclusive of an estimated $0.08 favorable impact in Q4 from tariff refunds.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_JQda5hWNvLDNLCTSewJ2fOLF5opwerARg5cbHkucz1rvhJFkW2ND78m3KmSiP4dRy8BSVlds-oHdc3XXkyurB0zCMHftFsOpdL_OBkRzY2LLIPrt931lmVTiPjqeAi3gUlonrmFNkSHKMxRczc_Ai_rnh7GSwX6UUHtuGO5JyIM44tMzM68QoIb33VFoHqgFa_U="
+    },
+    {
+     "date": "2026-08-26",
+     "fact": "During its Q3 FY26 earnings call, HP management stated that memory and storage costs compressed gross margins and guided Q4 Personal Systems operating margins to trough below Q3's 4.6% level.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtQaiohuJ1JtQT6RLVFug5y-QMfhzLLuzdGWL3nZqMryZDCMPBa52NvQEChElmgWuImDfCcLQKz7P0ygViKZU2nZ2w8avSo_IjHoGMt8KgaN_AEMYVm8ysZdX6l1CLyb6x54kSwg=="
+    },
+    {
+     "date": "2026-11-03",
+     "fact": "HP Inc. announced that it will host a conference call and webcast to review its fourth fiscal quarter results ended October 31, 2026, on Tuesday, November 24, 2026, at 5:00 p.m. ET.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTTRHFzEEVKbztwSjRjF92XZrVcF0tg2U_W2E7juin7Us-34vyFQsgz3EF4Sb052pUjMb_UUUmiIoKyWVTIXez5eALnsaL08N41uXspbU1vVNWDi0og0im25J6ah7lnAbkgkeooz08DYoj45vAaIh36nk2xcjBnyTauWQYuapknR-DDMH3QH6fY0NQel9CUZ4_iDqXoySobQgKfs0Ggs70Sa8Tax51BHxHc6PREYe4zSrxIX0LeZAYzdLd-_YO_VWKVRIKnhvp4ZMW2NAgl1c-MYy_Vg1kLjSD0vGS59VtKqR52g1NdtszPC5O41ItpF5am6cXLQ=="
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "HP Inc. announced that its Board of Directors appointed Emma Walmsley as Chief Executive Officer effective January 4, 2027, succeeding Interim CEO Bruce Broussard.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-ws5nGxmkDU3xt3PnGly3PXlYNhnxWh1bLuJmkdsvPJWZJHd9ARbVq3bddQtTbeCRQgllO4akR8Yz-SHxaQinUA78OEu1EZPGPhrzma35ZrEGp1Oa2Chwu1zEbsQoQCTCEPrRt7SRV2AMP6e58kEbmO0efINdpm8xcBoGF8QzTBmkcIYMOn7-EhxhNcOWu5nVas_OW5orcvJF3t7jkK8HJZC1-_PhY70fkc7u28q4P9nZ7O3jbNpa"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Zacks Equity Research reported that the Zacks Consensus Estimate for HP Inc.'s Q4 fiscal 2026 earnings is $0.74 per share on projected revenue of $15.47 billion.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELzYvvOszL4Xxk8MQgwEzTu16XjWWcaJNSOZbOwvbGap_IPzU_RiinF36u00QkYvWGzmHxUOrnlxspNn1xwfShgdyIotlq_orAO7bUXm9CAbmxoQSFUISV7MpHF9u-N5sgdGFeRnC8HYdh8s7I67oMV_knvYXcBvsC6z6SEK4_FJhd5lN4cFRmwU9kebozBmiFVE3Vp28aN_8kInaBDB5JHVV12mp1Yrb0T5cVk4-6oq0ZyzUq6Ca-F_t49UzK55xgC7KmjwrVcUWqvJg8v0etZiJoaLc="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "MarketBeat reported that HP beat consensus non-GAAP EPS estimates in Q1 2026 ($0.81 vs. $0.77), Q2 2026 ($0.86 vs. $0.72), and Q3 2026 ($0.83 vs. $0.664), and listed the Q4 2026 consensus EPS estimate at $0.75.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDaQcm2iYSmRlwPG1Me7Wv071x1vHjaBAJKyb9eN2xwpXlObwTHJ4qUc6CizA9WFPW2lQtP4OH-HbtZCIPbPEleH3t5ElbBReAZ01_6Me9S11RK0P3F-7pWWiIomnRkY3I4XB_eTfviM4="
+    }
+   ],
+   "counter": "The $0.75 threshold sits one cent above both the midpoint of HP's own Q4 non-GAAP EPS guidance ($0.69–$0.79) and the Zacks Consensus Estimate of $0.74. Because management explicitly warned in August that rising memory and storage component costs would cause Personal Systems operating margins to trough in the fourth quarter, even an on-target performance at the guidance midpoint will result in $0.74 and resolve the claim as NO. Furthermore, if any portion of the estimated $0.08 per share tariff refund benefit baked into Q4 guidance was delayed beyond October 31, non-GAAP EPS could fall into the lower half of the guidance range."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:45:03Z",
+   "p": 0.46,
+   "searches": 13,
+   "sources": [
+    "https://www.marketbeat.com/instant-alerts/upcoming-hp-hpq-projected-to-post-earnings-on-tuesday-2026-11-17/",
+    "https://en.bulios.com/ticker/HPQ/earnings",
+    "https://www.tradingview.com/news/tradingview:2627939d5b773:0-hpq-q4-26-earnings-revenue-estimate-is-15-43b-usd/",
+    "https://www.zacks.com/stock/news/3033199/hp-q4-earnings-beat-estimates-on-higher-us-rig-activity",
+    "https://www.nextearningsdate.com/hpq.html",
+    "https://seekingalpha.com/article/4970182-helmerich-and-payne-inc-2026-q4-results-earnings-call-presentation",
+    "https://in.investing.com/news/stock-market-news/earnings-call-transcript-hp-inc-beats-q3-2026-estimates-shares-fall-after-hours-93CH-5573003",
+    "https://tickeron.com/blogs/hp-inc-hp-fiscal-q4-2026-earnings-what-investors-should-watch-40641/",
+    "https://seekingalpha.com/news/4674408-helmerich-and-payne-non-gaap-eps-of-0_36-beats-by-0_13-revenue-of-1_1b-beats-by-30m?feed_item_type=news",
+    "https://www.alphaquery.com/stock/HPQ/earnings-history",
+    "https://www.fool.com/earnings/call-transcripts/2026/11/19/hp-hp-q4-2026-earnings-call-transcript/",
+    "https://tradytics.com/research/HP/earnings",
+    "https://www.zacks.com/stock/news/3033168/hpq-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock?cid=CS-TRADINGVIEW-FT-analyst_blog|earnings_preview-3033168",
+    "https://www.quantisnow.com/insight/hp-inc-to-announce-fourth-quarter-fiscal-2026-earnings-on-6769761",
+    "https://www.hpinc.com/hp-inc-announces-fiscal-fourth-quarter-and-fiscal-2026-results",
+    "https://www.tipranks.com/news/pre-earnings/hpq-earnings-this-week-how-will-it-perform-pre-earnings-news",
+    "https://www.tipranks.com/news/the-fly/helmerich-payne-reports-q4-eps-36c-excluding-items-consensus-23c-thefly-news",
+    "https://www.zacks.com/stock/quote/HPQ/detailed-earning-estimates",
+    "https://www.zacks.com/stock/news/3031157/analysts-estimate-hp-hpq-to-report-a-decline-in-earnings-what-to-look-out-for",
+    "https://www.tipranks.com/news/hewlett-packard-earnings-preview-what-wall-street-and-options-traders-expect-from-hpe-stock",
+    "https://seekingalpha.com/article/4970587-hp-inc-ai-pcs-are-driving-growth-but-margins-tell-a-different-story-downgrade",
+    "https://newsfilter.io/earnings/hp-inc-fiscal-2026-third-quarter-earnings-summary-a1e78deb4a148cc950ef0787cca24b18",
+    "https://www.benzinga.com/quote/HPQ/earnings-forecasts",
+    "https://investingnews.com/hp-inc-to-announce-fourth-quarter-fiscal-2026-earnings-on-november-24-2026-and-to-attend-upcoming-investor-conferences/",
+    "https://seekingalpha.com/news/4597631-hp-non-gaap-eps-of-0_86-beats-by-0_14-revenue-of-14_41b-beats-by-340m"
+   ],
+   "reason": "HP Inc. has beaten consensus non-GAAP EPS in each of the last four quarters (average surprise roughly 9%), and hardware peers with intact guidance and no pre-announcement more often land at or above the midpoint than below it. That base rate for clearing a threshold sitting at or one cent above a midpoint/consensus cluster is therefore modestly above one-half before case-specific information.\n\nThe 3 November scheduling release locks the conference call for 17:00 ET on 24 November, so the press release itself is virtually certain to appear after the US close that day. August guidance set the non-GAAP range at $0.69–$0.79 (midpoint $0.74, including an estimated $0.08 tariff benefit), placing $0.75 only a penny above the company’s own center. By 17–20 November the Zacks consensus had been revised down a penny to $0.74 (analyst range only $0.72–$0.75) and carried a negative Earnings ESP; contemporaneous previews flagged memory-cost pressure on Personal Systems margins and described the quarter as “in line.” Those items pull the probability of a $0.75-or-better print down from the raw beat-rate base. Offsetting them only partially, a 22 November aggregator still showed a $0.75 street number and the firm’s recent execution (including tariff items) has occasionally exceeded the top of guidance.\n\nNEW FACTS\n- 2026-11-03 | HP Inc. stated it will review fourth-quarter and full-year results ended 31 October 2026 on a webcast beginning at 5:00 p.m. ET on 24 November 2026. | https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx\n- 2026-08-26 | HP estimated fiscal-Q4 non-GAAP diluted net EPS of $0.69 to $0.79, including an $0.08 favorable impact from estimated tariff refunds. | https://www.tipranks.com/news/the-fly/hp-inc-sees-q4-adjusted-eps-69c-79c-consensus-67c-thefly-news\n- 2026-11-17 | Zacks listed a current-quarter consensus EPS of $0.74 (high estimate $0.75, low estimate $0.72) and an Earnings ESP of –2.70%. | https://www.zacks.com/stock/quote/HPQ/detailed-earning-estimates\n- 2026-11-20 | Zacks reported that its Q4 EPS consensus had been revised downward by one penny to $0.74 and that HP had beaten the consensus in each of the prior four quarters. | https://www.zacks.com/stock/news/3033168/hpq-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock\n- 2026-11-18 | UBS expected HP’s fiscal Q4 results to come in line, with higher PC pricing offsetting volume weakness while memory costs clouded the subsequent outlook. | https://finance.yahoo.com/markets/stocks/articles/hp-apos-q4-seen-line-201812395.html\n- 2026-11-22 | TipRanks stated that Wall Street analysts expected HP to post earnings of $0.75 per share. | https://www.tipranks.com/news/pre-earnings/hpq-earnings-this-week-how-will-it-perform-pre-earnings-news\n\nCOUNTER\nMemory and storage cost inflation, already visible in downward estimate revisions and a negative earnings-surprise signal, can compress Personal Systems margins enough to leave non-GAAP EPS at $0.74 or lower even if revenue is supported by pricing. The tariff-refund benefit embedded in guidance could also arrive lighter than the $0.08 assumption, keeping the print inside the lower half of the $0.69–$0.79 range.",
+   "facts": [
+    {
+     "date": "2026-11-03",
+     "fact": "HP Inc. stated it will review fourth-quarter and full-year results ended 31 October 2026 on a webcast beginning at 5:00 p.m. ET on 24 November 2026.",
+     "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx"
+    },
+    {
+     "date": "2026-08-26",
+     "fact": "HP estimated fiscal-Q4 non-GAAP diluted net EPS of $0.69 to $0.79, including an $0.08 favorable impact from estimated tariff refunds.",
+     "url": "https://www.tipranks.com/news/the-fly/hp-inc-sees-q4-adjusted-eps-69c-79c-consensus-67c-thefly-news"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "Zacks listed a current-quarter consensus EPS of $0.74 (high estimate $0.75, low estimate $0.72) and an Earnings ESP of –2.70%.",
+     "url": "https://www.zacks.com/stock/quote/HPQ/detailed-earning-estimates"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Zacks reported that its Q4 EPS consensus had been revised downward by one penny to $0.74 and that HP had beaten the consensus in each of the prior four quarters.",
+     "url": "https://www.zacks.com/stock/news/3033168/hpq-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "UBS expected HP’s fiscal Q4 results to come in line, with higher PC pricing offsetting volume weakness while memory costs clouded the subsequent outlook.",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/hp-apos-q4-seen-line-201812395.html"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "TipRanks stated that Wall Street analysts expected HP to post earnings of $0.75 per share.",
+     "url": "https://www.tipranks.com/news/pre-earnings/hpq-earnings-this-week-how-will-it-perform-pre-earnings-news"
+    }
+   ],
+   "counter": "Memory and storage cost inflation, already visible in downward estimate revisions and a negative earnings-surprise signal, can compress Personal Systems margins enough to leave non-GAAP EPS at $0.74 or lower even if revenue is supported by pricing. The tariff-refund benefit embedded in guidance could also arrive lighter than the $0.08 assumption, keeping the print inside the lower half of the $0.69–$0.79 range."
+  }
+ ]
+}

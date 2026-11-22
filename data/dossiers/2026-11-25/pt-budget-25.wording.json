@@ -1,0 +1,32 @@
+{
+ "claim": "Portugal's parliament approves the 2027 state budget in the final overall vote on Tuesday 24 November.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:45:22Z",
+   "ambiguous": true,
+   "scenario": "If parliament moves the final overall vote to Monday 23 November and approves the bill, a reader applying the explicit criterion would resolve YES, while a reader treating the headline's Tuesday date as a requirement would resolve NO.",
+   "yes_requires": "The Assembleia da República must hold the final overall vote (votação final global) on the 2027 State Budget bill between 20:00 on Sunday 22 November and 23:59 on Tuesday 24 November 2026, Lisbon time, and record more votes in favour than against. A report published after the deadline counts if the vote took place within the window.",
+   "decided_by": "The Assembleia da República's vote, as documented by parlamento.pt or reported by Lusa, RTP, Público, Expresso, ECO or Observador."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:45:30Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Assembleia da República must hold and pass (more votes in favour than against) the final overall vote (votação final global) on the 2027 State Budget bill between 20:00 on 22 November 2026 and 23:59 on 24 November 2026 (Europe/Lisbon).",
+   "decided_by": "parlamento.pt or reports by Lusa, RTP, Público, Expresso, ECO, or Observador."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:49:09Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 20:00 on 22 November 2026 and 23:59 on 24 November 2026 (Europe/Lisbon), the Assembleia da República holds the votação final global on the 2027 State Budget bill and more votes are cast in favour than against, as shown by parlamento.pt or reported by Lusa, RTP, Público, Expresso, ECO, or Observador. A report published after 23:59 still counts if it shows the vote was held inside that windo",
+   "decided_by": "parlamento.pt or reports from Lusa, RTP, Público, Expresso, ECO, or Observador"
+  }
+ ]
+}

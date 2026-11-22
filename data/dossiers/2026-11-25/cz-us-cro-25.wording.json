@@ -1,0 +1,32 @@
+{
+ "claim": "On Tuesday 24 November 2026 the Constitutional Court upholds Český rozhlas's constitutional complaint in its VAT dispute (III. ÚS 2839/25), quashing at least one of the contested rulings of the Supreme Administrative Court or the Prague Municipal Court.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:45:53Z",
+   "ambiguous": true,
+   "scenario": "If the Court annuls only a severable part of one named judgment, such as its costs ruling, one reader could count that as an annulment while another could require the Court to quash at least one named judgment in full. The criterion expressly allows a partial grant of the complaint but does not say whether partial annulment of a judgment counts.",
+   "yes_requires": "On 24 November 2026, within the stated Europe/Prague window, the Czech Constitutional Court must pronounce a judgment (nález) in III. ÚS 2839/25 that grants Český rozhlas’s complaint at least in part and annuls Supreme Administrative Court judgment 5 Afs 151/2024-56, Prague Municipal Court judgment 17 Af 3/2023-117, or both. A later report can confirm that the pronouncement occurred within the win",
+   "decided_by": "The Constitutional Court’s pronouncement date and operative ruling, as documented by the Court’s press release, NALUS, ČTK, or another major Czech outlet."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:46:01Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "On 24 November 2026 (Europe/Prague), the Czech Constitutional Court must pronounce a judgment (nález) in case III. ÚS 2839/25 that grants Český rozhlas's complaint at least in part and annuls the Supreme Administrative Court judgment 5 Afs 151/2024-56 and/or the Prague Municipal Court judgment 17 Af 3/2023-117.",
+   "decided_by": "The Czech Constitutional Court, verified by the Court's press release, the NALUS database, or reporting by ČTK or another major Czech media outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:47:19Z",
+   "ambiguous": true,
+   "scenario": "All listed sources agree the 24 Nov nález grants the complaint in part and annuls only one výrok of one cited judgment, leaving the rest in force. One reader treats that partial quashing as annulling the cited judgment; the other does not, and the stated NO cases (rejection, dismissal, a violation with no annulment, or no pronouncement that day) do not settle it.",
+   "yes_requires": "Between 00:00 and 23:59 on 24 Nov 2026 (Europe/Prague), the Constitutional Court pronounces in III. ÚS 2839/25 a nález that grants the complaint at least in part and annuls Supreme Administrative Court judgment 5 Afs 151/2024-56 of 31 Jul 2025 and/or Prague Municipal Court judgment 17 Af 3/2023-117 of 22 Apr 2024.",
+   "decided_by": "The Constitutional Court's pronouncement, as shown by its press release, the NALUS database, or reporting by ČTK or another major Czech outlet."
+  }
+ ]
+}

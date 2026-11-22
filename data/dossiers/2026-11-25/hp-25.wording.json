@@ -1,0 +1,32 @@
+{
+ "claim": "HP Inc. reports non-GAAP diluted net EPS of at least $0.75 for its fiscal fourth quarter of 2026 (ended 31 October) in results published after the US close on Tuesday 24 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:46:17Z",
+   "ambiguous": true,
+   "scenario": "If HP publishes the release before the US market closes on November 24 and reports qualifying EPS, a reader applying the stated criterion would resolve YES, while a reader treating the claim's 'after the US close' wording as an additional requirement would resolve NO.",
+   "yes_requires": "Under the stated criterion, HP Inc. must publish its fiscal Q4 2026 earnings press release on November 24, 2026, Eastern time, within the event window. The release must report non-GAAP diluted net earnings per share of at least $0.75 for the quarter ended October 31, 2026.",
+   "decided_by": "HP Inc.'s official earnings press release and its publication time in US Eastern time. GAAP EPS and third-party EPS figures do not count."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:46:23Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "HP Inc. must publish its fiscal Q4 2026 (ended 31 Oct 2026) earnings press release on 24 Nov 2026 (US Eastern time), and that press release must state a non-GAAP diluted net EPS figure of $0.75 or more.",
+   "decided_by": "HP Inc.'s fiscal Q4 2026 earnings press release"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:49:32Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "HP Inc.'s fiscal Q4 2026 earnings press release is published on Tuesday 24 November 2026 (US Eastern time) and states non-GAAP diluted net earnings per share of $0.75 or more for the quarter ended 31 October 2026.",
+   "decided_by": "The non-GAAP diluted net EPS figure stated in HP Inc.'s own fiscal Q4 2026 earnings press release; GAAP EPS, later consensus, and third-party actual EPS do not count."
+  }
+ ]
+}

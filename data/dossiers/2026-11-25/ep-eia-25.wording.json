@@ -1,0 +1,32 @@
+{
+ "claim": "On Tuesday 24 November 2026 the European Parliament adopts its first-reading position on the regulation speeding up environmental assessments (300-day cap) with at least 400 votes in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-22T20:46:06Z",
+   "ambiguous": true,
+   "scenario": "If the plenary adopts the position on Monday 23 November with at least 400 votes in favour, the explicit criterion gives YES because Monday is within the event window. A reader who treats the headline's 'On Tuesday 24 November' as an additional requirement would give NO.",
+   "yes_requires": "Under the stated criterion, the European Parliament plenary must adopt its first-reading position on procedure 2025/0391(COD), report A10-0290/2026, within the event window, with at least 400 votes in favour on the Commission proposal as amended, or on the legislative resolution if that is the only final vote. Amendment votes do not count.",
+   "decided_by": "The European Parliament plenary's adoption and final vote tally, as recorded in Parliament's press release, its official minutes or roll-call results, or the Legislative Observatory. The vote must occ"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-22T20:46:13Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 20:00 on 22 November 2026 and 23:59 on 24 November 2026 (Europe/Paris), the European Parliament plenary must adopt its first-reading position on procedure 2025/0391(COD) (report A10-0290/2026), with the decisive final vote (on the Commission proposal as amended, or on the legislative resolution if that is the only final vote) recording at least 400 votes in favour.",
+   "decided_by": "Official European Parliament records, specifically Parliament's press release, plenary minutes, or roll-call vote results on europarl.europa.eu, or the Legislative Observatory."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-22T20:47:18Z",
+   "ambiguous": true,
+   "scenario": "Those sources disagree on the in-favour total for the same vote, or both a vote on the amended proposal and a legislative-resolution vote are recorded with different totals and the documents do not clearly identify which ballot is the decisive final vote.",
+   "yes_requires": "Between 20:00 on 22 Nov 2026 and 23:59 on 24 Nov 2026 (Europe/Paris), the plenary adopts its position on procedure 2025/0391(COD) (report A10-0290/2026), and the decisive vote—the vote on the Commission proposal as amended, or the legislative resolution only if that is the sole final vote—records at least 400 votes in favour. Amendment votes do not count; later publication of a vote held inside th",
+   "decided_by": "The European Parliament press release, the minutes or roll-call results on europarl.europa.eu, or the Legislative Observatory."
+  }
+ ]
+}
