@@ -545,6 +545,24 @@
             "open_because": {
               "why": "Routine nightly attack; its size varies from under 100 to over 400 drones and is not announced in advance.",
               "source": "https://www.ukrinform.net/rubric-ato/4187288-air-defenses-down-161-of-186-russian-drones-launched-against-ukraine-since-evening.html"
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 12,
+              "facts_confirmed": 3,
+              "added": [
+                "https://www.ukrinform.net/rubric-ato/4185574-ukraines-air-defense-neutralizes-three-russian-missiles-three-banderols-205-drones.html",
+                "https://www.ukrinform.net/rubric-ato/4186737-ukraines-air-defenses-down-82-missiles-380-russian-drones-overnight.html",
+                "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-21-2026"
+              ],
+              "material": 0,
+              "reforecast": false,
+              "before": 0.709
             }
           }
         }
@@ -867,6 +885,23 @@
                   "trace": "data/dossiers/2026-11-25/gulf-ukmto-25.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 14,
+              "facts_confirmed": 2,
+              "added": [
+                "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
+                "https://www.marineinsight.com/strait-hormuz-shipping-65-below-tanker-attacks/"
+              ],
+              "material": 0,
+              "reforecast": false,
+              "before": 0.66
             }
           }
         }
@@ -1232,7 +1267,7 @@
           },
           "dossier": "data/dossiers/2026-11-25/eu-dbp-25.md",
           "signals": "data/dossiers/2026-11-25/eu-dbp-25.signals.md",
-          "probability": 0.69,
+          "probability": 0.85,
           "forecast": {
             "baseline": {
               "status_quo": "yes",
@@ -1260,108 +1295,149 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:06:39+01:00",
+                "at_blind": "2026-11-22T21:56:53+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.64,
-                "reason_blind": "No class; France complied 1/1 under the new rules, EDP countries 3/4 compliant in Nov 2025, all DBPs 12/17. Cumulative net expenditure (5.4% vs 5.8% cap through 2026) leaves room, and Dombrovskis calls the draft 'ambitious', but the 2026 annual overrun and the Assembly rejecting the PLF raise 'at risk' odds. Slip class rate 0.065, trimmed to 0.05 because the EP debate fixes the date.",
-                "p": 0.64,
-                "p_held": 0.95,
-                "p_if_held": 0.675,
-                "at": "2026-11-22T19:10:03+01:00",
+                "p_blind": 0.77,
+                "reason_blind": "No class in reference-classes.json. Own count: France's DBP was rated compliant 1 of 1 (Nov 2025), EDP countries 3 of 4, all euro area 12 of 17. Raised for HCFP figures: 2027 PLF net spending +0.7% (cap 1.2), 6.6% cumulative (cap 7.1). The Commission forecast includes the draft's measures and blames the deficit miss on growth and interest. Lowered for the 2026 overrun, the PLF rejected by the Assembly and wording risk. Slip 0.065.",
+                "p": 0.77,
+                "p_held": 0.94,
+                "p_if_held": 0.82,
+                "at": "2026-11-22T22:00:00+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "France compliant 1/1 last year, EDP countries 3/4; overrun and PLF rejection add risk. Signals found no relevant market, so unchanged."
+                "reason": "The signals file has no market, odds or model that matches this claim, so my figure is unchanged. It rests on France's DBP being rated compliant in Nov 2025 (1 of 1), EDP countries 3 of 4 and the euro area 12 of 17. HCFP puts 2027 PLF net spending at +0.7% against a 1.2% cap, and 6.6% cumulative against 7.1%. The Commission's forecast includes the draft's measures. Lowered for the 2026 overrun, the PLF rejected by the Assembly and wording risk. Slip 0.065.",
+                "rounds": [
+                  {
+                    "p": 0.64,
+                    "at": "2026-11-22T19:10:03+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:08:06+01:00",
+                "at_blind": "2026-11-22T21:57:10+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.5,
-                "reason_blind": "France's 2027 draft targets 5.0% deficit; Dombrovskis called it 'ambitious' (AFP, Oct) and urges adoption; no direct signal on the label. Uncertain whether net-expenditure path is met; package scheduled 24 Nov. After dossier: Commission found France's 2026 DBP 'complies' despite similar parliamentary uncertainty, cumulative expenditure 5.4% vs 5.8% cap gives headroom; risk from 2026 annual overrun and ~6.5% slip -> 0.62.",
-                "p": 0.62,
-                "at": "2026-11-22T19:10:22+01:00",
+                "p_blind": 0.7,
+                "reason_blind": "Dombrovskis told Euronews on 17 Nov that France's 'ambitious' 2027 draft budget would bring it into line with its EU commitments and should be adopted. The Commission judged France's 2026 plan compliant in Nov 2025. The package is due next week. Risks: the deficit is forecast at 5.4%, the budget is still in parliament, and slip risk is about 6.5%.",
+                "p": 0.8,
+                "at": "2026-11-22T22:00:18+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "reason": "Last year France's draft budget plan was found compliant under similar parliamentary uncertainty, and cumulative spending sits under its limit; risks are the 2026 annual overrun and a ~6.5% postponement chance. Signals: no matching market, unchanged.",
+                "reason": "The signals change nothing: no market, odds or analyst figure matches the claim. The estimate still rests on these facts. HCFP figures for the 2027 bill: net expenditure growth 0.7% against the 1.2% cap, and 6.6% cumulative against 7.1%. The deficit miss comes from growth and interest, which are outside the indicator. The 2026 plan was rated compliant despite open parliamentary debate. Slip risk is about 6.5%. Risks: the Assembly rejected the bill, and 2026 is slightly over the cumulative cap.",
                 "rounds": [
                   {
                     "p": 0.62,
                     "at": "2026-11-22T19:08:06+01:00",
                     "reason": "after reading the dossier, before the signals"
+                  },
+                  {
+                    "p": 0.62,
+                    "at": "2026-11-22T19:10:22+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  },
+                  {
+                    "p": 0.8,
+                    "at": "2026-11-22T21:57:13+01:00",
+                    "reason": "evening check: after reading the dossier with the added facts, before the signals"
                   }
                 ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-22T19:06:45+01:00",
+                "at_blind": "2026-11-22T21:57:01+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.66,
-                "reason_blind": "Base: France 1 of 1 'complies' under the new rules (Nov 2025, with the budget also stuck in parliament); 12 of 17 euro-area plans and 3 of 4 EDP countries compliant then. June forecast had cumulative net expenditure 5.4% vs 5.8% allowed for 2026, leaving room toward 7.1% in 2027, and Dombrovskis calls the draft ambitious. Case for NO: 2026 annual overrun (1.4 vs 1.2) plus heatwave costs and a 5.5% deficit in the autumn forecast could tip the cumulative check to 'at risk', the Assembly rejected the bill, a new intermediate label would count NO, and the adoption slip rate is 0.065 (0/5, prior 0.12), slightly reduced because the EP debate fixes the date.",
-                "p": 0.66,
-                "p_held": 0.95,
-                "p_if_held": 0.7,
-                "at": "2026-11-22T19:10:42+01:00",
+                "p_blind": 0.74,
+                "reason_blind": "Case for NO: slip rate 0.065 (EP debate fixed Tue, so ~0.04); France's 2026 net spending 1.4% vs 1.2% cap and cumulative 5.9 vs 5.8; Commission sees 2027 deficit 5.4% not 5%, may doubt revenue yields; Assembly rejected PLF 458-0. But the check is on 2027: PLF gives 0.7% vs 1.2% and cumulative 6.6 vs 7.1, forecast embeds the measures, Commission method lowers spending, and 2025 opinion said complies in the same parliamentary mess.",
+                "p": 0.74,
+                "p_held": 0.96,
+                "p_if_held": 0.77,
+                "at": "2026-11-22T22:00:09+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "Signals found nothing matching (only a market on France passing a budget by year end), so unchanged: last year's 'complies' and cumulative room against the 2026 overrun, the rejected finance bill, a possible new label and adoption slip."
+                "reason": "Signals: no matching market, odds or analyst figure, so nothing changed. Held: slip rate 0.065, lowered to 0.04 as the EP plenary debate fixes Tuesday. If held: PLF 2027 net spending 0.7% vs 1.2% cap, cumulative 6.6 vs 7.1, forecast embeds the measures, 2025 opinion said complies amid the same parliamentary deadlock; against, 2026 overrun (1.4%, cumulative 5.9 vs 5.8), 5.4% deficit forecast, PLF rejected 458-0.",
+                "rounds": [
+                  {
+                    "p": 0.66,
+                    "at": "2026-11-22T19:10:42+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "p": 0.7,
-                "p_held": 0.95,
-                "p_if_held": 0.74,
-                "at": "2026-11-22T19:06:20+01:00",
+                "p": 0.78,
+                "at": "2026-11-22T21:56:56+01:00",
                 "inputs": [
                   "signals",
                   "dossier",
                   "reference-data"
                 ],
-                "reason": "No market (signals). Model: last year 'complies' with the PLF also unfinished, cumulative net-expenditure headroom (5.4% vs 5.8% to 2026; 7.1% cap for 2027) and €54bn savings → ~0.74 if adopted; p_held 0.95 (EP debate scheduled, class slip 0.065 shaded down)."
+                "reason": "No matching market or odds. Model: France's 2027 PLF has 0.7% net expenditure growth (cap 1.2%) and 6.6% cumulative (cap 7.1%), per HCFP. I assumed the Commission's own margin is 0.4pp with sd 0.35, which gives 0.87. Adjustments: -0.06 for the 0.065 chance the adoption slips; -0.03 because the Assembly rejected the PLF and 2026 runs slightly over. Last year the Commission said 'complies' under similar uncertainty.",
+                "anchor": "models.mjs leadabove 0.4 0.35 0 (Commission-assessed cumulative 2027 net-expenditure headroom vs Council cap) = 0.87",
+                "rounds": [
+                  {
+                    "p": 0.7,
+                    "at": "2026-11-22T19:06:20+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-22T19:08:00+01:00",
+                "at_blind": "2026-11-22T21:57:14+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.45,
-                "reason_blind": "Commission adoption of the autumn package slips at a ~6.5% rate (n=5); France's 2027 budget was rejected in Parliament (CNBC 5 Nov) and deficit risk is high, but under the EDP the Commission has often found France's plan broadly in line; I could not read the 2025 opinion text, so a near coin flip with a slight lean to a hedged (non-compliant) verdict.",
-                "p": 0.45,
-                "p_held": 0.94,
-                "p_if_held": 0.48,
-                "at": "2026-11-22T19:20:00+01:00",
+                "p_blind": 0.5,
+                "reason_blind": "EDP opinions test net expenditure growth, not the deficit; France's 2027 plan has ~EUR54bn savings and the Commission found France in line last year, but its forecast (deficit 5.4% vs 5.0% target) and an unadopted, politically fragile budget raise risk-of-non-compliance odds. Slip risk ~6.5%. Could not read last year's opinion text.",
+                "p": 0.68,
+                "at": "2026-11-22T22:02:59+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals"
+                  "signals",
+                  "union-of-facts"
                 ],
-                "reason": "No market or analyst view in the signals, so the blind estimate stands."
+                "reason": "The check is net expenditure on the plan year. HCFP shows 2027 growth of 0.7% against the 1.2% path, and cumulative 6.6% against 7.1%, inside the path. Last year France was found compliant, as was most of the euro area. Risks: the Commission's own method and forecast, 2026 slightly over, the rejected revenue part of the bill, and slip risk.",
+                "rounds": [
+                  {
+                    "p": 0.45,
+                    "at": "2026-11-22T19:20:00+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  },
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-22T22:00:23+01:00",
+                    "reason": "after the signals (no matching market), before the union of facts was given"
+                  }
+                ]
               }
             ],
             "missing": [],
-            "combined": 0.617,
+            "combined": 0.756,
             "combination": {
               "method": "calibrated",
               "weights": {
@@ -1377,13 +1453,13 @@
               },
               "version": "2026-11-22"
             },
-            "calibrated": 0.694,
+            "calibrated": 0.845,
             "decomposition": {
               "p_held": 0.95,
-              "p_if_held": 0.726,
+              "p_if_held": 0.895,
               "p_if_not_held": 0
             },
-            "spread": 0.25,
+            "spread": 0.12,
             "research": {
               "at": "2026-11-22T19:20:00+01:00",
               "question": "What will the Commission conclude on France's 2027 DBP — does France's planned 2027 net expenditure growth respect the 1.2% annual / 7.1% cumulative Council path?",
@@ -1396,14 +1472,17 @@
               "decisive": false,
               "reforecast": false
             },
-            "disagreement": null,
+            "disagreement": {
+              "cause": "inputs",
+              "note": "The outsider, working without the dossier, did not have the HCFP net-expenditure figures for 2027 or the wording of last year's opinion and stayed at 0.50 while the other four were at 0.74–0.80. It was given the union of facts (no figures of likelihood) and moved to 0.68; its earlier figure is in rounds. The other four already held every fact in the union through the dossier, so they were not asked again."
+            },
             "shadow": {
               "sequential": {
                 "model": "claude-opus-5-5",
-                "at": "2026-11-22T19:13:30+01:00",
+                "at": "2026-11-22T22:03:45+01:00",
                 "p_blind": 0.62,
                 "p": 0.62,
-                "steps": 8,
+                "steps": 9,
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-25/eu-dbp-25.belief.json"
               },
@@ -1475,6 +1554,25 @@
             "open_because": {
               "why": "France's 2026 net expenditure was forecast above its annual cap (1.4% vs 1.2%, June), its deficit targets are missed in the autumn forecast (5.5% in 2026, 5.4% in 2027 vs 5.0% planned), and the Assembly rejected the 2027 finance bill; yet the cumulative path was still within the limit and Dombrovskis has called the draft 'ambitious'.",
               "source": "https://www.touteleurope.eu/economie-et-social/budget-2027-l-union-europeenne-peut-elle-imposer-des-reformes-a-la-france/"
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 15,
+              "facts_confirmed": 2,
+              "added": [
+                "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/france/economic-forecast-france_en",
+                "https://www.assemblee-nationale.fr/dyn/17/scrutins/9759"
+              ],
+              "material": 1,
+              "reforecast": true,
+              "before": 0.694,
+              "after": 0.845,
+              "note": "Evening check 2026-11-22T22:05:51+01:00: 1 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.694 → 0.845."
             }
           }
         }
@@ -2240,7 +2338,7 @@
           },
           "dossier": "data/dossiers/2026-11-25/dell-25.md",
           "signals": "data/dossiers/2026-11-25/dell-25.signals.md",
-          "probability": 0.85,
+          "probability": 0.84,
           "forecast": {
             "baseline": {
               "status_quo": "yes",
@@ -2269,50 +2367,53 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:06:39+01:00",
+                "at_blind": "2026-11-22T21:56:50+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.73,
-                "reason_blind": "Class company-raises-guidance-midpoint own record 4/2 (~0.64 with prior); Dell raised the full-year revenue figure at 3 of 3 sourced in-year reports, and Q3 consensus 50.6bn already sits 1.6bn over its 49.0bn guide, so even an unchanged Q4 lifts the year above 192. +0.4 log-odds for that arithmetic, -0.15 for memory supply constraints and AI-demand caution amid the sell-off; slip 0.005.",
-                "p": 0.75,
-                "p_held": 0.995,
-                "p_if_held": 0.755,
-                "at": "2026-11-22T19:18:06+01:00",
+                "p_blind": 0.7,
+                "reason_blind": "Own class company-raises-guidance-midpoint 4/6; Dell raised FY guidance at 3 of 3 sourced in-year reports (Q3 FY26, Q1, Q2 FY27); blended prior ~0.72. Up: Q2 beat top of range by $2bn, FY consensus $194.3bn, a Q3 beat with Q4 held lifts midpoint. Down: memory shortages, repricing disputes/XTX suit, AI sell-off, Kiplinger Q3 consensus only $49.2bn vs $49.0bn guide. Slip risk 0.005.",
+                "p": 0.72,
+                "p_held": 0.99,
+                "p_if_held": 0.73,
+                "at": "2026-11-22T21:58:26+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "reason": "Analysts' FY27 revenue consensus of about 194.3bn already sits above Dell's 192bn midpoint, and the Q3 consensus is 1.6bn over the guide; with three straight raises, an unchanged Q4 would mechanically lift the year. Hold or cut is the main NO path, given memory constraints and the AI sell-off: +1 point.",
+                "reason": "Prior ~0.72 from own class company-raises-guidance-midpoint 4/6 and Dell raising FY guidance at 3 of 3 sourced in-year reports; Q2 beat its range by $2bn; FY consensus $194.3bn. Down: memory shortages, repricing disputes, AI sell-off. Signals: no matching market; thin Polymarket EPS-beat price 0.875 and ISG revenue strikes point to a Q3 beat, a small nudge up from 0.70. Slip risk 0.005.",
                 "rounds": [
                   {
                     "p": 0.74,
                     "at": "2026-11-22T19:10:03+01:00",
                     "reason": "round one after the signals, before the disagreement research added facts"
+                  },
+                  {
+                    "p": 0.75,
+                    "at": "2026-11-22T19:18:06+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
                   }
                 ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:08:06+01:00",
+                "at_blind": "2026-11-22T21:56:58+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.72,
-                "reason_blind": "Dell raised FY27 revenue guide at Q1 and Q2 (to 92bn, from 67bn), consensus Q3 revenue 0.63bn vs 9.0bn guide, 5bn AI backlog; a Q3 beat with unchanged Q4 mechanically lifts FY above 192. Risks: memory supply caps, holding guide, exact-192 midpoint = NO. After dossier: 3/3 sourced raises, but a 14% NVDA crash last session and -40% post-earnings drift may make management cautious -> 0.67.",
-                "p": 0.7,
-                "at": "2026-11-22T19:18:19+01:00",
+                "p_blind": 0.8,
+                "reason_blind": "Q2 release (1 Sep) raised FY27 revenue guide by $25bn to $192.0bn, the third straight raise. Q3 guidance is $49.0bn and the Earnings Whispers consensus is $50.63bn, so a beat would push the full year above $192bn if the implied Q4 holds. AI backlog is $95bn. Results are dated 24 Nov (slip rate 0.005). Risks are memory supply and the 25% fall in the shares.",
+                "p": 0.78,
+                "at": "2026-11-22T21:58:41+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "reason": "Analysts already expect about $194.3bn for the full year against the $192bn guide (midpoint exactly 192), and the Q3 consensus is $1.6bn above guidance, so a beat carried into the full year lifts the midpoint. Keeping the guide after the AI-hardware sell-off is the main NO path; 0.68 -> 0.70.",
+                "reason": "Dell raised its guide 3 times in a row and analysts' FY27 consensus is $194.3bn. Thin signal markets lean to a beat: EPS beat 0.875, and Q3 ISG revenue above $36.5bn at 0.52, which implies total revenue near $51bn against the $49bn guide and would make a raise easier. Against that are the ±$2bn range, Kiplinger's Q3 consensus of only $49.2bn, memory shortages, the XTX repricing lawsuit and the AI selloff. Up slightly from 0.75.",
                 "rounds": [
                   {
                     "p": 0.67,
@@ -2323,90 +2424,111 @@
                     "p": 0.68,
                     "at": "2026-11-22T19:10:22+01:00",
                     "reason": "round one after the signals, before the disagreement research added facts"
+                  },
+                  {
+                    "p": 0.7,
+                    "at": "2026-11-22T19:18:19+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  },
+                  {
+                    "p": 0.75,
+                    "at": "2026-11-22T21:57:06+01:00",
+                    "reason": "evening check: after reading the dossier with the added facts, before the signals"
                   }
                 ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-22T19:06:45+01:00",
+                "at_blind": "2026-11-22T21:56:59+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.65,
-                "reason_blind": "Base: Dell raised full-year revenue guidance at 3 of 3 sourced in-year reports; Q3 consensus 50.63bn is 1.6bn above the 49.0bn guide, which mechanically gives ~193.6bn if implied Q4 is kept. Case for NO: memory supply is the stated limit on shipments, the stock is down ~40% since the last report amid an AI sell-off, and management can keep 192 by pulling Q4 down or give a range centred on 192 (midpoint not above = NO); the 25bn raise in September may already have absorbed the backlog conversion. Honest estimate about two in three; slip company-event 0.005 (0/32).",
+                "p_blind": 0.66,
+                "reason_blind": "NO case: hold at $192.0bn fails (strict 'above'); Kiplinger consensus $49.2bn is barely over the $49.0bn guide; memory shortage caps shipments; AI sell-off, XTX repricing suit and new chip licence rules invite caution after $27bn and $25bn raises. YES case: 3 straight raises, Q2 beat range by $2bn, $95bn backlog, FY consensus $194.3bn, a Q3 beat with Q4 unchanged lifts the midpoint. Slip rate 0.005, date confirmed by Dell IR.",
                 "p": 0.68,
-                "p_held": 0.995,
-                "p_if_held": 0.685,
-                "at": "2026-11-22T19:18:30+01:00",
+                "p_held": 0.99,
+                "p_if_held": 0.69,
+                "at": "2026-11-22T21:58:33+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "reason": "Analysts' FY27 revenue consensus of about 194.3bn sits 2.3bn above Dell's 192bn midpoint, so a raise is the expected outcome and matches the mechanical 193.6bn from a Q3 at consensus: +2 points. The NO case is intact and named by previews as the bearish path: memory supply limits and a 47% share fall could make management hold 192 (or keep a range centred on it), which resolves NO.",
+                "reason": "Three straight raises, Q2 beat its range by $2bn, $95bn backlog, FY consensus $194.3bn; a Q3 beat with Q4 unchanged lifts the midpoint. Against: a hold at $192.0bn is NO, Kiplinger consensus $49.2bn sits near the $49.0bn guide, memory shortage, AI sell-off, XTX suit. Signals: no matching market; thin Polymarket prices an EPS beat above $6.71 at 0.875, mild support for a Q3 beat, so +0.02. Slip rate 0.005, date confirmed.",
                 "rounds": [
                   {
                     "p": 0.66,
                     "at": "2026-11-22T19:10:42+01:00",
                     "reason": "round one after the signals, before the disagreement research added facts"
+                  },
+                  {
+                    "p": 0.68,
+                    "at": "2026-11-22T19:18:30+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
                   }
                 ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "p": 0.76,
-                "at": "2026-11-22T19:18:41+01:00",
+                "p": 0.68,
+                "at": "2026-11-22T21:56:53+01:00",
                 "inputs": [
                   "signals",
                   "dossier",
-                  "reference-data",
-                  "union-of-facts"
+                  "reference-data"
                 ],
-                "reason": "New facts: the analysts' FY27 consensus of about $194.3bn is already $2.3bn above Dell's $192bn midpoint, and the FY EPS consensus is above guidance, so a Q3 beat flowing through implies a raise; I nudge from 0.74 to 0.76. Previews treating 'hold' as bearish, memory constraints and caution after the sell-off keep it well below the Polymarket EPS-beat price of 0.875.",
+                "reason": "No matching market. Anchor: release model, FY27 revenue consensus $194.3bn vs $192.0bn line, surprise SD $3-4bn, gives 0.72-0.78. Down for holding guidance at exactly $192bn, which counts NO: memory shortages, the XTX repricing lawsuit, the AI sell-off, and Kiplinger's Q3 consensus of $49.2bn being close to the $49.0bn guide. Up for three straight raises, a $2bn Q2 beat and a $95bn backlog. Date slip risk 0.005.",
+                "anchor": "models.mjs release 194.3 192.0 SD 3 -> 0.78; SD 4 -> 0.72",
                 "rounds": [
                   {
                     "p": 0.74,
                     "at": "2026-11-22T19:06:20+01:00",
                     "reason": "round one after the signals, before the disagreement research added facts"
+                  },
+                  {
+                    "p": 0.76,
+                    "at": "2026-11-22T19:18:41+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
                   }
                 ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-22T19:08:00+01:00",
+                "at_blind": "2026-11-22T21:56:57+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.9,
-                "reason_blind": "Dell raised FY27 revenue guide from $167B to $192B on 1 Sep (Q2 revenue $47B, +58%, AI backlog $95B); the threshold equals current guide so any raise at Q3 gives YES; repeated large raises in an AI server upswing; company-event slip ~0.5%; main risk is an unchanged guide or a stock-fall narrative (a trefis piece on a steep fall).",
+                "p_blind": 0.86,
+                "reason_blind": "Dell raised full-year FY27 revenue guidance sharply at Q1 and again at Q2 (from $165-169B to a $192B point figure). AI backlog hit a record $95B and Q3 consensus ($50.6B) sits above guide ($49.0B). Risks: memory supply limits, a hold at $192B, a slip (company-event rate 0.005).",
                 "p": 0.87,
-                "p_held": 0.995,
-                "p_if_held": 0.87,
-                "at": "2026-11-22T19:40:00+01:00",
+                "at": "2026-11-22T21:58:48+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "reason": "The guidance is a plain 192 midpoint, so keeping it resolves NO, but the FY consensus of 194.3 and a Q3 revenue consensus above Dell's own guide imply the Street expects a raise; the sell-off adds some risk of a hold.",
+                "reason": "Dell raised FY27 revenue guidance at Q1 and Q2 (to $192B, up $25B), AI backlog is a record $95B, and Q3 consensus ($50.6B) is above guidance ($49.0B). Related markets lean to a beat (Polymarket EPS beat 0.875, ISG revenue >$35B 0.84). Risks: memory supply limits or a hold at $192B. Signals matched no market on the claim; they changed little.",
                 "rounds": [
                   {
                     "p": 0.9,
                     "at": "2026-11-22T19:20:00+01:00",
                     "reason": "round one after the signals, before the disagreement research added facts"
+                  },
+                  {
+                    "p": 0.87,
+                    "at": "2026-11-22T19:40:00+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
                   }
                 ]
               }
             ],
             "missing": [],
-            "combined": 0.76,
+            "combined": 0.755,
             "combination": {
               "method": "calibrated",
               "weights": {
@@ -2422,28 +2544,41 @@
               },
               "version": "2026-11-22"
             },
-            "calibrated": 0.849,
+            "calibrated": 0.844,
             "decomposition": {
-              "p_held": 0.995,
-              "p_if_held": 0.854,
+              "p_held": 0.99,
+              "p_if_held": 0.848,
               "p_if_not_held": 0
             },
             "spread": 0.19,
             "research": {
-              "at": "2026-11-22T19:20:00+01:00",
-              "question": "What is Dell's current FY27 revenue guidance (point or range, midpoint), and do analysts expect it to be raised above $192bn?",
-              "finding": "Dell set FY27 revenue guidance at $192.0bn on 1 Sep 2026 (raised from $167bn), and the Performance Review gives it as plus or minus $2bn, so the midpoint is exactly $192.0bn. Nothing found shows it has been updated since. Holding guidance resolves NO, so YES needs an actual raise. Analyst consensus for FY27 revenue is about $194.3bn (Yahoo, 19 Nov), Q3 revenue consensus is $50.63bn against a $49.0bn guide, and Zacks FY EPS consensus is $26.15 against the $25.50 guide, so the Street already assumes a raise. Previews say the stock is down about 47% from its high in an AI-hardware sell-off, and they treat a hold or a cut as possible bear cases.",
+              "at": "2026-11-22T22:03:00+01:00",
+              "question": "Which analysts' consensus for Dell's fiscal Q3 revenue is current: $50.63bn (Earnings Whispers) or $49.2bn (Kiplinger), against the $49.0bn guide?",
+              "finding": "Not settled. Dell's Q3 guidance is $49.0bn plus or minus $0.5bn and non-GAAP EPS $6.50 plus or minus $0.10; the full-year guide is $192bn plus or minus $2bn (Zacks, 2 Sep). No LSEG, FactSet, Zacks or Yahoo revenue consensus could be read on a dated page (tables do not render; several sites refuse). The only dated mainstream figure is Zacks' Q3 EPS consensus of $6.63 (19 Nov), between Kiplinger's $6.59 and Earnings Whispers' $6.77, so nearer Kiplinger's view. The outsider, who works without the dossier, rests on the higher consensus alone; the other four weigh both.",
               "sources": [
-                "https://investors.delltechnologies.com/news-events/press-releases/detail/1653/dell-technologies-delivers-second-quarter-fiscal-2027-financial-results",
-                "https://www.tradingkey.com/analysis/stocks/us-stocks/262315073-dell-earnings-tuesday-47-percent-below-high-295-25-support-november-21-2026-tradingkey",
-                "https://finance.yahoo.com/markets/stocks/articles/dell-ai-server-business-could-183311875.html",
-                "https://finance.yahoo.com/markets/stocks/articles/bull-day-dell-technologies-dell-103000839.html",
-                "https://finance.yahoo.com/markets/stocks/articles/dell-hpe-were-ai-winners-140429773.html"
+                "https://www.zacks.com/stock/news/2984030/dell-q2-earnings-beat-estimates-strong-ai-demand-aids-revenue-growth",
+                "https://www.zacks.com/commentary/3032080/bull-of-the-day-dell-technologies-dell",
+                "https://www.earningswhispers.com/epsdetails/dell"
               ],
-              "decisive": true,
-              "reforecast": true
+              "decisive": false,
+              "reforecast": false,
+              "earlier": [
+                {
+                  "at": "2026-11-22T19:20:00+01:00",
+                  "question": "What is Dell's current FY27 revenue guidance (point or range, midpoint), and do analysts expect it to be raised above $192bn?",
+                  "finding": "Dell set FY27 revenue guidance at $192.0bn on 1 Sep 2026 (raised from $167bn), and the Performance Review gives it as plus or minus $2bn, so the midpoint is exactly $192.0bn. Nothing found shows it has been updated since. Holding guidance resolves NO, so YES needs an actual raise. Analyst consensus for FY27 revenue is about $194.3bn (Yahoo, 19 Nov), Q3 revenue consensus is $50.63bn against a $49.0bn guide, and Zacks FY EPS consensus is $26.15 against the $25.50 guide, so the Street already assumes a raise. Previews say the stock is down about 47% from its high in an AI-hardware sell-off, and they treat a hold or a cut as possible bear cases.",
+                  "sources": [
+                    "https://investors.delltechnologies.com/news-events/press-releases/detail/1653/dell-technologies-delivers-second-quarter-fiscal-2027-financial-results",
+                    "https://www.tradingkey.com/analysis/stocks/us-stocks/262315073-dell-earnings-tuesday-47-percent-below-high-295-25-support-november-21-2026-tradingkey",
+                    "https://finance.yahoo.com/markets/stocks/articles/dell-ai-server-business-could-183311875.html",
+                    "https://finance.yahoo.com/markets/stocks/articles/bull-day-dell-technologies-dell-103000839.html",
+                    "https://finance.yahoo.com/markets/stocks/articles/dell-hpe-were-ai-winners-140429773.html"
+                  ],
+                  "decisive": true,
+                  "reforecast": true
+                }
+              ]
             },
-            "disagreement": null,
             "open_because": {
               "why": "Dell has not pre-announced; whether it lifts the full-year figure depends on Q3 shipments under memory constraints and its Q4 view.",
               "source": "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
@@ -2513,6 +2648,26 @@
                   "trace": "data/dossiers/2026-11-25/dell-25.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 15,
+              "facts_confirmed": 3,
+              "added": [
+                "https://aiweekly.co/alerts/dell-hpe-lenovo-supermicro-repricing-signed-ai-server-deals",
+                "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
+                "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000003/exhibit991earnings8kq4fy26.htm"
+              ],
+              "material": 2,
+              "reforecast": true,
+              "before": 0.849,
+              "after": 0.844,
+              "note": "Evening check 2026-11-22T22:05:51+01:00: 2 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.849 → 0.844."
             }
           }
         }
@@ -3042,7 +3197,7 @@
           },
           "dossier": "data/dossiers/2026-11-25/ep-eia-25.md",
           "signals": "data/dossiers/2026-11-25/ep-eia-25.signals.md",
-          "probability": 0.51,
+          "probability": 0.57,
           "forecast": {
             "baseline": {
               "status_quo": "unclear",
@@ -3065,108 +3220,143 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:06:39+01:00",
+                "at_blind": "2026-11-22T21:56:50+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
                 "p_blind": 0.5,
-                "reason_blind": "No class for mandate margins; the comparable simplification mandate without S&D (Omnibus I) got 382, under 400. YES essentially needs S&D to back the final text via the EPP-Renew-S&D joint amendments (EPP+Renew+S&D+ECR ~480 seats would clear 400 easily); committee was 36-35 with S&D against, so I put that at about even. Slip 0.04 plus a small referral-back risk.",
+                "reason_blind": "There is no reference class for vote margins. The slip class ep-plenary-vote gives 0.04 postponement risk. Committee passed it 36-35-11. S&D now backs the EPP-Renew-S&D compromise, but those three groups have 397 seats and some 88% turn up, so about 350 votes. YES needs about 50 from ECR (who call Art. 8 their win), PfE or Greens. Similar votes: 540 (chemicals), 423 (AI omnibus, ECR/PfE abstaining), 382 (Omnibus I, S&D against).",
                 "p": 0.5,
                 "p_held": 0.95,
                 "p_if_held": 0.53,
-                "at": "2026-11-22T19:10:03+01:00",
+                "at": "2026-11-22T21:59:31+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "400 needs S&D on board via the joint amendments; without them Omnibus I-type majority (382). No market or model in signals, so unchanged."
+                "reason": "The signals file has no market, model or odds on this vote, so my estimate is unchanged. Postponement risk is 0.04 (slip class). The committee passed it 36-35-11. S&D backs the EPP-Renew-S&D compromise, but those groups hold 397 seats, so about 350 votes at usual turnout. YES needs about 50 more from ECR, which calls Art. 8 its win but also tabled its own amendment, or from PfE or Greens. Similar votes: 540 (chemicals), 423 (AI omnibus), 382 (Omnibus I).",
+                "rounds": [
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-22T19:10:03+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:08:06+01:00",
+                "at_blind": "2026-11-22T21:57:14+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.5,
-                "reason_blind": "Report A10-0290/2026 tabled 11 Nov; sister omnibus file (INSPIRE data) passed 515-108, but EIA 300-day cap is more contested; Omnibus I mandate in 2025 only got 382 without S&D. ~0.95 held x ~0.53 for >=400. After dossier: committee vote only 36-35-11, but EPP/Renew/S&D joint plenary amendments on protected species could bring S&D in (then well above 400); if they fail, sub-400 likely -> 0.50.",
+                "p_blind": 0.4,
+                "reason_blind": "OEIL: report A10-0290/2026 tabled 11 Nov, awaiting 1st-reading position. The EP votes page lists it for the 23-26 Nov session, but I could not confirm the day. Omnibus mandates are contested: Omnibus I passed 382-249 without S&D. The Renew rapporteur hints at a centrist majority but did not secure it. The slip rate is 0.04. Reaching 400 needs about 61% of those voting.",
                 "p": 0.5,
-                "at": "2026-11-22T19:10:22+01:00",
+                "at": "2026-11-22T21:59:46+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "reason": "Committee vote 36-35-11; 400 depends on the EPP/Renew/S&D joint amendments bringing S&D in, while a vote without S&D (Omnibus I type) falls short. Signals: no matching market, unchanged.",
+                "reason": "The signals file found no market, model or odds on this vote, so the estimate is unchanged. Vote set for Tue 24 Nov at 12:00. Committee passed it only 36-35-11. EPP, Renew and S&D tabled joint amendments and S&D backs the compromise, but the three groups hold just 397 seats (about 350 present), so YES needs about 45+ ECR/PfE votes. If the joint amendments fail, S&D votes no and the total stays under 400.",
                 "rounds": [
                   {
                     "p": 0.5,
                     "at": "2026-11-22T19:08:06+01:00",
                     "reason": "after reading the dossier, before the signals"
+                  },
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-22T19:10:22+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  },
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-22T21:57:19+01:00",
+                    "reason": "evening check: after reading the dossier with the added facts, before the signals"
                   }
                 ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-22T19:06:45+01:00",
+                "at_blind": "2026-11-22T21:57:09+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.52,
-                "reason_blind": "No class for margins; one comparable right-leaning simplification vote (Omnibus I) got 382 of 644. Committee split 36-35-11 over protected species; EPP/Renew/S&D tabled joint plenary amendments. If the compromise holds (~0.65) EPP+S&D+Renew alone give roughly 340-360 at normal turnout, so 400 still needs ECR/PfE or near-full S&D discipline (~0.7); if it fails (~0.35) a right-wing majority lands near 380-400 (~0.3). Slip 0.04 plus referral-back risk on a contested file gives p_held 0.95.",
-                "p": 0.52,
+                "p_blind": 0.38,
+                "reason_blind": "Vote is firmly set for Tue 12:00 (slip prior 0.04), but 400 is a high bar. EPP+S&D+Renew hold 397 seats; at usual attendance and cohesion they give about 345-360. Committee was 36-35-11, with the right-wing abstaining. If joint species amendments pass, YES needs most of ECR (who prize the unamended Article 8) or PfE; if they fail, S&D votes no and an Omnibus I-type majority (382) results. Greens/Left against.",
+                "p": 0.38,
                 "p_held": 0.95,
-                "p_if_held": 0.55,
-                "at": "2026-11-22T19:10:42+01:00",
+                "p_if_held": 0.4,
+                "at": "2026-11-22T21:59:38+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "Signals found no market or model on the margin, so unchanged: the EPP/Renew/S&D compromise probably holds but 400 still needs ECR/PfE or strong S&D discipline, and a right-only majority lands near 380-400 (Omnibus I: 382)."
+                "reason": "Signals file has no matching market or analyst figure, so nothing changed. Vote is set for Tue 12:00 per EP newsletter, S&D and ECR notes (slip prior 0.04, plus small referral-back risk). 400 is a high bar: EPP+S&D+Renew hold 397 seats, about 345-360 at usual attendance and cohesion; committee was 36-35-11. YES needs most of ECR or PfE on top of S&D; if joint species amendments fail, S&D votes no (Omnibus I: 382).",
+                "rounds": [
+                  {
+                    "p": 0.52,
+                    "at": "2026-11-22T19:10:42+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "p": 0.55,
-                "p_held": 0.95,
-                "p_if_held": 0.58,
-                "at": "2026-11-22T19:06:20+01:00",
+                "p": 0.65,
+                "at": "2026-11-22T21:57:41+01:00",
                 "inputs": [
                   "signals",
                   "dossier",
                   "reference-data"
                 ],
-                "reason": "No market (signals). Scenario model: EPP–Renew–S&D compromise holds ~0.65 → ≥400 ~0.8 (EPP+Renew+S&D ≈400 plus ECR share); if S&D splits/opposes, Omnibus-I-type ~380 → ≥400 ~0.2; times p_held 0.95 (referral/postponement risk) → 0.55."
+                "reason": "No matching market. Anchor: votes-for quantiles q10 355/q50 425/q90 490 (chemicals omnibus 540, AI omnibus 423 with ECR/PfE abstaining, Omnibus I 382 without S&D) gives 0.68. EPP+S&D+Renew hold only 397 seats; S&D backs the text only if joint species amendments pass; ECR keen on Article 8, so likely adds votes. Minus 4% slip/referral risk gives 0.65.",
+                "anchor": "models.mjs derive 355 425 490 > 399.5 = 0.68, times 0.96 slip survival",
+                "rounds": [
+                  {
+                    "p": 0.55,
+                    "at": "2026-11-22T19:06:20+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-22T19:08:00+01:00",
+                "at_blind": "2026-11-22T21:57:03+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.3,
-                "reason_blind": "ENVI adopted its position only 36-35 (11 abstentions), with S&D, Greens and Left opposed over protected-species exemptions; EPP+ECR+PfE+Renew+ESN is about 450 seats before absences and defections, so 400 is plausible but not likely; plenary slip rate 4% plus the risk of referral back.",
-                "p": 0.3,
-                "p_held": 0.93,
-                "p_if_held": 0.35,
-                "at": "2026-11-22T19:20:00+01:00",
+                "p_blind": 0.55,
+                "reason_blind": "OEIL shows report A10-0290/2026 tabled 11/11/2026, still awaiting first reading. Renew rapporteur; EPP, Renew, ECR, PfE alone are about 430 seats, so 400 is reachable if turnout is normal (~650+) and S&D partly backs it. Searches found no committee vote tally or confirmed agenda slot. Slip rate 0.04. Position and vote margin uncertain.",
+                "p": 0.55,
+                "at": "2026-11-22T21:59:51+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "No market or analyst view in the signals, so the blind estimate stands."
+                "reason": "Signals file found no market or analyst estimate on this vote, so nothing changed. Estimate rests on OEIL: report A10-0290/2026 tabled 11/11, awaiting first reading; Renew rapporteur; EPP+Renew+ECR+PfE about 430 seats, so 400 is reachable with normal turnout and some S&D support; slip rate 0.04; no committee tally or agenda confirmation seen.",
+                "rounds": [
+                  {
+                    "p": 0.3,
+                    "at": "2026-11-22T19:20:00+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               }
             ],
             "missing": [],
-            "combined": 0.472,
+            "combined": 0.517,
             "combination": {
               "method": "calibrated",
               "weights": {
@@ -3182,37 +3372,52 @@
               },
               "version": "2026-11-22"
             },
-            "calibrated": 0.509,
+            "calibrated": 0.568,
             "decomposition": {
               "p_held": 0.95,
-              "p_if_held": 0.537,
+              "p_if_held": 0.6,
               "p_if_not_held": 0
             },
-            "spread": 0.25,
+            "spread": 0.27,
             "research": {
-              "at": "2026-11-22T19:20:00+01:00",
-              "question": "Will S&D back the text in plenary, and is the vote still on Tuesday 24 Nov?",
-              "finding": "S&D's own plenary preview lists the vote for Tuesday 24 Nov. Its negotiator Annalisa Corrado says the group 'brought pro-European groups together to secure a compromise in plenary' that adds protections for species, which signals S&D support as long as the joint EPP–Renew–S&D amendments pass. Agence Europe (19 Nov) also confirms the Tuesday vote, but the doceo agenda could not be read. EPP+S&D+Renew hold 397 seats (HowTheyVote), so 400 needs some ECR, PfE or Greens votes even with full turnout. For comparison, the AI omnibus got 423 with ECR and PfE mostly abstaining, and the chemicals omnibus mandate got 540.",
+              "at": "2026-11-22T22:03:00+01:00",
+              "question": "How will ECR and PfE vote on the final text if the joint EPP–Renew–S&D amendments on protected species are adopted?",
+              "finding": "Not settled. No ECR, PfE or press statement of 20–22 Nov says how either group will vote on the final text, and no rejection motion or split-vote request was found. ECR's week-ahead note calls Article 8 'a key achievement', tables its own amendment and gives no voting line; it confirms the vote for Tuesday 12:00. Nearest precedents with S&D on board, the two chemicals-omnibus mandates of 29 Apr 2026: ECR voted 81 of 81 and 73 of 81 in favour; PfE 61 of 74 in favour on one and none in favour (57 abstentions) on the other; totals 540 and 526.",
               "sources": [
-                "https://www.socialistsanddemocrats.eu/content/plenary-times-whats-sds-agenda-strasbourg-23-26-november-2026",
-                "https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
-                "https://howtheyvote.eu/votes/193665",
-                "https://howtheyvote.eu/votes/190979"
+                "https://ecrgroup.eu/week-ahead-23-26-november/",
+                "https://howtheyvote.eu/votes/190979",
+                "https://howtheyvote.eu/votes/190027",
+                "https://www.patriotsforeurope.eu/"
               ],
               "decisive": false,
-              "reforecast": false
+              "reforecast": false,
+              "earlier": [
+                {
+                  "at": "2026-11-22T19:20:00+01:00",
+                  "question": "Will S&D back the text in plenary, and is the vote still on Tuesday 24 Nov?",
+                  "finding": "S&D's own plenary preview lists the vote for Tuesday 24 Nov. Its negotiator Annalisa Corrado says the group 'brought pro-European groups together to secure a compromise in plenary' that adds protections for species, which signals S&D support as long as the joint EPP–Renew–S&D amendments pass. Agence Europe (19 Nov) also confirms the Tuesday vote, but the doceo agenda could not be read. EPP+S&D+Renew hold 397 seats (HowTheyVote), so 400 needs some ECR, PfE or Greens votes even with full turnout. For comparison, the AI omnibus got 423 with ECR and PfE mostly abstaining, and the chemicals omnibus mandate got 540.",
+                  "sources": [
+                    "https://www.socialistsanddemocrats.eu/content/plenary-times-whats-sds-agenda-strasbourg-23-26-november-2026",
+                    "https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+                    "https://howtheyvote.eu/votes/193665",
+                    "https://howtheyvote.eu/votes/190979"
+                  ],
+                  "decisive": false,
+                  "reforecast": false
+                }
+              ]
             },
             "disagreement": {
               "cause": "genuine",
-              "note": "The outsider, working without the dossier, stays well below the others; the research step found no fact that settles it, so the evidence is mixed."
+              "note": "Same facts, different judgement: the anchor's vote-count model puts the likely tally above 400, the adversarial forecaster expects ECR and PfE to hold back once S&D's species amendments are in. The research step found no statement on how ECR or PfE will vote, so the spread stands and the evidence is mixed."
             },
             "shadow": {
               "sequential": {
                 "model": "claude-opus-5-5",
-                "at": "2026-11-22T19:13:13+01:00",
+                "at": "2026-11-22T22:03:43+01:00",
                 "p_blind": 0.6,
-                "p": 0.6,
-                "steps": 8,
+                "p": 0.64,
+                "steps": 9,
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-25/ep-eia-25.belief.json"
               },
@@ -3284,6 +3489,25 @@
             "open_because": {
               "why": "Committee adopted the text by one vote (36–35–11) with S&D, Greens and the Left against; EPP, Renew and S&D tabled joint plenary amendments on species protection. With S&D the text likely clears 400; without it, a right-leaning majority (Omnibus I: 382) falls short.",
               "source": "https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november"
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 14,
+              "facts_confirmed": 2,
+              "added": [
+                "https://ecrgroup.eu/week-ahead-23-26-november/",
+                "https://www.europarl.europa.eu/legislative-train/package-environmental-omnibus/file-omnibus-viii-environment-speeding-up-environmental-assessments"
+              ],
+              "material": 1,
+              "reforecast": true,
+              "before": 0.509,
+              "after": 0.568,
+              "note": "Evening check 2026-11-22T22:05:51+01:00: 1 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.509 → 0.568."
             }
           }
         }
@@ -3350,7 +3574,7 @@
           },
           "dossier": "data/dossiers/2026-11-25/hp-25.md",
           "signals": "data/dossiers/2026-11-25/hp-25.signals.md",
-          "probability": 0.73,
+          "probability": 0.72,
           "forecast": {
             "baseline": {
               "status_quo": "unclear",
@@ -3380,106 +3604,144 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:06:39+01:00",
+                "at_blind": "2026-11-22T21:56:50+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.66,
-                "reason_blind": "Threshold is consensus +1c (0.74), above the 0.74 non-GAAP guide midpoint. S&P beat rate ~78-84% and own class company-results-beat-threshold 9/2, but HP 7-quarter record is 5/7 beat-or-match (match = NO) and management called this the memory-cost margin trough, with consensus already raised from 0.67. Net ~0.67 if held; slip 0.005.",
-                "p": 0.66,
-                "p_held": 0.995,
-                "p_if_held": 0.665,
-                "at": "2026-11-22T19:10:03+01:00",
+                "p_blind": 0.64,
+                "reason_blind": "Prior ~0.72: about 78% of S&P firms beat (FactSet 5-yr), HP beat 5 of 7 recent quarters and the last 4 in a row, our own record is 9-2. Lowered for the memory-cost margin trough, HP PC units down 30.9%, a Zacks ESP of -2.7% after a cut, and Q4 FY24/25 landing near the guidance midpoint; $0.75 is midpoint+1c. Tariff refunds ($91m) are mostly in guidance. Slip 0.005.",
+                "p": 0.65,
+                "p_held": 0.99,
+                "p_if_held": 0.66,
+                "at": "2026-11-22T21:59:00+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "Threshold consensus+1c in a guided margin-trough quarter; HP beat-or-match 5/7. No HP market; peer beat markets at 0.875 are for different firms/thresholds, so unchanged."
+                "reason": "Prior ~0.72: about 78% of S&P firms beat (FactSet), HP beat 5 of 7 recent quarters, and our own record is 9-2. Lowered for the memory-cost margin trough, HP PC units down 30.9%, a Zacks ESP of -2.7% and recent Q4s near the guidance midpoint; $0.75 is midpoint+1c. Signals: no HP market exists. Polymarket prices similar beat questions for Dell and ADI at 0.875, which moves me up a little. Slip 0.005.",
+                "rounds": [
+                  {
+                    "p": 0.66,
+                    "at": "2026-11-22T19:10:03+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:08:06+01:00",
+                "at_blind": "2026-11-22T21:57:09+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.62,
-                "reason_blind": "Q4 non-GAAP guide /bin/bash.69-0.79 (midpoint 0.74, incl. /bin/bash.08 tariff refunds; SEC 8-K); threshold 0.75 one cent above midpoint. HP beat the top of its Q3 range (/bin/bash.83) and has raised FY EPS twice, but management flagged Q4 as memory-cost margin trough with below-seasonal PCs; consensus /bin/bash.74-0.75, whisper /bin/bash.90. After dossier: 4 straight beats but 5/7 beat-or-match with matches resolving NO -> ~0.61.",
-                "p": 0.61,
-                "at": "2026-11-22T19:10:22+01:00",
+                "p_blind": 0.68,
+                "reason_blind": "HP guided Q4 FY26 non-GAAP EPS $0.69-0.79 (midpoint $0.74, incl. $0.08 tariff refunds); $0.75 needs the upper half. Q2 ($0.86 vs $0.70-0.76) and Q3 ($0.83 vs $0.61-0.71) beat the top of the range. Against that, the preview calls Q4 the memory-cost margin trough with below-seasonal PC revenue. Consensus is about $0.75 and the whisper $0.90. Release confirmed for 24 Nov; slip rate 0.005.",
+                "p": 0.62,
+                "at": "2026-11-22T21:59:17+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "reason": "Threshold one cent above the non-GAAP guide midpoint (/bin/bash.69-0.79); HP's strong beat record against a flagged memory-cost margin trough, and an exact match resolves NO. Signals: no HP market, unchanged.",
+                "reason": "Non-GAAP guidance is $0.69-0.79 (midpoint $0.74) and consensus is $0.74, so a match is NO. FY26 Q1-Q3 landed at or above the top of guidance, but the FY24 and FY25 Q4s landed at the midpoint. Q4 is the memory-cost trough, Zacks ESP is -2.7% and HP's PC shipments fell 30.9%. The signals changed nothing: no market covers HP, only a $0.90 whisper and 0.875 beat prices for other companies' quarters.",
                 "rounds": [
                   {
                     "p": 0.61,
                     "at": "2026-11-22T19:08:06+01:00",
                     "reason": "after reading the dossier, before the signals"
+                  },
+                  {
+                    "p": 0.61,
+                    "at": "2026-11-22T19:10:22+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  },
+                  {
+                    "p": 0.62,
+                    "at": "2026-11-22T21:57:13+01:00",
+                    "reason": "evening check: after reading the dossier with the added facts, before the signals"
                   }
                 ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-22T19:06:45+01:00",
+                "at_blind": "2026-11-22T21:56:59+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.57,
-                "reason_blind": "Threshold 0.75 is one cent above both consensus (0.74) and the non-GAAP guidance midpoint (0.69-0.79); a match at 0.74 is NO. Record: beat consensus in 4 of last 4 and 5 of 7 quarters (beat-or-match), own class 9/2, whisper 0.90. Case for NO: management named this quarter the margin trough (memory costs, below-seasonal PC revenue), consensus already rose from 0.67, one downward revision, and the 0.08 tariff refund is already in guidance. Net a little above even; slip 0.005.",
-                "p": 0.57,
-                "p_held": 0.995,
-                "p_if_held": 0.575,
-                "at": "2026-11-22T19:10:42+01:00",
+                "p_blind": 0.55,
+                "reason_blind": "Case for NO: threshold is 1c above both consensus ($0.74, cut a penny last week, Zacks ESP -2.7%) and guidance midpoint ($0.69-0.79); a match is NO; last two Q4s landed at midpoint; flagged margin trough; HP shipments -30.9% in calendar Q3; the $0.08 refund was already in guidance ($91M received by Aug). For YES: four straight beats, Q2 and Q3 above the guided range, S&P beat rate 84%. Slip risk 0.005, date confirmed by HP.",
+                "p": 0.55,
+                "p_held": 0.99,
+                "p_if_held": 0.56,
+                "at": "2026-11-22T21:59:09+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "Signals have no HP market (only the whisper 0.90 already in the dossier), so unchanged: four straight beats against a threshold one cent above consensus and the guidance midpoint in a flagged margin-trough quarter."
+                "reason": "Signals changed nothing: no market on HP; the $0.90 whisper was already in the dossier; Dell/ADI at 0.875 are plain beat questions for other firms. Figure rests on: threshold 1c above consensus $0.74 (cut a penny, ESP -2.7%) and guidance midpoint; match is NO; last two Q4s at midpoint; margin trough; HP shipments -30.9%; against four straight beats, Q2/Q3 above range. Date confirmed by HP, slip 0.005.",
+                "rounds": [
+                  {
+                    "p": 0.57,
+                    "at": "2026-11-22T19:10:42+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "p": 0.68,
-                "at": "2026-11-22T19:06:20+01:00",
+                "p": 0.66,
+                "at": "2026-11-22T21:56:54+01:00",
                 "inputs": [
                   "signals",
                   "dossier",
                   "reference-data"
                 ],
-                "reason": "models.mjs release with mean 0.77 (consensus 0.74 + recent average beat ~0.03 after shrinking for the margin trough), sd 0.05, threshold 0.745 → 0.69; minus slip → 0.68. Signals: no HP market; whisper $0.90 and peer beat markets support but are not anchors."
+                "reason": "No HP market. Zero-mean release model (consensus $0.74, threshold $0.745, sd $0.06) gives 0.47. Raised for beat bias: HP beat in its last 4 quarters by an average of 7c, and 84% of S&P companies beat. Trimmed because management calls Q4 the margin trough, HP PC units fell 30.9%, Zacks ESP is -2.7%, the last two Q4s landed near guidance midpoint ($0.74 now), and the tariff refund is already in guidance. Slip 0.005.",
+                "anchor": "models.mjs release 0.74 0.745 0.06 = 0.467 (no matching market or bookmaker odds)",
+                "rounds": [
+                  {
+                    "p": 0.68,
+                    "at": "2026-11-22T19:06:20+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-22T19:08:00+01:00",
+                "at_blind": "2026-11-22T21:56:49+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.66,
-                "reason_blind": "HP's Q4 non-GAAP EPS guide is $0.69-0.79 (midpoint 0.74, incl. $0.08 tariff refunds); Q3 came in at 0.83 against a 0.61-0.71 guide, and HP has beaten its midpoint recently, so 0.75 is just above the midpoint; cost pressure from memory prices is the risk.",
+                "p_blind": 0.62,
+                "reason_blind": "HP guided Q4 FY26 non-GAAP EPS to $0.69-0.79 (midpoint 0.74, incl. $0.08 tariff refunds). Threshold 0.75 sits just above the midpoint. HP beat the top of its Q3 range ($0.83 vs 0.61-0.71) and has usually landed at or above midpoint; I found no consensus figure. Slip risk is about 0.5%.",
                 "p": 0.7,
-                "p_held": 0.995,
-                "p_if_held": 0.7,
-                "at": "2026-11-22T19:20:00+01:00",
+                "at": "2026-11-22T21:59:22+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "reason": "Consensus 0.74 against a threshold of 0.75, but the whisper number is 0.90 and HP beat its guidance range last quarter, so I raised my estimate slightly."
+                "reason": "Guidance was $0.69-0.79 (midpoint 0.74, incl. $0.08 tariff refunds); the signals file shows consensus $0.74 and an Earnings Whispers number of $0.90. The threshold is one cent above consensus. HP beat the top of its Q3 range and large caps usually beat by a few cents, so a beat is likely. No market exists on this claim. Slip risk is about 0.5%. Signals raised my estimate from 0.62.",
+                "note": "The session's automatic security check flagged this agent's second-step report ('Unauthorized Access') without detail; asked afterwards, the agent listed only the signals file and the date command as opened. The figure is kept; the flag is recorded here.",
+                "rounds": [
+                  {
+                    "p": 0.7,
+                    "at": "2026-11-22T19:20:00+01:00",
+                    "reason": "evening desk figure, before the facts confirmed by the evening check were added to the dossier"
+                  }
+                ]
               }
             ],
             "missing": [],
-            "combined": 0.645,
+            "combined": 0.637,
             "combination": {
               "method": "calibrated",
               "weights": {
@@ -3495,14 +3757,13 @@
               },
               "version": "2026-11-22"
             },
-            "calibrated": 0.728,
+            "calibrated": 0.719,
             "decomposition": {
-              "p_held": 0.995,
-              "p_if_held": 0.734,
+              "p_held": 0.99,
+              "p_if_held": 0.727,
               "p_if_not_held": 0
             },
-            "spread": 0.13,
-            "disagreement": null,
+            "spread": 0.15,
             "open_because": {
               "why": "Management called this quarter the PC-margin trough from memory costs; consensus ($0.74) sits at the midpoint of HP's non-GAAP range, so an in-line or slightly better result decides it.",
               "source": "https://finviz.com/news/423393/hps-memory-cost-trough-meets-a-whisper-number-above-its-own-guidance"
@@ -3572,6 +3833,28 @@
                   "trace": "data/dossiers/2026-11-25/hp-25.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-22T22:05:51+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "facts_confirmed": 5,
+              "added": [
+                "https://www.zacks.com/stock/news/3033168/hpq-gears-up-to-report-q4-earnings-what-to-expect-from-the-stock",
+                "https://www.sec.gov/Archives/edgar/data/47217/000004721726000051/hpq-20260731.htm",
+                "https://cxotoday.com/hardware/gartner-report-global-pc-shipments-crash-22-4-in-q3-2026-as-memory-costs-surge-asps/",
+                "https://www.hp.com/us-en/newsroom/press-releases/2025/hp-inc-reports-fiscal-2025-full-year-and-fourth-quarter-results.html",
+                "https://www.hp.com/us-en/newsroom/press-releases/2026/hp-inc-reports-fiscal-2026-second-quarter-results.html"
+              ],
+              "material": 5,
+              "reforecast": true,
+              "before": 0.728,
+              "after": 0.719,
+              "note": "Evening check 2026-11-22T22:05:51+01:00: 5 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.728 → 0.719."
             }
           }
         }

@@ -2,7 +2,7 @@
   "claim": "ep-eia-25",
   "model": "claude-opus-5-5",
   "started_at": "2026-11-22T19:12:13+01:00",
-  "finished_at": "2026-11-22T19:13:13+01:00",
+  "finished_at": "2026-11-22T22:03:43+01:00",
   "steps": [
     {
       "n": 1,
@@ -208,8 +208,41 @@
           "Resolver treatment of a mandate vote with referral back"
         ]
       }
+    },
+    {
+      "n": 9,
+      "action": "read",
+      "target": "facts confirmed by the evening check, 22 Nov 2026 (no new search)",
+      "found": "ECR's 20 Nov week-ahead note claims Article 8 as its own negotiating win, notes EPP/Renew/S&D amendments to the compromise and says ECR tabled one extra amendment (nature-law revision), vote Tue 24 Nov 12:00 — no sign of opposition (https://ecrgroup.eu/week-ahead-23-26-november/). The Legislative Train confirms the Council mandate of 30 Sep 2026 (https://www.europarl.europa.eu/legislative-train/package-environmental-omnibus/file-omnibus-viii-environment-speeding-up-environmental-assessments).",
+      "belief": {
+        "p": 0.64,
+        "confidence": "medium",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "19 Nov 2026: EPP, Renew and S&D tabled joint compromise AMs on protected species (the issue S&D/Greens/Left rejected in committee), to be voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "With EPP+Renew+most S&D plus ECR/part of PfE, 'for' would plausibly be 420-480 of ~640 present",
+          "EP votes page for 23-26 Nov 2026 session exists (europarl.europa.eu/plenary/*/votes.html); procedure 2025/0391(COD)",
+          "20 Nov 2026: ECR 'Week Ahead' calls Article 8 (population-level judgement of harm to protected species) 'a key achievement secured during negotiations' and tables only one add-on amendment (Birds/Habitats revision within 12 months), not opposition — ECR (~80 seats) likely votes for, on top of EPP+Renew+S&D — https://ecrgroup.eu/week-ahead-23-26-november/",
+          "Council adopted its negotiating mandate on 30 Sep 2026, so a Parliament mandate opens trilogues directly — https://www.europarl.europa.eu/legislative-train/package-environmental-omnibus/file-omnibus-viii-environment-speeding-up-environmental-assessments"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "If compromise fails, S&D votes against and PfE/ESN split on the weakened text: 'for' ~350-390",
+          "ECR's own amendment is outside the EPP-Renew-S&D compromise; if it fails or the compromise AMs dilute Article 8, part of ECR could abstain — https://ecrgroup.eu/week-ahead-23-26-november/"
+        ],
+        "open": [
+          "Final S&D group line (do the compromise AMs pass and does S&D vote for the whole text)",
+          "Whether ECR votes for the text if its amendment fails",
+          "Resolver treatment of a mandate vote with referral back"
+        ]
+      }
     }
   ],
   "p_blind": 0.6,
-  "p": 0.6
+  "p": 0.64
 }
