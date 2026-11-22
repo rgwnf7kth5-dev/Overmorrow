@@ -10,7 +10,8 @@
 //   node scripts/backtest-external.mjs run [--minutes N]   call the providers for what is not recorded yet (needs the
 //                                                          environment that holds the keys); stops starting new calls
 //                                                          after N minutes (default 24) so it can be run again
-//   node scripts/backtest-external.mjs report              the comparison, from the recorded answers only
+//   node scripts/backtest-external.mjs report [a,b]        the comparison, from the recorded answers only (optionally
+//                                                          with just the named providers)
 //
 // Exit codes of `run`: 0 everything recorded; 6 more remains (run again); 3 a provider keeps failing (see output).
 
@@ -25,7 +26,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'data/backtest/external.json');
 const [cmd, ...rest] = process.argv.slice(2);
 const cfg = loadConfig();
-const providers = (cfg.shadow?.external?.providers || []).filter((p) => p.model);
+// `report openai,google` compares with only those providers (for a look before the slowest one has finished).
+const only = process.argv[2] === 'report' && process.argv[3] ? process.argv[3].split(',') : null;
+const providers = (cfg.shadow?.external?.providers || []).filter((p) => p.model && (!only || only.includes(p.id)));
 const ok = (p) => typeof p === 'number' && p > 0 && p < 1;
 const odds = (p) => p / (1 - p);
 const geo = (ps) => { const m = Math.exp(ps.reduce((s, p) => s + Math.log(odds(p)), 0) / ps.length); return m / (1 + m); };
@@ -68,7 +71,8 @@ if (cmd === 'run') {
       if (control.has(r.key) && !ok(data.control[r.key]?.[p.id])) jobs.push({ r, kind: 'control' });
     }
     let i = 0;
-    await Promise.all(Array.from({ length: 5 }, async () => {
+    // xAI answers several times more slowly than the others, so it gets more calls at a time.
+    await Promise.all(Array.from({ length: p.id === 'xai' ? 14 : 5 }, async () => {
       while (i < jobs.length && Date.now() < deadline && fails[p.id] < 8) {
         const { r, kind } = jobs[i++];
         const body = kind === 'control' ? head(r) : `${head(r)}\nDOSSIER (facts only)\n${read(r.dossierFile)}\n${r.signalsFile ? `\nSIGNALS (markets, odds, other people's models)\n${read(r.signalsFile)}\n` : ''}`;
