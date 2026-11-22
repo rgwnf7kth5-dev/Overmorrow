@@ -1625,6 +1625,74 @@
           ],
           "note": "No coalition deal with SPD reported since 9 Nov. Weekly re-forecast by all five forecasters. The outsider first worked without the facts the others had (spread over 25 points, cause: inputs); it was given the union of facts and re-estimated once (first figure kept in its rounds).",
           "note_cs": "Od 9. 11. žádná zpráva o dohodě koalice s SPD. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
+        },
+        {
+          "at": "2026-11-22T19:30:00+01:00",
+          "p": 0.42,
+          "combined": 0.423,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:08:00+01:00",
+              "p": 0.34,
+              "reason": "Gov-bill reading slip rate 0.615 (slip.mjs, own 6/9) makes completion of second reading at the 24 Nov sitting about 0.5; with the 14-day wait, third reading needs a mid/late-December slot (about 0.65), third-reading pass rate 0.996 (cz-chamber.json, n=232). Okamura's 'close to a final deal' and the January start date add log-odds over last week's 0.21.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:36+01:00",
+              "p": 0.38,
+              "reason": "Okamura (22 Nov) says the coalition is close to a final deal softening the cut for vulnerable groups, which matches Juchelka's 9 Nov proposal for over-52s, retrainees and returning parents; this removes the main obstacle. But second reading only starts at the 24 Nov sitting, the third reading needs a further plenary slot in December, and the budget and opposition obstruction compete for floor time, so passage by 31 Dec is still less likely than not; raised from 0.21.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-22T19:06:19+01:00",
+              "p": 0.4,
+              "reason": "Okamura's 'close to a final deal' and the second reading slated for the sitting from 24 Nov lift this well above 0.21, but the deal is not final, the second reading can slip behind the budget and opposition obstruction, and a third reading then needs a December slot; the case for NO remains slightly stronger.",
+              "inputs": [
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:18+01:00",
+              "p": 0.45,
+              "reason": "No market. Okamura (22 Nov) says the coalition-SPD deal is nearly final and second reading is slated from 24 Nov; with a coalition majority and a January start date, a mid-December third reading is plausible, but the deal is not yet closed, the budget (third reading 2 Dec) competes for floor time and the third-reading waiting period pushes the vote into December. Up from 0.21 on the deal news.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-22T20:00:00+01:00",
+              "p": 0.55,
+              "reason": "Majority coalition, passed 1st reading 20 Oct; opposition obstruction and calendar are the risk, no hard evidence.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Speaker Okamura said on 22 Nov that the coalition and SPD are close to a final deal on the bill, which goes to second reading at the sitting opening 24 Nov; a third reading still needs a December slot, with the budget competing for floor time.",
+          "note_cs": "Předseda Sněmovny Okamura 22. listopadu uvedl, že koalice a SPD jsou blízko finální dohody o novele, která jde do druhého čtení na schůzi od 24. listopadu; třetí čtení ale potřebuje prosincový termín a o čas soupeří s rozpočtem."
         }
       ],
       "result": null
@@ -7289,6 +7357,77 @@
             "p": 0.019,
             "read_at": "2026-11-15T18:07:26Z"
           }
+        },
+        {
+          "at": "2026-11-22T19:30:00+01:00",
+          "p": 0.03,
+          "combined": 0.014,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:08:00+01:00",
+              "p": 0.01,
+              "reason": "Student List holds 140 of 250 seats, rejects SNS and says it is close to its own government; a Vučić-led cabinet would need a majority he lacks (class: parliamentary majority installs its own PM, failures near zero). Floor; Polymarket 0.02 (no deadline) agrees.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "signals"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:36+01:00",
+              "p": 0.01,
+              "reason": "Student List holds an absolute majority (140/250) after the 25 Oct election, entered the Assembly on 17 Nov and says it is close to forming its own government; it rejects SNS. A Vučić-led cabinet would need the majority to collapse; the market (0.02, no deadline) agrees.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "overnight-facts",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-22T19:06:19+01:00",
+              "p": 0.02,
+              "reason": "Strongest YES case (Student List split or failure to form a government within 90 days) has no support: the Student List holds 140 of 250 seats, rejects SNS and says it is close to a government; the market (no deadline) is at 0.02.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "signals"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:18+01:00",
+              "p": 0.01,
+              "reason": "Polymarket 0.02 (no deadline, so an upper bound for the 31 Jan window). Student List holds 140/250, rejects SNS and says it is close to its own government; a Vučić-led cabinet needs a collapse of that majority within weeks.",
+              "inputs": [
+                "signals",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-22T20:00:00+01:00",
+              "p": 0.03,
+              "reason": "Search shows Vucic conceded defeat to the student-led list on 25 Oct election; market 0.02.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast: the Student List holds 140 of 250 seats, rejects working with SNS and says it is close to a government line-up (N1, 21 Nov); no prime minister named yet.",
+          "note_cs": "Týdenní přepočet: Studentská kandidátka má 140 z 250 mandátů, spolupráci s SNS odmítá a podle svých slov je blízko sestavení vlády (N1, 21. listopadu); premiér zatím jmenován nebyl.",
+          "adjustment": "Ensemble 0.014 clamped to the board minimum of 0.03."
         }
       ],
       "result": null
@@ -7779,6 +7918,84 @@
             "read_at": "2026-11-17T18:06:49Z"
           },
           "market_note": "The Kalshi market (0.58) traded only about $589; Polymarket and Kalshi give 0.41 for France passing a budget by 31 Dec at all, and Lecornu's pledge and the ordinance route after 17 Dec make 49.3 within 2026 less likely than the thin market suggests."
+        },
+        {
+          "at": "2026-11-22T19:30:00+01:00",
+          "p": 0.41,
+          "combined": 0.414,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:08:00+01:00",
+              "p": 0.4,
+              "reason": "In-year 49.3 on the PLF: 2022 and 2023 yes, 2024 and 2025 no (special law, 49.3 only in Jan/Feb), so about 2/4 overall, 0/2 under post-2024 minority governments; timeline (Senate vote 9 Dec, CMP mid-Dec) leaves only a late-December window. Kalshi 0.58 (matching) pulls up from 0.28, partly offset by the special-law/ordinance precedent.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "signals",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:36+01:00",
+              "p": 0.4,
+              "reason": "Lecornu ruled out a special law in July (Club des Juristes, 7 Jul), which leaves 49.3 or Article 47 ordinances to have a budget by 1 January, and he used 49.3 for the 2026 budget. But with the Senate voting on 9 Dec and the CMP in mid-December, a 49.3 in 2026 needs a late-December final reading. Ordinances, a slip into January (as in 2026) or reversing the no-special-law line all resolve NO. Kalshi's 0.58 pulls me above the board's 0.28 but not all the way.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "overnight-facts",
+                "signals"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-22T19:06:19+01:00",
+              "p": 0.4,
+              "reason": "Case for NO: last year's pattern (special law in December, 49.3 only in January), the Senate vote on 9 Dec leaves only a late-December new reading, and ordinances become available after the 70-day limit. But a matching Kalshi market at 0.58 and 0.35 on enactment by 1 Jan (hard without 49.3) argue the previous 0.28 is too low; I move part of the way.",
+              "inputs": [
+                "dossier",
+                "overnight-facts",
+                "signals"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-22T19:06:18+01:00",
+              "p": 0.45,
+              "reason": "Kalshi prices 0.58 (matching criterion), with budget-enacted-by-1-Jan at 0.35, which implies a 49.3 is the main route to a 2026 enactment. I shade it down: the Senate votes 9 Dec, so a 49.3 needs the post-CMP Assembly reading in the last two weeks of December, and last year Lecornu went to a special law first and used 49.3 only in January, while ordinances after the ~17 Dec 70-day limit are also an option.",
+              "inputs": [
+                "signals",
+                "dossier",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-22T20:00:00+01:00",
+              "p": 0.42,
+              "reason": "Kalshi 0.58 on the same question; 2026 budget needed 49.3 only in January, so the Dec 31 timing cuts against; blended below market.",
+              "inputs": [
+                "own-research",
+                "signals"
+              ]
+            }
+          ],
+          "market": {
+            "source": "kalshi",
+            "kind": "exchange",
+            "url": "https://kalshi.com/markets/kxfrance493",
+            "p": 0.58,
+            "read_at": "2026-11-22T18:55:41+01:00"
+          },
+          "note": "Re-forecast after the market check: the matching Kalshi contract trades at 0.58; the forecasters stay lower because the Senate votes on 9 Dec, leaving only the last two weeks of December for a 49.3 in this year, and last year a special law came first with 49.3 only in January.",
+          "note_cs": "Přepočet po kontrole trhu: odpovídající kontrakt na Kalshi stojí na 0,58; prognostici zůstávají níže, protože Senát hlasuje 9. prosince, takže na článek 49.3 letos zbývají jen poslední dva prosincové týdny, a loni nejdřív přišel zvláštní zákon a 49.3 až v lednu.",
+          "market_note": "We stay below Kalshi's 0.58: only a late-December window remains after the Senate vote of 9 Dec, and in 2024 and 2025 a special law came first and 49.3 only in January or February; ordinances are another route. A slip into January resolves NO."
         }
       ],
       "result": null

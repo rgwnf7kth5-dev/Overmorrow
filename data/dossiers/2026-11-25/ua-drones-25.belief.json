@@ -1,0 +1,26 @@
+{
+  "claim": "ua-drones-25: According to the Ukrainian Air Force's first morning summary on Tuesday 24 November 2026, Russia launched at least 130 drones at Ukraine in the night of 23-24 November (from 18:00 Kyiv time on 23 November).",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-22T19:12:14+01:00",
+  "finished_at": "2026-11-22T19:14:30+01:00",
+  "steps": [
+    {"n": 1, "action": "prior", "target": "reference class: Air Force first-summary overnight UAV totals, late 2025 to 2026", "found": "Recalled base rate: in late 2025 roughly half of nights had >=130 drones in the first summary, with a rising trend into 2026.",
+     "belief": {"p": 0.5, "confidence": "low", "for": ["Nightly totals in late 2025 often 100-200, with periodic mass attacks of 400+ (background knowledge)"], "against": ["Many nights in late 2025 fell in the 50-125 range (background knowledge)"], "open": ["Current (Nov 2026) nightly level", "Distribution of recent nights around 130"]}},
+    {"n": 2, "action": "read", "target": "https://t.me/s/kpszsu", "found": "Only today's live track posts (jet UAVs, KABs, 22 Nov afternoon); no overnight totals on the visible page.",
+     "belief": {"p": 0.5, "confidence": "low", "for": ["Heavy daytime jet-UAV activity on 22 Nov — t.me/s/kpszsu"], "against": [], "open": ["Recent nightly totals (Ukrinform)", "Current nightly level"]}},
+    {"n": 3, "action": "read", "target": "https://www.ukrinform.net/rubric-ato", "found": "Night to 22 Nov: 186 drones launched (161 downed); Zelensky: ~2,700 drones in the past week.",
+     "belief": {"p": 0.62, "confidence": "low", "for": ["22 Nov (night from 21 Nov evening): 186 drones — ukrinform.net/rubric-ato", "Weekly ~2,700 drones (~385/day incl. daytime) — Zelensky via Ukrinform"], "against": ["Weekly total includes daytime launches and mass-attack nights, inflating the average"], "open": ["More nightly totals to see the distribution"]}},
+    {"n": 4, "action": "read", "target": "https://www.ukrinform.net/rubric-ato?page=2", "found": "Night to 21 Nov: 148 drones (117 downed); Ihnat: up to 200 attack drones nightly plus 100+ in daytime.",
+     "belief": {"p": 0.64, "confidence": "low", "for": ["22 Nov: 186 drones — Ukrinform", "21 Nov: 148 drones — Ukrinform", "Ihnat (21 Nov): up to 200 drones nightly — Ukrinform"], "against": ["'Up to 200' is a ceiling description; quiet nights still occur"], "open": ["Frequency of sub-130 nights recently"]}},
+    {"n": 5, "action": "read", "target": "https://www.ukrinform.net/rubric-ato?page=3..5 (one pass over older rubric pages)", "found": "Night to 20 Nov: combined strike, 380 drones + 82 missiles neutralized; night to 19 Nov: 98 drones (69 downed).",
+     "belief": {"p": 0.63, "confidence": "medium", "for": ["22 Nov: 186 — Ukrinform", "21 Nov: 148 — Ukrinform", "20 Nov: mass strike, 380+ drones — Ukrinform", "Ihnat: up to 200 nightly"], "against": ["19 Nov: 98 drones — Ukrinform (sub-threshold nights still occur)", "Nights before/after mass strikes are sometimes lighter"], "open": ["Longer-run share of nights >=130", "Any signal of a mass strike or lull on 23-24 Nov"]}},
+    {"n": 6, "action": "search", "target": "air defense neutralized drones launched since evening November 2026 Ukraine", "found": "Results mostly Nov 2025 Ukrinform/Interfax items: 121, 120+, 132, 136, 138, 141, 223, 227, 558 — roughly 60% >=130 even a year ago.",
+     "belief": {"p": 0.62, "confidence": "medium", "for": ["Last 4 nights: 98, 380+, 148, 186 (3/4 >=130) — Ukrinform", "Nov 2025 sample ~6/9 >=130 — ukrinform.net/interfax.com.ua", "Weekly volume ~2,700 in Nov 2026 vs much lower a year ago — Zelensky"], "against": ["Many nights cluster at 90-140, close to the threshold", "19 Nov: 98"], "open": ["Any reference series for nightly counts"]}},
+    {"n": 7, "action": "data", "target": "pipeline/reference-data/ (grep drone/uav)", "found": "No drone series in the reference data.",
+     "belief": {"p": 0.6, "confidence": "medium", "for": ["Last 4 nights: 98, 380+, 148, 186 — Ukrinform", "Ihnat: up to 200 nightly — Ukrinform", "Elevated weekly volume ~2,700 — Zelensky"], "against": ["Night-to-night variance large; values 90-140 common, threshold sits near the lower-middle of the distribution", "19 Nov: 98"], "open": ["Nothing further resolvable before 24 Nov"]}},
+    {"n": 8, "action": "submit", "target": "", "found": "p_blind 0.60.",
+     "belief": {"p": 0.6, "confidence": "medium", "for": ["Last 4 nights: 98, 380+, 148, 186 — Ukrinform", "Ihnat: up to 200 nightly — Ukrinform", "Weekly volume ~2,700 — Zelensky"], "against": ["Large variance; sub-130 nights (e.g. 98 on 19 Nov) still frequent"], "open": []}}
+  ],
+  "p_blind": 0.6,
+  "p": 0.6
+}

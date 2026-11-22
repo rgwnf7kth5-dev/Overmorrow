@@ -1,0 +1,215 @@
+{
+  "claim": "ep-eia-25",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-22T19:12:13+01:00",
+  "finished_at": "2026-11-22T19:13:13+01:00",
+  "steps": [
+    {
+      "n": 1,
+      "action": "data",
+      "target": "scripts/refdata/slip.mjs (ep-plenary-vote)",
+      "found": "Prior: EP plenary votes slip ~4%; reference class of contested simplification files gives ~45% for a 400+ yes count.",
+      "belief": {
+        "p": 0.45,
+        "confidence": "low",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380"
+        ],
+        "open": [
+          "Committee vote margin and which groups backed the report",
+          "Whether S&D supports the plenary text",
+          "Is the vote on 24 Nov and is it a first-reading position or a negotiating mandate (referral back)"
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "action": "search",
+      "target": "European Parliament environmental assessments regulation 300 days plenary vote November 2026",
+      "found": "Committee backed 300-day cap; S&D and The Left deplored committee outcome; compromise AMs to be voted 24 Nov.",
+      "belief": {
+        "p": 0.42,
+        "confidence": "low",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome"
+        ],
+        "open": [
+          "Committee vote figures",
+          "S&D position in plenary",
+          "Mandate vs first-reading closure"
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "action": "read",
+      "target": "https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+      "found": "ENVI adopted the report 36-35-11 on 4 Nov; plenary vote 23-26 Nov opens negotiations with Council.",
+      "belief": {
+        "p": 0.4,
+        "confidence": "low",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "open": [
+          "Plenary agenda/date confirmation",
+          "Any EPP–S&D–Renew deal bringing S&D on board"
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "action": "read",
+      "target": "https://epvotes.com/week/2026-W48",
+      "found": "HTTP 403, site refuses scripted reading.",
+      "belief": {
+        "p": 0.4,
+        "confidence": "low",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "open": [
+          "Plenary agenda/date confirmation (epvotes blocked)",
+          "S&D stance"
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "action": "read",
+      "target": "https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+      "found": "EPP, Renew and S&D tabled joint compromise amendments on protected species for the Tue 24 Nov plenary vote.",
+      "belief": {
+        "p": 0.6,
+        "confidence": "medium",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "19 Nov 2026: EPP, Renew and S&D tabled joint compromise AMs on protected species (the issue S&D/Greens/Left rejected in committee), to be voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "With EPP+Renew+most S&D plus ECR/part of PfE, 'for' would plausibly be 420-480 of ~640 present"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "open": [
+          "Whether S&D formally backs the final text",
+          "Mandate vs first-reading closure"
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "action": "search",
+      "target": "Ytterell environmental assessments plenary 24 November vote S&D EPP compromise first reading",
+      "found": "Nothing relevant to this file.",
+      "belief": {
+        "p": 0.6,
+        "confidence": "medium",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "19 Nov 2026: EPP, Renew and S&D tabled joint compromise AMs on protected species (the issue S&D/Greens/Left rejected in committee), to be voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "With EPP+Renew+most S&D plus ECR/part of PfE, 'for' would plausibly be 420-480 of ~640 present"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979"
+        ],
+        "open": [
+          "Same; search returned nothing relevant"
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "action": "search",
+      "target": "europarl newsletter 23-26 November 2026 plenary environmental assessments speeding up vote",
+      "found": "Only EP votes index pages for the session and the procedure 2025/0391(COD); no new detail.",
+      "belief": {
+        "p": 0.6,
+        "confidence": "medium",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "19 Nov 2026: EPP, Renew and S&D tabled joint compromise AMs on protected species (the issue S&D/Greens/Left rejected in committee), to be voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "With EPP+Renew+most S&D plus ECR/part of PfE, 'for' would plausibly be 420-480 of ~640 present",
+          "EP votes page for 23-26 Nov 2026 session exists (europarl.europa.eu/plenary/*/votes.html); procedure 2025/0391(COD)"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "If compromise fails, S&D votes against and PfE/ESN split on the weakened text: 'for' ~350-390"
+        ],
+        "open": [
+          "Final S&D group line",
+          "Resolver treatment of a mandate vote with referral back"
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "action": "submit",
+      "target": "",
+      "found": "Submitted p_blind 0.60; signals file then showed no market or model on the vote, so p unchanged.",
+      "belief": {
+        "p": 0.6,
+        "confidence": "medium",
+        "for": [
+          "ep-plenary-vote slip rate 0.04 (slip.mjs): vote very likely held as scheduled",
+          "Vote listed for 23-26 Nov Strasbourg plenary; Agence Europe headline says compromise AMs voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "Rapporteur Ytterell is Renew, so Renew backs the report; EPP backs simplification — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "19 Nov 2026: EPP, Renew and S&D tabled joint compromise AMs on protected species (the issue S&D/Greens/Left rejected in committee), to be voted Tue 24 Nov — https://agenceurope.eu/en/bulletin/article/13985/6/compromise-amendments-on-protected-species-to-be-voted-on-in-european-parliament-plenary-on-tuesday-24-november",
+          "With EPP+Renew+most S&D plus ECR/part of PfE, 'for' would plausibly be 420-480 of ~640 present",
+          "EP votes page for 23-26 Nov 2026 session exists (europarl.europa.eu/plenary/*/votes.html); procedure 2025/0391(COD)"
+        ],
+        "against": [
+          "400 'for' needs a broad coalition; EPP+right simplification votes (e.g. omnibus I, Nov 2025) landed around 380",
+          "S&D and The Left deplored the ENVI committee vote outcome — https://agenceurope.eu/en/bulletin/article/13976/12/european-parliament-groups-sd-and-the-left-deplore-environmental-assessments-vote-outcome",
+          "ENVI adopted 4 Nov 2026 by only 36-35-11 — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "Press release: after plenary 'Parliament will be ready to start negotiations' — likely a mandate vote with referral back (criterion lists 'referred back' as NO; ambiguity) — https://ieu-monitoring.com/editorial/eu-parliament-committee-backs-300-day-cap-on-environmental-assessments/1253979",
+          "If compromise fails, S&D votes against and PfE/ESN split on the weakened text: 'for' ~350-390"
+        ],
+        "open": [
+          "Final S&D group line",
+          "Resolver treatment of a mandate vote with referral back"
+        ]
+      }
+    }
+  ],
+  "p_blind": 0.6,
+  "p": 0.6
+}
