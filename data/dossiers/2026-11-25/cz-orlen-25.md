@@ -58,3 +58,12 @@
 ## Unreachable
 - psp.cz and public.psp.cz (curl 35, connection reset) — agenda, invitation and vote records; psp.cz open-data cache not present, so refdata could not be refreshed.
 - irozhlas.cz (403, per sweep); HN article body (paywall).
+
+## Added from the PSP desk snapshot (22 Nov evening)
+Source: data/psp/latest.json and data/psp/meetings/10-37.json on main (commit bab436c), observed 2026-11-22T18:47:38Z from psp.cz; read 2026-11-22T19:05Z.
+- The 7-day shortening of the period before third reading was adopted: vote 89028, 36th sitting, 13 Nov 2026 13:17, "Zkrácení lhůty pro zahájení třetího čtení na sedm dní", 77 for, 23 against, 100 present — https://www.psp.cz/sqw/hlasy.sqw?G=89028 . Print 311/3 circulated 13 Nov 16:38; the bill can be taken up in third reading from 21 Nov — https://www.psp.cz/sqw/historie.sqw?o=10&t=311
+- Proposed agenda of the 37th sitting (not yet approved; the sitting opens Tue 24 Nov at 14:00): the bill is item 148 in the block "zákony – třetí čtení", marked "(lze projednávat)", with no fixed slot — https://www.psp.cz/schuze/10/37
+- Proposed day order: Tue 24 Nov "body dle návrhu pořadu schůze" only; Wed 25 Nov item 1 (budget 2027, second reading), then "případně body z bloku 3. čtení"; Fri 27 Nov "případně body z bloku 3. čtení"; the same pattern on 2 and 4 Dec and 16 and 18 Dec — https://www.psp.cz/schuze/10/37
+- In the third-reading block, items 126–137 (twelve bills, all marked "lze projednávat" or eligible from 24 Nov) stand before item 148 in the proposed order — https://www.psp.cz/schuze/10/37
+- The budget committee lists print 311 on its invitation for 24 Nov (snapshot note); the Hospodářské noviny report that the tax "se bude projednávat v úterý 24. listopadu" may refer to that, not to the plenary vote — https://www.psp.cz/sqw/historie.sqw?o=10&t=311
+- A fixed slot on Tuesday would need a majority vote on the agenda at the opening of the sitting; none is proposed in the invitation.

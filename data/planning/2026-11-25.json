@@ -4,14 +4,14 @@
   "prepared_at": "2026-11-22T19:22:04+01:00",
   "method_version": 6,
   "number_expected": 34,
-  "candidates": 47,
-  "candidates_note": "13 proposed stories with 15 claims (3 interval: cz-conf-25, de-ifo-25, us-cb-25; no derived claims) and 34 dropped candidates, from the stories of the day (10 listed), a Czech sweep, a world/Europe sweep, an economy and newsroom-planners sweep, and the forecast board. Dossiers be-gov-25, lh-pilots-25 and uk-tube-25 were written but not forecast (see dropped).",
-  "planned_lead": "ua-war (at least 130 drones in the Air Force summary for the night to Tue 24 Nov: 71%) or gulf-shipping (UKMTO incident on Tuesday: 66%). Czech lead: cz-chamber (refinery tax passed in third reading on Tuesday: 29%, awaited; STAN Poland resolution voted down: 86%). Strong European alternative: eu-semester (Commission finds France's 2027 plan compliant: 69%).",
-  "cz_note": "Three Czech stories proposed: cz-chamber (refinery tax third reading; STAN agenda vote), cz-confidence (ČSÚ composite confidence, interval), cz-court (Constitutional Court judgment on Český rozhlas).",
+  "candidates": 48,
+  "candidates_note": "13 proposed stories with 14 claims (3 interval: cz-conf-25, de-ifo-25, us-cb-25; no derived claims) and 34 dropped candidates, from the stories of the day (10 listed), a Czech sweep, a world/Europe sweep, an economy and newsroom-planners sweep, and the forecast board. Dossiers be-gov-25, lh-pilots-25 and uk-tube-25 were written but not forecast (see dropped). cz-orlen-25 was forecast and then moved to dropped after the psp.cz desk snapshot (see there).",
+  "planned_lead": "ua-war (at least 130 drones in the Air Force summary for the night to Tue 24 Nov: 71%) or gulf-shipping (UKMTO incident on Tuesday: 66%). Czech lead: cz-chamber (the Chamber votes down STAN's proposal to put its Poland resolution on the agenda: 86%); the refinery-tax third reading is not expected before Wed 25 or Fri 27 Nov (psp.cz proposed agenda). Strong European alternative: eu-semester (Commission finds France's 2027 plan compliant: 69%).",
+  "cz_note": "Three Czech stories proposed: cz-chamber (STAN agenda vote; the refinery-tax claim was dropped after the psp.cz snapshot), cz-confidence (ČSÚ composite confidence, interval), cz-court (Constitutional Court judgment on Český rozhlas).",
   "cz_shortfall": "3 Czech stories against the aim of eight. Tue 24 Nov is a thin Czech day: the Chamber sitting opens (agenda fights; budget second reading on Wed 25 Nov), the cabinet met on Monday, ČNB has no meeting (board 2–3 Dec), ERÚ's 2027 prices and suppliers' price lists are undated, the licence-fee bill is in committee (27 Nov), and no company results, polls or Senate votes fall on Tuesday. Rejected Czech candidates are in dropped (sport, a private person's sentence, the President's speech, a minor ÚS case).",
-  "economy": "Seven stories with topic economy: cz-chamber (refinery windfall tax), eu-semester (France's draft budgetary plan), us-confidence and de-ifo (intervals), dell (full-year guidance raise), cz-confidence (interval), hp (EPS at least $0.75).",
+  "economy": "Six stories with topic economy: eu-semester (France's draft budgetary plan), us-confidence and de-ifo (intervals), dell (full-year guidance raise), cz-confidence (interval), hp (EPS at least $0.75).",
   "easy_main": "Two main claims at 90% or more: pt-budget-25 (0.96: Portugal's budget passes the final vote; the reader's question is whether the minority government survives the budget after PS and Chega rewrote taxes) and cz-us-cro-25 (0.91: the Court grants Český rozhlas's complaint). No other main claim reaches 90%. No secondary claim at 95% or more.",
-  "negative_main": "Two main claims below 50% in the plan: cz-orlen-25 (0.29) carries awaited (HN: the Chamber takes up the tax on Tue 24 Nov); rs-call-25 (0.47) has no awaited, so the morning must either see it at 50% or more after the overnight check (Čupić's RTS interview on Sunday evening may name the day) or drop rs-election to the diary. Alternatively, if the morning prefers, cz-chamber can lead with cz-stan-25 (0.86) and keep cz-orlen-25 as secondary, which frees the awaited slot.",
+  "negative_main": "One main claim below 50%: rs-call-25 (0.47), without awaited; the morning must either see it at 50% or more after the overnight check or drop rs-election to the diary (the awaited slot is free: cz-chamber now leads with cz-stan-25 at 0.86).",
   "reports_what_happens": "Every main claim is about an outcome on Tue 24 Nov: the Air Force's drone count, UKMTO incident reports, the Chamber's third-reading vote, the Commission's opinion on France, Portugal's final budget vote, three published indices, Dell's guidance and HP's EPS, the Constitutional Court's judgment, the EP vote tally, and the Serbian election call.",
   "running_note": "Stories of the day read 22 Nov ~17:40Z from BBC, DW, Euronews, Al Jazeera, ČT24, Seznam Zprávy, Novinky and ČTK (Reuters World and Business 401, AP, FT, iROZHLAS 403). 10 listed, 3 covered (Czech Chamber: cz-chamber; Iran war: gulf-shipping; Russia–Ukraine war: ua-war).",
   "running_shortfall": "3 running stories covered against running_min 6. The other seven have nothing reportable on Tue 24 Nov: the Benghazi and Gulf of Finland ship strikes have no dated step, COP31 closed without a deal on 22 Nov, the EU budget goes to the special summit from Thu 26 Nov, Eisenkot's coalition talks have no dated step (mandate to 6 Dec), the Czech air-defence choice is undated, Huang faces House panels on 1 Dec, and the FBI database inquiry has no dated step. Each is in the diary with its next dated step.",
@@ -250,11 +250,11 @@
     "searches": 170,
     "note": "Searches as reported by agents: sweeps 38 (running 12, Czech 12, world/Europe 6, economy 8), board checks 15, dossiers 36 (agenda, board checks and dossiers 89 <= 120); evidence forecasters 28 + 3 board, outsiders 14 + 3 board (48 <= evidence reserve 50); disagreement research 16; shadow sequential 7. About 30 left for the morning. Agents: 4 sweeps, 2 board checks, 5 dossier agents, 15 forecasters (5 roles x 3 groups; A and B in two steps with SendMessage, anchors one step, board group one step; 10 of them continued once more for the rerun), 2 disagreement-research agents, 3 sequential researchers."
   },
-  "note": "Evening desk round one, prepared 22 Nov 2026 18:38–19:22 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-22, Platt a 0.1857, b 1.3374; equal weights); combined is the plain geometric mean of odds. Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written before the agent was sent the signals step (anchor: one step). Evidence forecasters: p_blind is the own-research figure; the after-dossier figure is in rounds. Disagreement research ran for six claims with spread above 15 points; it was decisive for gulf-ukmto-25, cz-stan-25 and dell-25, whose five forecasters reran on the union of facts (round-one figures in rounds). Interval claims: quantiles are the mean of the five forecasters; widths 4.15 (cz-conf), 4.13 (ifo), 4.11 (CB) scales.",
+  "note": "Evening desk round one, prepared 22 Nov 2026 18:38–19:22 CET. Published binary figure: calibrated combination (pipeline/calibration.json version 2026-11-22, Platt a 0.1857, b 1.3374; equal weights); combined is the plain geometric mean of odds. Models: base-rate, evidence, anchor claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5. Every blind file was written before the agent was sent the signals step (anchor: one step). Evidence forecasters: p_blind is the own-research figure; the after-dossier figure is in rounds. Disagreement research ran for six claims with spread above 15 points; it was decisive for gulf-ukmto-25, cz-stan-25 and dell-25, whose five forecasters reran on the union of facts (round-one figures in rounds). Interval claims: quantiles are the mean of the five forecasters; widths 4.15 (cz-conf), 4.13 (ifo), 4.11 (CB) scales. Update after the psp.cz desk snapshot (data/psp/latest.json, commit bab436c, observed 18:47Z): cz-orlen-25 rerun by all five forecasters (0.05/0.06/0.03/0.05/0.06; earlier figures in rounds), published 0.03 and moved to dropped; cz-stan-25 unchanged (the snapshot confirms the STAN request is not in the proposed agenda and has not been decided).",
   "for_publisher": [
-    "cz-orlen-25 – Sněmovna v úterý 24. 11. schválí ve třetím čtení mimořádnou daň pro rafinerie – 24. 11. 23:59",
     "cz-stan-25 – Sněmovna v úterý 24. 11. odmítne zařadit na program usnesení STAN o raketách v Polsku – 24. 11. 23:59",
-    "cz-us-cro-25 – Ústavní soud v úterý 24. 11. vyhoví stížnosti Českého rozhlasu ve sporu o DPH – 24. 11. 23:59"
+    "cz-us-cro-25 – Ústavní soud v úterý 24. 11. vyhoví stížnosti Českého rozhlasu ve sporu o DPH – 24. 11. 23:59",
+    "cz-conf-25 – souhrnný indikátor důvěry ČSÚ za listopad (interval) – 24. 11. 09:00"
   ],
   "stories": [
     {
@@ -746,15 +746,15 @@
     {
       "id": "cz-chamber",
       "scope": "cz",
-      "topic": "economy",
+      "topic": "politics",
       "rank": 3,
       "scores": {
         "impact": 4,
         "reach": 4,
-        "uncertainty": 4
+        "uncertainty": 3
       },
-      "event": "The Chamber of Deputies opens its regular sitting on Tue 24 Nov with the government's extraordinary 50% tax on refinery margins (for 2026–27, aimed in practice at Orlen Unipetrol's Kralupy and Litvínov refineries, ~CZK 5.5bn for 2026) awaiting third reading after the opposition tabled about thirty amendments. Speaker Okamura says the coalition (ANO, SPD, Motoristé; 108 of 200 seats) wants it passed this week; HN reported it would be debated on Tuesday 24 Nov, but no fixed slot could be confirmed (psp.cz unreachable). The opening day also brings agenda fights (STAN's Poland resolution), and the budget's second reading is set for Wednesday.",
-      "title_cs": "Sněmovna zahajuje schůzi: mimořádná daň pro rafinerie a návrh STAN k raketám v Polsku",
+      "event": "The Chamber of Deputies opens its regular sitting on Tue 24 Nov with the government's extraordinary 50% tax on refinery margins (for 2026–27, aimed in practice at Orlen Unipetrol's Kralupy and Litvínov refineries, ~CZK 5.5bn for 2026) awaiting third reading after the opposition tabled about thirty amendments. Speaker Okamura says the coalition (ANO, SPD, Motoristé; 108 of 200 seats) wants it passed this week; HN reported it would be debated on Tuesday 24 Nov, but no fixed slot could be confirmed (psp.cz unreachable). The opening day also brings agenda fights (STAN's Poland resolution), and the budget's second reading is set for Wednesday. Update 22 Nov evening (psp.cz desk snapshot): the refinery tax (print 311, item 148) has no fixed slot; the third-reading block is proposed for Wed 25 and Fri 27 Nov, so the story now leads with the vote on STAN's proposal at the opening on Tuesday.",
+      "title_cs": "Sněmovna zahajuje schůzi: hlasování o návrhu STAN zařadit usnesení k raketám v Polsku",
       "sources": [
         {
           "title": "ČTK: Poslanci se budou zabývat rozpočtem a schvalovat daň na rafinerie",
@@ -776,189 +776,6 @@
       "event_key": "cz-refinery-tax-third-reading-2026-11-24",
       "case_key": "cz-refinery-tax",
       "claims": [
-        {
-          "id": "cz-orlen-25",
-          "label": "Refinery tax passed on Tuesday",
-          "text": "The Chamber of Deputies passes the extraordinary refinery tax bill (the windfall tax on refinery margins, \"lex Orlen\") in third reading on Tuesday 24 November 2026.",
-          "criterion": "YES if, between 00:00 and 23:59 on Tue 24 Nov 2026 (Europe/Prague), the Chamber of Deputies adopts in third reading (final passage vote) the government bill introducing an extraordinary tax on refineries' increased margins, in any amended form, as shown by the psp.cz vote record or reported by ČTK, ČT24 or another major Czech outlet. NO if no such passage vote is held on 24 Nov (item not reached, interrupted or postponed to a later day) or if the bill is rejected. A report published after midnight about a vote held on 24 Nov counts.",
-          "resolution_source": "psp.cz vote record (hlasování) for 24 Nov 2026; ČTK / ČT24 reports",
-          "schedule": "reported",
-          "slip_class": "cz-chamber-gov-bill-reading",
-          "publishes": "psp.cz vote record and ČTK/ČT24 minutes after the vote, Tue 24 Nov",
-          "tz": "Europe/Prague",
-          "event_window": {
-            "start": "2026-11-24T00:00:00+01:00",
-            "end": "2026-11-24T23:59:00+01:00"
-          },
-          "evidence_at": "2026-11-24T22:00:00+01:00",
-          "resolves_by": "2026-11-26T05:00:00+01:00",
-          "cs": {
-            "label": "Daň pro rafinerie schválena v úterý",
-            "text": "Poslanecká sněmovna v úterý 24. listopadu 2026 ve třetím čtení schválí zákon o mimořádné dani pro rafinerie (zdanění zvýšených marží rafinerií, takzvaný lex Orlen).",
-            "criterion": "ANO, pokud Poslanecká sněmovna mezi 00:00 a 23:59 v úterý 24. listopadu 2026 (pražského času) ve třetím čtení vysloví souhlas s vládním návrhem zákona o mimořádné dani ze zvýšených marží rafinerií, v jakémkoli pozměněném znění, podle záznamu hlasování na psp.cz nebo zpráv ČTK, ČT24 či jiného hlavního českého média. NE, pokud se 24. listopadu závěrečné hlasování nekoná (Sněmovna se k bodu nedostane, projednávání přeruší či odloží na pozdější den) nebo pokud Sněmovna návrh zamítne. Zpráva zveřejněná po půlnoci o hlasování konaném 24. listopadu se počítá."
-          },
-          "dossier": "data/dossiers/2026-11-25/cz-orlen-25.md",
-          "signals": "data/dossiers/2026-11-25/cz-orlen-25.signals.md",
-          "probability": 0.29,
-          "forecast": {
-            "baseline": {
-              "status_quo": "unclear",
-              "why": "Passage on Tuesday is the reported plan (HN: debated on 24 Nov), but no fixed slot is confirmed and the opening day usually goes to agenda votes; whether simply following the schedule yields a Tuesday vote cannot be told.",
-              "set_by": "dossier agent, before the forecasters reported"
-            },
-            "market_search": {
-              "at": "2026-11-22T17:58:00Z",
-              "checked": [
-                "markets.mjs search \"Czech parliament\"",
-                "markets.mjs search \"Orlen\"",
-                "markets.mjs search \"Czech confidence\""
-              ],
-              "note": "Only unrelated EURO 2028, Czech mayoral, tennis and Polish markets; nothing on the Chamber vote."
-            },
-            "market": null,
-            "base_rate": {
-              "class": "cz-chamber-gov-bill-reading (passage given a third-reading vote: government bills this term)",
-              "rate": 0.947,
-              "n": 19,
-              "source": "pipeline/reference-data/cz-chamber.json final_votes_on_bills.by_kind.government_bills; slip rate 0.615 from slip.mjs cz-chamber-gov-bill-reading"
-            },
-            "dossier": "data/dossiers/2026-11-25/cz-orlen-25.md",
-            "signals": "data/dossiers/2026-11-25/cz-orlen-25.signals.md",
-            "agents": [
-              {
-                "role": "base-rate",
-                "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:06:47+01:00",
-                "inputs_blind": [
-                  "dossier",
-                  "reference-data"
-                ],
-                "p_blind": 0.35,
-                "reason_blind": "slip.mjs cz-chamber-gov-bill-reading: 0.615 slip (own 6/9), so p_held ~0.385; completion at the sitting historically only 13/69. Opening day is consumed by agenda approval and opposition proposals (STAN Poland point), no fixed Tuesday slot confirmed (psp.cz unreachable), ~30 amendments; slight down to 0.37. Passage if voted: government bills 18/19 (0.947).",
-                "p": 0.35,
-                "p_held": 0.37,
-                "p_if_held": 0.95,
-                "at": "2026-11-22T19:08:56+01:00",
-                "inputs": [
-                  "dossier",
-                  "reference-data",
-                  "signals"
-                ],
-                "reason": "Slip rate 0.615 for government-bill readings; an opening day taken up by agenda votes; passage 18/19 if voted. The signals have no match, so no change."
-              },
-              {
-                "role": "evidence",
-                "model": "claude-opus-5-5",
-                "at_blind": "2026-11-22T19:08:05+01:00",
-                "inputs_blind": [
-                  "own-research"
-                ],
-                "p_blind": 0.35,
-                "reason_blind": "Second reading done 13 Nov; Schillerová sought a 7-day shortened period so the bill can be passed at the sitting opening Tue 24 Nov, but no fixed Tuesday slot found. Opening day has agenda fights (STAN Poland resolution), ~30 opposition amendments and opposition promises of thorough debate. Passage is safe if voted (108 seats). After dossier: completion at-meeting 13/69, Okamura names no day, budget on Wednesday -> 0.30.",
-                "p": 0.3,
-                "at": "2026-11-22T19:09:06+01:00",
-                "inputs": [
-                  "own-research",
-                  "dossier",
-                  "signals"
-                ],
-                "reason": "Passage safe if voted, but no fixed Tuesday slot, opening-day agenda fights and ~30 amendments make a Tuesday vote less likely than not; no market.",
-                "rounds": [
-                  {
-                    "p": 0.3,
-                    "at": "2026-11-22T19:08:05+01:00",
-                    "reason": "after reading the dossier, before the signals"
-                  }
-                ]
-              },
-              {
-                "role": "adversarial",
-                "model": "claude-fable-5-2",
-                "at_blind": "2026-11-22T19:06:35+01:00",
-                "inputs_blind": [
-                  "dossier",
-                  "reference-data"
-                ],
-                "p_blind": 0.24,
-                "reason_blind": "Slip class cz-chamber-gov-bill-reading 0.615 (own 6/9); government third readings completed at the meeting only 13/69. Opening day carries agenda approval, the STAN proposal and other opposition motions, about 30 amendments and a promised thorough debate; no fixed Tuesday slot is confirmed, the shortened 7-day period is unconfirmed, and third readings usually sit in Wednesday/Friday slots, so I put the Tuesday vote below the class rate. If voted, passage is near certain (gov bills 18/19, coalition 108 seats).",
-                "p": 0.24,
-                "p_held": 0.25,
-                "p_if_held": 0.96,
-                "at": "2026-11-22T19:09:32+01:00",
-                "inputs": [
-                  "dossier",
-                  "reference-data",
-                  "signals"
-                ],
-                "reason": "Slip rate 0.615, crowded opening day, no confirmed Tuesday slot and the shortened period unconfirmed; passage near certain if voted. Signals: nothing matches; unchanged."
-              },
-              {
-                "role": "anchor",
-                "model": "claude-opus-5-5",
-                "p": 0.32,
-                "p_held": 0.34,
-                "p_if_held": 0.95,
-                "at": "2026-11-22T19:08:00+01:00",
-                "inputs": [
-                  "signals",
-                  "dossier",
-                  "reference-data"
-                ],
-                "reason": "No market; slip model cz-chamber-gov-bill-reading gives P(slip) 0.615, and the opening day carries agenda fights, ~30 amendments, no confirmed fixed Tuesday slot and no confirmation that the shortened 7-day period was approved, so p_held ~0.34; passage if voted ~0.95 (government bills 18/19, coalition 108 seats)."
-              },
-              {
-                "role": "outsider",
-                "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-22T19:20:00+01:00",
-                "inputs_blind": [
-                  "own-research",
-                  "reference-data"
-                ],
-                "p_blind": 0.35,
-                "reason_blind": "ČT24: third reading possible at the sitting starting 24 Nov, needs shortened 7-day period; opposition filed ~30 amendments. Class cz-chamber-gov-bill-reading slip rate 0.615 (own 6/9). Coalition majority passes if reached.",
-                "p": 0.35,
-                "p_held": 0.4,
-                "p_if_held": 0.9,
-                "at": "2026-11-22T19:40:00+01:00",
-                "inputs": [
-                  "own-research",
-                  "reference-data",
-                  "signals"
-                ],
-                "reason": "No market matched; unchanged."
-              }
-            ],
-            "missing": [],
-            "combined": 0.31,
-            "combination": {
-              "method": "calibrated",
-              "weights": {
-                "base-rate": 1,
-                "evidence": 1,
-                "adversarial": 1,
-                "anchor": 1,
-                "outsider": 1
-              },
-              "platt": {
-                "a": 0.1857,
-                "b": 1.3374
-              },
-              "version": "2026-11-22"
-            },
-            "calibrated": 0.293,
-            "decomposition": {
-              "p_held": 0.304,
-              "p_if_held": 0.954,
-              "p_if_not_held": 0
-            },
-            "spread": 0.11,
-            "disagreement": null,
-            "open_because": {
-              "why": "Timing, not the outcome, is open: no fixed Tuesday slot confirmed (psp.cz unreachable), opening-day agenda fights, ~30 amendments, unconfirmed approval of the shortened 7-day period; once voted the coalition majority passes it.",
-              "source": "https://www.ceskenoviny.cz/zpravy/poslanci-se-budou-zabyvat-rozpoctem-a-schvalovat-dan-na-rafinerie/2904989"
-            }
-          }
-        },
         {
           "id": "cz-stan-25",
           "label": "Chamber rejects STAN's Poland item",
@@ -1187,14 +1004,9 @@
               "reforecast": true
             },
             "disagreement": null
-          },
-          "not_derived": true
+          }
         }
       ],
-      "awaited": {
-        "what": "HN reported the refinery tax 'se bude v Poslanecké sněmovně projednávat v úterý 24. listopadu'; ČTK/ČT24 say only that it could be passed at the sitting opening 24 Nov",
-        "source": "https://byznys.hn.cz/c1-67959280-boj-o-lex-orlen-rafinerskou-dan-kterou-navrhuje-schillerova-chteji-poslanci-zmirnit"
-      },
       "notes_for_editor": "Main doubt is the day: HN's 'v úterý 24. listopadu' may just be the sitting's opening date. ČTK's Okamura preview gives Wednesday for the budget but no day for the tax. Check psp.cz pořad schůze on Monday/Tuesday morning for a fixed slot (e.g. 'pevně zařazen jako 1. bod v úterý'). If fixed first after agenda approval, Tuesday passage is likely; if not fixed, Wed/Thu/Fri more likely. Seats: 108 coalition (reference data); per-party split not sourced here."
     },
     {
@@ -3801,6 +3613,247 @@
         "uncertainty": 4
       },
       "why": "No checkable outcome defined in advance."
+    },
+    {
+      "event": "cz-orlen-25: the Chamber passes the refinery windfall tax in third reading on Tue 24 Nov",
+      "scope": "cz",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "After the psp.cz desk snapshot the five forecasters reran at 0.03–0.06 (published 0.03): no fixed Tuesday slot, third-reading block on Wed 25 and Fri 27 Nov. A secondary claim at 95% or more either way needs open_because and nothing shows the coalition will fix it for Tuesday. Full forecast record kept here.",
+      "claim_record": {
+        "id": "cz-orlen-25",
+        "label": "Refinery tax passed on Tuesday",
+        "text": "The Chamber of Deputies passes the extraordinary refinery tax bill (the windfall tax on refinery margins, \"lex Orlen\") in third reading on Tuesday 24 November 2026.",
+        "criterion": "YES if, between 00:00 and 23:59 on Tue 24 Nov 2026 (Europe/Prague), the Chamber of Deputies adopts in third reading (final passage vote) the government bill introducing an extraordinary tax on refineries' increased margins, in any amended form, as shown by the psp.cz vote record or reported by ČTK, ČT24 or another major Czech outlet. NO if no such passage vote is held on 24 Nov (item not reached, interrupted or postponed to a later day) or if the bill is rejected. A report published after midnight about a vote held on 24 Nov counts.",
+        "resolution_source": "psp.cz vote record (hlasování) for 24 Nov 2026; ČTK / ČT24 reports",
+        "schedule": "reported",
+        "slip_class": "cz-chamber-gov-bill-reading",
+        "publishes": "psp.cz vote record and ČTK/ČT24 minutes after the vote, Tue 24 Nov",
+        "tz": "Europe/Prague",
+        "event_window": {
+          "start": "2026-11-24T00:00:00+01:00",
+          "end": "2026-11-24T23:59:00+01:00"
+        },
+        "evidence_at": "2026-11-24T22:00:00+01:00",
+        "resolves_by": "2026-11-26T05:00:00+01:00",
+        "cs": {
+          "label": "Daň pro rafinerie schválena v úterý",
+          "text": "Poslanecká sněmovna v úterý 24. listopadu 2026 ve třetím čtení schválí zákon o mimořádné dani pro rafinerie (zdanění zvýšených marží rafinerií, takzvaný lex Orlen).",
+          "criterion": "ANO, pokud Poslanecká sněmovna mezi 00:00 a 23:59 v úterý 24. listopadu 2026 (pražského času) ve třetím čtení vysloví souhlas s vládním návrhem zákona o mimořádné dani ze zvýšených marží rafinerií, v jakémkoli pozměněném znění, podle záznamu hlasování na psp.cz nebo zpráv ČTK, ČT24 či jiného hlavního českého média. NE, pokud se 24. listopadu závěrečné hlasování nekoná (Sněmovna se k bodu nedostane, projednávání přeruší či odloží na pozdější den) nebo pokud Sněmovna návrh zamítne. Zpráva zveřejněná po půlnoci o hlasování konaném 24. listopadu se počítá."
+        },
+        "dossier": "data/dossiers/2026-11-25/cz-orlen-25.md",
+        "signals": "data/dossiers/2026-11-25/cz-orlen-25.signals.md",
+        "probability": 0.03,
+        "forecast": {
+          "baseline": {
+            "status_quo": "unclear",
+            "why": "Passage on Tuesday is the reported plan (HN: debated on 24 Nov), but no fixed slot is confirmed and the opening day usually goes to agenda votes; whether simply following the schedule yields a Tuesday vote cannot be told.",
+            "set_by": "dossier agent, before the forecasters reported"
+          },
+          "market_search": {
+            "at": "2026-11-22T17:58:00Z",
+            "checked": [
+              "markets.mjs search \"Czech parliament\"",
+              "markets.mjs search \"Orlen\"",
+              "markets.mjs search \"Czech confidence\""
+            ],
+            "note": "Only unrelated EURO 2028, Czech mayoral, tennis and Polish markets; nothing on the Chamber vote."
+          },
+          "market": null,
+          "base_rate": {
+            "class": "cz-chamber-gov-bill-reading (passage given a third-reading vote: government bills this term)",
+            "rate": 0.947,
+            "n": 19,
+            "source": "pipeline/reference-data/cz-chamber.json final_votes_on_bills.by_kind.government_bills; slip rate 0.615 from slip.mjs cz-chamber-gov-bill-reading"
+          },
+          "dossier": "data/dossiers/2026-11-25/cz-orlen-25.md",
+          "signals": "data/dossiers/2026-11-25/cz-orlen-25.signals.md",
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at_blind": "2026-11-22T19:06:47+01:00",
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ],
+              "p_blind": 0.35,
+              "reason_blind": "slip.mjs cz-chamber-gov-bill-reading: 0.615 slip (own 6/9), so p_held ~0.385; completion at the sitting historically only 13/69. Opening day is consumed by agenda approval and opposition proposals (STAN Poland point), no fixed Tuesday slot confirmed (psp.cz unreachable), ~30 amendments; slight down to 0.37. Passage if voted: government bills 18/19 (0.947).",
+              "p": 0.05,
+              "p_held": 0.053,
+              "p_if_held": 0.95,
+              "at": "2026-11-22T19:57:41+01:00",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals",
+                "union-of-facts"
+              ],
+              "reason": "The proposed agenda puts the bill at item 148 with no fixed slot, and the third-reading block starts Wednesday or Friday. The sitting only opens at 14:00 Tuesday, and the budget committee takes up the bill's amendments that day. A Tuesday vote would need a coalition agenda motion at the opening, which nobody has proposed, so p_held falls from the slip-class 0.385 to about 0.05; passage stays near-certain if voted.",
+              "rounds": [
+                {
+                  "p": 0.35,
+                  "at": "2026-11-22T19:08:56+01:00",
+                  "reason": "evening round before the psp.cz desk snapshot (data/psp/latest.json)"
+                }
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at_blind": "2026-11-22T19:08:05+01:00",
+              "inputs_blind": [
+                "own-research"
+              ],
+              "p_blind": 0.35,
+              "reason_blind": "Second reading done 13 Nov; Schillerová sought a 7-day shortened period so the bill can be passed at the sitting opening Tue 24 Nov, but no fixed Tuesday slot found. Opening day has agenda fights (STAN Poland resolution), ~30 opposition amendments and opposition promises of thorough debate. Passage is safe if voted (108 seats). After dossier: completion at-meeting 13/69, Okamura names no day, budget on Wednesday -> 0.30.",
+              "p": 0.06,
+              "at": "2026-11-22T19:57:52+01:00",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals",
+                "union-of-facts"
+              ],
+              "reason": "The sitting opens only at 14:00 Tuesday, the bill is item 148 behind twelve third readings with the block slotted for Wednesday/Friday, and no fixed Tuesday slot is proposed; YES needs the coalition to fix it for Tuesday at the opening and finish it the same evening, which nothing points to.",
+              "rounds": [
+                {
+                  "p": 0.3,
+                  "at": "2026-11-22T19:08:05+01:00",
+                  "reason": "after reading the dossier, before the signals"
+                },
+                {
+                  "p": 0.3,
+                  "at": "2026-11-22T19:09:06+01:00",
+                  "reason": "evening round before the psp.cz desk snapshot (data/psp/latest.json)"
+                }
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at_blind": "2026-11-22T19:06:35+01:00",
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ],
+              "p_blind": 0.24,
+              "reason_blind": "Slip class cz-chamber-gov-bill-reading 0.615 (own 6/9); government third readings completed at the meeting only 13/69. Opening day carries agenda approval, the STAN proposal and other opposition motions, about 30 amendments and a promised thorough debate; no fixed Tuesday slot is confirmed, the shortened 7-day period is unconfirmed, and third readings usually sit in Wednesday/Friday slots, so I put the Tuesday vote below the class rate. If voted, passage is near certain (gov bills 18/19, coalition 108 seats).",
+              "p": 0.03,
+              "p_held": 0.03,
+              "p_if_held": 0.96,
+              "at": "2026-11-22T19:58:09+01:00",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals",
+                "union-of-facts"
+              ],
+              "reason": "The sitting opens at 14:00 with no Tuesday slot for the bill: the third-reading block is proposed for Wed 25 and Fri 27 Nov, twelve third readings stand ahead of item 148, and the budget committee still has the amendments on its 24 Nov agenda. A Tuesday vote would need an unproposed coalition motion to fix the item that day, so only a small residual remains.",
+              "rounds": [
+                {
+                  "p": 0.24,
+                  "at": "2026-11-22T19:09:32+01:00",
+                  "reason": "evening round before the psp.cz desk snapshot (data/psp/latest.json)"
+                }
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "p_held": 0.34,
+              "p_if_held": 0.95,
+              "at": "2026-11-22T19:58:22+01:00",
+              "inputs": [
+                "signals",
+                "dossier",
+                "reference-data",
+                "union-of-facts"
+              ],
+              "reason": "The sitting opens only at 14:00 Tue with agenda votes and second readings; the third-reading block (bill is item 148 behind 12 others, no fixed slot) is slotted for Wed/Fri, so a Tuesday vote needs an unannounced coalition motion to fix it that day; passage if voted stays ~0.95.",
+              "rounds": [
+                {
+                  "p": 0.32,
+                  "at": "2026-11-22T19:08:00+01:00",
+                  "reason": "evening round before the psp.cz desk snapshot (data/psp/latest.json)"
+                }
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at_blind": "2026-11-22T19:20:00+01:00",
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ],
+              "p_blind": 0.35,
+              "reason_blind": "ČT24: third reading possible at the sitting starting 24 Nov, needs shortened 7-day period; opposition filed ~30 amendments. Class cz-chamber-gov-bill-reading slip rate 0.615 (own 6/9). Coalition majority passes if reached.",
+              "p": 0.06,
+              "p_held": 0.4,
+              "p_if_held": 0.9,
+              "at": "2026-11-22T21:00:00+01:00",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals",
+                "union-of-facts"
+              ],
+              "reason": "The bill is item 148 with no fixed slot, Tuesday is planned for opening votes and second readings, and the third-reading block starts Wed/Fri behind twelve other items; passage on Tuesday would need a coalition agenda vote to fix it for that day.",
+              "rounds": [
+                {
+                  "p": 0.35,
+                  "at": "2026-11-22T19:40:00+01:00",
+                  "reason": "evening round before the psp.cz desk snapshot (data/psp/latest.json)"
+                }
+              ]
+            }
+          ],
+          "missing": [],
+          "combined": 0.049,
+          "combination": {
+            "method": "calibrated",
+            "weights": {
+              "base-rate": 1,
+              "evidence": 1,
+              "adversarial": 1,
+              "anchor": 1,
+              "outsider": 1
+            },
+            "platt": {
+              "a": 0.1857,
+              "b": 1.3374
+            },
+            "version": "2026-11-22"
+          },
+          "calibrated": 0.022,
+          "decomposition": {
+            "p_held": 0.04,
+            "p_if_held": 0.752,
+            "p_if_not_held": 0
+          },
+          "spread": 0.03,
+          "disagreement": null,
+          "open_because": {
+            "why": "Timing, not the outcome, is open: no fixed Tuesday slot confirmed (psp.cz unreachable), opening-day agenda fights, ~30 amendments, unconfirmed approval of the shortened 7-day period; once voted the coalition majority passes it.",
+            "source": "https://www.ceskenoviny.cz/zpravy/poslanci-se-budou-zabyvat-rozpoctem-a-schvalovat-dan-na-rafinerie/2904989"
+          },
+          "psp_snapshot": {
+            "file": "data/psp/latest.json",
+            "commit": "bab436c",
+            "as_of": "2026-11-22T18:47:38.796Z",
+            "finding": "7-day shortening adopted (vote 89028, 77–23); bill is item 148 of the proposed 37th sitting with no fixed slot; third-reading block proposed for Wed 25 and Fri 27 Nov; Tuesday has only the general proposed order from 14:00.",
+            "reforecast": true,
+            "before": 0.29,
+            "after": 0.03
+          },
+          "adjustment": "Ensemble 0.049 (calibrated 0.022) clamped to the minimum of 0.03."
+        }
+      }
     }
   ]
 }
