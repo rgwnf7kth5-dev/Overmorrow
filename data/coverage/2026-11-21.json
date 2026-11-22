@@ -1,0 +1,28 @@
+{
+  "edition": "2026-11-21",
+  "checked_at": "2026-11-22T05:16:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 20, read 22 Nov 03:59 UTC)",
+    "ct24 (ČT24 domácí list, first page, items dated 20 Nov; read 22 Nov 04:05 UTC). Page 2 did not load",
+    "ctk (ceskenoviny.cz ČR list, items dated 20.11.2026; read 22 Nov 04:04 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2) and no day list for 20 Nov was found from a substitute within the search budget, so list (b) is missing: no world or Europe event could reach two lists."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (list (b) missing): tanker damaged and on fire off Khasab in the Strait of Hormuz; Saudi-led strikes on Hodeidah and other Houthi targets; Yemeni government operations in Al-Jawf, Marib and Taiz; Russian Kh-101 missile hits a field near Nowy Lipowiec in Lublin Voivodeship, Poland; Salvadoran soldiers killed in Haiti and Haiti-El Salvador prison agreement; Bayelsa boat disaster (24 dead); arrest of Los Mazatlecos leader Fausto Isidro Meza Flores; Schettino released; general strike in Italy (covered, it-strike); Iraq-Kata'ib Hezbollah agreement on Jurf al-Sakhar; claimed proof of the Riemann hypothesis. The EU-UK summit (covered, eu-uk-summit), the Senate votes of 19 Nov and COP31's missed close were not on the Wikipedia page when read.",
+    "ČTK-only Czech items: Pavel warns an incident like the one in Poland could happen in Czechia; Pavel says the government underestimated communication on abolishing the ČT/ČRo fees; Tejc wants to recover damages from judges without disciplinary proceedings; Alza suspends prescription-drug box deliveries after SÚKL action; revised driving eTests; HIV cases at second-highest level since the 1980s; Želechovice ballot-room break-in investigated; Příbram school false alarm.",
+    "ČT24-only Czech items: student and senior fare discounts without a date; death of psychologist Lydia Tischlerová; Centre for Public Finance proposals before the budget's second reading; electronic police fine books."
+  ],
+  "events": [
+    {
+      "title": "Rail safety commission after the 17 Nov Prague train collision: Transport Minister Bednárik introduces a 'four eyes' signal check, piloted at Prague main station from December",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/vyjadreni-po-jednani-bezpecnostni-komise-ke-srazce-vlaku-v-praze-379783",
+      "status": "missed",
+      "note": "Not in the planning file, which treated the Prague train collision as an accident and did not track the follow-up commission; whether the commission's 20 Nov meeting was dated in advance was not verified, so no source is added."
+    }
+  ]
+}

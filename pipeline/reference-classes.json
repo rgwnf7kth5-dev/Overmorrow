@@ -1262,7 +1262,7 @@
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim cz-prague-elected-20",
       "own_record": {
-        "yes": 2,
+        "yes": 3,
         "no": 0
       }
     },
@@ -1306,7 +1306,7 @@
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim us-permit-20",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 0
       }
     },
@@ -1327,6 +1327,61 @@
       "base_rate": null,
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim ir-hormuz-18",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "summit-announces-concluded-agreement",
+      "description": "A bilateral summit announces that a pre-negotiated agreement (or package strand) is concluded or agreed on the summit day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 22 Nov 2026 (resolver); added from claim eu-uk-sps-21, eu-uk-youth-21",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "senate-war-powers-yeas-threshold",
+      "description": "A US Senate war-powers resolution vote reaches a stated number of Yeas",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 22 Nov 2026 (resolver); added from claim us-iran-wp-21",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "senate-war-powers-adopted",
+      "description": "The US Senate adopts a war-powers resolution opposed by the majority party leadership",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 22 Nov 2026 (resolver); added from claim us-iran-wp-pass-21",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cop-new-main-draft-on-scheduled-last-day",
+      "description": "A COP presidency publishes a new draft of the main (cover) decision on the scheduled last day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 22 Nov 2026 (resolver); added from claim cop31-newdraft-21",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cop-last-day-draft-keeps-fossil-wording",
+      "description": "A COP presidency publishes a new cover-decision draft on the scheduled last day and it contains fossil-fuel transition/phase-out wording",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 22 Nov 2026 (resolver); added from claim cop31-draft-21",
       "own_record": {
         "yes": 0,
         "no": 1
