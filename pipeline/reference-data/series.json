@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "pooled": {
-  "n": 52,
-  "rms_in_scales": 1.331,
+  "n": 55,
+  "rms_in_scales": 1.306,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -175,10 +175,19 @@
      "centre": 44.85,
      "scale_used": 0.72,
      "source": "https://mf.gov.cz/assets/attachments/2026-11-16_Cenovy-vestnik-125-2026.pdf"
+    },
+    {
+     "edition": "2026-11-21",
+     "claim": "cz-diesel-21",
+     "consensus": 44.95,
+     "first": 44.53,
+     "centre": 45.05,
+     "scale_used": 0.72,
+     "source": "No analyst forecast exists; formula-based extrapolation in data/dossiers/2026-11-21/cz-diesel-21.md from MF Cenový věstník 126/2026 (https://mf.gov.cz/assets/attachments/2026-11-18_Cenovy-vestnik-126-2026.pdf; cap 45.68 for 19 Nov, index mean 35.25) and ULSD × USD/CZK 3-day windows (Platts index −0.95, three wholesale indices −0.5 each over two steps)"
     }
    ],
-   "n": 5,
-   "rms_surprise": 0.6567
+   "n": 6,
+   "rms_surprise": 0.6235
   },
   "us-core-pce-price-index-12-month-change-september-2026-first": {
    "unit": "%",
@@ -883,6 +892,38 @@
    ],
    "n": 1,
    "rms_surprise": 4.5
+  },
+  "great-britain-retail-sales-volumes-october-2026-m-m-change-s": {
+   "unit": "% m/m",
+   "records": [
+    {
+     "edition": "2026-11-21",
+     "claim": "uk-retail-21",
+     "consensus": 0,
+     "first": 0.7,
+     "centre": 0.18,
+     "scale_used": 1.11,
+     "source": "Forex Fundamentals (https://forexfundamentals.com/economic-calendar/uk-retail-sales/2026-11-20) and financecalendar citing Forex Fundamentals/Forex Factory (https://www.financecalendar.com/event/uk-retail-sales-november-2026/); ex-fuel +0.1% m/m per ADMISI"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.7
+  },
+  "japan-national-cpi-all-items-october-2026-y-y-statistics-bur": {
+   "unit": "% y/y",
+   "records": [
+    {
+     "edition": "2026-11-21",
+     "claim": "jp-cpi-21",
+     "consensus": 2.55,
+     "first": 2.3,
+     "centre": 2.5,
+     "scale_used": 0.25,
+     "source": "Midpoint of 2.6% (Econoday via https://www.financecalendar.com/event/japan-cpi-november-2026/ ; also ADMISI) and 2.5% (Bloomberg via TD Economics https://economics.td.com/domains/economics.td.com/documents/reports/bottom-line/tables/2026-11-13/upcoming.htm); core ex fresh food 2.4% (Econoday)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.25
   }
  },
  "extra": {}
