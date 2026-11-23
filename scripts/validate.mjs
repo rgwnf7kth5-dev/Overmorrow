@@ -567,6 +567,11 @@ for (const ed of editions) {
     const railWords = (ed.front?.rail || []).map((id) => words((ed.stories || []).find((x) => x.id === id)?.body || []));
     const leadWords = words((ed.stories || []).find((x) => x.id === ed.front?.lead)?.body || []);
     if (railWords.some((n) => n > leadWords)) err(w, 'a rail story is longer than the lead');
+    // From config.rail_from: the English front page carries one to three rail stories beside the lead (no blank column).
+    if (ed.number >= (cfg.rail_from ?? Infinity) && (ed.stories || []).length >= (cfg.rail_min_stories ?? 6)) {
+      const n = (ed.front?.rail || []).length;
+      if (n < 1 || n > 3) err(w, `front.rail has ${n} stories; put the one or two most important stories after the lead there (at most three)`);
+    }
     for (const row of ed.weather?.rows || []) if (!nonEmpty(row[1]) || /^[-—–\s]*$/.test(row[1])) err(w, `weather row "${row[0]}" is empty; use a fallback forecast source`);
   }
   const fix = loadCorrections(ed.id);

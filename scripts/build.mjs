@@ -499,25 +499,34 @@ function editionMain(original, L, isLatest = false) {
 
   // Front page balance: the lead column (8/12) and the rail (4/12) should end level. Estimate heights from text
   // length per column width; while the rail is clearly taller, move the first story of the sections up under the lead.
-  const textLen = (st) => 120 + [st.headline, st.standfirst || '', ...st.body].join(' ').length; // basis and sources are folded
-  const railH = ed.front.rail.reduce((a, id) => a + textLen(byId.get(id)), 0) / 4 + (w ? 500 / 4 : 0);
-  let leadH = (textLen(byId.get(ed.front.lead)) + 200) / 8;
+  // Heights in px, fitted on rendered editions (November 2026): basis and sources are folded and do not count.
+  const textLen = (st) => [st.headline, st.standfirst || '', ...st.body].join(' ').length;
+  const railCost = (id) => 0.8 * textLen(byId.get(id)) + 175 + (photos[id] ? 235 : 0);
+  const secondCost = (id) => 0.44 * textLen(byId.get(id)) + 150 + (photos[id] ? 300 : 0); // large headline, two columns
+  const railIds = [...(ed.front.rail || [])];
+  let railH = railIds.reduce((a, id) => a + railCost(id), 0) + (w ? 300 : 0);
+  let leadH = 0.21 * textLen(byId.get(ed.front.lead)) + 510 + (photos[ed.front.lead] ? 450 : 0);
   const secs = (ed.sections || []).map((sec) => ({ ...sec, stories: [...sec.stories] }));
   const frontExtra = [];
-  while (railH > leadH * 1.12 && frontExtra.length < 2) {
-    // Best fit: the section story whose height comes closest to closing the gap (each section keeps at least one story).
+  // Move section stories up, one at a time, into whichever column is shorter: the rail (an empty or short rail leaves
+  // a blank column beside the lead) or under the lead. Best fit first; each section keeps at least one story; a move
+  // is made only if it narrows the gap, except that an empty rail always takes one story.
+  for (let moves = 0; moves < 5 && Math.abs(leadH - railH) > 120; moves++) {
+    const toRail = leadH > railH;
+    const gap = Math.abs(leadH - railH);
+    const cost = toRail ? railCost : secondCost;
+    if (!toRail && frontExtra.length >= 2) break;
     let best = null;
     for (const sec of secs) if (sec.stories.length > 1) for (const id of sec.stories) {
-      const miss = Math.abs(railH - leadH - (textLen(byId.get(id)) * 1.6) / 8);
+      const miss = Math.abs(gap - cost(id));
       if (!best || miss < best.miss) best = { sec, id, miss };
     }
-    if (!best || best.miss >= railH - leadH) break;
+    if (!best || (best.miss >= gap && !(toRail && !railIds.length))) break;
     best.sec.stories.splice(best.sec.stories.indexOf(best.id), 1);
-    const st = byId.get(best.id);
-    frontExtra.push(st);
-    leadH += (textLen(st) * 1.6) / 8; // a second story costs more height than its text alone (large headline, narrower columns)
+    if (toRail) { railIds.push(best.id); railH += cost(best.id); }
+    else { frontExtra.push(byId.get(best.id)); leadH += cost(best.id); }
   }
-  const rail = ed.front.rail.map((id) => art(byId.get(id), '')).join('');
+  const rail = railIds.map((id) => art(byId.get(id), '')).join('');
 
   // Sections: stories flow through newspaper columns (3 / 2 / 1 by screen width). Text may continue into the next
   // column, the headline block never splits, so columns end level and no gaps or squeezed columns appear.
@@ -596,8 +605,8 @@ ${scorebar}
 ${limitedBanner}${updBanner}
 ${scorebar}
 <main class="grid">
-  <div class="frontcol s8">${art(byId.get(ed.front.lead), 'lead')}${frontExtra.map((st) => art(st, 'second', true)).join('')}</div>
-  <aside class="rail s4 vr">${rail}${weather}</aside>
+  <div class="frontcol ${rail || weather ? 's8' : 's12'}">${art(byId.get(ed.front.lead), 'lead')}${frontExtra.map((st) => art(st, 'second', true)).join('')}</div>
+  ${rail || weather ? `<aside class="rail s4 vr">${rail}${weather}</aside>` : ''}
   ${sections}
   ${isLatest ? watchStrip(L) : ''}
   ${diary}
