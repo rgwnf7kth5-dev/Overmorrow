@@ -1,0 +1,202 @@
+{
+ "claim": "On Wednesday 25 November 2026 the European Parliament approves the joint text of the 2027 EU budget with at least 420 votes in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:16:48Z",
+   "p": 0.67,
+   "searches": 7,
+   "sources": [
+    "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/765768/EPRS_STU%282025%29765768_EN.pdf",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0196(BUD)",
+    "https://research.europarl.europa.eu/EPRS_ATA%282026%29797045",
+    "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iPlRp/A-10-2026-0305/A-10-2026-0305_en.pdf",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F0196%28BUD%29",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=true&sessionDay.day=20261124&sessionDay.type=ALL",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=true&sessionDay.day=20261126&sessionDay.type=ALL",
+    "https://research.europarl.europa.eu/home/topics/plenary-session/plenary-november-ii-2026.html",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=false&sessionDay.day=20261124&sessionDay.type=ALL",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=true&sessionDay.day=20261123&sessionDay.type=ALL",
+    "https://research.europarl.europa.eu/home/topics/budgetary-affairs/BUDGET/eu-budget-2027.html",
+    "https://www.europarl.europa.eu/sedcms/votingList/%28A10-0044_2026%29_Usakovs.pdf",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file/pdf?reference=2026%2F0314%28BUD%29",
+    "https://research.europarl.europa.eu/home/topics/plenary-session/plenary-outlook-nov-I-2026.html",
+    "https://oeil.europarl.europa.eu/oeil/ga/procedure-file?reference=2026%2F0196%28BUD%29",
+    "https://research.europarl.europa.eu/EPRS_ATA%282026%29796988",
+    "https://www.europarl.europa.eu/pdfs/news/expert/agenda_week_by_day/11-2026/11-2026_en.pdf",
+    "https://www.europarl.europa.eu/news/en/agenda/weekly-agenda/2026-11",
+    "https://www.europarl.europa.eu/doceo/document/BUDG-DT-776855_EN.pdf",
+    "https://apnews.com/article/8c1baf00b55973a3534096aae2cc73a2",
+    "https://www.axios.com/local/new-orleans/2026/11/19/city-adopts-2027-budget-furloughs-end",
+    "https://apnews.com/article/f265e5e01b5076b9489f7a6c89f831f4",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/pdf/",
+    "https://www.consilium.europa.eu/de/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/",
+    "https://www.parlament.gv.at/dokument/XXVIII/EU/103607/imfname_11702617.pdf"
+   ],
+   "reason": "**Base rate.** Four of the last six comparable final votes on annual EU budget conciliation texts reached 420 votes in favour. The two most relevant precedents, both under the current Parliament, fell just short: the 2025 budget passed with 418 votes and the 2026 budget with 419. So the longer record favours YES, but the recent record puts the threshold in doubt. ([europarl.europa.eu](https://www.europarl.europa.eu/RegData/etudes/STUD/2025/765768/EPRS_STU%282025%29765768_EN.pdf))\n\n**What moves this case.** Parliament’s 21 October first-reading resolution drew 400 votes in favour, 20 short of the threshold. That is a caution for YES, but it is a stronger starting point than last year’s 384: last year the final agreement gained 35 votes over the first-reading resolution, and this year a gain of 20 would suffice. The compromise also restored funding for several Parliament priorities, which makes a gain plausible without guaranteeing it. ([oeil.europarl.europa.eu](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0196(BUD)))\n\n**Timing.** Parliament lists the joint-text vote for Wednesday, 25 November, and the Council formally approved the agreement on 23 November, clearing the prerequisite identified by Parliament’s research service. I put the chance of no vote in the specified window at about 2%; the main risk is a vote that passes with fewer than 420 in favour. ([oeil.europarl.europa.eu](https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0196(BUD)))\n\nNEW FACTS\n- 2026-11-23 | The Council formally approved the 2027 budget agreement and identified 25 November as the expected date of final adoption by Parliament. | https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/pdf/\n- 2026-11-19 | Parliament’s research service reported that the conciliation agreement reinforced Parliament’s spending priorities and set commitments at €199.7 billion. | https://research.europarl.europa.eu/EPRS_ATA%282026%29797045\n- 2026-11-17 | Report A10-0305/2026 was tabled after Parliament’s and the Council’s negotiators agreed to the joint text on 11 November. | https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iPlRp/A-10-2026-0305/A-10-2026-0305_en.pdf\n- 2025-11-26 | Parliament approved the 2026 budget joint text with 419 votes in favour, 185 against and 53 abstentions. | https://ae.lapresse.it/world-ae/2025/11/26/eu-european-parliament-gives-green-light-to-2026-budget/\n\nCOUNTER  \nThe same Parliament approved the last two annual budgets without reaching 420, and this year’s first-reading vote still needs a net gain of 20. A few absences or abstentions could leave an otherwise comfortable approval below the threshold; a late agenda change would also resolve the claim NO even if Parliament approved the text later.",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "The Council formally approved the 2027 budget agreement and identified 25 November as the expected date of final adoption by Parliament.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/pdf/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Parliament’s research service reported that the conciliation agreement reinforced Parliament’s spending priorities and set commitments at €199.7 billion.",
+     "url": "https://research.europarl.europa.eu/EPRS_ATA%282026%29797045"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "Report A10-0305/2026 was tabled after Parliament’s and the Council’s negotiators agreed to the joint text on 11 November.",
+     "url": "https://redmapl3.europarl.europa.eu/RedmapFront/media/reds_iPlRp/A-10-2026-0305/A-10-2026-0305_en.pdf"
+    },
+    {
+     "date": "2025-11-26",
+     "fact": "Parliament approved the 2026 budget joint text with 419 votes in favour, 185 against and 53 abstentions.",
+     "url": "https://ae.lapresse.it/world-ae/2025/11/26/eu-european-parliament-gives-green-light-to-2026-budget/"
+    }
+   ],
+   "counter": "The same Parliament approved the last two annual budgets without reaching 420, and this year’s first-reading vote still needs a net gain of 20. A few absences or abstentions could leave an otherwise comfortable approval below the threshold; a late agenda change would also resolve the claim NO even if Parliament approved the text later."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:17:19Z",
+   "p": 0.58,
+   "searches": 16,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGviQDkufonjZ8ll5iJFHun_pemFaMJq74K6_PPN0ydR7jyicJjJSDsGz_nRMIIQ3W_ZUwf7uTmcBJluq4pWrbV4khqBOyfBZ8mOqJ8uJK0A0Iie_ARfojdsTjHGfYKkvNrOmU63UZbTumBThMPOW-zm83TlnbOo1c049KEw6XECyto-FWiAFBiDNxoQICLEF1bGSg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrwv2Tf4D1sgu9vN9_uvoIzCi9WXp98o1lVLyBl_l2TEdTh2iXR26ny97jGfMHgPnRh5wkeDAUsWzRNKP-7Qbew8vQGRHaZm8mh23k1lcobT7fzsstLi6Pd-xe-4_A0J4E-fETDY0wCC5ZXX0RXEA2o2__nGG86TPUbzvEkEDF-PctONQSN7GvNn5jxUlR1P2HlXFPWwtxGkk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjwUOEuOwUZj2ZM1dkGZPjLTWy10kEE455o7I15f-5KX4rGSJYqWXiYiLWYmX7VM0fYsNnBMgx--T9re2nKSpDFLN1nVVKyGJ_crRYhCx2nMHpXuXh4i_0GKs48ZWwTLJ4Nhyf-Vu_MWzvW8h2D6UHleU3nzUnTxleN187zFDSaNP4363IP5mHD5stwfcZuOog2HZ6dXC-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHx-TdLbjxN5jUb4k8GjLnU8blkG2PsU3tI_iWKGkYxmhAIPPNK1KCFlc-OlkHgLohiCKkc3WlMP_g301A2-swrsvk1z6ynmHvcEY2o1EWpyhcFwTUAHL57ltk3mqwVAN59Zcojz5JoQ5qj5LFuzsH-hG3jGFBhZ3PYUUmPMxNzMQqlYx9XrPwAe05-IKnqUc194amQxrbHXSjEQgi4FC5zaKeHTlzR7tCJ-vth3uKrbqcYt9uz1uJv2nlbRnHD7G5E_A6_mA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqfg5H5lWlnH-PIFsrtZwtKtxcq-kEB-r_nNyF03knGQFsxCUv_-lCuSCbt2hPrpmoazeUARX2BzeyGrYYthhEYa3Pvs7QbuUxg7_YB_RqW_h-4jDWU6ooNwbr2WmwiO93am46CQR8xZNZ6uQ7tqRoDyatmHZ3TlWvqNgieCqp",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQnFLhSFYBvWhvR8ge9pKhT--D8hxkueyyY0RqmFXOsWEWloJh9kGNweK42BtC49_dog0jpco7p7aAjPXTTnRUipdHfVkofrXhbli3KZwMZvERXI70TyErpihu04Mhp_xYDMi-SmhXgqtNqxFpNuTiu00SJ88yO9MFZ2nFm9Qa41xV7Gc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwZ3JE-O6bYW2-jkgZYsrbDFJinI51WhxtPcq-7_D1KwXzVDPZEYsok1SXEav5vtxza5-TG4JuMBwhLuhQ3pBBJo7OolFedIj4w4A_Tt0Om0jzObQvPc5E_nF3nzCS9JFX8wIX8rVeMLtyPIU1tPDREV9CkdyHHC2eQBvqQVE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhfmMCigMK-77cX5gQtJpvYfrU71ajSh4I3N-uh4dsYYK0RDQUFXfZ4h_cTYpORGjvAWqBKzRYFXM4bPvji7CeZiI7dgklm-fb49eYbuEQ7hoNKvLHZ6KGcDclpWgBuuGoGCTz4oN-6DyEou_BKJqfZx3kqC7kZlO9",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrLI1amHPhmNA12kVv_DWFNTx4wQK85-UW6Mm28n4Wa0s_4yR9N8SzxDMwnLqAAFxBgFcWhHL4cZTTjWxAiA5TbcYtAiTKyQZ8okNozSATAn3TVtXbgIqQwm-0uBkv7r8cKbGtVCHmEVkBxAhSAv9uGcSo7GraXQ290RM8KAmlaDYxKf09bToApQwKiJXSBAmpwzvxIOqYFFF6",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuOPriZXi0OJXHPfEBX-HJ6QF7v_ZQSv9dP3CT715Cezvz8e31BoRuVyrPcZfFYiQAB4gKzJWa1pfVsF1wWVb1mUnRh5qortFf3lIhhEyz2TrmphZl4dg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2_XDEf_sdzbUWsKj5UTOTHs2F44rX3wNxlu-8N-BgmB4aMYxohwQogahaxdQz5XcQ3BRl83-sJmpDl2TlVaPg7vnzLQruNV7aYyw-3jynpxBRgoQAFglGpAzkgLdEHAFZEJ8fu4ZpROVMy6I3qc93IiVRh-JThEWA8FoAPnZQKiplTjZO2s4OCCWtWRCZZGhVqiTnwNQIHNujSu51Wo7Z1HD-2zH2hNhxwtCKW8G4fUau6sN0H2uOgwc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkD3TnggBmFhYg6KjOnDCZrNBT7hieFg_epssj_HA1SQcqEkI18CjlqgRlP5bvUdqbKJnvRdw1D5uR_6xEetKrjGuEOaESVgOTk0l-UzwusmMSlZAuZ70w6urPPT2TQseFSzuwDWtf9sOKw9e10WJ-oA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGrdvEOu53Pab3zioCNAh1fR4FUqFEnX0cXz_F__j_rZeThDQfd1Aixn71vSfTPA9DLByUC9DQvtXJBPq5kfVBhAhbTQkiMlVNvvIkF9u9HkH9R4eB7YbX-dxxmyeX3wcetMY4IpzS8TsfX0moNow7UpSpdC9K4l0m-EoXoQiz"
+   ],
+   "reason": "6 November 2025):** Approved with **419** votes in favour, 185 against, and 53 abstentions (total 657 votes cast).\n\nThus, in the two most directly comparable votes in the current parliamentary term, the base rate for achieving *at least 420* votes in favour is 0 out of 2, though both landed within 1 to 2 votes of the mark.\n\n### 2. Dated Facts Moving This Case\n- **Scheduling and Procedure (Direction: Positive for vote occurring and passing on 25 Nov):** On 11 November 2026, Parliament and Council negotiators reached a provisional agreement on the 2027 budget during budgetary conciliation. On 17 November 2026, the budgetary conciliation report (A10-0305/2026, co-rapporteurs Nils Ušakovs and Michalis Hadjipantela, procedure 2026/0196(BUD)) was tabled for plenary. According to the final draft agenda published on 20 November 2026 and the Parliament's weekly schedule published on 21 November 2026, the vote on report A10-0305/2026 is confirmed for the 12:00–13:00 CET voting session on Wednesday, 25 November 2026.\n- **Stronger First-Reading Support than Last Year (Direction: Positive toward reaching ≥420 votes):** On 21 October 2026, the European Parliament adopted its initial plenary resolution on the 2027 draft budget by **400** votes in favour, 189 against, and 84 abstentions (673 total votes cast). By comparison, on 22 October 2025, the initial plenary resolution on the 2026 draft budget passed with only **384** votes in favour, 202 against, and 58 abstentions (644 total votes cast). In 2025, support grew by +35 votes between the October position (384) and the November joint text (419) as compromise with the Council brought aboard hesitant centrist and some conservative (ECR) MEPs. Starting from a baseline of 400 votes in October 2026—16 votes higher than at the same stage last year—means only a +20 net increase is needed to hit 420.\n- **Breakdown of Coalition Support (Direction: Slightly Positive / Neutral):** In the 21 October 2026 vote, the 400 votes in favour came primarily from EPP (163), S&D (122), Renew (64), and Greens/EFA (44), while 10 Renew MEPs voted against and 44 ECR MEPs abstained. Following the 11 November conciliation deal—which pairs fiscal discipline with over €300 million in top-ups for Horizon Europe, border management, and humanitarian aid—some of the dissenting Renew MEPs and abstaining ECR MEPs are likely to shift to \"in favour,\" as occurred in 2024 and 2025.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile a modest increase from the 400 first-reading votes makes 420+ votes slightly more likely than not, the ceiling of the supporting coalition (EPP, S&D, Renew, Greens/EFA) is tightly constrained in EP10, and the ECR, PfE, ESN, and The Left largely abstain or vote against annual budget deals. Even a minor dip in Wednesday midday attendance among pro-coalition MEPs, or dissatisfaction among Greens/EFA or S&D members over the scaled-back conciliation top-ups (€300 million secured versus €1.17 billion originally demanded in October), could easily keep the final tally in the 405–419 range, just as happened in 2024 (418) and 2025 (419).\n\nBalancing the historical ceiling of 418–419 in EP10 against the notably higher starting baseline in October 2026 (400 vs. 384 in 2025), the vote is likely to land very close to 420, with a slight edge toward reaching or exceeding 420.\n\nNEW FACTS\n- 2024-11-27 | The European Parliament adopted the 2025 EU annual budget joint text with 418 votes in favour, 185 against, and 67 abstentions. | https://www.eunews.it/en/2024/11/27/game-closed-on-2025-eu-budget-about-e200-billion-planned/\n- 2025-10-22 | The European Parliament adopted its initial position resolution on the 2026 EU budget with 384 votes in favour, 202 against, and 58 abstentions. | https://www.europarl.europa.eu/news/en/press-room/20251016IPR30992/2026-eu-budget-focus-on-competitiveness-preparedness-and-defence\n- 2025-11-26 | The European Parliament adopted the 2026 EU annual budget joint text with 419 votes in favour, 185 against, and 53 abstentions. | https://www.europeaninterest.eu/2026-eu-budget-meps-focus-on-competitiveness-research-and-security/\n- 2026-10-21 | The European Parliament adopted its position on the 2027 EU draft budget by 400 votes in favour, 189 against, and 84 abstentions, backed mainly by the EPP (163), S&D (122), Renew (64), and Greens/EFA (44). | https://votemap.eu/en/vote/201/\n- 2026-11-19 | Following a provisional conciliation agreement reached with the Council on 11 November 2026, the 2027 EU budget is scheduled for adoption during the November II plenary session. | https://www.europarl.europa.eu/thinktank/en/document/EPRS_ATA(2026)797399\n- 2026-11-20 | The European Parliament announced a press conference with rapporteurs Nils Ušakovs and Michalis Hadjipantela for Wednesday, 25 November 2026 at 10:30 CET ahead of the plenary vote on the adoption of the 2027 EU budget. | https://www.europarl.europa.eu/news/es/press-room/20261119IPR31465/press-conference-on-the-adoption-of-the-2027-eu-budget-on-wednesday-at-10-30\n- 2026-11-21 | The European Parliament's weekly agenda schedules the plenary vote on the 2027 budgetary procedure joint text (2026/0196(BUD), report A10-0305/2026 by Ušakovs and Hadjipantela) for the 12:00–13:00 CET voting session on Wednesday, 25 November 2026. | https://www.europarl.europa.eu/news/sv/agenda/weekly-agenda\n\nCOUNTER\nIn both previous annual budget joint text votes during the 10th European Parliament term, the final tally fell just short of 420 (recording 418 votes in favour in November 2024 and 419 in November 2025) because the four-party centrist coalition holds a narrower majority while right-wing, far-right, and far-left groups consistently abstain or vote against. Even a slightly lower plenary turnout on Wednesday or minor defections among Greens/EFA or S&D members disappointed that Parliament's €1.17 billion first-reading top-up request was scaled back to €300 million in conciliation would keep the yes vote below 420.",
+   "facts": [
+    {
+     "date": "2024-11-27",
+     "fact": "The European Parliament adopted the 2025 EU annual budget joint text with 418 votes in favour, 185 against, and 67 abstentions.",
+     "url": "https://www.eunews.it/en/2024/11/27/game-closed-on-2025-eu-budget-about-e200-billion-planned/"
+    },
+    {
+     "date": "2025-10-22",
+     "fact": "The European Parliament adopted its initial position resolution on the 2026 EU budget with 384 votes in favour, 202 against, and 58 abstentions.",
+     "url": "https://www.europarl.europa.eu/news/en/press-room/20251016IPR30992/2026-eu-budget-focus-on-competitiveness-preparedness-and-defence"
+    },
+    {
+     "date": "2025-11-26",
+     "fact": "The European Parliament adopted the 2026 EU annual budget joint text with 419 votes in favour, 185 against, and 53 abstentions.",
+     "url": "https://www.europeaninterest.eu/2026-eu-budget-meps-focus-on-competitiveness-research-and-security/"
+    },
+    {
+     "date": "2026-10-21",
+     "fact": "The European Parliament adopted its position on the 2027 EU draft budget by 400 votes in favour, 189 against, and 84 abstentions, backed mainly by the EPP (163), S&D (122), Renew (64), and Greens/EFA (44).",
+     "url": "https://votemap.eu/en/vote/201/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Following a provisional conciliation agreement reached with the Council on 11 November 2026, the 2027 EU budget is scheduled for adoption during the November II plenary session.",
+     "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_ATA(2026"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "The European Parliament announced a press conference with rapporteurs Nils Ušakovs and Michalis Hadjipantela for Wednesday, 25 November 2026 at 10:30 CET ahead of the plenary vote on the adoption of the 2027 EU budget.",
+     "url": "https://www.europarl.europa.eu/news/es/press-room/20261119IPR31465/press-conference-on-the-adoption-of-the-2027-eu-budget-on-wednesday-at-10-30"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "The European Parliament's weekly agenda schedules the plenary vote on the 2027 budgetary procedure joint text (2026/0196(BUD), report A10-0305/2026 by Ušakovs and Hadjipantela) for the 12:00–13:00 CET voting session on Wednesday, 25 November 2026.",
+     "url": "https://www.europarl.europa.eu/news/sv/agenda/weekly-agenda"
+    }
+   ],
+   "counter": "In both previous annual budget joint text votes during the 10th European Parliament term, the final tally fell just short of 420 (recording 418 votes in favour in November 2024 and 419 in November 2025) because the four-party centrist coalition holds a narrower majority while right-wing, far-right, and far-left groups consistently abstain or vote against. Even a slightly lower plenary turnout on Wednesday or minor defections among Greens/EFA or S&D members disappointed that Parliament's €1.17 billion first-reading top-up request was scaled back to €300 million in conciliation would keep the yes vote below 420."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:19:20Z",
+   "p": 0.4,
+   "searches": 16,
+   "sources": [
+    "https://github.com/HowTheyVote/data/releases/latest",
+    "https://2eu.brussels/index.php/en/news/french-mep-calls-for-overhaul-of-eu-budget-talks-after-questioning-clarity-of-political-consent",
+    "https://x.com/EP_EPRS/status/2124888279107489975",
+    "https://op.europa.eu/pl/publication-detail/-/publication/f8cdf04b-ab3f-11ef-acb1-01aa75ed71a1/language-en",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2025-0235_EN.html",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2026-0305_EN.pdf",
+    "https://www.kiprinform.com/en/news/european-parliament-to-hold-press-conference-with-2027-eu-budget-rapporteurs-ahead-of-plenary-vote/",
+    "https://op.europa.eu/bg/publication-detail/-/publication/f8cdf04b-ab3f-11ef-acb1-01aa75ed71a1/language-en",
+    "https://www.lagrandeconversation.com/en/international-affairs/the-far-right-in-the-european-union-a-resistible-electoral-rise-but-a-political-one/",
+    "https://2eu.brussels/en/events/buget-ue-2027",
+    "https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?lang=en&reference=COM(2026)0300",
+    "https://epvotes.com/votes/198774",
+    "https://www.europarl.europa.eu/news/fr/agenda/plenary-news/2026-11-23/13/vote-sur-l-accord-avec-les-etats-membres-concernant-le-budget-europeen-pour-2027",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2024-0014_EN.html",
+    "https://www.europarl.europa.eu/telastatic/cmsdata/313301/Result_of_votes_2026_11_19.pdf",
+    "https://eur-lex.europa.eu/eli/C/2025/4702/oj/eng",
+    "https://www.politiquematin.fr/budget-2026-commission-mixte-paritaire-accord-20-novembre-2026",
+    "https://policycommons.net/artifacts/20194004/c20251815-2025-budgetary-procedure/21094529/",
+    "https://2eu.brussels/en/news/parliament-and-council-reach-deal-on-199-7-billion-in-commitments-for-2027-eu-budget",
+    "https://x.com/SebLecornu/status/2124888424494604345",
+    "https://www.europarl.europa.eu/meps/fr/full-list/pdf/c",
+    "https://www.steptoe.com/en/news-publications/the-topline-steptoe-appropriations-newsletter-november-20-2026.html",
+    "https://epvotes.com/week/2026-W48",
+    "https://epvotes.com/dossiers/2025-0210-general-budget-european-union-financial-year-2026-all"
+   ],
+   "reason": "The vote is on the agenda and the deal is already cleared by Council; the live question is whether the “for” count clears 420.\n\nComparable cases are the two joint-text votes in this Parliament, not the pre-2024 term. Both were Wednesday Strasbourg roll-calls on a conciliation deal the centre had already signed: 418 in favour on 27 November 2024 (2025 budget) and 419 on 26 November 2025 (2026 budget). Rejection is not the relevant base rate — a joint text falls only if a majority of component Members vote against, and the “against” column has sat near 185. The relevant base rate is a yes-count clustered just under 420.\n\nFacts that move this case only a little. Council formally adopted the joint text on 23 November 2026 and said Parliament’s adoption was expected on 25 November. The Wednesday agenda, updated the same day, places report A10-0305/2026 (procedure 2026/0196(BUD), Hadjipantela/Ušakovs) in the 12:00 vote block, after the debate set for Tuesday. The text was forwarded on 11 November, so the 14-day approval window ends on the 25th, which makes a slip past the window unlikely. Parliament’s own briefing says approval is expected, and the rapporteurs are EPP and S&D. That raises the chance the vote is held and the text passes; it does not show a larger yes camp than last year. The October position, the same coalition’s more ambitious text, passed only 400–189–84, with EPP, S&D, Renew and Greens mostly in favour and none voting as a full bloc. Last year’s larger “win” (€372.7 million above the Commission draft) still produced only 419.\n\nThe obvious miss is therefore not rejection or a cancelled sitting. It is a yes-count of 410–419. Yes votes have been sticky even when overall attendance moved (670 voting in 2024, 657 in 2025). A handful of centre absences, or Renew/Greens hold-outs of the kind already seen in October, keeps the result on the wrong side of 420. A few extra centre MEPs present, or a small ECR swing from abstention to yes, would put it over. No such swing is in evidence.\n\n\n\nNEW FACTS\n- 2026-11-23 | The Council formally adopted the 2027 EU budget joint text and said Parliament’s final adoption was expected on 25 November. | https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/\n- 2026-11-23 | The Wednesday 25 November agenda lists the 12:00 vote on the 2027 budgetary procedure joint text, report A10-0305/2026, procedure 2026/0196(BUD). | https://www.europarl.europa.eu/doceo/document/OJQ-10-2026-11-25_EN.html\n- 2026-11-19 | Parliament’s plenary briefing said MEPs were expected to approve the 2027 budget deal on Wednesday 25 November, after a debate on Tuesday 24 November. | https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/13/meps-to-vote-on-2027-eu-budget-deal-reached-with-member-states\n- 2026-11-16 | A Council note records that the joint text was forwarded on 11 November 2026 and that each institution has 14 days from that day to approve it. | https://www.parlament.gv.at/dokument/XXVIII/EU/103607/imfname_11702617.pdf\n- 2026-11-11 | Parliament and Council negotiators reached a provisional 2027 deal at €199.7 billion in commitments, still to be endorsed by both institutions. | https://www.europarl.europa.eu/pdfs/news/expert/2026/11/press_release/20261109IPR48711/20261109IPR48711_en.pdf\n- 2026-10-21 | Parliament adopted its position on the 2027 draft budget by 400 votes to 189, with 84 abstentions. | https://epvotes.com/votes/198774\n- 2025-11-26 | The 2026 budget joint text was approved by 419 votes in favour, 185 against and 53 abstentions. | https://howtheyvote.eu/votes/181633\n- 2024-11-27 | The 2025 budget joint text was approved by 418 votes in favour, 185 against and 67 abstentions. | https://howtheyvote.eu/votes/170621\n\nCOUNTER\nThe two joint-text roll-calls in this Parliament landed at 418 and 419, so clearing 420 needs only a few more centre MEPs in the chamber than last November. Wednesday’s vote is the headline item, the 14-day window forces it onto the 25th, and EPP and S&D rapporteurs are whipping a deal their groups already own; that is enough for the count to print at 420 or just above even if group lines do not change.",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "The Council formally adopted the 2027 EU budget joint text and said Parliament’s final adoption was expected on 25 November.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/23/eu-budget-for-2027-council-gives-final-green-light/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Wednesday 25 November agenda lists the 12:00 vote on the 2027 budgetary procedure joint text, report A10-0305/2026, procedure 2026/0196(BUD).",
+     "url": "https://www.europarl.europa.eu/doceo/document/OJQ-10-2026-11-25_EN.html"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Parliament’s plenary briefing said MEPs were expected to approve the 2027 budget deal on Wednesday 25 November, after a debate on Tuesday 24 November.",
+     "url": "https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/13/meps-to-vote-on-2027-eu-budget-deal-reached-with-member-states"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "A Council note records that the joint text was forwarded on 11 November 2026 and that each institution has 14 days from that day to approve it.",
+     "url": "https://www.parlament.gv.at/dokument/XXVIII/EU/103607/imfname_11702617.pdf"
+    },
+    {
+     "date": "2026-11-11",
+     "fact": "Parliament and Council negotiators reached a provisional 2027 deal at €199.7 billion in commitments, still to be endorsed by both institutions.",
+     "url": "https://www.europarl.europa.eu/pdfs/news/expert/2026/11/press_release/20261109IPR48711/20261109IPR48711_en.pdf"
+    },
+    {
+     "date": "2026-10-21",
+     "fact": "Parliament adopted its position on the 2027 draft budget by 400 votes to 189, with 84 abstentions.",
+     "url": "https://epvotes.com/votes/198774"
+    },
+    {
+     "date": "2025-11-26",
+     "fact": "The 2026 budget joint text was approved by 419 votes in favour, 185 against and 53 abstentions.",
+     "url": "https://howtheyvote.eu/votes/181633"
+    },
+    {
+     "date": "2024-11-27",
+     "fact": "The 2025 budget joint text was approved by 418 votes in favour, 185 against and 67 abstentions.",
+     "url": "https://howtheyvote.eu/votes/170621"
+    }
+   ],
+   "counter": "The two joint-text roll-calls in this Parliament landed at 418 and 419, so clearing 420 needs only a few more centre MEPs in the chamber than last November. Wednesday’s vote is the headline item, the 14-day window forces it onto the 25th, and EPP and S&D rapporteurs are whipping a deal their groups already own; that is enough for the count to print at 420 or just above even if group lines do not change."
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "claim": "The Chamber of Deputies completes the second reading of the 2027 state budget bill (print 324) on Wednesday 25 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:11:40Z",
+   "p": 0.89,
+   "searches": 7,
+   "sources": [
+    "https://www.psp.cz/eknih/2021ps/stenprot/082schuz/82-2.html",
+    "https://ct24.ceskatelevize.cz/clanek/ekonomika/jak-zlepsit-verejne-finance-experti-navrhuji-upravy-v-danich-i-revizi-vydaju-379736",
+    "https://www.blesk.cz/clanek/zpravy-politika/853234/poslanci-se-v-tydnu-vrati-ke-spornemu-snizeni-podpor-i-mimoradne-dani-na-rafinerie.html",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
+    "https://www.psp.cz/sqw/historie.sqw?t=324",
+    "https://sledovna.cz/program/",
+    "https://stopazakona.cz/tisky/prt_01a0ffbb-3539-7f1b-a1bf-59a8a5a0cb01",
+    "https://www.psp.cz/sqw/historie.sqw?T=324&o=10",
+    "https://www.dataprehledne.cz/tisk/324",
+    "https://psp.cz/eknih/2025ps/stenprot/034schuz/index.htm",
+    "https://sledovna.cz/tisk/324/",
+    "https://public.psp.cz/schuze/10/34",
+    "https://fulltext.psp.cz/usneseni",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/index.htm",
+    "https://www.psp.cz/schuze/10/34",
+    "https://snemovna.hlidacstatu.cz/laws/324?period=10",
+    "https://snemovna.hlidacstatu.cz/api/tisk-pdf/10/324",
+    "https://vlada.gov.cz/assets/ppov/lrv/dokumenty/20250729_Legislativa-2025-Komplet-FINAL.pdf",
+    "https://www.rozpoctovarada.cz/en/ke-stazeni/statement-of-the-czech-fiscal-council-on-the-draft-state-budget-for-2027/",
+    "https://vlada.gov.cz/assets/Statni_sluzba/urednicka_zkouska/materialy_k_uz/UT_01-Finance_2025_-_20250821.pdf",
+    "https://www.youtube.com/watch?v=NnqSe-jLQlQ",
+    "https://www.youtube.com/watch?v=oCzNIL1H92U",
+    "https://apnews.com/article/6089528c2382c77f3dd4079b60f35274",
+    "https://apnews.com/article/54cfecc6d7943b1ee508238f92f3f399",
+    "https://ct24.ceskatelevize.cz/tema/verejne-finance-459"
+   ],
+   "reason": "**Base rate.** The two comparable cases I checked both completed second reading in a single sitting day: the 2024 budget on November 15, 2023, and the 2026 budget on March 4, 2026. That’s a 2-for-2 benchmark, not a large enough sample to treat same-day completion as a certainty. ([psp.cz](https://www.psp.cz/eknih/2021ps/stenprot/082schuz/82-2.html))\n\n**What moves this case.** **Up:** ČT24 on November 20 and ČTK on November 22 both identified Wednesday, November 25 as the second-reading day. ČTK’s report was based on coalition plans conveyed by Chamber Speaker Tomio Okamura. **Up:** The Budget Committee had already recommended approval on November 11, so committee work was not holding up the floor debate. **Down:** This bill’s first reading ran across October 21 and 22, and MPs were still filing amendments on November 23. That makes a spillover more plausible, although second reading cannot reopen the budget’s basic totals. ([ct24.ceskatelevize.cz](https://ct24.ceskatelevize.cz/clanek/ekonomika/jak-zlepsit-verejne-finance-experti-navrhuji-upravy-v-danich-i-revizi-vydaju-379736))\n\n**Window risk.** I put about 3% on the reading not opening on November 25 and another 8% on it opening without reaching formal closure that day. The larger risk is a debate that runs long or is suspended, not a last-minute change to the start date. ([blesk.cz](https://www.blesk.cz/clanek/zpravy-politika/853234/poslanci-se-v-tydnu-vrati-ke-spornemu-snizeni-podpor-i-mimoradne-dani-na-rafinerie.html?utm_source=openai))\n\n**NEW FACTS**\n- 2026-11-22 | ČTK reported that Wednesday was the planned day for second reading after Speaker Tomio Okamura briefed it on the coalition’s plans. | https://www.blesk.cz/clanek/zpravy-politika/853234/poslanci-se-v-tydnu-vrati-ke-spornemu-snizeni-podpor-i-mimoradne-dani-na-rafinerie.html\n- 2026-11-20 | ČT24 identified November 25 as the date for the budget’s second reading. | https://ct24.ceskatelevize.cz/clanek/ekonomika/jak-zlepsit-verejne-finance-experti-navrhuji-upravy-v-danich-i-revizi-vydaju-379736\n- 2026-11-11 | The Chamber’s Budget Committee recommended approval of the draft 2027 budget. | https://www.idnes.cz/zpravy/domaci/rozpocet-vybor-poslanecka-snemovna-schillerova-pikora-dluh-schodek.A261110_210656_domaci_ikro\n\n**COUNTER**  \nThe Wednesday slot is a commitment to take up the bill, not to finish it. This bill’s first reading already took two days, and if speeches and amendments push the chair to suspend the detailed debate until Thursday, the claim resolves NO even though the reading opened on schedule. ([psp.cz](https://www.psp.cz/sqw/historie.sqw?o=10&t=324))",
+   "facts": [
+    {
+     "date": "2026-11-22",
+     "fact": "ČTK reported that Wednesday was the planned day for second reading after Speaker Tomio Okamura briefed it on the coalition’s plans.",
+     "url": "https://www.blesk.cz/clanek/zpravy-politika/853234/poslanci-se-v-tydnu-vrati-ke-spornemu-snizeni-podpor-i-mimoradne-dani-na-rafinerie.html"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "ČT24 identified November 25 as the date for the budget’s second reading.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/jak-zlepsit-verejne-finance-experti-navrhuji-upravy-v-danich-i-revizi-vydaju-379736"
+    },
+    {
+     "date": "2026-11-11",
+     "fact": "The Chamber’s Budget Committee recommended approval of the draft 2027 budget.",
+     "url": "https://www.idnes.cz/zpravy/domaci/rozpocet-vybor-poslanecka-snemovna-schillerova-pikora-dluh-schodek.A261110_210656_domaci_ikro"
+    }
+   ],
+   "counter": "The Wednesday slot is a commitment to take up the bill, not to finish it. This bill’s first reading already took two days, and if speeches and amendments push the chair to suspend the detailed debate until Thursday, the claim resolves NO even though the reading opened on schedule. ([psp.cz](https://www.psp.cz/sqw/historie.sqw?o=10&t=324))"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:12:44Z",
+   "p": 0.63,
+   "searches": 20,
+   "sources": [
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=324&rss-cz=3",
+    "https://www.bizinet.cz/clanek/hrozivy-rozpocet-prosel-i-ve-druhem-cteni-2761917",
+    "https://article.wn.com/view/2026/10/22/Snemovna_po_15_hodinach_prerusila_debatu_o_rozpoctu/",
+    "https://media24.cz/article/poslanci-se-preli-o-zmrazeni-platu-politiku-navrh-pak-rozpoctovym-vyborem-neprosel",
+    "https://media24.cz/article/vybor-posoudi-jednotlive-kapitoly-navrhu-rozpoctu-resi-i-sektorove-dane",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034216.htm",
+    "https://ct24.ceskatelevize.cz/textovy-prenos/ustavujici-schuze-poslanecke-snemovny-45",
+    "https://www.hlidacstatu.cz/Home/TextSmlouvy/7673983?hash=7a0e723708e10b3c145a6ae94601cc15200acace7b138c4209d7c0c354500dc0",
+    "https://psp.cz/sqw/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://www.cshak.cz/smernice-0",
+    "https://www.denik.cz/ekonomika/statni-rozpocet-2025-treti-cteni-snemovna/",
+    "https://x.com/snemovna/status/2113525831033122909",
+    "https://www.ceskenoviny.cz/zpravy/2892819",
+    "https://psp.cz/cgi-bin/win/sqw/pp.sqw?o=10&s=27",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034215.htm",
+    "https://media24.cz/article/novi-radni-prahy-projednaji-rozpocet-na-pristi-rok-pocita-se-s-investicemi",
+    "https://www.ceskenoviny.cz/zpravy/2904342",
+    "https://forbes.cz/snemovna-schvalila-rozpocet-se-schodkem-310-miliard-korun-zamitla-vice-nez-sto-opozicnich-navrhu/",
+    "https://www.europarl.europa.eu/news/cs/agenda/plenary-news",
+    "https://ct24.ceskatelevize.cz/clanek/ekonomika/jak-zlepsit-verejne-finance-experti-navrhuji-upravy-v-danich-i-revizi-vydaju-379736",
+    "https://www.newstream.cz/stitek/vlada-cr/7",
+    "https://www.ceskenoviny.cz/zpravy/2905060",
+    "https://www.ceskenoviny.cz/zpravy/2905385",
+    "https://www.psp.cz/sqw/text/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://psp.cz/sqw/pp.sqw?b=60601"
+   ],
+   "reason": "The second reading of a Czech state-budget bill is usually finished in one long sitting when the Chamber gives it a full day that starts in the morning. Under this coalition the second reading of the 2026 budget took about twelve hours; the 2025 second reading was also closed in a single day. First readings run longer and more often spill into a second calendar day.\n\nThe official timetable adopted in September assigns the second reading of print 324 to 25 November 2026 and the third reading to the sitting that opens on 2 December, which only works cleanly if the second reading ends with the statutory 48-hour gap intact. The draft order of the 37th session places that second reading as the first item on Wednesday, and the sitting is set to resume at 09:00. On 22 November ČTK, citing the Speaker, reported that the Chamber will take up the budget in second reading on Wednesday. The coalition has a working majority and has already used night sittings on this bill. Those facts pull toward a close on the 25th.\n\nThe same bill’s first reading was also calendared for a single day and still ran 19.5 hours across 21–22 October after opposition club breaks. Twenty-six written debate registrations are already logged, and Thursday’s order has fixed interpellation slots at 11:00 and 14:30, so an unfinished debate is easy to adjourn rather than force past midnight.\n\nNEW FACTS\n- 2026-11-22 | ČTK, citing Speaker Tomio Okamura, reported that deputies will take up the 2027 state-budget bill in second reading on Wednesday. | https://www.ceskenoviny.cz/zpravy/2904989\n- 2026-09-03 | The budget committee’s timetable, circulated to deputies that day, schedules the Chamber’s second reading of the 2027 budget bill for 25 November 2026 and the third reading for the sitting from 2 December. | https://psp.cz/sqw/text/orig2.sqw?idd=279287\n- 2026-11-19 | The Chamber’s bill history, current as of that date, lists print 324 for the 37th session opening 24 November 2026 after the budget committee’s amendment resolution of 12 November. | https://www.psp.cz/sqw/historie.sqw?o=10&t=324\n- 2026-10-22 | The first reading of the same bill lasted 19.5 hours, beginning on 21 October and closing only on the evening of 22 October. | https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-pokracovat-v-debate-o-statnim-rozpoctu-na-pristi-rok-378892\n- 2026-03-11 | The second reading of the 2026 state budget under this coalition lasted twelve hours. | https://forbes.cz/snemovna-schvalila-rozpocet-se-schodkem-310-miliard-korun-zamitla-vice-nez-sto-opozicnich-navrhu/\nCOUNTER\nThe first reading of this same bill was calendared for one day and still had to be adjourned overnight after opposition club consultations. With 26 speakers already registered, the same tactic late on Wednesday would leave both debates open at 23:59, and the coalition has little procedural need to sit past midnight because a Thursday close would still satisfy the 48-hour gap before the 2 December third reading.",
+   "facts": [
+    {
+     "date": "2026-11-22",
+     "fact": "ČTK, citing Speaker Tomio Okamura, reported that deputies will take up the 2027 state-budget bill in second reading on Wednesday.",
+     "url": "https://www.ceskenoviny.cz/zpravy/2904989"
+    },
+    {
+     "date": "2026-09-03",
+     "fact": "The budget committee’s timetable, circulated to deputies that day, schedules the Chamber’s second reading of the 2027 budget bill for 25 November 2026 and the third reading for the sitting from 2 December.",
+     "url": "https://psp.cz/sqw/text/orig2.sqw?idd=279287"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "The Chamber’s bill history, current as of that date, lists print 324 for the 37th session opening 24 November 2026 after the budget committee’s amendment resolution of 12 November.",
+     "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324"
+    },
+    {
+     "date": "2026-10-22",
+     "fact": "The first reading of the same bill lasted 19.5 hours, beginning on 21 October and closing only on the evening of 22 October.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-meli-pokracovat-v-debate-o-statnim-rozpoctu-na-pristi-rok-378892"
+    },
+    {
+     "date": "2026-03-11",
+     "fact": "The second reading of the 2026 state budget under this coalition lasted twelve hours.",
+     "url": "https://forbes.cz/snemovna-schvalila-rozpocet-se-schodkem-310-miliard-korun-zamitla-vice-nez-sto-opozicnich-navrhu/"
+    }
+   ],
+   "counter": "The first reading of this same bill was calendared for one day and still had to be adjourned overnight after opposition club consultations. With 26 speakers already registered, the same tactic late on Wednesday would leave both debates open at 23:59, and the coalition has little procedural need to sit past midnight because a Thursday close would still satisfy the 48-hour gap before the 2 December third reading."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:13:46Z",
+   "p": 0.85,
+   "searches": 19,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEUK3_SP-s3nXrgAjtux6FQ6qJQowxOxtDcpuPS2zm34MHDysbSC39753WGQjF-Yv_bQ657CGBSRCVKQJsisxpdSHCXIkMluNE-AfVTgGYHrs=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_OGuaMY0-mCeiF6ljWnl6pHdcznExW65S4yCuGKVaUOtbWirpuKJR2yIMVe5FwcSvbddCmNHf1C4GUTRlbuuswZnXg3c8g4Aaqm2SThcKAG4J25Rjqi2KLYm4YoBhIbwwK3Ph0c-dZ4txUcWFzIcD",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHICwyskVRVlZeUstU9Jeq7VJYJovGfMjf49Eq_FzQTiMBz2SuYg60pwVAeI0h1m7IQEP9E0pJsicUnbAYbB4IyGNBfZsY3sX8OMr1Rsk7RfHTo9Dt3GOM1WtijEN_Zgzn_1WSNe9ONslh8n_hH1JHsogO37bJqsIrwdHeU1PH5uAkP0bMf6VIHmPQbYqZ_dClT_b-Rx-drm9icvazLPtV0YgMTHJTmw8C9OXF6veWWUOw2BRAB5gZspkc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHovstJCY_Ns8zSldxTh04l70msKF4xX7jFi7GxgzyBGVs5mzUmKQ9PNLYGn5vkTeadpaBuOZDdxWAQ6MUyZePpNSDdLwQGPi_BcN5ffO-d2iDdOLRJ6fOd-BB7_Zc9hmrnFRdeNllVnnc6S83z68JM23sN8JIzw8z-T9RkSgb_bpr7cPqbcgSye1cQdc7m8T0xnk7no7JuBQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiscLIZi-afQ81cTwsAIejkBnFLT8q935o97Q2DcqcK248oYr12ksNXEHzto2xBRTRfjeHYByauazsVlYwEW5apqmeXUgDVVvG_3TqebIczLgKZCD_5hFDVo0X7eiUjuqV7Niv7LlzHD9Q4G9KWIwbTjPVPlW1WKWDrSorksVrs6x-duKJOOMVVmeYKS8yDrWXqAzs23h35nBi-YgdnSyOAKlleEj99uc_kB-J9oAaUH0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwc2DCv8CEWhzJB99-JTKRJRmkN8yiBK__-JVrDdRt24xW9K5nFA9dhjI_Bkm6HY-ycLUEBjz8bAuwWDUKkdtLZKHI2J25yfROJpm8MJ0_TLpJp4Befhj-TpdzSSkhjx9_cQpoMmUIhV1TGHRB",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCgYtwcZoFDkUc2iAzsJ3_nysnItrECcwRH1xpxCuZlguyPmxjKLB3DuAVpw7x5tfa21-TAvlzXwJaFGgT1a7QSVSASRohxbz_sQ0oaBhk-pSNOvVPVH44FmPD7a44ZHb_gs-4YxITYFNN5eRXLUci",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6bfrVjU33i-Kj5wTeNHXh8V4nl097fQufFNhcHZlEeW8dsMZd_8b-AI-LS1DvIzGD3vs998tVUE__wVmc94bDVmyJFhb2HP74mfg4cFEZtPNNo-6pvq34MtkgJaYUBL-VzVCJWyQJqqq32QfRs_CU2I9YvEblTuAVAFZm",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1_uQTHbNCMrgu_4OeU2jTA1x8sNxebbWMEOBi5OhoyHvtp86hP19BTR_VjiSGXTMzR6dULdg4DWu09YuVHRs9yIFc4JtGDhHzOndZLxRkXoyGTI5Rh8UdECUTS4BFhdtPiMDRPZEaLTgO6FrjIxeEF6K6I6PYUAhFXmAZbn0lI6KwzEZ5tC9Bnf3d6Rt61DHbgOoC87H05KehTiw3Zi5I2SNvqOGGS4pyaQyZ03erqaJbC9xuGhBNcVyw4FZzOeaUEa1Wzugr2A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEB63vDr3AUDP4-EaBPsnXihXdOkeEya6yG4ngAaD8il-lGAPGRp1x01a08HmdNUE3MxCkSfc6l49VsXBBOyIN91VagC0wGZXqHst7CESjJW0dd-4QRJZs1xZm-YYuFhHhgVVSxxCSWvoHpMF7z9HMfOeY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGk1SgelRnsDZ6AOE-OYDPVSgEKaGX4qwROl1YFfbhPRFxVElM96g7ii2snw1GSq_LWp4bWPOLr2deqRLYcRPcUjGhxvwU30AzO6cisNFWnqgV-jRjJQOsFTwgVA8ddcTCHiuWwhI7vK3n69zhFTVBF6P5SGRsaRuQAez4ZzHVwm-RKeP9MZz2aMomni_htlFy2dBd8tsnLRsvNSQ7_mqEnw3L4KU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSlPC6_E5MePwRhwfqIhUonaViMCMDaE0zzFgLw0y2FqQiy3B29HAOF4dC4TL7Opv5R39j_VihGL_i6XwyVQ-3rzwLq2KbBPvPTxt9Sr-T6UcNJ5y8zuFwwpiB19MnIbI7Odec6T1gCg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_-EeowqPultijjbVD76lKGRFY2IMdfMbSov-VsI8sGaesHq-MWycGBEx8CaXWkZ-jc4AayAFxnwL6le2wSOQKmzuo2Ltlxf3i6LcJPqhQMFjAbVXCx-EmUWiY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNn3S7L_bjKoihW7PZo0TaDvB6zNJgHq7TU7JCy_E13roxEeV_3eS7AeolayY62cIpLeMhEVr2nr9-_8mdYhOKiL7exx0CZL6lG0jEQsat0Wkjc9MmoVTq09En",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqfIMAGkpFdCrpIBWkDLOpan8PpdlY1kgWq40TFcmiMb9xYZ-AvY1Q0NHHJn6ghg2VVbud4lM02Rgn2DNzySbj5U719xY2oBUcfq8CuoosexzJkbAl42fDXserNuvHctvPOVOiyy57QHpdzAgR-PszsmUiWDlQ09TBWDsOe7VVY17V1L0EqgdSsU0PbwEB1bSgQ-MQLm28jjR1SLVF-VBbs48zCQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI_zkZMiBBJgcMKeKIWsWLHTQ7i8ERhElPMg2rH-eI1suqC7fDLF2M-GW1i3IK0DaWb96mbehoCkFMpiF1G6OGRSeGIG3-1KUkNPfFN8rHv53a_7TIYa0csZgYKoGFaaJK9e4CwSiBcIlQ7Xh1DPURH-CzP9wcrqZTOs6csfkuy-bMhodGhQ-xnCdT84ZPLMmonKcSlD6XzQ-iArhD4soLZwkn8wxbZ13x2KRI8J34_0h107oTP86pZqBCDm7Lfg2FD5M=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXYTxQq1sxGEf0mqj4wQELfjrTu2z2Ki8w0tcjednGn3aZ1g-XofiGY-ZKkwJDSWJSjbEI-NNGIwIKm4sDbzk1zAnEMX1uSBkSOkVEpi5Mrk1zgwN6ZnA_75AH1hYfEg9LU5nDOEx9SQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCo_CIqSLY6yhXFdjUiL5VpVgoNC4wiytIw5RqfuEbk_YyyzutS0XfnbuJnH6D6fLxNR9w3pyjrsMljEY5onQEhcrOmm6K8hj1ikKnHk7vY6WeYv3RwSs4vPI4Qoi0hLx7kEexk1-GUMvMxI7WgQxc4-aWoIafVjiB9kB8bui6cVw5lSQ8sz7GWDtZlOY-Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4pYCEpdO6OkekNr11tC_FlsGyCt3lvR1RqjofpxWjkosYsfbCddt1jCKWMRI7Z1bkdD7GMLU7c9a2GTMIpLeqmzvDftFkhOA-cycSyhsMY8COPttkGNeDcS3x1EdG2tp7Ut4PwDEURzfRO0awbLwWPMCNBAzu4h1xz93nMuqa8AWCvf2U_zfEaysLueGBJQvutm-FRmUPDPWAwJpoF49KfBwMz6T_tyOh8CvEbb2Gqcp6TnI8Fa0T2A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGk-pueYoKqLDO963HafH1J_h9GtkpTjm-ULc2UmJvEX6w5ToJ2y8Vb9ng8Mogq80C0CTCWCh-9NoeN9TDNDT5fcBhHpl-ouqyNYJtIRx6JpomTn6oPlSLMKTkKpJYG1oOBdl5Hxi98fojOzyDlzwWtJKQ=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4NRJqIcPrLrMJNGWW2Rn3ddPNb4QZ9Q0TTt3jO3C1dEencJ3Wcqp5X3rIGPNNmx_rWyScPtEjYUft1xxdkvCBppyPgChWHu0OK2pQQuBOU9decXGRbGbZg2RZpyYshKskAf2HjMam8_Sskr_r7n4RKq0DoOZqV2MZnDu9fgA_t84Ha_nZAxMp-VLevn_6AkFZA4S_rWj-QLjP43BGrrqKo2j6qH_rOcra46RHrQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4c4meGZeqIaJ3lWhkWNzaW_lNGOV-KlZgWpZnL-ovuvdTE1lg8ujZtWx2OFYgsJVH0jpdEttGtsfKKbWOErzbtPDZXBTnLB3LaiQKM2PpnOOkdagwQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtDa3EzuvTgKcZiEv_KgWa0xTzCwc36t7o_7nQMS0vEah9ts9nhcGJ4oOSoTzTDKud3xznFbDEm6mEKPVSTS7nQYxmqJdlNujaz4ZH067wxGI0rwNC9bgLZQIcV9QweDM6KNonIF38EhsBaXPlsJGILXDJB5Aro78ysF3qggQRjRUPX5mi_FJIs9kv_F4wzNlX3r_SQ4Gaw-oeFF97e7cMxMBhK8OFr4U8Vwp5LoXv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHM0oQ9YseHIqsm44qet03Yu0PnNbGc5grc9izo4Qa9-I9Kae5yFNrCQTRpxsoIzhxoHkzcdAGzo1lg-tvnunDZrHd3uA6cz8AQxkymaijYFeW3YgXHgDOCtUn2msp6uIhlvN9w-5B97694eqxvFMYgWboIDpxkcjIad_YUA9p1AnQfMVPf8-IDrTnQGD5zYn5BmKyTxZ1RcwlLb3lSiLfz8FOakgOK8e_8IQ5PgPw0hYU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFJ2ePCNLt1GD9B24v7t5WKaW_Y4nQU6L6EeUvZJ3-N7Jw9XjPCmUCGnjB3mLEtFVecQ2He6h9etrVRnUc3v5SoOCuyaYbsS1czveaxtoySIXJSE6KfA=="
+   ],
+   "reason": "ptember 2026). This reform restricts debate on agenda modifications and expands the Chamber majority's power to limit speaking times—including for speakers with priority speaking rights—and to set fixed voting or debate-closing times. Furthermore, because the budget's second reading is scheduled according to the mandatory statutory budget timetable, it is not delayed by opening agenda-modification debates once its slot arrives.\n* **Precedent from the March 2026 budget reading under the same government (Moves toward YES):** On 4 March 2026, the exact same governing coalition (ANO, SPD, Motoristé) and opposition completed the second reading of the 2026 state budget (print 94) within 12 hours on a single Wednesday (from 9:00 AM to around 9:00 PM).\n* **Heightened opposition willingness to obstruct the 2027 budget (Moves toward NO):** During the first reading of print 324 on 21–22 October 2026, opposition parties extended the debate over two days (unlike the typically single-day first reading), prompting coalition deputies to remark on 22 October 2026 that the opposition was obstructing the state budget for the first time in history. Additionally, high political tension persists over the 386 billion CZK deficit and public media financing.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nEven with the amended Rules of Procedure and a 9:00 AM start on Wednesday, 25 November 2026, the second reading requires completing both the general debate (*obecná rozprava*) and the detailed debate (*podrobná rozprava*, in which deputies formally read out their reallocation proposals). If opposition clubs (ODS, STAN, Pirates, KDU-ČSL, TOP 09) coordinate an unusually large volume of reallocation amendments and use their speaking allowances and two-minute factual remarks (*faktické poznámky*, which were largely preserved in the Rules of Procedure reform) to the maximum, the debate could stretch past 15 hours. In that scenario, either the session could spill past 23:59 into the early morning hours of Thursday, 26 November 2026 (similar to the first reading of the public media bill on 23–24 October 2026, which ended at 4:36 AM), or the presiding officer could adjourn the debate around midnight to resume on Thursday morning.\n\nBalancing the strong historical precedent of single-day completion, the 9:00 AM priority slot, and the newly enacted procedural tools available to the governing majority against the risk of a post-midnight spillover or overnight adjournment, I estimate an 85% probability that the second reading closes before 23:59 on Wednesday, 25 November 2026.\n\nNEW FACTS\n- 2026-03-11 | During the approval process for the 2026 state budget earlier in the year, the first reading took 14 hours and the second reading took 12 hours. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6bfrVjU33i-Kj5wTeNHXh8V4nl097fQufFNhcHZlEeW8dsMZd_8b-AI-LS1DvIzGD3vs998tVUE__wVmc94bDVmyJFhb2HP74mfg4cFEZtPNNo-6pvq34MtkgJaYUBL-VzVCJWyQJqqq32QfRs_CU2I9YvEblTuAVAFZm\n- 2026-08-28 | On 27 August 2026, President Petr Pavel signed an amendment to the Chamber of Deputies' Rules of Procedure designed to curb obstructions by limiting speaking times on agenda changes and allowing time limits on speakers with priority rights. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqfIMAGkpFdCrpIBWkDLOpan8PpdlY1kgWq40TFcmiMb9xYZ-AvY1Q0NHHJn6ghg2VVbud4lM02Rgn2DNzySbj5U719xY2oBUcfq8CuoosexzJkbAl42fDXserNuvHctvPOVOiyy57QHpdzAgR-PszsmUiWDlQ09TBWDsOe7VVY17V1L0EqgdSsU0PbwEB1bSgQ-MQLm28jjR1SLVF-VBbs48zCQ==\n- 2026-10-22 | The Chamber of Deputies completed the first reading of the 2027 state budget bill (print 324) across two sitting days on 21 and 22 October 2026, approving its basic parameters via Resolution No. 344. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4c4meGZeqIaJ3lWhkWNzaW_lNGOV-KlZgWpZnL-ovuvdTE1lg8ujZtWx2OFYgsJVH0jpdEttGtsfKKbWOErzbtPDZXBTnLB3LaiQKM2PpnOOkdagwQ==\n- 2026-10-27 | According to the Chamber's budget schedule, the second reading of the 2027 state budget is set for 25 November 2026 and the final third-reading vote is planned for 2 December 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtDa3EzuvTgKcZiEv_KgWa0xTzCwc36t7o_7nQMS0vEah9ts9nhcGJ4oOSoTzTDKud3xznFbDEm6mEKPVSTS7nQYxmqJdlNujaz4ZH067wxGI0rwNC9bgLZQIcV9QweDM6KNonIF38EhsBaXPlsJGILXDJB5Aro78ysF3qggQRjRUPX5mi_FJIs9kv_F4wzNlX3r_SQ4Gaw-oeFF97e7cMxMBhK8OFr4U8Vwp5LoXv\n- 2026-11-13 | The Budget Committee discussed the 2027 state budget bill (print 324) and issued its resolution containing proposed amendments (print 324/3) on 12 November 2026, with the bill proposed for the agenda of the 37th session starting 24 November 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNn3S7L_bjKoihW7PZo0TaDvB6zNJgHq7TU7JCy_E13roxEeV_3eS7AeolayY62cIpLeMhEVr2nr9-_8mdYhOKiL7exx0CZL6lG0jEQsat0Wkjc9MmoVTq09En\n- 2026-11-22 | The 2027 draft state budget heading into its second reading on Wednesday, 25 November 2026 sets revenues at 2,198.6 billion CZK, expenditures at 2,584.6 billion CZK, and a fixed deficit of 386 billion CZK. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCgYtwcZoFDkUc2iAzsJ3_nysnItrECcwRH1xpxCuZlguyPmxjKLB3DuAVpw7x5tfa21-TAvlzXwJaFGgT1a7QSVSASRohxbz_sQ0oaBhk-pSNOvVPVH44FmPD7a44ZHb_gs-4YxITYFNN5eRXLUci\n\nCOUNTER\nThe strongest argument against the second reading completing on Wednesday, 25 November 2026 is that the five opposition parties already broke historical precedent by stretching the first reading of the 2027 budget across two days in October, and they remain fiercely opposed to the 386 billion CZK deficit. Because every deputy who submits a budget reallocation must formally introduce it during the detailed debate and factual remarks were not capped in the recent Rules of Procedure amendment, an intensive opposition effort could easily push the debate past midnight into Thursday, 26 November or force an overnight adjournment.",
+   "facts": [
+    {
+     "date": "2026-03-11",
+     "fact": "During the approval process for the 2026 state budget earlier in the year, the first reading took 14 hours and the second reading took 12 hours.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6bfrVjU33i-Kj5wTeNHXh8V4nl097fQufFNhcHZlEeW8dsMZd_8b-AI-LS1DvIzGD3vs998tVUE__wVmc94bDVmyJFhb2HP74mfg4cFEZtPNNo-6pvq34MtkgJaYUBL-VzVCJWyQJqqq32QfRs_CU2I9YvEblTuAVAFZm"
+    },
+    {
+     "date": "2026-08-28",
+     "fact": "On 27 August 2026, President Petr Pavel signed an amendment to the Chamber of Deputies' Rules of Procedure designed to curb obstructions by limiting speaking times on agenda changes and allowing time limits on speakers with priority rights.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqfIMAGkpFdCrpIBWkDLOpan8PpdlY1kgWq40TFcmiMb9xYZ-AvY1Q0NHHJn6ghg2VVbud4lM02Rgn2DNzySbj5U719xY2oBUcfq8CuoosexzJkbAl42fDXserNuvHctvPOVOiyy57QHpdzAgR-PszsmUiWDlQ09TBWDsOe7VVY17V1L0EqgdSsU0PbwEB1bSgQ-MQLm28jjR1SLVF-VBbs48zCQ=="
+    },
+    {
+     "date": "2026-10-22",
+     "fact": "The Chamber of Deputies completed the first reading of the 2027 state budget bill (print 324) across two sitting days on 21 and 22 October 2026, approving its basic parameters via Resolution No. 344.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHk4c4meGZeqIaJ3lWhkWNzaW_lNGOV-KlZgWpZnL-ovuvdTE1lg8ujZtWx2OFYgsJVH0jpdEttGtsfKKbWOErzbtPDZXBTnLB3LaiQKM2PpnOOkdagwQ=="
+    },
+    {
+     "date": "2026-10-27",
+     "fact": "According to the Chamber's budget schedule, the second reading of the 2027 state budget is set for 25 November 2026 and the final third-reading vote is planned for 2 December 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtDa3EzuvTgKcZiEv_KgWa0xTzCwc36t7o_7nQMS0vEah9ts9nhcGJ4oOSoTzTDKud3xznFbDEm6mEKPVSTS7nQYxmqJdlNujaz4ZH067wxGI0rwNC9bgLZQIcV9QweDM6KNonIF38EhsBaXPlsJGILXDJB5Aro78ysF3qggQRjRUPX5mi_FJIs9kv_F4wzNlX3r_SQ4Gaw-oeFF97e7cMxMBhK8OFr4U8Vwp5LoXv"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "The Budget Committee discussed the 2027 state budget bill (print 324) and issued its resolution containing proposed amendments (print 324/3) on 12 November 2026, with the bill proposed for the agenda of the 37th session starting 24 November 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNn3S7L_bjKoihW7PZo0TaDvB6zNJgHq7TU7JCy_E13roxEeV_3eS7AeolayY62cIpLeMhEVr2nr9-_8mdYhOKiL7exx0CZL6lG0jEQsat0Wkjc9MmoVTq09En"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "The 2027 draft state budget heading into its second reading on Wednesday, 25 November 2026 sets revenues at 2,198.6 billion CZK, expenditures at 2,584.6 billion CZK, and a fixed deficit of 386 billion CZK.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCgYtwcZoFDkUc2iAzsJ3_nysnItrECcwRH1xpxCuZlguyPmxjKLB3DuAVpw7x5tfa21-TAvlzXwJaFGgT1a7QSVSASRohxbz_sQ0oaBhk-pSNOvVPVH44FmPD7a44ZHb_gs-4YxITYFNN5eRXLUci"
+    }
+   ],
+   "counter": "The strongest argument against the second reading completing on Wednesday, 25 November 2026 is that the five opposition parties already broke historical precedent by stretching the first reading of the 2027 budget across two days in October, and they remain fiercely opposed to the 386 billion CZK deficit. Because every deputy who submits a budget reallocation must formally introduce it during the detailed debate and factual remarks were not capped in the recent Rules of Procedure amendment, an intensive opposition effort could easily push the debate past midnight into Thursday, 26 November or force an overnight adjournment."
+  }
+ ]
+}

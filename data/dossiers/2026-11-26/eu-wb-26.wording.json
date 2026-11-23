@@ -1,0 +1,32 @@
+{
+ "claim": "The EU–Western Balkans summit in Brussels on Wednesday 25 November 2026 ends with a joint declaration.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:20:42Z",
+   "ambiguous": true,
+   "scenario": "The Council publishes a written outcome titled ‘Statement of the EU Leaders’ on the summit day. It sets out collective commitments and is issued in the EU leaders’ name, but neither the Council nor news reports call it a declaration. One reader counts it as a summit declaration based on its substance and attribution; another treats it as a different type of document.",
+   "yes_requires": "The EU–Western Balkans summit must take place in Brussels on 25 November 2026, and a written summit declaration must be adopted or issued in the name of the summit’s EU leaders by 23:59 Brussels time that day. Not every Western Balkans partner has to align with it. A declaration adopted that day can be published later.",
+   "decided_by": "Publication by the Council or European Council on consilium.europa.eu, or reporting by one of the listed outlets or another major outlet, establishing that the summit took place as specified and that "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:20:45Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The EU–Western Balkans summit takes place in Brussels on 25 November 2026 and a written summit declaration in the name of the EU leaders is adopted or issued by 23:59 Europe/Brussels time that day (regardless of whether all Western Balkans partners align with it, and even if the text is only published after 23:59).",
+   "decided_by": "Official publication by the Council/European Council on consilium.europa.eu, or reporting by RFE/RL, European Western Balkans, N1, AFP, Reuters, AP, ČTK, or another major outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:21:52Z",
+   "ambiguous": true,
+   "scenario": "The summit is held in Brussels on 25 Nov and consilium publishes a written text agreed and issued in the EU leaders’ name, but it is titled conclusions, a joint statement, or a chair’s statement on behalf of the leaders rather than a declaration. One reader counts that as the required written summit declaration; another treats it as an excluded chair’s statement, press text, or non-declaration and resolves NO.",
+   "yes_requires": "The EU–Western Balkans summit is held in Brussels on 25 November 2026, and a written summit declaration is adopted or issued that day, by 23:59 Europe/Brussels, in the name of the summit’s EU leaders (every Western Balkans partner need not align), as published on consilium.europa.eu or reported by a listed outlet or another major outlet. Publication after 23:59 still counts if adoption was on 25 N",
+   "decided_by": "A Council or European Council publication on consilium.europa.eu, or reporting by RFE/RL, European Western Balkans, N1, AFP, Reuters, AP, ČTK, or another major outlet."
+  }
+ ]
+}

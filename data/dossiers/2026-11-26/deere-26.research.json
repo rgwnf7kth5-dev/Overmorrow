@@ -1,0 +1,190 @@
+{
+ "claim": "In its fiscal fourth-quarter 2026 results on 25 November 2026, Deere & Company forecasts fiscal 2027 net income (midpoint of its range) above the net income it reports for fiscal 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:10:53Z",
+   "p": 0.76,
+   "searches": 7,
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/315189/000155837020014042/de-20201125xex99d1.htm",
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm",
+    "https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf",
+    "https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement",
+    "https://investor.deere.com/home/",
+    "https://www.deere.com/assets/pdfs/common/news/deere-4q25-earnings-release.pdf",
+    "https://www.deere.com/en-us/our-company/our-company-and-purpose",
+    "https://investor.deere.com/home/default.aspx?adobe_mc=MCORGID%3D8CC867C25245ADC30A490D4C%40AdobeOrg%7CTS%3D1734393600&appName=dcom&sourceLinkHref=https%3A%2F%2Finvestor.deere.com%2Fhome%2Fdefault.aspx&sourceLinkId=nav+%3E+footer+%3E+company-information+%3E+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%B2&sourcePageName=ru_ua+%3A+%D0%B7%D0%B5%D1%80%D0%BD%D0%BE%D1%83%D0%B1%D0%BE%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0%D0%B9%D0%BD%D1%8B+%3A+t6-%D1%81%D0%B5%D1%80%D0%B8%D1%8F&sourcePageURL=https%3A%2F%2Fwww.deere.ua%2Fru%2F%25D0%25B7%25D0%25B5%25D1%2580%25D0%25BD%25D0%25BE%25D1%2583%25D0%25B1%25D0%25BE%25D1%2580%25D0%25BE%25D1%2587%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25BA%25D0%25BE%25D0%25BC%25D0%25B1%25D0%25B0%25D0%25B9%25D0%25BD%25D1%258B%2Ft6-%25D1%2581%25D0%25B5%25D1%2580%25D0%25B8%25D1%258F%2F",
+    "https://investor.deere.com/home/?adobe_mc=MCORGID%3D8CC867C25245ADC30A490D4C%2540AdobeOrg%7CTS%3D1735948800&appName=dcom&sourceLinkHref=https%253A%252F%252Finvestor.deere.com%252Fhome%252F&sourceLinkId=nav%2520%253E%2520footer%2520%253E%2520company-information%2520%253E%2520relaci%25C3%25B3n-con-los-inversores&sourcePageName=es_ar%2520%253A%2520camiones-articulados&sourcePageURL=https%253A%252F%252Fwww.deere.com.ar%252Fes%252Fcamiones-articulados%252F%253Fadobe_mc%253Dtrue",
+    "https://www.deere.com/assets/pdfs/common/news/deere-4q24-earnings-release.pdf",
+    "https://investor.deere.com/home/?adobe_mc=MCORGID%3D8CC867C25245ADC30A490D4C%2540AdobeOrg%7CTS%3D1729382400",
+    "https://investor.deere.com/home/?adobe_mc=MCORGID%3D8CC867C25245ADC30A490D4C%2540AdobeOrg%7CTS%3D1740873600&appName=dcom&sourceLinkHref=https%253A%252F%252Finvestor.deere.com%252Fhome%252F&sourceLinkId=nav%2520%253E%2520top%2520%253E%2520our-company%2520%253E%2520investor-relations&sourcePageName=en_us%2520%253A%2520attachments-accessories-and-implements%2520%253A%2520construction-attachments%2520%253A%2520compact-construction-attachments%2520%253A%2520rakes-tillers%2520%253A%2520root-rakes&sourcePageURL=https%253A%252F%252Fwww.deere.com%252Fen%252Fattachments-accessories-and-implements%252Fconstruction-attachments%252Fcompact-construction-attachments%252Frakes-tillers%252Froot-rakes%252F%253Fadobe_mc%253Dtrue",
+    "https://www.deere.com/assets/pdfs/common/news/deere-4q22-news-release.pdf",
+    "https://www.deere.com/en-us/content-library",
+    "https://www.deere.com/assets/pdfs/common/news/deere-4q23-earnings-release.pdf",
+    "https://www.deere.com/assets/pdfs/common/news/deere-2q26-earnings-release.pdf",
+    "https://investor.deere.com/filings-and-reports/sec-filings/default.aspx",
+    "https://investor.deere.com/search-results/default.aspx?PageNumber=97",
+    "https://investor.deere.com/stock/default.aspx",
+    "https://www.deere.com/en-us/our-company/newsroom",
+    "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks",
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820x8k.htm",
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d2.htm",
+    "https://www.sec.gov/Archives/edgar/data/1748797/000119312526380894/d118875dex991.htm",
+    "https://www.deere.com/assets/pdfs/common/our-company/news/deere-4q20-news-release.pdf"
+   ],
+   "reason": "**Base rate:** Deere’s fiscal Q4 releases from 2020 through 2025 all gave a dollar range for next-year net income attributable to Deere. The midpoint was above the reported full-year result in three of six releases: 2020–2022 were YES on the earnings comparison, and 2023–2025 were NO. That gives a 50% starting point, though the streaks suggest the equipment cycle matters more than the raw frequency. ([sec.gov](https://www.sec.gov/Archives/edgar/data/315189/000155837020014042/de-20201125xex99d1.htm?utm_source=openai))\n\n**What moves this case:**\n- **Toward YES:** On August 20, Deere’s CEO reiterated that he saw fiscal 2026 as the bottom of the agricultural equipment cycle, citing early orders and improving used-equipment inventories. Construction & Forestry operating profit also rose to $436 million from $237 million in Q3, giving Deere a path to higher earnings even if large-ag demand only stabilizes. ([sec.gov](https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm))\n- **Mixed:** The November 10 industry report showed October U.S. four-wheel-drive tractor sales up 7.7% year over year, but combine sales down 9.6%. Purdue’s November 3 survey showed an improvement in its Farm Capital Investment Index, but only 20% of respondents said it was a good time to invest in machinery and buildings. That supports stabilization more than a broad rebound. ([aem.org](https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf))\n- **Toward NO:** Deere’s August fiscal 2026 outlook was $4.75–$5.00 billion, and it had already recorded $382 million in tariff recoveries through nine months. If those recoveries do not recur, operating earnings must improve just to offset that benefit before the fiscal 2027 midpoint can clear the reported fiscal 2026 figure. ([sec.gov](https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm))\n\n**Release-window risk:** Deere confirmed a 9 a.m. Central earnings call for November 25, 2026, in its November 11 announcement. I put the chance that the release misses the specified Central-time window at about 1%. An on-time release without dollar net-income guidance would also resolve NO, but Deere’s six-for-six disclosure record makes that a secondary risk. ([deere.com](https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement?utm_source=openai))\n\nNEW FACTS\n- 2026-11-11 | Deere scheduled its fiscal fourth-quarter earnings call for November 25, 2026, at 9 a.m. Central time. | https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement\n- 2026-11-10 | U.S. four-wheel-drive farm tractor sales rose 7.7% year over year in October, while self-propelled combine sales fell 9.6%. | https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf\n- 2026-11-03 | Purdue’s Farm Capital Investment Index rose from 39 to 55 in October, but only 20% of respondents said it was a good time to invest in machinery and buildings. | https://ag.purdue.edu/commercialag/ageconomybarometer/wp-content/uploads/2026/11/AEB-Report-October-2026.pdf\n- 2026-08-20 | Deere recorded $382 million in tariff recoveries in the first nine months of fiscal 2026. | https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm\n- 2026-08-20 | Deere’s Construction & Forestry operating profit rose to $436 million in fiscal Q3 2026 from $237 million a year earlier. | https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d2.htm\n\nCOUNTER  \nA bottom in farm equipment demand can mean a year of flat sales rather than a rebound, and October’s continued decline in combine sales makes that a credible scenario. If fiscal 2026 tariff recoveries do not recur, even improving construction earnings may not be enough for Deere to set its initial fiscal 2027 midpoint above reported fiscal 2026 net income. ([aem.org](https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf))",
+   "facts": [
+    {
+     "date": "2026-11-11",
+     "fact": "Deere scheduled its fiscal fourth-quarter earnings call for November 25, 2026, at 9 a.m. Central time.",
+     "url": "https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement"
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "U.S. four-wheel-drive farm tractor sales rose 7.7% year over year in October, while self-propelled combine sales fell 9.6%.",
+     "url": "https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf"
+    },
+    {
+     "date": "2026-11-03",
+     "fact": "Purdue’s Farm Capital Investment Index rose from 39 to 55 in October, but only 20% of respondents said it was a good time to invest in machinery and buildings.",
+     "url": "https://ag.purdue.edu/commercialag/ageconomybarometer/wp-content/uploads/2026/11/AEB-Report-October-2026.pdf"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "Deere recorded $382 million in tariff recoveries in the first nine months of fiscal 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "Deere’s Construction & Forestry operating profit rose to $436 million in fiscal Q3 2026 from $237 million a year earlier.",
+     "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d2.htm"
+    }
+   ],
+   "counter": "A bottom in farm equipment demand can mean a year of flat sales rather than a rebound, and October’s continued decline in combine sales makes that a credible scenario. If fiscal 2026 tariff recoveries do not recur, even improving construction earnings may not be enough for Deere to set its initial fiscal 2027 midpoint above reported fiscal 2026 net income. ([aem.org](https://www.aem.org/getattachment/261c39e3-982c-4da8-af96-5a7e90e2b952/October-2026-Farm_Flash_Trade_Press_With_Chart_PreRelease-Unitied-States.pdf))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:11:00Z",
+   "p": 0.78,
+   "searches": 4,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEygjSV7K9a6sbb4hzH3QN65aaNIjysxzmGKHL-ngVLU18Jo-HSfvR8cMUv_yeOltbZYejhcYRN7wW9an0XMMtS8fJ9UDF54xHm7zfo1XK1nuNsMLiATpTagcTqgjdmBNpcZb_C0J-iu7ufUqip8xC95aPMxQuCa4KQbO0IYoFSUFMMX9P_zxDhQb2GyUzDKONsolimM8XVuG_Jnx6DVJWrZdrUO_9FgAthtIZX6S_nU46WmQgC2PliEbh-rUnrOIuD11pk0XmS",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWPhZsTgKTolALIro7k8lDSns9mwiIoqhQ2pl1Z2-hsg9UgXxMsymnInwyZEV7QFY9ZUj1CEUyArCvJf2iDDGcK_HrBqXQlThR3vHdsr2EIZsl10-IdOlRTPUt0AJtJ7nvU6KIWfWTKipY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPB6NvYsqPNCsxzrFjqw_MBjHjbC1J9CQR6M-13NujEWN5tN8sAfy-J7lXjnx63pHX3kioahx4aduyCGFwVAOPeo_Jr0qnFyEjwJBeikT6ygaDmBkTrnFODVTT3hNfHzwfjRSSiauF-CBN4xMjVbDgkiho-EH7V_cuG9DY2aUhzfB6l3qq-nk-DaByIMSI-YxQD_TjusTLKo1sTlGtUi_3S95G2A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwEZaljURWen6GMihwjvo1N17Osay1IWbo9_q877oTdXcdy9d241N11XLTk41t4xYiUL6KOygyRzl2Isv5lbvb0LTXiwynGvhLuDM1Dq93xXjVMPugEh_DIauHf-VJRMIv2FSsWYpwQQResA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJo8Z4K4ypmLcfq_an9j81pZzNffSv-RbnsdKbANxhogdyzRYrlQXcQ0G7NPQ8KHgn49rudSXJ2N0TJ5ZaUpI9lpVJq-0tlZ5iTeKvSCF8HTGwizWMoA1vZKgCr1ut-thDBefcGDpc3XO4hSaj78Re7ukXmF4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWwDfFjs6QzSZA7V1s_mrZ6ra1PpgccvFNxrOsAFCjxE9p1XM-3znKW0MuiEfiFdTriDu4oN7e8DbEt39XU5lah3N1rXxiFuSVpBaGXRQ2NNmKPmBjFnlr-mSLt_sXixs_Sl0NYS_tMq5PFO6NLOslzlU5aI6GdA-gzchUnhRqJf8lx5QNS34BB2n0INqy7_2zQhe2WLJeBDIdf1s4qbNKTXUVIDCKt2bs",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2uSo2YFZr855vSprD5D_MOevGvShMxihypjuxwwa__3bVUu_JdOuZQBCQLnRtopEA8lteVMqisfs0ide35Ee8NxG3E2AqZRhUepcwpHT70RI9f3cu5h58VKqqbK-kGEjGjeS79G0JxshloEaGzUt-Cw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFET6fr_hiLZqSHyYOsX2_46qgkBbCV5lolew5JRRaVC3RzHQGm9exLvAcw-IxMIwfagcnKvlfmIgq8A9eIyLUYR0hBiHRYHD-aUJCF9PLYZSY0UrVtbGNpldvth_hZuRcflOiN6s8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGJsMXV5JeaCT96sNtmzHdE8wE4-GeX6TUvRX3lbH3DuOudjDzSIw735rHwhRh74p4d5Mz0KiaZSFryaiwBJy7AnTw_-mNPEVQ1M7LbEO5fB89vRGGy0toQS3OsqipM9HBEufb8TXs6Tu8Qp4UFPe2dioid82PMb4pyhkYJcVjV0QqToXka_IML1JhnidVqpBKZvv_wEgZf-0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvl2fWPaf21gxlN-2O_DQqRidQD15EtIEetZ88srwoPf6JdUPdSaTTgZp30wRHiy-1gMxPxtffFCsyDcJTfSWkoSXV9J3i2SZnoLmcITUFcEAdypzMa2DRqP0D6GTnUzt5JNzfu-Zf20R-PEW4kt1CVA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2rZmDV5EpzkGZadykt9YW5c7s7OtQoSaa6MWTeamVHzNvVK2MXdEMVvr9L0vLSXe6PFKkde5vIFfHzJpyfbmoRKSjZsywdH5RgnpPbBlRb-ieuVK5x0eN_3LWJyrKv0HddnKV10Pq7wiR___IxF3J1AvHC8gGxQ_w1GD30j88EYdgGaXU3eRhH1Bja9SshciXpg=="
+   ],
+   "reason": "oward YES):** A November 17, 2026 preview report notes that FactSet consensus for FY2026 net income is $4.90 billion, while FactSet consensus for FY2027 net income stands at $5.91 billion (and even a more conservative model projection of $5.0 billion to $5.5 billion yields a midpoint of $5.25 billion, comfortably above ~$4.90 billion).\n* **Non-recurring FY2026 tariff recoveries and persistent farming headwinds (moves slightly toward NO):** According to Deere's August 20, 2026 release and November 2026 reporting, FY2026 nine-month net income was boosted by $382 million in tariff recoveries ($272 million in Q2 and $110 million in Q3), and a November 23, 2026 report notes that competitor CNH Industrial still describes the farm market as being in a trough.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile consensus expects FY2027 net income around $5.91 billion against roughly $4.90 billion in FY2026, Deere is historically conservative with its initial November full-year guidance (for instance, on November 26, 2025, it guided FY2026 to $4.0–$4.75 billion vs. $5.19 billion expected). Furthermore, FY2026 reported GAAP net income includes $382 million in one-time tariff refunds through Q3, and if Q4 FY2026 comes in at the high end of expectations (e.g., bringing full-year FY2026 net income to ~$5.00 billion or $5.05 billion) while management issues an ultra-conservative initial FY2027 range like $4.60 billion to $5.10 billion (midpoint $4.85 billion) due to the absence of tariff refunds and lingering weakness in farmer spending, the midpoint would fall slightly below reported FY2026 net income. (The chance that Deere fails to publish its results on November 25, 2026, or omits its standard dollar net-income outlook is negligible, under 1%).\n\nOverall, given management's explicit framing of FY2026 as the bottom of the cycle, rising model-year 2027 early orders, strong Construction & Forestry growth, and a massive ~$1.0 billion buffer between expected FY2026 net income (~$4.90B) and consensus FY2027 net income ($5.91B), Deere is highly likely to guide to a FY2027 midpoint above its reported FY2026 net income, though a roughly 22% chance remains that an upside Q4 surprise combined with ultra-cautious initial guidance results in a flat or slightly lower midpoint.\n\nNEW FACTS\n- 2026-08-20 | Deere & Company reported net income attributable to Deere & Company of $3.808 billion for the first nine months of fiscal 2026 and forecasted full-year fiscal 2026 net income to be in a range of $4.75 billion to $5.00 billion. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2uSo2YFZr855vSprD5D_MOevGvShMxihypjuxwwa__3bVUu_JdOuZQBCQLnRtopEA8lteVMqisfs0ide35Ee8NxG3E2AqZRhUepcwpHT70RI9f3cu5h58VKqqbK-kGEjGjeS79G0JxshloEaGzUt-Cw==\n- 2026-08-20 | In its third-quarter 2026 earnings release, Deere recorded tariff recoveries of $110 million in the third quarter and $382 million in the first nine months of fiscal 2026, and CEO John May stated that the company continued to believe 2026 would mark the bottom of the current ag equipment cycle. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGJsMXV5JeaCT96sNtmzHdE8wE4-GeX6TUvRX3lbH3DuOudjDzSIw735rHwhRh74p4d5Mz0KiaZSFryaiwBJy7AnTw_-mNPEVQ1M7LbEO5fB89vRGGy0toQS3OsqipM9HBEufb8TXs6Tu8Qp4UFPe2dioid82PMb4pyhkYJcVjV0QqToXka_IML1JhnidVqpBKZvv_wEgZf-0=\n- 2026-11-11 | Deere & Company announced that it will hold its fourth-quarter 2026 earnings call on Wednesday, November 25, 2026, beginning at 9:00 a.m. Central time, with the earnings release accessible on its website. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWwDfFjs6QzSZA7V1s_mrZ6ra1PpgccvFNxrOsAFCjxE9p1XM-3znKW0MuiEfiFdTriDu4oN7e8DbEt39XU5lah3N1rXxiFuSVpBaGXRQ2NNmKPmBjFnlr-mSLt_sXixs_Sl0NYS_tMq5PFO6NLOslzlU5aI6GdA-gzchUnhRqJf8lx5QNS34BB2n0INqy7_2zQhe2WLJeBDIdf1s4qbNKTXUVIDCKt2bs\n- 2026-11-17 | As of November 17, 2026, the FactSet consensus mean for net income attributable to Deere & Company was $4.90 billion for fiscal 2026 and $5.91 billion for fiscal 2027. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWPhZsTgKTolALIro7k8lDSns9mwiIoqhQ2pl1Z2-hsg9UgXxMsymnInwyZEV7QFY9ZUj1CEUyArCvJf2iDDGcK_HrBqXQlThR3vHdsr2EIZsl10-IdOlRTPUt0AJtJ7nvU6KIWfWTKipY\n- 2026-11-22 | On November 26, 2025, Deere beat fourth-quarter fiscal 2025 earnings estimates with EPS of $3.93 against $3.81 expected, but guided initial fiscal 2026 net income to a range of $4.0 billion to $4.75 billion. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEygjSV7K9a6sbb4hzH3QN65aaNIjysxzmGKHL-ngVLU18Jo-HSfvR8cMUv_yeOltbZYejhcYRN7wW9an0XMMtS8fJ9UDF54xHm7zfo1XK1nuNsMLiATpTagcTqgjdmBNpcZb_C0J-iu7ufUqip8xC95aPMxQuCa4KQbO0IYoFSUFMMX9P_zxDhQb2GyUzDKONsolimM8XVuG_Jnx6DVJWrZdrUO_9FgAthtIZX6S_nU46WmQgC2PliEbh-rUnrOIuD11pk0XmS\n- 2026-11-23 | In recent reporting, Deere rival CNH Industrial continued to describe the farming equipment market as a trough, while Caterpillar reported an 18% increase in construction sales in its latest quarter. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPB6NvYsqPNCsxzrFjqw_MBjHjbC1J9CQR6M-13NujEWN5tN8sAfy-J7lXjnx63pHX3kioahx4aduyCGFwVAOPeo_Jr0qnFyEjwJBeikT6ygaDmBkTrnFODVTT3hNfHzwfjRSSiauF-CBN4xMjVbDgkiho-EH7V_cuG9DY2aUhzfB6l3qq-nk-DaByIMSI-YxQD_TjusTLKo1sTlGtUi_3S95G2A==\n\nCOUNTER\nDeere's reported fiscal 2026 GAAP net income was elevated by $382 million in one-off tariff recoveries through the first nine months, and a strong fourth-quarter finish could push full-year reported net income to $5.0 billion or slightly higher. Because management historically issues conservative initial full-year guidance in November and large-agriculture demand in Brazil, Europe, and North America still faces low crop prices and cautious farmer spending, Deere could issue a cautious initial fiscal 2027 guidance range (such as $4.5 billion to $5.0 billion) whose midpoint sits below the tariff-boosted fiscal 2026 actual result.",
+   "facts": [
+    {
+     "date": "2026-08-20",
+     "fact": "Deere & Company reported net income attributable to Deere & Company of $3.808 billion for the first nine months of fiscal 2026 and forecasted full-year fiscal 2026 net income to be in a range of $4.75 billion to $5.00 billion.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2uSo2YFZr855vSprD5D_MOevGvShMxihypjuxwwa__3bVUu_JdOuZQBCQLnRtopEA8lteVMqisfs0ide35Ee8NxG3E2AqZRhUepcwpHT70RI9f3cu5h58VKqqbK-kGEjGjeS79G0JxshloEaGzUt-Cw=="
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "In its third-quarter 2026 earnings release, Deere recorded tariff recoveries of $110 million in the third quarter and $382 million in the first nine months of fiscal 2026, and CEO John May stated that the company continued to believe 2026 would mark the bottom of the current ag equipment cycle.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGJsMXV5JeaCT96sNtmzHdE8wE4-GeX6TUvRX3lbH3DuOudjDzSIw735rHwhRh74p4d5Mz0KiaZSFryaiwBJy7AnTw_-mNPEVQ1M7LbEO5fB89vRGGy0toQS3OsqipM9HBEufb8TXs6Tu8Qp4UFPe2dioid82PMb4pyhkYJcVjV0QqToXka_IML1JhnidVqpBKZvv_wEgZf-0="
+    },
+    {
+     "date": "2026-11-11",
+     "fact": "Deere & Company announced that it will hold its fourth-quarter 2026 earnings call on Wednesday, November 25, 2026, beginning at 9:00 a.m. Central time, with the earnings release accessible on its website.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWwDfFjs6QzSZA7V1s_mrZ6ra1PpgccvFNxrOsAFCjxE9p1XM-3znKW0MuiEfiFdTriDu4oN7e8DbEt39XU5lah3N1rXxiFuSVpBaGXRQ2NNmKPmBjFnlr-mSLt_sXixs_Sl0NYS_tMq5PFO6NLOslzlU5aI6GdA-gzchUnhRqJf8lx5QNS34BB2n0INqy7_2zQhe2WLJeBDIdf1s4qbNKTXUVIDCKt2bs"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "As of November 17, 2026, the FactSet consensus mean for net income attributable to Deere & Company was $4.90 billion for fiscal 2026 and $5.91 billion for fiscal 2027.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWPhZsTgKTolALIro7k8lDSns9mwiIoqhQ2pl1Z2-hsg9UgXxMsymnInwyZEV7QFY9ZUj1CEUyArCvJf2iDDGcK_HrBqXQlThR3vHdsr2EIZsl10-IdOlRTPUt0AJtJ7nvU6KIWfWTKipY"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "On November 26, 2025, Deere beat fourth-quarter fiscal 2025 earnings estimates with EPS of $3.93 against $3.81 expected, but guided initial fiscal 2026 net income to a range of $4.0 billion to $4.75 billion.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEygjSV7K9a6sbb4hzH3QN65aaNIjysxzmGKHL-ngVLU18Jo-HSfvR8cMUv_yeOltbZYejhcYRN7wW9an0XMMtS8fJ9UDF54xHm7zfo1XK1nuNsMLiATpTagcTqgjdmBNpcZb_C0J-iu7ufUqip8xC95aPMxQuCa4KQbO0IYoFSUFMMX9P_zxDhQb2GyUzDKONsolimM8XVuG_Jnx6DVJWrZdrUO_9FgAthtIZX6S_nU46WmQgC2PliEbh-rUnrOIuD11pk0XmS"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "In recent reporting, Deere rival CNH Industrial continued to describe the farming equipment market as a trough, while Caterpillar reported an 18% increase in construction sales in its latest quarter.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPB6NvYsqPNCsxzrFjqw_MBjHjbC1J9CQR6M-13NujEWN5tN8sAfy-J7lXjnx63pHX3kioahx4aduyCGFwVAOPeo_Jr0qnFyEjwJBeikT6ygaDmBkTrnFODVTT3hNfHzwfjRSSiauF-CBN4xMjVbDgkiho-EH7V_cuG9DY2aUhzfB6l3qq-nk-DaByIMSI-YxQD_TjusTLKo1sTlGtUi_3S95G2A=="
+    }
+   ],
+   "counter": "Deere's reported fiscal 2026 GAAP net income was elevated by $382 million in one-off tariff recoveries through the first nine months, and a strong fourth-quarter finish could push full-year reported net income to $5.0 billion or slightly higher. Because management historically issues conservative initial full-year guidance in November and large-agriculture demand in Brazil, Europe, and North America still faces low crop prices and cautious farmer spending, Deere could issue a cautious initial fiscal 2027 guidance range (such as $4.5 billion to $5.0 billion) whose midpoint sits below the tariff-boosted fiscal 2026 actual result."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:11:06Z",
+   "p": 0.84,
+   "searches": 9,
+   "sources": [
+    "https://www.deere.com/en/news/all-news/deere-expands-my27-tillage-portfolio/",
+    "https://www.marketbeat.com/earnings/reports/2026-11-25-deere-company-stock/",
+    "https://seekingalpha.com/news/4525902-deere-may-issue-broader-profit-guidance-for-2026-ubs-says",
+    "https://www.manufacturingdive.com/news/deere-lifts-sales-guidance-data-center-construction-q3-2026/828483/",
+    "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000315189/ae3fd312-3195-4e98-967c-13d138c0ff46.pdf",
+    "https://www.prnewswire.com/news-releases/deere-to-announce-fourth-quarter-2026-financial-results-302935106.html",
+    "https://www.marketbeat.com/instant-alerts/fy2026-eps-estimate-for-deere-company-increased-by-analyst-2026-06-11/",
+    "https://my-passive-income.eu/deere-q4-2026-earnings-preview/",
+    "https://www.nextearningsdate.com/de.html",
+    "https://www.morningstar.com/news/pr-newswire/20261111cg93588/deere-to-announce-fourth-quarter-2026-financial-results",
+    "https://www.deere.com/en-us/john-deere-news/fy26-q3-earnings",
+    "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm",
+    "https://www.deere.com/en/news/all-news/compact-utility-tractors-1-series-2027/",
+    "https://www.marketbeat.com/instant-alerts/upcoming-deere-company-de-set-to-post-quarterly-earnings-on-wednesday-2026-11-18/",
+    "https://bigearnings.ai/earnings/DE",
+    "https://www.tipranks.com/news/deere-de-heads-into-q4-earnings-as-investors-watch-for-2027-recovery",
+    "https://finance.yahoo.com/markets/stocks/articles/deere-set-report-q4-earnings-143400118.html",
+    "https://stockrow.com/DE",
+    "https://www.deere.com/en-us/john-deere-news/fy25-fourth-quarter-earnings",
+    "https://www.marketbeat.com/instant-alerts/estimates-erste-group-bank-predicts-deere-company-fy2027-earnings-2026-09-21/",
+    "https://www.nasdaq.com/articles/deere-set-report-q4-earnings-what-expect-stock",
+    "https://quadcitiesbusiness.com/deere-q4-net-income-drops-amid-challenges-uncertainties/",
+    "https://fxtribune.com/announcements/4283339-deere-to-announce-fourth-quarter-2026-financial-results/",
+    "https://stockrow.com/DE/metrics/net-income",
+    "https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement"
+   ],
+   "reason": "Deere has confirmed its fiscal Q4 2026 release and call for 25 November 2026 and has repeatedly described fiscal 2026 as the bottom of the ag-equipment cycle. Nine-month net income is already $3.808 billion against full-year guidance of $4.75–$5.00 billion, so reported fiscal 2026 income is very likely near $4.9 billion. Even cautious previews put an initial fiscal 2027 net-income figure near $5.4 billion, and the street’s baseline is higher still (roughly 20%+ EPS growth). Deere’s standard Q4 practice is to publish a dollar net-income range for the coming year in the same release.\n\nNEW FACTS\n- 2026-11-11 | Deere announced it will hold its fourth-quarter 2026 earnings call on Wednesday, 25 November 2026 at 9:00 a.m. Central time, with the earnings release available at the same site | https://www.prnewswire.com/news-releases/deere-to-announce-fourth-quarter-2026-financial-results-302935106.html\n- 2026-08-20 | Deere reported nine-month fiscal 2026 net income attributable to Deere & Company of $3.808 billion and forecast full-year fiscal 2026 net income of $4.75 billion to $5.00 billion, reiterating that 2026 marks the bottom of the ag equipment cycle | https://www.deere.com/en-us/john-deere-news/fy26-q3-earnings\n- 2025-11-26 | In its fiscal 2025 fourth-quarter release, Deere reported full-year net income of $5.027 billion and gave an initial fiscal 2026 net-income outlook of $4.00 billion to $4.75 billion | https://www.deere.com/en-us/john-deere-news/fy25-fourth-quarter-earnings\n- 2026-11-23 | A TipRanks preview stated that analysts and investors expect Deere to forecast fiscal 2027 EPS growth of about 20% to 25%, while Bernstein expects a fiscal 2027 net-income guide of $5.4 billion | https://www.tipranks.com/news/deere-de-heads-into-q4-earnings-as-investors-watch-for-2027-recovery\n- 2026-11-20 | Bernstein said it anticipates Deere net income of $5.4 billion, or $20 per share, for 2027, 5% to 10% below buy-side and sell-side expectations | https://www.investing.com/news/analyst-ratings/bernstein-reiterates-deere-stock-rating-ahead-of-earnings-reset-93CH-5041929\n- 2026-08-20 | Reuters reported that Deere’s finance chief expected net tariff costs of about $750 million in 2026 and about $1 billion in 2027 | https://www.reuters.com/business/deere-raises-lower-end-2026-net-income-forecast-range-2026-08-20/\n\nCOUNTER\nManagement could still open fiscal 2027 with a deliberately wide or conservative range whose midpoint does not clear the just-reported fiscal 2026 figure, especially if a Q4 beat pushes 2026 income to the top of the $4.75–$5.00 billion band and higher expected tariff costs plus soft large-ag demand are baked into the initial outlook. A “reset” framing already circulating among analysts shows that a softer dollar guide than the street wants is plausible, and a non-standard release that omits a specific net-income range would also resolve the claim no.",
+   "facts": [
+    {
+     "date": "2026-11-11",
+     "fact": "Deere announced it will hold its fourth-quarter 2026 earnings call on Wednesday, 25 November 2026 at 9:00 a.m. Central time, with the earnings release available at the same site",
+     "url": "https://www.prnewswire.com/news-releases/deere-to-announce-fourth-quarter-2026-financial-results-302935106.html"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "Deere reported nine-month fiscal 2026 net income attributable to Deere & Company of $3.808 billion and forecast full-year fiscal 2026 net income of $4.75 billion to $5.00 billion, reiterating that 2026 marks the bottom of the ag equipment cycle",
+     "url": "https://www.deere.com/en-us/john-deere-news/fy26-q3-earnings"
+    },
+    {
+     "date": "2025-11-26",
+     "fact": "In its fiscal 2025 fourth-quarter release, Deere reported full-year net income of $5.027 billion and gave an initial fiscal 2026 net-income outlook of $4.00 billion to $4.75 billion",
+     "url": "https://www.deere.com/en-us/john-deere-news/fy25-fourth-quarter-earnings"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "A TipRanks preview stated that analysts and investors expect Deere to forecast fiscal 2027 EPS growth of about 20% to 25%, while Bernstein expects a fiscal 2027 net-income guide of $5.4 billion",
+     "url": "https://www.tipranks.com/news/deere-de-heads-into-q4-earnings-as-investors-watch-for-2027-recovery"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Bernstein said it anticipates Deere net income of $5.4 billion, or $20 per share, for 2027, 5% to 10% below buy-side and sell-side expectations",
+     "url": "https://www.investing.com/news/analyst-ratings/bernstein-reiterates-deere-stock-rating-ahead-of-earnings-reset-93CH-5041929"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "Reuters reported that Deere’s finance chief expected net tariff costs of about $750 million in 2026 and about $1 billion in 2027",
+     "url": "https://www.reuters.com/business/deere-raises-lower-end-2026-net-income-forecast-range-2026-08-20/"
+    }
+   ],
+   "counter": "Management could still open fiscal 2027 with a deliberately wide or conservative range whose midpoint does not clear the just-reported fiscal 2026 figure, especially if a Q4 beat pushes 2026 income to the top of the $4.75–$5.00 billion band and higher expected tariff costs plus soft large-ag demand are baked into the initial outlook. A “reset” framing already circulating among analysts shows that a softer dollar guide than the street wants is plausible, and a non-standard release that omits a specific net-income range would also resolve the claim no."
+  }
+ ]
+}

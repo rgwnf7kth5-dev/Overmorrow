@@ -1,0 +1,32 @@
+{
+ "claim": "On Wednesday 25 November 2026 the European Parliament gives its consent to the EU–Switzerland package of agreements with at least 550 votes in favour.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:19:46Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 00:00 and 23:59 CET (Europe/Paris) on 25 November 2026, the European Parliament plenary must vote to give consent to the EU–Switzerland broad package of agreements (procedure 2025/0162(NLE), report A10-0236/2026) with 550 or more votes in favour (and if split into multiple consent votes, every one of them must receive at least 550 votes in favour), excluding the vote on the accompanying re",
+   "decided_by": "The European Parliament plenary announcement and official records (Parliament's press release, doceo PV minutes / RCV roll-call results) or HowTheyVote.eu."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:19:49Z",
+   "ambiguous": true,
+   "scenario": "If the chair announces 550 votes in favour but the first published roll-call results show 549 because the chair misread the tally, readers could disagree about which figure controls. The criterion names both the announcement and the published record but does not say which takes precedence if they conflict.",
+   "yes_requires": "On 25 November 2026, within the specified Strasbourg time window, the European Parliament plenary grants consent to the EU–Switzerland package under procedure 2025/0162(NLE), report A10-0236/2026, with at least 550 votes in favour. If consent is split into separate votes, each must meet the threshold. The interim-report resolution does not count.",
+   "decided_by": "The plenary's original result as announced and recorded in Parliament's press release, minutes or roll-call results, or on HowTheyVote.eu. A report published after the window can establish the result "
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:21:07Z",
+   "ambiguous": true,
+   "scenario": "Those sources disagree on whether votes in favour are at least 550 (for example the plenary announcement or HowTheyVote.eu shows 551 while the same-day roll-call shows 548) and it is unclear which source controls or whether the gap is a disregarded later correction; or the package is split and one consent vote is postponed while every vote actually held that day records at least 550 in favour.",
+   "yes_requires": "Between 00:00 and 23:59 on 25 Nov 2026 (Europe/Paris), the European Parliament plenary votes on the consent recommendation for the EU–Switzerland broad package (2025/0162(NLE), A10-0236/2026, rapporteur Christophe Grudler), consent is given, and that vote—or every separate consent vote if the package is split—records at least 550 votes in favour, as announced in plenary and shown in Parliament's p",
+   "decided_by": "The European Parliament plenary, as announced in plenary and shown in Parliament's press release, doceo minutes/roll-call results (PV, RCV), or HowTheyVote.eu."
+  }
+ ]
+}

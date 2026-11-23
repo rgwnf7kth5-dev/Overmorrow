@@ -1,0 +1,183 @@
+{
+ "claim": "On Wednesday 25 November 2026 the Senate lets the bill raising state payments into public health insurance for state-insured persons (+CZK 13bn for 2027) pass unchanged.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:14:52Z",
+   "p": 0.39,
+   "searches": 5,
+   "sources": [
+    "https://www.senat.cz/informace/pro_media/statistiky/legislativa.php",
+    "https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026",
+    "https://www.senat.cz/index.php?O=16&ke_dni=20.11.2026",
+    "https://www.senat.cz/cinnost/index.php?O=10&den=10&ke_dni=13.11.2026&mesic=11&rok=2026",
+    "https://www.senat.cz/index.php?O=15&ke_dni=1.11.2026",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/bqbs/b10820301.htm",
+    "https://www.senat.cz/index.php?O=16&ke_dni=1.10.2026",
+    "https://www.senat.cz/index.php?O=13&ke_dni=2.11.2026",
+    "https://www.senat.cz/index.php?O=16&ke_dni=19.11.2026",
+    "https://www.senat.cz/index.php?O=2&ke_dni=7.10.2026",
+    "https://www.senat.cz/index.php?O=8&ke_dni=21.10.2026",
+    "https://www.senat.cz/?O=15&ke_dni=28.9.2026",
+    "https://www.senat.cz/index.php?O=5&ke_dni=04.11.2026",
+    "https://www.senat.cz/index.php?O=7&ke_dni=9.8.2026",
+    "https://www.senat.cz/cinnost/harmonogram/files/d16f7ebc668c0e3418b1586f5f39696f.pdf",
+    "https://www.senat.cz/xqw/webdav/pssenat/original/111877/93860",
+    "https://www.psp.cz/eknih/2021ps/tesnopis/tz033.pdf",
+    "https://www.senat.cz/xqw/webdav/pssenat/original/109343/91721",
+    "https://www.senat.cz/dokumenty/stenozaznamy/brozury/15_funkcni_obdobi/brozura_26_schuze.pdf",
+    "https://psp.cz/eknih/2021ps/tesnopis/tz027.pdf",
+    "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262",
+    "https://www.senat.cz/cinnost/zpravy/vyrzpr2024/vyrzpr2024.pdf",
+    "https://sledovna.cz/tisk/235/",
+    "https://www.idnes.cz/zpravy/domaci/poslanci-schvalili-zvyseni-plateb-statu-zdravotnim-pojistovnam-o-13-miliard.A261023_041253_domaci_kop",
+    "https://www.senat.cz/informace/pro_media/statistiky/legislativa.pdf"
+   ],
+   "reason": "**Base rate.** The Senate’s figures as of October 27, 2026 show that 71.5% of Chamber-passed bills were neither amended nor rejected. That is an upper bound for the closest historical comparison: it includes bills on which the Senate adopted no resolution, whereas this claim requires an explicit resolution on November 25. ([senat.cz](https://www.senat.cz/informace/pro_media/statistiky/legislativa.php?utm_source=openai))\n\n**What moves this case.** The Senate confirmed a November 25 sitting, which raises the chance of a same-day vote. But its November 4 preview did not name this bill among the planned business. That omission is not conclusive—the preview preceded the bill’s November 12 delivery—but the Chamber’s November 23 status page still gave me no confirmation that the Senate would take it up that Wednesday. It lists December 12 as the end of the Senate’s review period. On the merits, the Health Ministry’s reliance on the increase in its 2027 financing assumptions favors passage, while reported opposition to the bill makes unchanged passage less certain. ([senat.cz](https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026&utm_source=openai))\n\n**Timing is the main risk.** I estimate a 57% chance the Senate reaches a decision on the bill on November 25 and a 68% chance that decision qualifies as YES if it does. A later unchanged approval would still resolve NO. ([senat.cz](https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026&utm_source=openai))\n\nNEW FACTS\n- 2026-11-23 | The Chamber’s status page records delivery to the Senate on November 12 and lists December 12 as the end of the review period. | https://www.psp.cz/sqw/historie.sqw?o=10&t=235\n- 2026-11-04 | The Senate announced a November 25 sitting at 10:00 but did not name the health-insurance bill in its preview of planned business. | https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026\n- 2026-11-04 | ČTK and ČT24 reported that the Chamber passed a CZK 13 billion increase for 2027 after a coalition amendment reduced the government’s proposed CZK 21 billion increase. | https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262\n\nCOUNTER  \nThe Senate’s preview came out before the bill arrived, so its omission is weak evidence that the bill will be left off the agenda. The confirmed sitting gives senators a chance to clear a measure the Health Ministry has already factored into its 2027 financing assumptions. ([senat.cz](https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026&utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "The Chamber’s status page records delivery to the Senate on November 12 and lists December 12 as the end of the review period.",
+     "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=235"
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "The Senate announced a November 25 sitting at 10:00 but did not name the health-insurance bill in its preview of planned business.",
+     "url": "https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026"
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "ČTK and ČT24 reported that the Chamber passed a CZK 13 billion increase for 2027 after a coalition amendment reduced the government’s proposed CZK 21 billion increase.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262"
+    }
+   ],
+   "counter": "The Senate’s preview came out before the bill arrived, so its omission is weak evidence that the bill will be left off the agenda. The confirmed sitting gives senators a chance to clear a measure the Health Ministry has already factored into its 2027 financing assumptions. ([senat.cz](https://www.senat.cz/zpravodajstvi/zprava.php?O=15&from=V&id=4137&ke_dni=3.9.2026&utm_source=openai))"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:15:59Z",
+   "p": 0.07,
+   "searches": 22,
+   "sources": [
+    "https://www.zpmvcr.cz/o-nas/nejcastejsi-dotazy-klientu/hrazeni-pojistneho/statem-hrazeni-pojistenci",
+    "https://www.newstream.cz/politika/zdravotnictvi-dostane-miliardy-navic-pacient-nic-nepozna-varuje-opozice",
+    "https://zpravy.kurzy.cz/880533-termin-druhe-schuze-horni-komory-byl-stanoven-na-25-listopadu-v-1000-hodin/",
+    "https://www.frekvence1.cz/zpravy/zpravy-ctk/vystrcil-povede-senat-popate-dostal-69-hlasu-ze-77-a-nemel-soupere.shtml",
+    "https://aroundprague.cz/en/news/state-budget-to-add-18-billion-crowns-for-health-insurance-of-non-working-citize",
+    "https://denikn.cz/minuta/2263145/",
+    "https://www.senat.cz/informace/pro_verejnost/legislativni_proces/index.php?ke_dni=24.4.2021&O=13",
+    "https://zivnostenskylist.cz/en/pojisteni-osvc",
+    "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
+    "https://zivnostenskylist.cz/pojisteni-osvc/minimalni-zalohy-2026",
+    "https://www.ceskenoviny.cz/zpravy/2897027",
+    "https://denikn.cz/minuta/2263671/",
+    "https://www.psp.cz/sqw/text/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://psp.cz/sqw/text/orig2.sqw?idd=291756",
+    "https://www.echo24.cz/a/HdgCU/zpravy-domov-senat-ma-nove-vedeni-uspel-vystrcil-i-grolich",
+    "https://media24.cz/article/na-statni-pojistence-stat-prida-13-mld-kc-exministr-valek-zada-efektivitu",
+    "https://www.psp.cz/eknih/2025ps/stenprot/031schuz/s031113.htm",
+    "https://www.senat.cz/cinnost/index.php?ke_dni=3.9.2019&O=12&den=22&mesic=11&rok=2026",
+    "http://ow.ly/1OR1IQ",
+    "https://denikn.cz/minuta/2263769/",
+    "https://www.vzp.cz/o-nas/tiskove-centrum/otazky-tydne/platby-zdravotniho-pojisteni-v-roce-2026",
+    "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CPZP-Prispevky-na-prevenci-vyuzijte-do-konce-listopadu-799941",
+    "https://www.senat.cz/zpravodajstvi/zprava.php?ke_dni=26.4.2018&O=11&id=4146&from=V",
+    "https://www.senat.cz/xqw/xervlet/pssenat/fulltext?q=&zpravodaj=H%E1jek%20Old%F8ich",
+    "https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/czechia-2023/financing/sources-of-revenue-and-financial-flows"
+   ],
+   "reason": "The Czech Senate almost never decides a bill on a fixed calendar day when that bill is absent from the published plenary agenda and committee preparation has only just begun. Ordinary bills are assigned, reviewed by the relevant committee, and then placed on a later sitting inside the 30-day constitutional window; a same-week decision without that sequence is rare.\n\nThe Chamber approved the +CZK 13 bn amendment on 4 November 2026 and sent it to the Senate that day. The Senate’s own notice the same morning already fixed the 25 November sitting around consumer-protection, end-of-life products and electronic-evidence bills, plus European items and reports—not the health-insurance measure. On 19 November, after the constitutive session, ČT24 confirmed the 25 November agenda remains those five mostly ecological and consumer bills, with the continuation of the same sitting set for 9 December (comfortably inside the 30-day limit). The health committee itself was only reconstituted on 19 November. No subsequent report has added the insurance bill to the 25 November order of business.\n\nThe clearest way the “no decision that day” outcome could still fail is an eleventh-hour agenda amendment driven by the 1 January 2027 effective-date pressure the health minister has already flagged. That remains possible but would require both the organisational committee and the newly formed health committee to compress a process that the published schedule has already deferred.\n\nNEW FACTS\n- 2026-11-04 | The Chamber of Deputies approved the bill raising state payments for state-insured persons by about CZK 13 billion and referred it to the Senate. | https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262\n- 2026-11-04 | The Senate announced that its 25 November sitting would deal with consumer-protection, end-of-life-products and electronic-evidence bills plus European prints and reports, with no mention of the health-insurance measure. | https://www.senat.cz/zpravodajstvi/zprava.php?id=4137\n- 2026-11-19 | ČT24 reported that on 25 November the Senate would begin with five laws mainly on ecology and consumer protection, and that the continuation of that sitting is scheduled for 9 December. | https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749\n- 2026-11-19 | The Senate reconstituted its committees, including the health committee under a new chair, Lumír Kantor. | https://www.zdravotnickydenik.cz/2026/11/senatni-vybor-pro-zdravotnictvi-predseda-clenove/\n- 2026-11-04 | Health Minister Vojtěch said he expected the Senate to approve the Chamber text and noted that effectiveness from 1 January 2027 is required. | https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262\n\nCOUNTER\nThe published agenda could still be amended on or just before 25 November if the government treats the 1 January effective date as urgent enough to skip the normal committee interval. In that case the Senate could approve the Chamber wording or resolve not to deal with the bill on the day itself, satisfying the YES criterion even though every dated notice so far points the other way.",
+   "facts": [
+    {
+     "date": "2026-11-04",
+     "fact": "The Chamber of Deputies approved the bill raising state payments for state-insured persons by about CZK 13 billion and referred it to the Senate.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262"
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "The Senate announced that its 25 November sitting would deal with consumer-protection, end-of-life-products and electronic-evidence bills plus European prints and reports, with no mention of the health-insurance measure.",
+     "url": "https://www.senat.cz/zpravodajstvi/zprava.php?id=4137"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "ČT24 reported that on 25 November the Senate would begin with five laws mainly on ecology and consumer protection, and that the continuation of that sitting is scheduled for 9 December.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "The Senate reconstituted its committees, including the health committee under a new chair, Lumír Kantor.",
+     "url": "https://www.zdravotnickydenik.cz/2026/11/senatni-vybor-pro-zdravotnictvi-predseda-clenove/"
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "Health Minister Vojtěch said he expected the Senate to approve the Chamber text and noted that effectiveness from 1 January 2027 is required.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262"
+    }
+   ],
+   "counter": "The published agenda could still be amended on or just before 25 November if the government treats the 1 January effective date as urgent enough to skip the normal committee interval. In that case the Senate could approve the Chamber wording or resolve not to deal with the bill on the day itself, satisfying the YES criterion even though every dated notice so far points the other way."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:16:25Z",
+   "p": 0.72,
+   "searches": 22,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEw-85LlM3PU_QJUvGox3EikKMUFuXOaapmeNnhvd0KrTBfMlz38WNI4M-LI0KNrCdtgH12Bp3QNZi5FL7VDrmPj7TwINEcWroF71iI9XD7Gt8ME5Mn1yGhav50wdHoelM1mL7sDXw66OatWPoM-wgD8Lf8LaTEFpXh4FOA8mK37JfPJtBIrJf2q9H8n3gTkaU2881Otf3XoQ_Vk-9iQidx",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvjJ5jvyOuqCtCu5W1zu__zDMaa7BTn_apPn-BfRVTOoao3WNoFF_tSNrSlNfmsOUZN5TYe9qvOWG_-YRFl9S9z50DBRNWQqMj3XhZILuREVyB5mE5pWUsiVVvfWb1qmeALtWWZyHjgeB4fXS-xGJ_gMBOhTsgUupMEOXdDpERehNkJXLNsZOnaVvY_08fxaT3myjXMq1tYkoSTV4c3T1W9dSRo7ETzQCq",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEARJM0BRQHmR3NYT_Mll-AFM6hVzW48b6JiFhZBhbUyi5gP9xDyLIdzNo6uGROJjfXeZCDIWcKuF6JDXIKstU4TCUSOhBmuxEO5-hyfsqgJ7pQOFkYKMY8PwK7-i3kVyqMoGIPv9EuruuwFomNHKn_1_aHV_Zj-SFRDM-wxKP_BP9zZtk99nCQYCjrkKpnODEQIkS8yN-iYrOuo58KMRRgFNRHtkN7kDe1ncMU4jVXFoU0gky_45pr3va7LN4dVbaMRZa0ouLillFSGsz7",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3UAdcnjO2w1zYYZw2JMuPB1tHmMgYuTGRXc-GEUEBaYV-vlQqMwC9hhXyezr2OJBBK5QvNdcXxekJ5K0oqQWVlp8_yKrlRD-Imy9alMubedtmTA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3eecwbizD1TCSPScwTgrtqUNo3ojyxnS7YinWRkObcqzfALTyR4BsafhwaVDjvmNhKEYk4jLa5nWq06lQLXMgebTGH2FE8rWk_Ej7dIp6V3yXmcrw15JUrTzpuqzGBo1PIEhWZQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPIQUghKGSeOigpKTfbAIt7c1ghIPViMExkaCglO4La2R_KBnK6yxx6UTf6FA9Z8-M7LmPLgv7KW_uM18jw3CXY-LUWLr116h4kQe2EszIb-wVHuDccbEWZ4EyiyS0e0iAIB3nts2V5CagXBlPq_wfMg2sHTV0lxa-r7YlugFzPtg6x0viHQbl67oOyNgJVEE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfHROxb7oJdYlzZm5v2KUWptEi4HANsaTm038MF7jRRlqRaau621nmaRxjGY7ypAe9Hk-HA8GMgpN7m59LYVO2sWRI24KfIThCgQNM_wk-Rx4Lf77-sBy4kxPPt5jkKq8gR5eQeFr1WqlPx4LSOTHATf6y1ZC6uC6sQ4ve9r-PtK56qm0rWx3msQxkF0QoHQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNSaKLDRTgBzJ78p7bC8XukS-pOrus2a3YbLOhRRMemYSIXebf3UkmQBL16rBM-xUAkU7v_-0WsWf5GCjIVscYNap01EqmYX0PURUNBThYm4EBTCDxLQJ7KmCPriXBJZmBVlTTLwC9Q_31ofvXEkVeaGPh9dJkaQ8bSRkdQaO-f34IX3v5mCW6OKq0zBP_vA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0enjpR06urtqw66Wg-E-4-ieJPulk5QA0Gq2wi0rKCqqHVy7ua1AGcBkqiqMxPaxW_CxqmDCMecUGs4GGfe6tqFOtTmKewIpDnx98CIsNX7aarKfOcfLLCw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5Aif-1YFForKkny3zaZPozQBBagMn0SZKWodrDCUwzt8k6837gUdLgbY1EiTk3WzZjLBqg1klYQdKAfSeTG5NTyYiwjkDE4gprS8CSJqYhIs08Va25VgJdv7b-1gMUeveQDIpMrURhdPqN4sgNWiExj-_1q9zg70fFEDrB8Kr6KQT",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpDmsWM4NwLtoIuBeew85IehUvwLoOED-UcwvKr-LU2I5R32BM401oW6ozy1so5R5M0YGzd33W87EeYtPct0SGwmgeSRATLIqz2NzHmLSP1LacatIuZOSLad6YsC-s00xJfiI6B3Etwa4tlT5UWICroFUCNwSwoOhvvtugXEFKlWQiRL2VkwxSkqshOA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFjg6Yft71SN7FzLDw0LJ34ZzjHKJjbpSkyFMdRLh-fBYPt0zI15ep78DKrZmKn2F6O4E2OdDxslrs63sWiSltw9flMpojIOr3L5yQEcacKkUXtGmCHGjpWc0GPS_JwrZ6GH1Pj0rzClggZmY2gaAu7KkRew_yxSjfU_3NiZgC0-Tpb2Iblox0h6AFwbSDDS_CvaBXcvxlXUhrokFEWd4lACsQ76A=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_LzWn-F07Q5-e5I1A50XXbBT7zyaP2U2jPj72lUHdsr8j-9FAJN_8WSnw63VE8qIxPPdL_l8TWGArsM_pEDYcdzfw8YWwrQhmcg2KvSyqdL1soUvDEiNSfhDHZcOmlVLsOxkHqz3hMmLQP1oeBOZIiqlcpNj2FU_F9kRFpklirTEcggHKM_FJquOAJcftU7WFfUzo2_jAX1R22YT1KyZRpEfrLL9KbhkDDtfX4faYBjTIsxhpowY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv-XWjw4obGqR5NNpqok4wj-ZSHZT1Q9_rgT0ssAzo8ZPtEoOgDi6JVWoioSX3ozojiMinHCafv59asGKN-V7zWnVt3BVuS9D0knkFDM8iIpTrQH4acN_5vTzECs7tVrBFsRCm0D4lClv71FWugwryLILnTvYblahIocf10gbaJ9MpFz_XlH8Tgwj8rziRXJ1rUNE2yOwN_qYBP0JXp31corLbLuL6uDTxxXQER_3Va-d5-iAPEDFeluVq5wldTqe-gs6kRnjcjEhvWw=="
+   ],
+   "reason": "ially announced that the 2nd session of the Senate in its 16th term begins on Wednesday, 25 November 2026 at 10:00 AM, which is the primary plenary session scheduled within the 30-day window to clear bills delivered on 12 November.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nThere are two meaningful ways the YES outcome could fail on 25 November:\n1. **Opposition to suspending automatic indexation:** In the Chamber of Deputies, ODS voted unanimously against the bill and TOP 09 ex-minister Vlastimil Válek sharply criticized it for freezing the automatic valorization mechanism in 2028. Because the ODS and TOP 09 club is the largest faction in the Senate (30 senators), they could rally enough colleagues from STAN or KDU-ČSL to return the bill to the Chamber with an amendment preserving automatic indexation—especially since Health Minister Adam Vojtěch admitted on 4 November that the Chamber would still have time before Christmas to outvote a Senate return before the 1 January 2027 effective date.\n2. **Agenda / Timing slippage:** Because the Senate only constituted its committees on Thursday, 19 November, and both the Health Minister and former Health Committee Chair Tomáš Fiala are scheduled to speak at the \"Efektivní nemocnice 2026\" conference in Prague on 25 November, the bill might either be pushed to a second day of the plenary session (Thursday, 26 November) or deferred to a subsequent session before the 12 December deadline.\n\nBalancing the cross-party support (ANO + STAN + KDU-ČSL), the composition of the Senate Health Committee, and the urgent 1 January 2027 effective date against the risk of an ODS-led amendment or a one-day agenda spillover, I estimate a 72% probability that the Senate approves the bill unchanged on Wednesday, 25 November 2026.\n\nNEW FACTS\n- 2026-11-04 | The Chamber of Deputies approved the amendment to the Public Health Insurance Premiums Act (Sněmovní tisk 235) raising state payments for state-insured persons by CZK 13 billion in 2027, with coalition MPs and part of opposition STAN and KDU-ČSL voting in favor while ODS voted against. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAqI1XZUNVlFlsPK9IX9cZKvvFDc3IsIU_pGJ2x_xZqv8nRo5VDV2nnKcI9Ab-6QR7gcaoSs_fGqhg7VzeldGyp1ZNsgVH1EsPGL1Ru6IetuRciWGdrlFkUcL3Dg9vHJ3l0pGznTFSPeLy0yleQc7YkMoZ1cHz9nIUb7cAu3pozgkolLv1N3gJkLoxp9AuVMr0jlipb6ArAi8jcbrRltpS6hhoV25VihOKlPino2OC8za4UTQ56Zs=\n- 2026-11-04 | Health Minister Adam Vojtěch stated that he hopes the Senate approves the bill as passed by the Chamber, noting that if the Senate returns it, the Chamber would still be able to vote on it again before Christmas so it takes effect on 1 January 2027. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_LzWn-F07Q5-e5I1A50XXbBT7zyaP2U2jPj72lUHdsr8j-9FAJN_8WSnw63VE8qIxPPdL_l8TWGArsM_pEDYcdzfw8YWwrQhmcg2KvSyqdL1soUvDEiNSfhDHZcOmlVLsOxkHqz3hMmLQP1oeBOZIiqlcpNj2FU_F9kRFpklirTEcggHKM_FJquOAJcftU7WFfUzo2_jAX1R22YT1KyZRpEfrLL9KbhkDDtfX4faYBjTIsxhpowY=\n- 2026-11-15 | In addition to Boris Šťastný's amendment setting the 2027 assessment base at CZK 17,540 (CZK 2,368 monthly per state-insured person), the Chamber adopted an amendment by STAN MP Michaela Šebelová abolishing the 5% limit on health insurance fund contributions to patient organizations. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvjJ5jvyOuqCtCu5W1zu__zDMaa7BTn_apPn-BfRVTOoao3WNoFF_tSNrSlNfmsOUZN5TYe9qvOWG_-YRFl9S9z50DBRNWQqMj3XhZILuREVyB5mE5pWUsiVVvfWb1qmeALtWWZyHjgeB4fXS-xGJ_gMBOhTsgUupMEOXdDpERehNkJXLNsZOnaVvY_08fxaT3myjXMq1tYkoSTV4c3T1W9dSRo7ETzQCq\n- 2026-11-16 | According to parliamentary records, the approved bill (Sněmovní tisk 235) was delivered to the Senate on 12 November 2026, giving the Senate 30 days from delivery to decide on it. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3UAdcnjO2w1zYYZw2JMuPB1tHmMgYuTGRXc-GEUEBaYV-vlQqMwC9hhXyezr2OJBBK5QvNdcXxekJ5K0oqQWVlp8_yKrlRD-Imy9alMubedtmTA==\n- 2026-11-19 | At its constituent session on 19 November 2026, the Senate re-elected Miloš Vystrčil (ODS) as Senate President, while the ODS and TOP 09 club remains the largest faction with 30 members. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFjg6Yft71SN7FzLDw0LJ34ZzjHKJjbpSkyFMdRLh-fBYPt0zI15ep78DKrZmKn2F6O4E2OdDxslrs63sWiSltw9flMpojIOr3L5yQEcacKkUXtGmCHGjpWc0GPS_JwrZ6GH1Pj0rzClggZmY2gaAu7KkRew_yxSjfU_3NiZgC0-Tpb2Iblox0h6AFwbSDDS_CvaBXcvxlXUhrokFEWd4lACsQ76A=\n- 2026-11-19 | On 19 November 2026, the Senate constituted its nine-member Committee on Health for the 2026–2028 term, electing Lumír Kantor (KDU-ČSL) as chairman alongside four senators from ANO, one from ODS, one from STAN, and Tomáš Fiala (Naše Česko). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNSaKLDRTgBzJ78p7bC8XukS-pOrus2a3YbLOhRRMemYSIXebf3UkmQBL16rBM-xUAkU7v_-0WsWf5GCjIVscYNap01EqmYX0PURUNBThYm4EBTCDxLQJ7KmCPriXBJZmBVlTTLwC9Q_31ofvXEkVeaGPh9dJkaQ8bSRkdQaO-f34IX3v5mCW6OKq0zBP_vA==\n- 2026-11-23 | The Senate announced that the 2nd plenary session of its 16th term begins on Wednesday, 25 November 2026 at 10:00 AM. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5Aif-1YFForKkny3zaZPozQBBagMn0SZKWodrDCUwzt8k6837gUdLgbY1EiTk3WzZjLBqg1klYQdKAfSeTG5NTyYiwjkDE4gprS8CSJqYhIs08Va25VgJdv7b-1gMUeveQDIpMrURhdPqN4sgNWiExj-_1q9zg70fFEDrB8Kr6KQT\n\nCOUNTER\nThe ODS and TOP 09 caucus, which holds 30 seats as the largest faction in the Senate, strongly opposes the bill's suspension of the automatic indexation mechanism for state-insured payments in 2028 and could pass an amendment returning the bill to the Chamber of Deputies, knowing the Chamber still has time in December to override a return before 1 January 2027. Furthermore, because the Senate only constituted its committees on 19 November and its 30-day deadline runs until 12 December, the vote on this bill could easily slip past Wednesday, 25 November to a second day of the session or a later sitting.",
+   "facts": [
+    {
+     "date": "2026-11-04",
+     "fact": "The Chamber of Deputies approved the amendment to the Public Health Insurance Premiums Act (Sněmovní tisk 235) raising state payments for state-insured persons by CZK 13 billion in 2027, with coalition MPs and part of opposition STAN and KDU-ČSL voting in favor while ODS voted against.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAqI1XZUNVlFlsPK9IX9cZKvvFDc3IsIU_pGJ2x_xZqv8nRo5VDV2nnKcI9Ab-6QR7gcaoSs_fGqhg7VzeldGyp1ZNsgVH1EsPGL1Ru6IetuRciWGdrlFkUcL3Dg9vHJ3l0pGznTFSPeLy0yleQc7YkMoZ1cHz9nIUb7cAu3pozgkolLv1N3gJkLoxp9AuVMr0jlipb6ArAi8jcbrRltpS6hhoV25VihOKlPino2OC8za4UTQ56Zs="
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "Health Minister Adam Vojtěch stated that he hopes the Senate approves the bill as passed by the Chamber, noting that if the Senate returns it, the Chamber would still be able to vote on it again before Christmas so it takes effect on 1 January 2027.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_LzWn-F07Q5-e5I1A50XXbBT7zyaP2U2jPj72lUHdsr8j-9FAJN_8WSnw63VE8qIxPPdL_l8TWGArsM_pEDYcdzfw8YWwrQhmcg2KvSyqdL1soUvDEiNSfhDHZcOmlVLsOxkHqz3hMmLQP1oeBOZIiqlcpNj2FU_F9kRFpklirTEcggHKM_FJquOAJcftU7WFfUzo2_jAX1R22YT1KyZRpEfrLL9KbhkDDtfX4faYBjTIsxhpowY="
+    },
+    {
+     "date": "2026-11-15",
+     "fact": "In addition to Boris Šťastný's amendment setting the 2027 assessment base at CZK 17,540 (CZK 2,368 monthly per state-insured person), the Chamber adopted an amendment by STAN MP Michaela Šebelová abolishing the 5% limit on health insurance fund contributions to patient organizations.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvjJ5jvyOuqCtCu5W1zu__zDMaa7BTn_apPn-BfRVTOoao3WNoFF_tSNrSlNfmsOUZN5TYe9qvOWG_-YRFl9S9z50DBRNWQqMj3XhZILuREVyB5mE5pWUsiVVvfWb1qmeALtWWZyHjgeB4fXS-xGJ_gMBOhTsgUupMEOXdDpERehNkJXLNsZOnaVvY_08fxaT3myjXMq1tYkoSTV4c3T1W9dSRo7ETzQCq"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "According to parliamentary records, the approved bill (Sněmovní tisk 235) was delivered to the Senate on 12 November 2026, giving the Senate 30 days from delivery to decide on it.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3UAdcnjO2w1zYYZw2JMuPB1tHmMgYuTGRXc-GEUEBaYV-vlQqMwC9hhXyezr2OJBBK5QvNdcXxekJ5K0oqQWVlp8_yKrlRD-Imy9alMubedtmTA=="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "At its constituent session on 19 November 2026, the Senate re-elected Miloš Vystrčil (ODS) as Senate President, while the ODS and TOP 09 club remains the largest faction with 30 members.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFjg6Yft71SN7FzLDw0LJ34ZzjHKJjbpSkyFMdRLh-fBYPt0zI15ep78DKrZmKn2F6O4E2OdDxslrs63sWiSltw9flMpojIOr3L5yQEcacKkUXtGmCHGjpWc0GPS_JwrZ6GH1Pj0rzClggZmY2gaAu7KkRew_yxSjfU_3NiZgC0-Tpb2Iblox0h6AFwbSDDS_CvaBXcvxlXUhrokFEWd4lACsQ76A="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "On 19 November 2026, the Senate constituted its nine-member Committee on Health for the 2026–2028 term, electing Lumír Kantor (KDU-ČSL) as chairman alongside four senators from ANO, one from ODS, one from STAN, and Tomáš Fiala (Naše Česko).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNSaKLDRTgBzJ78p7bC8XukS-pOrus2a3YbLOhRRMemYSIXebf3UkmQBL16rBM-xUAkU7v_-0WsWf5GCjIVscYNap01EqmYX0PURUNBThYm4EBTCDxLQJ7KmCPriXBJZmBVlTTLwC9Q_31ofvXEkVeaGPh9dJkaQ8bSRkdQaO-f34IX3v5mCW6OKq0zBP_vA=="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Senate announced that the 2nd plenary session of its 16th term begins on Wednesday, 25 November 2026 at 10:00 AM.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5Aif-1YFForKkny3zaZPozQBBagMn0SZKWodrDCUwzt8k6837gUdLgbY1EiTk3WzZjLBqg1klYQdKAfSeTG5NTyYiwjkDE4gprS8CSJqYhIs08Va25VgJdv7b-1gMUeveQDIpMrURhdPqN4sgNWiExj-_1q9zg70fFEDrB8Kr6KQT"
+    }
+   ],
+   "counter": "The ODS and TOP 09 caucus, which holds 30 seats as the largest faction in the Senate, strongly opposes the bill's suspension of the automatic indexation mechanism for state-insured payments in 2028 and could pass an amendment returning the bill to the Chamber of Deputies, knowing the Chamber still has time in December to override a return before 1 January 2027. Furthermore, because the Senate only constituted its committees on 19 November and its 30-day deadline runs until 12 December, the vote on this bill could easily slip past Wednesday, 25 November to a second day of the session or a later sitting."
+  }
+ ]
+}

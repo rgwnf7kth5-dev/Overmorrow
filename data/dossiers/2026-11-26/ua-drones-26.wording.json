@@ -1,0 +1,32 @@
+{
+ "claim": "According to the Ukrainian Air Force's first morning summary on Wednesday 25 November 2026, Russia launched at least 150 drones at Ukraine in the night of 24-25 November (from 18:00 Kyiv time on 24 November).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:19:25Z",
+   "ambiguous": true,
+   "scenario": "If no summary is available at noon and the first one appears at 12:10 Kyiv time with 150 UAVs, one reader could resolve YES because an around-noon first summary counts and the claim was pending until publication. Another could resolve NO because the stated event window ended at 12:00.",
+   "yes_requires": "The Ukrainian Air Force’s first Wednesday, 25 November 2026 summary of the overnight attack counted from 18:00 Kyiv time on 24 November must report at least 150 UAVs. Use the summary’s UAV total, including any decoys or jet munitions it counts as UAVs, but exclude separately listed missiles. Ignore later corrections and separate daytime reports.",
+   "decided_by": "The Ukrainian Air Force’s first qualifying summary, as published on its official Telegram channel or Facebook page, or as reported by Ukrinform, Ukrainska Pravda, the Kyiv Independent, or Interfax-Ukr"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:19:30Z",
+   "ambiguous": true,
+   "scenario": "The Ukrainian Air Force publishes its first summary of the overnight attack at 12:15 Kyiv time on 25 November (reporting 160 drones), or starts the counting period at 19:00 instead of 18:00 on 24 November. In the first case, the criterion explicitly says a summary issued 'around noon' counts and that the claim stays pending if no summary is published, whereas the event window strictly ends at 12:00:00+02:00 and dictates the claim resolves NO if the event does not happen in that window. In the second case, readers would disagree whether a standard overnight report starting at 19:00 satisfies th",
+   "yes_requires": "The Ukrainian Air Force's first summary of the overnight attack published on Wednesday, 25 November 2026 (covering the period starting from 18:00 Kyiv time on 24 November) must report a total of 150 or more UAVs launched by Russia.",
+   "decided_by": "The Ukrainian Air Force's official Telegram channel (t.me/kpszsu) or Facebook page, or reports of that summary by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:20:27Z",
+   "ambiguous": true,
+   "scenario": "The first Air Force summary, stating 160 UAVs, is posted at 12:20 Kyiv time on 25 November. One reader treats 12:20 as 'around noon,' which the criterion says still counts, and resolves YES. Another applies the event-window end at 12:00:00 and the rule that the claim is NO if the event falls outside the window, and resolves NO.",
+   "yes_requires": "The Ukrainian Air Force's first summary of the overnight attack, published on Wednesday 25 November 2026 (Kyiv time) and covering the attack counted from 18:00 Kyiv time on 24 November, must give a UAV total of 150 or more. That figure must appear on the Air Force Telegram channel (t.me/kpszsu) or Facebook page, or be repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine. ",
+   "decided_by": "The Ukrainian Air Force's first published summary on Telegram (t.me/kpszsu) or Facebook, or a repetition of that summary by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine."
+  }
+ ]
+}

@@ -462,7 +462,22 @@
       },
       "calibrated": null,
       "spread": 0.16,
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:02Z",
+         "p_blind": 0.55,
+         "p": 0.54,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      }
     }
    ],
@@ -656,7 +671,22 @@
       },
       "calibrated": null,
       "spread": 0.18,
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:00Z",
+         "p_blind": 0.53,
+         "p": 0.52,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      }
     }
    ],
@@ -874,7 +904,51 @@
         "https://www.seznamzpravy.cz/sekce/domaci-13"
        ]
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:15Z",
+         "p_blind": 0.72,
+         "p": 0.73,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:11:40Z",
+         "p": 0.89,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/cz-budget-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:13:46Z",
+         "p": 0.85,
+         "searches": 19,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/cz-budget-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:12:44Z",
+         "p": 0.63,
+         "searches": 20,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/cz-budget-26.research.json"
+        }
+       ]
+      }
      }
     }
    ],
@@ -1556,7 +1630,51 @@
        "p_if_held": 0.578,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:18Z",
+         "p_blind": 0.55,
+         "p": 0.58,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:16:48Z",
+         "p": 0.67,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/ep-budget-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:17:19Z",
+         "p": 0.58,
+         "searches": 16,
+         "sources": 13,
+         "trace": "data/dossiers/2026-11-26/ep-budget-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:19:20Z",
+         "p": 0.4,
+         "searches": 16,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/ep-budget-26.research.json"
+        }
+       ]
+      }
      }
     },
     {
@@ -1720,7 +1838,51 @@
        "p_if_held": 0.419,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:30Z",
+         "p_blind": 0.62,
+         "p": 0.58,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:14:14Z",
+         "p": 0.47,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/ep-swiss-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:14:51Z",
+         "p": 0.58,
+         "searches": 20,
+         "sources": 19,
+         "trace": "data/dossiers/2026-11-26/ep-swiss-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:18:12Z",
+         "p": 0.4,
+         "searches": 15,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/ep-swiss-26.research.json"
+        }
+       ]
+      }
      },
      "not_derived": true
     }
@@ -1920,7 +2082,22 @@
        "p_if_held": 0.791,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:08:59Z",
+         "p_blind": 0.78,
+         "p": 0.79,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      }
     }
    ],
@@ -2132,6 +2309,21 @@
       "disagreement": {
        "cause": "inputs",
        "note": "Round one spread above 0.25 because the outsider (no dossier by design) lacked facts the others had, and for cz-ccyb-26 a page line read as a hike hint proved a commented-out template. The outsider received the union of facts (and for cz-ccyb-26 all five reran once after the research); first numbers are kept in rounds."
+      },
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:39Z",
+         "p_blind": 0.68,
+         "p": 0.63,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
       }
      }
     }
@@ -2381,6 +2573,21 @@
       "disagreement": {
        "cause": "inputs",
        "note": "Round one spread above 0.25 because the outsider (no dossier by design) lacked facts the others had, and for cz-ccyb-26 a page line read as a hike hint proved a commented-out template. The outsider received the union of facts (and for cz-ccyb-26 all five reran once after the research); first numbers are kept in rounds."
+      },
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:45Z",
+         "p_blind": 0.53,
+         "p": 0.58,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
       }
      }
     }
@@ -2581,7 +2788,22 @@
        "p_if_held": 0.756,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:32Z",
+         "p_blind": 0.85,
+         "p": 0.78,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      }
     }
    ],
@@ -2831,6 +3053,21 @@
       "disagreement": {
        "cause": "inputs",
        "note": "Round one spread 0.25 (0.55–0.80): some forecasters had found the NOTAM-based launch time, some not. The research confirmed it (25 Nov 00:18 UTC, GO per NOTAMs) and all five reran on the union of facts; spread now 0.04."
+      },
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:45Z",
+         "p_blind": 0.88,
+         "p": 0.87,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
       }
      }
     }
@@ -3076,6 +3313,50 @@
       "disagreement": {
        "cause": "genuine",
        "note": "Round one spread 0.38 (inputs: the outsider lacked the dossier). After the disagreement research added the analyst consensus for FY2027 (EPS $22.90 vs $18.11) and every forecaster had the union of facts, the five still span 0.55–0.87: they agree growth is expected and differ on how far below consensus Deere's habitually cautious first outlook will start. Same facts, different judgement; the basis line should say the evidence is mixed."
+      },
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:09:54Z",
+         "p_blind": 0.78,
+         "p": 0.68,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:10:53Z",
+         "p": 0.76,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/deere-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:11:00Z",
+         "p": 0.78,
+         "searches": 4,
+         "sources": 11,
+         "trace": "data/dossiers/2026-11-26/deere-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:11:06Z",
+         "p": 0.84,
+         "searches": 9,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/deere-26.research.json"
+        }
+       ]
       }
      }
     }
@@ -3515,7 +3796,51 @@
         "https://hhs.iowa.gov/media/19822/download"
        ]
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:10:03Z",
+         "p_blind": 0.62,
+         "p": 0.55,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:12:16Z",
+         "p": 0.08,
+         "searches": 4,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/iowa-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:13:32Z",
+         "p": 0.15,
+         "searches": 5,
+         "sources": 14,
+         "trace": "data/dossiers/2026-11-26/iowa-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:13:20Z",
+         "p": 0.76,
+         "searches": 9,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/iowa-26.research.json"
+        }
+       ]
+      }
      }
     }
    ],
@@ -3725,6 +4050,50 @@
       "disagreement": {
        "cause": "inputs",
        "note": "Round one spread above 0.25 because the outsider (no dossier by design) lacked facts the others had, and for cz-ccyb-26 a page line read as a hike hint proved a commented-out template. The outsider received the union of facts (and for cz-ccyb-26 all five reran once after the research); first numbers are kept in rounds."
+      },
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:10:08Z",
+         "p_blind": 0.55,
+         "p": 0.45,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-23T19:14:52Z",
+         "p": 0.39,
+         "searches": 5,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/cz-senate-26.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-23T19:16:25Z",
+         "p": 0.72,
+         "searches": 22,
+         "sources": 14,
+         "trace": "data/dossiers/2026-11-26/cz-senate-26.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-23T19:15:59Z",
+         "p": 0.07,
+         "searches": 22,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-26/cz-senate-26.research.json"
+        }
+       ]
       }
      }
     }
@@ -4133,5 +4502,36 @@
    },
    "why": "Deadline is 27 Nov; a call on 25 Nov specifically is not dated; forecast board questions on Serbia."
   }
- ]
+ ],
+ "external_run": {
+  "at": "2026-11-23T19:24:31Z",
+  "providers": [
+   "openai gpt-6.2-sol",
+   "google gemini-4-argon",
+   "xai grok-4.7"
+  ],
+  "binary_claims": 13,
+  "forecasts": 13,
+  "contested": [
+   "deere-26",
+   "cz-budget-26",
+   "iowa-26",
+   "ep-swiss-26",
+   "cz-senate-26",
+   "ep-budget-26"
+  ],
+  "research": 18,
+  "wording_flags": [
+   {
+    "claim": "ua-drones-26",
+    "flagged_by": [
+     "openai",
+     "google",
+     "xai"
+    ],
+    "file": "data/dossiers/2026-11-26/ua-drones-26.wording.json"
+   }
+  ],
+  "failed": []
+ }
 }

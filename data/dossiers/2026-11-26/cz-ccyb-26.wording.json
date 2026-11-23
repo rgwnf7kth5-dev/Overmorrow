@@ -1,0 +1,32 @@
+{
+ "claim": "At its financial-stability meeting on Wednesday 25 November 2026 the ČNB Bank Board leaves the countercyclical capital buffer rate for the Czech Republic at 1.5%.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:20:34Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The ČNB Bank Board must hold a financial-stability meeting on 25 November 2026 (Europe/Prague time) and make a decision that leaves the announced countercyclical capital buffer (CCyB) rate for the Czech Republic unchanged at 1.5% (setting no new rate).",
+   "decided_by": "The ČNB Bank Board's official decision or press release published on cnb.cz (on 25 or 26 Nov 2026), or reports by the Czech News Agency (ČTK)."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:20:34Z",
+   "ambiguous": true,
+   "scenario": "If the Board makes the qualifying decision on 25 November but neither cnb.cz nor ČTK confirms it until 27 November, one reader could treat 26 November as the last acceptable publication date, while another could accept the later confirmation because the decision itself was made within the event window.",
+   "yes_requires": "At its financial-stability meeting on 25 November 2026 (Prague time), the ČNB Bank Board must make a CCyB decision that leaves the announced Czech rate unchanged at 1.5%. Decisions on other instruments do not count.",
+   "decided_by": "The ČNB Bank Board makes the decision. The evidence is the decision or press release on cnb.cz, or a ČTK report."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:23:52Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The ČNB Bank Board holds a financial-stability meeting on 25 November 2026 (Europe/Prague) and at that meeting takes a CCyB decision that leaves the announced countercyclical capital buffer rate for the Czech Republic unchanged at 1.5%, setting no higher or lower rate, as stated in a ČNB decision or press release on cnb.cz (including publication on 26 November 2026) or reported by ČTK.",
+   "decided_by": "The ČNB Bank Board's CCyB decision, as stated in the ČNB decision or press release on cnb.cz or as reported by ČTK."
+  }
+ ]
+}

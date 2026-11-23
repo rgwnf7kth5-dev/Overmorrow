@@ -1,0 +1,32 @@
+{
+ "claim": "In its fiscal fourth-quarter 2026 results on 25 November 2026, Deere & Company forecasts fiscal 2027 net income (midpoint of its range) above the net income it reports for fiscal 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:21:14Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Deere & Company must publish its fiscal fourth-quarter 2026 earnings release within the stated November 25, 2026 America/Chicago window. The release must give a dollar outlook for fiscal 2027 net income attributable to Deere & Company whose midpoint (or single figure) strictly exceeds the fiscal 2026 net income attributable to Deere & Company reported in that same release.",
+   "decided_by": "The publication time and contents of Deere & Company's official fiscal fourth-quarter 2026 earnings release."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:21:21Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Deere & Company must publish its fiscal Q4 2026 earnings release on 25 November 2026 (US Central time), and the release must state a fiscal 2027 dollar outlook for net income attributable to Deere & Company whose midpoint (or single figure) exceeds the reported fiscal 2026 net income attributable to Deere & Company in the same release.",
+   "decided_by": "Deere & Company's official fiscal fourth-quarter 2026 earnings release."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:24:31Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Deere publishes its fiscal Q4 2026 earnings release on 25 November 2026 within the America/Chicago window, and that release gives a fiscal 2027 dollar outlook for net income attributable to Deere & Company as a single figure, or as a range whose midpoint is strictly higher than the fiscal 2026 net income attributable to Deere & Company reported in the same release.",
+   "decided_by": "The figures and outlook in Deere & Company's earnings release published on 25 November 2026 (US Central time / America/Chicago)."
+  }
+ ]
+}

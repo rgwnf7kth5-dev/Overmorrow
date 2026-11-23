@@ -1,0 +1,32 @@
+{
+ "claim": "On Wednesday 25 November 2026 the European Parliament adopts its resolution on media freedom and the rule of law in Czechia with at least 360 votes in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:20:18Z",
+   "ambiguous": true,
+   "scenario": "If the Parliament’s roll-call results report 359 votes in favour and its press release reports 360, with both presented as the original tally rather than a later correction, the criterion does not specify which source takes precedence. Readers could resolve it differently.",
+   "yes_requires": "On 25 November 2026, within the stated Europe/Paris event window, the European Parliament must adopt the resolution on media freedom and the rule of law in Czechia at its Strasbourg plenary, with at least 360 votes in favour announced in the final vote on the text as a whole. Later corrections of individual votes do not count.",
+   "decided_by": "The announced final tally, as reported in the European Parliament’s roll-call results, its press release, or HowTheyVote.eu."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:20:24Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The European Parliament must adopt a resolution on media freedom and the rule of law in Czechia on 25 November 2026 (Europe/Paris time) with an announced result of at least 360 votes in favour in the final vote on the text as a whole.",
+   "decided_by": "The European Parliament's results of roll-call votes, EP press releases, or HowTheyVote.eu."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:22:13Z",
+   "ambiguous": true,
+   "scenario": "The named sources disagree across the 360 threshold—for example the EP roll-call results show 358 in favour while the press release or HowTheyVote.eu shows 361—and it is unclear which source controls or whether the gap is a later correction that must be ignored.",
+   "yes_requires": "During the Strasbourg plenary on 25 November 2026 (Europe/Paris), the European Parliament adopts a resolution on media freedom and the rule of law in Czechia in the final vote on the text as a whole, and the announced result shows at least 360 votes in favour.",
+   "decided_by": "The announced result as given in the European Parliament's results of roll-call votes, the EP press release, or HowTheyVote.eu; later corrections of individual votes do not count."
+  }
+ ]
+}

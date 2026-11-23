@@ -1,0 +1,32 @@
+{
+ "claim": "On 25 November 2026 Ofgem announces a default tariff (energy price) cap for 1 January – 31 March 2027 of at least £2,154 a year for a typical dual-fuel household paying by Direct Debit, i.e. a rise of at least 25% on the current £1,723.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:19:55Z",
+   "ambiguous": true,
+   "scenario": "If the fallback applies and two named sources report figures on opposite sides of the threshold—for example, £2,153 and £2,154—the criterion does not say which source takes precedence.",
+   "yes_requires": "Within the specified window on 25 November 2026 UK time, Ofgem must announce the cap for 1 January–31 March 2027, with an annual figure of at least £2,154 for a typical dual-fuel household paying by Direct Debit, using Ofgem’s typical domestic consumption values.",
+   "decided_by": "The annual pound figure in Ofgem’s announcement or its Summary of changes. If Ofgem’s page gives only a percentage, the fallback is the same-day pound figure reported from Ofgem’s documents by Cornwal"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:20:01Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Ofgem must announce the 1 Jan – 31 Mar 2027 default tariff cap on 25 November 2026 (UK time), and the stated annual cost for a typical dual-fuel household paying by Direct Debit must be £2,154 or more.",
+   "decided_by": "Ofgem's official announcement or 'Summary of changes' document, or if only a percentage is given there, same-day reports of Ofgem's figures by Cornwall Insight, the BBC, or the Guardian."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:21:17Z",
+   "ambiguous": true,
+   "scenario": "Ofgem’s page gives only a percentage, and the same day the BBC reports £2,154 while the Guardian reports £2,153, both from Ofgem’s documents; or the Summary of changes states £2,153.50. The criterion lists those outlets with ‘or’ and covers only £2,154 or more versus £2,153 or less, so one careful reader can resolve YES and another NO on the same facts.",
+   "yes_requires": "On 25 November 2026 (UK time), Ofgem announces the default tariff cap for 1 January–31 March 2027, and the annual cost it states for a typical dual-fuel household on Ofgem’s typical domestic consumption values paying by Direct Debit is £2,154 or more.",
+   "decided_by": "Ofgem’s announcement or its ‘Summary of changes’ document; if Ofgem’s page gives only a percentage, the pound figure reported the same day from Ofgem’s documents by Cornwall Insight, the BBC, or the G"
+  }
+ ]
+}

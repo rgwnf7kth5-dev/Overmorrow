@@ -1,0 +1,32 @@
+{
+ "claim": "On Wednesday 25 November 2026 the European Parliament approves the joint text of the 2027 EU budget with at least 420 votes in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:19:39Z",
+   "ambiguous": true,
+   "scenario": "If the plenary announcement and press release give 420 votes in favour but Parliament’s roll-call record gives 419 because of a tally correction unrelated to individual MEP filings, one reader could use the announced result and another the official roll-call record. The criterion does not say which takes precedence.",
+   "yes_requires": "The European Parliament plenary must approve the conciliation joint text of the 2027 EU general budget (procedure 2026/0196(BUD), report A10-0305/2026) on 25 November 2026 within the stated Strasbourg local-time window, with at least 420 votes in favour on the joint text itself.",
+   "decided_by": "The plenary vote as announced and documented in Parliament’s press release, minutes or roll-call results, or on HowTheyVote.eu. Later publication can document a vote held within the window; later vote"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:19:39Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The European Parliament plenary must approve the conciliation joint text of the 2027 general budget (procedure 2026/0196(BUD), report A10-0305/2026) on Wednesday, 25 November 2026 (Europe/Paris time), with at least 420 votes in favour recorded in the initial vote tally (excluding later MEP vote corrections).",
+   "decided_by": "The European Parliament plenary announcement, press release, official minutes/roll-call results (doceo PV, RCV), or HowTheyVote.eu."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:20:36Z",
+   "ambiguous": true,
+   "scenario": "Those sources disagree on the in-favour total and the figures straddle 420 — for example the President announces 421 while the roll-call or HowTheyVote.eu shows 419 — and the criterion names them with 'and'/'or' but sets no priority if they conflict.",
+   "yes_requires": "Between 00:00 and 23:59 on 25 November 2026 (Europe/Paris), the European Parliament plenary approves the conciliation joint text of the 2027 general budget (procedure 2026/0196(BUD), report A10-0305/2026, Hadjipantela/Ušakovs) and that vote records at least 420 votes in favour, as announced in plenary and shown in Parliament's press release, the minutes/roll-call results (doceo PV, RCV), or HowThe",
+   "decided_by": "The European Parliament plenary announcement, as shown in Parliament's press release, the minutes/roll-call results (doceo PV, RCV), or HowTheyVote.eu."
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "claim": "The US Army carries out the planned controlled detonation of the degraded lead azide at the Iowa Army Ammunition Plant near Middletown, Iowa, on Wednesday 25 November 2026 (Central time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:12:16Z",
+   "p": 0.08,
+   "searches": 4,
+   "sources": [
+    "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
+    "https://apnews.com/article/iowa-army-lead-detonation-trump-3844c3f93affd3ea9a91fa98199bc14a",
+    "https://htv-prod-media.s3.amazonaws.com/files/court-document-army-plan-detonation-6b02f2e485f4f.pdf",
+    "https://apnews.com/article/3844c3f93affd3ea9a91fa98199bc14a",
+    "https://apnews.com/article/2149f665a6116ab41490f8bda560e9fa",
+    "https://www.thedailybeast.com/pentagon-ignores-court-motion-to-proceed-with-toxic-lead-azide-explosion-at-iowa-army-ammunition-plant",
+    "https://www.thedailybeast.com/meghan-mccain-slams-do-nothing-trump-as-she-turns-to-dem-on-iowa-army-lead-demolition",
+    "https://apnews.com/article/2d2d7bfaf8ceacddcbea10ed97b097ce",
+    "https://www.axios.com/local/des-moines/2026/11/19/iowa-middletown-lead-azide-rob-sand-josh-turek",
+    "https://www.thedailybeast.com/pentagon-gives-iowa-officials-and-communities-last-minute-warning-of-imminent-toxic-lead-explosion",
+    "https://www.army.mil/article-amp/296990/army_update_on_iowa_army_ammunition_plant",
+    "https://www.iowapublicradio.org/ipr-news/2026-11-22/southeast-iowa-lead-azide-explosion-wednesday-army",
+    "https://www.army.mil/article/296772/iaaap_public_advisory",
+    "https://www.army.mil/article-amp/296926/postponed_lead_azide_detonation",
+    "https://www.wvik.org/news-from-iowa/2026-11-22/southeast-iowa-lead-azide-explosion-wednesday-army",
+    "https://abcnews.com/US/iowa-army-plant-lead-azide-detonation/story?id=138261613",
+    "https://hhs.iowa.gov/media/19822/download?inline%3Fftag=YHF4eb9d17",
+    "https://www.army.mil/article/296937",
+    "https://www.army.mil/asc",
+    "https://iowaspulse.com/wp-content/uploads/2026/11/Justice-Department-Notice-Citing-Emergency-Authority-for-Iowa-Army-Ammunition-Plant-Detonation-%E2%80%94-Nov.-20-2026.pdf",
+    "https://www.iaenvironment.org/newsroom/council-news/statementfaq",
+    "https://www.army.mil/article-amp/296933/joint_statement_on_iowa_army_ammunition_plant",
+    "https://www.army.mil/article/296128/u_s_army_officials_at_the_iowa_army_ammunition_plant_will_host_a_public_open_house_on_oct_15th",
+    "https://api.army.mil/e2/c/downloads/2026/11/15/34e3780e/public-advisory-distribute-nov-15-2026-2.pdf",
+    "https://epa.illinois.gov/content/dam/soi/en/web/epa/about-us/documents/news-releases/2026/11-18-2026-IEPA-IDPH-Iowa-Army-Detonation-Final.pdf"
+   ],
+   "reason": "**Base rate.** For an urgent military disposal operation with a publicly announced date two days away and no outstanding approvals, I’d start at about 75% for execution on that exact day. That’s a judgmental starting point, not a measured base rate; I didn’t find a reliable series of comparable cases.\n\n**What moves this case.** The Army’s November 22 notice explicitly selected Wednesday, November 25, for better weather and time to put safeguards in place (**up**). The Justice Department’s November 21 filing warned that delay increased the risk of an uncontrolled explosion (**up**), but the Army had already moved the operation from November 20 to November 23 before selecting Wednesday (**down** for confidence in any exact date). ([army.mil](https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant))\n\nThe decisive update is November 23: AP reported that President Trump ordered the military to wait for both the Eighth Circuit’s clearance and Governor-elect Rob Sand’s agreement (**sharply down**). The court had stayed the EPA permit, and Sand had publicly questioned the rush to detonate. The Army’s earlier argument that it could proceed without the permit does not, by itself, remove the president’s hold. ([apnews.com](https://apnews.com/article/iowa-army-lead-detonation-trump-3844c3f93affd3ea9a91fa98199bc14a))\n\n**Window risk.** I put a 92% chance on no qualifying detonation on November 25 Central time. The most likely way to miss the window is a delay beyond Wednesday, not permanent cancellation. Even if permission comes through, the Army still has to carry out at least the first detonation that day; an announcement or an accidental explosion would not count. ([army.mil](https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant))\n\nNEW FACTS\n- 2026-11-19 | The Army announced that it was moving the planned detonation from November 20 to November 23. | https://www.army.mil/article/296926\n- 2026-11-20 | ABC News reported that the Eighth Circuit had temporarily stayed the EPA emergency permit. | https://abcnews.com/amp/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357\n- 2026-11-21 | The Justice Department notified the court that the Army intended to proceed under a separate emergency exemption. | https://htv-prod-media.s3.amazonaws.com/files/court-document-army-plan-detonation-6b02f2e485f4f.pdf\n- 2026-11-22 | The Army rescheduled the operation for November 25, citing more favorable weather and time to put safeguards in place. | https://www.army.mil/article/296990\n- 2026-11-23 | AP reported that Trump had ordered the military not to proceed without both the Eighth Circuit’s clearance and Governor-elect Rob Sand’s agreement. | https://apnews.com/article/3844c3f93affd3ea9a91fa98199bc14a\n\nCOUNTER  \nThe Army’s warning about an uncontrolled explosion gives decision-makers a reason to act quickly. If the court and Sand both agree in time, the Army already has a Wednesday plan and could carry out the first detonation within the window. ([htv-prod-media.s3.amazonaws.com](https://htv-prod-media.s3.amazonaws.com/files/court-document-army-plan-detonation-6b02f2e485f4f.pdf?utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-19",
+     "fact": "The Army announced that it was moving the planned detonation from November 20 to November 23.",
+     "url": "https://www.army.mil/article/296926"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "ABC News reported that the Eighth Circuit had temporarily stayed the EPA emergency permit.",
+     "url": "https://abcnews.com/amp/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "The Justice Department notified the court that the Army intended to proceed under a separate emergency exemption.",
+     "url": "https://htv-prod-media.s3.amazonaws.com/files/court-document-army-plan-detonation-6b02f2e485f4f.pdf"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "The Army rescheduled the operation for November 25, citing more favorable weather and time to put safeguards in place.",
+     "url": "https://www.army.mil/article/296990"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "AP reported that Trump had ordered the military not to proceed without both the Eighth Circuit’s clearance and Governor-elect Rob Sand’s agreement.",
+     "url": "https://apnews.com/article/3844c3f93affd3ea9a91fa98199bc14a"
+    }
+   ],
+   "counter": "The Army’s warning about an uncontrolled explosion gives decision-makers a reason to act quickly. If the court and Sand both agree in time, the Army already has a Wednesday plan and could carry out the first detonation within the window. ([htv-prod-media.s3.amazonaws.com](https://htv-prod-media.s3.amazonaws.com/files/court-document-army-plan-detonation-6b02f2e485f4f.pdf?utm_source=openai))"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:13:20Z",
+   "p": 0.76,
+   "searches": 9,
+   "sources": [
+    "https://political.org/2026/11/19/army-postpones-iowa-lead-azide-detonation-to-monday-nov-23-citing-forecast-temperature-drop/",
+    "https://977wmoi.com/2026/11/iowa-army-ammunition-plant-reschedules-controlled-detonation-for-november-25/",
+    "https://www.newsweek.com/army-sets-iowa-lead-azide-blast-for-thanksgiving-eve-despite-court-pause-12755210",
+    "https://www.armytimes.com/news/your-army/2026/11/20/army-delays-detonation-of-unstable-ammunition-stockpile-until-monday/",
+    "https://www.usatoday.com/story/news/nation/2026/11/23/lead-azide-detonation-army-iowa/92922448007/",
+    "https://www.accuweather.com/en/us/middletown/52638/10-day-weather-forecast/2213428",
+    "https://www.reuters.com/legal/government/iowa-detonation-lead-will-proceed-under-emergency-powers-army-says-bypassing-2026-11-22/",
+    "https://www.yahoo.com/news/us/articles/extraordinary-extreme-backstop-earthjustice-warns-151649150.html",
+    "https://news-usa.today/court-stay-delays-iowa-lead-azide-blast-army-plans-rcra-workaround/",
+    "https://www.army.mil/article/296926/postponed_lead_azide_detonation",
+    "https://www.army.mil/article/296388/iaaap_hosts_open_house_shares_lead_azide_detonation_information",
+    "https://www.lawcommentary.com/articles/iowa-army-ammunition-plant-lead-azide-detonation",
+    "https://response.epa.gov/site/download.ashx?counter=462482",
+    "https://www.usatoday.com/story/news/nation/2026/11/20/army-delays-iowa-explosion-lead/92875092007/",
+    "https://wrco.com/news/2026/11/23/another-update-concerning-the-detonation-of-degraded-lead-azide-at-the-iowa-army-ammunition-plant",
+    "https://www.postandcourier.com/nation-world/news/army-cites-emergency-powers-to-bypass-court-for-lead-detonation-in-iowa/article_db31068e-b027-47ce-8efe-95ba311496c3.html",
+    "https://www.army.mil/article/296772/iaaap_public_advisory",
+    "https://cen.acs.org/environment/lead-azide-army-explosive-detonate-toxic-plume/104/web/2026/11",
+    "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
+    "https://www.army.mil/article/296933/joint_statement_on_iowa_army_ammunition_plant",
+    "https://www.military.com/army-moves-iowa-lead-azide-detonation-wednesday-says-it-can-proceed-without-permit",
+    "https://www.usatoday.com/story/news/nation/2026/11/22/army-iowa-lead-azide-detonation-what-to-know/92913204007/",
+    "https://www.wqad.com/article/news/national/military-news/lead-azide-detonation-iowa-timeline-us-army-epa-permit/526-00998f70-fd22-416b-9417-837480dad548",
+    "https://holaamericanews.com/lead-detonation-in-iowa-wont-happen-until-wednesday-army-says/",
+    "https://www.fireengineering.com/technical-rescue/firefighter-hazmat/us-army-plans-ia-ammunition-plant-detonation-despite-court-stay-over-lead-hazards/"
+   ],
+   "reason": "The U.S. Army has officially rescheduled the controlled detonation of the degraded lead azide for Wednesday, 25 November 2026, and states it will proceed under an emergency exemption even though the Eighth Circuit’s administrative stay remains on the EPA permit. Health agencies are already directing nearby residents to shelter on that day, and the current National Weather Service forecast for Middletown shows light winds, no daytime precipitation, and temperatures consistent with the conditions the Army cited when it selected the date.\n\nComparable last-minute military disposal operations that the service itself treats as an uncontrolled-explosion risk usually occur on the announced day once weather and mitigation windows are locked. The two prior slips (20 November to 23 November, then to 25 November) were voluntary adjustments for exactly those factors; no further postponement has been announced as of 23 November, and the court has not enjoined the emergency-exemption path the Justice Department has already asserted.\n\nThe residual risk is a rapid additional court order specifically blocking even the exemption, or a same-day weather or operational abort. Neither has materialized, and further delay would itself increase the temperature-driven hazard the Army says it is trying to avoid.\n\nNEW FACTS\n- 2026-11-23 | The U.S. Army’s official site states the controlled detonation at the Iowa Army Ammunition Plant is now scheduled for Wednesday, November 25, 2026, to allow optimal weather and mitigation measures. | https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant\n- 2026-11-22 | Reuters reported the Justice Department told the Eighth Circuit the Army would invoke emergency powers to detonate by 24 November, after which the Army moved the date to 25 November for weather. | https://www.reuters.com/legal/government/iowa-detonation-lead-will-proceed-under-emergency-powers-army-says-bypassing-2026-11-22/\n- 2026-11-23 | National Weather Service point forecast for Middletown shows Wednesday mostly cloudy, high near 41 °F, northeast winds around 5–10 mph, and precipitation mainly after midnight. | https://forecast.weather.gov/MapClick.php?lat=40.8287&lon=-91.2618&lg=english&FcstType=text\n- 2026-11-23 | Military.com and USA Today confirmed the Army still planned the 25 November detonation and had not set a precise hour, while health officials advised indoor sheltering that day. | https://www.military.com/army-moves-iowa-lead-azide-detonation-wednesday-says-it-can-proceed-without-permit\n- 2026-11-20 | The Eighth Circuit granted an administrative stay only of the EPA emergency permit “until the emergency motion for stay is ruled upon,” and no broader injunction appears in subsequent reporting through 23 November. | https://abcnews.com/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357\nCOUNTER\nA same-day court order could still forbid use of the emergency exemption, or the light-wind, dry window the Army selected could close and force another slip; both have precedent in this very sequence of delays, and the appeals court has not yet ruled on the underlying stay motion.",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "The U.S. Army’s official site states the controlled detonation at the Iowa Army Ammunition Plant is now scheduled for Wednesday, November 25, 2026, to allow optimal weather and mitigation measures.",
+     "url": "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "Reuters reported the Justice Department told the Eighth Circuit the Army would invoke emergency powers to detonate by 24 November, after which the Army moved the date to 25 November for weather.",
+     "url": "https://www.reuters.com/legal/government/iowa-detonation-lead-will-proceed-under-emergency-powers-army-says-bypassing-2026-11-22/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "National Weather Service point forecast for Middletown shows Wednesday mostly cloudy, high near 41 °F, northeast winds around 5–10 mph, and precipitation mainly after midnight.",
+     "url": "https://forecast.weather.gov/MapClick.php?lat=40.8287&lon=-91.2618&lg=english&FcstType=text"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "Military.com and USA Today confirmed the Army still planned the 25 November detonation and had not set a precise hour, while health officials advised indoor sheltering that day.",
+     "url": "https://www.military.com/army-moves-iowa-lead-azide-detonation-wednesday-says-it-can-proceed-without-permit"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "The Eighth Circuit granted an administrative stay only of the EPA emergency permit “until the emergency motion for stay is ruled upon,” and no broader injunction appears in subsequent reporting through 23 November.",
+     "url": "https://abcnews.com/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357"
+    }
+   ],
+   "counter": "A same-day court order could still forbid use of the emergency exemption, or the light-wind, dry window the Army selected could close and force another slip; both have precedent in this very sequence of delays, and the appeals court has not yet ruled on the underlying stay motion."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:13:32Z",
+   "p": 0.15,
+   "searches": 5,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPxyAeVnzWyADnJUKRAvGVbwdOO5yL_Zj2jGg2QSsLVhqxZ_nFqc5La4DgGNgVCQ44rlZxLMJOP9VOhq9JL99mFRUZe-5LK0XT6Xz-S-PHk6FYOMOEpOHbbGx-MORuun9R9JsQ3Xax-v3ZVc7gl96eyDwY1d7SxLln7PAPuAQTzThYD9olcCtmfe2DXPtOX19ou-U8_Z6U5uJnGNj57SCB",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEy9SttWzUvbGVdQ-tkLQJ9vE2UN74zO7kJHg2BRd16PbMGIgVWLey8Gu_Ci_jOosiqr79_UAzW3ho3Qsvcx5Hjv0iY3wt-niHbjzW6edeITwF87YuP1YgGbbmIWcA5kiYtpgqOP-SeRS3X4-S9-rxFhaRv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnbeiyDW_pXKZD_Dk9MFG25pACNUnL_rJiErNMmj9FVnGZXmXCuK_tzsJEX14Is9a_4nz51sIzzA8nKUoCRjywvX89zctG7SdRdO51rqXPrdsMCALGYakiI8_DoECnCVLTjbkGVmgu8P9NF30nGmVo1WGuH_TG0eYFdp_5CfGYp6HY3J2VsfimRahgGZ5aLvBF-it7-0rfZnA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7RfE0rKJppxCMvGCw2ntVXH70DFvRYJ6ORboGHnI4yqOjWTR-9g0LxYcfuPO0axmKk7zDOMCMr9HlcRa49Zki4FWDCbqVZ0rp2rFR4HaqZT7FHO9b2Apah27VnojsiNbj7pJiY5HDJFIrDO8hNJol5opU2z6Hpc2e",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq2alOOhyJ2lSevZcUHi4I1WM8P1WAJL1grnEamL6OxwmTHVfMquMFfciLqcjlaA0TIzBRxeyre05n4W5-pOAYZQZ_Oopsjav_gm2w89vS6yMw598xBwjCs6HMwYzgfBqhkVuEsVIuWNM3dNb7hQqTFJWkTnM7tKbrAdlbuFfHx3epq6eEXni59_dqdBW97-VhsgFb_tUX58TnqeeNst03WyezNM9oA7SZhliMePrC45S3o2mI4Ege-AR8keZ6sWIJWTrYSyMboq7H4WOPKIEInEDUqDvNUu4uTLVJYl_ZInJEFw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBPxOuwTxQ6saz2qxYEAyCcuLFGh5O6tzRS18X8rQI_AXP4k1bK3NdqIQQFH5TXFf0IMixkN9QspQ-1z2VBsM0gMi3C-OSBgOvNDudLhGYmHNKk_XA9i9W1uNI-4TWCH3kG8NLa29Gl50Yo2Zd0i7GJsGNHHtCEucEiuCA7A5Cz_Etp799cw7dX3iJfICxrsaK9wghvPI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzrkENFvWQQGh4gqKdZelxPdu7Ba4ES9a5exT-kjcZA_e48ohQ_P0ZwTra4jnrfWfPkeEqyJkDDVs_MJ48QAXu0FqMghx0XVDabA_8aWymBEGaHjAHWc1sUEM_wxhTiPuIEoa-4IRIkAbVtd_4dMhQiBmol4F-cTI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbW6T7u7Aw-IZvLpp4Sy4hHldqvhAAgWYeoPBWx96PjrR0wJOwISOganW7477ai0_j7sP5ODLEm1Fc_CtZN-2JM6qnqGcNSuzi96X0rrlck5M3Ku3_sjtFB8e4XbbTLokmeRLwHrSNK53EfAndqfowngKrgnY93gRqmTK1m655nl6LG0j6MMnR9LL8C9AS7xAkk5BNWCc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkaPBKKsDO9tbGO11yidxnboFsuJaXtcF2aOUebUvBf0myknU_806bxaIQR8PG1P_XJj_zjsKuIv4s10ZlntYzBYKS-tddWBNW1CPpFMdmR6VNkGX_F7iGcy2_AOhw5ysecNBnTSTCOG8H9kHFTaANcydnRWKifkenq7WEJ9hyWtWAXE-BQpWGIZMp0kIORgHtE4nMBXO1GHM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzyNmClzsrel0MFoBcNInJAqlTnCfobnai26nOR_4isLyQZ4GwoMYfhygnSK6pUKH_S32nEc_AceUyL5V3_E0OuXtzd9_wLrCfMyrlCxlZQY3ACTnHNGlRD1psWIetqzhqJsEkLRRkzdVjIxMUDbD9QtaU-KCIiQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWBjxj0TKdhB2W55hKKZZJykkVgHepwuYSj1WBL6RyJc4KEAM0Hf8HydFRrwkU8dNcT5T11zO6UjkhE9Oyfbm_d2M7fMCGbjVXrUOMsk1aWH50uc85G53JrXKzdNt9u-KWQ7DtPs0icUGy7Jl1iI2AhFqkxbYTvrNpyO2gUYx4OUhl8zPDVNsCPg4TIt5YmBrN57Xi3AmUy3k=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtgeZnoOY391lQLo-kaIC2WqynABtjcjqM4VOsCH3Z4D-U3yOZsMf_eMXYj_1ZIGQ5XBeFpe27hcfyt76le9P5ZR435Xp7nOfmW_dMeZFk5-IYF6VkgHBEgBnqGRLWJ95Old9LvyfJymJ4A4RTBhZ-PeKzKBnB2npnY9h2Wk4NicUaCQzp1UwARY5kpQK0DsYB7xhtf4Qvk185vyM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRw7XQJ6ZchpQPry7EsmGtTXQZR3wFRCfZ9VJNok8M7Gq_nBX_KNjP-2P_vymenHGX62XXttkLL3VUTa02P7XLXbCEJ6AmF4TNlvVJmqRlL7qxFeramhfwizohuSdgSuUs-qhA2CqmLsgXJLTki02lvkiVLDa1bOnw8kdKnLNMkZqmj78cEi9uMSOSsA4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEga0LzURrKtFqrNqKHIfmzVqyq34wkMXAD198tdhcVLTvme_LElhK8oTWUYJAQQ88lU8q_PoCqGXh1w51DxyteTx-3jHv2vvxEDcCRbXvchUYCDPt7Lgxd12ksLVQIstKMy0rB9UiqJ75PuW6rRuOJKUB6vn9CkIMU-m3BPIz85KvTeWsOuTNaQ_HyPJw="
+   ],
+   "reason": " an uncontrolled blast as temperatures drop.\n* **2026-11-22 (Direction: Toward YES on Nov 25 specifically):** The Army bypassed the Monday/Tuesday window and officially rescheduled the detonation to Wednesday, Nov 25, 2026, citing more optimal weather conditions and time to emplace mitigation measures.\n* **2026-11-23 (Direction: Strongly Toward NO):** On Monday afternoon, President Donald Trump intervened directly via Truth Social, announcing that he was overruling the Army's plan to bypass the court. Trump stated he \"ordered the Military not to do so until such time as the Eighth Circuit agrees that we can go forward, and am further making this decision fully subject to the incoming Governor Elect, Rob Sand, agreeing to the operation\". Incoming Democratic Governor-elect Rob Sand has been sharply critical of the Army's lack of transparency and public notice regarding the detonation.\n\nBecause the Commander-in-Chief has explicitly ordered the military to stand down until *both* the Eighth Circuit lifts its administrative stay *and* Governor-elect Rob Sand explicitly gives his agreement, the hurdles to carrying out the detonation within the next 48 hours (on Wednesday, Nov 25) are formidable.\n\n### (3) Strongest Reason the Obvious Outcome Might Fail\nThe obvious outcome now is that the detonation is halted and does not occur on November 25. However, this could fail (resulting in a YES resolution) because President Trump coupled his veto condition with an explicit political ultimatum: he declared that if the materials spontaneously explode, he will hold Governor-elect Rob Sand personally responsible for \"any and all death or destruction caused by this very unfortunate, and longterm, situation,\" while noting that current weather on Wednesday is optimal. Faced with this intense political and safety pressure, and given that the DOJ already urged the Eighth Circuit on Nov 22 to lift the stay immediately due to the imminent cold-weather threat, it remains possible that the Eighth Circuit dissolves its administrative stay on Tuesday, Nov 24, and Rob Sand reluctantly consents to avoid bearing sole blame for a potential catastrophic accident, clearing the Army to execute the blast on its already-prepared Wednesday, Nov 25 schedule.\n\nBalancing the direct presidential stand-down order and dual-approval requirement against the urgent safety pressure that could force a rapid resolution on Tuesday, I estimate a 15% chance the detonation proceeds on Wednesday, November 25.\n\nNEW FACTS\n- 2026-11-19 | Acting Army Secretary Adam Telle postponed the planned November 20 controlled detonation of degraded lead azide at the Iowa Army Ammunition Plant to Monday, November 23. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7RfE0rKJppxCMvGCw2ntVXH70DFvRYJ6ORboGHnI4yqOjWTR-9g0LxYcfuPO0axmKk7zDOMCMr9HlcRa49Zki4FWDCbqVZ0rp2rFR4HaqZT7FHO9b2Apah27VnojsiNbj7pJiY5HDJFIrDO8hNJol5opU2z6Hpc2e\n- 2026-11-20 | The U.S. Court of Appeals for the Eighth Circuit granted an administrative stay suspending the EPA's emergency permit for the lead azide detonation following a lawsuit by the Iowa Environmental Council and Sierra Club. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBPxOuwTxQ6saz2qxYEAyCcuLFGh5O6tzRS18X8rQI_AXP4k1bK3NdqIQQFH5TXFf0IMixkN9QspQ-1z2VBsM0gMi3C-OSBgOvNDudLhGYmHNKk_XA9i9W1uNI-4TWCH3kG8NLa29Gl50Yo2Zd0i7GJsGNHHtCEucEiuCA7A5Cz_Etp799cw7dX3iJfICxrsaK9wghvPI=\n- 2026-11-21 | The Department of Justice filed a notice with the Eighth Circuit stating that the Army intended to invoke an emergency exemption under the Resource Conservation and Recovery Act to carry out the controlled detonation without the stayed EPA permit. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkaPBKKsDO9tbGO11yidxnboFsuJaXtcF2aOUebUvBf0myknU_806bxaIQR8PG1P_XJj_zjsKuIv4s10ZlntYzBYKS-tddWBNW1CPpFMdmR6VNkGX_F7iGcy2_AOhw5ysecNBnTSTCOG8H9kHFTaANcydnRWKifkenq7WEJ9hyWtWAXE-BQpWGIZMp0kIORgHtE4nMBXO1GHM=\n- 2026-11-23 | On November 22, the U.S. Army rescheduled the controlled detonation at the Iowa Army Ammunition Plant to Wednesday, November 25, citing more optimal weather conditions and time to emplace mitigation measures. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnbeiyDW_pXKZD_Dk9MFG25pACNUnL_rJiErNMmj9FVnGZXmXCuK_tzsJEX14Is9a_4nz51sIzzA8nKUoCRjywvX89zctG7SdRdO51rqXPrdsMCALGYakiI8_DoECnCVLTjbkGVmgu8P9NF30nGmVo1WGuH_TG0eYFdp_5CfGYp6HY3J2VsfimRahgGZ5aLvBF-it7-0rfZnA=\n- 2026-11-23 | President Donald Trump announced on Monday that he ordered the military not to proceed with the Wednesday detonation until the Eighth Circuit approves the operation and Iowa Governor-elect Rob Sand agrees to it. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzyNmClzsrel0MFoBcNInJAqlTnCfobnai26nOR_4isLyQZ4GwoMYfhygnSK6pUKH_S32nEc_AceUyL5V3_E0OuXtzd9_wLrCfMyrlCxlZQY3ACTnHNGlRD1psWIetqzhqJsEkLRRkzdVjIxMUDbD9QtaU-KCIiQ==\n- 2026-11-23 | Iowa Governor-elect Rob Sand stated on Sunday that because of past decisions no good options exist, the situation is dangerous and unpredictable, and Iowans deserve transparency and accountability. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWBjxj0TKdhB2W55hKKZZJykkVgHepwuYSj1WBL6RyJc4KEAM0Hf8HydFRrwkU8dNcT5T11zO6UjkhE9Oyfbm_d2M7fMCGbjVXrUOMsk1aWH50uc85G53JrXKzdNt9u-KWQ7DtPs0icUGy7Jl1iI2AhFqkxbYTvrNpyO2gUYx4OUhl8zPDVNsCPg4TIt5YmBrN57Xi3AmUy3k=\n\nCOUNTER\nBecause the Department of Justice has already urged the Eighth Circuit to lift its temporary administrative stay due to the imminent danger of a cold-weather spontaneous explosion, the court could rule in the government's favor on Tuesday, November 24. Furthermore, since President Trump publicly placed full liability for any accidental deaths or destruction on Governor-elect Rob Sand if he blocks the blast, Sand could quickly concede that no safer alternative remains and grant his approval in time for the Army to use its optimal Wednesday weather window.",
+   "facts": [
+    {
+     "date": "2026-11-19",
+     "fact": "Acting Army Secretary Adam Telle postponed the planned November 20 controlled detonation of degraded lead azide at the Iowa Army Ammunition Plant to Monday, November 23.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7RfE0rKJppxCMvGCw2ntVXH70DFvRYJ6ORboGHnI4yqOjWTR-9g0LxYcfuPO0axmKk7zDOMCMr9HlcRa49Zki4FWDCbqVZ0rp2rFR4HaqZT7FHO9b2Apah27VnojsiNbj7pJiY5HDJFIrDO8hNJol5opU2z6Hpc2e"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "The U.S. Court of Appeals for the Eighth Circuit granted an administrative stay suspending the EPA's emergency permit for the lead azide detonation following a lawsuit by the Iowa Environmental Council and Sierra Club.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBPxOuwTxQ6saz2qxYEAyCcuLFGh5O6tzRS18X8rQI_AXP4k1bK3NdqIQQFH5TXFf0IMixkN9QspQ-1z2VBsM0gMi3C-OSBgOvNDudLhGYmHNKk_XA9i9W1uNI-4TWCH3kG8NLa29Gl50Yo2Zd0i7GJsGNHHtCEucEiuCA7A5Cz_Etp799cw7dX3iJfICxrsaK9wghvPI="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "The Department of Justice filed a notice with the Eighth Circuit stating that the Army intended to invoke an emergency exemption under the Resource Conservation and Recovery Act to carry out the controlled detonation without the stayed EPA permit.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkaPBKKsDO9tbGO11yidxnboFsuJaXtcF2aOUebUvBf0myknU_806bxaIQR8PG1P_XJj_zjsKuIv4s10ZlntYzBYKS-tddWBNW1CPpFMdmR6VNkGX_F7iGcy2_AOhw5ysecNBnTSTCOG8H9kHFTaANcydnRWKifkenq7WEJ9hyWtWAXE-BQpWGIZMp0kIORgHtE4nMBXO1GHM="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "On November 22, the U.S. Army rescheduled the controlled detonation at the Iowa Army Ammunition Plant to Wednesday, November 25, citing more optimal weather conditions and time to emplace mitigation measures.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnbeiyDW_pXKZD_Dk9MFG25pACNUnL_rJiErNMmj9FVnGZXmXCuK_tzsJEX14Is9a_4nz51sIzzA8nKUoCRjywvX89zctG7SdRdO51rqXPrdsMCALGYakiI8_DoECnCVLTjbkGVmgu8P9NF30nGmVo1WGuH_TG0eYFdp_5CfGYp6HY3J2VsfimRahgGZ5aLvBF-it7-0rfZnA="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "President Donald Trump announced on Monday that he ordered the military not to proceed with the Wednesday detonation until the Eighth Circuit approves the operation and Iowa Governor-elect Rob Sand agrees to it.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzyNmClzsrel0MFoBcNInJAqlTnCfobnai26nOR_4isLyQZ4GwoMYfhygnSK6pUKH_S32nEc_AceUyL5V3_E0OuXtzd9_wLrCfMyrlCxlZQY3ACTnHNGlRD1psWIetqzhqJsEkLRRkzdVjIxMUDbD9QtaU-KCIiQ=="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "Iowa Governor-elect Rob Sand stated on Sunday that because of past decisions no good options exist, the situation is dangerous and unpredictable, and Iowans deserve transparency and accountability.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWBjxj0TKdhB2W55hKKZZJykkVgHepwuYSj1WBL6RyJc4KEAM0Hf8HydFRrwkU8dNcT5T11zO6UjkhE9Oyfbm_d2M7fMCGbjVXrUOMsk1aWH50uc85G53JrXKzdNt9u-KWQ7DtPs0icUGy7Jl1iI2AhFqkxbYTvrNpyO2gUYx4OUhl8zPDVNsCPg4TIt5YmBrN57Xi3AmUy3k="
+    }
+   ],
+   "counter": "Because the Department of Justice has already urged the Eighth Circuit to lift its temporary administrative stay due to the imminent danger of a cold-weather spontaneous explosion, the court could rule in the government's favor on Tuesday, November 24. Furthermore, since President Trump publicly placed full liability for any accidental deaths or destruction on Governor-elect Rob Sand if he blocks the blast, Sand could quickly concede that no safer alternative remains and grant his approval in time for the Army to use its optimal Wednesday weather window."
+  }
+ ]
+}

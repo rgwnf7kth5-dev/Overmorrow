@@ -1,0 +1,32 @@
+{
+ "claim": "On Wednesday 25 November 2026 the Senate lets the bill raising state payments into public health insurance for state-insured persons (+CZK 13bn for 2027) pass unchanged.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:21:53Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Within the stated 25 November 2026 Europe/Prague window, the Czech Senate must adopt a resolution either approving the bill in the wording passed by the Chamber on 4 November 2026 or deciding not to deal with it. A report published later counts if it establishes that the decision was taken within the window.",
+   "decided_by": "The Czech Senate’s formal resolution, as recorded on senat.cz or reported by ČTK, ČT24, or another major Czech news outlet."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:22:01Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "On Wednesday 25 November 2026 (Europe/Prague), the Czech Senate must adopt a resolution either approving the bill raising state payments into public health insurance for state-insured persons (as passed by the Chamber on 4 Nov 2026) without changes, or deciding not to deal with the bill.",
+   "decided_by": "Official records on senat.cz or reports by ČTK, ČT24, or another major Czech news outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:23:39Z",
+   "ambiguous": true,
+   "scenario": "senat.cz shows the bill was adjourned or not voted, while ČTK or a Czech outlet of disputed major status reports that the Senate approved it unchanged or resolved not to deal with it; the criterion accepts either source and does not say which prevails if they conflict.",
+   "yes_requires": "Between 00:00 and 23:59 Europe/Prague on 25 Nov 2026, the Senate adopts a resolution approving (schvaluje) the Chamber bill that raises state payments into public health insurance for state-insured persons, in the wording the Chamber passed on 4 Nov 2026, or a resolution not to deal with that bill (nezabývat se).",
+   "decided_by": "The Senate resolution, as shown on senat.cz or reported by ČTK, ČT24, or another major Czech outlet; a later report counts if the decision was taken on 25 Nov."
+  }
+ ]
+}

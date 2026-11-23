@@ -1,0 +1,203 @@
+{
+ "claim": "On Wednesday 25 November 2026 the European Parliament gives its consent to the EU–Switzerland package of agreements with at least 550 votes in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:14:14Z",
+   "p": 0.47,
+   "searches": 7,
+   "sources": [
+    "https://www.europarl.europa.eu/news/en/press-room/20210423IPR02772/parlamentet-godkanner-handels-och-samarbetsavtalet-mellan-eu-och-storbritannien",
+    "https://sliven.net/news/482517?lang=en",
+    "https://unmasked.goodfriends.workers.dev/megan-https-www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0162%28NLE%29",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=true&sessionDay.day=20261123&sessionDay.type=ALL",
+    "https://sp.tensorfoxy.top/https/www.europarl.europa.eu/pdfs/news/expert/agenda_week_by_type/48-2026/48-2026_en.pdf",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0162R%28NLE%29",
+    "https://epvotes.com/dossiers/2025-0162-conclusion-broad-package-agreements-consolidate-deepen",
+    "https://openrcv.eu/en/verfahren.html?p=2025-0162",
+    "https://www.europarl.europa.eu/doceo/document/AGRI-PV-2026-04-08-1_EN.pdf",
+    "https://www.europarl.europa.eu/cmsdata/307872/Work%20in%20Progress_All_Columns_%2015-06-2026.pdf",
+    "https://www.europarl.europa.eu/RegData/docs_autres_institutions/commission_europeenne/com/2025/0309/COM_COM%282025%290309_EN.pdf",
+    "https://emeeting.europarl.europa.eu/emeeting/committee/en/agenda/202605/SANT",
+    "https://sp.tensorfoxy.top/https/www.europarl.europa.eu/pdfs/news/expert/agenda_week_by_day/48-2026/48-2026_en.pdf",
+    "https://epvotes.com/documents/a10-0236-2026",
+    "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026%2F0196%28BUD%29",
+    "https://epvotes.com/week/2026-W48?show=all",
+    "https://oeil.europarl.europa.eu/oeil/fr/search?sessionDay.allDays=true&sessionDay.day=20261123&sessionDay.type=ALL",
+    "https://epvotes.com/dossiers/2025-0162R-interim-report-view-consent-procedure-broad-package",
+    "https://www.europarl.europa.eu/ukcg/en/resolutions/adopted",
+    "https://www.parlament.ch/press-releases/Pages/mm-apk-n-2026-11-18.aspx?lang=1031",
+    "https://oeil.europarl.europa.eu/oeil/en/search?sessionDay.allDays=true&sessionDay.day=20261126&sessionDay.type=ALL",
+    "https://www.europarl.europa.eu/legislative-train/carriage/eu-uk-trade-and-cooperation-agreement/report?sid=9901",
+    "https://www.parlament.ch/press-releases/Pages/mm-apk-n-2026-11-18.aspx?lang=1033",
+    "https://www.parlament.ch/centers/documents/de/Vorschau%20NR%20WS%202026.pdf"
+   ],
+   "reason": "I expect Parliament to grant consent on Wednesday, November 25, but I lean **NO** on the 550-vote threshold. The likeliest way the claim fails is consent with fewer than 550 votes, not a postponement or rejection.\n\n**Base rate.** In four illustrative consent votes involving close European partners, two cleared 550: the EU–UK Trade and Cooperation Agreement (660) and the EU–Greenland fisheries protocol (616). Two fell short despite passing: the EEA financial-mechanism package (528) and the EU–Switzerland passenger-data agreement (549). That small sample gives a rough starting point of one in two, not a comprehensive base rate. ([europarl.europa.eu](https://www.europarl.europa.eu/news/en/press-room/20210423IPR02772/parlamentet-godkanner-handels-och-samarbetsavtalet-mellan-eu-och-storbritannien?utm_source=openai))\n\n**What moves this case.** The September 10 Foreign Affairs Committee vote—53 in favour, 3 against, 9 abstentions—is strong evidence for consent, but less reassuring for 550: at that 81.5% support rate, it would take 675 ballots to clear the threshold. That is a sensitivity check, not a projection from a representative sample. The November 18 *Le Temps* report described a vote on the package as a whole, reducing the risk that several separate consent votes each have to clear 550. Parliament’s November 19 briefing explicitly scheduled both the consent recommendation and the separate interim report for Wednesday, with a post-vote press conference featuring the Renew rapporteur and the EPP and S&D shadow rapporteurs. That raises confidence in the date but does not establish a 550-vote coalition. ([sliven.net](https://sliven.net/news/482517?lang=en))\n\n**Main failure mode.** Absences and abstentions can leave a comfortable majority well short of 550. I put the chance that the consent vote does not take place on November 25 at about 2%, given the explicit scheduling and the post-vote press conference. ([unmasked.goodfriends.workers.dev](https://unmasked.goodfriends.workers.dev/megan-https-www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties?utm_source=openai))\n\n**NEW FACTS**\n- 2026-11-19 | Parliament’s plenary briefing scheduled the consent recommendation and the separate interim report for votes on November 25 in Strasbourg. | https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties\n- 2026-11-18 | *Le Temps* reported that Parliament was scheduled to vote on the Swiss agreements as a whole. | https://www.letemps.ch/en/switzerland/eu-trade-commissioner-maros-sefcovic-champions-the-bilaterals-iii-it-took-four-reconciliation-fondues-before-we-got-to-the-friendship-fondue\n- 2026-09-16 | Parliament granted consent to the separate EU–Switzerland passenger-data agreement with 549 votes in favour. | https://agenceurope.eu/en/bulletin/article/13939/20/european-parliament-approves-eu-switzerland-air-passenger-data-transfer-agreement\n- 2026-09-10 | The Foreign Affairs Committee backed the broad EU–Switzerland package by 53 votes to 3, with 9 abstentions. | https://sliven.net/news/482517?lang=en\n\n**COUNTER**  \nThe committee vote may understate plenary support: the package combines market access with cooperation on electricity, health and research, giving members across several groups reasons to back it. If that breadth translates into fewer abstentions and strong turnout, a single package-wide vote can clear 550. ([sliven.net](https://sliven.net/news/482517?lang=en))",
+   "facts": [
+    {
+     "date": "2026-11-19",
+     "fact": "Parliament’s plenary briefing scheduled the consent recommendation and the separate interim report for votes on November 25 in Strasbourg.",
+     "url": "https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "*Le Temps* reported that Parliament was scheduled to vote on the Swiss agreements as a whole.",
+     "url": "https://www.letemps.ch/en/switzerland/eu-trade-commissioner-maros-sefcovic-champions-the-bilaterals-iii-it-took-four-reconciliation-fondues-before-we-got-to-the-friendship-fondue"
+    },
+    {
+     "date": "2026-09-16",
+     "fact": "Parliament granted consent to the separate EU–Switzerland passenger-data agreement with 549 votes in favour.",
+     "url": "https://agenceurope.eu/en/bulletin/article/13939/20/european-parliament-approves-eu-switzerland-air-passenger-data-transfer-agreement"
+    },
+    {
+     "date": "2026-09-10",
+     "fact": "The Foreign Affairs Committee backed the broad EU–Switzerland package by 53 votes to 3, with 9 abstentions.",
+     "url": "https://sliven.net/news/482517?lang=en"
+    }
+   ],
+   "counter": "The committee vote may understate plenary support: the package combines market access with cooperation on electricity, health and research, giving members across several groups reasons to back it. If that breadth translates into fewer abstentions and strong turnout, a single package-wide vote can clear 550. ([sliven.net](https://sliven.net/news/482517?lang=en))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:14:51Z",
+   "p": 0.58,
+   "searches": 20,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAFnf1rb6pFmJKh4BYaxfWNoqCt9RCAFw_Hyt9hHyv1xUrHj3MwrUXuafFkr_KpuMShbZGIEn1xNrlfhM-gr3jj380452-QvYm1ogCIqHMUpZBn4Rhl9ujvg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERTSicmWN02ipv9wrF4lS7Ywgs7MfSXMCwVgmTLluY1MQrjj196J5FRjQzmOQhemOi2gW12aLflvoHWCXfOYZcRnjubiFGW8lSsa_5UOnaOKztKoNAxM9h",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGI05-HhSlrCw0GjnRDrTGFdEBgbvhKRnEhxfQmRqdaeSKfgLpeVITyWk-ZBTsKHJAj8SNQRvrMWhUJYa-7wF6auSyCsFbLnOhO25SmqlEWVIoVDmV5IEsTw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHudOT3dk4nzRPZQ09m8Ql5RdAYa_TANBSODufelrpMQh8oAcBbEt8GMZsFntKD5-_jMT7-pCp5Ex5-aqIvKjpFQNDtr6JlOHNMrLCUpes1_U_0EPfayUGtYg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZCclj0oYVH67yYGKOC6S0xFJXYjJJNO_UZZYL89z1uEVwPscF1INswhFBZfUSmCWohfPWi6P6TCRJb9w8PbRsTnwJOcvf9j8IBrhhPAn0ZiJZyQVIMH8JwA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrNjz7l98m0eEzT5ewriV82FOp7H5vFghIECjN20xrIy0s71tFzdOBlYN4njYDvW1hUCkiyEN_fEmzhe3ET2YGDU-eFFlZDOj4kQQdMdInKGWjGuVlkJQYVg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHiS_9ly8K1M4pHNkLUGE8g-pu5NEKgAZ6fwhr4ZtyLsG0U7txQEMigEFMFdCZBTTVdw9RCCFggAT1y3A2txfMWNTXOSbEwlV2Ew-H_my_Gz1ls7l4QiTmgw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJpbS_5GovPALNe94cBb0P7XcQNEnKy0YWJ0Ub3N-jILFcITE0lq2WoaoSk_EQgNKoPPWLxVNK0C9vLSOjyI0gKWa8Y55EMHjacN8TCV1_-CwSzfwziM4A",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaQ_i7gSzzVj-kUNfkzpNeUvb8LXyVhNakl7OOGAO9jIchKPEIYtHwHzPtG3o3eEVKWqXTHAgJ1ydwUIOHUvnqbwEIlHxVNRGpSJbAJIoZUujMrh2s8EZ2",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMxA8VLIGpMQsxvrosIoCV-1qaXJexLYRpN8JVN6fPx4KNR70DjPGQaEsI5KZi1GJdXddDmRDH7vdWqA3nZxl0zl2vTlJ2XogU5V8l_JH8xD2cTzy9n-aQ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYY55zDc5_Xc74a9fdTpeQTvgHwlIb5h4k8OacZNIcffxKGs1H_mUS3uZlKPV_p8MCPbwyHiz8_5HVX7zYyVmIoOXJKvExADthgLpbFSwSHoiIe7A2yHK0gg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFopRQuFVJl4v7dQYRfSGmChwfDzjuyKIrdRIQawxLdBG5Gw4pHvoyfYiz9eRBkTiwzj4jya--xndw-nSCQM_QFatzkK3RXZ4N0iXVQeZBm_sVN4zLzy_18Uet6pzRW9lND2WstdXMTtGgX0vkFShq8UvCBjMOu70EAD38D0qYJde-hIO5Buzec8Z8BuIEjq88=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MeRb1skf712d89D48P5Gq_2Hpmvi_Z1_xEzZx4zW6d_mdUQP9EkBHSyBYuKIJmNCNF5QQALDwuf5Gah9yJvqlvCRDYk9SHliiuPBogDvqSsWnRrGM9lLLHYURcL4VvvYIVJ9H69XbzCe31h6-Wc6P-HqhDIncRo4EH02_g3YF39u_8hxMzPSKMRUQfvPjjzyYPN5zHg2ZRPZ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfbda6_DbQbbvBh60nCFLBWnaIqLUIhptZAMTnEot7bqhMr1Zzv0YTKiB5RFmSVOCQQMeKy20XKJRpu3Qs7JHF0j3p6_pezSXZG4zTXwUhv8-1UqnK-xaBsoNtw0_PEL1keCNSgAwrdnrtrMA4j9viGlLIrL_0IBxqSS2PBIaGMtd_U5nZ2hkkn1OBiJrexbk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsr-3pOxCzuSArzajgcTYeP41MkyoishH7tKct0PMIbZSOlMjFyOvfkc2qC6mkBPvZUr6n4WBtIPjg4XYg_fn8uFLN0QUhhOGJTlxRctyZ1Z8cL-PlmcbUXCRiww-RPYbW_M1WYcfo4TN4jEGzRj5vgsKuH0CBQvyepge8w4coSFTCf1DsDLkLiZ6868nr4qQE-Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcdxRmSUz-Tc8mVlfgv1JYDMt9F02XCmwam6eelr5unXw7DFgReAO-V4fQp_GqWHxvuhp-R8Jn_EIpTR-WytkvQm8Im8hbFg4WV8syZ81eI_lRR66jit-u_-qyfrVbfZygitpokN9gSM4BzTHvTD6C3cVKckZq2UoY6Kk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHc5CFLZTXuLkBvHfMPHcZ3_Knmr7kBtEiuZSL0Hvc8NlbpzsYH9JA-YPKyGvxqUqpHH9se9FpE--6y8nM85sprZKoXNcXnIrxFbCVJSw7jZZA7YffLxHV1TArLEUiGDs4IhPwYHN0VD-yix-pNRNyTJS4JJLvI1w81RQ8V5jJVR2Gr85TMv9VomkrMgEqVBBi70eX2Pr3lgmIC7jvD-BxidqtVj_gb1_goWVJ9jw8",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4CxGDN1d-43f1vWEw11awAr2MI_SEbtXNjNkDZz39AQ1IHh0ZTSNhaD7Yo8NozinD-bjBamRNm5nu3o2qKCsUAEZ3AT6XCWGsFqUJ9QpoVwHuhu8a55NyegUNsOJuqY8LrjmxuQfsDRF_NomA7gFzYZLtyL_PmzyiT9ZPu7j_c95zaG7EyDvvRagOhRbuKQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_T00pdg0n5JLMZsqCQuar83uV3ZZSYpb3MMdaqWqFxbY1ojgVoXXUikngU3Rn5ihjvP9lGz0M03UwfVjWW0gYtqIGGVfofJvDC5-eErrDFSXB6m-ZUEKJF0NMI6_r9fOwbWcSZHmwochzvrU8J5FSF8_qPh4mnweKa5LDNGbL9hQ8"
+   ],
+   "reason": " weekly agenda (published 22 November 2026) confirm that the vote on Christophe Grudler's recommendation for consent (`A10-0236/2026`, procedure `2025/0162(NLE)`) is firmly scheduled for the 12:00–13:00 voting session on Wednesday, 25 November 2026, followed by a scheduled press conference at 14:30.\n- **Single consent vote (moves towards YES):** The Tabling Service's final indicative voting list for `A10-0236/2026` confirms there is only one single roll-call vote (`vote: consent. RCV`), eliminating the risk of failing across multiple separate consent votes.\n- **Committee vote margin (moves slightly towards a close margin around 550):** On 10 September 2026, the Foreign Affairs Committee (AFET) approved the EU–Switzerland package by 53 votes in favour, 3 opposed, and 9 abstentions. While 53 out of 56 non-abstaining votes is overwhelming (94.6%), 53 out of 65 total committee votes cast is 81.54%. In a plenary session with a typical Wednesday turnout of 650 to 670 MEPs, an 81.54% support rate translates to 530–546 votes in favour. However, Wednesday 25 November features high-profile votes (including the 2027 EU budget and the pharmaceutical package), which tends to draw higher attendance (660–675 MEPs), and full plenary consent votes on technical/bilateral neighbor agreements often see slightly higher pro-ratification discipline among mainstream groups (EPP, S&D, Renew, Greens/EFA, and parts of ECR) than committee votes.\n\n(3) **Strongest reason the obvious outcome might fail:**\nAlthough consent itself is virtually certain to pass (requiring only an absolute majority of 361 component members), reaching the 550-vote threshold requires roughly 83%–85% of voting MEPs to actively vote \"in favour\" rather than abstaining. In the AFET committee vote, 9 out of 65 members (13.8%) abstained and 3 (4.6%) voted against; if right-wing populist groups (such as Patriots for Europe or ESN) or left-wing members replicate that ~18.5% combined rate of abstentions and opposition in plenary, or if Wednesday afternoon attendance dips below 650 MEPs, the \"in favour\" tally will likely land in the 525–549 range (just as the EU–Switzerland PNR consent vote on 16 September 2026 landed at 549 votes in favour).\n\nBalancing the strong cross-party backing from EPP, S&D, and Renew against the 81.5% committee \"in favour\" share and the strict 550 threshold, the probability of recording at least 550 votes in favour on 25 November is slightly above even.\n\nNEW FACTS\n- 2026-09-16 | The European Parliament gave its consent to the EU–Switzerland Agreement on the transfer of passenger name record (PNR) data (report A10-0204/2026) with 549 votes in favour, 75 against, and 30 abstentions out of 654 voting MEPs. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHudOT3dk4nzRPZQ09m8Ql5RdAYa_TANBSODufelrpMQh8oAcBbEt8GMZsFntKD5-_jMT7-pCp5Ex5-aqIvKjpFQNDtr6JlOHNMrLCUpes1_U_0EPfayUGtYg==\n- 2026-09-16 | The European Parliament gave its consent to the EU–Iceland GOVSATCOM and Secure Connectivity Agreement (report A10-0207/2026) with 631 votes in favour, 7 against, and 15 abstentions. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrNjz7l98m0eEzT5ewriV82FOp7H5vFghIECjN20xrIy0s71tFzdOBlYN4njYD5W1hUCkiyEN_fEmzhe3ET2YGDU-eFFlZDOj4kQQdMdInKGWjGuVlkJQYVg==\n- 2026-09-23 | On 10 September 2026, the European Parliament's Committee on Foreign Affairs (AFET) approved the EU–Switzerland Bilaterals III package of agreements with 53 votes in favour, 3 opposed, and 9 abstentions. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcdxRmSUz-Tc8mVlfgv1JYDMt9F02XCmwam6eelr5unXw7DFgReAO-V4fQp_GqWHxvuhp-R8Jn_EIpTR-WytkvQm8Im8hbFg4WV8syZ81eI_lRR66jit-u_-qyfrVbfZygitpokN9gSM4BzTHvTD6C3cVKckZq2UoY6Kk=\n- 2026-11-11 | Report A10-0236/2026 by rapporteur Christophe Grudler on the recommendation for consent to the EU–Switzerland broad package of agreements (procedure 2025/0162(NLE)) was tabled for plenary with a final indicative voting list. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_T00pdg0n5JLMZsqCQuar83uV3ZZSYpb3MMdaqWqFxbY1ojgVoXXUikngU3Rn5ihjvP9lGz0M03UwfVjWW0gYtqIGGVfofJvDC5-eErrDFSXB6m-ZUEKJF0NMI6_r9fOwbWcSZHmwochzvrU8J5FSF8_qPh4mnweKa5LDNGbL9hQ8\n- 2026-11-19 | The European Parliament announced that MEPs will vote on Wednesday 25 November 2026 on giving consent to the EU–Switzerland package of agreements, followed by a press conference at 14:30 in Strasbourg with rapporteur Christophe Grudler and shadow rapporteurs Reinhold Lopatka and Andreas Schieder. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHc5CFLZTXuLkBvHfMPHcZ3_Knmr7kBtEiuZSL0Hvc8NlbpzsYH9JA-YPKyGvxqUqpHH9se9FpE--6y8nM85sprZKoXNcXnIrxFbCVJSw7jZZA7YffLxHV1TArLEUiGDs4IhPwYHN0VD-yix-pNRNyTJS4JJLvI1w81RQ8V5jJVR2Gr85TMv9VomkrMgEqVBBi70eX2Pr3lgmIC7jvD-BxidqtVj_gb1_goWVJ9jw8\n- 2026-11-20 | The European Parliament's Final Draft Agenda schedules the plenary vote on Christophe Grudler's recommendation A10-0236/2026 on the EU–Switzerland broad package of agreements for the 12:00–13:00 voting session on Wednesday 25 November 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MeRb1skf712d89D48P5Gq_2Hpmvi_Z1_xEzZx4zW6d_mdUQP9EkBHSyBYuKIJmNCNF5QQALDwuf5Gah9yJvqlvCRDYk9SHliiuPBogDvqSsWnRrGM9lLLHYURcL4VvvYIVJ9H69XbzCe31h6-Wc6P-HqhDIncRo4EH02_g3YF39u_8hxMzPSKMRUQfvPjjzyYPN5zHg2ZRPZ\n\nCOUNTER\nIn the Foreign Affairs Committee vote on 10 September 2026, 53 of the 65 participating MEPs (81.5%) voted in favour while 12 opposed or abstained, a proportion that would yield only around 530 to 545 votes in favour if replicated across a typical plenary turnout of 650 to 665 MEPs. If right-wing nationalist groups or trade-sceptic MEPs abstain in similar numbers during the plenary session, or if overall attendance on Wednesday midday is slightly lower than average, the consent resolution will easily pass its required 361-vote majority while falling slightly short of the 550-vote threshold.",
+   "facts": [
+    {
+     "date": "2026-09-16",
+     "fact": "The European Parliament gave its consent to the EU–Switzerland Agreement on the transfer of passenger name record (PNR) data (report A10-0204/2026) with 549 votes in favour, 75 against, and 30 abstentions out of 654 voting MEPs.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHudOT3dk4nzRPZQ09m8Ql5RdAYa_TANBSODufelrpMQh8oAcBbEt8GMZsFntKD5-_jMT7-pCp5Ex5-aqIvKjpFQNDtr6JlOHNMrLCUpes1_U_0EPfayUGtYg=="
+    },
+    {
+     "date": "2026-09-16",
+     "fact": "The European Parliament gave its consent to the EU–Iceland GOVSATCOM and Secure Connectivity Agreement (report A10-0207/2026) with 631 votes in favour, 7 against, and 15 abstentions.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrNjz7l98m0eEzT5ewriV82FOp7H5vFghIECjN20xrIy0s71tFzdOBlYN4njYD5W1hUCkiyEN_fEmzhe3ET2YGDU-eFFlZDOj4kQQdMdInKGWjGuVlkJQYVg=="
+    },
+    {
+     "date": "2026-09-23",
+     "fact": "On 10 September 2026, the European Parliament's Committee on Foreign Affairs (AFET) approved the EU–Switzerland Bilaterals III package of agreements with 53 votes in favour, 3 opposed, and 9 abstentions.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcdxRmSUz-Tc8mVlfgv1JYDMt9F02XCmwam6eelr5unXw7DFgReAO-V4fQp_GqWHxvuhp-R8Jn_EIpTR-WytkvQm8Im8hbFg4WV8syZ81eI_lRR66jit-u_-qyfrVbfZygitpokN9gSM4BzTHvTD6C3cVKckZq2UoY6Kk="
+    },
+    {
+     "date": "2026-11-11",
+     "fact": "Report A10-0236/2026 by rapporteur Christophe Grudler on the recommendation for consent to the EU–Switzerland broad package of agreements (procedure 2025/0162(NLE)) was tabled for plenary with a final indicative voting list.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_T00pdg0n5JLMZsqCQuar83uV3ZZSYpb3MMdaqWqFxbY1ojgVoXXUikngU3Rn5ihjvP9lGz0M03UwfVjWW0gYtqIGGVfofJvDC5-eErrDFSXB6m-ZUEKJF0NMI6_r9fOwbWcSZHmwochzvrU8J5FSF8_qPh4mnweKa5LDNGbL9hQ8"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "The European Parliament announced that MEPs will vote on Wednesday 25 November 2026 on giving consent to the EU–Switzerland package of agreements, followed by a press conference at 14:30 in Strasbourg with rapporteur Christophe Grudler and shadow rapporteurs Reinhold Lopatka and Andreas Schieder.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHc5CFLZTXuLkBvHfMPHcZ3_Knmr7kBtEiuZSL0Hvc8NlbpzsYH9JA-YPKyGvxqUqpHH9se9FpE--6y8nM85sprZKoXNcXnIrxFbCVJSw7jZZA7YffLxHV1TArLEUiGDs4IhPwYHN0VD-yix-pNRNyTJS4JJLvI1w81RQ8V5jJVR2Gr85TMv9VomkrMgEqVBBi70eX2Pr3lgmIC7jvD-BxidqtVj_gb1_goWVJ9jw8"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "The European Parliament's Final Draft Agenda schedules the plenary vote on Christophe Grudler's recommendation A10-0236/2026 on the EU–Switzerland broad package of agreements for the 12:00–13:00 voting session on Wednesday 25 November 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7MeRb1skf712d89D48P5Gq_2Hpmvi_Z1_xEzZx4zW6d_mdUQP9EkBHSyBYuKIJmNCNF5QQALDwuf5Gah9yJvqlvCRDYk9SHliiuPBogDvqSsWnRrGM9lLLHYURcL4VvvYIVJ9H69XbzCe31h6-Wc6P-HqhDIncRo4EH02_g3YF39u_8hxMzPSKMRUQfvPjjzyYPN5zHg2ZRPZ"
+    }
+   ],
+   "counter": "In the Foreign Affairs Committee vote on 10 September 2026, 53 of the 65 participating MEPs (81.5%) voted in favour while 12 opposed or abstained, a proportion that would yield only around 530 to 545 votes in favour if replicated across a typical plenary turnout of 650 to 665 MEPs. If right-wing nationalist groups or trade-sceptic MEPs abstain in similar numbers during the plenary session, or if overall attendance on Wednesday midday is slightly lower than average, the consent resolution will easily pass its required 361-vote majority while falling slightly short of the 550-vote threshold."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:18:12Z",
+   "p": 0.4,
+   "searches": 15,
+   "sources": [
+    "https://www.expert-europe.eu/en/event/understanding-the-european-parliament/2026/11/20/236",
+    "https://www.europarl.europa.eu/RegData/etudes/ATAG/2026/797032/EPRS_ATA%282026%29797032_EN.pdf",
+    "https://www.europarl.europa.eu/doceo/document/OJ-10-2026-11-23-SYN_EN.html",
+    "https://en.wikipedia.org/wiki/2026_Swiss_referendums",
+    "https://howtheyvote.eu/votes/178386",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2026-0236_FR.pdf",
+    "https://www.apiceuropa.com/parlamento-europeo-il-resoconto-della-plenaria-dell11-12-novembre-2026/",
+    "https://theswisspress.ch/articles/eu-treaty-vote-2028.html",
+    "https://www.letemps.ch/en/world/europe/christophe-grudler-after-a-european-parliament-vote-switzerland-and-the-eu-need-each-other",
+    "https://www.europarl.europa.eu/committees/en/documents/latest-documents",
+    "https://www.eventi.news/auto-il-made-in-europe-slitta-e-londra-negozia-lingresso",
+    "https://lenews.ch/2026/11/20/swiss-parliament-split-over-how-to-put-eu-deals-to-a-vote/",
+    "https://www.europarl.europa.eu/news/fr/agenda/plenary-news/2026-11-23/17/relations-ue-suisse-des-accords-actualises-pour-approfondir-les-relations",
+    "https://lenews.ch/2026/10/01/switzerlands-upper-house-puts-its-stamp-on-the-eu-deal/",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2026-0235_EN.pdf",
+    "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1923343",
+    "https://www.europarl.europa.eu/committees/de/afet/meetings/votes",
+    "https://x.com/Europarl_EN/status/2121196377082397098",
+    "https://www.swissinfo.ch/eng/switzerland-prolongs-neutrality-soul-searching-with-weapons-vote/92416027",
+    "https://swissobserver.com/news/swiss-eu-treaty-cantonal-vote-proposal/",
+    "https://howtheyvote.eu/votes/195855",
+    "https://www.europarl.europa.eu/doceo/document/A-10-2026-0236_EL.pdf",
+    "https://www.watson.ch/schweiz/eu/109105004-eu-paket-federfuehrende-nationalratskommission-gegen-staendemehr",
+    "https://tinyurl.com/5bh58pea",
+    "https://www.europarl.europa.eu/telastatic/cmsdata/309108/Vote%20results_14%20July%202026.pdf"
+   ],
+   "reason": "The consent vote is on Wednesday’s Strasbourg order of business as a single roll-call on one Council decision, so the live question is the yes tally, not whether consent itself will pass.\n\nComparable recent consents show why 550 is a high bar, not a formality. The September 2025 EU–Switzerland satellite-navigation consent passed 627–4–33, but that file was technical. The closer analogue, the 16 September 2026 EU–Switzerland PNR consent, passed only 549–75–30, with 654 MEPs voting. Absolute majority is 361 of 720; 550 is about three-quarters of the House.\n\nThis package is politically broader (free movement, institutional alignment, programmes), but committee behaviour was much wider than on PNR. On 10 September 2026 AFET adopted the consent recommendation 53–3–9: EPP, S&D, Renew, ECR and Greens in favour; The Left abstaining; PfE split (RN members for, PVV/VOX/FPÖ abstaining); only ESN and some non-attached against. The text is one recommendation — “gives its consent” to draft Council decision 10643/25 — and the 23–26 November agenda lists a single Wednesday item, A10-0236/2026, with a press conference already called for after that vote.\n\nScaling September attendance onto those group lines puts the reliable yes bloc (EPP, S&D, Renew, ECR, Greens) near 480–500. Clearing 550 then needs roughly 50–70 further yes votes from PfE, non-attached and the margins. French RN support is plausible (cross-border interests; their AFET members voted yes), but the rest of PfE abstained in committee and The Left did not vote in favour. A central tally is about 530–545, with a wide enough spread that 550 is reachable but not the middle of the distribution. A small chance the item slips to Thursday, or is split into several consents, also fails the criterion as written.\n\n\n\nNEW FACTS\n- 2026-11-19 | The European Parliament’s plenary briefing states MEPs will vote on Wednesday 25 November 2026 on the EU–Switzerland package and that consent requires an absolute majority of members. | https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties\n- 2026-11-23 | The adopted Strasbourg agenda places the consent recommendation A10-0236/2026 (2025/0162(NLE), rapporteur Christophe Grudler) in Wednesday 25 November voting time, separate from the interim report A10-0235/2026. | https://www.europarl.europa.eu/doceo/document/OJ-10-2026-11-23-SYN_EN.html\n- 2026-11-23 | AFET’s press account said the rapporteur and EPP and S&D shadow rapporteurs will hold a press conference following the Wednesday plenary vote on the package. | https://x.com/EP_ForeignAff/status/2124878740106662061\n- 2026-09-10 | AFET adopted the consent recommendation by 53 votes in favour, 3 against and 9 abstentions. | https://www.letemps.ch/en/world/europe/christophe-grudler-after-a-european-parliament-vote-switzerland-and-the-eu-need-each-other\n- 2026-09-23 | The tabled recommendation A10-0236/2026 is a single consent to one draft Council decision on the broad package, not a set of separate consents. | https://www.europarl.europa.eu/doceo/document/A-10-2026-0236_EN.pdf\n- 2026-09-16 | Parliament gave consent to the EU–Switzerland PNR agreement by 549 votes to 75, with 30 abstentions (654 voting). | https://howtheyvote.eu/votes/195855\n- 2026-08-31 | An EPRS briefing gives group sizes as of 1 July 2026 as EPP 185, S&D 135, PfE 85, ECR 84, Renew 78, Greens 53, The Left 45, ESN 27 and non-attached 27, in a 720-seat Parliament. | https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/789382/EPRS_BRI(2026)789382_EN.pdf\n- 2026-11-13 | The European Parliament stated that it has 720 Members in eight political groups. | https://x.com/Europarl_EN/status/2121196377082397098\n\nCOUNTER\nThe reliable yes coalition at ordinary Wednesday attendance is only about 480–500, so 550 depends on a large PfE yes vote that committee behaviour does not guarantee: RN members were in favour, but other PfE members abstained and The Left abstained. If that pattern holds in plenary, the tally lands in the 520s or low 540s even though consent itself passes comfortably, and a slip of the item to Thursday would also fail the window.",
+   "facts": [
+    {
+     "date": "2026-11-19",
+     "fact": "The European Parliament’s plenary briefing states MEPs will vote on Wednesday 25 November 2026 on the EU–Switzerland package and that consent requires an absolute majority of members.",
+     "url": "https://www.europarl.europa.eu/news/en/agenda/plenary-news/2026-11-23/17/updated-agreements-to-deepen-eu-switzerland-ties"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The adopted Strasbourg agenda places the consent recommendation A10-0236/2026 (2025/0162(NLE), rapporteur Christophe Grudler) in Wednesday 25 November voting time, separate from the interim report A10-0235/2026.",
+     "url": "https://www.europarl.europa.eu/doceo/document/OJ-10-2026-11-23-SYN_EN.html"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "AFET’s press account said the rapporteur and EPP and S&D shadow rapporteurs will hold a press conference following the Wednesday plenary vote on the package.",
+     "url": "https://x.com/EP_ForeignAff/status/2124878740106662061"
+    },
+    {
+     "date": "2026-09-10",
+     "fact": "AFET adopted the consent recommendation by 53 votes in favour, 3 against and 9 abstentions.",
+     "url": "https://www.letemps.ch/en/world/europe/christophe-grudler-after-a-european-parliament-vote-switzerland-and-the-eu-need-each-other"
+    },
+    {
+     "date": "2026-09-23",
+     "fact": "The tabled recommendation A10-0236/2026 is a single consent to one draft Council decision on the broad package, not a set of separate consents.",
+     "url": "https://www.europarl.europa.eu/doceo/document/A-10-2026-0236_EN.pdf"
+    },
+    {
+     "date": "2026-09-16",
+     "fact": "Parliament gave consent to the EU–Switzerland PNR agreement by 549 votes to 75, with 30 abstentions (654 voting).",
+     "url": "https://howtheyvote.eu/votes/195855"
+    },
+    {
+     "date": "2026-08-31",
+     "fact": "An EPRS briefing gives group sizes as of 1 July 2026 as EPP 185, S&D 135, PfE 85, ECR 84, Renew 78, Greens 53, The Left 45, ESN 27 and non-attached 27, in a 720-seat Parliament.",
+     "url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/789382/EPRS_BRI(2026"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "The European Parliament stated that it has 720 Members in eight political groups.",
+     "url": "https://x.com/Europarl_EN/status/2121196377082397098"
+    }
+   ],
+   "counter": "The reliable yes coalition at ordinary Wednesday attendance is only about 480–500, so 550 depends on a large PfE yes vote that committee behaviour does not guarantee: RN members were in favour, but other PfE members abstained and The Left abstained. If that pattern holds in plenary, the tally lands in the 520s or low 540s even though consent itself passes comfortably, and a slip of the item to Thursday would also fail the window."
+  }
+ ]
+}

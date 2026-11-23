@@ -1,0 +1,32 @@
+{
+ "claim": "China launches the crewed Shenzhou-24 spacecraft from the Jiuquan launch centre on Wednesday 25 November 2026 (Beijing time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:20:49Z",
+   "ambiguous": true,
+   "scenario": "If liftoff occurs at 23:59:30 Beijing time, one reader could count it because it falls in the 23:59 minute on 25 November, while another could rule NO because the explicit event window ends at 23:59:00.",
+   "yes_requires": "The Long March 2F carrying the crewed Shenzhou-24 spacecraft must lift off from the Jiuquan Satellite Launch Center on 25 November 2026 within the specified Beijing-time window (UTC+08:00), and a qualifying source must report the liftoff. What happens after liftoff does not matter.",
+   "decided_by": "The reported liftoff time from CMSA, Xinhua, CCTV, or a qualifying major outlet such as Reuters, AP, AFP, BBC, or Space.com, converted to Beijing time if necessary."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:21:00Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Long March 2F rocket carrying the crewed Shenzhou-24 spacecraft must lift off from the Jiuquan Satellite Launch Center between 00:00 and 23:59 Beijing time on Wednesday, 25 November 2026.",
+   "decided_by": "Official reports from CMSA, Xinhua, CCTV, or major international news outlets (Reuters, AP, AFP, BBC, Space.com)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:21:46Z",
+   "ambiguous": true,
+   "scenario": "Reuters reports a crewed Shenzhou-24 liftoff from Jiuquan at 14:00 Beijing time on 25 Nov 2026, while CMSA and Xinhua report the attempt was scrubbed and liftoff occurred only on 26 Nov. One reader treats any single listed report as enough for YES; another treats the conflicting official accounts as showing no liftoff in the window and resolves NO.",
+   "yes_requires": "A Long March 2F carrying the crewed Shenzhou-24 spacecraft must lift off from the Jiuquan Satellite Launch Center between 00:00 and 23:59 Beijing time (Asia/Shanghai) on 25 November 2026, and that liftoff must be reported by CMSA, Xinhua, CCTV, or Reuters, AP, AFP, BBC, or Space.com. The mission’s later course does not matter.",
+   "decided_by": "Reports from CMSA, Xinhua, CCTV, or the named major outlets (Reuters, AP, AFP, BBC, Space.com)."
+  }
+ ]
+}

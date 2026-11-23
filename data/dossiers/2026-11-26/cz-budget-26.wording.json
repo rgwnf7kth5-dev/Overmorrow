@@ -1,0 +1,32 @@
+{
+ "claim": "The Chamber of Deputies completes the second reading of the 2027 state budget bill (print 324) on Wednesday 25 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:19:32Z",
+   "ambiguous": true,
+   "scenario": "The Chamber interrupts the second reading, then resumes and completes it within the same day's window. One reader could resolve YES because the reading was completed in time; another could resolve NO because the criterion lists interruption as a NO condition without saying whether it must persist through the cutoff.",
+   "yes_requires": "On 25 November 2026, within the stated Europe/Prague time window, the Chamber of Deputies closes both the general and detailed debates on the 2027 state budget bill (print 324), completing its second reading and advancing it to third reading.",
+   "decided_by": "The psp.cz stenographic record or reporting by ČTK, ČT24, or another major Czech outlet. The time the reading closes controls, not the time the report is published."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:19:33Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Czech Chamber of Deputies must close both the general and detailed debates of the second reading of the 2027 state budget bill (sněmovní tisk 324) so that it advances to the third reading, between 00:00 and 23:59 (Europe/Prague) on 25 November 2026.",
+   "decided_by": "The official stenographic record on psp.cz or reports from ČTK, ČT24, or another major Czech news outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:20:09Z",
+   "ambiguous": true,
+   "scenario": "The second reading is opened on 24 November and both debates are closed before 23:59 on 25 November, with the bill sent to third reading and psp.cz, ČTK and ČT24 all agreeing. One reader counts that close as YES; another applies the stated NO condition that the second reading was not opened on 25 November and resolves NO.",
+   "yes_requires": "Between 00:00 and 23:59 on 25 November 2026 (Europe/Prague), the Chamber of Deputies must close the second reading of the government's 2027 state budget bill (sněmovní tisk 324), with both the general and the detailed debate closed and the bill thereby passing to third reading.",
+   "decided_by": "The psp.cz stenographic record, or reporting by ČTK, ČT24, or another major Czech outlet; a later report of a close before 23:59 still counts."
+  }
+ ]
+}

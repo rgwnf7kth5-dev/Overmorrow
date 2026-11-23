@@ -1,0 +1,32 @@
+{
+ "claim": "The US Army carries out the planned controlled detonation of the degraded lead azide at the Iowa Army Ammunition Plant near Middletown, Iowa, on Wednesday 25 November 2026 (Central time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T19:21:28Z",
+   "ambiguous": true,
+   "scenario": "If The Washington Post reports that the detonation occurred within the window, but neither the Army nor any listed outlet confirms it, one reader could accept the report because the Post is a major outlet, while another could reject it because the parenthetical list may be exhaustive.",
+   "yes_requires": "The U.S. Army carries out at least the first of the two planned controlled detonations of degraded lead azide at the Iowa Army Ammunition Plant near Middletown, Iowa, within the stated November 25, 2026 Central time window. Official Army confirmation or a qualifying news report must establish that the detonation occurred within that window.",
+   "decided_by": "Confirmation from the U.S. Army or reporting by a qualifying major outlet. The criterion names AP, Reuters, BBC, ABC, CNN, The New York Times, the Des Moines Register, and Iowa Public Radio."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T19:21:36Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The US Army must carry out at least the first of the two planned controlled detonations of degraded lead azide at the Iowa Army Ammunition Plant between 00:00 and 23:59 Central time on November 25, 2026.",
+   "decided_by": "Confirmation by the US Army or reporting by a major outlet (AP, Reuters, BBC, ABC, CNN, NYT, Des Moines Register, Iowa Public Radio)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-23T19:22:33Z",
+   "ambiguous": true,
+   "scenario": "AP reports that the first detonation was carried out on 25 Nov, while the Army and Reuters say it was postponed and did not occur that day, with no later correction. One reader treats a single listed outlet's report as enough for YES; another treats the NO rule for a postponed or non-occurring detonation as controlling when the Army and another listed outlet contradict that report.",
+   "yes_requires": "Between 00:00 and 23:59 Central time (America/Chicago) on Wednesday 25 November 2026, the US Army carries out at least the first of the two planned controlled detonations of the degraded lead azide at the Iowa Army Ammunition Plant, and that occurrence is confirmed by the Army or reported by at least one of AP, Reuters, BBC, ABC, CNN, NYT, the Des Moines Register, or Iowa Public Radio.",
+   "decided_by": "Confirmation by the US Army, or reporting by one of the named outlets (AP, Reuters, BBC, ABC, CNN, NYT, Des Moines Register, Iowa Public Radio)."
+  }
+ ]
+}
