@@ -91,6 +91,23 @@
       "note": "Statistics Bureau release note of 20 Nov: national CPI for October 2026 (2025=100), all items 103.1, up 2.3% year on year (ex fresh food 2.2%, ex fresh food and energy 2.2%).",
       "resolved_at": "2026-11-22T05:10:00+01:00",
       "held": true
+    },
+    {
+      "claim": "it-strike-21",
+      "outcome": "no",
+      "evidence": "https://www.ansa.it/sito/notizie/cronaca/2026/11/20/cgil-in-100-piazze-siamo-un-milione-e-mezzo-il-governo-confuso_86e7ce84-b2a8-45ce-9c08-87380ca1759d.html",
+      "note": "ANSA, 20 Nov (updated 22:07): Minister Zangrillo's last national figure, at the 18:45 survey of about half the staff, was \"less than 12%\" of public employees on strike (reported elsewhere as a provisional 12%, Orizzonte Scuola; italianotizie.net quotes \"non arrivano al 12%\"), i.e. just under 12% and not below 10%; read as NO since no exact decimal was given (ambiguous); resolved ~48h after deadline.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "ambiguous": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models also read the figure as just under 12%; the ANSA page confirms the 18:45 figure of less than 12% and no later figure that day."
+      }
     }
   ]
 }

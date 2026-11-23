@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "pooled": {
-  "n": 55,
-  "rms_in_scales": 1.306,
+  "n": 58,
+  "rms_in_scales": 1.274,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -504,10 +504,19 @@
      "centre": 293,
      "scale_used": 135,
      "source": "No forecast found. Last Saturday count, Act III of 31 Oct: 320,000 (Interior Ministry, via Sortiraparis). Replace with any ministry or intelligence estimate on 6 Nov."
+    },
+    {
+     "edition": "2026-11-22",
+     "claim": "fr-acte6-count-22",
+     "consensus": 106,
+     "first": 82.5,
+     "centre": 98.8,
+     "scale_used": 51,
+     "source": "No forecast exists. Stand-in: Act V count of Sat 14 Nov 2026, 106,000 (Interior Ministry via AFP, La Gazette France 14 Nov). The documented trend (median -26% per Saturday) would give about 78."
     }
    ],
-   "n": 1,
-   "rms_surprise": 174
+   "n": 2,
+   "rms_surprise": 124.1536
   },
   "berkshire-operating-earnings-q3-2026": {
    "unit": "USD billion",
@@ -924,6 +933,38 @@
    ],
    "n": 1,
    "rms_surprise": 0.25
+  },
+  "uk-public-sector-net-borrowing-excluding-public-sector-banks": {
+   "unit": "£bn",
+   "records": [
+    {
+     "edition": "2026-11-22",
+     "claim": "uk-psnb-22",
+     "consensus": 18,
+     "first": 17,
+     "centre": 18.62,
+     "scale_used": 5.14,
+     "source": "Desk proxy, no published consensus found: Oct 2025 latest value £16.2bn (ONS J5II) + £1.8bn average y/y rise in Aug–Sep 2026 (ONS J5II CSV, https://www.ons.gov.uk/generator?format=csv&uri=/economy/governmentpublicsectorandtaxes/publicsectorfinance/timeseries/j5ii/pusf)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 1
+  },
+  "euro-area-consumer-confidence-indicator-flash-estimate-novem": {
+   "unit": "points (balance)",
+   "records": [
+    {
+     "edition": "2026-11-22",
+     "claim": "ea-conf-22",
+     "consensus": -17.3,
+     "first": -16.9,
+     "centre": -17.54,
+     "scale_used": 2.3,
+     "source": "Admiral Markets preview citing Trading Economics and CME Group/Econoday (https://admiralmarkets.com/education/articles/forex-analysis/euro-area-consumer-confidence-flash-november-2026); TE model −17.6"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.4
   }
  },
  "extra": {}

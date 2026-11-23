@@ -1,0 +1,166 @@
+{
+  "edition": "2026-11-22",
+  "results": [
+    {
+      "claim": "cop31-adopt-22",
+      "outcome": "no",
+      "evidence": "https://connect.carbonbrief.org/t/cop31-third-and-final-draft-cover-decision/208",
+      "note": "Carbon Brief: the third draft cover decision was published only at 3am on Sunday 22 Nov ahead of a closing plenary called for 9am Sunday, so no cover decision was gavelled by 23:59 on Sat 21 Nov Antalya time.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": false,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models also say the conference ran past Saturday midnight; nothing gavelled in the window."
+      }
+    },
+    {
+      "claim": "cop31-fossil-22",
+      "outcome": "no",
+      "evidence": "https://connect.carbonbrief.org/t/cop31-third-and-final-draft-cover-decision/208",
+      "note": "No cover decision was adopted by 23:59 on Sat 21 Nov (third draft only came at 3am Sunday, closing plenary called for 9am Sunday), so the criterion is NO irrespective of wording; the draft itself had no direct reference to fossil fuels.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": false,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Agreement: no adoption in the window."
+      }
+    },
+    {
+      "claim": "ua-drones-22",
+      "outcome": "no",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html",
+      "note": "Air Force first summary via Ukrinform, 21 Nov 09:17: from 18:00 on 20 Nov Russia launched 148 attack drones (Shahed, 87 jet-powered, Gerbera, Parodiya) plus 3 ballistic missiles, fewer than 150.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models give the same 148 figure."
+      }
+    },
+    {
+      "claim": "gulf-ukmto-22",
+      "outcome": "yes",
+      "evidence": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
+      "note": "Reuters via gCaptain, 21 Nov: UKMTO (Warning 216-26 - ATTACK, posted 21 Nov) said on Saturday an outbound tanker was hit by an unidentified projectile 11nm north of Khasab and another tanker hit in its engine room 17nm east of Khasab, in the Strait of Hormuz.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models report the same UKMTO warnings (215-26, 216-26) for 21 Nov; the JMIC update cited by one dates both hits to 21 Nov."
+      }
+    },
+    {
+      "claim": "fr-acte6-count-22",
+      "outcome": "measured",
+      "value": 82.5,
+      "evidence": "https://news.google.com/rss/search?q=%2282%20500%22%20manifestants%20minist%C3%A8re%20when:3d&hl=fr&gl=FR&ceid=FR:fr",
+      "note": "franceinfo (AFP), 21 Nov 20:22 Paris: \"82 500 manifestants dans l'Hexagone selon le ministère de l'Intérieur\", 150,000 per CGT; interieur.gouv.fr refuses scripted reading and no later ministry figure that day was found (listing shows franceinfo, Le Tribunal du Net and JDD with the same 82,500).",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models cite the ministry press release with 82.5 thousand (21.5 thousand in Paris)."
+      }
+    },
+    {
+      "claim": "uk-moodys-22",
+      "outcome": "yes",
+      "evidence": "https://countryeconomy.com/ratings/uk",
+      "note": "No UK rating action by Moody's in the window: its rating history still shows Aa3 stable (last action 21 Nov 2025) and no outlet reports a UK action, while the same Friday brought Moody's actions on Portugal and Hungary.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models agree; one reports a completed periodic review on 20 Nov without rating action, which is also YES."
+      }
+    },
+    {
+      "claim": "uk-psnb-22",
+      "outcome": "measured",
+      "value": 17,
+      "evidence": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/october2026",
+      "note": "ONS first estimate, 20 Nov: public sector net borrowing excluding public sector banks (J5II) was £17.0 billion in October 2026, £0.8 billion more than a year earlier.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Same figure."
+      }
+    },
+    {
+      "claim": "ea-conf-22",
+      "outcome": "measured",
+      "value": -16.9,
+      "evidence": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/business-and-consumer-surveys/latest-business-and-consumer-surveys_en",
+      "note": "DG ECFIN flash, 20 Nov 16:00: euro-area consumer confidence rose 1.0 point to -16.9 (EU -16.5).",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Same figure."
+      }
+    },
+    {
+      "claim": "ca-bc-cabinet-22",
+      "outcome": "yes",
+      "evidence": "https://news.gov.bc.ca/releases/2026PREM0069-001142",
+      "note": "BC Gov News, 20 Nov: Doerkson's cabinet sworn in with 24 ministers and ministers of state besides the premier (18 ministers incl. the Attorney General, 6 ministers of state), parliamentary secretaries listed separately.",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models count 24."
+      }
+    },
+    {
+      "claim": "nrol136-22",
+      "outcome": "no",
+      "evidence": "https://www.spacelaunchschedule.com/launch/falcon-9-block-5-nrol-136/",
+      "note": "Falcon 9 with NROL-136 lifted off at 12:23 UTC on Sun 22 Nov 2026 (04:23 PST), after the window closed at 23:59 PST on Sat 21 Nov; NRO press release headed \"NRO successfully launches NROL-136 November 22\".",
+      "resolved_at": "2026-11-23T05:12:00+01:00",
+      "held": false,
+      "second_opinion": {
+        "agree": [
+          "google",
+          "openai"
+        ],
+        "disagree": [],
+        "note": "Both models give the same 4:23 a.m. PST Sunday liftoff."
+      }
+    }
+  ]
+}

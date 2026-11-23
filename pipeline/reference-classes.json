@@ -844,7 +844,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 2
       }
     },
@@ -878,7 +878,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 2
+        "no": 3
       }
     },
     {
@@ -1382,6 +1382,72 @@
       "base_rate": null,
       "n": 0,
       "source": "own record from 22 Nov 2026 (resolver); added from claim cop31-draft-21",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cop-main-decision-adopted-by-day-after-close",
+      "description": "A COP adopts its main (cover) decision by 23:59 local on the day after its scheduled close",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim cop31-adopt-22",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "cop-main-decision-contains-fossil-fuel",
+      "description": "The COP cover decision adopted in a window contains the words 'fossil fuel(s)' (no adoption = no)",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim cop31-fossil-22",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "gov-strike-participation-below-threshold",
+      "description": "A government's last same-day public-sector participation figure for a general strike is below a stated threshold",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim it-strike-21",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "sovereign-scheduled-review-no-change",
+      "description": "A rating agency's scheduled sovereign review ends without a rating or outlook change",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim uk-moodys-22",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "new-cabinet-size-below-threshold",
+      "description": "A new government is sworn in within the window with a cabinet below a stated size",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim ca-bc-cabinet-22",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "launch-lifts-off-by-day-after-scheduled",
+      "description": "A scheduled orbital launch (e.g. Falcon 9 government mission) lifts off by the end of the day after its first scheduled date",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 23 Nov 2026 (resolver); added from claim nrol136-22",
       "own_record": {
         "yes": 0,
         "no": 1
