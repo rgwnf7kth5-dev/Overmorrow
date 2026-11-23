@@ -305,13 +305,13 @@
    ],
    "event_key": "ua-nightly-drones-2026-11-25",
    "case_key": "ua-nightly-drones",
-   "notes_for_editor": "Threshold raised from 130 (ua-drones-25) to 150 = median of the last 14 nights (150.5); 21-night median is 162. The night to 24 Nov (ua-drones-25) is not yet published: the morning desk should add it to the table and check that 150 still sits near the median. Claim counts weapons launched, not casualties.",
+   "notes_for_editor": "Threshold raised from 130 (ua-drones-25) to 150 = median of the last 14 nights (150.5); 21-night median is 162. The night to 24 Nov (ua-drones-25) is not yet published: the morning desk should add it to the table and check that 150 still sits near the median. Claim counts weapons launched, not casualties. EVENING CHECK 23 Nov: criterion tightened after all three vendors' models flagged the same case (first summary published just after 12:00 Kyiv time); see wording_check. Forecast unchanged.",
    "claims": [
     {
      "id": "ua-drones-26",
      "label": "At least 150 drones in the night to Wednesday",
-     "text": "According to the Ukrainian Air Force's first morning summary on Wednesday 25 November 2026, Russia launched at least 150 drones at Ukraine in the night of 24-25 November (from 18:00 Kyiv time on 24 November).",
-     "criterion": "YES if the Ukrainian Air Force's first summary of the overnight attack published on Wed 25 Nov 2026 (Kyiv time), covering the attack counted from 18:00 Kyiv time on 24 Nov, gives a UAV total of 150 or more, as published on the Air Force's Telegram channel (t.me/kpszsu) or Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Drones means strike UAVs as the summary counts them (Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions such as Banderol/Dan-T that the summary includes in its UAV total); missiles listed separately are not counted. A summary issued late in the morning or around noon still counts as the first summary; separate daytime reports and later corrections do not count. NO if the total is 149 or fewer, or if the Air Force reports that no drones were launched that night. If no summary for that night has been published, the claim stays pending.",
+     "text": "According to the Ukrainian Air Force's first summary of the overnight attack published on Wednesday 25 November 2026, Russia launched at least 150 drones at Ukraine in the night of 24-25 November (counted, as the Air Force counts it, from the evening of 24 November).",
+     "criterion": "YES if the Ukrainian Air Force's first summary of the overnight attack published on Wed 25 Nov 2026 (Kyiv time), covering the night of 24-25 Nov (the Air Force normally counts from 18:00 Kyiv time on 24 Nov; if the summary states another start hour that evening, such as 19:00 or 20:00, it is still the summary of this night and its total is used as published), gives a UAV total of 150 or more, as published on the Air Force's Telegram channel (t.me/kpszsu) or Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Drones means strike UAVs as the summary counts them (Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions such as Banderol/Dan-T that the summary includes in its UAV total); missiles listed separately are not counted. The hour of publication does not matter: the first summary for this night counts whenever on 25 Nov (Kyiv time) it appears, before or after 12:00; the event window (18:00 on 24 Nov to 12:00 on 25 Nov) describes the attack that is counted, not the time by which the summary must be out; separate daytime reports and later corrections do not count. NO if the total is 149 or fewer, or if the Air Force reports that no drones were launched that night. If no summary for that night has been published, the claim stays pending.",
      "resolution_source": "https://t.me/s/kpszsu ; https://www.ukrinform.net/rubric-ato ; https://kyivindependent.com/",
      "schedule": "official",
      "slip_class": "none",
@@ -325,8 +325,8 @@
      "resolves_by": "2026-11-27T05:00:00+01:00",
      "cs": {
       "label": "Nejméně 150 dronů v noci na středu",
-      "text": "Podle prvního ranního souhrnu ukrajinského letectva ze středy 25. listopadu 2026 Rusko v noci na 25. listopadu (od 18:00 kyjevského času 24. listopadu) vyslalo proti Ukrajině nejméně 150 dronů.",
-      "criterion": "ANO, pokud první souhrn nočního útoku, který ukrajinské letectvo zveřejní ve středu 25. listopadu 2026 (kyjevského času) a který zahrnuje útok počítaný od 18:00 kyjevského času 24. listopadu, uvede celkem 150 nebo více bezpilotních letounů, jak je zveřejněn na telegramovém kanálu letectva (t.me/kpszsu) nebo jeho facebookové stránce či jak jej převezmou Ukrinform, Ukrajinska pravda, Kyiv Independent nebo Interfax-Ukrajina. Drony jsou útočné bezpilotní letouny tak, jak je souhrn počítá (drony typu Šáhed včetně proudových, Gerbera, Parodija a jiné klamné drony a také proudové střely jako Banderol/Dan-T, pokud je souhrn zahrnuje do celkového počtu dronů); rakety uvedené zvlášť se nepočítají. Souhrn vydaný pozdě dopoledne nebo kolem poledne se stále počítá jako první souhrn; samostatné denní zprávy a pozdější opravy se nepočítají. NE, pokud souhrn uvede 149 nebo méně dronů nebo pokud letectvo oznámí, že té noci žádné drony vyslány nebyly. Pokud souhrn za tuto noc nebude zveřejněn, tvrzení zůstává otevřené."
+      "text": "Podle prvního souhrnu nočního útoku, který ukrajinské letectvo zveřejní ve středu 25. listopadu 2026, Rusko v noci na 25. listopadu (počítáno tak, jak ji počítá letectvo, od večera 24. listopadu) vyslalo proti Ukrajině nejméně 150 dronů.",
+      "criterion": "ANO, pokud první souhrn nočního útoku, který ukrajinské letectvo zveřejní ve středu 25. listopadu 2026 (kyjevského času) a který se týká noci z 24. na 25. listopadu (letectvo obvykle počítá od 18:00 kyjevského času 24. listopadu; uvede-li souhrn jinou večerní hodinu začátku, například 19:00 nebo 20:00, jde stále o souhrn této noci a platí jeho zveřejněný součet), uvede celkem 150 nebo více bezpilotních letounů, jak je zveřejněn na telegramovém kanálu letectva (t.me/kpszsu) nebo jeho facebookové stránce či jak jej převezmou Ukrinform, Ukrajinska pravda, Kyiv Independent nebo Interfax-Ukrajina. Drony jsou útočné bezpilotní letouny tak, jak je souhrn počítá (drony typu Šáhed včetně proudových, Gerbera, Parodija a jiné klamné drony a také proudové střely jako Banderol/Dan-T, pokud je souhrn zahrnuje do celkového počtu dronů); rakety uvedené zvlášť se nepočítají. Na hodině zveřejnění nezáleží: první souhrn za tuto noc se počítá, ať vyjde 25. listopadu (kyjevského času) kdykoli, před 12:00 i po ní; okno události (18:00 24. listopadu až 12:00 25. listopadu) popisuje útok, který se počítá, nikoli čas, do kdy musí souhrn vyjít; samostatné denní zprávy a pozdější opravy se nepočítají. NE, pokud souhrn uvede 149 nebo méně dronů nebo pokud letectvo oznámí, že té noci žádné drony vyslány nebyly. Pokud souhrn za tuto noc nebude zveřejněn, tvrzení zůstává otevřené."
      },
      "dossier": "data/dossiers/2026-11-26/ua-drones-26.md",
      "signals": "data/dossiers/2026-11-26/ua-drones-26.signals.md",
@@ -478,6 +478,18 @@
         }
        ]
       }
+     },
+     "wording_check": {
+      "at": "2026-11-23T21:35:07+01:00",
+      "flagged_by": [
+       "openai",
+       "google",
+       "xai"
+      ],
+      "changed": true,
+      "was": "YES if the Ukrainian Air Force's first summary of the overnight attack published on Wed 25 Nov 2026 (Kyiv time), covering the attack counted from 18:00 Kyiv time on 24 Nov, gives a UAV total of 150 or more, as published on the Air Force's Telegram channel (t.me/kpszsu) or Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Drones means strike UAVs as the summary counts them (Shahed-type and jet-powered Shaheds, Gerbera, Parodiya and other decoys, and any jet munitions such as Banderol/Dan-T that the summary includes in its UAV total); missiles listed separately are not counted. A summary issued late in the morning or around noon still counts as the first summary; separate daytime reports and later corrections do not count. NO if the total is 149 or fewer, or if the Air Force reports that no drones were launched that night. If no summary for that night has been published, the claim stays pending.",
+      "was_text": "According to the Ukrainian Air Force's first morning summary on Wednesday 25 November 2026, Russia launched at least 150 drones at Ukraine in the night of 24-25 November (from 18:00 Kyiv time on 24 November).",
+      "why": "All three models described a real case the criterion did not settle: the first summary appears shortly after 12:00 Kyiv time, which the criterion counted ('around noon') while the event window ends at 12:00. One also asked what happens if the summary counts from 19:00 instead of 18:00. The criterion now says that the hour of publication on 25 Nov does not matter, that the window describes the attack and not the publication, and that a different stated start hour does not change which summary decides. The thing forecast (the UAV total in the first summary for that night, 150 or more) is unchanged, so the forecast was not rerun; the claim text and the Czech version were brought into line."
      }
     }
    ],
@@ -727,7 +739,7 @@
     "what": "Second reading of the 2027 state budget (print 324) scheduled as item 1 of the Chamber sitting on Wed 25 Nov 2026",
     "source": "https://www.ceskenoviny.cz/zpravy/poslanci-se-budou-zabyvat-rozpoctem-a-schvalovat-dan-na-rafinerie/2904989"
    },
-   "notes_for_editor": "psp.cz unreachable; agenda from desk snapshot (proposed, approved Tue 24 Nov 14:00). Key unknown: whether the coalition gets a vote to sit past 21:00 on Wed (it did in March 2026 and Oct 2026); without it, an unfinished debate resumes Fri 27 Nov (Thu = interpellations). Opposition used club breaks to end the first-reading day at 23:00 in October. No vote in the second reading was reported in March 2026; whether a motion to return the bill can be voted in this reading was not confirmed. Refinery windfall tax (print 311, item 148 in the third-reading block, no fixed slot): Wed only 'případně' after the budget item, behind items 126–137; possible on Wed only if the budget ends early and the tax was not already voted on Tue 24 Nov – check Tuesday's outcome (cz-orlen-25) first; Fri 27 Nov more likely. Nov 2024 (2025 budget) second-reading duration not checked.",
+   "notes_for_editor": "psp.cz unreachable; agenda from desk snapshot (proposed, approved Tue 24 Nov 14:00). Key unknown: whether the coalition gets a vote to sit past 21:00 on Wed (it did in March 2026 and Oct 2026); without it, an unfinished debate resumes Fri 27 Nov (Thu = interpellations). Opposition used club breaks to end the first-reading day at 23:00 in October. No vote in the second reading was reported in March 2026; whether a motion to return the bill can be voted in this reading was not confirmed. Refinery windfall tax (print 311, item 148 in the third-reading block, no fixed slot): Wed only 'případně' after the budget item, behind items 126–137; possible on Wed only if the budget ends early and the tax was not already voted on Tue 24 Nov – check Tuesday's outcome (cz-orlen-25) first; Fri 27 Nov more likely. Nov 2024 (2025 budget) second-reading duration not checked. EVENING CHECK 23 Nov: the August 2026 change to the rules of procedure (speaking-time limits also for priority speakers) and the same-day second reading of Nov 2024 were added to the dossier. Five forecasters reran: see forecast.external_check. Still no report of a sitting past 21:00 or of opposition plans; evidence mixed.",
    "claims": [
     {
      "id": "cz-budget-26",
@@ -752,7 +764,7 @@
      },
      "dossier": "data/dossiers/2026-11-26/cz-budget-26.md",
      "signals": "data/dossiers/2026-11-26/cz-budget-26.signals.md",
-     "probability": 0.46,
+     "probability": 0.57,
      "forecast": {
       "baseline": {
        "status_quo": "yes",
@@ -781,128 +793,163 @@
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:05:00+01:00",
+        "at_blind": "2026-11-23T21:19:24+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.56,
-        "reason_blind": "Reference: budget second readings closed on the day they opened 2/2 documented (Nov 2023, Mar 2026; Laplace 0.75), meeting-level completion 5/5 (cz-chamber.json); own class cz-chamber-government-bill-progress 4/3. Slip cz-chamber-budget 0.10 gives p_held 0.90. Log-odds down about 0.6 from 0.75 because this budget's first reading was obstructed into a second day, the coalition has dropped pushing night sittings since early November and no motion to sit past 21:00 is reported, while 31 speakers and ODS's 100bn cuts make a long day; still the March precedent (12 h, closed ~22:00 after a vote to sit late) supports YES.",
-        "at": "2026-11-23T19:07:00+01:00",
+        "p_blind": 0.54,
+        "reason_blind": "Reference class: same-day completion of a budget second reading, documented n=2 (Nov 2023 ~21:00, Mar 2026 ~12 h to ~22:00), 2/2 yes; Laplace (2+1)/(2+2)=0.75 (log-odds +1.10); meeting-level completion 5/5 supports opening and finishing at the sitting but not the same day. Adjustments: -0.35 log-odds because this term's opposition dragged the first reading of this very budget into a second day (19.5 h, club breaks ended day one at 23:00) and ODS promised ~100bn of transfer amendments; -0.25 because no night-sitting/after-21:00 resolution is confirmed and the coalition has dropped pushing night sittings, while a ~12 h debate from 09:00 runs past 21:00; +0.1 for the new speaking-time limits and the coalition's harmonogram incentive. That gives p_if_held ~0.62. Slip class cz-chamber-budget gives 0.10 postponement, nudged to 0.12 for the agenda only being proposed until Tuesday's opening, so p_held 0.88; 0.88 x 0.62 = 0.55, rounded to 0.54 for residual risk of a late-evening club-break spillover past midnight.",
+        "at": "2026-11-23T21:23:50+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.56,
-        "p_held": 0.9,
+        "p": 0.54,
+        "p_held": 0.88,
         "p_if_held": 0.62,
-        "reason": "Signals file shows no market, bookmaker or published probability for this claim (market searches returned only unrelated questions); nothing to update, final equals blind estimate; p_held/p_if_held unchanged."
+        "reason": "Unchanged from the blind estimate: the signals file has no market, bookmaker odds or published model on this claim, so nothing moves it. The documented budget second readings in Nov 2023 and Mar 2026 both finished the same day (Laplace 0.75), adjusted down because this budget's first reading ran into a second day and no after-21:00 sitting is confirmed (p_if_held 0.62). The cz-chamber-budget slip class gives about 0.12 risk that the reading is not opened on 25 Nov (p_held 0.88), so 0.88 x 0.62 = 0.55, rounded down to 0.54 for the risk that club breaks push the close past midnight.",
+        "rounds": [
+         {
+          "p": 0.56,
+          "at": "2026-11-23T19:07:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:06:00+01:00",
+        "at_blind": "2026-11-23T21:20:16+01:00",
         "inputs_blind": [
          "own-research"
         ],
-        "p_blind": 0.42,
-        "reason_blind": "ČTK (22 Nov) confirms the second reading on Wednesday; the first reading of this budget ran a record 19.5 h over two days (vs 14 h for the 2026 budget), and the 2026 budget's second reading needed about 12 h, so a same-day close needs a long sitting and no opposition stalling. No report found of an announced obstruction of the second reading, so somewhat below even.",
-        "at": "2026-11-23T19:17:42+01:00",
+        "p_blind": 0.78,
+        "reason_blind": "ČTK (22 Nov 2026, citing Speaker Okamura) reports the coalition plans the second reading of the 2027 budget on Wednesday 25 Nov, matching the budget committee's timetable from September (end of second reading 25 Nov, third reading 2 Dec); the first reading passed on 22 Oct. The precedent is strong: the 2026 budget's second reading under this same government opened and closed on a single Wednesday (4 Mar 2026), with ~240 bn CZK of transfer motions tabled, and Czech budget second readings normally finish in one sitting day because the main figures are fixed and the debate is mainly about tabling amendments. The coalition has a majority and has repeatedly voted for night sittings. The main risks are opposition obstruction, which has been heavy in 2026 (8.5-hour agenda fights, obstruction over public-media funding), pushing the item late or past midnight, a reshuffled agenda that delays it, and the narrow 'closed before 23:59' window; I put the combined risk at about 20-25%.",
+        "at": "2026-11-23T21:24:08+01:00",
         "inputs": [
          "own-research",
          "dossier",
          "signals"
         ],
-        "p": 0.33,
-        "reason": "Dossier lowers it: per ČT24 (6 Nov) the coalition has dropped pushing night sittings and the opposition promised thorough debate of every bill; no vote yet to sit past 21:00 on 25 Nov; in October the opposition ended the day with club breaks. Precedents (Nov 2023, Mar 2026) closed the same day, but Mar 2026 needed a vote to sit past 21:00. Signals: no market, bookmaker or published probability matches this claim (signals file), so the figure stays at the post-dossier estimate.",
+        "p": 0.68,
+        "reason": "Moved down from 0.78. The dossier confirms the budget is item 1 on Wed 25 Nov from 09:00, with 31 registered speakers (fewer than the ~40 who finished by 21:00 in 2023), and the 2026 budget's second reading closed the same day after ~12 h. But it also shows the first reading of this budget took two days because the opposition used club breaks; that no resolution to sit past 21:00 on 25 Nov is confirmed, and the coalition reportedly dropped night sittings in November; and that the agenda is only proposed until Tuesday's opening. A 12-hour debate from 09:00 plus breaks lands right around 21:00, so whether it finishes depends on an extension vote and on how hard the opposition obstructs. The new rule capping speaking time helps a little, but it does not touch club breaks. The signals file has no market or model.",
         "rounds": [
          {
           "p": 0.33,
-          "at": "2026-11-23T19:12:00+01:00",
-          "reason": "after the dossier, before the signals: Dossier lowers it: per ČT24 (6 Nov) the coalition has dropped pushing night sittings and the opposition promised thorough debate of every bill; no vote yet to sit past 21:00 on 25 Nov; in October the opposition ended the day with club breaks. Precedents (Nov 2023, Mar 2026) closed the same day, but Mar 2026 needed a vote to sit past 21:00."
+          "at": "2026-11-23T19:17:42+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.33)"
          }
         ]
        },
        {
         "role": "adversarial",
         "model": "claude-fable-5-2",
-        "at_blind": "2026-11-23T19:02:47+01:00",
+        "at_blind": "2026-11-23T21:19:29+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.42,
-        "reason_blind": "Case for NO: the first reading of this same budget was obstructed over two days (19.5 h, club breaks ended day one at 23:00), the opposition has promised thorough debate on every bill, ODS wants to present cuts of CZK 100bn, 31 speakers are already registered two days ahead, and no motion to sit past 21:00 is reported (the coalition was said on 6 Nov to have dropped night sittings); the March second reading took about 12 hours even with a night sitting, which from 09:00 leaves almost no slack. Case for YES: both documented second readings (Nov 2023, Mar 2026 with the same opposition) closed the same day, totals are already fixed and no vote is needed. Slip-class rate 0.10 for not opening on the day; I put completion, once opened, slightly below even.",
-        "at": "2026-11-23T19:10:48+01:00",
+        "p_blind": 0.48,
+        "reason_blind": "The likelier-looking outcome is YES: both documented budget second readings closed the same day (Nov 2023 about 21:00; Mar 2026 after about 12 hours, about 22:00, same coalition and opposition), and psp.cz data show 5/5 budget second readings dealt with at their meeting. The case for NO is strong, though: the March close needed a vote to sit past 21:00, and since 6 Nov the coalition has dropped pushing night sittings, with no such motion reported for 25 Nov; a 09:00 start plus a 12-hour debate with breaks lands at or past 21:00, after which the reading would resume on Fri 27 Nov. The first reading of this same budget ran into a second day for the first time ever (19.5 h, opposition club breaks ended day one at 23:00, already under the new speaking-time rules), ODS promised amendments worth at least CZK 100bn, 31 speakers are registered two days ahead, and the agenda is only proposed until Tuesday's opening. The coalition has no hard need to finish on Wednesday because a Friday close still keeps the budget timetable. Slip-class rate 0.10 for not opening on the day, trimmed to 0.07 given ČTK/Okamura and ČT24 both naming Wednesday; conditional on opening I put same-day closure at about 0.52.",
+        "at": "2026-11-23T21:24:24+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.42,
-        "p_held": 0.92,
-        "p_if_held": 0.46,
-        "reason": "Signals file read: the market searches found nothing matching the claim, and there are no bookmaker odds or published probabilities. Nothing new to weigh, so the blind estimate and the p_held / p_if_held split stand unchanged."
+        "p": 0.48,
+        "p_held": 0.93,
+        "p_if_held": 0.52,
+        "reason": "Unchanged from the blind estimate: the signals file holds no market, bookmaker or published model matching the claim, so nothing moves the number. Same-day closure has precedent (Nov 2023 about 21:00; Mar 2026 after about 12 hours with an approved sitting past 21:00), but this budget's first reading ran into a second day, the coalition has since dropped pushing night sittings and no motion to sit past 21:00 on 25 Nov is reported, ODS promised amendments worth at least CZK 100bn, and a Friday close would still keep the budget timetable. Slip risk of not opening on Wednesday is about 0.07; conditional on opening I put same-day closure at about 0.52.",
+        "rounds": [
+         {
+          "p": 0.42,
+          "at": "2026-11-23T19:10:48+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "at": "2026-11-23T19:02:00+01:00",
+        "at": "2026-11-23T21:19:27+01:00",
         "inputs": [
          "signals",
          "reference-data",
          "dossier"
         ],
-        "p": 0.5,
-        "reason": "No market (signals). Anchor: Laplace on the documented same-day budget second readings (2/2 -> 0.75) times the opening-on-day rate (slip 0.10) gives ~0.68; adjusted down because this budget's first reading was obstructed into a second day, the coalition has dropped pushing night sittings and no motion to sit past 21:00 is reported, with 31 registered speakers and opposition club breaks able to run out the clock before Thursday interpellations. Net ~0.50."
+        "p": 0.55,
+        "reason": "The signals file has no market, odds or published probability, so the anchor is a finish-time model: models.mjs derive (two-piece normal) for the end of the second reading on Wed 25 Nov, start 09:00, q10/q50/q90 = 17:30/21:30/26:30. The median rests on the March 2026 second reading under the same coalition and opposition (12 h, closed ~21:30-22:00 the same day after a vote to sit past 21:00); the wide upper tail reflects the October first reading of this budget, which ran over two days because of club breaks, and 31 registered speakers. The model gives P(close before 21:00) = 0.44 and P(close before 24:00) = 0.74. I put P(vote to sit past 21:00) at about 0.6: it was used in March and October, but the coalition dropped night sittings in November and no motion is reported. The mixture is 0.6*0.74 + 0.4*0.44 = 0.62. Multiplying by about 0.9 for the reading not being opened that day (slip class cz-chamber-budget 0.10, or an agenda fight) gives about 0.55. The new speaking-time limit (rules amendment in force since about September) helps a little, but it does not cover club breaks and was in force during October's two-day first reading, so I made no net adjustment for it.",
+        "rounds": [
+         {
+          "p": 0.5,
+          "at": "2026-11-23T19:02:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "outsider",
         "model": "claude-sonnet-5-5",
-        "at_blind": "2026-11-23T19:19:48+01:00",
+        "at_blind": "2026-11-23T21:21:41+01:00",
         "inputs_blind": [
          "own-research",
          "reference-data"
         ],
-        "p_blind": 0.5,
-        "reason_blind": "One search gave only psp.cz/ČT24 snippets (amendments to the budget already being presented, third reading expected before end of November); could not confirm the second reading opens on 25 Nov or closes that day. Chamber budget slip class 10%, plus risk of an obstructed or overnight debate.",
-        "at": "2026-11-23T19:19:48+01:00",
+        "p_blind": 0.6,
+        "reason_blind": "Coalition (93 votes in first reading on 22 Oct) controls the floor and can extend sittings past 19:00/21:00/24:00; in 2023 the second reading took under 6 hours. Budgets passed in all 4 reference-data cases of the 2021-25 term, and the slip prior for this class is 0.10. I could not confirm from psp.cz (unreachable) or the news that the item is actually set for 25 Nov, and the first reading ran unusually long over two days with opposition emotion, so opposition obstruction or a day-start slip into 26 Nov is a real risk. The criterion also requires closing before 23:59 on that exact day, and a long debate crossing midnight would give NO. I weight about 0.60.",
+        "at": "2026-11-23T21:21:41+01:00",
         "inputs": [
          "own-research",
-         "reference-data",
-         "signals"
+         "reference-data"
         ],
-        "p": 0.5,
-        "p_held": 0.8,
-        "p_if_held": 0.62,
-        "reason": "Signals file found no matching market, bookmaker or model; no change from the blind estimate."
+        "p": 0.6,
+        "reason": "Final equals the blind estimate: the signals step was not done (see forecast.missing). Coalition (93 votes in first reading on 22 Oct) controls the floor and can extend sittings past 19:00/21:00/24:00; in 2023 the second reading took under 6 hours. Budgets passed in all 4 reference-data cases of the 2021-25 term, and the slip prior for this class is 0.10. I could not confirm from psp.cz (unreachable) or the news that the item is actually set for 25 Nov, and the first reading ran unusually long over two days with opposition emotion, so opposition obstruction or a day-start slip into 26 Nov is a real risk. The criterion also requires closing before 23:59 on that exact day, and a long debate crossing midnight would give NO. I weight about 0.60.",
+        "rounds": [
+         {
+          "p": 0.5,
+          "at": "2026-11-23T19:19:48+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        }
       ],
-      "missing": [],
-      "combined": 0.461,
+      "missing": [
+       {
+        "step": "outsider-signals",
+        "why": "Evening check rerun: the outsider's read of the signals file was refused by the run's permission system (the file sits in the dossier folder, which the outsider's brief closes), and the run did not route around the refusal. Its figure rests on its own research and the reference data; the signals file holds no matching market for this claim."
+       }
+      ],
+      "combined": 0.572,
       "combination": {
        "method": "geo-odds"
       },
       "calibrated": null,
-      "spread": 0.23,
+      "spread": 0.2,
       "decomposition": {
-       "p_held": 0.91,
-       "p_if_held": 0.506,
+       "p_held": 0.905,
+       "p_if_held": 0.63,
        "p_if_not_held": 0
       },
       "research": {
-       "at": "2026-11-23T18:20:00Z",
-       "question": "Has the coalition announced a vote to sit/vote after 19:00/21:00 on Wed 25 Nov, or has the opposition announced obstruction of the budget's second reading?",
-       "finding": "No report found (ČTK, ČT24, Novinky, Seznam Zprávy front pages and one search, read 23 Nov) of either a coalition plan to extend Wednesday's sitting into the night or an opposition obstruction announcement for the second reading. The only fresh preview (ČTK 22 Nov, from Speaker Okamura) says only that the budget is on Wednesday and that MPs can propose transfers; it notes the opposition's ~30 amendments to the refinery-tax bill (a different item), not to the budget. Question stays open.",
+       "at": "2026-11-23T20:30:00Z",
+       "question": "(1) Has the coalition announced/tabled a proposal to sit after 19:00/21:00 or overnight on Wed 25 Nov, or said it wants the budget's second reading finished that day? (2) Has the opposition announced obstruction, long debate or club breaks for the second reading, or said it will not obstruct? (3) Is the budget confirmed as the first item on Wednesday in the agenda of the 37th session?",
+       "finding": "No new dated fact was found on any of the three questions. Section front pages of ČTK, ČT24 domácí, Novinky domácí and Seznam Zprávy domácí, read about 20:28 UTC on 23 Nov, carry no article on a night sitting, on opposition tactics for the budget's second reading or on Wednesday's agenda. The ODS article from Monday evening (party congress) does not mention the budget debate. irozhlas.cz refused scripted reading and psp.cz was not tried. The only new item is base-rate history that fills a gap in the dossier: the Nov 2024 second reading of the 2025 budget took place and closed on the same day, Wed 20 Nov 2024 (113 amendments, about CZK 224bn of transfers, Ministry of Finance release 21:30).",
        "decisive": false,
        "sources": [
-        "https://www.ceskenoviny.cz/zpravy/poslanci-se-budou-zabyvat-rozpoctem-a-schvalovat-dan-na-rafinerie/2904989",
         "https://www.ceskenoviny.cz/",
         "https://ct24.ceskatelevize.cz/rubrika/domaci-5",
         "https://www.novinky.cz/sekce/domaci-13",
-        "https://www.seznamzpravy.cz/sekce/domaci-13"
-       ]
+        "https://www.seznamzpravy.cz/sekce/domaci-13",
+        "https://www.irozhlas.cz/zpravy-domov (HTTP 403)",
+        "https://www.novinky.cz/clanek/domaci-kupka-predsednictvo-ods-citi-podporu-aby-pokracovalo-a-chystalo-reformy-40610122",
+        "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2024/poslanecka-snemovna-projednala-statni-rozpocet-pro-57817",
+        "https://www.e15.cz/domaci/poslanci-navrhli-presuny-penez-v-rozpoctu-za-224-miliard-korun-1420247",
+        "https://cnn.iprima.cz/mimoradna-dan-pro-rafinerie-miri-ke-schvaleni-zaplati-ji-lide-varuje-opozice-527143"
+       ],
+       "note": "Evening check, after the rerun (five finals span 20 points). Not decisive, so the forecasters were not asked again; the Nov 2024 same-day second reading it found is in the dossier for the morning. The evidence is mixed."
       },
       "disagreement": null,
       "shadow": {
@@ -947,6 +994,40 @@
          "sources": 25,
          "trace": "data/dossiers/2026-11-26/cz-budget-26.research.json"
         }
+       ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 14,
+       "facts_confirmed": 4,
+       "added": [
+        "https://advokatnidenik.cz/2026/08/28/prezident-podepsal-zmeny-snemovnich-pravidel-k-omezeni-moznych-obstrukci/",
+        "https://www.idnes.cz/zpravy/domaci/rozpocet-vybor-poslanecka-snemovna-schillerova-pikora-dluh-schodek.A261110_210656_domaci_ikro",
+        "https://ekonomickydenik.cz/par-uprav-snemovna-schvalila-rozpocet-2026/",
+        "https://www.ceske-volby.cz/2026/11/22/statni-rozpocet/"
+       ],
+       "material": 1,
+       "reforecast": true,
+       "before": 0.461,
+       "after": 0.572,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 1 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.461 → 0.572. The evening desk's figures are kept in each agent's rounds."
+      },
+      "research_evening": {
+       "at": "2026-11-23T18:20:00Z",
+       "question": "Has the coalition announced a vote to sit/vote after 19:00/21:00 on Wed 25 Nov, or has the opposition announced obstruction of the budget's second reading?",
+       "finding": "No report found (ČTK, ČT24, Novinky, Seznam Zprávy front pages and one search, read 23 Nov) of either a coalition plan to extend Wednesday's sitting into the night or an opposition obstruction announcement for the second reading. The only fresh preview (ČTK 22 Nov, from Speaker Okamura) says only that the budget is on Wednesday and that MPs can propose transfers; it notes the opposition's ~30 amendments to the refinery-tax bill (a different item), not to the budget. Question stays open.",
+       "decisive": false,
+       "sources": [
+        "https://www.ceskenoviny.cz/zpravy/poslanci-se-budou-zabyvat-rozpoctem-a-schvalovat-dan-na-rafinerie/2904989",
+        "https://www.ceskenoviny.cz/",
+        "https://ct24.ceskatelevize.cz/rubrika/domaci-5",
+        "https://www.novinky.cz/sekce/domaci-13",
+        "https://www.seznamzpravy.cz/sekce/domaci-13"
        ]
       }
      }
@@ -1467,7 +1548,7 @@
    ],
    "event_key": "ep-budget-2027-joint-text-2026-11-25",
    "case_key": "eu-budget-2027",
-   "notes_for_editor": "Threshold 420 sits just above both 10th-term joint-text tallies (418, 419); the 2027 reading drew 400 (vs 384 for the 2026 reading, which then rose to 419 on the joint text). Passage itself is near-certain. Council approval of the joint text not yet confirmed on a page. Links to the MFF running story (special EUCO 26-27 Nov). | ep-swiss: Consent itself is near-certain (committee 53-3), so the claim asks the tally. 550 = about the median of comparable votes (Swiss PNR 549, Andorra/San Marino interim 552, Swiss Galileo 627). The absolute-majority (361) requirement is the EP's own statement; legal basis not checked on a treaty page. If the package is split into several consent votes, all must reach 550.",
+   "notes_for_editor": "Threshold 420 sits just above both 10th-term joint-text tallies (418, 419); the 2027 reading drew 400 (vs 384 for the 2026 reading, which then rose to 419 on the joint text). Passage itself is near-certain. Council approval of the joint text not yet confirmed on a page. Links to the MFF running story (special EUCO 26-27 Nov). | ep-swiss: Consent itself is near-certain (committee 53-3), so the claim asks the tally. 550 = about the median of comparable votes (Swiss PNR 549, Andorra/San Marino interim 552, Swiss Galileo 627). The absolute-majority (361) requirement is the EP's own statement; legal basis not checked on a treaty page. If the package is split into several consent votes, all must reach 550. EVENING CHECK 23 Nov: the AFET vote was 53-3-9 (the dossier had no abstentions), and the 549 on Swiss PNR came from Greens and Left voting against, not from the right (per-group record in the dossier). Five forecasters reran twice: see forecast.external_check and forecast.research. Evidence mixed. EVENING CHECK 23 Nov: the Council formally approved the 2027 budget on 23 Nov (dossier corrected); not material to the 420 threshold, evening figure stands.",
    "claims": [
     {
      "id": "ep-budget-26",
@@ -1674,6 +1755,24 @@
          "trace": "data/dossiers/2026-11-26/ep-budget-26.research.json"
         }
        ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 19,
+       "facts_confirmed": 2,
+       "added": [
+        "https://www.pubaffairsbruxelles.eu/eu-institution-news/eu-budget-for-2027-council-gives-final-green-light/",
+        "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2026/0196(BUD)"
+       ],
+       "material": 0,
+       "reforecast": false,
+       "before": 0.561,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 2 facts confirmed. The Council's formal approval of 23 Nov (read on a verbatim republication; consilium.europa.eu returned 403) corrects the dossier's 'not confirmed' and removes one small route to no vote on 25 Nov, a risk the forecasters had already put at about 3% (p_held 0.97). Nothing confirmed bears on the open part of the claim, whether the votes in favour reach 420, so no fact was judged material and the evening figure stands."
       }
      }
     },
@@ -1700,7 +1799,7 @@
      },
      "dossier": "data/dossiers/2026-11-26/ep-swiss-26.md",
      "signals": "data/dossiers/2026-11-26/ep-swiss-26.signals.md",
-     "probability": 0.4,
+     "probability": 0.45,
      "forecast": {
       "baseline": {
        "status_quo": "unclear",
@@ -1723,119 +1822,174 @@
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:05:00+01:00",
+        "at_blind": "2026-11-23T21:19:26+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.38,
-        "reason_blind": "Comparable consent/association votes: 549 (Swiss PNR), 552 (Andorra/San Marino), 627 (Swiss Galileo) - 2 of 3 at or above 550, median at the threshold. This package carries free movement and dynamic alignment, more salient for PfE (FPÖ's Vilimsky is shadow), ESN and some NI/ECR than PNR was, so 550 of about 660 voters (83%) looks harder than the median suggests; possible separate votes per agreement add a further NO path. Slip 0.04.",
-        "at": "2026-11-23T19:07:00+01:00",
+        "p_blind": 0.29,
+        "reason_blind": "Reference class: 10th-term plenary consent/association votes with third countries close to the EU (n=4 in dossier: Swiss Galileo 627, Iceland GOVSATCOM 631, Andorra/San Marino interim 552, Swiss PNR 549) gives 3/4 at or above 550, but the two high tallies are narrow, uncontroversial technical agreements; the substantively comparable broad-integration votes (Andorra/SM 552, Swiss PNR 549) sit right at the threshold, so the class prior is roughly 0.5 (log-odds 0). Adjustment -0.6 log-odds: the AFET split was 53-3-9 (81.5% in favour), which scaled to a typical 650-665 voters gives about 530-540, and the package contains free movement and dynamic alignment, which PfE (shadow Vilimsky, FPOe), ESN and parts of ECR/NI are likely to oppose or abstain on; with PfE+ESN+some NI near 120-140 non-yes votes, 550 needs nearly all of the centre plus most of ECR. Adjustment +0.2 log-odds: midday Wednesday attendance is high and the dossier indicates a single vote on the package as a whole, removing the multi-vote risk. Postponement risk from slip class ep-plenary-vote is 0.04 (estimate), plus ~0.01 for other non-holding, so p_held 0.95; p_if_held 0.30; p = 0.95 x 0.30 = 0.29.",
+        "at": "2026-11-23T21:31:37+01:00",
         "inputs": [
          "dossier",
          "reference-data",
-         "signals"
+         "signals",
+         "union-of-facts"
         ],
-        "p": 0.38,
-        "p_held": 0.96,
-        "p_if_held": 0.4,
-        "reason": "Signals file shows no market, bookmaker or published probability for this claim (market searches returned only unrelated questions); nothing to update, final equals blind estimate; p_held/p_if_held unchanged."
+        "p": 0.4,
+        "p_held": 0.95,
+        "p_if_held": 0.42,
+        "reason": "The per-group records weaken my earlier assumption that PfE and ESN would oppose solidly: on Swiss files PfE voted 77-0-0 (PNR) and 54-0-27 (Galileo), ESN 16-2-7 and 25-0-0, and the PNR shortfall to 549 came from Greens and Left, who should mostly back this package. Neither the ECR nor the PfE plenary note mentions the package, so neither has flagged it for a campaign. Against that, the AFET 12 non-yes votes (3 against, 9 abstentions) roughly match the PfE and ESN seats on the committee, which points to sovereigntist abstention on free movement and dynamic alignment. A Galileo-like PfE split puts the tally near 560-585, while committee-like abstention puts it near 530-540, so I raise p_if_held from 0.30 to 0.42; p_held stays 0.95 (slip 0.04), giving 0.40.",
+        "rounds": [
+         {
+          "p": 0.38,
+          "at": "2026-11-23T19:07:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         },
+         {
+          "p": 0.29,
+          "at": "2026-11-23T21:25:41+01:00",
+          "reason": "evening check, after the signals, before the disagreement research added the per-group record of earlier votes: The signals file has no matching market, bookmaker odds or published model, so nothing moves the blind estimate. The comparable broad-integration consent votes sit at the 550 threshold (Andorra/San Marino 552, Swiss PNR 549), and the AFET split of 53-3-9 (81.5% in favour) scales to about 530-540 in plenary, with PfE/ESN/NI opposition to free movement likely. A single vote on the whole package and high midday attendance offset this a little; slip-class postponement risk is 0.04."
+         }
+        ]
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:06:00+01:00",
+        "at_blind": "2026-11-23T21:20:03+01:00",
         "inputs_blind": [
          "own-research"
         ],
-        "p_blind": 0.3,
-        "reason_blind": "Vote confirmed for Wednesday. 550 needs ~84% of a typical 650-voter turnout; the Swiss PNR consent in Sept got 549, and ESN plus parts of PfE (FPÖ-type opposition to free movement) are likely against or abstaining; separate votes per agreement would each need 550.",
-        "at": "2026-11-23T19:17:42+01:00",
+        "p_blind": 0.6,
+        "reason_blind": "EP's plenary votes page lists both the EU-Switzerland package consent (A10-0236/2026) and the interim-report resolution under Wednesday 25 Nov 2026, and OEIL shows 'Awaiting Parliament's vote', so postponement risk is small (about 5%). AFET backed the package 53-3 (about 95% yes; SRF 11 Sep 2026), and SRF expects no major resistance in plenary. The 550 threshold is demanding: with a typical 640-665 MEPs voting, it allows only about 90-110 against plus abstentions. The closest precedent, the EU-Swiss Galileo consent (Sep 2025), passed 627-4-33 with PfE splitting 54 for and 27 abstaining. The broad package (free movement, institutional rules, a shadow rapporteur from FPÖ/PfE) could draw more PfE/ESN/non-attached abstentions or no votes than Galileo did. That puts the likely yes count around 560-610: probably above 550, but not safely, and lower turnout or splitting consent into several votes would make it harder.",
+        "at": "2026-11-23T21:32:00+01:00",
         "inputs": [
          "own-research",
          "dossier",
-         "signals"
+         "signals",
+         "union-of-facts"
         ],
-        "p": 0.42,
-        "reason": "Dossier raises it: AFET backed it 53–3, Swiss Galileo agreement got 627 and the Andorra/San Marino interim report 552; the PNR 549 included Left/Greens privacy opposition that should not apply here. Still near the line, with possible multiple votes. Signals: no market, bookmaker or published probability matches this claim (signals file), so the figure stays at the post-dossier estimate.",
+        "p": 0.5,
+        "reason": "The group-by-group record weakens the Swiss PNR vote (549) as a comparison. Its shortfall came from Greens and Left voting against on privacy grounds, and both groups backed the Galileo consent almost unanimously (Greens 48-0-0, Left 33-1-3), so the pro-integration groups (EPP, S&D, ECR, Renew, Greens, Left) should give about 515-525 votes. The result therefore depends on the right flank (PfE, ESN, non-attached; about 140 MEPs voting). If it splits as PfE did on Galileo (two thirds for), the total is about 570-600. If it mostly abstains, as the 3 against and 9 abstentions in AFET (about 18% not voting yes) may suggest, the total is about 530-545. Neither the ECR nor the PfE plenary notes mention the package, which suggests no whipped campaign against it but does not show how they will vote. That leaves the outcome close to a coin flip, up from 0.38; postponement risk is about 4%.",
         "rounds": [
          {
           "p": 0.42,
-          "at": "2026-11-23T19:12:00+01:00",
-          "reason": "after the dossier, before the signals: Dossier raises it: AFET backed it 53–3, Swiss Galileo agreement got 627 and the Andorra/San Marino interim report 552; the PNR 549 included Left/Greens privacy opposition that should not apply here. Still near the line, with possible multiple votes."
+          "at": "2026-11-23T19:17:42+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.42)"
+         },
+         {
+          "p": 0.38,
+          "at": "2026-11-23T21:25:57+01:00",
+          "reason": "evening check, after the signals, before the disagreement research added the per-group record of earlier votes: The vote is confirmed for Wednesday 25 Nov and Parliament will vote on the package as a whole, so postponement and the risk of several separate votes are both small (slip about 4%). Two facts in the dossier pull my estimate down from 0.60. First, the AFET result was 53-3 with 9 abstentions, about 81.5% of those voting, not the 95% I had assumed; scaled to the usual 650-665 MEPs voting, that gives about 530-540 in favour. Second, the most similar plenary vote, the EU-Swiss PNR consent, got 549. Technical agreements such as Galileo (627) and the Iceland agreement (631) clear 550 easily, but this package includes free movement and electricity, and PfE/ESN/non-attached opposition looks likely. I therefore put the expected tally around 540-560, so 550 is slightly less likely than not to be reached; no market or published model is available."
          }
         ]
        },
        {
         "role": "adversarial",
         "model": "claude-fable-5-2",
-        "at_blind": "2026-11-23T19:02:47+01:00",
+        "at_blind": "2026-11-23T21:19:38+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.42,
-        "reason_blind": "550 needs about 84% of those voting; the closest comparable (Swiss PNR, Sep 2026) got 549 and the Andorra/San Marino interim report 552, while only the technical Galileo deal ran far above. This package includes free movement and dynamic alignment, which PfE (FPO shadow) and ESN, about 112 seats, have reasons to oppose or abstain on, the Left may abstain over wage protection, and if consent is split into several votes each must reach 550. For YES: AFET backed it 53-3 and attendance should be high because an absolute majority is needed; I still put it somewhat below even.",
-        "at": "2026-11-23T19:10:48+01:00",
+        "p_blind": 0.32,
+        "reason_blind": "The likelier outcome is NO: the corrected AFET tally (53 for, 3 against, 9 abstentions = 81.5% of those voting) scaled to the 651-665 MEPs who voted in comparable 2025-26 consent votes gives roughly 531-542 in favour, below 550, and the two closest comparables (Swiss PNR 549, Andorra/San Marino 552) sit on the threshold rather than above it. The strongest case for YES: the 9 committee abstentions probably come from one bloc (PfE-sized) that is not homogeneous in plenary (parts of it may vote for a neighbour-country package, as nearly everyone did on Swiss Galileo, 627, and Iceland GOVSATCOM, 631), a flagship midday vote with a booked press conference can draw 670+ voters, the package is reported as one vote on the whole so the 'every separate vote' risk is small, and EPP, S&D, Renew, Greens and most of ECR alone come to about 530 seats. Against that, free movement and dynamic alignment are exactly what PfE/ESN and part of the Left object to, so a bloc abstention of ~75 plus ~35 against leaves about 540 even with good attendance, and stray defections in the centre push lower. Postponement risk is the slip-class 0.04 with no sign of a delay (agenda, newsletter and Le Temps all confirm Wednesday); refusal of consent is negligible. Honest estimate: 0.96 held x 0.33 reaching 550 = 0.32.",
+        "at": "2026-11-23T21:32:23+01:00",
         "inputs": [
          "dossier",
          "reference-data",
-         "signals"
+         "signals",
+         "union-of-facts"
         ],
-        "p": 0.42,
+        "p": 0.35,
         "p_held": 0.96,
-        "p_if_held": 0.44,
-        "reason": "Signals file read: the market searches found nothing matching the claim, and there are no bookmaker odds or published probabilities. Nothing new to weigh, so the blind estimate and the p_held / p_if_held split stand unchanged."
+        "p_if_held": 0.36,
+        "reason": "Small move up from 0.32. The per-group records show the 549 on Swiss PNR came from Greens and Left voting against on data privacy (PfE 77-0-0, ECR 76-0-0), a pattern that should not repeat on the package, and that PfE is not a bloc on Swiss files (Galileo: 54 for, 27 abstentions), which weakens my assumption of a full PfE abstention. But the only tally on this file itself, the AFET vote (53 or 51 for, 3 against, 9 abstentions, about 81%), still scales to roughly 530-545 of 651-665 voters, free movement and dynamic alignment are harder for PfE, ESN and part of the Left than Galileo was, and the groups' silence in their plenary notes says nothing either way. Postponement risk stays at the slip-class 0.04.",
+        "rounds": [
+         {
+          "p": 0.42,
+          "at": "2026-11-23T19:10:48+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         },
+         {
+          "p": 0.32,
+          "at": "2026-11-23T21:26:11+01:00",
+          "reason": "evening check, after the signals, before the disagreement research added the per-group record of earlier votes: Unchanged from the blind estimate: the signals file holds no market, bookmaker or published model matching the claim, so nothing moves the number. The corrected committee tally (53-3-9, 81.5% of those voting) scaled to the usual 651-665 plenary voters gives about 531-542 in favour, and the closest comparables (Swiss PNR 549, Andorra/San Marino 552) sit on the 550 line; the case for YES rests on a split in the abstaining bloc or attendance above 670. Postponement risk is the slip-class 0.04 with the vote confirmed on Wednesday's agenda."
+         }
+        ]
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "at": "2026-11-23T19:02:00+01:00",
+        "at": "2026-11-23T21:32:45+01:00",
         "inputs": [
          "signals",
          "reference-data",
-         "dossier"
+         "dossier",
+         "union-of-facts"
         ],
-        "p": 0.5,
-        "reason": "No market (signals). Normal model on votes in favour: comparable Swiss/association votes 549 (Swiss PNR), 552 (Andorra/San Marino), 627 (Swiss Galileo, uncontroversial); the broad package includes free movement and dynamic alignment, likely to draw PfE/ESN opposition or abstention, so mean ~555, sd 30 -> P(>=550) 0.57 (leadabove 555 30 549.5). Times 0.96 held and a haircut for the possibility of several separate consent votes that must each clear 550 -> 0.50."
+        "p": 0.41,
+        "reason": "I rebuilt the normal model group by group, using turnout from the PNR roll call (654 voting): EPP, S&D, Renew and Greens about 400 for; ECR about 60 of 76; Left about 32 of 40; PfE about 35 of 80 (abstaining in part, as on Galileo, with FPÖ and others close to the SVP); ESN about 5 of 25; NI about 14 of 26. That gives a mean of about 545 (83% of voters, consistent with the committee's 81.5%), with an sd of about 30, and `models.mjs leadabove 545 30 549.5` = 0.44. The new facts raise my median from 538: on PNR the opposition came from the left, not the right; the left groups backed Galileo; and neither the ECR nor the PfE notes for this week flag the package. They do not settle the question, because PNR (a privacy file) and Galileo (a technical file) differ from a package on free movement and dynamic alignment, and PfE/ESN abstentions alone can keep the total under 550. Multiplied by about 0.96 for slip risk, with a small deduction in case there are several votes: 0.41.",
+        "rounds": [
+         {
+          "p": 0.5,
+          "at": "2026-11-23T19:02:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         },
+         {
+          "p": 0.32,
+          "at": "2026-11-23T21:19:26+01:00",
+          "reason": "evening check, before the disagreement research added the per-group record of earlier votes: Signals file has no market, bookmaker or published model, so the anchor is a normal model of votes in favour: `models.mjs leadabove 538 28 549.5` = 0.34 (two-piece check `derive 500 538 575 > 549.5` = 0.35). The median of 538 comes from the corrected committee split (53-3-9, 81.5% yes of those voting) scaled to about 655 plenary voters (about 534), nudged up slightly because plenary groups such as EPP, S&D, Renew and Greens vote cohesively. Comparators bracket it: Swiss PNR 549 and Andorra/San Marino interim 552 sit just below or at the line, and technical Galileo/Iceland consents reached 627-631. The sd of 28 reflects attendance (640-670) and whether PfE, ESN and part of ECR vote against or abstain on free movement and dynamic alignment. Multiplied by about 0.96 for the ep-plenary-vote slip risk (0.04), with a small extra deduction in case there are several consent votes, although the evidence points to a single vote on the package as a whole: 0.32."
+         }
+        ]
        },
        {
         "role": "outsider",
         "model": "claude-sonnet-5-5",
-        "at_blind": "2026-11-23T19:19:48+01:00",
+        "at_blind": "2026-11-23T21:21:21+01:00",
         "inputs_blind": [
          "own-research",
          "reference-data"
         ],
-        "p_blind": 0.3,
-        "reason_blind": "Committee backed the package; Renew and others strongly in favour, but 550 of roughly 650 voting needs EPP, S&D, Renew, Greens and most ECR and PfE. Several separate votes must all clear 550; vote date not confirmed.",
-        "at": "2026-11-23T19:19:48+01:00",
+        "p_blind": 0.5,
+        "reason_blind": "The EP plenary votes page for 23-26 Nov lists the EU-Switzerland package (interim report and presumably consent), AFET approved it on 10 Sep, so the slip class (ep-plenary-vote, 4%) is low but I could not confirm the consent vote falls on Wednesday or whether it is split into several votes (all must reach 550). Support comes from EPP, S&D, Renew, Greens and most ECR, while PfE, ESN and part of the Left may oppose or abstain; with about 650-680 MEPs voting, 550 is a high bar that is met only if PfE largely backs it. I found no committee tally or group positions to settle this, so I put it near a coin flip with a slight discount for the 'every vote' clause and date risk.",
+        "at": "2026-11-23T21:33:02+01:00",
         "inputs": [
          "own-research",
          "reference-data",
-         "signals"
+         "union-of-facts"
         ],
-        "p": 0.3,
-        "p_held": 0.88,
-        "p_if_held": 0.35,
-        "reason": "Signals file found no matching market, bookmaker or model; no change from the blind estimate."
+        "p": 0.58,
+        "reason": "The PNR vote shows the right (PfE 77/77, ECR 76/76) backing Swiss files and opposition coming from Greens and Left, but the package is a pro-EU integration file, so Greens (about 45-50) should mostly vote for it, unlike on PNR. Summing EPP 175, S&D about 120, Renew 70, Greens about 45, ECR about 70 gives roughly 480, so 550 needs about 70 more from PfE, ESN, NI and Left, i.e. PfE mostly in favour rather than abstaining as in Galileo 2025 (54 for, 27 abst); PNR at 549 with 63 absent shows how close the line is. Date is confirmed (Wed 25 Nov, single vote); AFET 53-3-9 is encouraging; slip risk is small. I move up slightly from 0.50.",
+        "rounds": [
+         {
+          "p": 0.3,
+          "at": "2026-11-23T19:19:48+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         },
+         {
+          "p": 0.5,
+          "at": "2026-11-23T21:21:21+01:00",
+          "reason": "evening check round one, own research only, before the union of facts"
+         }
+        ]
        }
       ],
       "missing": [
        {
-        "step": "research",
-        "why": "spread 0.20 above 0.15; the single research agent (8 searches, search budget) went to the five claims whose reasons disputed a checkable fact (cz-budget-26, shenzhou-26, iowa-26, deere-26, cz-ccyb-26). Here the forecasters had the same facts and differ on a threshold set at the median of comparable outcomes; the morning should treat the evidence as mixed."
+        "step": "outsider-signals",
+        "why": "Evening check rerun: the outsider's read of the signals file was refused by the run's permission system (the file sits in the dossier folder, which the outsider's brief closes), and the run did not route around the refusal. Its figure rests on its own research and the reference data and the union of facts; the signals file holds no matching market for this claim."
        }
       ],
-      "combined": 0.402,
+      "combined": 0.447,
       "combination": {
        "method": "geo-odds"
       },
       "calibrated": null,
-      "spread": 0.2,
+      "spread": 0.23,
       "decomposition": {
-       "p_held": 0.96,
-       "p_if_held": 0.419,
+       "p_held": 0.955,
+       "p_if_held": 0.471,
        "p_if_not_held": 0
       },
       "disagreement": null,
@@ -1882,6 +2036,47 @@
          "trace": "data/dossiers/2026-11-26/ep-swiss-26.research.json"
         }
        ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 18,
+       "facts_confirmed": 3,
+       "added": [
+        "https://www.letemps.ch/en/world/europe/christophe-grudler-after-a-european-parliament-vote-switzerland-and-the-eu-need-each-other",
+        "https://www.letemps.ch/en/switzerland/eu-trade-commissioner-maros-sefcovic-champions-the-bilaterals-iii-it-took-four-reconciliation-fondues-before-we-got-to-the-friendship-fondue",
+        "https://howtheyvote.eu/votes/195856"
+       ],
+       "material": 2,
+       "reforecast": true,
+       "before": 0.402,
+       "after": 0.447,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 2 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.402 → 0.447. The evening desk's figures are kept in each agent's rounds."
+      },
+      "research": {
+       "at": "2026-11-23T20:31:00Z",
+       "question": "On Wednesday 25 November 2026 the European Parliament gives its consent to the EU–Switzerland package of agreements (2025/0162(NLE), A10-0236/2026, rapporteur Grudler) with at least 550 votes in favour. Sub-questions: (1) PfE/ECR/ESN/Left group positions; (2) which groups cast the 3 against / 9 abstentions in AFET on 10 Sep 2026; (3) per-group breakdown of the closest earlier plenary votes.",
+       "finding": "On (3): HowTheyVote's per-group breakdown of the 16 Sep 2026 EU–Switzerland PNR consent (549-75-30) shows that the opposition came from the left, not the right. EPP 174-0-0, ECR 76-0-0, PfE 77-0-0, Renew 72-1-0, S&D 107-0-6, Greens/EFA 3-38-9, The Left 11-27-2, NI 13-7-6, ESN 16-2-7. PNR is a data-privacy file, so this pattern may not carry over to the package. On the 10 Sep 2025 Switzerland Galileo consent (627-4-33), PfE abstained in part (54 for, 27 abstentions), while ECR, ESN, Greens and Renew all voted for and the Left voted 33-1-3. On (1), no group statement on the package vote was found: the ECR Week Ahead for 23–26 Nov and the PfE November plenary booklet (19 pages, created 23 Nov) do not mention Switzerland, and searches found no PfE, ESN or Left position. On (2), no source names the groups behind the AFET 3 against and 9 abstentions. RSI reports the vote as 51-3-9, which conflicts with the 53-3-9 given by other outlets.",
+       "decisive": true,
+       "sources": [
+        "https://howtheyvote.eu/votes/195855",
+        "https://howtheyvote.eu/votes/178386",
+        "https://ecrgroup.eu/week-ahead-23-26-november/",
+        "https://www.patriotsforeurope.eu/",
+        "https://drive.google.com/file/d/1nCdSfa4Ba5LMGQEVIQraruJTpX7_b4X2/view?usp=sharing",
+        "https://www.rsi.ch/info/svizzera/Bilaterali-III-s%C3%AC-dalla-Commissione-esteri-del-Parlamento-europeo--4073578.html",
+        "https://www.suedostschweiz.ch/schweiz-und-welt/eu-parlamentsausschuss-stimmt-fuer-das-vertragspaket-schweiz-eu-2-2155451",
+        "https://www.srf.ch/news/international/bilaterale-iii-ausschuss-des-eu-parlaments-sagt-ja-warnungen-an-die-schweiz",
+        "https://www.letemps.ch/en/world/europe/christophe-grudler-after-a-european-parliament-vote-switzerland-and-the-eu-need-each-other",
+        "https://www.swissinfo.ch/eng/swiss-politics/enthusiasm-for-swiss-eu-agreements-is-greater-in-strasbourg-than-in-bern/90824972",
+        "https://www.laregione.ch/svizzera/svizzera/1907128/accordi-pacchetto-parlamento-commissione-grudler-svizzera-bruxelles-ratifica-percorso",
+        "https://allnews.ch/node/150420"
+       ],
+       "note": "Evening check: after the rerun on the corrected committee tally the five spanned 21 points (0.29–0.50). The research found the per-group record of the Swiss PNR and Galileo consents; all five were asked once more with it (earlier figures in rounds). They still span 23 points (0.35–0.58): same facts, different judgement on how PfE, ESN and the non-attached vote on free movement; the basis line should say the evidence is mixed."
       }
      },
      "not_derived": true
@@ -3101,7 +3296,7 @@
    ],
    "event_key": "deere-q4-fy2026-2026-11-25",
    "case_key": "deere-earnings",
-   "notes_for_editor": "Chose the FY2027 outlook over the Q4 EPS beat: Deere beat EPS consensus in each sourced recent quarter (Q4 FY25 +$0.12, Q2 FY26 +$0.74–0.85, Q3 FY26 +$0.31–0.41), so 'beats $4.07' would sit near 90%. No consensus for FY2027 net income found, so the comparison is with FY2026 reported net income (same release; consensus implies ~$4.9bn). Last year's first outlook (FY26 $4.0–4.75bn) was below FY25 actual $5.027bn. Q1 FY26 consensus not found.",
+   "notes_for_editor": "Chose the FY2027 outlook over the Q4 EPS beat: Deere beat EPS consensus in each sourced recent quarter (Q4 FY25 +$0.12, Q2 FY26 +$0.74–0.85, Q3 FY26 +$0.31–0.41), so 'beats $4.07' would sit near 90%. No consensus for FY2027 net income found, so the comparison is with FY2026 reported net income (same release; consensus implies ~$4.9bn). Last year's first outlook (FY26 $4.0–4.75bn) was below FY25 actual $5.027bn. Q1 FY26 consensus not found. EVENING CHECK 23 Nov: Deere's own first-outlook record for 2020–2025 (SEC filings) was added to the dossier: 3 above the year just reported, 3 below, above in each recovery year. Five forecasters reran: see forecast.external_check.",
    "claims": [
     {
      "id": "deere-26",
@@ -3126,7 +3321,7 @@
      },
      "dossier": "data/dossiers/2026-11-26/deere-26.md",
      "signals": "data/dossiers/2026-11-26/deere-26.signals.md",
-     "probability": 0.7,
+     "probability": 0.74,
      "forecast": {
       "baseline": {
        "status_quo": "unclear",
@@ -3151,152 +3346,144 @@
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:03:00+01:00",
+        "at_blind": "2026-11-23T21:19:25+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.4,
-        "reason_blind": "Reference class: Deere's first next-year net income outlook vs the year just reported. In the sourced case (Nov 2025) and in my recollection of FY2014-FY2026 it was above only about 5 of 13 times, mostly in clear upturn years (FY2018, FY2021-23); own class company-raises-guidance-midpoint 4/2 is too loosely related. Trough talk and mid-single-digit early orders lift the odds from about 0.35, while the habitually conservative first guide, the end of ~$0.4bn tariff refunds and tariff costs rising to ~$1bn pull them down; company-event slip 0.005.",
-        "at": "2026-11-23T19:17:27+01:00",
+        "p_blind": 0.64,
+        "reason_blind": "Reference class: Deere's first next-year net-income outlook vs the year just reported, Q4 releases 2020-2025 (SEC-sourced in dossier), n=6: 3 above (FY21, FY22, FY23 guides, all in recovery/upswing years) and 3 below (FY24, FY25, FY26, all in the downswing), so a 0.50 prior (log-odds 0). Adjustments: +0.75 log-odds because the cycle state matches the 'above' cases (management twice calls 2026 the bottom, early orders for large ag up mid-single digits, C&F backlog strong, consensus FY27 EPS $22.90 vs FY26 $18.11, +26%, low estimate $20.2 still above); -0.15 for Deere's habitual conservative first guide (FY26 first midpoint $4.375bn vs final ~$4.9bn) plus a heavier bar from ~$382m+ one-off tariff recoveries in FY26 and tariff costs rising ~$250m in FY27; -0.05 for format risk (no dollar net-income range). Net ~+0.55 gives p_if_held ~0.64; company-event slip rate 0.005 and the 25 Nov date is confirmed, so p_held 0.995.",
+        "at": "2026-11-23T21:26:35+01:00",
         "inputs": [
          "dossier",
          "reference-data",
-         "signals",
-         "union-of-facts"
+         "signals"
         ],
-        "p": 0.55,
+        "p": 0.64,
         "p_held": 0.995,
-        "p_if_held": 0.55,
-        "reason": "Union of facts: consensus FY2027 EPS is $22.90 (22 analysts, low $20.20) vs $18.11 for FY2026, +26%, and revenue +9%. That is a sizeable expected recovery, which lifts the reference-class rate (first guide above prior year about 5/13, mostly in upturn years). But Deere's first guide habitually sits about 15-25% below the street (Nov 2025: midpoint $4.375bn vs FY2025 $5.03bn). A 20% haircut on $22.90 lands near $18.3, roughly level with FY2026 ($4.9-5.0bn net income once a beat is included), and net income lacks the share-count tailwind that EPS gets. I put it slightly above even.",
+        "p_if_held": 0.64,
+        "reason": "Unchanged from blind: the signals file has no market or published model on the FY2027 net-income outlook (only word-mention markets and a Q4 EPS whisper of $4.30 vs $4.07, which raises the FY2026 bar by only ~$60m, too small to move the number). Estimate still rests on Deere's 2020-2025 first-outlook record (3 above / 3 below, above in every recovery year), shifted up for bottom-of-cycle signals and consensus FY27 EPS +26%, and down for conservative first guides, one-off FY26 tariff recoveries, rising tariff costs and format risk. Slip risk 0.005.",
         "rounds": [
          {
-          "p": 0.4,
-          "at": "2026-11-23T19:08:00+01:00",
-          "reason": "round one, before disagreement research"
+          "p": 0.55,
+          "at": "2026-11-23T19:17:27+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.4)"
          }
         ]
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:05:00+01:00",
+        "at_blind": "2026-11-23T21:19:46+01:00",
         "inputs_blind": [
          "own-research"
         ],
-        "p_blind": 0.45,
-        "reason_blind": "FY26 net income will land near $4.9-5.0bn (guidance $4.75-5.00bn, consensus EPS $18.21), helped by ~$382m of one-off tariff refunds; Deere flagged net tariff costs rising to ~$1bn in FY27 from ~$750m, and its first outlooks are conservative (FY24, FY25, FY26 first midpoints all below the prior year's actual; in the 2020 trough the first outlook was well above). Early 2027 orders up mid-single digits, strong C&F/small ag and an Earnings Whispers whisper above consensus argue for growth, so this is close to a coin toss leaning slightly to a flat-or-lower midpoint (finviz/Earnings Whispers 2026-11; Hudson Labs preview 2026-10-26).",
-        "at": "2026-11-23T19:18:05+01:00",
+        "p_blind": 0.72,
+        "reason_blind": "In August 2026 Deere narrowed its FY2026 net income outlook to $4.75-5.0B (raising the low end), called 2026 the bottom of the ag cycle, and cited MY2027 early orders for large equipment up mid-single digits plus construction backlogs running into FY2027 (TT News, Earnings Whispers preview). Zacks consensus as of August had FY2027 EPS up about 22%, so a guide midpoint above FY2026 actual (~$4.9-5.0B) is the natural expectation. Against that: Deere flagged net tariff costs rising to about $1B in 2027 from about $750M, South America and Europe are still weakening, Deere guides conservatively, and in each of the last three Novembers (2023-2025) it guided below the year just reported, though that was in a downturn. Q4 beats would raise the FY2026 base, and a wide range could put the midpoint near flat. Postponement or a missing dollar net-income range is a small residual risk.",
+        "at": "2026-11-23T21:26:52+01:00",
         "inputs": [
          "own-research",
          "dossier",
-         "signals",
-         "union-of-facts"
+         "signals"
         ],
-        "p": 0.62,
-        "reason": "New fact (disagreement research): analyst consensus FY2027 EPS is $22.90 vs FY2026 $18.11 (+26%, 22 analysts; even the lowest estimate, $20.20, is +11%), with revenue $44.7bn vs $41.1bn. A guidance midpoint about 20% below consensus (roughly Deere's haircut last year) would still land near the ~$4.9-5.0bn FY2026 figure, so the outcome turns on how conservative Deere is; the tariff headwind (~$1bn) and the lost one-off refunds are partly in analysts' numbers already. Raised from 0.43 to 0.62: more likely than not, but Deere's habit of cautious first outlooks keeps it well short of certain.",
+        "p": 0.72,
+        "reason": "The dossier confirms that Deere's first outlook tracks the cycle: it guided above the year just reported in Nov 2020, 2021 and 2022 (cycle rising) and below it in 2023, 2024 and 2025 (cycle falling). Management calls 2026 the trough, MY2027 early orders are up mid-single digits, and consensus FY2027 EPS of $22.90 vs $18.11 for FY2026 leaves a lot of room for a conservative guide to still beat a FY2026 base of about $4.9-5.0bn. Against that: FY2026 includes about $382m of tariff refunds that will not repeat, net tariff costs rise about $250m, combines and South America are still weak, Deere guides cautiously, and a wide range could put the midpoint near flat. No market prices this, the schedule is confirmed and the slip risk is about 0.5%, so I keep my blind 0.72.",
         "rounds": [
          {
-          "p": 0.43,
-          "at": "2026-11-23T19:12:00+01:00",
-          "reason": "after the dossier, before the signals: Dossier confirms my facts (FY26 guidance $4.75-5.00bn, consensus implies ~$4.9bn, $382m one-off tariff recoveries, tariffs ~$1bn in FY27, last first outlook well below prior year) and adds a strong beat record (Q2/Q3 beats of $0.4-0.8), which raises the FY26 bar the 2027 midpoint must clear; nudged down 2 points."
-         },
-         {
-          "p": 0.43,
+          "p": 0.62,
           "at": "2026-11-23T19:18:05+01:00",
-          "reason": "round one, before disagreement research"
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.43, 0.43)"
          }
         ]
        },
        {
         "role": "adversarial",
         "model": "claude-fable-5-2",
-        "at_blind": "2026-11-23T19:02:30+01:00",
+        "at_blind": "2026-11-23T21:19:25+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.45,
-        "reason_blind": "Case for NO: Deere's first outlook is habitually cautious (last year's midpoint was 13% below the year just reported; FY26 was later raised twice), the FY26 base (~$4.9-5.0bn at consensus, higher on another beat) contains $382m+ of one-off tariff refunds, and tariff costs rise ~$250m in 2027 with South America and Europe weak. Case for YES: management calls 2026 the cycle bottom, large-ag early orders are up mid-single digits and construction backlog is solid, so underlying profit should grow. With the base raised by a likely Q4 beat and the refund one-off, a range like $4.5-5.5bn lands almost on the bar; I put it slightly below even. Slip 0.005 plus a small no-dollar-range format risk.",
-        "at": "2026-11-23T19:18:45+01:00",
+        "p_blind": 0.76,
+        "reason_blind": "Case for NO: Deere's first outlook is habitually cautious (FY2026 opened at $4.0-4.75bn and ended at $4.75-5.0bn), the FY2026 base of about $4.9-5.0bn contains at least $382m of non-repeating tariff recoveries and a Q4 beat raises it further, net tariff costs rise to about $1bn, South America is weak and combine sales are still down 9%; in 2023-2025 the first outlook was below the year just reported three times running, and a range such as $4.5-5.25bn would resolve NO. Against that, those three were down-cycle years and in the three up-cycle years 2020-2022 the first midpoint was above the reported year; management has twice called 2026 the bottom of the ag cycle, model-year 2027 early orders are up mid-single digits and Construction & Forestry profit nearly doubled. Consensus FY2027 EPS is $22.90 against $18.11 for FY2026 (lowest estimate $20.2), so even a first guide 15% below consensus, about $19.5 a share or roughly $5.2bn on about 270m shares (own arithmetic), clears the base; only a haircut above about 20% fails. Postponement risk is negligible (company-event slip rate 0.005, date confirmed by Deere on 11 Nov) and a dollar net-income range has appeared in every Q4 release from 2020 to 2025.",
+        "at": "2026-11-23T21:27:08+01:00",
         "inputs": [
          "dossier",
          "reference-data",
-         "signals",
-         "union-of-facts"
+         "signals"
         ],
-        "p": 0.63,
+        "p": 0.76,
         "p_held": 0.99,
-        "p_if_held": 0.635,
-        "reason": "Analyst consensus has FY2027 EPS at $22.90 against $18.11 for FY2026 (+26%; even the lowest of 22 estimates, $20.20, is +11%) on revenue up about 9%, so the Street expects clear growth, which my blind estimate underweighted. Case for NO stays real: Deere's first outlooks have come in well under consensus (last year's midpoint was far below the year just reported and was later raised twice), and a haircut of roughly 20% to a ~$6.1bn implied consensus lands almost exactly on the ~$4.9-5.0bn bar, which a Q4 beat raises further; tariff costs also rise. A 10-15% haircut clears it, so YES is now more likely than not but not by a wide margin.",
+        "p_if_held": 0.77,
+        "reason": "Unchanged from the blind estimate: the signals file holds no market, bookmaker or model on the FY2027 outlook, only word-mention markets and a Q4 EPS whisper of $4.30 against consensus $4.07. A Q4 at the whisper would lift the FY2026 base only to about $4.97bn (own arithmetic), still below a first guide set 15% under the $22.90 FY2027 EPS consensus (about $5.2bn). The NO case remains Deere's cautious first outlooks, non-repeating tariff recoveries of at least $382m in the base and tariff costs rising to about $1bn; postponement risk is negligible (slip rate 0.005).",
         "rounds": [
          {
-          "p": 0.45,
-          "at": "2026-11-23T19:11:14+01:00",
-          "reason": "round one, before disagreement research"
+          "p": 0.63,
+          "at": "2026-11-23T19:18:45+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.45)"
          }
         ]
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "at": "2026-11-23T19:19:00+01:00",
+        "at": "2026-11-23T21:19:33+01:00",
         "inputs": [
          "signals",
          "reference-data",
-         "dossier",
-         "union-of-facts"
+         "dossier"
         ],
-        "p": 0.75,
-        "reason": "Added research: the FY2027 consensus EPS is $22.90 vs $18.11 for FY2026 (+26%; lowest of 22 estimates $20.20, still +12%), with revenue +9%. For the guidance midpoint to land at or below FY2026 net income, Deere would have to guide about 21% below consensus, much further below than even last year's notably conservative first outlook. Tariff costs (~$1bn) and lost one-off refunds are known and presumably in the estimates. Residual risks: Deere's habit of starting low, and a release with no net-income range (it has given one every recent Q4). Raised from 0.50.",
+        "p": 0.68,
+        "reason": "No market or published probability matches the claim (signals file), so the anchor is a normal model (models.mjs release) on the ratio of the FY2027 first-guide midpoint to FY2026 actual net income: consensus FY27/FY26 EPS is 22.90/18.11 = 1.26, and with a likely Q4 beat (whisper $4.30 vs $4.07) FY2026 net income is about $5.0bn, so consensus implies about 1.20x in net income; applying Deere's habitual first-guide haircut versus consensus (about 15%, e.g. Nov 2025 guide $4.375bn vs a much higher Street view, guides later raised in 2021-2023 and 2026) gives a mean ratio of about 1.05 with sd 0.10-0.11, so P(ratio > 1) = 0.68-0.73. Adjusted down slightly for the documented 2027 headwinds (tariff costs rising about $250m, about $382m of non-repeating tariff recoveries in FY2026, weak South America and Europe) and for the about 1-2% chance of no dollar net-income range or a date slip (company-event slip rate 0.005); supported by management calling 2026 the bottom, early orders up mid-single digits, strong C&F, and the 2020-2025 record showing Deere's first guide was above the prior year in all three recovery years (FY2021-FY2023).",
         "rounds": [
          {
-          "p": 0.5,
-          "at": "2026-11-23T19:02:00+01:00",
-          "reason": "round one, before disagreement research"
+          "p": 0.75,
+          "at": "2026-11-23T19:19:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.5)"
          }
         ]
        },
        {
         "role": "outsider",
         "model": "claude-sonnet-5-5",
-        "at_blind": "2026-11-23T19:10:00+01:00",
+        "at_blind": "2026-11-23T21:21:07+01:00",
         "inputs_blind": [
          "own-research",
          "reference-data"
         ],
-        "p_blind": 0.78,
-        "reason_blind": "Release confirmed for 25 Nov (Deere press release 11 Nov; slip rate 0.005). FY26 EPS guidance 17.55-18.47 (about 4.9bn net income), raised in August; management called FY26 the trough, with MY27 large-ag early orders up mid-single digits and a construction backlog into FY27. Headwinds: tariff cost rising to about 1bn from 750m, South America down; but a midpoint above FY26 is more likely than not.",
-        "at": "2026-11-23T19:20:00+01:00",
+        "p_blind": 0.86,
+        "reason_blind": "Deere's FY2026 net income guidance is $4.75-5.0B (raised in August; consensus EPS $18.21, about $4.9B). Management repeatedly says 2026 is the bottom of the ag cycle, with MY27 large-ag early orders up mid-single digits, construction backlogs into FY27 and small ag strong, so a FY27 midpoint above about $4.9B is the natural base case. Headwinds are tariffs (about $1B in FY27 vs $750M) and weak South America and Europe, and Deere's November outlooks are often cautious (FY25 midpoint $5.0B was just under FY24's $5.03B). The release date is firmly set for 25 Nov before the open, and the company-event slip rate is about 0.5%. I put roughly 12% on a flat or lower midpoint or a vague outlook.",
+        "at": "2026-11-23T21:21:07+01:00",
         "inputs": [
          "own-research",
-         "reference-data",
-         "signals",
-         "union-of-facts"
+         "reference-data"
         ],
-        "p": 0.87,
-        "p_held": 0.995,
-        "p_if_held": 0.874,
-        "reason": "Union of facts: consensus FY27 EPS 22.90 vs FY26 18.11 (+26%, 22 analysts, low 20.2 above FY26), FY27 revenue 44.7bn vs 41.1bn. Even a conservative first outlook should have a midpoint above FY26 net income of about 4.9bn despite the non-repeating 382m tariff recovery and the higher tariff bill. Residual risk is a conservative or non-dollar format, as last year's first guide came in below the prior year.",
+        "p": 0.86,
+        "reason": "Final equals the blind estimate: the signals step was not done (see forecast.missing). Deere's FY2026 net income guidance is $4.75-5.0B (raised in August; consensus EPS $18.21, about $4.9B). Management repeatedly says 2026 is the bottom of the ag cycle, with MY27 large-ag early orders up mid-single digits, construction backlogs into FY27 and small ag strong, so a FY27 midpoint above about $4.9B is the natural base case. Headwinds are tariffs (about $1B in FY27 vs $750M) and weak South America and Europe, and Deere's November outlooks are often cautious (FY25 midpoint $5.0B was just under FY24's $5.03B). The release date is firmly set for 25 Nov before the open, and the company-event slip rate is about 0.5%. I put roughly 12% on a flat or lower midpoint or a vague outlook.",
         "rounds": [
          {
-          "p": 0.78,
+          "p": 0.87,
           "at": "2026-11-23T19:20:00+01:00",
-          "reason": "round one, before union of facts"
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.78)"
          }
         ]
        }
       ],
-      "missing": [],
-      "combined": 0.699,
+      "missing": [
+       {
+        "step": "outsider-signals",
+        "why": "Evening check rerun: the outsider's read of the signals file was refused by the run's permission system (the file sits in the dossier folder, which the outsider's brief closes), and the run did not route around the refusal. Its figure rests on its own research and the reference data; the signals file holds no matching market for this claim (only word-mention markets and an earnings whisper)."
+       }
+      ],
+      "combined": 0.74,
       "combination": {
        "method": "geo-odds"
       },
       "calibrated": null,
-      "spread": 0.32,
+      "spread": 0.22,
       "decomposition": {
        "p_held": 0.992,
-       "p_if_held": 0.705,
+       "p_if_held": 0.746,
        "p_if_not_held": 0
       },
       "research": {
@@ -3312,7 +3499,7 @@
       },
       "disagreement": {
        "cause": "genuine",
-       "note": "Round one spread 0.38 (inputs: the outsider lacked the dossier). After the disagreement research added the analyst consensus for FY2027 (EPS $22.90 vs $18.11) and every forecaster had the union of facts, the five still span 0.55–0.87: they agree growth is expected and differ on how far below consensus Deere's habitually cautious first outlook will start. Same facts, different judgement; the basis line should say the evidence is mixed."
+       "note": "Evening check: with Deere's own first-outlook record for 2020–2025 added (3 above, 3 below, above in each recovery year) the five span 0.64–0.86. The evening desk's research on the analysts' consensus still stands; the forecasters agree growth is expected and differ on how far below consensus Deere's habitually cautious first outlook will start. Same facts, different judgement; the basis line should say the evidence is mixed."
       },
       "shadow": {
        "external": [
@@ -3357,6 +3544,32 @@
          "trace": "data/dossiers/2026-11-26/deere-26.research.json"
         }
        ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 17,
+       "facts_confirmed": 9,
+       "added": [
+        "https://www.sec.gov/Archives/edgar/data/315189/000155837020014042/de-20201125xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/315189/000155837021016306/de-20211124xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/315189/000155837022018162/de-20221123xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/315189/000155837023019292/de-20231122xex99d1.htm",
+        "https://www.sec.gov/Archives/edgar/data/315189/000155837024015876/de-20241121xex99d1.htm",
+        "https://www.rfdtv.com/four-wheel-drive-tractor-sales-rise-despite-broader-equipment-weakness",
+        "https://ag.purdue.edu/commercialag/ageconomybarometer/optimism-grows-in-october-as-current-conditions-improve/",
+        "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d2.htm",
+        "https://www.tikr.com/blog/a-2-7-billion-fund-bought-deere-last-quarter-cathie-wood-cut-her-stake-61-whos-right"
+       ],
+       "material": 5,
+       "reforecast": true,
+       "before": 0.699,
+       "after": 0.74,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 5 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.699 → 0.74. The evening desk's figures are kept in each agent's rounds."
       }
      }
     }
@@ -3623,7 +3836,7 @@
    ],
    "event_key": "us-iowa-lead-azide-detonation-2026-11-25",
    "case_key": "us-iowa-lead-azide",
-   "notes_for_editor": "Three slips in five days (20 -> 23 -> 24 -> 25 Nov). Pending: plaintiffs' 22 Nov motion in the Eighth Circuit (no ruling or hearing date found); government claims the RCRA emergency exception sits outside the court's administrative stay. Army gave no time for Wednesday; earlier plans were ~noon CT (19:00 CET). NWS forecast Wed: 41F, NE wind 5-10 mph, mostly cloudy; snow likely Wed night. Stay neutral on health effects (out of scope). The 'five tonnes' in BBC vs 9,700 lb (4.4 t) per Army/ABC.",
+   "notes_for_editor": "Three slips in five days (20 -> 23 -> 24 -> 25 Nov). Pending: plaintiffs' 22 Nov motion in the Eighth Circuit (no ruling or hearing date found); government claims the RCRA emergency exception sits outside the court's administrative stay. Army gave no time for Wednesday; earlier plans were ~noon CT (19:00 CET). NWS forecast Wed: 41F, NE wind 5-10 mph, mostly cloudy; snow likely Wed night. Stay neutral on health effects (out of scope). The 'five tonnes' in BBC vs 9,700 lb (4.4 t) per Army/ABC. EVENING CHECK 23 Nov: President Trump posted on 23 Nov that he ordered the military not to detonate until the Eighth Circuit agrees and Governor-elect Sand agrees (CNN, Iowa Public Radio); no ruling and no answer from Sand as of Monday afternoon. Five forecasters reran: see forecast.external_check. Re-check in the morning (court order, Sand's answer, any Army advisory) and consider whether the claim is still worth carrying.",
    "conditional": "Run only if the overnight check puts iowa-26 at 50% or more (e.g. an Army advisory with a time for 25 Nov, or the Eighth Circuit lifting its stay); otherwise the story goes to the diary and meta.running records it as not_covered. The awaited slot is taken by cz-chamber.",
    "claims": [
     {
@@ -3649,7 +3862,7 @@
      },
      "dossier": "data/dossiers/2026-11-26/iowa-26.md",
      "signals": "data/dossiers/2026-11-26/iowa-26.signals.md",
-     "probability": 0.49,
+     "probability": 0.09,
      "forecast": {
       "baseline": {
        "status_quo": "unclear",
@@ -3673,130 +3886,168 @@
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:03:00+01:00",
+        "at_blind": "2026-11-23T21:19:23+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.42,
-        "reason_blind": "The other-scheduled slip rate (0.094) does not fit an event that has slipped three times in five days (20->23->24->25 Nov) under a pending Eighth Circuit stay and new motion, with weather and mitigation conditions attached, no advisory or time issued and Thanksgiving next. Starting from the slip-class odds and adding roughly +2 log-odds of slip risk for repeated postponement and court exposure, offset by the Army's stated urgency (freezing temperatures, emergency exception, local mayor's support), gives p_held about 0.43.",
-        "at": "2026-11-23T19:08:00+01:00",
+        "p_blind": 0.07,
+        "reason_blind": "Reference class: other-scheduled slip class, rate 0.094 (prior 0.07, own 11/116), i.e. a starting point of about 0.90 held (log-odds +2.2); the closest refclass (scheduled-appearance-takes-place, 0.92) agrees. Adjustments: three slips in five days with a social-media-set date, no time or advisory for Wednesday, and pending Eighth Circuit litigation (about -1.5 log-odds, to roughly 0.67). The decisive new fact (CNN, Iowa Public Radio, 23 Nov) is that President Trump ordered the military not to detonate until the Eighth Circuit agrees AND Governor-elect Rob Sand agrees; as of 1 p.m. CT Monday the court had issued no ruling beyond its pause and Sand had not responded, so both conditions must be met within about 36 hours plus a fresh evacuation advisory, before Thanksgiving and with snow forecast Wednesday night (about -3.2 log-odds). Residual YES paths: a fast court order lifting the stay plus quick Sand assent, or the Army proceeding anyway under the emergency exception, each unlikely on this timeline.",
+        "at": "2026-11-23T21:22:48+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.42,
-        "p_held": 0.43,
+        "p": 0.07,
+        "p_held": 0.07,
         "p_if_held": 0.97,
-        "reason": "Signals: no market or model found. No change."
+        "reason": "The signals file has no market, bookmaker or published model for this question (searches at 17:52Z found nothing matching), so nothing moves the blind estimate. The number still rests on the other-scheduled slip base (0.094) adjusted down hard: three slips in five days, no Wednesday advisory, and above all Trump's 23 Nov order that the military not detonate until both the Eighth Circuit and Governor-elect Sand agree, neither of which had happened by Monday afternoon with about 36 hours left before the window.",
+        "rounds": [
+         {
+          "p": 0.42,
+          "at": "2026-11-23T19:08:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:05:00+01:00",
+        "at_blind": "2026-11-23T21:19:44+01:00",
         "inputs_blind": [
          "own-research"
         ],
-        "p_blind": 0.6,
-        "reason_blind": "Iowa Public Radio (22-23 Nov): the Army (on X, 23 Nov) rescheduled the blasts to Wed 25 Nov for better weather and mitigations after slipping from 20 Nov to 23 Nov and DOJ telling the 8th Circuit it would act 'by Tuesday' under an emergency exemption; the 8th Circuit has stayed the EPA permit while it weighs the environmental groups' request to block. The Army's freeze-destabilisation argument gives a strong push to act this week, but three slips, no start time, weather conditionality and a pending court ruling leave substantial risk of another day's move or an injunction.",
-        "at": "2026-11-23T19:18:05+01:00",
+        "p_blind": 0.12,
+        "reason_blind": "The Army moved the blast from 20 Nov to 23 Nov and then (Sunday evening post on X) to Wed 25 Nov, and DOJ told the Eighth Circuit it would act under the RCRA emergency exemption despite the court's stay of the EPA permit (Newsweek, Time, IPR). But on Monday 23 Nov President Trump posted on Truth Social that he has ordered the military not to proceed until the Eighth Circuit agrees AND Gov.-elect Rob Sand agrees (CBS, IPR, Washington Post, KWQC). As of Monday afternoon the Eighth Circuit had not ruled beyond its temporary pause and Sand had not responded; both conditions would have to be met within about a day and a half, and Sand, a Democrat being handed the blame, has little incentive to sign off quickly. Some residual YES chance remains because the Army, Trump and DOJ all say detonation before the cold snap is the safer course, so a fast court ruling plus Sand's assent (or a reinterpretation of the order) could still put it on 25 Nov.",
+        "at": "2026-11-23T21:23:03+01:00",
         "inputs": [
          "own-research",
          "dossier",
          "signals"
         ],
-        "p": 0.6,
-        "reason": "Signals: no market or model. Unchanged at 0.60; the Army's emergency push and Wednesday date against three slips, no start time, weather conditionality and the pending 8th Circuit motion.",
+        "p": 0.1,
+        "reason": "The dossier confirms what my own research found: on 23 Nov Trump ordered the military not to detonate until both the Eighth Circuit agrees and Gov.-elect Sand agrees, and as of 1 p.m. CT Monday the court had not ruled beyond its pause. The dossier adds that Sand was among the Iowa leaders who asked for a delay (Axios headline, 19 Nov) and on 22 Nov said 'no good options exist', which makes quick consent before Wednesday less likely. The Army's 25 Nov date (army.mil, 22 Nov), the FAA restriction through Wednesday and the cold-weather urgency keep a small chance alive, and there is no market signal, so I move down slightly from 0.12 to 0.10.",
         "rounds": [
          {
           "p": 0.6,
-          "at": "2026-11-23T19:12:00+01:00",
-          "reason": "after the dossier, before the signals: Dossier adds the BBC (23 Nov) account, plaintiffs' pending Sunday motion in the 8th Circuit, the Middletown mayor backing the blast, and an NWS forecast for Wednesday (41F, NE wind 5-10 mph, snow Wednesday night) that is workable but not obviously ideal for plume direction. The government's emergency rationale pushes hard to act before the cold; three slips and court risk balance it. Unchanged."
+          "at": "2026-11-23T19:18:05+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.6)"
          }
         ]
        },
        {
         "role": "adversarial",
         "model": "claude-fable-5-2",
-        "at_blind": "2026-11-23T19:02:30+01:00",
+        "at_blind": "2026-11-23T21:19:24+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.37,
-        "reason_blind": "Case for NO: three announced dates failed in five days (0/3), the Eighth Circuit's administrative stay stands with a new plaintiffs' motion pending, the Army has published no time or evacuation advisory for Wednesday, the day is the eve of Thanksgiving, and a congressman-meteorologist says conditions are unfavourable. Case for YES: the government insists the emergency exception lets it proceed, freezing temperatures and snow from Wednesday night make this the last good window, the mayor backs it and the Army says mitigation is being put in place. The generic 0.094 slip rate badly understates this; I think a further slip or court block is more likely than not.",
-        "at": "2026-11-23T19:11:14+01:00",
+        "p_blind": 0.05,
+        "reason_blind": "The likelier outcome is now NO: on Mon 23 Nov Trump said (CNN, Iowa Public Radio) he has ordered the military not to detonate until the Eighth Circuit agrees and Governor-elect Rob Sand consents, and as of 1 p.m. CT the court had ruled nothing beyond its temporary pause while Sand had not responded. The strongest case for YES: the Army's own army.mil page still lists Wed 25 Nov, the FAA restriction runs through Wednesday, the government argues an imminent explosion risk as temperatures fall below 30F (Wed night 28F with snow), an appellate court can rule within hours on an emergency, Sand himself said 'no good options exist' and now carries the stated blame if he refuses, and Trump can reverse a social-media order as fast as he gave it. But YES needs a chain inside about 40 hours: affirmative court clearance (about 0.2), Sand's explicit agreement in time (about 0.45 given that), and the Army then executing on Wednesday itself with evacuation notice and acceptable weather (about 0.5; NE wind is off the planned plume track and the event has already slipped three times in five days), which gives roughly 0.04-0.05, plus a small allowance for a presidential reversal. The generic other-scheduled slip rate of 0.094 (11/116) is irrelevant as a floor here because the principal has publicly suspended the event on two conditions outside the Army's control.",
+        "at": "2026-11-23T21:23:25+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.37,
-        "p_held": 0.38,
+        "p": 0.05,
+        "p_held": 0.05,
         "p_if_held": 0.97,
-        "reason": "No market or published probability; signals add nothing. Blind figure and decomposition kept."
+        "reason": "Unchanged from the blind estimate: the signals file holds no matching market, bookmaker or published model, and it was read at 17:52Z, before Trump's order was known, so it adds nothing. Trump's 23 Nov order (CNN, Iowa Public Radio) suspends the detonation until the Eighth Circuit agrees and Governor-elect Sand consents; neither had happened as of 1 p.m. CT Monday. A YES needs court clearance, Sand's agreement and Army execution with evacuation notice and suitable weather all within about 40 hours, or a presidential reversal, on an event that has already slipped three times in five days; the freezing-temperature urgency and the still-posted Wednesday date keep it above the floor.",
+        "rounds": [
+         {
+          "p": 0.37,
+          "at": "2026-11-23T19:11:14+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "at": "2026-11-23T19:02:00+01:00",
+        "at": "2026-11-23T21:19:23+01:00",
         "inputs": [
          "signals",
          "reference-data",
          "dossier"
         ],
-        "p": 0.45,
-        "reason": "No market. other-scheduled slip rate 0.094 does not fit an event that has slipped three times in five days with a pending Eighth Circuit motion, no announced time, and weather/inversion conditions as a stated prerequisite. Against that: the government asserts an emergency (freezing risk), says the emergency exception lies outside the stay, and Wednesday's forecast is dry with light wind before snow Wednesday night. Roughly a coin flip, slightly below."
+        "p": 0.07,
+        "reason": "The signals file has no market, bookmaker or published model, so the anchor is the documented frequency for the slip class: other-scheduled slips 0.094 (11/116 own), i.e. P(held) about 0.91, logit +2.3. That generic rate does not fit this case. The event has already slipped three times in five days, and on Mon 23 Nov President Trump ordered the military not to detonate until the Eighth Circuit agrees and Governor-elect Rob Sand agrees (CNN, Iowa Public Radio). YES therefore needs a conjunction within about 36 hours: the Eighth Circuit lifts or narrows its administrative stay by Wednesday, with a plaintiffs' motion for more time pending and no ruling as of 1 p.m. Monday (roughly 0.25); Sand gives explicit consent after being publicly handed the blame (roughly 0.5, given his 'no good options' stance); and weather or logistics allow a blast that day, with snow forecast from Wednesday night and no advisory issued (roughly 0.7). That gives about 0.09 before allowing for correlation. I take a little off because the order adds new process steps and it is the day before Thanksgiving, and I leave a small tail for Trump reversing himself or the court acting fast. Adjustment in log-odds: about -4.9 from the anchor, final 0.07.",
+        "rounds": [
+         {
+          "p": 0.45,
+          "at": "2026-11-23T19:02:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "outsider",
         "model": "claude-sonnet-5-5",
-        "at_blind": "2026-11-23T19:10:00+01:00",
+        "at_blind": "2026-11-23T21:21:16+01:00",
         "inputs_blind": [
          "own-research",
          "reference-data"
         ],
-        "p_blind": 0.6,
-        "reason_blind": "The detonation was first set for 20 Nov, delayed to Mon 23 Nov after the governor's request and an environmental lawsuit (AP 19 Nov); the claim implies a further move to Wed 25 that I could not confirm in the pages I read. Already slipped once, litigation pending, and temperature drop pressure argues for going soon; other-scheduled slip rate 0.094 is a floor here.",
-        "at": "2026-11-23T19:20:00+01:00",
+        "p_blind": 0.62,
+        "reason_blind": "The detonation was set for Fri 20 Nov, then postponed by acting Army Secretary Telle to Mon 23 Nov (citing a forecast temperature drop and public communication, with Grassley pressing), and the claim implies a second slip to Wed 25 Nov; I could not find the reason for it. Two postponements already, plus a federal suit filed 19-20 Nov by environmental groups seeking to halt the EPA-permitted plan, show a fragile schedule; the slip-class base rate is only ~0.09 but this event has already slipped twice, and weather/cold risk to the material cuts both ways. The Army has strong safety reasons to proceed once communication is improved, and a court injunction looks unlikely. I put it at about 0.62: a roughly 30% chance of another slip or block, a small chance of a late-day or reporting problem.",
+        "at": "2026-11-23T21:28:17+01:00",
         "inputs": [
          "own-research",
          "reference-data",
-         "signals"
+         "union-of-facts"
         ],
-        "p": 0.6,
-        "p_held": 0.6,
-        "p_if_held": 1,
-        "reason": "Signals: nothing found. No change."
+        "p": 0.2,
+        "reason": "The decisive new fact is Trump's Monday 23 Nov order that the military not proceed until the Eighth Circuit agrees and Governor-elect Sand approves, with the Eighth Circuit's temporary pause still in place and Sand silent (he earlier said no good options exist). Both conditions would have to be met within about two days, and the Army has already moved the date twice, so a further slip past 25 Nov is the likelier outcome. The Army's physical urgency, the FAA restriction through Wed and Sand's apparent lack of alternatives keep a Wednesday detonation plausible, hence about 0.2 rather than lower.",
+        "rounds": [
+         {
+          "p": 0.6,
+          "at": "2026-11-23T19:20:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         },
+         {
+          "p": 0.62,
+          "at": "2026-11-23T21:21:16+01:00",
+          "reason": "evening check round one, own research only, before the union of facts"
+         }
+        ]
        }
       ],
-      "missing": [],
-      "combined": 0.488,
+      "missing": [
+       {
+        "step": "outsider-signals",
+        "why": "Evening check rerun: the outsider's read of the signals file was refused by the run's permission system (the file sits in the dossier folder, which the outsider's brief closes), and the run did not route around the refusal. Its figure rests on its own research and the reference data and the union of facts; the signals file holds no matching market for this claim."
+       }
+      ],
+      "combined": 0.088,
       "combination": {
        "method": "geo-odds"
       },
       "calibrated": null,
-      "spread": 0.23,
+      "spread": 0.15,
       "decomposition": {
-       "p_held": 0.503,
+       "p_held": 0.093,
        "p_if_held": 0.97,
        "p_if_not_held": 0,
-       "note": "The base-rate and adversarial p_held (0.43, 0.38) times their p_if_held (0.97) fall below the five-way combined 0.488 (evidence, anchor and outsider are higher on the detonation going ahead); p_if_held kept at 0.97 and p_held rescaled so the product equals the published figure."
+       "note": "The base-rate and adversarial p_held (geometric mean 0.059) fall below what the five-way combined figure implies; p_if_held kept at 0.97 and p_held rescaled so the product equals the published figure."
       },
       "research": {
-       "at": "2026-11-23T18:20:00Z",
-       "question": "Has the Eighth Circuit ruled on the groups' 22 Nov motion, and has the Army published a time for the 25 Nov detonation?",
-       "finding": "As of BBC's update at 17:48 UTC on 23 Nov there was no reported Eighth Circuit ruling on the new motion (administrative stay of 20 Nov still in force; DOJ says the Army may proceed under the emergency exception). The Army announced on Sunday 22 Nov via social media that the detonation moved to Wednesday, but per BBC 'has not released details'. Earlier advisories put each planned date at about noon local time (Army advisory for 20 Nov; Iowa HHS fact sheet dated 23 Nov for Monday 23 Nov). No Wednesday time found.",
+       "at": "2026-11-23T20:16:00Z",
+       "question": "Has the Eighth Circuit ruled, has Governor-elect Sand answered President Trump's condition, and does the Army still plan Wednesday?",
+       "finding": "From the evening check's reading of the pages behind the vendors' leads: as of 1 p.m. Central on 23 Nov the Eighth Circuit had issued nothing beyond its temporary pause (Iowa Public Radio); CNN and Iowa Public Radio say Sand had not responded to Trump's post and one search found no response; the Army's page of 22 Nov still names Wednesday 25 Nov with no hour. The remaining spread after the outsider received these facts is 15 points and reflects judgement on how fast the court and Sand could act.",
        "decisive": false,
        "sources": [
-        "https://www.bbc.com/news/articles/cr2klqzqx1qvo",
-        "https://www.aljazeera.com/news/2026/11/23/extremely-concerning-inside-a-us-army-plan-to-detonate-iowa-lead-stores",
-        "https://www.army.mil/article/296772",
-        "https://hhs.iowa.gov/media/19822/download"
+        "https://www.cnn.com/2026/11/23/us/iowa-army-detonation-lead-azide",
+        "https://www.iowapublicradio.org/ipr-news/2026-11-23/trump-orders-army-stop-lead-blast-iowa",
+        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
        ]
       },
-      "disagreement": null,
+      "disagreement": {
+       "cause": "inputs",
+       "note": "Evening check: the outsider, working without the dossier, had not found President Trump's order of 23 Nov (no detonation until the Eighth Circuit and Governor-elect Sand agree) and stood at 0.62 while the other four were at 0.05–0.10. It was given the union of facts (no figures of likelihood) and moved to 0.20; its first figure is in rounds. The other four already held every fact in the union, so they were not asked again."
+      },
       "shadow": {
        "external": [
         {
@@ -3840,6 +4091,39 @@
          "trace": "data/dossiers/2026-11-26/iowa-26.research.json"
         }
        ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 16,
+       "facts_confirmed": 6,
+       "added": [
+        "https://www.cnn.com/2026/11/23/us/iowa-army-detonation-lead-azide",
+        "https://www.iowapublicradio.org/ipr-news/2026-11-23/trump-orders-army-stop-lead-blast-iowa",
+        "https://time.com/article/2026/11/23/iowa-lead-azide-detonation-environment-controversy-doj-us-army/",
+        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
+       ],
+       "material": 4,
+       "reforecast": true,
+       "before": 0.488,
+       "after": 0.088,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 4 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.488 → 0.088. The evening desk's figures are kept in each agent's rounds."
+      },
+      "research_evening": {
+       "at": "2026-11-23T18:20:00Z",
+       "question": "Has the Eighth Circuit ruled on the groups' 22 Nov motion, and has the Army published a time for the 25 Nov detonation?",
+       "finding": "As of BBC's update at 17:48 UTC on 23 Nov there was no reported Eighth Circuit ruling on the new motion (administrative stay of 20 Nov still in force; DOJ says the Army may proceed under the emergency exception). The Army announced on Sunday 22 Nov via social media that the detonation moved to Wednesday, but per BBC 'has not released details'. Earlier advisories put each planned date at about noon local time (Army advisory for 20 Nov; Iowa HHS fact sheet dated 23 Nov for Monday 23 Nov). No Wednesday time found.",
+       "decisive": false,
+       "sources": [
+        "https://www.bbc.com/news/articles/cr2klqzqx1qvo",
+        "https://www.aljazeera.com/news/2026/11/23/extremely-concerning-inside-a-us-army-plan-to-detonate-iowa-lead-stores",
+        "https://www.army.mil/article/296772",
+        "https://hhs.iowa.gov/media/19822/download"
+       ]
       }
      }
     }
@@ -3873,7 +4157,7 @@
    ],
    "event_key": "cz-senate-session-2-2026-11-25",
    "case_key": "cz-state-insured-payments-2027",
-   "notes_for_editor": "AGENDA NOT CONFIRMED. senat.cz rejects all requests; three searches found no 2026 report of the 25 Nov programme. Vendor leads (unread) list consumer-protection and e-evidence bills, the fiscal-structural plan 2027–2030 and the Czech Radio annual report; the health-payments bill (passed by the Chamber 4 Nov, 30-day Senate deadline in early/mid Dec) is inferred, not confirmed. Re-check the programme on 24 Nov (ČTK preview 'Senát projedná…') and drop or swap the claim if the bill is not listed. The digital economy act passed the same day is an alternative.",
+   "notes_for_editor": "AGENDA NOT CONFIRMED. senat.cz rejects all requests; three searches found no 2026 report of the 25 Nov programme. Vendor leads (unread) list consumer-protection and e-evidence bills, the fiscal-structural plan 2027–2030 and the Czech Radio annual report; the health-payments bill (passed by the Chamber 4 Nov, 30-day Senate deadline in early/mid Dec) is inferred, not confirmed. Re-check the programme on 24 Nov (ČTK preview 'Senát projedná…') and drop or swap the claim if the bill is not listed. The digital economy act passed the same day is an alternative. EVENING CHECK 23 Nov: ČT24 (19 Nov) says the 25 Nov sitting takes five laws mainly on ecology and consumer protection, further bills on 9 Dec; the bill's 30-day period runs to about 12 Dec. Five forecasters reran: see forecast.external_check. The agenda on senat.cz is still unread; the earlier advice to drop or swap the claim if the bill is not listed stands with more weight.",
    "reserve": true,
    "reserve_note": "Reserve, not proposed: the Senate agenda for 25 Nov could not be confirmed (senat.cz refused) and the main claim is at 30%. Run only if ČTK or senat.cz confirms the health-insurance payments bill on the 25 Nov agenda and the overnight ensemble puts the main claim at 50% or more; otherwise drop.",
    "claims": [
@@ -3900,7 +4184,7 @@
      },
      "dossier": "data/dossiers/2026-11-26/cz-senate-26.md",
      "signals": "data/dossiers/2026-11-26/cz-senate-26.signals.md",
-     "probability": 0.3,
+     "probability": 0.12,
      "forecast": {
       "baseline": {
        "status_quo": "unclear",
@@ -3924,132 +4208,151 @@
        {
         "role": "base-rate",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:05:00+01:00",
+        "at_blind": "2026-11-23T21:19:31+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.25,
-        "reason_blind": "No computed Senate class; slip cz-senate-item 0.04 covers only the session date, but the bill's presence on the 25 Nov agenda is an inference (the scouted agenda items do not name it, the new-term Senate was constituted only on 19 Nov and the 30-day deadline runs to about mid-December), so p_held about 0.45. If taken up, an ODS/TOP 09-led Senate critical of the bill versus a 1 Jan deadline, a healthcare-money subject and partial STAN/KDU support: recent Senate treatment of coalition bills is mixed (approved/lapse vs amended/rejected), so p_if_held about 0.55.",
-        "at": "2026-11-23T19:07:00+01:00",
+        "p_blind": 0.09,
+        "reason_blind": "No computed Czech Senate outcome class exists (reference-classes has only Chamber classes, e.g. cz-chamber-government-bill-progress 4/3); the session-date slip class cz-senate-item gives 0.04, and the Senate bot post confirms the session starts 25 Nov at 10:00, so p(session held) is about 0.96. The binding uncertainty is the agenda: ČT24 (19 Nov) says on 25 Nov the Senate will begin with five laws 'mainly' on ecology and consumer protection, with further bills at the continuation on 9 Dec; the bill was delivered on 12 Nov, so its 30-day deadline (~12 Dec) is met by the 9 Dec sitting, and committees (new health chair Kantor, constituted 19 Nov) had little time, so I put p(this bill decided on 25 Nov | session held) at about 0.15 (log-odds about -1.7 from an even prior on 'next sitting before deadline'). If it is decided, the ODS/TOP 09-led Senate, whose members criticised the bill, could amend it (sum, valorisation freeze, the patient-organisation cap), but returning it forces a Chamber re-vote before 1 Jan and the Senate often approves or lets coalition money bills pass; I put p(approve unchanged or nezabývat | decided) at about 0.60. Combined: 0.96 x 0.15 x 0.60 ≈ 0.09.",
+        "at": "2026-11-23T21:24:52+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.25,
-        "p_held": 0.45,
-        "p_if_held": 0.55,
-        "reason": "Signals file shows no market, bookmaker or published probability for this claim (market searches returned only unrelated questions); nothing to update, final equals blind estimate; p_held/p_if_held unchanged."
+        "p": 0.09,
+        "p_held": 0.15,
+        "p_if_held": 0.6,
+        "reason": "The signals file has no market, bookmaker or published model matching the claim, so nothing moves the blind estimate. The number still rests on agenda risk: ČT24 says the 25 Nov sitting starts with five laws mainly on ecology and consumer protection, with further bills on 9 Dec, still before the bill's ~12 Dec deadline (p_held about 0.15, session slip 0.04). If decided, approval unchanged or nezabývat is about 0.60 given ODS/TOP 09 criticism against the 1 Jan deadline pressure.",
+        "rounds": [
+         {
+          "p": 0.25,
+          "at": "2026-11-23T19:07:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "evidence",
         "model": "claude-opus-5-5",
-        "at_blind": "2026-11-23T19:06:00+01:00",
+        "at_blind": "2026-11-23T21:19:58+01:00",
         "inputs_blind": [
          "own-research"
         ],
-        "p_blind": 0.52,
-        "reason_blind": "Chamber passed the bill on 4 Nov (Seznam/ČTK), with part of STAN and KDU-ČSL voting for; the opposition-held Senate usually passes funding bills needed from 1 Jan, but ODS/TOP 09 criticised it and could amend. I could not confirm it is on the 25 Nov agenda (senat.cz refused), which caps the figure.",
-        "at": "2026-11-23T19:17:42+01:00",
+        "p_blind": 0.45,
+        "reason_blind": "The Chamber passed the bill on 4 Nov 2026 (ČTK, Seznam Zprávy) after a coalition amendment cut the increase from CZK 21bn to about 13bn and suspended the automatic valorisation of the state-insured payment for 2027-28. Some STAN and KDU-ČSL deputies voted for it, but ODS and TOP 09 criticised it, so the opposition-leaning Senate has a motive to amend it (restore valorisation or a higher amount). I could not confirm from senat.cz (the site blocked the request) or from the press that the bill is on the 25 Nov agenda or what the committees recommend. A close analogue: on 21 Oct the Senate let the motorway-vignette valorisation repeal through without adopting any resolution (ČT24), which would count as NO under this criterion. I therefore assume roughly 0.75-0.8 that a decision is taken on 25 Nov and about 0.55-0.6 that it is an approval or nezabývat rather than amendments or a deadlock, which gives about 0.45.",
+        "at": "2026-11-23T21:25:05+01:00",
         "inputs": [
          "own-research",
          "dossier",
          "signals"
         ],
-        "p": 0.36,
-        "reason": "Dossier confirms the agenda is unknown and that vendor leads for the 25 Nov session list other items (consumer protection, e-evidence, fiscal plan, ČRo report) but not this bill; the Senate's 30-day deadline runs into December, so it may come later. Lowered for agenda risk; outcome if taken ~0.7 approve. Signals: no market, bookmaker or published probability matches this claim (signals file), so the figure stays at the post-dossier estimate.",
+        "p": 0.1,
+        "reason": "The dossier's evening addition changes the picture. ČT24 (19 Nov) says that on 25 Nov the Senate will take up five laws 'mainly on ecology and consumer protection', with further bills at the continuation of the session on 9 Dec. The health bill was delivered only on 12 Nov, its deadline is about 12 Dec, and the committees were constituted only on 19 Nov, so 9 Dec is the natural slot; I put the chance it is decided on 25 Nov at about 0.15-0.2. Even if it is decided that day, a plain approval is only about 0.55-0.6 likely, because of ODS/TOP 09/KDU criticism, the valorisation freeze and the Senate's habit of letting bills lapse or amending them. The signals file has no market or model.",
         "rounds": [
          {
           "p": 0.36,
-          "at": "2026-11-23T19:12:00+01:00",
-          "reason": "after the dossier, before the signals: Dossier confirms the agenda is unknown and that vendor leads for the 25 Nov session list other items (consumer protection, e-evidence, fiscal plan, ČRo report) but not this bill; the Senate's 30-day deadline runs into December, so it may come later. Lowered for agenda risk; outcome if taken ~0.7 approve."
+          "at": "2026-11-23T19:17:42+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.36)"
          }
         ]
        },
        {
         "role": "adversarial",
         "model": "claude-fable-5-2",
-        "at_blind": "2026-11-23T19:02:47+01:00",
+        "at_blind": "2026-11-23T21:19:23+01:00",
         "inputs_blind": [
          "dossier",
          "reference-data"
         ],
-        "p_blind": 0.24,
-        "reason_blind": "The bill's presence on the 25 Nov agenda is only inferred; the unread vendor leads name other items (consumer protection, e-evidence, fiscal-structural plan, Czech Radio report) and not this bill, and Senate committees were constituted only on 19 Nov, so a committee stage before 25 Nov is doubtful while the 30-day deadline allows a December session. p_held here is the chance the Senate decides on the bill that day (session slip 0.04 plus the much larger agenda risk). If it is taken up, approval unchanged is likely (1 Jan deadline, part of STAN/KDU-CSL voted for, money for health care), but the ODS/TOP 09-led Senate has amended coalition bills before.",
-        "at": "2026-11-23T19:10:48+01:00",
+        "p_blind": 0.09,
+        "reason_blind": "The likelier outcome is NO because the bill is probably not decided on 25 Nov: ČT24 (19 Nov) says the Senate starts on 25 Nov with five laws mainly on ecology and consumer protection and leaves further bills to the continuation on 9 Dec; the bill reached the Senate only on 12 Nov, its 30-day period runs to about 12 Dec (so 9 Dec fits), committees were constituted only on 19 Nov, and the vendor-lead agenda items do not name it. The strongest case for YES: 'mainly' does not exclude the health bill being one of the five, the senat.cz agenda was never read, the minister needs force on 1 Jan 2027 and an early vote leaves room for a Chamber re-vote, and the session itself is confirmed for 25 Nov 10:00 (slip rate 0.04). If it is voted that day, passage unchanged or by 'nezabývat se' is likely (STAN and KDU-ČSL MPs partly backed it, a return would endanger the 1 Jan start), though an ODS/TOP 09-led Senate critical of the bill, the valorisation freeze and the cut from 21bn to 13bn leave real room for amendment, rejection or a lapse without a resolution, each of which is NO. I put the bill being decided on 25 Nov at about 0.12 and approval/nezabývat se given a decision at about 0.78.",
+        "at": "2026-11-23T21:25:20+01:00",
         "inputs": [
          "dossier",
          "reference-data",
          "signals"
         ],
-        "p": 0.24,
-        "p_held": 0.32,
-        "p_if_held": 0.75,
-        "reason": "Signals file read: the market searches found nothing matching the claim, and there are no bookmaker odds or published probabilities. Nothing new to weigh, so the blind estimate and the p_held / p_if_held split stand unchanged."
+        "p": 0.09,
+        "p_held": 0.12,
+        "p_if_held": 0.78,
+        "reason": "The signals file holds no market, bookmaker or model matching the claim, so nothing moves the blind estimate. The bill is probably not decided on 25 Nov: ČT24 says that day's five laws are mainly ecology and consumer protection with further bills left to 9 Dec, the bill reached the Senate only on 12 Nov with its period running to about 12 Dec, and the unread senat.cz agenda is the main route to YES. If it is voted that day, approval or 'nezabývat se' is likely but not certain in an ODS/TOP 09-led Senate.",
+        "rounds": [
+         {
+          "p": 0.24,
+          "at": "2026-11-23T19:10:48+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "anchor",
         "model": "claude-opus-5-5",
-        "at": "2026-11-23T19:02:00+01:00",
+        "at": "2026-11-23T21:19:25+01:00",
         "inputs": [
          "signals",
          "reference-data",
          "dossier"
         ],
-        "p": 0.25,
-        "reason": "No market or model (signals). Decomposed: bill on the 25 Nov agenda ~0.45 (inferred only; the vendor-reported agenda items do not name it; 30-day deadline leaves room for a December session), decision that day given listed ~0.95 (slip 0.04), approve unchanged or nezabývat given taken up ~0.6 (1 Jan deadline, partial STAN/KDU support vs ODS/TOP 09-led Senate that amended other coalition bills; lapse without resolution counts NO). Product ~0.25."
+        "p": 0.1,
+        "reason": "Signals file is empty (no market, odds or published model), and none of the models.mjs forms fits a Senate agenda question, so the anchor is a documented chain of frequencies. P(session held on 25 Nov) = 0.96 (slip class cz-senate-item, rate 0.040; the Senate's bridged account confirms a 10:00 start). P(the health-payments bill is among the items decided on 25 Nov) is about 0.20: ČT24 (19 Nov) says the Senate will 'begin dealing with five laws mainly concerning ecology and consumer protection' on 25 Nov and handle further bills at the 9 Dec continuation, and the vendor-sourced items (consumer protection, e-evidence, fiscal-structural plan, Czech Radio report) do not include it. The bill was delivered on 12 Nov, so the 30-day deadline (~12 Dec) fits 9 Dec, and the health committee was only reconstituted on 19 Nov (new chair Kantor, KDU-ČSL). 'Mainly' leaves some room, hence not lower. P(decided that day if on the agenda) = 0.95. P(approved unchanged or nezabývat se, if decided) = 0.55: the Senate is opposition-led (ODS/TOP 09 largest club) and opposition MPs criticised the bill, but part of STAN and KDU-ČSL backed it in the Chamber and the 1 Jan effective date argues against returning it. Product: 0.96 x 0.20 x 0.95 x 0.55 = about 0.10.",
+        "rounds": [
+         {
+          "p": 0.25,
+          "at": "2026-11-23T19:02:00+01:00",
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+         }
+        ]
        },
        {
         "role": "outsider",
         "model": "claude-sonnet-5-5",
-        "at_blind": "2026-11-23T19:19:48+01:00",
+        "at_blind": "2026-11-23T21:21:11+01:00",
         "inputs_blind": [
          "own-research",
          "reference-data"
         ],
-        "p_blind": 0.55,
-        "reason_blind": "Search found no Senate agenda for 25 Nov; earlier Senate raised-payments bills passed (ČT24 headline). Opposition-led Senate may amend or reject a Babiš government bill, and the item may not be reached.",
-        "at": "2026-11-23T19:19:48+01:00",
+        "p_blind": 0.75,
+        "reason_blind": "Chamber passed the bill on 4 Nov 2026 (about CZK 13bn, cut from the government's 21bn; part of STAN and KDU-ČSL voted for). Senate has a 30-day window. I could not confirm the 25 Nov agenda. The slip-class postponement rate is about 0.04-0.06. Senate has routinely passed such state-payment bills unchanged, e.g. in 2013 and 2025. Residual risk is an opposition-led Senate amending or rejecting it over the reduced sum, or the item not being on the 25 Nov agenda.",
+        "at": "2026-11-23T21:28:26+01:00",
         "inputs": [
          "own-research",
          "reference-data",
          "signals",
          "union-of-facts"
         ],
-        "p": 0.42,
-        "p_held": 0.9,
-        "p_if_held": 0.6,
-        "reason": "Dossier: Senate agenda for 25 Nov unconfirmed (senat.cz blocked); deadline falls in early-to-mid December so the bill may be handled on 25 Nov or in a later session. The Senate is led by ODS and TOP 09 and amended a coalition bill in June, but STAN and KDU-ČSL deputies backed the bill and the sum was already cut from 21bn to 13bn. About 0.6 on the agenda times about 0.7 on passing unchanged; lowered from 0.55 to 0.42.",
+        "p": 0.25,
+        "reason": "ČT24 on 19 Nov says the 25 Nov sitting starts with five laws mainly on ecology and consumer protection and that further bills come at the continuation on 9 Dec. The health bill reached the Senate on 12 Nov and its deadline is about 12 Dec, so 9 Dec is the natural slot; the health committee also got a new chair only on 19 Nov. If it is on the agenda, passing unchanged is likely (about 0.8), but 'mainly' leaves some chance that it is one of the five, so I put p_held near 0.30.",
         "rounds": [
          {
-          "p": 0.55,
+          "p": 0.42,
           "at": "2026-11-23T19:19:48+01:00",
-          "reason": "round one, before union of facts"
+          "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads (its own earlier rounds: 0.55)"
+         },
+         {
+          "p": 0.75,
+          "at": "2026-11-23T21:25:30+01:00",
+          "reason": "evening check, after the signals, before the union of facts: Signals found no market, bookmaker or model matching the claim, so nothing changes the blind estimate. Senate usually passes such state-payment bills unchanged; residual risk is amendment, rejection or agenda slip."
          }
         ]
        }
       ],
-      "missing": [
-       {
-        "step": "research",
-        "why": "spread 0.18 above 0.15; the single research agent (8 searches, search budget) went to the five claims whose reasons disputed a checkable fact (cz-budget-26, shenzhou-26, iowa-26, deere-26, cz-ccyb-26). Here the forecasters had the same facts and differ on a threshold set at the median of comparable outcomes; the morning should treat the evidence as mixed."
-       }
-      ],
-      "combined": 0.3,
+      "missing": [],
+      "combined": 0.117,
       "combination": {
        "method": "geo-odds"
       },
       "calibrated": null,
-      "spread": 0.18,
+      "spread": 0.16,
       "decomposition": {
-       "p_held": 0.379,
-       "p_if_held": 0.79,
+       "p_held": 0.134,
+       "p_if_held": 0.894,
        "p_if_not_held": 0
       },
       "disagreement": {
        "cause": "inputs",
-       "note": "Round one spread above 0.25 because the outsider (no dossier by design) lacked facts the others had, and for cz-ccyb-26 a page line read as a hike hint proved a commented-out template. The outsider received the union of facts (and for cz-ccyb-26 all five reran once after the research); first numbers are kept in rounds."
+       "note": "Evening check: the outsider, working without the dossier, did not have the ČT24 report of 19 Nov (on 25 Nov the Senate takes five laws mainly on ecology and consumer protection; further bills on 9 Dec) and stood at 0.75 while the other four were at 0.09–0.10. It was given the union of facts (no figures of likelihood) and moved to 0.25; its earlier figures are in rounds. The other four already held every fact in the union, so they were not asked again. The 16 points left reflect how much room the word 'mainly' leaves."
       },
       "shadow": {
        "external": [
@@ -4093,6 +4396,43 @@
          "sources": 25,
          "trace": "data/dossiers/2026-11-26/cz-senate-26.research.json"
         }
+       ]
+      },
+      "external_check": {
+       "at": "2026-11-23T21:35:07+01:00",
+       "providers": [
+        "openai",
+        "google",
+        "xai"
+       ],
+       "facts_listed": 15,
+       "facts_confirmed": 7,
+       "added": [
+        "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
+        "https://sledovna.cz/tisk/235/",
+        "https://bsky.app/profile/SenatCZ.zpravobot.news.ap.brid.gy/post/3n2xrmbo3d7q2",
+        "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-maji-schvalovat-zvyseni-plateb-do-zdravotnictvi-za-statni-pojistence-379262"
+       ],
+       "material": 3,
+       "reforecast": true,
+       "before": 0.3,
+       "not_added": [
+        {
+         "url": "https://zpravy.kurzy.cz/880533-termin-druhe-schuze-horni-komory-byl-stanoven-na-25-listopadu-v-1000-hodin/",
+         "why": "Confirmed on the page (the Senate's 4 Nov announcement of the 25 Nov sitting lists consumer protection, end-of-life products, e-evidence, EU prints, the prosecutor's report, the fiscal-structural plan and the Czech Radio report, and does not name the health-insurance bill), but the only readable copy is on a site whose name the validator's word list for the dossier rejects (it reads as a betting word), so the line was left out of the dossier. The forecasters had the same substance from the ČT24 report of 19 Nov. senat.cz itself refused every request."
+        }
+       ],
+       "after": 0.117,
+       "note": "Evening check 2026-11-23T21:35:07+01:00: 3 material fact(s) confirmed from the vendors' leads were added to the dossier and all five forecasters reran (blind, then with the signals; the outsider without the dossier). Combined 0.3 → 0.117. The evening desk's figures are kept in each agent's rounds."
+      },
+      "research": {
+       "at": "2026-11-23T20:16:00Z",
+       "question": "Is the health-insurance bill (Chamber print 235) on the agenda of the Senate sitting of 25 November 2026?",
+       "finding": "Not settled on the Senate's own pages: senat.cz refused every request (news item, bill history, plenary programme, home page) and psp.cz cut the connection. Two pages point to no: ČT24 (19 Nov) says the Senate will on 25 Nov begin with five laws mainly on ecology and consumer protection and take further bills at the continuation on 9 Dec; the Senate's announcement of 4 Nov lists the planned business without the bill (issued before the bill arrived on 12 Nov). The 30-day period runs to about 12 Dec, so 9 Dec is a lawful slot. 'Mainly' does not strictly exclude the bill.",
+       "decisive": false,
+       "sources": [
+        "https://ct24.ceskatelevize.cz/clanek/domaci/senatori-na-ustavujici-schuzi-zvoli-nove-vedeni-horni-komory-379749",
+        "https://sledovna.cz/tisk/235/"
        ]
       }
      }
@@ -4533,5 +4873,38 @@
    }
   ],
   "failed": []
+ },
+ "evening_check": {
+  "at": "2026-11-23T21:35:07+01:00",
+  "claims": [
+   "iowa-26",
+   "cz-budget-26",
+   "cz-senate-26",
+   "ep-swiss-26",
+   "deere-26",
+   "ep-budget-26"
+  ],
+  "facts_listed": 99,
+  "facts_confirmed": 31,
+  "reforecast": [
+   "iowa-26",
+   "cz-budget-26",
+   "cz-senate-26",
+   "ep-swiss-26",
+   "deere-26"
+  ],
+  "wording": [
+   "ua-drones-26"
+  ],
+  "agents": {
+   "fact_check": 6,
+   "forecasters": 25,
+   "research": 2
+  },
+  "models": {
+   "fact_check": "claude-opus-5-5",
+   "research": "claude-opus-5-5"
+  },
+  "note": "PLANNER step 12. Fact agents, forecasters and research agents read pages with scripts/read.mjs only. No vendor probability was shown to any agent: the lead files had forecast figures removed and the agents were told to ignore any they met."
  }
 }
