@@ -5908,6 +5908,102 @@
           },
           "note": "Weekly re-forecast: the fourth round of government–opposition talks (13 to about 21 Nov) still has no renewal of the electoral council on its agenda; new Supreme Court judges are due on 11 Dec; the opposition's negotiator expects a vote in late 2027 or 2028. Thin markets drifted up without news.",
           "note_cs": "Týdenní přepočet: čtvrté kolo jednání vlády s opozicí (13. až asi 21. listopadu) stále nemá na programu obměnu volební rady; noví soudci Nejvyššího soudu mají být jmenováni 11. prosince; vyjednavačka opozice čeká volby koncem roku 2027 nebo v roce 2028. Málo likvidní trhy bez zpráv mírně stouply."
+        },
+        {
+          "at": "2026-11-23T19:23:28+01:00",
+          "p": 0.09,
+          "combined": 0.092,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:08:20+01:00",
+              "p": 0.09,
+              "reason": "Signals: Polymarket 'Venezuela election scheduled' is 0.095 by 31 Dec 2026 (vol ~176k) and 0.17 by 31 Mar 2027 (vol ~10k). Interpolating gives about 0.12 for 31 Jan. Kalshi 'before Feb 1, 2027' was 0.11 on 16 Nov, but its volume is only ~$12. The market is somewhat above my sequence-based 0.07, so I moved partway toward it, to 0.09. I did not go all the way because 'scheduled' may resolve more loosely than 'CNE publishes a specific date', and this thin market drifted up earlier without news.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.07,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:10:29+01:00",
+              "p": 0.07,
+              "reason": "Signals: Polymarket 'scheduled by 31 Dec 2026' 0.095 (vol 176k, down from 0.15 on 16 Nov), 'by 31 Mar 2027' 0.17, thin Kalshi 'call before 1 Jan' 0.14; interpolated to 31 Jan ~0.12. 'Scheduled' is looser than a CNE/decree calendar date and the CNE has not been renewed, so I stay below the market but move up from 0.05 to 0.07.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ],
+              "p_blind": 0.06,
+              "inputs_blind": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-23T19:12:00+01:00",
+              "p": 0.08,
+              "reason": "Markets read 23 Nov 18:12Z: Polymarket \"scheduled by 31 Dec\" 0.095 (volume $176k) and \"by 31 Mar 2027\" 0.17, both down from a week ago; Kalshi \"call before 1 Jan\" 0.14, \"before 1 Feb\" 0.11 (volume $12), \"before 1 Apr\" 0.23. Interpolating to 31 Jan gives about 0.11 to 0.13. I move up from 0.06 to 0.08 but stay below, because \"scheduled\" or \"call\" may resolve more loosely than a CNE-published calendar date and the CNE renewal has not started.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.06,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:03:24+01:00",
+              "p": 0.1,
+              "reason": "Markets read 23 Nov 18:02Z: Polymarket 'scheduled by Dec 31, 2026' 0.095 (vol 176k, liq 9.7k) and 'by Mar 31, 2027' 0.17 (vol 9.6k); linear interpolation to 31 Jan gives ~0.12; Kalshi 'call before Feb 1, 2027' 0.11 (vol ~$12, direct match but illiquid). Trimmed slightly to 0.10 because boardB facts show the CNE has not been renewed and the US-backed sequence (new CNE, then vacancy, then a six-month window) puts a dated call after that; the criterion also needs a specific date from the CNE or a decree.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-23T19:13:13+01:00",
+              "p": 0.13,
+              "reason": "Kalshi 0.11 (volume about $12, thin) and Polymarket 'scheduled by 31 Dec' 0.15 (rising) and 'by 31 Mar' 0.285; these bracket my blind 0.10, so I nudge up to 0.13 given the thin Kalshi volume.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.1,
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com",
+            "p": 0.095,
+            "read_at": "2026-11-23T18:10:00Z",
+            "note": "\"Venezuela election scheduled by 31 Dec 2026\" (~$176k volume); by 31 Mar 2027 0.17; deadline differs from ours (31 Jan)."
+          },
+          "note": "Weekly re-forecast: round four of the talks closed without a dated election call; the agreed sequence (new Supreme Court, then a new CNE, then a vacancy declaration) puts any date after the CNE renewal, which has not started.",
+          "note_cs": "Týdenní nová předpověď: čtvrté kolo jednání skončilo bez vyhlášení data voleb; dohodnutý postup (nový Nejvyšší soud, pak nová volební rada, pak prohlášení uprázdnění úřadu) posouvá datum až za obnovu volební rady, která nezačala."
         }
       ],
       "result": null
@@ -10803,7 +10899,14 @@
           "note": "The cabinet did not take up the extension on 19 Nov (Finance Minister Schillerová away); capped prices keep falling (diesel CZK 45.20, petrol 39.80 on 20 Nov), below where the caps began; the government let earlier caps lapse in July. Decision expected at the cabinet of 23–26 Nov.",
           "note_cs": "Vláda 19. 11. prodloužení neprojednala (ministryně financí Schillerová chyběla); maximální ceny dál klesají (nafta 45,20 Kč, benzin 39,80 Kč 20. 11.), pod úroveň ze začátku regulace; dřívější stropy vláda v červenci nechala vypršet. Rozhodnutí se čeká na schůzi vlády 23.–26. 11."
         }
-      ]
+      ],
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://vlada.gov.cz/cz/media-centrum/aktualne/vysledky-jednani-vlady-23--listopadu-2026-230261/",
+        "note": "On 23 Nov 2026 the cabinet approved a decree setting maximum petrol and diesel prices for 1–31 December 2026, keeping the margin cap and the diesel excise cut (government list of decisions; ČTK).",
+        "note_cs": "Vláda 23. listopadu 2026 schválila nařízení o maximálních cenách benzinu a nafty na 1. až 31. prosince 2026 a ponechala strop marží i snížení spotřební daně z nafty (výsledky jednání vlády; ČTK).",
+        "resolved_at": "2026-11-23T18:23:28Z"
+      }
     },
     {
       "id": "cz-cnb-rate-425-feb",
@@ -11288,6 +11391,95 @@
           "market": null,
           "note": "Weekly re-forecast: nothing new; KHNP's plan is still a bidder briefing in January 2027 and a contract in July 2027; EDU II warned KHNP on 11 Nov that it will hold it to the contract; Havlíček plans a trip to Seoul in December.",
           "note_cs": "Týdenní přepočet: nic nového; KHNP dál plánuje setkání s uchazeči v lednu 2027 a smlouvu v červenci 2027; EDU II 11. listopadu KHNP upozornila, že bude trvat na smlouvě; Havlíček chce v prosinci do Soulu."
+        },
+        {
+          "at": "2026-11-23T19:23:28+01:00",
+          "p": 0.07,
+          "combined": 0.072,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:08:20+01:00",
+              "p": 0.07,
+              "reason": "Signals: markets.mjs search 'Dukovany KHNP contractor' found no matching market, and the latest watchlist entry has no market field. Estimate unchanged.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.07,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:10:29+01:00",
+              "p": 0.07,
+              "reason": "markets.mjs search found no matching market (read 2026-11-23 18:09Z) and the latest history entry has no market field; final = post-dossier 0.07; KHNP plans a contract in July 2027.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ],
+              "p_blind": 0.08,
+              "inputs_blind": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-23T19:12:00+01:00",
+              "p": 0.05,
+              "reason": "No market found (search \"Dukovany\" returned nothing relevant). Unchanged from blind.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.05,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:03:24+01:00",
+              "p": 0.06,
+              "reason": "No market found (search 'Dukovany' returned nothing relevant). Anchor is KHNP's own stated timeline from the question history and boardA: bidder briefing in Jan 2027 and contract in July 2027, with nothing new since 16 Nov. Residual YES routes: a fast renewed deal with Daewoo/Doosan or a declared self-perform decision under Czech pressure (Havlíček's December trip to Seoul).",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-23T19:13:13+01:00",
+              "p": 0.13,
+              "reason": "No market or signal in watchlist history for this question; blind estimate unchanged.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.13,
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast: nothing new since 16 Nov; KHNP plans a bidder briefing in January and a contract in July 2027.",
+          "note_cs": "Týdenní nová předpověď: od 16. listopadu nic nového; KHNP plánuje informační schůzku pro uchazeče v lednu a smlouvu v červenci 2027."
         }
       ]
     },
@@ -13766,6 +13958,95 @@
           "market": null,
           "note": "Re-forecast after material news: De Wever and Vooruit's leader Rousseau met for about three hours on 20 Nov and all five parties say they want to keep negotiating (VRT); no budget deal by Saturday evening; De Wever reports to the King again on Mon 23 Nov, with a national strike and demonstration in Brussels the same day.",
           "note_cs": "Přepočet po podstatné zprávě: De Wever a předseda strany Vooruit Rousseau spolu 20. listopadu asi tři hodiny jednali a všech pět stran tvrdí, že chce dál vyjednávat (VRT); do sobotního večera dohoda o rozpočtu nepadla; De Wever podá králi znovu zprávu v pondělí 23. listopadu, kdy se v Bruselu koná také celostátní stávka a demonstrace."
+        },
+        {
+          "at": "2026-11-23T19:23:28+01:00",
+          "p": 0.2,
+          "combined": 0.195,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:08:20+01:00",
+              "p": 0.27,
+              "reason": "Signals: markets.mjs search 'De Wever Belgium prime minister' returned no matching market (only unrelated Metaculus/Polymarket items), and the latest watchlist entry has no market field. Nothing to update, so the estimate stays at the base-rate figure.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.27,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:10:29+01:00",
+              "p": 0.2,
+              "reason": "markets.mjs search found no matching market (read 2026-11-23 18:09Z) and the latest history entry has no market field; final = post-dossier 0.20. Own research and facts file: the King kept the resignation in abeyance on 23 Nov and De Wever's de facto deadline is 1 Jan, so acceptance before 31 Dec needs an early-December breakdown.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ],
+              "p_blind": 0.22,
+              "inputs_blind": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-23T19:12:00+01:00",
+              "p": 0.19,
+              "reason": "No direct market. Polymarket \"Belgium snap election called by December 31\" is at 0.13 (volume about $2k, read 23 Nov 18:12Z), a thin market on a different outcome: an accepted resignation can come without an election call, and an election call would normally follow an acceptance. It is consistent with my figure and I keep 0.19.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.19,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:03:24+01:00",
+              "p": 0.26,
+              "reason": "Only market: Polymarket 'Belgium snap election called by Dec 31' 0.13 (vol ~2k, thin), read 23 Nov 18:01Z; it is a near-subset of the question (a snap election normally follows an accepted resignation), so it is a floor, not a match. Model: P(no budget deal by late Dec) ~0.45 x P(King formally accepts before 31 Dec | no deal) ~0.55 = ~0.25, plus small other routes. Adjusted for boardA facts: King again did not accept on 23 Nov and gave an open-ended mandate, and De Wever's own deadline is when provisional twelfths start (1 Jan), so a formal acceptance can fall just after 31 Dec.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-23T19:13:13+01:00",
+              "p": 0.1,
+              "reason": "No market or signal in watchlist history for this question; blind estimate unchanged.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.1,
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast after the King again declined to accept the resignation on 23 Nov and De Wever set a de facto 1 January deadline (provisional twelfths); a collapse at that point could be formally accepted only after 31 Dec. Five party leaders met on 24 Nov.",
+          "note_cs": "Nová předpověď poté, co král 23. listopadu opět nepřijal demisi a De Wever si stanovil faktickou lhůtu do 1. ledna (rozpočtové provizorium); případný pád by tak mohl být formálně přijat až po 31. prosinci."
         }
       ]
     },
@@ -13931,6 +14212,95 @@
           "market": null,
           "note": "Weekly re-forecast and material correction: Hospodářské noviny reported on 9 Nov (19:08) that Havlíček wants the bill through the Chamber in a fast-track reading by the end of 2026, contrary to the premise of the last entry; two clubs or 50 MPs can block the fast track. Suppliers announced January price rises (innogy, E.ON, Pražská plynárenská). Note: if the bill passes in first reading under §90(2), there is no separate third reading; the forecasters counted that route as YES and the criterion should be read that way.",
           "note_cs": "Týdenní přepočet a podstatná oprava: Hospodářské noviny 9. listopadu (19:08) napsaly, že Havlíček chce novelu protlačit Sněmovnou ve zrychleném čtení do konce roku 2026, což odporuje předpokladu minulého záznamu; zrychlené čtení mohou zablokovat dva kluby nebo 50 poslanců. Dodavatelé ohlásili zdražení od ledna (innogy, E.ON, Pražská plynárenská). Pozn.: schválí-li Sněmovna novelu už v prvním čtení podle § 90 odst. 2, samostatné třetí čtení nebude; prognostici tuto cestu počítali jako ANO."
+        },
+        {
+          "at": "2026-11-23T19:23:28+01:00",
+          "p": 0.44,
+          "combined": 0.443,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:08:20+01:00",
+              "p": 0.45,
+              "reason": "Signals: markets.mjs search 'Czech electricity price regulation' found no matching market, and the latest watchlist entry has no market field. Estimate unchanged.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.45,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:10:29+01:00",
+              "p": 0.52,
+              "reason": "markets.mjs search found no matching market (read 2026-11-23 18:09Z) and the latest history entry has no market field; final = post-dossier 0.52; fast-track not yet voted, psp.cz unreachable.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ],
+              "p_blind": 0.5,
+              "inputs_blind": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-23T19:12:00+01:00",
+              "p": 0.4,
+              "reason": "No market found (search \"Czech energy act\" returned nothing relevant). Unchanged from blind.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.4,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:03:24+01:00",
+              "p": 0.5,
+              "reason": "No market. Reference data (pipeline/reference-data/cz-chamber.json): government bills that reach a third-reading vote pass 99.6% (n=232, 9th term) and the question's class rate is 0.95 (n=19), so timing decides. Havlíček wants a §90(2) fast track by end 2026 (counted as YES), which two clubs or 50 MPs can block; ODS has not ruled out support. Otherwise a standard three-reading route by 31 Mar is feasible with a 107-seat majority controlling the agenda but tight around the December budget; no first-reading date reported yet (boardA). About even.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-23T19:13:13+01:00",
+              "p": 0.35,
+              "reason": "No market or signal in watchlist history for this question; blind estimate unchanged.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.35,
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast: no first-reading date or fast-track vote reported since 16 Nov; passage is likely once voted, timing by 31 March is the question.",
+          "note_cs": "Týdenní nová předpověď: od 16. listopadu nebylo oznámeno datum prvního čtení ani zrychlené projednání; zákon by při hlasování nejspíš prošel, otázkou je stihnout to do 31. března."
         }
       ]
     },
@@ -14116,6 +14486,95 @@
           "market": null,
           "note": "Weekly re-forecast. No cabinet resolution yet; the Commission's notification deadline is 30 Nov.",
           "note_cs": "Týdenní přepočet. Usnesení vlády zatím není; lhůta pro oznámení Komisi je 30. listopadu."
+        },
+        {
+          "at": "2026-11-23T19:23:28+01:00",
+          "p": 0.58,
+          "combined": 0.584,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:08:20+01:00",
+              "p": 0.6,
+              "reason": "Signals: markets.mjs search 'Czech SAFE defence loan' found no matching market, and the latest watchlist entry has no market field. Estimate unchanged.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.6,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:10:29+01:00",
+              "p": 0.62,
+              "reason": "markets.mjs search found no matching market (read 2026-11-23 18:09Z) and the latest history entry has no market field; final = post-dossier 0.62. The 23 Nov cabinet skipped SAFE; 30 Nov meeting or a later loan approval before 31 Mar remain the routes.",
+              "inputs": [
+                "own-research",
+                "dossier",
+                "signals"
+              ],
+              "p_blind": 0.68,
+              "inputs_blind": [
+                "own-research"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-23T19:12:00+01:00",
+              "p": 0.6,
+              "reason": "No market found (markets.mjs search \"SAFE Czech\" returned nothing relevant; no market in the watchlist history). Unchanged from blind.",
+              "inputs": [
+                "dossier",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.6,
+              "inputs_blind": [
+                "dossier",
+                "reference-data"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-23T19:03:24+01:00",
+              "p": 0.55,
+              "reason": "No market found (search 'SAFE defence loan' returned nothing relevant); no reference class. Judgmental anchor: PM Babiš publicly wants a substantially larger second-round share and the defence ministry is to bring a proposal, but the 23 Nov cabinet again skipped it, leaving roughly the 30 Nov cabinet before the Commission notification deadline; notification without a published resolution, or a later approval of the loan request before 31 Mar, are both possible. Finance ministry lukewarm. Slightly above even.",
+              "inputs": [
+                "signals",
+                "reference-data",
+                "dossier"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-23T19:13:13+01:00",
+              "p": 0.55,
+              "reason": "No market or signal in watchlist history for this question; blind estimate unchanged.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "signals"
+              ],
+              "p_blind": 0.55,
+              "inputs_blind": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast: the cabinet again had no SAFE item on 23 Nov; only the likely 30 Nov meeting remains before the deadline to notify the Commission, though the window runs to 31 March.",
+          "note_cs": "Nová předpověď: vláda 23. listopadu opět neprojednala SAFE; před lhůtou pro oznámení Komisi zbývá jen pravděpodobné zasedání 30. listopadu, okno otázky však trvá do 31. března."
         }
       ]
     },
