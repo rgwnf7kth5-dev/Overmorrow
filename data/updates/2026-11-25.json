@@ -1,0 +1,253 @@
+{
+ "edition": "2026-11-25",
+ "frozen_at": "2026-11-23T12:30:00+01:00",
+ "revisions": [
+  {
+   "claim": "ua-drones-25",
+   "probability": 0.73,
+   "kind": "forecast",
+   "reason": "The Air Force counted 153 drones in the night to Monday, the eighth of the last nine nights at 130 or more (22 of the last 30), and no pause in the attacks was announced (forecasters 0.73, 0.72, 0.73, 0.74, 0.72).",
+   "reason_cs": "Letectvo v noci na pondělí napočítalo 153 dronů; bylo to osmé z posledních devíti nocí se 130 a více drony (22 z posledních 30) a žádná přestávka v útocích ohlášena nebyla (odhady prognostiků 0,73, 0,72, 0,73, 0,74, 0,72).",
+   "sources": [
+    {
+     "title": "Ukrinform: Air defenses neutralize 134 of 153 Russian drones launched at Ukraine overnight (23 Nov, 07:55 CET)",
+     "url": "https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html"
+    },
+    {
+     "title": "Ukrinform: Ukraine ready for four-party talks 'literally tomorrow' – Zelensky (23 Nov)",
+     "url": "https://www.ukrinform.net/rubric-polytics/4187617-ukraine-ready-for-fourparty-talks-to-end-war-as-early-as-tomorrow-zelensky.html"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "ua-drones-25",
+   "at": "2026-11-23T12:27:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-23T12:24:14+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.73,
+     "reason_blind": "Class: own series of Air Force first-summary counts, rolling 30 nights to 23 Nov (n=30). 24 Oct (126) drops out and 153 comes in, so 22/30 at >=130 (Laplace 0.72). +0.05 log-odds because recent nights run high (8/9). Three near-misses at 123-128 and lulls after mass strikes argue against more. No pause announced.",
+     "rounds": [
+      {
+       "at": "2026-11-23T12:24:14+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.73,
+       "reason": "Signals: no market, model or bookmaker on nightly drone counts; unrelated ceasefire market at 0.044. Base rate 22/30 with a slight lift for recent tempo."
+      }
+     ],
+     "at": "2026-11-23T12:26:12+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.73,
+     "reason": "Unchanged after the research round: verified series matches (22/30 >=130, Laplace 0.72), slight lift for 8/9 recent tempo; no lull, weather or mass-strike warning for 23-24 Nov."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-23T12:24:11+01:00",
+     "inputs_blind": [
+      "own-research"
+     ],
+     "p_blind": 0.66,
+     "reason_blind": "Recent Air Force first summaries mostly above 130: 148 (to 21 Nov), 186 (22 Nov), 153 (23 Nov); spokesman cites up to 200/night. No lull or ceasefire found. Some nights still fall to about 100.",
+     "rounds": [
+      {
+       "at": "2026-11-23T12:24:26+01:00",
+       "inputs": [
+        "own-research",
+        "dossier",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.71,
+       "reason": "Last 30 nights 21/30 >=130 (median 155), last 9 nights 8/9; 4th night after a mass strike 4/6; three recent near-misses 123-128. No pause; talks unscheduled."
+      }
+     ],
+     "at": "2026-11-23T12:26:16+01:00",
+     "inputs": [
+      "own-research",
+      "dossier",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.72,
+     "reason": "Verified series matches: 22/30 >=130, median ~155, 8 of last 9. No lull, weather or mass-strike warning; three recent nights at 117-128 show the risk of landing just under. https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html"
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-23T12:24:13+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.72,
+     "reason_blind": "NO case: 9 of 31 nights below 130, clustered (28-30 Oct, 12-14 Nov); three more at 123-128; daytime waves outside the count; possible restocking lull after five nights of 148-404. But 22/31 nights >=130, 8 of last 9, latest 153, no pause, mass strikes all upside.",
+     "rounds": [
+      {
+       "at": "2026-11-23T12:24:16+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.72,
+       "reason": "Signals add nothing (no market or analyst forecast on nightly counts). Series 22/31 (0.71), 8 of last 9, offset by clustered low nights and daytime launches outside the count."
+      }
+     ],
+     "at": "2026-11-23T12:26:22+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.73,
+     "reason": "Research confirms the series (22/30 >=130, median ~155, 8 of last 9, latest 153); the '~80' figure was a shot-down count. No lull, weather or pause. NO case remains clustered low nights (96-128 on 12-14 Nov, 98 on 19 Nov) and daytime launches."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "rounds": [
+      {
+       "at": "2026-11-23T12:24:11+01:00",
+       "inputs": [
+        "signals",
+        "dossier",
+        "reference-data",
+        "overnight-facts"
+       ],
+       "p": 0.74,
+       "reason": "No matching market (markets.mjs 'ukraine drones', 'shahed'). Anchor: empirical share over rolling 30 nights to 23 Nov, 22/30 (0.73); +0.01 for tempo (8/9) and no pause."
+      }
+     ],
+     "at": "2026-11-23T12:26:30+01:00",
+     "inputs": [
+      "signals",
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "union-of-facts"
+     ],
+     "p": 0.74,
+     "reason": "Unchanged. Anchor: empirical share of nights >=130 over the 30 nights to 23 Nov, 22/30 (0.73), no market on nightly counts; +0.01 for 8/9 recent tempo and no lull or pause."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-23T12:24:10+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data"
+     ],
+     "p_blind": 0.55,
+     "reason_blind": "Recent totals found by search: 153 (23 Nov), 117, 148, 126, 193, ~80 (13 Nov), plus a 380 mass strike; typical level 120-150, so 130 near the median. No lull signal.",
+     "rounds": [
+      {
+       "at": "2026-11-23T12:24:14+01:00",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "signals"
+       ],
+       "p": 0.55,
+       "reason": "Signals: no market on nightly counts; spokesman's 'up to 200 a night' is descriptive. Keeps the blind estimate."
+      }
+     ],
+     "at": "2026-11-23T12:26:08+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.72,
+     "reason": "Corrected data: 22 of 30 nights >=130, median ~155 (the '~80' was a shot-down count, total 117); 9 of last 14 >=130 with lows of 96-123 interspersed. No lull signal; shaded slightly below 73% for clustering of quiet nights."
+    }
+   ],
+   "combined": 0.7281,
+   "combination": {
+    "method": "geo-odds",
+    "version": "2026-11-23"
+   },
+   "calibrated": null,
+   "spread": 0.02,
+   "market_search": "markets.mjs search \"ukraine drones\", \"shahed\" (anchor, 2026-11-23 ~11:24Z): no market on nightly drone counts.",
+   "market": null,
+   "research": {
+    "at": "2026-11-23T12:25:32+01:00",
+    "question": "Is the recent typical Air Force first-summary UAV total about 120-150 (median near 130), or mostly at or above 130 (22 of the last 30 nights)?",
+    "finding": "Round one spanned 19 points (outsider 0.55). The 30-night series holds: nights to 10-14 Nov 162, 163, 123, 117, 96; to 15-22 Nov 132, 158, 306, 141, 98, 404, 148, 186; to 23 Nov 153; 22 of 30 at or above 130, median about 155. The '~80 on 13 Nov' figure the outsider used was the number shot down (80 of 117). No announced lull, weather factor or mass-strike warning for 23-24 Nov. All five reran with this union of facts; round-one numbers are kept in each agent's rounds.",
+    "sources": [
+     {
+      "title": "Ukrinform: Air defense downs 80 of 117 Russian drones (13 Nov)",
+      "url": "https://www.ukrinform.net/rubric-ato/4184168-air-defense-downs-80-of-117-russian-drones-launched-overnight.html"
+     },
+     {
+      "title": "Ukrinform: 81 of 96 (14 Nov)",
+      "url": "https://www.ukrinform.net/rubric-ato/4184585-air-defenses-neutralize-81-of-96-drones-launched-by-russia-against-ukraine-since-evening.html"
+     },
+     {
+      "title": "Ukrinform: 134 of 153 (23 Nov)",
+      "url": "https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html"
+     }
+    ]
+   },
+   "disagreement": {
+    "cause": "inputs",
+    "note": "Round one spanned 0.55-0.74: the outsider, without the dossier, had read a shot-down count (80) as a night's total. Given the union of facts all five reran once (0.72-0.74). No forecaster relied on a market; none exists."
+   },
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-23T12:26:44+01:00",
+    "case_for_morning": "A +10-point jump on one ordinary night is too much: 153 is about the median and moves the 30-night share only from 21/30 to 22/30. The claim's night is the fourth after the 20 Nov 404-drone strike, and only 4 of 6 such nights reached 130. Lull clusters (28-30 Oct, 12-14 Nov) and near-misses (123, 126, 128) remain; heavy daytime jet-drone waves on 23 Nov may come at the expense of the night count.",
+    "case_for_larger": "The last 9 nights went 8/9 and the last 14 went 10/14; the Air Force spokesman speaks of up to 200 drones a night; no pause, talks have no date; retaliation for the Crimean Bridge strikes is pending and 7 of 30 nights were mass strikes far above 130. A persistent high regime could justify 75-78%.",
+    "verdict": "The revision is right: 73% equals the confirmed 30-night rate (22/30), so most of the change corrects a morning figure pulled down by one forecaster's misread count rather than overreacting to 153. The fourth-night 4/6 and the 8/9 streak are small samples pulling opposite ways. No unweighed fact; nothing sent back.",
+    "unweighed_facts": false
+   },
+   "fact_timing_note": "The Air Force summary for the night to 23 Nov came out about 08:00 Kyiv (Ukrinform 07:55 CET), after the morning freeze at 05:20 CET; the morning dossier recorded that night as not yet published.",
+   "new_fact_kind": "outcome (slip_class none; no timing factor)"
+  }
+ ],
+ "meta": {
+  "unreachable": [
+   "ukmto.org",
+   "apnews.com",
+   "parliament.uk",
+   "psp.cz",
+   "irozhlas.cz",
+   "europarl.europa.eu plenary agenda (404)"
+  ],
+  "not_revised": "Other claims: no material new fact by 12:30. Portugal's amendment votes ran into a fourth day to finish before Tuesday's final vote (ECO, 23 Nov), which is still scheduled; the Constitutional Court still lists the public announcement of the Czech Radio ruling for Tue 24 Nov 14:00 (usoud.cz); ČSÚ, ifo, Conference Board, Dell and HP dates confirmed; EP agenda for Tuesday is adopted only at the Monday 17:00 sitting, no postponement request found."
+ },
+ "factcheck": {
+  "flags": 4,
+  "checked": 4,
+  "wrong": 4,
+  "right": 0,
+  "open": 0
+ }
+}
