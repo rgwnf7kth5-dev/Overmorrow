@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-22T18:47:38.796Z",
+  "as_of": "2026-11-23T03:08:56+01:00",
   "timezone": "Europe/Prague",
   "term": 10,
   "sources": {
@@ -20,6 +20,36 @@
       "status": "completed",
       "file": "data/psp/meetings/10-36.json",
       "source": "https://www.psp.cz/schuze/10/36"
+    },
+    {
+      "number": 3,
+      "status": "interrupted",
+      "file": "data/psp/meetings/10-3.json",
+      "source": "https://www.psp.cz/schuze/10/3"
+    },
+    {
+      "number": 4,
+      "status": "interrupted",
+      "file": "data/psp/meetings/10-4.json",
+      "source": "https://www.psp.cz/schuze/10/4"
+    },
+    {
+      "number": 6,
+      "status": "interrupted",
+      "file": "data/psp/meetings/10-6.json",
+      "source": "https://www.psp.cz/schuze/10/6"
+    },
+    {
+      "number": 15,
+      "status": "interrupted",
+      "file": "data/psp/meetings/10-15.json",
+      "source": "https://www.psp.cz/schuze/10/15"
+    },
+    {
+      "number": 27,
+      "status": "interrupted",
+      "file": "data/psp/meetings/10-27.json",
+      "source": "https://www.psp.cz/schuze/10/27"
     }
   ],
   "latest_vote_date": "2026-11-13",
@@ -71,7 +101,14 @@
         "https://www.psp.cz/eknih/2025ps/stenprot/036schuz/s036026.htm",
         "https://www.psp.cz/sqw/text/text2.sqw?idd=292586"
       ],
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 311/0 dne 22. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 718/26 , PID KORNDY5H6KU4.",
+        "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Mgr. Patrik Pařil a navrhl Rozpočtový výbor jako garanční."
+      ],
+      "last_completed_reading": 2,
+      "deadline_vote_number": 3
     },
     {
       "claim_ids": [
@@ -86,7 +123,12 @@
         "order": 1
       },
       "notes": "První čtení skončilo 22. 10. Návrh pořadu dává druhé čtení na středu jako první bod. Otázka na tabuli vyžaduje třetí čtení.",
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 324/0 dne 30. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 671/26 , PID KORNDYDBN5D6. Dodatky doručeny sněmovně 30. 9. 2026."
+      ],
+      "last_completed_reading": 1
     },
     {
       "claim_ids": [
@@ -99,7 +141,19 @@
       "proposed_item": 10,
       "fixed_slot": null,
       "notes": "Novela zákoníku práce obsahující změny podpory. První čtení skončilo 20. 10., lhůta pro výbory byla stanovena na 30 dnů. Bod 146 pro třetí čtení je v pozvánce označen jako dosud neprojednatelný kvůli druhému čtení.",
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 300/0 dne 8. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 559/26 , PID KORNDSJHRRGS.",
+        "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Ing. Karin Gajdová, Ph.D. a navrhl Výbor pro sociální politiku jako garanční."
+      ],
+      "last_completed_reading": 1,
+      "deadline_vote": 88805,
+      "deadline_vote_number": 216,
+      "other_sources": [
+        "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034209.htm",
+        "https://www.psp.cz/sqw/hlasy.sqw?G=88805"
+      ]
     },
     {
       "claim_ids": [
@@ -109,7 +163,13 @@
       "next_stage": "committee_after_first_reading",
       "eligible_from": "2026-12-24",
       "notes": "Vládní návrh po prvním čtení. Výbor pro média a kulturu 30. 10. přerušil projednávání.",
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 231/0 dne 19. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 449/26 , PID KORNDT4HPGKS.",
+        "O Organizační výbor projednání návrhu zákona doporučil 24. 6. 2026 (usnesení č. 79 ). Určil zpravodaje: Gabriela Sedláčková a navrhl Výbor pro média a kulturu jako garanční."
+      ],
+      "last_completed_reading": 1
     },
     {
       "claim_ids": [
@@ -122,7 +182,17 @@
       "proposed_item": 127,
       "fixed_slot": null,
       "notes": "Novela o rostlinolékařské péči. Po vrácení z třetího čtení skončilo opakované druhé čtení 20. 10. K vyhodnocení otázky doložte i přijetí ustanovení o poplatku ve výsledném znění.",
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 48/0 dne 1. 12. 2025. Návrh zaevidován v systému eKLEP pod čj. OVA 892/25 , PID KORNDMGGSV4S.",
+        "O Organizační výbor projednání návrhu zákona doporučil 17. 12. 2025 (usnesení č. 14 ). Určil zpravodaje: David Pražák a navrhl Zemědělský výbor jako garanční."
+      ],
+      "last_completed_reading": 2,
+      "return_to_second_reading_vote": {
+        "number": 72,
+        "id": 87504
+      }
     },
     {
       "claim_ids": [
@@ -131,7 +201,12 @@
       "print": 369,
       "next_stage": "first_reading",
       "notes": "Vládní návrh předložen 13. 11. Předkladatel žádá souhlas již v prvním čtení podle § 90 odst. 2. Kritérium tabule uvádí třetí čtení. V návrhu 37. schůze nebyl nalezen tisk 369.",
-      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369"
+      "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369",
+      "history_checked_at": "2026-11-23T03:08:56+01:00",
+      "history_entries": [
+        "PS Návrh zákona rozeslán poslancům jako tisk 369/0 dne 13. 11. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 860/26 , PID ALBSDZNKLVC0. Navrhovatel navrhl sněmovně projednávání návrhu zákona tak, aby sněmovna s ním mohla vyslovit souhlas již v prvém čtení ( § 90 odstavec 2 zákona č. 90/1995 Sb , o jednacím řádu Poslanecké sněmovny, ve znění pozdějších předpisů)."
+      ],
+      "last_completed_reading": null
     }
   ],
   "vote_evidence": [
@@ -154,9 +229,15 @@
   ],
   "base_rates": {
     "file": "pipeline/reference-data/cz-chamber.json",
-    "downloaded": "2026-11-22",
+    "downloaded": "2026-11-23",
     "archives": 5,
     "status": "refreshed",
     "latest_vote_in_input": 89028
-  }
+  },
+  "changes": [
+    "Pozvánka na 37. schůzi má 187 číslovaných bodů. Tisk 311 zůstává bodem 148 bez pevného času. Bod STAN k Polsku v pozvánce není.",
+    "Index hlasování končí 13. listopadu. Všechna tři hlasování ověřena podle stenoprotokolu.",
+    "U tisku 300 doloženo hlasování č. 216 (88805) o zkrácení výborové lhůty."
+  ],
+  "vote_index_checked_at": "2026-11-23T03:08:56+01:00"
 }
