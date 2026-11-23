@@ -1,0 +1,129 @@
+{
+ "edition": "2026-11-25",
+ "stories": [
+  {
+   "story": "gulf-shipping",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:26:02Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "eu-semester",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:26:21Z",
+   "searches": 18,
+   "flags": []
+  },
+  {
+   "story": "ep-plenary",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:26:23Z",
+   "searches": 5,
+   "flags": []
+  },
+  {
+   "story": "pt-budget",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:26:28Z",
+   "searches": 8,
+   "flags": [
+    {
+     "statement": "They included a VAT-free basic food basket for the first quarter of 2027, financed by revoking income-tax breaks for landlords letting homes at moderate rents of up to €2,300, and a freeze on university tuition fees.",
+     "in_report": true,
+     "problem": "The report lists the tuition freeze as a tax change. It was a separate education measure: the amendment capped tuition at public higher-education institutions for the 2027–2028 academic year at the previous year's levels.",
+     "source": "https://www.rtp.pt/noticias/economia/chega-e-ps-congelam-propinas-para-ano-letivo-de-2027-2028-contra-vontade-do-governo_n1780592"
+    },
+    {
+     "statement": "Montenegro called the result a 'fiscal patchwork'",
+     "in_report": true,
+     "problem": "On November 20, Montenegro accused the opposition of wanting to turn the budget into a 'fiscal patchwork'; he did not describe the result as one.",
+     "source": "https://eco.sapo.pt/2026/11/20/aqueles-que-veem-nisto-um-caminho-para-uma-crise-politica-estao-a-ver-mal-o-assunto-afirma-montenegro/"
+    }
+   ]
+  },
+  {
+   "story": "cz-court",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:26:39Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "cz-confidence",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:26:46Z",
+   "searches": 7,
+   "flags": []
+  },
+  {
+   "story": "ua-war",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:26:58Z",
+   "searches": 9,
+   "flags": [
+    {
+     "statement": "The Air Force had recorded 186 strike drones in the night to Sunday, 72 of them jet-powered, alongside Gerbera and Parodiya-type decoys",
+     "in_report": true,
+     "problem": "The Air Force's total of 186 already included Gerbera drones and Parodiya-type decoys. They were not counted in addition to the 186.",
+     "source": "https://www.ukrinform.es/amp/rubric-ato/4187317-la-defensa-aerea-neutraliza-161-de-los-186-drones-rusos.html"
+    },
+    {
+     "statement": "In Dnipro, Russian attacks destroyed 18 trolleybuses and damaged a heating pipeline, Ukrinform reported.",
+     "in_report": true,
+     "problem": "Dnipro Mayor Borys Filatov reported 18 trolleybuses with damage to windows, doors, seats and bodies. He identified one technical trolleybus as having burned out completely, not 18 destroyed vehicles.",
+     "source": "https://hromadske.ua/viyna/274824-u-dnipri-pislia-ataky-rf-poshkodzeni-18-troleybusiv-i-teplotrasa-u-misti-zupynylosia-metro-a-u-dymeri-distaly-piate-tilo-iz-zavaliv-piatypoverkhivky"
+    }
+   ]
+  },
+  {
+   "story": "cz-chamber",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:27:02Z",
+   "searches": 21,
+   "flags": []
+  },
+  {
+   "story": "us-confidence",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:27:05Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "de-ifo",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:27:15Z",
+   "searches": 10,
+   "flags": []
+  },
+  {
+   "story": "dell",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-23T05:27:19Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "hp",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-23T05:27:21Z",
+   "searches": 9,
+   "flags": []
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-23T05:27:21Z"
+}
