@@ -788,6 +788,71 @@
           ],
           "note": "Weekly re-forecast: the record of the 5 Nov meeting shows a 4–3 vote for the hike to 4.00% and no member arguing for a cut, so a December cut below 4% is very unlikely.",
           "note_cs": "Týdenní přepočet: záznam z jednání 5. listopadu ukazuje hlasování 4:3 pro zvýšení na 4,00 % a nikdo z členů rady nenavrhoval snížení, takže prosincové snížení pod 4 % je velmi nepravděpodobné."
+        },
+        {
+          "at": "2026-11-24T20:05:00+01:00",
+          "p": 0.97,
+          "combined": 0.967,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.97,
+              "reason": "The repo rate has stood at 4.00% since the 5 Nov hike, so No requires a cut on 17 Dec. Since 2022 the ČNB has never cut at the meeting right after a hike (central-banks.json), and the minutes show no member arguing for a cut. The 4–3 vote still leaves a small tail if inflation drops sharply.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.96,
+              "reason": "The repo rate has been 4.00% since the 5 Nov hike (4-3 vote, no member for a cut), and nothing new has come out of the ČNB. Only a cut on 17 Dec, one meeting after a hike, would resolve No.",
+              "inputs": [
+                "own-research",
+                "board-history"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.98,
+              "reason": "The rate is already 4.00%, so only a cut on 17 Dec would give a no. The 5 Nov hike passed 4-3 with the minority voting to hold, nobody argued for a cut, and no new data since then points that way; the residual is an extraordinary shock.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.97,
+              "reason": "No market (markets.mjs search 'Czech National Bank' found none). The repo rate has been 4.00% since the 4-3 hike on 5 Nov and the record shows no member arguing for a cut. Only a cut on 17 Dec, one meeting after a hike, resolves NO, and there is no news pointing that way.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.95,
+              "reason": "CNB hiked 25bp to 4.00% on 5 Nov, so the rate is already at the threshold. A cut by 17 Dec, six weeks after a hike, would be an extreme reversal, and a hold or a further hike resolves yes.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast: the repo rate has stood at 4.00% since the 5 Nov hike; only a cut on 17 Dec resolves no, and no board member has argued for one. Nothing new since 17 Nov.",
+          "note_cs": "Týdenní přepočet: repo sazba je od zvýšení 5. listopadu na 4,00 %; záporně by otázku rozhodlo jen snížení 17. prosince, pro které se žádný člen bankovní rady nevyslovil. Od 17. listopadu nic nového."
         }
       ],
       "result": null
@@ -3941,6 +4006,78 @@
           },
           "note": "Re-forecast after material news: Eisenkot said on 20 Nov he will keep the mandate and put a minority government to a vote if the other tracks fail; Liberman rejected that on 21 Nov; Eisenkot's bloc and Likud meet again on 22 Nov; the mandate expires on 6 Dec with no deal. Polymarket's \"formed by\" ladder fell (31 Dec 0.365, 28 Feb 0.585).",
           "note_cs": "Přepočet po podstatné zprávě: Eisenkot 20. listopadu uvedl, že si mandát ponechá, a pokud ostatní cesty selžou, předloží ke schválení menšinovou vládu; Liberman to 21. listopadu odmítl; Eisenkotův blok a Likud se znovu sejdou 22. listopadu; mandát vyprší 6. prosince a dohoda zatím není. Na Polymarketu klesly ceny sázek na vznik vlády (do 31. prosince 0,365, do 28. února 0,585)."
+        },
+        {
+          "at": "2026-11-24T20:05:00+01:00",
+          "p": 0.54,
+          "combined": 0.544,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.5,
+              "reason": "The base rate is 4 of 6 (2015–2022) for a government within 96 days, but the deadlocked subset (2019a, 2019b, 2020, 2021) is about 2 of 4 (0.5). UTJ's rabbinic authorisation to formalise talks and the resumed Likud unity track add about 0.1 in log-odds. The 6 Dec mandate expiry (extendable to about 20 Dec) and Liberman's veto of a minority government take about as much away. Polymarket interpolation is about 0.48.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.5,
+              "reason": "On 24 Nov UTJ's rabbis authorised Asher to formalise coalition talks with Eisenkot, and Eisenkot's draft-law plan meets their exemption demand. Yashar-Likud unity talks resumed on 23 Nov, with Bennett backing unity under Eisenkot as first PM, and Eisenkot plans to declare a path to a government. Nothing is signed and Liberman still opposes a Haredi-dependent or minority government. The mandate runs to 6 Dec (extendable to about 20 Dec), so this is slightly better than last week's 0.45, at about even.",
+              "inputs": [
+                "own-research",
+                "board-history"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.5,
+              "reason": "Case against: no deal is signed 16 days into the mandate, Liberman vetoes a minority government, UTJ's draft-exemption demands collide with Eisenkot's partners, and Netanyahu gains from stalling the unity talks. But UTJ's rabbis have authorised formal talks, Likud talks resumed on 23 Nov, and the clock (extension to about 20 Dec, then a second 28-day mandate) still fits inside 31 Jan; Polymarket's ladder (0.365 by 31 Dec, 0.585 by 28 Feb) points to about an even chance.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.51,
+              "reason": "Polymarket's ladder rose: 'formed by 31 Dec' is 0.465 (vol ~91k) and 'by 28 Feb' 0.595 (vol ~44k), which interpolates to about 0.53 for 31 Jan ('formed' means the Knesset confidence vote). UTJ's rabbis authorising formal coalition talks with Eisenkot and resumed Yashar-Likud unity talks support the rise. I shade slightly down because Liberman opposes a minority government, Bennett warns against rushing one, and the mandate ends on 6 Dec (extendable to about 20 Dec) with no deal.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.7,
+              "reason": "Eisenkot holds the mandate to 6 Dec, extendable 14 days, and his side won the speaker vote 66-52; Likud-Yashar unity talks continue with no deal yet. The 2022 election produced a government in 58 days, and 31 Jan is 96 days after this vote, but failure of the mandates would push the country back to elections.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+            "p": 0.53,
+            "read_at": "2026-11-24T19:17:21+01:00",
+            "note": "Partial match: no 31 Jan rung; linear interpolation between 'by Dec 31' 0.465 and 'by Feb 28' 0.595; the thin 'by Dec 15' rung is 0.37."
+          },
+          "note": "UTJ received rabbinical approval on 24 Nov to formalise coalition talks with Eisenkot, and Likud–Yashar unity talks resumed on 23 Nov; nothing is signed, Liberman opposes a minority government, and the mandate runs to 6 Dec (extendable to about 20 Dec).",
+          "note_cs": "Strana UTJ dostala 24. listopadu souhlas rabínů k formálním koaličním jednáním s Eisenkotem a 23. listopadu se obnovila jednání Likudu a Jašar o jednotě; nic není podepsáno, Liberman odmítá menšinovou vládu a mandát platí do 6. prosince (s možným prodloužením zhruba do 20. prosince)."
         }
       ],
       "result": null
@@ -7063,6 +7200,78 @@
             "read_at": "2026-11-17T18:06:36Z"
           },
           "market_note": "The Polymarket buckets for a December hike (0.98) sit 10 points above us; we keep some weight on a pause after the 4.0% October flash is revised and on the ECB's data dependence."
+        },
+        {
+          "at": "2026-11-24T20:05:00+01:00",
+          "p": 0.91,
+          "combined": 0.915,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.92,
+              "reason": "Outcomes that matched a strong (>85%) poll consensus held about 0.85 of the time (approximate, n not filled), and the ECB rarely surprises markets once its chief economist has pre-signalled a move. Lane's 'prudent' and Nagel's 'rather obvious' from 10 Nov, plus four more governors on 24 Nov, raise this by about 0.7 in log-odds. The main residual risk is a soft November flash HICP around 1–2 Dec; Polymarket was at 0.98 on 17 Nov.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.9,
+              "reason": "On 24 Nov Sleijpen ('direction appears clear'), Kazaks (rates must rise, market pricing reasonable) and Kaasik again signalled a December hike, adding to Lane and Nagel, with inflation at 4.0% and Ifo steady. Polymarket prices about 0.97. The remaining risk is a soft November flash HICP (about 1-2 Dec) or a sharp fall in oil.",
+              "inputs": [
+                "own-research",
+                "board-history"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.91,
+              "reason": "Case against: the November flash inflation figure (about 1-2 Dec) could fall sharply, or market stress could make the Council wait, and a signalled hike has been postponed before. But inflation is at 4.0%, Lane and Nagel endorsed a December hike, and on 24 Nov Sleijpen, Kazaks and Kaasik repeated it, so a hold would now be a real surprise.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.96,
+              "reason": "Polymarket's December ECB ladder prices +25bp at 0.972 and +50bp at 0.0055, so about 0.978 for any hike against 0.022 for no change. Several governors (Sleijpen, Kazaks, Kaasik) reaffirmed a December hike on 24 Nov. I take a small haircut for the thin volume (~43k) and for the November flash HICP due around 1-2 Dec.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.85,
+              "reason": "The deposit rate is 2.50% after the 29 Oct hold. A Reuters poll on 8 Oct expected a December hike, and a 24 Nov Nordea note headlined the hike as almost certain, with hawkish Bundesbank comments. The main risk is a data or market shock before 17 Dec.",
+              "inputs": [
+                "own-research",
+                "reference-data"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/ecb-interest-rates-december-2026",
+            "p": 0.978,
+            "read_at": "2026-11-24T19:17:09+01:00",
+            "note": "Sum of the +25bp (0.972) and +50bp (0.0055) outcomes; matching meeting and criterion."
+          },
+          "note": "Weekly re-forecast: on 24 Nov governors Sleijpen, Kazaks, Kaasik and Simkus again signalled a December hike, after Lane and Nagel; remaining risk is a soft November flash inflation figure (1–2 Dec).",
+          "note_cs": "Týdenní přepočet: guvernéři Sleijpen, Kazaks, Kaasik a Simkus 24. listopadu znovu naznačili prosincové zvýšení sazeb, po Laneovi a Nagelovi; zbývajícím rizikem je slabší rychlý odhad listopadové inflace (1.–2. prosince)."
         }
       ],
       "result": null
@@ -14879,6 +15088,87 @@
           "note": "Weekly re-forecast with new polls: Demócrata's average of 19 pollsters (21 Nov) has PP 31.0, PSOE 27.8, Vox 18.9 and PP+Vox at about 194 seats (majority 176); 40dB (16–20 Nov) has the PP only 0.7 points ahead; the Cortes constitute around 23 Dec, leaving about five weeks to 31 Jan for an investiture that needs Vox.",
           "note_cs": "Týdenní přepočet s novými průzkumy: průměr 19 agentur serveru Demócrata (21. listopadu) dává PP 31,0 %, PSOE 27,8 % a Vox 18,9 %, PP a Vox dohromady asi 194 mandátů (většina je 176); 40dB (16.–20. listopadu) má PP před PSOE jen o 0,7 bodu; Cortes se ustaví kolem 23. prosince, takže na investituru, k níž je potřeba Vox, zbývá do 31. ledna asi pět týdnů.",
           "market_note": "Polymarket \"Next Prime Minister of Spain\" prices Feijóo at 0.875 (about $1.06m traded, read 21 Nov ~18:08Z), but it has no 31 Jan deadline; our question adds the timing of the investiture, so it is not a match."
+        },
+        {
+          "at": "2026-11-24T20:05:00+01:00",
+          "p": 0.39,
+          "combined": 0.387,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.44,
+              "reason": "Projections now range from PP+Vox 172 (SW) to 191 (Demócrata average), and Spanish polls overstated the right in 2023. The PP needs Vox's yes votes, not its abstention, because PSOE plus the others outnumber the PP. With a seat sd of about 12 around 183, P(PP+Vox at least 176) is about 0.72. Successful investitures with a clear majority came 1–4 weeks after the Cortes constituted (2004, 2008, 2011), but a PP–Vox pact over the holidays from 23 Dec is slower, at about 0.6. That gives about 0.44, down from 0.48 as PSOE gained.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:20:00+01:00",
+              "p": 0.41,
+              "reason": "The final polls diverge. Demócrata's 22 Nov average has PP+Vox at 191 seats (down from 194), SW Demoscopia's tracking has the PSOE ahead with PP+Vox at 172, short of 176, and the CIS puts the PSOE 10 points up. I put a PP+Vox majority at about 0.68. With the Cortes constituting around 23 Dec, Christmas in between and Vox's yes votes needed, I give about 0.6 for a successful investiture by 31 Jan if that majority exists.",
+              "inputs": [
+                "own-research",
+                "board-history"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.3,
+              "reason": "Case against: the last polls before the blackout moved towards the PSOE (SW Demoscopia tracking puts PP plus Vox at 172, four short; poll of polls still 191), so a right-wing majority is roughly a two-in-three chance rather than a given. Even with one, the Cortes constitute around 23 Dec and past investitures came five to six weeks after that (2019: 3 Dec to 7 Jan; 2023: 17 Aug to late Sep), which lands on or past 31 Jan, and Vox with some 50-60 seats has every reason to bargain slowly for cabinet seats.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-24T19:25:00+01:00",
+              "p": 0.5,
+              "reason": "Polymarket gives Feijóo 0.895 as next PM (vol ~1.5m) but sets no deadline. Polls have narrowed: Demócrata's average has PP 31.0 vs PSOE 29.4 (lead model leadabove 1.6 3.5 0 = 0.68) and PP+Vox at 191 seats, but SW projects 172, four seats short of the 176 majority. With PP+Vox at about 186±12 seats I get about 0.78 for a majority. Multiplying by about 0.65 for timing gives about 0.50: the Cortes constitute around 23 Dec, Christmas falls in the window, Vox's yes vote must be negotiated, and in 2023 the investiture came six weeks after the Cortes constituted.",
+              "inputs": [
+                "reference-data",
+                "board-history"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-24T19:40:00+01:00",
+              "p": 0.3,
+              "reason": "With the 29 Nov snap election, PP+Vox reach 176 seats in roughly half of poll scenarios (191 Demócrata, 172 SW Demoscopia, far lower on CIS). Even then Feijóo needs Vox to commit and a vote held in January, after the Cortes constitute around 23 Dec; in 2023 the investiture came about 2 months after the election. I put about 50% on a majority times about 60% on the vote happening and succeeding by 31 Jan.",
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "union-of-facts"
+              ],
+              "rounds": [
+                {
+                  "p": 0.03,
+                  "at": "2026-11-24T19:20:00+01:00",
+                  "reason": "before union of facts"
+                }
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-prime-minister-of-spain-20260625005215443",
+            "p": 0.895,
+            "read_at": "2026-11-24T19:17:27+01:00",
+            "note": "Partial match: 'Feijóo next PM' has no 31 Jan deadline, so it is a ceiling; timing discount applied."
+          },
+          "note": "Final polls before the 29 Nov election diverge: Demócrata average gives PP+Vox 191 seats, SW Demoscopia 172 with the PSOE ahead, CIS a 10-point PSOE lead; even with a right-wing majority, an investiture by 31 Jan must fit between the Cortes constituting about 23 Dec and the holidays.",
+          "note_cs": "Poslední průzkumy před volbami 29. listopadu se rozcházejí: průměr Demócrata dává PP a Vox 191 křesel, SW Demoscopia 172 s náskokem PSOE, CIS desetibodový náskok PSOE; i při pravicové většině se musí volba premiéra do 31. ledna vejít mezi ustavení Cortes kolem 23. prosince a svátky.",
+          "market_note": "Polymarket (Feijóo next PM, 0.895) has no deadline; this question needs an investiture by 31 Jan, so the market is only a ceiling."
         }
       ]
     },

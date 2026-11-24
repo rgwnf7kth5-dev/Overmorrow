@@ -1,0 +1,71 @@
+# eu-summit-27
+- **Claim (binary):** EU leaders meeting in Brussels on Thursday 26 November 2026 politically agree that Pablo Hernández de Cos should be the next President of the European Central Bank.
+- **Criterion:** YES if, by 23:59 Brussels time on Thu 26 Nov 2026, the leaders at the Euro Summit / special European Council in Brussels agree on (endorse, back, settle on) Pablo Hernández de Cos as their candidate to succeed Christine Lagarde as ECB President, as stated by European Council President António Costa (statement, post on X, press remarks), in a Euro Summit statement, European Council text or press release on consilium.europa.eu, or as reported by at least two of Reuters, AP, AFP, Bloomberg, EFE, dpa, Euronews or Politico Europe citing officials or leaders. The formal Council recommendation and the European Council appointment decision (Art. 283(2) TFEU) are not required. The agreement must be reached and made public by 23:59 on 26 Nov; an agreement first announced after midnight (night session) or on Fri 27 Nov counts as NO. NO also if leaders back another person, defer the choice to the Eurogroup/ECOFIN or a later summit, or if the ECB item is not taken on Thursday. If reports only appear on 27 Nov but state that the agreement was made and announced on 26 Nov before midnight, YES.
+- **Event window:** 2026-11-26T10:00:00+01:00 to 2026-11-26T23:59:00+01:00 (Europe/Brussels)
+- **Evidence expected:** Costa post/press remarks; Euro Summit statement; agency flashes (Reuters/AFP/EFE) Thursday afternoon or evening. evidence_at 2026-11-27T09:00:00+01:00.
+- **Resolves by:** 2026-11-28T05:00:00+01:00
+- **Written at:** 2026-11-24T19:05:00+01:00 (2026-11-24T18:05Z)
+- Case key: ecb-presidency-succession (story eu-summit; the MFF/Ukraine side of the summit is under eu-mff-2028-2034, see eu-ukr-27).
+
+## Schedule
+- Costa's invitation letter (24 Nov), via Eunews https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/ (published 2026-11-24 11:06, read 2026-11-24T17:55Z) "the appointment of new leadership at the European Central Bank (ECB), 'with a view to a timely decision' … Costa decided to begin proceedings 'on Thursday 26 November at 10.00 am with a Euro Summit in inclusive format.' In addition to Lagarde, the President of the European Council has invited the President of the Eurogroup, Kyriakos Pierrakakis"; then exchange with Metsola, then MFF and Ukraine financing, "a break for bilaterals"; "When proceedings resume on Friday, Costa will share his conclusions. 'I expect to conclude the proceedings on Friday'".
+- Same letter via Ukrinform/Bytes Europe https://www.byteseu.com/2543061/ (published 2026-11-24 10:01Z, read 2026-11-24T17:54Z) "Costa said the leaders would also discuss the renewal of the European Central Bank's leadership to ensure that a decision is made in a timely manner. The meeting will begin at 10:00 a.m. on Thursday, November 26, with an inclusive-format Euro Summit."
+- The letter as quoted does not say on which day or in which session the ECB item is taken. The primary page on consilium.europa.eu refused scripted reading (HTTP 403).
+
+## Facts
+- Two candidates only: Hernández de Cos (Spain, BIS General Manager) and Klaas Knot (Netherlands) — Euronews https://www.euronews.com/2026/11/13/france-and-germany-near-deal-on-de-cos-for-ecb-top-job-as-eu-confirms-two-candidates (published 2026-11-13 18:35, read 2026-11-24T17:54Z) "The Eurogroup confirmed both nominations last week."
+- Costa's aim: political agreement at this summit — EFE copy via TodoAlicante https://www.todoalicante.es/english/leaders-settle-leadership-reshuffle-20261113031132-nt.html (published 2026-11-13 16:37, read 2026-11-24T17:55Z) "Costa has conveyed his ambition to EU leaders to reach a political agreement on the distribution of top posts at the Eurobank during the November summit, scheduled to take place in Brussels on 26 November"; "Costa will launch initial consultations with the European Parliament and the ECB Governing Council at the leaders' summit on 26 November." Euronews 13 Nov (above) carries the same: Costa "aims to begin consulting the European Parliament and the ECB's Governing Council at the EU summit on 26 November, the official said."
+- Franco-German package: on 20 Nov France nominated Laurence Boone (market operations, replacing Schnabel) and Germany Markus Brunnermeier (chief economist, replacing Lane); Pierrakakis forwarded the names to Costa — Demócrata (Europa Press) https://www.democrata.es/en/economy/france-and-germany-close-their-candidates-for-the-ecb-and-clear-the-way-for-de-cos/ (published 2026-11-20 18:54, read 2026-11-24T17:55Z) "the Spanish candidate continues to measure himself against … Klaas Knot, the two only names officially put forward".
+- Moncloa.com https://www.moncloa.com/2026/11/20/cupula-bce-brunnermeier-boone-3471907/ (published 2026-11-20 23:53, read 2026-11-24T17:55Z) "la nominación corresponde al Consejo Europeo, que se reúne los próximos jueves 26 y viernes 27 de noviembre en Bruselas"; "Fuentes diplomáticas neerlandesas insisten en que sigue en la carrera, y en Bruselas se lee su resistencia como una forma de negociar otro puesto".
+- Expansión via HeadTopics https://es.headtopics.com/news/pablo-hern-ndez-de-cos-se-acerca-a-la-presidencia-del-bce-y-90056207 (published 2026-11-21 10:49Z, read 2026-11-24T17:55Z) "El banquero central español ha asegurado los apoyos necesarios … independientemente de lo que ocurra con el neerlandés, pero una retirada aceleraría el proceso"; Knot seeks the ESM top job; if he stays in, it "dilataría el proceso incluso pudiendo llegar a forzar una votación de los líderes de la UE, que se citan el 26 y el 27 de noviembre"; eurozone ministers "están pendientes de la retirada de Knot … para poder emitir la recomendación de De Cos".
+- Spain pushes for a deal at this summit: FM Albares (Bloomberg interview via Europa Press) — Demócrata https://www.democrata.es/en/economy/the-government-urges-closing-the-deal-to-renew-the-ecb-s-dome-as-soon-as-possible/ (published 2026-11-16 19:09, read 2026-11-24T17:55Z) asked whether it could be settled "next week at the European summit in Brussels": "the sooner, the better for Europe".
+- EUobserver opinion (18 Nov) https://euobserver.com/249823/what-kind-of-ecb-is-europe-getting-after-lagarde/ (read 2026-11-24T17:54Z) "Paris and Berlin appear to have struck a deal, and that De Cos will almost certainly be Lagarde's successor. … This came as a disappointment in The Hague".
+- Formal route afterwards (agenda sweep, Eunews 4 Nov): Eurogroup 10 Dec, ECOFIN 11 Dec recommendation, European Council 17–18 Dec appointment — https://www.eunews.it/en/2026/11/04/ecb-the-post-lagarde-era-begins-on-9-november/ (not re-read tonight; from scratchpad sweep/world.json). Lagarde leaves 7 Feb 2027 (ECB press release 29 Oct, data/watchlist.json).
+- Legal basis: the European Council appoints by qualified majority on a Council recommendation (Art. 283(2) TFEU) — a single holdout cannot block; a political endorsement at a summit is customarily by consensus.
+- No report found (as of 2026-11-24T18:00Z) that Knot has withdrawn; no report stating on which day of the summit the ECB item will be taken.
+
+## Base rate
+- hint (n = 2): the two last ECB presidencies settled by leaders. 2019: leaders agreed on Lagarde as part of the top-jobs package at the European Council of 30 Jun–2 Jul 2019, on the third day (Euronews 2 Jul 2019 headline "EU leaders seek to break stalemate on top jobs", https://www.euronews.com/2019/07/02/eu-leaders-seek-to-break-stalemate-on-top-jobs , search snippet only). 2011: Draghi — Eurogroup/ECOFIN first, European Council appointment on 24 Jun 2011 (general knowledge, not re-checked). Neither was settled on the first day of a summit where it was the side item.
+- Wider class of ten: none found. No reference class in pipeline/reference-data/ covers "a top-job endorsement by EU leaders on the first day of a summit". The closest own-record class, scheduled-appearance-takes-place (pipeline/reference-classes.json, 0.92), is about a meeting taking place, not its outcome, and does not fit.
+- How this case differs: only two candidates, France and Germany both behind Hernández de Cos (Germany formally from 17 Nov per data/watchlist.json history), the item is announced for this summit and Costa's stated aim is a political agreement there; but the summit's main business (MFF, Ukraine) runs into Friday and Knot has not withdrawn.
+
+## Case record
+## Case record: ecb-presidency-succession
+Earlier claims of this running story in our editions, oldest first (5; 0 still pending). Outcomes are from data/resolutions.
+- edition 2026-11-01 (events of 2026-10-31), ecb-candidate-31: Formal nomination or deadline in the race for ECB President — did not happen
+- edition 2026-11-07 (events of 2026-11-06), ecb-nom-1: Spain confirms de Cos nomination — happened
+- edition 2026-11-07 (events of 2026-11-06), ecb-nom-2: A third ECB candidate is named — did not happen
+- edition 2026-11-08 (events of 2026-11-07), ecb-list-1: Eurogroup names de Cos and Knot — happened
+- edition 2026-11-08 (events of 2026-11-07), ecb-list-2: Eurogroup names at least three ECB candidates — did not happen
+
+(No earlier claim asked the same question: leaders' endorsement of a named candidate on a given day.)
+
+## Schedule slip
+- slip_class summit-or-visit: `node scripts/refdata/slip.mjs summit-or-visit` → prior 0.04, own 0/42, rate 0.006 [estimate] (run 2026-11-24T17:54Z). The summit itself is very unlikely to move; the risk here is that the ECB item is taken on Friday or deferred, not that the summit slips.
+
+## Risks
+- **Timing within the summit:** Costa's letter puts the Euro Summit (with Lagarde) first on Thursday and "conclusions" on Friday; if the ECB choice is folded into Friday's wrap-up or the final press conference, the claim is NO.
+- **Knot stays in:** the Netherlands may refuse consensus; Expansión says this could force a vote or delay the process. Leaders might leave the formal choice to the Eurogroup (10 Dec) and ECOFIN (11 Dec).
+- **Package bargaining:** the ECB seats are negotiated as a package (Boone, Brunnermeier, possibly an ESM post for Knot); a hitch on any part, or linkage to MFF/Ukraine horse-trading, can delay the announcement.
+- **Night session:** if agreement comes after midnight it counts as NO.
+- **Muted wording:** Costa may say leaders "had a good discussion" and "will take a decision in December" without naming anyone — NO under the criterion.
+
+## Sources
+- https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/
+- https://www.byteseu.com/2543061/
+- https://www.euronews.com/2026/11/13/france-and-germany-near-deal-on-de-cos-for-ecb-top-job-as-eu-confirms-two-candidates
+- https://www.todoalicante.es/english/leaders-settle-leadership-reshuffle-20261113031132-nt.html
+- https://www.democrata.es/en/economy/france-and-germany-close-their-candidates-for-the-ecb-and-clear-the-way-for-de-cos/
+- https://www.democrata.es/en/economy/the-government-urges-closing-the-deal-to-renew-the-ecb-s-dome-as-soon-as-possible/
+- https://www.moncloa.com/2026/11/20/cupula-bce-brunnermeier-boone-3471907/
+- https://es.headtopics.com/news/pablo-hern-ndez-de-cos-se-acerca-a-la-presidencia-del-bce-y-90056207
+- https://www.eldebate.com/economia/20261122/bueno-espana-hernandez-cos-presida-banco-central-europeo_483600.html (opinion, 22 Nov; formal decision lies with the European Council)
+- https://euobserver.com/249823/what-kind-of-ecb-is-europe-getting-after-lagarde/
+- https://eualive.net/toxic-linkage-why-this-eu-summit-is-unlikely-to-deliver-on-budget-or-ukraine/ ("Proceedings are expected to run from a Euro Summit on Thursday morning through to conclusions on Friday")
+- scratchpad sweep/world.json, sweep/econ.json (MLex 13 Nov headline; Infobae 21 Nov); data/watchlist.json (eu-ecb-president-nominated-2026)
+- WebSearch: 4 queries on the ECB race (shared budget for this task: 6 of 10 used in total).
+
+## Unreachable
+- consilium.europa.eu (meeting pages and invitation letter: HTTP 403)
+- investing.com (HTTP 403)
+- Politico Europe, Reuters (not tried: refuse scripted reading)

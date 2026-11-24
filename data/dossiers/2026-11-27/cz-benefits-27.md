@@ -1,0 +1,65 @@
+# cz-benefits-27
+- **Claim:** The Chamber of Deputies completes the second reading of the government Labour Code amendment that cuts unemployment benefits (sněmovní tisk 300) on Thursday 26 November 2026.
+- **Criterion:** YES if, between 00:00 and 23:59 on Thu 26 Nov 2026 (Europe/Prague), the Chamber of Deputies closes the second reading of the government bill amending the Labour Code (zákon č. 262/2006 Sb.) and related laws (sněmovní tisk 300, which carries the cut to unemployment benefits through the Employment Act) — both the general and the detailed debate closed, so the bill passes to third reading — as shown by psp.cz (bill history or stenographic record) or reported by ČTK, ČT24 or another major Czech outlet. NO if the second reading of print 300 is not opened on 26 Nov, is interrupted or adjourned, or is still open at 23:59 (it closes on 27 Nov or later), or if the bill is returned to the government or a committee. Print 301 (platform-work act) does not affect the result. A report published after midnight about a reading closed before 23:59 on 26 Nov counts.
+- **Event window:** 2026-11-26T00:00+01:00 – 2026-11-26T23:59+01:00 (Europe/Prague); bills slot from 11:00, oral interpellations fixed at 14:30.
+- **Evidence expected:** ČTK/ČT24 reports Thursday afternoon/evening; psp.cz bill history (historie.sqw?o=10&t=300) and stenographic record when reachable. evidence_at 2026-11-26T20:00+01:00.
+- **Resolves by:** 2026-11-28T05:00:00+01:00
+- **Written at:** 2026-11-24T19:05:00+01:00
+
+## Schedule
+- Print numbers and titles verified in the desk snapshot data/psp/meetings/10-37.json (observed from https://www.psp.cz/schuze/10/37, as_of 2026-11-24T17:07+01:00): item 10 "Vládní návrh zákona, kterým se mění zákon č. 262/2006 Sb., zákoník práce, ve znění pozdějších předpisů, a některé další zákony v souvislosti s přijetím zákona o platformové práci a v souvislosti s posílením uplatňování zásady stejné odměny mužů a žen za stejnou práci nebo práci stejné hodnoty /sněmovní tisk 300/ – druhé čtení", **17 registered speakers**, no web note (no fixed day/order shown); item 11 "Vládní návrh zákona o platformové práci /sněmovní tisk 301/ – druhé čtení", 6 registered speakers. Third-reading items 146/147 marked "(nebylo ukončeno druhé čtení)". (There is no separate Employment Act print for the cut; print 364 is a different Employment Act amendment in first reading, item 44.)
+- Day order in the same snapshot (status **proposed**): Thu 26 Nov: "186" (written interpellations, from 09:00), "v 11.00 hodin: body dle návrhu pořadu schůze", "ve 14.30 hodin: 187" (oral interpellations). Wed 25 Nov is the budget's second reading (item 1, fixed). Fri 27 Nov: "případně body z bloku 3. čtení", then agenda items.
+- The snapshot's opening announcements record only the budget as fixed ("Druhé čtení rozpočtu 25. listopadu je pevně zařazeno"); **no fixed slot for print 300 on Thursday 11:00 is recorded** as of 17:07 on 24 Nov. Agenda vote no. 2 of meeting 37 (16:50, "Pořad schůze", 88 yes / 44 no / 37 abstained of 169) — data/psp/votes/2026-11-24.json; its exact content awaits the stenographic record. Whether the coalition fixed print 300 at 11:00 Thursday could not be confirmed (psp.cz unreachable). If not fixed, Thursday 11:00 continues "body dle návrhu pořadu", i.e. items in order, and items 2–9 (minor second readings) would come before item 10 unless dealt with earlier.
+- ČTK 24 Nov — https://www.ceskenoviny.cz/zpravy/odbory-odmitaji-jakekoli-upravy-ktere-snizi-podpory-v-nezamestnanosti-rekl-stredula/2906055 (published 2026-11-24 16:09, read 2026-11-24T17:54Z) "Okamura dnes ráno novinářům při odchodu z jednání koaliční rady řekl, že dohodu oznámí na tiskové konferenci ve Sněmovně. Původně se měla konat dnes, byla však přesunuta na středu. Sněmovna by kvůli tomu novelu měla projednat až ve čtvrtek."
+- ČT24 live, 24 Nov — https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888 (published 2026-11-24T14:02+01:00, modified 17:46, read 2026-11-24T17:54Z) "Sněmovna by kvůli tomu novelu neměla projednat ve druhém čtení v úterý, ale až ve čtvrtek." Same page: "Ani několik hodin po začátku jednání dolní komora dosud neschválila program schůze. Sněmovna bude moci po měsíci opět jednat o zákonech až do noci."
+
+## Facts
+- The cut is in print 300 (attached to the pay-transparency Labour Code amendment, amending the Employment Act 435/2004) — data/resolutions/2026-10-23.json resolver note citing https://www.psp.cz/sqw/historie.sqw?o=10&t=300 "The benefit cut has no standalone bill: the government attached it to the pay-transparency Labour Code amendment (tisk 300 …)".
+- Print 300 history: distributed 8 Sep 2026; first reading 16 and 20 Oct 2026 (34th meeting), 30-day committee period; social policy committee "vydal 12. 11. 2026 záznam z jednání" (print 300/1, no recommendation resolution) — data/psp/latest.json (psp.cz history snapshot, checked 2026-11-24T17:07+01:00). First reading on 20 Oct: rejection motion failed 43–78 (resolver note above).
+- Government version: first two months cut from 80% to 65% of earnings, saving about CZK 5bn a year — data/watchlist.json background of board question cz-unemployment-benefit-cut-passed (Advokátní deník, 2 Sep 2026).
+- ANO MPs' amendment already filed: 65% months 1–2, 50% months 3–4, then 40% (govt proposed 45%); cap 60% of average wage; retraining stays 80% (govt 60%); over-52s keep three-month phases at 80% and 50%; people qualifying via parental leave/care 45% then 30% of average wage — ČTK 24 Nov (URL above) "Ve sněmovním systému už je pozměňovací návrh skupiny poslanců ANO, podle kterého by se měla podpora v nezaměstnanosti v prvních dvou měsících snížit … na 65 procent. … poté podle pozměňovacího návrhu 40 procent. Vláda navrhovala 45 procent."
+- Amendments to print 300 filed 23–24 Nov include Igor Hendrych (ANO) no. 2377 (over-52s keep 80% for first three months), Karin Gajdová (ANO, rapporteur) no. 2378, Jana Pastuchová no. 2376, Marek Novák 2384/2386, Eliška Olšáková 2398/2400, opposition Hana Ančincová 2394 (pay ranges in job ads) and Pavla Pivoňka Vaňková 2440 (keep current definition of dependent work) — data/psp/latest.json amendments_by_date (psp.cz, as_of 2026-11-24T17:07+01:00). Written amendments must still be formally moved (načteny) in the detailed debate.
+- Coalition deal: Okamura (SPD) says ANO, SPD and Motoristé head for agreement; Juchelka (ANO) "SPD zatlačilo a došli jsme ke kompromisu, který je schůdný pro všechny"; press conference moved to Wed 25 Nov with KOVO union leader Roman Ďurčo — ČTK 24 Nov (URL above).
+- ČMKOS rejects any cut: Středula "ČMKOS … nikdy nikomu nedá souhlas ke snížení podpory v nezaměstnanosti"; on KOVO: "je to minorita ČMKOS" — ČTK 24 Nov (URL above).
+- Opposition (STAN, Piráti/Zelení) attacked the related platform-work bill at a press conference 24 Nov as legalising švarcsystém — ČTK https://www.ceskenoviny.cz/zpravy/zakon-o-platformove-praci-snizi-ochranu-na-pracovnim-trhu-varuje-opozice/2905716 (published 2026-11-24 16:20, read 2026-11-24T17:55Z) "Vládní návrh zákona o platformové práci sníží ochranu na pracovním trhu a povede k jeho destrukci". No report found of an announced obstruction of the second reading of print 300 specifically.
+- Coalition: ANO, SPD, Motoristé — 108 of 200 seats (pipeline/reference-data/cz-chamber.json, as used in cz-budget-26). SPD was the hold-out on the cut in October (edition 2026-10-23, ČT24 8 Oct: ANO and Motoristé alone 93 votes).
+- Opposition tactics this term: first reading of the 2027 budget ran into a second day; opposition club breaks ended the 21 Oct sitting at 23:00 — ČT24 https://ct24.ceskatelevize.cz/clanek/domaci/poslance-ceka-prvni-cteni-rozpoctu-na-pristi-rok-se-schodkem-386-miliard-378847 (per dossier cz-budget-26, read 2026-11-23). After the public-media bill the opposition "Slíbila rovněž zevrubné projednávání každého ze zákonů" — ČT24 6 Nov (per cz-budget-26). The first reading of print 300 itself took two sitting days (16 and 20 Oct).
+- Rules amendment in force since ~mid-Sep 2026 lets the Chamber limit speaking time also for MPs with priority rights (first speech up to 30 min) — Advokátní deník/ČTK 28 Aug 2026 https://advokatnidenik.cz/2026/08/28/prezident-podepsal-zmeny-snemovnich-pravidel-k-omezeni-moznych-obstrukci/ (per cz-budget-26). Club breaks are not limited by it (per that dossier's note).
+- Thursday window: 11:00 to 14:30 is 3.5 hours before oral interpellations (item 187, fixed by the Rules). Continuing a bill debate after interpellations would need a Chamber vote; ČT24 says night sittings on bills are possible again from this sitting ("Sněmovna bude moci po měsíci opět jednat o zákonech až do noci"), but no resolution covering Thursday was found.
+- PM Babiš is in Brussels at the European Council 26 Nov (sweep, vlada.gov.cz) — not relevant to the reading itself.
+
+## Base rate
+- psp.cz open data (pipeline/reference-data/cz-chamber.json, generated 2026-11-24): government bills' second-reading agenda items completed at the meeting where listed — 2025– term 29/63 (0.46); 2021–2025 term 259/368 (0.70). Bill items with a fixed slot, 2021–2025: 262/355 (0.74). These are meeting-level, not same-day.
+- Own class `cz-chamber-reading-completed-same-day`: hint (n = 1): 1 yes / 0 no. Wider class `cz-chamber-government-bill-progress` (own record): 4 yes / 3 no, n = 7 (still below ten). Ten-plus class: the meeting-level psp.cz rate above (n = 63 this term); this case differs because the window is one day and only 3.5 hours before interpellations.
+- Comparable same-day closes found: budget second readings (Mar 2026, Nov 2023, Nov 2024) closed the same day, but those were fixed first items with whole days and night sittings available (dossier cz-budget-26).
+
+## Case record
+## Case record: cz-unemployment-benefits-bill
+Earlier claims of this running story in our editions, oldest first (1; 0 still pending). Outcomes are from data/resolutions.
+- edition 2026-10-23 (events of 2026-10-22), cz-benefits-stalled: Does not pass first reading this week — did not happen
+
+## Schedule slip
+- `node scripts/refdata/slip.mjs cz-chamber-gov-bill-reading` (run 2026-11-24T17:59Z): prior 0.60, own 6/9, rate 0.615 [data]. If the item has been given a fixed slot: `cz-chamber-fixed-slot` 0.330 [data].
+- Signs of movement: the item has already moved once (Tue → Thu) for coalition talks; agenda approval on 24 Nov took hours; no fixed slot confirmed; the deal is only presented on Wed 25 Nov, so further coalition amendments could be drafted; Friday 27 Nov and 1–4 Dec sitting days are available as fallbacks.
+
+## Risks
+- Debate not finished by 14:30 → interrupted for oral interpellations → continues Fri 27 Nov or next week → NO.
+- Items 2–9 taken first on Thursday 11:00 if print 300 is not fixed → reading may not even open.
+- Opposition (STAN, Piráti, ODS, TOP 09, KDU-ČSL) long speeches and club breaks; 17 registered speakers before the floor opens; detailed debate requires each amendment to be read in.
+- Motion to return the bill to the government/committee (would also mean NO).
+- YES path: coalition fixes print 300 at 11:00, votes to continue after interpellations or limits speaking time, and opposition does not stretch the debate.
+
+## Sources
+- data/psp/latest.json; data/psp/meetings/10-37.json; data/psp/votes/2026-11-24.json (snapshot of https://www.psp.cz/schuze/10/37 and https://www.psp.cz/sqw/historie.sqw?o=10&t=300, as_of 2026-11-24T17:07+01:00)
+- https://www.ceskenoviny.cz/zpravy/odbory-odmitaji-jakekoli-upravy-ktere-snizi-podpory-v-nezamestnanosti-rekl-stredula/2906055
+- https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888
+- https://www.ceskenoviny.cz/zpravy/zakon-o-platformove-praci-snizi-ochranu-na-pracovnim-trhu-varuje-opozice/2905716
+- https://www.ceskenoviny.cz/ (front page, read 2026-11-24T17:55Z); https://www.novinky.cz/sekce/domaci-13 (read 17:55Z)
+- https://www.novinky.cz/clanek/domaci-o-solidarite-z-polskem-nemuze-byt-pochyb-dalsi-debata-o-bezpecnosti-je-podle-macinky-zbytna-40610271
+- https://cnn.iprima.cz/snizeni-podpory-v-nezamestnanosti-lezi-v-rukou-spd-pripoji-se-k-opozici-nebo-zatlaci-na-ano-525448 (27 Oct, background only)
+- data/resolutions/2026-10-23.json; data/watchlist.json; data/dossiers/2026-11-26/cz-budget-26.md
+- pipeline/reference-data/cz-chamber.json; pipeline/reference-classes.json
+- WebSearch: "Sněmovna schválila program schůze podpora v nezaměstnanosti čtvrtek druhé čtení"; "podpora v nezaměstnanosti první čtení Sněmovna 20. října 2026 opozice debata hodin Richterová" (no usable new item).
+
+## Unreachable
+- psp.cz (connection reset, 2026-11-24T17:54Z); echo24.cz (HTTP 503).
