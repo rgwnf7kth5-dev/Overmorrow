@@ -305,3 +305,27 @@ Vedle zveřejněného čísla proto zkoušíme pět metod. Každá se na stránc
 - **Empirická číselná rozpětí.** U číselných předpovědí konsenzus analytiků plus minus překvapení, které pokrylo 80 % našich dřívějších číselných předpovědí, jen z výsledků známých před uzávěrkou. O tvaru překvapení nic nepředpokládá. Na 15 výsledcích, kde šlo spočítat, obsáhlo 14 a zveřejněné rozpětí 13, se stejným intervalovým skóre: širší rozpětí verze 5 už většinu chyby odstranila. Zůstává jako průběžná kontrola.
 
 Co jsme se rozhodli nezkoušet: další role nebo debatu mezi modely jedné rodiny (pomáhá jen tehdy, když se modely liší), další ladění zadání (zisky z testů se naživo nepotvrdily) a posouvání všech čísel dál od 50 % (naše vlastní korekce tohoto druhu musí projít stejnou zkouškou). Studie, o které se tyto volby opírají, měřily předpovědi na týdny a měsíce dopředu; žádná neuvádí výsledky pro jeden den dopředu. Proto je vše zde zkouška, ne změna.
+
+## 17. Vyhodnocení šesti rolí (stanoveno 24. listopadu 2026)
+
+Šest rolí z oddílu 16 vstupuje do zveřejněného čísla od vydání č. 34 (25. listopadu 2026). K 24. listopadu záznam obsahoval 559 vyhodnocených ranních tvrzení s Brierovým skóre 0,152. Posledních deset vydání (14. až 23. listopadu, 112 tvrzení) mělo 0,199 proti 0,140 předtím. Z toho rozdílu připadá asi 0,019 na těžší otázky (naše vlastní pravděpodobnosti byly méně jisté), asi 0,015 na to, že dřívější období vyšlo lépe, než jeho pravděpodobnosti odpovídaly, a 0,026 ± 0,020 zůstává nevysvětleno. Nic z toho neměří šest rolí, které tehdy neměly žádné vyhodnocené tvrzení.
+
+Vyhodnocení je stanoveno předem, aby se nerozhodovalo podle dojmu z několika dnů:
+
+- **Kdy.** 10. prosince 2026, na vydáních č. 34 až 48, asi 150 vyhodnocených tvrzení. 1. prosince jen technická kontrola: role běží, nepadají a nezdržují vydání. Verdikt o kvalitě se ten den nedělá.
+- **Co se srovnává.** Kde potvrzená fakta od ostatních modelů vedla k novému odhadu našich prognostiků, je u tvrzení zaznamenáno číslo před a po (`forecast.external_check`). Obě se hodnotí na stejných tvrzeních. To je hlavní zkouška, protože srovnání jednoho měsíce s druhým v sobě nese i to, jak těžké byly otázky.
+- **Pravidlo.** Role zůstanou, pokud je číslo po novém odhadu aspoň o 0,01 lepší než číslo před ním a Brierovo skóre všech tvrzení v období není vyšší než 0,17. Pokud bylo nově odhadnuto méně než 40 tvrzení, zkouška se o týden prodlouží a nerozhoduje se.
+- **Co se uvádí navíc.** Brierovo skóre vedle toho, které odpovídá našim vlastním pravděpodobnostem, a ztráta podle kauz, protože několik tvrzení k jednomu běžícímu příběhu znamená jednu chybu udělanou několikrát (COP31 tři dny po sobě).
+- **Do té doby.** Metoda předpovídání se nemění, kromě oprav závad. Rozhodnutí po vyhodnocení je na vydavateli.
+
+## 18. Posudek zvenčí, ověřený na našem záznamu (24. listopadu 2026)
+
+24. listopadu předal vydavatel posudek vydání č. 28, který napsal jiný systém umělé inteligence. Každý jeho návrh, který lze spočítat, jsme ověřili na 518 vyhodnocených tvrzeních s úplným záznamem prognostiků, proti zveřejněnému číslu na stejných tvrzeních (0,1523). Návrh se přebírá podle pravidla z oddílu 16: zlepšení aspoň o 0,002 na pozdějších tvrzeních.
+
+- **Posouvání od středu.** Posudek našel zveřejněných 76 % tam, kde pět prognostiků dalo 62 až 75 %. Šlo o odhadnutou kalibraci (sklon asi 1,37), která platila od vydání č. 16 do č. 33. Na svých 353 tvrzeních měla 0,1524 proti 0,1537 prostého geometrického průměru šancí, tedy zisk v mezích šumu, a v posledních deseti vydáních byla o 0,005 horší. Chronologickou zkouškou neprošla a od vydání č. 34 je vypnutá, takže zveřejněné číslo zase leží mezi nejnižším a nejvyšším prognostikem. Stahování čísel k 50 %, které posudek navrhuje pro prognostiky jedné modelové rodiny, by bylo horší: sklon 0,9 dává 0,1548, sklon 0,8 dává 0,1573.
+- **Jiné způsoby spojování.** Medián 0,1530, prostý průměr 0,1533, průměr bez nejvyššího a nejnižšího 0,1521, váhy podle nedávného skóre každého prognostika 0,1529 až 0,1530. Žádný se od zveřejněného čísla neliší o víc než o svou chybu.
+- **Srážka za omezené podklady.** Vydání označená jako vzniklá s omezenými podklady nebyla kalibrovaná hůř než ostatní (Brier 0,157 proti očekávaným 0,157). Přimíchání základní četnosti úměrně chybějícím zdrojům by stálo 0,015 při váze z posudku a 0,002 při desetině. Nepřebíráme.
+- **Načasování a výsledek.** U plánovaných událostí se už odděluje (oddíl 14) a hodnotí na stránce přesnosti. Události, které v okně neproběhly, tvoří 6 z 83 omylů na špatné straně a 7 % ztráty.
+- **Modely jiných výrobců.** Zkoušeno 22. listopadu (oddíl 16); jako další prognostici nad naším podkladem nezměnily nic.
+- **Přísnější oddělení toho, co který prognostik čte, a premortem pro roli oponenta.** Zpětně ověřit nejdou. Jsou to kandidáti na zkoušku ve stínu po vyhodnocení 10. prosince (oddíl 17), ne dřív, aby vyhodnocení měřilo jednu změnu.
+- **Štítek jistoty u zpráv pod 75 %.** Věc podoby novin, ponechaná vydavateli.

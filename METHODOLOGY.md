@@ -304,3 +304,27 @@ So five methods are now tested beside the published figure. Each is scored on th
 - **Empirical number ranges.** For number forecasts, the analysts' consensus plus or minus the size of surprise that covered 80% of our earlier number forecasts, using only results known before the freeze. It assumes nothing about the shape of surprises. On the 15 results where it could be computed it held 14 and the published range 13, with the same interval score: the wider ranges of version 5 had already fixed most of what was wrong. It stays as a running check.
 
 What we decided not to try: more roles or a debate among models of one family (it helps only when the models differ), further prompt tuning (gains found in tests did not hold up live), and pushing all figures further from 50% (our own correction of that kind must pass the same test). The studies behind these choices measured forecasts weeks or months ahead; none of them reports results one day ahead, which is why everything here is a trial and not a change.
+
+## 17. Review of the six roles (set on 24 November 2026)
+
+The six roles of section 16 feed the published figure from edition No. 34 (25 November 2026). On 24 November the record stood at 559 resolved morning claims with a Brier score of 0.152. The last ten editions (14 to 23 November, 112 claims) scored 0.199 against 0.140 before. Of that gap, about 0.019 came from harder questions (our own probabilities were less confident), about 0.015 from an earlier run that had scored better than its probabilities implied, and 0.026 ± 0.020 is unexplained. None of it measures the six roles, which had no resolved claim yet.
+
+The review is fixed in advance so that it is not decided on the impression of a few days:
+
+- **When.** On 10 December 2026, on editions No. 34 to 48, about 150 resolved claims. On 1 December only a technical check: the roles run, do not fail and do not delay the edition. No verdict on quality is drawn that day.
+- **What is compared.** Where confirmed facts from the other models made our forecasters rerun, each claim records the figure before and after (`forecast.external_check`). The two are scored on the same claims. This is the main test, because a comparison of one month with another mixes in how hard the questions were.
+- **The rule.** The roles stay if the figure after the rerun beats the figure before it by at least 0.01 and the Brier score of all claims in the period is no higher than 0.17. If fewer than 40 claims were rerun, the test is extended by a week and nothing is decided.
+- **Also reported.** The Brier score next to the one our own probabilities imply, and the loss by case, since several claims on one running story count as one error made several times (COP31 on three days in a row).
+- **Until then.** The forecasting method is not changed, apart from repairs of faults. The decision after the review is the publisher's.
+
+## 18. An outside review, tested on our record (24 November 2026)
+
+On 24 November the publisher passed on a review of edition No. 28 written by another AI system. We tested each of its proposals that can be computed on the 518 resolved claims with a full forecaster record, against the published figure on the same claims (0.1523). A proposal is taken up under the rule of section 16: a gain of at least 0.002 on later claims.
+
+- **Extremizing.** The review found a published 76% where the five forecasters ran from 62% to 75%. That was the fitted calibration (slope about 1.37), live from edition No. 16 to No. 33. On its 353 claims it scored 0.1524 against 0.1537 for the plain geometric mean of odds, a gain inside the noise, and in the last ten editions it was 0.005 worse. It failed the chronological test and has been off since edition No. 34, so the published figure again lies between the lowest and the highest forecaster. Pulling figures towards 50%, as the review proposes for forecasters of one model family, would have been worse: slope 0.9 scores 0.1548, slope 0.8 scores 0.1573.
+- **Other ways to combine.** Median 0.1530, plain mean 0.1533, mean without the highest and lowest 0.1521, weights moving with each forecaster's recent score 0.1529 to 0.1530. None differs from the published figure by more than its error.
+- **A discount for limited sources.** Editions flagged as made with limited sources were not worse calibrated than the others (Brier 0.157 against an expected 0.157). Mixing in the base rate in proportion to the missing sources would have cost 0.015 at the review's own weight and 0.002 at a tenth of it. Not taken up.
+- **Timing and outcome.** Already split for scheduled events (section 14) and scored on the accuracy page. Events that did not take place in their window account for 6 of 83 wrong-side misses and 7% of the loss.
+- **Models of other vendors.** Tested on 22 November (section 16); as extra forecasters on our dossier they changed nothing.
+- **Stricter separation of what each forecaster reads, and a premortem for the adversarial role.** These cannot be tested backwards. They are candidates for a shadow trial after the review of 10 December (section 17), not before, so that the review measures one change at a time.
+- **A label of confidence on reports under 75%.** A matter of presentation, left to the publisher.
