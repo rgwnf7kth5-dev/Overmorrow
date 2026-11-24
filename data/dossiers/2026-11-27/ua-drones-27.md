@@ -78,3 +78,7 @@ Same question asked before (ua-drones, matched by claim id: check that the earli
 
 ## Desk note (24 Nov, after round one)
 The main claim ua-drones-27 is now an interval claim on the UAV total of the same first summary (same counting rules as the criterion above); the yes/no claim at 150 is kept as ua-drones-150-27, derived from the interval. Disagreement research (24 Nov) confirmed the counts above on Ukrinform for the nights to 18–24 Nov: 141, 98, 404, 148, 186, 153, 96.
+
+## Added after the vendors' search (evening of 2026-11-24)
+Leads named by other vendors' models in their own search; each fact below was confirmed by our own agent on the page cited (2026-11-24T20:14:30Z). Leads that could not be confirmed on a page, forecasts, prices and opinions were dropped.
+- On 23 November 2026 RBC-Ukraine reported Zelensky saying the Main Intelligence Directorate (HUR) had briefed on updated Russian strike plans and the military had been given defensive tasks. — https://newsukraine.rbc.ua/news/ukraine-s-intelligence-warns-of-new-russian-1795439100.html (published 2026-11-23T15:17:08+02:00, read 2026-11-24T20:13:04Z): "There was a briefing by the Main Intelligence Directorate on updated Russian strike plans, and the military has been given the corresponding tasks." **Note:** Same warning as the dossier's Zelensky evening-address item (Ukrinform 4187861, 23 Nov 22:37), reported earlier the same day; adds only that it came from a HUR briefing. No date or scale given.
