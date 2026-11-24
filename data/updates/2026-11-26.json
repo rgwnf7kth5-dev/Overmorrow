@@ -1,0 +1,427 @@
+{
+ "edition": "2026-11-26",
+ "frozen_at": "2026-11-24T12:30:00+01:00",
+ "revisions": [
+  {
+   "claim": "cz-epmedia-26",
+   "probability": 0.6,
+   "kind": "forecast",
+   "reason": "The resolution on Czechia was tabled as a joint motion of five groups (EPP, S&D, Renew, Greens/EFA, Left), and it is voted at noon in the same voting time as the 2027 budget, which usually draws high attendance (forecasters 0.58, 0.64, 0.62, 0.64, 0.52).",
+   "reason_cs": "Usnesení o Česku předložilo pět frakcí společně (EPP, S&D, Renew, Zelení/EFA, Levice) a hlasuje se o něm v poledne ve stejném bloku jako o rozpočtu na rok 2027, kdy bývá účast vysoká (odhady prognostiků 0,58, 0,64, 0,62, 0,64, 0,52).",
+   "sources": [
+    {
+     "title": "ČTK: EP zkritizuje postup české vlády vůči médiím, ukazuje návrh usnesení (24 Nov, 11:01 CET)",
+     "url": "https://www.ceskenoviny.cz/zpravy/ep-zkritizuje-postup-ceske-vlady-vuci-mediim-ukazuje-navrh-usneseni/2905847"
+    },
+    {
+     "title": "Radio Prague International: Europoslanci zkritizují postup české vlády vůči médiím (24 Nov, 11:07 CET)",
+     "url": "https://cesky.radio.cz/europoslanci-zkritizuji-postup-ceske-vlady-vuci-mediim-ukazuje-navrh-usneseni-8903431"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "cz-epmedia-26",
+   "at": "2026-11-24T12:27:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.58,
+     "reason_blind": "Class (10th-term five-group single-state texts) n=2: 385, 347, so 1/2 at >=360; wider class per dossier. Joint five-group motion now confirmed (ČTK). Noon vote next to the budget suggests high attendance; EMFA framing like Lithuania; a few ODS/ECR votes possible: +0.3 log-odds. Slip 0.04.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.58,
+       "reason": "Signals file: no market, bookmaker or model, so no update. p = p_held 0.96 x p_if_held 0.60. Main downside is EPP absences as in the Slovakia vote (537 voting)."
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.58,
+     "reason": "Signals file: no market, bookmaker or model, so no update. p = p_held 0.96 x p_if_held 0.60. Main downside is EPP absences as in the Slovakia vote (537 voting).",
+     "p_held": 0.96,
+     "p_if_held": 0.6
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "p_blind": 0.68,
+     "reason_blind": "Joint motion of EPP, S&D, Renew, Greens and Left, ~500 seats (ČTK 24 Nov). Wednesday noon alongside the budget vote, so attendance should be high; expected yes ~380-420 after absences and some abstentions. Postponement risk low.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "own-research",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.64,
+       "reason": "The two comparables this term got 385 (Lithuania) and 347 (Slovakia, 537 voting, 62 EPP absent), so 360 sits between them. Same-day budget vote, the 15 Nov protests and possible ODS/ECR votes help. https://www.ceskenoviny.cz/zpravy/ep-zkritizuje-postup-ceske-vlady-vuci-mediim-ukazuje-navrh-usneseni/2905847"
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.64,
+     "reason": "The two comparables this term got 385 (Lithuania) and 347 (Slovakia, 537 voting, 62 EPP absent), so 360 sits between them. Same-day budget vote, the 15 Nov protests and possible ODS/ECR votes help. https://www.ceskenoviny.cz/zpravy/ep-zkritizuje-postup-ceske-vlady-vuci-mediim-ukazuje-navrh-usneseni/2905847"
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.62,
+     "reason_blind": "NO case: the Slovakia text by the same five groups got 347 on a Wednesday (62 EPP absent); a Babiš-naming text may shed EPP/S&D votes. But the joint motion is now confirmed (~500 seats) and the budget-vote noon slot lifts attendance; Lithuania got 385.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.62,
+       "reason": "No market or model in signals. Five-group joint motion confirmed by ČTK; vote shares the slot with the budget, favouring high turnout. Only 2 comparables (347, 385); EPP no-shows are the main NO path. Slip risk ~4%."
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.62,
+     "reason": "No market or model in signals. Five-group joint motion confirmed by ČTK; vote shares the slot with the budget, favouring high turnout. Only 2 comparables (347, 385); EPP no-shows are the main NO path. Slip risk ~4%.",
+     "p_held": 0.96,
+     "p_if_held": 0.65
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.64,
+     "reason": "Normal on votes in favour: mean ~370 (Lithuania 385, Slovakia 347; joint five-group motion confirmed by ČTK; noon vote beside the budget text means high turnout), sd ~22, P(>=360) ~0.67; x0.96 for slip gives ~0.64. Risk: EPP absences as in Slovakia."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.72,
+     "reason_blind": "Joint motion of EPP, S&D, Renew, Greens/EFA and Left (~500 seats), Wednesday noon vote on the agenda. At ~600-650 voting, 360 needs ~57% yes. Similar rule-of-law resolutions usually draw 400+. Risks: postponement, EPP defections, absences.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.74,
+       "reason": "Signals file has no market or bookmaker on the tally. Afternoon facts confirm five-group co-sponsorship and the noon vote; ECR and Patriots not signatories, so ~400-450 yes expected."
+      }
+     ],
+     "at": "2026-11-24T12:25:20+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals",
+      "union-of-facts"
+     ],
+     "p": 0.52,
+     "reason": "The two 10th-term comparables with the same five-group sponsorship give 385 (Lithuania, passes) and 347 (Slovakia, fails). 360 is ~73% of the ~495 members, inside the 66-87% participation range. Budget-day turnout may help, but EPP absences and defections are a risk. A coin flip, slightly up."
+    }
+   ],
+   "combined": 0.6008,
+   "combination": {
+    "method": "geo-odds",
+    "version": "2026-11-23"
+   },
+   "calibrated": null,
+   "spread": 0.12,
+   "market_search": "markets.mjs search \"czech media european parliament\" (anchor, 2026-11-24 ~11:26Z): only unrelated markets.",
+   "market": null,
+   "decomposition": {
+    "morning": {
+     "p_held": 0.95,
+     "p_if_held": 0.584
+    },
+    "afternoon": {
+     "p_held": 0.96,
+     "p_if_held": 0.626
+    },
+    "p_if_not_held": 0
+   },
+   "research": {
+    "at": "2026-11-24T12:25:00+01:00",
+    "question": "Do comparable rule-of-law/media resolutions usually draw 400+ votes in favour, or 347-385?",
+    "finding": "Round one spanned 0.58-0.74: the outsider, without the dossier, assumed 400+ was typical. The 10th-term comparables tabled by the same five groups got 385 (Lithuania, 585 voting) and 347 (Slovakia, 537 voting, 62 EPP absent). The outsider reran with this union of facts (0.74 -> 0.52); the other four had it from the dossier.",
+    "sources": [
+     {
+      "title": "HowTheyVote: Lithuania public broadcaster (22 Jan 2026)",
+      "url": "https://howtheyvote.eu/votes/184065"
+     },
+     {
+      "title": "HowTheyVote: Slovakia rule of law (20 May 2026)",
+      "url": "https://howtheyvote.eu/votes/193026"
+     }
+    ]
+   },
+   "disagreement": {
+    "cause": "inputs",
+    "note": "Spread 0.16 in round one came from the outsider's assumption of 400+ votes; after the research round 0.52-0.64. No forecaster relied on a market; none exists."
+   },
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-24T12:28:30+01:00",
+    "case_for_morning": "The morning dossier already expected a five-group joint text, so confirming it adds little. Naming Babiš may cost some EPP national delegations while the bill is not yet law; ECR and PfE stayed off the text. Two comparables straddle the line (385, 347), so a figure near 0.55 is honest; the outsider's fall from 0.74 to 0.52 shows how thin the evidence is.",
+    "case_for_larger": "Attendance decided the comparables (537 voting gave 347, 585 gave 385), and a noon voting time shared with the 2027 budget usually draws 620-680 voters. At ~88% turnout of the five groups' ~495 members the tally lands near 390-400; a few ODS/ECR votes could add. The anchor's Normal model gives 0.65 and more for budget-day turnout.",
+    "verdict": "The fact moves the outcome (p_if_held), barely the timing. The case for a larger move is somewhat stronger, but rests partly on the budget-slot turnout the morning anchor already weighed; 0.60 is defensible and conservative. Nothing sent back.",
+    "unweighed_facts": false
+   },
+   "fact_timing_note": "ČTK published the joint motion at 11:01 CET on 24 Nov, after the morning freeze at 05:28 CET; the morning dossier said the joint text had not yet been seen.",
+   "new_fact_kind": "outcome (p_if_held 0.584 -> 0.626; p_held 0.95 -> 0.96)"
+  },
+  {
+   "claim": "ua-drones-26",
+   "at": "2026-11-24T12:27:00+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.52,
+     "reason_blind": "Own-record classes with the 96 on the night to 24 Nov: >=150 on 6/14 of the last 14 nights (0.43), 12/21 of the last 21 (0.57), pooled ~0.50. +0.1 log-odds: 5 nights since the 20 Nov mass strike (gaps 1-8); a quiet night is often followed by a bigger one. No warning, no pause.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.52,
+       "reason": "Signals file: no market, model or forecast on nightly counts, so nothing to update. Blind estimate kept: base about 0.50 from the 14/21-night windows, small upward nudge for mass-strike spacing."
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.52,
+     "reason": "Signals file: no market, model or forecast on nightly counts, so nothing to update. Blind estimate kept: base about 0.50 from the 14/21-night windows, small upward nudge for mass-strike spacing."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "p_blind": 0.5,
+     "reason_blind": "Recent nights 148/186/153/96. A low night is often followed by a rebound or a mass strike. No mass-strike warning, no pause announced. Air Force channel at ~09:35 Kyiv showed only daytime jet-drone tracks. Near a coin flip.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "own-research",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.55,
+       "reason": "Dossier: 13/21 nights reached 150 (7/14 over the last 14). Last mass strike 20 Nov; gaps 1-8 nights. After 98 on 19 Nov came 404; after 96 on 14 Nov came 132. Daytime waves take some drones out of the night count. https://t.me/s/kpszsu?before=98880"
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.55,
+     "reason": "Dossier: 13/21 nights reached 150 (7/14 over the last 14). Last mass strike 20 Nov; gaps 1-8 nights. After 98 on 19 Nov came 404; after 96 on 14 Nov came 132. Daytime waves take some drones out of the night count. https://t.me/s/kpszsu?before=98880"
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.45,
+     "reason_blind": "Night to 24 Nov was 96, so the last 14 nights are 6/14 at >=150 and 3 of the last 4 at or below 153. Daytime jet waves shift launches out of the 18:00 count; no mass-strike warning. YES needs a rebound or a mass strike (5 nights since 20 Nov, hazard ~20-25%).",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.45,
+       "reason": "Signals file has no matching market or model. 14-night rate fell to 6/14 after the 96; median ~145. Daytime waves drain the night count; mass-strike hazard and the 21-night rate 12/21 keep it near even, slightly below."
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.45,
+     "reason": "Signals file has no matching market or model. 14-night rate fell to 6/14 after the 96; median ~145. Daytime waves drain the night count; mass-strike hazard and the 21-night rate 12/21 keep it near even, slightly below."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.5,
+     "reason": "Anchor: own record with the night to 24 Nov (96) added: 12/21 (0.57), 6/14 (0.43) nights >=150. Mass-strike gap now 5 nights (earlier 1-8) gives some upside. Down: last 7 nights 3/7, quiet 96, daytime jet waves. No warning, no pause. Mean ~0.50."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-24T12:21:40+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.42,
+     "reason_blind": "Recent first-summary nights 148/186/153 cluster around the 150 line; Air Force speaks of up to 200 a night; the latest night (96) shows variability. Roughly a coin flip, slightly under.",
+     "rounds": [
+      {
+       "at": "2026-11-24T12:22:10+01:00",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.4,
+       "reason": "The signals file has no market or forecast for nightly counts. 96 for the night to 24 Nov, no warning of a mass strike. Of the last four nights, two were at or above 150; 150 is near the median."
+      }
+     ],
+     "at": "2026-11-24T12:22:30+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.4,
+     "reason": "The signals file has no market or forecast for nightly counts. 96 for the night to 24 Nov, no warning of a mass strike. Of the last four nights, two were at or above 150; 150 is near the median."
+    }
+   ],
+   "combined": 0.4837,
+   "combination": {
+    "method": "geo-odds",
+    "version": "2026-11-23"
+   },
+   "calibrated": null,
+   "spread": 0.15,
+   "market_search": "markets.mjs search \"ukraine drones\" (anchor, 2026-11-24 ~11:26Z): only NATO Art. 4, ceasefire and drone-swarm markets, none on nightly counts.",
+   "market": null,
+   "disagreement": {
+    "cause": "none",
+    "note": "0.40-0.55; no market exists; all read the same own-record series."
+   },
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-24T12:28:30+01:00",
+    "note": "Check holds; no revision. One night at 96 is weak evidence against >=150, as nightly counts are highly variable and bunch around big strikes; 0.48 against 0.52 is a small, fair move."
+   },
+   "fact_timing_note": "The Air Force summary for the night to 24 Nov (96 drones) was posted at 08:19 Kyiv (07:19 CET), after the morning freeze at 05:28 CET.",
+   "new_fact_kind": "outcome (slip_class none)"
+  }
+ ],
+ "factcheck": {
+  "flags": 6,
+  "checked": 6,
+  "wrong": 2,
+  "right": 2,
+  "open": 2
+ },
+ "meta": {
+  "unreachable": [
+   "ukmto.org",
+   "apnews.com",
+   "theguardian.com",
+   "expressandstar.com",
+   "fxstreet.com",
+   "psp.cz",
+   "irozhlas.cz",
+   "consilium.europa.eu",
+   "europarl doceo OJ/PV (empty)"
+  ],
+  "not_revised": "Other claims: no material new fact by 12:30. Iowa: CNN (24 Nov 09:00 UTC) repeats that the Army proceeds Wednesday morning as scheduled; Shenzhou-24 launch time 08:18 Beijing was public before the freeze; Australian bank CPI forecasts 4.7-4.8% predate the freeze; EP Wednesday voting time still lists the budget, Switzerland and Czechia items; ČNB board member Seidler (24 Nov) confirmed Wednesday's meeting without comment on the buffer; Ofgem, BEA and Deere dates confirmed.",
+  "factcheck_note": "Wrong: ua-war (decoys were inside the 153, not on top), au-cpi (RBA decision on 8 Dec, not 7 Dec) - corrections filed. Right: us-iowa (three postponements from the 20 Nov date), us-pce. Open: cn-shenzhou ('first astronaut' vs Namira Salim's suborbital flight as a private passenger depends on definition), cz-ep-media (4:36 vs 4:38/4:40 not settled on the official record)."
+ }
+}
