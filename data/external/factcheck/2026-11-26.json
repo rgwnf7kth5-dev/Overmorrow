@@ -1,0 +1,161 @@
+{
+ "edition": "2026-11-26",
+ "stories": [
+  {
+   "story": "gulf-shipping",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:25:40Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "ep-plenary",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:25:47Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "us-iowa",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:26:00Z",
+   "searches": 4,
+   "flags": [
+    {
+     "statement": "The detonation had been postponed three times since 20 November.",
+     "in_report": true,
+     "problem": "November 20 was the original detonation date, not the start of the postponements. The Army announced the first postponement on November 19, moving the operation from November 20 to November 23.",
+     "source": "https://www.army.mil/article-amp/296926/postponed_lead_azide_detonation"
+    }
+   ]
+  },
+  {
+   "story": "cz-chamber",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:26:03Z",
+   "searches": 10,
+   "flags": []
+  },
+  {
+   "story": "eu-balkans",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:26:20Z",
+   "searches": 14,
+   "flags": []
+  },
+  {
+   "story": "cn-shenzhou",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:26:22Z",
+   "searches": 5,
+   "flags": [
+    {
+     "statement": "becomes his country's first astronaut",
+     "in_report": true,
+     "problem": "Pakistan already had an astronaut before November 24, 2026. Virgin Galactic identifies Namira Salim as the first Pakistani to travel to space, on its suborbital Galactic 04 flight in October 2023. The distinction is between being Pakistan's first astronaut and being its first astronaut to reach orbit.",
+     "source": "https://www.virgingalactic.com/astronaut-bio-namira-salim"
+    }
+   ]
+  },
+  {
+   "story": "ua-war",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:26:23Z",
+   "searches": 7,
+   "flags": [
+    {
+     "statement": "The Air Force had counted 153 strike drones in the night to Monday, 60 of them jet-powered Shahed types, alongside Gerbera and Parodiya decoys, launched from Oryol, Kursk, Millerovo, Shatalovo and Primorsko-Akhtarsk in Russia, from occupied Donetsk and from Crimea.",
+     "in_report": true,
+     "problem": "The Air Force reported 153 drones in total overnight on November 22–23, including Shahed and Gerbera drones and Parodiya decoys. The decoys were included in the 153, not counted separately.",
+     "source": "https://t.me/s/kpszsu/98624"
+    }
+   ]
+  },
+  {
+   "story": "us-pce",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:26:30Z",
+   "searches": 2,
+   "flags": [
+    {
+     "statement": "The BLS was unable to publish 12-month changes for October because it collected no survey data in October 2025 during the federal government shutdown.",
+     "in_report": true,
+     "problem": "The shutdown prevented the BLS from publishing October 2026 year-over-year changes only for indexes without October 2025 data, including headline and core CPI. The BLS did publish 12-month changes for some indexes, including gasoline (+37.4%), new vehicles (+0.7%), and used cars and trucks (−3.3%).",
+     "source": "https://www.bls.gov/news.release/cpi.nr0.htm"
+    }
+   ]
+  },
+  {
+   "story": "deere",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:26:32Z",
+   "searches": 2,
+   "flags": []
+  },
+  {
+   "story": "uk-ofgem",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:26:48Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "us-gdp",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:26:50Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "cz-ep-media",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T05:27:03Z",
+   "searches": 9,
+   "flags": [
+    {
+     "statement": "which the Chamber of Deputies backed in its first reading at 4.36 am on Saturday 24 October",
+     "in_report": true,
+     "problem": "4:36 a.m. was the scheduled voting time, not the time the bill advanced. The Chamber's voting record shows that deputies defeated the first motion to reject the bill at 4:38 a.m. and referred it to the Committee on Media and Culture at 4:40 a.m.",
+     "source": "https://www.ceske-volby.cz/2026/11/15/zruseni-poplatku-ct-cro/"
+    }
+   ]
+  },
+  {
+   "story": "au-cpi",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:27:08Z",
+   "searches": 14,
+   "flags": [
+    {
+     "statement": "The RBA's final decision of the year is due on 7 December.",
+     "in_report": true,
+     "problem": "The RBA Monetary Policy Board meets on 7–8 December 2026, and the monetary policy decision is announced on the second day of the meeting, 8 December 2026.",
+     "source": "https://www.rba.gov.au/media-releases/2025/mr-25-02.html"
+    }
+   ]
+  },
+  {
+   "story": "cz-cnb",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T05:27:44Z",
+   "searches": 13,
+   "flags": []
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-24T05:27:44Z"
+}
