@@ -966,7 +966,7 @@ function shadowBlock(editions, L) {
   const began19 = Date.parse('2026-11-24T00:00:00Z');
   const five = (r) => (Array.isArray(r.forecast?.agents) && r.forecast.agents.length >= 5 && r.forecast.agents.every((a) => a.p > 0 && a.p < 1) ? r.forecast.agents : null);
   const noOutsider = (r) => { const ag = five(r); if (!ag || !ag.some((a) => a.role === 'outsider')) return null; return geoMeanOdds(ag.filter((a) => a.role !== 'outsider').map((a) => a.p)); };
-  const smallClassCap = (r) => { const n = r.forecast?.base_rate?.n; if (typeof n !== 'number' || n >= 10) return null; return Math.min(0.85, Math.max(0.15, r.probability)); };
+  const smallClassCap = (r) => { const b = r.forecast?.base_rate, n = typeof b?.hint?.n === 'number' ? b.hint.n : b?.n; if (typeof n !== 'number' || n >= 10) return null; return Math.min(0.85, Math.max(0.15, r.probability)); };
   const mkt = (r) => (typeof r.forecast?.market?.p === 'number' && r.forecast.market.p > 0 && r.forecast.market.p < 1 ? r.forecast.market.p : null);
   const plus = (kind) => (r) => { const p = shadowP(r, kind); return p === null ? null : withVoices(r, kind === 'sequential' ? [p] : (r.forecast.shadow[kind] || []).map((e) => e.p).filter((x) => x > 0 && x < 1)); };
   const R = A.shadowRows;
