@@ -224,6 +224,19 @@ function checkCoherence(ed, w) {
     const iv = (st.claims || []).filter(isInterval);
     if (iv.length && (st.claims || []).some((c) => !isInterval(c) && !c.derived && !c.not_derived)) warn(`${w} story ${st.id}`, 'has an interval claim and binary claims: if a binary claim is about the same quantity, set derived; otherwise set not_derived: true');
   }
+  // From edition No. 36 (METHODOLOGY 20): one main yes/no claim per story; every other one says how it hangs on the main one.
+  if ((ed.number ?? 0) >= 36) for (const st of ed.stories || []) {
+    const bin = (st.claims || []).filter((c) => !isInterval(c) && !c.derived);
+    if (bin.length < 2) continue;
+    const mains = bin.filter((c) => !c.depends && !c.independent);
+    if (mains.length !== 1) warn(`${w} story ${st.id}`, `${bin.length} yes/no claims, ${mains.length} without depends or independent: exactly one is the main claim; give each other one depends {on, p_if, p_if_not} or independent: "<why its outcome does not hang on the main claim>"`);
+    for (const c of bin.filter((x) => x.depends)) {
+      const cw = `${w} claim ${c.id}`, d = c.depends, src = byId.get(d.on);
+      if (!src || isInterval(src) || ![d.p_if, d.p_if_not].every((x) => typeof x === 'number' && x >= 0 && x <= 1)) { warn(cw, 'depends needs on (a yes/no claim of this edition), p_if and p_if_not between 0 and 1'); continue; }
+      const q = src.probability * d.p_if + (1 - src.probability) * d.p_if_not;
+      if (Math.abs(q - c.probability) > (V3.coherence_tolerance ?? 0.03) && !nonEmpty(c.coherence_note)) warn(cw, `depends on ${src.id} implies ${q.toFixed(3)}, published ${c.probability}: make them agree or explain in coherence_note`);
+    }
+  }
   const wl = new Map((loadWatchlist().questions || []).map((q) => [q.id, q]));
   for (const c of byId.values()) {
     if (!c.watch) continue;
