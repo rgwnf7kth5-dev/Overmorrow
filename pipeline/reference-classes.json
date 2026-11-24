@@ -658,7 +658,7 @@
       "source": "data/dossiers/2026-11-05/ua-pow-1.md (21 of 304 two-day windows in 2026); own record from 8 Nov 2026",
       "own_record": {
         "yes": 0,
-        "no": 2
+        "no": 3
       }
     },
     {
@@ -844,7 +844,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 2
       }
     },
@@ -1395,7 +1395,7 @@
       "source": "own record from 23 Nov 2026 (resolver); added from claim cop31-adopt-22",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -1406,7 +1406,7 @@
       "source": "own record from 23 Nov 2026 (resolver); added from claim cop31-fossil-22",
       "own_record": {
         "yes": 0,
-        "no": 1
+        "no": 2
       }
     },
     {
@@ -1451,6 +1451,39 @@
       "own_record": {
         "yes": 0,
         "no": 1
+      }
+    },
+    {
+      "id": "film-award-nominations-leader-wins-two-plus",
+      "description": "The film with the most nominations at a major film award wins at least two competitive categories",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 24 Nov 2026 (resolver); added from claim golden-horse-2-23",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "film-award-nominations-leader-most-wins",
+      "description": "The film with the most nominations at a major film award wins strictly more competitive awards than any other film",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 24 Nov 2026 (resolver); added from claim golden-horse-23",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "registered-transport-strike-goes-ahead",
+      "description": "A strike registered with the transport ministry (e.g. Italian MIT register) goes ahead on its day, not revoked, postponed or barred",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 24 Nov 2026 (resolver); added from claim it-malpensa-23",
+      "own_record": {
+        "yes": 1,
+        "no": 0
       }
     }
   ]

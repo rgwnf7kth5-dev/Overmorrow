@@ -54,3 +54,6 @@ Question: Is there an official or tracker launch time for Shenzhou-24 on 25 Nov 
 - Space Launch Now gives the window and says the date rests on NOTAMs — https://spacelaunchnow.app/launch/long-march-2fg-shenzhou-24/ (read 23 Nov) "November 25, 2026 - 00:18 UTC Launch Window November 25, 2026 - 00:08 UTC - November 25, 2026 - 00:48 UTC ... Nov. 20, 2026 ... GO for launch per NOTAMs."
 - CMSA's site has no launch time yet; latest item is the 17 Nov rollout — https://www.cmse.gov.cn/ (read 23 Nov) "神舟二十四号船箭组合体转运至发射区 计划近日择机实施发射"
 - Next Spaceflight lists the date only — https://nextspaceflight.com/launches/details/8429/ (read 23 Nov) "Wednesday November 25, 2026"
+
+## Overnight check (morning of 2026-11-24, 05:16 CET)
+- At its press conference at Jiuquan on Tue 24 Nov the China Manned Space Agency announced that Shenzhou-24 will lift off at 08:18 Beijing time on Wed 25 Nov (01:18 CET), and named the crew: Tang Hongbo (commander), Wu Yi and the Pakistani payload specialist Muhammad Zeeshan Ali (Xinhua, 24 Nov: https://english.news.cn/20261124/c50950131c6c4964b934df80150a8b9f/c.html; https://english.news.cn/20261124/c857a5e3dc2c4a139a843a5801b8f70b/c.html).

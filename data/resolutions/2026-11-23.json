@@ -1,0 +1,110 @@
+{
+  "edition": "2026-11-23",
+  "results": [
+    {
+      "claim": "cop31-adopt-23",
+      "outcome": "no",
+      "evidence": "https://connect.carbonbrief.org/t/experts-is-there-a-precedent-for-events-at-cop31/216",
+      "note": "Carbon Brief, 22 Nov 13:55 UTC: in the closing plenary the COP31 president confirmed that, as there was \"no consensus\", the cover decision would not be adopted, so no cover decision was gavelled in the window although the plenary sat and adopted other decisions.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Both models also report that COP31 closed on 22 Nov without adopting the cover decision; unfccc.int pages return no readable text to the script, so Carbon Brief's live record is the evidence."
+      }
+    },
+    {
+      "claim": "cop31-fossil-23",
+      "outcome": "no",
+      "evidence": "https://connect.carbonbrief.org/t/experts-is-there-a-precedent-for-events-at-cop31/216",
+      "note": "No cover decision was adopted in the window (the COP31 president said on 22 Nov that for lack of consensus it would not be adopted), so the criterion is NO irrespective of the draft's wording.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Agreement: no cover decision was adopted."
+      }
+    },
+    {
+      "claim": "ua-drones-23",
+      "outcome": "measured",
+      "value": 186,
+      "evidence": "https://www.ukrinform.net/rubric-ato/4187288-air-defenses-down-161-of-186-russian-drones-launched-against-ukraine-since-evening.html",
+      "note": "Air Force first summary via Ukrinform, 22 Nov 08:48 Kyiv: from 18:00 on 21 Nov Russia attacked with 186 strike UAVs (Shahed, 72 of them jet-powered, Gerbera, Parodiya), 161 shot down or suppressed.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Both models give the same figure of 186 from the Air Force Telegram post."
+      }
+    },
+    {
+      "claim": "ua-pow-23",
+      "outcome": "no",
+      "evidence": "https://kyivindependent.com/tag/prisoner-exchange/",
+      "note": "No exchange in the window: the Kyiv Independent prisoner-exchange tag lists nothing after the 11 Nov Abu Dhabi agreement on a future large swap (last completed swap 23 Oct), Ukrinform's war rubric for 21-23 Nov carries no exchange, and searches find only reports of preparations.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "second_opinion": {
+        "agree": ["google"],
+        "disagree": [],
+        "note": "One model answered not_yet because it found no explicit statement that none occurred; an exchange would be announced the same day by Zelensky and the Coordination HQ and reported everywhere, and none was, so NO stands."
+      }
+    },
+    {
+      "claim": "gulf-ukmto-23",
+      "outcome": "yes",
+      "evidence": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
+      "note": "Reuters via gCaptain, 21 Nov: UKMTO said on Saturday (Warning 216-26 - ATTACK) that an outbound tanker was hit on its stern by an unidentified projectile 11nm north of Khasab and a tanker was hit in its engine room 17nm east of Khasab; the incidents are dated 21 Nov and not placed before 08:00 GST, which counts under the criterion.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Both models cite UKMTO warnings 215-26/216-26 timing the hits at about 09:00 and 09:50 GST on 21 Nov; ukmto.org refuses scripted reading, so the exact times were not confirmed on the page, but the date rule of the criterion already settles it."
+      }
+    },
+    {
+      "claim": "golden-horse-2-23",
+      "outcome": "yes",
+      "evidence": "https://focustaiwan.tw/culture/202611225001",
+      "note": "CNA/Focus Taiwan winners list, 22 Nov: \"Arrested Memory\" won Best Sound Effects (Tu Duu-chih, Patrick Tu) and Best Art Direction (Chen Po-jen), two competitive awards.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Same two awards."
+      }
+    },
+    {
+      "claim": "golden-horse-23",
+      "outcome": "no",
+      "evidence": "https://focustaiwan.tw/culture/202611225001",
+      "note": "CNA/Focus Taiwan winners list: \"Arrested Memory\" won two awards, fewer than \"Double Happiness\" (editing, director, leading actor) and \"Kung Fu\" (visual effects, action choreography, makeup and costume), three each.",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Same count: Double Happiness and Kung Fu three each."
+      }
+    },
+    {
+      "claim": "it-malpensa-23",
+      "outcome": "yes",
+      "evidence": "https://scioperiitalia.it/sciopero/2026-11-22-aerei-personale-soc-enav-aeroporto-di-milano-8579",
+      "note": "Scioperi Italia, mirroring the MIT register: the RSA FAST-CONFSAL-AV strike of ENAV staff at Malpensa on Sun 22 Nov, 13:00-17:00, is shown as concluded with no revocation in the MIT data (checked 24 Nov); the MIT register itself was unreachable (connection reset).",
+      "resolved_at": "2026-11-24T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": ["openai", "google"],
+        "disagree": [],
+        "note": "Both models find the strike in force with no revocation."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": ["enb.iisd.org (403)", "unfccc.int (no readable text)", "www.ukmto.org (403)", "koordshtab.gov.ua (403)", "scioperi.mit.gov.it (connection reset)"]
+  }
+}

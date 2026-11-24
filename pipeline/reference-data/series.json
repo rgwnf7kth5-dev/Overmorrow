@@ -1,6 +1,6 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "pooled": {
   "n": 58,
   "rms_in_scales": 1.274,
@@ -965,6 +965,22 @@
    ],
    "n": 1,
    "rms_surprise": 0.4
+  },
+  "drones-launched-by-russia-at-ukraine-in-the-night-of-21-22-n": {
+   "unit": "drones",
+   "records": [
+    {
+     "edition": "2026-11-23",
+     "claim": "ua-drones-23",
+     "consensus": null,
+     "first": 186,
+     "centre": 151,
+     "scale_used": 91.4,
+     "source": null
+    }
+   ],
+   "n": 0,
+   "rms_surprise": null
   }
  },
  "extra": {}
