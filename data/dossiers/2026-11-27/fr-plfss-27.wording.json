@@ -1,0 +1,32 @@
+{
+ "claim": "The joint committee of seven deputies and seven senators (commission mixte paritaire) on France's 2027 social-security financing bill (PLFSS) fails to agree a common text on Thursday 26 November 2026.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:28:22Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The commission mixte paritaire (CMP) on France's 2027 social-security financing bill (PLFSS) must meet on 26 November 2026 and conclude before 23:59 Paris time that day that it cannot agree on a common text ('non conclusive' / 'échec').",
+   "decided_by": "Official records on assemblee-nationale.fr or senat.fr, or reporting by AFP, Le Monde, Public Sénat, or LCP."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:28:23Z",
+   "ambiguous": true,
+   "scenario": "Suppose the CMP formally fails on 26 November, but the first public evidence is official minutes dated 26 November and posted on 27 November. One reader could treat the date in the minutes as the date the failure was recorded and resolve YES; another could treat the publication date as controlling under the rule that a failure recorded only on 27 November or later counts as NO.",
+   "yes_requires": "The CMP on the 2027 PLFSS must meet on Thursday, 26 November 2026, and formally conclude by 23:59 Paris time that it cannot agree on a common text. A listed source must document the failure. Adoption of a common text, no meeting, or adjournment without a conclusion by the cutoff yields NO.",
+   "decided_by": "The CMP determines whether it has failed to agree. The result is verified through the National Assembly or Senate website, or reporting by AFP, Le Monde, Public Sénat, or LCP."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:29:05Z",
+   "ambiguous": true,
+   "scenario": "Before 23:59 on 26 Nov, AFP or Le Monde reports an échec, while assemblee-nationale.fr and senat.fr stay silent until 27 Nov or describe the sitting as merely suspended. One reader treats the same-day press report as YES; another applies the rule that a failure recorded only on 27 Nov or later, or a suspension without a formal non-conclusive close, is NO.",
+   "yes_requires": "The CMP on the PLFSS 2027 meets on Thursday 26 November 2026 and, by 23:59 Paris time that day, concludes it cannot agree a common text (CMP non conclusive / échec), with that conclusion recorded the same day on assemblee-nationale.fr or senat.fr or reported the same day by AFP, Le Monde, Public Sénat or LCP.",
+   "decided_by": "assemblee-nationale.fr, senat.fr, AFP, Le Monde, Public Sénat, or LCP, under the criterion's timing rules"
+  }
+ ]
+}

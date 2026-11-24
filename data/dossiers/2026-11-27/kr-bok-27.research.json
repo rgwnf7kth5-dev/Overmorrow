@@ -1,0 +1,225 @@
+{
+ "claim": "At its meeting on Thursday 26 November 2026 the Bank of Korea Monetary Policy Board raises the base rate by 25 basis points to 3.25%, with at least one member dissenting in favour of keeping it at 3.00%.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:20:03Z",
+   "p": 0.48,
+   "searches": 6,
+   "sources": [
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&menuNo=400423&nttId=11062944&programType=newsDataEng&relate=Y",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065825&programType=newsDataEng",
+    "https://file-cdn.bok.or.kr/eng/d4ea6747324840a79bf02f0c853bd55b/2/9adfb391db844b17bf79fcdf5a9bdcb2.pdf?token=st%3D1762180605~exp%3D1762184205~acl%3D%2Feng%2Fd4ea6747324840a79bf02f0c853bd55b%2F2%2F9adfb391db844b17bf79fcdf5a9bdcb2.pdf%2A~hmac%3D31ec91ae08496740a0433e89b608baf6a4636499e37455736448f33d7dfd27a9",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400007&menuNo=400423&nttId=11064193&oldMenuNo=400007&pageIndex=1&pageUnit=10&programType=newsDataEng&searchCnd=1&searchKwd=",
+    "https://www.bok.or.kr/eng/bbs/E0000627/view.do?menuNo=400022&nttId=11065824",
+    "https://www.bok.or.kr/eng/bbs/E0001620/view.do?menuNo=400021&nttId=11066451",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400069&menuNo=400069&nttId=11065825&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+    "https://www.bok.or.kr/eng/main/main.do",
+    "https://file-cdn.bok.or.kr/portal/e174ce69419f491dbe1b1341106f8c8f/2/27752573d4b7456690bc2f97d04d6359.pdf?token=st%3D1764900680~exp%3D1764904280~acl%3D%2Fportal%2Fe174ce69419f491dbe1b1341106f8c8f%2F2%2F27752573d4b7456690bc2f97d04d6359.pdf%2A~hmac%3D9cf48ab8cfc0fe894b6ec2ccc6de95a0b735f43fd9d1fe89bc3fafba784057ed",
+    "https://www.bok.or.kr/eng/bbs/E0000628/view.do?depth=400215&menuNo=400215&nttId=11064614&programType=newsDataEng&relate=Y",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&menuNo=400423&nttId=11065825&programType=newsDataEng&relate=Y",
+    "https://www.bok.or.kr/portal/bbs/E0000628/view.do?menuNo=400215&nttId=11064614",
+    "https://file-cdn.bok.or.kr/portal/341ad634fb77493e9f692e7a3bd248ea/2/6323077228dc465089b72cf2ff343bf7.pdf?token=st%3D1762981388~exp%3D1762984988~acl%3D%2Fportal%2F341ad634fb77493e9f692e7a3bd248ea%2F2%2F6323077228dc465089b72cf2ff343bf7.pdf%2A~hmac%3Dcaf15a183f045112bbc0c68ee9c5caf08352c4e6b7ad0c99ad2c79447b8ae397",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400423&nttId=11064193&pageIndex=1",
+    "https://www.bok.or.kr/eng/bbs/E0001620/view.do?depth=400021&menuNo=400021&nttId=11064684&oldMenuNo=400007&programType=newsDataEng&relate=Y",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400423&nttId=11065825",
+    "https://file-cdn.bok.or.kr/portal/341ad634fb77493e9f692e7a3bd248ea/2/6323077228dc465089b72cf2ff343bf7.pdf?token=st%3D1762393588~exp%3D1762397188~acl%3D%2Fportal%2F341ad634fb77493e9f692e7a3bd248ea%2F2%2F6323077228dc465089b72cf2ff343bf7.pdf%2A~hmac%3D5e8062160dd73b7940c8fa7f24edde844969318de7e7481b965431a582282e61",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11064193&programType=newsDataEng",
+    "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/south-korea-busts-54-students-cheating-on-national-college-admission-exam-by-deploying-emergency-disaster-alert-during-test-ai-micro-cameras-and-phones-drive-cheating-epidemic-that-forced-government-crackdown",
+    "https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&menuNo=200643",
+    "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400007&menuNo=400423&nttId=11062944&oldMenuNo=400022&pageIndex=1&pageUnit=10&programType=newsDataEng&searchCnd=2&searchKwd=Monetary+Policy+Decision",
+    "https://consensus.hankyung.com/analysis/downpdf?report_idx=654480",
+    "https://corvesting.com/fx/",
+    "https://www.bok.or.kr/eng/bbs/E0001620/view.do?depth=400007&menuNo=400021&nttId=11063503&oldMenuNo=400021&pageIndex=1&pageUnit=20&programType=newsDataEng&searchCnd=2&searchKwd=Minutes+of+the+Monetary+Policy+Board"
+   ],
+   "reason": "**Base rate.** In the Bank of Korea’s current tightening cycle, one of the two 25-basis-point hikes drew a dissent in favor of holding: July 16 was unanimous, while August 27 was 6–1, with Hwang Kunil voting to hold. One in two is the closest comparison for the vote *conditional on a hike*, but it is a small sample. ([bok.or.kr](https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&menuNo=400423&nttId=11062944&programType=newsDataEng&relate=Y&utm_source=openai))\n\n**What moves this meeting away from that baseline.** The October 22 statement explicitly discussed the timing and pace of further hikes, and the governor singled out incoming inflation data as relevant to the decision. October CPI rose 2.8% year over year, above the 2% target, and November 1–20 exports were up 101% year over year. Those facts favor a hike, but they also give Hwang a reason to join it. In the other direction, the November 22 emergency review of the U.S. stock-market decline gives a cautious member a reason to wait, though it could also make the whole Board hold. On balance, I put the chance of an on-date hike to 3.25% at about 87%, with a 55% chance of a qualifying hold dissent conditional on that hike. ([bok.or.kr](https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065825&programType=newsDataEng))\n\n**What could break the expected outcome.** A hike is more likely than a hold, but a unanimous hike is the main reason I lean NO on the combined claim. The Bank’s published schedule puts the decision on November 26 Seoul time; I assign less than 1% to no decision in that window. A qualifying dissent from that meeting would still count if first disclosed in the minutes, as the criterion specifies. ([file-cdn.bok.or.kr](https://file-cdn.bok.or.kr/eng/d4ea6747324840a79bf02f0c853bd55b/2/9adfb391db844b17bf79fcdf5a9bdcb2.pdf?token=st%3D1762180605~exp%3D1762184205~acl%3D%2Feng%2Fd4ea6747324840a79bf02f0c853bd55b%2F2%2F9adfb391db844b17bf79fcdf5a9bdcb2.pdf%2A~hmac%3D31ec91ae08496740a0433e89b608baf6a4636499e37455736448f33d7dfd27a9))\n\nNEW FACTS\n- 2026-11-24 | Woori Bank reported that South Korean exports totaled $77.4 billion in the first 20 days of November, up 101% year over year. | https://consensus.hankyung.com/analysis/downpdf?report_idx=654480\n- 2026-11-22 | South Korea’s deputy prime minister convened an emergency meeting to assess the domestic impact of a decline in U.S. equities. | https://english.mofe.go.kr/mi/selectTbMinisterDtl.do?boardCd=M0001&seq=3164\n- 2026-11-10 | The October meeting minutes confirmed that all Board members supported holding the Base Rate at 3.00%. | https://www.bok.or.kr/eng/bbs/E0001620/view.do?menuNo=400021&nttId=11066451\n- 2026-11-03 | South Korea’s October consumer price index rose 2.8% from a year earlier. | https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6517\n- 2026-08-27 | The Board raised the Base Rate to 3.00%, with Hwang Kunil voting to keep it at 2.75%. | https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400423&nttId=11064193&pageIndex=1\n- 2026-07-16 | The Board unanimously raised the Base Rate from 2.50% to 2.75%. | https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&menuNo=400423&nttId=11062944&programType=newsDataEng&relate=Y\n\nCOUNTER  \nThe August vote showed exactly how YES can happen: six members can see enough inflation pressure to hike while Hwang prefers to wait. With inflation still above target and renewed financial-market volatility, the majority and a cautious dissenter could reach different conclusions again. ([bok.or.kr](https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400007&menuNo=400423&nttId=11064193&oldMenuNo=400007&pageIndex=1&pageUnit=10&programType=newsDataEng&searchCnd=1&searchKwd=))",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "Woori Bank reported that South Korean exports totaled $77.4 billion in the first 20 days of November, up 101% year over year.",
+     "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=654480"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "South Korea’s deputy prime minister convened an emergency meeting to assess the domestic impact of a decline in U.S. equities.",
+     "url": "https://english.mofe.go.kr/mi/selectTbMinisterDtl.do?boardCd=M0001&seq=3164"
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "The October meeting minutes confirmed that all Board members supported holding the Base Rate at 3.00%.",
+     "url": "https://www.bok.or.kr/eng/bbs/E0001620/view.do?menuNo=400021&nttId=11066451"
+    },
+    {
+     "date": "2026-11-03",
+     "fact": "South Korea’s October consumer price index rose 2.8% from a year earlier.",
+     "url": "https://english.mofe.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=6517"
+    },
+    {
+     "date": "2026-08-27",
+     "fact": "The Board raised the Base Rate to 3.00%, with Hwang Kunil voting to keep it at 2.75%.",
+     "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400423&nttId=11064193&pageIndex=1"
+    },
+    {
+     "date": "2026-07-16",
+     "fact": "The Board unanimously raised the Base Rate from 2.50% to 2.75%.",
+     "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400423&menuNo=400423&nttId=11062944&programType=newsDataEng&relate=Y"
+    }
+   ],
+   "counter": "The August vote showed exactly how YES can happen: six members can see enough inflation pressure to hike while Hwang prefers to wait. With inflation still above target and renewed financial-market volatility, the majority and a cautious dissenter could reach different conclusions again. ([bok.or.kr](https://www.bok.or.kr/eng/bbs/E0000634/view.do?depth=400007&menuNo=400423&nttId=11064193&oldMenuNo=400007&pageIndex=1&pageUnit=10&programType=newsDataEng&searchCnd=1&searchKwd=))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:20:13Z",
+   "p": 0.35,
+   "searches": 12,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFJnpGnx2DZBu8Ba-thYosshG6VmiDQJwZWgLmVKCpt0ELMMZid5NnlLvgfCtX_2I1u3BrwsTO3XXHiDEfj8jCApQQi1mCYdn0VrPg-okDxLqXvcMXgZvitVxeYbfnEGgkPhGFjr0MTKxdtcUdYIgsEDaJmRcI3gePxYZ5-p6d-MsCepj0SPwsiNudVPaKC2fTb0Sy3J3t_1CHuNT8bqbuQAsWaq51-Ql9c7VOCJc8kqIBHIjX21i2Ui-xEFLcdoeZ84mYNN_SJ3vAfoSYdmdzc8vMHkvhmVNJgAifRTdCoEq7dsC269PYH68VLw_o_WLjWAMRWaBVySRhXJ4ZoHjJYmT9Qed2d28ezSScg0bo1kGEkDFC818zEKe8KcBC",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNKbII-xwtEw_3cYpWR2XCluKqi8nfaFekn6N0EqZHhn37EtKbbHd1ijkKlx5ZN7EOf_J3HHbMHhSnPWihTKDuiBnuFWAsEbhxXt9r-RgKB1hh038xhsKHlk29-VIEyuPLhe3-Kw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtjXgDes_zBgti5FDenpzuVtRuBirZsQ3B4X4XQSQ9EkLtE69v6qGfNOve470tYsu09bbfdnxev0RSkWvnjlaZ6_N0EbSe2D5xy-DeSOp24oNemv64-sSL_g0ZVCsUdDAGRQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzK15ni63EXyEFqLkV_5hrKi5TQHYora2FVcEIFjBFRK76r-2zDUsNUzLRL4TtjPe-NrExVoYxZyxp2mdsrdPnWyfe8QITSemyF2Gk1D3V22vpXIDWKtmUk6zjzU8xql64eZqSWBZWtNcwq0y86QoOINiCGdfYfnc3AteDW6JPddcU7_mKmHt9GM6PnXlZA8XGLosA60x_IF2k2jJCz34-w35i1PEv1MwefSYidwB-zgSXVQc_dvH_LGkX6_r5Hp4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBPDTCVaukbHo69lho2axQA2LkDsAr9pV2ig4KZI5QflhhedfBRfbDi_PJT7ir8Y6Ay2TJHws1Bw2j2o41eh3MxiGvxnJ1U8WkL9UlYsWCAp_ppmWweAWBsqcpqQfygOBB0zYH39UDblgmERuTYY0ByMaMVlaC1ItjKhBdTiJqHGITLOqcGAn7kFzZTQeaaP7jrdLEx3f-fjAfvA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtJoltlTc6Jk9I5ydVplaSswbmIsh79WoJnqmAlASbMZYErTBNgDEe7n2mpE8Mz6r2bBF9GlG2lgDbO1THQYzzqs_np_d6xwNZdZbcn-x86EbOuxugEZSncg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9CXeyld_YR0iBKtjjYv2WZVzWoKTs1wIk34TgFjMxycJRnoryW1pXFSvXqrgKTw31PYYNJRFJLqZHd4LL_lBgUTs9HBA5Uim5du-r_uRpawqRMACpkZHXbMSLTUzS_EsQBJIatwugFjmnvj77feswCxs4srvsiBMq4ZM2kswATlVXNeA2ZCBZQB9k",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFl0ZZ4KOVBqPTEn0ePAsUW0yHSaScxWI8mliFv-mEI8HSWW2pQ9UZIPbsBisHEyMjthoh4V0RAgpNmwrfG564zXEsoX4aotm8Z06-TEMNKtI3pooC03CH7CPx1PkWePG-rYDP5ZF9GEHkkknZ50cU5UndWgAkipCdcA17K_jGWFO37mWDme9vKV7V8-OHUfXofTca-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHFDmCZCBqDi0ujLazKEZep-RnF49QLP1QlDxMJt5ysrOyMLWYx3tJwIXrfQPj5asrpJ8rySbRjnUKlTR-hyQqij4w9rqB28HX6pN4lT9sbKSwwRSw4wkF7P9qvb9Y9O6eQ8LkXwlViagMi9DovnqM2ivCnqv1ibiIifRN3avG7ll690GW44zGqeLumakhiopjuK9CUK4_NkBuQXcb61qYg5lK5kSD0aFhkEpU",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-gySOPtB8_RYgWmpr2djqdkZdYV-txHFx0AYEqzDy35CGjALW1L36AbhfJI5wEVeu38x0OlEsmgbvwMc50Uzjr-ux7Hgocc1oAs6v7yrVz0_bS_NqlcuC4pKgGI6siQqM",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpcWjfqRJ6_rTxMABXuW6G3bQDdxf-zVo2vNBhNHBmHM1FF3AZdCQGC8J1DEK1XDQBKTs6I33yAmW2H2epdmUFO2Vp3gK1x9kHUo0r3UcBEEDcNMVYlhlmH9XTDemp2FEJr6sBQ6gr4FW_XbjpVCkMMNeY8wUMJ9gOI1JO2hxTF1ncd5x25pm2FmSZoAYMoZWgq3eKr1QkbSB0YHUoTCNVHMehMNavqNQ1bwXMZyfIMBd0pvmA4Ticrp-T9PNCBYMrRcMX3oqUEVifrpcqXkL-gJS0SP1-eq8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPArflz8hShrNIwGNTeKWI4StIEWy_vHKk4hvlndFuCam-yNEGvBrwSmhXko5jIVIBnMXDyVR23wc8xNMUbNRt8uGPE1XSfdK6ugHAywH9wNk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyIR1Le4LhSkzQmvaceu_C4F1xGhjRs9DaWKlic-a5HZR7ZM5-VAZqa35tV-ngoS3RLTMN8OidALd9xiP_26YXIS3IyIah1VgGGe_Hn7OVb4soLnyVTlmE",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlewcJx3PRmWW91GUT23NTTZCH1Znz7wRAJVw8iPj76O05fW-gcyjHTcv2pWbZjjyqrsZogZWc_JLDU8vQQR1f2OjUMrg0XvU404jTT3RKL9pYDUq1tsfWp7vLU93XZzuNlg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE-vQxmyXqL1UTJ0Mor1V36BYa4Dhi0FPuBwfpnjgQgyRurs39xbPIkemex5A0cfXbAd3zryHNBF4E88o6qJ1P0FyF6B3etFCRXW57mM3-euSf8qSnALQuCDP2UJFtl8PgoEiYraUbz8cNFUkbhp0KGGxmJ3WQRg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh5BAt-RDSitoFiiF2wfiJiMKCYfbdFm5Ij6MoEfIcOh0wfqSmF5-sgcGABAzqnvOdE6dTFbMXUMdgscDkvcPdJt9ChLioQMFxcJKEEa9fnYY-_RZo7M2NamaHL3jLXeKpMg9gO-TC-002TS_VVnJkyRsn2y9sXjQs9gdDhIfVyIY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2o2njER8el4P5jeM-m3vaVHgwbfSYuCFw_XdsnbFwVHol16hk_dmWWpvdFfoY0yJvNxrW5Oy2rQlB_ua5JZtsD1rCS64KdgUyr6M-NgCTak2zR-EQLTKXtDKztUro5n1cfKMoKonrWHfbLoU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkPTrwN2jlLOGVu5rd0Qhe5gjRGuTrwqKjadfBjsEwrgb6TeXSF2i00B_iYhDzNOU0fqd6VO-Fq6qP_w0-r3NoJE_7P8J5fuANsEKHoT9EU36-iURDc_9fGOuOThB6MO0ABC9wepTv-kgNgWSkSjTkV3JwzrfvjdN9OMf9dLFUp81OIvGwlblkMlWAKiR9_1qAKPqg4-w97UGiSfHAlFdyudxpSRmqHqGxxI99LMuC",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4Vn6oPGGFZZzlq8MKk17xtk28yaOGfSi1VrII2tgClz_k22FDrLqpVf65D__StGck-dUB-_hW9EvRervSZR6gc026o1AzpX1qJpSRsCfdTHC8IyMgcK9pq4AA9b_niClxIl_f5ota-XOmgRVfSejYncPIUCwxXn6b5swp3WazoExBnmhI4XNkZN3U",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt-B9EElLRufCzJIYysgOF0f0j_1tcM34qY7hcDbZl_Gg_76kaBNdbBin69eVqAa5kGPjKnBY06TVj9TDj4YWrf4MA4LF9ZCe7n0zsVCI3zMwoajhvPqUGIu_mExG0zO6y1II0KzXhuIMPYYzfj0BjxMMVvi4xR5UTQYLcsoDdJpRo5IQ9saxzCgY9cIzBYui5axwKWe1K",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXYI5NPyYE2hQGMavvjw2H0m5NlhZtATDrhATRSyg_96_zXXihs-PVTN6ien446sKBQnjpEh4wH078e-26hcUZVA0dHTntnQwxVTlu9eMGAzHdmf09x8Bkhl7T2aDKj4LEOXlQ_ybfNkd4VA_LEPyEZoKQ"
+   ],
+   "reason": "While exports are booming, domestic demand recovery has lagged, oil prices have been elevated following the Middle East conflict, and the domestic stock market (KOSPI) has fallen roughly 50% from its June record amid a global AI tech sell-off, prompting an emergency market review meeting by the Ministry of Finance and Economy on November 22. This sharp contrast between macroeconomic strength and financial/household strain increases the likelihood that at least one dovish member (such as Hwang) dissents in favor of holding at 3.00%.\n\n**3. Strongest Reason the Outcome Might Fail**\nFor the claim to resolve YES, *both* a 25bp hike to 3.25% and at least one dovish dissent must occur on November 26, 2026. The most likely way this fails is that the MPB raises the rate to 3.25% *unanimously*. Because the board already took a one-meeting pause in October to satisfy dovish concerns about rapid back-to-back tightening, and because Q3 GDP growth (1.0% QoQ) vastly exceeded the BoK's 0.3% projection while inflation remains at 2.8%, all seven members—including August dissenter Hwang Kun-il—may unite behind a consensus 25bp hike. Secondarily, there is a small (~10–15%) chance that the sharp equity market rout and sluggish domestic consumption convince a majority of the board to hold the rate at 3.00% altogether. (The chance that the scheduled meeting does not take place in the window is negligible.) Combining an estimated ~87% probability of a 25bp hike to 3.25% with a ~40% conditional probability of at least one member dissenting for a hold yields a joint probability of 35% (0.35), meaning NO is the more likely resolution.\n\nNEW FACTS\n- 2026-07-16 | The Bank of Korea Monetary Policy Board unanimously raised the Base Rate by 25 basis points from 2.50% to 2.75%, its first rate hike in three and a half years. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFJnpGnx2DZBu8Ba-thYosshG6VmiDQJwZWgLmVKCpt0ELMMZid5NnlLvgfCtX_2I1u3BrwsTO3XXHiDEfj8jCApQQi1mCYdn0VrPg-okDxLqXvcMXgZvitVxeYbfnEGgkPhGFjr0MTKxdtcUdYIgsEDaJmRcI3gePxYZ5-p6d-MsCepj0SPwsiNudVPaKC2fTb0Sy3J3t_1CHuNT8bqbuQAsWaq51-Ql9c7VOCJc8kqIBHIjX21i2Ui-xEFLcdoeZ84mYNN_SJ3vAfoSYdmdzc8vMHkvhmVNJgAifRTdCoEq7dsC269PYH68VLw_o_WLjWAMRWaBVySRhXJ4ZoHjJYmT9Qed2d28ezSScg0bo1kGEkDFC818zEKe8KcBC\n- 2026-08-27 | The Monetary Policy Board raised the Base Rate by 25 basis points from 2.75% to 3.00%, with board member Hwang Kun-il dissenting in favor of holding the rate and six members submitting probability-weighted six-month dots at 3.25% or 3.50%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNKbII-xwtEw_3cYpWR2XCluKqi8nfaFekn6N0EqZHhn37EtKbbHd1ijkKlx5ZN7EOf_J3HHbMHhSnPWihTKDuiBnuFWAsEbhxXt9r-RgKB1hh038xhsKHlk29-VIEyuPLhe3-Kw==\n- 2026-09-15 | Minutes of the August 27 Monetary Policy Board meeting showed that dissenting member Hwang Geon-il opposed the 25bp hike to 3.00% on the grounds that inflation would slow in the fourth quarter, the won had stabilized, and vulnerable borrowers faced rising delinquency risks. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtjXgDes_zBgti5FDenpzuVtRuBirZsQ3B4X4XQSQ9EkLtE69v6qGfNOve470tYsu09bbfdnxev0RSkWvnjlaZ6_N0EbSe2D5xy-DeSOp24oNemv64-sSL_g0ZVCsUdDAGRQ==\n- 2026-10-22 | All seven Monetary Policy Board members unanimously voted to leave the Base Rate unchanged at 3.00% for the intermeeting period. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzK15ni63EXyEFqLkV_5hrKi5TQHYora2FVcEIFjBFRK76r-2zDUsNUzLRL4TtjPe-NrExVoYxZyxp2mdsrdPnWyfe8QITSemyF2Gk1D3V22vpXIDWKtmUk6zjzU8xql64eZqSWBZWtNcwq0y86QoOINiCGdfYfnc3AteDW6JPddcU7_mKmHt9GM6PnXlZA8XGLosA60x_IF2k2jJCz34-w35i1PEv1MwefSYidwB-zgSXVQc_dvH_LGkX6_r5Hp4=\n- 2026-11-10 | Minutes from the October 22 Monetary Policy Board meeting revealed that while the board voted unanimously to hold the rate at 3.00% to observe the effects of the July and August hikes, a majority of members agreed on the need to maintain a tightening bias. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-gySOPtB8_RYgWmpr2djqdkZdYV-txHFx0AYEqzDy35CGjALW1L36AbhfJI5wEVeu38x0OlEsmgbvwMc50Uzjr-ux7Hgocc1oAs6v7yrVz0_bS_NqlcuC4pKgGI6siQqM\n- 2026-11-22 | Preliminary third-quarter real GDP growth came in at 1.0% quarter-on-quarter—more than triple the Bank of Korea's August forecast of 0.3%—while October consumer price inflation slowed to 2.8% year-on-year. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtJoltlTc6Jk9I5ydVplaSswbmIsh79WoJnqmAlASbMZYErTBNgDEe7n2mpE8Mz6r2bBF9GlG2lgDbO1THQYzzqs_np_d6xwNZdZbcn-x86EbOuxugEZSncg==\n- 2026-11-23 | On November 22, Deputy Prime Minister Lee Hyoung Il convened an Emergency Market Situation Review Meeting in Seoul to assess the impact of the US stock market decline on Korean financial markets, while the Bank of Korea Base Rate stood at 3.00%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPArflz8hShrNIwGNTeKWI4StIEWy_vHKk4hvlndFuCam-yNEGvBrwSmhXko5jIVIBnMXDyVR23wc8xNMUbNRt8uGPE1XSfdK6ugHAywH9wNk=\n- 2026-11-23 | The KOSPI fell 3.31% on November 23 to stand nearly 50% below its June record amid an AI stock sell-off ahead of the Bank of Korea's final 2026 rate-setting meeting on November 26. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlewcJx3PRmWW91GUT23NTTZCH1Znz7wRAJVw8iPj76O05fW-gcyjHTcv2pWbZjjyqrsZogZWc_JLDU8vQQR1f2OjUMrg0XvU404jTT3RKL9pYDUq1tsfWp7vLU93XZzuNlg==\n\nCOUNTER\nWhile a third-quarter GDP expansion of 1.0% and persistent 2.8% inflation strongly compel the Monetary Policy Board majority to deliver a 25bp rate hike to 3.25%, severe domestic headwinds make a unanimous vote difficult to achieve. Specifically, the nearly 50% plunge in the KOSPI since June, sluggish household consumption, and mounting strain on vulnerable borrowers give dovish board members—particularly Hwang Kun-il, who already dissented against the August hike—compelling grounds to formally dissent in favor of holding the rate at 3.00%.",
+   "facts": [
+    {
+     "date": "2026-07-16",
+     "fact": "The Bank of Korea Monetary Policy Board unanimously raised the Base Rate by 25 basis points from 2.50% to 2.75%, its first rate hike in three and a half years.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFJnpGnx2DZBu8Ba-thYosshG6VmiDQJwZWgLmVKCpt0ELMMZid5NnlLvgfCtX_2I1u3BrwsTO3XXHiDEfj8jCApQQi1mCYdn0VrPg-okDxLqXvcMXgZvitVxeYbfnEGgkPhGFjr0MTKxdtcUdYIgsEDaJmRcI3gePxYZ5-p6d-MsCepj0SPwsiNudVPaKC2fTb0Sy3J3t_1CHuNT8bqbuQAsWaq51-Ql9c7VOCJc8kqIBHIjX21i2Ui-xEFLcdoeZ84mYNN_SJ3vAfoSYdmdzc8vMHkvhmVNJgAifRTdCoEq7dsC269PYH68VLw_o_WLjWAMRWaBVySRhXJ4ZoHjJYmT9Qed2d28ezSScg0bo1kGEkDFC818zEKe8KcBC"
+    },
+    {
+     "date": "2026-08-27",
+     "fact": "The Monetary Policy Board raised the Base Rate by 25 basis points from 2.75% to 3.00%, with board member Hwang Kun-il dissenting in favor of holding the rate and six members submitting probability-weighted six-month dots at 3.25% or 3.50%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNKbII-xwtEw_3cYpWR2XCluKqi8nfaFekn6N0EqZHhn37EtKbbHd1ijkKlx5ZN7EOf_J3HHbMHhSnPWihTKDuiBnuFWAsEbhxXt9r-RgKB1hh038xhsKHlk29-VIEyuPLhe3-Kw=="
+    },
+    {
+     "date": "2026-09-15",
+     "fact": "Minutes of the August 27 Monetary Policy Board meeting showed that dissenting member Hwang Geon-il opposed the 25bp hike to 3.00% on the grounds that inflation would slow in the fourth quarter, the won had stabilized, and vulnerable borrowers faced rising delinquency risks.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtjXgDes_zBgti5FDenpzuVtRuBirZsQ3B4X4XQSQ9EkLtE69v6qGfNOve470tYsu09bbfdnxev0RSkWvnjlaZ6_N0EbSe2D5xy-DeSOp24oNemv64-sSL_g0ZVCsUdDAGRQ=="
+    },
+    {
+     "date": "2026-10-22",
+     "fact": "All seven Monetary Policy Board members unanimously voted to leave the Base Rate unchanged at 3.00% for the intermeeting period.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzK15ni63EXyEFqLkV_5hrKi5TQHYora2FVcEIFjBFRK76r-2zDUsNUzLRL4TtjPe-NrExVoYxZyxp2mdsrdPnWyfe8QITSemyF2Gk1D3V22vpXIDWKtmUk6zjzU8xql64eZqSWBZWtNcwq0y86QoOINiCGdfYfnc3AteDW6JPddcU7_mKmHt9GM6PnXlZA8XGLosA60x_IF2k2jJCz34-w35i1PEv1MwefSYidwB-zgSXVQc_dvH_LGkX6_r5Hp4="
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "Minutes from the October 22 Monetary Policy Board meeting revealed that while the board voted unanimously to hold the rate at 3.00% to observe the effects of the July and August hikes, a majority of members agreed on the need to maintain a tightening bias.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-gySOPtB8_RYgWmpr2djqdkZdYV-txHFx0AYEqzDy35CGjALW1L36AbhfJI5wEVeu38x0OlEsmgbvwMc50Uzjr-ux7Hgocc1oAs6v7yrVz0_bS_NqlcuC4pKgGI6siQqM"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "Preliminary third-quarter real GDP growth came in at 1.0% quarter-on-quarter—more than triple the Bank of Korea's August forecast of 0.3%—while October consumer price inflation slowed to 2.8% year-on-year.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtJoltlTc6Jk9I5ydVplaSswbmIsh79WoJnqmAlASbMZYErTBNgDEe7n2mpE8Mz6r2bBF9GlG2lgDbO1THQYzzqs_np_d6xwNZdZbcn-x86EbOuxugEZSncg=="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "On November 22, Deputy Prime Minister Lee Hyoung Il convened an Emergency Market Situation Review Meeting in Seoul to assess the impact of the US stock market decline on Korean financial markets, while the Bank of Korea Base Rate stood at 3.00%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPArflz8hShrNIwGNTeKWI4StIEWy_vHKk4hvlndFuCam-yNEGvBrwSmhXko5jIVIBnMXDyVR23wc8xNMUbNRt8uGPE1XSfdK6ugHAywH9wNk="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The KOSPI fell 3.31% on November 23 to stand nearly 50% below its June record amid an AI stock sell-off ahead of the Bank of Korea's final 2026 rate-setting meeting on November 26.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlewcJx3PRmWW91GUT23NTTZCH1Znz7wRAJVw8iPj76O05fW-gcyjHTcv2pWbZjjyqrsZogZWc_JLDU8vQQR1f2OjUMrg0XvU404jTT3RKL9pYDUq1tsfWp7vLU93XZzuNlg=="
+    }
+   ],
+   "counter": "While a third-quarter GDP expansion of 1.0% and persistent 2.8% inflation strongly compel the Monetary Policy Board majority to deliver a 25bp rate hike to 3.25%, severe domestic headwinds make a unanimous vote difficult to achieve. Specifically, the nearly 50% plunge in the KOSPI since June, sluggish household consumption, and mounting strain on vulnerable borrowers give dovish board members—particularly Hwang Kun-il, who already dissented against the August hike—compelling grounds to formally dissent in favor of holding the rate at 3.00%."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:20:58Z",
+   "p": 0.33,
+   "searches": 12,
+   "sources": [
+    "https://www.bok.or.kr/eng/bbs/E0001620/view.do?depth=400007&menuNo=400021&nttId=11066451&oldMenuNo=400022&pageIndex=1&pageUnit=10&programType=newsDataEng",
+    "https://kesq.com/money/cnn-business-consumer/2026/10/28/fed-keeps-interest-rates-unchanged-but-two-officials-dissented-in-favor-of-a-rate-hike/",
+    "https://tradingeconomics.com/south-korea/interest-rate",
+    "https://biz.chosun.com/en/en-finance/2026/11/24/QO7KK4P5MVDE7ISRWE6F7IOK6I/",
+    "https://en.yna.co.kr/view/AEN20261123008800320",
+    "https://en.fnnews.com/news/202610221837490376",
+    "https://www.ajupress.com/view/20261124164428023",
+    "https://en.yna.co.kr/view/AEN20260716003800320",
+    "https://en.yna.co.kr/view/AEN20261124004400320",
+    "https://www.thenewdaily.com.au/themoneyedition/economy/2026/11/17/materially-sharper-downturn-why-three-rba-members-voted-against-hiking-interest-rates",
+    "https://www.khan.co.kr/en/article/202610221648047",
+    "https://www.koreatimes.co.kr/economy/20261124/consumer-sentiment-falls-for-2nd-month-in-nov-on-stock-market-correction-high-loan-rates",
+    "https://www.koreatimes.co.kr/economy/20260827/bok-raises-benchmark-rate-to-3-as-inflation-woes-persist",
+    "https://www.afr.com/policy/economy/rba-minutes-reveal-rates-dissenters-concern-over-sharper-downturn-20261117-p61ef8",
+    "https://biz.chosun.com/en/en-finance/2026/11/24/E4EPL7PWW5ENNFLUXEOKBHF3ZY/",
+    "https://en.haesul.com/bank-of-korea-rate-decision-november-26/",
+    "https://en.infomaxai.com/news/articleView.html?idxno=149589",
+    "https://www.reuters.com/world/asia-pacific/south-koreas-central-bank-seen-raising-rates-thursday-once-more-next-quarter-2026-11-24/",
+    "https://www.mnimarkets.com/articles/mni-bok-watch-board-likely-to-hike-before-cautious-turn-1795498332910",
+    "https://biz.chosun.com/en/en-policy/2026/11/23/2QYTSNB2QZHA7ECAMV2KSAY5MI/",
+    "https://en.yna.co.kr/view/AEN20260827003400320",
+    "https://t.ly/bFRRY",
+    "https://www.newsquawk.com/headlines/south-african-interest-rate-decision-725-vs-exp-725-prev-725",
+    "https://www.mt.co.kr/en/economy/2026/11/22/2026112009065366740",
+    "https://biz.chosun.com/en/en-finance/2026/11/24/J43HORCWUNC2NNTHXBDIJ44ZMQ/"
+   ],
+   "reason": "The claim needs both a 25bp hike to 3.25% and at least one hold dissent. A hike is the base case, but a qualifying dissent is not.\n\nComparable recent BoK votes are mixed: the July 2026 hike was unanimous, the August hike was 6–1 with one member voting to hold, and the October hold was unanimous. In this cycle, a hold-dissent has accompanied a hike only half the time. Local specialists asked about Thursday’s split put the joint outcome in a minority: 3 of 10 in the ChosunBiz survey and 3 of 6 in the AJP poll expect a hike with a hold dissent; the rest who expect a hike expect it to be unanimous.\n\nThe case for the hike itself is strong and has firmed since October. Q3 growth was 1.0% quarter-on-quarter against a 0.3% BoK forecast, October headline and core inflation were both 2.8%, and early-November exports were very strong. A Reuters poll of 34 economists (17–23 November) had 32 expecting 3.25%; Korean brokerage surveys were unanimous on a hike, and the governor had tied the next move to exactly those data. That lifts the hike probability well above a coin flip, to roughly the mid-80s. It does not lift the dissent probability with it. The same data that justify a hike also make it easier for the August dove to join the majority. Bond managers are less sure (KOFIA: 54% hike / 46% hold, surveyed 13–18 November), which is a hold risk, not a split-hike signal. Conditional on a hike, a hold dissent looks like about a 40% event, so the joint probability sits near one-third.\n\nNEW FACTS\n- 2026-11-24 | A Reuters poll of 34 economists taken 17–23 November found 32 expecting a 25bp hike to 3.25% on 26 November and two expecting no change. | https://www.reuters.com/world/asia-pacific/south-koreas-central-bank-seen-raising-rates-thursday-once-more-next-quarter-2026-11-24/\n- 2026-11-23 | All 10 domestic securities-firm experts surveyed by ChosunBiz expected a hike to 3.25%; seven expected a unanimous vote and three expected one member to dissent for a hold. | https://biz.chosun.com/en/en-policy/2026/11/23/2QYTSNB2QZHA7ECAMV2KSAY5MI/\n- 2026-11-23 | An AJP poll of six economists had all six expecting 3.25%, split evenly between a unanimous hike and at least one dissent in favour of a hold. | https://www.ajupress.com/view/20261123163804930\n- 2026-11-24 | A Korea Financial Investment Association survey of 100 bond managers, conducted 13–18 November, found 54% expecting a hike this week and 46% a freeze. | https://en.yna.co.kr/view/AEN20261124004400320\n- 2026-10-22 | The Monetary Policy Board left the Base Rate unchanged at 3.00%, with all seven members in favour. | https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=10000001\n- 2026-08-27 | The Board raised the Base Rate to 3.00%; six members supported the hike and Hwang Kun-il dissented in favour of keeping it at 2.75%. | https://en.yna.co.kr/view/AEN20260827001253320\n- 2026-07-16 | The Board raised the Base Rate to 2.75% with all seven members in favour. | https://en.yna.co.kr/view/AEN20260716003800320\n- 2026-11-24 | AJP reported that several analysts still expect one member to dissent for a hold on Thursday, even as local brokerage previews were unanimous on a hike. | https://www.ajupress.com/view/20261124164428023\n\nCOUNTER\nHwang Kun-il already voted to hold at the August hike, and October minutes show members weighing the interest burden and sectors left behind by the chip boom. The stock slide, weaker consumer sentiment and still-soft domestic demand give that dove a fresh reason to dissent again even if the majority delivers the hike economists expect.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "A Reuters poll of 34 economists taken 17–23 November found 32 expecting a 25bp hike to 3.25% on 26 November and two expecting no change.",
+     "url": "https://www.reuters.com/world/asia-pacific/south-koreas-central-bank-seen-raising-rates-thursday-once-more-next-quarter-2026-11-24/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "All 10 domestic securities-firm experts surveyed by ChosunBiz expected a hike to 3.25%; seven expected a unanimous vote and three expected one member to dissent for a hold.",
+     "url": "https://biz.chosun.com/en/en-policy/2026/11/23/2QYTSNB2QZHA7ECAMV2KSAY5MI/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "An AJP poll of six economists had all six expecting 3.25%, split evenly between a unanimous hike and at least one dissent in favour of a hold.",
+     "url": "https://www.ajupress.com/view/20261123163804930"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "A Korea Financial Investment Association survey of 100 bond managers, conducted 13–18 November, found 54% expecting a hike this week and 46% a freeze.",
+     "url": "https://en.yna.co.kr/view/AEN20261124004400320"
+    },
+    {
+     "date": "2026-10-22",
+     "fact": "The Monetary Policy Board left the Base Rate unchanged at 3.00%, with all seven members in favour.",
+     "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?nttId=10000001"
+    },
+    {
+     "date": "2026-08-27",
+     "fact": "The Board raised the Base Rate to 3.00%; six members supported the hike and Hwang Kun-il dissented in favour of keeping it at 2.75%.",
+     "url": "https://en.yna.co.kr/view/AEN20260827001253320"
+    },
+    {
+     "date": "2026-07-16",
+     "fact": "The Board raised the Base Rate to 2.75% with all seven members in favour.",
+     "url": "https://en.yna.co.kr/view/AEN20260716003800320"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "AJP reported that several analysts still expect one member to dissent for a hold on Thursday, even as local brokerage previews were unanimous on a hike.",
+     "url": "https://www.ajupress.com/view/20261124164428023"
+    }
+   ],
+   "counter": "Hwang Kun-il already voted to hold at the August hike, and October minutes show members weighing the interest burden and sectors left behind by the chip boom. The stock slide, weaker consumer sentiment and still-soft domestic demand give that dove a fresh reason to dissent again even if the majority delivers the hike economists expect."
+  }
+ ]
+}

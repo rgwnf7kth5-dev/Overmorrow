@@ -1,0 +1,32 @@
+{
+ "claim": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, armed hostile approach, boarding or seizure involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman or the Arabian Sea that took place on Thursday 26 November 2026 (00:00-23:59 Gulf time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:27:41Z",
+   "ambiguous": true,
+   "scenario": "A qualifying incident just west of Socotra could be described both as occurring in the waters around Socotra, which are included, and as occurring in the Gulf of Aden, which is excluded. The criterion does not say which rule takes precedence. Also, an incident at 23:59:30 GST falls within the final minute as ordinarily described by '00:00–23:59' but after the explicit endpoint of 23:59:00.",
+   "yes_requires": "At least one qualifying attack, explosion, mine strike, projectile or drone hit, armed hostile approach involving firing or a boarding attempt, boarding, hijacking, or seizure involving a merchant vessel in the specified waters on 26 November 2026 Gulf Standard Time (UTC+4). UKMTO or JMIC must report the incident. Delayed reports count, and a report that gives 26 November as the incident date with",
+   "decided_by": "UKMTO or JMIC reporting, verified through ukmto.org, UKMTO’s X account, or an established news outlet quoting either organization. Independent reports or claims do not suffice."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:27:45Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, hostile approach involving weapons fire or a boarding attempt, boarding, hijacking, or seizure involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman, or the Arabian Sea that occurred on 26 November 2026 between 00:00 and 23:59 GST (UTC+4).",
+   "decided_by": "Reports from the UK Maritime Trade Operations (UKMTO) or the Joint Maritime Information Center (JMIC), published on ukmto.org, UKMTO's X account, or quoted by specified and established news outlets."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:29:19Z",
+   "ambiguous": true,
+   "scenario": "JMIC alone publishes on its own site or social account a clear drone hit on a merchant vessel in the Gulf of Oman at 14:00 GST on 26 Nov 2026, and ukmto.org, UKMTO’s X account, and the named outlets never mention it. One reader treats that as JMIC reporting and resolves YES; the other treats the evidence list as exhaustive, notes JMIC’s own channels are omitted, and resolves NO.",
+   "yes_requires": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, hostile approach with weapons fire or a boarding attempt, boarding, hijacking, or seizure of a merchant vessel in the Strait of Hormuz, Persian (Arabian) Gulf, Gulf of Oman, or Arabian Sea (including waters around Socotra) that occurred between 00:00 and 23:59 GST (UTC+4) on 26 Nov 2026. A date-only 26 Nov ",
+   "decided_by": "UKMTO or JMIC, as shown on ukmto.org or UKMTO’s X account, or by a wire, the named outlets, or another established news outlet quoting UKMTO or JMIC."
+  }
+ ]
+}

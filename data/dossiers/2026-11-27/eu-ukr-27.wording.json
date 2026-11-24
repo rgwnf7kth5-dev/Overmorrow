@@ -1,0 +1,32 @@
+{
+ "claim": "EU leaders at the special European Council in Brussels agree on Thursday 26 November 2026 on financing Ukraine's needs for 2027 through the Commission's proposed €45bn loan.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:27:32Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The European Council must reach and announce an agreement by 23:59 Brussels time on Thursday, 26 November 2026, on financing Ukraine's 2027 needs via the Commission's proposed €45bn loan (or a modified amount/structure explicitly framed as the agreed financing for 2027 through EU borrowing), in any member-state configuration.",
+   "decided_by": "European Council conclusions, a statement or post by António Costa, or reporting by at least two of Reuters, AP, AFP, Bloomberg, Euronews, ČTK, or Ukrinform citing Costa, leaders, or officials."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:27:34Z",
+   "ambiguous": true,
+   "scenario": "A national leader publicly announces the final agreement before the cutoff, but there are no Council conclusions or Costa statement, and two listed outlets report the announcement only on Friday. One reader could count the later reports as proof of a timely announcement; another could require the qualifying reports themselves to appear before the cutoff.",
+   "yes_requires": "Between 10:00 and 23:59 Brussels time on 26 November 2026, the European Council must reach and first announce a final agreement on the proposed €45bn loan for Ukraine’s 2027 needs. An agreement can qualify even if some member states opt out or contribute only to the civilian portion. A revised amount or structure qualifies if leaders identify it as the agreed financing of Ukraine’s 2027 needs thro",
+   "decided_by": "European Council conclusions, a statement or post by António Costa, or reports from at least two of Reuters, AP, AFP, Bloomberg, Euronews, ČTK, or Ukrinform citing Costa, leaders, or officials."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:28:16Z",
+   "ambiguous": true,
+   "scenario": "Leaders announce before 10:00, or only during the window as an 'agreement in principle' on a different amount or multi-year package, while conclusions stay softer than a Costa post and two wire reports citing officials. One reader counts that as YES under 'by 23:59', the changed-structure clause and the media/Costa tests; another counts it as NO because it falls outside the 10:00–23:59 window, is only principles or progress, or is not the specified 2027 loan.",
+   "yes_requires": "By 23:59 Brussels time on Thu 26 Nov 2026, the European Council reaches an agreement on the Commission's proposed €45bn loan for Ukraine for 2027 (Coordinated Support Facility / Ukraine Support Loan top-up), in any member-state configuration, evidenced by European Council conclusions, a statement or post by António Costa, or at least two of Reuters, AP, AFP, Bloomberg, Euronews, ČTK or Ukrinform c",
+   "decided_by": "European Council conclusions, a statement or post by António Costa, or at least two of the named outlets citing Costa, leaders or officials — not a single named adjudicator."
+  }
+ ]
+}

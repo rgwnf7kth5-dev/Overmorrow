@@ -1,0 +1,224 @@
+{
+ "claim": "According to the Ukrainian Air Force's first summary of the overnight attack published on Thursday 26 November 2026, Russia launched at least 150 drones at Ukraine in the night of 25-26 November (counted, as the Air Force counts it, from the evening of 25 November).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:24:05Z",
+   "p": 0.45,
+   "searches": 3,
+   "sources": [
+    "https://www.ukrinform.net/amp/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html",
+    "https://www.ukrinform.ua/rubric-ato/4187285-ppo-zneskodila-161-zi-186-bezpilotnikiv-akimi-rosiani-z-vecora-atakuvali-ukrainu.html",
+    "https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html",
+    "https://apnews.com/article/bfff959fb4c7415f9473b34e78a4f750",
+    "https://apnews.com/article/17406e53d24d5a71f3beaf551fdf1a99",
+    "https://time.com/article/2026/11/24/russia-estonia-conflict-open-war-border-nato-ukraine-eu/",
+    "https://apnews.com/article/b95975f534fd290cb2fbd3eef81b4c01",
+    "https://www.thedailybeast.com/ukrainian-president-volodymyr-zelensky-shames-defense-secretary-pete-hegseth-over-shocking-putin-suck-up",
+    "https://www.thedailybeast.com/ukraine-leader-volodymyr-zelensky-reveals-humiliating-plan-to-sidestep-trump",
+    "https://www.tomshardware.com/tech-industry/drones/ukraine-revives-its-grounded-fleet-of-500-us-made-puma-drones-with-homegrown-anti-jamming-tech-anti-jamming-upgrade-triples-range-to-31-miles",
+    "https://www.techradar.com/pro/no-starlink-no-problem-ukraines-strikes-on-kerch-bridge-made-possible-using-uav-repeaters-and-an-israeli-italian-satellite-comms-system-that-swaps-elon-musks-constellation-for-european-satellites",
+    "https://apnews.com/article/7b4a86809dcd466bba97d374045a1a78",
+    "https://time.com/article/2026/11/23/zelensky-says-ukraine-sank-russian-warship-at-naval-base-in-libya/",
+    "https://www.ukrinform.net/amp/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html",
+    "https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html",
+    "https://newsukraine.rbc.ua/news/russia-strikes-ukraine-with-153-drones-overnight-1795416798.html",
+    "https://t.me/s/kpszsu/48206",
+    "https://www.projectleaflet.com/post/ukraine-situation-report-24-november-2026-the-naga-report-047",
+    "https://egazette.ai/article/ukraine-says-air-defenses-downed-73-of-96-drones-in-overnight-russian-attack-9b526b?lang=en",
+    "https://mapofwars.org/day/2026-11-23",
+    "https://abdymok.github.io/40/articles/critical-infrastructure-damage.html",
+    "https://warhistory.org/ru/maps/ukraine/2026-11-22/explosions-heard-in-kyiv-as-air-force-warns-of-approaching-russian-drones",
+    "https://www.youtube.com/watch?v=m47ebuY4CdA",
+    "https://thewarpost.com/?conflict=ukraine-russia",
+    "https://t.me/s/kpszsu?after=48315"
+   ],
+   "reason": "**Base rate:** Three of the seven overnight attacks reported from November 18 through November 24, 2026, reached 150 UAVs. The reported launch totals, in order, were 141, 98, about 400, 148, 186, 153, and 96. That’s a 43% recent base rate, though seven nights is a small sample. ([ukrinform.net](https://www.ukrinform.net/amp/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html?utm_source=openai))\n\n**What moves the estimate:** The November 22 and 23 reports, at 186 and 153, nudge the forecast toward YES: neither needed a barrage on the scale of November 20 to clear the threshold. The latest report, at 96 on November 24, pulls the other way. I give these mixed signals little weight beyond the base rate and lean slightly NO. ([ukrinform.ua](https://www.ukrinform.ua/rubric-ato/4187285-ppo-zneskodila-161-zi-186-bezpilotnikiv-akimi-rosiani-z-vecora-atakuvali-ukrainu.html?utm_source=openai))\n\n**Window risk:** All seven comparison nights had reported launches, so I give little weight to the possibility of no launches at all in the November 25–26 window. The main route to NO is a first summary reporting 149 or fewer. A summary published after noon Kyiv time on November 26 can still count; an absent summary leaves the claim pending. ([ukrinform.net](https://www.ukrinform.net/amp/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html?utm_source=openai))\n\nNEW FACTS\n- 2026-11-24 | The Ukrainian Air Force reported 96 UAVs launched overnight. | https://www.ukrinform.net/amp/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html\n- 2026-11-23 | The Ukrainian Air Force reported 153 UAVs launched overnight. | https://www.pravda.com.ua/eng/news/2026/11/23/8064128/\n- 2026-11-22 | The Ukrainian Air Force reported 186 UAVs launched overnight. | https://www.pravda.com.ua/eng/news/2026/11/22/8064012/\n- 2026-11-21 | The Ukrainian Air Force reported 148 UAVs launched overnight. | https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html\n- 2026-11-20 | An Air Force spokesperson put the preliminary overnight launch total at about 400 UAVs. | https://www.ukrinform.net/rubric-ato/4186714-russia-launches-up-to-100-missiles-at-ukraine-one-may-have-crossed-into-poland-ignat.html\n\nCOUNTER  \nThe November 21 total missed by just two UAVs, and the next two overnight totals both cleared the threshold. Another night like either of those would resolve YES without requiring an unusually large barrage. ([ukrinform.net](https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html?utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "The Ukrainian Air Force reported 96 UAVs launched overnight.",
+     "url": "https://www.ukrinform.net/amp/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Ukrainian Air Force reported 153 UAVs launched overnight.",
+     "url": "https://www.pravda.com.ua/eng/news/2026/11/23/8064128/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "The Ukrainian Air Force reported 186 UAVs launched overnight.",
+     "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064012/"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "The Ukrainian Air Force reported 148 UAVs launched overnight.",
+     "url": "https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "An Air Force spokesperson put the preliminary overnight launch total at about 400 UAVs.",
+     "url": "https://www.ukrinform.net/rubric-ato/4186714-russia-launches-up-to-100-missiles-at-ukraine-one-may-have-crossed-into-poland-ignat.html"
+    }
+   ],
+   "counter": "The November 21 total missed by just two UAVs, and the next two overnight totals both cleared the threshold. Another night like either of those would resolve YES without requiring an unusually large barrage. ([ukrinform.net](https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html?utm_source=openai))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:24:44Z",
+   "p": 0.56,
+   "searches": 10,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErGCSuSElDNwjXj8x0tD2cNYnTYevDiJbK0nxUF3s9AY0kwMTjDDMGDg9DufFhDIypBXUoR_IzJPRVKJypw0hdR9oMO2_zYIPcjReBn6v11_mBoIVMM7JEug245PyDbBSGZXvZ0HBN4sZP9-NPpm4RjaiSznRxyqAWkSGJrA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWjwTmi5NbyQyboI9_NeA_fPVYM1HdArB6YeFX9cHPpV3-Bw24Rm0ZvAvSBB0iUED0Lc6eDyi4xUNvPaIJsOrI3slYtrJj1F40Mb37P-g9gnW3wI2kGf0t3Ad93fJQuywlXbl_o4yn2wEl3-BdfTd6JCzu9Vd_GHHZO98fRmEzZ_X3JiSlXUoMuFMXGnAvbStP-7SMRRR9fF8efi3hKh1wUVwYBWt43P_cXoTGDMPGrDQkagc_TMJa6YIjScTx",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvULtzH8XozFUzCQPsrdTIMc-QAbO8Qx1YCoQo_H8ZFUiH0ham3Ezc12qjltmXQDVvuGiVulmvPPeLKNSmJHhAhspNrtwsIxM6IOEH45ISn0ot0yd5sY2W4X-EnP2_7wYdutyocvXTspsEKyPYVpVb-CHTPUrgv8JoaDkMnsCY4TiIWO0qCY5szde_xkFbfpFihFUbTKqVKfbXxXyH_xX7_qmvG0TevCtmR305FrN1uowwhsuti06qfBS99KA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuLjlEG4cKMnkHpW1kDuDyvN9NS-DguaXkBs1eM5C8GDogtR6tCfR-y9y_J6U5edmXo3LdgoqWTM8kZLOtYC8l4sduNU3aHI9eAdF8hf4Pfc4CV3kR2u0JD4Q3h3IjW64_D-4KAtM30uQGHtuIW9DZGYe-YglS2LvWXgNxdoRCaGu0p_RlzEvwz6_CnzIYxELDLE18M8uwwsuNdO-xv_HJVN7Uz5hdMtVCHswBfARm1rOzOV_LxwcTzkPiHsyxTQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYxZtWppnOY7DQgOkMQaFqE4FJPdULcSKTc47RtX0mmGU2DKTb0opug2Nqw4uBsBm_NCJXpG5DfdOlmsJ3qqsyAipTp6gkTbW1epG4lOwEvFprvks2H1-PCHi03FuxwCrgTBxOQm0uc8KmW3mYXhEAeSRA047icIWLQ3FMdaluDIaEixVZYDM7JRa5mmJRq7VVl-eqkTuMqrOa9cmEj78ASyBovN0rSvTn--VPcQKYdTRN8Tx7WHcovcF4RBUjCw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrqqbZhDVaZe5xpl0JX52Xp0BJ1MLC2ccEk8bqYrviv8BaiejmHaJLyGaVqHDtNRpHvol-cozmKxgOei_AaQ_N_3kk5fjPi9OexX722ilixNofDB_KE5sgB7grVAqhsWpwz-Z--hJ1BQXAitJIs9qaKr34nApNi6aNW2OtcgYCIR4MEUKNtQxSgQ4sUQ7Wj9wtpF24jCHz4dCBCfp0Ithf6oA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhZnROqEqY4z3ZGcSC4Rr582--4wU2WT2DlhxPBbOTgrIHyvQq1Avm9GvqKGnoFHBWLkmhgx6sv3QyPriX6U954NVViN80Sk4Jo5U_lRRWHfnnhzQcTATcdY25IShrPdj_sALv77ttkTWIySok7eYS-wy9X1d_TqIX7OVCBfqUn6Wj59Ap4QGekj-A7SgP0TV-h4CBZ1oreoCB4fAUhp9rmGstwBKnwPupY-M=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXos58RTSBj3kLYmzBpx5lbIVZdbQydEhWrqYIvPqNn-7KUEl5vToSqjXk_pPBIT9IINq0K2Tx_k5EGNAOBN1ApsNLqqIJNeLEJBseUoYevtfme5XJzoIYIKgFcIFIZv2uGJrqIWNiDMq2nfgCZFssqGNMEI21xfo4C-qoiwPzjjjc11au8s4fVliXPhNdXNOwqKxbbgoS_X1YWLAW2zAFxprMxD0Pz9zFwwBL_zPnsUWZJe11g2YVzRRMrds=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFioJmLK0ZYxyBOOuuya-AR2IpaGkvJ23RLU_Wo9VmY9CfHmB61eLgBj42zuHbdI3pLgSenPtTP0m9Tf1lGmRANEw79MdIiPpytp42IlPfEQU0PIjJ94H2txpiiPIxW3E7oTLkMk8qFWDflnx0mfOrTFO7hw4C1NLnlTCI2_RupZXtg2r16BYV-mWPfot5BMHHSNeFs4j-nvKsFbg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4kRJg6-eo1QcPTvwwvDHQhIMN7gISILzOrXx8L2LA2v_BuGolz0gcl1XyqEFHNpMFbOK3SGRfIK5Zpe05UwCoBjfCRIhiQlZytIGmC9ap8dFgqefMRW8UEGJBqQwbYdipm-bORq0YSDYoXS4-iKPwcUReIZTK7MHXlIbSKPcXhXujd4_xju9Uj8hZyTsgPXPI_z6UA1ucOMjjA2x1q3n1DvrhGJHWg59RgfEMz-sZ9HcXPwLi",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG23dtcNRO7xR52nd_PDpSsFi6OnLAZFVNpx8iYbm3dgPp5qZwPM6BL5GRJRxoy-1r0J12TW2T3WVpLU_3YBRb1Wb48VHfnua7oW7c58Md38ZQptlMNJTzSZv2FKJu6N4BFnPjb4l-aFK16-YRIB3trkjKT2ysqRFAX1qW20WGdItjtrHrXqiJxHGGc7XIvKQhtvaj0cbArD1pABJjJOUrWQX08GcagYKURuePD5g==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxsU3deMvAtm6D2fsXXb8plgNVj-sZB265LrHsKvd_j4mJttc1wJ1hPun_AhLBThjQx4IsxLwZc2VO57hwvv8j2JDmpXCCUhJ7aepScQ7aQpzztxqNlEb-ZjenWeYtUFeDUroY8EdDijp2D9T3dLjUV09A9tOi-vbc42zgviKXD7rR57QudqRo4XiW4jOdaf9qO7_v3E873QzWoA9WEMIdx6-7xlH3VsGx73Jlm_9b8rg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF66hExFFcqa38UUyj22piAzUAlMGDTxspN7g3JFi_G7-_OADPRRk-lVvNAk2sELOE3KJAHEnt5s669dTYtSMq9JD9IvS3-0_xRYfLjp1g2gXpCUDR7sqvZyMtKrz-ehfln4Xg8IDjxH9-wBdcLbV-8n1tGLdeVSYNDYOmiGuhRuILN08UdVczdWmmZHKqvzVxKyebqGjLtOjYEpubRqdGNRj54fZwPh_-Mg5UJYc6H-vwlA8PVnrY01q73b1qGNA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5zruFPDF1svpHAbbCK_Rl_G1rBrGw6yY_lSIVuCect56YHdycjNNbO8faQIJNe3VuZW_3GXQba1fWtWHZDFbQ8uFngyr-PNKy5CIPQBwHrWWM1H6Ls57wO4cXoxZHHXTX98BCZPSFYlhCBKlvEGDz2tjOt5qZea-Uchl-p5o4NLTHCJw8sZqMLq-lJFa9V8fTirS6pA-IuFu0rCwxuAbagx2LD4k=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMtgnAP8TGp_HFqxjNhGBu7dFBo5h3Wu9u561aFxNXh0jYsRUf4FeYbpUDVeKeP4Q09Wvuncv6qopDpThrw6P1YmvgtQ1hOPNM89G6gvjIiAPSDBc6PVG6WMtVr1CRbGoIiqRpazDyA3DLd0xY6BexkY5LIa_fy5a-Hz6DJsuBTT9-0rYc6oKbCbbHTCHxkD_ms-ET27ARhOXFI4YvUjw_I3ovs8OpTITgXrOIblwY7nrd8iVuc661D3GxwIBps3w=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWmth85LREl7Y9OSi-qyPA0wk0dhBx7T_KOCW4oehvDX8SYf4jN9kEyNM8l6rWo1QTG3LddpPDvzPxiwqTKqsq3VYhVeV5BHaMHLWzKq9DF7Nkj5eqqHrpaLXfDSjpC2Qe6PKNHXWPXPgjsYBEdlbeGv7kZsDUH0I-mmMdhvgUpwdHrfPrY8A4C30U0xOh8QK_gwXbQETBRh9DZ8boqr8tqSMMd-E8z7hPxI9Oxwxn",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1vK70a5cfihkZikU0ZXyVxJwr4tR0nzMCnCyku73CU2AwvlZxsm8ThW0nQYS2hpSslea-N9FiDpqZDl5W_GQNFyzest_6rlBvvjPDvv9YpxC5ImpWJGjWhoxYmB_0eLPXoAm4wZrKYqN53fXPqh6FjcgC66Bw9WHU7HXlruEPC0m7OBApfm-eCZhyIPnKCsVdZgumEmuIYppHJnVlPGO1jnFkcOR7AJ6mGA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpZVv8nTPG0M0Og1PkWizp4_-fUlR1qw_8wveuMuzOWUTub2AMBr9Ol94t96TzOBqx0lrVHPZ_vF8DRKQFAgghvCS_zDgD9eVEuP15YffUSi0H2-2BVc9VRFx5bS92xJxc3gmHTYlCLDUxc-OWu8wma1tEB6JII8G9jGhNsv25AUWQ3K25jjodCccl14WgbXEwkO2hQpoabpHK0XzkE2pMtRMYRsUHTB-DMbXZtfQm1fFi6X5ajv1OzNR-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFThzYeEubmZerOjOQJb2elCwED4zpUVNBg56YXkcP83iDGOpbZqdN8XthP08FnLtN-gyGQHborl1C6qGEDffW3ryru1MQHaBCC7xXfG3qk6VQwlcWKpUyxKF1_wgfOZKrfndzpAjAxOkmkSSQSUrS4F7pKwb4omaHyokPlV0bc7N5xthtgqFC1HU6RMnkZQw3KOogfv1UnE7J7EHz5ou3g-7dlpweEot4kTthKwOpoM4OOKg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3-1xuI_c4X4y5cFWW_loZjr9FhU1ujs6GeVfGDfsk8sn4CJfZWH6-UlnCCevW66pHd4HxoOx7iCCgcGMf7RmYt6Th17Zh2zcCft2os_FroYFVhDHJd6LtpFRI2SLrEJA4BYPx_82EUUW4W50c6U4F9_BadpJwlwqnuNYT_uA9V66z1m-xApXx5da08XwT1dU-_75IzDvdiYVyhFqe2I7hhj4KV7kw6TXowbbS9YlN4mXKDwDA",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-eXwZqH65MI6CDd9nn0A-L8NlJEo_Ar7btGbqAkIZZ7bBC5TgeJYUKGycsn3rZkmtXQn5Gmab0Mv-YJ594EWBSyDK96LvP1PolHpdiJ71zueXf6UCUmkWi8BbXVQQrr5MZeMdMNnU7QBkw3dzG1x01HfYaAKgl-kXzkSETXLEQx4_SVBikvUaP_Cj_DTYe-jYGuG7JijV9TJ1uatbqJsx87zxg_knW3Snrlw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM6SW5mU6jaG1h7EfbQvhfchq2hS8sdMSVaSg0iZWGgPZtGcFWnRsklF0RSBMz-das5JmzVN1GpfKYylnYo_soRWphGIuIc0z4R3FM2n2Nrxukn6ly4RisIVndi6T1cxbcZPu1B-220FZ79DOzZl3k6Ktoi2YjAl-f8nVCVUDtLnMj0OfA4GFySXPf9b8D2jUfypEBR6oWGAtUQdDRxAWeB7d5Jnr9QevrByHeL1iuE9w-4zjYozQ0QLgH51s=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd-iijWbyZMIcO5h2qNFVzefVRhTf3_ND13QypDqapE7eOp6Z_m9Ih3bHeztZqTS7gMEovLtzKmqr5QC3xLrWd4-pkGCy0Rqter53UWXRlofYW-2kSOWtPoaAl7FQBistoYuOLfv34z8zVPxqE-_cw6evfViEdZeZGTL5tfYzcLsVqBg6L1BqMSKLZ-bvBmAwAen9ZK9piR1Sqi-x-NIuN_m3wfYZp8FT6RgoQilk6H9pGCqKsZRSL8s8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHI5B96lHXodElzszxjghhqKdP5V4QT24CDcErcrRKpnEUZ1vBovF31bllf3ooQKU8CiLi-AWqc3jvhpbLCWzdFgoZLVsuFIP_maapWvtROwnsx5NIG4GNfiDFF11_frz4dtCiv86bDw3QhK-YE_4cp2be8EjEC-IAODMKv4q6vLY2z-wrmCGM2vNHEayRjnfjI43VcrnVjw9FKF5glBCdF3xU7fzkrKaLLmwNvrzffGcsgQHAjyZA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1_zuSGowGs-gL68f5HURK9xuomv8GSviPyGkqQUWplbR_P2fVh3bVD7sO9lIPDf2dVNx4bF2huOCAUXWicS23cv-f_EzTLjs-amAj5AB6XyCrofaKXCVg7-Chl1nK8hjEm-0svGP3o-wyFjlrmbgBMtTm-8EdIhGS-31X0G3wUL8foJTzF399e3o1lpoounQfdBW57KPUYSQ1mnJbQqiKzM-2ZufHNTukm_tG"
+   ],
+   "reason": "rd NO relative to the early-month base rate*).\n\n---\n\n### (3) Strongest Reason the Obvious Outcome Might Fail\n\nWhile a probability slightly above 50% favors YES due to the high monthly base rate and Zelensky's 23 November warning of impending strikes, this could easily fail if Russia executes its prepared large-scale strike a day earlier (on the night of 24–25 November), which in recent cycles (such as Nov 19–20's 404 drones followed by Nov 20–21's 148 drones) typically leaves the subsequent night just below the 150-drone mark. Additionally, Russia sometimes splits its daily UAV launches between overnight and daytime waves (as seen on 10 and 12 November, when separate daytime summaries accounted for 143–155 drones), or weather conditions and tactical shifts toward front-line/border infrastructure (like the 96-drone attack focused on Zhytomyr on 23–24 November) could keep the overnight total in the 95–148 range. (The chance that no summary is published or no attack happens in the window is negligible, as the Air Force has published an overnight summary every day this month).\n\nBalancing the 50%–61% base rate with the pending intelligence warning of a new strike (+5%) and the uncertainty over whether a spike lands on 24–25 Nov versus 25–26 Nov, I forecast a **0.56** probability of YES.\n\n---\n\nNEW FACTS\n- 2026-11-24 | According to the Ukrainian Air Force, Russia launched 96 attack drones (including 64 jet-powered Shaheds, Gerberas, and Parody decoys) against Ukraine starting at 18:00 on November 23, of which 73 were neutralized. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWjwTmi5NbyQyboI9_NeA_fPVYM1HdArB6YeFX9cHPpV3-Bw24Rm0ZvAvSBB0iUED0Lc6eDyi4xUNvPaIJsOrI3slYtrJj1F40Mb37P-g9gnW3wI2kGf0t3Ad93fJQuywlXbl_o4yn2wEl3-BdfTd6JCzu9Vd_GHHZO98fRmEzZ_X3JiSlXUoMuFMXGnAvbStP-7SMRRR9fF8efi3hKh1wUVwYBWt43P_cXoTGDMPGrDQkagc_TMJa6YIjScTx\n- 2026-11-23 | President Volodymyr Zelensky stated in his evening address on November 23 that Ukrainian authorities have intelligence indicating Russia is preparing new aerial strikes on Ukraine. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1_zuSGowGs-gL68f5HURK9xuomv8GSviPyGkqQUWplbR_P2fVh3bVD7sO9lIPDf2dVNx4bF2huOCAUXWicS23cv-f_EzTLjs-amAj5AB6XyCrofaKXCVg7-Chl1nK8hjEm-0svGP3o-wyFjlrmbgBMtTm-8EdIhGS-31X0G3wUL8foJTzF399e3o1lpoounQfdBW57KPUYSQ1mnJbQqiKzM-2ZufHNTukm_tG\n- 2026-11-23 | The Ukrainian Air Force reported that Russian forces launched 153 drones against Ukraine overnight starting from the evening of November 22, with 134 neutralized by air defenses. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHI5B96lHXodElzszxjghhqKdP5V4QT24CDcErcrRKpnEUZ1vBovF31bllf3ooQKU8CiLi-AWqc3jvhpbLCWzdFgoZLVsuFIP_maapWvtROwnsx5NIG4GNfiDFF11_frz4dtCiv86bDw3QhK-YE_4cp2be8EjEC-IAODMKv4q6vLY2z-wrmCGM2vNHEayRjnfjI43VcrnVjw9FKF5glBCdF3xU7fzkrKaLLmwNvrzffGcsgQHAjyZA=\n- 2026-11-22 | The Ukrainian Air Force reported that Russia attacked Ukraine with 186 drones starting from the evening of November 21, of which air defense forces neutralized 161. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd-iijWbyZMIcO5h2qNFVzefVRhTf3_ND13QypDqapE7eOp6Z_m9Ih3bHeztZqTS7gMEovLtzKmqr5QC3xLrWd4-pkGCy0Rqter53UWXRlofYW-2kSOWtPoaAl7FQBistoYuOLfv34z8zVPxqE-_cw6evfViEdZeZGTL5tfYzcLsVqBg6L1BqMSKLZ-bvBmAwAen9ZK9piR1Sqi-x-NIuN_m3wfYZp8FT6RgoQilk6H9pGCqKsZRSL8s8=\n- 2026-11-21 | Starting at 18:00 on November 20, Russian forces attacked Ukraine with three ballistic missiles and 148 attack drones (including 87 jet-powered Shaheds, Gerberas, and Parody decoys), with 117 drones neutralized. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM6SW5mU6jaG1h7EfbQvhfchq2hS8sdMSVaSg0iZWGgPZtGcFWnRsklF0RSBMz-das5JmzVN1GpfKYylnYo_soRWphGIuIc0z4R3FM2n2Nrxukn6ly4RisIVndi6T1cxbcZPu1B-220FZ79DOzZl3k6Ktoi2YjAl-f8nVCVUDtLnMj0OfA4GFySXPf9b8D2jUfypEBR6oWGAtUQdDRxAWeB7d5Jnr9QevrByHeL1iuE9w-4zjYozQ0QLgH51s=\n- 2026-11-20 | In a massive combined overnight attack starting at 18:00 on November 19, Russia launched around 100 missiles and 404 drones (including 123 jet-powered Shaheds, Gerberas, and Parodiya decoys) at Ukraine. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-eXwZqH65MI6CDd9nn0A-L8NlJEo_Ar7btGbqAkIZZ7bBC5TgeJYUKGycsn3rZkmtXQn5Gmab0Mv-YJ594EWBSyDK96LvP1PolHpdiJ71zueXf6UCUmkWi8BbXVQQrr5MZeMdMNnU7QBkw3dzG1x01HfYaAKgl-kXzkSETXLEQx4_SVBikvUaP_Cj_DTYe-jYGuG7JijV9TJ1uatbqJsx87zxg_knW3Snrlw=\n- 2026-11-19 | On the night of November 18–19 (from 18:00 on November 18), Russia attacked Ukraine with Oniks anti-ship missiles and 98 attack and decoy UAVs, of which 69 drones were downed. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3-1xuI_c4X4y5cFWW_loZjr9FhU1ujs6GeVfGDfsk8sn4CJfZWH6-UlnCCevW66pHd4HxoOx7iCCgcGMf7RmYt6Th17Zh2zcCft2os_FroYFVhDHJd6LtpFRI2SLrEJA4BYPx_82EUUW4W50c6U4F9_BadpJwlwqnuNYT_uA9V66z1m-xApXx5da08XwT1dU-_75IzDvdiYVyhFqe2I7hhj4KV7kw6TXowbbS9YlN4mXKDwDA\n- 2026-11-18 | Beginning at 18:00 on November 17, Russian forces attacked Ukraine with 141 attack UAVs (including 73 jet-powered Shaheds, Gerberas, and Parody decoys), of which 126 were neutralized. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFThzYeEubmZerOjOQJb2elCwED4zpUVNBg56YXkcP83iDGOpbZqdN8XthP08FnLtN-gyGQHborl1C6qGEDffW3ryru1MQHaBCC7xXfG3qk6VQwlcWKpUyxKF1_wgfOZKrfndzpAjAxOkmkSSQSUrS4F7pKwb4omaHyokPlV0bc7N5xthtgqFC1HU6RMnkZQw3KOogfv1UnE7J7EHz5ou3g-7dlpweEot4kTthKwOpoM4OOKg==\n\nCOUNTER\nDuring the second half of November 2026, half of Russia's overnight drone barrages have fallen below 150 UAVs (ranging between 96 and 148 drones), particularly on nights immediately following a major strike or during multi-day accumulation pauses. If Russia expends a large wave of drones on the night of 24–25 November or shifts a portion of its launches into a separate daytime wave on 25 or 26 November, the specific overnight summary for 25–26 November could easily fall just short of the 150-drone threshold.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "According to the Ukrainian Air Force, Russia launched 96 attack drones (including 64 jet-powered Shaheds, Gerberas, and Parody decoys) against Ukraine starting at 18:00 on November 23, of which 73 were neutralized.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWjwTmi5NbyQyboI9_NeA_fPVYM1HdArB6YeFX9cHPpV3-Bw24Rm0ZvAvSBB0iUED0Lc6eDyi4xUNvPaIJsOrI3slYtrJj1F40Mb37P-g9gnW3wI2kGf0t3Ad93fJQuywlXbl_o4yn2wEl3-BdfTd6JCzu9Vd_GHHZO98fRmEzZ_X3JiSlXUoMuFMXGnAvbStP-7SMRRR9fF8efi3hKh1wUVwYBWt43P_cXoTGDMPGrDQkagc_TMJa6YIjScTx"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "President Volodymyr Zelensky stated in his evening address on November 23 that Ukrainian authorities have intelligence indicating Russia is preparing new aerial strikes on Ukraine.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1_zuSGowGs-gL68f5HURK9xuomv8GSviPyGkqQUWplbR_P2fVh3bVD7sO9lIPDf2dVNx4bF2huOCAUXWicS23cv-f_EzTLjs-amAj5AB6XyCrofaKXCVg7-Chl1nK8hjEm-0svGP3o-wyFjlrmbgBMtTm-8EdIhGS-31X0G3wUL8foJTzF399e3o1lpoounQfdBW57KPUYSQ1mnJbQqiKzM-2ZufHNTukm_tG"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Ukrainian Air Force reported that Russian forces launched 153 drones against Ukraine overnight starting from the evening of November 22, with 134 neutralized by air defenses.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHI5B96lHXodElzszxjghhqKdP5V4QT24CDcErcrRKpnEUZ1vBovF31bllf3ooQKU8CiLi-AWqc3jvhpbLCWzdFgoZLVsuFIP_maapWvtROwnsx5NIG4GNfiDFF11_frz4dtCiv86bDw3QhK-YE_4cp2be8EjEC-IAODMKv4q6vLY2z-wrmCGM2vNHEayRjnfjI43VcrnVjw9FKF5glBCdF3xU7fzkrKaLLmwNvrzffGcsgQHAjyZA="
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "The Ukrainian Air Force reported that Russia attacked Ukraine with 186 drones starting from the evening of November 21, of which air defense forces neutralized 161.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd-iijWbyZMIcO5h2qNFVzefVRhTf3_ND13QypDqapE7eOp6Z_m9Ih3bHeztZqTS7gMEovLtzKmqr5QC3xLrWd4-pkGCy0Rqter53UWXRlofYW-2kSOWtPoaAl7FQBistoYuOLfv34z8zVPxqE-_cw6evfViEdZeZGTL5tfYzcLsVqBg6L1BqMSKLZ-bvBmAwAen9ZK9piR1Sqi-x-NIuN_m3wfYZp8FT6RgoQilk6H9pGCqKsZRSL8s8="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "Starting at 18:00 on November 20, Russian forces attacked Ukraine with three ballistic missiles and 148 attack drones (including 87 jet-powered Shaheds, Gerberas, and Parody decoys), with 117 drones neutralized.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM6SW5mU6jaG1h7EfbQvhfchq2hS8sdMSVaSg0iZWGgPZtGcFWnRsklF0RSBMz-das5JmzVN1GpfKYylnYo_soRWphGIuIc0z4R3FM2n2Nrxukn6ly4RisIVndi6T1cxbcZPu1B-220FZ79DOzZl3k6Ktoi2YjAl-f8nVCVUDtLnMj0OfA4GFySXPf9b8D2jUfypEBR6oWGAtUQdDRxAWeB7d5Jnr9QevrByHeL1iuE9w-4zjYozQ0QLgH51s="
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "In a massive combined overnight attack starting at 18:00 on November 19, Russia launched around 100 missiles and 404 drones (including 123 jet-powered Shaheds, Gerberas, and Parodiya decoys) at Ukraine.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-eXwZqH65MI6CDd9nn0A-L8NlJEo_Ar7btGbqAkIZZ7bBC5TgeJYUKGycsn3rZkmtXQn5Gmab0Mv-YJ594EWBSyDK96LvP1PolHpdiJ71zueXf6UCUmkWi8BbXVQQrr5MZeMdMNnU7QBkw3dzG1x01HfYaAKgl-kXzkSETXLEQx4_SVBikvUaP_Cj_DTYe-jYGuG7JijV9TJ1uatbqJsx87zxg_knW3Snrlw="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "On the night of November 18–19 (from 18:00 on November 18), Russia attacked Ukraine with Oniks anti-ship missiles and 98 attack and decoy UAVs, of which 69 drones were downed.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3-1xuI_c4X4y5cFWW_loZjr9FhU1ujs6GeVfGDfsk8sn4CJfZWH6-UlnCCevW66pHd4HxoOx7iCCgcGMf7RmYt6Th17Zh2zcCft2os_FroYFVhDHJd6LtpFRI2SLrEJA4BYPx_82EUUW4W50c6U4F9_BadpJwlwqnuNYT_uA9V66z1m-xApXx5da08XwT1dU-_75IzDvdiYVyhFqe2I7hhj4KV7kw6TXowbbS9YlN4mXKDwDA"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Beginning at 18:00 on November 17, Russian forces attacked Ukraine with 141 attack UAVs (including 73 jet-powered Shaheds, Gerberas, and Parody decoys), of which 126 were neutralized.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFThzYeEubmZerOjOQJb2elCwED4zpUVNBg56YXkcP83iDGOpbZqdN8XthP08FnLtN-gyGQHborl1C6qGEDffW3ryru1MQHaBCC7xXfG3qk6VQwlcWKpUyxKF1_wgfOZKrfndzpAjAxOkmkSSQSUrS4F7pKwb4omaHyokPlV0bc7N5xthtgqFC1HU6RMnkZQw3KOogfv1UnE7J7EHz5ou3g-7dlpweEot4kTthKwOpoM4OOKg=="
+    }
+   ],
+   "counter": "During the second half of November 2026, half of Russia's overnight drone barrages have fallen below 150 UAVs (ranging between 96 and 148 drones), particularly on nights immediately following a major strike or during multi-day accumulation pauses. If Russia expends a large wave of drones on the night of 24–25 November or shifts a portion of its launches into a separate daytime wave on 25 or 26 November, the specific overnight summary for 25–26 November could easily fall just short of the 150-drone threshold."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:25:40Z",
+   "p": 0.44,
+   "searches": 10,
+   "sources": [
+    "https://www.ukrinform.net/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html",
+    "https://www.ukrinform.net/rubric-ato/4187869-wasp-shoots-down-russian-drones-targeting-french-caesar-howitzers.html",
+    "https://kyivindependent.com/russian-attacks-kill-9-injure-77-across-ukraine-over-past-day-zaporizhzhia-residential-building-massively-hit/",
+    "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/",
+    "https://kyiv24.com/en/ukrainian-aviation-shoots-down-about/",
+    "https://www.pravda.com.ua/eng/news/2026/11/24/8064383/",
+    "https://kyivindependent.com/russian-attacks-kill-4-including-15-year-old-boy-injure-19-across-ukraine-over-past-day/",
+    "https://www.ukrinform.net/rubric-ato/block-lastnews",
+    "https://www.yahoo.com/news/world/articles/ukrainian-air-defence-downs-106-060900168.html",
+    "https://euromaidanpress.com/2026/11/23/ukraines-drone-forces-beat-their-daily-record-for-russian-troops-hit-by-two/",
+    "https://www.ukrinform.net/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html",
+    "https://www.ukrinform.net/rubric-ato/4186737-ukraines-air-defenses-down-82-missiles-380-russian-drones-overnight.html",
+    "https://vgi.com.ua/en/jet-powered-shaheds/",
+    "https://www.pravda.com.ua/eng/news/2026/11/16/8063030/",
+    "https://www.pravda.com.ua/eng/news/2026/11/13/8062652/",
+    "https://www.kyivpost.com/post/90693",
+    "https://newsukraine.rbc.ua/news/ukraine-s-intelligence-warns-of-new-russian-1795439100.html",
+    "https://fakty.com.ua/ua/ukraine/20261124-nichna-ataka-na-ukrayinu-rf-zapustyla-96-bpla-zokrema-64-reaktyvnyh/",
+    "https://isis-online.org/uploads/isis-reports/documents/August_2026-Updated-Analysis-of-Russian-Shahed-type-UAVs-Deployment-Against-Ukraine_Final.pdf",
+    "https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html",
+    "https://myukraineis.org/news/ukraines_air_defence_downs_or_jams_161_of_186_russian_drones_overnight_strikes_recorded_at_18_locations-1221.html",
+    "https://newsukraine.rbc.ua/news/russia-strikes-ukraine-with-ballistic-missiles-1794918322.html",
+    "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-15-2026/",
+    "https://www.bostonherald.com/2026/11/24/russian-strike-ukraine-2/",
+    "https://ua.news/en/war-vs-rf/rosiia-atakuvala-ukrayinu-96-dronami-zokrema-64-reaktivnimi-ppo-zneshkodila-bilshu-chastinu"
+   ],
+   "reason": "Recent overnight Russian UAV salvos against Ukraine, as counted in the Air Force’s morning summaries, have varied widely but clustered mostly between roughly 90 and 190, with occasional much larger waves.\n\nBase rate: across a dozen consecutive nights in mid-to-late November 2026 for which the first Air Force totals are published, about 40–50 percent reached 150 or more UAVs (including Shahed-type, jet-powered variants, Gerbera, Parodiya and any munitions the summary folds into the UAV figure). Massive combined barrages above 300 occur but are infrequent (roughly one or two per fortnight). Zero-drone nights and missing summaries are essentially unobserved in this period, so the claim turns almost entirely on whether the 25–26 November total clears 150.\n\nFacts shifting the case: the most recent published nights show the same spread (96, 153, 186, 148), so the short-term run rate sits near the threshold rather than clearly above or below it. A 23 November statement that intelligence indicated preparations for further strikes is consistent with the ongoing campaign but supplies no size or date.\n\nThe distribution’s center of mass for ordinary nights lies a little under 150, and nothing dated points to a specially large salvo on the night of 25–26 November in particular.\n\nNEW FACTS\n- 2026-11-24 | Starting at 18:00 on 23 November, Russia launched 96 attack UAVs (Shahed-type including 64 jet-powered, Gerbera and Parodiya) at Ukraine. | https://www.ukrinform.net/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html\n- 2026-11-23 | From 18:00 on 22 November, Russia attacked Ukraine with 153 strike UAVs (Shahed-type including 60 jet-powered, Gerberas and Parodiya). | https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html\n- 2026-11-22 | From 18:00 on 21 November, Russian forces launched 186 strike UAVs (Shahed including 72 jet-powered, Gerbera and Parodiya) against Ukraine. | https://www.ukrinform.net/rubric-ato/4187288-air-defenses-down-161-of-186-russian-drones-launched-against-ukraine-since-evening.html\n- 2026-11-21 | Starting at 18:00 on 20 November, Russia launched 148 attack drones (Shahed including 87 jet-powered, Gerbera and Parodiya) plus three ballistic missiles. | https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html\n- 2026-11-20 | Starting at 18:00 on 19 November, Russia used 404 Shahed attack drones (123 jet-powered), Gerbera and Parodiya together with dozens of missiles. | https://www.ukrinform.net/rubric-ato/4186737-ukraines-air-defenses-down-82-missiles-380-russian-drones-overnight.html\n- 2026-11-19 | From 18:00 on 18 November, the enemy launched 98 Shahed-type attack UAVs (61 jet-powered), Gerberas and Parodiya. | https://www.ukrinform.net/rubric-ato/4186225-air-defense-downs-69-drones-launched-by-russia-in-overnight-attack-on-ukraine.html\n- 2026-11-18 | Beginning at 18:00 on 17 November, Russian forces attacked with 141 attack UAVs (Shahed including 73 jet-powered, Gerbera and Parodiya). | https://www.ukrinform.net/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html\n- 2026-11-23 | Zelenskyy said intelligence showed Russia was preparing new strikes, without stating a date or scale. | https://www.reuters.com/world/zelenskiy-says-intelligence-shows-russia-planning-new-strikes-ukraine-2026-11-23/\n\nCOUNTER\nSeveral recent ordinary nights already cleared 150 (153, 186, 158), and the campaign has produced multi-hundred-drone waves roughly once every week or two. Intelligence warnings of further strikes, even without a timetable, leave open the chance that the 25–26 November salvo is one of the larger ones rather than another sub-150 wave.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "Starting at 18:00 on 23 November, Russia launched 96 attack UAVs (Shahed-type including 64 jet-powered, Gerbera and Parodiya) at Ukraine.",
+     "url": "https://www.ukrinform.net/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "From 18:00 on 22 November, Russia attacked Ukraine with 153 strike UAVs (Shahed-type including 60 jet-powered, Gerberas and Parodiya).",
+     "url": "https://www.ukrinform.net/rubric-ato/4187520-air-defenses-neutralize-134-of-153-russian-drones-launched-at-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "From 18:00 on 21 November, Russian forces launched 186 strike UAVs (Shahed including 72 jet-powered, Gerbera and Parodiya) against Ukraine.",
+     "url": "https://www.ukrinform.net/rubric-ato/4187288-air-defenses-down-161-of-186-russian-drones-launched-against-ukraine-since-evening.html"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "Starting at 18:00 on 20 November, Russia launched 148 attack drones (Shahed including 87 jet-powered, Gerbera and Parodiya) plus three ballistic missiles.",
+     "url": "https://www.ukrinform.net/rubric-ato/4187055-air-defense-neutralizes-117-of-148-russian-drones-launched-against-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Starting at 18:00 on 19 November, Russia used 404 Shahed attack drones (123 jet-powered), Gerbera and Parodiya together with dozens of missiles.",
+     "url": "https://www.ukrinform.net/rubric-ato/4186737-ukraines-air-defenses-down-82-missiles-380-russian-drones-overnight.html"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "From 18:00 on 18 November, the enemy launched 98 Shahed-type attack UAVs (61 jet-powered), Gerberas and Parodiya.",
+     "url": "https://www.ukrinform.net/rubric-ato/4186225-air-defense-downs-69-drones-launched-by-russia-in-overnight-attack-on-ukraine.html"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Beginning at 18:00 on 17 November, Russian forces attacked with 141 attack UAVs (Shahed including 73 jet-powered, Gerbera and Parodiya).",
+     "url": "https://www.ukrinform.net/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "Zelenskyy said intelligence showed Russia was preparing new strikes, without stating a date or scale.",
+     "url": "https://www.reuters.com/world/zelenskiy-says-intelligence-shows-russia-planning-new-strikes-ukraine-2026-11-23/"
+    }
+   ],
+   "counter": "Several recent ordinary nights already cleared 150 (153, 186, 158), and the campaign has produced multi-hundred-drone waves roughly once every week or two. Intelligence warnings of further strikes, even without a timetable, leave open the chance that the 25–26 November salvo is one of the larger ones rather than another sub-150 wave."
+  }
+ ]
+}

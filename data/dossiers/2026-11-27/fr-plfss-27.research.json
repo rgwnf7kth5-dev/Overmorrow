@@ -1,0 +1,209 @@
+{
+ "claim": "The joint committee of seven deputies and seven senators (commission mixte paritaire) on France's 2027 social-security financing bill (PLFSS) fails to agree a common text on Thursday 26 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:25:20Z",
+   "p": 0.9,
+   "searches": 6,
+   "sources": [
+    "https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html",
+    "https://www.senat.fr/fileadmin/cru-1769414716/Commissions/Affaires_sociales/Fichiers/calprev_soc.pdf",
+    "https://www.lemonde.fr/les-decodeurs/article/2026/10/27/budget-2027-les-dates-cles-des-prochaines-semaines_6801100_4355770.html",
+    "https://lcp.fr/actualites/budget-2027-rejete-quelles-sont-les-prochaines-etapes-au-parlement-444753",
+    "https://www.moneyvox.fr/votre-argent/actualites/111327/budget-2027-de-la-secu-la-cmp-planifiee-pour-le-26-novembre",
+    "https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html",
+    "https://extranet.senat.fr/seances/s202611/s20261103/s20261103.pdf",
+    "https://apar.tv/cote-budget-de-la-secu-2027-deputes-et-senateurs-d-accord-le-26-novembre/",
+    "https://www.cadremploi.fr/editorial/actualites/actu-emploi/retour-de-la-reforme-des-retraites-et-hausse-du-te",
+    "https://bebesetmamans.20minutes.fr/actualites/15192-budget-de-la-secu-2027-cmp-le-26-novembre-les-scenarios-et-ce-que-risquent-les-familles",
+    "https://www.lemonde.fr/politique/article/2026/11/19/budget-de-la-secu-pour-2027-la-question-cle-de-l-effort-demande-aux-retraites_6813262_823448.html",
+    "https://presse.tripalio.fr/le-sort-du-plfss-2027-sera-scelle-en-cmp-a-la-date-butoir-du-26-novembre/",
+    "https://www.adcf.org/plfss-2027-retraites-assemblee/",
+    "https://www.senat.fr/fileadmin/cru-1681198794/Commissions/Amenagement_territoire_Developpement_durable/Calprev_CATDD.pdf",
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055118977",
+    "https://www.touteleurope.eu/vie-politique-des-etats-membres/le-senat-adopte-le-budget-2027-de-la-securite-sociale-en-premiere-lecture/",
+    "https://www.senat.fr/ordre-du-jour/files/ODJ_Prochaines_seances_03112026.pdf",
+    "https://www.senat.fr/fileadmin/cru-1794475262/Commissions/Lois/Programme_previsionnel.pdf",
+    "https://www.senat.fr/fileadmin/cru-1792049961/Commissions/Culture_Education_Communication/calprev.pdf",
+    "https://www.lemonde.fr/les-decodeurs/article/2026/11/24/ou-en-sont-les-affaires-concernant-nicolas-sarkozy_6071603_4355771.html",
+    "https://fr.wikipedia.org/wiki/Philippe_Juvin",
+    "https://www.senat.fr/dossier-legislatif/plfss2027.html",
+    "https://www.senat.fr/travaux-parlementaires/textes-legislatifs/la-loi-en-clair/projet-de-loi-de-financement-de-la-securite-sociale-pour-2027.html",
+    "https://www.senat.fr/fileadmin/cru-1777295242/Seance/Statistiques/Rapport_annuel/2024-2025/Tome_I.pdf",
+    "https://www.senat.fr/seances/s202611/s20261118/s20261118_mono.html"
+   ],
+   "reason": "**YES is more likely.** I estimate a 90% chance that the CMP meets on Thursday, November 26, 2026, and formally concludes without a common text by 23:59 Paris time.\n\n**Base rate.** The social-security budget is a better comparison than CMPs in general. The Senate’s November 4 report says the PLFSS 2025 committee was the first to reach agreement since the PLFSS 2011. The PLFSS 2026 committee then failed on November 26, 2025. That record strongly favors failure, though it does not measure the chance of a decision within this particular one-day window. ([senat.fr](https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html))\n\n**What changes the odds.** The Assembly rejected the revenue section 115–1 on October 23, leaving no Assembly-amended text to reconcile with the Senate’s version. The Senate then voted to undo the suspension of the 2023 pension reform, a change the government opposed. Both facts push toward **YES**. In the other direction, Assembly rapporteur Thibault Bazin told AFP he would seek common ground, and the government signaled openness to replacing the proposed restraint on pension increases with a change to pensioners’ tax treatment. Those are possible routes to a deal, not evidence that one has been struck. ([senat.fr](https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html))\n\n**Timing.** The Senate’s November 20 calendar lists an 08:15 start at the National Assembly, and TF1 still reported a Thursday morning meeting on November 23. The 50-day constitutional deadline expires that night. I put about 4% on postponement or no conclusion by 23:59, and about 6% on a same-day agreement. ([senat.fr](https://www.senat.fr/fileadmin/cru-1769414716/Commissions/Affaires_sociales/Fichiers/calprev_soc.pdf?utm_source=openai))\n\nNEW FACTS\n- 2026-11-23 | TF1 reported that the CMP was due to meet on the morning of November 26. | https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html\n- 2026-11-20 | The Senate Social Affairs Committee’s provisional calendar listed the CMP for 08:15 on November 26 at the National Assembly. | https://www.senat.fr/fileadmin/cru-1769414716/Commissions/Affaires_sociales/Fichiers/calprev_soc.pdf\n- 2026-11-19 | Assembly rapporteur Thibault Bazin told AFP that he would look for points of agreement ahead of the CMP. | https://www.moneyvox.fr/votre-argent/actualites/111327/budget-2027-de-la-secu-la-cmp-planifiee-pour-le-26-novembre\n- 2026-11-19 | Le Monde reported that Economy Minister Roland Lescure was open to ending the pensioners’ tax allowance instead of restraining pension increases. | https://www.lemonde.fr/politique/article/2026/11/19/budget-de-la-secu-pour-2027-la-question-cle-de-l-effort-demande-aux-retraites_6813262_823448.html\n- 2026-11-18 | Public Sénat reported that the Senate voted to undo the suspension of the 2023 pension reform despite government opposition. | https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-le-passage-du-projet-de-loi-au-senat\n- 2026-11-04 | The Senate’s report records that the Assembly rejected the revenue section on October 23 by 115 votes to 1, with 22 abstentions. | https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html\n\nCOUNTER  \nThe CMP only has to agree on a common text; it does not have to show that the full Assembly will pass it, as the PLFSS 2025 precedent demonstrates. A last-minute pension compromise could therefore resolve this as NO, and even a genuine impasse would count as NO if the meeting were postponed or suspended past the cutoff. ([senat.fr](https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html))",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "TF1 reported that the CMP was due to meet on the morning of November 26.",
+     "url": "https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "The Senate Social Affairs Committee’s provisional calendar listed the CMP for 08:15 on November 26 at the National Assembly.",
+     "url": "https://www.senat.fr/fileadmin/cru-1769414716/Commissions/Affaires_sociales/Fichiers/calprev_soc.pdf"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Assembly rapporteur Thibault Bazin told AFP that he would look for points of agreement ahead of the CMP.",
+     "url": "https://www.moneyvox.fr/votre-argent/actualites/111327/budget-2027-de-la-secu-la-cmp-planifiee-pour-le-26-novembre"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Le Monde reported that Economy Minister Roland Lescure was open to ending the pensioners’ tax allowance instead of restraining pension increases.",
+     "url": "https://www.lemonde.fr/politique/article/2026/11/19/budget-de-la-secu-pour-2027-la-question-cle-de-l-effort-demande-aux-retraites_6813262_823448.html"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Public Sénat reported that the Senate voted to undo the suspension of the 2023 pension reform despite government opposition.",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-le-passage-du-projet-de-loi-au-senat"
+    },
+    {
+     "date": "2026-11-04",
+     "fact": "The Senate’s report records that the Assembly rejected the revenue section on October 23 by 115 votes to 1, with 22 abstentions.",
+     "url": "https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html"
+    }
+   ],
+   "counter": "The CMP only has to agree on a common text; it does not have to show that the full Assembly will pass it, as the PLFSS 2025 precedent demonstrates. A last-minute pension compromise could therefore resolve this as NO, and even a genuine impasse would count as NO if the meeting were postponed or suspended past the cutoff. ([senat.fr](https://www.senat.fr/rap/l26-144-1/l26-144-1_mono.html))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:26:46Z",
+   "p": 0.82,
+   "searches": 14,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYGK0hWRbk5gexQQV2eyGghW0jG6mCnEdZoqkBOBkRTm4qdPYFNiMjw8dlalIlGHhGgmko6kti9u4JKfI3pzRevl7w8nsCBKLZTvnNs0hjX4wDEqy75gLfPAgsdBgavqJLR3KvJqNULKrffg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEreJDp6WFb5IhePBveINJn1dSR6GvdSICoIEnrWOQI3YZq3tJTnGIXlTiL-xTicvapqWfo2h4TTPaut1-F4xIMTSs25es8MGYAiETHIzBB0HvSl9-w4sXRFJhertF9Y55tQGX_XanwQrXw_rA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErlKOnPiC2Y1Nb03SC9jZLILOUaUPPOdFdg7WfM95KT055hlXuz68uJMC50mySGLXB8e9DZU9ajpQxwrmvnQOCeWCXGGeNYkvIq5osu1U_FfDsHIR6xB6EeGowbV7RmtcFkkn69acpq8srXSzl6TqoGA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyAmRwO3Zrc56CykjuGBVHJjTF0nJTzrdfseSYyckhCpVvzIQaNtWSf30fq9TL8Txs25tTqMLBfgtA0dv-ca3z1CkO8w0E3CSe4KXlbcBqGM0PQOwFpKZCcmR24POAwn_mYkwrb3YhQ4KsKgrEd90Y",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEerzqSF9g9z2azdwQ-ndJxTj2fpi1p5HJ-PFWgsevpbDyveGUSS-6BLC3ojaWr1o8ro1VRW7SnREC7Wnz-fJW8tOQR62UpupIJD1q1eD461A3zbeqj3eF8-BcMny2CkG3M4SDWBKyhkmG-aLpvEmBrIScgJUnV-X1sXGgddzB2tB0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJS833Dme0xJHwQOgIrcMk-c7EyB8y0xPsTcGv4lIVYqHIB5bKV61bWRlsmSyCL--q_AHMxkaJgHaGGfQksuyyzGd3nMXbLw-Ia3qfBwNPC3xZWxU5uFeYdWxJAC159tO7arXPoBwDW6j-hXNnXcBJJ0OBN5IZhbBImgqV_iiBcefc9WcT7ct4hOkGaw7vfBcdayxhOuqGdR_TXPiIwmhA9TaIm1kcfQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQJTdHkqrMO1agvSTNJypyjfgd6ehNzloTk17PaOK_L9NqT33Psi7uJtaXBMmpIAkkcQypfo5XKKO_AkSbhSQsxxmWt310luQbp0hCNftECyB9R_pPrj0g89RvqxTCnTh2uvBIBenETkd1wqndIuyVZx9f",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRQFVTjuAZIBEGkXlQYHyYo3CupWL1qkRffZ_5KW2K9OCAo7p8FYAMXt6mZDOAJh5B9njQPkSUUosxH02saRlY4xZMHd4Xi9B4YXuVmqyuvwBP13H7Q5UvSNX6-bSsoUHWogS1cqzIIPMZzmAXb_soBgOHfkGQDcb85aemE6h9NYasV-D9M7fY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkzwlzZ42kk65zO8PPEFOs3ImYQP14x5AXLEuKDwko-lu2Ky-z85OiH863rSXKkKtAE7MXarH9olscULYUD2Z6A9N2GYvXRd_x938xHkD0r8iqyzhAKtXUYEgpF-U3ekV9V5B_rf7RI_AHJKYhy7h1vw9qe0CWhT8IGyg6YjpPPamQYcSevnE13zfpau7OiD0z1WgMXcNQGr9aNeL8p61o9J1smP6cgVVfy_VPG3iCyUfTHHlVU7Cw3nfS4sHtEt0d1qGpqQZ_S9vZX2IPR9U=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbzP5ark49wSJLfNt52rmiXIaVGzlM85Y5wctKr7lQMJFH0bl7fT1G6NaRNjIQy3rsilVSvKu4pOTwt0YQlG_ElTOAraTWW9-ts4xmHQFfG0XUK_xVil22-x-wKSdq4yGaVeDILzOpctGyu6O9q7u2FBVpCklHsrv2Sta93RvQRf2TF1sOdd0aGvkzs8Ev0t8zHw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYeuTCmePUHtjjEc1YZaZjYpx9a1NuR8-OkFXKFY8cZs7Pxv4qhzPwQpYMcb7GpGrr3IJhB7_Ae1YF1_vx0t5dv8NLm4vsroes8E_-c_bIB-PmFh6FGlpWkxiepN1rjgk8lQYrxZg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyASrNFuz_x87O3I_PuArXkNyoRmfnLbEq9T-v2-Zwcjbwgskh9L8FaJQOkX9JLaFdVg2T8DsuqMf-dZ5CgnnEUAYxpJ4aAexPHFbe8FHmH7GvftNHSt3GIN_1aoxZY_DIIJwIrmUrdPWuOO2YkLQV14IP464v82h5q5mCemWOBTIaW7M=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHca2MWdCjICZ92wpE0mCosrf8XTZ4hyErL0YfUdJtARuzQgzvW4AQm5H-76DkEB0YOdCY9bqEdOsXOyshTO9ZMVCJo7sZP0wBaIssTO2NRmACo2G-PaKSnyK-CqxidswJPnNqhgvW9nPD7wpTu9XqRnDIDohA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0Dp_zC5Klip-WDseksI3H0hums0ekKf1BfDnlUMFF4gCQTiS4C40KAfRT8sFMluDPVoCxbQS7vi1N6ervgpXXVdCCkMYwXgu8VBUX1-fZzO77N9K6KRPndFew8UcoU3jeMRAy8FZTHJt7qV86I1ML2fcIfhUbGGWGH0tgtIsMmaUxlUpK-YkrPXD8jTw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcarSsFmVaO6Oio-dpna-XadbqlcWD13MqKKmdGyM-LbaC4GAauMsFqfeZiCmPEdobXq6Syya6tOLWJxVRuqVxaLc2PfRFYqCl8E9oX8hifWbPT4r4Rm0cgFpF4Zm5mvnwLG_tSYbOQIXqJuSaTSe7nwk_v03kuSaY2ZKUrWQCIa8ibS00NeE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJX0JC1WozCk5ItBU1guFJP4xkzc-Ncn3O9qyxZiOOKuaOYOW8446edjiecUFIPCgnXs3w6EUnXiGNmqMEEl8dUcqUMp1IvGyFM4XLEdgRcA5chJLuy-eqotxgOldBpcaAuQJ3CNZckSfRhu0P1d6s87Ok",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4HXQ5943E9uMYBhf0iIhTVywB77j4a3hYCWXb4ITQAAPWdCTBgNIcgggQf5BkNmGMRypyBPczPzwA2GsyxPGbSHz0Q9yWJgcNDuLWvh8jzKatp2-InOi3joE29Pe2KAP6NeQMKIJcIHO1QAdHu-OKDXYl5kySdVuGF7NqpGAKtUR3RWNK0eI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkZhGnRLPA2woaaOckOt7r8oz5vF8oZRs8qV0-ZepHTZ__aypX_JAby7zfg1CkJ_yVFSFxIRL8-es-P3UkuENdA7m22ZAlD_ovmIvEqaMOYxqqKHnqpjQgbvoz53rTiNZSyfkXhceV7UIr4GjSLIb2k3M3b7HLDA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3wtvyUVUS2Xc6EJNwO6_LmSc9Wl7eDMnsvySDeg1B7SLBrjtcAxuPfyAGNOJOQQkFfC4tQpCKhKziq3B1EyZn-Iu1rd_7l_cSEeEx2uz_wx-5CmirFTQWf3AH19Y=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvcSd1rzGJ4vu-exprXD6r-u5V_0gmJsIjJZCvWPlpLgH8dFVWX5WiQ9tCoXIX6Cmjn-T5KF9EvN6CnGQ64FCe5mqh491LApPcoiw9piQHJwC0TBTKDSzVR9_Ibk8QcQElNKbWPnsdhkIq9dPlJuQUBb6WCWg="
+   ],
+   "reason": " in disagreement that evening).\n\n### 2. Dated Facts Moving This Case\n- **Upward pressure toward failure (conditional on meeting):** On 23 October 2026, the National Assembly rejected the revenue part of the PLFSS 2027 by 115 votes to 1, causing the entire bill to be deemed rejected in first reading. Conversely, on 18 November 2026, the right- and center-dominated Senate adopted a heavily amended version of the bill by 201 votes to 124, notably repealing the suspension of the 2023 pension reform that deputies had voted for the previous year. Reporting from *Public Sénat* (18 November 2026) notes that an agreement between the two chambers in CMP is highly unlikely given these deep ideological divergences.\n- **Confirming the date and preparation for failure:** On 18 November 2026, *Public Sénat* and the Ministry of Action and Public Accounts (*budget.gouv.fr*) reported that the CMP on the PLFSS 2027 is scheduled to meet on Thursday 26 November 2026 (which also marks the end of the 50-day constitutional deadline). On 20 November 2026, the convocation of the CMP was formally registered in the National Assembly's legislative dossier, and the Senate's modified text was put online as document No. 3488 on 23 November 2026. Moreover, the National Assembly's Social Affairs Committee has already cancelled a placeholder meeting for 23 November and scheduled a provisional meeting for Monday 30 November 2026 at 21:30 explicitly to examine the PLFSS 2027 in *nouvelle lecture* \"in the event of failure of the joint committee\".\n- **Downward pressure / scheduling uncertainty:** As of 23 November 2026, legal and parliamentary trackers (*ACOMPIA*, *Max Compta*) noted that while the convocation of the CMP was registered on 20 November and the press and government calendar state it will meet on 26 November, the exact meeting time had not yet been posted on the official parliamentary agendas.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nThere are two distinct ways this claim could resolve NO. First, although *Public Sénat* and *budget.gouv.fr* state the CMP is scheduled for Thursday 26 November 2026, the official time and room notice had not yet appeared in the *Journal officiel* as of 23–24 November; if the meeting is held a day earlier (Wednesday 25 November) or postponed to Friday 27 November—or if an evening session on 26 November drags past midnight before officially recording failure—the criterion strictly resolves NO. Second, as occurred on 20 November 2026 with the end-of-year budget management bill (PLFG 2026) and in November 2024 with the PLFSS 2025, the government and the center-right bloc could strike a surprise compromise with the Senate majority in an attempt to avoid governing by ordinance or starting from scratch in a new reading.\n\nBalancing the near-certainty of disagreement between the fragmented National Assembly and the conservative Senate against a modest (~10%) risk that the CMP meets on a different day or concludes after 23:59, and a small (~8%) chance of a surprise political deal, I estimate the probability at 0.82.\n\nNEW FACTS\n- 2026-11-04 | A French Senate report on the PLFSS 2027 noted that the November 2024 agreement on the PLFSS 2025 was the first time a PLFSS joint committee (CMP) had reached an agreement since the PLFSS for 2011. | https://www.senat.fr/rap/l26-131-1/l26-131-1.html\n- 2026-11-18 | The French Senate adopted its amended version of the 2027 social-security financing bill (PLFSS) in first reading by 201 votes to 124, after the National Assembly had rejected the bill in October. | https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-ladoption-du-projet-de-loi-au-senat\n- 2026-11-18 | Public Sénat reported that a joint committee (commission mixte paritaire) on the PLFSS 2027 will be convened on 26 November 2026 to try to find a common text between deputies and senators. | https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-ladoption-du-projet-de-loi-au-senat\n- 2026-11-20 | On Thursday 26 November 2026 at midnight, the 50-day constitutional deadline for Parliament to vote on the PLFSS 2027 expires. | https://actualtplus.fr/plfss-2027-delai-du-26-novembre-ordonnances-et-suite/\n- 2026-11-22 | In the night of 16 to 17 November 2026, the Senate adopted amendment No. 323 to the PLFSS 2027 by 200 votes to 129, repealing the suspension of the 2023 pension reform that deputies had voted for in 2025. | https://www.hexapatrimoine.com/actualites/age-legal-de-depart-a-la-retraite-le-vote-du-senat-2027\n- 2026-11-23 | A placeholder meeting of the National Assembly's Social Affairs Committee initially scheduled for 23 November 2026 to examine the PLFSS 2027 in a new reading in case of CMP failure was cancelled, with the provisional new-reading examination moved to Monday 30 November 2026 at 21:30. | https://www.lesdeputesenchiffres.fr/reunions\n- 2026-11-23 | The convocation of a joint committee (CMP) on the PLFSS 2027 was registered on 20 November 2026 in the National Assembly's legislative dossier, though as of 23 November the exact meeting time had not yet been entered in the official parliamentary dossiers. | https://www.acompia.fr/indemnites-de-rupture-exoneration-2026-et-projet-2027/\n\nCOUNTER\nAlthough press reports and the government budget calendar indicate the CMP will meet on 26 November, the exact meeting date and time had not yet been posted in the official parliamentary dossiers as of 23 November, leaving a real possibility that the committee meets on 25 or 27 November or concludes after midnight. Additionally, just as the joint committee on the 2026 end-of-year budget management bill (PLFG) reached a compromise on 20 November 2026 despite an initial rejection in the National Assembly, the government and center-right lawmakers could unexpectedly agree on a common Senate-led text in CMP to avoid the political fallout of governing by ordinance.",
+   "facts": [
+    {
+     "date": "2026-11-04",
+     "fact": "A French Senate report on the PLFSS 2027 noted that the November 2024 agreement on the PLFSS 2025 was the first time a PLFSS joint committee (CMP) had reached an agreement since the PLFSS for 2011.",
+     "url": "https://www.senat.fr/rap/l26-131-1/l26-131-1.html"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The French Senate adopted its amended version of the 2027 social-security financing bill (PLFSS) in first reading by 201 votes to 124, after the National Assembly had rejected the bill in October.",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-ladoption-du-projet-de-loi-au-senat"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Public Sénat reported that a joint committee (commission mixte paritaire) on the PLFSS 2027 will be convened on 26 November 2026 to try to find a common text between deputies and senators.",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-ladoption-du-projet-de-loi-au-senat"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "On Thursday 26 November 2026 at midnight, the 50-day constitutional deadline for Parliament to vote on the PLFSS 2027 expires.",
+     "url": "https://actualtplus.fr/plfss-2027-delai-du-26-novembre-ordonnances-et-suite/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "In the night of 16 to 17 November 2026, the Senate adopted amendment No. 323 to the PLFSS 2027 by 200 votes to 129, repealing the suspension of the 2023 pension reform that deputies had voted for in 2025.",
+     "url": "https://www.hexapatrimoine.com/actualites/age-legal-de-depart-a-la-retraite-le-vote-du-senat-2027"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "A placeholder meeting of the National Assembly's Social Affairs Committee initially scheduled for 23 November 2026 to examine the PLFSS 2027 in a new reading in case of CMP failure was cancelled, with the provisional new-reading examination moved to Monday 30 November 2026 at 21:30.",
+     "url": "https://www.lesdeputesenchiffres.fr/reunions"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The convocation of a joint committee (CMP) on the PLFSS 2027 was registered on 20 November 2026 in the National Assembly's legislative dossier, though as of 23 November the exact meeting time had not yet been entered in the official parliamentary dossiers.",
+     "url": "https://www.acompia.fr/indemnites-de-rupture-exoneration-2026-et-projet-2027/"
+    }
+   ],
+   "counter": "Although press reports and the government budget calendar indicate the CMP will meet on 26 November, the exact meeting date and time had not yet been posted in the official parliamentary dossiers as of 23 November, leaving a real possibility that the committee meets on 25 or 27 November or concludes after midnight. Additionally, just as the joint committee on the 2026 end-of-year budget management bill (PLFG) reached a compromise on 20 November 2026 despite an initial rejection in the National Assembly, the government and center-right lawmakers could unexpectedly agree on a common Senate-led text in CMP to avoid the political fallout of governing by ordinance."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:27:26Z",
+   "p": 0.8,
+   "searches": 12,
+   "sources": [
+    "https://business-times.fr/plfss-2027-senat-retraites-cotisations/",
+    "https://pharmaceutiques.com/actualites/economie-et-ecosysteme/plfss-2027-la-bataille-de-la-souverainete-bat-son-plein/",
+    "https://presse.tripalio.fr/le-sort-du-plfss-2027-sera-scelle-en-cmp-a-la-date-butoir-du-26-novembre/",
+    "https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html",
+    "https://www.lefigaro.fr/social/le-senat-adopte-le-projet-de-budget-de-la-securite-sociale-pour-2027-20261118",
+    "http://videos.assemblee-nationale.fr/video.19512528_6ac65b379f091.commission-des-affaires-sociales--m-jean-pierre-farandou-mme-stephanie-rist-m-david-amiel-et-m-7-octobre-2026",
+    "https://www.assemblee-nationale.fr/dyn/17/organes/cmp/commission-mixte-paritaire-chargee-de-proposer-un-texte-sur-les-dispositions-restant-en-discussion-du-projet-de-loi-de-financement-de-la-securite-sociale-pour-2027",
+    "https://www.adiam.net/actualites/plfss-2027-senat-adoption-18-novembre-2026/",
+    "https://www.senat.fr/rap/l26-144-1/l26-144-11.pdf",
+    "https://formulepaie.fr/plfss-2027-amendements-paye-senat/",
+    "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-le-passage-du-projet-de-loi-au-senat",
+    "https://www.parlons-politique.fr/actualite-nationale/plfss-2026-echec-de-la-cmp-le-senat-remanie-le-texte-et-evoque-la-suspension-de-la-reforme-des-retraites-lassemblee-face-a-un-compromis-politique_5561/",
+    "https://www.parlons-politique.fr/actualite-nationale/plfss-2026-echec-de-la-cmp-deputes-et-senateurs-en-desaccord-sur-suspension-retraite-solde-csg-sur-capital-et-gel-des-prestations-renvoi-a-lassemblee-samedi_5549/",
+    "https://kohenavocats.com/commission-mixte-paritaire-navette-parlementaire-definition-composition-dernier-mot-budget-2027/",
+    "https://www.fesp.fr/plfss-2026-decryptage-des-dernieres-avancees-au-28-11-2025/",
+    "https://www.assemblee-nationale.fr/dyn/opendata/AVISANR5L17B3339.html",
+    "https://www.hexa-patrimoine.com/plfss-2027-interessement-epargne-salariale",
+    "https://www.senat.fr/travaux-parlementaires/textes-legislatifs/la-loi-en-clair/projet-de-loi-de-financement-de-la-securite-sociale-pour-2027.html",
+    "https://www.sorenir.com/articles/retraites-2027-bazin-sous-indexation-1-4-agirc-arrco-plfss/",
+    "http://bebesetmamans.20minutes.fr/actualites/15192-budget-de-la-secu-2027-cmp-le-26-novembre-les-scenarios-et-ce-que-risquent-les-familles",
+    "https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/plfss-pour-2027-examen-et-rejet-du-projet-de-loi-en-commission-des-affaires-sociales",
+    "https://www.capital.fr/economie-politique/commission-mixte-paritaire-cmp-role-composition-et-fonctionnement-1489851",
+    "https://www.senat.fr/dossier-legislatif/plfss2027.html",
+    "https://www.sante-actu.com/adoption-plfss-senat-cmp-examinera-texte-26-novembre/",
+    "https://www.touteleurope.eu/vie-politique-des-etats-membres/le-senat-adopte-le-budget-2027-de-la-securite-sociale-en-premiere-lecture/"
+   ],
+   "reason": "The claim is likely to resolve YES: the CMP is set for the morning of 26 November, and the political gap that produced last year’s same-day failure is wider this time.\n\nComparable recent cases are mixed but informative. The PLFSS 2026 CMP failed on its meeting day, 26 November 2025, in well under an hour, and AFP recorded the échec that evening. The PLFSS two years earlier was conclusive, but that was under a government still trying to assemble a majority; the text was then censured. In the present hung Assembly, contested social-security CMPs fail more often than they succeed, and when they fail they are declared the same day rather than carried past midnight.\n\nWhat moves this case toward failure is the size of the disagreement and the absence of a deal. The Assembly rejected the bill on 23 October 2026; the Senate, working from the original government text, adopted a rewritten version on 18 November by 201 votes to 124, restoring the 2023 pension-reform calendar and rejecting, unanimously, the de-indexation of pensions above €1,260. AFP reported on 19 November, from parliamentary and government sources, that the seven-and-seven CMP would meet on Thursday 26 November, the day the 50-day deadline expires; TF1 confirmed on 23 November that the meeting is Thursday morning and that, unlike last year, no compromise with the Socialists is on the table. The convocation itself was issued on 20 November. A morning start plus last year’s pattern of a rapid constat d’échec makes a same-day, pre-midnight record the normal path if they cannot agree.\n\nThe outcome can still miss. A bare majority inside each delegation—four senators from the Senate majority, and four deputies around the LR rapporteur and the central bloc—could adopt a common text even if the left and the RN vote against, and the government has a reason to want Senate changes locked in before any later 49.3. A postponement off the 26th, or a suspension that has not concluded by 23:59, would also be NO under the criterion as written.\n\nNEW FACTS\n- 2026-11-23 | TF1 Info reported that seven deputies and seven senators are to meet on Thursday 26 November in the morning in CMP on the PLFSS 2027, and that unlike the previous year no compromise is on the agenda. | https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html\n- 2026-11-19 | AFP, cited by Le Figaro, reported from parliamentary and government sources that the seven deputies and seven senators would meet on Thursday 26 November to seek an agreement on the 2027 social-security budget. | https://www.lefigaro.fr/flash-eco/budget-de-la-secu-deputes-et-senateurs-chercheront-un-accord-jeudi-prochain-20261119\n- 2026-11-18 | Public Sénat reported that the Senate adopted the PLFSS 2027 that day by 201 votes to 124, with 15 abstentions, and that the CMP would be convened on 26 November. | https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-le-passage-du-projet-de-loi-au-senat\n- 2026-11-20 | Tripalio quoted concordant TF1 and LCI sources, via a 19 November post, that the CMP would meet the following Thursday at 08:15. | https://presse.tripalio.fr/le-sort-du-plfss-2027-sera-scelle-en-cmp-a-la-date-butoir-du-26-novembre/\n- 2025-11-26 | Reporting on the prior cycle recorded that the PLFSS 2026 CMP failed on 26 November 2025, with AFP informed by parliamentary sources early that evening, and a later account putting the failure at under 40 minutes. | https://www.parlons-politique.fr/actualite-nationale/plfss-2026-echec-de-la-cmp-deputes-et-senateurs-en-desaccord-sur-suspension-retraite-solde-csg-sur-capital-et-gel-des-prestations-renvoi-a-lassemblee-samedi_5549/\n- 2026-11-18 | The Senate’s legislative note records that senators cancelled the suspension of the 2023 pension reform and unanimously rejected ending indexation of pensions above €1,260. | https://www.senat.fr/travaux-parlementaires/textes-legislatifs/la-loi-en-clair/projet-de-loi-de-financement-de-la-securite-sociale-pour-2027.html\n\nCOUNTER\nThe government has a concrete interest in a conclusive CMP: ordinances would keep it on the original bill, whereas a common text, or a later 49.3 built on Senate work, can preserve the chamber’s changes on pensions and contributions. The Assembly rapporteur has said he will look for points of convergence, and a 4–3 majority inside each delegation could adopt a text even if left and RN members refuse it. A deal reached late, or a meeting suspended without a formal échec before 23:59, would also count as NO.",
+   "facts": [
+    {
+     "date": "2026-11-23",
+     "fact": "TF1 Info reported that seven deputies and seven senators are to meet on Thursday 26 November in the morning in CMP on the PLFSS 2027, and that unlike the previous year no compromise is on the agenda.",
+     "url": "https://www.tf1info.fr/politique/commission-mixte-paritaire-49-3-ou-ordonnances-semaine-decisive-pour-le-budget-2027-de-la-securite-sociale-2477678.html"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "AFP, cited by Le Figaro, reported from parliamentary and government sources that the seven deputies and seven senators would meet on Thursday 26 November to seek an agreement on the 2027 social-security budget.",
+     "url": "https://www.lefigaro.fr/flash-eco/budget-de-la-secu-deputes-et-senateurs-chercheront-un-accord-jeudi-prochain-20261119"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Public Sénat reported that the Senate adopted the PLFSS 2027 that day by 201 votes to 124, with 15 abstentions, and that the CMP would be convened on 26 November.",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-les-modifications-a-retenir-apres-le-passage-du-projet-de-loi-au-senat"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Tripalio quoted concordant TF1 and LCI sources, via a 19 November post, that the CMP would meet the following Thursday at 08:15.",
+     "url": "https://presse.tripalio.fr/le-sort-du-plfss-2027-sera-scelle-en-cmp-a-la-date-butoir-du-26-novembre/"
+    },
+    {
+     "date": "2025-11-26",
+     "fact": "Reporting on the prior cycle recorded that the PLFSS 2026 CMP failed on 26 November 2025, with AFP informed by parliamentary sources early that evening, and a later account putting the failure at under 40 minutes.",
+     "url": "https://www.parlons-politique.fr/actualite-nationale/plfss-2026-echec-de-la-cmp-deputes-et-senateurs-en-desaccord-sur-suspension-retraite-solde-csg-sur-capital-et-gel-des-prestations-renvoi-a-lassemblee-samedi_5549/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The Senate’s legislative note records that senators cancelled the suspension of the 2023 pension reform and unanimously rejected ending indexation of pensions above €1,260.",
+     "url": "https://www.senat.fr/travaux-parlementaires/textes-legislatifs/la-loi-en-clair/projet-de-loi-de-financement-de-la-securite-sociale-pour-2027.html"
+    }
+   ],
+   "counter": "The government has a concrete interest in a conclusive CMP: ordinances would keep it on the original bill, whereas a common text, or a later 49.3 built on Senate work, can preserve the chamber’s changes on pensions and contributions. The Assembly rapporteur has said he will look for points of convergence, and a 4–3 majority inside each delegation could adopt a text even if left and RN members refuse it. A deal reached late, or a meeting suspended without a formal échec before 23:59, would also count as NO."
+  }
+ ]
+}

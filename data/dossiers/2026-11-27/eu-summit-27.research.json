@@ -1,0 +1,210 @@
+{
+ "claim": "EU leaders meeting in Brussels on Thursday 26 November 2026 politically agree that Pablo Hernández de Cos should be the next President of the European Central Bank.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:21:38Z",
+   "p": 0.77,
+   "searches": 6,
+   "sources": [
+    "https://www.consilium.europa.eu/en/meetings/european-council/2019/06/20-21/",
+    "https://efe.com/economia/2026-11-12/candidatos-presidencia-bce/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/weekly-schedule-of-president-antonio-costa/",
+    "https://www.consilium.europa.eu/it/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?Entity=122110&Entity=122132&Entity=122158",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?category=meeting&p=1",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?Entity=122110&Entity=122132&Entity=122158&daterange=future",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?elqTrack=true&elqTrackId=1E619C4F45D339B8A5DC88609B5A0FB8&page=1",
+    "https://www.consilium.europa.eu/es/press/press-releases/2026/11/20/weekly-schedule-of-president-antonio-costa/pdf/",
+    "https://data.consilium.europa.eu/doc/document/CM-502-2026-INIT/en/pdf",
+    "https://www.consilium.europa.eu/en/european-council/president/calendar/?StartDate=2020-06-19&page=1",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting&page=1",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?DateFrom=2026%2F11%2F01&DateTo=2027%2F11%2F08&category=meeting&page=2&trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?DateFrom=2024%2F05%2F01&DateTo=2030%2F12%2F31&Entity=122110&Entity=122132&category=meeting&page=2",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting",
+    "https://www.consilium.europa.eu/media/x41pvfn5/leaders-agenda_2026.pdf",
+    "https://data.consilium.europa.eu/doc/document/ST-15929-2026-REV-1/en/pdf",
+    "https://data.consilium.europa.eu/doc/document/CM-4969-2026-REV-1/en/pdf",
+    "https://irish-presidency.consilium.europa.eu/media/dtafzyhi/2026_06_10-_indicative-calendar-ie-presidency_.pdf",
+    "https://data.consilium.europa.eu/doc/document/ST-13-2026-INIT/en/pdf",
+    "https://www.consilium.europa.eu/en/press/press-releases/2019/10/18/christine-lagarde-appointed-president-of-the-european-central-bank/",
+    "https://www.consilium.europa.eu/en/policies/nomination-process-2019/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2019/07/02/european-council-appoints-new-eu-leaders/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2019/07/02/european-council-conclusions-30-june-2-july-2019/pdf",
+    "https://www.investing.com/news/economy-news/central-banking-veterans-knot-and-de-cos-in-race-to-replace-lagarde-at-ecb-5008855"
+   ],
+   "reason": "**Base rate.** The closest precedent gives a rough starting point of one success in two summit opportunities, not a reliable historical rate. In 2019, EU leaders deferred their top-jobs talks at the June 20–21 summit, then publicly backed Christine Lagarde on July 2, the final day of the next summit, before the formal appointment. That shows both that political backing can be announced separately and that the timing can slip. ([consilium.europa.eu](https://www.consilium.europa.eu/en/meetings/european-council/2019/06/20-21/))\n\n**What moves this case.** **Up:** On November 12, EFE reported that leaders were aiming for a political agreement at the November 26 Euro Summit specifically. On November 20, *El País* reported that France and Germany had put forward candidates for the other two ECB vacancies and that sources familiar with the talks favored Hernández de Cos for president. **Up, with a caveat:** Costa’s November 24 invitation confirms that leaders will address ECB succession and that the Euro Summit starts Thursday at 10:00, but it does not promise a Thursday decision. **Down:** *El País* still listed Klaas Knot as a candidate on November 22. A November 23 Caja Ingenieros note referred to his withdrawal, but I found no official confirmation, so I give that report limited weight. ([efe.com](https://efe.com/economia/2026-11-12/candidatos-presidencia-bce/))\n\n**Window risk.** I put the chance that the Thursday Euro Summit itself is canceled or moved at roughly 2%. The bigger risk is that the summit goes ahead but leaders leave the ECB item unresolved on Thursday, or hold the announcement until Friday. I’m more confident that Hernández de Cos is the eventual choice than that a qualifying endorsement is public by Thursday at 23:59 Brussels time. ([consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/weekly-schedule-of-president-antonio-costa/?utm_source=openai))\n\nNEW FACTS\n- 2026-11-24 | Costa’s invitation says leaders will discuss ECB succession, schedules the Euro Summit for Thursday at 10:00, and anticipates concluding proceedings on Friday. | https://www.consilium.europa.eu/it/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/\n- 2026-11-22 | *El País* reported that Klaas Knot’s candidacy remained active. | https://elpais.com/economia/2026-11-22/tenemos-el-mejor-candidato-asi-lanzo-espana-la-carrera-por-la-presidencia-del-bce.html\n- 2026-11-20 | *El País* reported that Germany and France had nominated Markus Brunnermeier and Laurence Boone, respectively, for the other two ECB Executive Board vacancies. | https://elpais.com/economia/2026-11-20/hernandez-de-cos-roza-la-presidencia-del-bce-tras-conocerse-los-candidatos-de-francia-y-alemania-a-la-direccion.html\n- 2026-11-12 | EFE reported that diplomatic sources said France was leaning toward backing Hernández de Cos over Knot. | https://efe.com/economia/2026-11-12/candidatos-presidencia-bce/\n- 2019-07-02 | The European Council publicly backed Christine Lagarde as its candidate before taking the formal appointment decision. | https://www.consilium.europa.eu/en/press/press-releases/2019/07/02/european-council-appoints-new-eu-leaders/\n\nCOUNTER  \nCosta committed to discussing the succession, not to naming a candidate on Thursday, and the summit is scheduled to run through Friday with the EU budget and Ukraine financing as its main business. If Knot’s candidacy still needs to be resolved, leaders could settle on Hernández de Cos privately on Thursday but wait until Friday to announce it, which would count as NO. ([consilium.europa.eu](https://www.consilium.europa.eu/it/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/))",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "Costa’s invitation says leaders will discuss ECB succession, schedules the Euro Summit for Thursday at 10:00, and anticipates concluding proceedings on Friday.",
+     "url": "https://www.consilium.europa.eu/it/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "*El País* reported that Klaas Knot’s candidacy remained active.",
+     "url": "https://elpais.com/economia/2026-11-22/tenemos-el-mejor-candidato-asi-lanzo-espana-la-carrera-por-la-presidencia-del-bce.html"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "*El País* reported that Germany and France had nominated Markus Brunnermeier and Laurence Boone, respectively, for the other two ECB Executive Board vacancies.",
+     "url": "https://elpais.com/economia/2026-11-20/hernandez-de-cos-roza-la-presidencia-del-bce-tras-conocerse-los-candidatos-de-francia-y-alemania-a-la-direccion.html"
+    },
+    {
+     "date": "2026-11-12",
+     "fact": "EFE reported that diplomatic sources said France was leaning toward backing Hernández de Cos over Knot.",
+     "url": "https://efe.com/economia/2026-11-12/candidatos-presidencia-bce/"
+    },
+    {
+     "date": "2019-07-02",
+     "fact": "The European Council publicly backed Christine Lagarde as its candidate before taking the formal appointment decision.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2019/07/02/european-council-appoints-new-eu-leaders/"
+    }
+   ],
+   "counter": "Costa committed to discussing the succession, not to naming a candidate on Thursday, and the summit is scheduled to run through Friday with the EU budget and Ukraine financing as its main business. If Knot’s candidacy still needs to be resolved, leaders could settle on Hernández de Cos privately on Thursday but wait until Friday to announce it, which would count as NO. ([consilium.europa.eu](https://www.consilium.europa.eu/it/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:22:49Z",
+   "p": 0.85,
+   "searches": 14,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh1FpkgFN0tn2KvHEoCTViDuMqmQKdYMiIKSFemWPLuGVPUoyg7Ca2406Ckf2KDuwrexymyRxwNt1ScTxbA15LBP6zNQmJP-MSy2MP8GE_HzJ6KS9sye5apthny7pky0wEHsKMGBxrueIwGexhAMEjYAG4Uhxv1vbhPiIofLBqj89EFapLAEHGBhbjGHJPnGp81Fo=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7TbgJ9ThKx_JCqCzEdoxze2VPKHh6VRUM2HhCzT92LQ9S8iYGudVvjd5F8Ov-uD3dIdl6h5viQ2EkSZTorfl9JG1a3K4U8TL0DEwXEZNLLTIVaL4fhuT7ND0NSlIoZt_PkkM7-xcnEATLYgQpFZoHDIMit8OoIfPd_av8UlaJuiOP5ufIYpd5JtJsBfBizAw_vkB7-8ThCeFq10Kox1DUgx9q2Ju7dlYXedtVneoSFYmqubwc56GNNpuYPyMhc0PYSrcNHJyJBopgeHy8tNQE2BHN4_Mz4myley8WNNwyHbxwUfM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9DWRj9uHedVyoHRtVX6OR-ahx-H6VxHN7eVfhdlWXqh87_0tYai60gex9d-5bugRFXkG05IedgzugJkQYHibOeIXe_sAm9SRkiVkSJ2Iep-S8p2rmeJAQzvRvRyX3v_FHPlqF35AZYkpOHqPX1gxzMY2aYrHZwqT3IWkDgmJe85IAVgpNoFyCUaqyGVJf3QY7pHZPwJGFhYw2dD3OKUaZuE3aiBBsCFowWmMibgPUuGUFcyK9uwTmQhwJUDhdpRftb4ZV9LBw1lmOkACuTqkG",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMEtWEEcprlEo7Ccr36-pTtPkUGTHnCG8w-MysyQXF6j1ZL6AVqbDVwwfLy9sGQ3LA7yLVjrqrNkKq1pSPmRaO8IuHC0CFs-tcrB-_gMNlyUubhdlsahku-auulAHswc_SjJ_ddaz_TaqER6KvM-NC6zzxna1ioBYUW9J_ieHhO6rwkAPSljdJP_Zselz5UOzJFg4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnAYzNgO-ialmmFX-Gr2VigMORbNrBV3pwjHRIgoIku95mfsaFbHGivx5inl3V1rKCZ47qG30C6NojM_anBsL0roY3biUV_YOHRR40lO8AxmYv9Rgic3y8gam6kcaiNtSGiTQGVjgeSQ5wKhZSQ2Gl6XpvCnklJsQsHxrd3bwlggEUilwLIP04bcCC_jYndTKmxhLc0JQW_aSrYLoTplXKy4yzv-be0RCJxNV4GNYrzbYd",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4rQYqAYzfG1pxkbRz7-ZbMR5DtrNjBrXh_BE6a2kX2G-2ygqwpFggr8zdWuZm3TnztoouAN7q6-o09XV9dKdJgp54P40yS94do4uwFR2tjFmR1usbdt9a1Vm2Islz7QIKlpbmV7cKUoNm_C8HCMi-Gm8eEe8lj0yLCUsnqUbFndFz3uDX1czHI_jwO6GUywDdeAbN_Uw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb-m1gIOIBUh0a2kFBtuhSM1BRHR55Mr2zi-Nz7Huak-w8_mdw_ThD0nDJjA7cuXol6xJvLNOo5zC_lvul-OZImNmy08_I05eRXZzDsAW3cs5k5PFNIBq0T16vvjD_qWw6fh_LRlE0mIg9ffmn1SNIqIPEfodQnqIRUdtHXYcUXK9H2dLXj-NegUDlMFtoOT3FrIzsJmCJ2iwL6YBDvbdTmSjF1xde9jzTsw0k_ALmuHgw1KWq16bxpnQlFnOpmkfQuDndkLEIjzLsVLpj0jMpnPerRT9-hl3lTArp_XU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCreKDAfC3lmmCUr0O7hIupclLDVLjiFfvzM1TcNqmj15kvDYCJ-FZYfwLjjsImpwdcLc95sYNbKHu10mBBxMtO7U6yVB22bT3-I2YSuKRlHWIMCVHSNwkLM4WKFKRN1EzAwTY9ggFnW0rfz7GH775pCJHlHk-cVeHpdcXl-yQ1tFVKxuVd33RpLyn6a5sp1gsn-madT7WRKcQV2V9gpvwHzzmJanJmAcc6KUv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPXkDqiej6RowbsJeG4Yj1Q1zGjPxFZH6NAJiJ754HhgQAf54nxMPV1f5GpV_diSejZx2gkJfN-nkO_eF-_a5eammLW-r8M_FYxSZclnXduJTcAPUeSdarhjmZPlonKUeyvcOzkN0e80GJbSKJ37zifOOmjTnptXGU53Fx7XRshFeHxq3klEArzn8Mr2R3wDQfalZwTgRfbQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECd-BHk8HnnTjQiDomeBBUUnvu3HkrshoeFGpuHmS20Fvi2bWkusIGEfpvA-5p5ZUsuMF6xK9K8DQUZAo7VbMFCP8azH_6U1WroASuc-KYdtAc8mtoM7zIlVRHU_hYx9iYQ-CvcpHWisc34nPuE5aR7X0HVptAPGFgzdQrZhSozia5W7fshYV0kTXhBA6N8VcOv7uxXJlEvouOwKlpwdthJY9v1UzqH4BNJaXTvRrW0alQFniX2E7EIIUU3HBiI9-2dBN60uTA3X6XUIUcze4jZ8UOJhY3kjpNwOLJsmEn6iKqW1e8Vl_KGc4btcgfp_RscS9G-Op22YSox8LSJQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0ToCFI9kdIDe5rKCWR8XQnYC8hvSgSwsDWa7MtNuPrWEoT2gXXQqf7N5JT0xxyiFEl1cHkPoGwcKGv1g7XTFtAiMaW_h0Hr0lS3-D3IJQOpG5kCW4VELYPKjzIq002P5MDQRA5tCgy9GGxVsS-5vpZhw-MqS5Mx1ipuMSqb1O-2wh2bA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGI-u9co_2_zJbOojdQxtmMDp_L0kzJBnsQ0peXOq-KC8LDkutzvRrKOgj8p9cBDbgp5mS776gI7CEmntwoyzxaI32iDaFv6vaNa06G5CC9AiPxRUYlUua5831tDrnMJRdQZR-m6mL2Z7nGA6CIr_IrUIXDfb2LetlU81c-GmnqeHZk-JHYIk2MCBJc5L3RMksHZmm5Xnu0H0X90JfOJJ6zdRoqVNBcJ___NnYqfmtStwa-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg1UuFsWWBzW8HJPewbvG5uN1Dff7sdXvNe9rhohovGk11iTmTalcZFnDRvKDkDl7j43EqMNB_g4h50mXAREIOl-O_uh2iwekkpc6XOkwm7EtbMH-22iTsnlPUoKsuM5xQHxE3MOoEf3ylNaAAW_0ux11pfaT_d7D1UcyQzjnduqQ2Fz1XB1c2WPikA_wfQ0is20ELh7AQTxfFHw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHElF4y5ijuNA_wS2Mu_pRGm4HIH3mGLYqEBWJS6DEbEKeWV96WFKXd8e4Q1GsRT4s_BuPc1nEPtPb5Ny60Bro_RP7DFJ7fji9D3y38kwL_FbsR0-Lcey3cvw2wykwEj0thGItnvy2QTSGSbt6gGMOCzEOluluw2JiocInoXTHg5WP0fSd2Y7p2THzWbzOQ9w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3pW2rlw6F8SMd2vcKDpLKXKQIFDbTMs74oXRTJVmVwD2-7_M5ibGBtCPErd9gdqbinQJnvNMFBgkQyMfAu0tidi2QwJslyXVt2uAETWEQqLPe02dibp7UThZaa2CKHIyNlmdtRvryywRZrRmORL8hr4GQdGs7u3wvDObmLIG5TWna3oGvL5hfmpSMmz-__CD22STqLK-Yv0fWJviWfsiz",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0SNm7JiDOtCNIJtOnJ7Ttrf_KZ_QwfU0w6WKttOI4rjETwhhDPSiYF1qeREQ_BTEZuI74KK6BHn51YqmkRJInKKv6Qcn5utyx5zYckifUAsrvlboWN81DA4wTQMvg0Uda0jDnPIhrgAtBM3GdKV-mSbr_nip2CZ5lqP6wzpMLYF2JfLAlEVCgv-31Zs0CcCTe_bo="
+   ],
+   "reason": "mber Special European Council, President António Costa confirmed that leaders \"will also take the time to address the renewal of the European Central Bank leadership, with a view to a timely decision,\" and placed the Euro Summit as the first session of the meeting starting at 10:00 Brussels time on Thursday 26 November, prior to breaking into bilateral negotiations on the Multiannual Financial Framework (MFF).\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nEven with the Franco-German-Spanish package in place and the Euro Summit scheduled for 10:00 on Thursday 26 November, the primary focus of the two-day Special European Council is a highly contentious negotiation over the 2028–2034 Multiannual Financial Framework (which France and several other states have sharply criticized) and 2027 Ukraine financing. There is a meaningful risk that leaders either hold back the announcement of the ECB leadership deal until the full summit concludes on Friday 27 November (which would resolve the claim NO due to the strict 23:59 Thursday deadline), or that backers of Klaas Knot or critics of the Governing Council's gender imbalance delay consensus or insist that the Eurogroup/ECOFIN formally process the package first. However, because the Euro Summit takes place on Thursday morning and the criterion allows confirmation via at least two major wire agencies citing officials or leaders, a Thursday agreement on Hernández de Cos is highly likely to be reported before midnight.\n\nNEW FACTS\n- 2026-10-29 | ECB President Christine Lagarde informed the Governing Council and European Council President António Costa that she will step down on 7 February 2027. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh1FpkgFN0tn2KvHEoCTViDuMqmQKdYMiIKSFemWPLuGVPUoyg7Ca2406Ckf2KDuwrexymyRxwNt1ScTxbA15LBP6zNQmJP-MSy2MP8GE_HzJ6KS9sye5apthny7pky0wEHsKMGBxrueIwGexhAMEjYAG4Uhxv1vbhPiIofLBqj89EFapLAEHGBhbjGHJPnGp81Fo=\n- 2026-11-06 | Eurogroup President Kyriakos Pierrakakis announced that by the 6 November deadline he received two candidacies for ECB President: Pablo Hernández de Cos (Spain) and Klaas Knot (Netherlands). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9DWRj9uHedVyoHRtVX6OR-ahx-H6VxHN7eVfhdlWXqh87_0tYai60gex9d-5bugRFXkG05IedgzugJkQYHibOeIXe_sAm9SRkiVkSJ2Iep-S8p2rmeJAQzvRvRyX3v_FHPlqF35AZYkpOHqPX1gxzMY2aYrHZwqT3IWkDgmJe85IAVgpNoFyCUaqyGVJf3QY7pHZPwJGFhYw2dD3OKUaZuE3aiBBsCFowWmMibgPUuGUFcyK9uwTmQhwJUDhdpRftb4ZV9LBw1lmOkACuTqkG\n- 2026-11-17 | Reuters reported that Germany's Finance Ministry is seeking the ECB chief economist role for Markus Brunnermeier and that Berlin will support Spain's Pablo Hernández de Cos for the ECB presidency. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4rQYqAYzfG1pxkbRz7-ZbMR5DtrNjBrXh_BE6a2kX2G-2ygqwpFggr8zdWuZm3TnztoouAN7q6-o09XV9dKdJgp54P40yS94do4uwFR2tjFmR1usbdt9a1Vm2Islz7QIKlpbmV7cKUoNm_C8HCMi-Gm8eEe8lj0yLCUsnqUbFndFz3uDX1czHI_jwO6GUywDdeAbN_Uw=\n- 2026-11-18 | A Eurogroup spokesperson stated that European Council President António Costa urged EU leaders to finalize ECB board proposals so they can reach an agreement on the three vacant ECB leadership posts at the 26 November summit in Brussels. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnAYzNgO-ialmmFX-Gr2VigMORbNrBV3pwjHRIgoIku95mfsaFbHGivx5inl3V1rKCZ47qG30C6NojM_anBsL0roY3biUV_YOHRR40lO8AxmYv9Rgic3y8gam6kcaiNtSGiTQGVjgeSQ5wKhZSQ2Gl6XpvCnklJsQsHxrd3bwlggEUilwLIP04bcCC_jYndTKmxhLc0JQW_aSrYLoTplXKy4yzv-be0RCJxNV4GNYrzbYd\n- 2026-11-20 | Eurogroup President Kyriakos Pierrakakis announced that by the 20 November deadline only two candidacies were received for the two other vacant ECB Executive Board seats: Laurence Boone (France) and Markus Brunnermeier (Germany). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb-m1gIOIBUh0a2kFBtuhSM1BRHR55Mr2zi-Nz7Huak-w8_mdw_ThD0nDJjA7cuXol6xJvLNOo5zC_lvul-OZImNmy08_I05eRXZzDsAW3cs5k5PFNIBq0T16vvjD_qWw6fh_LRlE0mIg9ffmn1SNIqIPEfodQnqIRUdtHXYcUXK9H2dLXj-NegUDlMFtoOT3FrIzsJmCJ2iwL6YBDvbdTmSjF1xde9jzTsw0k_ALmuHgw1KWq16bxpnQlFnOpmkfQuDndkLEIjzLsVLpj0jMpnPerRT9-hl3lTArp_XU=\n- 2026-11-21 | Reuters reported that France's nomination of Laurence Boone for the ECB Executive Board markets role alongside Germany's Markus Brunnermeier puts Spain's Pablo Hernández de Cos on track to succeed Christine Lagarde as ECB President. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPXkDqiej6RowbsJeG4Yj1Q1zGjPxFZH6NAJiJ754HhgQAf54nxMPV1f5GpV_diSejZx2gkJfN-nkO_eF-_a5eammLW-r8M_FYxSZclnXduJTcAPUeSdarhjmZPlonKUeyvcOzkN0e80GJbSKJ37zifOOmjTnptXGU53Fx7XRshFeHxq3klEArzn8Mr2R3wDQfalZwTgRfbQ==\n- 2026-11-24 | In his official invitation letter to European Council members, President António Costa stated that the summit will begin on Thursday 26 November at 10:00 with a Euro Summit and that leaders will address the renewal of the ECB leadership with a view to a timely decision. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECd-BHk8HnnTjQiDomeBBUUnvu3HkrshoeFGpuHmS20Fvi2bWkusIGEfpvA-5p5ZUsuMF6xK9K8DQUZAo7VbMFCP8azH_6U1WroASuc-KYdtAc8mtoM7zIlVRHU_hYx9iYQ-CvcpHWisc34nPuE5aR7X0HVptAPGFgzdQrZhSozia5W7fshYV0kTXhBA6N8VcOv7uxXJlEvouOwKlpwdthJY9v1UzqH4BNJaXTvRrW0alQFniX2E7EIIUU3HBiI9-2dBN60uTA3X6XUIUcze4jZ8UOJhY3kjpNwOLJsmEn6iKqW1e8Vl_KGc4btcgfp_RscS9G-Op22YSox8LSJQ==\n\nCOUNTER\nThe Special European Council on 26–27 November is primarily dedicated to contentious negotiations over the EU's 2028–2034 Multiannual Financial Framework and Ukraine financing, which could lead leaders to postpone any agreement or public announcement on the ECB leadership package until the summit concludes on Friday 27 November. Additionally, northern eurozone states backing Dutch candidate Klaas Knot or objecting to the lack of gender balance on the Governing Council could block an immediate political endorsement on Thursday and refer the decision back to the December Eurogroup and European Council.",
+   "facts": [
+    {
+     "date": "2026-10-29",
+     "fact": "ECB President Christine Lagarde informed the Governing Council and European Council President António Costa that she will step down on 7 February 2027.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEh1FpkgFN0tn2KvHEoCTViDuMqmQKdYMiIKSFemWPLuGVPUoyg7Ca2406Ckf2KDuwrexymyRxwNt1ScTxbA15LBP6zNQmJP-MSy2MP8GE_HzJ6KS9sye5apthny7pky0wEHsKMGBxrueIwGexhAMEjYAG4Uhxv1vbhPiIofLBqj89EFapLAEHGBhbjGHJPnGp81Fo="
+    },
+    {
+     "date": "2026-11-06",
+     "fact": "Eurogroup President Kyriakos Pierrakakis announced that by the 6 November deadline he received two candidacies for ECB President: Pablo Hernández de Cos (Spain) and Klaas Knot (Netherlands).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9DWRj9uHedVyoHRtVX6OR-ahx-H6VxHN7eVfhdlWXqh87_0tYai60gex9d-5bugRFXkG05IedgzugJkQYHibOeIXe_sAm9SRkiVkSJ2Iep-S8p2rmeJAQzvRvRyX3v_FHPlqF35AZYkpOHqPX1gxzMY2aYrHZwqT3IWkDgmJe85IAVgpNoFyCUaqyGVJf3QY7pHZPwJGFhYw2dD3OKUaZuE3aiBBsCFowWmMibgPUuGUFcyK9uwTmQhwJUDhdpRftb4ZV9LBw1lmOkACuTqkG"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "Reuters reported that Germany's Finance Ministry is seeking the ECB chief economist role for Markus Brunnermeier and that Berlin will support Spain's Pablo Hernández de Cos for the ECB presidency.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4rQYqAYzfG1pxkbRz7-ZbMR5DtrNjBrXh_BE6a2kX2G-2ygqwpFggr8zdWuZm3TnztoouAN7q6-o09XV9dKdJgp54P40yS94do4uwFR2tjFmR1usbdt9a1Vm2Islz7QIKlpbmV7cKUoNm_C8HCMi-Gm8eEe8lj0yLCUsnqUbFndFz3uDX1czHI_jwO6GUywDdeAbN_Uw="
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "A Eurogroup spokesperson stated that European Council President António Costa urged EU leaders to finalize ECB board proposals so they can reach an agreement on the three vacant ECB leadership posts at the 26 November summit in Brussels.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnAYzNgO-ialmmFX-Gr2VigMORbNrBV3pwjHRIgoIku95mfsaFbHGivx5inl3V1rKCZ47qG30C6NojM_anBsL0roY3biUV_YOHRR40lO8AxmYv9Rgic3y8gam6kcaiNtSGiTQGVjgeSQ5wKhZSQ2Gl6XpvCnklJsQsHxrd3bwlggEUilwLIP04bcCC_jYndTKmxhLc0JQW_aSrYLoTplXKy4yzv-be0RCJxNV4GNYrzbYd"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Eurogroup President Kyriakos Pierrakakis announced that by the 20 November deadline only two candidacies were received for the two other vacant ECB Executive Board seats: Laurence Boone (France) and Markus Brunnermeier (Germany).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb-m1gIOIBUh0a2kFBtuhSM1BRHR55Mr2zi-Nz7Huak-w8_mdw_ThD0nDJjA7cuXol6xJvLNOo5zC_lvul-OZImNmy08_I05eRXZzDsAW3cs5k5PFNIBq0T16vvjD_qWw6fh_LRlE0mIg9ffmn1SNIqIPEfodQnqIRUdtHXYcUXK9H2dLXj-NegUDlMFtoOT3FrIzsJmCJ2iwL6YBDvbdTmSjF1xde9jzTsw0k_ALmuHgw1KWq16bxpnQlFnOpmkfQuDndkLEIjzLsVLpj0jMpnPerRT9-hl3lTArp_XU="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "Reuters reported that France's nomination of Laurence Boone for the ECB Executive Board markets role alongside Germany's Markus Brunnermeier puts Spain's Pablo Hernández de Cos on track to succeed Christine Lagarde as ECB President.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPXkDqiej6RowbsJeG4Yj1Q1zGjPxFZH6NAJiJ754HhgQAf54nxMPV1f5GpV_diSejZx2gkJfN-nkO_eF-_a5eammLW-r8M_FYxSZclnXduJTcAPUeSdarhjmZPlonKUeyvcOzkN0e80GJbSKJ37zifOOmjTnptXGU53Fx7XRshFeHxq3klEArzn8Mr2R3wDQfalZwTgRfbQ=="
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "In his official invitation letter to European Council members, President António Costa stated that the summit will begin on Thursday 26 November at 10:00 with a Euro Summit and that leaders will address the renewal of the ECB leadership with a view to a timely decision.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECd-BHk8HnnTjQiDomeBBUUnvu3HkrshoeFGpuHmS20Fvi2bWkusIGEfpvA-5p5ZUsuMF6xK9K8DQUZAo7VbMFCP8azH_6U1WroASuc-KYdtAc8mtoM7zIlVRHU_hYx9iYQ-CvcpHWisc34nPuE5aR7X0HVptAPGFgzdQrZhSozia5W7fshYV0kTXhBA6N8VcOv7uxXJlEvouOwKlpwdthJY9v1UzqH4BNJaXTvRrW0alQFniX2E7EIIUU3HBiI9-2dBN60uTA3X6XUIUcze4jZ8UOJhY3kjpNwOLJsmEn6iKqW1e8Vl_KGc4btcgfp_RscS9G-Op22YSox8LSJQ=="
+    }
+   ],
+   "counter": "The Special European Council on 26–27 November is primarily dedicated to contentious negotiations over the EU's 2028–2034 Multiannual Financial Framework and Ukraine financing, which could lead leaders to postpone any agreement or public announcement on the ECB leadership package until the summit concludes on Friday 27 November. Additionally, northern eurozone states backing Dutch candidate Klaas Knot or objecting to the lack of gender balance on the Governing Council could block an immediate political endorsement on Thursday and refer the decision back to the December Eurogroup and European Council."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:23:39Z",
+   "p": 0.6,
+   "searches": 10,
+   "sources": [
+    "https://www.euronews.com/2026/11/13/france-and-germany-near-deal-on-de-cos-for-ecb-top-job-as-eu-confirms-two-candidates",
+    "https://www.newsquawk.com/headlines/former-ecbs-knot-netherlands-is-expected-to-withdraw-from-the-race-for-the-ecb-presidency-this-week-with-his-chances-minimal-now-that-germany-and-france-have-agreed-in-principle-that-spains-de-cos-should-lead-the-ecb-reports-de-volkskrant",
+    "https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job",
+    "https://www.iltempo.it/news/politica/ue-costa-avverte-i-leader-su-bilancio-e-ucraina-e-arrivato-il-momento-di-raggiungere-un-accordo/",
+    "https://www.politico.eu/article/dutch-and-spanish-battle-over-ecb-presidency/",
+    "https://www.economist.com/finance-and-economics/2026/11/18/meet-the-european-central-banks-new-squad",
+    "https://uk.lapresse.it/economy-en/2026/11/16/ecb-knot-set-to-withdraw-from-the-race-for-the-presidency/",
+    "https://ground.news/article/klaas-knot-drops-out-of-the-race-for-ecb-presidency",
+    "https://2eu.brussels/en/news/euro-area-countries-face-6-november-deadline-for-ecb-presidency-nominations-as-netherlands-puts-forward-klaas-knot",
+    "https://cupure.com/en/news/business/ecb-presidency-klaas-knot-stays-in-race-against-hernandez-de-cos-Z74lw604oRK",
+    "https://qz.com/eu-ministers-december-deal-ecb-president-110926",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/",
+    "https://www.expansion.com/mercados/2026/11/18/cos-sera-presidente-bce-pese-retraso-administrativo-eurogrupo.html",
+    "https://www.elespanol.com/invertia/economia/bancos-centrales/20261121/halcon-holandes-knot-aferra-candidatura-bce-frente-cos-gobierno-da-perdida/1003744466917_0.html",
+    "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/788172/EPRS_BRI%282026%29788172_EN.pdf",
+    "https://www.expansion.com/mercados/2026/11/20/paises-bajos-aferra-carrera-presidencia-bce-retrasa-nominacion-cos.html",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/forward-look-2026/pdf/",
+    "https://elpais.com/economia/2026-11-22/tenemos-el-mejor-candidato-asi-lanzo-espana-la-carrera-por-la-presidencia-del-bce.html",
+    "https://www.bloomberg.com/news/articles/2026-11-06/knot-and-de-cos-are-the-only-two-candidates-for-ecb-president",
+    "https://www.mundoamerica.com/news/2026/11/19/6afecf7be9cf4ac2708b45ab.html",
+    "https://www.bnr.nl/nieuws/economie/10615992/knot-trekt-zich-terug-uit-race-om-ecb-president",
+    "https://www.bloomberg.com/news/articles/2026-11-09/ecb-succession-advances-as-ministers-look-to-pick-trio-of-jobs",
+    "https://www.telegraaf.nl/financieel/kansen-klaas-knot-voor-topfunctie-bij-ecb-lijken-verkeken/164661391.html",
+    "https://www.consilium.europa.eu/es/press/press-releases/2026/11/24/speech-by-president-antonio-costa-at-the-opening-session-of-the-108th-congres-of-the-association-of-mayors-of-france/",
+    "https://ground.news/article/france-germany-to-take-key-ecb-roles-with-spain-set-for-presidency_afcfe5"
+   ],
+   "reason": "The political package is largely locked, but the claim turns on a same-day publicity rule that the summit timetable does not guarantee.\n\nComparable ECB successions are usually settled once France and Germany align and the qualified-majority arithmetic is in hand; late reversals after that point are uncommon. What is less common is a criterion that fails if the same deal is only made public on the second day of a two-day summit. Here the substance points to Pablo Hernández de Cos, while the clock points to a material miss risk.\n\nCosta’s invitation letter of 24 November puts “the renewal of the European Central Bank leadership, with a view to a timely decision” on the 26–27 November special European Council, which opens at 10:00 on Thursday with a Euro Summit. That follows an explicit October plan to choose a candidate in November so a December appointment is still possible before Christine Lagarde leaves on 7 February 2027. The package itself is already public: on 17 November Germany backed de Cos and claimed the chief-economist seat for Markus Brunnermeier; the Financial Times reported that Emmanuel Macron had told Friedrich Merz in Dublin he would support de Cos if France dropped its claim to that post. On 20 November France and Germany filed Laurence Boone and Brunnermeier, which Reuters and Politico described as completing the deal that puts de Cos on track for the presidency. El País reported on 22 November that Klaas Knot is already treated as the loser and that only de Cos had been received by Macron.\n\nThose facts pull this case above a generic “will leaders agree sometime” base rate. They do not remove the Thursday cutoff. Knot had not clearly withdrawn as of 20–21 November, so a clean sole-candidate recommendation was still blocked and a visible vote remained possible. The Euro Summit slot described by Costa is an economic briefing and a farewell to Lagarde, not an explicit decision point, and he plans to share conclusions on Friday. A pre-cooked personnel item can be nodded through on Thursday and briefed the same evening — wires cite officials within hours when that happens — but it can just as easily be parked until the Friday press moment, or pushed to the 17–18 December European Council if the budget fight consumes the room. Either of those is a NO under the criterion as written, even if de Cos is the person everyone expects.\n\nNEW FACTS\n- 2026-11-24 | António Costa’s invitation letter says leaders will address ECB leadership renewal “with a view to a timely decision,” starting Thursday 26 November at 10:00 with a Euro Summit, and that he foresees concluding on Friday. | https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/\n- 2026-11-20 | Reuters reported that France’s nomination of Laurence Boone, after Germany’s nomination of Markus Brunnermeier, put Spain’s Pablo Hernández de Cos on track to succeed Christine Lagarde. | https://www.reuters.com/business/finance/france-germany-take-key-ecb-roles-with-spain-set-presidency-2026-11-20/\n- 2026-11-20 | Politico reported that France and Germany had completed a political package paving the way for de Cos to become ECB president when Lagarde steps down on 7 February. | https://www.politico.eu/article/france-germany-complete-political-deal-for-ecb-leadership/\n- 2026-11-17 | Reuters reported that Germany was backing de Cos for ECB president while seeking the chief-economist post for Markus Brunnermeier. | https://www.reuters.com/world/europe/germany-propose-economist-brunnermeier-ecb-board-ministry-says-2026-11-17/\n- 2026-11-17 | The Financial Times reported that Macron told Merz in Dublin he wanted to back de Cos, offering to drop France’s claim to the chief-economist job. | https://www.ft.com/content/d83f2a71-aea1-4654-a89a-84ad203f6646\n- 2026-11-22 | El País reported that, absent a last-minute twist, Knot was already seen as the loser and that the contest would be settled formally the following week, with only de Cos having met Macron. | https://elpais.com/economia/2026-11-22/tenemos-el-mejor-candidato-asi-lanzo-espana-la-carrera-por-la-presidencia-del-bce.html\n- 2026-11-13 | Euronews reported that an EU official said Costa aimed to begin consulting the European Parliament and the ECB Governing Council at the 26 November summit, after France and Germany moved toward de Cos. | https://www.euronews.com/2026/11/13/france-and-germany-near-deal-on-de-cos-for-ecb-top-job-as-eu-confirms-two-candidates\n- 2026-10-29 | Bloomberg reported that Costa said leaders would need to choose Lagarde’s successor in November, at a 26–27 November meeting, in order to appoint in December. | https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job\n\nCOUNTER\nCosta’s own letter schedules the sharing of conclusions for Friday and does not place a decision on the successor inside Thursday’s Euro Summit, which he describes as an economic briefing and a thank-you to Lagarde. A package that leaders only endorse, or only allow to be briefed, when proceedings wrap up on 27 November is a NO under this criterion even if the name is de Cos. Knot’s refusal to stand down also gives leaders a ready excuse to avoid a visible settlement while the budget talks are still open and to leave the political endorsement for the December European Council.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "António Costa’s invitation letter says leaders will address ECB leadership renewal “with a view to a timely decision,” starting Thursday 26 November at 10:00 with a Euro Summit, and that he foresees concluding on Friday.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Reuters reported that France’s nomination of Laurence Boone, after Germany’s nomination of Markus Brunnermeier, put Spain’s Pablo Hernández de Cos on track to succeed Christine Lagarde.",
+     "url": "https://www.reuters.com/business/finance/france-germany-take-key-ecb-roles-with-spain-set-presidency-2026-11-20/"
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Politico reported that France and Germany had completed a political package paving the way for de Cos to become ECB president when Lagarde steps down on 7 February.",
+     "url": "https://www.politico.eu/article/france-germany-complete-political-deal-for-ecb-leadership/"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "Reuters reported that Germany was backing de Cos for ECB president while seeking the chief-economist post for Markus Brunnermeier.",
+     "url": "https://www.reuters.com/world/europe/germany-propose-economist-brunnermeier-ecb-board-ministry-says-2026-11-17/"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "The Financial Times reported that Macron told Merz in Dublin he wanted to back de Cos, offering to drop France’s claim to the chief-economist job.",
+     "url": "https://www.ft.com/content/d83f2a71-aea1-4654-a89a-84ad203f6646"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "El País reported that, absent a last-minute twist, Knot was already seen as the loser and that the contest would be settled formally the following week, with only de Cos having met Macron.",
+     "url": "https://elpais.com/economia/2026-11-22/tenemos-el-mejor-candidato-asi-lanzo-espana-la-carrera-por-la-presidencia-del-bce.html"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "Euronews reported that an EU official said Costa aimed to begin consulting the European Parliament and the ECB Governing Council at the 26 November summit, after France and Germany moved toward de Cos.",
+     "url": "https://www.euronews.com/2026/11/13/france-and-germany-near-deal-on-de-cos-for-ecb-top-job-as-eu-confirms-two-candidates"
+    },
+    {
+     "date": "2026-10-29",
+     "fact": "Bloomberg reported that Costa said leaders would need to choose Lagarde’s successor in November, at a 26–27 November meeting, in order to appoint in December.",
+     "url": "https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job"
+    }
+   ],
+   "counter": "Costa’s own letter schedules the sharing of conclusions for Friday and does not place a decision on the successor inside Thursday’s Euro Summit, which he describes as an economic briefing and a thank-you to Lagarde. A package that leaders only endorse, or only allow to be briefed, when proceedings wrap up on 27 November is a NO under this criterion even if the name is de Cos. Knot’s refusal to stand down also gives leaders a ready excuse to avoid a visible settlement while the budget talks are still open and to leave the political endorsement for the December European Council."
+  }
+ ]
+}

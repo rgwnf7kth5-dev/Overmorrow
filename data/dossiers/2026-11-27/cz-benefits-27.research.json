@@ -1,0 +1,179 @@
+{
+ "claim": "The Chamber of Deputies completes the second reading of the government Labour Code amendment that cuts unemployment benefits (sněmovní tisk 300) on Thursday 26 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:20:44Z",
+   "p": 0.3,
+   "searches": 7,
+   "sources": [
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+    "https://www.psp.cz/eknih/2025ps/stenprot/024schuz/s024124.htm",
+    "https://www.psp.cz/sqw/ischuze.sqw?o=10&pozvanka=1&s=37",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&rss-cz=0&t=300",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&snzp=1&sp=1&t=300",
+    "https://public.psp.cz/cgi-bin/win/sqw/historie.sqw?T=300&o=10",
+    "https://public.psp.cz/sqw/text/historie.sqw?T=300&o=10",
+    "https://psp.cz/cgi-bin/win/sqw/historie.sqw?o=10&snzp=1&t=300",
+    "https://www.psp.cz/sqw/hp.sqw%3EParlament%20%C4%8Cesk%C3%A9%20republiky%2C%20Poslaneck%C3%A1%20sn%C4%9Bmovna%3C/%20/laws/hp.sqw?k=200",
+    "https://www.psp.cz/sqw/hp.sqw7lF5000/files/okv/hp.sqw?k=200",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/index.htm",
+    "https://fulltext.psp.cz/usneseni",
+    "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/",
+    "https://www.psp.cz/cgi-bin/win/sqw/ppn.sqw?ct=300&o=10",
+    "https://www.psp.cz/sqw/hp.sqw7lF5000/text/sqw/ppi.sqw?lp=1",
+    "https://www.psp.cz/files/okv/cz_ChamberOfDeputies.pdf",
+    "https://www.psp.cz/eknih/cdrom/ic/pdf/09_vybory_02_2026.pdf",
+    "https://www.psp.cz/eknih/cdrom/ag106/f67c18e3a7ec45.pdf",
+    "https://public.psp.cz/eknih/cdrom/ag106/f6979ec9147aef.pdf",
+    "https://www.psp.cz/eknih/cdrom/ag106/f69bcec84075ba.pdf",
+    "https://www.psp.cz/eknih/cdrom/ag106/f68b0484402b2f.pdf",
+    "https://e-sbirka.gov.cz/sb/2025/120/2026-11-01",
+    "https://public.psp.cz/sqw/text/historie.sqw?o=10&t=300",
+    "https://www.psp.cz/eknih/2025ps/stenprot/030schuz/s030033.htm",
+    "https://davky.cz/aktuality/podpora-v-nezamestnanosti-2027-navrh/"
+   ],
+   "reason": "**I favor NO.** Print 300 is on the proposed agenda for the 37th sitting, but it has no fixed slot on Thursday, November 26. The main risk is that the Chamber does not reach it that day. ([psp.cz](https://www.psp.cz/sqw/historie.sqw?o=10&t=300))\n\n**Base rate.** For a government bill listed for second reading in a multi-day sitting but not assigned a day, I’d start at roughly **one chance in three** of completion on a specified sitting day. That’s a judgmental starting point, not a measured historical rate. The June 25 and October 13 transcripts show that second readings can close in one day once reached, so the key uncertainty is when the chair calls the item. ([psp.cz](https://www.psp.cz/eknih/2025ps/stenprot/024schuz/s024124.htm))\n\n**What moves this case.** The November 24 bill history shows that committee review took place and floor consideration could resume from November 20 (**up**). Wednesday’s fixed budget debate could push ordinary bills into Thursday (**up**), but print 300 is ninth in the ordinary second-reading block, and Thursday’s proposed agenda gives that block no protected time (**down**). The agenda lists 17 registered speakers for print 300, and the November 16 reporting update says the committee failed to recommend approval, with seven votes in favor and nine against (**down** for same-day closure if debate starts late). ([psp.cz](https://www.psp.cz/sqw/historie.sqw?o=10&t=300))\n\n**Most likely miss.** Earlier business takes up Thursday’s available time, and print 300 is called on Friday or later. Even if it opens Thursday, both debates must close that day; opening the item alone does not count. I put the chance of no qualifying closure in the window at **70%**. ([psp.cz](https://www.psp.cz/sqw/ischuze.sqw?o=10&pozvanka=1&s=37))\n\nNEW FACTS\n- 2026-11-24 | The Chamber’s bill history listed print 300 for proposed consideration at the 37th sitting and recorded that it was eligible for further consideration from November 20. | https://www.psp.cz/sqw/historie.sqw?o=10&t=300\n- 2026-11-23 | The Chamber’s announcement linked a proposed agenda that lists print 300 as item 10, with 17 registered speakers and no fixed Thursday slot. | https://www.psp.cz/zprava/23108\n- 2026-11-16 | Dávky.cz’s update reported that the Social Policy Committee adopted no resolution on print 300 after a recommendation to approve received seven votes in favor and nine against. | https://davky.cz/aktuality/podpora-v-nezamestnanosti-2027-navrh/\n\nCOUNTER  \nIf the Chamber clears several preceding bills on Tuesday and Wednesday’s budget debate takes most of that day, Thursday’s 11:00 agenda block is a plausible time to reach print 300. The Chamber can close both debates without settling the merits of the benefit cuts, so even a contested bill could advance that day if called early enough. ([psp.cz](https://www.psp.cz/sqw/ischuze.sqw?o=10&pozvanka=1&s=37))",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "The Chamber’s bill history listed print 300 for proposed consideration at the 37th sitting and recorded that it was eligible for further consideration from November 20.",
+     "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Chamber’s announcement linked a proposed agenda that lists print 300 as item 10, with 17 registered speakers and no fixed Thursday slot.",
+     "url": "https://www.psp.cz/zprava/23108"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "Dávky.cz’s update reported that the Social Policy Committee adopted no resolution on print 300 after a recommendation to approve received seven votes in favor and nine against.",
+     "url": "https://davky.cz/aktuality/podpora-v-nezamestnanosti-2027-navrh/"
+    }
+   ],
+   "counter": "If the Chamber clears several preceding bills on Tuesday and Wednesday’s budget debate takes most of that day, Thursday’s 11:00 agenda block is a plausible time to reach print 300. The Chamber can close both debates without settling the merits of the benefit cuts, so even a contested bill could advance that day if called early enough. ([psp.cz](https://www.psp.cz/sqw/ischuze.sqw?o=10&pozvanka=1&s=37))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:21:46Z",
+   "p": 0.22,
+   "searches": 22,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGO6PCuWwvc74KwJbjiN5zT7H9lJCzTYzJCDsRLuIqN2AF8Pspolmro5SB_MmPiHCZjlUE9gxZqEc2eveh0J0NeMeS5W6Ph4t3zDRyKBZgs4V4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvESsfaqOyCikVyqvhGawDFPDB_TXS6wzwgQAI1FCcw4H10sWnBdVXVO9mi_hbzO3hFYxHE_mTnjwrT2l1i3vdhsmi8vS5ip5j6y3ug_YmNv676Zlun8j6D-kwS83tE8Cbr9HIaTqWJHuU6sWSn6R7iSTAAT5QGDMVLaANIi8q8egqSyZM4mcjlc5FwYSvVrrJDiOePmAgucF5-iwZus8GfyjnXMeF7Q3qs9_prEQB6veImr1ZILOqhexJ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmpR4T4IlYeJX-H3Zquy0w1Ds1Wpffc2y-NN8eHONSCtyNa1I-yAz-J18i70r3-bfF0l6kMym09B2nHw02ivnOjitKZuHl7zQYNXuEr63vIykkuEJx3AoLDd7dmILvbDaZRVJYDQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXcte4rP65ReN4kROyIxdp_d0XK9BkueuS0a4ln76sUFtESyt2wLZHC_ao_fzgE07n2aMMf_tKtPkB3GIr1UcsAa7tyJfSdrNHc9DqJFLjPbrtuYlDeggpCnON",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhE5WfzSSULtR2QLQnhywTq7edhFCdKoZdcRSU3fB1EIGW1eD615vDBN8SewO4EdtWOmJNdl0uADjyITAetwzXcwlSsrn7uxoQE2MJl66BPizsTgjjRxJ1NMXfGkcndU0BRreg4q62sspLw3_RfL5MqO3IQLmmkJhkQuv3v_1KfTqMmDxEImIi4V9phR5F6AVtBMzr5P4z1BtTAkYEBcwsvFEJYG7t",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK6loXuEKDEV07olY1tduLikZPYoci_7UWEOf2sJjtJOIAaIwo5w3P_4bz-ujuO5gBvAQtUUNnccs4KCZCuCcfNtJpVe3XT--6XuGpe_27tD620l2a5PXHFuujZTBmMwiofKdLuNHNXec=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMf_RSzhZtXDiS69-qxRN6CWbYClOxV6XAc-13SRzMQPSKyFrE16OnYpigA_qEss9jxpppBK8aeEedJ7JQHpqVUEytnmc0YxeV23mZ5yr7rw6rfr1H9rbk",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFuM5JTgpAHEeYmXnuid2rnEzWMJ718hicCKWr7c6o3EG_CPr7_zSaw0NO69s0-TwOwv_7secJwY7AhIi2Ej-WTIS6N0eW_1qtOjQVpHPUe1GGD_sU_1lVF1GTJCKitQ6-W8uAgA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLvvh7jXzzdYFUqiIMeoLZhnBFq1la9B2cyQbsUDxw2_p0fF1M8osJr0puknGN-FSpjRUOLfx6nIL9JSQyQQimWSFUaKP2uQ3YnVl3vSOwSl9AYwTcS_2bRNlU_azQl8khiNxFIPusKu72SG8XAciTre66tXQ=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwh3qKqFICyf5k4S4gbUea8zTAwD0juT4gEPLRaT4iDZ5N9lg4wtvNYCcZmu05N7vdSFSBTojQhgkWrZU_efX6bOUNSfA5L8EXwqWJFSC0S4bXiiMflCrui_l3FwvGkDpqA7P2m5b_2ag2ya9vwSRbMhJApVkAwja1F3B1SUPsdgr7MWkllodssUeXSv4oIkR1GeOq-kSsRm9pxcPFhYLuJv1t2hcE89uf6d5kwtkiWGkiJx5PVnOrNwZ1-gg="
+   ],
+   "reason": "nd i117.cz on 24 November 2026 indicates that Labour Minister Aleš Juchelka (ANO) has prepared a parliamentary amendment to soften the unemployment benefit cuts (preserving the 80% rate for people aged 52+, those in retraining, and caregivers) to satisfy coalition partner SPD (since ANO and Motorists have only 93 seats and need SPD for a majority). With the coalition council confirming the compromise on Tuesday, 24 November, and the government pushing for a 1 January 2027 effective date, the coalition has a strong incentive to push print 300 (alongside print 301 on platform work) through second reading during the first week of the 37th session so third reading can occur in early December.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\n The most likely outcome is **NO** (that the second reading of print 300 is not completed specifically on Thursday, 26 November 2026). Even though the bill is urgent because of its proposed 1 January 2027 effective date, it could be debated and completed earlier (on Tuesday afternoon/evening, 24 November, or Wednesday, 25 November if the budget is scheduled for another day), or the fierce opposition from both parliamentary opposition parties and trade unions over the \"švarcsystém\" and unemployment benefit cuts could cause the general and detailed debates to drag past Thursday's limited floor time into Friday, 27 November, or the following week (from 2 December). Conversely, the strongest reason a **NO** forecast might fail is that the governing coalition, having just finalized its internal compromise with SPD on Tuesday, 24 November, uses its majority to fix (\"pevně zařadit\") the labour package (prints 301 and 300) specifically for Thursday, 26 November (after Wednesday's budget debate) and votes to extend sitting hours into Thursday night to force the closure of the second reading before midnight.\n\nBalancing the urgency of the bill and the newly reached coalition compromise against the narrow one-day window (Thursday), competing agenda items (especially the 2027 State Budget), Thursday's standard short legislative schedule, and the high likelihood of protracted opposition debate, I estimate a **22%** probability that the second reading of print 300 is completed specifically on Thursday, 26 November 2026.\n\nNEW FACTS\n- 2026-11-18 | Commentator Martin Čaban in Seznam Zprávy noted that the Labour Code amendment (sněmovní tisk 300) amends 22 existing laws and includes a controversial redefinition of dependent work alongside changes to unemployment benefits. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhE5WfzSSULtR2QLQnhywTq7edhFCdKoZdcRSU3fB1EIGW1eD615vDBN8SewO4EdtWOmJNdl0uADjyITAetwzXcwlSsrn7uxoQE2MJl66BPizsTgjjRxJ1NMXfGkcndU0BRreg4q62sspLw3_RfL5MqO3IQLmmkJhkQuv3v_1KfTqMmDxEImIi4V9phR5F6AVtBMzr5P4z1BtTAkYEBcwsvFEJYG7t\n- 2026-11-23 | According to the official bill history on psp.cz, the Social Policy Committee issued its record of proceedings on print 300 on 12 November 2026, making the bill eligible for further debate from 20 November 2026 and placing its second reading on the proposed agenda of the 37th session starting 24 November 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmpR4T4IlYeJX-H3Zquy0w1Ds1Wpffc2y-NN8eHONSCtyNa1I-yAz-J18i70r3-bfF0l6kMym09B2nHw02ivnOjitKZuHl7zQYNXuEr63vIykkuEJx3AoLDd7dmILvbDaZRVJYDQ==\n- 2026-11-23 | The Chamber of Deputies announced that the 37th session opens on Tuesday 24 November 2026 at 14:00 and includes on its proposed agenda the second and third readings of the 2027 state budget bill. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGO6PCuWwvc74KwJbjiN5zT7H9lJCzTYzJCDsRLuIqN2AF8Pspolmro5SB_MmPiHCZjlUE9gxZqEc2eveh0J0NeMeS5W6Ph4t3zDRyKBZgs4V4=\n- 2026-11-23 | Trade union OSSOO reported that the ČMKOS union confederation launched a letter campaign to deputies opposing the second reading of the Labour Code amendment over its redefinition of dependent work and reduction of unemployment benefits. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK6loXuEKDEV07olY1tduLikZPYoci_7UWEOf2sJjtJOIAaIwo5w3P_4bz-ujuO5gBvAQtUUNnccs4KCZCuCcfNtJpVe3XT--6XuGpe_27tD620l2a5PXHFuujZTBmMwiofKdLuNHNXec=\n- 2026-11-24 | Because ANO and Motorists hold 93 of 200 seats and lack a majority without SPD, Labour Minister Aleš Juchelka (ANO) prepared an amendment to soften the proposed unemployment benefit cuts, which the coalition council was set to confirm on Tuesday 24 November 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLvvh7jXzzdYFUqiIMeoLZhnBFq1la9B2cyQbsUDxw2_p0fF1M8osJr0puknGN-FSpjRUOLfx6nIL9JSQyQQimWSFUaKP2uQ3YnVl3vSOwSl9AYwTcS_2bRNlU_azQl8khiNxFIPusKu72SG8XAciTre66tXQ=\n- 2026-11-24 | Peníze.cz reported that under the coalition compromise amendment to the Labour Code bill, jobseekers aged 52 and older, those in retraining, and caregivers without prior calculated income will retain higher unemployment support rather than facing the cut from 80% to 65%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwh3qKqFICyf5k4S4gbUea8zTAwD0juT4gEPLRaT4iDZ5N9lg4wtvNYCcZmu05N7vdSFSBTojQhgkWrZU_efX6bOUNSfA5L8EXwqWJFSC0S4bXiiMflCrui_l3FwvGkDpqA7P2m5b_2ag2ya9vwSRbMhJApVkAwja1F3B1SUPsdgr7MWkllodssUeXSv4oIkR1GeOq-kSsRm9pxcPFhYLuJv1t2hcE89uf6d5kwtkiWGkiJx5PVnOrNwZ1-gg=\n\nCOUNTER\nBecause the government aims for the Labour Code amendment to take effect on 1 January 2027, the governing coalition has a strong incentive to complete the second reading during the first week of the 37th session so the bill can pass its third reading in early December and still reach the Senate and President in time. Having finalized its internal compromise with SPD on Tuesday 24 November to soften the unemployment benefit cuts, the coalition majority could schedule the debate specifically for Thursday 26 November and vote to extend sitting hours into the evening to ensure both the general and detailed debates close before midnight.",
+   "facts": [
+    {
+     "date": "2026-11-18",
+     "fact": "Commentator Martin Čaban in Seznam Zprávy noted that the Labour Code amendment (sněmovní tisk 300) amends 22 existing laws and includes a controversial redefinition of dependent work alongside changes to unemployment benefits.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhE5WfzSSULtR2QLQnhywTq7edhFCdKoZdcRSU3fB1EIGW1eD615vDBN8SewO4EdtWOmJNdl0uADjyITAetwzXcwlSsrn7uxoQE2MJl66BPizsTgjjRxJ1NMXfGkcndU0BRreg4q62sspLw3_RfL5MqO3IQLmmkJhkQuv3v_1KfTqMmDxEImIi4V9phR5F6AVtBMzr5P4z1BtTAkYEBcwsvFEJYG7t"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "According to the official bill history on psp.cz, the Social Policy Committee issued its record of proceedings on print 300 on 12 November 2026, making the bill eligible for further debate from 20 November 2026 and placing its second reading on the proposed agenda of the 37th session starting 24 November 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmpR4T4IlYeJX-H3Zquy0w1Ds1Wpffc2y-NN8eHONSCtyNa1I-yAz-J18i70r3-bfF0l6kMym09B2nHw02ivnOjitKZuHl7zQYNXuEr63vIykkuEJx3AoLDd7dmILvbDaZRVJYDQ=="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "The Chamber of Deputies announced that the 37th session opens on Tuesday 24 November 2026 at 14:00 and includes on its proposed agenda the second and third readings of the 2027 state budget bill.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGO6PCuWwvc74KwJbjiN5zT7H9lJCzTYzJCDsRLuIqN2AF8Pspolmro5SB_MmPiHCZjlUE9gxZqEc2eveh0J0NeMeS5W6Ph4t3zDRyKBZgs4V4="
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "Trade union OSSOO reported that the ČMKOS union confederation launched a letter campaign to deputies opposing the second reading of the Labour Code amendment over its redefinition of dependent work and reduction of unemployment benefits.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK6loXuEKDEV07olY1tduLikZPYoci_7UWEOf2sJjtJOIAaIwo5w3P_4bz-ujuO5gBvAQtUUNnccs4KCZCuCcfNtJpVe3XT--6XuGpe_27tD620l2a5PXHFuujZTBmMwiofKdLuNHNXec="
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Because ANO and Motorists hold 93 of 200 seats and lack a majority without SPD, Labour Minister Aleš Juchelka (ANO) prepared an amendment to soften the proposed unemployment benefit cuts, which the coalition council was set to confirm on Tuesday 24 November 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLvvh7jXzzdYFUqiIMeoLZhnBFq1la9B2cyQbsUDxw2_p0fF1M8osJr0puknGN-FSpjRUOLfx6nIL9JSQyQQimWSFUaKP2uQ3YnVl3vSOwSl9AYwTcS_2bRNlU_azQl8khiNxFIPusKu72SG8XAciTre66tXQ="
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Peníze.cz reported that under the coalition compromise amendment to the Labour Code bill, jobseekers aged 52 and older, those in retraining, and caregivers without prior calculated income will retain higher unemployment support rather than facing the cut from 80% to 65%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwh3qKqFICyf5k4S4gbUea8zTAwD0juT4gEPLRaT4iDZ5N9lg4wtvNYCcZmu05N7vdSFSBTojQhgkWrZU_efX6bOUNSfA5L8EXwqWJFSC0S4bXiiMflCrui_l3FwvGkDpqA7P2m5b_2ag2ya9vwSRbMhJApVkAwja1F3B1SUPsdgr7MWkllodssUeXSv4oIkR1GeOq-kSsRm9pxcPFhYLuJv1t2hcE89uf6d5kwtkiWGkiJx5PVnOrNwZ1-gg="
+    }
+   ],
+   "counter": "Because the government aims for the Labour Code amendment to take effect on 1 January 2027, the governing coalition has a strong incentive to complete the second reading during the first week of the 37th session so the bill can pass its third reading in early December and still reach the Senate and President in time. Having finalized its internal compromise with SPD on Tuesday 24 November to soften the unemployment benefit cuts, the coalition majority could schedule the debate specifically for Thursday 26 November and vote to extend sitting hours into the evening to ensure both the general and detailed debates close before midnight."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:22:41Z",
+   "p": 0.4,
+   "searches": 15,
+   "sources": [
+    "https://www.psp.cz/sqw/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://psp.cz/sqw/text/tiskt.sqw?O=7&CT=300&CT1=5",
+    "https://psp.cz/sqw/historie.sqw?o=6&t=300",
+    "https://stopazakona.cz/tisky/prt_01a0be45-0e2f-7fcb-8142-6e172307f7a4",
+    "https://www.hrot24.cz/clanek/ano-spd-motoriste-kompromis-podpora-v-nezamestnanosti-snemovna-HmQV4",
+    "https://www.ceskenoviny.cz/zpravy/2906055",
+    "https://psp.cz/sqw/historie.sqw?t=300",
+    "https://www.ceskenoviny.cz/zpravy/2905763",
+    "https://www.psp.cz/sqw/hp.sqw7lF5000/detail.sqw?id=7018",
+    "https://psp.cz/sqw/pp.sqw?b=60036",
+    "https://www.psp.cz/sqw/text/tiskt.sqw?O=10&CT=300&CT1=0",
+    "https://psp.cz/sqw/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://psp.cz/sqw/text/tiskt.sqw?o=8&ct=300&ct1=0&v=PZ&pn=3&pt=1",
+    "https://media24.cz/article/tydenni-monitor-snemovnich-tisku-za-47-tyden-lustrace-pro-ministry-komise-pro-umrti-deti-a-evidence-ockovani",
+    "https://www.forum24.cz/zive-snemovna-jedna-o-definici-svarcsystemu-i-o-regulaci-cen-elektriny",
+    "https://www.psp.cz/sqw/hp.sqw/eknih/2025ps/stenprot/006schuz/hp.sqw?k=202&r=2026&c=48",
+    "https://www.ceskenoviny.cz/zpravy/2904762",
+    "https://medium.seznam.cz/clanek/jiri-bodenlos-juchelka-setri-pet-miliard-na-nezamestnanych-stejny-zakon-otevira-diru-v-odvodech-za-ctyriadvacet-339417",
+    "https://www.psp.cz/sqw/historie.sqw?o=7&T=300",
+    "https://cesky.radio.cz/snemovna-podporila-sporne-snizeni-podpor-v-nezamestnanosti-po-nedavnem-zvyseni-8900561",
+    "https://www.psp.cz/sqw/text/ischuze.sqw?o=10&s=37&pozvanka=1",
+    "https://cesky.radio.cz/koalice-smeruje-k-dohode-o-podpore-v-nezamestnanosti-oznami-ji-asi-ve-stredu-8903413",
+    "https://www.psp.cz/sqw/historie.sqw?o=8&t=300&snzp=1",
+    "https://denikn.cz/minuta/2268252/",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=300&rss-cz=1"
+   ],
+   "reason": "The Chamber’s 37th session is underway, and print 300 is ready for second reading after the social-policy committee record of 12 November. Coalition leaders (including the Speaker) said on 24 November that the second reading would be shifted from Tuesday to Thursday so a compromise on the unemployment-benefit cuts could be announced on Wednesday; an opposition club chair reported a leadership understanding that the item would come up Thursday evening. Thursday’s draft order already fixes written interpellations until 11:00 and oral interpellations from 14:30 to 18:00, so a legislative slot before evening is short, and the state-budget second reading is fixed as Wednesday’s first point.\n\nComparable second readings of contested government bills are often opened on the day the majority schedules them, but same-calendar-day closure is far less reliable once only an evening window remains. Here the coalition majority, an announced compromise, and an authorised night sitting pull toward opening the reading on Thursday. Against that, 17 written debate registrations, a large set of amendments, a hot-button mix of benefit cuts and the definition of dependent work, a likely post-18:00 start, and a Friday continuation already on the calendar all make a full close of both the general and the detailed debate before 23:59 the less likely outcome.\n\nNEW FACTS\n- 2026-11-24 | psp.cz showed print 300 as proposed for the 37th session (from 24 November), with the committee record delivered as print 300/1 on 12 November and further proceedings possible from 20 November. | https://www.psp.cz/sqw/historie.sqw?o=10&t=300\n- 2026-11-24 | ČTK reported that Okamura and Juchelka said the coalition had a workable compromise and that the second reading would move from Tuesday to Thursday after a Wednesday announcement. | https://www.ceskenoviny.cz/zpravy/2905763\n- 2026-11-24 | The same ČTK report quoted Marian Jurečka saying chamber leadership had agreed the item would come onto the agenda on Thursday evening. | https://www.ceskenoviny.cz/zpravy/2905763\n- 2026-11-24 | The draft order of the 37th session fixed Thursday written interpellation answers for 09:00–11:00 and oral interpellations for 14:30–18:00, with print 300 listed in the second-reading block (17 written debate registrations). | https://psp.cz/sqw/ischuze.sqw?o=10&s=37&pozvanka=1\n- 2026-11-24 | ČT24/ČTK reported that after several hours the Chamber approved the Tuesday programme and that the coalition had again allowed sittings into the night; the unemployment-benefit bill was described as due for second reading on Thursday, not Tuesday. | https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888\n- 2026-11-24 | ČTK reported that ČMKOS chair Středula rejected any cut to unemployment benefits, while SPD said a smaller union (OS KOVO) was expected at the Wednesday presentation. | https://www.ceskenoviny.cz/zpravy/2906055\n\nCOUNTER\nThe Speaker and the labour minister have already tied the second reading to Thursday after Wednesday’s announcement, the majority controls the order of business, and night sittings are authorised, so they can open print 300 on Thursday and vote to structure or close debate once their amendment is on the table. If they use any of the 11:00–14:30 window as well as the evening, six to nine hours of legislative time is enough to finish both debates before midnight even with opposition speeches.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "psp.cz showed print 300 as proposed for the 37th session (from 24 November), with the committee record delivered as print 300/1 on 12 November and further proceedings possible from 20 November.",
+     "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "ČTK reported that Okamura and Juchelka said the coalition had a workable compromise and that the second reading would move from Tuesday to Thursday after a Wednesday announcement.",
+     "url": "https://www.ceskenoviny.cz/zpravy/2905763"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "The same ČTK report quoted Marian Jurečka saying chamber leadership had agreed the item would come onto the agenda on Thursday evening.",
+     "url": "https://www.ceskenoviny.cz/zpravy/2905763"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "The draft order of the 37th session fixed Thursday written interpellation answers for 09:00–11:00 and oral interpellations for 14:30–18:00, with print 300 listed in the second-reading block (17 written debate registrations).",
+     "url": "https://psp.cz/sqw/ischuze.sqw?o=10&s=37&pozvanka=1"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "ČT24/ČTK reported that after several hours the Chamber approved the Tuesday programme and that the coalition had again allowed sittings into the night; the unemployment-benefit bill was described as due for second reading on Thursday, not Tuesday.",
+     "url": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "ČTK reported that ČMKOS chair Středula rejected any cut to unemployment benefits, while SPD said a smaller union (OS KOVO) was expected at the Wednesday presentation.",
+     "url": "https://www.ceskenoviny.cz/zpravy/2906055"
+    }
+   ],
+   "counter": "The Speaker and the labour minister have already tied the second reading to Thursday after Wednesday’s announcement, the majority controls the order of business, and night sittings are authorised, so they can open print 300 on Thursday and vote to structure or close debate once their amendment is on the table. If they use any of the 11:00–14:30 window as well as the evening, six to nine hours of legislative time is enough to finish both debates before midnight even with opposition speeches."
+  }
+ ]
+}

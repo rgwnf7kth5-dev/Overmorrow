@@ -1,0 +1,32 @@
+{
+ "claim": "At its meeting on Thursday 26 November 2026 the Bank of Korea Monetary Policy Board raises the base rate by 25 basis points to 3.25%, with at least one member dissenting in favour of keeping it at 3.00%.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:28:02Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "On 26 November 2026, within the stated Asia/Seoul event window, the Bank of Korea must announce that the Monetary Policy Board raised the Base Rate by 25 basis points from 3.00% to 3.25%. At least one member must have dissented in favor of keeping it at 3.00%; a dissent in favor of a larger hike does not count.",
+   "decided_by": "The Bank of Korea's announcement establishes the rate decision. The dissent can be established by the Bank of Korea's decision statement, the governor's post-meeting press conference, or same-day repo"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:28:08Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Bank of Korea Monetary Policy Board must announce on 26 November 2026 (Asia/Seoul) that it has raised the Base Rate by 25 basis points to 3.25%, with at least one board member dissenting in favour of holding the rate at 3.00%.",
+   "decided_by": "The Bank of Korea (via its decision statement, governor's press conference, or subsequent meeting minutes) or same-day reporting by Yonhap, Reuters, or Bloomberg."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:28:49Z",
+   "ambiguous": true,
+   "scenario": "The board sets the Base Rate at 3.25% on 26 Nov 2026 and neither the BoK nor Yonhap, Reuters or Bloomberg names a hold-at-3.00% dissenter that day; minutes around 15 Dec show one member dissented for holding at 3.00%. One reader follows the criterion’s later-disclosure sentence and resolves YES; another follows the event-window rule that the claim is NO unless the event occurs inside 26 Nov 2026 Asia/Seoul and resolves NO.",
+   "yes_requires": "On 26 Nov 2026 (Asia/Seoul) the Bank of Korea Monetary Policy Board sets the Base Rate at 3.25%, a 25bp increase from 3.00%, and at least one member dissented specifically in favour of holding at 3.00% (a dissent for a larger hike does not count). The rate decision must be announced that day; the dissent must be stated by the BoK (decision statement or the governor at the post-meeting press confer",
+   "decided_by": "The Bank of Korea (decision statement, governor at the post-meeting press conference, or later minutes if that is when the dissent is first disclosed), or same-day reporting by Yonhap, Reuters or Bloo"
+  }
+ ]
+}

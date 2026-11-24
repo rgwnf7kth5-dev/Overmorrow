@@ -1,0 +1,32 @@
+{
+ "claim": "At its meeting on Thursday 26 November 2026 the Bank of Korea Monetary Policy Board raises the base rate by 25 basis points, from 3.00% to 3.25%.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:27:45Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Within the stated 26 November 2026 window in Asia/Seoul, the Bank of Korea must announce that its Monetary Policy Board raised the Base Rate by 25 basis points from 3.00% to 3.25%. The increase must be stated in the official monetary policy decision on bok.or.kr or reported that day by Yonhap, Reuters, or Bloomberg.",
+   "decided_by": "The Bank of Korea Monetary Policy Board makes the rate decision. The official Bank of Korea decision or a same-day report from Yonhap, Reuters, or Bloomberg establishes the result."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:27:51Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Bank of Korea must announce on 26 November 2026 (Asia/Seoul time) that the Monetary Policy Board has raised the Bank of Korea Base Rate by 25 basis points from 3.00% to 3.25%.",
+   "decided_by": "The Bank of Korea's monetary policy decision on bok.or.kr, or reporting on that day by Yonhap, Reuters, or Bloomberg."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:29:47Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "On 26 November 2026 (Asia/Seoul), inside the window 00:00:00–23:59:00 KST, the Bank of Korea announces that the Monetary Policy Board has set the Bank of Korea Base Rate at 3.25%, a 25bp increase from 3.00%, as stated in the BoK monetary policy decision on bok.or.kr or reported that day by Yonhap, Reuters, or Bloomberg.",
+   "decided_by": "The Bank of Korea monetary policy decision on bok.or.kr, or same-day reporting by Yonhap, Reuters, or Bloomberg."
+  }
+ ]
+}

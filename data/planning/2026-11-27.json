@@ -327,7 +327,7 @@
        "source": "2019 Lagarde (agreed on day 3 of the 30 Jun–2 Jul 2019 European Council) and 2011 Draghi (Eurogroup/ECOFIN first, EUCO appointment 24 Jun 2011); general knowledge, not re-checked",
        "hint": {
         "n": 2,
-        "rate": 0.0,
+        "rate": 0,
         "note": "Neither case was settled on the first day of a summit; no wider class of ten found (dossier explains)."
        }
       },
@@ -447,7 +447,51 @@
        "p_if_held": 0.454,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:18:33Z",
+         "p_blind": 0.48,
+         "p": 0.58,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:21:38Z",
+         "p": 0.77,
+         "searches": 6,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/eu-summit-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:22:49Z",
+         "p": 0.85,
+         "searches": 14,
+         "sources": 16,
+         "trace": "data/dossiers/2026-11-27/eu-summit-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:23:39Z",
+         "p": 0.6,
+         "searches": 10,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/eu-summit-27.research.json"
+        }
+       ]
+      }
      },
      "probability": 0.45
     },
@@ -500,7 +544,7 @@
        "source": "Previous Ukraine loan (€90bn, Dec 2025) agreed in an overnight session; general knowledge, not re-checked",
        "hint": {
         "n": 1,
-        "rate": 0.0,
+        "rate": 0,
         "note": "No wider class of ten found."
        }
       },
@@ -640,7 +684,22 @@
         }
        ]
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:18:35Z",
+         "p_blind": 0.12,
+         "p": 0.12,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      },
      "probability": 0.1
     }
@@ -709,7 +768,7 @@
      "quantiles": {
       "q10": 96.8,
       "q50": 147.8,
-      "q90": 310.0
+      "q90": 310
      },
      "scale": 34,
      "forecast": {
@@ -829,7 +888,7 @@
       "agents_mean": {
        "q10": 96.8,
        "q50": 147.8,
-       "q90": 310.0
+       "q90": 310
       },
       "consensus_note": "The reference value is our own median of recent nights, not an analyst consensus. The distribution is right-skewed (mass strikes of 280+ on about one night in five), so q90 sits far above the centre.",
       "rounds_binary_150": {
@@ -938,7 +997,51 @@
       "market": null,
       "dossier": "data/dossiers/2026-11-27/ua-drones-27.md",
       "signals": "data/dossiers/2026-11-27/ua-drones-27.signals.md",
-      "note": "Derived from the interval ua-drones-27 (models.mjs derive); the five forecasters' direct figures for 150 or more are recorded in ua-drones-27 forecast.rounds_binary_150 and p150."
+      "note": "Derived from the interval ua-drones-27 (models.mjs derive); the five forecasters' direct figures for 150 or more are recorded in ua-drones-27 forecast.rounds_binary_150 and p150.",
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:18:32Z",
+         "p_blind": 0.48,
+         "p": 0.48,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:24:05Z",
+         "p": 0.45,
+         "searches": 3,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/ua-drones-150-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:24:44Z",
+         "p": 0.56,
+         "searches": 10,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/ua-drones-150-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:25:40Z",
+         "p": 0.44,
+         "searches": 10,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/ua-drones-150-27.research.json"
+        }
+       ]
+      }
      }
     }
    ]
@@ -1027,7 +1130,7 @@
        "source": "data/dossiers/2026-11-27/gulf-ukmto-27.md (day table; earlier days in gulf-ukmto-23/-25/-26); 30 Oct-23 Nov 17/25",
        "hint": {
         "class": "earlier gulf-ukmto claims matched by case ledger",
-        "rate": 1.0,
+        "rate": 1,
         "n": 2,
         "source": "node scripts/case-ledger.mjs gulf-shipping-attacks"
        }
@@ -1136,7 +1239,51 @@
       },
       "calibrated": null,
       "spread": 0.1,
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:17Z",
+         "p_blind": 0.72,
+         "p": 0.65,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:23:27Z",
+         "p": 0.63,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/gulf-ukmto-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:23:43Z",
+         "p": 0.62,
+         "searches": 6,
+         "sources": 18,
+         "trace": "data/dossiers/2026-11-27/gulf-ukmto-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:25:32Z",
+         "p": 0.73,
+         "searches": 18,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/gulf-ukmto-27.research.json"
+        }
+       ]
+      }
      },
      "probability": 0.7
     }
@@ -1326,7 +1473,22 @@
         "why": "The story was split after round one (one-main-claim rule): the hike became the main claim and the dissent a dependent claim. The five gave their hike figures in one further step after the signals and the union of facts; each had stated its blind view of the hike inside its blind reason for kr-bok-27, but no separate blind figure was recorded."
        }
       ],
-      "market_note": null
+      "market_note": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:18:28Z",
+         "p_blind": 0.72,
+         "p": 0.89,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      },
      "probability": 0.95
     },
@@ -1549,7 +1711,51 @@
       },
       "disagreement": null,
       "round_one_combined": 0.485,
-      "note": "Published figure = main × p_if (p_if_not = 0). Round-one direct figures kept in agents and round_one_combined."
+      "note": "Published figure = main × p_if (p_if_not = 0). Round-one direct figures kept in agents and round_one_combined.",
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:01Z",
+         "p_blind": 0.56,
+         "p": 0.47,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:20:03Z",
+         "p": 0.48,
+         "searches": 6,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/kr-bok-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:20:13Z",
+         "p": 0.35,
+         "searches": 12,
+         "sources": 21,
+         "trace": "data/dossiers/2026-11-27/kr-bok-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:20:58Z",
+         "p": 0.33,
+         "searches": 12,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/kr-bok-27.research.json"
+        }
+       ]
+      }
      },
      "probability": 0.45,
      "depends": {
@@ -1683,7 +1889,7 @@
          "reference-data"
         ],
         "q_blind": {
-         "q10": -33.0,
+         "q10": -33,
          "q50": -29.9,
          "q90": -26.8
         },
@@ -1694,7 +1900,7 @@
          "signals",
          "reference-data"
         ],
-        "q10": -33.0,
+        "q10": -33,
         "q50": -29.9,
         "q90": -26.8,
         "reason": "No market or published distribution, so the blind interval stands: the −29.4 consensus moved by the mean surprise to −29.9, with an honest 80% band from an RMS surprise of about 2.1 to 2.2 and fat 2026 tails. There are no earlier figures of ours in this case."
@@ -1719,7 +1925,7 @@
          "signals"
         ],
         "q10": -32.9,
-        "q50": -30.0,
+        "q50": -30,
         "q90": -27.1,
         "reason": "No market. I blend the Nasdaq consensus of -29.4 with persistence from -30.8 given November's equity rout and security news; the 2026 surprise RMS of 2.1 points sets the width. There are no earlier figures in this case."
        },
@@ -1734,7 +1940,7 @@
         "q_blind": {
          "q10": -32.6,
          "q50": -29.8,
-         "q90": -27.0
+         "q90": -27
         },
         "reason_blind": "The single consensus of -29.4 implies a 1.4-point rise, while the past 14 surprises average -0.5 and the last two were negative; income expectations and propensity to buy fell in October and an ECB hike is expected. Ifo did improve, so I centre a little below consensus at -29.8. Width follows the surprise RMS of 2.14 points.",
         "at": "2026-11-24T19:14:28+01:00",
@@ -1745,7 +1951,7 @@
         ],
         "q10": -32.6,
         "q50": -29.8,
-        "q90": -27.0,
+        "q90": -27,
         "reason": "No market or published distribution matches, so the blind range stands. I centre 0.4 below the single consensus of -29.4 because it implies a 1.4-point rise while past surprises average -0.5 and October's income and buying components fell; width follows the surprise RMS of 2.14. No earlier figures of ours exist in this case."
        },
        {
@@ -1756,7 +1962,7 @@
          "dossier",
          "reference-data"
         ],
-        "q10": -33.0,
+        "q10": -33,
         "q50": -29.6,
         "q90": -26.3,
         "reason": "No market; anchor is the release-surprise model around the Nasdaq consensus -29.4 with surprise sd 2.14 (models.mjs quantiles: -33.8/-29.4/-25.0 with the 1.6 widening). I centre slightly below consensus (mean surprise -0.47, consensus already assumes a 1.4-point rebound) and give an honest 80% interval of about +-1.55 sd. No earlier figures in this case."
@@ -1913,7 +2119,7 @@
          "reference-data"
         ],
         "q_blind": {
-         "q10": 6.0,
+         "q10": 6,
          "q50": 8.7,
          "q90": 11.2
         },
@@ -1924,7 +2130,7 @@
          "signals",
          "reference-data"
         ],
-        "q10": 6.0,
+        "q10": 6,
         "q50": 8.7,
         "q90": 11.2,
         "p_held": 0.95,
@@ -1938,7 +2144,7 @@
          "own-research"
         ],
         "q_blind": {
-         "q10": 6.0,
+         "q10": 6,
          "q50": 7.9,
          "q90": 9.8
         },
@@ -1969,7 +2175,7 @@
         ],
         "q_blind": {
          "q10": 5.7,
-         "q50": 8.0,
+         "q50": 8,
          "q90": 9.6
         },
         "reason_blind": "The 19 Nov face-to-face summed to 8.30m on six national channels (more with La 2, 24h and regionals), and 2016-2019 multi-candidate debates drew 8.6-10.5m. Downside dominates: carriage for the 26th is unconfirmed beyond Antena 3 (a two-channel broadcast gave 5.9m in 2023), it is the third debate in eight days, and Barlovento's combined figure may leave out regional channels. Median a little under the dossier's 8.5 with a long lower tail.",
@@ -1980,7 +2186,7 @@
          "reference-data"
         ],
         "q10": 5.7,
-        "q50": 8.0,
+        "q50": 8,
         "q90": 9.6,
         "reason": "No market or model addresses the audience; the election markets and the debate-winner poll say nothing about viewing. Unchanged from blind: 8.30m on six national channels for the 19 Nov face-to-face is the anchor, with a long lower tail for unconfirmed carriage beyond Antena 3, a third debate in eight days and uncertainty about what Barlovento's combined figure includes. No earlier figures exist in this case."
        },
@@ -2009,7 +2215,7 @@
         "q_blind": {
          "q10": 6.6,
          "q50": 8.3,
-         "q90": 10.0
+         "q90": 10
         },
         "reason_blind": "Institutional feed carried by RTVE, Antena 3, Telecinco, La Sexta and regional channels, elections on 29 Nov, so a combined figure is large. From memory earlier four-way/five-way debates drew about 9 million combined (2015-2019), the 2023 head-to-head about 8 million on the main channels; linear TV is eroding, but the combined count of all channels offsets that. I did not find the Sanchez-Feijoo 2026 head-to-head audience.",
         "at": "2026-11-24T20:00:00+01:00",
@@ -2020,7 +2226,7 @@
         ],
         "q10": 6.6,
         "q50": 8.3,
-        "q90": 10.0,
+        "q90": 10,
         "reason": "No audience market or model, and no earlier figure; the signals add nothing, so the blind range stands."
        }
       ],
@@ -2266,7 +2472,51 @@
         }
        ]
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:16Z",
+         "p_blind": 0.8,
+         "p": 0.83,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:25:20Z",
+         "p": 0.9,
+         "searches": 6,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/fr-plfss-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:26:46Z",
+         "p": 0.82,
+         "searches": 14,
+         "sources": 20,
+         "trace": "data/dossiers/2026-11-27/fr-plfss-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:27:26Z",
+         "p": 0.8,
+         "searches": 12,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/fr-plfss-27.research.json"
+        }
+       ]
+      }
      },
      "probability": 0.81
     }
@@ -2462,7 +2712,22 @@
        "p_if_held": 1,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:02Z",
+         "p_blind": 0.91,
+         "p": 0.93,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      },
      "probability": 0.87
     }
@@ -2660,7 +2925,22 @@
        "p_if_held": 0.862,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:19Z",
+         "p_blind": 0.85,
+         "p": 0.83,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ]
+      }
      },
      "probability": 0.86
     }
@@ -2747,7 +3027,7 @@
        "source": "pipeline/reference-data/cz-chamber.json (generated 2026-11-24)",
        "hint": {
         "class": "cz-chamber-reading-completed-same-day (own record)",
-        "rate": 1.0,
+        "rate": 1,
         "n": 1,
         "source": "pipeline/reference-classes.json",
         "note": "Meeting-level rate is not same-day; this case has a 3.5-hour window before fixed interpellations."
@@ -2863,7 +3143,51 @@
        "p_if_held": 0.409,
        "p_if_not_held": 0
       },
-      "disagreement": null
+      "disagreement": null,
+      "shadow": {
+       "external": [
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:19:24Z",
+         "p_blind": 0.35,
+         "p": 0.35,
+         "inputs": [
+          "dossier",
+          "signals"
+         ]
+        }
+       ],
+       "research": [
+        {
+         "provider": "openai",
+         "model": "gpt-6.2-sol",
+         "at": "2026-11-24T19:20:44Z",
+         "p": 0.3,
+         "searches": 7,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/cz-benefits-27.research.json"
+        },
+        {
+         "provider": "google",
+         "model": "gemini-4-argon",
+         "at": "2026-11-24T19:21:46Z",
+         "p": 0.22,
+         "searches": 22,
+         "sources": 10,
+         "trace": "data/dossiers/2026-11-27/cz-benefits-27.research.json"
+        },
+        {
+         "provider": "xai",
+         "model": "grok-4.7",
+         "at": "2026-11-24T19:22:41Z",
+         "p": 0.4,
+         "searches": 15,
+         "sources": 25,
+         "trace": "data/dossiers/2026-11-27/cz-benefits-27.research.json"
+        }
+       ]
+      }
      },
      "probability": 0.2
     }
@@ -3251,5 +3575,26 @@
    },
    "why": "scout: procedural or low weight."
   }
- ]
+ ],
+ "external_run": {
+  "at": "2026-11-24T19:33:25Z",
+  "providers": [
+   "openai gpt-6.2-sol",
+   "google gemini-4-argon",
+   "xai grok-4.7"
+  ],
+  "binary_claims": 10,
+  "forecasts": 10,
+  "contested": [
+   "kr-bok-27",
+   "cz-benefits-27",
+   "eu-summit-27",
+   "gulf-ukmto-27",
+   "ua-drones-150-27",
+   "fr-plfss-27"
+  ],
+  "research": 18,
+  "wording_flags": [],
+  "failed": []
+ }
 }

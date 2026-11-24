@@ -1,0 +1,32 @@
+{
+ "claim": "The Chamber of Deputies completes the second reading of the government Labour Code amendment that cuts unemployment benefits (sněmovní tisk 300) on Thursday 26 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:29:11Z",
+   "ambiguous": true,
+   "scenario": "If the Chamber interrupts the second reading, then resumes it and closes both debates later on 26 November within the window, one reader could resolve YES because the reading was completed on time, while another could resolve NO because the criterion lists interruption as a standalone reason for NO.",
+   "yes_requires": "On 26 November 2026, within the stated Europe/Prague window, the Chamber of Deputies closes both the general and detailed debates on sněmovní tisk 300, completing its second reading and sending it to third reading rather than returning it to the government or a committee. Print 301 does not count.",
+   "decided_by": "The bill history or stenographic record on psp.cz, or reporting by ČTK, ČT24, or another major Czech outlet. A report published after midnight counts if it confirms that the reading closed within the "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:29:17Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Czech Chamber of Deputies must close both the general and detailed debate of the second reading of sněmovní tisk 300 (the government Labour Code amendment cutting unemployment benefits) between 00:00 and 23:59 Europe/Prague on 26 November 2026, advancing the bill to the third reading.",
+   "decided_by": "Official Chamber of Deputies records on psp.cz (bill history or stenographic record) or reporting by ČTK, ČT24, or another major Czech news outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:30:15Z",
+   "ambiguous": true,
+   "scenario": "Second reading of print 300 was opened on 25 Nov and closed on 26 Nov before 23:59, with both debates finished and the bill sent to third reading. One reader treats closure that day as YES; another applies the explicit NO condition that the second reading was not opened on 26 Nov and resolves NO.",
+   "yes_requires": "Between 00:00 and 23:59 Europe/Prague on 26 November 2026, the Chamber of Deputies closes the second reading of sněmovní tisk 300 so that both the general debate and the detailed debate are closed and the bill proceeds to third reading.",
+   "decided_by": "psp.cz bill history or stenographic record, or a report by ČTK, ČT24, or another major Czech outlet; a later report still counts if it shows the closure occurred before 23:59 on 26 Nov."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "The RMT union's 24-hour strike by London Underground drivers goes ahead from noon on Thursday 26 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:28:33Z",
+   "ambiguous": true,
+   "scenario": "If a delayed walkout starts at 23:59:30 UK time, one reader could resolve YES because it began on Thursday, while another could resolve NO because the specified window ends at 23:59:00.",
+   "yes_requires": "RMT London Underground drivers must begin the announced walkout on Thursday 26 November 2026, UK time. It need not begin at noon, last 24 hours, or close as many lines as TfL expects.",
+   "decided_by": "BBC News, TfL or the RMT reporting that the walkout actually began, rather than merely that it was scheduled."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:28:40Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "RMT drivers on the London Underground must begin their announced strike (walkout) at any time on Thursday 26 November 2026 (UK time).",
+   "decided_by": "Reports from BBC News, Transport for London (TfL), or the RMT union."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:29:18Z",
+   "ambiguous": true,
+   "scenario": "The RMT says it suspended the walkout, TfL reports normal or near-normal service, and BBC News reports that some drivers still walked out. One reader treats any one source's report of a walkout as enough for YES; another treats the official suspension and the lack of agreement that the announced strike began as NO.",
+   "yes_requires": "RMT drivers on the London Underground begin the announced walkout at any time on Thursday 26 November 2026 (UK time), as reported by BBC News, TfL, or the RMT, even if it does not start at noon, is later cut short, or closes fewer lines than TfL expected.",
+   "decided_by": "Reports from BBC News, Transport for London (TfL), or the RMT."
+  }
+ ]
+}

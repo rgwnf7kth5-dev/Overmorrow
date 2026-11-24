@@ -1,0 +1,32 @@
+{
+ "claim": "According to the Ukrainian Air Force's first summary of the overnight attack published on Thursday 26 November 2026, Russia launched at least 150 drones at Ukraine in the night of 25-26 November (counted, as the Air Force counts it, from the evening of 25 November).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:27:39Z",
+   "ambiguous": true,
+   "scenario": "If the first overnight summary explicitly includes launches after noon and reports 150 UAVs overall but only 149 by noon, one reader could use the published total and resolve YES, while another could enforce the event window's noon cutoff and resolve NO. The criterion allows publication after noon but does not explicitly say what to do when the launches counted in that summary extend past noon.",
+   "yes_requires": "The Ukrainian Air Force's first overnight summary published on 26 November 2026, Kyiv time, must report at least 150 UAVs launched in the night of 25–26 November. Use the summary's UAV count, including decoys and any jet munitions it counts as UAVs, but exclude separately listed missiles. Publication after noon is allowed.",
+   "decided_by": "The first qualifying Ukrainian Air Force summary on its official Telegram channel or Facebook page, or as quoted by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine. Separate daytime"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:27:41Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Ukrainian Air Force's first summary of the overnight attack covering the night of 25-26 November 2026, published on 26 November 2026 (Kyiv time), must state that Russia launched a total of 150 or more UAVs (including Shaheds, decoys, and other drone munitions counted in the summary's UAV total, excluding separately listed missiles).",
+   "decided_by": "The Ukrainian Air Force's official Telegram channel (t.me/kpszsu) or Facebook page, or reports repeating those figures from Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:33:25Z",
+   "ambiguous": true,
+   "scenario": "The first Telegram summary states 149 UAVs while the Air Force Facebook post or a same-day Ukrinform or Kyiv Independent repetition states 152, and the criterion lists those sources with “or” and no priority, so one careful reader resolves NO and another YES.",
+   "yes_requires": "The Ukrainian Air Force’s first summary of the overnight attack, published on 26 November 2026 (Kyiv time) and covering the night of 25–26 November, must give a UAV total of 150 or more as that summary counts strike UAVs (missiles listed separately excluded), on t.me/kpszsu or the Air Force Facebook page or as repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine.",
+   "decided_by": "That Air Force summary as published on its Telegram or Facebook, or as repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent, or Interfax-Ukraine."
+  }
+ ]
+}

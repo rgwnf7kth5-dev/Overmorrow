@@ -1,0 +1,32 @@
+{
+ "claim": "In its 9M 2026 interim report on Thursday 26 November 2026, Colt CZ Group keeps its full-year 2026 outlook (revenue CZK 31-33bn, adjusted EBITDA CZK 8-8.5bn) at least at its present lower bounds.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-24T19:28:56Z",
+   "ambiguous": true,
+   "scenario": "The release confirms revenue guidance but says nothing about adjusted EBITDA. One reader treats the omitted EBITDA guidance as unchanged; another reads the silence rule as applying only when neither outlook is mentioned and finds that the release does not establish that both lower bounds were kept.",
+   "yes_requires": "Colt CZ Group SE publishes its 9M 2026 interim report or results release on 26 November 2026 by 23:59 Europe/Prague, and neither full-year 2026 guidance lower bound falls below CZK 31bn for revenue or CZK 8bn for adjusted EBITDA. Withdrawal or suspension counts as NO; a release that does not mention the outlook counts as unchanged.",
+   "decided_by": "The official release on coltczgroup.com or reporting by ČTK, Patria, or Reuters establishes the publication timing and what the company says about its outlook."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-24T19:29:04Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Colt CZ Group SE publishes its 9M 2026 interim report or results release on 26 November 2026 (by 23:59 Europe/Prague) and either does not mention its full-year 2026 outlook or maintains/raises/narrows it such that the revenue outlook lower bound is at least CZK 31bn and the adjusted EBITDA outlook lower bound is at least CZK 8bn.",
+   "decided_by": "The official release on coltczgroup.com, or reports from ČTK, Patria, or Reuters."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-24T19:30:06Z",
+   "ambiguous": true,
+   "scenario": "The 26 Nov text says the outlook is 'under review' or reaffirms only the revenue floor and is silent on adjusted EBITDA, while ČTK or Reuters describes that differently from coltczgroup.com. One reader treats review-language or partial silence as unchanged bounds (YES); another treats it as suspended or as not keeping both floors, and no source has priority if the outlets disagree.",
+   "yes_requires": "Colt CZ Group SE publishes its 9M 2026 interim report or results release on 26 Nov 2026 by 23:59 Europe/Prague, and both FY2026 lower bounds remain at least CZK 31bn revenue and CZK 8bn adjusted EBITDA (confirmed, raised, or narrowed without cutting either floor). A release that does not mention the outlook counts as unchanged.",
+   "decided_by": "The coltczgroup.com release, or a ČTK, Patria, or Reuters report of it."
+  }
+ ]
+}
