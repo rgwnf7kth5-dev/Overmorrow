@@ -1,0 +1,249 @@
+{
+ "date": "2026-11-25",
+ "opinions": [
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-fuel-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:20:40Z",
+   "outcome": "yes",
+   "evidence": "https://vlada.gov.cz/cz/media-centrum/aktualne/vysledky-jednani-vlady-23--listopadu-2026-230261/",
+   "published": "2026-11-23T15:10:00+01:00",
+   "note": "The Government Office records that on November 23 the cabinet approved item 906/26, a regulation extending fuel price caps from December 1 through December 31, 2026, separately from the diesel excise tax measure."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ua-drones-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:20:46Z",
+   "outcome": "yes",
+   "evidence": "https://www.ukrinform.ua/amp/rubric-ato/4187518-ppo-zneskodila-134-zi-153-bezpilotnikiv-akimi-rosiani-z-vecora-atakuvali-ukrainu.html",
+   "published": "2026-11-23T08:05:00+02:00",
+   "note": "Ukrinform quoted the Ukrainian Air Force’s first morning summary as reporting that Russia launched 153 UAVs overnight, counting from 18:00 Kyiv time on November 22, 2026."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ua-drones-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:20:47Z",
+   "outcome": "yes",
+   "evidence": "https://www.ukrinform.net/rubric-ato",
+   "published": "2026-11-23T08:55:00+02:00",
+   "note": "According to the Ukrainian Air Force's morning summary on 23 November 2026 (repeated by Ukrinform, Ukrainska Pravda, and the Kyiv Independent), Russia launched 153 drones (including Shahed-type strike UAVs, 60 of which were jet-powered, as well as Gerbera and Parodiya drones) at Ukraine overnight from 18:00 on 22 November."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-safe-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:20:47Z",
+   "outcome": "no",
+   "evidence": "https://uv.gov.cz/cz/media-centrum/aktualne/vysledky-jednani-vlady-23--listopadu-2026-230261/",
+   "published": "2026-11-23T15:10:00+01:00",
+   "note": "The November 23 cabinet results list no second-round SAFE approval, and ČTK’s November 24 report confirms approval without saying when the cabinet decided."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "be-demo-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:20:53Z",
+   "outcome": "yes",
+   "evidence": "https://www.brusselstimes.com/brussels-2/2419119/thousands-gather-in-brussels-for-national-protest-against-government-cuts",
+   "published": "2026-11-23",
+   "note": "The Brussels Times, reporting with Belga, gave the Brussels police estimate as 50,000 participants, separate from the unions’ estimate of 70,000."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "be-king-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:20:56Z",
+   "outcome": "no",
+   "evidence": "https://www.monarchie.be/fr/agenda/audience-du-premier-ministre-59",
+   "published": "2026-11-23",
+   "note": "The Royal Palace’s November 23 statement said King Philippe urged Bart De Wever to continue budget negotiations and did not announce that the government’s resignation had been accepted."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-fuel-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:20:57Z",
+   "outcome": "yes",
+   "evidence": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbYpfWd3oORwAkywnFFkDumZQcLNPzV_8UKL6H20V843lzaMUIFpfp3fz3Q5R7-Sfs1rGxyRH59buPlSAfy-9B6VrIWlJ_uvInUw8EHpaywxCWemX9iQd8OXifM2oLCNrewg3LjnuL2U-C9OUT5307KGDux838LsfRkRzbhzoMTlXFoP2R-h0IquB06vUMcrtgCbpm4Q==",
+   "published": "2026-11-23 15:10",
+   "note": "The Government Office results and Ministry of Finance press release show that on 23 November 2026 the Czech government approved the draft government regulation issuing a price decree regulating fuel prices (setting maximum prices and a capped 2.50 CZK/l retailer margin for petrol and diesel) from 1 December 2026 to 31 December 2026."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "be-king-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:01Z",
+   "outcome": "no",
+   "evidence": "https://www.monarchie.be/fr/agenda",
+   "published": "2026-11-23",
+   "note": "On 23 November 2026, the Royal Palace announced that King Philippe received Prime Minister Bart De Wever and encouraged him to continue budget negotiations rather than accepting his government's resignation."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "il-boi-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:02Z",
+   "outcome": "yes",
+   "evidence": "https://www.boi.org.il/en/communication-and-publications/press-releases/the-monetary-committee-decides-on-november-23-2026-to-keep-the-interest-rate-unchanged-at-325-percent/",
+   "published": "2026-11-23",
+   "note": "The Bank of Israel’s November 23, 2026 announcement confirms that the Monetary Committee kept the policy rate unchanged at 3.25%."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "gulf-ukmto-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:10Z",
+   "outcome": "yes",
+   "evidence": "https://www.ukmto.org/-/media/ukmto/products/20261124-ukmto_warning_219-26.pdf?rev=6566557dc11a4196b3921955d1e57eca",
+   "published": "2026-11-24",
+   "note": "UKMTO’s revised warning reports projectile strikes on three vessels in the Strait of Hormuz at 20:25 UTC on 22 November 2026, which was 00:25 Gulf Standard Time on 23 November 2026."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "il-boi-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:14Z",
+   "outcome": "yes",
+   "evidence": "https://www.boi.org.il/en/communication-and-publications/press-releases/the-monetary-committee-decides-on-november-23-2026-to-keep-the-interest-rate-unchanged-at-3-25-percent/",
+   "published": "2026-11-23",
+   "note": "The Bank of Israel press release published on November 23, 2026 confirms that the Monetary Committee decided to keep the interest rate unchanged at 3.25 percent."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ez-pmi-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:15Z",
+   "outcome": "yes",
+   "evidence": "https://tradingeconomics.com/euro-area/composite-pmi/news/603497",
+   "published": "2026-11-23 09:06",
+   "note": "Trading Economics reported on November 23 that S&P Global’s flash estimate put the November 2026 HCOB Eurozone Composite PMI Output Index at 51.7 points."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "be-demo-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:18Z",
+   "outcome": "yes",
+   "evidence": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6UDJ7rHf92QyITBs6v8WwI3Y157WJXY-bt1R0RHvLxPCxBkrbqiobfNrxFA3FoPkXl1ihwAnlAiUEGZBga8jBqGdlHam_emObbTe8yGSb7TdMkEQQQqEhOITxSUSrmsqtclcCPfTLDcvKbtDw3Tk2apjPn1xQqkdh-ex0hrVua3h_Q0c9d_z3b1xQRJNyBB8hSnL-5MjdVSViWIGgaenNkmuZ_e0=",
+   "published": "2026-11-23",
+   "note": "The Brussels Times (with Belga) reported on Monday 23 November 2026 that Brussels police put the number of participants in the national trade-union demonstration at 50,000 people."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ariane-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:25Z",
+   "outcome": "no",
+   "evidence": "https://newsroom.arianespace.com/arianespace-successfully-launches-another-36-amazon-leo-satellites-on-ariane-6s-10th-flight/",
+   "published": "2026-11-24",
+   "note": "Arianespace confirmed that VA271 lifted off successfully at 08:14 Kourou time on November 24, 2026, after the November 23 deadline."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ez-pmi-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:26Z",
+   "outcome": "yes",
+   "evidence": "https://tradingeconomics.com/euro-area/composite-pmi",
+   "published": "2026-11-23",
+   "note": "S&P Global's preliminary (flash) estimate published on 23 November 2026 puts the Eurozone Composite PMI Output Index for November 2026 at 51.7 points, unchanged from October."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "ariane-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:31Z",
+   "outcome": "no",
+   "evidence": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpEP-1dpyxQm8n0qfAsNucZO9VOIiBMrCr6o--w_KydHsSIk2A8ditqv29gAycENL8diYIoXhYSgxTO1y_RZ79LsRuEif4bysUq-CKjok3zJq2zsQCLooiWxiEOrH-NUYEKm6lu0ai3XimSVfVic6UvedFQOyIirMjNQKRyCLsQVJ8msVDxn4fW5DAh4H0IsYEHPhDN3e0RQJF",
+   "published": "2026-11-23",
+   "note": "Arianespace announced on November 23, 2026 that the launch of Ariane 6 flight VA271 was postponed to November 24, 2026 due to a technical event affecting the ground support systems."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "hpe-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:35Z",
+   "outcome": "yes",
+   "evidence": "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q4-2026/q4-2026-earnings-press-release.pdf",
+   "published": "2026-11-23",
+   "note": "HPE’s November 23 earnings release reported non-GAAP diluted net EPS of $1.43 for the quarter ended October 31, 2026, exceeding the $1.29 threshold."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-ods-24",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T03:21:37Z",
+   "outcome": "yes",
+   "evidence": "https://www.ceskenoviny.cz/zpravy/kupka-predsednictvo-ods-citi-podporu-aby-pokracovalo-a-chystalo-reformy/2905252",
+   "published": "2026-11-23T18:30:00+01:00",
+   "note": "ČTK reported that the ODS republic assembly met on November 23 without a proposal for an early congress, that Martin Kupka said the next congress would be in 2028, and that no qualifying written request was reported."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-ods-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:21:46Z",
+   "outcome": "yes",
+   "evidence": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEH2n2X9Zj3vXGc5Pc6CvMs5W0ETpSetY5JAxEkFbNAteRWqvCm7d0TNBQYgNBkoOXEE0f0szgmJsikOy_s4Ny-qjJXINX1SlZ8LyEVpWWp92mXurb11wknNXjV2kUve5dgRvHRbGCyvgNbZCjSZO5s26eQzPEDGrEWtvEhRWLbJqDl82MDkwE60trVBQo9UMs8G5DFv1W93zEGScRvW0r6ggXFZe-H__-MbKI=",
+   "published": "2026-11-23",
+   "note": "The ODS republic assembly met in Prague on 23 November 2026 and concluded with party leader Martin Kupka confirming leadership support to prepare program reforms for May 2027, while no proposal or call for an extraordinary congress was made."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "hpe-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:22:21Z",
+   "outcome": "yes",
+   "evidence": "https://investors.hpe.com/financial/quarterly-results",
+   "published": "2026-11-23",
+   "note": "HPE's fiscal Q4 2026 earnings press release published on November 23, 2026 reports non-GAAP diluted net earnings per share of $1.43 for the quarter ended October 31, 2026, which exceeds the $1.29 threshold."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "cz-safe-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:22:30Z",
+   "outcome": "yes",
+   "evidence": "https://cesky.radio.cz/zuna-cesko-chce-pujcku-ze-safe-vyuzit-na-tezkou-brigadu-a-protivzdusnou-obranu-8900894",
+   "published": "2026-11-24",
+   "note": "A ČTK report published on 24 November 2026 confirms that Defence Minister Jaromír Zůna announced the Czech cabinet had approved at its previous day's meeting (23 November) the country's participation in the second phase of the EU SAFE defence-loan programme."
+  },
+  {
+   "edition": "2026-11-24",
+   "claim": "gulf-ukmto-24",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T03:23:40Z",
+   "outcome": "yes",
+   "evidence": "https://www.ukmto.org/recent-incidents",
+   "published": "2026-11-24",
+   "note": "On 24 November 2026, UKMTO issued Warnings 219-26 (Update 001), 220-26, and 221-26 reporting that three eastbound tankers in the Strait of Hormuz were struck by unknown projectiles on 22 November 2026 at 20:25, 20:32, and 20:42 UTC, which corresponds to 00:25, 00:32, and 00:42 Gulf Standard Time (UTC+4) on Monday, 23 November 2026."
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-25T03:23:40Z"
+}
