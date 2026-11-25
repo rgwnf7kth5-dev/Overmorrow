@@ -6,12 +6,12 @@
   "number_expected": 37,
   "candidates": 53,
   "candidates_note": "11 proposed stories with 16 claims (3 interval: fr-cpi-28, es-cpi-28, ua-drones-28; 1 derived: ua-drones-150-28; 4 dependent secondaries in cz-chamber on the main claim cz-refinery-pass-28) and 42 dropped candidates (some grouped), from the stories of the day (10 listed), the Czech, world/Europe and economy sweeps, the PSP snapshot, the forecast board, the scouts' agenda and readers' leads. Friday 27 Nov is a thin day after US Thanksgiving: the EU summit concludes, the Bundestag votes the budget, the Czech Chamber has a third-reading block, France and Spain publish inflation, S&P reviews France, New Zealand declares official results.",
-  "planned_lead": "eu-summit (EU leaders agree €45bn Ukraine financing for 2027 by the end of the summit on Friday: 23%, awaited) or ua-war (drones in the night to Friday: median about 140, 80% range 87–324). Czech lead: cz-chamber (refinery tax passed on Friday: 71%). Economy: de-budget (Bundestag budget with ≥316 votes: 74%).",
+  "planned_lead": "eu-summit (EU leaders agree €45bn Ukraine financing for 2027 by the end of the summit on Friday: 23%, awaited) or ua-war (drones in the night to Friday: median about 140, 80% range 87–324). Czech lead: cz-chamber (refinery tax passed on Friday: 71%). Economy: de-budget (Bundestag budget with ≥316 votes: 68% after the evening check (74% at the desk)).",
   "cz_note": "Two Czech stories proposed: cz-chamber (Friday third-reading block, one main claim and four dependent secondaries: refinery tax, ≥90 votes, pension bill with CZK 2,000, lex Ukrajina, NKÚ audits of ČT/ČRo) and cz-slavik (Český slavík, male singer). Babiš at the summit is background in eu-summit.",
   "cz_shortfall": "Two Czech stories against the aim of eight. Friday 27 Nov is thin in Czechia: the only decisions are the Chamber's third readings, which rest on one sitting and so form one story with one main claim (four further bills as dependent secondaries); ERÚ's 2027 prices come on the last working day of November, Mon 30 Nov; ČSÚ publishes nothing on 27 Nov; the cabinet already extended the fuel caps on 23 Nov; the D11 opening at Královec is practically certain (diary); the licence-fee committee deadline and Babiš's summit comment have no checkable outcome.",
   "economy": "Six stories with topic economy: cz-chamber (refinery tax), de-budget (Bundestag budget), rheinmetall (2030 target), fr-rating (S&P review), fr-cpi and es-cpi (inflation flashes, interval).",
-  "easy_main": "No main claim at 90% or more either way (highest: fr-sp-28 77%, de-budget-28 74%, cz-refinery-pass-28 71%; lowest eu-summit-28 23%). No secondary claim at 95% or more either way (cz-nku-media-28 9%).",
-  "negative_main": "One main claim below 50%: eu-summit-28 (23%), with awaited (the leaders' decision on the €45bn Ukraine loan is on the agenda of the special summit, which Costa says he will conclude on Friday; Eunews 24 Nov). fr-sp-28 is phrased on the likelier side (S&P keeps A+ stable) and rheinmetall-28 on the outcome analysts expect (the cut); the headline should report what S&P and Rheinmetall publish. The Chamber block leads with passage of the refinery tax (71%); the lower claims (≥90 votes 47%, pensions 53%, lex Ukrajina 43%, NKÚ 9%) are dependent secondaries.",
+  "easy_main": "No main claim at 90% or more either way (highest: fr-sp-28 77%, de-budget-28 68% after the evening check (74% at the desk), cz-refinery-pass-28 71%; lowest eu-summit-28 23%). No secondary claim at 95% or more either way (cz-nku-media-28 9%).",
+  "negative_main": "Two main claims below 50% after the evening check: nz-results-28 (31%; 58% at the desk) and eu-summit-28 (23%), with awaited (the leaders' decision on the €45bn Ukraine loan is on the agenda of the special summit, which Costa says he will conclude on Friday; Eunews 24 Nov). fr-sp-28 is phrased on the likelier side (S&P keeps A+ stable) and rheinmetall-28 on the outcome analysts expect (the cut); the headline should report what S&P and Rheinmetall publish. The Chamber block leads with passage of the refinery tax (71%); the lower claims (≥90 votes 47%, pensions 53%, lex Ukrajina 43%, NKÚ 9%) are dependent secondaries. nz-results-28 fell below 50% in the evening check: it is now phrased on the less likely side (the three parties keep a majority). It carries awaited (the Commission's declaration set for 27 Nov); the morning desk should decide whether to keep it so or rephrase it on the likelier side, which needs a fresh forecast of the mirrored claim.",
   "reports_what_happens": "Every main claim is about an outcome on Fri 27 Nov: the summit's decision on Ukraine money, the Bundestag's budget vote, Rheinmetall's 2030 target, S&P's review, New Zealand's official seat count, Gulf shipping incidents, the Chamber's third reading of the refinery tax, the Slavík winner, the French and Spanish inflation figures and the Air Force drone count.",
   "running_note": "Stories of the day read 25 Nov ~18:40 CET from BBC, ČT24, Seznam Zprávy, Al Jazeera, Euronews and DW (Reuters, AP, FT, iROZHLAS not tried: they refuse the reader). 10 listed, 4 covered (eu-summit, ua-war, gulf-shipping, cz-chamber).",
   "running_shortfall": "4 running stories covered against running_min 6. The other six have nothing reportable on Fri 27 Nov: US tariffs (only proposed; comment period and hearing undated; new board question), Nvidia/Huang (House panels 1 Dec), the Iowa detonation and the asteroid crater (done), the nuclear-satellite reports (no date), the Spanish election (vote Sunday; inflation flash covered).",
@@ -52,7 +52,7 @@
     "searches": 116,
     "search_note": "From agent reports: dossiers 44, agenda sweeps 12, board checks 11, evidence forecasters 21 (claims 21), outsiders 16, board evidence 4, disagreement research 8, my own 0. About 84 left, more than the morning reserve of 30. Shadow sequential researcher not run: budget kept for the morning."
   },
-  "note": "Round one: five forecasters per claim (base-rate, evidence, anchor on claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5), blind then with signals (anchor one step; outsider without the dossier). Agent times are the times their output files were written. Disagreement above 25 points on eu-summit-28, cz-slavik-28 and cz-refinery-pass-28, each traced to inputs (the outsider lacked facts in the dossier): the outsider got the union of facts, numbers removed, and re-estimated once (first figures in rounds). Spread above 15 points on de-budget-28, fr-sp-28, gulf-ukmto-28 and the Chamber claims: one research agent looked for the settling fact (Friday third readings stop at 14:00; no announced coalition absences in the Bundestag; no UKMTO report for 24–25 Nov; no S&P preview) — none decisive, spreads stand. After round one, by the one-main-claim and report-what-happens rules, the Chamber's four Friday bills became one story with the main claim cz-refinery-pass-28 (passage in any form; given by all five in one further step, so no blind figure, recorded in missing) and four dependent secondaries (p_if, p_if_not from all five). Calibration method is geo-odds (not calibrated). Interval centres for fr-cpi-28 and es-cpi-28 lie 0.6 scale below consensus for the documented fuel-price reason (consensus_note). Forecast board: groundwater fee resolved YES (passed 25 Nov); five moves of 5+ points and three weekly re-forecasts; two new questions.",
+  "note": "Round one: five forecasters per claim (base-rate, evidence, anchor on claude-opus-5-5; adversarial claude-fable-5-2; outsider claude-sonnet-5-5), blind then with signals (anchor one step; outsider without the dossier). Agent times are the times their output files were written. Disagreement above 25 points on eu-summit-28, cz-slavik-28 and cz-refinery-pass-28, each traced to inputs (the outsider lacked facts in the dossier): the outsider got the union of facts, numbers removed, and re-estimated once (first figures in rounds). Spread above 15 points on de-budget-28, fr-sp-28, gulf-ukmto-28 and the Chamber claims: one research agent looked for the settling fact (Friday third readings stop at 14:00; no announced coalition absences in the Bundestag; no UKMTO report for 24–25 Nov; no S&P preview) — none decisive, spreads stand. After round one, by the one-main-claim and report-what-happens rules, the Chamber's four Friday bills became one story with the main claim cz-refinery-pass-28 (passage in any form; given by all five in one further step, so no blind figure, recorded in missing) and four dependent secondaries (p_if, p_if_not from all five). Calibration method is geo-odds (not calibrated). Interval centres for fr-cpi-28 and es-cpi-28 lie 0.6 scale below consensus for the documented fuel-price reason (consensus_note). Forecast board: groundwater fee resolved YES (passed 25 Nov); five moves of 5+ points and three weekly re-forecasts; two new questions. Evening check (25 Nov, about 21:10–21:35): the vendors' models named dated facts on six claims (fr-sp-28, eu-summit-28, rheinmetall-28, de-budget-28, nz-results-28, gulf-ukmto-28); one agent per claim (claude-opus-5-5) opened the pages, 22 facts were confirmed and added to the dossiers. A confirmed fact was material on three claims and the five forecasters reran there on the same models as round one (blind, then with signals; the same agent continued; the outsider without the dossier): de-budget-28 74% → 68%, rheinmetall-28 58% → 72%, nz-results-28 58% → 31%. On nz-results-28 the first rerun spanned 37 points; the disagreement research (claude-opus-5-5) found the settling fact (the Sainte-Laguë margin of NZ First's 12th seat and three published projections), all five got the union of facts and re-estimated once. On rheinmetall-28 the research found nothing decisive and the 27-point spread stands (genuine). Criterion of ua-drones-150-28 tightened (wording_check). No vendor figure was shown to any agent; the trace files' probabilities were stripped before the checking agents read the leads.",
   "for_publisher": [
     "cz-refinery-pass-28 – Sněmovna v pátek 27. 11. schválí ve třetím čtení mimořádnou daň pro rafinerie (tisk 311) – pátek 27. 11. do 23:59",
     "cz-pensions-28 – Sněmovna v pátek 27. 11. schválí důchodovou novelu (tisk 270) včetně jednorázových 2000 Kč důchodcům – pátek 27. 11. do 23:59",
@@ -423,7 +423,12 @@
                 ]
               }
             ],
-            "missing": [],
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "4 of the vendors' leads could not be read by our agent and were dropped unconfirmed: Council agenda page (25 Nov): leaders will 'take stock' of the Commission's 18 Nov €45bn proposal (unreachable); Costa 21 Nov Brussels press conference: 2027 Ukraine aid separate from MFF, hopes €45bn approved as soon as possible (unreachable); Politico: EU and Ukraine agree to accelerate €45bn loan payout in 2027 (unreachable); Mezha 25 Nov headline: EU funding decision for Ukraine expected at December summit (unreachable)"
+              }
+            ],
             "combined": 0.228,
             "combination": {
               "method": "geo-odds"
@@ -483,6 +488,26 @@
                   "trace": "data/dossiers/2026-11-28/eu-summit-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 17,
+              "facts_confirmed": 2,
+              "added": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202602623",
+                "https://www.irishtimes.com/world/europe/2026/11/18/von-der-leyen-confident-all-eu-members-will-back-45bn-loan-for-ukraine/"
+              ],
+              "reforecast": false,
+              "before": 0.228,
+              "material": [
+                "The Official Journal of 25 Nov 2026 published Council Implementing Decision (EU) 2026/2623, done at Brussels on 23 Nov 2026, approving Ukraine's 2027 Financing Strategy and making EUR 45bn accessible for 2027 under the EXISTING Ukraine Support Loan (Regulation 2026/467), which together with EUR 45bn for 2026 stays within that loan's maximum."
+              ],
+              "note": "The fact marked material by the checking agent bears on how the claim is judged, not on how likely the outcome is (see dossier); no rerun, the evening figure stands."
             }
           },
           "watch": {
@@ -1668,15 +1693,15 @@
               "note": "No matching market."
             },
             "base_rate": {
-              "class": "contested roll calls of the 21st Bundestag passed by the coalition alone reaching 316 yes (dossier scan ids 940-1047)",
+              "class": "contested coalition-only roll calls, 21st Bundestag (ids 940-1047), yes >= 316",
               "rate": 0.75,
               "n": 12,
-              "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
-                "class": "this coalition's budget roll calls reaching 316",
+                "class": "budget roll calls of this coalition (EP04 + final HG, 2025-2026) with >= 316 yes",
                 "rate": 1,
                 "n": 5
-              }
+              },
+              "source": "base-rate forecaster, evening check 25 Nov (rerun); classes from the dossier and pipeline/reference-data/"
             },
             "dossier": "data/dossiers/2026-11-28/de-budget-28.md",
             "signals": "data/dossiers/2026-11-28/de-budget-28.signals.md",
@@ -1684,109 +1709,151 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:01:31+01:00",
+                "at_blind": "2026-11-25T21:16:53+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.77,
-                "reason_blind": "Coalition holds 328, so YES tolerates about 12 absences/defections; final budget votes gave 324 (Sep 2025) and 322 (Fri 28 Nov 2025), but this week's Einzelplan 04 vote (25 Nov 2026) gave only 317 with 12 coalition members not voting. Vote is fixed on the published agenda after committee adoption on 13 Nov, so slip risk is well below the generic 0.091.",
-                "at": "2026-11-25T19:05:24+01:00",
+                "p_blind": 0.55,
+                "reason_blind": "Wider class: contested coalition-only roll calls, 21st Bundestag, 9/12 reached 316 (0.75, logit 1.10); budget subclass 5/5 (+0.5). Down: 25 Nov 2026 Einzelplan 04 got only 317 (12 coalition absent); Merz absent Fri at EU summit (FOCUS/FAZ 25 Nov); Union trial vote 23 Nov had 3 no + 1 abstention; Friday finals ran -2 vs EP04 in Nov 2025 (56 not voting). Margin ~12-13 coalition non-yes. Net logit ~0.3 -> 0.57; vote fixed in agenda, committee done, slip far below generic 0.091 (~3%) -> 0.55.",
+                "at": "2026-11-25T21:18:45+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.77,
-                "p_held": 0.985,
-                "p_if_held": 0.78,
-                "reason": "Coalition holds 328, so YES tolerates about 12 absences/defections; final budget votes gave 324 (Sep 2025) and 322 (Fri 28 Nov 2025), but this week's Einzelplan 04 vote (25 Nov 2026) gave only 317 with 12 coalition members not voting. Vote is fixed on the published agenda after committee adoption on 13 Nov, so slip risk is well below the generic 0.091. No earlier figures in this case and no market; tagesschau's 'wenig wahrscheinlich' failure refers to the simple majority, not 316, so unchanged."
+                "p": 0.55,
+                "p_held": 0.97,
+                "p_if_held": 0.57,
+                "reason": "No earlier figure in this case, and no market or model found (signals 25 Nov), so nothing to move on; I hold the blind. Class 9/12 (0.75) plus budget subclass 5/5 (+0.5 logit), then down for: 317 yes on EP04 on 25 Nov with 12 coalition absent; Merz at the EU summit on Friday (FOCUS/FAZ 25 Nov); Union trial vote on 23 Nov with 3 no + 1 abstention; Nov 2025 final -2 vs EP04. The margin is about 12-13 coalition non-yes votes. Vote fixed in agenda, slip ~3%.",
+                "rounds": [
+                  {
+                    "p": 0.77,
+                    "at": "2026-11-25T19:05:24+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:02:21+01:00",
+                "at_blind": "2026-11-25T21:17:54+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.75,
-                "reason_blind": "CDU/CSU+SPD hold 328 of 630 seats, so up to 12 coalition absences/defections are tolerated; the 2025 and 2026 budgets passed final roll calls with roughly 322-323 yes, comfortably but not hugely above 316; small slip risk for a fixed budget-week vote.",
-                "at": "2026-11-25T19:06:39+01:00",
+                "p_blind": 0.84,
+                "reason_blind": "Bundestag textarchiv (16 Nov 2026) confirms 3rd reading and final vote on Fri 27 Nov 2026 after 90-min debate; committee passed it 13 Nov with coalition votes. Coalition held 208+120=328 seats in July 2026 roll call, so 316 allows 12 absences/defections. Precedents: Haushalt 2026 passed 28 Nov 2025 with 322 yes; Rentengesetz 5 Dec 2025 got 319 despite open revolt. Budget votes are whipped with high attendance, but coalition is strained (AfD win in Sachsen-Anhalt Sept 2026, crisis talk) and margin is thin; no reported rebels found.",
+                "searches": 6,
+                "p_dossier": 0.68,
+                "at": "2026-11-25T21:19:00+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.62,
-                "reason": "Coalition holds 328 seats and past budget final votes reached 322-324, but this week's Einzelplan 04 roll call (25 Nov) got only 317 with 12 coalition members not voting, and Friday afternoon votes have had more absentees; final votes have been within ±2 of the Einzelplan 04 figure. No earlier figures in this case.",
-                "searches": 12
+                "p": 0.68,
+                "reason": "No earlier figures in this case and no market, so the dossier drives the move down from 0.84. Coalition 328; past finals 324 (18 Sep 2025) and 322 (28 Nov 2025) had 5-7 coalition absentees, but Wed 25 Nov 2026 Einzelplan 04 got only 317 with 12 absent. Merz will miss Friday's vote (EU summit, FOCUS/FAZ 25 Nov), and the Union trial vote on 23 Nov had 3 no and 1 abstention. At 7 absent plus Merz plus 3 dissenters, the count is about 318: above 316 but with a thin margin. Schedule is firm.",
+                "rounds": [
+                  {
+                    "p": 0.62,
+                    "at": "2026-11-25T19:06:39+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-25T19:01:39+01:00",
+                "at_blind": "2026-11-25T21:17:00+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.65,
-                "reason_blind": "Case for NO: Wednesday's Einzelplan 04 roll call (25 Nov) had 317 yes with 12 coalition members not voting (SPD 8), i.e. 316 coalition yes plus one outsider, so a swing of -2 as between the same two votes in Nov 2025 (324 to 322) lands at 315; Friday-afternoon attendance and 'Bauchschmerzen' over debt and the pension-subsidy cut push the same way. Against that the final vote is the whipped one (Sep 2025 moved +2), whips have seen the 317, no dissenter is named, and all five budget roll calls of this coalition reached 316.",
-                "at": "2026-11-25T19:08:01+01:00",
+                "p_blind": 0.58,
+                "reason_blind": "Case for NO: coalition 328 seats, margin only 12. Einzelplan 04 on 25 Nov 2026 got 317 yes (12 coalition absent, 1 non-coalition yes), lowest of 5 budget roll calls (322-324 in 2025). Merz, who likely voted Wed, is at the EU summit Fri (FOCUS/FAZ 25 Nov); Union trial vote 23 Nov had 3 no, 1 abstention; Friday afternoon absences; whips need only a simple majority. Wider class 9/12 reached 316. For YES: final votes are whipped, no dissent in Wed roll call, 5/5 budget votes >=316. Expected yes about 317, sd 3.5; slip about 2% (generic 9% too high).",
+                "at": "2026-11-25T21:19:13+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.65,
+                "p": 0.58,
                 "p_held": 0.98,
-                "p_if_held": 0.66,
-                "reason": "Wednesday's Einzelplan 04 roll call (25 Nov) had 317 yes with 12 coalition members not voting, i.e. 316 coalition yes plus one outsider, so a swing of -2 as in Nov 2025 (324 to 322) gives 315; the final vote is the whipped one (Sep 2025 moved +2), no dissenter is named and all five budget roll calls of this coalition reached 316. No market and no earlier figure in this case, so nothing to take from the record."
+                "p_if_held": 0.59,
+                "reason": "Signals add nothing: no market or model on the yes count, and no earlier figure of ours in this case, so the blind estimate stands. Coalition 328 seats, margin 12. Einzelplan 04 on 25 Nov 2026 got 317 yes (12 coalition absent, 1 non-coalition yes), lowest of 5 budget roll calls. Merz is at the EU summit on Fri 27 Nov (FOCUS/FAZ 25 Nov); Union trial vote 23 Nov: 3 no, 1 abstention. For YES: final vote is whipped, no coalition no-vote on Wed, 5/5 budget votes >=316; wider class 9/12. Expected yes about 317, sd 3.5. Vote fixed in agenda: held 0.98.",
+                "rounds": [
+                  {
+                    "p": 0.65,
+                    "at": "2026-11-25T19:08:01+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "at": "2026-11-25T19:01:49+01:00",
+                "at": "2026-11-25T21:17:10+01:00",
                 "inputs": [
                   "signals",
                   "reference-data",
                   "dossier"
                 ],
-                "p": 0.87,
-                "reason": "Binomial on 328 coalition seats needing >=315 coalition yes (plus ~1 non-coalition yes): per-member yes 0.968 (this week's Einzelplan 04, 317 total on 25 Nov) gives 0.83, 0.975 (2025 budget votes 322-324) gives 0.96; blended ~0.89, times ~0.985 that the fixed 27 Nov vote is held. No earlier claim in this case."
+                "p": 0.76,
+                "reason": "No market or odds (signals, 25 Nov). Anchor: binomial pAtLeastK(328 coalition, 0.974 each, 315)=0.95, but absences are correlated, so cut hard. Budget roll calls 5/5 reached 316 (322,324,324,322,317), wider class 9/12; Wed 25 Nov EP04 got only 317 (12 coalition absent), Merz is in Brussels Friday (-1), CDU/CSU trial vote 23 Nov had 3 no + 1 abstention; Friday finals had 5-7 coalition absent. Net: ~0.79, minus ~2pp slip (agenda fixed; generic class 9%). No earlier figures in this case.",
+                "rounds": [
+                  {
+                    "p": 0.87,
+                    "at": "2026-11-25T19:01:49+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-25T19:01:04+01:00",
+                "at_blind": "2026-11-25T21:17:05+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.7,
-                "reason_blind": "Third reading is scheduled 27 Nov; CDU/CSU+SPD hold 328 of 630 seats so 316 yes needs at most 12 absences or dissenters in a roll call, usual for budget votes but the Stromsteuer dispute adds some defection risk.",
-                "at": "2026-11-25T19:08:50+01:00",
+                "p_blind": 0.78,
+                "reason_blind": "Coalition CDU/CSU+SPD hold 328 of 630 seats; 316 needs at most 12 absent or dissenting. Last year's roll-call on the 2026 budget (Fri 28 Nov 2025) passed 322 to 252, i.e. 6 above the bar. Budget committee approved 2027 budget 13 Nov with coalition votes; Bundestag vote set for Fri 27 Nov (aktiencheck 25 Nov). Slip class other-scheduled 9%. Risks: Friday absences, SPD/Union dissent, illness. No sign of revolt found.",
+                "searches": 4,
+                "at": "2026-11-25T21:19:20+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.72,
-                "p_held": 0.93,
-                "p_if_held": 0.77,
-                "reason": "Coalition holds 328 of 630 seats so 316 needs at most 12 absences or dissenters; tagesschau (24 Nov) judges failure of the government majority unlikely; no earlier figure of ours exists for this case."
+                "p": 0.78,
+                "p_held": 0.95,
+                "p_if_held": 0.82,
+                "reason": "No earlier figure or case record; no market or model found. Coalition 328 seats, needs 316 (12 slack); 2026 budget roll-call got 322 yes on Fri 28 Nov 2025. tagesschau 24 Nov calls failure of government majority unlikely. Slip rate 9%. Main risk is Friday absences/dissent bringing yes below 316.",
+                "rounds": [
+                  {
+                    "p": 0.72,
+                    "at": "2026-11-25T19:08:50+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               }
             ],
-            "missing": [],
-            "combined": 0.737,
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "1 of the vendors' leads could not be read by our agent and were dropped unconfirmed: aktiencheck.de article on BSW ruling, 328 seats (unreachable)"
+              }
+            ],
+            "combined": 0.677,
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "spread": 0.25,
-            "p": 0.74,
+            "spread": 0.23,
+            "p": 0.68,
             "decomposition": {
-              "p_held": 0.983,
-              "p_if_held": 0.75,
+              "p_held": 0.975,
+              "p_if_held": 0.697,
               "p_if_not_held": 0
             },
             "research": {
@@ -1803,7 +1870,8 @@
                 "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
                 "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
                 "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html"
-              ]
+              ],
+              "superseded": "Evening check 25 Nov: the finding 'no dissent and no announced absence found' no longer holds. FOCUS (25 Nov, 10:42) reports that Merz will miss Friday's vote (EU summit) and that a CDU/CSU trial vote on 23 Nov had three votes against and one abstention; both facts are in the dossier and all five forecasters reran with them."
             },
             "shadow": {
               "external": [
@@ -1848,6 +1916,30 @@
                   "trace": "data/dossiers/2026-11-28/de-budget-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 17,
+              "facts_confirmed": 6,
+              "added": [
+                "https://www.focus.de/politik/deutschland/merz-wir-haben-das-geld-nicht-mehr-fuer-alles_2b939b78-d0c0-4970-bb6d-ab713d88bfd2.html",
+                "https://www.bundestag.de/presse/hib/kurzmeldungen-1238142",
+                "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
+                "https://www.zdfheute.de/politik/deutschland/bsw-klage-bundestagswahl-gescheitert-100.html",
+                "https://www.faz.net/aktuell/politik/inland/was-der-haushalt-2027-ueber-den-zustand-der-koalition-verraet-201713825.html"
+              ],
+              "reforecast": true,
+              "before": 0.737,
+              "material": [
+                "FOCUS online (dpa-based report, 25 Nov 2026) reported that Chancellor Merz will not take part in Friday's budget vote because he will be at the EU summit in Brussels.",
+                "FOCUS online reported on 25 Nov 2026 that in a trial vote (Probeabstimmung) in the CDU/CSU parliamentary group on Monday 23 Nov there were three votes against and one abstention, while the coalition's approval was considered reasonably secure."
+              ],
+              "after": 0.677
             }
           }
         }
@@ -2070,11 +2162,11 @@
           "kind": "binary",
           "label": "At least 150 drones",
           "text": "According to the Ukrainian Air Force's first summary of the overnight attack published on Friday 27 November 2026, Russia launched at least 150 attack drones at Ukraine in the night of 26–27 November.",
-          "criterion": "YES if the value defined in ua-drones-28 (the UAV total in the Air Force's first summary published on Fri 27 Nov 2026 for the night of 26–27 Nov) is 150 or more; NO if it is 149 or fewer. Pending if no summary is published.",
+          "criterion": "YES if the UAV total in the Ukrainian Air Force's first summary of the overnight attack of 26–27 Nov, published on Fri 27 Nov 2026 at any hour of that day (Kyiv time) on t.me/kpszsu or the Air Force Facebook page, or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine, is 150 or more; NO if it is 149 or fewer. This is the value defined in ua-drones-28: the summary's own UAV total (strike UAVs as the summary counts them: Shahed-type incl. jet-powered, Gerbera, Parodiya and other decoys, and jet munitions if the summary includes them in that total); missiles listed separately are not counted; separate daytime reports and later corrections do not count; a summary with zero drones counts as 0. The event window (18:00 on 26 Nov to 12:00 on 27 Nov, Kyiv time) bounds the night of the attack, not the hour of publication. Pending if the Air Force publishes no such summary on 27 Nov.",
           "cs": {
             "label": "Nejméně 150 dronů",
             "text": "Podle prvního souhrnu ukrajinského letectva o nočním útoku zveřejněného v pátek 27. listopadu 2026 vyslalo Rusko v noci na 27. listopadu na Ukrajinu nejméně 150 útočných dronů.",
-            "criterion": "ANO, pokud hodnota vymezená v tvrzení ua-drones-28 (celkový počet dronů v prvním souhrnu letectva zveřejněném v pátek 27. listopadu 2026 za noc na 27. listopadu) činí 150 či více; NE, pokud činí 149 či méně. Nevyhodnoceno, pokud souhrn nevyjde."
+            "criterion": "ANO, pokud celkový počet bezpilotních letounů v prvním souhrnu ukrajinského letectva o nočním útoku z 26. na 27. listopadu, zveřejněném v pátek 27. listopadu 2026 v kteroukoli hodinu toho dne (kyjevského času) na t.me/kpszsu nebo na facebookové stránce letectva, případně převzatém agenturou Ukrinform, Ukrajinskou pravdou, Kyiv Independent či Interfaxem-Ukrajina, činí 150 či více; NE, pokud činí 149 či méně. Jde o hodnotu vymezenou v tvrzení ua-drones-28: celkový počet dronů tak, jak ho souhrn sám uvádí (útočné bezpilotní letouny: typ Šáhed včetně proudových, Gerbera, Parodija a další klamné drony a proudová munice, je-li v souhrnu zahrnuta do tohoto počtu); zvlášť uvedené střely se nepočítají; samostatná denní hlášení a pozdější opravy se nepočítají; souhrn s nulou dronů dává 0. Časové okno události (od 18:00 26. listopadu do 12:00 27. listopadu kyjevského času) vymezuje noc útoku, nikoli hodinu zveřejnění. Nevyhodnoceno, pokud letectvo 27. listopadu žádný takový souhrn nezveřejní."
           },
           "resolution_source": "https://t.me/s/kpszsu ; https://www.ukrinform.net/rubric-ato",
           "schedule": "official",
@@ -2140,6 +2232,17 @@
                 }
               ]
             }
+          },
+          "wording_check": {
+            "at": "2026-11-25T21:29:47+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the value defined in ua-drones-28 (the UAV total in the Air Force's first summary published on Fri 27 Nov 2026 for the night of 26–27 Nov) is 150 or more; NO if it is 149 or fewer. Pending if no summary is published.",
+            "why": "Two of the scenarios are real. (1) The criterion pointed to ua-drones-28 for what counts as a drone, so read alone it did not say whether decoys or separately listed missiles count: the definition is now written out, unchanged. (2) A first summary published on Friday after 12:00 Kyiv time: the window ends at 12:00 and the criterion did not say whether that hour limits publication; it now says the window bounds the night, and any hour of Friday counts, as ua-drones-28 already implies. The third scenario is not real: 'Pending if no summary is published' is our rule for missing evidence (RESOLVER step 4) and does not conflict with the window. What is forecast is unchanged."
           }
         }
       ]
@@ -2375,6 +2478,27 @@
                   "trace": "data/dossiers/2026-11-28/gulf-ukmto-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 16,
+              "facts_confirmed": 5,
+              "added": [
+                "https://theredzone-newsletter.beehiiv.com/p/ukmto-records-four-ships-struck-on-22-november-two-days-late",
+                "https://www.euronews.com/2026/11/24/iran-orders-hormuz-closed-further-day-by-day-as-qatar-seeks-to-revive-peace-talks",
+                "https://gcaptain.com/four-more-ships-attacked-as-iran-widens-hormuz-crackdown-to-tugboats/",
+                "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
+                "https://www.marineinsight.com/strait-hormuz-shipping-65-below-tanker-attacks/"
+              ],
+              "reforecast": false,
+              "before": 0.614,
+              "material": [],
+              "note": "No confirmed fact is material to the outcome; the evening figure stands."
             }
           }
         }
@@ -2552,7 +2676,12 @@
                 "reason": "Polymarket prices an S&P or Moody's downgrade by 30 Nov at 0.07 and S&P cut to A+ stable in Oct 2025; YES also covers publishing nothing, with outlook change or CreditWatch the residual risk; no earlier figure of ours in this case."
               }
             ],
-            "missing": [],
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "2 of the vendors' leads could not be read by our agent and were dropped unconfirmed: AFT page lists S&P A+ stable, next date 27 Nov 2026 (xai) (unreachable); Both houses passed the 2026 year-end budget bill (PLFG) on 24 Nov (openai) (unreachable)"
+              }
+            ],
             "combined": 0.768,
             "combination": {
               "method": "geo-odds"
@@ -2620,6 +2749,26 @@
                   "trace": "data/dossiers/2026-11-28/fr-sp-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "facts_confirmed": 3,
+              "added": [
+                "https://www.boursorama.com/actualite-economique/actualites/dette-l-agence-s-p-tranche-sur-la-note-de-la-france-vendredi-dans-un-contexte-economique-degrade-e70e5c7b8861489f0f184df28e7d45c6",
+                "https://www.dpa-international.com/economics/urn:newsml:dpa.com:20090101:261123-930-37262/"
+              ],
+              "reforecast": false,
+              "before": 0.768,
+              "material": [
+                "An AFP dispatch of 25 Nov 2026 reported that S&P is due to publish its semi-annual assessment of France's debt on Friday 27 November, with S&P currently at A+ stable since its May review."
+              ],
+              "note": "The fact marked material by the checking agent (AFP, 25 Nov: S&P publishes on 27 Nov) confirms a date the dossier already had, and under the criterion an affirmation and no publication both resolve YES; it does not change how likely an S&P action is. No rerun, the evening figure stands."
             }
           },
           "open_question_note": "The claim is phrased on the likelier side; a negative action (downgrade or negative outlook) is the open risk the story will report if it comes."
@@ -2692,15 +2841,15 @@
               "note": "No matching market."
             },
             "base_rate": {
-              "class": "no class of >=10 available; generic prior for a company resetting an ambitious long-term target at a CMD after repeated guidance cuts",
+              "class": "no wider class found; neutral start",
               "rate": 0.5,
               "n": 0,
-              "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
-                "class": "Rheinmetall 2026: two annual guidance cuts while keeping the 2030 ambition",
-                "rate": 0,
+                "class": "Rheinmetall keeps 2030 ambition through 2026 annual guidance cuts",
+                "rate": 1,
                 "n": 1
-              }
+              },
+              "source": "base-rate forecaster, evening check 25 Nov (rerun); classes from the dossier and pipeline/reference-data/"
             },
             "dossier": "data/dossiers/2026-11-28/rheinmetall-28.md",
             "signals": "data/dossiers/2026-11-28/rheinmetall-28.signals.md",
@@ -2708,107 +2857,151 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:01:31+01:00",
+                "at_blind": "2026-11-25T21:16:54+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.59,
-                "reason_blind": "€50bn needs ~40% CAGR from the €13.2bn 2026 guidance cut on 5 Nov; JPMorgan (5 Nov) expects 2030 targets to fall 'deutlich', Deutsche Bank (27 Oct) says investors expect a cut, Citi (13 Nov) models €30.3bn. Held below 0.65 because management kept the ambition through two cuts, and a range with midpoint >=€50bn, a 2028-only target or a withdrawal without a 2030 figure all resolve NO.",
-                "at": "2026-11-25T19:05:24+01:00",
+                "p_blind": 0.74,
+                "reason_blind": "No class of 10+ cases; start 50% (hint n=1: RHM kept 2030 goal through Aug and Nov cuts). Up: 5 Nov FY26 cut to ~EUR13.2bn means ~40% CAGR to 50bn; JPM (5 Nov) and DB (27 Oct) expect lower 2030 goals, Citi 2030 sales 30.3bn (13 Nov); CFO (5 Nov) said CMD will lay out 'what the figure is'; EUR45bn organic point noted. Down: dpa 24 Nov still 50bn; Papperger may restate it, give a range with midpoint >=50, or shift to 2028 with no 2030 figure (NO). Slip 0.5% (company-event, 0/33). ~+1.05 log-odds.",
+                "at": "2026-11-25T21:19:24+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.61,
+                "p": 0.75,
                 "p_held": 0.995,
-                "p_if_held": 0.61,
-                "reason": "€50bn needs ~40% CAGR from the €13.2bn 2026 guidance cut on 5 Nov; JPMorgan (5 Nov) expects 2030 targets to fall 'deutlich', Deutsche Bank (27 Oct) says investors expect a cut, Citi (13 Nov) models €30.3bn. Held below 0.65 because management kept the ambition through two cuts, and a range with midpoint >=€50bn, a 2028-only target or a withdrawal without a 2030 figure all resolve NO. Earlier figures: we put 77% on Rheinmetall keeping guidance on 5 Nov and were wrong, a sign we underrated management cuts, so nudged up."
+                "p_if_held": 0.754,
+                "reason": "Blind 0.74 kept, +0.01. Earlier figures: we said 77% that RHM keeps guidance (6 Nov) and it cut, 0/1 right; n=1, so only a slight lean against trusting management's ambition. No market found (25 Nov). Signals repeat the analysts already in the dossier: Citi 2030 sales 30.3bn (13 Nov), JPM 'vermutlich deutlich' (5 Nov), Berenberg calls for a reset. Main NO paths: 50bn restated (dpa 24 Nov 'bislang'), range midpoint >=50, or no 2030 figure. Slip 0.5% (company-event 0/33).",
+                "rounds": [
+                  {
+                    "p": 0.61,
+                    "at": "2026-11-25T19:05:24+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:02:21+01:00",
+                "at_blind": "2026-11-25T21:17:37+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.17,
-                "reason_blind": "Q3 (9 Nov 2026) cut FY2026 sales guidance to ~€13.2bn on Arminius delays and ammo acceptance, and deferred longer-term targets to the CMD, which raises some chance of trimming; but management has repeatedly reiterated ~€50bn for 2030, backlog is €78bn and the CEO is habitually bullish, so reaffirmation is the likelier outcome.",
-                "at": "2026-11-25T19:06:39+01:00",
+                "p_blind": 0.68,
+                "reason_blind": "5 Nov 2026: second 2026 cut to ~EUR13.2bn (Arminius slips to 2027), shares -13%; on the Q3 call mgmt declined to reaffirm the 25-35% organic CAGR, deferring all 2027+ guidance to the 26-27 Nov Hamburg CMD. ~EUR50bn by 2030 now implies ~39%/yr. Berenberg (10 Nov) expects ~14% cut; Barclays (24 Nov) expects EUR35-40bn; market prices ~30bn. Risks to YES: Papperger keeps ~50bn incl. M&A/naval, or gives only 2027/2028 targets or a range with midpoint >=50bn, or no 2030 group figure.",
+                "searches": 6,
+                "p_dossier": 0.7,
+                "at": "2026-11-25T21:19:41+01:00",
                 "inputs": [
                   "own-research",
-                  "dossier",
-                  "signals"
+                  "signals",
+                  "dossier"
                 ],
-                "p": 0.6,
-                "reason": "After FY2026 guidance cuts in Aug and on 5 Nov (sales ~€13.2bn, needing ~40% CAGR to reach €50bn), JPMorgan, Deutsche Bank, Citi (own 2030 forecast €30.3bn) and Berenberg all expect or call for a lower 2030 target; offsetting that, Papperger has defended the ambition, and a withdrawal without a new 2030 figure or a vague 'potential' resolves NO. Our only earlier figure here (77% that it keeps guidance, 5 Nov) was on the wrong side, a warning against trusting management's bullishness.",
-                "searches": 12
+                "p": 0.7,
+                "reason": "Dossier confirms my research: two 2026 cuts (Aug, 5 Nov to ~EUR13.2bn), CFO on 5 Nov promised to lay out 'what the figure is' at the CMD and declined to back the 25-35% organic CAGR; ~50bn needs ~40%/yr; JPM, DB, Citi (30.3bn), Berenberg, Barclays (35-40bn) all expect a cut; dpa-AFX 24 Nov says target still 50bn. Remaining NO paths: restating ~50bn incl. M&A (it was 45bn organic), only 2028 targets, or range midpoint >=50. Earlier figures: 77% on 'keeps guidance' (n=1) was wrong, a mild nudge toward cut; no market. Slip negligible.",
+                "rounds": [
+                  {
+                    "p": 0.6,
+                    "at": "2026-11-25T19:06:39+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-25T19:01:39+01:00",
+                "at_blind": "2026-11-25T21:16:56+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
                 "p_blind": 0.55,
-                "reason_blind": "Analysts (JPMorgan 5 Nov, Deutsche Bank 27 Oct, Citi 13 Nov with a 2030 forecast of EUR 30.3bn) expect a cut and EUR 50bn needs about 40% annual growth from EUR 13.2bn. Case for NO: Papperger kept the 2030 ambition through two guidance cuts (Aug, Nov) with a EUR 78bn backlog, and the criterion also gives NO if the reset moves the horizon (2028 targets, or EUR 50bn pushed past 2030) without a new 2030 group figure; I put keep at about 0.25 and no-2030-figure at about 0.20.",
-                "at": "2026-11-25T19:08:01+01:00",
+                "reason_blind": "Case for NO: Papperger kept the 2030 goals through both 2026 guidance cuts (6 Aug: EUR 5bn naval kept; dpa-AFX 24 Nov: still EUR 50bn); backlog EUR 78bn at 30 Sep; NO also wins if 2030 figure is dropped, moved to a later year, or stated as 'up to/around 50bn' or a range with midpoint >=50. CFO on 5 Nov only promised to lay out the figure and the path. Against: 13.2bn in 2026 needs ~40% CAGR; five warnings in 11 months; JPM, DB, Citi (30.3bn) expect a cut; investors would punish an unchanged story. No base class (n=1 hint). Slip 0.005. Keep ~30%, no 2030 figure ~15%, cut ~55%.",
+                "at": "2026-11-25T21:19:53+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.55,
+                "p": 0.57,
                 "p_held": 0.995,
-                "p_if_held": 0.55,
-                "reason": "Analysts (JPMorgan 5 Nov, Deutsche Bank 27 Oct, Citi 13 Nov at EUR 30.3bn for 2030) expect a cut, but Papperger kept the 2030 ambition through two guidance cuts and a reset that moves the horizon without a new 2030 group figure resolves NO (keep about 0.25, no 2030 figure about 0.20). From our earlier figure (77% on 'keeps guidance' on 6 Nov, wrong) I take that this management does cut when numbers force it, which supports staying above half but not that the form of the cut fits the criterion."
+                "p_if_held": 0.57,
+                "reason": "No market; signals add only analyst views already in the dossier (Citi 2030 sales EUR 30.3bn on 13 Nov, below consensus and guidance; JPM, DB expect a cut). Earlier figure: we stated 77% that Rheinmetall keeps guidance on 5 Nov and were wrong (n=1), a slight reason to lean further to the cut, so +2 points. Case for NO stays strong: Papperger kept the 2030 goals in Aug and until 24 Nov (dpa-AFX), backlog EUR 78bn; NO also if 2030 figure is dropped, moved to a later year, or range midpoint >=50. Keep ~29%, no 2030 figure ~14%, cut ~57%. Slip 0.005.",
+                "rounds": [
+                  {
+                    "p": 0.55,
+                    "at": "2026-11-25T19:08:01+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "at": "2026-11-25T19:01:49+01:00",
+                "at": "2026-11-25T21:17:46+01:00",
                 "inputs": [
                   "signals",
                   "reference-data",
                   "dossier"
                 ],
-                "p": 0.65,
-                "reason": "No market; JPMorgan (5 Nov) expects 2030 targets to fall 'vermutlich deutlich', Deutsche Bank (27 Oct) says investors expect a cut, Citi (13 Nov) models EUR30.3bn, after the 5 Nov fifth guidance cut (2026 sales ~EUR13.2bn needing ~40% CAGR); held back by Papperger's record of defending the EUR50bn ambition and the NO path if no 2030 figure is given. Our only earlier figure in this case (rheinmetall-1, 77% keep guidance) was wrong, which argues against trusting management's resolve."
+                "p": 0.72,
+                "reason": "No market (markets.mjs: 'Rheinmetall', '... capital markets day', '... target' none, 25 Nov). Anchor = analyst consensus: Citi 2030 sales €30.3bn, below consensus and guidance (13 Nov); JPM 'vermutlich deutlich' lower (5 Nov); DB says investors expect cut (27 Oct); Barclays/Berenberg want reset; €13.2bn FY26 needs ~40% CAGR → ~82%. Down for NO paths: €50bn kept as 'ambition' or shifted year, no 2030 group figure (only 2028/backlog), 'up to 50' restated (dpa 24 Nov: still aiming €50bn); CFO 5 Nov promised to give the figure. Slip 0.5%. Earlier figure 77% wrong 1/1: small humility.",
+                "rounds": [
+                  {
+                    "p": 0.65,
+                    "at": "2026-11-25T19:01:49+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-25T19:01:04+01:00",
+                "at_blind": "2026-11-25T21:17:08+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.22,
-                "reason_blind": "The 2030 target of about EUR50bn was set at the Nov 2025 CMD; on 5 Nov 2026 Rheinmetall trimmed 2026 guidance for project delays, which makes a haircut plausible, but companies usually reaffirm long-range targets at a CMD and a withdrawn target without a new figure resolves NO.",
-                "at": "2026-11-25T19:08:50+01:00",
+                "p_blind": 0.83,
+                "reason_blind": "Slip rate for company-event ~0.5%; CMD 26-27 Nov. Rheinmetall cut 2026 sales guidance to ~13.2bn on 4 Nov (second cut); shares ~60% below record. Citi (13 Nov) expects medium-term goals cut; Goldman (16 Nov) models ~35bn for 2030; Barclays/Berenberg expect 35-40bn (Der Aktionaer, Investor-Verlag 24 Nov). Risks: Papperger holds ~50bn, reframes with acquisitions, or gives no 2030 sales figure/shifts horizon.",
+                "searches": 5,
+                "at": "2026-11-25T21:20:00+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.5,
-                "reason": "Citi cut its 2030 forecast to EUR30.3bn and JPMorgan, Deutsche Bank and Berenberg all expect a 2030 reset, after the 5 Nov 2026 guidance cut; but a withdrawn target without a new figure resolves NO and our earlier 77% on Rheinmetall earnings was wrong, a caution against following the crowd."
+                "p": 0.84,
+                "p_held": 0.99,
+                "p_if_held": 0.85,
+                "reason": "No market. Analysts (Citi 30bn, Goldman 35bn, Barclays 35-40bn, JPM, DB, Berenberg) expect a 2030 reset; guidance already cut twice. Earlier figures: one claim (rheinmetall-1, 77% on keeping guidance) came wrong, which is consistent with a cut; no calibration problem on this side. Residual risk: Papperger holds ~50bn or gives no 2030 sales number.",
+                "rounds": [
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-25T19:08:50+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               }
             ],
-            "missing": [],
-            "combined": 0.583,
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "1 of the vendors' leads could not be read by our agent and were dropped unconfirmed: 3 Jun 2026: Power Systems sale to AEQUITA for ~€350m, closing Q4 2026 (not checked: background unrelated to the 2030 figure, skipped for time)"
+              }
+            ],
+            "combined": 0.724,
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "spread": 0.15,
-            "p": 0.58,
+            "spread": 0.27,
+            "p": 0.72,
             "decomposition": {
               "p_held": 0.995,
-              "p_if_held": 0.586,
+              "p_if_held": 0.724,
               "p_if_not_held": 0
             },
             "shadow": {
@@ -2854,6 +3047,50 @@
                   "trace": "data/dossiers/2026-11-28/rheinmetall-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "facts_confirmed": 4,
+              "added": [
+                "https://earningscalls.dev/transcripts/rheinmetall-ag_rhm_earnings_call_transcript_2026-11-05",
+                "https://de.finance.yahoo.com/nachrichten/aktien-fokus-r%C3%BCstungswerte-stark-rheinmetall-104255752.html",
+                "https://wsau.com/2026/11/04/rheinmetall-cuts-2026-sales-forecast-again-as-boxer-order-slips/",
+                "https://www.rheinmetall.com/en/media/news-watch/news/2026/11/2026-11-05-rheinmetall-news-quarterly-statement-q3"
+              ],
+              "reforecast": true,
+              "before": 0.583,
+              "material": [
+                "On Rheinmetall's Q3 call of 5 Nov 2026 (earningscalls.dev transcript), an analyst noted the 2030 target is a point target of EUR 45bn organic and asked whether the CMD would give a range and building blocks; CFO Klaus Neumann replied that it would be a key element of the CMD presentation to lay out what the figure is and how the company intends to reach it, and separately said more guidance on 2027 and the years beyond would be shared at the CMD."
+              ],
+              "after": 0.724
+            },
+            "research": {
+              "at": "2026-11-25T21:22:28+01:00",
+              "question": "Is there any dated statement or report from 20-25 Nov 2026 saying what Rheinmetall will present on 2030 at the CMD (keep about EUR 50bn, lower it, new horizon, or new M&A holding it up)? Does the agenda say when targets are presented, and has any acquisition been announced since 5 Nov?",
+              "finding": "No statement by Rheinmetall, Papperger or CFO Neumann from 20-25 Nov 2026 was found saying what the 2030 figure will be; every preview found reports the company as still officially at about EUR 50bn and speculates on a cut. One report (aktiencheck, 25 Nov, morning) says the company 'will present new medium-term targets' at the CMD, but quotes no company source, so it is the outlet's wording, not a company statement. Two previews (investor-verlag, 19 and 24 Nov) describe the EUR 50bn as 'inklusive Akquisitionen/Übernahmen', which supports the reading that the headline figure includes M&A. Investor-verlag (24 Nov) writes that the event starts 26 Nov but 'it gets really interesting on Friday morning', i.e. the 27 Nov call; Rheinmetall's own event page gives only dates 25-27 Nov and the 27 Nov 10:00 CET call, no agenda with timing of the targets. Rheinmetall's press list shows no acquisition since 5 Nov (items: 9 Nov Belgium Skyranger order, 19 Nov Netherlands MoU, 24 Nov bobsleigh sponsorship). New published analyst views (labelled opinion): Barclays (via dpa-AFX, 24 Nov) expects new 2030 targets of EUR 35-40bn; Goldman Sachs reportedly about EUR 35bn; Berenberg about -14% on 2030 sales ambition. Nothing found settles the dispute; the outcome remains for the CMD itself.",
+              "sources": [
+                "https://www.rheinmetall.com/en/events/2026/ir/capital-markets-day",
+                "https://www.rheinmetall.com/en/media/news-watch",
+                "https://aktiencheck.de/artikel/rheinmetall-aktie-dax-gewinner-am-morgen-heute-beginnt-der-kapitalmarkttag-in",
+                "https://aktiencheck.de/artikel/rheinmetall-aktie-30-milliarden-eingepreist-50-milliarden-versprochen-in-hamburg",
+                "https://aktiencheck.de/artikel/rheinmetall-aktie-unter-700-euro-kann-der-kapitalmarkttag-in-hamburg-den-absturz",
+                "https://www.investor-verlag.de/aktien-und-aktienhandel/deutschland/rheinmetall-aktie/rheinmetall-aktie-3-szenarien-kommt-jetzt-der-grosse-knall/",
+                "https://www.investor-verlag.de/aktien-und-aktienhandel/deutschland/rheinmetall-aktie/rheinmetall-aktie-am-tief-faellt-jetzt-das-50-milliarden-ziel/",
+                "https://www.deraktionaer.de/artikel/aktien/rheinmetall-auf-diesen-termin-kommt-es-jetzt-an-20445760.html",
+                "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/rheinmetall-gains-ground-as-barclays-trims-its-target-but-sticks-to-its-conviction/70550855"
+              ],
+              "decisive": false,
+              "searches": 6
+            },
+            "disagreement": {
+              "cause": "genuine",
+              "note": "Same facts, different judgement: the outsider (no dossier) follows the analysts, who all expect a lower 2030 figure; the adversarial forecaster gives more weight to the paths to NO (about €50bn restated as an ambition including acquisitions, the horizon moved, or no 2030 group figure). The research agent found no company statement of 20–25 Nov on what will be presented; the spread stands and the basis line should say the evidence is mixed."
             }
           }
         }
@@ -2931,15 +3168,15 @@
               "note": "Related markets only (Luxon next PM 0.805; coalition of National+ACT+NZ First 0.79): they are about the government, not the seat majority in the official count."
             },
             "base_rate": {
-              "class": "NZ MMP elections where special votes cost the right bloc at least one seat (general knowledge 2005-2023)",
-              "rate": 0.85,
-              "n": 7,
-              "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
+              "class": "Lee 16 Nov replays of 2017/2020/2023 special patterns on 2026 prelim: bloc keeps majority",
+              "rate": 0.33,
+              "n": 3,
               "hint": {
-                "class": "2017/2020/2023: National lost two seats on specials",
-                "rate": 1,
+                "class": "2017/2020/2023: right bloc lost 2 seats on specials",
+                "rate": 0,
                 "n": 3
-              }
+              },
+              "source": "base-rate forecaster, evening check 25 Nov (rerun); classes from the dossier and pipeline/reference-data/"
             },
             "dossier": "data/dossiers/2026-11-28/nz-results-28.md",
             "signals": "data/dossiers/2026-11-28/nz-results-28.signals.md",
@@ -2947,107 +3184,181 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:01:31+01:00",
-                "inputs_blind": [
-                  "dossier",
-                  "reference-data"
-                ],
-                "p_blind": 0.55,
-                "reason_blind": "Preliminary right bloc 67/131; with N National electorate flips and L ACT/NZF list losses, YES requires N+2L<3. National has no list seats, so only ACT/NZF bear vote-share losses, and the special pool is small (~400k vs 602k in 2023, RNZ 26 Nov); but Wairarapa (139 votes) and Hamilton East (456) can flip, and one list loss plus one flip gives a 65/130 tie (NO).",
-                "at": "2026-11-25T19:05:24+01:00",
-                "inputs": [
-                  "dossier",
-                  "reference-data",
-                  "signals"
-                ],
-                "p": 0.56,
-                "p_held": 0.98,
-                "p_if_held": 0.57,
-                "reason": "Preliminary right bloc 67/131; with N National electorate flips and L ACT/NZF list losses, YES requires N+2L<3. National has no list seats, so only ACT/NZF bear vote-share losses, and the special pool is small (~400k vs 602k in 2023, RNZ 26 Nov); but Wairarapa (139 votes) and Hamilton East (456) can flip, and one list loss plus one flip gives a 65/130 tie (NO). Earlier figures: our 8 Nov NZ figures were right 3/3 but underconfident on yes; no market on the official-count seat majority (formation markets ~0.79 are a different question), so nudged slightly up."
-              },
-              {
-                "role": "evidence",
-                "model": "claude-opus-5-5",
-                "at_blind": "2026-11-25T19:02:21+01:00",
-                "inputs_blind": [
-                  "own-research"
-                ],
-                "p_blind": 0.46,
-                "reason_blind": "Preliminary count gave National+ACT+NZ First 68 of 131 (RNZ; Spinoff's calculator 67), with ~20% special votes outstanding that historically shave about 2 seats off the right (2020, 2023) and could flip close electorates; 66 of 131 is the line, so it is close to a coin flip.",
-                "at": "2026-11-25T19:06:39+01:00",
-                "inputs": [
-                  "own-research",
-                  "dossier",
-                  "signals"
-                ],
-                "p": 0.6,
-                "reason": "Preliminary allocation is 67 of 131 (RNZ table; 68 was an error), and because National holds no list seats, specials hurt the bloc only through ACT/NZF list seats or electorate flips; flips alone keep a strict majority (66/130, 65/129), so NO needs two list losses or one list loss plus a flip, and the special pool is unusually small (~400k vs 602k in 2023). Our earlier figures in this case ran 35 points below outcomes, a mild nudge upward.",
-                "searches": 12
-              },
-              {
-                "role": "adversarial",
-                "model": "claude-fable-5-2",
-                "at_blind": "2026-11-25T19:01:39+01:00",
+                "at_blind": "2026-11-25T21:17:08+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
                 "p_blind": 0.58,
-                "reason_blind": "Bloc has 67 of 131 preliminary seats; with about 400,000 specials (14% of the vote) the right has lost seats in every recent count and Wairarapa (National +139) is a coin flip. Overhang arithmetic is tighter than the dossier's list: a National quotient lost to the left enlarges the House (67/132), so the majority is lost when 2a + n + f >= 3 (a = ACT/NZ First list seats lost, n = National quotients lost, f = National electorates lost), e.g. one ACT list seat plus one National quotient gives 66/132, a tie; I estimate that at about 0.40.",
-                "at": "2026-11-25T19:08:01+01:00",
+                "reason_blind": "Prelim 8 Nov: bloc 67/131, one spare. Class n=3 (2017-23): right lost 2 seats on specials every time, but via National list seats; National now has none (overhang). NO needs 2 ACT/NZF list losses, or 1 plus a National electorate flip (Wairarapa 139, Hamilton East 456). Est. P(lose 1 list seat)~0.42, 2+~0.13; P(National flip)~0.5. Smaller special pool (~400k, ~55k disallowed per 1News 25 Nov) mutes shift; Mt Roskill/Te Tai Tokerau give rescue paths. P(YES|held)~0.64. Slip class 0.091, but Commission said on track for 27 Nov (18 Nov): held ~0.96.",
+                "at": "2026-11-25T21:26:48+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
-                  "signals"
+                  "signals",
+                  "union-of-facts"
                 ],
-                "p": 0.62,
+                "p": 0.36,
+                "p_held": 0.96,
+                "p_if_held": 0.38,
+                "reason": "Down from 0.63: our Sainte-Lague check (25 Nov) puts NZF's 12th seat on only a 0.32-pt cushion; all three Lee replays (16 Nov) have NZF -1, Overhang 97% (17 Nov). That leaves 66/131 with zero spare: a Wairarapa flip (139 votes; Farrar 'likely', 26 Nov) or a National entitlement loss (Overhang 66%) gives a tie, NO. Only 1 of 3 replays keeps the majority. Rescues: NZF holds (~15%), Te Tai Tokerau/Mt Roskill. Correlated left lean. P(YES|held)~0.38; held 0.96. Earlier figures 3/3 right at 65% avg, small n, no weight here.",
+                "rounds": [
+                  {
+                    "p": 0.56,
+                    "at": "2026-11-25T19:05:24+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  },
+                  {
+                    "p": 0.63,
+                    "at": "2026-11-25T21:20:10+01:00",
+                    "reason": "evening check, first run on the dossier with the vendors' confirmed facts, before the disagreement research gave all five the union of facts"
+                  }
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-25T21:18:16+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.36,
+                "reason_blind": "Prelim (7-8 Nov): Nat 42 (all electorates) + ACT 13 + NZF 12 = 67/131, margin 3 (2R-T). ~400k specials (14%, 25% overseas) lean left. Overhang substack (17 Nov) puts NZF losing a list seat at 97% (margin to 1); Farrar (25 Nov) also rates it likely and expects Wairarapa (Nat +139) to flip. Any Nat electorate loss cuts R and T by 1, so one loss then gives a tie = NO; Hamilton East (+456) near coin flip. Offsets: TPM losing Te Tai Tokerau (~25%) or Nat taking Mt Roskill (~10%). Net YES about 35-40%.",
+                "searches": 6,
+                "p_dossier": 0.38,
+                "at": "2026-11-25T21:27:14+01:00",
+                "inputs": [
+                  "own-research",
+                  "signals",
+                  "dossier",
+                  "union-of-facts"
+                ],
+                "p": 0.25,
+                "reason": "I missed a path: if National loses its 35th entitlement, the House grows to 132 at a fixed bloc, so margin falls by 1. That is 66% per Overhang (17 Nov), and Lee's 2020 replay (16 Nov) shows it. NZF -1 is in all three of Lee's replays and 97% per Overhang; desk math says NZF loses below about 8.5% of specials (prelim 9.78%). NZF -1 plus either a National entitlement loss or a net Wairarapa/Hamilton East flip gives a tie, which is NO. Westpac (9 Nov) expects -1 to -4 seats. Only small swings or TTT/Roskill offsets save it. Our earlier figures went 3/3 on other questions; n is too small to move me.",
+                "rounds": [
+                  {
+                    "p": 0.6,
+                    "at": "2026-11-25T19:06:39+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  },
+                  {
+                    "p": 0.38,
+                    "at": "2026-11-25T21:20:25+01:00",
+                    "reason": "evening check, first run on the dossier with the vendors' confirmed facts, before the disagreement research gave all five the union of facts"
+                  }
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-25T21:17:28+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.57,
+                "reason_blind": "Preliminary (8 Nov): bloc 67/131, margin 2B-House=+3. Each ACT/NZF list seat lost costs 2; a National electorate flip (Wairarapa lead 139) costs 1; a drop in National's party-vote entitlement (35) adds an overhang seat, costs 1 (66/132 is a tie=NO), a path the dossier omits. Specials cut National 2 seats in 2017, 2020, 2023; pool now ~400k, ~55k disallowed (1News 25 Nov), so smaller shift. My rough tally: P(list loss>=1) ~55%, NO given outcome ~39%. Slip: class 9.1%, but Commission 'on track' for 27 Nov, so ~3%. 0.97x0.59.",
+                "at": "2026-11-25T21:27:35+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p": 0.39,
                 "p_held": 0.97,
-                "p_if_held": 0.64,
-                "reason": "Bloc has 67 of 131 preliminary seats with about 400,000 specials (14%) outstanding and Wairarapa (National +139) near a coin flip; because a lost National quotient enlarges the House, the majority goes when 2a + n + f >= 3 (ACT/NZ First list seats, National quotients, National electorates lost). Polymarket has a National+ACT+NZ First government at 0.79 and Luxon as PM at 0.805 (related, not the seat question), which moved me up a little; from our earlier figures (3 of 3 right at 65% on average, outcomes more often yes) I take a mild lean to the yes side."
+                "p_if_held": 0.4,
+                "reason": "Down from 0.63: NZ First's 12th seat is 118th of 120, cushion 0.32 pts; its special share ran ~0.75 of its preliminary share in 2017, below the 7.5-8.75% it needs now. Lee (16 Nov) has NZF -1 under the 2017, 2020 and 2023 patterns; Farrar (26 Nov) calls it likely. That leaves 66/131; one more hit (National entitlement 35 to 34, or Wairarapa, lead 139) gives a tie or worse; only the 2023 pattern keeps the majority. I put the list loss at ~0.8, NO given it ~0.67. Earlier figures: 3 of 3 right, n too small, no shift. Slip ~3%.",
+                "rounds": [
+                  {
+                    "p": 0.62,
+                    "at": "2026-11-25T19:08:01+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  },
+                  {
+                    "p": 0.63,
+                    "at": "2026-11-25T21:20:40+01:00",
+                    "reason": "evening check, first run on the dossier with the vendors' confirmed facts, before the disagreement research gave all five the union of facts"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
-                "at": "2026-11-25T19:01:49+01:00",
+                "at": "2026-11-25T21:27:53+01:00",
                 "inputs": [
                   "signals",
                   "reference-data",
-                  "dossier"
+                  "dossier",
+                  "union-of-facts"
                 ],
-                "p": 0.62,
-                "reason": "No market on the bloc seat count (related Polymarket Luxon PM 0.805, NAT+ACT+NZF coalition 0.79). Preliminary 67/131 needs two losses: one ACT/NZF list seat on a left-leaning special pool (~400k, smallest since 2014) is plausible, plus a Wairarapa flip (139 margin) would make 65/130; Mt Roskill (262 behind) is an offsetting chance. Our three earlier claims in this case all resolved yes, outcomes 35 points more yes than our figures, nudging up slightly."
+                "p": 0.36,
+                "reason": "Rebuilt seat model: NZF 12th seat is 118th quotient, 0.32pt cushion; Lee (16 Nov) has NZF -1 under 2017/2020/2023 patterns, Overhang (17 Nov) 97%, so P(NZF-1)~0.85, leaving 66/131. Then any Nat entitlement loss (House 132, tie; Overhang 66%) or Wairarapa/Hamilton E flip (65/130) gives NO; P(neither)~0.22, plus ~0.08 for Te Tai Tokerau shrinking House -> YES|NZF-1~0.30; YES|no NZF loss~0.88. Total ~0.39, slip ~2%, Westpac/Farrar/Overhang median lean NO -> 0.36. Earlier figures 3/3 right at ~65%, n too small to move.",
+                "rounds": [
+                  {
+                    "p": 0.62,
+                    "at": "2026-11-25T19:01:49+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  },
+                  {
+                    "p": 0.66,
+                    "at": "2026-11-25T21:18:07+01:00",
+                    "reason": "evening check, first run on the dossier with the vendors' confirmed facts, before the disagreement research gave all five the union of facts"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-25T19:01:04+01:00",
+                "at_blind": "2026-11-25T21:17:08+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.45,
-                "reason_blind": "Preliminary count on 7-8 Nov gave National+ACT+NZ First 67 of 131 seats (one above the 66 needed) with about 399,000 special votes outstanding that historically help the left (National lost 2 seats in 2023) and five electorates under 500 votes; losing 3 net seats would make it 64 of 128 and NO.",
-                "at": "2026-11-25T19:08:50+01:00",
+                "p_blind": 0.3,
+                "reason_blind": "Election-night count 7 Nov: National+ACT+NZF 67 of 131 (majority needs 66). Specials lean left; Westpac (9 Nov) expects bloc to lose 1-4 seats; Lee projection (8 Nov) leaves exactly 66 on party vote alone. Wairarapa (Butterick +139) and Hamilton East could flip, shrinking National overhang (65 of 130 = tie, NO). Farrar (25 Nov) rates an NZF list-seat loss likely and Wairarapa flip likely, i.e. net -2 => NO. Slip rate 9%.",
+                "searches": 2,
+                "at": "2026-11-25T21:28:06+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals"
+                  "signals",
+                  "union-of-facts"
                 ],
-                "p": 0.5,
-                "reason": "Preliminary 67 of 131 for the bloc with about 399,000 specials outstanding that favoured the left in 2023 (National lost 2 seats) and five electorates under 500 votes; a net loss of 3 seats gives 64 of 128 and NO; our earlier 61% on the coalition majority came true on the preliminary count; markets give Luxon as PM 0.805 but not the seat question."
+                "p": 0.21,
+                "p_held": 0.95,
+                "p_if_held": 0.22,
+                "reason": "Lowered from 0.29. Union facts: NZF 12th seat is 7.7k votes from loss (97% likely per The Overhang; all three Lee replays NZF -1); that leaves 66/131 only if National keeps its 35 entitlement (66% likely to lose one: House 132, tie, NO) and no Wairarapa/Hamilton East flip (Farrar: likely; 139-vote margin => 65/130 NO). Rough YES paths ~0.2. Earlier figures concern preliminary count, no shift.",
+                "rounds": [
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-25T19:08:50+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  },
+                  {
+                    "p": 0.29,
+                    "at": "2026-11-25T21:20:45+01:00",
+                    "reason": "evening check, first run on the dossier with the vendors' confirmed facts, before the disagreement research gave all five the union of facts"
+                  }
+                ]
               }
             ],
-            "missing": [],
-            "combined": 0.581,
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "1 of the vendors' leads could not be read by our agent and were dropped unconfirmed: times.co.nz: Le Quesne says count on track (18 Nov) (unreachable)"
+              }
+            ],
+            "combined": 0.309,
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "spread": 0.12,
-            "p": 0.58,
+            "spread": 0.18,
+            "p": 0.31,
             "decomposition": {
-              "p_held": 0.975,
-              "p_if_held": 0.595,
+              "p_held": 0.965,
+              "p_if_held": 0.321,
               "p_if_not_held": 0
             },
             "shadow": {
@@ -3093,10 +3404,61 @@
                   "trace": "data/dossiers/2026-11-28/nz-results-28.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-25T21:29:47+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 16,
+              "facts_confirmed": 2,
+              "added": [
+                "https://www.1news.co.nz/2026/11/26/its-time-four-election-scenarios-that-could-play-out-tomorrow/",
+                "https://elections.nz/media-and-news/2026/progress-on-official-count"
+              ],
+              "reforecast": true,
+              "before": 0.581,
+              "material": [
+                "1News reported on 25 Nov 2026 (UTC; 26 Nov NZ) that, with same-day enrolment scrapped, the Electoral Commission expects about 55,000 special votes to be disallowed because the voter was not enrolled, five times as many as at the 2023 election."
+              ],
+              "after": 0.309
+            },
+            "research": {
+              "at": "2026-11-25T21:24:59+01:00",
+              "question": "On the preliminary party vote, how close is the last NZ First / ACT list seat under Sainte-Laguë (who holds the 120th quotient, who is next, what shift moves it), how does that compare with special-vote shifts in 2017/2020/2023, and what exactly do the published analyses (The Overhang, Kiwiblog, Lee, Westpac) say?",
+              "finding": "Recomputing Sainte-Laguë from the preliminary shares (Lab 710,330 / Nat 706,680 votes; Grn 13.30, ACT 10.92, NZF 9.78, TOP 5.96, TPM 0.57 %; about 2.419M valid party votes) reproduces the official 120-seat split (Lab 36, Nat 35, Grn 16, ACT 13, NZF 12, TOP 7, TPM 1). Labour holds the 120th quotient (Lab/71 = 10,005), National is next (Nat/71 = 9,953). NZ First's 12th seat is the 118th quotient (10,288). With everything else unchanged, NZ First keeps it only if it loses fewer than about 7,700 votes (0.32 points of the preliminary total). Put another way, it needs at least about 7.5–8.75% of the 345–400k special votes, against 9.78% on election night, so roughly 76–89% of its preliminary share. In 2017 NZ First won only about 75% of its preliminary share among specials (7.51% → 7.20% overall), and Chuan-Zheng Lee's mechanical projections, which replay the 2017, 2020 and 2023 special-vote patterns, have NZ First losing one seat in all three. ACT is not close: it has about 15,400 votes of cushion (0.64 points). So one NZ First list-seat loss is the expected case on every historical pattern, not an outside chance. A path the forecasters' framing leaves out: if National also loses a party-vote entitlement (35→34), its overhang grows and the House becomes 132, so NZ First −1 alone gives 66/132, an exact tie and therefore NO, even if no electorate flips. That is Lee's 2020-pattern projection, and Farrar's net −3 arithmetic says the same. The published analyses are dated model outputs, not results. The Overhang (17 Nov) puts NZ First losing a seat at 97% and National losing an entitlement at 66%. Lee (8 and 16 Nov) has NZ First −1 in all three replays and the bloc on 66/131 only on the 2023 pattern. Farrar (Kiwiblog, 26 Nov NZDT) calls an NZ First list loss and a Wairarapa flip 'likely'. Westpac (9 Nov) expects the right bloc to fall short without Opportunity.",
+              "sources": [
+                "https://www.interest.co.nz/public-policy/141068/three-weeks-waiting-how-specials-seat-race-and-overhang-could-reshape-next",
+                "https://www.interest.co.nz/public-policy/140999/wait-begins-opportunity-knocks-election-2026-delivers-upsets-overhangs-and",
+                "https://www.latintimes.com/new-zealand-election-special-votes-majority-601038",
+                "https://www.rnz.co.nz/news/election-2026-results",
+                "https://en.wikipedia.org/wiki/Results_of_the_2017_New_Zealand_general_election",
+                "https://thespinoff.co.nz/politics/03-11-2023/breaking-national-loses-two-seats-meaning-nz-first-is-crucial-to-forming-a-government",
+                "https://www.rnz.co.nz/news/political/501624/special-votes-national-and-act-lose-majority-in-largest-ever-parliament",
+                "https://czlee.substack.com/p/special-votes-projection-2026-party",
+                "https://czlee.substack.com/p/special-votes-projection-2026-final",
+                "https://czlee.nz/elections/2026-projection/",
+                "https://theoverhangaonz.substack.com/p/the-overhang-217-specials-edition",
+                "https://www.kiwiblog.co.nz/2026/11/how_things_may_change_with_specials.html",
+                "https://www.kiwiblog.co.nz/2026/11/domestic_vs_overseas_specials.html",
+                "https://www.westpaciq.com.au/economics/2026/11/new-zealand-2026-general-election-preliminary-results-and-next-/"
+              ],
+              "decisive": true,
+              "searches": 5
+            },
+            "disagreement": {
+              "cause": "inputs",
+              "note": "First run of the evening check: 0.29 to 0.66 (37 points). The evidence forecaster and the outsider had found published seat projections in their own research (Lee 8 and 16 Nov, The Overhang 17 Nov, Farrar 26 Nov NZDT) that the dossier lacked; the dossier readers judged an NZ First list-seat loss less likely than not. The research agent recomputed the Sainte-Laguë quotients (NZ First's 12th seat has a cushion of about 0.32 points) and read the projections on their pages; all five got the union of facts, numbers removed, and re-estimated once (first figures in rounds). Second run: 0.21 to 0.39."
             }
           }
         }
-      ]
+      ],
+      "awaited": {
+        "what": "The Electoral Commission's declaration of the official results of the 7 November general election, set for Friday 27 November 2026 at 14:00 NZDT",
+        "source": "https://elections.nz/media-and-news/2026/progress-on-official-count"
+      }
     },
     {
       "id": "fr-cpi",
@@ -4230,5 +4592,36 @@
       }
     ],
     "failed": []
+  },
+  "evening_check": {
+    "at": "2026-11-25T21:29:47+01:00",
+    "claims": [
+      "fr-sp-28",
+      "eu-summit-28",
+      "rheinmetall-28",
+      "de-budget-28",
+      "nz-results-28",
+      "gulf-ukmto-28"
+    ],
+    "facts_listed": 102,
+    "agents": {
+      "facts": "claude-opus-5-5",
+      "research": "claude-opus-5-5",
+      "forecasters": {
+        "base-rate": "claude-opus-5-5",
+        "evidence": "claude-opus-5-5",
+        "adversarial": "claude-fable-5-2",
+        "anchor": "claude-opus-5-5",
+        "outsider": "claude-sonnet-5-5"
+      }
+    },
+    "reran": [
+      "rheinmetall-28",
+      "de-budget-28",
+      "nz-results-28"
+    ],
+    "wording": [
+      "ua-drones-150-28"
+    ]
   }
 }
