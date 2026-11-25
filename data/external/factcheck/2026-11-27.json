@@ -1,0 +1,106 @@
+{
+ "edition": "2026-11-27",
+ "stories": [
+  {
+   "story": "gulf-shipping",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T05:26:16Z",
+   "searches": 6,
+   "flags": []
+  },
+  {
+   "story": "kr-bok",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T05:26:17Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "ua-war",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T05:26:24Z",
+   "searches": 9,
+   "flags": []
+  },
+  {
+   "story": "de-gfk",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T05:26:38Z",
+   "searches": 7,
+   "flags": [
+    {
+     "statement": "The November reading had been far below the −22.5 recorded a year earlier.",
+     "in_report": true,
+     "problem": "The year-earlier comparison uses the October 2025 figure. NIM’s December 19, 2025 release lists −22.5 for October 2025 and −24.1 for November 2025.",
+     "source": "https://www.nim.org/fileadmin/PUBLIC/3_1_Konsumklima/2025/2025_12/2025_12_GfK_Consumer_Climate_powered_by_NIM_en_fin.pdf"
+    }
+   ]
+  },
+  {
+   "story": "eu-summit",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T05:26:41Z",
+   "searches": 9,
+   "flags": [
+    {
+     "statement": "The leaders' backing opens the formal procedure under Article 283(2) of the Treaty on the Functioning of the EU.",
+     "in_report": true,
+     "problem": "The Article 283(2) appointment procedure was already underway before the summit. In his 6 November 2026 statement, the Eurogroup president said he had started the procedure after Lagarde notified Costa on 29 October and had already received two nominations.",
+     "source": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/06/statement-by-the-eurogroup-president-on-the-nominations-for-the-post-of-ecb-president/"
+    }
+   ]
+  },
+  {
+   "story": "cz-colt",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T05:26:50Z",
+   "searches": 3,
+   "flags": []
+  },
+  {
+   "story": "fr-plfss",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T05:26:51Z",
+   "searches": 6,
+   "flags": [
+    {
+     "statement": "The two chambers had sent the committee irreconcilable versions.",
+     "in_report": true,
+     "problem": "The Assemblée nationale did not adopt a version of its own. It rejected the revenue section on 23 October, which sank the entire bill, so the Senate examined the government's original text rather than an Assembly version.",
+     "source": "https://www.senat.fr/rap/l26-144-1/l26-144-123.html"
+    },
+    {
+     "statement": "which forces a text through without a vote.",
+     "in_report": true,
+     "problem": "Article 49(3) bypasses a direct vote on the bill but does not guarantee its passage. If the Assemblée nationale adopts a motion of no confidence, the bill is rejected and the government falls.",
+     "source": "https://questions.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement"
+    }
+   ]
+  },
+  {
+   "story": "uk-tube",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T05:27:10Z",
+   "searches": 12,
+   "flags": []
+  },
+  {
+   "story": "es-debate",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T05:27:19Z",
+   "searches": 16,
+   "flags": []
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-25T05:27:19Z"
+}
