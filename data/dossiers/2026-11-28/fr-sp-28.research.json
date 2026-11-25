@@ -1,0 +1,199 @@
+{
+ "claim": "At its scheduled review of France on Friday 27 November 2026, S&P Global Ratings keeps France's long-term sovereign rating at A+ with a stable outlook.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:11:03Z",
+   "p": 0.59,
+   "searches": 5,
+   "sources": [
+    "https://www.spglobal.com/ratings/pt/regulatory/article/-/view/type/HTML/id/3293262",
+    "https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320",
+    "https://www.afd.fr/sites/default/files/2025-11/sp-global-21-oct-2025.pdf",
+    "https://www.aft.gouv.fr/en/frances-credit-ratings",
+    "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+    "https://www.aft.gouv.fr/en/frances-credit-ratings?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.aft.gouv.fr/fr/calendrier-notations-france",
+    "https://www.budget.gouv.fr/documentation/file-download/34336",
+    "https://www.scoperatings.com/announcements/rating-announcement/EN/181031?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://economynext.com/fitch-revises-frances-outlook-to-negative-affirms-at-a-288898/",
+    "https://assets.fitchratings.com/downloadFile?reportType=doddFrank&sfReport=false&slug=sovereigns%2Ffitch-affirms-france-at-a-outlook-stable-06-03-2026",
+    "https://www.lemonde.fr/en/economy/article/2026/10/24/moody-s-holds-france-s-credit-rating-steady-despite-budget-and-political-uncertainty_6762703_19.html",
+    "https://www.spglobal.com/ratings/en/regulatory/content/disclosures",
+    "https://ch.zonebourse.com/actualite-bourse/france-s-p-rend-son-verdict-vendredi-contexte-economique-degrade-ce7851dbde8bf526",
+    "https://www.afd.fr/sites/default/files/2026-11/investors-presentation-nov-2026.pdf",
+    "https://www.investing.com/news/stock-market-news/fitch-revises-frances-outlook-to-negative-on-worsening-debt-dynamics-4988846",
+    "https://sfil.fr/wp-content/uploads/2026/09/2026.09.25_Pressrelease_DBRS.pdf",
+    "https://assets.fitchratings.com/downloadFile?reportType=report&sfReport=false&slug=supranationals-subnationals-agencies%2Fsovereign-rating-review-calendar-2026-update-2q26-07-04-2026",
+    "https://dbrs.morningstar.com/research/489364/morningstar-dbrs-changes-trends-on-the-republic-of-france-to-negative-confirms-credit-ratings-at-aa",
+    "https://scoperatings-web-backend.scoperatings.com/api/document/912d63a8-e0ad-4c38-897a-0c0f29876917",
+    "https://www.morgen-capital.fr/actualites/note-france-moodys-23-octobre-2026",
+    "https://fr.wikipedia.org/wiki/Liste_des_pays_par_note_souveraine",
+    "https://en.wikipedia.org/wiki/List_of_countries_by_credit_rating",
+    "https://fr.wikipedia.org/wiki/Notation_financi%C3%A8re_de_la_France",
+    "https://www.youtube.com/watch?v=0ht8fWy5xgA"
+   ],
+   "reason": "**Base rate.** In five recent S&P decisions on France that I could verify, three left both the rating and outlook unchanged: November 2024, May 2025, and May 2026. S&P shifted the outlook to negative in February 2025 and cut the rating in October 2025. That 3-of-5 record is a rough starting point, not a complete count of scheduled review dates; it excludes dates on which S&P published nothing. ([spglobal.com](https://www.spglobal.com/ratings/pt/regulatory/article/-/view/type/HTML/id/3293262?utm_source=openai))\n\n**What moves this review.** Toward **NO**: Fitch made exactly the move that would defeat the claim on October 30, keeping France at A+ but shifting its outlook to negative. France’s economy contracted 0.1% in the third quarter, and the European Commission’s November 24 assessment put the 2027 deficit at 5.4% of GDP versus the government’s 5.0% target. The National Assembly’s first-reading rejection of the 2027 budget adds to the risk. ([zonebourse.com](https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320))\n\nToward **YES**: S&P’s October 2025 downgrade already reflected budget-consolidation risks, and it kept A+/stable in May 2026. Both houses passed the separate 2026 year-end budget bill on November 24. That does not settle the harder 2027 negotiations, but it gives S&P some reason to wait for those talks rather than revise the outlook now. ([afd.fr](https://www.afd.fr/sites/default/files/2025-11/sp-global-21-oct-2025.pdf?utm_source=openai))\n\n**Window.** I put the chance of no S&P publication on November 27 at about 8%: the date is scheduled and AFP reported on November 25 that a release was expected. I count silence as **YES** because the specific criterion expressly includes it, despite the final sentence’s more general wording. ([aft.gouv.fr](https://www.aft.gouv.fr/en/frances-credit-ratings?utm_source=openai))\n\nNEW FACTS\n- 2026-11-25 | AFP reported that S&P kept France at A+ with a stable outlook at its May review. | https://ch.zonebourse.com/actualite-bourse/france-s-p-rend-son-verdict-vendredi-contexte-economique-degrade-ce7851dbde8bf526\n- 2026-11-24 | Both houses of Parliament passed the 2026 year-end budget adjustment bill in identical terms. | https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html\n- 2026-11-24 | The National Assembly rejected the 2027 state budget bill at first reading. | https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html\n- 2026-10-30 | Fitch affirmed France at A+ and changed the outlook from stable to negative. | https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320\n- 2026-10-30 | INSEE’s initial estimate showed that French real GDP fell 0.1% in the third quarter after stalling in the second. | https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320\n\nCOUNTER  \nS&P does not need to conclude that France warrants another downgrade to resolve this NO: a negative outlook alone would do it. Fitch has already taken that step at A+, and weaker growth combined with an unresolved 2027 budget gives S&P a concrete reason to do the same on Friday. ([zonebourse.com](https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320))",
+   "facts": [
+    {
+     "date": "2026-11-25",
+     "fact": "AFP reported that S&P kept France at A+ with a stable outlook at its May review.",
+     "url": "https://ch.zonebourse.com/actualite-bourse/france-s-p-rend-son-verdict-vendredi-contexte-economique-degrade-ce7851dbde8bf526"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Both houses of Parliament passed the 2026 year-end budget adjustment bill in identical terms.",
+     "url": "https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "The National Assembly rejected the 2027 state budget bill at first reading.",
+     "url": "https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html"
+    },
+    {
+     "date": "2026-10-30",
+     "fact": "Fitch affirmed France at A+ and changed the outlook from stable to negative.",
+     "url": "https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320"
+    },
+    {
+     "date": "2026-10-30",
+     "fact": "INSEE’s initial estimate showed that French real GDP fell 0.1% in the third quarter after stalling in the second.",
+     "url": "https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320"
+    }
+   ],
+   "counter": "S&P does not need to conclude that France warrants another downgrade to resolve this NO: a negative outlook alone would do it. Fitch has already taken that step at A+, and weaker growth combined with an unresolved 2027 budget gives S&P a concrete reason to do the same on Friday. ([zonebourse.com](https://www.zonebourse.com/actualite-bourse/fitch-maintient-la-note-de-la-france-a-a-abaisse-sa-perspective-a-negative-ce785fd8d989f320))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:12:09Z",
+   "p": 0.4,
+   "searches": 6,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDTM_PhvMbF0EbO9DIN1w4sWPudPHTBlIOloLzgHg8XNtL6mrwhQOFWuCxWa9QVANQDZ4R1r4rYabp6ShRQ7nYXQHcG7Vxegaqw4TryvnVa0DdW_mVeaPEbPGk2uuZ8XOnAtI_xFaA",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJErOngNjbzpFo8MNqRZNZ68Kv4vDgJutNXgOF7YT0iCsS9F5dUweJu8Sgo0zf6pD_c1gdDEKdEsvRi2TbvMYdAs7X5WY0Ntp2qNYl-mOvVrp_43Z3hybg57jg2hpfPyUX8zNGoC9nHpUx0iPl_pfhW7IkwHMF1L3Z7zl7sqAD47_aNimPuBDzI1K_ou42iYGNAp__DMg6RCB0KCR2gi4dLKFnoN1fLODWvJVTt3IwAvmyOM9dsq4vkH3_-kE7GNEDmvSm5fzUsFGQLfWn7ZiECxonYK0-JonfKDsZPMKqJ3AS2PtHPI9Q6ebrJIx6MjVal2E=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQVndIQqT7JYVD7rjLVu4dWCMLW0egvXJyC_SOqYnM9uogq5XezubhQ9JCrIRiAYY5IAH57ptk-galoswOk3_QYiOOupLJcSQCNKUJRqa6ZrVNRQAzVdfsvIBsFTmXx25dEAA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC1zAl9rIxJ5eHKPd9NO3Lg_JnkO4fqEAn2sua8Za6Q9CaiFyP6PmHnifKvq300r8IGb7QGcf2xyASMAMQqjYr1Bl6h8ScfubhA-fbHGau-ZGptEUwXhI5DUu4ZXTxEabiQBeaT2PBw_wgE0fKNO8T2mroEs1cc3IxxggLTKGfnNfjkgcIWihFahko922ny81v3HPXARAseMfgG4pfLQNk2iOOM48Xrq0ffXadvWI40qQ=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuGW9cm0zFKUkM6a1AAZzhAGuysxzU9tm4lVsdF3q_W3r0rUmauYfiW_4YTkBUNNfhfYgw5w59cS3m5qWfc4lYKfKDTSvlhCHt0ip5eBvGTP_LeUbmv-ccvMvHD0uPz46Fe0sivMYurlrDf-DLDZAT2Y61j8Hj7nMLtGrETgsk8K4ZzDC02KI2InCw",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbBqKnJOeOeOM5jSGwzO17vL6RYd7a-Zz5MoHfhsc6uks0ua9nMaMpIRBktHcH3mM3Jf_eODI8Qyx9KcLMGiXQp1gt1zy7KiMZr0oXN1auWAEi_7XcdLjabIiEzMDJgw6ARRI8GvmUxPaKo58v7YrjWnjnOU1U5iOYP3WxVUW4AfrhLPuuUoXVC56q933TNfIGqvoW_QMV5v_xcD3o-0sErXEARJrybU2Sgg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVELOFwjhjgAYDhBaDQXaq9_zbQBw2wPbSMnguXoZCNWzE209Pn5Kopm1QEQGCjGQoaBh9e9qrLDqmW2MmlZoYdEzdtjfd_agJIMxalbiV4z3l1_U1VeEGIifYs52rypTYFLHlXiwJC03YvwVljlBg-9Jh8ViWAh1H3hm8FXQsKCzXS4Kft7DZtsA0XTQ3F2Y14wwGZrS-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEycahWCK-iILIgUIghmh2gJspQ_U2tq2VhzDDXpQsVXJr0km3sFEfRoEhCRi06zlD2m0f9eaIFKYiWwDh8KFZlLJ_fMiiRCpnXEH4nQw6YxmrXmqMgFhrk791XBVCe82I-n9vpdztxccDi7J3LpClK3-Hj-wxwlOIWiIiC0ajDL-i4AHx6Gooltg2I2KA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLnucFQFbebWz_Lh5nibisO9WZr8uuWwx5uGNONDCumQNZnT9vp3ynDO8YB6RUZMUj0-0aVqhJfQeS96H8ZJdOPHKaXMXR0-oGsZi4D2kMjWdreZLn6HhuuRKs-tmuJw1ZtKsz-CydW4seOENFOE1D6GcSluGGBjQIEl45rgi658ftWQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEitztqtLqfucpb1i-Rp-iqaneUQ9QIEDHmPfqZHmAnNi3qVzSrN4XK-64KHOAW98wBFMJD22FotQoIIFWU8yieYv_SmN9tWs5ztQ04wIblZOM2rC6H3yZjrL4_xOFyJ86Z6h-SeHW_FzPlr3uoWqqL3tOgJerDP6etETxi",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEP3q7dWxuziGm9v8zEriOkXK9521w9MGZXDQjxrvlR2HqSQeRLmUgQPkpmAXOKz0nmwA4R9iGsOnRdnqQ4WRGt4jY04cKVB3flCR73MY2vnDQcga4gTD855WWZS2OVat5UKMy-C9pATCNmsxH45LzkRhEWvdm7WIgMgsFlDCHZmFEnlqbt1ZVq2EBqUZdrD5pHLj9VnqG62s5Y",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYpjyZUFjOb5eyP15K2o_SWni1Ks9cBCUJq4Y8HzjfuZiI8gApxh2KOE0F93Pyd4zEmVQpnly4H87W_ZE-tGaEjppNZIpPGjy05eB8o469aIQVQTip0JTIy05t7tkYz1H-UqNMGARNvUlVMaVu6pW0X_ggxSj9rQW0ZD0PwKARznSztf3js6TEV4UfIBa0QKuMDdi25M9unNNgPziXsULXEdPREmYV_7c53s2xd_oM_ix7ngx2Hnq8AYujgn2f-jQOmGBHaE49ogoTRYogIojwh5Dbv4JqEmTtpgEHklBBFP8puxtF6ARD3Fcs1YccmoMMEzg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQQn6ieg2i0n51iSW2E0wEmjlSOd9Nw9GWyYQGUgNV_Yimtrt-MCGwMWf0NlCy4rfnUlboDQOFW03q8JxWJCJpayoAoPK7XwlBzLrUxMTzWANdMPZ2GB_qz7qPIzqWw0mFZm2uCGXwMDVTNhhVYLWrtjvXMLyUxVNEGaMxzUcZofNevPs=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfJPkH3SOs0AeW9F7NW33qtxDMIBKjwM7Z1vsobDMHQFaZw5I_SgGsrL7z4h9kvLBTrDweY99TL-a8HfSJ_bTpt9h2yprsL1QuwQd3Atx-x58GjjkqMxxxqkl6pty2Ckmnj7-xcDJ5pxeinEn60vTvHOGsaw7IbCBagmBmAd70AVp6bepq1A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE827fw0XlXXTRt7tVLnBriFqB06DCy1xF-krMxOowgLtr-DDKpwpTOLc1Nr-5xtPCsawqMOxyG_FfNQeuUx_zOxKV2jpMEmnYkyPbTgPboXV2yIX0F44pSm9s11Xa-y2hT14tQ4accL-peAu27Jfcl_LVQ4rH2Zl4kqg=="
+   ],
+   "reason": "revenue portion of the 2027 budget bill.\n* **Upward drivers (toward YES / holding A+ Stable):**\n  * **Wait-and-see posture while budget is in parliament:** On 23 October 2026, Moody’s (which rates France one notch higher at Aa3 with a negative outlook) abstained from taking a rating action, choosing to wait for clarity on whether a deficit-reducing 2027 budget passes. The 2027 budget bill only began its Senate floor examination on 20 November 2026, and President Macron proposed a multi-year constitutional fiscal rule earlier this week. S&P could similarly wait to see the final enacted 2027 budget before altering the outlook it affirmed on 29 May 2026.\n  * **Threshold already adjusted:** S&P already downgraded France from AA- to A+ (Stable) on 17 October 2025 explicitly anticipating weak political consensus ahead of the 2027 presidential election and debt rising to 121% of GDP by 2028.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nConsidering the sharp deterioration in growth, rising borrowing costs, and Fitch's identical move from A+/Stable to A+/Negative four weeks ago, an outlook revision to negative (resolving the claim NO) is slightly more likely than an affirmation of the stable outlook. However, this outcome could fail—meaning S&P leaves the rating and stable outlook unchanged (resolving YES)—if S&P's rating committee judges that France's current fiscal and political struggles remain within the baseline tolerances already baked into the October 2025 downgrade to A+, or if the committee prefers not to act mid-way through parliament's 2027 budget deliberations and waits until the spring 2027 review. (Under the criterion, if S&P simply publishes nothing on the scheduled date, the claim resolves YES.)\n\nNEW FACTS\n- 2025-10-17 | S&P Global Ratings lowered France's unsolicited long-term sovereign credit ratings to A+ from AA- with a stable outlook, forecasting general government debt to reach 121% of GDP in 2028. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfJPkH3SOs0AeW9F7NW33qtxDMIBKjwM7Z1vsobDMHQFaZw5I_SgGsrL7z4h9kvLBTrDweY99TL-a8HfSJ_bTpt9h2yprsL1QuwQd3Atx-x58GjjkqMxxxqkl6pty2Ckmnj7-xcDJ5pxeinEn60vTvHOGsaw7IbCBagmBmAd70AVp6bepq1A==\n- 2026-05-31 | French Finance Minister Roland Lescure stated that S&P Global Ratings had affirmed France's sovereign credit rating at A+ with a stable outlook at its May 2026 review. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQQn6ieg2i0n51iSW2E0wEmjlSOd9Nw9GWyYQGUgNV_Yimtrt-MCGwMWf0NlCy4rfnUlboDQOFW03q8JxWJCJpayoAoPK7XwlBzLrUxMTzWANdMPZ2GB_qz7qPIzqWw0mFZm2uCGXwMDVTNhhVYLWrtjvXMLyUxVNEGaMxzUcZofNevPs=\n- 2026-09-18 | Scope Ratings downgraded France's long-term sovereign ratings to A+ from AA- and revised the outlook to stable due to a sustained deterioration in the fiscal outlook and political fragmentation. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE827fw0XlXXTRt7tVLnBriFqB06DCy1xF-krMxOowgLtr-DDKpwpTOLc1Nr-5xtPCsawqMOxyG_FfNQeuUx_zOxKV2jpMEmnYkyPbTgPboXV2yIX0F44pSm9s11Xa-y2hT14tQ4accL-peAu27Jfcl_LVQ4rH2Zl4kqg==\n- 2026-10-23 | Moody's kept France's credit rating unchanged at Aa3 with a negative outlook, stating its baseline assumption is that a deficit-reducing budget for 2027 will eventually be adopted. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEP3q7dWxuziGm9v8zEriOkXK9521w9MGZXDQjxrvlR2HqSQeRLmUgQPkpmAXOKz0nmwA4R9iGsOnRdnqQ4WRGt4jY04cKVB3flCR73MY2vnDQcga4gTD855WWZS2OVat5UKMy-C9pATCNmsxH45LzkRhEWvdm7WIgMgsFlDCHZmFEnlqbt1ZVq2EBqUZdrD5pHLj9VnqG62s5Y\n- 2026-11-16 | On 4 November 2026, deputies in the French National Assembly rejected the revenue portion of the 2027 draft budget bill, sending the initial version to the Senate. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEitztqtLqfucpb1i-Rp-iqaneUQ9QIEDHmPfqZHmAnNi3qVzSrN4XK-64KHOAW98wBFMJD22FotQoIIFWU8yieYv_SmN9tWs5ztQ04wIblZOM2rC6H3yZjrL4_xOFyJ86Z6h-SeHW_FzPlr3uoWqqL3tOgJerDP6etETxi\n- 2026-11-23 | France's 10-year OAT yield exceeded 5% on 21 October 2026 for the first time since 2002, and on 30 October 2026 Fitch Ratings maintained France's A+ rating while lowering its outlook from stable to negative. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVELOFwjhjgAYDhBaDQXaq9_zbQBw2wPbSMnguXoZCNWzE209Pn5Kopm1QEQGCjGQoaBh9e9qrLDqmW2MmlZoYdEzdtjfd_agJIMxalbiV4z3l1_U1VeEGIifYs52rypTYFLHlXiwJC03YvwVljlBg-9Jh8ViWAh1H3hm8FXQsKCzXS4Kft7DZtsA0XTQ3F2Y14wwGZrS-\n- 2026-11-24 | On 23 November 2026, S&P Global reported that France's composite Purchasing Managers' Index fell to 46.2, while Finance Minister Roland Lescure warned that the 2027 growth target is at risk. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbBqKnJOeOeOM5jSGwzO17vL6RYd7a-Zz5MoHfhsc6uks0ua9nMaMpIRBktHcH3mM3Jf_eODI8Qyx9KcLMGiXQp1gt1zy7KiMZr0oXN1auWAEi_7XcdLjabIiEzMDJgw6ARRI8GvmUxPaKo58v7YrjWnjnOU1U5iOYP3WxVUW4AfrhLPuuUoXVC56q933TNfIGqvoW_QMV5v_xcD3o-0sErXEARJrybU2Sgg==\n- 2026-11-25 | Ahead of S&P's scheduled review on Friday 27 November 2026, French GDP contracted by 0.2% in Q1 2026, was flat in Q2, and fell by 0.1% in Q3, while the European Commission cut its 2026 growth forecast for France to 0.4%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC1zAl9rIxJ5eHKPd9NO3Lg_JnkO4fqEAn2sua8Za6Q9CaiFyP6PmHnifKvq300r8IGb7QGcf2xyASMAMQqjYr1Bl6h8ScfubhA-fbHGau-ZGptEUwXhI5DUu4ZXTxEabiQBeaT2PBw_wgE0fKNO8T2mroEs1cc3IxxggLTKGfnNfjkgcIWihFahko922ny81v3HPXARAseMfgG4pfLQNk2iOOM48Xrq0ffXadvWI40qQ=\n\nCOUNTER\nS&P Global Ratings already downgraded France to A+ in October 2025 specifically to account for weak political consensus ahead of the 2027 presidential election and general government debt rising to 121% of GDP by 2028. Because the 2027 budget is currently under debate in the Senate and has not yet been finalized or enacted, S&P may follow Moody's October 2026 example by abstaining from any rating or outlook change until the final budget outcome is known.",
+   "facts": [
+    {
+     "date": "2025-10-17",
+     "fact": "S&P Global Ratings lowered France's unsolicited long-term sovereign credit ratings to A+ from AA- with a stable outlook, forecasting general government debt to reach 121% of GDP in 2028.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfJPkH3SOs0AeW9F7NW33qtxDMIBKjwM7Z1vsobDMHQFaZw5I_SgGsrL7z4h9kvLBTrDweY99TL-a8HfSJ_bTpt9h2yprsL1QuwQd3Atx-x58GjjkqMxxxqkl6pty2Ckmnj7-xcDJ5pxeinEn60vTvHOGsaw7IbCBagmBmAd70AVp6bepq1A=="
+    },
+    {
+     "date": "2026-05-31",
+     "fact": "French Finance Minister Roland Lescure stated that S&P Global Ratings had affirmed France's sovereign credit rating at A+ with a stable outlook at its May 2026 review.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQQn6ieg2i0n51iSW2E0wEmjlSOd9Nw9GWyYQGUgNV_Yimtrt-MCGwMWf0NlCy4rfnUlboDQOFW03q8JxWJCJpayoAoPK7XwlBzLrUxMTzWANdMPZ2GB_qz7qPIzqWw0mFZm2uCGXwMDVTNhhVYLWrtjvXMLyUxVNEGaMxzUcZofNevPs="
+    },
+    {
+     "date": "2026-09-18",
+     "fact": "Scope Ratings downgraded France's long-term sovereign ratings to A+ from AA- and revised the outlook to stable due to a sustained deterioration in the fiscal outlook and political fragmentation.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE827fw0XlXXTRt7tVLnBriFqB06DCy1xF-krMxOowgLtr-DDKpwpTOLc1Nr-5xtPCsawqMOxyG_FfNQeuUx_zOxKV2jpMEmnYkyPbTgPboXV2yIX0F44pSm9s11Xa-y2hT14tQ4accL-peAu27Jfcl_LVQ4rH2Zl4kqg=="
+    },
+    {
+     "date": "2026-10-23",
+     "fact": "Moody's kept France's credit rating unchanged at Aa3 with a negative outlook, stating its baseline assumption is that a deficit-reducing budget for 2027 will eventually be adopted.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEP3q7dWxuziGm9v8zEriOkXK9521w9MGZXDQjxrvlR2HqSQeRLmUgQPkpmAXOKz0nmwA4R9iGsOnRdnqQ4WRGt4jY04cKVB3flCR73MY2vnDQcga4gTD855WWZS2OVat5UKMy-C9pATCNmsxH45LzkRhEWvdm7WIgMgsFlDCHZmFEnlqbt1ZVq2EBqUZdrD5pHLj9VnqG62s5Y"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "On 4 November 2026, deputies in the French National Assembly rejected the revenue portion of the 2027 draft budget bill, sending the initial version to the Senate.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEitztqtLqfucpb1i-Rp-iqaneUQ9QIEDHmPfqZHmAnNi3qVzSrN4XK-64KHOAW98wBFMJD22FotQoIIFWU8yieYv_SmN9tWs5ztQ04wIblZOM2rC6H3yZjrL4_xOFyJ86Z6h-SeHW_FzPlr3uoWqqL3tOgJerDP6etETxi"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "France's 10-year OAT yield exceeded 5% on 21 October 2026 for the first time since 2002, and on 30 October 2026 Fitch Ratings maintained France's A+ rating while lowering its outlook from stable to negative.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVELOFwjhjgAYDhBaDQXaq9_zbQBw2wPbSMnguXoZCNWzE209Pn5Kopm1QEQGCjGQoaBh9e9qrLDqmW2MmlZoYdEzdtjfd_agJIMxalbiV4z3l1_U1VeEGIifYs52rypTYFLHlXiwJC03YvwVljlBg-9Jh8ViWAh1H3hm8FXQsKCzXS4Kft7DZtsA0XTQ3F2Y14wwGZrS-"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "On 23 November 2026, S&P Global reported that France's composite Purchasing Managers' Index fell to 46.2, while Finance Minister Roland Lescure warned that the 2027 growth target is at risk.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbBqKnJOeOeOM5jSGwzO17vL6RYd7a-Zz5MoHfhsc6uks0ua9nMaMpIRBktHcH3mM3Jf_eODI8Qyx9KcLMGiXQp1gt1zy7KiMZr0oXN1auWAEi_7XcdLjabIiEzMDJgw6ARRI8GvmUxPaKo58v7YrjWnjnOU1U5iOYP3WxVUW4AfrhLPuuUoXVC56q933TNfIGqvoW_QMV5v_xcD3o-0sErXEARJrybU2Sgg=="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Ahead of S&P's scheduled review on Friday 27 November 2026, French GDP contracted by 0.2% in Q1 2026, was flat in Q2, and fell by 0.1% in Q3, while the European Commission cut its 2026 growth forecast for France to 0.4%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC1zAl9rIxJ5eHKPd9NO3Lg_JnkO4fqEAn2sua8Za6Q9CaiFyP6PmHnifKvq300r8IGb7QGcf2xyASMAMQqjYr1Bl6h8ScfubhA-fbHGau-ZGptEUwXhI5DUu4ZXTxEabiQBeaT2PBw_wgE0fKNO8T2mroEs1cc3IxxggLTKGfnNfjkgcIWihFahko922ny81v3HPXARAseMfgG4pfLQNk2iOOM48Xrq0ffXadvWI40qQ="
+    }
+   ],
+   "counter": "S&P Global Ratings already downgraded France to A+ in October 2025 specifically to account for weak political consensus ahead of the 2027 presidential election and general government debt rising to 121% of GDP by 2028. Because the 2027 budget is currently under debate in the Senate and has not yet been finalized or enacted, S&P may follow Moody's October 2026 example by abstaining from any rating or outlook change until the final budget outcome is known."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:13:18Z",
+   "p": 0.37,
+   "searches": 12,
+   "sources": [
+    "https://www.reuters.com/fr/economie/francepmi-contraction-plus-marque-que-prvu-du-secteur-priv-en-novembre-2026-11-23/",
+    "https://www.sudouest.fr/france/dette-vers-une-nouvelle-degradation-de-la-note-de-la-france-standard-and-poor-s-rend-son-verdict-vendredi-dans-un-climat-economique-degrade-31661831.php",
+    "https://www.lesechos.fr/economie-france/budget-fiscalite/dette-sp-maintient-la-note-souveraine-de-la-france-2234133",
+    "https://www.ideal-investisseur.fr/eco-politique/note-de-la-france-pourquoi-sp-devrait-temporiser-32542.html",
+    "https://www.reuters.com/world/europe/fitch-revises-frances-outlook-negative-worsening-debt-dynamics-2026-10-30/",
+    "https://www.lefigaro.fr/conjoncture/un-mois-apres-avoir-abaisse-la-note-francaise-s-p-maintient-la-note-de-la-france-a-a-20251128",
+    "https://investir.lesechos.fr/marches-indices/les-points-bourse/le-cac-40-reduit-ses-gains-apres-les-statistiques-americaines-la-perspective-dun-resserrement-monetaire-se-confirme-pour-la-fed-2264558",
+    "https://www.reuters.com/fr/actualites/fitch-maintient-la-note-de-la-france-abaisse-sa-perspective-ngative-2026-10-30/",
+    "https://www.moneyvox.fr/placement/actualites/111399/dette-de-la-france-sp-rend-sa-note-vendredi-dans-un-contexte-economique-degrade",
+    "https://fr.wikipedia.org/wiki/Notation_financi%C3%A8re_de_la_France",
+    "https://www.fibre2fashion.com/news/textile-news/s-p-global-lowers-france-s-ratings-to-a-a-1-outlook-stable-305961-newsdetails.htm",
+    "https://uk.finance.yahoo.com/news/p-cuts-france-credit-rating-052801336.html",
+    "https://www.bfmtv.com/economie/l-economie-francaise-n-en-finit-plus-de-ralentir-deja-bonnet-d-ane-de-la-zone-euro-la-france-s-enfonce-encore-plus-dans-le-ralentissement-et-risque-desormais-la-recession_AV-202611230364.html",
+    "https://cbonds.com/news/3946843/",
+    "https://x.com/C_Barraud/status/2124474772306149656",
+    "https://www.bloomberg.com/news/articles/2026-05-30/french-finance-minister-says-s-p-confirmed-a-credit-rating",
+    "https://disclosure.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/13431416",
+    "https://www.aft.gouv.fr/fr/calendrier-notations-france",
+    "https://echosplus.com/tag/sp-global-ratings/",
+    "https://x.com/ITCMarkets/status/2125468688325169580",
+    "https://www.dpa-international.com/economics/urn:newsml:dpa.com:20090101:261123-930-37262",
+    "https://www.reuters.com/world/europe/french-private-sector-downturn-deepens-six-month-low-pmi-shows-2026-11-23/",
+    "https://presse.economie.gouv.fr/notation-agence-sampp-reaction-de-roland-lescure-ministre-de-leconomie-des-finances-et-de-la-souverainete-industrielle-energetique-et-numerique/",
+    "https://www.linternaute.com/actualite/depeches/9323791-s-p-pourrait-actualiser-la-note-francaise-vendredi-ou-pas/",
+    "https://www.aft.gouv.fr/en/frances-credit-ratings"
+   ],
+   "reason": "The unconditional base rate for a scheduled S&P sovereign review is that the agency affirms the existing rating and outlook, or publishes no formal action, in most cases. That rate falls when growth, fiscal and political indicators have clearly worsened since the prior review and a peer agency has already moved.\n\nDated developments since S&P’s 29 May 2026 affirmation of A+/stable point toward action. French output contracted in the first and third quarters of 2026 and is flirting with technical recession; the European Commission and IMF have cut 2026–27 growth forecasts sharply; November flash PMIs deepened the contraction and S&P Global itself flagged higher recession odds. On 30 October 2026 Fitch, citing precisely this deterioration plus higher borrowing costs, a wider deficit and political fragmentation, revised its outlook on the same A+ rating to negative. Contemporary reporting quotes economists calling a stable-to-negative outlook shift the most logical outcome for Friday’s review, while treating an outright downgrade as less likely.\n\nThe main offset is that the 2027 budget is still under parliamentary discussion, with the government seeking a compromise around a 5% deficit. Some economists therefore argue the fiscal picture remains more uncertain than decisively negative, giving S&P cover to wait rather than revise the outlook on the scheduled date.\n\nCOUNTER\nThe 2027 budget negotiations remain open and the government is still publicly targeting a 5% deficit, so S&P can reasonably treat the fiscal path as unresolved rather than already tilted enough to justify an outlook change. Agencies have previously declined to move France’s rating or outlook while a budget process was incomplete, and an affirmation (or silence) on Friday would be consistent with that pattern even after Fitch’s move.\n\n\n\nNEW FACTS\n- 2026-11-22 | Agence France Trésor lists France’s S&P rating as A+ with a stable outlook, last set on 29 May 2026, with the next scheduled date 27 November 2026. | https://www.aft.gouv.fr/en/frances-credit-ratings\n- 2026-10-30 | Fitch revised France’s outlook to negative from stable while affirming A+, citing weaker growth, higher borrowing costs, a wider deficit and political fragmentation since its prior review. | https://www.reuters.com/world/europe/fitch-revises-frances-outlook-negative-worsening-debt-dynamics-2026-10-30/\n- 2026-11-23 | France’s flash composite PMI fell to 46.2 and S&P Global said the reading raised the odds of a technical recession in the fourth quarter. | https://www.reuters.com/world/europe/french-private-sector-downturn-deepens-six-month-low-pmi-shows-2026-11-23/\n- 2026-11-25 | French GDP fell 0.2% in Q1 2026, was flat in Q2 and fell 0.1% in Q3, while reporting quoted economists calling a shift to a negative outlook the most logical S&P outcome and maintenance still possible. | https://www.boursorama.com/actualite-economique/actualites/dette-l-agence-s-p-tranche-sur-la-note-de-la-france-vendredi-dans-un-contexte-economique-degrade-e70e5c7b8861489f0f184df28e7d45c6\n- 2026-05-29 | The French finance ministry stated that S&P had maintained France’s rating at A+ with a stable outlook. | https://presse.economie.gouv.fr/notation-agence-sampp-reaction-de-roland-lescure-ministre-de-leconomie-des-finances-et-de-la-souverainete-industrielle-energetique-et-numerique/",
+   "facts": [
+    {
+     "date": "2026-11-22",
+     "fact": "Agence France Trésor lists France’s S&P rating as A+ with a stable outlook, last set on 29 May 2026, with the next scheduled date 27 November 2026.",
+     "url": "https://www.aft.gouv.fr/en/frances-credit-ratings"
+    },
+    {
+     "date": "2026-10-30",
+     "fact": "Fitch revised France’s outlook to negative from stable while affirming A+, citing weaker growth, higher borrowing costs, a wider deficit and political fragmentation since its prior review.",
+     "url": "https://www.reuters.com/world/europe/fitch-revises-frances-outlook-negative-worsening-debt-dynamics-2026-10-30/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "France’s flash composite PMI fell to 46.2 and S&P Global said the reading raised the odds of a technical recession in the fourth quarter.",
+     "url": "https://www.reuters.com/world/europe/french-private-sector-downturn-deepens-six-month-low-pmi-shows-2026-11-23/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "French GDP fell 0.2% in Q1 2026, was flat in Q2 and fell 0.1% in Q3, while reporting quoted economists calling a shift to a negative outlook the most logical S&P outcome and maintenance still possible.",
+     "url": "https://www.boursorama.com/actualite-economique/actualites/dette-l-agence-s-p-tranche-sur-la-note-de-la-france-vendredi-dans-un-contexte-economique-degrade-e70e5c7b8861489f0f184df28e7d45c6"
+    },
+    {
+     "date": "2026-05-29",
+     "fact": "The French finance ministry stated that S&P had maintained France’s rating at A+ with a stable outlook.",
+     "url": "https://presse.economie.gouv.fr/notation-agence-sampp-reaction-de-roland-lescure-ministre-de-leconomie-des-finances-et-de-la-souverainete-industrielle-energetique-et-numerique/"
+    }
+   ],
+   "counter": "The 2027 budget negotiations remain open and the government is still publicly targeting a 5% deficit, so S&P can reasonably treat the fiscal path as unresolved rather than already tilted enough to justify an outlook change. Agencies have previously declined to move France’s rating or outlook while a budget process was incomplete, and an affirmation (or silence) on Friday would be consistent with that pattern even after Fitch’s move.\n\n\n\nNEW FACTS\n- 2026-11-22 | Agence France Trésor lists France’s S&P rating as A+ with a stable outlook, last set on 29 May 2026, with the next scheduled date 27 November 2026. | https://www.aft.gouv.fr/en/frances-credit-ratings\n- 2026-10-30 | Fitch revised France’s outlook to negative from stable while affirming A+, citing weaker growth, higher borrowing costs, a wider deficit and political fragmentation since its prior review. | https://www.reuters.com/world"
+  }
+ ]
+}

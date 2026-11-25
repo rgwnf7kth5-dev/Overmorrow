@@ -1,0 +1,187 @@
+{
+ "claim": "In the official results of New Zealand's 7 November 2026 general election, which the Electoral Commission declares on Friday 27 November, National, ACT and NZ First together hold more than half of all seats in the House of Representatives.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:15:44Z",
+   "p": 0.44,
+   "searches": 5,
+   "sources": [
+    "https://elections.nz/assets/2023-General-Election/Report-on-the-2023-General-Election.pdf",
+    "https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results",
+    "https://elections.nz/media-and-news/2026/progress-on-official-count",
+    "https://elections.nz/media-and-news/2026/key-dates-for-2026-general-election",
+    "https://electionresults.govt.nz/",
+    "https://dr.electionresults.govt.nz/electionresults_2026_preliminary/index.html",
+    "https://elections.nz/guidance-and-rules/candidate-hub/key-information-and-dates",
+    "https://elections.nz/guidance-and-rules/for-starting-a-political-party/key-dates",
+    "https://www.cambridgenews.nz/wp-content/uploads/2026/11/EC-media-release-2026-General-Election-preliminary-results-081126.pdf",
+    "https://elections.nz/media-and-news/2026/official-count-underway",
+    "https://www.electionresults.govt.nz/electionresults_2026_preliminary/advance-votes.html",
+    "https://elections.nz/assets/2026-Media-Kit-/2026-General-Election-media-kit.pdf",
+    "https://www.gobeyond.nz/election/live",
+    "https://thisquality.com/election26/",
+    "https://electionresults.govt.nz/electionresults_2026_preliminary/electorate-status.html",
+    "https://www.dpmc.govt.nz/sites/default/files/2026-11/co-26-7-government-decision-making-caretaker-government.pdf",
+    "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+    "https://en.wikipedia.org/wiki/Results_of_the_2026_New_Zealand_general_election",
+    "https://www.youtube.com/watch?v=irMgYQ_a-eY",
+    "https://www.youtube.com/watch?v=AtYcBUeVNSI",
+    "https://www.reddit.com/r/KiwiPolitics/comments/1xpyzaz/live_coverage_chat_election_night_2026/",
+    "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election",
+    "https://en.wikipedia.org/wiki/Party_lists_in_the_2026_New_Zealand_general_election",
+    "https://www.reddit.com/r/newzealand/comments/1xr2ktw/comparison_of_polls_versus_preliminary_election/",
+    "https://www.reddit.com/r/newzealand/comments/1xq1ger/our_coverage_of_election_results_feels_really/"
+   ],
+   "reason": "**Base rate.** The Electoral Commission declared official results 20 days after election day in both 2020 and 2023, the same interval scheduled for 2026. The 2023 count is a useful seat benchmark: National lost two seats from its preliminary tally, but National, ACT and NZ First still held a majority. That shows how much the official count can move seats, not how often a lead as narrow as this one survives. ([elections.nz](https://elections.nz/assets/2023-General-Election/Report-on-the-2023-General-Election.pdf?utm_source=openai))\n\n**What moves this forecast.**\n- **Toward YES:** The November 7 preliminary count puts the three parties at **67 of 131 seats**, one above the 66 needed. National has no list seats in that allocation, so if it loses one electorate and nothing else changes, the bloc still has a majority at **66 of 130**. ([elections.nz](https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results))\n- **Toward NO:** The Commission estimated about **399,365 special votes**, roughly 14% of the estimated total, were outside the preliminary count. On November 25, 1News reported that National’s preliminary leads were just **139 votes in Wairarapa** and **456 in Hamilton East**. One National electorate loss combined with one ACT or NZ First list seat shifting to a party outside the bloc would turn 67 of 131 into **65 of 130**, which is a tie and resolves NO. ([elections.nz](https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results))\n- **Toward YES on timing:** On November 18, the Commission said the ordinary-vote recount was complete and the November 27 release was on track. I put the chance of no declaration that day at about **1%**. A judicial recount requested after declaration does not affect this forecast. ([elections.nz](https://elections.nz/media-and-news/2026/progress-on-official-count))\n\nThe seat allocation, not the release date, drives my forecast. The combination of a vulnerable electorate and a possible list-seat shift makes **NO slightly more likely**.\n\nNEW FACTS\n- 2026-11-07 | The Electoral Commission’s preliminary allocation gave National 42 seats, ACT 13 and NZ First 12. | https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results\n- 2026-11-07 | The Electoral Commission estimated that 399,365 special votes were not included in the preliminary count. | https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results\n- 2026-11-18 | The Electoral Commission reported that ordinary votes had been counted a second time and that the official release remained on track for November 27. | https://elections.nz/media-and-news/2026/progress-on-official-count\n- 2026-11-25 | 1News reported that National’s preliminary leads were 139 votes in Wairarapa and 456 in Hamilton East. | https://tvnz-1-news-prod.cdn.arcpublishing.com/2026/11/25/close-election-races-hold-key-to-govt-but-waiting-game-may-still-go-on/\n\nCOUNTER  \nThe bloc starts with enough of a cushion to survive either one National electorate loss or one list seat moving outside the bloc, provided nothing else changes. A Green win over Te Pāti Māori in Te Tai Tokerau could also remove an opposition overhang seat, making the majority easier to retain. ([elections.nz](https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results))",
+   "facts": [
+    {
+     "date": "2026-11-07",
+     "fact": "The Electoral Commission’s preliminary allocation gave National 42 seats, ACT 13 and NZ First 12.",
+     "url": "https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results"
+    },
+    {
+     "date": "2026-11-07",
+     "fact": "The Electoral Commission estimated that 399,365 special votes were not included in the preliminary count.",
+     "url": "https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The Electoral Commission reported that ordinary votes had been counted a second time and that the official release remained on track for November 27.",
+     "url": "https://elections.nz/media-and-news/2026/progress-on-official-count"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "1News reported that National’s preliminary leads were 139 votes in Wairarapa and 456 in Hamilton East.",
+     "url": "https://tvnz-1-news-prod.cdn.arcpublishing.com/2026/11/25/close-election-races-hold-key-to-govt-but-waiting-game-may-still-go-on/"
+    }
+   ],
+   "counter": "The bloc starts with enough of a cushion to survive either one National electorate loss or one list seat moving outside the bloc, provided nothing else changes. A Green win over Te Pāti Māori in Te Tai Tokerau could also remove an opposition overhang seat, making the majority easier to retain. ([elections.nz](https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:16:37Z",
+   "p": 0.54,
+   "searches": 6,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPaFSU_8hl-J4bVQMR-FxcGlT1U4cc1PN29nNxJkcA5T7OHdHrp2TNr8z14ZHeCCh3vGiGHv1zSpMf2IkbNNsjLh6JxmZAoA1l2JisfCCdqK-ISZ5U0hWDqiQ05oyfPlP3DAfK0zB7H7LpqtBUHiyL7E7mYet9zqx2A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGo2jT3lAWeFFcIujz9dHVBdk6GG11s9oCRg8qUrPtL624LcovieXLnlCRNDC7mNxba5qWhEdsTe6bpB8G_zhzzZS3kfkxfLB7vlz8mjYnF",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgjjT1A9pF8FwFaLtM6bxqh2wNitrWC_EFJumDpzJDE0ON5pXXj5ji64Wz7I2RHLTI5J5iYP0GcvIsyhEVz0QEaHkG66TVl0LnTLu3ByeXWQBq7Im_xTwExR9H4Qn2rgjU7vmydGKd8RNTlx6dpzrhYAqhYg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHM9tc3nXQjWQZqHsYwN9K9q_BrsBg25MV8ItQH6T3AN1OaWsSnLRWOp_qrIlvGiM2u3v_Vtwk63cv6le-EeK9baBWhWLvJugDSmnsM279ZnwMgCElovtLsk-8D8RulZg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1bOlVSf0k4jZZDH5zvcz_iXNf2KTje2WENe9ZA4c5CYQRU0s0tat1vPD7QRwDlEwc5YEjH8l-DiUmoOtqlqkUratSj3EGAKhXR6SFPG3P0ntVQm3Z5Tsj660ujHtpTo4kwfBqp8BTlBPITAi23NPoL6DD0Iv37T5vt6X-VMYHu6ulfA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDvjIKaZ_Bfx-aj9Go_71-d2qrF9-xcFpMoIYq3TpcAr2j8V6ZwSr8dQPb92IQ1vwikFP_YNCTiVM31N4-fiBjP-4rIM6pd-557pzmwRF3v_XQrXtDe5KkpRicAOuIURWWYLe9Ri9HXyqIlKSRUkWByc6gNNP4vEiXfc5PwOJMy5ZfUGnzmfk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE25bACJqUxhE1v7Pi4M8oAF_qcgnpR2PMoNjFSTVjyE_2Dps8wREvWiGbjVeAW1RApeMbvJcOKZTmrcUDHRYJru1j0uitCOXIKafFKIMypSKkT",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTs632xibCKFYpryYWZobEvFFwynvfR9QHT5ZBEIZTBNvsGktuos-hic44WRJzsrkXrJjlgvrjwiFQ8xbkCvc2M37vD1MxlfEPEw3h_JOpncn7549sd9vZJeTwJmAVp1CibK9eXw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNGrZRr-8l3yZBam5A7PMA9X7aHp5hoXRqlXb9Nv82yaLLqA4PSV9fbikYO-QOzIhngwX7WQGOx0xXP8c19MrW7V9AglETH0R1lSQV3jZirDH5eMWnZkVWnYYBHr4_6FTCGNx6zarGPOv3-6aDM7lNWyXx1nNkIRTee4n_jVTb7zvDT_3Va-uzwpQs6ojj2fNPh5J0",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGad8wvENAnSvWRKjCfufw76396F6hVnjRvZ0K-gZoj0yPd9bKCQ_hYSGOGLwNiLn5vmMR0i_mz0gWJVLXk30UO466dCIa3SRLwx-JUNz9I2_4cJiAsv1w=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZDUf7RmwOqgFwbOHw19EYw_Pbre9V7YX3ZbqjkoMcsjNRMTu4kyNsXyjwMVoCFrw7Swp9RMgGNqH_fO_3HLjg9pfW1cN7FvoZgvm9u0raz3N_wV8EvK5k9Fe_ibGDPg0a29-zZRDGw9WsWIVJZZ6Ad4-VUAJYoyc8",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRFpZGpyBud6tC6hq9_KEct7NGNhyAUenIdppJ512qM1qdlcbUXt9A0lKaN8IWehNPXS6tB_DcL6Dp2LCyTvVNfbz1PzN3nsdNvx5qj1pSAYori90t30mb9rKRL3twuNQRoHopBoeiBvecB5b5DlKsGmMCy2hJ8Mg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1ElLyzsDhjzpMRZbssO0bMJYGOejdXz4cyxzT6ACQyY0nXvcZ4r5viVmWQl9GaAG-WpIorlklqHmu24UgnaCuplRlhnUjoQZ_jk9dku1KHrl2-nJoXPO5ypyXaSpc6Y-OHoPnvGBi49kYJVbLhWK9nmRYIFkXztl9mzmyGvPlQb8e-KyrkrGiaZPUrkj1MXTBt8ITPS5Nr9LmeHAWBPdD-aan"
+   ],
+   "reason": " by 139 votes), Mt Roskill (where Labour leads National by 262 votes), and Hamilton East (where National leads Labour by 456 votes). Because every National electorate seat above 35 is an overhang seat, if National loses Wairarapa (or Hamilton East) on special votes, both the right bloc's seat total and the total size of Parliament decrease by 1 (moving from 67/131 to 66/130, which still exceeds half of 130). For the coalition to drop to half or fewer of all seats (e.g., 65/130 or 65/131), the coalition must suffer at least *two* net setbacks—such as losing Wairarapa *and* losing a list seat from ACT/NZ First (yielding 65 of 130, an exact tie), or losing both Wairarapa and Hamilton East * plus* a list seat (64 of 129). Conversely, in Te Tai Tokerau, Te Pāti Māori leads the Green Party by 492 votes; if the Greens flip that seat, Te Pāti Māori's overhang shrinks by 1 without adding to the left bloc's total, reducing the House size by 1 and making a right-bloc majority easier to hold.\n* **On-Time Declaration Confirmation (Direction: Toward YES):** On 18 November 2026, Chief Electoral Officer Karl Le Quesne confirmed that the second count of ordinary votes and roll scrutiny had been completed and that the Electoral Commission remains on track to release the official results as planned on Friday, 27 November 2026.\n\n### (3) Strongest Reason the Obvious Outcome Might Fail\nWhile the coalition starts ahead at 67 of 131 seats and is insulated from National's party-vote drop by National's overhang, it has virtually no margin for error against a combined party-vote and electorate shift. Specifically, if the ~399,365 special votes heavily favor the Green Party and Opportunity Party—enough to strip 1 list seat from either ACT or NZ First—the coalition falls to 66 of 131 seats. From there, losing just one ultra-marginal electorate (such as Wairarapa, where National's buffer is only 139 votes) reduces the coalition to 65 of 130 seats, which is exactly 50.0% and resolves the claim as NO. (If ACT and NZ First were to lose 2 list seats combined on a massive special-vote swing, the coalition would drop to 65 of 131 even while holding every electorate.) Weighing the Sainte-Laguë quotients and the smaller special-vote share against the historical left lean of special votes, the coalition retains a slight edge (~54%) to hold strictly more than half the House.\n\nNEW FACTS\n- 2026-11-07 | The Electoral Commission reported that preliminary results are based on 2,432,403 ordinary votes, with approximately 399,365 special votes (including 96,947 overseas and dictation votes) yet to be counted before official results on 27 November. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDvjIKaZ_Bfx-aj9Go_71-d2qrF9-xcFpMoIYq3TpcAr2j8V6ZwSr8dQPb92IQ1vwikFP_YNCTiVM31N4-fiBjP-4rIM6pd-557pzmwRF3v_XQrXtDe5KkpRicAOuIURWWYLe9Ri9HXyqIlKSRUkWByc6gNNP4vEiXfc5PwOJMy5ZfUGnzmfk=\n- 2026-11-08 | On the preliminary count, National is projected to win 42 electorate seats (29.21% party vote), ACT 13 seats (10.92%), and NZ First 12 seats (9.78%), giving the three parties 67 seats out of an overhang-enlarged 131-seat Parliament. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPaFSU_8hl-J4bVQMR-FxcGlT1U4cc1PN29nNxJkcA5T7OHdHrp2TNr8z14ZHeCCh3vGiGHv1zSpMf2IkbNNsjLh6JxmZAoA1l2JisfCCdqK-ISZ5U0hWDqiQ05oyfPlP3DAfK0zB7H7LpqtBUHiyL7E7mYet9zqx2A==\n- 2026-11-08 | On the preliminary count, Labour won 36 seats (29.36% party vote), the Green Party won 16 seats (13.30%), the Opportunity Party won 7 seats (5.96%), and Te Pāti Māori won 5 electorate seats (0.57%). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPaFSU_8hl-J4bVQMR-FxcGlT1U4cc1PN29nNxJkcA5T7OHdHrp2TNr8z14ZHeCCh3vGiGHv1zSpMf2IkbNNsjLh6JxmZAoA1l2JisfCCdqK-ISZ5U0hWDqiQ05oyfPlP3DAfK0zB7H7LpqtBUHiyL7E7mYet9zqx2A==\n- 2026-11-08 | In the preliminary electorate counts, National's Mike Butterick leads Labour's Kieran McAnulty by 139 votes in Wairarapa, National's Ryan Hamilton leads by 456 votes in Hamilton East, and Labour's Michael Wood leads National's Carlos Cheung by 262 votes in Mt Roskill. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNGrZRr-8l3yZBam5A7PMA9X7aHp5hoXRqlXb9Nv82yaLLqA4PSV9fbikYO-QOzIhngwX7WQGOx0xXP8c19MrW7V9AglETH0R1lSQV3jZirDH5eMWnZkVWnYYBHr4_6FTCGNx6zarGPOv3-6aDM7lNWyXx1nNkIRTee4n_jVTb7zvDT_3Va-uzwpQs6ojj2fNPh5J0\n- 2026-11-09 | Westpac IQ noted that the approximately 400,000 special votes historically reduce the centre-right bloc's party vote share by 1.6 to 1.7 percentage points and could flip up to two marginal National electorates. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1ElLyzsDhjzpMRZbssO0bMJYGOejdXz4cyxzT6ACQyY0nXvcZ4r5viVmWQl9GaAG-WpIorlklqHmu24UgnaCuplRlhnUjoQZ_jk9dku1KHrl2-nJoXPO5ypyXaSpc6Y-OHoPnvGBi49kYJVbLhWK9nmRYIFkXztl9mzmyGvPlQb8e-KyrkrGiaZPUrkj1MXTBt8ITPS5Nr9LmeHAWBPdD-aan\n- 2026-11-18 | Chief Electoral Officer Karl Le Quesne announced that ordinary votes had been counted a second time, electoral rolls had been scanned, and the Electoral Commission remained on track to release official results on Friday, 27 November 2026. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRFpZGpyBud6tC6hq9_KEct7NGNhyAUenIdppJ512qM1qdlcbUXt9A0lKaN8IWehNPXS6tB_DcL6Dp2LCyTvVNfbz1PzN3nsdNvx5qj1pSAYori90t30mb9rKRL3twuNQRoHopBoeiBvecB5b5DlKsGmMCy2hJ8Mg=\n\nCOUNTER\nSpecial votes in New Zealand elections consistently skew toward the Green Party, Labour, and smaller progressive parties at the expense of ACT and NZ First, which could easily transfer at least one list seat from the governing coalition to the opposition or the Opportunity Party. If the coalition loses just one list seat on the party vote and National also loses its razor-thin 139-vote lead in Wairarapa (or its 456-vote lead in Hamilton East), National's overhang will shrink by one and leave National, ACT, and NZ First with exactly 65 of 130 seats—half the House rather than a majority.",
+   "facts": [
+    {
+     "date": "2026-11-07",
+     "fact": "The Electoral Commission reported that preliminary results are based on 2,432,403 ordinary votes, with approximately 399,365 special votes (including 96,947 overseas and dictation votes) yet to be counted before official results on 27 November.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDvjIKaZ_Bfx-aj9Go_71-d2qrF9-xcFpMoIYq3TpcAr2j8V6ZwSr8dQPb92IQ1vwikFP_YNCTiVM31N4-fiBjP-4rIM6pd-557pzmwRF3v_XQrXtDe5KkpRicAOuIURWWYLe9Ri9HXyqIlKSRUkWByc6gNNP4vEiXfc5PwOJMy5ZfUGnzmfk="
+    },
+    {
+     "date": "2026-11-08",
+     "fact": "On the preliminary count, National is projected to win 42 electorate seats (29.21% party vote), ACT 13 seats (10.92%), and NZ First 12 seats (9.78%), giving the three parties 67 seats out of an overhang-enlarged 131-seat Parliament.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPaFSU_8hl-J4bVQMR-FxcGlT1U4cc1PN29nNxJkcA5T7OHdHrp2TNr8z14ZHeCCh3vGiGHv1zSpMf2IkbNNsjLh6JxmZAoA1l2JisfCCdqK-ISZ5U0hWDqiQ05oyfPlP3DAfK0zB7H7LpqtBUHiyL7E7mYet9zqx2A=="
+    },
+    {
+     "date": "2026-11-08",
+     "fact": "On the preliminary count, Labour won 36 seats (29.36% party vote), the Green Party won 16 seats (13.30%), the Opportunity Party won 7 seats (5.96%), and Te Pāti Māori won 5 electorate seats (0.57%).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjPaFSU_8hl-J4bVQMR-FxcGlT1U4cc1PN29nNxJkcA5T7OHdHrp2TNr8z14ZHeCCh3vGiGHv1zSpMf2IkbNNsjLh6JxmZAoA1l2JisfCCdqK-ISZ5U0hWDqiQ05oyfPlP3DAfK0zB7H7LpqtBUHiyL7E7mYet9zqx2A=="
+    },
+    {
+     "date": "2026-11-08",
+     "fact": "In the preliminary electorate counts, National's Mike Butterick leads Labour's Kieran McAnulty by 139 votes in Wairarapa, National's Ryan Hamilton leads by 456 votes in Hamilton East, and Labour's Michael Wood leads National's Carlos Cheung by 262 votes in Mt Roskill.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNGrZRr-8l3yZBam5A7PMA9X7aHp5hoXRqlXb9Nv82yaLLqA4PSV9fbikYO-QOzIhngwX7WQGOx0xXP8c19MrW7V9AglETH0R1lSQV3jZirDH5eMWnZkVWnYYBHr4_6FTCGNx6zarGPOv3-6aDM7lNWyXx1nNkIRTee4n_jVTb7zvDT_3Va-uzwpQs6ojj2fNPh5J0"
+    },
+    {
+     "date": "2026-11-09",
+     "fact": "Westpac IQ noted that the approximately 400,000 special votes historically reduce the centre-right bloc's party vote share by 1.6 to 1.7 percentage points and could flip up to two marginal National electorates.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1ElLyzsDhjzpMRZbssO0bMJYGOejdXz4cyxzT6ACQyY0nXvcZ4r5viVmWQl9GaAG-WpIorlklqHmu24UgnaCuplRlhnUjoQZ_jk9dku1KHrl2-nJoXPO5ypyXaSpc6Y-OHoPnvGBi49kYJVbLhWK9nmRYIFkXztl9mzmyGvPlQb8e-KyrkrGiaZPUrkj1MXTBt8ITPS5Nr9LmeHAWBPdD-aan"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Chief Electoral Officer Karl Le Quesne announced that ordinary votes had been counted a second time, electoral rolls had been scanned, and the Electoral Commission remained on track to release official results on Friday, 27 November 2026.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRFpZGpyBud6tC6hq9_KEct7NGNhyAUenIdppJ512qM1qdlcbUXt9A0lKaN8IWehNPXS6tB_DcL6Dp2LCyTvVNfbz1PzN3nsdNvx5qj1pSAYori90t30mb9rKRL3twuNQRoHopBoeiBvecB5b5DlKsGmMCy2hJ8Mg="
+    }
+   ],
+   "counter": "Special votes in New Zealand elections consistently skew toward the Green Party, Labour, and smaller progressive parties at the expense of ACT and NZ First, which could easily transfer at least one list seat from the governing coalition to the opposition or the Opportunity Party. If the coalition loses just one list seat on the party vote and National also loses its razor-thin 139-vote lead in Wairarapa (or its 456-vote lead in Hamilton East), National's overhang will shrink by one and leave National, ACT, and NZ First with exactly 65 of 130 seats—half the House rather than a majority."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:17:50Z",
+   "p": 0.46,
+   "searches": 17,
+   "sources": [
+    "https://esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-27",
+    "https://www.youtube.com/watch?v=PS0jXjB1OU8",
+    "https://www.electionhq.nz/",
+    "https://realitycheck.radio/shifting-positions/",
+    "https://goodoil.news/the-real-losers-wont-be-on-the-ballot/",
+    "https://realitycheck.radio/the-specials-could-sink-luxons-majority-they-probably-wont/",
+    "https://www.rnz.co.nz/news/politics_election-2026/2420113/too-close-to-call-wait-begins-for-special-votes-after-cliffhanger-election-night",
+    "https://www.youtube.com/watch?v=XHRGj7OiWRQ",
+    "https://results.eci.gov.in/ResultAcByeOct2026/hi/RoundwiseS2235.htm?ac=35",
+    "https://www.youtube.com/watch?v=7rmf2F5ZJgE",
+    "https://www.news.com.au/finance/culture/inside-parliament/richard-marles-says-ben-carroll-is-doing-a-good-job-7-times-but-uphill-battle-looms/news-story/fdd5e1403aafe6049f04df844a0632af",
+    "https://sundayworld.co.za/politics/elections-nearly-half-of-approved-special-voters-fail-to-cast-ballots/",
+    "https://www.nzelection.co.nz/blog/nz-election-2026-results",
+    "https://realitycheck.radio/the-2026-general-election-result/",
+    "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election",
+    "https://www.nzherald.co.nz/nz/election-2023-interactive-final-results-published-here-at-2pm/MIUCGONH5RFBHIMVFXW343ODAY/",
+    "https://breakingviewsnz.blogspot.com/2026/11/rodney-hide-specials.html",
+    "https://election2026.nz/full-right-overhang/",
+    "https://x.com/_breadcapital/status/2115703451850342906",
+    "https://www.brashandmitchell.com/post/rodney-hide-labour-s-route-to-power-is-all-uphill",
+    "https://elections.nz/guidance-and-rules/for-starting-a-political-party/key-dates",
+    "https://www.nzelection.co.nz/blog/electionresults-govt-nz-guide",
+    "https://www.nzelection.co.nz/blog/what-time-election-results-nz",
+    "https://www.rnz.co.nz/news/politics_election-2026/2426521/election-uncertainty-what-happens-now",
+    "https://www.google.com/url?opi=89978449&q=CAEShQEBxCJF13JNpq1jeh63XzizHp00PjZDoZ917wpoPp3UHKI-HyszNgYGR2JhKfpjCRAGYAOYjekydvwPVmEZY2iYslb4f1b6djbUOtx02y9QYzZQYYxC5fZHOfes4jtZ2qVzXG9y4qdMu8H2IyF7dG_DIyWY9ccsOLymb_VqvZJv402v5UYO&sa=U&uoh=3&ved=2ahUKEwjx9p2ttfSXAxU84ckDHUg1AokQFnoECAkQAg&usg=AOvVaw2n_cCxA6yzdBWHBF4IMSRp"
+   ],
+   "reason": "The preliminary count already places National, ACT and NZ First on 67 of 131 seats, one above the line for a strict majority. Comparable recent cases point the other way: special votes cost National two seats in each of 2017, 2020 and 2023, and in 2023 they erased the centre-right’s election-night one-seat majority. Two features of 2026 pull away from that base rate. Special votes are a smaller share of the total than in 2023, and the earlier enrolment cutoff is expected to disallow roughly 55,000 specials from people who were not enrolled—about five times the 2023 figure—removing a group that has historically leaned left. National also holds only electorate seats, so a drop in its party vote enlarges the overhang and the House rather than automatically cutting its MPs. Those factors make a full historical leftward shift less likely, and the Commission remains on schedule to declare on 27 November.\n\nEven so, the arithmetic is fragile. NZ First sits near the last list seat in most published simulations, and electorates such as Wairarapa (National by 139 on the night) are close enough that a flip both removes a coalition seat and can shrink Parliament. The common modelled landing spots are therefore 66 of 132 or 65 of 130—exactly half or below—rather than a clear retention of more than half.\n\nNEW FACTS\n- 2026-11-08 | With 100% of ordinary votes counted, the Electoral Commission’s preliminary allocation was National 42, ACT 13, NZ First 12 in a 131-seat House. | https://www.electionresults.govt.nz/electionresults_2026_preliminary/\n- 2026-11-08 | The Commission estimated 399,365 special votes still to be included in the official count. | https://www.rnz.co.nz/news/election-2026-results\n- 2026-11-18 | Chief Electoral Officer Karl Le Quesne said the official count was on track for release on Friday 27 November. | https://www.times.co.nz/homepage-top-section/counting-of-special-votes-on-track/\n- 2026-11-25 | 1News reported the Commission expects about 55,000 special votes to be disallowed because the voter was not enrolled, five times the 2023 number. | https://www.1news.co.nz/2026/11/26/its-time-four-election-scenarios-that-could-play-out-tomorrow/\n- 2026-01-21 | The Electoral Commission’s published timetable sets official results for 27 November 2026. | https://elections.nz/media-and-news/2026/key-dates-for-2026-general-election\n- 2026-11-23 | A seat-level simulation using 2017–2023 special-vote patterns and an enrolment adjustment gave the three parties a strict majority in 44% of draws. | https://ariedotcodotnz.github.io/nz-poll-of-polls/specials.html\n\nCOUNTER\nThe enrolment change and smaller special-vote pool may not mute the left lean enough. NZ First is only narrowly entitled to its 12th seat, Greens and Opportunity have historically gained in the specials, and a single electorate flip against National both cuts a coalition MP and can drop the House to an even number. In that region of the simulations the three parties finish on exactly half the seats or one short, which the criterion counts as NO.",
+   "facts": [
+    {
+     "date": "2026-11-08",
+     "fact": "With 100% of ordinary votes counted, the Electoral Commission’s preliminary allocation was National 42, ACT 13, NZ First 12 in a 131-seat House.",
+     "url": "https://www.electionresults.govt.nz/electionresults_2026_preliminary/"
+    },
+    {
+     "date": "2026-11-08",
+     "fact": "The Commission estimated 399,365 special votes still to be included in the official count.",
+     "url": "https://www.rnz.co.nz/news/election-2026-results"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Chief Electoral Officer Karl Le Quesne said the official count was on track for release on Friday 27 November.",
+     "url": "https://www.times.co.nz/homepage-top-section/counting-of-special-votes-on-track/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "1News reported the Commission expects about 55,000 special votes to be disallowed because the voter was not enrolled, five times the 2023 number.",
+     "url": "https://www.1news.co.nz/2026/11/26/its-time-four-election-scenarios-that-could-play-out-tomorrow/"
+    },
+    {
+     "date": "2026-01-21",
+     "fact": "The Electoral Commission’s published timetable sets official results for 27 November 2026.",
+     "url": "https://elections.nz/media-and-news/2026/key-dates-for-2026-general-election"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "A seat-level simulation using 2017–2023 special-vote patterns and an enrolment adjustment gave the three parties a strict majority in 44% of draws.",
+     "url": "https://ariedotcodotnz.github.io/nz-poll-of-polls/specials.html"
+    }
+   ],
+   "counter": "The enrolment change and smaller special-vote pool may not mute the left lean enough. NZ First is only narrowly entitled to its 12th seat, Greens and Opportunity have historically gained in the specials, and a single electorate flip against National both cuts a coalition MP and can drop the House to an even number. In that region of the simulations the three parties finish on exactly half the seats or one short, which the criterion counts as NO."
+  }
+ ]
+}

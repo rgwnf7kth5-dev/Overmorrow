@@ -439,6 +439,50 @@
             "disagreement": {
               "cause": "inputs",
               "note": "The outsider (no dossier) did not have the ambassadors' note that the end-of-2026 deadline is the consensus nor the unanimity requirement; it was given the union of facts, numbers removed, and re-estimated once (first figure in its rounds). The others kept their figures."
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:55Z",
+                  "p_blind": 0.22,
+                  "p": 0.22,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:14:15Z",
+                  "p": 0.43,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/eu-summit-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:15:15Z",
+                  "p": 0.52,
+                  "searches": 12,
+                  "sources": 13,
+                  "trace": "data/dossiers/2026-11-28/eu-summit-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:16:03Z",
+                  "p": 0.28,
+                  "searches": 12,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/eu-summit-28.research.json"
+                }
+              ]
             }
           },
           "watch": {
@@ -642,7 +686,22 @@
                 "https://www.blesk.cz/clanek/zpravy-politika/853234/poslanci-se-v-tydnu-vrati-ke-spornemu-snizeni-podpor-i-mimoradne-dani-na-rafinerie.html"
               ]
             },
-            "watch": null
+            "watch": null,
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:35Z",
+                  "p_blind": 0.81,
+                  "p": 0.76,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           },
           "watch": {
             "id": "cz-refinery-tax-passed",
@@ -743,7 +802,7 @@
                   "signals"
                 ],
                 "p_if": 0.7,
-                "p_if_not": 0.0,
+                "p_if_not": 0,
                 "reason": "Needs the passage itself plus >=90 yes; contested final votes this term had a coalition median of exactly 90 (print 210 passed with 90 on 25 Nov), but a fixed 09:00 flagship vote should draw slightly above-median turnout (slot vote 98, print 48 97). Cannot happen without passage.",
                 "rounds": [
                   {
@@ -798,7 +857,7 @@
                   "dossier"
                 ],
                 "p_if": 0.67,
-                "p_if_not": 0.0,
+                "p_if_not": 0,
                 "reason": "If the bill passes, the yes count follows a binomial on 108 coalition seats at 0.84-0.85 turnout: contested passage votes have a median of 90 yes, the passage votes on 25 Nov had 97 and 90, and a 09:00 flagship slot helps turnout. If it does not pass there are no 90 yes votes, so this claim cannot be YES.",
                 "rounds": [
                   {
@@ -840,7 +899,7 @@
             "missing": [],
             "depends_geo": {
               "p_if": 0.664,
-              "p_if_not": 0.0
+              "p_if_not": 0
             },
             "combined": 0.475,
             "combination": {
@@ -850,7 +909,22 @@
             "calibrated": null,
             "p": 0.47,
             "note": "Secondary: the size of the yes vote.",
-            "depends_note": "p_if_not is 0 by construction (the claim cannot come true if the bill does not pass on Friday); the forecasters' 0.03 floors are recorded but not used."
+            "depends_note": "p_if_not is 0 by construction (the claim cannot come true if the bill does not pass on Friday); the forecasters' 0.03 floors are recorded but not used.",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:55Z",
+                  "p_blind": 0.45,
+                  "p": 0.51,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           },
           "depends": {
             "on": "cz-refinery-pass-28",
@@ -1057,7 +1131,22 @@
             },
             "calibrated": null,
             "p": 0.53,
-            "note": "Secondary: the second item of the same Friday block."
+            "note": "Secondary: the second item of the same Friday block.",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:47Z",
+                  "p_blind": 0.68,
+                  "p": 0.68,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           },
           "depends": {
             "on": "cz-refinery-pass-28",
@@ -1112,7 +1201,7 @@
               "source": "base-rate forecaster (fc-base-rate-B-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
                 "class": "own Friday claims for this bill",
-                "rate": 0.0,
+                "rate": 0,
                 "n": 1
               }
             },
@@ -1264,7 +1353,22 @@
             },
             "calibrated": null,
             "p": 0.43,
-            "note": "Secondary: the third item of the same Friday block."
+            "note": "Secondary: the third item of the same Friday block.",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:43Z",
+                  "p_blind": 0.58,
+                  "p": 0.57,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           },
           "depends": {
             "on": "cz-refinery-pass-28",
@@ -1319,7 +1423,7 @@
               "source": "base-rate forecaster (fc-base-rate-B-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
                 "class": "other-sponsor bills passed when voted (simple majority)",
-                "rate": 1.0,
+                "rate": 1,
                 "n": 10
               }
             },
@@ -1471,7 +1575,22 @@
             },
             "calibrated": null,
             "p": 0.09,
-            "note": "Secondary: the fourth item; needs 120 of all 200 deputies."
+            "note": "Secondary: the fourth item; needs 120 of all 200 deputies.",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:08:56Z",
+                  "p_blind": 0.12,
+                  "p": 0.18,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           },
           "depends": {
             "on": "cz-refinery-pass-28",
@@ -1555,7 +1674,7 @@
               "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
                 "class": "this coalition's budget roll calls reaching 316",
-                "rate": 1.0,
+                "rate": 1,
                 "n": 5
               }
             },
@@ -1684,6 +1803,50 @@
                 "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
                 "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
                 "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html"
+              ]
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:13Z",
+                  "p_blind": 0.58,
+                  "p": 0.65,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:10:23Z",
+                  "p": 0.91,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/de-budget-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:10:56Z",
+                  "p": 0.65,
+                  "searches": 13,
+                  "sources": 12,
+                  "trace": "data/dossiers/2026-11-28/de-budget-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:11:23Z",
+                  "p": 0.71,
+                  "searches": 16,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/de-budget-28.research.json"
+                }
               ]
             }
           }
@@ -1882,7 +2045,7 @@
             "agents_mean": {
               "q10": 86.8,
               "q50": 140.2,
-              "q90": 324.0
+              "q90": 324
             },
             "consensus": {
               "value": 140,
@@ -1898,7 +2061,7 @@
           "quantiles": {
             "q10": 86.8,
             "q50": 140.2,
-            "q90": 324.0
+            "q90": 324
           },
           "scale": 33
         },
@@ -1961,7 +2124,22 @@
             "agents": [],
             "missing": [],
             "dossier": "data/dossiers/2026-11-28/ua-drones-28.md",
-            "signals": "data/dossiers/2026-11-28/ua-drones-28.signals.md"
+            "signals": "data/dossiers/2026-11-28/ua-drones-28.signals.md",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:18Z",
+                  "p_blind": 0.4,
+                  "p": 0.42,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           }
         }
       ]
@@ -2152,6 +2330,50 @@
                 "https://shipandbunker.com/news",
                 "https://www.iranintl.com/en",
                 "https://thisisbeirut.com.lb/news/politics/tanker-struck-by-unknown-projectile-near-omans-khasab-fire-reported-onboard"
+              ]
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:19Z",
+                  "p_blind": 0.56,
+                  "p": 0.55,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:12:05Z",
+                  "p": 0.62,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/gulf-ukmto-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:12:48Z",
+                  "p": 0.55,
+                  "searches": 6,
+                  "sources": 10,
+                  "trace": "data/dossiers/2026-11-28/gulf-ukmto-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:13:34Z",
+                  "p": 0.64,
+                  "searches": 19,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/gulf-ukmto-28.research.json"
+                }
               ]
             }
           }
@@ -2354,7 +2576,51 @@
                 "https://allnews.ch/content/news/dette-de-la-france-mansu%C3%A9tude-attendue-de-sp"
               ]
             },
-            "market_note": "Polymarket \"Moody's or S&P downgrades France by November 30, 2026?\" at 0.07 (read 2026-11-25T17:50Z, volume $9.1k, liquidity $938) matches only part of the question (downgrades only, includes Moody's, ignores outlook changes), so it is not used as the claim's market."
+            "market_note": "Polymarket \"Moody's or S&P downgrades France by November 30, 2026?\" at 0.07 (read 2026-11-25T17:50Z, volume $9.1k, liquidity $938) matches only part of the question (downgrades only, includes Moody's, ignores outlook changes), so it is not used as the claim's market.",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:51Z",
+                  "p_blind": 0.62,
+                  "p": 0.67,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:11:03Z",
+                  "p": 0.59,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/fr-sp-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:12:09Z",
+                  "p": 0.4,
+                  "searches": 6,
+                  "sources": 15,
+                  "trace": "data/dossiers/2026-11-28/fr-sp-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:13:18Z",
+                  "p": 0.37,
+                  "searches": 12,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/fr-sp-28.research.json"
+                }
+              ]
+            }
           },
           "open_question_note": "The claim is phrased on the likelier side; a negative action (downgrade or negative outlook) is the open risk the story will report if it comes."
         }
@@ -2432,7 +2698,7 @@
               "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
                 "class": "Rheinmetall 2026: two annual guidance cuts while keeping the 2030 ambition",
-                "rate": 0.0,
+                "rate": 0,
                 "n": 1
               }
             },
@@ -2544,6 +2810,50 @@
               "p_held": 0.995,
               "p_if_held": 0.586,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:33Z",
+                  "p_blind": 0.65,
+                  "p": 0.68,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:13:26Z",
+                  "p": 0.8,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/rheinmetall-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:14:14Z",
+                  "p": 0.78,
+                  "searches": 6,
+                  "sources": 11,
+                  "trace": "data/dossiers/2026-11-28/rheinmetall-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:14:57Z",
+                  "p": 0.58,
+                  "searches": 12,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/rheinmetall-28.research.json"
+                }
+              ]
             }
           }
         }
@@ -2627,7 +2937,7 @@
               "source": "base-rate forecaster (fc-base-rate-A-final.json); classes from the dossier and pipeline/reference-data/",
               "hint": {
                 "class": "2017/2020/2023: National lost two seats on specials",
-                "rate": 1.0,
+                "rate": 1,
                 "n": 3
               }
             },
@@ -2739,6 +3049,50 @@
               "p_held": 0.975,
               "p_if_held": 0.595,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:34Z",
+                  "p_blind": 0.68,
+                  "p": 0.7,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-25T19:15:44Z",
+                  "p": 0.44,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/nz-results-28.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:16:37Z",
+                  "p": 0.54,
+                  "searches": 6,
+                  "sources": 13,
+                  "trace": "data/dossiers/2026-11-28/nz-results-28.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-25T19:17:50Z",
+                  "p": 0.46,
+                  "searches": 17,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-28/nz-results-28.research.json"
+                }
+              ]
             }
           }
         }
@@ -2922,7 +3276,7 @@
                   "reference-data",
                   "signals"
                 ],
-                "q10": 3.0,
+                "q10": 3,
                 "q50": 3.4,
                 "q90": 3.8,
                 "reason": "Consensus 3.5 (scale 0.19, signals) after October's 3.4; I shade 0.1 below because Brent fell over 20% in November (about $91 on 25 Nov), which should pull fuel prices down."
@@ -3151,6 +3505,21 @@
             "disagreement": {
               "cause": "inputs",
               "note": "The outsider (no dossier) did not know that Bárta's 2025 win ended Ztracený's four-year run and was called a surprise; given the union of facts, numbers removed, it re-estimated once (first figure in its rounds)."
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-25T19:09:46Z",
+                  "p_blind": 0.52,
+                  "p": 0.52,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3323,7 +3692,7 @@
                   "reference-data"
                 ],
                 "blind": {
-                  "q10": 4.0,
+                  "q10": 4,
                   "q50": 4.5,
                   "q90": 4.95
                 },
@@ -3830,5 +4199,36 @@
       "why": "merged into fr-rating (claim phrased on the status quo; a downgrade or negative outlook resolves NO)",
       "topic": "economy"
     }
-  ]
+  ],
+  "external_run": {
+    "at": "2026-11-25T19:22:48Z",
+    "providers": [
+      "openai gpt-6.2-sol",
+      "google gemini-4-argon",
+      "xai grok-4.7"
+    ],
+    "binary_claims": 13,
+    "forecasts": 13,
+    "contested": [
+      "de-budget-28",
+      "fr-sp-28",
+      "gulf-ukmto-28",
+      "rheinmetall-28",
+      "eu-summit-28",
+      "nz-results-28"
+    ],
+    "research": 18,
+    "wording_flags": [
+      {
+        "claim": "ua-drones-150-28",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-28/ua-drones-150-28.wording.json"
+      }
+    ],
+    "failed": []
+  }
 }

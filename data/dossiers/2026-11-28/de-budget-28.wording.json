@@ -1,0 +1,32 @@
+{
+ "claim": "In the final roll-call vote on Friday 27 November 2026, the Bundestag passes the 2027 federal budget (Haushaltsgesetz 2027) with at least 316 yes votes, an absolute majority of its 630 members.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:48Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Bundestag must pass the Haushaltsgesetz 2027 (Drucksachen 21/7300 and 21/7302) in a final third-reading roll-call vote within the stated Europe/Berlin window on 27 November 2026, with at least 316 yes votes.",
+   "decided_by": "The result announced in the chamber, as documented by the Bundestag's official roll-call page, Textarchiv, or Plenarprotokoll, or reported that day by dpa, ZDF, tagesschau, or Reuters. Later correctio"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:18:54Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Bundestag holds the final (third-reading) roll-call vote on the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302) on Friday, 27 November 2026 (Europe/Berlin), and at least 316 members vote yes according to the result announced in the chamber.",
+   "decided_by": "The official result announced in the Bundestag chamber, as recorded on bundestag.de (roll-call page or Textarchiv), in the Plenarprotokoll, or reported that day by dpa, ZDF, tagesschau, or Reuters."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:39Z",
+   "ambiguous": true,
+   "scenario": "Same-day listed sources disagree on the yes count around the threshold—for example dpa or tagesschau reports 316 while Reuters or the bundestag.de/chamber figure shows 315—and one reader treats any listed source as enough for YES while the other treats the chamber announcement or official result as controlling and resolves NO.",
+   "yes_requires": "On Friday 27 November 2026 (Europe/Berlin), the Bundestag holds the final third-reading roll-call vote (namentliche Schlussabstimmung) on the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302) and at least 316 members vote yes.",
+   "decided_by": "The result announced in the chamber, as shown by the official result on bundestag.de (roll-call page or Textarchiv), the Plenarprotokoll, or same-day reporting by dpa, ZDF, tagesschau, or Reuters; lat"
+  }
+ ]
+}

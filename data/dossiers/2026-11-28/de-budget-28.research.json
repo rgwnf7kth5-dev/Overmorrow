@@ -1,0 +1,191 @@
+{
+ "claim": "In the final roll-call vote on Friday 27 November 2026, the Bundestag passes the 2027 federal budget (Haushaltsgesetz 2027) with at least 316 yes votes, an absolute majority of its 630 members.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:10:23Z",
+   "p": 0.91,
+   "searches": 4,
+   "sources": [
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=961",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-zweite-lesung-1232354",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1047",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-bundespraesident-bundestag-bundesrat-1232304",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-einbringung-1194744",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw46-pa-haushalt-1231890?trk=article-ssr-frontend-pulse_x-social-details_comments-action_comment-text",
+    "https://dserver.bundestag.de/btd/21/093/2109301.pdf",
+    "https://dserver.bundestag.de/btd/21/090/2109063.pdf",
+    "https://dserver.bundestag.de/btd/21/048/2104850.pdf",
+    "https://www.bundestag.de/dokumente/protokolle/vorlaeufig/vorlaeufig-196520",
+    "https://www.bundestag.de/?id=tt96427",
+    "https://www.bundestag.de/services/rss/506604-506604",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt/",
+    "https://www.bundestag.de/?h=184906365",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt",
+    "https://www.bundestag.de/dokumente/textarchiv/2025/kw48-de-haushaltsgesetz-2026-zweite-lesung-1126156",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=980",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=898",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=980",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=912",
+    "https://www.bundestag.de/resource/blob/1127818/amtpr21045.pdf",
+    "https://www.bundestag.de/dokumente/textarchiv/2024/kw05-de-haushaltsgesetz-2024-dritte-lesung-977666",
+    "https://dserver.bundestag.de/btp/21/21045.pdf",
+    "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=897"
+   ],
+   "reason": "**Base rate.** Both previous final budget roll calls in the current Bundestag cleared 316: the 2025 budget received 324 yes votes on September 18, 2025, and the 2026 budget received 322 on November 28, 2025. That is a 2-for-2 record under the same coalition, but both margins were in single digits. ([bundestag.de](https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=961))\n\n**What moves this forecast.** The Bundestag still lists the final vote for Friday, November 27, after the third-reading debate, and its procedural calendar specifies a roll call. On November 24, Tagesschau reported that the final budget deliberations had begun, with Finance Minister Lars Klingbeil defending the package. On November 25, the Budget Committee advanced the late electricity-tax compromise. Those developments favor an on-time vote. The November 25 Chancellery budget roll call is more informative about the threshold: 317 voted yes, including 316 of the coalition’s 328 MPs and one independent. That shows enough support, but less of a cushion than either previous final budget vote. I expect stronger turnout for the final vote than for a single departmental budget. ([bundestag.de](https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766?utm_source=openai))\n\n**Main risk.** I put the chance that no qualifying final roll call takes place on November 27 at about 1%. The larger risk is that the bill passes on schedule but gets only a simple majority: if Wednesday’s 317 yes votes were the starting point, a net loss of just two would resolve the claim NO. ([bundestag.de](https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-zweite-lesung-1232354))\n\nNEW FACTS\n- 2026-11-25 | The Chancellery budget received 317 yes votes, of which 316 came from CDU/CSU and SPD MPs. | https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1047\n- 2026-11-25 | The Budget Committee advanced an amendment reducing the electricity tax to the EU minimum for 2027. | https://www.bundestag.de/presse/hib/kurzmeldungen-1238142\n- 2026-11-24 | Finance Minister Lars Klingbeil defended the budget’s record spending at the opening of final deliberations. | https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html\n- 2026-08-20 | The Bundestag’s budget calendar scheduled the third-reading roll call for November 27, 2026. | https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766\n- 2025-11-28 | The 2026 federal budget received 322 yes votes in the final roll call. | https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=980\n- 2025-09-18 | The 2025 federal budget received 324 yes votes in the final roll call. | https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=961\n\nCOUNTER  \nWednesday’s 317 yes votes included an independent, so the coalition itself had no votes to spare at the 316 threshold. Friday’s final vote could draw stronger turnout, but two net losses from Wednesday’s tally would be enough for the budget to pass and the claim still to resolve NO. ([bundestag.de](https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1047))",
+   "facts": [
+    {
+     "date": "2026-11-25",
+     "fact": "The Chancellery budget received 317 yes votes, of which 316 came from CDU/CSU and SPD MPs.",
+     "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1047"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Budget Committee advanced an amendment reducing the electricity tax to the EU minimum for 2027.",
+     "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1238142"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Finance Minister Lars Klingbeil defended the budget’s record spending at the opening of final deliberations.",
+     "url": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "The Bundestag’s budget calendar scheduled the third-reading roll call for November 27, 2026.",
+     "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766"
+    },
+    {
+     "date": "2025-11-28",
+     "fact": "The 2026 federal budget received 322 yes votes in the final roll call.",
+     "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=980"
+    },
+    {
+     "date": "2025-09-18",
+     "fact": "The 2025 federal budget received 324 yes votes in the final roll call.",
+     "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=961"
+    }
+   ],
+   "counter": "Wednesday’s 317 yes votes included an independent, so the coalition itself had no votes to spare at the 316 threshold. Friday’s final vote could draw stronger turnout, but two net losses from Wednesday’s tally would be enough for the budget to pass and the claim still to resolve NO. ([bundestag.de](https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=1047))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:10:56Z",
+   "p": 0.65,
+   "searches": 13,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_Tb4xr8umviqczAn40UY2ZJo0FExQdkprDdSeF6403vdDIQg5ABiT6drN_Ijc99dC78iR8gpgoKY_IdCpbXNXqcrxs7FVq85mHeWkxitN5nW1BzHaxtv07pGIaEEHy8Z06FPARVIUCvAU",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3TS0ZRG2FeM2DIEJBoF0n3dBCGUJ0v5LejrE9j-TIguuwK7AvZ-CUbuRoR7tXKpWtifNaYMJbi_UBz7RamltKFIlOo1zyRxpFobcbWymwhOl-dY2w693zJH91EV2Uc2bUR8F1oa3XaTEGqQurIFTO8j_7xGXk35OApVhr_2OQ_Ilhd_rvv8hAow3AbAb0hX37re16bObqDCww0a8JQg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkTpgHf_fcGeCTPh82xGXiSGlyYSDTrCrQ9N3voX5rRtRz3TDb1lefNI5du_NZWrHvmn6fBDWcTBq4buVh95dZkmKEyDx6u3j_nKU2jdSRs3GqxwaDaZy5_KGGEMUhCgeQDaEQ4DX94FEtbIZ5FdeRWPPAmIsD5n94twEuBA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEd9eoOjQK_4oM-FMVlEOAzf9SlD_bqXWQ97Q-h3h7i5-TDdxt0BUun0ispaY8KBQ0lkha08rF0MKzGqh9x-0UcTYrFGJQNATPvrO0Rc9fXSTeJOCMOEAkkdyELvJ4B9WloPOQsVgEwd1KIbcR8cFnun14CvG9paM0OXZ8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI8eas3edkIeR2KqqjSu4VXD_oFmgWdWwa59gjyaekWJgysr-9pDjRBhKOZ4ac0MAnBdrMxHnYI_Ishy1GtK5Hq0aE9UdnZDlH-mXDb8nYKG9MqWkALFDXQVcvQ8S5rlZ23Qe3I3AKr3NwVcewmY-n7eKQ0Gl-rYRUzuU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEl4ZFl31gdLYMv3bWTM0yFTKvrjau5LuBSeHUdAdmnC7aYjh1B4jDr7FggUgCAwXK2sjSFNdu6QH6nxWOWoj9xCkFtq-QxtixPLgz6al-fg8sfbYUqIvO29NEWJXdoKPLz8JRzecXDaj78EvHBlvstATaYVidEIkQF6zSD",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwV2Z9Mgj-uthK9tTUp38sMXlTTQW73KOkamGvZFMT_YDbXcikH2RYJm-Ou94Q5Nr_u_1bT9ubS8jtpZwA8j09BOYTw_wM-E7aP9QJ1OUAlannL360Nm-kvdjTYFE-_dZg6nZpf3CLGISY5aija4f2YmEC9asRo-Dj13Jk",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGznLI0V4E59AWe25hwvNJxo9LlEMVCTR2FQXZOk1VDc5kHeqDniLLgIcjKWwGRdElF3ZWqFMBuSH6sEJLCfperrEd1N8aJ6Ax-DNvZ_cV3be_LmdvlT9j7Rolrza4QDoe2t4fnTT7Pv06TxYmXkfMGYFmAPC4dnEUFPow2k8mt1Wpt1QIMIaQ0w3YRixJTKYVS8eof7urkxCBp",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYo00T7UONJ2juRukAReX1ZlB6cCG9d6VJYMlpQ-FZ3EPcSpdiHK_IFdSqvDyMVVcuEPyzB3WzZaxU3Sroi-QFxFMpGvueTG3x0PHjI7jV5S9pdhr7yruvkpEDt8UuqBN7diGdkvr0g7PcsHmaFe7PkDgw5rliPLzqUlPUsLwSYfU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlaMyw7JaEhD6SE4L4noBmpADLJucVNuZA6Zg3G80iy3qfcnGXoOaroZwMqAu9Ofw1AGVHDJvGZ6KO4QmpZS0QZj3TWGYLZ4oL-F7no9jskBniEN7WFYTN3pKfuaTq5tjnO_Avc7IJo3K_GYKavmixwMZQkdSAkwVsefB6cGf9Mw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbwwHphQxGHEQGFHq1MLxWe9GvJ78qq_tkI-jffrEqWx8wNKT81oYSXH9BvcKpb-1qFkvaGho9UG8_vuOxwag_TGBDtCPOkfmTwDj2x-6MYWpEYgcnlqfV_CbsBCKVBGFvSx_uI9mrWyEJsoCTwjsYfZDVWP3mbqCC9nVR0zxVz0PyUyaOttI8_dY-QPqRFruVvFK_UySYSVjSm4rSN7v_Oel3hUepf8UoKo7GJ9vlYQgr1gLCg4yOjspAfsMRPKMW3v5XR8wKr1iRZLkpyKSfwqlgg_tfyL79VSn5iImP51lRCI6W6g==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBalIydHDwVnCnSfKdtT_mIqlZ2gAuhWLFwqh-sDno__RIk2GUyFxz5BJthseolXadXrWAjWY_FWa8CoussWD3Bl-2gd7chiKOqbLirI20l0-RfryJN_zzfCZ4AWVSWzXQeo7Gr3ogG2IRjjxrF_b-iNesgU76f-uaSRwJWYUzj-7wdsuXbhM="
+   ],
+   "reason": "ers).\n- **Haushalt 2027 – Einzelplan 04 (25 Nov 2026):** 317 Yes (204 CDU/CSU, 112 SPD, 1 fraktionslos; 12 coalition absences, 0 dissenters).\n\nIn 5 out of 5 comparable budget roll-call votes in this legislative term (100%), the coalition achieved at least 316 yes votes and suffered zero dissenting votes (\"No\" or \"Abstain\") from within its ranks. However, because the coalition's cushion above 316 is relatively slim (12–13 seats) and Friday attendance can occasionally dip on routine bills, a reasonable empirical prior for reaching ≥316 yes votes on a final Friday budget vote in this parliament is around **75%**.\n\n### 2. Dated Facts Moving This Case\n- **Schedule confirmed (+ towards YES):** According to official Bundestag announcements (updated through 25 November 2026), the final third-reading roll-call vote (*namentliche Schlussabstimmung*) on the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302) is firmly scheduled for Friday, 27 November 2026, starting with the live broadcast at 12:40 CET after a 90-minute debate. The Budget Committee completed its *Bereinigungssitzung* on 13 November 2026, and the final supplementary recommendation for Einzelplan 60 (Drucksache 21/9301) was published on 25 November 2026, removing procedural obstacles to holding the vote on Friday.\n- **Unanimous coalition discipline on 25 November 2026 (+ towards YES):** In today's roll-call vote on the Chancellery budget (Einzelplan 04 of the 2027 budget), 204 CDU/CSU members, 112 SPD members, and 1 non-attached member voted Yes, with **0 No votes and 0 abstentions** among coalition MPs. Despite political debates over electricity tax adjustments and social spending, no coalition faction members defected.\n- **Narrowed attendance buffer (- towards NO):** Today's Einzelplan 04 vote yielded **317 Yes votes**—just 1 vote above the 316 threshold—because 12 coalition MPs (4 CDU/CSU, 8 SPD) did not vote. In November 2025, the Friday final vote on the 2026 budget had 2 fewer Yes votes than the preceding Wednesday vote on Einzelplan 04 (dropping from 324 on Wednesday to 322 on Friday). If a similar 2-vote Wednesday-to-Friday attendance drop occurs this week from a baseline of 317, the Yes count would land at 315. Conversely, coalition whips (*Parlamentarische Geschäftsführer*) are acutely aware after today's 317-vote tally that the margin is razor-thin and will enforce strict presence for Friday's final vote.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile the 2027 budget is virtually certain to pass on Friday, 27 November 2026 (as passage only requires a simple majority of votes cast, and the opposition counted only 267 No votes today), the specific requirement of **at least 316 yes votes** is vulnerable to ordinary absences. In today's bellwether roll-call vote on the Chancellery budget, 12 coalition MPs were absent (4 CDU/CSU, 8 SPD), leaving the government with 317 yes votes—a buffer of just one single vote. Because Friday plenary sessions often see slightly higher absence rates due to illness or travel, if just two more coalition MPs are absent on Friday than on Wednesday, the budget will pass comfortably with 314 or 315 yes votes against ~260 no votes, causing the claim to resolve NO.\n\n Weighing the 100% historical success rate in budget votes during the 21st Bundestag and the certainty that party whips will mobilize every available MP after today's close 317-vote count against the concrete risk that ~14 coalition MPs could be absent on a Friday afternoon (likely due to seasonal illness in late November), I estimate the probability at **0.65**.\n\nNEW FACTS\n- 2026-11-13 | The Bundestag Budget Committee approved the amended 2027 federal budget (totaling 560.92 billion euros in expenditures) with the votes of the coalition factions CDU/CSU and SPD against the opposition. | https://www.bundestag.de/dokumente/textarchiv/2026/kw46-pa-haushalt-bereinigungssitzung-1231892\n- 2026-11-18 | The Federal Constitutional Court unanimously rejected the BSW election complaint as inadmissible, confirming the seat distribution of the 21st Bundestag in which CDU/CSU and SPD hold 328 of 630 seats. | https://www.aktiencheck.de/news/Artikel-BSW_Wahlbeschwerde_Karlsruhe_verwirft_die_Klage_keine_Neuauszaehlung_Merz_Koalition_behaelt_328_Sitze_was_bedeutet_das_Urteil_fuer_DAX_und_Bundesanleihen-18000000\n- 2026-11-25 | The Budget Committee published its final supplementary recommendation (Drucksache 21/9301) on Einzelplan 60 for the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302, 21/7650). | https://dip.bundestag.de/vorgang/haushaltsgesetz-2027/315000\n- 2026-11-25 | The Bundestag officially scheduled the third reading and final roll-call vote (Schlussabstimmung) on the 2027 federal budget (Drucksachen 21/7300, 21/7302) for Friday, 27 November 2026, with the live broadcast starting at 12:40 Uhr. | https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-dritte-lesung-1232352\n- 2026-11-25 | In the roll-call vote on Einzelplan 04 (Chancellery budget) of the 2027 federal budget on Wednesday, 25 November 2026, the Bundestag approved the budget with 317 yes votes (204 CDU/CSU, 112 SPD, 1 non-attached) to 267 no votes, with 0 abstentions and 12 coalition members not voting. | https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=950\n\nCOUNTER\nIn the benchmark roll-call vote on the Chancellery budget (Einzelplan 04) on Wednesday, 25 November 2026, 12 coalition members did not vote (4 CDU/CSU and 8 SPD), resulting in 317 yes votes—just one vote above the 316-vote threshold. Because final passage of the Haushaltsgesetz 2027 only legally requires a simple majority of votes cast and Friday plenary sessions typically experience slightly lower attendance than Wednesday sessions (as occurred in November 2025, when the yes count dropped by two votes between Wednesday and Friday), the absence of just two additional coalition MPs due to illness or travel would cause the budget to pass with fewer than 316 yes votes.",
+   "facts": [
+    {
+     "date": "2026-11-13",
+     "fact": "The Bundestag Budget Committee approved the amended 2027 federal budget (totaling 560.92 billion euros in expenditures) with the votes of the coalition factions CDU/CSU and SPD against the opposition.",
+     "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw46-pa-haushalt-bereinigungssitzung-1231892"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The Federal Constitutional Court unanimously rejected the BSW election complaint as inadmissible, confirming the seat distribution of the 21st Bundestag in which CDU/CSU and SPD hold 328 of 630 seats.",
+     "url": "https://www.aktiencheck.de/news/Artikel-BSW_Wahlbeschwerde_Karlsruhe_verwirft_die_Klage_keine_Neuauszaehlung_Merz_Koalition_behaelt_328_Sitze_was_bedeutet_das_Urteil_fuer_DAX_und_Bundesanleihen-18000000"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Budget Committee published its final supplementary recommendation (Drucksache 21/9301) on Einzelplan 60 for the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302, 21/7650).",
+     "url": "https://dip.bundestag.de/vorgang/haushaltsgesetz-2027/315000"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Bundestag officially scheduled the third reading and final roll-call vote (Schlussabstimmung) on the 2027 federal budget (Drucksachen 21/7300, 21/7302) for Friday, 27 November 2026, with the live broadcast starting at 12:40 Uhr.",
+     "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-dritte-lesung-1232352"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "In the roll-call vote on Einzelplan 04 (Chancellery budget) of the 2027 federal budget on Wednesday, 25 November 2026, the Bundestag approved the budget with 317 yes votes (204 CDU/CSU, 112 SPD, 1 non-attached) to 267 no votes, with 0 abstentions and 12 coalition members not voting.",
+     "url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=950"
+    }
+   ],
+   "counter": "In the benchmark roll-call vote on the Chancellery budget (Einzelplan 04) on Wednesday, 25 November 2026, 12 coalition members did not vote (4 CDU/CSU and 8 SPD), resulting in 317 yes votes—just one vote above the 316-vote threshold. Because final passage of the Haushaltsgesetz 2027 only legally requires a simple majority of votes cast and Friday plenary sessions typically experience slightly lower attendance than Wednesday sessions (as occurred in November 2025, when the yes count dropped by two votes between Wednesday and Friday), the absence of just two additional coalition MPs due to illness or travel would cause the budget to pass with fewer than 316 yes votes."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:11:23Z",
+   "p": 0.71,
+   "searches": 16,
+   "sources": [
+    "https://www.abgeordnetenwatch.de/bundestag/21/abstimmungen/etat-von-bundeskanzler-und-bundeskanzleramt-2026/tabelle",
+    "https://www.faz.net/aktuell/politik/inland/was-der-haushalt-2027-ueber-den-zustand-der-koalition-verraet-201713825.html",
+    "https://www.tagesschau.de/inland/innenpolitik/unionsfraktion-probeastimmung-rente-100.html",
+    "https://www.5min.at/steiermark/5202611250845/12-milliarden-euro-schulden-drohen-kunasek-uebersteht-misstrauensantrag/",
+    "https://www.bundestag.de/dokumente/protokolle/vorlaeufig",
+    "https://dserver.bundestag.de/btd/21/090/2109062.pdf",
+    "https://www.merkur.de/wirtschaft/streit-um-eu-haushalt-merz-lehnt-costa-kompromiss-ab-94601756.html",
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1205418",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt/tagesordnungen",
+    "https://www.bundestag.de/webarchiv/textarchiv/2010/namabst-249408",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766",
+    "https://www.n-tv.de/politik/Merz-kaempft-gegen-den-Le-Pen-Countdown-beim-EU-Haushalt-draengt-die-Zeit-id31567920.html",
+    "https://www.gruene-bundestag.de/wir-im-bundestag/plenum/tagesordnung/",
+    "https://www.bundesverbraucherhilfe.de/gesetz-ueber-die-feststellung-des-bundeshaushaltsplans-fuer-das-haushaltsjahr-2027-haushaltsgesetz-2027-hg-2027/",
+    "https://www.abgeordnetenwatch.de/bundestag/21/abstimmungen/etat-des-kanzleramtes-fuer-2027",
+    "http://bit.ly/1hbaUcE",
+    "https://weltwoche.ch/daily/merz-schafft-kanzler-mehrheit-bundestag-nimmt-das-rentenpaket-der-schwarz-roten-regierung-an/",
+    "https://www.tageblatt.lu/International/Probeabstimmung-der-Union-Grosse-Mehrheit-fuer-Rentenpaket-14862.html",
+    "https://www.wahl.de/parlament/protokolle/21-110/hier-einzelplan-16-bundesministerium-fuer-umwelt-klimaschutz-naturschutz-und-nukleare-sich-3800",
+    "https://www.spiegel.de/wirtschaft/haushalt-2027-entwurf-beschlossen-thema-stromsteuer-bleibt-umstritten-a-96a85a7e-defa-41cc-b8d2-fa71c501fc9d",
+    "https://bit.ly/2XGQMfV",
+    "https://www.bundestag.de/1233844",
+    "https://bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/11/bis-weihnachten-werden-50-regierungsvorhaben-ins-parlament-gebracht.html",
+    "https://www.ad-hoc-news.de/boerse/news/ueberblick/bundestag-korrigiert-ergebnis-nur-318-ja-stimmen/68409287",
+    "https://weltwoche.de/daily/394-stimmen-gegen-scholz-bundestag-verweigert-dem-deutschen-kanzler-das-vertrauen/"
+   ],
+   "reason": "The final roll-call on the 2027 budget is on the Bundestag agenda for Friday afternoon and is expected to take place. The governing coalition holds 328 of 630 seats, twelve above the absolute majority of 316. A roll-call on the chancellery budget line this week already produced 317 yes votes, with every coalition member present voting in favour and no support from the opposition. Chancellor Merz will be in Brussels and will not vote, and a Monday faction straw poll recorded a handful of Union dissenters, so the margin is thin. Even so, the bill is the coalition’s central remaining item this week, attendance on final budget votes is normally high, and reporting on 25 November describes the majority as reasonably secure.\n\nNEW FACTS\n- 2026-11-25 | The Bundestag’s planned plenary schedule for 27 November lists a 90-minute third reading followed by a roll-call final vote on the Haushaltsgesetz 2027. | https://www.bundestag.de/blob/189966/7cd7d31ec252c7d065fd3ce80af3740f/ablaufplan-data.pdf\n- 2026-11-25 | The chancellery section of the 2027 budget was adopted in a roll-call by 317 yes to 267 no, with no abstentions and 46 members not voting. | https://www.abgeordnetenwatch.de/bundestag/21/abstimmungen/etat-des-kanzleramtes-fuer-2027\n- 2026-11-25 | CDU/CSU holds 208 seats and the SPD 120, for a coalition total of 328 in a 630-member Bundestag whose absolute majority is 316. | https://www.bundestag.de/parlament/plenum/sitzverteilung\n- 2026-11-25 | Chancellor Merz will be at the EU summit in Brussels on Friday and will not take part in the budget vote; a Monday Union faction straw poll had three no votes and one abstention. | https://www.focus.de/politik/deutschland/merz-wir-haben-das-geld-nicht-mehr-fuer-alles_2b939b78-d0c0-4970-bb6d-ab713d88bfd2.html\n- 2026-11-25 | Reporting on the general debate said confidence inside the coalition was high that the majority would hold for Friday’s final vote. | https://www.faz.net/aktuell/politik/inland/was-der-haushalt-2027-ueber-den-zustand-der-koalition-verraet-201713825.html\n- 2026-11-13 | The budget committee adopted the 2027 draft, with spending of about €560.9 billion, by the votes of CDU/CSU and SPD against AfD, Greens and the Left. | https://www.bundestag.de/1233152\n\nCOUNTER\nThe only recent roll-call on this budget produced just 317 yes votes while the chancellor was in the chamber. On Friday he will be absent, and the law needs only a simple majority, so a few extra coalition absences or the Monday straw-poll dissenters voting no or abstaining would leave the yes total below 316 even if the bill still passes.",
+   "facts": [
+    {
+     "date": "2026-11-25",
+     "fact": "The Bundestag’s planned plenary schedule for 27 November lists a 90-minute third reading followed by a roll-call final vote on the Haushaltsgesetz 2027.",
+     "url": "https://www.bundestag.de/blob/189966/7cd7d31ec252c7d065fd3ce80af3740f/ablaufplan-data.pdf"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The chancellery section of the 2027 budget was adopted in a roll-call by 317 yes to 267 no, with no abstentions and 46 members not voting.",
+     "url": "https://www.abgeordnetenwatch.de/bundestag/21/abstimmungen/etat-des-kanzleramtes-fuer-2027"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "CDU/CSU holds 208 seats and the SPD 120, for a coalition total of 328 in a 630-member Bundestag whose absolute majority is 316.",
+     "url": "https://www.bundestag.de/parlament/plenum/sitzverteilung"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Chancellor Merz will be at the EU summit in Brussels on Friday and will not take part in the budget vote; a Monday Union faction straw poll had three no votes and one abstention.",
+     "url": "https://www.focus.de/politik/deutschland/merz-wir-haben-das-geld-nicht-mehr-fuer-alles_2b939b78-d0c0-4970-bb6d-ab713d88bfd2.html"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Reporting on the general debate said confidence inside the coalition was high that the majority would hold for Friday’s final vote.",
+     "url": "https://www.faz.net/aktuell/politik/inland/was-der-haushalt-2027-ueber-den-zustand-der-koalition-verraet-201713825.html"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "The budget committee adopted the 2027 draft, with spending of about €560.9 billion, by the votes of CDU/CSU and SPD against AfD, Greens and the Left.",
+     "url": "https://www.bundestag.de/1233152"
+    }
+   ],
+   "counter": "The only recent roll-call on this budget produced just 317 yes votes while the chancellor was in the chamber. On Friday he will be absent, and the law needs only a simple majority, so a few extra coalition absences or the Monday straw-poll dissenters voting no or abstaining would leave the yes total below 316 even if the bill still passes."
+  }
+ ]
+}

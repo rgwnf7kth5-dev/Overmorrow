@@ -1,0 +1,32 @@
+{
+ "claim": "On Friday 27 November 2026 the Chamber of Deputies passes the government's extraordinary refinery tax bill (amendment to the Income Tax Act, print 311, \"lex Orlen\") in third reading.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:17:56Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Czech Chamber of Deputies must adopt the final passage motion on parliamentary print 311 (in any amended form) during third reading between 09:00 and 23:59 Europe/Prague time on 27 November 2026.",
+   "decided_by": "The official roll call record on psp.cz for 27 November 2026 (or reports by ČTK or ČT24 on that day if psp.cz is unreachable)."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:00Z",
+   "ambiguous": true,
+   "scenario": "If psp.cz is temporarily unreachable on 27 November and ČTK reports passage, but the official roll call becomes accessible later and shows the motion failed, one reader could use the same-day fallback and resolve YES while another could use the restored official record and resolve NO. The criterion does not specify when unreachability is assessed or whether a later-accessible roll call supersedes the fallback.",
+   "yes_requires": "The Czech Chamber of Deputies must adopt the final third-reading passage motion on government bill print 311, in any amended form, within the stated 09:00–23:59 Europe/Prague window on Friday, 27 November 2026. Rejection or no final passage vote within that window is NO.",
+   "decided_by": "The Chamber's vote determines the outcome. The official psp.cz roll call for 27 November is the primary evidence; if psp.cz is unreachable, a ČTK or ČT24 report from that day is the fallback."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:13Z",
+   "ambiguous": true,
+   "scenario": "Both readers see that psp.cz loads but shows no roll call for print 311, while ČTK's same-day report says the final-passage motion was adopted and ČT24's same-day report says the item was postponed and no passage vote was held. One reader treats the missing roll call as psp.cz being unreachable and follows ČTK (YES); the other treats a reachable site with no recorded passage vote as the explicit NO condition and does not let conflicting media override it (NO).",
+   "yes_requires": "Between 09:00 and 23:59 Europe/Prague on 27 November 2026, the Chamber of Deputies adopts the final-passage motion on print 311 (consent to the government bill, in any amended form).",
+   "decided_by": "That day's psp.cz roll call, or, only if psp.cz is unreachable, same-day reporting by ČTK or ČT24."
+  }
+ ]
+}

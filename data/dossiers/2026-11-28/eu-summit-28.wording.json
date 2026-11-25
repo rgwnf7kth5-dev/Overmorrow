@@ -1,0 +1,32 @@
+{
+ "claim": "EU leaders at the special European Council in Brussels, which is due to end on Friday 27 November 2026, agree to provide Ukraine with €45bn of EU-borrowed financing for 2027 (the Commission's proposed loan), whether or not all 27 member states take part.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:17:57Z",
+   "ambiguous": true,
+   "scenario": "Reuters and AFP report before the deadline, citing unnamed officials, that leaders have agreed to the €45bn, but Costa and the Council first confirm it publicly on Saturday. One reader could count the two reports as an in-window announcement under the media route; another could treat them as leaks and count Saturday as the first announcement.",
+   "yes_requires": "From 10:00 on 26 November through 23:59 on 27 November 2026, Brussels time, leaders must agree and announce that they will provide Ukraine at least €45bn in EU-borrowed financing for 2027, through the Commission proposal or a replacement they identify as serving the same purpose. Not all 27 member states need to participate. A decision in principle, a referral, or a smaller amount does not qualify",
+   "decided_by": "A qualifying European Council text on consilium.europa.eu, including one supported by fewer than 27 leaders; a confirmation from António Costa at the closing press conference or on X; or reports from "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:17:58Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 10:00 on 26 November and 23:59 on 27 November 2026 (Europe/Brussels), the European Council must agree to provide Ukraine with at least €45bn in EU-borrowed financing for 2027 (with or without all 27 member states participating), and this agreement must be announced within that window.",
+   "decided_by": "European Council texts on consilium.europa.eu, statements by António Costa at the closing press conference or on X, or reports from at least two of AFP, Reuters, AP, Bloomberg, Euronews, ČTK, or Ukrin"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:18:55Z",
+   "ambiguous": true,
+   "scenario": "Conclusions say leaders 'welcome and support' a roughly €45bn Ukraine facility covering 2026–27, only partly based on EU borrowing, and 'invite ministers to finalise swift adoption', while Costa calls it a political agreement and two wires say leaders 'backed the plan'. One reader treats this as the allowed endorse-and-call-for-swift-adoption path for at least €45bn of EU-borrowed 2027 financing; another treats it as principles only, a handoff to ministers, or less than €45bn of EU borrowing specifically for 2027.",
+   "yes_requires": "Between 10:00 on 26 Nov 2026 and 23:59 on 27 Nov 2026 (Europe/Brussels), the European Council agrees to provide Ukraine with at least €45bn of financing for 2027 based on EU borrowing—the Commission's Coordinated Support Facility for Ukraine / top-up of the Ukraine Support Loan, or a changed structure that leaders say is that financing—in any participation configuration. That must be shown by any ",
+   "decided_by": "The criterion's evidence rules, not a separate adjudicator: a qualifying European Council text on consilium.europa.eu, António Costa at the closing press conference or on X, or at least two of the nam"
+  }
+ ]
+}

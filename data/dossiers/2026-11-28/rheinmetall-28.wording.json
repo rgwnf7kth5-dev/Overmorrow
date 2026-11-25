@@ -1,0 +1,32 @@
+{
+ "claim": "At its Capital Markets Day, whose call is on Friday 27 November 2026 at 10:00 CET, Rheinmetall cuts its 2030 group sales target below the \"around €50bn\" set in November 2025.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:19:30Z",
+   "ambiguous": true,
+   "scenario": "If the CMD presentation confirms “around €50bn” but the CFO states a €48bn group sales ambition on the call without explicitly replacing the target, both the YES and NO conditions are met. The criterion does not say which statement takes precedence.",
+   "yes_requires": "Between 00:00 on 26 November and 23:59 on 27 November 2026, Europe/Berlin time, Rheinmetall must announce a 2030 group sales target or ambition below €50bn in a press release, ad-hoc notice, Capital Markets Day presentation, or statement by its CEO or CFO on the CMD call. The midpoint decides for a range. “Around €50bn,” segment targets, order backlog, and withdrawal without a replacement figure d",
+   "decided_by": "Rheinmetall’s qualifying announcement, as shown on rheinmetall.com or reported by dpa-AFX, Reuters, Bloomberg, or Börsen-Zeitung."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:19:33Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 26 November 2026 00:00 and 27 November 2026 23:59 CET, Rheinmetall must publish via press release, ad-hoc notice, Capital Markets Day presentation, or a statement by the CEO or CFO in the CMD call a 2030 group sales target or ambition that is strictly below €50bn (or a range with a midpoint strictly below €50bn).",
+   "decided_by": "Official publications on rheinmetall.com, CEO/CFO statements in the CMD call, or reporting by dpa-AFX, Reuters, Bloomberg, or Börsen-Zeitung."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:21:04Z",
+   "ambiguous": true,
+   "scenario": "All listed sources report the same CMD statement that the 2030 group sales ambition is now 'at least €45bn', with no ceiling or second endpoint. One reader treats €45bn as a published target below €50bn (YES); the other finds no closed range to midpoint and no figure set strictly below €50bn, and also no confirmation of €50bn or more, so applies the no-qualifying-figure rule (NO).",
+   "yes_requires": "Between 26 Nov 2026 00:00 and 27 Nov 2026 23:59 Europe/Berlin, Rheinmetall publishes a 2030 group sales target or ambition below €50bn (closed-range midpoint if a range; segment or backlog figures do not count) in a press release, ad-hoc notice, CMD presentation, or CEO/CFO statement on the CMD call, as shown on rheinmetall.com or reported by dpa-AFX, Reuters, Bloomberg, or Börsen-Zeitung.",
+   "decided_by": "What rheinmetall.com shows, or what dpa-AFX, Reuters, Bloomberg, or Börsen-Zeitung report, about those Rheinmetall publications or CEO/CFO call statements; no separate adjudicator is named."
+  }
+ ]
+}

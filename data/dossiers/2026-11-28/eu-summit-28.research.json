@@ -1,0 +1,192 @@
+{
+ "claim": "EU leaders at the special European Council in Brussels, which is due to end on Friday 27 November 2026, agree to provide Ukraine with €45bn of EU-borrowed financing for 2027 (the Commission's proposed loan), whether or not all 27 member states take part.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:14:15Z",
+   "p": 0.43,
+   "searches": 7,
+   "sources": [
+    "https://www.consilium.europa.eu/en/meetings/european-council/2023/12/14-15/",
+    "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2454/IP_26_2454_EN.pdf",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/european-council-18-december-2025-ukraine/",
+    "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/",
+    "https://data.consilium.europa.eu/doc/document/CM-8-2026-INIT/en",
+    "https://www.consilium.europa.eu/media/nj5jxefy/cm00008en26.pdf",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/forward-look-2026/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/forward-look-2026/pdf/",
+    "https://data.consilium.europa.eu/doc/document/CM-8-2026-INIT/en/pdf",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?elqTrack=true&elqTrackId=1E619C4F45D339B8A5DC88609B5A0FB8&page=1",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?DateFrom=2026%2F11%2F01&DateTo=2027%2F11%2F08&category=meeting&page=2&trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/10/23/media-advisory-accreditation-for-the-special-european-council-26-27-november-2026-and-the-eu-western-balkans-summit-25-november-2026/pdf/",
+    "https://www.consilium.europa.eu/media/ysfdpeob/president-costa-s-invitation-letter-to-the-extraordinary-european-council-26-27-november.pdf",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?Category=meeting",
+    "https://www.consilium.europa.eu/sv/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?DateFrom=2026%2F01%2F26&DateTo=2027%2F01%2F29&category=meeting&page=12",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?elqTrack=true&elqTrackId=2297EC8DF7FF4CE0CAC371471879AE3F&filters=2031",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?p=1&page=1",
+    "https://www.consilium.europa.eu/en/meetings/calendar/?DateFrom=2026%2F10%2F01&DateTo=2027%2F10%2F31&category=meeting&page=3",
+    "https://data.consilium.europa.eu/doc/document/CM-502-2026-INIT/en/pdf",
+    "https://data.consilium.europa.eu/doc/document/CM-4969-2026-REV-1/en/pdf",
+    "https://apnews.com/article/367083ea32f71fd7f70029ba7df66bf0",
+    "https://apnews.com/article/3d0f8ed366d6084e1cfe12a4d8020c55",
+    "https://www.axios.com/2026/11/20/trump-pushes-putin-ukraine-war-deal"
+   ],
+   "reason": "**Base rate.** I start near 50%. In four comparable summit rounds, leaders reached a concrete deal twice: they deferred the €50bn Ukraine Facility in December 2023 and approved it in February 2024; they made a general financing commitment in October 2025 and agreed to the €90bn EU-borrowed loan in December 2025. That is a small set of precedents, not a statistical estimate. It shows that leaders can settle a large package at a summit, but also that a commitment to meet Ukraine’s needs often comes before agreement on the money. ([consilium.europa.eu](https://www.consilium.europa.eu/en/meetings/european-council/2023/12/14-15/))\n\n**What moves this case.** **Up:** The Commission’s November 18 proposal gives leaders a concrete €45bn package to endorse, and the previous loan shows that opt-outs can coexist with EU borrowing. The criterion also allows a political endorsement before legislation is adopted. **Down:** Costa’s November 24 invitation explicitly presses for agreement on the long-term budget but is less definitive on Ukraine financing; the official agenda says leaders will take stock of the loan proposal. The November 25 reporting on ambassadors’ talks shows broad support for funding Ukraine, but unresolved positions on who pays and whether to link the loan to the wider budget. The separate €45bn allocation for 2027 published on November 25 is from the **existing** loan and does not count; in my judgment, it also gives leaders some room to defer the top-up. ([ec.europa.eu](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2454/IP_26_2454_EN.pdf))\n\n**Window risk.** I put the chance that the summit itself does not take place in the window at about 1%. The larger risk is that it meets as scheduled but leaves the amount or guarantees for December. I allow roughly another 4 percentage points for a deal from this summit that is first announced after Friday’s cutoff: Costa expects a Friday finish, but the closest borrowing precedent was announced at 02:56 on the summit’s second calendar day. ([consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/))\n\nNEW FACTS\n- 2026-11-25 | The Official Journal published the Council of the EU’s November 23 decision making up to €45bn available for 2027 under the existing Ukraine Support Loan. | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202602623\n- 2026-11-25 | The Kyiv Independent reported that diplomatic notes from the November 24 ambassadors’ talks described Hungarian reservations and said Hungary and Czechia were leaving decisions on loan costs to their heads of government. | https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/\n- 2026-11-24 | Costa’s published invitation scheduled a 10:00 Thursday start and said he expected proceedings to conclude on Friday. | https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/\n- 2026-11-18 | The Commission proposed up to €45bn in additional EU borrowing for Ukraine in 2027, split into up to €25bn in military assistance and €20bn in general budget support. | https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2454/IP_26_2454_EN.pdf\n- 2025-12-19 | The European Council published its agreement on a €90bn EU-borrowed loan that shielded Czechia, Hungary and Slovakia from financial obligations under the budget guarantee. | https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/european-council-18-december-2025-ukraine/\n\nCOUNTER\n\nLeaders do not need to settle the long-term budget or secure all 27 contributors to reach a qualifying deal. They could use the existing opt-out precedent, endorse the full €45bn before Friday’s cutoff, and leave the legal details to ministers. ([consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/european-council-18-december-2025-ukraine/?utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-25",
+     "fact": "The Official Journal published the Council of the EU’s November 23 decision making up to €45bn available for 2027 under the existing Ukraine Support Loan.",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202602623"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Kyiv Independent reported that diplomatic notes from the November 24 ambassadors’ talks described Hungarian reservations and said Hungary and Czechia were leaving decisions on loan costs to their heads of government.",
+     "url": "https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Costa’s published invitation scheduled a 10:00 Thursday start and said he expected proceedings to conclude on Friday.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/24/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The Commission proposed up to €45bn in additional EU borrowing for Ukraine in 2027, split into up to €25bn in military assistance and €20bn in general budget support.",
+     "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2454/IP_26_2454_EN.pdf"
+    },
+    {
+     "date": "2025-12-19",
+     "fact": "The European Council published its agreement on a €90bn EU-borrowed loan that shielded Czechia, Hungary and Slovakia from financial obligations under the budget guarantee.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/european-council-18-december-2025-ukraine/"
+    }
+   ],
+   "counter": "Leaders do not need to settle the long-term budget or secure all 27 contributors to reach a qualifying deal. They could use the existing opt-out precedent, endorse the full €45bn before Friday’s cutoff, and leave the legal details to ministers. ([consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/european-council-18-december-2025-ukraine/?utm_source=openai))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:15:15Z",
+   "p": 0.52,
+   "searches": 12,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaazVAaGTG2VJrV1P2qPwod-a74WNQFFrILO-KgB_VAvY8kYYR-U49CafS7Fn7_T8zwkBeIq90AODKHcefmv84E2ohwpFCxAs-2ZhAsl3PCBzO6UFIV75J4rH9fQcOiT_1raIR0YcCgINfNBLHtpxR1z0YU0ZXNSCJAF64Y7kBQ6K_HM7NvgPs-v7oEZFJmGg3PozoU7ecxoIsYAwawKoQBXW4QxEBKd-WFB0hVA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJ7xHIpGQYnJlc-8aZM7MHLvwJgfMrEbydcsC6z5FhTQ1VB6cxBVv2ORUGD8ICMGc2WIrWN9bJZy44K5fuJo1lWTMjaGtuicC-fAJXXPpD_mjtH36EVdGcGtYsaPuVAMypZFhPspMVMir5Ei4oh41QDQHRC02H1EjsbfAaF9vKqmeM9HmMN7a7-jw4dx-3RUVd98lOyUDZqOVGzZCH4KM3HlKb11U62G4RQD-HVNC-EY8Y_6Kx",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpCLYuOJiTm5qwO0uHKDU7tUqgiMKEXDwhXZejlgI_pOOPmnK9IHHHoo3LGNcaLkzexkhhMB0T0a3n2sX3iQotoPE8g0pUsvuxrIfDm3jgrZwYnynHSrrtMhLpaz_iQUHnAjzWM2DhUlm_bXAt3trqUrxhcex5K2S6-qeMV5A=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpd11PLmXZWFEO-ASi99wfwdQzNOVRELz9hwnBdFkTcwQy279kdRkmfpRQcwqUIz0dhJoL-Oz9To-sOd-1gKZVkTa689k8_0TFqHBLnkVUdgTcqMZfGsw3maIiYGHvBeIGQ24iOE-3-Kmn5fg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgXtg7UO-hS3MEO476U_mP3tF8ptKyE1j7qK6aH0dnai1r58l3VZh03nTkOKoWen7rIfUg1t9ElZ-TyKnNI4Lz8D_pVV3fgf9XWGXGr0G6dFSLkuNXtB7PHSayJw4JUNwWyKl6zkopT1uIyR3RJs1QRftLiyUIV2cMwIiCH3eG5MoWOLpvO2xi7f1XViCfJ88n6o-IURJWsw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGma14EFrGxtuMzTVz3kgIRsGvrMDGSykCbR-gZVCUWg5gJDkWxbaXkIIoHh84ubP6j3wC2Ca1oxvoLrN2twMiRYpXY2yDoC1cLH6bTDlMgw4J-wx4Xbw8OF9mz7sXdDUqwhzpOuhgX3ywpBbUHdh3krsDFhcsr1-C_xfQXZWg_aZlguSmqZ3kgai-3akGJUqXjjA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLE4INJPIQVlSb7U99VvLE-Dt1DeSPwik3P7slkHsGrwJxBZsLn3P-poVVvp-Nga_rBV8v_0O8tyNfAgNtLpfYP989ovT79teUacaS-G20EbkLRAWqQqi7HdyDdS08V6DS",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMkMor8lMQwwZVmw-TPYkOtWIpWGWNi7Vp4L9BhAyxB0KdB8bhBv1UIGCpCn2uYvJw5vIIF0BBSU4XFK-kN0OwS_w5TeyBVQcSVO-znfWWdJeyTT03STsFW1nGr-E76aytMPDMDllIs4SrkkUzqN-Mq-OB3D1LRuGESD7v72ITrFcmt9OilTA442dpjX4VPARaAfKN6qOhUcHTO7dGQTRuGSWYpbuIMQooUVb2LnwU5N8mY5_JwZoDA0RT0qIXIxxCqPDzNCOqgMNM46iEfyUZmq6VOqGzatyqbCZFo9C9rYMargLha4s_Hc0gW_7zRTP7Yv2hvDxc-bO-e498GQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFK60ZIWWLUvRWTaAvgSQgp8O-HtG9iqzVJP1ygy6JDQ4dmHDNgLI7WWfr1meV9CmsMj7u6ZaC6U2b8Lkl8Cnp8aoZ-i5UqqYS3i036uNut_7TH2YcaDJmGamA4LvCuugCMxlqafT1JMGRzva4QGe_dJGATTUEphynVomWPIK5kyqpFwia7CGl5eG2dc7GDKvPq9ahuvdWejF0pqtN48iP5EhjyJaIZABJm2lQc0bmmKbUe66IKWC5y7HRJpKXB8VQ8zKNEyNZcd_46BJ5DRfAye8i0Az2uIBLhFuoT3l8NgOZd4yLbkSmNyDLrdKs1XdM0AHQnjgu0yztwD5NbeA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8HwXmBRWbYPGP6GTUzwwSaCeXkX74Ru_gBnuFJyrL4djcRPQzusGBvUBpiEzcra9PCHtjC0DCY1i8hJH3AE3Puimk2skr4EyGJeSmNkKeQCe5njoy4rBDBgaKNoK-OJ2mfvPKVIh_-0qIZBKd-X_PP5-HBviNQIM76oSXen2kh0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxpvymrFL3_CbAU5SIyzXMKoHloskNyBruY4jsU-H9gqBuL86_i2MFVTyxJEyNCYIctAAvH_1C2ranMV2vKCRJ_Ys4QNW5QN9_9QNTm6RGyPrHO8dtU-W4-2lzNvIkvVrm7q3uPjejakzfTDzNfWGjYuJ5cDVNrxtGlZwBiYeTWqyF0BMcWsz9nKRVP4Sy",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQ6ocPpTV_10LSHdAXkdRcxiG7qYZKo37yzjqHDZS3Vknp8LwBYygB4p48vL-uqvgi-2ph-bk0QhwUSVob2rnQxxQTcL5UH-0xBXNIFU8E0m1FNRgI_r8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8WIbWiAfmaeTQLdmhHFtWjGYG_zftLPyDbvMBtNUD9eHkHQzD_MXjoH_pm2CHajD306zRLN_mhjn-vHWz5cOhMAOvIccc68GjtsgX5pXAF3YOLRU2XlbQ4EoaeNHe3q_ONw5r5YTGjZu7jKP3MCiUtcs3VArYKVMglt7l7FANdQ=="
+   ],
+   "reason": "tly either end in stalemate or overrun past midnight on Friday into Saturday morning.\n\n**3. Strongest Reason the Outcome Might Fail**\nEven though the criterion generously allows for an agreement with opt-outs or a text supported by fewer than 27 leaders (and even simple \"endorses the Commission's proposal … and calls for its swift adoption\" language), two major obstacles threaten a YES resolution by 23:59 on Friday 27 November:\n1. **Deferral or \"Take Note\" Language:** Because the Commission only tabled the legal texts on 18 November—requiring an amendment to the current MFF Regulation (Article 312 TFEU, which requires unanimity)—and Germany is demanding that Hungary, Slovakia, Czechia, and Bulgaria not be given a free-rider exemption this time, leaders may only \"take note\" or hold an initial orientation debate and task ministers/Coreper to finalize the package for the regular mid-December European Council.\n2. **Summit Overrun Past 23:59 Friday:** Because this summit's primary agenda item is the €1.78 trillion 2028–2034 MFF (with bilateral \"confessionals\" scheduled before reconvening at 27 to share conclusions), negotiations could easily drag past midnight on Friday night into Saturday 28 November, which automatically resolves the claim NO.\n\nBalancing the high political will to signal support for Ukraine (and the low bar required by criterion (a) where endorsing the Commission's €45bn proposal and calling for its swift adoption suffices, even at fewer than 27) against the \"take stock\" framing, the German burden-sharing condition, the option to wait until the December summit, and the risk of a Friday night MFF summit overrun, I estimate a 52% probability of YES.\n\nNEW FACTS\n- 2026-11-18 | The European Commission adopted legislative proposals for an Instrument for Coordinated Support to Ukraine (and an amendment to the current MFF Regulation) to provide a new limited-recourse loan of up to €45 billion for Ukraine in 2027, financed by EU borrowing on capital markets and split into €25 billion for military assistance and €20 billion for budget support. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS4vfSmYPtecZhNDzco9a2KdyTvMTKWsJCBLGI7GOppY8MNiufzryyL21X-e7IKe_kOgb42z7OHkTRJnDec0HBYe9BAy5NxExvQefUZP6ZI7YT2Z1n9nTC5P5JOUXedcD9uF_-PSr4VHPm3vWFnPbtpFHde9nZJk5_ng-aOw267eq8a6j5YF56Imk2Mj4ec-jxlqYY2DIO9N2M7YzfvceecDAHf2Aa6qUosg4rT50FTx6XmgfrC6DBWNw=\n- 2026-11-18 | European Commission President Ursula von der Leyen stated she is \"very confident\" that all 27 EU member states will join the new €45 billion loan to Ukraine, despite opposition from Bulgaria, Czechia, Hungary, and Slovakia. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpd11PLmXZWFEO-ASi99wfwdQzNOVRELz9hwnBdFkTcwQy279kdRkmfpRQcwqUIz0dhJoL-Oz9To-sOd-1gKZVkTa689k8_0TFqHBLnkVUdgTcqMZfGsw3maIiYGHvBeIGQ24iOE-3-Kmn5fg=\n- 2026-11-19 | German Chancellor Friedrich Merz wrote to European Council President António Costa making Germany's approval of the 2028–2034 EU budget conditional on all 27 member states sharing in the financing of Ukraine's needs in 2027, while Slovakia, Hungary, Czechia, and Bulgaria have resisted participating in the new €45 billion package. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgXtg7UO-hS3MEO476U_mP3tF8ptKyE1j7qK6aH0dnai1r58l3VZh03nTkOKoWen7rIfUg1t9ElZ-TyKnNI4Lz8D_pVV3fgf9XWGXGr0G6dFSLkuNXtB7PHSayJw4JUNwWyKl6zkopT1uIyR3RJs1QRftLiyUIV2cMwIiCH3eG5MoWOLpvO2xi7f1XViCfJ88n6o-IURJWsw==\n- 2026-11-21 | Speaking at a Brussels press conference, European Council President António Costa stressed that the 2027 Ukraine aid decision is separate from the 2028–2034 MFF and stated that he hopes the Commission's €45 billion proposal will be approved as soon as possible when discussed by leaders starting 26 November. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLE4INJPIQVlSb7U99VvLE-Dt1DeSPwik3P7slkHsGrwJxBZsLn3P-poVVvp-Nga_rBV8v_0O8tyNfAgNtLpfYP989ovT79teUacaS-G20EbkLRAWqQqi7HdyDdS08V6DS\n- 2026-11-24 | In his invitation letter to EU leaders for the 26–27 November Special European Council, President António Costa stated that discussions on the MFF and Ukraine financing for 2027 will aim to reach a timely agreement, with bilateral meetings followed by a plenary session of the 27 where he will share his conclusions on Friday. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFK60ZIWWLUvRWTaAvgSQgp8O-HtG9iqzVJP1ygy6JDQ4dmHDNgLI7WWfr1meV9CmsMj7u6ZaC6U2b8Lkl8Cnp8aoZ-i5UqqYS3i036uNut_7TH2YcaDJmGamA4LvCuugCMxlqafT1JMGRzva4QGe_dJGATTUEphynVomWPIK5kyqpFwia7CGl5eG2dc7GDKvPq9ahuvdWejF0pqtN48iP5EhjyJaIZABJm2lQc0bmmKbUe66IKWC5y7HRJpKXB8VQ8zKNEyNZcd_46BJ5DRfAye8i0Az2uIBLhFuoT3l8NgOZd4yLbkSmNyDLrdKs1XdM0AHQnjgu0yztwD5NbeA==\n- 2026-11-25 | The European Council's official agenda page for the 26–27 November Special European Council states that leaders will address Ukraine's financing needs for 2027 and \"take stock of the European Commission's proposal of 18 November 2026, which provides for up to €45 billion in additional financial support for Ukraine in 2027.\" | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8HwXmBRWbYPGP6GTUzwwSaCeXkX74Ru_gBnuFJyrL4djcRPQzusGBvUBpiEzcra9PCHtjC0DCY1i8hJH3AE3Puimk2skr4EyGJeSmNkKeQCe5njoy4rBDBgaKNoK-OJ2mfvPKVIh_-0qIZBKd-X_PP5-HBviNQIM76oSXen2kh0=\n\nCOUNTER\nThe Commission only tabled the €45 billion proposal on 18 November, and the official Council summit webpage states that leaders will \"take stock\" of it, while a sharp dispute remains between Germany—which demands all 27 member states share the financial burden—and Hungary, Slovakia, Czechia, and Bulgaria, which refuse to participate. Consequently, leaders may only hold an orientation debate and defer formal agreement on the €45 billion loan to the regular mid-December European Council, or the contentious MFF budget negotiations could cause the summit's final conclusions to be delayed past midnight on Friday night into Saturday.",
+   "facts": [
+    {
+     "date": "2026-11-18",
+     "fact": "The European Commission adopted legislative proposals for an Instrument for Coordinated Support to Ukraine (and an amendment to the current MFF Regulation) to provide a new limited-recourse loan of up to €45 billion for Ukraine in 2027, financed by EU borrowing on capital markets and split into €25 billion for military assistance and €20 billion for budget support.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS4vfSmYPtecZhNDzco9a2KdyTvMTKWsJCBLGI7GOppY8MNiufzryyL21X-e7IKe_kOgb42z7OHkTRJnDec0HBYe9BAy5NxExvQefUZP6ZI7YT2Z1n9nTC5P5JOUXedcD9uF_-PSr4VHPm3vWFnPbtpFHde9nZJk5_ng-aOw267eq8a6j5YF56Imk2Mj4ec-jxlqYY2DIO9N2M7YzfvceecDAHf2Aa6qUosg4rT50FTx6XmgfrC6DBWNw="
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "European Commission President Ursula von der Leyen stated she is \"very confident\" that all 27 EU member states will join the new €45 billion loan to Ukraine, despite opposition from Bulgaria, Czechia, Hungary, and Slovakia.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpd11PLmXZWFEO-ASi99wfwdQzNOVRELz9hwnBdFkTcwQy279kdRkmfpRQcwqUIz0dhJoL-Oz9To-sOd-1gKZVkTa689k8_0TFqHBLnkVUdgTcqMZfGsw3maIiYGHvBeIGQ24iOE-3-Kmn5fg="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "German Chancellor Friedrich Merz wrote to European Council President António Costa making Germany's approval of the 2028–2034 EU budget conditional on all 27 member states sharing in the financing of Ukraine's needs in 2027, while Slovakia, Hungary, Czechia, and Bulgaria have resisted participating in the new €45 billion package.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgXtg7UO-hS3MEO476U_mP3tF8ptKyE1j7qK6aH0dnai1r58l3VZh03nTkOKoWen7rIfUg1t9ElZ-TyKnNI4Lz8D_pVV3fgf9XWGXGr0G6dFSLkuNXtB7PHSayJw4JUNwWyKl6zkopT1uIyR3RJs1QRftLiyUIV2cMwIiCH3eG5MoWOLpvO2xi7f1XViCfJ88n6o-IURJWsw=="
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "Speaking at a Brussels press conference, European Council President António Costa stressed that the 2027 Ukraine aid decision is separate from the 2028–2034 MFF and stated that he hopes the Commission's €45 billion proposal will be approved as soon as possible when discussed by leaders starting 26 November.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLE4INJPIQVlSb7U99VvLE-Dt1DeSPwik3P7slkHsGrwJxBZsLn3P-poVVvp-Nga_rBV8v_0O8tyNfAgNtLpfYP989ovT79teUacaS-G20EbkLRAWqQqi7HdyDdS08V6DS"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "In his invitation letter to EU leaders for the 26–27 November Special European Council, President António Costa stated that discussions on the MFF and Ukraine financing for 2027 will aim to reach a timely agreement, with bilateral meetings followed by a plenary session of the 27 where he will share his conclusions on Friday.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFK60ZIWWLUvRWTaAvgSQgp8O-HtG9iqzVJP1ygy6JDQ4dmHDNgLI7WWfr1meV9CmsMj7u6ZaC6U2b8Lkl8Cnp8aoZ-i5UqqYS3i036uNut_7TH2YcaDJmGamA4LvCuugCMxlqafT1JMGRzva4QGe_dJGATTUEphynVomWPIK5kyqpFwia7CGl5eG2dc7GDKvPq9ahuvdWejF0pqtN48iP5EhjyJaIZABJm2lQc0bmmKbUe66IKWC5y7HRJpKXB8VQ8zKNEyNZcd_46BJ5DRfAye8i0Az2uIBLhFuoT3l8NgOZd4yLbkSmNyDLrdKs1XdM0AHQnjgu0yztwD5NbeA=="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The European Council's official agenda page for the 26–27 November Special European Council states that leaders will address Ukraine's financing needs for 2027 and \"take stock of the European Commission's proposal of 18 November 2026, which provides for up to €45 billion in additional financial support for Ukraine in 2027.\"",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8HwXmBRWbYPGP6GTUzwwSaCeXkX74Ru_gBnuFJyrL4djcRPQzusGBvUBpiEzcra9PCHtjC0DCY1i8hJH3AE3Puimk2skr4EyGJeSmNkKeQCe5njoy4rBDBgaKNoK-OJ2mfvPKVIh_-0qIZBKd-X_PP5-HBviNQIM76oSXen2kh0="
+    }
+   ],
+   "counter": "The Commission only tabled the €45 billion proposal on 18 November, and the official Council summit webpage states that leaders will \"take stock\" of it, while a sharp dispute remains between Germany—which demands all 27 member states share the financial burden—and Hungary, Slovakia, Czechia, and Bulgaria, which refuse to participate. Consequently, leaders may only hold an orientation debate and defer formal agreement on the €45 billion loan to the regular mid-December European Council, or the contentious MFF budget negotiations could cause the summit's final conclusions to be delayed past midnight on Friday night into Saturday."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:16:03Z",
+   "p": 0.28,
+   "searches": 12,
+   "sources": [
+    "https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/",
+    "https://www.politico.eu/article/eu-ukraine-agree-to-accelerate-e45b-loan-payout-in-2027/",
+    "https://2eu.brussels/en/news/costa-seeks-agreement-on-eu-budget-and-ukraine-financing-as-ecb-succession-enters-summit-agenda",
+    "https://www.reuters.com/world/eu-budget-clash-germanys-merz-says-all-eu-states-must-back-ukraine-2026-11-10/",
+    "https://www.euronews.com/2026/11/09/no-deal-on-ukraine-aid-then-no-deal-on-eu-budget-merz-says",
+    "https://www.defenceukraine.com/en/insights/ukraine-support-loan-2027-tranche-2026/",
+    "https://apnews.com/article/europe-ukraine-loan-russia-summit-8c1baf00b55973a3534096aae2cc73a2",
+    "https://2eu.brussels/en/news/merz-ties-eu-budget-deal-to-all-27-member-states-helping-fund-ukraine",
+    "https://www.europarl.europa.eu/news/en/press-room/20260206IPR33903/parliament-approves-EU90-billion-ukraine-support-loan-package",
+    "https://www.irishtimes.com/world/europe/2026/11/18/von-der-leyen-confident-all-eu-members-will-back-45bn-loan-for-ukraine/",
+    "https://www.yahoo.com/news/politics/articles/von-der-leyen-confident-hungary-140700330.html",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/european-peace-facility-council-mobilises-additional-1-billion-in-new-military-aid-to-ukraine/",
+    "https://en.lb.ua/news/2026/10/26/46722_politico_eu_aims_seal_45bn.html",
+    "https://www.theguardian.com/world/2026/nov/18/eu-loan-ukraine-cash-crisis-defences-von-der-leyen-kyiv",
+    "https://www.reuters.com/world/eu-proposes-new-45-billion-loan-ukraine-2027-be-repaid-by-russia-2026-11-18/",
+    "https://24brussels.online/belgium/european-commission-proposes-e45bn-loan-for-ukraine/",
+    "https://euobserver.com/249710/eu-commission-confident-that-bulgaria-czech-republic-hungary-and-slovakia-will-join-new-e45bn-ukraine-loan/",
+    "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en",
+    "https://www.intellinews.com/eu-sets-out-45bn-ukraine-plan-for-2027-as-missed-reforms-cost-kyiv-265mn-480491/",
+    "https://refrance.fr/conseil-europeen-extraordinaire-costa-met-budget-pret-a-lukraine-et-succession-de-lagarde-sur-la-table-des-vingt-sept/",
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/11/20/forward-look-2026/pdf/",
+    "https://www.ft.com/content/08ad089e-bc58-4e0d-b458-a2c4e1dc86f2?syn-25a6b1a6=1",
+    "https://www.euronews.com/2026/10/30/eu-to-fast-track-45-billion-for-ukraine-amid-acute-financial-crunch",
+    "https://eualive.net/eu-tables-e45bn-ukraine-loan-as-slovakia-hungary-czechia-and-bulgaria-opt-out/",
+    "https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/"
+   ],
+   "reason": "The more likely outcome is no qualifying agreement inside the window. EU leaders do sometimes close Ukraine money in the room, but a first summit on a borrowing instrument tabled eight days earlier, with public refusals and an explicit link to the MFF, usually produces orientation language and a later decision point—not “agrees” or “endorses … and calls for swift adoption.”\n\nComparable cases point the same way. The €90bn Ukraine Support Loan was a December European Council product after a longer negotiation, not a decision at the first leaders’ discussion of the legal text. Multiannual budget deals almost never land in a single special summit. Late-October diplomatic framing already treated 26 November as the moment to discuss structure, with a year-end decision as the aim. That base rate for a qualifying political agreement at this meeting is low—on the order of one in four to one in three—before the Friday 23:59 cutoff.\n\nWhat moves this case: the Commission’s 18 November package is a concrete EU-borrowed loan of up to €45bn (€25bn military, €20bn budget), so the number and the instrument exist and are on the agenda. Costa’s 24 November invitation puts Ukraine financing beside the MFF and says he aims to finish on Friday, which is a mild upward pull, and the criterion counts opt-outs and civilian-only participation. Against that, Merz has made an all-27 contribution a precondition for other financial decisions, including the budget; Fico has ruled Slovakia out and Babis has refused new guarantees; diplomats expected Bulgaria to join that group. Coreper on 24 November, reported on 25 November, found only “broad recognition” of the need and then disagreement on burden-sharing, interest treatment and whether Ukraine and the MFF move together, with end-2026 still the working deadline. Euronews reported on 19 November that the civilian-strand opt-in is unlikely to move the holdouts because the objection is political. A deal first announced after 23:59 Friday would also be NO.\n\nThe obvious failure mode for a deferral is a late bilateral compromise: all states “in,” some only on the civilian €20bn, with conclusions that endorse the Commission’s €45bn loan and call for swift adoption—language the criterion treats as YES—even if the MFF itself slips.\n\nNEW FACTS\n- 2026-11-18 | The Commission proposed an Instrument for Coordinated Support to Ukraine: a limited-recourse loan of up to €45bn for 2027, financed by EU borrowing, with up to €25bn for military assistance and up to €20bn for budget support. | https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en\n- 2026-11-12 | Costa and von der Leyen said the 26–27 November European Council would discuss Ukraine’s urgent 2027 financing needs on the basis of the Commission’s proposal. | https://www.consilium.europa.eu/en/press/press-releases/2026/11/12/joint-statement-by-president-costa-and-president-von-der-leyen-following-their-meeting-with-president-zelenskyy-in-dublin/pdf/\n- 2026-11-10 | Merz wrote to Costa that a collective commitment by all member states, without exception, to help close Ukraine’s 2027 gap was a prerequisite for discussing further matters with financial implications, including the next EU budget. | https://www.reuters.com/world/eu-budget-clash-germanys-merz-says-all-eu-states-must-back-ukraine-2026-11-10/\n- 2026-11-19 | Euronews reported that the Commission had offered Slovakia, Czechia, Hungary and Bulgaria the option to join only the €20bn budget strand, and quoted Fico saying Slovakia would not take part in another loan to Ukraine. | https://www.euronews.com/2026/11/19/eu-plans-a-new-45bn-loan-to-ukraine-how-much-will-it-cost-and-will-it-be-repaid\n- 2026-11-24 | Costa’s invitation said the 26–27 November special European Council would focus on the MFF and Ukraine financing for 2027, start at 10:00 on Thursday, and that he foresaw concluding on Friday, with the goal of a timely agreement. | https://www.pressclub.be/press-releases/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/\n- 2026-11-25 | The Kyiv Independent, citing 24 November ambassador notes, reported “broad recognition” of the need to finance Ukraine but wrote that agreement ended there, and that the consensus timing for a deal was still the end of 2026. | https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/\n\nCOUNTER\nLeaders often close Ukraine financing in the room after Coreper has failed, and Costa has scheduled bilaterals with the explicit aim of finishing on Friday. A text that endorses the Commission’s €45bn loan and calls for swift adoption, with some states only on the civilian strand or outside the guarantees, would meet the criterion even if the MFF is left for December and even if not all 27 fully participate.",
+   "facts": [
+    {
+     "date": "2026-11-18",
+     "fact": "The Commission proposed an Instrument for Coordinated Support to Ukraine: a limited-recourse loan of up to €45bn for 2027, financed by EU borrowing, with up to €25bn for military assistance and up to €20bn for budget support.",
+     "url": "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en"
+    },
+    {
+     "date": "2026-11-12",
+     "fact": "Costa and von der Leyen said the 26–27 November European Council would discuss Ukraine’s urgent 2027 financing needs on the basis of the Commission’s proposal.",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/12/joint-statement-by-president-costa-and-president-von-der-leyen-following-their-meeting-with-president-zelenskyy-in-dublin/pdf/"
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "Merz wrote to Costa that a collective commitment by all member states, without exception, to help close Ukraine’s 2027 gap was a prerequisite for discussing further matters with financial implications, including the next EU budget.",
+     "url": "https://www.reuters.com/world/eu-budget-clash-germanys-merz-says-all-eu-states-must-back-ukraine-2026-11-10/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Euronews reported that the Commission had offered Slovakia, Czechia, Hungary and Bulgaria the option to join only the €20bn budget strand, and quoted Fico saying Slovakia would not take part in another loan to Ukraine.",
+     "url": "https://www.euronews.com/2026/11/19/eu-plans-a-new-45bn-loan-to-ukraine-how-much-will-it-cost-and-will-it-be-repaid"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Costa’s invitation said the 26–27 November special European Council would focus on the MFF and Ukraine financing for 2027, start at 10:00 on Thursday, and that he foresaw concluding on Friday, with the goal of a timely agreement.",
+     "url": "https://www.pressclub.be/press-releases/special-european-council-of-26-27-november-2026-invitation-letter-by-president-antonio-costa-to-the-members-of-the-european-council/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Kyiv Independent, citing 24 November ambassador notes, reported “broad recognition” of the need to finance Ukraine but wrote that agreement ended there, and that the consensus timing for a deal was still the end of 2026.",
+     "url": "https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/"
+    }
+   ],
+   "counter": "Leaders often close Ukraine financing in the room after Coreper has failed, and Costa has scheduled bilaterals with the explicit aim of finishing on Friday. A text that endorses the Commission’s €45bn loan and calls for swift adoption, with some states only on the civilian strand or outside the guarantees, would meet the criterion even if the MFF is left for December and even if not all 27 fully participate."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "In the official results of New Zealand's 7 November 2026 general election, which the Electoral Commission declares on Friday 27 November, National, ACT and NZ First together hold more than half of all seats in the House of Representatives.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:19:39Z",
+   "ambiguous": true,
+   "scenario": "If the Commission's allocation cannot be verified directly and RNZ and 1News report different seat totals that put the three parties on opposite sides of the majority threshold, two readers could choose different fallback sources. The criterion gives neither outlet priority.",
+   "yes_requires": "The Electoral Commission must declare official results within the stated 27 November 2026 Pacific/Auckland window, and National, ACT and NZ First must together receive strictly more than half of all House seats, including overhang seats. Subsequent judicial recounts do not change the resolution.",
+   "decided_by": "The Electoral Commission's official seat allocation on electionresults.govt.nz or elections.nz. If electionresults.govt.nz cannot be read, the criterion allows RNZ or 1News reporting of the Commission"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:19:44Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The New Zealand Electoral Commission must release the official seat allocation for the 7 November 2026 general election on 27 November 2026 (Pacific/Auckland time), and the combined seats awarded to National, ACT, and NZ First must be strictly greater than half of the total seats in the House of Representatives (including any overhang seats).",
+   "decided_by": "The New Zealand Electoral Commission (via electionresults.govt.nz or elections.nz), or RNZ or 1News reporting the official allocation on that day if the official site cannot be read."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:21:42Z",
+   "ambiguous": true,
+   "scenario": "The Commission sites disagree, or the results site cannot be read and RNZ and 1News report different official seat totals or House sizes that day; those sources are named as alternatives with no rule for which prevails.",
+   "yes_requires": "On 27 November 2026 (Pacific/Auckland), the Electoral Commission releases an official seat allocation in which National, ACT and NZ First combined hold strictly more than half of all House seats, overhang included (for example at least 66 of 131, 66 of 130, or 65 of 129).",
+   "decided_by": "The Electoral Commission’s official allocation on electionresults.govt.nz or elections.nz that day; if electionresults.govt.nz cannot be read, RNZ or 1News reporting of that official allocation. A lat"
+  }
+ ]
+}

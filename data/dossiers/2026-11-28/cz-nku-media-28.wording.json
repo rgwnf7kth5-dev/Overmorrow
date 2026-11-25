@@ -1,0 +1,32 @@
+{
+ "claim": "On Friday 27 November 2026 the Chamber of Deputies approves the Senate's constitutional amendment allowing the Supreme Audit Office (NKÚ) to audit Czech Television and Czech Radio (print 47), with at least 120 of the 200 deputies voting in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:34Z",
+   "ambiguous": true,
+   "scenario": "If ČTK or ČT24 reports a qualifying final vote that day but the official roll call is not published until the next day, one reader could resolve YES based on the explicit media alternative while another could withhold YES because the designated deciding source was not published that day.",
+   "yes_requires": "Between 09:00 and 23:59 Prague time on Friday, 27 November 2026, the Chamber of Deputies must adopt print 47, the Senate’s draft constitutional amendment, in a final vote with at least 120 votes recorded as ‘ano’. A final vote below 120, or no final vote in that window, means NO.",
+   "decided_by": "The criterion names the same-day psp.cz roll call as the deciding source, but also allows same-day reporting by ČTK or ČT24 as evidence for YES."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:18:37Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 09:00 and 23:59 (Europe/Prague) on Friday, 27 November 2026, the Czech Chamber of Deputies must hold a final vote on print 47 (the Senate's constitutional amendment regarding NKÚ audits of Czech Television and Czech Radio) and approve it with at least 120 'ano' (yes) votes.",
+   "decided_by": "The official roll call published on psp.cz on 27 November 2026 (with same-day reports by ČTK or ČT24 also cited in the criterion)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:29Z",
+   "ambiguous": true,
+   "scenario": "ČTK and ČT24 report that evening that the final vote on print 47 passed with at least 120 ano, but psp.cz publishes no roll call until 28 Nov, or shows fewer than 120 ano. One reader treats the media reports as sufficient for YES; the other treats only the same-day psp.cz roll call as decisive and resolves NO.",
+   "yes_requires": "Between 09:00 and 23:59 Europe/Prague on 27 November 2026, the Chamber of Deputies holds and adopts the final motion on print 47 (the Senate draft constitutional act amending Act 1/1993) with at least 120 \"ano\" votes.",
+   "decided_by": "The criterion names the psp.cz roll call of 27 Nov 2026 published that day as the deciding source, while also saying the result may be shown by that roll call or by a same-day ČTK or ČT24 report."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "On Friday 27 November 2026 the Chamber of Deputies passes the government's pension insurance amendment (print 270) in third reading, including the one-off CZK 2,000 payment to pensioners in 2027.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:05Z",
+   "ambiguous": true,
+   "scenario": "If ČTK or ČT24 reports that the bill passed with the payment within the window, but psp.cz does not publish one or both roll calls until the next day, one reader could resolve YES based on the explicit reporting alternative, while another could treat same-day publication of the designated roll calls as required.",
+   "yes_requires": "Between 09:00 and 23:59 Prague time on 27 November 2026, the Chamber of Deputies adopts the third-reading final passage motion on print 270, and the approved text includes the one-off CZK 2,000 payment to pension recipients in 2027 from Aleš Juchelka’s coalition amendment.",
+   "decided_by": "The designated deciding source is the same-day psp.cz roll-call record for the amendment and the final passage motion (“Závěrečný souhlas”). The criterion also names same-day reporting by ČTK or ČT24 "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:18:11Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 09:00 and 23:59 (Europe/Prague) on Friday, 27 November 2026, the Czech Chamber of Deputies must vote to pass the final passage motion (\"Závěrečný souhlas\") on print 270 (amendment to Act 155/1995 on pension insurance), and must also vote to adopt the amendment by Aleš Juchelka providing a one-off contribution of CZK 2,000 to pension recipients.",
+   "decided_by": "The official roll-call voting records on psp.cz for 27 November 2026 (or same-day reporting by ČTK or ČT24)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:18:31Z",
+   "ambiguous": true,
+   "scenario": "ČTK and ČT24 report on 27 Nov that the Chamber gave final consent to print 270 with the Juchelka CZK 2,000 amendment, but psp.cz does not publish that day's roll calls until 28 Nov, or publishes only the final-consent vote because the amendment was adopted on an earlier day. One reader resolves YES from the same-day media reports; another resolves NO because the named deciding source—same-day psp.cz roll calls of both the amendment vote and Závěrečný souhlas—is missing.",
+   "yes_requires": "Between 09:00 and 23:59 Europe/Prague on 27 November 2026, the Chamber of Deputies adopts the final-passage motion on print 270 (amendment to Act 155/1995 on pension insurance), and the text it approves includes the one-off CZK 2,000 contribution to pension recipients from the coalition amendment filed by Aleš Juchelka.",
+   "decided_by": "Named deciding source is the psp.cz roll calls of 27 Nov 2026 for the amendment vote and \"Závěrečný souhlas\", published the same day; the YES clause also treats same-day ČTK or ČT24 reports as showing"
+  }
+ ]
+}

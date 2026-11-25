@@ -1,0 +1,32 @@
+{
+ "claim": "According to the Ukrainian Air Force's first summary of the overnight attack published on Friday 27 November 2026, Russia launched at least 150 attack drones at Ukraine in the night of 26–27 November.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:59Z",
+   "ambiguous": true,
+   "scenario": "If the attack occurs in the window but the first summary is published after noon Kyiv time that Friday, one reader could count it because the window governs the attack, while another could reject it because they read the window as also setting a publication cutoff.",
+   "yes_requires": "An overnight attack occurs within the stated Kyiv-time window, and the Ukrainian Air Force's first summary published on Friday, 27 November 2026, for that attack reports a ua-drones-28 UAV total of at least 150.",
+   "decided_by": "The Ukrainian Air Force's first Friday summary for the night of 26–27 November, using the UAV total defined by ua-drones-28."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:19:09Z",
+   "ambiguous": true,
+   "scenario": "1. The criterion states the claim is 'Pending if no summary is published', which directly contradicts the event window rule that 'The claim is NO if the event does not happen in this window' (e.g., if the summary is not published or is published after 12:00 Kyiv time on 27 Nov). 2. The exact counting rule depends on an external reference ('ua-drones-28') not fully included here; without it, readers could disagree on whether 'attack drones' (claimed) or 'UAV total' (criterion) includes reconnaissance drones and decoy/unidentified UAVs if the Air Force reports them separately from Shahed attack ",
+   "yes_requires": "The Ukrainian Air Force must publish a summary of the overnight attack of 26–27 November 2026 before 12:00:00 Europe/Kyiv on Friday 27 November 2026, and the first such summary must state that Russia launched 150 or more UAVs/attack drones.",
+   "decided_by": "The Ukrainian Air Force's first published summary of the overnight attack on Friday 27 November 2026 (and the definition in ua-drones-28)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:28Z",
+   "ambiguous": true,
+   "scenario": "If no such summary is published, the criterion says Pending while the event-window rule says NO. A Friday summary issued after 12:00 Europe/Kyiv, or one that separates attack drones from other UAVs, would likewise let two readers treat the same text as in-scope and at least 150 or as out of window or below 150.",
+   "yes_requires": "The Ukrainian Air Force's first summary published on Friday 27 November 2026 for the night of 26–27 November must report a UAV total of 150 or more.",
+   "decided_by": "That Air Force summary's UAV total (the value defined as ua-drones-28), not an independent count of launches."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "On Friday 27 November 2026 the Chamber of Deputies passes the government's extraordinary refinery tax bill (amendment to the Income Tax Act, print 311, \"lex Orlen\") in third reading with at least 90 deputies voting in favour.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:18:04Z",
+   "ambiguous": true,
+   "scenario": "If psp.cz is unreachable and ČTK reports 90 yes votes while ČT24 reports 89, the criterion gives neither fallback source priority. Readers relying on different permitted sources could reach opposite resolutions.",
+   "yes_requires": "Between 09:00 and 23:59 Prague time on Friday, 27 November 2026, the Chamber of Deputies must adopt the third-reading final passage motion on print 311, in any amended form, with at least 90 votes recorded as ‘ano’.",
+   "decided_by": "The psp.cz roll call for that final passage vote, published on 27 November. If psp.cz is unreachable, the yes count reported that day by ČTK or ČT24."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:18:05Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 09:00 and 23:59 (Europe/Prague) on Friday, 27 November 2026, the Czech Chamber of Deputies must adopt the final third-reading passage motion for Parliamentary Print 311 (in any amended form) with at least 90 'ano' (yes) votes.",
+   "decided_by": "The official roll call (hlasování) on psp.cz for 27 November 2026, or the yes count reported by ČTK or ČT24 that day if psp.cz is unreachable."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:01Z",
+   "ambiguous": true,
+   "scenario": "The passage vote occurs inside the window, but psp.cz stays reachable and posts the roll call only after midnight on 28 Nov, while ČTK reports 92 ano and ČT24 reports 88 that evening. One reader treats the missing same-day psp.cz record as decisive, finds the fallback inapplicable, and resolves NO; another accepts the later official roll call of that vote, or either outlet's count, and resolves YES.",
+   "yes_requires": "Between 09:00 and 23:59 Europe/Prague on 27 November 2026, the Chamber adopts the final-passage motion on print 311 (consent to the government bill, sněmovní tisk 311, in any amended form) and the psp.cz roll call for that vote shows at least 90 ano votes.",
+   "decided_by": "The psp.cz hlasování roll call of 27 Nov 2026 published the same day; if psp.cz is unreachable, the yes-count reported that day by ČTK or ČT24."
+  }
+ ]
+}

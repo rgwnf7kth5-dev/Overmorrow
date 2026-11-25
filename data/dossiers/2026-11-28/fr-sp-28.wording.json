@@ -1,0 +1,32 @@
+{
+ "claim": "At its scheduled review of France on Friday 27 November 2026, S&P Global Ratings keeps France's long-term sovereign rating at A+ with a stable outlook.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-25T19:19:17Z",
+   "ambiguous": true,
+   "scenario": "If S&P postpones the review and publishes nothing on 27 November, one reader would resolve YES under the explicit silence rule, while another would resolve NO under the final sentence saying the claim is NO if the event does not happen in the window.",
+   "yes_requires": "On 27 November 2026, from 00:00 through 23:59 Paris time, S&P Global Ratings either affirms France’s long-term foreign- and local-currency sovereign ratings at A+ with a stable outlook or publishes no rating action. A downgrade, upgrade, outlook change, or CreditWatch placement announced in that window makes the result NO.",
+   "decided_by": "The date S&P announced the action, as established by its research update on disclosure.spglobal.com, reporting by AFP, Reuters, Les Echos, or Le Monde, or a statement from the French Ministry of the E"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-25T19:19:25Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "On Friday, 27 November 2026 (Europe/Paris time), S&P Global Ratings must either affirm France's long-term foreign- and local-currency sovereign rating at A+ with a stable outlook (with no CreditWatch placement) or publish no rating action at all for France on that day.",
+   "decided_by": "S&P Global Ratings, as evidenced by S&P's research update (disclosure.spglobal.com) or reports by AFP, Reuters, Les Echos, Le Monde, or the French Ministry of the Economy."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-25T19:19:55Z",
+   "ambiguous": true,
+   "scenario": "S&P publishes no rating action on 27 Nov, or only announces that the scheduled review is postponed. The criterion treats silence as YES, while the event-window rule says NO if the keeping/review does not occur in the window, and a postponement notice is neither an affirmation nor a listed NO action, so careful readers can resolve opposite ways.",
+   "yes_requires": "By 23:59 Europe/Paris on 27 Nov 2026, S&P has announced neither a downgrade of France’s long-term foreign- and local-currency sovereign rating from A+, nor an outlook change from stable, nor a CreditWatch placement, nor an upgrade—either by affirming A+/stable or by publishing no such action that day.",
+   "decided_by": "S&P Global Ratings via its research update on disclosure.spglobal.com, or AFP, Reuters, Les Echos, Le Monde, or a French Ministry of the Economy statement (including a post-midnight report of an actio"
+  }
+ ]
+}
