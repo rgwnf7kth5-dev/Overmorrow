@@ -1,0 +1,61 @@
+# fr-sp-28
+- **Claim:** At its scheduled review of France on Friday 27 November 2026, S&P Global Ratings keeps France's long-term sovereign rating at A+ with a stable outlook.
+- **Criterion:** YES if by 23:59 on Fri 27 Nov 2026 (Europe/Paris) S&P Global Ratings has announced no downgrade of France's long-term foreign- and local-currency sovereign rating from A+, no revision of the outlook from stable, and no CreditWatch placement on 27 Nov (that is, it affirms A+/stable or publishes nothing that day). NO if on 27 Nov S&P announces a downgrade, an outlook revision (negative or positive), a CreditWatch placement or an upgrade, as shown by S&P's research update (disclosure.spglobal.com) or reported that evening or night by AFP, Reuters, Les Echos, Le Monde or a statement of the French Ministry of the Economy. A report published after midnight of an action announced on 27 Nov counts.
+- **Alternative (narrower) wording if the desk prefers the headline question:** "S&P downgrades France's long-term rating below A+ on 27 Nov 2026" — YES only on a downgrade; an outlook change alone is NO.
+- **Event window:** 2026-11-27T00:00:00+01:00 to 2026-11-27T23:59:00+01:00 (Europe/Paris); S&P publishes calendar actions after the close of EU markets, typically about 22:00–23:30 CET.
+- **Evidence expected:** S&P research update on disclosure.spglobal.com; AFP/Reuters flash and a Ministry of the Economy statement the same evening (May 2026: AFP reported the minister's reaction the same night). evidence_at about 2026-11-28T09:00+01:00.
+- **Resolves by:** 2026-11-28T05:00:00+01:00
+- **Written at:** 2026-11-25T19:02:00+01:00
+
+- **Desk note (25 Nov, 19:05):** claim phrased on the status quo (rating and outlook kept) because a negative action is the less likely outcome; YES and NO are the exact mirror of the researcher's draft. The sections below were written for that draft: where they say a silence or an affirmation is NO, read YES under the claim above (no publication on 27 Nov resolves YES).
+
+## Schedule
+- Fondation Jean-Jaurès end-of-year calendar (published 2026-10-08, read 2026-11-25T17:49Z): "27 : notation de la dette française, S&P" (in the November block, after "19 : … début de l'examen du PLF 2027" [Sénat]); also "23 : notation de la dette française, Moody's" (October) and "11 : notation de la dette française, KBRA" (December) — https://www.jean-jaures.org/publication/le-calendrier-de-la-fin-dannee-2026/. Our agenda (data/planning/agenda.json, added 13 Nov) cites the same source, status "reported".
+- S&P's own EU sovereign calendar could not be read (spglobal.com calendar URLs tried: 404 / empty). The MNI 2026 sovereign calendar is a PDF (not readable by script). Pattern fits: S&P's previous France calendar dates were Fri 28 Nov 2025 and Fri 29 May 2026 (sources below), i.e. last Friday of May and November.
+- On a calendar date S&P may publish nothing when it takes no action: on 29 May 2026 "L'agence n'a publié aucun commentaire, laissant sa notation telle quelle" — MoneyVox/AFP https://www.moneyvox.fr/placement/actualites/109044/dette-de-la-france-standard-and-poors-laisse-la-note-inchangee (published 2026-05-30 13:30, read 2026-11-25T17:49Z); abcbourse "L'agence, qui n'a pas diffusé de communiqué officiel, a assorti la nouvelle note de la France d'une perspective 'stable', selon le ministère" — https://www.abcbourse.com/marches/sp-maintient-la-note-de-credit-de-la-france-avec-une-perspective-stable_697581 (published 2026-05-29 23:45, read 17:48Z). Hence silence = NO under the criterion.
+
+## Facts
+- Current S&P rating: A+, outlook stable. Downgraded AA- → A+ (outlook stable) on Fri 17 Oct 2025, off-calendar — Tunisie Numérique https://www.tunisienumerique.com/sp-abaisse-la-note-de-la-france-a-a/ (published 2025-10-17 21:19Z, read 17:48Z) "avoir abaissé la note de la France d'un cran, passant de AA- à A+, tout en maintenant une perspective stable"; unchanged on 28 Nov 2025 and affirmed A+ stable on 29 May 2026 — abcbourse (above) "Lors de son dernier exercice, le 28 novembre 2025, S&P avait laissé la notation de la France à A+. Mais elle l'avait dégradée d'un cran un mois auparavant, le 17 octobre, en avance sur son calendrier".
+- Fitch: A+ affirmed, outlook cut to negative on Fri 30 Oct 2026; debt seen rising from 115.7% of GDP (2025) to 124% in 2028 (previous review: 122.7%) — Malay Mail/AFP https://www.malaymail.com/news/money/2026/10/31/can-france-survive-its-debt-fitch-issues-major-warning-to-the-eus-second-largest-economy/241355 (published 2026-10-31 09:32 MYT, read 17:49Z) "maintained France's credit rating at A+ but downgraded its outlook from 'stable' to 'negative'"; Fortuneo/AFP https://bourse.fortuneo.fr/actualites/fitch-maintient-la-note-a-de-la-france-mais-abaisse-sa-perspective-6069291 (read 17:48Z) "Une croissance plus faible, une nouvelle détérioration budgétaire et des rendements plus élevés…"; Q3 GDP −0.1% after stagnation in Q2 and a fall in Q1; Fitch had kept rating and outlook at its late-August review.
+- Moody's: Aa3 negative kept on 23/24 Oct 2026 although "Investoren hatten eine Abstufung eingepreist" — Börsen-Zeitung https://www.boersen-zeitung.de/unternehmen-branchen/moodys-sorgt-fuer-ueberraschung (published 2026-10-24 10:06Z, read 17:48Z) "Das Aa3-Rating setzt voraus, dass ein Haushalt 2027 zum Defizitabbau verabschiedet wird, während Finanzierungskosten und soziale Spannungen in den kommenden Monaten etwas nachlassen werden". Moody's also kept Aa3 negative on 10 Apr 2026 (abcbourse above).
+- Scope: downgraded AA- → A+ (outlook stable) on Fri 18 Sep 2026, citing "la forte hausse" of French yields since January 2026 and political fragmentation — MoneyVox https://www.moneyvox.fr/placement/actualites/110432/la-note-de-la-dette-de-la-france-degradee-par-agence-scope-ratings (published 2026-09-19 09:08, read 17:48Z).
+- Budget: the Assemblée nationale rejected both the PLF 2027 and the PLFSS 2027 at first reading; the Sénat began examining the PLF around 23 Nov; PM Lecornu's letter (24 Nov) asks for €6bn of extra savings on top of €43bn in the bill because of lower growth estimates; options named: 49.3 or ordonnances — Public Sénat https://www.publicsenat.fr/actualites/politique/budget-2027-les-senateurs-etrillent-la-lettre-au-pere-noel-de-sebastien-lecornu-qui-appelle-les-parlementaires-au-compromis (published 2026-11-24 17:07Z, read 2026-11-25T17:49Z) "l'Assemblée nationale ayant rejeté ces deux textes en première lecture … l'hypothèse d'une adoption par un vote du Parlement semble hautement improbable. Deux possibilités … soit le déclenchement du 49-3 … soit le recours aux ordonnances." Our 25 Nov planning file records the Assembly vote on the PLF as 458–0 (not re-read tonight). The Jean-Jaurès calendar lists constitutional deadlines for Part 1 (40 days) and Part 2 (70 days) of the PLF; the PLFSS joint committee meets on 26 Nov (our fr-plfss-27).
+- Last year's analog: before the 28 Nov 2025 date, commentators expected S&P to wait after its October downgrade; it published no change — Idéal Investisseur https://www.ideal-investisseur.fr/en/economy/france-s-credit-rating-why-s-p-should-hold-off-32542.html (published 2025-11-27 08:37, read 17:48Z).
+- Previews for 27 Nov 2026: none found tonight (two searches). No analyst survey on S&P's expected action found.
+
+## Base rate
+- hint (n = 8): scheduled France reviews by the major agencies Sep 2025–Oct 2026 found in sources read tonight: Fitch 12 Sep 2025 downgrade; S&P 28 Nov 2025 no action; Moody's 10 Apr 2026 no action; S&P 29 May 2026 no action; Fitch late Aug 2026 no action; Scope 18 Sep 2026 downgrade; Moody's 23 Oct 2026 no action; Fitch 30 Oct 2026 outlook to negative → negative action 3 of 8. (S&P's 17 Oct 2025 downgrade was off-calendar and is excluded.) Sources: pages above; Fitch Sep 2025 from La Libre headline in search results (https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/, not opened).
+- S&P alone on France: hint (n = 2) calendar dates since its Oct 2025 downgrade: 0 of 2 actions.
+- Wider class of ≥ 10 (e.g. all S&P EU calendar reviews and the share with a rating or outlook change): none found or computed tonight; the S&P calendar and action history were not readable.
+- Same question asked before in our editions: no (closest: uk-moodys-22, Moody's UK review 20 Nov 2026, a status-quo claim).
+
+## Case record
+## Case record: fr-sovereign-rating
+No earlier claim of this case in our editions.
+
+(Related running story `fr-budget-2027`: fr-plfss-19 happened; eu-dbp-25 and fr-plfss-27 pending.)
+
+## Schedule slip
+- `other-scheduled`: rate 0.091 (prior 0.07, own 11/120) [estimate] — `node scripts/refdata/slip.mjs`, run 2026-11-25T17:50Z. For this claim a "slip" (no publication) resolves NO by design, so it adds to NO rather than voiding. S&P can also act off-calendar only in exceptional cases (it did on 17 Oct 2025); no sign of that this week.
+
+## Risks
+- Status quo (NO): S&P moved a full notch in Oct 2025 with a stable outlook and has since twice made no change; it may wait for the budget's fate (49.3/ordonnances in December) and the April–May 2027 presidential election.
+- Negative action (YES): Fitch moved to negative outlook on 30 Oct citing weaker growth, fiscal slippage and higher yields; Scope downgraded in Sep; GDP fell in Q1 and Q3 2026; the Assembly rejected the PLF; the PM now seeks €6bn more savings because growth was revised down. S&P's own Oct 2025 trigger language (deficit worse than projected or growth weaker) is not re-read tonight.
+- Timing: publication after 23:59 Paris time would be NO; S&P usually publishes before midnight CET.
+- Interpretation: an affirmation that only changes the outlook counts as YES under the recommended wording, NO under the narrower alternative.
+
+## Sources
+- https://www.jean-jaures.org/publication/le-calendrier-de-la-fin-dannee-2026/
+- https://www.abcbourse.com/marches/sp-maintient-la-note-de-credit-de-la-france-avec-une-perspective-stable_697581
+- https://www.moneyvox.fr/placement/actualites/109044/dette-de-la-france-standard-and-poors-laisse-la-note-inchangee
+- https://www.tunisienumerique.com/sp-abaisse-la-note-de-la-france-a-a/
+- https://fr.businessam.be/?p=191934
+- https://www.malaymail.com/news/money/2026/10/31/can-france-survive-its-debt-fitch-issues-major-warning-to-the-eus-second-largest-economy/241355
+- https://bourse.fortuneo.fr/actualites/fitch-maintient-la-note-a-de-la-france-mais-abaisse-sa-perspective-6069291
+- https://www.boersen-zeitung.de/unternehmen-branchen/moodys-sorgt-fuer-ueberraschung
+- https://www.moneyvox.fr/placement/actualites/110432/la-note-de-la-dette-de-la-france-degradee-par-agence-scope-ratings
+- https://www.publicsenat.fr/actualites/politique/budget-2027-les-senateurs-etrillent-la-lettre-au-pere-noel-de-sebastien-lecornu-qui-appelle-les-parlementaires-au-compromis
+- https://www.ideal-investisseur.fr/en/economy/france-s-credit-rating-why-s-p-should-hold-off-32542.html
+- https://whbl.com/2025/09/10/new-french-pm-faces-same-fiscal-headaches-rating-agency-sp-warns/ (Reuters copy, 2025 background: "S&P's next review is on November 28")
+- Unreachable: euronews.com and fr.euronews.com (HTTP 406), sudradio.fr article (404), spglobal.com sovereign calendar (404/empty).
+- WebSearch: "S&P France note souveraine 27 novembre 2026"; "S&P France rating review November 27 2026 budget 2027 Assemblée rejet downgrade expected"; "S&P vendredi note de la France perspective dégradation attendue PLF 2027 rejeté 49.3 Lecornu novembre"; "\"S&P\" France rating Friday A+ stable outlook negative downgrade risk November 2026 economists"

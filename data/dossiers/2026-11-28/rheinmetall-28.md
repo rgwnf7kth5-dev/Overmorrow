@@ -1,0 +1,59 @@
+# rheinmetall-28
+- **Claim:** At its Capital Markets Day, whose call is on Friday 27 November 2026 at 10:00 CET, Rheinmetall cuts its 2030 group sales target below the "around €50bn" set in November 2025.
+- **Criterion:** YES if between 26 Nov 2026 00:00 and 27 Nov 2026 23:59 (Europe/Berlin) Rheinmetall publishes (press release, ad-hoc notice, CMD presentation, or statement by the CEO or CFO in the CMD call) a group sales target or ambition for 2030 below €50bn (for a range, the midpoint decides), as shown on rheinmetall.com or reported by dpa-AFX, Reuters, Bloomberg or Börsen-Zeitung. NO if in that window it publishes or confirms a 2030 group sales target of €50bn or more ("around €50bn" counts as €50bn), or publishes no 2030 group sales figure by 23:59 on 27 Nov (including if it withdraws the target without giving a new 2030 figure). Segment targets or order-backlog figures alone do not count.
+- **Event window:** 2026-11-26T00:00:00+01:00 to 2026-11-27T23:59:00+01:00 (Europe/Berlin); main event the CMD call Fri 27 Nov 10:00 CET. The window includes Thursday because the CMD runs 25–27 Nov in Hamburg and an ad-hoc pre-release is possible.
+- **Evidence expected:** press release / presentation on rheinmetall.com around 10:00 CET 27 Nov (or earlier ad hoc); dpa-AFX/Reuters headlines within the hour.
+- **Resolves by:** 2026-11-28T05:00:00+01:00
+- **Written at:** 2026-11-25T18:58:00+01:00
+
+- **Desk note (25 Nov, 19:05):** claim turned to the cut (the outcome analysts expect, see facts) so that the headline reports what Rheinmetall publishes; the criterion is the mirror of the researcher's draft except that a withdrawal without a new 2030 figure now resolves NO.
+
+## Schedule
+- Rheinmetall event page (primary, re-read tonight): "Date 25/11 – 27/11/2026 … Event location Hamburg … Link to webcast for the Capital Markets Day Call on November 27 at 10:00 CET" — https://www.rheinmetall.com/en/events/2026/ir/capital-markets-day (read 2026-11-25T17:47Z). Unchanged from yesterday's reading.
+- Rheinmetall CMD archive page: "Capital Markets Day in Hamburg, 26 – 27 November 2026 … Link to webcast for the Capital Markets Day call on November 27 at 10:00 CET" — https://www.rheinmetall.com/en/investor-relations/calendar-and-events/capital-markets-day (read 2026-11-24T17:55Z, from rheinmetall-27 dossier; not re-read).
+- Citi (via ad-hoc-news, 13 Nov): "Citi expects Rheinmetall's capital markets day on November 27, 2026, to clarify the group's medium-term direction." — https://www.ad-hoc-news.de/boerse/news/corporate-news/rheinmetall-stock-citi-cuts-target-to-1-099-euros/70505919 (published 2026-11-13 17:31 CET, read 2026-11-25T17:48Z). JPMorgan via kapitalmarktexperten: "Am 27. November findet der Kapitalmarkttag statt." (below).
+- **Nothing published yet:** Rheinmetall's press list shows no item after 24 Nov (latest: bobsleigh sponsorship, 24/11/2026; before that 19/11 Netherlands MoU, 09/11 Belgium Skyranger, 05/11 Q3 statement) — https://www.rheinmetall.com/en/media/news-watch (read 2026-11-25T17:47:55Z). No report of new 2030 targets on 25 Nov found (one search). The story is alive; 26 Nov remains a possible pre-release day (covered by the window).
+
+## Facts
+- Current target (Nov 2025 CMD, 18 Nov 2025): about €50bn sales in 2030, operating margin from 15% to above 20%, cash conversion above 50% — Börsen-Zeitung https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-strebt-position-als-rundumanbieter-mit-50-mrd-euro-umsatz-an (published 2025-11-18 16:32, read 2026-11-24T17:55Z) "strebt nun bis 2030 eine Verfünffachung des Jahresumsatzes auf rund 50 Mrd. Euro an". Reuters copy (euronext, 6 Aug 2026) still describes the company as "targeting annual sales of up to €50 billion by 2030"; Papperger "stuck with a target of reaching €5 billion in annual naval revenue by 2030" — https://live.euronext.com/en/financial-news/rheinmetall-cuts-outlook-after-frigate-setback-sticks-naval-goals (published 2026-08-06 15:16Z, read 2026-11-25T17:48Z).
+- FY2026 guidance cut on 5 Nov 2026: sales about €13.2bn, operating margin about 18.5%; 9M sales €8.4bn (+38%), operating result above €1.3bn (+69%); Rheinmetall Backlog €78.0bn at 30 Sep (prior year €56.7bn) — Rheinmetall Q3 release https://www.rheinmetall.com/en/media/news-watch/news/2026/11/2026-11-05-rheinmetall-news-quarterly-statement-q3 (read 2026-11-25T17:48Z) "Rheinmetall now expects consolidated sales to rise to around €13.2 billion for the 2026 financial year." The part of the release read does not mention 2030.
+- Earlier 2026 cut (August, scrapped frigate programme) — euronext/Reuters above; defensenews https://defensenews.com/global/europe/2026/08/06/rheinmetall-scales-down-2026-sales-outlook-on-scrapped-frigate-program (headline seen in search, not opened).
+- JPMorgan (David Perry), 5 Nov: target price 1,350 → 1,150 EUR, Neutral; "Auch die Ziele für 2030 dürften nach seiner Einschätzung sinken, vermutlich deutlich." — kapitalmarktexperten https://www.kapitalmarktexperten.de/rheinmetall-aktie-der-ausblick-wird-wieder-gekappt/ (published 2026-11-05 10:10Z, read 2026-11-25T17:48Z). Same page: Citigroup 1,374 EUR Buy ("reine Verzögerung"), Jefferies Buy 1,350, RBC "klar negativ". stock3 (5 Nov): fifth sales or profit warning in eleven months — https://stock3.com/news/rheinmetall-gewinnwarnung-sind-jetzt-auch-die-ziele-2030-jetzt-in-gefahr-17376273 (read 2026-11-24T17:55Z).
+- Deutsche Bank (Christoph Laskawi), 27 Oct: target 1,800 → 1,650 EUR, Buy; "Die Investoren erwarteten eine Senkung der Ziele für 2030 und würden ein zu ehrgeiziges Narrativ abstrafen. Gleichzeitig würde eine deutliche Senkung zu sinkenden Gewinnerwartungen führen" — dpa-AFX via Deutsche Börse https://live.deutsche-boerse.com/news/ANALYSE-FLASH-Deutsche-Bank-senkt-Rheinmetall-Ziel-auf-1650-Euro---Buy-db3c828b-efd9-4bc3-b1da-b13069631ba8 (published 2026-10-27 12:20, read 2026-11-25T17:48Z).
+- Citi, 13 Nov: "Citi cut its 2030 sales forecast by 15% to 30.3 billion euros and reduced its EBIT estimate by 27% to 5.6 billion euros. The revised sales view stands below both consensus expectations and the company's guidance" — ad-hoc-news (above). Target 1,099 EUR, Buy.
+- Berenberg: headline "Berenberg thinks Rheinmetall needs a 2030 guidance reset" (finimize; page refuses scripted reading, HTTP 405 on 24 Nov; content not checked).
+- stock-world commentary (27 Oct): "Vorsichtigere Ziele wären kein strategischer Rückschritt" — https://www.stock-world.de/rheinmetall-aktie-bewaehrungsprobe-kapitalmarkttag/ (published 2026-10-27 14:58Z, read 17:48Z). Opinion, background only.
+- Arithmetic: €50bn in 2030 from about €13.2bn in 2026 requires about 40% compound annual growth over four years; 2026 growth on 9M was 38%.
+
+## Base rate
+- No class of "company keeps/cuts a long-term target at a CMD after repeated guidance cuts" was built or found. hint (n = 1): Rheinmetall itself, 2026 — two cuts of the annual guidance (Aug, Nov) while keeping the 2030 ambition until now (euronext Aug; no 2030 change reported since). Wider class of ≥ 10: none found tonight.
+- Same question asked before in our editions: no. Related claim rheinmetall-1 (6 Nov edition, "Rheinmetall keeps guidance") did not happen (see case record).
+
+## Case record
+## Case record: rheinmetall-earnings
+Earlier claims of this running story in our editions, oldest first (1; 0 still pending). Outcomes are from data/resolutions.
+- edition 2026-11-06 (events of 2026-11-05), rheinmetall-1: Rheinmetall keeps guidance — did not happen
+
+(Case key: reused `rheinmetall-earnings`, the running guidance story; yesterday's proposed `rheinmetall-targets` has no claims.)
+
+## Schedule slip
+- `company-event`: rate 0.005 (prior 0.02, own 0/33) [estimate] — `node scripts/refdata/slip.mjs`, run 2026-11-25T17:50Z. The CMD is under way in Hamburg (25–27 Nov); the call date is on Rheinmetall's own page. Timing risk is a pre-release on 26 Nov, which the window covers.
+
+## Risks
+- Cut (NO): every analyst note read (JPMorgan, Deutsche Bank, Citi, Berenberg headline) expects or calls for lower 2030 targets; Citi's own 2030 sales forecast is €30.3bn.
+- Ambiguity: Rheinmetall may present a range (e.g. "€40–50bn"), a target including/excluding naval or JVs, or an "ambition" vs "guidance"; the midpoint rule decides ranges. It may present 2028 targets and keep 2030 only as "potential" — counts as YES only if a 2030 figure ≥ €50bn is stated or confirmed.
+- No 2030 figure at all (NO under the criterion).
+- Keep (YES): management kept the €5bn naval 2030 goal in August and a backlog of €78bn; a CEO who has repeatedly defended the ambition may restate "up to €50bn" with a later ramp.
+
+## Sources
+- https://www.rheinmetall.com/en/events/2026/ir/capital-markets-day
+- https://www.rheinmetall.com/en/media/news-watch (press list; resolves to /en/search/media)
+- https://www.rheinmetall.com/en/media/news-watch/news/2026/11/2026-11-05-rheinmetall-news-quarterly-statement-q3
+- https://www.ad-hoc-news.de/boerse/news/corporate-news/rheinmetall-stock-citi-cuts-target-to-1-099-euros/70505919
+- https://live.deutsche-boerse.com/news/ANALYSE-FLASH-Deutsche-Bank-senkt-Rheinmetall-Ziel-auf-1650-Euro---Buy-db3c828b-efd9-4bc3-b1da-b13069631ba8
+- https://www.kapitalmarktexperten.de/rheinmetall-aktie-der-ausblick-wird-wieder-gekappt/
+- https://www.stock-world.de/rheinmetall-aktie-bewaehrungsprobe-kapitalmarkttag/
+- https://live.euronext.com/en/financial-news/rheinmetall-cuts-outlook-after-frigate-setback-sticks-naval-goals
+- From rheinmetall-27 (read 2026-11-24, not re-read): https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-strebt-position-als-rundumanbieter-mit-50-mrd-euro-umsatz-an ; https://stock3.com/news/rheinmetall-gewinnwarnung-sind-jetzt-auch-die-ziele-2030-jetzt-in-gefahr-17376273 ; https://www.rheinmetall.com/en/investor-relations/calendar-and-events/capital-markets-day
+- Unreachable: finimize.com (HTTP 405, 24 Nov).
+- WebSearch: "Rheinmetall Kapitalmarkttag Hamburg Ziele 2030 Papperger"; "Rheinmetall capital markets day 2030 target cut analysts expect November 2026"

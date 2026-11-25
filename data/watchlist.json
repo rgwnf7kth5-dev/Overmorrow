@@ -1340,6 +1340,76 @@
           ],
           "note": "Fuel caps paused their decline on 17 Nov then fell again; no change. Weekly re-forecast by all five forecasters.",
           "note_cs": "Stropy cen paliv 17. 11. přestaly klesat, pak opět klesly; beze změny. Týdenní nová předpověď všech pěti prognostiků."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.05,
+          "combined": 0.045,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.04,
+              "reason": "October flash 2.4% (consensus 2.5, rms surprise 0.1, series.json); a +0.6pp jump in y/y CPI in one month happens in well under 10% of Czech months outside shock periods, and falling capped fuel prices push the other way.",
+              "p_blind": 0.04,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.05,
+              "reason": "October CPI ran about 2.4-2.5% (consensus 2.5); fuel caps were extended to 31 Dec on 23 Nov and capped prices keep falling (ČTK 25 Nov), so a jump to 3.0% in November is very unlikely.",
+              "p_blind": 0.05,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.06,
+              "reason": "Case for YES: a low November 2025 base adds roughly 0.3 pt and food or energy could surprise. From October's 2.4% with fuel caps still falling, reaching 3.0% needs about +0.3% m/m in a month that is usually flat, which is a tail.",
+              "p_blind": 0.07,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.04,
+              "reason": "No market; model: October was 2.4% y/y (consensus 2.5, rms surprise 0.1), so 3.0% needs a +0.6pp jump in one month while capped fuel prices keep falling.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.04,
+              "reason": "October came in around 2.4-2.5% and fuel caps keep pump prices falling; 3.0% needs a surprise of about 0.5 points.",
+              "p_blind": 0.1,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. The government extended fuel price caps to 31 Dec (23 Nov) and the caps keep falling (petrol CZK 38.80, diesel 43.07 per litre); October inflation was 2.4%; no change.",
+          "note_cs": "Týdenní přepočet. Vláda 23. listopadu prodloužila cenové stropy pohonných hmot do 31. prosince a stropy dál klesají (benzin 38,80 Kč, nafta 43,07 Kč za litr); říjnová inflace činila 2,4 %; beze změny."
         }
       ],
       "result": null
@@ -1758,6 +1828,76 @@
           "market": null,
           "note": "Speaker Okamura said on 22 Nov that the coalition and SPD are close to a final deal on the bill, which goes to second reading at the sitting opening 24 Nov; a third reading still needs a December slot, with the budget competing for floor time.",
           "note_cs": "Předseda Sněmovny Okamura 22. listopadu uvedl, že koalice a SPD jsou blízko finální dohody o novele, která jde do druhého čtení na schůzi od 24. listopadu; třetí čtení ale potřebuje prosincový termín a o čas soupeří s rozpočtem."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.67,
+          "combined": 0.674,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.66,
+              "reason": "Government bills that reach a third-reading vote pass 256/258 and first-reading-approved government bills 290/290 eventually, but third readings are dealt with at their meeting only 19-36% (cz-chamber.json); with the coalition-SPD deal, second reading on 26 Nov and two sittings left (1-4, 15-18 Dec) I start ~0.70, trimmed for budget competition for floor time and possible second-reading spillover.",
+              "p_blind": 0.7,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.7,
+              "reason": "Coalition and SPD struck a deal on 25 Nov (ČTK) softening the bill but keeping the 80%->65% cut; second reading 26 Nov, and the 1-4 and 15-18 Dec sittings leave time for a third reading before the January start, though the budget competes for floor time and the opposition can obstruct.",
+              "p_blind": 0.72,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.66,
+              "reason": "Case for NO: second reading can slip behind print 301 and the budget, the 14-day gap before third reading (unless shortened) leaves only 15-18 Dec, and the opposition can obstruct. But the SPD deal removes the main blocker and the cabinet wants the cut from January, so passage is more likely than not.",
+              "p_blind": 0.68,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.55,
+              "reason": "No market; anchor on coalition-majority government bills reaching a third-reading vote (nearly always pass once voted), discounted for timing: the 14-day gap after a 26 Nov second reading points to the 15-18 Dec sitting, which the budget and opposition obstruction compete for. Up from 0.42 because the SPD deal removes the revolt risk and the cabinet wants it in force from January.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.78,
+              "reason": "Coalition-SPD deal reached 25 Nov, second reading 26 Nov, two sitting blocks left (1-4, 15-18 Dec); main risk is floor time lost to the budget.",
+              "p_blind": 0.45,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "The coalition and SPD agreed on 25 Nov to soften the bill (retraining benefits kept, over-52s and parents spared) while keeping the cut in the first two months; second reading on 26 Nov; the third reading still needs a slot on 1–4 or 15–18 Dec, with the budget competing for floor time.",
+          "note_cs": "Koalice a SPD se 25. listopadu dohodly na zmírnění novely (podpora při rekvalifikaci zůstane, šetří se lidé nad 52 let a rodiče), snížení v prvních dvou měsících ale zůstává; druhé čtení 26. listopadu; třetí čtení potřebuje termín 1.–4. nebo 15.–18. prosince, kdy o čas soupeří rozpočet."
         }
       ],
       "result": null
@@ -4078,6 +4218,82 @@
           },
           "note": "UTJ received rabbinical approval on 24 Nov to formalise coalition talks with Eisenkot, and Likud–Yashar unity talks resumed on 23 Nov; nothing is signed, Liberman opposes a minority government, and the mandate runs to 6 Dec (extendable to about 20 Dec).",
           "note_cs": "Strana UTJ dostala 24. listopadu souhlas rabínů k formálním koaličním jednáním s Eisenkotem a 23. listopadu se obnovila jednání Likudu a Jašar o jednotě; nic není podepsáno, Liberman odmítá menšinovou vládu a mandát platí do 6. prosince (s možným prodloužením zhruba do 20. prosince)."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.63,
+          "combined": 0.634,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.61,
+              "reason": "Israeli elections 1999-2022 (n=12): government sworn in within ~96 days in 10/12 (fails: Apr and Sep 2019); fragmented no-majority cycles 2019-2021 only 2/4, so I start from ~0.7 and move down for Eisenkot lacking 61; Polymarket implies ~0.62 by 31 Jan.",
+              "p_blind": 0.62,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.6,
+              "reason": "Ynet 25 Nov: the Eisenkot bloc aims to swear in a government next week, courting Shas or relying on Ra'am abstention, and Liberman has softened; Likud-Yashar unity talks reached a fourth round (23-25 Nov) without a breakthrough. Several routes exist before 31 Jan, but a fall to new elections remains possible. Polymarket implies about 0.61 by end-January.",
+              "p_blind": 0.58,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.63,
+              "reason": "Case for NO: Eisenkot has no secured 61, the Democrats walked out, Shas is undecided and reliance on Arab abstention splits his bloc; Israel has failed serially before. Still there are two live paths (Eisenkot next week, or unity with Likud) and several mandate rounds before 31 Jan; markets sit at 0.56 for Dec and 0.67 for Feb.",
+              "p_blind": 0.68,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.65,
+              "reason": "Polymarket 'formed by 31 Dec' 0.64 and 'by 28 Feb' 0.665 ($100k/$51k volume); question deadline 31 Jan sits between, so interpolated ~0.65. Ynet reports of a swearing-in push next week are consistent with the price; no further adjustment.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.68,
+              "reason": "Eisenkot bloc says it will swear in next week, but it has no firm 61 and the Polymarket-implied level is around 0.62-0.66 by end Jan; mandate extendable to about 20 Dec.",
+              "p_blind": 0.6,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "p": 0.61,
+            "read_at": "2026-11-25T18:09:00Z",
+            "note": "Interpolated between \"formed by 31 Dec\" (0.64 at 18:09Z) and \"by 28 Feb\" (0.665); \"formed\" may not equal a Knesset confidence vote, so match is partial."
+          },
+          "note": "Ynet (25 Nov): the Eisenkot bloc prepares to swear in a government next week and hopes to bring Shas in; Liberman opened the door to a government backed by ultra-Orthodox parties and Ra'am; the Democrats suspended coalition talks; Likud–Yashar unity talks reached a fourth round.",
+          "note_cs": "Ynet (25. listopadu): blok Gadiho Eisenkota chystá na příští týden složení slibu vlády a chce získat stranu Šas; Liberman připustil vládu opřenou o ultraortodoxní strany a Ra'am; Demokraté přerušili koaliční jednání; rozhovory Likudu a strany Jašar o jednotě pokračovaly čtvrtým kolem."
         }
       ],
       "result": null
@@ -5728,6 +5944,82 @@
           ],
           "note": "Direct US–Iran strikes resumed (Qeshm, Kuwait, Bahrain); mediators warn talks are further away. Re-forecast by all five forecasters.",
           "note_cs": "Obnovily se přímé údery mezi USA a Íránem (Kešm, Kuvajt, Bahrajn); zprostředkovatelé varují, že se jednání vzdalují. Nová předpověď všech pěti prognostiků."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.11,
+          "combined": 0.111,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.12,
+              "reason": "Hostile states in active hostilities rarely hold a mutually confirmed negotiation round within five weeks when one side sets preconditions (low-teens monthly rate); fresh escalation on 25 Nov offsets the Qatar mediation; Polymarket 0.125-0.135.",
+              "p_blind": 0.12,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.12,
+              "reason": "Escalation on 25 Nov (Iranian strikes on US bases, a mine hit in Hormuz, the US telling citizens to leave Iran), and Ghalibaf rules out talks before seven conditions are met; Qatar's 24 Nov mediation with Rubio is the only opening. Markets put it at 0.13.",
+              "p_blind": 0.12,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.09,
+              "reason": "Case for YES: Qatar is mediating at Rubio level and escalation sometimes precedes a sudden venue meeting. But Iran is striking US bases, Washington told citizens to leave, Ghalibaf rules out talks, and the criterion needs both sides to confirm a same-venue round within five weeks; markets about 0.13 on a looser test.",
+              "p_blind": 0.07,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.13,
+              "reason": "Polymarket 'US-Iran senior diplomatic meeting by 31 Dec' 0.14 on $1m volume, same deadline and close definition; trimmed slightly because our criterion needs both governments to confirm, and fresh strikes and a mine hit point away from talks.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.1,
+              "reason": "Hostilities are escalating, Ghalibaf rules out talks before Iran's conditions are met, and markets are at 0.13; dual confirmation is also required.",
+              "p_blind": 0.2,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "p": 0.14,
+            "read_at": "2026-11-25T18:09:00Z",
+            "note": "US–Iran senior meeting by 31 Dec; both governments' confirmation not required by the market."
+          },
+          "note": "Weekly re-forecast. Fighting escalated again on 25 Nov (Iranian strikes on US bases and Gulf sites, another tanker hit a mine, the US told citizens to leave Iran); Ghalibaf rules out talks until Iran's seven conditions are met; Qatar's prime minister keeps mediating after meeting Rubio on 24 Nov.",
+          "note_cs": "Týdenní přepočet. Boje se 25. listopadu znovu vystupňovaly (íránské údery na americké základny a cíle v Zálivu, další tanker najel na minu, USA vyzvaly své občany k odchodu z Íránu); Kalíbáf vylučuje jednání, dokud nebude splněno sedm íránských podmínek; katarský premiér po schůzce s Rubiem 24. listopadu dál zprostředkovává."
         }
       ],
       "result": null
@@ -13191,6 +13483,76 @@
           ],
           "note": "Coalition friction continues but no move against Fico's office. Weekly re-forecast by all five forecasters.",
           "note_cs": "Spory v koalici trvají, ale nic, co by ohrožovalo Ficův post. Týdenní nová předpověď všech pěti prognostiků."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.04,
+          "combined": 0.04,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.04,
+              "reason": "EU heads of government leave office in a random ~2-month window at roughly 3-5% absent a live coalition crisis; no material news.",
+              "p_blind": 0.04,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.05,
+              "reason": "No sign of a coalition collapse; Fico is active in EU budget fights (veto threats, summit 26-27 Nov).",
+              "p_blind": 0.05,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.04,
+              "reason": "Case for YES would need a coalition collapse or a health event; nothing material points that way and Fico is on the offensive with a veto threat.",
+              "p_blind": 0.04,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.04,
+              "reason": "No market; base rate for a sitting EU PM with a working majority leaving within ~2 months is a few percent, and nothing material has moved.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.03,
+              "reason": "No sign of instability and nothing material; a veto threat is not a threat to his tenure.",
+              "p_blind": 0.04,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. Nothing material; Fico threatens a veto at the EU summit over Ukraine financing.",
+          "note_cs": "Týdenní přepočet. Nic podstatného; Fico na summitu EU hrozí vetem kvůli financování Ukrajiny."
         }
       ]
     },
@@ -13401,6 +13763,82 @@
             "p": 0.29,
             "read_at": "2026-11-18T18:15:00Z"
           }
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.16,
+          "combined": 0.155,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.15,
+              "reason": "Cabinet secretaries under sustained political pressure in Trump administrations leave within ~2 months at roughly 10-15%; Trump publicly backs him; Kalshi 0.19 by 1 Feb, Polymarket 0.125 by 31 Dec.",
+              "p_blind": 0.13,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.17,
+              "reason": "Nothing material; Hegseth was active as of the 18 Nov Caracas visit. Kalshi has him at 0.19 out before 1 Feb, down from 0.29 on 18 Nov.",
+              "p_blind": 0.15,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.14,
+              "reason": "Case for YES: post-midterm blame for the Iran war, an impeachment push and usual post-election cabinet turnover. Trump has publicly backed him and he is active (Caracas 18 Nov); Kalshi fell from 0.29 to 0.19 and I sit somewhat below it.",
+              "p_blind": 0.1,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.18,
+              "reason": "Kalshi 'out before 1 Feb 2027' 0.19 ($486k volume) matches the deadline; our criterion also counts an announcement taking effect by then, roughly offset by Polymarket/Kalshi year-end prices (0.08-0.125) suggesting a slightly softer curve. No news of trouble.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.14,
+              "reason": "Kalshi at 0.19 falling from 0.29, Polymarket 0.125 for end Dec, and nothing new; I sit just below the market.",
+              "p_blind": 0.12,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": {
+            "source": "kalshi",
+            "kind": "exchange",
+            "p": 0.19,
+            "read_at": "2026-11-25T18:09:00Z",
+            "note": "Out before 1 Feb 2027."
+          },
+          "note": "Weekly re-forecast. No new reporting on Hegseth's position; he visited Caracas on 18 Nov; Kalshi's price for his departure before February fell from 0.29 to 0.19.",
+          "note_cs": "Týdenní přepočet. O Hegsethově postavení nic nového; 18. listopadu navštívil Caracas; Kalshi ocenil jeho odchod do února 0,19 místo 0,29."
         }
       ],
       "result": null
@@ -13925,7 +14363,14 @@
           "note": "Weekly re-forecast (last entry 14 Nov). Nothing material since: the coalition still backs the rise to CZK 7/m³ and the 2027 budget counts on the revenue; Veolia and Kofola warn of higher prices (Ekonomický deník, 16 Nov); the regions still want a guaranteed share; no third-reading date is set, and the sitting from 24 Nov is crowded with the budget and the refinery tax.",
           "note_cs": "Týdenní přepočet (poslední záznam 14. listopadu). Od té doby nic podstatného: koalice dál podporuje zvýšení na 7 Kč/m³ a rozpočet na rok 2027 s výnosem počítá; Veolia a Kofola varují před zdražením (Ekonomický deník, 16. listopadu); kraje dál chtějí zaručený podíl; termín třetího čtení stanoven není a schůze od 24. listopadu je zaplněná rozpočtem a daní pro rafinerie."
         }
-      ]
+      ],
+      "result": {
+        "outcome": "yes",
+        "evidence": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-rust-poplatku-za-podzemni-vodu-ze-dvou-na-sedm-kc-za-m3/2906446",
+        "note": "The Chamber passed the bill in third reading on 25 Nov 2026 (final vote 97 for, 0 against, PSP snapshot vote 89151), with the groundwater fee raised to CZK 7 per cubic metre (amendment adopted 117–16).",
+        "note_cs": "Sněmovna 25. listopadu 2026 schválila předlohu ve třetím čtení (závěrečné hlasování 97 pro, 0 proti, hlasování č. 89151) se zvýšením poplatku za odběr podzemní vody na 7 Kč za metr krychlový (pozměňovací návrh přijat poměrem 117:16).",
+        "resolved_at": "2026-11-25T19:55:00+01:00"
+      }
     },
     {
       "id": "be-dewever-out",
@@ -14928,6 +15373,76 @@
           ],
           "note": "Kyiv (Zelensky, 13 Nov) now confirms the 1,000+ per side figure; no exchange done yet. Weekly re-forecast by all five forecasters. The outsider first worked without the facts the others had (spread over 25 points, cause: inputs); it was given the union of facts and re-estimated once (first figure kept in its rounds).",
           "note_cs": "Kyjev (Zelenskyj, 13. 11.) potvrdil přes 1000 zajatců na každé straně; výměna zatím neproběhla. Týdenní nová předpověď všech pěti prognostiků. Outsider nejprve pracoval bez faktů, které měli ostatní (rozptyl přes 25 bodů, příčina: vstupy); dostal sjednocená fakta a jednou odhad zopakoval (první číslo je zachováno)."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.55,
+          "combined": 0.548,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.55,
+              "reason": "Agreed large Russia-Ukraine swaps (2025-26) were sometimes completed within days (May 2025 1,000-for-1,000) but often slipped or ran in small stages that may not count as one 1,000+ swap; 25 days after agreement with no exchange yet, ~0.5; thin Polymarket at 0.86 by 31 Dec nudges up slightly.",
+              "p_blind": 0.5,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.62,
+              "reason": "A 1,000-plus per side swap was agreed on 11-14 Nov (Zelensky confirmed it 13 Nov), but no completed exchange was reported by 25 Nov, with 20 days left. Polymarket gives a major exchange 0.86 by 31 Dec but only 0.16 by 30 Nov.",
+              "p_blind": 0.6,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.47,
+              "reason": "Case for NO: two weeks on from a deal billed as two to three weeks away, nothing has been exchanged, and the criterion needs 1,000 per side completed and reported by both sides by 15 Dec; staged swaps can straddle the deadline. Both sides confirmed the number and the May 2025 precedent was quick, so it stays near even; the thin market has 0.86 only for 31 Dec.",
+              "p_blind": 0.45,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.55,
+              "reason": "Polymarket 'major exchange by 31 Dec' 0.86 is thin ($7k), has a later deadline and an unclear size bar, so only a loose anchor; the 1,000-per-side swap 'expected in 2-3 weeks' from 11 Nov has not started and 'by 30 Nov' trades at 0.16. Precedent (May 2025) shows a large swap can run in days once started.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.55,
+              "reason": "A 1,000-per-side swap was agreed and confirmed by Zelensky, and Polymarket has 0.86 for a major exchange by 31 Dec; the 15 Dec deadline and the 1,000 each threshold leave room for slippage.",
+              "p_blind": 0.2,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. No exchange has started two weeks after the agreement of 11–14 Nov on at least 1,000 prisoners each; 20 days remain to the 15 Dec deadline.",
+          "note_cs": "Týdenní přepočet. Dva týdny po dohodě z 11.–14. listopadu o výměně nejméně 1000 zajatců na každé straně výměna nezačala; do 15. prosince zbývá 20 dní."
         }
       ]
     },
@@ -15310,6 +15825,280 @@
           ],
           "note": "Čupić elected speaker and acting president on 19 Nov; he must call the presidential election by 27 Nov for a vote by 27 Dec, with any run-off about two weeks later, before the 24 Jan cut-off. Vučić cannot run; no Student List candidate has been named yet.",
           "note_cs": "Čupić byl 19. 11. zvolen předsedou parlamentu a je úřadujícím prezidentem; prezidentské volby musí vypsat do 27. 11. s hlasováním do 27. 12., případné druhé kolo by bylo asi o dva týdny později, před 24. lednem. Vučić kandidovat nemůže; Studentská kandidátka zatím kandidáta nejmenovala."
+        },
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.72,
+          "combined": 0.717,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.7,
+              "reason": "Parties holding a fresh parliamentary majority usually carry a snap presidential vote held weeks later (wide class of post-election presidential contests, roughly 0.8); minus risk the winner is not formally the Student List's nominee and run-off/RIK timing before 24 Jan; Saičić at 0.845 on Polymarket but his link to the list is unconfirmed.",
+              "p_blind": 0.72,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.68,
+              "reason": "The election is called on 26 Nov for 27 Dec, and any run-off falls before 24 Jan; Vučić says SNS should ignore it, which favours the Student List's still unnamed candidate. Polymarket has Saičić at 0.845 to be next president, but his link to the Student List is unconfirmed.",
+              "p_blind": 0.6,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.8,
+              "reason": "Case for NO: no candidate is named yet, SNS may still field or back someone after 13 Dec, and repeat votes or complaints could push the declaration of a run-off winner past 24 Jan. With 140 seats won a month ago, a 27 Dec vote and SNS inclined to sit out, the student candidate is a strong favourite; the market's 0.845 is on a name not yet confirmed as theirs.",
+              "p_blind": 0.83,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.78,
+              "reason": "Polymarket gives Saicic (a Student List figure, our 1 Nov dossier) 0.845 to win the next presidential election; no deadline in the market and his nomination by the List is unconfirmed, so discounted. The List won 140/250 seats and Vucic tells SNS to ignore the vote; 27 Dec vote plus any run-off fits before 24 Jan.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.6,
+              "reason": "Vote 27 Dec, SNS likely not fielding a candidate, and the market favours Saicic at 0.845; whether he is the Student List's candidate is unconfirmed, so I discount.",
+              "p_blind": 0.3,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "Acting President Čupić calls the presidential election on 26 Nov for Sunday 27 Dec; the Student List says it will name its candidate once the election is called; Vučić tells the SNS to ignore the vote; a run-off would fall before 24 Jan.",
+          "note_cs": "Úřadující prezident Čupić 26. listopadu vypíše prezidentské volby na neděli 27. prosince; Studentská kandidátka chce svého kandidáta oznámit hned po vypsání; Vučić vyzývá SNS, aby volby ignorovala; případné druhé kolo by se konalo před 24. lednem."
+        }
+      ]
+    },
+    {
+      "id": "eu-ukraine-45bn-2026",
+      "scope": "europe",
+      "topic": "EU financing for Ukraine",
+      "question": "Will the European Council agree to provide Ukraine with at least €45bn of EU-borrowed financing for 2027 by 31 December 2026?",
+      "question_cs": "Dohodne se Evropská rada do 31. prosince 2026, že Ukrajině poskytne na rok 2027 nejméně 45 miliard eur financování z výpůjček EU?",
+      "criterion": "Yes if, by 31 Dec 2026 23:59 CET, European Council conclusions or another European Council text on consilium.europa.eu (including a text supported by fewer than 27 leaders), or António Costa's statement at a summit press conference, record agreement to provide Ukraine with financing for 2027 of at least €45bn based on EU borrowing (the Commission's proposal of 18 Nov 2026, or a changed structure leaders say is that financing), in any configuration of member states. Statements of progress, referrals to ministers or agreement on principles only do not count. No otherwise.",
+      "criterion_cs": "Ano, pokud do 31. 12. 2026 ve 23:59 SEČ závěry Evropské rady nebo jiný text Evropské rady na consilium.europa.eu (včetně textu podpořeného méně než 27 lídry) či prohlášení Antónia Costy na tiskové konferenci po summitu zaznamenají dohodu poskytnout Ukrajině na rok 2027 financování ve výši nejméně 45 miliard eur založené na výpůjčkách EU (návrh Komise z 18. 11. 2026 nebo změněná struktura, o níž lídři řeknou, že jde o toto financování), v jakémkoli složení členských států. Zprávy o pokroku, postoupení ministrům ani dohoda jen na zásadách se nepočítají. Jinak ne.",
+      "resolution_source": "https://www.consilium.europa.eu/en/european-council/conclusions/",
+      "opened": "2026-11-25",
+      "resolves_by": "2026-12-31T23:59:00+01:00",
+      "background": "The Commission proposed €45bn of EU-borrowed financing for Ukraine in 2027 (€20bn budget support, €25bn military) on 18 Nov 2026; it needs a unanimous amendment of the MFF regulation. Czechia, Slovakia and Hungary refuse to take part; Merz conditions Germany's yes to the 2028–34 budget on all 27 sharing Ukraine costs. Leaders discuss it at the special summit of 26–27 Nov; the regular European Council meets on 17–18 Dec. In December 2025 leaders agreed a €90bn loan at one summit through enhanced cooperation that exempted CZ, HU and SK.",
+      "sources": [
+        {
+          "title": "Euronews: Von der Leyen proposes €45bn loan to Ukraine backed by joint debt (18 Nov 2026)",
+          "url": "https://euronews.com/2026/11/18/von-der-leyen-proposes-45bn-loan-to-ukraine-backed-by-joint-debt"
+        },
+        {
+          "title": "Kyiv Independent: Days before key summit, EU countries want to help Ukraine, but can't agree on how",
+          "url": "https://kyivindependent.com/days-before-key-summit-eu-countries-want-to-help-ukraine-but-cant-agree-on-how/"
+        }
+      ],
+      "base_rate": {
+        "class": "European Councils with a contested Ukraine-financing file on the table (Dec 2023–Dec 2025), agreed at that meeting",
+        "rate": 0.5,
+        "n": 4,
+        "source": "data/dossiers/2026-11-28/eu-summit-28.md (hint, n < 10)"
+      },
+      "result": null,
+      "history": [
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.65,
+          "combined": 0.652,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.65,
+              "reason": "Hint class (n=4) of European Councils with a Ukraine financing decision: agreed at the meeting 2/4, and every end-of-year deadline was met within one extra summit; two shots (26-27 Nov, 17-18 Dec) and the Dec 2025 enhanced-cooperation template give ~0.65, held back by Merz's MFF linkage. No market.",
+              "p_blind": 0.65,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.72,
+              "reason": "The Commission proposed €45bn for 2027 on 18 Nov; leaders debate it at the 26-27 Nov special summit and again at the 17-18 Dec European Council. CZ, SK, HU and BG want opt-outs, but the criterion accepts fewer than 27 leaders, and the €90bn precedent was agreed in December 2025.",
+              "p_blind": 0.72,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.55,
+              "reason": "Case for NO: the 2025 loan of 90bn already covers part of 2027 so urgency is lower, Merz ties it to an MFF deal that will not come this year, amending the MFF regulation needs unanimity, and France sees pressure to wait. Against that, two summits remain, the criterion accepts any configuration, and the December 2025 opt-out precedent exists with year-end as the consensus deadline.",
+              "p_blind": 0.55,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.68,
+              "reason": "No market; base rate 2 of 4 European Councils agreed Ukraine financing at the meeting, but there are two meetings left (26-27 Nov, 17-18 Dec), the end-2026 deadline is the consensus and the Dec 2025 enhanced-cooperation template routes around CZ/SK/HU. Discounted for Merz tying it to an MFF deal that may slip.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.65,
+              "reason": "Two chances (26-27 Nov and 17-18 Dec) and the Dec 2025 precedent of agreeing a loan via enhanced cooperation without CZ, SK, HU; Merz's MFF linkage and a Fico veto are the risks.",
+              "p_blind": 0.45,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "New question: opened before the special summit of 26–27 Nov; two summits remain before the deadline.",
+          "note_cs": "Nová otázka: otevřena před mimořádným summitem 26.–27. listopadu; do termínu zbývají dva summity."
+        }
+      ]
+    },
+    {
+      "id": "us-eu-tariffs-jan",
+      "scope": "world",
+      "topic": "US tariffs",
+      "question": "Will additional US tariffs on EU goods from the excess-capacity investigation announced on 25 November 2026 take effect by 31 January 2027?",
+      "question_cs": "Začnou do 31. ledna 2027 platit dodatečná americká cla na zboží z EU z vyšetřování nadměrných výrobních kapacit oznámeného 25. listopadu 2026?",
+      "criterion": "Yes if, by 31 Jan 2027 23:59 CET, a USTR determination or presidential proclamation published in the Federal Register puts into effect additional duties on EU-origin goods under the Section 301 excess-capacity investigation whose proposed duties were announced on 25 Nov 2026. Proposals, comment periods and hearings do not count. No otherwise.",
+      "criterion_cs": "Ano, pokud do 31. 1. 2027 ve 23:59 SEČ rozhodnutí USTR nebo prezidentská proklamace zveřejněná ve Federal Register uvede v platnost dodatečná cla na zboží původem z EU podle vyšetřování nadměrných kapacit podle oddílu 301, jehož navržená cla byla oznámena 25. 11. 2026. Návrhy, lhůty k připomínkám a slyšení se nepočítají. Jinak ne.",
+      "resolution_source": "https://www.federalregister.gov/ ; https://ustr.gov/about-us/policy-offices/press-office/press-releases",
+      "opened": "2026-11-25",
+      "resolves_by": "2027-01-31T23:59:00+01:00",
+      "background": "On 25 Nov 2026 USTR proposed new tariffs of up to 20% on imports from 14 economies, including the EU and China, after an eight-month investigation into excess industrial capacity. The duties are subject to a public comment period and a hearing before taking effect, \"possibly in January at the earliest\"; they would respect the 15% cap agreed with the EU. The EU \"strongly reject[s] the premise\".",
+      "sources": [
+        {
+          "title": "DW: US plans new tariffs on EU, China and 12 other economies (25 Nov 2026)",
+          "url": "https://www.dw.com/en/us-plans-new-tariffs-on-eu-china-and-12-others/a-80050872"
+        },
+        {
+          "title": "Al Jazeera: Trump announces new trade tariffs: Which countries are affected? (25 Nov 2026)",
+          "url": "https://www.aljazeera.com/news/2026/11/25/trump-announces-new-trade-tariffs-which-countries-will-they"
+        }
+      ],
+      "base_rate": {
+        "class": "Section 301 tariff actions: proposal to effective date within ten weeks",
+        "rate": null,
+        "n": 0,
+        "source": "no counted class; forecasters cite proposal-to-effect lags of 2.5 months or more (general knowledge, not re-checked)"
+      },
+      "result": null,
+      "history": [
+        {
+          "at": "2026-11-25T20:05:00+01:00",
+          "p": 0.11,
+          "combined": 0.109,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:18+01:00",
+              "p": 0.12,
+              "reason": "Section 301 actions (China lists 2018, ship fees 2025, Nicaragua 2025, DST 2021) took ~2.5+ months from proposal to effect or were suspended; 67 days with comment period and hearing unscheduled, and the 15% cap limits EU impact, so ~0.12. No market.",
+              "p_blind": 0.12,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:10:41+01:00",
+              "p": 0.15,
+              "reason": "The duties were only proposed on 25 Nov, need a comment period and a hearing that have no dates yet, and DW says they take effect 'possibly in January at the earliest'; Section 301 actions usually take months.",
+              "p_blind": 0.15,
+              "inputs": [
+                "own-research",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "at": "2026-11-25T19:10:17+01:00",
+              "p": 0.07,
+              "reason": "Case for YES: this administration can compress Section 301 timelines. But no comment or hearing dates exist yet, the source itself says January at the earliest, and the 15% cap may leave little or no additional duty on EU goods to put into effect by 31 Jan.",
+              "p_blind": 0.07,
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "at": "2026-11-25T19:11:27+01:00",
+              "p": 0.12,
+              "reason": "No market; base rate: Section 301 duties usually take effect three months or more after proposal (comment period, hearing, final determination), and DW says January at the earliest with no hearing date set. The 15% cap with the EU limits the room for new EU duties.",
+              "inputs": [
+                "reference-data",
+                "overnight-facts"
+              ]
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "at": "2026-11-25T19:10:15+01:00",
+              "p": 0.1,
+              "reason": "Comment period and hearing are not yet scheduled and effect is 'January at the earliest', so a Federal Register determination in force by 31 Jan is unlikely.",
+              "p_blind": 0.2,
+              "inputs": [
+                "own-research",
+                "reference-data",
+                "overnight-facts"
+              ]
+            }
+          ],
+          "market": null,
+          "note": "New question: duties proposed on 25 Nov; comment period and hearing not yet scheduled.",
+          "note_cs": "Nová otázka: cla navržena 25. listopadu; lhůta k připomínkám ani slyšení zatím nejsou stanoveny."
         }
       ]
     }

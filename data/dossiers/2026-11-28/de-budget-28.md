@@ -1,0 +1,62 @@
+# de-budget-28
+- **Claim:** In the final roll-call vote on Friday 27 November 2026, the Bundestag passes the 2027 federal budget (Haushaltsgesetz 2027) with at least 316 yes votes, an absolute majority of its 630 members.
+- **Criterion:** YES if in the final (third-reading) roll-call vote (namentliche Schlussabstimmung) on the Haushaltsgesetz 2027 (Drucksachen 21/7300, 21/7302) held on Fri 27 Nov 2026, at least 316 members vote yes, according to the official result on bundestag.de (roll-call page or Textarchiv), the Plenarprotokoll, or as reported that day by dpa, ZDF, tagesschau or Reuters. NO if fewer than 316 vote yes (including when the bill still passes with a simple majority), if the bill is rejected, or if no final vote takes place on 27 Nov 2026 (Europe/Berlin). Later corrections to individual members' votes in the protocol do not count; the result announced in the chamber decides.
+- **Event window:** 2026-11-27T00:00:00+01:00 to 2026-11-27T23:59:00+01:00 (Europe/Berlin). Third reading 90 minutes from 12:40 CET; vote expected about 14:10–14:40 CET; result announced in the chamber about 15–20 minutes after the vote.
+- **Evidence expected:** President's announcement in the chamber; bundestag.de roll-call page and Textarchiv the same afternoon; dpa/ZDF/tagesschau within minutes (2025: ZDF at 15:03 on the day).
+- **Resolves by:** 2026-11-28T05:00:00+01:00
+- **Written at:** 2026-11-25T18:55:00+01:00
+
+## Schedule
+- Bundestag Textarchiv, page on the 2027 budget (primary): "Die Schlussabstimmung über den Bundeshaushalt 2027 ( 21/7300 , 21/7302 ) findet am Freitag, 27. November 2026 , nach einer 90-minütigen dritten Lesung statt." and "Liveübertragung: Freitag, 27. November, 12.40 Uhr" — https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-dritte-lesung-1232350 (page dated 16.11.2026, read 2026-11-25T17:44Z). Second reading of the Haushaltsgesetz (without debate) and the Haushaltsbegleitgesetz 2027 are voted the same day; resolutions of AfD, Greens and Left are voted in the third reading.
+- Correction to the draft: 12:40 is the start of the 90-minute third-reading debate, not the vote; the final roll call follows at roughly 14:10 or later.
+- The agenda page lists sessions 110–113 for this week (status 24/25 Nov); the PDF agenda/"Ablaufplan" could not be read by the script (PDF) — https://www.bundestag.de/tagesordnung (read 2026-11-25T17:43Z).
+- Haushaltswoche runs 24–27 Nov 2026 — ZDF https://www.zdfheute.de/politik/deutschland/haushalt-haushaltsausschuss-bundestag-union-spd-100.html (published 2026-11-13 06:32, read 2026-11-25T17:51Z) "Der Bundestag soll in der Sitzungswoche vom 24. bis 27. November endgültig über den Haushalt abstimmen."
+
+## Facts
+- Threshold arithmetic: the Bundestag has 630 members ("Gesamtergebnis, 630 Mitglieder" on every 2026 roll-call page); absolute majority = 316. The coalition CDU/CSU + SPD holds 328 seats (208 + 120 from the 2025 election; not re-read on a seat-distribution page tonight — bundestag.de seat pages returned 404). Roll-call arithmetic is consistent with 328: in the three budget votes below the coalition absentees on the bundestag.de pages (CDU/CSU 3 + SPD 2 in Sep 2025; 5 + 2 in Nov 2025; 4 + 8 on 25 Nov 2026) plus the yes total imply 328 coalition seats with one non-coalition yes each time. With 328 seats, YES needs at most about 12 coalition absences or defections (13 if the one non-coalition yes recurs).
+- Last comparable final votes (official bundestag.de roll-call pages):
+  - Haushaltsgesetz 2025, Thu 18 Sep 2025: 324 yes, 268 no, 0 abstentions, 38 not voting — https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=961 (read 2026-11-25T17:45Z) "In namentlicher Abstimmung votierten in der dritten Beratung 324 Abgeordnete für das Haushaltsgesetz … 268 Abgeordnete stimmten dagegen." (ZDF the same day reported 324 to 269: https://www.zdfheute.de/politik/haushalt-2025-bundestag-beschlossen-100.html, published 2025-09-18 14:31, read 17:44Z; the official page says 268.)
+  - Haushaltsgesetz 2026, Fri 28 Nov 2025: 322 yes, 252 no, 0 abstentions, 56 not voting — https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=980 (read 17:45Z); ZDF https://www.zdfheute.de/politik/deutschland/haushalt-2026-abstimmung-100.html (published 2025-11-28 15:03, read 17:44Z) "In namentlicher Abstimmung votierten 322 Abgeordnete für den Gesetzentwurf … 252 Parlamentarier stimmten dagegen. Enthaltungen gab es keine."; Ärzteblatt "Bei 574 abgegebenen Stimmkarte entfielen 322 auf JA und 252 auf Nein."
+- This week's first budget roll call: Einzelplan 04 (Chancellery budget), Wed 25 Nov 2026: 317 yes, 267 no, 0 abstentions, 46 not voting; coalition not voting: CDU/CSU 4, SPD 8 — https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=1047 (read 2026-11-25T17:45Z) "In namentlicher Abstimmung votierten 317 Abgeordnete für den Kanzleretat … Dagegen stimmten 267 Abgeordnete."
+- Same pair a year ago: Einzelplan 04 on Wed 26 Nov 2025 had 324 yes, 274 no (https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=979, read 17:46Z); the final vote two days later had 322 yes (−2). In Sep 2025, Einzelplan 04: 322 yes (id=960), final: 324 (+2).
+- Committee stage: the Haushaltsausschuss adopted the budget early on Fri 13 Nov 2026 "mit der Mehrheit der Koalitionsfraktionen CDU/CSU und SPD gegen die Stimmen der Oppositionsfraktionen AfD, Bündnis 90/Die Grünen und Die Linke" — bundestag.de Textarchiv (above). Core spending about €560.9bn, net new borrowing about €123bn in the core budget, about €210bn including special funds — Berliner Zeitung https://www.berliner-zeitung.de/article/bundeshaushalt-2027-rekordausgaben-und-neue-schulden-10593051 (published 2026-11-13 06:24Z, read 17:44Z); APA/dpa via vienna.at https://www.vienna.at/deutscher-bundeshaushalt-fuer-2027-steht/11104088 (published 2026-11-13 07:06Z, read 17:44Z).
+- Coalition dispute on electricity tax resolved on 18 Nov: tagesschau "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig." — https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html (published 2026-11-18 16:45, read 17:51Z).
+- Coalition discontent but majority expected: tagesschau 24 Nov "Es ist ein Haushalt, bei dem viel geschoben und geschönt wurde - und doch stehen unter dem Strich hohe Schulden, bei denen auch in der Koalition viele Bauchschmerzen haben. Mit Ach und Krach dürfte das dieses Jahr noch funktionieren: Es ist wenig wahrscheinlich, dass die Regierungsmehrheit für den Haushalt diesen Freitag nicht zusammenkommt." Also: the coalition cut the federal pension subsidy by almost €2bn at the last minute — https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html (published 2026-11-24 07:47, read 17:51Z).
+- No named coalition MP announcing a no vote or abstention was found on the pages read tonight (one search, tagesschau innenpolitik front page and ZDF read).
+- Opposition: AfD, Greens and Left voted against the 2025 and 2026 budgets and the 2027 Einzelplan 04 (no abstentions in any of these votes; per-group figures on the pages above).
+
+## Base rate
+- hint (n = 5): budget roll calls of this coalition (Einzelplan 04 and final Haushaltsgesetz votes, Sep 2025, Nov 2025, Nov 2026) with at least 316 yes: 5 of 5 (322, 324, 324, 322, 317). Source: bundestag.de roll-call pages id=960, 961, 979, 980, 1047 (read 2026-11-25).
+- Wider class: contested roll calls of the 21st Bundestag passed by the coalition alone (yes ≥ 290 and no ≥ 240, i.e. all opposition groups against), ids 940–1047 on bundestag.de (yes computed as 630 − no − abstentions − not voting; checked against the stated totals for ids 961, 980, 1041, 1047): 9 of 12 reached 316 (rate 0.75). The 12: Einzelplan 04 2025 (322), HG 2025 (324), Einzelplan 04 2026 (324), HG 2026 (322), Wehrdienst (323), Bürgergeld/Grundsicherung (320), GKV finance reform (318), Gebäudeenergiegesetz (323), Einzelplan 04 2027 (317) reached it; Verbrauchervertragsrecht (306), GEAS-Anpassungsgesetz (309), Eunavfor Med Irini 12 Nov 2026 (314) did not. Read 2026-11-25T17:52–17:53Z. Differs from this case: the three misses were ordinary bills/mandates; budget final votes are whipped and attendance has been higher; but this week's 317 is the lowest budget figure so far.
+- Same question asked before in our editions: no.
+
+## Case record
+## Case record: de-budget-2027
+No earlier claim of this case in our editions.
+
+## Schedule slip
+- slip_class `other-scheduled` (no Bundestag-specific class): rate 0.091 (prior 0.07, own 11/120) [estimate] — `node scripts/refdata/slip.mjs`, run 2026-11-25T17:50Z. The rate is generic and high for this case: the final budget vote is fixed in the published agenda and the committee stage is complete; no sign of a postponement found.
+
+## Risks
+- Attendance: Friday afternoon votes have had more absentees (56 not voting in Nov 2025). If 13 or more coalition members are absent or vote no, the bill still passes but below 316 (NO).
+- Coalition dissent: "Bauchschmerzen" over record borrowing (tagesschau) and the late pension-subsidy cut could produce a few SPD or CDU/CSU no votes or abstentions; none announced in sources read.
+- Pairing ("Pairing-Vereinbarungen") is not used to keep the yes total up; absent members simply do not vote.
+- Non-coalition yes votes (one in each of the past budget votes) can add one or two.
+- Interpretation: the claim counts yes votes in the final roll call on the Haushaltsgesetz, not the Haushaltsbegleitgesetz or the second-reading vote.
+
+## Sources
+- https://www.bundestag.de/dokumente/textarchiv/2026/kw48-de-haushaltsgesetz-2027-dritte-lesung-1232350
+- https://www.bundestag.de/tagesordnung (PDF agenda and Ablaufplan not readable by script)
+- https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=961, ?id=960, ?id=979, ?id=980, ?id=1041, ?id=1042, ?id=1043, ?id=1045, ?id=1047 and the scan ids 940–1047
+- https://www.bundestag.de/parlament/plenum/abstimmung/liste/2026 (list loads by script; no content)
+- https://www.zdfheute.de/politik/deutschland/haushalt-2026-abstimmung-100.html
+- https://www.zdfheute.de/politik/haushalt-2025-bundestag-beschlossen-100.html
+- https://www.zdfheute.de/politik/deutschland/haushalt-haushaltsausschuss-bundestag-union-spd-100.html
+- https://www.aerzteblatt.de/themen/bundestag/bundeshaushalt-2026-vom-bundestag-beschlossen-6d4997b2-b814-4eac-ae57-e4c28a629ceb
+- https://www.berliner-zeitung.de/article/bundeshaushalt-2027-rekordausgaben-und-neue-schulden-10593051
+- https://www.vienna.at/deutscher-bundeshaushalt-fuer-2027-steht/11104088
+- https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html
+- https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html
+- https://www.tagesschau.de/inland/innenpolitik (front page links)
+- Unreachable: abgeordnetenwatch.de (HTTP 403); bundestag.de seat-distribution pages (404).
+- WebSearch: "Bundestag Haushalt 2027 Schlussabstimmung 27. November namentliche Abstimmung"; "Bundestag beschließt Haushalt 2025 namentliche Abstimmung Ja-Stimmen Nein-Stimmen September 2025"
