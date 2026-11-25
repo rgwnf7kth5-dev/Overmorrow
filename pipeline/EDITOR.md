@@ -217,7 +217,9 @@ node scripts/photos.mjs search "Palácio do Planalto"
 node scripts/photos.mjs add <D+2> <story-id> "File:…jpg" --alt "…" --alt-cs "…" --caption "…" --caption-cs "…"
 ```
 
-The script checks the licence, downloads a 960 px copy into `site/photos/<D+2>/` and writes the credit into `data/images/<D+2>.json`; the page marks each one as an illustrative photo with author, licence and source. Captions describe the place, not the forecast. Commons rate-limits shared addresses: the script waits; run the searches early and in one batch.
+The script checks the licence, downloads a 960 px copy into `site/photos/<D+2>/` and writes the credit into `data/images/<D+2>.json`; the page marks each one as an illustrative photo with author, licence and source. Captions describe the place, not the forecast.
+
+**Look at every photograph before it goes in.** Open the downloaded copy in `site/photos/<D+2>/` and write `alt` and `caption` from what the picture shows, never from the file name. The place must appear as it stands today: no building sites, scaffolding, demolition or damage (unless that state is the story), and no view that has since changed. `search` prints the year each picture was taken and marks files Commons files under construction or similar; `add` refuses them. Prefer a picture from the last ten years when one exists; an older one is acceptable only if the place looks the same now. Before reusing a photograph from an earlier edition, look at it again. Commons rate-limits shared addresses: the script waits; run the searches early and in one batch.
 
 ## 6c. Fact-check (mandatory)
 
