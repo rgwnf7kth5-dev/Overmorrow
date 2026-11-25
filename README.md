@@ -9,6 +9,7 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 - **Producing an edition:** [pipeline/EDITOR.md](pipeline/EDITOR.md)
 - **Afternoon update:** [pipeline/UPDATE.md](pipeline/UPDATE.md)
 - **Scoring an edition:** [pipeline/RESOLVER.md](pipeline/RESOLVER.md)
+- **Answering readers' questions:** [pipeline/REQUESTS.md](pipeline/REQUESTS.md)
 
 ## Repository layout
 
@@ -24,6 +25,9 @@ A newspaper written two days ahead, in English (default) and Czech (/cs/), with 
 | `data/postmortems.md` | Reviews of confident misses and of badly designed claims. |
 | `data/publisher/YYYY-MM-DD.json` | The publisher's own probabilities on that edition's claims, scored separately (METHODOLOGY 11). |
 | `data/audits/YYYY-MM-DD.json` | Independent re-resolution of a fixed sample of results (RESOLVER 3a). Append-only. |
+| `data/requests/<id>.json` | Readers' questions and the paper's answers (METHODOLOGY 21), one file per question; scored apart from the paper. |
+| `netlify/functions/` | The site's functions for readers' questions: `/api/ask` (takes a topic), `/api/ask/status`, `/api/ask/queue` (read by the readers' desk), `/api/ask/quick` (the quick forecast, in the background). |
+| `scripts/requests-core.mjs`, `requests-quick.mjs`, `requests.mjs` | The rules and limits of readers' questions, the quick forecast, and the readers' desk's tools (`pull`, `due`, `window`, `combine`, `check`, `leads`). Tests: `node --test scripts/requests.test.mjs`. |
 | `data/claim-labels.json` | Event, case and status-quo labels for editions before method version 6, made without sight of outcomes. |
 | `data/revision-classes.json` | Older revisions that confirmed reported news; from version 6 the update file says so itself. |
 | `METHODOLOGY.cs.md` | Czech version of the methodology, shown at /cs/method/. |
@@ -94,4 +98,13 @@ Other vendors' models (OpenAI, Google, xAI; `config.shadow.external`) work for t
 | Overmorrow external factcheck, 06:25 | `node scripts/external-desk.mjs factcheck` | `data/external/factcheck/<edition>.json` | afternoon update (UPDATE step 3a) |
 
 A fifth task on our own models, "Overmorrow evening check" (21:10), confirms the vendors' facts on their sources and reruns our forecasters where one is material. Every script can be run again: it skips what is recorded. `node scripts/external.mjs check` shows what is configured; `node scripts/backtest-external.mjs report` prints the backtest of 22 November 2026 that ended the dossier trial for two of the three. To change a key, delete the secret and add it again. Keys never go into the repository.
+
+## Readers' questions (from 25 November 2026)
+
+On `/ask/` (and `/cs/ask/`) a reader names a subject and gets the paper's forecast for the next event in it; see METHODOLOGY section 21 and [pipeline/REQUESTS.md](pipeline/REQUESTS.md).
+
+- **The queue.** `netlify/functions/ask.mjs` takes a topic (plain text, at most 160 characters, no links; a limit per visitor and per day), stores it in the site's own storage (Netlify Blobs, store `requests`) and returns an id. The reader's page follows the id until the answer is there. Topics wait at most three days. The limits are in `scripts/requests-core.mjs` (`REQ`).
+- **The readers' desk.** A scheduled task ("Overmorrow readers' desk", hourly during the day) runs `node scripts/requests.mjs pull`, answers the waiting topics by REQUESTS.md (one research agent and three forecasters), records results of earlier answers when they fall due, and commits to `data/requests/` only.
+- **The quick estimate.** Switched on by setting `ANTHROPIC_API_KEY` in the site's environment variables on Netlify (web search must be enabled for that key's organisation in the Claude Console). `/api/ask` then hands each topic to the background function `ask-quick`, which runs `scripts/requests-quick.mjs` (one desk call with web search, three forecasters, one editor) and answers in a few minutes; if it fails, the topic stays for the readers' desk. At most `quick_per_day_max` quick answers a day. Optional variables: `ASK_QUICK=off` (switch off without removing the key), `ASK_MODEL_DESK`, `ASK_MODEL_BASE_RATE`, `ASK_MODEL_EVIDENCE`, `ASK_MODEL_OUTSIDER`, `ASK_MODEL_EDITOR` (other models), `ASK_QUEUE_TOKEN` (if set, `/api/ask/queue` requires it in the header `x-ask-token`, and the readers' desk needs the same value as a network secret).
+- **Safety.** A faulty record in `data/requests/` is only a warning in `scripts/validate.mjs` and is left out of the site, so an answer to a reader can never stop an edition; the readers' desk uses the strict `node scripts/requests.mjs check`. The package in `package.json` (`@netlify/blobs`) serves the functions only; the site build still needs nothing beyond Node 20.
 

@@ -1,0 +1,14 @@
+{
+  "name": "overmorrow",
+  "private": true,
+  "type": "module",
+  "description": "The Overmorrow: a newspaper written two days ahead. The site build needs no packages; the only dependency serves the site's functions for readers' questions (netlify/functions).",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/requests.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.11"
+  }
+}

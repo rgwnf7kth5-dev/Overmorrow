@@ -77,6 +77,10 @@ For the edition whose claims you just resolved (events of the previous day), wri
   "events": [ { "title": "…", "scope": "world", "lists": ["wikipedia", "reuters"], "source": "https://…", "status": "missed", "note": "…" } ] }
 ```
 
+## 3d. Readers' questions
+
+Answers given to readers on demand (`data/requests/`, METHODOLOGY 21) are not resolved in this run. The readers' desk resolves them by the same rules ([`REQUESTS.md`](REQUESTS.md) step 4), and they are scored apart from the paper.
+
 ## 4. Validate, build, publish
 
 ```

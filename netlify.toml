@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Readers' questions (METHODOLOGY 21): /api/ask, /api/ask/status, /api/ask/queue, /api/ask/quick.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [[headers]]
   for = "/*"
   [headers.values]

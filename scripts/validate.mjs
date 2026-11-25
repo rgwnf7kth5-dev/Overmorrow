@@ -1,6 +1,7 @@
 // Checks every edition and resolution file against the rules in METHODOLOGY.md.
 // Exits with code 1 on any error. Run: node scripts/validate.mjs
-import { auditRows, auditSample, loadAudits, resultsFor, loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage, normCdf, overdueClaims } from './lib.mjs';
+import { auditRows, auditSample, loadAudits, resultsFor, loadEditions, loadResolution, loadCorrections, loadConfig, claimsOf, loadUpdate, mergeUpdate, loadWatchlist, geoMeanOdds, combine, isInterval, loadSlip, loadCalibration, loadPublisher, oddsToProbs, methodVersion, zonedTime, isZone, derivedProb, logit, loadCoverage, normCdf, overdueClaims, loadRequests } from './lib.mjs';
+import { dueRequests } from './requests-core.mjs';
 import fsv from 'node:fs';
 import pathv from 'node:path';
 
@@ -816,6 +817,11 @@ for (const o of overdueClaims(loadEditions(), V5.due_hours ?? 72)) (STRICT_DUE ?
     if (methodVersion(ed, cfg) >= 6 && Date.now() - Date.parse(r.resolved_at) > (V6.audit_due_days ?? 7) * 86400e3) (STRICT_DUE ? err : warn)(`audits/${s.edition}.json`, `claim ${s.claim} is in the audit sample and not audited (RESOLVER step 3c)`);
   }
   for (const a of loadAudits()) for (const e of a.entries || []) if (!['yes', 'no', 'measured', 'void', 'unresolved'].includes(e.outcome) || !nonEmpty(e.note) || !isStamp(e.at)) err(`audits/${a.file}`, `entry ${e.claim}: outcome, note and at required`); }
+
+// Readers' questions (METHODOLOGY 21). A faulty record is a warning here and the build leaves it out, so an answer
+// to a reader can never stop an edition. The readers' desk uses the strict check: node scripts/requests.mjs check.
+for (const r of loadRequests({ faults: true })) for (const f of r.faults || []) warn(`requests/${r.file}`, f);
+for (const r of dueRequests(loadRequests())) if (Date.now() > Date.parse(r.claim.resolves_by)) warn(`requests/${r.file}`, 'past its deadline without a result (REQUESTS step 4)');
 
 for (const x of warnings) console.warn(`warning  ${x}`);
 for (const x of errors) console.error(`error    ${x}`);

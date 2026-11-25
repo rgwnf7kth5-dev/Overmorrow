@@ -319,3 +319,30 @@ details:not([open]) > :not(summary){display:none!important}
    columns beyond the page edge). */
 .grid>.story,.desks>.desk{align-self:start}
 .prose p.note{font-family:var(--sans);font-size:14px;color:var(--ink-3);margin:6px 0 18px}
+
+/* Readers' questions (/ask/) */
+.ask-form{margin:18px 0 6px;font-family:var(--sans)}
+.ask-form label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
+.ask-row{display:flex;gap:8px}
+.ask-row input{flex:1 1 auto;min-width:0;font:inherit;font-size:17px;padding:9px 11px;border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:0}
+.ask-row input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.ask-row button{flex:0 0 auto;font:inherit;font-size:15px;font-weight:600;padding:9px 18px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;border-radius:0}
+.ask-row button:disabled{opacity:.55;cursor:default}
+.ask-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.ask-form .note{font-size:13px;color:var(--ink-3);margin:7px 0 0;line-height:1.45}
+.ask-msg{font-size:14px;color:var(--accent);min-height:1.4em;margin:6px 0 0}
+.ask-card{border-top:1px solid var(--hair);padding:14px 0 10px}
+.ask-card h3{margin:2px 0 6px;font-size:21px}
+.ask-card.mine{border-top:2px solid var(--rule)}
+.ask-card.waiting h3{color:var(--ink-2)}
+.ask-meta{font-family:var(--sans);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.ask-claim{font-size:18.5px;line-height:1.38;margin:0 0 8px}
+.ask-card .lk{font-size:14px;margin-bottom:8px}
+.ask-card .lk .bar{flex-basis:120px;height:6px}
+.ask-state{font-family:var(--sans);font-size:14.5px;color:var(--ink-2);margin:0 0 6px}
+.ask-forget{margin:4px 0 0}
+.ask-forget button{font-family:var(--sans);font-size:12px;color:var(--ink-3);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+.ask-hit{font-family:var(--sans);font-size:14.5px;margin:0 0 6px}
+.ask-hit span{color:var(--ink-2)}
+.ask-found h2,.ask-mine h2{font-size:19px;margin:20px 0 8px}
+@media (max-width:640px){.ask-row{flex-direction:column}.ask-row button{padding:11px 18px}}

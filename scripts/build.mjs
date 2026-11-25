@@ -2,7 +2,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pendingClaims, overdueClaims } from './lib.mjs';
-import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage, caseKey, baselineMap, statusQuoOf, auditRows, auditSample, marketBlend, shadowP, withVoices, empiricalRanges, geoMeanOdds } from './lib.mjs';
+import { ROOT, loadEditions, correctionsFor, resultsFor, claimsOf, scoredClaims, summarise, brier, loadWatchlist, watchScore, watchProbAt, isInterval, intervalCloseness, intervalHit, intervalScore, scaledError, measuredClaims, allResults, slipTable, murphy, skill, loadCalibration, loadPublisher, loadConfig, methodVersion, brierInterval, eventKey, altCombos, loadCoverage, caseKey, baselineMap, statusQuoOf, auditRows, auditSample, marketBlend, shadowP, withVoices, empiricalRanges, geoMeanOdds, loadRequests } from './lib.mjs';
+import { REQ, scoredRequests } from './requests-core.mjs';
 
 const DIST = path.join(ROOT, 'dist');
 const REPO = 'https://github.com/rgwnf7kth5-dev/Overmorrow';
@@ -14,7 +15,7 @@ const T = {
     locale: 'en-GB', prefix: '', photo: 'Illustrative photo',
     motto: 'Tomorrow happens. Overmorrow reports it. You read it today.',
     places: 'Prague · Brussels · World',
-    nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method'],
+    nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method', 'Ask the paper'],
     other: 'Čeština', otherLang: 'cs',
     forecastEdition: (t) => `Forecast edition · written ${t}`,
     forecastPaper: 'Forecast newspaper',
@@ -103,13 +104,27 @@ const T = {
       note: 'The time-averaged Brier score counts every hour the question was open, so a forecast that was right early scores better than one that came round at the end. Market: the price of the matching Polymarket or Kalshi contract when we last checked, where one exists.',
       updated: (t) => `Updated ${t}`,
     },
+    ask: {
+      h: 'Ask the paper', lede: 'Name a subject of the news. The paper says what it expects to happen in it tomorrow, or on the nearest day when something is due, with a probability, and checks the answer afterwards like every other forecast.',
+      label: 'Your subject', ph: 'e.g. the budget vote in the Chamber', btn: 'Ask',
+      rules: (n) => `A subject of public life, in at most ${n} characters. No sport, no market prices, nobody’s private life. The paper words the question itself; your own words are not published. Please enter no personal data.`,
+      foundH: 'Already in the paper', mineH: 'Your questions',
+      listH: 'Answered questions', listEmpty: 'No reader’s question has been answered yet. Yours can be the first.',
+      yes: 'Probably yes', no: 'Probably not', even: 'Even chances',
+      quick: 'Quick estimate', desk: 'Readers’ desk', asked: (t) => `asked ${t}`, day: (d) => `Event of ${d}`,
+      how: 'How it is checked', checked: 'Result expected',
+      howH: 'How this works',
+      howP: (m) => `A reader’s question gets a lighter version of the paper’s method: one checkable claim about one day, dated facts from pages actually read, and three independent forecasters whose figures are combined. Where the quick estimate is switched on it answers within minutes; otherwise the readers’ desk answers within about an hour during the day. The most asked subjects also go to the evening desk, which may give them the full method and a story in the next edition. Every answer is checked against its named source and scored, apart from the paper’s own record. <a href="${m}">The method, section 21</a>.`,
+      scoreH: 'How the answers turned out', figs: ['answers checked', 'Brier score (0.250 = coin toss)', 'went our way'],
+      accH: 'Readers’ questions', accNote: 'Forecasts made on demand for readers, by a lighter method, are scored here and nowhere else on this page. They never enter the paper’s own figures.', accCols: ['Answers', 'Checked', 'Brier', 'Went our way'], accRows: ['All', 'Quick estimate', 'Readers’ desk'], accEmpty: 'No answer to a reader has been checked yet.',
+    },
     notFound: ['Page not found', 'Try <a href="{p}/">today’s edition</a> or the <a href="{p}/archive/">archive</a>.'],
   },
   cs: {
     locale: 'cs-CZ', prefix: '/cs', photo: 'Ilustrační foto',
     motto: 'Zítra se to stane. Pozítří se o tom píše. Vy to čtete dnes.',
     places: 'Praha · Brusel · Svět',
-    nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda'],
+    nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda', 'Zeptejte se'],
     other: 'English', otherLang: 'en',
     forecastEdition: (t) => `Vydání predikcí · napsáno ${t}`,
     forecastPaper: 'Noviny z pozítří',
@@ -197,6 +212,20 @@ const T = {
       how: 'Jak se to ověří', history: 'Vývoj', resolvedH: 'Vyhodnocené', resolvedCols: ['Otázka', 'Poslední', 'Výsledek', 'Časově vážený Brier'],
       note: 'Časově vážené Brierovo skóre započítává každou hodinu, po kterou byla otázka otevřená, takže předpověď, která byla správně brzy, dopadne lépe než ta, která se k výsledku dopracovala až na konci. Trh: cena odpovídajícího kontraktu na Polymarketu nebo Kalshi při poslední kontrole, pokud existuje.',
       updated: (t) => `Aktualizováno ${t}`,
+    },
+    ask: {
+      h: 'Zeptejte se novin', lede: 'Napište téma ze zpráv. Noviny řeknou, co v něm čekají zítra nebo v nejbližší den, kdy se má něco rozhodnout, s pravděpodobností, a odpověď potom ověří jako každou jinou predikci.',
+      label: 'Vaše téma', ph: 'např. hlasování o rozpočtu ve Sněmovně', btn: 'Zeptat se',
+      rules: (n) => `Téma z veřejného života, nejvýš ${n} znaků. Žádný sport, žádné ceny na trzích, ničí soukromí. Otázku noviny formulují samy; vaše slova se nezveřejňují. Neuvádějte prosím osobní údaje.`,
+      foundH: 'V novinách už je', mineH: 'Vaše otázky',
+      listH: 'Zodpovězené otázky', listEmpty: 'Zatím nebyla zodpovězena žádná čtenářská otázka. Vaše může být první.',
+      yes: 'Spíše ano', no: 'Spíše ne', even: 'Vyrovnané šance',
+      quick: 'Rychlý odhad', desk: 'Redakce na přání', asked: (t) => `dotaz ${t}`, day: (d) => `Událost: ${d}`,
+      how: 'Jak se to ověří', checked: 'Výsledek se čeká',
+      howH: 'Jak to funguje',
+      howP: (m) => `Čtenářská otázka dostane lehčí verzi metody novin: jedno ověřitelné tvrzení o jednom dni, datovaná fakta ze skutečně přečtených stránek a tři nezávislé prognostiky, jejichž čísla se spojí. Kde je zapnutý rychlý odhad, odpoví během několika minut; jinak odpoví redakce na přání přes den zhruba do hodiny. Nejžádanější témata dostane i večerní redakce, která jim může dát plnou metodu a článek v příštím vydání. Každá odpověď se ověří podle předem určeného zdroje a hodnotí se odděleně od záznamu novin. <a href="${m}">Metoda, oddíl 21</a>.`,
+      scoreH: 'Jak odpovědi dopadly', figs: ['ověřených odpovědí', 'Brierovo skóre (0,250 = hod mincí)', 'vyšlo'],
+      accH: 'Čtenářské otázky', accNote: 'Predikce na přání čtenářů, dělané lehčí metodou, se hodnotí tady a nikde jinde na této stránce. Do čísel novin se nikdy nezapočítávají.', accCols: ['Odpovědi', 'Ověřeno', 'Brier', 'Vyšlo'], accRows: ['Všechny', 'Rychlý odhad', 'Redakce na přání'], accEmpty: 'Zatím nebyla ověřena žádná odpověď čtenáři.',
     },
     notFound: ['Stránka nenalezena', 'Zkuste <a href="{p}/">dnešní vydání</a> nebo <a href="{p}/archive/">archiv</a>.'],
   },
@@ -337,8 +366,8 @@ ${items}
 
 // ---------- page frame ----------
 function layout(L, { title, nav, header, main, description, path: pagePath }) {
-  const keys = ['today', 'watch', 'archive', 'accuracy', 'method'];
-  const hrefs = ['/', '/watch/', '/archive/', '/accuracy/', '/method/'];
+  const keys = ['today', 'watch', 'archive', 'accuracy', 'method', 'ask'];
+  const hrefs = ['/', '/watch/', '/archive/', '/accuracy/', '/method/', '/ask/'];
   const other = T[L.otherLang];
   return `<!doctype html>
 <html lang="${L === T.cs ? 'cs' : 'en'}">
@@ -365,7 +394,7 @@ ${signupBox(L)}
 <footer>${L.footer.map(([h, p]) => `<div><h4>${h}</h4><p>${fill(p, L)}</p></div>`).join('')}</footer>
 </div>
 
-<script src="/spider.js" defer></script>
+<script src="/spider.js" defer></script>${nav === 'ask' ? '\n<script src="/ask.js" defer></script>' : ''}
 </body>
 </html>
 `;
@@ -795,6 +824,53 @@ function watchStrip(L) {
   return `<div class="section"><h2>${W.strip}</h2><span>${W.stripDek} · <a href="${link(L, '/watch/')}">${W.all}</a></span></div><div class="s12">${watchTable(pick, L, lang, false)}</div>`;
 }
 
+// ---------- readers' questions (METHODOLOGY 21) ----------
+const rText = (r, lang, k) => (lang === 'cs' && r[`${k}_cs`]) || r[k];
+/** The answer to a reader as a card: the claim, the likelier outcome with its probability, the reasons, the check. */
+function requestCard(r, L, lang) {
+  const A = L.ask, p = r.forecast.p, c = r.claim;
+  const fav = p > 0.5 ? A.yes : p < 0.5 ? A.no : A.even, favP = Math.max(p, 1 - p);
+  const src = (r.sources || []).map((x) => `<a href="${esc(x.url)}" rel="nofollow noopener">${esc(x.title)}</a>`).join('; ');
+  const res = r.result;
+  return `<article class="ask-card" id="${r.id}">
+<p class="ask-meta">${r.mode === 'quick' ? A.quick : A.desk} · ${A.asked(esc(fmtStamp(r.asked_at, L)))} · ${A.day(fmtDate(r.events_date, L, DAY))}</p>
+<h3>${esc(rText(r, lang, 'topic'))}</h3>
+<p class="ask-claim">${esc(rText(c, lang, 'text'))}</p>
+<div class="lk"><span class="bar" aria-hidden="true"><i style="width:${Math.round(p * 100)}%"></i></span><span>${fav}: <b>${pctNum(favP, L)}</b></span>${stampFor(res, L, { probability: p })}</div>
+${res && res.note ? `<p class="resnote">${esc(rText(res, lang, 'note'))}${res.evidence ? ` <a href="${esc(res.evidence)}" rel="nofollow noopener">${L.evidence}</a>` : ''}</p>` : ''}
+<p>${esc(rText(r, lang, 'reasoning'))}</p>
+<details class="check"><summary>${A.how}</summary><p>${esc(rText(c, lang, 'criterion'))} ${A.checked}: ${esc(fmtStamp(c.evidence_at, L))} (${esc(c.resolution_source)}).</p>${src ? `<p class="basis">${L.sources}: ${src}.</p>` : ''}</details>
+</article>`;
+}
+function requestScore(list) {
+  const rows = scoredRequests(list);
+  return { rows, sum: summarise(rows) };
+}
+function askPage(L) {
+  const lang = L === T.cs ? 'cs' : 'en', A = L.ask;
+  const all = loadRequests();
+  const answered = all.filter((r) => r.status === 'answered').reverse().slice(0, 100);
+  const { sum } = requestScore(all);
+  const score = sum ? `<h2>${A.scoreH}</h2><div class="figures"><div><b>${sum.n}</b><span>${A.figs[0]}</span></div><div><b>${num3(sum.brier, L)}</b><span>${A.figs[1]}</span></div><div><b>${sum.hits}</b><span>${A.figs[2]}</span></div></div>` : '';
+  return `<div class="prose ask" data-ask data-max="${REQ.topic_max_chars}" data-min="${REQ.topic_min_chars}">
+<h1>${A.h}</h1><p class="lede">${A.lede}</p>
+<form class="ask-form" novalidate><label for="ask-topic">${A.label}</label><div class="ask-row"><input id="ask-topic" name="topic" type="text" maxlength="${REQ.topic_max_chars}" autocomplete="off" placeholder="${esc(A.ph)}" required><button type="submit">${A.btn}</button></div><input class="ask-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><p class="note">${A.rules(REQ.topic_max_chars)}</p><p class="ask-msg" role="status" aria-live="polite"></p></form>
+<section class="ask-found" hidden><h2>${A.foundH}</h2><div></div></section>
+<section class="ask-mine" hidden><h2>${A.mineH}</h2><div></div></section>
+<h2>${A.listH}</h2>
+${answered.length ? answered.map((r) => requestCard(r, L, lang)).join('\n') : `<div class="empty">${A.listEmpty}</div>`}
+${score}
+<h2>${A.howH}</h2><p>${A.howP(link(L, '/method/'))}</p>
+</div>`;
+}
+/** The accuracy page's block on readers' questions: scored apart from everything else on the page. */
+function requestsBlock(L) {
+  const A = L.ask, all = loadRequests();
+  const row = (name, list) => { const answered = list.filter((r) => r.status === 'answered'); const s = summarise(scoredRequests(list)); return `<tr><td>${name}</td><td class="n">${answered.length}</td><td class="n">${s ? s.n : 0}</td><td class="n">${s ? num3(s.brier, L) : '–'}</td><td class="n">${s ? s.hits : '–'}</td></tr>`; };
+  if (!all.some((r) => r.status === 'answered')) return '';
+  return `<h2>${A.accH}</h2><p>${A.accNote} <a href="${link(L, '/ask/')}">${A.h}</a>.</p><div class="tbl"><table><thead><tr><th></th><th class="n">${A.accCols[0]}</th><th class="n">${A.accCols[1]}</th><th class="n">${A.accCols[2]}</th><th class="n">${A.accCols[3]}</th></tr></thead><tbody>${row(A.accRows[0], all)}${row(A.accRows[1], all.filter((r) => r.mode === 'quick'))}${row(A.accRows[2], all.filter((r) => r.mode === 'desk'))}</tbody></table></div>`;
+}
+
 // ---------- archive ----------
 function archivePage(editions, L) {
   const A = L.archive;
@@ -1120,6 +1196,7 @@ ${decompBlock(rows, L)}
 ${moreBlocks(editions, rows, L)}
 ${coverageBlock(L)}
 ${trackBlock(editions, L)}
+${requestsBlock(L)}
 <h2>${A.missH}</h2>
 <div class="tbl"><table><thead><tr><th>${A.missCols[0]}</th><th>${A.missCols[1]}</th><th class="n">${A.missCols[2]}</th><th>${A.missCols[3]}</th></tr></thead><tbody>${worst}</tbody></table></div>
 </div>`;
@@ -1189,7 +1266,7 @@ function searchIndex(editions, L, lang) {
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'site', 'style.css'), path.join(DIST, 'style.css'));
-for (const f of ['logo.svg', 'favicon.svg', 'spider.js']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
+for (const f of ['logo.svg', 'favicon.svg', 'spider.js', 'ask.js']) fs.copyFileSync(path.join(ROOT, 'site', f), path.join(DIST, f));
 if (fs.existsSync(path.join(ROOT, 'site', 'photos'))) fs.cpSync(path.join(ROOT, 'site', 'photos'), path.join(DIST, 'photos'), { recursive: true });
 
 const editions = loadEditions();
@@ -1211,6 +1288,7 @@ for (const lang of LANGS) {
   }
   const plain = masthead(L, null, latest.edition_date);
   write(`${pre}watch/index.html`, layout(L, { title: `${L.watch.h} — The Overmorrow`, nav: 'watch', header: plain, main: watchPage(L), path: '/watch/' }));
+  write(`${pre}ask/index.html`, layout(L, { title: `${L.ask.h} — The Overmorrow`, nav: 'ask', header: plain, main: askPage(L), description: L.ask.lede, path: '/ask/' }));
   write(`${pre}archive/index.html`, layout(L, { title: `${L.archive.h} — The Overmorrow`, nav: 'archive', header: plain, main: archivePage(editions, L), path: '/archive/' }));
   fs.writeFileSync(path.join(DIST, `${pre}feed.xml`), feedXml(editions, L));
   fs.writeFileSync(path.join(DIST, `${pre}search.json`), JSON.stringify(searchIndex(editions, L, lang)));
@@ -1220,5 +1298,8 @@ for (const lang of LANGS) {
   write(`${pre}method/index.html`, layout(L, { title: `${L.nav[4]} — The Overmorrow`, nav: 'method', header: plain, main: `<div class="prose">${md(method)}</div>`, path: '/method/' }));
   write(`${pre}404.html`, layout(L, { title: `${L.notFound[0]} — The Overmorrow`, nav: '', header: plain, main: `<div class="prose"><h1>${L.notFound[0]}</h1><p>${fill(L.notFound[1], L)}</p></div>`, path: '/' }));
 }
+
+// Readers' questions as static files: the page of a reader who asked fetches /requests/<id>.json to see the answer.
+for (const r of loadRequests()) { const { file, ...rec } = r; write(`requests/${r.id}.json`, JSON.stringify(rec)); }
 
 console.log(`Built ${editions.length} edition(s) in ${LANGS.join(' and ')} into dist/. Latest: ${latest.id}.`);

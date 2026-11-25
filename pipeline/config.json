@@ -357,6 +357,17 @@
       "external_wording": "flag_at is 3, all three models, since the first run (22 November 2026): OpenAI and xAI called 9 and 7 of 10 criteria ambiguous and Google none, so two of three flagged 7 of 10 claims, too many to mean anything. Look at this again after a week of runs."
     }
   },
+  "requests": {
+    "_note": "Readers' questions (METHODOLOGY 21, pipeline/REQUESTS.md), from 25 November 2026. A reader names a subject on /ask/; the site queues it (netlify/functions) and either the quick forecast (scripts/requests-quick.mjs, needs ANTHROPIC_API_KEY in the site's environment) or the hourly readers' desk answers it. Answers live in data/requests/, are scored apart from the paper and never enter its figures. The limits (length of a topic, topics a day, horizon, probability bounds) are in scripts/requests-core.mjs (REQ), because the site's functions cannot read this file; the quick forecast's models are in scripts/requests-quick.mjs (QUICK).",
+    "adopted": "2026-11-25",
+    "settings": "scripts/requests-core.mjs",
+    "desk_models": {
+      "research": "opus",
+      "base-rate": "opus",
+      "evidence": "opus",
+      "outsider": "sonnet"
+    }
+  },
   "nonevent": {
     "_note": "Publisher's decision, 16 November 2026: the allowance of three 'did not happen' stories was used as a daily quota (3 in most editions from No. 22), filled with 'X did not restate Y' reports. From edition `from` a story may report a non-event only if it names in `awaited` what had been announced or scheduled for that day and where (source); at most negative_stories_max (1) per edition. A claim that someone merely repeats a known position may not lead a story. A running story with nothing reportable that day goes to the diary, not into a story.",
     "from": 28

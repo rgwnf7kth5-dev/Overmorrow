@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkRequest } from './requests-core.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const EDITIONS_DIR = path.join(ROOT, 'data', 'editions');
@@ -583,4 +584,24 @@ export function empiricalRanges(measured, cfg = loadConfig()) {
     out.set(`${c.edition.id}:${c.id}`, { q10: mid - half, q50: mid, q90: mid + half, n: past.length });
   }
   return out;
+}
+
+// ---------- readers' questions (METHODOLOGY 21) ----------
+export const REQUESTS_DIR = path.join(ROOT, 'data', 'requests');
+/**
+ * Readers' questions, oldest first: one file per question in data/requests/. A record that fails its check is left
+ * out of the site (the validator warns), so a faulty answer to a reader can never stop an edition from being built.
+ * With faults=true the faulty ones are returned too, each with its list of errors in `faults`.
+ */
+export function loadRequests({ faults = false } = {}) {
+  if (!fs.existsSync(REQUESTS_DIR)) return [];
+  const out = [];
+  for (const f of fs.readdirSync(REQUESTS_DIR).filter((x) => /^r-\d{8}-[a-z0-9]{6}\.json$/.test(x)).sort()) {
+    let rec, errs;
+    try { rec = JSON.parse(fs.readFileSync(path.join(REQUESTS_DIR, f), 'utf8')); errs = checkRequest(rec); if (rec.id !== f.replace('.json', '')) errs.push('id must match the file name'); }
+    catch (e) { rec = { id: f.replace('.json', '') }; errs = [`unreadable JSON: ${e.message}`]; }
+    if (!errs.length) out.push({ file: f, ...rec });
+    else if (faults) out.push({ file: f, ...rec, faults: errs });
+  }
+  return out.sort((a, b) => String(a.asked_at).localeCompare(String(b.asked_at)));
 }

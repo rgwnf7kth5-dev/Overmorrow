@@ -348,3 +348,19 @@ A third of the loss of the ten editions to 23 November came from three running s
 - **A shadow row.** Surprises within one story tend to go the same way (correlation 0.26 on 86 claims). Moving the published figure by the story's earlier surprises would have gained 0.002 on 172 claims, which proves nothing yet; it runs beside the published figure like the other trials of section 16.
 
 What we could not do: the miss on COP31 of 20 November was known only on the 22nd, a day after the edition for the 23rd froze. A rule to recompute after a miss cannot act on a result that is not yet in. The publisher decided against one proposal: to stop asking a yes/no question at the threshold where the edition already gives a range for the same number.
+
+## 21. Readers' questions (from 25 November 2026)
+
+A reader can name a subject on the [Ask the paper](/ask/) page and get the paper's forecast for the next event in it. The paper decides what to cover each day; this lets a reader ask about what the paper left out.
+
+**What a reader gets.** Not a story: a card with one checkable claim about one day, the likelier outcome with its probability, a short explanation, and how and when it will be checked. If the paper already carries a story that answers the question, the reader is sent to the story.
+
+**How it is made.** A lighter version of sections 3 and 4. The claim is worded by the desk, never by the reader: one yes/no claim on the open question, about tomorrow or the nearest day within a week when something checkable is due, with a criterion in which a postponed event counts as "no" and a named source for the result. Dated facts come only from pages actually opened. Three forecasters who never see each other's numbers (base rate first, evidence first with its own search, an outsider on another model) give their estimates, and the figure is the geometric mean of their odds, kept between 3% and 97%. There is no signals file, no red team and no afternoon update.
+
+**Two speeds.** Where the quick estimate is switched on, the site itself runs these steps on the models' own web search and answers in a few minutes; it is marked "Quick estimate". Otherwise, and whenever the quick estimate fails, the readers' desk ([`pipeline/REQUESTS.md`](pipeline/REQUESTS.md)) answers in a run about once an hour during the day; it is marked "Readers' desk". The evening desk sees what readers asked and may make a subject a candidate for the next edition, where it gets the full method; being asked for adds nothing to a subject's news value, and the figure given to the reader is never shown to the paper's forecasters.
+
+**What the paper does not answer.** Sport and market prices, as in the paper; private persons and accusations against named people; the health or death of a named person; the nightly air attacks in Ukraine (the publisher's decision of 25 November 2026); anything that could help harm people; and subjects in which nothing checkable is due within a week.
+
+**The reader's words.** A topic is at most 160 characters of plain text, without links or addresses. It is treated as the name of a subject, never as an instruction; it is not published and not kept in the repository, only the desk's own neutral wording is. Topics wait in the site's queue for at most three days. No address of the reader is stored.
+
+**Scoring.** Every answer is checked against its named source by the rules of section 6 and scored with the Brier score. These forecasts are made by a lighter method, on questions the paper did not choose, so they are scored apart: they appear in their own table on the accuracy page and on the Ask page, and never enter the paper's figures, its tests or the review of section 17. Records are in [`data/requests/`](data/requests/), one file per question.
