@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25T03:01:03+01:00",
+  "as_of": "2026-11-25T17:01:41+01:00",
   "timezone": "Europe/Prague",
   "term": 10,
   "sources": {
@@ -14,7 +14,7 @@
       "status": "approved",
       "file": "data/psp/meetings/10-37.json",
       "source": "https://www.psp.cz/schuze/10/37",
-      "sitting_status": "interrupted"
+      "sitting_status": "in_progress"
     },
     {
       "number": 36,
@@ -53,8 +53,8 @@
       "source": "https://www.psp.cz/schuze/10/27"
     }
   ],
-  "latest_vote_date": "2026-11-24",
-  "latest_roll_calls": "data/psp/votes/2026-11-24.json",
+  "latest_vote_date": "2026-11-25",
+  "latest_roll_calls": "data/psp/votes/2026-11-25.json",
   "claims": [
     {
       "id": "cz-orlen-25",
@@ -95,14 +95,16 @@
       "event_date": "2026-11-25",
       "print": 324,
       "meeting": 37,
-      "as_of_status": "approved_third_item_of_day",
+      "as_of_status": "second_reading_opened",
       "evidence_status": "pending",
-      "notes": "Druhé čtení je třetím bodem středy po bodech 137 a 181. Sleduje se uzavření obecné i podrobné rozpravy dne 25. listopadu.",
+      "notes": "Bod 1 byl otevřen jako čtvrtý bod dne. Doloženo zahájení ve stenozáznamu, nikoli uzavření obou rozprav do konce dne.",
       "sources": [
         "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
         "https://www.psp.cz/schuze/10/37",
         "https://github.com/rgwnf7kth5-dev/Overmorrow/blob/main/data/dossiers/2026-11-26/cz-budget-26.md",
-        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037001.htm"
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037001.htm",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037078.htm",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037093.htm"
       ],
       "approved_item": 1
     },
@@ -118,6 +120,26 @@
       "sources": [
         "https://www.psp.cz/schuze/10/37",
         "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
+      ]
+    },
+    {
+      "id": "cz-groundwater-fee-passed",
+      "print": 48,
+      "meeting": 37,
+      "approved_item": 135,
+      "as_of_status": "amendment_and_final_passage_recorded",
+      "evidence_status": "verified",
+      "vote_ids": [
+        89148,
+        89149,
+        89150,
+        89151
+      ],
+      "sources": [
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89150",
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89151",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm",
+        "https://www.psp.cz/sqw/text/orig2.sqw?idd=281540"
       ]
     }
   ],
@@ -144,7 +166,7 @@
         "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=311&ct1=4"
       ],
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 311/0 dne 22. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 718/26 , PID KORNDY5H6KU4.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Mgr. Patrik Pařil a navrhl Rozpočtový výbor jako garanční.",
@@ -168,9 +190,9 @@
       "print": 324,
       "next_stage": "second_reading",
       "meeting": 37,
-      "notes": "Druhé čtení: schválený středeční pořad 137, 181, 1. Rozpočet je třetí; 47 přihlášených řečníků. Třetí čtení je samostatný bod 126.",
+      "notes": "Druhé čtení zahájeno jako čtvrtý bod po tiscích 48, 210 a 179. V poslední dostupné části stenozáznamu pokračuje rozprava. Ukončení nedoloženo.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 324/0 dne 30. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 671/26 , PID KORNDYDBN5D6. Dodatky doručeny sněmovně 30. 9. 2026.",
         "PS Předseda sněmovny přikázal 30. 9. 2026 k projednání rozpočtovému výboru (rozhodnutí č. 18 ). Zpravodajem pro 1. čtení jmenován: Ing. Vlastimil Hebr .",
@@ -807,6 +829,528 @@
             "submitted_at": "2026-11-24T22:21:32+01:00",
             "status": "submitted"
           }
+        ],
+        "2026-11-25": [
+          {
+            "id": 2484,
+            "author": "Karel Tureček",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283141",
+            "submitted_at": "2026-11-25T07:33:16+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2485,
+            "author": "Andrej Babiš",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283145",
+            "submitted_at": "2026-11-25T08:19:09+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2486,
+            "author": "Andrej Babiš",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283147",
+            "submitted_at": "2026-11-25T08:21:00+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2487,
+            "author": "Boris Šťastný",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283149",
+            "submitted_at": "2026-11-25T08:22:53+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2489,
+            "author": "Jan Skopeček",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283155",
+            "submitted_at": "2026-11-25T08:47:59+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2490,
+            "author": "Marie Kršková",
+            "description": "Posílení financování programů podpory dostupného bydlení",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283157",
+            "submitted_at": "2026-11-25T09:10:15+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2491,
+            "author": "Jakub Janda",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283159",
+            "submitted_at": "2026-11-25T09:12:33+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2493,
+            "author": "Oto Klempíř",
+            "description": "Podpora regionálních divadel",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283164",
+            "submitted_at": "2026-11-25T09:27:26+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2494,
+            "author": "Jan Berki",
+            "description": "podpora činnosti mládežnických organizací + 50 mil. Kč (Berki, Kašparová, Kovářová)",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283166",
+            "submitted_at": "2026-11-25T09:31:03+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2495,
+            "author": "Zdeňka Blišťanová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283168",
+            "submitted_at": "2026-11-25T09:30:39+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2496,
+            "author": "Jan Berki",
+            "description": "navýšení rozpočtu VŠ o bývalý ukazatel R (Berki, Kašparová, Kovářová, Papajanovský, Řehková)",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283170",
+            "submitted_at": "2026-11-25T09:35:25+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2498,
+            "author": "Jan Berki",
+            "description": "podpora komunitních aktivit knihoven + 4 mil. Kč",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283172",
+            "submitted_at": "2026-11-25T09:37:53+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2499,
+            "author": "Jan Berki",
+            "description": "program na zapojení pediatrů do předcházení nadměrnému užívání digitálních technologií",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283174",
+            "submitted_at": "2026-11-25T09:43:43+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2500,
+            "author": "Jana Filipovičová",
+            "description": "Posílení státních hmotných rezerv a civilní připravenosti České republiky na krizové stavy",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283176",
+            "submitted_at": "2026-11-25T09:54:28+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2501,
+            "author": "Karel Dvořák",
+            "description": "Obnovení financování protikorupčních programů",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283178",
+            "submitted_at": "2026-11-25T09:56:58+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2502,
+            "author": "Jan Berki",
+            "description": "podpora SVČ v zapojování dětí z rodin ohrožených chudobou, vzdělávání pedagogů v tématu klima tříd a škol a participativních rozpočtů na školách",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283180",
+            "submitted_at": "2026-11-25T10:05:40+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2503,
+            "author": "Andrea Hoffmannová",
+            "description": "Podpora živého umění",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283184",
+            "submitted_at": "2026-11-25T10:31:45+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2504,
+            "author": "Jan Berki",
+            "description": "kompenzační pomůcky",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283182",
+            "submitted_at": "2026-11-25T10:27:56+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2505,
+            "author": "Monika Brzesková",
+            "description": "Podpora vysokého školství",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283185",
+            "submitted_at": "2026-11-25T10:45:23+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2506,
+            "author": "Karel Dvořák",
+            "description": "Dorovnání pracovních odměn vězněných osob",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283187",
+            "submitted_at": "2026-11-25T10:46:41+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2507,
+            "author": "Karel Dvořák",
+            "description": "Zaměstnání dalších 190 vězněných osob",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283189",
+            "submitted_at": "2026-11-25T11:05:02+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2508,
+            "author": "Michaela Řehková",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283220",
+            "submitted_at": "2026-11-25T12:02:18+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2509,
+            "author": "Vít Rakušan",
+            "description": "Navýšení kapitoly Ministerstva obrany",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283191",
+            "submitted_at": "2026-11-25T11:16:55+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2510,
+            "author": "Vít Rakušan",
+            "description": "Navýšení rozpočtu TAČR",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283193",
+            "submitted_at": "2026-11-25T11:18:10+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2511,
+            "author": "Ivan Bartoš",
+            "description": "Armáda bude mít už v roce 2027 dvě miliardy korun na zahájení nových projektů protivzdušné obrany včetně ochrany proti dronům. Peníze návrh vyčleňuje přímo z rozpočtu ministerstva bez zvýšení schodku.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283197",
+            "submitted_at": "2026-11-25T11:26:51+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2512,
+            "author": "Karel Dvořák",
+            "description": "Obnova hardwaru justice",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283195",
+            "submitted_at": "2026-11-25T11:24:08+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2513,
+            "author": "Petr Hladík",
+            "description": "Navýšení finančních prostředků na program Podpora obnovy přirozených funkcí krajiny, administrovaný Agenturou ochrany přírody a krajiny ČR.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283199",
+            "submitted_at": "2026-11-25T11:27:40+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2514,
+            "author": "Petr Hladík",
+            "description": "Navýšení finančních prostředků Ministerstva zemědělství na vodohospodářská opatření a řešení sucha jako alternativa ke zvýšení poplatků za odběr podzemních vod.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283201",
+            "submitted_at": "2026-11-25T11:28:33+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2515,
+            "author": "Petr Hladík",
+            "description": "Navýšení finančních prostředků na environmentální vzdělávání, výchovu a osvětu.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283203",
+            "submitted_at": "2026-11-25T11:29:24+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2516,
+            "author": "Eva Šrámková",
+            "description": "Návrh vyčleňuje 10 mil. Kč na mentoring ve školních jídelnách všech 14 krajů. Zkušení kuchaři a odborníci na výživu pomohou přímo v kuchyních vařit zdravě a chutně v rámci finančního limitu na oběd.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283216",
+            "submitted_at": "2026-11-25T11:50:38+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2517,
+            "author": "Petr Hladík",
+            "description": "Navýšení příspěvku na činnost Správy Krkonošského národního parku s cílem obnovit úroveň financování.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283211",
+            "submitted_at": "2026-11-25T11:32:51+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2518,
+            "author": "Petr Hladík",
+            "description": "Navýšení příspěvku na činnost Správy Národního parku Šumava s cílem obnovit úroveň financování.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283213",
+            "submitted_at": "2026-11-25T11:33:33+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2519,
+            "author": "Karel Dvořák",
+            "description": "Zvláštní příplatek Probační a mediační služby",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283218",
+            "submitted_at": "2026-11-25T11:58:01+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2521,
+            "author": "Jakub Krainer",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283224",
+            "submitted_at": "2026-11-25T12:17:06+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2522,
+            "author": "Michaela Řehková",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283222",
+            "submitted_at": "2026-11-25T12:08:24+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2523,
+            "author": "Karel Dvořák",
+            "description": "Provoz sítě a softwarových licencí justice",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283226",
+            "submitted_at": "2026-11-25T12:15:25+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2524,
+            "author": "Lukáš Vlček",
+            "description": "Vyčlenění prostředků na nový program dočasné podpory cen elektřiny pro energeticky náročná odvětví podle oddílu 4.5 rámce CISAF, který doplní kompenzace nepřímých nákladů.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283228",
+            "submitted_at": "2026-11-25T12:19:00+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2525,
+            "author": "Jakub Krainer",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283230",
+            "submitted_at": "2026-11-25T12:19:14+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2526,
+            "author": "Jakub Krainer",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283232",
+            "submitted_at": "2026-11-25T12:20:12+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2527,
+            "author": "Jakub Krainer",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283234",
+            "submitted_at": "2026-11-25T12:21:04+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2528,
+            "author": "Michaela Šebelová",
+            "description": "dotace na olympiádu dětí a mládeže",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283236",
+            "submitted_at": "2026-11-25T12:29:12+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2531,
+            "author": "Michaela Šebelová",
+            "description": "podpora adiktologických služeb",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283239",
+            "submitted_at": "2026-11-25T12:30:49+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2533,
+            "author": "Karel Dvořák",
+            "description": "Urychlení modernizace věznice Rýnovice (inženýrské sítě a komunikace)",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283243",
+            "submitted_at": "2026-11-25T12:31:26+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2537,
+            "author": "Karel Dvořák",
+            "description": "Modernizace zabezpečení věznic",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283248",
+            "submitted_at": "2026-11-25T12:54:21+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2538,
+            "author": "Jan Hrnčíř",
+            "description": "NKÚ",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283250",
+            "submitted_at": "2026-11-25T13:05:39+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2540,
+            "author": "Robert Plaga",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283252",
+            "submitted_at": "2026-11-25T13:29:47+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2541,
+            "author": "Karel Dvořák",
+            "description": "Probační a resocializační programy pro dospělé",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283254",
+            "submitted_at": "2026-11-25T13:29:31+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2542,
+            "author": "Michaela Šebelová",
+            "description": "rozvoj a podpora sportu",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283262",
+            "submitted_at": "2026-11-25T13:54:00+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2543,
+            "author": "Igor Červený",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283264",
+            "submitted_at": "2026-11-25T14:04:11+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2544,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283265",
+            "submitted_at": "2026-11-25T14:09:34+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2545,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283267",
+            "submitted_at": "2026-11-25T14:09:54+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2546,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283269",
+            "submitted_at": "2026-11-25T14:10:16+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2547,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283271",
+            "submitted_at": "2026-11-25T14:10:36+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2548,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283273",
+            "submitted_at": "2026-11-25T14:10:59+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2549,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283275",
+            "submitted_at": "2026-11-25T14:11:21+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2550,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283277",
+            "submitted_at": "2026-11-25T14:11:44+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2551,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283279",
+            "submitted_at": "2026-11-25T14:12:06+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2552,
+            "author": "Adriana Chochelová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283281",
+            "submitted_at": "2026-11-25T14:12:24+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2553,
+            "author": "Karel Dvořák",
+            "description": "Nekrytá příprava reformy soudní mapy",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283289",
+            "submitted_at": "2026-11-25T14:35:03+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2554,
+            "author": "Samuel Volpe",
+            "description": "Návrh přesouvá 13,85 mil. Kč z ostatních výdajů Všeobecné pokladní správy na platy a odvody 16 zaměstnanců ostrahy sídla NKÚ. Náklady na ostrahu tak úřad pokryje bez omezení běžných provozních výdajů.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283293",
+            "submitted_at": "2026-11-25T15:13:03+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2555,
+            "author": "Karel Dvořák",
+            "description": "Nekrytá příprava reformy soudní mapy (správná verze)",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283292",
+            "submitted_at": "2026-11-25T15:10:00+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2556,
+            "author": "Jana Černochová",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283296",
+            "submitted_at": "2026-11-25T15:37:58+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2558,
+            "author": "Jan Sviták",
+            "description": "Financování silnic II. a III. tříd",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283298",
+            "submitted_at": "2026-11-25T16:06:57+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2559,
+            "author": "Vojtěch Munzar",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283300",
+            "submitted_at": "2026-11-25T16:13:37+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2560,
+            "author": "Josef Flek",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283302",
+            "submitted_at": "2026-11-25T16:35:28+01:00",
+            "status": "submitted"
+          }
         ]
       },
       "approved_items": [
@@ -815,8 +1359,13 @@
       ],
       "fixed_slot": {
         "date": "2026-11-25",
-        "order": 3
-      }
+        "order": 4
+      },
+      "stage": "second_reading_open",
+      "other_sources": [
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037078.htm",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037093.htm"
+      ]
     },
     {
       "claim_ids": [
@@ -834,7 +1383,7 @@
       },
       "notes": "Druhé čtení jako druhý bod čtvrtečního bloku od 18:00 po tisku 301. Třetí čtení (bod 155) čeká na ukončení druhého čtení.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 300/0 dne 8. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 559/26 , PID KORNDSJHRRGS.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Ing. Karin Gajdová, Ph.D. a navrhl Výbor pro sociální politiku jako garanční.",
@@ -925,6 +1474,16 @@
             "submitted_at": "2026-11-24T13:55:04+01:00",
             "status": "submitted"
           }
+        ],
+        "2026-11-25": [
+          {
+            "id": 2532,
+            "author": "Vlastimil Válek",
+            "description": "Návrh vypouští možnost snížit osobní příplatek kvůli zvýšení platového tarifu. Brání tomu, aby se navýšení pro zaměstnance projevilo jen přesunem mezi složkami platu.",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283241",
+            "submitted_at": "2026-11-25T12:30:58+01:00",
+            "status": "submitted"
+          }
         ]
       },
       "approved_items": [
@@ -941,7 +1500,7 @@
       "eligible_from": "2026-12-24",
       "notes": "Vládní návrh po prvním čtení. Výbor pro média a kulturu 30. 10. přerušil projednávání.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 231/0 dne 19. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 449/26 , PID KORNDT4HPGKS.",
         "O Organizační výbor projednání návrhu zákona doporučil 24. 6. 2026 (usnesení č. 79 ). Určil zpravodaje: Gabriela Sedláčková a navrhl Výbor pro média a kulturu jako garanční.",
@@ -955,16 +1514,12 @@
         "cz-groundwater-fee-passed"
       ],
       "print": 48,
-      "next_stage": "third_reading",
+      "next_stage": "after_chamber_passage",
       "eligible_from": "2026-11-05",
       "meeting": 37,
-      "fixed_slot": {
-        "date": "2026-11-27",
-        "order": 3
-      },
-      "notes": "Novela o rostlinolékařské péči. Po vrácení z třetího čtení skončilo opakované druhé čtení 20. 10. K vyhodnocení otázky doložte i přijetí ustanovení o poplatku ve výsledném znění.",
+      "notes": "Třetí čtení schváleno 25. listopadu v 11:36. Zvýšení poplatku na 7 Kč za m³ obsahují přijaté návrhy G1/G2 (SD 2091). Po námitce rozhodlo opakované hlasování č. 122.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 48/0 dne 1. 12. 2025. Návrh zaevidován v systému eKLEP pod čj. OVA 892/25 , PID KORNDMGGSV4S.",
         "O Organizační výbor projednání návrhu zákona doporučil 17. 12. 2025 (usnesení č. 14 ). Určil zpravodaje: David Pražák a navrhl Zemědělský výbor jako garanční.",
@@ -975,13 +1530,20 @@
         "3 3. Čtení proběhlo 27. 5. , 5. 6. 2026 na 20. schůzi.Návrh zákona vrácen do obecné rozpravy 2. čtení (hlasování č. 72 , usnesení č. 204 ).",
         "2 2. Čtení Návrh zákona prošel obecnou rozpravou 20. 10. 2026 na 34. schůzi. Návrh zákona prošel podrobnou rozpravou 20. 10. 2026 na 34. schůzi. Podané pozměňovací návrhy zpracovány jako tisk 48/5 , který byl rozeslán 21. 10. 2026 v 17:19. Zemědělský výbor vydal usnesení garančního výboru, které bylo 3. 11. 2026 doručeno poslancům jako sněmovní tisk 48/6 (stanovisko) ."
       ],
-      "last_completed_reading": 2,
+      "last_completed_reading": 3,
       "return_to_second_reading_vote": {
         "number": 72,
         "id": 87504
       },
       "approved_items": [
         135
+      ],
+      "final_vote": 89151,
+      "substantive_amendment_vote": 89150,
+      "other_sources": [
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h122",
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89151",
+        "https://www.psp.cz/sqw/text/orig2.sqw?idd=281540"
       ]
     },
     {
@@ -990,11 +1552,13 @@
       ],
       "print": 369,
       "next_stage": "committee_after_first_reading",
-      "notes": "Bod 49 je v pořadu označen jako dokončený. Podle ČTK návrh pokračuje do hospodářského výboru; historie tisku dosud nezachycuje dokončené čtení. Přesný předmět hlasování 85 a 86 čeká na zveřejnění příslušné části stenozáznamu.",
+      "notes": "Historie potvrzuje první čtení 24. listopadu, přikázání hospodářskému výboru a patnáctidenní lhůtu. Další projednávání možné od 10. prosince. Samostatné přiřazení hlasování č. 85 a 86 čeká na stenozáznam.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369",
-      "history_checked_at": "2026-11-25T03:01:03+01:00",
+      "history_checked_at": "2026-11-25T17:01:41+01:00",
       "history_entries": [
-        "PS Návrh zákona rozeslán poslancům jako tisk 369/0 dne 13. 11. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 860/26 , PID ALBSDZNKLVC0. Navrhovatel navrhl sněmovně projednávání návrhu zákona tak, aby sněmovna s ním mohla vyslovit souhlas již v prvém čtení ( § 90 odstavec 2 zákona č. 90/1995 Sb , o jednacím řádu Poslanecké sněmovny, ve znění pozdějších předpisů). Předseda sněmovny projednání zákona doporučil 23. 11. 2026. Určil zpravodaje: Ing. Roman Kubíček, Ph.D., MBA a navrhl přikázat k projednání výborům: Hospodářský výbor (rozhodnutí č. 21 )"
+        "PS Návrh zákona rozeslán poslancům jako tisk 369/0 dne 13. 11. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 860/26 , PID ALBSDZNKLVC0. Navrhovatel navrhl sněmovně projednávání návrhu zákona tak, aby sněmovna s ním mohla vyslovit souhlas již v prvém čtení ( § 90 odstavec 2 zákona č. 90/1995 Sb , o jednacím řádu Poslanecké sněmovny, ve znění pozdějších předpisů). Předseda sněmovny projednání zákona doporučil 23. 11. 2026. Určil zpravodaje: Ing. Roman Kubíček, Ph.D., MBA a navrhl přikázat k projednání výborům: Hospodářský výbor (rozhodnutí č. 21 )",
+        "1 1. Čtení Návrh projednán v obecné rozpravě 24. 11. 2026 na 37. schůzi. Sněmovna nesouhlasila s projednáváním tak, aby mohla s návrhem zákona vyslovit souhlas již v prvém čtení. Čtení proběhlo 24. 11. 2026 na 37. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 357 ). Lhůta k projednání výbory byla určena na 15 dní .",
+        "V Garanční Hospodářský výbor návrh zákona neprojednal ."
       ],
       "last_completed_reading": 1,
       "rapporteur": "Roman Kubíček",
@@ -1007,7 +1571,10 @@
       "approved_items": [
         49
       ],
-      "committee": "Hospodářský výbor"
+      "committee": "Hospodářský výbor",
+      "eligible_from": "2026-12-10",
+      "committee_deadline_days": 15,
+      "committee_resolution": 357
     }
   ],
   "vote_evidence": [
@@ -1050,6 +1617,114 @@
       "result_code": "R",
       "time_local": "18:51",
       "date": "2026-11-24"
+    },
+    {
+      "id": 89119,
+      "number": 91,
+      "meeting": 37,
+      "time_local": "09:34:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 154,
+        "quorum": 78,
+        "yes": 119,
+        "no": 4,
+        "abstained": 31
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89119",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037059.htm#h91",
+      "motion": "Přesun třetího čtení tisku 48 na první místo ve středu",
+      "date": "2026-11-25"
+    },
+    {
+      "id": 89148,
+      "number": 120,
+      "meeting": 37,
+      "time_local": "11:33:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 172,
+        "quorum": 87,
+        "yes": 120,
+        "no": 17,
+        "abstained": 35
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89148",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h120",
+      "motion": "G1 a G2 – zvýšení poplatku za podzemní vodu",
+      "date": "2026-11-25"
+    },
+    {
+      "id": 89149,
+      "number": 121,
+      "meeting": 37,
+      "time_local": "11:34:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 172,
+        "quorum": 87,
+        "yes": 165,
+        "no": 0,
+        "abstained": 7
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89149",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h121",
+      "motion": "Námitka proti hlasování č. 120",
+      "date": "2026-11-25"
+    },
+    {
+      "id": 89150,
+      "number": 122,
+      "meeting": 37,
+      "time_local": "11:34:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 171,
+        "quorum": 86,
+        "yes": 117,
+        "no": 16,
+        "abstained": 38
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89150",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h122",
+      "motion": "G1 a G2 – opakované hlasování o zvýšení poplatku",
+      "date": "2026-11-25"
+    },
+    {
+      "id": 89151,
+      "number": 123,
+      "meeting": 37,
+      "time_local": "11:36:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 172,
+        "quorum": 87,
+        "yes": 97,
+        "no": 0,
+        "abstained": 75
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89151",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h123",
+      "motion": "Závěrečný souhlas s tiskem 48 v přijatém znění",
+      "date": "2026-11-25"
+    },
+    {
+      "id": 89152,
+      "number": 124,
+      "meeting": 37,
+      "time_local": "11:37:00",
+      "result_code": "A",
+      "web_summary": {
+        "present": 171,
+        "quorum": 86,
+        "yes": 159,
+        "no": 0,
+        "abstained": 12
+      },
+      "source": "https://www.psp.cz/sqw/hlasy.sqw?G=89152",
+      "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm#h124",
+      "motion": "Doprovodné usnesení k tisku 48",
+      "date": "2026-11-25"
     }
   ],
   "base_rates": {
@@ -1060,18 +1735,20 @@
     "latest_vote_in_input": 89114
   },
   "changes": [
-    "Dne 24. listopadu proběhlo 86 hlasování. Návrh STAN k Polsku byl zamítnut hlasováním č. 5. O konečném souhlasu k tisku 311 se nehlasovalo.",
-    "Schválený pořad obsahuje 195 bodů. Rozpočet je ve středu třetí; rafinerie v pátek první. Tisk 300 je ve čtvrtek druhý v bloku od 18 hodin.",
-    "První čtení energetického zákona skončilo; následuje hospodářský výbor."
+    "Tisk 48: přesunut na první bod. Po přijetí námitky proti hlasování 120 schváleny G1/G2 v opakovaném hlasování 122 (117 pro, 16 proti). Celek schválen v hlasování 123 (97 pro, 0 proti).",
+    "Tisk 324: druhé čtení zahájeno jako čtvrtý bod dne. Uzavření rozprav zatím nedoloženo.",
+    "Tisk 369: potvrzena lhůta výboru 15 dnů a nejbližší termín 10. prosince.",
+    "Kontrola úterních hlasování zachytila následné rozdíly v evidenci omluv mezi webem a ZIP. Obě podoby jsou uloženy po jednotlivých hlasováních."
   ],
-  "vote_index_checked_at": "2026-11-25T03:01:03+01:00",
+  "vote_index_checked_at": "2026-11-25T17:01:41+01:00",
   "change_sources": [
-    "https://www.psp.cz/schuze/10/37",
-    "https://www.psp.cz/sqw/hlasy.sqw?G=89033",
-    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037030.htm#h5",
-    "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261124"
+    "https://www.psp.cz/sqw/hlasy.sqw?G=89150",
+    "https://www.psp.cz/sqw/hlasy.sqw?G=89151",
+    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037071.htm",
+    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037078.htm",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=369"
   ],
-  "vote_day_complete": true,
+  "vote_day_complete": false,
   "data_gaps": [
     {
       "votes": [
@@ -1079,6 +1756,10 @@
         89114
       ],
       "reason": "Stenozáznam v dostupném indexu končí před hlasováními v 22:57 a 22:58. Konkrétní předmět a případné opakování pending."
+    },
+    {
+      "file": "data/psp/votes/2026-11-25.json",
+      "reason": "Průběžný webový přehled do hlasování č. 130. Rozlišení tlačítka zdržení a přítomnosti bez stisku a příznaky zmatečnosti čekají na ZIP."
     }
   ]
 }
