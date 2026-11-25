@@ -1,8 +1,9 @@
 // The quick forecast for a reader's question (METHODOLOGY 21): a light version of the paper's method that
 // answers in a minute or two. One desk call words a checkable claim and collects dated facts with the model's
 // web search; three forecasters estimate without seeing each other; the figure is the geometric mean of odds.
-// It is published as a quick estimate and scored apart from the paper. Called by netlify/functions/ask-quick.mjs;
-// needs ANTHROPIC_API_KEY in the site's environment. No files, no state: fetch is passed in so it can be tested.
+// It is published as a quick estimate and scored apart from the paper. Called by netlify/functions/ask-quick.mjs
+// when the publisher has set ASK_QUICK=on in the site's environment; the model calls then go through Netlify's
+// AI Gateway, or to Anthropic's API with the publisher's own key. No files, no state: fetch is passed in so it can be tested.
 import { REQ, stampIn, dateIn, addDays, dayWindow, combineQuick, checkRequest } from './requests-core.mjs';
 
 export const QUICK = {

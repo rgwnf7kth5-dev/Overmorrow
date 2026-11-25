@@ -50,7 +50,8 @@ async function pull() {
   const take = todo.slice(0, REQ.per_run_max);
   fs.mkdirSync(path.join(ROOT, 'work'), { recursive: true });
   fs.writeFileSync(path.join(ROOT, 'work', 'requests-inbox.json'), `${JSON.stringify(take, null, 1)}\n`);
-  out({ ok: true, archived, rejected, todo: take, waiting: todo.length - take.length, due: dueRequests(loadRequests()).length });
+  const quickErrors = (data.items || []).filter((it) => it.quick_error).map((it) => ({ id: it.id, error: it.quick_error }));
+  out({ ok: true, quick: Boolean(data.quick), archived, rejected, todo: take, waiting: todo.length - take.length, due: dueRequests(loadRequests()).length, ...(quickErrors.length ? { quick_errors: quickErrors } : {}) });
 }
 
 function due() {

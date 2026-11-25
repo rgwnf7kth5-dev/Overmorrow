@@ -3,7 +3,7 @@
 // Works only on a topic that /api/ask has just marked "working", once; anything else is ignored.
 import { ID_RE, REQ, stampIn } from '../../scripts/requests-core.mjs';
 import { runQuick, QUICK } from '../../scripts/requests-quick.mjs';
-import { store, env, quickOn } from '../lib/store.mjs';
+import { store, env, quickOn, modelApi } from '../lib/store.mjs';
 
 export default async (req) => {
   let id = '';
@@ -17,7 +17,7 @@ export default async (req) => {
   try {
     const models = { ...QUICK.models };
     for (const k of Object.keys(models)) { const v = env(`ASK_MODEL_${k.toUpperCase().replace('-', '_')}`); if (v) models[k] = v; }
-    const record = await runQuick({ id, topic: item.topic, lang: item.lang, asked_at: item.asked_at, fetch, apiKey: env('ANTHROPIC_API_KEY'), models, api: env('ANTHROPIC_API_URL') || undefined, version: env('ANTHROPIC_VERSION') || undefined });
+    const record = await runQuick({ id, topic: item.topic, lang: item.lang, asked_at: item.asked_at, fetch, apiKey: env('ANTHROPIC_API_KEY'), models, api: modelApi(), version: env('ANTHROPIC_VERSION') || undefined });
     await s.setJSON(`q/${id}`, { ...item, state: 'done', record });
   } catch (err) {
     console.error(`quick forecast ${id} failed: ${err?.message || err}`);

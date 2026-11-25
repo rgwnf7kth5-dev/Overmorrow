@@ -10,7 +10,12 @@ import { REQ, dateIn } from '../../scripts/requests-core.mjs';
 export const store = () => getStore({ name: 'requests', consistency: 'strong' });
 export const json = (body, status = 200, headers = {}) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex', ...headers } });
 export const env = (k) => (globalThis.Netlify?.env?.get?.(k) ?? process.env[k] ?? '');
-export const quickOn = () => Boolean(env('ANTHROPIC_API_KEY')) && env('ASK_QUICK') !== 'off';
+// The quick forecast costs money on every question, so it runs only when the publisher has switched it on
+// (ASK_QUICK=on in the site's environment). Netlify's AI Gateway puts ANTHROPIC_API_KEY and ANTHROPIC_BASE_URL
+// into every function by itself; their presence alone must never start paid model calls.
+export const quickOn = () => env('ASK_QUICK') === 'on' && Boolean(env('ANTHROPIC_API_KEY'));
+/** Where the model calls go: an explicit ANTHROPIC_API_URL, else the base URL the environment gives (the AI Gateway, or the publisher's own), else Anthropic's API. */
+export const modelApi = () => env('ANTHROPIC_API_URL') || (env('ANTHROPIC_BASE_URL') ? `${env('ANTHROPIC_BASE_URL').replace(/\/+$/, '')}/v1/messages` : undefined);
 
 export async function dayCount(s, now = Date.now()) {
   return (await s.get(`d/${dateIn(REQ.tz, now)}`, { type: 'json' })) || { count: 0, quick: 0 };

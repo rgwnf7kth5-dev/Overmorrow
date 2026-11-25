@@ -358,7 +358,7 @@
     }
   },
   "requests": {
-    "_note": "Readers' questions (METHODOLOGY 21, pipeline/REQUESTS.md), from 25 November 2026. A reader names a subject on /ask/; the site queues it (netlify/functions) and either the quick forecast (scripts/requests-quick.mjs, needs ANTHROPIC_API_KEY in the site's environment) or the hourly readers' desk answers it. Answers live in data/requests/, are scored apart from the paper and never enter its figures. The limits (length of a topic, topics a day, horizon, probability bounds) are in scripts/requests-core.mjs (REQ), because the site's functions cannot read this file; the quick forecast's models are in scripts/requests-quick.mjs (QUICK).",
+    "_note": "Readers' questions (METHODOLOGY 21, pipeline/REQUESTS.md), from 25 November 2026. A reader names a subject on /ask/; the site queues it (netlify/functions) and either the quick forecast (scripts/requests-quick.mjs; off until ASK_QUICK=on is set in the site's environment, see README) or the hourly readers' desk answers it. Answers live in data/requests/, are scored apart from the paper and never enter its figures. The limits (length of a topic, topics a day, horizon, probability bounds) are in scripts/requests-core.mjs (REQ), because the site's functions cannot read this file; the quick forecast's models are in scripts/requests-quick.mjs (QUICK).",
     "adopted": "2026-11-25",
     "settings": "scripts/requests-core.mjs",
     "desk_models": {
