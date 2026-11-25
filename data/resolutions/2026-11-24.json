@@ -1,0 +1,170 @@
+{
+  "edition": "2026-11-24",
+  "results": [
+    {
+      "claim": "ua-drones-24",
+      "outcome": "measured",
+      "value": 153,
+      "evidence": "https://www.ukrinform.ua/amp/rubric-ato/4187518-ppo-zneskodila-134-zi-153-bezpilotnikiv-akimi-rosiani-z-vecora-atakuvali-ukrainu.html",
+      "note": "Air Force first morning summary (Telegram t.me/s/kpszsu, repeated by Ukrinform 23 Nov 08:05 Kyiv): from 18:00 on 22 Nov Russia attacked with 153 strike UAVs (Shahed, 60 of them jet-powered, Gerbera, Parodiya), 134 shot down or suppressed.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same figure of 153 from the Air Force summary."
+      }
+    },
+    {
+      "claim": "cz-fuel-24",
+      "outcome": "yes",
+      "evidence": "https://vlada.gov.cz/cz/media-centrum/aktualne/vysledky-jednani-vlady-23--listopadu-2026-230261/",
+      "note": "Government Office results of 23 Nov: item 12, the government regulation issuing a price decree regulating fuel prices for 1-31 Dec 2026 (čj. 906/26), was approved; ČTK and an MF release of 23 Nov confirm maximum prices and the 2.50 CZK/l margin cap continue to the end of the year.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same approval of item 906/26 on 23 Nov."
+      }
+    },
+    {
+      "claim": "be-demo-24",
+      "outcome": "measured",
+      "value": 50000,
+      "evidence": "https://www.vrt.be/vrtnws/en/2026/11/23/national-demonstration-against-de-wever-i-government-hits-flight/",
+      "note": "VRT NWS, updated 23 Nov 14:17: later in the day police said 50,000 had taken part in the national demonstration in Brussels (organisers' figures not counted).",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the Brussels Times/Belga report of a police count of 50,000 (unions 70,000)."
+      }
+    },
+    {
+      "claim": "be-king-24",
+      "outcome": "no",
+      "evidence": "https://www.vrt.be/vrtnws/en/2026/11/23/king-filip-gives-pm-de-wever-extra-time-pm-introduces-new-years/",
+      "note": "The Royal Palace statement of 23 Nov after De Wever's audience said the King encouraged the Prime Minister to continue his efforts to reach a budget agreement; no acceptance of the government's resignation was announced.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models read the same palace statement."
+      }
+    },
+    {
+      "claim": "il-boi-24",
+      "outcome": "yes",
+      "evidence": "https://www.boi.org.il/en/communication-and-publications/press-releases/the-monetary-committee-decides-on-november-23-2026-to-keep-the-interest-rate-unchanged-at-325-percent/",
+      "note": "Bank of Israel interest-rate announcement of 23 Nov 2026: the Monetary Committee decided to keep the interest rate unchanged at 3.25 percent.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Same press release."
+      }
+    },
+    {
+      "claim": "ez-pmi-24",
+      "outcome": "measured",
+      "value": 51.7,
+      "evidence": "https://us.econoday.com/byevent?fid=674801&cust=global&year=2026&lid=0",
+      "note": "Econoday, released 23 Nov 2026: the November flash HCOB Eurozone Composite PMI is 51.7 (Actual column), unchanged from the October final; manufacturing 52.9, services 51.2.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 51.7 from Trading Economics."
+      }
+    },
+    {
+      "claim": "ariane-24",
+      "outcome": "no",
+      "evidence": "https://newsroom.arianespace.com/mission-va271le-04-ariane-6-launch-rescheduled-for-november-24-2026/",
+      "note": "Arianespace, 23 Nov: the VA271 countdown was interrupted by a technical event affecting the launcher's ground support systems and the launch was rescheduled to 24 Nov, when it succeeded, outside the window.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": false,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report the slip to 24 Nov."
+      }
+    },
+    {
+      "claim": "cz-ods-24",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/kupka-predsednictvo-ods-citi-podporu-aby-pokracovalo-a-chystalo-reformy/2905252",
+      "note": "ČTK, 23 Nov 18:30: after the Monday republic assembly in Prague Kupka said the leadership feels support to continue and that no proposal to call an early congress was made; no leadership announcement or statutory written request was reported.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models find the assembly ended with no call for an early congress."
+      }
+    },
+    {
+      "claim": "hpe-24",
+      "outcome": "yes",
+      "evidence": "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q4-2026/q4-2026-earnings-press-release.pdf",
+      "note": "HPE press release of 23 Nov 2026 for the quarter ended 31 Oct: non-GAAP diluted net EPS $1.43 (GAAP $1.26), above the fixed $1.29 threshold; Earnings Whispers reports the same figure at 4:05 pm ET.",
+      "resolved_at": "2026-11-25T05:10:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same $1.43 non-GAAP figure; the PDF was read after their pointer, hpe.com newsroom being unreachable."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "odok.gov.cz / odok.cz (blocked)",
+      "www.ukmto.org (403)",
+      "www.hpe.com (connection reset)",
+      "www.businesswire.com (connection reset)",
+      "sabq.org (403)"
+    ],
+    "pending": [
+      {
+        "claim": "cz-safe-24",
+        "note": "ČTK/ČT24 report on 24 Nov that the cabinet approved joining SAFE round two, without a date; the Government Office results of 23 Nov list no SAFE item; date of the resolution not yet established."
+      },
+      {
+        "claim": "gulf-ukmto-24",
+        "note": "UKMTO warnings 219-221/26 of 24 Nov report three tankers struck in Hormuz on 22 Nov (UTC); whether the strike times fall after 00:00 GST on 23 Nov could not be read (ukmto.org refuses scripted reading)."
+      }
+    ]
+  }
+}

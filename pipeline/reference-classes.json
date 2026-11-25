@@ -162,7 +162,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 4,
+        "yes": 5,
         "no": 1
       }
     },
@@ -338,7 +338,7 @@
       "n": 0,
       "source": "Own record only (created 2026-10-29)",
       "own_record": {
-        "yes": 9,
+        "yes": 10,
         "no": 2
       }
     },
@@ -1317,7 +1317,7 @@
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim cz-fuelcap-ext-20",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -1481,6 +1481,39 @@
       "base_rate": null,
       "n": 0,
       "source": "own record from 24 Nov 2026 (resolver); added from claim it-malpensa-23",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "head-of-state-accepts-government-resignation-at-audience",
+      "description": "A head of state announces acceptance of a government's resignation on the day of a crisis audience with the prime minister",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 25 Nov 2026 (resolver); added from claim be-king-24",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "scheduled-launch-flies-and-succeeds-on-first-date",
+      "description": "A scheduled orbital launch lifts off on its first announced date and is declared successful the same day",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 25 Nov 2026 (resolver); added from claim ariane-24",
+      "own_record": {
+        "yes": 0,
+        "no": 1
+      }
+    },
+    {
+      "id": "party-assembly-ends-without-early-congress",
+      "description": "A party's national assembly after an election defeat ends without an early congress being called or formally requested",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 25 Nov 2026 (resolver); added from claim cz-ods-24",
       "own_record": {
         "yes": 1,
         "no": 0

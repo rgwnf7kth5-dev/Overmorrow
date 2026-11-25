@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "pooled": {
-  "n": 58,
-  "rms_in_scales": 1.274,
+  "n": 61,
+  "rms_in_scales": 1.242,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -981,6 +981,54 @@
    ],
    "n": 0,
    "rms_surprise": null
+  },
+  "drones-launched-by-russia-at-ukraine-in-the-night-of-22-23-n": {
+   "unit": "drones",
+   "records": [
+    {
+     "edition": "2026-11-24",
+     "claim": "ua-drones-24",
+     "consensus": 155.5,
+     "first": 153,
+     "centre": 160,
+     "scale_used": 91.6,
+     "source": "No analysts' consensus exists; recent median of the Air Force's first-summary counts over the 30 nights to 23 Oct-21 Nov 2026 (data/dossiers/2026-11-24/ua-drones-24.md)."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 2.5
+  },
+  "participants-in-the-23-nov-2026-national-union-demonstration": {
+   "unit": "people",
+   "records": [
+    {
+     "edition": "2026-11-24",
+     "claim": "be-demo-24",
+     "consensus": 50000,
+     "first": 50000,
+     "centre": 42700,
+     "scale_used": 23400,
+     "source": "No union or police turnout expectation published for 23 Nov (none found). Median of the six sourced police counts of Brussels union demonstrations since 2025: 13 Jan 2025 30,000 (L'Avenir); 13 Feb 2025 60,000 (Brussels Times); 14 Oct 2025 80,000 (VRT/Belga); 12 Mar 2026 80,000 (VRT/Belga); 12 May 2026 40,000 (VRT/Belga); 9 Oct 2026 30,000 (Al Jazeera, VRT). See dossier table."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
+  },
+  "hcob-eurozone-composite-pmi-output-index-november-2026-flash": {
+   "unit": "index points",
+   "records": [
+    {
+     "edition": "2026-11-24",
+     "claim": "ez-pmi-24",
+     "consensus": 51.7,
+     "first": 51.7,
+     "centre": 51.54,
+     "scale_used": 0.93,
+     "source": "Econoday, https://us.econoday.com/byevent?fid=674801&cust=global&year=2026&lid=0 (read 2026-11-21T17:55:34Z); no second consensus source readable"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0
   }
  },
  "extra": {}

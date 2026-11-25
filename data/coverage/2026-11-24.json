@@ -1,0 +1,53 @@
+{
+  "edition": "2026-11-24",
+  "checked_at": "2026-11-25T05:16:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 23, read 25 Nov 04:10 UTC)",
+    "ct24 (ČT24 domácí list, pages 1-2, items dated 23 Nov; read 25 Nov 04:12 UTC)",
+    "ctk (ceskenoviny.cz ČR, ekonomika and svět lists, items dated 23.11.2026; read 25 Nov 04:12 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World (401) and AP (403) refuse scripted reading and no day list for 23 Nov was found from a substitute, so list (b) is missing: no world or Europe event could reach two lists."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (list (b) missing): Ukrainian drone strikes on the Perm and Novoshakhtinsk refineries; Villavicencio car bomb and Cúcuta drone attack (Colombia); Awami League and BNP faction clashes in Bangladesh and BGB deployment; PKK withdraws from 14 more bases in northern Iraq; 16 Beltrán-Leyva members killed in Guasave; East Darfur farmer-herder clashes; Nvidia reinstates Jensen Huang; Bahawalpur and Ciudad Juárez road accidents; hunger-striking student dies at Sapienza; UK sanctions on Myanmar commanders and recognition of the Rohingya genocide; Tajikistan begins ICC withdrawal; Spanish Supreme Court amnesty for Puigdemont; school bomb-threat emails in Denmark and Germany; Parastoo Ahmadi flogged; Quebec court suspends the optional-oath law; tear-gas attack at a Greens meeting in Schwerte. Sport (FIFA Women's World Cup hosts) excluded.",
+    "ČT24-only Czech items dated 23 Nov: V4 premiers reject the new MFF proposal (ČTK's V4 items are dated 24 Nov); Česká zbrojovka's first pistol deliveries to the Bundeswehr (ČTK dated 24 Nov); Tejc's plan for an inspection of prosecutors; social-exclusion localities; road repairs; winter weather; a Valdice prisoner's life sentence.",
+    "ČTK-only Czech items dated 23 Nov: the cabinet's mandate for the EU budget talks; Pavel meets regional governors; new mayors in Ústí nad Labem, Sokolov and Uherské Hradiště; Tejc and the cabinet oppose milder punishment of repeated theft; The Prodigy concert cancelled; bird decline report; a fraud case in Příbram."
+  ],
+  "events": [
+    {
+      "title": "Czech government extends fuel price caps, capped margins and the diesel excise cut to 31 December",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/vlada-prodlouzila-opatreni-proti-vysokym-cenam-paliv-do-konce-roku-/2905385",
+      "status": "covered",
+      "story": "cz-cabinet"
+    },
+    {
+      "title": "ODS republic assembly backs Kupka's leadership; no early congress proposed",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/kupka-predsednictvo-ods-citi-podporu-aby-pokracovalo-a-chystalo-reformy/2905252",
+      "status": "covered",
+      "story": "cz-ods"
+    },
+    {
+      "title": "Cabinet approves a bill making aggressive driving and illegal street racing a criminal offence",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/agresivni-jizda-ma-byt-pri-ohrozeni-zdravi-trestnym-cinem-schvalila-vlada/2904995",
+      "status": "missed",
+      "note": "Announced in advance: item čj. 805/26 on the published programme of the 23 Nov cabinet meeting (vlada.gov.cz/cz/vlada/jednani-vlady, programme on the odok portal, blocked to our reader); the planning sweep took only the trailed fuel and SAFE items of that meeting. Source added to pipeline/sources.json."
+    }
+  ]
+}
