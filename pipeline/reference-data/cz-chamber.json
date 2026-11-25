@@ -9,8 +9,8 @@
       "https://www.psp.cz/eknih/cdrom/opendata/tisky.zip",
       "https://www.psp.cz/eknih/cdrom/opendata/schuze.zip"
     ],
-    "downloaded": "2026-11-24",
-    "generated": "2026-11-24T16:05:33.352Z"
+    "downloaded": "2026-11-25",
+    "generated": "2026-11-25T01:58:20.598Z"
   },
   "coalition_definitions": "Coalition membership is club membership (zarazeni.unl, cl_funkce = 0) in the listed clubs at the time of each vote. Periods start at the appointment of the government; the Pirates’ exit is dated by the end of Ivan Bartoš’s ministerial functions in zarazeni.unl (2024-09-30 20:00).",
   "terms": [
@@ -793,7 +793,7 @@
       "id": "2025-",
       "label": "10th term (PSP10, 2025-)",
       "chamber_organ_id": 174,
-      "votes_in_file": 2702,
+      "votes_in_file": 2788,
       "final_votes_on_bills": {
         "definition": "Unit = a bill (sněmovní tisk of kind 1 government bill, 2 other bill, 3 state budget) on which at least one valid vote (not declared void in zmatecne.unl, not a manual R vote) was held under an agenda item of type 5 (third reading) during the term. \"Passed\" = the bill history (hist.unl) records a transition out of a third-reading state with action 22 \"souhlas\" (approved) dated within the term. Bills with third-reading votes but no such transition either failed the final vote or had their third reading interrupted and not completed; they are listed in not_passed_examples so each can be checked. Bills approved already in first reading under §90(2) are counted separately (approved_in_first_reading_s90) because failures of such votes are not recorded in hist.unl.",
         "bills_with_third_reading_votes": 32,
@@ -886,75 +886,75 @@
             "Motoristé",
             "ANO"
           ],
-          "votes_considered": 2561,
+          "votes_considered": 2647,
           "contested_votes": {
             "definition": "Electronic votes (druh_hlasovani N, not void) in the period in which a majority of the coalition clubs’ members voted ano (A) and fewer than half of the logged-in non-coalition deputies voted ano. S = coalition club members holding a mandate at the time of the vote; yes = coalition members voting A. Absent (@), excused (M), logged-in-but-not-voting (F), no (B/N) and abstain (C) all count as not yes.",
-            "n": 440,
+            "n": 464,
             "coalition_seats_S": {
-              "107": 33,
+              "107": 57,
               "108": 407
             },
             "yes_votes": {
-              "n": 440,
-              "mean": 87.423,
-              "sd": 10.232,
+              "n": 464,
+              "mean": 87.841,
+              "sd": 10.135,
               "min": 55,
               "q05": 69,
-              "q10": 72.9,
+              "q10": 73,
               "q25": 81,
-              "median": 88,
-              "q75": 94.25,
+              "median": 89,
+              "q75": 95,
               "q90": 99,
               "max": 108
             },
             "shortfall_S_minus_yes": {
-              "n": 440,
-              "mean": 20.502,
-              "sd": 10.204,
+              "n": 464,
+              "mean": 20.037,
+              "sd": 10.146,
               "min": 0,
-              "q05": 4,
+              "q05": 5,
               "q10": 9,
-              "q25": 13,
-              "median": 20,
+              "q25": 12,
+              "median": 19,
               "q75": 27,
               "q90": 35,
               "max": 53
             },
             "attendance_share_logged_in": {
-              "n": 440,
-              "mean": 0.831,
+              "n": 464,
+              "mean": 0.835,
               "sd": 0.082,
               "min": 0.5648,
               "q05": 0.676,
-              "q10": 0.722,
+              "q10": 0.732,
               "q25": 0.787,
-              "median": 0.824,
+              "median": 0.833,
               "q75": 0.898,
               "q90": 0.935,
               "max": 1
             },
             "yes_share": {
-              "n": 440,
-              "mean": 0.81,
-              "sd": 0.095,
+              "n": 464,
+              "mean": 0.814,
+              "sd": 0.094,
               "min": 0.5093,
               "q05": 0.639,
               "q10": 0.676,
               "q25": 0.75,
-              "median": 0.815,
-              "q75": 0.879,
+              "median": 0.824,
+              "q75": 0.888,
               "q90": 0.917,
               "max": 1
             },
             "p_yes_at_least_S_minus_k": {
-              "S-0": 0.0045,
-              "S-1": 0.0227,
-              "S-2": 0.0295,
-              "S-3": 0.0295,
-              "S-4": 0.0523,
-              "S-5": 0.0568
+              "S-0": 0.0043,
+              "S-1": 0.0216,
+              "S-2": 0.028,
+              "S-3": 0.028,
+              "S-4": 0.0496,
+              "S-5": 0.0539
             },
-            "share_adopted": 0.9818
+            "share_adopted": 0.9828
           },
           "contested_absolute_majority_votes": {
             "definition": "Contested votes (as above) with a quorum (kvorum) of 101, i.e. votes needing an absolute majority of all deputies (e.g. overriding a Senate or presidential veto, confidence).",
