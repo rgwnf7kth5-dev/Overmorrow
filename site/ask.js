@@ -1,6 +1,5 @@
-// Readers' questions (METHODOLOGY 21): the form on /ask/. Sends the topic to /api/ask, shows what the paper
-// already has on it (from search.json, the Spider's index), and follows the reader's own questions until they
-// are answered. The reader's words stay in this browser (localStorage) and in the queue; they are not published.
+// Readers' desk (METHODOLOGY 21): the form on /ask/. Sends the topic to /api/ask and follows the reader's own
+// questions until they are answered. Searching what the paper already printed is the Spider's job, not this page's. The reader's words stay in this browser (localStorage) and in the queue; they are not published.
 (function () {
   'use strict';
   var root = document.querySelector('[data-ask]');
@@ -11,66 +10,25 @@
   var T = CS ? {
     sending: 'Odesílám…', sent: 'Přijato.', same: 'Na totéž se už někdo ptal, tady je odpověď.',
     err: { short: 'Napište prosím téma aspoň několika slovy.', long: 'Téma je příliš dlouhé.', link: 'Téma prosím bez odkazů a adres.', characters: 'Téma prosím jen slovy, bez zvláštních znaků.', full: 'Dnes už je dotazů příliš mnoho. Zkuste to prosím zítra.', rate: 'Příliš mnoho dotazů najednou. Zkuste to za minutu.', down: 'Dotaz se nepodařilo odeslat. Zkuste to prosím později.' },
-    st: { queued: 'Ve frontě. Redakce na přání odpovídá přes den zhruba do hodiny.', working: 'Rychlý odhad se počítá, obvykle minutu až tři.', gone: 'Dotaz už ve frontě není.' },
-    yes: 'Spíše ano', no: 'Spíše ne', even: 'Vyrovnané šance', day: 'Událost', declined: 'Na tohle noviny neodpovídají', inPaper: 'Tohle už noviny mají', read: 'Přečíst', how: 'Jak se to ověří', quick: 'Rychlý odhad', desk: 'Redakce na přání',
+    st: { queued: 'Ve frontě. Redakce odpovídá přes den zhruba do hodiny.', working: 'Rychlý odhad se počítá, obvykle minutu až tři.', gone: 'Dotaz už ve frontě není.' },
+    yes: 'Spíše ano', no: 'Spíše ne', even: 'Vyrovnané šance', day: 'Událost', declined: 'Na tohle noviny neodpovídají', inPaper: 'Tohle už noviny mají', read: 'Přečíst', how: 'Jak se to ověří', quick: 'Rychlý odhad', desk: 'Odpověď redakce',
     forget: 'Skrýt', pct: function (p) { return Math.round(p * 100) + ' %'; }, loc: 'cs-CZ'
   } : {
     sending: 'Sending…', sent: 'Received.', same: 'Someone has asked the same; here is the answer.',
     err: { short: 'Please name the subject in a few words.', long: 'The subject is too long.', link: 'Please name the subject without links or addresses.', characters: 'Please use words only, without special characters.', full: 'Too many questions today. Please try again tomorrow.', rate: 'Too many questions at once. Please try again in a minute.', down: 'The question could not be sent. Please try again later.' },
-    st: { queued: 'In the queue. The readers’ desk answers within about an hour during the day.', working: 'The quick estimate is being worked out, usually one to three minutes.', gone: 'The question is no longer in the queue.' },
-    yes: 'Probably yes', no: 'Probably not', even: 'Even chances', day: 'Event of', declined: 'The paper does not answer this', inPaper: 'The paper already has this', read: 'Read it', how: 'How it is checked', quick: 'Quick estimate', desk: 'Readers’ desk',
+    st: { queued: 'In the queue. The desk answers within about an hour during the day.', working: 'The quick estimate is being worked out, usually one to three minutes.', gone: 'The question is no longer in the queue.' },
+    yes: 'Probably yes', no: 'Probably not', even: 'Even chances', day: 'Event of', declined: 'The paper does not answer this', inPaper: 'The paper already has this', read: 'Read it', how: 'How it is checked', quick: 'Quick estimate', desk: 'Desk answer',
     forget: 'Hide', pct: function (p) { return Math.round(p * 100) + '%'; }, loc: 'en-GB'
   };
   var esc = function (s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
   var form = root.querySelector('.ask-form'), input = form.querySelector('#ask-topic'), msg = form.querySelector('.ask-msg'), btn = form.querySelector('button');
-  var foundBox = root.querySelector('.ask-found'), mineBox = root.querySelector('.ask-mine');
+  var mineBox = root.querySelector('.ask-mine');
   var KEY = 'om-asked';
 
   function load() { try { var v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
   function save(list) { try { localStorage.setItem(KEY, JSON.stringify(list.slice(0, 20))); } catch (e) {} }
   var mine = load();
   var day = function (d) { return new Intl.DateTimeFormat(T.loc, { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); };
-
-  // ---- what the paper already has: the same word matching as the Spider ----
-  var INDEX = null, indexWait = null;
-  function fold(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
-  function stem(w) { return w.length >= 6 ? w.slice(0, -2) : w.length === 5 ? w.slice(0, -1) : w; }
-  function atStart(hay, frag) { var i = hay.indexOf(frag); while (i >= 0) { if (i === 0 || !/[a-z0-9]/.test(hay[i - 1])) return true; i = hay.indexOf(frag, i + 1); } return false; }
-  var STOP = { the: 1, and: 1, for: 1, will: 1, with: 1, what: 1, tomorrow: 1, zitra: 1, jak: 1, bude: 1, nebo: 1, pro: 1, kdo: 1, about: 1 };
-  function words(q) { return fold(q).split(/[^a-z0-9]+/).filter(function (w) { return w.length >= 3 && !STOP[w]; }); }
-  function getIndex() {
-    if (INDEX) return Promise.resolve(INDEX);
-    if (!indexWait) indexWait = fetch(PRE + '/search.json').then(function (r) { if (!r.ok) throw new Error('index'); return r.json(); }).then(function (j) { INDEX = j; return j; }).catch(function () { indexWait = null; return null; });
-    return indexWait;
-  }
-  function showFound(q) {
-    var ws = words(q);
-    if (!ws.length) { foundBox.hidden = true; return; }
-    getIndex().then(function (ix) {
-      if (!ix || input.value !== q) return;
-      var newest = ix.stories.map(function (s) { return s.e; }).sort().slice(-1)[0] || '';
-      var latest = ix.stories.filter(function (s) { return s.e >= newest; });
-      var prev = ix.stories.map(function (s) { return s.e; }).filter(function (e) { return e < newest; }).sort().slice(-1)[0];
-      if (prev) latest = latest.concat(ix.stories.filter(function (s) { return s.e === prev; }));
-      var hits = [];
-      latest.forEach(function (s) {
-        var head = fold(s.k + ' ' + s.h + ' ' + s.s), body = fold(s.t + ' ' + s.c.map(function (c) { return c.l + ' ' + c.x; }).join(' '));
-        var n = 0, inHead = 0;
-        ws.forEach(function (w) { var st = stem(w); if (atStart(head, w) || atStart(head, st)) { n += 1; inHead += 1; } else if (atStart(body, w) || atStart(body, st)) n += 1; });
-        if (n === ws.length && inHead) hits.push({ s: s, score: inHead * 10 + (s.e === newest ? 1 : 0) });
-      });
-      var board = (ix.watch || []).filter(function (w) { var h = fold(w.topic + ' ' + w.q); return ws.every(function (x) { return atStart(h, x) || atStart(h, stem(x)); }); }).slice(0, 2);
-      hits.sort(function (a, b) { return b.score - a.score; });
-      var html = hits.slice(0, 3).map(function (h) {
-        var s = h.s, c = s.c.filter(function (x) { return typeof x.p === 'number'; })[0];
-        return '<p class="ask-hit"><a href="' + PRE + '/edition/' + s.e + '/#s-' + esc(s.id) + '">' + esc(s.h) + '</a>' + (c ? ' <span>' + esc(c.l) + ': <b>' + T.pct(c.p) + '</b></span>' : '') + '</p>';
-      }).join('') + board.map(function (w) { return '<p class="ask-hit"><a href="' + PRE + '/watch/">' + esc(w.q) + '</a> <span><b>' + T.pct(w.p) + '</b></span></p>'; }).join('');
-      foundBox.hidden = !html;
-      foundBox.querySelector('div').innerHTML = html;
-    });
-  }
-  var typing;
-  input.addEventListener('input', function () { clearTimeout(typing); var q = input.value; typing = setTimeout(function () { showFound(q); }, 350); });
 
   // ---- the reader's own questions ----
   function card(rec) {
@@ -132,7 +90,7 @@
         msg.textContent = x.j.same ? T.same : T.sent;
         mine = mine.filter(function (m) { return m.id !== x.j.id; });
         mine.unshift({ id: x.j.id, topic: topic, at: Date.now(), state: x.j.state, record: x.j.record || null });
-        save(mine); input.value = ''; foundBox.hidden = true; draw(); poll();
+        save(mine); input.value = ''; draw(); poll();
       })
       .catch(function () { btn.disabled = false; msg.textContent = T.err.down; });
   });

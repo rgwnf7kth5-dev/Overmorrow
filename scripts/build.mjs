@@ -15,7 +15,7 @@ const T = {
     locale: 'en-GB', prefix: '', photo: 'Illustrative photo',
     motto: 'Tomorrow happens. Overmorrow reports it. You read it today.',
     places: 'Prague · Brussels · World',
-    nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method', 'Ask the paper'],
+    nav: ['Today', 'Forecast board', 'Archive', 'Accuracy', 'Method', 'Readers’ desk'],
     other: 'Čeština', otherLang: 'cs',
     forecastEdition: (t) => `Forecast edition · written ${t}`,
     forecastPaper: 'Forecast newspaper',
@@ -105,18 +105,18 @@ const T = {
       updated: (t) => `Updated ${t}`,
     },
     ask: {
-      h: 'Ask the paper', lede: 'Name a subject of the news. The paper says what it expects to happen in it tomorrow, or on the nearest day when something is due, with a probability, and checks the answer afterwards like every other forecast.',
+      h: 'Readers’ desk', lede: 'Name a subject of the news. The paper says what it expects to happen in it tomorrow, or on the nearest day when something is due, with a probability, and checks the answer afterwards like every other forecast.',
       label: 'Your subject', ph: 'e.g. the budget vote in the Chamber', btn: 'Ask',
       rules: (n) => `A subject of public life, in at most ${n} characters. No sport, no market prices, nobody’s private life. The paper words the question itself; your own words are not published. Please enter no personal data.`,
-      foundH: 'Already in the paper', mineH: 'Your questions',
+      mineH: 'Your questions',
       listH: 'Answered questions', listEmpty: 'No reader’s question has been answered yet. Yours can be the first.',
       yes: 'Probably yes', no: 'Probably not', even: 'Even chances',
-      quick: 'Quick estimate', desk: 'Readers’ desk', asked: (t) => `asked ${t}`, day: (d) => `Event of ${d}`,
+      quick: 'Quick estimate', desk: 'Desk answer', asked: (t) => `asked ${t}`, day: (d) => `Event of ${d}`,
       how: 'How it is checked', checked: 'Result expected',
       howH: 'How this works',
-      howP: (m) => `A reader’s question gets a lighter version of the paper’s method: one checkable claim about one day, dated facts from pages actually read, and three independent forecasters whose figures are combined. Where the quick estimate is switched on it answers within minutes; otherwise the readers’ desk answers within about an hour during the day. The most asked subjects also go to the evening desk, which may give them the full method and a story in the next edition. Every answer is checked against its named source and scored, apart from the paper’s own record. <a href="${m}">The method, section 21</a>.`,
+      howP: (m) => `There are two kinds of answer. The <b>quick estimate</b> comes within minutes: one checkable claim about one day, dated facts from pages actually read, and three independent forecasters whose figures are combined. The <b>desk answer</b> is made the same way by the paper’s own run, within about an hour during the day, and is given whenever the quick estimate is off or fails. Subjects readers ask about also go to the evening desk, which may give them the full method and a story in the next edition. Every answer is checked against its named source and scored, apart from the paper’s own record. To search what the paper has already printed, use the spider in the navigation. <a href="${m}">The method, section 21</a>.`,
       scoreH: 'How the answers turned out', figs: ['answers checked', 'Brier score (0.250 = coin toss)', 'went our way'],
-      accH: 'Readers’ questions', accNote: 'Forecasts made on demand for readers, by a lighter method, are scored here and nowhere else on this page. They never enter the paper’s own figures.', accCols: ['Answers', 'Checked', 'Brier', 'Went our way'], accRows: ['All', 'Quick estimate', 'Readers’ desk'], accEmpty: 'No answer to a reader has been checked yet.',
+      accH: 'Readers’ desk', accNote: 'Forecasts made on demand for readers, by a lighter method, are scored here and nowhere else on this page. They never enter the paper’s own figures.', accCols: ['Answers', 'Checked', 'Brier', 'Went our way'], accRows: ['All', 'Quick estimate', 'Desk answer'], accEmpty: 'No answer to a reader has been checked yet.',
     },
     notFound: ['Page not found', 'Try <a href="{p}/">today’s edition</a> or the <a href="{p}/archive/">archive</a>.'],
   },
@@ -124,7 +124,7 @@ const T = {
     locale: 'cs-CZ', prefix: '/cs', photo: 'Ilustrační foto',
     motto: 'Zítra se to stane. Pozítří se o tom píše. Vy to čtete dnes.',
     places: 'Praha · Brusel · Svět',
-    nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda', 'Zeptejte se'],
+    nav: ['Dnes', 'Sledované otázky', 'Archiv', 'Přesnost', 'Metoda', 'Redakce na přání'],
     other: 'English', otherLang: 'en',
     forecastEdition: (t) => `Vydání predikcí · napsáno ${t}`,
     forecastPaper: 'Noviny z pozítří',
@@ -214,18 +214,18 @@ const T = {
       updated: (t) => `Aktualizováno ${t}`,
     },
     ask: {
-      h: 'Zeptejte se novin', lede: 'Napište téma ze zpráv. Noviny řeknou, co v něm čekají zítra nebo v nejbližší den, kdy se má něco rozhodnout, s pravděpodobností, a odpověď potom ověří jako každou jinou predikci.',
+      h: 'Redakce na přání', lede: 'Napište téma ze zpráv. Noviny řeknou, co v něm čekají zítra nebo v nejbližší den, kdy se má něco rozhodnout, s pravděpodobností, a odpověď potom ověří jako každou jinou predikci.',
       label: 'Vaše téma', ph: 'např. hlasování o rozpočtu ve Sněmovně', btn: 'Zeptat se',
       rules: (n) => `Téma z veřejného života, nejvýš ${n} znaků. Žádný sport, žádné ceny na trzích, ničí soukromí. Otázku noviny formulují samy; vaše slova se nezveřejňují. Neuvádějte prosím osobní údaje.`,
-      foundH: 'V novinách už je', mineH: 'Vaše otázky',
+      mineH: 'Vaše otázky',
       listH: 'Zodpovězené otázky', listEmpty: 'Zatím nebyla zodpovězena žádná čtenářská otázka. Vaše může být první.',
       yes: 'Spíše ano', no: 'Spíše ne', even: 'Vyrovnané šance',
-      quick: 'Rychlý odhad', desk: 'Redakce na přání', asked: (t) => `dotaz ${t}`, day: (d) => `Událost: ${d}`,
+      quick: 'Rychlý odhad', desk: 'Odpověď redakce', asked: (t) => `dotaz ${t}`, day: (d) => `Událost: ${d}`,
       how: 'Jak se to ověří', checked: 'Výsledek se čeká',
       howH: 'Jak to funguje',
-      howP: (m) => `Čtenářská otázka dostane lehčí verzi metody novin: jedno ověřitelné tvrzení o jednom dni, datovaná fakta ze skutečně přečtených stránek a tři nezávislé prognostiky, jejichž čísla se spojí. Kde je zapnutý rychlý odhad, odpoví během několika minut; jinak odpoví redakce na přání přes den zhruba do hodiny. Nejžádanější témata dostane i večerní redakce, která jim může dát plnou metodu a článek v příštím vydání. Každá odpověď se ověří podle předem určeného zdroje a hodnotí se odděleně od záznamu novin. <a href="${m}">Metoda, oddíl 21</a>.`,
+      howP: (m) => `Odpověď je dvojí. <b>Rychlý odhad</b> přijde během několika minut: jedno ověřitelné tvrzení o jednom dni, datovaná fakta ze skutečně přečtených stránek a tři nezávislí prognostici, jejichž čísla se spojí. <b>Odpověď redakce</b> vzniká stejným postupem ve vlastním běhu novin, přes den zhruba do hodiny, a přijde vždy, když je rychlý odhad vypnutý nebo selže. Témata, na která se čtenáři ptají, dostane i večerní redakce, která jim může dát plnou metodu a článek v příštím vydání. Každá odpověď se ověří podle předem určeného zdroje a hodnotí se odděleně od záznamu novin. Co už noviny napsaly, hledá pavouk v navigaci. <a href="${m}">Metoda, oddíl 21</a>.`,
       scoreH: 'Jak odpovědi dopadly', figs: ['ověřených odpovědí', 'Brierovo skóre (0,250 = hod mincí)', 'vyšlo'],
-      accH: 'Čtenářské otázky', accNote: 'Predikce na přání čtenářů, dělané lehčí metodou, se hodnotí tady a nikde jinde na této stránce. Do čísel novin se nikdy nezapočítávají.', accCols: ['Odpovědi', 'Ověřeno', 'Brier', 'Vyšlo'], accRows: ['Všechny', 'Rychlý odhad', 'Redakce na přání'], accEmpty: 'Zatím nebyla ověřena žádná odpověď čtenáři.',
+      accH: 'Redakce na přání', accNote: 'Predikce na přání čtenářů, dělané lehčí metodou, se hodnotí tady a nikde jinde na této stránce. Do čísel novin se nikdy nezapočítávají.', accCols: ['Odpovědi', 'Ověřeno', 'Brier', 'Vyšlo'], accRows: ['Všechny', 'Rychlý odhad', 'Odpověď redakce'], accEmpty: 'Zatím nebyla ověřena žádná odpověď čtenáři.',
     },
     notFound: ['Stránka nenalezena', 'Zkuste <a href="{p}/">dnešní vydání</a> nebo <a href="{p}/archive/">archiv</a>.'],
   },
@@ -855,7 +855,6 @@ function askPage(L) {
   return `<div class="prose ask" data-ask data-max="${REQ.topic_max_chars}" data-min="${REQ.topic_min_chars}">
 <h1>${A.h}</h1><p class="lede">${A.lede}</p>
 <form class="ask-form" novalidate><label for="ask-topic">${A.label}</label><div class="ask-row"><input id="ask-topic" name="topic" type="text" maxlength="${REQ.topic_max_chars}" autocomplete="off" placeholder="${esc(A.ph)}" required><button type="submit">${A.btn}</button></div><input class="ask-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><p class="note">${A.rules(REQ.topic_max_chars)}</p><p class="ask-msg" role="status" aria-live="polite"></p></form>
-<section class="ask-found" hidden><h2>${A.foundH}</h2><div></div></section>
 <section class="ask-mine" hidden><h2>${A.mineH}</h2><div></div></section>
 <h2>${A.listH}</h2>
 ${answered.length ? answered.map((r) => requestCard(r, L, lang)).join('\n') : `<div class="empty">${A.listEmpty}</div>`}
