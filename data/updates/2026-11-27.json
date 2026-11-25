@@ -1,0 +1,438 @@
+{
+ "edition": "2026-11-27",
+ "frozen_at": "2026-11-25T12:36:00+01:00",
+ "revisions": [
+  {
+   "claim": "eu-summit-27",
+   "probability": 0.6,
+   "kind": "forecast",
+   "reason": "The Financial Times reported on Wednesday morning that eurozone ambassadors were due to adopt the recommendation for Hernández de Cos that day and leaders to give their backing at Thursday's summit, while capitals seek another post for Klaas Knot to avoid a vote; Knot has not withdrawn (forecasters 0.57, 0.60, 0.57, 0.55, 0.70).",
+   "reason_cs": "Financial Times ve středu ráno napsal, že velvyslanci eurozóny mají ještě týž den schválit doporučení pro Hernándeze de Cos a lídři ho podpoří na čtvrtečním summitu; hlavní města zároveň hledají jiný post pro Klaase Knota, aby se nemuselo hlasovat. Knot kandidaturu nestáhl (odhady prognostiků 0,57, 0,60, 0,57, 0,55, 0,70).",
+   "sources": [
+    {
+     "title": "Newsquawk European Open, citing the Financial Times: governments seek alternative role for Knot to avoid a leadership vote (25 Nov, 08:30 UTC)",
+     "url": "https://www.newsquawk.com/headlines/european-open-eu-plans-eur-50bln-tech-fund-ezj-ln-profit-falls-on-middle-east-disruption-rco-fp-raises-guidance-bvi-fp-attracts-advent-takeover-interest-moodys-cuts-san-fp-outlook-amzn-to-launch-uk-car-sales"
+    },
+    {
+     "title": "GSM Global News, summarising the FT: ambassadors to adopt the recommendation on Wednesday, leaders to give their backing at Thursday's summit (25 Nov, 10:33 UTC)",
+     "url": "https://gsmglobalnews.com/article/d20261124-ecbknot1.html"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "eu-summit-27",
+   "at": "2026-11-25T12:27:30+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-25T12:24:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.57,
+     "reason_blind": "No class with n>=10, so I start from the dossier's case (Costa aims for agreement, France and Germany back de Cos). New FT fact (F2): ambassadors' recommendation due Wed, leaders' backing Thursday. That raises timing, p_held 0.80 (summit slip 0.006; the risk is the item moving to Friday). Knot is still in, so p_if_held is 0.72.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:44+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.57,
+       "reason": "Signals add nothing on timing. The markets (de Cos 0.96 eventually) ask a different question and give a ceiling only. Our 5/5 record is a hint and too small to move us. I keep the blind figure: the FT report lifts timing, but Knot staying in and the Friday-conclusions format still cap it."
+      }
+     ],
+     "at": "2026-11-25T12:24:44+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.57,
+     "reason": "Signals add nothing on timing. The markets (de Cos 0.96 eventually) ask a different question and give a ceiling only. Our 5/5 record is a hint and too small to move us. I keep the blind figure: the FT report lifts timing, but Knot staying in and the Friday-conclusions format still cap it.",
+     "p_held": 0.8,
+     "p_if_held": 0.72
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-25T12:25:33+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "p_blind": 0.6,
+     "reason_blind": "FT (via GSM, 25 Nov 10:33Z): ambassadors were due to adopt the recommendation today and leaders are to back de Cos on Thursday. Capitals are looking for a consolation post for Knot to avoid a vote. Knot has not withdrawn, and El Mundo warns of a delay. The Thursday 10:00 Euro Summit, with Lagarde present, is the natural slot. No report yet that the ambassadors adopted it. https://gsmglobalnews.com/article/d20261124-ecbknot1.html https://herqles.com/2026/11/25/hernandez-cos-presidente-bce-lagarde/",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:25:42+01:00",
+       "inputs": [
+        "own-research",
+        "overnight-facts",
+        "dossier",
+        "signals"
+       ],
+       "p": 0.6,
+       "reason": "The dossier confirms Costa wants political agreement at this summit, and the Euro Summit opens Thursday. QMV means Knot cannot block. Risks: the item slips into Friday's conclusions, the package bargaining over Knot/ESM drags on, or a muted 'decide in December'. The earlier figures in this case (5/5 right, no bias) suggest no adjustment. The FT's Thursday framing lifts it above the morning's 0.50."
+      }
+     ],
+     "at": "2026-11-25T12:25:42+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.6,
+     "reason": "The dossier confirms Costa wants political agreement at this summit, and the Euro Summit opens Thursday. QMV means Knot cannot block. Risks: the item slips into Friday's conclusions, the package bargaining over Knot/ESM drags on, or a muted 'decide in December'. The earlier figures in this case (5/5 right, no bias) suggest no adjustment. The FT's Thursday framing lifts it above the morning's 0.50.",
+     "p_held": 0.62,
+     "p_if_held": 0.96
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-25T12:24:38+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.57,
+     "reason_blind": "New: FT (via secondary summaries, FT itself unread) says ambassadors adopt a recommendation Wednesday and leaders back de Cos Thursday; capitals seek a consolation post for Knot to avoid a vote. Against: Knot has not withdrawn, adoption unconfirmed by 11:25Z, ESM bargaining may drag into Friday's conclusions, muted wording, after-midnight risk. Summit slip 0.006.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:40+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.57,
+       "reason": "Signals unchanged since 24 Nov: markets (0.96-0.98) cover who wins eventually, not Thursday timing, so no move from blind. From our earlier figures (5 of 5 right, no bias) I take no correction. FT's Thursday-backing line lifts me from 0.54; unresolved Knot and the Friday-conclusions risk keep it under 0.60."
+      }
+     ],
+     "at": "2026-11-25T12:24:40+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.57,
+     "reason": "Signals unchanged since 24 Nov: markets (0.96-0.98) cover who wins eventually, not Thursday timing, so no move from blind. From our earlier figures (5 of 5 right, no bias) I take no correction. FT's Thursday-backing line lifts me from 0.54; unresolved Knot and the Friday-conclusions risk keep it under 0.60.",
+     "p_held": 0.99,
+     "p_if_held": 0.58
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-25T12:25:52+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.55,
+     "reason": "Timing anchor: the Euro Summit with Lagarde opens Thursday 10:00, the natural slot, but conclusions come Friday: about 0.45. FT reports (F1/F2) say ambassadors adopt the recommendation today and leaders back de Cos on Thursday, with an ESM role sought for Knot: a sourced plan for Thursday, +0.10. Knot hasn't withdrawn and the adoption isn't confirmed, so 0.55. Market rules differ: Polymarket/Kalshi ask who eventually becomes President (UTC, Feb 2027/2028); a Friday or December endorsement is YES there, NO here. Earlier figures 5/5, no correction.",
+     "p_held": 0.97,
+     "p_if_held": 0.57
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-25T12:24:27+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.7,
+     "reason_blind": "Paris-Berlin deal reported done, FT says leaders to back Hernández de Cos Thursday, Costa's Euro Summit item is first. Risks: Knot has not withdrawn, Dutch may force a discussion, and no confirmation yet that ambassadors adopted the recommendation.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:34+01:00",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.7,
+       "reason": "Markets only price eventual appointment (0.96), not Thursday timing. Our earlier figures in this case were 5 of 5 right with no bias, so they add little. No change from blind."
+      }
+     ],
+     "at": "2026-11-25T12:24:34+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.7,
+     "reason": "Markets only price eventual appointment (0.96), not Thursday timing. Our earlier figures in this case were 5 of 5 right with no bias, so they add little. No change from blind."
+    }
+   ],
+   "combined": 0.5995,
+   "combination": {
+    "method": "geo-odds",
+    "version": "2026-11-25"
+   },
+   "calibrated": null,
+   "spread": 0.15,
+   "market_search": "markets.mjs search \"ECB president\", \"Hernandez de Cos\", \"Knot ECB\", \"UKMTO\", \"Hormuz\", \"UKMTO notices\" (anchor, 2026-11-25 11:24-11:25Z): Polymarket next ECB President (de Cos 0.96, Knot 0.034) and Kalshi (0.98) concern the eventual appointment, not the 26 Nov endorsement; Polymarket weekly UKMTO notice-count buckets 23-29 Nov (8-11 at 0.525) count all notices of all types and regions; Hormuz traffic markets concern transits. No market matches either claim.",
+   "market": null,
+   "decomposition": {
+    "morning": {
+     "p_held": 0.99,
+     "p_if_held": 0.505
+    },
+    "afternoon": {
+     "p_held": 0.99,
+     "p_if_held": 0.606
+    },
+    "p_if_not_held": 0
+   },
+   "disagreement": {
+    "cause": "genuine",
+    "note": "Spread 0.15 (0.55-0.70), not above the research limit. The outsider, without the dossier, reads the FT line as near-settled; the others weigh Friday conclusions and Knot staying in. No forecaster relied on a market; none matches the timing."
+   },
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-25T12:27:14+01:00",
+    "case_for_morning": "The FT news mostly confirms what the morning priced: de Cos is the agreed choice and capitals seek a consolation post for Knot (Expansión had reported his ESM interest on 21 Nov). The binding risk is timing: Costa's letter gives Thursday's Euro Summit to economic analyses and thanks to Lagarde, with conclusions on Friday; Knot has not withdrawn, an ESM deal needs 80% of capital, and no source confirms the ambassadors adopted the recommendation. Leaders could endorse him but let Costa announce it at Friday's wrap-up.",
+    "case_for_larger": "The FT is the first report that names Thursday for the leaders' backing, inside a fixed sequence with a Wednesday ambassadors' recommendation, so the decision would be pre-cooked. Costa's letter seeks a timely decision; the Thursday 10:00 Euro Summit with Lagarde is the natural slot; the package has a qualified majority, so the Dutch cannot block; Costa usually posts top-job agreements at once.",
+    "verdict": "The case for the morning figure is somewhat stronger, on timing only: the Thursday line is second-hand and its first step is unconfirmed. 0.55-0.60 is defensible; the plain combination gives 0.60 and stands; nothing above 0.65 is supported. Not sent back: it rests on no fact the forecasters did not weigh.",
+    "unweighed_facts": false,
+    "counters_read": "external-gaps.mjs 2026-11-27 counters: OpenAI, Google and xAI argue the ECB item may be announced only with Friday's conclusions or deferred to December; Eunews quotation of Costa's letter confirms conclusions on Friday and gives no day for the ECB item (already in the dossier).",
+    "sources": [
+     {
+      "title": "Eunews: Costa calls the 27 to Brussels (24 Nov)",
+      "url": "https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/"
+     }
+    ]
+   },
+   "fact_timing_note": "The FT report appeared around 05:07 UTC on 25 Nov (StockNow 05:07Z, Newsquawk 08:30Z, GSM 10:33Z), after the morning freeze at 04:26 UTC; the morning dossier had no report naming the day of the leaders' backing.",
+   "new_fact_kind": "timing within the summit (Thursday rather than Friday or December). In the morning decomposition p_held is the summit taking place (0.99, unchanged), so the move sits in p_if_held 0.505 -> 0.606. Base-rate and adversarial gave p_held 0.80/0.99 and p_if_held 0.72/0.58 on differing readings of p_held; their geometric means (0.89, 0.646) are recorded in the agents.",
+   "sources": [
+    {
+     "title": "Newsquawk European Open, citing the Financial Times: governments seek alternative role for Knot to avoid a leadership vote (25 Nov, 08:30 UTC)",
+     "url": "https://www.newsquawk.com/headlines/european-open-eu-plans-eur-50bln-tech-fund-ezj-ln-profit-falls-on-middle-east-disruption-rco-fp-raises-guidance-bvi-fp-attracts-advent-takeover-interest-moodys-cuts-san-fp-outlook-amzn-to-launch-uk-car-sales"
+    },
+    {
+     "title": "GSM Global News, summarising the FT: ambassadors to adopt the recommendation on Wednesday, leaders to give their backing at Thursday's summit (25 Nov, 10:33 UTC)",
+     "url": "https://gsmglobalnews.com/article/d20261124-ecbknot1.html"
+    },
+    {
+     "title": "StockNow: FT headline (25 Nov, 05:07 UTC)",
+     "url": "https://stocknow.ai/en/breaking-news/l9de8cklq4tulnm8rm7zyy8n/eurozone-capitals-are-reportedly-seeking-a-consolation-prize-for-klaas-knot-in-a"
+    }
+   ]
+  },
+  {
+   "claim": "gulf-ukmto-27",
+   "at": "2026-11-25T12:27:30+01:00",
+   "agents": [
+    {
+     "role": "base-rate",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-25T12:24:40+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.7,
+     "reason_blind": "Own daily record: 10/14 (possibly 9/14 if the 23 Nov strikes were dated 22 Nov) and 17/25, about 0.68-0.71. The IRGC claims two mine strikes on 25 Nov, but without UKMTO/JMIC confirmation that is not a fact for resolution; it shows the tempo continues. Delayed reports count. I make no net adjustment.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:44+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.7,
+       "reason": "No market matches the claim; the weekly count of all UKMTO notices is a different question. Our earlier 59% and 52% are still pending, and the same-id hint is 2/2, too small to move the figure. I stay at the own-record base rate."
+      }
+     ],
+     "at": "2026-11-25T12:24:44+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.7,
+     "reason": "No market matches the claim; the weekly count of all UKMTO notices is a different question. Our earlier 59% and 52% are still pending, and the same-id hint is 2/2, too small to move the figure. I stay at the own-record base rate."
+    },
+    {
+     "role": "evidence",
+     "model": "claude-opus-5-5",
+     "at_blind": "2026-11-25T12:25:33+01:00",
+     "inputs_blind": [
+      "own-research",
+      "overnight-facts"
+     ],
+     "p_blind": 0.66,
+     "reason_blind": "Hormuz attacks are at their highest tempo of the war (ABC: ~19 UKMTO attacks 1-18 Nov); delayed UKMTO reports on 24 Nov covered three vessels hit. Escalation: Iran hit US assets in Bahrain and Kuwait, the US told citizens to leave Iran on 25 Nov (https://www.euronews.com/2026/11/25/us-tells-citizens-to-leave-iran-warns-hostilities-could-escalate-fast). Today's IRGC mine claim does not count without UKMTO. Quiet days still happen.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:25:42+01:00",
+       "inputs": [
+        "own-research",
+        "overnight-facts",
+        "dossier",
+        "signals"
+       ],
+       "p": 0.7,
+       "reason": "In our own record, 10 of 14 days from 10 to 23 Nov were incident days (17 of 25 since 30 Oct), and delayed reports often turn quiet-looking days into yes. The escalation pushes slightly up. From the earlier figures I take only a faint hint (2/2 at a 73% average) that we have been slightly low. A date dispute (22 vs 23 Nov) and thinner traffic keep it from going higher."
+      }
+     ],
+     "at": "2026-11-25T12:25:42+01:00",
+     "inputs": [
+      "own-research",
+      "overnight-facts",
+      "dossier",
+      "signals"
+     ],
+     "p": 0.7,
+     "reason": "In our own record, 10 of 14 days from 10 to 23 Nov were incident days (17 of 25 since 30 Oct), and delayed reports often turn quiet-looking days into yes. The escalation pushes slightly up. From the earlier figures I take only a faint hint (2/2 at a 73% average) that we have been slightly low. A date dispute (22 vs 23 Nov) and thinner traffic keep it from going higher."
+    },
+    {
+     "role": "adversarial",
+     "model": "claude-fable-5-2",
+     "at_blind": "2026-11-25T12:24:38+01:00",
+     "inputs_blind": [
+      "dossier",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.69,
+     "reason_blind": "Day record 10/14 (possibly 9/14 if the three strikes fell on 22 Nov), 17/25, with delayed reports often turning quiet days to yes. New facts are only IRGC mine claims for 25 Nov, unconfirmed by UKMTO, which do not count. Case for NO: quiet days about three in ten, thin traffic, mine claims unmatched. No slip class applies.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:40+01:00",
+       "inputs": [
+        "dossier",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.69,
+       "reason": "Signals unchanged: the weekly notice-count market does not match and only confirms a busy week. From our earlier figures (73% average, 2 of 2 happened, two pending) I take no downward correction, n too small to go up. Window has not opened, so silence means nothing; the IRGC claims are not UKMTO reports. Base rate, shaded for the 9/14 doubt."
+      }
+     ],
+     "at": "2026-11-25T12:24:40+01:00",
+     "inputs": [
+      "dossier",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.69,
+     "reason": "Signals unchanged: the weekly notice-count market does not match and only confirms a busy week. From our earlier figures (73% average, 2 of 2 happened, two pending) I take no downward correction, n too small to go up. Window has not opened, so silence means nothing; the IRGC claims are not UKMTO reports. Base rate, shaded for the 9/14 doubt."
+    },
+    {
+     "role": "anchor",
+     "model": "claude-opus-5-5",
+     "at": "2026-11-25T12:25:52+01:00",
+     "inputs": [
+      "signals",
+      "reference-data",
+      "dossier",
+      "overnight-facts"
+     ],
+     "p": 0.66,
+     "reason": "Beta(1,1) rate from our day record: 10/14 -> 0.69, or 9/14 -> 0.63; last 7 days 6/7 -> 0.78; adding 24 Nov (no UKMTO report yet) 10/15 -> 0.65. Anchor ~0.67. 25 Nov has only an IRGC mine claim, which does not count. Market rules differ: Polymarket's buckets count every UKMTO notice of any type and region over 23-29 Nov. Earlier figures too few to calibrate on. Net 0.66."
+    },
+    {
+     "role": "outsider",
+     "model": "claude-sonnet-5-5",
+     "at_blind": "2026-11-25T12:24:27+01:00",
+     "inputs_blind": [
+      "own-research",
+      "reference-data",
+      "overnight-facts"
+     ],
+     "p_blind": 0.6,
+     "reason_blind": "Frequent UKMTO-reported strikes and projectile hits around Hormuz and Oman recently, with JMIC threat SEVERE and fresh IRGC mine claims. But many incidents are non-qualifying notices, and Iranian claims alone do not count. One day is a narrow window.",
+     "rounds": [
+      {
+       "at": "2026-11-25T12:24:34+01:00",
+       "inputs": [
+        "own-research",
+        "reference-data",
+        "overnight-facts",
+        "signals"
+       ],
+       "p": 0.6,
+       "reason": "UKMTO notice-count market implies about 1.3 notices a day, but none matches the claim. Our earlier 52-59% for 25-26 Nov is consistent with this. Unchanged."
+      }
+     ],
+     "at": "2026-11-25T12:24:34+01:00",
+     "inputs": [
+      "own-research",
+      "reference-data",
+      "overnight-facts",
+      "signals"
+     ],
+     "p": 0.6,
+     "reason": "UKMTO notice-count market implies about 1.3 notices a day, but none matches the claim. Our earlier 52-59% for 25-26 Nov is consistent with this. Unchanged."
+    }
+   ],
+   "combined": 0.671,
+   "combination": {
+    "method": "geo-odds",
+    "version": "2026-11-25"
+   },
+   "calibrated": null,
+   "spread": 0.1,
+   "market_search": "markets.mjs search \"ECB president\", \"Hernandez de Cos\", \"Knot ECB\", \"UKMTO\", \"Hormuz\", \"UKMTO notices\" (anchor, 2026-11-25 11:24-11:25Z): Polymarket next ECB President (de Cos 0.96, Knot 0.034) and Kalshi (0.98) concern the eventual appointment, not the 26 Nov endorsement; Polymarket weekly UKMTO notice-count buckets 23-29 Nov (8-11 at 0.525) count all notices of all types and regions; Hormuz traffic markets concern transits. No market matches either claim.",
+   "market": null,
+   "red_team": {
+    "model": "claude-opus-5-5",
+    "at": "2026-11-25T12:27:14+01:00",
+    "note": "No decisive new fact: the IRGC says two tankers hit mines on 25 Nov, unconfirmed by UKMTO and dated 25 Nov, not 26 Nov. It shows a high tempo, consistent with 0.67-0.70."
+   },
+   "new_fact": "Reuters 25 Nov 10:06 UTC: IRGC Navy says two oil tankers struck mines and caught fire in Hormuz on Wednesday; Iranian army warns uncoordinated vessels. Not a UKMTO/JMIC report. Recomputed 0.67 against the morning 0.70: below the display threshold, morning figure stands.",
+   "sources": [
+    {
+     "title": "Reuters via WHTC: Iran says ships hit mines in Hormuz (25 Nov, 10:06 UTC)",
+     "url": "https://whtc.com/2026/11/25/iran-says-ships-hit-mines-in-hormuz-warns-vessels-to-coordinate-passage/"
+    }
+   ]
+  }
+ ],
+ "factcheck": {
+  "flags": 4,
+  "checked": 4,
+  "wrong": 2,
+  "right": 1,
+  "open": 1
+ },
+ "meta": {
+  "unreachable": [
+   "consilium.europa.eu",
+   "ukmto.org",
+   "aa.com.tr",
+   "thebostonreport.com",
+   "finance.biggo.com",
+   "qz.com",
+   "lovguiden.dk",
+   "ft.com (paywall, read via Newsquawk/GSM summaries)"
+  ],
+  "not_revised": "Other claims: no material new fact by 12:30. uk-tube: City AM (24 Nov 17:57 UTC, before the freeze) strike from noon Thursday after Acas talks failed, nothing newer; fr-plfss: joint committee still on 26 Nov; es-debate: four-way debate confirmed for Thursday 22:00 on RTVE and Telemadrid (reports of 20-24 Nov); kr-bok: economist surveys before the freeze unchanged; eu-ukr-27: ambassadors split on 24 Nov (before the freeze); de-gfk, cz-colt: releases on Thursday, nothing new; ua-drones-27: window opens 18:00 Kyiv, not re-forecast. No new events for 26 Nov found that would merit an added story.",
+  "factcheck_note": "Wrong: de-gfk (the November 2025 reading was -24.1, not -22.5, which was October 2025), fr-plfss (the Assemblée adopted no text; the committee had only the Senate text before it) - corrections filed. Right: fr-plfss 49-3 described as forcing a text through without a vote (adopted unless a censure motion passes). Open: eu-summit (whether the leaders' backing 'opens' the Article 283(2) procedure or the Eurogroup started it on 6 Nov depends on definition; the Council statement could not be read)."
+ }
+}
