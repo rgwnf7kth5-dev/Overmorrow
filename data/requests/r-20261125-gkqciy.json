@@ -1,0 +1,49 @@
+{
+ "id": "r-20261125-gkqciy",
+ "asked_at": "2026-11-25T08:40:37+01:00",
+ "lang": "cs",
+ "status": "answered",
+ "mode": "desk",
+ "topic": "Special European Council of 26–27 November, conclusions",
+ "topic_cs": "Mimořádná Evropská rada 26.–27. listopadu, závěry",
+ "answered_at": "2026-11-25T09:28:00+01:00",
+ "events_date": "2026-11-27",
+ "claim": {
+  "text": "The special European Council in Brussels adopts conclusions on Friday 27 November.",
+  "text_cs": "Mimořádná Evropská rada v Bruselu přijme v pátek 27. listopadu závěry.",
+  "criterion": "YES if, between 00:00 and 23:59 Brussels time on Friday 27 November 2026, the European Council adopts conclusions of the special meeting agreed by all 27 members, as shown by a conclusions document on consilium.europa.eu or by reports of two news agencies. A text backed only by some members (for example \"by 26\"), a statement or remarks of President Costa alone, or a Euro Summit statement do not count. Adoption on Thursday or after midnight into Saturday counts as NO, and so does a postponed or suspended summit.",
+  "criterion_cs": "ANO, pokud Evropská rada mezi 00:00 a 23:59 bruselského času v pátek 27. listopadu 2026 přijme závěry mimořádného zasedání odsouhlasené všemi 27 členy, což doloží dokument se závěry na consilium.europa.eu nebo zprávy dvou tiskových agentur. Text podpořený jen částí členů (například „26 členy“), prohlášení či vystoupení samotného předsedy Costy ani prohlášení eurosummitu se nepočítají. Přijetí ve čtvrtek nebo po půlnoci na sobotu znamená NE, stejně jako odložený nebo přerušený summit.",
+  "resolution_source": "consilium.europa.eu, European Council conclusions and press releases",
+  "tz": "Europe/Brussels",
+  "event_window": { "start": "2026-11-27T00:00:00+01:00", "end": "2026-11-27T23:59:59+01:00" },
+  "evidence_at": "2026-11-28T11:59:59+01:00",
+  "resolves_by": "2026-12-01T11:59:59+01:00"
+ },
+ "forecast": {
+  "p": 0.29,
+  "combined": 0.29,
+  "frozen_at": "2026-11-25T09:27:27+01:00",
+  "agents": [
+   { "role": "base-rate", "model": "claude-opus-5-5", "p": 0.27, "at": "2026-11-25T09:27:06+01:00", "reason": "Only one of four special summits on the long-term budget ended with conclusions by all members on the planned last day; two ended without any and one overran by days. Four states reject the Ukraine financing and the V4 rejected the negotiating box, so a text by Costa alone, a text by 26, an overrun or no conclusions is likelier than a text of all 27 on Friday." },
+   { "role": "evidence", "model": "claude-opus-5-5", "p": 0.22, "at": "2026-11-25T09:27:20+01:00", "reason": "Reporting of 24–25 November points to no budget deal, and budget summits that fail usually end without conclusions, as in November 2012 and February 2020. Costa's plan to conclude on Friday and the December 2025 precedent of opt-outs inside conclusions agreed by all keep the chance above the floor." },
+   { "role": "outsider", "model": "claude-sonnet-5-5", "p": 0.38, "at": "2026-11-25T09:27:20+01:00", "reason": "First special budget summits often end with no agreed text or one backed by 26 only, which counts as no. A deal late on Thursday or past midnight into Saturday would also count as no, and no report of draft conclusions was found." }
+  ],
+  "base_rate": { "class": "Special European Councils on the long-term budget (Nov 2012, Feb 2013, Feb 2020, Jul 2020) that ended with conclusions of all members on the planned last day; from general knowledge, not re-checked", "rate": 0.25, "n": 4 }
+ },
+ "reasoning": "About 71% that the summit does not end on Friday with conclusions agreed by all 27. Budget summits that fail have usually closed without any conclusions, the Visegrád four rejected Costa's proposal and four states refuse new financing for Ukraine, which Germany ties to the budget. The main thing that could upset it: a short text of all 27 that records progress, or a compromise with opt-outs, as in December 2025.",
+ "reasoning_cs": "Asi 71 %, že summit v pátek neskončí závěry odsouhlasenými všemi 27 členy. Neúspěšné rozpočtové summity obvykle končily bez závěrů, visegrádská čtyřka Costův návrh odmítla a čtyři státy odmítají nové financování Ukrajiny, na které Německo váže rozpočet. Odhad by mohl zvrátit hlavně krátký text všech 27, který jen zaznamená pokrok, nebo kompromis s výjimkami jako v prosinci 2025.",
+ "facts": [
+  { "text": "Costa's invitation letter: the summit opens on Thursday 26 November at 10:00 with a Euro Summit; when proceedings resume on Friday he will share his conclusions, and he expects to conclude on Friday.", "url": "https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/", "published": "2026-11-24" },
+  { "text": "An analysis before the summit calls a full agreement on the 2028–2034 budget highly unlikely at this meeting; Germany's support for progress depends on all members sharing the burden of financing Ukraine.", "url": "https://eualive.net/toxic-linkage-why-this-eu-summit-is-unlikely-to-deliver-on-budget-or-ukraine/", "published": "2026-11-24" },
+  { "text": "Chancellor Merz wrote to Costa that new aid for Ukraine is an essential prerequisite for approving the long-term budget; Slovak Prime Minister Fico called it blackmail and threatened a veto, and the Czech, Hungarian and Bulgarian leaders also objected.", "url": "https://saudigazette.com.sa/article/666160/world/eu-budget-battle-erupts-as-four-countries-defy-germanys-merz-over-ukraine-aid", "published": "2026-11-11" },
+  { "text": "Costa replied to Merz that Ukraine's financing needs for 2027 would be taken up at the special summit of 26–27 November.", "url": "https://www.eurointegration.com.ua/eng/news/2026/11/11/7249753/", "published": "2026-11-11" },
+  { "text": "Czech Prime Minister Babiš said he expects a deal on the long-term budget probably only in February or March; Costa has said he hopes for one in December at the latest.", "url": "https://www.ceskenoviny.cz/index_view.php?id=2884513", "published": "2026-10-16" },
+  { "text": "At the October summit the leaders softened the end-of-year deadline for a budget deal in their conclusions.", "url": "https://euronews.com/2026/10/15/inconclusive-sparring-at-eu-summit-puts-budget-timeline-into-question", "published": "2026-10-15" }
+ ],
+ "sources": [
+  { "title": "Eunews: Costa calls the 27 to Brussels for budget talks (24 Nov 2026)", "url": "https://www.eunews.it/en/2026/11/24/costa-calls-the-27-eu-member-states-to-brussels-for-budget-talks-now-is-the-time-to-reach-an-agreement/" },
+  { "title": "EUalive: Toxic linkage: why this EU summit is unlikely to deliver on budget or Ukraine (24 Nov 2026)", "url": "https://eualive.net/toxic-linkage-why-this-eu-summit-is-unlikely-to-deliver-on-budget-or-ukraine/" },
+  { "title": "Saudi Gazette: EU budget battle erupts as four countries defy Germany's Merz over Ukraine aid (11 Nov 2026)", "url": "https://saudigazette.com.sa/article/666160/world/eu-budget-battle-erupts-as-four-countries-defy-germanys-merz-over-ukraine-aid" },
+  { "title": "ČTK: Babiš on the timing of a deal on the EU's long-term budget (16 Oct 2026)", "url": "https://www.ceskenoviny.cz/index_view.php?id=2884513" }
+ ]
+}
