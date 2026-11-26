@@ -1,0 +1,126 @@
+{
+ "edition": "2026-11-28",
+ "stories": [
+  {
+   "story": "nz-results",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T05:26:37Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "de-budget",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T05:26:43Z",
+   "searches": 14,
+   "flags": []
+  },
+  {
+   "story": "eu-summit",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T05:26:53Z",
+   "searches": 6,
+   "flags": [
+    {
+     "statement": "European Council President António Costa had called the meeting on 26 and 27 November to settle the multiannual financial framework and Ukraine's financial needs for 2027, saying the time had come to reach an agreement.",
+     "in_report": true,
+     "problem": "Costa's invitation applied 'the time has come to reach an agreement' specifically to the multiannual financial framework. On Ukraine financing, he called for discussion of how to meet the country's needs with partners, not for a deal to be concluded at that meeting.",
+     "source": "https://www.consilium.europa.eu/media/ysfdpeob/president-costa-s-invitation-letter-to-the-extraordinary-european-council-26-27-november.pdf"
+    },
+    {
+     "statement": "a Coordinated Support Facility for Ukraine",
+     "in_report": true,
+     "problem": "The European Commission's proposal calls it the Instrument for Coordinated Support to Ukraine.",
+     "source": "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en?prefLang=mt"
+    },
+    {
+     "statement": "Commission President Ursula von der Leyen has said the facility would cover two-thirds of Ukraine's financing needs next year",
+     "in_report": true,
+     "problem": "Von der Leyen said the loan would cover roughly two-thirds of the estimated €70 billion funding gap in 2027, not two-thirds of Ukraine's total financing needs.",
+     "source": "https://www.eeas.europa.eu/delegations/ukraine/press-point-president-von-der-leyen-together-commissioners-dombrovskis-and-kubilius-instrument_en"
+    },
+    {
+     "statement": "On 23 November the Council approved Ukraine's 2027 financing strategy",
+     "in_report": true,
+     "problem": "The Council's 23 November decision approved the European Commission's assessment of Ukraine's 2027 financing strategy, not the strategy itself. The decision separately made up to €45 billion available to help implement the strategy.",
+     "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AL_202602623"
+    }
+   ]
+  },
+  {
+   "story": "gulf-shipping",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T05:27:01Z",
+   "searches": 5,
+   "flags": [
+    {
+     "statement": "Earlier in the week UKMTO issued time-late warnings on four ships struck on 22 and 23 November",
+     "in_report": true,
+     "problem": "UKMTO's revised warnings date all four strikes to 22 November 2026 in UTC. The 23 November date appeared in the initial bulletin that grouped the three tanker strikes; UKMTO corrected it when it issued separate warnings.",
+     "source": "https://gcaptain.com/four-more-ships-attacked-as-iran-widens-hormuz-crackdown-to-tugboats/"
+    }
+   ]
+  },
+  {
+   "story": "fr-rating",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T05:27:28Z",
+   "searches": 15,
+   "flags": []
+  },
+  {
+   "story": "rheinmetall",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T05:27:30Z",
+   "searches": 6,
+   "flags": [
+    {
+     "statement": "and on 5 November it cut it again, to sales of about €13.2bn and an operating margin of about 18.5%.",
+     "in_report": true,
+     "problem": "Rheinmetall announced the second guidance cut on 4 November 2026 in an ad hoc disclosure. Its 5 November quarterly statement repeated the revised figures.",
+     "source": "https://www.rheinmetall.com/en/ir-data/rheinmetall_ag__anpassung_der_gesamtjahreserwartung_aufgrund_wahrscheinlicher_verzoegerungen_bei_der_beauftragung_fuer_das_boxer_projekt_und_bei_losabnahmen_fuer_artilleriemunition/1209979"
+    }
+   ]
+  },
+  {
+   "story": "es-cpi",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T05:27:47Z",
+   "searches": 4,
+   "flags": []
+  },
+  {
+   "story": "fr-cpi",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T05:27:47Z",
+   "searches": 16,
+   "flags": []
+  },
+  {
+   "story": "cz-chamber",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T05:27:51Z",
+   "searches": 23,
+   "flags": []
+  },
+  {
+   "story": "cz-slavik",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T05:27:58Z",
+   "searches": 10,
+   "flags": []
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-26T05:27:58Z"
+}
