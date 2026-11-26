@@ -181,6 +181,38 @@
       "note": "Fox 5 (from AP and Reuters), 4 Nov: Troy Jackson defeated Susan Collins, who called him to concede shortly after midnight; Wikipedia records the same result.",
       "resolved_at": "2026-11-21T05:10:00+01:00",
       "held": true
+    },
+    {
+      "claim": "us-house-dem-1",
+      "outcome": "yes",
+      "evidence": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
+      "note": "With 99.3% of districts called by AP (as of 24 Nov, 19:26 EST), Democrats hold 259-262 of 435 House seats against 173-176 for Republicans (two Louisiana seats go to runoffs), well above the 218 needed; the page cites AP's US House results.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite AP race calls and the Wikipedia tally showing at least 258-259 Democratic seats."
+      }
+    },
+    {
+      "claim": "us-senate-dem-1",
+      "outcome": "yes",
+      "evidence": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
+      "note": "Democrats won 22 of the 35 contested seats per AP calls, flipping nine Republican seats, so the Democratic caucus (Democrats plus caucusing independents) holds 56 of 100 seats in the Senate convening in January 2027, above the 51 needed.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report a 56-44 Democratic caucus majority, one citing AP directly."
+      }
     }
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "edition": "2026-11-25",
+  "checked_at": "2026-11-26T05:14:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 24, read 26 Nov 04:08 UTC)",
+    "ct24 (ČT24 domácí list, items dated 24 Nov; read 26 Nov 04:09 UTC)",
+    "ctk (ceskenoviny.cz ČR list, items dated 24.11.2026, plus ČTK items of 24 Nov opened during resolution; read 26 Nov 04:09 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2) and no day list for 24 Nov was found from a substitute, so list (b) is missing: no world or Europe event could reach two lists.",
+    "ceskenoviny.cz ČR list paging returned the same page, so ČTK items before 12:32 on 24 Nov were taken only from articles opened during resolution (Hlaváč/Zůna at the commanders' assembly, 09:20)."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (list (b) missing): Houthi strike on the PIF Tower in Riyadh (11 injured); Israeli airstrike kills Hamas official Naeem Abu Nahel; Russian airstrike on a Zaporizhzhia apartment block (2 dead, 44 wounded); two Libyan naval officers die after the Benghazi naval-drone attack; Bangladesh garment-worker protests and BGB deployment; Ras Al Khaimah bus crash (13 dead); Hanoi restaurant gas explosion; Turkish Air Force helicopter crash in Eskişehir; UKHSA record heat-related deaths in 2026; Cartagena supermarket hostage-taking; Sheikh Hasina announces return on 16 Dec; Miss Universe 2026. CAS ruling on the 2025 AFCON final excluded as sport.",
+    "ČTK-only Czech items dated 24 Nov: snow forecast for the south-east (also on ČT24, a weather forecast, not an event of the day); army tests ground robots near Přerov; Babiš on centralisation and e-referrals in health care; hygiene inspectors check 43 school canteens; Středula: unions reject cuts to unemployment benefits (ČT24's item on Babiš admitting errors is dated 25 Nov); Praha sobě expels two Prague 12 councillors.",
+    "ČT24-only Czech items dated 24 Nov: Ecumenical Council restores the Orthodox Church's membership; Křišťálová Lupa awards; 85th anniversary of the first transport to Terezín; Plaga on binding minimum rules for school canteens."
+  ],
+  "events": [
+    {
+      "title": "Chamber of Deputies opens its sitting: coalition rejects STAN's motion on the missiles in Poland and, for the fifth time, the opposition's bid to debate Okamura's recall; Macinka's statement; platform-work and electricity-price bills debated",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/snemovna-ma-na-programu-platformovou-praci-379888",
+      "status": "covered",
+      "story": "cz-chamber"
+    },
+    {
+      "title": "Army commanders' assembly: Chief of Staff Hlaváč says 2% of GDP limits new projects; Defence Minister Zůna announces the cabinet approved joining the second round of SAFE",
+      "scope": "cz",
+      "lists": ["ct24", "ctk"],
+      "source": "https://www.ceskenoviny.cz/zpravy/armada-bude-pri-rozpoctu-2-hdp-stezi-rozvijet-nove-projekty-rekl-hlavac/2905715",
+      "status": "dropped",
+      "note": "Planning file dropped 'President Pavel at the Army Command Assembly': only what the President says at a scheduled meeting, no checkable new decision. The SAFE decision itself was forecast in the previous edition (cz-safe-24, 17%)."
+    }
+  ]
+}

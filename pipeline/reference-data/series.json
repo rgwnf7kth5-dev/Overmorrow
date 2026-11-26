@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "pooled": {
-  "n": 61,
-  "rms_in_scales": 1.242,
+  "n": 64,
+  "rms_in_scales": 1.258,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -66,10 +66,19 @@
      "centre": 99.3,
      "scale_used": 1.5,
      "source": null
+    },
+    {
+     "edition": "2026-11-25",
+     "claim": "cz-conf-25",
+     "consensus": 97.9,
+     "first": 100.2,
+     "centre": 98.12,
+     "scale_used": 1.58,
+     "source": "No analysts' consensus exists; naive benchmark = October 2026 first release 97.9 (ČSÚ, 26 Oct 2026)"
     }
    ],
-   "n": 0,
-   "rms_surprise": null
+   "n": 1,
+   "rms_surprise": 2.3
   },
   "final-national-turnout-knesset-election-2026": {
    "unit": "%",
@@ -1029,6 +1038,38 @@
    ],
    "n": 1,
    "rms_surprise": 0
+  },
+  "conference-board-consumer-confidence-index-us-headline-novem": {
+   "unit": "",
+   "records": [
+    {
+     "edition": "2026-11-25",
+     "claim": "us-cb-25",
+     "consensus": 92.1,
+     "first": 103.3,
+     "centre": 91.92,
+     "scale_used": 5.02,
+     "source": "Econoday, read 2026-11-22T17:55Z, https://us.econoday.com/byevent?fid=681825&cust=global&year=2026&lid=0 (range 91.8-94.7); Nasdaq calendar 92.1"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 11.2
+  },
+  "ifo-business-climate-index-germany-headline-november-2026": {
+   "unit": "",
+   "records": [
+    {
+     "edition": "2026-11-25",
+     "claim": "de-ifo-25",
+     "consensus": 90.5,
+     "first": 90.6,
+     "centre": 90.59,
+     "scale_used": 0.83,
+     "source": "Econoday, read 2026-11-22T17:53Z, https://us.econoday.com/byevent?fid=674458&cust=global&year=2026&lid=0 (range 90.0-90.8; Nasdaq calendar 90.6)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.1
   }
  },
  "extra": {}

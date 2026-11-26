@@ -338,7 +338,7 @@
       "n": 0,
       "source": "Own record only (created 2026-10-29)",
       "own_record": {
-        "yes": 10,
+        "yes": 11,
         "no": 2
       }
     },
@@ -448,7 +448,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 2,
+        "yes": 3,
         "no": 1
       }
     },
@@ -459,7 +459,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 4,
+        "yes": 5,
         "no": 2
       }
     },
@@ -800,7 +800,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 13 Nov 2026)",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 0
       }
     },
@@ -878,7 +878,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 3
+        "no": 4
       }
     },
     {
@@ -1514,6 +1514,28 @@
       "base_rate": null,
       "n": 0,
       "source": "own record from 25 Nov 2026 (resolver); added from claim cz-ods-24",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "party-wins-national-chamber-control",
+      "description": "A named party (with caucusing independents where stated) wins a majority of a national legislative chamber in a general election, per race calls or certified results",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 26 Nov 2026 (resolver); added from claims us-house-dem-1 and us-senate-dem-1",
+      "own_record": {
+        "yes": 2,
+        "no": 0
+      }
+    },
+    {
+      "id": "commission-dbp-opinion-compliant",
+      "description": "The European Commission finds a named euro-area country's draft budgetary plan compliant in its autumn-package opinion",
+      "base_rate": null,
+      "n": 0,
+      "source": "own record from 26 Nov 2026 (resolver); added from claim eu-dbp-25",
       "own_record": {
         "yes": 1,
         "no": 0
