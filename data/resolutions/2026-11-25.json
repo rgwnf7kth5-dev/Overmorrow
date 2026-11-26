@@ -1,0 +1,178 @@
+{
+  "edition": "2026-11-25",
+  "results": [
+    {
+      "claim": "ua-drones-25",
+      "outcome": "no",
+      "evidence": "https://www.ukrinform.net/rubric-ato/4187924-air-defenses-neutralize-73-of-96-drones-russia-launched-against-ukraine-overnight.html",
+      "note": "Air Force first morning summary repeated by Ukrinform (24 Nov, 08:58 Kyiv): from 18:00 on 23 Nov Russia launched 96 attack drones (Shahed, 64 jet-powered, Gerbera, Parodiya), 73 shot down or suppressed, below the 130 threshold.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same figure of 96 from the Air Force summary."
+      }
+    },
+    {
+      "claim": "pt-budget-25",
+      "outcome": "yes",
+      "evidence": "https://www.rtp.pt/noticias/politica/proposta-de-orcamento-do-estado-para-2027-aprovada-em-votacao-final-global_e1781227",
+      "note": "RTP (24 Nov, 18:43): the Assembleia da República approved the 2027 State Budget in the final overall vote with PSD and CDS-PP in favour, PS and JPP abstaining and Chega, IL, Livre, PCP, BE and PAN against, so more votes in favour than against.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite RTP and ECO reports of the approval in the final overall vote on 24 Nov."
+      }
+    },
+    {
+      "claim": "eu-dbp-25",
+      "outcome": "yes",
+      "evidence": "https://agenceurope.eu/en/bulletin/article/13989/1/fiscal-prudence-and-economic-competitiveness-are-watchwords-for-2027-european-semester-cycle",
+      "note": "Commission pages refused scripted reading (429), so two outlets are used: Agence Europe and The Edge (https://edgeconsultancykw.com/commission-autumn-package-2027-budget-plans-8-of-17-compliant/), both reporting the 24 Nov autumn package, list France among the eight euro-area 2027 draft budgetary plans found compliant, with only an uncertainty caveat over the ongoing parliamentary debate.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the Commission opinion C(2026) 9506 on France concluding the plan complies with the EDP recommendation."
+      }
+    },
+    {
+      "claim": "cz-stan-25",
+      "outcome": "yes",
+      "evidence": "https://www.psp.cz/sqw/hlasy.sqw?G=89033",
+      "note": "PSP desk snapshot and psp.cz vote 89033 (meeting 37, vote no. 5, 24 Nov 18:51): Vít Rakušan's (STAN) motion to add a resolution condemning the security incident in Poland to the agenda was rejected 75 for, 91 against, 172 present; it was the only vote on that motion.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "google"
+        ],
+        "disagree": [],
+        "note": "One model answered not_yet because the voting list did not name the motion; the stenographic record and the PSP snapshot match vote 89033 to Rakušan's motion, so YES stands."
+      }
+    },
+    {
+      "claim": "cz-conf-25",
+      "outcome": "measured",
+      "value": 100.2,
+      "evidence": "https://csu.gov.cz/rychle-informace/konjunkturalni-pruzkumy-listopad-2026",
+      "note": "ČSÚ Konjunkturální průzkumy – listopad 2026: the composite confidence indicator (base index) rose 2.3 points to 100.2 (business 99.4, consumers 104.5).",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 100.2 from the same ČSÚ release."
+      }
+    },
+    {
+      "claim": "us-cb-25",
+      "outcome": "measured",
+      "value": 103.3,
+      "evidence": "https://www.conference-board.org/topics/consumer-confidence",
+      "note": "The Conference Board (updated Tue 24 Nov 2026): the Consumer Confidence Index rose 11.4 points to 103.3 (1985=100) in November from 91.9 in October; preliminary results, survey period 1-17 Nov.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 103.3 from the Conference Board release."
+      }
+    },
+    {
+      "claim": "de-ifo-25",
+      "outcome": "measured",
+      "value": 90.6,
+      "evidence": "https://us.econoday.com/byevent?fid=674458&cust=global&year=2026&lid=0",
+      "note": "ifo.de refused scripted reading (client challenge); Econoday's report of the 24 Nov release gives the November business climate index at 90.6, up from 90.1 in October (current situation 89.4, expectations 91.9).",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 90.6, one citing the ifo press release of 24 Nov."
+      }
+    },
+    {
+      "claim": "dell-25",
+      "outcome": "yes",
+      "evidence": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+      "note": "Dell's Q3 FY27 release (24 Nov, 16:05 EST) gives full-year FY27 revenue guidance of $202.0 billion, a single point figure above $192.0 billion.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same release and the $202.0 billion guidance."
+      }
+    },
+    {
+      "claim": "hp-25",
+      "outcome": "yes",
+      "evidence": "https://www.sec.gov/Archives/edgar/data/0000047217/000004721726000054/hp103126exhibit991q426.htm",
+      "note": "HP's earnings release of 24 Nov 2026 (GlobeNewswire, filed as 8-K exhibit 99.1; investor.hp.com refused scripted reading) states fourth-quarter non-GAAP diluted net EPS of $0.83, inclusive of tariff refunds, above the $0.75 threshold.",
+      "resolved_at": "2026-11-26T05:06:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give $0.83 non-GAAP diluted EPS from the same release."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "www.ukmto.org (403)",
+      "epvotes.com (403)",
+      "commission.europa.eu (429)",
+      "www.ifo.de (client challenge)",
+      "investor.hp.com (403)",
+      "odok.gov.cz / odok.cz (blocked)",
+      "europarl doceo PV/TA pages (empty when read by script)",
+      "seatrade-maritime.com (403)",
+      "sabq.org (403)",
+      "www.rivieramm.com (429)"
+    ],
+    "pending": [
+      {
+        "claim": "gulf-ukmto-25",
+        "note": "gCaptain (24 Nov) dates the four strikes UKMTO reported on 24 Nov to 22 Nov and Arab News reports a new explosion on 26 Nov, but the UKMTO incident list for 24 Nov GST could not be read (ukmto.org 403) and time-late reports remain possible."
+      },
+      {
+        "claim": "ep-eia-25",
+        "note": "EP minutes, texts adopted and the OEIL file did not yet show the outcome when read; the plenary briefing scheduled the vote for Tue 24 Nov; a reported postponement to 25 Nov could not be confirmed from a readable page (epvotes.com 403)."
+      },
+      {
+        "claim": "cz-us-cro-25",
+        "note": "The Constitutional Court listed the public pronouncement of a judgment (nález) in III. ÚS 2839/25 for 24 Nov 14:00; no press release, NALUS entry or media report of the outcome found yet."
+      }
+    ]
+  }
+}
