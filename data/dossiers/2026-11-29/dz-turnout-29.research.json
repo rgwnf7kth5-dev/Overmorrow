@@ -1,0 +1,190 @@
+{
+ "claim": "Turnout in Algeria's municipal (APC) elections on Saturday 28 November 2026, as announced on election night, is at or below the 35.97% announced on election night in 2021.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:12:50Z",
+   "p": 0.61,
+   "searches": 5,
+   "sources": [
+    "https://siwel.info/elections-locales-en-algerie-44-de-taux-de-participation-selon-le-ministre-de-linterieur_25454.html",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger",
+    "https://adlenemeddi.substack.com/p/locales-du-28-novembre-la-crise-des",
+    "https://www.joradp.dz/FTP/jo-francais/2026/F2026062.pdf",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mvfdd6yr-cloture-du-delai-legal-de-traitement-des-dossiers-de-candidatures",
+    "https://www.aps.dz/fr/elections-locales-2026/mw3vlu0j-arous-donne-a-alger-le-coup-d-envoi-de-la-campagne-electorale",
+    "https://www.aps.dz/fr/elections-locales-2026/mww7acwj-l-anie-rappelle-la-necessite-de-respecter-les-dispositions-legales-relatives-a-la-periode-de-silence-electoral",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mwuo2576-cloture-de-la-campagne-electorale-mardi-et-entree-en-vigueur-du-silence-electoral",
+    "https://www.aps.dz/fr/elections-locales-2026/mw3gjocl-principales-etapes-du-processus-electoral-chronologie",
+    "https://www.aps.dz/fr/elections-locales-2026/mw38kp9o-lancement-ce-jeudi-de-la-campagne-electorale",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mv58cj6e-l-anie-annonce-le-bilan-definitif-du-nombre-de-listes-de-candidats",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/muwy6tkm-obligation-de-joindre-au-dossier-de-candidature-l-attestation-de-parrainage-du-parti-politique",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/muk4tax7-jeudi-8-octobre-dernier-delai-pour-le-depot-des-dossiers-de-declaration-collective-de-candidature",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mtfx81d6-lancement-du-processus-des-elections-locales-dans-le-contexte-du-nouveau-decoupage-territorial",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mu4207v0-cloture-jeudi-de-la-revision-exceptionnelle-des-listes-electorales",
+    "https://www.aps.dz/fr/elections-locales-2026/mw25lfpc-",
+    "https://ina-elections.dz/wp-content/uploads/2021/10/07-10.pdf",
+    "https://ina-elections.dz/wp-content/uploads/2021/08/31-08-2021.pdf",
+    "https://ina-elections.dz/wp-content/uploads/2021/11/29-11.pdf",
+    "https://ina-elections.dz/wp-content/uploads/2021/11/03-11.pdf",
+    "https://www.aps.dz/algerie/actualite-nationale/mtfpo3bt-%D8%B5%D8%AF%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%B1%D9%8A%D9%94%D8%A7%D8%B3%D9%8A-%D8%A7%D9%84%D9%85%D8%AA%D8%B6%D9%85%D9%86-%D8%A7%D8%B3%D8%AA%D8%AF%D8%B9%D8%A7%D8%A1-%D8%A7%D9%84%D9%87%D9%8A%D9%8A%D9%94%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%AE%D8%A8%D8%A9-%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D8%A8%D8%AA-28-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mv5lgbsu-l-anie-devoile-le-bilan-de-la-revision-exceptionnelle-des-listes-electorales",
+    "https://fr.apanews.net/society/algerie-fin-de-la-campagne-des-elections-locales/",
+    "https://kanonix.app/documents/decret-presidentiel-26-284-fr",
+    "https://www.aps.dz/fr/algerie/actualite-nationale/mve38e1o-elections-locales-augmentation-du-nombre-de-candidats-aux-apw-et-apc-par-rapport-a-2021"
+   ],
+   "reason": "**Base rate.** Algeria’s reported municipal turnout was 44.26% in 2012, 46.93% in 2017, and 35.97% at the close of polls in 2021. That’s one YES in three comparable elections, and only because equality counts. I give 2021 the most weight: it is the most recent municipal election, and its later revision to 36.58% does not count under this criterion. ([siwel.info](https://siwel.info/elections-locales-en-algerie-44-de-taux-de-participation-selon-le-ministre-de-linterieur_25454.html?utm_source=openai))\n\n**What moves the forecast.**\n- **Toward YES:** ANIE reported just 21.24% domestic turnout in the July 2, 2026 legislative election. That is evidence of weak recent voter participation, though a parliamentary election is not a direct municipal comparison. ([aps.dz](https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger))\n- **Toward YES:** November 26 reporting put municipal list filings at 5,631, down from 5,848 in 2021. Fewer separate lists can mean fewer campaigns mobilizing voters. **Toward NO:** ANIE reported 22.70% more municipal candidates than in 2021. Longer lists can still bring more people into the effort to turn out voters, even if voters have fewer lists to choose from. ([adlenemeddi.substack.com](https://adlenemeddi.substack.com/p/locales-du-28-novembre-la-crise-des))\n- **Toward YES through lower cancellation risk:** The decree set the election for November 28, mobile voting began in southern provinces on November 25, and Oran’s election coordinator reported preparations complete on November 26. I put the chance of the nationwide vote not taking place on November 28 at about 1%; that would resolve NO. ([joradp.dz](https://www.joradp.dz/FTP/jo-francais/2026/F2026062.pdf))\n\nNEW FACTS\n- 2026-11-26 | Oran’s election coordinator said logistical and organizational preparations for Saturday’s vote were complete. | https://www.aps.dz/fr/elections-locales-2026/mwxrra9u-toutes-les-dispositions-organisationnelles-prises-pour-assurer-le-bon-deroulement-du-scrutin-a-oran\n- 2026-11-26 | Municipal list filings fell from 5,848 in 2021 to 5,631 in 2026. | https://adlenemeddi.substack.com/p/locales-du-28-novembre-la-crise-des\n- 2026-11-25 | ANIE’s president supervised the start of voting at mobile polling stations in southern provinces. | https://www.aps.dz/fr/elections-locales-2026/mwwh9pwq-arous-supervise-le-debut-du-scrutin-dans-les-bureaux-itinerants-des-wilayas-du-sud\n- 2026-10-18 | ANIE reported that the number of municipal candidates increased by 22.70% from 2021. | https://www.aps.dz/fr/algerie/actualite-nationale/mve38e1o-elections-locales-augmentation-du-nombre-de-candidats-aux-apw-et-apc-par-rapport-a-2021\n- 2026-07-06 | ANIE’s provisional results put domestic turnout in the July 2 legislative election at 21.24%. | https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger\n\nCOUNTER  \nJuly’s low legislative turnout could be a poor guide to a municipal race, where more candidates can mobilize voters through local ties. The 2021 election-night figure was already well below the two preceding municipal figures, so even a small rebound would resolve NO. ([aps.dz](https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger))",
+   "facts": [
+    {
+     "date": "2026-11-26",
+     "fact": "Oran’s election coordinator said logistical and organizational preparations for Saturday’s vote were complete.",
+     "url": "https://www.aps.dz/fr/elections-locales-2026/mwxrra9u-toutes-les-dispositions-organisationnelles-prises-pour-assurer-le-bon-deroulement-du-scrutin-a-oran"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Municipal list filings fell from 5,848 in 2021 to 5,631 in 2026.",
+     "url": "https://adlenemeddi.substack.com/p/locales-du-28-novembre-la-crise-des"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "ANIE’s president supervised the start of voting at mobile polling stations in southern provinces.",
+     "url": "https://www.aps.dz/fr/elections-locales-2026/mwwh9pwq-arous-supervise-le-debut-du-scrutin-dans-les-bureaux-itinerants-des-wilayas-du-sud"
+    },
+    {
+     "date": "2026-10-18",
+     "fact": "ANIE reported that the number of municipal candidates increased by 22.70% from 2021.",
+     "url": "https://www.aps.dz/fr/algerie/actualite-nationale/mve38e1o-elections-locales-augmentation-du-nombre-de-candidats-aux-apw-et-apc-par-rapport-a-2021"
+    },
+    {
+     "date": "2026-07-06",
+     "fact": "ANIE’s provisional results put domestic turnout in the July 2 legislative election at 21.24%.",
+     "url": "https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger"
+    }
+   ],
+   "counter": "July’s low legislative turnout could be a poor guide to a municipal race, where more candidates can mobilize voters through local ties. The 2021 election-night figure was already well below the two preceding municipal figures, so even a small rebound would resolve NO. ([aps.dz](https://www.aps.dz/fr/algerie/actualite-nationale/mr9a91hp-un-taux-de-participation-de-21-24-a-l-interieur-du-pays-et-de-10-75-a-l-etranger))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:13:11Z",
+   "p": 0.72,
+   "searches": 4,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHV4snV7jTtDGy_dxK3PO6ys3vhRDdvK0Vs145ay-xNdPN_FOv_CVJ7m31k_R5qkQ2QTD39ZmzyYiAbzdhpGWQSuOyuoUzNhUiteq2iUphl8kTwkOK1bmsx-RhqxTZuit4kydlEt9mjMvjm5gJ0jM85d97rGgxHmXwNFamO0UB5Bm2bC0861ZOA4dUFN-Dr6iegwLZLsz6Lgh49PbtwtIgst5ke5mqFh8Qq7owRU-oMB4S2YivOTlBSkdXLA8gLeoypmWOSrVmxGwGaH-6wmQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVtT0x_kqa5jvGj_jAck1kEYVKs5bQxE-0cVcO2R7WVNtRqlKcUdbIGvlsn7pi5RvwzZRdNztZE_34EiLulUftgpcH2aTCnU8q7PuIWwB53XQDDctBu4Uwx1OQxmeX6nmsqYsAFdhisMGdwXGAJmX9g_9k5Fv_8fCtxDkWYp5yBOp_",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpT9Gn74jBvkVe7a2pkyUqCcYNnfn7kggNvethdIfjs8KLcBr0eHXpop9FeyuDqc7_faobSTN7Mqq0aNklPPOiUzztvwT0jToBT8OvEkR4tH95hgUaKvVh6pQ807uPwOejWyW95p9gSRwfx4VD-pm85BPL37CnKfapgKpr0PgItja2eLqutA33yIDckms=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEb1-O8gDcvAnkseIVKbqeCAShn_22yfNFH7_0kJL2_td1UwTErgpePUDdeMYO78yFxoij452XpIs1r8sKMacLIUASAgqTWGnU1B8_prJbiBa75svEe4C6Dp0iN7OdNMuhA3sQ-jnhphJzf3Z7IITgSLOFm7_L7PNm0LijgDQJxECgUDA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9h-ZRbhBFms0_9UMVGHRlovW-kGrOlJtpalfmYP6OBqgM2Z8fJ9zm8ISkgySSpu7SpgMa23zcuygfaBBYonM3lCh7ZnWKMG9hDt_olqdwFBnNeMxS40I2JMB32cQKdGBKDcB9PTf9tr38qJB-Q6gUM8bCcYw4GUzEq0-ja3zGnFUDjb3bhRRaPImvkJhjqK16-pPl_w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLUAgU1APtoeirzE_aj-_7Eis1AwXwUD0CbPT-REvybSLDq0MK2BPeffSBIoUDLIHt7olXyyD9Q6aaGSIqw4gqVQuMwbGYdz4CIpPhxxXT88AlXKss0ecOCfhNmR1mT777RRQzjqu_6Xvdj-N1_M5vz9KtP0RR50oT8JSC-Ry1f06Zm2TYzU-eGE_90yEAh0dC7Nw9qvqgYjiEChnxyWBW7I_A0f4BHqoWK2c0JTBtI_aEXVieRi_EH5rLH2w=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHATPF0z70dl9Niej5QlN5OWeYeZ04qbUK4HILMzZhgUAWZtrataIf7DGOR3fdv6dPufesiXk1txunaQ5bDNurDkip1rZDfcReR88YLvd604mAH4KVn59qwCxrJuD75zvl8T4WeaCeA0OBHSh_3zB9TocGSdLiNkx30wBmMfcMK9GMRtkPaTbh_gP6MMm5w3FuZr53CvKRTXiK7ypDCU0vUkxssKORp1JhT3TEvh3s8pN2L",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-XgLZSO8Qil_3sS00Tav8CRRCB_NnutnDCRMb5WC0mS7wqf7keeiMzOXML9SY8VeoXKaa9YszWDKN-IVRznJ9TJERRdEvVrlbgjimnYDymHTqKIAK4BDP8KdWFfvpQLiEUnNd_22OLhx5Xw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHvtMb0NfMsYT6tGxx9JiF2TSj0kwJd7RG8Qu6d24NaGsnYYXrIzZa54_VvGrtCb_Uc8duB5D1_mO5UmZcSH4mYYJrQV7BSqYsPT6LyTCxIHjgomUIWo3HY7swp6WDiugwAr_rv7lRfa1rcEKTFBCxmPj8MZM41wB0ESzUJcggRMVuFzq8aKe-Bj5oaCpm6Oqh18JVmuW6XNuFlkV3ovRvm7196Hfd79c=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElZQnDKuWEgXd-yUrVZc7SqUVJYA8TFsbwZuMo-iYvLbVMxMd-JwJV4PuTmp-_oZyjZtcMihTK87ciukHhQXLWjwiblemRMB8z_tlXAFDAXduCXVRt0Gk9HDpeMoucD0FqbeOUytNlYXojMLlk6C02ZKNvi63PpMq5Ge7kf9mYN4mo01ZC9NSxdeJmiQkzmqChA1JEt1zvksuvH-d7SiRVoSpP0lu1iw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NTeSMQYA68IV-CBoNh_Eo-ddDAB6XoRxFq0ksaMmm2zdmYQBdwlbLmKC7S-0rK00GMb0S08RFxKD5O6zovfFUj5FdBnqzuhE2SrHCYD2lKIW0nt4beg02dO0uA4B_rf2DgCK1xStkc8Bgd_P1Zrm07rfkrig2AUUt6qN4LFasdQ883sAb2NMbFJ5Cnp4RNlWkM_ABnegoBb6w2GhPczfFmvCcn4="
+   ],
+   "reason": "Voters (moves toward YES):** On 28 October 2026, ANIE President Saâd Arous announced that after adding 646,870 new voters, the national electorate reached a historic high of 24,236,959 registered voters (up from ~23.7 million in 2021). A larger denominator requires higher absolute voter turnout just to match the 35.97% threshold.\n* **Lackluster Campaign and Opposition Discontent (moves toward YES):** Reporting on 25 November 2026 at the close of the 20-day campaign noted widespread public indifference, largely empty campaign display boards, and quiet streets. Furthermore, opposition parties (such as the PT, FFS, RCD, and Jil Jadid) protested the rejection of many of their candidates by ANIE in October, and independent lists fell to just 239 (covering barely 15.5% of communes) due to strict signature requirements.\n* **Election Schedule Confirmed and Mobile Voting Underway (eliminates non-occurrence risk, supporting YES):** Following the presidential decree of 30 August 2026 convoking voters for 28 November 2026, mobile polling stations opened on 25 and 26 November 2026 in southern provinces, confirming the election will definitely occur within its scheduled window.\n* **Increase in Total Candidates and Mandatory Party Participation (moves toward NO):** ANIE reported that 141,388 candidates are competing for 26,575 APC seats across 5,631 lists (with overall local candidates up 21.4% compared to 2021). Because an April 2026 political party law threatens dissolution for parties that boycott two consecutive elections, all major approved opposition parties are participating rather than boycotting, and the higher number of local candidates creates larger personal and family mobilization networks on election day.\n\n**3. Strongest Reason the Obvious Outcome Might Fail**\nWhile national political apathy points strongly toward turnout falling below 35.97%, municipal elections in Algeria are heavily driven by tribal, family, and neighborhood patronage networks rather than national ideology. With 21.4% more candidates on the ballot than in 2021 (over 162,800 total candidates across APC and APW) and no formal boycott by major parties (including Kabylie-based parties like the FFS and RCD, which boycotted in 2021 but were forced by the April 2026 party law to participate), localized candidate mobilization and state institutional pressure could push the election-night APC turnout figure slightly above the 35.97% mark.\n\nNEW FACTS\n- 2026-10-12 | ANIE announced that 5,631 lists with 141,388 candidates were filed for the communal assemblies (APC), including only 239 independent lists, alongside 434 lists with 21,476 candidates for the wilaya assemblies (APW). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9h-ZRbhBFms0_9UMVGHRlovW-kGrOlJtpalfmYP6OBqgM2Z8fJ9zm8ISkgySSpu7SpgMa23zcuygfaBBYonM3lCh7ZnWKMG9hDt_olqdwFBnNeMxS40I2JMB32cQKdGBKDcB9PTf9tr38qJB-Q6gUM8bCcYw4GUzEq0-ja3zGnFUDjb3bhRRaPImvkJhjqK16-pPl_w==\n- 2026-10-28 | ANIE President Saâd Arous announced that 646,870 new voters were registered during the exceptional revision of electoral lists, bringing the total national electorate for the local elections to 24,236,959 citizens. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpT9Gn74jBvkVe7a2pkyUqCcYNnfn7kggNvethdIfjs8KLcBr0eHXpop9FeyuDqc7_faobSTN7Mqq0aNklPPOiUzztvwT0jToBT8OvEkR4tH95hgUaKvVh6pQ807uPwOejWyW95p9gSRwfx4VD-pm85BPL37CnKfapgKpr0PgItja2eLqutA33yIDckms=\n- 2026-11-09 | In the Algerian parliamentary elections held earlier on 2 July 2026, voter turnout dropped to a record low of 21.2%, down from 23% in the 2021 parliamentary elections. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHV4snV7jTtDGy_dxK3PO6ys3vhRDdvK0Vs145ay-xNdPN_FOv_CVJ7m31k_R5qkQ2QTD39ZmzyYiAbzdhpGWQSuOyuoUzNhUiteq2iUphl8kTwkOK1bmsx-RhqxTZuit4kydlEt9mjMvjm5gJ0jM85d97rGgxHmXwNFamO0UB5Bm2bC0861ZOA4dUFN-Dr6iegwLZLsz6Lgh49PbtwtIgst5ke5mqFh8Qq7owRU-oMB4S2YivOTlBSkdXLA8gLeoypmWOSrVmxGwGaH-6wmQ==\n- 2026-11-25 | The 20-day electoral campaign ended at midnight on 24 November 2026 amid widespread voter indifference and quiet streets, even though all approved political parties participated in the race. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVtT0x_kqa5jvGj_jAck1kEYVKs5bQxE-0cVcO2R7WVNtRqlKcUdbIGvlsn7pi5RvwzZRdNztZE_34EiLulUftgpcH2aTCnU8q7PuIWwB53XQDDctBu4Uwx1OQxmeX6nmsqYsAFdhisMGdwXGAJmX9g_9k5Fv_8fCtxDkWYp5yBOp_\n- 2026-11-25 | ANIE figures showed that the total number of candidates across the local elections rose by 21.4% compared to 2021 to reach 162,864, while the number of communal (APC) seats to be filled increased by 6.8% from 24,891 to 26,575. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-XgLZSO8Qil_3sS00Tav8CRRCB_NnutnDCRMb5WC0mS7wqf7keeiMzOXML9SY8VeoXKaa9YszWDKN-IVRznJ9TJERRdEvVrlbgjimnYDymHTqKIAK4BDP8KdWFfvpQLiEUnNd_22OLhx5Xw==\n- 2026-11-26 | Early voting in mobile polling stations continued across remote southern provinces of Algeria 48 to 72 hours ahead of the main 28 November 2026 polling day. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLUAgU1APtoeirzE_aj-_7Eis1AwXwUD0CbPT-REvybSLDq0MK2BPeffSBIoUDLIHt7olXyyD9Q6aaGSIqw4gqVQuMwbGYdz4CIpPhxxXT88AlXKss0ecOCfhNmR1mT777RRQzjqu_6Xvdj-N1_M5vz9KtP0RR50oT8JSC-Ry1f06Zm2TYzU-eGE_90yEAh0dC7Nw9qvqgYjiEChnxyWBW7I_A0f4BHqoWK2c0JTBtI_aEXVieRi_EH5rLH2w=\n\nCOUNTER\nThe total number of candidates running in the 2026 local elections is 21.4% higher than in 2021, and every approved political party is participating after an April 2026 law penalized consecutive election boycotts with judicial dissolution. Because municipal elections rely heavily on personal, familial, and tribal networks, this expanded pool of 162,864 candidates—combined with participation in regions like Kabylie that boycotted in 2021 and strong state pressure to avoid another embarrassing abstention record—could mobilize enough voters to push announced election-night turnout above 35.97%.",
+   "facts": [
+    {
+     "date": "2026-10-12",
+     "fact": "ANIE announced that 5,631 lists with 141,388 candidates were filed for the communal assemblies (APC), including only 239 independent lists, alongside 434 lists with 21,476 candidates for the wilaya assemblies (APW).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9h-ZRbhBFms0_9UMVGHRlovW-kGrOlJtpalfmYP6OBqgM2Z8fJ9zm8ISkgySSpu7SpgMa23zcuygfaBBYonM3lCh7ZnWKMG9hDt_olqdwFBnNeMxS40I2JMB32cQKdGBKDcB9PTf9tr38qJB-Q6gUM8bCcYw4GUzEq0-ja3zGnFUDjb3bhRRaPImvkJhjqK16-pPl_w=="
+    },
+    {
+     "date": "2026-10-28",
+     "fact": "ANIE President Saâd Arous announced that 646,870 new voters were registered during the exceptional revision of electoral lists, bringing the total national electorate for the local elections to 24,236,959 citizens.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpT9Gn74jBvkVe7a2pkyUqCcYNnfn7kggNvethdIfjs8KLcBr0eHXpop9FeyuDqc7_faobSTN7Mqq0aNklPPOiUzztvwT0jToBT8OvEkR4tH95hgUaKvVh6pQ807uPwOejWyW95p9gSRwfx4VD-pm85BPL37CnKfapgKpr0PgItja2eLqutA33yIDckms="
+    },
+    {
+     "date": "2026-11-09",
+     "fact": "In the Algerian parliamentary elections held earlier on 2 July 2026, voter turnout dropped to a record low of 21.2%, down from 23% in the 2021 parliamentary elections.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHV4snV7jTtDGy_dxK3PO6ys3vhRDdvK0Vs145ay-xNdPN_FOv_CVJ7m31k_R5qkQ2QTD39ZmzyYiAbzdhpGWQSuOyuoUzNhUiteq2iUphl8kTwkOK1bmsx-RhqxTZuit4kydlEt9mjMvjm5gJ0jM85d97rGgxHmXwNFamO0UB5Bm2bC0861ZOA4dUFN-Dr6iegwLZLsz6Lgh49PbtwtIgst5ke5mqFh8Qq7owRU-oMB4S2YivOTlBSkdXLA8gLeoypmWOSrVmxGwGaH-6wmQ=="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The 20-day electoral campaign ended at midnight on 24 November 2026 amid widespread voter indifference and quiet streets, even though all approved political parties participated in the race.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVtT0x_kqa5jvGj_jAck1kEYVKs5bQxE-0cVcO2R7WVNtRqlKcUdbIGvlsn7pi5RvwzZRdNztZE_34EiLulUftgpcH2aTCnU8q7PuIWwB53XQDDctBu4Uwx1OQxmeX6nmsqYsAFdhisMGdwXGAJmX9g_9k5Fv_8fCtxDkWYp5yBOp_"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "ANIE figures showed that the total number of candidates across the local elections rose by 21.4% compared to 2021 to reach 162,864, while the number of communal (APC) seats to be filled increased by 6.8% from 24,891 to 26,575.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-XgLZSO8Qil_3sS00Tav8CRRCB_NnutnDCRMb5WC0mS7wqf7keeiMzOXML9SY8VeoXKaa9YszWDKN-IVRznJ9TJERRdEvVrlbgjimnYDymHTqKIAK4BDP8KdWFfvpQLiEUnNd_22OLhx5Xw=="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Early voting in mobile polling stations continued across remote southern provinces of Algeria 48 to 72 hours ahead of the main 28 November 2026 polling day.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLUAgU1APtoeirzE_aj-_7Eis1AwXwUD0CbPT-REvybSLDq0MK2BPeffSBIoUDLIHt7olXyyD9Q6aaGSIqw4gqVQuMwbGYdz4CIpPhxxXT88AlXKss0ecOCfhNmR1mT777RRQzjqu_6Xvdj-N1_M5vz9KtP0RR50oT8JSC-Ry1f06Zm2TYzU-eGE_90yEAh0dC7Nw9qvqgYjiEChnxyWBW7I_A0f4BHqoWK2c0JTBtI_aEXVieRi_EH5rLH2w="
+    }
+   ],
+   "counter": "The total number of candidates running in the 2026 local elections is 21.4% higher than in 2021, and every approved political party is participating after an April 2026 law penalized consecutive election boycotts with judicial dissolution. Because municipal elections rely heavily on personal, familial, and tribal networks, this expanded pool of 162,864 candidates—combined with participation in regions like Kabylie that boycotted in 2021 and strong state pressure to avoid another embarrassing abstention record—could mobilize enough voters to push announced election-night turnout above 35.97%."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:14:20Z",
+   "p": 0.64,
+   "searches": 13,
+   "sources": [
+    "https://news.radioalgerie.dz/en/node/96345",
+    "https://lasentinelle.dz/index.php/2026/11/24/locales-du-28-novembre-letat-met-2434-milliards-de-dinars-sur-la-table/",
+    "https://x.com/africaelect/status/2072806566135271672",
+    "https://www.aps.dz/fr/elections-locales-2026/mwuq3xgm-deploiement-de-11-bureaux-itinerants-vers-les-zones-enclavees-et-les-regroupements-de-nomades-a-tindouf",
+    "https://news.radioalgerie.dz/fr/node/96289",
+    "https://www.awras.com/%d8%a7%d9%84%d8%ad%d9%85%d9%84%d8%a9-%d8%a7%d9%84%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8%d9%8a%d8%a9-%d9%84%d9%85%d8%ad%d9%84%d9%8a%d8%a7%d8%aa-%d9%86%d9%88%d9%81%d9%85%d8%a8%d8%b1-%d8%aa%d8%b5%d9%84/",
+    "https://allafrica.com/stories/202112230074.html",
+    "https://www.algerie360.com/elections-locales-les-taux-de-participation-par-wilaya/",
+    "https://fr.wikipedia.org/wiki/%C3%89lections_locales_alg%C3%A9riennes_de_2026",
+    "https://algeriemaintenant.dz/2021/11/%D8%A5%D8%AD%D8%B5%D8%A7%D8%A6%D9%8A%D8%A7%D8%AA-%D8%AA%D8%AA%D8%B9%D9%84%D9%82-%D8%A8%D9%86%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A7%D9%86/",
+    "https://lavoiedalgerie.dz/elections-locales-du-28-novembre-lanie-valide-5-628-listes-pour-les-apc-et-428-listes-pour-les-apw/2026/21/00/",
+    "https://rupture-mag.fr/en/in-the-spotlight/local-elections-in-algeria-on-november-28-the-government-faces-the-specter-of-abstention/",
+    "https://maghrebemergent.news/fr/elections-locales-de-moins-en-moins-de-femmes-en-politique-en-algerie/",
+    "https://data.ipu.org/parliament/DZ/DZ-LC01/election/DZ-LC01-E20210612/",
+    "https://www.24hdz.dz/anie-participation-scrutin-local/",
+    "https://lalgerieaujourdhui.dz/taux-de-participation-des-elections-locales-3658-pour-les-apc-et-3476-pour-les-apw/",
+    "https://www.echoroukonline.com/elections-locales-taux-de-participation-par-wilaya",
+    "https://news.radioalgerie.dz/en/node/89800",
+    "https://news.radioalgerie.dz/fr/node/96266",
+    "https://cresus.dz/elections-du-28-novembre-fin-de-la-course-contre-la-montre/",
+    "http://news.radioalgerie.dz/fr/node/2677",
+    "https://lavoiedalgerie.dz/elections-locales-du-28-novembre-les-partis-accelerent-le-rythme-de-leur-campagne/2026/22/00/",
+    "https://cresus.dz/locales-du-28-novembre-une-campagne-sans-depassements/",
+    "https://algerie54.dz/elections-locales-du-28-novembre-l-anie-devoile-le-bilan-provisoire-des-dossiers-de-candidature",
+    "https://lematindalgerie.com/elections-locales-141-388-candidats-pour-les-apc-et-21-476-autres-candidats-pour-les-apw/"
+   ],
+   "reason": "Algerian local turnout has run well above legislative turnout, but both series have fallen for years. In 2017 local APC turnout was about 47% against a legislative rate near 35%; in 2021 the election-night APC figure was 35.97% against a legislative rate near 23%. That stable local premium of roughly 12–13 points, applied to the July 2026 legislative night figure, points to a local night rate in the low-to-mid 30s.\n\nThe July 2026 legislative poll closed at a preliminary domestic 20.79%, a further drop from 2021 and the lowest national rate since independence. That is the main downward shift from the 2021 local baseline. Offsetting it only partly are a larger candidate field (about 22% more APC candidates than in 2021) and a calm campaign of roughly 240,000 activities focused on everyday municipal services. Reporting on 24 November still framed abstention, not party boycotts, as the government’s concern. The ballot itself is not in doubt: the presidential decree fixed 28 November, ANIE says preparations are complete across 69 wilayas, and mobile voting in the south has already been underway since 25 November in ordinary conditions.\n\nNEW FACTS\n- 2026-07-02 | ANIE’s acting president announced a preliminary domestic turnout of 20.79% (4,962,433 voters out of 23,872,756) at the close of the 2 July 2026 legislative polls. | https://news.radioalgerie.dz/en/node/89588\n- 2026-11-24 | A correspondent reported that the government is concerned about voter abstention, rather than party boycotts, ahead of the 28 November local elections. | https://rupture-mag.fr/en/in-the-spotlight/local-elections-in-algeria-on-november-28-the-government-faces-the-specter-of-abstention/\n- 2026-11-25 | Mobile polling for nomadic and remote southern communities opened on 25 November, three days before the nationwide APC/APW vote set for 28 November. | https://africa.dailynewsegypt.com/algeria-local-elections/\n- 2026-11-26 | ANIE said logistical and security preparations are in place in all 69 provinces and that the campaign ended with no reported violation nationwide. | https://www.horizons.dz/language/en/2026/11/election-watchdog-says-all-pieces-are-in-place-ahead-of-saturdays-local-vote/\n- 2026-10-21 | ANIE figures showed APC candidacies up 22.70% from the 2021 local elections, without any claim about how many voters would turn out. | https://lavoiedalgerie.dz/elections-locales-du-28-novembre-lanie-valide-5-628-listes-pour-les-apc-et-428-listes-pour-les-apw/2026/21/00/\n- 2021-11-28 | ANIE’s president announced a national APC turnout of 35.97% at the close of polls for the 27 November 2021 local elections. | https://www.algerie360.com/anie-le-taux-final-de-participation-aux-elections-locales/\n\nCOUNTER\nLocal races are fought on water, roads, and patronage networks, not the national mood that produced the 21% legislative turnout. A denser field of lists and nearly 240,000 neighborhood activities could add enough mobilized voters to push the election-night APC figure a point or two above 35.97%, and ANIE’s first closing number has in the past sat slightly apart from the later reconciled rate.",
+   "facts": [
+    {
+     "date": "2026-07-02",
+     "fact": "ANIE’s acting president announced a preliminary domestic turnout of 20.79% (4,962,433 voters out of 23,872,756) at the close of the 2 July 2026 legislative polls.",
+     "url": "https://news.radioalgerie.dz/en/node/89588"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "A correspondent reported that the government is concerned about voter abstention, rather than party boycotts, ahead of the 28 November local elections.",
+     "url": "https://rupture-mag.fr/en/in-the-spotlight/local-elections-in-algeria-on-november-28-the-government-faces-the-specter-of-abstention/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Mobile polling for nomadic and remote southern communities opened on 25 November, three days before the nationwide APC/APW vote set for 28 November.",
+     "url": "https://africa.dailynewsegypt.com/algeria-local-elections/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "ANIE said logistical and security preparations are in place in all 69 provinces and that the campaign ended with no reported violation nationwide.",
+     "url": "https://www.horizons.dz/language/en/2026/11/election-watchdog-says-all-pieces-are-in-place-ahead-of-saturdays-local-vote/"
+    },
+    {
+     "date": "2026-10-21",
+     "fact": "ANIE figures showed APC candidacies up 22.70% from the 2021 local elections, without any claim about how many voters would turn out.",
+     "url": "https://lavoiedalgerie.dz/elections-locales-du-28-novembre-lanie-valide-5-628-listes-pour-les-apc-et-428-listes-pour-les-apw/2026/21/00/"
+    },
+    {
+     "date": "2021-11-28",
+     "fact": "ANIE’s president announced a national APC turnout of 35.97% at the close of polls for the 27 November 2021 local elections.",
+     "url": "https://www.algerie360.com/anie-le-taux-final-de-participation-aux-elections-locales/"
+    }
+   ],
+   "counter": "Local races are fought on water, roads, and patronage networks, not the national mood that produced the 21% legislative turnout. A denser field of lists and nearly 240,000 neighborhood activities could add enough mobilized voters to push the election-night APC figure a point or two above 35.97%, and ANIE’s first closing number has in the past sat slightly apart from the later reconciled rate."
+  }
+ ]
+}

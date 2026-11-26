@@ -1,0 +1,32 @@
+{
+ "claim": "Taiwan's national Referendum No. 22 on nuclear power, held with the local elections on Saturday 28 November 2026, passes.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:16:42Z",
+   "ambiguous": true,
+   "scenario": "If voting takes place within the window but the CEC first confirms a passing result after 23:59 Taipei time, one reader could resolve YES because the window applies to when the referendum is held. Another could resolve NO because the final sentence could be read to require the passing result itself within the window.",
+   "yes_requires": "National Referendum No. 22 must be held on 28 November 2026 within the stated Asia/Taipei window. The CEC count must show at least 5,000,959 valid agree votes and strictly more valid agree votes than valid disagree votes.",
+   "decided_by": "Taiwan’s Central Election Commission count and pass determination under Article 29 of the Referendum Act. If the CEC site cannot be read, Focus Taiwan/CNA reporting of the CEC result decides."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:16:45Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Taiwan's National Referendum No. 22 must be held on 28 November 2026 and the count must show both more valid 'agree' votes than 'disagree' votes and at least 5,000,959 valid 'agree' votes, resulting in the referendum being recorded as passed.",
+   "decided_by": "Taiwan's Central Election Commission (CEC), or Focus Taiwan/CNA reporting of the CEC result if the CEC website is inaccessible."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:18:54Z",
+   "ambiguous": true,
+   "scenario": "Ballots are cast on 28 Nov 2026, but by 23:59 Asia/Taipei the CEC has only a partial count (already above 5,000,959 agree and ahead of disagree) and publishes the completed count and formal 通過 record only afterward. One reader treats later CEC or CNA evidence of the 28 Nov ballots as YES; the other treats passage as outside the event window, or an unfinished count as not yet the CEC count that records passage, and resolves NO.",
+   "yes_requires": "The CEC count for National Referendum No. 22 held on 28 Nov 2026 (Asia/Taipei) shows more valid agree votes than valid disagree votes and at least 5,000,959 valid agree votes, which the criterion treats as the CEC recording it passed (通過) under Article 29. If the CEC site cannot be read, Focus Taiwan/CNA reporting of that CEC result is enough. Otherwise, or if the referendum is not held that day, ",
+   "decided_by": "The Central Election Commission's count and passage record for National Referendum No. 22; Focus Taiwan/CNA reporting of the CEC result only if the CEC site cannot be read."
+  }
+ ]
+}

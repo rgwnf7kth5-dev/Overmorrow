@@ -1,0 +1,195 @@
+{
+ "claim": "Adobe Analytics' figure, published on Saturday 28 November 2026, puts US online spending on Black Friday (27 November 2026) above $12.9bn, the figure Adobe forecast.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:14:44Z",
+   "p": 0.64,
+   "searches": 4,
+   "sources": [
+    "https://news.adobe.com/news/news-details/2023/adobe-forecasts-221-8-billion-u-s-holiday-season-online-cyber-monday-to-top-12-billion",
+    "https://apnews.com/article/black-friday-shopping-ai-essentials-5e542ffd1f94f24e4ffb79d412223544",
+    "https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/",
+    "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record",
+    "https://news.adobe.com/news/downloads/pdfs/2024/09/092524-adi-holiday-forecast.pdf",
+    "https://news.adobe.com/news/downloads/pdfs/2025/1/adi-pr-full-season-recap-jan-7.pdf",
+    "https://news.adobe.com/news/downloads/pdfs/2024/12/120324-adi-cyber-monday-recap.pdf",
+    "https://news.adobe.com/news/2025/1/newsroom-article-text-marquee",
+    "https://news.adobe.com/news/2024/12/120324-adi-cyber-monday-recap",
+    "https://news.adobe.com/news/downloads/pdfs/2025/10/100625-adobe-holiday-forecast-2025.pdf",
+    "https://news.adobe.com/news/2024/09/092524-adi-holiday-forecast",
+    "https://news.adobe.com/news/2025/10/adobe-us-holiday-shopping-season-cross-250-billion-online-rising-yoy",
+    "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://news.adobe.com/news/2026/01/adobe-holiday-shopping-season",
+    "https://news.adobe.com/assets/downloads/pdfs/2023/11/112823adobecyberweekrecap.pdf",
+    "https://news.adobe.com/assets/downloads/pdfs/2023/10/10523adobedpi.pdf",
+    "https://news.adobe.com/news/news-details/2023/media-alert-adobe-cyber-monday-surges-to-12-4-billion-in-online-spending-breaking-e-commerce-record",
+    "https://news.adobe.com/news/news-details/2024/media-alert-adobe-holiday-shopping-season-drove-a-record-222-1-billion-online",
+    "https://news.adobe.com/news/news-details/2022/adobe-cyber-monday-drove-11-3-billion-in-online-spending-breaking-e-commerce-record",
+    "https://news.adobe.com/en/gb/?show=content%252525253brel_id%3D215",
+    "https://apnews.com/article/5e542ffd1f94f24e4ffb79d412223544",
+    "https://www.kiplinger.com/investing/stocks/is-the-stock-market-open-on-thanksgiving",
+    "https://www.techradar.com/pro/security/scammers-are-already-setting-up-black-friday-scam-sites-heres-what-to-look-out-for",
+    "https://apnews.com/article/6c207f517113ab0e65c60ac3ee66440e",
+    "https://www.techradar.com/pro/black-friday-2026-could-be-the-biggest-shopping-week-ever-seen-with-ai-agents-playing-a-bigger-role-than-ever"
+   ],
+   "reason": "**Base rate:** Adobe’s reported Black Friday total beat its preseason forecast in two of the last three years and tied it once: $9.8bn versus $9.6bn in 2023, $10.8bn versus $10.8bn in 2024, and $11.8bn versus $11.7bn in 2025. That’s a 2-of-3 base rate for a strict beat, but the sample is small and the margins were narrow. ([news.adobe.com](https://news.adobe.com/news/news-details/2023/adobe-forecasts-221-8-billion-u-s-holiday-season-online-cyber-monday-to-top-12-billion))\n\n**What moves this year:** Up: Adobe measured $82.5bn in U.S. online spending for November 1–22, up 9.1% year over year and ahead of its expectations for that stretch. Down: Some retailers started discounting before Halloween, so part of that strength may reflect purchases pulled forward rather than extra demand on November 27. And 9.1% growth is close to, but not above, the 9.2% growth Adobe attached to its Black Friday forecast. ([apnews.com](https://apnews.com/article/black-friday-shopping-ai-essentials-5e542ffd1f94f24e4ffb79d412223544))\n\n**Deadline and threshold:** I put the chance of no qualifying full-day figure by 23:00 ET on November 28 at about 1%. Last year’s Adobe figure was public by 16:39 ET the following Saturday. Whether a missing release is treated as Pending or NO under the two instructions, it cannot resolve YES. The larger risk is that Adobe reports exactly $12.9bn, which counts as NO even if the underlying unrounded figure was slightly higher. ([techcrunch.com](https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/))\n\n**NEW FACTS**\n- 2026-11-25 | Adobe Analytics measured $82.5bn in U.S. online spending from November 1 through 22, up 9.1% year over year. | https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/amp/\n- 2026-11-25 | The Associated Press reported that some retailers started offering holiday discounts before Halloween. | https://finance.yahoo.com/markets/articles/necessities-join-gifts-black-friday-015514176.html\n- 2025-11-29 | By 16:39 ET on the Saturday after Black Friday, TechCrunch had reported Adobe’s $11.8bn full-day figure. | https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/\n\n**COUNTER**  \nStrong early-November sales may mean shoppers bought sooner, not that they’ll spend more on Black Friday itself. Even if Friday keeps pace with that strong early growth, Adobe could still state the result as $12.9bn, which is a NO.\n\n**",
+   "facts": [
+    {
+     "date": "2026-11-25",
+     "fact": "Adobe Analytics measured $82.5bn in U.S. online spending from November 1 through 22, up 9.1% year over year.",
+     "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/amp/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The Associated Press reported that some retailers started offering holiday discounts before Halloween.",
+     "url": "https://finance.yahoo.com/markets/articles/necessities-join-gifts-black-friday-015514176.html"
+    },
+    {
+     "date": "2025-11-29",
+     "fact": "By 16:39 ET on the Saturday after Black Friday, TechCrunch had reported Adobe’s $11.8bn full-day figure.",
+     "url": "https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/"
+    }
+   ],
+   "counter": "Strong early-November sales may mean shoppers bought sooner, not that they’ll spend more on Black Friday itself. Even if Friday keeps pace with that strong early growth, Adobe could still state the result as $12.9bn, which is a NO.\n\n**"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:15:25Z",
+   "p": 0.52,
+   "searches": 13,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvxqWEzv4vLRgT8MzjEfpKkVffoKJ2EvtuqnHBCRCXPA21b8WC_GnnhwnOBuFfKioBbevLjjZ5h9_xfS96UwPWV85QtYeY8TbDUGcMJgNxhHrHFNK1WbhAHQpDfV_YR6irw0KMSYcp-eu6AIfnWC5GxUM3jl4EAQ6fuSBVFJOP6P2IKHbUUYhS",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi0sQxokpnqkssL5auyrdH4TGGJk8c7ZkHW3iaYi1w5yfOJ5uKLwpXilm2l8tRnbvd35Nrz5d1bmJ_oJlr43t2OjlU3JJcaecC1cYJ163NiG5ZAFFqHP2a_j-GP1W3XEBoVTpr5bwT23KpqTl63NszoogQoh3nN9r_aF1hkNWC9ZCLFNKF0gaHGjBSHTLzE6P2nbEmRR6Xlgfe5304ag==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNLCL9Xjl8y345T5eMV8VkNqU9X2UMaTm6Nlrq23WRYWPdf0CRb0LFck_3rMvo680zAQGgxM8nj13weRZruMOgUTuoqs4oGAJSU6K0_MaPgmWgEDZfvx4Cg5c6bjVzVyof9CSQh_2rGRHJJuW7BISLazptHphCxF_o0Nk35ZC4n5FmhfTQV1NbwQ8f5ScahBaPfbY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxtVeltjBeInWbQ9SdJ8nCM4irB3w_AqQERVJJeOSRacoVvyzGeP9CmF-lfqqx2KrO-jRQ93LrjVq_TsFa2JjALzIsP4iO2dOOFoiDSDNNdnuPes_DvKXmuZFBZSUApmFFABVeNgDgZHNRuJo=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEI6vzTJQdl5NO6da16c8lPV56uyj-dcMehCwn6XQFG-xkhlr4goUc0pphNkvRJbSVZ6qkeINgr2fk47TvPiyA6FN_mUt8p4gfoHtdnW1krAdIQMH_-dxPmC6rHdRLXTxVJO8ERpkig4iDfI0Uc6VA1BSjCFBA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfwiOkssm657tCzEER_tvOtiAmpGWJYEuJN5FfehEQ3RFDMRMOBcxjFuL3okFZNQdPukQkvaUQ1oJGpsQ3IwEAf7Y6g3CNDlC_ZOSyT4n5lzydVto1nePsdXaI-gF-INIQvxpCWkacOxWO7vcoP3wQhscmOoe1fw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZOAe5oYIgMitBSRAaRAdtZ_y8xEFO9p5od1Fzpoezp9Mg5o7K3O03xUE1-rFgpbCJGcfJoXzlwws8_USKllVkjw50s7vhOvAOGfHag8SlsCerog9hk-cyPyAwH4gPud1LmapCFalT9lyCyDWI_rCvnV33DTjlRykPxkDQW0ao4OLmCaHQzjvIvx_pQ7A0DswwAJEN4duU8Ks=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFB5vPjAH8BIlf-xzLBuIAy2P_XBaNPQCGKTol3KmWn2lVTauY6lKOgIP_PNpg-kiTc-HF3MpKwOOiYZPDsO6XHock7aUL9kY6kGtrgRaMISu_vpL3l-twFKbSvgqkvakVqZUUKSaGsmv0iEGG7Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR6ds7J96odpqBF0ytkqrwHM2qRaPS20zvV7CBRPWm3VBoGKssDSi_sff9dP7mvqvV9tT_xGxRYqX05Nhs_TKDKTYa3tUwV41hvRSMidE9bgJmmX0-MkXXauXeVud0EXHw-ihdV_MCS4DTjdilW8FeLvLYMZicH3zW-v0FtUmpLzOyHdEcpKc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2pZaeZzh3rQVXma5jqlHdAQGcPh-_xs4UXqmSMTZ5eaVySlxlM7xnZLBoO2aeKClpVCv85j4lnF57vTT7qVW-NpjUAVBuYhh0Q-pktFkHjuI_wURsG-c9fzlF2W0crXpIPPtdF1iR3yZoGRkLqzxVdJT2fNzGV1Z2hJxw7ahMkr7GGerxw11NNBwZX3uGfUgdg9O4Ai9Y_Iy0__2SoCFr0-TOFKXPXjPyLe245qTgGByeNtDmrK4L",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjqUYd4NbUch-EDPBld7uGpXZfDWxGZXEMBGzYGLAZwHsOIZH8CPI99kHRwDNvhpcyCA0xWdgSIfrnqY-agYr8XskECMkp7YoBTM0mmcHdoMPz8_CBdefNl_yiGqNlhprFmPhGizCMOxwgYBmYZgkGEKh8XtufcKN075ZC0wwsMe0Y",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQER9WfwWIO5Ir_8YzcrsaLHwyqtWcS9X2vIeXU06skeedSYCwmnr53RV-gNXb_ceGm26jBE8JFiu8buGCKh_CvighYEe-pSoqjkI8_a0ugNOUMRKkrJsJdjl7u-bfnIuizIQZhEC__Q",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7xwO3D7P2s2Z0TWbS2uQ2qxXgj-KRyPmp-988Y4gNVyCT20dE10X9TDqauuqZuAGcstMtc4GCOgYSC8MwvLtoXg0jnjyfhvs6tpm8WJi6qixxNnYIa4k575bb76_14oHlCBrfh_z3FwRBZv0fiZxQ8RbIIasJFnYUOhs4sFHcAtKv56S45bM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnpooE_liMhMLNXRUzWmm_02v0SsPZl7rQfhkoD5dxWioEPpNMGCmQpCD7F_PhB6FYlo0Z6SaRvkEuy287F_ERbtPm2czc1814rf3a94vgqCw0viXQK4hmuRaAlyPdQ-WxXx38FV5JYp2vnYG82-xkgJw9LMG1erz1K1AsDuT3jcHGHRVpgQQ=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv6QW27nY933cuyVAzPyO8B0k2PqprmSWctp-FaCTQ52t2dgDJuk8rzpf8bRpjMezx27Zl7WjBhGsZf5m3ycZF-G06pQ0QbL1E691lG-1HWjmKnqH3AZewEp8byU1taQQfkOPtkRCCR1vMjyj_nlA1PDkIE3sHn-Y1mNzERAqNYjGPgqHU4jGPpQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvtjF-PQVD2707ZJNxlt3jDwXf0tuMYqumi0d7fH0dBefiAsP-FRvq_cPCTVSNc20BIojtUvaDavUhK8hseuaphPXHyh1d9AaHmjLkq0GUh8zVkkhzfJGwx2ngv9fgnzuQIg8qFJg4GU7RGBce-EaDqs3WLqUCxDFO-JnBqd2mMef5V6xoHhQRtu9N9Gbuzb3-fUcfMQSN",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDK-TkV3GlITIZQJrBzDzjAo8Gg_MTJAmHuvR6yPPNQIGXLRWyAwpCDyzGcv-mV2gPvlIqHxmc19QiDh-huZk8oN_uHousHFocAQ-7B3WQiL6goe_MzuEXOAqi2SY3uQdvGA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_vAY6iT1Mfx7KhgimUhQhM2IdnAqpuGJGkc5zGiQRa542AHO733Hq24lC0Y5w1CVBz1pPhTz-5NO7dsajKFNXm3L6asA9Vgyjv-j2wkXbCk-koun-lgbf17jWlF6ty__KyxmCT--eDCo64MwwDPLxLuEluF8cWg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0qezWaM-A3eYc1tCdzZ-c1Xe0-Y5wUmeG4oVlmRWAH2MY7wdumuUoWI94YgZ3dYr5MaHD-x59lntesRGmzhlUNUTibVMRynL3Az4TmbC6Oi4TFDA1zbvnYPI9PFQWdF7PxnHuzSabUKLpypbxlmP4GVS86jLYeaYbdnA-OnB_SrNAATWTHp_bYrwntvQugVuv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOytvlfBUYxmjoFGUMPl_c8MowPU8HpRtQQWiiTa84nUxthxknk5vbo0WHoQYepZaM0b_EC_DdLt5OeTcsO7CWzYC17LKaL3hB_mowYsciFB9YUkNKeRooUYBU5zR39MfjO05pwRZCCkYKD5LHOHE6cXsC5wM5AYKntc4cXS5lx0C7ITE52COvYS6B8CHnQ16YeAINwcWV0KzkNuyWPBqOGH9viz96Kzpaet1H",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYi5-IHDwtFC2ichZmt1XaS7VokYgowRIi_h_FajYr6diYPYzUfpO6AtKrSYTMBCXqq9wXpQcoBwkF2-7QUoqxSlok752VT-wiKVvbV0sPhPKGopnJpaA1CMWG8NBjnT9kT20wBOnjlvGt_QxbcGjHip0Oc2PYtTbQ655BL_ApaRwMYHR0kjD3npW6N9ZkCP7ysK9In-Yo5FOsAiayPA5LOarKNqQ1kNx9Xw4n"
+   ],
+   "reason": " Thanksgiving-weekend shoppers are expected, down slightly from 186.9 million planned shoppers a year ago, as 60% of consumers started holiday shopping by early November.\n* **Macroeconomic Headwinds and Shifting Carts (Downward):** Reporting from November 20–26, 2026 notes that overall US retail sales slowed to +0.2% month-over-month in October, and high inflation plus cost concerns related to the US war with Iran are leading shoppers to use Black Friday discounts to stock up on lower-ticket household essentials (like toiletries and pet supplies) alongside traditional high-ticket gifts.\n\n### 3. Why the Favored Outcome Might Fail\nWhile strong early-November online spending (+9.1% YoY) makes beating or matching the forecast very likely, the specific criterion requires the reported figure to be **strictly above $12.9 billion** (e.g., $12.95 billion or $13.0 billion). Because Adobe typically reports numbers above $10 billion rounded to one decimal place (such as $10.8 billion in 2024 and $11.8 billion in 2025), any underlying spending total between roughly $12.85 billion (+8.9% YoY) and $12.94 billion (+9.7% YoY) will be published as \"$12.9 billion\"—which resolves the claim as **NO** (just as happened in 2024 when Adobe forecast $10.8 billion and reported $10.8 billion). To report $13.0 billion (or an unrounded beat like $12.95B+), Black Friday online sales likely need to grow by roughly 9.8% to 10.2% YoY. Given that Nov. 1–22 growth was 9.1% and month-long discounting has pulled demand forward into early November, there is a substantial chance that growth lands right in the ~8.8%–9.6% range, resulting in an exact $12.9 billion print or a slight miss. (The chance that Adobe fails to publish the figure on Saturday, November 28 by 23:00 ET is negligible, <1%). Balancing the strong season-to-date momentum against the strict >$12.9B threshold and rounding hurdle yields a probability of 0.52.\n\nNEW FACTS\n- 2026-09-28 | Adobe Analytics forecast that U.S. online spending on Black Friday (November 27, 2026) will reach $12.9 billion, up 9.2% year-over-year, as part of a $275.1 billion holiday season (+6.7% YoY). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvxqWEzv4vLRgT8MzjEfpKkVffoKJ2EvtuqnHBCRCXPA21b8WC_GnnhwnOBuFfKioBbevLjjZ5h9_xfS96UwPWV85QtYeY8TbDUGcMJgNxhHrHFNK1WbhAHQpDfV_YR6irw0KMSYcp-eu6AIfnWC5GxUM3jl4EAQ6fuSBVFJOP6P2IKHbUUYhS\n- 2026-10-05 | In 2025, U.S. shoppers spent $11.8 billion online on Black Friday (up 9.1% YoY against a pre-season forecast of $11.7 billion) and $14.25 billion on Cyber Monday, according to Adobe Analytics. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxtVeltjBeInWbQ9SdJ8nCM4irB3w_AqQERVJJeOSRacoVvyzGeP9CmF-lfqqx2KrO-jRQ93LrjVq_TsFa2JjALzIsP4iO2dOOFoiDSDNNdnuPes_DvKXmuZFBZSUApmFFABVeNgDgZHNRuJo=\n- 2026-11-20 | Overall U.S. retail sales growth slowed to 0.2% month-over-month in October 2026 following a 0.8% gain in September. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOytvlfBUYxmjoFGUMPl_c8MowPU8HpRtQQWiiTa84nUxthxknk5vbo0WHoQYepZaM0b_EC_DdLt5OeTcsO7CWzYC17LKaL3hB_mowYsciFB9YUkNKeRooUYBU5zR39MfjO05pwRZCCkYKD5LHOHE6cXsC5wM5AYKntc4cXS5lx0C7ITE52COvYS6B8CHnQ16YeAINwcWV0KzkNuyWPBqOGH9viz96Kzpaet1H\n- 2026-11-25 | Adobe Analytics reported that U.S. consumers spent $82.5 billion online from November 1 through November 22, 2026, a 9.1% increase over the same 22-day period in 2025, with two days exceeding $4 billion for the first time before Thanksgiving. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnpooE_liMhMLNXRUzWmm_02v0SsPZl7rQfhkoD5dxWioEPpNMGCmQpCD7F_PhB6FYlo0Z6SaRvkEuy287F_ERbtPm2czc1814rf3a94vgqCw0viXQK4hmuRaAlyPdQ-WxXx38FV5JYp2vnYG82-xkgJw9LMG1erz1K1AsDuT3jcHGHRVpgQQ=\n- 2026-11-25 | During the first 22 days of November 2026, Adobe recorded that AI-referred traffic to U.S. retail sites rose 127% year-over-year and mobile shopping spend rose 12.5% year-over-year to $43.8 billion. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7xwO3D7P2s2Z0TWbS2uQ2qxXgj-KRyPmp-988Y4gNVyCT20dE10X9TDqauuqZuAGcstMtc4GCOgYSC8MwvLtoXg0jnjyfhvs6tpm8WJi6qixxNnYIa4k575bb76_14oHlCBrfh_z3FwRBZv0fiZxQ8RbIIasJFnYUOhs4sFHcAtKv56S45bM=\n- 2026-11-26 | The National Retail Federation and Prosper Insights & Analytics survey found 182.7 million U.S. adults plan to shop over Thanksgiving weekend 2026, down from 186.9 million who planned to do so in 2025. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv6QW27nY933cuyVAzPyO8B0k2PqprmSWctp-FaCTQ52t2dgDJuk8rzpf8bRpjMezx27Zl7WjBhGsZf5m3ycZF-G06pQ0QbL1E691lG-1HWjmKnqH3AZewEp8byU1taQQfkOPtkRCCR1vMjyj_nlA1PDkIE3sHn-Y1mNzERAqNYjGPgqHU4jGPpQ==\n- 2026-11-26 | Adobe Digital Insights director Vivek Pandya stated that amid high inflation and cost concerns from the U.S. war with Iran, Black Friday shoppers are increasingly using holiday promotions to stock up on lower-cost household essentials alongside gifts. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYi5-IHDwtFC2ichZmt1XaS7VokYgowRIi_h_FajYr6diYPYzUfpO6AtKrSYTMBCXqq9wXpQcoBwkF2-7QUoqxSlok752VT-wiKVvbV0sPhPKGopnJpaA1CMWG8NBjnT9kT20wBOnjlvGt_QxbcGjHip0Oc2PYtTbQ655BL_ApaRwMYHR0kjD3npW6N9ZkCP7ysK9In-Yo5FOsAiayPA5LOarKNqQ1kNx9Xw4n\n\nCOUNTER\nBecause Adobe typically rounds its Black Friday headline figure to one decimal place, the claim will resolve NO even if actual spending slightly exceeds the forecast point estimate unless it reaches at least $12.95 billion (nearly 9.8% YoY growth) to round up to $13.0 billion, exactly as occurred in 2024 when both the forecast and the reported actual landed at $10.8 billion. Furthermore, the record $82.5 billion spent in the first 22 days of November (+9.1% YoY) reflects aggressive month-long promotions that may have pulled Black Friday demand forward into early November, while cost pressures and trading down to essentials could cap single-day Black Friday growth at or slightly below the lofty 9.2% forecast.",
+   "facts": [
+    {
+     "date": "2026-09-28",
+     "fact": "Adobe Analytics forecast that U.S. online spending on Black Friday (November 27, 2026) will reach $12.9 billion, up 9.2% year-over-year, as part of a $275.1 billion holiday season (+6.7% YoY).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvxqWEzv4vLRgT8MzjEfpKkVffoKJ2EvtuqnHBCRCXPA21b8WC_GnnhwnOBuFfKioBbevLjjZ5h9_xfS96UwPWV85QtYeY8TbDUGcMJgNxhHrHFNK1WbhAHQpDfV_YR6irw0KMSYcp-eu6AIfnWC5GxUM3jl4EAQ6fuSBVFJOP6P2IKHbUUYhS"
+    },
+    {
+     "date": "2026-10-05",
+     "fact": "In 2025, U.S. shoppers spent $11.8 billion online on Black Friday (up 9.1% YoY against a pre-season forecast of $11.7 billion) and $14.25 billion on Cyber Monday, according to Adobe Analytics.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxtVeltjBeInWbQ9SdJ8nCM4irB3w_AqQERVJJeOSRacoVvyzGeP9CmF-lfqqx2KrO-jRQ93LrjVq_TsFa2JjALzIsP4iO2dOOFoiDSDNNdnuPes_DvKXmuZFBZSUApmFFABVeNgDgZHNRuJo="
+    },
+    {
+     "date": "2026-11-20",
+     "fact": "Overall U.S. retail sales growth slowed to 0.2% month-over-month in October 2026 following a 0.8% gain in September.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOytvlfBUYxmjoFGUMPl_c8MowPU8HpRtQQWiiTa84nUxthxknk5vbo0WHoQYepZaM0b_EC_DdLt5OeTcsO7CWzYC17LKaL3hB_mowYsciFB9YUkNKeRooUYBU5zR39MfjO05pwRZCCkYKD5LHOHE6cXsC5wM5AYKntc4cXS5lx0C7ITE52COvYS6B8CHnQ16YeAINwcWV0KzkNuyWPBqOGH9viz96Kzpaet1H"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Adobe Analytics reported that U.S. consumers spent $82.5 billion online from November 1 through November 22, 2026, a 9.1% increase over the same 22-day period in 2025, with two days exceeding $4 billion for the first time before Thanksgiving.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnpooE_liMhMLNXRUzWmm_02v0SsPZl7rQfhkoD5dxWioEPpNMGCmQpCD7F_PhB6FYlo0Z6SaRvkEuy287F_ERbtPm2czc1814rf3a94vgqCw0viXQK4hmuRaAlyPdQ-WxXx38FV5JYp2vnYG82-xkgJw9LMG1erz1K1AsDuT3jcHGHRVpgQQ="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "During the first 22 days of November 2026, Adobe recorded that AI-referred traffic to U.S. retail sites rose 127% year-over-year and mobile shopping spend rose 12.5% year-over-year to $43.8 billion.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7xwO3D7P2s2Z0TWbS2uQ2qxXgj-KRyPmp-988Y4gNVyCT20dE10X9TDqauuqZuAGcstMtc4GCOgYSC8MwvLtoXg0jnjyfhvs6tpm8WJi6qixxNnYIa4k575bb76_14oHlCBrfh_z3FwRBZv0fiZxQ8RbIIasJFnYUOhs4sFHcAtKv56S45bM="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "The National Retail Federation and Prosper Insights & Analytics survey found 182.7 million U.S. adults plan to shop over Thanksgiving weekend 2026, down from 186.9 million who planned to do so in 2025.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv6QW27nY933cuyVAzPyO8B0k2PqprmSWctp-FaCTQ52t2dgDJuk8rzpf8bRpjMezx27Zl7WjBhGsZf5m3ycZF-G06pQ0QbL1E691lG-1HWjmKnqH3AZewEp8byU1taQQfkOPtkRCCR1vMjyj_nlA1PDkIE3sHn-Y1mNzERAqNYjGPgqHU4jGPpQ=="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Adobe Digital Insights director Vivek Pandya stated that amid high inflation and cost concerns from the U.S. war with Iran, Black Friday shoppers are increasingly using holiday promotions to stock up on lower-cost household essentials alongside gifts.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYi5-IHDwtFC2ichZmt1XaS7VokYgowRIi_h_FajYr6diYPYzUfpO6AtKrSYTMBCXqq9wXpQcoBwkF2-7QUoqxSlok752VT-wiKVvbV0sPhPKGopnJpaA1CMWG8NBjnT9kT20wBOnjlvGt_QxbcGjHip0Oc2PYtTbQ655BL_ApaRwMYHR0kjD3npW6N9ZkCP7ysK9In-Yo5FOsAiayPA5LOarKNqQ1kNx9Xw4n"
+    }
+   ],
+   "counter": "Because Adobe typically rounds its Black Friday headline figure to one decimal place, the claim will resolve NO even if actual spending slightly exceeds the forecast point estimate unless it reaches at least $12.95 billion (nearly 9.8% YoY growth) to round up to $13.0 billion, exactly as occurred in 2024 when both the forecast and the reported actual landed at $10.8 billion. Furthermore, the record $82.5 billion spent in the first 22 days of November (+9.1% YoY) reflects aggressive month-long promotions that may have pulled Black Friday demand forward into early November, while cost pressures and trading down to essentials could cap single-day Black Friday growth at or slightly below the lofty 9.2% forecast."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:16:37Z",
+   "p": 0.6,
+   "searches": 12,
+   "sources": [
+    "https://blog.adobe.com/en/publish/2021/10/20/adobe-forecasts-record-billion-holiday-season-online-us-billion-globally",
+    "https://sgbonline.com/adobe-black-friday-sees-record-online-spending-in-u-s/",
+    "https://business.adobe.com/blog/2024-holiday-season-set-new-records-for-ecommerce",
+    "https://axis-intelligence.com/black-friday-statistics/",
+    "https://news.adobe.com/news/2025/1/adi-pr-full-season-recap.html",
+    "https://techcrunch.com/2024/11/30/black-friday-hits-a-record-74-4b-in-sales-online-up-5-on-last-year/",
+    "https://www.forbes.com/sites/joanverdon/2026/09/28/online-holiday-spending-forecast-to-hit-record-275-billion-up-67/",
+    "https://www.thestreet.com/retail/black-friday-cyber-monday-sales-by-year",
+    "https://news.adobe.com/news/downloads/pdfs/2025/12/120225-adobe-cyber-monday-recap.pdf",
+    "https://www.thestreet.com/retail/shoppers-expected-to-spend-up-to-9-6-million-this-black-friday",
+    "https://wwd.com/business-news/retail/holiday-shopping-starts-strong-sales-data-from-software-giants-vary-widely-1236741017/",
+    "https://news.adobe.com/news/2024/09/092524-adi-holiday-forecast.html",
+    "https://ecommerceparadise.com/adobe-online-holiday-spend-ai-traffic/",
+    "https://news.adobe.com/news/2024/12/120324-adi-cyber-monday-recap.html",
+    "https://arktis.so/learning-hub/black-friday-statistics",
+    "https://retail-merchandiser.com/news/10-things-to-know-about-adobes-275-1-billion-holiday-forecast/",
+    "https://www.reuters.com/business/retail-consumer/us-consumers-spent-118-billion-black-friday-says-adobe-analytics-2025-11-29/",
+    "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
+    "https://www.forbes.com/sites/joanverdon/2024/09/25/adobe-expects-record-online-holiday-sales-of-2408-billion-up-8/",
+    "https://www.businessinsider.com/black-friday-online-spending-breaks-records-sales-8-6-billion-2025-11?op=1",
+    "https://news.adobe.com/news/2025/10/adobe-us-holiday-shopping-season-cross-250-billion-online-rising-yoy.html",
+    "https://news.adobe.com/news/2026/01/adobe-holiday-shopping-season.html",
+    "https://www.morganstanley.com/insights/articles/us-consumer-holiday-spending-inflation-2026",
+    "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html",
+    "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record.html"
+   ],
+   "reason": "Adobe’s recent Black Friday dollar forecasts have usually been met or slightly exceeded. In 2023 the actual was $9.8 billion against a $9.6 billion forecast; in 2025 it was $11.8 billion against $11.7 billion; 2022 growth also beat the preseason call. The clear exception was 2024, when the figure landed exactly on the $10.8 billion forecast. That puts the base rate of a stated result above the forecast near 70 percent, with misses typically only 0–0.2 billion and publication of the full-day number the next morning essentially certain.\n\nEarly-season 2026 tracking sits almost exactly on the Black Friday growth rate Adobe embedded in the $12.9 billion call (Nov. 1–22 spending up 9.1 percent versus the 9.2 percent Black Friday forecast), so it does not point to a large upside surprise and pulls the case back toward the forecast. A 23 November Deloitte survey showing planned promotional-week spending flat year-over-year also leans against a clear beat. Adobe’s own October Prime event came in a touch under its forecast, another modest negative. These offset part of the historical upside bias without reversing it.\n\nThe result can still print at $12.9 billion or lower if early-November strength has already pulled demand forward, if week-of intentions stay flat, or if normal one-decimal rounding leaves a tiny beat stated as 12.9. Non-publication by 23:00 ET on 28 November is remote.\n\nNEW FACTS\n- 2026-09-28 | Adobe’s holiday forecast set U.S. Black Friday online spending at $12.9 billion, up 9.2 percent. | https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record.html\n- 2026-11-25 | Adobe reported $82.5 billion in U.S. online spending from Nov. 1–22, up 9.1 percent year over year. | https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/\n- 2026-11-23 | Deloitte’s survey found consumers expect to spend $624 on average in the promotional week, flat year over year. | https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html\n- 2025-11-29 | Adobe’s full-day Black Friday 2025 figure was $11.8 billion, above its $11.7 billion forecast. | https://www.reuters.com/business/retail-consumer/us-consumers-spent-118-billion-black-friday-says-adobe-analytics-2025-11-29/\n- 2023-11-25 | Adobe reported Black Friday 2023 online spending of $9.8 billion, above its $9.6 billion estimate. | https://sgbonline.com/adobe-black-friday-sees-record-online-spending-in-u-s/\n- 2024-12-03 | Adobe’s Black Friday 2024 figure was $10.8 billion, matching its forecast dollar amount. | https://news.adobe.com/news/2024/12/120324-adi-cyber-monday-recap.html\n\nCOUNTER\nEarly-November growth is already running at essentially the same rate Adobe built into the $12.9 billion Black Friday forecast, and a late-November Deloitte survey shows planned spending for the promotional week flat versus last year. Combined with a slight undershoot on Adobe’s own October Prime forecast, that leaves room for the Saturday figure to be stated at $12.9 billion or lower after ordinary rounding, even if underlying demand is resilient.",
+   "facts": [
+    {
+     "date": "2026-09-28",
+     "fact": "Adobe’s holiday forecast set U.S. Black Friday online spending at $12.9 billion, up 9.2 percent.",
+     "url": "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record.html"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Adobe reported $82.5 billion in U.S. online spending from Nov. 1–22, up 9.1 percent year over year.",
+     "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "Deloitte’s survey found consumers expect to spend $624 on average in the promotional week, flat year over year.",
+     "url": "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html"
+    },
+    {
+     "date": "2025-11-29",
+     "fact": "Adobe’s full-day Black Friday 2025 figure was $11.8 billion, above its $11.7 billion forecast.",
+     "url": "https://www.reuters.com/business/retail-consumer/us-consumers-spent-118-billion-black-friday-says-adobe-analytics-2025-11-29/"
+    },
+    {
+     "date": "2023-11-25",
+     "fact": "Adobe reported Black Friday 2023 online spending of $9.8 billion, above its $9.6 billion estimate.",
+     "url": "https://sgbonline.com/adobe-black-friday-sees-record-online-spending-in-u-s/"
+    },
+    {
+     "date": "2024-12-03",
+     "fact": "Adobe’s Black Friday 2024 figure was $10.8 billion, matching its forecast dollar amount.",
+     "url": "https://news.adobe.com/news/2024/12/120324-adi-cyber-monday-recap.html"
+    }
+   ],
+   "counter": "Early-November growth is already running at essentially the same rate Adobe built into the $12.9 billion Black Friday forecast, and a late-November Deloitte survey shows planned spending for the promotional week flat versus last year. Combined with a slight undershoot on Adobe’s own October Prime forecast, that leaves room for the Saturday figure to be stated at $12.9 billion or lower after ordinary rounding, even if underlying demand is resilient."
+  }
+ ]
+}

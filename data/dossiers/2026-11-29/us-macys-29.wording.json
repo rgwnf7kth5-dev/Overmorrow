@@ -1,0 +1,32 @@
+{
+ "claim": "The giant character balloons fly in the 100th Macy's Thanksgiving Day Parade, held in New York on Saturday 28 November 2026 after its postponement from Thursday.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:18:07Z",
+   "ambiguous": true,
+   "scenario": "If the giant balloons fly at the start but NYPD or Macy’s orders all of them grounded and removed partway through, one reader could resolve YES because they flew in the parade, while another could resolve NO because they were grounded as a group. The criterion does not say which condition takes precedence.",
+   "yes_requires": "The 100th Macy’s Thanksgiving Day Parade must step off in Manhattan on Saturday, November 28, 2026, and its giant character balloons must fly in the parade within the 06:00–23:59 America/New_York window, without NYPD or Macy’s grounding them as a group. Individual withdrawals or lower flight heights do not count against YES.",
+   "decided_by": "Whether the parade takes place as specified and whether NYPD or Macy’s grounds the giant balloons as a group, as reported by Macy’s, NBC, the NYPD, AP, Reuters, or The New York Times."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:18:14Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The 100th Macy's Thanksgiving Day Parade must step off in Manhattan on Saturday, November 28, 2026 (between 06:00 and 23:59 EST), and the giant character balloons must fly in it without being grounded as a group by NYPD or Macy's.",
+   "decided_by": "Reports by Macy's, NBC, the NYPD, or AP/Reuters/New York Times regarding the NYPD/Macy's decision to fly or ground the giant balloons."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:19:04Z",
+   "ambiguous": true,
+   "scenario": "Wind limits leave most giant balloons out, while a few move in the lineup at handler height. Macy's or NBC describe them as appearing or flying lower, and the NYPD calls the giant balloons grounded. One reader treats that as individual withdrawals or lower-than-usual flight (YES); another treats the collective decision, or balloons that are not actually flown, as grounding them as a group (NO).",
+   "yes_requires": "The 100th Macy's Thanksgiving Day Parade steps off in Manhattan on Saturday 28 November 2026 (America/New_York) within the stated window, and the giant character balloons fly in it because NYPD/Macy's do not ground them as a group. Individual balloons withdrawn or flown lower than usual still count as YES.",
+   "decided_by": "The NYPD/Macy's decision on whether the giant balloons fly, as reported by Macy's, NBC, the NYPD, or AP/Reuters/New York Times."
+  }
+ ]
+}

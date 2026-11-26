@@ -1,0 +1,32 @@
+{
+ "claim": "Chiang Wan-an of the Kuomintang is re-elected mayor of Taipei in Taiwan's local elections on Saturday 28 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:16:42Z",
+   "ambiguous": true,
+   "scenario": "If voting takes place within the window but the CEC count does not establish Chiang as the top vote-getter until after 23:59, one reader could resolve YES because the window applies to when the election is held, while another could resolve NO because the winning result was not established within the window.",
+   "yes_requires": "The Taipei City mayoral election must be held within the stated 08:00–23:59 window on 28 November 2026 (Asia/Taipei), and the Central Election Commission's count must show Chiang Wan-an receiving more votes than any other candidate.",
+   "decided_by": "Taiwan's Central Election Commission results site. If that site cannot be read, Focus Taiwan/CNA reporting of the CEC count decides. Later recounts or court challenges do not change the resolution."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:16:44Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Taipei City mayoral election must be held on 28 November 2026 (Asia/Taipei), and the Central Election Commission's initial count must show Chiang Wan-an with the most votes.",
+   "decided_by": "Taiwan's Central Election Commission (via db.cec.gov.tw or its 2026 results site), or Focus Taiwan/CNA reporting of the CEC count if the CEC site cannot be read."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:18:13Z",
+   "ambiguous": true,
+   "scenario": "Some Taipei districts vote on 28 Nov 2026 and others are postponed to a later date; the eventual CEC total shows Chiang Wan-an first. One reader treats the election as not held on 28 Nov, or excludes votes outside the window, and resolves NO; the other treats it as held that day and uses the combined CEC count, resolving YES.",
+   "yes_requires": "The Taipei City mayoral election is held on 28 November 2026 within 08:00–23:59 Asia/Taipei, and the CEC count for that election shows Chiang Wan-an with the most votes.",
+   "decided_by": "The Central Election Commission count (db.cec.gov.tw or the CEC 2026 results site); if that site cannot be read, Focus Taiwan/CNA reporting of the CEC count. Later recounts or court challenges do not "
+  }
+ ]
+}

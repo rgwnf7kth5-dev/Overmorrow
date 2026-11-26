@@ -1,0 +1,201 @@
+{
+ "claim": "Chiang Wan-an of the Kuomintang is re-elected mayor of Taipei in Taiwan's local elections on Saturday 28 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:10:30Z",
+   "p": 0.62,
+   "searches": 4,
+   "sources": [
+    "https://www.taipeitimes.com/News/taiwan/archives/2010/11/21/2003489065",
+    "https://apnews.com/article/taiwan-local-elections-dpp-kmt-china-cbfaf36781893dc1a7830b702889f829",
+    "https://www-asset.tvbs.com.tw/uploads/opinion-polls/1555/1794815742_1511141_________________________________.pdf",
+    "https://news.tvbs.com.tw/politics/4051504",
+    "https://apnews.com/article/cbfaf36781893dc1a7830b702889f829",
+    "https://time.com/article/2026/11/24/puma-shen-taipei-mayor-taiwan-china-interview/",
+    "https://time.com/article/2026/11/23/how-taiwan-is-turning-tech-supremacy-into-a-security-shield/",
+    "https://info.cec.gov.tw/vote2026/static/file/2074fdd683844689b5bbdfe0e3ac48b3.pdf",
+    "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/03%E7%9B%B4%E8%BD%84%E5%B8%82%E9%95%B7/115%E5%B9%B4/%E8%87%BA%E5%8C%97%E5%B8%82%E5%B8%82%E9%95%B7.pdf",
+    "https://web.cec.gov.tw/api/file/ddf92690-acf7-477d-a175-deb04b41e4f1.pdf",
+    "https://www.arbiter.blog/calls/chiang-wan-an-wins-taipei-reelection",
+    "https://bulletin.cec.gov.tw/01%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1/05%E7%9B%B4%E8%BD%84%E5%B8%82%E8%AD%B0%E5%93%A1/115%E5%B9%B4/01%E8%87%BA%E5%8C%97%E5%B8%82/%E8%87%BA%E5%8C%97%E5%B8%82%E7%AC%AC15%E5%B1%86%E8%AD%B0%E5%93%A1%E7%AC%AC6%E9%81%B8%E8%88%89%E5%8D%80%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1.pdf",
+    "https://web.cec.gov.tw/api/file/42788691-2e64-4b79-a232-fadd78ca2028.pdf",
+    "https://web.cec.gov.tw/central/article/65793",
+    "https://info.cec.gov.tw/vote2026/static/file/ebook/index.html",
+    "https://focustaiwan.tw/newstopic/1077/",
+    "https://focustaiwan.tw/politics/202611140013",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/11/17/2003867903",
+    "https://www.taiwannews.com.tw/news/6467763",
+    "https://info.cec.gov.tw/vote2026/article/?id=M0018&target=%2Farticle%2Fcat%2FC0007",
+    "https://web.cec.gov.tw/central?v=1.0.24",
+    "https://focustaiwan.tw/politics/202610260013",
+    "https://www.taiwannews.com.tw/news/6476596",
+    "https://focustaiwan.tw/politics/202611210017",
+    "https://en.wikipedia.org/wiki/2026_Taipei_City_local_election"
+   ],
+   "reason": "**Chiang Wan-an is a narrow favorite to finish first in the CEC count on November 28, 2026.**\n\n**Base rate.** Since Taipei resumed direct mayoral elections in 1994, three of the four sitting mayors who sought another term won: Ma Ying-jeou in 2002, Hau Lung-bin in 2010, and Ko Wen-je in 2018. Chen Shui-bian lost in 1998. That 3-for-4 record is a favorable starting point for Chiang, but the sample is too small to treat 75% as a reliable estimate. ([taipeitimes.com](https://www.taipeitimes.com/News/taiwan/archives/2010/11/21/2003489065?utm_source=openai))\n\n**What moves this race away from the base rate.**\n- **Up:** On November 26, AP reported that the Taiwan People’s Party was backing Chiang. That gives him a way to reach beyond the KMT base, though an endorsement does not guarantee that voters follow it. ([apnews.com](https://apnews.com/article/taiwan-local-elections-dpp-kmt-china-cbfaf36781893dc1a7830b702889f829))\n- **Down overall:** The final polls were divided. TVBS put Chiang ahead 46% to 44% on November 16, down from an eight-point lead in early October, and ETtoday put him ahead 48.1% to 42.0%. But the Taiwan Inspiration Association’s November 17 poll put Shen ahead 47.7% to 42.7%. I give more weight to the close and conflicting late readings than to Taipei’s small historical sample. ([www-asset.tvbs.com.tw](https://www-asset.tvbs.com.tw/uploads/opinion-polls/1555/1794815742_1511141_________________________________.pdf))\n\n**How YES could fail.** The main risk is that Shen wins on turnout: TVBS still had 10% undecided, and the Taiwan Inspiration Association found that DPP supporters were more likely than KMT or TPP supporters to say they would definitely vote. I put the chance of Taipei not voting on November 28 below 1%: the CEC scheduled voting for 08:00–16:00 local time, and November 26 reporting still pointed to preparations for Saturday. ([news.tvbs.com.tw](https://news.tvbs.com.tw/politics/4051504))\n\nNEW FACTS\n- 2026-11-26 | AP reported that the Taiwan People’s Party was backing Chiang in the Taipei mayoral race. | https://apnews.com/article/taiwan-local-elections-dpp-kmt-china-cbfaf36781893dc1a7830b702889f829\n- 2026-11-17 | The Taiwan Inspiration Association’s final poll measured support at 47.7% for Shen and 42.7% for Chiang. | https://www.taipeitimes.com/News/taiwan/archives/2026/11/17/2003867903\n- 2026-11-16 | TVBS’s final poll measured support at 46% for Chiang and 44% for Shen among respondents who intended to vote, with 10% undecided. | https://news.tvbs.com.tw/politics/4051504\n- 2026-08-20 | The CEC scheduled voting in the Taipei mayoral election for 08:00–16:00 local time on November 28. | https://info.cec.gov.tw/vote2026/static/file/2074fdd683844689b5bbdfe0e3ac48b3.pdf\n\nCOUNTER  \nShen was already ahead in some final polls, and even TVBS showed Chiang’s lead narrowing to two points. If DPP supporters turn out at higher rates and TPP voters do not follow their party’s endorsement, Shen could finish first. ([news.tvbs.com.tw](https://news.tvbs.com.tw/politics/4051504))",
+   "facts": [
+    {
+     "date": "2026-11-26",
+     "fact": "AP reported that the Taiwan People’s Party was backing Chiang in the Taipei mayoral race.",
+     "url": "https://apnews.com/article/taiwan-local-elections-dpp-kmt-china-cbfaf36781893dc1a7830b702889f829"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "The Taiwan Inspiration Association’s final poll measured support at 47.7% for Shen and 42.7% for Chiang.",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/17/2003867903"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "TVBS’s final poll measured support at 46% for Chiang and 44% for Shen among respondents who intended to vote, with 10% undecided.",
+     "url": "https://news.tvbs.com.tw/politics/4051504"
+    },
+    {
+     "date": "2026-08-20",
+     "fact": "The CEC scheduled voting in the Taipei mayoral election for 08:00–16:00 local time on November 28.",
+     "url": "https://info.cec.gov.tw/vote2026/static/file/2074fdd683844689b5bbdfe0e3ac48b3.pdf"
+    }
+   ],
+   "counter": "Shen was already ahead in some final polls, and even TVBS showed Chiang’s lead narrowing to two points. If DPP supporters turn out at higher rates and TPP voters do not follow their party’s endorsement, Shen could finish first. ([news.tvbs.com.tw](https://news.tvbs.com.tw/politics/4051504))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:10:55Z",
+   "p": 0.68,
+   "searches": 5,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHW5U9xgpAlqlsrxB3_O3AN0t5tI4yV_zFPvhDaQMlhyb58ABvhQtUC6DpnvlAADFCYJYvtSEPSDSX3gCxPi-7VoqxI_Z7YBnxHRtvsWizcv5bJ5RwhTzFWzwseOLfS6EbICft_2DsOPQMENuDktChIr4r9C4lEVWU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFXKM3wQKiwf9f87Cpmina8ussc4JEPbxOCwaKDNolrbZTigBoznDVy_AMqetvpndeuqa_W0ZaZ5abAC4KEk5gH77zUM4vue4eOi6jeUAxW48kTEMegBaKLF4jNV6f76mRezJ79mWvrhJLB20_N4SkdZQl",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETdBbw-YQJFoUdYPvgMv6lOrb_JYRdShcHDWmu8zGKUv799UTatqcQNOdcLs05oJyrGBZt1Ie9kIeVneSkTfOKJEHWMP9iE-nR8MjCK0XkHvLND5EhrDkEm_Jrv4Lgr8HmQQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFwhV3sHCQnjWLPwzKR60vMk5CELFQco16qVQgPBeLleA4jiV_60peq4wdMXbm_PiXH9LlyjRgDTJjXOCLNsEapFGdZq3kUvek5TYjEg-i8mW8XQg3Uo_GHrbQ1k2i9PTb",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJZAmZofr1TAnjrsAmreaOtH_SRsyrDH9nCfSf7yNWSaUlUcipxm4_yJgYUcFFaqt7QH4roX_c_KmdyIJTRxSJldwKVgNgwIVE1GzFdoAKIKyrK8jNU37kLFBK4S8cwIlyiEHGmMTvZM3mksUHCZMmyUiVjjdGqMmBeP4Vv_3_cQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4fIqZG6-enHZLjxhqDuVmBynCtrq8PkJJGop3rQGa3LNuw1XyBvWCTG4Mm0p2NIwbWby3uMptZsvDKZXd1EbqTlWOJAjuu4VnRFj9d-J9WtjzpFxZeMYx-1n5HQLRYTKyOt2xICYWaVw7FtJ8ENhb5SB898calg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmW_C1NNA2ol-L4RI2fwdnu-8N8sWO5ZE1Iwp6bLCMcK5c0K94Fe_focM3bL6U5lXjZjifKniPObAz-BTk3evP0OEfQGXghlR3n_krDIi9r6HsVrhjN3YxJrzeA5F1AneTCCW4",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl9klqL_qTWCcciIf6ozIF-liCUxV2Trknnhqt262RmxDeOGYdg0iniw_2TXqrF8-exXPEig6bQgGPbjkEQhnO33dUMNyR_DnEtJeh7geWtwCFP3MUJt-oKB84ehLrHfFlmmA7sYVRMqE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jHigmHHRGzfxARbd0BAJE8ClajzCNYK74TMQv152Z9G7iL1g3diub7dToNOlYhWzFsbT63WbK3ao24lv1JbopOyxY8xsDp_iH3EzWNsaFUP4XQr6a8Y_EQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-sv-cNbsBO9YKAJMrKFGISTnaIrZKh-m658V26sxzRqVp7D71fY0uNSm-zm98g1P0kelZJFHSHA87feAN8MaR3CM2_vdD8A36aJHfF0K92uPO5K1LWCkQKWHOmg-_JtI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsKnFH12ycgvhup2xHSfkcHRenPOrqF7BeqQAgnOv_movCfhk8u9dlCwicbVE2SLz7eWPmmQlTE4xbAV65Oe241Ze45mdj0w4hJC9BatmtukvMlVWm5bJ9",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNl2Rg5VADUqkPyvkqC1LCujOo8LCBoUfeZ8Zxoy7Nfn_EkeHGSmWVPFfEBzXDjDrNVfS6_xPgkDVFJHm0vX7LGgw8fIfvj-0bhVPZFQh5A6QsexNmo3fvs1zj1ejy9IpAGqVviziZQXSaOTcKHCVAjk22LhhVtRuMsIJ0Hj2X3Zc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6JTpb6sJH_hvMzt8ZS8jnUvl55znbxjK-RlULvKxXFJOVG6SJEqjluz_4Zi_7Lgx1c0D0g9P6iJdDKWuNSkDPRaQxsOoU4Gfrt2yblbf6Lqokx1sqEwaMO_51",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG32uCTan5PXZCa799m9hLuazY5ssQYy0rw0-oCarpeoSCY7Nwdkv4ZUT-xWoGsU-bUCOGAYCRv9xGXDiR5W__08-EkuH3gzFrCSQQJWLOHAdU6ebQ4IcY7CJu8fXfdUaD63A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKKMkgQWPlJaT2KWjUCgKvYytBsOtf8to4zPCnmpG-ML_xwM61Mx411LNPghq535-5Yt9ezwkSAfywuhvmTfZCztVnu5gS1qwmJ81mdhCIeKneXXLGDLtZYHPhl7BejqO2UNdp76bAsF8XeTmmfqI3lFRPjNGOogbBjhSc",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9oTWL2XGHlSu215KVSO2Hro-o_FmloE3wu1TaOD9czNeI8yrRnYc-mo75I5m7mihy32a5SKqn03E-DcmIm7lNNwEdT-1Ujw0x3eNh74LZI8IFaCGULa1kx3sCVSSHaZlc66XCwP4NfYQvXRUBMHSTaPwn3Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoj4xVCLUgWMeAth7oC2WZgxNu8G9UplTnKATTfIridnjgLipdFiV0Vj9fPJL5KZRXUyTAtsHehOLj10ZxiJCgLWSj9m1ND-5s1n54is95ThGs6TeNRe6cwA91Znsp0-hF7YlOrQ=="
+   ],
+   "reason": "oadly since 2010, incumbent mayors running for a second term win re-election roughly 80–85% of the time. Furthermore, Taipei's baseline partisan voter distribution traditionally tilts toward the pan-Blue/non-DPP camp, as no Democratic Progressive Party (DPP) candidate has won the Taipei mayoralty since 1994. This sets a strong initial base rate of approximately 80% for a KMT incumbent seeking re-election in Taipei.\n\n### 2. Dated Facts Moving This Case Away from the Base Rate\n* **Scheduled Election Window (Direction: Confirms event timing):** On November 24, 2026, Taiwan's Central Election Commission (CEC) confirmed that nearly 19.6 million people are eligible to vote in the \"nine-in-one\" local elections scheduled for Saturday, November 28, 2026. There are no typhoons, emergencies, or legal disruptions threatening the voting schedule.\n* **Two-Way Race Structure and KMT–TPP Consolidation (Direction: Toward YES):** Unlike the three-way race in 2022 (where the anti-DPP vote was split between Chiang Wan-an and TPP-backed Huang Shan-shan), the 2026 contest is effectively a head-to-head race between KMT incumbent Chiang Wan-an and DPP nominee Puma Shen (沈伯洋), alongside four minor party/independent candidates polling at or below 1%. On November 21, 2026, former Taipei Mayor and TPP founding chairman Ko Wen-je appeared on stage with Chiang Wan-an at a major rally in Taipei to publicly endorse Chiang's re-election. In the November 16, 2026 TVBS poll, 83% of TPP-identifying voters expressed support for Chiang.\n* **Pre-Blackout Polling Shows a Tightened Race (Direction: Away from the high base rate toward 50%):** Under Taiwan's election law, publishing or citing polls is banned during the final 10 days before election day (starting November 18). In the final \"blackout polls\" (封關民調) released on November 16–17, 2026, the race had narrowed substantially from Chiang's 28-point lead in May. Mainstream institutional polls showed Chiang with a narrow edge or within the margin of error: TVBS (Nov 16) had Chiang at 46% and Shen at 44%; ETtoday (Nov 16) had Chiang at 48.1% and Shen at 42.0%; and Apollo/艾普羅 (Nov 17) had Chiang at 44.1% and Shen at 37.1%. Conversely, Fengcan Media (鋒燦傳媒, Nov 16) showed Shen at 44.7% to Chiang's 43.0%, and two green-leaning think tanks (Shinmin Association and Taiwan Strategy Institute) showed double-digit raw leads for Shen (48.6% to 33.8% and 52.6% to 35.3%), though Shinmin's own turnout-adjusted model projected the actual vote share at 48.3%–52.2% for Chiang versus 48.0%–52.0% for Shen.\n* **Turnout Dynamics and Late Rally Controversies (Direction: Mixed / Slight uncertainty):** On November 25, 2026, *CommonWealth Magazine* reported on the \"Ocean Current\" (洋流) grassroots movement supporting Puma Shen, noting estimates that youth enthusiasm could boost Taipei's turnout by 5 to 7 percentage points, though also mobilizing counter-turnout for the KMT. On November 26, 2026, Focus Taiwan reported that Shen canceled his in-person Friday election-eve rally on Ren'ai Road following commuter backlash over multi-day lane closures and a controversy over Chiang's team booking prime rally venues within 0.35 seconds.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile Chiang holds the structural advantages of incumbency, municipal administrative satisfaction, and formal Blue-White (KMT-TPP) consolidation, his lead in standard telephone polls shrank dramatically over the six months leading up to the polling blackout. If Puma Shen's grassroots \"Ocean Current\" movement generates an unprecedented surge in youth and first-time voter turnout (pushing overall Taipei turnout well above 70%), or if young voters were systematically under-sampled by traditional polling methodologies prior to the November 18 blackout, Shen could narrowly overtake Chiang in the final count.\n\nBalancing Taipei'span-Blue structural advantage, the lack of a third-party spoiler, Ko Wen-je's explicit endorsement of Chiang, and Chiang's leads in TVBS and ETtoday against the genuine tightness of the pre-blackout polling averages, I estimate a 68% probability that Chiang Wan-an wins re-election.\n\nNEW FACTS\n- 2026-11-16 | In the final pre-blackout polls for Taipei mayor, TVBS found Chiang Wan-an at 46% and Puma Shen at 44%, while ETtoday found Chiang at 48.1% and Shen at 42.0%. | https://pulsehknews.com/wp-content/uploads/2026/11/20261116TaiwanElectionWeb.jpg\n- 2026-11-17 | A compilation of nine final pre-blackout polls in Taipei showed seven results within the margin of error, while Shinmin Association's turnout-adjusted model projected Chiang Wan-an's vote share at 48.3%–52.2% and Puma Shen's at 48.0%–52.0%. | https://theinitium.com/\n- 2026-11-21 | Taiwan People's Party founding chairman and former Taipei Mayor Ko Wen-je appeared on stage with Chiang Wan-an at a Taipei rally and publicly endorsed Chiang for re-election. | https://money.udn.com/\n- 2026-11-24 | Taiwan's Central Election Commission stated that nearly 19.6 million citizens are eligible to vote in the \"nine-in-one\" local elections on Saturday, November 28, 2026. | https://focustaiwan.tw/\n- 2026-11-25 | National Taiwan University professor Chang Yu-tzung estimated that the grassroots \"Ocean Current\" campaign supporting DPP candidate Puma Shen could raise voter turnout by 5 to 7 percentage points. | https://www.cw.com.tw/\n- 2026-11-26 | Leading Taipei mayoral candidates canceled major in-person political rallies ahead of Saturday's election following a controversy over road closures on Ren'ai Road and permit booking speeds. | https://focustaiwan.tw/\n\nCOUNTER\nDPP challenger Puma Shen has generated an unusually energetic grassroots movement (\"Ocean Current\") that closed a 28-point polling deficit down to statistical ties in multiple pre-blackout surveys. If this momentum drives a surge in youth and anti-KMT voter turnout above 70% while disillusioned or complacent voters stay home, Shen could overcome Taipei's traditional pan-Blue lean and defeat Chiang Wan-an.",
+   "facts": [
+    {
+     "date": "2026-11-16",
+     "fact": "In the final pre-blackout polls for Taipei mayor, TVBS found Chiang Wan-an at 46% and Puma Shen at 44%, while ETtoday found Chiang at 48.1% and Shen at 42.0%.",
+     "url": "https://pulsehknews.com/wp-content/uploads/2026/11/20261116TaiwanElectionWeb.jpg"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "A compilation of nine final pre-blackout polls in Taipei showed seven results within the margin of error, while Shinmin Association's turnout-adjusted model projected Chiang Wan-an's vote share at 48.3%–52.2% and Puma Shen's at 48.0%–52.0%.",
+     "url": "https://theinitium.com/"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "Taiwan People's Party founding chairman and former Taipei Mayor Ko Wen-je appeared on stage with Chiang Wan-an at a Taipei rally and publicly endorsed Chiang for re-election.",
+     "url": "https://money.udn.com/"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "Taiwan's Central Election Commission stated that nearly 19.6 million citizens are eligible to vote in the \"nine-in-one\" local elections on Saturday, November 28, 2026.",
+     "url": "https://focustaiwan.tw/"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "National Taiwan University professor Chang Yu-tzung estimated that the grassroots \"Ocean Current\" campaign supporting DPP candidate Puma Shen could raise voter turnout by 5 to 7 percentage points.",
+     "url": "https://www.cw.com.tw/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Leading Taipei mayoral candidates canceled major in-person political rallies ahead of Saturday's election following a controversy over road closures on Ren'ai Road and permit booking speeds.",
+     "url": "https://focustaiwan.tw/"
+    }
+   ],
+   "counter": "DPP challenger Puma Shen has generated an unusually energetic grassroots movement (\"Ocean Current\") that closed a 28-point polling deficit down to statistical ties in multiple pre-blackout surveys. If this momentum drives a surge in youth and anti-KMT voter turnout above 70% while disillusioned or complacent voters stay home, Shen could overcome Taipei's traditional pan-Blue lean and defeat Chiang Wan-an."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:12:31Z",
+   "p": 0.44,
+   "searches": 8,
+   "sources": [
+    "https://en.wikipedia.org/wiki/2026_Taipei_City_mayoral_election",
+    "https://t.media/3284749",
+    "https://news.nextapple.com/politics/20261117/ED98E60CA84CD374C6BBA86B07DBFB48",
+    "https://www.upmedia.mg/tw/focus/none/159945",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/10/20/2003866309",
+    "https://taipeitimes.com/News/taiwan/archives/2026/11/22/2003868177",
+    "https://www.youtube.com/watch?v=FskONdxf6DE",
+    "https://votetw.com/wiki/2022%E5%B9%B4%E8%87%BA%E5%8C%97%E5%B8%82%E5%B8%82%E9%95%B7%E9%81%B8%E8%88%89%E6%8A%95%E7%A5%A8%E7%B5%90%E6%9E%9C",
+    "https://www.taiwannews.com.tw/news/6467763",
+    "https://life.tw/article/%E8%94%A3%E8%90%AC%E5%AE%89%E9%81%B8%E6%88%B0%E7%9C%8B4%E5%8D%80%E7%A5%A8%E5%80%89-%E5%A4%A7%E5%AE%89%E6%96%87%E5%B1%B1%E8%BF%9114%E8%90%AC%E7%A5%A8%E8%88%87%E9%80%A3%E4%BB%BB%E8%A9%95%E5%83%B9%E7%9A%84%E9%97%9C%E8%81%AF-3221362",
+    "https://www.intellinews.com/taiwan-s-capital-may-elect-a-mayor-currently-under-investigation-by-beijing-487804/",
+    "https://www.zaobao.com.sg/en/news/china/pro-green-poll-puma-shen-leads-chiang-wan-14-8-percentage-points",
+    "https://www.zaobao.com.sg/en/news/china/feature-divergent-final-polls-highlight-forecasting-challenges-tight-taipei-mayoral-race",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/10/29/2003866813",
+    "https://www.taipeitimes.com/News/taiwan/archives/2022/11/28/2003789744",
+    "https://www.4conservative.com/r/?t=CNPlpwTUaKC5qBAkqpa_X4l6UK-FV7dx7ymVx3flFCQO0csPgPhLWexbfCC15LIIM6-2RiwgbzTfvXz8EuqkAhFLhjZsqj8FbdHeIjpCrUVeRiKaDZNPEwCSLwJt4WcjdBbkebuOlhiJpA",
+    "https://saomin.tw/sunyatsenschool/index.html",
+    "https://2026vote.chinatimes.com/survey/taipei",
+    "https://election.infominer.io/en/poll-blackout-2026/",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/11/08/2003867364",
+    "https://www.ettoday.net/news/20221126/2388675.htm",
+    "https://plainlaw.me/article/poll-blackout",
+    "https://www.gvm.com.tw/article/134577",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/10/27/2003866690",
+    "https://www.taiwannews.com.tw/news/6444322"
+   ],
+   "reason": "The Taipei mayoralty has a strong long-run pan-blue lean: the DPP has won it only once since the 1990s, and in 2022 Chiang took 42.3 percent in a three-way race while the DPP managed only 31.9 percent. Incumbent re-election is the modal outcome in Taiwan’s special municipalities when the officeholder runs again, which would put a prior near 60 percent before this year’s evidence. That prior is pulled down sharply by the polling collapse. Chiang led by roughly 25–28 points in May; by the final legal window in mid-November the same race was inside or near the margin of error in most surveys, with several non-blue pollsters showing Shen ahead and even blue-leaning ones reduced to a 2-point Chiang edge (TVBS) or a larger but disputed one. TPP identifiers are consolidating heavily behind Chiang (above 90 percent in multiple surveys), which is already visible in the numbers, and older pan-blue turnout reliability plus possible non-response still help the incumbent. No polls have been publishable since the statutory blackout began at midnight on 18 November, so the last ten days of campaigning are unmeasured; KMT sources claimed the “ocean wave” had stalled, but that is unverified. The election itself is on the statute calendar for 28 November and there is no indication it will be moved.\n\nNEW FACTS\n- 2026-11-16 | TVBS’s final pre-blackout survey put Chiang Wan-an at 46 percent and Puma Shen at 44 percent. | https://www.taipeitimes.com/News/front/archives/2026/11/17/2003867865\n- 2026-11-15 | A Taiwan Brain Trust poll of 1,071 Taipei adults showed Shen at 46.3 percent and Chiang at 42.2 percent. | https://www.taipeitimes.com/News/taiwan/archives/2026/11/16/2003867825\n- 2026-11-16 | The Taipei Trust in Democracy Association’s closing poll had raw support at Shen 48.6 percent to Chiang 33.8 percent, but its analyst’s turnout-adjusted ranges for both candidates overlapped at roughly 48–52 percent. | https://www.taipeitimes.com/News/front/archives/2026/11/17/2003867865\n- 2026-11-16 | A Taiwan Inspiration Association telephone poll conducted 7–13 November showed Shen at 47.7 percent and Chiang at 42.7 percent. | https://www.taipeitimes.com/News/taiwan/archives/2026/11/17/2003867903\n- 2026-11-12 | The Central Election Commission stated that publishing or citing election polls is banned from midnight 18 November until voting ends on 28 November. | https://www.taiwannews.com.tw/news/6475459\n- 2026-11-25 | Contemporary reporting summarized the last legal polls as putting Shen narrowly ahead and confirmed no surveys could be released after 18 November. | https://www.intellinews.com/taiwan-s-capital-may-elect-a-mayor-currently-under-investigation-by-beijing-487804/\n- 2026-11-23 | KMT officials said Shen’s campaign wave was losing momentum and that Chiang had begun to recover ground in the capital. | https://www.taipeitimes.com/News/taiwan/archives/2026/11/24/2003868282\n- 2026-11-09 | The election is scheduled for 28 November 2026, the same day as the city-council vote. | https://en.wikipedia.org/wiki/2026_Taipei_City_mayoral_election\n\nCOUNTER\nHouse effects are large and several established or pan-blue pollsters still had Chiang level or ahead when surveying stopped, while Taipei’s underlying partisan balance and higher turnout among older KMT voters have repeatedly rescued incumbents or nominees who looked vulnerable in telephone samples. Solid TPP-to-Chiang transfer, already above 90 percent in the final polls, plus any spiral-of-silence among pan-blue respondents who decline to state a preference, could still produce a narrow Chiang plurality even if Shen’s visible momentum continued after 18 November.",
+   "facts": [
+    {
+     "date": "2026-11-16",
+     "fact": "TVBS’s final pre-blackout survey put Chiang Wan-an at 46 percent and Puma Shen at 44 percent.",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/11/17/2003867865"
+    },
+    {
+     "date": "2026-11-15",
+     "fact": "A Taiwan Brain Trust poll of 1,071 Taipei adults showed Shen at 46.3 percent and Chiang at 42.2 percent.",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/16/2003867825"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "The Taipei Trust in Democracy Association’s closing poll had raw support at Shen 48.6 percent to Chiang 33.8 percent, but its analyst’s turnout-adjusted ranges for both candidates overlapped at roughly 48–52 percent.",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/11/17/2003867865"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "A Taiwan Inspiration Association telephone poll conducted 7–13 November showed Shen at 47.7 percent and Chiang at 42.7 percent.",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/17/2003867903"
+    },
+    {
+     "date": "2026-11-12",
+     "fact": "The Central Election Commission stated that publishing or citing election polls is banned from midnight 18 November until voting ends on 28 November.",
+     "url": "https://www.taiwannews.com.tw/news/6475459"
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Contemporary reporting summarized the last legal polls as putting Shen narrowly ahead and confirmed no surveys could be released after 18 November.",
+     "url": "https://www.intellinews.com/taiwan-s-capital-may-elect-a-mayor-currently-under-investigation-by-beijing-487804/"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "KMT officials said Shen’s campaign wave was losing momentum and that Chiang had begun to recover ground in the capital.",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/24/2003868282"
+    },
+    {
+     "date": "2026-11-09",
+     "fact": "The election is scheduled for 28 November 2026, the same day as the city-council vote.",
+     "url": "https://en.wikipedia.org/wiki/2026_Taipei_City_mayoral_election"
+    }
+   ],
+   "counter": "House effects are large and several established or pan-blue pollsters still had Chiang level or ahead when surveying stopped, while Taipei’s underlying partisan balance and higher turnout among older KMT voters have repeatedly rescued incumbents or nominees who looked vulnerable in telephone samples. Solid TPP-to-Chiang transfer, already above 90 percent in the final polls, plus any spiral-of-silence among pan-blue respondents who decline to state a preference, could still produce a narrow Chiang plurality even if Shen’s visible momentum continued after 18 November."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, armed hostile approach, boarding or seizure involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman or the Arabian Sea that took place on Saturday 28 November 2026 (00:00–23:59 Gulf time).",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:17:10Z",
+   "ambiguous": true,
+   "scenario": "If UKMTO reports an explosion five nautical miles from a merchant vessel, with no damage and no indication the vessel was targeted, one reader could count it as close to the vessel while another could find it too distant. The criterion gives no distance threshold for 'close.'",
+   "yes_requires": "At least one merchant vessel in the Strait of Hormuz, Persian Gulf, Gulf of Oman or Arabian Sea (including waters around Socotra) must be involved in a qualifying incident on 28 November 2026 Gulf Standard Time (UTC+4): an attack, explosion, mine strike, projectile or drone hit, armed craft firing on or attempting to board it, boarding, hijacking or seizure. A nearby projectile or explosion can co",
+   "decided_by": "UKMTO or JMIC must report the incident, as documented on ukmto.org, on UKMTO's X account, or by an established news outlet quoting either organization. An uncorroborated claim by another party does no"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:17:19Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit (including close misses/explosions without damage), hostile approach involving weapons fire or a boarding attempt, boarding, hijacking, or seizure involving a merchant vessel in the Strait of Hormuz, Persian Gulf, Gulf of Oman, or Arabian Sea (including around Socotra) occurring on 28 November 2026 between 0",
+   "decided_by": "Official reports from UKMTO (via ukmto.org or UKMTO's X account) or JMIC, or established news outlets (such as wires, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, S"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:18:35Z",
+   "ambiguous": true,
+   "scenario": "UKMTO logs a 28 Nov 2026 ‘suspicious activity’ noting an explosion or projectile a few nautical miles from a merchant vessel in the Gulf of Oman, with no damage and without calling it an attack or hit. One reader treats that distance as ‘close’ and resolves YES; the other treats ‘close’ as immediate proximity only and, because the notice states no attack, hit, boarding, or seizure, resolves NO.",
+   "yes_requires": "UKMTO or JMIC reports an attack, explosion, mine strike, projectile or drone hit (including one they report close to a merchant vessel, even if filed only as suspicious activity and causing no damage), hostile approach by armed craft firing on or attempting to board, boarding, hijacking, or seizure of a merchant vessel in the Strait of Hormuz, Persian (Arabian) Gulf, Gulf of Oman, or Arabian Sea i",
+   "decided_by": "UKMTO or JMIC, as shown on ukmto.org or UKMTO’s X account, or by a wire service, gCaptain, Lloyd’s List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeera, Newsquawk, "
+  }
+ ]
+}

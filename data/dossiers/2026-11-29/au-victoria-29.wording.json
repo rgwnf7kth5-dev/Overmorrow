@@ -1,0 +1,32 @@
+{
+ "claim": "The Liberal–National Coalition led by Jess Wilson wins a majority of at least 45 of the 88 seats in the Victorian Legislative Assembly at the state election on Saturday 28 November 2026.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:16:49Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The Victorian general election must be held on 28 November 2026 (Australia/Melbourne time), and at 12:00 CET on 1 December 2026, candidates of the Liberal Party and the National Party combined must have won, or be leading on the two-candidate-preferred count in, at least 45 of the 88 Legislative Assembly districts according to the Victorian Electoral Commission's results site (or be listed as the ",
+   "decided_by": "The Victorian Electoral Commission's results site, with the ABC's Victorian election 2026 results page used as a fallback for any district where the VEC has no two-candidate-preferred count, read at 1"
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:16:56Z",
+   "ambiguous": true,
+   "scenario": "Suppose the Coalition qualifies in 44 other districts, and the VEC has withdrawn its indicative two-candidate count in the decisive district because it used the wrong pairing, but the old figures remain visible and show a Liberal ahead. If the ABC predicts a non-Coalition winner, one reader could treat the visible figures as a VEC count and resolve YES, while another could treat the withdrawn count as no current VEC count, use the ABC fallback, and resolve NO.",
+   "yes_requires": "The Victorian general election must be held on 28 November 2026 Melbourne time. At the specified snapshot, Liberal and National candidates must collectively have won or be ahead in at least 45 distinct Legislative Assembly districts. Three-cornered contests count only once per district, and failed or deferred elections do not count.",
+   "decided_by": "The Victorian Electoral Commission results site as read at 12:00 CET (22:00 Melbourne time) on 1 December 2026. For a district with no VEC two-candidate-preferred count, use the ABC Victorian election"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:19:51Z",
+   "ambiguous": true,
+   "scenario": "The seat that would be the 45th shows a Liberal or National candidate ahead only on a VEC indicative two-candidate-preferred figure based on the previous election's preference flows, and the seat is not declared, while the ABC predicts a different winner. One reader treats the indicative figure as the VEC two-candidate count and counts the seat; the other treats it as no actual two-candidate count and follows the ABC, so one resolves YES and the other NO.",
+   "yes_requires": "The Victorian general election is held on 28 November 2026 (Australia/Melbourne), and at 12:00 CET on 1 December 2026 Liberal Party and National Party candidates, counted together, have won or are ahead on the two-candidate-preferred count in at least 45 of the 88 Legislative Assembly districts on the VEC results site; where the VEC has no two-candidate count, that district counts only if the ABC ",
+   "decided_by": "The Victorian Electoral Commission's results site as read at 12:00 CET on 1 December 2026, with the ABC Victorian election 2026 results page used only for a district that has no VEC two-candidate coun"
+  }
+ ]
+}

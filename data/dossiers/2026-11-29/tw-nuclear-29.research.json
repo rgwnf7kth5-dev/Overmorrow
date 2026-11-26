@@ -1,0 +1,204 @@
+{
+ "claim": "Taiwan's national Referendum No. 22 on nuclear power, held with the local elections on Saturday 28 November 2026, passes.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:13:53Z",
+   "p": 0.81,
+   "searches": 6,
+   "sources": [
+    "https://www.businessweekly.com.tw/focus/blog/3023538",
+    "https://web.cec.gov.tw/api/file/3aac4557-ce05-4a2e-9ac2-cd1aa3e8900b.pdf",
+    "https://info.cec.gov.tw/vote2026/question/",
+    "https://info.cec.gov.tw/vote2026/article/content/?target=%2Farticle%2FA0099",
+    "https://web.cec.gov.tw/central/article/66267",
+    "https://www.cec.gov.tw/central/article/64320",
+    "https://info.cec.gov.tw/vote2026/",
+    "https://info.cec.gov.tw/vote2026/static/file/2074fdd683844689b5bbdfe0e3ac48b3.pdf",
+    "https://bulletin.cec.gov.tw/02%E5%85%AC%E6%B0%91%E6%8A%95%E7%A5%A8%E5%85%AC%E5%A0%B1/%E5%85%A8%E5%9C%8B%E6%80%A7%E5%85%AC%E6%B0%91%E6%8A%95%E7%A5%A8/115%E7%AC%AC22%E6%A1%88/%E7%B4%99%E6%9C%AC%E5%85%AC%E5%A0%B1/%E5%85%A8%E5%9C%8B%E6%80%A7%E5%85%AC%E6%B0%91%E6%8A%95%E7%A5%A8%E6%A1%88%E7%AC%AC22%E6%A1%88%E5%85%AC%E6%B0%91%E6%8A%95%E7%A5%A8%E5%85%AC%E5%A0%B1.pdf",
+    "https://info.cec.gov.tw/vote2026/static/file/ebook/index.html",
+    "https://info.cec.gov.tw/vote2026/navigation/",
+    "https://info.cec.gov.tw/vote2026/article/?id=M0084&target=%2Farticle%2Fcat%2FC0030",
+    "https://info.cec.gov.tw/vote2026/static/file/ebook/9/index.html",
+    "https://www.cec.gov.tw/referendum",
+    "https://web.cec.gov.tw/central/article/64774",
+    "https://info.cec.gov.tw/vote2026/static/file/8d9c49aa26824dbcaa97f579f3c48b15.pdf",
+    "https://info.cec.gov.tw/vote2026/article/content/?target=%2Farticle%2FA0097",
+    "https://eebulletin.cec.gov.tw/115/08%E8%8B%97%E6%A0%97%E7%B8%A3/04%E9%84%89%E9%8E%AE%E5%B8%82%E6%B0%91%E4%BB%A3%E8%A1%A8/%E8%8B%97%E6%A0%97%E5%B8%82/%E8%8B%97%E6%A0%97%E5%B8%82%E5%B8%82%E6%B0%91%E4%BB%A3%E8%A1%A8%E7%AC%AC3%E9%81%B8%E5%8D%80.pdf",
+    "https://apnews.com/article/cbfaf36781893dc1a7830b702889f829",
+    "https://www.cna.com.tw/news/aipl/202611120231.aspx",
+    "https://www.cna.com.tw/topic/newstopic/5141.aspx",
+    "https://www.cna.com.tw/news/ahel/202611260101.aspx",
+    "https://election2026.rti.org.tw/referendum.html",
+    "https://referendumvote.kmt.org.tw/",
+    "https://gazette.nat.gov.tw/egFront/eguploadpubWrapper?file=%2FEG_FileManager%2Feguploadpub%2Feg032161%2Fch02%2Ftype3%2Fgov15%2Fnum3%2FEg.htm&metaid=167991"
+   ],
+   "reason": "**Base rate.** One of Taiwan’s three previous pro-nuclear referendums passed. The closest match is the one that passed: in 2018, a proposal to repeal the nuclear phaseout deadline ran alongside local elections and drew 5,895,560 agree votes. The 2021 proposal to restart the Fourth Nuclear Power Plant lost outright. In 2025, the Maanshan referendum won 74.2% of valid votes but failed because only 4,341,432 people voted agree. ([businessweekly.com.tw](https://www.businessweekly.com.tw/focus/blog/3023538))\n\n**What moves this case toward YES.** The CEC confirmed on November 24 that the referendum is on the same day as the local elections. That makes 2018 a better turnout comparison than either of the two failed stand-alone votes. The KMT’s November 22 report of rallies and local canvassing also points toward stronger agree-vote mobilization. In the other direction, CNA reported on November 26 that anti-nuclear organizers were urging voters to take a ballot and vote disagree, rather than skip the referendum. ([web.cec.gov.tw](https://web.cec.gov.tw/api/file/3aac4557-ce05-4a2e-9ac2-cd1aa3e8900b.pdf?utm_source=openai))\n\n**Main failure path.** Local-election turnout does not automatically translate into referendum turnout: voters can decline the separate ballot. If valid referendum ballots amount to 45% of eligible voters, about 55.6% of those ballots must be agree votes to reach 5,000,959. I put the chance the vote is not held in the specified window at under 1%, given the CEC’s November 24 confirmation. The CEC schedules counting for November 28 and formal publication for December 4; I read the criterion as using the count for the November 28 vote, not requiring formal certification that night. ([businessweekly.com.tw](https://www.businessweekly.com.tw/focus/blog/3023538))\n\nNEW FACTS\n- 2026-11-26 | CNA reported that the National Nuclear Abolition Action Platform held a press conference urging voters to collect a referendum ballot and vote disagree. | https://www.cna.com.tw/news/ahel/202611260101.aspx\n- 2026-11-24 | The CEC announced that 20,003,835 people were eligible to vote in Referendum No. 22. | https://info.cec.gov.tw/vote2026/article/content/?target=%2Farticle%2FA0099\n- 2026-11-22 | CNA reported that the KMT had campaigned for the referendum through regional rallies and local outreach. | https://www.cna.com.tw/news/aipl/202611220087.aspx\n- 2026-08-28 | The CEC formally scheduled voting on Referendum No. 22 for November 28 from 08:00 to 16:00 local time. | https://web.cec.gov.tw/api/file/3aac4557-ce05-4a2e-9ac2-cd1aa3e8900b.pdf\n- 2025-08-29 | The CEC declared Referendum No. 21 defeated despite 4,341,432 agree votes to 1,511,693 disagree votes. | https://web.cec.gov.tw/api/file/5b97cc46-6f93-4eec-8d2f-e0e9aafa2d7a.pdf\n\nCOUNTER  \nThe local elections can bring voters to polling stations without getting them to take the referendum ballot. If enough voters skip it, Agree could win a clear majority and still fall short of 5,000,959 votes, as the 2025 result illustrates. ([businessweekly.com.tw](https://www.businessweekly.com.tw/focus/blog/3023538))",
+   "facts": [
+    {
+     "date": "2026-11-26",
+     "fact": "CNA reported that the National Nuclear Abolition Action Platform held a press conference urging voters to collect a referendum ballot and vote disagree.",
+     "url": "https://www.cna.com.tw/news/ahel/202611260101.aspx"
+    },
+    {
+     "date": "2026-11-24",
+     "fact": "The CEC announced that 20,003,835 people were eligible to vote in Referendum No. 22.",
+     "url": "https://info.cec.gov.tw/vote2026/article/content/?target=%2Farticle%2FA0099"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "CNA reported that the KMT had campaigned for the referendum through regional rallies and local outreach.",
+     "url": "https://www.cna.com.tw/news/aipl/202611220087.aspx"
+    },
+    {
+     "date": "2026-08-28",
+     "fact": "The CEC formally scheduled voting on Referendum No. 22 for November 28 from 08:00 to 16:00 local time.",
+     "url": "https://web.cec.gov.tw/api/file/3aac4557-ce05-4a2e-9ac2-cd1aa3e8900b.pdf"
+    },
+    {
+     "date": "2025-08-29",
+     "fact": "The CEC declared Referendum No. 21 defeated despite 4,341,432 agree votes to 1,511,693 disagree votes.",
+     "url": "https://web.cec.gov.tw/api/file/5b97cc46-6f93-4eec-8d2f-e0e9aafa2d7a.pdf"
+    }
+   ],
+   "counter": "The local elections can bring voters to polling stations without getting them to take the referendum ballot. If enough voters skip it, Agree could win a clear majority and still fall short of 5,000,959 votes, as the 2025 result illustrates. ([businessweekly.com.tw](https://www.businessweekly.com.tw/focus/blog/3023538))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:14:14Z",
+   "p": 0.78,
+   "searches": 8,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4XPJJkJMC5dth2P67vC9sppDIBxoZa4nflKfDjCVuls0Y69J3PnOaUK0ZGra032wFu9UaHXBmLXSMzcyqWUYa8hlyIG2xQjyPc1nHYqCGVH2KhjnJXUHaDPUh2dV7Ht6h0YSUvsK5PrLN",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkg3pZ57GSoJzKcJEs6PLC-8v889ihRNuQXhg1Z9j1oXwsQ9e0D-6yFlgGrel4NfoMdoy4rXjLXnkK629pjBGdFv5hjVAjd_2EvNCsLdnn-17BznsDJw_xMr55jJgNeg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpcLjKKsy2scWMbYZZSDXuvP_0YLYbnpRvk2RnRxiSjvTg36ig-TFcv9TqjBpEaMqBGuQZw2XJm04mDKv3N3kH0wF5ItGMgqiTwCx9hTlWC2s2bE8BGYCoi3pOlD-V2tA20lFJcQ2qiGY_",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb3V7-vpZntSROBRIXe2tYbsI1u-YaYcYjVtME8PEZq-LpXubtzSvtxfmmgm3Pms7nR5AQiJ5yoH_lBfxQeQWbTW3ksTs1seKFRfOmaZEp0glBUZh3GxP35rlsEw3HWLnw2avWf34yymIBBhzzQIrZi7SWhtRnL8t4DRMkRQs=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2Ms9wGfdkBVJ9Q88MHB0AvQBMdhvk5UNb1UXMEnjcNF7AZjpu7usSykIz9xopg7ggvYSj1LNat6_2L5mfy5-v2bhQLgTrAlRrdr6MnihumtuBQxXRsROh_5ZL7O-BMyY_xTlRke9atA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWmGqvoTW3Gsrj7vkgzKYEwNuFdzLdo4i37CC0dUG11REwmBezMPxF-mLFFQilbrZSrOlyOJm4etG6uxySfNyPkAk8ezkEn3tKZ_0ZgBw20i_dunZGMgysPMZIh68ekwXU9l0N5pvRwgDWVotQXO5oQDXfJ-oOLdDJpPhBaFfQTUPND6OPuhBEkm2g",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGteLYT9v7DwLVvtYj3QdAhjyRSqhBlhhTaxGuD60et2zaSl3COhz0LJdkuWtCeeFyus3yIL4LweCNploewisjIvVWfD5_IWzMwqSwrWNWyhP0bFYcAY_hg7fQgQ-TseUqYlSK9Nm4-Oim022mQEwgN3VZ8p8dMV1D1HTVJuTWYyIY6WzE0H70q-uHrWyqhB_Cv8FuDgczNdbujdpIpUcOwTpMIzQ8j971sydzeoAV8DMosMA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfxAuywlaieY-ytcuakeM1RE2H8jjsJqzjUxVYr9HMcB8iPk2SGiRtWgRTDg3KMAJjU3hV9qe3oM5_tTATAO-Uu7asyBrEcnY002xzG6FUiDZSV2vsIN9KmGoNu4b80R4qwrafQOyxKvu8unvYuuSnfZlDx27fYBlLVeqGg_GcmQqQIE7IN1rf3ak=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAkKmS3g7dRp5vacMlWO9BX5bSBUTURa6y2BW4q-QB6k5wLH31iTwjWX5bztdsw4FJeT2c6iOGC2a1PpB8tsKHJQqVHdshUILO795332AA1mP0W6iIbNuWeNaAyOozIj7b_uK_sPO1wiT4Ql-UEN7Rn8oTVGUwa9cog4NU6iERoHKhy-0p3cXSBs1YTiUPDIW_Gc-Vy1rSqTNwpaMoGJ3Aqq59OpzZ4A_XXwYrisw0Pu5O9qznRb9JVEwXcQIfdbA4ORjCs3A=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ1ZqkPyIarIuz-0MQjssuVZTcNBw-aiIRQvgdvQAP8l7FZDdOf2x-kKdW0PHTn-pK8LYYtdHLqggYC29W96lu86ZBko_RVQyxO3pTz7tk0vdlwp_ETFKIE0s=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeRfxcYWlPC_PiNPDhYqo1nwh7wh9JfEXH3zljNso5KLUcI5pqfQGGrKIfo6CyZcS6s7ivknmVtiR6JrnIN-YYkPjENy1tmm0ck-kPCBeJCASo2NXXy_raPYJyBtv1Pa4HkJxaMQfw3dYyvQE8OgJVjSaWbT0UOtgiWizrZBeQkkftggEoB5roVeb_xVVfSHBfMNLjSyZQV4LWXpcaio4v94aicL1Z40KXUbbGYKeInxpYS0pHydZdP3OFJA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-HCa1T5UBzBXURyHOJorYyYQzDoOzydfPbe-Pru7uxLNnaM-N0HfyJGs3eD0u9R67C-iguCzd2w8QIGCLCvo6Kg4-coPZH0iTeXT6uUcQENYif-kHuPCWpgnKT2ZWgZqOMJORbNk=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjPFYFRVWY_Sf5wfz3dUsbq3gsdehIL1owYLXNfgERuTbGHTKDyDgY_0qSzKqlGX9r2qFmS2jbICKqGjDi-LDCnkWSFANUrnpDe6zL8dCk_Ej3KPXTfv9yrV_2wLS1rNzdiWXrIxR5uy_M8ME1xQG2",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf-HbCCWah4wF2O-PuxQx3JJ9TABBtQ2L1rIvmeXFEqdU5soMnG1TrG5OAU2zw_W2JKY40ANZHIqnu2GxK_51O-cJxGbTfLUWvPUl_2ZbAV6OcK-dgT5-rmkc0qkcLe3yzggHa2Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFShbbguspZ4l4EBCr_p43Q82n3poRnyhc3fzBM58P6GpeJuv6cvzHYg4ZrWcmndjuZT2EkrdM0phEHAHbUlEafXN6XpV0_R1pQ6nhBrjoJjjSLQAstOJdjr4Po5qyHRRo=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkKLoiM8VVizp_jSI48KdZ_IGzc9h8sBhex957j9afelGWyKWozhWUpMNTYjMeXPh_gz4WIjLcSi--CeI6MdlzwnV8au7_WY2DT18rvOZDY24CgxJhTG9_YF8tsJpld2r0Aw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxee2ifKMSWCUjkbUpnixKE4quafktQpWag1QKUhshqKh92HPfu_4Y744EDZlqL8q507hNK3XLV1TdL3nQEYbMsbtBPJc3hSFGYE2jCNrEwL17mBePaV2ATJtDzK4c6wD05bgSZg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwpWPab-yHQ3XRbroPhGPpu_zWpRMZ7QtECe_oVPeZRiyvOC5q-nI-hnpxD_jIjPuOu2MWDpC382O9bTZ5YjMk76wSm8s_h9lUkD2PRQeIfqkJaauJfOo3bEOE",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv9M8kTo6e2OoMe9t7AWr3weHv6zcPVRDePy54Co8H1HhbQG_bwd-KOFlrKxvsq9E-nTS2uXO_L159RWkgqGJDF6VAfKml_66E11wn-xH0V6iQoS11wS4qW3_sefjjYH0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGJZUyak8BcVrpW7kGvHOY2NU5g09-84od7CCclSw7VaO-Ilwd9tBInFitc5yEDdnL9ghOncofjx8i_3j8YDLvwMzo7n4h7bKU0wvnVXUaoGmEugNtrOtQN7LCCy8erRPlURNJoAE="
+   ],
+   "reason": "y press conference on November 26 urging anti-nuclear voters to actually pick up the ballot and vote \"disagree\" rather than boycotting (\"不領票\"), warning that concurrent local election turnout makes passing the 5 million threshold very likely if opponents abstain.\n\n**3. Strongest Reason the Obvious Outcome Might Fail**\nWith local election turnout expected around 58–63% (11.6 to 12.6 million voters), Referendum No. 22 only needs about 45–50% of local election voters who pick up the referendum ballot to vote \"agree\" in order to cross 5,000,959 votes. The strongest reason this could fail is **selective ballot abstention (roll-off)** combined with **voter apathy**. Because polling stations distribute local election ballots first and the white referendum ballot at a separate table, and because the DPP government has already begun administrative steps toward nuclear restarts (blunting the urgency of the issue) while some DPP supporters intentionally refuse to pick up the referendum ballot, total referendum turnout could drop significantly below local election turnout (e.g., to ~42–45%, or 8.5–9.0 million voters). If 9 million people pick up the referendum ballot and 4.2 million vote \"disagree\" (similar to 2018 and 2021 anti-nuclear totals), \"agree\" votes could land around 4.7–4.9 million—winning the majority but falling just shy of the 5,000,959 statutory quorum. (There is virtually zero chance the election does not take place in its scheduled window on November 28, as CEC Chairman Michael You confirmed on November 25 that counting is expected to finish before midnight on November 28.)\n\nBalancing the strong historical turnout of concurrent elections (2018 and 2022 both saw >5.6 million agree votes on their lead propositions) and the 4.34 million agree floor already achieved in 2025's 29.5% turnout standalone vote against the risk of high ballot roll-off at the separate referendum desk, passage is clearly favored.\n\nNEW FACTS\n- 2025-08-23 | In Taiwan's standalone National Referendum No. 21 on extending the Third Nuclear Power Plant, valid agree votes outnumbered disagree votes 4,341,432 (74.17%) to 1,511,693 (25.83%), but the measure failed because turnout was 29.53% and agree votes fell short of the 5,000,523 threshold. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxee2ifKMSWCUjkbUpnixKE4quafktQpWag1QKUhshqKh92HPfu_4Y744EDZlqL8q507hNK3XLV1TdL3nQEYbMsbtBPJc3hSFGYE2jCNrEwL17mBePaV2ATJtDzK4c6wD05bgSZg==\n- 2026-08-28 | Taiwan's Central Election Commission approved the Legislative Yuan's proposal to hold National Referendum No. 22 on abolishing the \"nuclear-free homeland\" policy concurrently with the November 28, 2026 Nine-in-One local elections, while rejecting two other legislative proposals. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwpWPab-yHQ3XRbroPhGPpu_zWpRMZ7QtECe_oVPeZRiyvOC5q-nI-hnpxD_jIjPuOu2MWDpC382O9bTZ5YjMk76wSm8s_h9lUkD2PRQeIfqkJaauJfOo3bEOE\n- 2026-11-21 | The Central Election Commission held the fifth and final televised presentation session on November 20, 2026 for National Referendum No. 22 ahead of the November 28 vote. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv9M8kTo6e2OoMe9t7AWr3weHv6zcPVRDePy54Co8H1HhbQG_bwd-KOFlrKxvsq9E-nTS2uXO_L159RWkgqGJDF6VAfKml_66E11wn-xH0V6iQoS11wS4qW3_sefjjYH0=\n- 2026-11-25 | Commentators noted that public discussion of Referendum No. 22 has been unusually muted ahead of the November 28 vote, in part because the Lai administration already reversed course to allow restart applications for the No. 2 and No. 3 nuclear plants. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjPFYFRVWY_Sf5wfz3dUsbq3gsdehIL1owYLXNfgERuTbGHTKDyDgY_0qSzKqlGX9r2qFmS2jbICKqGjDi-LDCnkWSFANUrnpDe6zL8dCk_Ej3KPXTfv9yrV_2wLS1rNzdiWXrIxR5uy_M8ME1xQG2\n- 2026-11-26 | According to the Central Election Commission's announcement on November 24, 2026, there are 20,003,835 eligible voters for National Referendum No. 22, meaning at least 5,000,959 valid agree votes (and more agree than disagree votes) are required for passage. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4XPJJkJMC5dth2P67vC9sppDIBxoZa4nflKfDjCVuls0Y69J3PnOaUK0ZGra032wFu9UaHXBmLXSMzcyqWUYa8hlyIG2xQjyPc1nHYqCGVH2KhjnJXUHaDPUh2dV7Ht6h0YSUvsK5PrLN\n- 2026-11-26 | The Central Election Commission stated in a November 25 press release that polling runs from 8:00 AM to 4:00 PM on November 28 and that CEC Chairman Michael You expects nationwide vote counting to be completed before midnight, no later than the 11:40 PM completion time in 2022. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkKLoiM8VVizp_jSI48KdZ_IGzc9h8sBhex957j9afelGWyKWozhWUpMNTYjMeXPh_gz4WIjLcSi--CeI6MdlzwnV8au7_WY2DT18rvOZDY24CgxJhTG9_YF8tsJpld2r0Aw==\n- 2026-11-26 | At a press conference on November 26, the National Nuclear Abolition Action Platform warned against online rumors telling anti-nuclear voters not to pick up their referendum ballots, urging them to cast \"disagree\" votes because concurrent local election turnout makes crossing the 25% threshold easy. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf-HbCCWah4wF2O-PuxQx3JJ9TABBtQ2L1rIvmeXFEqdU5soMnG1TrG5OAU2zw_W2JKY40ANZHIqnu2GxK_51O-cJxGbTfLUWvPUl_2ZbAV6OcK-dgT5-rmkc0qkcLe3yzggHa2Q==\n\nCOUNTER\nBecause the Lai administration has already initiated safety reviews to restart the Maanshan nuclear plant and Taiwan has not suffered power shortages since entering zero-nuclear status in May 2025, voter urgency surrounding this fourth nuclear referendum in eight years is noticeably lower than in 2018. Furthermore, because referendum ballots are issued at a separate table after local election ballots and many anti-nuclear or indifferent voters may follow online calls to boycott picking up the referendum ballot, total referendum turnout could lag local election turnout enough to leave \"agree\" votes just short of the 5,000,959 statutory quorum.",
+   "facts": [
+    {
+     "date": "2025-08-23",
+     "fact": "In Taiwan's standalone National Referendum No. 21 on extending the Third Nuclear Power Plant, valid agree votes outnumbered disagree votes 4,341,432 (74.17%) to 1,511,693 (25.83%), but the measure failed because turnout was 29.53% and agree votes fell short of the 5,000,523 threshold.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxee2ifKMSWCUjkbUpnixKE4quafktQpWag1QKUhshqKh92HPfu_4Y744EDZlqL8q507hNK3XLV1TdL3nQEYbMsbtBPJc3hSFGYE2jCNrEwL17mBePaV2ATJtDzK4c6wD05bgSZg=="
+    },
+    {
+     "date": "2026-08-28",
+     "fact": "Taiwan's Central Election Commission approved the Legislative Yuan's proposal to hold National Referendum No. 22 on abolishing the \"nuclear-free homeland\" policy concurrently with the November 28, 2026 Nine-in-One local elections, while rejecting two other legislative proposals.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwpWPab-yHQ3XRbroPhGPpu_zWpRMZ7QtECe_oVPeZRiyvOC5q-nI-hnpxD_jIjPuOu2MWDpC382O9bTZ5YjMk76wSm8s_h9lUkD2PRQeIfqkJaauJfOo3bEOE"
+    },
+    {
+     "date": "2026-11-21",
+     "fact": "The Central Election Commission held the fifth and final televised presentation session on November 20, 2026 for National Referendum No. 22 ahead of the November 28 vote.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGv9M8kTo6e2OoMe9t7AWr3weHv6zcPVRDePy54Co8H1HhbQG_bwd-KOFlrKxvsq9E-nTS2uXO_L159RWkgqGJDF6VAfKml_66E11wn-xH0V6iQoS11wS4qW3_sefjjYH0="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "Commentators noted that public discussion of Referendum No. 22 has been unusually muted ahead of the November 28 vote, in part because the Lai administration already reversed course to allow restart applications for the No. 2 and No. 3 nuclear plants.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjPFYFRVWY_Sf5wfz3dUsbq3gsdehIL1owYLXNfgERuTbGHTKDyDgY_0qSzKqlGX9r2qFmS2jbICKqGjDi-LDCnkWSFANUrnpDe6zL8dCk_Ej3KPXTfv9yrV_2wLS1rNzdiWXrIxR5uy_M8ME1xQG2"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "According to the Central Election Commission's announcement on November 24, 2026, there are 20,003,835 eligible voters for National Referendum No. 22, meaning at least 5,000,959 valid agree votes (and more agree than disagree votes) are required for passage.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4XPJJkJMC5dth2P67vC9sppDIBxoZa4nflKfDjCVuls0Y69J3PnOaUK0ZGra032wFu9UaHXBmLXSMzcyqWUYa8hlyIG2xQjyPc1nHYqCGVH2KhjnJXUHaDPUh2dV7Ht6h0YSUvsK5PrLN"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "The Central Election Commission stated in a November 25 press release that polling runs from 8:00 AM to 4:00 PM on November 28 and that CEC Chairman Michael You expects nationwide vote counting to be completed before midnight, no later than the 11:40 PM completion time in 2022.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkKLoiM8VVizp_jSI48KdZ_IGzc9h8sBhex957j9afelGWyKWozhWUpMNTYjMeXPh_gz4WIjLcSi--CeI6MdlzwnV8au7_WY2DT18rvOZDY24CgxJhTG9_YF8tsJpld2r0Aw=="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "At a press conference on November 26, the National Nuclear Abolition Action Platform warned against online rumors telling anti-nuclear voters not to pick up their referendum ballots, urging them to cast \"disagree\" votes because concurrent local election turnout makes crossing the 25% threshold easy.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf-HbCCWah4wF2O-PuxQx3JJ9TABBtQ2L1rIvmeXFEqdU5soMnG1TrG5OAU2zw_W2JKY40ANZHIqnu2GxK_51O-cJxGbTfLUWvPUl_2ZbAV6OcK-dgT5-rmkc0qkcLe3yzggHa2Q=="
+    }
+   ],
+   "counter": "Because the Lai administration has already initiated safety reviews to restart the Maanshan nuclear plant and Taiwan has not suffered power shortages since entering zero-nuclear status in May 2025, voter urgency surrounding this fourth nuclear referendum in eight years is noticeably lower than in 2018. Furthermore, because referendum ballots are issued at a separate table after local election ballots and many anti-nuclear or indifferent voters may follow online calls to boycott picking up the referendum ballot, total referendum turnout could lag local election turnout enough to leave \"agree\" votes just short of the 5,000,959 statutory quorum."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:16:13Z",
+   "p": 0.58,
+   "searches": 18,
+   "sources": [
+    "https://www.nucnet.org/news/taiwan-votes-to-reject-government-phaseout-of-nuclear-power",
+    "https://sunmedia.tw/news/collaborative/6Q9RBBQvuq9M0FzrLGodbJnCl1OOe9cXKhuBSVii1NPy9iJgp6a4kbdxiEmQbhJGM",
+    "https://www.electionguide.org/elections/id/3745/",
+    "https://web.archive.org/web/20250826174254id_/https:/www.world-nuclear-news.org/articles/low-turnout-invalidates-taiwan-referendum-result",
+    "https://gcaa.org.tw/17084/",
+    "https://newtalk.tw/news/view/2026-11-26/1073841",
+    "https://en.wikipedia.org/wiki/2025_Taiwanese_referendum",
+    "https://web.archive.org/web/20181124194323/http:/referendum.2018.nat.gov.tw/pc/zh_TW/00/00000000000000000.html",
+    "https://n.yam.com/Article/20261126427147",
+    "https://udn.com/news/story/125076/9889033",
+    "https://news.ltn.com.tw/news/politics/breakingnews/5651602",
+    "https://tw.news.yahoo.com/%E4%B9%9D%E5%90%88-%E9%81%B8%E8%88%89-%E7%B8%A3%E5%B8%82%E9%A6%96%E9%95%B7%E6%94%BF%E9%BB%A8%E5%B8%AD%E6%AC%A1%E7%9C%8B%E9%80%99-164421576.html",
+    "https://udn.com/news/story/124652/9889033",
+    "https://www.taipeitimes.com/News/taiwan/archives/2026/11/21/2003868136",
+    "https://econotimes.com/Taiwan-Nuclear-Vote-Puts-Demand-Debate-Alongside-Maanshan-Safety-Review-1779292",
+    "https://www.mygopen.com/2026/11/vote-22.html",
+    "https://election.ltn.com.tw/2018/statistic/6",
+    "https://election.infominer.io/en/nuclear-referendum-2026/",
+    "https://focustaiwan.tw/politics/202611160018",
+    "https://udn.com/news/story/6656/9894386",
+    "https://newbloommag.net/2026/11/25/kmt-nuclear-referendum/",
+    "https://en.wikipedia.org/wiki/Local_elections_in_Taiwan",
+    "https://www.worldjournal.com/wj/story/121218/9900503",
+    "https://euroview.ecct.com.tw/category-inside.php?id=2992",
+    "https://www.youtube.com/watch?v=Ze8sdlbZJK4"
+   ],
+   "reason": "Taiwan’s post-2017 referendum rule requires both a plurality and agree votes equal to at least one-quarter of the entire electorate. The only nuclear measure that cleared that bar was the 2018 “nuclear for green” question, held with local elections (about 5.89 million agree versus 4.01 million disagree on roughly 55 percent referendum turnout). The 2021 Lungmen and 2025 Maanshan votes, held on their own, produced agree totals of 3.80 million and 4.34 million and failed the quorum; 2025 agree votes were 74 percent of ballots cast, but turnout was only 29.5 percent.\n\nThis vote is again tied to the nine-in-one elections. The CEC has fixed the date, the roll (20,003,835), and therefore the exact bar at 5,000,959 agree votes, and counting is expected the same night. An August 2026 national survey found 60.7 percent favoring continued nuclear use for supply and industry against 22.5 percent for a nuclear-free path. KMT legislators are explicitly telling supporters to collect the referendum ballot and vote agree, and reporting on 22 November cited expert expectations that referendum turnout could top 50 percent. Those facts pull the case toward the 2018 concurrent outcome rather than the two failed standalone votes.\n\nThe offset is salience and take-up. Coverage has treated the question as secondary to the local races, anti-nuclear groups are mobilizing disagree votes, and a large share of people at the polls can simply decline the extra ballot. In 2021 a broader turnout flipped a nuclear question to a disagree plurality. If referendum participation lands only in the mid-40s and the agree share of valid votes is near 50–55 percent rather than the 60 percent in older polls, agree can finish under 5,000,959 or lose the head-to-head.\n\nNEW FACTS\n- 2026-11-24 | The CEC announced 20,003,835 eligible referendum voters, so the one-quarter agree threshold is 5,000,959. | https://focustaiwan.tw/politics/202611240024\n- 2026-11-22 | Reporting stated that scholars and experts expected nuclear-referendum turnout to exceed 50 percent, which the KMT caucus cited while urging agree votes. | https://udn.com/news/story/6656/9894386\n- 2026-09-01 | A MyFormosa national survey conducted 24–26 August 2026 found 60.7 percent saying Taiwan should keep using nuclear power for stable supply and industry, versus 22.5 percent for a nuclear-free homeland. | https://tw.news.yahoo.com/%E5%BB%A2%E9%99%A4%E9%9D%9E%E6%A0%B8%E5%AE%B6%E5%9C%92%E5%85%AC%E6%8A%95-%E6%9C%80%E6%96%B0%E6%B0%91%E8%AA%BF%E5%87%BA%E7%88%90-60-7-%E6%B0%91%E7%9C%BE%E5%8A%9B%E6%8C%BA%E7%B9%BC%E7%BA%8C%E7%94%A8-134022788.html\n- 2025-08-23 | The Maanshan referendum drew 4,341,432 agree votes and 1,511,693 disagree votes on 29.53 percent turnout and failed the quarter-electorate test. | https://en.wikipedia.org/wiki/2025_Taiwanese_referendum\n- 2018-11-24 | The concurrent pro-nuclear referendum recorded 5,894,884 agree votes and 4,013,877 disagree votes and was recorded as passed. | https://web.archive.org/web/20181124194323/http://referendum.2018.nat.gov.tw/pc/zh_TW/00/00000000000000000.html\n- 2026-11-26 | Anti-nuclear organizers said an election-day referendum makes the quarter-electorate bar easy to cross and urged voters to cast disagree ballots rather than skip the referendum. | https://newtalk.tw/news/view/2026-11-26/1073847\n\nCOUNTER\nThe referendum is low-salience next to the local races, so many election-day voters may not take the extra ballot. If participation stays near the mid-40s and the agree share of valid votes is only slightly above half—as happened when a broader electorate rejected the 2021 Lungmen question—agree votes can finish below 5,000,959 or lose to disagree even though the poll is held on schedule.",
+   "facts": [
+    {
+     "date": "2026-11-24",
+     "fact": "The CEC announced 20,003,835 eligible referendum voters, so the one-quarter agree threshold is 5,000,959.",
+     "url": "https://focustaiwan.tw/politics/202611240024"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "Reporting stated that scholars and experts expected nuclear-referendum turnout to exceed 50 percent, which the KMT caucus cited while urging agree votes.",
+     "url": "https://udn.com/news/story/6656/9894386"
+    },
+    {
+     "date": "2026-09-01",
+     "fact": "A MyFormosa national survey conducted 24–26 August 2026 found 60.7 percent saying Taiwan should keep using nuclear power for stable supply and industry, versus 22.5 percent for a nuclear-free homeland.",
+     "url": "https://tw.news.yahoo.com/%E5%BB%A2%E9%99%A4%E9%9D%9E%E6%A0%B8%E5%AE%B6%E5%9C%92%E5%85%AC%E6%8A%95-%E6%9C%80%E6%96%B0%E6%B0%91%E8%AA%BF%E5%87%BA%E7%88%90-60-7-%E6%B0%91%E7%9C%BE%E5%8A%9B%E6%8C%BA%E7%B9%BC%E7%BA%8C%E7%94%A8-134022788.html"
+    },
+    {
+     "date": "2025-08-23",
+     "fact": "The Maanshan referendum drew 4,341,432 agree votes and 1,511,693 disagree votes on 29.53 percent turnout and failed the quarter-electorate test.",
+     "url": "https://en.wikipedia.org/wiki/2025_Taiwanese_referendum"
+    },
+    {
+     "date": "2018-11-24",
+     "fact": "The concurrent pro-nuclear referendum recorded 5,894,884 agree votes and 4,013,877 disagree votes and was recorded as passed.",
+     "url": "https://web.archive.org/web/20181124194323/http://referendum.2018.nat.gov.tw/pc/zh_TW/00/00000000000000000.html"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Anti-nuclear organizers said an election-day referendum makes the quarter-electorate bar easy to cross and urged voters to cast disagree ballots rather than skip the referendum.",
+     "url": "https://newtalk.tw/news/view/2026-11-26/1073847"
+    }
+   ],
+   "counter": "The referendum is low-salience next to the local races, so many election-day voters may not take the extra ballot. If participation stays near the mid-40s and the agree share of valid votes is only slightly above half—as happened when a broader electorate rejected the 2021 Lungmen question—agree votes can finish below 5,000,959 or lose to disagree even though the poll is held on schedule."
+  }
+ ]
+}

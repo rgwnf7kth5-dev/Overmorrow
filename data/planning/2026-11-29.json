@@ -460,7 +460,49 @@
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-29/tw-taipei-29.belief.json",
                 "note": "the agent logged more actions than the step limit (it says so in the trace)"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:49Z",
+                  "p_blind": 0.52,
+                  "p": 0.6,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:10:30Z",
+                  "p": 0.62,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/tw-taipei-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:10:55Z",
+                  "p": 0.68,
+                  "searches": 5,
+                  "sources": 17,
+                  "trace": "data/dossiers/2026-11-29/tw-taipei-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:12:31Z",
+                  "p": 0.44,
+                  "searches": 8,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/tw-taipei-29.research.json"
+                }
+              ]
             }
           }
         }
@@ -684,6 +726,50 @@
               "p_held": 0.996,
               "p_if_held": 0.734,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:50Z",
+                  "p_blind": 0.78,
+                  "p": 0.73,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:13:53Z",
+                  "p": 0.81,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/tw-nuclear-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:14:14Z",
+                  "p": 0.78,
+                  "searches": 8,
+                  "sources": 20,
+                  "trace": "data/dossiers/2026-11-29/tw-nuclear-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:16:13Z",
+                  "p": 0.58,
+                  "searches": 18,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/tw-nuclear-29.research.json"
+                }
+              ]
             }
           }
         }
@@ -921,6 +1007,21 @@
               "p": 0.958,
               "source": "dossier average of latest TPP per pollster 10-25 Nov (DemosAU, Newspoll, Resolve, YouGov, RedBridge, Roy Morgan, Agenda C); threshold from ABC pendulum",
               "note": "Kind \"other\": a seat majority, not the winner; lead = Coalition two-party-preferred lead in the final-poll average, threshold = lead needed for 45 seats on a uniform swing (ABC pendulum, Monbulk 7.6%)."
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:48Z",
+                  "p_blind": 0.8,
+                  "p": 0.82,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -1161,7 +1262,49 @@
                 "steps": 8,
                 "searches": 2,
                 "trace": "data/dossiers/2026-11-29/itlos-sealion-29.belief.json"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:51Z",
+                  "p_blind": 0.43,
+                  "p": 0.42,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:09:58Z",
+                  "p": 0.33,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/itlos-sealion-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:10:18Z",
+                  "p": 0.42,
+                  "searches": 12,
+                  "sources": 15,
+                  "trace": "data/dossiers/2026-11-29/itlos-sealion-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:11:32Z",
+                  "p": 0.34,
+                  "searches": 21,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/itlos-sealion-29.research.json"
+                }
+              ]
             }
           }
         }
@@ -1440,6 +1583,50 @@
                 "markets.mjs search \"Black Friday 2026 Adobe billion\""
               ],
               "note": "No market on the Black Friday figure. Only related: Manifold 'Adobe Cyber Monday 2026 at least $15.2bn' at 0.41 (4 traders, liquidity 100), different day; not matching."
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:46Z",
+                  "p_blind": 0.52,
+                  "p": 0.53,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:14:44Z",
+                  "p": 0.64,
+                  "searches": 4,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/us-blackfriday-129-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:15:25Z",
+                  "p": 0.52,
+                  "searches": 13,
+                  "sources": 21,
+                  "trace": "data/dossiers/2026-11-29/us-blackfriday-129-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:16:37Z",
+                  "p": 0.6,
+                  "searches": 12,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/us-blackfriday-129-29.research.json"
+                }
+              ]
             }
           }
         }
@@ -1868,7 +2055,49 @@
                 "searches": 5,
                 "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.belief.json",
                 "note": "the agent logged more actions than the step limit (it says so in the trace)"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:08:40Z",
+                  "p_blind": 0.65,
+                  "p": 0.65,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:11:35Z",
+                  "p": 0.64,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:12:15Z",
+                  "p": 0.62,
+                  "searches": 6,
+                  "sources": 10,
+                  "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:13:28Z",
+                  "p": 0.67,
+                  "searches": 16,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.research.json"
+                }
+              ]
             }
           }
         }
@@ -2071,6 +2300,21 @@
               "p_held": 0.973,
               "p_if_held": 0.962,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:09:09Z",
+                  "p_blind": 0.96,
+                  "p": 0.96,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2369,7 +2613,51 @@
               "method": "geo-odds"
             },
             "calibrated": null,
-            "mirrored": "The forecasters were asked about turnout above 35.97%; the ensemble put it below 50%, so the claim is published on the likelier side (at or below 35.97%), as the desk had announced to them. p = p_held (0.997) − p(above)."
+            "mirrored": "The forecasters were asked about turnout above 35.97%; the ensemble put it below 50%, so the claim is published on the likelier side (at or below 35.97%), as the desk had announced to them. p = p_held (0.997) − p(above).",
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:09:17Z",
+                  "p_blind": 0.65,
+                  "p": 0.67,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-26T19:12:50Z",
+                  "p": 0.61,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/dz-turnout-29.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-26T19:13:11Z",
+                  "p": 0.72,
+                  "searches": 4,
+                  "sources": 11,
+                  "trace": "data/dossiers/2026-11-29/dz-turnout-29.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-26T19:14:20Z",
+                  "p": 0.64,
+                  "searches": 13,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-29/dz-turnout-29.research.json"
+                }
+              ]
+            }
           }
         }
       ]
@@ -2922,5 +3210,36 @@
     "tw-taipei-29 – Ťiang Wan-an obhájí post starosty Tchaj-peje – so 28. 11.",
     "au-victoria-29 – koalice Jess Wilson získá ve Viktorii nejméně 45 z 88 křesel – so 28. 11.",
     "itlos-sealion-29 – tribunál pro mořské právo nařídí ve sporu o Sea Lion alespoň jedno předběžné opatření – so 28. 11."
-  ]
+  ],
+  "external_run": {
+    "at": "2026-11-26T19:19:55Z",
+    "providers": [
+      "openai gpt-6.2-sol",
+      "google gemini-4-argon",
+      "xai grok-4.7"
+    ],
+    "binary_claims": 8,
+    "forecasts": 0,
+    "contested": [
+      "itlos-sealion-29",
+      "tw-taipei-29",
+      "gulf-ukmto-29",
+      "dz-turnout-29",
+      "tw-nuclear-29",
+      "us-blackfriday-129-29"
+    ],
+    "research": 0,
+    "wording_flags": [
+      {
+        "claim": "dz-turnout-29",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-29/dz-turnout-29.wording.json"
+      }
+    ],
+    "failed": []
+  }
 }

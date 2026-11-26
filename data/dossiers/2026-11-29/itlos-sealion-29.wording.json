@@ -1,0 +1,32 @@
+{
+ "claim": "In its order delivered on Saturday 28 November 2026, the International Tribunal for the Law of the Sea prescribes at least one provisional measure in Argentina's case against the United Kingdom over the Sea Lion oil project.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:16:51Z",
+   "ambiguous": true,
+   "scenario": "If the operative part states under article 290 that the parties ‘shall’ take a substantive step but introduces that direction with ‘decides’ rather than ‘prescribes,’ one reader could count it as a prescribed measure in substance, while another could read the quoted word ‘prescribes’ as an exact wording requirement.",
+   "yes_requires": "ITLOS must deliver its provisional-measures order in Case No. 37 (Argentina v. United Kingdom) within the stated 28 November 2026 Europe/Berlin window. The operative part must prescribe at least one provisional measure under UNCLOS article 290, whether requested by Argentina or fashioned by the Tribunal. Merely recording assurances, urging action in the recitals, or deciding only on reports or cos",
+   "decided_by": "The official ITLOS order’s operative part and the Tribunal’s official record of when the order was delivered."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:16:52Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The operative part (dispositif) of the ITLOS order in Case No. 37 (Argentina v. United Kingdom), delivered on 28 November 2026 (Europe/Berlin), must contain at least one paragraph explicitly prescribing a provisional measure under article 290 of UNCLOS.",
+   "decided_by": "The official text of the order delivered by the International Tribunal for the Law of the Sea (ITLOS) in Case No. 37."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:18:20Z",
+   "ambiguous": true,
+   "scenario": "The order rejects Argentina's requested measures, or finds that the circumstances do not require those measures, but also prescribes a different provisional measure. One reader applies the YES rule for own-motion measures; another treats the unqualified NO conditions for rejecting the request or finding that circumstances do not require provisional measures as controlling.",
+   "yes_requires": "The dispositif of the ITLOS order in Case No. 37 (Argentina v. United Kingdom), Provisional Measures, delivered on 28 November 2026 (Europe/Berlin), contains at least one paragraph prescribing a provisional measure under UNCLOS article 290, whether Argentina requested it or the Tribunal adopted a different one of its own motion.",
+   "decided_by": "The International Tribunal for the Law of the Sea, through the operative part of that order."
+  }
+ ]
+}

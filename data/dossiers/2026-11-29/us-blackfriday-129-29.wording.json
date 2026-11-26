@@ -1,0 +1,32 @@
+{
+ "claim": "Adobe Analytics' figure, published on Saturday 28 November 2026, puts US online spending on Black Friday (27 November 2026) above $12.9bn, the figure Adobe forecast.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-26T19:16:56Z",
+   "ambiguous": true,
+   "scenario": "If Adobe has not published a full-day figure by 23:00 ET on 28 November, one reader would resolve the claim as Pending under the criterion, while another would resolve it as NO under the event-window rule.",
+   "yes_requires": "Adobe Analytics publishes its first full-day figure for US online spending on Black Friday, 27 November 2026, within the event window, and the figure as stated is strictly greater than US$12.9 billion.",
+   "decided_by": "Adobe Analytics' first published full-day Black Friday 2026 figure, identified as us-blackfriday-29, using the amount as stated rather than rounding it to one decimal place."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-26T19:17:02Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Adobe Analytics must publish a first full-day US online spending figure for Black Friday (27 November 2026) that is strictly greater than $12.9 billion by 23:00 ET on 28 November 2026.",
+   "decided_by": "Adobe Analytics' first published full-day Black Friday 2026 figure (referenced via claim us-blackfriday-29)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-26T19:18:00Z",
+   "ambiguous": true,
+   "scenario": "If Adobe has published no full-day figure by 23:00 ET on 28 Nov 2026 (only a partial update, or the full-day total only later), the criterion says Pending while the event-window rule says NO, so one careful reader would leave it unresolved and another would resolve NO.",
+   "yes_requires": "Adobe's first full-day Black Friday 2026 US online-spending figure (claim us-blackfriday-29), taken as stated, is strictly above 12.9 billion USD and is published by 23:00 ET on 28 November 2026.",
+   "decided_by": "Adobe Analytics' stated first full-day Black Friday 2026 figure, compared with the criterion's 12.9 threshold."
+  }
+ ]
+}
