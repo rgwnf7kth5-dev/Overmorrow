@@ -4294,6 +4294,58 @@
           },
           "note": "Ynet (25 Nov): the Eisenkot bloc prepares to swear in a government next week and hopes to bring Shas in; Liberman opened the door to a government backed by ultra-Orthodox parties and Ra'am; the Democrats suspended coalition talks; Likud–Yashar unity talks reached a fourth round.",
           "note_cs": "Ynet (25. listopadu): blok Gadiho Eisenkota chystá na příští týden složení slibu vlády a chce získat stranu Šas; Liberman připustil vládu opřenou o ultraortodoxní strany a Ra'am; Demokraté přerušili koaliční jednání; rozhovory Likudu a strany Jašar o jednotě pokračovaly čtvrtým kolem."
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.83,
+          "combined": 0.831,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.8,
+              "reason": "Ref class: since 1996 most Israeli elections produced a government within 2-3 months; 2019 (twice) was the failure case. The deadline is ~14 weeks after the 27 Oct vote. 26 Nov: Eisenkot-Democrats deal signed, Liberman deal reported, Ra'am/UTJ reportedly in, target is next week. Risks: Haredi/Ra'am mix, Likud's appeal.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.85,
+              "reason": "JPost/Ynet 26 Nov: Eisenkot-Liberman preliminary deal (Defense, Justice to YB), Eisenkot-Golan deal reached, UTJ nearing deal on draft-arrest arrangement; Yashar aims to form government next week without asking Herzog for an extension. Mandate runs to 6 Dec (+14 days to 20 Dec), leaving January slack before 31 Jan. Risks: Bennett terms, Ra'am vs Liberman veto.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.84,
+              "reason": "Case for no: coalition needing Liberman, UTJ and Ra'am together is internally contradictory; Liberman already warns on rotation; Likud appealed results; Shas not in. But 26 Nov: Eisenkot-Golan deal signed, Liberman deal reported, Abbas says Ra'am and UTJ join, target is a government next week, and over nine weeks of slack remain to 31 Jan.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.77,
+              "reason": "Polymarket 'next Israeli government formed by': 31 Dec 0.71 (liq $33k), 28 Feb 0.795; interpolated 31 Jan ~0.76. Ynet/JPost 26 Nov: Eisenkot-Democrats deal signed, Yisrael Beytenu deal reported, aims to form government next week, Ra'am/UTJ reportedly in; small upward nudge.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.88,
+              "reason": "26 Nov: Eisenkot-Democrats coalition agreement, Yisrael Beytenu deal reported, UTJ/Ra'am talk, aim to form a government next week; 27 Oct election, deadline 31 Jan leaves ~9 weeks. Risks: Shas/ultra-Orthodox talks stall, Likud appeal, fragile majority.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-israeli-government-formed-by",
+            "p": 0.71,
+            "read_at": "2026-11-26T19:02:59+01:00"
+          },
+          "note": "Re-forecast: Eisenkot signed a coalition deal with Golan's Democrats on 26 Nov (Ynet), a deal with Liberman's Yisrael Beytenu is reported (JPost) and Ra'am says it and UTJ will join; Eisenkot aims to present a government next week. No confidence vote yet.",
+          "note_cs": "Přepočet: Eisenkot 26. listopadu podepsal koaliční dohodu s Golanovými Demokraty (Ynet), hlášena je i dohoda s Libermanovou stranou Jisra'el bejtenu (JPost) a Ra'am tvrdí, že on i Sjednocený judaismus Tóry vstoupí; Eisenkot chce vládu představit příští týden. Hlasování o důvěře zatím neproběhlo.",
+          "market_note": "Polymarket question is government formed by 31 Dec; the board deadline is 31 Jan (between the 31 Dec and 28 Feb prices, about 0.76)."
         }
       ],
       "result": null
@@ -5420,6 +5472,57 @@
             "read_at": "2026-11-19T18:07:52Z",
             "volume": 10416236
           }
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.93,
+          "combined": 0.935,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.92,
+              "reason": "Ref class: the FOMC almost never defies >90% market pricing guided by its own minutes (18 Nov: nearly all expect 25bp in Dec). New data firm: Oct PCE 3.8% y/y, core 3.3%, +0.3% m/m (BEA 25 Nov). Residual: Nov jobs/CPI before the mid-Dec meeting, political pressure.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.93,
+              "reason": "October minutes (18 Nov): nearly all participants expect a 25bp December hike; markets ~95%. BEA 25 Nov: October PCE +3.8% y/y, core +3.3%, both +0.3% m/m, so no dovish surprise. Remaining risks: November jobs and CPI before the 8-9 Dec meeting, political pressure.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.94,
+              "reason": "Case for no: real spending slightly down in October, November jobs and CPI still due, political pressure (Bessent), Warsh has surprised before. But October minutes (18 Nov) show nearly all participants expecting a 25 bp hike, 25 Nov PCE 3.8% y/y and core 3.3% with +0.3% m/m, and no Fed speaker has walked the signal back.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.95,
+              "reason": "Polymarket Dec FOMC: +25bp 0.935, +50bp 0.0215, total hike ~0.957 (liq ~$1m). Oct minutes (18 Nov) signalled a Dec hike; Oct PCE (25 Nov) 3.8% y/y, core 3.3%, firm monthly prints. Small residual for Nov jobs/CPI and political pressure.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.93,
+              "reason": "Minutes of 18 Nov: nearly all expect a 25 bp hike in December; 25 Nov PCE 3.8% y/y, core 3.3%, firm monthly prints; no dovish shift found. Residual: weak real spending, Nov jobs/CPI, political pressure.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632",
+            "p": 0.957,
+            "read_at": "2026-11-26T19:02:02+01:00"
+          },
+          "note": "Weekly re-forecast. October PCE (25 Nov): 3.8% year on year, core 3.3%, both +0.3% on the month; the October minutes point to a hike; November jobs and CPI are still to come before the 8–9 Dec meeting.",
+          "note_cs": "Týdenní přepočet. Říjnový index PCE (25. listopadu): meziročně 3,8 %, jádrový 3,3 %, oba meziměsíčně +0,3 %; zápis z říjnového zasedání ukazuje na zvýšení; před zasedáním 8.–9. prosince ještě vyjdou listopadová data o zaměstnanosti a inflaci."
         }
       ],
       "result": null
@@ -9863,6 +9966,51 @@
           ],
           "note": "Weekly re-forecast. Culture Minister Klempíř (16 Nov): second reading in early 2027, funding talks tied to the EMFA implementation law; the 15 Nov Letná rally did not move Babiš; the opposition promises obstruction. Little time for a third reading by 31 January.",
           "note_cs": "Týdenní přepočet. Ministr kultury Klempíř (16. 11.): druhé čtení začátkem roku 2027, jednání o financování spojená se zákonem k provedení EMFA; demonstrace na Letné 15. 11. Babiše nezviklala; opozice slibuje obstrukce. Na třetí čtení do 31. ledna zbývá málo času."
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.05,
+          "combined": 0.05,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "reason": "Ref class: contested Czech bills facing opposition obstruction rarely get second and third readings in one sitting; third readings usually come weeks later. 26 Nov hearing: Klempir says second reading in January; Okamura (22 Nov) says abolition by summer; ČT/ČRo ask for withdrawal. A third reading by 31 Jan would need an unusually fast January.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "reason": "26 Nov Chamber hearing: second reading 'in January' with broad expert discussion; Okamura (22 Nov) says fees abolished 'by summer at the latest'; opposition promises obstruction; ČT wants 6.7bn not 5.7bn; ČRo asks to withdraw. Third reading cannot come sooner than days after second; slipping into February is likely.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.06,
+              "reason": "Case for yes: coalition has the votes and could force second reading early January and third reading late January. But 26 Nov hearing: Klempir puts second reading in January with broad expert debate, Okamura (22 Nov) says abolition 'by summer', opposition promises obstruction, CT and CRo and Senate push back. Third reading by 31 Jan needs everything to go right.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.05,
+              "reason": "No market found. 26 Nov Chamber hearing: second reading 'in January' with broad expert discussion; Okamura (22 Nov) says abolition by summer; opposition promises obstruction; EP and Senate (25 Nov) urge retreat. Third reading by 31 Jan would need second and third readings within weeks.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.04,
+              "reason": "26 Nov: Klempir says second reading is in January with broad expert discussion; Okamura wants abolition by summer; opposition promises obstruction. Third reading by 31 Jan would require second reading early in January and a quick follow-up; unlikely.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. At the Chamber hearing on 26 Nov the second reading was stated for January; Okamura says the fees should go by summer at the latest; the opposition promises obstruction, and a third reading by 31 Jan looks very unlikely.",
+          "note_cs": "Týdenní přepočet. Na slyšení ve Sněmovně 26. listopadu zaznělo, že druhé čtení bude v lednu; Okamura říká, že poplatky by měly skončit nejpozději v létě; opozice slibuje obstrukce a třetí čtení do 31. ledna je velmi nepravděpodobné."
         }
       ]
     },
@@ -10475,6 +10623,51 @@
           ],
           "note": "Čupić (Student List) elected speaker on 19 Nov, 140–97, which also makes him acting president, so the PM nomination no longer runs through SNS. But no PM candidate has been named, a presidential campaign now takes December, and the constitutional deadline (mid-February) lies after the 31 Jan cut-off.",
           "note_cs": "Čupić (Studentská kandidátka) byl 19. 11. zvolen předsedou parlamentu poměrem 140:97, čímž se stal i úřadujícím prezidentem a návrh premiéra už nejde přes SNS. Kandidát na premiéra ale dosud nebyl jmenován, prosinec zaplní prezidentská kampaň a ústavní lhůta (polovina února) končí až po 31. lednu."
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.35,
+          "combined": 0.35,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.3,
+              "reason": "Ref class: Serbian PMs are usually elected near the constitutional 90-day limit (Vucevic 2024, Brnabic 2022), here mid-Feb, after the 31 Jan cut-off. The Student List holds the chair (Cupic, 140-97, 19 Nov) and is building a cabinet, but has no PM name yet; the 27 Dec presidential vote (possible run-off) uses up December.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.42,
+              "reason": "N1 26 Nov: Student List's Ristic says work is under way on the government (ministries, ministers) and the aim is to take over 'as soon as possible', but no PM named. Speaker/acting president Cupic (SL) called the presidential vote for 27 Dec; a runoff would fall in January. SL holds ~140 seats, but constitutional deadline (~mid-Feb) lies after 31 Jan and the campaign absorbs December.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.45,
+              "reason": "Case for no: on 26 Nov still no PM name, presidential election on 27 Dec (possible January runoff) absorbs the movement, holidays follow, and the constitutional deadline is mid-February, after the cut-off. But the list holds 140 seats, its speaker is acting president and can nominate, and MP Ristic says ministries and ministers are being worked on now.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.35,
+              "reason": "No timing market; Polymarket next-PM market (Soskic 0.61) has no deadline and so cannot anchor. Student List holds majority (Cupic speaker 19 Nov, 140-97) and is drafting ministries (26 Nov), but no PM named, presidential vote 27 Dec (possible runoff in Jan) and constitutional deadline mid-Feb fall near or after 31 Jan.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.25,
+              "reason": "26 Nov: no PM candidate named; presidential election called for 27 Dec; Student List drafting government structure; Cupic is speaker. Constitutional deadline for government is mid-February, after the 31 Jan cut-off, and the PM vote likely follows the presidential race.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Weekly re-forecast. No prime minister named yet; acting President Čupić called the presidential election for 27 Dec, with a possible runoff in January, which takes up most of the window before 31 Jan; the constitutional deadline for electing a government falls in mid-February, after the cut-off.",
+          "note_cs": "Týdenní přepočet. Kandidát na premiéra zatím jmenován nebyl; úřadující prezident Čupić vypsal prezidentské volby na 27. prosince s možným druhým kolem v lednu, což zabere většinu doby do 31. ledna; ústavní lhůta pro zvolení vlády vyprší v polovině února, až po termínu otázky."
         }
       ]
     },
@@ -11159,6 +11352,58 @@
           "market": null,
           "note": "Weekly re-forecast; up from 71% to 83%. Germany formally backed Hernández de Cos on 17 Nov, joining France, and Expansión reports an ECON hearing on 7 Dec and appointment at the 17 Dec European Council; Knot stays in the race.",
           "note_cs": "Týdenní přepočet; nárůst ze 71 na 83 %. Německo 17. listopadu formálně podpořilo Hernándeze de Cos, stejně jako Francie, a Expansión uvádí slyšení ve výboru ECON 7. prosince a jmenování na Evropské radě 17. prosince; Knot ze souboje neodstoupil."
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.95,
+          "combined": 0.954,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.95,
+              "reason": "Ref class: once euro leaders settle on an ECB name, the Council recommendation follows within days (Lagarde 2019). 26 Nov: leaders backed Hernandez de Cos; ambassadors agreed the recommendation texts for written adoption that evening; appointment set for the 17 Dec EUCO. Residual risk: a procedural slip, or a consilium release missing by 31 Dec.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.96,
+              "reason": "Euronews 26 Nov 15:18: eurozone leaders backed Hernandez de Cos; EU ambassadors agreed the recommendation texts for all three posts, to be adopted by eurozone governments in writing that evening (criterion a), with EUCO appointment in December (b). Not yet seen on consilium (site refuses scripted reads); residual risk is only timing/format.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.95,
+              "reason": "Case for no: written procedure could be blocked or delayed, Knot's backers could hold out, or consilium wording may fall short. But 26 Nov eurozone leaders backed Hernandez de Cos, ambassadors agreed the recommendation text for adoption in writing that evening, and appointment is planned for the 17-18 Dec European Council. Two routes, five weeks.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.96,
+              "reason": "Polymarket/Kalshi price Hernandez de Cos as next ECB president at ~99% (identity, not timing; thin). Euronews 26 Nov: eurozone leaders backed him; ambassadors agreed recommendation text, to be adopted by written procedure that evening = criterion (a); EUCO appointment due 17 Dec. Not yet on consilium as of ~19:00.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.95,
+              "reason": "26 Nov: eurozone leaders backed Hernandez de Cos; ambassadors agreed recommendation text, written adoption expected that evening; European Council to appoint in December. Criterion (a) or (b) very likely met with a consilium release before 31 Dec; small risk of delay or wording.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": {
+            "source": "polymarket",
+            "kind": "exchange",
+            "url": "https://polymarket.com/event/next-ecb-president",
+            "p": 0.9875,
+            "read_at": "2026-11-26T19:02:56+01:00"
+          },
+          "note": "Re-forecast: euro-area leaders backed Pablo Hernández de Cos over Klaas Knot on 26 Nov; EU ambassadors agreed the text of the recommendations, to be adopted in writing that evening (Euronews); the European Council appoints in December. Not yet on consilium.europa.eu at 19:00.",
+          "note_cs": "Přepočet: lídři eurozóny 26. listopadu podpořili Pabla Hernándeze de Cos před Klaasem Knotem; velvyslanci EU schválili text doporučení, které se mělo týž večer přijmout písemnou procedurou (Euronews); Evropská rada jmenuje v prosinci. Na consilium.europa.eu to v 19:00 ještě nebylo.",
+          "market_note": "Polymarket prices who becomes the next ECB president, not whether the Council recommendation is adopted by 31 Dec; it does not match the question."
         }
       ]
     },
@@ -15997,6 +16242,51 @@
           "market": null,
           "note": "New question: opened before the special summit of 26–27 Nov; two summits remain before the deadline.",
           "note_cs": "Nová otázka: otevřena před mimořádným summitem 26.–27. listopadu; do termínu zbývají dva summity."
+        },
+        {
+          "at": "2026-11-26T19:40:00+01:00",
+          "p": 0.71,
+          "combined": 0.712,
+          "agents": [
+            {
+              "role": "base-rate",
+              "model": "claude-opus-5-5",
+              "p": 0.72,
+              "reason": "Ref class: EUCO usually delivers Ukraine funding at a December summit, often late, with opt-outs (Dec 2025 EUR 90bn loan, HU/SK/CZ outside). Any configuration counts, and two chances remain (27 Nov, 17-18 Dec). 26 Nov: Bulgaria joins; von der Leyen 'very confident'; DE/NL/Nordics want Ukraine locked in first. Tying it to the MFF is the main risk.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "evidence",
+              "model": "claude-opus-5-5",
+              "p": 0.72,
+              "reason": "26 Nov: Bulgaria joins the EUR45bn loan (not military part); SK, HU, CZ want opt-out, which the criterion allows ('any configuration'). Von der Leyen 'very confident'; DE/NL/Nordics tie budget to locking in Ukraine 2027 money, which pushes for a loan deal first. No decision day one; day two 27 Nov and 17-18 Dec EUCO left. Precedent: Dec 2025 EUR90bn agreed with three opt-outs.",
+              "at": "2026-11-26T19:20:00+01:00"
+            },
+            {
+              "role": "adversarial",
+              "model": "claude-fable-5-2",
+              "p": 0.7,
+              "reason": "Case for no: Merz reportedly threatens veto unless all 27 join; SK, HU, CZ want opt-outs; loan entangled with stalled MFF; 26 Nov day one ended without decision; a referral or principles-only text would not count. But Bulgaria joined 26 Nov, any configuration counts, payers want 2027 money locked first, and 27 Nov plus 17-18 Dec remain.",
+              "at": "2026-11-26T19:03:02+01:00"
+            },
+            {
+              "role": "anchor",
+              "model": "claude-opus-5-5",
+              "p": 0.7,
+              "reason": "No market found. Criterion accepts any configuration; on 26 Nov Bulgaria joined the opt-in, only SK/HU/CZ want out, vdL 'very confident'. Precedent: Dec 2025 EUCO agreed joint-borrowing Ukraine loan with opt-outs. Risk: DE/NL/SE/DK/IE link to MFF, Merz veto threat. Day two 27 Nov plus 17-18 Dec summit.",
+              "at": "2026-11-26T19:25:00+01:00"
+            },
+            {
+              "role": "outsider",
+              "model": "claude-sonnet-5-5",
+              "p": 0.72,
+              "reason": "26 Nov: no decision on day one, but Bulgaria joining, von der Leyen confident, Merz ties budget to the loan. Any-configuration clause allows opt-outs for SK/HU/CZ. Two summits remain (27 Nov, 17-18 Dec); risk is veto linkage and wording that counts only as principles.",
+              "at": "2026-11-26T19:30:00+01:00"
+            }
+          ],
+          "market": null,
+          "note": "Re-forecast after day one of the special summit (26 Nov): Bulgaria joins the €45bn loan (without the military part); Slovakia, Hungary and Czechia still seek an opt-out, which the criterion allows; Merz reportedly threatens to veto the package unless all sign; day two (27 Nov) and the 17–18 Dec summit remain.",
+          "note_cs": "Přepočet po prvním dni mimořádného summitu (26. listopadu): Bulharsko se k půjčce 45 miliard eur připojí (bez vojenské části); Slovensko, Maďarsko a Česko dál chtějí výjimku, kterou kritérium připouští; Merz podle zpráv hrozí vetem celého balíku, pokud nepodepíší všichni; zbývá druhý den (27. listopadu) a summit 17.–18. prosince."
         }
       ]
     },

@@ -1,0 +1,2926 @@
+{
+  "edition": "2026-11-29",
+  "events_date": "2026-11-28",
+  "prepared_at": "2026-11-26T20:05:00+01:00",
+  "method_version": 6,
+  "number_expected": 38,
+  "candidates": 55,
+  "candidates_note": "9 proposed stories with 10 claims (2 interval: us-blackfriday-29, ua-drones-29; 1 derived: us-blackfriday-129-29) and 46 dropped candidates (some grouped), from the stories of the day (10 listed), the Czech and world/Europe/economy sweeps, the forecast board, the scouts' agenda (64 entries) and readers' leads. Saturday 28 Nov is a thin day: no Czech institution sits; the world has Taiwan's local elections and nuclear referendum, Victoria's state election, Algeria's local elections, an ITLOS order and Adobe's Black Friday figure.",
+  "planned_lead": "tw-taipei (Chiang Wan-an re-elected in Taipei: 54%, a near toss-up with the polls split by sponsor) with tw-nuclear (referendum passes: 73%) beside it; alternative lead ua-war (drones in the night to Saturday: median about 135, 80% range 88–291). Economy: us-blackfriday (Adobe: median $12.97bn, range 12.67–13.29), tw-nuclear, itlos-sealion (51%).",
+  "cz_note": "No Czech story proposed.",
+  "cz_shortfall": "No Czech story for Saturday 28 Nov. The Czech sweep found no event of weight with a checkable outcome: no Chamber, Senate or cabinet sitting, no party congress (ODS rejected an extraordinary one; SPD meets in April 2027; the others held theirs earlier), no announced demonstration (Milion chvilek acts on 2 Dec), no strike, no ČSÚ or ČNB release, no court ruling; ERÚ's 2027 prices come on Mon 30 Nov and the budget's third reading in the week of 30 Nov. What is on (Christmas markets, ski season, fuel caps already extended, the D1 traffic switch) is practically certain or uncheckable and goes to the diary. Friday's Chamber votes and Český slavík belong to the edition about 27 Nov.",
+  "economy": "Three stories with topic economy: us-blackfriday (Adobe Black Friday figure, interval with a derived claim), tw-nuclear (referendum on Taiwan's energy policy) and itlos-sealion (whether an oil development is halted). The last two are energy items; if the morning judges them politics and law, it records meta.economy_shortfall: Saturday has no data release, central-bank decision or company result of weight.",
+  "easy_main": "One main claim at 90% or more: us-macys-29 (94%; the giant balloons fly). No secondary claim at 95% or more.",
+  "negative_main": "No main claim below 50% and no negative headline. Two claims were put to the forecasters with a stated mirror rule and published on the likelier side: dz-turnout-29 (asked as turnout above 35.97%; ensemble below 50%, so the claim is turnout at or below 35.97%, 66%; headline \"turnout falls short of 2021\"). tw-taipei-29 (54%) and itlos-sealion-29 (51%) stayed on the side first asked. No story needs awaited.",
+  "reports_what_happens": "Every main claim is about an outcome on Sat 28 Nov: who wins Taipei, whether the referendum passes, whether the Coalition wins a majority in Victoria, what ITLOS orders, the Black Friday figure Adobe publishes, the overnight drone count, shipping incidents in the Gulf, whether the Macy's balloons fly, Algeria's announced turnout.",
+  "running_note": "Stories of the day read 26 Nov ~18:40 CET from BBC, ČT24, Seznam Zprávy, Al Jazeera, Euronews and DW (Guardian, Reuters, AP, FT, iROZHLAS refused, HTTP 403). 10 listed plus the Czech licence-fee bill (two lists); 3 covered (gulf-shipping, ua-war, us-macys).",
+  "running_shortfall": "3 running stories covered against running_min 6. The others have nothing reportable on Sat 28 Nov: the EU summit and the ECB nomination end or move to December, Spain votes on Sunday (Saturday is the day of reflection), the Netanyahu and Depardieu cases have no dated step, the Ibiza tanker is a disaster the paper does not forecast, Starmind launches in 2027, the Czech licence-fee bill goes to committee on 10 Dec. Each gets a diary line with its next dated step.",
+  "running": [
+    {
+      "title": "US-Israel war on Iran: Iranian drone strike kills two Italians in Kuwait",
+      "lists": [
+        "bbc",
+        "aljazeera",
+        "euronews",
+        "dw",
+        "ct24"
+      ],
+      "sources": [
+        "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait",
+        "https://www.dw.com/en/iranian-drone-attack-kills-2-italians-in-kuwait/a-80064974"
+      ],
+      "next_step": "No scheduled event found for Sat 28 Nov. Likely reportable but unscheduled: further Iranian/Gulf strikes, Italian government reaction (Meloni, Tajani), US-Iran standoff over Hormuz. Next dated step: 11 Dec US funding deadline.",
+      "status": "covered",
+      "story": "gulf-shipping"
+    },
+    {
+      "title": "EU summit on 2028-34 budget and EUR 45bn Ukraine loan ends without deal",
+      "lists": [
+        "euronews",
+        "dw",
+        "ct24"
+      ],
+      "sources": [
+        "https://www.euronews.com/2026/11/26/eu-summit-leaders-ready-to-spar-over-new-budget-and-ukraine-aid",
+        "https://www.dw.com/en/eu-leaders-seek-agreement-on-long-term-budget-and-ukraine-at-summit/live-80056415"
+      ],
+      "next_step": "nothing reportable on Sat 28 Nov (summit ends Fri 27 Nov; possible conclusions/press conferences are Friday); next dated step: European Council 17-18 Dec 2026.",
+      "status": "not_covered",
+      "why": "Nothing reportable on Sat 28 Nov: the special summit ends on Fri 27 Nov; next dated step the European Council of 17–18 Dec. Board questions eu-mff-deal-2026 and eu-ukraine-45bn-2026."
+    },
+    {
+      "title": "Spain's Pablo Hernandez de Cos backed as next ECB president",
+      "lists": [
+        "aljazeera",
+        "euronews",
+        "dw"
+      ],
+      "sources": [
+        "https://www.euronews.com/2026/11/26/eurozone-leaders-back-hernandez-de-cos-to-succeed-lagarde-at-ecb",
+        "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief"
+      ],
+      "next_step": "nothing reportable on Sat 28 Nov; next dated step: European Council appointment in December (summit 17-18 Dec per DW); Schnabel leaves ECB 3 Jan 2027.",
+      "status": "not_covered",
+      "why": "Nothing reportable on Sat 28 Nov: the formal appointment comes at the European Council in December. Board question eu-ecb-president-nominated-2026."
+    },
+    {
+      "title": "Spain general election on Sunday 29 Nov",
+      "lists": [
+        "aljazeera",
+        "euronews"
+      ],
+      "sources": [
+        "https://www.euronews.com/2026/11/26/feminists-march-across-spain-against-violence-ahead-of-general-election",
+        "https://www.aljazeera.com/news/2026/11/26/andalusia-offers-a-glimpse-of-spains-future-as-the-far-right-gains-ground"
+      ],
+      "next_step": "Sat 28 Nov is the eve of the vote (campaign silence/reflection day under Spanish law, background knowledge not from the cited pages, verify); expect only preview coverage, no result. Polls close Sunday 29 Nov.",
+      "status": "not_covered",
+      "why": "The vote is on Sun 29 Nov (after E+2); Saturday is the legal day of reflection, with no campaigning and no polls. Diary line; board question es-feijoo-pm-jan."
+    },
+    {
+      "title": "Netanyahu trial: judges urge prosecutors to drop key charges",
+      "lists": [
+        "aljazeera",
+        "euronews"
+      ],
+      "sources": [
+        "https://www.euronews.com/2026/11/26/judges-in-netanyahu-corruption-trial-urges-dropping-key-charges",
+        "https://www.aljazeera.com/news/2026/11/26/netanyahus-corruption-trial-is-it-really-all-over"
+      ],
+      "next_step": "No date found for a prosecution response or mediation; nothing scheduled Sat 28 Nov. Possible Saturday-night political reaction only. Next dated step: not established (Eisenkot's 28-day mandate from about 8-13 Nov implies a December deadline, per search headlines only, unverified).",
+      "status": "not_covered",
+      "why": "No dated step: no date for the prosecution's response to the judges; courts do not sit on Saturday (Shabbat)."
+    },
+    {
+      "title": "Gerard Depardieu sent to trial for 2018 rape of Charlotte Arnould",
+      "lists": [
+        "bbc",
+        "aljazeera",
+        "euronews"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/articles/cmlyd76kyx44o",
+        "https://www.euronews.com/2026/11/26/gerard-depardieu-to-stand-trial-over-rape-accusations-by-actress-charlotte-arnould"
+      ],
+      "next_step": "nothing reportable on Sat 28 Nov; no trial date in sources; possible cassation appeal filing (no date given).",
+      "status": "not_covered",
+      "why": "No dated step: no trial date set; a cassation appeal would be undated."
+    },
+    {
+      "title": "Diesel tanker Med Emre sinks off Ibiza, one dead",
+      "lists": [
+        "bbc",
+        "euronews",
+        "dw"
+      ],
+      "sources": [
+        "https://www.euronews.com/2026/11/26/ship-transporting-7000-tonnes-of-diesel-sinks-off-ibiza-one-crewman-dead",
+        "https://www.bbc.com/news/articles/c9gklryvj24do"
+      ],
+      "next_step": "nothing scheduled; spill assessment/updates from Balearic and Spanish authorities likely but undated. No dated step found.",
+      "status": "not_covered",
+      "why": "A shipwreck: the paper does not forecast disasters; no dated step."
+    },
+    {
+      "title": "Russia-Ukraine war spreads: Ukrainian strike on Russian ships off Libya angers Italy",
+      "lists": [
+        "aljazeera",
+        "dw",
+        "ct24"
+      ],
+      "sources": [
+        "https://www.aljazeera.com/news/2026/11/26/why-is-italy-angry-with-ukraine-for-striking-russian-ships-off-libya",
+        "https://ct24.ceskatelevize.cz/clanek/svet/napeti-kvuli-valce-mezi-ruskem-a-ukrajinou-se-siri-od-libye-po-polsko-379908"
+      ],
+      "next_step": "nothing reportable scheduled on Sat 28 Nov; next dated step: Estonia's border closure with Russia on 1 Dec 2026.",
+      "status": "covered",
+      "story": "ua-war"
+    },
+    {
+      "title": "US Thanksgiving storms and king tides; Macy's parade moved to Saturday",
+      "lists": [
+        "bbc",
+        "euronews",
+        "dw",
+        "ct24"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/articles/ckm2mz3prq77o",
+        "https://www.bbc.com/news/articles/ckn806qq760po"
+      ],
+      "next_step": "Macy's 100th Thanksgiving Day Parade, rescheduled to Saturday 28 Nov in New York (time not in source), subject to weather.",
+      "status": "covered",
+      "story": "us-macys"
+    },
+    {
+      "title": "SpaceX 'Starmind' one-million-satellite constellation approved by FCC",
+      "lists": [
+        "bbc",
+        "euronews"
+      ],
+      "sources": [
+        "https://www.bbc.com/news/articles/cwp836l8n1jgo",
+        "https://www.euronews.com/2026/11/26/us-says-spacex-can-deploy-1-million-satellites-to-build-data-centres-in-space"
+      ],
+      "next_step": "nothing reportable on Sat 28 Nov; next dated step: first launch targeted 2027.",
+      "status": "not_covered",
+      "why": "No dated step: first launch targeted for 2027."
+    },
+    {
+      "title": "Czech public media: Klempir hearing on abolishing licence fees",
+      "lists": [
+        "ct24",
+        "seznam"
+      ],
+      "sources": [
+        "https://www.seznamzpravy.cz/clanek/domaci-politika-klempir-bude-verejne-hajit-zruseni-poplatku-promluvi-i-zavoral-321579"
+      ],
+      "next_step": "nothing reportable on Sat 28 Nov; next dated steps: amendment deadline Fri 27 Nov 12:00, media committee 10 Dec.",
+      "status": "not_covered",
+      "why": "Nothing reportable on Sat 28 Nov: amendment deadline Fri 27 Nov, media committee 10 Dec, second reading in January (board cz-licence-fee-abolition-passed)."
+    }
+  ],
+  "diary": [
+    {
+      "date": "2026-11-29",
+      "text": "Spain votes in a snap general election; Switzerland votes on VAT for pensions; OPEC+ seven meet on January output.",
+      "text_cs": "Španělsko volí v předčasných parlamentních volbách; Švýcaři hlasují o DPH na důchody; sedm zemí OPEC+ jedná o lednové těžbě."
+    },
+    {
+      "date": "2026-11-30",
+      "text": "ERÚ due to publish 2027 regulated electricity and gas prices; Czech cabinet meets.",
+      "text_cs": "ERÚ by měl zveřejnit regulované ceny elektřiny a plynu na rok 2027; zasedá vláda."
+    },
+    {
+      "date": "2026-12-02",
+      "text": "Czech Chamber: third reading of the 2027 budget planned; Milion chvilek \"warning\".",
+      "text_cs": "Sněmovna: plánované třetí čtení rozpočtu na rok 2027; „varování“ Milionu chvilek."
+    },
+    {
+      "date": "2026-12-10",
+      "text": "Chamber media committee on the licence-fee abolition bill.",
+      "text_cs": "Mediální výbor Sněmovny k návrhu na zrušení poplatků."
+    },
+    {
+      "date": "2026-12-17",
+      "text": "European Council (MFF, Ukraine financing, ECB appointment); ČNB and ECB rate decisions.",
+      "text_cs": "Evropská rada (víceletý rozpočet, financování Ukrajiny, jmenování šéfa ECB); měnová rozhodnutí ČNB a ECB."
+    },
+    {
+      "date": "2026-11-28",
+      "text": "Prague's Christmas markets open on Old Town and Wenceslas squares; the Old Town tree is lit without a ceremony.",
+      "text_cs": "Na Staroměstském a Václavském náměstí se otevírají vánoční trhy; staroměstský strom se rozsvítí bez slavnostního ceremoniálu."
+    }
+  ],
+  "stories": [
+    {
+      "id": "tw-taipei",
+      "scope": "world",
+      "topic": "politics",
+      "rank": 1,
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 5
+      },
+      "event": "Taipei elects its mayor on Saturday 28 Nov 2026 (CEC: 115年地方公職人員選舉投票 11/28), first-past-the-post among six candidates. Incumbent Chiang Wan-an (KMT, running with TPP backing) faces DPP legislator Puma Shen (Shen Po-yang); four minor candidates poll about 1% combined. Chiang's lead of 23-28 points in May collapsed during the autumn; the six final polls before the 18 Nov publication ban range from Chiang +6.1 (ETtoday) and +2 (TVBS) to Shen +14.8 (Hsinmin/Dai Li-an), averaging a Shen lead of about 2.9 points. Chiang won 2022 with 575,590 votes (~42.3%) in a three-way race; all 2025 recall votes against KMT legislators failed.",
+      "title_cs": "Tchaj-wan volí starosty: o Tchaj-pej svádí boj Ťiang Wan-an s Pumou Šenem",
+      "event_key": "tw-taipei-mayor-2026-11-28",
+      "case_key": "tw-local-elections-2026",
+      "election": {
+        "kind": "winner",
+        "level": "regional"
+      },
+      "sources": [
+        {
+          "title": "NOWnews: 台北封關民調只差2％！蔣萬安50歲以上佔優勢 (TVBS final poll)",
+          "url": "https://www.nownews.com/news/6892819"
+        },
+        {
+          "title": "Liberty Times: 台灣勵志協會封關民調 沈伯洋領先蔣萬安5個百分點",
+          "url": "https://news.ltn.com.tw/news/politics/breakingnews/5643249"
+        },
+        {
+          "title": "Central Election Commission: homepage (11/28 115年地方公職人員選舉投票)",
+          "url": "https://web.cec.gov.tw/central"
+        },
+        {
+          "title": "Mirror Media: 戴立安封關民調！沈伯洋支持度48.6%、蔣萬安33.8%",
+          "url": "https://www.mirrormedia.mg/story/20261116edi033"
+        }
+      ],
+      "claims": [
+        {
+          "id": "tw-taipei-29",
+          "kind": "binary",
+          "label": "Chiang re-elected in Taipei",
+          "text": "Chiang Wan-an of the Kuomintang is re-elected mayor of Taipei in Taiwan's local elections on Saturday 28 November 2026.",
+          "criterion": "YES if the Central Election Commission's count (db.cec.gov.tw / the CEC 2026 results site) for the Taipei City mayoral election held on 28 Nov 2026 shows Chiang Wan-an with the most votes. NO if another candidate has the most votes or the election is not held on 28 Nov 2026 (Asia/Taipei). Later recounts or court challenges do not change the resolution. If the CEC site cannot be read, Focus Taiwan/CNA reporting of the CEC count decides.",
+          "resolution_source": "https://db.cec.gov.tw/ ; https://focustaiwan.tw/politics",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "CEC live count, evening of 28 Nov Taipei time (about 09:00–17:00 CET); Focus Taiwan/CNA",
+          "tz": "Asia/Taipei",
+          "event_window": {
+            "start": "2026-11-28T08:00:00+08:00",
+            "end": "2026-11-28T23:59:00+08:00"
+          },
+          "evidence_at": "2026-11-29T01:00:00+08:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/tw-taipei-29.md",
+          "signals": "data/dossiers/2026-11-29/tw-taipei-29.signals.md",
+          "cs": {
+            "label": "Ťiang obhájí Tchaj-pej",
+            "text": "Ťiang Wan-an z Kuomintangu bude v sobotních komunálních volbách na Tchaj-wanu 28. listopadu 2026 znovu zvolen starostou Tchaj-peje.",
+            "criterion": "ANO, pokud sčítání Ústřední volební komise (db.cec.gov.tw / stránky komise k volbám 2026) pro volbu starosty města Tchaj-pej konanou 28. listopadu 2026 ukáže, že nejvíce hlasů získal Ťiang Wan-an. NE, pokud nejvíce hlasů získá jiný kandidát nebo se volba 28. listopadu 2026 (tchajpejského času) nekoná. Pozdější přepočítání ani soudní spory na výsledku nic nemění. Nelze-li stránky komise přečíst, rozhoduje zpravodajství Focus Taiwan/CNA o sčítání komise."
+          },
+          "election": {
+            "kind": "winner",
+            "level": "regional"
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "Chiang is the incumbent mayor and the status quo is his re-election, but the final-poll average has him about 3 points behind, so the status quo is not the poll favourite.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": {
+              "source": "polymarket",
+              "kind": "exchange",
+              "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100",
+              "p": 0.625,
+              "read_at": "2026-11-26T17:57:30Z",
+              "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+              "liquidity": "liquidity ~$217k, volume ~$4.10M; Kalshi KXTAIPEIMAYOR Chiang 0.59, vol ~$811k"
+            },
+            "market_search": {
+              "at": "2026-11-26T17:57:30Z",
+              "checked": [
+                "markets.mjs search \"Taipei mayor\"",
+                "markets.mjs search \"Chiang Wan-an\"",
+                "markets.mjs search \"Taiwan local elections 2026\"",
+                "markets.mjs search \"Puma Shen\""
+              ],
+              "note": "Polymarket and Kalshi winner markets match the claim directly: Polymarket Chiang Yes 0.625 (vol ~$4.1M), Kalshi 0.59. No Metaculus/Manifold match."
+            },
+            "base_rate": {
+              "class": "incumbent special-municipality mayors seeking re-election, 2010-2022",
+              "rate": 0.8,
+              "n": 15,
+              "hint": {
+                "class": "incumbent Taipei mayors seeking re-election",
+                "rate": 0.75,
+                "n": 4
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/tw-taipei-29.md",
+            "signals": "data/dossiers/2026-11-29/tw-taipei-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:10:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.45,
+                "reason_blind": "Start 0.80 (12/15 incumbents re-elected). Dated facts move it down ~1.6 log-odds: six final polls (7-15 Nov) average Chiang -2.9 (median -2.9; -0.5 without Hsinmin), lead collapsed from ~+25 in May; Shen ahead among certain voters. Partly offset: media pollsters TVBS +2/ETtoday +6.1, Taipei pan-blue+TPP majority (~67% in 2022), Taiwanese polls often understate KMT in locals. Slip 0.003 (election-held 0/46).",
+                "searches": 0,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.52,
+                "p_held": 0.997,
+                "p_if_held": 0.52,
+                "reason": "Start 0.80 (12/15); final polls 7-15 Nov avg Chiang -2.9 (split by house: TVBS +2, ETtoday +6.1 vs four sponsor polls Shen ahead) took blind to 0.45. Signals: liquid Polymarket 0.625 ($4.1M) and Kalshi 0.59 price Chiang favourite; I take that the money weighs media polls and the pan-blue+TPP majority more than the sponsor polls, and move halfway-ish to 0.52. Slip 0.003."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:07:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.44,
+                "reason_blind": "Last pre-blackout polls favour DPP's Puma Shen narrowly: FTNN 4-9 Nov Shen 44.7-43.0; Taiwan Brain Trust 15 Nov 46.3-42.2; pan-blue UDN late Oct Shen 45-41; DPP-leaning houses had Shen +17 in Oct (gap since narrowed). Dec 2025 TVBS had Chiang +42. Taipei's blue+TPP structural base, older-voter turnout and past KMT overperformance offset a small polled deficit. Near coin flip, slight lean Shen.",
+                "searches": 1,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.53,
+                "p_held": 0.997,
+                "p_if_held": 0.53,
+                "p_dossier": 0.47,
+                "reason": "Final polls split by house: media pollsters TVBS (14-15 Nov) Chiang +2 and ETtoday +6.1; four sponsor/academic polls Shen +1.7 to +14.8; average Shen +2.9, ex-outlier -0.5. Chiang's lead collapsed from ~+25 but Taipei's blue+TPP base and TPP loyalty favour him; DPP has the turnout-intensity edge. Signals: liquid Polymarket 0.625 and Kalshi 0.59 for Chiang pull me up from the dossier view to a slight Chiang lean."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:03:34+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.56,
+                "reason_blind": "Case for Shen: 6 final polls (4-15 Nov) average Chiang -2.9; Shen leads among certain voters (FTNN 49.6-43.8); Chiang's lead fell from +25 in May; 10-day blackout hides late moves. Against: the two media polls have Chiang ahead (TVBS +2, ETtoday +6.1), Shen-lead polls have green-leaning sponsors, 'who will win' favours Chiang, pan-blue+TPP had ~67% in 2022, all 2025 recalls failed, Chiang beat polls in 2022; Shen cancelled his 27 Nov rally. Near coin flip, slight Chiang edge.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:13+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.59,
+                "p_held": 0.997,
+                "p_if_held": 0.59,
+                "reason": "Blind 0.56. Signals: liquid markets match the question (Polymarket 0.625 on $4m, Kalshi 0.59, margin markets imply ~0.58); I take a small move up from them. Case for Shen stays real: 6 final polls average Chiang -2.9, Shen ahead among certain voters, 10-day blackout. For Chiang: TVBS +2, ETtoday +6.1, green-leaning sponsors behind the Shen-lead polls, Taipei's pan-blue+TPP majority (~67% in 2022), failed 2025 recalls."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:04:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.45,
+                "anchor": {
+                  "kind": "poll-model",
+                  "detail": "models.mjs leadabove -2.9 5.5 0 = 0.299; sd 7 = 0.339; adjusted lead -0.9 sd 7 = 0.449"
+                },
+                "poll_model": {
+                  "lead": -2.9,
+                  "sd": 5.5,
+                  "threshold": 0,
+                  "p": 0.299,
+                  "source": "dossier unweighted average of last pre-blackout polls TVBS, ETtoday, Hsinmin, TIA, Ketagalan, FTNN"
+                },
+                "reason": "Poll model: median/avg of 6 final polls (7-15 Nov) Chiang -2.9; sd 5.5 gives 0.30. Widened sd to 7 for a 21-pp house-effect spread (0.34), then shifted lead +2 for sponsor effects (ex-Hsinmin avg -0.5; only media pollsters TVBS +2, ETtoday +6.1) and KMT beating Taiwan local polls in 2018/2022 (memory): 0.45. Markets (Polymarket 0.625, Kalshi 0.59) sit higher; noted, not the anchor. Blackout since 18 Nov. Slip 0.003."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T18:10:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.58,
+                "reason_blind": "Incumbent Chiang in KMT-leaning Taipei (won 2022). Polls conflict: Taipei Times 3 Nov SPRI poll Shen 52.6-35.3; UDN poll (late Oct) had Chiang expected to win by 48-35 with 24% undecided. Pro-DPP-leaning pollster vs KMT-leaning paper; incumbency and city lean favour Chiang modestly. Election-held slip 0.3%.",
+                "searches": 2,
+                "at": "2026-11-26T18:30:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.6,
+                "p_held": 0.99,
+                "p_if_held": 0.606,
+                "reason": "Polymarket 0.625, Kalshi 0.59 agree with my 0.58 given conflicting polls; take ~0.60 from signals."
+              }
+            ],
+            "missing": [],
+            "disagreement": null,
+            "combined": 0.538,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.15,
+            "decomposition": {
+              "p_held": 0.996,
+              "p_if_held": 0.541,
+              "p_if_not_held": 0
+            },
+            "poll_model": {
+              "lead": -2.9,
+              "sd": 5.5,
+              "threshold": 0,
+              "p": 0.299,
+              "source": "dossier unweighted average of last pre-blackout polls TVBS, ETtoday, Hsinmin, TIA, Ketagalan, FTNN",
+              "note": "Published figure departs from the plain poll model (0.30) for reasons other than the market price: the six final pre-blackout polls split by sponsor (the two independent media polls, TVBS +2 and ETtoday +6.1, have Chiang ahead; four party-linked or foundation polls have Shen ahead, one of them by 14.8, an outlier; without it the average is −0.5, which gives 0.46 at sd 5.5); the blind estimates made before any market was seen were 0.44–0.58."
+            },
+            "shadow": {
+              "sequential": {
+                "model": "claude-opus-5-5",
+                "at": "2026-11-26T19:19:00+01:00",
+                "p_blind": 0.45,
+                "p": 0.57,
+                "steps": 9,
+                "searches": 3,
+                "trace": "data/dossiers/2026-11-29/tw-taipei-29.belief.json",
+                "note": "the agent logged more actions than the step limit (it says so in the trace)"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tw-nuclear",
+      "scope": "world",
+      "topic": "economy",
+      "rank": 2,
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 4
+      },
+      "event": "Taiwan votes on National Referendum No. 22 on Saturday 28 Nov 2026 alongside the nine-in-one local elections (polls 08:00-16:00 Taipei). The KMT-proposed question, passed by the Legislature 59-51 with TPP support and approved by the CEC on 28 Aug, asks whether voters support the government using nuclear power to revitalize the economy and abolishing the 'nuclear-free homeland' energy policy. It passes if agree votes exceed disagree votes and reach one quarter of the 20,003,835 eligible voters (5,000,959). The 2025 Maanshan restart question, held alone, won 74% yes but only 4.34 million votes at 29.5% turnout; the 2018 nuclear question held with local elections passed with 5.90 million agree votes. The DPP opposes the proposal, though President Lai has said restarts of Kuosheng and Maanshan will be evaluated.",
+      "title_cs": "Tchajwanci rozhodnou v referendu o návratu jaderné energetiky",
+      "event_key": "tw-referendum-22-2026-11-28",
+      "case_key": "tw-nuclear-referendum",
+      "election": {
+        "kind": "other",
+        "level": "national"
+      },
+      "topic_note": "Energy policy (nuclear power and the energy mix): counted on the economy desk.",
+      "sources": [
+        {
+          "title": "CEC: Public notice of National Referendum Case No. 22 (date, question)",
+          "url": "https://web.cec.gov.tw/api/file/3ea9497f-7945-49a2-bd4b-375e3d6f1ddf.pdf"
+        },
+        {
+          "title": "Focus Taiwan: Nearly 19.6 million eligible to vote in Taiwan's local elections",
+          "url": "https://focustaiwan.tw/politics/202611240024"
+        },
+        {
+          "title": "Focus Taiwan: Taiwan lawmakers clash over nuclear power referendum",
+          "url": "https://focustaiwan.tw/politics/202611120023"
+        },
+        {
+          "title": "UDN: 九合一大選公投僅剩「廢除非核家園」 執行經費8.1億元",
+          "url": "https://udn.com/news/story/6656/9720571"
+        }
+      ],
+      "claims": [
+        {
+          "id": "tw-nuclear-29",
+          "kind": "binary",
+          "label": "Nuclear referendum passes",
+          "text": "Taiwan's national Referendum No. 22 on nuclear power, held with the local elections on Saturday 28 November 2026, passes.",
+          "criterion": "YES if the Central Election Commission's count for National Referendum No. 22 held on 28 Nov 2026 shows more valid 'agree' votes than 'disagree' votes AND at least 5,000,959 valid 'agree' votes (one quarter of the 20,003,835 eligible voters announced by the CEC on 24 Nov 2026), i.e. the CEC records the referendum as passed (通過) under Article 29 of the Referendum Act. NO otherwise, or if the referendum is not held on 28 Nov 2026 (Asia/Taipei). If the CEC site cannot be read, Focus Taiwan/CNA reporting of the CEC result decides.",
+          "resolution_source": "https://db.cec.gov.tw/ ; https://focustaiwan.tw/politics",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "CEC count, evening of 28 Nov Taipei time; Focus Taiwan/CNA",
+          "tz": "Asia/Taipei",
+          "event_window": {
+            "start": "2026-11-28T08:00:00+08:00",
+            "end": "2026-11-28T23:59:00+08:00"
+          },
+          "evidence_at": "2026-11-29T01:00:00+08:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/tw-nuclear-29.md",
+          "signals": "data/dossiers/2026-11-29/tw-nuclear-29.signals.md",
+          "cs": {
+            "label": "Jaderné referendum projde",
+            "text": "Celostátní referendum č. 22 o jaderné energetice, které se na Tchaj-wanu koná spolu s komunálními volbami v sobotu 28. listopadu 2026, projde.",
+            "criterion": "ANO, pokud sčítání Ústřední volební komise pro celostátní referendum č. 22 konané 28. listopadu 2026 ukáže víc platných hlasů „pro“ než „proti“ A zároveň nejméně 5 000 959 platných hlasů „pro“ (čtvrtina z 20 003 835 oprávněných voličů, které komise oznámila 24. listopadu 2026), tedy pokud komise zapíše referendum jako přijaté (通過) podle článku 29 zákona o referendu. Jinak NE, stejně jako když se referendum 28. listopadu 2026 (tchajpejského času) nekoná. Nelze-li stránky komise přečíst, rozhoduje zpravodajství Focus Taiwan/CNA o výsledku podle komise."
+          },
+          "election": {
+            "kind": "other",
+            "level": "national"
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Nuclear questions have led on agree votes in 2018 and 2025, but passing needs 5,000,959 agree votes, which a same-day local election made reachable in 2018 and a standalone vote missed in 2025.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": {
+              "source": "kalshi",
+              "kind": "exchange",
+              "url": "https://kalshi.com/markets/kxtaiwannuclearref",
+              "p": 0.72,
+              "read_at": "2026-11-26T17:58:18Z",
+              "question": "Will Taiwan's Nuclear-Free Homeland repeal referendum pass?",
+              "liquidity": "volume ~401, bid 0.69 / ask 0.73, liquidity not reported"
+            },
+            "market_search": {
+              "at": "2026-11-26T17:58:18Z",
+              "checked": [
+                "markets.mjs search \"Taiwan referendum\"",
+                "markets.mjs search \"Taiwan nuclear\"",
+                "markets.mjs search \"Taiwan referendum nuclear 2026\"",
+                "markets.mjs search \"nuclear-free homeland\""
+              ],
+              "note": "One matching Kalshi market (KXTAIWANNUCLEARREF-26NOV28), Yes 0.72, very thin volume (~401); settlement rules not read."
+            },
+            "base_rate": {
+              "class": "Taiwan national referendum questions (25% rule) held with nationwide elections",
+              "rate": 0.7,
+              "n": 10,
+              "hint": null
+            },
+            "dossier": "data/dossiers/2026-11-29/tw-nuclear-29.md",
+            "signals": "data/dossiers/2026-11-29/tw-nuclear-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:10:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.7,
+                "reason_blind": "Start 0.70 (7/10 same-day questions, all 24 Nov 2018; wider 7/15=0.47 includes standalone votes). Supportive: nuclear 'agree' won 59% in 2018 (5.90m) and 74% in 2025; locals turnout ~55-60% makes 5.0m reachable at ~46%+ agree. Against: DPP voters present and may vote 'disagree' (2021 restart lost 47-53); wording 'abolish nuclear-free homeland'; ballot can be declined. Net ~0. Slip 0.003.",
+                "searches": 0,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.71,
+                "p_held": 0.997,
+                "p_if_held": 0.71,
+                "reason": "Start 0.70 (7/10 same-day 2018 questions; wider 7/15). Nuclear 'agree' won 2018 (5.90m) and 2025 (74%); locals turnout makes 5.0m reachable; risks DPP 'disagree' vote and declined ballots. Signals: Kalshi 0.72 (bid 0.69/ask 0.73) agrees but is very thin (vol 401), so it only confirms; KMT expected to do well (Polymarket 0.705). Slip 0.003."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:07:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.66,
+                "reason_blind": "Referendum 22 held with local elections (high turnout, ~10-12M voters), so the 5.0M agree threshold is reachable; 2018 nuclear vote alongside locals passed with 5.9M. Aug 2025 Maanshan vote got 4.34M agree (~3:1) but missed the threshold on low turnout. Risk: DPP and green groups urge 'no' (2021 4th-plant vote lost 47-53 when DPP mobilised). Opinion has moved pro-nuclear since 2021; no recent referendum poll found.",
+                "searches": 3,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.69,
+                "p_held": 0.997,
+                "p_if_held": 0.69,
+                "p_dossier": 0.67,
+                "reason": "Held with local elections: 2018 nuclear Q16 passed with 5.90M agree (29.8% of electorate) at 54.8% turnout; 2022 constitutional vote with locals drew 5.65M agree. Threshold 5,000,959. Opinion is more pro-nuclear than 2021 (2025: 74% agree). Risks: DPP 'disagree' mobilisation (2021 lost 47-53), separate ballot can be declined, no referendum polls. Signals: thin Kalshi market at 0.72 agrees; nudge up slightly."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:03:34+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.76,
+                "reason_blind": "Needs 5,000,959 agree and agree>disagree. With local elections (turnout ~55-60%) valid ballots ~10.5-11.5m, so agree needs ~45-48%. 2018 No.16 with locals: 5.90m agree (59.5%); 2025 alone: 4.34m (74%). Case for NO: 2021 restart question lost 47-53 after DPP mobilised 'no'; wording 'abolish nuclear-free homeland' is partisan; DPP momentum in 2026; voters may decline the separate ballot; invalid ballots were ~8% in 2018; no poll found. Still KMT+TPP base alone is near 5m.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:13+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.75,
+                "p_held": 0.997,
+                "p_if_held": 0.75,
+                "reason": "Blind 0.76. Signals: only a thin Kalshi market (0.72, volume 401), a weak signal that agrees; no change beyond rounding. Needs 5,000,959 agree and agree>disagree; with local-election turnout agree needs ~45-48% of valid votes. 2018 No.16 with locals got 5.90m (59.5%); 2025 alone 4.34m. NO case: 2021 restart question lost 47-53 on DPP mobilisation, partisan wording, declined ballots, ~8% invalid in 2018, no poll."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:04:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.76,
+                "anchor": {
+                  "kind": "model",
+                  "detail": "agree-minus-disagree lead +16 sd 14 vs 0 (models.mjs leadabove 16 14 0 = 0.87); cross-checks base rate 0.70 n=10 and thin Kalshi 0.72"
+                },
+                "reason": "Kalshi 0.72 too thin (vol 401) to anchor. Model: ~11M referendum ballots (2018 10.8M, 2022 10.7M with locals); 5,000,959 agree needs ~45.5% of valid, so binding test is agree>disagree. Mean agree ~58% (2018 59.5, 2021 47, 2025 74), lead sd 14 gives 0.87. Down for ballot refusal / lower take-up, possible DPP 'no' mobilisation as in 2021, no issue polls: 0.76. Same-day base rate 7/10 and Kalshi agree. Slip 0.003."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T18:10:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.75,
+                "reason_blind": "Referendum held with local elections so turnout ~60%+ of 20.0M; 5,000,959 agree votes needed. 2025 nuclear referendum got ~74% agree but only ~4.3M votes at 29% turnout (failed threshold). Combined-day turnout makes threshold likely if agree share >~40%; risk is DPP mobilising disagree votes. Polls historically majority pro-restart.",
+                "searches": 2,
+                "at": "2026-11-26T18:30:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.74,
+                "p_held": 0.99,
+                "p_if_held": 0.747,
+                "reason": "Kalshi 0.72 (thin, 401 volume) matches my 0.75; slight move down. Threshold plausible with combined-day turnout."
+              }
+            ],
+            "missing": [],
+            "disagreement": null,
+            "combined": 0.731,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.07,
+            "decomposition": {
+              "p_held": 0.996,
+              "p_if_held": 0.734,
+              "p_if_not_held": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "au-victoria",
+      "scope": "world",
+      "topic": "politics",
+      "rank": 3,
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "event": "Victoria votes on Saturday 28 November 2026 for all 88 Legislative Assembly seats; Labor under Premier Ben Carroll (premier since Allan resigned on 28 July 2026) seeks a fourth term against Jess Wilson's Liberal–National Coalition, with One Nation (Warren Pickering) polling 16–25%. Labor notionally holds 56 seats and the Coalition 29 (2022 TPP 55–45 to Labor); the Coalition needs 16 gains, and on the ABC pendulum the 16th is Monbulk at 7.6%, so a uniform swing needs about 52.6–47.4 TPP (lead +5.2). The final polls give the Coalition a 55–59% TPP (average lead +14.7 over 7 polls: DemosAU 55–45, Newspoll 57.5–42.5, Resolve 59–41, YouGov 58–42, RedBridge 58–42, Roy Morgan 55–45, Agenda C 59–41) and a primary vote of 31–34%, with Labor at 19–25%. Seat projections are YouGov MRP Coalition 55 (ONP 12) and Poll Bludger's model 52 (ONP 11). The main risk is One Nation and independents taking seats on the Coalition's path. Postal votes are admitted until 4 Dec, so the count is incomplete at resolution.",
+      "title_cs": "Viktorie volí: koalice Jess Wilson míří k většině proti labouristům Bena Carrolla",
+      "event_key": "au-victoria-election-2026-11-28",
+      "case_key": "au-victoria-election-2026",
+      "election": {
+        "kind": "other",
+        "level": "regional"
+      },
+      "sources": [
+        {
+          "title": "VEC: 2026 state election",
+          "url": "https://www.vec.vic.gov.au/voting/2026-state-election"
+        },
+        {
+          "title": "ABC News: Pendulum - VIC Election 2026",
+          "url": "https://www.abc.net.au/news/elections/vic/2026/guide/pendulum"
+        },
+        {
+          "title": "DemosAU: Coalition in election-winning lead in final DemosAU/PremierNational Victorian poll",
+          "url": "https://demosau.com/news/coalition-in-election-winning-lead-in-final-demosau-premiernational-victorian-poll/"
+        },
+        {
+          "title": "The Poll Bludger: Victorian polls: Newspoll and DemosAU",
+          "url": "https://www.pollbludger.net/2026/11/27/victorian-polls-newspoll-and-demosau/"
+        },
+        {
+          "title": "Wikipedia: Opinion polling for the 2026 Victorian state election",
+          "url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_Victorian_state_election"
+        }
+      ],
+      "claims": [
+        {
+          "id": "au-victoria-29",
+          "kind": "binary",
+          "label": "Coalition wins a majority",
+          "text": "The Liberal–National Coalition led by Jess Wilson wins a majority of at least 45 of the 88 seats in the Victorian Legislative Assembly at the state election on Saturday 28 November 2026.",
+          "criterion": "YES if candidates of the Liberal Party and the National Party (counted together, including three-cornered contests) have won, or are ahead on the two-candidate-preferred count in, at least 45 of the 88 Legislative Assembly districts according to the Victorian Electoral Commission's results site, or, where the VEC has no two-candidate count for a district, the ABC's Victorian election 2026 results page (its declared or predicted winner), as read at 12:00 CET on Tuesday 1 December 2026. A district whose election is failed or deferred counts as not won. NO if the count so read gives them 44 or fewer, or if the general election is not held on 28 Nov 2026 (Australia/Melbourne).",
+          "resolution_source": "https://results.vec.vic.gov.au/ ; https://www.abc.net.au/news/elections/vic/2026/results",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "VEC results site and ABC election results from Saturday evening AEDT (from about 09:00 CET); read at 12:00 CET on 1 Dec",
+          "tz": "Australia/Melbourne",
+          "event_window": {
+            "start": "2026-11-28T08:00:00+11:00",
+            "end": "2026-11-28T23:59:00+11:00"
+          },
+          "evidence_at": "2026-11-29T12:00:00+11:00",
+          "resolves_by": "2026-12-01T12:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/au-victoria-29.md",
+          "signals": "data/dossiers/2026-11-29/au-victoria-29.signals.md",
+          "cs": {
+            "label": "Koalice získá většinu",
+            "text": "Liberálně-národní koalice vedená Jess Wilson získá ve volbách do parlamentu australského státu Viktorie v sobotu 28. listopadu 2026 většinu nejméně 45 z 88 křesel v Zákonodárném shromáždění.",
+            "criterion": "ANO, pokud kandidáti Liberální a Národní strany (počítáno dohromady, včetně obvodů, kde kandidují obě) zvítězili nebo vedou ve sčítání dvou nejsilnějších kandidátů v nejméně 45 z 88 obvodů Zákonodárného shromáždění podle výsledků viktoriánské volební komise (VEC), případně tam, kde VEC sčítání dvou kandidátů nemá, podle stránky výsledků ABC (vyhlášený nebo předpokládaný vítěz), čteno ve 12:00 SEČ v úterý 1. prosince 2026. Obvod, v němž se volba nekonala nebo byla odložena, se počítá jako nezískaný. NE, pokud jim takto čtené výsledky dávají 44 nebo méně obvodů, nebo pokud se všeobecné volby 28. listopadu 2026 (melbournského času) nekonají."
+          },
+          "election": {
+            "kind": "other",
+            "level": "regional"
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "no",
+              "why": "The Coalition holds 29 of 88 seats now and must gain 16, but every final poll puts it well beyond the swing needed for this.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:57:00Z",
+              "checked": [
+                "markets.mjs search \"Victorian election\"",
+                "markets.mjs search \"Victoria state election 2026\"",
+                "markets.mjs search \"Jess Wilson\"",
+                "markets.mjs search \"Victoria Coalition majority\""
+              ],
+              "note": "No majority/45-seat market found. Polymarket has 'Liberal–National win most seats' at Yes 0.987 (vol $46k), which is a plurality market and not a match, and 'Jess Wilson next Premier' at 0.9865 ($15k), also not a match."
+            },
+            "base_rate": {
+              "class": "final-poll-leader-wins (own record)",
+              "rate": 0.64,
+              "n": 14,
+              "hint": {
+                "class": "poll-lead-margin-threshold",
+                "rate": 1,
+                "n": 5
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/au-victoria-29.md",
+            "signals": "data/dossiers/2026-11-29/au-victoria-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:10:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.83,
+                "reason_blind": "Start 0.64 (final-poll leader wins, 9/14); hint 5/5 on margin thresholds. Dated facts move up ~1.0 log-odds: 7 final polls (18-25 Nov) avg Coalition TPP +14.7 vs +5.2 needed on uniform swing; YouGov MRP 55 seats, Poll Bludger model 52. Risks kept: One Nation 16-25% fragmenting three-cornered seats (MRP ONP 12), teals/Greens, partial count read 1 Dec with postals to 4 Dec. Slip 0.003.",
+                "searches": 0,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.84,
+                "p_held": 0.997,
+                "p_if_held": 0.84,
+                "reason": "Start 0.64, up ~1.0 log-odds on dated polls: avg TPP +14.7 (18-25 Nov) vs +5.2 needed; MRP 55, Poll Bludger 52 seats. Kept risk: One Nation splits three-cornered seats, partial count on 1 Dec. Signals: no majority market; Polymarket most-seats/Wilson premier 0.987 and DemosAU 'majority likely' fit, but do not price the 45-seat bar, so only a small nudge to 0.84. Slip 0.003."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:07:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.38,
+                "reason_blind": "Final-week polls (Resolve 20-23 Nov L/NP 31 ALP 20 ON 25, 2PP 59-41; RedBridge 33/22/23, 58-42; YouGov 6-23 Nov 58-42; Roy Morgan 55-45) show Coalition clearly first, but One Nation at 21-25% concentrated in outer Melbourne/regions should take 10+ seats, plus Greens/teals. Sept seat models had Coalition ~34-39 (Spectator model: 'six short'). Coalition has risen ~3 pts since; 45 outright is plausible but less likely than not.",
+                "searches": 3,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.74,
+                "p_held": 0.997,
+                "p_if_held": 0.74,
+                "p_dossier": 0.74,
+                "reason": "Final polls average Coalition 2PP lead +14.7 (vs +5.2 needed on uniform swing); One Nation dropped late (DemosAU 16, Newspoll 18). Seat models: YouGov MRP Coalition 55, Poll Bludger 52; Labor internals give Labor 10-23 seats. My blind relied on stale Sept models (34-39). Risks: ONP and Greens/teal seats, three-cornered counts incomplete at the 1 Dec reading, no Australian poll-error benchmark. Signals: no matching market; plurality markets 0.99, models support majority."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:03:34+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.78,
+                "reason_blind": "Final polls 18-25 Nov: Coalition TPP lead +10 to +18 (avg +14.7) vs +5.2 needed on uniform swing; YouGov MRP 55 seats, Poll Bludger model 52. Case for NO: Coalition primary only 31-34; One Nation 16-25% could take 10-15 seats incl. Nationals seats, Greens ~8, independents (Mornington, Mildura), Labor internal 10-23; a 7-seat model miss gives 44-45. Criterion read on 1 Dec with postals out and wrong 2CP pairs in three-cornered seats adds noise. Late ONP drop helps the Coalition.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:13+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.78,
+                "p_held": 0.997,
+                "p_if_held": 0.78,
+                "reason": "Blind 0.78. Signals: no market on a majority (plurality 0.987 and Wilson premier 0.9865 do not match); seat models already in the dossier (YouGov MRP 55, Poll Bludger 52); no change. Polls give the Coalition +14.7 TPP vs +5.2 needed, but primary is 31-34 and One Nation (10-15 seats in Labor's internals), Greens ~8 and independents can leave it at 44 or fewer; reading on 1 Dec with postals out adds noise."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:04:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.88,
+                "anchor": {
+                  "kind": "poll-model",
+                  "detail": "models.mjs leadabove 14.7 5.5 5.2 = 0.958; seat check leadabove 53 6 44.5 = 0.92"
+                },
+                "poll_model": {
+                  "lead": 14.7,
+                  "sd": 5.5,
+                  "threshold": 5.2,
+                  "p": 0.958,
+                  "source": "dossier average of latest TPP per pollster 10-25 Nov (DemosAU, Newspoll, Resolve, YouGov, RedBridge, Roy Morgan, Agenda C); threshold from ABC pendulum"
+                },
+                "reason": "Poll model: 7 final polls avg Coalition TPP lead +14.7 vs +5.2 needed (uniform swing to Monbulk); sd 5.5 gives 0.96. TPP overstates seats with One Nation in 3-cornered outer-metro/Nat seats (ONP 11-12 seats in models), so seat model check: Poll Bludger 52, YouGov MRP 55, mean ~53 sd 6 gives 0.92. Down for incomplete count on 1 Dec, teal/Green risks in Coalition seats, no Aus poll-error benchmark: 0.88. No matching market (plurality 0.99 only). Slip 0.003."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T18:10:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.7,
+                "reason_blind": "Final polls (Resolve 25 Nov: Coalition 31, ON 25, Labor 20; YouGov MRP; Newspoll earlier Labor 27 ON 27 Coalition 22 on 22 Nov is an outlier). Allan replaced by Ben Carroll; Labor internal expects 10-23 seats, ON 10-15; MRP has Coalition winning Labor seats like Mulgrave, Bendigo East. Fragmented three-way vote, Coalition at least 45 of 88 likely but uncertain given ON splits right vote.",
+                "searches": 2,
+                "at": "2026-11-26T18:30:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.85,
+                "p_held": 0.99,
+                "p_if_held": 0.859,
+                "reason": "Poll Bludger model Coalition 52, YouGov MRP 55, DemosAU says majority likely: 45 threshold has a 7-10 seat cushion; raised from 0.70, tempered by poll error in a three-way ON split and no majority market."
+              }
+            ],
+            "missing": [],
+            "disagreement": null,
+            "combined": 0.823,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.14,
+            "decomposition": {
+              "p_held": 0.996,
+              "p_if_held": 0.827,
+              "p_if_not_held": 0
+            },
+            "poll_model": {
+              "lead": 14.7,
+              "sd": 5.5,
+              "threshold": 5.2,
+              "p": 0.958,
+              "source": "dossier average of latest TPP per pollster 10-25 Nov (DemosAU, Newspoll, Resolve, YouGov, RedBridge, Roy Morgan, Agenda C); threshold from ABC pendulum",
+              "note": "Kind \"other\": a seat majority, not the winner; lead = Coalition two-party-preferred lead in the final-poll average, threshold = lead needed for 45 seats on a uniform swing (ABC pendulum, Monbulk 7.6%)."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "itlos-sealion",
+      "scope": "world",
+      "topic": "economy",
+      "rank": 4,
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 5
+      },
+      "event": "ITLOS delivers its Order in Case No. 37, Case concerning hydrocarbon exploitation in the South-West Atlantic Ocean (Argentina v. United Kingdom), Provisional Measures, at noon Hamburg time on Sat 28 Nov 2026 (PR 405). Argentina filed under art. 290(5) on 13 Oct 2026 after starting Annex VII arbitration on 28 Sep; the hearing was 10-11 Nov. Argentina's final submissions ask the UK to stop new exploitation drilling and production infrastructure for Sea Lion (Navitas 65%, Rockhopper 35%; FID 10 Dec 2025), plus information, environment and non-aggravation measures. The UK asks for rejection: the real issue is Falklands sovereignty (no prima facie jurisdiction), and there is no urgency because by formal assurance drilling will not start before 21 Mar 2027 nor extraction before Mar 2028, while the Annex VII tribunal should be constituted by Jan 2027. Both States have art. 298(1)(a) delimitation declarations, which neither side says cover this dispute.",
+      "title_cs": "Mořský tribunál rozhodne o žádosti Argentiny zastavit ropný projekt u Falkland",
+      "event_key": "itlos-case-37-order-2026-11-28",
+      "case_key": "ar-uk-sealion-itlos",
+      "topic_note": "A ruling on whether an oil development (Sea Lion, Navitas Petroleum) may go ahead: energy, counted on the economy desk.",
+      "sources": [
+        {
+          "title": "ITLOS: Press 405 - Tribunal to deliver its Order on Saturday, 28 November 2026, at noon",
+          "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_405_en.pdf"
+        },
+        {
+          "title": "ITLOS: Verbatim record ITLOS/PV.26/C37/2 (UK first round, 10 Nov 2026)",
+          "url": "https://www.itlos.org/fileadmin/itlos/documents/cases/37/PV/C37_PV26.2.pdf"
+        },
+        {
+          "title": "MercoPress: Hamburg tribunal confirms it will deliver its Sea Lion order on November 28",
+          "url": "https://en.mercopress.com/2026/11/18/hamburg-tribunal-confirms-it-will-deliver-its-sea-lion-order-on-november-28"
+        }
+      ],
+      "claims": [
+        {
+          "id": "itlos-sealion-29",
+          "kind": "binary",
+          "label": "Tribunal prescribes a measure",
+          "text": "In its order delivered on Saturday 28 November 2026, the International Tribunal for the Law of the Sea prescribes at least one provisional measure in Argentina's case against the United Kingdom over the Sea Lion oil project.",
+          "criterion": "YES if the operative part (dispositif) of the ITLOS order delivered on 28 Nov 2026 (Europe/Berlin) in Case No. 37 (Argentina v. United Kingdom), Provisional Measures, contains at least one paragraph by which the Tribunal 'prescribes' a provisional measure under article 290 of UNCLOS, whether one Argentina requested or a different one of the Tribunal's own motion (e.g. to consult, cooperate, exchange information, or refrain from action). NO if the Tribunal finds it lacks prima facie jurisdiction, finds that the circumstances do not require provisional measures, rejects the request, only takes note of or places on record the UK's assurances without prescribing, or the order is not delivered on 28 Nov 2026. A stand-alone 'decides' paragraph on reports or costs, and recitals urging the parties, do not count.",
+          "resolution_source": "https://www.itlos.org/en/main/cases/list-of-cases/",
+          "schedule": "official",
+          "slip_class": "other-scheduled",
+          "publishes": "ITLOS public sitting in Hamburg at 12:00 CET on 28 Nov, order and press release on itlos.org the same day",
+          "tz": "Europe/Berlin",
+          "event_window": {
+            "start": "2026-11-28T00:00:00+01:00",
+            "end": "2026-11-28T23:59:00+01:00"
+          },
+          "evidence_at": "2026-11-28T13:00:00+01:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/itlos-sealion-29.md",
+          "signals": "data/dossiers/2026-11-29/itlos-sealion-29.signals.md",
+          "cs": {
+            "label": "Tribunál nařídí opatření",
+            "text": "Mezinárodní tribunál pro mořské právo ve svém usnesení vyhlášeném v sobotu 28. listopadu 2026 nařídí ve sporu Argentiny s Británií kvůli ropnému projektu Sea Lion alespoň jedno předběžné opatření.",
+            "criterion": "ANO, pokud výrok usnesení ITLOS vyhlášeného 28. listopadu 2026 (berlínského času) ve věci č. 37 (Argentina proti Spojenému království), předběžná opatření, obsahuje alespoň jeden odstavec, jímž tribunál „nařizuje“ předběžné opatření podle článku 290 Úmluvy OSN o mořském právu, ať už některé z těch, o něž Argentina žádala, nebo jiné z vlastního podnětu (např. konzultovat, spolupracovat, vyměňovat si informace nebo se zdržet určitého jednání). NE, pokud tribunál shledá, že nemá prima facie pravomoc, že okolnosti předběžná opatření nevyžadují, návrh zamítne, pouze vezme na vědomí nebo zaznamená britská ujištění, aniž by cokoli nařídil, nebo pokud usnesení 28. listopadu 2026 nevyhlásí. Samostatný odstavec „rozhoduje“ o zprávách nebo nákladech řízení a odstavce odůvodnění vyzývající strany se nepočítají."
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "ITLOS has prescribed something in 12 of 14 PM orders and in all 8 under art. 290(5), but the UK's formal no-drilling-before-March-2027 assurance plus imminent constitution of the Annex VII tribunal matches the no-urgency pattern of the 2024 Zheng He rejection.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:58:00Z",
+              "checked": [
+                "markets.mjs search \"ITLOS\"",
+                "markets.mjs search \"Falklands\"",
+                "markets.mjs search \"Argentina United Kingdom tribunal\"",
+                "markets.mjs search \"Sea Lion oil\"",
+                "markets.mjs search \"ITLOS provisional measures\""
+              ],
+              "note": "Nothing matched; only Falklands sovereignty-transfer/recognition markets (Polymarket 0.0155, Kalshi 0.01) unrelated to the order. Metaculus not queried with a token (token run blocked by permissions)."
+            },
+            "base_rate": {
+              "class": "ITLOS provisional-measures orders 1998-2026 prescribing at least one measure",
+              "rate": 0.86,
+              "n": 14,
+              "hint": {
+                "class": "art. 290(5) requests pending Annex VII tribunal",
+                "rate": 1,
+                "n": 8
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/itlos-sealion-29.md",
+            "signals": "data/dossiers/2026-11-29/itlos-sealion-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:10:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.62,
+                "reason_blind": "Start 0.86 (12/14). Down ~1.2 log-odds: UK formal assurances of 5 Nov (no drilling before 21 Mar 2027, no extraction before Mar 2028, no new licences) plus Annex VII tribunal constitution expected by Jan 2027 match Zheng He (Jul 2024, no measures); novel land-sovereignty jurisdiction objection. MOX/Land Reclamation show own-motion cooperation measures still likely. Slip class other-scheduled 0.09, cut to 0.05: date fixed by PR 405 (18 Nov), confirmed final.",
+                "searches": 0,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.62,
+                "p_held": 0.95,
+                "p_if_held": 0.65,
+                "reason": "Start 0.86 (12/14; 290(5) 8/8). Down ~1.2 log-odds: UK assurances 5 Nov (no drilling before 21 Mar 2027, no extraction before Mar 2028), Annex VII tribunal due by Jan 2027 (Zheng He 2024 pattern), novel land-sovereignty objection; own-motion cooperation measures (MOX, Land Reclamation) keep YES favoured. Slip other-scheduled 0.09 cut to 0.05 (date fixed, PR 405). Signals: no matching market or model, nothing to change."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:07:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.5,
+                "reason_blind": "ITLOS has prescribed some measure in every art 290(5) case (SBT, MOX, Land Reclamation, ARA Libertad, Arctic Sunrise, Enrica Lexie, Ukraine vessels, San Padre Pio), often of its own motion (consult/cooperate). But here UK contests prima facie jurisdiction as the dispute turns on Falklands sovereignty (Chagos MPA majority declined such claims); experts (Rothwell, 2 Nov) see this as the case's weak point. Order confirmed for 28 Nov 12:00 (ITLOS 18 Nov).",
+                "searches": 2,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.48,
+                "p_held": 0.98,
+                "p_if_held": 0.49,
+                "p_dossier": 0.48,
+                "reason": "All 8 earlier art 290(5) requests got some measure (12/14 ITLOS PM orders overall), often own-motion cooperation even after assurances (MOX, Land Reclamation). Against: UK written assurances on 5 Nov (no drilling before 21 Mar 2027, no extraction before Mar 2028, no new licences) plus Annex VII tribunal due by Jan 2027 fit the Zheng He 2024 no-urgency pattern, and the sovereignty 'real issue' objection is novel. Signals: no market or model, nothing to change."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:03:34+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.47,
+                "reason_blind": "Base: 12/14 ITLOS PM orders prescribed something, 8/8 under art. 290(5). Case for NO is strong here: UK written assurances of 5 Nov (no drilling before 21 Mar 2027, no extraction before Mar 2028, no new licences), Annex VII tribunal due by Jan 2027, so little urgency (Zheng He 2024, 22-1 no measures on assurances); land-sovereignty 'real issue' objection to prima facie jurisdiction (Chagos). For YES: MOX/Land Reclamation own-motion cooperation measures; Ghana/CIV no-new-drilling. Date fixed by PR 405.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:13+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.47,
+                "p_held": 0.98,
+                "p_if_held": 0.48,
+                "reason": "Blind 0.47. Signals: no matching market or forecast; nothing taken. Base 12/14 prescribed, 8/8 under art. 290(5), but UK written assurances (no drilling before 21 Mar 2027, no extraction before Mar 2028), an Annex VII tribunal due by Jan 2027 and the land-sovereignty objection make the Zheng He 'no urgency' outcome a live path; MOX/Land Reclamation own-motion cooperation measures are the YES path."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:04:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.55,
+                "anchor": {
+                  "kind": "base-rate",
+                  "detail": "ITLOS PM orders 1998-2026 12/14 = 0.86 (hint 290(5) 8/8); adjusted to 0.55"
+                },
+                "reason": "No market. Base rate: ITLOS PM orders 12/14 prescribed (0.86); 290(5) 8/8. Down ~1.6 log-odds: UK written assurances (no drilling before 21 Mar 2027, no extraction before Mar 2028, no new licences) and Annex VII tribunal due within weeks match Zheng He 2024 no-urgency pattern; novel land-sovereignty 'real issue' objection on Falklands. Up: MOX/Land Reclamation show own-motion cooperation measures despite assurances. Date fixed by PR 405 (slip ~0.02, below class 0.09)."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T18:10:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.42,
+                "reason_blind": "Order date confirmed by ITLOS (MercoPress 18 Nov). UK disputes jurisdiction as sovereignty question; Sea Lion production not imminent so urgency weak. ITLOS often prescribes something modest (cooperate/avoid aggravation) when prima facie jurisdiction found, but sovereignty-linked jurisdiction and lack of urgency push toward no measures. Other-scheduled slip ~9% generic, lower once date confirmed.",
+                "searches": 2,
+                "at": "2026-11-26T18:30:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.42,
+                "p_held": 0.99,
+                "p_if_held": 0.424,
+                "reason": "No market or model; signals add nothing, keep own view on weak urgency and contested jurisdiction versus ITLOS habit of prescribing cooperative measures."
+              }
+            ],
+            "missing": [],
+            "disagreement": {
+              "cause": "genuine",
+              "note": "Same facts, different weight on the ITLOS record (all 8 earlier art. 290(5) requests got a measure) against the UK assurances and the Zheng He refusal. Research found no decisive fact (Zheng He was an art. 290(1) case; in Enrica Lexie ITLOS placed assurances on record and still prescribed). The spread stands; the evidence is mixed."
+            },
+            "combined": 0.508,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.2,
+            "decomposition": {
+              "p_held": 0.979,
+              "p_if_held": 0.519,
+              "p_if_not_held": 0
+            },
+            "research": {
+              "at": "2026-11-26T19:35:00+01:00",
+              "question": "Which fact would settle whether ITLOS prescribes at least one provisional measure on 28 Nov 2026 in Case No. 37 (Argentina v. UK, Sea Lion)?",
+              "finding": "No report of the 10-11 Nov hearing shows how judges leaned; no ITLOS item after PR 405 (18 Nov) and no sign the Annex VII tribunal is constituted (UK's 60-day clock ran to 27 Nov). Argentina's only fallback is its narrowed 11 Nov submissions; no information-exchange ask reported. Precedent splits on the axis that divides forecasters: Zheng He (2024) was an ITLOS merits case (Luxembourg application, art. 290(1)), not 290(5). In Enrica Lexie (24 Aug 2015, 290(5)) ITLOS 'places on record assurances and undertakings' of both parties yet prescribed an own-motion measure (15-5, dissents on urgency). New 25 Nov (MercoPress): Navitas plans development drilling March 2027, first oil mid-2028, and is weighing an exploration well on adjacent PL001 (Eco Atlantic farm-in) in the 2027 campaign, a point bearing on non-aggravation. Not decisive: only the order settles it.",
+              "sources": [
+                "https://www.itlos.org/en/main/press-media/press-releases/latest-press-releases/",
+                "https://www.itlos.org/en/main/cases/case-concerning-hydrocarbon-exploitation-in-the-south-west-atlantic-ocean-argentina-v-united-kingdom-provisional-measures/",
+                "https://www.itlos.org/en/main/cases/list-of-cases/the-zheng-he-case-luxembourg-v-mexico",
+                "https://www.itlos.org/en/main/cases/list-of-cases/case-no-10/",
+                "https://www.itlos.org/en/main/cases/list-of-cases/case-no-12/",
+                "https://site.uit.no/nclos/2015/09/09/itlos-the-enrica-lexie-incident-and-the-prescription-of-provisional-measures-saying-that-there-is-urgency-does-not-make-it-so/",
+                "https://en.mercopress.com/2026/11/25/falklands-growing-interest-in-adjacent-areas-to-navitas-sea-lion",
+                "https://en.mercopress.com/2026/11/22/argentina-s-lawyer-in-hamburg-if-sea-lion-goes-ahead-those-rights-are-lost-forever",
+                "https://en.mercopress.com/2026/11/19/uk-parliament-briefing-details-london-s-response-to-argentina-s-offensive-against-sea-lion",
+                "https://www.perfil.com/noticias/amp/politica/malvinas-es-ahora-o-nunca-el-cierre-argentino-ante-el-tribunal-del-mar-para-frenar-sea-lion-a53U77y3kM53.phtml",
+                "https://www.perfil.com/noticias/amp/politica/con-una-chicana-a-milei-londres-desvio-la-discusion-por-malvinas-hacia-el-terreno-de-la-soberania-aGfYG9c7KMxb.phtml"
+              ],
+              "decisive": false
+            },
+            "shadow": {
+              "sequential": {
+                "model": "claude-opus-5-5",
+                "at": "2026-11-26T19:18:30+01:00",
+                "p_blind": 0.35,
+                "p": 0.35,
+                "steps": 8,
+                "searches": 2,
+                "trace": "data/dossiers/2026-11-29/itlos-sealion-29.belief.json"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "us-blackfriday",
+      "scope": "world",
+      "topic": "economy",
+      "rank": 5,
+      "scores": {
+        "impact": 3,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "event": "Adobe Analytics forecast (28 Sep 2026) that US online spending on Black Friday, 27 Nov 2026, will reach $12.9bn, up 9.2% on 2025's $11.8bn, and restated that figure in its pre-Thanksgiving update on 25 Nov. Season-to-date spending (1-22 Nov) is running at +9.1% YoY, ahead of Adobe's +6.7% season forecast. In 2024 and 2025 Adobe published its full-day Black Friday figure on Saturday morning ET (2025: $11.8bn vs $11.7bn forecast; 2024: $10.8bn vs $10.8bn forecast). Adobe's single-day forecasts for Thanksgiving, Black Friday and Cyber Monday were met or beaten in all six cases in 2024-25.",
+      "title_cs": "Black Friday: Adobe zveřejní, kolik Američané utratili na internetu",
+      "event_key": "adobe-black-friday-2026",
+      "case_key": "us-holiday-online-spending",
+      "sources": [
+        {
+          "title": "Adobe Newsroom: U.S. Holiday Shopping Season to Hit Record $275.1 Billion Online, Rising 6.7% YoY",
+          "url": "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record"
+        },
+        {
+          "title": "Digital Commerce 360: Adobe data shows online holiday spending up 9.1% ahead of Thanksgiving",
+          "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/"
+        },
+        {
+          "title": "KSL (Reuters): Black Friday online sales hit record $11.8 billion, Adobe reports",
+          "url": "https://www.ksl.com/article/51411921/black-friday-online-sales-hit-record-118-billion-adobe-reports"
+        }
+      ],
+      "claims": [
+        {
+          "id": "us-blackfriday-29",
+          "kind": "interval",
+          "label": "Black Friday online spending",
+          "text": "Adobe Analytics' figure, published on Saturday 28 November 2026, puts US online spending on Black Friday (27 November 2026) at … billion dollars.",
+          "criterion": "Value = the full-day US online-spending total for Black Friday 27 Nov 2026 in US$ billion, as first published by Adobe (Adobe Analytics / news.adobe.com release, or Adobe's figure as reported by a major outlet such as CNBC, Reuters, AP or Bloomberg) by 23:00 ET on Sat 28 Nov 2026, taken as stated (e.g. 12.9 or 12.94). Intraday 'so far' figures released on Friday do not count; later revisions do not count. Pending if Adobe publishes no full-day figure by then.",
+          "resolution_source": "https://news.adobe.com/ ; https://www.cnbc.com/",
+          "schedule": "official",
+          "slip_class": "company-event",
+          "publishes": "Adobe press release on news.adobe.com, usually Saturday morning ET (2025: by 09:48 ET); CNBC, Reuters",
+          "tz": "America/New_York",
+          "event_window": {
+            "start": "2026-11-27T06:00:00-05:00",
+            "end": "2026-11-28T23:00:00-05:00"
+          },
+          "evidence_at": "2026-11-28T12:00:00-05:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
+          "signals": "data/dossiers/2026-11-29/us-blackfriday-29.signals.md",
+          "cs": {
+            "label": "Útrata na internetu o Black Friday",
+            "text": "Podle údaje Adobe Analytics zveřejněného v sobotu 28. listopadu 2026 utratili Američané o Black Friday (27. listopadu 2026) na internetu … miliard dolarů.",
+            "criterion": "Hodnota = celková útrata amerických spotřebitelů na internetu za celý den Black Friday 27. listopadu 2026 v miliardách USD, jak ji poprvé zveřejní Adobe (Adobe Analytics / tisková zpráva na news.adobe.com nebo údaj Adobe převzatý velkým médiem, jako je CNBC, Reuters, AP či Bloomberg) do 23:00 newyorského času v sobotu 28. listopadu 2026, tak jak je uveden (např. 12,9 nebo 12,94). Průběžné páteční údaje „zatím“ se nepočítají, pozdější revize také ne. Nevyhodnoceno, pokud Adobe do té doby celodenní údaj nezveřejní."
+          },
+          "quantity": "US online spending on Black Friday 2026, Adobe first full-day figure",
+          "unit": "US$ bn",
+          "scale": 0.105,
+          "quantiles": {
+            "q10": 12.67,
+            "q50": 12.97,
+            "q90": 13.29
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Interval claim; the no-surprise reading is Adobe's own forecast of $12.9bn, which its first actuals matched or slightly beat in 2024 and 2025.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:57:31Z",
+              "checked": [
+                "markets.mjs search \"Black Friday online spending\"",
+                "markets.mjs search \"Adobe Black Friday\"",
+                "markets.mjs search \"Black Friday sales 2026\"",
+                "markets.mjs search \"Cyber Monday online sales\"",
+                "markets.mjs search \"Black Friday 2026 Adobe billion\""
+              ],
+              "note": "No market on the Black Friday figure. Only related: Manifold 'Adobe Cyber Monday 2026 at least $15.2bn' at 0.41 (4 traders, liquidity 100), different day; not matching."
+            },
+            "base_rate": {
+              "class": "Adobe single-day Cyber Week forecast vs first actual 2024-25 (actual >= forecast)",
+              "rate": 1,
+              "n": 6,
+              "hint": {
+                "class": "Black Friday only",
+                "rate": 1,
+                "n": 2
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
+            "signals": "data/dossiers/2026-11-29/us-blackfriday-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "q10_blind": 12.7,
+                "q50_blind": 13,
+                "q90_blind": 13.35,
+                "reason_blind": "Start: models.mjs quantiles 12.9/0.105/1.6 = 12.68/12.90/13.12. Adobe's own forecast ($12.9bn, +9.2%, 28 Sep, restated 25 Nov) has been met or beaten in all 6 verified 2024-25 single-day cases; season to date +9.1% YoY vs +6.7% forecast. Shift median to 13.0, widen both tails (rounding to 0.1, pre-2024 misses unverified). Slip company-event 0.004: publication Saturday morning very likely.",
+                "searches": 0,
+                "at": "2026-11-26T19:07:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "q10": 12.7,
+                "q50": 13,
+                "q90": 13.35,
+                "consensus_note": "q50 0.95 scale above Adobe's 12.9 forecast: Adobe single-day Cyber Week forecasts met or beaten 6/6 in 2024-25 (mean +0.6pp), and Nov 1-22 2026 ran +9.1% vs +6.7% season forecast. Tails widened for rounding and unverified larger pre-2024 misses.",
+                "reason": "Start models.mjs 12.68/12.90/13.12 around Adobe's $12.9bn (+9.2%) forecast. Adobe met/beat its single-day forecasts 6/6 in 2024-25 and the season is running hot, so median 13.0 with wider tails. Slip company-event 0.004. Signals: no Black Friday market; a thin Manifold Cyber Monday market at 0.41 for just above forecast is a weak hint against a big beat, not enough to move the median."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:05:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "q10_blind": 12.65,
+                "q50_blind": 12.95,
+                "q90_blind": 13.25,
+                "reason_blind": "Adobe forecast (28 Sep 2026) season $275.1bn, +6.7%; consensus Black Friday figure 12.9. Adobe's first full-day numbers have landed at or just above its own forecasts in recent years (2024 10.8 vs 10.8; 2025 11.8 vs 11.7), so slight upward tilt. Thanksgiving-day storm in Northeast could nudge some demand online. Model quantiles 12.68/12.90/13.12 widened slightly.",
+                "searches": 1,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "q10": 12.7,
+                "q50": 13,
+                "q90": 13.3,
+                "consensus_note": "q50 0.1 above Adobe's 12.9 forecast: Adobe single-day forecasts beaten in 6/6 cases 2024-25 (mean +0.6pp growth), and season to date Nov 1-22 runs +9.1% vs +6.7% season forecast (DC360 25 Nov).",
+                "reason": "Consensus is Adobe's own forecast $12.9bn (+9.2%), restated 25 Nov. First actual vs forecast: 2024 10.8/10.8, 2025 11.8/11.7. Season-to-date running hot; upside tilt to 13.0. Reported in 0.1 steps. Width 0.6 > 4.1x0.105 for unverified larger misses in earlier years. Signals: no market on the figure; Manifold Cyber Monday >=15.2bn at 0.41 is a weak, thin hint, no change."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "q10_blind": 12.7,
+                "q50_blind": 12.95,
+                "q90_blind": 13.2,
+                "reason_blind": "Adobe forecast $12.9bn (+9.2%), restated 25 Nov. Against the consensus: Adobe single-day actuals met or beat forecast 6/6 in 2024-25 (mean +0.6pp), Nov 1-22 running +9.1% vs +6.7% season forecast, so 13.0 is about as likely as 12.9. Downside: pull-forward into early deals, weak consumer. Reported to $0.1bn (12.8/12.9/13.0/13.1 the live values). 2025: 11.7 fc, 11.8 actual; 2024: 10.8/10.8. Small risk of no full-day figure by 23:00 ET (pending, not in quantiles).",
+                "searches": 0,
+                "at": "2026-11-26T19:09:29+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "q10": 12.7,
+                "q50": 12.95,
+                "q90": 13.2,
+                "reason": "Adobe forecast 12.9bn (+9.2%), restated 25 Nov. Against it: Adobe single-day actuals met or beat forecast 6/6 in 2024-25 (mean +0.6pp), Nov 1-22 running +9.1% vs +6.7% season forecast, so 13.0 about as likely as 12.9; downside from pull-forward into early deals. Reported to 0.1bn. Signals: no market on this figure; a thin Manifold market (4 traders) puts 41% on Cyber Monday beating its forecast by 0.1, a weak hint against a large beat; unchanged."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "q10": 12.75,
+                "q50": 13,
+                "q90": 13.3,
+                "consensus_note": "q50 13.0 is 0.95 scale above consensus 12.9: Adobe's own forecast has run low in all 6 verified single-day cases (2024-25) and the season to date runs 2.4pp above its forecast growth; Adobe reports in $0.1bn steps.",
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs quantiles 12.9 0.105 1.6 = 12.68/12.90/13.12, shifted +0.1 at median"
+                },
+                "reason": "Anchor = models.mjs quantiles 12.9/0.105/1.6 -> 12.68/12.90/13.12. Shifted up: Adobe single-day forecasts beaten 6/6 in 2024-25 (mean +0.6pp ~ +$0.07bn), season to 22 Nov +9.1% vs +6.7% forecast; Adobe rounds to $0.1bn so 13.0 is the modal print. Upper tail widened for pull-forward/upside; downside kept for demand pull-forward into earlier days. Width 0.55 >= 4.1x0.105."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T20:00:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "q10_blind": 12.5,
+                "q50_blind": 12.9,
+                "q90_blind": 13.3,
+                "reason_blind": "Adobe 2026 forecast (28 Sep, 275.1bn season, +6.7%) implies Black Friday 12.9bn; Adobe's actual usually lands within ~2% of its forecast. Release typically Saturday morning ET.",
+                "searches": 1,
+                "at": "2026-11-26T21:00:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "q10": 12.5,
+                "q50": 12.9,
+                "q90": 13.3,
+                "reason": "Signals: no market on the figure; Manifold Cyber Monday threshold at Adobe's forecast trades 0.41, a weak hint that Adobe's forecasts are not expected to be beaten by much. Blind view unchanged."
+              }
+            ],
+            "agents_mean": {
+              "q10": 12.67,
+              "q50": 12.97,
+              "q90": 13.29
+            },
+            "missing": [],
+            "consensus": {
+              "value": 12.9,
+              "source": "Adobe 2026 holiday forecast, news.adobe.com 28 Sep 2026, restated 25 Nov 2026 (Digital Commerce 360)"
+            },
+            "scale": 0.105,
+            "scale_basis": "pooled",
+            "scale_source": "Only 2 verified Black Friday forecast/first-actual pairs (2024: 10.8 vs 10.8; 2025: 11.7 vs 11.8), so pooled over Adobe's Thanksgiving/Black Friday/Cyber Monday forecasts 2024-25 (6 pairs, sources: Adobe Sept 2024 and Oct 2025 forecast releases; first actuals from DC360/Reuters-KSL/Adobe recaps). RMS growth error 0.70pp x $11.8bn base = $0.083bn, times pooled factor 1.258 = $0.105bn. All six errors were positive (mean +0.6pp). Pre-2024 pairs not verified; tails likely fatter.",
+            "series": null,
+            "consensus_note": "The central figure (about 13.0) sits about 0.7 scale above Adobe's own $12.9bn forecast: Adobe's first single-day actuals met or beat its own forecasts in 6 of 6 checked cases (Thanksgiving, Black Friday, Cyber Monday 2024–25), and Adobe's season-to-date spending for 1–22 Nov 2026 runs at +9.1% against its +6.7% season forecast (dossier)."
+          }
+        },
+        {
+          "id": "us-blackfriday-129-29",
+          "kind": "binary",
+          "label": "At least $12.9bn",
+          "text": "Adobe Analytics' figure, published on Saturday 28 November 2026, puts US online spending on Black Friday (27 November 2026) above $12.9bn, the figure Adobe forecast.",
+          "criterion": "YES if the value of claim us-blackfriday-29 (Adobe's first full-day Black Friday 2026 figure, taken as stated) is above 12.9 (US$ billion), e.g. 12.95 or 13.0; NO if it is 12.9 or lower. Pending if Adobe publishes no full-day figure by 23:00 ET on 28 Nov 2026.",
+          "resolution_source": "https://news.adobe.com/ ; https://www.cnbc.com/",
+          "schedule": "official",
+          "slip_class": "company-event",
+          "publishes": "Adobe press release on news.adobe.com, usually Saturday morning ET (2025: by 09:48 ET); CNBC, Reuters",
+          "tz": "America/New_York",
+          "event_window": {
+            "start": "2026-11-27T06:00:00-05:00",
+            "end": "2026-11-28T23:00:00-05:00"
+          },
+          "evidence_at": "2026-11-28T12:00:00-05:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
+          "signals": "data/dossiers/2026-11-29/us-blackfriday-29.signals.md",
+          "derived": {
+            "from": "us-blackfriday-29",
+            "event": ">",
+            "x": 12.9
+          },
+          "cs": {
+            "label": "Víc než 12,9 miliardy",
+            "text": "Podle údaje Adobe Analytics zveřejněného v sobotu 28. listopadu 2026 utratili Američané o Black Friday (27. listopadu 2026) na internetu víc než 12,9 miliardy dolarů, kolik Adobe předpovídala.",
+            "criterion": "ANO, pokud hodnota tvrzení us-blackfriday-29 (první celodenní údaj Adobe za Black Friday 2026, jak je uveden) je vyšší než 12,9 (miliardy USD), např. 12,95 nebo 13,0; NE, pokud je 12,9 nebo nižší. Nevyhodnoceno, pokud Adobe do 23:00 newyorského času 28. listopadu 2026 celodenní údaj nezveřejní."
+          },
+          "forecast": {
+            "p_derived": 0.618,
+            "method": "node scripts/refdata/models.mjs derive 12.67 12.97 13.29 '>' 12.9 → 0.618",
+            "combined": 0.618,
+            "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
+            "signals": "data/dossiers/2026-11-29/us-blackfriday-29.signals.md",
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:57:31Z",
+              "checked": [
+                "markets.mjs search \"Black Friday online spending\"",
+                "markets.mjs search \"Adobe Black Friday\"",
+                "markets.mjs search \"Black Friday sales 2026\"",
+                "markets.mjs search \"Cyber Monday online sales\"",
+                "markets.mjs search \"Black Friday 2026 Adobe billion\""
+              ],
+              "note": "No market on the Black Friday figure. Only related: Manifold 'Adobe Cyber Monday 2026 at least $15.2bn' at 0.41 (4 traders, liquidity 100), different day; not matching."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ua-war",
+      "scope": "world",
+      "topic": "security",
+      "rank": 6,
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "event": "The Ukrainian Air Force publishes a first summary of each overnight attack around 08:00–10:00 Kyiv time, counting drones from 18:00 the previous evening. The latest published night (to 26 Nov) had 113 drones (76 jet-powered) plus ballistic missiles. The three most recent nights (96, 112, 113) are the lowest run of the last three weeks. The last mass combined strike was the night to 20 Nov (404 drones, 82 missiles). On 26 Nov Zelensky said Russia was 'completing preparations for a new massive strike'. The claim night (27–28 Nov) is the 8th after the last mass strike.",
+      "title_cs": "Válka na Ukrajině: Kolik dronů Rusko vyslalo v noci na sobotu",
+      "event_key": "ua-drones-2026-11-28",
+      "case_key": "ua-nightly-drones",
+      "sources": [
+        {
+          "title": "Air Force of Ukraine (Telegram): Night to 26 November summary, 113 drones",
+          "url": "https://t.me/s/kpszsu?before=99300"
+        },
+        {
+          "title": "Kyiv Independent: Russian attacks kill 10, injure 58 across Ukraine over past day, as ballistic missiles strike Kyiv",
+          "url": "https://kyivindependent.com/russian-attacks-kill-10-injure-58-across-ukraine-over-past-day-strike-kyiv-with-ballistic-missiles/"
+        },
+        {
+          "title": "Ukrinform: Zelensky: Russia preparing for another massive attack on Ukraine",
+          "url": "https://www.ukrinform.net/rubric-ato/4188863-zelensky-russia-preparing-for-another-massive-attack-on-ukraine.html"
+        }
+      ],
+      "claims": [
+        {
+          "id": "ua-drones-29",
+          "kind": "interval",
+          "label": "Drones launched in the night to Saturday",
+          "text": "According to the Ukrainian Air Force's first summary of the overnight attack published on Saturday 28 November 2026, Russia launched … attack drones at Ukraine in the night of 27–28 November.",
+          "criterion": "Value = the UAV total in the Air Force's first summary of the overnight attack published on Sat 28 Nov 2026 (Kyiv time), covering the night of 27–28 Nov (normally counted from 18:00 Kyiv time on 27 Nov; another stated evening start hour still makes it the summary of this night), as published on t.me/kpszsu or the Air Force Facebook page or repeated by Ukrinform, Ukrainska Pravda, Kyiv Independent or Interfax-Ukraine. Drones = strike UAVs as the summary counts them (Shahed-type incl. jet-powered, Gerbera, Parodiya and other decoys, and jet munitions if included in the UAV total); missiles listed separately not counted; separate daytime reports and later corrections do not count. A summary reporting no drones gives 0. Pending if no summary is published. (Same wording as ua-drones-28, shifted by one day.)",
+          "resolution_source": "https://t.me/s/kpszsu ; https://www.ukrinform.net/rubric-ato ; https://kyivindependent.com/",
+          "schedule": "official",
+          "slip_class": "none",
+          "publishes": "Ukrainian Air Force Telegram morning summary, normally 08:00–10:00 Kyiv on 28 Nov; Ukrinform, Kyiv Independent",
+          "tz": "Europe/Kyiv",
+          "event_window": {
+            "start": "2026-11-27T18:00:00+02:00",
+            "end": "2026-11-28T12:00:00+02:00"
+          },
+          "evidence_at": "2026-11-28T14:00:00+02:00",
+          "resolves_by": "2026-11-30T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/ua-drones-29.md",
+          "signals": "data/dossiers/2026-11-29/ua-drones-29.signals.md",
+          "cs": {
+            "label": "Drony vyslané v noci na sobotu",
+            "text": "Podle prvního souhrnu ukrajinského letectva o nočním útoku zveřejněného v sobotu 28. listopadu 2026 vyslalo Rusko v noci z 27. na 28. listopadu na Ukrajinu … útočných dronů.",
+            "criterion": "Hodnota = celkový počet bezpilotních letounů v prvním souhrnu ukrajinského letectva o nočním útoku zveřejněném v sobotu 28. listopadu 2026 (kyjevského času) za noc z 27. na 28. listopadu (obvykle počítáno od 18:00 kyjevského času 27. listopadu; jiná uvedená večerní hodina začátku z něj stále činí souhrn této noci), jak ho zveřejní t.me/kpszsu nebo facebooková stránka letectva nebo převezme Ukrinform, Ukrajinska pravda, Kyiv Independent či Interfax-Ukrajina. Drony = útočné bezpilotní letouny tak, jak je souhrn počítá (typ Šáhed včetně proudových, Gerbera, Parodija a další klamné drony a proudová munice, je-li zahrnuta do počtu dronů); zvlášť uvedené střely se nepočítají; samostatná denní hlášení a pozdější opravy se nepočítají. Souhrn bez dronů dává 0. Nevyhodnoceno, pokud souhrn nevyjde."
+          },
+          "quantity": "Russian attack drones launched in the night of 27–28 Nov 2026, Ukrainian Air Force first summary",
+          "unit": "drones",
+          "scale": 33,
+          "quantiles": {
+            "q10": 88.2,
+            "q50": 135.4,
+            "q90": 291
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Interval claim; recent nights 96–186 with mass strikes above 300 every 3–8 nights, the last on 20 Nov, and a fresh warning of another.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:56:35Z",
+              "checked": [
+                "markets.mjs search \"russia drones ukraine\"",
+                "markets.mjs search \"shahed drones night\"",
+                "markets.mjs search \"russia massive strike ukraine november\""
+              ],
+              "note": "No market on nightly drone counts; only ceasefire and NATO-drone markets, none matching."
+            },
+            "base_rate": {
+              "class": "Air Force first-summary nightly drone counts, last 14 nights (median 136.5, scale 33); mass nights >=280",
+              "rate": 0.14,
+              "n": 21,
+              "hint": null
+            },
+            "dossier": "data/dossiers/2026-11-29/ua-drones-29.md",
+            "signals": "data/dossiers/2026-11-29/ua-drones-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "q10_blind": 92,
+                "q50_blind": 140,
+                "q90_blind": 320,
+                "reason_blind": "Last 14 first-summary counts (to 13-26 Nov): median 136.5, p10 97, p90 270, IQR/1.349=33; 21-night median 153, mass nights (>=280) 3/21. Right-skewed: quiet nights 96-132 common (last three 96/112/113) but mass strike risk raised to ~18-20% by Zelensky 26 Nov 'completing preparations' warning and 8th night since the 20 Nov strike (could instead hit night to 27 Nov). So q50 near reference, q90 pushed into mass-strike range, q10 at quiet-night floor.",
+                "searches": 0,
+                "at": "2026-11-26T19:07:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "q10": 92,
+                "q50": 137,
+                "q90": 315,
+                "reason": "Last 14 first-summary counts median 136.5, p10 97, p90 270, scale 33; mass nights >=280 3/21. Right skew: quiet nights common (last three 96/112/113), mass-strike risk ~18% given Zelensky's 26 Nov warning and 8 nights since 20 Nov. Signals: no market or model; our earlier centres (147.8, 140.2) ran above outcomes and ua-drones-25 leaned wrong-high, so median trimmed to 137, q90 kept in mass range."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:05:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "q10_blind": 65,
+                "q50_blind": 135,
+                "q90_blind": 230,
+                "reason_blind": "Reference median of last 14 first-summary counts 136.5 (21-night 153). Air Force Telegram on 26 Nov shows heavy daytime jet-drone activity, i.e. campaign ongoing; could not extract recent morning totals (searches returned 2025 pages). Right-skew for periodic mass strikes (400+), so q90 stretched above the symmetric model (204); q10 near model.",
+                "searches": 3,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "q10": 90,
+                "q50": 130,
+                "q90": 300,
+                "reason": "Last 14 first summaries median 136.5 (96-404); last three nights 96, 112, 113. Mass strikes (>=280) on nights to 9, 17, 20 Nov; claim night is 8th after the last, and Zelensky (26 Nov) says Russia is completing preparations for a massive strike, so ~15-20% mass-strike chance stretches q90 to 300. Signals: no market; our recent centres (~140-148) overshot the 113 outcome, so I shade the median to 130."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data",
+                  "own-research"
+                ],
+                "q10_blind": 97,
+                "q50_blind": 140,
+                "q90_blind": 320,
+                "reason_blind": "Last 14 first summaries: median 136.5, last three 96, 112, 113; 10th pct ~97. Against the median: Zelensky 26 Nov says Russia is 'completing preparations' for a mass strike; mass strikes (>=280) on nights to 4, 9, 17, 20 Nov, gaps 5/8/3, claim night is the 8th after the last; I put ~20% on it falling on this night (may fall on night to 27 Nov instead, after which a quiet night is likelier). Daytime jet-drone waves move launches out of the count. Right-skewed, q90 well above the model's 204.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:29+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data",
+                  "own-research"
+                ],
+                "q10": 97,
+                "q50": 138,
+                "q90": 320,
+                "reason": "Last 14 first summaries: median 136.5, last three 96, 112, 113. Against the median: Zelensky 26 Nov 'completing preparations' for a mass strike; mass strikes (>=280) on nights to 4, 9, 17, 20 Nov, claim night is the 8th after the last; ~20% it falls on this night, hence q90 320 well above the model's 204. Signals: no market; our earlier centres (147.8, 140.2) and yes-claims ran above outcomes (4 of 13 at 54% stated), so I keep the centre at the median rather than above it."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "q10": 92,
+                "q50": 140,
+                "q90": 300,
+                "consensus_note": "Asymmetric interval: q10 above model q10 because counts below ~95 have not occurred in 22 nights; q90 far above model because mass strikes (306-404) recur every 3-8 nights.",
+                "anchor": {
+                  "kind": "model",
+                  "detail": "models.mjs quantiles 136.5 33 1.6 = 68.8/136.5/204.2, reshaped to empirical skew"
+                },
+                "reason": "Anchor = models.mjs quantiles 136.5/33/1.6 -> 69/136.5/204. Empirical first-summary counts are right-skewed: 22-night minimum 96, 14-night P90 ~270, 3/21 nights >=300. Lower tail raised to ~92 (no night below 96 in 22). Upper tail widened to 300: Zelensky 26 Nov 'completing preparations' for mass strike, claim night is 8th since last mass strike (20 Nov, gaps 5/8/3). Median nudged to 140 (14-night 136.5, 21-night 153; last three nights 96-113)."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T20:00:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "q10_blind": 70,
+                "q50_blind": 135,
+                "q90_blind": 215,
+                "reason_blind": "Recent Air Force first summaries in Nov 2025-26 results range ~70-140 with occasional larger raids; reference median 136.5 (14 nights), 21-night median 153. Saturday nights not clearly different; right tail for mass raids.",
+                "searches": 1,
+                "at": "2026-11-26T21:00:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "q10": 70,
+                "q50": 132,
+                "q90": 220,
+                "reason": "Signals: no market. Recent prints 112 and 113 sit below the 136.5 reference, while Zelensky (26 Nov) said a new massive strike is being prepared, which fattens the right tail. Our earlier ranges centred near 140-148, so I shade the median slightly and widen the top."
+              }
+            ],
+            "agents_mean": {
+              "q10": 88.2,
+              "q50": 135.4,
+              "q90": 291
+            },
+            "missing": [],
+            "consensus": {
+              "value": 136.5,
+              "source": "No analyst consensus exists. Reference value = median of the last 14 published Air Force first-summary counts (nights to 13–26 Nov), dossier table; 21-night median 153."
+            },
+            "scale": 33,
+            "scale_basis": "pooled",
+            "scale_source": "IQR of the last 14 first-summary counts (Q1 112.25, Q3 156.75, linear interpolation; IQR 44.5) divided by 1.349 = 33.0, same method as ua-drones-28 (33); counts with URLs in data/dossiers/2026-11-29/ua-drones-29.md and predecessors; no published consensus or surprise series.",
+            "series": null,
+            "consensus_note": "No analyst consensus exists; reference value = median of the last 14 Air Force first summaries (136.5). The range is skewed upwards for a possible mass strike: the claim night is the 8th since the last one (20 Nov) and Zelensky warned on 26 Nov of preparations for a new massive strike (dossier)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulf-shipping",
+      "scope": "world",
+      "topic": "security",
+      "rank": 7,
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "event": "UKMTO keeps reporting projectile strikes on merchant ships around the Strait of Hormuz. A late UKMTO report published on 26 Nov dates a strike on an outbound tanker 18 nm east of Khasab to 17:00 Gulf time on 25 Nov, so 25 Nov is a yes-day. UKMTO 222-26 records a projectile exploding close to a tanker 50 nm west of Dubai at 21:30 UTC on 25 Nov (01:30 Gulf time on 26 Nov). UKMTO filed it as suspicious activity, with no damage. Nothing UKMTO-reported has been found for 24 Nov, and Iran's repeated mine-strike claims (25–26 Nov) remain unconfirmed. Our own day count gives 9 of the last 14 completed Gulf days (12–25 Nov) and 20 of the last 30 (27 Oct–25 Nov) with a qualifying incident. The war context is tense: on 26 Nov Kuwait blamed Iran for a drone attack that killed two Italians; the US blockade is in day 130; and Kushner confirms contacts with Iran, but no ceasefire has been found.",
+      "title_cs": "Válka s Íránem: Další útok na lodě v Zálivu",
+      "event_key": "gulf-ukmto-2026-11-28",
+      "case_key": "gulf-shipping-attacks",
+      "sources": [
+        {
+          "title": "Gulf News: Middle East conflict live (UKMTO: outbound tanker struck 18 nm east of Khasab at 5pm UAE time Wednesday)",
+          "url": "https://gulfnews.com/world/mena/middle-east-conflict-saudi-arabia-intercepts-missiles-and-drones-as-trump-keeps-iran-options-open-1.500761343"
+        },
+        {
+          "title": "WANA: UKMTO Reports Tanker Hit by Unidentified Projectile East of Khasab",
+          "url": "https://wanaen.com/ukmto-reports-tanker-hit-by-unidentified-projectile-east-of-khasab/"
+        },
+        {
+          "title": "Arab News: Iran's Revolutionary Guards say two oil tankers hit sea mines near Oman's Khasab",
+          "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-two-oil-tankers-hit-sea-mines-near-omans-khasab-3014111"
+        },
+        {
+          "title": "The Red Zone: Houthi Projectile Hits Jizan Port Hours After Hodeidah Strike (UKMTO 222-26 at 2130 UTC 25 Nov)",
+          "url": "https://theredzone-newsletter.beehiiv.com/p/houthi-projectile-hits-jizan-port-hours-after-hodeidah-strike"
+        }
+      ],
+      "claims": [
+        {
+          "id": "gulf-ukmto-29",
+          "kind": "binary",
+          "label": "Gulf shipping incident on Saturday",
+          "text": "UKMTO or JMIC reports at least one attack, explosion, mine strike, projectile or drone hit, armed hostile approach, boarding or seizure involving a merchant vessel in the Strait of Hormuz, the Persian Gulf, the Gulf of Oman or the Arabian Sea that took place on Saturday 28 November 2026 (00:00–23:59 Gulf time).",
+          "criterion": "YES if the UK Maritime Trade Operations (UKMTO) or the Joint Maritime Information Center (JMIC) reports an attack, explosion, mine strike, projectile or drone hit, hostile approach (armed craft firing on or attempting to board the vessel), boarding, hijacking or seizure involving a merchant vessel in the Strait of Hormuz, the Persian (Arabian) Gulf, the Gulf of Oman or the Arabian Sea (including the waters around Socotra) that occurred between 00:00 and 23:59 Gulf Standard Time (UTC+4) on 28 Nov 2026, as shown on ukmto.org or UKMTO's X account or by a wire, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al Jazeera, Newsquawk or another established news outlet quoting UKMTO or JMIC. A projectile or explosion that UKMTO or JMIC reports close to a merchant vessel counts even if it is filed as 'suspicious activity' and causes no damage. When UKMTO/JMIC give only a date and no time, an incident dated 28 Nov counts. A report published after the window (including a 'time-late' or delayed report) counts if the incident occurred in the window. A merchant vessel disabled, boarded or seized by US or other military forces counts only if UKMTO or JMIC itself reports that incident. Suspicious approaches, hailings or sightings without weapons fire or a boarding attempt, GPS or navigation-aid interference alone, notices of an 'incident' or 'suspicious activity' (including 'an incident involving a tanker and military forces') that state no attack, explosion, hit, boarding or seizure, incidents in the Gulf of Aden, the Bab el-Mandeb or the Red Sea, and claims by Iran (including IRGC or navy statements), the Houthis or other parties that neither UKMTO nor JMIC reports do not count. NO if no such incident occurred in the window. UKMTO times given in UTC are converted: 20:00–23:59 UTC on 27 Nov counts as 28 Nov; after 20:00 UTC on 28 Nov falls on 29 Nov.",
+          "resolution_source": "https://www.ukmto.org/recent-incidents ; https://x.com/UK_MTO ; https://gcaptain.com/",
+          "schedule": "official",
+          "slip_class": "none",
+          "publishes": "UKMTO warnings on ukmto.org and X within hours; delayed reports later; relayed by Gulf News, gCaptain, Ship & Bunker",
+          "tz": "Asia/Dubai",
+          "event_window": {
+            "start": "2026-11-28T00:00:00+04:00",
+            "end": "2026-11-28T23:59:00+04:00"
+          },
+          "evidence_at": "2026-11-29T12:00:00+04:00",
+          "resolves_by": "2026-11-30T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/gulf-ukmto-29.md",
+          "signals": "data/dossiers/2026-11-29/gulf-ukmto-29.signals.md",
+          "cs": {
+            "label": "Incident lodi v Zálivu v sobotu",
+            "text": "UKMTO nebo JMIC ohlásí alespoň jeden útok, výbuch, najetí na minu, zásah střelou nebo dronem, ozbrojené nepřátelské přiblížení, obsazení nebo zadržení obchodní lodi v Hormuzském průlivu, Perském zálivu, Ománském zálivu nebo Arabském moři, k němuž došlo v sobotu 28. listopadu 2026 (0:00–23:59 času Zálivu).",
+            "criterion": "ANO, pokud britské středisko pro námořní obchodní operace (UKMTO) nebo Společné námořní informační centrum (JMIC) ohlásí útok, výbuch, najetí na minu, zásah střelou nebo dronem, nepřátelské přiblížení (ozbrojené plavidlo, které na loď střílí nebo se ji pokouší obsadit), obsazení, únos nebo zadržení obchodní lodi v Hormuzském průlivu, Perském (Arabském) zálivu, Ománském zálivu nebo Arabském moři (včetně vod kolem Sokotry), k němuž došlo mezi 0:00 a 23:59 času Zálivu (UTC+4) 28. listopadu 2026, jak vyplývá z ukmto.org nebo účtu UKMTO na síti X, případně ze zprávy agentury, gCaptain, Lloyd's List, Khaleej Times, Gulf News, Arab News, Iran International, Ship & Bunker, Al-Džazíry, Newsquawk či jiného zavedeného média, které se odvolává na UKMTO nebo JMIC. Střela nebo výbuch, které UKMTO nebo JMIC ohlásí v blízkosti obchodní lodi, se počítají, i když jsou vedeny jako „podezřelá činnost“ a nezpůsobí škodu. Pokud UKMTO/JMIC uvedou jen datum bez času, počítá se incident s datem 28. listopadu. Zpráva zveřejněná po skončení okna (včetně opožděného hlášení) se počítá, pokud k incidentu došlo v okně. Obchodní loď vyřazená, obsazená nebo zadržená americkými či jinými vojenskými silami se počítá, jen pokud tento incident ohlásí samo UKMTO nebo JMIC. Nepočítají se podezřelá přiblížení, výzvy nebo pozorování bez střelby či pokusu o obsazení, samotné rušení GPS nebo navigačních systémů, oznámení o „incidentu“ či „podezřelé činnosti“ (včetně „incidentu s tankerem a vojenskými silami“), která neuvádějí útok, výbuch, zásah, obsazení ani zadržení, incidenty v Adenském zálivu, Bab al-Mandabu nebo Rudém moři ani tvrzení Íránu (včetně prohlášení Revolučních gard či námořnictva), Húsíů či jiných stran, která UKMTO ani JMIC neohlásí. NE, pokud k žádnému takovému incidentu v okně nedošlo. Časy UKMTO v UTC se přepočítávají: 20:00–23:59 UTC 27. listopadu se počítá jako 28. listopad; po 20:00 UTC 28. listopadu jde o 29. listopad."
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "UKMTO-reported strikes have occurred on about two of every three Gulf days for a month (20/30, 9/14), and quiet days have been isolated.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:58:05Z",
+              "checked": [
+                "markets.mjs search \"UKMTO notices\"",
+                "markets.mjs search \"hormuz tanker attack\"",
+                "markets.mjs search \"Iran ceasefire\""
+              ],
+              "note": "Only a weekly all-region UKMTO-notice-count bucket (8-11 notices 23-29 Nov, 0.67) and Hormuz traffic/nuclear-deal markets; none matches a one-day qualifying-incident question. Searched without a Metaculus token."
+            },
+            "base_rate": {
+              "class": "gulf-daily-merchant-incident (own record 27 Oct-25 Nov)",
+              "rate": 0.67,
+              "n": 30,
+              "hint": {
+                "class": "gulf-ukmto same id",
+                "rate": 1,
+                "n": 2
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/gulf-ukmto-29.md",
+            "signals": "data/dossiers/2026-11-29/gulf-ukmto-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.66,
+                "reason_blind": "Own daily record 27 Oct-25 Nov: 20/30 days with a qualifying UKMTO/JMIC merchant incident (0.67); 12-25 Nov 9/14 (0.64); last 7 5/7. Saturdays 2/4. Escalation cues (25 Nov tanker hit E of Khasab, 26 Nov Kuwait drone strike, no ceasefire or talks set for 27-28 Nov) roughly offset by recurring isolated quiet days (24 Nov none; 26 Nov only ambiguous 222-26). No slip (unscheduled). Stay at class rate.",
+                "searches": 0,
+                "at": "2026-11-26T19:07:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.65,
+                "reason": "Own daily record 27 Oct-25 Nov 20/30 (0.67), 12-25 Nov 9/14 (0.64), last 7 5/7; escalation cues (25 Nov Khasab hit, 26 Nov Kuwait drone strike, no talks set) offset by isolated quiet days (24 Nov, 26 Nov ambiguous). No slip. Signals: no matching market (Polymarket weekly notice count is a different quantity); our earlier figures 52-70% sit around the class rate, so no move beyond a hair down for late-report/quiet-day risk."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:05:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.4,
+                "reason_blind": "Active Iran-linked campaign: JMIC Update 111 (5 Nov) counted 4 Hormuz attacks 1-3 Nov plus 2 in the Gulf, 8 Gulf attacks since 7 Oct; Gulf News 19 Nov lists UKMTO-reported tanker strikes 13, 16 (x2), 17-18 and 18 Nov off Khasab. Roughly 7-9 of the first 18 Nov days had a qualifying incident, clustered. Nothing found for 19-26 Nov (ukmto.org refused reading). Daily hit rate ~0.35-0.45.",
+                "searches": 2,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.62,
+                "p_dossier": 0.62,
+                "reason": "Dossier day record beats my blind count: qualifying UKMTO-reported incident on 20/30 Gulf days (27 Oct-25 Nov), 9/14 last two weeks, 5/7 last week; 25 Nov Khasab strike confirmed late. Quiet days isolated (24 Nov). Kuwait drone strike 26 Nov, no ceasefire. Discounts: single day, late-report and UTC-boundary risk, Iranian claims excluded. Signals: no matching market; our earlier daily figures 52-70%, consistent."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier"
+                ],
+                "p_blind": 0.63,
+                "reason_blind": "Own daily record 20/30 (27 Oct-25 Nov), 9/14 last 14 days, 5/7 last 7; Saturdays 2/4. Case for NO: one-day window, quiet days about 1 in 3 (12, 14, 19, 24 Nov), Iranian mine claims of 25-26 Nov not matched by UKMTO, bare 'suspicious activity' notices excluded, Kushner-Iran contacts. Case for YES: Kuwait drone deaths 26 Nov, Khasab tanker hit 25 Nov, no ceasefire, late reports count. No reason to leave the base rate; shade slightly down for criterion strictness.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:29+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.63,
+                "reason": "Own daily record 20/30 (27 Oct-25 Nov), 9/14, 5/7; quiet days about 1 in 3 and isolated. Strongest NO case: one-day window, strict criterion (bare suspicious-activity notices and Iranian mine claims excluded), Kushner-Iran contacts. YES side: Kuwait drone deaths 26 Nov, Khasab tanker hit 25 Nov, no ceasefire, late reports count. Signals: no market matches (weekly notice-count market is not this question); our earlier figures 52-70% sit around the same rate; I stay at the base rate, shaded down."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data"
+                ],
+                "p": 0.64,
+                "anchor": {
+                  "kind": "base-rate",
+                  "detail": "own daily record gulf-daily-merchant-incident: 20/30 (0.67), 9/14 (0.64)"
+                },
+                "reason": "Anchor = own-record day rate: 20/30 qualifying UKMTO/JMIC days 27 Oct-25 Nov (0.67), 9/14 over 12-25 Nov (0.64), 5/7 last week; quiet days isolated (12,14,19,24 Nov). Saturdays 2/4. Escalation (Kuwait drone strike 26 Nov, 25 Nov Khasab tanker hit) vs Kushner contacts, no ceasefire: offsetting. Late-report risk makes pending, not NO. No matching market (Polymarket weekly notice count does not match). Kept at the 14-day rate."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T20:00:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.4,
+                "reason_blind": "Search shows repeated UKMTO-reported Hormuz/Gulf of Oman/Arabian Sea attacks through 2026 (May, Aug, others) but cannot establish the November daily rate; incidents are frequent yet not daily. No slip class. Estimate from clustering of reports.",
+                "searches": 1,
+                "at": "2026-11-26T21:00:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.52,
+                "reason": "Signals: no matching market; earlier desk figures 52-70% for neighbouring days and a 25 Nov Khasab strike show an active tempo, so I move up from my blind 0.40 but stay near even for a single day."
+              }
+            ],
+            "missing": [],
+            "disagreement": null,
+            "combined": 0.613,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.13,
+            "shadow": {
+              "sequential": {
+                "model": "claude-opus-5-5",
+                "at": "2026-11-26T19:19:30+01:00",
+                "p_blind": 0.57,
+                "p": 0.61,
+                "steps": 8,
+                "searches": 5,
+                "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.belief.json",
+                "note": "the agent logged more actions than the step limit (it says so in the trace)"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "us-macys",
+      "scope": "world",
+      "topic": "culture",
+      "rank": 8,
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "event": "Macy's postponed the 100th Thanksgiving Day Parade from Thu 26 Nov to Sat 28 Nov 2026 (step-off 8:30 a.m. ET, same Manhattan route, live on NBC) because a coastal storm brought high-wind warnings to NYC on Thursday; it is the first postponement in the parade's history. City rules ground the balloons if sustained winds exceed 23 mph and gusts exceed 34 mph, with NYPD deciding on the morning; balloons were grounded for weather only once (1971) and flown lower in 2019. The NWS forecast for Central Park on Saturday is dry and partly sunny with west winds 13-14 mph and gusts 22-25 mph during parade hours, about 9 mph under both limits. The balloons had to be deflated and re-readied in New Jersey within about 24 hours.",
+      "title_cs": "Stý průvod Macy's v New Yorku se po bouři koná v sobotu",
+      "event_key": "macys-parade-2026-11-28",
+      "case_key": "us-macys-parade-2026",
+      "sources": [
+        {
+          "title": "NBC News: Macy's Thanksgiving Day Parade is pushed back to Saturday due to weather",
+          "url": "https://www.nbcnews.com/news/us-news/macys-thanksgiving-day-parade-weather-delay-rcna611355"
+        },
+        {
+          "title": "Al Jazeera: Storms push Macy's Thanksgiving Day Parade in New York City to Saturday",
+          "url": "https://www.aljazeera.com/news/2026/11/26/storms-push-macys-thanksgiving-day-parade-in-new-york-city-to-saturday"
+        },
+        {
+          "title": "NWS New York: 7-day forecast, Central Park",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=40.7834&lon=-73.9663&unit=0&lg=english&FcstType=text&TextType=1"
+        }
+      ],
+      "claims": [
+        {
+          "id": "us-macys-29",
+          "kind": "binary",
+          "label": "Giant balloons fly on Saturday",
+          "text": "The giant character balloons fly in the 100th Macy's Thanksgiving Day Parade, held in New York on Saturday 28 November 2026 after its postponement from Thursday.",
+          "criterion": "YES if the 100th Macy's Thanksgiving Day Parade steps off in Manhattan on Sat 28 Nov 2026 (America/New_York) and its giant character balloons fly in it, i.e. NYPD/Macy's do not ground the giant balloons as a group, as reported by Macy's, NBC, the NYPD or AP/Reuters/New York Times. Individual balloons withdrawn or flown lower than usual do not change the outcome. NO if the parade does not take place on 28 Nov, or if the giant balloons are grounded (kept out of the parade or not flown) by NYPD/Macy's decision.",
+          "resolution_source": "https://www.nbcnews.com/ ; https://apnews.com/ ; https://www.macys.com/social/parade/",
+          "schedule": "official",
+          "slip_class": "other-scheduled",
+          "publishes": "NBC live broadcast from 08:30 ET; Macy's, NYPD and AP reports the same morning",
+          "tz": "America/New_York",
+          "event_window": {
+            "start": "2026-11-28T06:00:00-05:00",
+            "end": "2026-11-28T23:59:00-05:00"
+          },
+          "evidence_at": "2026-11-28T14:00:00-05:00",
+          "resolves_by": "2026-11-29T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/us-macys-29.md",
+          "signals": "data/dossiers/2026-11-29/us-macys-29.signals.md",
+          "cs": {
+            "label": "Obří balony v sobotu poletí",
+            "text": "Obří balony postav poletí ve 100. průvodu Macy's ke Dni díkůvzdání, který se po odkladu ze čtvrtka koná v New Yorku v sobotu 28. listopadu 2026.",
+            "criterion": "ANO, pokud 100. průvod Macy's ke Dni díkůvzdání vyrazí na Manhattanu v sobotu 28. listopadu 2026 (newyorského času) a obří balony postav v něm poletí, tj. newyorská policie ani Macy's obří balony jako celek neuzemní, jak uvede Macy's, NBC, newyorská policie nebo AP/Reuters/New York Times. Stažení jednotlivých balonů nebo jejich nižší let na výsledku nic nemění. NE, pokud se průvod 28. listopadu nekoná nebo pokud policie či Macy's obří balony uzemní (ponechají mimo průvod nebo je nevypustí)."
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "yes",
+              "why": "Macy's, NBC, the mayor and NYPD all plan a Saturday parade with balloons, and the NWS forecasts dry weather with winds about 9 mph below both grounding limits.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:56:20Z",
+              "checked": [
+                "markets.mjs search \"Macy's parade\"",
+                "markets.mjs search \"Thanksgiving parade balloons\"",
+                "markets.mjs search \"Macy's Thanksgiving\""
+              ],
+              "note": "Kalshi 'all featured character balloons grounded' (0.03, bid 0.03/ask 0.07, vol 26k) matches the grounding part inversely; Polymarket 'parade begins Nov 28' 0.983 matches the date part. Kalshi 'any balloon grounded' 0.32 and Polymarket 'balloon removed' 0.215 are stricter, not matches."
+            },
+            "base_rate": {
+              "class": "Macy's parades with balloons, giant balloons not grounded (1927-2025)",
+              "rate": 0.99,
+              "n": 96,
+              "hint": {
+                "class": "parades under 23/34 mph rule 1998-2025, not grounded",
+                "rate": 1,
+                "n": 28
+              }
+            },
+            "dossier": "data/dossiers/2026-11-29/us-macys-29.md",
+            "signals": "data/dossiers/2026-11-29/us-macys-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.94,
+                "reason_blind": "Balloons grounded for weather 1 of ~96 parades (1971); under the 23/34 mph rule 1998-2025 never grounded (2019 flown low, counts YES). NWS 26 Nov: Sat W 13-14 mph, gusts to ~25, dry, ~9 mph under both limits; p_if_held 0.98 (forecast bust/canyon gusts, 24h re-readying). Slip class other-scheduled 0.09; moved down ~1.1 log-odds to ~0.04 since date was chosen to dodge the storm, Macy's/NBC/NYPD/mayor confirm Sat 08:30, weather benign. 0.96x0.98=0.94.",
+                "searches": 0,
+                "at": "2026-11-26T19:07:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.95,
+                "p_held": 0.97,
+                "p_if_held": 0.98,
+                "reason": "Giant balloons grounded 1 of ~96 parades, never under the 1998 wind rule; NWS Sat W 13-14 mph, gusts ~25, dry, ~9 mph under limits -> p_if_held 0.98. Slip other-scheduled 0.09 cut to ~0.03 (date chosen to avoid storm, all parties confirm Sat 08:30). Signals: Polymarket 'begins 28 Nov' 0.983 and Kalshi 'all balloons grounded' 0.03 agree; I nudge p_held up from 0.96 to 0.97."
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:05:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.86,
+                "reason_blind": "NWS Upton (26 Nov 10:58 EST) point forecast for Manhattan, Sat 28 Nov 09-12 EST: W wind 14-15 mph, gusts 23-25 mph; AFD: dry, VFR, W G20-25kt at airports. NYC grounding rule: sustained >23 mph or gusts >34 mph, so ~9 mph gust margin. Thursday storm (gusts 55 mph) explains postponement; I did not independently confirm the reschedule (taken from claim premise). Risks: forecast error 2 days out, gusty W flow in canyons, logistics of a moved parade.",
+                "searches": 3,
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.92,
+                "p_dossier": 0.9,
+                "reason": "Dossier confirms Macy's moved parade to Sat 28 Nov 08:30 ET (NBC, Al Jazeera; first postponement ever). NWS grid for 08-12 EST Sat: W 13-14 mph sustained, gusts 22-25 mph, dry; rule 23/34 mph, ~9 mph margin. Weather grounding only once (1971). Risks: forecast bust, 24-h balloon re-readying, second delay. Signals: Kalshi all-balloons-grounded 0.03-0.07 and Polymarket parade-on-28-Nov 0.983 imply ~0.93; I land just below."
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:04:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data",
+                  "own-research"
+                ],
+                "p_blind": 0.93,
+                "reason_blind": "Case for NO: first postponement ever, balloons deflated/trucked/re-readied in ~24h (Coss), post-storm west winds, NYPD decides on the morning, slip class 9%. But NWS Central Park (10:58 EST 26 Nov, re-read 18:02Z) Sat: W 8-14 mph, gusts to 25, dry; limits 23 sustained / 34 gusts, ~9 mph margin. Grounded once (1971) in ~96; 2019 flew with far worse forecast. Macy's, NBC, mayor, NYPD all name Sat 08:30. Lowered or single withdrawn balloons still YES.",
+                "searches": 0,
+                "at": "2026-11-26T19:09:29+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals",
+                  "reference-data",
+                  "own-research"
+                ],
+                "p": 0.94,
+                "p_held": 0.975,
+                "p_if_held": 0.965,
+                "reason": "Strongest NO case: first postponement ever, balloons re-readied in ~24h, post-storm west wind, NYPD decides on the morning. But NWS Central Park (10:58 EST 26 Nov) Sat: W 8-14 mph, gusts to 25, dry, vs limits 23/34; grounded once (1971) in ~96; 2019 flew with a worse forecast. Signals: Polymarket 0.983 that the parade begins 28 Nov (I take the date part slightly up from 0.96); Kalshi all-grounded 0.03 bid/0.07 ask (ticker dated 26 Nov, rules unchecked) agrees with ~0.96 not grounded."
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:20:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "signals"
+                ],
+                "p": 0.95,
+                "anchor": {
+                  "kind": "market",
+                  "detail": "Polymarket 'parade begins Nov 28' 0.983 x (1 - Kalshi KXMACYSBALLOONS ALL grounded ~0.05)"
+                },
+                "reason": "Anchor = markets: Polymarket parade begins 28 Nov Yes 0.983; Kalshi all featured balloons grounded 0.03 bid/0.07 ask (~0.05) -> ~0.95 product. NWS (26 Nov) Sat Central Park W 13-14 mph, gusts ~22-25 mph, dry: ~9 mph under both 23/34 mph limits; weather grounding only once (1971) in ~96 parades. Residual: 24h re-readying of balloons, forecast bust, Kalshi ticker rules dated 26 Nov. No adjustment from the market."
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T20:00:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.72,
+                "reason_blind": "Searches gave only past parade/wind items, nothing on 2026 postponement cause. other-scheduled slip rate ~9% (slip.mjs). Parade already moved once; remaining risks: second postponement and NYPD balloon grounding (wind rules, 2019 near-miss). Balloons flew in nearly all recent years.",
+                "searches": 1,
+                "at": "2026-11-26T21:00:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals"
+                ],
+                "p": 0.91,
+                "reason": "Signals: Polymarket parade begins 28 Nov 0.983; Kalshi all balloons grounded 0.03 (single-balloon removal 0.2-0.3 does not matter). Residual risk is weather or a late group grounding, so I take 0.91 against the blind 0.72."
+              }
+            ],
+            "missing": [],
+            "disagreement": null,
+            "combined": 0.936,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "spread": 0.04,
+            "decomposition": {
+              "p_held": 0.973,
+              "p_if_held": 0.962,
+              "p_if_not_held": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-local",
+      "scope": "world",
+      "topic": "politics",
+      "rank": 9,
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 4
+      },
+      "event": "Algeria elects its municipal (APC) and wilaya (APW) assemblies on Saturday 28 November 2026 (decree published in the Journal officiel on 30 Aug 2026); mobile-station voting in the south began on 25 Nov and the campaign closed on 24 Nov. The electorate is 24,236,959; organisation moved to the Interior Ministry under the amended electoral law, with ANIE (president Saad Arous since 24 Aug 2026) supervising. In 2021 ANIE announced an election-night APC turnout of 35.97% (APW 34.39%), revised to 36.58% (APW 34.76%) in the provisional results three days later. The July 2026 legislative elections set a record low turnout of 20.79% on election night (21.24% provisional), after 23% in 2021; parties struggled to fill local lists this autumn.",
+      "title_cs": "Alžírsko volí obecní a provinční zastupitelstva",
+      "event_key": "dz-local-elections-2026-11-28",
+      "case_key": "dz-local-elections-2026",
+      "election": {
+        "kind": "turnout",
+        "level": "local"
+      },
+      "sources": [
+        {
+          "title": "TSA: Algérie : la date des élections locales fixée au 28 novembre",
+          "url": "https://www.tsa-algerie.com/algerie-la-date-des-elections-locales-fixee-au-28-novembre/"
+        },
+        {
+          "title": "Algerie360: Elections locales : l'ANIE dévoile le taux final de participation (2021)",
+          "url": "https://www.algerie360.com/anie-le-taux-final-de-participation-aux-elections-locales/"
+        },
+        {
+          "title": "TSA: Le FLN remporte les élections locales, le RND deuxième (2021, 36.58%)",
+          "url": "https://www.tsa-algerie.com/le-fln-remporte-les-elections-locales-le-rnd-deuxieme/"
+        },
+        {
+          "title": "Radio Algérienne: Législatives du 2 juillet: un taux de participation de 21,24%",
+          "url": "https://news.radioalgerie.dz/fr/node/89783"
+        },
+        {
+          "title": "Radio Algérienne: Guellel, corps électoral de 24 236 959 électeurs",
+          "url": "https://news.radioalgerie.dz/fr/node/99655"
+        }
+      ],
+      "claims": [
+        {
+          "id": "dz-turnout-29",
+          "kind": "binary",
+          "label": "Turnout no higher than in 2021",
+          "text": "Turnout in Algeria's municipal (APC) elections on Saturday 28 November 2026, as announced on election night, is at or below the 35.97% announced on election night in 2021.",
+          "criterion": "YES if the final national turnout for the municipal people's assemblies (APC) of 28 Nov 2026 first announced at the close of polls (by ANIE's president, or, if ANIE does not announce it, by the Interior Ministry as the official national figure; normally late on 28 Nov or early 29 Nov, Africa/Algiers) is 35.97% or lower, 35.97% being the comparable figure ANIE announced on election night in 2021 (later revised to 36.58% in the provisional results). NO if it is above 35.97%, or if the elections are not held on 28 Nov 2026. Hourly interim figures and later revisions do not count. If only a combined APC/APW or 'average' figure is given, that figure counts.",
+          "resolution_source": "https://www.aps.dz/ ; https://ina-elections.dz/",
+          "schedule": "official",
+          "slip_class": "election-held",
+          "publishes": "ANIE (or Interior Ministry) press conference at the close of polls, late 28 Nov or early 29 Nov; APS",
+          "tz": "Africa/Algiers",
+          "event_window": {
+            "start": "2026-11-28T08:00:00+01:00",
+            "end": "2026-11-28T23:59:00+01:00"
+          },
+          "evidence_at": "2026-11-29T12:00:00+01:00",
+          "resolves_by": "2026-11-30T05:00:00+01:00",
+          "dossier": "data/dossiers/2026-11-29/dz-turnout-29.md",
+          "signals": "data/dossiers/2026-11-29/dz-turnout-29.signals.md",
+          "was": {
+            "text": "Turnout in Algeria's municipal (APC) elections on Saturday 28 November 2026, as announced on election night, exceeds the 35.97% announced on election night in 2021.",
+            "criterion": "YES if the final national turnout for the municipal people's assemblies (APC) of 28 Nov 2026 first announced at the close of polls (by ANIE's president, or, if ANIE does not announce it, by the Interior Ministry as the official national figure; normally late on 28 Nov or early 29 Nov, Africa/Algiers) is above 35.97%, the comparable figure ANIE announced on election night in 2021 (later revised to 36.58% in the provisional results). NO if it is 35.97% or lower, or if the elections are not held on 28 Nov 2026. Hourly interim figures and later revisions do not count. If only a combined APC/APW or 'average' figure is given, that figure counts.",
+            "why": "mirrored to the likelier side after the ensemble (see forecast.mirrored)"
+          },
+          "election": {
+            "kind": "turnout",
+            "level": "local"
+          },
+          "cs": {
+            "label": "Účast nejvýš jako v roce 2021",
+            "text": "Účast v alžírských obecních volbách (APC) v sobotu 28. listopadu 2026, jak ji úřady oznámí ve volební noci, bude nejvýše 35,97 %, které byly oznámeny ve volební noci v roce 2021.",
+            "criterion": "ANO, pokud konečná celostátní účast ve volbách do obecních lidových shromáždění (APC) z 28. listopadu 2026, jak ji poprvé oznámí po uzavření volebních místností předseda ANIE (nebo, neoznámí-li ji ANIE, ministerstvo vnitra jako oficiální celostátní údaj; obvykle pozdě večer 28. listopadu nebo brzy 29. listopadu alžírského času), bude 35,97 % nebo nižší; 35,97 % je srovnatelný údaj, který ANIE oznámila ve volební noci v roce 2021 (v předběžných výsledcích později upravený na 36,58 %). NE, pokud bude vyšší než 35,97 %, nebo pokud se volby 28. listopadu 2026 nekonají. Průběžné hodinové údaje ani pozdější revize se nepočítají. Uvede-li se jen společný údaj za APC a APW nebo „průměrná“ účast, počítá se tento údaj."
+          },
+          "forecast": {
+            "baseline": {
+              "status_quo": "unclear",
+              "why": "Locals ran about 13 pp above legislatives in 2021, but the July 2026 legislative turnout fell below 2021 to a record low, and the threshold sits right at the 2021 level.",
+              "set_by": "dossier agent, before the forecasters reported"
+            },
+            "market": null,
+            "market_search": {
+              "at": "2026-11-26T17:57:37Z",
+              "checked": [
+                "markets.mjs search \"Algeria local elections\"",
+                "markets.mjs search \"Algeria turnout\"",
+                "markets.mjs search \"Algeria election\"",
+                "markets.mjs search \"Algerie\""
+              ],
+              "note": "nothing matched"
+            },
+            "base_rate": {
+              "class": "Algerian national-level elections since 2019 with official turnout above the previous election of the same type",
+              "rate": 0.25,
+              "n": 4,
+              "source": "2021 leg, 2021 local, 2024 pres, 2026 leg official figures (dossier)",
+              "hint": {
+                "class": "same (under ten cases; no wider class available)",
+                "rate": 0.25,
+                "n": 4
+              },
+              "note": "class counts elections whose turnout beat the previous one of the same type; this claim is the mirror (at or below)"
+            },
+            "dossier": "data/dossiers/2026-11-29/dz-turnout-29.md",
+            "signals": "data/dossiers/2026-11-29/dz-turnout-29.signals.md",
+            "agents": [
+              {
+                "role": "base-rate",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:10:00+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.667,
+                "reason_blind": "Small class 1/4 with no wider class; kept within 15-85%. Start 0.25, up slightly (+0.4 log-odds): locals draw on notable networks and ran ~13 pp above same-year legislative in 2021; new ANIE head pushes participation; more registrants. Against: 2 Jul 2026 legislative record low 20.79% (night), down from ~23% in 2021, so +13 pp gives ~34% < 35.97%; parties struggled to fill lists. Slip 0.003.",
+                "searches": 0,
+                "at": "2026-11-26T19:35:00+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p": 0.647,
+                "p_held": 0.997,
+                "p_if_held": 0.65,
+                "reason": "Class 1/4 (no wider class). Union adds the view that 2021 was a post-Hirak low, with locals at 44-47% in 2012/2017, and that the authorities are pushing turnout; I give it a little weight (+0.08 log-odds). But 2026 legislative turnout (20.79% night) is below 2021's ~23%. Scaling 2021's locals-to-legislative gap (+13 pp, or x1.56) gives ~32.5-34%, under 35.97%. Slip 0.003. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
+                "mirrored_from": {
+                  "p_blind": 0.33,
+                  "p_first": 0.33,
+                  "p_rerun": 0.35
+                },
+                "rounds": [
+                  {
+                    "p": 0.667,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  }
+                ]
+              },
+              {
+                "role": "evidence",
+                "model": "claude-opus-5-5",
+                "at_blind": "2026-11-26T19:07:00+01:00",
+                "inputs_blind": [
+                  "own-research"
+                ],
+                "p_blind": 0.727,
+                "reason_blind": "2021 pattern: legislatives 23.03% (June) then APC 35.97% on election night (ratio ~1.56). July 2026 legislatives hit a record low 20.79% at close (later 21.24%); same ratio implies ~32-33% for APC. ANIE (Arous) talks up new registrants and more candidates; locals mobilise via local lists, and figures can be generous (2024 presidential), but ANIE reported the July low plainly. Lean NO.",
+                "searches": 1,
+                "at": "2026-11-26T19:35:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "dossier",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p": 0.707,
+                "p_dossier": 0.27,
+                "reason": "July 2026 legislative 20.79% (night) is below 2021's ~23%, so no recovery from the post-Hirak trough is visible; the 2021 local uplift (+13 pp) gives ~33-34%, under 35.97%. Locals before 2019 ran at 44-47%, and new wilayas, more registrants and an official turnout push (the generous 2024 48% figure) leave real upside. Parties struggled to fill lists. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
+                "mirrored_from": {
+                  "p_blind": 0.27,
+                  "p_first": 0.27,
+                  "p_rerun": 0.29
+                },
+                "rounds": [
+                  {
+                    "p": 0.727,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  }
+                ]
+              },
+              {
+                "role": "adversarial",
+                "model": "claude-fable-5-2",
+                "at_blind": "2026-11-26T19:03:34+01:00",
+                "inputs_blind": [
+                  "dossier",
+                  "reference-data"
+                ],
+                "p_blind": 0.687,
+                "reason_blind": "Threshold 35.97% (2021 night figure). 2 Jul 2026 legislative night figure 20.79% vs ~23% in 2021; locals ran ~13 pp above the legislative in 2021, giving ~32.5-34% now; parties struggled to fill lists (3 Oct); 1 of 4 recent elections beat its predecessor. Case for YES: locals driven by notable networks, new wilayas, Interior Ministry now organises, ANIE head talks up participation, 2024 'average rate' method inflated the night figure by ~2 pp. Centre ~33.5, sd ~4.",
+                "searches": 0,
+                "at": "2026-11-26T19:11:51+01:00",
+                "inputs": [
+                  "dossier",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p": 0.677,
+                "p_held": 0.997,
+                "p_if_held": 0.68,
+                "reason": "Union adds no dated 2026 fact beyond the dossier (higher 2017/2012 local figures and 'authorities pushing turnout' are background). Same-year anchor still rules: July 2026 legislative night figure 20.79% vs ~23% in 2021, plus the ~13 pp local premium, gives ~33-34% against 35.97%; lists were hard to fill. Upside: an 'average rate' announcement as in 2024, new wilayas. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
+                "mirrored_from": {
+                  "p_blind": 0.31,
+                  "p_first": 0.31,
+                  "p_rerun": 0.32
+                },
+                "rounds": [
+                  {
+                    "p": 0.687,
+                    "at": "2026-11-26T19:09:13+01:00",
+                    "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  }
+                ]
+              },
+              {
+                "role": "anchor",
+                "model": "claude-opus-5-5",
+                "blind": "none (anchor works from the signals)",
+                "at": "2026-11-26T19:12:00+01:00",
+                "inputs": [
+                  "signals",
+                  "dossier",
+                  "reference-data",
+                  "union-of-facts"
+                ],
+                "p": 0.687,
+                "anchor": {
+                  "kind": "model",
+                  "detail": "turnout ~ N(33.5, 4) vs 35.97 (models.mjs leadabove 33.5 4 35.97 = 0.27)"
+                },
+                "reason": "Model: centre 33.5 from the record-low July 2026 legislative (20.79% night) scaled by the local-over-legislative gap (2017 ~+10 pp, 2021 +13 pp), giving 31-34. Union facts: locals were ~44% in 2012/2017 and 2021 was a Hirak trough, so some upward pull and a wider sd of 5 (0.31). The July low shows no recovery. Election-night figure counts. Slip 0.003. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
+                "mirrored_from": {
+                  "p_first": 0.29,
+                  "p_rerun": 0.31
+                },
+                "rounds": [
+                  {
+                    "p": 0.707,
+                    "at": "2026-11-26T19:04:00+01:00",
+                    "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  }
+                ]
+              },
+              {
+                "role": "outsider",
+                "model": "claude-sonnet-5-5",
+                "at_blind": "2026-11-26T18:10:00+01:00",
+                "inputs_blind": [
+                  "own-research",
+                  "reference-data"
+                ],
+                "p_blind": 0.297,
+                "reason_blind": "2021 locals election-night 35.97% (later 36.58%); earlier locals 2017 46.8%, 2012 44.3%; 2021 was a trough after Hirak boycotts. Registrations rising, new territorial division, authorities pushing turnout. Recent national votes: 2024 presidential reported 48% (revised), so official figures tend to be higher than 2021. Slight uncertainty on APC figure used.",
+                "searches": 1,
+                "at": "2026-11-26T19:00:00+01:00",
+                "inputs": [
+                  "own-research",
+                  "reference-data",
+                  "signals",
+                  "union-of-facts"
+                ],
+                "p": 0.547,
+                "reason": "Union adds the 2026 legislative at 20.79% night, below 2021's ~23%. Locals ran ~13pp above the legislative in 2021, implying ~34% now, just under 35.97%. Offsets: locals mobilise through local candidates and the 2021 base was Hirak-boycott trough. Candidate shortage is a negative. Near a coin flip, slightly NO. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
+                "mirrored_from": {
+                  "p_blind": 0.7,
+                  "p_first": 0.7,
+                  "p_rerun": 0.45
+                },
+                "rounds": [
+                  {
+                    "p": 0.297,
+                    "at": "2026-11-26T18:30:00+01:00",
+                    "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  }
+                ]
+              }
+            ],
+            "missing": [
+              {
+                "step": "research (v5, spread > 15 after the rerun)",
+                "why": "After the union-of-facts rerun the five figures still span 16 points (outsider highest); no separate research agent was run for this low-weight claim, to keep searches for the morning reserve. The spread stands; the basis line says the evidence is mixed."
+              }
+            ],
+            "disagreement": {
+              "cause": "inputs",
+              "note": "First finals spanned 0.27–0.70 (on turnout above 35.97%): the outsider, without the dossier, did not have the record-low 20.79% turnout of the July 2026 legislative election. All five reran once on the union of facts (SP dz-union.md, now summarised in the dossier); reruns 0.29–0.45. Earlier numbers are kept in rounds."
+            },
+            "spread": 0.16,
+            "decomposition": {
+              "p_held": 0.997,
+              "p_if_held": 0.657,
+              "p_if_not_held": 0
+            },
+            "combined": 0.655,
+            "combination": {
+              "method": "geo-odds"
+            },
+            "calibrated": null,
+            "mirrored": "The forecasters were asked about turnout above 35.97%; the ensemble put it below 50%, so the claim is published on the likelier side (at or below 35.97%), as the desk had announced to them. p = p_held (0.997) − p(above)."
+          }
+        }
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "event": "EU special summit day two: decision on the €45bn Ukraine loan and the 2028–34 budget",
+      "scope": "europe",
+      "scores": {
+        "impact": 5,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "why": "happens before E+2 (Fri 27 Nov); in the edition about 27 Nov",
+      "topic": "politics"
+    },
+    {
+      "event": "Czech Chamber Friday third-reading block (refinery tax, pensions, lex Ukrajina)",
+      "scope": "cz",
+      "scores": {
+        "impact": 4,
+        "reach": 5,
+        "uncertainty": 3
+      },
+      "why": "happens before E+2 (Fri 27 Nov); in the edition about 27 Nov",
+      "topic": "economy"
+    },
+    {
+      "event": "Český slavík gala",
+      "scope": "cz",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "why": "happens before E+2 (Fri 27 Nov evening)",
+      "topic": "culture"
+    },
+    {
+      "event": "Spain snap general election",
+      "scope": "europe",
+      "scores": {
+        "impact": 5,
+        "reach": 4,
+        "uncertainty": 4
+      },
+      "why": "happens after E+2 (Sun 29 Nov); Saturday is the day of reflection",
+      "topic": "politics"
+    },
+    {
+      "event": "Swiss federal votes (VAT for OASI pensions, fireworks)",
+      "scope": "europe",
+      "scores": {
+        "impact": 3,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "why": "happens after E+2 (Sun 29 Nov); scout: one provider dated it Saturday, wrongly",
+      "topic": "economy"
+    },
+    {
+      "event": "OPEC+ seven-country monthly meeting on January output",
+      "scope": "world",
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "happens after E+2 (Sun 29 Nov, OPEC release of 1 Nov)",
+      "topic": "economy"
+    },
+    {
+      "event": "ERÚ final 2027 regulated electricity and gas prices",
+      "scope": "cz",
+      "scores": {
+        "impact": 4,
+        "reach": 5,
+        "uncertainty": 3
+      },
+      "why": "happens after E+2 (last working day of November, Mon 30 Nov)",
+      "topic": "economy"
+    },
+    {
+      "event": "Chamber third reading of the 2027 state budget",
+      "scope": "cz",
+      "scores": {
+        "impact": 5,
+        "reach": 5,
+        "uncertainty": 3
+      },
+      "why": "happens after E+2 (week of 30 Nov; 2 Dec planned); board question cz-budget-2027-third-reading",
+      "topic": "economy"
+    },
+    {
+      "event": "Milion chvilek: Minář publishes his salary and assets",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 3,
+        "uncertainty": 1
+      },
+      "why": "happens after E+2 (Sun 29 Nov evening); no checkable outcome",
+      "topic": "politics"
+    },
+    {
+      "event": "Czech fuel price caps over the weekend",
+      "scope": "cz",
+      "scores": {
+        "impact": 3,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "practically certain: the cabinet extended the caps to 31 Dec on 23 Nov; nothing is decided on Saturday",
+      "topic": "economy"
+    },
+    {
+      "event": "Prague Christmas markets open; Old Town tree lit without a ceremony",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 4,
+        "uncertainty": 1
+      },
+      "why": "practically certain; diary",
+      "topic": "society"
+    },
+    {
+      "event": "Ski season opens in the Krkonoše",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "weather; no checkable outcome of weight",
+      "topic": "society"
+    },
+    {
+      "event": "D1 Brno-jih: traffic moves onto the widened half; D2 ramp to open",
+      "scope": "cz",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 1
+      },
+      "why": "scout: confirmed on d1brno.cz; practically certain; diary",
+      "topic": "society"
+    },
+    {
+      "event": "Prague Castle Advent open day",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "scout: practically certain, no outcome",
+      "topic": "culture"
+    },
+    {
+      "event": "Správa železnic closures (Zámrsk–Choceň, line 017)",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "scout: planned engineering works, no outcome",
+      "topic": "society"
+    },
+    {
+      "event": "DPP Christmas tram fleet parade",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "scout: trivial",
+      "topic": "society"
+    },
+    {
+      "event": "Davis Cup Finals in Bologna (Czechia)",
+      "scope": "cz",
+      "scores": {
+        "impact": 2,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "why": "sport is excluded",
+      "topic": "society"
+    },
+    {
+      "event": "Taiwan: New Taipei and Taichung mayoral races, KMT total of the six special municipalities",
+      "scope": "world",
+      "scores": {
+        "impact": 3,
+        "reach": 2,
+        "uncertainty": 4
+      },
+      "why": "one main claim per story: the Taipei race carries the story; the others are background in tw-taipei",
+      "topic": "politics"
+    },
+    {
+      "event": "Germany: BSW federal congress in Dresden, vote on distance from the AfD",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 3
+      },
+      "why": "scout: Saturday date not confirmed (party site unreachable; dpa says only \"end of November\")",
+      "topic": "politics"
+    },
+    {
+      "event": "France: marches against gender-based violence (Grève Féministe, CGT)",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "scout: confirmed, but no official turnout count to check against",
+      "topic": "society"
+    },
+    {
+      "event": "France: deadline for primary teachers to declare for the 1 Dec strike",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 1
+      },
+      "why": "scout: a filing deadline; the strike itself is on 1 Dec",
+      "topic": "economy"
+    },
+    {
+      "event": "Germany: IG Metall/DGB Ruhr demonstration in Bochum",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "scout: confirmed; low reach, no checkable turnout source",
+      "topic": "economy"
+    },
+    {
+      "event": "Hamburg: ver.di and GEW march against school cuts",
+      "scope": "europe",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "scout: low reach",
+      "topic": "economy"
+    },
+    {
+      "event": "Eurosystem TARGET Services November release",
+      "scope": "europe",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: technical, practically certain",
+      "topic": "economy"
+    },
+    {
+      "event": "EU EUDAMED registration deadline for medical devices",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: a deadline without an observable outcome that day",
+      "topic": "law"
+    },
+    {
+      "event": "Spain: Saerco air-traffic controllers' strike at Canary Islands airports",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "scout: continuing strike with minimum services; no checkable outcome on Saturday",
+      "topic": "economy"
+    },
+    {
+      "event": "Italy: CISL rally at Gioia Tauro; La Fenice strike",
+      "scope": "europe",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "scout: low reach",
+      "topic": "economy"
+    },
+    {
+      "event": "UK: First Bus York drivers' strike; STUC march in Glasgow",
+      "scope": "europe",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: low reach",
+      "topic": "economy"
+    },
+    {
+      "event": "Albania: opposition and student protest outside the Education Ministry",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "scout: low reach, no checkable outcome",
+      "topic": "politics"
+    },
+    {
+      "event": "ACMECS summit in Hanoi",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: low reach; declaration practically certain",
+      "topic": "politics"
+    },
+    {
+      "event": "South Africa: state funeral of former Deputy President Mlambo-Ngcuka",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: a funeral; no outcome to forecast",
+      "topic": "society"
+    },
+    {
+      "event": "Chile: union march against the AFP pension system",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 1,
+        "uncertainty": 2
+      },
+      "why": "scout: low reach, no official count",
+      "topic": "economy"
+    },
+    {
+      "event": "SpaceX Falcon 9 USSF-380 launch from Vandenberg",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "scout: classified payload, low news value; window opens 20:39 PT, after 23:59 CET reach",
+      "topic": "science-health"
+    },
+    {
+      "event": "Make Amazon Pay worker actions",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 2,
+        "uncertainty": 2
+      },
+      "why": "scout: no countable outcome",
+      "topic": "economy"
+    },
+    {
+      "event": "Maldives local council by-election; India Goa EVM checks; COSATU workshop; Kuwait NEXUS summit; Ghana–Japan expo",
+      "scope": "world",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: out of scope or of no weight",
+      "topic": "politics"
+    },
+    {
+      "event": "Czech and Prague small events from the scouts (gastroenterology congress, ZDrSEM conference, MUP briefing, exhibitions, film screening, Schola Pragensis, tax advisers' seminar, Carmelite enclosure, Zvaž vědu!)",
+      "scope": "cz",
+      "scores": {
+        "impact": 1,
+        "reach": 1,
+        "uncertainty": 1
+      },
+      "why": "scout: of no weight for a newspaper",
+      "topic": "society"
+    },
+    {
+      "event": "Iran war: Iranian drones kill two Italians in Kuwait; Italian reaction",
+      "scope": "world",
+      "scores": {
+        "impact": 5,
+        "reach": 4,
+        "uncertainty": 3
+      },
+      "why": "the paper does not forecast attacks causing deaths; the running story is covered by gulf-shipping",
+      "topic": "security"
+    },
+    {
+      "event": "Ukraine strikes Russian ships off Libya; Italy protests",
+      "scope": "world",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "no dated step; the war is covered by ua-war",
+      "topic": "security"
+    },
+    {
+      "event": "Israel: Eisenkot's coalition talks",
+      "scope": "world",
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "no step on Saturday (Shabbat); board question il-government-sworn-in",
+      "topic": "politics"
+    },
+    {
+      "event": "Netanyahu trial: response to the judges' proposal",
+      "scope": "world",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 3
+      },
+      "why": "no dated step",
+      "topic": "law"
+    },
+    {
+      "event": "Depardieu sent to trial",
+      "scope": "europe",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "no dated step",
+      "topic": "law"
+    },
+    {
+      "event": "SpaceX Starmind approval",
+      "scope": "world",
+      "scores": {
+        "impact": 3,
+        "reach": 3,
+        "uncertainty": 1
+      },
+      "why": "no dated step",
+      "topic": "science-health"
+    },
+    {
+      "event": "US proposes tariffs of up to 35% on 14 economies",
+      "scope": "world",
+      "scores": {
+        "impact": 5,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "comment period to 5 Jan; nothing dated on Saturday; board question us-eu-tariffs-jan",
+      "topic": "economy"
+    },
+    {
+      "event": "Hernández de Cos as ECB president",
+      "scope": "europe",
+      "scores": {
+        "impact": 4,
+        "reach": 3,
+        "uncertainty": 1
+      },
+      "why": "nothing on Saturday; appointment in December; board question",
+      "topic": "economy"
+    },
+    {
+      "event": "Czech licence-fee abolition bill",
+      "scope": "cz",
+      "scores": {
+        "impact": 4,
+        "reach": 4,
+        "uncertainty": 2
+      },
+      "why": "nothing on Saturday; committee 10 Dec, second reading January",
+      "topic": "politics"
+    },
+    {
+      "event": "US Thanksgiving storms: flight cancellations",
+      "scope": "world",
+      "scores": {
+        "impact": 2,
+        "reach": 3,
+        "uncertainty": 2
+      },
+      "why": "weather; the Saturday step is the Macy's parade (us-macys)",
+      "topic": "society"
+    }
+  ],
+  "scouts": {
+    "file": "data/external/agenda/2026-11-28.json",
+    "listed": 64,
+    "new_to_us": 41,
+    "confirmed": 3,
+    "added": [
+      "itlos-sealion (ITLOS order, confirmed on press release 405; also in our world sweep)",
+      "dz-local (Algeria local elections, confirmed by the decree)"
+    ],
+    "note": "Read after our own sweeps. Taiwan, Victoria, Spain's reflection day and the Macy's parade were already ours. Of the entries new to us, the ITLOS order and Algeria's local elections were confirmed and became candidates (both also surfaced in our world sweep); the D1 Brno-jih switch was confirmed and dropped as certain; the Swiss votes are on Sunday, not Saturday (one provider). The rest were judged from the descriptions as out of scope or of low weight and are in dropped with reason \"scout:\"."
+  },
+  "readers": {
+    "asked": 2,
+    "on_day": 0,
+    "added": [],
+    "note": "node scripts/requests.mjs leads 3 lists two subjects (EP final vote on the 2027 EU budget; the special European Council's conclusions), both already in earlier editions; none falls on 28 Nov."
+  },
+  "unreachable": [
+    "reuters.com, apnews.com, ft.com, irozhlas.cz, theguardian.com (403 to the reader)",
+    "ukmto.org (403)",
+    "psp.cz (unreachable for the Czech sweep; the desk snapshot data/psp/latest.json was used)",
+    "consilium.europa.eu (refuses scripted reading)",
+    "vlada.gov.cz expected events (empty as text)",
+    "macys.com parade page (placeholder)",
+    "ITLOS hearing transcripts (PDF download refused)",
+    "BSW party site (unreachable)",
+    "Metaculus: two dossier agents could not use the token (permission check), market search ran without it for gulf-ukmto-29 and itlos-sealion-29"
+  ],
+  "run": {
+    "started_at": "2026-11-26T18:39:00+01:00",
+    "agents": 45,
+    "searches": 142,
+    "search_note": "From agent reports: agenda and front-page sweeps 44, board checks 23, dossiers 32, evidence forecasters 19, outsiders 13, board evidence 6, disagreement research 4, sequential researchers 10 (three claims; two of them overran the step limit and say so in their traces). About 58 left, more than the morning reserve of 30."
+  },
+  "note": "Round one: five forecasters per claim (base-rate opus, evidence opus, adversarial fable, anchor opus, outsider sonnet), blind then with the signals file, the same agent continued for the second step; anchors one step. Plain geometric mean of odds (calibration.json: geo-odds). itlos-sealion-29 spread 20 points: research found no decisive fact (genuine). dz-turnout-29 spread 43 points (inputs): rerun on the union of facts, now 16 points; claim mirrored to the likelier side. Shadow sequential researcher on itlos-sealion-29, tw-taipei-29 and gulf-ukmto-29.",
+  "for_publisher": [
+    "tw-taipei-29 – Ťiang Wan-an obhájí post starosty Tchaj-peje – so 28. 11.",
+    "au-victoria-29 – koalice Jess Wilson získá ve Viktorii nejméně 45 z 88 křesel – so 28. 11.",
+    "itlos-sealion-29 – tribunál pro mořské právo nařídí ve sporu o Sea Lion alespoň jedno předběžné opatření – so 28. 11."
+  ]
+}
