@@ -2,18 +2,12 @@
   "term": 10,
   "meeting": 37,
   "agenda_status": "approved",
-  "as_of": "2026-11-25T17:01:41+01:00",
+  "as_of": "2026-11-26T03:05:02+01:00",
   "starts": "2026-11-24T14:00:00+01:00",
   "source": "https://www.psp.cz/schuze/10/37",
   "archive_source": "https://www.psp.cz/eknih/cdrom/opendata/schuze.zip",
   "schedule_status": "approved",
   "day_order": [
-    {
-      "date": "2026-11-25",
-      "order": [
-        "1"
-      ]
-    },
     {
       "date": "2026-11-26",
       "order": [
@@ -93,10 +87,9 @@
       "number": 1,
       "title": "Vládní návrh zákona o státním rozpočtu České republiky na rok 2027 /sněmovní tisk 324/ – druhé čtení",
       "block": "Blok rozpočet – druhé čtení",
-      "web_status": null,
+      "web_status": "completed",
       "web_note": "St 25. 11., 4. bod",
-      "print": 324,
-      "registered_speakers": 56
+      "print": 324
     },
     {
       "number": 2,
@@ -198,7 +191,7 @@
       "web_status": null,
       "web_note": "Čt 26. 11., 2. bod v 18.00 hodin",
       "print": 300,
-      "registered_speakers": 17
+      "registered_speakers": 19
     },
     {
       "number": 14,
@@ -207,7 +200,7 @@
       "web_status": null,
       "web_note": "Čt 26. 11., 1. bod v 18.00 hodin",
       "print": 301,
-      "registered_speakers": 6
+      "registered_speakers": 8
     },
     {
       "number": 15,
@@ -1252,7 +1245,7 @@
       "title": "Vládní návrh zákona, kterým se mění zákon č. 586/1992 Sb., o daních z příjmů, ve znění pozdějších předpisů /sněmovní tisk 311/ – třetí čtení",
       "block": "Blok zákony – třetí čtení",
       "web_status": null,
-      "web_note": "Pá 27. 11., 1. bod (další projednávání možné od 25. 11. 2026 10:44)",
+      "web_note": "Pá 27. 11., 1. bod (lze projednávat)",
       "print": 311,
       "registered_speakers": 2
     },
@@ -1675,8 +1668,8 @@
       "web_note": null
     }
   ],
-  "web_heading": "Schválený pořad a stav projednávání 37. schůze Od 24. 11. 2026, 14:00 Aktuální stav k 25. 11. 2026, 12:42",
-  "meeting_status": "Probíhá",
+  "web_heading": "Schválený pořad a stav projednávání 37. schůze Od 24. 11. 2026, 14:00 Aktuální stav k 26. 11. 2026, 00:06",
+  "meeting_status": "Přerušeno do 26. 11. 2026 09:00.",
   "indexed_voting_days": [
     "20261124",
     "20261125"
@@ -3692,12 +3685,12 @@
     ]
   },
   "previous_day_order": {
-    "observed_at": "2026-11-25T03:01:03+01:00",
+    "observed_at": "2026-11-25T17:01:41+01:00",
     "day_order": [
       {
         "date": "2026-11-25",
         "order": [
-          "137, 181, 1"
+          "1"
         ]
       },
       {
@@ -3712,7 +3705,7 @@
       {
         "date": "2026-11-27",
         "order": [
-          "142, 140, 135, 138, 143, 139, 134, 136, 144, 145, 146, 141",
+          "142, 140, 138, 143, 139, 134, 136, 144, 145, 146, 141",
           "body dle schváleného pořadu schůze"
         ]
       },
@@ -3777,5 +3770,6 @@
   "vote_days": [
     "data/psp/votes/2026-11-24.json",
     "data/psp/votes/2026-11-25.json"
-  ]
+  ],
+  "resume_at": "2026-11-26T09:00:00+01:00"
 }
