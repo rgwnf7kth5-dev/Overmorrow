@@ -6,12 +6,12 @@
   "number_expected": 38,
   "candidates": 55,
   "candidates_note": "9 proposed stories with 10 claims (2 interval: us-blackfriday-29, ua-drones-29; 1 derived: us-blackfriday-129-29) and 46 dropped candidates (some grouped), from the stories of the day (10 listed), the Czech and world/Europe/economy sweeps, the forecast board, the scouts' agenda (64 entries) and readers' leads. Saturday 28 Nov is a thin day: no Czech institution sits; the world has Taiwan's local elections and nuclear referendum, Victoria's state election, Algeria's local elections, an ITLOS order and Adobe's Black Friday figure.",
-  "planned_lead": "tw-taipei (Chiang Wan-an re-elected in Taipei: 54%, a near toss-up with the polls split by sponsor) with tw-nuclear (referendum passes: 73%) beside it; alternative lead ua-war (drones in the night to Saturday: median about 135, 80% range 88–291). Economy: us-blackfriday (Adobe: median $12.97bn, range 12.67–13.29), tw-nuclear, itlos-sealion (51%).",
+  "planned_lead": "tw-taipei (Chiang Wan-an re-elected in Taipei: 54%, a near toss-up with the polls split by sponsor) with tw-nuclear (referendum passes: 78% after the evening check (73% at the desk)) beside it; alternative lead ua-war (drones in the night to Saturday: median about 135, 80% range 88–291). Economy: us-blackfriday (Adobe: median $12.98bn, range 12.71–13.28 after the evening check), tw-nuclear, itlos-sealion (51%).",
   "cz_note": "No Czech story proposed.",
   "cz_shortfall": "No Czech story for Saturday 28 Nov. The Czech sweep found no event of weight with a checkable outcome: no Chamber, Senate or cabinet sitting, no party congress (ODS rejected an extraordinary one; SPD meets in April 2027; the others held theirs earlier), no announced demonstration (Milion chvilek acts on 2 Dec), no strike, no ČSÚ or ČNB release, no court ruling; ERÚ's 2027 prices come on Mon 30 Nov and the budget's third reading in the week of 30 Nov. What is on (Christmas markets, ski season, fuel caps already extended, the D1 traffic switch) is practically certain or uncheckable and goes to the diary. Friday's Chamber votes and Český slavík belong to the edition about 27 Nov.",
   "economy": "Three stories with topic economy: us-blackfriday (Adobe Black Friday figure, interval with a derived claim), tw-nuclear (referendum on Taiwan's energy policy) and itlos-sealion (whether an oil development is halted). The last two are energy items; if the morning judges them politics and law, it records meta.economy_shortfall: Saturday has no data release, central-bank decision or company result of weight.",
   "easy_main": "One main claim at 90% or more: us-macys-29 (94%; the giant balloons fly). No secondary claim at 95% or more.",
-  "negative_main": "No main claim below 50% and no negative headline. Two claims were put to the forecasters with a stated mirror rule and published on the likelier side: dz-turnout-29 (asked as turnout above 35.97%; ensemble below 50%, so the claim is turnout at or below 35.97%, 66%; headline \"turnout falls short of 2021\"). tw-taipei-29 (54%) and itlos-sealion-29 (51%) stayed on the side first asked. No story needs awaited.",
+  "negative_main": "No main claim below 50% and no negative headline. Two claims were put to the forecasters with a stated mirror rule and published on the likelier side: dz-turnout-29 (asked as turnout above 35.97%; ensemble below 50%, so the claim is turnout at or below 35.97%, 67% after the evening check (66% at the desk); headline \"turnout falls short of 2021\"). tw-taipei-29 (54%) and itlos-sealion-29 (51%) stayed on the side first asked. No story needs awaited.",
   "reports_what_happens": "Every main claim is about an outcome on Sat 28 Nov: who wins Taipei, whether the referendum passes, whether the Coalition wins a majority in Victoria, what ITLOS orders, the Black Friday figure Adobe publishes, the overnight drone count, shipping incidents in the Gulf, whether the Macy's balloons fly, Algeria's announced turnout.",
   "running_note": "Stories of the day read 26 Nov ~18:40 CET from BBC, ČT24, Seznam Zprávy, Al Jazeera, Euronews and DW (Guardian, Reuters, AP, FT, iROZHLAS refused, HTTP 403). 10 listed plus the Czech licence-fee bill (two lists); 3 covered (gulf-shipping, ua-war, us-macys).",
   "running_shortfall": "3 running stories covered against running_min 6. The others have nothing reportable on Sat 28 Nov: the EU summit and the ECB nomination end or move to December, Spain votes on Sunday (Saturday is the day of reflection), the Netanyahu and Depardieu cases have no dated step, the Ibiza tanker is a disaster the paper does not forecast, Starmind launches in 2027, the Czech licence-fee bill goes to committee on 10 Dec. Each gets a diary line with its next dated step.",
@@ -503,6 +503,26 @@
                   "trace": "data/dossiers/2026-11-29/tw-taipei-29.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "leads_distinct": 20,
+              "already_in_dossier": 13,
+              "facts_confirmed": 4,
+              "added": [
+                "https://tstm.tw/Article/Detail/5557",
+                "https://money.udn.com/money/story/12622/9893750",
+                "https://focustaiwan.tw/politics/202611260011"
+              ],
+              "reforecast": false,
+              "before": 0.538,
+              "note": "No confirmed fact is material to the outcome; the evening figure stands."
             }
           }
         }
@@ -611,120 +631,154 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:10:00+01:00",
+                "at_blind": "2026-11-26T21:17:49+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.7,
-                "reason_blind": "Start 0.70 (7/10 same-day questions, all 24 Nov 2018; wider 7/15=0.47 includes standalone votes). Supportive: nuclear 'agree' won 59% in 2018 (5.90m) and 74% in 2025; locals turnout ~55-60% makes 5.0m reachable at ~46%+ agree. Against: DPP voters present and may vote 'disagree' (2021 restart lost 47-53); wording 'abolish nuclear-free homeland'; ballot can be declined. Net ~0. Slip 0.003.",
+                "p_blind": 0.72,
+                "reason_blind": "Class: same-day-as-election questions under 25% rule 7/10 (0.70, all 2018, correlated); wider 7/15. Nuclear-specific: 2018 No.16 passed 59.5% agree, 5.90M agree (29.8% of electorate) at 54.8% turnout; 2025 No.21 alone 74% agree but 21.7% of electorate. Aug 2026 poll 60.7% pro-nuclear vs 22.5%. KMT campaigning hard; anti-nuclear groups urging 'disagree' (2021 lost 47-53). Need ~5.0M agree, ~46-50% agree at ~10-11M ballots. Small up for poll/2025 shift, small down for ballot take-up and no-mobilisation risk. Slip 0.003.",
                 "searches": 0,
-                "at": "2026-11-26T19:20:00+01:00",
+                "at": "2026-11-26T21:19:15+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.71,
+                "p": 0.72,
                 "p_held": 0.997,
-                "p_if_held": 0.71,
-                "reason": "Start 0.70 (7/10 same-day 2018 questions; wider 7/15). Nuclear 'agree' won 2018 (5.90m) and 2025 (74%); locals turnout makes 5.0m reachable; risks DPP 'disagree' vote and declined ballots. Signals: Kalshi 0.72 (bid 0.69/ask 0.73) agrees but is very thin (vol 401), so it only confirms; KMT expected to do well (Polymarket 0.705). Slip 0.003."
+                "p_if_held": 0.72,
+                "rounds": [
+                  {
+                    "p": 0.71,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Class: election-day questions under 25% rule 7/10 (all 2018, correlated); wider 7/15. 2018 No.16 nuclear passed with 5.90M agree (29.8% of electorate) at 54.8% turnout; 2025 No.21 alone 74% agree but 21.7%. Aug 2026 poll 60.7% pro-nuclear. KMT campaigning; anti-nuclear groups urge 'disagree' (2021 lost 47-53). Need 5,000,959 agree. Case record: new case, no earlier figures, nothing to take. Kalshi 0.72 (bid 0.69/ask 0.73, vol 401, thin) agrees with blind figure, so kept unchanged. Slip 0.003."
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:07:00+01:00",
+                "at_blind": "2026-11-26T21:18:33+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.66,
-                "reason_blind": "Referendum 22 held with local elections (high turnout, ~10-12M voters), so the 5.0M agree threshold is reachable; 2018 nuclear vote alongside locals passed with 5.9M. Aug 2025 Maanshan vote got 4.34M agree (~3:1) but missed the threshold on low turnout. Risk: DPP and green groups urge 'no' (2021 4th-plant vote lost 47-53 when DPP mobilised). Opinion has moved pro-nuclear since 2021; no recent referendum poll found.",
+                "p_blind": 0.76,
+                "reason_blind": "Single referendum (No.22, KMT-proposed, CEC-approved 28 Aug) coupled with 28 Nov local elections; slip risk ~0.3%. Threshold 5,000,959 agree. Precedent: 2018 'nuclear for green' coupled with local elections passed with 5.89M agree vs 4.01M; 2025 standalone Maanshan vote got 4.34M agree (74%) but missed threshold on low turnout. Coupled turnout ~55-60% gives ~10.5-11.5M ballots, so ~45-48% agree share suffices. Lai softened on nuclear; DPP opposes mildly. No poll found; wording 'abolish nuclear-free homeland' is broader than 2025.",
                 "searches": 3,
-                "at": "2026-11-26T19:20:00+01:00",
+                "at": "2026-11-26T21:19:39+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.69,
-                "p_held": 0.997,
-                "p_if_held": 0.69,
-                "p_dossier": 0.67,
-                "reason": "Held with local elections: 2018 nuclear Q16 passed with 5.90M agree (29.8% of electorate) at 54.8% turnout; 2022 constitutional vote with locals drew 5.65M agree. Threshold 5,000,959. Opinion is more pro-nuclear than 2021 (2025: 74% agree). Risks: DPP 'disagree' mobilisation (2021 lost 47-53), separate ballot can be declined, no referendum polls. Signals: thin Kalshi market at 0.72 agrees; nudge up slightly."
+                "p": 0.75,
+                "p_dossier": 0.75,
+                "rounds": [
+                  {
+                    "p": 0.69,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Held with 28 Nov local elections (slip ~0.3%); threshold 5,000,959 agree. 2018 coupled nuclear vote passed with 5.90M agree (59.5%) at 54.8% turnout; 2025 standalone got 74% agree but only 4.34M. At ~55% turnout ~46-48% agree suffices. Aug 2026 Formosa poll: 60.7% keep nuclear vs 22.5% nuclear-free. Risks: anti-nuclear groups urge taking ballot and voting no (2021 restart lost 47-53); ballot uptake. Thin Kalshi 0.72 agrees; no case record or earlier figures, so nothing to anchor on; trimmed 0.01 for the organised 'disagree' push."
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-26T19:03:34+01:00",
+                "at_blind": "2026-11-26T21:17:39+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.76,
-                "reason_blind": "Needs 5,000,959 agree and agree>disagree. With local elections (turnout ~55-60%) valid ballots ~10.5-11.5m, so agree needs ~45-48%. 2018 No.16 with locals: 5.90m agree (59.5%); 2025 alone: 4.34m (74%). Case for NO: 2021 restart question lost 47-53 after DPP mobilised 'no'; wording 'abolish nuclear-free homeland' is partisan; DPP momentum in 2026; voters may decline the separate ballot; invalid ballots were ~8% in 2018; no poll found. Still KMT+TPP base alone is near 5m.",
+                "p_blind": 0.78,
+                "reason_blind": "Needs agree>disagree and 5,000,959 agree (25% of 20,003,835). Held with local elections: 2018 No.16 got 5.90M agree (59.5%, 29.8% of electorate) at 54.8% turnout; 2022 same-day referendum 5.65M agree. Alone in 2025: 4.34M (74%), 659k short. Aug poll 60.7/22.5 pro-nuclear (general, not the wording). KMT urges taking ballot; anti-nuclear groups themselves say threshold likely crossed. Case for NO: separate ballot can be declined, loaded KMT wording, DPP 'no' mobilisation as in 2021 (47-53), referendum fatigue, lower turnout; 2018 class 7/10, wide 7/15. Slip 0.003.",
                 "searches": 0,
-                "at": "2026-11-26T19:09:13+01:00",
+                "at": "2026-11-26T21:19:48+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.75,
+                "p": 0.78,
                 "p_held": 0.997,
-                "p_if_held": 0.75,
-                "reason": "Blind 0.76. Signals: only a thin Kalshi market (0.72, volume 401), a weak signal that agrees; no change beyond rounding. Needs 5,000,959 agree and agree>disagree; with local-election turnout agree needs ~45-48% of valid votes. 2018 No.16 with locals got 5.90m (59.5%); 2025 alone 4.34m. NO case: 2021 restart question lost 47-53 on DPP mobilisation, partisan wording, declined ballots, ~8% invalid in 2018, no poll."
+                "p_if_held": 0.78,
+                "rounds": [
+                  {
+                    "p": 0.75,
+                    "at": "2026-11-26T19:09:13+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Needs agree>disagree and 5,000,959 agree (25% of 20,003,835). Same-day precedents: 2018 No.16 5.90M agree (59.5%) at 54.8% turnout; 2022 5.65M agree. Alone in 2025: 4.34M, 659k short. Aug poll 60.7/22.5 pro-nuclear (general). KMT urges taking ballot; opponents concede threshold likely crossed. NO case: ballot can be declined, loaded wording, DPP 'no' mobilisation (2021: 47-53), fatigue; class 7/10, wide 7/15. Kalshi 0.72 on 401 volume: thin, consistent, no move. Case record: new case, no earlier figures, nothing taken. Slip 0.003."
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-26T19:04:00+01:00",
+                "at": "2026-11-26T21:17:49+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "p": 0.76,
+                "p": 0.74,
+                "rounds": [
+                  {
+                    "p": 0.76,
+                    "at": "2026-11-26T19:04:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
                 "anchor": {
-                  "kind": "model",
-                  "detail": "agree-minus-disagree lead +16 sd 14 vs 0 (models.mjs leadabove 16 14 0 = 0.87); cross-checks base rate 0.70 n=10 and thin Kalshi 0.72"
+                  "kind": "market",
+                  "detail": "Kalshi KXTAIWANNUCLEARREF-26NOV28 Yes last 0.72, bid 0.69/ask 0.73, vol 401, read 2026-11-26T17:58Z (signals file)"
                 },
-                "reason": "Kalshi 0.72 too thin (vol 401) to anchor. Model: ~11M referendum ballots (2018 10.8M, 2022 10.7M with locals); 5,000,959 agree needs ~45.5% of valid, so binding test is agree>disagree. Mean agree ~58% (2018 59.5, 2021 47, 2025 74), lead sd 14 gives 0.87. Down for ballot refusal / lower take-up, possible DPP 'no' mobilisation as in 2021, no issue polls: 0.76. Same-day base rate 7/10 and Kalshi agree. Slip 0.003."
+                "reason": "Kalshi KXTAIWANNUCLEARREF Yes 0.72 (bid 0.69/ask 0.73, vol 401, thin) is the anchor; nudged up slightly: held with local elections like 2018 No.16 (5.90M agree, 59.5%, 29.8% of electorate) and 2022 (5.65M agree) both above the 5,000,959 bar; 2025 lone vote 74% agree; Formosa Aug poll 60.7% pro-nuclear; KMT mobilising. Risks: DPP/green 'take ballot, vote disagree' push (2021 lost 47-53), ballot declining, turnout below ~55%. Slip risk ~0.003. New case, no earlier figures of ours to weigh."
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-26T18:10:00+01:00",
+                "at_blind": "2026-11-26T21:17:53+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.75,
-                "reason_blind": "Referendum held with local elections so turnout ~60%+ of 20.0M; 5,000,959 agree votes needed. 2025 nuclear referendum got ~74% agree but only ~4.3M votes at 29% turnout (failed threshold). Combined-day turnout makes threshold likely if agree share >~40%; risk is DPP mobilising disagree votes. Polls historically majority pro-restart.",
-                "searches": 2,
-                "at": "2026-11-26T18:30:00+01:00",
+                "p_blind": 0.93,
+                "reason_blind": "Aug 2025 Maanshan referendum: ~74% agree (4.34M) but turnout 29% missed the 25% bar (~4.95M). Now bundled with 28 Nov local elections (2022 turnout ~60%, ~12M voters), so 5.0M agree needs only ~42% of voters at ~70% agree share. Polls favored nuclear restart. Slip risk 0.3%. Residual: ballot skipping, DPP/green no campaign, wording backlash.",
+                "searches": 1,
+                "at": "2026-11-26T21:20:04+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.74,
-                "p_held": 0.99,
-                "p_if_held": 0.747,
-                "reason": "Kalshi 0.72 (thin, 401 volume) matches my 0.75; slight move down. Threshold plausible with combined-day turnout."
+                "p": 0.88,
+                "rounds": [
+                  {
+                    "p": 0.74,
+                    "at": "2026-11-26T18:30:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "No earlier figures or case record. Aug 2025: ~74% agree but 29% turnout missed the 25% bar (~4.95M). Bundled with local elections (~60% turnout, ~12M), 5.0M agree needs ~42% of voters at ~70% agree. Slip risk 0.3%. Thin Kalshi market (0.72, vol 401) is a weak signal; trimmed slightly for ballot-skipping and a no campaign."
               }
             ],
             "missing": [],
-            "disagreement": null,
-            "combined": 0.731,
+            "disagreement": {
+              "cause": "genuine",
+              "note": "After the evening check the five figures span 16 points (0.72 to 0.88). The outsider, who works without the dossier, expects an 'agree' share near the 74% of the standalone 2025 vote on local-election turnout; the dossier readers weigh the 59.5% of 2018, the 47% of 2021 and voters declining the separate ballot. The research agent found no poll on Referendum No. 22 itself and no DPP headquarters call for 'disagree' or a boycott; nothing decisive, the spread stands and the basis line should say the evidence is mixed."
+            },
+            "combined": 0.781,
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "spread": 0.07,
+            "spread": 0.16,
             "decomposition": {
-              "p_held": 0.996,
-              "p_if_held": 0.734,
+              "p_held": 0.997,
+              "p_if_held": 0.783,
               "p_if_not_held": 0
             },
             "shadow": {
@@ -770,6 +824,49 @@
                   "trace": "data/dossiers/2026-11-29/tw-nuclear-29.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "leads_distinct": 12,
+              "already_in_dossier": 6,
+              "facts_confirmed": 5,
+              "added": [
+                "https://tw.news.yahoo.com/%E5%BB%A2%E9%99%A4%E9%9D%9E%E6%A0%B8%E5%AE%B6%E5%9C%92%E5%85%AC%E6%8A%95-%E6%9C%80%E6%96%B0%E6%B0%91%E8%AA%BF%E5%87%BA%E7%88%90-60-7-%E6%B0%91%E7%9C%BE%E5%8A%9B%E6%8C%BA%E7%B9%BC%E7%BA%8C%E7%94%A8-134022788.html",
+                "https://newtalk.tw/news/view/2026-11-26/1073847",
+                "https://www.cna.com.tw/news/aipl/202611220087.aspx",
+                "https://udn.com/news/story/6656/9894386",
+                "https://www.taiwannews.com.tw/news/6479535"
+              ],
+              "reforecast": true,
+              "before": 0.731,
+              "material": [
+                "A Formosa (My-Formosa e-paper) national telephone poll conducted 24-26 August 2026 (n=1,632, age 20+) and published 1 September 2026 found 60.7% saying Taiwan should keep using nuclear power for stable supply and industry, 22.5% saying Taiwan should move to a nuclear-free homeland, and 16.8% no clear answer; it asked about nuclear power generally, not the Referendum No. 22 wording."
+              ],
+              "after": 0.781
+            },
+            "research": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "question": "Which fact would settle whether Taiwan Referendum No. 22 (28 Nov 2026) passes: a dated poll on voting intention for No. 22 itself, or a dated DPP position (campaign 'disagree', boycott the ballot, or neutral)?",
+              "finding": "No published poll on voting intention for Referendum No. 22 itself (agree/disagree or ballot uptake) was found in 4 searches and the udn, NOWnews, CW and The News Lens pages they returned (CW and The News Lens refused scripted reading); and no DPP party-headquarters statement calling for 'disagree', a ballot boycott or neutrality was found. What was confirmed: the Executive Yuan sent a MOEA vice minister and DPP legislator Chen Pei-yu, who called the referendum a political vote-grabbing show, as the opposing side at the CEC forums, while the KMT campaigns for 'agree' and complained in October that the government had not named debaters.",
+              "decisive": false,
+              "sources": [
+                "https://www.nownews.com/news/6891832",
+                "https://udn.com/news/story/6656/9882107",
+                "https://udn.com/news/story/6656/9828657",
+                "https://udn.com/news/story/6656/9837130",
+                "https://udn.com/news/story/6656/9844411",
+                "https://udn.com/news/story/6656/9886447",
+                "https://www.cw.com.tw/article/5143668 (HTTP 403)",
+                "https://www.thenewslens.com/article/271095 (HTTP 403)"
+              ],
+              "searches": 4,
+              "model": "claude-opus-5-5"
             }
           }
         }
@@ -1305,6 +1402,24 @@
                   "trace": "data/dossiers/2026-11-29/itlos-sealion-29.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 17,
+              "leads_distinct": 10,
+              "already_in_dossier": 9,
+              "facts_confirmed": 1,
+              "added": [
+                "https://www.ajbell.co.uk/news/articles/rockhopper-notes-navitass-replacement-two-breach-contractors"
+              ],
+              "reforecast": false,
+              "before": 0.508,
+              "note": "No confirmed fact is material to the outcome; the evening figure stands."
             }
           }
         }
@@ -1367,9 +1482,9 @@
           "unit": "US$ bn",
           "scale": 0.105,
           "quantiles": {
-            "q10": 12.67,
-            "q50": 12.97,
-            "q90": 13.29
+            "q10": 12.71,
+            "q50": 12.98,
+            "q90": 13.28
           },
           "forecast": {
             "baseline": {
@@ -1394,9 +1509,9 @@
               "rate": 1,
               "n": 6,
               "hint": {
-                "class": "Black Friday only",
+                "class": "Black Friday only (2023-25; the 2023 pair confirmed on Adobe's release by the evening check)",
                 "rate": 1,
-                "n": 2
+                "n": 3
               }
             },
             "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
@@ -1405,41 +1520,50 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:04:00+01:00",
+                "at_blind": "2026-11-26T21:17:41+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "q10_blind": 12.7,
+                "q10_blind": 12.75,
                 "q50_blind": 13,
-                "q90_blind": 13.35,
-                "reason_blind": "Start: models.mjs quantiles 12.9/0.105/1.6 = 12.68/12.90/13.12. Adobe's own forecast ($12.9bn, +9.2%, 28 Sep, restated 25 Nov) has been met or beaten in all 6 verified 2024-25 single-day cases; season to date +9.1% YoY vs +6.7% forecast. Shift median to 13.0, widen both tails (rounding to 0.1, pre-2024 misses unverified). Slip company-event 0.004: publication Saturday morning very likely.",
+                "q90_blind": 13.3,
+                "reason_blind": "Adobe forecast $12.9bn (+9.2%), restated 25 Nov. First actual >= forecast 3/3 BF years (+0.2, 0, +0.1bn) and 6/6 pooled single days 2024-25 (RMS 0.7pp, all positive); scale 0.105bn. Season to date +9.1% vs +6.7% forecast supports upside; downside from early discounting/pull-forward, flat Deloitte spend, fewer NRF shoppers. Slip risk ~0.4% (company-event 0/35). Outcome discrete at 0.1: mass mostly on 12.9-13.1, widened tails for unverified larger historical misses.",
                 "searches": 0,
-                "at": "2026-11-26T19:07:00+01:00",
+                "at": "2026-11-26T21:21:07+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "q10": 12.7,
+                "q10": 12.75,
                 "q50": 13,
-                "q90": 13.35,
-                "consensus_note": "q50 0.95 scale above Adobe's 12.9 forecast: Adobe single-day Cyber Week forecasts met or beaten 6/6 in 2024-25 (mean +0.6pp), and Nov 1-22 2026 ran +9.1% vs +6.7% season forecast. Tails widened for rounding and unverified larger pre-2024 misses.",
-                "reason": "Start models.mjs 12.68/12.90/13.12 around Adobe's $12.9bn (+9.2%) forecast. Adobe met/beat its single-day forecasts 6/6 in 2024-25 and the season is running hot, so median 13.0 with wider tails. Slip company-event 0.004. Signals: no Black Friday market; a thin Manifold Cyber Monday market at 0.41 for just above forecast is a weak hint against a big beat, not enough to move the median."
+                "q90": 13.3,
+                "consensus_note": "Adobe's first Black Friday actual met or beat its pre-season forecast in 3/3 verified years (2023 9.6->9.8, 2024 10.8->10.8, 2025 11.7->11.8) and its single-day Cyber Week forecasts were beaten 6/6 in 2024-25 (mean +0.6pp growth). Season to date Nov 1-22 2026 is +9.1% vs +6.7% season forecast. Median one 0.1 rounding step above 12.9.",
+                "earlier": [
+                  {
+                    "q10": 12.7,
+                    "q50": 13,
+                    "q90": 13.35,
+                    "at": "2026-11-26T19:07:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Adobe forecast $12.9bn (+9.2%). First actual >= forecast 3/3 BF years (+0.2,0,+0.1bn), 6/6 pooled days 2024-25; scale 0.105bn. Season to date +9.1% vs +6.7% fc favours upside; pull-forward, flat Deloitte spend, fewer NRF shoppers cap it. Slip ~0.4%. No earlier figures in this case and no matching market; the thin Manifold Cyber Monday market (41% for >= $15.2bn vs 15.1 fc, 4 traders) is too weak to move me, so blind figure kept. Mass mostly on 12.9-13.1."
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:05:00+01:00",
+                "at_blind": "2026-11-26T21:18:09+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
                 "q10_blind": 12.65,
                 "q50_blind": 12.95,
-                "q90_blind": 13.25,
-                "reason_blind": "Adobe forecast (28 Sep 2026) season $275.1bn, +6.7%; consensus Black Friday figure 12.9. Adobe's first full-day numbers have landed at or just above its own forecasts in recent years (2024 10.8 vs 10.8; 2025 11.8 vs 11.7), so slight upward tilt. Thanksgiving-day storm in Northeast could nudge some demand online. Model quantiles 12.68/12.90/13.12 widened slightly.",
-                "searches": 1,
-                "at": "2026-11-26T19:20:00+01:00",
+                "q90_blind": 13.2,
+                "reason_blind": "Adobe's 28 Sep 2026 forecast: Black Friday $12.9bn (+9.2% YoY on 2025's ~$11.8bn), Cyber Week $47.5bn, season +6.7%. No updated in-season Adobe data found. Adobe's pre-season Black Friday calls have tended to be met or slightly beaten (2022 9.0 vs 9.12; 2023 9.6 vs 9.8; 2024 10.8 vs 10.8; 2025 11.7 vs 11.8), so the median sits a touch above 12.9; downside risk is that +9.2% is near the top of recent growth (7.5-10%).",
+                "searches": 3,
+                "at": "2026-11-26T21:21:33+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
@@ -1448,82 +1572,120 @@
                 "q10": 12.7,
                 "q50": 13,
                 "q90": 13.3,
-                "consensus_note": "q50 0.1 above Adobe's 12.9 forecast: Adobe single-day forecasts beaten in 6/6 cases 2024-25 (mean +0.6pp growth), and season to date Nov 1-22 runs +9.1% vs +6.7% season forecast (DC360 25 Nov).",
-                "reason": "Consensus is Adobe's own forecast $12.9bn (+9.2%), restated 25 Nov. First actual vs forecast: 2024 10.8/10.8, 2025 11.8/11.7. Season-to-date running hot; upside tilt to 13.0. Reported in 0.1 steps. Width 0.6 > 4.1x0.105 for unverified larger misses in earlier years. Signals: no market on the figure; Manifold Cyber Monday >=15.2bn at 0.41 is a weak, thin hint, no change."
+                "consensus_note": "q50 0.1 above Adobe's 12.9: Adobe's Nov 1-22 2026 season-to-date is +9.1% YoY vs +6.7% season forecast, and Black Friday first actuals met or beat the pre-season forecast in 2023 (+0.2), 2024 (0) and 2025 (+0.1), with all six 2024-25 single-day forecasts beaten in growth terms.",
+                "q50_dossier": 13,
+                "earlier": [
+                  {
+                    "q10": 12.7,
+                    "q50": 13,
+                    "q90": 13.3,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Adobe forecast $12.9bn (+9.2% on 2025's $11.8bn), restated 25 Nov. Season to date +9.1% vs +6.7% forecast. BF actual vs forecast: 2023 9.6->9.8, 2024 10.8->10.8, 2025 11.7->11.8. Downside: earlier discounts/pull-forward, flat Deloitte spend intent, NRF shopper count slightly down, Iran-war cost worries. Rounded to 0.1bn. Case record: no earlier figures in this case, so nothing to anchor to."
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-26T19:04:00+01:00",
+                "at_blind": "2026-11-26T21:17:52+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "q10_blind": 12.7,
-                "q50_blind": 12.95,
-                "q90_blind": 13.2,
-                "reason_blind": "Adobe forecast $12.9bn (+9.2%), restated 25 Nov. Against the consensus: Adobe single-day actuals met or beat forecast 6/6 in 2024-25 (mean +0.6pp), Nov 1-22 running +9.1% vs +6.7% season forecast, so 13.0 is about as likely as 12.9. Downside: pull-forward into early deals, weak consumer. Reported to $0.1bn (12.8/12.9/13.0/13.1 the live values). 2025: 11.7 fc, 11.8 actual; 2024: 10.8/10.8. Small risk of no full-day figure by 23:00 ET (pending, not in quantiles).",
+                "q10_blind": 12.76,
+                "q50_blind": 13,
+                "q90_blind": 13.28,
+                "reason_blind": "Case for below 12.9: discounts began before Halloween (pull-forward), Deloitte planned spend flat at $624, NRF shoppers 182.7m vs 186.9m, cost worries, and the 9.2% forecast is already a high bar; 2024 landed exactly on forecast. Against: 3/3 BF beats or ties, 6/6 single-day growth beats, season to date +2.4pp over forecast, Oct retail +6.8% YoY. Mean bias +0.6pp gives ~12.97; rounding to 0.1 makes 13.0 the modal print, 12.9 next. Tails widened beyond 2024-25 scale (2023 miss +0.2). Slip 0.02 prior, 0/35.",
                 "searches": 0,
-                "at": "2026-11-26T19:09:29+01:00",
+                "at": "2026-11-26T21:21:46+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "q10": 12.7,
-                "q50": 12.95,
-                "q90": 13.2,
-                "reason": "Adobe forecast 12.9bn (+9.2%), restated 25 Nov. Against it: Adobe single-day actuals met or beat forecast 6/6 in 2024-25 (mean +0.6pp), Nov 1-22 running +9.1% vs +6.7% season forecast, so 13.0 about as likely as 12.9; downside from pull-forward into early deals. Reported to 0.1bn. Signals: no market on this figure; a thin Manifold market (4 traders) puts 41% on Cyber Monday beating its forecast by 0.1, a weak hint against a large beat; unchanged."
+                "q10": 12.76,
+                "q50": 13,
+                "q90": 13.28,
+                "consensus_note": "q50 0.10 above Adobe's 12.9: Adobe's pre-season Black Friday forecast was met or beaten in 3 of 3 verified years (2023 9.6 vs 9.8; 2024 10.8 vs 10.8, growth +0.3pp; 2025 11.7 vs 11.8, +0.8pp), all six 2024-25 single-day forecasts came in low (mean +0.6pp), and Nov 1-22 2026 runs +9.1% vs +6.7% season forecast.",
+                "earlier": [
+                  {
+                    "q10": 12.7,
+                    "q50": 12.95,
+                    "q90": 13.2,
+                    "at": "2026-11-26T19:09:29+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Unchanged from blind: no market on this figure, and the case record is empty (new case), so nothing to take from earlier figures; the only signal, a 4-trader Manifold Cyber Monday market at 0.41 for a beat of 15.1, is too thin to move on. Case for below 12.9: discounts from before Halloween (pull-forward), Deloitte spend flat at $624, NRF shoppers 182.7m vs 186.9m, 2024 landed on forecast. Against: 3/3 BF beats or ties, 6/6 single-day growth beats (mean +0.6pp -> ~12.97), season to date +2.4pp over forecast. Modal print 13.0, then 12.9."
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-26T19:20:00+01:00",
+                "at": "2026-11-26T21:17:45+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "q10": 12.75,
+                "q10": 12.7,
                 "q50": 13,
                 "q90": 13.3,
-                "consensus_note": "q50 13.0 is 0.95 scale above consensus 12.9: Adobe's own forecast has run low in all 6 verified single-day cases (2024-25) and the season to date runs 2.4pp above its forecast growth; Adobe reports in $0.1bn steps.",
+                "consensus_note": "q50 0.1 above Adobe's 12.9 forecast: Adobe's first Black Friday figure met or beat its pre-season forecast in 2023 (+0.2), 2024 (0.0) and 2025 (+0.1), all six 2024-25 single-day forecasts came in low (mean +0.6pp), and Nov 1-22 2026 spend runs +9.1% vs +6.7% season forecast; shift kept to one 0.1 reporting step given flat Deloitte spend intent and fewer NRF shoppers.",
+                "earlier": [
+                  {
+                    "q10": 12.75,
+                    "q50": 13,
+                    "q90": 13.3,
+                    "at": "2026-11-26T19:20:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
                 "anchor": {
                   "kind": "model",
-                  "detail": "models.mjs quantiles 12.9 0.105 1.6 = 12.68/12.90/13.12, shifted +0.1 at median"
+                  "detail": "node scripts/refdata/models.mjs quantiles 12.9 0.105 1.6 -> q10 12.6847, q50 12.9, q90 13.1153; shifted +0.1 and widened"
                 },
-                "reason": "Anchor = models.mjs quantiles 12.9/0.105/1.6 -> 12.68/12.90/13.12. Shifted up: Adobe single-day forecasts beaten 6/6 in 2024-25 (mean +0.6pp ~ +$0.07bn), season to 22 Nov +9.1% vs +6.7% forecast; Adobe rounds to $0.1bn so 13.0 is the modal print. Upper tail widened for pull-forward/upside; downside kept for demand pull-forward into earlier days. Width 0.55 >= 4.1x0.105."
+                "reason": "No market on this figure (only a 4-trader Manifold Cyber Monday market), so model anchor: quantiles 12.9/0.105/1.6 gives 12.68-13.12; shifted +0.1 for Adobe's beat record (BF 2023 +0.2bn, 2024 0, 2025 +0.1bn; 6/6 single-day beats 2024-25) and season-to-date +9.1% vs +6.7% fc; widened for unverified larger pandemic-era misses, pull-forward and soft survey intent. No earlier figures in this case to stay consistent with. Slip risk ~0.4%."
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-26T20:00:00+01:00",
+                "at_blind": "2026-11-26T21:17:49+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "q10_blind": 12.5,
+                "q10_blind": 12.65,
                 "q50_blind": 12.9,
-                "q90_blind": 13.3,
-                "reason_blind": "Adobe 2026 forecast (28 Sep, 275.1bn season, +6.7%) implies Black Friday 12.9bn; Adobe's actual usually lands within ~2% of its forecast. Release typically Saturday morning ET.",
+                "q90_blind": 13.2,
+                "reason_blind": "Adobe forecast Black Friday +9.2% y/y to 12.9bn (digitalcommerce360, 25 Nov 2026). Nov 1-22 tracking +9.1% to 82.5bn, in line with the forecast. Reference model range 12.68-13.12. Adobe usually states one decimal; its actuals have often matched or slightly beaten its forecast, so the upper tail is a little wider.",
                 "searches": 1,
-                "at": "2026-11-26T21:00:00+01:00",
+                "at": "2026-11-26T21:21:56+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "q10": 12.5,
+                "q10": 12.65,
                 "q50": 12.9,
-                "q90": 13.3,
-                "reason": "Signals: no market on the figure; Manifold Cyber Monday threshold at Adobe's forecast trades 0.41, a weak hint that Adobe's forecasts are not expected to be beaten by much. Blind view unchanged."
+                "q90": 13.2,
+                "earlier": [
+                  {
+                    "q10": 12.5,
+                    "q50": 12.9,
+                    "q90": 13.3,
+                    "at": "2026-11-26T21:00:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ],
+                "reason": "Case record empty and no earlier figures or Black Friday market, so no reason to move. Adobe forecast Black Friday +9.2% y/y to 12.9bn; Nov 1-22 tracking +9.1% to 82.5bn, in line. Reference model range 12.68-13.12; upper tail slightly wider as Adobe's single-day actuals may meet or beat forecast (unverified recall). Adobe states one decimal."
               }
             ],
             "agents_mean": {
-              "q10": 12.67,
-              "q50": 12.97,
-              "q90": 13.29
+              "q10": 12.71,
+              "q50": 12.98,
+              "q90": 13.28
             },
             "missing": [],
             "consensus": {
@@ -1532,9 +1694,24 @@
             },
             "scale": 0.105,
             "scale_basis": "pooled",
-            "scale_source": "Only 2 verified Black Friday forecast/first-actual pairs (2024: 10.8 vs 10.8; 2025: 11.7 vs 11.8), so pooled over Adobe's Thanksgiving/Black Friday/Cyber Monday forecasts 2024-25 (6 pairs, sources: Adobe Sept 2024 and Oct 2025 forecast releases; first actuals from DC360/Reuters-KSL/Adobe recaps). RMS growth error 0.70pp x $11.8bn base = $0.083bn, times pooled factor 1.258 = $0.105bn. All six errors were positive (mean +0.6pp). Pre-2024 pairs not verified; tails likely fatter.",
+            "scale_source": "Only 2 verified Black Friday forecast/first-actual pairs (2024: 10.8 vs 10.8; 2025: 11.7 vs 11.8), so pooled over Adobe's Thanksgiving/Black Friday/Cyber Monday forecasts 2024-25 (6 pairs, sources: Adobe Sept 2024 and Oct 2025 forecast releases; first actuals from DC360/Reuters-KSL/Adobe recaps). RMS growth error 0.70pp x $11.8bn base = $0.083bn, times pooled factor 1.258 = $0.105bn. All six errors were positive (mean +0.6pp). Pre-2024 pairs not verified; tails likely fatter. Evening check 26 Nov: a third Black Friday pair was confirmed on Adobe's own release (2023: 9.6 forecast, 9.8 first actual); the scale from the 2024-25 pairs is kept.",
             "series": null,
-            "consensus_note": "The central figure (about 13.0) sits about 0.7 scale above Adobe's own $12.9bn forecast: Adobe's first single-day actuals met or beat its own forecasts in 6 of 6 checked cases (Thanksgiving, Black Friday, Cyber Monday 2024–25), and Adobe's season-to-date spending for 1–22 Nov 2026 runs at +9.1% against its +6.7% season forecast (dossier)."
+            "consensus_note": "The central figure (12.98) sits about 0.8 scale above Adobe's own $12.9bn forecast: Adobe's first Black Friday figure met or beat its pre-season forecast in 3 of 3 verified years (2023: 9.6 → 9.8; 2024: 10.8 → 10.8; 2025: 11.7 → 11.8), its single-day forecasts were met or beaten in 6 of 6 checked cases in 2024–25, and Adobe's season-to-date spending for 1–22 Nov 2026 runs at +9.1% against its +6.7% season forecast (dossier).",
+            "evening_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "reran": true,
+              "why": "The evening check confirmed a fact material to the derived claim us-blackfriday-129-29 (Adobe's 2023 Black Friday forecast and first actual); the five forecasters reran on the dossier with the added facts.",
+              "quantiles_before": {
+                "q10": 12.67,
+                "q50": 12.97,
+                "q90": 13.29
+              },
+              "quantiles_after": {
+                "q10": 12.71,
+                "q50": 12.98,
+                "q90": 13.28
+              }
+            }
           }
         },
         {
@@ -1567,9 +1744,9 @@
             "criterion": "ANO, pokud hodnota tvrzení us-blackfriday-29 (první celodenní údaj Adobe za Black Friday 2026, jak je uveden) je vyšší než 12,9 (miliardy USD), např. 12,95 nebo 13,0; NE, pokud je 12,9 nebo nižší. Nevyhodnoceno, pokud Adobe do 23:00 newyorského času 28. listopadu 2026 celodenní údaj nezveřejní."
           },
           "forecast": {
-            "p_derived": 0.618,
-            "method": "node scripts/refdata/models.mjs derive 12.67 12.97 13.29 '>' 12.9 → 0.618",
-            "combined": 0.618,
+            "p_derived": 0.648,
+            "method": "node scripts/refdata/models.mjs derive 12.71 12.98 13.28 '>' 12.9 → 0.648",
+            "combined": 0.648,
             "dossier": "data/dossiers/2026-11-29/us-blackfriday-29.md",
             "signals": "data/dossiers/2026-11-29/us-blackfriday-29.signals.md",
             "market": null,
@@ -1627,7 +1804,40 @@
                   "trace": "data/dossiers/2026-11-29/us-blackfriday-129-29.research.json"
                 }
               ]
-            }
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 16,
+              "leads_distinct": 15,
+              "already_in_dossier": 6,
+              "facts_confirmed": 6,
+              "added": [
+                "https://news.adobe.com/news/news-details/2023/adobe-forecasts-221-8-billion-u-s-holiday-season-online-cyber-monday-to-top-12-billion",
+                "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html",
+                "https://nrf.com/media-center/press-releases/183-million-consumers-expected-to-shop-during-thanksgiving-weekend",
+                "https://www.census.gov/retail/marts/www/marts_current.pdf",
+                "https://finance.yahoo.com/markets/articles/necessities-join-gifts-black-friday-015514176.html",
+                "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/"
+              ],
+              "reforecast": true,
+              "before": 0.618,
+              "material": [
+                "Adobe's 5 October 2023 holiday forecast put Black Friday 2023 US online sales at $9.6bn (+5.7% YoY); the reported actual was $9.8bn (+7.5%), so 2023 was a beat of the pre-season forecast."
+              ],
+              "after": 0.648,
+              "note": "The claim is derived from the interval claim us-blackfriday-29: its five forecasters reran (quantiles 12.67/12.97/13.29 → 12.71/12.98/13.28) and this figure was derived again from them."
+            },
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "3 of the vendors' leads could not be read or were not opened by our agent and were dropped unconfirmed: Mobile spend Nov 1-22 2026 up 12.5% to $43.8bn (page unreachable (chainstoreage.com HTTP 403); not on the DC360 page read; search found no other source); Adobe's October 2026 Prime event figure came in slightly under its forecast (not opened: no URL given in reasoning; search budget kept for higher-priority leads); 2022 Black Friday growth beat Adobe's pre-season call (not opened: undated, vague claim in reasoning; dossier already has 2022 actual and the cited page is the 2021 forecast)"
+              }
+            ]
           }
         }
       ]
@@ -2037,7 +2247,12 @@
                 "reason": "Signals: no matching market; earlier desk figures 52-70% for neighbouring days and a 25 Nov Khasab strike show an active tempo, so I move up from my blind 0.40 but stay near even for a single day."
               }
             ],
-            "missing": [],
+            "missing": [
+              {
+                "step": "external check: leads not opened",
+                "why": "4 of the vendors' leads could not be read or were not opened by our agent and were dropped unconfirmed: Hong Kong-flagged tanker Kun Peng struck by projectile in Hormuz on 26 Nov (Vanguard Tech via UKMTO) (page unreachable (seatrade-maritime.com HTTP 403); one WebSearch found no other outlet; The File (26 Nov 13:33Z) listed 223-26 as UKMTO's newest entry); JMIC Update 117: 17 tankers struck in Hormuz since 1 Nov (page unreachable (ukmto.org PDF HTTP 403, Cloudflare); not found elsewhere); JMIC Update 117: US-assisted transits 32/day on 22–25 Nov, down from 38 (page unreachable (ukmto.org PDF HTTP 403); only the 38/day figure for 19–21 Nov confirmed elsewhere); ADNOC-PPA Port Marine Notice JDR/MN/023/2026 (23 Nov) barring hazardous-cargo tankers from waiting in its waters (not opened: named only in Google's reasoning with no URL; search budget kept for the higher-priority Kun Peng lead)"
+              }
+            ],
             "disagreement": null,
             "combined": 0.613,
             "combination": {
@@ -2098,6 +2313,25 @@
                   "trace": "data/dossiers/2026-11-29/gulf-ukmto-29.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 16,
+              "leads_distinct": 16,
+              "already_in_dossier": 9,
+              "facts_confirmed": 4,
+              "added": [
+                "https://gcaptain.com/four-more-ships-attacked-as-iran-widens-hormuz-crackdown-to-tugboats/",
+                "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ukmto-says-most-ship-attacks-go-unreported/"
+              ],
+              "reforecast": false,
+              "before": 0.613,
+              "note": "No confirmed fact is material to the outcome; the evening figure stands."
             }
           }
         }
@@ -2366,7 +2600,7 @@
           "kind": "binary",
           "label": "Turnout no higher than in 2021",
           "text": "Turnout in Algeria's municipal (APC) elections on Saturday 28 November 2026, as announced on election night, is at or below the 35.97% announced on election night in 2021.",
-          "criterion": "YES if the final national turnout for the municipal people's assemblies (APC) of 28 Nov 2026 first announced at the close of polls (by ANIE's president, or, if ANIE does not announce it, by the Interior Ministry as the official national figure; normally late on 28 Nov or early 29 Nov, Africa/Algiers) is 35.97% or lower, 35.97% being the comparable figure ANIE announced on election night in 2021 (later revised to 36.58% in the provisional results). NO if it is above 35.97%, or if the elections are not held on 28 Nov 2026. Hourly interim figures and later revisions do not count. If only a combined APC/APW or 'average' figure is given, that figure counts.",
+          "criterion": "YES if the final national turnout for the municipal people's assemblies (APC) of 28 Nov 2026 first announced after the close of polls (by ANIE's president, or, if ANIE does not announce it, by the Interior Ministry as the official national figure) is 35.97% or lower, 35.97% being the comparable figure ANIE announced on election night in 2021 (later revised to 36.58% in the provisional results). The date of 28 Nov 2026 applies to the voting day only: the announcement counts whether it is made late on 28 Nov or after midnight on 29 Nov (Africa/Algiers), as it normally is. NO if it is above 35.97%, or if the elections are not held on 28 Nov 2026. Hourly interim figures and later revisions do not count. If only a combined APC/APW or 'average' figure is given, that figure counts.",
           "resolution_source": "https://www.aps.dz/ ; https://ina-elections.dz/",
           "schedule": "official",
           "slip_class": "election-held",
@@ -2392,7 +2626,7 @@
           "cs": {
             "label": "Účast nejvýš jako v roce 2021",
             "text": "Účast v alžírských obecních volbách (APC) v sobotu 28. listopadu 2026, jak ji úřady oznámí ve volební noci, bude nejvýše 35,97 %, které byly oznámeny ve volební noci v roce 2021.",
-            "criterion": "ANO, pokud konečná celostátní účast ve volbách do obecních lidových shromáždění (APC) z 28. listopadu 2026, jak ji poprvé oznámí po uzavření volebních místností předseda ANIE (nebo, neoznámí-li ji ANIE, ministerstvo vnitra jako oficiální celostátní údaj; obvykle pozdě večer 28. listopadu nebo brzy 29. listopadu alžírského času), bude 35,97 % nebo nižší; 35,97 % je srovnatelný údaj, který ANIE oznámila ve volební noci v roce 2021 (v předběžných výsledcích později upravený na 36,58 %). NE, pokud bude vyšší než 35,97 %, nebo pokud se volby 28. listopadu 2026 nekonají. Průběžné hodinové údaje ani pozdější revize se nepočítají. Uvede-li se jen společný údaj za APC a APW nebo „průměrná“ účast, počítá se tento údaj."
+            "criterion": "ANO, pokud konečná celostátní účast ve volbách do obecních lidových shromáždění (APC) z 28. listopadu 2026, jak ji poprvé oznámí po uzavření volebních místností předseda ANIE (nebo, neoznámí-li ji ANIE, ministerstvo vnitra jako oficiální celostátní údaj), bude 35,97 % nebo nižší; 35,97 % je srovnatelný údaj, který ANIE oznámila ve volební noci v roce 2021 (v předběžných výsledcích později upravený na 36,58 %). Datum 28. listopadu 2026 se vztahuje jen na den hlasování: oznámení se počítá, ať zazní pozdě večer 28. listopadu, nebo po půlnoci 29. listopadu alžírského času, jak bývá obvyklé. NE, pokud bude vyšší než 35,97 %, nebo pokud se volby 28. listopadu 2026 nekonají. Průběžné hodinové údaje ani pozdější revize se nepočítají. Uvede-li se jen společný údaj za APC a APW nebo „průměrná“ účast, počítá se tento údaj."
           },
           "forecast": {
             "baseline": {
@@ -2429,191 +2663,191 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:10:00+01:00",
+                "at_blind": "2026-11-26T21:17:58+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.667,
-                "reason_blind": "Small class 1/4 with no wider class; kept within 15-85%. Start 0.25, up slightly (+0.4 log-odds): locals draw on notable networks and ran ~13 pp above same-year legislative in 2021; new ANIE head pushes participation; more registrants. Against: 2 Jul 2026 legislative record low 20.79% (night), down from ~23% in 2021, so +13 pp gives ~34% < 35.97%; parties struggled to fill lists. Slip 0.003.",
+                "p_blind": 0.6,
+                "reason_blind": "No wider class of 10+: generic turnout-above-previous class 0.5 (own record 2/0, n=2). Algerian same-type comparisons since 2019: 3/4 did not exceed prior (+<=1 logit toward YES). Dated facts: July 2026 legislative night 20.79% vs ~23% in 2021 (no recovery from post-Hirak trough); campaign widely described as apathetic. Upward: RCD back and all parties standing (dissolution law), APC candidates +22.7%, new wilayas, regime/ANIE pushing turnout. Slip 0.003 (NO). Net ~0.60.",
                 "searches": 0,
-                "at": "2026-11-26T19:35:00+01:00",
+                "at": "2026-11-26T21:20:18+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.647,
+                "p": 0.6,
                 "p_held": 0.997,
-                "p_if_held": 0.65,
-                "reason": "Class 1/4 (no wider class). Union adds the view that 2021 was a post-Hirak low, with locals at 44-47% in 2012/2017, and that the authorities are pushing turnout; I give it a little weight (+0.08 log-odds). But 2026 legislative turnout (20.79% night) is below 2021's ~23%. Scaling 2021's locals-to-legislative gap (+13 pp, or x1.56) gives ~32.5-34%, under 35.97%. Slip 0.003. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
-                "mirrored_from": {
-                  "p_blind": 0.33,
-                  "p_first": 0.33,
-                  "p_rerun": 0.35
-                },
+                "p_if_held": 0.6,
                 "rounds": [
                   {
                     "p": 0.667,
                     "at": "2026-11-26T19:20:00+01:00",
                     "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  },
+                  {
+                    "p": 0.647,
+                    "at": "2026-11-26T19:35:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
-                ]
+                ],
+                "reason": "Signals: no market, no model, no earlier figures of ours in this new case, so nothing to move on; kept blind figure. Generic turnout-above-previous class 0.5 (own 2/0, n=2); Algerian same-type comparisons since 2019 3/4 did not exceed (+<=1 logit to YES). July 2026 legislative night 20.79% vs ~23% in 2021, apathetic campaign; upward: RCD back, all parties standing, APC candidates +22.7%, new wilayas, official push. Slip 0.003 (NO if not held)."
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-26T19:07:00+01:00",
+                "at_blind": "2026-11-26T21:18:07+01:00",
                 "inputs_blind": [
                   "own-research"
                 ],
-                "p_blind": 0.727,
-                "reason_blind": "2021 pattern: legislatives 23.03% (June) then APC 35.97% on election night (ratio ~1.56). July 2026 legislatives hit a record low 20.79% at close (later 21.24%); same ratio implies ~32-33% for APC. ANIE (Arous) talks up new registrants and more candidates; locals mobilise via local lists, and figures can be generous (2024 presidential), but ANIE reported the July low plainly. Lean NO.",
-                "searches": 1,
-                "at": "2026-11-26T19:35:00+01:00",
+                "p_blind": 0.77,
+                "reason_blind": "July 2026 legislatives: election-night turnout 20.79% (later 21.24%), a record low below 2021's 23%. Locals usually beat preceding legislatives: ratio 1.03 (2012), 1.32 (2017), 1.56 (2021, 35.97/23.03). Beating 35.97% now needs ratio ~1.73, above any precedent; 1.56 would give ~32.5%. Upside risks: new territorial division with more communes, ANIE (Saad Arous) touting more registrants/candidates, strong local mobilisation, official figure inflation as in 2024. Postponement risk ~0.3% (would be NO).",
+                "searches": 2,
+                "at": "2026-11-26T21:20:35+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.707,
-                "p_dossier": 0.27,
-                "reason": "July 2026 legislative 20.79% (night) is below 2021's ~23%, so no recovery from the post-Hirak trough is visible; the 2021 local uplift (+13 pp) gives ~33-34%, under 35.97%. Locals before 2019 ran at 44-47%, and new wilayas, more registrants and an official turnout push (the generous 2024 48% figure) leave real upside. Parties struggled to fill lists. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
-                "mirrored_from": {
-                  "p_blind": 0.27,
-                  "p_first": 0.27,
-                  "p_rerun": 0.29
-                },
+                "p": 0.76,
+                "p_dossier": 0.75,
                 "rounds": [
                   {
                     "p": 0.727,
                     "at": "2026-11-26T19:20:00+01:00",
                     "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  },
+                  {
+                    "p": 0.707,
+                    "at": "2026-11-26T19:35:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
-                ]
+                ],
+                "reason": "Jul 2026 legislative night turnout 20.79%, a record low; to beat 35.97% locals need ~1.73x the legislative rate vs 1.03 (2012), ~1.3 (2017), 1.56 (2021, which gives ~32.5%). Press reports an apathetic, barely followed campaign; APC lists fell 5,848->5,568. Upside: RCD back after 2021 boycott (Kabylie), all parties running, new wilayas, regime pushing turnout, 2024-style inflation possible. No markets/models and no earlier figures in this new case, so nothing there to move on. Postponement ~0.3%."
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-26T19:03:34+01:00",
+                "at_blind": "2026-11-26T21:17:50+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.687,
-                "reason_blind": "Threshold 35.97% (2021 night figure). 2 Jul 2026 legislative night figure 20.79% vs ~23% in 2021; locals ran ~13 pp above the legislative in 2021, giving ~32.5-34% now; parties struggled to fill lists (3 Oct); 1 of 4 recent elections beat its predecessor. Case for YES: locals driven by notable networks, new wilayas, Interior Ministry now organises, ANIE head talks up participation, 2024 'average rate' method inflated the night figure by ~2 pp. Centre ~33.5, sd ~4.",
+                "p_blind": 0.65,
+                "reason_blind": "Locals ran +13 pp over same-year legislative in 2021 (35.97 vs ~23) and ~+11 in 2017; July 2026 legislative night figure 20.79 (down ~2 pp on 2021) implies ~32-34, SD ~4. Low-key campaign, APC lists 5,848->5,631, abstention worry. Case for NO: RCD back and all opposition standing (dissolution law), candidates +22.7%, new wilayas, state pushing turnout, 2024 'taux moyen' 48.03 night figure later cut to 46.10 shows night numbers can be inflated; 1/4 base rate of beating prior same-type turnout. Postponement ~0.3% (0/46), voting already begun.",
                 "searches": 0,
-                "at": "2026-11-26T19:11:51+01:00",
+                "at": "2026-11-26T21:20:49+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.677,
+                "p": 0.65,
                 "p_held": 0.997,
-                "p_if_held": 0.68,
-                "reason": "Union adds no dated 2026 fact beyond the dossier (higher 2017/2012 local figures and 'authorities pushing turnout' are background). Same-year anchor still rules: July 2026 legislative night figure 20.79% vs ~23% in 2021, plus the ~13 pp local premium, gives ~33-34% against 35.97%; lists were hard to fill. Upside: an 'average rate' announcement as in 2024, new wilayas. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
-                "mirrored_from": {
-                  "p_blind": 0.31,
-                  "p_first": 0.31,
-                  "p_rerun": 0.32
-                },
+                "p_if_held": 0.65,
                 "rounds": [
                   {
                     "p": 0.687,
                     "at": "2026-11-26T19:09:13+01:00",
                     "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  },
+                  {
+                    "p": 0.677,
+                    "at": "2026-11-26T19:11:51+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
-                ]
+                ],
+                "reason": "Unchanged from blind: signals add nothing (no market, no models) and the case record is empty, new case, so no earlier figure to weigh. Locals ran +13 pp over same-year legislative in 2021 (35.97 vs ~23), ~+11 in 2017; July 2026 legislative night 20.79 implies ~32-34, SD ~4. Low-key campaign, APC lists 5,848->5,631. For NO: RCD back, all opposition standing, candidates +22.7%, new wilayas, state pushing turnout, 2024 night 'taux moyen' 48.03 later cut to 46.10. Slip 0/46, voting begun."
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-26T19:12:00+01:00",
+                "at": "2026-11-26T21:17:50+01:00",
                 "inputs": [
-                  "signals",
                   "dossier",
-                  "reference-data",
-                  "union-of-facts"
+                  "signals",
+                  "reference-data"
                 ],
-                "p": 0.687,
-                "anchor": {
-                  "kind": "model",
-                  "detail": "turnout ~ N(33.5, 4) vs 35.97 (models.mjs leadabove 33.5 4 35.97 = 0.27)"
-                },
-                "reason": "Model: centre 33.5 from the record-low July 2026 legislative (20.79% night) scaled by the local-over-legislative gap (2017 ~+10 pp, 2021 +13 pp), giving 31-34. Union facts: locals were ~44% in 2012/2017 and 2021 was a Hirak trough, so some upward pull and a wider sd of 5 (0.31). The July low shows no recovery. Election-night figure counts. Slip 0.003. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
-                "mirrored_from": {
-                  "p_first": 0.29,
-                  "p_rerun": 0.31
-                },
+                "p": 0.62,
                 "rounds": [
                   {
                     "p": 0.707,
                     "at": "2026-11-26T19:04:00+01:00",
                     "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  },
+                  {
+                    "p": 0.687,
+                    "at": "2026-11-26T19:12:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
-                ]
+                ],
+                "anchor": {
+                  "kind": "model",
+                  "detail": "node scripts/refdata/models.mjs release 34.5 35.97 4.5 -> 0.3720 (P above); P(YES)=1-0.372"
+                },
+                "reason": "No market or bookmaker (signals); no earlier figures in this new case, so nothing to stay consistent with. Model: 2021 locals ran ~13 pp (x1.56) above that year's ~23% legislative; applied to July 2026's 20.79% night figure gives ~32.5-34; RCD back, all opposition standing, longer lists and an official turnout push lift it, low-key campaign and voter indifference weigh on it. Median 34.5%, sd 4.5 gives P(>35.97)=0.37, so YES ~0.63; postponement risk 0.003 (to NO) negligible."
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-26T18:10:00+01:00",
+                "at_blind": "2026-11-26T21:17:52+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.297,
-                "reason_blind": "2021 locals election-night 35.97% (later 36.58%); earlier locals 2017 46.8%, 2012 44.3%; 2021 was a trough after Hirak boycotts. Registrations rising, new territorial division, authorities pushing turnout. Recent national votes: 2024 presidential reported 48% (revised), so official figures tend to be higher than 2021. Slight uncertainty on APC figure used.",
-                "searches": 1,
-                "at": "2026-11-26T19:00:00+01:00",
+                "p_blind": 0.72,
+                "reason_blind": "2021 cycle: legislative 23% then local 36.58% (election-night 35.97%), ratio ~1.6. July 2026 legislative closing-poll turnout 20.79% (final ~21%), slightly below 2021's 23%; applying the same local/legislative uplift gives ~33%. Candidate-list crisis, low-trust climate. Local votes have clan mobilisation, so upside risk; official figures can be generous. Slip risk for election-held ~0.3%.",
+                "searches": 2,
+                "at": "2026-11-26T21:21:01+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.547,
-                "reason": "Union adds the 2026 legislative at 20.79% night, below 2021's ~23%. Locals ran ~13pp above the legislative in 2021, implying ~34% now, just under 35.97%. Offsets: locals mobilise through local candidates and the 2021 base was Hirak-boycott trough. Candidate shortage is a negative. Near a coin flip, slightly NO. [Figures given for 'turnout above 35.97%' and mirrored here as 0.997 − p, for this claim on the likelier side.]",
-                "mirrored_from": {
-                  "p_blind": 0.7,
-                  "p_first": 0.7,
-                  "p_rerun": 0.45
-                },
+                "p": 0.72,
                 "rounds": [
                   {
                     "p": 0.297,
                     "at": "2026-11-26T18:30:00+01:00",
                     "reason": "evening desk, first final estimate before the disagreement rerun on the union of facts (spread 43 points, cause: inputs)"
+                  },
+                  {
+                    "p": 0.547,
+                    "at": "2026-11-26T19:00:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
-                ]
+                ],
+                "reason": "Case record and signals hold no earlier figures, markets or models, so no change. 2021: legislative 23% then local 36.58% (night figure 35.97%), ratio ~1.6. July 2026 legislative 20.79% at poll close, slightly below 2021, implying ~33% locally. Candidate-list difficulties; local clan mobilisation gives upside risk. Slip risk ~0.3%."
               }
             ],
             "missing": [
               {
-                "step": "research (v5, spread > 15 after the rerun)",
-                "why": "After the union-of-facts rerun the five figures still span 16 points (outsider highest); no separate research agent was run for this low-weight claim, to keep searches for the morning reserve. The spread stands; the basis line says the evidence is mixed."
+                "step": "external check: leads not opened",
+                "why": "3 of the vendors' leads could not be read or were not opened by our agent and were dropped unconfirmed: 646,870 new voters registered in the exceptional revision (total 24,236,959 already in dossier) (page unreachable (horizons.dz bot challenge)); Total candidates 162,864, up 21.4% on 2021 (page unreachable (lequotidien-oran.dz HTTP 403); components 141,388 + 21,476 confirmed in items above); 2017 local APC turnout 46.93% (not opened: no specific source URL given; historical base-rate point, low priority)"
+              },
+              {
+                "step": "research (v5, spread > 15 after the evening-check rerun)",
+                "why": "The five figures span 16 points on one dossier. No separate research agent was run: the forecasters' reasons differ in weight, not in facts, the fact that would settle it (turnout itself, or an early participation count) does not exist before the vote, and the remaining searches are kept for the morning reserve. The spread stands."
               }
             ],
             "disagreement": {
-              "cause": "inputs",
-              "note": "First finals spanned 0.27–0.70 (on turnout above 35.97%): the outsider, without the dossier, did not have the record-low 20.79% turnout of the July 2026 legislative election. All five reran once on the union of facts (SP dz-union.md, now summarised in the dossier); reruns 0.29–0.45. Earlier numbers are kept in rounds."
+              "cause": "genuine",
+              "note": "First finals spanned 0.27–0.70 (on turnout above 35.97%): the outsider, without the dossier, did not have the record-low 20.79% turnout of the July 2026 legislative election. All five reran once on the union of facts (SP dz-union.md, now summarised in the dossier); reruns 0.29–0.45. Earlier numbers are kept in rounds. Evening check: after the vendors' confirmed facts (RCD back in the race, all approved parties standing, list and candidate counts) the five reran on the same dossier and span 16 points (0.60 to 0.76): same facts, different weight on the July 2026 record-low legislative turnout against the opposition's return and the official turnout push. The spread stands; the basis line should say the evidence is mixed."
             },
             "spread": 0.16,
             "decomposition": {
               "p_held": 0.997,
-              "p_if_held": 0.657,
+              "p_if_held": 0.675,
               "p_if_not_held": 0
             },
-            "combined": 0.655,
+            "combined": 0.673,
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "mirrored": "The forecasters were asked about turnout above 35.97%; the ensemble put it below 50%, so the claim is published on the likelier side (at or below 35.97%), as the desk had announced to them. p = p_held (0.997) − p(above).",
+            "mirrored": "The forecasters were asked about turnout above 35.97%; the ensemble put it below 50%, so the claim is published on the likelier side (at or below 35.97%), as the desk had announced to them. p = p_held (0.997) − p(above). Evening check 26 Nov: the five forecasters reran on the published direction (turnout at or below 35.97%) directly, so their new figures are not mirrored; the desk's mirrored figures are kept in rounds.",
             "shadow": {
               "external": [
                 {
@@ -2657,7 +2891,45 @@
                   "trace": "data/dossiers/2026-11-29/dz-turnout-29.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-26T21:24:46+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 17,
+              "leads_distinct": 18,
+              "already_in_dossier": 6,
+              "facts_confirmed": 8,
+              "added": [
+                "https://alahrar.net/fr/elections-locales-algerie-campagne-silence-electoral/",
+                "https://fr.wikipedia.org/wiki/%C3%89lections_locales_alg%C3%A9riennes_de_2026",
+                "https://twala.info/fr/fil-actualite/elections-locales-lanie-fait-le-point-sur-les-candidatures/",
+                "https://adlenemeddi.substack.com/p/locales-du-28-novembre-la-crise-des",
+                "https://www.horizons.dz/language/en/2026/11/election-watchdog-says-all-pieces-are-in-place-ahead-of-saturdays-local-vote/",
+                "https://rupture-mag.fr/en/in-the-spotlight/local-elections-in-algeria-on-november-28-the-government-faces-the-specter-of-abstention/",
+                "https://siwel.info/elections-locales-en-algerie-44-de-taux-de-participation-selon-le-ministre-de-linterieur_25454.html"
+              ],
+              "reforecast": true,
+              "before": 0.655,
+              "material": [
+                "The RCD, which boycotted the 2021 local elections, is back in the 2026 race (Atmane Mazouz campaigning in Bejaia), the FFS campaigned widely, and the PT and Jil Jadid also fielded lists; all approved parties, including the opposition, are standing (reported 25 Nov 2026)."
+              ],
+              "after": 0.673
             }
+          },
+          "wording_check": {
+            "at": "2026-11-26T21:24:46+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the final national turnout for the municipal people's assemblies (APC) of 28 Nov 2026 first announced at the close of polls (by ANIE's president, or, if ANIE does not announce it, by the Interior Ministry as the official national figure; normally late on 28 Nov or early 29 Nov, Africa/Algiers) is 35.97% or lower, 35.97% being the comparable figure ANIE announced on election night in 2021 (later revised to 36.58% in the provisional results). NO if it is above 35.97%, or if the elections are not held on 28 Nov 2026. Hourly interim figures and later revisions do not count. If only a combined APC/APW or 'average' figure is given, that figure counts.",
+            "why": "All three models named the same real case: ANIE normally announces the close-of-polls turnout after midnight, on 29 Nov, while the event window ends at 23:59 on 28 Nov, so one reader could count a late announcement as the event not happening in the window. The criterion now says that 28 Nov is the voting day only and that the announcement counts whether it comes late on 28 Nov or after midnight. What is forecast is unchanged (the forecasters of the evening check had the tightened text)."
           }
         }
       ]
@@ -3205,7 +3477,7 @@
     "searches": 142,
     "search_note": "From agent reports: agenda and front-page sweeps 44, board checks 23, dossiers 32, evidence forecasters 19, outsiders 13, board evidence 6, disagreement research 4, sequential researchers 10 (three claims; two of them overran the step limit and say so in their traces). About 58 left, more than the morning reserve of 30."
   },
-  "note": "Round one: five forecasters per claim (base-rate opus, evidence opus, adversarial fable, anchor opus, outsider sonnet), blind then with the signals file, the same agent continued for the second step; anchors one step. Plain geometric mean of odds (calibration.json: geo-odds). itlos-sealion-29 spread 20 points: research found no decisive fact (genuine). dz-turnout-29 spread 43 points (inputs): rerun on the union of facts, now 16 points; claim mirrored to the likelier side. Shadow sequential researcher on itlos-sealion-29, tw-taipei-29 and gulf-ukmto-29.",
+  "note": "Round one: five forecasters per claim (base-rate opus, evidence opus, adversarial fable, anchor opus, outsider sonnet), blind then with the signals file, the same agent continued for the second step; anchors one step. Plain geometric mean of odds (calibration.json: geo-odds). itlos-sealion-29 spread 20 points: research found no decisive fact (genuine). dz-turnout-29 spread 43 points (inputs): rerun on the union of facts, now 16 points; claim mirrored to the likelier side. Shadow sequential researcher on itlos-sealion-29, tw-taipei-29 and gulf-ukmto-29. Evening check (26 Nov, about 21:10–21:30): the vendors' leads were checked on their pages by one claude-opus-5-5 agent per claim; 28 facts confirmed and added to the dossiers. A confirmed fact was material on tw-nuclear-29 (Formosa poll of 24–26 Aug: 60.7% keep nuclear, 22.5% nuclear-free), dz-turnout-29 (the RCD, which boycotted in 2021, and all approved parties are standing) and us-blackfriday-129-29 (Adobe's 2023 Black Friday forecast 9.6 against a first actual of 9.8): the five forecasters reran for each (blind, then with the signals; outsider without the dossier; the desk's figures are in rounds, for the interval claim in earlier). tw-nuclear-29 spread 16 points: research found no referendum poll and no DPP call, genuine. dz-turnout-29 was put to the forecasters on its published direction and its criterion tightened (wording_check). No vendor figure was shown to any agent; the trace files' probabilities were stripped before the checking agents read the leads.",
   "for_publisher": [
     "tw-taipei-29 – Ťiang Wan-an obhájí post starosty Tchaj-peje – so 28. 11.",
     "au-victoria-29 – koalice Jess Wilson získá ve Viktorii nejméně 45 z 88 křesel – so 28. 11.",
@@ -3241,5 +3513,45 @@
       }
     ],
     "failed": []
+  },
+  "evening_check": {
+    "at": "2026-11-26T21:24:46+01:00",
+    "claims": [
+      "itlos-sealion-29",
+      "tw-taipei-29",
+      "gulf-ukmto-29",
+      "tw-nuclear-29",
+      "dz-turnout-29",
+      "us-blackfriday-129-29"
+    ],
+    "facts_listed": 102,
+    "facts_confirmed": 28,
+    "agents": {
+      "facts": "claude-opus-5-5",
+      "research": "claude-opus-5-5",
+      "forecasters": {
+        "base-rate": "claude-opus-5-5",
+        "evidence": "claude-opus-5-5",
+        "adversarial": "claude-fable-5-2",
+        "anchor": "claude-opus-5-5",
+        "outsider": "claude-sonnet-5-5"
+      },
+      "count": 22
+    },
+    "searches": {
+      "facts": 5,
+      "forecasters": 12,
+      "research": 4,
+      "total": 21
+    },
+    "reran": [
+      "tw-nuclear-29",
+      "dz-turnout-29",
+      "us-blackfriday-129-29 (through us-blackfriday-29)"
+    ],
+    "wording": [
+      "dz-turnout-29"
+    ],
+    "started_at": "2026-11-26T21:10:32+01:00"
   }
 }
