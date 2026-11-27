@@ -1,0 +1,110 @@
+{
+ "edition": "2026-11-29",
+ "stories": [
+  {
+   "story": "tw-nuclear",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T05:26:23Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "au-victoria",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T05:26:28Z",
+   "searches": 4,
+   "flags": [
+    {
+     "statement": "Labor notionally held 56 seats on the new boundaries.",
+     "in_report": true,
+     "problem": "The 2026 election used the same boundaries as the 2022 election. The Victorian Electoral Commission says the last redivision was completed in October 2021 and took effect on 1 November 2022.",
+     "source": "https://vec.vic.gov.au/electoral-boundaries/state-boundary-reviews"
+    }
+   ]
+  },
+  {
+   "story": "dz-local",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T05:26:58Z",
+   "searches": 14,
+   "flags": []
+  },
+  {
+   "story": "gulf-shipping",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T05:27:03Z",
+   "searches": 7,
+   "flags": [
+    {
+     "statement": "all crew were reported safe.",
+     "in_report": true,
+     "problem": "UKMTO Warning 223-26 said the crew were accounted for, not that they were safe. Being accounted for does not rule out injuries.",
+     "source": "https://www.ukmto.org/-/media/ukmto/products/20261125-ukmto_warning_223-26.pdf"
+    },
+    {
+     "statement": "UKMTO issued 32 numbered warnings and advisories in the first 26 days of November, 26 of them on attacks.",
+     "in_report": true,
+     "problem": "The count omitted Warning 223-26, which UKMTO issued on November 26 and classified as an attack. Including it brings the tally to at least 33 numbered notices, at least 27 of them on attacks.",
+     "source": "https://thefile.news/story/hormuz-tanker-struck-iran-mine-claim-nov26"
+    }
+   ]
+  },
+  {
+   "story": "us-blackfriday",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T05:27:06Z",
+   "searches": 2,
+   "flags": []
+  },
+  {
+   "story": "tw-taipei",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T05:27:16Z",
+   "searches": 8,
+   "flags": [
+    {
+     "statement": "who ran as the joint candidate of the KMT and the Taiwan People's Party (TPP)",
+     "in_report": true,
+     "problem": "The Taipei City Election Commission lists only the KMT as Chiang's nominating party. The TPP backed the KMT nominee rather than jointly nominating him.",
+     "source": "https://www.cec.gov.tw/api/file/b74a02c0-b39e-4258-afd8-eb31787b0eb0.pdf"
+    },
+    {
+     "statement": "who first won the office in 2022 with 575,590 votes in a three-way race.",
+     "in_report": true,
+     "problem": "The vote total is correct, but Taipei City's official statistical report records 12 candidates in the 2022 mayoral election. Three were leading contenders, not the entire field.",
+     "source": "https://www-ws.gov.taipei/Download.ashx?icon=.pdf&n=MS7mj5DopoHliIbmnpAucGRm&u=LzAwMS9VcGxvYWQvMzY4L3JlbGZpbGUvNDg1MjEvODAxMTcyMi8xZjg1ZTZlZS0yZDRkLTQ0NjYtYTM0NC1jZDBhN2JjZjlkNTcucGRm"
+    },
+    {
+     "statement": "when Chen Shui-bian won a three-way race in 1994",
+     "in_report": true,
+     "problem": "Taipei City's historical account lists four candidates in the 1994 election: Chen Shui-bian, Jaw Shaw-kong, Huang Ta-chou and Ji Rong-zhi. The first three were the main contenders, but Ji was also on the ballot.",
+     "source": "https://www-ws.gov.taipei/001/Upload/318/relfile/0/13398/11c7feba-b4be-4e53-9771-6fa36ac8bb02.pdf"
+    }
+   ]
+  },
+  {
+   "story": "itlos-sealion",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T05:27:22Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "us-macys",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T05:28:02Z",
+   "searches": 10,
+   "flags": []
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-27T05:28:02Z"
+}
