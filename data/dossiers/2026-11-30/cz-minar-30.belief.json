@@ -1,0 +1,24 @@
+{
+  "claim": "cz-minar-30",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-27T19:25:00+01:00",
+  "finished_at": "2026-11-27T19:33:00+01:00",
+  "steps": [
+    {"n": 1, "action": "data", "target": "scripts/refdata/slip.mjs other-scheduled", "found": "Slip class other-scheduled: P(slip) ~0.089 (11/122); claim implies some announced/demanded disclosure, but criterion is strict (exact pay figure AND asset list/total) within ~52 hours.",
+     "belief": {"p": 0.35, "confidence": "low", "for": ["Claim framing suggests a pending promise or public challenge for disclosure by Sunday; scheduled items slip only ~9% (refdata slip other-scheduled)"], "against": ["Criterion requires both an exact/approximate salary figure and an asset list/total; a range or partial disclosure fails", "Unknown whether Minar committed to anything at all"], "open": ["Did Minar promise to publish salary/assets, and by when?", "Any report already of publication?"]}},
+    {"n": 2, "action": "search", "target": "Mikuláš Minář plat majetek zveřejní", "found": "Only old/unrelated results (Mynář, ministers' assets, 2019 Minář accounts); nothing on a current pledge.",
+     "belief": {"p": 0.32, "confidence": "low", "for": ["Minar has precedent of publishing finances: 'Minář zveřejnil účetnictví, Lidé PRO sám dostal 140 tisíc' — https://www.seznamzpravy.cz/clanek/minar-zverejnil-ucetnictvi-lide-pro-sam-dostal-140-tisic-152789 (older)"], "against": ["No current reporting of a pledge found", "Strict two-part criterion"], "open": ["Recent Nov 2026 context: who challenged him, did he commit to Sunday?"]}},
+    {"n": 3, "action": "search", "target": "Minář Milion chvilek plat listopad 2026", "found": "Results about Letná protest, ČT/ČRo fees; no salary/asset story surfaced.",
+     "belief": {"p": 0.3, "confidence": "low", "for": ["Minar is again chair of Milion chvilek and in public conflict with Babis government (protests Oct-Nov 2026), a setting where 'publish your pay' challenges arise", "Precedent of financial transparency"], "against": ["No evidence of a commitment found in two searches", "Strict criterion"], "open": ["ČT24 topic page for latest Minar news"]}},
+    {"n": 4, "action": "read", "target": "https://ct24.ceskatelevize.cz/tema/mikulas-minar-50162", "found": "Latest headlines: Letná protest, Babiš refuses demands, debate challenge on ČT funding; no salary/asset item.",
+     "belief": {"p": 0.28, "confidence": "low", "for": ["Ongoing high-profile conflict with government (ČT24 topic page, read 2026-11-27)", "Precedent of publishing accounts"], "against": ["Major outlet topic page shows no pledge or disclosure story", "Strict criterion; 52 hours incl. weekend"], "open": ["Is there a specific trigger (e.g. coalition attack on his pay) with a Sunday promise?"]}},
+    {"n": 5, "action": "search", "target": "Minář kolik bere plat Milion chvilek zveřejnit majetek Babiš vyzval", "found": "No hit about a salary/asset pledge; ČTK 26 Oct 2026 item on Babiš phone-number dispute.",
+     "belief": {"p": 0.28, "confidence": "low", "for": ["Conflict context persists", "Precedent of transparency"], "against": ["Three searches find no reported pledge or disclosure", "Strict two-part criterion"], "open": ["ČTK article content"]}},
+    {"n": 6, "action": "read", "target": "https://www.ceskenoviny.cz/zpravy/2893236", "found": "ČTK 26 Oct 2026: Milion chvilek denies publishing Babiš's phone number; no salary/assets mention.",
+     "belief": {"p": 0.28, "confidence": "low", "for": ["Claim existence implies a plausible trigger; Minar historically transparent about finances", "Scheduled events slip only ~9% if a firm commitment exists"], "against": ["No found evidence of commitment; ČTK/ČT24 coverage silent", "Requires both salary figure and asset list/total; partial disclosure resolves NO"], "open": ["Unresolved: whether a firm Sunday commitment exists"]}},
+    {"n": 7, "action": "submit", "target": "", "found": "Submitted p_blind 0.28.",
+     "belief": {"p": 0.28, "confidence": "low", "for": ["Implied trigger; transparency precedent"], "against": ["No evidence of pledge; strict two-part criterion"], "open": ["Existence of a firm commitment"]}}
+  ],
+  "p_blind": 0.28,
+  "p": 0.28
+}

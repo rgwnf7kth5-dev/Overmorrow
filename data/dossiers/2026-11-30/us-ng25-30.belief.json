@@ -1,0 +1,26 @@
+{
+  "claim": "us-ng25-30",
+  "model": "claude-opus-5-5",
+  "started_at": "2026-11-27T19:29:23+01:00",
+  "finished_at": "2026-11-27T19:31:00+01:00",
+  "steps": [
+    {"n": 1, "action": "data", "target": "scripts/refdata/slip.mjs launch", "found": "Launch slip class: prior 0.30, own 2/6, rate 0.314 that the event slips.",
+     "belief": {"p": 0.65, "confidence": "low", "for": ["slip class launch: P(slip) 0.314 -> ~0.69 on-date"], "against": ["specific single day; ISS cargo has instantaneous window, any scrub pushes to next day"], "open": ["is NET still 29 Nov ET?", "launch time and status", "weather forecast"]}},
+    {"n": 2, "action": "search", "target": "Cygnus NG-25 Falcon 9 launch date November 2026", "found": "Results point to NASA coverage advisory and launch-schedule pages for NG-25.",
+     "belief": {"p": 0.65, "confidence": "low", "for": ["slip class rate 0.314"], "against": ["single-day window"], "open": ["read NASA advisory for target time", "current status page"]}},
+    {"n": 3, "action": "read", "target": "https://www.spacelaunchschedule.com/space-news/nasa-sets-coverage-for-northrop-grumman-crs-25-launch-prelaunch/", "found": "NASA (18 Nov 2026): targeting NET 10:47 a.m. EST Sunday 29 Nov 2026, prelaunch teleconference 23 Nov.",
+     "belief": {"p": 0.67, "confidence": "medium", "for": ["NASA 18 Nov 2026: NET 10:47 EST Sun 29 Nov — spacelaunchschedule.com (NASA advisory)", "slip class rate 0.314"], "against": ["instantaneous ISS window; scrub = next day", "advisory 9 days old"], "open": ["status as of 26-27 Nov", "weather"]}},
+    {"n": 4, "action": "read", "target": "https://www.nextspaceflight.com/launches/details/7076/", "found": "Page rendered without date/status; no information.",
+     "belief": {"p": 0.67, "confidence": "medium", "for": ["NASA 18 Nov 2026: NET 10:47 EST Sun 29 Nov", "slip class rate 0.314"], "against": ["instantaneous window; scrub = next day"], "open": ["current status", "weather"]}},
+    {"n": 5, "action": "search", "target": "NG-25 Cygnus launch weather forecast Sunday", "found": "No current weather forecast; launch schedule page listed.",
+     "belief": {"p": 0.67, "confidence": "medium", "for": ["NASA 18 Nov 2026: NET 10:47 EST Sun 29 Nov", "slip class rate 0.314"], "against": ["instantaneous window"], "open": ["status page", "weather"]}},
+    {"n": 6, "action": "read", "target": "https://www.spacelaunchschedule.com/launch/falcon-9-block-5-cygnus-crs-2-ng-25/", "found": "Status 'Go For Launch', 29 Nov 2026 15:47 UTC (10:47 EST) from SLC-40, booster B1096 RTLS; last updated 25 Nov 'tweaked T-0', no date change since 2 Nov.",
+     "belief": {"p": 0.69, "confidence": "medium", "for": ["Go For Launch, 15:47 UTC 29 Nov, updated 25 Nov 2026 — spacelaunchschedule.com", "date stable since 2 Nov", "mid-morning launch: a short hold still lands on 29 Nov ET", "slip class rate 0.314"], "against": ["instantaneous ISS rendezvous window; any weather/technical scrub moves to 30 Nov", "weather forecast unknown (late Nov Florida fronts possible)", "NG-21 scrubbed once for weather in 2024"], "open": ["45th WS forecast %"]}},
+    {"n": 7, "action": "search", "target": "45th Weather Squadron NG-25 launch forecast percent go", "found": "Only generic articles about launch weather forecasting; no NG-25 forecast.",
+     "belief": {"p": 0.68, "confidence": "medium", "for": ["Go For Launch, 15:47 UTC 29 Nov, updated 25 Nov 2026 — spacelaunchschedule.com", "NASA advisory 18 Nov: NET 10:47 EST 29 Nov", "date stable since 2 Nov", "slip class rate 0.314"], "against": ["instantaneous window; scrub = 30 Nov", "weather unknown"], "open": ["weather forecast (not found)"]}},
+    {"n": 8, "action": "submit", "target": "", "found": "Submit p_blind 0.68.",
+     "belief": {"p": 0.68, "confidence": "medium", "for": ["Go For Launch, 15:47 UTC 29 Nov, updated 25 Nov 2026 — spacelaunchschedule.com", "NASA advisory 18 Nov: NET 10:47 EST 29 Nov", "slip class rate 0.314"], "against": ["instantaneous window; scrub = 30 Nov", "weather unknown"], "open": ["weather forecast"]}}
+  ],
+  "p_blind": 0.68,
+  "p": 0.68
+}
