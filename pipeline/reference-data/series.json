@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "pooled": {
-  "n": 64,
-  "rms_in_scales": 1.258,
+  "n": 67,
+  "rms_in_scales": 1.266,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -123,10 +123,19 @@
      "centre": 4.04,
      "scale_used": 0.3,
      "source": null
+    },
+    {
+     "edition": "2026-11-26",
+     "claim": "au-cpi-26",
+     "consensus": 4.8,
+     "first": 4.9,
+     "centre": 4.78,
+     "scale_used": 0.2,
+     "source": "financecalendar.com citing Westpac IQ; Forex Fundamentals calendar (both read 2026-11-23)"
     }
    ],
-   "n": 0,
-   "rms_surprise": null
+   "n": 1,
+   "rms_surprise": 0.1
   },
   "mf-maximum-daily-retail-price-of-diesel-b7-valid-on-28-oct-2": {
    "unit": "CZK/l",
@@ -209,10 +218,19 @@
      "centre": 3.1,
      "scale_used": 0.1,
      "source": "Investing.com calendar (read 27 Oct); LBBW calendar 3.1; Wells Fargo 3.1"
+    },
+    {
+     "edition": "2026-11-26",
+     "claim": "us-pce-26",
+     "consensus": 3.2,
+     "first": 3.3,
+     "centre": 3.218,
+     "scale_used": 0.1,
+     "source": "Econoday, read 2026-11-23T17:51Z, https://us.econoday.com/byevent?fid=667163&cust=global&year=2026&lid=0 (+0.3% m/m, 3.2% y/y); Nasdaq calendar 3.2% / 0.3%"
     }
    ],
-   "n": 1,
-   "rms_surprise": 0
+   "n": 2,
+   "rms_surprise": 0.0707
   },
   "us-real-gdp-growth-q3-2026-advance-estimate-seasonally-adjus": {
    "unit": "%",
@@ -1070,6 +1088,22 @@
    ],
    "n": 1,
    "rms_surprise": 0.1
+  },
+  "us-real-gdp-growth-q3-2026-second-estimate-saar-first-publis": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-26",
+     "claim": "us-gdp-26",
+     "consensus": 3.5,
+     "first": 4.3,
+     "centre": 3.426,
+     "scale_used": 0.36,
+     "source": "Econoday, read 2026-11-23T17:50Z, https://us.econoday.com/byevent?fid=667063&cust=global&year=2026&lid=0 (range 3.4-3.8); Nasdaq calendar 3.4"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.8
   }
  },
  "extra": {}

@@ -1,0 +1,43 @@
+{
+  "edition": "2026-11-26",
+  "checked_at": "2026-11-27T05:12:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 25, read 27 Nov 04:04 UTC)",
+    "ct24 (ČT24 domácí list, items dated 25 Nov; read 27 Nov 04:05 UTC)",
+    "ctk (ceskenoviny.cz ČR list pages 1-3, items dated 25.11.2026 from 13:24 on, plus the ČTK budget item of 26.11 00:26 on the Wednesday sitting; read 27 Nov 04:06 UTC)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading (exit 2); WebSearch found no Reuters World News Summary or AP News Summary for 25 Nov 2026 (only other days), so list (b) is missing: no world or Europe event could reach two lists.",
+    "ceskenoviny.cz ČR list reached back only to 25.11.2026 13:24, so ČTK items of the Wednesday morning were not seen."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries (list (b) missing): Houthi attack damages the Ras Tanura refinery; Israeli airstrike on Al-Shati camp kills a Hamas security official and family; IS suicide bombing at a Hasakah checkpoint; Macy's Thanksgiving Day Parade postponed by a storm; Bangladesh minimum-wage decision for garment workers, factory closures and BGB deployment; Greek general strike (in the planning file's dropped list); EU and UK fine Firmenich, Givaudan and IFF over €570m; Giza/Cairo fuel-tanker explosion (31 dead); Mississippi Cessna crash; Karachi building collapse; US Army detonates lead azide at the Iowa Army Ammunition Plant (covered, us-iowa); Australia–Solomon Islands security treaty; Cambodia–China Golden Dragon exercise; Kilmar Abrego Garcia arrives in Madrid; Huawei found guilty by a Brooklyn jury; Iraqi Federal Supreme Court ruling on Kurdistan oil and borders; Lamarre-Condon murder verdict; Paul Mackenzie convicted in Mombasa; Shenzhou-24 crew with the first Pakistani astronaut arrives at Tiangong (covered, cn-shenzhou).",
+    "ČT24-only Czech items dated 25 Nov: European Parliament adopts the resolution on media freedom and ČT/ČRo funding in Czechia (covered, cz-ep-media; ČTK's morning items were not seen).",
+    "ČTK-only Czech items dated 25 Nov: Senate rejects sports matches with Russian teams in Czechia (sport-related); Babiš wants CZK 1.6bn from pension money for fare discounts; coalition keeps retraining support; new duties for domain registrars in criminal proceedings; Brno 2027 budget draft; court asks the Senate to lift Půta's immunity; binding rules for school canteens; Babiš expects no MFF deal at the summit; open day at Břeclav prison."
+  ],
+  "events": [
+    {
+      "title": "Chamber of Deputies holds the second reading of the 2027 state budget: almost 150 amendments moving more than CZK 380bn, debate ends after midnight",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/poslanci-prednesli-temer-150-navrhu-k-rozpoctu-presunout-chteji-pres-380-mld/2904989",
+      "status": "covered",
+      "story": "cz-chamber"
+    },
+    {
+      "title": "Senate approves the rise in state payments into health insurance for state-insured persons (about CZK 13bn in 2027) and the anti-greenwashing bill, and calls on the government to back the EU loan to Ukraine at the summit",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/rust-plateb-statu-do-zdravotnictvi-za-statni-pojistence-senat-schvalil/2906770",
+      "status": "dropped",
+      "note": "Planned as reserve story cz-senate (claim cz-senate-26, 30%) and cut by the morning: senat.cz refused requests and no report put the health-payments bill on the 25 Nov agenda, so it stayed reserve/dropped."
+    }
+  ]
+}

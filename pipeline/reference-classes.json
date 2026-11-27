@@ -162,7 +162,7 @@
       "n": "own record only",
       "source": "own resolved claims (resolver, 24 Oct 2026)",
       "own_record": {
-        "yes": 5,
+        "yes": 6,
         "no": 1
       }
     },
@@ -459,7 +459,7 @@
       "n": 0,
       "source": "own record",
       "own_record": {
-        "yes": 5,
+        "yes": 6,
         "no": 2
       }
     },
@@ -844,7 +844,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
-        "yes": 2,
+        "yes": 4,
         "no": 2
       }
     },
@@ -878,7 +878,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 0,
-        "no": 4
+        "no": 5
       }
     },
     {
@@ -900,7 +900,7 @@
       "source": "own record (created 2026-11-14 morning run)",
       "own_record": {
         "yes": 1,
-        "no": 0
+        "no": 1
       }
     },
     {
@@ -932,7 +932,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-15 morning run, from claim starship-launch-15)",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 0
       }
     },
@@ -1075,7 +1075,7 @@
       "n": "own record only",
       "source": "own record (created 2026-11-18 morning run)",
       "own_record": {
-        "yes": 0,
+        "yes": 1,
         "no": 1
       }
     },
@@ -1218,7 +1218,7 @@
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim cn-apec-decl-20",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 0
       }
     },
@@ -1317,7 +1317,7 @@
       "n": 0,
       "source": "own record from 21 Nov 2026 (resolver); added from claim cz-fuelcap-ext-20",
       "own_record": {
-        "yes": 1,
+        "yes": 2,
         "no": 1
       }
     },
@@ -1536,6 +1536,28 @@
       "base_rate": null,
       "n": 0,
       "source": "own record from 26 Nov 2026 (resolver); added from claim eu-dbp-25",
+      "own_record": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    {
+      "id": "ep-vote-yes-count-threshold",
+      "description": "European Parliament plenary vote reaches a stated number of votes in favour (or margin) on the scheduled day",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 27 Nov 2026 by the resolver)",
+      "own_record": {
+        "yes": 2,
+        "no": 2
+      }
+    },
+    {
+      "id": "postponed-operation-goes-ahead-on-date",
+      "description": "An operation already postponed once goes ahead on its newly announced date",
+      "base_rate": null,
+      "n": "own record only",
+      "source": "own record (created 27 Nov 2026 by the resolver)",
       "own_record": {
         "yes": 1,
         "no": 0

@@ -1,0 +1,259 @@
+{
+  "edition": "2026-11-26",
+  "results": [
+    {
+      "claim": "ua-drones-26",
+      "outcome": "no",
+      "evidence": "https://www.slovoidilo.ua/2026/11/25/novyna/bezpeka/rosiya-vnochi-vypustyla-po-ukrayini-112-bezpilotnykiv-skilky-zbyla-ppo",
+      "note": "The Air Force's first morning summary (relayed 25 Nov 08:36 Kyiv by Slovo i Dilo, also Racurs; the Telegram page no longer shows that post) counted 112 strike UAVs (Shahed incl. 66 jet, Gerbera, Parodiya) launched from 18:00 on 24 Nov, 88 downed or suppressed, below the 150 threshold.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same total of 112 from the Air Force summary."
+      }
+    },
+    {
+      "claim": "gulf-ukmto-26",
+      "outcome": "yes",
+      "evidence": "https://www.arabtimesonline.com/news/tanker-struck-by-unknown-projectile-near-omans-khasab-112188/",
+      "note": "UKMTO warning 223-26 (issued 26 Nov, reported by Arab Times and Reuters) says an outbound tanker was struck by an unknown projectile about 18 nm east of Khasab, Oman, at about 13:00 UTC (17:00 GST) on 25 Nov; ukmto.org itself was not read.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same UKMTO warning 223-26 / JMIC update 117 with the 13:00 UTC 25 Nov time."
+      }
+    },
+    {
+      "claim": "ep-budget-26",
+      "outcome": "no",
+      "evidence": "https://howtheyvote.eu/votes/200606",
+      "note": "HowTheyVote.eu: on 25 Nov the plenary approved the 2027 budget joint text (A10-0305/2026) with 406 for, 184 against and 69 abstentions, below the 420 threshold.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same 406 votes in favour."
+      }
+    },
+    {
+      "claim": "ep-swiss-26",
+      "outcome": "yes",
+      "evidence": "https://howtheyvote.eu/votes/200559",
+      "note": "HowTheyVote.eu: on 25 Nov consent to the EU–Switzerland package (A10-0236/2026, draft Council decision) was given in one vote with 584 for, 13 against and 60 abstentions; the separate interim-report resolution (554 for) does not count.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same single consent vote with 584 in favour."
+      }
+    },
+    {
+      "claim": "cz-budget-26",
+      "outcome": "no",
+      "evidence": "https://www.centrum.cz/clanek/druhe-cteni-rozpoctu-skoncilo-po-pulnoci-poslanci-predlozili-temer-150-zmen-352582",
+      "note": "ČTK via Centrum.cz ('Druhé čtení rozpočtu skončilo po půlnoci') and the PSP desk snapshot (stenogram after the 00:00 mark, sitting ended 00:06 on 26 Nov) show the second reading of print 324 closed just after midnight, so it was still open at 23:59 on 25 Nov (psp.cz stenogram unreachable from here).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite ČTK/ČT24 reports that the reading closed after midnight on 26 Nov."
+      }
+    },
+    {
+      "claim": "iowa-26",
+      "outcome": "yes",
+      "evidence": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-detonation-lead-explosives-iowa",
+      "note": "NPR (also CNN live coverage) reports the Army carried out the controlled detonation of about five tons of degraded lead azide at the Iowa Army Ammunition Plant in Middletown on Wednesday 25 Nov, after earlier postponements from 20 and 23 Nov.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite reports of the detonation on 25 Nov."
+      }
+    },
+    {
+      "claim": "eu-wb-26",
+      "outcome": "yes",
+      "evidence": "https://europeanwesternbalkans.com/2026/11/26/western-balkan-candidats-urged-to-make-progress-with-reforms-reconciliation/",
+      "note": "European Western Balkans and Insight EU Monitoring report the Brussels summit of 25 Nov concluded with the adoption of a Declaration, with which Albania, BiH, Kosovo, Montenegro and North Macedonia aligned (Serbia absent); consilium.europa.eu refused scripted reading.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the Council's Brussels Declaration of 25 Nov."
+      }
+    },
+    {
+      "claim": "shenzhou-26",
+      "outcome": "yes",
+      "evidence": "https://english.news.cn/20261125/54552aa59bee44488b1c824e77b91d6e/c.html",
+      "note": "Xinhua citing CMSA: the Long March-2F with Shenzhou-24 lifted off from Jiuquan at 08:18 Beijing time on 25 Nov and the launch was a complete success.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same Xinhua report; its page confirmed the 08:18 lift-off on 25 Nov."
+      }
+    },
+    {
+      "claim": "us-gdp-26",
+      "outcome": "measured",
+      "value": 4.3,
+      "evidence": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+      "note": "BEA second estimate (25 Nov): real GDP increased at an annual rate of 4.3 percent in Q3 2026 (Q2: 2.2 percent).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 4.3 percent from the same BEA release."
+      }
+    },
+    {
+      "claim": "us-pce-26",
+      "outcome": "measured",
+      "value": 3.3,
+      "evidence": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026",
+      "note": "BEA Personal Income and Outlays, October 2026 (25 Nov): PCE price index excluding food and energy up 3.3 percent from one year ago (headline 3.8, monthly core 0.3).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 3.3 percent from the same BEA release."
+      }
+    },
+    {
+      "claim": "ofgem-26",
+      "outcome": "yes",
+      "evidence": "https://www.ofgem.gov.uk/press-release/energy-price-cap-rise-26-january-2027",
+      "note": "Ofgem press release of 25 Nov: for a typical dual-fuel household paying by Direct Debit the cap for 1 Jan–31 Mar 2027 rises 26% from £1,723 to £2,166 a year under the current TDCV, above £2,154 (Cornwall Insight gives the same £2,166).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same £2,166 figure from the Ofgem release."
+      }
+    },
+    {
+      "claim": "deere-26",
+      "outcome": "yes",
+      "evidence": "https://www.sec.gov/Archives/edgar/data/0000315189/000110465926131741/de-ex99d1.htm",
+      "note": "Deere's 25 Nov release (8-K Ex. 99.1) forecasts fiscal 2027 net income attributable to Deere of $4.50–5.25 billion, midpoint $4.875 billion, above the fiscal 2026 figure of $4.860 billion reported in the same release.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models compute the same $4.875bn midpoint against $4.860bn."
+      }
+    },
+    {
+      "claim": "au-cpi-26",
+      "outcome": "measured",
+      "value": 4.9,
+      "evidence": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release",
+      "note": "ABS Consumer Price Index, Australia, October 2026 (25 Nov): the CPI rose 4.9% in the 12 months to October 2026, up from 4.3% (trimmed mean 3.8%).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 4.9 percent from the same ABS release."
+      }
+    },
+    {
+      "claim": "cz-epmedia-26",
+      "outcome": "yes",
+      "evidence": "https://www.europarl.europa.eu/news/en/press-room/20261119IPR48971/czechia-must-safeguard-public-media-independence-and-democratic-norms",
+      "note": "EP press release (25 Nov): the resolution on media freedom and democratic norms in Czechia was adopted on Wednesday by 442 votes in favour, 158 against and 47 abstentions (also HowTheyVote.eu vote 201258).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give the same 442 votes in favour."
+      }
+    },
+    {
+      "claim": "cz-ccyb-26",
+      "outcome": "yes",
+      "evidence": "https://www.cnb.cz/en/financial-stability/cnb-board-decision/CNB-Board-decision-on-financial-stability-1795615200000/",
+      "note": "ČNB Bank Board decision of 25 Nov 2026 (15:00): the countercyclical capital buffer rate is kept at its current announced level of 1.5% and mortgage rules are unchanged (also kurzy.cz relay of the ČNB release).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the ČNB release keeping the CCyB at 1.5%."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "www.psp.cz stenographic records (connection reset)",
+      "www.consilium.europa.eu (403)",
+      "t.me/s/kpszsu (only recent posts shown; 25 Nov summary not visible)",
+      "spacelaunchnow.me (403)",
+      "dailytimes.com.pk (403)",
+      "www.bernama.com (connection reset, one article)",
+      "www.ofgem.gov.uk PDF documents (not readable by script)",
+      "www.ukmto.org (not read)"
+    ],
+    "pending": []
+  }
+}

@@ -145,6 +145,22 @@
         "disagree": [],
         "note": "Both models give $0.83 non-GAAP diluted EPS from the same release."
       }
+    },
+    {
+      "claim": "ep-eia-25",
+      "outcome": "no",
+      "evidence": "https://howtheyvote.eu/votes/201445",
+      "note": "The final vote on A10-0290/2026 (2025/0391(COD)) was held on 25 Nov, after the window, and the Commission proposal as amended received 367 votes in favour (268 against, 25 abstentions), below 400, per the roll-call results compiled on HowTheyVote.eu from Parliament's data (doceo RCV empty when read by script).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": false,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report the postponement to 25 Nov and 367 votes in favour, matching the roll-call record read."
+      }
     }
   ],
   "meta": {
@@ -172,6 +188,14 @@
       {
         "claim": "cz-us-cro-25",
         "note": "The Constitutional Court listed the public pronouncement of a judgment (nález) in III. ÚS 2839/25 for 24 Nov 14:00; no press release, NALUS entry or media report of the outcome found yet."
+      },
+      {
+        "claim": "gulf-ukmto-25",
+        "note": "27 Nov recheck: gCaptain (24 and 26 Nov) shows the warnings issued on 24 Nov dated to 22 Nov and no incident dated 24 Nov GST, but the UKMTO incident list and JMIC Update 117 could not be read (ukmto.org 403) and time-late reports remain possible. Deadline for a result: 29 Nov 05:00."
+      },
+      {
+        "claim": "cz-us-cro-25",
+        "note": "27 Nov recheck: usoud.cz news lists no press release on III. ÚS 2839/25 (releases of 24-26 Nov concern other cases), NALUS cannot be queried without a form, and no ČTK or major-outlet report of the outcome was found. Deadline for a result: 29 Nov 05:00."
       }
     ]
   }

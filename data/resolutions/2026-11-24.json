@@ -146,6 +146,38 @@
         "disagree": [],
         "note": "Both models cite the same $1.43 non-GAAP figure; the PDF was read after their pointer, hpe.com newsroom being unreachable."
       }
+    },
+    {
+      "claim": "cz-safe-24",
+      "outcome": "yes",
+      "evidence": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "note": "ČTK/ČT24 reported on 24 Nov (10:44) that Defence Minister Zůna said the cabinet had approved joining SAFE round two, and a ČTK/ČT24 report of 26 Nov dates it: 'v pondělí vláda rovněž schválila záměr zapojit se do druhého kola unijního programu SAFE', i.e. Monday 23 Nov, inside the window (odok.gov.cz blocked; the Government Office results page of 23 Nov lists no SAFE item).",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models answer yes in the latest file (openai had said no on 25 Nov for want of a date); the date now comes from the ČTK/ČT24 report of 26 Nov read by script."
+      }
+    },
+    {
+      "claim": "gulf-ukmto-24",
+      "outcome": "yes",
+      "evidence": "https://www.ukmto.org/-/media/ukmto/products/20261124-ukmto_warning_219-26---update-01.pdf",
+      "note": "Resolved at the 72-hour limit from the best available evidence: gCaptain (24 Nov) reports UKMTO warnings 219-221/26 of three tankers struck by projectiles eastbound in the Strait of Hormuz, dated 22 Nov (UTC), and the warnings list strike times of 20:25-20:42 UTC (00:25-00:42 GST on 23 Nov, inside the window), which could not be read on a page because ukmto.org refuses scripted reading; ambiguous because the in-window timing rests on the UTC times rather than the UTC date.",
+      "resolved_at": "2026-11-27T05:05:00+01:00",
+      "ambiguous": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the UKMTO warning PDFs with the 20:25-20:42 UTC strike times; the PDFs returned 403 again, so the reading rests on the UTC times and the gCaptain report."
+      }
     }
   ],
   "meta": {
