@@ -1,0 +1,218 @@
+{
+ "claim": "Cynthia Viteri wins the mayoralty of Guayaquil in Ecuador's sectional elections on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:15:01Z",
+   "p": 0.9,
+   "searches": 5,
+   "sources": [
+    "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/candidatos-alcaldia-guayaquil-trayectoria-perfiles-titulos-136381/",
+    "https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/",
+    "https://www.cne.gob.ec/pleno-del-cne-aprueba-el-inicio-del-periodo-electoral-para-las-elecciones-seccionales-y-cpccs-2027/",
+    "https://www.tce.gob.ec/wp-content/uploads/2023/08/Revista-Justicia-Electoral-y-Democracia-No.-7-2-35-52-S3.pdf",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/07/ACTA-RESOLUTIVA-No.-052-PLE-CNE-2026.pdf",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/11/ACTA-RESOLUTIVA-No.-090-PLE-CNE-2026-signed.pdf",
+    "https://www.cne.gob.ec/calendario-elecciones-seccionales-2027/",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/07/ACTA-No.-040-PLE-CNE-2026.pdf",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/08/RESOLUCION-PLE-CNE-33-27-7-2026-EL-ORO-signed-2.pdf",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/08/ACTA-RESOLUTIVA-062-31-JULIO-20261-signed.pdf",
+    "https://www.cne.gob.ec/wp-content/uploads/2026/08/RESOLUCION-PLE-CNE-7-21-7-2026-EL-ORO-signed.pdf",
+    "https://www.cne.gob.ec/cne-aprobo-registro-electoral-depurado-y-actualizado-de-las-elecciones-2027/",
+    "https://www.cne.gob.ec/concluyo-la-jornada-de-voto-ppl-de-las-elecciones-seccionales-y-cpccs-2027/",
+    "https://www.cne.gob.ec/juntas-provinciales-electorales-elecciones-seccionales-2027/",
+    "https://www.cne.gob.ec/cne-aprobo-disenos-de-papeletas-documentos-y-paquete-electoral-elecciones-2027/",
+    "https://www.cne.gob.ec/cne-habilitara-4-492-recintos-electorales-para-las-elecciones-2027/",
+    "https://www.cne.gob.ec/inicia-periodo-de-democracia-interna-de-las-organizaciones-politicas-rumbo-a-las-elecciones-seccionales-2027/",
+    "https://www.cne.gob.ec/cne-recibio-328-777-solicitudes-de-cambios-de-domicilio-para-las-elecciones-seccionales-y-cpccs-2027/",
+    "https://www.cne.gob.ec/cne-publicara-registro-electoral-de-las-elecciones-seccionales-y-cpccs-2027-y-abrira-fase-para-reclamos-administrativos/",
+    "https://www.cne.gob.ec/cne-designa-vocales-de-las-juntas-provinciales-electorales-para-los-comicios-2027/",
+    "https://www.cne.gob.ec/2026/02/14/",
+    "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/elecciones-2026-cierre-campanas-candidatos-alcaldia-guayaquil-138089/",
+    "https://www.elcomercio.com/actualidad/guayaquil/cynthia-viteri-precanditada-alcaldia-guayaquil/",
+    "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/cynthia-viteri-precandidata-adn-alcaldia-guayaquil-128022/",
+    "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/debate-alcaldia-guayaquil-candidatos-elecciones-seccionales-cne-137692/"
+   ],
+   "reason": "**Base rate.** In an eight-candidate race, a candidate with no distinguishing information starts at 1 in 8. Viteri is not a generic candidate: she won the Guayaquil mayoralty in 2019 and lost it in 2023. That one-for-two local record shows she can win here, but it is too small a sample to use as a probability estimate. ([primicias.ec](https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/candidatos-alcaldia-guayaquil-trayectoria-perfiles-titulos-136381/))\n\n**Updates.** The strongest evidence **for YES** is the November 19 Talismán–AtlasIntel survey: Viteri led Fiorella Ycaza 34.6% to 19.3%. RTS reported a wider AtlasIntel lead on November 27, but I don’t count that as independent confirmation. President Daniel Noboa’s appearance at Viteri’s campaign close is a modest positive; the November 10 report of an MR Analytica survey putting Viteri just two points ahead of Andrés Roche is a reason for caution. ([talismanmp.com](https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/))\n\n**Window and resolution.** The CNE initially scheduled the election for February 14, 2027, but moved it to November 29, 2026. The CNE reported on November 26 that early voting for eligible people in custody had concluded and that those ballots would be counted on Sunday. I put the chance that Guayaquil does not vote in the specified window below 1%. If voting goes ahead but fewer than 90% of tally sheets have been processed when the resolver checks, that leaves the claim pending absent a CNE proclamation; it does not make it NO. ([cne.gob.ec](https://www.cne.gob.ec/pleno-del-cne-aprueba-el-inicio-del-periodo-electoral-para-las-elecciones-seccionales-y-cpccs-2027/?utm_source=openai))\n\nNEW FACTS\n- 2026-11-27 | El Comercio reported that President Daniel Noboa attended Viteri’s November 26 campaign closing event in Guayaquil. | https://www.elcomercio.com/elecciones/daniel-noboa-acompano-el-cierre-de-campana-de-cynthia-viteri-y-andres-guschmer-en-guayaquil/\n- 2026-11-27 | RTS reported an AtlasIntel survey with Viteri at 38.7% and Ycaza at 15.3%. | https://www.rts.com.ec/noticia/cynthia-viteri-lidera-intencion-de-voto-para-la-alcaldia-de-guayaquil-con-38-7/\n- 2026-11-26 | The CNE reported that voting for eligible people in custody had concluded and that their ballots would be counted on November 29. | https://www.cne.gob.ec/concluyo-la-jornada-de-voto-ppl-de-las-elecciones-seccionales-y-cpccs-2027/\n- 2026-11-19 | Talismán–AtlasIntel’s digital survey measured 34.6% support for Viteri and 19.3% for Ycaza. | https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/\n- 2026-11-10 | La Hora reported an MR Analytica survey with Viteri at 25% and Roche at 23%. | https://www.lahora.com.ec/politica/elecciones-ecuador-indecision-ciudadana-marca-el-inicio-de-la-campana-electoral-20261110-0063.html\n- 2023-07-28 | A study published by Ecuador’s electoral tribunal journal documented three 2023 polls putting Viteri at 44% to 48%, versus 30.39% in the official count. | https://www.tce.gob.ec/wp-content/uploads/2023/08/Revista-Justicia-Electoral-y-Democracia-No.-7-2-35-52-S3.pdf\n\nCOUNTER  \nPolls in this same city substantially overstated Viteri’s support in 2023, when Aquiles Álvarez beat her. If today’s surveys similarly miss voters who turn out for his wife, Fiorella Ycaza, the apparent lead could disappear in the official count. ([tce.gob.ec](https://www.tce.gob.ec/wp-content/uploads/2023/08/Revista-Justicia-Electoral-y-Democracia-No.-7-2-35-52-S3.pdf?utm_source=openai))",
+   "facts": [
+    {
+     "date": "2026-11-27",
+     "fact": "El Comercio reported that President Daniel Noboa attended Viteri’s November 26 campaign closing event in Guayaquil.",
+     "url": "https://www.elcomercio.com/elecciones/daniel-noboa-acompano-el-cierre-de-campana-de-cynthia-viteri-y-andres-guschmer-en-guayaquil/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "RTS reported an AtlasIntel survey with Viteri at 38.7% and Ycaza at 15.3%.",
+     "url": "https://www.rts.com.ec/noticia/cynthia-viteri-lidera-intencion-de-voto-para-la-alcaldia-de-guayaquil-con-38-7/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "The CNE reported that voting for eligible people in custody had concluded and that their ballots would be counted on November 29.",
+     "url": "https://www.cne.gob.ec/concluyo-la-jornada-de-voto-ppl-de-las-elecciones-seccionales-y-cpccs-2027/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Talismán–AtlasIntel’s digital survey measured 34.6% support for Viteri and 19.3% for Ycaza.",
+     "url": "https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/"
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "La Hora reported an MR Analytica survey with Viteri at 25% and Roche at 23%.",
+     "url": "https://www.lahora.com.ec/politica/elecciones-ecuador-indecision-ciudadana-marca-el-inicio-de-la-campana-electoral-20261110-0063.html"
+    },
+    {
+     "date": "2023-07-28",
+     "fact": "A study published by Ecuador’s electoral tribunal journal documented three 2023 polls putting Viteri at 44% to 48%, versus 30.39% in the official count.",
+     "url": "https://www.tce.gob.ec/wp-content/uploads/2023/08/Revista-Justicia-Electoral-y-Democracia-No.-7-2-35-52-S3.pdf"
+    }
+   ],
+   "counter": "Polls in this same city substantially overstated Viteri’s support in 2023, when Aquiles Álvarez beat her. If today’s surveys similarly miss voters who turn out for his wife, Fiorella Ycaza, the apparent lead could disappear in the official count. ([tce.gob.ec](https://www.tce.gob.ec/wp-content/uploads/2023/08/Revista-Justicia-Electoral-y-Democracia-No.-7-2-35-52-S3.pdf?utm_source=openai))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:15:27Z",
+   "p": 0.8,
+   "searches": 6,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4aui3Vjy8pPZk9MTfjM1ZkRXl4Hk5o832F-Q8yHB6BZNAS0c2vTBNP-Ets_Jd-lteFpoHCQs1x-UR4beAO0c3nay8_P6N9K68ONgLOgpxT0IJxEFyXwLKl3-EjisTx15FCpq0yGEFsETHBR55sZ6WVEtTbPAFS7FS7zJ4OUQV-kuDIZ9dvnwyPWwN80iKoW6nRcu-M9IS8A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHY5mS_FFVL5oYX0WVRIQsXzgMIWNdQIjxSy7J40Rvr3kmsJ_Wi0r4sLepSEPVba_Gm0qr2uHihG-cenqbFRTIaZMaH2T_-mfE35rliMiH-mNK0TGkG8ir0CyakdJJhC-LPUxJU9KBFz6DFE34wnh4-xhKKpIOkf9Bpv-McsjgfVrDt9fd26YNT6gbq6kUKedZB",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHyNBlk5Qg7yS2_3WrGLtWpg5S3bRhI53NqK0EU5iX0ZkKhdKzPpKJPllyjfTZTj5-yB1Ivvc-_WzLWT7K-WvR6XGYCfmw2tloH_XveiB2N8CGHX_nuCkuRck6tDMc33zntIXFioDw36lRMkZpcz96VArBEufLW12viZSuQbmc9jiB1-1kdbmF7hFfLFj5O_fbuwpPo5aT2KADhVjgBHprp_8lfEIZRL9eRXJNKUBgNS7wim3RatRipqkX7Qr6NlyL",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbOHc4YjEV4WhY_22P7TMPOgLi7dV1LrDxSJs_WaE-c00KSPLa2GD69_6E5ultdOdnbi91ZvvWGGFv9BY2a-Wcm30TPRRIzeZkr5OrLM6lO7Vc4QaDvSJLkvrm1FXE2-pjeRd45tl1X7cUdIvE4xlAE09x4t0dpKqsTtWxxDByI_pjcBxOVNrrsmCIhzuCVkE1MQxAveRp3iZY7TuvLC40MrBw-K8OEikPxy4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNUd0MmQltjUdLtRPm9bUviNCWmwZz9dh_QHZTG9MrDT7U8dy0pyJu3YvbxwWdSvluXXKGQfrDjiedT0gV6lb3sdm5wN3V7DVHxGizzzBIKGkLWtMmcDTuXkeriuq-gH_kRmZzuy6d8Og14XTbyt9AA187ks4CUnU_x3OI25pqYWXXhjt6HUg7ltuMnMWZxp9TKRUsE-LaRu4ul22XKs9sHiYl5kMPbd4em7JOhLAyKe0uGurQUg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNVRCQDG1CmLfKLgqimpOg51LtIMXP16fE3y9pKo5ZMnMI8AZNERmzWFn1OhnuWLFvPq58rWipkRBeEjBEZ4yc9o40m63DwE4AlFFlkuXJLuJ7hnROFjBLj-yg-Yof88J650B2C4Ads21BC5QuByJ5Hgk6NoXBiM8X2MEli31QY3W8m2YJfWE3N0ENWRoC_TaV-WjWG5WvQ1zHvHyu-0XpJX51OmJFcTWJUDFJQq3aseVN6lgzuJBmVK24U-tVyypq3rQ=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZSWVLevU6rwfJNyP0QEQ5ksax1bP3YTD5avcqG8HiGROzczyxTLf7K5Nd5M6-GLTyCxjjACG-P3h5J-PgYeRunEOpsfZ5IFOEiVff0mK3Qb2po3wOHuY4-YDlUW0Dxsp7JudwzIarVBK6TLnrJy_hH9baTA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEllTHIUfWU82OV9RMxQh7KrwBuXBADwlszXF1bkMEl7AY8bqefRzwSiR_mGg0BfWZW1KLDiL_XRcg30I53tzAOMGK6ADUacBXqb5SOpp5gK6B2zX5RYSv_okIKgNjuGcotFg53Tp3OKeOKQ_49ToDtAg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQCGjTNwBmdKM8AC7MUGFIA1zkmLTALuaKMlndh8zr3h06wVCR_M3Xi07K50pHAUhlCgAHUE6CH06CRADWoh-A85KPgehd-rqEaLUJuq-L17EdYzFA1ABqZLcGBur5Zh-uM0DwEuntwWpKrAVyDmIZfQFU9qNP9u-qgsbty3Z-UExGbgyh4IWoXolXB6SQ_Vxy7pcKlI6MjCGws-Iv_iWKO7SDo5Orv_SYT6yPENw65DUFENlhMFQ0Z6g=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnfXF7K9xao-ejsNj34UFi_7kZrcw6ZW8H-UD0yEeN0_cDUHn489U5BKIEOdxJWpmnWuLyPwqZBrcp5YsvY3HMjVrDKbgQtEbPYR-eeQvzMKM4MoaeLNpzcfagJNKwLyQIWBNiAaqQHZzYQXq15KHrx1AW1_vnic905JrpnE64JwsBSl7mMuD7WIuF-jXlLNZdqHg1NS8LrVxD_fLiKnLxcuUFvXVziH71VTgQPZ8fAfYmK7z25MlmsQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdgeuWyqeTgyICUjOY_q9pyLUaXswoy__EuDogUsN4KNkOWJPxTCS_JjKOvic2XeY3QAbGDkb-nHK2BgZu5DN2BnqKfAQ0iglC6Bx4Ef18BclOXw3Vz9fllqofKuMyzoTa5islfV-o_1X52vE4XFvWDJBbllq7AvjiJkOBVWO2",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQFvtL6T8a4raAWEKgdqa8Ci1ORYD-0MGmeWvqYo1a6Ktycaqs_OTIP-MkV54j30vICRtX1l6q-4r2O0MhMFYKUt4TKlORpXKUaCZh2yfkaMRChFZzXA75JwYEzHQpYqvgsD8XA-UrTOGsMkjvDsXuJtxCW5nbnx53kklh_HfGoeERg8l53tOA71uITdxlmZL3HP3EwasI_xzhcSTNsY3aaygOrswv",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVwceMeLJPX5zQzMJLbkdTsAM-CRkyI8RZ3gWuP4tXsArZV_g27-fh6BfX2Yb5f5ltlk16cx1zk7onSzfslsXgOQMyYFXQjxqCduISMGV31bXA9UYOairYzk9yikq5aHaVKTLXBijo1F4MKfMFOP8AxoRb2fyg1ooNq6JPCmd548r08NonRO-xWPsTaU7G5kGHbG7k8YQQMiKoR6JlOXBHkw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQWO7zAs1OT5xj0NNzFDwWD7MYydV_v-6jBBv19r_whQNT8gK_aJw8_jhp-YU7IdHboWuBsepBGiVmgHZWWbZxEMC7IeshOmQBcI4IdfaM1sVyeGLShq-1tP8NP1LGi7HpOf6m-_dhaa6ZNFwYh1q07v5KFHoeD7OX-hhHCu1l-1b1LhteSRTvz9Bxamn8jE3Zk0hIVW9Fh_vq1nqHC6ly41eN07SZ3qOqGARGK1EwdREsQH_aRkGkfFSiAknGEIaNbwrhEo_dNNS6CGdNYg=="
+   ],
+   "reason": "of incumbent mayor Aquiles Álvarez.\n\n(3) **Strongest reason the obvious outcome might fail**:\nAlthough Viteri leads across every CNE-registered poll, the MR Analytica survey showed a much tighter three-way race (25% Viteri, 23% Roche, 22% Ycaza), and Viteri already suffered an unexpected defeat in 2023 when polling overestimated her support against Aquiles Álvarez. If voters dissatisfied with national economic or security conditions consolidate late around Fiorella Ycaza (channeling sympathy for detained mayor Álvarez) or return to the traditional PSC banner under Andrés Roche following contentious exchanges in the 22 November debate, Viteri could lose a close plurality contest. (The chance the election itself fails to occur on 29 November is near zero, as voting materials are deployed and early voting for prisoners and homebound citizens is already underway on Nov 26–27.)\n\nNEW FACTS\n- 2026-11-09 | The National Electoral Council (CNE) published the final list of eight qualified candidates for the mayoralty of Guayaquil for the 29 November 2026 elections, including Cynthia Viteri for Acción Democrática Nacional (ADN, Lista 7), Andrés Roche for PSC (Listas 6-75), and Fiorella Ycaza for PSE (Lista 17). | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4aui3Vjy8pPZk9MTfjM1ZkRXl4Hk5o832F-Q8yHB6BZNAS0c2vTBNP-Ets_Jd-lteFpoHCQs1x-UR4beAO0c3nay8_P6N9K68ONgLOgpxT0IJxEFyXwLKl3-EjisTx15FCpq0yGEFsETHBR55sZ6WVEtTbPAFS7FS7zJ4OUQV-kuDIZ9dvnwyPWwN80iKoW6nRcu-M9IS8A==\n- 2026-11-10 | A CNE-authorized poll by MR Analytica put Cynthia Viteri in first place for Mayor of Guayaquil with 25% voting intention, followed by Andrés Roche with 23%, Fiorella Ycaza with 22%, and 16% undecided. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNUd0MmQltjUdLtRPm9bUviNCWmwZz9dh_QHZTG9MrDT7U8dy0pyJu3YvbxwWdSvluXXKGQfrDjiedT0gV6lb3sdm5wN3V7DVHxGizzzBIKGkLWtMmcDTuXkeriuq-gH_kRmZzuy6d8Og14XTbyt9AA187ks4CUnU_x3OI25pqYWXXhjt6HUg7ltuMnMWZxp9TKRUsE-LaRu4ul22XKs9sHiYl5kMPbd4em7JOhLAyKe0uGurQUg==\n- 2026-11-13 | An in-person CNE-registered survey of 1,471 Guayaquil voters by Talismán and AtlasIntel (conducted 2–11 November 2026) recorded Cynthia Viteri in first place with 43.2% voting intention, ahead of Fiorella Ycaza at 24.7% and Andrés Roche at 14.1%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEllTHIUfWU82OV9RMxQh7KrwBuXBADwlszXF1bkMEl7AY8bqefRzwSiR_mGg0BfWZW1KLDiL_XRcg30I53tzAOMGK6ADUacBXqb5SOpp5gK6B2zX5RYSv_okIKgNjuGcotFg53Tp3OKeOKQ_49ToDtAg==\n- 2026-11-19 | A digital CNE-registered survey of 1,760 Guayaquil respondents by Talismán and AtlasIntel (conducted 14–19 November 2026) showed Cynthia Viteri leading with 34.6% voting intention, followed by Fiorella Ycaza with 19.3%, Andrés Roche with 10.6%, 14.7% blank/null, and 10.9% undecided. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZSWVLevU6rwfJNyP0QEQ5ksax1bP3YTD5avcqG8HiGROzczyxTLf7K5Nd5M6-GLTyCxjjACG-P3h5J-PgYeRunEOpsfZ5IFOEiVff0mK3Qb2po3wOHuY4-YDlUW0Dxsp7JudwzIarVBK6TLnrJy_hH9baTA==\n- 2026-11-19 | A CNE-authorized poll by Polidata of 887 respondents in Guayaquil placed Cynthia Viteri first with 49.60% voting intention, followed by Fiorella Ycaza at 25.31% and Andrés Roche at 9.31%. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQCGjTNwBmdKM8AC7MUGFIA1zkmLTALuaKMlndh8zr3h06wVCR_M3Xi07K50pHAUhlCgAHUE6CH06CRADWoh-A85KPgehd-rqEaLUJuq-L17EdYzFA1ABqZLcGBur5Zh-uM0DwEuntwWpKrAVyDmIZfQFU9qNP9u-qgsbty3Z-UExGbgyh4IWoXolXB6SQ_Vxy7pcKlI6MjCGws-Iv_iWKO7SDo5Orv_SYT6yPENw65DUFENlhMFQ0Z6g=\n- 2026-11-22 | Fiorella Ycaza is running for Mayor of Guayaquil on the Partido Socialista Ecuatoriano (PSE) ticket with the backing of Revolución Ciudadana after her husband, elected mayor Aquiles Álvarez, was placed in pre-trial detention nine months earlier. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNVRCQDG1CmLfKLgqimpOg51LtIMXP16fE3y9pKo5ZMnMI8AZNERmzWFn1OhnuWLFvPq58rWipkRBeEjBEZ4yc9o40m63DwE4AlFFlkuXJLuJ7hnROFjBLj-yg-Yof88J650B2C4Ads21BC5QuByJ5Hgk6NoXBiM8X2MEli31QY3W8m2YJfWE3N0ENWRoC_TaV-WjWG5WvQ1zHvHyu-0XpJX51OmJFcTWJUDFJQq3aseVN6lgzuJBmVK24U-tVyypq3rQ=\n- 2026-11-25 | The CNE confirmed that Ecuadorians will vote on Sunday, 29 November 2026, to elect 5,749 local authorities (including 222 mayors) and that the CNE Plenary ruled out using a quick count, meaning winners will be known through the official tally of votes. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQWO7zAs1OT5xj0NNzFDwWD7MYydV_v-6jBBv19r_whQNT8gK_aJw8_jhp-YU7IdHboWuBsepBGiVmgHZWWbZxEMC7IeshOmQBcI4IdfaM1sVyeGLShq-1tP8NP1LGi7HpOf6m-_dhaa6ZNFwYh1q07v5KFHoeD7OX-hhHCu1l-1b1LhteSRTvz9Bxamn8jE3Zk0hIVW9Fh_vq1nqHC6ly41eN07SZ3qOqGARGK1EwdREsQH_aRkGkfFSiAknGEIaNbwrhEo_dNNS6CGdNYg==\n- 2026-11-27 | President Daniel Noboa accompanied Cynthia Viteri at her final ADN campaign rally in Guayaquil on Thursday, 26 November 2026, right before the mandatory electoral silence period began ahead of Sunday's vote. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnfXF7K9xao-ejsNj34UFi_7kZrcw6ZW8H-UD0yEeN0_cDUHn489U5BKIEOdxJWpmnWuLyPwqZBrcp5YsvY3HMjVrDKbgQtEbPYR-eeQvzMKM4MoaeLNpzcfagJNKwLyQIWBNiAaqQHZzYQXq15KHrx1AW1_vnic905JrpnE64JwsBSl7mMuD7WIuF-jXlLNZdqHg1NS8LrVxD_fLiKnLxcuUFvXVziH71VTgQPZ8fAfYmK7z25MlmsQ==\n\nCOUNTER\nCynthia Viteri carries high negative evaluations from the final years of her 2019–2023 administration—which already resulted in her losing the 2023 election despite leading early surveys—and at least one CNE-authorized poll (MR Analytica) showed a tight three-way race with Andrés Roche and Fiorella Ycaza trailing her by only two and three percentage points. If correísta and anti-government voters rally behind Ycaza to protest the imprisonment of incumbent mayor Aquiles Álvarez and the Noboa administration's national policies, or if traditional social-christian voters consolidate late behind Roche, Viteri's plurality could be overturned on election day.",
+   "facts": [
+    {
+     "date": "2026-11-09",
+     "fact": "The National Electoral Council (CNE) published the final list of eight qualified candidates for the mayoralty of Guayaquil for the 29 November 2026 elections, including Cynthia Viteri for Acción Democrática Nacional (ADN, Lista 7), Andrés Roche for PSC (Listas 6-75), and Fiorella Ycaza for PSE (Lista 17).",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4aui3Vjy8pPZk9MTfjM1ZkRXl4Hk5o832F-Q8yHB6BZNAS0c2vTBNP-Ets_Jd-lteFpoHCQs1x-UR4beAO0c3nay8_P6N9K68ONgLOgpxT0IJxEFyXwLKl3-EjisTx15FCpq0yGEFsETHBR55sZ6WVEtTbPAFS7FS7zJ4OUQV-kuDIZ9dvnwyPWwN80iKoW6nRcu-M9IS8A=="
+    },
+    {
+     "date": "2026-11-10",
+     "fact": "A CNE-authorized poll by MR Analytica put Cynthia Viteri in first place for Mayor of Guayaquil with 25% voting intention, followed by Andrés Roche with 23%, Fiorella Ycaza with 22%, and 16% undecided.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNUd0MmQltjUdLtRPm9bUviNCWmwZz9dh_QHZTG9MrDT7U8dy0pyJu3YvbxwWdSvluXXKGQfrDjiedT0gV6lb3sdm5wN3V7DVHxGizzzBIKGkLWtMmcDTuXkeriuq-gH_kRmZzuy6d8Og14XTbyt9AA187ks4CUnU_x3OI25pqYWXXhjt6HUg7ltuMnMWZxp9TKRUsE-LaRu4ul22XKs9sHiYl5kMPbd4em7JOhLAyKe0uGurQUg=="
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "An in-person CNE-registered survey of 1,471 Guayaquil voters by Talismán and AtlasIntel (conducted 2–11 November 2026) recorded Cynthia Viteri in first place with 43.2% voting intention, ahead of Fiorella Ycaza at 24.7% and Andrés Roche at 14.1%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEllTHIUfWU82OV9RMxQh7KrwBuXBADwlszXF1bkMEl7AY8bqefRzwSiR_mGg0BfWZW1KLDiL_XRcg30I53tzAOMGK6ADUacBXqb5SOpp5gK6B2zX5RYSv_okIKgNjuGcotFg53Tp3OKeOKQ_49ToDtAg=="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "A digital CNE-registered survey of 1,760 Guayaquil respondents by Talismán and AtlasIntel (conducted 14–19 November 2026) showed Cynthia Viteri leading with 34.6% voting intention, followed by Fiorella Ycaza with 19.3%, Andrés Roche with 10.6%, 14.7% blank/null, and 10.9% undecided.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZSWVLevU6rwfJNyP0QEQ5ksax1bP3YTD5avcqG8HiGROzczyxTLf7K5Nd5M6-GLTyCxjjACG-P3h5J-PgYeRunEOpsfZ5IFOEiVff0mK3Qb2po3wOHuY4-YDlUW0Dxsp7JudwzIarVBK6TLnrJy_hH9baTA=="
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "A CNE-authorized poll by Polidata of 887 respondents in Guayaquil placed Cynthia Viteri first with 49.60% voting intention, followed by Fiorella Ycaza at 25.31% and Andrés Roche at 9.31%.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQCGjTNwBmdKM8AC7MUGFIA1zkmLTALuaKMlndh8zr3h06wVCR_M3Xi07K50pHAUhlCgAHUE6CH06CRADWoh-A85KPgehd-rqEaLUJuq-L17EdYzFA1ABqZLcGBur5Zh-uM0DwEuntwWpKrAVyDmIZfQFU9qNP9u-qgsbty3Z-UExGbgyh4IWoXolXB6SQ_Vxy7pcKlI6MjCGws-Iv_iWKO7SDo5Orv_SYT6yPENw65DUFENlhMFQ0Z6g="
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "Fiorella Ycaza is running for Mayor of Guayaquil on the Partido Socialista Ecuatoriano (PSE) ticket with the backing of Revolución Ciudadana after her husband, elected mayor Aquiles Álvarez, was placed in pre-trial detention nine months earlier.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNVRCQDG1CmLfKLgqimpOg51LtIMXP16fE3y9pKo5ZMnMI8AZNERmzWFn1OhnuWLFvPq58rWipkRBeEjBEZ4yc9o40m63DwE4AlFFlkuXJLuJ7hnROFjBLj-yg-Yof88J650B2C4Ads21BC5QuByJ5Hgk6NoXBiM8X2MEli31QY3W8m2YJfWE3N0ENWRoC_TaV-WjWG5WvQ1zHvHyu-0XpJX51OmJFcTWJUDFJQq3aseVN6lgzuJBmVK24U-tVyypq3rQ="
+    },
+    {
+     "date": "2026-11-25",
+     "fact": "The CNE confirmed that Ecuadorians will vote on Sunday, 29 November 2026, to elect 5,749 local authorities (including 222 mayors) and that the CNE Plenary ruled out using a quick count, meaning winners will be known through the official tally of votes.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQWO7zAs1OT5xj0NNzFDwWD7MYydV_v-6jBBv19r_whQNT8gK_aJw8_jhp-YU7IdHboWuBsepBGiVmgHZWWbZxEMC7IeshOmQBcI4IdfaM1sVyeGLShq-1tP8NP1LGi7HpOf6m-_dhaa6ZNFwYh1q07v5KFHoeD7OX-hhHCu1l-1b1LhteSRTvz9Bxamn8jE3Zk0hIVW9Fh_vq1nqHC6ly41eN07SZ3qOqGARGK1EwdREsQH_aRkGkfFSiAknGEIaNbwrhEo_dNNS6CGdNYg=="
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "President Daniel Noboa accompanied Cynthia Viteri at her final ADN campaign rally in Guayaquil on Thursday, 26 November 2026, right before the mandatory electoral silence period began ahead of Sunday's vote.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnfXF7K9xao-ejsNj34UFi_7kZrcw6ZW8H-UD0yEeN0_cDUHn489U5BKIEOdxJWpmnWuLyPwqZBrcp5YsvY3HMjVrDKbgQtEbPYR-eeQvzMKM4MoaeLNpzcfagJNKwLyQIWBNiAaqQHZzYQXq15KHrx1AW1_vnic905JrpnE64JwsBSl7mMuD7WIuF-jXlLNZdqHg1NS8LrVxD_fLiKnLxcuUFvXVziH71VTgQPZ8fAfYmK7z25MlmsQ=="
+    }
+   ],
+   "counter": "Cynthia Viteri carries high negative evaluations from the final years of her 2019–2023 administration—which already resulted in her losing the 2023 election despite leading early surveys—and at least one CNE-authorized poll (MR Analytica) showed a tight three-way race with Andrés Roche and Fiorella Ycaza trailing her by only two and three percentage points. If correísta and anti-government voters rally behind Ycaza to protest the imprisonment of incumbent mayor Aquiles Álvarez and the Noboa administration's national policies, or if traditional social-christian voters consolidate late behind Roche, Viteri's plurality could be overturned on election day."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:17:01Z",
+   "p": 0.71,
+   "searches": 10,
+   "sources": [
+    "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/cne-candidatos-concejales-guayaquil-urbanos-rurales-137774/",
+    "https://www.elcomercio.com/elecciones/candidatos-buscan-ganar-elecciones-seccionales-medio-procesos-judiciales/",
+    "https://www.expreso.ec/politica/elecciones-seccionales-2026-ecuador-lista-precandidatos-prefecturas-alcaldias-287419.html",
+    "https://x.com/MinMedio/status/2125790529590046880",
+    "https://www.extra.ec/noticia/guayaquil/alcaldia-guayaquil-2026-candidatos-propuestas-elecciones-seccionales-168833.html",
+    "https://x.com/contraluzec_/status/2114790289801875530",
+    "https://x.com/ladataec/status/2123538739888603386",
+    "https://www.elcomercio.com/actualidad/politica/aquiles-alvarez-votos-alcaldia-guayaquil/",
+    "https://es.wikipedia.org/wiki/Elecciones_municipales_de_Guayaquil_de_2023",
+    "https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/",
+    "https://www.teleamazonas.com/actualidad/noticias/politica/ocho-candidatos-alcaldia-guayaquil-elecciones-seccionales-132903/",
+    "https://www.elcomercio.com/actualidad/resultados-elecciones-2023-asi-guayas-voto/",
+    "https://x.com/antena3ecuador/status/2123839645104611765",
+    "https://www.primicias.ec/noticias/seccionales-2023/resultados-elecciones-alcaldes-guayaquil-actualizacion/",
+    "https://www.eldiario.ec/ecuador/aquiles-alvarez-39-y-cynthia-viteri-30-en-guayaquil-06022023/",
+    "https://fmmundo.com/notimundo/politica/elecciones-seccionales-caravanas-espectaculos-artisticos-movilizacion-digital-marcan-cierre-campana-electoral-quito-guayaquil-n90150",
+    "https://www.eluniverso.com/politica/elecciones/guayaquil-vive-los-cierres-de-campana-daniel-noboa-acompano-a-cynthia-viteri-andres-guschmer-y-otros-candidatos-de-adn-en-caravana-nota/",
+    "https://diariolosandes.com.ec/cynthia-viteri-buscara-volver-a-la-alcaldia-de-guayaquil-con-adn/",
+    "https://es.wikipedia.org/wiki/Elecciones_municipales_de_Guayaquil_de_2026",
+    "https://talismanmp.com/encuestas/",
+    "https://x.com/MinMedio/status/1622612914971475970",
+    "https://ecuadorchequea.com/estos-son-los-candidatos-que-aspiran-dirigir-los-destinos-de-guayaquil/",
+    "https://elmercuriomanta.ec/index.php/2026/11/17/elecciones-2026-quien-lidera-las-encuestas-en-quito-guayaquil-y-cuenca/",
+    "https://go.gale.com/ps/i.do?id=GALE%7CA737479099&it=r&p=IFME&sw=w&v=2.1",
+    "https://lanacion.com.ec/campana-electoral-en-ecuador-llega-a-su-fin-de-cara-a-los-comicios-seccionales-del-domingo/"
+   ],
+   "reason": "The election is locked in for 29 November and Cynthia Viteri enters it as the consistent plurality frontrunner, but the size of her lead is pollster-dependent and Guayaquil has produced double-digit polling misses before.\n\nBase rate for a fragmented eight-candidate plurality race in a large Ecuadorian city is that a candidate holding a high-single-digit to mid-teens lead in the final published surveys wins most of the time. The clearest local exception is Guayaquil 2023 itself, when the correísta challenger beat the incumbent by roughly ten points after at least one accredited exit poll had the result the other way around. That keeps the prior from being extreme.\n\nDated evidence shifts the case toward Viteri. Every survey located from early through late November places her first. A CNE-authorized Polidata study reported on 19 November gave her 49.6 % to Fiorella Ycaza’s 25.3 %. AtlasIntel’s presencial wave (fieldwork 2–11 November) had 43.2 % to 24.7 %; its later digital wave (14–19 November, n=1,760) still showed 34.6 % to 19.3 %. Late social-media trackers (Informe Confidencial and Tino, 26 November) are tighter—about 32–35 % to 26 %—but do not reverse the order. President Noboa closed the ADN campaign with her on 26 November, tying her to the national security message in a city whose sitting mayor has been detained since February. The opposition vote is split between Ycaza (PSE/correísmo) and Andrés Roche (PSC). The chance the election is not held on the 29th is negligible: the CNE calendar, campaign close, and electoral silence are all in force.\n\nThe result can still flip if the narrower trackers are closer to the truth and the 2023 pattern repeats—correísmo outperforming samples in the southern and peripheral circuits by enough to erase a six-to-nine-point gap once blanks and undecideds are removed. Silence already bars further persuasion, so any such move would have to come from turnout or from systematic poll bias rather than a new campaign event.\n\nNEW FACTS\n- 2026-11-27 | Daniel Noboa joined Cynthia Viteri’s and Andrés Guschmer’s ADN campaign close in Guayaquil on 26 November, the final legal campaign day before the 29 November vote. | https://www.elcomercio.com/elecciones/daniel-noboa-acompano-el-cierre-de-campana-de-cynthia-viteri-y-andres-guschmer-en-guayaquil/\n- 2026-11-26 | Primicias reported that sectional voting, including the Guayaquil mayoralty, runs from 07:00 to 17:00 on Sunday 29 November, with electoral silence already in effect from 00:00 on 27 November. | https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/elecciones-2026-cierre-campanas-candidatos-alcaldia-guayaquil-138089/\n- 2026-11-19 | Polidata’s CNE-authorized survey of 887 respondents put Cynthia Viteri at 49.60 %, Fiorella Icaza at 25.31 % and Andrés Roche at 9.31 % for mayor of Guayaquil. | https://tctelevision.com/lo-ultimo/noticias/encuesta-revela-intencion-de-voto-para-alcaldias-y-prefecturas-en-guayas-el-oro-y-azuay/\n- 2026-11-19 | AtlasIntel/Talismán’s digital poll (fieldwork 14–19 November, 1,760 respondents) showed Viteri at 34.6 %, Ycaza at 19.3 % and Roche at 10.6 %. | https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/\n- 2026-11-13 | The same firm’s earlier presencial poll (fieldwork 2–11 November, 1,471 respondents) had Viteri at 43.2 % and Ycaza at 24.7 %. | https://talismanmp.com/encuestas/2026-11-guayaquil-alcaldia/\n- 2026-11-26 | Accounts citing an Informe Confidencial tracking placed Viteri at 35 %, Ycaza at 26 % and Roche at 22 %. | https://x.com/MinMedio/status/2125790529590046880\n- 2026-11-26 | A Tino Electoral three-day tracking circulated the same day had Viteri at 32 %, Ycaza at 26 % and Roche at 18 %, with 13 % null or undecided. | https://x.com/EcuaElDato/status/2125742823077028329\n- 2026-11-27 | CELAG noted that the sectional elections were advanced to 29 November, that Aquiles Álvarez remains detained, and that his wife Fiorella Ycaza is the PSE candidate against Viteri. | https://www.celag.org/elecciones-seccionales-ecuador-2026/\n\nCOUNTER\nThe late trackers that put the gap at only six to nine points are the ones that matter most if house effects are large, and Guayaquil 2023 already showed correísmo beating samples and an exit poll by about ten points. A similar under-count of Ycaza in the southern circuits, plus any residual PSC defection toward Roche, is enough to erase a narrow published lead once only valid votes are counted; three days of enforced silence leave no campaign mechanism to widen it again.",
+   "facts": [
+    {
+     "date": "2026-11-27",
+     "fact": "Daniel Noboa joined Cynthia Viteri’s and Andrés Guschmer’s ADN campaign close in Guayaquil on 26 November, the final legal campaign day before the 29 November vote.",
+     "url": "https://www.elcomercio.com/elecciones/daniel-noboa-acompano-el-cierre-de-campana-de-cynthia-viteri-y-andres-guschmer-en-guayaquil/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Primicias reported that sectional voting, including the Guayaquil mayoralty, runs from 07:00 to 17:00 on Sunday 29 November, with electoral silence already in effect from 00:00 on 27 November.",
+     "url": "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/elecciones-2026-cierre-campanas-candidatos-alcaldia-guayaquil-138089/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "Polidata’s CNE-authorized survey of 887 respondents put Cynthia Viteri at 49.60 %, Fiorella Icaza at 25.31 % and Andrés Roche at 9.31 % for mayor of Guayaquil.",
+     "url": "https://tctelevision.com/lo-ultimo/noticias/encuesta-revela-intencion-de-voto-para-alcaldias-y-prefecturas-en-guayas-el-oro-y-azuay/"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "AtlasIntel/Talismán’s digital poll (fieldwork 14–19 November, 1,760 respondents) showed Viteri at 34.6 %, Ycaza at 19.3 % and Roche at 10.6 %.",
+     "url": "https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "The same firm’s earlier presencial poll (fieldwork 2–11 November, 1,471 respondents) had Viteri at 43.2 % and Ycaza at 24.7 %.",
+     "url": "https://talismanmp.com/encuestas/2026-11-guayaquil-alcaldia/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Accounts citing an Informe Confidencial tracking placed Viteri at 35 %, Ycaza at 26 % and Roche at 22 %.",
+     "url": "https://x.com/MinMedio/status/2125790529590046880"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "A Tino Electoral three-day tracking circulated the same day had Viteri at 32 %, Ycaza at 26 % and Roche at 18 %, with 13 % null or undecided.",
+     "url": "https://x.com/EcuaElDato/status/2125742823077028329"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "CELAG noted that the sectional elections were advanced to 29 November, that Aquiles Álvarez remains detained, and that his wife Fiorella Ycaza is the PSE candidate against Viteri.",
+     "url": "https://www.celag.org/elecciones-seccionales-ecuador-2026/"
+    }
+   ],
+   "counter": "The late trackers that put the gap at only six to nine points are the ones that matter most if house effects are large, and Guayaquil 2023 already showed correísmo beating samples and an exit poll by about ten points. A similar under-count of Ycaza in the southern circuits, plus any residual PSC defection toward Roche, is enough to erase a narrow published lead once only valid votes are counted; three days of enforced silence leave no campaign mechanism to widen it again."
+  }
+ ]
+}

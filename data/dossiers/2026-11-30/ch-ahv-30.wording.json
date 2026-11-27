@@ -1,0 +1,32 @@
+{
+ "claim": "Swiss voters reject the federal decree raising VAT to finance the 13th AHV pension.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:19:18Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The specified referendum must be held on 29 November 2026 (Europe/Zurich), and the official provisional result must show either that national YES votes do not exceed NO votes or that the cantonal vote in favour is 11.5 out of 23 or fewer. Either failure is enough.",
+   "decided_by": "The official provisional result published by the Federal Statistical Office (abstimmungen.admin.ch or VoteInfo) or the Federal Chancellery (admin.ch). If the official pages cannot be read, SRF or Keys"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:19:24Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The official provisional result of the 29 November 2026 Swiss federal popular vote on the federal decree of 19 June 2026 (raising VAT to fund the 13th AHV pension) shows that the measure failed to achieve either a national popular majority (Yes votes <= No votes) or a cantonal majority (cantonal votes in favor <= 11.5 out of 23).",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch), with SRF or Keystone-SDA reporting of the official provisional result as a fa"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:21:51Z",
+   "ambiguous": true,
+   "scenario": "The Sunday-evening Chancellery provisional announcement shows both majorities obtained, but before final validation the FSO dashboard corrects a half-canton so cantonal yes votes are 11.5 (or the only completed provisional figures appear after 23:59). One reader treats the first in-window announcement as locking and a later change as an excluded recount (NO); the other treats the corrected dashboard provisional result of that vote as the named source (YES).",
+   "yes_requires": "The 29 November 2026 federal popular vote on the federal decree of 19 June 2026 (additional AHV funding by raising VAT) is held that day in Europe/Zurich, and its official provisional result shows the decree fails the double majority: national yes votes do not exceed national no votes, and/or cantonal votes in favour do not exceed 11.5 of 23.",
+   "decided_by": "The FSO results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch), using the official provisional result; if those pages cannot be read, SRF or Keystone-SDA reporting "
+  }
+ ]
+}

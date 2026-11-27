@@ -1,0 +1,32 @@
+{
+ "claim": "At their meetings on Sunday 29 November 2026, OPEC+ ministers keep oil production targets for January–March 2027 unchanged from the levels in force for December 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:18:23Z",
+   "ambiguous": true,
+   "scenario": "A release explicitly extends all seven listed targets unchanged into January but says nothing about other participants. One reader could count the unchanged extension as YES because no other change was announced; another could resolve NO because the criterion requires the release to state that no other participant's level changes.",
+   "yes_requires": "An OPEC+ production decision announced on 29 November 2026 Vienna time must keep the seven listed countries at their specified December 2026 levels for January 2027 and for any February or March 2027 targets it sets. No other participating country's production level may change for January–March, including through new baselines. An unchanged extension qualifies, and compensation schedules do not co",
+   "decided_by": "An official press release dated 29 November 2026 on opec.org from any OPEC+ meeting held that day. If opec.org cannot be read, Reuters, TASS, or Bloomberg reporting of the statement text decides. If n"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:18:32Z",
+   "ambiguous": true,
+   "scenario": "The December 2026 levels listed in the criterion (e.g., Saudi Arabia 10.478 mb/d, Russia 9.949 mb/d) are the official required production levels excluding the 2.2 mb/d additional voluntary cuts, whereas actual December 2026 targets in force are lower (e.g., Saudi Arabia at ~8.98 mb/d) or partially unwound. Furthermore, the United Arab Emirates (one of the 'Great 8' voluntary cut countries) is omitted from the list of seven countries. If the 29 November 2026 press release announces an extension of the actual voluntary cut levels in force for December 2026 (publishing a table with lower numbers ",
+   "yes_requires": "An OPEC press release on opec.org dated 29 November 2026 (published by 23:59 Vienna time) sets the required production for January 2027 (and any other decided months in Jan-Mar 2027) for Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, and Oman to their exact specified December 2026 levels, and makes no changes to any other participating country's production level for January-March 2027 (e",
+   "decided_by": "An official OPEC press release on opec.org (or Reuters, TASS, or Bloomberg reporting of the statement text if opec.org is inaccessible)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:20:00Z",
+   "ambiguous": true,
+   "scenario": "The 29 Nov release sets only January 2027 required production for the seven countries equal to those December levels and is silent on February–March 2027 and on other members. One reader treats a January-only decision plus silence as no change and resolves YES; another finds the required statement of no change for other countries across January–March missing, so YES fails, while none of the listed NO triggers (a raise or cut, a new baseline, or no January decision by 23:59 Vienna) clearly applies.",
+   "yes_requires": "An OPEC press release on opec.org dated 29 Nov 2026, from an OPEC+ meeting held that day and announced by 23:59 Vienna time, sets the seven named countries' required production for January 2027—and for any other month of January–March 2027 it decides—equal to the stated December 2026 levels (Saudi Arabia 10.478, Russia 9.949, Iraq 4.431, Kuwait 2.676, Kazakhstan 1.628, Algeria 1.007, Oman 0.841 mb",
+   "decided_by": "The text of that OPEC press release on opec.org; if opec.org cannot be read, Reuters, TASS or Bloomberg reporting of the text of the OPEC statement."
+  }
+ ]
+}

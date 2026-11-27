@@ -1,0 +1,32 @@
+{
+ "claim": "At their meetings on Sunday 29 November 2026, OPEC+ ministers set oil production levels for a period that runs beyond the first quarter of 2027.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:19:09Z",
+   "ambiguous": true,
+   "scenario": "Ministers announce qualifying targets at a press conference before the deadline, but OPEC posts the release after midnight with a 29 November date. One reader could count the timely announcement and the release's stated date; another could require the release itself to have been public during the event window.",
+   "yes_requires": "By 23:59 Vienna time (UTC+1) on 29 November 2026, a production decision from at least one listed meeting that day must be announced and stated in an OPEC press release dated 29 November. It must specify crude oil production levels, required production, or targets for at least one OPEC+ participant for a stated period covering at least one month after March 2027. Unchanged levels and decisions take",
+   "decided_by": "The text of a qualifying 29 November 2026 press release on opec.org. If opec.org cannot be read, Reuters, TASS, or Bloomberg reporting of the text of the OPEC statement decides."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:19:14Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "An official press release on opec.org dated 29 November 2026 (published by 23:59 Vienna time) from any of that day's OPEC/OPEC+ meetings must explicitly state crude oil production levels, required production, or targets (new or unchanged, for the whole group, the subset of seven countries, or individual countries) that apply to at least one specific month or defined period after March 2027.",
+   "decided_by": "Official OPEC press releases on opec.org (or Reuters, TASS, or Bloomberg reporting of the statement text if opec.org is unavailable)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:20:47Z",
+   "ambiguous": true,
+   "scenario": "The 29 Nov release sets required production only through March 2027 but also includes a compensation or adjustment table with volumes for April 2027 or later. One reader treats that table as required production applying after March 2027; the other treats it as a repayment timetable, not a production-level decision for a period beyond Q1 2027, and resolves NO.",
+   "yes_requires": "An opec.org press release dated 29 Nov 2026 from a listed meeting that day (OPEC and non-OPEC Ministerial Meeting, JMMC, the named seven-country meeting, or an OPEC Conference) states crude-oil production levels, required production, or production targets, new or unchanged, for the group, the seven, or individual OPEC+ countries, that apply to at least one month after March 2027, and that decision",
+   "decided_by": "The text of the OPEC press release on opec.org; if opec.org cannot be read, Reuters, TASS, or Bloomberg reporting of the text of the OPEC statement."
+  }
+ ]
+}

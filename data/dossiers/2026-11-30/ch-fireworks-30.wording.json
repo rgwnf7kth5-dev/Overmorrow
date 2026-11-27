@@ -1,0 +1,32 @@
+{
+ "claim": "The popular initiative to restrict fireworks is accepted by both a majority of voters and a majority of cantons.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:18:14Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The federal vote on the initiative must be held on 29 November 2026 (Europe/Zurich), and the official provisional result must show more YES than NO votes nationwide and more than 11.5 of the 23 cantonal votes in favour. A tie or failure to meet either majority means NO.",
+   "decided_by": "The official provisional result published by the Federal Statistical Office on abstimmungen.admin.ch or VoteInfo, or by the Federal Chancellery on admin.ch. If the official pages cannot be read, SRF o"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:18:17Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The federal popular vote on the popular initiative 'For a restriction on fireworks' must be held on 29 November 2026 (Europe/Zurich), and the official provisional result must show both more 'yes' than 'no' votes nationally and more than 11.5 of 23 cantonal votes in favour.",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch), or SRF or Keystone-SDA reporting of the official provisional result if the of"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:19:40Z",
+   "ambiguous": true,
+   "scenario": "The vote is held on 29 November 2026, but the official provisional result confirming both majorities is published only after 23:59 Europe/Zurich. One reader resolves YES because the criterion ties YES to that result and treats only the vote date as time-critical; the other resolves NO because the event window says the claim is NO if the event has not happened by 23:59.",
+   "yes_requires": "The federal popular vote on the initiative 'For a restriction on fireworks' is held on 29 November 2026 (Europe/Zurich), and its official provisional result shows more yes than no votes nationally and more than 11.5 of 23 cantonal votes in favour.",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch); if those pages cannot be read, SRF or Keystone-SDA reporting of that official"
+  }
+ ]
+}

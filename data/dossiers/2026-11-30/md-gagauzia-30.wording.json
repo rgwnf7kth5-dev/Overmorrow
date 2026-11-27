@@ -1,0 +1,32 @@
+{
+ "claim": "Alexandr Stoianoglo wins the second round of the election for bashkan (governor) of Gagauzia on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:19:48Z",
+   "ambiguous": true,
+   "scenario": "In a close race, the CEC and the Gagauz electoral council could publish preliminary snapshots that both meet the 95% threshold but show different leaders because they include different sets of polling-station protocols. If no final CEC results are available, the criterion does not say which preliminary snapshot takes precedence.",
+   "yes_requires": "The runoff must be held on 29 November 2026 within the stated Europe/Chisinau event window and must not be declared invalid. Stoianoglo must have more valid votes than Fiodor Gagauz in official preliminary results with at least 95% of polling-station protocols processed, unless final CEC results are available when the resolver reads, in which case those results control.",
+   "decided_by": "Final results from Moldova’s CEC take precedence. Otherwise, qualifying preliminary results from the CEC or the Central Electoral Council of Gagauzia decide. If the CEC sites cannot be read, reporting"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:19:57Z",
+   "ambiguous": true,
+   "scenario": "In a very close race, preliminary results at 95% of protocols processed might show one candidate leading while preliminary results at 100% of protocols processed (published before the official 'final results' are certified) show the other candidate leading; the criterion does not specify a fixed point in time for when the resolver reads the preliminary count. Additionally, the event window requires the event to happen before 23:59 on 29 November 2026, which could be interpreted by one reader as just the voting taking place and by another as requiring the 95% count threshold to be published bef",
+   "yes_requires": "The second round of the Bashkan election must be held on 29 November 2026 (Europe/Chisinau), not be declared invalid, and published preliminary results (with at least 95% of polling-station protocols processed) or final results must show Alexandr Stoianoglo with more valid votes than Fiodor Gagauz.",
+   "decided_by": "Moldova's Central Electoral Commission (CEC, a.cec.md / pv.cec.md) or the Central Electoral Council of Gagauzia, or if those sites cannot be read, reporting of the CEC count by Logos Press, Moldpres, "
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:21:14Z",
+   "ambiguous": true,
+   "scenario": "The round is held on 29 Nov but fewer than 95% of protocols are in by 23:59 Europe/Chisinau; the next day the count passes 95% and Stoianoglo leads, and the round is not declared invalid. One reader applies the window sentence and resolves NO because no qualifying result existed inside the window; another applies the pending rule and resolves YES from the later publication of the 29 Nov count.",
+   "yes_requires": "The Bashkan second round is held on 29 Nov 2026 (Europe/Chisinau) and is not declared invalid, and preliminary results of that round from Moldova’s CEC or Gagauzia’s Central Electoral Council—with at least 95% of polling-station protocols processed—or final CEC results if already published, show Alexandr Stoianoglo with more valid votes than Fiodor Gagauz.",
+   "decided_by": "Moldova’s Central Electoral Commission (a.cec.md / pv.cec.md), with final CEC results taking precedence if published before resolution; otherwise the Central Electoral Council of Gagauzia; if the CEC "
+  }
+ ]
+}

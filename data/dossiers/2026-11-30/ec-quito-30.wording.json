@@ -1,0 +1,32 @@
+{
+ "claim": "Pabel Muñoz wins the mayoralty of Quito in Ecuador's sectional elections on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:20:21Z",
+   "ambiguous": true,
+   "scenario": "If the CNE portal is unreadable and there is no proclamation, Primicias could report Muñoz leading at 91% processed while Teleamazonas reports another candidate leading at 96%. Both reports meet the threshold, but the criterion does not say whether to use the first qualifying count, the most complete count, or a preferred outlet.",
+   "yes_requires": "The Quito mayoral election must be held within the stated 29 November 2026 window in America/Guayaquil. Pabel Muñoz must lead in valid votes in the CNE count once at least 90% of tally sheets are processed, unless a CNE proclamation issued before the resolver reads names the winner and takes precedence.",
+   "decided_by": "The CNE's official proclamation takes precedence if issued before the resolver reads. Otherwise, the CNE's provisional results portal or its own announcement decides. If the portal cannot be read, Pri"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:20:31Z",
+   "ambiguous": true,
+   "scenario": "The vote lead changes between the time 90% of tally sheets are processed and 100% are processed (or before an official proclamation is made); because the criterion relies on what the count shows 'when the resolver reads' rather than at a fixed timestamp or exact milestone, two readers checking at different times after the 90% threshold is met would resolve the claim differently.",
+   "yes_requires": "The Quito mayoral election is held on 29 November 2026 (America/Guayaquil) within the event window, and the CNE officially proclaims Pabel Muñoz the winner or its provisional results (with at least 90% of tally sheets processed) show him with the most valid votes when the resolver checks.",
+   "decided_by": "The National Electoral Council (CNE) via its official proclamation, results portal (resultados.cne.gob.ec), or announcements, with Primicias, El Comercio, or Teleamazonas reporting of the CNE count as"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:21:45Z",
+   "ambiguous": true,
+   "scenario": "At 23:59 America/Guayaquil on 29 Nov 2026 the election has been held but fewer than 90% of actas are processed and there is no proclamation. One reader applies the window rule and resolves NO because a win was not established inside the window; another applies the pending rule, waits, and can resolve YES if a later CNE reading at 90% shows Muñoz with the most valid votes.",
+   "yes_requires": "The Quito mayoral election is held on 29 Nov 2026 (America/Guayaquil), and before the resolver reads either the CNE proclaims Pabel Muñoz the winner or CNE provisional results for mayor of the Metropolitan District of Quito (resultados.cne.gob.ec or a CNE announcement), with at least 90% of actas processed, show him with the most valid votes. If that portal cannot be read, the same CNE count as re",
+   "decided_by": "The CNE, via a proclamation if one exists before the reading, otherwise its provisional count; if the CNE portal cannot be read, Primicias, El Comercio, or Teleamazonas reporting of that CNE count."
+  }
+ ]
+}

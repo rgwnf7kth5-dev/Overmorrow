@@ -490,6 +490,21 @@
               "p_held": 0.995,
               "p_if_held": 0.84,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:24Z",
+                  "p_blind": 0.78,
+                  "p": 0.84,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         },
@@ -710,6 +725,21 @@
               "p_held": 0.995,
               "p_if_held": 0.848,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:31Z",
+                  "p_blind": 0.78,
+                  "p": 0.76,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -932,6 +962,50 @@
               "p_held": 0.658,
               "p_if_held": 0.561,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:29Z",
+                  "p_blind": 0.58,
+                  "p": 0.58,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:16:05Z",
+                  "p": 0.68,
+                  "searches": 6,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/il-utj-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:16:54Z",
+                  "p": 0.65,
+                  "searches": 6,
+                  "sources": 10,
+                  "trace": "data/dossiers/2026-11-30/il-utj-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:17:51Z",
+                  "p": 0.56,
+                  "searches": 13,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/il-utj-30.research.json"
+                }
+              ]
             }
           }
         }
@@ -1190,6 +1264,21 @@
               "p_held": 0.995,
               "p_if_held": 0.523,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:22Z",
+                  "p_blind": 0.56,
+                  "p": 0.54,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         },
@@ -1420,7 +1509,49 @@
                 "steps": 7,
                 "searches": 2,
                 "trace": "data/dossiers/2026-11-30/ch-fireworks-30.belief.json"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:44Z",
+                  "p_blind": 0.78,
+                  "p": 0.85,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:12:21Z",
+                  "p": 0.94,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/ch-fireworks-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:13:13Z",
+                  "p": 0.9,
+                  "searches": 14,
+                  "sources": 24,
+                  "trace": "data/dossiers/2026-11-30/ch-fireworks-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:14:32Z",
+                  "p": 0.83,
+                  "searches": 11,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/ch-fireworks-30.research.json"
+                }
+              ]
             }
           }
         }
@@ -1652,6 +1783,21 @@
                 "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Faces-Growing-Pressure-As-Iraq-Pushes-for-Higher-Quota.html",
                 "https://oilprice.com/Latest-Energy-News/World-News/US-Pushed-Iraq-and-Venezuela-to-Consider-Quitting-OPEC-Sources-Say.html"
               ]
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:08:29Z",
+                  "p_blind": 0.88,
+                  "p": 0.88,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         },
@@ -1843,6 +1989,21 @@
               "p_held": 0.95,
               "p_if_held": 0.384,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:29Z",
+                  "p_blind": 0.65,
+                  "p": 0.65,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2097,6 +2258,21 @@
               "p_held": 0.995,
               "p_if_held": 0.862,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:01Z",
+                  "p_blind": 0.9,
+                  "p": 0.91,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -2300,7 +2476,22 @@
             },
             "calibrated": null,
             "combined": 0.578,
-            "spread": 0.03
+            "spread": 0.03,
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:05Z",
+                  "p_blind": 0.54,
+                  "p": 0.57,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
+            }
           }
         }
       ]
@@ -2829,6 +3020,50 @@
                 "https://a.cec.md/ro/pe-29-noiembrie-2026-va-avea-loc-turul-al-2781_120791.html",
                 "https://radiomoldova.md/p/12454"
               ]
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:09Z",
+                  "p_blind": 0.62,
+                  "p": 0.68,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:13:56Z",
+                  "p": 0.75,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/md-gagauzia-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:14:21Z",
+                  "p": 0.58,
+                  "searches": 12,
+                  "sources": 23,
+                  "trace": "data/dossiers/2026-11-30/md-gagauzia-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:16:20Z",
+                  "p": 0.55,
+                  "searches": 15,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/md-gagauzia-30.research.json"
+                }
+              ]
             }
           }
         }
@@ -3096,6 +3331,50 @@
               "p_held": 0.988,
               "p_if_held": 0.772,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:04Z",
+                  "p_blind": 0.78,
+                  "p": 0.72,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:15:01Z",
+                  "p": 0.9,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/ec-guayaquil-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:15:27Z",
+                  "p": 0.8,
+                  "searches": 6,
+                  "sources": 14,
+                  "trace": "data/dossiers/2026-11-30/ec-guayaquil-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:17:01Z",
+                  "p": 0.71,
+                  "searches": 10,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/ec-guayaquil-30.research.json"
+                }
+              ]
             }
           }
         },
@@ -3301,6 +3580,21 @@
               "p_held": 0.988,
               "p_if_held": 0.484,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:20Z",
+                  "p_blind": 0.58,
+                  "p": 0.46,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3512,6 +3806,21 @@
               "p_held": 0.855,
               "p_if_held": 0.965,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:30Z",
+                  "p_blind": 0.88,
+                  "p": 0.85,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -3753,6 +4062,21 @@
               "p_held": 0.995,
               "p_if_held": 0.692,
               "p_if_not_held": 0
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:39Z",
+                  "p_blind": 0.7,
+                  "p": 0.68,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -4038,6 +4362,21 @@
               "q50": 40.7,
               "q90": 46.7,
               "note": "national yes share (% of valid votes) given by each forecaster beside its probability, kept in case the morning reframes the claim as an interval (open-question rule)"
+            },
+            "shadow": {
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:47Z",
+                  "p_blind": 0.96,
+                  "p": 0.96,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ]
             }
           }
         }
@@ -4305,7 +4644,49 @@
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-30/us-ng25-30.belief.json",
                 "note": "searches capped at 3 (config 6) to keep the morning reserve"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:09:38Z",
+                  "p_blind": 0.52,
+                  "p": 0.55,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:10:39Z",
+                  "p": 0.57,
+                  "searches": 7,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/us-ng25-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:10:32Z",
+                  "p": 0.55,
+                  "searches": 2,
+                  "sources": 5,
+                  "trace": "data/dossiers/2026-11-30/us-ng25-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:11:43Z",
+                  "p": 0.52,
+                  "searches": 14,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/us-ng25-30.research.json"
+                }
+              ]
             }
           }
         }
@@ -4540,7 +4921,49 @@
                 "searches": 3,
                 "trace": "data/dossiers/2026-11-30/cz-minar-30.belief.json",
                 "note": "the researcher found no report of the promise in its three searches (the only source is a podcast)"
-              }
+              },
+              "external": [
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:10:01Z",
+                  "p_blind": 0.8,
+                  "p": 0.78,
+                  "inputs": [
+                    "dossier",
+                    "signals"
+                  ]
+                }
+              ],
+              "research": [
+                {
+                  "provider": "openai",
+                  "model": "gpt-6.2-sol",
+                  "at": "2026-11-27T19:11:00Z",
+                  "p": 0.88,
+                  "searches": 5,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/cz-minar-30.research.json"
+                },
+                {
+                  "provider": "google",
+                  "model": "gemini-4-argon",
+                  "at": "2026-11-27T19:13:25Z",
+                  "p": 0.85,
+                  "searches": 22,
+                  "sources": 12,
+                  "trace": "data/dossiers/2026-11-30/cz-minar-30.research.json"
+                },
+                {
+                  "provider": "xai",
+                  "model": "grok-4.7",
+                  "at": "2026-11-27T19:12:12Z",
+                  "p": 0.74,
+                  "searches": 15,
+                  "sources": 25,
+                  "trace": "data/dossiers/2026-11-30/cz-minar-30.research.json"
+                }
+              ]
             }
           }
         }
@@ -4900,5 +5323,72 @@
       "why": "after E+2; diary",
       "topic": "politics"
     }
-  ]
+  ],
+  "external_run": {
+    "at": "2026-11-27T19:23:40Z",
+    "providers": [
+      "openai gpt-6.2-sol",
+      "google gemini-4-argon",
+      "xai grok-4.7"
+    ],
+    "binary_claims": 17,
+    "forecasts": 17,
+    "contested": [
+      "us-ng25-30",
+      "cz-minar-30",
+      "ch-fireworks-30",
+      "md-gagauzia-30",
+      "ec-guayaquil-30",
+      "il-utj-30"
+    ],
+    "research": 18,
+    "wording_flags": [
+      {
+        "claim": "opec-q1-30",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-30/opec-q1-30.wording.json"
+      },
+      {
+        "claim": "md-gagauzia-30",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-30/md-gagauzia-30.wording.json"
+      },
+      {
+        "claim": "ec-guayaquil-30",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-30/ec-guayaquil-30.wording.json"
+      },
+      {
+        "claim": "ec-quito-30",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-30/ec-quito-30.wording.json"
+      },
+      {
+        "claim": "si-ljubljana-30",
+        "flagged_by": [
+          "openai",
+          "google",
+          "xai"
+        ],
+        "file": "data/dossiers/2026-11-30/si-ljubljana-30.wording.json"
+      }
+    ],
+    "failed": []
+  }
 }

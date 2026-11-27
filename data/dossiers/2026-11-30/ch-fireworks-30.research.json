@@ -1,0 +1,208 @@
+{
+ "claim": "The popular initiative to restrict fireworks is accepted by both a majority of voters and a majority of cantons.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:12:21Z",
+   "p": 0.94,
+   "searches": 7,
+   "sources": [
+    "https://www.bk.admin.ch/dam/en/sd-web/KYXe43NjDhNT/The%20Swiss%20Confederation.%20A%20brief%20guide%202026.pdf?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.srf.ch/news/zweite-srg-umfrage-feuerwerksinitiative-ja-anteil-schrumpft-erfolgschancen-nicht",
+    "https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/",
+    "https://www.admin.ch/en/popular-vote-on-29-november-2026",
+    "https://www.admin.ch/de/volksabstimmung-vom-29-november-2026",
+    "https://www.admin.ch/de/feuerwerksinitiative",
+    "https://www.admin.ch/en/popular-votes",
+    "https://www.admin.ch/en/popular-initiative-for-a-restriction-on-fireworks",
+    "https://votations.admin.ch/overview/2026-11-29",
+    "https://www.admin.ch/en/upcoming-federal-popular-votes",
+    "https://statistik.admin.ch/de/news/2026-0369",
+    "https://votations.admin.ch/en/details?proposalId=6823",
+    "https://votations.admin.ch/details?proposalId=6822",
+    "https://statistik.admin.ch/rm/news/2026-0369",
+    "https://www.uvek.admin.ch/de/abstimmungen",
+    "https://www.bk.admin.ch/dam/de/sd-web/LSrYbwbuTrxy/BAR_Erlaeuterungen_Nov26_DE_v10.pdf",
+    "https://www.admin.ch/dam/de/sd-web/HXhFMFWOaa6u/BAR_Erlaeuterungen_Nov26_DE_v10.pdf?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://www.bk.admin.ch/dam/it/sd-web/LSrYbwbuTrxy/BAR_Erlaeuterungen_Nov26_IT_v4.pdf",
+    "https://www.efd.admin.ch/dam/de/sd-web/txwWkgSPXcpj/bund-kurz-erklaert-2026-de.pdf",
+    "https://www.srf.ch/news/abstimmung-feuerwerksinitiative",
+    "https://www.srf.ch/news/auf-einen-blick-die-feuerwerksinitiative-in-kuerze",
+    "https://swissvotes.ch/vote/691.00",
+    "https://www.easyvote.ch/_Resources/Persistent/4/d/4/0/4d408a322af4b67d949dc517cce5391b9343f581/GT_Feuerwerksinitiative_DE.pdf",
+    "https://www.uvek.admin.ch/de/feuerwerksinitiative",
+    "https://www.admin.ch/de/feuerwerksinitiative?trk=article-ssr-frontend-pulse_little-text-block"
+   ],
+   "reason": "**Base rate.** The Federal Chancellery’s 2026 guide records 26 accepted federal popular initiatives out of 237 put to a vote, about 11%. That is the starting point for an initiative before considering its polling. ([bk.admin.ch](https://www.bk.admin.ch/dam/en/sd-web/KYXe43NjDhNT/The%20Swiss%20Confederation.%20A%20brief%20guide%202026.pdf?trk=article-ssr-frontend-pulse_little-text-block))\n\n**What moves this case.** Three November polls move it sharply toward YES: gfs.bern measured 63% support, LeeWas 62%, and YouGov 59%. The support was not confined to cities: gfs.bern found 59% support in rural communities and a Yes majority in all three language regions, while YouGov’s canton-level model showed Yes ahead almost everywhere. That geographic breadth matters more for the double majority than another point or two in the national polls. ([srf.ch](https://www.srf.ch/news/zweite-srg-umfrage-feuerwerksinitiative-ja-anteil-schrumpft-erfolgschancen-nicht?utm_source=openai))\n\n**What could go wrong.** Support fell six points between gfs.bern’s two waves, and the November 27 reporting still described an active No campaign backed by the Federal Council and Parliament. A further swing concentrated in smaller cantons could cost the initiative the cantonal majority even if it wins nationally. I put the chance of the vote not taking place on November 29 below 1%: the Federal Statistical Office has scheduled live reporting from noon, and the November 27 coverage still confirms the date. ([srf.ch](https://www.srf.ch/news/zweite-srg-umfrage-feuerwerksinitiative-ja-anteil-schrumpft-erfolgschancen-nicht?utm_source=openai))\n\nNEW FACTS\n- 2026-11-17 | YouGov measured 59% Yes and 36% No nationally, and its canton-level model showed Yes ahead in almost all cantons. | https://yougov.com/de-de/artikel/56001-fairness-initiative-bricht-ein-kriegsmaterialgesetz-bleibt-offen-wie-will-die-schweiz-am-29-november-abstimmen\n- 2026-11-18 | SRF reported that gfs.bern measured 63% Yes and 35% No, with Yes down six percentage points from the first wave. | https://www.srf.ch/news/zweite-srg-umfrage-feuerwerksinitiative-ja-anteil-schrumpft-erfolgschancen-nicht\n- 2026-11-18 | LeeWas measured 62% Yes, 37% No and 1% undecided in its November 11–12 survey. | https://leewas.ch/wp-content/uploads/2026/11/Bericht_Welle_2_Adobe.pdf\n- 2026-11-19 | The Federal Statistical Office announced live reporting from noon on November 29 through its results dashboard and VoteInfo. | https://statistik.admin.ch/de/news/2026-0369\n- 2026-11-27 | Le Monde confirmed the November 29 ballot date and reported that the Federal Council and Parliament recommended rejection. | https://www.lemonde.fr/international/article/2026/11/27/en-suisse-un-scrutin-qui-sent-la-poudre_6815692_3210.html\n\nCOUNTER  \nThe strongest case for NO is that the decline in support continued after polling ended, particularly in smaller conservative cantons where opponents could argue that local restrictions were enough. If enough of those cantons tipped to No, the initiative could win the national vote and still fail. ([cockpit.gfsbern.ch](https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/))",
+   "facts": [
+    {
+     "date": "2026-11-17",
+     "fact": "YouGov measured 59% Yes and 36% No nationally, and its canton-level model showed Yes ahead in almost all cantons.",
+     "url": "https://yougov.com/de-de/artikel/56001-fairness-initiative-bricht-ein-kriegsmaterialgesetz-bleibt-offen-wie-will-die-schweiz-am-29-november-abstimmen"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "SRF reported that gfs.bern measured 63% Yes and 35% No, with Yes down six percentage points from the first wave.",
+     "url": "https://www.srf.ch/news/zweite-srg-umfrage-feuerwerksinitiative-ja-anteil-schrumpft-erfolgschancen-nicht"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "LeeWas measured 62% Yes, 37% No and 1% undecided in its November 11–12 survey.",
+     "url": "https://leewas.ch/wp-content/uploads/2026/11/Bericht_Welle_2_Adobe.pdf"
+    },
+    {
+     "date": "2026-11-19",
+     "fact": "The Federal Statistical Office announced live reporting from noon on November 29 through its results dashboard and VoteInfo.",
+     "url": "https://statistik.admin.ch/de/news/2026-0369"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Le Monde confirmed the November 29 ballot date and reported that the Federal Council and Parliament recommended rejection.",
+     "url": "https://www.lemonde.fr/international/article/2026/11/27/en-suisse-un-scrutin-qui-sent-la-poudre_6815692_3210.html"
+    }
+   ],
+   "counter": "The strongest case for NO is that the decline in support continued after polling ended, particularly in smaller conservative cantons where opponents could argue that local restrictions were enough. If enough of those cantons tipped to No, the initiative could win the national vote and still fail. ([cockpit.gfsbern.ch](https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:13:13Z",
+   "p": 0.9,
+   "searches": 14,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMD9iJw4ReHhTlIzoMRmfUYFQP6402TbmXl8VtH9kCZsTVNJYR4fG-IBJduPpU12qJYtmboNTPzMkDbZJrXPq1fI9O8Q5YnD4xZbbLUgpvFerJxYK957AQ3xDBJH7Qzxg7JNzLtI0ejrWbC8doTPa2OArHeqewl70KkjQTar0sG5ksQpMy9iT0",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0upN2n9oosNrsVczd0Xud1G8Uly60r-tZ2e5fS8QTqRYnbAAWK2yuZnVrpnifa6RBA8f_6BN_RJu5oUDaUpX0FNxkRLY0MaliZa2mHEWqpatxYZgXY3ITsQxfscY54HpIqUK2N_0JZAlD",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHfDYE5oKa9RLBOtivT-quRnkjl2dJefj_60XtA0YlRbD60f4yqwZInViVJ5iejNQoKuu6rZsV8ve2t4TcNdwnzjX2Y31hEbSU60YOCP5CpLoMFlqb5tEQiZq2RPkHDSFsY3fzw4o=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElIz_zEwVijuffl2fIzhyZMQoz6lOLcGUfUWqTKv-bMPXgg7pFwUG3LwNuG5B0h8ifGwEvuPF2wcscDE2GqI-djF3z1zLAZ3iih6trasUD__5ER4Threc6Qd5pwc5CAmBbjar3cIlwFTa5H9nxtChYcN4FAfQZaJNtsrE5EewbT-URfiQpbTuCPv90Bk7yjKMPHCuCwP2U7cUZqJzaorYQf3dubU6zAw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSawJaKx0reARWZSnTx0tZz1MVz6FV5j50veZCZm9qQYPtlKC4SIp8rwpmuAlGHAvtwxS8v-5LhiKmqeAu8V-hpgYA0lODRGkNnwDIH7kO3gqRQeW4H2uiLOTKg_fACGa65vh3Hnd9IZkz7xOpqg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjVz-qa7Q1IVbi1LbxOJ9-VmhoZTHasQlfUEpKFY8FZstL8Y7sxXiGk3siphx9IjWkt7wzHNp7nHLTPtnlsfmAkP-6ZE4vktYNJdJ1MQKg_6gNvpYfJCuxqLFGVtB_Y2AHWM57E8Pe4G-eNqrGncJBKvw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-3jCPP3VcadPc2_LB1pYb5ZZhR6yxglVTdjI3ZNyrXEq7M0k9YVduDw2AySaq-SNfFpnXbH1pPzu97KelOfZ6kO0OXL1IGFSX8mvSTP9FnMA4F1Vdr1uplZA-OJwdZHp7LihpcDtO2LTY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGusLo-PePb9pVPlX5QHriWL_Nrd5GZVydaS-CJ2Z3u-lgB_q1XgWMUNZe64XlSdq9GRjbFtUlmefHPa-_vDhrkXGZiGoxexbat38NGgfse9w6YLTFnQBFJdQPcguzLZkkdEwHi6A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0Huyut_9igsYHxEYKXvS-j9mRAA1XtYwIlGuTU-l5maX5NH1sjtw8wQ82INHZoYIeArqt2BzVfaJhfrAEvbZHhEMjj4CT53dtn_RXVTYV3k4xyzM6xmJcHr23C25dccaBmbJRU9xXBq_dzVHXeELEEXyKEsK6pVOBQLDTCQRFQUWA6J5vmBd9uppeLP-emlF6Bka1F_dfD2HdImc05Pip1O4z468h21G29_cA6l0AQ9RtG79S_i4gOImPjE8fX0QAmUBo8Rh8dQ1bW3A=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9EjgNFatflV7Hda6lSIRVIN6N0mOLaqdBp4KBpgJ8RHP6fgcFnwlP827xtX5M2OMcFvYcd8lvJ_f6oURaLWx-kBJmMS3Pn-tmWFVSf5BULbSaBBqk1BZioAwD-58XSQftr7FaJcden9wGj7FaaPZUFBCTwmiKWB3k15hfV0Ih6hLGYDmlAI0PW8gjQ2-VdqBawQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPDWAIxbXi2HW-tCSJrRwhuVXTY83ld7VmNzf98EKWuGFR-mGcHtWb0lUixvkpo3KCm-iIBmguy9lnrCJewnONkH3vhws7Vbdn2RNK6mk26A-B6AENsFp5yrqbM-6Np9ZXOduKJdM5UUvGfPR2Bc0YarLRZczXeAIWVMyf",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbFD89jo8YJQclvDF2hfGr-D39svOMK9dUewGXcCRb2F9Oet-AtHqOOWumhw6LH26JHzjt-l3hcQ_9FGnvUQocoHcG65Mfjv7qaD37xG01jVZpIlThMNXv0UJMPjNpXrpSG-QJh9xkOVA71driBQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEURXW4VxuMYxLuf7BQia1dZzCapz-x4DXt0cVSl7Kc1hVQ6i8Qqzi_tDkcnO0xU8AsaoeJzeKdTnkuLrY8kl3Q2LJa1B4cOwYXo-95jD0JXCthYqyW35l7SbKOS_Qo_2v6wif1txLejaCuJTb0iJfrkuU7xNoxQEv96_LnoJ5dFy4q6omZVzT9JXXA6R45weHlPV4L46iTtVr2mU-il4zd0yWLdAe9AWxs",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbKkbDJAk600lCNVUUxhIcCVAAwob7CvlAPvJtCgzutvxaNYE90yo1F0hjTguATAlU4DDqPxc8CrK1zZAdu18iBzQOsd-FTCagMlazFX3KBPFIN5c_j5p05W6UkMGWNN5_22SjavOLrHT0A4JhdIptaR489E0HRXFQBAsNwbuLg5cVdVihyQNHidYwjw7gKToO",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_D7TKjVTKQIUX96uUEVTVYbPXX4-graK-j6drdMtmGvXGYmdoGXLaf0ehiOBFw_-a-b5mRpoZcFAZVEAbkgQ5hsJcVjhMzmccIbIkvAg3Y310vq-S-zrDU9bwqxAVPJ0vQwh0ns01d5Mvp4STXWzvSjjr5ZHXL-vTUaqkEUC7pC-hOslHXKiCwWdk4FtEfxnx",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZhrYW5_2Q_jVMUZIMD5JT3gTdvgM3CHE4cvWuTSx_dcIH1ESa8mrZwE2cTJ-g3wdyXvGuus7BiESlNbKOhvMF5LWsLuvATAmFg5P0Zr_NHfDkJKGtR9l7D7TOGMnXAOVwRMqwMJhHg8UQrX9O07XjP-9_ddXXDt0IMp6WpGalD4fuIuOaOlOEUy7sNk5oZRZqyGI4uI83muqyhe-waxw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDDxd2qtNoxcnHvTeFQiPQhXFzUd3ORExDJ0dv7cFpdqrJdaDbtj8kc2TLR6FbNR5yP74sGg60UGBeiAQzNZdnCiv1QjnMoQtAo25d3x1S27vf_10pgW1bbf_DS5uJ6kzHb1B5upVmLJI3EMJOZpHePGehJFCtLlD5iwyegu0XYFVw5aXQyM4q2kU-ndk-jthmbqqjq5U=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoDAebhcT1hkn7vhzat1zQHmv1boHvjBeqwizSzzD8b9j6HKU3FbSX3x0g1I8jQ_Xba7E4BOF37vwZb95ry-I3p7p-DY1z_EGal8iaYEUO-zMvfcdw35gOwSoLsoKAiVRh3RJ72aAcAD7psKuh_rv0Lx8yvQy4aLK4qpTTE2aM8SAQbDWAchufO4Hy4BEYkHOwTrMGTbMHFdJMLZMQFQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoRbZKJfjyvQBIFY1ouvhf7ty6gmGtw-7nKP7kQ0j-s390D1Hb4jJtWhBBv0qwyidCEW8cDvmc5PWModnkVDHUpelBoK2OerVxyHEZG_SAYD_Rtz91ACF5pUhEF4qk3A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZtuPu-uIyO1xJ3IaXXuVJOwU5FevVedAhykyfwzeVrnjcwkjEe2RXcuLvYH42U8AvKNqaBtdSllGJZmX64h5WPEEROMP-FzLBsmK8npFnzXdQkINlz3cWxVtLVnl1k_3sOf0qN-lH1Q3z26aolEObpSBCRnOwBWRFkrdLIzU_kn3ngH0qyWsi4Ew8Ch3vAZ9SCbZVr5RnTSEz",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGy5trbFx_OmSt3lEYCApvHghcinhMioDVameDraglYZm1zYLRCc62iFZC1Qd7sc_3bRKa6wus_f5tbVlyYAkp_uGe05_QQx_fWXgI4ILPFttoJ3aDmKawfBeLObErk9VGagkHqHmJ37C1mkEoKEm7QYFFGv1nYjSc2Jh2Aaa23WAphheoZKwfB8S_FXoDl8C0UJUXM2RLCBVBCG-bnjEJEdU76briww1pzNIv6bNSFYVqLOZnqbtfM0uaCwlcF5gAVPPPTlWm1pazTDhc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEWR3YKPaNLw9Y1pHbPGAbCQzdfv03QUPm51a7AM0gsZxZpVnrNyhkx_N6oHG6hxL0TMWvqRUz5WX0MXZQ2_hYbbpFIQsS618hlp9E4jQnhN7gPlXokK5WP8k9eFU3506RtFxyQzVydN4hYI0ryxTYn4AJ6cLYUFOBFspPM6UpO_SySYl7GGv1OZ38mIjrl-UEBYRi8NLG5S__1QhmvGRZw0e-ZcDJQQCCbF-H63LgfKiiW0MoQBFELU5kSl1DZ9qBl1ohM16yavCpUu8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGs254iQ50-qobiqtWAzffI2v7FvEVSfptv8uOH9QfxuXaxGOxC4IMbw76CrSozCJLAkDxjlbKnn25MRKtgbxykTDX2CApbyzMOT9XC4mGKhvgiHe6HGJHE2nekoqcufWFkC-WJvFmbuBvtcdKXKt8t4MqAkBWCIfSf3x-saWcZmXs_5BaRTwsoZ7l6_tPfeR33od0a-3n5cYmj4pYhGX2Lqg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRtwGht4jsot9cNS1gancdgrFBTKy51VgQCI-xKzbcp-EAEgHWXncUZ_z4z08VQzo4X3WqxWzQEc6-0s7nEz8C1e_nOwvHJpFNCETp_s31Irupt4u4wu6OJdHQAc1uYVBwVUT2yI1yG03D03LoMRHR8g=="
+   ],
+   "reason": "ect counterproposal in June 2026. Official federal portals updated on 2026-11-27 confirm the vote is proceeding as scheduled in two days.\n* **Official authorities' opposition (Moves slightly toward NO):** Both the Federal Council and the Federal Assembly recommend rejecting the initiative, and the right-leaning parties (SVP and FDP) have issued \"No\" recommendations.\n* **First wave of national polling in October 2026 (Moves strongly toward YES):** Three separate major polls in October 2026 showed overwhelming initial support: the 1st SRG/gfs.bern survey (published 2026-10-23) recorded 69% Yes vs. 29% No (2% undecided); the 1st 20 Minuten/Tamedia survey by LeeWas (fieldwork Oct 7–8) recorded 68% Yes vs. 30% No; and the 1st YouGov survey (reported 2026-10-21) recorded 62% Yes vs. 33% No.\n* **Second wave of national polling in mid-November 2026 (Moves strongly toward YES):** In the final published polling wave (~11–12 days before the vote), support declined only modestly and remained commands a ~25-percentage-point lead across all three polling institutes:\n  * **SRG / gfs.bern (published 2026-11-17 / 2026-11-18):** 63% Yes (52% definitely, 11% rather) vs. 35% No (26% definitely, 9% rather), with 2% undecided (n=12,480, fieldwork Nov 4–11). Moreover, 78% of voters already had fixed voting intentions.\n  * **20 Minuten / Tamedia / LeeWas (published 2026-11-17 / 2026-11-18):** 62% Yes vs. 37% No, with 1% undecided (n=12,169, fieldwork Nov 11–12). Support held a majority across all age, income, and educational groups, and even among SVP and FDP voters opposition was barely a majority at 51% No (49% Yes).\n  * **YouGov Switzerland MRP poll (published 2026-11-17):** 59% Yes vs. 36% No, with 5% undecided (n=3,013, fieldwork Nov 2–16). YouGov's cantonal/regional breakdown noted that the initiative leads almost everywhere, with 60% Yes in German-speaking Switzerland and 58% Yes in French-speaking Switzerland, and high support even among SVP (44% Yes) and FDP (46% Yes) bases.\n* **Low counter-campaign intensity (Moves toward YES):** On 2026-11-17, the University of Zurich's *fög* media monitor reported that media resonance for the fireworks initiative was among the 15 lowest of 74 federal proposals since 2018, with nearly neutral media tonality (-5), indicating the absence of a massive late negative media wave that typically sinks popular initiatives.\n\n**3. Strongest Reason the Obvious Outcome Might Fail**\nBecause Swiss voters predominantly cast their ballots by mail over the two to three weeks preceding voting Sunday, a substantial fraction of ballots were already cast while the initiative polled around 60–63%. However, the strongest risk to a YES resolution is the double majority requirement—specifically the cantonal majority (*Ständemehr*, requiring at least 12 of 23 cantonal votes). If late-deciding rural and conservative voters in small German-speaking cantons (such as Uri, Schwyz, Obwalden, Nidwalden, Appenzell Innerrhoden, Appenzell Ausserrhoden, Glarus, Thurgau, Valais, etc.) mobilized strongly against a perceived \"ban culture\" (*Verbotskultur*) in the final two weeks after the mid-November polls closed, the national popular vote could drop from ~61% to ~52–54% while narrowly failing to win 12 cantonal majorities. (The chance that the vote is cancelled or results are not published on 29 November 2026 is negligible, well below 1%.) Nevertheless, with ~45–49% support even among SVP and FDP voters and ~60% overall support in mid-November, losing 12 cantons would require an unprecedented late rural swing of roughly 10–12 percentage points.\n\nNEW FACTS\n- 2026-06-30 | The Swiss Federal Council officially confirmed that the popular initiative 'For a restriction on fireworks' would be put to a federal vote on 29 November 2026 after the ten-day withdrawal deadline expired unused. | https://www.admin.ch\n- 2026-11-17 | In the second SRG survey conducted by gfs.bern between 4 and 11 November 2026 among 12,480 respondents, 63% intended to vote Yes to the fireworks initiative, 35% intended to vote No, and 2% were undecided. | https://www.srf.ch\n- 2026-11-17 | In the second 20 Minuten and Tamedia survey conducted on 11 and 12 November 2026 among 12,169 participants, 62% supported the fireworks initiative, 37% opposed it, and 1% were undecided. | https://www.tamedia.ch\n- 2026-11-17 | A YouGov Switzerland survey of 3,013 eligible voters conducted between 2 and 16 November 2026 showed the fireworks initiative leading with 59% Yes against 36% No and 5% undecided, with 60% support in German-speaking Switzerland and 58% in French-speaking Switzerland. | https://yougov.ch\n- 2026-11-17 | The University of Zurich's fög voting monitor reported that the fireworks initiative was among the fifteen proposals with the weakest media coverage out of 74 federal votes since September 2018, with a slightly negative media tonality score of -5. | https://www.foeg.uzh.ch\n- 2026-11-18 | Reporting on the second 20 Minuten/Tamedia survey noted that the fireworks initiative held a majority across all age, income, and education groups, and that SVP and FDP voters opposed it by only 51% No. | https://www.nau.ch\n- 2026-11-27 | The official portal of the Swiss Federal Council confirmed that the popular vote on the fireworks initiative and three other federal proposals is taking place as scheduled on 29 November 2026. | https://www.admin.ch\n\nCOUNTER\nPopular initiatives in Switzerland routinely lose ground in the final days of a campaign as undecided and centre-right voters revert to the negative recommendations of the Federal Council, Parliament, and the bourgeois parties (SVP and FDP). Because acceptance requires a majority of cantons in addition to a national majority, a sharp late mobilization against a perceived \"ban culture\" in rural and conservative cantons—where private 1 August and New Year's fireworks are seen as a cherished tradition—could cause the initiative to fail the cantonal majority even if it wins the popular vote nationally.",
+   "facts": [
+    {
+     "date": "2026-06-30",
+     "fact": "The Swiss Federal Council officially confirmed that the popular initiative 'For a restriction on fireworks' would be put to a federal vote on 29 November 2026 after the ten-day withdrawal deadline expired unused.",
+     "url": "https://www.admin.ch"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "In the second SRG survey conducted by gfs.bern between 4 and 11 November 2026 among 12,480 respondents, 63% intended to vote Yes to the fireworks initiative, 35% intended to vote No, and 2% were undecided.",
+     "url": "https://www.srf.ch"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "In the second 20 Minuten and Tamedia survey conducted on 11 and 12 November 2026 among 12,169 participants, 62% supported the fireworks initiative, 37% opposed it, and 1% were undecided.",
+     "url": "https://www.tamedia.ch"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "A YouGov Switzerland survey of 3,013 eligible voters conducted between 2 and 16 November 2026 showed the fireworks initiative leading with 59% Yes against 36% No and 5% undecided, with 60% support in German-speaking Switzerland and 58% in French-speaking Switzerland.",
+     "url": "https://yougov.ch"
+    },
+    {
+     "date": "2026-11-17",
+     "fact": "The University of Zurich's fög voting monitor reported that the fireworks initiative was among the fifteen proposals with the weakest media coverage out of 74 federal votes since September 2018, with a slightly negative media tonality score of -5.",
+     "url": "https://www.foeg.uzh.ch"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Reporting on the second 20 Minuten/Tamedia survey noted that the fireworks initiative held a majority across all age, income, and education groups, and that SVP and FDP voters opposed it by only 51% No.",
+     "url": "https://www.nau.ch"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "The official portal of the Swiss Federal Council confirmed that the popular vote on the fireworks initiative and three other federal proposals is taking place as scheduled on 29 November 2026.",
+     "url": "https://www.admin.ch"
+    }
+   ],
+   "counter": "Popular initiatives in Switzerland routinely lose ground in the final days of a campaign as undecided and centre-right voters revert to the negative recommendations of the Federal Council, Parliament, and the bourgeois parties (SVP and FDP). Because acceptance requires a majority of cantons in addition to a national majority, a sharp late mobilization against a perceived \"ban culture\" in rural and conservative cantons—where private 1 August and New Year's fireworks are seen as a cherished tradition—could cause the initiative to fail the cantonal majority even if it wins the popular vote nationally."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:14:32Z",
+   "p": 0.83,
+   "searches": 11,
+   "sources": [
+    "https://janei.ch/en/kippmeter",
+    "https://rundum.dog/abstimmung-einschraenkung-feuerwerk-hundehalter/",
+    "https://www.watson.ch/schweiz/umfrage/132084216-srg-umfrage-zum-29-november-patt-bei-der-ahv-klares-ja-zum-feuerwerk",
+    "https://www.srf.ch/news/erste-srg-umfrage-ja-vorteil-fuer-feuerwerksinitiative-meinungen-fast-gemacht",
+    "https://www.vaterland.li/regional/schweiz/ahv-vorlage-vor-dem-nein-staendemehr-als-huerde-art-776709,PRINT?_FRAME=33",
+    "https://www.watson.ch/schweiz/analyse/994290795-ahv-und-kriegsmaterial-so-lassen-sich-die-letzten-umfragen-einordnen",
+    "https://swissobserver.com/de/news/first-poll-november-29-swiss-votes/",
+    "https://www.20min.ch/story/abstimmungsumfrage-feuerwerksverbot-vorn-mehrwertsteuer-erhoehung-unter-druck-103669037",
+    "https://www.schweizheute.ch/schweiz/ahv-vorlage-vor-dem-nein-staendemehr-als-huerde-ld.4269376",
+    "https://yougov.com/de-de/artikel/55787-feuerwerk-und-fairness-initiative-ja-ahv-finanzierung-nein-kriegsmaterial-offen-wie-will-die-schweiz-am-29-november-abstimmen",
+    "https://www.gfsbern.ch/en/news/2-srg-trendumfrage-zur-eidg-abstimmung-vom-29-november-2026/",
+    "https://wildbeimwild.com/en/fireworks-initiative-questions-answers/",
+    "https://www.uvek.admin.ch/de/feuerwerksinitiative",
+    "https://www.gfsbern.ch/en/news/1st-srg-trend-survey-on-the-federal-vote-of-29-november-2026/",
+    "https://en.wikipedia.org/wiki/2026_Swiss_referendums",
+    "https://www.beloud.com/news/149421388",
+    "https://de.headtopics.com/news/umfragen-ja-zur-feuerwerksinitiative-nein-trend-bei-ahv-89957917",
+    "https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend",
+    "https://theswisspress.ch/articles/fireworks-poll-november-2026.html",
+    "https://wissenschaftswelle.de/post/feuerwerksinitiative-schweiz-abstimmung-ausnahmen-laerm",
+    "https://datawrapper.dwcdn.net/o6pxG/1/",
+    "https://swissobserver.com/news/swiss-voters-to-decide-on-noisy-fireworks-ban/",
+    "https://www.20min.ch/story/abstimmungen-schweiz-zwei-vorlagen-droht-ein-nein-103648810",
+    "https://www.srf.ch/news/auf-einen-blick-die-feuerwerksinitiative-in-kuerze",
+    "https://www.nume.ch/abstimmung-vom-29-november-2026/"
+   ],
+   "reason": "The unconditional historical acceptance rate for Swiss popular initiatives is low, near one in ten, because most fail to clear both the popular majority and the cantonal majority (more than 11.5 of 23). That base rate is a poor guide once late, large-sample polls show a settled double-digit lead with only mild regional variation: such initiatives usually clear both hurdles.\n\nThe vote is fixed for 29 November 2026. The second SRG/gfs.bern survey (fieldwork 4–11 November, published 18 November) put intending voters at 63% yes and 35% no, with 78% already firm and 52% definite yes—already a popular majority on its own. The same wave still showed majorities in every language region (German-speaking Switzerland 65%, French-speaking 57%, Italian-speaking 53%) and in rural municipalities (59%). A contemporaneous Tamedia reading was 62% yes. Support had fallen six points since mid-October, and it had slipped among FDP and SVP sympathisers toward their parties’ no line, but the remaining cushion is large and the geographic split is not sharp.\n\nThe popular majority therefore looks very secure. The residual risk is almost entirely the cantonal majority if the late slide continues and is concentrated in small conservative cantons and in Latin Switzerland.\n\nNEW FACTS\n- 2026-10-22 | The Federal Office for the Environment stated that the popular initiative “Für eine Einschränkung von Feuerwerk” would be voted on 29 November 2026 and that the Federal Council and Parliament recommend rejection. | https://www.bafu.admin.ch/de/abstimmung-ueber-die-feuerwerksinitiative\n- 2026-11-18 | gfs.bern’s second SRG survey reported that 63% of intending voters would vote yes and 35% no on the fireworks initiative, with a margin of error of ±2.8 points. | https://www.gfsbern.ch/en/news/2-srg-trendumfrage-zur-eidg-abstimmung-vom-29-november-2026/\n- 2026-11-18 | In that same survey, yes stood at 65% in German-speaking Switzerland, 57% in French-speaking Switzerland, 53% in Italian-speaking Switzerland, 65% in urban municipalities and 59% in rural municipalities. | https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/\n- 2026-11-18 | The same release recorded that 52% were definite yes, 26% definite no, and that FDP sympathisers had fallen to 43% yes and SVP sympathisers to 47% yes. | https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/\n- 2026-11-18 | A LeeWas/Tamedia poll published the same day put the fireworks initiative at 62% yes. | https://www.20min.ch/story/abstimmungsumfrage-feuerwerksverbot-vorn-mehrwertsteuer-erhoehung-unter-druck-103669037\n- 2026-10-20 | YouGov’s October MRP estimates, from fieldwork 7–19 October, had the initiative ahead in every canton, though narrowly in Geneva, Vaud, Valais and Obwalden. | https://yougov.com/de-de/artikel/55787-feuerwerk-und-fairness-initiative-ja-ahv-finanzierung-nein-kriegsmaterial-offen-wie-will-die-schweiz-am-29-november-abstimmen\n\nCOUNTER\nThe yes share already fell six points between the October and early-November waves, and the drop was steeper in French- and Italian-speaking Switzerland and among centre-right voters whose parties urge a no. With about three weeks of campaigning after that last poll, a further slide concentrated in small, tradition-minded cantons and in Latin Switzerland could leave a national yes while producing 12 or more cantonal no votes, which would defeat the initiative under the double-majority rule.",
+   "facts": [
+    {
+     "date": "2026-10-22",
+     "fact": "The Federal Office for the Environment stated that the popular initiative “Für eine Einschränkung von Feuerwerk” would be voted on 29 November 2026 and that the Federal Council and Parliament recommend rejection.",
+     "url": "https://www.bafu.admin.ch/de/abstimmung-ueber-die-feuerwerksinitiative"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "gfs.bern’s second SRG survey reported that 63% of intending voters would vote yes and 35% no on the fireworks initiative, with a margin of error of ±2.8 points.",
+     "url": "https://www.gfsbern.ch/en/news/2-srg-trendumfrage-zur-eidg-abstimmung-vom-29-november-2026/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "In that same survey, yes stood at 65% in German-speaking Switzerland, 57% in French-speaking Switzerland, 53% in Italian-speaking Switzerland, 65% in urban municipalities and 59% in rural municipalities.",
+     "url": "https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "The same release recorded that 52% were definite yes, 26% definite no, and that FDP sympathisers had fallen to 43% yes and SVP sympathisers to 47% yes.",
+     "url": "https://cockpit.gfsbern.ch/de/cockpit/trend_w2_29112026-2/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "A LeeWas/Tamedia poll published the same day put the fireworks initiative at 62% yes.",
+     "url": "https://www.20min.ch/story/abstimmungsumfrage-feuerwerksverbot-vorn-mehrwertsteuer-erhoehung-unter-druck-103669037"
+    },
+    {
+     "date": "2026-10-20",
+     "fact": "YouGov’s October MRP estimates, from fieldwork 7–19 October, had the initiative ahead in every canton, though narrowly in Geneva, Vaud, Valais and Obwalden.",
+     "url": "https://yougov.com/de-de/artikel/55787-feuerwerk-und-fairness-initiative-ja-ahv-finanzierung-nein-kriegsmaterial-offen-wie-will-die-schweiz-am-29-november-abstimmen"
+    }
+   ],
+   "counter": "The yes share already fell six points between the October and early-November waves, and the drop was steeper in French- and Italian-speaking Switzerland and among centre-right voters whose parties urge a no. With about three weeks of campaigning after that last poll, a further slide concentrated in small, tradition-minded cantons and in Latin Switzerland could leave a national yes while producing 12 or more cantonal no votes, which would defeat the initiative under the double-majority rule."
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "claim": "Mikuláš Minář publishes the amount of his salary and an account of his assets by 23:59 on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:11:00Z",
+   "p": 0.88,
+   "searches": 5,
+   "sources": [
+    "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-pristi-demonstrace-muzou-byt-vetsi-co-chysta-milion-chvilek-321583",
+    "https://informuje.me/zpravy/minar-slibil-v-nedeli-zverejnit-svou-mzdu-a-majetek-114m1xqmf1ang",
+    "https://noviny.dev/article/96979",
+    "https://www.prvnizpravy.cz/zpravy/politika/minarova-letna-stoji-miliony-politicky-mandat-ale-nedava/style%3Dprint/",
+    "https://czech.leadstories.com/hoax-alert/2026/11/fact-check-mikulas-minar-neoznacil-lidi-kteri-chteji-zrusit-poplatky-pro-ct-za-mafiany-zlodeje-a-gestapo.html",
+    "https://www.nlisty.cz/kdo-je-mikulas-minar-politik-aktivista-podnikatel-kdo-plati-neziskovku/",
+    "https://www.ceske-volby.cz/2026/11/15/milion-chvilek/",
+    "https://milionchvilek.cz/files/vyrocnizprava2025web.pdf",
+    "https://www.plzenskenovinky.cz/zpravy/politika/minarova-letna-stoji-miliony-politicky-mandat-ale-nedava/",
+    "https://www.bezservitek.cz/politika/obcanske-iniciativy/milion-chvilek",
+    "https://iportal24.cz/nazory/minaruv-chvilkovy-byznys-demokracie-za-33-milionu-a-cepice-za-1190-korun/",
+    "https://www.seznamzpravy.cz/tag/mikulas-minar-18916",
+    "https://www.podnikatel.cz/rejstrik/osoby/mikulas-minar-3506419/",
+    "https://cz24.news/bezpecnostni-hrozba-statu-politicka-bojuvka-milion-chvilek-335-milionu-korun-dva-ucty-a-carovani-s-pojmy/?print=pdf",
+    "https://milionchvilek.cz/files/vyrocnizprava2024web.pdf",
+    "https://www.youtube.com/watch?v=xJMAyXJhknA",
+    "https://www.youtube.com/watch?v=C9pZpwo8-5Q",
+    "https://milionchvilek.cz/faq",
+    "https://www.psp.cz/eknih/2002ps/stenprot/042schuz/s042105.htm",
+    "https://mf.gov.cz/cs/ministerstvo/media/v-mediich/2015/andrej-babis-v-otazkach-vm-20903",
+    "https://www.pojisteninapokuty.cz/file/priloha_k_trestnimu_oznameni.pdf",
+    "https://milionchvilek.cz/aktuality/3",
+    "https://milionchvilek.cz/clanek/senat-jsme-udrzeli",
+    "https://www.korupcejakoparazit.cz/clanek/aktuality/",
+    "https://www.idnes.cz/novinari/jana-klimova.N875/2"
+   ],
+   "reason": "**Base rate.** I’d start at about 70% for a public figure who gives a specific deadline for a voluntary financial disclosure they control. That’s a judgment call, not a measured rate: I found no reliable set of comparable cases, and an on-time statement can still omit details needed to qualify.\n\n**What moves this case up.** In the November 26 Seznam Zprávy interview, Minář said he was considering disclosing his exact pay and what he owns. When asked when, he gave a firmer answer: they would publish the information Sunday evening, November 29. That puts the planned release inside the window and explicitly addresses both requirements. There’s also a concrete precedent: in 2021, Minář met an end-of-April deadline to publish the Lidé PRO accounts and included his own net monthly pay. That supports follow-through on the salary figure more directly than on the asset account. ([seznamzpravy.cz](https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-pristi-demonstrace-muzou-byt-vetsi-co-chysta-milion-chvilek-321583))\n\n**What could still go wrong.** I put about 8% on no disclosure appearing in the window at all: a Sunday-evening release leaves little room for delay. I put another 4% on an on-time but nonqualifying statement, most plausibly one that gives a salary figure but mentions only selected assets without a total or a clear account of his main holdings.\n\nNEW FACTS\n- 2026-11-26 | In Seznam Zprávy’s *Ptám se já*, Minář said he was considering disclosing his exact pay and what he owns, then said the information would be published Sunday evening. | https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-pristi-demonstrace-muzou-byt-vetsi-co-chysta-milion-chvilek-321583\n- 2021-04-30 | Minář published the Lidé PRO closing accounts and stated his net monthly pay. | https://mikulasminar.substack.com/p/minar-penize-miliony-lidepro-zaverecna-zprava\n- 2021-04-10 | iROZHLAS reported that Minář had promised to publish the Lidé PRO financial information by the end of April. | https://www.irozhlas.cz/zpravy-domov/mikulas-minar-milion-chvilek-lide-pro-demokracie-david-ondracka_2104100745_sto\n\nCOUNTER  \nMinář’s answer on timing was firmer than his wording about what he would disclose: he initially described the personal disclosure as something he was considering. He could publish a salary figure and mention a few possessions without accounting for his main assets, or a short delay on Sunday evening could push the release past the cutoff.",
+   "facts": [
+    {
+     "date": "2026-11-26",
+     "fact": "In Seznam Zprávy’s *Ptám se já*, Minář said he was considering disclosing his exact pay and what he owns, then said the information would be published Sunday evening.",
+     "url": "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-pristi-demonstrace-muzou-byt-vetsi-co-chysta-milion-chvilek-321583"
+    },
+    {
+     "date": "2021-04-30",
+     "fact": "Minář published the Lidé PRO closing accounts and stated his net monthly pay.",
+     "url": "https://mikulasminar.substack.com/p/minar-penize-miliony-lidepro-zaverecna-zprava"
+    },
+    {
+     "date": "2021-04-10",
+     "fact": "iROZHLAS reported that Minář had promised to publish the Lidé PRO financial information by the end of April.",
+     "url": "https://www.irozhlas.cz/zpravy-domov/mikulas-minar-milion-chvilek-lide-pro-demokracie-david-ondracka_2104100745_sto"
+    }
+   ],
+   "counter": "Minář’s answer on timing was firmer than his wording about what he would disclose: he initially described the personal disclosure as something he was considering. He could publish a salary figure and mention a few possessions without accounting for his main assets, or a short delay on Sunday evening could push the release past the cutoff."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:12:12Z",
+   "p": 0.74,
+   "searches": 15,
+   "sources": [
+    "https://zakonik-prace.cz/zakonik/cast-6.html",
+    "https://youtu.be/xePxjrPXoe0?is=SA9N9cW3tvhMAswQ",
+    "https://www.novinky.cz/clanek/domaci-minar-napada-pravo-i-novinky-cz-sest-milionu-pry-utratil-za-propagaci-40356006",
+    "https://www.seznamzpravy.cz/clanek/radce-jak-si-usetrit-dovolenou-placene-volno-i-na-stehovani-ci-hledani-nove-prace-299545",
+    "https://usetril.cz/zivotni-a-existencni-minimum-2026-nove-castky-od-rijna-jednotlivec-5-500-kc/",
+    "https://x.com/dozor1984/status/2121985334112108647",
+    "https://www.seznamzpravy.cz/clanek/ekonomika-komentar-jsme-bohatsi-nez-si-myslime-jen-mame-jmeni-zamcene-ve-zdech-297517",
+    "https://www.centrum.cz/vecer-kdy-nemusis-nic-dohanet-ani-sebe-88cc73e7-046f-5e75-a770-e93beea154a4",
+    "https://podcasts.apple.com/us/podcast/mikul%C3%A1%C5%A1-min%C3%A1%C5%99-nech%C3%A1pe-havla-svrhnou-babi%C5%A1e-naz%C3%AD-zelin%C3%A1%C5%99i/id1642719489?i=1000802290722&l=pt-BR",
+    "https://ekonomickydenik.cz/minar-vystraha-vlade-pozadavky/",
+    "https://www.seznamzpravy.cz/tag/mikulas-minar-18916",
+    "https://suip.gov.cz/a3c-minimalni-mzda-a-povinne-slozky-mzdy-a-platu",
+    "https://dostupnyadvokat.cz/blog/priplatky-soukromy-sektor",
+    "https://open.spotify.com/episode/3F3yEwTjDsFtm95KSch3i8",
+    "https://www.seznamzpravy.cz/clanek/domaci-politika-letna-zrejme-dosahla-hranice-pri-ktere-se-hrouti-rezimy-ale-realita-je-slozitejsi-320739",
+    "https://cs.wikipedia.org/api/rest_v1/page/html/Mikul%C3%A1%C5%A1_Min%C3%A1%C5%99",
+    "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-pravo-pravni-poradna-co-zamestnavatelum-prinesla-mala-novela-zakoniku-prace-267704",
+    "https://x.com/i/status/2117216715880759369",
+    "https://www.vyplata.cz/vyplatamzdy/poskytovanimzdyaplatu.php",
+    "https://www.liter.cz/basne-laska-26762-cist",
+    "https://www.newstream.cz/stitek/prumerna-mzda",
+    "https://www.vema.cz/cs-cz/dpp-a-dpc-po-novele-zakoniku-prace-co-se-meni-v-oblasti-odmenovani",
+    "https://www.newstream.cz/stitek/majetek",
+    "https://www.newstream.cz/stitek/median",
+    "https://www.imago-images.com/en/st/0884611784"
+   ],
+   "reason": "Mikuláš Minář publicly committed, in a 26 November Seznam Zprávy interview, to stating both the exact figure for his pay and an account of his assets on Sunday evening. That commitment sits inside the resolution window, and he has previously published a precise personal pay figure when pressed.\n\nBase rate for a media-facing activist who has already disclosed exact compensation under scrutiny, and who has now let a major outlet headline a same-weekend date, is high compliance. The short horizon and the fact that opponents are already circulating the partial “several weeks” clip raise the cost of slipping past Sunday night or of issuing only a range or a promise. Incomplete disclosure (pay without a list or total of assets, or vice versa) remains the main residual risk, because the criterion is conjunctive and strict.\n\nNEW FACTS\n- 2026-11-26 | Seznam Zprávy quoted Minář saying he would state the exact amount of his salary and his assets within several weeks. | https://x.com/SeznamZpravy/status/2125947186991051101\n- 2026-11-26 | Reporting based on the same Seznam Zprávy podcast stated that Minář promised to publicly give his salary and assets on Sunday evening. | https://aroundprague.cz/en/news/politics/minar-i-will-reveal-my-salary-and-assets-on-sunday-evening\n- 2026-11-27 | A listener who heard the full interview wrote that Minář said he would publish the figures this Sunday. | https://x.com/Ondrej_Snobl/status/2126215999028388288\n- 2021-04-30 | Minář previously published an exact personal net pay figure (22 971 CZK monthly) for his earlier project when media and donors pressed him. | https://www.irozhlas.cz/zpravy-domov/minar-zverejnil-hospodareni-hnuti-lide-pro_2104301709_btk\n\nCOUNTER\nThe clip that circulated first had him saying “within several weeks,” which implies the numbers are not ready and may need accountant or legal review. Under that constraint he could miss Sunday evening, or post only a bound, a partial list, or a promise to finish later, any of which fails the written criterion even if he intends to comply.",
+   "facts": [
+    {
+     "date": "2026-11-26",
+     "fact": "Seznam Zprávy quoted Minář saying he would state the exact amount of his salary and his assets within several weeks.",
+     "url": "https://x.com/SeznamZpravy/status/2125947186991051101"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Reporting based on the same Seznam Zprávy podcast stated that Minář promised to publicly give his salary and assets on Sunday evening.",
+     "url": "https://aroundprague.cz/en/news/politics/minar-i-will-reveal-my-salary-and-assets-on-sunday-evening"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "A listener who heard the full interview wrote that Minář said he would publish the figures this Sunday.",
+     "url": "https://x.com/Ondrej_Snobl/status/2126215999028388288"
+    },
+    {
+     "date": "2021-04-30",
+     "fact": "Minář previously published an exact personal net pay figure (22 971 CZK monthly) for his earlier project when media and donors pressed him.",
+     "url": "https://www.irozhlas.cz/zpravy-domov/minar-zverejnil-hospodareni-hnuti-lide-pro_2104301709_btk"
+    }
+   ],
+   "counter": "The clip that circulated first had him saying “within several weeks,” which implies the numbers are not ready and may need accountant or legal review. Under that constraint he could miss Sunday evening, or post only a bound, a partial list, or a promise to finish later, any of which fails the written criterion even if he intends to comply."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:13:25Z",
+   "p": 0.85,
+   "searches": 22,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6Ucjv33r-7WvBZWUGtcc5jG6sonvfm5Hc7XFV4i6BxBESa69iiuolDsYqwY7h6d8ne_xBfs3XQVuL8IfQ161_btVFPhwTyB37e_vJzP9rY5_vQSrhXLsYbZvhV_Z5jCrxjyl1SKnrpXiohbdzGA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTveKXuNKMGV1giAIg4Mgf9_lUQK4vHCAFozTYQ0Q2Rw1P2L11_8jBqGcu3aaH9PXDnsBnRwhWc3-8aW5ZuxQX29IYiH2TEEioB7aGtosgWISv8BXIbm_kiXEeFohGZwcT6m2uZjkvXTk8nUpV",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrgVkBU_qtY9QogA65fBQxQ6Za99y6zgDH1KG_EAoAXWO03kxQBm5Ae8yeTiBDUZcX_SX1YbzFoGW_VMi7oVJghm8MBxt1a9lC7WpjlfT3PThQLafBkNqQNLjxGNcfplp9",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsS63I7ogyp-KrtPtNUK7VVkeEihT50UIg-vosDP5AoaEFMN-TReryRKC5E_E4bO4wVL3rJx6EwRsmFpXmfJaQmsz-Byf26ikbK5vijHqaSwx31pkzb26zoy_QfrQrI56c955ijYVQNgLQQHDh7702p9Q3qWVzGmHTzJDEHAqUNH-zkK8AqFk6Ow==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAfCj7-ddbA_RCFTR5WM5Mj2I7bOhBZkFrvL1X73BqdQ1f8WkNyDtxSxhz8bATO7pIOzETN98Ddy1dhLfWxnyBdtHp-LqCYDxoeVI_-fL17Fp2Ft3rDdXD1dgXQE36hbUEJryS0jSxkedVGtmavQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsGHyPimz4Vl1Ml50fm5RDVMCuDzu5slsPZTElpBlfLPUzo_ubUjaRtgJML1iy2TL-fTguNLXCiw5-Xp5zioc85mW8scyDLHZJ-Cww8T6K2xUBRCseyw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP2RcP3NRIuAvXpWIDGfZ1vZ22Wtz9LGZHeG5DnektRe-nuxlq-Us_y6tKc2w-_z5R_yyDDYnXSlMwl-CAvq1_ZYM2XM16iXzuAvTYQbHyf0bn4WsBgYfL2Z8eppbUct30V39Zr9sRdHbF5AIcHm6QTkMtcfHIiNujPsZ6hJxUINZE4a3UZ0gkcuYTE8LqlzTvf2Q_-nfWjeY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3KBK11BLptTmcT2yVbClyQiLL7Tw0q1w58UIvqfbu3KLz5dXAQ-UYEjvfrK7nnnCDU4jwMtFV2cBwPbF1VysE5gCEaJPeYJTu0hllRlOrdUWXhg0C_ATKHEbvPqxLIHBo4zZ4RQ271AwFWZxyx8z3hXnsxxG5ZzYcQdN6ifEWn2KIGb3JtwS3_gHhmrktMWNIMVcNEwi_XK4jwklXA1dstd5BMrguFzAN",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaF5cHFKmTeGrMOr2o0WZWVybVGcMQG92hwHQ8UgKK-xt63sCxN5bbtDFCps6b3lsjUpRPyQO5sReHZhBRItj-3YsSCvIkHScYoP6k0BPNjlBdy-_HeCaO2na1oMcR2YnJeoPANZsyw-3TgYZYl5AHRdj6ZZIwMNCdtZ9uqiZzCVA9RUbALkaFRlQmLtUV-il2lM8O9TdARQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExlrD3F7zQ-vWpODKFYLK8IdqChCy1L4XKaNPTdp4gd5zE_-kX5HBxxHAfTzipeYCrIooQbjtc5RS_YMoqkMOoDMXiw8eHV92Z8v1KyhqTlv59gJoCnW6_LXbVMCb9zLwd3PLXnh0yi13nL5A_COw520gbPt46JkpzFS8Vb6CL9DkDbtJHqJWUI1UDgEZ96OAI1dw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdxJSQC7rABZ6Ih5kFQWV_H0l_G10LeWTVK2aEwaZxHd3KDqTstZ8_cCuQa0wZE--3-z6IeTIow_WeM34qIJ3t9Nervms_bZlf0ByzpggBjAKKwx79ql3BigRUTzsQWQaJSOJUOZQFK2VtxLuljucSUkMJ3eP6PxyC6l_RbJ4GrF_x6B60RSFt9DNLKNNe3wA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLUC2SaVVB_uzypip88IVtwj2IdUrgfTBwQt3SxqzgQHhFil7k-9pksEE2svRPDddKXIPGyCPHPsV66HEQi74P-ePsuZd6S7cPMjyIJ9YM1gx-iQAFNhlCQ4CbiSJtl98Zw0QUXtVv3bz27DFuhFpgOpk8nnpBfOtSoAtSA-PiwgUnjxyeheY3DuASrdoGBz2C24lQgn7Lh5cekMc_wsy_Z3sZuhSqDLCYCfcxCG-6"
+   ],
+   "reason": "annual report published by Milion chvilek pro demokracii lists 1,391,687 CZK in organizational management costs (including remuneration to the statutory body and salaries) and 13,243,000 CZK in total wage costs, providing the financial backdrop that later sparked public debate about leadership compensation.\n* **2026-11-12 (Direction: Towards YES - Pressure to disclose):** Commentary and media scrutiny (such as findings circulated by Thomas Paukner analyzing Milion chvilek's annual reports and alleging high chair remuneration out of 33.5 million CZK raised) intensified pressure on Mikuláš Minář regarding how donor money and his salary are handled.\n* **2026-11-15 (Direction: Towards YES - High public profile):** Milion chvilek organized a massive anti-government protest at Letná Plain in Prague—estimated by organizers at 350,000 to 400,000 attendees—putting Minář at the center of national political attention and counter-attacks from government supporters.\n* **2026-11-26 (Direction: Strongly Towards YES - Explicit pledge):** In an episode of the *Ptám se já* podcast with Marie Bastlová on Seznam Zprávy, titled *\"V neděli večer řeknu výši své mzdy a majetku, říká Minář z Milionu chvilek\"* (\"On Sunday evening I will state the amount of my wage and assets, says Minář of Milion chvilek\"), Minář explicitly promised to publicly disclose both his salary and his assets on the evening of Sunday, November 29, 2026.\n* **2026-04-30 (Direction: Towards YES - Historical precedent):** During a past financial controversy in April 2021 over his political movement *Lidé PRO*, after promising on April 6 to publish the accounting, Minář followed through on April 30 by releasing a detailed report on Facebook that included his exact net pay (137,828 CZK for the period).\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile Minář is highly likely to publish a statement or livestream on Sunday evening (November 29) as promised, there are two notable ways the claim could still resolve NO under the strict criterion:\n1. **Incomplete or non-qualifying figures:** The criterion requires *both* a concrete CZK figure for his pay (not just a bound like \"under the average wage\") *and* a list or total value of his personal assets. In casual speech or a Facebook video, Minář might state his exact monthly salary from Milion chvilek, but address his \"majetek\" (assets) only qualitatively (e.g., saying \"I haven't enriched myself, I live in a normal rented flat\" without clearly listing his main assets/savings or stating a total value).\n2. **Timing slip:** He promised to disclose this \"v neděli večer\" (on Sunday evening), leaving only a few hours before the 23:59 Prague time deadline. Any technical delay, decision to postpone the post to Monday morning for better media reach, or last-minute schedule change ahead of the December 2 protest events would push the disclosure outside the event window.\n\nWeighing his explicit, headline-making promise on November 26 and his 2021 precedent of publishing exact salary figures down to the crown against the risk of vague asset phrasing or a slight timing delay past midnight on Sunday, I estimate an 85% probability of YES.\n\nNEW FACTS\n- 2026-09-07 | Milion chvilek pro demokracii published its annual report detailing 1,391,687 CZK in organizational management costs (including statutory body remuneration) and 13,243,000 CZK in total wage costs. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6Ucjv33r-7WvBZWUGtcc5jG6sonvfm5Hc7XFV4i6BxBESa69iiuolDsYqwY7h6d8ne_xBfs3XQVuL8IfQ161_btVFPhwTyB37e_vJzP9rY5_vQSrhXLsYbZvhV_Z5jCrxjyl1SKnrpXiohbdzGA==\n- 2026-11-12 | Public commentary drawing on findings by Thomas Paukner scrutinized Milion chvilek's annual reports, highlighting its 33.5 million CZK fundraising total and questioning the chair's remuneration. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrgVkBU_qtY9QogA65fBQxQ6Za99y6zgDH1KG_EAoAXWO03kxQBm5Ae8yeTiBDUZcX_SX1YbzFoGW_VMi7oVJghm8MBxt1a9lC7WpjlfT3PThQLafBkNqQNLjxGNcfplp9\n- 2026-11-15 | Milion chvilek pro demokracii, led by chair Mikuláš Minář, held a mass demonstration at Letná Plain in Prague with attendance estimated by organizers at 350,000 to 400,000 people to protest government policies on public media and defense. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsS63I7ogyp-KrtPtNUK7VVkeEihT50UIg-vosDP5AoaEFMN-TReryRKC5E_E4bO4wVL3rJx6EwRsmFpXmfJaQmsz-Byf26ikbK5vijHqaSwx31pkzb26zoy_QfrQrI56c955ijYVQNgLQQHDh7702p9Q3qWVzGmHTzJDEHAqUNH-zkK8AqFk6Ow==\n- 2026-11-26 | In an interview on the Seznam Zprávy podcast Ptám se já with Marie Bastlová, Mikuláš Minář stated that he will disclose the amount of his salary and his assets on Sunday evening. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsGHyPimz4Vl1Ml50fm5RDVMCuDzu5slsPZTElpBlfLPUzo_ubUjaRtgJML1iy2TL-fTguNLXCiw5-Xp5zioc85mW8scyDLHZJ-Cww8T6K2xUBRCseyw==\n- 2026-11-26 | News coverage of the Ptám se já interview confirmed that Mikuláš Minář promised to publicly state his salary and assets on the evening of Sunday, November 29, amid ongoing political disputes over public media funding. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP2RcP3NRIuAvXpWIDGfZ1vZ22Wtz9LGZHeG5DnektRe-nuxlq-Us_y6tKc2w-_z5R_yyDDYnXSlMwl-CAvq1_ZYM2XM16iXzuAvTYQbHyf0bn4WsBgYfL2Z8eppbUct30V39Zr9sRdHbF5AIcHm6QTkMtcfHIiNujPsZ6hJxUINZE4a3UZ0gkcuYTE8LqlzTvf2Q_-nfWjeY=\n\nCOUNTER\nBecause Mikuláš Minář specified that he would make the disclosure on \"Sunday evening\", there is very little buffer before the 23:59 Sunday deadline if his communication team delays the publication or postpones it to Monday morning. Furthermore, while he is very likely to state an exact crown figure for his monthly pay, he might address his personal assets only in general, qualitative terms (such as denying enrichment) rather than providing a concrete list of assets or a total net worth figure as strictly required by the resolution criterion.",
+   "facts": [
+    {
+     "date": "2026-09-07",
+     "fact": "Milion chvilek pro demokracii published its annual report detailing 1,391,687 CZK in organizational management costs (including statutory body remuneration) and 13,243,000 CZK in total wage costs.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6Ucjv33r-7WvBZWUGtcc5jG6sonvfm5Hc7XFV4i6BxBESa69iiuolDsYqwY7h6d8ne_xBfs3XQVuL8IfQ161_btVFPhwTyB37e_vJzP9rY5_vQSrhXLsYbZvhV_Z5jCrxjyl1SKnrpXiohbdzGA=="
+    },
+    {
+     "date": "2026-11-12",
+     "fact": "Public commentary drawing on findings by Thomas Paukner scrutinized Milion chvilek's annual reports, highlighting its 33.5 million CZK fundraising total and questioning the chair's remuneration.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrgVkBU_qtY9QogA65fBQxQ6Za99y6zgDH1KG_EAoAXWO03kxQBm5Ae8yeTiBDUZcX_SX1YbzFoGW_VMi7oVJghm8MBxt1a9lC7WpjlfT3PThQLafBkNqQNLjxGNcfplp9"
+    },
+    {
+     "date": "2026-11-15",
+     "fact": "Milion chvilek pro demokracii, led by chair Mikuláš Minář, held a mass demonstration at Letná Plain in Prague with attendance estimated by organizers at 350,000 to 400,000 people to protest government policies on public media and defense.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsS63I7ogyp-KrtPtNUK7VVkeEihT50UIg-vosDP5AoaEFMN-TReryRKC5E_E4bO4wVL3rJx6EwRsmFpXmfJaQmsz-Byf26ikbK5vijHqaSwx31pkzb26zoy_QfrQrI56c955ijYVQNgLQQHDh7702p9Q3qWVzGmHTzJDEHAqUNH-zkK8AqFk6Ow=="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "In an interview on the Seznam Zprávy podcast Ptám se já with Marie Bastlová, Mikuláš Minář stated that he will disclose the amount of his salary and his assets on Sunday evening.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsGHyPimz4Vl1Ml50fm5RDVMCuDzu5slsPZTElpBlfLPUzo_ubUjaRtgJML1iy2TL-fTguNLXCiw5-Xp5zioc85mW8scyDLHZJ-Cww8T6K2xUBRCseyw=="
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "News coverage of the Ptám se já interview confirmed that Mikuláš Minář promised to publicly state his salary and assets on the evening of Sunday, November 29, amid ongoing political disputes over public media funding.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP2RcP3NRIuAvXpWIDGfZ1vZ22Wtz9LGZHeG5DnektRe-nuxlq-Us_y6tKc2w-_z5R_yyDDYnXSlMwl-CAvq1_ZYM2XM16iXzuAvTYQbHyf0bn4WsBgYfL2Z8eppbUct30V39Zr9sRdHbF5AIcHm6QTkMtcfHIiNujPsZ6hJxUINZE4a3UZ0gkcuYTE8LqlzTvf2Q_-nfWjeY="
+    }
+   ],
+   "counter": "Because Mikuláš Minář specified that he would make the disclosure on \"Sunday evening\", there is very little buffer before the 23:59 Sunday deadline if his communication team delays the publication or postpones it to Monday morning. Furthermore, while he is very likely to state an exact crown figure for his monthly pay, he might address his personal assets only in general, qualitative terms (such as denying enrichment) rather than providing a concrete list of assets or a total net worth figure as strictly required by the resolution criterion."
+  }
+ ]
+}

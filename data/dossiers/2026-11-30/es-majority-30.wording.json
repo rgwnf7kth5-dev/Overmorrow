@@ -1,0 +1,32 @@
+{
+ "claim": "The People's Party and Vox together win at least 176 of the 350 seats in the Congress of Deputies in Spain's general election on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:17:58Z",
+   "ambiguous": true,
+   "scenario": "If the count is 99.8% complete at 05:00 CET and gives the parties 175 seats, but reaches 100% later that morning and gives them 176, one reader could resolve NO because 05:00 is the cutoff for all results. Another could resolve YES because the wording places the time limit only on the fallback to an incomplete count.",
+   "yes_requires": "Spain's general election must be held within the stated 09:00–23:59 Europe/Madrid window on 29 November 2026, and the qualifying provisional count must give the People's Party and Vox at least 176 of the 350 Congress seats combined. All Partido Popular lists count, including Partit Popular lists and the UPN–PP joint list in Navarre.",
+   "decided_by": "The Interior Ministry's provisional seat totals, using 100% of polling-station returns or the highest share processed at 05:00 CET on 30 November if it is at least 99%. If the ministry site cannot be "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:18:01Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "In Spain's general election on 29 November 2026, the combined seat total allocated to the People's Party (including Partit Popular / Partido Popular and the UPN–PP joint list in Navarre) and Vox in the Congress of Deputies must be at least 176 out of 350, according to the Interior Ministry's provisional results with 100% of polling-station returns processed (or the highest share processed, at leas",
+   "decided_by": "The Spanish Interior Ministry's provisional results website (resultados.29neleccionesgenerales.es), or if unreadable, the ministry's provisional count as reported by RTVE or EFE."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:19:02Z",
+   "ambiguous": true,
+   "scenario": "The ministry site cannot be read, and RTVE's report of the provisional count gives the defined PP candidacies plus Vox 175 seats while EFE's gives 176 (or one outlet counts the Navarre UPN–PP seat with the People's Party and the other lists it separately). The criterion names RTVE or EFE with no priority or reconciliation rule, so one careful reader resolves YES and the other NO on the same facts.",
+   "yes_requires": "Spain's general election is held on 29 November 2026 (Europe/Madrid), and the Interior Ministry provisional results allocate at least 176 of the 350 Congress seats in total to People's Party candidacies (every Partido Popular / Partit Popular list, plus the UPN–PP joint list in Navarre) and Vox candidacies, either with 100% of polling-station returns processed or, when read at 05:00 CET on 30 Nove",
+   "decided_by": "The Interior Ministry provisional-results site (resultados.29neleccionesgenerales.es); if that site cannot be read, RTVE or EFE reporting of the ministry's provisional seat totals. The 4–7 December de"
+  }
+ ]
+}

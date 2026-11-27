@@ -1,0 +1,212 @@
+{
+ "claim": "Alexandr Stoianoglo wins the second round of the election for bashkan (governor) of Gagauzia on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:13:56Z",
+   "p": 0.75,
+   "searches": 7,
+   "sources": [
+    "https://www.e-democracy.md/en/monitoring/politics/comments/200612302/",
+    "https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/",
+    "https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor",
+    "https://www.zdg.md/stiri/politic/gagauzia-turul-al-doilea-al-alegerilor-regionale-va-avea-loc-pe-29-noiembrie-iar-intr-o-circumscriptie-se-va-desfasura-votarea-repetata/",
+    "https://unimedia.info/ro/news/d52b7f41e6c04a11/locuitorii-din-gagauzia-revin-la-urne-la-sfarsitul-lunii-pentru-turul-ii-alexandr-stoianoglo-si-fiodor-gagauz-in-batalia-finala-pentru-functia-de-bascan.html/%25%25%3A%20image%25%25",
+    "https://moldova1.md/p/91360/turul-al-doilea-in-gagauzia-cec-prezinta-profilul-candidatilor-si-pune-la-dispozitie-o-linie-telefonica-pentru-alegatori",
+    "https://ziua.md/ultima-zi-de-campanie-electorala-in-gagauzia-duminica-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi-pentru-functia-de-bascan/",
+    "https://cece.cec.md/sites/default/files/2026-11/246_reprezentent_stoianoglo-alexandr_zamena-1-compressed.pdf",
+    "https://cece.cec.md/ro/regions/uta-gagauzia/decisions",
+    "https://cece.cec.md/ro/cu-privire-la-stabilirea-ordinii-de-inscriere-concurentilor-electorali-buletinul-de-vot-pentru",
+    "https://www.moldova1.md/p/90957/alegerile-din-gagauzia-mandatele-a-13-deputati-alesi-in-primul-tur-confirmate",
+    "https://cece.cec.md/ro/cu-privire-la-aprobarea-procesului-verbal-privind-centralizarea-rezultatelor-votarii-la-alegerea",
+    "https://cece.cec.md/ro/cu-privire-la-confirmarea-listei-reprezentantilor-domnului-stoianoglo-alexandr-candidat-independent",
+    "https://alegeri.md/index.php?go=Du-te",
+    "https://telex.md/2026/11/19/locuitorii-din-gagauzia-revin-la-urne-la-sfarsitul-lunii-pentru-turul-ii-alexandr-stoianoglo-si-fiodor-gagauz-in-batalia-finala-pentru-functia-de-bascan/",
+    "https://promolex.md/wp-content/uploads/2026/11/raport-nr.2_ro.pdf",
+    "https://promolex.md/wp-content/uploads/2026/10/report-no.1_utag.pdf",
+    "https://cece.cec.md/sites/default/files/2026-10/36_26_gagauzia_tomai_hcece-nr_25_2026_ordinea-de-inscriere-in-bv_consiliul-local.pdf",
+    "https://es.wikipedia.org/wiki/Elecciones_generales_de_Gagauzia_de_2026",
+    "https://www.youtube.com/watch?v=vaJF8CBd8bM",
+    "https://www.youtube.com/watch?v=Yfovr1nKwbw",
+    "https://en.wikipedia.org/wiki/2026_Gagauz_general_election",
+    "https://www.moldova1.md/p/91341/alegeri-in-gagauzia-cursa-dintre-stoianoglo-si-gagauz-influentata-de-atacuri-si-campanii-negative-in-mediul-online-constata-promo-lex",
+    "https://promolex.md/promo-lex-a-prezentat-al-treilea-raport-de-observare-a-alegerilor-regionale-din-uta-gagauzia/",
+    "https://www.radiomoldova.md/p/89810/stoianoglo-si-gagauz-primele-declaratii-dupa-alegerile-din-gagauzia-ce-mesaje-au-transmis-alegatorilor"
+   ],
+   "reason": "**Base rate.** The first-round leader won all three recent comparable Bashkan runoffs I could verify: Mihail Formuzal in 2006 and 2010, and Evghenia Guțul in 2023. That is a useful starting point, not a reliable win rate from just three races. ([e-democracy.md](https://www.e-democracy.md/en/monitoring/politics/comments/200612302/))\n\n**What moves this race.** The November 16 count puts Stoianoglo ahead by **14.22 percentage points** (38.44% to 24.22%), a substantial advantage. If both finalists retain their first-round voters and the same electorate returns, Gagauz needs just over **69%** of the votes that went to eliminated candidates. The November 27 endorsement reporting moves the forecast back toward Gagauz: three eliminated candidates backed him, and third-place finisher Cornel Dudnic said he would vote for him personally, though he withheld a formal endorsement. ([safenews.md](https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/))\n\n**What could make YES fail.** The main risk is that those endorsements and stronger runoff turnout among Gagauz supporters erase the first-round lead. I put the chance that the vote is not held in the November 29 window at about **1%**: two days before polling, the CEC was still publicizing election-day arrangements. Invalidation also looks unlikely: first-round turnout was 37.60%, versus a reported 20% runoff minimum. A count below 95% when the resolver first reads it would leave the claim pending, not make it NO. ([newsmaker.md](https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor))\n\nNEW FACTS\n- 2026-11-16 | With all 67 first-round protocols processed, Stoianoglo had 38.44% of valid votes and Gagauz had 24.22%. | `https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/`\n- 2026-11-16 | First-round turnout was 37.60%. | `https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/`\n- 2026-11-27 | Oleg Garizan, Ivanna Koksal, and Petru Vlah backed Gagauz, while Cornel Dudnic said he would vote for Gagauz personally without formally endorsing him. | `https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor`\n- 2026-11-27 | The CEC announced a voter hotline for November 29 from 07:00 to 21:00, covering the scheduled voting hours. | `https://moldova1.md/p/91360/turul-al-doilea-in-gagauzia-cec-prezinta-profilul-candidatilor-si-pune-la-dispozitie-o-linie-telefonica-pentru-alegatori`\n\nCOUNTER  \nGagauz has a credible path to consolidating voters who backed eliminated candidates, especially with Dudnic publicly saying he will vote for him. If Gagauz also turns out more of his first-round supporters than Stoianoglo does, he can close the gap without winning as large a share of those available votes. ([newsmaker.md](https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor))",
+   "facts": [
+    {
+     "date": "2026-11-16",
+     "fact": "With all 67 first-round protocols processed, Stoianoglo had 38.44% of valid votes and Gagauz had 24.22%.",
+     "url": "https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/`"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "First-round turnout was 37.60%.",
+     "url": "https://safenews.md/gagauzia-nu-si-a-ales-bascanul-cine-sunt-cei-doi-candidati-ramasi-in-cursa/`"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Oleg Garizan, Ivanna Koksal, and Petru Vlah backed Gagauz, while Cornel Dudnic said he would vote for Gagauz personally without formally endorsing him.",
+     "url": "https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor`"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "The CEC announced a voter hotline for November 29 from 07:00 to 21:00, covering the scheduled voting hours.",
+     "url": "https://moldova1.md/p/91360/turul-al-doilea-in-gagauzia-cec-prezinta-profilul-candidatilor-si-pune-la-dispozitie-o-linie-telefonica-pentru-alegatori`"
+    }
+   ],
+   "counter": "Gagauz has a credible path to consolidating voters who backed eliminated candidates, especially with Dudnic publicly saying he will vote for him. If Gagauz also turns out more of his first-round supporters than Stoianoglo does, he can close the gap without winning as large a share of those available votes. ([newsmaker.md](https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor))"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:14:21Z",
+   "p": 0.58,
+   "searches": 12,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELgzfp8bTsjoJRT3PtlY8KOFSY-ScH2NQFpvxFLgXN7zdHDI21pjewcm3uePRb-mcAUk0T-egVjTvhTnva54DHZ_9rTVldhWLbslDaBIK0uahI2HKN8XG5s9DtBG6p3w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE85IGYKNW8YSt-JJzg9He-0v2_GJRPg_rq8hQ5JZBNBkN4QKkQClEfiDR76I6DsAZ9nDjx_HMFCF6GXSGMUN5mBIuei6zSnuIOxTmsnUNOSXjo6f43aFIbFzQWGP49xSHwzcfkmfbPRKNqMOiX5RuaeXQ0qvfPd1vGninIKzHCvvw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjcQgDnz9YFFCBqnpM0xSFiQNWyek5wdDzYh5PsWcEsV-5_8Zz2EqdGP_dYtdlrF7P2XssNcNu-rT2Q80vujU5eilAtetaujHhvPuwZXcpHBUk0Rn7T-vgTmKevSo7NGN2QVFEvmzfFXyKO9N_7KcxNhjtteT5tWG2NS5pkC_TlwhHRRgyfjigQFw-G6o2YdsIf0KuK2SJHdrn_4bjd9te3nMNntxU_Q==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8GV-aeLZKkvUjIIkqpK07m2tvDLwOFsb65atIcMU9OyXOxi72I_BFhe0tGEFmmLpN5UNxUl95krd8w6njprC5ssICiTC7MoDd1q5sL7f0OtlrImDc1TQnMpLVlax4nsH6MRixFZaCWy9i3Bd49SUwu3kRAWyT582v-7HVKJTev7ohpxuNmUMUMCtf_ettY6Y6eW1PrUpAquTBl3ksxKVF5oheQ5LhmfccG3VyPdpnFF3p6w_SX09iWUGasZlxrx5YqUJx8us=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfwj6UyhNCUGytHwtTOgjviNXNp8kC5seWBfYsl79GkEJNdSum0B6AhtGKBtm8cuMOJetKiQ0mVsLIXIzU33bsJ0JRSC_Jh1y2dma9dGMsxoF21rRNo-G9YrmaBDIv0EXvOkBkxjXoueJZD_crd0BjEilZgvDgdKZuGSqbQEAxtKJmAYZd2LmuJ-EOHhmxJW7sb0HlWsB8c7ktM1g=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXtovF_XHjjxJnz4XZxCbxuP6JN1MqwowMS-VLEbh74h-GlG12pz49Qr1Y0zVa0RocF7MCEIQKhRzcTbsexM6_13fY9DExh9jIEetmvn-h1SGaYS7X95Z6o5W1bkblwIZ9NbmkvtEjzDo3CH66-D7_YuPSFh5vCAZ5tMAGL_zE6HewOOOUS5BFykHXcgtAacYm_x9-f5nlvEr7wV9optmS7Vw9du9bfGdR9xm_TK4AtO3g4EsuKE1-",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHL4IWT15ldWqw9OQU2HhWDC5chVA355Qj26e_WVn8hUnBRqhW2NuR_6tORNrV0HvyvBHMH68fdjnCoh0-brebAUoRyZPWvA0aPJAvft9S0OnYt8udpflXTRKCEKqwVATppAThz7RUEMyiqnNfj2oU97_UVUAx7uE5PKEsbjVSWZNCfLynTyKmpVien56Y7BSttsw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgiUTO2t-oVtxTxiR4tnOsisHF2pHDNsB23ojLJiSbYs1dUs2VZE_K9ayIp8jlpvv8XqE3uzWS1FdcvxmrQ5cNPpMGBgP5c-YjlEHM3_KSplQ5yXeNVSWLXwurQnFxTDuLx70N1AtX4rxmBm02Fxjr1sxoiZGmV_tZ-3bYM9l7DDvUPRhlwmDjJTgvF7UEzO8eCytB1y2Tm8exorJiJk4bJKxW6B7hZP1px_SArkx2vW500XdMZqkT_u-9PoQbXfb9ErXJfdjlBi-izoAplW8g4QmqVdrYSIbWM_X47ll1-CHFFcjQpMOfmLUEZgIYv5YcAjccS3Hj7JygU_Aopv65xV20dvqO0pkLJQttHC9K",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRdjW3V5BJC1oCAjxV_jAzhg3DX-weSd9EJzRw7v-TOajkASdiDcVLrHUKiAL6GzGIjZV0Szq3DulFScxDFBAUJCfqqEozUzoDOGFos6kV4WuAWMY5yWpagaQljHMtIFKQnzERSm7yndfullWhBvyC",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8qYc7na7omS7o7kdgvc84u3xluKigZku2lw8ZiBDcg9s4XmwU8gdWq2eJ0vrKYs5sKqLJusd45L4i7oOLsYzKF6erPo1V1f6GJGNjSRMny6PBPEhcgos-uBto0Fc21kyNP28qKFIunQw-B81uwNRYnNoMBDnU_vMMUFLhToaMOi1fWSA-aKcHXnRvQo9Tj01xtXxQwyUzJ00osgiS",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcV82MVQHLxwkIAVvLvNDV_m9GW2y58FAhUlub7Gkv_dENzlWrQb847S4VWMpgE3Yxd61FkYkCFJsRWMuEcNy-GSzBluNR7ZpFYqj0YmlUa_H1FRcNk6xIfsNvkSzvfCKl7nWkZLgwfmN6eD0rma-2fYArO_pVPv4sZYFBOPmcXisdlq_I9B1V33c9ljE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjHsUUwY9SqciE1GPD805VR0mPYuD7O-X9YMJOSL0dT8SWbZy5QyS9Xtof7uPZDudtFHulB1yQJtTPBNglkVW7q74oqRMlvTgLP-g31VQ_stHxhOJUh-RdV3IQeWaqNtVaMomn0bBBsRh7OPjRO1Gz43XE5TwdrlBHFWMmugJ1-9nx_ere2uFSNUKiLabras2sOCd7EiBIN05Xa6mXL0qm1kUcWgnNmg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErNWhoeR4wY5HzVhgPhH2PAt5O5O-9xXqQSmzXm6SNAzObUWDHMcfZoODXVxtdfSW8XzuqtQbGi7p2bWvknYDa9b7AXMW4SWrV7dTiYy7Vnx97y51-JWzwV-Anmb7Eb8eSPWQEBA5lRzgJrhqkW4dnRCgbn-ANfh9gkt8Dh1C2JYyPfa52-xHkwiUGyH8sIJ2LLNGr_KDpb_OVvKgCmhQjxUQ3cWjgGcOr",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEurqb-4Kzz_SbL1ES8AvjuAy2KvvAEBgenuwqT3CJ5oni7tX1TZ1t0uVWnIBFOvzxjmFn22p1w6Rjy_q7ig5AYQYqxX8cHuMODzLnbdzzw_682EDylJ3BxZIScgf9w6CkJQ761Qex0Udx3mKJ0996IngngcA6hrjFFBF1UEFs_wvB8so0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFubzMbj3P23y44LPikoQtjWJIbqvbbxObclS2FR6weDWChVg_hZI_ZbGG9pYGtPpap9OPh16b0lfiJDmtw7VqYA1H0485XHFkrwunc0JFt2mBmcRC-HqvkicfFhCmiCuXPfLyBe2FUNJxom52LVZ-6OdlFBMPEp4ewEt9PWUNnnCOARCGbMPtq5uiesLKE9hbzuI-o5AG7Icvc",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEX2JB6JiS9Apg68vV1C3VNds4tkpZV_BJEeEAUEhqnSi6EI6cjMyaVMDbo0HBXVanb5JAf5zyTkWruOY-SaH1X7tYE5fVQDt8gb_B62JwkJ2n0TLAmxH3BD-lQVSxpH62kXIMhx81wEy5bE90A2ePm2WAai8z8dwjsXxHVYRj9gGybUQ-sNZ-mpMhUdav6iz1q",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0eXusm8ntPsyFiixW0EUFoNwnXAnTlNc9-e_Kul-itDADoWJAM0MEQ37R4cH6bKfBEXiTA-oQj-TzZYXMdyyBrtxNJUkFK0GHyrZEKbVbUA2PeuPBYFPukQhrAM9x8KOtz-k7sn83EMtIu_akVSpE0rJcrKb1mJGhwdC8o4sqDYqWmak_ly0FQg82ZzocMFixdUl5B8XDbmiZ9E5fwG9h_iqVVHn6sYSUFHw-XMhuIBctt7vg06Bm1boSQpayW6AY6kuXISEQKXgXvocPfi8b1aK8goKeg6z_nZS7rQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMlJX6oQmHN76qke0qqmiKDNV3zswGeYAj6jLzKApXWS8eRmBNSPy0hUypR_4STaq0hSCqOkME-hU6pudzNc7JEPvfFHTGrvySQKNLLOjRN0zrJg8sd6SwE72QgcFetSVILogbCYEp_F0E54-Q9hgOClV0-GdtXZwFhnCXsEufoLoPsZQMkZUB-rg64th_-xTWKc5DiUTIAFW_ToI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGd0iKZNf37hqLfVHavtpLUk_Z2MShGorlkc8gNBjLEcDMWmhNNKdtvlsUul72gpB4Ew8pdq2k-ijbhoD663z7VgtJ0whSS4-6eK9_-xW0qyFaG1S4lYqwQbDaA3-gvN-bwepjJ3lxOSEYtoAyh5oQQ6jp7Bz8eg8b_q6SqT-M6kC7_0ppXeOD1hT4KOGjXcavwKI4T0-_cvOvwp34oGi-2gZog-N08acLombT5h6xzzP_hK8emnZWFFss3XDxoRPeDILXorJIp2v4Suj1S8-AlYkXcSy4tfTlk-8h9yN62qhew",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrOV1n4Rx0VlHakCBM2a2SJJzKcv4oGTeCZkuW9XXnVAzFq0aCThqsOS2co4SJtUhFY34uehvd-aAabVyAugZgb-9jo49uexBwWnFqNIqT5nQdArGxH-ySYKCh1v7j6JbLbPaZ5I-F7hdJkABRB0via0Yf9OeaiICmzpiUuFxJwXqnyMKDgasjC1qgh5fy2nqorwKTHrRi8mE22LllmU9aCUvrAIQ_MLx4cxdcTUJRxrQ5hVcS9JaK6w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP5PGGl1L_usxbgrRQhJhIaJ5pr5iTbuT3e_MZ44hgC3RQ3tVikAjjKI7aX0HEjvN-XdvoL7gJ_1cNPKRKMn4RSkfjFPISehHYT8Qem67PiiahjUZdVx2kw-eEZ7WxB1_KC6XSDFwZxOVYPSwxRnsauw9JduxiYH1m4YHt-0mQLN1Lyuj0P3u230xyY19gA2tTv_oYOIuFN9NvqxWB3iA0chmuWK9AiDMmbMbPU7T9O5gfa8FHuKdq-6_vTqO3VJ3h6T-Oubo0NnOVmA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeAgQatc56vLW6IzZ3hDbjGrW12O9WnZROyjTzNWVtL_mi2fqSBHvkF9cA5yGeBVWwjW1uVah2gYrykjs2BKuFjTSYAsnnWHb7B9HFtZP1gag4vgy1kTsIkrRU8e8ub_ff9d0LxffJX2kgLXCX4it41BL90Es9tTvMYl4LpJrqjOQ2OyZ9dbxsv7CiOuURCvXdIRzbUKRe7DRcfqRWfQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBCDHyCCJJH5A3FMnrFw2c-xKLjqH62p05tlCH3wHZJ8IkclC7tvZ4dMEcWVUiw6dlxQd6jYWdMH0A5LYDiUxQhwpu4pYEldJ25BfVgq_4z-SHq6ScdMEk1AnphE-v6NcYjfVnAVq3IiNlJJjqNji0GIIOIJyUuAhdRfyjqDOYfXDDftj8EoHyC4FteUWo5O6jYIwnKXGpJ0JczPQ="
+   ],
+   "reason": "Sunday, November 29, 2026. While the first round required a 25% minimum turnout (easily met at 37.60%), the legal threshold for the second round drops to 20%, and simultaneous runoffs in 21 People's Assembly constituencies will keep turnout well above the validity floor.\n* **Consolidation of Eliminated Candidates Behind Fiodor Gagauz (Moves strongly toward NO):** Between November 22 and November 26, 2026, four of the six eliminated candidates—representing 31.80% of the first-round vote (15,006 votes)—declared support for Fiodor Gagauz:\n  * Fourth-place finisher Ivanna Koksal (11.05%, 5,216 votes) endorsed Gagauz on November 22.\n  * Third-place finisher Cornel Dudnic (15.59%, 7,354 votes) stated on November 26 that Stoianoglo had ignored his 15 policy conditions and announced that he and his family would vote for Gagauz.\n  * Sixth-place finisher Oleg Garizan (3.18%, 1,502 votes) and seventh-place finisher Petru Vlah (1.98%, 934 votes) publicly endorsed Gagauz on November 26.\n  * Meanwhile, fifth-place finisher Serghei Anastasov (4.72%, 2,225 votes, Mayor of Comrat) declared neutrality on November 27, leaving Stoianoglo without major public endorsements from eliminated contenders.\n* **Campaign Intensity and Ground Game (Moves toward NO):** According to the Promo-LEX observation mission report published on November 27, 2026, out of 77 documented runoff campaign activities, 56 were conducted by Fiodor Gagauz's campaign (backed on the ground by PSRM leader Igor Dodon) compared to only 21 by Stoianoglo. Furthermore, pre-election IMAS polling waves (September to November 11) had already shown Stoianoglo's support trending downward while Gagauz's rose rapidly.\n\n### 3. Strongest Reason the Obvious Outcome Might Fail\nWhile Stoianoglo remains the slight favorite due to his high personal name recognition (having won over 63,000 votes in Gagauzia during the 2024 presidential runoff), his 6,710-vote lead is vulnerable. In Gagauzia, voters strongly favor candidates who take a confrontational, pro-Russian stance against the central authorities in Chișinău. Stoianoglo has campaigned on pragmatic dialogue with Chișinău, allowing rivals like Dudnic and PSRM to paint him as overly accommodating to the central government. If even two-thirds of the 15,006 voters who backed Dudnic, Koksal, Garizan, and Vlah follow their candidates' lead and vote for Gagauz, while Stoianoglo captures only a third, Gagauz would close the 6,710-vote gap. Conversely, voter endorsements in Moldova rarely transfer at 100%, and anti-establishment voters who backed independent candidates in round one may split more evenly or stay home, allowing Stoianoglo's 14.2-point cushion to hold. The risk of the election failing to occur or falling below the 20% turnout minimum on November 29 is negligible (<2%).\n\nBalancing Stoianoglo's substantial 14.22-point first-round margin against the near-total alignment of eliminated candidates and the PSRM party machine behind Fiodor Gagauz, the race is much closer than the base rate suggests, leaving Stoianoglo as a modest favorite.\n\nNEW FACTS\n- 2026-11-16 | In the first round of the Gagauzia Bashkan election on 15 November 2026, with all 67 polling station protocols processed, Alexandr Stoianoglo received 18,136 votes (38.44%) and Fiodor Gagauz received 11,426 votes (24.22%) out of 47,184 valid votes cast, with total voter turnout at 37.60%. | https://esp.md/ru/podrobnosti/2026/11/16/vybory-bashkana-gagauzii-2026-itogi-i-2-y-tur\n- 2026-11-18 | Moldova's Central Electoral Commission officially scheduled the second round of the Gagauzia Bashkan election between Alexandr Stoianoglo and Fiodor Gagauz for 29 November 2026, alongside runoffs in 21 constituencies for the People's Assembly. | https://logos-pres.md/en/news/gagauzia-to-hold-second-round-of-bashkan-election-on-november-29/\n- 2026-11-26 | Eliminated Bashkan candidates Ivanna Koksal (fourth place, 11.05%) and Petru Vlah (seventh place, 1.98%) publicly endorsed PSRM candidate Fiodor Gagauz for the second round. | https://newsmaker.md/ro/gagauz-sau-stoianoglo-inca-un-fost-candidat-la-functia-de-bascan-a-decis-pe-cine-va-sprijini-in-turul-doi\n- 2026-11-26 | Third-place candidate Cornel Dudnic (15.59%, 7,354 votes) and sixth-place candidate Oleg Garizan (3.18%, 1,502 votes) announced their support for Fiodor Gagauz in the 29 November runoff after Stoianoglo did not respond to Dudnic's 15 policy conditions. | https://nokta.md/eshhyo-tri-byvshih-kandidata-v-bashkany-podderzhali-fedora-gagauza-pered-vtorym-turom/\n- 2026-11-27 | Comrat Mayor Serghei Anastasov, who finished fifth in the first round with 4.72% of the vote, announced that he will remain neutral and not endorse either candidate in the second round. | https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor\n- 2026-11-27 | Fiodor Gagauz did not attend the final televised electoral debate with Alexandr Stoianoglo on Gagauzia's public broadcaster GRT prior to the end of campaigning on 27 November 2026. | https://nokta.md/gagauz-ne-prishyol-na-debaty-so-stoyanoglo-pered-vtorym-turom/\n- 2026-11-27 | The Promo-LEX observation mission reported that during the second-round campaign period, 56 of 77 documented campaign activities for Bashkan were conducted by Fiodor Gagauz's campaign compared to 21 by Alexandr Stoianoglo's campaign. | https://promolex.md/ru/promo-lex-predstavila-tretij-otchyot-o-nablyudenii-za-regionalnymi-vyborami-v-ato-gagauziya/\n\nCOUNTER\nFour eliminated candidates who collectively won 31.8% of the first-round vote (15,006 votes)—including third-place finisher Cornel Dudnic and fourth-place finisher Ivanna Koksal—have publicly backed Fiodor Gagauz, while none have endorsed Stoianoglo. Combined with the Socialist Party's much more active ground campaign in Gagauzia and local voter preference for hardline opposition to Chișinău, this consolidated bloc has more than enough votes to overcome Stoianoglo's 6,710-vote first-round lead.",
+   "facts": [
+    {
+     "date": "2026-11-16",
+     "fact": "In the first round of the Gagauzia Bashkan election on 15 November 2026, with all 67 polling station protocols processed, Alexandr Stoianoglo received 18,136 votes (38.44%) and Fiodor Gagauz received 11,426 votes (24.22%) out of 47,184 valid votes cast, with total voter turnout at 37.60%.",
+     "url": "https://esp.md/ru/podrobnosti/2026/11/16/vybory-bashkana-gagauzii-2026-itogi-i-2-y-tur"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Moldova's Central Electoral Commission officially scheduled the second round of the Gagauzia Bashkan election between Alexandr Stoianoglo and Fiodor Gagauz for 29 November 2026, alongside runoffs in 21 constituencies for the People's Assembly.",
+     "url": "https://logos-pres.md/en/news/gagauzia-to-hold-second-round-of-bashkan-election-on-november-29/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Eliminated Bashkan candidates Ivanna Koksal (fourth place, 11.05%) and Petru Vlah (seventh place, 1.98%) publicly endorsed PSRM candidate Fiodor Gagauz for the second round.",
+     "url": "https://newsmaker.md/ro/gagauz-sau-stoianoglo-inca-un-fost-candidat-la-functia-de-bascan-a-decis-pe-cine-va-sprijini-in-turul-doi"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Third-place candidate Cornel Dudnic (15.59%, 7,354 votes) and sixth-place candidate Oleg Garizan (3.18%, 1,502 votes) announced their support for Fiodor Gagauz in the 29 November runoff after Stoianoglo did not respond to Dudnic's 15 policy conditions.",
+     "url": "https://nokta.md/eshhyo-tri-byvshih-kandidata-v-bashkany-podderzhali-fedora-gagauza-pered-vtorym-turom/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Comrat Mayor Serghei Anastasov, who finished fifth in the first round with 4.72% of the vote, announced that he will remain neutral and not endorse either candidate in the second round.",
+     "url": "https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Fiodor Gagauz did not attend the final televised electoral debate with Alexandr Stoianoglo on Gagauzia's public broadcaster GRT prior to the end of campaigning on 27 November 2026.",
+     "url": "https://nokta.md/gagauz-ne-prishyol-na-debaty-so-stoyanoglo-pered-vtorym-turom/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "The Promo-LEX observation mission reported that during the second-round campaign period, 56 of 77 documented campaign activities for Bashkan were conducted by Fiodor Gagauz's campaign compared to 21 by Alexandr Stoianoglo's campaign.",
+     "url": "https://promolex.md/ru/promo-lex-predstavila-tretij-otchyot-o-nablyudenii-za-regionalnymi-vyborami-v-ato-gagauziya/"
+    }
+   ],
+   "counter": "Four eliminated candidates who collectively won 31.8% of the first-round vote (15,006 votes)—including third-place finisher Cornel Dudnic and fourth-place finisher Ivanna Koksal—have publicly backed Fiodor Gagauz, while none have endorsed Stoianoglo. Combined with the Socialist Party's much more active ground campaign in Gagauzia and local voter preference for hardline opposition to Chișinău, this consolidated bloc has more than enough votes to overcome Stoianoglo's 6,710-vote first-round lead."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:16:20Z",
+   "p": 0.55,
+   "searches": 15,
+   "sources": [
+    "https://a.cec.md/ro/print/cec-a-stabilit-pentru-15-noiembrie-2026-data-alegerilor-pentru-functia-de-guvern--2781_120225.html",
+    "https://a.cec.md/ro/autoritatile-isi-coordoneaza-actiunile-pentru-prevenirea-si-dupa-caz-2781_120825.html",
+    "https://evz.ro/stoianoglo-si-gagauz-merg-in-turul-doi-cand-va-avea-loc-votul-decisiv-in-gagauzia.html",
+    "https://radiomoldova.md/p/89810",
+    "https://www.infotag.md/rebelion-en/335552/",
+    "https://voceabasarabiei.md/sondaj-stoianoglo-conduce-in-intentiile-de-vot-pentru-functia-de-bascan-al-uta-gagauzia-dar-multi-alegatori-sunt-inca-indecisi/",
+    "https://ziua.md/ultima-zi-de-campanie-electorala-in-gagauzia-duminica-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi-pentru-functia-de-bascan/",
+    "https://en.wikipedia.org/wiki/2026_Gagauz_general_election",
+    "https://logos-pres.md/en/news/the-second-round-of-the-election-for-the-post-of-bashkan-of-gagauzia-will-take-place-on-29-november/",
+    "https://cece.cec.md/ro/regions/uta-gagauzia/alegeri-pentru-functia-de-guvernator-bascan-al-gagauziei/alegeri-pentru-0",
+    "https://timpul.md/articol/3844-pentru-stoianoglo-2422-pentru-gagauz-turul-doi-pentru-bascanul-gagauziei-pe-29-noiembrie-4af9cf1c.html",
+    "https://theoverlooked.news/story/608-moldova-gagauzia-bashkan-peoples-assembly-election-november-15-eight-candidates-gutul",
+    "https://stiri.md/article/politica/gagauz-vs-stoianoglo-strategiile-electorale-inaintea-votului-decisiv-din-gagauzia",
+    "https://en.wikipedia.org/wiki/2023_Gagauz_gubernatorial_election",
+    "https://lumeapolitica.ro/actualitate/stoianoglo-gagauz-turul-doi-bascan-gagauzia/",
+    "https://www.infotag.md/rebelion-en/335272/",
+    "https://cotidianul.md/42693/rezultatele-alegerilor-din-gagauzia-2026-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi/",
+    "https://www.deschide.md/mihai-isac-miza-alegerilor-din-gagauzia-ramane-comratul-reduta-lumii-ruse",
+    "https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor",
+    "https://primapagina.ro/2026-11-16/turul-doi-pentru-bascanul-gagauziei.html",
+    "https://www.cotidianul.ro/cine-va-fi-noul-bascan-din-gagauzia-alexandr-stoianoglo-si-fiodor-gagauz-merg-in-turul-al-doilea-dupa-un-prim-scrutin-validat/",
+    "https://ziua.md/stoianoglo-si-gagauz-se-vor-duela-in-turul-doi-al-alegerilor-pentru-functia-de-bascan-al-gagauziei/",
+    "https://moldova1.md/p/90316",
+    "https://evedomosti.md/news/stoyanoglo-lidiruet-po-urovnyu-podderzhki-izbiratelej-na-vyb",
+    "https://ziua.md/alexandr-stoianoglo-si-fiodor-gagauz-favoriti-pentru-postul-de-bascan-arata-un-nou-sondaj-imas/"
+   ],
+   "reason": "The second round is set and the first-round leader is only a modest favorite. A 14-point plurality lead usually holds in a two-candidate runoff, but here most of the eliminated field is pointing at the trailer, and the only recent Gagauzia bashkan runoff was decided by organization as much as by the first-round order.\n\nComparable base rate: in the 2023 Gagauzia bashkan runoff the first-round leader won, but the gap that year was 0.07 points and the winner had the stronger machine. A double-digit first-round lead wins most two-candidate runoffs; when the rest of the field endorses the second-place candidate, that rate falls toward a slim favorite, roughly the mid-50s to low-60s before local adjustments.\n\nDated facts that move this case: the vote is on the calendar. The CEC set the bashkan runoff for 29 November between Stoianoglo (18,136 votes, 38.44%) and Gagauz (11,426, 24.22%) after a valid first round at 37.60% turnout, and as of 27 November campaigning was in its last legal day with ballots already printed. That pushes the “not held” risk near zero. Infotag reported a 20% validity threshold for a second round, against a first-round turnout of 37.6%, so invalidation is possible but not the central risk. The vote math is less comfortable for the leader. Koksal (11.05%) endorsed Gagauz on 22 November; Vlah and, on 26 November, Garizan did likewise. On 27 November NewsMaker reported that Dudnic (15.59%) refused a formal deal but said he and his family will vote for Gagauz, while Comrat mayor Anastasov stayed neutral. Gagauz has also outspent Stoianoglo by about nine to one on advertising and is campaigning with the PSRM territorial network. Those facts cut the value of the 6,710-vote cushion: a partial transfer of the endorsed and soft-endorsed blocs is enough to erase it.\n\nThe obvious outcome is still a Stoianoglo win in a valid count. The strongest way that fails is consolidation. Official or personal signals from candidates who took about 32% of the first-round vote all point at Gagauz, he has the party machine, and Stoianoglo has picked up no eliminated-candidate endorsement. If roughly three-fifths of that bloc follows the signals and both bases turn out, Gagauz finishes ahead. A turnout collapse under the second-round threshold, or a last-minute cancellation, would also resolve the claim NO, but both are less likely than a straight Gagauz plurality.\n\nNEW FACTS\n- 2026-11-16 | After all 67 protocols, Stoianoglo had 18,136 votes (38.44%) and Fiodor Gagauz 11,426 (24.22%), with turnout at 37.60%, and the runoff was expected on 29 November. | https://ipn.md/en/stoianoglo-and-gagauz-will-face-off-in-the-runoff-election-for-bashkan-of-gagauzia/\n- 2026-11-16 | Infotag reported that a 20% turnout threshold applies to a second round of voting in these Gagauzia elections, and that the bashkan runoff would be held on 29 November. | https://www.infotag.md/rebelion-en/335272/\n- 2026-11-18 | Moldova’s Central Electoral Commission decided that the bashkan runoff, plus People’s Assembly runoffs, would be held on 29 November 2026. | https://ipn.md/en/the-second-round-of-elections-for-the-bashkan-and-the-peoples-assembly-of-gagauzia-will-take-place-on-november-29/\n- 2026-11-22 | Former candidate Ivanna Koksal, fourth in the first round with 11.05%, announced she would support Fiodor Gagauz in the runoff. | https://ipn.md/ivanna-koksal-il-sustine-pe-fiodor-gagauz-in-turul-doi-al-alegerilor-pentru-functia-de-bascan/\n- 2026-11-26 | Știri.md reported that, from 16 October to 22 November, Gagauz raised more than five times as much in donations as Stoianoglo and spent about nine times as much on electoral advertising. | https://stiri.md/article/politica/gagauz-vs-stoianoglo-strategiile-electorale-inaintea-votului-decisiv-din-gagauzia\n- 2026-11-26 | The CEC said the Gagauzia second round would be held on Sunday 29 November 2026 and discussed prevention of illegal campaign financing ahead of that vote. | https://a.cec.md/ro/autoritatile-isi-coordoneaza-actiunile-pentru-prevenirea-si-dupa-caz-2781_120825.html\n- 2026-11-27 | NewsMaker reported that Dudnic would not officially endorse either finalist but said he and his family would vote for Gagauz, that Garizan had backed Gagauz on 26 November, and that Koksal and Vlah had already endorsed Gagauz. | https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor\n- 2026-11-27 | ZIUA.md reported that 27 November was the last legal campaign day, that agitation is banned from 28 November, and that 216,750 ballots had been printed for Sunday’s vote. | https://ziua.md/ultima-zi-de-campanie-electorala-in-gagauzia-duminica-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi-pentru-functia-de-bascan/\n\nCOUNTER\nGagauz does not need a miracle, only a partial harvest of the eliminated field. Candidates who took roughly a third of the first-round vote have either endorsed him or said they will vote for him, he is outspending and out-organizing Stoianoglo through the Socialist network, and a net swing of only a few thousand votes wipes out the first-round cushion. If those voters follow the signals and both cores turn out, the preliminary count shows Gagauz ahead in a valid round.",
+   "facts": [
+    {
+     "date": "2026-11-16",
+     "fact": "After all 67 protocols, Stoianoglo had 18,136 votes (38.44%) and Fiodor Gagauz 11,426 (24.22%), with turnout at 37.60%, and the runoff was expected on 29 November.",
+     "url": "https://ipn.md/en/stoianoglo-and-gagauz-will-face-off-in-the-runoff-election-for-bashkan-of-gagauzia/"
+    },
+    {
+     "date": "2026-11-16",
+     "fact": "Infotag reported that a 20% turnout threshold applies to a second round of voting in these Gagauzia elections, and that the bashkan runoff would be held on 29 November.",
+     "url": "https://www.infotag.md/rebelion-en/335272/"
+    },
+    {
+     "date": "2026-11-18",
+     "fact": "Moldova’s Central Electoral Commission decided that the bashkan runoff, plus People’s Assembly runoffs, would be held on 29 November 2026.",
+     "url": "https://ipn.md/en/the-second-round-of-elections-for-the-bashkan-and-the-peoples-assembly-of-gagauzia-will-take-place-on-november-29/"
+    },
+    {
+     "date": "2026-11-22",
+     "fact": "Former candidate Ivanna Koksal, fourth in the first round with 11.05%, announced she would support Fiodor Gagauz in the runoff.",
+     "url": "https://ipn.md/ivanna-koksal-il-sustine-pe-fiodor-gagauz-in-turul-doi-al-alegerilor-pentru-functia-de-bascan/"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "Știri.md reported that, from 16 October to 22 November, Gagauz raised more than five times as much in donations as Stoianoglo and spent about nine times as much on electoral advertising.",
+     "url": "https://stiri.md/article/politica/gagauz-vs-stoianoglo-strategiile-electorale-inaintea-votului-decisiv-din-gagauzia"
+    },
+    {
+     "date": "2026-11-26",
+     "fact": "The CEC said the Gagauzia second round would be held on Sunday 29 November 2026 and discussed prevention of illegal campaign financing ahead of that vote.",
+     "url": "https://a.cec.md/ro/autoritatile-isi-coordoneaza-actiunile-pentru-prevenirea-si-dupa-caz-2781_120825.html"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "NewsMaker reported that Dudnic would not officially endorse either finalist but said he and his family would vote for Gagauz, that Garizan had backed Gagauz on 26 November, and that Koksal and Vlah had already endorsed Gagauz.",
+     "url": "https://newsmaker.md/ro/stoianoglo-vs-gagauz-pe-cine-sustin-anastasov-dudnic-si-garizan-in-turul-ii-al-alegerilor"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "ZIUA.md reported that 27 November was the last legal campaign day, that agitation is banned from 28 November, and that 216,750 ballots had been printed for Sunday’s vote.",
+     "url": "https://ziua.md/ultima-zi-de-campanie-electorala-in-gagauzia-duminica-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi-pentru-functia-de-bascan/"
+    }
+   ],
+   "counter": "Gagauz does not need a miracle, only a partial harvest of the eliminated field. Candidates who took roughly a third of the first-round vote have either endorsed him or said they will vote for him, he is outspending and out-organizing Stoianoglo through the Socialist network, and a net swing of only a few thousand votes wipes out the first-round cushion. If those voters follow the signals and both cores turn out, the preliminary count shows Gagauz ahead in a valid round."
+  }
+ ]
+}

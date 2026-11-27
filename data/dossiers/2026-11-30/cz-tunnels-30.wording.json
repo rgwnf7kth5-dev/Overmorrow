@@ -1,0 +1,32 @@
+{
+ "claim": "Brno's Pisárecké tunnels reopen to traffic in both directions by 23:59 on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:20:52Z",
+   "ambiguous": true,
+   "scenario": "Both tubes reopen at 23:50 on Sunday, but the first qualifying report appears on Monday and confirms the 23:50 reopening. One reader could resolve YES because the reopening occurred within the window; another could resolve NO because they read the deadline as applying to the report as well.",
+   "yes_requires": "Both tubes of Brno’s Pisárecký tunnel must reopen to general motor traffic between 19:00 on Friday 27 November 2026 and 23:59 on Sunday 29 November 2026, Prague time. Speed limits, lane restrictions, and unfinished tests do not prevent a YES. Opening only one tube is not enough, and the Hlinky tunnel does not count.",
+   "decided_by": "Reporting from ŘSD, the City of Brno, ČTK, or another major Czech news outlet confirming that both tubes reopened."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:20:57Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Both tubes (directions) of the Pisárecký tunnel in Brno must be open to general motor traffic by 23:59 Prague time on Sunday, 29 November 2026.",
+   "decided_by": "Reports from ŘSD, the City of Brno, ČTK, or another major Czech media outlet."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:23:08Z",
+   "ambiguous": true,
+   "scenario": "ŘSD reports that both tubes are open to general motor traffic, while the City of Brno or ČTK reports that only one tube has reopened. The criterion lists those sources with 'or' and states no priority or conflict rule, so one careful reader resolves YES on the positive report and another resolves NO because a listed authority denies that both tubes are open.",
+   "yes_requires": "By 23:59 Prague time on Sunday 29 November 2026, both tubes of Brno's Pisárecký tunnel are open to general motor traffic, as reported by a qualifying source. One tube or one direction only is NO; a speed limit, lane restriction, or unfinished tests does not prevent YES. The Hlinky tunnel does not count.",
+   "decided_by": "Reports from ŘSD, the City of Brno, ČTK, or another major Czech outlet"
+  }
+ ]
+}

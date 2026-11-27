@@ -1,0 +1,159 @@
+{
+ "claim": "A SpaceX Falcon 9 lifts off from Cape Canaveral carrying Northrop Grumman's Cygnus XL on NASA's NG-25 resupply mission to the International Space Station on Sunday 29 November 2026 (US Eastern Time).",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:10:32Z",
+   "p": 0.55,
+   "searches": 2,
+   "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPZUNeLNzp1AWPr9ubtla34cx36skYZazHmduE2mD-sWbb6DkBmEzvURSP_JV41p-M9txL93oGxugFfUJxBaE0MzaJJ8TWmQTJgjzugeKd1xJDSgAJbBS8rA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNUd6ojEkKD03KsPVKtyXhMhL5Y6kXgrd2tejgj_JR9CX2kTqKWU8QWtO2pNLgbqg-TiqKAePu88SGnOWRMGn7JqvU968R-IN_rraQneH-qu9uniCfYCL1fZVehGx26m0ntQJ3Fkb8n_wPKWeaYlDp",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKnHtLY8Fm3BeLkMkJ3ifYcpyh6jXW_344w4MjF-QNk2Lob7hbjxYK4_8IkkkezoDKKuJ7RNcevKtTx3_r8QvJfLemF47wy4CCt-t5wbRiZig1B-if_iO156EphRGe_KgIkdKPpAjH7IBDziTAG5PucueRu5Zf1G_E2nXQ8AHMzFefm3ASGw0Q7058dyHNdeWvqi6_JGhM",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsPUFA0nAFN8NDXSe2jxfcFLZDPPxvDN0majzTNom_JYiUuYWtucx2mAZS0dCyZpszycWDzwa9iPdpR60uruWuEP5nFh7q_Nemy8A0tiS30Exa9Osm1AHe7pp6ZXydXIVSC9YIvdk6Lm_t8ZhGSgqcyBkY4ppnRr1OknoyyKlCXoFUrq0hhWVAQBabLw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfONXMMdvTfwIR2GV_uGaDXW5hWc9Ypi-oUswiH84lx6_izvmC8bDY-OWhPVP9F-wFFnW0V_HH75d_keM9Tvxpl4mVg6CpxAVfyW6anD3mMgaoTd9DbsXJBb-f-Fe3EECI28ldmqrkq-WuRQLarsMdq-xwSfayO3MBaZ87k8Gkq3-kZ_ajpklhmjrCuZeN626DAVsT40QHF2GQ8ERHNTo9MSQY3qd4sb36QA0="
+   ],
+   "reason": "**1. Base Rate for Comparable Cases**\nSpaceX Falcon 9 launches from Cape Canaveral that remain officially targeted for a specific date two days prior to liftoff (after passing their Mission Management Team / Launch Readiness Review poll) historically launch on that scheduled day roughly 70% to 75% of the time. However, missions to the International Space Station (such as Cygnus or Cargo Dragon CRS missions) have an instantaneous launch window—meaning that any transient weather rule violation, range conflict, or minor technical hold around T-0 forces an immediate 24-hour scrub rather than a short delay within a multi-hour window. For instantaneous-window ISS launches two days out, the base rate of launching on the exact scheduled day is approximately 60%–65%.\n\n**2. Dated Facts Moving This Case**\n* **2026-11-18 & 2026-11-24 (Positive):** NASA officially set the target launch time for the Northrop Grumman CRS-25 (NG-25) Cygnus XL mission atop a Falcon 9 at SLC-40 for 10:47 a.m. EST on Sunday, November 29, 2026, and this target time has held steady without change.\n* **2026-11-23 (Positive):** During the prelaunch news teleconference, NASA's Low Earth Orbit Program operations integration manager Gaurang Patel confirmed that teams were not tracking any technical issues with either the Cygnus XL spacecraft or the Falcon 9 launch vehicle.\n* **2026-11-27 (Positive):** On Friday afternoon (two days before launch), NASA reported that the International Space Station Mission Management Team polled \"go\" to continue launch preparations for the 10:47 a.m. EST Sunday launch, with the rocket scheduled to roll to the pad on Saturday, November 28.\n* **2026-11-27 (Negative):** In the same Friday update, NASA stated that early weather forecasts show only a 60% chance of favorable conditions for Sunday's launch attempt, noting the \"thick cloud layer rule\" as the primary weather concern.\n\n**3. Strongest Reason the Obvious Outcome Might Fail**\nBecause ISS rendezvous missions require an instantaneous launch window (10:47 a.m. EST), there is zero margin to wait out passing weather at the launch site. With the official 45th Weather Squadron forecast already showing a 40% probability of a weather violation due to thick cloud layers, combined with a small (~5%–10%) residual risk of an automated ground/vehicle abort or range issue during the final countdown, there is slightly over a 40% chance the launch scrubs to the backup opportunity on Monday, November 30. Combining a 60% weather probability with a ~92% technical/range readiness probability yields a net liftoff probability of roughly 55%.\n\nNEW FACTS\n- 2026-11-18 | NASA, Northrop Grumman, and SpaceX announced they are targeting no earlier than 10:47 a.m. EST on Sunday, November 29, 2026, for the launch of the Northrop Grumman CRS-25 mission from Space Launch Complex 40 at Cape Canaveral Space Force Station. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKnHtLY8Fm3BeLkMkJ3ifYcpyh6jXW_344w4MjF-QNk2Lob7hbjxYK4_8IkkkezoDKKuJ7RNcevKtTx3_r8QvJfLemF47wy4CCt-t5wbRiZig1B-if_iO156EphRGe_KgIkdKPpAjH7IBDziTAG5PucueRu5Zf1G_E2nXQ8AHMzFefm3ASGw0Q7058dyHNdeWvqi6_JGhM\n- 2026-11-23 | During a prelaunch teleconference, NASA's Low Earth Orbit Program operations integration manager Gaurang Patel stated that teams were not tracking any technical issues with the Cygnus XL spacecraft or the Falcon 9 launch vehicle. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsPUFA0nAFN8NDXSe2jxfcFLZDPPxvDN0majzTNom_JYiUuYWtucx2mAZS0dCyZpszycWDzwa9iPdpR60uruWuEP5nFh7q_Nemy8A0tiS30Exa9Osm1AHe7pp6ZXydXIVSC9YIvdk6Lm_t8ZhGSgqcyBkY4ppnRr1OknoyyKlCXoFUrq0hhWVAQBabLw==\n- 2026-11-27 | The International Space Station Mission Management Team polled \"go\" on Friday to proceed toward the 10:47 a.m. EST Sunday launch, with SpaceX scheduled to roll the Falcon 9 rocket to the pad on Saturday, November 28. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfONXMMdvTfwIR2GV_uGaDXW5hWc9Ypi-oUswiH84lx6_izvmC8bDY-OWhPVP9F-wFFnW0V_HH75d_keM9Tvxpl4mVg6CpxAVfyW6anD3mMgaoTd9DbsXJBb-f-Fe3EECI28ldmqrkq-WuRQLarsMdq-xwSfayO3MBaZ87k8Gkq3-kZ_ajpklhmjrCuZeN626DAVsT40QHF2GQ8ERHNTo9MSQY3qd4sb36QA0=\n- 2026-11-27 | NASA reported that early weather forecasts show a 60% chance of favorable weather conditions for Sunday's launch attempt, with the thick cloud layer rule identified as the primary weather concern and a backup launch opportunity set for 10:24 a.m. EST on Monday, November 30. | https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfONXMMdvTfwIR2GV_uGaDXW5hWc9Ypi-oUswiH84lx6_izvmC8bDY-OWhPVP9F-wFFnW0V_HH75d_keM9Tvxpl4mVg6CpxAVfyW6anD3mMgaoTd9DbsXJBb-f-Fe3EECI28ldmqrkq-WuRQLarsMdq-xwSfayO3MBaZ87k8Gkq3-kZ_ajpklhmjrCuZeN626DAVsT40QHF2GQ8ERHNTo9MSQY3qd4sb36QA0=\n\nCOUNTER\nBecause missions to the International Space Station rely on an instantaneous launch window, the rocket cannot wait on the pad if weather conditions temporarily violate launch commit criteria at 10:47 a.m. EST. With weather officials already citing the thick cloud layer rule as a primary concern and a significant risk of unfavorable weather, any cloud violation or last-minute ground system hold at T-0 will immediately force a 24-hour scrub to the backup window on Monday, November 30.",
+   "facts": [
+    {
+     "date": "2026-11-18",
+     "fact": "NASA, Northrop Grumman, and SpaceX announced they are targeting no earlier than 10:47 a.m. EST on Sunday, November 29, 2026, for the launch of the Northrop Grumman CRS-25 mission from Space Launch Complex 40 at Cape Canaveral Space Force Station.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKnHtLY8Fm3BeLkMkJ3ifYcpyh6jXW_344w4MjF-QNk2Lob7hbjxYK4_8IkkkezoDKKuJ7RNcevKtTx3_r8QvJfLemF47wy4CCt-t5wbRiZig1B-if_iO156EphRGe_KgIkdKPpAjH7IBDziTAG5PucueRu5Zf1G_E2nXQ8AHMzFefm3ASGw0Q7058dyHNdeWvqi6_JGhM"
+    },
+    {
+     "date": "2026-11-23",
+     "fact": "During a prelaunch teleconference, NASA's Low Earth Orbit Program operations integration manager Gaurang Patel stated that teams were not tracking any technical issues with the Cygnus XL spacecraft or the Falcon 9 launch vehicle.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsPUFA0nAFN8NDXSe2jxfcFLZDPPxvDN0majzTNom_JYiUuYWtucx2mAZS0dCyZpszycWDzwa9iPdpR60uruWuEP5nFh7q_Nemy8A0tiS30Exa9Osm1AHe7pp6ZXydXIVSC9YIvdk6Lm_t8ZhGSgqcyBkY4ppnRr1OknoyyKlCXoFUrq0hhWVAQBabLw=="
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "The International Space Station Mission Management Team polled \"go\" on Friday to proceed toward the 10:47 a.m. EST Sunday launch, with SpaceX scheduled to roll the Falcon 9 rocket to the pad on Saturday, November 28.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfONXMMdvTfwIR2GV_uGaDXW5hWc9Ypi-oUswiH84lx6_izvmC8bDY-OWhPVP9F-wFFnW0V_HH75d_keM9Tvxpl4mVg6CpxAVfyW6anD3mMgaoTd9DbsXJBb-f-Fe3EECI28ldmqrkq-WuRQLarsMdq-xwSfayO3MBaZ87k8Gkq3-kZ_ajpklhmjrCuZeN626DAVsT40QHF2GQ8ERHNTo9MSQY3qd4sb36QA0="
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "NASA reported that early weather forecasts show a 60% chance of favorable weather conditions for Sunday's launch attempt, with the thick cloud layer rule identified as the primary weather concern and a backup launch opportunity set for 10:24 a.m. EST on Monday, November 30.",
+     "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfONXMMdvTfwIR2GV_uGaDXW5hWc9Ypi-oUswiH84lx6_izvmC8bDY-OWhPVP9F-wFFnW0V_HH75d_keM9Tvxpl4mVg6CpxAVfyW6anD3mMgaoTd9DbsXJBb-f-Fe3EECI28ldmqrkq-WuRQLarsMdq-xwSfayO3MBaZ87k8Gkq3-kZ_ajpklhmjrCuZeN626DAVsT40QHF2GQ8ERHNTo9MSQY3qd4sb36QA0="
+    }
+   ],
+   "counter": "Because missions to the International Space Station rely on an instantaneous launch window, the rocket cannot wait on the pad if weather conditions temporarily violate launch commit criteria at 10:47 a.m. EST. With weather officials already citing the thick cloud layer rule as a primary concern and a significant risk of unfavorable weather, any cloud violation or last-minute ground system hold at T-0 will immediately force a 24-hour scrub to the backup window on Monday, November 30."
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:10:39Z",
+   "p": 0.57,
+   "searches": 7,
+   "sources": [
+    "https://www.nasa.gov/news-release/nasa-sets-coverage-for-spacex-34th-station-resupply-launch-arrival/",
+    "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/",
+    "https://www.nasa.gov/news-release/nasa-sets-coverage-for-northrop-grumman-crs-25-launch-prelaunch/?rand=772197",
+    "https://www.nasa.gov/mission/nasas-northrop-grumman-crs-25/",
+    "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/",
+    "https://www.nasa.gov/event/nasas-northrop-grumman-crs-25/",
+    "https://www.nasa.gov/blogs/spacestation/2026/11/24/crew-awaits-thanksgiving-day-delivery-as-another-cargo-craft-nears-launch/",
+    "https://www.nasa.gov/events/",
+    "https://www.nasa.gov/commercial-resupply-news/",
+    "https://plus.nasa.gov/scheduled-events/",
+    "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+    "https://www.nasa.gov/directorates/space-operations/space-operations-news/",
+    "https://www.nasa.gov/news-release/",
+    "https://www.nasa.gov/wp-content/uploads/2026/04/fiscal-year-2027-full-budget-request.pdf?emrc=69d2d34fcbd56",
+    "https://www.spacex.com/assets/media/falcon-users-guide-2025-05-09.pdf",
+    "https://www.nasa.gov/wp-content/uploads/2024/04/fy-2025-full-budget-request-congressional-justification-update.pdf?emrc=6774351268c37",
+    "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+    "https://www.spacex.com/media/falcon-users-guide-2021-09.pdf",
+    "https://www.nasa.gov/wp-content/uploads/2023/03/nasa-fy-2024-cj-v3.pdf?emrc=698b703512b4e",
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture",
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
+    "https://www.nasa.gov/mission/nasas-spacex-crs-35/",
+    "https://www.maxq.app/weather/launches/falcon-9-block-5-cygnus-crs-2-ng-25",
+    "https://www.nasa.gov/event/nasas-spacex-crs-35/",
+    "https://www.nasa.gov/international-space-station/space-station-visiting-vehicles/"
+   ],
+   "reason": "**Base rate.** I’d start at roughly 80% for a Falcon 9 ISS cargo mission with a launch date still on the books two days out. That’s a judgment, not a measured fleet-wide rate: the two recent comparisons I could verify, SpaceX CRS-34 and CRS-35, both lifted off on the dates in NASA’s final prelaunch advisories, but that small sample does not capture earlier schedule slips. ([nasa.gov](https://www.nasa.gov/news-release/nasa-sets-coverage-for-spacex-34th-station-resupply-launch-arrival/))\n\n**What moves this case.** Up: NASA’s November 27 update kept the 10:47 a.m. EST Sunday target, and the ISS Mission Management Team voted to continue preparations. Down, by more: NASA reported only a 60% chance of favorable launch weather, with thick clouds the main concern. That’s a weather estimate, not a liftoff estimate; I discount it slightly for the possibility of a technical or range hold even if the weather cooperates. ([nasa.gov](https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/))\n\n**Risk of missing the window.** I put the chance of no Sunday liftoff at 43%, mostly because of weather. NASA lists the next opportunity at 10:24 a.m. EST Monday, November 30, so a Sunday scrub would push the mission outside the qualifying window. ([nasa.gov](https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/))\n\nNEW FACTS\n- 2026-11-27 | The ISS Mission Management Team voted to continue NG-25 launch preparations. | https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/\n- 2026-11-27 | NASA listed 10:47 a.m. EST on November 29 as the scheduled liftoff time. | https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/\n- 2026-11-27 | NASA identified the thick cloud layer rule as the primary weather concern. | https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/\n- 2026-11-27 | NASA listed 10:24 a.m. EST on November 30 as the next available launch opportunity. | https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/\n\nCOUNTER  \nThe vote to continue preparations was not a launch clearance: thick clouds could still violate the launch rule at the Sunday opportunity. If that forces a scrub, the next listed slot is Monday, too late to count. ([nasa.gov](https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/))",
+   "facts": [
+    {
+     "date": "2026-11-27",
+     "fact": "The ISS Mission Management Team voted to continue NG-25 launch preparations.",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "NASA listed 10:47 a.m. EST on November 29 as the scheduled liftoff time.",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "NASA identified the thick cloud layer rule as the primary weather concern.",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "NASA listed 10:24 a.m. EST on November 30 as the next available launch opportunity.",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/"
+    }
+   ],
+   "counter": "The vote to continue preparations was not a launch clearance: thick clouds could still violate the launch rule at the Sunday opportunity. If that forces a scrub, the next listed slot is Monday, too late to count. ([nasa.gov](https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/))"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:11:43Z",
+   "p": 0.52,
+   "searches": 14,
+   "sources": [
+    "https://globalmeteo.com/weather/cocoa-beach-cape-canaveral/14days/",
+    "https://45thweathersquadron.nebula.spaceforce.mil/pages/launchForecastSupport.html",
+    "https://globalmeteo.com/weather/cape-canaveral/10days/",
+    "https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches",
+    "https://spacex-news.com/launches/falcon-9-block-5-cygnus-crs-2-ng-25/",
+    "https://www.google.com/url?opi=89978449&q=CAESbwHEIkXXCmCALguGXUmvUkXyy5ukYhCdzv3tNKoBmleMdbHmST9RDx223ccNp-Nf_lRwZnu3UdM7dol-aheFD35HKw4fZyyiqhcSxlUXTsMwqa3K6Trv-gy4SRQ4awDeOlFeTSci1YlpekHjvE5fzA&sa=U&uoh=3&ved=2ahUKEwjAn-OqtvOXAxX6kWoFHRC_Gd4QFnoECAgQAg&usg=AOvVaw2yLuOAbdk_5XwsgywutItO",
+    "https://spacecoastwire.com/launches/falcon-9-cygnus-crs-2-ng-25",
+    "https://spacetracker.live/latest-astronomy-news/ng-25-cygnus-launch-jim-lovell-november-29/",
+    "https://45thweathersquadron.nebula.spaceforce.mil/assets/LaunchForecasts/Falcon%20Heavy%20Roman%20Space%20Telescope%20L-1%20Forecast%20-%2030%20Aug%20Launch.pdf",
+    "https://keeptrack.space/deep-dive/falcon-9-launch-tracker",
+    "https://teslanorth.com/2026/11/24/northrop-cygnus-spacex-falcon-9-after-ng-25/",
+    "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/",
+    "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/",
+    "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+    "https://x.com/Space_Station/status/2124941052675047444",
+    "https://www.spacex.com/launches/ng25",
+    "https://www.willyweather.com/fl/brevard-county/cape-canaveral.html",
+    "https://looktospace.com/launches/falcon-9-block-5-cygnus-crs-2-ng-25",
+    "https://spacelaunchnow.app/launch/falcon-9-block-5-cygnus-crs-2-ng-25/",
+    "https://earthwatch247.com/e/2026-11-29-launch-falcon-9-block-5-cygnus-crs-2-ng-25/",
+    "https://nextliftoff.com/launch/cygnus-crs-2-ng-25-d74afbc7",
+    "https://www.nasa.gov/mission/nasas-northrop-grumman-crs-25/",
+    "https://en.wikipedia.org/wiki/Cygnus_NG-25",
+    "https://www.spacecapex.com/en/launches/falcon-9-block-5-cygnus-crs-2-ng-25",
+    "https://www.flightatlas.org/launches/16440-cygnus-crs-2-ng-25"
+   ],
+   "reason": "The base rate for Falcon 9 Cape Canaveral attempts with an instantaneous window is that a large majority fly on the targeted day once hardware is ready and the weather squadron’s probability of violation is moderate, because non-weather scrubs in the final 48 hours are uncommon on a mature, flight-proven booster. Recent ISS cargo missions follow the same pattern when the primary constraint is a single weather rule rather than a vehicle or range problem.\n\nDated developments pull this case only modestly away from that base rate. NASA and SpaceX remain targeted for 10:47 a.m. EST on 29 November with the vehicle scheduled to roll on the 28th, and the station management team has already polled “go.” The same update, however, quotes only a 60 percent chance of favorable conditions, with the thick-cloud rule identified as the leading concern, and independent forecasts issued the same day continue to show overcast skies over the Cape on the 29th.\n\nThe clearest path to a NO resolution is therefore a weather scrub at the instantaneous window that slides the attempt to the published 30 November backup (or later). A late technical hold that cannot be recycled inside a zero-duration window remains a smaller additional risk.\n\nNEW FACTS\n- 2026-11-27 | NASA’s ISS blog stated that the Mission Management Team had polled go, early forecasts showed a 60 percent chance of favorable conditions with the thick-cloud rule as the primary concern, rollout was set for 28 November, and liftoff remained targeted for 10:47 a.m. EST on 29 November with a 30 November backup. | https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/\n- 2026-11-27 | Cape Canaveral public forecasts issued that day called for cloudy to overcast conditions on 29 November with only low chances of precipitation. | https://www.willyweather.com/fl/brevard-county/cape-canaveral.html\n- 2026-11-13 | SpaceX’s NG-25 mission page listed a target of 10:47 a.m. ET on 29 November from SLC-40 and a backup opportunity at 10:24 a.m. ET on 30 November. | https://www.spacex.com/launches/ng25\n- 2026-11-27 | Launch-tracking pages continued to list the mission as “go for launch” at 15:47 UTC on 29 November with no reported hardware delays. | https://spacerightnow.com/launches/falcon-9-block-5-cygnus-crs-2-ng-25\n\nCOUNTER\nPersistent thick cloud cover could still violate the launch-commit criteria at the exact instantaneous liftoff time on 29 November even if the rocket is on the pad and otherwise healthy, forcing a scrub to the 30 November backup. Public model guidance already shows overcast conditions that day, and the weather probability cited by NASA can easily move lower before the final poll.",
+   "facts": [
+    {
+     "date": "2026-11-27",
+     "fact": "NASA’s ISS blog stated that the Mission Management Team had polled go, early forecasts showed a 60 percent chance of favorable conditions with the thick-cloud rule as the primary concern, rollout was set for 28 November, and liftoff remained targeted for 10:47 a.m. EST on 29 November with a 30 November backup.",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/27/nasa-partners-preps-on-track-for-sunday-space-station-cargo-launch/"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Cape Canaveral public forecasts issued that day called for cloudy to overcast conditions on 29 November with only low chances of precipitation.",
+     "url": "https://www.willyweather.com/fl/brevard-county/cape-canaveral.html"
+    },
+    {
+     "date": "2026-11-13",
+     "fact": "SpaceX’s NG-25 mission page listed a target of 10:47 a.m. ET on 29 November from SLC-40 and a backup opportunity at 10:24 a.m. ET on 30 November.",
+     "url": "https://www.spacex.com/launches/ng25"
+    },
+    {
+     "date": "2026-11-27",
+     "fact": "Launch-tracking pages continued to list the mission as “go for launch” at 15:47 UTC on 29 November with no reported hardware delays.",
+     "url": "https://spacerightnow.com/launches/falcon-9-block-5-cygnus-crs-2-ng-25"
+    }
+   ],
+   "counter": "Persistent thick cloud cover could still violate the launch-commit criteria at the exact instantaneous liftoff time on 29 November even if the rocket is on the pad and otherwise healthy, forcing a scrub to the 30 November backup. Public model guidance already shows overcast conditions that day, and the weather probability cited by NASA can easily move lower before the final poll."
+  }
+ ]
+}

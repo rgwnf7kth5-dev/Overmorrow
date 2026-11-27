@@ -1,0 +1,32 @@
+{
+ "claim": "Zoran Janković is re-elected mayor of Ljubljana in the runoff on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:21:02Z",
+   "ambiguous": true,
+   "scenario": "The runoff is held on time, but the preliminary count first reaches 95% after 23:59, with Janković ahead and no official result yet. One reader could resolve YES because the window applies to when the runoff is held and the criterion explicitly allows the count to remain pending. Another could resolve NO by reading the final window sentence as requiring a qualifying result within the window.",
+   "yes_requires": "The Ljubljana mayoral runoff must be held within the stated window on 29 November 2026, Ljubljana time. Janković must have more votes than Mesec in the official result including postal votes if it is available when the resolver reads; otherwise, he must lead in the preliminary count after at least 95% of votes cast at polling stations have been counted.",
+   "decided_by": "Slovenia’s State Election Commission (DVK). If the DVK site cannot be read, RTV Slovenija or STA reporting of the DVK count decides. Later appeals or recounts do not change the resolution."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:21:12Z",
+   "ambiguous": true,
+   "scenario": "Because resolution depends on whether the official results (which include postal votes counted on Monday) are published 'before the resolver reads', two careful readers resolving the claim at different times could reach opposite conclusions if Zoran Janković leads on Sunday night after 95% of polling-station votes are counted, but Luka Mesec overtakes him when postal votes or the remaining 5% of precincts are later added.",
+   "yes_requires": "The Ljubljana mayoral runoff must be held on 29 November 2026, and the DVK's preliminary unofficial results (with at least 95% of polling-station votes counted) or the official results including postal votes (if published before resolution) must show Zoran Janković with more votes than Luka Mesec.",
+   "decided_by": "The State Election Commission (DVK, volitve.dvk-rs.si), or RTV Slovenija (rtvslo.si) or STA reporting of the DVK count if the DVK site cannot be read."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:23:04Z",
+   "ambiguous": true,
+   "scenario": "At 23:59 on 29 Nov, DVK shows only 90% of polling-station votes counted and Janković ahead; at 00:40 on 30 Nov the preliminary count reaches 96% with Janković still ahead and no official result published. One reader applies the pending-until-95% rule and resolves YES; the other applies the event-window cutoff and resolves NO because the 95% count was not reached by 23:59.",
+   "yes_requires": "The Ljubljana mayoral runoff is held on 29 Nov 2026 (Europe/Ljubljana) and the deciding count shows Zoran Janković with more votes than Luka Mesec: DVK preliminary unofficial results once at least 95% of votes cast at polling stations are counted, overridden by an official DVK result that includes postal votes if that result is published before the resolver reads; if volitve.dvk-rs.si cannot be re",
+   "decided_by": "The State Election Commission (DVK) count on volitve.dvk-rs.si as of when the resolver reads it; RTV Slovenija (rtvslo.si) or STA only if the DVK site cannot be read."
+  }
+ ]
+}

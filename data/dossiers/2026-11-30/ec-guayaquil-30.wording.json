@@ -1,0 +1,32 @@
+{
+ "claim": "Cynthia Viteri wins the mayoralty of Guayaquil in Ecuador's sectional elections on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:20:06Z",
+   "ambiguous": true,
+   "scenario": "The election is held within the window, but the CNE first reaches 90% after the window closes, with Viteri leading. One reader resolves YES because the window governs when the election is held and the count can remain pending afterward. Another resolves NO because they read the final sentence as requiring the qualifying result itself to occur within the window.",
+   "yes_requires": "The Guayaquil mayoral election must be held on 29 November 2026 within the stated America/Guayaquil window. Cynthia Viteri must lead in valid votes in the CNE's provisional count once at least 90% of tally sheets have been processed, unless a CNE proclamation issued before the resolver reads names the winner, in which case that proclamation takes precedence.",
+   "decided_by": "The CNE's proclamation takes precedence over its provisional results. Otherwise, the CNE results portal or an official CNE announcement decides. If the portal cannot be read, Primicias, El Comercio, o"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:20:14Z",
+   "ambiguous": true,
+   "scenario": "The criterion and the event window conflict on timing, and the check time above 90% is unspecified: (1) If the election is held on 29 November 2026 during the event window, but the CNE count does not reach 90% of processed actas until 30 November 2026, one reader will follow the event window rule ('The claim is NO if the event [winning/reaching 90%] does not happen in this window') and resolve NO, while another will follow the criterion ('If fewer than 90% of actas are processed when the resolver reads, the claim stays pending') and wait to resolve YES/NO once 90% is reached. (2) If Cynthia Vi",
+   "yes_requires": "The election for mayor of Guayaquil is held on 29 November 2026, and either the National Electoral Council (CNE) officially proclaims Cynthia Viteri the winner before the resolver checks, or the CNE's provisional results with at least 90% of tally sheets (actas) processed show her with the most valid votes when the resolver checks.",
+   "decided_by": "The National Electoral Council (CNE) via resultados.cne.gob.ec or official announcement (or Primicias, El Comercio, or Teleamazonas reporting of the CNE count if the CNE portal cannot be read)."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:22:09Z",
+   "ambiguous": true,
+   "scenario": "Afterwards the CNE series shows Viteri with the most valid votes at 91% of actas and another candidate ahead at 99%, with no proclamation. The criterion uses whoever leads when the resolver reads but does not fix that time, so one reader resolves YES from the first bulletin at or above 90% and the other resolves NO from the latest.",
+   "yes_requires": "The Guayaquil mayoral election is held on 29 November 2026 (America/Guayaquil), and CNE provisional results for that contest, with at least 90% of actas processed, show Cynthia Viteri with the most valid votes, or the CNE proclaims her the winner before the resolver reads (a proclamation takes precedence). If the CNE portal cannot be read, Primicias, El Comercio, or Teleamazonas reporting of that ",
+   "decided_by": "The CNE (resultados.cne.gob.ec, a CNE announcement, or a CNE proclamation). If the CNE portal cannot be read, Primicias, El Comercio, or Teleamazonas reporting of the CNE count. Quick counts, exit pol"
+  }
+ ]
+}

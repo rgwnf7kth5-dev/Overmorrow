@@ -1,0 +1,32 @@
+{
+ "claim": "Swiss voters approve the amendment to the War Material Act in the federal vote on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:18:09Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The official provisional national result of the 29 November 2026 Swiss federal popular vote on the 19 December 2025 amendment to the Federal Act on War Material must show strictly more yes votes than no votes, and the vote must be held and published within the event window on 29 November 2026 (Europe/Zurich).",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch), with SRF or Keystone-SDA reporting of the official provisional result as a fa"
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:18:10Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The federal vote on the 19 December 2025 amendment to the War Material Act must be held on 29 November 2026, Zurich time, and the official provisional nationwide count must show more YES votes than NO votes. No cantonal majority is required.",
+   "decided_by": "The official provisional national result published by the Federal Statistical Office on its results dashboard or VoteInfo, or by the Federal Chancellery. If those official sources cannot be read, SRF "
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:20:03Z",
+   "ambiguous": true,
+   "scenario": "Before 23:59:00 the FSO dashboard shows a partial national total with more yes than no, while the completed provisional total—released by the Chancellery after 23:59:00, or a conflicting figure on the other named official page—has no votes equal to or ahead of yes. The criterion gives the two official sources no priority and does not say whether an incomplete same-day tally is already the resolving provisional result, so one reader counts the in-window partial YES and the other treats the later or conflicting complete figure, or the window cutoff, as NO.",
+   "yes_requires": "The federal popular vote on the 19 December 2025 amendment to the Federal Act on War Material is held on 29 November 2026 (Europe/Zurich), and its official provisional national result shows more yes votes than no votes.",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch); if those pages cannot be read, SRF or Keystone-SDA reporting of that official"
+  }
+ ]
+}

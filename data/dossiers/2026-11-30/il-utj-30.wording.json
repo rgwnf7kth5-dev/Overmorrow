@@ -1,0 +1,32 @@
+{
+ "claim": "The rabbinic leadership of United Torah Judaism authorises the party to open formal coalition negotiations with Gadi Eisenkot's Yashar by 23:59 Israel time on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:18:04Z",
+   "ambiguous": true,
+   "scenario": "Two eligible outlets report that the rabbis authorized Degel HaTorah to appoint a negotiating team and hold an initial meeting with Yashar to discuss coalition terms, but that the team would need further rabbinic approval before making commitments. Without a definition of 'formal coalition negotiations,' one reader could count the mandate to discuss terms as authorization to negotiate, while another could treat it as permission for exploratory talks only.",
+   "yes_requires": "Between 00:00 on 28 November and 23:59 on 29 November 2026, Israel time, the specified rabbinic leadership must authorize UTJ or Degel HaTorah to enter formal coalition negotiations with Gadi Eisenkot or Yashar, or UTJ and Yashar must formally open those talks with that approval. At least two eligible outlets must report the qualifying event as taking place in that window. Reports from 26–27 Novem",
+   "decided_by": "The qualifying approval must come from Degel HaTorah leaders Rabbis Dov Lando and Moshe Hillel Hirsch or from a Council of Torah Sages of UTJ or either faction. The reporting requirement is met by at "
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:18:07Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 00:00 on 28 November and 23:59 on 29 November 2026 (Israel time), UTJ's rabbinic leadership (Rabbis Dov Lando and Moshe Hillel Hirsch, or a Council of Torah Sages of UTJ or either of its factions) must authorise UTJ or its Degel HaTorah faction to enter formal coalition negotiations with Gadi Eisenkot's Yashar, or the parties must formally open such negotiations with that approval.",
+   "decided_by": "Reporting by at least two of the following media outlets: Times of Israel, Jerusalem Post (including Maariv copy), Ynet/Ynetnews, Haaretz, or Kan."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:19:26Z",
+   "ambiguous": true,
+   "scenario": "Two listed outlets report on 28 November that Rabbi Lando approved UTJ opening coalition talks with Yashar, described as carrying out a 27 November agreement in principle, without saying both named Degel leaders or a Council authorized formal negotiations and without saying talks were formally opened. One reader counts that as the required in-window authorization; the other treats it as short of formal negotiations, as only one of the two named leaders, or as a restatement of the excluded 26–27 agreement in principle.",
+   "yes_requires": "Between 00:00 on 28 November and 23:59 on 29 November 2026 Israel time, UTJ's specified rabbinic leadership (Rabbis Dov Lando and Moshe Hillel Hirsch, or a Council of Torah Sages of UTJ or of either faction) authorizes UTJ or its Degel HaTorah faction to enter formal coalition negotiations with Eisenkot/Yashar, or UTJ and Yashar formally open those negotiations with that approval, as reported by a",
+   "decided_by": "Whether at least two of Times of Israel, Jerusalem Post (including Maariv copy), Ynet/Ynetnews, Haaretz, and Kan report that the authorization or formal opening occurred inside the window, not the rab"
+  }
+ ]
+}

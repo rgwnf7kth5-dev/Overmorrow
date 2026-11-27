@@ -1,0 +1,32 @@
+{
+ "claim": "The People's Party wins the most seats in the Congress of Deputies in Spain's general election on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:17:58Z",
+   "ambiguous": true,
+   "scenario": "If 99.8% of returns are processed at 05:00 CET and PP is tied for the most seats, but the count reaches 100% at 06:00 and PP leads outright, one reader could treat 05:00 as a binding cutoff and resolve NO, while another could read the 05:00 cutoff as applying only to the partial-count fallback and resolve YES from the completed provisional count.",
+   "yes_requires": "Spain's general election must be held on 29 November 2026 within the stated Madrid-time window, and the People's Party's lists, including UPN–PP in Navarre, must collectively win strictly more Congress seats than the lists of any other party. PSOE's federation lists are counted together. A tie is NO.",
+   "decided_by": "The Interior Ministry's provisional seat totals at 100% of polling-station returns processed, or at the highest share available at 05:00 CET on 30 November if at least 99% is processed. If the ministr"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:17:59Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "In Spain's general election held on 29 November 2026, the People's Party's candidacies (including its regional names and the UPN–PP joint list in Navarre) must collectively win strictly more seats in the Congress of Deputies than the candidacies of any other party (including all federations for PSOE), according to the provisional results at 100% of polling-station returns processed (or at least 99",
+   "decided_by": "The Spanish Interior Ministry's provisional results website (resultados.29neleccionesgenerales.es), or if unreadable, the ministry's provisional count as reported by RTVE or EFE."
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:19:09Z",
+   "ambiguous": true,
+   "scenario": "At 05:00 CET on 30 November the ministry site shows 99.3% processed with PP strictly ahead, but the same provisional count reaches 100% later that morning and another party's candidacies then have more seats. One reader treats the 05:00 reading of at least 99% as final; another treats a later 100% provisional total as the primary rule and resolves the opposite way.",
+   "yes_requires": "The general election is held on 29 November 2026 (Europe/Madrid), and in the Interior Ministry provisional Congress count the summed seats of all Partido Popular and Partit Popular lists plus the Navarre joint list UPN-PP are strictly greater than the summed seats of every other party's candidacies, with PSOE including PSC, PSdeG, PSE-EE, PSN and its other federations. The count used is the provis",
+   "decided_by": "The Interior Ministry provisional results at resultados.29neleccionesgenerales.es; if that site cannot be read, the ministry provisional seat totals as reported by RTVE or EFE."
+  }
+ ]
+}

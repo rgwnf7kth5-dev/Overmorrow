@@ -1,0 +1,32 @@
+{
+ "claim": "Swiss voters reject the 'Fairness' initiative on federal taxation of married couples.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:21:20Z",
+   "ambiguous": true,
+   "scenario": "If the vote is held on 29 November but the official provisional result showing rejection is first published after the 23:59 Zurich cutoff, one reader could resolve YES because the vote took place within the window, while another could resolve NO because they read the window as also requiring publication of the result.",
+   "yes_requires": "The vote on the named initiative is held on 29 November 2026 in Europe/Zurich, and the official provisional result shows that national YES votes do not exceed NO votes or that cantonal votes in favour do not exceed 11.5 out of 23. Either failure is enough.",
+   "decided_by": "The official provisional result published on the Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or by the Federal Chancellery (admin.ch). If those pages cannot be read"
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:21:26Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "The official provisional result of the 29 November 2026 Swiss federal popular vote on the 'Fairness' initiative ('Yes to fair federal taxes for married couples – finally ending discrimination against marriage!') must show that it fails to achieve either a national popular majority (yes votes do not exceed no votes) or a cantonal majority (cantonal votes in favour do not exceed 11.5 out of 23).",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch), with SRF or Keystone-SDA reporting of the official provisional result as a fa"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:23:40Z",
+   "ambiguous": true,
+   "scenario": "The vote is held on 29 Nov 2026, but the official provisional result is posted only after 23:59 Europe/Zurich, or the dashboard still shows only partial counts at the window's end. One reader treats the rejection as outside the window and resolves NO; the other treats the criterion's NO cases as only acceptance or the vote not being held, and resolves YES from the provisional result of that day's vote.",
+   "yes_requires": "The official provisional result of the 29 November 2026 federal popular vote on the initiative 'Yes to fair federal taxes for married couples – finally ending discrimination against marriage!' shows that it fails either majority: nationally yes votes do not exceed no votes, or cantons in favour do not exceed 11.5 of 23.",
+   "decided_by": "The Federal Statistical Office results dashboard (abstimmungen.admin.ch / VoteInfo) or the Federal Chancellery (admin.ch); if those pages cannot be read, SRF or Keystone-SDA reporting of that official"
+  }
+ ]
+}

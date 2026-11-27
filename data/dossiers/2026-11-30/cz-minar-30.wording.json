@@ -1,0 +1,32 @@
+{
+ "claim": "Mikuláš Minář publishes the amount of his salary and an account of his assets by 23:59 on Sunday 29 November 2026.",
+ "runs": [
+  {
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-27T19:22:03Z",
+   "ambiguous": true,
+   "scenario": "Minář states his exact pay and lists his apartment and car, but says nothing about savings, investments, or debts and does not say the list is exhaustive. One reader could count this as a list of his main assets; another could find it too incomplete to qualify because the criterion does not say which categories must be covered.",
+   "yes_requires": "From 19:00 on Friday 27 November through 23:59 on Sunday 29 November 2026, Prague time, Mikuláš Minář must publicly disclose both a specific monthly or annual pay amount in CZK (gross or net; an approximate figure counts, but a range or bound does not) and either a list of his main assets or their total value. The disclosures must appear on his or Milion chvilek's specified public channels, or in ",
+   "decided_by": "No adjudicator is named. Resolution rests on the content and timing of disclosures on the specified public channels or in reports by the listed Czech outlets."
+  },
+  {
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-27T19:22:09Z",
+   "ambiguous": false,
+   "scenario": "",
+   "yes_requires": "Between 19:00 on 27 Nov and 23:59 Prague time on 29 Nov 2026, Mikuláš Minář must publicly disclose both a specific CZK figure for his salary (not just a range or bound) and an account of his main assets (either a list of items/categories or a total value).",
+   "decided_by": "Public posts on Mikuláš Minář's or Milion chvilek's official channels (website, Facebook, Instagram, X, YouTube, newsletter) or statements reported by specified major Czech news outlets (ČTK, ČT24, Se"
+  },
+  {
+   "provider": "xai",
+   "model": "grok-4.7",
+   "at": "2026-11-27T19:23:25Z",
+   "ambiguous": true,
+   "scenario": "He states a CZK salary figure and names an apartment and a car, but does not mention savings, investments, or debts and does not say the named items are all he owns. One reader treats that as a list of main assets; the other treats the omitted categories as failing the asset-account test.",
+   "yes_requires": "Between 19:00 Prague time on 27 Nov 2026 and 23:59 Prague time on 29 Nov 2026, Mikuláš Minář makes public both a stated CZK pay amount (monthly or annual, gross or net; an approximation counts, a range or bound does not) and an asset account (a list of his main assets, a statement that he owns nothing beyond named items, or a stated total value), on his or Milion chvilek's listed public channels o",
+   "decided_by": "Whether those facts appear on his or Milion chvilek's listed public channels (website, Facebook, Instagram, X, YouTube, newsletter) or in reporting by the named outlets (ČTK, ČT24, Seznam Zprávy, iROZ"
+  }
+ ]
+}
