@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26T17:08:14+01:00",
+  "as_of": "2026-11-27T03:07:30+01:00",
   "timezone": "Europe/Prague",
   "term": 10,
   "sources": {
@@ -14,7 +14,7 @@
       "status": "approved",
       "file": "data/psp/meetings/10-37.json",
       "source": "https://www.psp.cz/schuze/10/37",
-      "sitting_status": "in_progress"
+      "sitting_status": "interrupted"
     },
     {
       "number": 36,
@@ -53,8 +53,8 @@
       "source": "https://www.psp.cz/schuze/10/27"
     }
   ],
-  "latest_vote_date": "2026-11-26",
-  "latest_roll_calls": "data/psp/votes/2026-11-26.json",
+  "latest_vote_date": "2026-11-27",
+  "latest_roll_calls": "data/psp/votes/2026-11-27.json",
   "claims": [
     {
       "id": "cz-orlen-25",
@@ -118,14 +118,18 @@
       "meeting": 37,
       "event_date": "2026-11-26",
       "approved_item": 13,
-      "as_of_status": "scheduled",
-      "evidence_status": "pending",
-      "notes": "K času pozorování zůstává bod 13 druhý ve schváleném bloku od 18:00 po bodu 14 (tisk 301). Dnešní podání 2586 a 2599 jsou pozměňovací návrhy; dokončení druhého čtení čeká na důkaz.",
+      "as_of_status": "second_reading_continued_after_event_date",
+      "evidence_status": "verified",
+      "notes": "Bod 13 je ve schváleném pořadu veden jako projednaný. Ještě v pátek 27. listopadu v 00:55 eviduje PSP u tohoto bodu hlasování č. 163. Ve čtvrtek do 23:59 tedy druhé čtení neskončilo. Přesný návrh hlasování a minuta ukončení čekají na stenozáznam.",
       "sources": [
         "https://www.psp.cz/schuze/10/37",
         "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
         "https://www.psp.cz/sqw/text/orig2.sqw?idd=283389",
-        "https://www.psp.cz/sqw/text/orig2.sqw?idd=283446"
+        "https://www.psp.cz/sqw/text/orig2.sqw?idd=283446",
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89191",
+        "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261126",
+        "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html"
       ]
     },
     {
@@ -264,7 +268,7 @@
         "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=311&ct1=4"
       ],
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 311/0 dne 22. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 718/26 , PID KORNDY5H6KU4.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Mgr. Patrik Pařil a navrhl Rozpočtový výbor jako garanční.",
@@ -290,7 +294,7 @@
       "meeting": 37,
       "notes": "Stenozáznam po značce 00:00 zachycuje uzavření rozpravy i druhého čtení bezprostředně před ukončením jednání v 00:06 dne 26. listopadu. Historie tisku řadí rozpravu k jednacímu dni 25. listopadu. Bod 126 dle harmonogramu SR od 2. prosince.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 324/0 dne 30. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 671/26 , PID KORNDYDBN5D6. Dodatky doručeny sněmovně 30. 9. 2026.",
         "PS Předseda sněmovny přikázal 30. 9. 2026 k projednání rozpočtovému výboru (rozhodnutí č. 18 ). Zpravodajem pro 1. čtení jmenován: Ing. Vlastimil Hebr .",
@@ -1552,29 +1556,26 @@
         "cz-benefits-27"
       ],
       "print": 300,
-      "next_stage": "second_reading",
-      "eligible_from": "2026-11-20",
+      "next_stage": "third_reading",
       "meeting": 37,
-      "fixed_slot": {
-        "date": "2026-11-26",
-        "order": 2,
-        "block_starts_local": "18:00"
-      },
-      "notes": "Druhé čtení jako druhý bod čtvrtečního bloku od 18:00 po tisku 301. Třetí čtení (bod 155) čeká na ukončení druhého čtení.",
+      "notes": "Bod 13 je ve schváleném pořadu veden jako projednaný. Ještě v pátek 27. listopadu v 00:55 eviduje PSP u tohoto bodu hlasování č. 163. Ve čtvrtek do 23:59 tedy druhé čtení neskončilo. Přesný návrh hlasování a minuta ukončení čekají na stenozáznam.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 300/0 dne 8. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 559/26 , PID KORNDSJHRRGS.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Ing. Karin Gajdová, Ph.D. a navrhl Výbor pro sociální politiku jako garanční.",
         "1 Čtení proběhlo 16. , 20. 10. 2026 na 34. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 343 ). Lhůta k projednání výbory byla určena na 30 dní .",
         "V Garanční Výbor pro sociální politiku projednal návrh zákona a vydal 12. 11. 2026 záznam z jednání doručený poslancům jako tisk 300/1 ."
       ],
-      "last_completed_reading": 1,
+      "last_completed_reading": 2,
       "deadline_vote": 88805,
       "deadline_vote_number": 216,
       "other_sources": [
         "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034209.htm",
-        "https://www.psp.cz/sqw/hlasy.sqw?G=88805"
+        "https://www.psp.cz/sqw/hlasy.sqw?G=88805",
+        "https://www.psp.cz/schuze/10/37",
+        "https://www.psp.cz/sqw/hlasy.sqw?G=89191",
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html"
       ],
       "amendments_by_date": {
         "2026-11-23": [
@@ -1710,6 +1711,7 @@
             "author": "Karel Haas",
             "description": null,
             "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283389",
+            "document_available": true,
             "submitted_at": "2026-11-26T09:39:58+01:00",
             "status": "submitted"
           },
@@ -1718,7 +1720,55 @@
             "author": "Aleš Juchelka",
             "description": null,
             "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283446",
+            "document_available": true,
             "submitted_at": "2026-11-26T15:52:58+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2600,
+            "author": "Irena Ferčíková Konečná",
+            "description": "Zrušení redefinice závislé práce",
+            "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=283450",
+            "document_available": true,
+            "submitted_at": "2026-11-26T20:27:34+01:00",
+            "status": "submitted"
+          }
+        ],
+        "2026-11-27": [
+          {
+            "id": 2602,
+            "author": "Jiří Havránek",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+            "document_available": false,
+            "submitted_at": "2026-11-27T00:02:02+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2603,
+            "author": "Jiří Havránek",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+            "document_available": false,
+            "submitted_at": "2026-11-27T00:02:25+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2604,
+            "author": "Jiří Havránek",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+            "document_available": false,
+            "submitted_at": "2026-11-27T00:02:48+01:00",
+            "status": "submitted"
+          },
+          {
+            "id": 2605,
+            "author": "Jiří Havránek",
+            "description": null,
+            "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
+            "document_available": false,
+            "submitted_at": "2026-11-27T00:38:23+01:00",
             "status": "submitted"
           }
         ]
@@ -1726,7 +1776,15 @@
       "approved_items": [
         13,
         155
-      ]
+      ],
+      "second_reading_completed_on": "2026-11-27",
+      "third_reading_eligible_from_status": "pending",
+      "second_reading_eligible_from": "2026-11-20",
+      "previous_fixed_slot": {
+        "date": "2026-11-26",
+        "order": 2,
+        "block_starts_local": "18:00"
+      }
     },
     {
       "claim_ids": [
@@ -1737,7 +1795,7 @@
       "eligible_from": "2026-12-24",
       "notes": "Vládní návrh po prvním čtení. Výbor pro média a kulturu 30. 10. přerušil projednávání.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 231/0 dne 19. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 449/26 , PID KORNDT4HPGKS.",
         "O Organizační výbor projednání návrhu zákona doporučil 24. 6. 2026 (usnesení č. 79 ). Určil zpravodaje: Gabriela Sedláčková a navrhl Výbor pro média a kulturu jako garanční.",
@@ -1756,7 +1814,7 @@
       "meeting": 37,
       "notes": "Třetí čtení schváleno 25. listopadu v 11:36. Zvýšení poplatku na 7 Kč za m³ obsahují přijaté návrhy G1/G2 (SD 2091). Po námitce rozhodlo opakované hlasování č. 122.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 48/0 dne 1. 12. 2025. Návrh zaevidován v systému eKLEP pod čj. OVA 892/25 , PID KORNDMGGSV4S.",
         "O Organizační výbor projednání návrhu zákona doporučil 17. 12. 2025 (usnesení č. 14 ). Určil zpravodaje: David Pražák a navrhl Zemědělský výbor jako garanční.",
@@ -1792,7 +1850,7 @@
       "next_stage": "committee_after_first_reading",
       "notes": "Historie potvrzuje první čtení 24. listopadu, přikázání hospodářskému výboru a patnáctidenní lhůtu. Další projednávání možné od 10. prosince. Samostatné přiřazení hlasování č. 85 a 86 čeká na stenozáznam.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 369/0 dne 13. 11. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 860/26 , PID ALBSDZNKLVC0. Navrhovatel navrhl sněmovně projednávání návrhu zákona tak, aby sněmovna s ním mohla vyslovit souhlas již v prvém čtení ( § 90 odstavec 2 zákona č. 90/1995 Sb , o jednacím řádu Poslanecké sněmovny, ve znění pozdějších předpisů). Předseda sněmovny projednání zákona doporučil 23. 11. 2026. Určil zpravodaje: Ing. Roman Kubíček, Ph.D., MBA a navrhl přikázat k projednání výborům: Hospodářský výbor (rozhodnutí č. 21 )",
         "1 1. Čtení Návrh projednán v obecné rozpravě 24. 11. 2026 na 37. schůzi. Sněmovna nesouhlasila s projednáváním tak, aby mohla s návrhem zákona vyslovit souhlas již v prvém čtení. Čtení proběhlo 24. 11. 2026 na 37. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 357 ). Lhůta k projednání výbory byla určena na 15 dní .",
@@ -1834,7 +1892,7 @@
         "order": 4
       },
       "eligible_from_local": "2026-06-13T11:02:00+02:00",
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS předložil Senátu návrh zákona 7. 10. 2025. Návrh zákona rozeslán dne 7. 10. 2025 senátorům jako tisk 177/0 .",
         "O Organizační výbor dne 16. 10. 2025 stanovil garančním výborem Ústavně-právní výbor ( ) a přikázal tisk k projednání: Výbor pro vzdělávání, vědu, kulturu, lidská práva a petice ( ), Stálá komise Senátu pro Ústavu České republiky a parlamentní procedury ( ).",
@@ -1876,7 +1934,7 @@
         "https://www.psp.cz/sqw/hlasy.sqw?G=88829",
         "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034374.htm#h240"
       ],
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 213/0 dne 3. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 364/26 , PID KORNDU7AL36H.",
         "O Organizační výbor projednání návrhu zákona doporučil 3. 6. 2026 (usnesení č. 70 ). Určil zpravodaje: PhDr. Pavel Žáček, Ph.D. a navrhl Výbor pro bezpečnost jako garanční.",
@@ -1914,7 +1972,7 @@
         "https://www.psp.cz/sqw/hlasy.sqw?G=89006",
         "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034570.htm#h417"
       ],
-      "history_checked_at": "2026-11-26T17:08:14+01:00",
+      "history_checked_at": "2026-11-27T03:07:30+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 270/0 dne 27. 7. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 553/26 , PID KORNDSZH7EOD. Předseda sněmovny projednání zákona doporučil 30. 7. 2026. Určil zpravodaje: Mgr. Ing. Pavla Pivoňka Vaňková a navrhl přikázat k projednání výborům: Výbor pro sociální politiku (rozhodnutí č. 16 )",
         "1 Čtení proběhlo 24. 9. 2026 na 31. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 289 ). Lhůta k projednání výbory byla určena na 30 dní .",
@@ -2076,26 +2134,25 @@
   ],
   "base_rates": {
     "file": "pipeline/reference-data/cz-chamber.json",
-    "downloaded": "2026-11-26",
+    "downloaded": "2026-11-27",
     "archives": 5,
     "status": "refreshed",
-    "latest_vote_in_input": 89158
+    "latest_vote_in_input": 89191
   },
   "changes": [
-    "37. schůze pokračuje. Dosud 31 čtvrtečních hlasování (131–161); hlasování č. 156 schválilo možnost jednat a hlasovat po 19. i 21. hodině.",
-    "Tisk 300 zůstává druhý v bloku od 18:00 po tisku 301. Byly podány návrhy 2586 (Haas) a 2599 (Juchelka a další).",
-    "Stenozáznam dokládá uzavření druhého čtení rozpočtu po půlnoci těsně před koncem jednání v 00:06. Historie tisku eviduje jednací den 25. listopadu."
+    "Bod 13 je ve schváleném pořadu veden jako projednaný. Ještě v pátek 27. listopadu v 00:55 eviduje PSP u tohoto bodu hlasování č. 163. Ve čtvrtek do 23:59 tedy druhé čtení neskončilo. Přesný návrh hlasování a minuta ukončení čekají na stenozáznam.",
+    "Čtvrtek je uzavřen: 32 hlasování č. 131–162. Hlasování č. 163 patří do pátku a předchází pátečnímu bloku třetích čtení.",
+    "37. schůze přerušena do pátku 09:00. První čtyři pevné body zůstávají 142 (311), 140 (270), 138 (213), 143 (47)."
   ],
-  "vote_index_checked_at": "2026-11-26T17:08:14+01:00",
+  "vote_index_checked_at": "2026-11-27T03:07:30+01:00",
   "change_sources": [
     "https://www.psp.cz/schuze/10/37",
     "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261126",
-    "https://www.psp.cz/sqw/hlasy.sqw?G=89184",
-    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037154.htm#h156",
-    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037141.htm#r3",
-    "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
-    "https://www.psp.cz/sqw/text/orig2.sqw?idd=283389",
-    "https://www.psp.cz/sqw/text/orig2.sqw?idd=283446"
+    "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
+    "https://www.psp.cz/sqw/hlasy.sqw?G=89190",
+    "https://www.psp.cz/sqw/hlasy.sqw?G=89191",
+    "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html",
+    "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
   ],
   "vote_day_complete": false,
   "data_gaps": [
@@ -2105,18 +2162,24 @@
         89114
       ],
       "reason": "Stenozáznam v dostupném indexu končí před hlasováními v 22:57 a 22:58. Konkrétní předmět a případné opakování pending.",
-      "checked_at": "2026-11-26T17:08:14+01:00",
+      "checked_at": "2026-11-27T03:07:30+01:00",
       "sources": [
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037054.htm",
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037055.htm"
       ]
     },
     {
-      "file": "data/psp/votes/2026-11-26.json",
-      "reason": "Průběžný den. Rozlišení tlačítek a příznak zmatečnosti čekají na ZIP. Přesné návrhy hlasování č. 160 a 161 čekají na přepis.",
+      "votes": [
+        89188,
+        89189,
+        89190,
+        89191
+      ],
+      "reason": "Přesné předměty hlasování pending; příslušné pasáže stenozáznamu dosud chybějí. Historie tisku 300 zatím neuvádí rozeslání návrhů po druhém čtení ani lhůtu pro třetí čtení.",
+      "checked_at": "2026-11-27T03:07:30+01:00",
       "sources": [
-        "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261126",
-        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html"
+        "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html",
+        "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
       ]
     }
   ]

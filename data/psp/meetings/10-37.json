@@ -2,7 +2,7 @@
   "term": 10,
   "meeting": 37,
   "agenda_status": "approved",
-  "as_of": "2026-11-26T17:08:14+01:00",
+  "as_of": "2026-11-27T03:07:30+01:00",
   "starts": "2026-11-24T14:00:00+01:00",
   "source": "https://www.psp.cz/schuze/10/37",
   "archive_source": "https://www.psp.cz/eknih/cdrom/opendata/schuze.zip",
@@ -11,9 +11,7 @@
     {
       "date": "2026-11-26",
       "order": [
-        "184, 18, 39, 42, 46, 111, 48, 102, 33, 108",
-        "ve 14.30 hodin: 195",
-        "v 18.00 hodin: 14, 13"
+        "184, 18, 39, 42, 46, 111, 48, 102, 33, 108"
       ]
     },
     {
@@ -187,19 +185,17 @@
       "number": 13,
       "title": "Vládní návrh zákona, kterým se mění zákon č. 262/2006 Sb., zákoník práce, ve znění pozdějších předpisů, a některé další zákony v souvislosti s přijetím zákona o platformové práci a v souvislosti s posílením uplatňování zásady stejné odměny mužů a žen za stejnou práci nebo práci stejné hodnoty /sněmovní tisk 300/ – druhé čtení",
       "block": "Blok zákony – druhé čtení",
-      "web_status": null,
+      "web_status": "completed",
       "web_note": "Čt 26. 11., 2. bod v 18.00 hodin",
-      "print": 300,
-      "registered_speakers": 20
+      "print": 300
     },
     {
       "number": 14,
       "title": "Vládní návrh zákona o platformové práci /sněmovní tisk 301/ – druhé čtení",
       "block": "Blok zákony – druhé čtení",
-      "web_status": null,
+      "web_status": "completed",
       "web_note": "Čt 26. 11., 1. bod v 18.00 hodin",
-      "print": 301,
-      "registered_speakers": 7
+      "print": 301
     },
     {
       "number": 15,
@@ -1115,7 +1111,7 @@
       "web_status": null,
       "web_note": null,
       "print": 324,
-      "registered_speakers": 18
+      "registered_speakers": 23
     },
     {
       "number": 127,
@@ -1360,7 +1356,7 @@
       "title": "Vládní návrh zákona o platformové práci /sněmovní tisk 301/ – třetí čtení",
       "block": "Blok zákony – třetí čtení",
       "web_status": null,
-      "web_note": "(nebylo ukončeno druhé čtení)",
+      "web_note": "(další projednávání možné od 11. 12. 2026)",
       "print": 301
     },
     {
@@ -1668,12 +1664,13 @@
       "web_note": null
     }
   ],
-  "web_heading": "Schválený pořad a stav projednávání 37. schůze Od 24. 11. 2026, 14:00 Aktuální stav k 26. 11. 2026, 15:14",
-  "meeting_status": "Probíhá",
+  "web_heading": "Schválený pořad a stav projednávání 37. schůze Od 24. 11. 2026, 14:00 Aktuální stav k 27. 11. 2026, 01:02",
+  "meeting_status": "Přerušeno do 27. 11. 2026 09:00.",
   "indexed_voting_days": [
     "20261124",
     "20261125",
-    "20261126"
+    "20261126",
+    "20261127"
   ],
   "opening_time_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037001.htm",
   "opening_announcements": [
@@ -1694,7 +1691,7 @@
       "source": "https://www.psp.cz/sqw/text/orig2.sqw?idd=282991"
     }
   ],
-  "votes": "data/psp/votes/2026-11-26.json",
+  "votes": "data/psp/votes/2026-11-27.json",
   "previous_proposed_agenda": {
     "as_of": "2026-11-24T17:07:11+01:00",
     "agenda_status": "proposed",
@@ -3686,13 +3683,12 @@
     ]
   },
   "previous_day_order": {
-    "observed_at": "2026-11-26T03:05:02+01:00",
+    "observed_at": "2026-11-26T17:08:14+01:00",
     "day_order": [
       {
         "date": "2026-11-26",
         "order": [
-          "194",
-          "v 11.00 hodin: 184, 189, 18, 39, 42, 46, 111, 48, 102, 33, 108",
+          "184, 18, 39, 42, 46, 111, 48, 102, 33, 108",
           "ve 14.30 hodin: 195",
           "v 18.00 hodin: 14, 13"
         ]
@@ -3765,6 +3761,8 @@
   "vote_days": [
     "data/psp/votes/2026-11-24.json",
     "data/psp/votes/2026-11-25.json",
-    "data/psp/votes/2026-11-26.json"
-  ]
+    "data/psp/votes/2026-11-26.json",
+    "data/psp/votes/2026-11-27.json"
+  ],
+  "resume_at": "2026-11-27T09:00:00+01:00"
 }
