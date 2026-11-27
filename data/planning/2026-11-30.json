@@ -1006,6 +1006,26 @@
                   "trace": "data/dossiers/2026-11-30/il-utj-30.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 15,
+              "leads_distinct": 14,
+              "already_in_dossier": 10,
+              "facts_confirmed": 3,
+              "added": [
+                "https://www.ynet.co.il/news/article/bjzcphxkml",
+                "https://www.mako.co.il/news-politics/2026_q4/Article-a8711f6b01912a1026.htm",
+                "https://13tv.co.il/item/news/politics/politics/eokxu-905485827/"
+              ],
+              "reforecast": false,
+              "before": 0.369,
+              "note": "No confirmed fact is material to the outcome; the evening figure stands."
             }
           }
         }
@@ -1356,121 +1376,158 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:13:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.52,
-                "reason_blind": "Initiatives accepted 0.12 (since 2010, n=73), unconditional. Dated polls move up strongly: final waves 59-63 Yes; wave-2-to-result erosion mean -7.4 (n=6) -> ~55, but Bargeld 61->45.6. Popular-majority initiatives win cantons 26/28, yet YouGov sees Central CH/Ticino close and rural 1-August tradition. Popular ~0.72 x cantons ~0.75. Slip 0.003.",
+                "p_blind": 0.62,
+                "reason_blind": "Class: federal initiatives accepted since 2000, 14/117 (0.12); slip election-held 0.003. Final polls avg 61 Yes (SRG 63, LeeWas 62, YouGov 59); hint n=6 SRG wave2->result mean -7.4, MAE 7.5 -> ~54 +-7, P(popular yes) ~0.72-0.75. gfs.bern: erosion smaller than usual, weak No campaign (fog tonality 0). Cantons: Romandie 57, Ticino 53, C. Switzerland close; Staendemehr given Volksmehr ~0.85 here.",
                 "searches": 0,
-                "at": "2026-11-27T19:17:55+01:00",
+                "at": "2026-11-27T21:20:57+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.66,
+                "p": 0.74,
                 "p_held": 0.997,
-                "p_if_held": 0.66,
-                "reason": "Initiative class 0.12 lifted by final polls 59-63 Yes minus erosion (-7.4, n=6) to ~55; cantonal risk (Central CH/Ticino close) gave blind 0.52. Polymarket 0.945 ($34k) far higher; I move part-way to 0.66, keeping Bargeld 61->45.6 and cantonal-split risk. New case, no earlier figures. Slip 0.003."
+                "p_if_held": 0.74,
+                "reason": "Blind 0.62 (class 14/117, polls avg 61 less typical erosion, Staendemehr risk). Polymarket 0.945 ($34k vol, rules unverified, closes before result) pulls me up partly; I keep a large discount for the Bargeld-type fall (61->45.6) and for small conservative cantons. Case record: new case, no earlier figures, so nothing taken from it.",
+                "rounds": [
+                  {
+                    "p": 0.66,
+                    "at": "2026-11-27T19:17:55+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:16:31+01:00",
+                "at_blind": "2026-11-27T21:18:50+01:00",
                 "inputs_blind": [
                   "own-research",
                   "dossier"
                 ],
-                "p_blind": 0.7,
-                "p_own": 0.72,
-                "reason_blind": "Own: SRG 63-35 (-6), LeeWas 62-30, YouGov 59-36. Initiatives lose avg ~7 pts wave2->result (dossier n=6), giving ~55-56% Yes; Bargeld 61->45.6 shows tail. Cantonal risk: YouGov calls Central CH and Ticino close; popular-yes initiatives win cantons 26/28. Weak No campaign.",
-                "searches": 0,
-                "at": "2026-11-27T19:19:22+01:00",
+                "p_blind": 0.78,
+                "p_own": 0.8,
+                "reason_blind": "Final waves: gfs.bern 63-35 (4-11 Nov, -6), LeeWas 62-37, YouGov 59-36; opinions largely made, weak No campaign (fög 27 Nov). Regions: DE 65, FR 57, IT 53, rural 59; YouGov calls Central CH/Ticino close. Initiatives fall ~7 pts wave2->result on average (Bargeld 61->45.6); popular-majority initiatives win cantons 26/28. Double-majority risk mainly from erosion in small conservative cantons.",
+                "searches": 1,
+                "at": "2026-11-27T21:21:28+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.8,
-                "p_held": 0.997,
-                "p_if_held": 0.8,
-                "reason": "Blind 0.70: polls 59-63 Yes, initiatives fall ~7 after wave 2 (Bargeld -15 tail), cantonal risk in Central CH/Ticino. Polymarket 0.945 ($34k) says I underweighted the cushion; popular-yes initiatives win cantons 26/28. Move to 0.80, keeping erosion tail. No earlier figures."
+                "p": 0.84,
+                "p_held": 0.995,
+                "p_if_held": 0.84,
+                "reason": "Polls 59-63% Yes in all final waves with weak No campaign; Polymarket 0.945 (thin, rules unverified) pulls me up from 0.78, but usual initiative erosion (~7 pts, Bargeld 61->45.6) and close Central CH/Ticino keep double-majority risk real. Case record: new case, no earlier figures to calibrate on.",
+                "rounds": [
+                  {
+                    "p": 0.8,
+                    "at": "2026-11-27T19:19:22+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-27T19:12:40+01:00",
+                "at_blind": "2026-11-27T21:18:23+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.6,
-                "reason_blind": "Against: initiatives lose mean 7.4 pts from SRG wave 2 to result (5 of 6; Bargeld 61->45.6, Service citoyen -16); already -6 between waves, FDP/SVP camps flipped; Central Switzerland and Ticino close, so cantons may fail on a narrow popular Yes. For: 61.3 poll mean, 78% firmly decided. Expected ~55 +/-7: popular Yes ~0.74, cantons given that ~0.83.",
+                "p_blind": 0.74,
+                "reason_blind": "Dossier favours YES: final waves 63/62/59 Yes (18 Nov), no active No campaign (foeg 27 Nov). Case for NO: initiatives lost a mean 7.4 pts from SRG wave 2 in 5 of 6 recent votes, Bargeld 61 to 45.6; FDP/SVP now below 50; Romandie 57 (-10), Ticino 53, Central Switzerland close, so a 51-53% Yes could miss the cantons as in 2020. A typical fall still leaves about 55%, hence 0.74.",
                 "searches": 0,
-                "at": "2026-11-27T19:20:45+01:00",
+                "at": "2026-11-27T21:21:55+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.7,
+                "p": 0.8,
                 "p_held": 0.99,
-                "p_if_held": 0.71,
-                "reason": "Polls 61.3 mean, -6 between waves; initiatives lose mean 7.4 pts after wave 2 (Bargeld 61->45.6); Central Switzerland and Ticino close for the cantons. Polymarket 0.945 (4k) looks too sure given that erosion record, but I move up from blind 0.60 by ~0.45 log-odds toward it. No earlier figures in this case."
+                "p_if_held": 0.81,
+                "reason": "Polymarket 0.945 (liquidity about $19k, rules text unverified) is well above my blind 0.74; I move part of the way. Polls 63/62/59 Yes, no active No campaign (foeg 27 Nov), but SRG wave-2 Yes fell a mean 7.4 pts in 5 of 6 recent initiatives (Bargeld 61 to 45.6), and Romandie 57, Ticino 53 and Central Switzerland put the cantonal majority at risk on a narrow Yes. Case record: new case, no earlier figures, nothing taken.",
+                "rounds": [
+                  {
+                    "p": 0.7,
+                    "at": "2026-11-27T19:20:45+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-27T19:12:38+01:00",
+                "at": "2026-11-27T21:20:26+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "p": 0.78,
-                "p_held": 0.997,
-                "p_if_held": 0.78,
-                "reason": "Model 0.82 on popular vote after erosion adjustment; x~0.95 for Ständemehr (YouGov: Central CH, Ticino close; 26/28 popular-yes initiatives won cantons) = 0.78. Polymarket 0.945 is thin and ignores Bargeld precedent (61 in wave 2 -> 45.6). Base rate initiatives 0.11. New case.",
+                "p": 0.87,
+                "p_held": 0.99,
+                "p_if_held": 0.88,
+                "reason": "Poll model on final-wave margins (avg Yes lead 25) less documented initiative erosion (~5 pts share) and a +4 margin hurdle for the cantonal majority gives 0.83; nudged up toward Polymarket 0.945 because gfs.bern found erosion smaller than usual, no active No campaign (fög) and Yes majorities in every group (20 Min). Bargeld 61->45.6 and Konzern 2020 keep it below market. New case, no earlier figures.",
                 "anchor": {
-                  "kind": "poll-model (yes share)",
-                  "detail": "leadabove 55.5 6 50 = 0.82: latest-wave Yes avg 61.3 minus ~6 points expected initiative erosion (6 recent initiatives mean -7.4 from SRG wave 2), sd 6; times ~0.95 for cantonal majority."
+                  "kind": "poll-model (margin, erosion-adjusted)",
+                  "detail": "node scripts/refdata/models.mjs leadabove 15.3 12 4 -> 0.8268; cross-check Polymarket Yes 0.945 (vol 33.9k, liq 21.5k, read 2026-11-27T20:19Z)"
                 },
                 "poll_model": {
-                  "lead": 5.5,
-                  "sd": 6,
-                  "threshold": 0,
-                  "p": 0.82,
-                  "source": "SRG 63, LeeWas 62, YouGov 59 Yes; erosion hint n=6"
-                }
+                  "lead": 15.3,
+                  "sd": 12,
+                  "threshold": 4,
+                  "p": 0.8268,
+                  "source": "Latest wave of each pollster, equal weight (all fieldwork 2-16 Nov, large n): gfs.bern/SRG 4-11 Nov 63-35 (+28), LeeWas 11-12 Nov 62-37 (+25, 20 Min figure), YouGov MRP 2-16 Nov 59-36 (+23); mean +25.3, minus 10 for expected wave-2-to-result initiative erosion",
+                  "note": "sd widened from 3.5 to 12 (margin) because SRG wave-2 errors on initiatives have MAE 7.5 pts of Yes share (n=6); threshold +4 margin for Staendemehr (Ticino 53, Romandie 57, Central CH close per YouGov)."
+                },
+                "searches": 0,
+                "rounds": [
+                  {
+                    "p": 0.78,
+                    "at": "2026-11-27T19:12:38+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-27T19:00:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.75,
-                "reason_blind": "SRG Oct +40 pts, YouGov 59/36 mid-Nov; initiatives lose support in campaign but still comfortable popular yes. Cantonal majority likely if ~55%+ nationally; rural cantons a risk. Both needed.",
-                "searches": 0,
-                "at": "2026-11-27T20:00:00+01:00",
+                "p_blind": 0.77,
+                "reason_blind": "2nd SRG/gfs.bern poll (fieldwork 7 Nov): 63% yes, 35% no, down 6 pts from first; YouGov MRP final: 59 yes, 36 no, leads almost everywhere. Initiatives usually lose support late but this one less than usual; Staendemehr risk in rural cantons, FDP/SVP base against.",
+                "searches": 1,
+                "at": "2026-11-27T21:22:08+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.89,
-                "reason": "Polymarket 0.945 (people+cantons, thin); gfs says approval still indicated, YouGov 59/36. Discount for campaign decay and cantonal majority risk."
+                "p": 0.86,
+                "reason": "Polls 63% (gfs) and 59% (YouGov MRP) yes; Polymarket 0.945 (thin) lifts my blind 0.77, but the cantonal majority and late erosion keep it below the market. No case record.",
+                "rounds": [
+                  {
+                    "p": 0.89,
+                    "at": "2026-11-27T20:00:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               }
             ],
             "missing": [],
             "disagreement": {
               "cause": "genuine",
-              "note": "Spread 23 points on the same facts; the research step found no decisive fact: gfs.bern (via SRF, 18 Nov) calls the erosion much smaller than usual, says opinions are largely formed and that much points to acceptance, while a further fall among FDP/SVP voters is conceivable; YouGov publishes no canton numbers (only 'close in Central Switzerland and Ticino') and Tamedia none. Comparable: the 2020 corporate-responsibility initiative was at 57% in SRG wave 2, won the popular vote but failed on the cantons (Bargeld 61 -> 45.6 already in the dossier)."
+              "note": "Spread 23 points on the same facts; the research step found no decisive fact: gfs.bern (via SRF, 18 Nov) calls the erosion much smaller than usual, says opinions are largely formed and that much points to acceptance, while a further fall among FDP/SVP voters is conceivable; YouGov publishes no canton numbers (only 'close in Central Switzerland and Ticino') and Tamedia none. Comparable: the 2020 corporate-responsibility initiative was at 57% in SRG wave 2, won the popular vote but failed on the cantons (Bargeld 61 -> 45.6 already in the dossier). Evening check 27 Nov: after the rerun on the added facts the final spread is 13 points."
             },
             "combination": {
               "method": "geo-odds"
@@ -1480,11 +1537,11 @@
               "none": true,
               "why": "election kind 'other'; latest-wave Yes average 61.3 (SRG 63, LeeWas 62, YouGov 59); cantonal majority not modelled (only YouGov MRP: close in Central Switzerland and Ticino)"
             },
-            "combined": 0.777,
-            "spread": 0.23,
+            "combined": 0.827,
+            "spread": 0.13,
             "decomposition": {
-              "p_held": 0.995,
-              "p_if_held": 0.782,
+              "p_held": 0.993,
+              "p_if_held": 0.833,
               "p_if_not_held": 0
             },
             "research": {
@@ -1552,6 +1609,34 @@
                   "trace": "data/dossiers/2026-11-30/ch-fireworks-30.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 18,
+              "leads_distinct": 20,
+              "already_in_dossier": 12,
+              "facts_confirmed": 6,
+              "added": [
+                "https://www.20min.ch/story/abstimmungsumfrage-feuerwerksverbot-vorn-mehrwertsteuer-erhoehung-unter-druck-103669037",
+                "https://cockpit.gfsbern.ch/fr/cockpit/trend_w2_29112026-2/",
+                "https://www.foeg.uzh.ch/de/news/2026/abstimmungsmonitor-nov26-schlussbericht.html",
+                "https://www.foeg.uzh.ch/de/news/2026/abstimmungsmonitor-november-2026.html",
+                "https://yougov.com/de-de/artikel/55787-feuerwerk-und-fairness-initiative-ja-ahv-finanzierung-nein-kriegsmaterial-offen-wie-will-die-schweiz-am-29-november-abstimmen",
+                "https://yougov.com/de-de/artikel/56001-fairness-initiative-bricht-ein-kriegsmaterialgesetz-bleibt-offen-wie-will-die-schweiz-am-29-november-abstimmen"
+              ],
+              "reforecast": true,
+              "before": 0.777,
+              "material": [
+                "In the second LeeWas/20 Minuten/Tamedia survey published on 18 November 2026, the fireworks initiative had 62% Yes and 37% No (No up from 30% in October), and 20 Minuten reported no large differences between language regions, between town and country, or across income and education groups, with a Yes majority in every demographic group.",
+                "In the second SRG/gfs.bern survey (as of 7 November 2026, released 18 November), Yes to the fireworks initiative stood at 65% in German-speaking Switzerland (-4), 57% in French-speaking Switzerland (-10) and 53% in Italian-speaking Switzerland (-8), and at 65% in urban and 59% in rural and intermediate municipalities.",
+                "The fög (University of Zurich) final voting-monitor report of 27 November 2026, covering 755 media items, found the fireworks initiative among the ten proposals with the weakest media coverage since September 2018 (147 items) and with neutral media tonality (0), which fög says indicates the absence of an active counter-campaign."
+              ],
+              "after": 0.827
             }
           }
         }
@@ -1599,7 +1684,7 @@
           "kind": "binary",
           "label": "Q1 2027 targets unchanged",
           "text": "At their meetings on Sunday 29 November 2026, OPEC+ ministers keep oil production targets for January–March 2027 unchanged from the levels in force for December 2026.",
-          "criterion": "YES if an OPEC press release on opec.org dated 29 Nov 2026 (from any OPEC+ meeting held that day) sets the required production of the seven voluntary-cut countries (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) for January 2027 (and for any other month of January–March 2027 it decides) equal to the levels in force for December 2026 (Saudi Arabia 10.478, Russia 9.949, Iraq 4.431, Kuwait 2.676, Kazakhstan 1.628, Algeria 1.007, Oman 0.841 mb/d), and states no change to any other participating country's production level for January–March 2027. A release that only extends the existing levels into 2027 without change counts as YES. Compensation schedules for past overproduction do not count as a change. NO if any of these levels for any month of January–March 2027 is raised or lowered, if new baselines change any country's level for that period, or if no production decision for January 2027 is announced by 23:59 Vienna time (UTC+1) on 29 Nov 2026. If opec.org cannot be read, Reuters, TASS or Bloomberg reporting of the text of the OPEC statement decides.",
+          "criterion": "YES if an OPEC press release on opec.org dated 29 Nov 2026 (from any OPEC+ meeting held that day) sets the required production of the seven voluntary-cut countries (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) for January 2027 (and for any other month of January–March 2027 it decides) equal to the levels in force for December 2026 (Saudi Arabia 10.478, Russia 9.949, Iraq 4.431, Kuwait 2.676, Kazakhstan 1.628, Algeria 1.007, Oman 0.841 mb/d),, and no OPEC statement of that day announces a change to any other participating country's production level for January–March 2027. The release does not have to say so expressly: if it is silent on the other participants, or sets the seven's level only for January and says nothing about February and March, that is no change and counts as YES. A release that only extends the existing levels into 2027 without change counts as YES. Compensation schedules for past overproduction do not count as a change. NO if any of these levels for any month of January–March 2027 is raised or lowered, if new baselines change any country's level for that period, or if no production decision for January 2027 is announced by 23:59 Vienna time (UTC+1) on 29 Nov 2026. If opec.org cannot be read, Reuters, TASS or Bloomberg reporting of the text of the OPEC statement decides.",
           "resolution_source": "https://www.opec.org/press-releases.html ; https://www.kitco.com/news/off-the-wire/ (Reuters copy) ; https://tass.com/economy",
           "schedule": "official",
           "slip_class": "other-scheduled",
@@ -1616,7 +1701,18 @@
           "cs": {
             "label": "Kvóty na 1. čtvrtletí beze změny",
             "text": "Ministři OPEC+ na nedělních jednáních 29. listopadu 2026 ponechají těžební cíle na leden až březen 2027 beze změny proti úrovním platným pro prosinec 2026.",
-            "criterion": "ANO, pokud tisková zpráva OPEC na opec.org s datem 29. 11. 2026 (z kteréhokoli jednání OPEC+ toho dne) stanoví požadovanou těžbu sedmi zemí s dobrovolnými škrty (Saúdská Arábie, Rusko, Irák, Kuvajt, Kazachstán, Alžírsko, Omán) na leden 2027 (a na jakýkoli další měsíc ledna až března 2027, o němž rozhodne) ve výši úrovní platných pro prosinec 2026 (Saúdská Arábie 10,478, Rusko 9,949, Irák 4,431, Kuvajt 2,676, Kazachstán 1,628, Alžírsko 1,007, Omán 0,841 mil. barelů denně) a neuvede žádnou změnu těžební úrovně jiné zúčastněné země na leden až březen 2027. Zpráva, která stávající úrovně jen bez změny prodlouží do roku 2027, se počítá jako ANO. Harmonogramy kompenzací za dřívější nadprodukci se za změnu nepočítají. NE, pokud se kterákoli z těchto úrovní na kterýkoli měsíc ledna až března 2027 zvýší nebo sníží, pokud nové výchozí úrovně změní úroveň některé země na toto období, nebo pokud do 23:59 vídeňského času (UTC+1) 29. 11. 2026 není oznámeno rozhodnutí o těžbě na leden 2027. Nelze-li opec.org přečíst, rozhoduje zpravodajství Reuters, TASS nebo Bloomberg o textu prohlášení OPEC."
+            "criterion": "ANO, pokud tisková zpráva OPEC na opec.org s datem 29. 11. 2026 (z kteréhokoli jednání OPEC+ toho dne) stanoví požadovanou těžbu sedmi zemí s dobrovolnými škrty (Saúdská Arábie, Rusko, Irák, Kuvajt, Kazachstán, Alžírsko, Omán) na leden 2027 (a na jakýkoli další měsíc ledna až března 2027, o němž rozhodne) ve výši úrovní platných pro prosinec 2026 (Saúdská Arábie 10,478, Rusko 9,949, Irák 4,431, Kuvajt 2,676, Kazachstán 1,628, Alžírsko 1,007, Omán 0,841 mil. barelů denně) a žádné prohlášení OPEC z toho dne neoznámí změnu těžební úrovně jiné zúčastněné země na leden až březen 2027. Zpráva to nemusí výslovně uvádět: pokud o ostatních účastnících mlčí nebo stanoví úroveň sedmi zemí jen na leden a o únoru a březnu neříká nic, jde o stav beze změny a počítá se jako ANO. Zpráva, která stávající úrovně jen bez změny prodlouží do roku 2027, se počítá jako ANO. Harmonogramy kompenzací za dřívější nadprodukci se za změnu nepočítají. NE, pokud se kterákoli z těchto úrovní na kterýkoli měsíc ledna až března 2027 zvýší nebo sníží, pokud nové výchozí úrovně změní úroveň některé země na toto období, nebo pokud do 23:59 vídeňského času (UTC+1) 29. 11. 2026 není oznámeno rozhodnutí o těžbě na leden 2027. Nelze-li opec.org přečíst, rozhoduje zpravodajství Reuters, TASS nebo Bloomberg o textu prohlášení OPEC."
+          },
+          "wording_check": {
+            "at": "2026-11-27T21:25:39+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if an OPEC press release on opec.org dated 29 Nov 2026 (from any OPEC+ meeting held that day) sets the required production of the seven voluntary-cut countries (Saudi Arabia, Russia, Iraq, Kuwait, Kazakhstan, Algeria, Oman) for January 2027 (and for any other month of January–March 2027 it decides) equal to the levels in force for December 2026 (Saudi Arabia 10.478, Russia 9.949, Iraq 4.431, Kuwait 2.676, Kazakhstan 1.628, Algeria 1.007, Oman 0.841 mb/d), and states no change to any other participating country's production level for January–March 2027. A release that only extends the existing levels into 2027 without change counts as YES. Compensation schedules for past overproduction do not count as a change. NO if any of these levels for any month of January–March 2027 is raised or lowered, if new baselines change any country's level for that period, or if no production decision for January 2027 is announced by 23:59 Vienna time (UTC+1) on 29 Nov 2026. If opec.org cannot be read, Reuters, TASS or Bloomberg reporting of the text of the OPEC statement decides.",
+            "why": "Two of the three models named a real case the criterion did not settle: the release extends the seven's levels (perhaps only for January) and is silent on the other participants or on February–March. The criterion asked the release to 'state no change', which silence does not do, while none of the NO conditions applied either. It now says that silence is no change. The third scenario (Google: the listed levels are not those in force, the UAE is missing) is not real: the figures are the required production in OPEC's own releases for September–December 2026 and the UAE left OPEC+ in May 2026 (dossier). What is forecast is unchanged."
           },
           "forecast": {
             "baseline": {
@@ -2776,7 +2872,7 @@
           "kind": "binary",
           "label": "Stoianoglo wins Gagauzia runoff",
           "text": "Alexandr Stoianoglo wins the second round of the election for bashkan (governor) of Gagauzia on Sunday 29 November 2026.",
-          "criterion": "YES if the preliminary results of the 29 Nov 2026 Bashkan second round published by Moldova's Central Electoral Commission (CEC, a.cec.md / pv.cec.md) or the Central Electoral Council of Gagauzia, with at least 95% of polling-station protocols processed, show Alexandr Stoianoglo with more valid votes than Fiodor Gagauz and the round has not been declared invalid; final CEC results take precedence if published before the resolver reads. NO if Fiodor Gagauz has more valid votes, if the second round is not held on 29 Nov 2026 (Europe/Chisinau), or if the electoral authority declares the round invalid (for example for turnout below the legal minimum). If fewer than 95% of protocols are processed when the resolver reads, the claim stays pending. If the CEC sites cannot be read, Logos Press, Moldpres or Interfax reporting of the CEC count decides. Later appeals or recounts do not change the resolution.",
+          "criterion": "YES if the preliminary results of the 29 Nov 2026 Bashkan second round published by Moldova's Central Electoral Commission (CEC, a.cec.md / pv.cec.md) or the Central Electoral Council of Gagauzia, with at least 95% of polling-station protocols processed, show Alexandr Stoianoglo with more valid votes than Fiodor Gagauz and the round has not been declared invalid; final CEC results take precedence if published before the resolver reads. NO if Fiodor Gagauz has more valid votes, if the second round is not held on 29 Nov 2026 (Europe/Chisinau), or if the electoral authority declares the round invalid (for example for turnout below the legal minimum). If fewer than 95% of protocols are processed when the resolver reads, the claim stays pending. If the CEC sites cannot be read, Logos Press, Moldpres or Interfax reporting of the CEC count decides. The date condition concerns only the day of voting: a count that reaches 95% of protocols after 29 Nov decides all the same. The resolver uses the most complete count published when it reads, not the first to pass 95%; if the CEC and the Gagauz council show different counts, the one with more protocols processed decides, and the CEC's if they are equal. Later appeals or recounts do not change the resolution.",
           "resolution_source": "https://a.cec.md/ro ; https://pv.cec.md/ ; https://logos-pres.md/en/",
           "schedule": "official",
           "slip_class": "election-held",
@@ -2793,11 +2889,22 @@
           "cs": {
             "label": "Stoianoglo vyhraje druhé kolo v Gagauzsku",
             "text": "Alexandr Stoianoglo vyhraje v neděli 29. listopadu 2026 druhé kolo volby baškana (guvernéra) Gagauzska.",
-            "criterion": "ANO, pokud předběžné výsledky druhého kola volby baškana z 29. listopadu 2026, které zveřejní moldavská Ústřední volební komise (CEC, a.cec.md / pv.cec.md) nebo Ústřední volební rada Gagauzska, po zpracování nejméně 95 % protokolů okrsků ukážou, že Alexandr Stoianoglo získal více platných hlasů než Fiodor Gagauz, a kolo nebylo prohlášeno za neplatné; konečné výsledky CEC mají přednost, pokud vyjdou dřív, než výsledek ověříme. NE, pokud více platných hlasů získá Fiodor Gagauz, pokud se druhé kolo 29. listopadu 2026 (kišiněvského času) nekoná nebo pokud je volební orgán prohlásí za neplatné (například kvůli účasti pod zákonným minimem). Je-li při ověření zpracováno méně než 95 % protokolů, tvrzení zůstává otevřené. Nelze-li stránky CEC přečíst, rozhoduje zpravodajství Logos Press, Moldpres nebo Interfaxu o sčítání CEC. Pozdější odvolání ani přepočítání na výsledku nic nemění."
+            "criterion": "ANO, pokud předběžné výsledky druhého kola volby baškana z 29. listopadu 2026, které zveřejní moldavská Ústřední volební komise (CEC, a.cec.md / pv.cec.md) nebo Ústřední volební rada Gagauzska, po zpracování nejméně 95 % protokolů okrsků ukážou, že Alexandr Stoianoglo získal více platných hlasů než Fiodor Gagauz, a kolo nebylo prohlášeno za neplatné; konečné výsledky CEC mají přednost, pokud vyjdou dřív, než výsledek ověříme. NE, pokud více platných hlasů získá Fiodor Gagauz, pokud se druhé kolo 29. listopadu 2026 (kišiněvského času) nekoná nebo pokud je volební orgán prohlásí za neplatné (například kvůli účasti pod zákonným minimem). Je-li při ověření zpracováno méně než 95 % protokolů, tvrzení zůstává otevřené. Nelze-li stránky CEC přečíst, rozhoduje zpravodajství Logos Press, Moldpres nebo Interfaxu o sčítání CEC. Podmínka data se týká jen dne hlasování: rozhoduje i sčítání, které překročí 95 % protokolů až po 29. listopadu. Použije se nejúplnější sčítání zveřejněné v okamžiku ověření, nikoli první, které přesáhlo 95 %; liší-li se údaje CEC a gagauzské rady, rozhoduje ten s více zpracovanými protokoly, při shodě údaj CEC. Pozdější odvolání ani přepočítání na výsledku nic nemění."
           },
           "election": {
             "kind": "winner",
             "level": "regional"
+          },
+          "wording_check": {
+            "at": "2026-11-27T21:25:39+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the preliminary results of the 29 Nov 2026 Bashkan second round published by Moldova's Central Electoral Commission (CEC, a.cec.md / pv.cec.md) or the Central Electoral Council of Gagauzia, with at least 95% of polling-station protocols processed, show Alexandr Stoianoglo with more valid votes than Fiodor Gagauz and the round has not been declared invalid; final CEC results take precedence if published before the resolver reads. NO if Fiodor Gagauz has more valid votes, if the second round is not held on 29 Nov 2026 (Europe/Chisinau), or if the electoral authority declares the round invalid (for example for turnout below the legal minimum). If fewer than 95% of protocols are processed when the resolver reads, the claim stays pending. If the CEC sites cannot be read, Logos Press, Moldpres or Interfax reporting of the CEC count decides. Later appeals or recounts do not change the resolution.",
+            "why": "All three models named real cases: the count passes 95% only after midnight (window rule against the pending rule), the lead changes between 95% and 100%, or the CEC and the Gagauz council publish different counts. The criterion now says the window is about the day of voting, that the most complete published count decides, and which authority prevails. What is forecast is unchanged."
           },
           "forecast": {
             "baseline": {
@@ -2840,86 +2947,103 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:13:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.73,
-                "reason_blind": "Wider class final-poll leader wins 9/14=0.64; dated fact: real first-round lead 14.2 pts (38.4 v 24.2) moves up ~+0.5 logit, limited because 36.5% redistributes with no endorsements known and a pro-Russian electorate could consolidate behind PSRM's Gagauz. Invalidity (20% minimum vs 37.6% R1 turnout) and slip ~1%.",
+                "p_blind": 0.64,
+                "reason_blind": "Wider class final-poll-leader-wins own 9/14 (0.64); slip 0.003 plus small invalidity risk (turnout 37.6 vs 20% floor). Round one Stoianoglo 38.4 v Gagauz 24.2 (real vote, 14-pt lead): he needs only ~31% of the 37% eliminated vote. But Dudnic, Koksal, Garizan, Vlah (~32%) back Gagauz (NewsMaker 27 Nov); Gagauz outspent him ~9x on ads, PSRM mobilisation. Net: leader still favoured, modestly.",
                 "searches": 0,
-                "at": "2026-11-27T19:31:42+01:00",
+                "at": "2026-11-27T21:20:57+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.6,
+                "p": 0.71,
                 "p_held": 0.99,
-                "p_if_held": 0.61,
-                "reason": "Was 0.78 (class 0.64 + 14.2-pt R1 lead, markets ~0.82). New dated fact (NewsMaker 27 Nov): Koksal, Vlah, Garizan back Gagauz and Dudnic will personally vote for him, 31.3% of R1 vote; Anastasov (4.4) neutral. Even 50-60% transfer brings Gagauz near 42-44 vs ~50+; about -0.85 logit. Invalidity/slip ~1%.",
+                "p_if_held": 0.72,
+                "reason": "Blind 0.64 (leader class 9/14; 14-pt round-one lead vs endorsements of ~32% eliminated vote and money for Gagauz). Polymarket 0.82, Kalshi 0.77-0.80, both very thin and treating invalidity differently; moved up partly. Earlier figures: 1 of 2 right, under-called the first round by 33 pts, but those were round-one questions, so only a slight nudge up.",
                 "rounds": [
                   {
                     "p": 0.78,
                     "at": "2026-11-27T19:17:55+01:00",
                     "reason": "round one, before the research step's confirmed facts were added to the dossier"
+                  },
+                  {
+                    "p": 0.6,
+                    "at": "2026-11-27T19:31:42+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:16:31+01:00",
+                "at_blind": "2026-11-27T21:18:50+01:00",
                 "inputs_blind": [
                   "own-research",
                   "dossier"
                 ],
-                "p_blind": 0.62,
+                "p_blind": 0.5,
                 "p_own": 0.62,
-                "reason_blind": "Round 1: Stoianoglo 38.4, Gagauz 24.2 (lead 14.2). Own (NewsMaker 27 Nov): Dudnic (16.3%) will personally vote Gagauz, Koksal (9.7), Vlah, Garizan back Gagauz; Anastasov (4.4) neutral. Stoianoglo needs ~31% of remaining 37%; endorsements cut his edge from ~0.80. Small invalidity risk (20% turnout floor; r1 37.6%).",
-                "searches": 1,
-                "at": "2026-11-27T19:32:29+01:00",
+                "reason_blind": "R1 15 Nov: Stoianoglo 38.44, Gagauz 24.22, turnout 37.6%; he needs ~31% of the 37% eliminated vote. But Dudnic (15.6), Koksal (11.1), Garizan (3.2), Vlah (2.0) back Gagauz in some form (NewsMaker 27 Nov); Anastasov neutral. Gagauz outraised him 5x, outspent 9x on ads, 56 vs 21 campaign events (Promo-LEX). Runoff turnout minimum 20% (Infotag) unlikely to bind.",
+                "searches": 2,
+                "at": "2026-11-27T21:21:28+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.68,
-                "reason": "Unchanged: my final 0.68 already priced the NewsMaker 27 Nov endorsements (Dudnic 16.3% votes Gagauz personally; Koksal, Vlah, Garizan back him; Anastasov neutral) against the 14.2-pt round-one lead and the thin markets at 0.82. Small invalidity risk (20% turnout floor).",
+                "p": 0.58,
+                "p_held": 0.98,
+                "p_if_held": 0.59,
+                "reason": "R1 lead 38.4 v 24.2, but candidates with ~32% of R1 vote back Gagauz and he outspent Stoianoglo 9x on ads; markets 0.82 (Polymarket/Kalshi, very thin, read 18:00Z) move me up from 0.50. Case record: our earlier figures were first-round only (1 of 2 right, outcome 33 pts more yes than our figures), a mild hint we underrate Stoianoglo.",
                 "rounds": [
                   {
                     "p": 0.68,
                     "at": "2026-11-27T19:19:22+01:00",
                     "reason": "round one, before the research step's confirmed facts were added to the dossier"
+                  },
+                  {
+                    "p": 0.68,
+                    "at": "2026-11-27T19:32:29+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-27T19:12:40+01:00",
+                "at_blind": "2026-11-27T21:18:23+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.74,
-                "reason_blind": "Against: 36.5% of round-one votes are unallocated with no endorsements found; Stoianoglo backs EU integration in a strongly pro-Russian region, so Dudnic/Koksal voters could consolidate behind PSRM's Gagauz; invalidity if turnout under ~20% (round one 37.6%); vote-buying incidents. For: 14.2-pt first-round lead (38.4 v 24.2), he needs only about a third of transfers; PSRM weak in assembly races.",
+                "p_blind": 0.47,
+                "reason_blind": "Round one (15 Nov) 38.44 v 24.22 favours Stoianoglo, but Dudnic 15.59, Koksal 11.05, Garizan 3.18 and Vlah 1.98 (31.8 in all) back Gagauz, Anastasov is neutral; Gagauz raised 5x and spent 9x on ads, 56 of 77 events. Stoianoglo needs about a third of the transfers; with a 60/20/20 split it is near level. Pro-EU profile in a pro-Russian region, turnout 37.6%. Small invalidity risk (20% floor). Toss-up, slight lean NO.",
                 "searches": 0,
-                "at": "2026-11-27T19:32:51+01:00",
+                "at": "2026-11-27T21:21:55+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.58,
-                "p_held": 0.97,
-                "p_if_held": 0.6,
-                "reason": "New facts: Koksal, Garizan and Vlah back Gagauz and Dudnic will vote for him; their first-round 31.3% plus his 24.2 exceeds Stoianoglo's 38.4, Anastasov (4.4) neutral. Gagauz needs ~70% of those transfers at equal turnout; endorsements rarely carry that fully, so Stoianoglo stays a narrow favourite. Down 0.9 log-odds from 0.77; markets at 0.82 may predate 26-27 Nov statements.",
+                "p": 0.55,
+                "p_held": 0.99,
+                "p_if_held": 0.555,
+                "reason": "Polymarket and Kalshi 0.82, both very thin. Round one 38.44 v 24.22, yet candidates with 31.8% back Gagauz, who outspent Stoianoglo 9x on ads; he needs about a third of transfers. From our earlier figures: on 16 Nov we gave 47% to a lead above 10 pts and it happened, so we underrated Stoianoglo once in this case; with the markets that lifts me from 0.47, not to their level since endorsements are fresh.",
                 "rounds": [
                   {
                     "p": 0.77,
                     "at": "2026-11-27T19:20:45+01:00",
                     "reason": "round one, before the research step's confirmed facts were added to the dossier"
+                  },
+                  {
+                    "p": 0.58,
+                    "at": "2026-11-27T19:32:51+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               },
@@ -2927,86 +3051,102 @@
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-27T19:33:14+01:00",
+                "at": "2026-11-27T21:20:26+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "p": 0.64,
+                "p": 0.74,
                 "p_held": 0.97,
-                "p_if_held": 0.66,
-                "reason": "Revised down from 0.84. About 31% of round-one votes now lean to Gagauz (Dudnic's backing is personal only, with no signed deal), so the 14.2-point lead shrinks to about +4 two-way, model 0.67. About 3% risk the round is declared invalid: the runoff turnout rule is unconfirmed (20% per The Insider, a third in 2023-era reports). Markets 0.82 sit above this. Our earlier first-round figures in this case ran low, but that is a weak signal here.",
+                "p_if_held": 0.76,
+                "reason": "No runoff poll; model on round-one result (Stoianoglo 38.4 v Gagauz 24.2) with assumed transfers: endorsers Dudnic, Koksal, Garizan, Vlah (31.8%) split 55/30 to Gagauz, rest even, gives Stoianoglo two-party lead ~+6; sd 9 for unmeasured transfers and Gagauz's 5x money/mobilisation edge. Thin markets 0.815/0.82 slightly higher. ~2% invalidity/slip. Earlier case figures were round-one claims, not this question.",
                 "anchor": {
-                  "kind": "poll-model (first-round result redistributed)",
-                  "detail": "leadabove 4 9 0 = 0.672. Starting point is the first round, 38.44 v 24.22. Candidates with 31.3% (Dudnic, Koksal, Garizan, Vlah) leaning to Gagauz are assumed to split about 65/35 to Gagauz, Anastasov's 4.4% (neutral) 50/50, giving an expected two-way lead of about +4 for Stoianoglo. sd is 9 because how well endorsements transfer is unknown. A 75/25 split would put Gagauz ahead."
+                  "kind": "poll-model (round-one result + transfer assumption)",
+                  "detail": "node scripts/refdata/models.mjs leadabove 6 9 0 -> 0.7475; Polymarket 0.815 (vol 2.7k), Kalshi last 0.82 bid 0.77/ask 0.80, thin"
                 },
                 "poll_model": {
-                  "lead": 4,
+                  "lead": 6,
                   "sd": 9,
                   "threshold": 0,
-                  "p": 0.672,
-                  "source": "CEC first round 15 Nov plus NewsMaker 27 Nov on endorsements (research step)"
+                  "p": 0.7475,
+                  "source": "No runoff poll exists; lead built from CEC/Gagauz council round-one final shares (Infotag 16 Nov) with endorsement-weighted transfer assumptions",
+                  "note": "Regional sd 4.5 doubled: no poll, transfer of ~37% of votes unmeasured, differential turnout, vote-buying record."
                 },
+                "searches": 0,
                 "rounds": [
                   {
                     "p": 0.84,
                     "at": "2026-11-27T19:12:38+01:00",
                     "reason": "round one, before the research step's confirmed facts were added to the dossier"
+                  },
+                  {
+                    "p": 0.64,
+                    "at": "2026-11-27T19:33:14+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-27T19:00:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.6,
-                "reason_blind": "Round 1 on 15 Nov: Stoianoglo 38.4 vs Gagauz (Socialist) 24.2; 37% went to others, likely Gutul-camp/pro-Russian voters leaning Gagauz. Leader of first round wins runoff ~70% typically; discounted for transfers and invalid-turnout risk.",
-                "searches": 0,
-                "at": "2026-11-27T21:00:00+01:00",
+                "p_blind": 0.8,
+                "reason_blind": "First round 15 Nov (CEC prelim): Stoianoglo 38.44%, Gagauz 24.22%, turnout 37.6%. Third-placed Furtuna reportedly urged votes for Stoianoglo. Risks: pro-Russian consolidation behind Gagauz, runoff turnout minimum invalidity.",
+                "searches": 1,
+                "at": "2026-11-27T21:22:08+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.5,
-                "reason": "Lead 38.4 v 24.2 but Koksal 9.7, Vlah, Garizan and Dudnic 16.3 back Gagauz; with ~60% transfer Gagauz ~40-42 v Stoianoglo ~40. Market 0.82 predates the endorsements; low turnout 37.6% and no runoff minimum. Cut from 0.73 to a coin flip.",
+                "p": 0.81,
+                "reason": "First round 38.4 vs 24.2 plus endorsement; thin Polymarket/Kalshi 0.82 matches my blind figure. Case record only covers round one (Stoianoglo first, right side), not the same question.",
                 "rounds": [
                   {
                     "p": 0.73,
                     "at": "2026-11-27T20:00:00+01:00",
                     "reason": "round one, before the research step's confirmed facts were added to the dossier"
+                  },
+                  {
+                    "p": 0.5,
+                    "at": "2026-11-27T21:00:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               }
             ],
-            "missing": [],
+            "missing": [
+              {
+                "step": "union-of-facts rerun (evening check)",
+                "why": "After the evening-check rerun the outsider differed from the other four because it lacked facts the dossier holds. Giving it the union of facts would have meant handing the dossier's facts to the forecaster who must work without the dossier; the step was stopped by the run's permission check and not repeated another way. The spread is left as it is for the morning run."
+              }
+            ],
             "disagreement": {
               "cause": "inputs",
-              "note": "Round one spread 16 points: only the evidence forecaster had found NewsMaker's 27 Nov report that eliminated candidates back Gagauz. The research step confirmed it on the page and added it to the dossier; all five reran (round-one figures in rounds)."
+              "note": "Evening check: spread 26 points after the rerun. The four forecasters who read the dossier (0.55–0.74) weigh the endorsements of Gagauz by eliminated candidates with about 32% of the first-round vote and his spending advantage; the outsider, who by rule works without the dossier, did not find those endorsements in its own searches and stayed at 0.81 with the thin markets. The cause is inputs. The union-of-facts rerun was not made in this run (see missing)."
             },
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
             "poll_model": {
-              "lead": 14.22,
-              "sd": 4.5,
+              "lead": 6,
+              "sd": 9,
               "threshold": 0,
-              "p": 0.9992,
-              "source": "FIRST-ROUND RESULT used as the lead, not a poll: CEC 15 Nov, Stoianoglo 38.44 minus Gagauz 24.22 (all counted, Reuters/Logos Press). No runoff poll exists; about 36.5% of round-one votes went to six eliminated candidates whose transfers are unmeasured, so the model's sd understates the real uncertainty.",
-              "note": "models.mjs leadabove 14.22 4.5 0"
+              "p": 0.7475,
+              "source": "No runoff poll exists; lead built from CEC/Gagauz council round-one final shares (Infotag 16 Nov) with endorsement-weighted transfer assumptions",
+              "note": "Regional sd 4.5 doubled: no poll, transfer of ~37% of votes unmeasured, differential turnout, vote-buying record. Evening check 27 Nov: no runoff poll exists; the lead is the first-round result with assumed transfers from the eliminated candidates, so this is a model of assumptions, not of polls."
             },
-            "combined": 0.601,
-            "spread": 0.18,
+            "combined": 0.686,
+            "spread": 0.26,
             "decomposition": {
-              "p_held": 0.983,
-              "p_if_held": 0.612,
+              "p_held": 0.99,
+              "p_if_held": 0.693,
               "p_if_not_held": 0
             },
             "research": {
@@ -3019,7 +3159,8 @@
                 "https://newsmaker.md/ru/my-reshili-priderjivatsya-neitraliteta-anastasov-otkazalsya-podderjivat-kandidatov-vo-vtorom-ture-vyborov-bashkana-gagauzii",
                 "https://a.cec.md/ro/pe-29-noiembrie-2026-va-avea-loc-turul-al-2781_120791.html",
                 "https://radiomoldova.md/p/12454"
-              ]
+              ],
+              "note": "Evening check 27 Nov: the spread after the rerun is 26 points; the disputed facts (whom the eliminated candidates back, a runoff turnout minimum) are those this research already settled at 19:26, so it was not repeated."
             },
             "shadow": {
               "external": [
@@ -3064,6 +3205,33 @@
                   "trace": "data/dossiers/2026-11-30/md-gagauzia-30.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 19,
+              "leads_distinct": 19,
+              "already_in_dossier": 8,
+              "facts_confirmed": 6,
+              "added": [
+                "https://stiri.md/article/politica/gagauz-vs-stoianoglo-strategiile-electorale-inaintea-votului-decisiv-din-gagauzia",
+                "https://promolex.md/ru/promo-lex-predstavila-tretij-otchyot-o-nablyudenii-za-regionalnymi-vyborami-v-ato-gagauziya/",
+                "https://www.infotag.md/rebelion-en/335272/",
+                "https://ziua.md/ultima-zi-de-campanie-electorala-in-gagauzia-duminica-alexandr-stoianoglo-si-fiodor-gagauz-se-vor-confrunta-in-turul-doi-pentru-functia-de-bascan/",
+                "https://a.cec.md/ro/autoritatile-isi-coordoneaza-actiunile-pentru-prevenirea-si-dupa-caz-2781_120825.html",
+                "https://moldova1.md/p/91360/turul-al-doilea-in-gagauzia-cec-prezinta-profilul-candidatilor-si-pune-la-dispozitie-o-linie-telefonica-pentru-alegatori"
+              ],
+              "reforecast": true,
+              "before": 0.601,
+              "material": [
+                "Știri.md reported on 26 November 2026 that between 16 October and 22 November Fiodor Gagauz raised more than five times as much in donations as Alexandr Stoianoglo and spent about nine times as much on electoral advertising, campaigned more actively with PSRM leaders including Igor Dodon, and rejected Stoianoglo's invitation to a public debate.",
+                "Promo-LEX's third observation report (covering 18-25 November 2026) documented 77 runoff campaign events and advertising cases for Bashkan, 56 linked to Fiodor Gagauz and 21 to Alexandr Stoianoglo, recorded no debate between the two, and estimated at least 22,268 lei of undeclared spending, all attributed to Gagauz's campaign."
+              ],
+              "after": 0.686
             }
           }
         }
@@ -3127,7 +3295,7 @@
           "kind": "binary",
           "label": "Viteri wins Guayaquil mayoralty",
           "text": "Cynthia Viteri wins the mayoralty of Guayaquil in Ecuador's sectional elections on Sunday 29 November 2026.",
-          "criterion": "YES if the National Electoral Council's (CNE) provisional results for mayor of Guayaquil in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Cynthia Viteri with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. Later challenges or recounts do not change the resolution.",
+          "criterion": "YES if the National Electoral Council's (CNE) provisional results for mayor of Guayaquil in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Cynthia Viteri with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. The date condition concerns only the day of voting: a count that reaches 90% of actas after 29 Nov decides all the same. The resolver uses the most complete CNE count published when it reads, not the first to pass 90%; if the named outlets report different stages of the count, the report with more actas processed decides. Later challenges or recounts do not change the resolution.",
           "resolution_source": "https://resultados.cne.gob.ec/ ; https://www.cne.gob.ec/ ; https://www.primicias.ec/politica/",
           "schedule": "official",
           "slip_class": "election-held",
@@ -3144,11 +3312,22 @@
           "cs": {
             "label": "Viteri vyhraje Guayaquil",
             "text": "Cynthia Viteri vyhraje v nedělních ekvádorských komunálních volbách 29. listopadu 2026 volbu starosty Guayaquilu.",
-            "criterion": "ANO, pokud průběžné výsledky Národní volební rady (CNE) pro volbu starosty Guayaquilu konanou 29. listopadu 2026 (resultados.cne.gob.ec nebo oznámení CNE) po zpracování nejméně 90 % zápisů (actas) ukážou, že nejvíce platných hlasů získala Cynthia Viteri; vyhlášení vítěze CNE má přednost, pokud přijde dřív, než výsledek ověříme. Nelze-li stránky CNE přečíst, rozhoduje zpravodajství serverů Primicias, El Comercio nebo Teleamazonas o sčítání CNE. NE, pokud v tu chvíli vede jiný kandidát nebo se volby 29. listopadu 2026 (ekvádorského času) nekonají. Je-li při ověření zpracováno méně než 90 % zápisů, tvrzení zůstává otevřené. Rychlé sčítání CNE ani odchozí průzkumy nerozhodují. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
+            "criterion": "ANO, pokud průběžné výsledky Národní volební rady (CNE) pro volbu starosty Guayaquilu konanou 29. listopadu 2026 (resultados.cne.gob.ec nebo oznámení CNE) po zpracování nejméně 90 % zápisů (actas) ukážou, že nejvíce platných hlasů získala Cynthia Viteri; vyhlášení vítěze CNE má přednost, pokud přijde dřív, než výsledek ověříme. Nelze-li stránky CNE přečíst, rozhoduje zpravodajství serverů Primicias, El Comercio nebo Teleamazonas o sčítání CNE. NE, pokud v tu chvíli vede jiný kandidát nebo se volby 29. listopadu 2026 (ekvádorského času) nekonají. Je-li při ověření zpracováno méně než 90 % zápisů, tvrzení zůstává otevřené. Rychlé sčítání CNE ani odchozí průzkumy nerozhodují. Podmínka data se týká jen dne hlasování: rozhoduje i sčítání, které překročí 90 % zápisů až po 29. listopadu. Použije se nejúplnější sčítání CNE zveřejněné v okamžiku ověření, nikoli první, které přesáhlo 90 %; uvádějí-li jmenovaná média různé fáze sčítání, rozhoduje zpráva s více zpracovanými zápisy. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
           },
           "election": {
             "kind": "winner",
             "level": "local"
+          },
+          "wording_check": {
+            "at": "2026-11-27T21:25:39+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the National Electoral Council's (CNE) provisional results for mayor of Guayaquil in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Cynthia Viteri with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. Later challenges or recounts do not change the resolution.",
+            "why": "All three models named real cases: the CNE count reaches 90% only on 30 Nov (window rule against the pending rule), or the lead changes between 90% and the end of the count. The criterion now says the window is about the day of voting and that the most complete published count decides. What is forecast is unchanged."
           },
           "forecast": {
             "baseline": {
@@ -3192,144 +3371,185 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:31:42+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.76,
-                "reason_blind": "Wider class final-poll leader wins 9/14=0.64; dated fact +0.6 logit: Atlas 2 Oct lead 23.4 (Viteri 38.7 v Ycaza 15.3), no incumbent on ballot. Held back: single stale online poll, jailed Alvarez led March poll 45-23 and his vote may consolidate behind wife Ycaza, Noboa approval 26%, 58.8% want change. Slip ~1% (date moved once, rain relocations).",
-                "at": "2026-11-27T19:35:38+01:00",
+                "p_blind": 0.83,
+                "reason_blind": "Wider class final-poll-leader-wins own 9/14 (0.64); slip 0.003. Viteri leads all Nov polls: Talisman in-person 43.2 v 24.7, digital 34.6 v 19.3, Polidata 49.6 v 25.3 (lead ~15-25); leadabove 17/12 -> 0.92. Down: 2023 polls/exit poll overstated Viteri ~10 pts each (lead miss ~20), MR Analytica 25/23/22, Alvarez sympathy vote, Noboa approval 26%, plurality with 8 candidates.",
+                "searches": 0,
+                "at": "2026-11-27T21:20:57+01:00",
                 "inputs": [
                   "dossier",
                   "reference-data",
                   "signals"
                 ],
-                "p": 0.74,
-                "p_held": 0.99,
-                "p_if_held": 0.75,
-                "reason": "Class 0.64 plus Atlas 2 Oct lead 23.4 gave blind 0.76, held back by stale single poll and possible Alvarez-sympathy consolidation behind Ycaza. Signals: Kalshi 0.70 (bid 0.63/ask 0.70, ~243 contracts, extremely thin) slightly lower; trim to 0.74. New case, no earlier figures. Slip ~1%."
+                "p": 0.8,
+                "p_held": 0.997,
+                "p_if_held": 0.8,
+                "reason": "Blind 0.83 (all Nov polls Viteri +15-25; 2023 polls overstated her ~10 pts). Kalshi last 0.70, bid 0.63/ask 0.70, ~243 contracts, extremely thin; nudged down slightly. Case record: new case, no earlier figures, nothing taken from it.",
+                "rounds": [
+                  {
+                    "p": 0.74,
+                    "at": "2026-11-27T19:35:38+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:32:29+01:00",
+                "at_blind": "2026-11-27T21:18:50+01:00",
                 "inputs_blind": [
                   "own-research",
                   "dossier"
                 ],
                 "p_blind": 0.8,
                 "p_own": 0.82,
-                "reason_blind": "Own: Click Research (Sep) Viteri 35.6, Ycaza 13.4, Roche 10.6; Atlas (26 Sep-2 Oct) 38.7/15.3/11.9; Noboa closed her campaign 26 Nov. A 20+ pt plurality lead is rarely lost (cf. leader class 0.64-0.83). Dossier risks: jailed Alvarez led March poll at 45%, so his vote may consolidate behind his wife Ycaza; no poll after Oct; Noboa approval 26%. Slip 0.003.",
-                "searches": 1,
-                "at": "2026-11-27T19:36:01+01:00",
+                "reason_blind": "Viteri (ADN) leads every candidate poll: Atlas Sep-Oct 38.7 v Ycaza 15.3; Talismán/Atlas in-person 2-11 Nov 43.2 v 24.7; digital 14-19 Nov 34.6 v 19.3; Polidata 49.6 v 25.3; only MR Analytica (projection) close 25/23/22. Single-round plurality; incumbent Álvarez barred. Risks: Álvarez sympathy vote to Ycaza; 2023 polls overstated Viteri by ~10 pts; anti-Noboa mood.",
+                "searches": 2,
+                "at": "2026-11-27T21:21:28+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.78,
-                "p_held": 0.99,
+                "p": 0.79,
+                "p_held": 0.995,
                 "p_if_held": 0.79,
-                "reason": "Blind 0.80 (Click Sep Viteri 35.6 v Ycaza 13.4; Atlas Oct 38.7 v 15.3; risk of jailed Alvarez's vote consolidating behind Ycaza; no poll after Oct). Signal: Kalshi 0.70 but extremely thin (~243 contracts, wide spread), small weight; 0.78. No earlier figures (new case). Slip 0.003."
+                "reason": "Viteri leads every November candidate poll by 15-25 pts (Talismán/Atlas, Polidata); only MR Analytica projection close; plurality single round. Kalshi 0.70 is extremely thin (243 contracts) and I hold near my 0.80; 2023 poll miss against Viteri keeps it below 0.85. Case record: new case, no earlier figures.",
+                "rounds": [
+                  {
+                    "p": 0.78,
+                    "at": "2026-11-27T19:36:01+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-27T19:32:51+01:00",
+                "at_blind": "2026-11-27T21:18:23+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.68,
-                "reason_blind": "Against: the only poll (Atlas Intel, online, to 2 Oct) predates the campaign; jailed Alvarez polled 45% to Viteri's 23 in March and his wife Ycaza can inherit that vote; Noboa approval 26%, 58.8% want something different,. For: a 23.4-pt lead (38.7 v 15.3) with opposition split between Ycaza and Roche. Leader class 0.64, raised for lead size.",
+                "p_blind": 0.71,
+                "reason_blind": "Viteri leads every real poll: 43.2-24.7 (2-11 Nov, in person), 34.6-19.3 (14-19 Nov), Polidata 49.6-25.3. Case for NO: in 2023 the exit poll had her +10 and she lost by 9.5; MR Analytica projection 25/23/22; Noboa approval 26%, 58.8% want change, Alvarez polled 45% in March and his wife Ycaza can gather that vote; 11-26% undecided or null. Leads of 15-24 pts are about the size of the 2023 miss, so not above 0.71.",
                 "searches": 0,
-                "at": "2026-11-27T19:36:16+01:00",
+                "at": "2026-11-27T21:21:55+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.68,
-                "p_held": 0.985,
-                "p_if_held": 0.69,
-                "reason": "Viteri +23.4 (38.7 v 15.3) in one online poll ending 2 Oct; risks are Ycaza inheriting jailed Alvarez's vote (45% in March) and Noboa's 26% approval. Kalshi last 0.70, bid 0.63, about 243 contracts: too thin to move me, and it brackets my blind 0.68. No earlier figures in this case."
+                "p": 0.71,
+                "p_held": 0.99,
+                "p_if_held": 0.72,
+                "reason": "Kalshi 0.70 (243 contracts, bid 0.63) agrees with my blind figure; unchanged. Viteri leads real polls by 15-24 pts (43.2-24.7 on 2-11 Nov; 34.6-19.3 on 14-19 Nov; Polidata 49.6-25.3), but in 2023 the exit poll had her +10 and she lost by 9.5, Noboa approval is 26%, and Ycaza can gather the vote of jailed mayor Alvarez. Case record: new case, no earlier figures, nothing taken.",
+                "rounds": [
+                  {
+                    "p": 0.68,
+                    "at": "2026-11-27T19:36:16+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-27T19:33:14+01:00",
+                "at": "2026-11-27T21:20:26+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "p": 0.85,
+                "p": 0.86,
                 "p_held": 0.99,
-                "p_if_held": 0.86,
-                "reason": "Model 0.95 on a 23-point lead. Lowered by about 1.3 log-odds: jailed incumbent Álvarez polled 45 in March and his wife Ycaza may draw his sympathy vote. Noboa's approval is 26% and 58.8% want something different. Viteri's 2019-23 record is contested. The thin Kalshi market at 0.70 hints at a closer race. No earlier figures in this case.",
+                "p_if_held": 0.87,
+                "reason": "Poll model: Nov polls of final field average Viteri lead ~17 over the second candidate (Talismán digital +15, in-person +18.5, Polidata +24, MR projection +2 weighted low), shaded to +14 because 2023 polls overstated Viteri by ~10 pts; sd 11 (local, few/online polls, record of miss) gives 0.90. Trimmed toward thin Kalshi 0.70 for Álvarez-sympathy consolidation behind Ycaza. New case.",
                 "anchor": {
-                  "kind": "poll-model (plurality lead over 2nd)",
-                  "detail": "leadabove 23.4 14 0 = 0.953. Atlas Intel (26 Sep-2 Oct): Viteri 38.7 v Ycaza 15.3. sd is widened from 5.5 to 14 because this is a single online poll that is 8 weeks old and Álvarez's vote may consolidate behind Ycaza. At sd 5.5 the model gives 1.00."
+                  "kind": "poll-model",
+                  "detail": "node scripts/refdata/models.mjs leadabove 14 11 0 -> 0.8984; Kalshi Viteri last 0.70 bid 0.63/ask 0.70, vol 243 (thin)"
                 },
                 "poll_model": {
-                  "lead": 23.4,
-                  "sd": 14,
+                  "lead": 14,
+                  "sd": 11,
                   "threshold": 0,
-                  "p": 0.953,
-                  "source": "Atlas Intel Guayaquil, fieldwork to 2 Oct 2026"
-                }
+                  "p": 0.8984,
+                  "source": "Talismán/AtlasIntel digital 14-19 Nov (34.6 v 19.3, weight 2), Talismán/AtlasIntel in-person 2-11 Nov (43.2 v 24.7, weight 1.5), Polidata pub. 19 Nov (49.6 v 25.3, weight 1), MR Analytica projection 10 Nov (25 v 23 Roche, weight 0.5); weighted mean 16.7, shaded -2.7 for 2023 pro-Viteri poll bias",
+                  "note": "Local sd 5.5 doubled: poll ban since 19 Nov, divergent methods, 2023 exit poll missed Viteri by ~10 pts each way."
+                },
+                "searches": 0,
+                "rounds": [
+                  {
+                    "p": 0.85,
+                    "at": "2026-11-27T19:33:14+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-27T21:00:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.42,
-                "reason_blind": "Viteri runs for ADN (Noboa's party) in an 8-way field with Icaza (correismo, wife of jailed mayor Alvarez), Roche (PSC) and others; no recent poll found; earlier poll had Alvarez leading. Plurality wins, ADN has machine and Noboa interest; fragmented, so about 0.4.",
-                "searches": 1,
-                "at": "2026-11-27T21:30:00+01:00",
+                "p_blind": 0.5,
+                "reason_blind": "Viteri is ADN (Noboa) candidate with Noboa backing; eight candidates, plurality wins; Aquiles Alvarez (incumbent, 2023 winner) strong rival. No recent poll found in my searches; near coin flip with slight ADN-machine edge offset by Viteri's past unpopularity.",
+                "searches": 2,
+                "at": "2026-11-27T21:22:08+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.74,
-                "reason": "Blind was 0.42. Two polls show Viteri 36-39 vs Ycaza 13-15 in an 8-way plurality race; Noboa rally. Kalshi 0.70 (243 contracts, negligible). Discount: polls are 2 months old, online, Ecuadorian polls err, Alvarez camp may consolidate behind Ycaza, Noboa approval 26%."
+                "p": 0.57,
+                "reason": "Only a very thin Kalshi price (0.70, bid 0.63) with Ycaza at 0.31 as rival; I move modestly up from a coin flip, discounting thin liquidity. No case record.",
+                "rounds": [
+                  {
+                    "p": 0.74,
+                    "at": "2026-11-27T21:30:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               }
             ],
             "missing": [
               {
                 "step": "research",
                 "why": "spread 17 points after the outsider received the union of facts; no further research step run (search budget kept for the morning reserve); the evidence is one stale online poll plus an older one, so the spread is genuine"
+              },
+              {
+                "step": "union-of-facts rerun (evening check)",
+                "why": "After the evening-check rerun the outsider differed from the other four because it lacked facts the dossier holds. Giving it the union of facts would have meant handing the dossier's facts to the forecaster who must work without the dossier; the step was stopped by the run's permission check and not repeated another way. The spread is left as it is for the morning run."
               }
             ],
             "disagreement": {
               "cause": "inputs",
-              "note": "Blind spread 43 points: the outsider (no dossier) had found no poll and put 42%. With the signals and the union of facts (the two September–October polls, the jailed incumbent's wife running) it gave 74%. Final spread 17 points (0.68–0.85): genuine on how far one September–October poll can be trusted."
+              "note": "Evening check: spread 29 points after the rerun. The four forecasters who read the dossier (0.71–0.86) have the three November polls confirmed this evening; the outsider, who by rule works without the dossier, found no poll of the final field in its own searches and stayed at 0.57. The cause is inputs, not judgement. The union-of-facts rerun was not made in this run (see missing); the targeted research found no later poll and nothing that settles how far the polls can be trusted."
             },
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
             "poll_model": {
-              "lead": 23.4,
-              "sd": 5.5,
+              "lead": 14,
+              "sd": 11,
               "threshold": 0,
-              "p": 1,
-              "source": "Atlas Intel, fieldwork 26 Sep–2 Oct 2026, online, n 800–1,600, published 4 Oct via KCH FM: Viteri 38.7 v Ycaza 15.3 (vote base not stated). It is the ONLY candidate-level poll of the final field found; no later figures before the 19 Nov publication ban.",
-              "note": "models.mjs leadabove 23.4 5.5 0 = 1.0000; a single stale online poll — the model ignores house error and late transfer of the jailed incumbent's vote (Álvarez 45% in CIEES March) to Ycaza."
+              "p": 0.8984,
+              "source": "Talismán/AtlasIntel digital 14-19 Nov (34.6 v 19.3, weight 2), Talismán/AtlasIntel in-person 2-11 Nov (43.2 v 24.7, weight 1.5), Polidata pub. 19 Nov (49.6 v 25.3, weight 1), MR Analytica projection 10 Nov (25 v 23 Roche, weight 0.5); weighted mean 16.7, shaded -2.7 for 2023 pro-Viteri poll bias",
+              "note": "Local sd 5.5 doubled: poll ban since 19 Nov, divergent methods, 2023 exit poll missed Viteri by ~10 pts each way. Evening check 27 Nov: replaces the single September–October poll with the average of the November polls confirmed on their pages. The published figure sits more than 12 points below the model because the outsider, who works without the dossier, found no poll (57%), and because in 2023 the CNE-accredited exit poll had Viteri about 10 points ahead and she lost by 9.5: the model's normal error does not cover a miss of that kind."
             },
-            "combined": 0.763,
-            "spread": 0.17,
+            "combined": 0.758,
+            "spread": 0.29,
             "decomposition": {
-              "p_held": 0.988,
-              "p_if_held": 0.772,
+              "p_held": 0.993,
+              "p_if_held": 0.763,
               "p_if_not_held": 0
             },
             "shadow": {
@@ -3375,6 +3595,52 @@
                   "trace": "data/dossiers/2026-11-30/ec-guayaquil-30.research.json"
                 }
               ]
+            },
+            "research": {
+              "at": "2026-11-27T21:23:52+01:00",
+              "question": "Which fact would settle the forecasters' difference on ec-guayaquil-30: (1) any poll/tracking of the final field with fieldwork after 19 Nov 2026 readable on an outlet or pollster page; (2) a readable source for the size of the miss of the final Feb 2023 pre-election polls in Guayaquil (result Álvarez 39.87, Viteri 30.38); (3) any dated report since 20 Nov of Álvarez/Revolución Ciudadana calling to vote Ycaza, or of a rival (e.g. Roche/PSC) withdrawing or endorsing.",
+              "finding": "No poll or tracking with fieldwork after 19 Nov 2026 was found on any outlet or pollster page (the X-only trackers did not surface in search), and no dated report since 20 Nov of Álvarez or Revolución Ciudadana calling to vote Ycaza, nor of Roche/PSC withdrawing or endorsing, was found. For 2023, Teleamazonas (6 Feb 2023) confirms the Market exit poll inverted the Guayaquil result (Viteri 40.04 vs Álvarez 30.17 projected; CNE ~39.7 Álvarez vs ~30.3 Viteri) and that Cedatos was also criticised; Primicias (18 Jan 2023) says polls then showed Viteri 'bastante delantera' (Clima Social, no shares given), and an Expreso sondeo of 19 Nov 2022 had Viteri 37.3, Jairala 33.5, Álvarez 17.9. No page giving the final (late Jan 2023) Cedatos/Click/Comunicaliza/Market candidate shares was found, so the pre-election poll miss beyond the exit poll is not quantified.",
+              "decisive": false,
+              "searches": 6,
+              "sources": [
+                "https://www.teleamazonas.com/cuestionadas-cifras-market-cedatos-comicios-seccionales/",
+                "https://primicias.ec/noticias/seccionales-2023/candidatos-guayaquil-restar-votos-cynthia-viteri",
+                "https://primicias.ec/noticias/seccionales-2023/alfredo-serrano-encuestas-resultados-elecciones2023",
+                "https://www.expreso.ec/actualidad/falta-transparencia-aupa-propuestas-piso-142139.html"
+              ],
+              "note": "Evening check: asked after the rerun left a spread above 15 points; no new decisive fact, so no further rerun and the spread stands (the evidence is mixed)."
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "openai",
+                "google",
+                "xai"
+              ],
+              "facts_listed": 22,
+              "leads_distinct": 19,
+              "already_in_dossier": 9,
+              "facts_confirmed": 8,
+              "added": [
+                "https://talismanmp.com/encuestas/2026-11-guayaquil-alcaldia/",
+                "https://talismanmp.com/encuestas/2026-11-19-guayaquil-alcaldia/",
+                "https://tctelevision.com/lo-ultimo/noticias/encuesta-revela-intencion-de-voto-para-alcaldias-y-prefecturas-en-guayas-el-oro-y-azuay/",
+                "https://www.extra.ec/noticia/politica/cynthia-viteri-lidera-intencion-voto-guayaquil-andres-roche-crece-mr-analytica-167544.html",
+                "https://www.eldiario.ec/ecuador/aquiles-alvarez-39-y-cynthia-viteri-30-en-guayaquil-06022023/",
+                "https://www.expreso.ec/actualidad/guerra-fria-encuestas-138949.html",
+                "https://www.cne.gob.ec/concluyo-la-jornada-de-voto-ppl-de-las-elecciones-seccionales-y-cpccs-2027/",
+                "https://www.primicias.ec/politica/elecciones/seccionales-adelantadas-2027/posesion-autoridades-electas-alcaldes-prefectos-candidatos-24mayo-cne-137934/"
+              ],
+              "reforecast": true,
+              "before": 0.763,
+              "material": [
+                "A CNE-registered in-person Talismán/AtlasIntel poll of 1,471 Guayaquil respondents (fieldwork 2–11 Nov 2026, ±3 pp), published 13 Nov 2026, put Cynthia Viteri (ADN) at 43.2%, Fiorella Ycaza (PSE) at 24.7% and Andrés Roche (PSC) at 14.1%, with 4.2% blank/null and 7.5% undecided.",
+                "A digital Talismán/AtlasIntel poll of 1,760 Guayaquil respondents (fieldwork 14–19 Nov 2026, ±2 pp), published 19 Nov 2026, put Viteri at 34.6%, Ycaza at 19.3%, Roche at 10.6% and Mónica Luzárraga at 5.3%, with 14.7% blank/null and 10.9% undecided.",
+                "TC Televisión reported on 19 Nov 2026 a CNE-authorized Polidata survey of 887 people (±3.48%) putting Viteri at 49.60%, Ycaza at 25.31% and Roche at 9.31% for mayor of Guayaquil, with 6.19% 'none' and 1.33% undecided; fieldwork dates were not given.",
+                "Diario Extra reported on 10 Nov 2026 a CNE-authorized MR Analytica 'projection study' giving Viteri 25%, Roche 23% and Ycaza 22% for mayor of Guayaquil, with 16% undecided.",
+                "In the February 2023 Guayaquil mayoral election, the CNE-accredited Market exit poll had Viteri ahead with 40.04% to Aquiles Álvarez's 30.17%, while the official count (100% of actas, 14 Feb 2023) gave Álvarez 39.87% and Viteri 30.38%: a miss of about 10 points on each of the two leaders, in Viteri's favour."
+              ],
+              "after": 0.758
             }
           }
         },
@@ -3383,7 +3649,7 @@
           "kind": "binary",
           "label": "Muñoz wins Quito mayoralty",
           "text": "Pabel Muñoz wins the mayoralty of Quito in Ecuador's sectional elections on Sunday 29 November 2026.",
-          "criterion": "YES if the National Electoral Council's (CNE) provisional results for mayor of the Metropolitan District of Quito in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Pabel Muñoz with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. Later challenges or recounts do not change the resolution.",
+          "criterion": "YES if the National Electoral Council's (CNE) provisional results for mayor of the Metropolitan District of Quito in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Pabel Muñoz with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. The date condition concerns only the day of voting: a count that reaches 90% of actas after 29 Nov decides all the same. The resolver uses the most complete CNE count published when it reads, not the first to pass 90%; if the named outlets report different stages of the count, the report with more actas processed decides. Later challenges or recounts do not change the resolution.",
           "resolution_source": "https://resultados.cne.gob.ec/ ; https://www.cne.gob.ec/ ; https://www.primicias.ec/politica/",
           "schedule": "official",
           "slip_class": "election-held",
@@ -3400,13 +3666,24 @@
           "cs": {
             "label": "Muñoz obhájí Quito",
             "text": "Pabel Muñoz vyhraje v nedělních ekvádorských komunálních volbách 29. listopadu 2026 volbu starosty Quita.",
-            "criterion": "ANO, pokud průběžné výsledky Národní volební rady (CNE) pro volbu starosty metropolitního distriktu Quito konanou 29. listopadu 2026 (resultados.cne.gob.ec nebo oznámení CNE) po zpracování nejméně 90 % zápisů (actas) ukážou, že nejvíce platných hlasů získal Pabel Muñoz; vyhlášení vítěze CNE má přednost, pokud přijde dřív, než výsledek ověříme. Nelze-li stránky CNE přečíst, rozhoduje zpravodajství serverů Primicias, El Comercio nebo Teleamazonas o sčítání CNE. NE, pokud v tu chvíli vede jiný kandidát nebo se volby 29. listopadu 2026 (ekvádorského času) nekonají. Je-li při ověření zpracováno méně než 90 % zápisů, tvrzení zůstává otevřené. Rychlé sčítání CNE ani odchozí průzkumy nerozhodují. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
+            "criterion": "ANO, pokud průběžné výsledky Národní volební rady (CNE) pro volbu starosty metropolitního distriktu Quito konanou 29. listopadu 2026 (resultados.cne.gob.ec nebo oznámení CNE) po zpracování nejméně 90 % zápisů (actas) ukážou, že nejvíce platných hlasů získal Pabel Muñoz; vyhlášení vítěze CNE má přednost, pokud přijde dřív, než výsledek ověříme. Nelze-li stránky CNE přečíst, rozhoduje zpravodajství serverů Primicias, El Comercio nebo Teleamazonas o sčítání CNE. NE, pokud v tu chvíli vede jiný kandidát nebo se volby 29. listopadu 2026 (ekvádorského času) nekonají. Je-li při ověření zpracováno méně než 90 % zápisů, tvrzení zůstává otevřené. Rychlé sčítání CNE ani odchozí průzkumy nerozhodují. Podmínka data se týká jen dne hlasování: rozhoduje i sčítání, které překročí 90 % zápisů až po 29. listopadu. Použije se nejúplnější sčítání CNE zveřejněné v okamžiku ověření, nikoli první, které přesáhlo 90 %; uvádějí-li jmenovaná média různé fáze sčítání, rozhoduje zpráva s více zpracovanými zápisy. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
           },
           "election": {
             "kind": "winner",
             "level": "local"
           },
           "independent": "A different race with different candidates in another city; it does not hang on the Guayaquil result.",
+          "wording_check": {
+            "at": "2026-11-27T21:25:39+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the National Electoral Council's (CNE) provisional results for mayor of the Metropolitan District of Quito in the election held on 29 Nov 2026 (resultados.cne.gob.ec or the CNE's own announcement), with at least 90% of tally sheets (actas) processed, show Pabel Muñoz with the most valid votes; a CNE proclamation of the winner takes precedence if made before the resolver reads. If the CNE portal cannot be read, Primicias, El Comercio or Teleamazonas reporting of the CNE count decides. NO if another candidate has the most valid votes at that stage, or if the election is not held on 29 Nov 2026 (America/Guayaquil). If fewer than 90% of actas are processed when the resolver reads, the claim stays pending. The CNE quick count and exit polls do not decide. Later challenges or recounts do not change the resolution.",
+            "why": "All three models named real cases: the CNE count reaches 90% only on 30 Nov (window rule against the pending rule), the lead changes between 90% and the end of the count, or two of the named outlets report different stages of it. The criterion now says the window is about the day of voting and that the most complete published count decides. What is forecast is unchanged."
+          },
           "forecast": {
             "baseline": {
               "status_quo": "yes",
@@ -3872,7 +4149,7 @@
           "kind": "binary",
           "label": "Janković re-elected in Ljubljana",
           "text": "Zoran Janković is re-elected mayor of Ljubljana in the runoff on Sunday 29 November 2026.",
-          "criterion": "YES if the State Election Commission's (DVK, volitve.dvk-rs.si) preliminary unofficial results for the second round of the Ljubljana mayoral election held on 29 Nov 2026, with at least 95% of votes cast at polling stations counted, show Zoran Janković with more votes than Luka Mesec; the official result including postal votes takes precedence if published before the resolver reads. If the DVK site cannot be read, RTV Slovenija (rtvslo.si) or STA reporting of the DVK count decides. NO if Luka Mesec has more votes, or if the runoff is not held on 29 Nov 2026 (Europe/Ljubljana). If fewer than 95% of votes are counted when the resolver reads, the claim stays pending. Later appeals or recounts do not change the resolution.",
+          "criterion": "YES if the State Election Commission's (DVK, volitve.dvk-rs.si) preliminary unofficial results for the second round of the Ljubljana mayoral election held on 29 Nov 2026, with at least 95% of votes cast at polling stations counted, show Zoran Janković with more votes than Luka Mesec; the official result including postal votes takes precedence if published before the resolver reads. If the DVK site cannot be read, RTV Slovenija (rtvslo.si) or STA reporting of the DVK count decides. NO if Luka Mesec has more votes, or if the runoff is not held on 29 Nov 2026 (Europe/Ljubljana). If fewer than 95% of votes are counted when the resolver reads, the claim stays pending. The date condition concerns only the day of voting: a count that reaches 95% after 29 Nov decides all the same. The resolver uses the most complete DVK count published when it reads, not the first to pass 95%. Later appeals or recounts do not change the resolution.",
           "resolution_source": "https://volitve.dvk-rs.si/ ; https://www.rtvslo.si/slovenija/lokalne-volitve-2026",
           "schedule": "official",
           "slip_class": "election-held",
@@ -3889,11 +4166,22 @@
           "cs": {
             "label": "Janković obhájí Lublaň",
             "text": "Zoran Janković bude v nedělním druhém kole 29. listopadu 2026 znovu zvolen starostou Lublaně.",
-            "criterion": "ANO, pokud předběžné neoficiální výsledky Státní volební komise (DVK, volitve.dvk-rs.si) pro druhé kolo volby starosty Lublaně konané 29. listopadu 2026 po sečtení nejméně 95 % hlasů odevzdaných ve volebních místnostech ukážou, že Zoran Janković získal více hlasů než Luka Mesec; oficiální výsledek včetně hlasů zaslaných poštou má přednost, pokud vyjde dřív, než výsledek ověříme. Nelze-li stránky DVK přečíst, rozhoduje zpravodajství RTV Slovenija (rtvslo.si) nebo agentury STA o sčítání DVK. NE, pokud více hlasů získá Luka Mesec nebo se druhé kolo 29. listopadu 2026 (lublaňského času) nekoná. Je-li při ověření sečteno méně než 95 % hlasů, tvrzení zůstává otevřené. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
+            "criterion": "ANO, pokud předběžné neoficiální výsledky Státní volební komise (DVK, volitve.dvk-rs.si) pro druhé kolo volby starosty Lublaně konané 29. listopadu 2026 po sečtení nejméně 95 % hlasů odevzdaných ve volebních místnostech ukážou, že Zoran Janković získal více hlasů než Luka Mesec; oficiální výsledek včetně hlasů zaslaných poštou má přednost, pokud vyjde dřív, než výsledek ověříme. Nelze-li stránky DVK přečíst, rozhoduje zpravodajství RTV Slovenija (rtvslo.si) nebo agentury STA o sčítání DVK. NE, pokud více hlasů získá Luka Mesec nebo se druhé kolo 29. listopadu 2026 (lublaňského času) nekoná. Je-li při ověření sečteno méně než 95 % hlasů, tvrzení zůstává otevřené. Podmínka data se týká jen dne hlasování: rozhoduje i sčítání, které překročí 95 % až po 29. listopadu. Použije se nejúplnější sčítání DVK zveřejněné v okamžiku ověření, nikoli první, které přesáhlo 95 %. Pozdější stížnosti ani přepočítání na výsledku nic nemění."
           },
           "election": {
             "kind": "winner",
             "level": "local"
+          },
+          "wording_check": {
+            "at": "2026-11-27T21:25:39+01:00",
+            "flagged_by": [
+              "openai",
+              "google",
+              "xai"
+            ],
+            "changed": true,
+            "was": "YES if the State Election Commission's (DVK, volitve.dvk-rs.si) preliminary unofficial results for the second round of the Ljubljana mayoral election held on 29 Nov 2026, with at least 95% of votes cast at polling stations counted, show Zoran Janković with more votes than Luka Mesec; the official result including postal votes takes precedence if published before the resolver reads. If the DVK site cannot be read, RTV Slovenija (rtvslo.si) or STA reporting of the DVK count decides. NO if Luka Mesec has more votes, or if the runoff is not held on 29 Nov 2026 (Europe/Ljubljana). If fewer than 95% of votes are counted when the resolver reads, the claim stays pending. Later appeals or recounts do not change the resolution.",
+            "why": "All three models named real cases: the count passes 95% only after midnight (window rule against the pending rule), or postal votes and the last polling stations change the lead after 95%. The criterion now says the window is about the day of voting and that the most complete published count decides (the official result with postal votes already took precedence). What is forecast is unchanged."
           },
           "forecast": {
             "baseline": {
@@ -4687,6 +4975,22 @@
                   "trace": "data/dossiers/2026-11-30/us-ng25-30.research.json"
                 }
               ]
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "google",
+                "openai",
+                "xai"
+              ],
+              "facts_listed": 12,
+              "leads_distinct": 7,
+              "already_in_dossier": 5,
+              "facts_confirmed": 0,
+              "added": [],
+              "reforecast": false,
+              "before": 0.564,
+              "note": "No fact added. The one lead not already in the dossier (NASA's 23 Nov teleconference: no technical issues tracked) could be read only on an aggregator's summary (digg.com), not on NASA's or a news outlet's page, and is superseded by NASA's 27 Nov post already in the dossier; the evening figure stands."
             }
           }
         }
@@ -4777,115 +5081,147 @@
               {
                 "role": "base-rate",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:12:20+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.6,
-                "reason_blind": "Hint scheduled-publication 9/0; wider other-scheduled held 0.91. Self-set podcast promise (26 Nov) first framed 'intensively considering', single source, no channel -> held 0.80. Two-part test (exact pay figure AND assets list) risks partial disclosure or ranges -> 0.75 if held.",
+                "p_blind": 0.52,
+                "reason_blind": "Wider class other-scheduled slip 11/122 (0.089 -> held 0.91); hint scheduled-publication 9/9. Down ~1.6 logit: self-set podcast promise framed 'intenzivne zvazuji', Seznam X clip quotes him 'v horizontu nekolika tydnu', no channel named. If held, needs both an exact pay figure and an asset account; he said 'presne' for both and has disclosed pay before (2021), but partial/range risk remains.",
                 "searches": 0,
-                "at": "2026-11-27T19:18:22+01:00",
+                "at": "2026-11-27T21:20:57+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.6,
-                "p_held": 0.8,
-                "p_if_held": 0.75,
-                "reason": "Scheduled-publication hint 9/0; other-scheduled held 0.91, cut to 0.80 for self-set podcast promise first framed 'considering', single source. Two-part test (exact pay AND asset list) -> 0.75 if held. No market; no earlier figures in this case."
+                "p": 0.52,
+                "p_held": 0.66,
+                "p_if_held": 0.79,
+                "reason": "Unchanged from blind: no markets or models found. Class other-scheduled held 0.91 (n=122), cut for 'considering' framing and the Seznam X clip saying 'within several weeks'; both pay figure and asset account are required. Case record: new case, no earlier figures, nothing taken from it.",
+                "rounds": [
+                  {
+                    "p": 0.6,
+                    "at": "2026-11-27T19:18:22+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "evidence",
                 "model": "claude-opus-5-5",
-                "at_blind": "2026-11-27T19:14:56+01:00",
+                "at_blind": "2026-11-27T21:18:50+01:00",
                 "inputs_blind": [
                   "own-research",
                   "dossier"
                 ],
-                "p_blind": 0.7,
-                "p_own": 0.72,
-                "reason_blind": "Seznam Zprávy 26 Nov podcast: Minář, answering Babiš, 'Tuto neděli večer to zveřejníme' - exact pay and assets. Explicit, public, self-set date (class scheduled-publication 9/0). Risks: first framed 'intensively considering'; may give pay as range or assets vaguely (criterion needs both); late post after 23:59.",
+                "p_blind": 0.45,
+                "p_own": 0.45,
+                "reason_blind": "Only source: Seznam Zprávy podcast 26 Nov, Minář 'intenzivně zvažuji' then 'Tuto neděli večer to zveřejníme' on exact pay and assets; but Seznam's own X clip quotes 'v horizontu několika týdnů'. No second report, no channel named, nothing published by 27 Nov. If he does it, 'svléknu donaha' implies both figures; precedent: he disclosed his Lidé PRO pay in 2021. Self-set promise, slip risk high.",
                 "searches": 2,
-                "at": "2026-11-27T19:20:11+01:00",
+                "at": "2026-11-27T21:21:28+01:00",
                 "inputs": [
                   "own-research",
                   "dossier",
                   "signals"
                 ],
-                "p": 0.7,
-                "p_held": 0.8,
-                "p_if_held": 0.88,
-                "reason": "Seznam Zprávy podcast 26 Nov: Minář said 'Tuto neděli večer to zveřejníme', exact pay and assets, in answer to Babiš. The scheduled-publication class is 9/0. Risks: he first said he was 'intensively considering' it; a range or vague assets would fail the two-part test; a post after 23:59. Signals: no market, no earlier figures, so unchanged."
+                "p": 0.45,
+                "p_held": 0.55,
+                "p_if_held": 0.82,
+                "reason": "Single source: podcast 'this Sunday evening' after 'intensively considering', contradicted by Seznam's X clip 'within several weeks'; nothing published yet; needs both pay figure and assets. No market or model exists, so the blind figure stands. Case record: new case, no earlier figures.",
+                "rounds": [
+                  {
+                    "p": 0.7,
+                    "at": "2026-11-27T19:20:11+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "adversarial",
                 "model": "claude-fable-5-2",
-                "at_blind": "2026-11-27T19:12:31+01:00",
+                "at_blind": "2026-11-27T21:18:23+01:00",
                 "inputs_blind": [
                   "dossier",
                   "reference-data"
                 ],
-                "p_blind": 0.58,
-                "reason_blind": "Only source: Seznam podcast 26 Nov, first 'intensively considering', then 'this Sunday evening we will publish'. Against: self-set promise with no channel or hour, may fold it into 2 Dec action, may give pay but vague assets or a range; both parts needed. For: headline promise under Babiš attack, scheduled publications 9/9, past Lidé PRO disclosure.",
+                "p_blind": 0.4,
+                "reason_blind": "Seznam Zpravy headline and transcript (26 Nov): pay and assets 'this Sunday evening'. Against: he says he is 'intensively considering' it; the outlet's own X clip of the same day quotes 'within several weeks'; no second source, no channel named; he may hold it for the 2 Dec action. Both a CZK pay figure and an asset account are needed inside the window; a range or one half is NO. His exact 2021 pay disclosure helps if he does act.",
                 "searches": 0,
-                "at": "2026-11-27T19:21:15+01:00",
+                "at": "2026-11-27T21:21:55+01:00",
                 "inputs": [
                   "dossier",
-                  "signals",
-                  "reference-data"
+                  "reference-data",
+                  "signals"
                 ],
-                "p": 0.58,
-                "p_held": 0.72,
-                "p_if_held": 0.81,
-                "reason": "Unchanged from blind: no market, no earlier figures in this case. Single source, Seznam podcast 26 Nov: 'intensively considering', then 'this Sunday evening we will publish'. Against: no channel or hour, may move to 2 Dec, vague assets or a pay range; both parts needed. For: headline promise, scheduled publications 9/9."
+                "p": 0.4,
+                "p_held": 0.5,
+                "p_if_held": 0.8,
+                "reason": "No market. Seznam Zpravy headline and transcript (26 Nov) say pay and assets 'this Sunday evening', but he was 'intensively considering' it, the outlet's X clip quotes 'within several weeks', there is no second source and no channel named, and 2 Dec is a natural alternative date. Both a CZK pay figure and an asset account are required in the window. Case record: no earlier claim, nothing taken.",
+                "rounds": [
+                  {
+                    "p": 0.58,
+                    "at": "2026-11-27T19:21:15+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "anchor",
                 "model": "claude-opus-5-5",
                 "blind": "none (anchor works from the signals)",
-                "at": "2026-11-27T19:12:47+01:00",
+                "at": "2026-11-27T21:20:26+01:00",
                 "inputs": [
                   "dossier",
                   "signals",
                   "reference-data"
                 ],
-                "p": 0.68,
-                "p_held": 0.8,
-                "p_if_held": 0.85,
-                "reason": "Anchor 0.91. -1.5 log-odds: self-set podcast promise first framed as 'intensively considering', one source only, no channel; two-part content test (exact pay figure AND assets) can fail on ranges or partial disclosure. He did say 'this Sunday evening we will publish' and 'exactly'. No market, no earlier figures.",
+                "p": 0.5,
+                "p_held": 0.62,
+                "p_if_held": 0.8,
+                "reason": "No market; base rate for scheduled self-publication is high (9/9) but this is a personal podcast promise first framed as 'considering', and Seznam's own X clip quotes 'within several weeks' against the transcript's 'this Sunday evening'. If he publishes, exact pay plus assets is likely (he gave an exact net salary in 2021), but a pay-only or ranged disclosure would fail. New case, no earlier figures.",
                 "anchor": {
                   "kind": "base-rate",
-                  "detail": "Slip other-scheduled 0.089 -> 0.91; hint scheduled-publication 9/0"
+                  "detail": "scheduled-publication-takes-place own 9/0 (hint); slip.mjs other-scheduled 0.089; adjusted down sharply for 'several weeks' contradiction and two-part content test"
                 },
-                "searches": 0
+                "searches": 0,
+                "rounds": [
+                  {
+                    "p": 0.68,
+                    "at": "2026-11-27T19:12:47+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
+                  }
+                ]
               },
               {
                 "role": "outsider",
                 "model": "claude-sonnet-5-5",
-                "at_blind": "2026-11-27T19:30:00+01:00",
+                "at_blind": "2026-11-27T21:18:14+01:00",
                 "inputs_blind": [
                   "own-research",
                   "reference-data"
                 ],
-                "p_blind": 0.15,
-                "reason_blind": "Search found no sign of a scheduled disclosure; claim requires both pay figure and asset account in a 2-day window. Presumably prompted by pressure/promise, so above floor, but promises usually slip or are partial.",
-                "searches": 1,
-                "at": "2026-11-27T21:00:00+01:00",
+                "p_blind": 0.35,
+                "reason_blind": "Searches found no confirmation of a dated promise; Minar returned as MCHPD chair (2026). Needs both pay figure and asset account inside a 2-day window; claim presumably follows a pledge but exact timing and completeness (both parts) uncertain.",
+                "searches": 3,
+                "at": "2026-11-27T21:22:08+01:00",
                 "inputs": [
                   "own-research",
                   "reference-data",
-                  "signals",
-                  "union-of-facts"
+                  "signals"
                 ],
-                "p": 0.82,
-                "reason": "Headline and quote: Minář said on 26 Nov he will state his pay and assets Sunday evening ('Tuto neděli večer to zveřejníme'), covering both limbs. Specific, self-set deadline under public pressure; risks are partial disclosure (pay only), vague figure, or delay past 23:59. Up from 0.13.",
+                "p": 0.33,
+                "reason": "No market, no case record, no earlier figures; stays on the blind reasoning (both pay and assets needed in a two-day window).",
                 "rounds": [
                   {
                     "p": 0.13,
                     "at": "2026-11-27T20:00:00+01:00",
                     "reason": "first final estimate, before the union of facts (the outsider had not found the promise)"
+                  },
+                  {
+                    "p": 0.82,
+                    "at": "2026-11-27T21:00:00+01:00",
+                    "reason": "evening desk, before the evening check added the facts confirmed from the vendors' leads"
                   }
                 ]
               }
@@ -4898,17 +5234,17 @@
             ],
             "disagreement": {
               "cause": "inputs",
-              "note": "Round one spread 57 points: the outsider (no dossier) had not found Minář's podcast promise and put 13%. It was given the union of facts without anyone's numbers and reran once (82%; first figure in its rounds). The other four already held those facts."
+              "note": "Round one spread 57 points: the outsider (no dossier) had not found Minář's podcast promise and put 13%. It was given the union of facts without anyone's numbers and reran once (82%; first figure in its rounds). The other four already held those facts. Evening check 27 Nov: after the rerun on the added facts the final spread is 19 points."
             },
             "combination": {
               "method": "geo-odds"
             },
             "calibrated": null,
-            "combined": 0.683,
-            "spread": 0.24,
+            "combined": 0.439,
+            "spread": 0.19,
             "decomposition": {
-              "p_held": 0.762,
-              "p_if_held": 0.896,
+              "p_held": 0.574,
+              "p_if_held": 0.765,
               "p_if_not_held": 0
             },
             "shadow": {
@@ -4964,6 +5300,43 @@
                   "trace": "data/dossiers/2026-11-30/cz-minar-30.research.json"
                 }
               ]
+            },
+            "research": {
+              "at": "2026-11-27T21:24:04+01:00",
+              "question": "Has Minář or Milion chvilek, on any own channel or in any Czech outlet since 26 Nov, confirmed, repeated, postponed or qualified the Sunday 29 Nov disclosure of his pay and assets, or pointed to a later date; and does the full podcast transcript reconcile 'this Sunday evening' with Seznam Zprávy's X clip 'within several weeks'?",
+              "finding": "No new confirmation, postponement or qualification found: Minář's Substack has no post since 19 Nov (that post names only the 2 Dec 16:36 'Výstraha' and the 19:00 Švandovo divadlo debate, nothing on pay/assets), milionchvilek.cz shows only the petition, and searches found no Czech-outlet follow-up; an English site, aroundprague.cz, carries the headline 'Minář of Million Moments to disclose his income and assets' with slug '…on-sunday-evening' (403, search result only, undated, apparently derived from Seznam). The Seznam Zprávy article transcript, re-read in full for the relevant passages, contains no 'několika týdnů' phrase: at 33:00 he says he is 'thinking about' stating his pay and assets, and at 34:30, asked when, answers 'Tuto neděli večer to zveřejníme' — so the transcript does not reconcile the X clip wording; the discrepancy stays unexplained (possibly an edited transcript vs. spoken words, not verifiable without the audio).",
+              "decisive": false,
+              "searches": 6,
+              "sources": [
+                "https://www.seznamzpravy.cz/clanek/audio-podcast-ptam-se-ja-pristi-demonstrace-muzou-byt-vetsi-co-chysta-milion-chvilek-321583",
+                "https://mikulasminar.substack.com/feed",
+                "https://milionchvilek.cz/",
+                "https://aroundprague.cz/en/news/politics/minar-i-will-reveal-my-salary-and-assets-on-sunday-evening"
+              ],
+              "note": "Evening check: asked after the rerun left a spread above 15 points; no new decisive fact, so no further rerun and the spread stands (the evidence is mixed)."
+            },
+            "external_check": {
+              "at": "2026-11-27T21:25:39+01:00",
+              "providers": [
+                "openai",
+                "xai",
+                "google"
+              ],
+              "facts_listed": 12,
+              "leads_distinct": 9,
+              "already_in_dossier": 2,
+              "facts_confirmed": 3,
+              "added": [
+                "https://x.com/SeznamZpravy/status/2125947186991051101",
+                "https://mikulasminar.substack.com/p/minar-penize-miliony-lidepro-zaverecna-zprava",
+                "https://iportal24.cz/nazory/minaruv-chvilkovy-byznys-demokracie-za-33-milionu-a-cepice-za-1190-korun/"
+              ],
+              "reforecast": true,
+              "before": 0.683,
+              "material": [
+                "On 26 November 2026 Seznam Zprávy's own X account posted the podcast clip quoting Minář as saying he would state the exact amount of his pay and his assets 'within a horizon of several weeks', whereas the article transcript has him answer 'this Sunday evening' when asked when."
+              ],
+              "after": 0.439
             }
           }
         }
@@ -5390,5 +5763,51 @@
       }
     ],
     "failed": []
+  },
+  "evening_check": {
+    "at": "2026-11-27T21:25:39+01:00",
+    "started_at": "2026-11-27T21:11:03+01:00",
+    "claims": [
+      "il-utj-30",
+      "cz-minar-30",
+      "ch-fireworks-30",
+      "md-gagauzia-30",
+      "ec-guayaquil-30",
+      "us-ng25-30"
+    ],
+    "facts_listed": 98,
+    "facts_confirmed": 26,
+    "agents": {
+      "facts": "claude-opus-5-5",
+      "research": "claude-opus-5-5",
+      "forecasters": {
+        "base-rate": "claude-opus-5-5",
+        "evidence": "claude-opus-5-5",
+        "adversarial": "claude-fable-5-2",
+        "anchor": "claude-opus-5-5",
+        "outsider": "claude-sonnet-5-5"
+      },
+      "count": 13
+    },
+    "searches": {
+      "facts": 4,
+      "forecasters": 14,
+      "research": 12,
+      "total": 30
+    },
+    "reran": [
+      "cz-minar-30",
+      "ch-fireworks-30",
+      "md-gagauzia-30",
+      "ec-guayaquil-30"
+    ],
+    "wording": [
+      "opec-q1-30",
+      "md-gagauzia-30",
+      "ec-guayaquil-30",
+      "ec-quito-30",
+      "si-ljubljana-30"
+    ],
+    "note": "Each of the five forecasters took the four rerun claims in one agent per role (blind estimate, then the same agent continued with the signals file; the anchor from the signals only; the outsider without the dossier). The union-of-facts rerun for the outsider on md-gagauzia-30 and ec-guayaquil-30 was not made (forecast.missing on those claims)."
   }
 }
