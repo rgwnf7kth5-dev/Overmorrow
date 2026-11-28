@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-27T17:07:56+01:00",
+  "as_of": "2026-11-28T02:59:18+01:00",
   "timezone": "Europe/Prague",
   "term": 10,
   "sources": {
@@ -181,7 +181,9 @@
       "vote_id": 89237,
       "yes": 89,
       "no": 41,
-      "notes": "Závěrečný souhlas s tiskem 311 ve 14:05. Počet hlasů pro byl 89."
+      "notes": "Závěrečný souhlas s tiskem 311 ve 14:05. Počet hlasů pro byl 89.",
+      "post_window_checked_at": "2026-11-28T02:59:18+01:00",
+      "complete_vote_day_file": "data/psp/votes/2026-11-27.json"
     },
     {
       "id": "cz-refinery-tax-28",
@@ -205,7 +207,9 @@
       "vote_id": 89237,
       "yes": 89,
       "no": 41,
-      "notes": "Závěrečný souhlas s tiskem 311 ve 14:05. Počet hlasů pro byl 89."
+      "notes": "Závěrečný souhlas s tiskem 311 ve 14:05. Počet hlasů pro byl 89.",
+      "post_window_checked_at": "2026-11-28T02:59:18+01:00",
+      "complete_vote_day_file": "data/psp/votes/2026-11-27.json"
     },
     {
       "id": "cz-pensions-28",
@@ -226,7 +230,9 @@
         "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037268.htm#h209"
       ],
-      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince."
+      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince.",
+      "post_window_checked_at": "2026-11-28T02:59:18+01:00",
+      "complete_vote_day_file": "data/psp/votes/2026-11-27.json"
     },
     {
       "id": "cz-ukraine-law-28",
@@ -247,7 +253,9 @@
         "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037268.htm#h209"
       ],
-      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince."
+      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince.",
+      "post_window_checked_at": "2026-11-28T02:59:18+01:00",
+      "complete_vote_day_file": "data/psp/votes/2026-11-27.json"
     },
     {
       "id": "cz-nku-media-28",
@@ -268,7 +276,9 @@
         "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037268.htm#h209"
       ],
-      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince."
+      "notes": "V denním indexu č. 163–209 není hlasování o závěrečném souhlasu s tímto tiskem. Po bodu 142 byla schůze přerušena do 1. prosince.",
+      "post_window_checked_at": "2026-11-28T02:59:18+01:00",
+      "complete_vote_day_file": "data/psp/votes/2026-11-27.json"
     }
   ],
   "prints": [
@@ -296,7 +306,7 @@
         "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127"
       ],
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=311",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 311/0 dne 22. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 718/26 , PID KORNDY5H6KU4.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Mgr. Patrik Pařil a navrhl Rozpočtový výbor jako garanční.",
@@ -316,7 +326,15 @@
         "order": 1
       },
       "final_vote": 89237,
-      "final_vote_number": 209
+      "final_vote_number": 209,
+      "final_vote_counts": {
+        "present": 155,
+        "quorum": 78,
+        "yes": 89,
+        "no": 41,
+        "abstain_button": 10,
+        "present_no_button": 15
+      }
     },
     {
       "claim_ids": [
@@ -328,7 +346,7 @@
       "meeting": 37,
       "notes": "Stenozáznam po značce 00:00 zachycuje uzavření rozpravy i druhého čtení bezprostředně před ukončením jednání v 00:06 dne 26. listopadu. Historie tisku řadí rozpravu k jednacímu dni 25. listopadu. Bod 126 dle harmonogramu SR od 2. prosince.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=324",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 324/0 dne 30. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 671/26 , PID KORNDYDBN5D6. Dodatky doručeny sněmovně 30. 9. 2026.",
         "PS Předseda sněmovny přikázal 30. 9. 2026 k projednání rozpočtovému výboru (rozhodnutí č. 18 ). Zpravodajem pro 1. čtení jmenován: Ing. Vlastimil Hebr .",
@@ -1594,7 +1612,7 @@
       "meeting": 37,
       "notes": "Historie tisku přiřazuje druhé čtení k jednacímu dni 26. listopadu. Hlasování č. 163 u bodu 13 proběhlo po půlnoci. Historie potvrzuje sedmidenní lhůtu, rozeslání 300/2 a možnost dalšího projednání od 5. prosince. Přímý přepis hlasování č. 163 dosud chybí.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 300/0 dne 8. 9. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 559/26 , PID KORNDSJHRRGS.",
         "O Organizační výbor projednání návrhu zákona doporučil 1. 10. 2026 (usnesení č. 98 ). Určil zpravodaje: Ing. Karin Gajdová, Ph.D. a navrhl Výbor pro sociální politiku jako garanční.",
@@ -1835,7 +1853,7 @@
       "eligible_from": "2026-12-24",
       "notes": "Výbor pro média a kulturu přerušil projednávání 30. října. Dne 27. listopadu Sněmovna odmítla zařadit Jakobův návrh výzvy ke stažení tisku (67 pro, 87 proti).",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=231",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 231/0 dne 19. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 449/26 , PID KORNDT4HPGKS.",
         "O Organizační výbor projednání návrhu zákona doporučil 24. 6. 2026 (usnesení č. 79 ). Určil zpravodaje: Gabriela Sedláčková a navrhl Výbor pro média a kulturu jako garanční.",
@@ -1860,7 +1878,7 @@
       "meeting": 37,
       "notes": "Třetí čtení schváleno 25. listopadu v 11:36. Zvýšení poplatku na 7 Kč za m³ obsahují přijaté návrhy G1/G2 (SD 2091). Po námitce rozhodlo opakované hlasování č. 122.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=48",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 48/0 dne 1. 12. 2025. Návrh zaevidován v systému eKLEP pod čj. OVA 892/25 , PID KORNDMGGSV4S.",
         "O Organizační výbor projednání návrhu zákona doporučil 17. 12. 2025 (usnesení č. 14 ). Určil zpravodaje: David Pražák a navrhl Zemědělský výbor jako garanční.",
@@ -1896,7 +1914,7 @@
       "next_stage": "committee_after_first_reading",
       "notes": "Historie potvrzuje první čtení 24. listopadu, přikázání hospodářskému výboru a patnáctidenní lhůtu. Další projednávání možné od 10. prosince. Samostatné přiřazení hlasování č. 85 a 86 čeká na stenozáznam.",
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=369",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 369/0 dne 13. 11. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 860/26 , PID ALBSDZNKLVC0. Navrhovatel navrhl sněmovně projednávání návrhu zákona tak, aby sněmovna s ním mohla vyslovit souhlas již v prvém čtení ( § 90 odstavec 2 zákona č. 90/1995 Sb , o jednacím řádu Poslanecké sněmovny, ve znění pozdějších předpisů). Předseda sněmovny projednání zákona doporučil 23. 11. 2026. Určil zpravodaje: Ing. Roman Kubíček, Ph.D., MBA a navrhl přikázat k projednání výborům: Hospodářský výbor (rozhodnutí č. 21 )",
         "1 1. Čtení Návrh projednán v obecné rozpravě 24. 11. 2026 na 37. schůzi. Sněmovna nesouhlasila s projednáváním tak, aby mohla s návrhem zákona vyslovit souhlas již v prvém čtení. Čtení proběhlo 24. 11. 2026 na 37. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 357 ). Lhůta k projednání výbory byla určena na 15 dní .",
@@ -1934,7 +1952,7 @@
       "source": "https://www.psp.cz/sqw/historie.sqw?o=10&t=47",
       "eligible_from": "2026-06-13",
       "eligible_from_local": "2026-06-13T11:02:00+02:00",
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS předložil Senátu návrh zákona 7. 10. 2025. Návrh zákona rozeslán dne 7. 10. 2025 senátorům jako tisk 177/0 .",
         "O Organizační výbor dne 16. 10. 2025 stanovil garančním výborem Ústavně-právní výbor ( ) a přikázal tisk k projednání: Výbor pro vzdělávání, vědu, kulturu, lidská práva a petice ( ), Stálá komise Senátu pro Ústavu České republiky a parlamentní procedury ( ).",
@@ -1977,7 +1995,7 @@
         "https://www.psp.cz/sqw/hlasy.sqw?G=88829",
         "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034374.htm#h240"
       ],
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 213/0 dne 3. 6. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 364/26 , PID KORNDU7AL36H.",
         "O Organizační výbor projednání návrhu zákona doporučil 3. 6. 2026 (usnesení č. 70 ). Určil zpravodaje: PhDr. Pavel Žáček, Ph.D. a navrhl Výbor pro bezpečnost jako garanční.",
@@ -2016,7 +2034,7 @@
         "https://www.psp.cz/sqw/hlasy.sqw?G=89006",
         "https://www.psp.cz/eknih/2025ps/stenprot/034schuz/s034570.htm#h417"
       ],
-      "history_checked_at": "2026-11-27T17:07:56+01:00",
+      "history_checked_at": "2026-11-28T02:59:18+01:00",
       "history_entries": [
         "PS Návrh zákona rozeslán poslancům jako tisk 270/0 dne 27. 7. 2026. Návrh zaevidován v systému eKLEP pod čj. OVA 553/26 , PID KORNDSZH7EOD. Předseda sněmovny projednání zákona doporučil 30. 7. 2026. Určil zpravodaje: Mgr. Ing. Pavla Pivoňka Vaňková a navrhl přikázat k projednání výborům: Výbor pro sociální politiku (rozhodnutí č. 16 )",
         "1 Čtení proběhlo 24. 9. 2026 na 31. schůzi. Návrh zákona přikázán k projednání výborům (usnesení č. 289 ). Lhůta k projednání výbory byla určena na 30 dní .",
@@ -2197,33 +2215,32 @@
       "motion_source": "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037268.htm#h209",
       "motion": "Závěrečný souhlas s tiskem 311",
       "date": "2026-11-27",
-      "print": 311
+      "print": 311,
+      "abstain_button": 10,
+      "present_no_button": 15,
+      "button_source": "https://www.psp.cz/sqw/hp.sqw?k=1302"
     }
   ],
   "base_rates": {
     "file": "pipeline/reference-data/cz-chamber.json",
-    "downloaded": "2026-11-27",
+    "downloaded": "2026-11-28",
     "archives": 5,
     "status": "refreshed",
-    "latest_vote_in_input": 89191
+    "latest_vote_in_input": 89237
   },
   "changes": [
-    "Tisk 311: přijat jako celek ve 14:05, 89 pro, 41 proti. Hlasování č. 198 povolilo dokončit hlasování po 14. hodině.",
-    "Tisky 270, 213 a 47: bez závěrečného hlasování. Schůze přerušena do 1. prosince 14:00.",
-    "Tisk 300: pozměňovací návrhy 300/2 rozeslány ve 13:03; další projednání možné od 5. prosince.",
-    "Tisk 231: neprošlo zařazení výzvy ke stažení tisku.",
-    "Mimořádná 38. schůze svolána na 3. prosince v 09:00. Pozvánka obsahuje 16 navržených bodů."
+    "Po skončení pátečních oken znovu ověřeno všech 47 hlasování č. 163–209 v denním indexu, na jmenovitých stránkách i v novém ZIP.",
+    "Tisk 311: hlasování č. 209 mělo 89 pro a 41 proti. Z 25 osob ve webové souhrnné kategorii zdržení stisklo tlačítko 10, dalších 15 bylo přítomno bez stisku.",
+    "Páteční index neobsahuje závěrečný souhlas s tisky 270, 213 ani 47. V sobotním indexu zatím nepřibyl hlasovací den.",
+    "37. schůze je přerušena do 1. prosince 14:00. Pozvánka na 38. schůzi 3. prosince od 09:00 má 16 bodů."
   ],
-  "vote_index_checked_at": "2026-11-27T17:07:56+01:00",
+  "vote_index_checked_at": "2026-11-28T02:59:18+01:00",
   "change_sources": [
+    "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
     "https://www.psp.cz/sqw/hlasy.sqw?G=89237",
     "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037268.htm#h209",
+    "https://www.psp.cz/sqw/hp.sqw?k=1300",
     "https://www.psp.cz/schuze/10/37",
-    "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
-    "https://www.psp.cz/sqw/historie.sqw?o=10&t=300",
-    "https://www.psp.cz/sqw/hlasy.sqw?G=89191",
-    "https://www.psp.cz/schuze/10/37",
-    "https://www.psp.cz/sqw/hlasy.sqw?G=89193",
     "https://www.psp.cz/schuze/10/38"
   ],
   "vote_day_complete": true,
@@ -2234,7 +2251,7 @@
         89114
       ],
       "reason": "Stenozáznam v dostupném indexu končí před hlasováními v 22:57 a 22:58. Konkrétní předmět a případné opakování pending.",
-      "checked_at": "2026-11-27T17:07:56+01:00",
+      "checked_at": "2026-11-28T02:59:18+01:00",
       "sources": [
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037054.htm",
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/s037055.htm"
@@ -2248,18 +2265,10 @@
         89191
       ],
       "reason": "Stenozáznam čtvrtečního jednání má mezery; konkrétní návrhy u č. 160–163 zůstávají pending. Historie 300 již potvrzuje změnu lhůty.",
-      "checked_at": "2026-11-27T17:07:56+01:00",
+      "checked_at": "2026-11-28T02:59:18+01:00",
       "sources": [
         "https://www.psp.cz/eknih/2025ps/stenprot/037schuz/37-3.html",
         "https://www.psp.cz/sqw/historie.sqw?o=10&t=300"
-      ]
-    },
-    {
-      "file": "data/psp/votes/2026-11-27.json",
-      "reason": "Webové jmenovité hlasy jsou úplné. ZIP zahrnuje hlasování pouze do č. 163. U pozdějších hlasování čekají počty stisků zdržení, přítomnosti bez stisku a příznaky zmatečnosti na další ZIP.",
-      "sources": [
-        "https://www.psp.cz/sqw/hl.sqw?o=10&s=37&d=20261127",
-        "https://www.psp.cz/sqw/hp.sqw?k=1300"
       ]
     }
   ]
