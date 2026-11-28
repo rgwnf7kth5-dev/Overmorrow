@@ -1,0 +1,169 @@
+{
+ "edition": "2026-11-30",
+ "stories": [
+  {
+   "story": "il-coalition",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:26:30Z",
+   "searches": 11,
+   "flags": []
+  },
+  {
+   "story": "opec",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:26:30Z",
+   "searches": 12,
+   "flags": []
+  },
+  {
+   "story": "ch-fairness",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:26:47Z",
+   "searches": 6,
+   "flags": []
+  },
+  {
+   "story": "ch-votes",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:27:00Z",
+   "searches": 9,
+   "flags": [
+    {
+     "statement": "According to the Federal Council, direct or indirect deliveries to Ukraine remain ruled out.",
+     "in_report": true,
+     "problem": "Direct Swiss exports to Ukraine would remain prohibited, but the State Secretariat for Economic Affairs says a later re-export by a purchasing country could in practice be possible if Switzerland did not require a non-re-export declaration.",
+     "source": "https://www.seco.admin.ch/en/referendum-wma"
+    },
+    {
+     "statement": "Before Sunday only 26 of 244 popular initiatives put to the vote since 1848 had been accepted.",
+     "in_report": true,
+     "problem": "The pre-vote statistics list 243 federal popular initiatives that reached the ballot, not 244. The figure of 26 accepted is correct.",
+     "source": "https://initiativespopulaires.ch/statistics?lang=de"
+    }
+   ]
+  },
+  {
+   "story": "ch-ahv",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:27:05Z",
+   "searches": 6,
+   "flags": [
+    {
+     "statement": "a minority in Parliament called for structural measures such as a higher retirement age instead of new taxes.",
+     "in_report": true,
+     "problem": "The voting booklet says the parliamentary minority wanted to address financing in the next AHV reform and combine additional revenue with structural measures such as a higher retirement age. It did not present structural measures as a substitute for additional revenue.",
+     "source": "https://www.admin.ch/dam/de/sd-web/HXhFMFWOaa6u/BAR_Nov26_DE_v9c.pdf"
+    }
+   ]
+  },
+  {
+   "story": "md-gagauzia",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:27:15Z",
+   "searches": 8,
+   "flags": []
+  },
+  {
+   "story": "gulf-shipping",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:27:23Z",
+   "searches": 8,
+   "flags": [
+    {
+     "statement": "UKMTO issued 33 numbered warnings and advisories in November up to Friday, 27 of them on attacks.",
+     "in_report": true,
+     "problem": "UKMTO issued Advisory 224-26 on Friday, November 27, bringing the November total to 34. The additional advisory concerned a cargo vessel and military forces in the Gulf of Oman and was not classified as an attack.",
+     "source": "https://www.ukmto.org/-/media/ukmto/products/20261127_ukmto_-advisory_224-26.pdf?rev=445950d871e14514940091d395c92f7c"
+    }
+   ]
+  },
+  {
+   "story": "es-election",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:27:24Z",
+   "searches": 8,
+   "flags": [
+    {
+     "statement": "Sánchez dissolved parliament and called the election",
+     "in_report": true,
+     "problem": "Sánchez proposed the dissolution after the Council of Ministers deliberated. King Felipe VI formally dissolved both chambers and called the election by royal decree.",
+     "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20742"
+    },
+    {
+     "statement": "A revised package restricting evictions and capping rent rises was later pushed through a parliamentary standing committee.",
+     "in_report": true,
+     "problem": "The official record says the Congress of Deputies’ Permanent Deputation, the body that exercises certain powers of the chamber after dissolution, formally ratified the decree-law on 12 November 2026. It was not passed through an ordinary standing committee.",
+     "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23755&lang=es"
+    },
+    {
+     "statement": "King Felipe VI then meets the leaders of the parties represented in Congress and consults the Speaker before nominating a candidate for prime minister.",
+     "in_report": true,
+     "problem": "Article 99 says the king consults representatives designated by parliamentary political groups, who need not be party leaders. He then proposes a candidate through the Speaker of Congress; a separate consultation with the Speaker is not a constitutional requirement.",
+     "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229&lang=es&p=20260520&tn=1"
+    }
+   ]
+  },
+  {
+   "story": "si-local",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:27:37Z",
+   "searches": 10,
+   "flags": []
+  },
+  {
+   "story": "iss-cygnus",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:27:44Z",
+   "searches": 6,
+   "flags": [
+    {
+     "statement": "which had an instantaneous window because of the rendezvous with the station",
+     "in_report": true,
+     "problem": "SpaceX's published schedule listed a 20-minute launch window, from 10:40 to 11:00 a.m. EST (15:40 to 16:00 UTC) on November 29, 2026, rather than an instantaneous window.",
+     "source": "https://www.spacex.com/?os=f"
+    }
+   ]
+  },
+  {
+   "story": "cz-brno-tunnels",
+   "provider": "google",
+   "model": "gemini-4-argon",
+   "at": "2026-11-28T05:27:45Z",
+   "searches": 10,
+   "flags": []
+  },
+  {
+   "story": "ec-local",
+   "provider": "openai",
+   "model": "gpt-6.2-sol",
+   "at": "2026-11-28T05:28:10Z",
+   "searches": 9,
+   "flags": [
+    {
+     "statement": "Fiorella Ycaza",
+     "in_report": true,
+     "problem": "The candidacy paperwork filed with the CNE spells her surname Icaza, not Ycaza, although several news outlets use Ycaza.",
+     "source": "https://backend-apps.cne.gob.ec/vi/api/Catalogos/PlanTrabajo/140/5658/4482"
+    },
+    {
+     "statement": "on a Popular Unity–Socialist ticket",
+     "in_report": true,
+     "problem": "Muñoz registered under Alianza Ciudadana, a three-organization ticket that included the Todos movement (list 70) as well as Popular Unity and the Ecuadorian Socialist Party.",
+     "source": "https://www.ecuavisa.com/politica/pabel-munoz-inscribio-candidatura-alcaldia-quito-20260806-0080.html"
+    }
+   ]
+  }
+ ],
+ "failed": [],
+ "at": "2026-11-28T05:28:10Z"
+}
