@@ -1,0 +1,195 @@
+{
+  "edition": "2026-11-27",
+  "results": [
+    {
+      "claim": "eu-summit-27",
+      "outcome": "yes",
+      "evidence": "https://www.rtve.es/noticias/20261126/cos-figura-consenso-espana-banco-central-europeo-bce/17319164.shtml",
+      "note": "RTVE (26 Nov, 14:27 CET) and Europa Press (26 Nov, 14:33 CET, https://www.europapress.es/economia/macroeconomia-00338/noticia-hernandez-cos-primer-presidente-espanol-banco-central-europeo-20261126143339.html) report that the leaders in Brussels settled on Hernández de Cos to succeed Lagarde after Knot withdrew. RTVE adds that Costa said on social media that Thursday's agreement 'paves the way' for the formal appointment. consilium.europa.eu returned 403.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite a European Council press release of 23:50 on 26 Nov putting him forward, which is consistent with the Thursday reports."
+      }
+    },
+    {
+      "claim": "eu-ukr-27",
+      "outcome": "no",
+      "evidence": "https://kyivindependent.com/why-bulgaria-czechia-hungary-and-slovakia-are-complicating-the-latest-eu-push-for-a-ukraine-loan/",
+      "note": "Kyiv Independent (27 Nov) quotes Costa at the press conference in the early hours of 27 Nov: '24 member states supported the proposal... we will revert to this question in December'. Czechia, Hungary and Slovakia held out, so no agreement on the €45bn loan was reached.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite Costa's post-summit remarks on consilium with the same 24-state, revert-in-December wording."
+      }
+    },
+    {
+      "claim": "ua-drones-27",
+      "outcome": "measured",
+      "value": 113,
+      "evidence": "https://armyinform.com.ua/2026/11/26/balistyka-ta-ponad-sotnya-droniv-povitryani-syly-povidomyly-detali-nichnoyi-ataky/",
+      "note": "ArmyInform (26 Nov) repeats the Air Force summary of the night to 26 Nov (from 18:00 on 25 Nov): 113 strike UAVs (Shahed, 76 of them jet-powered, Gerbera and Parodiya decoys), with ballistic missiles listed separately, and 87 shot down or suppressed by 08:00.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 113 from the Air Force's 26 Nov morning summary."
+      }
+    },
+    {
+      "claim": "gulf-ukmto-27",
+      "outcome": "yes",
+      "evidence": "https://theredzone-newsletter.beehiiv.com/p/houthi-projectile-hits-jizan-port-hours-after-hodeidah-strike",
+      "note": "The UKMTO PDF and ukmto.org return 403. The Red Zone (26 Nov) summarises UKMTO 222-26, which the UKMTO X feed lists: a tanker master reported an explosion caused by an unknown projectile close to the ship, 50 NM west of Dubai in the Persian Gulf, at 21:30 UTC on 25 Nov (01:30 GST on 26 Nov), with no damage, and UKMTO classed it as suspicious activity. The criterion excludes only notices that state no explosion, so this counts as a reported explosion involving a merchant vessel inside the window. The CENTCOM strike on the Pacific Archer on 26 Nov was not counted, because it was not found in a UKMTO/JMIC report.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "ambiguous": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models rely on the same 222-26 warning and the same UTC-to-GST conversion; the open question is only whether a near-miss explosion classed as suspicious activity counts."
+      }
+    },
+    {
+      "claim": "kr-bok-hike-27",
+      "outcome": "yes",
+      "evidence": "https://www.koreaherald.com/article/10949940",
+      "note": "Korea Herald (26 Nov, 10:07 KST) and Korea Times (26 Nov) report that the Bank of Korea raised its base rate by 25bp from 3.00% to 3.25% on Thursday.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the BoK monetary policy decision of 26 Nov setting the rate at 3.25%."
+      }
+    },
+    {
+      "claim": "kr-bok-27",
+      "outcome": "yes",
+      "evidence": "https://www.koreaherald.com/article/10950549",
+      "note": "Korea Herald (26 Nov) reports the hike to 3.25% and says two of the seven board members, Hwang Kun-il and Lee Soo-hyung, dissented in favour of holding the rate at 3.00%.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report the same two dissenters for a hold, one of them citing the BoK's own decision statement."
+      }
+    },
+    {
+      "claim": "de-gfk-27",
+      "outcome": "measured",
+      "value": -30.2,
+      "evidence": "https://www.nim.org/konsumklima/detail-konsumklima/konsumklima-wenig-rueckenwind-fuer-das-weihnachtsgeschaeft",
+      "note": "NIM press release dated Nürnberg, 26 November 2026 puts the consumer climate for December at -30.2 points (up 0.7 from a revised -30.9).",
+      "resolved_at": "2026-11-28T05:03:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same NIM release and the same -30.2 value."
+      }
+    },
+    {
+      "claim": "es-debate-27",
+      "outcome": "measured",
+      "value": 10.19,
+      "evidence": "https://barloventocomunicacion.es/wp-content/uploads/2026/11/AUDIENCIA-DEBATE-A-CUATRO_26112026_BARLOVENTO.pdf",
+      "note": "Barlovento's 27 Nov debate report (Fifty5Blue/ex-Kantar data, 22 simulcast channels) gives a combined audiencia media of 10,190,000, rounded to '10,2 millones' in its web summary; recorded at the report's exact figure 10.19 million.",
+      "resolved_at": "2026-11-28T05:03:00+01:00",
+      "held": true,
+      "ambiguous": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Models cited 10.19 million from the Barlovento PDF; on checking the PDF myself I confirmed 10.190.000 and used it in place of the 10.2 rounding on the web page (elDiario.es's 10.206 million over 17 channels is only the fallback source and is not used)."
+      }
+    },
+    {
+      "claim": "fr-plfss-27",
+      "outcome": "yes",
+      "evidence": "https://www.senat.fr/dossier-legislatif/plfss2027.html",
+      "note": "The Senate dossier records the PLFSS 2027 CMP as 'désaccord', with its report filed 26 Nov 2026, and LCP (26 Nov, 09:33) reports that the CMP met on Thursday morning and failed to agree.",
+      "resolved_at": "2026-11-28T05:03:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models say yes on the Senate record; I confirmed the 26 Nov 2026 date (not the 2025 CMP) through the Senate dossier and LCP."
+      }
+    },
+    {
+      "claim": "uk-tube-27",
+      "outcome": "yes",
+      "evidence": "https://www.bbc.co.uk/news/articles/cxp80mej6gr1o",
+      "note": "BBC News reports that RMT Tube drivers walked out at midday on Thursday 26 November 2026 in the first of eight planned strikes, which ran until noon on Friday.",
+      "resolved_at": "2026-11-28T05:03:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models agree; one cited a non-BBC mirror domain, so I relied on bbc.co.uk directly."
+      }
+    },
+    {
+      "claim": "cz-colt-27",
+      "outcome": "yes",
+      "evidence": "https://www.coltczgroup.com/en/media/press-releases/colt-cz-group-se-increased-adjusted-ebitda-by-84-9-percent-to-czk-6-3-billion-in-the-first-nine-months-of-2026",
+      "note": "Colt CZ's 9M 2026 release dated Prague, 26 Nov 2026 says 'the Group confirms its current 2026 outlook', which is the CZK 31.0-33.0bn revenue and CZK 8.0-8.5bn adjusted EBITDA guidance set in the H1 release.",
+      "resolved_at": "2026-11-28T05:03:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models agree that the guidance was confirmed with lower bounds unchanged, as the release shows."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "www.ukmto.org (403)",
+      "www.consilium.europa.eu (403)",
+      "scmp.com (403)",
+      "elpais.com (403)",
+      "euronews.com (406)",
+      "Barlovento PDF (not readable by read.mjs; read via pdftotext)"
+    ],
+    "pending": []
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "edition": "2026-11-27",
+  "checked_at": "2026-11-28T05:20:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 26, read 28 Nov 04:00 UTC)",
+    "ct24 (ČT24 Domácí list; items of 26 Nov and their ČTK bylines, read 28 Nov 04:00 UTC)",
+    "ctk (ceskenoviny.cz front and list pages show only items of 27-28 Nov; ČTK items of 26 Nov were judged by the ČTK byline of the ČT24 item, so Czech items are counted in both lists only where ČT24 carries the ČTK byline)",
+    "bbc-world, aljazeera, euronews (front pages read 28 Nov 04:01 UTC) as the substitute for list (b)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading and WebSearch found no Reuters World News Summary or AP summary for 26 Nov 2026. List (b) is replaced by BBC World, Al Jazeera and Euronews front pages (one substitute list, 'b-substitute'); this is a deviation from coverage-1 and is recorded here.",
+    "ceskenoviny.cz has no reachable list for 26 Nov (archive and section pages return the current day only)."
+  ],
+  "not_qualified": [
+    "Wikipedia-only entries of 26 Nov: Saudi strikes on 50 Houthi targets; Niger National Guard attack at Sanam; Niger State (Nigeria) gunmen; Bangladesh factory closures; Eldridge-led consortium to buy Lukoil's international assets (AP); Bangchak refinery fire in Bangkok; Cambridgeshire train stabbing verdict; Giza tanker arrest; Beirut minibus shootout; Serbian parliament sets presidential election for 27 Dec; Chinese golf-course closures; Guinea-Bissau election postponed to 2028; FCC authorises SpaceX Starmind satellites.",
+    "Czech items seen only in ČT24 (energy price rises; Červený interview on KRNAP): not significant events of the day.",
+    "Macy's parade postponement, Mackenzie conviction and Iowa detonation belong to 25 Nov or earlier."
+  ],
+  "events": [
+    {
+      "title": "Euro Summit and European Council back Pablo Hernández de Cos as next ECB President",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.euronews.com/business",
+      "status": "covered",
+      "story": "eu-summit"
+    },
+    {
+      "title": "Drone strike in Kuwait kills two Italian Rheinmetall technicians; Italy says the drone was Iranian-made",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.aljazeera.com/middle-east",
+      "status": "missed",
+      "note": "Nowhere in the planning file (not in stories, running or dropped). Unscheduled attack, not announced in advance; the Iran war sweep did not pick up Gulf-state strikes beyond Hormuz shipping (gulf-shipping covers UKMTO reports only)."
+    },
+    {
+      "title": "US forces disable the Palau-flagged merchant ship Pacific Archer in the Gulf of Oman for trying to breach the blockade of Iranian ports",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.aljazeera.com/news/",
+      "status": "missed",
+      "note": "gulf-shipping was planned on UKMTO/JMIC reports only, so a CENTCOM enforcement action was outside its claim. Not announced in advance; CENTCOM statements are the source."
+    },
+    {
+      "title": "Malta-flagged tanker sinks off Ibiza: one crew member dead, 16 rescued, diesel spill feared",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.bbc.com/news/world/europe",
+      "status": "missed",
+      "note": "Not in the planning file. Accident, not announced in advance."
+    },
+    {
+      "title": "Mexico files a formal complaint with the United States over DEA tip lines on alleged organised-crime figures",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.aljazeera.com/news/",
+      "status": "missed",
+      "note": "Not in the planning file. Low weight; not announced in advance (Wikipedia files it under 26 and 27 Nov)."
+    },
+    {
+      "title": "Chamber of Deputies holds the second reading of the cut in unemployment benefits, late in the night to Friday; also approves the state's D35 commitments",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-by-se-meli-zabyvat-platformovou-praci-a-podporami-v-nezamestnanosti-379965",
+      "status": "dropped",
+      "note": "Planned as conditional story cz-benefits (cz-benefits-27, 23% after the evening check, to run only at 50% or more); moved to the diary by the morning. The planning file carries the second reading in the diary."
+    },
+    {
+      "title": "Heavy snow paralyses transport in Vysočina, D1 closed for hours, buses and Brno trams delayed",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/patek-a-sobota-budou-lehce-snehove-predpovidaji-meteorologove-379964",
+      "status": "dropped",
+      "note": "The ČHMÚ heavy-snow warning for south-east Czechia was in the planning file's dropped list: 'weather forecast; excluded'. The consequences (road chaos) were not an event the paper tracked."
+    },
+    {
+      "title": "Senate public hearing on national defence: President Pavel warns of Russia and missing crisis legislation, Minister Zůna presents CZK 148bn of projects",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/v-senatu-se-resi-obrana-zeme-dle-pavla-chybi-pruznost-znela-varovani-pred-ruskem-379978",
+      "status": "dropped",
+      "note": "Dropped list: statements of known positions at a hearing, attendance only; diary."
+    },
+    {
+      "title": "Chamber media committee holds the public hearing on ČT/ČRo financing; Minister Klempíř sees no reason for constitutional safeguards of independence",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/slyseni-snemovniho-vyboru-o-zmene-financovani-verejnopravnich-medii-379971",
+      "status": "dropped",
+      "note": "Dropped list: hearing, no vote; diary."
+    },
+    {
+      "title": "Appeal court in Plzeň spares Roman Berbr a prison sentence in the football-corruption case",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/berbr-trest-za-fotbalovou-korupci-nedostane-rozhodl-odvolaci-soud-379968",
+      "status": "dropped",
+      "note": "Dropped list: date of the ruling not confirmed by any news outlet (only an aggregator); dossier cz-berbr-27 kept. The ruling came on Thursday."
+    },
+    {
+      "title": "Interior minister sets 9 January for repeated municipal voting in four municipalities where courts annulled the October results",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/hlasovani-v-komunalnich-volbach-ve-ctyrech-obcich-se-bude-opakovat-9-ledna-380010",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Decision published in the Collection of Laws on Thursday; no date announced in advance that our sources showed. Low weight."
+    }
+  ]
+}

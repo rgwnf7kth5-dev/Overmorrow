@@ -161,6 +161,37 @@
         "disagree": [],
         "note": "Both models report the postponement to 25 Nov and 367 votes in favour, matching the roll-call record read."
       }
+    },
+    {
+      "claim": "gulf-ukmto-25",
+      "outcome": "no",
+      "evidence": "https://x.com/UK_MTO",
+      "note": "Resolved at the forced deadline from the best available evidence, because ukmto.org returns 403. UKMTO's X feed shows warnings 222-26 (25 Nov) and 223-26 (issued 26 Nov), JMIC Update 117 (26 Nov) and advisory 224-26 (27 Nov). gCaptain (24 Nov) dates the 218-221-26 strikes posted on 24 Nov to 22 Nov, and The Red Zone (26-27 Nov, https://theredzone-newsletter.beehiiv.com/p/seventeenth-tanker-struck-in-hormuz-this-month-east-of-khasab) lists the gap-free 191-26 to 223-26 sequence, which has incidents on 22-23 Nov and 25 Nov but none dated 24 Nov GST.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models also find no UKMTO/JMIC incident dated 24 Nov, citing JMIC Update 117, which matches the UKMTO numbering sequence."
+      }
+    },
+    {
+      "claim": "cz-us-cro-25",
+      "outcome": "yes",
+      "evidence": "https://www.ksb.cz/clanky/uspech-pred-ustavnim-soudem-litigacni-tym-ksb-prosadil-pro-cesky-rozhlas-pravo-na-predvidatelne-a-rovne-soudni-rozhodovani",
+      "note": "Resolved at the forced deadline from the best available evidence: no press release, NALUS text or ČTK/major-outlet report could be found. The Court's agenda (https://www.usoud.cz/aktualne/prehled-jednani-ustavniho-soudu-pro-48-kalendarni-tyden-roku-2026) set the public pronouncement of a nález in III. ÚS 2839/25 for 24 Nov 2026 at 14:00 and shows no postponement. The complainant's law firm KŠB quotes the nález granting the complaint under §82(2)(a) and annulling NSS judgment 5 Afs 151/2024-56 under §82(3)(a), but dates it '24. 11. 2025'. We read that date as a typo for 2026, because the pronouncement was scheduled for 2026; the firm is also an interested party, not a named outlet.",
+      "resolved_at": "2026-11-28T05:08:00+01:00",
+      "held": true,
+      "ambiguous": true,
+      "second_opinion": {
+        "agree": [
+          "google"
+        ],
+        "disagree": [],
+        "note": "One model answered not_yet over the 2025 date on the counsel's page. On a second look, the Court's 2026 agenda scheduled this very pronouncement for 24 Nov 2026, so the date reads as a typo; no named primary source has published yet, which is why the result is marked ambiguous."
+      }
     }
   ],
   "meta": {
@@ -174,7 +205,9 @@
       "europarl doceo PV/TA pages (empty when read by script)",
       "seatrade-maritime.com (403)",
       "sabq.org (403)",
-      "www.rivieramm.com (429)"
+      "www.rivieramm.com (429)",
+      "www.ukmto.org (403)",
+      "nalus.usoud.cz (empty pages)"
     ],
     "pending": [
       {

@@ -1,0 +1,111 @@
+{
+  "edition": "2026-11-28",
+  "results": [
+    {
+      "claim": "de-budget-28",
+      "outcome": "yes",
+      "evidence": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung/?id=1048",
+      "note": "The official bundestag.de roll-call page shows the Haushaltsgesetz 2027 (21/7300, 21/7302) passed in third reading on Fri 27 Nov 2026 with 316 yes, 260 no, 0 abstentions (630 members, 54 not voting) - exactly the 316 threshold.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report 316 yes, matching the official roll-call page."
+      }
+    },
+    {
+      "claim": "nz-results-28",
+      "outcome": "yes",
+      "evidence": "https://www.rnz.co.nz/news/election-2026-results",
+      "note": "electionresults.govt.nz refused scripted reading (HTTP 403); RNZ's results page (Commission data, published 27 Nov 14:00 NZDT) and 1News (27 Nov) both report the official allocation National 40 + ACT 13 + NZ First 12 = 65 of 130 seats, exactly half.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 65 of 130, the same allocation RNZ and 1News report."
+      }
+    },
+    {
+      "claim": "rheinmetall-28",
+      "outcome": "yes",
+      "evidence": "https://www.finanzen.net/nachricht/aktien/roundup-rheinmetall-kappt-wie-erwartet-mittelfristziele-aktie-weiter-erholt-16090292",
+      "note": "rheinmetall.com news-watch carries no CMD release, so two outlets decide: dpa-AFX (27 Nov 12:50Z) and Börsen-Zeitung (27 Nov) report a new 2030 sales target of EUR 33-37bn set at the Hamburg Capital Markets Day; midpoint 35bn is below 50bn.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models cite the same EUR 33-37bn target reported from the 27 Nov CMD."
+      }
+    },
+    {
+      "claim": "fr-cpi-28",
+      "outcome": "measured",
+      "value": 2.9,
+      "evidence": "https://www.insee.fr/fr/statistiques/9161375",
+      "note": "INSEE Informations rapides no. 295 of 27 Nov 2026 (IPC résultats provisoires, novembre 2026) puts the CPI year on year at +2.9% in November after +3.4% in October.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 2.9%, the same figure as the INSEE release."
+      }
+    },
+    {
+      "claim": "es-cpi-28",
+      "outcome": "measured",
+      "value": 4.1,
+      "evidence": "https://www.ine.es/dyngs/Prensa/adIPC1126.htm",
+      "note": "INE's flash estimate, published 27 Nov 2026 09:00, puts the annual CPI rate for November 2026 at 4.1%, eight tenths below October's 4.9%.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models give 4.1%, the same figure as the INE flash release."
+      }
+    },
+    {
+      "claim": "cz-slavik-28",
+      "outcome": "yes",
+      "evidence": "https://www.ceskenoviny.cz/zpravy/ceskeho-slavika-ziskali-znovu-farna-barta-a-kabat/2898032",
+      "note": "tn.nova.cz refused scripted reading (HTTP 403); ČTK (ceskenoviny.cz, 27 Nov 23:26) and Novinky.cz (27 Nov) both report Václav Noid Bárta won the Zpěvák category at the 27 Nov gala in Forum Karlín.",
+      "resolved_at": "2026-11-28T05:04:00+01:00",
+      "held": true,
+      "second_opinion": {
+        "agree": [
+          "openai",
+          "google"
+        ],
+        "disagree": [],
+        "note": "Both models report Bárta as the Zpěvák winner, matching ČTK and Novinky."
+      }
+    }
+  ],
+  "meta": {
+    "unreachable": [
+      "www.electionresults.govt.nz (403)",
+      "tn.nova.cz (403)",
+      "rheinmetall.com (no release found)"
+    ],
+    "pending": []
+  }
+}
