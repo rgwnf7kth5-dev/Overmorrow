@@ -202,7 +202,7 @@ Unavailable evidence is not a "No". If the deciding source has not yet published
 
 Void claims are listed but not scored.
 
-On the archived edition, each scored story and stamp is coloured on a scale from red to green by its **closeness**: the probability we gave to what actually happened. A 90% forecast that came true is 0.90 (green); a 55% forecast that came true is 0.55 (amber); a 90% forecast that failed is 0.10 (red).
+On the archived edition, each scored story and stamp is coloured on a scale from red to green by its **closeness**: the probability we gave to what actually happened. A 90% forecast that came true is 0.90 (green); a 55% forecast that came true is 0.55 (amber); a 90% forecast that failed is 0.10 (red). The figure printed beside each result is the probability we gave that line in advance ("Came true · we gave it 53%"); it is not a success rate.
 
 ## 8. Learning loop
 

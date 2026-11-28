@@ -203,7 +203,7 @@ Nedostupný doklad neznamená „ne“. Když rozhodující zdroj ještě nezve�
 
 Neplatná tvrzení se uvádějí, ale nehodnotí.
 
-V archivovaném vydání je každá vyhodnocená zpráva i razítko obarvené na škále od červené po zelenou podle **shody**: jakou pravděpodobnost jsme dali tomu, co se skutečně stalo. Predikce 90 %, která vyšla, má shodu 90 % (zelená); predikce 55 %, která vyšla, 55 % (oranžová); predikce 90 %, která nevyšla, 10 % (červená).
+V archivovaném vydání je každá vyhodnocená zpráva i razítko obarvené na škále od červené po zelenou podle **shody**: jakou pravděpodobnost jsme dali tomu, co se skutečně stalo. Predikce 90 %, která vyšla, má shodu 90 % (zelená); predikce 55 %, která vyšla, 55 % (oranžová); predikce 90 %, která nevyšla, 10 % (červená). Číslo vytištěné u výsledku je pravděpodobnost, kterou jsme tvrzení dali předem („Vyšlo · dávali jsme tomu 53 %“); není to úspěšnost.
 
 ## 8. Učení z chyb
 

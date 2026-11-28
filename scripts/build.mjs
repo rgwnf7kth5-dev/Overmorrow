@@ -36,7 +36,7 @@ const T = {
     limited: (a, b, c, d) => `<b>Limited sources.</b> This edition was made with restricted access to its sources: ${a} of ${b} reference front pages read, ${c} of ${d} cited pages opened at the final check. The others rely on dated excerpts.`,
     upd: { at: (t) => ` · updated ${t}`, banner: (t, r, a) => `<b>Afternoon update, ${t}.</b> ${r} forecast${r === 1 ? '' : 's'} revised, ${a} stor${a === 1 ? 'y' : 'ies'} added. Morning figures stay on record and are scored separately.`, morning: 'morning', afternoon: 'afternoon', why: 'Why it changed', added: 'Added in the afternoon update' },
     print: 'Print edition', printBtn: 'Print or save as PDF', printNote: 'One A4 page. Use your browser’s print dialog; choose “Save as PDF” to keep a copy.', printFoot: 'All reports are forecasts written before the events. Results and sources:',
-    match: 'match', scale: ['Missed completely', 'Spot on'], scaleNote: 'Colour shows how close each forecast came: the probability we gave to what actually happened.',
+    gave: (p) => `we gave it ${p}`, scale: ['Missed completely', 'Spot on'], scaleNote: 'The figure beside each result is the probability we gave that line in advance, not a success rate. Colour shows how close the forecast came: green when we gave a high probability to what actually happened, red when we gave it a low one.',
     evidence: 'Evidence',
     howChecked: (many) => `How ${many ? 'these claims are' : 'this claim is'} checked`,
     deadline: 'Deadline', window: 'Event window', evidenceAt: 'Evidence expected', 
@@ -145,7 +145,7 @@ const T = {
     limited: (a, b, c, d) => `<b>Omezené podklady.</b> Toto vydání vzniklo s omezeným přístupem ke zdrojům: přečteno ${a} z ${b} referenčních titulních stran, při závěrečné kontrole otevřeno ${c} z ${d} citovaných stránek. Zbytek stojí na datovaných výňatcích.`,
     upd: { at: (t) => ` · aktualizováno ${t}`, banner: (t, r, a) => `<b>Odpolední aktualizace, ${t}.</b> Změněné predikce: ${r}, přidané zprávy: ${a}. Ranní čísla zůstávají v záznamu a hodnotí se zvlášť.`, morning: 'ráno', afternoon: 'odpoledne', why: 'Proč se to změnilo', added: 'Přidáno v odpolední aktualizaci' },
     print: 'Tisková verze', printBtn: 'Vytisknout nebo uložit jako PDF', printNote: 'Jedna strana A4. Použijte tisk v prohlížeči; volbou „Uložit jako PDF“ si uložíte kopii.', printFoot: 'Všechny zprávy jsou predikce napsané před událostmi. Výsledky a zdroje:',
-    match: 'shoda', scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Barva ukazuje, jak blízko byla predikce skutečnosti: jakou pravděpodobnost jsme dali tomu, co se opravdu stalo.',
+    gave: (p) => `dávali jsme tomu ${p}`, scale: ['Vůbec nevyšlo', 'Přesně vyšlo'], scaleNote: 'Číslo u výsledku je pravděpodobnost, kterou jsme tvrzení dali předem, ne úspěšnost. Barva ukazuje, jak blízko byla predikce skutečnosti: zelená, když jsme tomu, co se opravdu stalo, dávali vysokou pravděpodobnost, červená, když nízkou.',
     evidence: 'Doklad',
     howChecked: () => 'Jak se to ověří',
     deadline: 'Termín', window: 'Okno události', evidenceAt: 'Doklad se čeká', 
@@ -439,7 +439,7 @@ function stampFor(result, L, claim) {
   const c = closeness(claim, result);
   const style = c === null ? '' : ` style="--h:${hue(c)}"`;
   if (result.outcome === 'measured' && isInterval(claim)) return `<span class="stamp measured scored"${style}>${L.iv.actual} ${ivNum(result.value, claim, L, true)} · ${intervalHit(claim, result.value) ? L.iv.inside : L.iv.outside}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
-  return `<span class="stamp ${result.outcome}${c === null ? '' : ' scored'}"${style}>${L.stamp[result.outcome]}${c === null ? '' : ` · ${L.match} ${pctNum(c, L)}`}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
+  return `<span class="stamp ${result.outcome}${c === null ? '' : ' scored'}"${style}>${L.stamp[result.outcome]}${c === null ? '' : ` · ${L.gave(pctNum(claim.probability, L))}`}${result.corrected ? ` (${L.stamp.corrected})` : ''}</span>`;
 }
 
 /** Class and colour for a whole story once results are in: the mean closeness of its resolved claims. */
@@ -657,7 +657,7 @@ function printPage(original, L) {
       const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${r.outcome === 'measured' ? `${L.iv.actual} ${ivNum(r.value, c, L, true)}` : L.stamp[r.outcome]}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
       return `<p class="lk">${esc(c.label)}: <b>${ivNum(c.quantiles.q50, c, L)}</b> (${ivRange(c, L)})${res}</p>`;
     }
-    const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.match} ${pctNum(k, L)}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
+    const res = scored ? (r ? ` <span class="res"${k === null ? '' : ` style="--h:${hue(k)}"`}>${L.stamp[r.outcome]}${k === null ? '' : ` · ${L.gave(pctNum(c.probability, L))}`}</span>` : ` <span class="res pend">${L.stamp.pending}</span>`) : '';
     const rev = c.update && c.morning !== null && c.morning !== undefined && c.morning !== c.probability;
     return `<p class="lk"><span class="bar"><i style="width:${Math.round(c.probability * 100)}%"></i></span>${esc(c.label)}: ${rev ? `<s>${pctNum(c.morning, L)}</s> → ` : ''}<b>${pctNum(c.probability, L)}</b>${res}</p>`;
   };
