@@ -1,9 +1,9 @@
 {
  "_about": "Built by scripts/refdata/series.mjs. Put hand-entered history under extra.<key>.records, each with its source.",
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "pooled": {
-  "n": 67,
-  "rms_in_scales": 1.266,
+  "n": 72,
+  "rms_in_scales": 1.385,
   "note": "Size of actual surprises in units of the scale we assumed. Above 1 means our scales were too small."
  },
  "series": {
@@ -1100,6 +1100,86 @@
      "centre": 3.426,
      "scale_used": 0.36,
      "source": "Econoday, read 2026-11-23T17:50Z, https://us.econoday.com/byevent?fid=667063&cust=global&year=2026&lid=0 (range 3.4-3.8); Nasdaq calendar 3.4"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.8
+  },
+  "russian-attack-drones-launched-in-the-night-of-25-26-nov-202": {
+   "unit": "drones",
+   "records": [
+    {
+     "edition": "2026-11-27",
+     "claim": "ua-drones-27",
+     "consensus": 150,
+     "first": 113,
+     "centre": 147.8,
+     "scale_used": 34,
+     "source": "No analyst consensus exists. Reference value = our own record of Air Force first summaries (dossier): median of the last 21 nights 158, of the last 14 nights 144.5."
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 37
+  },
+  "de-nim-gfk-consumer-climate": {
+   "unit": "points",
+   "records": [
+    {
+     "edition": "2026-11-27",
+     "claim": "de-gfk-27",
+     "consensus": -29.4,
+     "first": -30.2,
+     "centre": -30.02,
+     "scale_used": 2.14,
+     "source": "Nasdaq economic calendar, https://api.nasdaq.com/api/calendar/economicevents?date=2026-11-27 (read 2026-11-24T17:55Z)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.8
+  },
+  "es-debate-audience": {
+   "unit": "million viewers",
+   "records": [
+    {
+     "edition": "2026-11-27",
+     "claim": "es-debate-27",
+     "consensus": 8.5,
+     "first": 10.19,
+     "centre": 8.42,
+     "scale_used": 1.3,
+     "source": "Reference value, not an analyst consensus: own estimate from the 19 Nov 2026 face-to-face (8.30m summed over six national channels, FormulaTV/Kantar, 20 Nov) and 2016–2019 multi-channel debates (8.6–10.5m, Barlovento via Reason Why)"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 1.69
+  },
+  "cpi-france-all-households-year-on-year-provisional-estimate": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-28",
+     "claim": "fr-cpi-28",
+     "consensus": 3.5,
+     "first": 2.9,
+     "centre": 3.378,
+     "scale_used": 0.19,
+     "source": "Econoday consensus (range 3.5–3.6), https://us.econoday.com/byevent?fid=705775&cust=global&year=2026&lid=0"
+    }
+   ],
+   "n": 1,
+   "rms_surprise": 0.6
+  },
+  "cpi-spain-general-index-year-on-year-flash-estimate": {
+   "unit": "%",
+   "records": [
+    {
+     "edition": "2026-11-28",
+     "claim": "es-cpi-28",
+     "consensus": 4.9,
+     "first": 4.1,
+     "centre": 4.778,
+     "scale_used": 0.19,
+     "source": "Nasdaq economic calendar consensus, https://api.nasdaq.com/api/calendar/economicevents?date=2026-11-28"
     }
    ],
    "n": 1,

@@ -1,0 +1,99 @@
+{
+  "edition": "2026-11-28",
+  "checked_at": "2026-11-28T05:20:00+01:00",
+  "procedure": "coverage-1",
+  "lists_read": [
+    "wikipedia (Portal:Current events/2026 November 27, read 28 Nov 04:00 UTC; the page held only seven entries and none on the EU summit or the Bundestag)",
+    "ct24 (ČT24 Domácí list, items of 27 Nov, read 28 Nov 04:00 UTC)",
+    "ctk (ceskenoviny.cz front page, items dated 27.11.2026, read 28 Nov 04:00 UTC)",
+    "bbc-world, aljazeera, euronews (front pages read 28 Nov 04:01 UTC) as the substitute for list (b)"
+  ],
+  "unreachable": [
+    "Reuters World and AP refuse scripted reading and WebSearch found no summary for 27 Nov 2026. List (b) is replaced by BBC World, Al Jazeera and Euronews front pages (one substitute list, 'b-substitute'); this is a deviation from coverage-1 and is recorded here."
+  ],
+  "not_qualified": [
+    "In b-substitute only, not in Wikipedia (so not significant under the two-list rule): EU summit ends without a budget or Ukraine-loan deal (covered, eu-summit); Bundestag passes the record 2027 budget (covered, de-budget); Russian drone strikes on Ukrainian energy and rail (ua-war planned and cut by the publisher's rule); Zelensky's BBC interview on Trump and Putin; Putin unveils a nuclear submarine.",
+    "Wikipedia-only entries of 27 Nov: France in recession after two quarters of contraction; Bangladesh BNP-Awami League clash; Indonesian mine search ended.",
+    "ČTK-only or sport: Český slavík (covered, cz-slavik), Davis Cup, Sparta coach, ice and frost warning, school canteen rules."
+  ],
+  "events": [
+    {
+      "title": "New Zealand special votes counted: National loses two electorate seats and the National-ACT-NZ First coalition falls to 65 seats, short of a majority",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.bbc.com/news/world",
+      "status": "covered",
+      "story": "nz-results"
+    },
+    {
+      "title": "Norse Atlantic Airways' Norwegian subsidiary files for bankruptcy, cancels all flights and suspends ticket sales amid rising fuel costs",
+      "scope": "europe",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.bbc.com/news/business",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced on a date in our sources; BBC and CNBC reported the funding shortfall only when it happened. Fuel-crisis angle (2026 Iran war fuel crisis) was on the economy board, but no airline-failure watch existed."
+    },
+    {
+      "title": "Mexico files a formal complaint with the United States over the DEA's anonymous tip lines",
+      "scope": "world",
+      "lists": [
+        "wikipedia",
+        "b-substitute"
+      ],
+      "source": "https://www.aljazeera.com/news/",
+      "status": "missed",
+      "note": "Not in the planning file; low weight. Wikipedia files the same event under 26 and 27 Nov (also listed in coverage 2026-11-27). Not announced in advance."
+    },
+    {
+      "title": "Chamber of Deputies passes the extraordinary tax on refineries in third reading (also pension changes the same day)",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/snemovna-schvalila-mimoradnou-dan-pro-rafinerie-dopadne-na-orlen-unipetrol/2907656",
+      "status": "covered",
+      "story": "cz-chamber"
+    },
+    {
+      "title": "Babiš after the special EU summit: the draft long-term EU budget is unacceptable, Czechia would get EUR 3.2bn less",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/cesko-by-dle-soucasneho-navrhu-rozpoctu-eu-dostalo-o-32-miliardy-eur-mene-rekl-babis-380001",
+      "status": "covered",
+      "story": "eu-summit",
+      "note": "Covered inside eu-summit (Babiš's rejection of the Ukraine-budget linkage, planning: background); his EUR 3.2bn figure after the summit was not reported."
+    },
+    {
+      "title": "Environment minister Červený dismisses the director of the Research Institute for Landscape (VÚK) Libor Hort over suspected breach of procurement law",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://www.ceskenoviny.cz/zpravy/cerveny-odvolal-reditele-vyzkumneho-ustavu-pro-krajinu-horta/2907709",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Not announced in advance (the criminal complaint dates from October, the dismissal had no date)."
+    },
+    {
+      "title": "Industry ministry stops recovery of a CZK 100m subsidy from the Agrofert-owned bakery Pekárna Zelená louka (limitation period expired)",
+      "scope": "cz",
+      "lists": [
+        "ct24",
+        "ctk"
+      ],
+      "source": "https://ct24.ceskatelevize.cz/clanek/domaci/ministerstvo-prumyslu-a-obchodu-zastavilo-vymahani-100-milionu-od-pekarny-patrici-agrofertu-379999",
+      "status": "missed",
+      "note": "Nowhere in the planning file. Revealed by iRozhlas (a source that refuses our reader) from a document; not announced in advance. ČTK byline on the ČT24 item."
+    }
+  ]
+}
